@@ -1,0 +1,173 @@
+{
+  "additional_grammar_controls": {
+    "negative_fixtures": 13,
+    "positive_variants": 3,
+    "status": "passed_before_historical_inventory"
+  },
+  "base_verifier": {
+    "bytes": 11862,
+    "sha256": "547cc1c701ac01cf08c466b6bcb3e2b6534176f0025298ada96a71dfdc658f90"
+  },
+  "control_pins": {
+    "GRAMMAR-FOLLOWUP.md": {
+      "bytes": 2663,
+      "sha256": "8c1f26316c6ace3f68fb06881b9eed465827672bb7d7168aa250275ae8efa723"
+    },
+    "PROTOCOL.md": {
+      "bytes": 7503,
+      "sha256": "f81d1e7e1d8ae914cd62e182cd6f2db642bd60e19737d204f18d3b97d1e70486"
+    },
+    "screen_local.py": {
+      "bytes": 20080,
+      "sha256": "b5048a0a19347861fe8567ffcffd54a69dfb9df284ebb6bc66c503b54723375c"
+    },
+    "screen_local_v2.py": {
+      "bytes": 20997,
+      "sha256": "890963c2104f53813593b4e09da9b3c5892d2461a2a6a415f06f84842b31d8f9"
+    },
+    "selection.json": {
+      "bytes": 2574,
+      "sha256": "e5abd641738cbbb7656f2c4d0f70336725247787d8955637082a44401047fdc0"
+    },
+    "test_screen_local.py": {
+      "bytes": 13040,
+      "sha256": "5988d73bfb93e24546f015983c0070f7e767c831f8330973b03f962731337b74"
+    },
+    "test_screen_local_v2.py": {
+      "bytes": 19522,
+      "sha256": "61fee5f4bd23a6ce3b6abd372c3f40d6d9e0d3ea9ab3d71ebe745c239c731c83"
+    }
+  },
+  "identifier_replacements": [
+    [
+      "r'run0[12]-(?:",
+      "r'v2-run0[12]-(?:"
+    ],
+    [
+      "name.split('-',1)[1]",
+      "name.removeprefix('v2-').split('-',1)[1]"
+    ],
+    [
+      "('script_identity','screen_local.py','screen_local.snapshot.py')",
+      "('script_identity','screen_local_v2.py','screen_local.snapshot.py')"
+    ]
+  ],
+  "images_displayed": 0,
+  "original_synthetic_controls": {
+    "negative_fixtures": 6,
+    "positive_groups": 4,
+    "status": "passed_before_historical_inventory"
+  },
+  "producer": {
+    "bytes": 6083,
+    "sha256": "45139bb3b4ebc3ea26a4fb1c1d2058fd6c3548e8b7a54653260d02c3d3c936d0"
+  },
+  "runs": [
+    {
+      "decoded_frames": 443,
+      "empty_bins": [],
+      "fallback_notices": 13,
+      "geometry": [
+        720,
+        480
+      ],
+      "inventory": {
+        "bytes": 14066,
+        "sha256": "61a54dc649d4a3cb7e7cd9d562a5ad173729534896de5d20fb0892ef8497ceb6"
+      },
+      "material_products": {
+        "native/frame-000001.png": {
+          "bytes": 31736,
+          "sha256": "2c567ad4336065874bc3716786c906f68aa9a77aaca571cb6c7793379559621c"
+        },
+        "native/frame-000002.png": {
+          "bytes": 74741,
+          "sha256": "424c3ee7ee03a821e196d9fd48451414e1e19149c4a7e97b154d0c3b20f6f337"
+        },
+        "native/frame-000003.png": {
+          "bytes": 80379,
+          "sha256": "df9f3a56b820a200855b22227810a4694a6010223255d72a839ec14d878ab6c6"
+        },
+        "native/frame-000004.png": {
+          "bytes": 76848,
+          "sha256": "8aca726120705c59a282ce903a64b2689411989285de5f0a9d72316b50b4d729"
+        },
+        "native/frame-000005.png": {
+          "bytes": 76249,
+          "sha256": "f8c7925e813f0bc8407058e613f502a088a8e5a67c165c9ab4bfe86451e42180"
+        },
+        "native/frame-000006.png": {
+          "bytes": 280501,
+          "sha256": "9c9757c4b7d5fe325b9a8c0d25721e7b63d48d0fc51806c7b07c2a6a73edfa3c"
+        },
+        "native/frame-000007.png": {
+          "bytes": 284780,
+          "sha256": "6643b4fd84edf22e58f2ac65007ceeae0876490c58c5ed94f0bfaf6328cd42f6"
+        },
+        "native/frame-000008.png": {
+          "bytes": 288712,
+          "sha256": "32c14655e50a52b76dea60c7b98b792d32cffb15e9cbc3335f8b9ec5b54cd4cb"
+        },
+        "native/frame-000009.png": {
+          "bytes": 294124,
+          "sha256": "280fab6df4911545c10aeea4e84ce31298a11a10a08c19e8be0f76379155000b"
+        },
+        "native/frame-000010.png": {
+          "bytes": 293178,
+          "sha256": "1eb33c3ad39eff3d2c1bd2aebdb4de860df7eb7b0e95fb0d416a0d23fd19f5ee"
+        },
+        "native/frame-000011.png": {
+          "bytes": 292327,
+          "sha256": "9a15c46cef9a9c903320b047da435fea353778091e399d656a956855f362424a"
+        },
+        "native/frame-000012.png": {
+          "bytes": 256703,
+          "sha256": "bdbe8181e542da6a29d4e7baf40b7df9c948978af7380635a4df0d25ca500c77"
+        },
+        "native/frame-000013.png": {
+          "bytes": 226257,
+          "sha256": "c4129907227a882725315b7816958348c97635dfe9f594683a7d7c94f4253a36"
+        },
+        "native/frame-000014.png": {
+          "bytes": 208233,
+          "sha256": "b3470fc072a83d55f1234d9dbe809844b7435b6f005eddebbe0f8996039cb508"
+        },
+        "native/frame-000015.png": {
+          "bytes": 204623,
+          "sha256": "e89a4fbc75581dcfae213d75646639e7d65a8d1eee5e436379920599c70d2cee"
+        },
+        "overview/sheet-0000.png": {
+          "bytes": 621690,
+          "sha256": "d30f9eeba0fe65ea477c9b64637342d6e5dec15f14fdf4c1ca580b2185b05c3c"
+        },
+        "overview/sheet-0001.png": {
+          "bytes": 168009,
+          "sha256": "34a8a49228bc691638afc41320512d23f216ae34e62e279b9382956020dcb547"
+        }
+      },
+      "outer_receipt": {
+        "bytes": 8580,
+        "sha256": "5372f427830d63f04e6351a45ebf984bb574018b5e7b5f27a3951238993dae27"
+      },
+      "product_hash_references": 63,
+      "recognized_terminal_delimiter_records": 1,
+      "run": "v2-run01-CAMERA3-KIT-MP4",
+      "samples": 15,
+      "sheets": 2,
+      "source": {
+        "bytes": 3996436,
+        "sha256": "4ecc57a5dd23b56c7ec0368a309889f38fcd762fd4769a580e0e3c6ea379fe98"
+      },
+      "source_id": "CAMERA3-KIT-MP4",
+      "source_receipt": {
+        "bytes": 10120,
+        "sha256": "d8a52061d7017392e26a2b2f8042954d86cf0f7697aeb58157ec373d1829876a"
+      },
+      "status": "passed",
+      "time_base": "1/15360"
+    }
+  ],
+  "scope": "Kit-only v2; other failed sources not admitted",
+  "screening_helper_imported": false,
+  "status": "passed"
+}

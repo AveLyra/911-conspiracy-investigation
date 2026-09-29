@@ -1,0 +1,104 @@
+{
+  "allowlisted_probe": {
+    "format": {
+      "duration": "29.533311",
+      "size": "3996436",
+      "start_time": "0.000000"
+    },
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "avg_frame_rate": "15/1",
+        "chroma_location": "left",
+        "codec_name": "h264",
+        "codec_type": "video",
+        "color_primaries": "smpte170m",
+        "color_range": "tv",
+        "color_space": "smpte170m",
+        "color_transfer": "smpte170m",
+        "display_aspect_ratio": "3:2",
+        "duration": "29.533268",
+        "field_order": "progressive",
+        "height": 480,
+        "index": 0,
+        "nb_frames": "443",
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "15/1",
+        "sample_aspect_ratio": "1:1",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "time_base": "1/15360",
+        "width": 720
+      },
+      {
+        "avg_frame_rate": "0/0",
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "duration": "29.533311",
+        "index": 1,
+        "nb_frames": "1273",
+        "r_frame_rate": "0/0",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "time_base": "1/44100"
+      }
+    ]
+  },
+  "category": "frame_inventory_malformed",
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,avg_frame_rate,r_frame_rate,time_base,start_pts,start_time,duration,nb_frames,field_order,sample_aspect_ratio,display_aspect_ratio,color_range,color_space,color_transfer,color_primaries,chroma_location:format=duration,start_time,size:stream_tags=:stream_disposition=:format_tags=:stream_side_data=",
+        "-of",
+        "json",
+        "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera3-provenance/kit-inventory/run-v1/outer/The Kit/WTC7-Camera 3/Camera3.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "probe.stderr",
+      "stdout": "probe.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,width,height:frame_tags=:frame_side_data=",
+        "-of",
+        "compact=p=0:nk=0",
+        "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera3-provenance/kit-inventory/run-v1/outer/The Kit/WTC7-Camera 3/Camera3.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "frame-inventory.stderr",
+      "stdout": "frame-inventory.stdout"
+    }
+  ],
+  "exception_type": "CheckError",
+  "phase": "frame_inventory",
+  "source": {
+    "bytes": 3996436,
+    "id": "CAMERA3-KIT-MP4",
+    "path": "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera3-provenance/kit-inventory/run-v1/outer/The Kit/WTC7-Camera 3/Camera3.mp4",
+    "sha256": "4ecc57a5dd23b56c7ec0368a309889f38fcd762fd4769a580e0e3c6ea379fe98",
+    "step_seconds": 2
+  },
+  "source_after": {
+    "bytes": 3996436,
+    "sha256": "4ecc57a5dd23b56c7ec0368a309889f38fcd762fd4769a580e0e3c6ea379fe98"
+  },
+  "source_after_matches_pin": true,
+  "source_before": {
+    "bytes": 3996436,
+    "sha256": "4ecc57a5dd23b56c7ec0368a309889f38fcd762fd4769a580e0e3c6ea379fe98"
+  },
+  "source_id": "CAMERA3-KIT-MP4",
+  "status": "failed"
+}

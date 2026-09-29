@@ -1,0 +1,139 @@
+from __future__ import annotations
+
+from typing import Any, Protocol
+
+from research_machine.domain.models import (
+    ActionRecommendation,
+    AliasProxyMappingRecord,
+    Claim,
+    CrossLaneLesson,
+    DatasetManifest,
+    EvidenceRecord,
+    EvidenceStatusEvent,
+    ExperimentProtocol,
+    Hypothesis,
+    Inquiry,
+    Question,
+    ResearchRun,
+)
+
+
+class WorkspaceRepository(Protocol):
+    def init_workspace(self, created_at: str) -> dict[str, Any]: ...
+
+    def is_initialized(self) -> bool: ...
+
+    def create_inquiry(self, inquiry: Inquiry) -> None: ...
+
+    def resolve_inquiry_id(self, inquiry_id: str | None) -> str: ...
+
+    def load_inquiry(self, inquiry_id: str) -> Inquiry: ...
+
+    def save_inquiry(self, inquiry: Inquiry) -> None: ...
+
+    def set_active_inquiry(self, inquiry_id: str) -> None: ...
+
+    def load_questions(self, inquiry_id: str) -> list[Question]: ...
+
+    def save_questions(self, inquiry_id: str, questions: list[Question]) -> None: ...
+
+    def load_claims(self, inquiry_id: str) -> list[Claim]: ...
+
+    def save_claims(self, inquiry_id: str, claims: list[Claim]) -> None: ...
+
+    def save_hypothesis(self, inquiry_id: str, hypothesis: Hypothesis) -> None: ...
+
+    def find_hypothesis(self, inquiry_id: str, hypothesis_id: str) -> Hypothesis: ...
+
+    def move_hypothesis(
+        self, inquiry_id: str, hypothesis: Hypothesis, destination: str
+    ) -> None: ...
+
+    def list_hypotheses(
+        self, inquiry_id: str, state: str | None = None
+    ) -> list[Hypothesis]: ...
+
+    def save_evidence(self, inquiry_id: str, evidence: EvidenceRecord) -> None: ...
+
+    def list_evidence(self, inquiry_id: str) -> list[EvidenceRecord]: ...
+
+    def save_evidence_status_event(
+        self, inquiry_id: str, event: EvidenceStatusEvent
+    ) -> None: ...
+
+    def list_evidence_status_events(
+        self, inquiry_id: str, evidence_id: str | None = None
+    ) -> list[EvidenceStatusEvent]: ...
+
+    def save_dataset(self, inquiry_id: str, dataset: DatasetManifest) -> None: ...
+
+    def find_dataset(self, inquiry_id: str, dataset_id: str) -> DatasetManifest: ...
+
+    def list_datasets(self, inquiry_id: str) -> list[DatasetManifest]: ...
+
+    def save_protocol(self, inquiry_id: str, protocol: ExperimentProtocol) -> None: ...
+
+    def find_protocol(
+        self, inquiry_id: str, protocol_id: str
+    ) -> ExperimentProtocol: ...
+
+    def freeze_protocol(
+        self, inquiry_id: str, protocol: ExperimentProtocol
+    ) -> None: ...
+
+    def list_protocols(self, inquiry_id: str) -> list[ExperimentProtocol]: ...
+
+    def save_alias_proxy_mapping_record(
+        self, inquiry_id: str, record: AliasProxyMappingRecord
+    ) -> None: ...
+
+    def list_alias_proxy_mapping_records(
+        self, inquiry_id: str, protocol_id: str | None = None
+    ) -> list[AliasProxyMappingRecord]: ...
+
+    def save_run(self, inquiry_id: str, run: ResearchRun) -> None: ...
+
+    def find_run(self, inquiry_id: str, run_id: str) -> ResearchRun: ...
+
+    def list_runs(self, inquiry_id: str) -> list[ResearchRun]: ...
+
+    def save_recommendation(
+        self, inquiry_id: str, recommendation: ActionRecommendation
+    ) -> None: ...
+
+    def list_recommendations(self, inquiry_id: str) -> list[ActionRecommendation]: ...
+
+    def verify_current_recommendation_integrity(
+        self,
+        inquiry_id: str,
+        recommendation: ActionRecommendation,
+        *,
+        expected_score_contract_version: int,
+        events: list[dict[str, Any]] | None = None,
+    ) -> dict[str, Any]: ...
+
+    def save_cross_lane_lesson(
+        self, inquiry_id: str, lesson: CrossLaneLesson
+    ) -> None: ...
+
+    def list_cross_lane_lessons(self, inquiry_id: str) -> list[CrossLaneLesson]: ...
+
+    def verify_cross_lane_lesson_integrity(
+        self, inquiry_id: str, lesson: CrossLaneLesson
+    ) -> dict[str, Any]: ...
+
+    def write_report(self, inquiry_id: str, name: str, content: str) -> str: ...
+
+    def append_event(
+        self,
+        inquiry_id: str,
+        *,
+        timestamp: str,
+        actor: str,
+        command: str,
+        aggregate_type: str,
+        aggregate_id: str,
+        payload: dict[str, Any],
+    ) -> dict[str, Any]: ...
+
+    def verify_ledger(self, inquiry_id: str) -> dict[str, Any]: ...

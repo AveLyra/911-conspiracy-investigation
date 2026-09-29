@@ -1,0 +1,1218 @@
+{
+  "bodies": [],
+  "code_sha256": "8c5aee84f2b4b96d4149cd8469902531a31f8d47c59cb2f4f7037657eddfe3ff",
+  "command": [
+    "research/sherlock-wtc7-investigation/curve-release-search/independent_scan.py",
+    "--controls-only",
+    "--out",
+    "independent-controls01.json"
+  ],
+  "controls": {
+    "crc_corruption_rejected": true,
+    "create_only_refused": true,
+    "fixture_count": 17,
+    "fixtures": [
+      {
+        "expected_hits": 1,
+        "expected_leading": 1,
+        "input_hex": "20092a446546694e655f43755276450a",
+        "name": "mixed",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 16,
+          "crc32_actual": 4092911819,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 2,
+              "byte_offset": 2,
+              "encoding": "ascii",
+              "family": "DEFINE_CURVE",
+              "has_suffix": false,
+              "line": 1,
+              "line_leading": true
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 1,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 16,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 0,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "a1141eabf08a0ee007145c4b70c1ec50c7f9ec233da8dc8618d9aa7d6eda8de6"
+        }
+      },
+      {
+        "expected_hits": 1,
+        "expected_leading": 1,
+        "input_hex": "efbbbf200d2a444546494e455f5441424c45",
+        "name": "bom",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 18,
+          "crc32_actual": 510520555,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 5,
+              "byte_offset": 5,
+              "encoding": "ascii",
+              "family": "DEFINE_TABLE",
+              "has_suffix": false,
+              "line": 1,
+              "line_leading": true
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": true,
+          "lf_bytes": 0,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 1
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 1
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 18,
+          "non_ascii_bytes": 3,
+          "nul_bytes": 0,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "4893e05f43a103552b52ee52bbc468f310dd7970dba3ff80ad3af7a9af6c5be6"
+        }
+      },
+      {
+        "expected_hits": 1,
+        "expected_leading": 1,
+        "input_hex": "2a444546494e455f46554e4354494f4e5f580a",
+        "name": "variant",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 19,
+          "crc32_actual": 1194172107,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 0,
+              "byte_offset": 0,
+              "encoding": "ascii",
+              "family": "DEFINE_FUNCTION",
+              "has_suffix": true,
+              "line": 1,
+              "line_leading": true
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 1,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 1,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 1,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 19,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 0,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "72a0cbbb06000f27154374a0749b0eb489b81f7fc9fd09bb69d7f214bf65fdcc"
+        }
+      },
+      {
+        "expected_hits": 3,
+        "expected_leading": 0,
+        "input_hex": "21202a444546494e455f43555256450a222a444546494e455f5441424c45223b202a444546494e455f46554e4354494f4e0a",
+        "name": "embedded",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 50,
+          "crc32_actual": 935992773,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 2,
+              "byte_offset": 2,
+              "encoding": "ascii",
+              "family": "DEFINE_CURVE",
+              "has_suffix": false,
+              "line": 1,
+              "line_leading": false
+            },
+            {
+              "byte_column": 1,
+              "byte_offset": 17,
+              "encoding": "ascii",
+              "family": "DEFINE_TABLE",
+              "has_suffix": false,
+              "line": 2,
+              "line_leading": false
+            },
+            {
+              "byte_column": 17,
+              "byte_offset": 33,
+              "encoding": "ascii",
+              "family": "DEFINE_FUNCTION",
+              "has_suffix": false,
+              "line": 2,
+              "line_leading": false
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 2,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 1,
+              "DEFINE_TABLE": 1
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 34,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 0,
+          "physical_lines": 2,
+          "scope": "literal_byte_search_only",
+          "sha256": "91d63624424fef96c9d37ffed4264c6d262351a6a6f9a220e148e7721fa61b40"
+        }
+      },
+      {
+        "expected_hits": 2,
+        "expected_leading": 1,
+        "input_hex": "2a444546494e455f4355525645202a444546494e455f43555256450a",
+        "name": "repeated",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 28,
+          "crc32_actual": 1055429584,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 0,
+              "byte_offset": 0,
+              "encoding": "ascii",
+              "family": "DEFINE_CURVE",
+              "has_suffix": false,
+              "line": 1,
+              "line_leading": true
+            },
+            {
+              "byte_column": 14,
+              "byte_offset": 14,
+              "encoding": "ascii",
+              "family": "DEFINE_CURVE",
+              "has_suffix": false,
+              "line": 1,
+              "line_leading": false
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 1,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 2,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 28,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 0,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "87a512ab2a07096aa52aef010dd1f127e8c074d01d9218ac8db1b07291bb635b"
+        }
+      },
+      {
+        "expected_hits": 2,
+        "expected_leading": 1,
+        "input_hex": "200009002a0064006500660069006e0065005f00630075007200760065005f005800",
+        "name": "le",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 34,
+          "crc32_actual": 4164806373,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 3,
+              "byte_offset": 3,
+              "encoding": "utf-16be",
+              "family": "DEFINE_CURVE",
+              "has_suffix": true,
+              "line": 1,
+              "line_leading": false
+            },
+            {
+              "byte_column": 4,
+              "byte_offset": 4,
+              "encoding": "utf-16le",
+              "family": "DEFINE_CURVE",
+              "has_suffix": true,
+              "line": 1,
+              "line_leading": true
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 0,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 34,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 17,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "01ff5e598e372a47eae330a4ee8f7886708a575403e052ec96d7a46497e16e83"
+        }
+      },
+      {
+        "expected_hits": 1,
+        "expected_leading": 1,
+        "input_hex": "000d002a0064006500660069006e0065005f007400610062006c0065",
+        "name": "be",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 28,
+          "crc32_actual": 79198357,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 2,
+              "byte_offset": 2,
+              "encoding": "utf-16be",
+              "family": "DEFINE_TABLE",
+              "has_suffix": false,
+              "line": 1,
+              "line_leading": true
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 0,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 1
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 1
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 28,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 14,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "e60633f7e7615251fa91cce39fa75334f903164b4f5fa9fb6a620db21f47a070"
+        }
+      },
+      {
+        "expected_hits": 0,
+        "expected_leading": 0,
+        "input_hex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "name": "nul",
+        "result": {
+          "all_nul": true,
+          "bytes_read": 328,
+          "crc32_actual": 3046287943,
+          "eof": true,
+          "hits": [],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 0,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 328,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 328,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "7b4499c3cc6e82a9da3100028f52af7f8c1e9ee60e33010a108e401989782962"
+        }
+      },
+      {
+        "expected_hits": 1,
+        "expected_leading": 0,
+        "input_hex": "002a444546494e455f4355525645ff",
+        "name": "mixed_nul",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 15,
+          "crc32_actual": 865079650,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 1,
+              "byte_offset": 1,
+              "encoding": "ascii",
+              "family": "DEFINE_CURVE",
+              "has_suffix": false,
+              "line": 1,
+              "line_leading": false
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 0,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 15,
+          "non_ascii_bytes": 1,
+          "nul_bytes": 1,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "4edd74ad2aafff509b5432d02b4ce92f86e1e63c2f9113a652cfe92f27960448"
+        }
+      },
+      {
+        "expected_hits": 1,
+        "expected_leading": 1,
+        "input_hex": "2a444546494e455f46554e4354494f4e",
+        "name": "no_final_lf",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 16,
+          "crc32_actual": 49408803,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 0,
+              "byte_offset": 0,
+              "encoding": "ascii",
+              "family": "DEFINE_FUNCTION",
+              "has_suffix": false,
+              "line": 1,
+              "line_leading": true
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 0,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 1,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 1,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 16,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 0,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "53304e7c4f672ab4337abcac64a0bb52d976cc33b2d3a567f8ddae002b62167b"
+        }
+      },
+      {
+        "expected_hits": 0,
+        "expected_leading": 0,
+        "input_hex": "",
+        "name": "empty",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 0,
+          "crc32_actual": 0,
+          "eof": true,
+          "hits": [],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 0,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 0,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 0,
+          "physical_lines": 0,
+          "scope": "literal_byte_search_only",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "expected_hits": 0,
+        "expected_leading": 0,
+        "input_hex": "444546494e455f4355525645202a444546494e455f43555256202a444546494e455f544142454c0a",
+        "name": "unrelated",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 40,
+          "crc32_actual": 3702408510,
+          "eof": true,
+          "hits": [],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 1,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 40,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 0,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "76906a0b9c7f88538df4167fa3c4584c4b1aed3de85d1a1497ce69c69f47dbc3"
+        }
+      },
+      {
+        "expected_hits": 1,
+        "expected_leading": 0,
+        "input_hex": "782a0044004500460049004e0045005f0043005500520056004500",
+        "name": "odd_utf16_prefix",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 27,
+          "crc32_actual": 2773794401,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 1,
+              "byte_offset": 1,
+              "encoding": "utf-16le",
+              "family": "DEFINE_CURVE",
+              "has_suffix": false,
+              "line": 1,
+              "line_leading": false
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 0,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 27,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 13,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "1a784f7f8f29979a4c53e2a50dc45b7144b5a03f49c446a3ff2f9b6804d1ca8e"
+        }
+      },
+      {
+        "expected_hits": 1,
+        "expected_leading": 0,
+        "input_hex": "fffe2a0044004500460049004e0045005f0043005500520056004500",
+        "name": "utf16_bom",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 28,
+          "crc32_actual": 2398500508,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 2,
+              "byte_offset": 2,
+              "encoding": "utf-16le",
+              "family": "DEFINE_CURVE",
+              "has_suffix": false,
+              "line": 1,
+              "line_leading": false
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": true,
+          "initial_utf8_bom": false,
+          "lf_bytes": 0,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 28,
+          "non_ascii_bytes": 2,
+          "nul_bytes": 13,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "5f8ec2020dd911d3d5efd432e023055afbcbbdddb8f2cd8c811fda0050cc0572"
+        }
+      },
+      {
+        "expected_hits": 2,
+        "expected_leading": 1,
+        "input_hex": "61000a002a0044004500460049004e0045005f0043005500520056004500",
+        "name": "utf16_lf_raw",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 30,
+          "crc32_actual": 4130024848,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 0,
+              "byte_offset": 3,
+              "encoding": "utf-16be",
+              "family": "DEFINE_CURVE",
+              "has_suffix": false,
+              "line": 2,
+              "line_leading": true
+            },
+            {
+              "byte_column": 1,
+              "byte_offset": 4,
+              "encoding": "utf-16le",
+              "family": "DEFINE_CURVE",
+              "has_suffix": false,
+              "line": 2,
+              "line_leading": false
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 1,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 27,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 15,
+          "physical_lines": 2,
+          "scope": "literal_byte_search_only",
+          "sha256": "68edb383b2587aff3865e04d9816408057f1b1154c0134724a97f2960547bf2f"
+        }
+      },
+      {
+        "expected_hits": 1,
+        "expected_leading": 1,
+        "input_hex": "0061000a002a0044004500460049004e0045005f00430055005200560045",
+        "name": "utf16be_lf",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 30,
+          "crc32_actual": 2519810144,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 0,
+              "byte_offset": 4,
+              "encoding": "utf-16be",
+              "family": "DEFINE_CURVE",
+              "has_suffix": false,
+              "line": 2,
+              "line_leading": true
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 1,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 1,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 26,
+          "non_ascii_bytes": 0,
+          "nul_bytes": 15,
+          "physical_lines": 2,
+          "scope": "literal_byte_search_only",
+          "sha256": "e0b1982dcdebd3cacbcd4c692894aae3f73888ed279a73bb7dab8b4a0a12377e"
+        }
+      },
+      {
+        "expected_hits": 1,
+        "expected_leading": 0,
+        "input_hex": "c3a920222a444546494e455f46554e4354494f4e22",
+        "name": "utf8_text",
+        "result": {
+          "all_nul": false,
+          "bytes_read": 21,
+          "crc32_actual": 1728516099,
+          "eof": true,
+          "hits": [
+            {
+              "byte_column": 4,
+              "byte_offset": 4,
+              "encoding": "ascii",
+              "family": "DEFINE_FUNCTION",
+              "has_suffix": false,
+              "line": 1,
+              "line_leading": false
+            }
+          ],
+          "initial_utf16be_bom": false,
+          "initial_utf16le_bom": false,
+          "initial_utf8_bom": false,
+          "lf_bytes": 0,
+          "line_leading_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "marker_counts": {
+            "ascii": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 1,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16be": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            },
+            "utf-16le": {
+              "DEFINE_CURVE": 0,
+              "DEFINE_FUNCTION": 0,
+              "DEFINE_TABLE": 0
+            }
+          },
+          "max_line_bytes": 21,
+          "non_ascii_bytes": 2,
+          "nul_bytes": 0,
+          "physical_lines": 1,
+          "scope": "literal_byte_search_only",
+          "sha256": "cb63ef2252a6bcc8d8f2a6768eb36d31b01715e2d1efccb8a736cd2a87b903f1"
+        }
+      }
+    ],
+    "other_checks": [
+      "variant",
+      "NUL_and_nonASCII",
+      "LF_count",
+      "absolute_offset",
+      "line_cap",
+      "byte_cap",
+      "hit_cap",
+      "pin_refusal",
+      "output_refusal",
+      "duplicate_name",
+      "ordinal_specific_open",
+      "corrupt_CRC",
+      "overlapping_encoding_locators"
+    ],
+    "other_count": 13,
+    "passed": true,
+    "rejections": {
+      "byte_cap": true,
+      "hit_cap": true,
+      "line_cap": true,
+      "pin": true
+    },
+    "zip_corrupt_input_hex": "504b030414000000000051702d5df1866c7a03000000030000000400000073616d656e6e65504b030414000000000051702d5d668aca1103000000030000000400000073616d6574776f504b0102140314000000000051702d5df1866c7a030000000300000004000000000000000000000080010000000073616d65504b0102140314000000000051702d5d668aca11030000000300000004000000000000000000000080012500000073616d65504b05060000000002000200640000004a0000000000",
+    "zip_input_hex": "504b030414000000000051702d5df1866c7a03000000030000000400000073616d656f6e65504b030414000000000051702d5d668aca1103000000030000000400000073616d6574776f504b0102140314000000000051702d5df1866c7a030000000300000004000000000000000000000080010000000073616d65504b0102140314000000000051702d5d668aca11030000000300000004000000000000000000000080012500000073616d65504b05060000000002000200640000004a0000000000",
+    "zip_member_payload_hex": [
+      "6f6e65",
+      "74776f"
+    ]
+  },
+  "elapsed_seconds": 0.008509165956638753,
+  "excluded": [],
+  "limits": {
+    "body_hits": 10000,
+    "june_bytes": 536870912,
+    "line_bytes": 16384,
+    "member_bytes": 4194304,
+    "peak_bytes": 805306368,
+    "seconds": 300,
+    "september_stream_bytes": 536870912,
+    "zip_entries": 30000
+  },
+  "peak_bytes": 26624000,
+  "runtime": {
+    "executable": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]"
+  },
+  "status": "CONTROLS_PASS"
+}

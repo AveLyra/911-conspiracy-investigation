@@ -1,0 +1,38 @@
+Chapter 3 
+ NIST NCSTAR 1-9A, WTC Investigation 22
+3.3.1 Beam and Girder Framing  
+Most connection types in the model were floor framing connections (i.e., beams to girders and girders to 
+columns). Shear connections were used at all interior floor framing connections. There were six shear 
+connection types: fin (F), header (H), knife (K), seated web clip (SWC), seated top clip (STC), and seated 
+top plate (STP) (see NIST NCSTAR 1-9, Section 2.4.3).  Fin, header, and knife connections connected 
+the interior floor beams to the girders, and girders to interior columns except for the seated connections at 
+Columns 79 and 81.  Seated connections were used to connect the floor beams and girders to the exterior 
+columns and the north side of Column 79 and the south side of Column 81. Moment connections were 
+used in the exterior framing and portions of the core framing at Floors 5 and 7 as part of the lateral load 
+resisting system. 
+Given a target element size of 0.15 m to 0.30 m (6 in. to 12 in.) within the LS-DYNA model, it was not 
+possible to explicitly model the connections in fine detail. The connections were modeled with a 
+simplified geometry, and connection material models were developed for the expected load capacity and 
+ductility. Different connection models were developed for the actual construction geometry. Beam and 
+girder connection models and their placement in the LS-DYNA model were based on information that 
+NIST obtained from WTC 7 fabrication shop drawings and structural drawings. The framing connections 
+included in the model are described in the following subsections. 
+Fin, Knife, and Header Connections 
+This section explains the modeling methodology for three distinct types of shear connections: fin (F), 
+header (H) and knife (K). A schematic of each type is shown in Figure 3-2.  
+In the LS-DYNA model, fin connections were developed first.  Fin connections were grouped by the 
+depth of the beam web, which generally determined the number of bolts in the fin connection.  
+A series of component calculations were performed to develop fin connection models for the depth-based 
+groupings.  The idealized strength and ductility of fin connections (also known as shear tab connections) 
+were obtained from a connection spring model developed by Sadek et al. (2008).  The spring model 
+output by Sadek et al. (2008) included force-deflection results for the fin connection, based on the number 
+of bolts. A simple LS-DYNA beam-column connection model was developed, as shown in Figure 3-3.   
+The LS-DYNA fin models were calibrated to match the connection behaviors obtained from the spring 
+model provided by Sadek et al. (2008).  The appropriate connection strength and ductility were obtained 
+by adjusting the material behavior and failure strain for the connection tab.  A comparison of force-
+deflection curves from the resulting shear model along with the spring model for the set of connections 
+considered is shown in Figure 3-4.  A similar comparison of connection energy capacity is provided in 
+Figure 3-5.  Good agreement of the spring and LS-DYNA fin models was obtained. 
+ 
+ 
+ 

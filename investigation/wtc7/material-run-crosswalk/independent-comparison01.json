@@ -1,0 +1,43 @@
+{
+  "receipt": {
+    "code_sha256": "67bec6fd663c8a263e27bc421e0cb1d12811e58373bdd560dc2a362f67e05065",
+    "command": [
+      "research/sherlock-wtc7-investigation/material-run-crosswalk/verify_materials.py",
+      "--compare",
+      "--output",
+      "independent-comparison01.json"
+    ],
+    "controls": {
+      "groups": [
+        "fixed_blanks",
+        "csv_blanks",
+        "adjacent_fullwidth",
+        "decimal_precision",
+        "numeric_label_rejection",
+        "csv_extra_fields",
+        "duplicate_metadata",
+        "namespace_zero",
+        "blank_title_and_unused",
+        "definition_reference_offset",
+        "shell_pair",
+        "missing_shell_continuation",
+        "duplicate_element",
+        "beam_discrete_candidates",
+        "unsupported_element_family"
+      ],
+      "passed": 15
+    },
+    "core_sha256": "4caa98ce70e5eb78125052da7ee97c42e3aac415fe25a28dcf66a1a77072fca2",
+    "error": {
+      "code": "KeyError",
+      "line": 0,
+      "source": 0
+    },
+    "progress": [],
+    "protocol_sha256": "4406af3500c495adc95edd1c86e07901f73e6cafa43a39bfc57a8920c34c552a",
+    "python": "3.12.14",
+    "seconds": 0.030094749992713332,
+    "status": "FAIL"
+  },
+  "result": null
+}

@@ -1,0 +1,41 @@
+  Full Floor Subsystem 
+NIST NCSTAR 1-6C, WTC Investigation 69  
+5.4 TRUSS MODEL 
+The truss model is a section of a floor system, which consists of a single floor truss and a corresponding 
+section of the concrete slab.  The objectives of the truss model study were to: 
+• Capture the potential failure modes and failure sequence of the truss model subjected to 
+gravity load and temperature time histories, 
+• Determine failure loads for different failure modes, and 
+• Develop a simplified model that replicates the expected failure modes of the truss model for 
+use in the full floor subsystem model. 
+5.4.1 Model Description 
+Figure 5–25 shows the truss model.  The truss model is a cut-out section of the office area floor system.  
+A typical long-span truss designated C32T1 (SHCR 1973:WTC Drawing Book 7, Sheet AB1–2) was 
+modeled.  The model used symmetry and included the following: 
+• One of the two primary trusses at Column 143 at Floor 96 of WTC 1, 
+• Two exterior columns (Columns 143 and 144) at the plane of symmetry with half the area 
+and the moment of inertia and with a length of 24 ft (each column extends over the full height 
+of a floor), 
+• Part of the spandrel between the two planes of symmetry, 
+• Part of the slab (40 in. wide) between the two plane of symmetry, 
+• Strap anchor attached on one end to the truss top chord and the concrete slab and on the other 
+end to the adjacent exterior column (Column 144), and 
+• Halves of exterior and interior truss seats and the gusset plate at the exterior end. 
+The slab was 4 in. thick lightweight concrete on 22 gauge steel deck with flutes 6.8 in. on center running 
+parallel to the primary trusses.  Two layers of welded wire reinforcement were provided in the slab.  The 
+reinforcement ratios were 0.21 percent and 0.735 percent in the directions parallel and transverse to the 
+truss, respectively.  A flute was 2 in. wide at the top, 1.25 in. wide at the bottom, and 1.47 in. high. 
+The finite element model of the concrete slab had an equivalent thickness of 4.35 in.  By using the 
+equivalent thickness, the bending stiffness in the direction transverse to the truss became about 15 percent 
+higher than the actual stiffness.  However, since the bending in the transverse direction to the truss was 
+small, the concrete slab was modeled as an isotropic plate.  The steel deck and the welded wire fabric 
+were not included in the truss model either explicitly or implicitly by modification of concrete stress-
+strain relationship.  The concrete slab was modeled with four layers of 3-D eight-node structural solid 
+(SOLID185) elements.  The Hjelm plasticity model as described in Section 3.1.2 was used for the solid 
+elements that allowed different “yield strengths” in tension and compression.   
+The top chord of truss C32T1 consisted of double angles of 1 1/2 × 2 × 0.25 (long legs horizontal), and 
+the bottom chord consisted of double angles of 3 × 2 × 0.37 (long legs horizontal).  Web diagonal 
+members were round bars of either 1.09 in. or 1.14 in. diameter.  Most web diagonal members had a 
+1.09 in. diameter. 
+The top and bottom chords and the web diagonals were modeled by BEAM189 elements with 
+temperature-dependent elastic, plastic, and creep material properties.  Top and bottom chords were 

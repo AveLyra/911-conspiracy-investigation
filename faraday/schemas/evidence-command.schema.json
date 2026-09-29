@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-machine.local/schemas/evidence-command.schema.json",
+  "title": "Evidence recording command",
+  "description": "Provider-neutral input contract for claim-scoped evidence.",
+  "type": "object",
+  "required": [
+    "hypothesis_id",
+    "direction",
+    "summary",
+    "uncertainty",
+    "scope",
+    "higher_level_conclusions_unsupported",
+    "validation_tags"
+  ],
+  "properties": {
+    "hypothesis_id": {"type": "string", "minLength": 1},
+    "claim_id": {"type": ["string", "null"]},
+    "direction": {
+      "enum": ["supports", "weakens", "refutes", "inconclusive"]
+    },
+    "summary": {"$ref": "#/$defs/boundedReportText"},
+    "dataset_id": {"type": ["string", "null"], "minLength": 1},
+    "run_id": {"type": ["string", "null"], "minLength": 1},
+    "analysis_id": {"type": "string"},
+    "effect_estimate": {"type": "string"},
+    "uncertainty": {"$ref": "#/$defs/nonBlankText"},
+    "scope": {"$ref": "#/$defs/nonBlankText"},
+    "controls_passed": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/nonBlankText"}
+    },
+    "controls_failed": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/nonBlankText"}
+    },
+    "higher_level_conclusions_unsupported": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/boundedReportText"}
+    },
+    "validation_tags": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "source_assessment",
+          "calibration",
+          "internal_consistency",
+          "controlled_benchmark",
+          "independent_replication",
+          "known_result_reproduction",
+          "novel_prediction",
+          "empirical_test",
+          "causal_estimate"
+        ]
+      }
+    },
+    "exploratory": {"type": "boolean", "default": true}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "nonBlankText": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "boundedReportText": {
+      "allOf": [
+        {"$ref": "#/$defs/nonBlankText"},
+        {
+          "not": {
+            "pattern": "\\b(?:[Pp][Rr][Oo][Vv][Ee][Dd]|[Cc][Oo][Nn][Ff][Ii][Rr][Mm][Ee][Dd]|[Ee][Xx][Pp][Ll][Aa][Ii][Nn][Ee][Dd]|[Vv][Aa][Ll][Ii][Dd][Aa][Tt][Ee][Ss]?|[Vv][Aa][Ll][Ii][Dd][Aa][Tt][Ee][Dd])\\b"
+          }
+        },
+        {
+          "not": {
+            "pattern": "\\b(?:[Ee][Ss][Tt][Aa][Bb][Ll][Ii][Ss][Hh]|[Ee][Ss][Tt][Aa][Bb][Ll][Ii][Ss][Hh][Ee][Ss]|[Ee][Ss][Tt][Aa][Bb][Ll][Ii][Ss][Hh][Ee][Dd]|[Ff][Ii][Nn][Dd]|[Ff][Ii][Nn][Dd][Ss]|[Ff][Oo][Uu][Nn][Dd]|[Dd][Ee][Tt][Ee][Rr][Mm][Ii][Nn][Ee]|[Dd][Ee][Tt][Ee][Rr][Mm][Ii][Nn][Ee][Ss]|[Dd][Ee][Tt][Ee][Rr][Mm][Ii][Nn][Ee][Dd]|[Ss][Hh][Oo][Ww]|[Ss][Hh][Oo][Ww][Ss]|[Ss][Hh][Oo][Ww][Ee][Dd]|[Dd][Ee][Mm][Oo][Nn][Ss][Tt][Rr][Aa][Tt][Ee]|[Dd][Ee][Mm][Oo][Nn][Ss][Tt][Rr][Aa][Tt][Ee][Ss]|[Dd][Ee][Mm][Oo][Nn][Ss][Tt][Rr][Aa][Tt][Ee][Dd])\\b(?:\\s+\\w+){0,6}\\s+\\b(?:[Ll][Ee][Gg][Aa][Ll] [Cc][Hh][Aa][Rr][Aa][Cc][Tt][Ee][Rr][Ii][Zz][Aa][Tt][Ii][Oo][Nn]|[Ll][Ee][Gg][Aa][Ll] [Rr][Ee][Ss][Pp][Oo][Nn][Ss][Ii][Bb][Ii][Ll][Ii][Tt][Yy]|[Ll][Ee][Gg][Aa][Ll] [Ll][Ii][Aa][Bb][Ii][Ll][Ii][Tt][Yy]|[Cc][Uu][Ll][Pp][Aa][Bb][Ii][Ll][Ii][Tt][Yy]|[Ll][Ii][Aa][Bb][Ii][Ll][Ii][Tt][Yy]|[Gg][Uu][Ii][Ll][Tt]|[Nn][Ee][Gg][Ll][Ii][Gg][Ee][Nn][Cc][Ee]|[Ff][Rr][Aa][Uu][Dd][Uu][Ll][Ee][Nn][Tt] [Ii][Nn][Tt][Ee][Nn][Tt]|[Cc][Rr][Ii][Mm][Ii][Nn][Aa][Ll] [Ii][Nn][Tt][Ee][Nn][Tt]|[Ii][Nn][Tt][Ee][Nn][Tt][Ii][Oo][Nn][Aa][Ll] [Ww][Rr][Oo][Nn][Gg][Dd][Oo][Ii][Nn][Gg])\\b|\\b(?:[Ii][Ss]|[Aa][Rr][Ee]|[Ww][Aa][Ss]|[Ww][Ee][Rr][Ee])\\s+(?:[Ll][Ee][Gg][Aa][Ll][Ll][Yy] [Rr][Ee][Ss][Pp][Oo][Nn][Ss][Ii][Bb][Ll][Ee]|[Ll][Ii][Aa][Bb][Ll][Ee]|[Gg][Uu][Ii][Ll][Tt][Yy]|[Nn][Ee][Gg][Ll][Ii][Gg][Ee][Nn][Tt])\\b|[Cc][Oo][Mm][Mm][Ii][Tt][Tt][Ee][Dd] [Ff][Rr][Aa][Uu][Dd]"
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"exploratory": {"const": false}}, "required": ["exploratory"]},
+      "then": {"required": ["run_id"]},
+      "else": {"anyOf": [{"required": ["dataset_id"]}, {"required": ["run_id"]}]}
+    },
+    {
+      "if": {
+        "anyOf": [
+          {"not": {"required": ["run_id"]}},
+          {"properties": {"run_id": {"type": "null"}}, "required": ["run_id"]}
+        ]
+      },
+      "then": {
+        "required": ["analysis_id"],
+        "properties": {"analysis_id": {"$ref": "#/$defs/nonBlankText"}}
+      }
+    }
+  ]
+}

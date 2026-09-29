@@ -1,0 +1,430 @@
+{
+  "allowlisted_probe": {
+    "format": {
+      "duration": "47.949206",
+      "size": "1341523",
+      "start_time": "0.000000"
+    },
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "avg_frame_rate": "30000/1001",
+        "chroma_location": "left",
+        "codec_name": "h264",
+        "codec_type": "video",
+        "display_aspect_ratio": "4:3",
+        "duration": "47.947900",
+        "field_order": "progressive",
+        "height": 360,
+        "index": 0,
+        "nb_frames": "1437",
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30000/1001",
+        "sample_aspect_ratio": "1:1",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "time_base": "1/90000",
+        "width": 480
+      },
+      {
+        "avg_frame_rate": "0/0",
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "duration": "47.949206",
+        "index": 1,
+        "nb_frames": "2065",
+        "r_frame_rate": "0/0",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "time_base": "1/44100"
+      }
+    ]
+  },
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,avg_frame_rate,r_frame_rate,time_base,start_pts,start_time,duration,nb_frames,field_order,sample_aspect_ratio,display_aspect_ratio,color_range,color_space,color_transfer,color_primaries,chroma_location:format=duration,start_time,size:stream_tags=:stream_disposition=:format_tags=:stream_side_data=",
+        "-of",
+        "json",
+        "/Users/admin/docs/911/research/wtc7-video-comparison/media/analysis-source/NIST Camera 4.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "probe.stderr",
+      "stdout": "probe.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,width,height:frame_tags=:frame_side_data=",
+        "-of",
+        "compact=p=0:nk=0",
+        "/Users/admin/docs/911/research/wtc7-video-comparison/media/analysis-source/NIST Camera 4.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "frame-inventory.stderr",
+      "stdout": "frame-inventory.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-nostats",
+        "-loglevel",
+        "level+info",
+        "-n",
+        "-copyts",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911/research/wtc7-video-comparison/media/analysis-source/NIST Camera 4.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-map_metadata",
+        "-1",
+        "-map_chapters",
+        "-1",
+        "-vf",
+        "select='eq(n,0)+eq(n,60)+eq(n,120)+eq(n,180)+eq(n,240)+eq(n,300)+eq(n,360)+eq(n,420)+eq(n,480)+eq(n,540)+eq(n,600)+eq(n,660)+eq(n,720)+eq(n,780)+eq(n,840)+eq(n,900)+eq(n,960)+eq(n,1019)+eq(n,1079)+eq(n,1139)+eq(n,1199)+eq(n,1259)+eq(n,1319)+eq(n,1379)',showinfo",
+        "-noautoscale",
+        "-pix_fmt",
+        "rgb24",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base:v",
+        "demux",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-video-lineage/run02-VID-WTC7-003/VID-WTC7-003/native/frame-%06d.png"
+      ],
+      "returncode": 0,
+      "stderr": "decode.stderr",
+      "stdout": "decode.stdout"
+    }
+  ],
+  "coverage": {
+    "decoded_frame_count": 1437,
+    "empty_bins_within_observed_range": [],
+    "first_source_pts": 0,
+    "frame_count_per_occupied_bin": [
+      {
+        "bin": 0,
+        "frames": 60
+      },
+      {
+        "bin": 1,
+        "frames": 60
+      },
+      {
+        "bin": 2,
+        "frames": 60
+      },
+      {
+        "bin": 3,
+        "frames": 60
+      },
+      {
+        "bin": 4,
+        "frames": 60
+      },
+      {
+        "bin": 5,
+        "frames": 60
+      },
+      {
+        "bin": 6,
+        "frames": 60
+      },
+      {
+        "bin": 7,
+        "frames": 60
+      },
+      {
+        "bin": 8,
+        "frames": 60
+      },
+      {
+        "bin": 9,
+        "frames": 60
+      },
+      {
+        "bin": 10,
+        "frames": 60
+      },
+      {
+        "bin": 11,
+        "frames": 60
+      },
+      {
+        "bin": 12,
+        "frames": 60
+      },
+      {
+        "bin": 13,
+        "frames": 60
+      },
+      {
+        "bin": 14,
+        "frames": 60
+      },
+      {
+        "bin": 15,
+        "frames": 60
+      },
+      {
+        "bin": 16,
+        "frames": 59
+      },
+      {
+        "bin": 17,
+        "frames": 60
+      },
+      {
+        "bin": 18,
+        "frames": 60
+      },
+      {
+        "bin": 19,
+        "frames": 60
+      },
+      {
+        "bin": 20,
+        "frames": 60
+      },
+      {
+        "bin": 21,
+        "frames": 60
+      },
+      {
+        "bin": 22,
+        "frames": 60
+      },
+      {
+        "bin": 23,
+        "frames": 58
+      }
+    ],
+    "last_source_pts": 4312308,
+    "observed_bin_range": [
+      0,
+      23
+    ],
+    "occupied_bin_count": 24,
+    "range_note": "No inference about bins before first or after last decoded frame; empty internal bins are not filled."
+  },
+  "diagnostic_summary": {
+    "reviewed_software_colorspace_fallback_notices": 13,
+    "unreviewed_warning_or_error_count": 0
+  },
+  "overview_sheets": [
+    {
+      "bytes": 1046222,
+      "path": "overview/sheet-0000.png",
+      "sample_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "sha256": "98124c01a105d1e63212aa3f22d2efa29e783096e83ee92b9c54727bb43dc8ce"
+    },
+    {
+      "bytes": 1079783,
+      "path": "overview/sheet-0001.png",
+      "sample_indices": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "sha256": "66af18e82cd5914be3b5973a3755e6eb9861f4dd69bb20a8e462a17df7e89a91"
+    }
+  ],
+  "products": {
+    "decode.stderr": {
+      "bytes": 13337,
+      "sha256": "85789a87ca5048193064d12cedc67db1a7e799c8de95a4f519436933db67a6b2"
+    },
+    "decode.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frame-inventory.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frame-inventory.stdout": {
+      "bytes": 47046,
+      "sha256": "94e80e90e7223ec6031f16fa1d032c62163473f30b4cdf05bfad582a90cf25ea"
+    },
+    "frames.json": {
+      "bytes": 10172,
+      "sha256": "9c48db36de8edd78a49803d63d1a61d5b87973a80fd61c9a810ab009327c9322"
+    },
+    "native/frame-000001.png": {
+      "bytes": 176986,
+      "sha256": "ff208fd6e841b7c68d4e54bebb2e0b0931436cf7a6d0972241d2838a2be8c15e"
+    },
+    "native/frame-000002.png": {
+      "bytes": 215892,
+      "sha256": "930b7b075c35a1302cb9f558853ade575281bbe1d8b75f3fa6254a64453826f7"
+    },
+    "native/frame-000003.png": {
+      "bytes": 218226,
+      "sha256": "8f0abed77f490d592842d0aa77ba830d6c383750d549227c816672177d1ac27f"
+    },
+    "native/frame-000004.png": {
+      "bytes": 196333,
+      "sha256": "8cbc6c49d11135b2d13c6fa5744dd8101fcd37c9130d0507828e8e4ff87d7641"
+    },
+    "native/frame-000005.png": {
+      "bytes": 207404,
+      "sha256": "7cab970ea5b5d0d4f3f5728b2bcccc09b504de86eaff856304a6d9760b63c61f"
+    },
+    "native/frame-000006.png": {
+      "bytes": 210715,
+      "sha256": "3f6939b42415593682c1155119eb85e9447f5a9a785a1d6ca460f6088c180212"
+    },
+    "native/frame-000007.png": {
+      "bytes": 197371,
+      "sha256": "c6e10ab54555751fc369d31f92618bd2623bf20e844fcb06035ab1092556a54a"
+    },
+    "native/frame-000008.png": {
+      "bytes": 203173,
+      "sha256": "cd35630b4fb17d7ce814dc33262d7ccd9e44373708fd45eadf87968b9d98b7d7"
+    },
+    "native/frame-000009.png": {
+      "bytes": 173221,
+      "sha256": "8d2e42c579f778e28694fdf4162ca42aea8b66a99058251fcf0305126b11d3d7"
+    },
+    "native/frame-000010.png": {
+      "bytes": 195241,
+      "sha256": "5e7551cfab6ae273eef5e4189ecd8ac0c9ab7d96609ca8bfb06691a34df254a3"
+    },
+    "native/frame-000011.png": {
+      "bytes": 201310,
+      "sha256": "719c6c60e62421531e3593d3983b34b85161c0bf29b06599e245c618b80cc344"
+    },
+    "native/frame-000012.png": {
+      "bytes": 187728,
+      "sha256": "9ee909b970255de2add8154005fc070d0dc20b5417a4310346b0e7a763210eef"
+    },
+    "native/frame-000013.png": {
+      "bytes": 197272,
+      "sha256": "953d602f755c16841a44a029f8085bdf08899c7b10cca8a10c1e298e46afaec8"
+    },
+    "native/frame-000014.png": {
+      "bytes": 197639,
+      "sha256": "f712188e301323b613189053926684c9e71006cd6a08c9d9324f28637e04522e"
+    },
+    "native/frame-000015.png": {
+      "bytes": 184193,
+      "sha256": "8894ca069aefac6bb75ce827b85c7d1986572e350d2ad0dd225ee54ba661bca8"
+    },
+    "native/frame-000016.png": {
+      "bytes": 189598,
+      "sha256": "f4d5fb63fcf510be6f23053e60e1723bc3b427e31d8e0a7189297a66e5349c13"
+    },
+    "native/frame-000017.png": {
+      "bytes": 155826,
+      "sha256": "6c0f252a20ea2365d9045b2ebfd956f021f0e739b94cb32da68a31ea916edca8"
+    },
+    "native/frame-000018.png": {
+      "bytes": 180012,
+      "sha256": "8cabcebd300e8a78b0ca0dd27a96b124a7fd2e8cd90ac3ad6efa18d733e77ac3"
+    },
+    "native/frame-000019.png": {
+      "bytes": 212110,
+      "sha256": "d33f984c54a48da711e6cdd50cd2c255a8b2d8cf552eacbf5cb6f9079b90da7f"
+    },
+    "native/frame-000020.png": {
+      "bytes": 191081,
+      "sha256": "b3d5c456a6487268e5f890d9b612bb7b60d1d19ab38573c331b8c1c33bbd14d5"
+    },
+    "native/frame-000021.png": {
+      "bytes": 210681,
+      "sha256": "e5f71c0a45f4a978a5a2a789d85630af717cbdead809baefaa9e1bec8bbf3852"
+    },
+    "native/frame-000022.png": {
+      "bytes": 219086,
+      "sha256": "7918b06d52b109cb1dff853c7078836813623116e613cf1d74757e3845c12bf5"
+    },
+    "native/frame-000023.png": {
+      "bytes": 227603,
+      "sha256": "dd1e37a38b41e0f635ce9a63cee9761ac8eaf581975841ce3a1a62c3f14eb13e"
+    },
+    "native/frame-000024.png": {
+      "bytes": 228125,
+      "sha256": "6b86d9566c2564f90553f0f92e01ae2308a64a0b5e9dea2ab1fab2a826e7b54c"
+    },
+    "overview/sheet-0000.png": {
+      "bytes": 1046222,
+      "sha256": "98124c01a105d1e63212aa3f22d2efa29e783096e83ee92b9c54727bb43dc8ce"
+    },
+    "overview/sheet-0001.png": {
+      "bytes": 1079783,
+      "sha256": "66af18e82cd5914be3b5973a3755e6eb9861f4dd69bb20a8e462a17df7e89a91"
+    },
+    "planned-frames.json": {
+      "bytes": 5900,
+      "sha256": "09d10aa5f1f0c39a4329f10d9470569a22ca4b983fa5028ba852fb2e93b37560"
+    },
+    "probe.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "probe.stdout": {
+      "bytes": 1179,
+      "sha256": "c4c8b2afb9194d54945c88a418f5dc2fba42dccbeb14692f7c5a86df571d229e"
+    },
+    "start.json": {
+      "bytes": 354,
+      "sha256": "37f08c9cdd783f6cb6d76ba0f66219a74a9e4c88606d38cd95161a34f2eaf11b"
+    }
+  },
+  "sample_count": 24,
+  "source": {
+    "bytes": 1341523,
+    "id": "VID-WTC7-003",
+    "path": "/Users/admin/docs/911/research/wtc7-video-comparison/media/analysis-source/NIST Camera 4.mp4",
+    "sha256": "af5c19dd597ecbe3cafbd163550fcd9c3ee9225d7f7b4f8e7000eb8ffb8232a3",
+    "step_seconds": 2
+  },
+  "source_after": {
+    "bytes": 1341523,
+    "sha256": "af5c19dd597ecbe3cafbd163550fcd9c3ee9225d7f7b4f8e7000eb8ffb8232a3"
+  },
+  "source_before": {
+    "bytes": 1341523,
+    "sha256": "af5c19dd597ecbe3cafbd163550fcd9c3ee9225d7f7b4f8e7000eb8ffb8232a3"
+  },
+  "source_id": "VID-WTC7-003",
+  "status": "completed"
+}

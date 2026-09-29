@@ -1,0 +1,27 @@
+{
+  "status": "FAIL",
+  "stage": "independent_comparison_of_frozen_run05",
+  "producer_result_sha256": "92c9e4115b11c6e3b9bd73b59a79ee1cfa467d5cd4a31b24cf3b7c823d2af038",
+  "producer_receipt_sha256": "1e78f866dac0f7af24e272b15b85bbb8a409ced5356bdfae87d7e759479ae388",
+  "producer_code_sha256_at_comparison": "a4bf444a915bdc088c2735180532ac5d1fd909a1f40eb0daf67b756c8525be35",
+  "verifier_sha256_at_comparison": "c486a1667f8b7d2d26f7fffbd26c0d31eb02d2dc46ed2372a614771d1d795f0c",
+  "independent_checkpoint_sha256": "85e2649cdc2ccc2974f4959e5f19bb8d01f8533e16326bb2647c092252bcbd2e",
+  "independent_supplement_sha256": "7803e6b2d82b852d37c656e44bbf0c04b4d109f1a1ac03fb97a87ab8816a8fc8",
+  "absolute_float_tolerance": 1e-8,
+  "integer_scalars_checked": 42493,
+  "floating_scalars_checked": 46286,
+  "maximum_absolute_numeric_error": 98.53093,
+  "numerical_failures": [
+    {"path": "plane.101.member_geometry_bounds.0.1", "actual": -26.94711, "independent_expected": 15.59462, "absolute_error": 42.54173},
+    {"path": "plane.101.member_geometry_bounds.1.0", "actual": 32.97771, "independent_expected": -65.55322, "absolute_error": 98.53093},
+    {"path": "plane.101.member_geometry_bounds.1.1", "actual": 16.30299, "independent_expected": 16.28238, "absolute_error": 0.02061000000000135}
+  ],
+  "source_relationship": "Plane 101 references only part 101. The producer part-101 geometry row agrees with the independently reconstructed part and plane bounds; its plane-101 member_geometry_bounds instead equals the all-columns envelope. Thermal bounds are correct.",
+  "other_numeric_comparisons": "All other numeric comparisons passed, including target geometry, per-part/per-plane coefficient envelopes, Case A geometry and four high-TS source example occurrences.",
+  "separate_metadata_differences": [
+    "Part heading hash recipes differ for several source headings: producer preserves source whitespace excluding CR/LF, while the initial independent supplementary heading hash strips whitespace. This is not treated as a numerical geometry failure.",
+    "The independent all-columns label normalizer omitted the exact suffixed all-columns x-sect form and conservatively left it unresolved. This is a verifier normalization omission, not evidence against model labeling."
+  ],
+  "disposition": "No final verification PASS receipt was written. Preserve run05 and independent checkpoints unchanged; independently verify a corrected producer result. This record was assembled from the recorded comparison output and focused numerical relationship check, not edited into the original producer receipt.",
+  "interpretation": "A local producer-aggregation defect, not a finding about the original model, historical solver behavior, or physical collapse cause."
+}

@@ -1,0 +1,177 @@
+{
+  "schema": "tn1749-independent-source-transcription-v1",
+  "status": "frozen before arithmetic and before root transcription or output access",
+  "source": {
+    "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-calibration-audit/retrospective-sources/nist-tn-1749-july2012-corrected-feb2013.pdf",
+    "sha256": "5d7461f298654ffb0c9f8df319298330d155fc2d8155d85abcd5391a4d748caf",
+    "edition": "July 2012; corrected February 2013",
+    "physical_page_count": 113,
+    "full_page_views": [
+      {"physical":41,"printed":23},
+      {"physical":42,"printed":24},
+      {"physical":43,"printed":25},
+      {"physical":44,"printed":26},
+      {"physical":45,"printed":27},
+      {"physical":46,"printed":28},
+      {"physical":47,"printed":29}
+    ],
+    "method": "Independent full-page image transcription at 130 dpi with pypdf text as auxiliary aid. Tables 3-3 and 3-4 are entirely on physical page46, printed28; adjacent pages confirm no table continuation. Complete headers, footnotes, figure axes, captions and adjoining discussion were inspected. No plot digitization.",
+    "source_family": "Later NIST retrospective description and numerical modeling of experiments attributed to Thompson 2009; not an additional experimental campaign.",
+    "precision_rule": "Numeric values are retained as displayed strings, including trailing zeroes and signed deviations. Percent values are percent units, not fractions.",
+    "individual_experiment_values_in_selected_tables": false,
+    "arithmetic_performed_before_freeze": false
+  },
+  "tables": [
+    {
+      "table": "3-3",
+      "physical_page": 46,
+      "printed_page": 28,
+      "quantity": "ultimate vertical load",
+      "symbol": "P_u",
+      "unit": "kN",
+      "configuration": "two-span beam assemblies",
+      "table_attribution": "Thompson 2009",
+      "value_decimal_places": 1,
+      "deviation_decimal_places": 1,
+      "cov_decimal_places": 1,
+      "deviation_footnote": "Percentage deviation from mean experimental value",
+      "cov_footnote": "Coefficient of Variation = standard deviation / mean",
+      "sd_convention_specified": false,
+      "rows": [
+        {
+          "row":1,"connection_bolts":3,
+          "detailed":{"value":"47.1","deviation_percent":"-14.6"},
+          "reduced":{"value":"43.4","deviation_percent":"-21.3"},
+          "experiment":{"mean":"55.1","cov_percent":"11.3","sample_n_stated_in_table":null}
+        },
+        {
+          "row":2,"connection_bolts":4,
+          "detailed":{"value":"65.7","deviation_percent":"-10.6"},
+          "reduced":{"value":"74.8","deviation_percent":"+1.8"},
+          "experiment":{"mean":"73.5","cov_percent":"19.5","sample_n_stated_in_table":null}
+        },
+        {
+          "row":3,"connection_bolts":5,
+          "detailed":{"value":"90.7","deviation_percent":"-5.8"},
+          "reduced":{"value":"106.6","deviation_percent":"+10.6"},
+          "experiment":{"mean":"96.4","cov_percent":"7.1","sample_n_stated_in_table":null}
+        }
+      ]
+    },
+    {
+      "table": "3-4",
+      "physical_page": 46,
+      "printed_page": 28,
+      "quantity": "rotation at ultimate load",
+      "symbol": "theta_u",
+      "unit": "rad",
+      "configuration": "two-span beam assemblies",
+      "table_attribution": "Thompson 2009",
+      "value_decimal_places": 3,
+      "deviation_decimal_places": 1,
+      "cov_decimal_places": 1,
+      "deviation_footnote": "Percentage deviation from mean experimental value",
+      "cov_footnote": "Coefficient of Variation = standard deviation / mean",
+      "sd_convention_specified": false,
+      "rows": [
+        {
+          "row":1,"connection_bolts":3,
+          "detailed":{"value":"0.120","deviation_percent":"-13.8"},
+          "reduced":{"value":"0.103","deviation_percent":"-26.1"},
+          "experiment":{"mean":"0.139","cov_percent":"3.4","sample_n_stated_in_table":null}
+        },
+        {
+          "row":2,"connection_bolts":4,
+          "detailed":{"value":"0.087","deviation_percent":"-21.5"},
+          "reduced":{"value":"0.093","deviation_percent":"-16.6"},
+          "experiment":{"mean":"0.111","cov_percent":"18.8","sample_n_stated_in_table":null}
+        },
+        {
+          "row":3,"connection_bolts":5,
+          "detailed":{"value":"0.066","deviation_percent":"-24.3"},
+          "reduced":{"value":"0.082","deviation_percent":"-5.6"},
+          "experiment":{"mean":"0.087","cov_percent":"9.6","sample_n_stated_in_table":null}
+        }
+      ]
+    }
+  ],
+  "sample_coverage": {
+    "physical_page_sources":[41,43,45],
+    "reported_tests_conducted":[
+      {"connection_bolts":3,"tests":3},
+      {"connection_bolts":4,"tests":3},
+      {"connection_bolts":5,"tests":3}
+    ],
+    "reported_total_tests":9,
+    "same_beams_reused_in_all_tests":true,
+    "figure_3_21_curve_labels":[
+      {"connection_bolts":3,"test_labels":[1,2,3]},
+      {"connection_bolts":4,"test_labels":[1,2,3]},
+      {"connection_bolts":5,"test_labels":[2,3]}
+    ],
+    "reported_omission":{"connection_bolts":5,"test":1,"scope":"Measurements not presented in the Figure3-21 comparison; initial part of test missing due to a problem with test setup, according to physical page43."},
+    "table_summary_sample_membership_status":"Neither Table3-3 nor Table3-4 explicitly lists constituent test IDs or n. Do not silently equate conducted tests with included summary samples, or infer summary exclusion solely from the plotted-test omission. Resolve against original records and arithmetic after the numerical protocol is frozen.",
+    "cov_reproducibility_from_selected_tables":"Means and COVs are stated, not recomputable from individual observations supplied in these tables; sample-versus-population SD convention is not stated here."
+  },
+  "conditions_and_inference_limits": [
+    {
+      "physical_page":41,"printed_page":23,
+      "classification":"retrospective experimental-description attribution",
+      "observation":"Concentrated load applied to an unsupported center column, shear-tab center connections, exterior true-pin connections at beam mid-height. TN1749 uses chord length1.89m (6.21ft). The same beams were reused in all nine tests, with beam-web doubler plates to prevent bearing deformations around beam-web holes. This is not by itself a sudden dynamic column-removal test or nine wholly independent new assemblies."
+    },
+    {
+      "physical_page":41,"printed_page":23,
+      "classification":"retrospective geometry and definition attribution",
+      "observation":"Footnote4 defines chord length as horizontal distance between bolt centerlines at the ends; span length is distinguished as distance between column centerlines. TN geometry specifies 19mm A325 shear-tab bolts,32mm A490 exterior bolts, threads excluded from shear planes,9.5mm shear tabs,38.1mm horizontal centerline-to-edge distance and shear-tab depths229/305/381mm for3/4/5 bolts."
+    },
+    {
+      "physical_page":42,"printed_page":24,
+      "classification":"later numerical-model assumption",
+      "observation":"Tensile-test data for the steel components were not provided; representative stress-strain curves and failure strains were used with calibration referenced to Section3.1.1. Detailed models place bolts initially centered in standard holes and assume zero initial tension. These are model statements, not independently verified original test pretension or measured stress-strain data."
+    },
+    {
+      "physical_page":42,"printed_page":24,
+      "classification":"later model choice informed by comparison",
+      "observation":"Reduced models include an initial zero-load axial gap to1.6mm in tension and compression, said to yield better agreement than neglecting it; that gap is not applied in the vertical-shear spring law. Only half the assembly is modeled with symmetry conditions."
+    },
+    {
+      "physical_page":43,"printed_page":25,
+      "classification":"later numerical-model calculation",
+      "observation":"An exterior pin gap element also represents1.6mm slippage. Bolt springs use147kN ultimate capacity and failure displacement1.15 times displacement at ultimate load, based on predicted bolt shear. Calculated tensile bearing capacity is159kN and compression/tension yield capacities111/98.5kN. These are model-law values and not original individual test measurements."
+    },
+    {
+      "physical_page":43,"printed_page":25,
+      "classification":"reported comparison and sample caveat",
+      "observation":"Measured beam axial force plotted is an average of the two spans. TN1749 reports three tests per size; measurements for5-bolt test1 are not presented because initial data were missing. Table means and COVs do not separately declare the constituent test IDs."
+    },
+    {
+      "physical_page":44,"printed_page":26,
+      "classification":"reported geometry conversion",
+      "observation":"TN1749 says its rotations are about5percent larger than Thompson's, using1.89m between bolt centerlines instead of Thompson's reported1.99m exterior-pin-to-center-column-face distance. Preserve both conventions; no rotation conversion has been calculated for this transcription."
+    },
+    {
+      "physical_page":44,"printed_page":26,
+      "classification":"reported model/experiment distinction",
+      "observation":"Both models predict bolt-shear fracture in every case, while experiments reportedly include bolt shear, shear-tab tensile rupture and shear-tab block shear. Computed peak load always corresponds to initial failure, but experiment4-bolt test1 and5-bolt test3 have their peak at a secondary failure. Peak comparison therefore does not automatically compare identical failure stages."
+    },
+    {
+      "physical_page":44,"printed_page":26,
+      "classification":"reported sensitivity and unknown restraint",
+      "observation":"Axial-force agreement is reported weaker than vertical-load agreement; forces are sensitive to axial restraints and gaps. An alternative study used axial springs to represent unknown test-frame stiffness; TN1749 instead uses connection gaps. No original measured test-frame stiffness is supplied on these pages."
+    },
+    {
+      "physical_page":45,"printed_page":27,
+      "classification":"comparison-informed model selection",
+      "observation":"Reduced-model quadratic unloading without permanent offset was selected over initial-stiffness linear unloading because it gave better agreement with measurements. Thus these displayed comparisons are not wholly unused holdout tests for all choices. Figure3-21 shows both vertical load and axial force, with beam-chord rotation and center-column displacement axes; no curves were digitized."
+    },
+    {
+      "physical_page":47,"printed_page":29,
+      "classification":"later simplified analytical assumption",
+      "observation":"Section3.4 concentrates deformation in connections and treats beam spans as rigid bodies with negligible bending/axial deformation. Its beam chord rotation is arctan(displacement/chord length). This is an analytical convention, not authorization to silently overwrite original reported rotations."
+    }
+  ],
+  "known_read_failure": {
+    "stage":"first image lookup",
+    "description":"The initial view requested page-45.png, but Poppler used three-digit page-045.png for this113-page source. Directory inventory identified actual filenames, and all seven complete pages were then viewed. No source or numeric transcription changed."
+  }
+}

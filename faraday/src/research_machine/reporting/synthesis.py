@@ -1,0 +1,1851 @@
+from __future__ import annotations
+
+from collections import Counter, defaultdict
+
+from research_machine.application.dataset_inventory import build_dataset_inventory
+from research_machine.application.policies import (
+    declares_legacy_pre_registration_result_exposure,
+    typed_result_exposure_allows_evidence,
+)
+from research_machine.domain.models import (
+    ActionCandidate,
+    ActionRecommendation,
+    ActionScore,
+    AliasProxyMappingRecord,
+    Claim,
+    CrossLaneLesson,
+    DatasetManifest,
+    DatasetRole,
+    EvidenceRecord,
+    EvidenceStatusEvent,
+    ExperimentProtocol,
+    Hypothesis,
+    Inquiry,
+    Question,
+    QuestionStatus,
+    ResearchRun,
+    RigorAudit,
+    RigorSeverity,
+)
+
+
+def _text(value: str) -> str:
+    return value.strip() or "Not specified."
+
+
+def _protocol_factor_summary(protocol: ExperimentProtocol) -> str:
+    factors = protocol.manipulated_factors
+    has_plan = bool(protocol.factor_interpretability_plan.strip())
+    if not factors:
+        if protocol.factorial_or_crossover_design or has_plan:
+            return "no manipulated factors declared; factor plan state is unresolved"
+        return "no manipulated factors declared"
+    if protocol.factorial_or_crossover_design:
+        design = "factorial/crossover declared"
+    elif len(factors) == 1:
+        design = "single-factor or legacy-unresolved design"
+    else:
+        design = "missing factorial/crossover declaration"
+    if has_plan:
+        design += f"; plan: {protocol.factor_interpretability_plan}"
+    elif len(factors) > 1 or protocol.factorial_or_crossover_design:
+        design += "; missing factor-interpretability plan"
+    return ", ".join(factors) + f" ({design})"
+
+
+def _list_text(values: list[str]) -> str:
+    return ", ".join(values) if values else "none"
+
+
+def _protocol_acquisition_timing_summary(protocol: ExperimentProtocol) -> str:
+    clock = protocol.clock_accuracy_requirement.strip() or "missing"
+    return (
+        f"sensors/streams: {_list_text(protocol.sensor_requirements)}; "
+        f"clock accuracy/synchronization: {clock}; "
+        f"control windows: {_list_text(protocol.control_windows)}"
+    )
+
+
+def _protected_lineage_state(
+    dataset: DatasetManifest, datasets_by_id: dict[str, DatasetManifest]
+) -> str:
+    if dataset.role not in {DatasetRole.CONFIRMATORY, DatasetRole.REPLICATION}:
+        return "not protected"
+    if not dataset.protocol_id:
+        return "missing protocol binding"
+    problems: list[str] = []
+    for source_id in dataset.source_dataset_ids:
+        source = datasets_by_id.get(source_id)
+        if source is None:
+            problems.append(f"missing source `{source_id}`")
+        elif source.role is not dataset.role or source.protocol_id != dataset.protocol_id:
+            problems.append(f"cross-boundary source `{source_id}`")
+    if problems:
+        return "; ".join(problems)
+    return "protocol-closed"
+
+
+def _artifact_integrity_passed(value: object) -> bool:
+    return (
+        isinstance(value, dict)
+        and isinstance(value.get("artifact_integrity"), dict)
+        and value["artifact_integrity"].get("status") == "passed"
+        and value["artifact_integrity"].get("all_artifacts_match") is True
+    )
+
+
+def _protected_dataset_verification_summary(
+    dataset: DatasetManifest,
+    protocol: ExperimentProtocol | None,
+) -> str:
+    if dataset.role not in {DatasetRole.CONFIRMATORY, DatasetRole.REPLICATION}:
+        return "not protected"
+    parts: list[str] = []
+    if dataset.synthetic:
+        parts.append(
+            "observation bytes: synthetic dataset; local observation-byte "
+            "verification not required"
+        )
+    elif _artifact_integrity_passed(
+        dataset.metadata.get("dataset_artifact_verification")
+    ):
+        parts.append("observation bytes: service-verified")
+    else:
+        parts.append("observation bytes: missing service verification")
+
+    if protocol is None:
+        parts.append(
+            "protocol-dependent checks: unavailable because protocol is missing"
+        )
+        return "; ".join(parts)
+
+    if protocol.measurement_custody_requirements:
+        custody = dataset.metadata.get("measurement_custody_verification")
+        if (
+            _artifact_integrity_passed(custody)
+            and isinstance(custody, dict)
+            and custody.get("protocol_hash") == protocol.protocol_hash
+            and custody.get("required_gate_ids")
+            == list(protocol.measurement_custody_requirements)
+        ):
+            parts.append("measurement custody: service-verified")
+        else:
+            parts.append("measurement custody: missing exact service verification")
+    else:
+        parts.append("measurement custody: no frozen custody gates")
+
+    if protocol.human_subjects:
+        status_check = dataset.metadata.get("ethics_review_status_check")
+        if (
+            isinstance(status_check, dict)
+            and status_check.get("status") == "active"
+            and status_check.get("protocol_hash") == protocol.protocol_hash
+        ):
+            parts.append("ethics status: active service check")
+        else:
+            parts.append("ethics status: missing active service check")
+        if protocol.independent_review_decision == "approved_with_conditions":
+            condition_check = dataset.metadata.get("ethics_condition_verification")
+            if (
+                _artifact_integrity_passed(condition_check)
+                and isinstance(condition_check, dict)
+                and condition_check.get("protocol_hash") == protocol.protocol_hash
+                and [
+                    item.get("condition")
+                    for item in condition_check.get("condition_results", [])
+                    if isinstance(item, dict)
+                ] == list(protocol.independent_review_conditions)
+            ):
+                parts.append("ethics conditions: service-verified")
+            else:
+                parts.append("ethics conditions: missing exact service verification")
+        else:
+            parts.append("ethics conditions: not conditionally approved")
+    else:
+        parts.append("ethics status: not human-subject protocol")
+    return "; ".join(parts)
+
+
+def _dataset_inventory_lines(inventory: dict[str, object]) -> list[str]:
+    if inventory.get("registered_dataset_count") == 0:
+        notice = str(inventory.get("empty_inventory_notice", ""))
+        return [f"- {notice}"]
+    role_counts = inventory.get("role_counts", {})
+    if isinstance(role_counts, dict):
+        count_summary = ", ".join(
+            f"{role}: {count}" for role, count in sorted(role_counts.items())
+        )
+    else:
+        count_summary = "unavailable"
+    lines = [
+        f"- Role counts: {count_summary}; synthetic: "
+        f"{inventory.get('synthetic_count', 0)}; non-synthetic: "
+        f"{inventory.get('non_synthetic_count', 0)}.",
+        f"- Inventory meaning: {inventory.get('interpretation_limit', '')}",
+    ]
+    for dataset in inventory.get("datasets", []):
+        if not isinstance(dataset, dict):
+            continue
+        sources = dataset.get("source_dataset_ids", [])
+        source_text = (
+            ", ".join(f"`{source_id}`" for source_id in sources)
+            if isinstance(sources, list) and sources
+            else "none"
+        )
+        media_types = dataset.get("media_types", [])
+        media_text = _list_text(
+            [str(item) for item in media_types] if isinstance(media_types, list) else []
+        )
+        payload = dataset.get("payload_commitment", {})
+        source_authority = dataset.get("source_authority", {})
+        observation = dataset.get("observation_access", {})
+        custody = dataset.get("measurement_custody", {})
+        workflow = dataset.get("workflow_materialization", {})
+        ethics = dataset.get("ethics", {})
+        readiness = dataset.get("readiness", {})
+        protocol_label = (
+            f"`{dataset['protocol_id']}`" if dataset.get("protocol_id") else "unbound"
+        )
+        blockers = []
+        if isinstance(readiness, dict) and isinstance(
+            readiness.get("blocking_finding_codes"), list
+        ):
+            blockers = [str(item) for item in readiness["blocking_finding_codes"]]
+        lines.append(
+            f"- Dataset `{dataset.get('dataset_id')}` [{dataset.get('role')}; "
+            f"{'synthetic' if dataset.get('synthetic') else 'non-synthetic'}; "
+            f"protocol {protocol_label}]: {dataset.get('artifact_count', 0)} "
+            f"artifact(s), media {media_text}, sources {source_text}; "
+            f"source authority: {source_authority.get('summary') if isinstance(source_authority, dict) else 'unavailable'}; "
+            "workflow materialization: "
+            f"{workflow.get('summary') if isinstance(workflow, dict) else 'unavailable'}; "
+            f"{payload.get('summary') if isinstance(payload, dict) else 'payload status unavailable'}; "
+            "access/readiness: "
+            f"{observation.get('summary') if isinstance(observation, dict) else 'unavailable'}; "
+            f"{custody.get('summary') if isinstance(custody, dict) else 'custody status unavailable'}; "
+            f"{ethics.get('summary') if isinstance(ethics, dict) else 'ethics status unavailable'}; "
+            "rigor readiness: "
+            f"{readiness.get('summary') if isinstance(readiness, dict) else 'unavailable'}"
+            + (
+                f" Blocking findings: {', '.join(blockers)}."
+                if blockers
+                else "."
+            )
+        )
+    return lines
+
+
+def _evidence_detail_lines(
+    records: list[EvidenceRecord], statuses: dict[str, EvidenceStatusEvent]
+) -> list[str]:
+    if not records:
+        return ["- Evidence detail: No evidence recorded."]
+    lines: list[str] = []
+    for record in records:
+        mode = "exploratory" if record.exploratory else "confirmatory"
+        current = statuses.get(record.evidence_id)
+        status = current.status if current is not None else "active_no_status_event"
+        lines.extend(
+            [
+                f"- `{record.evidence_id}` [{mode}; {record.direction.value}] "
+                f"(current status: {status}) {record.summary}",
+                f"  - Scope: {_text(record.scope)}",
+                f"  - Effect estimate: {_text(record.effect_estimate)}",
+                f"  - Uncertainty: {_text(record.uncertainty)}",
+                f"  - Analysis claim ceiling: {_text(record.analysis_claim_ceiling)}",
+                f"  - Result direction check: {_text(record.result_direction_check)}",
+                f"  - Verified analysis output: {_text(record.analysis_output_sha256)}",
+                "  - Validation tags: "
+                + (
+                    ", ".join(tag.value for tag in record.validation_tags)
+                    or "Unclassified legacy evidence."
+                ),
+                "  - Consistent frozen measurement-validity checks: "
+                + (
+                    ", ".join(record.measurement_validity_check_ids)
+                    or "none"
+                ),
+                "  - Higher conclusions unsupported: "
+                + (
+                    "; ".join(record.higher_level_conclusions_unsupported)
+                    or "None specified."
+                ),
+            ]
+        )
+        if current is not None:
+            lines.extend([
+                f"  - Latest status reason: {_text(current.reason)}",
+                f"  - Status review artifact: `{current.review_artifact_sha256}` at `{current.review_artifact_locator}`",
+            ])
+    return lines
+
+
+def _cross_lane_lesson_lines(lessons: list[CrossLaneLesson]) -> list[str]:
+    lines = [f"- Cross-lane process lessons: {len(lessons)}"]
+    for lesson in sorted(lessons, key=lambda item: (item.created_at, item.lesson_id)):
+        commitment = lesson.lesson_payload_sha256 or "legacy_missing"
+        transfer_authority = (
+            "current" if lesson.current_transfer_authority else "denied"
+        )
+        prose_status = (
+            "; lexical legacy findings `"
+            + ", ".join(lesson.report_prose_findings)
+            + "`"
+            if lesson.report_prose_findings
+            else ""
+        )
+        lines.append(
+            f"  - `{lesson.lesson_id}`: `{lesson.origin_lane_id}` -> "
+            f"{', '.join(f'`{lane}`' for lane in lesson.target_lane_ids)}; "
+            f"failure class `{lesson.failure_class}`; origin artifact "
+            f"`{lesson.origin_artifact_sha256}` ({lesson.origin_integrity_status}); "
+            f"payload commitment `{commitment}`; current transfer authority "
+            f"`{transfer_authority}` "
+            f"(`{lesson.transfer_authority_status.value}`){prose_status}; "
+            f"ceiling: {lesson.conclusion_ceiling}"
+        )
+    return lines
+
+
+def build_synthesis(
+    inquiry: Inquiry,
+    questions: list[Question],
+    claims: list[Claim],
+    hypotheses: list[Hypothesis],
+    evidence: list[EvidenceRecord],
+    datasets: list[DatasetManifest],
+    protocols: list[ExperimentProtocol],
+    runs: list[ResearchRun],
+    recommendations: list[ActionRecommendation],
+    cross_lane_lessons: list[CrossLaneLesson],
+    rigor_audit: RigorAudit,
+    evidence_status_events: list[EvidenceStatusEvent],
+    alias_proxy_mapping_records: list[AliasProxyMappingRecord] | None = None,
+) -> str:
+    latest_status: dict[str, EvidenceStatusEvent] = {}
+    for event in sorted(evidence_status_events, key=lambda item: (item.evidence_id, item.sequence)):
+        latest_status[event.evidence_id] = event
+    open_questions = [
+        question for question in questions
+        if question.status is QuestionStatus.OPEN
+    ]
+    deferred_questions = [
+        question for question in questions
+        if question.status is QuestionStatus.DEFERRED
+    ]
+    contributing_ids = {
+        record.evidence_id for record in evidence
+        if record.evidence_id not in latest_status
+        or latest_status[record.evidence_id].status == "active"
+    }
+    evidence_by_hypothesis: dict[str, list[EvidenceRecord]] = defaultdict(list)
+    for record in evidence:
+        evidence_by_hypothesis[record.hypothesis_id].append(record)
+
+    lines = [
+        f"# Evidence synthesis: {inquiry.title}",
+        "",
+        f"**Inquiry:** {inquiry.initial_statement}",
+        "",
+        "This report is derived from structured state. It does not promote evidence "
+        "between claim levels or infer mechanism, adaptation, attribution, intent, "
+        "or legal characterization.",
+        "",
+        "## Decision context",
+        "",
+        f"- Decision to support: {_text(inquiry.decision_to_support)}",
+        f"- Minimum evidence: {_text(inquiry.minimum_evidence)}",
+        "- Decision owner: " + _text(inquiry.decision_owner),
+        "- Evidence that would change the decision: "
+        + (
+            "; ".join(inquiry.decision_change_criteria)
+            or "No change criteria recorded."
+        ),
+        f"- Open questions still unresolved: {len(open_questions)}",
+        f"- Deferred questions retained as unresolved: {len(deferred_questions)}",
+        "",
+        "## Clarifying questions",
+        "",
+    ]
+    if open_questions or deferred_questions:
+        lines.extend(
+            [
+                "Open and deferred questions remain live ambiguity, not evidence, "
+                "answers, or authorization to choose a preferred explanation.",
+                "",
+            ]
+        )
+    if questions:
+        for question in questions:
+            answer = f" — {question.answer}" if question.answer else ""
+            lines.append(f"- [{question.status.value}] {question.text}{answer}")
+    else:
+        lines.append("- No clarifying questions recorded.")
+
+    lines.extend(["", "## Claim map", ""])
+    if claims:
+        for claim in claims:
+            parents = ", ".join(claim.parent_claims) or "none"
+            confidence = (
+                f"{claim.confidence:.2f}"
+                if claim.confidence is not None
+                else "not assessed"
+            )
+            lines.extend(
+                [
+                    f"- `{claim.claim_id}` [{claim.level.value}; "
+                    f"{claim.epistemic_layer.value}; {claim.disposition.value}] "
+                    f"{claim.statement}",
+                    f"  - Depends on: {parents}",
+                    "  - Conflicts with: "
+                    + (", ".join(claim.conflicts_with) or "none"),
+                    "  - Sources: " + ("; ".join(claim.source_refs) or "none"),
+                    "  - Falsified by: "
+                    + ("; ".join(claim.falsified_by) or "not specified"),
+                    f"  - Confidence: {confidence}; last reviewed: "
+                    + (claim.last_reviewed or "not recorded"),
+                ]
+            )
+    else:
+        lines.append("- No claims recorded.")
+
+    active = [item for item in hypotheses if item.workflow_state.value == "active"]
+    pending = [
+        item for item in hypotheses if item.workflow_state.value == "pending_review"
+    ]
+    drafts = [item for item in hypotheses if item.workflow_state.value == "unreviewed"]
+    parked = [item for item in hypotheses if item.workflow_state.value == "parked"]
+    retired = [item for item in hypotheses if item.workflow_state.value == "retired"]
+
+    lines.extend(["", "## Active competing hypotheses", ""])
+    if active:
+        for hypothesis in active:
+            records = evidence_by_hypothesis[hypothesis.hypothesis_id]
+            directions = Counter(
+                record.direction.value for record in records
+                if record.evidence_id in contributing_ids
+            )
+            evidence_summary = (
+                ", ".join(
+                    f"{name}: {count}" for name, count in sorted(directions.items())
+                )
+                or "no evidence recorded"
+            )
+            lines.extend(
+                [
+                    f"### {hypothesis.hypothesis_id}",
+                    "",
+                    hypothesis.statement,
+                    "",
+                    f"- Prediction: {_text(hypothesis.observable_prediction)}",
+                    f"- Null model: {_text(hypothesis.null_model)}",
+                    "- Competing models: "
+                    + ("; ".join(hypothesis.competing_models) or "Not specified."),
+                    "- Falsification conditions: "
+                    + (
+                        "; ".join(hypothesis.falsification_conditions)
+                        or "Not specified."
+                    ),
+                    f"- Evidence records: {evidence_summary}",
+                ]
+            )
+            lines.extend(_evidence_detail_lines(records, latest_status))
+            lines.append("")
+    else:
+        lines.append("- No active hypotheses.")
+
+    lines.extend(["", "## Pending human review", ""])
+    if pending:
+        for hypothesis in pending:
+            records = evidence_by_hypothesis[hypothesis.hypothesis_id]
+            directions = Counter(
+                record.direction.value for record in records
+                if record.evidence_id in contributing_ids
+            )
+            evidence_summary = (
+                ", ".join(
+                    f"{name}: {count}" for name, count in sorted(directions.items())
+                )
+                or "no exploratory evidence recorded"
+            )
+            lines.extend(
+                [
+                    f"### {hypothesis.hypothesis_id}",
+                    "",
+                    hypothesis.statement,
+                    "",
+                    "- Status: provisionally staged for exploratory work; human "
+                    "ratification remains pending.",
+                    f"- Staged by: {_text(hypothesis.pending_review_by or '')}",
+                    f"- Confidence: {_text(hypothesis.pending_review_confidence)}",
+                    f"- Rationale: {_text(hypothesis.pending_review_rationale)}",
+                    f"- Exploratory evidence records: {evidence_summary}",
+                ]
+            )
+            lines.extend(_evidence_detail_lines(records, latest_status))
+            lines.append("")
+    else:
+        lines.append("- No hypotheses pending human review.")
+
+    lines.extend(["", "## Rejected and retired hypothesis memory", ""])
+    if retired:
+        for hypothesis in retired:
+            retirement = hypothesis.retirement or {}
+            resurrection = retirement.get("resurrection_conditions", [])
+            lines.extend(
+                [
+                    f"### {hypothesis.hypothesis_id}",
+                    "",
+                    hypothesis.statement,
+                    "",
+                    f"- Decision: {retirement.get('rejection_type', 'not specified')}",
+                    f"- Reason: {retirement.get('reason', 'not specified')}",
+                    f"- Limitations: {retirement.get('limitations') or 'Not specified.'}",
+                    "- Resurrection conditions: "
+                    + ("; ".join(resurrection) or "None recorded."),
+                    "",
+                ]
+            )
+    else:
+        lines.append("- No retired hypotheses.")
+
+    valid_runs = [
+        run for run in runs
+        if run.scientific_evidence_eligible
+        and typed_result_exposure_allows_evidence(run.metadata)
+    ]
+    valid_run_ids = {run.run_id for run in valid_runs}
+    invalid_runs = [run for run in runs if run.run_id not in valid_run_ids]
+    datasets_by_id = {dataset.dataset_id: dataset for dataset in datasets}
+    protocols_by_id = {protocol.protocol_id: protocol for protocol in protocols}
+    alias_records_by_protocol: dict[str, list[AliasProxyMappingRecord]] = defaultdict(list)
+    for record in alias_proxy_mapping_records or []:
+        alias_records_by_protocol[record.protocol_id].append(record)
+    dataset_inventory = build_dataset_inventory(
+        datasets, protocols, rigor_audit.findings
+    )
+    lines.extend(
+        [
+            "",
+            "## Execution and provenance",
+            "",
+            f"- Registered datasets: {len(datasets)}",
+            f"- Frozen protocols: {sum(item.status.value == 'frozen' for item in protocols)}",
+            f"- Evidence-eligible runs: {len(valid_runs)}",
+            f"- Ineligible runs retained: {len(invalid_runs)}",
+            f"- Currently contributing evidence records: {sum(item.scientific_evidence_eligible and item.evidence_id in contributing_ids for item in evidence)}",
+            f"- Evidence records under qualification, withdrawal, or retraction: {len(evidence) - len(contributing_ids)}",
+        ]
+    )
+    lines.extend(["", "### Registered dataset inventory", ""])
+    lines.extend(_dataset_inventory_lines(dataset_inventory))
+    protected_datasets = [
+        dataset for dataset in datasets
+        if dataset.role in {DatasetRole.CONFIRMATORY, DatasetRole.REPLICATION}
+    ]
+    if protected_datasets:
+        lines.extend(["", "### Protected dataset lineage", ""])
+        for dataset in sorted(protected_datasets, key=lambda item: item.dataset_id):
+            sources = (
+                ", ".join(f"`{source_id}`" for source_id in dataset.source_dataset_ids)
+                or "none"
+            )
+            protocol = protocols_by_id.get(dataset.protocol_id or "")
+            lines.append(
+                f"- Dataset `{dataset.dataset_id}` [{dataset.role.value}; protocol "
+                f"`{dataset.protocol_id or 'unbound'}`]: sources {sources}; "
+                f"lineage state: {_protected_lineage_state(dataset, datasets_by_id)}; "
+                "verification state: "
+                f"{_protected_dataset_verification_summary(dataset, protocol)}. "
+                "These are protocol-closure provenance, not proof of consent "
+                "truth, custody truth, measurement validity, or analysis adequacy."
+            )
+    factor_protocols = [
+        protocol for protocol in protocols
+        if (
+            protocol.manipulated_factors
+            or protocol.factorial_or_crossover_design
+            or protocol.factor_interpretability_plan
+        )
+    ]
+    if factor_protocols:
+        lines.extend(["", "### Manipulated-factor interpretability", ""])
+        for protocol in sorted(factor_protocols, key=lambda item: item.protocol_id):
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}`: "
+                f"{_protocol_factor_summary(protocol)}. This is prospective "
+                "interpretability provenance, not proof that factor effects are separable."
+            )
+    acquisition_protocols = [
+        protocol for protocol in protocols
+        if (
+            protocol.sensor_requirements
+            or protocol.clock_accuracy_requirement
+            or protocol.control_windows
+        )
+    ]
+    if acquisition_protocols:
+        lines.extend(["", "### Acquisition timing commitments", ""])
+        for protocol in sorted(acquisition_protocols, key=lambda item: item.protocol_id):
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}`: "
+                f"{_protocol_acquisition_timing_summary(protocol)}. "
+                "This is prospective acquisition provenance, not proof of sensor "
+                "custody, calibration, synchronization, or clock accuracy."
+            )
+    alias_protocols = [
+        protocol
+        for protocol in protocols
+        if any(
+            definition.alias_proxy_commitment is not None
+            for definition in protocol.measurement_definitions
+        )
+    ]
+    if alias_protocols:
+        lines.extend(["", "### Alias/proxy custody", ""])
+        for protocol in sorted(alias_protocols, key=lambda item: item.protocol_id):
+            commitments = [
+                (
+                    definition.measurement_id,
+                    definition.alias_proxy_commitment,
+                )
+                for definition in protocol.measurement_definitions
+                if definition.alias_proxy_commitment is not None
+            ]
+            records = alias_records_by_protocol.get(protocol.protocol_id, [])
+            record_text = (
+                ", ".join(f"`{record.record_id}`" for record in records)
+                if records
+                else "none recorded"
+            )
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` uses "
+                f"{len(commitments)} alias/proxy commitment(s); mapping custody "
+                f"records: {record_text}. These records bind private mapping "
+                "bytes to frozen hashes without revealing the mapping; they do "
+                "not prove proxy validity, ethics compliance, or scientific truth."
+            )
+            for measurement_id, commitment in commitments:
+                if commitment is None:
+                    continue
+                lines.append(
+                    f"  - Measurement `{measurement_id}` commitment "
+                    f"`{commitment.commitment_id}`: scope "
+                    f"`{commitment.concealment_scope}`; public label "
+                    f"`{commitment.public_label}`; mapping "
+                    f"`{commitment.private_mapping_sha256}`; reveal rule: "
+                    f"{_text(commitment.reveal_conditions)}"
+                )
+    planned_runs = [
+        run for run in runs
+        if isinstance(run.metadata.get("sample_size_plan_check"), dict)
+        and run.metadata["sample_size_plan_check"].get("status")
+        != "not_applicable"
+    ]
+    if planned_runs:
+        lines.extend(["", "### Planning outcome accountability", ""])
+        for run in sorted(planned_runs, key=lambda item: item.run_id):
+            check = run.metadata["sample_size_plan_check"]
+            lines.append(
+                f"- Run `{run.run_id}` [{check.get('strategy', 'unknown')} plan; "
+                f"sample binding: {check.get('status', 'unknown')}; evidence eligible: "
+                f"{'yes' if run.scientific_evidence_eligible else 'no'}]."
+            )
+            lines.append(
+                "  - Analyzable units per group: required "
+                f"{check.get('required_analyzable_units_per_group', 'unverified')}; "
+                f"observed {check.get('observed_minimum_analyzable_units_per_group', 'unverified')}."
+            )
+            lines.append(
+                "  - Excluded fraction: anticipated "
+                f"{check.get('anticipated_attrition_fraction', 'unverified')}; "
+                f"maximum {check.get('registered_maximum_excluded_fraction', 'unverified')}; "
+                f"observed {check.get('observed_excluded_fraction', 'unverified')}."
+            )
+            attrition = check.get("attrition_achievement")
+            if isinstance(attrition, dict):
+                lines.append(
+                    "  - Attrition assumption: "
+                    f"{attrition.get('status', 'unverified')}; group-specific observed "
+                    f"fractions {attrition.get('observed_excluded_fraction_by_group', 'unverified')}; "
+                    "a planning miss does not erase the result or imply invalidity."
+                )
+            variance = check.get("variance_assumption")
+            if isinstance(variance, dict):
+                unit = variance.get("measurement_unit") or check.get("measurement_unit") or "unit unspecified"
+                lines.append(
+                    "  - Variability assumption: "
+                    f"{variance.get('status', 'unverified')}; assumed SD "
+                    f"{variance.get('assumed_standard_deviation', 'unverified')} {unit}; "
+                    f"observed pooled SD {variance.get('observed_pooled_standard_deviation', 'unverified')}; "
+                    f"ratio {variance.get('observed_to_assumed_ratio', 'unverified')}. "
+                    + (
+                        f"Registered maximum ratio {variance.get('maximum_registered_ratio')}."
+                        if variance.get("adequacy_threshold_registered") is True
+                        else "No adequacy threshold was inferred after observing the data."
+                    )
+                )
+            precision = check.get("precision_achievement")
+            if isinstance(precision, dict) and precision.get("status") != "not_applicable":
+                unit = precision.get("measurement_unit") or check.get("measurement_unit") or "unit unspecified"
+                lines.append(
+                    "  - Precision target: "
+                    f"{precision.get('status', 'unverified')}; target half-width "
+                    f"{precision.get('target_half_width', 'unverified')} {unit}; "
+                    f"observed {precision.get('observed_half_width', 'unverified')}. "
+                    "A missed target does not erase the result or imply invalidity."
+                )
+    preprocessing_runs = [
+        run for run in runs
+        if any(
+            isinstance(gate.details.get("preprocessing_conformance"), dict)
+            for gate in run.quality_gates
+        )
+    ]
+    if preprocessing_runs:
+        lines.extend(["", "### Preprocessing conformance provenance", ""])
+        for run in sorted(preprocessing_runs, key=lambda item: item.run_id):
+            for gate in run.quality_gates:
+                conformance = gate.details.get("preprocessing_conformance")
+                if not isinstance(conformance, dict):
+                    continue
+                lines.append(
+                    f"- Run `{run.run_id}` gate `{gate.gate_id}` {gate.status.value}; "
+                    f"record status: {conformance.get('status', 'unclassified')}; "
+                    f"record `{conformance.get('sha256', 'unavailable')}` at "
+                    f"`{conformance.get('locator', 'unavailable')}`."
+                )
+                lines.append(
+                    "  - Registered pipeline: "
+                    f"`{conformance.get('registered_pipeline_sha256', 'unavailable')}`; "
+                    "observed pipeline: "
+                    f"`{conformance.get('observed_pipeline_sha256', 'unavailable')}`. "
+                    "This is a bounded conformance replay, not evidence of implementation correctness."
+                )
+    instrument_runs = [
+        run for run in runs
+        if any(
+            isinstance(gate.details.get("instrument_inspection"), dict)
+            for gate in run.quality_gates
+        )
+    ]
+    if instrument_runs:
+        lines.extend(["", "### Instrument inspection provenance", ""])
+        for run in sorted(instrument_runs, key=lambda item: item.run_id):
+            for gate in run.quality_gates:
+                inspection = gate.details.get("instrument_inspection")
+                if not isinstance(inspection, dict):
+                    continue
+                lines.append(
+                    f"- Run `{run.run_id}` gate `{gate.gate_id}` {gate.status.value}; "
+                    f"record status: {inspection.get('status', 'unclassified')}; "
+                    f"record `{inspection.get('sha256', 'unavailable')}` at "
+                    f"`{inspection.get('locator', 'unavailable')}`."
+                )
+                lines.append(
+                    "  - Source: "
+                    f"`{inspection.get('source_sha256', 'unavailable')}`; "
+                    "config: "
+                    f"`{inspection.get('config_sha256', 'unavailable')}`; "
+                    "implementation: "
+                    f"`{inspection.get('implementation_sha256', 'unavailable')}`. "
+                    "This is retained acquisition metadata only, not calibration, custody, or scientific-evidence approval."
+                )
+                if "stream_count" in inspection:
+                    lines.append(
+                        "  - Proposed streams: "
+                        f"{inspection.get('stream_count', 'unavailable')}; temporal metadata status: "
+                        f"`{inspection.get('temporal_metadata_status', 'unavailable')}`."
+                    )
+    stream_timing_runs = [
+        run for run in runs
+        if any(
+            isinstance(gate.details.get("stream_timing_assessment"), dict)
+            for gate in run.quality_gates
+        )
+    ]
+    if stream_timing_runs:
+        lines.extend(["", "### Stream timing provenance", ""])
+        for run in sorted(stream_timing_runs, key=lambda item: item.run_id):
+            for gate in run.quality_gates:
+                assessment = gate.details.get("stream_timing_assessment")
+                if not isinstance(assessment, dict):
+                    continue
+                lines.append(
+                    f"- Run `{run.run_id}` gate `{gate.gate_id}` {gate.status.value}; "
+                    f"record status: {assessment.get('status', 'unclassified')}; "
+                    f"record `{assessment.get('sha256', 'unavailable')}` at "
+                    f"`{assessment.get('locator', 'unavailable')}`."
+                )
+                lines.append(
+                    "  - Inspection record: "
+                    f"`{assessment.get('inspection_sha256', 'unavailable')}`; "
+                    "stream-timing specification: "
+                    f"`{assessment.get('specification_sha256', 'unavailable')}`. "
+                    "This checks timing feasibility from proposed stream metadata; it does not authenticate acquisition or calibration truth."
+                )
+                if "required_stream_count" in assessment:
+                    lines.append(
+                        "  - Required streams: "
+                        f"{assessment.get('required_stream_count', 'unavailable')}; stream failures: "
+                        f"{assessment.get('required_stream_failure_count', 'unavailable')}; events: "
+                        f"{assessment.get('event_count', 'unavailable')}; event failures: "
+                        f"{assessment.get('event_failure_count', 'unavailable')}; findings: "
+                        f"{assessment.get('finding_count', 'unavailable')}."
+                    )
+    temporal_order_runs = [
+        run for run in runs
+        if any(
+            isinstance(gate.details.get("temporal_order_assessment"), dict)
+            for gate in run.quality_gates
+        )
+    ]
+    if temporal_order_runs:
+        lines.extend(["", "### Temporal order provenance", ""])
+        for run in sorted(temporal_order_runs, key=lambda item: item.run_id):
+            for gate in run.quality_gates:
+                assessment = gate.details.get("temporal_order_assessment")
+                if not isinstance(assessment, dict):
+                    continue
+                lines.append(
+                    f"- Run `{run.run_id}` gate `{gate.gate_id}` {gate.status.value}; "
+                    f"record status: {assessment.get('status', 'unclassified')}; "
+                    f"record `{assessment.get('sha256', 'unavailable')}` at "
+                    f"`{assessment.get('locator', 'unavailable')}`."
+                )
+                lines.append(
+                    "  - Timing assessment: "
+                    f"`{assessment.get('timing_assessment_sha256', 'unavailable')}`; "
+                    "temporal-order specification: "
+                    f"`{assessment.get('specification_sha256', 'unavailable')}`. "
+                    "This classifies event order under timing uncertainty; it does not prove causality."
+                )
+                if "check_count" in assessment:
+                    lines.append(
+                        "  - Registered order checks: "
+                        f"{assessment.get('check_count', 'unavailable')}; failed: "
+                        f"{assessment.get('failed_check_count', 'unavailable')}; warnings: "
+                        f"{assessment.get('warning_check_count', 'unavailable')}; findings: "
+                        f"{assessment.get('finding_count', 'unavailable')}."
+                    )
+    canary_protocols = [
+        protocol for protocol in protocols if protocol.canary_target_plan is not None
+    ]
+    if canary_protocols:
+        lines.extend(["", "### Canary target provenance", ""])
+        for protocol in sorted(canary_protocols, key=lambda item: item.protocol_id):
+            plan = protocol.canary_target_plan
+            if plan is None:
+                continue
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` plan `{plan.plan_id}`: "
+                f"{len(plan.candidate_target_ids)} candidate targets; assignment "
+                f"`{plan.assignment_artifact_sha256}`; seed commitment "
+                f"`{plan.seed_commitment_sha256}`; gate "
+                f"`{plan.assessment_gate_id}`. This is masked adversarial-design "
+                "provenance, not proof of adaptation, mechanism, attribution, or intent."
+            )
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                for gate in run.quality_gates:
+                    assessment = gate.details.get("canary_target_assessment")
+                    if not isinstance(assessment, dict):
+                        continue
+                    lines.append(
+                        f"  - Run `{run.run_id}`: gate `{gate.gate_id}` "
+                        f"{gate.status.value}; status "
+                        f"{assessment.get('assessment_status', 'unclassified')}; "
+                        f"revealed target `{assessment.get('revealed_target_id', 'unavailable')}`; "
+                        f"comparators {assessment.get('comparator_target_ids', [])}; "
+                        f"artifact `{assessment.get('evidence_sha256', 'unavailable')}` at "
+                        f"`{assessment.get('evidence_location', 'unavailable')}`; "
+                        f"selected value `{assessment.get('selected_value_sha256', 'unavailable')}`."
+                    )
+                    lines.append(
+                        "    - Observed pattern: "
+                        f"{_text(str(assessment.get('observed_pattern', '')))} "
+                        "Interpretation: "
+                        f"{_text(str(assessment.get('interpretation', '')))}"
+                    )
+    reactivity_protocols = [
+        protocol
+        for protocol in protocols
+        if protocol.hypothesis_reactivity_plan is not None
+    ]
+    if reactivity_protocols:
+        lines.extend(["", "### Hypothesis reactivity provenance", ""])
+        for protocol in sorted(reactivity_protocols, key=lambda item: item.protocol_id):
+            plan = protocol.hypothesis_reactivity_plan
+            if plan is None:
+                continue
+            distinguishable = sum(
+                1
+                for model in plan.process_models
+                if model.distinguishability == "distinguishable"
+            )
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` plan `{plan.plan_id}`: "
+                f"{len(plan.disclosure_schedule)} disclosure event(s); "
+                f"{len(plan.process_models)} process models "
+                f"({distinguishable} distinguishable); gate "
+                f"`{plan.assessment_gate_id}`. Observation, model compatibility, "
+                "and decision loss remain separate. Non-distinguishable models are "
+                "design limits, not independently supported explanations. This is "
+                "not proof of detection, adaptation, mechanism, attribution, or intent."
+            )
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                for gate in run.quality_gates:
+                    assessment = gate.details.get("hypothesis_reactivity_assessment")
+                    if not isinstance(assessment, dict):
+                        continue
+                    lines.append(
+                        f"  - Run `{run.run_id}`: gate `{gate.gate_id}` "
+                        f"{gate.status.value}; status "
+                        f"{assessment.get('assessment_status', 'unclassified')}; "
+                        f"supported {assessment.get('supported_model_ids', [])}; "
+                        "not-distinguishable "
+                        f"{assessment.get('not_distinguishable_model_ids', [])}; "
+                        f"artifact `{assessment.get('evidence_sha256', 'unavailable')}` at "
+                        f"`{assessment.get('evidence_location', 'unavailable')}`; "
+                        f"selected value `{assessment.get('selected_value_sha256', 'unavailable')}`."
+                    )
+                    lines.append(
+                        "    - Likelihood comparison: "
+                        f"{_text(str(assessment.get('likelihood_comparison', '')))} "
+                        "Observed pattern: "
+                        f"{_text(str(assessment.get('observed_pattern', '')))} "
+                        "Interpretation: "
+                        f"{_text(str(assessment.get('interpretation', '')))}"
+                    )
+                    if assessment.get("decision_rationale"):
+                        lines.append(
+                            "    - Decision rationale (not a finding): "
+                            f"{_text(str(assessment.get('decision_rationale', '')))}"
+                        )
+    if evidence_status_events:
+        lines.extend(["", "### Evidence correction and retraction history", ""])
+        for event in sorted(evidence_status_events, key=lambda item: (item.evidence_id, item.sequence)):
+            lines.append(
+                f"- `{event.evidence_id}` event `{event.event_id}` sequence {event.sequence}: **{event.status}** effective {event.effective_at}. {event.reason} Artifact `{event.review_artifact_sha256}` at `{event.review_artifact_locator}`."
+            )
+    if invalid_runs:
+        lines.extend(["", "### Calibration and ineligible run outcomes", ""])
+        for run in invalid_runs:
+            required = [gate for gate in run.quality_gates if gate.required]
+            passed = sum(gate.status.value == "passed" for gate in required)
+            disclosure = run.metadata.get("protocol_deviation_disclosure")
+            disclosure_status = (
+                disclosure.get("status") if isinstance(disclosure, dict) else "legacy_not_declared"
+            )
+            exposure_disclosure = run.metadata.get("result_exposure_disclosure")
+            exposure_status = (
+                exposure_disclosure.get("status")
+                if isinstance(exposure_disclosure, dict)
+                else "legacy_not_declared"
+            )
+            if run.synthetic:
+                kind = "synthetic calibration"
+            elif declares_legacy_pre_registration_result_exposure(run.metadata):
+                kind = "legacy result-exposure quarantined"
+            elif exposure_status in {
+                "favorable_output_seen", "full_output_seen", "unknown",
+            }:
+                kind = "result-exposure-restricted run"
+            elif disclosure_status == "deviations_declared":
+                kind = "deviation-restricted run"
+            elif disclosure_status == "legacy_not_declared":
+                kind = "deviation status undeclared"
+            elif exposure_status == "legacy_not_declared":
+                kind = "result-exposure status undeclared"
+            else:
+                kind = "ineligible run"
+            lines.append(
+                f"- `{run.run_id}` [{kind}; {run.status.value}; scientific evidence "
+                f"ineligible]: required gates passed {passed}/{len(required)}. "
+                f"{_text(run.summary)}"
+            )
+            failed = [
+                gate.gate_id for gate in required if gate.status.value != "passed"
+            ]
+            if failed:
+                lines.append("  - Required gates not passed: " + "; ".join(failed))
+            if run.metadata.get("artifact_integrity_missing_for_evidence") is True:
+                lines.append(
+                    "  - Artifact integrity: local output bytes were not machine-verified; "
+                    "declared hashes and passed gates are insufficient for scientific evidence."
+                )
+            if disclosure_status == "legacy_not_declared":
+                lines.append("  - Protocol deviations: not explicitly declared; adherence cannot be inferred from silence.")
+            elif disclosure_status == "deviations_declared" and isinstance(disclosure, dict):
+                deviations = disclosure.get("deviations", [])
+                lines.append(f"  - Protocol deviations declared: {len(deviations) if isinstance(deviations, list) else 0}.")
+                if isinstance(deviations, list):
+                    for deviation in deviations:
+                        if isinstance(deviation, dict):
+                            lines.append(
+                                f"    - `{deviation.get('deviation_id', 'unknown')}` [{deviation.get('timing', 'unknown')}; potential impact: {deviation.get('potential_impact', 'unknown')}]: frozen `{deviation.get('frozen_commitment', 'unavailable')}`; actual `{deviation.get('actual_method', 'unavailable')}`; evidence `{deviation.get('evidence_sha256', 'unavailable')}` at `{deviation.get('evidence_location', 'unavailable')}`."
+                            )
+            if declares_legacy_pre_registration_result_exposure(run.metadata):
+                lines.append(
+                    "  - Result exposure: exact legacy structured metadata records favorable pre-registration output; the immutable stored eligibility bit is ignored for effective admission."
+                )
+            elif exposure_status == "legacy_not_declared":
+                lines.append("  - Result exposure: not explicitly declared; prospective protection cannot be inferred from silence.")
+            elif exposure_status in {
+                "favorable_output_seen", "full_output_seen", "unknown",
+            } and isinstance(exposure_disclosure, dict):
+                exposures = exposure_disclosure.get("exposures", [])
+                lines.append(
+                    f"  - Result exposure: {exposure_status}; exact references retained: "
+                    f"{len(exposures) if isinstance(exposures, list) else 0}; automatic evidence promotion blocked."
+                )
+    controlled_protocols = [
+        protocol for protocol in protocols if protocol.control_definitions
+    ]
+    if controlled_protocols:
+        lines.extend(["", "### Control evaluation provenance", ""])
+        for protocol in controlled_protocols:
+            controls_by_id = {
+                control.control_id: control
+                for control in protocol.control_definitions
+            }
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` frozen controls: "
+                + "; ".join(
+                    f"`{control.control_id}` ({control.family})"
+                    + (
+                        f" witnesses intervention `{control.witness_contract.intervention_id}` "
+                        f"through measurement `{control.witness_contract.measurement_id}` "
+                        f"with `{control.witness_contract.comparator}` reference "
+                        f"`{control.witness_contract.reference_value}`"
+                        if control.witness_contract is not None
+                        else " (no prospective scalar witness contract)"
+                    )
+                    for control in protocol.control_definitions
+                )
+                + ". Expected behavior is a scientific outcome, not a gate-pass criterion."
+            )
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                for gate in run.quality_gates:
+                    results = gate.details.get("control_results")
+                    if not isinstance(results, dict):
+                        continue
+                    for control_id, result in sorted(results.items()):
+                        if not isinstance(result, dict):
+                            continue
+                        control = controls_by_id.get(control_id)
+                        expected = result.get("matches_expected")
+                        disposition = (
+                            "matched expected behavior" if expected is True
+                            else "did not match expected behavior" if expected is False
+                            else "unclassified"
+                        )
+                        lines.append(
+                            f"  - Run `{run.run_id}` / `{control_id}`"
+                            + (f" ({control.family})" if control is not None else "")
+                            + f": gate `{gate.gate_id}` {gate.status.value}; {disposition}; "
+                            f"artifact `{result.get('evidence_sha256', 'unavailable')}` at "
+                            f"`{result.get('evidence_location', 'unavailable')}`; "
+                            f"selected value `{result.get('selected_value_sha256', 'unavailable')}`"
+                            + (
+                                f"; scalar witness observed `{result['witness'].get('observed_value', 'unavailable')}` "
+                                f"`{result['witness'].get('comparator', 'unavailable')}` "
+                                f"reference `{result['witness'].get('reference_value', 'unavailable')}`; "
+                                f"decision `{result['witness'].get('decision', 'unavailable')}`"
+                                if isinstance(result.get("witness"), dict)
+                                else ""
+                            )
+                            + "."
+                        )
+        lines.append(
+            "- Structured scalar witnesses bind an inspectable intervention, measurement, comparison, and decision to selected JSON bytes. They cannot prove that the producing code was not hardcoded. Compound controls must preregister one scalar margin or use multiple named controls."
+        )
+    named_component_protocols = [
+        protocol for protocol in protocols if protocol.named_component_contracts
+    ]
+    if named_component_protocols:
+        lines.extend(["", "### Named-component selection provenance", ""])
+        for protocol in named_component_protocols:
+            contracts_by_id = {
+                contract.contract_id: contract
+                for contract in protocol.named_component_contracts
+            }
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` frozen named-component contracts: "
+                + "; ".join(
+                    f"`{contract.contract_id}` selects "
+                    + ", ".join(f"`{item}`" for item in contract.selected_component_ids)
+                    + f" from measurement `{contract.measurement_id}` with adversarial control "
+                    f"`{contract.relabeling_control_id}`"
+                    for contract in protocol.named_component_contracts
+                )
+                + ". Passing verifies only the registered name-to-index invariant; it does not validate component meaning or scientific sufficiency."
+            )
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                for gate in run.quality_gates:
+                    results = gate.details.get("named_component_results")
+                    if not isinstance(results, dict):
+                        continue
+                    for contract_id, result in sorted(results.items()):
+                        if not isinstance(result, dict):
+                            continue
+                        contract = contracts_by_id.get(contract_id)
+                        selected = result.get("relabeled_selected_component_ids", [])
+                        lines.append(
+                            f"  - Run `{run.run_id}` / `{contract_id}`"
+                            + (
+                                f" (measurement `{contract.measurement_id}`)"
+                                if contract is not None else ""
+                            )
+                            + f": gate `{gate.gate_id}` {gate.status.value}; "
+                            f"{result.get('assessment_status', 'unclassified')}; "
+                            f"relabeled selection {_text(str(selected))}; artifact "
+                            f"`{result.get('evidence_sha256', 'unavailable')}` at "
+                            f"`{result.get('evidence_location', 'unavailable')}`."
+                        )
+    predicate_protocols = [
+        protocol
+        for protocol in protocols
+        if protocol.mathematical_predicate_contracts
+    ]
+    if predicate_protocols:
+        lines.extend(["", "### Mathematical predicate provenance", ""])
+        for protocol in predicate_protocols:
+            contracts_by_id = {
+                contract.contract_id: contract
+                for contract in protocol.mathematical_predicate_contracts
+            }
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` froze: "
+                + "; ".join(
+                    f"`{contract.contract_id}` tests "
+                    f"`{contract.predicate}` on object "
+                    f"`{contract.object_id}`: "
+                    f"`{contract.domain}` -> `{contract.codomain}` "
+                    f"under quotient `{contract.quotient}`"
+                    for contract in protocol.mathematical_predicate_contracts
+                )
+                + ". Passing verifies attribution and retained evidence shape "
+                "only; it does not prove the predicate or the physical model."
+            )
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                for gate in run.quality_gates:
+                    results = gate.details.get("mathematical_predicate_results")
+                    if not isinstance(results, dict):
+                        continue
+                    for contract_id, result in sorted(results.items()):
+                        if not isinstance(result, dict):
+                            continue
+                        contract = contracts_by_id.get(contract_id)
+                        lines.append(
+                            f"  - Run `{run.run_id}` / `{contract_id}`"
+                            + (
+                                f" (object `{contract.object_id}`)"
+                                if contract is not None else ""
+                            )
+                            + f": gate `{gate.gate_id}` {gate.status.value}; "
+                            f"{result.get('assessment_status', 'unclassified')}; "
+                            f"artifact `{result.get('evidence_sha256', 'unavailable')}` "
+                            f"at `{result.get('evidence_location', 'unavailable')}`."
+                        )
+    reconstruction_protocols = [
+        protocol
+        for protocol in protocols
+        if protocol.duality_reconstruction_contracts
+    ]
+    if reconstruction_protocols:
+        lines.extend(["", "### Duality and reconstruction provenance", ""])
+        for protocol in reconstruction_protocols:
+            contracts_by_id = {
+                contract.contract_id: contract
+                for contract in protocol.duality_reconstruction_contracts
+            }
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` froze: "
+                + "; ".join(
+                    f"`{contract.contract_id}` maps `{contract.dual_space_id}` "
+                    f"to `{contract.primal_space_id}` using pairing "
+                    f"`{contract.pairing_id}` and reconstruction "
+                    f"`{contract.reconstruction_map_id}` "
+                    f"({contract.source_status})"
+                    for contract in protocol.duality_reconstruction_contracts
+                )
+                + ". Passing verifies the frozen reconstruction provenance and "
+                "dependency boundary only; it does not make the pairing canonical, "
+                "prove stability, or validate a downstream physical model."
+            )
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                for gate in run.quality_gates:
+                    results = gate.details.get("duality_reconstruction_results")
+                    if not isinstance(results, dict):
+                        continue
+                    for contract_id, result in sorted(results.items()):
+                        if not isinstance(result, dict):
+                            continue
+                        contract = contracts_by_id.get(contract_id)
+                        lines.append(
+                            f"  - Run `{run.run_id}` / `{contract_id}`"
+                            + (
+                                f" (pairing `{contract.pairing_id}`)"
+                                if contract is not None else ""
+                            )
+                            + f": gate `{gate.gate_id}` {gate.status.value}; "
+                            f"{result.get('assessment_status', 'unclassified')}; "
+                            f"dependencies {_text(str(result.get('observed_reconstruction_dependency_object_ids', [])))}; "
+                            f"artifact `{result.get('evidence_sha256', 'unavailable')}` "
+                            f"at `{result.get('evidence_location', 'unavailable')}`."
+                        )
+    family_stability_protocols = [
+        protocol
+        for protocol in protocols
+        if protocol.reconstruction_family_stability_contracts
+    ]
+    if family_stability_protocols:
+        lines.extend(["", "### Reconstruction family stability", ""])
+        for protocol in family_stability_protocols:
+            contracts_by_id = {
+                contract.contract_id: contract
+                for contract in protocol.reconstruction_family_stability_contracts
+            }
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` froze: "
+                + "; ".join(
+                    f"`{contract.contract_id}` tests "
+                    f"`{contract.stability_statistic}` "
+                    f"{contract.stability_comparator} "
+                    f"{contract.stability_threshold} across "
+                    f"{len(contract.resolution_ids)} resolutions with two-way "
+                    f"cross-projection error at most "
+                    f"{contract.cross_projection_error_threshold}"
+                    for contract in (
+                        protocol.reconstruction_family_stability_contracts
+                    )
+                )
+                + ". Passing applies only to the frozen finite family and norms; "
+                "it does not prove asymptotic convergence, a continuum limit, "
+                "or a downstream physical model."
+            )
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                for gate in run.quality_gates:
+                    results = gate.details.get(
+                        "reconstruction_family_stability_results"
+                    )
+                    if not isinstance(results, dict):
+                        continue
+                    for contract_id, result in sorted(results.items()):
+                        if not isinstance(result, dict):
+                            continue
+                        contract = contracts_by_id.get(contract_id)
+                        lines.append(
+                            f"  - Run `{run.run_id}` / `{contract_id}`"
+                            + (
+                                f" (family `{contract.resolution_family_id}`)"
+                                if contract is not None
+                                else ""
+                            )
+                            + f": gate `{gate.gate_id}` {gate.status.value}; "
+                            f"{result.get('assessment_status', 'unclassified')}; "
+                            f"stability {_text(str(result.get('observed_stability_values', {})))}; "
+                            f"artifact `{result.get('evidence_sha256', 'unavailable')}` "
+                            f"at `{result.get('evidence_location', 'unavailable')}`."
+                        )
+    implementation_bundle_protocols = [
+        protocol
+        for protocol in protocols
+        if protocol.analysis_implementation_bundle_contracts
+    ]
+    if implementation_bundle_protocols:
+        lines.extend(["", "### Analysis implementation bundles", ""])
+        for protocol in implementation_bundle_protocols:
+            contracts_by_id = {
+                contract.contract_id: contract
+                for contract in protocol.analysis_implementation_bundle_contracts
+            }
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` froze: "
+                + "; ".join(
+                    f"`{contract.contract_id}` with "
+                    f"{len(contract.members)} members via "
+                    f"`{contract.closure_method}`"
+                    for contract in protocol.analysis_implementation_bundle_contracts
+                )
+                + ". Member hashes establish declared byte identity only; "
+                "the frozen closure limitations still apply and semantic "
+                "correctness is not implied."
+            )
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                for gate in run.quality_gates:
+                    results = gate.details.get(
+                        "analysis_implementation_bundle_results"
+                    )
+                    if not isinstance(results, dict):
+                        continue
+                    for contract_id, result in sorted(results.items()):
+                        if not isinstance(result, dict):
+                            continue
+                        contract = contracts_by_id.get(contract_id)
+                        lines.append(
+                            f"  - Run `{run.run_id}` / `{contract_id}`"
+                            + (
+                                f" ({len(contract.members)} frozen members)"
+                                if contract is not None
+                                else ""
+                            )
+                            + f": gate `{gate.gate_id}` {gate.status.value}; "
+                            f"{result.get('assessment_status', 'unclassified')}; "
+                            f"closure complete "
+                            f"{result.get('observed_closure_complete', 'unavailable')}; "
+                            f"artifact `{result.get('evidence_sha256', 'unavailable')}` "
+                            f"at `{result.get('evidence_location', 'unavailable')}`."
+                        )
+    route_separation_protocols = [
+        protocol
+        for protocol in protocols
+        if protocol.computation_route_separation_contracts
+    ]
+    if route_separation_protocols:
+        lines.extend(["", "### Computation route separation", ""])
+        for protocol in route_separation_protocols:
+            contracts_by_id = {
+                contract.contract_id: contract
+                for contract in protocol.computation_route_separation_contracts
+            }
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` froze: "
+                + "; ".join(
+                    f"`{contract.contract_id}` comparing routes "
+                    f"`{contract.route_ids[0]}` and `{contract.route_ids[1]}` "
+                    f"with `{contract.static_separation_method}` plus "
+                    f"`{contract.runtime_separation_method}`"
+                    for contract in protocol.computation_route_separation_contracts
+                )
+                + ". This can establish only declared code-level separation "
+                "within the frozen methods and limitations; it does not establish "
+                "independent reasoning, authorship, or scientific correctness."
+            )
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                for gate in run.quality_gates:
+                    results = gate.details.get(
+                        "computation_route_separation_results"
+                    )
+                    if not isinstance(results, dict):
+                        continue
+                    for contract_id, result in sorted(results.items()):
+                        if not isinstance(result, dict):
+                            continue
+                        contract = contracts_by_id.get(contract_id)
+                        lines.append(
+                            f"  - Run `{run.run_id}` / `{contract_id}`"
+                            + (
+                                f" ({len(contract.approved_shared_member_locators)} "
+                                "approved shared members)"
+                                if contract is not None
+                                else ""
+                            )
+                            + f": gate `{gate.gate_id}` {gate.status.value}; "
+                            f"{result.get('assessment_status', 'unclassified')}; "
+                            f"static separation "
+                            f"{result.get('static_separation_satisfied', 'unavailable')}; "
+                            f"runtime separation "
+                            f"{result.get('runtime_separation_satisfied', 'unavailable')}; "
+                            f"comparison predicate "
+                            f"{result.get('comparison_satisfied', 'unavailable')} "
+                            f"at {result.get('observed_comparison_value', 'unavailable')} "
+                            f"{result.get('comparison_unit', '')}; artifact "
+                            f"`{result.get('evidence_sha256', 'unavailable')}` at "
+                            f"`{result.get('evidence_location', 'unavailable')}`."
+                        )
+    bounded_search_protocols = [
+        protocol for protocol in protocols
+        if protocol.bounded_negative_search_contracts
+    ]
+    if bounded_search_protocols:
+        lines.extend(["", "### Bounded negative searches", ""])
+        for protocol in bounded_search_protocols:
+            contracts_by_id = {
+                contract.contract_id: contract
+                for contract in protocol.bounded_negative_search_contracts
+            }
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` froze: "
+                + "; ".join(
+                    f"`{contract.contract_id}` with {len(contract.queries)} exact "
+                    f"queries across {len(contract.interfaces)} interfaces and "
+                    f"{len(contract.screened_candidates)} screened candidates on "
+                    f"`{contract.search_date}`"
+                    for contract in protocol.bounded_negative_search_contracts
+                )
+                + ". A no-match record means only that no candidate was classified "
+                "as an in-scope target within those frozen bounds; it is not a "
+                "theorem, mathematical impossibility, or universal absence claim."
+            )
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                for gate in run.quality_gates:
+                    results = gate.details.get("bounded_negative_search_results")
+                    if not isinstance(results, dict):
+                        continue
+                    for contract_id, result in sorted(results.items()):
+                        if not isinstance(result, dict):
+                            continue
+                        contract = contracts_by_id.get(contract_id)
+                        target_count = (
+                            sum(
+                                item.screening_decision == "in_scope_target"
+                                for item in contract.screened_candidates
+                            )
+                            if contract is not None
+                            else "unavailable"
+                        )
+                        lines.append(
+                            f"  - Run `{run.run_id}` / `{contract_id}`: gate "
+                            f"`{gate.gate_id}` {gate.status.value}; "
+                            f"{result.get('assessment_status', 'unclassified')}; "
+                            f"frozen in-scope targets {target_count}; artifact "
+                            f"`{result.get('evidence_sha256', 'unavailable')}` at "
+                            f"`{result.get('evidence_location', 'unavailable')}`."
+                        )
+    validity_protocols = [
+        protocol for protocol in protocols if protocol.measurement_validity_checks
+    ]
+    if validity_protocols:
+        lines.extend(["", "### Measurement validity provenance", ""])
+        for protocol in validity_protocols:
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` frozen validity checks: "
+                + "; ".join(
+                    f"`{check.check_id}` ({check.evidence_type}) for measurement "
+                    f"`{check.measurement_id}`; claim: {_text(check.validity_claim)}; "
+                    f"failure response: {_text(check.failure_response)}"
+                    for check in protocol.measurement_validity_checks
+                )
+                + ". A consistent diagnostic does not prove construct validity."
+            )
+            checks_by_id = {
+                check.check_id: check
+                for check in protocol.measurement_validity_checks
+            }
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                reported: set[str] = set()
+                for gate in run.quality_gates:
+                    results = gate.details.get("measurement_validity_results")
+                    if not isinstance(results, dict):
+                        continue
+                    for check_id, result in sorted(results.items()):
+                        if not isinstance(result, dict):
+                            continue
+                        reported.add(check_id)
+                        check = checks_by_id.get(check_id)
+                        lines.append(
+                            f"  - Run `{run.run_id}` / `{check_id}`"
+                            + (f" ({check.evidence_type})" if check is not None else "")
+                            + f": gate `{gate.gate_id}` {gate.status.value}; "
+                            f"{result.get('assessment_status', 'unclassified')}; "
+                            f"observed: {_text(str(result.get('observed_diagnostic', '')))} "
+                            f"Interpretation: {_text(str(result.get('interpretation', '')))} "
+                            f"Artifact `{result.get('evidence_sha256', 'unavailable')}` at "
+                            f"`{result.get('evidence_location', 'unavailable')}`; "
+                            f"selected value `{result.get('selected_value_sha256', 'unavailable')}`."
+                        )
+                missing = sorted(set(checks_by_id) - reported)
+                if missing:
+                    lines.append(
+                        f"  - Run `{run.run_id}`: validity results unavailable for "
+                        + ", ".join(f"`{item}`" for item in missing)
+                        + "; no validity conclusion may be inferred."
+                    )
+    missingness_protocols = [
+        protocol for protocol in protocols
+        if protocol.analysis_contract is not None
+        and protocol.analysis_contract.missingness_assessment_gate_id
+    ]
+    if missingness_protocols:
+        lines.extend(["", "### Missingness assessment provenance", ""])
+        for protocol in missingness_protocols:
+            contract = protocol.analysis_contract
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}`: "
+                f"{contract.missingness_assessment_kind} via dedicated gate "
+                f"`{contract.missingness_assessment_gate_id}`; assumption: "
+                f"{_text(contract.missingness_assumption)} Failure response: "
+                f"{_text(contract.missingness_failure_response)}"
+            )
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                gate = next(
+                    (item for item in run.quality_gates
+                     if item.gate_id == contract.missingness_assessment_gate_id),
+                    None,
+                )
+                if gate is None:
+                    lines.append(
+                        f"  - Run `{run.run_id}`: required missingness gate absent; "
+                        "scientific evidence ineligible."
+                    )
+                    continue
+                result = gate.details.get("missingness_assessment_result")
+                if not isinstance(result, dict):
+                    lines.append(
+                        f"  - Run `{run.run_id}`: gate {gate.status.value}; "
+                        "assessment not performed or unavailable."
+                    )
+                    continue
+                lines.append(
+                    f"  - Run `{run.run_id}`: gate {gate.status.value}; "
+                    f"{result.get('assessment_kind', 'legacy_unclassified')}; "
+                    f"{result.get('assessment_status', 'unclassified')}; artifact "
+                    f"`{result.get('evidence_sha256', 'unavailable')}` at "
+                    f"`{result.get('evidence_location', 'unavailable')}`; "
+                    f"selected value `{result.get('selected_value_sha256', 'unavailable')}`."
+                )
+    causal_protocols = [protocol for protocol in protocols if protocol.causal_claim]
+    if causal_protocols:
+        lines.extend(["", "### Causal assumption assessment provenance", ""])
+        for protocol in causal_protocols:
+            assumptions = protocol.causal_identification_audit.get(
+                "assumption_register", []
+            )
+            kind_counts = Counter(
+                item.get("assessment_kind", "legacy_unclassified")
+                for item in assumptions if isinstance(item, dict)
+            )
+            lines.append(
+                f"- Protocol `{protocol.protocol_id}` frozen assessment kinds: "
+                + ("; ".join(
+                    f"{kind}={count}" for kind, count in sorted(kind_counts.items())
+                ) or "none")
+                + ". A passed assessment is not proof that its assumption is true."
+            )
+            for run in sorted(
+                (item for item in runs if item.protocol_id == protocol.protocol_id),
+                key=lambda item: item.run_id,
+            ):
+                for gate in run.quality_gates:
+                    results = gate.details.get("causal_assumption_results")
+                    if not isinstance(results, dict):
+                        continue
+                    for category, result in sorted(results.items()):
+                        if not isinstance(result, dict):
+                            continue
+                        lines.append(
+                            f"  - Run `{run.run_id}` / `{category}`: "
+                            f"gate `{gate.gate_id}` {gate.status.value}; "
+                            f"{result.get('assessment_kind', 'legacy_unclassified')}; "
+                            f"{result.get('assessment_status', 'unclassified')}; "
+                            f"artifact `{result.get('evidence_sha256', 'unavailable')}` at "
+                            f"`{result.get('evidence_location', 'unavailable')}`; "
+                            f"selected value `{result.get('selected_value_sha256', 'unavailable')}`."
+                        )
+    lines.extend(
+        [
+            "",
+            "## Epistemic rigor audit",
+            "",
+            f"- Conclusion ceiling: **{rigor_audit.conclusion_ceiling}**",
+            f"- Classified evidence: {rigor_audit.evidence_counts['classified']} of {rigor_audit.evidence_counts['total']}",
+            "- Capability tags are machine-checked provenance claims, not proof that "
+            "the underlying scientific conclusion is true.",
+        ]
+    )
+    for name, present in rigor_audit.capabilities.items():
+        if name == "classified_evidence":
+            continue
+        lines.append(f"- {name}: {'present' if present else 'absent'}")
+    severity_counts = Counter(item.severity.value for item in rigor_audit.findings)
+    lines.extend(
+        [
+            "- Audit findings: "
+            + ", ".join(
+                f"{severity.value}={severity_counts[severity.value]}"
+                for severity in RigorSeverity
+            ),
+        ]
+    )
+    finding_codes = Counter(
+        item.code
+        for item in rigor_audit.findings
+        if item.severity is not RigorSeverity.INFO
+    )
+    if finding_codes:
+        lines.append(
+            "- Open rigor warnings/errors: "
+            + "; ".join(
+                f"{code} ({count})" for code, count in sorted(finding_codes.items())
+            )
+        )
+    lines.extend(
+        [
+            "",
+            "## Unresolved research state",
+            "",
+            f"- Unreviewed proposals: {len(drafts)}",
+            f"- Pending human review: {len(pending)}",
+            f"- Parked hypotheses: {len(parked)}",
+            f"- Active hypotheses: {len(active)}",
+            f"- Evidence records: {len(evidence)}",
+            *_cross_lane_lesson_lines(cross_lane_lessons),
+            _recommendation_summary(recommendations),
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def _recommendation_summary(
+    recommendations: list[ActionRecommendation],
+) -> str:
+    if not recommendations:
+        return (
+            "- No next action has been selected. Candidate actions should "
+            "distinguish surviving models rather than merely seek support for a "
+            "preferred explanation."
+        )
+    latest = recommendations[-1]
+    commitment = (
+        latest.recommendation_payload_sha256
+        if latest.recommendation_payload_sha256
+        else "legacy_missing"
+    )
+    candidates_by_id = {
+        candidate.action_id: candidate for candidate in latest.candidates
+    }
+    scores_by_id = {score.action_id: score for score in latest.ranked_scores}
+    if latest.selection_mode == "portfolio":
+        selected = "; ".join(
+            f"{lane_id}: {action_id}"
+            for lane_id, action_id in latest.selected_action_ids_by_lane.items()
+        )
+        factors = "; ".join(
+            f"{lane_id}: {_action_factor_summary(candidates_by_id[action_id])}"
+            for lane_id, action_id in latest.selected_action_ids_by_lane.items()
+            if action_id in candidates_by_id
+        )
+        score_summaries = "; ".join(
+            f"{lane_id}: {_score_component_summary(scores_by_id[action_id])}"
+            for lane_id, action_id in latest.selected_action_ids_by_lane.items()
+            if action_id in scores_by_id
+        )
+        eligibility = "; ".join(
+            f"{lane_id}: {_action_eligibility_summary(candidates_by_id[action_id])}"
+            for lane_id, action_id in latest.selected_action_ids_by_lane.items()
+            if action_id in candidates_by_id
+        )
+        return (
+            "- Selected next actions by lane: "
+            + selected
+            + ". Factor plan: "
+            + (factors or "not available")
+            + ". Discrimination targets: "
+            + "; ".join(
+                f"{lane_id}: {_action_discrimination_summary(candidates_by_id[action_id])}"
+                for lane_id, action_id in latest.selected_action_ids_by_lane.items()
+                if action_id in candidates_by_id
+            )
+            + ". Utility components: "
+            + (score_summaries or "not available")
+            + ". Eligibility basis: "
+            + (eligibility or "not available")
+            + ". Payload commitment: "
+            + commitment
+            + "."
+        )
+    selected = candidates_by_id.get(latest.selected_action_id)
+    factor_summary = (
+        _action_factor_summary(selected) if selected is not None else "not available"
+    )
+    score_summary = (
+        _score_component_summary(scores_by_id[latest.selected_action_id])
+        if latest.selected_action_id in scores_by_id
+        else "not available"
+    )
+    return (
+        "- Selected next action: "
+        + latest.selected_action_id
+        + " — "
+        + latest.rationale
+        + " Factor plan: "
+        + factor_summary
+        + ". Discrimination targets: "
+        + (
+            _action_discrimination_summary(selected)
+            if selected is not None
+            else "not available"
+        )
+        + ". Utility components: "
+        + score_summary
+        + ". Eligibility basis: "
+        + (
+            _action_eligibility_summary(selected)
+            if selected is not None
+            else "not available"
+        )
+        + ". Payload commitment: "
+        + commitment
+        + "."
+    )
+
+
+def _score_component_summary(score: ActionScore) -> str:
+    components = score.weighted_components
+    if not components:
+        return f"utility {score.utility:.8g}; component breakdown not recorded"
+    order = [
+        "expected_discrimination",
+        "uncertainty_reduction",
+        "cost_penalty",
+        "duration_penalty",
+        "burden_penalty",
+        "safety_risk_penalty",
+        "ambiguity_risk_penalty",
+    ]
+    parts = [f"utility {score.utility:.8g}"]
+    parts.extend(
+        f"{key} {components[key]:.8g}" for key in order if key in components
+    )
+    return ", ".join(parts)
+
+
+def _action_factor_summary(candidate: ActionCandidate) -> str:
+    factors = candidate.manipulated_factors
+    if not factors:
+        return "no manipulated factors declared"
+    if candidate.factorial_or_crossover_design:
+        design = "factorial/crossover declared"
+    elif len(factors) == 1:
+        design = "single-factor or legacy-unresolved design"
+    else:
+        design = "missing factorial/crossover declaration"
+    if candidate.factor_interpretability_plan:
+        design += f"; plan: {candidate.factor_interpretability_plan}"
+    return ", ".join(factors) + f" ({design})"
+
+
+def _action_discrimination_summary(candidate: ActionCandidate) -> str:
+    targets = candidate.hypothesis_discrimination_targets
+    if not targets:
+        if candidate.distinguishes_hypotheses:
+            return "hypothesis IDs named without retained discriminating observations"
+        return "no hypothesis-specific discrimination declared"
+    return "; ".join(
+        f"{target.hypothesis_id}"
+        f" [{candidate.hypothesis_workflow_states.get(target.hypothesis_id, 'legacy_state_missing')}]: "
+        f"{target.discriminating_observation}; "
+        f"alternative {target.competing_model_ref}; "
+        f"weakens if {target.would_weaken_if}"
+        for target in targets
+    )
+
+
+def _action_eligibility_summary(candidate: ActionCandidate) -> str:
+    prerequisite_refs = (
+        ", ".join(candidate.prerequisite_evidence_refs)
+        if candidate.prerequisite_evidence_refs
+        else "legacy_missing"
+    )
+    safety_refs = (
+        ", ".join(candidate.safety_review_refs)
+        if candidate.safety_review_refs
+        else "legacy_missing"
+    )
+    ordinary = (
+        f"prerequisites_met={candidate.prerequisites_met} via {prerequisite_refs}; "
+        f"safety_approved={candidate.safety_approved} via {safety_refs}"
+    )
+    contract = candidate.audit_prerequisite_contract
+    receipt = candidate.audit_prerequisite_receipt
+    if contract is None or not receipt:
+        return ordinary + "; audit_prerequisite=legacy_missing"
+    if contract.action_class.value == "exposed_evaluator_development":
+        return (
+            ordinary
+            + "; audit action_class=exposed_evaluator_development; "
+            + f"workflow_eligible={receipt.get('workflow_eligible')}; "
+            + "candidate_advancement_eligible=False; exposure="
+            + receipt.get("evaluator_exposure_statement", "")
+            + "; replication_authority_established=False"
+            + "; limitations="
+            + " | ".join(contract.limitations)
+            + "; ceiling="
+            + contract.conclusion_ceiling
+        )
+    if contract.action_class.value == "nonadvancing_information":
+        return (
+            ordinary
+            + "; audit action_class=nonadvancing_information; "
+            + f"workflow_eligible={receipt.get('workflow_eligible')}; "
+            + "candidate_advancement_eligible=False; statement="
+            + receipt.get("nonadvancing_information_statement", "")
+            + "; scientific_validity_established=False"
+            + "; scientific_evidence_eligible=False"
+            + "; replication_authority_established=False"
+            + "; limitations="
+            + " | ".join(contract.limitations)
+            + "; ceiling="
+            + contract.conclusion_ceiling
+        )
+    subjects = " | ".join(
+        f"{item.subject_role}:{item.subject_id} at {item.artifact_locator} "
+        f"sha256={item.artifact_sha256}"
+        for item in contract.subjects
+    )
+    audits = " | ".join(
+        f"{item.audit_id} role={item.artifact_role} at {item.artifact_locator} "
+        f"sha256={item.artifact_sha256}; subject={item.audited_subject_role}:"
+        f"{item.audited_subject_id}@{item.audited_subject_sha256}; "
+        f"verdict={item.verdict}; scope={item.scope}; "
+        f"auditor={item.auditor_identity}; audited_at={item.audited_at}; "
+        f"limitations={' | '.join(item.limitations)}; supporting="
+        + ", ".join(
+            f"{supporting.artifact_role}@{supporting.artifact_locator}"
+            f"#{supporting.artifact_sha256}"
+            for supporting in item.supporting_artifacts
+        )
+        for item in contract.required_audits
+    )
+    return (
+        ordinary
+        + "; audit action_class=candidate_advancing; "
+        + f"status={receipt.get('status')}; "
+        + f"workflow_eligible={receipt.get('workflow_eligible')}; "
+        + f"candidate_advancement_eligible={receipt.get('candidate_advancement_eligible')}; "
+        + f"replication_authority_established={receipt.get('replication_authority_established')}; "
+        + f"subjects={subjects}; audits={audits}; "
+        + f"receipt_sha256={receipt.get('receipt_sha256')}; "
+        + "contract limitations="
+        + " | ".join(contract.limitations)
+        + "; ceiling="
+        + contract.conclusion_ceiling
+    )

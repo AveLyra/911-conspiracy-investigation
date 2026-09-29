@@ -1,0 +1,1727 @@
+{
+  "boundary_conventions": {
+    "clamp_replaces_end_traction": true,
+    "p": "1/1000",
+    "p2": "1/500",
+    "preloaded_clamp_delta": "1/1000",
+    "stress_free_clamp_delta": "0/1"
+  },
+  "check_count": 125,
+  "checks": [
+    {
+      "kind": "positive_control",
+      "name": "cold: affine compatibility at zero",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "cold: affine compatibility at p",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "cold: affine compatibility at p2",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "cold: clamp compatibility cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "cold: segment equilibrium cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "cold: clamp compatibility cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "cold: segment equilibrium cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "cold: identification 0,1/1000",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "cold: identification 1/1000,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "cold: identification 0,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_uniform: affine compatibility at zero",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_uniform: affine compatibility at p",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_uniform: affine compatibility at p2",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_uniform: clamp compatibility cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_uniform: segment equilibrium cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_uniform: clamp compatibility cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_uniform: segment equilibrium cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_uniform: identification 0,1/1000",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_uniform: identification 1/1000,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_uniform: identification 0,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_nonuniform: affine compatibility at zero",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_nonuniform: affine compatibility at p",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_nonuniform: affine compatibility at p2",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_nonuniform: clamp compatibility cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_nonuniform: segment equilibrium cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_nonuniform: clamp compatibility cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_nonuniform: segment equilibrium cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_nonuniform: identification 0,1/1000",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_nonuniform: identification 1/1000,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "variable_modulus_nonuniform: identification 0,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "identical_uniform_copy: affine compatibility at zero",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "identical_uniform_copy: affine compatibility at p",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "identical_uniform_copy: affine compatibility at p2",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "identical_uniform_copy: clamp compatibility cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "identical_uniform_copy: segment equilibrium cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "identical_uniform_copy: clamp compatibility cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "identical_uniform_copy: segment equilibrium cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "identical_uniform_copy: identification 0,1/1000",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "identical_uniform_copy: identification 1/1000,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "identical_uniform_copy: identification 0,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "reordered_nonuniform: affine compatibility at zero",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "reordered_nonuniform: affine compatibility at p",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "reordered_nonuniform: affine compatibility at p2",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "reordered_nonuniform: clamp compatibility cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "reordered_nonuniform: segment equilibrium cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "reordered_nonuniform: clamp compatibility cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "reordered_nonuniform: segment equilibrium cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "reordered_nonuniform: identification 0,1/1000",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "reordered_nonuniform: identification 1/1000,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "reordered_nonuniform: identification 0,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_uniform: affine compatibility at zero",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_uniform: affine compatibility at p",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_uniform: affine compatibility at p2",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_uniform: clamp compatibility cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_uniform: segment equilibrium cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_uniform: clamp compatibility cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_uniform: segment equilibrium cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_uniform: identification 0,1/1000",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_uniform: identification 1/1000,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_uniform: identification 0,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_nonuniform: affine compatibility at zero",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_nonuniform: affine compatibility at p",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_nonuniform: affine compatibility at p2",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_nonuniform: clamp compatibility cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_nonuniform: segment equilibrium cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_nonuniform: clamp compatibility cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_nonuniform: segment equilibrium cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_nonuniform: identification 0,1/1000",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_nonuniform: identification 1/1000,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_nonuniform: identification 0,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_uniform: affine compatibility at zero",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_uniform: affine compatibility at p",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_uniform: affine compatibility at p2",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_uniform: clamp compatibility cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_uniform: segment equilibrium cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_uniform: clamp compatibility cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_uniform: segment equilibrium cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_uniform: identification 0,1/1000",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_uniform: identification 1/1000,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_uniform: identification 0,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_nonuniform: affine compatibility at zero",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_nonuniform: affine compatibility at p",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_nonuniform: affine compatibility at p2",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_nonuniform: clamp compatibility cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_nonuniform: segment equilibrium cold_stress_free",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_nonuniform: clamp compatibility cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_nonuniform: segment equilibrium cold_preloaded",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_nonuniform: identification 0,1/1000",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_nonuniform: identification 1/1000,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_nonuniform: identification 0,1/500",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "uniform exact H,C",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "nonuniform exact H,C",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "matched single-load extension",
+      "passed": true
+    },
+    {
+      "kind": "counterexample",
+      "name": "second load discriminates",
+      "passed": true
+    },
+    {
+      "kind": "counterexample",
+      "name": "zero-load extension discriminates",
+      "passed": true
+    },
+    {
+      "kind": "counterexample",
+      "name": "stress-free clamp forces differ",
+      "passed": true
+    },
+    {
+      "kind": "counterexample",
+      "name": "preloaded clamp forces differ",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "preloaded force increments",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "cold clamps",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "identical_uniform_copy: H,C invariance",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "identical_uniform_copy: all probes/clamps invariant",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "reordered_nonuniform: H,C invariance",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "reordered_nonuniform: all probes/clamps invariant",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_uniform: H,C invariance",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_uniform: all probes/clamps invariant",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_nonuniform: H,C invariance",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "subdivided_nonuniform: all probes/clamps invariant",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_nonuniform: H,C invariance",
+      "passed": true
+    },
+    {
+      "kind": "positive_control",
+      "name": "constant_modulus_nonuniform: all probes/clamps invariant",
+      "passed": true
+    },
+    {
+      "exception": "ValueError",
+      "kind": "expected_rejection",
+      "message": "Coincident loads cannot identify slope/intercept",
+      "name": "coincident probes",
+      "passed": true
+    },
+    {
+      "exception": "ValueError",
+      "kind": "expected_rejection",
+      "message": "Outside declared beta>=0, heating-only fixture domain",
+      "name": "negative beta",
+      "passed": true
+    },
+    {
+      "exception": "ValueError",
+      "kind": "expected_rejection",
+      "message": "Outside declared beta>=0, heating-only fixture domain",
+      "name": "negative heating theta",
+      "passed": true
+    },
+    {
+      "exception": "ValueError",
+      "kind": "expected_rejection",
+      "message": "Empty series bar",
+      "name": "empty geometry",
+      "passed": true
+    },
+    {
+      "exception": "ValueError",
+      "kind": "expected_rejection",
+      "message": "Temperature/length count mismatch",
+      "name": "mismatched segment counts",
+      "passed": true
+    },
+    {
+      "exception": "ValueError",
+      "kind": "expected_rejection",
+      "message": "Positive reference lengths must sum exactly to one",
+      "name": "nonpositive segment length",
+      "passed": true
+    },
+    {
+      "exception": "ValueError",
+      "kind": "expected_rejection",
+      "message": "Positive reference lengths must sum exactly to one",
+      "name": "changed total reference length",
+      "passed": true
+    },
+    {
+      "exception": "TypeError",
+      "kind": "expected_rejection",
+      "message": "Only integer/Fraction inputs; no float approximation",
+      "name": "floating input rejected",
+      "passed": true
+    },
+    {
+      "exception": "ValueError",
+      "kind": "expected_rejection",
+      "message": "Nonpositive compliance contradicts positive modulus",
+      "name": "nonphysical identified compliance",
+      "passed": true
+    },
+    {
+      "kind": "analytic_identity",
+      "name": "trajectory: exact polynomial loaded-equality residual",
+      "passed": true
+    },
+    {
+      "kind": "analytic_identity",
+      "name": "trajectory: exact clamp difference factorization zero",
+      "passed": true
+    },
+    {
+      "kind": "analytic_identity",
+      "name": "trajectory: exact clamp difference factorization preloaded",
+      "passed": true
+    },
+    {
+      "kind": "analytic_identity",
+      "name": "trajectory: exact endpoint relation 0",
+      "passed": true
+    },
+    {
+      "kind": "analytic_identity",
+      "name": "trajectory: endpoint elongation equality 0",
+      "passed": true
+    },
+    {
+      "kind": "analytic_identity",
+      "name": "trajectory: exact endpoint relation 1",
+      "passed": true
+    },
+    {
+      "kind": "analytic_identity",
+      "name": "trajectory: endpoint elongation equality 1",
+      "passed": true
+    }
+  ],
+  "continuous_path": {
+    "constraint": "F(s,q)=q^2+q-3*s^2-3*s=0, 0<=s<=1, q>=0",
+    "cross_multiplication_identity": "(d-Hv)*Cu-(d-Hu)*Cv=(R-d)*(Cv-Cu)-Cu*F/3000",
+    "endpoints": [
+      {
+        "q": "0/1",
+        "s": "0/1",
+        "shared_extension_at_p": "1/1000",
+        "uniform_clamps": [
+          "0/1",
+          "1/1000"
+        ],
+        "variable_clamps": [
+          "0/1",
+          "1/1000"
+        ]
+      },
+      {
+        "q": "2/1",
+        "s": "1/1",
+        "shared_extension_at_p": "3/1000",
+        "uniform_clamps": [
+          "-1/2000",
+          "0/1"
+        ],
+        "variable_clamps": [
+          "-1/3500",
+          "1/7000"
+        ]
+      }
+    ],
+    "exact_identity": "delta_variable(p)-delta_uniform(p)=F/3000",
+    "monotonicity": "(2*q+1)*dq/ds=6*s+3>0; q(0)=0, q(1)=2",
+    "no_decimal_sampling_used_as_proof": true,
+    "positive_root": "q=(-1+sqrt(1+12*s+12*s^2))/2",
+    "strict_inequality_proof": [
+      "For s>0, g(x)=x^2+x is strictly increasing for x>=0.",
+      "g(s)<3*g(s)=g(q)<g(3*s); therefore s<q<3*s.",
+      "On F=0, D=Cv-Cu=s-q/3>0 and R=delta(p)=p*(1+s+s^2)>p.",
+      "For d in {0,p}, Nv(d)-Nu(d)=(R-d)*D/(Cu*Cv)>0.",
+      "At s=0 both cold reactions agree. These are algebraic state paths, not heat-PDE solutions."
+    ]
+  },
+  "derivation": "Independent exact-rational oracle; synthetic mechanics, not historical data.\n\nDerivation: axial equilibrium (no distributed axial load, constant area) gives\none normalized force n in every series segment. The specified constitutive\nlaw gives eps_i = n*(1 + beta*theta_i**2) + theta_i/1000. Compatibility gives\ndelta = sum(w_i*eps_i) = n*C + H, where sum(w_i)=1. Thus prescribed length d\nrequires n=(d-H)/C. A clamp replaces, rather than supplements, the end traction.\n\nThis file was developed from PROTOCOL.md without reading/importing the root\ncalculator, its outputs, or another review. Its checks concern only this law.\n",
+  "failed_checks": 0,
+  "identification": {
+    "one_load_limit": "Matching H+p*C supplies one equation for two state quantities.",
+    "sufficient_transfer_conditions": "Equal H and C, including same C plus equality at one load, or equality at two distinct loads at the same thermal state.",
+    "two_load_formula": "C=(delta2-delta1)/(n2-n1); H=delta1-n1*C; n1!=n2",
+    "unloaded_thermal_only_limit": "At probe zero, equal H alone does not identify C."
+  },
+  "limits": [
+    "Synthetic constitutive law, no historical coating or temperature inference.",
+    "Small-strain 1D axial equilibrium; no bending, buckling, plasticity, creep, damage or failure.",
+    "Prescribed temperatures independent of force; no thermal PDE solved.",
+    "Exact arithmetic is not physical, historical or collapse-model validation."
+  ],
+  "pre_execution_protocol_clarification": {
+    "change": "Both cold increment baselines explicitly named before either oracle run; no prior result discarded.",
+    "previous_sha256": "020decb3dabf5327886961abdf0da5c6a8adafe3127e7446c30a738626ebaa72"
+  },
+  "program_sha256": "3cea4c4b1a4d9cd2efdeaeec121ff897013b1a708ff5a4fba01c822f391ab282",
+  "protocol_sha256": "d9df71946dd097a4b6154d07fb07c8e0dff8206a91c1393f8251ceac9b817bc0",
+  "runtime": {
+    "dependencies": "standard library only",
+    "implementation": "CPython",
+    "python": "3.12.14"
+  },
+  "states": {
+    "cold": {
+      "axial_compliance_C": "1/1",
+      "clamps": {
+        "cold_preloaded": {
+          "force_change_from_initial": "0/1",
+          "prescribed_total_extension": "1/1000",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "1/1000"
+          ],
+          "total_force": "1/1000"
+        },
+        "cold_stress_free": {
+          "force_change_from_initial": "0/1",
+          "prescribed_total_extension": "0/1",
+          "segment_strains": [
+            "0/1",
+            "0/1",
+            "0/1"
+          ],
+          "total_force": "0/1"
+        }
+      },
+      "input": {
+        "beta": "1/1",
+        "theta": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "weights": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      },
+      "load_probes": {
+        "p": {
+          "force": "1/1000",
+          "increment_from_cold_at_same_probe_load": "0/1",
+          "increment_from_common_cold_preload_p": "0/1",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "1/1000"
+          ],
+          "total_extension": "1/1000"
+        },
+        "p2": {
+          "force": "1/500",
+          "increment_from_cold_at_same_probe_load": "0/1",
+          "increment_from_common_cold_preload_p": "1/1000",
+          "segment_strains": [
+            "1/500",
+            "1/500",
+            "1/500"
+          ],
+          "total_extension": "1/500"
+        },
+        "zero": {
+          "force": "0/1",
+          "increment_from_cold_at_same_probe_load": "0/1",
+          "increment_from_common_cold_preload_p": "-1/1000",
+          "segment_strains": [
+            "0/1",
+            "0/1",
+            "0/1"
+          ],
+          "total_extension": "0/1"
+        }
+      },
+      "thermal_extension_H": "0/1",
+      "two_load_identifications": [
+        {
+          "H_C": [
+            "0/1",
+            "1/1"
+          ],
+          "loads": [
+            "0/1",
+            "1/1000"
+          ]
+        },
+        {
+          "H_C": [
+            "0/1",
+            "1/1"
+          ],
+          "loads": [
+            "1/1000",
+            "1/500"
+          ]
+        },
+        {
+          "H_C": [
+            "0/1",
+            "1/1"
+          ],
+          "loads": [
+            "0/1",
+            "1/500"
+          ]
+        }
+      ]
+    },
+    "constant_modulus_nonuniform": {
+      "axial_compliance_C": "1/1",
+      "clamps": {
+        "cold_preloaded": {
+          "force_change_from_initial": "-1/1000",
+          "prescribed_total_extension": "1/1000",
+          "segment_strains": [
+            "0/1",
+            "0/1",
+            "3/1000"
+          ],
+          "total_force": "0/1"
+        },
+        "cold_stress_free": {
+          "force_change_from_initial": "-1/1000",
+          "prescribed_total_extension": "0/1",
+          "segment_strains": [
+            "-1/1000",
+            "-1/1000",
+            "1/500"
+          ],
+          "total_force": "-1/1000"
+        }
+      },
+      "input": {
+        "beta": "0/1",
+        "theta": [
+          "0/1",
+          "0/1",
+          "3/1"
+        ],
+        "weights": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      },
+      "load_probes": {
+        "p": {
+          "force": "1/1000",
+          "increment_from_cold_at_same_probe_load": "1/1000",
+          "increment_from_common_cold_preload_p": "1/1000",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "1/250"
+          ],
+          "total_extension": "1/500"
+        },
+        "p2": {
+          "force": "1/500",
+          "increment_from_cold_at_same_probe_load": "1/1000",
+          "increment_from_common_cold_preload_p": "1/500",
+          "segment_strains": [
+            "1/500",
+            "1/500",
+            "1/200"
+          ],
+          "total_extension": "3/1000"
+        },
+        "zero": {
+          "force": "0/1",
+          "increment_from_cold_at_same_probe_load": "1/1000",
+          "increment_from_common_cold_preload_p": "0/1",
+          "segment_strains": [
+            "0/1",
+            "0/1",
+            "3/1000"
+          ],
+          "total_extension": "1/1000"
+        }
+      },
+      "thermal_extension_H": "1/1000",
+      "two_load_identifications": [
+        {
+          "H_C": [
+            "1/1000",
+            "1/1"
+          ],
+          "loads": [
+            "0/1",
+            "1/1000"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1000",
+            "1/1"
+          ],
+          "loads": [
+            "1/1000",
+            "1/500"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1000",
+            "1/1"
+          ],
+          "loads": [
+            "0/1",
+            "1/500"
+          ]
+        }
+      ]
+    },
+    "constant_modulus_uniform": {
+      "axial_compliance_C": "1/1",
+      "clamps": {
+        "cold_preloaded": {
+          "force_change_from_initial": "-1/1000",
+          "prescribed_total_extension": "1/1000",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "1/1000"
+          ],
+          "total_force": "0/1"
+        },
+        "cold_stress_free": {
+          "force_change_from_initial": "-1/1000",
+          "prescribed_total_extension": "0/1",
+          "segment_strains": [
+            "0/1",
+            "0/1",
+            "0/1"
+          ],
+          "total_force": "-1/1000"
+        }
+      },
+      "input": {
+        "beta": "0/1",
+        "theta": [
+          "1/1",
+          "1/1",
+          "1/1"
+        ],
+        "weights": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      },
+      "load_probes": {
+        "p": {
+          "force": "1/1000",
+          "increment_from_cold_at_same_probe_load": "1/1000",
+          "increment_from_common_cold_preload_p": "1/1000",
+          "segment_strains": [
+            "1/500",
+            "1/500",
+            "1/500"
+          ],
+          "total_extension": "1/500"
+        },
+        "p2": {
+          "force": "1/500",
+          "increment_from_cold_at_same_probe_load": "1/1000",
+          "increment_from_common_cold_preload_p": "1/500",
+          "segment_strains": [
+            "3/1000",
+            "3/1000",
+            "3/1000"
+          ],
+          "total_extension": "3/1000"
+        },
+        "zero": {
+          "force": "0/1",
+          "increment_from_cold_at_same_probe_load": "1/1000",
+          "increment_from_common_cold_preload_p": "0/1",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "1/1000"
+          ],
+          "total_extension": "1/1000"
+        }
+      },
+      "thermal_extension_H": "1/1000",
+      "two_load_identifications": [
+        {
+          "H_C": [
+            "1/1000",
+            "1/1"
+          ],
+          "loads": [
+            "0/1",
+            "1/1000"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1000",
+            "1/1"
+          ],
+          "loads": [
+            "1/1000",
+            "1/500"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1000",
+            "1/1"
+          ],
+          "loads": [
+            "0/1",
+            "1/500"
+          ]
+        }
+      ]
+    },
+    "identical_uniform_copy": {
+      "axial_compliance_C": "2/1",
+      "clamps": {
+        "cold_preloaded": {
+          "force_change_from_initial": "-1/1000",
+          "prescribed_total_extension": "1/1000",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "1/1000"
+          ],
+          "total_force": "0/1"
+        },
+        "cold_stress_free": {
+          "force_change_from_initial": "-1/2000",
+          "prescribed_total_extension": "0/1",
+          "segment_strains": [
+            "0/1",
+            "0/1",
+            "0/1"
+          ],
+          "total_force": "-1/2000"
+        }
+      },
+      "input": {
+        "beta": "1/1",
+        "theta": [
+          "1/1",
+          "1/1",
+          "1/1"
+        ],
+        "weights": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      },
+      "load_probes": {
+        "p": {
+          "force": "1/1000",
+          "increment_from_cold_at_same_probe_load": "1/500",
+          "increment_from_common_cold_preload_p": "1/500",
+          "segment_strains": [
+            "3/1000",
+            "3/1000",
+            "3/1000"
+          ],
+          "total_extension": "3/1000"
+        },
+        "p2": {
+          "force": "1/500",
+          "increment_from_cold_at_same_probe_load": "3/1000",
+          "increment_from_common_cold_preload_p": "1/250",
+          "segment_strains": [
+            "1/200",
+            "1/200",
+            "1/200"
+          ],
+          "total_extension": "1/200"
+        },
+        "zero": {
+          "force": "0/1",
+          "increment_from_cold_at_same_probe_load": "1/1000",
+          "increment_from_common_cold_preload_p": "0/1",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "1/1000"
+          ],
+          "total_extension": "1/1000"
+        }
+      },
+      "thermal_extension_H": "1/1000",
+      "two_load_identifications": [
+        {
+          "H_C": [
+            "1/1000",
+            "2/1"
+          ],
+          "loads": [
+            "0/1",
+            "1/1000"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1000",
+            "2/1"
+          ],
+          "loads": [
+            "1/1000",
+            "1/500"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1000",
+            "2/1"
+          ],
+          "loads": [
+            "0/1",
+            "1/500"
+          ]
+        }
+      ]
+    },
+    "reordered_nonuniform": {
+      "axial_compliance_C": "7/3",
+      "clamps": {
+        "cold_preloaded": {
+          "force_change_from_initial": "-3/3500",
+          "prescribed_total_extension": "1/1000",
+          "segment_strains": [
+            "19/7000",
+            "1/7000",
+            "1/7000"
+          ],
+          "total_force": "1/7000"
+        },
+        "cold_stress_free": {
+          "force_change_from_initial": "-1/3500",
+          "prescribed_total_extension": "0/1",
+          "segment_strains": [
+            "1/1750",
+            "-1/3500",
+            "-1/3500"
+          ],
+          "total_force": "-1/3500"
+        }
+      },
+      "input": {
+        "beta": "1/1",
+        "theta": [
+          "2/1",
+          "0/1",
+          "0/1"
+        ],
+        "weights": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      },
+      "load_probes": {
+        "p": {
+          "force": "1/1000",
+          "increment_from_cold_at_same_probe_load": "1/500",
+          "increment_from_common_cold_preload_p": "1/500",
+          "segment_strains": [
+            "7/1000",
+            "1/1000",
+            "1/1000"
+          ],
+          "total_extension": "3/1000"
+        },
+        "p2": {
+          "force": "1/500",
+          "increment_from_cold_at_same_probe_load": "1/300",
+          "increment_from_common_cold_preload_p": "13/3000",
+          "segment_strains": [
+            "3/250",
+            "1/500",
+            "1/500"
+          ],
+          "total_extension": "2/375"
+        },
+        "zero": {
+          "force": "0/1",
+          "increment_from_cold_at_same_probe_load": "1/1500",
+          "increment_from_common_cold_preload_p": "-1/3000",
+          "segment_strains": [
+            "1/500",
+            "0/1",
+            "0/1"
+          ],
+          "total_extension": "1/1500"
+        }
+      },
+      "thermal_extension_H": "1/1500",
+      "two_load_identifications": [
+        {
+          "H_C": [
+            "1/1500",
+            "7/3"
+          ],
+          "loads": [
+            "0/1",
+            "1/1000"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1500",
+            "7/3"
+          ],
+          "loads": [
+            "1/1000",
+            "1/500"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1500",
+            "7/3"
+          ],
+          "loads": [
+            "0/1",
+            "1/500"
+          ]
+        }
+      ]
+    },
+    "subdivided_nonuniform": {
+      "axial_compliance_C": "7/3",
+      "clamps": {
+        "cold_preloaded": {
+          "force_change_from_initial": "-3/3500",
+          "prescribed_total_extension": "1/1000",
+          "segment_strains": [
+            "1/7000",
+            "1/7000",
+            "1/7000",
+            "1/7000",
+            "19/7000",
+            "19/7000"
+          ],
+          "total_force": "1/7000"
+        },
+        "cold_stress_free": {
+          "force_change_from_initial": "-1/3500",
+          "prescribed_total_extension": "0/1",
+          "segment_strains": [
+            "-1/3500",
+            "-1/3500",
+            "-1/3500",
+            "-1/3500",
+            "1/1750",
+            "1/1750"
+          ],
+          "total_force": "-1/3500"
+        }
+      },
+      "input": {
+        "beta": "1/1",
+        "theta": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "2/1",
+          "2/1"
+        ],
+        "weights": [
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6"
+        ]
+      },
+      "load_probes": {
+        "p": {
+          "force": "1/1000",
+          "increment_from_cold_at_same_probe_load": "1/500",
+          "increment_from_common_cold_preload_p": "1/500",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "1/1000",
+            "1/1000",
+            "7/1000",
+            "7/1000"
+          ],
+          "total_extension": "3/1000"
+        },
+        "p2": {
+          "force": "1/500",
+          "increment_from_cold_at_same_probe_load": "1/300",
+          "increment_from_common_cold_preload_p": "13/3000",
+          "segment_strains": [
+            "1/500",
+            "1/500",
+            "1/500",
+            "1/500",
+            "3/250",
+            "3/250"
+          ],
+          "total_extension": "2/375"
+        },
+        "zero": {
+          "force": "0/1",
+          "increment_from_cold_at_same_probe_load": "1/1500",
+          "increment_from_common_cold_preload_p": "-1/3000",
+          "segment_strains": [
+            "0/1",
+            "0/1",
+            "0/1",
+            "0/1",
+            "1/500",
+            "1/500"
+          ],
+          "total_extension": "1/1500"
+        }
+      },
+      "thermal_extension_H": "1/1500",
+      "two_load_identifications": [
+        {
+          "H_C": [
+            "1/1500",
+            "7/3"
+          ],
+          "loads": [
+            "0/1",
+            "1/1000"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1500",
+            "7/3"
+          ],
+          "loads": [
+            "1/1000",
+            "1/500"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1500",
+            "7/3"
+          ],
+          "loads": [
+            "0/1",
+            "1/500"
+          ]
+        }
+      ]
+    },
+    "subdivided_uniform": {
+      "axial_compliance_C": "2/1",
+      "clamps": {
+        "cold_preloaded": {
+          "force_change_from_initial": "-1/1000",
+          "prescribed_total_extension": "1/1000",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "1/1000",
+            "1/1000",
+            "1/1000",
+            "1/1000"
+          ],
+          "total_force": "0/1"
+        },
+        "cold_stress_free": {
+          "force_change_from_initial": "-1/2000",
+          "prescribed_total_extension": "0/1",
+          "segment_strains": [
+            "0/1",
+            "0/1",
+            "0/1",
+            "0/1",
+            "0/1",
+            "0/1"
+          ],
+          "total_force": "-1/2000"
+        }
+      },
+      "input": {
+        "beta": "1/1",
+        "theta": [
+          "1/1",
+          "1/1",
+          "1/1",
+          "1/1",
+          "1/1",
+          "1/1"
+        ],
+        "weights": [
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6"
+        ]
+      },
+      "load_probes": {
+        "p": {
+          "force": "1/1000",
+          "increment_from_cold_at_same_probe_load": "1/500",
+          "increment_from_common_cold_preload_p": "1/500",
+          "segment_strains": [
+            "3/1000",
+            "3/1000",
+            "3/1000",
+            "3/1000",
+            "3/1000",
+            "3/1000"
+          ],
+          "total_extension": "3/1000"
+        },
+        "p2": {
+          "force": "1/500",
+          "increment_from_cold_at_same_probe_load": "3/1000",
+          "increment_from_common_cold_preload_p": "1/250",
+          "segment_strains": [
+            "1/200",
+            "1/200",
+            "1/200",
+            "1/200",
+            "1/200",
+            "1/200"
+          ],
+          "total_extension": "1/200"
+        },
+        "zero": {
+          "force": "0/1",
+          "increment_from_cold_at_same_probe_load": "1/1000",
+          "increment_from_common_cold_preload_p": "0/1",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "1/1000",
+            "1/1000",
+            "1/1000",
+            "1/1000"
+          ],
+          "total_extension": "1/1000"
+        }
+      },
+      "thermal_extension_H": "1/1000",
+      "two_load_identifications": [
+        {
+          "H_C": [
+            "1/1000",
+            "2/1"
+          ],
+          "loads": [
+            "0/1",
+            "1/1000"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1000",
+            "2/1"
+          ],
+          "loads": [
+            "1/1000",
+            "1/500"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1000",
+            "2/1"
+          ],
+          "loads": [
+            "0/1",
+            "1/500"
+          ]
+        }
+      ]
+    },
+    "variable_modulus_nonuniform": {
+      "axial_compliance_C": "7/3",
+      "clamps": {
+        "cold_preloaded": {
+          "force_change_from_initial": "-3/3500",
+          "prescribed_total_extension": "1/1000",
+          "segment_strains": [
+            "1/7000",
+            "1/7000",
+            "19/7000"
+          ],
+          "total_force": "1/7000"
+        },
+        "cold_stress_free": {
+          "force_change_from_initial": "-1/3500",
+          "prescribed_total_extension": "0/1",
+          "segment_strains": [
+            "-1/3500",
+            "-1/3500",
+            "1/1750"
+          ],
+          "total_force": "-1/3500"
+        }
+      },
+      "input": {
+        "beta": "1/1",
+        "theta": [
+          "0/1",
+          "0/1",
+          "2/1"
+        ],
+        "weights": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      },
+      "load_probes": {
+        "p": {
+          "force": "1/1000",
+          "increment_from_cold_at_same_probe_load": "1/500",
+          "increment_from_common_cold_preload_p": "1/500",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "7/1000"
+          ],
+          "total_extension": "3/1000"
+        },
+        "p2": {
+          "force": "1/500",
+          "increment_from_cold_at_same_probe_load": "1/300",
+          "increment_from_common_cold_preload_p": "13/3000",
+          "segment_strains": [
+            "1/500",
+            "1/500",
+            "3/250"
+          ],
+          "total_extension": "2/375"
+        },
+        "zero": {
+          "force": "0/1",
+          "increment_from_cold_at_same_probe_load": "1/1500",
+          "increment_from_common_cold_preload_p": "-1/3000",
+          "segment_strains": [
+            "0/1",
+            "0/1",
+            "1/500"
+          ],
+          "total_extension": "1/1500"
+        }
+      },
+      "thermal_extension_H": "1/1500",
+      "two_load_identifications": [
+        {
+          "H_C": [
+            "1/1500",
+            "7/3"
+          ],
+          "loads": [
+            "0/1",
+            "1/1000"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1500",
+            "7/3"
+          ],
+          "loads": [
+            "1/1000",
+            "1/500"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1500",
+            "7/3"
+          ],
+          "loads": [
+            "0/1",
+            "1/500"
+          ]
+        }
+      ]
+    },
+    "variable_modulus_uniform": {
+      "axial_compliance_C": "2/1",
+      "clamps": {
+        "cold_preloaded": {
+          "force_change_from_initial": "-1/1000",
+          "prescribed_total_extension": "1/1000",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "1/1000"
+          ],
+          "total_force": "0/1"
+        },
+        "cold_stress_free": {
+          "force_change_from_initial": "-1/2000",
+          "prescribed_total_extension": "0/1",
+          "segment_strains": [
+            "0/1",
+            "0/1",
+            "0/1"
+          ],
+          "total_force": "-1/2000"
+        }
+      },
+      "input": {
+        "beta": "1/1",
+        "theta": [
+          "1/1",
+          "1/1",
+          "1/1"
+        ],
+        "weights": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      },
+      "load_probes": {
+        "p": {
+          "force": "1/1000",
+          "increment_from_cold_at_same_probe_load": "1/500",
+          "increment_from_common_cold_preload_p": "1/500",
+          "segment_strains": [
+            "3/1000",
+            "3/1000",
+            "3/1000"
+          ],
+          "total_extension": "3/1000"
+        },
+        "p2": {
+          "force": "1/500",
+          "increment_from_cold_at_same_probe_load": "3/1000",
+          "increment_from_common_cold_preload_p": "1/250",
+          "segment_strains": [
+            "1/200",
+            "1/200",
+            "1/200"
+          ],
+          "total_extension": "1/200"
+        },
+        "zero": {
+          "force": "0/1",
+          "increment_from_cold_at_same_probe_load": "1/1000",
+          "increment_from_common_cold_preload_p": "0/1",
+          "segment_strains": [
+            "1/1000",
+            "1/1000",
+            "1/1000"
+          ],
+          "total_extension": "1/1000"
+        }
+      },
+      "thermal_extension_H": "1/1000",
+      "two_load_identifications": [
+        {
+          "H_C": [
+            "1/1000",
+            "2/1"
+          ],
+          "loads": [
+            "0/1",
+            "1/1000"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1000",
+            "2/1"
+          ],
+          "loads": [
+            "1/1000",
+            "1/500"
+          ]
+        },
+        {
+          "H_C": [
+            "1/1000",
+            "2/1"
+          ],
+          "loads": [
+            "0/1",
+            "1/500"
+          ]
+        }
+      ]
+    }
+  },
+  "status": "synthetic_exact_method_test_not_historical_validation",
+  "units": {
+    "extension": "DeltaL/L0",
+    "force": "N/(A*E0)",
+    "theta": "(T-T0)/Tscale"
+  }
+}

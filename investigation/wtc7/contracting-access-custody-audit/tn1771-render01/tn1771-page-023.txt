@@ -1,0 +1,38 @@
+23 
+ 
+boundary condition is the only difference between Test 1 and Test 2 from the thermal 
+modeling perspective. All nodes in the model were assigned an initial temperature of 
+25 ˚C. The input temperatures to the model are the ASTM E119 time-temperature curve 
+assigned to the reference node as described in the previous section. This essentially 
+assigns the furnace heating to this reference node. All exposed surfaces exchange 
+convective and radiative heating with this node. 
+ 
+ 
+4.3 Interpolation of Temperatures 
+ 
+The numerical model predictions can be compared with measured time-temperature data 
+at locations A, C, E, and I along the main truss (see Figure 2). These comparisons are 
+performed at the upper chord, mid-web, and the lower chord for these four locations. 
+However, often there is not a node at the exact location where a thermocouple was 
+positioned. In order to obtain a simulated temperature at the measurement point, 
+interpolation of temperatures was done as described in the following paragraphs.  
+ 
+ 
+ 
+Figure 13. Schematic illustration of the averaging approach used to interpolate 
+temperatures. 
+ 
+The model predictions of temperature at a given location along the truss (e.g., A, C, E, or 
+I in Fig. 2) are obtained as shown schematically in Figure 13. For example, temperature 
+at the position of interest (e.g., P at the bottom chord in Figure 13) is obtained by taking a 
+weighted average of temperatures of all the FEM nodes available nearest to the point P 
+on either side. In other words, first average temperatures at X and Y are obtained by 
+finding the mean temperatures of all the nodes at X and Y (e.g., through the entire 
+sections at X and Y). Then the temperature at the point of interest (P) is estimated by 
+finding a weighted average of computed mean temperatures at X and Y using the proper 
+distance of P from both locations X and Y. A script was written in ANSYS parametric 
+design language (APDL) to output these temperatures as functions of time for the desired 
+locations along the truss for upper chord, mid-web, and lower chord positions. These 
+Y 
+X 
+P 

@@ -1,0 +1,108 @@
+{
+  "code_sha256": "004d9a5fb22719d105dead797e4584cf2c1e1802042841ed944fbbdb0655fad9",
+  "command": [
+    "research/sherlock-wtc7-investigation/c79-casea-spring-audit/compare_springs.py",
+    "--output",
+    "research/sherlock-wtc7-investigation/c79-casea-spring-audit/spring-comparison-root01.json"
+  ],
+  "controls": {
+    "count": 12,
+    "groups": [
+      "exact_numeric_integer_float_equality",
+      "blank_not_zero",
+      "numeric_change",
+      "lineage_change",
+      "point_order_change",
+      "point_omission",
+      "count_change",
+      "missing_field",
+      "boolean_not_numeric_zero",
+      "duplicate_id_rejected",
+      "create_only",
+      "explicit_producer_status_spellings_and_invalid_status_rejection"
+    ],
+    "status": "passed"
+  },
+  "elapsed_seconds": 0.5949174159904942,
+  "pins_after": {
+    "casea-root01.json": "27e8905727fa8462724db70f6ce11f411391170a4a6636936491027eaba988a2",
+    "casea-root02.json": "4b1fff82bdb8778045bbe880d2bbf708d03788191480c0883b2bbd8fcfab4432",
+    "definition-presence01.json": "604a5b4ef75d8bc5df575c1d1da4cc5f25cc85acb2b4e6a1097ba5f39aeada32",
+    "independent-definition-presence01.json": "7377187b71fe0fc10a5483ed80424499555270708d02a61d2d2a991c14a939c7",
+    "independent-springs01.json": "0940e45f99999bb69bac8ee898c47dd967baae03a134a83be62fedd425520116"
+  },
+  "pins_before": {
+    "casea-root01.json": {
+      "bytes": 28979739,
+      "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/c79-casea-spring-audit/casea-root01.json",
+      "sha256": "27e8905727fa8462724db70f6ce11f411391170a4a6636936491027eaba988a2"
+    },
+    "casea-root02.json": {
+      "bytes": 28979738,
+      "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/c79-casea-spring-audit/casea-root02.json",
+      "sha256": "4b1fff82bdb8778045bbe880d2bbf708d03788191480c0883b2bbd8fcfab4432"
+    },
+    "definition-presence01.json": {
+      "bytes": 14677,
+      "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/c79-casea-spring-audit/definition-presence01.json",
+      "sha256": "604a5b4ef75d8bc5df575c1d1da4cc5f25cc85acb2b4e6a1097ba5f39aeada32"
+    },
+    "independent-definition-presence01.json": {
+      "bytes": 343423,
+      "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/c79-casea-spring-audit/independent-definition-presence01.json",
+      "sha256": "7377187b71fe0fc10a5483ed80424499555270708d02a61d2d2a991c14a939c7"
+    },
+    "independent-springs01.json": {
+      "bytes": 424378,
+      "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/c79-casea-spring-audit/independent-springs01.json",
+      "sha256": "0940e45f99999bb69bac8ee898c47dd967baae03a134a83be62fedd425520116"
+    }
+  },
+  "result": {
+    "all_common_fields_equal": true,
+    "comparisons": {
+      "definition_family_hits_variants_and_pins": [],
+      "independent_repeated_source_pass_pins": [],
+      "independent_vs_casea-root01.json": [],
+      "independent_vs_casea-root02.json": [],
+      "root_repeat_spring_inventory": [],
+      "source_pins_vs_casea-root01.json": [],
+      "source_pins_vs_casea-root02.json": []
+    },
+    "definition_family_counts": {
+      "CURVE": 59,
+      "FUNCTION": 0,
+      "TABLE": 0
+    },
+    "limits": [
+      "All-curve equality is inventory verification, not selected law evaluation: selected602/803 absent.",
+      "No numeric tolerance or implicit defaults; JSON integer/float representations compare by exact numeric value.",
+      "Title hashes, numeric lexemes, full selected-PID membership lists and selection-list lineage lack matching root schema and are not independently certified here.",
+      "Element keyword-line locators are not in root schema; element source/card line and all8fields are compared.",
+      "Only common spring/source fields are compared; no certification of CaseA geometry or unrelated root fields.",
+      "No source execution, physical calibration, activation, unit assignment or historical-run inference."
+    ],
+    "scope_counts": {
+      "all_curve_header_fields": 472,
+      "all_curve_points": 968,
+      "all_inventory_curves": 59,
+      "element_numeric_fields": 136,
+      "selected_blocks": 9,
+      "selected_card_fields": 96,
+      "selected_cards": 12,
+      "selected_elements": 17,
+      "selected_part_counts": 3
+    },
+    "selected_curve_dependency_finding": [
+      {
+        "base_curve_supplied": false,
+        "id": 602
+      },
+      {
+        "base_curve_supplied": false,
+        "id": 803
+      }
+    ]
+  },
+  "status": "passed"
+}

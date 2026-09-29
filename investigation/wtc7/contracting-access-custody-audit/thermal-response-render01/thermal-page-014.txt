@@ -1,0 +1,40 @@
+ 14 
+a parameter called “view factor”. The view factor is defined by the proportion of the 
+radiation that leaves a surface (e.g., surface A) that strikes another surface (e.g., 
+surface B). It can assume values from 0 to 1. 
+For modeling the furnace heating in the UL tests, the exposed surfaces of the 
+composite floor system were subjected to convective and radiative heat exchanges. In 
+order to accomplish this, surface effect elements (SURF 152) were generated in 
+ANSYS and overlaid on the exposed surfaces of the solid elements. SURF152 is a 3-
+D thermal surface element. It may be used for various surface effect and load 
+applications. Various loads and surface effects may be assigned simultaneously. An 
+extra node (i.e., reference node, which is away from those of the base element) is 
+used for convection or radiation effects. This node represents furnace heating. In 
+other words, a Dirichlet-type boundary condition (prescribed temperature as a 
+function of time) was assigned to this reference node. This element has been used for 
+both convective and radiative heat transfer. The emissivity value of the surface (input 
+as a material property card) is used for computing radiative heat transfer. Only one 
+type of thermal surface load can be applied to a given element entity in ANSYS. For 
+example, one cannot apply both a heat flux and a convection boundary condition 
+directly to the faces of an element. Surface effect elements allow the use of multiple 
+surface loads to a given element face. Two types of surface effect elements were 
+created: one for the convective heat exchange and the other for the radiative heat 
+exchange. For the convective surface elements, the fluid bulk temperature was 
+designated as that of the reference node and appropriate convective heat transfer 
+coefficients were used (see the next section). For the radiative heat exchange, surface 
+effect elements were created with the reference node being subjected to the furnace 
+heating following the ASTM E119 curve. A resultant emissivity value was specified 
+while creating these surface effect elements. The resultant emissivity includes proper 
+emissivity values of both the receiving and emitting surfaces. View factor effects in 
+the radiation heat transfer were not considered, since the furnace was not explicitly 
+modeled in this study and therefore, view factor values were set to 1 for all elements.  
+Thermophysical properties for materials used in the model (e.g., steel, concrete, and 
+SFRM) are listed in tabular form in Appendix 1. The thermophysical properties that 
+are needed for thermal analysis are: density, specific heat, emissivity, and thermal 
+conductivity. Note that temperature-dependent thermophysical properties are needed 
+to describe thermal behavior accurately. The values of these parameters often change 
+significantly with the change in temperature. For example, thermal conductivity of 
+fireproofing increases significantly with the increase in temperature (Appendix 1 and 
+[13]). Proper boundary conditions are needed to model the heat transfer to/from the 
+floor system both at the exposed and unexposed surfaces (e.g., top surfaces of the 
+slab). For the convective surface effects elements at the exposed surface, a convective 

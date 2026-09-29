@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "preservation": "Summary of the first console control receipt; full failed code preserved alongside",
+  "code_sha256": "11528ec4cdac6be50d94ede28a795d25096b1ff671809f8933fad9be22192cec",
+  "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B research/sherlock-wtc7-investigation/peskin-figure-correspondence/direct_oracle.py --controls",
+  "python": "3.12.14",
+  "control_count": 16,
+  "passed": 15,
+  "failed": ["positive_variance_equal_floor_accepted"],
+  "random_surface_count": 64,
+  "random_offsets_compared": 3030,
+  "random_max_rho_error": 3.3306690738754696e-16,
+  "repeated_grid_alias_count": 18,
+  "cause": "Fixture required exact rho == 1; variance gate accepted the point, but separate square-root divisions rounded the score.",
+  "correction": "Require no rejection and rho within 1e-14 of 1; no oracle arithmetic or gating change.",
+  "historical_inputs": false,
+  "producer_inspected": false
+}

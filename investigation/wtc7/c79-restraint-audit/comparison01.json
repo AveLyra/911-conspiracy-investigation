@@ -1,0 +1,209 @@
+{
+  "command": [
+    "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "research/sherlock-wtc7-investigation/c79-restraint-audit/compare_restraint.py",
+    "--output",
+    "comparison01.json"
+  ],
+  "comparer_controls": [
+    {
+      "name": "source_line",
+      "status": "PASS"
+    },
+    {
+      "name": "element_id",
+      "status": "PASS"
+    },
+    {
+      "name": "family",
+      "status": "PASS"
+    },
+    {
+      "name": "original_namespace",
+      "status": "PASS"
+    },
+    {
+      "name": "effective_namespace",
+      "status": "PASS"
+    },
+    {
+      "name": "vertex_order",
+      "status": "PASS"
+    },
+    {
+      "name": "repeated_vertex_dropped",
+      "status": "PASS"
+    },
+    {
+      "name": "orientation_field",
+      "status": "PASS"
+    },
+    {
+      "name": "source_alias",
+      "status": "PASS"
+    },
+    {
+      "name": "seed_intersection_duplicate",
+      "status": "PASS"
+    },
+    {
+      "name": "one_ulp_coordinate_difference",
+      "status": "PASS"
+    },
+    {
+      "name": "boolean_not_numeric_id",
+      "status": "PASS"
+    },
+    {
+      "name": "exact_integral_float_card_alias",
+      "status": "PASS"
+    },
+    {
+      "name": "nonblank_padding_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "fixture_not_mutated",
+      "status": "PASS"
+    }
+  ],
+  "comparison": {
+    "coordinate_scalar_comparisons": 28686,
+    "coverage_per_root": {
+      "geometry_count_groups": 5,
+      "include_edges": 3,
+      "neighbor_elements": 20,
+      "part_references": 2,
+      "seed_elements": 952,
+      "seed_node_ids": 873,
+      "selected_node_coordinates": 891,
+      "transform_cards": 4
+    },
+    "failures": [],
+    "independence": "Independent extraction froze before root outputs/code access. Root had received independent summary counts/part1179 conclusion before root code freeze, but not arrays/code; algorithmic independence, not blind count discovery.",
+    "interpretation": "Shared-node graph reproducibility only; no contact expansion, directional restraint, stiffness, capacity, historical state or cause.",
+    "normalizations": [
+      "Preserved source filename to approved SRC alias.",
+      "Element/part field-name aliases; record order and repeated vertex slots unchanged.",
+      "Diagnostic/set/include root line denotes keyword line, matched to independent keyword_line.",
+      "Plane first-card omitted trailing blank padded with None; transform fixed-width trailing slots required None before trimming.",
+      "Exact integer-valued float metadata allowed to equal integer numeric value; no rounding/tolerance.",
+      "Root min/max vectors transposed from independent per-axis bounds."
+    ],
+    "not_independently_compared": [
+      "Root CONTACT/NSET inventories and TC/RC fields, including global nonzero constraint-field count.",
+      "891 node source/line locators retained only by independent output; root coordinate schema omits them.",
+      "Independent shell thickness/continuation cards and individual diagnostic/part-set/transform card row locators omitted by root.",
+      "Heading hashes use different recipes: root hashes ID+heading card, independent hashes stripped heading; part headings absent independently.",
+      "Independent full PART cards and section/material definition line locators beyond common reference fields omitted by root.",
+      "Seed intersections and per-element coordinates are derived from retained root nodes/global coordinates, not separate root output fields."
+    ],
+    "root_pair_different_fields": [
+      "elapsed_seconds"
+    ],
+    "scalar_comparisons": {
+      "boolean": 37,
+      "null": 1962,
+      "numeric": 61574,
+      "string": 3940
+    },
+    "status": "PASS",
+    "tolerance": "none; coordinate binary64 hex equality; other finite numeric values exact"
+  },
+  "controls_limit": "Root27 includes17 prior helper tests and10 graph tests. Actual selected elements are shells; no blanket parser branch, beam/ground-discrete-neighbor, contact or physical verification claim.",
+  "elapsed_seconds": 0.4393681249348447,
+  "independent_controls_replayed": [
+    {
+      "name": "beam_orientation_not_endpoint",
+      "status": "PASS"
+    },
+    {
+      "name": "actual_endpoint_incidence",
+      "status": "PASS"
+    },
+    {
+      "name": "ordered_repeated_vertices_unique_matches",
+      "status": "PASS"
+    },
+    {
+      "name": "coincident_distinct_id_not_edge",
+      "status": "PASS"
+    },
+    {
+      "name": "outside_part_namespace_not_seed",
+      "status": "PASS"
+    },
+    {
+      "name": "seed_part_excluded_from_neighbors",
+      "status": "PASS"
+    },
+    {
+      "name": "no_neighbor_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "ground_discrete_omitted",
+      "status": "PASS"
+    },
+    {
+      "name": "missing_node",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate_node",
+      "status": "PASS"
+    },
+    {
+      "name": "missing_required_card",
+      "status": "PASS"
+    },
+    {
+      "name": "shell_thickness_two_cards",
+      "status": "PASS"
+    },
+    {
+      "name": "missing_shell_continuation",
+      "status": "PASS"
+    },
+    {
+      "name": "column_label_not_identifier",
+      "status": "PASS"
+    },
+    {
+      "name": "existing_output_guard",
+      "status": "PASS"
+    }
+  ],
+  "pins_after": {
+    "../model-member-map/map_members.py": "f63356778c544e4102aef34d9c92a49707315be4db5ae182fcee1cce5557720b",
+    "PROTOCOL.md": "b7bcdf096a31ffca12a5c25f0f34cf2cc3247018502c9d6320a315f90f61d72d",
+    "comparison_code": "787db0403077f275300b01b4ec2057f78f09a985a79ac0506989e0db2de789e7",
+    "independent01.json": "d4f0c4107b2162c540fbb90fd61b1a90d42860cbcf3cd17903f22ba7e46379d7",
+    "map_restraint.py": "4d49ed698f9802a859a364d4f71721d54e1d3511b50bd96f7b02f5ac3bc7b520",
+    "root01.json": "f400538d74607464ea7e03a1692965f58c710c841df3a54833e202685e0bdfef",
+    "root02.json": "179682c5caf5cdfac31c508d88e545a843fb07839bb7150832333790ed9e90e3",
+    "source_119": "2c3c350317f0c06c2aca2e9d9ae1e9b489d4a1c44c9268997e550d35c031d7d7",
+    "source_120": "c49dcb74d8559e0cbfa4302732dd2c1764bf161389be0ee8e8c3d9a3dbc55e59",
+    "source_121": "f831290e6c0375dafc0bbeb684099d342ed8df29ab8560df82b21459c041483d",
+    "verify_restraint.py": "5587e88d786d4e3fa7bfbe21823a54a54c97e289d5d7c90b2d9c72200408028a"
+  },
+  "pins_before": {
+    "../model-member-map/map_members.py": "f63356778c544e4102aef34d9c92a49707315be4db5ae182fcee1cce5557720b",
+    "PROTOCOL.md": "b7bcdf096a31ffca12a5c25f0f34cf2cc3247018502c9d6320a315f90f61d72d",
+    "comparison_code": "787db0403077f275300b01b4ec2057f78f09a985a79ac0506989e0db2de789e7",
+    "independent01.json": "d4f0c4107b2162c540fbb90fd61b1a90d42860cbcf3cd17903f22ba7e46379d7",
+    "map_restraint.py": "4d49ed698f9802a859a364d4f71721d54e1d3511b50bd96f7b02f5ac3bc7b520",
+    "root01.json": "f400538d74607464ea7e03a1692965f58c710c841df3a54833e202685e0bdfef",
+    "root02.json": "179682c5caf5cdfac31c508d88e545a843fb07839bb7150832333790ed9e90e3",
+    "source_119": "2c3c350317f0c06c2aca2e9d9ae1e9b489d4a1c44c9268997e550d35c031d7d7",
+    "source_120": "c49dcb74d8559e0cbfa4302732dd2c1764bf161389be0ee8e8c3d9a3dbc55e59",
+    "source_121": "f831290e6c0375dafc0bbeb684099d342ed8df29ab8560df82b21459c041483d",
+    "verify_restraint.py": "5587e88d786d4e3fa7bfbe21823a54a54c97e289d5d7c90b2d9c72200408028a"
+  },
+  "root_controls_replayed": {
+    "errors": 0,
+    "failures": 0,
+    "run": 27
+  },
+  "status": "PASS"
+}

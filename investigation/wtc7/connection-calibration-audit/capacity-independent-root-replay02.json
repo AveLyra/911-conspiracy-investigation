@@ -1,0 +1,4637 @@
+{
+  "command": [
+    "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "research/sherlock-wtc7-investigation/connection-calibration-audit/verify_capacity.py",
+    "--output",
+    "capacity-independent-root-replay02.json"
+  ],
+  "controls": [
+    {
+      "detail": "Trailing zero precision and integer precision preserved.",
+      "name": "decimal_precision",
+      "status": "PASS"
+    },
+    {
+      "detail": "Integer halfwidth 1/2; one-decimal halfwidth 1/20.",
+      "name": "different_rounding_widths",
+      "status": "PASS"
+    },
+    {
+      "detail": "All four rational vertices independently checked against interval formula.",
+      "name": "positive_quotient_extrema",
+      "status": "PASS"
+    },
+    {
+      "detail": "Closed-endpoint tie is retained, not rejected.",
+      "name": "endpoint_only_intersection",
+      "status": "PASS"
+    },
+    {
+      "detail": "Positive gap cannot be turned into overlap by float tolerance.",
+      "name": "strict_separation",
+      "status": "PASS"
+    },
+    {
+      "detail": "3.75 rounds to3.8 under declared half-up;3.745 rounds to3.7.",
+      "name": "rational_half_up_tie",
+      "status": "PASS"
+    },
+    {
+      "detail": "Four explicit invalid or unsupported input fixtures rejected.",
+      "name": "invalid_inputs_rejected",
+      "status": "PASS"
+    },
+    {
+      "detail": "A point-division mismatch need not contradict the declared input boxes.",
+      "name": "rounding_can_resolve_point_difference",
+      "status": "PASS"
+    },
+    {
+      "detail": "A large incompatible ratio remains incompatible.",
+      "name": "rounding_cannot_resolve_every_difference",
+      "status": "PASS"
+    },
+    {
+      "detail": "Three-element hand solution; no load or count weighting.",
+      "name": "unweighted_stats",
+      "status": "PASS"
+    }
+  ],
+  "pins_after": {
+    "ARITHMETIC-PROTOCOL.md": "32b68c94b0a5c60edcc4e3689f1b742aca1666d086b3bffdad3fff5384524e3b",
+    "PROTOCOL.md": "7bf240b13ff1141ce9d69381d1dcc1ac17cb2c917b4f7e11800f01ba70d28247",
+    "capacity-independent.json": "8a0f3c8bece01776289265d5db5b316032321c7eae70bf7ad8e80d045e4d4b00",
+    "source_pdf": "30addb2699370f89e40bccfdcf4b4a18a7f4fb3bc1c0101bd3fcdec9b892b18f",
+    "verifier_code": "59f3da69a009c98c8fdd1d5e8f6fdef2ff3e3ec1bdd36afa9c22bf155b38b5da"
+  },
+  "pins_before": {
+    "ARITHMETIC-PROTOCOL.md": "32b68c94b0a5c60edcc4e3689f1b742aca1666d086b3bffdad3fff5384524e3b",
+    "PROTOCOL.md": "7bf240b13ff1141ce9d69381d1dcc1ac17cb2c917b4f7e11800f01ba70d28247",
+    "capacity-independent.json": "8a0f3c8bece01776289265d5db5b316032321c7eae70bf7ad8e80d045e4d4b00",
+    "source_pdf": "30addb2699370f89e40bccfdcf4b4a18a7f4fb3bc1c0101bd3fcdec9b892b18f",
+    "verifier_code": "59f3da69a009c98c8fdd1d5e8f6fdef2ff3e3ec1bdd36afa9c22bf155b38b5da"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "result": {
+    "interpretation_limit": "Closed display-rounding boxes are a possibility test only; unknown real rounding, hidden digits, weighting, connection accuracy and physics are not validated. Formula calculations do not impose rounding boxes on engineering parameters.",
+    "point_half_up_mismatch_count": 16,
+    "point_outside_printed_box_count": 16,
+    "rounding_endpoint_only_count": 0,
+    "rounding_incompatible_count": 0,
+    "row_count": 55,
+    "scope": "All 55 rows and 9 summaries. Exact rational arithmetic; all displayed loads treated as positive. Both printed-row-ratio and displayed-load-quotient summaries are unweighted.",
+    "source_arithmetic": [
+      {
+        "computed": {
+          "decimal_approx": 75.0,
+          "fraction": "75"
+        },
+        "half_up_equals_printed": true,
+        "id": "A325_stress_adjustment",
+        "nearest_half_up_at_printed_precision": {
+          "decimal_approx": 75.0,
+          "fraction": "75"
+        },
+        "operands": [
+          "60",
+          "0.8"
+        ],
+        "operation": "divide",
+        "physical_page": 531,
+        "printed_minus_computed": {
+          "decimal_approx": 0.0,
+          "fraction": "0"
+        },
+        "printed_result": "75",
+        "unit": "ksi"
+      },
+      {
+        "computed": {
+          "decimal_approx": 93.75,
+          "fraction": "375/4"
+        },
+        "half_up_equals_printed": true,
+        "id": "A490_stress_adjustment",
+        "nearest_half_up_at_printed_precision": {
+          "decimal_approx": 93.75,
+          "fraction": "375/4"
+        },
+        "operands": [
+          "75",
+          "0.8"
+        ],
+        "operation": "divide",
+        "physical_page": 531,
+        "printed_minus_computed": {
+          "decimal_approx": 0.0,
+          "fraction": "0"
+        },
+        "printed_result": "93.75",
+        "unit": "ksi"
+      },
+      {
+        "computed": {
+          "decimal_approx": 45.075,
+          "fraction": "1803/40"
+        },
+        "half_up_equals_printed": true,
+        "id": "A325_bolt_shear",
+        "nearest_half_up_at_printed_precision": {
+          "decimal_approx": 45.0,
+          "fraction": "45"
+        },
+        "operands": [
+          "0.601",
+          "75"
+        ],
+        "operation": "multiply",
+        "physical_page": 531,
+        "printed_minus_computed": {
+          "decimal_approx": -0.075,
+          "fraction": "-3/40"
+        },
+        "printed_result": "45",
+        "unit": "kip"
+      },
+      {
+        "computed": {
+          "decimal_approx": 19.448,
+          "fraction": "2431/125"
+        },
+        "half_up_equals_printed": false,
+        "id": "shear_stud_formula",
+        "nearest_half_up_at_printed_precision": {
+          "decimal_approx": 19.4,
+          "fraction": "97/5"
+        },
+        "operands": [
+          "0.68",
+          "1.0",
+          "1.0",
+          "0.44",
+          "65"
+        ],
+        "operation": "multiply",
+        "physical_page": 534,
+        "printed_minus_computed": {
+          "decimal_approx": 0.052,
+          "fraction": "13/250"
+        },
+        "printed_result": "19.5",
+        "unit": "kip"
+      },
+      {
+        "computed": {
+          "decimal_approx": 19.35,
+          "fraction": "387/20"
+        },
+        "half_up_equals_printed": true,
+        "id": "strong_weak_stud_average",
+        "nearest_half_up_at_printed_precision": {
+          "decimal_approx": 19.4,
+          "fraction": "97/5"
+        },
+        "operands": [
+          "21.5",
+          "17.2"
+        ],
+        "operation": "mean",
+        "physical_page": 535,
+        "printed_minus_computed": {
+          "decimal_approx": 0.05,
+          "fraction": "1/20"
+        },
+        "printed_result": "19.4",
+        "unit": "kip"
+      }
+    ],
+    "tables": [
+      {
+        "point_half_up_mismatch_rows": [
+          2,
+          8,
+          9,
+          12,
+          14,
+          15,
+          16,
+          18,
+          22
+        ],
+        "point_outside_printed_box_rows": [
+          2,
+          8,
+          9,
+          12,
+          14,
+          15,
+          16,
+          18,
+          22
+        ],
+        "rounding_endpoint_only_rows": [],
+        "rounding_incompatible_rows": [],
+        "row_count": 22,
+        "rows": [
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 68.5,
+                "fraction": "137/2"
+              },
+              {
+                "decimal_approx": 69.5,
+                "fraction": "139/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 216.5,
+                "fraction": "433/2"
+              },
+              {
+                "decimal_approx": 217.5,
+                "fraction": "435/2"
+              }
+            ],
+            "member": "W24x62",
+            "physical_page": 536,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.1,
+              "fraction": "31/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.1449275362318843,
+              "fraction": "217/69"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.115107913669065,
+                "fraction": "433/139"
+              },
+              {
+                "decimal_approx": 3.1751824817518246,
+                "fraction": "435/137"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.04492753623188406,
+              "fraction": "-31/690"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.05,
+                "fraction": "61/20"
+              },
+              {
+                "decimal_approx": 3.15,
+                "fraction": "63/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.115107913669065,
+                "fraction": "433/139"
+              },
+              {
+                "decimal_approx": 3.15,
+                "fraction": "63/20"
+              }
+            ],
+            "row": 1
+          },
+          {
+            "connection": "K4",
+            "design_box": [
+              {
+                "decimal_approx": 68.5,
+                "fraction": "137/2"
+              },
+              {
+                "decimal_approx": 69.5,
+                "fraction": "139/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 189.5,
+                "fraction": "379/2"
+              },
+              {
+                "decimal_approx": 190.5,
+                "fraction": "381/2"
+              }
+            ],
+            "member": "W24x62",
+            "physical_page": 536,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.8,
+              "fraction": "14/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.753623188405797,
+              "fraction": "190/69"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.726618705035971,
+                "fraction": "379/139"
+              },
+              {
+                "decimal_approx": 2.781021897810219,
+                "fraction": "381/137"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.0536231884057971,
+              "fraction": "-37/690"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.65,
+                "fraction": "53/20"
+              },
+              {
+                "decimal_approx": 2.75,
+                "fraction": "11/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.726618705035971,
+                "fraction": "379/139"
+              },
+              {
+                "decimal_approx": 2.75,
+                "fraction": "11/4"
+              }
+            ],
+            "row": 2
+          },
+          {
+            "connection": "F4",
+            "design_box": [
+              {
+                "decimal_approx": 73.35,
+                "fraction": "1467/20"
+              },
+              {
+                "decimal_approx": 73.45,
+                "fraction": "1469/20"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 165.5,
+                "fraction": "331/2"
+              },
+              {
+                "decimal_approx": 166.5,
+                "fraction": "333/2"
+              }
+            ],
+            "member": "W16x77",
+            "physical_page": 536,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.3,
+              "fraction": "23/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.2615803814713895,
+              "fraction": "830/367"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.253233492171545,
+                "fraction": "3310/1469"
+              },
+              {
+                "decimal_approx": 2.2699386503067487,
+                "fraction": "370/163"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.03841961852861035,
+              "fraction": "141/3670"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.25,
+                "fraction": "9/4"
+              },
+              {
+                "decimal_approx": 2.35,
+                "fraction": "47/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.253233492171545,
+                "fraction": "3310/1469"
+              },
+              {
+                "decimal_approx": 2.2699386503067487,
+                "fraction": "370/163"
+              }
+            ],
+            "row": 3
+          },
+          {
+            "connection": "F4",
+            "design_box": [
+              {
+                "decimal_approx": 22.5,
+                "fraction": "45/2"
+              },
+              {
+                "decimal_approx": 23.5,
+                "fraction": "47/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 122.5,
+                "fraction": "245/2"
+              },
+              {
+                "decimal_approx": 123.5,
+                "fraction": "247/2"
+              }
+            ],
+            "member": "W16x26",
+            "physical_page": 536,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 5.3,
+              "fraction": "53/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 5.3478260869565215,
+              "fraction": "123/23"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 5.212765957446808,
+                "fraction": "245/47"
+              },
+              {
+                "decimal_approx": 5.488888888888889,
+                "fraction": "247/45"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.04782608695652174,
+              "fraction": "-11/230"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 5.25,
+                "fraction": "21/4"
+              },
+              {
+                "decimal_approx": 5.35,
+                "fraction": "107/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 5.25,
+                "fraction": "21/4"
+              },
+              {
+                "decimal_approx": 5.35,
+                "fraction": "107/20"
+              }
+            ],
+            "row": 4
+          },
+          {
+            "connection": "F4",
+            "design_box": [
+              {
+                "decimal_approx": 27.5,
+                "fraction": "55/2"
+              },
+              {
+                "decimal_approx": 28.5,
+                "fraction": "57/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 134.5,
+                "fraction": "269/2"
+              },
+              {
+                "decimal_approx": 135.5,
+                "fraction": "271/2"
+              }
+            ],
+            "member": "W16x31",
+            "physical_page": 536,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 4.8,
+              "fraction": "24/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 4.821428571428571,
+              "fraction": "135/28"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 4.719298245614035,
+                "fraction": "269/57"
+              },
+              {
+                "decimal_approx": 4.927272727272728,
+                "fraction": "271/55"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.02142857142857143,
+              "fraction": "-3/140"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 4.75,
+                "fraction": "19/4"
+              },
+              {
+                "decimal_approx": 4.85,
+                "fraction": "97/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 4.75,
+                "fraction": "19/4"
+              },
+              {
+                "decimal_approx": 4.85,
+                "fraction": "97/20"
+              }
+            ],
+            "row": 5
+          },
+          {
+            "connection": "F5",
+            "design_box": [
+              {
+                "decimal_approx": 40.5,
+                "fraction": "81/2"
+              },
+              {
+                "decimal_approx": 41.5,
+                "fraction": "83/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 184.5,
+                "fraction": "369/2"
+              },
+              {
+                "decimal_approx": 185.5,
+                "fraction": "371/2"
+              }
+            ],
+            "member": "W18x40",
+            "physical_page": 536,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 4.5,
+              "fraction": "9/2"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 4.512195121951219,
+              "fraction": "185/41"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 4.445783132530121,
+                "fraction": "369/83"
+              },
+              {
+                "decimal_approx": 4.580246913580247,
+                "fraction": "371/81"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.012195121951219513,
+              "fraction": "-1/82"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 4.45,
+                "fraction": "89/20"
+              },
+              {
+                "decimal_approx": 4.55,
+                "fraction": "91/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 4.45,
+                "fraction": "89/20"
+              },
+              {
+                "decimal_approx": 4.55,
+                "fraction": "91/20"
+              }
+            ],
+            "row": 6
+          },
+          {
+            "connection": "F6",
+            "design_box": [
+              {
+                "decimal_approx": 39.5,
+                "fraction": "79/2"
+              },
+              {
+                "decimal_approx": 40.5,
+                "fraction": "81/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 228.5,
+                "fraction": "457/2"
+              },
+              {
+                "decimal_approx": 229.5,
+                "fraction": "459/2"
+              }
+            ],
+            "member": "W21x44",
+            "physical_page": 536,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 5.7,
+              "fraction": "57/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 5.725,
+              "fraction": "229/40"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 5.6419753086419755,
+                "fraction": "457/81"
+              },
+              {
+                "decimal_approx": 5.810126582278481,
+                "fraction": "459/79"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.025,
+              "fraction": "-1/40"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 5.65,
+                "fraction": "113/20"
+              },
+              {
+                "decimal_approx": 5.75,
+                "fraction": "23/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 5.65,
+                "fraction": "113/20"
+              },
+              {
+                "decimal_approx": 5.75,
+                "fraction": "23/4"
+              }
+            ],
+            "row": 7
+          },
+          {
+            "connection": "F6",
+            "design_box": [
+              {
+                "decimal_approx": 45.5,
+                "fraction": "91/2"
+              },
+              {
+                "decimal_approx": 46.5,
+                "fraction": "93/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 228.5,
+                "fraction": "457/2"
+              },
+              {
+                "decimal_approx": 229.5,
+                "fraction": "459/2"
+              }
+            ],
+            "member": "W24x55",
+            "physical_page": 536,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 5.0,
+              "fraction": "5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 4.978260869565218,
+              "fraction": "229/46"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 4.913978494623656,
+                "fraction": "457/93"
+              },
+              {
+                "decimal_approx": 5.043956043956044,
+                "fraction": "459/91"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.0782608695652174,
+              "fraction": "-9/115"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 4.85,
+                "fraction": "97/20"
+              },
+              {
+                "decimal_approx": 4.95,
+                "fraction": "99/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 4.913978494623656,
+                "fraction": "457/93"
+              },
+              {
+                "decimal_approx": 4.95,
+                "fraction": "99/20"
+              }
+            ],
+            "row": 8
+          },
+          {
+            "connection": "F3",
+            "design_box": [
+              {
+                "decimal_approx": 14.5,
+                "fraction": "29/2"
+              },
+              {
+                "decimal_approx": 15.5,
+                "fraction": "31/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 90.5,
+                "fraction": "181/2"
+              },
+              {
+                "decimal_approx": 91.5,
+                "fraction": "183/2"
+              }
+            ],
+            "member": "W12x26",
+            "physical_page": 536,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 6.1,
+              "fraction": "61/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 6.066666666666666,
+              "fraction": "91/15"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 5.838709677419355,
+                "fraction": "181/31"
+              },
+              {
+                "decimal_approx": 6.310344827586207,
+                "fraction": "183/29"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.06666666666666667,
+              "fraction": "-1/15"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 5.95,
+                "fraction": "119/20"
+              },
+              {
+                "decimal_approx": 6.05,
+                "fraction": "121/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 5.95,
+                "fraction": "119/20"
+              },
+              {
+                "decimal_approx": 6.05,
+                "fraction": "121/20"
+              }
+            ],
+            "row": 9
+          },
+          {
+            "connection": "H2",
+            "design_box": [
+              {
+                "decimal_approx": 14.5,
+                "fraction": "29/2"
+              },
+              {
+                "decimal_approx": 15.5,
+                "fraction": "31/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 99.5,
+                "fraction": "199/2"
+              },
+              {
+                "decimal_approx": 100.5,
+                "fraction": "201/2"
+              }
+            ],
+            "member": "W12x26",
+            "physical_page": 536,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 6.7,
+              "fraction": "67/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 6.666666666666667,
+              "fraction": "20/3"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 6.419354838709677,
+                "fraction": "199/31"
+              },
+              {
+                "decimal_approx": 6.931034482758621,
+                "fraction": "201/29"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.03333333333333333,
+              "fraction": "1/30"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 6.65,
+                "fraction": "133/20"
+              },
+              {
+                "decimal_approx": 6.75,
+                "fraction": "27/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 6.65,
+                "fraction": "133/20"
+              },
+              {
+                "decimal_approx": 6.75,
+                "fraction": "27/4"
+              }
+            ],
+            "row": 10
+          },
+          {
+            "connection": "F5",
+            "design_box": [
+              {
+                "decimal_approx": 40.5,
+                "fraction": "81/2"
+              },
+              {
+                "decimal_approx": 41.5,
+                "fraction": "83/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 199.5,
+                "fraction": "399/2"
+              },
+              {
+                "decimal_approx": 200.5,
+                "fraction": "401/2"
+              }
+            ],
+            "member": "W21x44",
+            "physical_page": 536,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 4.9,
+              "fraction": "49/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 4.878048780487805,
+              "fraction": "200/41"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 4.807228915662651,
+                "fraction": "399/83"
+              },
+              {
+                "decimal_approx": 4.950617283950617,
+                "fraction": "401/81"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.02195121951219512,
+              "fraction": "9/410"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 4.85,
+                "fraction": "97/20"
+              },
+              {
+                "decimal_approx": 4.95,
+                "fraction": "99/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 4.85,
+                "fraction": "97/20"
+              },
+              {
+                "decimal_approx": 4.95,
+                "fraction": "99/20"
+              }
+            ],
+            "row": 11
+          },
+          {
+            "connection": "F6",
+            "design_box": [
+              {
+                "decimal_approx": 47.5,
+                "fraction": "95/2"
+              },
+              {
+                "decimal_approx": 48.5,
+                "fraction": "97/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 228.5,
+                "fraction": "457/2"
+              },
+              {
+                "decimal_approx": 229.5,
+                "fraction": "459/2"
+              }
+            ],
+            "member": "W24x55",
+            "physical_page": 536,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 4.8,
+              "fraction": "24/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 4.770833333333333,
+              "fraction": "229/48"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 4.711340206185567,
+                "fraction": "457/97"
+              },
+              {
+                "decimal_approx": 4.831578947368421,
+                "fraction": "459/95"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.07083333333333333,
+              "fraction": "-17/240"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 4.65,
+                "fraction": "93/20"
+              },
+              {
+                "decimal_approx": 4.75,
+                "fraction": "19/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 4.711340206185567,
+                "fraction": "457/97"
+              },
+              {
+                "decimal_approx": 4.75,
+                "fraction": "19/4"
+              }
+            ],
+            "row": 12
+          },
+          {
+            "connection": "F7",
+            "design_box": [
+              {
+                "decimal_approx": 47.5,
+                "fraction": "95/2"
+              },
+              {
+                "decimal_approx": 48.5,
+                "fraction": "97/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 308.5,
+                "fraction": "617/2"
+              },
+              {
+                "decimal_approx": 309.5,
+                "fraction": "619/2"
+              }
+            ],
+            "member": "W24x55",
+            "physical_page": 536,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 6.4,
+              "fraction": "32/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 6.4375,
+              "fraction": "103/16"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 6.360824742268041,
+                "fraction": "617/97"
+              },
+              {
+                "decimal_approx": 6.515789473684211,
+                "fraction": "619/95"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.0375,
+              "fraction": "-3/80"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 6.35,
+                "fraction": "127/20"
+              },
+              {
+                "decimal_approx": 6.45,
+                "fraction": "129/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 6.360824742268041,
+                "fraction": "617/97"
+              },
+              {
+                "decimal_approx": 6.45,
+                "fraction": "129/20"
+              }
+            ],
+            "row": 13
+          },
+          {
+            "connection": "H5",
+            "design_box": [
+              {
+                "decimal_approx": 108.5,
+                "fraction": "217/2"
+              },
+              {
+                "decimal_approx": 109.5,
+                "fraction": "219/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 266.5,
+                "fraction": "533/2"
+              },
+              {
+                "decimal_approx": 267.5,
+                "fraction": "535/2"
+              }
+            ],
+            "member": "W30x116",
+            "physical_page": 536,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.4,
+              "fraction": "12/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.44954128440367,
+              "fraction": "267/109"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.4337899543378994,
+                "fraction": "533/219"
+              },
+              {
+                "decimal_approx": 2.4654377880184333,
+                "fraction": "535/217"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.05045871559633028,
+              "fraction": "11/218"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.45,
+                "fraction": "49/20"
+              },
+              {
+                "decimal_approx": 2.55,
+                "fraction": "51/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.45,
+                "fraction": "49/20"
+              },
+              {
+                "decimal_approx": 2.4654377880184333,
+                "fraction": "535/217"
+              }
+            ],
+            "row": 14
+          },
+          {
+            "connection": "F4",
+            "design_box": [
+              {
+                "decimal_approx": 25.5,
+                "fraction": "51/2"
+              },
+              {
+                "decimal_approx": 26.5,
+                "fraction": "53/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 134.5,
+                "fraction": "269/2"
+              },
+              {
+                "decimal_approx": 135.5,
+                "fraction": "271/2"
+              }
+            ],
+            "member": "W16x31",
+            "physical_page": 536,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 5.2,
+              "fraction": "26/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 5.1923076923076925,
+              "fraction": "135/26"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 5.0754716981132075,
+                "fraction": "269/53"
+              },
+              {
+                "decimal_approx": 5.313725490196078,
+                "fraction": "271/51"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.09230769230769231,
+              "fraction": "-6/65"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 5.05,
+                "fraction": "101/20"
+              },
+              {
+                "decimal_approx": 5.15,
+                "fraction": "103/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 5.0754716981132075,
+                "fraction": "269/53"
+              },
+              {
+                "decimal_approx": 5.15,
+                "fraction": "103/20"
+              }
+            ],
+            "row": 15
+          },
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 72.5,
+                "fraction": "145/2"
+              },
+              {
+                "decimal_approx": 73.5,
+                "fraction": "147/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 222.5,
+                "fraction": "445/2"
+              },
+              {
+                "decimal_approx": 223.5,
+                "fraction": "447/2"
+              }
+            ],
+            "member": "W24x76",
+            "physical_page": 536,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.1,
+              "fraction": "31/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.0547945205479454,
+              "fraction": "223/73"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.0272108843537415,
+                "fraction": "445/147"
+              },
+              {
+                "decimal_approx": 3.0827586206896553,
+                "fraction": "447/145"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.0547945205479452,
+              "fraction": "-4/73"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.95,
+                "fraction": "59/20"
+              },
+              {
+                "decimal_approx": 3.05,
+                "fraction": "61/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.0272108843537415,
+                "fraction": "445/147"
+              },
+              {
+                "decimal_approx": 3.05,
+                "fraction": "61/20"
+              }
+            ],
+            "row": 16
+          },
+          {
+            "connection": "F4",
+            "design_box": [
+              {
+                "decimal_approx": 24.5,
+                "fraction": "49/2"
+              },
+              {
+                "decimal_approx": 25.5,
+                "fraction": "51/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 122.5,
+                "fraction": "245/2"
+              },
+              {
+                "decimal_approx": 123.5,
+                "fraction": "247/2"
+              }
+            ],
+            "member": "W16x26",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 4.9,
+              "fraction": "49/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 4.92,
+              "fraction": "123/25"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 4.803921568627451,
+                "fraction": "245/51"
+              },
+              {
+                "decimal_approx": 5.040816326530612,
+                "fraction": "247/49"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.02,
+              "fraction": "-1/50"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 4.85,
+                "fraction": "97/20"
+              },
+              {
+                "decimal_approx": 4.95,
+                "fraction": "99/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 4.85,
+                "fraction": "97/20"
+              },
+              {
+                "decimal_approx": 4.95,
+                "fraction": "99/20"
+              }
+            ],
+            "row": 17
+          },
+          {
+            "connection": "F4",
+            "design_box": [
+              {
+                "decimal_approx": 27.5,
+                "fraction": "55/2"
+              },
+              {
+                "decimal_approx": 28.5,
+                "fraction": "57/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 134.5,
+                "fraction": "269/2"
+              },
+              {
+                "decimal_approx": 135.5,
+                "fraction": "271/2"
+              }
+            ],
+            "member": "W16X31",
+            "physical_page": 537,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 4.8,
+              "fraction": "24/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 4.821428571428571,
+              "fraction": "135/28"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 4.719298245614035,
+                "fraction": "269/57"
+              },
+              {
+                "decimal_approx": 4.927272727272728,
+                "fraction": "271/55"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.07857142857142857,
+              "fraction": "11/140"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 4.85,
+                "fraction": "97/20"
+              },
+              {
+                "decimal_approx": 4.95,
+                "fraction": "99/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 4.85,
+                "fraction": "97/20"
+              },
+              {
+                "decimal_approx": 4.927272727272728,
+                "fraction": "271/55"
+              }
+            ],
+            "row": 18
+          },
+          {
+            "connection": "H2",
+            "design_box": [
+              {
+                "decimal_approx": 35.5,
+                "fraction": "71/2"
+              },
+              {
+                "decimal_approx": 36.5,
+                "fraction": "73/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 117.5,
+                "fraction": "235/2"
+              },
+              {
+                "decimal_approx": 118.5,
+                "fraction": "237/2"
+              }
+            ],
+            "member": "W14x22",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.3,
+              "fraction": "33/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.2777777777777777,
+              "fraction": "59/18"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.219178082191781,
+                "fraction": "235/73"
+              },
+              {
+                "decimal_approx": 3.3380281690140845,
+                "fraction": "237/71"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.022222222222222223,
+              "fraction": "1/45"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.25,
+                "fraction": "13/4"
+              },
+              {
+                "decimal_approx": 3.35,
+                "fraction": "67/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.25,
+                "fraction": "13/4"
+              },
+              {
+                "decimal_approx": 3.3380281690140845,
+                "fraction": "237/71"
+              }
+            ],
+            "row": 19
+          },
+          {
+            "connection": "H5",
+            "design_box": [
+              {
+                "decimal_approx": 99.5,
+                "fraction": "199/2"
+              },
+              {
+                "decimal_approx": 100.5,
+                "fraction": "201/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 266.5,
+                "fraction": "533/2"
+              },
+              {
+                "decimal_approx": 267.5,
+                "fraction": "535/2"
+              }
+            ],
+            "member": "W30X99",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.7,
+              "fraction": "27/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.67,
+              "fraction": "267/100"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.6517412935323383,
+                "fraction": "533/201"
+              },
+              {
+                "decimal_approx": 2.6884422110552766,
+                "fraction": "535/199"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.03,
+              "fraction": "3/100"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.65,
+                "fraction": "53/20"
+              },
+              {
+                "decimal_approx": 2.75,
+                "fraction": "11/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.6517412935323383,
+                "fraction": "533/201"
+              },
+              {
+                "decimal_approx": 2.6884422110552766,
+                "fraction": "535/199"
+              }
+            ],
+            "row": 20
+          },
+          {
+            "connection": "F5",
+            "design_box": [
+              {
+                "decimal_approx": 51.5,
+                "fraction": "103/2"
+              },
+              {
+                "decimal_approx": 52.5,
+                "fraction": "105/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 175.5,
+                "fraction": "351/2"
+              },
+              {
+                "decimal_approx": 176.5,
+                "fraction": "353/2"
+              }
+            ],
+            "member": "W18x35",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.4,
+              "fraction": "17/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.3846153846153846,
+              "fraction": "44/13"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.342857142857143,
+                "fraction": "117/35"
+              },
+              {
+                "decimal_approx": 3.4271844660194173,
+                "fraction": "353/103"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.015384615384615385,
+              "fraction": "1/65"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.35,
+                "fraction": "67/20"
+              },
+              {
+                "decimal_approx": 3.45,
+                "fraction": "69/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.35,
+                "fraction": "67/20"
+              },
+              {
+                "decimal_approx": 3.4271844660194173,
+                "fraction": "353/103"
+              }
+            ],
+            "row": 21
+          },
+          {
+            "connection": "H2",
+            "design_box": [
+              {
+                "decimal_approx": 22.5,
+                "fraction": "45/2"
+              },
+              {
+                "decimal_approx": 23.5,
+                "fraction": "47/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 117.5,
+                "fraction": "235/2"
+              },
+              {
+                "decimal_approx": 118.5,
+                "fraction": "237/2"
+              }
+            ],
+            "member": "W12X19",
+            "physical_page": 537,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 5.1,
+              "fraction": "51/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 5.130434782608695,
+              "fraction": "118/23"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 5.0,
+                "fraction": "5"
+              },
+              {
+                "decimal_approx": 5.266666666666667,
+                "fraction": "79/15"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.13043478260869565,
+              "fraction": "-3/23"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 4.95,
+                "fraction": "99/20"
+              },
+              {
+                "decimal_approx": 5.05,
+                "fraction": "101/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 5.0,
+                "fraction": "5"
+              },
+              {
+                "decimal_approx": 5.05,
+                "fraction": "101/20"
+              }
+            ],
+            "row": 22
+          }
+        ],
+        "table": "11-2",
+        "unweighted_summary": {
+          "displayed_row_ratios": {
+            "average": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 4.4,
+                "fraction": "22/5"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.0,
+                "fraction": "0"
+              },
+              "printed_summary": "4.4",
+              "value": {
+                "decimal_approx": 4.4,
+                "fraction": "22/5"
+              }
+            },
+            "maximum": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 6.7,
+                "fraction": "67/10"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.0,
+                "fraction": "0"
+              },
+              "printed_summary": "6.7",
+              "value": {
+                "decimal_approx": 6.7,
+                "fraction": "67/10"
+              }
+            },
+            "minimum": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 2.3,
+                "fraction": "23/10"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.0,
+                "fraction": "0"
+              },
+              "printed_summary": "2.3",
+              "value": {
+                "decimal_approx": 2.3,
+                "fraction": "23/10"
+              }
+            }
+          },
+          "quotients_from_displayed_loads": {
+            "average": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 4.4,
+                "fraction": "22/5"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": -0.02115714622067314,
+                "fraction": "-104976184857517/4961736510330600"
+              },
+              "printed_summary": "4.4",
+              "value": {
+                "decimal_approx": 4.421157146220673,
+                "fraction": "21936616830312157/4961736510330600"
+              }
+            },
+            "maximum": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 6.7,
+                "fraction": "67/10"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.03333333333333333,
+                "fraction": "1/30"
+              },
+              "printed_summary": "6.7",
+              "value": {
+                "decimal_approx": 6.666666666666667,
+                "fraction": "20/3"
+              }
+            },
+            "minimum": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 2.3,
+                "fraction": "23/10"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.03841961852861035,
+                "fraction": "141/3670"
+              },
+              "printed_summary": "2.3",
+              "value": {
+                "decimal_approx": 2.2615803814713895,
+                "fraction": "830/367"
+              }
+            }
+          }
+        }
+      },
+      {
+        "point_half_up_mismatch_rows": [
+          1,
+          2,
+          9,
+          11
+        ],
+        "point_outside_printed_box_rows": [
+          1,
+          2,
+          9,
+          11
+        ],
+        "rounding_endpoint_only_rows": [],
+        "rounding_incompatible_rows": [],
+        "row_count": 13,
+        "rows": [
+          {
+            "connection": "F3",
+            "design_box": [
+              {
+                "decimal_approx": 15.5,
+                "fraction": "31/2"
+              },
+              {
+                "decimal_approx": 16.5,
+                "fraction": "33/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 78.5,
+                "fraction": "157/2"
+              },
+              {
+                "decimal_approx": 79.5,
+                "fraction": "159/2"
+              }
+            ],
+            "member": "W12X14",
+            "physical_page": 537,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 4.9,
+              "fraction": "49/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 4.9375,
+              "fraction": "79/16"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 4.757575757575758,
+                "fraction": "157/33"
+              },
+              {
+                "decimal_approx": 5.129032258064516,
+                "fraction": "159/31"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.1625,
+              "fraction": "13/80"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 5.05,
+                "fraction": "101/20"
+              },
+              {
+                "decimal_approx": 5.15,
+                "fraction": "103/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 5.05,
+                "fraction": "101/20"
+              },
+              {
+                "decimal_approx": 5.129032258064516,
+                "fraction": "159/31"
+              }
+            ],
+            "row": 1
+          },
+          {
+            "connection": "K3",
+            "design_box": [
+              {
+                "decimal_approx": 21.5,
+                "fraction": "43/2"
+              },
+              {
+                "decimal_approx": 22.5,
+                "fraction": "45/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 80.5,
+                "fraction": "161/2"
+              },
+              {
+                "decimal_approx": 81.5,
+                "fraction": "163/2"
+              }
+            ],
+            "member": "W12X19",
+            "physical_page": 537,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.7,
+              "fraction": "37/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.6818181818181817,
+              "fraction": "81/22"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.577777777777778,
+                "fraction": "161/45"
+              },
+              {
+                "decimal_approx": 3.7906976744186047,
+                "fraction": "163/43"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.08181818181818182,
+              "fraction": "-9/110"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.55,
+                "fraction": "71/20"
+              },
+              {
+                "decimal_approx": 3.65,
+                "fraction": "73/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.577777777777778,
+                "fraction": "161/45"
+              },
+              {
+                "decimal_approx": 3.65,
+                "fraction": "73/20"
+              }
+            ],
+            "row": 2
+          },
+          {
+            "connection": "K3",
+            "design_box": [
+              {
+                "decimal_approx": 39.5,
+                "fraction": "79/2"
+              },
+              {
+                "decimal_approx": 40.5,
+                "fraction": "81/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 86.5,
+                "fraction": "173/2"
+              },
+              {
+                "decimal_approx": 87.5,
+                "fraction": "175/2"
+              }
+            ],
+            "member": "W16x26",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.2,
+              "fraction": "11/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.175,
+              "fraction": "87/40"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.1358024691358026,
+                "fraction": "173/81"
+              },
+              {
+                "decimal_approx": 2.2151898734177213,
+                "fraction": "175/79"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.025,
+              "fraction": "1/40"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.15,
+                "fraction": "43/20"
+              },
+              {
+                "decimal_approx": 2.25,
+                "fraction": "9/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.15,
+                "fraction": "43/20"
+              },
+              {
+                "decimal_approx": 2.2151898734177213,
+                "fraction": "175/79"
+              }
+            ],
+            "row": 3
+          },
+          {
+            "connection": "K3",
+            "design_box": [
+              {
+                "decimal_approx": 49.5,
+                "fraction": "99/2"
+              },
+              {
+                "decimal_approx": 50.5,
+                "fraction": "101/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 94.5,
+                "fraction": "189/2"
+              },
+              {
+                "decimal_approx": 95.5,
+                "fraction": "191/2"
+              }
+            ],
+            "member": "W16x31",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 1.9,
+              "fraction": "19/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 1.9,
+              "fraction": "19/10"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 1.8712871287128714,
+                "fraction": "189/101"
+              },
+              {
+                "decimal_approx": 1.9292929292929293,
+                "fraction": "191/99"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.0,
+              "fraction": "0"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 1.85,
+                "fraction": "37/20"
+              },
+              {
+                "decimal_approx": 1.95,
+                "fraction": "39/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 1.8712871287128714,
+                "fraction": "189/101"
+              },
+              {
+                "decimal_approx": 1.9292929292929293,
+                "fraction": "191/99"
+              }
+            ],
+            "row": 4
+          },
+          {
+            "connection": "H3",
+            "design_box": [
+              {
+                "decimal_approx": 59.5,
+                "fraction": "119/2"
+              },
+              {
+                "decimal_approx": 60.5,
+                "fraction": "121/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 167.5,
+                "fraction": "335/2"
+              },
+              {
+                "decimal_approx": 168.5,
+                "fraction": "337/2"
+              }
+            ],
+            "member": "W18x35",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.8,
+              "fraction": "14/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.8,
+              "fraction": "14/5"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.768595041322314,
+                "fraction": "335/121"
+              },
+              {
+                "decimal_approx": 2.831932773109244,
+                "fraction": "337/119"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.0,
+              "fraction": "0"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.75,
+                "fraction": "11/4"
+              },
+              {
+                "decimal_approx": 2.85,
+                "fraction": "57/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.768595041322314,
+                "fraction": "335/121"
+              },
+              {
+                "decimal_approx": 2.831932773109244,
+                "fraction": "337/119"
+              }
+            ],
+            "row": 5
+          },
+          {
+            "connection": "F4",
+            "design_box": [
+              {
+                "decimal_approx": 35.5,
+                "fraction": "71/2"
+              },
+              {
+                "decimal_approx": 36.5,
+                "fraction": "73/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 134.5,
+                "fraction": "269/2"
+              },
+              {
+                "decimal_approx": 135.5,
+                "fraction": "271/2"
+              }
+            ],
+            "member": "W16x31",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.8,
+              "fraction": "19/5"
+            },
+            "point_on_printed_box_endpoint": true,
+            "point_quotient": {
+              "decimal_approx": 3.75,
+              "fraction": "15/4"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.684931506849315,
+                "fraction": "269/73"
+              },
+              {
+                "decimal_approx": 3.816901408450704,
+                "fraction": "271/71"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.05,
+              "fraction": "1/20"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.75,
+                "fraction": "15/4"
+              },
+              {
+                "decimal_approx": 3.85,
+                "fraction": "77/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.75,
+                "fraction": "15/4"
+              },
+              {
+                "decimal_approx": 3.816901408450704,
+                "fraction": "271/71"
+              }
+            ],
+            "row": 6
+          },
+          {
+            "connection": "K4",
+            "design_box": [
+              {
+                "decimal_approx": 49.5,
+                "fraction": "99/2"
+              },
+              {
+                "decimal_approx": 50.5,
+                "fraction": "101/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 139.5,
+                "fraction": "279/2"
+              },
+              {
+                "decimal_approx": 140.5,
+                "fraction": "281/2"
+              }
+            ],
+            "member": "W18x40",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.8,
+              "fraction": "14/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.8,
+              "fraction": "14/5"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.762376237623762,
+                "fraction": "279/101"
+              },
+              {
+                "decimal_approx": 2.8383838383838382,
+                "fraction": "281/99"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.0,
+              "fraction": "0"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.75,
+                "fraction": "11/4"
+              },
+              {
+                "decimal_approx": 2.85,
+                "fraction": "57/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.762376237623762,
+                "fraction": "279/101"
+              },
+              {
+                "decimal_approx": 2.8383838383838382,
+                "fraction": "281/99"
+              }
+            ],
+            "row": 7
+          },
+          {
+            "connection": "F5",
+            "design_box": [
+              {
+                "decimal_approx": 41.5,
+                "fraction": "83/2"
+              },
+              {
+                "decimal_approx": 42.5,
+                "fraction": "85/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 175.5,
+                "fraction": "351/2"
+              },
+              {
+                "decimal_approx": 176.5,
+                "fraction": "353/2"
+              }
+            ],
+            "member": "W18x35",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 4.2,
+              "fraction": "21/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 4.190476190476191,
+              "fraction": "88/21"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 4.129411764705883,
+                "fraction": "351/85"
+              },
+              {
+                "decimal_approx": 4.253012048192771,
+                "fraction": "353/83"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.009523809523809525,
+              "fraction": "1/105"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 4.15,
+                "fraction": "83/20"
+              },
+              {
+                "decimal_approx": 4.25,
+                "fraction": "17/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 4.15,
+                "fraction": "83/20"
+              },
+              {
+                "decimal_approx": 4.25,
+                "fraction": "17/4"
+              }
+            ],
+            "row": 8
+          },
+          {
+            "connection": "K3",
+            "design_box": [
+              {
+                "decimal_approx": 32.5,
+                "fraction": "65/2"
+              },
+              {
+                "decimal_approx": 33.5,
+                "fraction": "67/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 103.5,
+                "fraction": "207/2"
+              },
+              {
+                "decimal_approx": 104.5,
+                "fraction": "209/2"
+              }
+            ],
+            "member": "W12X35",
+            "physical_page": 537,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.2,
+              "fraction": "16/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.1515151515151514,
+              "fraction": "104/33"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.08955223880597,
+                "fraction": "207/67"
+              },
+              {
+                "decimal_approx": 3.2153846153846155,
+                "fraction": "209/65"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.051515151515151514,
+              "fraction": "-17/330"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.05,
+                "fraction": "61/20"
+              },
+              {
+                "decimal_approx": 3.15,
+                "fraction": "63/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.08955223880597,
+                "fraction": "207/67"
+              },
+              {
+                "decimal_approx": 3.15,
+                "fraction": "63/20"
+              }
+            ],
+            "row": 9
+          },
+          {
+            "connection": "K3",
+            "design_box": [
+              {
+                "decimal_approx": 25.5,
+                "fraction": "51/2"
+              },
+              {
+                "decimal_approx": 26.5,
+                "fraction": "53/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 67.5,
+                "fraction": "135/2"
+              },
+              {
+                "decimal_approx": 68.5,
+                "fraction": "137/2"
+              }
+            ],
+            "member": "W14x26",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.6,
+              "fraction": "13/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.6153846153846154,
+              "fraction": "34/13"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.547169811320755,
+                "fraction": "135/53"
+              },
+              {
+                "decimal_approx": 2.6862745098039214,
+                "fraction": "137/51"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.015384615384615385,
+              "fraction": "-1/65"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.55,
+                "fraction": "51/20"
+              },
+              {
+                "decimal_approx": 2.65,
+                "fraction": "53/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.55,
+                "fraction": "51/20"
+              },
+              {
+                "decimal_approx": 2.65,
+                "fraction": "53/20"
+              }
+            ],
+            "row": 10
+          },
+          {
+            "connection": "K3",
+            "design_box": [
+              {
+                "decimal_approx": 46.5,
+                "fraction": "93/2"
+              },
+              {
+                "decimal_approx": 47.5,
+                "fraction": "95/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 105.5,
+                "fraction": "211/2"
+              },
+              {
+                "decimal_approx": 106.5,
+                "fraction": "213/2"
+              }
+            ],
+            "member": "W16x40",
+            "physical_page": 537,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.3,
+              "fraction": "23/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.25531914893617,
+              "fraction": "106/47"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.221052631578947,
+                "fraction": "211/95"
+              },
+              {
+                "decimal_approx": 2.2903225806451615,
+                "fraction": "71/31"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.05531914893617021,
+              "fraction": "-13/235"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.15,
+                "fraction": "43/20"
+              },
+              {
+                "decimal_approx": 2.25,
+                "fraction": "9/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.221052631578947,
+                "fraction": "211/95"
+              },
+              {
+                "decimal_approx": 2.25,
+                "fraction": "9/4"
+              }
+            ],
+            "row": 11
+          },
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 68.5,
+                "fraction": "137/2"
+              },
+              {
+                "decimal_approx": 69.5,
+                "fraction": "139/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 216.5,
+                "fraction": "433/2"
+              },
+              {
+                "decimal_approx": 217.5,
+                "fraction": "435/2"
+              }
+            ],
+            "member": "W21x50",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.1,
+              "fraction": "31/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.1449275362318843,
+              "fraction": "217/69"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.115107913669065,
+                "fraction": "433/139"
+              },
+              {
+                "decimal_approx": 3.1751824817518246,
+                "fraction": "435/137"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.04492753623188406,
+              "fraction": "-31/690"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.05,
+                "fraction": "61/20"
+              },
+              {
+                "decimal_approx": 3.15,
+                "fraction": "63/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.115107913669065,
+                "fraction": "433/139"
+              },
+              {
+                "decimal_approx": 3.15,
+                "fraction": "63/20"
+              }
+            ],
+            "row": 12
+          },
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 59.5,
+                "fraction": "119/2"
+              },
+              {
+                "decimal_approx": 60.5,
+                "fraction": "121/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 216.5,
+                "fraction": "433/2"
+              },
+              {
+                "decimal_approx": 217.5,
+                "fraction": "435/2"
+              }
+            ],
+            "member": "W21x44",
+            "physical_page": 537,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.6,
+              "fraction": "18/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.6166666666666667,
+              "fraction": "217/60"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.5785123966942147,
+                "fraction": "433/121"
+              },
+              {
+                "decimal_approx": 3.6554621848739495,
+                "fraction": "435/119"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.016666666666666666,
+              "fraction": "-1/60"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.55,
+                "fraction": "71/20"
+              },
+              {
+                "decimal_approx": 3.65,
+                "fraction": "73/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.5785123966942147,
+                "fraction": "433/121"
+              },
+              {
+                "decimal_approx": 3.65,
+                "fraction": "73/20"
+              }
+            ],
+            "row": 13
+          }
+        ],
+        "table": "11-3",
+        "unweighted_summary": {
+          "displayed_row_ratios": {
+            "average": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 3.2,
+                "fraction": "16/5"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.046153846153846156,
+                "fraction": "3/65"
+              },
+              "printed_summary": "3.2",
+              "value": {
+                "decimal_approx": 3.1538461538461537,
+                "fraction": "41/13"
+              }
+            },
+            "maximum": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 5.1,
+                "fraction": "51/10"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.0,
+                "fraction": "0"
+              },
+              "printed_summary": "5.1",
+              "value": {
+                "decimal_approx": 5.1,
+                "fraction": "51/10"
+              }
+            },
+            "minimum": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 1.9,
+                "fraction": "19/10"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.0,
+                "fraction": "0"
+              },
+              "printed_summary": "1.9",
+              "value": {
+                "decimal_approx": 1.9,
+                "fraction": "19/10"
+              }
+            }
+          },
+          "quotients_from_displayed_loads": {
+            "average": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 3.2,
+                "fraction": "16/5"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.04472250069008768,
+                "fraction": "4575373/102305840"
+              },
+              "printed_summary": "3.2",
+              "value": {
+                "decimal_approx": 3.1552774993099124,
+                "fraction": "64560663/20461168"
+              }
+            },
+            "maximum": {
+              "half_up_equals_printed": false,
+              "inside_closed_printed_box": false,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 4.9,
+                "fraction": "49/10"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.1625,
+                "fraction": "13/80"
+              },
+              "printed_summary": "5.1",
+              "value": {
+                "decimal_approx": 4.9375,
+                "fraction": "79/16"
+              }
+            },
+            "minimum": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 1.9,
+                "fraction": "19/10"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.0,
+                "fraction": "0"
+              },
+              "printed_summary": "1.9",
+              "value": {
+                "decimal_approx": 1.9,
+                "fraction": "19/10"
+              }
+            }
+          }
+        }
+      },
+      {
+        "point_half_up_mismatch_rows": [
+          1,
+          10,
+          11
+        ],
+        "point_outside_printed_box_rows": [
+          1,
+          10,
+          11
+        ],
+        "rounding_endpoint_only_rows": [],
+        "rounding_incompatible_rows": [],
+        "row_count": 20,
+        "rows": [
+          {
+            "connection": "K3",
+            "design_box": [
+              {
+                "decimal_approx": 18.5,
+                "fraction": "37/2"
+              },
+              {
+                "decimal_approx": 19.5,
+                "fraction": "39/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 94.5,
+                "fraction": "189/2"
+              },
+              {
+                "decimal_approx": 95.5,
+                "fraction": "191/2"
+              }
+            ],
+            "member": "W16X31",
+            "physical_page": 538,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 5.0,
+              "fraction": "5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 5.0,
+              "fraction": "5"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 4.846153846153846,
+                "fraction": "63/13"
+              },
+              {
+                "decimal_approx": 5.162162162162162,
+                "fraction": "191/37"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.1,
+              "fraction": "-1/10"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 4.85,
+                "fraction": "97/20"
+              },
+              {
+                "decimal_approx": 4.95,
+                "fraction": "99/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 4.85,
+                "fraction": "97/20"
+              },
+              {
+                "decimal_approx": 4.95,
+                "fraction": "99/20"
+              }
+            ],
+            "row": 1
+          },
+          {
+            "connection": "K4",
+            "design_box": [
+              {
+                "decimal_approx": 78.5,
+                "fraction": "157/2"
+              },
+              {
+                "decimal_approx": 79.5,
+                "fraction": "159/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 189.5,
+                "fraction": "379/2"
+              },
+              {
+                "decimal_approx": 190.5,
+                "fraction": "381/2"
+              }
+            ],
+            "member": "W24x62",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.4,
+              "fraction": "12/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.4050632911392404,
+              "fraction": "190/79"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.3836477987421385,
+                "fraction": "379/159"
+              },
+              {
+                "decimal_approx": 2.426751592356688,
+                "fraction": "381/157"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.005063291139240506,
+              "fraction": "-2/395"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.35,
+                "fraction": "47/20"
+              },
+              {
+                "decimal_approx": 2.45,
+                "fraction": "49/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.3836477987421385,
+                "fraction": "379/159"
+              },
+              {
+                "decimal_approx": 2.426751592356688,
+                "fraction": "381/157"
+              }
+            ],
+            "row": 2
+          },
+          {
+            "connection": "K4",
+            "design_box": [
+              {
+                "decimal_approx": 47.5,
+                "fraction": "95/2"
+              },
+              {
+                "decimal_approx": 48.5,
+                "fraction": "97/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 154.5,
+                "fraction": "309/2"
+              },
+              {
+                "decimal_approx": 155.5,
+                "fraction": "311/2"
+              }
+            ],
+            "member": "W21x44",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.2,
+              "fraction": "16/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.2291666666666665,
+              "fraction": "155/48"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.185567010309278,
+                "fraction": "309/97"
+              },
+              {
+                "decimal_approx": 3.2736842105263158,
+                "fraction": "311/95"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.029166666666666667,
+              "fraction": "-7/240"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.15,
+                "fraction": "63/20"
+              },
+              {
+                "decimal_approx": 3.25,
+                "fraction": "13/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.185567010309278,
+                "fraction": "309/97"
+              },
+              {
+                "decimal_approx": 3.25,
+                "fraction": "13/4"
+              }
+            ],
+            "row": 3
+          },
+          {
+            "connection": "K5",
+            "design_box": [
+              {
+                "decimal_approx": 117.5,
+                "fraction": "235/2"
+              },
+              {
+                "decimal_approx": 118.5,
+                "fraction": "237/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 263.5,
+                "fraction": "527/2"
+              },
+              {
+                "decimal_approx": 264.5,
+                "fraction": "529/2"
+              }
+            ],
+            "member": "W27x94",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.2,
+              "fraction": "11/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.23728813559322,
+              "fraction": "132/59"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.2236286919831225,
+                "fraction": "527/237"
+              },
+              {
+                "decimal_approx": 2.251063829787234,
+                "fraction": "529/235"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.03728813559322034,
+              "fraction": "-11/295"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.15,
+                "fraction": "43/20"
+              },
+              {
+                "decimal_approx": 2.25,
+                "fraction": "9/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.2236286919831225,
+                "fraction": "527/237"
+              },
+              {
+                "decimal_approx": 2.25,
+                "fraction": "9/4"
+              }
+            ],
+            "row": 4
+          },
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 64.5,
+                "fraction": "129/2"
+              },
+              {
+                "decimal_approx": 65.5,
+                "fraction": "131/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 216.5,
+                "fraction": "433/2"
+              },
+              {
+                "decimal_approx": 217.5,
+                "fraction": "435/2"
+              }
+            ],
+            "member": "W21x50",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.3,
+              "fraction": "33/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.3384615384615386,
+              "fraction": "217/65"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.3053435114503817,
+                "fraction": "433/131"
+              },
+              {
+                "decimal_approx": 3.372093023255814,
+                "fraction": "145/43"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.038461538461538464,
+              "fraction": "-1/26"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.25,
+                "fraction": "13/4"
+              },
+              {
+                "decimal_approx": 3.35,
+                "fraction": "67/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.3053435114503817,
+                "fraction": "433/131"
+              },
+              {
+                "decimal_approx": 3.35,
+                "fraction": "67/20"
+              }
+            ],
+            "row": 5
+          },
+          {
+            "connection": "H3",
+            "design_box": [
+              {
+                "decimal_approx": 55.5,
+                "fraction": "111/2"
+              },
+              {
+                "decimal_approx": 56.5,
+                "fraction": "113/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 167.5,
+                "fraction": "335/2"
+              },
+              {
+                "decimal_approx": 168.5,
+                "fraction": "337/2"
+              }
+            ],
+            "member": "W18x40",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.0,
+              "fraction": "3"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.0,
+              "fraction": "3"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.9646017699115044,
+                "fraction": "335/113"
+              },
+              {
+                "decimal_approx": 3.036036036036036,
+                "fraction": "337/111"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.0,
+              "fraction": "0"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.95,
+                "fraction": "59/20"
+              },
+              {
+                "decimal_approx": 3.05,
+                "fraction": "61/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.9646017699115044,
+                "fraction": "335/113"
+              },
+              {
+                "decimal_approx": 3.036036036036036,
+                "fraction": "337/111"
+              }
+            ],
+            "row": 6
+          },
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 71.5,
+                "fraction": "143/2"
+              },
+              {
+                "decimal_approx": 72.5,
+                "fraction": "145/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 216.5,
+                "fraction": "433/2"
+              },
+              {
+                "decimal_approx": 217.5,
+                "fraction": "435/2"
+              }
+            ],
+            "member": "W21X68",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.0,
+              "fraction": "3"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.013888888888889,
+              "fraction": "217/72"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.986206896551724,
+                "fraction": "433/145"
+              },
+              {
+                "decimal_approx": 3.041958041958042,
+                "fraction": "435/143"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.013888888888888888,
+              "fraction": "-1/72"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.95,
+                "fraction": "59/20"
+              },
+              {
+                "decimal_approx": 3.05,
+                "fraction": "61/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.986206896551724,
+                "fraction": "433/145"
+              },
+              {
+                "decimal_approx": 3.041958041958042,
+                "fraction": "435/143"
+              }
+            ],
+            "row": 7
+          },
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 74.5,
+                "fraction": "149/2"
+              },
+              {
+                "decimal_approx": 75.5,
+                "fraction": "151/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 216.5,
+                "fraction": "433/2"
+              },
+              {
+                "decimal_approx": 217.5,
+                "fraction": "435/2"
+              }
+            ],
+            "member": "W24x62",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.9,
+              "fraction": "29/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.8933333333333335,
+              "fraction": "217/75"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.8675496688741724,
+                "fraction": "433/151"
+              },
+              {
+                "decimal_approx": 2.9194630872483223,
+                "fraction": "435/149"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.006666666666666667,
+              "fraction": "1/150"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.85,
+                "fraction": "57/20"
+              },
+              {
+                "decimal_approx": 2.95,
+                "fraction": "59/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.8675496688741724,
+                "fraction": "433/151"
+              },
+              {
+                "decimal_approx": 2.9194630872483223,
+                "fraction": "435/149"
+              }
+            ],
+            "row": 8
+          },
+          {
+            "connection": "H8",
+            "design_box": [
+              {
+                "decimal_approx": 74.5,
+                "fraction": "149/2"
+              },
+              {
+                "decimal_approx": 75.5,
+                "fraction": "151/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 414.5,
+                "fraction": "829/2"
+              },
+              {
+                "decimal_approx": 415.5,
+                "fraction": "831/2"
+              }
+            ],
+            "member": "40 in girder 'S'",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 5.5,
+              "fraction": "11/2"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 5.533333333333333,
+              "fraction": "83/15"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 5.490066225165563,
+                "fraction": "829/151"
+              },
+              {
+                "decimal_approx": 5.577181208053691,
+                "fraction": "831/149"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.03333333333333333,
+              "fraction": "-1/30"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 5.45,
+                "fraction": "109/20"
+              },
+              {
+                "decimal_approx": 5.55,
+                "fraction": "111/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 5.490066225165563,
+                "fraction": "829/151"
+              },
+              {
+                "decimal_approx": 5.55,
+                "fraction": "111/20"
+              }
+            ],
+            "row": 9
+          },
+          {
+            "connection": "H5",
+            "design_box": [
+              {
+                "decimal_approx": 112.5,
+                "fraction": "225/2"
+              },
+              {
+                "decimal_approx": 113.5,
+                "fraction": "227/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 266.5,
+                "fraction": "533/2"
+              },
+              {
+                "decimal_approx": 267.5,
+                "fraction": "535/2"
+              }
+            ],
+            "member": "W27x84",
+            "physical_page": 538,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.4,
+              "fraction": "12/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.3628318584070795,
+              "fraction": "267/113"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.3480176211453743,
+                "fraction": "533/227"
+              },
+              {
+                "decimal_approx": 2.3777777777777778,
+                "fraction": "107/45"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.06283185840707965,
+              "fraction": "-71/1130"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.25,
+                "fraction": "9/4"
+              },
+              {
+                "decimal_approx": 2.35,
+                "fraction": "47/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.3480176211453743,
+                "fraction": "533/227"
+              },
+              {
+                "decimal_approx": 2.35,
+                "fraction": "47/20"
+              }
+            ],
+            "row": 10
+          },
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 55.5,
+                "fraction": "111/2"
+              },
+              {
+                "decimal_approx": 56.5,
+                "fraction": "113/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 216.5,
+                "fraction": "433/2"
+              },
+              {
+                "decimal_approx": 217.5,
+                "fraction": "435/2"
+              }
+            ],
+            "member": "W21x44",
+            "physical_page": 538,
+            "point_half_up_equals_printed": false,
+            "point_inside_closed_printed_box": false,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.9,
+              "fraction": "39/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.875,
+              "fraction": "31/8"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.831858407079646,
+                "fraction": "433/113"
+              },
+              {
+                "decimal_approx": 3.918918918918919,
+                "fraction": "145/37"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.075,
+              "fraction": "-3/40"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.75,
+                "fraction": "15/4"
+              },
+              {
+                "decimal_approx": 3.85,
+                "fraction": "77/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.831858407079646,
+                "fraction": "433/113"
+              },
+              {
+                "decimal_approx": 3.85,
+                "fraction": "77/20"
+              }
+            ],
+            "row": 11
+          },
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 55.5,
+                "fraction": "111/2"
+              },
+              {
+                "decimal_approx": 56.5,
+                "fraction": "113/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 216.5,
+                "fraction": "433/2"
+              },
+              {
+                "decimal_approx": 217.5,
+                "fraction": "435/2"
+              }
+            ],
+            "member": "W18x40",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 3.9,
+              "fraction": "39/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 3.875,
+              "fraction": "31/8"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.831858407079646,
+                "fraction": "433/113"
+              },
+              {
+                "decimal_approx": 3.918918918918919,
+                "fraction": "145/37"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.025,
+              "fraction": "1/40"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.85,
+                "fraction": "77/20"
+              },
+              {
+                "decimal_approx": 3.95,
+                "fraction": "79/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.85,
+                "fraction": "77/20"
+              },
+              {
+                "decimal_approx": 3.918918918918919,
+                "fraction": "145/37"
+              }
+            ],
+            "row": 12
+          },
+          {
+            "connection": "H5",
+            "design_box": [
+              {
+                "decimal_approx": 62.5,
+                "fraction": "125/2"
+              },
+              {
+                "decimal_approx": 63.5,
+                "fraction": "127/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 252.5,
+                "fraction": "505/2"
+              },
+              {
+                "decimal_approx": 253.5,
+                "fraction": "507/2"
+              }
+            ],
+            "member": "W21x57",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 4.0,
+              "fraction": "4"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 4.015873015873016,
+              "fraction": "253/63"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 3.9763779527559056,
+                "fraction": "505/127"
+              },
+              {
+                "decimal_approx": 4.056,
+                "fraction": "507/125"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.015873015873015872,
+              "fraction": "-1/63"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 3.95,
+                "fraction": "79/20"
+              },
+              {
+                "decimal_approx": 4.05,
+                "fraction": "81/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 3.9763779527559056,
+                "fraction": "505/127"
+              },
+              {
+                "decimal_approx": 4.05,
+                "fraction": "81/20"
+              }
+            ],
+            "row": 13
+          },
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 29.5,
+                "fraction": "59/2"
+              },
+              {
+                "decimal_approx": 30.5,
+                "fraction": "61/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 216.5,
+                "fraction": "433/2"
+              },
+              {
+                "decimal_approx": 217.5,
+                "fraction": "435/2"
+              }
+            ],
+            "member": "MG-141 (14)",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 7.2,
+              "fraction": "36/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 7.233333333333333,
+              "fraction": "217/30"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 7.098360655737705,
+                "fraction": "433/61"
+              },
+              {
+                "decimal_approx": 7.372881355932203,
+                "fraction": "435/59"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.03333333333333333,
+              "fraction": "-1/30"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 7.15,
+                "fraction": "143/20"
+              },
+              {
+                "decimal_approx": 7.25,
+                "fraction": "29/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 7.15,
+                "fraction": "143/20"
+              },
+              {
+                "decimal_approx": 7.25,
+                "fraction": "29/4"
+              }
+            ],
+            "row": 14
+          },
+          {
+            "connection": "H5",
+            "design_box": [
+              {
+                "decimal_approx": 121.5,
+                "fraction": "243/2"
+              },
+              {
+                "decimal_approx": 122.5,
+                "fraction": "245/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 266.5,
+                "fraction": "533/2"
+              },
+              {
+                "decimal_approx": 267.5,
+                "fraction": "535/2"
+              }
+            ],
+            "member": "W27x84",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.2,
+              "fraction": "11/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.1885245901639343,
+              "fraction": "267/122"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.1755102040816325,
+                "fraction": "533/245"
+              },
+              {
+                "decimal_approx": 2.2016460905349793,
+                "fraction": "535/243"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.011475409836065573,
+              "fraction": "7/610"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.15,
+                "fraction": "43/20"
+              },
+              {
+                "decimal_approx": 2.25,
+                "fraction": "9/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.1755102040816325,
+                "fraction": "533/245"
+              },
+              {
+                "decimal_approx": 2.2016460905349793,
+                "fraction": "535/243"
+              }
+            ],
+            "row": 15
+          },
+          {
+            "connection": "H5",
+            "design_box": [
+              {
+                "decimal_approx": 107.5,
+                "fraction": "215/2"
+              },
+              {
+                "decimal_approx": 108.5,
+                "fraction": "217/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 266.5,
+                "fraction": "533/2"
+              },
+              {
+                "decimal_approx": 267.5,
+                "fraction": "535/2"
+              }
+            ],
+            "member": "W27x94",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.5,
+              "fraction": "5/2"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.4722222222222223,
+              "fraction": "89/36"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.456221198156682,
+                "fraction": "533/217"
+              },
+              {
+                "decimal_approx": 2.488372093023256,
+                "fraction": "107/43"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.027777777777777776,
+              "fraction": "1/36"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.45,
+                "fraction": "49/20"
+              },
+              {
+                "decimal_approx": 2.55,
+                "fraction": "51/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.456221198156682,
+                "fraction": "533/217"
+              },
+              {
+                "decimal_approx": 2.488372093023256,
+                "fraction": "107/43"
+              }
+            ],
+            "row": 16
+          },
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 79.5,
+                "fraction": "159/2"
+              },
+              {
+                "decimal_approx": 80.5,
+                "fraction": "161/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 216.5,
+                "fraction": "433/2"
+              },
+              {
+                "decimal_approx": 217.5,
+                "fraction": "435/2"
+              }
+            ],
+            "member": "W24x55",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.7,
+              "fraction": "27/10"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.7125,
+              "fraction": "217/80"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.68944099378882,
+                "fraction": "433/161"
+              },
+              {
+                "decimal_approx": 2.7358490566037736,
+                "fraction": "145/53"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.0125,
+              "fraction": "-1/80"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.65,
+                "fraction": "53/20"
+              },
+              {
+                "decimal_approx": 2.75,
+                "fraction": "11/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.68944099378882,
+                "fraction": "433/161"
+              },
+              {
+                "decimal_approx": 2.7358490566037736,
+                "fraction": "145/53"
+              }
+            ],
+            "row": 17
+          },
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 76.5,
+                "fraction": "153/2"
+              },
+              {
+                "decimal_approx": 77.5,
+                "fraction": "155/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 216.5,
+                "fraction": "433/2"
+              },
+              {
+                "decimal_approx": 217.5,
+                "fraction": "435/2"
+              }
+            ],
+            "member": "W21x50",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.8,
+              "fraction": "14/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.8181818181818183,
+              "fraction": "31/11"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.793548387096774,
+                "fraction": "433/155"
+              },
+              {
+                "decimal_approx": 2.843137254901961,
+                "fraction": "145/51"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": -0.01818181818181818,
+              "fraction": "-1/55"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.75,
+                "fraction": "11/4"
+              },
+              {
+                "decimal_approx": 2.85,
+                "fraction": "57/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.793548387096774,
+                "fraction": "433/155"
+              },
+              {
+                "decimal_approx": 2.843137254901961,
+                "fraction": "145/51"
+              }
+            ],
+            "row": 18
+          },
+          {
+            "connection": "H4",
+            "design_box": [
+              {
+                "decimal_approx": 99.5,
+                "fraction": "199/2"
+              },
+              {
+                "decimal_approx": 100.5,
+                "fraction": "201/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 216.5,
+                "fraction": "433/2"
+              },
+              {
+                "decimal_approx": 217.5,
+                "fraction": "435/2"
+              }
+            ],
+            "member": "W24x76",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.2,
+              "fraction": "11/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.17,
+              "fraction": "217/100"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.154228855721393,
+                "fraction": "433/201"
+              },
+              {
+                "decimal_approx": 2.185929648241206,
+                "fraction": "435/199"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.03,
+              "fraction": "3/100"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.15,
+                "fraction": "43/20"
+              },
+              {
+                "decimal_approx": 2.25,
+                "fraction": "9/4"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.154228855721393,
+                "fraction": "433/201"
+              },
+              {
+                "decimal_approx": 2.185929648241206,
+                "fraction": "435/199"
+              }
+            ],
+            "row": 19
+          },
+          {
+            "connection": "K8",
+            "design_box": [
+              {
+                "decimal_approx": 167.5,
+                "fraction": "335/2"
+              },
+              {
+                "decimal_approx": 168.5,
+                "fraction": "337/2"
+              }
+            ],
+            "failure_box": [
+              {
+                "decimal_approx": 435.5,
+                "fraction": "871/2"
+              },
+              {
+                "decimal_approx": 436.5,
+                "fraction": "873/2"
+              }
+            ],
+            "member": "W36x135",
+            "physical_page": 538,
+            "point_half_up_equals_printed": true,
+            "point_inside_closed_printed_box": true,
+            "point_nearest_half_up_one_decimal": {
+              "decimal_approx": 2.6,
+              "fraction": "13/5"
+            },
+            "point_on_printed_box_endpoint": false,
+            "point_quotient": {
+              "decimal_approx": 2.5952380952380953,
+              "fraction": "109/42"
+            },
+            "possible_quotient_box": [
+              {
+                "decimal_approx": 2.5845697329376853,
+                "fraction": "871/337"
+              },
+              {
+                "decimal_approx": 2.6059701492537313,
+                "fraction": "873/335"
+              }
+            ],
+            "printed_minus_point": {
+              "decimal_approx": 0.004761904761904762,
+              "fraction": "1/210"
+            },
+            "printed_ratio_box": [
+              {
+                "decimal_approx": 2.55,
+                "fraction": "51/20"
+              },
+              {
+                "decimal_approx": 2.65,
+                "fraction": "53/20"
+              }
+            ],
+            "rounding_compatible": true,
+            "rounding_endpoint_only": false,
+            "rounding_intersection": [
+              {
+                "decimal_approx": 2.5845697329376853,
+                "fraction": "871/337"
+              },
+              {
+                "decimal_approx": 2.6059701492537313,
+                "fraction": "873/335"
+              }
+            ],
+            "row": 20
+          }
+        ],
+        "table": "11-4",
+        "unweighted_summary": {
+          "displayed_row_ratios": {
+            "average": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 3.3,
+                "fraction": "33/10"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": -0.03,
+                "fraction": "-3/100"
+              },
+              "printed_summary": "3.3",
+              "value": {
+                "decimal_approx": 3.33,
+                "fraction": "333/100"
+              }
+            },
+            "maximum": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 7.2,
+                "fraction": "36/5"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.0,
+                "fraction": "0"
+              },
+              "printed_summary": "7.2",
+              "value": {
+                "decimal_approx": 7.2,
+                "fraction": "36/5"
+              }
+            },
+            "minimum": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 2.2,
+                "fraction": "11/5"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.0,
+                "fraction": "0"
+              },
+              "printed_summary": "2.2",
+              "value": {
+                "decimal_approx": 2.2,
+                "fraction": "11/5"
+              }
+            }
+          },
+          "quotients_from_displayed_loads": {
+            "average": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 3.3,
+                "fraction": "33/10"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": -0.04846200604178602,
+                "fraction": "-4007719442053/82698174702000"
+              },
+              "printed_summary": "3.3",
+              "value": {
+                "decimal_approx": 3.3484620060417862,
+                "fraction": "276911695958653/82698174702000"
+              }
+            },
+            "maximum": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 7.2,
+                "fraction": "36/5"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": -0.03333333333333333,
+                "fraction": "-1/30"
+              },
+              "printed_summary": "7.2",
+              "value": {
+                "decimal_approx": 7.233333333333333,
+                "fraction": "217/30"
+              }
+            },
+            "minimum": {
+              "half_up_equals_printed": true,
+              "inside_closed_printed_box": true,
+              "nearest_half_up_one_decimal": {
+                "decimal_approx": 2.2,
+                "fraction": "11/5"
+              },
+              "on_printed_box_endpoint": false,
+              "printed_minus_computed": {
+                "decimal_approx": 0.03,
+                "fraction": "3/100"
+              },
+              "printed_summary": "2.2",
+              "value": {
+                "decimal_approx": 2.17,
+                "fraction": "217/100"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "status": "PASS"
+}

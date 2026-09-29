@@ -1,0 +1,261 @@
+{
+  "command": [
+    "research/sherlock-wtc7-investigation/c79-contact-geometry/compare_exact_reference.py",
+    "--bits",
+    "120",
+    "--output",
+    "independent-exact-reference120-01.json"
+  ],
+  "controls": [
+    "recursive_exact_positive",
+    "identity_order_mutation",
+    "missing_proof_field",
+    "fraction_string_mutation",
+    "null_threshold_changed_to_zero",
+    "integer_bool_coercion",
+    "class_mutation",
+    "projection_mutation",
+    "mask_bit_mutation",
+    "coordinate_view_mutation",
+    "same_undefined_positions",
+    "NaN_changed_to_zero"
+  ],
+  "elapsed_seconds": 7.102561041945592,
+  "peak_bytes": 621068288,
+  "pins_after": {
+    "EXACT-ARITHMETIC-ADDENDUM.md": "b02c1e3c08c8ab976cafba990088a4d80b06e7db9fea5d2d927fb7d0a9f8bb89",
+    "adapter_code": "d3f0640a73f95001ce8a0ec8115243fd3362cae16c879de86b77cf66bbc06dcc",
+    "compare_exact_proximity.py": "9854b4d2df68ae14b03a834539c79163a66961407c0cee193ace2361f9edd7e3",
+    "exact-proximity120-proofs.json": "f653b0d0d4e69bfd42a79bb1321e540c4a18a92bdaa99efd3540bccc13fe80e7",
+    "exact-proximity120.json": "ec72208fb65f7a849efebae77af5c834c4eb17e1180dddca2f1a17fb525d0711",
+    "exact-proximity120.npz": "79bbdc475b2680034096092e207bdd95250e4e7191ae4275ace4106e526c5628",
+    "exact-proximity80-root01-proofs.json": "53757ba19edeeacf7ec64222786344977cb02eef5d54d7da2cbae0445e4bd2e6",
+    "exact-proximity80-root01.json": "60e12bb8f70944cb0c8996e7a1e8387c3405de7e5b341e5d6bfd2c84e08843f3",
+    "exact-proximity80-root01.npz": "79bbdc475b2680034096092e207bdd95250e4e7191ae4275ace4106e526c5628",
+    "exact-proximity80.json": "25cb6d5a71a5d34908368523725cfe8612a4d8cf37de616220cf36e9663a4324",
+    "exact_proximity.py": "032804acb5862b6202d7037b864b2421c10b0f8383b0f2382a856810423dc25f",
+    "independent-exact120-01.json": "ecbde1063f26bbc520fdbae40209c88c5e433542eee97c6e92b212dc08ffab62",
+    "independent-exact120-01.npz": "6c4bf3e3bdfeb00c14ef859407c7d685c950123a415a49452e4058e0aecbd8a4",
+    "independent-exact80-02.json": "df8246830906ba20a814835d69f45c0196301ab76179e84b227c447d0352b11e",
+    "independent-exact80-02.npz": "6c4bf3e3bdfeb00c14ef859407c7d685c950123a415a49452e4058e0aecbd8a4",
+    "independent-stage01.json": "ead0f771054d3bfbe775a215aa7bc295c3c1e741e172b5201ad59816acfccccd",
+    "independent-stage01.npz": "fcab10b2081c7fe3e1c0f9f4cdf92344d55e88e12c408fd7b70ebaeb0bcc0ad5",
+    "verify_exact_proximity.py": "c850bdb2e02843e4cbdf2c3cb08b309e25d47708d9fa7b1e41bc4dbe9d044e2f"
+  },
+  "pins_before": {
+    "EXACT-ARITHMETIC-ADDENDUM.md": "b02c1e3c08c8ab976cafba990088a4d80b06e7db9fea5d2d927fb7d0a9f8bb89",
+    "adapter_code": "d3f0640a73f95001ce8a0ec8115243fd3362cae16c879de86b77cf66bbc06dcc",
+    "compare_exact_proximity.py": "9854b4d2df68ae14b03a834539c79163a66961407c0cee193ace2361f9edd7e3",
+    "exact-proximity120-proofs.json": "f653b0d0d4e69bfd42a79bb1321e540c4a18a92bdaa99efd3540bccc13fe80e7",
+    "exact-proximity120.json": "ec72208fb65f7a849efebae77af5c834c4eb17e1180dddca2f1a17fb525d0711",
+    "exact-proximity120.npz": "79bbdc475b2680034096092e207bdd95250e4e7191ae4275ace4106e526c5628",
+    "exact-proximity80-root01-proofs.json": "53757ba19edeeacf7ec64222786344977cb02eef5d54d7da2cbae0445e4bd2e6",
+    "exact-proximity80-root01.json": "60e12bb8f70944cb0c8996e7a1e8387c3405de7e5b341e5d6bfd2c84e08843f3",
+    "exact-proximity80-root01.npz": "79bbdc475b2680034096092e207bdd95250e4e7191ae4275ace4106e526c5628",
+    "exact-proximity80.json": "25cb6d5a71a5d34908368523725cfe8612a4d8cf37de616220cf36e9663a4324",
+    "exact_proximity.py": "032804acb5862b6202d7037b864b2421c10b0f8383b0f2382a856810423dc25f",
+    "independent-exact120-01.json": "ecbde1063f26bbc520fdbae40209c88c5e433542eee97c6e92b212dc08ffab62",
+    "independent-exact120-01.npz": "6c4bf3e3bdfeb00c14ef859407c7d685c950123a415a49452e4058e0aecbd8a4",
+    "independent-exact80-02.json": "df8246830906ba20a814835d69f45c0196301ab76179e84b227c447d0352b11e",
+    "independent-exact80-02.npz": "6c4bf3e3bdfeb00c14ef859407c7d685c950123a415a49452e4058e0aecbd8a4",
+    "independent-stage01.json": "ead0f771054d3bfbe775a215aa7bc295c3c1e741e172b5201ad59816acfccccd",
+    "independent-stage01.npz": "fcab10b2081c7fe3e1c0f9f4cdf92344d55e88e12c408fd7b70ebaeb0bcc0ad5",
+    "verify_exact_proximity.py": "c850bdb2e02843e4cbdf2c3cb08b309e25d47708d9fa7b1e41bc4dbe9d044e2f"
+  },
+  "result": {
+    "actual_reference80_replay": {
+      "all_other_receipt_fields_equal": true,
+      "array_and_proof_bytes_equal_by_SHA256": true,
+      "differences_excluded": [
+        {
+          "original": "exact-proximity80.npz",
+          "path": "/array_file",
+          "replay": "exact-proximity80-root01.npz"
+        },
+        {
+          "original": "exact-proximity80",
+          "path": "/command/4",
+          "replay": "exact-proximity80-root01"
+        },
+        {
+          "original": 11.135433416930027,
+          "path": "/elapsed_seconds",
+          "replay": 11.31415679201018
+        },
+        {
+          "original": 736985088,
+          "path": "/peak_rss_bytes",
+          "replay": 745848832
+        },
+        {
+          "original": "exact-proximity80-proofs.json",
+          "path": "/proof_file",
+          "replay": "exact-proximity80-root01-proofs.json"
+        }
+      ],
+      "status": "PASS"
+    },
+    "counts": {
+      "array_fields": 14,
+      "array_slots": 42881618,
+      "bools": 4,
+      "geometry_proofs": 2226,
+      "nulls": 17040,
+      "numeric_leaves": 49699,
+      "pair_proofs": 11292,
+      "string_leaves": 495165
+    },
+    "independence": "All own source and rational computations froze before reference access. This later adapter checks the schema exhaustively and recomputes the specifically disclosed additional counter/diagonal views; it is not a third independently blind discovery.",
+    "normalizations": [
+      "Own CID/master/setting traversal is reordered by exact setting/master/NID keys; no class or source slot is dropped.",
+      "Own15-column identity retains source locators and membership row. Reference6-column pairs matched on all6; reference masterCID/set/line and ordered nodes checked separately.",
+      "All rational strings matched as canonical numerator/denominator pairs. dA/dB squared distances, both root intervals, patch, thresholds, signed planes and exact box distances match.",
+      "Original two diagonal squared values are independently recombined post-schema from the frozen original coordinates; own frozen result retained only their minimum.",
+      "Reference slab count is the outer float slab over all nodes. It is independently recomputed, not coerced to own exact-slab known-node count.",
+      "Root float views match exact rational midpoint/endpoints converted to binary64; these are views, not certified outward floating bounds.",
+      "Part-family incidence is normalized from own source node index/effectivePID/family to exact NID/family/effectivePID/count."
+    ],
+    "precision_bits": 120,
+    "reference_summaries": {
+      "coordinate_cache_nodes": 1189,
+      "floating_mask_comparisons": {
+        "independent-proximity01.npz": {
+          "1": {
+            "equal": true,
+            "exact_added_memberships": 0,
+            "floating_only_memberships": 0
+          },
+          "2": {
+            "equal": true,
+            "exact_added_memberships": 0,
+            "floating_only_memberships": 0
+          }
+        },
+        "proximity-root01.npz": {
+          "1": {
+            "equal": true,
+            "exact_added_memberships": 0,
+            "floating_only_memberships": 0
+          },
+          "2": {
+            "equal": true,
+            "exact_added_memberships": 0,
+            "floating_only_memberships": 0
+          }
+        }
+      },
+      "groups": [
+        {
+          "admitted": 3156,
+          "cid": 1,
+          "classes": [
+            2840,
+            28,
+            0,
+            288
+          ],
+          "setting_index": 0,
+          "unique_nodes_by_class": {
+            "0": 4,
+            "1": 28,
+            "2": 0,
+            "3": 122
+          }
+        },
+        {
+          "admitted": 608,
+          "cid": 2,
+          "classes": [
+            0,
+            0,
+            0,
+            608
+          ],
+          "setting_index": 0,
+          "unique_nodes_by_class": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 280
+          }
+        },
+        {
+          "admitted": 3156,
+          "cid": 1,
+          "classes": [
+            2840,
+            28,
+            0,
+            288
+          ],
+          "setting_index": 1,
+          "unique_nodes_by_class": {
+            "0": 4,
+            "1": 28,
+            "2": 0,
+            "3": 122
+          }
+        },
+        {
+          "admitted": 608,
+          "cid": 2,
+          "classes": [
+            0,
+            0,
+            0,
+            608
+          ],
+          "setting_index": 1,
+          "unique_nodes_by_class": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 280
+          }
+        },
+        {
+          "admitted": 3156,
+          "cid": 1,
+          "classes": [
+            2840,
+            28,
+            0,
+            288
+          ],
+          "setting_index": 2,
+          "unique_nodes_by_class": {
+            "0": 4,
+            "1": 28,
+            "2": 0,
+            "3": 122
+          }
+        },
+        {
+          "admitted": 608,
+          "cid": 2,
+          "classes": [
+            0,
+            0,
+            0,
+            608
+          ],
+          "setting_index": 2,
+          "unique_nodes_by_class": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 280
+          }
+        }
+      ],
+      "proof_rows": 11292,
+      "total_box_interval_ambiguities": 0,
+      "total_population_memberships": 338488050,
+      "total_slab_candidates": 3603
+    },
+    "scope_ceiling": "Exact reproducibility of this parsed-input geometric surrogate, not physical accuracy or actual contact, restraint, capacity, run provenance or collapse cause.",
+    "slab_definition_discrepancies": [],
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

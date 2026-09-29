@@ -1,0 +1,70 @@
+{
+  "comparison_code_sha256": "68a5fde471c05cb69c292055a4277825a6439855fd49e489d38fb68fefac443d",
+  "comparison_counts": {
+    "exact": 1959,
+    "numeric": 5088
+  },
+  "derivative_count": 161,
+  "fit_count": 98,
+  "maximum_absolute_numeric_differences": {
+    "acceleration_input_weights": 9.592326932761353e-14,
+    "center_s": 1.7763568394002505e-15,
+    "centered derivative": 0.0,
+    "clock factors": 0.0,
+    "coefficients_centered": 2.2026824808563106e-13,
+    "derivative residual display": 0.0,
+    "display_rounding_half_width": 1.5543122344752192e-15,
+    "display_rounding_interval": 4.4231285301066237e-13,
+    "downward_acceleration": 4.405364961712621e-13,
+    "predictions_recovered_from_residuals": 2.2737367544323206e-13,
+    "reported_target": 0.0,
+    "residuals": 2.1183055309847987e-13,
+    "rmse": 5.204170427930421e-15,
+    "scale factors": 0.0,
+    "target_difference": 4.403352682480488e-13,
+    "western subtraction display": 0.0
+  },
+  "negative_comparator_checks": [
+    {
+      "correctly_rejected": true,
+      "corruption": "coefficient",
+      "reason": "coefficients_centered: delta 9.999999999887876e-05 exceeds 1e-08"
+    },
+    {
+      "correctly_rejected": true,
+      "corruption": "residual",
+      "reason": "residuals: delta 0.00010000000001259002 exceeds 1e-08"
+    },
+    {
+      "correctly_rejected": true,
+      "corruption": "weight",
+      "reason": "acceleration_input_weights: delta 9.999999999932285e-05 exceeds 1e-08"
+    },
+    {
+      "correctly_rejected": true,
+      "corruption": "membership",
+      "reason": "fit source_rows: unequal [46, 46, 47, 48, 49, 50] versus [45, 46, 47, 48, 49, 50]"
+    },
+    {
+      "correctly_rejected": true,
+      "corruption": "overlap_flag",
+      "reason": "fit display_intervals_overlap: unequal True versus False"
+    },
+    {
+      "correctly_rejected": true,
+      "corruption": "derivative_fraction",
+      "reason": "derivative exact residual: unequal Fraction(1, 1000000) versus Fraction(0, 1)"
+    },
+    {
+      "correctly_rejected": true,
+      "corruption": "west_fraction",
+      "reason": "western exact subtraction: unequal Fraction(9, 100) versus Fraction(-1, 100)"
+    }
+  ],
+  "oracle_sha256": "a703e5a5c2ffb5b572b8bb3339a02194b69f7c1da53a383b7be5a8fa9db3c091",
+  "producer_sha256": "c78146f9bb596a5c0c8241ae918d43f700c35596131e62af53912f75fd5a5dfd",
+  "status": "pass",
+  "tolerance": 1e-08,
+  "western_pairwise_count": 75,
+  "western_subtraction_count": 75
+}

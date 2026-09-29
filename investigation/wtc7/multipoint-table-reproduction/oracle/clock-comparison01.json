@@ -1,0 +1,64 @@
+{
+  "comparison_code_sha256": "bf9549ac5605900ab63127e042257d7c9d5b5fc1b0592da75d8e5a0259cca690",
+  "exact_comparison_count": 3719,
+  "input_sha256": {
+    "baseline": "a703e5a5c2ffb5b572b8bb3339a02194b69f7c1da53a383b7be5a8fa9db3c091",
+    "oracle": "2079a1e96f593b2e3520163df687e59e9f6e1c5e4af8edf2f9b672bc869f21ec",
+    "producer": "a625dde21e5767adc60147421afb94084d96842fc9ec7e733706555e80297c87"
+  },
+  "negative_checks": [
+    {
+      "field_corrupted": "calculated_fraction",
+      "reason": "calculated velocity: Fraction(-149999, 1000000) != Fraction(-3, 20)",
+      "rejected": true
+    },
+    {
+      "field_corrupted": "residual_fraction",
+      "reason": "residual: Fraction(1, 1000000) != Fraction(0, 1)",
+      "rejected": true
+    },
+    {
+      "field_corrupted": "bound_fraction",
+      "reason": "rounding bound: Fraction(30001, 1000000) != Fraction(3, 100)",
+      "rejected": true
+    },
+    {
+      "field_corrupted": "centered_span_fraction",
+      "reason": "span: Fraction(400001, 1000000) != Fraction(2, 5)",
+      "rejected": true
+    },
+    {
+      "field_corrupted": "row",
+      "reason": "unique producer rows: 482 != 483",
+      "rejected": true
+    },
+    {
+      "field_corrupted": "compatible",
+      "reason": "classification: False != True",
+      "rejected": true
+    }
+  ],
+  "original_baseline_rows_matched": 161,
+  "row_candidate_count": 483,
+  "status": "pass",
+  "summary": {
+    "2997/100": {
+      "bound": "1199/40000",
+      "failures": 0,
+      "maximum_absolute_residual": "1013/40000",
+      "rows": 161
+    },
+    "30": {
+      "bound": "3/100",
+      "failures": 11,
+      "maximum_absolute_residual": "9/200",
+      "rows": 161
+    },
+    "30000/1001": {
+      "bound": "6001/200200",
+      "failures": 0,
+      "maximum_absolute_residual": "39/1540",
+      "rows": 161
+    }
+  }
+}

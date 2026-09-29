@@ -1,0 +1,149 @@
+{
+  "schema":"thompson2009-independent-source-transcription-v1",
+  "status":"frozen original-source transcription before original-data calculation and root source/output access",
+  "source":{
+    "path":"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/assembly-test-source-audit/sources/MSST_Thompson_2009-sirsi.pdf",
+    "sha256":"b8eff9830bcc87940c4eadc9c64b80e7381ab43c96f52b528ef773b3b0332e78",
+    "physical_page_count":183,
+    "excluded_page":183,
+    "excluded_page_reason":"Approval/signature page; not displayed or used.",
+    "full_page_views":[75,76,77,78,95,96,97,103,104,105,106,107],
+    "physical_equals_printed_for_selected_pages":true,
+    "method":"Independent full-page visual review of source-agent-provided Poppler renders, checked against the independently hash-pinned PDF and auxiliary pypdf text for table pages. No other agent's numerical transcription or output read; no plot digitization.",
+    "numeric_lexemes":"Original displayed strings; missing fields are null and Negligible is a nonnumeric engineering label, not zero.",
+    "table_field_decimal_places":{"applied_shear_kip":2,"measured_moment_kip_in":2,"measured_axial_kip":2,"beam_end_rotation_rad":3,"statics_error_percent":2},
+    "no_original_group_mean_or_cov_in_selected_tables":true
+  },
+  "tables":[
+    {
+      "table":"4.1","physical_page":103,"printed_page":103,
+      "title":"Specimen Bolt Line Forces at Approximate Maximum Measured Moment",
+      "role":"Each specimen at a sampled averaging interval around maximum measured moment, not necessarily maximum applied vertical load.",
+      "columns":["test","specimen","applied_shear_kip","measured_moment_kip_in","measured_axial_kip","beam_end_rotation_rad"],
+      "rows":[
+        ["3ST1","3STR1","2.62","157.36","8.45","0.072"],
+        ["3ST1","3STL1","2.62","144.68","8.08","0.073"],
+        ["3ST2","3STR2","2.88","169.10","6.05","0.097"],
+        ["3ST2","3STL2","2.88","182.70","5.54","0.097"],
+        ["3ST3","3STR3","1.97","169.44","6.61","0.080"],
+        ["3ST3","3STL3","1.97","185.02","5.38","0.080"],
+        ["4ST1","4STR1","5.18","315.35","11.43","0.073"],
+        ["4ST1","4STL1","5.18","334.33","11.03","0.074"],
+        ["4ST2","4STR2","5.85","331.19","19.21","0.076"],
+        ["4ST2","4STL2","5.85","362.16","18.64","0.076"],
+        ["4ST3","4STR3","5.50","279.25","16.70","0.076"],
+        ["4ST3","4STL3","5.50","296.55","16.51","0.076"],
+        ["5ST1","5STR1","10.52","549.66","30.32","0.072"],
+        ["5ST1","5STL1","10.52","624.45","29.92","0.071"],
+        ["5ST2","5STR2","10.00","568.24","27.52","0.069"],
+        ["5ST2","5STL2","10.00","624.94","28.05","0.070"],
+        ["5ST3","5STR3","9.70","541.41","28.90","0.064"],
+        ["5ST3","5STL3","9.70","619.60","28.78","0.064"]
+      ],
+      "source_processing_note":"Page103 says data variability prompted a sampled average between measured-moment extremes. The interval was selected using the controlling specimen and also applied to the opposing specimen. Do not equate this to an instantaneous load peak or two independent tests."
+    },
+    {
+      "table":"4.2","physical_page":104,"printed_page":104,
+      "title":"Initial Failure Mechanism and Bolt Line Forces for the Tested Shear Tab Connections",
+      "role":"Initial failure stage; one controlling connection specimen per test.",
+      "columns":["test","controlling_specimen","applied_shear_kip","measured_moment_kip_in","measured_axial_kip","beam_end_rotation_rad","failure_mechanism","footnote"],
+      "rows":[
+        ["3ST1","3STR1","6.76","Negligible","48.95","0.128","Bolt Shear Rupture","a"],
+        ["3ST2","3STR2","6.43","Negligible","42.29","0.137","Tension Rupture",null],
+        ["3ST3","3STR3","5.41","Negligible","48.89","0.133","Tension Rupture",null],
+        ["4ST1","4STR1","7.02","268.35","32.14","0.093","Block Shear Rupture",null],
+        ["4ST2","4STR2","8.62","279.07","41.64","0.096","Bolt Shear Rupture",null],
+        ["4ST3","4STL3","6.34","224.12","28.44","0.093","Tension Rupture",null],
+        ["5ST1","5STR1","10.59","494.72","33.21","0.075","Block Shear Rupture","b"],
+        ["5ST2","5STR2","11.69","535.81","45.44","0.083","Block Shear Rupture",null],
+        ["5ST3","5STL3","10.22","606.15","34.04","0.071","Tension Rupture",null]
+      ],
+      "footnotes":{
+        "a":"Initial connection misalignment led to uneven middle-bolt bearing to facilitate erection.",
+        "b":"Testing interrupted due to initial reversal of hydraulic couplings."
+      }
+    },
+    {
+      "table":"4.3","physical_page":105,"printed_page":105,
+      "title":"Secondary Failure Mechanism and Bolt Line Forces for the Tested Shear Tab Connections",
+      "role":"Secondary failure stage; absent or unperformed stages remain explicit.",
+      "columns":["test","controlling_specimen","applied_shear_kip","measured_moment_kip_in","measured_axial_kip","beam_end_rotation_rad","failure_mechanism","footnote"],
+      "rows":[
+        ["3ST1",null,null,null,null,null,null,"a"],
+        ["3ST2",null,null,null,null,null,null,"a"],
+        ["3ST3",null,null,null,null,null,null,"a"],
+        ["4ST1","4STR1","9.93","Negligible","64.83","0.129","Bolt Shear Rupture",null],
+        ["4ST2",null,null,null,null,null,null,"b"],
+        ["4ST3",null,null,null,null,null,null,"c"],
+        ["5ST1","5STR1","8.16","287.39","33.88","0.087","Bolt Shear Rupture",null],
+        ["5ST2","5STR2","9.49","269.38","48.17","0.097","Bolt Shear Rupture",null],
+        ["5ST3","5STL3","10.39","381.57","54.13","0.091","Bolt Shear Rupture",null]
+      ],
+      "missing_display":"---",
+      "footnotes":{
+        "a":"Secondary failure was not attainable due to initial tension rupture.",
+        "b":"Loading was not continued to a secondary failure.",
+        "c":"Initial tension rupture unzipped the shear plate; secondary failure was not reached."
+      },
+      "internal_source_difference":"Footnote a is printed for3ST1 as well as3ST2/3, but Table4.2 identifies3ST1 initial failure as bolt-shear rupture. Preserve the discrepancy rather than relabeling either source entry."
+    },
+    {
+      "table":"4.4","physical_page":107,"printed_page":107,
+      "title":"Experimental Data Statics Verification",
+      "role":"A selected statics-verification state, not failure-peak samples or group means/COVs.",
+      "columns":["test","side","P_M_kip","M_M_kip_in","theta_rad","V_x_kip","V_app_kip","test_error_percent"],
+      "rows":[
+        ["3ST1","L","2.08","45.14","0.040","1.31","1.22","1.11"],
+        ["3ST1","R","1.13","41.41","0.040","1.17","1.22","1.11"],
+        ["3ST2","L","2.69","80.86","0.080","2.40","2.24","1.43"],
+        ["3ST2","R","2.13","72.82","0.080","2.14","2.24","1.43"],
+        ["3ST3","L","0.69","46.26","0.052","1.29","0.98","27.50"],
+        ["3ST3","R","0.45","51.80","0.051","1.42","0.98","27.50"],
+        ["4ST1","L","2.31","116.37","0.040","3.24","3.05","1.26"],
+        ["4ST1","R","2.97","103.97","0.039","2.93","3.05","1.26"],
+        ["4ST2","L","9.05","172.60","0.066","5.27","4.90","3.11"],
+        ["4ST2","R","10.75","152.84","0.066","4.84","4.90","3.11"],
+        ["4ST3","L","9.09","143.31","0.060","4.42","4.41","3.84"],
+        ["4ST3","R","8.87","130.51","0.060","4.06","4.41","3.84"],
+        ["5ST1","L",null,null,null,null,null,null],
+        ["5ST1","R",null,null,null,null,null,null],
+        ["5ST2","L","10.69","278.57","0.050","8.07","7.78","1.13"],
+        ["5ST2","R","12.43","260.12","0.050","7.66","7.78","1.13"],
+        ["5ST3","L","15.00","274.03","0.051","8.19","7.98","1.25"],
+        ["5ST3","R","15.26","251.34","0.051","7.57","7.98","1.25"]
+      ],
+      "merged_cell_note":"The original test-error cell spans L/R rows. It is duplicated in this row representation for location clarity, not two independent error observations.",
+      "missing_display":"---",
+      "5ST1_footnote":"Data not evaluated due to invalid collection before connection failure.",
+      "quality_note":"Pages106–107 question3STL3 due to spikes and the statics check; later evaluations exclude that specimen, not the3STR3 controlling failure result."
+    }
+  ],
+  "source_definitions":[
+    {
+      "physical_page":78,"printed_page":78,"equation":33,
+      "literal_expression":"M_b = M*x_b/x_sg",
+      "distances_in":{"x_sg":"36.875","x_b":"74.625","x_f":"78.375"},
+      "distance_roles":{"x_sg":"true pin to strain-gage location","x_b":"true pin to bolt line","x_f":"true pin to supported column flange face"}
+    },
+    {
+      "physical_page":78,"printed_page":78,"equation":34,
+      "literal_expression":"theta_n = atan(x_f / Delta_n)",
+      "source_numerator":"x_f",
+      "source_denominator":"Delta_n",
+      "Delta_n_definition":"vertical deflection measured by DWT at timestep n, inches",
+      "theta_n_definition":"beam end rotation at timestep n, radians",
+      "interpretation_limit":"The printed equation has horizontal distance divided by displacement. It is not silently corrected to atan(Delta/x_f); a geometry conversion based on that reciprocal would require an explicit hypothesis, not be a literal reproduction."
+    },
+    {
+      "physical_page":106,"printed_page":106,
+      "equations":{"35":"R_T = M_M/L_SG","36":"R_y = R_A*sin(theta) + R_T*cos(theta)"},
+      "role":"Statics check uses strain-gage forces at selected load states. These equations do not alone make Table4.4 an ultimate-load dataset."
+    }
+  ],
+  "additional_context":[
+    {"pages":[76,77],"observation":"The study reports invalid left strain-gage1 and right gage6 data and uses left2/3 and right5/8 channels for force recovery. Resulting moment/axial entries are processed strain-derived quantities, not direct load-cell readings of those components."},
+    {"pages":[95,96,97],"observation":"For5ST1, initial data before about0.06rad were neglected after a reversed-hydraulic-coupling problem; test and data collection restarted near maximum flexural capacity. Initial and secondary failure values are still printed in Tables4.2/4.3. Thus invalid initial history is not blanket absence of every test quantity."},
+    {"pages":[103,104,105],"observation":"Tables4.1 maximum moment,4.2 initial failure and4.3 secondary failure have different sampling/physical roles. No dataset is relabeled TN1749 ultimate-load observations at transcription time."}
+  ],
+  "pending_calculation_selection":"Original table-field means/COVs may be computed after declaring grouping and stage choices. Total-load conversion, peak selection and original-to-TN rotation mapping remain separate named diagnostics; no unprinted histories or missing observations are imputed."
+}

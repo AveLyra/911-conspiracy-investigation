@@ -1,0 +1,3012 @@
+from __future__ import annotations
+
+from dataclasses import fields, replace
+import hashlib
+import json
+from pathlib import Path
+
+import pytest
+
+from research_machine.adapters.filesystem import FileSystemRepository
+from research_machine.application.commands import (
+    AddClaim,
+    AddQuestion,
+    CreateInquiry,
+    CreateProtocol,
+    ProposeHypothesis,
+    RecordEvidence,
+    RecordEvidenceStatusEvent,
+    RecordRun,
+)
+from research_machine.application.service import ResearchService
+from research_machine.application.rigor import audit_research_state
+from research_machine.application.policies import validate_validation_tag_context
+from research_machine.reporting.synthesis import build_synthesis
+from research_machine.domain.errors import ValidationError
+from research_machine.domain.models import (
+    AnalysisMode,
+    AnalysisContract,
+    CanaryTargetPlan,
+    Claim,
+    ClaimLevel,
+    ControlDefinition,
+    DatasetArtifact,
+    DatasetManifest,
+    DatasetRole,
+    EvidenceDirection,
+    Inquiry,
+    EvidenceRecord,
+    MeasurementDefinition,
+    MeasurementRole,
+    MeasurementValidityCheck,
+    ProtocolKind,
+    ProtocolStatus,
+    QualityGateResult,
+    QualityGateStatus,
+    ResearchRun,
+    RigorSeverity,
+    ValidationTag,
+)
+
+
+def _service(root: Path, *, actor: str = "author") -> ResearchService:
+    counter = iter(f"{actor}{index:02d}" for index in range(100))
+    return ResearchService(
+        FileSystemRepository(root),
+        actor=actor,
+        clock=lambda: "2026-09-02T12:00:00Z",
+        token=lambda: next(counter),
+    )
+
+
+def test_rigor_flags_open_questions_as_live_ambiguity(tmp_path: Path) -> None:
+    service = _service(tmp_path)
+    service.init_workspace()
+    service.create_inquiry(
+        CreateInquiry(
+            title="Ambiguity audit",
+            initial_statement="Can the design distinguish the alternatives?",
+            inquiry_id="ambiguity-audit",
+            decision_to_support="Decide whether to proceed with protected collection.",
+            minimum_evidence="A reviewed protocol can discriminate the alternatives.",
+            decision_change_criteria=[
+                "Stop if the measurement artifact explanation remains unresolved."
+            ],
+            decision_owner="review-owner",
+        )
+    )
+    service.add_question(
+        AddQuestion("Could measurement drift explain the apparent effect?")
+    )
+
+    audit = service.audit_rigor()
+
+    finding = next(
+        item for item in audit.findings
+        if item.code == "INQUIRY_OPEN_QUESTIONS_UNRESOLVED"
+    )
+    assert finding.severity is RigorSeverity.WARNING
+    assert finding.entity_id == "ambiguity-audit"
+    assert "live ambiguity rather than evidence" in finding.message
+    assert "q-author00" in finding.remediation
+    assert audit.structurally_valid is True
+
+    synthesis = service.build_synthesis()["content"]
+    assert "- Open questions still unresolved: 1" in synthesis
+    assert "INQUIRY_OPEN_QUESTIONS_UNRESOLVED (1)" in synthesis
+    assert service.verify_ledger()["valid"]
+
+
+def _prepared_run(
+    root: Path,
+    *,
+    protocol_overrides: dict | None = None,
+    run_summary: str = "",
+    gate_summary: str = "Candidate passed and invalid control failed.",
+):
+    service = _service(root)
+    service.init_workspace()
+    service.create_inquiry(
+        CreateInquiry("Rigor gate", "Can the result survive overclaim checks?", "rigor")
+    )
+    hypothesis = service.propose_hypothesis(
+        ProposeHypothesis(
+            statement="The candidate preserves the registered invariant.",
+            observable_prediction="The checker accepts the invariant.",
+            null_model="The checker rejects the invariant.",
+            falsification_conditions=["A required checker gate fails."],
+        )
+    )
+    service.activate_hypothesis(hypothesis.hypothesis_id)
+    protocol_values = {
+        "experiment_id": "rigor-check",
+        "title": "Controlled invariant check",
+        "analysis_mode": AnalysisMode.CONFIRMATORY,
+        "hypotheses_tested": [hypothesis.hypothesis_id],
+        "primary_outcome": "Checker acceptance",
+        "protocol_kind": ProtocolKind.FORMAL,
+        "methodology": "Replay the candidate and a deliberately invalid control.",
+        "quality_requirements": ["checker"],
+        "controls": ["The deliberately invalid candidate must fail."],
+        "expected_outputs": ["Checker transcript"],
+        "success_conditions": ["The candidate passes and the control fails."],
+        "environment_requirements": ["Pinned checker"],
+        "sample_size_or_stopping_rule": "One candidate and one fixed negative control.",
+        "failure_conditions": ["Any required assertion fails."],
+        "safety_constraints": ["No physical intervention."],
+        "analysis_code_hash": "a" * 64,
+    }
+    protocol_values.update(protocol_overrides or {})
+    draft = service.create_protocol(CreateProtocol(**protocol_values))
+    protocol = service.freeze_protocol(draft.protocol_id)
+    output = root / "result.json"
+    output.write_text('{"checker":"passed"}\n', encoding="utf-8")
+    output_sha256 = hashlib.sha256(output.read_bytes()).hexdigest()
+    run = service.record_run(
+        RecordRun(
+            protocol_id=protocol.protocol_id,
+            started_at="2026-09-02T12:01:00Z",
+            completed_at="2026-09-02T12:02:00Z",
+            analysis_code_hash="a" * 64,
+            environment_hash="b" * 64,
+            output_artifacts=[DatasetArtifact(
+                "result.json", output_sha256, output.stat().st_size,
+                "application/json",
+            )],
+            artifact_root=str(root),
+            quality_gates=[
+                QualityGateResult(
+                    gate_id="checker",
+                    status=QualityGateStatus.PASSED,
+                    summary=gate_summary,
+                    details={"evidence_sha256": output_sha256},
+                )
+            ],
+            summary=run_summary,
+            metadata={"protocol_deviation_disclosure": {
+                "status": "no_deviations_declared", "deviations": [],
+            }, "result_exposure_disclosure": {
+                "status": "no_relevant_output_seen", "exposures": [],
+            }},
+        )
+    )
+    return service, hypothesis, run
+
+
+def test_rigor_reports_missed_precision_without_marking_run_invalid(tmp_path) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path)
+    repository = service.repository
+    inquiry_id = repository.resolve_inquiry_id(None)
+    protocol = service.get_protocol(run.protocol_id)
+    precision_protocol = replace(
+        protocol, sample_size_plan={"strategy": "precision"},
+    )
+    observed_run = replace(run, metadata={
+        **run.metadata,
+        "sample_size_plan_check": {
+            "status": "passed",
+            "precision_achievement": {
+                "status": "not_met", "target_half_width": 1.0,
+                "observed_half_width": 1.5,
+            },
+            "attrition_achievement": {
+                "status": "exceeded_assumption",
+                "anticipated_attrition_fraction": 0.1,
+                "observed_excluded_fraction": 0.15,
+                "observed_excluded_fraction_by_group": {"a": 0.1, "b": 0.2},
+            },
+            "variance_assumption": {
+                "status": "exceeded_registered_tolerance",
+                "observed_to_assumed_ratio": 1.5,
+                "maximum_registered_ratio": 1.25,
+                "assumed_standard_deviation": 2.0,
+                "observed_pooled_standard_deviation": 3.0,
+                "measurement_unit": "fixture units",
+                "adequacy_threshold_registered": True,
+            },
+        },
+    })
+    inquiry = repository.load_inquiry(inquiry_id)
+    claims = repository.load_claims(inquiry_id)
+    evidence = repository.list_evidence(inquiry_id)
+    datasets = repository.list_datasets(inquiry_id)
+    audit = audit_research_state(
+        inquiry=inquiry, claims=claims,
+        hypotheses=[hypothesis], evidence=evidence, datasets=datasets,
+        protocols=[precision_protocol], runs=[observed_run],
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "RUN_PRECISION_TARGET_NOT_MET"
+    )
+    assert finding.entity_id == run.run_id
+    assert "observed half-width 1.5 against target 1" in finding.remediation
+    attrition_finding = next(
+        item for item in audit.findings
+        if item.code == "RUN_ATTRITION_EXCEEDED_PLANNING_ASSUMPTION"
+    )
+    assert "observed excluded fraction 0.15 against anticipated 0.1" in attrition_finding.remediation
+    variance_finding = next(
+        item for item in audit.findings
+        if item.code == "RUN_VARIANCE_EXCEEDED_REGISTERED_TOLERANCE"
+    )
+    assert "ratio 1.5 against registered maximum 1.25" in variance_finding.remediation
+    assert observed_run.status.value == "completed"
+    assert observed_run.scientific_evidence_eligible is True
+    synthesis = build_synthesis(
+        inquiry, [], claims, [hypothesis], evidence, datasets,
+        [precision_protocol], [observed_run], [], [], audit, [],
+    )
+    assert "Precision target: not_met; target half-width 1.0" in synthesis
+    assert "evidence eligible: yes" in synthesis
+    assert "A missed target does not erase the result or imply invalidity." in synthesis
+    assert "Attrition assumption: exceeded_assumption" in synthesis
+    assert "Variability assumption: exceeded_registered_tolerance" in synthesis
+    assert "Registered maximum ratio 1.25." in synthesis
+    assert "a planning miss does not erase the result or imply invalidity." in synthesis
+
+
+def test_rigor_and_synthesis_expose_protocol_factor_interpretability(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, run = _prepared_run(
+        tmp_path / "workspace",
+        protocol_overrides={
+            "manipulated_factors": ["person", "room"],
+            "factorial_or_crossover_design": True,
+            "factor_interpretability_plan": (
+                "Cross person and room assignments before interpreting either factor."
+            ),
+        },
+    )
+    repository = service.repository
+    inquiry_id = repository.resolve_inquiry_id(None)
+    protocols = repository.list_protocols(inquiry_id)
+    audit = audit_research_state(
+        inquiry=repository.load_inquiry(inquiry_id),
+        claims=repository.load_claims(inquiry_id),
+        hypotheses=[hypothesis],
+        evidence=repository.list_evidence(inquiry_id),
+        datasets=repository.list_datasets(inquiry_id),
+        protocols=protocols,
+        runs=[run],
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "PROTOCOL_FACTOR_INTERPRETABILITY_DECLARED"
+    )
+    assert finding.entity_id == run.protocol_id
+    synthesis = build_synthesis(
+        repository.load_inquiry(inquiry_id),
+        repository.load_questions(inquiry_id),
+        repository.load_claims(inquiry_id),
+        [hypothesis],
+        repository.list_evidence(inquiry_id),
+        repository.list_datasets(inquiry_id),
+        protocols,
+        [run],
+        [],
+        [],
+        audit,
+        [],
+    )
+    assert "Manipulated-factor interpretability" in synthesis
+    assert "person, room (factorial/crossover declared; plan:" in synthesis
+    assert "not proof that factor effects are separable" in synthesis
+
+
+def test_rigor_and_synthesis_expose_protocol_acquisition_timing(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, run = _prepared_run(
+        tmp_path / "workspace",
+        protocol_overrides={
+            "sensor_requirements": [
+                "audio recorder at 48 kHz",
+                "event marker stream",
+            ],
+            "clock_accuracy_requirement": (
+                "Clock drift remains below 10 ms across the tested lag window."
+            ),
+            "control_windows": ["pre-event baseline", "random-time negative window"],
+        },
+    )
+    repository = service.repository
+    inquiry_id = repository.resolve_inquiry_id(None)
+    protocols = repository.list_protocols(inquiry_id)
+    audit = audit_research_state(
+        inquiry=repository.load_inquiry(inquiry_id),
+        claims=repository.load_claims(inquiry_id),
+        hypotheses=[hypothesis],
+        evidence=repository.list_evidence(inquiry_id),
+        datasets=repository.list_datasets(inquiry_id),
+        protocols=protocols,
+        runs=[run],
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "PROTOCOL_ACQUISITION_TIMING_DECLARED"
+    )
+    assert finding.entity_id == run.protocol_id
+    synthesis = build_synthesis(
+        repository.load_inquiry(inquiry_id),
+        repository.load_questions(inquiry_id),
+        repository.load_claims(inquiry_id),
+        [hypothesis],
+        repository.list_evidence(inquiry_id),
+        repository.list_datasets(inquiry_id),
+        protocols,
+        [run],
+        [],
+        [],
+        audit,
+        [],
+    )
+    assert "Acquisition timing commitments" in synthesis
+    assert "audio recorder at 48 kHz, event marker stream" in synthesis
+    assert "Clock drift remains below 10 ms" in synthesis
+    assert "pre-event baseline, random-time negative window" in synthesis
+    assert (
+        "not proof of sensor custody, calibration, synchronization, or clock accuracy"
+        in synthesis
+    )
+
+
+def test_rigor_flags_legacy_control_windows_without_clock_accuracy(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path / "workspace")
+    repository = service.repository
+    inquiry_id = repository.resolve_inquiry_id(None)
+    legacy = replace(
+        repository.list_protocols(inquiry_id)[0],
+        control_windows=["pre-event baseline"],
+        clock_accuracy_requirement="",
+    )
+    audit = audit_research_state(
+        inquiry=repository.load_inquiry(inquiry_id),
+        claims=repository.load_claims(inquiry_id),
+        hypotheses=[hypothesis],
+        evidence=repository.list_evidence(inquiry_id),
+        datasets=repository.list_datasets(inquiry_id),
+        protocols=[legacy],
+        runs=[run],
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "PROTOCOL_CONTROL_WINDOWS_WITHOUT_CLOCK_ACCURACY"
+    )
+    assert finding.severity is RigorSeverity.ERROR
+    synthesis = build_synthesis(
+        repository.load_inquiry(inquiry_id),
+        repository.load_questions(inquiry_id),
+        repository.load_claims(inquiry_id),
+        [hypothesis],
+        repository.list_evidence(inquiry_id),
+        repository.list_datasets(inquiry_id),
+        [legacy],
+        [run],
+        [],
+        [],
+        audit,
+        [],
+    )
+    assert "clock accuracy/synchronization: missing" in synthesis
+    assert "pre-event baseline" in synthesis
+
+
+def test_rigor_flags_inverted_claim_dependency_levels(tmp_path: Path) -> None:
+    inquiry = CreateInquiry(
+        "Claim ladder",
+        "Can a lower-level claim depend on a stronger conclusion?",
+        "claim-ladder",
+    )
+    service = _service(tmp_path)
+    service.init_workspace()
+    service.create_inquiry(inquiry)
+    causal = service.add_claim(
+        AddClaim(
+            statement="The registered condition caused the event in scope.",
+            level=ClaimLevel.CAUSAL_DIRECTION,
+        )
+    )
+    measurement = Claim(
+        claim_id="clm-inverted",
+        statement="The instrument detected the event.",
+        level=ClaimLevel.MEASUREMENT_VALIDITY,
+        created_at="2026-09-02T12:00:00Z",
+        parent_claims=[causal.claim_id],
+    )
+    audit = audit_research_state(
+        inquiry=service.repository.load_inquiry("claim-ladder"),
+        claims=[causal, measurement],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[],
+        runs=[],
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "CLAIM_DEPENDENCY_LEVEL_INVERTED"
+    )
+    assert finding.entity_id == measurement.claim_id
+    assert causal.claim_id in finding.message
+
+
+@pytest.mark.parametrize(
+    ("claim_level", "statement", "message_fragment"),
+    [
+        (
+            ClaimLevel.MECHANISM,
+            "The proposed mechanism explains the observed pattern.",
+            "supporting evidence cannot target mechanism",
+        ),
+        (
+            ClaimLevel.LEGAL_CHARACTERIZATION,
+            "The observed pattern establishes legal responsibility.",
+            "legal-characterization",
+        ),
+    ],
+)
+def test_rigor_flags_legacy_support_for_explanatory_claim_levels(
+    tmp_path: Path,
+    claim_level: ClaimLevel,
+    statement: str,
+    message_fragment: str,
+) -> None:
+    service = _service(tmp_path)
+    service.init_workspace()
+    service.create_inquiry(
+        CreateInquiry(
+            "Mechanism ceiling",
+            "Can weak validation tags support a mechanism claim?",
+            "mechanism-ceiling",
+        )
+    )
+    hypothesis = service.propose_hypothesis(
+        ProposeHypothesis(
+            statement="A mechanism explains the observed pattern.",
+            observable_prediction="The registered pattern recurs.",
+            null_model="The pattern does not recur beyond measurement error.",
+            competing_models=["Measurement error creates the pattern."],
+            falsification_conditions=["The registered pattern is absent."],
+        )
+    )
+    hypothesis = service.activate_hypothesis(hypothesis.hypothesis_id)
+    claim = service.add_claim(
+        AddClaim(
+            statement=statement,
+            level=claim_level,
+        )
+    )
+    dataset = DatasetManifest(
+        "dataset-mechanism-fixture",
+        "Mechanism fixture",
+        DatasetRole.EXPLORATORY,
+        "2026-09-02T12:00:00Z",
+        [DatasetArtifact("mechanism.csv", "a" * 64)],
+    )
+    evidence = EvidenceRecord(
+        "evd-legacy-mechanism",
+        hypothesis.hypothesis_id,
+        EvidenceDirection.SUPPORTS,
+        "A legacy fixture incorrectly supports the mechanism claim.",
+        dataset.dataset_id,
+        "analysis-mechanism-fixture",
+        "2026-09-02T12:00:00Z",
+        claim_id=claim.claim_id,
+        uncertainty="The fixture does not distinguish mechanism from alternatives.",
+        scope="Synthetic fixture only.",
+        controls_passed=["negative control fixture"],
+        higher_level_conclusions_unsupported=[
+            "Adaptation and intent remain unsupported."
+        ],
+        validation_tags=[ValidationTag.CALIBRATION],
+        exploratory=True,
+    )
+    audit = audit_research_state(
+        inquiry=service.repository.load_inquiry("mechanism-ceiling"),
+        claims=[claim],
+        hypotheses=[hypothesis],
+        evidence=[evidence],
+        datasets=[dataset],
+        protocols=[],
+        runs=[],
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "VALIDATION_TAG_UNSUPPORTED"
+    )
+    assert finding.entity_id == evidence.evidence_id
+    assert message_fragment in finding.message
+
+
+def test_rigor_replays_execution_method_inference_ceiling_for_legacy_evidence(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path / "workspace")
+    claim = service.add_claim(
+        AddClaim(
+            statement="The registered condition is associated with the measured outcome.",
+            level=ClaimLevel.STATISTICAL_ASSOCIATION,
+        )
+    )
+    evidence = service.record_evidence(
+        _classified_evidence(hypothesis.hypothesis_id, run.run_id)
+    )
+    legacy_evidence = replace(evidence, claim_id=claim.claim_id)
+    legacy_run = replace(
+        run,
+        metadata={
+            **run.metadata,
+            "execution_handoff": {
+                "result": {"maximum_inference_level": "descriptive"}
+            },
+        },
+    )
+    repository = service.repository
+    inquiry_id = repository.resolve_inquiry_id(None)
+
+    audit = audit_research_state(
+        inquiry=repository.load_inquiry(inquiry_id),
+        claims=[claim],
+        hypotheses=[hypothesis],
+        evidence=[legacy_evidence],
+        datasets=repository.list_datasets(inquiry_id),
+        protocols=repository.list_protocols(inquiry_id),
+        runs=[legacy_run],
+    )
+
+    finding = next(
+        item for item in audit.findings
+        if item.code == "VALIDATION_TAG_UNSUPPORTED"
+    )
+    assert finding.entity_id == legacy_evidence.evidence_id
+    assert "executed method inference ceiling" in finding.message
+    assert "descriptive permits measurement_validity" in finding.message
+
+
+def test_rigor_flags_legacy_unresolved_multi_factor_protocol(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path / "workspace")
+    repository = service.repository
+    inquiry_id = repository.resolve_inquiry_id(None)
+    protocol = replace(
+        repository.list_protocols(inquiry_id)[0],
+        manipulated_factors=["person", "room"],
+    )
+    audit = audit_research_state(
+        inquiry=repository.load_inquiry(inquiry_id),
+        claims=repository.load_claims(inquiry_id),
+        hypotheses=[hypothesis],
+        evidence=repository.list_evidence(inquiry_id),
+        datasets=repository.list_datasets(inquiry_id),
+        protocols=[protocol],
+        runs=[run],
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "PROTOCOL_FACTOR_INTERPRETABILITY_UNRESOLVED"
+    )
+    assert finding.severity is RigorSeverity.ERROR
+    synthesis = build_synthesis(
+        repository.load_inquiry(inquiry_id),
+        repository.load_questions(inquiry_id),
+        repository.load_claims(inquiry_id),
+        [hypothesis],
+        repository.list_evidence(inquiry_id),
+        repository.list_datasets(inquiry_id),
+        [protocol],
+        [run],
+        [],
+        [],
+        audit,
+        [],
+    )
+    assert "person, room (missing factorial/crossover declaration" in synthesis
+    assert "missing factor-interpretability plan" in synthesis
+
+
+def _classified_evidence(hypothesis_id: str, run_id: str, **overrides):
+    values = {
+        "hypothesis_id": hypothesis_id,
+        "direction": EvidenceDirection.SUPPORTS,
+        "summary": "The registered controlled checker accepted the candidate.",
+        "analysis_id": "",
+        "run_id": run_id,
+        "uncertainty": "Bounded to the pinned formal system and checker.",
+        "scope": "The registered invariant only.",
+        "controls_passed": ["The deliberately invalid candidate was rejected."],
+        "higher_level_conclusions_unsupported": [
+            "The candidate is empirically correct.",
+            "The result is independently replicated.",
+        ],
+        "validation_tags": [
+            ValidationTag.INTERNAL_CONSISTENCY,
+            ValidationTag.CONTROLLED_BENCHMARK,
+        ],
+        "exploratory": False,
+    }
+    values.update(overrides)
+    return RecordEvidence(**values)
+
+
+def test_rigor_flags_legacy_overclaiming_evidence_summary_without_rewriting(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path / "workspace")
+    evidence = service.record_evidence(
+        _classified_evidence(hypothesis.hypothesis_id, run.run_id)
+    )
+    legacy_evidence = replace(
+        evidence,
+        summary=(
+            "This confirmed, explained, validated, and established legal "
+            "responsibility."
+        ),
+    )
+    repository = service.repository
+    inquiry_id = repository.resolve_inquiry_id(None)
+    hypotheses = repository.list_hypotheses(inquiry_id)
+    audit = audit_research_state(
+        inquiry=repository.load_inquiry(inquiry_id),
+        claims=repository.load_claims(inquiry_id),
+        hypotheses=hypotheses,
+        evidence=[legacy_evidence],
+        datasets=repository.list_datasets(inquiry_id),
+        protocols=repository.list_protocols(inquiry_id),
+        runs=repository.list_runs(inquiry_id),
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "EVIDENCE_SUMMARY_OVERCLAIM_LANGUAGE"
+    )
+    assert finding.entity_id == evidence.evidence_id
+    assert (
+        "confirmed, explained, validated, established legal responsibility"
+        in finding.message
+    )
+    assert "Do not rewrite" in finding.remediation
+    synthesis = build_synthesis(
+        repository.load_inquiry(inquiry_id),
+        repository.load_questions(inquiry_id),
+        repository.load_claims(inquiry_id),
+        hypotheses,
+        [legacy_evidence],
+        repository.list_datasets(inquiry_id),
+        repository.list_protocols(inquiry_id),
+        repository.list_runs(inquiry_id),
+        [],
+        [],
+        audit,
+        [],
+    )
+    assert (
+        "This confirmed, explained, validated, and established legal responsibility."
+        in synthesis
+    )
+    assert "EVIDENCE_SUMMARY_OVERCLAIM_LANGUAGE (1)" in synthesis
+
+
+@pytest.mark.parametrize(
+    ("field", "value", "message"),
+    [
+        ("run", "This confirmed the execution result.", "run summary"),
+        ("gate", "This gate explained the mechanism.", "quality gate summary"),
+        ("gate", "This gate validates the causal mechanism.", "quality gate summary"),
+        ("run", "This run establishes legal responsibility.", "run summary"),
+        ("gate", "This gate finds fraudulent intent.", "quality gate summary"),
+    ],
+)
+def test_new_run_and_gate_summaries_reject_report_overclaim_language(
+    tmp_path: Path,
+    field: str,
+    value: str,
+    message: str,
+) -> None:
+    kwargs = {"run_summary": value} if field == "run" else {"gate_summary": value}
+    with pytest.raises(ValidationError, match=message):
+        _prepared_run(tmp_path / field, **kwargs)
+
+
+def test_rigor_flags_legacy_overclaiming_run_and_gate_summaries_without_rewriting(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path / "workspace")
+    legacy_run = replace(
+        run,
+        summary="The run confirmed, validated, and established legal responsibility.",
+        quality_gates=[
+            replace(
+                run.quality_gates[0],
+                summary="The gate explained the effect and found fraudulent intent.",
+            )
+        ],
+    )
+    repository = service.repository
+    inquiry_id = repository.resolve_inquiry_id(None)
+    audit = audit_research_state(
+        inquiry=repository.load_inquiry(inquiry_id),
+        claims=repository.load_claims(inquiry_id),
+        hypotheses=[hypothesis],
+        evidence=repository.list_evidence(inquiry_id),
+        datasets=repository.list_datasets(inquiry_id),
+        protocols=repository.list_protocols(inquiry_id),
+        runs=[legacy_run],
+    )
+
+    run_finding = next(
+        item for item in audit.findings
+        if item.code == "RUN_SUMMARY_OVERCLAIM_LANGUAGE"
+    )
+    gate_finding = next(
+        item for item in audit.findings
+        if item.code == "QUALITY_GATE_SUMMARY_OVERCLAIM_LANGUAGE"
+    )
+    assert run_finding.entity_id == run.run_id
+    assert (
+        "confirmed, validated, established legal responsibility"
+        in run_finding.message
+    )
+    assert gate_finding.entity_id == f"{run.run_id}:checker"
+    assert "explained, found fraudulent intent" in gate_finding.message
+    synthesis = build_synthesis(
+        repository.load_inquiry(inquiry_id),
+        repository.load_questions(inquiry_id),
+        repository.load_claims(inquiry_id),
+        [hypothesis],
+        repository.list_evidence(inquiry_id),
+        repository.list_datasets(inquiry_id),
+        repository.list_protocols(inquiry_id),
+        [legacy_run],
+        [],
+        [],
+        audit,
+        [],
+    )
+    assert "RUN_SUMMARY_OVERCLAIM_LANGUAGE (1)" in synthesis
+    assert "QUALITY_GATE_SUMMARY_OVERCLAIM_LANGUAGE (1)" in synthesis
+
+
+def _status_command(
+    evidence_id: str, root: Path, name: str, status: str, **overrides
+) -> RecordEvidenceStatusEvent:
+    artifact = root / name
+    artifact.write_text(f"{status} review for {evidence_id}", encoding="utf-8")
+    values = {
+        "evidence_id": evidence_id,
+        "status": status,
+        "effective_at": "2026-09-02T12:00:00Z",
+        "reason": f"Independent review classified this evidence as {status}.",
+        "review_artifact_locator": name,
+        "review_artifact_sha256": hashlib.sha256(artifact.read_bytes()).hexdigest(),
+        "review_artifact_root": str(root),
+    }
+    values.update(overrides)
+    return RecordEvidenceStatusEvent(**values)
+
+
+def test_append_only_retraction_removes_evidence_from_current_rigor_not_history(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path / "workspace")
+    evidence = service.record_evidence(
+        _classified_evidence(hypothesis.hypothesis_id, run.run_id)
+    )
+    assert service.audit_rigor().capabilities["controlled_benchmark"] is True
+    review_root = tmp_path / "reviews"
+    review_root.mkdir()
+    event = service.record_evidence_status_event(
+        _status_command(evidence.evidence_id, review_root, "retraction.txt", "retracted")
+    )
+    assert event.sequence == 1
+    assert service.list_evidence()[0].evidence_id == evidence.evidence_id
+    synthesis = service.build_synthesis()["content"]
+    assert "current status: retracted" in synthesis
+    assert "Currently contributing evidence records: 0" in synthesis
+    assert "Evidence correction and retraction history" in synthesis
+    assert service.audit_rigor().capabilities["controlled_benchmark"] is False
+    (review_root / "retraction.txt").write_text("review bytes changed", encoding="utf-8")
+    with pytest.raises(ValidationError, match="no longer matches its integrity receipt"):
+        service.build_synthesis()
+
+
+def test_evidence_status_chain_requires_exact_predecessor_and_retraction_is_terminal(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path / "workspace")
+    evidence = service.record_evidence(
+        _classified_evidence(hypothesis.hypothesis_id, run.run_id)
+    )
+    review_root = tmp_path / "reviews"
+    review_root.mkdir()
+    qualified = service.record_evidence_status_event(
+        _status_command(evidence.evidence_id, review_root, "qualified.txt", "qualified")
+    )
+    with pytest.raises(ValidationError, match="exact latest"):
+        service.record_evidence_status_event(
+            _status_command(evidence.evidence_id, review_root, "bad.txt", "active")
+        )
+    retracted = service.record_evidence_status_event(
+        _status_command(
+            evidence.evidence_id,
+            review_root,
+            "retracted.txt",
+            "retracted",
+            supersedes_event_id=qualified.event_id,
+        )
+    )
+    assert retracted.sequence == 2
+    with pytest.raises(ValidationError, match="terminal"):
+        service.record_evidence_status_event(
+            _status_command(
+                evidence.evidence_id,
+                review_root,
+                "reinstate.txt",
+                "active",
+                supersedes_event_id=retracted.event_id,
+            )
+        )
+
+
+def test_evidence_status_write_replays_underlying_evidence_admission_receipt(
+    tmp_path: Path,
+) -> None:
+    workspace = tmp_path / "workspace"
+    service, hypothesis, run = _prepared_run(workspace)
+    evidence = service.record_evidence(
+        _classified_evidence(hypothesis.hypothesis_id, run.run_id)
+    )
+    evidence_file = next(workspace.rglob(f"{evidence.evidence_id}.json"))
+    tampered = json.loads(evidence_file.read_text(encoding="utf-8"))
+    tampered["summary"] = "A stronger conclusion inserted after admission."
+    evidence_file.write_text(json.dumps(tampered), encoding="utf-8")
+    review_root = tmp_path / "reviews"
+    review_root.mkdir()
+
+    with pytest.raises(ValidationError, match="admission receipt"):
+        service.record_evidence_status_event(
+            _status_command(
+                evidence.evidence_id,
+                review_root,
+                "qualified.txt",
+                "qualified",
+            )
+        )
+
+
+@pytest.mark.parametrize(
+    ("field", "value", "message"),
+    [
+        ("evidence_id", "{evidence_id} ", "evidence_id must be canonical"),
+        ("status", " qualified", "evidence status must be canonical"),
+        ("event_id", " evidence-status-manual", "event_id must be canonical"),
+        ("reason", " Independent review classified this evidence as qualified. ", "evidence status reason must be canonical"),
+        ("review_artifact_locator", " qualified.txt", "review_artifact_locator must be canonical"),
+        ("review_artifact_root", "{root} ", "review_artifact_root must be canonical"),
+    ],
+)
+def test_evidence_status_command_handles_must_be_canonical(
+    tmp_path: Path, field, value, message
+) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path / "workspace")
+    evidence = service.record_evidence(
+        _classified_evidence(hypothesis.hypothesis_id, run.run_id)
+    )
+    review_root = tmp_path / "reviews"
+    review_root.mkdir()
+    if value == "{evidence_id} ":
+        value = f"{evidence.evidence_id} "
+    elif value == "{root} ":
+        value = f"{review_root} "
+
+    command = _status_command(
+        evidence.evidence_id, review_root, "qualified.txt", "qualified",
+    )
+    with pytest.raises(ValidationError, match=message):
+        service.record_evidence_status_event(replace(command, **{field: value}))
+
+
+def test_evidence_status_command_rejects_overclaiming_reason(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path / "workspace")
+    evidence = service.record_evidence(
+        _classified_evidence(hypothesis.hypothesis_id, run.run_id)
+    )
+    review_root = tmp_path / "reviews"
+    review_root.mkdir()
+    command = _status_command(
+        evidence.evidence_id,
+        review_root,
+        "qualified.txt",
+        "qualified",
+        reason="Independent review validated the proposed mechanism.",
+    )
+
+    with pytest.raises(ValidationError, match="report-prohibited overclaiming"):
+        service.record_evidence_status_event(command)
+
+
+def test_evidence_status_supersedes_handle_must_be_canonical(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path / "workspace")
+    evidence = service.record_evidence(
+        _classified_evidence(hypothesis.hypothesis_id, run.run_id)
+    )
+    review_root = tmp_path / "reviews"
+    review_root.mkdir()
+    qualified = service.record_evidence_status_event(
+        _status_command(evidence.evidence_id, review_root, "qualified.txt", "qualified")
+    )
+
+    with pytest.raises(ValidationError, match="supersedes_event_id must be canonical"):
+        service.record_evidence_status_event(
+            _status_command(
+                evidence.evidence_id,
+                review_root,
+                "active.txt",
+                "active",
+                supersedes_event_id=f"{qualified.event_id} ",
+            )
+        )
+
+
+def test_evidence_status_reads_fail_closed_on_semantic_chain_tampering(
+    tmp_path: Path,
+) -> None:
+    workspace = tmp_path / "workspace"
+    service, hypothesis, run = _prepared_run(workspace)
+    evidence = service.record_evidence(
+        _classified_evidence(hypothesis.hypothesis_id, run.run_id)
+    )
+    review_root = tmp_path / "reviews"
+    review_root.mkdir()
+    event = service.record_evidence_status_event(
+        _status_command(evidence.evidence_id, review_root, "qualified.txt", "qualified")
+    )
+    event_file = next(workspace.rglob(f"{event.event_id}.json"))
+    tampered = json.loads(event_file.read_text(encoding="utf-8"))
+    tampered["sequence"] = 3
+    event_file.write_text(json.dumps(tampered), encoding="utf-8")
+    with pytest.raises(ValidationError, match="contiguous from 1"):
+        service.list_evidence_status_events()
+    with pytest.raises(ValidationError, match="contiguous from 1"):
+        service.audit_rigor()
+
+
+@pytest.mark.parametrize(
+    ("field", "value", "message"),
+    [
+        ("event_id", "{event_id} ", "evidence status event_id must be canonical"),
+        ("evidence_id", "{evidence_id} ", "evidence status evidence_id must be canonical"),
+        ("status", " qualified", "evidence status must be canonical"),
+        ("effective_at", " 2026-09-02T12:00:00Z", "evidence status effective_at must be canonical"),
+        ("supersedes_event_id", "{event_id} ", "evidence status supersedes_event_id must be canonical"),
+        ("review_artifact_locator", " qualified.txt", "review artifact locator must be canonical"),
+        ("review_artifact_root", "{root} ", "review artifact root must be canonical"),
+        ("created_by", " test-researcher", "evidence status created_by must be canonical"),
+        ("reason", " Independent review classified this evidence as qualified. ", "evidence status reason must be canonical"),
+        ("conclusion_ceiling", " Append-only evidence interpretation status.", "evidence status conclusion ceiling must be canonical"),
+    ],
+)
+def test_evidence_status_reads_fail_closed_on_noncanonical_chain_tampering(
+    tmp_path: Path, field, value, message
+) -> None:
+    workspace = tmp_path / "workspace"
+    service, hypothesis, run = _prepared_run(workspace)
+    evidence = service.record_evidence(
+        _classified_evidence(hypothesis.hypothesis_id, run.run_id)
+    )
+    review_root = tmp_path / "reviews"
+    review_root.mkdir()
+    event = service.record_evidence_status_event(
+        _status_command(evidence.evidence_id, review_root, "qualified.txt", "qualified")
+    )
+    if value == "{event_id} ":
+        value = f"{event.event_id} "
+    elif value == "{evidence_id} ":
+        value = f"{evidence.evidence_id} "
+    elif value == "{root} ":
+        value = f"{review_root} "
+    event_file = next(workspace.rglob(f"{event.event_id}.json"))
+    tampered = json.loads(event_file.read_text(encoding="utf-8"))
+    tampered[field] = value
+    event_file.write_text(json.dumps(tampered), encoding="utf-8")
+
+    with pytest.raises(ValidationError, match=message):
+        service.list_evidence_status_events()
+
+
+def test_evidence_status_reads_reject_overclaiming_reason(
+    tmp_path: Path,
+) -> None:
+    workspace = tmp_path / "workspace"
+    service, hypothesis, run = _prepared_run(workspace)
+    evidence = service.record_evidence(
+        _classified_evidence(hypothesis.hypothesis_id, run.run_id)
+    )
+    review_root = tmp_path / "reviews"
+    review_root.mkdir()
+    event = service.record_evidence_status_event(
+        _status_command(evidence.evidence_id, review_root, "qualified.txt", "qualified")
+    )
+    event_file = next(workspace.rglob(f"{event.event_id}.json"))
+    tampered = json.loads(event_file.read_text(encoding="utf-8"))
+    tampered["reason"] = "Independent review validated the proposed mechanism."
+    event_file.write_text(json.dumps(tampered), encoding="utf-8")
+
+    with pytest.raises(ValidationError, match="report-prohibited overclaiming"):
+        service.list_evidence_status_events()
+
+
+def test_evidence_status_reads_reject_overclaiming_conclusion_ceiling(
+    tmp_path: Path,
+) -> None:
+    workspace = tmp_path / "workspace"
+    service, hypothesis, run = _prepared_run(workspace)
+    evidence = service.record_evidence(
+        _classified_evidence(hypothesis.hypothesis_id, run.run_id)
+    )
+    review_root = tmp_path / "reviews"
+    review_root.mkdir()
+    event = service.record_evidence_status_event(
+        _status_command(evidence.evidence_id, review_root, "qualified.txt", "qualified")
+    )
+    event_file = next(workspace.rglob(f"{event.event_id}.json"))
+    tampered = json.loads(event_file.read_text(encoding="utf-8"))
+    tampered["conclusion_ceiling"] = "This status event validated the mechanism."
+    event_file.write_text(json.dumps(tampered), encoding="utf-8")
+
+    with pytest.raises(ValidationError, match="report-prohibited overclaiming"):
+        service.list_evidence_status_events()
+
+
+def test_new_evidence_requires_scope_ceiling_and_classification(tmp_path: Path) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path)
+    with pytest.raises(ValidationError, match="scope must not be empty"):
+        service.record_evidence(
+            RecordEvidence(
+                hypothesis_id=hypothesis.hypothesis_id,
+                direction=EvidenceDirection.INCONCLUSIVE,
+                summary="An unscoped result must fail.",
+                analysis_id="",
+                run_id=run.run_id,
+                exploratory=False,
+            )
+        )
+    with pytest.raises(ValidationError, match="uncertainty must not be empty"):
+        service.record_evidence(
+            _classified_evidence(
+                hypothesis.hypothesis_id,
+                run.run_id,
+                uncertainty=" ",
+            )
+        )
+    with pytest.raises(
+        ValidationError,
+        match="control disclosures must not contain duplicates",
+    ):
+        service.record_evidence(
+            _classified_evidence(
+                hypothesis.hypothesis_id,
+                run.run_id,
+                controls_passed=[
+                    "Negative control rejected the invalid candidate.",
+                    " Negative control rejected the invalid candidate. ",
+                ],
+            )
+        )
+    with pytest.raises(ValidationError, match="unclassified new evidence"):
+        service.record_evidence(
+            _classified_evidence(
+                hypothesis.hypothesis_id,
+                run.run_id,
+                validation_tags=[],
+            )
+        )
+    with pytest.raises(
+        ValidationError,
+        match="higher_level_conclusions_unsupported must not contain duplicates",
+    ):
+        service.record_evidence(
+            _classified_evidence(
+                hypothesis.hypothesis_id,
+                run.run_id,
+                higher_level_conclusions_unsupported=[
+                    "Mechanism remains unsupported.",
+                    " Mechanism remains unsupported. ",
+                ],
+            )
+        )
+
+
+def test_protocol_freeze_requires_controls_quality_gates_and_stop_rule(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, _ = _prepared_run(tmp_path)
+    draft = service.create_protocol(
+        CreateProtocol(
+            experiment_id="under-specified",
+            title="Under-specified protocol",
+            analysis_mode=AnalysisMode.CONFIRMATORY,
+            hypotheses_tested=[hypothesis.hypothesis_id],
+            primary_outcome="An assertion",
+            protocol_kind=ProtocolKind.FORMAL,
+            methodology="Run one checker.",
+            expected_outputs=["Output"],
+            success_conditions=["The assertion passes."],
+            environment_requirements=["Pinned checker"],
+            failure_conditions=["The assertion fails."],
+            safety_constraints=["No physical intervention."],
+            analysis_code_hash="9" * 64,
+        )
+    )
+    with pytest.raises(ValidationError) as captured:
+        service.freeze_protocol(draft.protocol_id)
+    message = str(captured.value)
+    assert "quality_requirements" in message
+    assert "controls" in message
+    assert "sample_size_or_stopping_rule" in message
+
+
+def test_rigor_warns_when_protected_protocol_lacks_discriminating_control_families():
+    from test_ethics_gate import _human_protocol
+
+    reference_only = replace(
+        _human_protocol(human_subjects=False),
+        status=ProtocolStatus.FROZEN,
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Control family audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[reference_only],
+        runs=[],
+    )
+    codes = {finding.code for finding in audit.findings}
+    assert "PROTECTED_PROTOCOL_WITHOUT_POSITIVE_CONTROL" in codes
+    assert "PROTECTED_PROTOCOL_WITHOUT_FALSIFYING_CONTROL" in codes
+
+    balanced = replace(
+        reference_only,
+        controls=["Known-effect sample", "Apparatus-only sample"],
+        control_definitions=[
+            ControlDefinition(
+                "positive-1", "Known-effect sample", "positive",
+                "Show the pipeline detects a known effect.",
+                "Known effect is detected.", "integrity",
+            ),
+            ControlDefinition(
+                "apparatus-only-1", "Apparatus-only sample", "apparatus_only",
+                "Reveal equipment or environment-generated artifacts.",
+                "No target-dependent signal is detected.", "integrity",
+            ),
+        ],
+    )
+    balanced_audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[balanced],
+        runs=[],
+    )
+    balanced_codes = {finding.code for finding in balanced_audit.findings}
+    assert "PROTECTED_PROTOCOL_WITHOUT_POSITIVE_CONTROL" not in balanced_codes
+    assert "PROTECTED_PROTOCOL_WITHOUT_FALSIFYING_CONTROL" not in balanced_codes
+
+
+def test_rigor_flags_legacy_protected_controls_without_structured_definitions():
+    from test_ethics_gate import _human_protocol
+
+    legacy = replace(
+        _human_protocol(human_subjects=False),
+        control_definitions=[],
+        status=ProtocolStatus.FROZEN,
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Legacy control audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[legacy],
+        runs=[],
+    )
+    codes = {finding.code for finding in audit.findings}
+    assert "PROTECTED_PROTOCOL_CONTROLS_UNSTRUCTURED" in codes
+    assert "PROTECTED_PROTOCOL_WITHOUT_POSITIVE_CONTROL" not in codes
+    assert "PROTECTED_PROTOCOL_WITHOUT_FALSIFYING_CONTROL" not in codes
+
+
+def test_typed_measurement_contract_rejects_omitted_control_time(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, _ = _prepared_run(tmp_path)
+    control = "The negative dissipator must violate complete positivity."
+
+    def measurement(
+        measurement_id: str,
+        role: MeasurementRole,
+        target: str,
+        point: str,
+    ) -> MeasurementDefinition:
+        return MeasurementDefinition(
+            measurement_id=measurement_id,
+            role=role,
+            registered_target=target,
+            observable="minimum Choi eigenvalue",
+            input_condition="fixed finite CQ generator",
+            parameter_values={"t": "0.01 dimensionless"},
+            evaluation_point=point,
+            convention="column-vectorization Choi convention",
+            aggregation="minimum over Hermitian eigenspectrum",
+            tolerance="absolute error <= 1e-6",
+            expected_behavior="negative for the malformed generator",
+        )
+
+    common = dict(
+        title="Typed CQ control contract",
+        analysis_mode=AnalysisMode.REPLICATION,
+        hypotheses_tested=[hypothesis.hypothesis_id],
+        primary_outcome="Main channel structural verdict",
+        protocol_kind=ProtocolKind.COMPUTATIONAL,
+        methodology="Evaluate the main channel and fixed malformed control.",
+        quality_requirements=["contract-check"],
+        controls=[control],
+        expected_outputs=["Measurement packet"],
+        success_conditions=["The fixed measurement contract is reproduced."],
+        environment_requirements=["Pinned numerical environment"],
+        sample_size_or_stopping_rule="Exactly one fixed evaluation.",
+        failure_conditions=["Any registered measurement is omitted."],
+        safety_constraints=["No physical intervention."],
+        analysis_code_hash="8" * 64,
+    )
+    untyped = service.create_protocol(
+        CreateProtocol(experiment_id="typed-cq-legacy", **common)
+    )
+    service.freeze_protocol(untyped.protocol_id)
+    audit = service.audit_rigor()
+    assert any(
+        item.code == "PROTECTED_COMPUTATIONAL_MEASUREMENTS_UNTYPED"
+        and item.entity_id == untyped.protocol_id
+        for item in audit.findings
+    )
+
+    incomplete = service.create_protocol(
+        CreateProtocol(
+            experiment_id="typed-cq-incomplete",
+            measurement_definitions=[
+                measurement(
+                    "main",
+                    MeasurementRole.PRIMARY,
+                    common["primary_outcome"],
+                    "t=0.05",
+                ),
+                measurement("negative", MeasurementRole.CONTROL, control, ""),
+            ],
+            **common,
+        )
+    )
+    with pytest.raises(ValidationError, match="evaluation_point"):
+        service.freeze_protocol(incomplete.protocol_id)
+
+    misaligned = service.create_protocol(
+        CreateProtocol(
+            experiment_id="typed-cq-misaligned",
+            measurement_definitions=[
+                measurement(
+                    "main",
+                    MeasurementRole.PRIMARY,
+                    common["primary_outcome"],
+                    "t=0.05",
+                ),
+                measurement(
+                    "negative",
+                    MeasurementRole.CONTROL,
+                    "An unregistered control",
+                    "t=0.01",
+                ),
+            ],
+            **common,
+        )
+    )
+    with pytest.raises(ValidationError, match="exactly one measurement"):
+        service.freeze_protocol(misaligned.protocol_id)
+
+    complete = service.create_protocol(
+        CreateProtocol(
+            experiment_id="typed-cq-complete",
+            measurement_definitions=[
+                measurement(
+                    "main",
+                    MeasurementRole.PRIMARY,
+                    common["primary_outcome"],
+                    "t=0.05",
+                ),
+                measurement("negative", MeasurementRole.CONTROL, control, "t=0.01"),
+            ],
+            **common,
+        )
+    )
+    frozen = service.freeze_protocol(complete.protocol_id)
+    assert frozen.measurement_definitions[1].evaluation_point == "t=0.01"
+    reloaded = service.get_protocol(frozen.protocol_id)
+    assert reloaded.measurement_definitions[0].role is MeasurementRole.PRIMARY
+
+
+def test_advanced_tags_cannot_overstate_a_formal_self_check(tmp_path: Path) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path)
+    with pytest.raises(ValidationError, match="replication-mode run"):
+        service.record_evidence(
+            _classified_evidence(
+                hypothesis.hypothesis_id,
+                run.run_id,
+                validation_tags=[ValidationTag.INDEPENDENT_REPLICATION],
+            )
+        )
+    with pytest.raises(ValidationError, match="observational or experimental"):
+        service.record_evidence(
+            _classified_evidence(
+                hypothesis.hypothesis_id,
+                run.run_id,
+                validation_tags=[ValidationTag.EMPIRICAL_TEST],
+            )
+        )
+
+
+def test_audit_flags_unverified_protected_dataset_observation_bytes() -> None:
+    from test_ethics_gate import _human_protocol
+
+    protocol = replace(
+        _human_protocol(human_subjects=False),
+        status=ProtocolStatus.FROZEN,
+    )
+    dataset = DatasetManifest(
+        dataset_id="protected-observations",
+        name="Protected observations",
+        role=DatasetRole.CONFIRMATORY,
+        created_at="2026-09-02T12:00:00Z",
+        artifacts=[DatasetArtifact("observations.csv", "a" * 64)],
+        protocol_id=protocol.protocol_id,
+        synthetic=False,
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Dataset integrity audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[dataset],
+        protocols=[protocol],
+        runs=[],
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "PROTECTED_DATASET_ARTIFACT_VERIFICATION_MISSING"
+    )
+    assert finding.severity is RigorSeverity.ERROR
+    assert finding.entity_id == dataset.dataset_id
+    assert "declared artifact hashes alone" in finding.remediation
+
+    verified_dataset = replace(
+        dataset,
+        metadata={
+            "dataset_artifact_verification": {
+                "artifact_integrity": {
+                    "status": "passed",
+                    "all_artifacts_match": True,
+                }
+            }
+        },
+    )
+    verified_audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[verified_dataset],
+        protocols=[protocol],
+        runs=[],
+    )
+    assert "PROTECTED_DATASET_ARTIFACT_VERIFICATION_MISSING" not in {
+        finding.code for finding in verified_audit.findings
+    }
+
+
+def test_audit_flags_missing_protected_dataset_measurement_custody() -> None:
+    from test_ethics_gate import _human_protocol
+
+    protocol = replace(
+        _human_protocol(
+            human_subjects=False,
+            measurement_custody_requirements=["clock-sync"],
+        ),
+        status=ProtocolStatus.FROZEN,
+        protocol_hash="c" * 64,
+    )
+    dataset = DatasetManifest(
+        dataset_id="custody-bound-observations",
+        name="Custody-bound observations",
+        role=DatasetRole.CONFIRMATORY,
+        created_at="2026-09-02T12:00:00Z",
+        artifacts=[DatasetArtifact("observations.csv", "a" * 64)],
+        protocol_id=protocol.protocol_id,
+        synthetic=False,
+        metadata={
+            "dataset_artifact_verification": {
+                "artifact_integrity": {
+                    "status": "passed",
+                    "all_artifacts_match": True,
+                }
+            }
+        },
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Measurement custody audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[dataset],
+        protocols=[protocol],
+        runs=[],
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "PROTECTED_DATASET_MEASUREMENT_CUSTODY_VERIFICATION_MISSING"
+    )
+    assert finding.severity is RigorSeverity.ERROR
+    assert finding.entity_id == dataset.dataset_id
+    assert "generic custody note" in finding.remediation
+    synthesis = build_synthesis(
+        inquiry,
+        [],
+        [],
+        [],
+        [],
+        [dataset],
+        [protocol],
+        [],
+        [],
+        [],
+        audit,
+        [],
+    )
+    assert "observation bytes: service-verified" in synthesis
+    assert "measurement custody: missing exact service verification" in synthesis
+    assert "not proof of consent truth, custody truth, measurement validity" in synthesis
+
+    verified_dataset = replace(
+        dataset,
+        metadata={
+            **dataset.metadata,
+            "measurement_custody_verification": {
+                "protocol_hash": protocol.protocol_hash,
+                "required_gate_ids": ["clock-sync"],
+                "custody_artifact_root": "/tmp/faraday-custody-fixture",
+                "custody_receipt_sha256": "b" * 64,
+                "artifact_integrity": {
+                    "status": "passed",
+                    "all_artifacts_match": True,
+                },
+            },
+        },
+    )
+    verified_audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[verified_dataset],
+        protocols=[protocol],
+        runs=[],
+    )
+    assert "PROTECTED_DATASET_MEASUREMENT_CUSTODY_VERIFICATION_MISSING" not in {
+        finding.code for finding in verified_audit.findings
+    }
+    verified_synthesis = build_synthesis(
+        inquiry,
+        [],
+        [],
+        [],
+        [],
+        [verified_dataset],
+        [protocol],
+        [],
+        [],
+        [],
+        verified_audit,
+        [],
+    )
+    assert "measurement custody: service-verified" in verified_synthesis
+
+
+def test_audit_flags_missing_protected_dataset_source_authority() -> None:
+    from test_ethics_gate import _human_protocol
+
+    protocol = replace(
+        _human_protocol(human_subjects=False),
+        status=ProtocolStatus.FROZEN,
+        protocol_hash="c" * 64,
+    )
+    dataset = DatasetManifest(
+        dataset_id="source-route-missing-observations",
+        name="Source-route missing observations",
+        role=DatasetRole.CONFIRMATORY,
+        created_at="2026-09-02T12:00:00Z",
+        artifacts=[DatasetArtifact("observations.csv", "a" * 64)],
+        protocol_id=protocol.protocol_id,
+        synthetic=False,
+        metadata={
+            "dataset_artifact_verification": {
+                "artifact_integrity": {
+                    "status": "passed",
+                    "all_artifacts_match": True,
+                }
+            }
+        },
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Dataset source route audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[dataset],
+        protocols=[protocol],
+        runs=[],
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "PROTECTED_DATASET_SOURCE_AUTHORITY_NOT_RECORDED"
+    )
+    assert finding.severity is RigorSeverity.WARNING
+    assert finding.entity_id == dataset.dataset_id
+    assert "plugin access, connector access, or dataset role" in finding.remediation
+
+    sourced_dataset = replace(
+        dataset,
+        metadata={
+            **dataset.metadata,
+            "source_authority": {
+                "source_type": "scientific_connector",
+                "source_name": "Registry connector fixture",
+                "source_record_id": "registry-record-1",
+                "retrieved_or_collected_at": "2026-09-02T11:00:00Z",
+                "limitations": ["Connector retrieval fixture only."],
+            },
+        },
+    )
+    sourced_audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[sourced_dataset],
+        protocols=[protocol],
+        runs=[],
+    )
+    assert "PROTECTED_DATASET_SOURCE_AUTHORITY_NOT_RECORDED" not in {
+        item.code for item in sourced_audit.findings
+    }
+
+
+def test_audit_flags_invalid_dataset_source_authority() -> None:
+    dataset = DatasetManifest(
+        dataset_id="invalid-source-route",
+        name="Invalid source route",
+        role=DatasetRole.EXPLORATORY,
+        created_at="2026-09-02T12:00:00Z",
+        artifacts=[DatasetArtifact("observations.csv", "a" * 64)],
+        synthetic=False,
+        metadata={
+            "source_authority": {
+                "source_type": "scientific_connector",
+                "source_name": "Registry connector fixture",
+                "source_record_id": "invalid-source-route-1",
+                "retrieved_or_collected_at": "2026-09-02T12:00:00Z",
+                "source_truth_verified": True,
+            },
+        },
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Dataset source route audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[dataset],
+        protocols=[],
+        runs=[],
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "DATASET_SOURCE_AUTHORITY_INVALID"
+    )
+    assert finding.severity is RigorSeverity.ERROR
+    assert finding.entity_id == dataset.dataset_id
+    assert "source_truth_verified must be false" in finding.remediation
+
+
+def test_audit_flags_invalid_workflow_materialization_metadata() -> None:
+    dataset = DatasetManifest(
+        dataset_id="invalid-workflow-materialization",
+        name="Invalid workflow materialization",
+        role=DatasetRole.EXPLORATORY,
+        created_at="2026-09-02T12:00:00Z",
+        artifacts=[DatasetArtifact("holm-family.csv", "a" * 64)],
+        synthetic=False,
+        metadata={
+            "workflow_materialization_verification": {
+                "verification_version": 1,
+                "verified_at": "2026-09-02T12:00:00Z",
+                "verified_by": "faraday-fixture",
+                "status": "workflow_materialization_verified",
+                "protocol_id": "protocol-1",
+                "protocol_hash": "b" * 64,
+                "family_step_id": "holm-family",
+                "family_id": "confirmatory-family",
+                "dependency_manifest": {},
+                "materialization": {},
+                "output": {
+                    "path": "holm-family.csv",
+                    "sha256": "a" * 64,
+                    "row_count": 1,
+                },
+                "verified_sources": [{"source_step_id": "test-1"}],
+                "scope": (
+                    "Holm-family materialization from pinned source execution "
+                    "receipts and registered p-value selectors"
+                ),
+                "scientific_evidence_eligible": True,
+                "scientific_interpretation_verified": False,
+                "notice": (
+                    "Verifies local source receipt/result bytes and registered "
+                    "p-value selectors; it does not authenticate chronology, "
+                    "executors, scientific gates, or source data truth."
+                ),
+            },
+        },
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Workflow materialization audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[dataset],
+        protocols=[],
+        runs=[],
+    )
+    finding = next(
+        item for item in audit.findings
+        if item.code == "DATASET_WORKFLOW_MATERIALIZATION_INVALID"
+    )
+    assert finding.severity is RigorSeverity.ERROR
+    assert finding.entity_id == dataset.dataset_id
+    assert "must remain non-evidentiary" in finding.remediation
+
+
+def test_audit_flags_missing_human_subject_dataset_ethics_checks() -> None:
+    from test_ethics_gate import _human_protocol
+
+    condition = "Maintain the reviewed exclusion of minors throughout enrollment."
+    protocol = replace(
+        _human_protocol(
+            independent_review_decision="approved_with_conditions",
+            independent_review_conditions=[condition],
+        ),
+        status=ProtocolStatus.FROZEN,
+        protocol_hash="c" * 64,
+    )
+    dataset = DatasetManifest(
+        dataset_id="conditional-human-fixture",
+        name="Conditional human fixture",
+        role=DatasetRole.CONFIRMATORY,
+        created_at="2026-09-02T12:00:00Z",
+        artifacts=[DatasetArtifact("observations.csv", "a" * 64)],
+        protocol_id=protocol.protocol_id,
+        synthetic=True,
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Ethics audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[dataset],
+        protocols=[protocol],
+        runs=[],
+    )
+    codes = {finding.code for finding in audit.findings}
+    assert "PROTECTED_DATASET_ETHICS_REVIEW_STATUS_CHECK_MISSING" in codes
+    assert "PROTECTED_DATASET_ETHICS_CONDITION_VERIFICATION_MISSING" in codes
+    synthesis = build_synthesis(
+        inquiry,
+        [],
+        [],
+        [],
+        [],
+        [dataset],
+        [protocol],
+        [],
+        [],
+        [],
+        audit,
+        [],
+    )
+    assert "observation bytes: synthetic dataset" in synthesis
+    assert "ethics status: missing active service check" in synthesis
+    assert "ethics conditions: missing exact service verification" in synthesis
+
+    verified_dataset = replace(
+        dataset,
+        metadata={
+            "ethics_review_status_check": {
+                "status": "active",
+                "basis": "frozen_independent_review_decision",
+                "protocol_id": protocol.protocol_id,
+                "protocol_hash": protocol.protocol_hash,
+            },
+            "ethics_condition_verification": {
+                "protocol_id": protocol.protocol_id,
+                "protocol_hash": protocol.protocol_hash,
+                "independent_review_receipt": protocol.independent_review_receipt,
+                "evidence_artifact_root": "/tmp/faraday-ethics-fixture",
+                "discharge_receipt_sha256": "b" * 64,
+                "condition_results": [{
+                    "condition": condition,
+                    "compliance_status": "satisfied",
+                    "rationale": "Synthetic fixture condition discharge.",
+                    "evidence_sha256": "d" * 64,
+                    "evidence_location": "/minors_enrolled",
+                    "valid_through": None,
+                }],
+                "evidence_location_checks": [{
+                    "condition": condition,
+                    "evidence_sha256": "d" * 64,
+                    "evidence_location": "/minors_enrolled",
+                    "location_kind": "json_pointer",
+                    "selected_value_sha256": "e" * 64,
+                    "status": "resolved",
+                }],
+                "artifact_integrity": {
+                    "status": "passed",
+                    "all_artifacts_match": True,
+                },
+            },
+        },
+    )
+    verified_audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[verified_dataset],
+        protocols=[protocol],
+        runs=[],
+    )
+    verified_codes = {finding.code for finding in verified_audit.findings}
+    assert "PROTECTED_DATASET_ETHICS_REVIEW_STATUS_CHECK_MISSING" not in verified_codes
+    assert "PROTECTED_DATASET_ETHICS_CONDITION_VERIFICATION_MISSING" not in verified_codes
+    verified_synthesis = build_synthesis(
+        inquiry,
+        [],
+        [],
+        [],
+        [],
+        [verified_dataset],
+        [protocol],
+        [],
+        [],
+        [],
+        verified_audit,
+        [],
+    )
+    assert "ethics status: active service check" in verified_synthesis
+    assert "ethics conditions: service-verified" in verified_synthesis
+
+
+@pytest.mark.parametrize(
+    ("field", "value", "message"),
+    [
+        ("dimension", " executor", "independence_dimensions item"),
+        ("allowed_input", " contract.md", "allowed_inputs\\[0\\].locator"),
+        ("disclosure", " contamination note ", "contamination_disclosures item"),
+        ("attestation", " attestation.json", "attestation_artifact"),
+        ("duplicate_dimension", None, "independence_dimensions must not contain duplicates"),
+        ("duplicate_allowed_input", None, "allowed_inputs must not contain duplicates"),
+        ("duplicate_disclosure", None, "contamination_disclosures must not contain duplicates"),
+    ],
+)
+def test_independent_replication_requires_canonical_clean_room_metadata(
+    tmp_path: Path, field, value, message
+) -> None:
+    _, hypothesis, original = _prepared_run(tmp_path)
+    independence = {
+        "design": "clean_room",
+        "independence_dimensions": ["executor", "implementation"],
+        "prior_implementation_accessed": False,
+        "allowed_inputs": [{"locator": "contract.md", "sha256": "2" * 64}],
+        "contamination_disclosures": ["none declared"],
+        "attestation_artifact": "attestation.json",
+    }
+    if field == "dimension":
+        independence["independence_dimensions"] = [value, "implementation"]
+    elif field == "allowed_input":
+        independence["allowed_inputs"] = [{"locator": value, "sha256": "2" * 64}]
+    elif field == "disclosure":
+        independence["contamination_disclosures"] = [value]
+    elif field == "attestation":
+        independence["attestation_artifact"] = value
+    elif field == "duplicate_dimension":
+        independence["independence_dimensions"] = [
+            "executor", "implementation", "executor"
+        ]
+    elif field == "duplicate_allowed_input":
+        independence["allowed_inputs"] = [
+            {"locator": "contract.md", "sha256": "2" * 64},
+            {"locator": "contract.md", "sha256": "2" * 64},
+        ]
+    elif field == "duplicate_disclosure":
+        independence["contamination_disclosures"] = [
+            "none declared", "none declared"
+        ]
+    replication = ResearchRun(
+        run_id="replication-run",
+        protocol_id="replication-protocol",
+        protocol_hash="p" * 64,
+        analysis_mode=AnalysisMode.REPLICATION,
+        started_at="2026-09-02T12:03:00Z",
+        completed_at="2026-09-02T12:04:00Z",
+        executed_by="replicator",
+        analysis_code_hash="d" * 64,
+        environment_hash="e" * 64,
+        output_artifacts=[DatasetArtifact(
+            "attestation.json",
+            "a" * 64,
+            metadata={"artifact_role": "independence_attestation"},
+        )],
+        quality_gates=[
+            QualityGateResult(
+                "replication-check",
+                QualityGateStatus.PASSED,
+                "Replication check passed.",
+                details={"evidence_sha256": "a" * 64},
+            )
+        ],
+        scientific_evidence_eligible=True,
+        metadata={
+            "replicates_run_id": original.run_id,
+            "replication_independence": independence,
+            "artifact_integrity": {
+                "status": "passed",
+                "all_artifacts_match": True,
+                "attestation_schema_matches_commitment": True,
+                "attestation_schema_valid": True,
+                "attestation_consistent": True,
+            },
+        },
+    )
+
+    with pytest.raises(ValidationError, match=message):
+        validate_validation_tag_context(
+            tags=[ValidationTag.INDEPENDENT_REPLICATION],
+            hypothesis=hypothesis,
+            exploratory=False,
+            protocol=None,
+            run=replication,
+            datasets=[],
+            controls_passed=[],
+            replicated_run=original,
+        )
+
+
+def test_audit_and_synthesis_publish_a_conservative_ceiling(tmp_path: Path) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path)
+    service.record_evidence(_classified_evidence(hypothesis.hypothesis_id, run.run_id))
+
+    audit = service.audit_rigor(fail_on="error")
+    assert audit.structurally_valid is True
+    assert audit.conclusion_ceiling == "controlled but internally generated result"
+    assert audit.capabilities["internal_consistency"] is True
+    assert audit.capabilities["controlled_benchmark"] is True
+    assert audit.capabilities["independent_replication"] is False
+    assert any(
+        finding.code == "CAPABILITY_INDEPENDENT_REPLICATION_ABSENT"
+        for finding in audit.findings
+    )
+    with pytest.raises(ValidationError, match="rigor audit failed"):
+        service.audit_rigor(fail_on="warning")
+
+    synthesis = service.build_synthesis()["content"]
+    assert "Epistemic rigor audit" in synthesis
+    assert "controlled but internally generated result" in synthesis
+    assert "independent_replication: absent" in synthesis
+
+
+def test_audit_warns_when_empirical_preprocessing_conformance_is_unreported(
+    tmp_path: Path,
+) -> None:
+    service, hypothesis, run = _prepared_run(tmp_path)
+    repository = service.repository
+    inquiry_id = repository.resolve_inquiry_id(None)
+    protocol = replace(
+        service.get_protocol(run.protocol_id),
+        protocol_kind=ProtocolKind.OBSERVATIONAL,
+        preprocessing_pipeline="Registered fixture preprocessing pipeline.",
+        measurement_definitions=[
+            MeasurementDefinition(
+                measurement_id="primary-measurement",
+                role=MeasurementRole.PRIMARY,
+                registered_target="Checker acceptance",
+                observable="Synthetic fixture outcome",
+                input_condition="All eligible fixture rows",
+                parameter_values={"scale": "fixture units"},
+                evaluation_point="registered endpoint",
+                convention="higher is larger",
+                aggregation="mean by group",
+                tolerance="exact fixture parsing",
+                expected_behavior="Reported regardless of direction",
+                data_column="outcome",
+                temporal_role="not_applicable",
+                scale_type="interval",
+                unit="fixture units",
+                valid_min=0.0,
+                valid_max=100.0,
+                missing_value_codes=["<blank>"],
+            )
+        ],
+    )
+
+    audit = audit_research_state(
+        inquiry=repository.load_inquiry(inquiry_id),
+        claims=repository.load_claims(inquiry_id),
+        hypotheses=[hypothesis],
+        evidence=repository.list_evidence(inquiry_id),
+        datasets=repository.list_datasets(inquiry_id),
+        protocols=[protocol],
+        runs=[run],
+    )
+
+    assert any(
+        finding.code == "PROTECTED_EMPIRICAL_PREPROCESSING_CONFORMANCE_UNASSESSED"
+        and finding.entity_id == protocol.protocol_id
+        for finding in audit.findings
+    )
+
+
+def test_audit_warns_when_acquisition_and_timing_commitments_are_unassessed() -> None:
+    from test_ethics_gate import _human_protocol
+
+    protocol = replace(
+        _human_protocol(
+            human_subjects=False,
+            sensor_requirements=["audio stream", "event marker stream"],
+            clock_accuracy_requirement="Clock uncertainty below 10 ms.",
+            control_windows=["pre-event baseline"],
+        ),
+        status=ProtocolStatus.FROZEN,
+    )
+    run = ResearchRun(
+        run_id="acquisition-run",
+        protocol_id=protocol.protocol_id,
+        protocol_hash=protocol.protocol_hash or "f" * 64,
+        analysis_mode=protocol.analysis_mode,
+        started_at="2026-09-02T12:01:00Z",
+        completed_at="2026-09-02T12:02:00Z",
+        executed_by="fixture",
+        analysis_code_hash="a" * 64,
+        environment_hash="b" * 64,
+        quality_gates=[
+            QualityGateResult(
+                "integrity",
+                QualityGateStatus.PASSED,
+                "Synthetic fixture gate.",
+                details={"evidence_sha256": "c" * 64},
+            )
+        ],
+        synthetic=True,
+        metadata={
+            "protocol_deviation_disclosure": {
+                "status": "no_deviations_declared",
+                "deviations": [],
+            }
+        },
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Acquisition audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[run],
+    )
+    codes = {finding.code for finding in audit.findings}
+    assert "PROTECTED_EMPIRICAL_ACQUISITION_INSPECTION_UNASSESSED" in codes
+    assert "PROTECTED_EMPIRICAL_STREAM_TIMING_UNASSESSED" in codes
+
+    assessed_run = replace(
+        run,
+        quality_gates=[
+            QualityGateResult(
+                "integrity",
+                QualityGateStatus.PASSED,
+                "Synthetic fixture gate.",
+                details={
+                    "evidence_sha256": "c" * 64,
+                    "instrument_inspection": {"status": "inspection_recorded"},
+                    "stream_timing_assessment": {
+                        "status": "timing_feasibility_passed"
+                    },
+                },
+            )
+        ],
+    )
+    assessed_audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[assessed_run],
+    )
+    assessed_codes = {finding.code for finding in assessed_audit.findings}
+    assert "PROTECTED_EMPIRICAL_ACQUISITION_INSPECTION_UNASSESSED" not in assessed_codes
+    assert "PROTECTED_EMPIRICAL_STREAM_TIMING_UNASSESSED" not in assessed_codes
+
+
+def test_audit_warns_when_causal_temporal_order_gate_is_unassessed() -> None:
+    from research_machine.design.causal import audit_causal_identification
+    from test_causal_identification import _confounded
+    from test_ethics_gate import _human_protocol
+
+    graph = _confounded(["baseline"])
+    protocol = replace(
+        _human_protocol(
+            human_subjects=False,
+            causal_claim=True,
+            causal_identification=graph,
+            causal_identification_audit=audit_causal_identification(graph),
+        ),
+        status=ProtocolStatus.FROZEN,
+    )
+    run = ResearchRun(
+        run_id="causal-run",
+        protocol_id=protocol.protocol_id,
+        protocol_hash=protocol.protocol_hash or "f" * 64,
+        analysis_mode=protocol.analysis_mode,
+        started_at="2026-09-02T12:01:00Z",
+        completed_at="2026-09-02T12:02:00Z",
+        executed_by="fixture",
+        analysis_code_hash="a" * 64,
+        environment_hash="b" * 64,
+        quality_gates=[
+            QualityGateResult(
+                "integrity",
+                QualityGateStatus.PASSED,
+                "Synthetic fixture gate.",
+                details={"evidence_sha256": "c" * 64},
+            )
+        ],
+        synthetic=True,
+        metadata={
+            "protocol_deviation_disclosure": {
+                "status": "no_deviations_declared",
+                "deviations": [],
+            }
+        },
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Temporal-order audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[run],
+    )
+    assert "PROTECTED_CAUSAL_TEMPORAL_ORDER_UNASSESSED" in {
+        finding.code for finding in audit.findings
+    }
+
+    assessed_run = replace(
+        run,
+        quality_gates=[
+            QualityGateResult(
+                "integrity",
+                QualityGateStatus.PASSED,
+                "Synthetic fixture gate.",
+                details={
+                    "evidence_sha256": "c" * 64,
+                    "temporal_order_assessment": {
+                        "status": "temporal_order_passed"
+                    },
+                },
+            )
+        ],
+    )
+    assessed_audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[assessed_run],
+    )
+    assert "PROTECTED_CAUSAL_TEMPORAL_ORDER_UNASSESSED" not in {
+        finding.code for finding in assessed_audit.findings
+    }
+
+
+def test_audit_warns_when_causal_assumption_results_are_unassessed() -> None:
+    from research_machine.design.causal import audit_causal_identification
+    from test_causal_identification import _confounded
+    from test_ethics_gate import _human_protocol
+
+    graph = _confounded(["baseline"])
+    protocol = replace(
+        _human_protocol(
+            human_subjects=False,
+            causal_claim=True,
+            causal_identification=graph,
+            causal_identification_audit=audit_causal_identification(graph),
+        ),
+        status=ProtocolStatus.FROZEN,
+    )
+    run = ResearchRun(
+        run_id="causal-assumption-run",
+        protocol_id=protocol.protocol_id,
+        protocol_hash=protocol.protocol_hash or "f" * 64,
+        analysis_mode=protocol.analysis_mode,
+        started_at="2026-09-02T12:01:00Z",
+        completed_at="2026-09-02T12:02:00Z",
+        executed_by="fixture",
+        analysis_code_hash="a" * 64,
+        environment_hash="b" * 64,
+        quality_gates=[
+            QualityGateResult(
+                "integrity",
+                QualityGateStatus.PASSED,
+                "Synthetic temporal-order fixture only.",
+                details={
+                    "evidence_sha256": "c" * 64,
+                    "temporal_order_assessment": {
+                        "status": "temporal_order_passed",
+                    },
+                },
+            )
+        ],
+        synthetic=True,
+        metadata={
+            "protocol_deviation_disclosure": {
+                "status": "no_deviations_declared",
+                "deviations": [],
+            }
+        },
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Causal-assumption audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[run],
+    )
+    assert "PROTECTED_CAUSAL_TEMPORAL_ORDER_UNASSESSED" not in {
+        finding.code for finding in audit.findings
+    }
+    assert "PROTECTED_CAUSAL_ASSUMPTIONS_UNASSESSED" in {
+        finding.code for finding in audit.findings
+    }
+
+    assumption_results = {
+        item["category"]: {
+            "observed_diagnostic": f"Synthetic diagnostic for {item['category']}.",
+            "interpretation": "No fixture contradiction was encoded.",
+            "assessment_status": "consistent_with_assumption",
+            "assessment_kind": item["assessment_kind"],
+            "evidence_sha256": "d" * 64,
+            "evidence_location": f"/diagnostics/{item['category']}",
+        }
+        for item in protocol.causal_identification_audit["assumption_register"]
+    }
+    assessed_run = replace(
+        run,
+        quality_gates=[
+            QualityGateResult(
+                "integrity",
+                QualityGateStatus.PASSED,
+                "Synthetic causal-assumption assessment.",
+                details={
+                    "evidence_sha256": "d" * 64,
+                    "temporal_order_assessment": {
+                        "status": "temporal_order_passed",
+                    },
+                    "causal_assumption_results": assumption_results,
+                },
+            )
+        ],
+    )
+    assessed_audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[assessed_run],
+    )
+    assert "PROTECTED_CAUSAL_ASSUMPTIONS_UNASSESSED" not in {
+        finding.code for finding in assessed_audit.findings
+    }
+
+
+def test_audit_warns_when_canary_target_gate_is_unassessed() -> None:
+    from test_ethics_gate import _human_protocol
+
+    plan = CanaryTargetPlan(
+        plan_id="masked-canary-plan",
+        candidate_target_ids=["actual-state", "delayed-replay"],
+        seed_commitment_sha256="1" * 64,
+        assignment_artifact_sha256="2" * 64,
+        masking_plan="A custodian withholds the target until analysis lock.",
+        ethical_disclosure="Participants consent to masked target conditions.",
+        assessment_gate_id="canary-target-assessed",
+    )
+    protocol = replace(
+        _human_protocol(
+            human_subjects=False,
+            quality_requirements=["integrity", "canary-target-assessed"],
+            canary_target_plan=plan,
+        ),
+        status=ProtocolStatus.FROZEN,
+    )
+    run = ResearchRun(
+        run_id="canary-run",
+        protocol_id=protocol.protocol_id,
+        protocol_hash=protocol.protocol_hash or "f" * 64,
+        analysis_mode=protocol.analysis_mode,
+        started_at="2026-09-02T12:01:00Z",
+        completed_at="2026-09-02T12:02:00Z",
+        executed_by="fixture",
+        analysis_code_hash="a" * 64,
+        environment_hash="b" * 64,
+        quality_gates=[
+            QualityGateResult(
+                "integrity",
+                QualityGateStatus.PASSED,
+                "Synthetic fixture gate.",
+                details={"evidence_sha256": "c" * 64},
+            )
+        ],
+        synthetic=True,
+        metadata={
+            "protocol_deviation_disclosure": {
+                "status": "no_deviations_declared",
+                "deviations": [],
+            }
+        },
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Canary audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[run],
+    )
+    assert "PROTECTED_EMPIRICAL_CANARY_TARGET_UNASSESSED" in {
+        finding.code for finding in audit.findings
+    }
+
+    assessed_run = replace(
+        run,
+        quality_gates=[
+            *run.quality_gates,
+            QualityGateResult(
+                "canary-target-assessed",
+                QualityGateStatus.FAILED,
+                "Synthetic canary assessment.",
+                details={
+                    "evidence_sha256": "d" * 64,
+                    "canary_target_assessment": {
+                        "plan_id": "masked-canary-plan",
+                        "assessment_status": "follows_no_target",
+                    },
+                },
+            ),
+        ],
+    )
+    assessed_audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[assessed_run],
+    )
+    assert "PROTECTED_EMPIRICAL_CANARY_TARGET_UNASSESSED" not in {
+        finding.code for finding in assessed_audit.findings
+    }
+    assert "RUN_CANARY_TARGET_FOLLOWED_NO_TARGET" in {
+        finding.code for finding in assessed_audit.findings
+    }
+
+
+def test_audit_warns_when_measurement_validity_results_are_unassessed() -> None:
+    from test_ethics_gate import _human_protocol
+
+    measurement = MeasurementDefinition(
+        measurement_id="primary-measurement",
+        role=MeasurementRole.PRIMARY,
+        registered_target="Registered outcome",
+        observable="Synthetic fixture outcome",
+        input_condition="All eligible fixture rows",
+        parameter_values={"scale": "fixture units"},
+        evaluation_point="registered endpoint",
+        convention="higher is larger",
+        aggregation="mean by group",
+        tolerance="exact fixture parsing",
+        expected_behavior="Reported regardless of direction",
+        data_column="outcome",
+        temporal_role="post_exposure",
+        scale_type="interval",
+        unit="fixture units",
+        valid_min=0.0,
+        valid_max=100.0,
+        missing_value_codes=["<blank>"],
+    )
+    check = MeasurementValidityCheck(
+        check_id="primary-validity",
+        measurement_id="primary-measurement",
+        evidence_type="criterion",
+        validity_claim="The primary measurement agrees with the registered reference.",
+        assessment_plan="Compare a prespecified subset before interpretation.",
+        acceptance_criterion="Agreement is within the frozen tolerance.",
+        failure_response="Stop unqualified interpretation and repair measurement.",
+        assessment_gate_id="measurement-validity-assessed",
+    )
+    protocol = replace(
+        _human_protocol(
+            human_subjects=False,
+            measurement_definitions=[measurement],
+            measurement_validity_checks=[check],
+            quality_requirements=["integrity", "measurement-validity-assessed"],
+        ),
+        status=ProtocolStatus.FROZEN,
+    )
+    run = ResearchRun(
+        run_id="validity-run",
+        protocol_id=protocol.protocol_id,
+        protocol_hash=protocol.protocol_hash or "f" * 64,
+        analysis_mode=protocol.analysis_mode,
+        started_at="2026-09-02T12:01:00Z",
+        completed_at="2026-09-02T12:02:00Z",
+        executed_by="fixture",
+        analysis_code_hash="a" * 64,
+        environment_hash="b" * 64,
+        quality_gates=[
+            QualityGateResult(
+                "integrity",
+                QualityGateStatus.PASSED,
+                "Synthetic fixture gate.",
+                details={"evidence_sha256": "c" * 64},
+            )
+        ],
+        synthetic=True,
+        metadata={
+            "protocol_deviation_disclosure": {
+                "status": "no_deviations_declared",
+                "deviations": [],
+            }
+        },
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Measurement-validity audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[run],
+    )
+    assert "PROTECTED_EMPIRICAL_VALIDITY_RESULTS_UNASSESSED" in {
+        finding.code for finding in audit.findings
+    }
+
+    assessed_run = replace(
+        run,
+        quality_gates=[
+            *run.quality_gates,
+            QualityGateResult(
+                "measurement-validity-assessed",
+                QualityGateStatus.PASSED,
+                "Synthetic validity assessment.",
+                details={
+                    "evidence_sha256": "d" * 64,
+                    "measurement_validity_results": {
+                        "primary-validity": {
+                            "observed_diagnostic": "Reference agreement was inspected.",
+                            "interpretation": "No fixture contradiction was encoded.",
+                            "assessment_status": "consistent_with_validity_claim",
+                            "evidence_type": "criterion",
+                            "evidence_sha256": "d" * 64,
+                            "evidence_location": "/validity/primary",
+                        }
+                    },
+                },
+            ),
+        ],
+    )
+    assessed_audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[assessed_run],
+    )
+    assert "PROTECTED_EMPIRICAL_VALIDITY_RESULTS_UNASSESSED" not in {
+        finding.code for finding in assessed_audit.findings
+    }
+
+
+def test_audit_warns_when_missingness_assessment_is_unassessed() -> None:
+    from test_ethics_gate import _human_protocol
+
+    contract = AnalysisContract(
+        primary_hypothesis_id="h1",
+        primary_measurement_id="primary-measurement",
+        method="independent_mean_difference",
+        outcome_column="outcome",
+        group_column="assignment",
+        groups=["control", "intervention"],
+        estimand="Mean difference between intervention and control.",
+        missing_data_policy="complete_case",
+        assignment_type="randomized",
+        effect_estimate_path="/effect/estimate",
+        uncertainty_path="/effect/interval",
+        null_value=0.0,
+        support_rule="confidence_interval_excludes_null",
+        missingness_assumption=(
+            "Excluded records do not materially distort the registered contrast."
+        ),
+        missingness_assessment_plan=(
+            "Inspect total and group-specific exclusions before interpretation."
+        ),
+        missingness_failure_response=(
+            "Stop primary interpretation if missingness is not defensible."
+        ),
+        missingness_assessment_kind="empirical_diagnostic",
+        missingness_assessment_gate_id="missingness-assessed",
+    )
+    protocol = replace(
+        _human_protocol(
+            human_subjects=False,
+            analysis_contract=contract,
+            quality_requirements=["integrity", "missingness-assessed"],
+        ),
+        status=ProtocolStatus.FROZEN,
+    )
+    run = ResearchRun(
+        run_id="missingness-run",
+        protocol_id=protocol.protocol_id,
+        protocol_hash=protocol.protocol_hash or "f" * 64,
+        analysis_mode=protocol.analysis_mode,
+        started_at="2026-09-02T12:01:00Z",
+        completed_at="2026-09-02T12:02:00Z",
+        executed_by="fixture",
+        analysis_code_hash="a" * 64,
+        environment_hash="b" * 64,
+        quality_gates=[
+            QualityGateResult(
+                "integrity",
+                QualityGateStatus.PASSED,
+                "Synthetic fixture gate.",
+                details={"evidence_sha256": "c" * 64},
+            )
+        ],
+        synthetic=True,
+        metadata={
+            "protocol_deviation_disclosure": {
+                "status": "no_deviations_declared",
+                "deviations": [],
+            }
+        },
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Missingness audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[run],
+    )
+    assert "PROTECTED_EMPIRICAL_MISSINGNESS_ASSESSMENT_UNASSESSED" in {
+        finding.code for finding in audit.findings
+    }
+
+    assessed_run = replace(
+        run,
+        quality_gates=[
+            *run.quality_gates,
+            QualityGateResult(
+                "missingness-assessed",
+                QualityGateStatus.PASSED,
+                "Synthetic missingness assessment.",
+                details={
+                    "evidence_sha256": "d" * 64,
+                    "missingness_assessment_result": {
+                        "observed_diagnostic": "No fixture exclusions occurred.",
+                        "interpretation": "No fixture contradiction was encoded.",
+                        "assessment_status": "consistent_with_assumption",
+                        "assessment_kind": "empirical_diagnostic",
+                        "evidence_sha256": "d" * 64,
+                        "evidence_location": "/missingness/primary",
+                    },
+                },
+            ),
+        ],
+    )
+    assessed_audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[assessed_run],
+    )
+    assert "PROTECTED_EMPIRICAL_MISSINGNESS_ASSESSMENT_UNASSESSED" not in {
+        finding.code for finding in assessed_audit.findings
+    }
+
+
+def test_audit_warns_when_control_results_are_unassessed() -> None:
+    from test_ethics_gate import _human_protocol
+
+    control = ControlDefinition(
+        control_id="negative-1",
+        registered_control="Registered negative control",
+        family="negative",
+        purpose="Detect false acceptance of the fixture pipeline.",
+        expected_behavior="The deliberately invalid fixture is rejected.",
+        evaluation_gate_id="control-evaluated",
+    )
+    protocol = replace(
+        _human_protocol(
+            human_subjects=False,
+            controls=[control.registered_control],
+            control_definitions=[control],
+            quality_requirements=["integrity", "control-evaluated"],
+        ),
+        status=ProtocolStatus.FROZEN,
+    )
+    run = ResearchRun(
+        run_id="control-run",
+        protocol_id=protocol.protocol_id,
+        protocol_hash=protocol.protocol_hash or "f" * 64,
+        analysis_mode=protocol.analysis_mode,
+        started_at="2026-09-02T12:01:00Z",
+        completed_at="2026-09-02T12:02:00Z",
+        executed_by="fixture",
+        analysis_code_hash="a" * 64,
+        environment_hash="b" * 64,
+        quality_gates=[
+            QualityGateResult(
+                "integrity",
+                QualityGateStatus.PASSED,
+                "Synthetic fixture gate.",
+                details={"evidence_sha256": "c" * 64},
+            )
+        ],
+        synthetic=True,
+        metadata={
+            "protocol_deviation_disclosure": {
+                "status": "no_deviations_declared",
+                "deviations": [],
+            }
+        },
+    )
+    inquiry = Inquiry(
+        "i1",
+        "Control audit",
+        "Synthetic fixture, no scientific claim.",
+        "2026-09-02T12:00:00Z",
+    )
+
+    audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[run],
+    )
+    assert "PROTECTED_EMPIRICAL_CONTROL_RESULTS_UNASSESSED" in {
+        finding.code for finding in audit.findings
+    }
+
+    assessed_run = replace(
+        run,
+        quality_gates=[
+            *run.quality_gates,
+            QualityGateResult(
+                "control-evaluated",
+                QualityGateStatus.PASSED,
+                "Synthetic control evaluation.",
+                details={
+                    "evidence_sha256": "d" * 64,
+                    "control_results": {
+                        "negative-1": {
+                            "observed_behavior": (
+                                "The deliberately invalid fixture was rejected."
+                            ),
+                            "interpretation": "Fixture control behaved as expected.",
+                            "matches_expected": True,
+                            "evidence_sha256": "d" * 64,
+                            "evidence_location": "/controls/negative-1",
+                        }
+                    },
+                },
+            ),
+        ],
+    )
+    assessed_audit = audit_research_state(
+        inquiry=inquiry,
+        claims=[],
+        hypotheses=[],
+        evidence=[],
+        datasets=[],
+        protocols=[protocol],
+        runs=[assessed_run],
+    )
+    assert "PROTECTED_EMPIRICAL_CONTROL_RESULTS_UNASSESSED" not in {
+        finding.code for finding in assessed_audit.findings
+    }
+
+
+def test_retrospectively_amended_evidence_cannot_raise_prospective_ceiling(tmp_path: Path) -> None:
+    service, hypothesis, predecessor_run = _prepared_run(tmp_path)
+    predecessor = service.get_protocol(predecessor_run.protocol_id)
+    values = {field.name: getattr(predecessor, field.name) for field in fields(CreateProtocol)}
+    amendment = service.amend_protocol(
+        predecessor.protocol_id, CreateProtocol(**values), "Changed after inspecting output",
+        "after_analysis", "full_data_seen",
+    )
+    frozen = service.freeze_protocol(amendment.protocol_id)
+    amended_output = tmp_path / "amended.json"
+    amended_output.write_text('{"checker":"passed"}\n', encoding="utf-8")
+    amended_sha256 = hashlib.sha256(amended_output.read_bytes()).hexdigest()
+    run = service.record_run(RecordRun(
+        protocol_id=frozen.protocol_id, started_at="2026-09-02T12:03:00Z",
+        completed_at="2026-09-02T12:04:00Z", analysis_code_hash="a" * 64,
+        environment_hash="b" * 64, output_artifacts=[DatasetArtifact(
+            "amended.json", amended_sha256, amended_output.stat().st_size,
+            "application/json",
+        )],
+        artifact_root=str(tmp_path),
+        quality_gates=[QualityGateResult(gate_id="checker", status=QualityGateStatus.PASSED,
+                                         summary="Amended checker passed.",
+                                         details={"evidence_sha256": amended_sha256})],
+            metadata={"protocol_deviation_disclosure": {
+                "status": "no_deviations_declared", "deviations": [],
+            }, "result_exposure_disclosure": {
+                "status": "no_relevant_output_seen", "exposures": [],
+            }},
+    ))
+    service.record_evidence(_classified_evidence(hypothesis.hypothesis_id, run.run_id))
+    audit = service.audit_rigor()
+    assert audit.capabilities["controlled_benchmark"] is True
+    assert audit.conclusion_ceiling == "retrospectively amended evidence only; prospective confirmation required"
+    assert any(item.code == "EVIDENCE_FROM_RETROSPECTIVE_OR_EXPOSED_AMENDMENT"
+               for item in audit.findings)
+
+
+def test_independent_replication_requires_clean_room_attestation(
+    tmp_path: Path,
+) -> None:
+    author, hypothesis, original = _prepared_run(tmp_path)
+    draft = author.create_protocol(
+        CreateProtocol(
+            experiment_id="rigor-check-replication",
+            title="Independent invariant replication",
+            analysis_mode=AnalysisMode.REPLICATION,
+            hypotheses_tested=[hypothesis.hypothesis_id],
+            primary_outcome="Independent checker acceptance",
+            protocol_kind=ProtocolKind.FORMAL,
+            methodology="Reimplement the invariant check with a distinct checker.",
+            quality_requirements=["replication-check"],
+            controls=["The independent invalid candidate must fail."],
+            expected_outputs=["Independent checker transcript"],
+            success_conditions=["Independent reproduction passes."],
+            environment_requirements=["Distinct pinned checker"],
+            sample_size_or_stopping_rule="One original result and one replication.",
+            failure_conditions=["The reproduction or its control fails."],
+            safety_constraints=["No physical intervention."],
+            analysis_code_hash="d" * 64,
+        )
+    )
+    protocol = author.freeze_protocol(draft.protocol_id)
+    replicator = _service(tmp_path, actor="replicator")
+    incomplete_output = tmp_path / "replication.json"
+    incomplete_output.write_text('{"reproduced":true}\n', encoding="utf-8")
+    incomplete_sha256 = hashlib.sha256(incomplete_output.read_bytes()).hexdigest()
+    incomplete_replication = replicator.record_run(
+        RecordRun(
+            protocol_id=protocol.protocol_id,
+            started_at="2026-09-02T12:03:00Z",
+            completed_at="2026-09-02T12:04:00Z",
+            analysis_code_hash="d" * 64,
+            environment_hash="e" * 64,
+            output_artifacts=[DatasetArtifact(
+                "replication.json", incomplete_sha256,
+                incomplete_output.stat().st_size, "application/json",
+            )],
+            artifact_root=str(tmp_path),
+            quality_gates=[
+                QualityGateResult(
+                    gate_id="replication-check",
+                    status=QualityGateStatus.PASSED,
+                    summary="Independent implementation reproduced the result.",
+                    details={"evidence_sha256": incomplete_sha256},
+                )
+            ],
+                metadata={
+                    "replicates_run_id": original.run_id,
+                    "protocol_deviation_disclosure": {
+                        "status": "no_deviations_declared", "deviations": [],
+                    },
+                    "result_exposure_disclosure": {
+                        "status": "no_relevant_output_seen", "exposures": [],
+                    },
+                },
+        )
+    )
+    with pytest.raises(
+        ValidationError, match="replication_independence"
+    ):
+        replicator.record_evidence(
+            _classified_evidence(
+                hypothesis.hypothesis_id,
+                incomplete_replication.run_id,
+                validation_tags=[ValidationTag.INDEPENDENT_REPLICATION],
+            )
+        )
+
+    attestation_locator = "independence-attestation.json"
+    artifact_root = tmp_path / "replication-artifacts"
+    artifact_root.mkdir()
+    result_path = artifact_root / "replication-clean-room.json"
+    result_path.write_text('{"reproduced":true}\n', encoding="utf-8")
+    attestation = {
+        "target_run_id": original.run_id,
+        "executor_identity": "replicator",
+        "design": "clean_room",
+        "independence_dimensions": ["executor", "implementation"],
+        "prior_implementation_accessed": False,
+        "allowed_input_manifest": {
+            "locator": "contract.md",
+            "sha256": "2" * 64,
+        },
+        "analysis_code_hash": "d" * 64,
+        "contamination_disclosures": [],
+    }
+    attestation_path = artifact_root / attestation_locator
+    attestation_path.write_text(json.dumps(attestation), encoding="utf-8")
+    attestation_schema = tmp_path / "attestation.schema.json"
+    attestation_schema.write_text(
+        json.dumps(
+            {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "type": "object",
+                "additionalProperties": False,
+                "required": list(attestation),
+                "properties": {
+                    "target_run_id": {"const": original.run_id},
+                    "executor_identity": {"const": "replicator"},
+                    "design": {"const": "clean_room"},
+                    "independence_dimensions": {
+                        "type": "array",
+                        "minItems": 2,
+                        "uniqueItems": True,
+                        "items": {"type": "string"},
+                    },
+                    "prior_implementation_accessed": {"const": False},
+                    "allowed_input_manifest": {
+                        "type": "object",
+                        "additionalProperties": False,
+                        "required": ["locator", "sha256"],
+                        "properties": {
+                            "locator": {"type": "string", "minLength": 1},
+                            "sha256": {
+                                "type": "string",
+                                "pattern": "^[0-9a-f]{64}$",
+                            },
+                        },
+                    },
+                    "analysis_code_hash": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$",
+                    },
+                    "contamination_disclosures": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                    },
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
+    schema_hash = hashlib.sha256(attestation_schema.read_bytes()).hexdigest()
+    replication = replicator.record_run(
+        RecordRun(
+            run_id="run-independent-clean-room",
+            protocol_id=protocol.protocol_id,
+            started_at="2026-09-02T12:05:00Z",
+            completed_at="2026-09-02T12:06:00Z",
+            analysis_code_hash="d" * 64,
+            environment_hash="e" * 64,
+            output_artifacts=[
+                DatasetArtifact(
+                    "replication-clean-room.json",
+                    hashlib.sha256(result_path.read_bytes()).hexdigest(),
+                    size_bytes=result_path.stat().st_size,
+                ),
+                DatasetArtifact(
+                    attestation_locator,
+                    hashlib.sha256(attestation_path.read_bytes()).hexdigest(),
+                    size_bytes=attestation_path.stat().st_size,
+                    metadata={"artifact_role": "independence_attestation"},
+                ),
+            ],
+            quality_gates=[
+                QualityGateResult(
+                    gate_id="replication-check",
+                    status=QualityGateStatus.PASSED,
+                    summary="Clean-room implementation reproduced the result.",
+                    details={"evidence_sha256": hashlib.sha256(result_path.read_bytes()).hexdigest()},
+                )
+            ],
+            metadata={
+                "replicates_run_id": original.run_id,
+                    "protocol_deviation_disclosure": {
+                        "status": "no_deviations_declared", "deviations": [],
+                    },
+                    "result_exposure_disclosure": {
+                        "status": "no_relevant_output_seen", "exposures": [],
+                    },
+                    "replication_independence": {
+                    "design": "clean_room",
+                    "independence_dimensions": ["executor", "implementation"],
+                    "prior_implementation_accessed": False,
+                    "allowed_inputs": [
+                        {"locator": "contract.md", "sha256": "2" * 64}
+                    ],
+                    "contamination_disclosures": [],
+                    "attestation_artifact": attestation_locator,
+                },
+            },
+            artifact_root=str(artifact_root),
+            attestation_schema_path=str(attestation_schema),
+            expected_attestation_schema_sha256=schema_hash,
+        )
+    )
+    assert replication.metadata["artifact_integrity"]["status"] == "passed"
+    evidence = replicator.record_evidence(
+        _classified_evidence(
+            hypothesis.hypothesis_id,
+            replication.run_id,
+            summary="A distinct executor and code artifact reproduced the result.",
+            validation_tags=[ValidationTag.INDEPENDENT_REPLICATION],
+        )
+    )
+    assert evidence.validation_tags == [ValidationTag.INDEPENDENT_REPLICATION]

@@ -1,0 +1,36 @@
+Chapter 3 
+ NIST NCSTAR 1-9A, WTC Investigation 26
+Shell element component
+of shear connection
+Discrete element in shear 
+connection
+Shell element component
+of shear connection
+Discrete element in shear 
+connection
+ 
+Figure 3-6. Generic LS-DYNA model of shear connection. 
+After developing models for all of the shear connection groupings in LS-DYNA, a comparison was 
+performed between the LS-DYNA and ANSYS models. The ANSYS model used a different approach to 
+modeling the connection failure mechanisms with the use of beam and break elements (NIST NCSTAR 
+1-9, Chapter 11). The comparison showed good agreement for selected connections, which increased 
+confidence in both of the separately developed modeling approaches. 
+Seated Top Plate (STP) Connections 
+The STP connections connected the interior girders and beams to exterior columns.  A schematic of a STP 
+connection is shown in Figure 3-7. The connections included plates welded between the column flanges 
+above and below the framing member. During construction, the beam was bolted to the plates with two 
+7/8 in. A325 bolts per plate. The shear force-deflection behavior of an individual bolt is shown in the 
+figure as well. The geometry varied slightly in the actual details for north/south and east/west bearing 
+connections. In the model, the same basic geometry was used to approximate both. 
+The STP connection model developed for LS-DYNA is shown in Figure 3-8. It included the plates above 
+and below the beam, which provided vertical constraint. The plates were attached to the columns with an 
+edge-to-surface tied interface. Separate sliding contact definitions were used for bearing connections to 
+avoid conflicts with the main sliding contact definition and the required tied contact between the plates 
+and columns. Sliding contact was specified between the beams and plates.  
+Bolts in the LS-DYNA model were represented with discrete elements.  The properties of the discrete 
+elements were tailored to match the bolt specifications in the actual construction. Each bolt had a 35 kip 
+(156 kN) yield and 45 kip (200 kN) failure load in shear. Maximum displacement at failure was 0.45 in. 
+(0.011 m) in shear. A component model was developed and tested with respect to the predicted behavior. 
+Figure 3-9 shows the resulting horizontal load and connection energy capacity. 
+Examples showing STP connections and shear connections along the building perimeter are shown in 
+Figure 3-10 and Figure 3-11. 

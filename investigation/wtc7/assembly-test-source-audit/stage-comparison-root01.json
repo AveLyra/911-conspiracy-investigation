@@ -1,0 +1,146 @@
+{
+  "command": [
+    "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "research/sherlock-wtc7-investigation/assembly-test-source-audit/compare_stages.py",
+    "--output",
+    "stage-comparison-root01.json"
+  ],
+  "comparison": {
+    "coverage": {
+      "contrast_records": 9,
+      "missing_contrasts": 5,
+      "populated_contrasts": 4,
+      "quantity_summaries": 24,
+      "scenarios": 12,
+      "selected_row_instances": 34
+    },
+    "exact_rational_comparisons": 84,
+    "failures": [],
+    "implied_SSE_crosschecks": 48,
+    "limitations": "Repeated selected-row instances are not additional experiments. Root omits retained source locators/specimen/failure details in group selections; those common original source fields were separately validated in tn1749-comparison01. No root SSE field exists; implied-SSE checks are derived consistency checks.",
+    "max_rational_decimal_render_error": {
+      "decimal": "3.6260623229461756373937677053824362606232294617563739376770538243626062322946176E-39",
+      "fraction": "1/275781250000000000000000000000000000000"
+    },
+    "max_sd_cov_absolute_error": {
+      "decimal": "8.890565095857401053106229552386625623073E-39",
+      "fraction": "8890565095857401053106229552386625623073/1000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "metadata_equalities": 268,
+    "prospective_sd_cov_absolute_tolerance": "1/1000000000000000000000000000000",
+    "rational_decimal_render_checks": 84,
+    "schema_mapping": "Two declared cohort-name aliases; root secondary_footnote maps to independent secondary_missing_footnote. Quantity aliases shear_kip/rotation_rad map to source applied_shear_kip/beam_end_rotation_rad. No value,unit or angle conversion.",
+    "sd_cov_comparisons": 96,
+    "status": "PASS"
+  },
+  "independent_controls": [
+    {
+      "fixture": "Initial2 retained despite secondary3",
+      "name": "initial_rule",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Secondary3 selected with its smaller0.100 rotation, not independently maximized0.200",
+      "name": "higher_secondary_associated_rotation",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Initial2 selected despite secondary's larger rotation0.900",
+      "name": "higher_initial_associated_rotation",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Equal shears choose initial",
+      "name": "exact_tie_initial",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Missing secondary cannot become zero or an invented contrast",
+      "name": "missing_secondary",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Values1,2,3 have mean2,SSE2,sample variance1,population variance2/3",
+      "name": "sample_population_variance",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Sample SD1 and COV50percent for1,2,3",
+      "name": "known_square_root_and_cov",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Two equal positive observations retain zero variability",
+      "name": "zero_variation",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Singleton and zero mean rejected, no fake sample SD or COV",
+      "name": "singleton_zero_mean_rejections",
+      "status": "PASS"
+    },
+    {
+      "fixture": "2->3 shear gives+1,+50percent;0.200->0.100 gives-0.100",
+      "name": "secondary_contrast_signs",
+      "status": "PASS"
+    }
+  ],
+  "pins_after": {
+    "ARITHMETIC-PROTOCOL.md": "88954a1929e80b32fd49f061f426be594997532ade2e59528a87c6bbb4bde78e",
+    "PROTOCOL.md": "a06f1bc8f7e4283dbca0c9f54337eba0123045538ca47b411eb3aa8c260d637d",
+    "STAGE-DIAGNOSTIC-PROTOCOL.md": "7f1c6ddb2425891869c369e115c8f66eb77836cfdd2bcddbb034bc4ddfee46c4",
+    "calc_assembly.py": "d4ab1e687c201da7004c14314d060d0b4add6be63319b2a8e75c675a226e4e5b",
+    "calc_stages.py": "50faa90dfa33c74fb7de95415fd15dcd3995702769e44d6bf967ca3aaea4719f",
+    "comparison_code": "3ddf6349aff19cad6a0ded35c6ed6b1113eed4b4dcd0a911fa28f614d07d35bc",
+    "independent-stage-results01.json": "63f51024d9571d769256b567b774d8e4ee887d8020d249a72b956c377a568bbd",
+    "root-stage-results01.json": "aa3c5b87b1794a427d65f0ed511e35c1dcac9a5b926b8f8128f58179c18262df",
+    "root-stage-results02.json": "aa3c5b87b1794a427d65f0ed511e35c1dcac9a5b926b8f8128f58179c18262df",
+    "source_pdf": "b8eff9830bcc87940c4eadc9c64b80e7381ab43c96f52b528ef773b3b0332e78",
+    "thompson-independent.json": "7f1ff93025f499e62498a5ec2c21700c0a2b3d58213cb72363dd7757b2c153b9",
+    "thompson-stages-root.json": "3265861472770daee4fe35df339d91a419c175a9bb793c73f225a5cd3adb07ac",
+    "verify_stages.py": "56a2b2b0552cd447c2658e6cdbb9638d008d0085445d704dd2fb4c8966c1650f"
+  },
+  "pins_before": {
+    "ARITHMETIC-PROTOCOL.md": "88954a1929e80b32fd49f061f426be594997532ade2e59528a87c6bbb4bde78e",
+    "PROTOCOL.md": "a06f1bc8f7e4283dbca0c9f54337eba0123045538ca47b411eb3aa8c260d637d",
+    "STAGE-DIAGNOSTIC-PROTOCOL.md": "7f1c6ddb2425891869c369e115c8f66eb77836cfdd2bcddbb034bc4ddfee46c4",
+    "calc_assembly.py": "d4ab1e687c201da7004c14314d060d0b4add6be63319b2a8e75c675a226e4e5b",
+    "calc_stages.py": "50faa90dfa33c74fb7de95415fd15dcd3995702769e44d6bf967ca3aaea4719f",
+    "comparison_code": "3ddf6349aff19cad6a0ded35c6ed6b1113eed4b4dcd0a911fa28f614d07d35bc",
+    "independent-stage-results01.json": "63f51024d9571d769256b567b774d8e4ee887d8020d249a72b956c377a568bbd",
+    "root-stage-results01.json": "aa3c5b87b1794a427d65f0ed511e35c1dcac9a5b926b8f8128f58179c18262df",
+    "root-stage-results02.json": "aa3c5b87b1794a427d65f0ed511e35c1dcac9a5b926b8f8128f58179c18262df",
+    "source_pdf": "b8eff9830bcc87940c4eadc9c64b80e7381ab43c96f52b528ef773b3b0332e78",
+    "thompson-independent.json": "7f1ff93025f499e62498a5ec2c21700c0a2b3d58213cb72363dd7757b2c153b9",
+    "thompson-stages-root.json": "3265861472770daee4fe35df339d91a419c175a9bb793c73f225a5cd3adb07ac",
+    "verify_stages.py": "56a2b2b0552cd447c2658e6cdbb9638d008d0085445d704dd2fb4c8966c1650f"
+  },
+  "post_freeze_schema_adapter": true,
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "root_controls_review": {
+    "count": 17,
+    "coverage": "Tests exercise production select() for initial,secondary,tie,missing,associated-rotation and invalid-rule choices; production stats() for mean,sample/population variance,SD,COV,constant/exact-decimal inputs and singleton/zero-mean/empty rejection.",
+    "executed": {
+      "associated_rotation": true,
+      "constant_variance": true,
+      "empty_rejected": true,
+      "exact_decimal_mean": true,
+      "initial_larger": true,
+      "initial_rule": true,
+      "mean": true,
+      "null_initial": true,
+      "population_variance": true,
+      "sample_cov": true,
+      "sample_sd": true,
+      "sample_variance": true,
+      "secondary_larger": true,
+      "singleton_rejected": true,
+      "tie_initial": true,
+      "unknown_rule_rejected": true,
+      "zero_mean_rejected": true
+    },
+    "limit": "Root contrasts are inline in main() and lack a separate root synthetic contrast fixture. All four populated real contrasts and all five null records are independently compared here; the independent implementation also has a synthetic signed contrast fixture. These checks do not validate physical measurements or identify NIST test membership.",
+    "recorded_result_matches": true
+  },
+  "status": "PASS"
+}

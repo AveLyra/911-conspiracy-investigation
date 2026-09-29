@@ -1,0 +1,170 @@
+{
+  "command": [
+    "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "research/sherlock-wtc7-investigation/assembly-test-source-audit/compare_tn1749.py",
+    "--output",
+    "tn1749-comparison01.json"
+  ],
+  "comparison": {
+    "decimal_render_checks": 96,
+    "decimal_tolerance_rule": "Half of the last displayed place in each root40-significant-digit decimal rendering; rational comparison is exact.",
+    "equality_checks": 459,
+    "exact_numeric_disagreements": 0,
+    "exact_rational_comparisons": 96,
+    "failures": [],
+    "max_decimal_render_error": {
+      "decimal_approx": 4.898806434872859e-39,
+      "fraction": "59/12043750000000000000000000000000000000000"
+    },
+    "normalizations": [
+      {
+        "independent_source": "+1.8",
+        "recipe": "optional leading plus only",
+        "root": "1.8",
+        "where": "3-3.4.reduced.deviation"
+      },
+      {
+        "independent_source": "+10.6",
+        "recipe": "optional leading plus only",
+        "root": "10.6",
+        "where": "3-3.5.reduced.deviation"
+      },
+      {
+        "independent_source": "+1.8",
+        "recipe": "optional leading plus only",
+        "root": "1.8",
+        "where": "3-3.4.reduced.printed_deviation"
+      },
+      {
+        "independent_source": "+10.6",
+        "recipe": "optional leading plus only",
+        "root": "10.6",
+        "where": "3-3.5.reduced.printed_deviation"
+      }
+    ],
+    "stage_source_coverage": {
+      "compared_shear_rotation_values": 26,
+      "not_compared": [
+        "Original Table4.1 and4.4 values are independently transcribed but absent from root stage schema.",
+        "Original stage moment and axial-force fields are retained only in independent source JSON.",
+        "Footnote codes and dispositions are matched; prose footnotes were manually reviewed for meaning, not claimed verbatim equality.",
+        "No stage selections, means, COVs, load conversions or rotation conversions are performed."
+      ],
+      "null_stages": 5,
+      "populated_stages": 13,
+      "stage_slots": 18,
+      "test_ids": 9
+    },
+    "status": "PASS",
+    "tn_comparisons": 12,
+    "tn_printed_numeric_values": 36,
+    "tn_source_rows": 6
+  },
+  "independent_synthetic_controls": [
+    {
+      "fixture": "model11 mean10 -> +10 percent",
+      "name": "positive_signed_error",
+      "status": "PASS"
+    },
+    {
+      "fixture": "model9 mean10 -> -10 percent",
+      "name": "negative_signed_error",
+      "status": "PASS"
+    },
+    {
+      "fixture": "model7 mean7 ->0",
+      "name": "zero_error",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Signed percent lexemes, trailing zero precision",
+      "name": "signed_precision",
+      "status": "PASS"
+    },
+    {
+      "fixture": "All4 vertices of model[9,11], mean[19,21]",
+      "name": "interval_vertex_extrema",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Point10percent misses10.1+-0.05; input11.0/10.0 boxes allow overlap",
+      "name": "rounding_only_overlap",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Same input boxes cannot reach50percent",
+      "name": "genuine_nonoverlap",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Intervals[-1,0] and[0,1] retain endpoint-only intersection",
+      "name": "endpoint_tie",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Zero denominator,zero-crossing mean interval,reversed model interval",
+      "name": "invalid_interval_rejection",
+      "status": "PASS"
+    }
+  ],
+  "pins_after": {
+    "ARITHMETIC-PROTOCOL.md": "88954a1929e80b32fd49f061f426be594997532ade2e59528a87c6bbb4bde78e",
+    "PROTOCOL.md": "a06f1bc8f7e4283dbca0c9f54337eba0123045538ca47b411eb3aa8c260d637d",
+    "calc_assembly.py": "d4ab1e687c201da7004c14314d060d0b4add6be63319b2a8e75c675a226e4e5b",
+    "comparison_code": "f8c0f1c5ab9e70c78ab2d47a1b8748d149778dff30a9053ea163876dabddd430",
+    "original_pdf": "b8eff9830bcc87940c4eadc9c64b80e7381ab43c96f52b528ef773b3b0332e78",
+    "root-results01.json": "57c68de1adc72eba267b6138338d1113963de90c4ecb967ac12ebe486526cb9f",
+    "thompson-independent.json": "7f1ff93025f499e62498a5ec2c21700c0a2b3d58213cb72363dd7757b2c153b9",
+    "thompson-stages-root.json": "3265861472770daee4fe35df339d91a419c175a9bb793c73f225a5cd3adb07ac",
+    "tn1749-independent-results01.json": "18970dbeff47ea2fe562fc8765997bb63544f45130c57ad4a71ec800a1e8010b",
+    "tn1749-independent.json": "638b66018eb46fc2ed1ea07949b053a68964ce29a6a1fbc07b696b3267a05dbe",
+    "tn1749-root.json": "2a9ed1412e592f053c4f75c6fdc001858afb55557d69d3720f04ed1bbf0d4aca",
+    "tn_pdf": "5d7461f298654ffb0c9f8df319298330d155fc2d8155d85abcd5391a4d748caf",
+    "verify_tn1749.py": "f6955dcda59cb1bb09b911c8aa90f3579ffd41619c79a81faac1ee25d3d1c24f"
+  },
+  "pins_before": {
+    "ARITHMETIC-PROTOCOL.md": "88954a1929e80b32fd49f061f426be594997532ade2e59528a87c6bbb4bde78e",
+    "PROTOCOL.md": "a06f1bc8f7e4283dbca0c9f54337eba0123045538ca47b411eb3aa8c260d637d",
+    "calc_assembly.py": "d4ab1e687c201da7004c14314d060d0b4add6be63319b2a8e75c675a226e4e5b",
+    "comparison_code": "f8c0f1c5ab9e70c78ab2d47a1b8748d149778dff30a9053ea163876dabddd430",
+    "original_pdf": "b8eff9830bcc87940c4eadc9c64b80e7381ab43c96f52b528ef773b3b0332e78",
+    "root-results01.json": "57c68de1adc72eba267b6138338d1113963de90c4ecb967ac12ebe486526cb9f",
+    "thompson-independent.json": "7f1ff93025f499e62498a5ec2c21700c0a2b3d58213cb72363dd7757b2c153b9",
+    "thompson-stages-root.json": "3265861472770daee4fe35df339d91a419c175a9bb793c73f225a5cd3adb07ac",
+    "tn1749-independent-results01.json": "18970dbeff47ea2fe562fc8765997bb63544f45130c57ad4a71ec800a1e8010b",
+    "tn1749-independent.json": "638b66018eb46fc2ed1ea07949b053a68964ce29a6a1fbc07b696b3267a05dbe",
+    "tn1749-root.json": "2a9ed1412e592f053c4f75c6fdc001858afb55557d69d3720f04ed1bbf0d4aca",
+    "tn_pdf": "5d7461f298654ffb0c9f8df319298330d155fc2d8155d85abcd5391a4d748caf",
+    "verify_tn1749.py": "f6955dcda59cb1bb09b911c8aa90f3579ffd41619c79a81faac1ee25d3d1c24f"
+  },
+  "post_freeze_schema_adapter": true,
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "root_control_execution_and_review": {
+    "count": 14,
+    "endpoint_coverage_limit": "The endpoint_only assertion calls a separate local interval classifier, not calculate(). The calculate(1.50,1.00,50.5) fixture is asserted only to have point_percent50; its production relation is overlap, not endpoint_only. Production endpoint_only branch is therefore not established by this control suite.",
+    "executed_checks": {
+      "decimal_precision": true,
+      "endpoint_only": true,
+      "fraction_encoding": true,
+      "fractional_fixture": true,
+      "interval_denominator": true,
+      "negative_denominator": true,
+      "negative_model_interval": true,
+      "negative_sign": true,
+      "nonoverlap": true,
+      "positive_sign": true,
+      "rounding_overlap": true,
+      "trailing_zero_precision": true,
+      "zero": true,
+      "zero_denominator": true
+    },
+    "independent_control_limit": "The independent interval endpoint test also calls its overlap helper; actual TN rows provide no endpoint-only cases. Neither suite should be described as full production-branch coverage.",
+    "not_validation": "These are synthetic software checks, not specimen evidence or model-physics validation.",
+    "other_coverage": "Production calculate is exercised for overlap, disjointness, nonpositive denominator interval and negative model interval. Direct percent tests cover zero, positive/negative sign and denominator rejection; precision and Fraction serialization have separate controls.",
+    "protocol_range_limit": "Root permits a model-box lower endpoint exactly zero whereas the independent checker requires a wholly positive model box. The12 actual TN comparisons have positive lower bounds, so this admission difference does not affect the compared results.",
+    "recorded_result_exact_match": true,
+    "reviewed_code_sha256": "d4ab1e687c201da7004c14314d060d0b4add6be63319b2a8e75c675a226e4e5b",
+    "so_named_endpoint_fixture_actual_production_relation": "overlap"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,627 @@
+{
+  "command": [
+    "research/sherlock-wtc7-investigation/metric-motion-audit/verify_metric.py",
+    "--runs",
+    "run01",
+    "run02",
+    "--out",
+    "research/sherlock-wtc7-investigation/metric-motion-audit/independent-root01.json"
+  ],
+  "examples": {
+    "checks": [
+      "five affine clock rates; quadratic direction and inverse recovery",
+      "three length-per-pixel factors with distinct pixels-per-metre convention",
+      "constant spatial/time offsets; same physical evaluation event",
+      "five exact nonlinear-projective from-rest examples; bounded positive denominator",
+      "two bounded projective constant-velocity witnesses of opposite apparent signs",
+      "two bounded monotone nonlinear-clock witnesses and inverse correction",
+      "combined nonlinear projection/clock with negative orientation and velocity",
+      "gravity circular calibration and two distinct physical parameterizations of one image curve",
+      "four explicit inverse-domain rejections"
+    ],
+    "circular_calibration": {
+      "assumed_gravity": {
+        "decimal": 9.81,
+        "exact": "981/100"
+      },
+      "gravity_derived_pixels_per_metre": {
+        "decimal": 2.038735983690112,
+        "exact": "2000/981"
+      },
+      "image_curvature": {
+        "decimal": 20.0,
+        "exact": "20"
+      },
+      "same_curve_alternative_accelerations": [
+        5,
+        20
+      ],
+      "same_curve_samples": [
+        {
+          "s": {
+            "decimal": 0.0,
+            "exact": "0"
+          },
+          "u": {
+            "decimal": 0.0,
+            "exact": "0"
+          }
+        },
+        {
+          "s": {
+            "decimal": 0.5,
+            "exact": "1/2"
+          },
+          "u": {
+            "decimal": 2.5,
+            "exact": "5/2"
+          }
+        },
+        {
+          "s": {
+            "decimal": 1.0,
+            "exact": "1"
+          },
+          "u": {
+            "decimal": 10.0,
+            "exact": "10"
+          }
+        },
+        {
+          "s": {
+            "decimal": 2.0,
+            "exact": "2"
+          },
+          "u": {
+            "decimal": 40.0,
+            "exact": "40"
+          }
+        }
+      ],
+      "synthetic_true_acceleration": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "tautologically_reported_acceleration": {
+        "decimal": 9.81,
+        "exact": "981/100"
+      }
+    },
+    "clock_rate_examples": [
+      {
+        "image_curvature": {
+          "decimal": 221.60664819944597,
+          "exact": "80000/361"
+        },
+        "naive_acceleration_with_khat_1": {
+          "decimal": 11.0803324099723,
+          "exact": "4000/361"
+        },
+        "naive_over_true_ratio": {
+          "decimal": 1.10803324099723,
+          "exact": "400/361"
+        },
+        "rate": {
+          "decimal": 0.95,
+          "exact": "19/20"
+        }
+      },
+      {
+        "image_curvature": {
+          "decimal": 204.06081012141618,
+          "exact": "2000000/9801"
+        },
+        "naive_acceleration_with_khat_1": {
+          "decimal": 10.20304050607081,
+          "exact": "100000/9801"
+        },
+        "naive_over_true_ratio": {
+          "decimal": 1.0203040506070808,
+          "exact": "10000/9801"
+        },
+        "rate": {
+          "decimal": 0.99,
+          "exact": "99/100"
+        }
+      },
+      {
+        "image_curvature": {
+          "decimal": 200.0,
+          "exact": "200"
+        },
+        "naive_acceleration_with_khat_1": {
+          "decimal": 10.0,
+          "exact": "10"
+        },
+        "naive_over_true_ratio": {
+          "decimal": 1.0,
+          "exact": "1"
+        },
+        "rate": {
+          "decimal": 1.0,
+          "exact": "1"
+        }
+      },
+      {
+        "image_curvature": {
+          "decimal": 196.0592098813842,
+          "exact": "2000000/10201"
+        },
+        "naive_acceleration_with_khat_1": {
+          "decimal": 9.80296049406921,
+          "exact": "100000/10201"
+        },
+        "naive_over_true_ratio": {
+          "decimal": 0.9802960494069209,
+          "exact": "10000/10201"
+        },
+        "rate": {
+          "decimal": 1.01,
+          "exact": "101/100"
+        }
+      },
+      {
+        "image_curvature": {
+          "decimal": 181.40589569160997,
+          "exact": "80000/441"
+        },
+        "naive_acceleration_with_khat_1": {
+          "decimal": 9.070294784580499,
+          "exact": "4000/441"
+        },
+        "naive_over_true_ratio": {
+          "decimal": 0.9070294784580499,
+          "exact": "400/441"
+        },
+        "rate": {
+          "decimal": 1.05,
+          "exact": "21/20"
+        }
+      }
+    ],
+    "domain_rejections": [
+      "zero_denominator",
+      "degenerate_map",
+      "zero_clock_rate",
+      "negative_clock_rate"
+    ],
+    "nonlinear_witnesses": [
+      {
+        "c": {
+          "decimal": -0.1,
+          "exact": "-1/10"
+        },
+        "domain": "0<=t<=1, z=t metres; denominator stays between 0.9 and 1.1; illustrative only",
+        "image_curvature_t1": {
+          "decimal": 0.5486968449931413,
+          "exact": "400/729"
+        },
+        "kind": "projective_constant_velocity",
+        "physical_acceleration": {
+          "decimal": 0.0,
+          "exact": "0"
+        }
+      },
+      {
+        "c": {
+          "decimal": 0.1,
+          "exact": "1/10"
+        },
+        "domain": "0<=t<=1, z=t metres; denominator stays between 0.9 and 1.1; illustrative only",
+        "image_curvature_t1": {
+          "decimal": -0.3005259203606311,
+          "exact": "-400/1331"
+        },
+        "kind": "projective_constant_velocity",
+        "physical_acceleration": {
+          "decimal": 0.0,
+          "exact": "0"
+        }
+      },
+      {
+        "clock": "s=t+epsilon*t\u00b2/2",
+        "clock_rate_t1": {
+          "decimal": 0.9,
+          "exact": "9/10"
+        },
+        "domain": "0<=t<=1; clock rate stays between 0.9 and 1.1 and is strictly positive; illustrative only",
+        "epsilon_per_second": {
+          "decimal": -0.1,
+          "exact": "-1/10"
+        },
+        "image_curvature_t1": {
+          "decimal": 0.27434842249657065,
+          "exact": "200/729"
+        },
+        "kind": "nonlinear_clock_constant_velocity",
+        "physical_acceleration": {
+          "decimal": 0.0,
+          "exact": "0"
+        }
+      },
+      {
+        "clock": "s=t+epsilon*t\u00b2/2",
+        "clock_rate_t1": {
+          "decimal": 1.1,
+          "exact": "11/10"
+        },
+        "domain": "0<=t<=1; clock rate stays between 0.9 and 1.1 and is strictly positive; illustrative only",
+        "epsilon_per_second": {
+          "decimal": 0.1,
+          "exact": "1/10"
+        },
+        "image_curvature_t1": {
+          "decimal": -0.15026296018031554,
+          "exact": "-200/1331"
+        },
+        "kind": "nonlinear_clock_constant_velocity",
+        "physical_acceleration": {
+          "decimal": 0.0,
+          "exact": "0"
+        }
+      }
+    ],
+    "offset_examples": [
+      {
+        "clock_offset": {
+          "decimal": -50.0,
+          "exact": "-50"
+        },
+        "image_first_derivative": {
+          "decimal": 181.8181818181818,
+          "exact": "2000/11"
+        },
+        "image_second_derivative": {
+          "decimal": 165.28925619834712,
+          "exact": "20000/121"
+        },
+        "recorded_event_time": {
+          "decimal": -48.9,
+          "exact": "-489/10"
+        }
+      },
+      {
+        "clock_offset": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "image_first_derivative": {
+          "decimal": 181.8181818181818,
+          "exact": "2000/11"
+        },
+        "image_second_derivative": {
+          "decimal": 165.28925619834712,
+          "exact": "20000/121"
+        },
+        "recorded_event_time": {
+          "decimal": 1.1,
+          "exact": "11/10"
+        }
+      },
+      {
+        "clock_offset": {
+          "decimal": 3.2857142857142856,
+          "exact": "23/7"
+        },
+        "image_first_derivative": {
+          "decimal": 181.8181818181818,
+          "exact": "2000/11"
+        },
+        "image_second_derivative": {
+          "decimal": 165.28925619834712,
+          "exact": "20000/121"
+        },
+        "recorded_event_time": {
+          "decimal": 4.385714285714286,
+          "exact": "307/70"
+        }
+      }
+    ],
+    "passed": 9,
+    "projective_examples": [
+      {
+        "baseline_scale_naive_over_true_ratio": {
+          "decimal": 1.3413033969966468,
+          "exact": "9200/6859"
+        },
+        "c_per_metre": {
+          "decimal": -0.01,
+          "exact": "-1/100"
+        },
+        "denominator_range_t_0_to_1": [
+          {
+            "decimal": 0.95,
+            "exact": "19/20"
+          },
+          {
+            "decimal": 1.0,
+            "exact": "1"
+          }
+        ],
+        "image_curvature": {
+          "decimal": 268.2606793993294,
+          "exact": "1840000/6859"
+        },
+        "q_cz_at_t1": {
+          "decimal": -0.05,
+          "exact": "-1/20"
+        }
+      },
+      {
+        "baseline_scale_naive_over_true_ratio": {
+          "decimal": 1.1262314171816166,
+          "exact": "132500/117649"
+        },
+        "c_per_metre": {
+          "decimal": -0.004,
+          "exact": "-1/250"
+        },
+        "denominator_range_t_0_to_1": [
+          {
+            "decimal": 0.98,
+            "exact": "49/50"
+          },
+          {
+            "decimal": 1.0,
+            "exact": "1"
+          }
+        ],
+        "image_curvature": {
+          "decimal": 225.2462834363233,
+          "exact": "26500000/117649"
+        },
+        "q_cz_at_t1": {
+          "decimal": -0.02,
+          "exact": "-1/50"
+        }
+      },
+      {
+        "baseline_scale_naive_over_true_ratio": {
+          "decimal": 1.0,
+          "exact": "1"
+        },
+        "c_per_metre": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "denominator_range_t_0_to_1": [
+          {
+            "decimal": 1.0,
+            "exact": "1"
+          },
+          {
+            "decimal": 1.0,
+            "exact": "1"
+          }
+        ],
+        "image_curvature": {
+          "decimal": 200.0,
+          "exact": "200"
+        },
+        "q_cz_at_t1": {
+          "decimal": 0.0,
+          "exact": "0"
+        }
+      },
+      {
+        "baseline_scale_naive_over_true_ratio": {
+          "decimal": 0.8857829944742218,
+          "exact": "117500/132651"
+        },
+        "c_per_metre": {
+          "decimal": 0.004,
+          "exact": "1/250"
+        },
+        "denominator_range_t_0_to_1": [
+          {
+            "decimal": 1.0,
+            "exact": "1"
+          },
+          {
+            "decimal": 1.02,
+            "exact": "51/50"
+          }
+        ],
+        "image_curvature": {
+          "decimal": 177.15659889484436,
+          "exact": "23500000/132651"
+        },
+        "q_cz_at_t1": {
+          "decimal": 0.02,
+          "exact": "1/50"
+        }
+      },
+      {
+        "baseline_scale_naive_over_true_ratio": {
+          "decimal": 0.7342619587517547,
+          "exact": "6800/9261"
+        },
+        "c_per_metre": {
+          "decimal": 0.01,
+          "exact": "1/100"
+        },
+        "denominator_range_t_0_to_1": [
+          {
+            "decimal": 1.0,
+            "exact": "1"
+          },
+          {
+            "decimal": 1.05,
+            "exact": "21/20"
+          }
+        ],
+        "image_curvature": {
+          "decimal": 146.85239175035093,
+          "exact": "1360000/9261"
+        },
+        "q_cz_at_t1": {
+          "decimal": 0.05,
+          "exact": "1/20"
+        }
+      }
+    ],
+    "scale_examples": [
+      {
+        "inferred_acceleration": {
+          "decimal": 9.0,
+          "exact": "9"
+        },
+        "reported_metres_per_pixel_factor": {
+          "decimal": 0.9,
+          "exact": "9/10"
+        }
+      },
+      {
+        "inferred_acceleration": {
+          "decimal": 10.0,
+          "exact": "10"
+        },
+        "reported_metres_per_pixel_factor": {
+          "decimal": 1.0,
+          "exact": "1"
+        }
+      },
+      {
+        "inferred_acceleration": {
+          "decimal": 11.0,
+          "exact": "11"
+        },
+        "reported_metres_per_pixel_factor": {
+          "decimal": 1.1,
+          "exact": "11/10"
+        }
+      }
+    ],
+    "scope": "Exact synthetic mathematics only; no historical geometry/rate bounds, observation, fit or cause conclusion."
+  },
+  "oracle": "exact rational second-order Taylor polynomial algebra and local clock-series inversion; no producer import",
+  "pins": {
+    "/Users/admin/.pyenv/versions/3.13.7/bin/python3": {
+      "bytes": 33816,
+      "sha256": "7d29600aa971dfd764a15b113d5964b1e74a18176a6b70cb31646d45e9e5018e"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/CHARTER.md": {
+      "bytes": 24068,
+      "sha256": "54a4a23558a6b1ed756d3398e9e58d0972c6e531aadef5cd4027f29c4b9756bd"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/PROTOCOL.md": {
+      "bytes": 4599,
+      "sha256": "2ef59293a4e7994929964878ace70cef3569b4b689008e7ef85c66dc1e00e800"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/verify_metric.py": {
+      "bytes": 19295,
+      "sha256": "5be3a9c620fe01d362b212e24c58ac91624f00fbd2fa6a8964ae4540702aa8d2"
+    }
+  },
+  "python": "3.13.7",
+  "run_verification": {
+    "all_files_byte_identical": true,
+    "counts": {
+      "affine": 15,
+      "circular_calibration": 2,
+      "nonlinear_clock": 2,
+      "projective": 5,
+      "time_offsets": 2
+    },
+    "exact_rational_and_decimal_equality": true,
+    "examples": 26,
+    "independent_method": "Taylor-series projection, local clock inversion and inverse projective Taylor series; no producer derivative/recovery functions used.",
+    "pins": {
+      "/Users/admin/.pyenv/versions/3.13.7/bin/python3": {
+        "bytes": 33816,
+        "sha256": "7d29600aa971dfd764a15b113d5964b1e74a18176a6b70cb31646d45e9e5018e"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/PROTOCOL.md": {
+        "bytes": 4599,
+        "sha256": "2ef59293a4e7994929964878ace70cef3569b4b689008e7ef85c66dc1e00e800"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/calculate.py": {
+        "bytes": 7789,
+        "sha256": "bc59b8a9e6510a0e8a493636dff96907a500c047536c235e7840fb72bb09e3d0"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/inputs.json": {
+        "bytes": 592,
+        "sha256": "6885b06d38a6ed1b3b55d6188df49c1c91caaa3460fb08b80740ec76dc8fb8f1"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run01/PROTOCOL.md": {
+        "bytes": 4599,
+        "sha256": "2ef59293a4e7994929964878ace70cef3569b4b689008e7ef85c66dc1e00e800"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run01/calculate.py": {
+        "bytes": 7789,
+        "sha256": "bc59b8a9e6510a0e8a493636dff96907a500c047536c235e7840fb72bb09e3d0"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run01/controls.json": {
+        "bytes": 378,
+        "sha256": "1089f15ce9ae59b5b21350bcedf7aaaec6079d7199071121c9c3fe5c9705e80a"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run01/initial.json": {
+        "bytes": 1022,
+        "sha256": "ec56dd56f63d0ce286745cc9c6e6c0da8a6ec2fa314b6cb1fee944034e9ced4f"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run01/inputs.json": {
+        "bytes": 592,
+        "sha256": "6885b06d38a6ed1b3b55d6188df49c1c91caaa3460fb08b80740ec76dc8fb8f1"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run01/receipt.json": {
+        "bytes": 1774,
+        "sha256": "d2839376f40177f8c09875e328f9f66dced562cf5d7135a7d5a7c86c86e22c41"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run01/result.json": {
+        "bytes": 18684,
+        "sha256": "b42bf971f9b188e9f0b15a5f4e5fff019a5fab4c26e8a43cfccc8dc0dd13d9ae"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run02/PROTOCOL.md": {
+        "bytes": 4599,
+        "sha256": "2ef59293a4e7994929964878ace70cef3569b4b689008e7ef85c66dc1e00e800"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run02/calculate.py": {
+        "bytes": 7789,
+        "sha256": "bc59b8a9e6510a0e8a493636dff96907a500c047536c235e7840fb72bb09e3d0"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run02/controls.json": {
+        "bytes": 378,
+        "sha256": "1089f15ce9ae59b5b21350bcedf7aaaec6079d7199071121c9c3fe5c9705e80a"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run02/initial.json": {
+        "bytes": 1022,
+        "sha256": "ec56dd56f63d0ce286745cc9c6e6c0da8a6ec2fa314b6cb1fee944034e9ced4f"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run02/inputs.json": {
+        "bytes": 592,
+        "sha256": "6885b06d38a6ed1b3b55d6188df49c1c91caaa3460fb08b80740ec76dc8fb8f1"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run02/receipt.json": {
+        "bytes": 1774,
+        "sha256": "d2839376f40177f8c09875e328f9f66dced562cf5d7135a7d5a7c86c86e22c41"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/metric-motion-audit/run02/result.json": {
+        "bytes": 18684,
+        "sha256": "b42bf971f9b188e9f0b15a5f4e5fff019a5fab4c26e8a43cfccc8dc0dd13d9ae"
+      }
+    },
+    "producer_imported": false,
+    "runs": [
+      {
+        "files_including_receipt": 7,
+        "listed_products": 6,
+        "receipt": {
+          "bytes": 1774,
+          "sha256": "d2839376f40177f8c09875e328f9f66dced562cf5d7135a7d5a7c86c86e22c41"
+        },
+        "scope": "run01"
+      },
+      {
+        "files_including_receipt": 7,
+        "listed_products": 6,
+        "receipt": {
+          "bytes": 1774,
+          "sha256": "d2839376f40177f8c09875e328f9f66dced562cf5d7135a7d5a7c86c86e22c41"
+        },
+        "scope": "run02"
+      }
+    ],
+    "scope": "Synthetic transformation algebra, not historical calibration or acceleration."
+  },
+  "status": "pass"
+}

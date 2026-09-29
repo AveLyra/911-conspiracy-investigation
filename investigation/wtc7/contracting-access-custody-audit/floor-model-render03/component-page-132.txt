@@ -1,0 +1,35 @@
+Chapter 5   
+84 NIST NCSTAR 1-6C, WTC Investigation 
+5.4.10 Simplified Truss Model 
+The truss model was simplified for use in the full floor subsystem model.  Characteristics of the truss 
+model captured by the simplified truss model were: (1) total horizontal reaction force under the thermal 
+loading and (2) vertical deflection at midspan under the thermal loading.  The simplified truss model had 
+the following features: 
+• The geometry of the truss was preserved. 
+• A pair of primary trusses at each exterior column was combined into one truss.  Cross 
+sections of truss members were doubled. 
+• The top and bottom chords and web diagonals were modeled by BEAM188 elements.  A 
+member between two panel points was modeled by one element only. 
+• Break elements modeled by ANSYS user-defined elements were used to model the following 
+failure modes: (a) seat bolt shear-off, (b) gusset plate fracture, (c) truss walk-off, (d) web 
+diagonal buckling/resistance weld failure, (e) failure of studs on the spandrel and strap 
+anchors, and (f) weld failure between strap anchors and top chords.  User-defined break 
+elements will be further discussed in Section 5.5.5. 
+• Knuckles were not modeled by break elements.  It was found that neglecting knuckle failure 
+did not significantly change truss behavior subjected to thermal loads. 
+• Steel had temperature-dependent elastic and plastic material properties. 
+• Creep in steel was included in the simplified truss model; however, it was not included when 
+the simplified truss model was incorporated in the full floor model, because of convergence 
+problems inherent in BEAM188 elements. 
+• The concrete slab was modeled by SHELL181 elements with a temperature-dependent 
+bilinear material model that had the same yield strength in both tension and compression.  
+The yield strength was set to the compressive strength. 
+• Construction sequence was not considered. 
+Figure 5–38 shows the vertical deflection at midspan and the horizontal reaction at exterior columns of 
+the truss model and simplified truss model subjected to the gravity load and the assumed thermal load 
+described in Section 5.4.4.  Vertical displacement in this figure is the displacement that occurred during 
+thermal loading.  The simplified truss model predicted the buckling of web diagonals at 530 ˚C, which is 
+about 35 ˚C lower than the temperature at which web diagonal buckling was predicted by the truss model.  
+The tension at 700 ˚C in the simplified truss model was about 2 kip, which was less than 10 kip in the 
+truss model.  Overall truss behaviors as predicted by the simplified truss model subjected to gravity and 
+the assumed thermal loading were in good agreement with the truss model. 

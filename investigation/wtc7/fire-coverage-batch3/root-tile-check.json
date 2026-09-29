@@ -1,0 +1,131 @@
+{
+  "method": "Independent Ruby rational arithmetic on preserved decimal CTMs; no producer code imported, no pixels decoded",
+  "key_sha256": "ac3fd35f7dbc0bee7d970c677e0609520455b789d0a77ffc3d3fb2840ecd86da",
+  "tile_count": 17,
+  "scale_exact": "183000031/390000000",
+  "all_scale_pass": false,
+  "max_join_residual_points": 0.0000153,
+  "rows": [
+    {
+      "asset": "A-5222a5fd00cb",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": null,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-551f84a53d74",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 1e-7,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-bea656073844",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 0.0000153,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-235ffa35c324",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 1e-7,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-823aeb6e01c7",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 0,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-fd552e035ea2",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 0,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-82216b9cab34",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 1e-7,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-578e32141984",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 0.0000153,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-e407f45cbd56",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 1e-7,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-d198095e32b8",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 0,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-5ed1a01c9d91",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 0,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-1cbb93bcec36",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 1e-7,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-cbde0793f786",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 0.0000153,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-cec63651e017",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 1e-7,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-0a4fa13251e3",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 0,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-4e995b69a934",
+      "height_residual_exact": "0/1",
+      "height_residual_points": 0,
+      "join_residual_points": 0,
+      "scale_pass": true
+    },
+    {
+      "asset": "A-4a423c251c0b",
+      "height_residual_exact": "7498237/195000000",
+      "height_residual_points": 0.03845249743589744,
+      "join_residual_points": 1e-7,
+      "scale_pass": false
+    }
+  ],
+  "command": "ruby -rjson -rdigest -e 'p=ARGV[0]; raw=File.read(p); raise \"key pin\" unless Digest::SHA256.hexdigest(raw)==\"ac3fd35f7dbc0bee7d970c677e0609520455b789d0a77ffc3d3fb2840ecd86da\"; k=JSON.parse(raw); t=k[\"assets\"].select{|a|a[\"native_pdf_dimensions\"][0]==975 && a[\"invocations\"].any?{|i|i[\"physical_page\"]==252}}; raise \"tile count\" unless t.size==17; t.sort_by!{|a|m=a[\"invocations\"][0][\"ctm\"]; -(m[5].to_s.to_r+m[3].to_s.to_r)}; first=t.first; scale=first[\"invocations\"][0][\"ctm\"][3].to_s.to_r/first[\"native_pdf_dimensions\"][1]; prev=nil; rows=t.map{|a|m=a[\"invocations\"][0][\"ctm\"].map{|x|x.to_s.to_r}; r=(m[3]-a[\"native_pdf_dimensions\"][1]*scale).abs; j=prev ? (prev-m[5]-m[3]).abs : nil;prev=m[5];{asset:a[\"asset_id\"],height_residual_exact:r.to_s,height_residual_points:r.to_f,join_residual_points:j ? j.to_f : nil,scale_pass:r<=Rational(1,10000)}}; puts JSON.pretty_generate({method:\"Independent Ruby rational arithmetic on preserved decimal CTMs; no producer code imported, no pixels decoded\",key_sha256:Digest::SHA256.hexdigest(raw),tile_count:t.size,scale_exact:scale.to_s,all_scale_pass:rows.all?{|r|r[:scale_pass]},max_join_residual_points:rows.map{|r|r[:join_residual_points]}.compact.max,rows:rows})' assets/run01/provenance-key.json",
+  "prior_attempt": "First readonly command failed because this system Ruby lacks Array#filter_map; corrected to map.compact. Source, tolerance and observed geometry unchanged."
+}

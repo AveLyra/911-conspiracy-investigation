@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/crw/scenario-run.schema.json",
+  "title": "CRW Scenario Run",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "event_id",
+    "hypothesis_family",
+    "model_id",
+    "fidelity",
+    "parameters",
+    "parameter_sources",
+    "execution",
+    "quality_status",
+    "outputs",
+    "created_at"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^RUN-[A-Z0-9][A-Z0-9-]*$" },
+    "event_id": { "type": "string", "pattern": "^EVT-[A-Z0-9][A-Z0-9-]*$" },
+    "hypothesis_family": {
+      "type": "string",
+      "enum": ["FIRE_PROGRESSIVE", "DAMAGE_PROGRESSIVE", "EXPLOSIVE_SUPPORT_REMOVAL", "NONEXPLOSIVE_INDUCED", "HYBRID", "NULL_OR_OTHER"]
+    },
+    "model_id": { "type": "string", "pattern": "^MDL-[A-Z0-9][A-Z0-9-]*$" },
+    "fidelity": { "type": "string", "enum": ["L0", "L1", "L2"] },
+    "parameters": { "type": "object", "additionalProperties": true },
+    "parameter_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["parameter", "source"],
+        "properties": {
+          "parameter": { "type": "string" },
+          "source": { "type": "string" },
+          "rationale": { "type": "string" }
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["software", "version", "environment_digest", "repository_commit", "determinism"],
+      "properties": {
+        "software": { "type": "string" },
+        "version": { "type": "string" },
+        "environment_digest": { "type": "string" },
+        "repository_commit": { "type": "string" },
+        "determinism": { "type": "string", "enum": ["deterministic", "seeded", "uncontrolled"] },
+        "random_seed": { "type": ["integer", "null"] },
+        "hardware_class": { "type": "string" },
+        "wall_seconds": { "type": "number", "minimum": 0 }
+      }
+    },
+    "quality_status": {
+      "type": "string",
+      "enum": ["passed", "failed_solver", "failed_energy", "failed_contact", "failed_mesh", "failed_mass_balance", "not_reviewed"]
+    },
+    "quality_metrics": { "type": "object", "additionalProperties": true },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["uri", "sha256", "kind"],
+        "properties": {
+          "uri": { "type": "string" },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "kind": { "type": "string", "enum": ["solver_result", "synthetic_observation", "log", "diagnostic", "render"] }
+        }
+      }
+    },
+    "comparison_metrics": { "type": "object", "additionalProperties": true },
+    "supersedes": { "type": ["string", "null"], "pattern": "^RUN-[A-Z0-9][A-Z0-9-]*$" },
+    "created_at": { "type": "string", "format": "date-time" }
+  }
+}

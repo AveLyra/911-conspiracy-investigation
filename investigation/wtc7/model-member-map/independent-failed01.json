@@ -1,0 +1,32 @@
+{
+  "status": "FAIL",
+  "code": "nonnumeric_field",
+  "src": 121,
+  "line": 55,
+  "exit_code": 1,
+  "command": "PYTHONDONTWRITEBYTECODE=1 /Users/admin/.pyenv/shims/python3 research/sherlock-wtc7-investigation/model-member-map/verify_member_map.py --checkpoint",
+  "verifier_sha256": "f8b13413e9414d1602888fc12f9a453222da9a741bde59f79804cb78ac518fe5",
+  "core_sha256": "c8c0c99029beef4213cb7feac273d81c1a95d5feaaed8158a421df2ba642f1b4",
+  "protocol_sha256": "d2c2b77d9801236c0a7d940349412a3b3cc50cc977997b67114ac2aff9afac7c",
+  "selftest_count_before_run": 22,
+  "checkpoint_created": false,
+  "failure_interpretation": "The verifier initially supported fixed-format but not comma-separated cross-section ID/heading cards. A subsequent safe diagnostic identified numeric CSID 100 before the comma. This is a verifier-format defect, not a finding against the source model.",
+  "diagnostic_line_sha256": "78bb9ca572d115897f1c81bd52a4b8266b321e5bd35da5abe6f93ca93c97adb3",
+  "before_pin_check": "All six compressed size/hash checks completed before model_join; exact source pins below. This record was reconstructed after the safe rejection, not emitted as an automatic per-file receipt during execution.",
+  "after_pin_check": "All six compressed size/hash checks were independently rerun after the failure and matched the same pins below.",
+  "source_pins_before_and_after": {
+    "116": {"bytes": 5331, "sha256": "982a0e4728ec54f84c44bf364ec34cae5f731e66da4bfad40a4b85ca4bd751da"},
+    "117": {"bytes": 103872, "sha256": "aa39ae4c977c51048fd267d890d98b66bd49dccaa965715b1cce1397a54c5273"},
+    "118": {"bytes": 2702040, "sha256": "51b1624338dce5da4dc5a91c13d1356338997af0d3fef9cd627b29ee3bbb9447"},
+    "119": {"bytes": 70199, "sha256": "2c3c350317f0c06c2aca2e9d9ae1e9b489d4a1c44c9268997e550d35c031d7d7"},
+    "120": {"bytes": 23162693, "sha256": "c49dcb74d8559e0cbfa4302732dd2c1764bf161389be0ee8e8c3d9a3dbc55e59"},
+    "121": {"bytes": 47520888, "sha256": "f831290e6c0375dafc0bbeb684099d342ed8df29ab8560df82b21459c041483d"}
+  },
+  "stream_completion": {
+    "116": {"eof": true}, "117": {"eof": true}, "118": {"eof": true},
+    "119": {"eof": true}, "120": {"eof": true},
+    "121": {"eof": false, "rejection_line": 55}
+  },
+  "stream_completion_evidence_limit": "EOF and successful uncompressed size/hash checks for 116-120 follow from the sequential source loop reaching SRC-121. Per-file run-time stats objects were not retained after the exception; no full per-file receipt or partial-stream hash is claimed. No second mesh pass began.",
+  "scope": "Numeric-only local parser verification; no solver, transmission, physical-cause inference, or source mutation."
+}

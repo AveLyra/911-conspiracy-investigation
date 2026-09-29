@@ -1,0 +1,94 @@
+{
+  "failed": 0,
+  "numpy": "2.3.4",
+  "passed": 3,
+  "pins": {
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/PROTOCOL.md": {
+      "bytes": 6152,
+      "sha256": "78e62afcb9803340f8a7677024e3545183fdb8c8d6c0ea6d05719086b76323b9"
+    },
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/repair.py": {
+      "bytes": 14178,
+      "sha256": "3283d364dbcbb5425583f92f77316a19edd2df94324a0fb1aa6150d59ba1382a"
+    },
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/test_repair.py": {
+      "bytes": 5553,
+      "sha256": "131aca67a66dbbf2ee06a17b6db28db5fd200e2c3017947ea4df407ba935c556"
+    },
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/reference-motion/measure.py": {
+      "bytes": 14390,
+      "sha256": "adb48c18a928ab44bba0f30cc8b6cdffbdd3a60918464600a568249b7822640e"
+    }
+  },
+  "products": {
+    "PROTOCOL.md": {
+      "bytes": 6152,
+      "sha256": "78e62afcb9803340f8a7677024e3545183fdb8c8d6c0ea6d05719086b76323b9"
+    },
+    "exclusive.json": {
+      "bytes": 24,
+      "sha256": "efa82530f0281abdf7bff98dbf617ee4427f964100fa5fe3f2e8673792b268cf"
+    },
+    "measure.py": {
+      "bytes": 14390,
+      "sha256": "adb48c18a928ab44bba0f30cc8b6cdffbdd3a60918464600a568249b7822640e"
+    },
+    "repair.py": {
+      "bytes": 14178,
+      "sha256": "3283d364dbcbb5425583f92f77316a19edd2df94324a0fb1aa6150d59ba1382a"
+    },
+    "synthetic-fit-rows.json": {
+      "bytes": 15620,
+      "sha256": "8f58a6b9790331add09938f59883713781939896fe04982f82f1b3b8f6d9e9dd"
+    },
+    "synthetic-grids.npz": {
+      "bytes": 223918,
+      "sha256": "1565c81c6842c0ed70faca3763930f791536ff0d99362f8c7ec5d98604c69645"
+    },
+    "synthetic-match-rows.json": {
+      "bytes": 8494,
+      "sha256": "bab16cd87ec8563d110fc7d8128f79a423919a50948fb3e83cfbd7f54bea355a"
+    },
+    "synthetic-rejected-fits.json": {
+      "bytes": 2352,
+      "sha256": "6e04bb09e2f47852eba8ae92ab86d6e7f2f97d089ac2ebe55b31724c57debee9"
+    },
+    "synthetic-rejected-grids.npz": {
+      "bytes": 187150,
+      "sha256": "e29594294cfb8a7f3b12835f0fcc308918b3660d46f838f07720b47009e1048b"
+    },
+    "synthetic-rejected-rows.json": {
+      "bytes": 8031,
+      "sha256": "79087eeac83bbf062ad1138fbf1e869491ad5a169f6bed3c3e17fb3a2ff8ae9b"
+    },
+    "test_repair.py": {
+      "bytes": 5553,
+      "sha256": "131aca67a66dbbf2ee06a17b6db28db5fd200e2c3017947ea4df407ba935c556"
+    }
+  },
+  "python": "3.13.7 (main, Oct 24 2025, 00:40:52) [Clang 17.0.0 (clang-1700.0.13.5)]",
+  "scope": "synthetic repair-wrapper controls, not historical or physical validation",
+  "tests": [
+    {
+      "detail": {
+        "situations_checked": 5
+      },
+      "name": "selection_order_both_sizes_visual_and_missing_gate",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "fit_rows": 6,
+        "matched_rows": 12,
+        "one_failure_rejects_models": 6
+      },
+      "name": "actual_frame_wrapper_and_single_failure",
+      "status": "pass"
+    },
+    {
+      "detail": "both overwrite guards reject",
+      "name": "existing_outputs_preserved",
+      "status": "pass"
+    }
+  ]
+}

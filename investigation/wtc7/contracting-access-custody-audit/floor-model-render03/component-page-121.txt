@@ -1,0 +1,49 @@
+  Full Floor Subsystem 
+NIST NCSTAR 1-6C, WTC Investigation 73  
+5.4.4 Loads 
+Loads on the truss model consisted of dead and live loads and temperature time histories for all truss 
+components including the truss seats and concrete slab.  The gravity loads included the weight of the 
+structure, 8 psf superimposed dead load (including nonstructural dead loads due to architectural items and 
+fixed service equipment), and 13.75 psf of live load equal to 25 percent of design live load of 55 psf. 
+A temperature time history was used for exercising the truss model (Figure 5–28).  It was not obtained 
+from fire dynamics or heat conduction analyses.  The temperature was ramped over the first 30 min 
+linearly from 20 ˚C to 700 ˚C in truss members, from 20 ˚C to 700 ˚C at the bottom surface of the 
+concrete slab, and from 20 ˚C to 300 ˚C at the top surface of the concrete slab; thereafter, the maximum 
+temperatures were linearly increased at a rate of 20 ˚C per min.  At 40 min temperatures increased by 
+200 ˚C from those at 30 min.  A linear gradient through the thickness of the slab was assumed.  No 
+temperature load was applied to the columns or spandrel. 
+The effects of construction sequence were included by using “element birth and death” for the concrete 
+slab.  In the first step, the self-weight of truss members and concrete slab was applied to the truss without 
+the concrete slab.  In the second step, the concrete slab was placed stress-free, and the superimposed dead 
+and live load were applied to the model. 
+To determine the effect of debris load on the truss behavior, the gravity was increased until the analysis 
+failed to converge at room temperature. 
+ 
+Figure 5–28.  Assumed Temperature Distribution in the Truss Model at 30 min. 
+5.4.5 Material Properties 
+Table 5–8 shows material assignments for structural components in the truss model. 
+Elastic properties were assigned to the elements for Columns 143 and 144 and the spandrel.  As described 
+in Section 3.1.2, the Hjelm material model was used for the concrete model, which allowed different yield 
+strengths for tension and compression.  To improve convergence in the analysis, the negative slope after 
+cracking in tension or crushing in compression was removed, and the concrete was assumed to be plastic 
+after cracking or crushing. 
+1
+CTRUSS-07c (Gravity Load + Temperature)                                         
+300
+344.444
+388.889
+433.333
+477.778
+522.222
+566.667
+611.111
+655.556
+700
+ANSYS 8.0
+FEB 13 2004
+18:07:48
+ELEMENTS
+TEMPERATURES
+TMIN=300
+TMAX=700
+˚C 

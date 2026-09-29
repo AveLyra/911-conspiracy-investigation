@@ -1,0 +1,20 @@
+{
+  "status": "FAIL",
+  "record_type": "post-execution-reconstructed-command-receipt",
+  "code_basename": "verify_contacts-before-memory-fix.py",
+  "code_sha256": "5edd81e375e0e4c437a36a05d55f15714703120d40bf50ce61f71570608c188c",
+  "command": ["/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3", "research/sherlock-wtc7-investigation/c79-restraint-audit/verify_contacts.py", "--output", "independent-contacts01.json"],
+  "environment": {"PYTHONDONTWRITEBYTECODE": "1"},
+  "execution_session": 63869,
+  "terminal_exit_code": 1,
+  "terminal_output": {"status": "FAIL", "code": "memory_cap", "source": 0, "line": 0},
+  "memory_gate_bytes": 805306368,
+  "actual_peak_rss_bytes": null,
+  "actual_interrupted_source": null,
+  "actual_interrupted_line": null,
+  "retained_stream_progress": null,
+  "created_requested_output": false,
+  "synthetic_controls_passed_before_attempt": 18,
+  "pin_checks": "The executed code checks source/code/protocol pins before and after its caught collection failure, then checks peak memory. No individual pin-check values were retained in this failed process output; no new EOF/source-position receipt is inferred.",
+  "limitation": "The outer memory-cap exception masked the inner failure location. This receipt preserves the actually returned command outcome; it is not a recovered complete execution receipt."
+}

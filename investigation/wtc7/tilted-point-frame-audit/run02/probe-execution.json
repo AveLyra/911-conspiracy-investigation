@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/opt/homebrew/bin/ffprobe",
+    "-v",
+    "warning",
+    "-select_streams",
+    "v:0",
+    "-show_entries",
+    "stream=index,codec_name,codec_type,width,height,pix_fmt,sample_aspect_ratio,display_aspect_ratio,r_frame_rate,avg_frame_rate,time_base,start_pts,start_time,duration_ts,duration,nb_frames:stream_side_data=side_data_type,rotation,displaymatrix:frame=stream_index,best_effort_timestamp,pts,duration,pkt_duration,width,height,pix_fmt,key_frame,pict_type",
+    "-of",
+    "json",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/tilted-camera-source-join/source/TiltedCameraWTC7Clip.mp4"
+  ],
+  "returncode": 0,
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 142505,
+  "stdout_sha256": "9eebc24a57353f7c822e7fac08784c14bdbbb4b5ee70d4088fe4ab88e250e423",
+  "timeout_seconds": 60
+}

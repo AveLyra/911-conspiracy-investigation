@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/crw/evidence-object.schema.json",
+  "title": "CRW Evidence Object",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "event_id",
+    "role",
+    "local_path",
+    "sha256",
+    "bytes",
+    "acquired_at",
+    "authenticity_status",
+    "limitations"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^(EVD|DRV)-[A-Z0-9][A-Z0-9-]*$" },
+    "event_id": { "type": "string", "pattern": "^EVT-[A-Z0-9][A-Z0-9-]*$" },
+    "role": {
+      "type": "string",
+      "enum": [
+        "preserved_source",
+        "access_copy",
+        "analysis_derivative",
+        "comparator_source",
+        "model_package",
+        "document"
+      ]
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "local_path": { "type": "string", "minLength": 1 },
+    "source_page": { "type": "string", "format": "uri" },
+    "retrieval_uri": { "type": "string", "format": "uri" },
+    "remote_identifier": { "type": "string" },
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "bytes": { "type": "integer", "minimum": 0 },
+    "acquired_at": { "type": "string", "format": "date-time" },
+    "asserted_capture_time": { "type": ["string", "null"] },
+    "asserted_creator": { "type": ["string", "null"] },
+    "authenticity_status": {
+      "type": "string",
+      "enum": ["unknown", "secondary_attribution", "custodian_asserted", "authenticated", "disputed"]
+    },
+    "preservation_tier": {
+      "type": "string",
+      "enum": ["native_claimed", "best_available", "platform_access", "converted", "derived"]
+    },
+    "technical": { "type": "object", "additionalProperties": true },
+    "lineage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["parent_id", "relation"],
+        "properties": {
+          "parent_id": { "type": "string", "pattern": "^(EVD|DRV)-[A-Z0-9][A-Z0-9-]*$" },
+          "relation": {
+            "type": "string",
+            "enum": ["copied_from", "decoded_from", "transcoded_from", "extracted_from", "rendered_from", "supersedes"]
+          },
+          "transformation": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": ["tool", "created_at"],
+            "properties": {
+              "tool": { "type": "string" },
+              "version": { "type": "string" },
+              "configuration_uri": { "type": "string" },
+              "operator": { "type": "string" },
+              "created_at": { "type": "string", "format": "date-time" }
+            }
+          }
+        }
+      }
+    },
+    "limitations": { "type": "array", "items": { "type": "string" } },
+    "redistribution_status": { "type": ["string", "null"] }
+  }
+}

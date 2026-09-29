@@ -1,0 +1,275 @@
+{
+  "command": [
+    "research/sherlock-wtc7-investigation/c79-contact-geometry/compare_geometry.py",
+    "--output",
+    "comparison01.json"
+  ],
+  "comparison_tolerance": "Exact equality of parsed numeric values; no floating tolerance; matching NaN positions required.",
+  "control_reruns": [
+    {
+      "command": [
+        "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/c79-contact-geometry/verify_geometry.py",
+        "--selftest"
+      ],
+      "returncode": 0,
+      "script": "verify_geometry.py",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "119b78496de1921371897ec305fb168ff192143d199d47837784ab8f4c40ca66",
+      "tests": 27
+    },
+    {
+      "command": [
+        "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/c79-contact-geometry/extract_geometry.py",
+        "--controls"
+      ],
+      "returncode": 0,
+      "script": "extract_geometry.py",
+      "stderr_sha256": "404e3ede6372af82c4c59ae50e7e0200973613bf5443cee8bc04b33de393cdcc",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests": 11
+    }
+  ],
+  "counts": {
+    "array_NaN_slots": 16,
+    "array_comparisons": 23,
+    "array_numeric_slots": 15083434,
+    "metadata_boolean": 2638,
+    "metadata_null": 2618,
+    "metadata_numeric": 85055,
+    "metadata_string": 945
+  },
+  "diagnostics": {
+    "coordinate_bounds_source_units": [
+      {
+        "axis_max": [
+          32.83676,
+          16.29029,
+          90.44146
+        ],
+        "axis_min": [
+          -65.96434,
+          -26.9367,
+          -94.869
+        ],
+        "population": 1
+      },
+      {
+        "axis_max": [
+          32.92211,
+          16.26348,
+          86.8172
+        ],
+        "axis_min": [
+          -66.11758,
+          -26.8913,
+          -87.4268
+        ],
+        "population": 2
+      }
+    ],
+    "master_alias_records": 742,
+    "master_four_distinct": true,
+    "master_records": 742,
+    "ordered_alias_records": 442,
+    "part_references": 119,
+    "slave1_no_shell_nodes": [
+      {
+        "incidence": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "line": 916882,
+        "node": 912586,
+        "source": 121,
+        "xyz": [
+          -34.8996,
+          -0.42418,
+          -94.869
+        ]
+      },
+      {
+        "incidence": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "line": 916914,
+        "node": 912618,
+        "source": 121,
+        "xyz": [
+          -26.1112,
+          -0.42418,
+          -94.869
+        ]
+      },
+      {
+        "incidence": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "line": 916946,
+        "node": 912650,
+        "source": 121,
+        "xyz": [
+          -17.3228,
+          -0.42418,
+          -94.869
+        ]
+      },
+      {
+        "incidence": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "line": 916978,
+        "node": 912682,
+        "source": 121,
+        "xyz": [
+          -8.5344,
+          -0.42418,
+          -94.869
+        ]
+      }
+    ],
+    "slave_populations": [
+      {
+        "cid": 1,
+        "element_node_incidence_by_kind": [
+          249651,
+          5,
+          33054,
+          0
+        ],
+        "nodes": 152977,
+        "nodes_with_unequal_corner_thickness": 11187,
+        "nodes_without_shell_incidence": 4,
+        "supplied_corner_thickness_max": 0.127,
+        "supplied_corner_thickness_min": 0.004763
+      },
+      {
+        "cid": 2,
+        "element_node_incidence_by_kind": [
+          361536,
+          0,
+          0,
+          0
+        ],
+        "nodes": 131740,
+        "nodes_with_unequal_corner_thickness": 0,
+        "nodes_without_shell_incidence": 0,
+        "supplied_corner_thickness_max": 0.1692,
+        "supplied_corner_thickness_min": 0.01803
+      }
+    ]
+  },
+  "elapsed_seconds": 0.9781459589721635,
+  "mutation_controls": [
+    "exact_and_matching_NaN",
+    "coordinate_tiny_change",
+    "NaN_changed_to_zero",
+    "shape_change",
+    "integer_float_dtype",
+    "object_array",
+    "node_order_change",
+    "namespace_change",
+    "source_line_change",
+    "missing_attribute",
+    "extra_alias",
+    "omitted_metadata_key",
+    "boolean_as_integer",
+    "repeated_slot_not_set_equivalent",
+    "set_multiset_difference_demonstrated",
+    "root_pair_only_named_exclusions",
+    "root_pair_numeric_mutation"
+  ],
+  "not_dual_verified": [
+    "Root full SECTION_SHELL numeric cards beyond first ID/source locator; root PART heading hashes.",
+    "Root global ground-discrete counter: no global endpoint arrays retained independently, although the independent parser omits zero endpoints and both global family counts agree.",
+    "Independent full 207820 shell and 33059 nonshell element-record arrays beyond root master aliases; incident-shell THIC1-4 extrema; orientation-specific arrays; independent CONTROL_CONTACT cards.",
+    "No effective/default contact settings, units/floors, pairing, projection, restraint, capacity or cause are verified."
+  ],
+  "peak_bytes": 354975744,
+  "pins_after": {
+    "GROUND-REFERENCE-ADDENDUM.md": "ada80271b18d4de023fc17aafe9931d81c09b39416a3760cdbf33f76b98e86c4",
+    "INDEPENDENT-STAGE-PLAN.md": "4b616ea1a57727c7b0ac034cdc55bdb25fc656d355ef805907407bcc11cf506f",
+    "PROTOCOL.md": "b18a519ba88e7d61d331d821232e269c3e3f9a5e690a3e25e3e108e1e70df1ea",
+    "SRC119": {
+      "bytes": 70199,
+      "sha256": "2c3c350317f0c06c2aca2e9d9ae1e9b489d4a1c44c9268997e550d35c031d7d7"
+    },
+    "SRC120": {
+      "bytes": 23162693,
+      "sha256": "c49dcb74d8559e0cbfa4302732dd2c1764bf161389be0ee8e8c3d9a3dbc55e59"
+    },
+    "SRC121": {
+      "bytes": 47520888,
+      "sha256": "f831290e6c0375dafc0bbeb684099d342ed8df29ab8560df82b21459c041483d"
+    },
+    "comparison_code": "93d751c87eeae5e1e93609f2d8e4719af1de830a84a82f833d66048ac40efc2a",
+    "extract_geometry.py": "67c0074e4f873f3b4fb50df77ee740d6c5773b31f0ab23a0c750bb4a0ec1f525",
+    "independent-stage01.json": "ead0f771054d3bfbe775a215aa7bc295c3c1e741e172b5201ad59816acfccccd",
+    "independent-stage01.npz": "fcab10b2081c7fe3e1c0f9f4cdf92344d55e88e12c408fd7b70ebaeb0bcc0ad5",
+    "own_contacts": "b30b8ee5435e7cf8ce2ea979245b07fa4b0577606bf97638dbfd76b21043c7c3",
+    "own_reader": "5587e88d786d4e3fa7bfbe21823a54a54c97e289d5d7c90b2d9c72200408028a",
+    "own_seed": "d4f0c4107b2162c540fbb90fd61b1a90d42860cbcf3cd17903f22ba7e46379d7",
+    "root_contacts": "04193c154495a37e7603e72ad32668ee28383ff9471b4baeee7f93b257c56859",
+    "root_helper": "f63356778c544e4102aef34d9c92a49707315be4db5ae182fcee1cce5557720b",
+    "stage-root01.json": "deae7314c487b13e84302eb60b53bffb461f63d286f8d596b96a67377e631963",
+    "stage-root01.npz": "2324c9a606dbbf45fc593c5a69bbfc05d7ca538aca3db04031970a109db35bcf",
+    "stage-root02.json": "0a9ff75f944ffa9238c56e01fc234e199f1ca65faccfbed98217c4bd53152a33",
+    "stage-root02.npz": "2324c9a606dbbf45fc593c5a69bbfc05d7ca538aca3db04031970a109db35bcf",
+    "verify_geometry.py": "a1e60b3625d00f266e3f31c983ffcbe4b3843a1c38087ccf3924e9f006ec8a06"
+  },
+  "pins_before": {
+    "GROUND-REFERENCE-ADDENDUM.md": "ada80271b18d4de023fc17aafe9931d81c09b39416a3760cdbf33f76b98e86c4",
+    "INDEPENDENT-STAGE-PLAN.md": "4b616ea1a57727c7b0ac034cdc55bdb25fc656d355ef805907407bcc11cf506f",
+    "PROTOCOL.md": "b18a519ba88e7d61d331d821232e269c3e3f9a5e690a3e25e3e108e1e70df1ea",
+    "SRC119": {
+      "bytes": 70199,
+      "sha256": "2c3c350317f0c06c2aca2e9d9ae1e9b489d4a1c44c9268997e550d35c031d7d7"
+    },
+    "SRC120": {
+      "bytes": 23162693,
+      "sha256": "c49dcb74d8559e0cbfa4302732dd2c1764bf161389be0ee8e8c3d9a3dbc55e59"
+    },
+    "SRC121": {
+      "bytes": 47520888,
+      "sha256": "f831290e6c0375dafc0bbeb684099d342ed8df29ab8560df82b21459c041483d"
+    },
+    "comparison_code": "93d751c87eeae5e1e93609f2d8e4719af1de830a84a82f833d66048ac40efc2a",
+    "extract_geometry.py": "67c0074e4f873f3b4fb50df77ee740d6c5773b31f0ab23a0c750bb4a0ec1f525",
+    "independent-stage01.json": "ead0f771054d3bfbe775a215aa7bc295c3c1e741e172b5201ad59816acfccccd",
+    "independent-stage01.npz": "fcab10b2081c7fe3e1c0f9f4cdf92344d55e88e12c408fd7b70ebaeb0bcc0ad5",
+    "own_contacts": "b30b8ee5435e7cf8ce2ea979245b07fa4b0577606bf97638dbfd76b21043c7c3",
+    "own_reader": "5587e88d786d4e3fa7bfbe21823a54a54c97e289d5d7c90b2d9c72200408028a",
+    "own_seed": "d4f0c4107b2162c540fbb90fd61b1a90d42860cbcf3cd17903f22ba7e46379d7",
+    "root_contacts": "04193c154495a37e7603e72ad32668ee28383ff9471b4baeee7f93b257c56859",
+    "root_helper": "f63356778c544e4102aef34d9c92a49707315be4db5ae182fcee1cce5557720b",
+    "stage-root01.json": "deae7314c487b13e84302eb60b53bffb461f63d286f8d596b96a67377e631963",
+    "stage-root01.npz": "2324c9a606dbbf45fc593c5a69bbfc05d7ca538aca3db04031970a109db35bcf",
+    "stage-root02.json": "0a9ff75f944ffa9238c56e01fc234e199f1ca65faccfbed98217c4bd53152a33",
+    "stage-root02.npz": "2324c9a606dbbf45fc593c5a69bbfc05d7ca538aca3db04031970a109db35bcf",
+    "verify_geometry.py": "a1e60b3625d00f266e3f31c983ffcbe4b3843a1c38087ccf3924e9f006ec8a06"
+  },
+  "schema_normalizations": [
+    "Own node indices resolved to exact node IDs; node-part-family rows sorted as node/family/effectivePID.",
+    "Own master union split using frozen SEG1/SEG3 master membership; all root roles compared.",
+    "NSET positive occurrences rebuilt into source-line plus eight slots; absent-positive slots use root zero-padding convention. Own extraction does not distinguish source blank versus numeric zero for omitted NSET slots.",
+    "All 742 actual master rows and aliases have four distinct vertices; root node-set aliases therefore equal independent four-slot multiset aliases for this data only.",
+    "Source aliases resolved by fixed SRC-to-pinned-basename mapping; numeric JSON integer versus integral-float values compared as exact numeric values.",
+    "Root repetition excludes elapsed_seconds and the declared NPZ archive filename only."
+  ],
+  "scope": "Post-freeze independent output comparison and compressed-source byte hashes; no new raw source reconstruction or physical contact inference.",
+  "status": "PASS"
+}

@@ -1,0 +1,210 @@
+{
+  "allowlisted_probe": {
+    "format": {
+      "duration": "7.750000",
+      "size": "11893",
+      "start_time": "3.000000"
+    },
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "avg_frame_rate": "0/0",
+        "codec_name": "ffv1",
+        "codec_type": "video",
+        "color_range": "tv",
+        "display_aspect_ratio": "8:3",
+        "field_order": "progressive",
+        "height": 48,
+        "index": 0,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "4/1",
+        "sample_aspect_ratio": "2:1",
+        "start_pts": 3000,
+        "start_time": "3.000000",
+        "time_base": "1/1000",
+        "width": 64
+      }
+    ]
+  },
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,avg_frame_rate,r_frame_rate,time_base,start_pts,start_time,duration,nb_frames,field_order,sample_aspect_ratio,display_aspect_ratio,color_range,color_space,color_transfer,color_primaries,chroma_location:format=duration,start_time,size:stream_tags=:stream_disposition=:format_tags=:stream_side_data=",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-video-lineage/v2-controls01/tiny-fixture/nonzero-gap.mkv"
+      ],
+      "returncode": 0,
+      "stderr": "probe.stderr",
+      "stdout": "probe.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,width,height:frame_tags=:frame_side_data=",
+        "-of",
+        "compact=p=0:nk=0",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-video-lineage/v2-controls01/tiny-fixture/nonzero-gap.mkv"
+      ],
+      "returncode": 0,
+      "stderr": "frame-inventory.stderr",
+      "stdout": "frame-inventory.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-nostats",
+        "-loglevel",
+        "level+info",
+        "-n",
+        "-copyts",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-video-lineage/v2-controls01/tiny-fixture/nonzero-gap.mkv",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-map_metadata",
+        "-1",
+        "-map_chapters",
+        "-1",
+        "-vf",
+        "select='eq(n,0)+eq(n,4)',showinfo",
+        "-noautoscale",
+        "-pix_fmt",
+        "rgb24",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base:v",
+        "demux",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-video-lineage/v2-controls01/tiny-fixture/changed-v2-declaration-simulation/SYNTHETIC-ONLY/native/frame-%06d.png"
+      ],
+      "returncode": 0,
+      "stderr": "decode.stderr",
+      "stdout": "decode.stdout"
+    }
+  ],
+  "coverage": {
+    "decoded_frame_count": 12,
+    "empty_bins_within_observed_range": [
+      2
+    ],
+    "first_source_pts": 3000,
+    "frame_count_per_occupied_bin": [
+      {
+        "bin": 1,
+        "frames": 4
+      },
+      {
+        "bin": 3,
+        "frames": 8
+      }
+    ],
+    "last_source_pts": 7750,
+    "observed_bin_range": [
+      1,
+      3
+    ],
+    "occupied_bin_count": 2,
+    "range_note": "No inference about bins before first or after last decoded frame; empty internal bins are not filled.",
+    "recognized_terminal_delimiter_records": 0
+  },
+  "diagnostic_summary": {
+    "reviewed_software_colorspace_fallback_notices": 13,
+    "unreviewed_warning_or_error_count": 0
+  },
+  "overview_sheets": [
+    {
+      "bytes": 10636,
+      "path": "overview/sheet-0000.png",
+      "sample_indices": [
+        0,
+        1
+      ],
+      "sha256": "a060976242d621b47ce0792ca12d21256c65cce09bb93f0e8398afa6e615f706"
+    }
+  ],
+  "products": {
+    "decode.stderr": {
+      "bytes": 4014,
+      "sha256": "69cf779639dd74c5aee6196d72cb359ace076b671aeb8a4f8fa51b0c9ea3c9fd"
+    },
+    "decode.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frame-inventory.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frame-inventory.stdout": {
+      "bytes": 336,
+      "sha256": "2049191d53b0ff353166a768cac666e6dc13fb1625d6ac0064a39f44521baff1"
+    },
+    "frames.json": {
+      "bytes": 807,
+      "sha256": "71aa0a3ce52040ecbe78f38957b486760edfa3dd53a9b8159a209829b7c10c0d"
+    },
+    "native/frame-000001.png": {
+      "bytes": 550,
+      "sha256": "bb5434e5ec3787c81bb28db533b44958bb27e5d7a689569a34267bf9f1e36c17"
+    },
+    "native/frame-000002.png": {
+      "bytes": 534,
+      "sha256": "67ea410d2e678bd38a0b4045d0773605f7184d278c7c8c32e343318211bab9a9"
+    },
+    "overview/sheet-0000.png": {
+      "bytes": 10636,
+      "sha256": "a060976242d621b47ce0792ca12d21256c65cce09bb93f0e8398afa6e615f706"
+    },
+    "planned-frames.json": {
+      "bytes": 461,
+      "sha256": "75395391ffeda636a2569820ea109484547f2c40fa6474e2e814d3456d3fabb1"
+    },
+    "probe.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "probe.stdout": {
+      "bytes": 730,
+      "sha256": "f354a45dee1c70179823edc9381f11bcc7fb7c686bf4cce1701771cb2e16f045"
+    },
+    "start.json": {
+      "bytes": 427,
+      "sha256": "1964a908416775c6937ad8ec77f16ba54c27eb580d1f8955b7a3cd6dc02f9f4e"
+    }
+  },
+  "sample_count": 2,
+  "source": {
+    "bytes": 11893,
+    "id": "SYNTHETIC-ONLY",
+    "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-video-lineage/v2-controls01/tiny-fixture/nonzero-gap.mkv",
+    "sha256": "31d8d18fcaea9ff1d3f8136498dcc6bfd644389bf3b050efbc63a5fedc1d2755",
+    "step_seconds": 2
+  },
+  "source_after": {
+    "bytes": 11893,
+    "sha256": "31d8d18fcaea9ff1d3f8136498dcc6bfd644389bf3b050efbc63a5fedc1d2755"
+  },
+  "source_before": {
+    "bytes": 11893,
+    "sha256": "31d8d18fcaea9ff1d3f8136498dcc6bfd644389bf3b050efbc63a5fedc1d2755"
+  },
+  "source_id": "SYNTHETIC-ONLY",
+  "status": "completed"
+}

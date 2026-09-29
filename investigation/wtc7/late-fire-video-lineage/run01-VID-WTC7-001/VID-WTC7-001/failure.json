@@ -1,0 +1,104 @@
+{
+  "allowlisted_probe": {
+    "format": {
+      "duration": "268.335002",
+      "size": "208810910",
+      "start_time": "0.000000"
+    },
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "avg_frame_rate": "2997/100",
+        "chroma_location": "left",
+        "codec_name": "h264",
+        "codec_type": "video",
+        "color_primaries": "smpte170m",
+        "color_range": "tv",
+        "color_space": "smpte170m",
+        "color_transfer": "bt709",
+        "display_aspect_ratio": "4:3",
+        "duration": "268.335002",
+        "field_order": "progressive",
+        "height": 480,
+        "index": 0,
+        "nb_frames": "8042",
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30000/1001",
+        "sample_aspect_ratio": "1:1",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "time_base": "1/2997",
+        "width": 640
+      },
+      {
+        "avg_frame_rate": "0/0",
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "duration": "268.333333",
+        "index": 1,
+        "nb_frames": "12880000",
+        "r_frame_rate": "0/0",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "time_base": "1/48000"
+      }
+    ]
+  },
+  "category": "frame_inventory_malformed",
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,avg_frame_rate,r_frame_rate,time_base,start_pts,start_time,duration,nb_frames,field_order,sample_aspect_ratio,display_aspect_ratio,color_range,color_space,color_transfer,color_primaries,chroma_location:format=duration,start_time,size:stream_tags=:stream_disposition=:format_tags=:stream_side_data=",
+        "-of",
+        "json",
+        "/Users/admin/docs/911/research/wtc7-video-comparison/media/analysis-source/NIST Camera 2_CBS-Net Dub6 48 (Converted).mov"
+      ],
+      "returncode": 0,
+      "stderr": "probe.stderr",
+      "stdout": "probe.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,width,height:frame_tags=:frame_side_data=",
+        "-of",
+        "compact=p=0:nk=0",
+        "/Users/admin/docs/911/research/wtc7-video-comparison/media/analysis-source/NIST Camera 2_CBS-Net Dub6 48 (Converted).mov"
+      ],
+      "returncode": 0,
+      "stderr": "frame-inventory.stderr",
+      "stdout": "frame-inventory.stdout"
+    }
+  ],
+  "exception_type": "CheckError",
+  "phase": "frame_inventory",
+  "source": {
+    "bytes": 208810910,
+    "id": "VID-WTC7-001",
+    "path": "/Users/admin/docs/911/research/wtc7-video-comparison/media/analysis-source/NIST Camera 2_CBS-Net Dub6 48 (Converted).mov",
+    "sha256": "84da90a48bdd710faf8b0a60c1a23a0927f22184216a1a631cbd77d4243b6730",
+    "step_seconds": 2
+  },
+  "source_after": {
+    "bytes": 208810910,
+    "sha256": "84da90a48bdd710faf8b0a60c1a23a0927f22184216a1a631cbd77d4243b6730"
+  },
+  "source_after_matches_pin": true,
+  "source_before": {
+    "bytes": 208810910,
+    "sha256": "84da90a48bdd710faf8b0a60c1a23a0927f22184216a1a631cbd77d4243b6730"
+  },
+  "source_id": "VID-WTC7-001",
+  "status": "failed"
+}

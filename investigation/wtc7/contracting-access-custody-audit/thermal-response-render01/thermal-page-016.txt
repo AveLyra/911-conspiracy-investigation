@@ -1,0 +1,40 @@
+ 16 
+1. Uniform thickness of fireproofing assumption may not be valid. There is 
+difficulty in capturing time-dependent build-up of fireproofing in the 
+assembly as seen in the tests. 
+2. Uniform slab thickness was assumed. Therefore, variation of concrete slab 
+thickness at locations of ribs versus locations where there were no ribs was 
+not considered. Profiled metal floor deck was not constructed. 
+3. Modeling one half of the floor system and omission of the bridging truss from 
+the model may not be the best possible representation of the tests.  
+4. Most of thermophysical properties of materials (e.g. steels, fireproofing, and 
+concrete) were assumed to vary with temperature and such data were taken 
+from past tests. However, the assumption of constant values of effective 
+emissivities and convective heat transfer coefficients (in the absence of 
+accurate temperature-dependent data in literature) as boundary conditions may 
+not be strictly valid. Technically speaking, the values of these parameters vary 
+as a function of temperature. 
+5. The model assumes a perfect contact between steel truss and concrete floor. In 
+other words, no gap is assumed to occur at this interface. However, this 
+perfect contact is impaired over time due to effects of nonuniform temperature 
+distribution in different components. This is indirectly accounted for by using 
+slightly lower values of emissivities and convective heat transfer coefficients. 
+6. No actual furnace was built. Instead, furnace heating was simulated by 
+subjecting a node (away from the model) to the prescribed heating according 
+the ASTM E119 fire. This assumption and the assumption of view factor of 1 
+on all exposed surfaces may not represent the reality of actual exchange of 
+heating that took place during the tests. 
+7. Most fire exposure curves and parametric equations approximate temperatures 
+in fully developed fires as uniform throughout the compartment. Similarly, 
+nonuniformity of gas temperatures near the exposed surface is not considered 
+also in this work. 
+3.1 Interpolation of Temperatures 
+The numerical model predictions are compared with measured time-temperature data 
+at locations A, C, E, and I along the main truss (see Figure 4) at the upper chord, mid-
+web, and the lower chord for these four locations. Since there is often not a node at 
+the exact location where a thermocouple was positioned, an interpolation approach 
+was used to obtain an average temperature using a scheme as described below. 
+The model predictions of temperature at a given location (shown as point P at the 
+bottom chord in figure) are obtained as shown schematically in Figure 9. For 
+example, temperature at the position P is obtained by taking a weighted average of 
+temperatures of all the FEM nodes available nearest to the point P on either side. In 

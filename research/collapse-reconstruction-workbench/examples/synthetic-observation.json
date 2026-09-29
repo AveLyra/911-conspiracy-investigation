@@ -1,0 +1,45 @@
+{
+  "id": "OBS-SYNTH-UNITTEST-DISPLACEMENT-001",
+  "event_id": "EVT-SYNTH-UNITTEST-001",
+  "evidence_ids": [
+    "EVD-SYNTH-UNITTEST-CAMERA-001"
+  ],
+  "feature_type": "point_displacement",
+  "time_reference": {
+    "clock_id": "CLOCK-SYNTH-CAMERA-001",
+    "source_start": 0.0,
+    "source_end": 2.0,
+    "event_time_start": 0.0,
+    "event_time_end": 2.0,
+    "mapping_method": "synthetic_identity_map",
+    "propagation_delay_seconds": null
+  },
+  "spatial_reference": {
+    "frame": "building_local",
+    "camera_id": "CAM-SYNTH-001",
+    "calibration_id": "CAL-SYNTH-001"
+  },
+  "measurement": {
+    "value_kind": "time_series",
+    "unit": "m",
+    "series_uri": "fixtures/synthetic-displacement.parquet"
+  },
+  "uncertainty_components": [
+    {
+      "name": "synthetic_measurement_noise",
+      "distribution": "normal",
+      "parameters": {
+        "standard_deviation": 0.01
+      },
+      "method": "fixture_definition"
+    }
+  ],
+  "method": {
+    "name": "synthetic_fixture_generator",
+    "implementation_version": "blueprint-1",
+    "configuration_uri": null
+  },
+  "missingness": "observed",
+  "confounders": [],
+  "review_status": "analyst_measured"
+}

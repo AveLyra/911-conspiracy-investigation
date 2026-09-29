@@ -1,0 +1,42 @@
+{
+  "argv": [
+    "research/sherlock-wtc7-investigation/peskin-photometric-sensitivity/independent_check.py",
+    "--run",
+    "run01",
+    "--output",
+    "independent-root01.json"
+  ],
+  "checker_sha256": "029f3bdcd582c96ff0e2a440ae8c66c6133c8280bfe209e6da6843fdc63c1497",
+  "coefficient_use": "OLS coefficients independently recomputed by np.linalg.lstsq, then verified saved coefficients used for diagnostic predictions to avoid endpoint classification changes from solver roundoff.",
+  "compared_leaves": 454236,
+  "counts": {
+    "baseline_regions": 392,
+    "branch_rows": 48,
+    "fit_rows": 672,
+    "fitted_regions": 6832,
+    "fitted_rows": 672,
+    "foreground_baselines": 1344,
+    "masks": 392,
+    "rank_regions": 392
+  },
+  "elapsed_seconds": 4.998279624967836,
+  "failures": [],
+  "independence": "Separate arithmetic implementation; shared saved historical arrays, NumPy and Python. No independent image decoding, camera calibration or source family.",
+  "input_pins": {
+    "arrays": "f4b1da4be7e3bd1df467e60979d383a5dfb418e0d0b33cca7b7770e0fc62c02e",
+    "checker_controls": "130cbfb421eddefd099e3e67e5f19dea516d394a351f1daa48a071d1f8bc51c2",
+    "receipt": "9311becc40ba6dd9788a5200139d6e1e1edf9012f42cf8306b4f40a3a23d07a0",
+    "results": "9d6ca5108b3c779f16f4174987577865962983ed90bf2eb577edf30aa25aed55"
+  },
+  "maximum_absolute_difference": 7.016609515630989e-14,
+  "numpy": "2.3.5",
+  "passed": true,
+  "protocol_sha256": "edbc10c984c45e915d40853ea1ea0e9aa97f256af47643afa944dda278a8b7ed",
+  "python": "3.12.14",
+  "status": "completed",
+  "tolerances": {
+    "counts_and_nulls": "exact",
+    "fit_a_b_absolute": 1e-10,
+    "other_float_absolute": 1e-09
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/crw/observation.schema.json",
+  "title": "CRW Observation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "event_id",
+    "evidence_ids",
+    "feature_type",
+    "time_reference",
+    "spatial_reference",
+    "measurement",
+    "uncertainty_components",
+    "method",
+    "missingness",
+    "review_status"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^OBS-[A-Z0-9][A-Z0-9-]*$" },
+    "event_id": { "type": "string", "pattern": "^EVT-[A-Z0-9][A-Z0-9-]*$" },
+    "evidence_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^(EVD|DRV)-[A-Z0-9][A-Z0-9-]*$" }
+    },
+    "feature_type": {
+      "type": "string",
+      "enum": [
+        "point_displacement",
+        "line_deformation",
+        "rotation",
+        "event_time",
+        "dust_or_smoke_onset",
+        "window_change",
+        "audio_transient",
+        "speech_statement",
+        "visibility_or_occlusion",
+        "documented_fact"
+      ]
+    },
+    "time_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["clock_id", "source_start", "source_end"],
+      "properties": {
+        "clock_id": { "type": "string" },
+        "source_start": { "type": "number" },
+        "source_end": { "type": "number" },
+        "event_time_start": { "type": ["number", "null"] },
+        "event_time_end": { "type": ["number", "null"] },
+        "mapping_method": { "type": ["string", "null"] },
+        "propagation_delay_seconds": { "type": ["number", "null"], "minimum": 0 }
+      }
+    },
+    "spatial_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["frame"],
+      "properties": {
+        "frame": { "type": "string", "enum": ["image_pixels", "camera", "building_local", "surveyed_world", "not_applicable"] },
+        "camera_id": { "type": ["string", "null"] },
+        "calibration_id": { "type": ["string", "null"] }
+      }
+    },
+    "measurement": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["value_kind", "unit"],
+      "properties": {
+        "value_kind": { "type": "string", "enum": ["scalar", "interval", "vector", "time_series", "category"] },
+        "value": {},
+        "unit": { "type": "string" },
+        "series_uri": { "type": ["string", "null"] }
+      }
+    },
+    "uncertainty_components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["name", "distribution"],
+        "properties": {
+          "name": { "type": "string" },
+          "distribution": { "type": "string" },
+          "parameters": { "type": "object", "additionalProperties": { "type": "number" } },
+          "method": { "type": "string" }
+        }
+      }
+    },
+    "method": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["name", "implementation_version"],
+      "properties": {
+        "name": { "type": "string" },
+        "implementation_version": { "type": "string" },
+        "configuration_uri": { "type": ["string", "null"] }
+      }
+    },
+    "missingness": {
+      "type": "string",
+      "enum": ["observed", "not_visible", "not_recorded", "not_detected", "unknown"]
+    },
+    "confounders": { "type": "array", "items": { "type": "string" } },
+    "review_status": {
+      "type": "string",
+      "enum": ["machine_proposed", "analyst_measured", "second_reviewed", "expert_reviewed", "disputed", "superseded"]
+    }
+  }
+}

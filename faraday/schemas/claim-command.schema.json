@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-machine.local/schemas/claim-command.schema.json",
+  "title": "Claim creation command",
+  "description": "A claim whose inferential level, epistemic layer, and project disposition remain distinct.",
+  "type": "object",
+  "required": ["statement", "level"],
+  "properties": {
+    "statement": {"$ref": "#/$defs/nonBlankText"},
+    "level": {
+      "enum": [
+        "measurement_validity",
+        "statistical_association",
+        "causal_direction",
+        "robustness",
+        "mechanism",
+        "adaptation",
+        "attribution_intent",
+        "legal_characterization",
+        "other"
+      ]
+    },
+    "parent_claims": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/canonicalHandle"},
+      "uniqueItems": true,
+      "default": []
+    },
+    "scope": {"type": "string", "default": ""},
+    "epistemic_layer": {
+      "enum": [
+        "documented_fact",
+        "source_claim",
+        "project_interpretation",
+        "reasonable_inference",
+        "unresolved"
+      ],
+      "default": "unresolved"
+    },
+    "disposition": {
+      "enum": ["unresolved", "accepted", "rejected", "superseded"],
+      "default": "unresolved"
+    },
+    "confidence": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "default": null
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/canonicalHandle"},
+      "uniqueItems": true,
+      "default": []
+    },
+    "conflicts_with": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/canonicalHandle"},
+      "uniqueItems": true,
+      "default": []
+    },
+    "falsified_by": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/canonicalHandle"},
+      "uniqueItems": true,
+      "default": []
+    },
+    "last_reviewed": {"type": ["string", "null"]},
+    "decision_owner": {"type": "string", "default": ""}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "nonBlankText": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "canonicalHandle": {
+      "type": "string",
+      "pattern": "^\\S(?:.*\\S)?$"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {"disposition": {"const": "accepted"}},
+        "required": ["disposition"]
+      },
+      "then": {
+        "required": ["last_reviewed", "decision_owner"],
+        "properties": {
+          "last_reviewed": {"$ref": "#/$defs/nonBlankText"},
+          "decision_owner": {"$ref": "#/$defs/nonBlankText"}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "disposition": {"const": "accepted"},
+          "epistemic_layer": {"enum": ["documented_fact", "source_claim"]}
+        },
+        "required": ["disposition", "epistemic_layer"]
+      },
+      "then": {
+        "required": ["source_refs"],
+        "properties": {"source_refs": {"type": "array", "minItems": 1}}
+      }
+    }
+  ]
+}

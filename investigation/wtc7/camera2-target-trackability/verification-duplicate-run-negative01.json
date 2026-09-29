@@ -1,0 +1,42 @@
+{
+  "command": [
+    "research/sherlock-wtc7-investigation/camera2-target-trackability/verify_target.py",
+    "--historical",
+    "run01",
+    "run01",
+    "--calculation-controls",
+    "calc-controls03",
+    "--source-root",
+    "/Users/admin/docs/911",
+    "--out",
+    "research/sherlock-wtc7-investigation/camera2-target-trackability/verification-duplicate-run-negative01.json"
+  ],
+  "error": "two distinct historical run directories",
+  "error_type": "AssertionError",
+  "numpy": "2.3.4",
+  "oracle_controls": {
+    "checks": [
+      "exact supporting-edge hull with duplicates/interior",
+      "closed-form condition known diagonal and shear",
+      "full synthetic paired-annotation result with known displacements and uncertain identity",
+      "recursive result comparator rejects five known numeric/coverage/type/status mutations"
+    ],
+    "mutation_rejections": [
+      "numeric",
+      "missing_row",
+      "extra_field",
+      "wrong_status",
+      "boolean_number"
+    ],
+    "passed": 4,
+    "scope": "Synthetic independent oracle/comparator only; no historical source or annotation opened, no producer import."
+  },
+  "pillow": "12.0.0",
+  "python": "3.13.7",
+  "scope": "Independent presentation/source lineage, synthetic checks and explicitly released historical arithmetic; no physical interpretation.",
+  "status": "fail",
+  "verifier": {
+    "bytes": 60552,
+    "sha256": "76a7aa25df5eb86384ef542fddd4ab1fe29e430d6a7fb57a016308aea335a69a"
+  }
+}

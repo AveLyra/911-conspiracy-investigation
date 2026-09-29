@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Human review — three WTC 7 window stills</title>
+  <style>
+    :root { color-scheme: light; --ink:#17212b; --muted:#536273; --line:#d5dde5; --paper:#f4f7fa; --blue:#1557a0; --amber:#9b5b00; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(1120px,100% - 32px); margin:28px auto 56px; }
+    h1 { margin:0 0 8px; font-size:clamp(1.55rem,3vw,2.25rem); line-height:1.15; }
+    h2 { margin:0; font-size:1.25rem; }
+    p { margin:8px 0 14px; }
+    .intro,.target-card,.closing { background:white; border:1px solid var(--line); border-radius:12px; padding:18px; }
+    .intro { margin-bottom:16px; }
+    .notice { border-left:4px solid var(--amber); padding:9px 12px; background:#fff8e9; border-radius:4px; }
+    .steps { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+    .steps span { background:#edf3f8; padding:5px 9px; border-radius:999px; font-size:.9rem; }
+    .target-card { margin:16px 0; }
+    .card-head { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; margin-bottom:8px; }
+    .tag { color:var(--blue); font-weight:750; letter-spacing:.02em; }
+    .time { color:var(--muted); font-size:.92rem; white-space:nowrap; }
+    .image-frame { position:relative; width:100%; overflow:auto; border:1px solid var(--line); border-radius:8px; background:#111; }
+    .image-frame img { display:block; width:100%; height:auto; }
+    .image-frame svg { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+    .image-frame svg.locator-hidden { display:none; }
+    .locator { fill:#00e0ff22; stroke:#00c8e8; stroke-width:3; vector-effect:non-scaling-stroke; stroke-dasharray:8 5; }
+    .locator { pointer-events:all; cursor:move; touch-action:none; }
+    .resize-handle { fill:#00c8e8; stroke:#07131a; stroke-width:2; vector-effect:non-scaling-stroke; pointer-events:all; cursor:nwse-resize; touch-action:none; }
+    .locator-text { fill:white; font:700 17px system-ui,sans-serif; paint-order:stroke; stroke:#07131a; stroke-width:3px; pointer-events:none; }
+    .image-tools { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin:10px 0; }
+    .locator-controls { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0 12px; }
+    .locator-controls button { padding:6px 9px; font-size:.9rem; }
+    button,.button { border:1px solid #9cabb9; background:#fff; color:var(--ink); border-radius:7px; padding:8px 12px; font:inherit; cursor:pointer; }
+    button:hover,.button:hover { background:#edf3f8; }
+    .small { color:var(--muted); font-size:.9rem; }
+    .cue { background:#f0f6fb; border-radius:8px; padding:11px 13px; margin:12px 0; }
+    .cue strong { color:#153c65; }
+    fieldset { border:0; border-top:1px solid var(--line); margin:13px 0 0; padding:12px 0 0; }
+    legend { padding:0 8px 0 0; font-weight:700; }
+    .choices { display:flex; flex-wrap:wrap; gap:8px 18px; }
+    label.choice { display:flex; align-items:flex-start; gap:7px; }
+    input[type=radio],input[type=checkbox] { margin-top:5px; accent-color:var(--blue); }
+    textarea { display:block; width:100%; min-height:74px; resize:vertical; border:1px solid #aeb9c4; border-radius:7px; padding:9px 10px; font:inherit; }
+    .savebar { position:sticky; bottom:10px; z-index:2; display:flex; flex-wrap:wrap; gap:10px; align-items:center; background:#17212bf2; color:white; border-radius:10px; padding:10px 12px; margin-top:16px; box-shadow:0 4px 18px #0003; }
+    .savebar button { font-weight:650; }
+    #save-status { font-size:.9rem; color:#e7edf3; }
+    .closing { margin-top:16px; }
+    .closing ul { margin:8px 0 0; padding-left:22px; }
+    @media (min-width:900px) { .target-card { padding:20px; } .image-frame { max-width:850px; margin:0 auto; } }
+    @media print { body { background:white; } main { width:100%; margin:0; } .savebar,.image-tools button { display:none; } .target-card,.intro,.closing { break-inside:avoid; } }
+  </style>
+</head>
+<body>
+<main>
+  <section class="intro" aria-labelledby="page-title">
+    <h1 id="page-title">Human check: three early northeast stills</h1>
+    <p>This is a visual check of three suggested locations. Use the dashed outline as a movable guide. For each still, say whether it marks the row you mean, how sure you are, and what the image appears to show. You do not need to explain why anything happened or count panes.</p>
+    <p class="notice"><strong>How to answer:</strong> It is fine to say “not sure” or “the image does not show enough.” Describe only what you can see. If a shadow, reflection, smoke, or another surface might look similar, you can note that without saying it is equally likely.</p>
+    <div class="steps" aria-label="Review steps">
+      <span>1. Locate the marked area</span><span>2. Describe what you can see</span><span>3. Record ambiguity</span>
+    </div>
+    <p class="small">Use “Hide outline” to view the still without the guide; use “Show outline” to bring it back. The stills are unchanged report images, already adjusted and labeled by their source—not original camera frames. The guide is approximate, and display size is not a measurement.</p>
+  </section>
+
+  <section class="target-card" data-id="141-N12" aria-labelledby="title-141">
+    <div class="card-head"><div><div class="tag">Priority target 1</div><h2 id="title-141">141-N12 · Figure 5-141</h2></div><div class="time">Estimated sequence time: 15:53–16:02</div></div>
+    <p><strong>Where to look:</strong> On the broad right-hand face, find the two dark bands between the red “14” and “11” labels. The proposed target is the lower dark band, just above the pale band at “11,” near the left corner.</p>
+    <div class="image-frame">
+      <img src="../fire-coverage-batch3/assets/run01/images/A-a80015cf23e0.jpg" width="704" height="480" alt="Unchanged report-embedded Figure 5-141, showing the labeled building face and smoke">
+      <svg viewBox="0 0 704 480" aria-label="Approximate adjustable locator for target 141-N12"><rect class="locator" data-target="141-N12" data-initial-x="249" data-initial-y="250" data-initial-width="218" data-initial-height="31" x="249" y="250" width="218" height="31" rx="4" tabindex="0"/><text class="locator-text" data-label="141-N12" x="253" y="244">141-N12</text><circle class="resize-handle" data-resize="141-N12" cx="467" cy="281" r="9"/></svg>
+    </div>
+    <div class="image-tools"><button type="button" class="toggle-locator" aria-pressed="true">Hide outline</button><span class="small">The outline is only a locator; it is not a verified window boundary.</span></div>
+    <div class="locator-controls" aria-label="Adjust 141-N12 locator"><button type="button" data-move="141-N12" data-dx="-5">← Move</button><button type="button" data-move="141-N12" data-dy="-5">↑ Move</button><button type="button" data-move="141-N12" data-dy="5">↓ Move</button><button type="button" data-move="141-N12" data-dx="5">Move →</button><button type="button" data-size="141-N12" data-delta="-5">− Smaller</button><button type="button" data-size="141-N12" data-delta="5">+ Larger</button><button type="button" data-reset="141-N12">Reset outline</button><span class="small">Drag the box to move it; drag its cyan handle to resize.</span></div>
+    <div class="cue"><strong>What do you see?</strong> Does the marked band look like broken or missing glass, a dark surface, or something else? If you can, describe the visible sign. If the still cannot distinguish them, say so.</div>
+    <label class="choice"><input type="checkbox" name="141-N12-checked" value="checked"> I inspected this target</label>
+    <fieldset><legend>Is the outline on the row you mean?</legend><div class="choices">
+      <label class="choice"><input type="radio" name="141-N12-location" value="Correct"> Yes</label>
+      <label class="choice"><input type="radio" name="141-N12-location" value="Uncertain"> Not sure</label>
+      <label class="choice"><input type="radio" name="141-N12-location" value="Not visible"> Not visible</label>
+      <label class="choice"><input type="radio" name="141-N12-location" value="Correction"> I would place it elsewhere</label>
+    </div></fieldset>
+    <fieldset><legend>How sure are you about that row?</legend><div class="choices">
+      <label class="choice"><input type="radio" name="141-N12-row-confidence" value="High"> High</label>
+      <label class="choice"><input type="radio" name="141-N12-row-confidence" value="Medium"> Medium</label>
+      <label class="choice"><input type="radio" name="141-N12-row-confidence" value="Low"> Low</label>
+      <label class="choice"><input type="radio" name="141-N12-row-confidence" value="Cannot assess"> Cannot assess</label>
+    </div></fieldset>
+    <fieldset><legend>What does the marked area look like?</legend><div class="choices">
+      <label class="choice"><input type="radio" name="141-N12-appearance" value="Broken or missing glass appears visible"> Broken or missing glass seems visible</label>
+      <label class="choice"><input type="radio" name="141-N12-appearance" value="Glass/surface-like"> Glass or surface-like</label>
+      <label class="choice"><input type="radio" name="141-N12-appearance" value="Partial remnant"> Partial remnant</label>
+      <label class="choice"><input type="radio" name="141-N12-appearance" value="Opening-like"> Opening-like</label>
+      <label class="choice"><input type="radio" name="141-N12-appearance" value="Ambiguous pattern"> Ambiguous light/dark pattern</label>
+      <label class="choice"><input type="radio" name="141-N12-appearance" value="No useful detail"> No useful detail</label>
+    </div></fieldset>
+    <fieldset><legend>Could anything else look similar? (Check any that seem possible; this does not mean they are equally likely.)</legend><div class="choices">
+      <label class="choice"><input type="checkbox" name="141-N12-alternatives" value="Dark or transparent glass"> Dark or transparent glass</label>
+      <label class="choice"><input type="checkbox" name="141-N12-alternatives" value="Shadow or reflection"> Shadow or reflection</label>
+      <label class="choice"><input type="checkbox" name="141-N12-alternatives" value="Shade or covering"> Shade or covering</label>
+      <label class="choice"><input type="checkbox" name="141-N12-alternatives" value="Framing"> Framing</label>
+      <label class="choice"><input type="checkbox" name="141-N12-alternatives" value="Interior material"> Interior material</label>
+      <label class="choice"><input type="checkbox" name="141-N12-alternatives" value="Smoke or image quality"> Smoke or image quality</label>
+      <label class="choice"><input type="checkbox" name="141-N12-alternatives" value="Source-added mark"> Source-added mark</label>
+      <label class="choice"><input type="checkbox" name="141-N12-alternatives" value="Other or unsure"> Other or unsure</label>
+    </div></fieldset>
+    <fieldset><legend>What visible detail supports your answer, or what is uncertain?</legend><textarea name="141-N12-notes" placeholder="For example: a jagged edge, a dark patch, a reflection, or not enough detail to tell."></textarea></fieldset>
+  </section>
+
+  <section class="target-card" data-id="142-N12" aria-labelledby="title-142">
+    <div class="card-head"><div><div class="tag">Priority target 2</div><h2 id="title-142">142-N12 · Figure 5-142</h2></div><div class="time">Estimated sequence time: 15:55–16:04</div></div>
+    <p><strong>Where to look:</strong> Near the top of the broad right-hand face, above the red “11” label. Only part of the proposed band is in frame; the top edge, copyright strip, and dark object at upper right limit the view.</p>
+    <div class="image-frame">
+      <img src="../fire-coverage-batch3/assets/run01/images/A-7c7cc22dc34c.jpg" width="706" height="457" alt="Unchanged report-embedded Figure 5-142, showing the upper building face, smoke, foreground object, and labels">
+      <svg viewBox="0 0 706 457" aria-label="Approximate adjustable locator for target 142-N12"><rect class="locator" data-target="142-N12" data-initial-x="344" data-initial-y="25" data-initial-width="177" data-initial-height="44" x="344" y="25" width="177" height="44" rx="4" tabindex="0"/><text class="locator-text" data-label="142-N12" x="348" y="19">142-N12</text><circle class="resize-handle" data-resize="142-N12" cx="521" cy="69" r="9"/></svg>
+    </div>
+    <div class="image-tools"><button type="button" class="toggle-locator" aria-pressed="true">Hide outline</button><span class="small">Part of this strip is cut off or blocked. Judge only what is visible.</span></div>
+    <div class="locator-controls" aria-label="Adjust 142-N12 locator"><button type="button" data-move="142-N12" data-dx="-5">← Move</button><button type="button" data-move="142-N12" data-dy="-5">↑ Move</button><button type="button" data-move="142-N12" data-dy="5">↓ Move</button><button type="button" data-move="142-N12" data-dx="5">Move →</button><button type="button" data-size="142-N12" data-delta="-5">− Smaller</button><button type="button" data-size="142-N12" data-delta="5">+ Larger</button><button type="button" data-reset="142-N12">Reset outline</button><span class="small">Drag the box to move it; drag its cyan handle to resize.</span></div>
+    <div class="cue"><strong>What do you see?</strong> Can you tell which row this is? In the part that is visible, does the area look like broken or missing glass, a dark surface, or something else? It is fine if the image does not let you tell.</div>
+    <label class="choice"><input type="checkbox" name="142-N12-checked" value="checked"> I inspected this target</label>
+    <fieldset><legend>Is the outline on the row you mean?</legend><div class="choices">
+      <label class="choice"><input type="radio" name="142-N12-location" value="Correct"> Yes</label>
+      <label class="choice"><input type="radio" name="142-N12-location" value="Uncertain"> Not sure</label>
+      <label class="choice"><input type="radio" name="142-N12-location" value="Not visible"> Not visible</label>
+      <label class="choice"><input type="radio" name="142-N12-location" value="Correction"> I would place it elsewhere</label>
+    </div></fieldset>
+    <fieldset><legend>How sure are you about that row?</legend><div class="choices">
+      <label class="choice"><input type="radio" name="142-N12-row-confidence" value="High"> High</label>
+      <label class="choice"><input type="radio" name="142-N12-row-confidence" value="Medium"> Medium</label>
+      <label class="choice"><input type="radio" name="142-N12-row-confidence" value="Low"> Low</label>
+      <label class="choice"><input type="radio" name="142-N12-row-confidence" value="Cannot assess"> Cannot assess</label>
+    </div></fieldset>
+    <fieldset><legend>What does the marked area look like?</legend><div class="choices">
+      <label class="choice"><input type="radio" name="142-N12-appearance" value="Broken or missing glass appears visible"> Broken or missing glass seems visible</label>
+      <label class="choice"><input type="radio" name="142-N12-appearance" value="Glass/surface-like"> Glass or surface-like</label>
+      <label class="choice"><input type="radio" name="142-N12-appearance" value="Partial remnant"> Partial remnant</label>
+      <label class="choice"><input type="radio" name="142-N12-appearance" value="Opening-like"> Opening-like</label>
+      <label class="choice"><input type="radio" name="142-N12-appearance" value="Ambiguous pattern"> Ambiguous light/dark pattern</label>
+      <label class="choice"><input type="radio" name="142-N12-appearance" value="No useful detail"> No useful detail</label>
+    </div></fieldset>
+    <fieldset><legend>Could anything else look similar? (Check any that seem possible; this does not mean they are equally likely.)</legend><div class="choices">
+      <label class="choice"><input type="checkbox" name="142-N12-alternatives" value="Dark or transparent glass"> Dark or transparent glass</label>
+      <label class="choice"><input type="checkbox" name="142-N12-alternatives" value="Shadow or reflection"> Shadow or reflection</label>
+      <label class="choice"><input type="checkbox" name="142-N12-alternatives" value="Shade or covering"> Shade or covering</label>
+      <label class="choice"><input type="checkbox" name="142-N12-alternatives" value="Framing"> Framing</label>
+      <label class="choice"><input type="checkbox" name="142-N12-alternatives" value="Interior material"> Interior material</label>
+      <label class="choice"><input type="checkbox" name="142-N12-alternatives" value="Smoke, crop, or foreground"> Smoke, crop, or foreground</label>
+      <label class="choice"><input type="checkbox" name="142-N12-alternatives" value="Source-added mark"> Source-added mark</label>
+      <label class="choice"><input type="checkbox" name="142-N12-alternatives" value="Other or unsure"> Other or unsure</label>
+    </div></fieldset>
+    <fieldset><legend>What visible detail supports your answer, or what is uncertain?</legend><textarea name="142-N12-notes" placeholder="Say what you can see and what is cut off, blocked, or too unclear to tell."></textarea></fieldset>
+  </section>
+
+  <section class="target-card" data-id="143-N8" aria-labelledby="title-143">
+    <div class="card-head"><div><div class="tag">Priority target 3</div><h2 id="title-143">143-N8 · Figure 5-143</h2></div><div class="time">Estimated sequence time: 15:56–16:05</div></div>
+    <p><strong>Where to look:</strong> In the top aperture group on the broad pale face at right. The proposed candidate is the pale blue area below an uneven dark edge, immediately right of the large dark area beside the corner. No floor number is printed on this still; Floor 8 is a source-context proposal.</p>
+    <div class="image-frame">
+      <img src="../fire-coverage-batch3/assets/run01/images/A-60c26b7f3416.jpg" width="705" height="480" alt="Unchanged report-embedded Figure 5-143, showing a close-up with fire at left and upper aperture group at right">
+      <svg viewBox="0 0 705 480" aria-label="Approximate adjustable locator for target 143-N8"><rect class="locator" data-target="143-N8" data-initial-x="370" data-initial-y="40" data-initial-width="148" data-initial-height="56" x="370" y="40" width="148" height="56" rx="4" tabindex="0"/><text class="locator-text" data-label="143-N8" x="374" y="34">143-N8</text><circle class="resize-handle" data-resize="143-N8" cx="518" cy="96" r="9"/></svg>
+    </div>
+    <div class="image-tools"><button type="button" class="toggle-locator" aria-pressed="true">Hide outline</button><span class="small">This is a candidate area only; the still does not establish what the material is.</span></div>
+    <div class="locator-controls" aria-label="Adjust 143-N8 locator"><button type="button" data-move="143-N8" data-dx="-5">← Move</button><button type="button" data-move="143-N8" data-dy="-5">↑ Move</button><button type="button" data-move="143-N8" data-dy="5">↓ Move</button><button type="button" data-move="143-N8" data-dx="5">Move →</button><button type="button" data-size="143-N8" data-delta="-5">− Smaller</button><button type="button" data-size="143-N8" data-delta="5">+ Larger</button><button type="button" data-reset="143-N8">Reset outline</button><span class="small">Drag the box to move it; drag its cyan handle to resize.</span></div>
+    <div class="cue"><strong>What do you see?</strong> Does the pale patch look like glass, a remaining piece, an opening, or something else? What visible feature led you to that answer? “Cannot tell” is a useful answer.</div>
+    <label class="choice"><input type="checkbox" name="143-N8-checked" value="checked"> I inspected this target</label>
+    <fieldset><legend>Is the outline on the row you mean?</legend><div class="choices">
+      <label class="choice"><input type="radio" name="143-N8-location" value="Correct"> Yes</label>
+      <label class="choice"><input type="radio" name="143-N8-location" value="Uncertain"> Not sure</label>
+      <label class="choice"><input type="radio" name="143-N8-location" value="Not visible"> Not visible</label>
+      <label class="choice"><input type="radio" name="143-N8-location" value="Correction"> I would place it elsewhere</label>
+    </div></fieldset>
+    <fieldset><legend>How sure are you about that row?</legend><div class="choices">
+      <label class="choice"><input type="radio" name="143-N8-row-confidence" value="High"> High</label>
+      <label class="choice"><input type="radio" name="143-N8-row-confidence" value="Medium"> Medium</label>
+      <label class="choice"><input type="radio" name="143-N8-row-confidence" value="Low"> Low</label>
+      <label class="choice"><input type="radio" name="143-N8-row-confidence" value="Cannot assess"> Cannot assess</label>
+    </div></fieldset>
+    <fieldset><legend>What does the marked area look like?</legend><div class="choices">
+      <label class="choice"><input type="radio" name="143-N8-appearance" value="Broken or missing glass appears visible"> Broken or missing glass appears visible</label>
+      <label class="choice"><input type="radio" name="143-N8-appearance" value="Glass/surface-like"> Glass or surface-like</label>
+      <label class="choice"><input type="radio" name="143-N8-appearance" value="Partial remnant"> Partial remnant</label>
+      <label class="choice"><input type="radio" name="143-N8-appearance" value="Opening-like"> Opening-like</label>
+      <label class="choice"><input type="radio" name="143-N8-appearance" value="Ambiguous pattern"> Ambiguous light/dark pattern</label>
+      <label class="choice"><input type="radio" name="143-N8-appearance" value="No useful detail"> No useful detail</label>
+    </div></fieldset>
+    <fieldset><legend>Could anything else look similar? (Check any that seem possible; this does not mean they are equally likely.)</legend><div class="choices">
+      <label class="choice"><input type="checkbox" name="143-N8-alternatives" value="Shadow or reflection"> Shadow or reflection</label>
+      <label class="choice"><input type="checkbox" name="143-N8-alternatives" value="Glass"> Glass</label>
+      <label class="choice"><input type="checkbox" name="143-N8-alternatives" value="Non-glass material"> Non-glass material</label>
+      <label class="choice"><input type="checkbox" name="143-N8-alternatives" value="Framing or interior material"> Framing or interior material</label>
+      <label class="choice"><input type="checkbox" name="143-N8-alternatives" value="Smoke or image quality"> Smoke or image quality</label>
+      <label class="choice"><input type="checkbox" name="143-N8-alternatives" value="Source-added mark"> Source-added mark</label>
+      <label class="choice"><input type="checkbox" name="143-N8-alternatives" value="Other or unsure"> Other or unsure</label>
+    </div></fieldset>
+    <fieldset><legend>What visible detail supports your answer, or what is uncertain?</legend><textarea name="143-N8-notes" placeholder="For example: an edge, a pale surface, a reflection, or not enough detail to tell."></textarea></fieldset>
+  </section>
+
+  <section class="closing">
+    <h2>Keep the scope narrow</h2>
+    <ul>
+      <li>Darkness or visible fire alone does not show that glass is missing.</li>
+      <li>A surface-like patch does not prove every pane in a band is intact.</li>
+      <li>This Floor 8 close-up cannot fill gaps in the Floor 12 views.</li>
+      <li>These stills are from one CBS sequence with estimated, unauthenticated clocks; none shows collapse time.</li>
+      <li>Only targets you actually checked will be included in your downloaded notes. Unchecked targets remain unchecked.</li>
+    </ul>
+  </section>
+
+  <div class="savebar">
+    <button type="button" id="download">Download checked observations</button>
+    <button type="button" id="clear">Clear this page's saved responses</button>
+    <span id="save-status" role="status" aria-live="polite">Responses save in this browser on this device only.</span>
+  </div>
+</main>
+<script>
+(() => {
+  const storageKey = "wtc7-window-human-review-v1";
+  const fields = [...document.querySelectorAll("input, textarea")];
+  const status = document.querySelector("#save-status");
+  const readState = () => {
+    const state = {};
+    for (const field of fields) {
+      if (field.type === "radio") {
+        if (field.checked) state[field.name] = field.value;
+      } else if (field.type === "checkbox") {
+        const values = state[field.name] || [];
+        if (field.checked) values.push(field.value);
+        state[field.name] = values;
+      } else if (field.value.trim()) state[field.name] = field.value.trim();
+    }
+    for (const card of document.querySelectorAll(".target-card")) {
+      const rect = card.querySelector(".locator");
+      const id = rect.dataset.target;
+      const svg = rect.ownerSVGElement;
+      const width = Number(svg.viewBox.baseVal.width);
+      const height = Number(svg.viewBox.baseVal.height);
+      const x = Number(rect.getAttribute("x"));
+      const y = Number(rect.getAttribute("y"));
+      const w = Number(rect.getAttribute("width"));
+      const h = Number(rect.getAttribute("height"));
+      const initial = ["initialX", "initialY", "initialWidth", "initialHeight"].map(key => Number(rect.dataset[key]));
+      if ([x, y, w, h].some((value, index) => Math.abs(value - initial[index]) > 0.01)) {
+        state[`${id}-outline`] = {left:(100*x/width), top:(100*y/height), width:(100*w/width), height:(100*h/height)};
+      }
+    }
+    return state;
+  };
+  const updateLocator = rect => {
+    const x = Number(rect.getAttribute("x"));
+    const y = Number(rect.getAttribute("y"));
+    const w = Number(rect.getAttribute("width"));
+    const h = Number(rect.getAttribute("height"));
+    const svg = rect.ownerSVGElement;
+    const vb = svg.viewBox.baseVal;
+    const handle = svg.querySelector(`[data-resize="${rect.dataset.target}"]`);
+    handle.setAttribute("cx", x + w);
+    handle.setAttribute("cy", y + h);
+    const label = svg.querySelector(`[data-label="${rect.dataset.target}"]`);
+    label.setAttribute("x", Math.min(x + 4, vb.width - 92));
+    label.setAttribute("y", Math.max(18, y - 7));
+  };
+  const setRect = (rect, x, y, w, h) => {
+    const vb = rect.ownerSVGElement.viewBox.baseVal;
+    w = Math.max(24, Math.min(vb.width, w));
+    h = Math.max(18, Math.min(vb.height, h));
+    x = Math.max(0, Math.min(vb.width - w, x));
+    y = Math.max(0, Math.min(vb.height - h, y));
+    rect.setAttribute("x", x); rect.setAttribute("y", y);
+    rect.setAttribute("width", w); rect.setAttribute("height", h);
+    updateLocator(rect);
+  };
+  const locatorFor = id => document.querySelector(`.locator[data-target="${id}"]`);
+  const restore = () => {
+    let state;
+    try { state = JSON.parse(localStorage.getItem(storageKey) || "{}"); }
+    catch { state = {}; }
+    for (const field of fields) {
+      const value = state[field.name];
+      if (field.type === "radio") field.checked = value === field.value;
+      else if (field.type === "checkbox") field.checked = Array.isArray(value) && value.includes(field.value);
+      else if (typeof value === "string") field.value = value;
+    }
+    for (const rect of document.querySelectorAll(".locator")) {
+      const saved = state[`${rect.dataset.target}-outline`];
+      if (!saved) continue;
+      const vb = rect.ownerSVGElement.viewBox.baseVal;
+      setRect(rect, saved.left*vb.width/100, saved.top*vb.height/100, saved.width*vb.width/100, saved.height*vb.height/100);
+    }
+  };
+  const save = () => {
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(readState()));
+      status.textContent = "Saved in this browser on this device. Download a copy before closing if you want to keep it.";
+    } catch {
+      status.textContent = "Browser storage is unavailable. Use Download checked observations to save a copy.";
+    }
+  };
+  restore();
+  fields.forEach(field => field.addEventListener("input", save));
+  fields.forEach(field => field.addEventListener("change", save));
+  document.querySelectorAll(".toggle-locator").forEach(button => {
+    button.addEventListener("click", () => {
+      const svg = button.closest(".target-card").querySelector("svg");
+      const shown = button.getAttribute("aria-pressed") === "true";
+      button.setAttribute("aria-pressed", String(!shown));
+      svg.classList.toggle("locator-hidden", shown);
+      button.textContent = shown ? "Show outline" : "Hide outline";
+    });
+  });
+  document.querySelectorAll("[data-move]").forEach(button => button.addEventListener("click", event => {
+    const rect = locatorFor(button.dataset.move);
+    const distance = event.shiftKey ? 15 : 5;
+    setRect(rect, Number(rect.getAttribute("x")) + Number(button.dataset.dx || 0) * distance/5,
+      Number(rect.getAttribute("y")) + Number(button.dataset.dy || 0) * distance/5,
+      Number(rect.getAttribute("width")), Number(rect.getAttribute("height")));
+    save();
+  }));
+  document.querySelectorAll("[data-size]").forEach(button => button.addEventListener("click", () => {
+    const rect = locatorFor(button.dataset.size);
+    const delta = Number(button.dataset.delta);
+    setRect(rect, Number(rect.getAttribute("x")) - delta/2, Number(rect.getAttribute("y")) - delta/2,
+      Number(rect.getAttribute("width")) + delta, Number(rect.getAttribute("height")) + delta);
+    save();
+  }));
+  document.querySelectorAll("[data-reset]").forEach(button => button.addEventListener("click", () => {
+    const rect = locatorFor(button.dataset.reset);
+    setRect(rect, Number(rect.dataset.initialX), Number(rect.dataset.initialY), Number(rect.dataset.initialWidth), Number(rect.dataset.initialHeight));
+    save();
+  }));
+  for (const rect of document.querySelectorAll(".locator")) {
+    const svg = rect.ownerSVGElement;
+    const target = rect.dataset.target;
+    let gesture = null;
+    const toSvg = event => {
+      const point = svg.createSVGPoint(); point.x = event.clientX; point.y = event.clientY;
+      return point.matrixTransform(svg.getScreenCTM().inverse());
+    };
+    svg.querySelector(`[data-resize="${target}"]`).addEventListener("pointerdown", event => {
+      const point = toSvg(event); gesture = {kind:"resize", x:point.x, y:point.y, w:Number(rect.getAttribute("width")), h:Number(rect.getAttribute("height"))};
+      svg.setPointerCapture(event.pointerId); event.preventDefault();
+    });
+    rect.addEventListener("pointerdown", event => {
+      const point = toSvg(event); gesture = {kind:"move", x:point.x, y:point.y, rx:Number(rect.getAttribute("x")), ry:Number(rect.getAttribute("y"))};
+      svg.setPointerCapture(event.pointerId); event.preventDefault();
+    });
+    svg.addEventListener("pointermove", event => {
+      if (!gesture) return;
+      const point = toSvg(event); const dx=point.x-gesture.x; const dy=point.y-gesture.y;
+      if (gesture.kind === "move") setRect(rect, gesture.rx+dx, gesture.ry+dy, Number(rect.getAttribute("width")), Number(rect.getAttribute("height")));
+      else setRect(rect, Number(rect.getAttribute("x")), Number(rect.getAttribute("y")), gesture.w+dx, gesture.h+dy);
+    });
+    svg.addEventListener("pointerup", () => { if (gesture) { gesture=null; save(); } });
+    rect.addEventListener("keydown", event => {
+      if (!["ArrowLeft","ArrowRight","ArrowUp","ArrowDown","+","-"].includes(event.key)) return;
+      event.preventDefault();
+      const amount=event.shiftKey ? 15 : 5; const x=Number(rect.getAttribute("x")), y=Number(rect.getAttribute("y")), w=Number(rect.getAttribute("width")), h=Number(rect.getAttribute("height"));
+      if (event.key === "ArrowLeft") setRect(rect,x-amount,y,w,h);
+      if (event.key === "ArrowRight") setRect(rect,x+amount,y,w,h);
+      if (event.key === "ArrowUp") setRect(rect,x,y-amount,w,h);
+      if (event.key === "ArrowDown") setRect(rect,x,y+amount,w,h);
+      if (event.key === "+") setRect(rect,x-2.5,y-2.5,w+5,h+5);
+      if (event.key === "-") setRect(rect,x+2.5,y+2.5,w-5,h-5);
+      save();
+    });
+  }
+  document.querySelector("#download").addEventListener("click", () => {
+    const state = readState();
+    const sections = [];
+    for (const id of ["141-N12", "142-N12", "143-N8"]) {
+      const inspected = Array.isArray(state[`${id}-checked`]) && state[`${id}-checked`].includes("checked");
+      const location = state[`${id}-location`];
+      const appearance = state[`${id}-appearance`];
+      const alternatives = state[`${id}-alternatives`] || [];
+      const notes = state[`${id}-notes`];
+      const rowConfidence = state[`${id}-row-confidence`];
+      const outline = state[`${id}-outline`];
+      if (!inspected && !location && !rowConfidence && !appearance && alternatives.length === 0 && !notes && !outline) continue;
+      const outlineText = outline ? `Adjusted outline (approximate image-relative box): left ${outline.left.toFixed(1)}%, top ${outline.top.toFixed(1)}%, width ${outline.width.toFixed(1)}%, height ${outline.height.toFixed(1)}%` : "Original suggested locator";
+      sections.push(`${id}\nInspected: ${inspected ? "yes" : "not marked"}\nLocation: ${location || "not answered"}\nRow identification confidence: ${rowConfidence || "not answered"}\nAppearance / glass-state impression: ${appearance || "not answered"}\n${outlineText}\nAlternatives: ${alternatives.length ? alternatives.join(", ") : "none recorded"}\nVisible cue/correction: ${notes || "none recorded"}`);
+    }
+    if (!sections.length) {
+      status.textContent = "Nothing checked or written yet. Review a target, then download your notes.";
+      return;
+    }
+    const body = ["Human review — three early northeast stills", `Saved locally: ${new Date().toLocaleString()}`, "", ...sections].join("\n\n");
+    const blob = new Blob([body], {type:"text/plain;charset=utf-8"});
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "window-still-human-observations.txt";
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+    status.textContent = "Downloaded your checked observations. They were not sent anywhere.";
+  });
+  document.querySelector("#clear").addEventListener("click", () => {
+    try { localStorage.removeItem(storageKey); } catch {}
+    fields.forEach(field => { field.checked = false; if (field.tagName === "TEXTAREA") field.value = ""; });
+    status.textContent = "Saved responses cleared from this browser.";
+  });
+})();
+</script>
+</body>
+</html>

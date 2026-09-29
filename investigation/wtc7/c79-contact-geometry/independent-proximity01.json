@@ -1,0 +1,5367 @@
+{
+  "receipt": {
+    "array_file": "independent-proximity01.npz",
+    "array_schema": {
+      "CID1_admission_bits": {
+        "bytes": 40731990,
+        "columns_if_applicable": null,
+        "dtype": "|u1",
+        "sha256": "5bbd411b460747c72f13b6f2448303186c315a605e761371b94f52e11c8a7d1f",
+        "shape": [
+          3,
+          710,
+          19123
+        ]
+      },
+      "CID1_master_indices": {
+        "bytes": 5680,
+        "columns_if_applicable": null,
+        "dtype": "<i8",
+        "sha256": "e1cb083039cf0aa7697ed423ab3a225b5f454173548c55a49263bc023d06bdcc",
+        "shape": [
+          710
+        ]
+      },
+      "CID1_slave_node_indices": {
+        "bytes": 1223816,
+        "columns_if_applicable": null,
+        "dtype": "<i8",
+        "sha256": "23d054412c43beae40b88bbeaa5829a8e00723649eeb32ac9056d3e6289825ee",
+        "shape": [
+          152977
+        ]
+      },
+      "CID2_admission_bits": {
+        "bytes": 1580928,
+        "columns_if_applicable": null,
+        "dtype": "|u1",
+        "sha256": "5c9656288c51c72ac570a8999249cb1de1b64f83acb1f495b77121ffe192a6ce",
+        "shape": [
+          3,
+          32,
+          16468
+        ]
+      },
+      "CID2_master_indices": {
+        "bytes": 256,
+        "columns_if_applicable": null,
+        "dtype": "<i8",
+        "sha256": "427814318e2120229c383a77b7950e6058997888db5d78187a5f7e2b241d92f1",
+        "shape": [
+          32
+        ]
+      },
+      "CID2_slave_node_indices": {
+        "bytes": 1053920,
+        "columns_if_applicable": null,
+        "dtype": "<i8",
+        "sha256": "ad61e40174a698993b801238d44850755349633823077cece3315a9be2de51e2",
+        "shape": [
+          131740
+        ]
+      },
+      "candidate_flags": {
+        "bytes": 33876,
+        "columns_if_applicable": [
+          "same_node_ID",
+          "same_effective_part",
+          "L_greater_than_U"
+        ],
+        "dtype": "|b1",
+        "sha256": "ff1d2091c04d80981a3e6b49320654407f427f6f0ef5c5193538394f854d4c46",
+        "shape": [
+          11292,
+          3
+        ]
+      },
+      "candidate_integers": {
+        "bytes": 1264704,
+        "columns_if_applicable": [
+          "setting_index",
+          "CID",
+          "master_record_index",
+          "slave_population_index",
+          "global_selected_node_index",
+          "NID",
+          "node_SRC",
+          "node_line",
+          "master_set_ID",
+          "master_SRC",
+          "master_line",
+          "class",
+          "node_part_start",
+          "node_part_stop"
+        ],
+        "dtype": "<i8",
+        "sha256": "ab9123d0e1a33e740b51610835a8a4c04150788695ea6552c48d0e128def38a5",
+        "shape": [
+          11292,
+          14
+        ]
+      },
+      "candidate_projection_inside": {
+        "bytes": 45168,
+        "columns_if_applicable": [
+          "triangle_012",
+          "triangle_023",
+          "triangle_013",
+          "triangle_123"
+        ],
+        "dtype": "|i1",
+        "sha256": "e01fcda94b6e2ee0ec20a2b6312f2450b9ce3e8e75a5d5bb731f6a3464773582",
+        "shape": [
+          11292,
+          4
+        ]
+      },
+      "candidate_values": {
+        "bytes": 993696,
+        "columns_if_applicable": [
+          "dA",
+          "dB",
+          "L",
+          "U",
+          "delta_low",
+          "delta_high",
+          "signed_012",
+          "signed_023",
+          "signed_013",
+          "signed_123",
+          "AABB_distance"
+        ],
+        "dtype": "<f8",
+        "sha256": "3e2c4f524e0e04af3ca8eec62caf17778c4d805653b5cc15527ec6c1840821a5",
+        "shape": [
+          11292,
+          11
+        ]
+      },
+      "extension_factors": {
+        "bytes": 24,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "bb7605abf1c023fe9fe2c2eda533b073b2450981c0a92df0822e31bb7334b22d",
+        "shape": [
+          3
+        ]
+      },
+      "geometry_edge_exact_zero": {
+        "bytes": 8904,
+        "columns_if_applicable": null,
+        "dtype": "|b1",
+        "sha256": "09aee85cf321f3c5bc0684f99457953037a7d43af43ce5b8c01806a0ab56de39",
+        "shape": [
+          3,
+          742,
+          4
+        ]
+      },
+      "geometry_edge_lengths": {
+        "bytes": 71232,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "ee233429efc5866f4a11689dd793f31eab58678b8b50f69e8a9ff5a0c33b5b21",
+        "shape": [
+          3,
+          742,
+          4
+        ]
+      },
+      "geometry_extended_corners": {
+        "bytes": 213696,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "d65afcb70d9ad8d2964c0c4d7527698710609a2433016841169797a96de34090",
+        "shape": [
+          3,
+          742,
+          4,
+          3
+        ]
+      },
+      "geometry_extended_diagonals": {
+        "bytes": 35616,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "65525118ae7cc30fde0d6c6d81a9dea531bde0dbe9bf7e9308f0b26219b6892c",
+        "shape": [
+          3,
+          742,
+          2
+        ]
+      },
+      "geometry_jacobian_centre": {
+        "bytes": 53424,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "8c3c07dd5f5be18da9e39cadbeca1833128f0d3f300245e02d728afe9bd67bb9",
+        "shape": [
+          3,
+          742,
+          3
+        ]
+      },
+      "geometry_jacobian_centre_norm": {
+        "bytes": 17808,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "c0b49d8b20fb20b6f1275bb8da45d51df2d3223ca41ff1900d156e69a151596f",
+        "shape": [
+          3,
+          742
+        ]
+      },
+      "geometry_jacobian_corner_norms": {
+        "bytes": 71232,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "b31b38fa8cbe8878679f07f4f5e6a4f7d9dba1f9e1259901c15fe7e4f1f37de3",
+        "shape": [
+          3,
+          742,
+          4
+        ]
+      },
+      "geometry_jacobian_corners": {
+        "bytes": 213696,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "2066be48296a823d36bbaa40ce4abd307f41a52d7a58729b3ef3ca7184156bd6",
+        "shape": [
+          3,
+          742,
+          4,
+          3
+        ]
+      },
+      "geometry_jacobian_cosine_centre": {
+        "bytes": 71232,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "7ecfcd6678d2d56972a01a845c2f19353f9e7508bbf418d6dae3e350d9da8946",
+        "shape": [
+          3,
+          742,
+          4
+        ]
+      },
+      "geometry_jacobian_dot_centre": {
+        "bytes": 71232,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "aef75d3964a75f6b59037295aca731c70370b62cc4f20729176a5a012723412f",
+        "shape": [
+          3,
+          742,
+          4
+        ]
+      },
+      "geometry_jacobian_warnings": {
+        "bytes": 35616,
+        "columns_if_applicable": [
+          "zero_corner_jacobian",
+          "zero_centre_jacobian",
+          "zero_dot",
+          "negative_dot"
+        ],
+        "dtype": "|b1",
+        "sha256": "f3db5658cc3cd40eec1456ec73953452d45ade0d229b64885336fecf65980637",
+        "shape": [
+          3,
+          742,
+          4,
+          4
+        ]
+      },
+      "geometry_normal_dot_products": {
+        "bytes": 284928,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "6f044a815e05864c19195cbb6829397973ae81ed4873048f7d5ac50964f3e1e3",
+        "shape": [
+          3,
+          742,
+          4,
+          4
+        ]
+      },
+      "geometry_original_diagonals": {
+        "bytes": 35616,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "14d10d7ccc1d7e46ab7ed7ea3ea28e4b4e44290a858e2a288287af4d71dad92f",
+        "shape": [
+          3,
+          742,
+          2
+        ]
+      },
+      "geometry_triangle_areas": {
+        "bytes": 71232,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "d78ab1a7fa6d1d2f4ba96d403a3d0fc478905f044b3e73bf444b3de6ce5b17a3",
+        "shape": [
+          3,
+          742,
+          4
+        ]
+      },
+      "geometry_triangle_cross_norms": {
+        "bytes": 71232,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "b31b38fa8cbe8878679f07f4f5e6a4f7d9dba1f9e1259901c15fe7e4f1f37de3",
+        "shape": [
+          3,
+          742,
+          4
+        ]
+      },
+      "geometry_triangle_cross_products": {
+        "bytes": 213696,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "2ebfa8f8d6509b7a7acc98c24c4a9d2cff4f5a37a3347fcb9ccb3af53595a464",
+        "shape": [
+          3,
+          742,
+          4,
+          3
+        ]
+      },
+      "geometry_triangle_exact_zero": {
+        "bytes": 8904,
+        "columns_if_applicable": null,
+        "dtype": "|b1",
+        "sha256": "09aee85cf321f3c5bc0684f99457953037a7d43af43ce5b8c01806a0ab56de39",
+        "shape": [
+          3,
+          742,
+          4
+        ]
+      },
+      "geometry_triangle_near_zero": {
+        "bytes": 8904,
+        "columns_if_applicable": null,
+        "dtype": "|b1",
+        "sha256": "09aee85cf321f3c5bc0684f99457953037a7d43af43ce5b8c01806a0ab56de39",
+        "shape": [
+          3,
+          742,
+          4
+        ]
+      },
+      "geometry_triangle_unit_normals": {
+        "bytes": 213696,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "365ee17f35db51e485d9a41fb8a55c625ff6c8dfaf4e4bdbe917188912960434",
+        "shape": [
+          3,
+          742,
+          4,
+          3
+        ]
+      },
+      "geometry_warp_bound": {
+        "bytes": 17808,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "3be250ab258118edc1f699943e9174ba6e6c30b02651be5c5c4c6618e7a7c3db",
+        "shape": [
+          3,
+          742
+        ]
+      },
+      "master_alias_identity": {
+        "bytes": 47488,
+        "columns_if_applicable": [
+          "master_record_index",
+          "shell_SRC",
+          "shell_connectivity_line",
+          "shell_thickness_line",
+          "EID",
+          "original_PID",
+          "effective_PID",
+          "ordered_alias"
+        ],
+        "dtype": "<i8",
+        "sha256": "d2a1cc48c95844f92512bebed2019a9b6881c6f2541efb6390ce881a1e16d512",
+        "shape": [
+          742,
+          8
+        ]
+      },
+      "master_alias_nodes": {
+        "bytes": 23744,
+        "columns_if_applicable": null,
+        "dtype": "<i8",
+        "sha256": "c5fe70c003ac8ea18e4817872f8059575571a9c4747573483c9ff6f1d48ad52d",
+        "shape": [
+          742,
+          4
+        ]
+      },
+      "master_alias_thickness": {
+        "bytes": 29680,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "bdc6a35dfea12ca06847987d14ed8dc9e484a418c91e0a8bf7dc36090e403af6",
+        "shape": [
+          742,
+          5
+        ]
+      },
+      "master_alias_thickness_missing": {
+        "bytes": 3710,
+        "columns_if_applicable": null,
+        "dtype": "|b1",
+        "sha256": "93c519406b12e375a490f15ba4359c515734adabd2a879559b27755c99f20ae4",
+        "shape": [
+          742,
+          5
+        ]
+      },
+      "master_attribute_missing": {
+        "bytes": 2968,
+        "columns_if_applicable": null,
+        "dtype": "|b1",
+        "sha256": "4fe273f1e9efb9d6b4ed4b2c760b2bb6741e6d532b4583a37a91787986db6a62",
+        "shape": [
+          742,
+          4
+        ]
+      },
+      "master_attributes": {
+        "bytes": 23744,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "58bef6b9838203f2aedd94b299e969061a5fe56a9b3cf93992577cc2c4963b59",
+        "shape": [
+          742,
+          4
+        ]
+      },
+      "master_identity": {
+        "bytes": 23744,
+        "columns_if_applicable": [
+          "SRC",
+          "set_ID",
+          "source_line",
+          "membership_row"
+        ],
+        "dtype": "<i8",
+        "sha256": "2132c200726a5435f0493d3aa4c63ae30ccf74f5a76149d0f263630ce452e9a9",
+        "shape": [
+          742,
+          4
+        ]
+      },
+      "master_node_ids": {
+        "bytes": 23744,
+        "columns_if_applicable": null,
+        "dtype": "<i8",
+        "sha256": "95ebf053f3ee2b4728f2c338bfa46a73f0ad8c762436fd8e743a9e77978725c4",
+        "shape": [
+          742,
+          4
+        ]
+      },
+      "master_original_corners": {
+        "bytes": 71232,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "9d58bcc92291f348a60406d453d357f7ed80159c984a72c76fd42333e2089672",
+        "shape": [
+          742,
+          4,
+          3
+        ]
+      },
+      "master_supplied_thickness_range": {
+        "bytes": 11872,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "f02d7df6756bb8247d0ae85af942fd161dff462287fbb6349276c409b48733e4",
+        "shape": [
+          742,
+          2
+        ]
+      },
+      "node_ids": {
+        "bytes": 2284000,
+        "columns_if_applicable": null,
+        "dtype": "<i8",
+        "sha256": "6bd00cdfae9765201e38cad261d34b49790e5d66edc32695e737b678b22dc427",
+        "shape": [
+          285500
+        ]
+      },
+      "node_part_family_counts": {
+        "bytes": 10195232,
+        "columns_if_applicable": [
+          "global_selected_node_index",
+          "effective_PID",
+          "family_code",
+          "unique_element_count"
+        ],
+        "dtype": "<i8",
+        "sha256": "e33557a4b8ae1a3b43d4da0bda270630ac337fb6228c5b2c32af735886a6e1a0",
+        "shape": [
+          318601,
+          4
+        ]
+      },
+      "node_part_offsets": {
+        "bytes": 2284008,
+        "columns_if_applicable": null,
+        "dtype": "<i8",
+        "sha256": "fdeda3eebf0af04b0cd153d0e05c04ed709506be5638e913736f22af9d09e836",
+        "shape": [
+          285501
+        ]
+      },
+      "node_source_line": {
+        "bytes": 4568000,
+        "columns_if_applicable": null,
+        "dtype": "<i8",
+        "sha256": "6f4774cb7fa799eccc252049830577b93c8daa7e22872327d5c0fefe28e8bf9b",
+        "shape": [
+          285500,
+          2
+        ]
+      },
+      "node_supplied_thickness_range": {
+        "bytes": 4568000,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "d3c05c4e05d644f72c23cde60f9b15effd30495036a11bb5a51c517cc6de1f8f",
+        "shape": [
+          285500,
+          2
+        ]
+      },
+      "node_xyz": {
+        "bytes": 6852000,
+        "columns_if_applicable": null,
+        "dtype": "<f8",
+        "sha256": "c76353334502291b0ccee55f648c5ea6985503835c278326dc60f7f4a94492e0",
+        "shape": [
+          285500,
+          3
+        ]
+      },
+      "per_master_counts": {
+        "bytes": 178080,
+        "columns_if_applicable": [
+          "complete_population",
+          "admitted",
+          "broad_excluded",
+          "class0",
+          "class1",
+          "class2",
+          "class3",
+          "same_node_ID",
+          "same_effective_part",
+          "known_nonoutside"
+        ],
+        "dtype": "<i8",
+        "sha256": "f21d4a765ffe44688b89acce00ac65f5555aaac77e27debe45a8ccb4c2efc13a",
+        "shape": [
+          3,
+          742,
+          10
+        ]
+      }
+    },
+    "array_sha256": "26a9c9421e37c38e96e7568bb0521763b0cd0e621a12e7e101f8a9b411a2bef5",
+    "class_schema": {
+      "0": "unknown thickness",
+      "1": "outside high gate",
+      "2": "unresolved_boundary_or_thickness_sensitive",
+      "3": "inside low gate"
+    },
+    "command": [
+      "research/sherlock-wtc7-investigation/c79-contact-geometry/verify_proximity.py",
+      "--output",
+      "independent-proximity01.json"
+    ],
+    "comparison_tolerance": "epsilon absolute, zero relative for finite distances/bounds; exact IDs/masks/classes; undefined positions preserved.",
+    "controls": [
+      "interior_edge_vertices_and_BC_distance",
+      "signed_distance_and_inside_flags",
+      "reversed_winding",
+      "zero_area_reduces_to_edges_unknown_plane",
+      "all_zero_edges_vertex_distance",
+      "planar_rectangle_w_zero_diagonals",
+      "analytic_planar_enclosure",
+      "warped_patch_points_zero_true_distance_inside_enclosure",
+      "planar_nonparallelogram_nonzero_w",
+      "extended_AABB_containment_1.0",
+      "extended_AABB_containment_1.006",
+      "extended_AABB_containment_1.025",
+      "known_point_only_after_extension",
+      "supplied_value_threshold_formula",
+      "thickness_sensitive_and_unknown_always_admitted",
+      "strict_boundary_inside_outside",
+      "small_inversion_preserved_class2_unknown0",
+      "large_inversion",
+      "negative_thickness",
+      "partial_unknown_thickness",
+      "nonfinite_known_threshold",
+      "near_degeneracy_not_zero_repair",
+      "degenerate_normals_and_projection_metadata",
+      "orientation_warning_not_repaired",
+      "broad_phase_against_unpruned_1.0",
+      "broad_phase_against_unpruned_1.006",
+      "broad_phase_against_unpruned_1.025",
+      "complete_synthetic_repeat",
+      "complete_masks_rows_and_duplicate_masters",
+      "synthetic_join_and_unknown_preservation",
+      "mutated_mask_rejected",
+      "existing_output_refusal",
+      "mutated_input_pin_refusal",
+      "object_array_rejected",
+      "numeric_archive_roundtrip"
+    ],
+    "family_codes": {
+      "beam": 1,
+      "discrete": 2,
+      "shell": 0,
+      "solid": 3
+    },
+    "geometry_axes": "Geometry arrays: setting, global master record, then documented triangle/corner axes. Triangle order 012,023,013,123.",
+    "indices": "All array indices zero-based. Source lines, source IDs, master membership rows and node IDs retain frozen input meanings.",
+    "limits": {
+      "admitted_rows": 1000000,
+      "memory_bytes": 805306368,
+      "seconds_compute": 300
+    },
+    "mask_schema": "CID arrays: setting, master-within-CID in frozen order, packed complete slave-in-CID order; little bit order; unused trailing bits zero.",
+    "missing_policy": "No-shell thresholds NaN and class0. Exactly zero-area triangle unit normals/signed distances NaN, projection flags -1. Nondegenerate projection flags 0/1. Small enclosure inversion retained; known thickness class2, unknown class0.",
+    "numpy": "2.3.5",
+    "peak_bytes": 427687936,
+    "pins_after": {
+      "GEOMETRIC-IMPLEMENTATION-ADDENDUM.md": "ada9f0cdfcb7d7dd3fd79d3c8cd6daf9f0a3f0937c6e7420f7c23dbd34fba9bd",
+      "GEOMETRIC-METHOD.md": "73ec992e3c22d981f5cc367a8799635897903aba1b709941ec1ad2aa20c17d9e",
+      "PROTOCOL.md": "b18a519ba88e7d61d331d821232e269c3e3f9a5e690a3e25e3e108e1e70df1ea",
+      "independent-stage01.json": "ead0f771054d3bfbe775a215aa7bc295c3c1e741e172b5201ad59816acfccccd",
+      "independent-stage01.npz": "fcab10b2081c7fe3e1c0f9f4cdf92344d55e88e12c408fd7b70ebaeb0bcc0ad5",
+      "independent_proximity_code": "cd3559d84e332ea7a3877a15fe8ef0e7ec8717b9cc2c73746d610e3364a31d9e"
+    },
+    "pins_before": {
+      "GEOMETRIC-IMPLEMENTATION-ADDENDUM.md": "ada9f0cdfcb7d7dd3fd79d3c8cd6daf9f0a3f0937c6e7420f7c23dbd34fba9bd",
+      "GEOMETRIC-METHOD.md": "73ec992e3c22d981f5cc367a8799635897903aba1b709941ec1ad2aa20c17d9e",
+      "PROTOCOL.md": "b18a519ba88e7d61d331d821232e269c3e3f9a5e690a3e25e3e108e1e70df1ea",
+      "independent-stage01.json": "ead0f771054d3bfbe775a215aa7bc295c3c1e741e172b5201ad59816acfccccd",
+      "independent-stage01.npz": "fcab10b2081c7fe3e1c0f9f4cdf92344d55e88e12c408fd7b70ebaeb0bcc0ad5",
+      "independent_proximity_code": "cd3559d84e332ea7a3877a15fe8ef0e7ec8717b9cc2c73746d610e3364a31d9e"
+    },
+    "progress": [
+      {
+        "cid": 1,
+        "complete": true
+      },
+      {
+        "cid": 2,
+        "complete": true
+      }
+    ],
+    "seconds": 17.426560916937888,
+    "status": "PASS"
+  },
+  "result": {
+    "epsilon": 9.4869e-09,
+    "input_scope": "Frozen independently extracted selected numeric arrays; no raw mesh pass.",
+    "interpretation_ceiling": "Conditional geometric image-set diagnostic, not effective LS-DYNA defaults, initialization, active ties, restraint, physical units/floors, capacity or collapse cause.",
+    "max_abs_selected_coordinate": 94.869,
+    "part_references": [
+      {
+        "card": [
+          11,
+          11,
+          11,
+          0,
+          11,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 11,
+        "effective_part": 11,
+        "effective_section": 11,
+        "keyword_line": 2176,
+        "line": 2178,
+        "material_definition": {
+          "effective_id": 11,
+          "keyword": "MAT_ELASTIC_VISCOPLASTIC_THERMAL",
+          "keyword_line": 2166,
+          "line": 2167,
+          "original_id": 11,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 11,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 2173,
+          "line": 2174,
+          "original_id": 11,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          12,
+          12,
+          12,
+          0,
+          12,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 12,
+        "effective_part": 12,
+        "effective_section": 12,
+        "keyword_line": 2194,
+        "line": 2196,
+        "material_definition": {
+          "effective_id": 12,
+          "keyword": "MAT_ELASTIC_VISCOPLASTIC_THERMAL",
+          "keyword_line": 2184,
+          "line": 2185,
+          "original_id": 12,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 12,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 2191,
+          "line": 2192,
+          "original_id": 12,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          25,
+          25,
+          25,
+          0,
+          25,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 25,
+        "effective_part": 25,
+        "effective_section": 25,
+        "keyword_line": 2313,
+        "line": 2315,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 25,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 2310,
+          "line": 2311,
+          "original_id": 25,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          33,
+          33,
+          33,
+          0,
+          33,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 33,
+        "effective_part": 33,
+        "effective_section": 33,
+        "keyword_line": 2430,
+        "line": 2432,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 33,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 2427,
+          "line": 2428,
+          "original_id": 33,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          66,
+          66,
+          51,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 51,
+        "effective_part": 66,
+        "effective_section": 66,
+        "keyword_line": 1885,
+        "line": 1887,
+        "material_definition": {
+          "effective_id": 51,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 1770,
+          "line": 1772,
+          "original_id": 51,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 66,
+          "keyword": "SECTION_BEAM",
+          "keyword_line": 1881,
+          "line": 1882,
+          "original_id": 66,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          74,
+          74,
+          51,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 51,
+        "effective_part": 74,
+        "effective_section": 74,
+        "keyword_line": 1951,
+        "line": 1953,
+        "material_definition": {
+          "effective_id": 51,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 1770,
+          "line": 1772,
+          "original_id": 51,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 74,
+          "keyword": "SECTION_BEAM",
+          "keyword_line": 1945,
+          "line": 1946,
+          "original_id": 74,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          179,
+          179,
+          99,
+          0,
+          179,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 99,
+        "effective_part": 179,
+        "effective_section": 179,
+        "keyword_line": 3525,
+        "line": 3527,
+        "material_definition": {
+          "effective_id": 99,
+          "keyword": "MAT_ELASTIC_VISCOPLASTIC_THERMAL",
+          "keyword_line": 2486,
+          "line": 2487,
+          "original_id": 99,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 179,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 3522,
+          "line": 3523,
+          "original_id": 179,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          711,
+          711,
+          711,
+          0,
+          711,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 711,
+        "effective_part": 711,
+        "effective_section": 711,
+        "keyword_line": 4082,
+        "line": 4084,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 711,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4079,
+          "line": 4080,
+          "original_id": 711,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          712,
+          712,
+          712,
+          0,
+          712,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 712,
+        "effective_part": 712,
+        "effective_section": 712,
+        "keyword_line": 4090,
+        "line": 4092,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 712,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4087,
+          "line": 4088,
+          "original_id": 712,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          713,
+          713,
+          713,
+          0,
+          713,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 713,
+        "effective_part": 713,
+        "effective_section": 713,
+        "keyword_line": 4098,
+        "line": 4100,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 713,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4095,
+          "line": 4096,
+          "original_id": 713,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          722,
+          722,
+          712,
+          0,
+          722,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 712,
+        "effective_part": 722,
+        "effective_section": 722,
+        "keyword_line": 4114,
+        "line": 4116,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 722,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4111,
+          "line": 4112,
+          "original_id": 722,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          723,
+          723,
+          723,
+          0,
+          723,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 723,
+        "effective_part": 723,
+        "effective_section": 723,
+        "keyword_line": 4122,
+        "line": 4124,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 723,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4119,
+          "line": 4120,
+          "original_id": 723,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          731,
+          731,
+          731,
+          0,
+          731,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 731,
+        "effective_part": 731,
+        "effective_section": 731,
+        "keyword_line": 4130,
+        "line": 4132,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 731,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4127,
+          "line": 4128,
+          "original_id": 731,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          733,
+          733,
+          733,
+          0,
+          733,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 733,
+        "effective_part": 733,
+        "effective_section": 733,
+        "keyword_line": 4146,
+        "line": 4148,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 733,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4143,
+          "line": 4144,
+          "original_id": 733,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          741,
+          741,
+          741,
+          0,
+          741,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 741,
+        "effective_part": 741,
+        "effective_section": 741,
+        "keyword_line": 4154,
+        "line": 4156,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 741,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4151,
+          "line": 4152,
+          "original_id": 741,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          742,
+          742,
+          742,
+          0,
+          742,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 742,
+        "effective_part": 742,
+        "effective_section": 742,
+        "keyword_line": 4162,
+        "line": 4164,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 742,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4159,
+          "line": 4160,
+          "original_id": 742,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          743,
+          743,
+          743,
+          0,
+          743,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 743,
+        "effective_part": 743,
+        "effective_section": 743,
+        "keyword_line": 4170,
+        "line": 4172,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 743,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4167,
+          "line": 4168,
+          "original_id": 743,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          751,
+          751,
+          751,
+          0,
+          751,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 751,
+        "effective_part": 751,
+        "effective_section": 751,
+        "keyword_line": 4178,
+        "line": 4180,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 751,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4175,
+          "line": 4176,
+          "original_id": 751,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          752,
+          752,
+          742,
+          0,
+          752,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 742,
+        "effective_part": 752,
+        "effective_section": 752,
+        "keyword_line": 4186,
+        "line": 4188,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 752,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4183,
+          "line": 4184,
+          "original_id": 752,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          753,
+          753,
+          743,
+          0,
+          753,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 743,
+        "effective_part": 753,
+        "effective_section": 753,
+        "keyword_line": 4194,
+        "line": 4196,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 753,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4191,
+          "line": 4192,
+          "original_id": 753,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          761,
+          761,
+          761,
+          0,
+          761,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 761,
+        "effective_part": 761,
+        "effective_section": 761,
+        "keyword_line": 4202,
+        "line": 4204,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 761,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4199,
+          "line": 4200,
+          "original_id": 761,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          762,
+          762,
+          762,
+          0,
+          762,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 762,
+        "effective_part": 762,
+        "effective_section": 762,
+        "keyword_line": 4210,
+        "line": 4212,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 762,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4207,
+          "line": 4208,
+          "original_id": 762,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          763,
+          763,
+          763,
+          0,
+          763,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 763,
+        "effective_part": 763,
+        "effective_section": 763,
+        "keyword_line": 4218,
+        "line": 4220,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 763,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4215,
+          "line": 4216,
+          "original_id": 763,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          772,
+          772,
+          772,
+          0,
+          772,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 772,
+        "effective_part": 772,
+        "effective_section": 772,
+        "keyword_line": 4226,
+        "line": 4228,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 772,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4223,
+          "line": 4224,
+          "original_id": 772,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          773,
+          773,
+          773,
+          0,
+          773,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 773,
+        "effective_part": 773,
+        "effective_section": 773,
+        "keyword_line": 4234,
+        "line": 4236,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 773,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4231,
+          "line": 4232,
+          "original_id": 773,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          782,
+          782,
+          772,
+          0,
+          782,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 772,
+        "effective_part": 782,
+        "effective_section": 782,
+        "keyword_line": 4250,
+        "line": 4252,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 782,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4247,
+          "line": 4248,
+          "original_id": 782,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          802,
+          802,
+          802,
+          0,
+          802,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 802,
+        "effective_part": 802,
+        "effective_section": 802,
+        "keyword_line": 4282,
+        "line": 4284,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 802,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4279,
+          "line": 4280,
+          "original_id": 802,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          803,
+          803,
+          803,
+          0,
+          803,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 803,
+        "effective_part": 803,
+        "effective_section": 803,
+        "keyword_line": 4290,
+        "line": 4292,
+        "material_definition": null,
+        "section_definition": {
+          "effective_id": 803,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4287,
+          "line": 4288,
+          "original_id": 803,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          804,
+          804,
+          804,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 804,
+        "effective_part": 804,
+        "effective_section": 804,
+        "keyword_line": 7162611,
+        "line": 7162613,
+        "material_definition": {
+          "effective_id": 804,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162606,
+          "line": 7162607,
+          "original_id": 804,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 804,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162608,
+          "line": 7162609,
+          "original_id": 804,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          805,
+          805,
+          805,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 805,
+        "effective_part": 805,
+        "effective_section": 805,
+        "keyword_line": 7162619,
+        "line": 7162621,
+        "material_definition": {
+          "effective_id": 805,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162614,
+          "line": 7162615,
+          "original_id": 805,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 805,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162616,
+          "line": 7162617,
+          "original_id": 805,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          806,
+          806,
+          806,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 806,
+        "effective_part": 806,
+        "effective_section": 806,
+        "keyword_line": 7162627,
+        "line": 7162629,
+        "material_definition": {
+          "effective_id": 806,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162622,
+          "line": 7162623,
+          "original_id": 806,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 806,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162624,
+          "line": 7162625,
+          "original_id": 806,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          807,
+          807,
+          807,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 807,
+        "effective_part": 807,
+        "effective_section": 807,
+        "keyword_line": 7162635,
+        "line": 7162637,
+        "material_definition": {
+          "effective_id": 807,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162630,
+          "line": 7162631,
+          "original_id": 807,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 807,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162632,
+          "line": 7162633,
+          "original_id": 807,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          808,
+          808,
+          808,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 808,
+        "effective_part": 808,
+        "effective_section": 808,
+        "keyword_line": 7162643,
+        "line": 7162645,
+        "material_definition": {
+          "effective_id": 808,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162638,
+          "line": 7162639,
+          "original_id": 808,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 808,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162640,
+          "line": 7162641,
+          "original_id": 808,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          809,
+          809,
+          809,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 809,
+        "effective_part": 809,
+        "effective_section": 809,
+        "keyword_line": 7162651,
+        "line": 7162653,
+        "material_definition": {
+          "effective_id": 809,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162646,
+          "line": 7162647,
+          "original_id": 809,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 809,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162648,
+          "line": 7162649,
+          "original_id": 809,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          811,
+          811,
+          811,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 811,
+        "effective_part": 811,
+        "effective_section": 811,
+        "keyword_line": 7162667,
+        "line": 7162669,
+        "material_definition": {
+          "effective_id": 811,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162662,
+          "line": 7162663,
+          "original_id": 811,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 811,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162664,
+          "line": 7162665,
+          "original_id": 811,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          812,
+          812,
+          812,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 812,
+        "effective_part": 812,
+        "effective_section": 812,
+        "keyword_line": 7162675,
+        "line": 7162677,
+        "material_definition": {
+          "effective_id": 812,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162670,
+          "line": 7162671,
+          "original_id": 812,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 812,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162672,
+          "line": 7162673,
+          "original_id": 812,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          814,
+          814,
+          814,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 814,
+        "effective_part": 814,
+        "effective_section": 814,
+        "keyword_line": 7162691,
+        "line": 7162693,
+        "material_definition": {
+          "effective_id": 814,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162686,
+          "line": 7162687,
+          "original_id": 814,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 814,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162688,
+          "line": 7162689,
+          "original_id": 814,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          815,
+          815,
+          815,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 815,
+        "effective_part": 815,
+        "effective_section": 815,
+        "keyword_line": 7162699,
+        "line": 7162701,
+        "material_definition": {
+          "effective_id": 815,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162694,
+          "line": 7162695,
+          "original_id": 815,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 815,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162696,
+          "line": 7162697,
+          "original_id": 815,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          816,
+          816,
+          816,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 816,
+        "effective_part": 816,
+        "effective_section": 816,
+        "keyword_line": 7162707,
+        "line": 7162709,
+        "material_definition": {
+          "effective_id": 816,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162702,
+          "line": 7162703,
+          "original_id": 816,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 816,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162704,
+          "line": 7162705,
+          "original_id": 816,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          817,
+          817,
+          817,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 817,
+        "effective_part": 817,
+        "effective_section": 817,
+        "keyword_line": 7162715,
+        "line": 7162717,
+        "material_definition": {
+          "effective_id": 817,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162710,
+          "line": 7162711,
+          "original_id": 817,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 817,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162712,
+          "line": 7162713,
+          "original_id": 817,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          818,
+          818,
+          818,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 818,
+        "effective_part": 818,
+        "effective_section": 818,
+        "keyword_line": 7162723,
+        "line": 7162725,
+        "material_definition": {
+          "effective_id": 818,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162718,
+          "line": 7162719,
+          "original_id": 818,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 818,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162720,
+          "line": 7162721,
+          "original_id": 818,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          819,
+          819,
+          819,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 819,
+        "effective_part": 819,
+        "effective_section": 819,
+        "keyword_line": 7162731,
+        "line": 7162733,
+        "material_definition": {
+          "effective_id": 819,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162726,
+          "line": 7162727,
+          "original_id": 819,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 819,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162728,
+          "line": 7162729,
+          "original_id": 819,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          820,
+          820,
+          820,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 820,
+        "effective_part": 820,
+        "effective_section": 820,
+        "keyword_line": 7162739,
+        "line": 7162741,
+        "material_definition": {
+          "effective_id": 820,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162734,
+          "line": 7162735,
+          "original_id": 820,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 820,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162736,
+          "line": 7162737,
+          "original_id": 820,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          821,
+          821,
+          821,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 821,
+        "effective_part": 821,
+        "effective_section": 821,
+        "keyword_line": 7162747,
+        "line": 7162749,
+        "material_definition": {
+          "effective_id": 821,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162742,
+          "line": 7162743,
+          "original_id": 821,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 821,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162744,
+          "line": 7162745,
+          "original_id": 821,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          823,
+          823,
+          823,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 823,
+        "effective_part": 823,
+        "effective_section": 823,
+        "keyword_line": 7162763,
+        "line": 7162765,
+        "material_definition": {
+          "effective_id": 823,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162758,
+          "line": 7162759,
+          "original_id": 823,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 823,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162760,
+          "line": 7162761,
+          "original_id": 823,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          824,
+          824,
+          824,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 824,
+        "effective_part": 824,
+        "effective_section": 824,
+        "keyword_line": 7162771,
+        "line": 7162773,
+        "material_definition": {
+          "effective_id": 824,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162766,
+          "line": 7162767,
+          "original_id": 824,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 824,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162768,
+          "line": 7162769,
+          "original_id": 824,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          825,
+          825,
+          825,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 825,
+        "effective_part": 825,
+        "effective_section": 825,
+        "keyword_line": 7162779,
+        "line": 7162781,
+        "material_definition": {
+          "effective_id": 825,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162774,
+          "line": 7162775,
+          "original_id": 825,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 825,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162776,
+          "line": 7162777,
+          "original_id": 825,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          826,
+          826,
+          826,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 826,
+        "effective_part": 826,
+        "effective_section": 826,
+        "keyword_line": 7162787,
+        "line": 7162789,
+        "material_definition": {
+          "effective_id": 826,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162782,
+          "line": 7162783,
+          "original_id": 826,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 826,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162784,
+          "line": 7162785,
+          "original_id": 826,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          827,
+          827,
+          827,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 827,
+        "effective_part": 827,
+        "effective_section": 827,
+        "keyword_line": 7162795,
+        "line": 7162797,
+        "material_definition": {
+          "effective_id": 827,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162790,
+          "line": 7162791,
+          "original_id": 827,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 827,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162792,
+          "line": 7162793,
+          "original_id": 827,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          828,
+          828,
+          828,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 828,
+        "effective_part": 828,
+        "effective_section": 828,
+        "keyword_line": 7162803,
+        "line": 7162805,
+        "material_definition": {
+          "effective_id": 828,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162798,
+          "line": 7162799,
+          "original_id": 828,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 828,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162800,
+          "line": 7162801,
+          "original_id": 828,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          829,
+          829,
+          829,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 829,
+        "effective_part": 829,
+        "effective_section": 829,
+        "keyword_line": 7162811,
+        "line": 7162813,
+        "material_definition": {
+          "effective_id": 829,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162806,
+          "line": 7162807,
+          "original_id": 829,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 829,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162808,
+          "line": 7162809,
+          "original_id": 829,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          830,
+          830,
+          830,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 830,
+        "effective_part": 830,
+        "effective_section": 830,
+        "keyword_line": 7162819,
+        "line": 7162821,
+        "material_definition": {
+          "effective_id": 830,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162814,
+          "line": 7162815,
+          "original_id": 830,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 830,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162816,
+          "line": 7162817,
+          "original_id": 830,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          831,
+          831,
+          831,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 831,
+        "effective_part": 831,
+        "effective_section": 831,
+        "keyword_line": 7162827,
+        "line": 7162829,
+        "material_definition": {
+          "effective_id": 831,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162822,
+          "line": 7162823,
+          "original_id": 831,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 831,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162824,
+          "line": 7162825,
+          "original_id": 831,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          832,
+          832,
+          832,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 832,
+        "effective_part": 832,
+        "effective_section": 832,
+        "keyword_line": 7162835,
+        "line": 7162837,
+        "material_definition": {
+          "effective_id": 832,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162830,
+          "line": 7162831,
+          "original_id": 832,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 832,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162832,
+          "line": 7162833,
+          "original_id": 832,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          833,
+          833,
+          833,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 833,
+        "effective_part": 833,
+        "effective_section": 833,
+        "keyword_line": 7162843,
+        "line": 7162845,
+        "material_definition": {
+          "effective_id": 833,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162838,
+          "line": 7162839,
+          "original_id": 833,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 833,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162840,
+          "line": 7162841,
+          "original_id": 833,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          834,
+          834,
+          834,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 834,
+        "effective_part": 834,
+        "effective_section": 834,
+        "keyword_line": 7162851,
+        "line": 7162853,
+        "material_definition": {
+          "effective_id": 834,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162846,
+          "line": 7162847,
+          "original_id": 834,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 834,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162848,
+          "line": 7162849,
+          "original_id": 834,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          835,
+          835,
+          835,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 835,
+        "effective_part": 835,
+        "effective_section": 835,
+        "keyword_line": 7162859,
+        "line": 7162861,
+        "material_definition": {
+          "effective_id": 835,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162854,
+          "line": 7162855,
+          "original_id": 835,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 835,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162856,
+          "line": 7162857,
+          "original_id": 835,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          837,
+          837,
+          837,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 837,
+        "effective_part": 837,
+        "effective_section": 837,
+        "keyword_line": 7162875,
+        "line": 7162877,
+        "material_definition": {
+          "effective_id": 837,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162870,
+          "line": 7162871,
+          "original_id": 837,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 837,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162872,
+          "line": 7162873,
+          "original_id": 837,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          838,
+          838,
+          838,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 838,
+        "effective_part": 838,
+        "effective_section": 838,
+        "keyword_line": 7162883,
+        "line": 7162885,
+        "material_definition": {
+          "effective_id": 838,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162878,
+          "line": 7162879,
+          "original_id": 838,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 838,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162880,
+          "line": 7162881,
+          "original_id": 838,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          839,
+          839,
+          839,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 839,
+        "effective_part": 839,
+        "effective_section": 839,
+        "keyword_line": 7162891,
+        "line": 7162893,
+        "material_definition": {
+          "effective_id": 839,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162886,
+          "line": 7162887,
+          "original_id": 839,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 839,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162888,
+          "line": 7162889,
+          "original_id": 839,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          840,
+          840,
+          840,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 840,
+        "effective_part": 840,
+        "effective_section": 840,
+        "keyword_line": 7162899,
+        "line": 7162901,
+        "material_definition": {
+          "effective_id": 840,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162894,
+          "line": 7162895,
+          "original_id": 840,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 840,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162896,
+          "line": 7162897,
+          "original_id": 840,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          841,
+          841,
+          841,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 841,
+        "effective_part": 841,
+        "effective_section": 841,
+        "keyword_line": 7162907,
+        "line": 7162909,
+        "material_definition": {
+          "effective_id": 841,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162902,
+          "line": 7162903,
+          "original_id": 841,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 841,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162904,
+          "line": 7162905,
+          "original_id": 841,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          842,
+          842,
+          842,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 842,
+        "effective_part": 842,
+        "effective_section": 842,
+        "keyword_line": 7162915,
+        "line": 7162917,
+        "material_definition": {
+          "effective_id": 842,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162910,
+          "line": 7162911,
+          "original_id": 842,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 842,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162912,
+          "line": 7162913,
+          "original_id": 842,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          843,
+          843,
+          843,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 843,
+        "effective_part": 843,
+        "effective_section": 843,
+        "keyword_line": 7162923,
+        "line": 7162925,
+        "material_definition": {
+          "effective_id": 843,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162918,
+          "line": 7162919,
+          "original_id": 843,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 843,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162920,
+          "line": 7162921,
+          "original_id": 843,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          844,
+          844,
+          844,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 844,
+        "effective_part": 844,
+        "effective_section": 844,
+        "keyword_line": 7162931,
+        "line": 7162933,
+        "material_definition": {
+          "effective_id": 844,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162926,
+          "line": 7162927,
+          "original_id": 844,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 844,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162928,
+          "line": 7162929,
+          "original_id": 844,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          845,
+          845,
+          845,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 845,
+        "effective_part": 845,
+        "effective_section": 845,
+        "keyword_line": 7162939,
+        "line": 7162941,
+        "material_definition": {
+          "effective_id": 845,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162934,
+          "line": 7162935,
+          "original_id": 845,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 845,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162936,
+          "line": 7162937,
+          "original_id": 845,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          846,
+          846,
+          846,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 846,
+        "effective_part": 846,
+        "effective_section": 846,
+        "keyword_line": 7162947,
+        "line": 7162949,
+        "material_definition": {
+          "effective_id": 846,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162942,
+          "line": 7162943,
+          "original_id": 846,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 846,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162944,
+          "line": 7162945,
+          "original_id": 846,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          847,
+          847,
+          847,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 847,
+        "effective_part": 847,
+        "effective_section": 847,
+        "keyword_line": 7162955,
+        "line": 7162957,
+        "material_definition": {
+          "effective_id": 847,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162950,
+          "line": 7162951,
+          "original_id": 847,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 847,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162952,
+          "line": 7162953,
+          "original_id": 847,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          848,
+          848,
+          848,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 848,
+        "effective_part": 848,
+        "effective_section": 848,
+        "keyword_line": 7162963,
+        "line": 7162965,
+        "material_definition": {
+          "effective_id": 848,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162958,
+          "line": 7162959,
+          "original_id": 848,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 848,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162960,
+          "line": 7162961,
+          "original_id": 848,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          849,
+          849,
+          849,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 849,
+        "effective_part": 849,
+        "effective_section": 849,
+        "keyword_line": 7162971,
+        "line": 7162973,
+        "material_definition": {
+          "effective_id": 849,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162966,
+          "line": 7162967,
+          "original_id": 849,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 849,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162968,
+          "line": 7162969,
+          "original_id": 849,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          850,
+          850,
+          850,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 850,
+        "effective_part": 850,
+        "effective_section": 850,
+        "keyword_line": 7162979,
+        "line": 7162981,
+        "material_definition": {
+          "effective_id": 850,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162974,
+          "line": 7162975,
+          "original_id": 850,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 850,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162976,
+          "line": 7162977,
+          "original_id": 850,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          851,
+          851,
+          851,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 851,
+        "effective_part": 851,
+        "effective_section": 851,
+        "keyword_line": 7162987,
+        "line": 7162989,
+        "material_definition": {
+          "effective_id": 851,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162982,
+          "line": 7162983,
+          "original_id": 851,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 851,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162984,
+          "line": 7162985,
+          "original_id": 851,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          852,
+          852,
+          852,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 852,
+        "effective_part": 852,
+        "effective_section": 852,
+        "keyword_line": 7162995,
+        "line": 7162997,
+        "material_definition": {
+          "effective_id": 852,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7162990,
+          "line": 7162991,
+          "original_id": 852,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 852,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7162992,
+          "line": 7162993,
+          "original_id": 852,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          854,
+          854,
+          854,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 854,
+        "effective_part": 854,
+        "effective_section": 854,
+        "keyword_line": 7163011,
+        "line": 7163013,
+        "material_definition": {
+          "effective_id": 854,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7163006,
+          "line": 7163007,
+          "original_id": 854,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 854,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7163008,
+          "line": 7163009,
+          "original_id": 854,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          855,
+          855,
+          855,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 855,
+        "effective_part": 855,
+        "effective_section": 855,
+        "keyword_line": 7163019,
+        "line": 7163021,
+        "material_definition": {
+          "effective_id": 855,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7163014,
+          "line": 7163015,
+          "original_id": 855,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 855,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7163016,
+          "line": 7163017,
+          "original_id": 855,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          856,
+          856,
+          856,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 856,
+        "effective_part": 856,
+        "effective_section": 856,
+        "keyword_line": 7163027,
+        "line": 7163029,
+        "material_definition": {
+          "effective_id": 856,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7163022,
+          "line": 7163023,
+          "original_id": 856,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 856,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7163024,
+          "line": 7163025,
+          "original_id": 856,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          857,
+          857,
+          857,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 857,
+        "effective_part": 857,
+        "effective_section": 857,
+        "keyword_line": 7163035,
+        "line": 7163037,
+        "material_definition": {
+          "effective_id": 857,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7163030,
+          "line": 7163031,
+          "original_id": 857,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 857,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7163032,
+          "line": 7163033,
+          "original_id": 857,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          858,
+          858,
+          858,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 858,
+        "effective_part": 858,
+        "effective_section": 858,
+        "keyword_line": 7163043,
+        "line": 7163045,
+        "material_definition": {
+          "effective_id": 858,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7163038,
+          "line": 7163039,
+          "original_id": 858,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 858,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7163040,
+          "line": 7163041,
+          "original_id": 858,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          859,
+          859,
+          859,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effective_material": 859,
+        "effective_part": 859,
+        "effective_section": 859,
+        "keyword_line": 7163051,
+        "line": 7163053,
+        "material_definition": {
+          "effective_id": 859,
+          "keyword": "MAT_SPRING_NONLINEAR_ELASTIC",
+          "keyword_line": 7163046,
+          "line": 7163047,
+          "original_id": 859,
+          "source": 121
+        },
+        "section_definition": {
+          "effective_id": 859,
+          "keyword": "SECTION_DISCRETE",
+          "keyword_line": 7163048,
+          "line": 7163049,
+          "original_id": 859,
+          "source": 121
+        },
+        "source": 121,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          11,
+          11,
+          11,
+          0,
+          11,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1011,
+        "effective_part": 1011,
+        "effective_section": 1011,
+        "keyword_line": 4085724,
+        "line": 4085726,
+        "material_definition": {
+          "effective_id": 1011,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4085714,
+          "line": 4085715,
+          "original_id": 11,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1011,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4085721,
+          "line": 4085722,
+          "original_id": 11,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          12,
+          12,
+          12,
+          0,
+          12,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1012,
+        "effective_part": 1012,
+        "effective_section": 1012,
+        "keyword_line": 4085740,
+        "line": 4085742,
+        "material_definition": {
+          "effective_id": 1012,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4085730,
+          "line": 4085731,
+          "original_id": 12,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1012,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4085737,
+          "line": 4085738,
+          "original_id": 12,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          25,
+          25,
+          25,
+          0,
+          25,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1025,
+        "effective_part": 1025,
+        "effective_section": 1025,
+        "keyword_line": 4085847,
+        "line": 4085849,
+        "material_definition": {
+          "effective_id": 1025,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4085837,
+          "line": 4085838,
+          "original_id": 25,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1025,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4085844,
+          "line": 4085845,
+          "original_id": 25,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          28,
+          28,
+          28,
+          0,
+          28,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1028,
+        "effective_part": 1028,
+        "effective_section": 1028,
+        "keyword_line": 4085895,
+        "line": 4085897,
+        "material_definition": {
+          "effective_id": 1028,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4085885,
+          "line": 4085886,
+          "original_id": 28,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1028,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4085892,
+          "line": 4085893,
+          "original_id": 28,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          31,
+          31,
+          31,
+          0,
+          31,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1031,
+        "effective_part": 1031,
+        "effective_section": 1031,
+        "keyword_line": 4085943,
+        "line": 4085945,
+        "material_definition": {
+          "effective_id": 1031,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4085933,
+          "line": 4085934,
+          "original_id": 31,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1031,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4085940,
+          "line": 4085941,
+          "original_id": 31,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          33,
+          33,
+          33,
+          0,
+          33,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1033,
+        "effective_part": 1033,
+        "effective_section": 1033,
+        "keyword_line": 4085975,
+        "line": 4085977,
+        "material_definition": {
+          "effective_id": 1033,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4085965,
+          "line": 4085966,
+          "original_id": 33,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1033,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4085972,
+          "line": 4085973,
+          "original_id": 33,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          34,
+          34,
+          34,
+          0,
+          34,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1034,
+        "effective_part": 1034,
+        "effective_section": 1034,
+        "keyword_line": 4085991,
+        "line": 4085993,
+        "material_definition": {
+          "effective_id": 1034,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4085981,
+          "line": 4085982,
+          "original_id": 34,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1034,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4085988,
+          "line": 4085989,
+          "original_id": 34,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          35,
+          35,
+          35,
+          0,
+          35,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1035,
+        "effective_part": 1035,
+        "effective_section": 1035,
+        "keyword_line": 4086007,
+        "line": 4086009,
+        "material_definition": {
+          "effective_id": 1035,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4085997,
+          "line": 4085998,
+          "original_id": 35,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1035,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4086004,
+          "line": 4086005,
+          "original_id": 35,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          36,
+          36,
+          36,
+          0,
+          36,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1036,
+        "effective_part": 1036,
+        "effective_section": 1036,
+        "keyword_line": 4086023,
+        "line": 4086025,
+        "material_definition": {
+          "effective_id": 1036,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4086013,
+          "line": 4086014,
+          "original_id": 36,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1036,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4086020,
+          "line": 4086021,
+          "original_id": 36,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          37,
+          37,
+          37,
+          0,
+          37,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1037,
+        "effective_part": 1037,
+        "effective_section": 1037,
+        "keyword_line": 4086039,
+        "line": 4086041,
+        "material_definition": {
+          "effective_id": 1037,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4086029,
+          "line": 4086030,
+          "original_id": 37,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1037,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4086036,
+          "line": 4086037,
+          "original_id": 37,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          38,
+          38,
+          38,
+          0,
+          38,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1038,
+        "effective_part": 1038,
+        "effective_section": 1038,
+        "keyword_line": 4086055,
+        "line": 4086057,
+        "material_definition": {
+          "effective_id": 1038,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4086045,
+          "line": 4086046,
+          "original_id": 38,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1038,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4086052,
+          "line": 4086053,
+          "original_id": 38,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          39,
+          39,
+          39,
+          0,
+          39,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1039,
+        "effective_part": 1039,
+        "effective_section": 1039,
+        "keyword_line": 4086071,
+        "line": 4086073,
+        "material_definition": {
+          "effective_id": 1039,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4086061,
+          "line": 4086062,
+          "original_id": 39,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1039,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4086068,
+          "line": 4086069,
+          "original_id": 39,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          179,
+          179,
+          179,
+          0,
+          179,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1179,
+        "effective_part": 1179,
+        "effective_section": 1179,
+        "keyword_line": 4087367,
+        "line": 4087369,
+        "material_definition": {
+          "effective_id": 1179,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4087357,
+          "line": 4087358,
+          "original_id": 179,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1179,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4087364,
+          "line": 4087365,
+          "original_id": 179,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          702,
+          702,
+          702,
+          0,
+          702,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1702,
+        "effective_part": 1702,
+        "effective_section": 1702,
+        "keyword_line": 4088039,
+        "line": 4088041,
+        "material_definition": {
+          "effective_id": 1702,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088029,
+          "line": 4088030,
+          "original_id": 702,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1702,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088036,
+          "line": 4088037,
+          "original_id": 702,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          703,
+          703,
+          703,
+          0,
+          703,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1703,
+        "effective_part": 1703,
+        "effective_section": 1703,
+        "keyword_line": 4088055,
+        "line": 4088057,
+        "material_definition": {
+          "effective_id": 1703,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088045,
+          "line": 4088046,
+          "original_id": 703,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1703,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088052,
+          "line": 4088053,
+          "original_id": 703,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          711,
+          711,
+          711,
+          0,
+          711,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1711,
+        "effective_part": 1711,
+        "effective_section": 1711,
+        "keyword_line": 4088071,
+        "line": 4088073,
+        "material_definition": {
+          "effective_id": 1711,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088061,
+          "line": 4088062,
+          "original_id": 711,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1711,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088068,
+          "line": 4088069,
+          "original_id": 711,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          712,
+          712,
+          712,
+          0,
+          712,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1712,
+        "effective_part": 1712,
+        "effective_section": 1712,
+        "keyword_line": 4088087,
+        "line": 4088089,
+        "material_definition": {
+          "effective_id": 1712,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088077,
+          "line": 4088078,
+          "original_id": 712,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1712,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088084,
+          "line": 4088085,
+          "original_id": 712,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          713,
+          713,
+          713,
+          0,
+          713,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1713,
+        "effective_part": 1713,
+        "effective_section": 1713,
+        "keyword_line": 4088103,
+        "line": 4088105,
+        "material_definition": {
+          "effective_id": 1713,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088093,
+          "line": 4088094,
+          "original_id": 713,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1713,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088100,
+          "line": 4088101,
+          "original_id": 713,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          722,
+          722,
+          722,
+          0,
+          722,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1722,
+        "effective_part": 1722,
+        "effective_section": 1722,
+        "keyword_line": 4088135,
+        "line": 4088137,
+        "material_definition": {
+          "effective_id": 1722,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088125,
+          "line": 4088126,
+          "original_id": 722,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1722,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088132,
+          "line": 4088133,
+          "original_id": 722,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          723,
+          723,
+          723,
+          0,
+          723,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1723,
+        "effective_part": 1723,
+        "effective_section": 1723,
+        "keyword_line": 4088151,
+        "line": 4088153,
+        "material_definition": {
+          "effective_id": 1723,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088141,
+          "line": 4088142,
+          "original_id": 723,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1723,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088148,
+          "line": 4088149,
+          "original_id": 723,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          731,
+          731,
+          731,
+          0,
+          731,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1731,
+        "effective_part": 1731,
+        "effective_section": 1731,
+        "keyword_line": 4088167,
+        "line": 4088169,
+        "material_definition": {
+          "effective_id": 1731,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088157,
+          "line": 4088158,
+          "original_id": 731,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1731,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088164,
+          "line": 4088165,
+          "original_id": 731,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          732,
+          732,
+          732,
+          0,
+          732,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1732,
+        "effective_part": 1732,
+        "effective_section": 1732,
+        "keyword_line": 4088183,
+        "line": 4088185,
+        "material_definition": {
+          "effective_id": 1732,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088173,
+          "line": 4088174,
+          "original_id": 732,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1732,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088180,
+          "line": 4088181,
+          "original_id": 732,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          733,
+          733,
+          733,
+          0,
+          733,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1733,
+        "effective_part": 1733,
+        "effective_section": 1733,
+        "keyword_line": 4088199,
+        "line": 4088201,
+        "material_definition": {
+          "effective_id": 1733,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088189,
+          "line": 4088190,
+          "original_id": 733,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1733,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088196,
+          "line": 4088197,
+          "original_id": 733,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          741,
+          741,
+          741,
+          0,
+          741,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1741,
+        "effective_part": 1741,
+        "effective_section": 1741,
+        "keyword_line": 4088215,
+        "line": 4088217,
+        "material_definition": {
+          "effective_id": 1741,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088205,
+          "line": 4088206,
+          "original_id": 741,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1741,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088212,
+          "line": 4088213,
+          "original_id": 741,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          742,
+          742,
+          742,
+          0,
+          742,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1742,
+        "effective_part": 1742,
+        "effective_section": 1742,
+        "keyword_line": 4088231,
+        "line": 4088233,
+        "material_definition": {
+          "effective_id": 1742,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088221,
+          "line": 4088222,
+          "original_id": 742,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1742,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088228,
+          "line": 4088229,
+          "original_id": 742,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          743,
+          743,
+          743,
+          0,
+          743,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1743,
+        "effective_part": 1743,
+        "effective_section": 1743,
+        "keyword_line": 4088247,
+        "line": 4088249,
+        "material_definition": {
+          "effective_id": 1743,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088237,
+          "line": 4088238,
+          "original_id": 743,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1743,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088244,
+          "line": 4088245,
+          "original_id": 743,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          751,
+          751,
+          751,
+          0,
+          751,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1751,
+        "effective_part": 1751,
+        "effective_section": 1751,
+        "keyword_line": 4088263,
+        "line": 4088265,
+        "material_definition": {
+          "effective_id": 1751,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088253,
+          "line": 4088254,
+          "original_id": 751,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1751,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088260,
+          "line": 4088261,
+          "original_id": 751,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          752,
+          752,
+          752,
+          0,
+          752,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1752,
+        "effective_part": 1752,
+        "effective_section": 1752,
+        "keyword_line": 4088279,
+        "line": 4088281,
+        "material_definition": {
+          "effective_id": 1752,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088269,
+          "line": 4088270,
+          "original_id": 752,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1752,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088276,
+          "line": 4088277,
+          "original_id": 752,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          753,
+          753,
+          753,
+          0,
+          753,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1753,
+        "effective_part": 1753,
+        "effective_section": 1753,
+        "keyword_line": 4088295,
+        "line": 4088297,
+        "material_definition": {
+          "effective_id": 1753,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088285,
+          "line": 4088286,
+          "original_id": 753,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1753,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088292,
+          "line": 4088293,
+          "original_id": 753,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          761,
+          761,
+          761,
+          0,
+          761,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1761,
+        "effective_part": 1761,
+        "effective_section": 1761,
+        "keyword_line": 4088311,
+        "line": 4088313,
+        "material_definition": {
+          "effective_id": 1761,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088301,
+          "line": 4088302,
+          "original_id": 761,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1761,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088308,
+          "line": 4088309,
+          "original_id": 761,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          762,
+          762,
+          762,
+          0,
+          762,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1762,
+        "effective_part": 1762,
+        "effective_section": 1762,
+        "keyword_line": 4088327,
+        "line": 4088329,
+        "material_definition": {
+          "effective_id": 1762,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088317,
+          "line": 4088318,
+          "original_id": 762,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1762,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088324,
+          "line": 4088325,
+          "original_id": 762,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          763,
+          763,
+          763,
+          0,
+          763,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1763,
+        "effective_part": 1763,
+        "effective_section": 1763,
+        "keyword_line": 4088343,
+        "line": 4088345,
+        "material_definition": {
+          "effective_id": 1763,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088333,
+          "line": 4088334,
+          "original_id": 763,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1763,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088340,
+          "line": 4088341,
+          "original_id": 763,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          772,
+          772,
+          772,
+          0,
+          772,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1772,
+        "effective_part": 1772,
+        "effective_section": 1772,
+        "keyword_line": 4088359,
+        "line": 4088361,
+        "material_definition": {
+          "effective_id": 1772,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088349,
+          "line": 4088350,
+          "original_id": 772,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1772,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088356,
+          "line": 4088357,
+          "original_id": 772,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          773,
+          773,
+          773,
+          0,
+          773,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1773,
+        "effective_part": 1773,
+        "effective_section": 1773,
+        "keyword_line": 4088375,
+        "line": 4088377,
+        "material_definition": {
+          "effective_id": 1773,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088365,
+          "line": 4088366,
+          "original_id": 773,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1773,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088372,
+          "line": 4088373,
+          "original_id": 773,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          782,
+          782,
+          782,
+          0,
+          782,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1782,
+        "effective_part": 1782,
+        "effective_section": 1782,
+        "keyword_line": 4088407,
+        "line": 4088409,
+        "material_definition": {
+          "effective_id": 1782,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088397,
+          "line": 4088398,
+          "original_id": 782,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1782,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088404,
+          "line": 4088405,
+          "original_id": 782,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          783,
+          783,
+          783,
+          0,
+          783,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1783,
+        "effective_part": 1783,
+        "effective_section": 1783,
+        "keyword_line": 4088423,
+        "line": 4088425,
+        "material_definition": {
+          "effective_id": 1783,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088413,
+          "line": 4088414,
+          "original_id": 783,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1783,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088420,
+          "line": 4088421,
+          "original_id": 783,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          792,
+          792,
+          792,
+          0,
+          792,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1792,
+        "effective_part": 1792,
+        "effective_section": 1792,
+        "keyword_line": 4088439,
+        "line": 4088441,
+        "material_definition": {
+          "effective_id": 1792,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088429,
+          "line": 4088430,
+          "original_id": 792,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1792,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088436,
+          "line": 4088437,
+          "original_id": 792,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          793,
+          793,
+          793,
+          0,
+          793,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1793,
+        "effective_part": 1793,
+        "effective_section": 1793,
+        "keyword_line": 4088455,
+        "line": 4088457,
+        "material_definition": {
+          "effective_id": 1793,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088445,
+          "line": 4088446,
+          "original_id": 793,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1793,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088452,
+          "line": 4088453,
+          "original_id": 793,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          802,
+          802,
+          802,
+          0,
+          802,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1802,
+        "effective_part": 1802,
+        "effective_section": 1802,
+        "keyword_line": 4088471,
+        "line": 4088473,
+        "material_definition": {
+          "effective_id": 1802,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088461,
+          "line": 4088462,
+          "original_id": 802,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1802,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088468,
+          "line": 4088469,
+          "original_id": 802,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      },
+      {
+        "card": [
+          803,
+          803,
+          803,
+          0,
+          803,
+          0,
+          0,
+          0
+        ],
+        "effective_material": 1803,
+        "effective_part": 1803,
+        "effective_section": 1803,
+        "keyword_line": 4088487,
+        "line": 4088489,
+        "material_definition": {
+          "effective_id": 1803,
+          "keyword": "MAT_PIECEWISE_LINEAR_PLASTICITY",
+          "keyword_line": 4088477,
+          "line": 4088478,
+          "original_id": 803,
+          "source": 120
+        },
+        "section_definition": {
+          "effective_id": 1803,
+          "keyword": "SECTION_SHELL",
+          "keyword_line": 4088484,
+          "line": 4088485,
+          "original_id": 803,
+          "source": 120
+        },
+        "source": 120,
+        "status": "supplied_part_definition"
+      }
+    ],
+    "summary": {
+      "all_admitted_rows": 11292,
+      "all_class_counts": [
+        8520,
+        36,
+        311,
+        2425
+      ],
+      "epsilon": 9.4869e-09,
+      "extension_sensitivity": [
+        {
+          "cid": 1,
+          "class_transition_counts": [
+            [
+              2840,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              15,
+              0
+            ],
+            [
+              0,
+              2,
+              31,
+              11
+            ],
+            [
+              0,
+              0,
+              21,
+              234
+            ]
+          ],
+          "common_pairs": 3156,
+          "from_setting": 0,
+          "lost_admissions": 0,
+          "new_admissions": 0,
+          "to_setting": 1
+        },
+        {
+          "cid": 1,
+          "class_transition_counts": [
+            [
+              2840,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              13,
+              0
+            ],
+            [
+              0,
+              11,
+              15,
+              18
+            ],
+            [
+              0,
+              0,
+              49,
+              206
+            ]
+          ],
+          "common_pairs": 3156,
+          "from_setting": 0,
+          "lost_admissions": 0,
+          "new_admissions": 0,
+          "to_setting": 2
+        },
+        {
+          "cid": 2,
+          "class_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              11,
+              13
+            ],
+            [
+              0,
+              0,
+              34,
+              550
+            ]
+          ],
+          "common_pairs": 608,
+          "from_setting": 0,
+          "lost_admissions": 0,
+          "new_admissions": 0,
+          "to_setting": 1
+        },
+        {
+          "cid": 2,
+          "class_transition_counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              15,
+              9
+            ],
+            [
+              0,
+              0,
+              39,
+              545
+            ]
+          ],
+          "common_pairs": 608,
+          "from_setting": 0,
+          "lost_admissions": 0,
+          "new_admissions": 0,
+          "to_setting": 2
+        }
+      ],
+      "geometry_warning_counts": [
+        {
+          "near_zero_triangles": 0,
+          "negative_corner_centre_dot": 0,
+          "setting_index": 0,
+          "zero_centre_jacobian_master_records": 0,
+          "zero_corner_centre_dot": 0,
+          "zero_corner_jacobians": 0,
+          "zero_edges": 0,
+          "zero_triangles": 0
+        },
+        {
+          "near_zero_triangles": 0,
+          "negative_corner_centre_dot": 0,
+          "setting_index": 1,
+          "zero_centre_jacobian_master_records": 0,
+          "zero_corner_centre_dot": 0,
+          "zero_corner_jacobians": 0,
+          "zero_edges": 0,
+          "zero_triangles": 0
+        },
+        {
+          "near_zero_triangles": 0,
+          "negative_corner_centre_dot": 0,
+          "setting_index": 2,
+          "zero_centre_jacobian_master_records": 0,
+          "zero_corner_centre_dot": 0,
+          "zero_corner_jacobians": 0,
+          "zero_edges": 0,
+          "zero_triangles": 0
+        }
+      ],
+      "groups": [
+        {
+          "admitted_incident_part_ids": [
+            11,
+            66,
+            773,
+            803,
+            806,
+            820,
+            821,
+            852,
+            855,
+            859,
+            1034,
+            1783,
+            1803
+          ],
+          "admitted_rows": 3156,
+          "broad_phase_excluded_pairs": 108610514,
+          "cid": 1,
+          "complete_pairs": 108613670,
+          "extension_factor": 1.0,
+          "masters_with_zero_admitted_rows": 0,
+          "masters_with_zero_known_nonoutside_rows": 531,
+          "nodes_with_multiple_admitted_master_records": 112,
+          "nodes_with_multiple_known_nonoutside_master_records": 101,
+          "per_class": [
+            {
+              "class": 0,
+              "incident_part_ids": [
+                66
+              ],
+              "nodes_with_multiple_master_records": 4,
+              "rows": 2840,
+              "unique_nodes": 4
+            },
+            {
+              "class": 1,
+              "incident_part_ids": [
+                11,
+                820
+              ],
+              "nodes_with_multiple_master_records": 0,
+              "rows": 17,
+              "unique_nodes": 17
+            },
+            {
+              "class": 2,
+              "incident_part_ids": [
+                11,
+                773,
+                820,
+                821,
+                852,
+                855,
+                1783
+              ],
+              "nodes_with_multiple_master_records": 3,
+              "rows": 44,
+              "unique_nodes": 41
+            },
+            {
+              "class": 3,
+              "incident_part_ids": [
+                11,
+                773,
+                803,
+                806,
+                820,
+                821,
+                852,
+                855,
+                859,
+                1034,
+                1783,
+                1803
+              ],
+              "nodes_with_multiple_master_records": 85,
+              "rows": 255,
+              "unique_nodes": 119
+            }
+          ],
+          "same_effective_part_per_class": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "same_effective_part_rows": 0,
+          "same_node_ID_per_class": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "same_node_ID_rows": 0,
+          "setting_index": 0,
+          "small_inversion_rows": 44,
+          "unique_admitted_nodes": 126,
+          "unique_known_nonoutside_nodes": 122
+        },
+        {
+          "admitted_incident_part_ids": [
+            11,
+            66,
+            773,
+            803,
+            806,
+            820,
+            821,
+            852,
+            855,
+            859,
+            1034,
+            1783,
+            1803
+          ],
+          "admitted_rows": 3156,
+          "broad_phase_excluded_pairs": 108610514,
+          "cid": 1,
+          "complete_pairs": 108613670,
+          "extension_factor": 1.006,
+          "masters_with_zero_admitted_rows": 0,
+          "masters_with_zero_known_nonoutside_rows": 522,
+          "nodes_with_multiple_admitted_master_records": 112,
+          "nodes_with_multiple_known_nonoutside_master_records": 106,
+          "per_class": [
+            {
+              "class": 0,
+              "incident_part_ids": [
+                66
+              ],
+              "nodes_with_multiple_master_records": 4,
+              "rows": 2840,
+              "unique_nodes": 4
+            },
+            {
+              "class": 1,
+              "incident_part_ids": [
+                11
+              ],
+              "nodes_with_multiple_master_records": 0,
+              "rows": 4,
+              "unique_nodes": 4
+            },
+            {
+              "class": 2,
+              "incident_part_ids": [
+                11,
+                773,
+                820,
+                821,
+                852
+              ],
+              "nodes_with_multiple_master_records": 8,
+              "rows": 67,
+              "unique_nodes": 59
+            },
+            {
+              "class": 3,
+              "incident_part_ids": [
+                11,
+                773,
+                803,
+                806,
+                820,
+                821,
+                852,
+                855,
+                859,
+                1034,
+                1783,
+                1803
+              ],
+              "nodes_with_multiple_master_records": 82,
+              "rows": 245,
+              "unique_nodes": 120
+            }
+          ],
+          "same_effective_part_per_class": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "same_effective_part_rows": 0,
+          "same_node_ID_per_class": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "same_node_ID_rows": 0,
+          "setting_index": 1,
+          "small_inversion_rows": 67,
+          "unique_admitted_nodes": 126,
+          "unique_known_nonoutside_nodes": 122
+        },
+        {
+          "admitted_incident_part_ids": [
+            11,
+            66,
+            773,
+            803,
+            806,
+            820,
+            821,
+            852,
+            855,
+            859,
+            1034,
+            1783,
+            1803
+          ],
+          "admitted_rows": 3156,
+          "broad_phase_excluded_pairs": 108610514,
+          "cid": 1,
+          "complete_pairs": 108613670,
+          "extension_factor": 1.025,
+          "masters_with_zero_admitted_rows": 0,
+          "masters_with_zero_known_nonoutside_rows": 529,
+          "nodes_with_multiple_admitted_master_records": 112,
+          "nodes_with_multiple_known_nonoutside_master_records": 98,
+          "per_class": [
+            {
+              "class": 0,
+              "incident_part_ids": [
+                66
+              ],
+              "nodes_with_multiple_master_records": 4,
+              "rows": 2840,
+              "unique_nodes": 4
+            },
+            {
+              "class": 1,
+              "incident_part_ids": [
+                11,
+                820
+              ],
+              "nodes_with_multiple_master_records": 0,
+              "rows": 15,
+              "unique_nodes": 15
+            },
+            {
+              "class": 2,
+              "incident_part_ids": [
+                11,
+                773,
+                803,
+                820,
+                821,
+                852,
+                859,
+                1803
+              ],
+              "nodes_with_multiple_master_records": 5,
+              "rows": 77,
+              "unique_nodes": 72
+            },
+            {
+              "class": 3,
+              "incident_part_ids": [
+                11,
+                773,
+                803,
+                806,
+                820,
+                821,
+                852,
+                855,
+                859,
+                1034,
+                1783,
+                1803
+              ],
+              "nodes_with_multiple_master_records": 61,
+              "rows": 224,
+              "unique_nodes": 118
+            }
+          ],
+          "same_effective_part_per_class": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "same_effective_part_rows": 0,
+          "same_node_ID_per_class": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "same_node_ID_rows": 0,
+          "setting_index": 2,
+          "small_inversion_rows": 77,
+          "unique_admitted_nodes": 126,
+          "unique_known_nonoutside_nodes": 122
+        },
+        {
+          "admitted_incident_part_ids": [
+            12
+          ],
+          "admitted_rows": 608,
+          "broad_phase_excluded_pairs": 4215072,
+          "cid": 2,
+          "complete_pairs": 4215680,
+          "extension_factor": 1.0,
+          "masters_with_zero_admitted_rows": 0,
+          "masters_with_zero_known_nonoutside_rows": 0,
+          "nodes_with_multiple_admitted_master_records": 216,
+          "nodes_with_multiple_known_nonoutside_master_records": 216,
+          "per_class": [
+            {
+              "class": 0,
+              "incident_part_ids": [],
+              "nodes_with_multiple_master_records": 0,
+              "rows": 0,
+              "unique_nodes": 0
+            },
+            {
+              "class": 1,
+              "incident_part_ids": [],
+              "nodes_with_multiple_master_records": 0,
+              "rows": 0,
+              "unique_nodes": 0
+            },
+            {
+              "class": 2,
+              "incident_part_ids": [
+                12
+              ],
+              "nodes_with_multiple_master_records": 0,
+              "rows": 24,
+              "unique_nodes": 24
+            },
+            {
+              "class": 3,
+              "incident_part_ids": [
+                12
+              ],
+              "nodes_with_multiple_master_records": 207,
+              "rows": 584,
+              "unique_nodes": 275
+            }
+          ],
+          "same_effective_part_per_class": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "same_effective_part_rows": 0,
+          "same_node_ID_per_class": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "same_node_ID_rows": 0,
+          "setting_index": 0,
+          "small_inversion_rows": 24,
+          "unique_admitted_nodes": 280,
+          "unique_known_nonoutside_nodes": 280
+        },
+        {
+          "admitted_incident_part_ids": [
+            12
+          ],
+          "admitted_rows": 608,
+          "broad_phase_excluded_pairs": 4215072,
+          "cid": 2,
+          "complete_pairs": 4215680,
+          "extension_factor": 1.006,
+          "masters_with_zero_admitted_rows": 0,
+          "masters_with_zero_known_nonoutside_rows": 0,
+          "nodes_with_multiple_admitted_master_records": 216,
+          "nodes_with_multiple_known_nonoutside_master_records": 216,
+          "per_class": [
+            {
+              "class": 0,
+              "incident_part_ids": [],
+              "nodes_with_multiple_master_records": 0,
+              "rows": 0,
+              "unique_nodes": 0
+            },
+            {
+              "class": 1,
+              "incident_part_ids": [],
+              "nodes_with_multiple_master_records": 0,
+              "rows": 0,
+              "unique_nodes": 0
+            },
+            {
+              "class": 2,
+              "incident_part_ids": [
+                12
+              ],
+              "nodes_with_multiple_master_records": 0,
+              "rows": 45,
+              "unique_nodes": 45
+            },
+            {
+              "class": 3,
+              "incident_part_ids": [
+                12
+              ],
+              "nodes_with_multiple_master_records": 190,
+              "rows": 563,
+              "unique_nodes": 273
+            }
+          ],
+          "same_effective_part_per_class": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "same_effective_part_rows": 0,
+          "same_node_ID_per_class": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "same_node_ID_rows": 0,
+          "setting_index": 1,
+          "small_inversion_rows": 45,
+          "unique_admitted_nodes": 280,
+          "unique_known_nonoutside_nodes": 280
+        },
+        {
+          "admitted_incident_part_ids": [
+            12
+          ],
+          "admitted_rows": 608,
+          "broad_phase_excluded_pairs": 4215072,
+          "cid": 2,
+          "complete_pairs": 4215680,
+          "extension_factor": 1.025,
+          "masters_with_zero_admitted_rows": 0,
+          "masters_with_zero_known_nonoutside_rows": 0,
+          "nodes_with_multiple_admitted_master_records": 216,
+          "nodes_with_multiple_known_nonoutside_master_records": 216,
+          "per_class": [
+            {
+              "class": 0,
+              "incident_part_ids": [],
+              "nodes_with_multiple_master_records": 0,
+              "rows": 0,
+              "unique_nodes": 0
+            },
+            {
+              "class": 1,
+              "incident_part_ids": [],
+              "nodes_with_multiple_master_records": 0,
+              "rows": 0,
+              "unique_nodes": 0
+            },
+            {
+              "class": 2,
+              "incident_part_ids": [
+                12
+              ],
+              "nodes_with_multiple_master_records": 0,
+              "rows": 54,
+              "unique_nodes": 54
+            },
+            {
+              "class": 3,
+              "incident_part_ids": [
+                12
+              ],
+              "nodes_with_multiple_master_records": 187,
+              "rows": 554,
+              "unique_nodes": 271
+            }
+          ],
+          "same_effective_part_per_class": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "same_effective_part_rows": 0,
+          "same_node_ID_per_class": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "same_node_ID_rows": 0,
+          "setting_index": 2,
+          "small_inversion_rows": 54,
+          "unique_admitted_nodes": 280,
+          "unique_known_nonoutside_nodes": 280
+        }
+      ],
+      "masters_with_multiple_aliases": 0,
+      "masters_with_no_aliases": 0,
+      "total_complete_pairs_all_settings": 338488050
+    }
+  }
+}

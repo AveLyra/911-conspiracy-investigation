@@ -1,0 +1,35 @@
+{
+  "argv": [
+    "/opt/homebrew/bin/ffprobe",
+    "-v",
+    "warning",
+    "-select_streams",
+    "v:0",
+    "-show_entries",
+    "stream=index,codec_name,codec_type,width,height,pix_fmt,sample_aspect_ratio,display_aspect_ratio,r_frame_rate,avg_frame_rate,time_base,start_pts,start_time,duration_ts,duration,nb_frames:stream_side_data=side_data_type,rotation,displaymatrix:frame=stream_index,best_effort_timestamp,pts,duration,pkt_duration,width,height,pix_fmt,key_frame,pict_type",
+    "-of",
+    "json",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/tilted-camera-source-join/source/TiltedCameraWTC7Clip.mp4"
+  ],
+  "binary": {
+    "bytes": 351920,
+    "sha256": "fd670257233c93c88608a62ed8b5ddeeb812bd341dfb39bbe0e1c654b91672ad"
+  },
+  "diagnostics": {
+    "returncode": 0,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "media": {
+    "bytes": 7768869,
+    "sha256": "393d76f986d0771c5ec38352bf29470a81a3c685bb8a1c7ea565ceefa334843f"
+  },
+  "producer": {
+    "bytes": 11111,
+    "sha256": "b8d2010b99001dba79d10b887571ffdfa53b13d8b6800f26a1ed4442c11ba0d5"
+  },
+  "protocol": {
+    "bytes": 6413,
+    "sha256": "0bec10bef245cf59d62800dce2c67913da62b90cbb8b42a42d9d9ce2555614e1"
+  }
+}

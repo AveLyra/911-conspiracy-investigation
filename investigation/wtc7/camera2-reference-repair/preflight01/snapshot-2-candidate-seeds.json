@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "baseline_only_proposal_root_visual_and_preflight_pending",
+  "date": "2026-09-11",
+  "scope": "One ordered exploratory replacement candidate for erroneous C2-R3; v1 remains frozen. No additional candidate search within this selection if this candidate fails.",
+  "reviewer": "Computational AI annotator; not human or specialist review.",
+  "independence_limits": "Prior case knowledge, later-frame visual familiarity and v1 review are acknowledged. This selection used only the existing baseline image and its explicitly labeled derivatives. It is not a pristine holdout or retroactive preregistration. No new replacement-reference scores or later-frame images were viewed for selection.",
+  "coordinate_convention": "Zero-based native stored pixel centers, origin upper-left, x right, y down.",
+  "baseline": {
+    "camera": "camera2",
+    "source_id": "VID-WTC7-001",
+    "index": 6593,
+    "path": "../multiview-onset-review/refine01/camera2/f006593.png",
+    "sha256": "39bcb70c16ccc468133edf92b3a9dc9ea43edbc5692d82d8adcfc08cc22903a8",
+    "source_time_seconds_exact": "219767/999",
+    "mode": "L",
+    "stored_size": [640, 480]
+  },
+  "candidates": [
+    {
+      "id": "C2-R7",
+      "xy": [333, 413],
+      "description": "Center of the small bright roughly rectangular roof-edge patch/cap on the lower central foreground building, immediately left of the taller gridded foreground block.",
+      "envelope_halfwidth_xy": [3, 3],
+      "envelope_definition": "Subjective baseline localization envelope in encoded pixels; not a calibrated uncertainty or confidence interval.",
+      "role_limit": "Apparent neighboring-building roof-edge patch, not WTC7. Exact building, component, material point and depth are unauthenticated. The brightness may include a highlight; blur, compression, repeated rooftop texture, background inclusion and differing-depth overlap may alter apparent position or matching. Physical stationarity is an assumption, not a result.",
+      "visual_association": "The proposed center falls within the visible bright patch in the native baseline crop; a separately labeled 5x nearest-neighbor crop brackets that exact source pixel without covering it. It is not the old dark-area coordinate (288,400).",
+      "template_bounds_inclusive_xyxy": {
+        "19": [324, 404, 342, 422],
+        "27": [320, 400, 346, 426]
+      },
+      "selection_basis": "Direct baseline appearance and explicit coordinate-marker correspondence only; no later-frame performance or new numerical gate result used.",
+      "root_visual_review": "pending",
+      "baseline_gate_result": "pending",
+      "later_frame_annotations": "not_started"
+    }
+  ],
+  "selection_rule": "Root may freeze C2-R7 only after separate baseline visual acceptance and unchanged v1 baseline gates pass at BOTH 19x19 and 27x27. No fallback candidates are proposed. If it fails, preserve this bounded failure; do not silently move the center or search further.",
+  "actual_selection_viewing_coverage": {
+    "distinct_native_full_frames": 1,
+    "frame_indices": [6593],
+    "native_resolution_crops": 1,
+    "labeled_grid_derivatives": 1,
+    "labeled_nearest_neighbor_anchor_crops": 1,
+    "later_frame_images": 0,
+    "new_matching_outputs": 0
+  },
+  "derivatives": [
+    {
+      "path": "baseline-central-native-crop.png",
+      "sha256": "a925899a67afc0922238a837508aea8b8fba1897635c151b2e1efd9600dbda32",
+      "transformation": "Exact mode-L crop [240,270,410,440), 170x170 pixels, no resize or contrast adjustment. Derived subset, not an additional source."
+    },
+    {
+      "path": "baseline-central-grid.png",
+      "sha256": "dad02b9732d808adb7a530b1c6437e129f39617afc30019f72d5719a37c208c2",
+      "transformation": "Same crop converted to RGB solely for red 10-pixel grid, coordinate labels and external explanatory white area; 370x200 canvas. Overlay pixels are not historical evidence."
+    },
+    {
+      "path": "baseline-r7-anchor-check.png",
+      "sha256": "0d84d3a4a4d92119680197ed56fb5c158c04b581061cae83a67661bf9e9842fb",
+      "transformation": "Mode-L crop [310,390,355,433) enlarged 5x with nearest-neighbor, converted to RGB for brackets around source pixel (333,413), then pasted into a labeled 460x255 white canvas. No contrast adjustment, interpolation of detail or inferred content; visualization only."
+    }
+  ]
+}

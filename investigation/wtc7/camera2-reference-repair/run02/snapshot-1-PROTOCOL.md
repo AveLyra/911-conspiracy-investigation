@@ -1,0 +1,30 @@
+# Camera 2 reference-selection repair
+
+This exploratory follow-up replaces the confirmed erroneous C2-R3 description/coordinate association from the [first reference diagnostic](../reference-motion/report.md). That entire version remains frozen, including the failure to admit any Camera 2 six-reference transform. Prior images and results are known; this is not a clean holdout or a retrospective claim of preregistration. The [investigation charter](../CHARTER.md) controls research scope.
+
+## Fixed question and change
+
+Can one baseline-reviewed replacement reference, with all other numerical choices unchanged, support a six-reference Camera 2 image map over the same 71 selected frames? This tests whether the earlier inability to fit was specific to the mistaken reference selection. It cannot establish a physically true camera model, calibrated motion of WTC 7, gravitational acceleration or collapse cause.
+
+Only the erroneous reference is replaced. Keep C2-R1, R2, R4, R5 and R6 at their original coordinates, preserve reference ordering with the new ID in R3's former slot, and retain both 19×19 and 27×27 templates, fixed ±24-pixel searches, all quality thresholds, all-six admission, translation/similarity/affine models, rank/conditioning and maximum training/leave-one-out screens. No temporal template update, propagation, interpolation, retiming, automatic outlier exclusion or enlarged search. Use the already reviewed, hash-pinned v1 numerical functions without editing them.
+
+## Baseline selection before new historical scoring
+
+1. The annotator inspects only existing native Camera 2 baseline f6593 for this selection, acknowledging prior familiarity with later images. Propose at most **three ordered** neighboring-building anchors, with new IDs C2-R7/R8/R9, exact integer native coordinates, descriptions, subjective envelopes, and material-identity/depth caveats. Avoid the target building, smoke, moving people/vehicles and vague unnamed regions. Preserve all proposed candidates, including rejected ones.
+2. Generate explicitly labeled baseline markers and both template-size crops without scoring later images. Root must visually check description-to-coordinate association from the native baseline and these derivatives, then record a separate computational-AI visual acceptance/rejection per candidate. This is not human review or surveyed identity. Do not silently repair a candidate coordinate after seeing a score.
+3. Preflight each proposed candidate against the baseline using the **unchanged v1 gates**. Retain complete grids, texture, best/competitor/tie/boundary and every rejection flag for both sizes. Recheck all five retained baseline references too. Select the **first ordered candidate** that has root visual acceptance and passes both template-size baseline gates. If none of the three qualifies, preserve that bounded failure rather than search indefinitely. Preflight success against a construction image does not validate subsequent correspondence.
+4. Freeze the selected six-reference configuration and parent hashes in the completed preflight record before any replacement-reference scoring of later frames. No subsequent candidate or parameter change within this version. Save the actual baseline/selection/procedure/runtime identities. Validate the wrapper's selection, all-six admission and preservation behavior with synthetic controls before historical scoring; earlier tested v1 numerical functions are not a substitute for wrapper checks.
+
+## Historical coverage and independent checks
+
+Use all **71 Camera 2 event selections** from `multiview-onset-review/refine01` (f6593–f7104) with their exact source PTS and preserved native Y pixels. No new decode or other camera rerun. The source and dependency pins must match the first diagnostic, before and after computation. Keep **852 match rows/grids** and **426 model-status rows** per run, including every rejection. Two fresh runs must reproduce deterministic scientific products; preserve any wrapper/runtime failures.
+
+The five unchanged references must reproduce their corresponding v1 candidate records and score grids exactly (ignoring only explicitly new wrapper metadata). This is a regression check, not independent historical corroboration. An independent reviewer recomputes the new reference's complete grids and every admitted transform/leave-one-out prediction through the earlier independent FFT/complex/QR route. Report full-fit and omitted-reference failures, model/size disagreements and sensitivity to the replacement. Do not tune a model or seed to obtain the desired pass count.
+
+Before seeing the new automatic outputs, the annotator reviews the frozen new reference at the same five evaluation frames: **6654, 6751, 6931, 7013 and7104**. Record a subjective coordinate/envelope, ambiguous status or unavailable status, preserving the original five references' observations without silently revalidating them. The ten new size-specific comparisons are not statistical accuracy estimates or a clean holdout. Root and annotator review the fixed baseline/evaluation overlays after scoring, with any later correction explicitly additive.
+
+## Acceptance and consequences
+
+The deliverable is the full preflight/selection record, source-pinned candidate and fit results, failed as well as passing comparisons, independent numerical/manual checks and a bounded interpretation. An unchanged numerical method with a corrected baseline association can legitimately produce different admissibility; report the dependence instead of calling either version a universal result. A shared error or uncalibrated reference plane may still fit perfectly. No fitted transform is applied to a target trajectory or source imagery in this unit.
+
+No new agency-production or separately held packet contents are inspected. No bridge, outreach, case import, canonical promotion, filing, commit or push. Any real software lesson is deduplicated locally under the existing feedback routing/privacy gates. Human/specialist material-point review and physical camera calibration remain separate requirements before consequential kinematic inference.

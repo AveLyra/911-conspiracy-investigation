@@ -1,0 +1,16 @@
+53 
+moment transfer between members. In order to minimize computer analysis time while 
+accurately determining structural response due to a given load, we used substructuring.   
+The WTC 7 connectors may be shear, moment, or semi-rigid connectors that transfer 
+shear and moment. The response of this structure to load is dependent on how loads transfer 
+from the floor to beams, the beams then transfer these loads to the girders, and the girders 
+transfer the loads to the columns. In order to properly simulate the response of this building to 
+load (vertical and horizontal), we needed to account for the behavior of each type of connector. 
+Therefore, we modeled each type of connector in ABAQUS. Figure 2.36 shows connector type 
+“STC” and its response to shear. 
+ 
+ 
+Figure 2.36 Modeling process for a beam to girder shear connector, “STC.” 
+A typical simple shear connector that was used to connect a beam to girders is shown in 
+Figures 2.37 and 2.38. 
+ 

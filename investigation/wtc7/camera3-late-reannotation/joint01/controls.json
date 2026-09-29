@@ -1,0 +1,937 @@
+{
+  "groups": [
+    {
+      "expected": {
+        "constant_interval": [
+          "5",
+          "9"
+        ],
+        "status": "feasible_on_included_samples_only"
+      },
+      "inputs": {
+        "one": [
+          {
+            "A": {
+              "status": "localized",
+              "y": "11",
+              "ymax": "12",
+              "ymin": "10"
+            },
+            "B": {
+              "status": "localized",
+              "y": "4",
+              "ymax": "5",
+              "ymin": "3"
+            },
+            "frame": 1
+          },
+          {
+            "A": {
+              "status": "localized",
+              "y": "16",
+              "ymax": "17",
+              "ymin": "15"
+            },
+            "B": {
+              "status": "localized",
+              "y": "9",
+              "ymax": "10",
+              "ymin": "8"
+            },
+            "frame": 2
+          }
+        ]
+      },
+      "name": "feasible",
+      "pass": true,
+      "result": {
+        "constant": "7",
+        "constant_interval": [
+          "5",
+          "9"
+        ],
+        "included_frames": [
+          1,
+          2
+        ],
+        "joined_inputs": [
+          {
+            "A": [
+              "10",
+              "12"
+            ],
+            "B": [
+              "3",
+              "5"
+            ],
+            "constant_interval": [
+              "5",
+              "9"
+            ],
+            "frame": 1,
+            "source_boxes": {
+              "one": {
+                "A": [
+                  "10",
+                  "12"
+                ],
+                "B": [
+                  "3",
+                  "5"
+                ]
+              }
+            }
+          },
+          {
+            "A": [
+              "15",
+              "17"
+            ],
+            "B": [
+              "8",
+              "10"
+            ],
+            "constant_interval": [
+              "5",
+              "9"
+            ],
+            "frame": 2,
+            "source_boxes": {
+              "one": {
+                "A": [
+                  "15",
+                  "17"
+                ],
+                "B": [
+                  "8",
+                  "10"
+                ]
+              }
+            }
+          }
+        ],
+        "observer_intersection_conflicts": [],
+        "observers": [
+          "one"
+        ],
+        "omitted_frames": [],
+        "selected_frames": [
+          1,
+          2
+        ],
+        "status": "feasible_on_included_samples_only",
+        "witness": [
+          {
+            "A_minus_B": "7",
+            "A_witness_interval": [
+              "10",
+              "12"
+            ],
+            "A_y": "11",
+            "B_y": "4",
+            "frame": 1
+          },
+          {
+            "A_minus_B": "7",
+            "A_witness_interval": [
+              "15",
+              "17"
+            ],
+            "A_y": "16",
+            "B_y": "9",
+            "frame": 2
+          }
+        ],
+        "witness_label": "mathematical_nonhistorical_witness_not_new_observations"
+      },
+      "selected_frames": [
+        1,
+        2
+      ]
+    },
+    {
+      "expected": {
+        "constant_interval": [
+          "18",
+          "9"
+        ],
+        "status": "infeasible_constant_separation_within_supplied_boxes"
+      },
+      "inputs": {
+        "one": [
+          {
+            "A": {
+              "status": "localized",
+              "y": "11",
+              "ymax": "12",
+              "ymin": "10"
+            },
+            "B": {
+              "status": "localized",
+              "y": "4",
+              "ymax": "5",
+              "ymin": "3"
+            },
+            "frame": 1
+          },
+          {
+            "A": {
+              "status": "localized",
+              "y": "41/2",
+              "ymax": "21",
+              "ymin": "20"
+            },
+            "B": {
+              "status": "localized",
+              "y": "3/2",
+              "ymax": "2",
+              "ymin": "1"
+            },
+            "frame": 2
+          }
+        ]
+      },
+      "name": "infeasible",
+      "pass": true,
+      "result": {
+        "constant": null,
+        "constant_interval": [
+          "18",
+          "9"
+        ],
+        "included_frames": [
+          1,
+          2
+        ],
+        "joined_inputs": [
+          {
+            "A": [
+              "10",
+              "12"
+            ],
+            "B": [
+              "3",
+              "5"
+            ],
+            "constant_interval": [
+              "5",
+              "9"
+            ],
+            "frame": 1,
+            "source_boxes": {
+              "one": {
+                "A": [
+                  "10",
+                  "12"
+                ],
+                "B": [
+                  "3",
+                  "5"
+                ]
+              }
+            }
+          },
+          {
+            "A": [
+              "20",
+              "21"
+            ],
+            "B": [
+              "1",
+              "2"
+            ],
+            "constant_interval": [
+              "18",
+              "20"
+            ],
+            "frame": 2,
+            "source_boxes": {
+              "one": {
+                "A": [
+                  "20",
+                  "21"
+                ],
+                "B": [
+                  "1",
+                  "2"
+                ]
+              }
+            }
+          }
+        ],
+        "observer_intersection_conflicts": [],
+        "observers": [
+          "one"
+        ],
+        "omitted_frames": [],
+        "selected_frames": [
+          1,
+          2
+        ],
+        "status": "infeasible_constant_separation_within_supplied_boxes",
+        "witness": [],
+        "witness_label": "mathematical_nonhistorical_witness_not_new_observations"
+      },
+      "selected_frames": [
+        1,
+        2
+      ]
+    },
+    {
+      "expected": {
+        "constant_interval": [
+          "6",
+          "6"
+        ],
+        "status": "feasible_on_included_samples_only"
+      },
+      "inputs": {
+        "one": [
+          {
+            "A": {
+              "status": "localized",
+              "y": "6",
+              "ymax": "7",
+              "ymin": "5"
+            },
+            "B": {
+              "status": "localized",
+              "y": "3/2",
+              "ymax": "2",
+              "ymin": "1"
+            },
+            "frame": 1
+          },
+          {
+            "A": {
+              "status": "localized",
+              "y": "17/2",
+              "ymax": "9",
+              "ymin": "8"
+            },
+            "B": {
+              "status": "localized",
+              "y": "3/2",
+              "ymax": "2",
+              "ymin": "1"
+            },
+            "frame": 2
+          }
+        ]
+      },
+      "name": "touching_bound",
+      "pass": true,
+      "result": {
+        "constant": "6",
+        "constant_interval": [
+          "6",
+          "6"
+        ],
+        "included_frames": [
+          1,
+          2
+        ],
+        "joined_inputs": [
+          {
+            "A": [
+              "5",
+              "7"
+            ],
+            "B": [
+              "1",
+              "2"
+            ],
+            "constant_interval": [
+              "3",
+              "6"
+            ],
+            "frame": 1,
+            "source_boxes": {
+              "one": {
+                "A": [
+                  "5",
+                  "7"
+                ],
+                "B": [
+                  "1",
+                  "2"
+                ]
+              }
+            }
+          },
+          {
+            "A": [
+              "8",
+              "9"
+            ],
+            "B": [
+              "1",
+              "2"
+            ],
+            "constant_interval": [
+              "6",
+              "8"
+            ],
+            "frame": 2,
+            "source_boxes": {
+              "one": {
+                "A": [
+                  "8",
+                  "9"
+                ],
+                "B": [
+                  "1",
+                  "2"
+                ]
+              }
+            }
+          }
+        ],
+        "observer_intersection_conflicts": [],
+        "observers": [
+          "one"
+        ],
+        "omitted_frames": [],
+        "selected_frames": [
+          1,
+          2
+        ],
+        "status": "feasible_on_included_samples_only",
+        "witness": [
+          {
+            "A_minus_B": "6",
+            "A_witness_interval": [
+              "7",
+              "7"
+            ],
+            "A_y": "7",
+            "B_y": "1",
+            "frame": 1
+          },
+          {
+            "A_minus_B": "6",
+            "A_witness_interval": [
+              "8",
+              "8"
+            ],
+            "A_y": "8",
+            "B_y": "2",
+            "frame": 2
+          }
+        ],
+        "witness_label": "mathematical_nonhistorical_witness_not_new_observations"
+      },
+      "selected_frames": [
+        1,
+        2
+      ]
+    },
+    {
+      "expected": "same_constant_interval_and_constant; each_witness_coordinate_shifts_by_declared_translation",
+      "inputs": {
+        "original": {
+          "one": [
+            {
+              "A": {
+                "status": "localized",
+                "y": "11",
+                "ymax": "12",
+                "ymin": "10"
+              },
+              "B": {
+                "status": "localized",
+                "y": "4",
+                "ymax": "5",
+                "ymin": "3"
+              },
+              "frame": 1
+            },
+            {
+              "A": {
+                "status": "localized",
+                "y": "16",
+                "ymax": "17",
+                "ymin": "15"
+              },
+              "B": {
+                "status": "localized",
+                "y": "9",
+                "ymax": "10",
+                "ymin": "8"
+              },
+              "frame": 2
+            }
+          ]
+        },
+        "translated": {
+          "one": [
+            {
+              "A": {
+                "status": "localized",
+                "y": "14",
+                "ymax": "15",
+                "ymin": "13"
+              },
+              "B": {
+                "status": "localized",
+                "y": "7",
+                "ymax": "8",
+                "ymin": "6"
+              },
+              "frame": 1
+            },
+            {
+              "A": {
+                "status": "localized",
+                "y": "9",
+                "ymax": "10",
+                "ymin": "8"
+              },
+              "B": {
+                "status": "localized",
+                "y": "2",
+                "ymax": "3",
+                "ymin": "1"
+              },
+              "frame": 2
+            }
+          ]
+        }
+      },
+      "name": "common_translation",
+      "pass": true,
+      "results": {
+        "original": {
+          "constant": "7",
+          "constant_interval": [
+            "5",
+            "9"
+          ],
+          "included_frames": [
+            1,
+            2
+          ],
+          "joined_inputs": [
+            {
+              "A": [
+                "10",
+                "12"
+              ],
+              "B": [
+                "3",
+                "5"
+              ],
+              "constant_interval": [
+                "5",
+                "9"
+              ],
+              "frame": 1,
+              "source_boxes": {
+                "one": {
+                  "A": [
+                    "10",
+                    "12"
+                  ],
+                  "B": [
+                    "3",
+                    "5"
+                  ]
+                }
+              }
+            },
+            {
+              "A": [
+                "15",
+                "17"
+              ],
+              "B": [
+                "8",
+                "10"
+              ],
+              "constant_interval": [
+                "5",
+                "9"
+              ],
+              "frame": 2,
+              "source_boxes": {
+                "one": {
+                  "A": [
+                    "15",
+                    "17"
+                  ],
+                  "B": [
+                    "8",
+                    "10"
+                  ]
+                }
+              }
+            }
+          ],
+          "observer_intersection_conflicts": [],
+          "observers": [
+            "one"
+          ],
+          "omitted_frames": [],
+          "selected_frames": [
+            1,
+            2
+          ],
+          "status": "feasible_on_included_samples_only",
+          "witness": [
+            {
+              "A_minus_B": "7",
+              "A_witness_interval": [
+                "10",
+                "12"
+              ],
+              "A_y": "11",
+              "B_y": "4",
+              "frame": 1
+            },
+            {
+              "A_minus_B": "7",
+              "A_witness_interval": [
+                "15",
+                "17"
+              ],
+              "A_y": "16",
+              "B_y": "9",
+              "frame": 2
+            }
+          ],
+          "witness_label": "mathematical_nonhistorical_witness_not_new_observations"
+        },
+        "translated": {
+          "constant": "7",
+          "constant_interval": [
+            "5",
+            "9"
+          ],
+          "included_frames": [
+            1,
+            2
+          ],
+          "joined_inputs": [
+            {
+              "A": [
+                "13",
+                "15"
+              ],
+              "B": [
+                "6",
+                "8"
+              ],
+              "constant_interval": [
+                "5",
+                "9"
+              ],
+              "frame": 1,
+              "source_boxes": {
+                "one": {
+                  "A": [
+                    "13",
+                    "15"
+                  ],
+                  "B": [
+                    "6",
+                    "8"
+                  ]
+                }
+              }
+            },
+            {
+              "A": [
+                "8",
+                "10"
+              ],
+              "B": [
+                "1",
+                "3"
+              ],
+              "constant_interval": [
+                "5",
+                "9"
+              ],
+              "frame": 2,
+              "source_boxes": {
+                "one": {
+                  "A": [
+                    "8",
+                    "10"
+                  ],
+                  "B": [
+                    "1",
+                    "3"
+                  ]
+                }
+              }
+            }
+          ],
+          "observer_intersection_conflicts": [],
+          "observers": [
+            "one"
+          ],
+          "omitted_frames": [],
+          "selected_frames": [
+            1,
+            2
+          ],
+          "status": "feasible_on_included_samples_only",
+          "witness": [
+            {
+              "A_minus_B": "7",
+              "A_witness_interval": [
+                "13",
+                "15"
+              ],
+              "A_y": "14",
+              "B_y": "7",
+              "frame": 1
+            },
+            {
+              "A_minus_B": "7",
+              "A_witness_interval": [
+                "8",
+                "10"
+              ],
+              "A_y": "9",
+              "B_y": "2",
+              "frame": 2
+            }
+          ],
+          "witness_label": "mathematical_nonhistorical_witness_not_new_observations"
+        }
+      },
+      "selected_frames": [
+        1,
+        2
+      ],
+      "translations": [
+        "3",
+        "-7"
+      ]
+    },
+    {
+      "cases": [
+        {
+          "expected_empty_feature": "A",
+          "inputs": {
+            "one": [
+              {
+                "A": {
+                  "status": "localized",
+                  "y": "21/2",
+                  "ymax": "11",
+                  "ymin": "10"
+                },
+                "B": {
+                  "status": "localized",
+                  "y": "4",
+                  "ymax": "5",
+                  "ymin": "3"
+                },
+                "frame": 1
+              }
+            ],
+            "two": [
+              {
+                "A": {
+                  "status": "localized",
+                  "y": "25/2",
+                  "ymax": "13",
+                  "ymin": "12"
+                },
+                "B": {
+                  "status": "localized",
+                  "y": "4",
+                  "ymax": "5",
+                  "ymin": "3"
+                },
+                "frame": 1
+              }
+            ]
+          },
+          "pass": true,
+          "result": {
+            "constant": null,
+            "constant_interval": null,
+            "included_frames": [
+              1
+            ],
+            "joined_inputs": [
+              {
+                "A": [
+                  "12",
+                  "11"
+                ],
+                "B": [
+                  "3",
+                  "5"
+                ],
+                "constant_interval": null,
+                "frame": 1,
+                "source_boxes": {
+                  "one": {
+                    "A": [
+                      "10",
+                      "11"
+                    ],
+                    "B": [
+                      "3",
+                      "5"
+                    ]
+                  },
+                  "two": {
+                    "A": [
+                      "12",
+                      "13"
+                    ],
+                    "B": [
+                      "3",
+                      "5"
+                    ]
+                  }
+                }
+              }
+            ],
+            "observer_intersection_conflicts": [
+              {
+                "empty_intersection": [
+                  "12",
+                  "11"
+                ],
+                "feature": "A",
+                "frame": 1
+              }
+            ],
+            "observers": [
+              "one",
+              "two"
+            ],
+            "omitted_frames": [],
+            "selected_frames": [
+              1
+            ],
+            "status": "rejected_empty_observer_intersection",
+            "witness": [],
+            "witness_label": "mathematical_nonhistorical_witness_not_new_observations"
+          },
+          "selected_frames": [
+            1
+          ]
+        },
+        {
+          "expected_empty_feature": "B",
+          "inputs": {
+            "one": [
+              {
+                "A": {
+                  "status": "localized",
+                  "y": "21/2",
+                  "ymax": "11",
+                  "ymin": "10"
+                },
+                "B": {
+                  "status": "localized",
+                  "y": "4",
+                  "ymax": "5",
+                  "ymin": "3"
+                },
+                "frame": 1
+              }
+            ],
+            "two": [
+              {
+                "A": {
+                  "status": "localized",
+                  "y": "21/2",
+                  "ymax": "11",
+                  "ymin": "10"
+                },
+                "B": {
+                  "status": "localized",
+                  "y": "13/2",
+                  "ymax": "7",
+                  "ymin": "6"
+                },
+                "frame": 1
+              }
+            ]
+          },
+          "pass": true,
+          "result": {
+            "constant": null,
+            "constant_interval": null,
+            "included_frames": [
+              1
+            ],
+            "joined_inputs": [
+              {
+                "A": [
+                  "10",
+                  "11"
+                ],
+                "B": [
+                  "6",
+                  "5"
+                ],
+                "constant_interval": null,
+                "frame": 1,
+                "source_boxes": {
+                  "one": {
+                    "A": [
+                      "10",
+                      "11"
+                    ],
+                    "B": [
+                      "3",
+                      "5"
+                    ]
+                  },
+                  "two": {
+                    "A": [
+                      "10",
+                      "11"
+                    ],
+                    "B": [
+                      "6",
+                      "7"
+                    ]
+                  }
+                }
+              }
+            ],
+            "observer_intersection_conflicts": [
+              {
+                "empty_intersection": [
+                  "6",
+                  "5"
+                ],
+                "feature": "B",
+                "frame": 1
+              }
+            ],
+            "observers": [
+              "one",
+              "two"
+            ],
+            "omitted_frames": [],
+            "selected_frames": [
+              1
+            ],
+            "status": "rejected_empty_observer_intersection",
+            "witness": [],
+            "witness_label": "mathematical_nonhistorical_witness_not_new_observations"
+          },
+          "selected_frames": [
+            1
+          ]
+        }
+      ],
+      "name": "empty_observer_intersection",
+      "pass": true
+    }
+  ],
+  "label": "fully_retained_synthetic_interval_fixtures_not_historical_inputs",
+  "pass": true
+}

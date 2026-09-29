@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-09-13",
+  "allocated_query_cap": 4,
+  "queries_used": 3,
+  "queries": [
+    {"id":"Q1","query":"\"Thompson\" \"Axial, shear and moment interaction\" thesis"},
+    {"id":"Q2","query":"\"Thompson\" \"2009\" \"shear tab\" site:msoe.tind.io"},
+    {"id":"Q3","query":"\"MSST_Thompson_2009.pdf\""}
+  ],
+  "routes": [
+    {
+      "url":"https://msoe.tind.io/record/979?ln=en&p=%28+%28keyword%3A%22Strength+of+materials%22%29%29",
+      "method":"web search result",
+      "outcome":"Indexed institutional metadata available",
+      "finding":"Exact title, Scott L.Thompson, May2009, MSOE, individual research-download rights and linked PDF filename"
+    },
+    {
+      "url":"https://msoe.tind.io/record/979",
+      "method":"web open",
+      "outcome":"403 Forbidden",
+      "finding":"Direct record retrieval unavailable through this route"
+    },
+    {
+      "url":"https://msoe.tind.io/record/979/files/MSST_Thompson_2009.pdf",
+      "method":"curl --fail --location --silent --show-error --max-time 60; scoped approved public retrieval",
+      "outcome":"HTTP202; text/html;charset=UTF-8; 0 downloaded bytes; terminal exit0",
+      "artifact":"msoe-tind-empty-response.bin",
+      "finding":"An exit0 response was not a usable PDF; zero bytes preserved and excluded from PDF inventory"
+    },
+    {
+      "url":"https://msoe.tind.io/record/979/files/MSST_Thompson_2009.pdf",
+      "method":"web open",
+      "outcome":"403 Forbidden",
+      "finding":"No PDF from this route"
+    },
+    {
+      "url":"https://milwaukee.ent.sirsi.net/client/en_US/default/search/detailnonmodal/ent%3A%24002f%24002fSD_ASSET%24002f0%24002fSD_ASSET%3A901/one?isd=true&qf=PUBDATE%09Date%092009%092009&te=ASSET",
+      "method":"web search result",
+      "outcome":"Indexed institutional library catalog metadata available",
+      "finding":"Exact same title/author, May2009, 9.51MB filename, MSOE publisher, institutional repository source, explicit asset URL and individual research-use rights"
+    },
+    {
+      "url":"https://milwaukee.ent.sirsi.net/client/en_US/search/asset/901/0",
+      "method":"curl --fail --location --silent --show-error --max-time 60; scoped approved public retrieval",
+      "outcome":"HTTP200; application/pdf; 9973961 downloaded bytes; terminal exit0",
+      "artifact":"MSST_Thompson_2009-sirsi.pdf",
+      "finding":"Exact original acquired; independent local hash/PDF structure check and complete title-page inspection followed"
+    }
+  ],
+  "stopping_condition":"Exact original acquired from primary institutional catalog; no further external search needed",
+  "excluded_routes":"No login, paid access, outreach, unofficial replacement, signature-page display, private material or access-control bypass",
+  "not_a_second_study":"Repeated institutional metadata and catalog aliases refer to one source family; unsuccessful TIND PDF bytes cannot be compared to Sirsi PDF bytes"
+}

@@ -1,0 +1,354 @@
+{
+  "allowlisted_probe": {
+    "format": {
+      "duration": "781.300000",
+      "size": "124393041",
+      "start_time": "0.000000"
+    },
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "avg_frame_rate": "30/1",
+        "chroma_location": "left",
+        "codec_name": "h264",
+        "codec_type": "video",
+        "color_primaries": "bt709",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "display_aspect_ratio": "16:9",
+        "duration": "781.300000",
+        "field_order": "progressive",
+        "height": 720,
+        "index": 0,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "sample_aspect_ratio": "1:1",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "time_base": "1/15360",
+        "width": 1280
+      }
+    ]
+  },
+  "category": "decode_diagnostic_review",
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,avg_frame_rate,r_frame_rate,time_base,start_pts,start_time,duration,nb_frames,field_order,sample_aspect_ratio,display_aspect_ratio,color_range,color_space,color_transfer,color_primaries,chroma_location:format=duration,start_time,size:stream_tags=:stream_disposition=:format_tags=:stream_side_data=",
+        "-of",
+        "json",
+        "/Users/admin/docs/911/research/wtc7-video-comparison/media/compilations/WTC Building 7 Collapse - 27 Angles [cmp7rV2aZhM].f136.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "probe.stderr",
+      "stdout": "probe.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,width,height:frame_tags=:frame_side_data=",
+        "-of",
+        "compact=p=0:nk=0",
+        "/Users/admin/docs/911/research/wtc7-video-comparison/media/compilations/WTC Building 7 Collapse - 27 Angles [cmp7rV2aZhM].f136.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "frame-inventory.stderr",
+      "stdout": "frame-inventory.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-nostats",
+        "-loglevel",
+        "level+info",
+        "-n",
+        "-copyts",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911/research/wtc7-video-comparison/media/compilations/WTC Building 7 Collapse - 27 Angles [cmp7rV2aZhM].f136.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-map_metadata",
+        "-1",
+        "-map_chapters",
+        "-1",
+        "-vf",
+        "select='eq(n,0)+eq(n,450)+eq(n,900)+eq(n,1350)+eq(n,1800)+eq(n,2250)+eq(n,2700)+eq(n,3150)+eq(n,3600)+eq(n,4050)+eq(n,4500)+eq(n,4950)+eq(n,5400)+eq(n,5850)+eq(n,6300)+eq(n,6750)+eq(n,7200)+eq(n,7650)+eq(n,8100)+eq(n,8550)+eq(n,9000)+eq(n,9450)+eq(n,9900)+eq(n,10350)+eq(n,10800)+eq(n,11250)+eq(n,11700)+eq(n,12150)+eq(n,12600)+eq(n,13050)+eq(n,13500)+eq(n,13950)+eq(n,14400)+eq(n,14850)+eq(n,15300)+eq(n,15750)+eq(n,16200)+eq(n,16650)+eq(n,17100)+eq(n,17550)+eq(n,18000)+eq(n,18450)+eq(n,18900)+eq(n,19350)+eq(n,19800)+eq(n,20250)+eq(n,20700)+eq(n,21150)+eq(n,21600)+eq(n,22050)+eq(n,22500)+eq(n,22950)+eq(n,23400)',showinfo",
+        "-noautoscale",
+        "-pix_fmt",
+        "rgb24",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base:v",
+        "demux",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-video-lineage/run01-VID-WTC7-006/VID-WTC7-006/native/frame-%06d.png"
+      ],
+      "returncode": 0,
+      "stderr": "decode.stderr",
+      "stdout": "decode.stdout"
+    }
+  ],
+  "coverage": {
+    "decoded_frame_count": 23439,
+    "empty_bins_within_observed_range": [],
+    "first_source_pts": 0,
+    "frame_count_per_occupied_bin": [
+      {
+        "bin": 0,
+        "frames": 450
+      },
+      {
+        "bin": 1,
+        "frames": 450
+      },
+      {
+        "bin": 2,
+        "frames": 450
+      },
+      {
+        "bin": 3,
+        "frames": 450
+      },
+      {
+        "bin": 4,
+        "frames": 450
+      },
+      {
+        "bin": 5,
+        "frames": 450
+      },
+      {
+        "bin": 6,
+        "frames": 450
+      },
+      {
+        "bin": 7,
+        "frames": 450
+      },
+      {
+        "bin": 8,
+        "frames": 450
+      },
+      {
+        "bin": 9,
+        "frames": 450
+      },
+      {
+        "bin": 10,
+        "frames": 450
+      },
+      {
+        "bin": 11,
+        "frames": 450
+      },
+      {
+        "bin": 12,
+        "frames": 450
+      },
+      {
+        "bin": 13,
+        "frames": 450
+      },
+      {
+        "bin": 14,
+        "frames": 450
+      },
+      {
+        "bin": 15,
+        "frames": 450
+      },
+      {
+        "bin": 16,
+        "frames": 450
+      },
+      {
+        "bin": 17,
+        "frames": 450
+      },
+      {
+        "bin": 18,
+        "frames": 450
+      },
+      {
+        "bin": 19,
+        "frames": 450
+      },
+      {
+        "bin": 20,
+        "frames": 450
+      },
+      {
+        "bin": 21,
+        "frames": 450
+      },
+      {
+        "bin": 22,
+        "frames": 450
+      },
+      {
+        "bin": 23,
+        "frames": 450
+      },
+      {
+        "bin": 24,
+        "frames": 450
+      },
+      {
+        "bin": 25,
+        "frames": 450
+      },
+      {
+        "bin": 26,
+        "frames": 450
+      },
+      {
+        "bin": 27,
+        "frames": 450
+      },
+      {
+        "bin": 28,
+        "frames": 450
+      },
+      {
+        "bin": 29,
+        "frames": 450
+      },
+      {
+        "bin": 30,
+        "frames": 450
+      },
+      {
+        "bin": 31,
+        "frames": 450
+      },
+      {
+        "bin": 32,
+        "frames": 450
+      },
+      {
+        "bin": 33,
+        "frames": 450
+      },
+      {
+        "bin": 34,
+        "frames": 450
+      },
+      {
+        "bin": 35,
+        "frames": 450
+      },
+      {
+        "bin": 36,
+        "frames": 450
+      },
+      {
+        "bin": 37,
+        "frames": 450
+      },
+      {
+        "bin": 38,
+        "frames": 450
+      },
+      {
+        "bin": 39,
+        "frames": 450
+      },
+      {
+        "bin": 40,
+        "frames": 450
+      },
+      {
+        "bin": 41,
+        "frames": 450
+      },
+      {
+        "bin": 42,
+        "frames": 450
+      },
+      {
+        "bin": 43,
+        "frames": 450
+      },
+      {
+        "bin": 44,
+        "frames": 450
+      },
+      {
+        "bin": 45,
+        "frames": 450
+      },
+      {
+        "bin": 46,
+        "frames": 450
+      },
+      {
+        "bin": 47,
+        "frames": 450
+      },
+      {
+        "bin": 48,
+        "frames": 450
+      },
+      {
+        "bin": 49,
+        "frames": 450
+      },
+      {
+        "bin": 50,
+        "frames": 450
+      },
+      {
+        "bin": 51,
+        "frames": 450
+      },
+      {
+        "bin": 52,
+        "frames": 39
+      }
+    ],
+    "last_source_pts": 12000256,
+    "observed_bin_range": [
+      0,
+      52
+    ],
+    "occupied_bin_count": 53,
+    "range_note": "No inference about bins before first or after last decoded frame; empty internal bins are not filled."
+  },
+  "exception_type": "CheckError",
+  "phase": "decode",
+  "source": {
+    "bytes": 124393041,
+    "id": "VID-WTC7-006",
+    "path": "/Users/admin/docs/911/research/wtc7-video-comparison/media/compilations/WTC Building 7 Collapse - 27 Angles [cmp7rV2aZhM].f136.mp4",
+    "sha256": "1ea6063dac3847ee01969987bcee66991056d85ad61839ec301fb888a4456d87",
+    "step_seconds": 15
+  },
+  "source_after": {
+    "bytes": 124393041,
+    "sha256": "1ea6063dac3847ee01969987bcee66991056d85ad61839ec301fb888a4456d87"
+  },
+  "source_after_matches_pin": true,
+  "source_before": {
+    "bytes": 124393041,
+    "sha256": "1ea6063dac3847ee01969987bcee66991056d85ad61839ec301fb888a4456d87"
+  },
+  "source_id": "VID-WTC7-006",
+  "status": "failed"
+}
