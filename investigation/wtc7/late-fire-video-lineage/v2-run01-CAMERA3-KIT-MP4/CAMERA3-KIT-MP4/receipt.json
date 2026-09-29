@@ -1,0 +1,354 @@
+{
+  "allowlisted_probe": {
+    "format": {
+      "duration": "29.533311",
+      "size": "3996436",
+      "start_time": "0.000000"
+    },
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "avg_frame_rate": "15/1",
+        "chroma_location": "left",
+        "codec_name": "h264",
+        "codec_type": "video",
+        "color_primaries": "smpte170m",
+        "color_range": "tv",
+        "color_space": "smpte170m",
+        "color_transfer": "smpte170m",
+        "display_aspect_ratio": "3:2",
+        "duration": "29.533268",
+        "field_order": "progressive",
+        "height": 480,
+        "index": 0,
+        "nb_frames": "443",
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "15/1",
+        "sample_aspect_ratio": "1:1",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "time_base": "1/15360",
+        "width": 720
+      },
+      {
+        "avg_frame_rate": "0/0",
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "duration": "29.533311",
+        "index": 1,
+        "nb_frames": "1273",
+        "r_frame_rate": "0/0",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "time_base": "1/44100"
+      }
+    ]
+  },
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,avg_frame_rate,r_frame_rate,time_base,start_pts,start_time,duration,nb_frames,field_order,sample_aspect_ratio,display_aspect_ratio,color_range,color_space,color_transfer,color_primaries,chroma_location:format=duration,start_time,size:stream_tags=:stream_disposition=:format_tags=:stream_side_data=",
+        "-of",
+        "json",
+        "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera3-provenance/kit-inventory/run-v1/outer/The Kit/WTC7-Camera 3/Camera3.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "probe.stderr",
+      "stdout": "probe.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,width,height:frame_tags=:frame_side_data=",
+        "-of",
+        "compact=p=0:nk=0",
+        "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera3-provenance/kit-inventory/run-v1/outer/The Kit/WTC7-Camera 3/Camera3.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "frame-inventory.stderr",
+      "stdout": "frame-inventory.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-nostats",
+        "-loglevel",
+        "level+info",
+        "-n",
+        "-copyts",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera3-provenance/kit-inventory/run-v1/outer/The Kit/WTC7-Camera 3/Camera3.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-map_metadata",
+        "-1",
+        "-map_chapters",
+        "-1",
+        "-vf",
+        "select='eq(n,0)+eq(n,30)+eq(n,60)+eq(n,90)+eq(n,120)+eq(n,150)+eq(n,180)+eq(n,210)+eq(n,240)+eq(n,270)+eq(n,300)+eq(n,330)+eq(n,360)+eq(n,390)+eq(n,420)',showinfo",
+        "-noautoscale",
+        "-pix_fmt",
+        "rgb24",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base:v",
+        "demux",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-video-lineage/v2-run01-CAMERA3-KIT-MP4/CAMERA3-KIT-MP4/native/frame-%06d.png"
+      ],
+      "returncode": 0,
+      "stderr": "decode.stderr",
+      "stdout": "decode.stdout"
+    }
+  ],
+  "coverage": {
+    "decoded_frame_count": 443,
+    "empty_bins_within_observed_range": [],
+    "first_source_pts": 0,
+    "frame_count_per_occupied_bin": [
+      {
+        "bin": 0,
+        "frames": 30
+      },
+      {
+        "bin": 1,
+        "frames": 30
+      },
+      {
+        "bin": 2,
+        "frames": 30
+      },
+      {
+        "bin": 3,
+        "frames": 30
+      },
+      {
+        "bin": 4,
+        "frames": 30
+      },
+      {
+        "bin": 5,
+        "frames": 30
+      },
+      {
+        "bin": 6,
+        "frames": 30
+      },
+      {
+        "bin": 7,
+        "frames": 30
+      },
+      {
+        "bin": 8,
+        "frames": 30
+      },
+      {
+        "bin": 9,
+        "frames": 30
+      },
+      {
+        "bin": 10,
+        "frames": 30
+      },
+      {
+        "bin": 11,
+        "frames": 30
+      },
+      {
+        "bin": 12,
+        "frames": 30
+      },
+      {
+        "bin": 13,
+        "frames": 30
+      },
+      {
+        "bin": 14,
+        "frames": 23
+      }
+    ],
+    "last_source_pts": 452608,
+    "observed_bin_range": [
+      0,
+      14
+    ],
+    "occupied_bin_count": 15,
+    "range_note": "No inference about bins before first or after last decoded frame; empty internal bins are not filled.",
+    "recognized_terminal_delimiter_records": 1
+  },
+  "diagnostic_summary": {
+    "reviewed_software_colorspace_fallback_notices": 13,
+    "unreviewed_warning_or_error_count": 0
+  },
+  "overview_sheets": [
+    {
+      "bytes": 621690,
+      "path": "overview/sheet-0000.png",
+      "sample_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "sha256": "d30f9eeba0fe65ea477c9b64637342d6e5dec15f14fdf4c1ca580b2185b05c3c"
+    },
+    {
+      "bytes": 168009,
+      "path": "overview/sheet-0001.png",
+      "sample_indices": [
+        12,
+        13,
+        14
+      ],
+      "sha256": "34a8a49228bc691638afc41320512d23f216ae34e62e279b9382956020dcb547"
+    }
+  ],
+  "products": {
+    "decode.stderr": {
+      "bytes": 11575,
+      "sha256": "71c3bf1e5e213ce2f480c8b13e4124d7752207eea522ce4bbbc1fe18ef19c398"
+    },
+    "decode.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frame-inventory.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frame-inventory.stdout": {
+      "bytes": 14066,
+      "sha256": "61a54dc649d4a3cb7e7cd9d562a5ad173729534896de5d20fb0892ef8497ceb6"
+    },
+    "frames.json": {
+      "bytes": 6206,
+      "sha256": "6bff96be58f0b6e0809c3b578e6b1463bf3ebf3e3d96748c2c48c824b4d30eca"
+    },
+    "native/frame-000001.png": {
+      "bytes": 31736,
+      "sha256": "2c567ad4336065874bc3716786c906f68aa9a77aaca571cb6c7793379559621c"
+    },
+    "native/frame-000002.png": {
+      "bytes": 74741,
+      "sha256": "424c3ee7ee03a821e196d9fd48451414e1e19149c4a7e97b154d0c3b20f6f337"
+    },
+    "native/frame-000003.png": {
+      "bytes": 80379,
+      "sha256": "df9f3a56b820a200855b22227810a4694a6010223255d72a839ec14d878ab6c6"
+    },
+    "native/frame-000004.png": {
+      "bytes": 76848,
+      "sha256": "8aca726120705c59a282ce903a64b2689411989285de5f0a9d72316b50b4d729"
+    },
+    "native/frame-000005.png": {
+      "bytes": 76249,
+      "sha256": "f8c7925e813f0bc8407058e613f502a088a8e5a67c165c9ab4bfe86451e42180"
+    },
+    "native/frame-000006.png": {
+      "bytes": 280501,
+      "sha256": "9c9757c4b7d5fe325b9a8c0d25721e7b63d48d0fc51806c7b07c2a6a73edfa3c"
+    },
+    "native/frame-000007.png": {
+      "bytes": 284780,
+      "sha256": "6643b4fd84edf22e58f2ac65007ceeae0876490c58c5ed94f0bfaf6328cd42f6"
+    },
+    "native/frame-000008.png": {
+      "bytes": 288712,
+      "sha256": "32c14655e50a52b76dea60c7b98b792d32cffb15e9cbc3335f8b9ec5b54cd4cb"
+    },
+    "native/frame-000009.png": {
+      "bytes": 294124,
+      "sha256": "280fab6df4911545c10aeea4e84ce31298a11a10a08c19e8be0f76379155000b"
+    },
+    "native/frame-000010.png": {
+      "bytes": 293178,
+      "sha256": "1eb33c3ad39eff3d2c1bd2aebdb4de860df7eb7b0e95fb0d416a0d23fd19f5ee"
+    },
+    "native/frame-000011.png": {
+      "bytes": 292327,
+      "sha256": "9a15c46cef9a9c903320b047da435fea353778091e399d656a956855f362424a"
+    },
+    "native/frame-000012.png": {
+      "bytes": 256703,
+      "sha256": "bdbe8181e542da6a29d4e7baf40b7df9c948978af7380635a4df0d25ca500c77"
+    },
+    "native/frame-000013.png": {
+      "bytes": 226257,
+      "sha256": "c4129907227a882725315b7816958348c97635dfe9f594683a7d7c94f4253a36"
+    },
+    "native/frame-000014.png": {
+      "bytes": 208233,
+      "sha256": "b3470fc072a83d55f1234d9dbe809844b7435b6f005eddebbe0f8996039cb508"
+    },
+    "native/frame-000015.png": {
+      "bytes": 204623,
+      "sha256": "e89a4fbc75581dcfae213d75646639e7d65a8d1eee5e436379920599c70d2cee"
+    },
+    "overview/sheet-0000.png": {
+      "bytes": 621690,
+      "sha256": "d30f9eeba0fe65ea477c9b64637342d6e5dec15f14fdf4c1ca580b2185b05c3c"
+    },
+    "overview/sheet-0001.png": {
+      "bytes": 168009,
+      "sha256": "34a8a49228bc691638afc41320512d23f216ae34e62e279b9382956020dcb547"
+    },
+    "planned-frames.json": {
+      "bytes": 3541,
+      "sha256": "625b8a75c91869ca910a39d353c0736ec97213bb45db9513f2b928e124b310e2"
+    },
+    "probe.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "probe.stdout": {
+      "bytes": 1326,
+      "sha256": "0a99e0719cb89f72b561720b486aa0ba23525d803028c6820024ce6a561e5b7b"
+    },
+    "start.json": {
+      "bytes": 406,
+      "sha256": "278a63fa8fb25af0d05c71627065912758944fb3856c2af0671f0caf09c112b7"
+    }
+  },
+  "sample_count": 15,
+  "source": {
+    "bytes": 3996436,
+    "id": "CAMERA3-KIT-MP4",
+    "path": "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera3-provenance/kit-inventory/run-v1/outer/The Kit/WTC7-Camera 3/Camera3.mp4",
+    "sha256": "4ecc57a5dd23b56c7ec0368a309889f38fcd762fd4769a580e0e3c6ea379fe98",
+    "step_seconds": 2
+  },
+  "source_after": {
+    "bytes": 3996436,
+    "sha256": "4ecc57a5dd23b56c7ec0368a309889f38fcd762fd4769a580e0e3c6ea379fe98"
+  },
+  "source_before": {
+    "bytes": 3996436,
+    "sha256": "4ecc57a5dd23b56c7ec0368a309889f38fcd762fd4769a580e0e3c6ea379fe98"
+  },
+  "source_id": "CAMERA3-KIT-MP4",
+  "status": "completed"
+}

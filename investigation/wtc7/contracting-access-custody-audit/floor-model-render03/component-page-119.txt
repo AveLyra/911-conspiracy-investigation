@@ -1,0 +1,40 @@
+  Full Floor Subsystem 
+NIST NCSTAR 1-6C, WTC Investigation 71  
+Elastic BEAM44 elements were used to model the exterior columns.  Elastic SHELL63 elements were 
+used to model the spandrel. 
+A camber of 2.0 in. at midspan was not included in the truss model.   
+5.4.2 Failure Modes 
+Two possible failure modes were identified for the truss model: 
+Sagging of Truss: The top and bottom chords and web diagonals were exposed to the hot gas layer that 
+accumulated below the floor slab.  The steel in the truss exhibited stiffness degradation, yield strength 
+reduction, plastic softening, and creep at high temperatures.  A truss with softened chords and diagonals 
+would sag.  As the concrete slab was heated, its stiffness and strength were reduced, especially at its 
+bottom layer where temperatures were the highest due to exposure to hot gas and around the knuckles 
+where concrete temperature rose by conduction through the steel. 
+In addition to direct thermal effects, sagging and weakening of the truss were caused by the following 
+component failures: 
+• Buckling of web diagonal members, 
+• Yielding of the chord members, 
+• Knuckle failure and loss of composite action between the concrete slab and the steel truss 
+(see Section 5.3), and/or 
+• Weld failure between the web diagonal members and the chord members. 
+Loss of Truss Support: The truss can fail by loss of support.  Loss of support at either the exterior or 
+interior truss seats was caused by the loss of vertical shear capacity of the seats at elevated temperatures 
+or by the truss walking-off the seat due to large sagging. 
+As discussed in Section 5.4.3, the bottom chord of the truss model was restrained in the direction 
+transverse to the truss at the bridging truss locations.  Although the out-of-plane deformation of the 
+bottom chord due to thermal expansion of bridging trusses may result in a reduction of the vertical load 
+capacity of a primary truss, the use of symmetry in the truss model prevents its application to cases with 
+lateral loads.  The interaction between the bridging trusses and the primary trusses was captured in the full 
+floor model. 
+5.4.3 Boundary Conditions 
+Boundary conditions for the truss model are shown in Fig. 5–26. 
+The entire top chord of the truss was restrained against lateral movement in the x direction.  The bottom 
+chord was restrained against lateral movement in the x direction at four bridging truss locations.  The two 
+edges of the concrete slab parallel to the truss were restrained against rotations about the y and z axes, but 
+were free in the x direction. 
+The interior truss seat was fixed in all directions.  The exterior truss seat was attached to the spandrel.  
+The truss was supported by break elements to capture failure modes of the truss seats, and break elements 
+were connected to beam elements representing the seats. 
+The exterior end of the slab was tied to the spandrel by contact elements to prevent the slab from 
+penetrating the spandrel and break elements representing tension and shear failures of the spandrel stud.  

@@ -1,0 +1,83 @@
+{
+  "receipt": {
+    "code_sha256": "f29bd685260fcc86d9b5cc64aebfb81ee7d05ced716e6f6064ba537a0486ac07",
+    "command": [
+      "research/sherlock-wtc7-investigation/material-run-crosswalk/verify_materials.py",
+      "--compare",
+      "--output",
+      "independent-comparison03.json"
+    ],
+    "controls": {
+      "groups": [
+        "fixed_blanks",
+        "csv_blanks",
+        "adjacent_fullwidth",
+        "decimal_precision",
+        "numeric_label_rejection",
+        "csv_extra_fields",
+        "duplicate_metadata",
+        "namespace_zero",
+        "blank_title_and_unused",
+        "definition_reference_offset",
+        "shell_pair",
+        "missing_shell_continuation",
+        "duplicate_element",
+        "beam_discrete_candidates",
+        "unsupported_element_family"
+      ],
+      "passed": 15
+    },
+    "core_sha256": "4caa98ce70e5eb78125052da7ee97c42e3aac415fe25a28dcf66a1a77072fca2",
+    "peak_rss_bytes": 41844736,
+    "protocol_sha256": "4406af3500c495adc95edd1c86e07901f73e6cafa43a39bfc57a8920c34c552a",
+    "python": "3.12.14",
+    "seconds": 0.10309587500523776,
+    "status": "PASS"
+  },
+  "result": {
+    "core_sha256": "4caa98ce70e5eb78125052da7ee97c42e3aac415fe25a28dcf66a1a77072fca2",
+    "counts_including_root_repeat": {
+      "boolean_checks": 1600,
+      "list_checks": 6264,
+      "mapping_checks": 5377,
+      "null_checks": 13295,
+      "numeric_scalar_checks": 57873,
+      "value_checks": 14518
+    },
+    "coverage": {
+      "damage_matches": 1904,
+      "full_material_blocks": 20,
+      "full_part_cards": 47,
+      "full_section_blocks": 24,
+      "part_reference_rows": 459,
+      "source_receipts": 4,
+      "used_part_family_rows": 392
+    },
+    "failures": [],
+    "independent_comparison_counts": {
+      "boolean_checks": 812,
+      "list_checks": 2601,
+      "mapping_checks": 552,
+      "null_checks": 6472,
+      "numeric_scalar_checks": 25227,
+      "value_checks": 6371
+    },
+    "limits": [
+      "No new source-body read in this adapter. The frozen independent source pass is the reconstruction.",
+      "All 459 part PID/SEC/MID references and 47 selected complete PART cards are compared; remaining original PART property slots were not retained independently.",
+      "The 23 extra outside SECTION blocks and four extra outside MAT blocks are retained independently but have no full-card counterpart in root run01.",
+      "Root curve_inventory numeric arrays and curve field semantics were not independently extracted in this unit; repeat equality is not independent source verification.",
+      "Title hashes are not equated when their byte recipes differ; numeric cards and source locators are the comparison authority.",
+      "Static namespace/card agreement does not authenticate a historical run, authorize substitution or establish physical behavior."
+    ],
+    "max_absolute_numeric_error": "0",
+    "pins": {
+      "independent01.json": "1cd998cff02b9cf4e947339fa1efbdaf1ae8bb6703fa644a61bab8ca26416a3c",
+      "map_materials.py": "dede959bc9f440b6b0bab8784e8c8b7c7a461cd7bcfef820487b3ff2538bc469",
+      "run01.json": "b69c12ec0668c9bdf5f5ea59dbf483d2a959de7bd477c172efe69c2f03e33594",
+      "run02.json": "7663fa0b97ea7f3177aca68de215115db77b499da97530250d382d0214b129b3"
+    },
+    "status": "PASS_COMPARABLE_SCOPE",
+    "title_hash_recipe_differences": []
+  }
+}

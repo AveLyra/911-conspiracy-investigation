@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Native-pixel review — provisional mapping aid</title>
+  <style>
+    :root { color-scheme: light; font: 16px/1.45 system-ui, sans-serif; color: #18232d; background: #f4f6f8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 1rem; }
+    main { max-width: 1440px; margin: auto; }
+    h1 { font-size: 1.4rem; margin: 0 0 .4rem; }
+    p { margin: .4rem 0 .8rem; }
+    .caution { padding: .7rem; border-left: 4px solid #9b6111; background: #fff5dd; }
+    .controls { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: .8rem 0; }
+    select, button { font: inherit; padding: .35rem .6rem; }
+    button[aria-pressed="true"] { background: #16496b; color: white; }
+    :focus-visible { outline: 3px solid #bc4d00; outline-offset: 3px; }
+    #readout { display: block; position: sticky; top: 0; z-index: 10; background: #f4f6f8; padding: .4rem .6rem; min-height: 2rem; font: 600 1.1rem/1.7 ui-monospace, monospace; }
+    #load-status[data-error="true"] { color: #a31414; font-weight: bold; }
+    #viewport { height: min(68vh, 800px); min-height: 300px; overflow: auto; padding: 0; border: 2px solid #657581; background: #25333e; }
+    #stage { position: relative; width: 1280px; padding: 0; border: 0; }
+    #native-image { display: block; width: 100%; height: auto; margin: 0; padding: 0; border: 0; max-width: none; image-rendering: pixelated; user-select: none; }
+    #marker { position: absolute; width: 19px; height: 19px; transform: translate(-50%, -50%); pointer-events: none; border: 1px solid #00ffff; border-radius: 50%; box-shadow: 0 0 0 1px #111; }
+    #marker::before, #marker::after { content: ""; position: absolute; background: #00ffff; box-shadow: 0 0 0 1px #111; }
+    #marker::before { width: 1px; height: 7px; left: 8px; top: -7px; }
+    #marker::after { height: 1px; width: 7px; top: 8px; left: -7px; }
+    [hidden] { display: none !important; }
+    details { margin-top: .8rem; }
+    dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: .25rem 1rem; }
+    dt { font-weight: 600; } dd { margin: 0; overflow-wrap: anywhere; }
+    code { font-family: ui-monospace, monospace; overflow-wrap: anywhere; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; vertical-align: top; padding: .45rem; border-bottom: 1px solid #b8c5cf; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Native-pixel review</h1>
+  <p class="caution">Read-only mapping aid. No human review or historical measurement is accepted by this page. Image pixels are not physical coordinates. Frozen observations are unchanged; this page saves nothing.</p>
+  <div class="controls">
+    <label for="frame">Image</label>
+    <select id="frame">
+      <option value="control">Synthetic coordinate control — not evidence</option>
+      <option value="239">Frame 239 — baseline</option>
+      <option value="434">Frame 434</option>
+      <option value="441">Frame 441</option>
+      <option value="442">Frame 442</option>
+      <option value="443">Frame 443</option>
+      <option value="444">Frame 444</option>
+    </select>
+    <span id="zoom-label">Display size</span>
+    <div role="group" aria-labelledby="zoom-label">
+      <button type="button" data-zoom="fit" aria-pressed="true">Fit</button>
+      <button type="button" data-zoom="1" aria-pressed="false">100%</button>
+      <button type="button" data-zoom="2" aria-pressed="false">200%</button>
+    </div>
+    <button type="button" id="clear">Clear point (Escape)</button>
+  </div>
+  <p id="instructions">Hover to read a native pixel. Click to lock a point, then use arrow keys to move it one native pixel at a time (clamped at the image edges). Fit can skip native rows or columns when pointing with the mouse; use 100%/200% or arrow keys for exact pixels. Escape clears it. Origin is upper-left: x = 0–1279, y = 0–719, increasing right/down. Zoom or scroll does not change a locked point. Changing image clears it. No autosave, download, export, or acceptance action.</p>
+  <p id="load-status" role="status" aria-live="polite">Loading image…</p>
+  <output id="readout" aria-live="polite" aria-atomic="true">Coordinates unavailable while loading.</output>
+  <div id="viewport" tabindex="0" role="region" aria-label="Image review area; click a point then use arrow keys" aria-describedby="instructions">
+    <div id="stage">
+      <img id="native-image" alt="Image loading" draggable="false" hidden>
+      <span id="marker" aria-hidden="true" hidden></span>
+    </div>
+  </div>
+  <details open>
+    <summary>Selected image and source metadata</summary>
+    <dl>
+      <dt>Kind</dt><dd id="kind"></dd>
+      <dt>Source index / output ordinal</dt><dd id="index"></dd>
+      <dt>Encoded clock</dt><dd id="clock"></dd>
+      <dt>PNG bytes / native dimensions</dt><dd id="dimensions"></dd>
+      <dt>Expected PNG SHA-256</dt><dd><code id="hash"></code></dd>
+      <dt>Source video SHA-256</dt><dd><code id="source-hash"></code></dd>
+    </dl>
+    <p>These expected hashes and clock joins come from the fixed source check, not an in-browser authentication test. Historical times are encoded PTS coordinates, not verified camera exposure times. The historical video is a project-attributed platform access copy, not an authenticated camera original.</p>
+  </details>
+  <details open>
+    <summary>Feature identities (no prefilled coordinates)</summary>
+    <table>
+      <thead><tr><th scope="col">Feature</th><th scope="col">Identity to review</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">R1</th><td>Leftmost high-rise roof/wall vertex tied to the left façade edge and its mullions.</td></tr>
+        <tr><th scope="row">B1</th><td>Freestanding sign's upper-left structural trim corner, not lettering.</td></tr>
+        <tr><th scope="row">B2</th><td>Low right-side building's exposed upper-left roof/wall corner; small and partly screened. Neither usability nor stationarity is assumed.</td></tr>
+        <tr><th scope="row">Synthetic A/B/C</th><td>Top-left outer corner of each labeled shape. For rooflike A, the left vertical/sloping-edge junction, not the higher roof bend.</td></tr>
+      </tbody>
+    </table>
+    <p>Review feature identity and uncertainty separately from coordinate readability. If the intended corner cannot be identified, retain that uncertainty; do not replace it with a nearby edge. This tool does not calculate historical displacement, motion, or cause.</p>
+  </details>
+</main>
+<script type="module" src="/coordinate.js"></script>
+</body>
+</html>

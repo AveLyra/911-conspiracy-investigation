@@ -1,0 +1,40 @@
+ 13 
+exposed surface of the slab was assumed to have an overspray of SFRM of about 19 
+mm based on experimental evidence to this effect. Note that the profiled steel metal 
+deck was not specifically modeled since the metal deck is only 0.9 mm thick, while 
+the slab is about 130 mm thick. Moreover, Lamont’s [12] results did not show a 
+significant difference in the temperature prediction in the slab when a metal deck was 
+specifically modeled in comparison with the case when the metal deck was not 
+included. Therefore, as a first approximation, a uniform thickness of concrete slab 
+was constructed over the steel trusses (see Figure 7 and 8 ). Also, the protrusion of the 
+web members above the top chord was not included. The FE model numerically 
+solves the conservation of the equation of energy in general form as shown below: 
+𝜌 𝐶𝑝  (𝜕𝑇
+𝜕𝑡 +  𝑣⃗ . ∇𝑇) + ∇ . 𝑞⃗  =  𝑄̇                                 (1) 
+where, ρ is the density, Cp is the specific heat capacity, T (x, y, z, t) is the temperature, 
+t is the time, 𝑣⃗ is the velocity vector, 𝑞⃗ is the heat flux vector, and 𝑄̇  is the heat source 
+term. The FE model of the composite floor assembly was developed using 3-D solid 
+thermal elements (SOLID 70 element in ANSYS), which have eight nodes with a 
+single degree of freedom (temperature) at each node. SOLID70 element has a 3-D 
+thermal conduction capability. One major assumption when using this element is that 
+temperature is considered to vary linearly in this element and so, the shape functions 
+show linear variation in temperature. This element can be used for solving both 
+steady state and transient heat transfer problems. Thermophysical property data (e.g., 
+specific heat, enthalpy etc.) are evaluated at each integration point to allow for abrupt 
+changes in behavior. The following are the assumptions associated with the use of 
+this element: a) when convective heat transfer is described using this element, the 
+film coefficient is evaluated at average of element and ambient temperature, b) 
+element coordinate system is parallel to the global coordinate system, and c) mass 
+transfer effects are not considered. The truss upper chords and lower chords were 
+connected with the web members using conduction link elements (Link 33 element in 
+ANSYS). These are uniaxial elements that can be used to model the transient heat 
+transfer between the end nodes. The use of link elements allows the web diagonals to 
+be meshed independently of the upper and lower chords and resulted in the minimum 
+possible volumes in the model. Figures 7 and 8 show the FE model in detail. Note 
+that adequate numbers of elements had to be used through the depth of each material 
+to ensure that at least two free nodes existed at each section and that steep thermal 
+gradients, if any, are handled correctly in the model. 
+During fire exposure, heat exchange occurs by both convection and radiation. At 
+higher temperatures, radiation plays a more dominant role in thermal exchange. The 
+convective heat exchange is addressed by the Newtonian heating/cooling mechanism. 
+The radiative heat exchange is defined by the Stefan-Boltzmann law, which includes 

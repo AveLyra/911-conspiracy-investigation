@@ -1,0 +1,793 @@
+{
+  "command": [
+    "research/sherlock-wtc7-investigation/camera2-target-trackability/verify_target.py",
+    "--historical",
+    "run01",
+    "run02",
+    "--calculation-controls",
+    "calc-controls03",
+    "--source-root",
+    "/Users/admin/docs/911",
+    "--out",
+    "research/sherlock-wtc7-investigation/camera2-target-trackability/verification-root01.json"
+  ],
+  "historical": {
+    "all_files_byte_identical": true,
+    "comparison_tolerance": {
+      "absolute": 1e-08,
+      "relative": 1e-10,
+      "scope": "Numeric arithmetic comparisons only; statuses/row order/fields/annotations exact. Not a physical uncertainty interval."
+    },
+    "coverage": {
+      "between_targets": 34,
+      "comparisons": 34,
+      "first_selected_downward": 4,
+      "mapped": 408,
+      "raw": 68
+    },
+    "first_selected_downward": [
+      {
+        "annotator": "root",
+        "downward_enclosure": [
+          2.0,
+          14.0
+        ],
+        "first_selected_frame": 6946,
+        "meaning": "First selected appearance-displacement interval wholly downward; not first physical motion or an onset bracket.",
+        "preceding_scheduled_sample": {
+          "annotator": "root",
+          "displacement": {
+            "center_xy": [
+              -1,
+              2
+            ],
+            "enclosure_xy": [
+              [
+                -7.0,
+                5.0
+              ],
+              [
+                -4.0,
+                8.0
+              ]
+            ],
+            "self_baseline": false
+          },
+          "frame": 6931,
+          "observation": {
+            "correspondence": "appearance_consistent",
+            "frame": 6931,
+            "halfwidth_xy": [
+              3,
+              3
+            ],
+            "localization": "localized",
+            "note": "Outer corner remains distinct; small nominal image shift is not yet separated from localization envelopes.",
+            "target": "C2-T1",
+            "xy": [
+              453,
+              158
+            ]
+          },
+          "seconds_exact": "231034/999",
+          "target": "C2-T1"
+        },
+        "seconds_exact": "694600/2997",
+        "target": "C2-T1"
+      },
+      {
+        "annotator": "root",
+        "downward_enclosure": [
+          1.0,
+          15.0
+        ],
+        "first_selected_frame": 6931,
+        "meaning": "First selected appearance-displacement interval wholly downward; not first physical motion or an onset bracket.",
+        "preceding_scheduled_sample": {
+          "annotator": "root",
+          "displacement": {
+            "center_xy": [
+              -1,
+              2
+            ],
+            "enclosure_xy": [
+              [
+                -7.0,
+                5.0
+              ],
+              [
+                -4.0,
+                8.0
+              ]
+            ],
+            "self_baseline": false
+          },
+          "frame": 6916,
+          "observation": {
+            "correspondence": "appearance_consistent",
+            "frame": 6916,
+            "halfwidth_xy": [
+              3,
+              3
+            ],
+            "localization": "localized",
+            "note": "Short step is still visible; its upper corner is softer and nominally slightly lower within the envelope.",
+            "target": "C2-T2",
+            "xy": [
+              423,
+              146
+            ]
+          },
+          "seconds_exact": "691603/2997",
+          "target": "C2-T2"
+        },
+        "seconds_exact": "231034/999",
+        "target": "C2-T2"
+      },
+      {
+        "annotator": "separate",
+        "downward_enclosure": [
+          2.0,
+          14.0
+        ],
+        "first_selected_frame": 6946,
+        "meaning": "First selected appearance-displacement interval wholly downward; not first physical motion or an onset bracket.",
+        "preceding_scheduled_sample": {
+          "annotator": "separate",
+          "displacement": {
+            "center_xy": [
+              -1,
+              2
+            ],
+            "enclosure_xy": [
+              [
+                -7.0,
+                5.0
+              ],
+              [
+                -4.0,
+                8.0
+              ]
+            ],
+            "self_baseline": false
+          },
+          "frame": 6931,
+          "observation": {
+            "correspondence": "appearance_consistent",
+            "frame": 6931,
+            "halfwidth_xy": [
+              3,
+              3
+            ],
+            "localization": "localized",
+            "note": "The target's outer upper corner remains a distinct junction with the long right exterior boundary; local blur limits the center.",
+            "target": "C2-T1",
+            "xy": [
+              453,
+              158
+            ]
+          },
+          "seconds_exact": "231034/999",
+          "target": "C2-T1"
+        },
+        "seconds_exact": "694600/2997",
+        "target": "C2-T1"
+      },
+      {
+        "annotator": "separate",
+        "first_selected_frame": null,
+        "meaning": "No selected eligible downward interval found; not evidence of no motion.",
+        "target": "C2-T2"
+      }
+    ],
+    "historical_producer_imported": false,
+    "independent_oracle": "Fraction exact box/subtraction/closed-form 2x2 inverse at all corners; analytic condition formula; exhaustive supporting-edge hull; independent eligibility/comparison/selected-sample construction.",
+    "map_status_counts": {
+      "annotation_not_eligible": 138,
+      "computed_conditional_image_map": 229,
+      "stored_map_not_admitted": 41
+    },
+    "mapped_records_with_baseline_extrapolation": 229,
+    "mapped_records_with_current_extrapolation": 177,
+    "producer_controls": {
+      "passed": 14,
+      "receipt": {
+        "bytes": 1710,
+        "sha256": "3f3cbcd7f7e86184e45d94c67e439ebeff94a98b1c5dabdb44562b0d5d9e9b76"
+      },
+      "scope": "calc-controls03"
+    },
+    "runs": [
+      {
+        "files_including_receipt": 13,
+        "listed_products": 12,
+        "receipt": {
+          "bytes": 5634,
+          "sha256": "1ae4d3bbfc2c8c1d70849a769ed057ea6705bba2c62720322f6c51b90f546d5b"
+        },
+        "scope": "run01"
+      },
+      {
+        "files_including_receipt": 13,
+        "listed_products": 12,
+        "receipt": {
+          "bytes": 5634,
+          "sha256": "1ae4d3bbfc2c8c1d70849a769ed057ea6705bba2c62720322f6c51b90f546d5b"
+        },
+        "scope": "run02"
+      }
+    ],
+    "scope": "All released result arithmetic and byte lineage; no visual reannotation, material identity, calibration, continuous onset, acceleration or cause.",
+    "source_pins": {
+      "/Users/admin/.pyenv/versions/3.13.7/bin/python3": {
+        "bytes": 33816,
+        "sha256": "7d29600aa971dfd764a15b113d5964b1e74a18176a6b70cb31646d45e9e5018e"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-reference-repair/run01/preflight-selection.json": {
+        "bytes": 2862,
+        "sha256": "1615cf412019ea9e15d116e20007966890238c3beb68e54abfa5a08666db8fae"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-reference-repair/run01/receipt.json": {
+        "bytes": 23921,
+        "sha256": "d2b8ae21b6fe3b0190538142b1db37be9f5a31b80d581d5ac6c39e90a952f320"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-reference-repair/run01/transforms.json": {
+        "bytes": 828500,
+        "sha256": "b9667302dcc758a5b66e040e74561d80a2d2d43c4fda87d5816142efeb6c683d"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/CALCULATION-CONTRACT.md": {
+        "bytes": 3585,
+        "sha256": "0e723d512950d37b1aa28238d8d4e209c7b2c1e2c74675b262cd8d6d7a39bdae"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/PROTOCOL.md": {
+        "bytes": 9294,
+        "sha256": "a5c8382402a1afec577b6e1d3c862b0d1a4bd4bac0f5511d5983547686eaf934"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/analyze.py": {
+        "bytes": 18957,
+        "sha256": "ac495eecb98845cf5a11cd6d27161cd051ea367cc7cb6a9e186b57329ef10ed6"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/annotation-release.json": {
+        "bytes": 1072,
+        "sha256": "8331cdcffc3b4c1d3eeecac8c85361e05d7026b4310dafd3d932635a6970bcde"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/annotator-annotations.json": {
+        "bytes": 23962,
+        "sha256": "885b9ca6ef2d762efe44ada1572e56962f81e7e53452f903471949c8e3eeeb2a"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/calc-controls03/receipt.json": {
+        "bytes": 1710,
+        "sha256": "3f3cbcd7f7e86184e45d94c67e439ebeff94a98b1c5dabdb44562b0d5d9e9b76"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/present01/detail.json": {
+        "bytes": 15486,
+        "sha256": "9ae284c756b7b8ae18665ac1b41e97fd442c5f4f38bcd3959438b18c5bdd844a"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/present01/receipt.json": {
+        "bytes": 9449,
+        "sha256": "7ca7abe5bc9d67511213a627a5ae65b1e506952b88896f780779d5fbf7c63f29"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/root-annotations.json": {
+        "bytes": 13771,
+        "sha256": "1a6e6b4dc0b34b9f0e33746cc6a568c137311e65493c7e612cd5fa3f3eb72e0f"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/CALCULATION-CONTRACT.md": {
+        "bytes": 3585,
+        "sha256": "0e723d512950d37b1aa28238d8d4e209c7b2c1e2c74675b262cd8d6d7a39bdae"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/PROTOCOL.md": {
+        "bytes": 9294,
+        "sha256": "a5c8382402a1afec577b6e1d3c862b0d1a4bd4bac0f5511d5983547686eaf934"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/analyze.py": {
+        "bytes": 18957,
+        "sha256": "ac495eecb98845cf5a11cd6d27161cd051ea367cc7cb6a9e186b57329ef10ed6"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/initial.json": {
+        "bytes": 1100,
+        "sha256": "48928ea35d9aabb66e26a3b413e0f52b4332dd33159e0576b292c018cb84890c"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/input-0-selection.json": {
+        "bytes": 1821,
+        "sha256": "bd87f75f8a0677aa9e8edbf62d0f868eb341088d838c6ec3e3358f36f897190c"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/input-1-targets-proposal.json": {
+        "bytes": 7142,
+        "sha256": "2951157fd8e8c1fb929f71562f578abcddf7c4c7119f4e6136f3cf74065d6a20"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/input-2-root-annotations.json": {
+        "bytes": 13771,
+        "sha256": "1a6e6b4dc0b34b9f0e33746cc6a568c137311e65493c7e612cd5fa3f3eb72e0f"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/input-3-annotator-annotations.json": {
+        "bytes": 23962,
+        "sha256": "885b9ca6ef2d762efe44ada1572e56962f81e7e53452f903471949c8e3eeeb2a"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/input-4-annotation-release.json": {
+        "bytes": 1072,
+        "sha256": "8331cdcffc3b4c1d3eeecac8c85361e05d7026b4310dafd3d932635a6970bcde"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/input-5-receipt.json": {
+        "bytes": 9449,
+        "sha256": "7ca7abe5bc9d67511213a627a5ae65b1e506952b88896f780779d5fbf7c63f29"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/input-6-detail.json": {
+        "bytes": 15486,
+        "sha256": "9ae284c756b7b8ae18665ac1b41e97fd442c5f4f38bcd3959438b18c5bdd844a"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/receipt.json": {
+        "bytes": 5634,
+        "sha256": "1ae4d3bbfc2c8c1d70849a769ed057ea6705bba2c62720322f6c51b90f546d5b"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run01/result.json": {
+        "bytes": 492771,
+        "sha256": "96165709df9e6c876631c518e10844297f24d1356fbcee60b4566c30ce59ffaa"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/CALCULATION-CONTRACT.md": {
+        "bytes": 3585,
+        "sha256": "0e723d512950d37b1aa28238d8d4e209c7b2c1e2c74675b262cd8d6d7a39bdae"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/PROTOCOL.md": {
+        "bytes": 9294,
+        "sha256": "a5c8382402a1afec577b6e1d3c862b0d1a4bd4bac0f5511d5983547686eaf934"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/analyze.py": {
+        "bytes": 18957,
+        "sha256": "ac495eecb98845cf5a11cd6d27161cd051ea367cc7cb6a9e186b57329ef10ed6"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/initial.json": {
+        "bytes": 1100,
+        "sha256": "48928ea35d9aabb66e26a3b413e0f52b4332dd33159e0576b292c018cb84890c"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/input-0-selection.json": {
+        "bytes": 1821,
+        "sha256": "bd87f75f8a0677aa9e8edbf62d0f868eb341088d838c6ec3e3358f36f897190c"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/input-1-targets-proposal.json": {
+        "bytes": 7142,
+        "sha256": "2951157fd8e8c1fb929f71562f578abcddf7c4c7119f4e6136f3cf74065d6a20"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/input-2-root-annotations.json": {
+        "bytes": 13771,
+        "sha256": "1a6e6b4dc0b34b9f0e33746cc6a568c137311e65493c7e612cd5fa3f3eb72e0f"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/input-3-annotator-annotations.json": {
+        "bytes": 23962,
+        "sha256": "885b9ca6ef2d762efe44ada1572e56962f81e7e53452f903471949c8e3eeeb2a"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/input-4-annotation-release.json": {
+        "bytes": 1072,
+        "sha256": "8331cdcffc3b4c1d3eeecac8c85361e05d7026b4310dafd3d932635a6970bcde"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/input-5-receipt.json": {
+        "bytes": 9449,
+        "sha256": "7ca7abe5bc9d67511213a627a5ae65b1e506952b88896f780779d5fbf7c63f29"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/input-6-detail.json": {
+        "bytes": 15486,
+        "sha256": "9ae284c756b7b8ae18665ac1b41e97fd442c5f4f38bcd3959438b18c5bdd844a"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/receipt.json": {
+        "bytes": 5634,
+        "sha256": "1ae4d3bbfc2c8c1d70849a769ed057ea6705bba2c62720322f6c51b90f546d5b"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/run02/result.json": {
+        "bytes": 492771,
+        "sha256": "96165709df9e6c876631c518e10844297f24d1356fbcee60b4566c30ce59ffaa"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/selection.json": {
+        "bytes": 1821,
+        "sha256": "bd87f75f8a0677aa9e8edbf62d0f868eb341088d838c6ec3e3358f36f897190c"
+      },
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-target-trackability/targets-proposal.json": {
+        "bytes": 7142,
+        "sha256": "2951157fd8e8c1fb929f71562f578abcddf7c4c7119f4e6136f3cf74065d6a20"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/PROTOCOL.md": {
+        "bytes": 6152,
+        "sha256": "78e62afcb9803340f8a7677024e3545183fdb8c8d6c0ea6d05719086b76323b9"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/candidate-seeds.json": {
+        "bytes": 4373,
+        "sha256": "b093c5041ca34b5e1e27b617cc681f46cbd0327c6c525bec89faf43f7991078e"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/preflight01/receipt.json": {
+        "bytes": 5218,
+        "sha256": "8fea3c45f64ecf96aefa2c329d0f322a20d03ec42daea80bef9fad49706318b6"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/preflight01/selection.json": {
+        "bytes": 2862,
+        "sha256": "1615cf412019ea9e15d116e20007966890238c3beb68e54abfa5a08666db8fae"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/repair.py": {
+        "bytes": 15700,
+        "sha256": "092ca6057a5f3ecbfa96bd4968bee9f1e681fb8e7b50c66ff724f65139d33b18"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/test_repair.py": {
+        "bytes": 7454,
+        "sha256": "149534a21922ab4a185f482dbfd6b0675e446a0b4613924235513d171ede06e3"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/visual-review.json": {
+        "bytes": 1272,
+        "sha256": "8f83c82435f8a6a2ddcdbc27aac48e7aab50bf6706feb1d2c2b2d9acebb9e623"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006593.png": {
+        "bytes": 124462,
+        "sha256": "39bcb70c16ccc468133edf92b3a9dc9ea43edbc5692d82d8adcfc08cc22903a8"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006594.png": {
+        "bytes": 124154,
+        "sha256": "2521fe15e7b68e26038fda039eb84b7ceff316eb6cabadc0b62d5e2d1201051a"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006601.png": {
+        "bytes": 125279,
+        "sha256": "5a96534763adb6a7c0b4e877e4a88211dfb89f12e32d757742596517b7894d69"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006609.png": {
+        "bytes": 123477,
+        "sha256": "88a9b550db28f1fe2a7d2cd7cd825e8378122ba09e33dd35d88cd94f30cf24aa"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006616.png": {
+        "bytes": 121758,
+        "sha256": "34fbc8f69064ec7636f40ef2c2da38b1d246875da733690a204d590245dc4c61"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006624.png": {
+        "bytes": 122435,
+        "sha256": "48b52e17296c26ee352e9d9000b57dec773b539bac82475a32352cfa34577deb"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006631.png": {
+        "bytes": 125529,
+        "sha256": "02a7c9615854f018107d4749080d6ae70728d45346681d215fe0e8101787da58"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006639.png": {
+        "bytes": 124413,
+        "sha256": "f95422e9d65bba7f36f71664e761fc2e7c2f747b834b4928b2d8ef674520c278"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006646.png": {
+        "bytes": 123608,
+        "sha256": "ee491e5002a06effc886d361e4cd3e14a394f2b134cd008880ce85950fad9afa"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006654.png": {
+        "bytes": 123506,
+        "sha256": "c3419f9ff17ea265a4e0375a4c0d9f70f16c1df36d5c5dd008439118bea8d8e6"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006661.png": {
+        "bytes": 124469,
+        "sha256": "a0184df9fe0c15e3415a9ba42114553acf43ec3719571208b732f7e82cfd2436"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006669.png": {
+        "bytes": 123726,
+        "sha256": "7723d19915438e495ed17ca39e108c7d78fe8476e425424236475177826c17e9"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006676.png": {
+        "bytes": 123648,
+        "sha256": "89a585c9419c36c3cfda89d83a9cc49e0b3893e457086d26dcfa151a628bdd0a"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006684.png": {
+        "bytes": 123737,
+        "sha256": "a6fd4e2a3fba169a68e1e010fe2129cc942bddf19db5ca6c8f84327b56ad2678"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006691.png": {
+        "bytes": 124033,
+        "sha256": "827dbfad15ac786916ee6e8a6823557535ff1c43493adee966c65c70fcc13fc0"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006699.png": {
+        "bytes": 122413,
+        "sha256": "0286da9f9954ee57c5acb583d86173a6232e1da4f4bceba1422ba19ff7f04372"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006706.png": {
+        "bytes": 123659,
+        "sha256": "204b33650fa28ee9c8f7225c2cd2ea1ee19d20880bc460e8e142fbb7273fd4c0"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006714.png": {
+        "bytes": 121910,
+        "sha256": "a2a4f19158319f0704fc4bec89f37ab92134a604af743bf43d41f691171e5d2b"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006721.png": {
+        "bytes": 123165,
+        "sha256": "979df77c0d978e31a8ea716399c93d8bf36988b3b430e772581089eef1977f19"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006729.png": {
+        "bytes": 124031,
+        "sha256": "984cba5c4402750d3bc3d4b6a0e04bd3f9bd2af29f05ef8e97a3ac17afc29dba"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006736.png": {
+        "bytes": 122052,
+        "sha256": "2c6e3cda2dc78571bed8ad5534f0fe371b093cb937ad7cd83ffb0c558c2acc3c"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006744.png": {
+        "bytes": 123039,
+        "sha256": "03367f57045690fc941307ef6c617962fc7559e6d9bdf616998837ffa96bdff4"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006751.png": {
+        "bytes": 121192,
+        "sha256": "610ad99f51d3f4fd604e3afc0589bc149d8d23bd673adfdc5b5edaacc3a8eeb0"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006759.png": {
+        "bytes": 121890,
+        "sha256": "4e2274f7affc022b8fe89b40a7cb0c9cf242f891a48dc856e937e49f2907f66a"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006766.png": {
+        "bytes": 122414,
+        "sha256": "e310164a654d0387f356cf21fab95b677c92c4ff475a1c0eb4b4b426dc5b8579"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006774.png": {
+        "bytes": 124377,
+        "sha256": "ea73efc439e98a739643c54eb7a486bbcde59993d91f18729baddbdd4e1227e9"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006781.png": {
+        "bytes": 123893,
+        "sha256": "13e99ee78755b4ca1666fe2331ec04e366e76fe21ff7138882e669b14886e4a5"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006789.png": {
+        "bytes": 121632,
+        "sha256": "67e7f856cfd1c537bf863208bff25527ad1290046dc075ae3e1f8bb743729b2e"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006796.png": {
+        "bytes": 119455,
+        "sha256": "288efaeae265048252951ce03838626bfa76e7f62b6b4787931b847702557531"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006804.png": {
+        "bytes": 121699,
+        "sha256": "7933577fc00ba56b35dbb1e1b7f45994820f762151b3591d1884b1c1f0a45ca8"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006811.png": {
+        "bytes": 122138,
+        "sha256": "4711dbbe99a8bbda1cd443f7d6c197441752d2a24bac8caad82f34c42c604a3a"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006819.png": {
+        "bytes": 122741,
+        "sha256": "e785c028324eb68feaa42cc0717cd3abb5d7740df663b15f3a441d097c60c4ad"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006826.png": {
+        "bytes": 119553,
+        "sha256": "29da2d2e38485d63e6bd917ddde9af7f287dab025013f9129d35ccc162416ab0"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006834.png": {
+        "bytes": 123256,
+        "sha256": "3969844dc1f8f4e64db469c347998bdf93acfe6581bbe5ddc52dd2042f6df161"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006841.png": {
+        "bytes": 123736,
+        "sha256": "a6c380c7aa74a8cecebe3577d679cdcf5fb26638522f9ad50fac839359a80f2c"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006849.png": {
+        "bytes": 124047,
+        "sha256": "0181634469922263b8f83ff9cb49601672a10968c522f213dd5f55c8694e6e7d"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006856.png": {
+        "bytes": 119338,
+        "sha256": "3dcc87f1629683a8260c7bd3a69d30c8d49095df21f871216da21301505cba52"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006864.png": {
+        "bytes": 121964,
+        "sha256": "e62914c6e31f7f437ca04db96687fde711590cbaa5c2ebf999a52cb8777aecc9"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006871.png": {
+        "bytes": 122854,
+        "sha256": "e285629b271ea8100cbaefafa84a7a3ce9c12e7ec7b66d527707a504f1d4c135"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006879.png": {
+        "bytes": 124609,
+        "sha256": "817cc28d746d718c99abb6bfd0d96a5ecfebc8fecf104478054a03c40da71928"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006886.png": {
+        "bytes": 119449,
+        "sha256": "97d8fc7bf708bbb9a3202229854ba67b215ce9c051f670299303ba03078594ba"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006894.png": {
+        "bytes": 121434,
+        "sha256": "de28bce94a9e4a331c1b703ecbd8e2a22668fbb0cae725ab2891c76bb1cd4ba4"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006901.png": {
+        "bytes": 122121,
+        "sha256": "12331b64702ae0d4c20e9a7c0f2804c132be58c9333b6e1444754d664365964f"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006909.png": {
+        "bytes": 122836,
+        "sha256": "083a737964e918956f3c7622f381093bee66090aabd876d5b6369502292a0c55"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006916.png": {
+        "bytes": 121012,
+        "sha256": "77c63f3ed03d35aa2d056754eb6e3dcf3126d341baf878c577b93a809e09dc3a"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006924.png": {
+        "bytes": 120742,
+        "sha256": "46b7fdbab2bb4960a9e5064a189f7ae5cbd5639d31a082014dd15897dba1e228"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006931.png": {
+        "bytes": 124489,
+        "sha256": "ae1d6027bbec619ce4c7fcc2b7427b844d627b5ab0b24acede73d7f1a04b595b"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006939.png": {
+        "bytes": 122904,
+        "sha256": "1081d45bcf6e14f62f943b312e4c56a058e64d33a580e1193a35eceb4cfc8b0a"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006946.png": {
+        "bytes": 121273,
+        "sha256": "516b45a99495825bc407d3b6d9b66c1a884f21e660defe6cb236d7be8ce4dd27"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006954.png": {
+        "bytes": 120910,
+        "sha256": "6a6273ac34237e8993a0a642cb2ea7cdd48f7f5005bb55ce06178b07d879171a"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006961.png": {
+        "bytes": 122602,
+        "sha256": "ca46dd7265b0c5b290be7768ea79faac31aae5161bff4ddb05ba1047ee7fbba1"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006968.png": {
+        "bytes": 121768,
+        "sha256": "513b4008acea23930400f1437565f6455445e00a94ba5910f6fe56def788cd00"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006976.png": {
+        "bytes": 121684,
+        "sha256": "057bd8b7688ffa69a15e6052cd8b1e9aed90c314881bab4448a57082f8369f38"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006983.png": {
+        "bytes": 122573,
+        "sha256": "a75838b63e9cde773b53195f1cab7979565feae2b89f1b32b0db597beb1ebb74"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006991.png": {
+        "bytes": 123462,
+        "sha256": "7248d0982a1e1fa97a11bc4c6dd353825f3c7d11d911d2626ccc24a2baf68166"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006998.png": {
+        "bytes": 123306,
+        "sha256": "1c5b079fd27b25b6ac22f5ead782ee037d72fe1945cbe650a13b178801c78bd5"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007006.png": {
+        "bytes": 123474,
+        "sha256": "cb66361baa6f584608de423b72350ef588e57d056f3cc64e29d8308a69bdd4be"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007013.png": {
+        "bytes": 122931,
+        "sha256": "0187a544c81ed0eff4f452d0744eb40eec6aec37ae35a0f2059f4e931ab3c5c7"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007021.png": {
+        "bytes": 122188,
+        "sha256": "b4561ce00effb8fb8004372475ab7e0400e31693b6773f8df1852e6d0d823257"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007028.png": {
+        "bytes": 121365,
+        "sha256": "9506f808691e83af23c2ed574d8f8bc37d38ddda5882ee7f0cf7e6c3697e839e"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007036.png": {
+        "bytes": 122097,
+        "sha256": "616a6fb146a87578128144cee58e4530a6c724c75cd2fe970c56f173700690bb"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007043.png": {
+        "bytes": 122897,
+        "sha256": "7b0eff44433a7fc77ecaa845ac9febb32a19205d08f90432c4f800d983f75dea"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007051.png": {
+        "bytes": 124988,
+        "sha256": "70ba99bf8ae74760f06688d993df1e54b6c7aa2041aa0611ab108be28034d109"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007058.png": {
+        "bytes": 123485,
+        "sha256": "902e169c1201c7f700eff2e4f8f8c1c82e42fdaa41db6d322b776101bcdcd0a3"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007066.png": {
+        "bytes": 123894,
+        "sha256": "90f42742a3cd8a9519c729337928ed1424e0efcbf9529505a37a6fe13605e3c5"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007073.png": {
+        "bytes": 123224,
+        "sha256": "ac5666e76a6d803d501a5867df7d64e133f389f61e70f9bda8dfbe6e062d189f"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007081.png": {
+        "bytes": 126893,
+        "sha256": "b5c84583ab00dc94f8bc9be6297a9c8192ddaa91d158324051f5217302db5181"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007088.png": {
+        "bytes": 123902,
+        "sha256": "9b4358970d6330f28d4d17e31b55e41aaca050f8b06538834862c9724858d806"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007096.png": {
+        "bytes": 123180,
+        "sha256": "1ef08d7a00b846f018ee7a7f902811566fee9947a41787dd956e3bba2ed6a5bf"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007103.png": {
+        "bytes": 124228,
+        "sha256": "cd5c6383b8b73a59d081837635fa9a00f3995cc25966eaae3050af054ea4016c"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f007104.png": {
+        "bytes": 123275,
+        "sha256": "88b0313881f4f228a9a47aa302819f8ba3422e4fd7928f2ef44b28444d98bb0a"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/selection.json": {
+        "bytes": 113222,
+        "sha256": "dda0cb2e9f17240562e2aafa9443f05df0c2047fd93d8a4e643233cf53e3175e"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/receipt.json": {
+        "bytes": 35564,
+        "sha256": "c90814c0fbb7d08c5663b29b7dcdee679c812ebc984814f02636ae1d0f0c4503"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refinement.json": {
+        "bytes": 9486,
+        "sha256": "700d1b1dfd5a6008e1def0ee82f8cbfd42d4dc9e8a9cfea922f7f2c802ae213a"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/reference-motion/features.json": {
+        "bytes": 1632,
+        "sha256": "19ab4b1cd47e51a93e757efae5faf5281c68125855dd5b64fa3724053f4e89b2"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/reference-motion/measure.py": {
+        "bytes": 14390,
+        "sha256": "adb48c18a928ab44bba0f30cc8b6cdffbdd3a60918464600a568249b7822640e"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/timing-audit/run-2026-09-08-v1.1/VID-WTC7-001/frame-map.csv": {
+        "bytes": 867161,
+        "sha256": "ccc78c7ff933710f8e8e767dce5e05855fefb05bb75241d2bec01b4739c3b812"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/timing-audit/run-2026-09-08-v1.1/VID-WTC7-001/frames.json": {
+        "bytes": 3389769,
+        "sha256": "424a2c27064548797ca9f4f0855781af490e4c912c7ccd5bc5340ee9a20524f0"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/timing-audit/run-2026-09-08-v1.1/VID-WTC7-001/source-identity.json": {
+        "bytes": 449,
+        "sha256": "632c27b1ad4d04bddd991568a7c30206841ae3af5606fac801e61ffff561ca38"
+      },
+      "/Users/admin/docs/911/research/wtc7-video-comparison/media/analysis-source/NIST Camera 2_CBS-Net Dub6 48 (Converted).mov": {
+        "bytes": 208810910,
+        "sha256": "84da90a48bdd710faf8b0a60c1a23a0927f22184216a1a631cbd77d4243b6730"
+      }
+    },
+    "stored_cutoff_rounding_rows": [
+      {
+        "annotator": "root",
+        "baseline_fit_screen": true,
+        "baseline_fit_status": "computed",
+        "frame": 7021,
+        "half": 9,
+        "known_cutoff_rounding_case": true,
+        "model": "affine",
+        "seconds_exact": "702103/2997",
+        "status": "stored_map_not_admitted",
+        "stored_fit_screen": false,
+        "stored_fit_status": "computed",
+        "target": "C2-T1"
+      },
+      {
+        "annotator": "separate",
+        "baseline_fit_screen": true,
+        "baseline_fit_status": "computed",
+        "frame": 7021,
+        "half": 9,
+        "known_cutoff_rounding_case": true,
+        "model": "affine",
+        "seconds_exact": "702103/2997",
+        "status": "stored_map_not_admitted",
+        "stored_fit_screen": false,
+        "stored_fit_status": "computed",
+        "target": "C2-T1"
+      }
+    ]
+  },
+  "numpy": "2.3.4",
+  "oracle_controls": {
+    "checks": [
+      "exact supporting-edge hull with duplicates/interior",
+      "closed-form condition known diagonal and shear",
+      "full synthetic paired-annotation result with known displacements and uncertain identity",
+      "recursive result comparator rejects five known numeric/coverage/type/status mutations"
+    ],
+    "mutation_rejections": [
+      "numeric",
+      "missing_row",
+      "extra_field",
+      "wrong_status",
+      "boolean_number"
+    ],
+    "passed": 4,
+    "scope": "Synthetic independent oracle/comparator only; no historical source or annotation opened, no producer import."
+  },
+  "pillow": "12.0.0",
+  "python": "3.13.7",
+  "scope": "Independent presentation/source lineage, synthetic checks and explicitly released historical arithmetic; no physical interpretation.",
+  "source_pins": {},
+  "status": "pass",
+  "verifier": {
+    "bytes": 60552,
+    "sha256": "76a7aa25df5eb86384ef542fddd4ab1fe29e430d6a7fb57a016308aea335a69a"
+  }
+}

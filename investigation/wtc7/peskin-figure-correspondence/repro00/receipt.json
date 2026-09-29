@@ -1,0 +1,181 @@
+{
+  "anchor_pixel_matches": 8,
+  "argv": [
+    "research/sherlock-wtc7-investigation/peskin-figure-correspondence/dense_match01.py",
+    "--chunk",
+    "0",
+    "--run",
+    "repro00",
+    "--compare-to",
+    "dense00"
+  ],
+  "commands": [
+    [
+      "/opt/homebrew/bin/ffmpeg",
+      "-nostdin",
+      "-hide_banner",
+      "-loglevel",
+      "info",
+      "-copyts",
+      "-seek_timestamp",
+      "1",
+      "-noaccurate_seek",
+      "-ss",
+      "2500",
+      "-t",
+      "12",
+      "-noautorotate",
+      "-i",
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/fire-originals/peskin/sources/peskin-commons-resumed.webm",
+      "-map",
+      "0:v:0",
+      "-an",
+      "-vf",
+      "select='gte(t,2502)*lt(t,2510)',showinfo",
+      "-noautoscale",
+      "-pix_fmt",
+      "rgb24",
+      "-fps_mode",
+      "passthrough",
+      "-enc_time_base:v",
+      "demux",
+      "-f",
+      "rawvideo",
+      "pipe:1"
+    ],
+    [
+      "/opt/homebrew/bin/ffprobe",
+      "-v",
+      "error",
+      "-read_intervals",
+      "2500%2511",
+      "-select_streams",
+      "v:0",
+      "-show_frames",
+      "-show_entries",
+      "frame=pts,best_effort_timestamp,width,height",
+      "-of",
+      "json",
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/fire-originals/peskin/sources/peskin-commons-resumed.webm"
+    ]
+  ],
+  "compare_to": "dense00",
+  "core_sha256": "06a400fbb378dfa710dd86799792f8f615a40eea19e82c23b9f3e0592a3b64a8",
+  "dense_protocol_sha256": "8a7ac08aa7901c0de5956b617950f9fda35a786b7a9b58a26c7ba54c785413f8",
+  "dependency_pins": {
+    "DENSE-01.md": "8a7ac08aa7901c0de5956b617950f9fda35a786b7a9b58a26c7ba54c785413f8",
+    "DENSE-GATES-01.md": "8d0c5bae4654c99813d0d896989963c2b557e80e87a160cbedc5edcebce3ebda",
+    "METHOD-01.md": "412c7aae4da6010d4323d900182c8419dc314fd64953ed9c2c3878b3bd335e6c",
+    "PROTOCOL.md": "e445a976b664e6d2bd8c619d415cf0c1eb0ccc4866743082231b34f0a0f00537",
+    "controls01/summary.json": "175019b3d873ea8632ea14dd4cec1fd4dc35b6c3f9557dab7503491d4e7ffcc7",
+    "direct_oracle.py": "f1ecbbb6fc4c48c58786d43287ac65cdeb1a3428b93ca0ae5bec6bccf43a4e71",
+    "fixtures/producer-comparison01.json": "db673cc6d6a4fc11fc6026ffa1688ce35fd5934b83fcc7067f556b72b647f136"
+  },
+  "elapsed_seconds": 107.16864004102536,
+  "first_pts": 2502013,
+  "frame_count": 240,
+  "frame_probe_matches": 240,
+  "interval": [
+    2502,
+    2510
+  ],
+  "last_pts": 2509989,
+  "native_images": [],
+  "numpy": "2.3.5",
+  "output_bytes": 721480,
+  "outputs": {
+    "decode.stderr.txt": {
+      "bytes": 116054,
+      "sha256": "aef23825da2f55a965cf111072e202e70b2dd63c9b8d00a66fdb4afca33beefe"
+    },
+    "frame-probe.json": {
+      "bytes": 53814,
+      "sha256": "cf958294f44d9c822c50acb103d21a44da99573963617dc6ef4113dfeb5dbc82"
+    },
+    "frame-probe.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frames.json": {
+      "bytes": 44773,
+      "sha256": "e4b536bbd42ff5d7d7d304903fdf876d67c40e7ddd11f3ebe923e1b4bd4ad0a7"
+    },
+    "results.json": {
+      "bytes": 506068,
+      "sha256": "3c566eedc683d9ab341c956e481551545aeb792906b1635f42fe22d7be0c4d53"
+    },
+    "start.json": {
+      "bytes": 771,
+      "sha256": "e92c534c98b4163ebfc652620f8741857bf3d101f9d8503968f5559a7313fc9a"
+    }
+  },
+  "pillow": "12.3.0",
+  "protocol_sha256": "e445a976b664e6d2bd8c619d415cf0c1eb0ccc4866743082231b34f0a0f00537",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "reproduction_native_pixel_matches": 16,
+  "reproduction_surface_comparisons": 480,
+  "script_sha256": "8c5c92932c43183d0861e16282f95e7be360a36bd9ee016c639e638ebed82bb1",
+  "shortlist_indices": [
+    107,
+    108,
+    109,
+    111,
+    150,
+    151,
+    152,
+    153,
+    182,
+    209,
+    210,
+    211,
+    212,
+    213,
+    218,
+    219
+  ],
+  "source_after": {
+    "bytes": 696711067,
+    "sha256": "0f438006c27e3059e7a5a480d4a7ee5382c5a136945c2a0120e583e3456f324d"
+  },
+  "source_before": {
+    "bytes": 696711067,
+    "sha256": "0f438006c27e3059e7a5a480d4a7ee5382c5a136945c2a0120e583e3456f324d"
+  },
+  "status": "completed",
+  "storage_after": {
+    "baseline_bytes": 9312800,
+    "slot_bytes": {
+      "dense00": 85573940,
+      "dense01": 60428534,
+      "dense02": 0,
+      "dense03": 0,
+      "repro00": 721480,
+      "repro01": 0,
+      "repro02": 0,
+      "repro03": 0
+    }
+  },
+  "storage_before": {
+    "baseline_bytes": 9310030,
+    "slot_bytes": {
+      "dense00": 85573940,
+      "dense01": 60428534,
+      "dense02": 0,
+      "dense03": 0,
+      "repro00": 771,
+      "repro01": 0,
+      "repro02": 0,
+      "repro03": 0
+    }
+  },
+  "tools": {
+    "ffmpeg": {
+      "sha256": "7697b094387e2918821fe7480c73f5d44543817096e9d5b5fafe58ecd6912569",
+      "version": "ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "sha256": "fd670257233c93c88608a62ed8b5ddeeb812bd341dfb39bbe0e1c654b91672ad",
+      "version": "ffprobe version 7.1.1 Copyright (c) 2007-2025 the FFmpeg developers"
+    }
+  }
+}

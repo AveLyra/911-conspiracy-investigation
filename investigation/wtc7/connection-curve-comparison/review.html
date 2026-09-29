@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connection figures — page registration review</title>
+<style>
+body { font: 16px/1.45 system-ui, sans-serif; margin: 16px; color: #17202b; background: #f5f6f8; }
+h1 { font-size: 1.4rem; margin: 0 0 .5rem; }
+p { margin: .6rem 0; }
+button, select { font: inherit; padding: .4rem .65rem; margin: .2rem; }
+button[aria-pressed="true"] { outline: 2px solid #1264a3; }
+:focus-visible { outline: 3px solid #b84f00; outline-offset: 2px; }
+#readout { position: sticky; top: 0; z-index: 5; background: #fff6d8; padding: .65rem; border: 1px solid #946e16; font-family: ui-monospace, monospace; }
+#load-status[data-error="true"] { color: #ac1414; font-weight: bold; }
+#viewport { overflow: auto; width: 100%; height: 68vh; min-height: 280px; border: 1px solid #526575; background: #c7cdd3; }
+#stage { position: relative; margin: 0; padding: 0; line-height: 0; }
+#page-image { display: block; width: 100%; height: auto; max-width: none; border: 0; padding: 0; margin: 0; image-rendering: pixelated; user-select: none; }
+#page-image[hidden], #marker[hidden] { display: none; }
+#marker { pointer-events: none; position: absolute; width: 20px; height: 20px; transform: translate(-50%, -50%); border: 1px solid #00bcd4; border-radius: 50%; box-sizing: border-box; box-shadow: 0 0 0 1px #10242a; }
+#marker::before, #marker::after { content: ""; position: absolute; background: #00bcd4; box-shadow: 0 0 0 1px #10242a; }
+#marker::before { width: 28px; height: 1px; left: -5px; top: 9px; }
+#marker::after { width: 1px; height: 28px; left: 9px; top: -5px; }
+dl { display: grid; grid-template-columns: minmax(110px, 170px) minmax(0, 1fr); gap: .3rem .7rem; }
+dd { margin: 0; overflow-wrap: anywhere; }
+code { overflow-wrap: anywhere; }
+.caution { border-left: 4px solid #946e16; padding-left: .65rem; }
+</style>
+</head>
+<body>
+<h1>Connection figures — complete-page registration review</h1>
+<p class="caution">Read-only presentation. No points are saved, submitted, exported or accepted. These are <strong>page-render pixels</strong>, not native embedded graph pixels, physical coordinates or new source precision. This viewer does not extract curves or establish a collapse mechanism.</p>
+<div>
+<label for="page">Page / control</label>
+<select id="page">
+<option value="control">Synthetic coordinate control</option>
+<option value="73">Physical 73 / printed 22</option>
+<option value="74">Physical 74 / printed 23</option>
+<option value="75">Physical 75 / printed 24</option>
+<option value="76">Physical 76 / printed 25 — figures 3-4 and 3-5</option>
+<option value="77">Physical 77 / printed 26</option>
+<option value="117">Physical 117 / printed 66</option>
+</select>
+<button type="button" data-zoom="fit" aria-pressed="true">Fit complete page</button>
+<button type="button" data-zoom="1" aria-pressed="false">100%</button>
+<button type="button" data-zoom="2" aria-pressed="false">200%</button>
+<button type="button" id="clear">Clear point (Escape)</button>
+</div>
+<p>Origin is the upper-left pixel cell, (0, 0). Hover for integer x/y; click to lock. Focus the image area and use arrow keys to move one pixel. Right/bottom edges are outside. Fit can skip rows or columns with mouse input: use 100%/200% or arrow keys for exact cells. Zoom is CSS presentation only; the full source image stays unchanged.</p>
+<details>
+<summary>Optional jumps to AI-proposed axis anchors — not human accepted</summary>
+<p>All six are page 76 proposals, each ±3 page-render pixels in each axis. A jump marks the proposed center at 100%; a real click or keyboard adjustment remains an unsaved selection, not acceptance. Clear the marker to inspect obscured pixels.</p>
+<button type="button" data-candidate="F0">F0: load-axis origin (449, 829)</button>
+<button type="button" data-candidate="Fright">Fright: displacement endpoint (1294, 829)</button>
+<button type="button" data-candidate="Ftop">Ftop: load endpoint (449, 224)</button>
+<button type="button" data-candidate="E0">E0: energy-axis origin (473, 1669)</button>
+<button type="button" data-candidate="Eright">Eright: displacement endpoint (1297, 1669)</button>
+<button type="button" data-candidate="Etop">Etop: energy endpoint (473, 1048)</button>
+<p>Root candidate-record SHA-256: <code>ec66ae85a45a0169b7e8cc61698cc522e75cda2f2905f4c283f45f88de1f55a7</code>. No native-strip conversion is supplied here. Geometric strip footprints alone would not establish composited visibility through clipping or text overlays.</p>
+</details>
+<p id="load-status" role="status" data-error="false">Loading; coordinates disabled…</p>
+<p id="readout" role="status" aria-live="polite">Coordinates unavailable: image not ready.</p>
+<div id="viewport" tabindex="0" role="region" aria-label="Scrollable complete image; click then arrow keys to adjust point">
+<div id="stage"><img id="page-image" alt="" hidden><span id="marker" aria-hidden="true" hidden></span></div>
+</div>
+<details>
+<summary>Fixed asset and source metadata</summary>
+<dl><dt>Kind</dt><dd id="kind"></dd><dt>Dimensions / bytes</dt><dd id="dimensions"></dd><dt>PNG SHA-256</dt><dd id="hash"></dd><dt>Source PDF SHA-256</dt><dd id="source-hash"></dd><dt>Render receipt</dt><dd>47d33d33b1695b00b21b72f9bda4a5c42d037ca1fb8a095c450aab9ba0eac1f5</dd></dl>
+<p>Six complete RGB pages, 200 dpi, no crop. Printed page = physical page − 51. The synthetic fixture is not evidence. Startup checks pin the PDF, render receipt, candidate record and seven image files; each request checks the served asset hash again. Metadata is a pinned record, not independent validation of scientific fidelity.</p>
+</details>
+<noscript>JavaScript is required for coordinate display; no coordinates are available.</noscript>
+<script type="module" src="/coordinate.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+{
+  "aliases": [
+    "Source basenames map only to SRC119/120/121; leading keyword asterisk removed.",
+    "Root segment member_entries means rows, unique_members means ordered four-node lists, duplicate_member_entries means repeated ordered rows; not node occurrences, full attributes or unordered sets.",
+    "Root node/part member_entries and unique_members are ID occurrences/unique IDs. Part unique_nodes is zero by root schema, not an absence of incident geometry.",
+    "Independent source/line/EID face records reduce to root EID aliases only after checking them against the frozen seed.",
+    "Independent nonsegment matching occurrences group by physical line for root matched_ids, preserving duplicates and within-line order.",
+    "Heading hashes both cover the full CID+heading card excluding CR/LF; stripped-heading-only independent hash is excluded."
+  ],
+  "command": [
+    "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "research/sherlock-wtc7-investigation/c79-restraint-audit/compare_contacts.py",
+    "--output",
+    "contact-comparison01.json"
+  ],
+  "comparisons": [
+    {
+      "artifact": "contacts-root01.json",
+      "failures": [],
+      "scalar_counts": {
+        "boolean": 6,
+        "null": 730,
+        "numeric": 12491,
+        "string": 123
+      },
+      "status": "PASS"
+    },
+    {
+      "artifact": "contacts-root02.json",
+      "failures": [],
+      "scalar_counts": {
+        "boolean": 6,
+        "null": 730,
+        "numeric": 12491,
+        "string": 123
+      },
+      "status": "PASS"
+    }
+  ],
+  "coverage": {
+    "contact_numeric_cards": 36,
+    "contact_numeric_slots": 288,
+    "contact_records": 6,
+    "selected_nonsegment_rows": 3,
+    "selected_segment_records": 742,
+    "selector_records": 12,
+    "sets_by_kind": {
+      "node": 2,
+      "part": 85,
+      "segment": 6
+    },
+    "source_EOF_receipt_comparisons_per_root": 3,
+    "typed_sets": 93,
+    "zero_intersection_sets": 88
+  },
+  "elapsed_seconds": 0.9510353340301663,
+  "exclusions": [
+    "Independent-only segment full-attribute/unordered duplicate totals and distinct repeated-node counts are not supplied by root; no cross-implementation equality is claimed for them.",
+    "Independent membership-row ordinals and nonsegment slot/original-ID details are not root fields. Independent alias checks retain their own consistency but do not invent root source locators.",
+    "Independent typed-selector existence/intersection summaries are validated through complete common selected rows and typed references; root does not retain identical summary fields.",
+    "No fresh decompressed source/mesh pass in this comparer. Fresh compressed-source hashes before/after and independently retained EOF receipts are checked.",
+    "No contact-pair, initialization, force, restraint, floor/direction, solver-version or historical-run validation."
+  ],
+  "negative_controls": [
+    {
+      "name": "unknown_field",
+      "status": "PASS"
+    },
+    {
+      "name": "missing_zero_intersection_set",
+      "status": "PASS"
+    },
+    {
+      "name": "set_namespace",
+      "status": "PASS"
+    },
+    {
+      "name": "set_source",
+      "status": "PASS"
+    },
+    {
+      "name": "set_header_line",
+      "status": "PASS"
+    },
+    {
+      "name": "set_header_null_not_zero",
+      "status": "PASS"
+    },
+    {
+      "name": "segment_member_semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "ordered_duplicate_count",
+      "status": "PASS"
+    },
+    {
+      "name": "missing_segment",
+      "status": "PASS"
+    },
+    {
+      "name": "segment_source_line",
+      "status": "PASS"
+    },
+    {
+      "name": "ordered_vertices",
+      "status": "PASS"
+    },
+    {
+      "name": "repeated_vertex_not_dropped",
+      "status": "PASS"
+    },
+    {
+      "name": "attribute_not_null",
+      "status": "PASS"
+    },
+    {
+      "name": "seed_intersection",
+      "status": "PASS"
+    },
+    {
+      "name": "seed_face_alias",
+      "status": "PASS"
+    },
+    {
+      "name": "part_namespace",
+      "status": "PASS"
+    },
+    {
+      "name": "contact_ID",
+      "status": "PASS"
+    },
+    {
+      "name": "contact_keyword",
+      "status": "PASS"
+    },
+    {
+      "name": "contact_heading_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "card_null_not_zero",
+      "status": "PASS"
+    },
+    {
+      "name": "card_source_line",
+      "status": "PASS"
+    },
+    {
+      "name": "card_order",
+      "status": "PASS"
+    },
+    {
+      "name": "bool_not_integer",
+      "status": "PASS"
+    },
+    {
+      "name": "selector_type",
+      "status": "PASS"
+    },
+    {
+      "name": "selector_ID",
+      "status": "PASS"
+    },
+    {
+      "name": "selector_rows",
+      "status": "PASS"
+    },
+    {
+      "name": "single_surface_master_not_missing",
+      "status": "PASS"
+    }
+  ],
+  "numeric_policy": "Exact rational numeric equality; float/float slots additionally require identical binary64 hex including signed zero. Boolean is never numeric. No tolerance.",
+  "pins_after": {
+    "../model-member-map/map_members.py": "f63356778c544e4102aef34d9c92a49707315be4db5ae182fcee1cce5557720b",
+    "CONTACT-TRACE-PROTOCOL.md": "f367dab9cf29f4958afed5a354a37bfcf1d5cb0f92e8fc39aab3009c2e529c80",
+    "SRC-119": {
+      "bytes": 70199,
+      "sha256": "2c3c350317f0c06c2aca2e9d9ae1e9b489d4a1c44c9268997e550d35c031d7d7"
+    },
+    "SRC-120": {
+      "bytes": 23162693,
+      "sha256": "c49dcb74d8559e0cbfa4302732dd2c1764bf161389be0ee8e8c3d9a3dbc55e59"
+    },
+    "SRC-121": {
+      "bytes": 47520888,
+      "sha256": "f831290e6c0375dafc0bbeb684099d342ed8df29ab8560df82b21459c041483d"
+    },
+    "comparison_code": "e3298754cdcda2098ed376b4149384598d941f68e2c6245a84424b2a9c2c21f1",
+    "contacts-root01.json": "04193c154495a37e7603e72ad32668ee28383ff9471b4baeee7f93b257c56859",
+    "contacts-root02.json": "27d22a353b601d1bf2797ea80f846bebe4d42e8467f663778413897437770ed5",
+    "independent-contacts01.json": "b30b8ee5435e7cf8ce2ea979245b07fa4b0577606bf97638dbfd76b21043c7c3",
+    "independent01.json": "d4f0c4107b2162c540fbb90fd61b1a90d42860cbcf3cd17903f22ba7e46379d7",
+    "root01.json": "f400538d74607464ea7e03a1692965f58c710c841df3a54833e202685e0bdfef",
+    "trace_contacts.py": "ba35168bab6391ddd1126433d00047ec18d3f24dde9b4fb4f9250b29241688d8",
+    "verify_contacts.py": "bcc87b26b50de22325a36a3da96343e1306230dd91e3efef240d6cece059b91b",
+    "verify_restraint.py": "5587e88d786d4e3fa7bfbe21823a54a54c97e289d5d7c90b2d9c72200408028a"
+  },
+  "pins_before": {
+    "../model-member-map/map_members.py": "f63356778c544e4102aef34d9c92a49707315be4db5ae182fcee1cce5557720b",
+    "CONTACT-TRACE-PROTOCOL.md": "f367dab9cf29f4958afed5a354a37bfcf1d5cb0f92e8fc39aab3009c2e529c80",
+    "SRC-119": {
+      "bytes": 70199,
+      "sha256": "2c3c350317f0c06c2aca2e9d9ae1e9b489d4a1c44c9268997e550d35c031d7d7"
+    },
+    "SRC-120": {
+      "bytes": 23162693,
+      "sha256": "c49dcb74d8559e0cbfa4302732dd2c1764bf161389be0ee8e8c3d9a3dbc55e59"
+    },
+    "SRC-121": {
+      "bytes": 47520888,
+      "sha256": "f831290e6c0375dafc0bbeb684099d342ed8df29ab8560df82b21459c041483d"
+    },
+    "comparison_code": "e3298754cdcda2098ed376b4149384598d941f68e2c6245a84424b2a9c2c21f1",
+    "contacts-root01.json": "04193c154495a37e7603e72ad32668ee28383ff9471b4baeee7f93b257c56859",
+    "contacts-root02.json": "27d22a353b601d1bf2797ea80f846bebe4d42e8467f663778413897437770ed5",
+    "independent-contacts01.json": "b30b8ee5435e7cf8ce2ea979245b07fa4b0577606bf97638dbfd76b21043c7c3",
+    "independent01.json": "d4f0c4107b2162c540fbb90fd61b1a90d42860cbcf3cd17903f22ba7e46379d7",
+    "root01.json": "f400538d74607464ea7e03a1692965f58c710c841df3a54833e202685e0bdfef",
+    "trace_contacts.py": "ba35168bab6391ddd1126433d00047ec18d3f24dde9b4fb4f9250b29241688d8",
+    "verify_contacts.py": "bcc87b26b50de22325a36a3da96343e1306230dd91e3efef240d6cece059b91b",
+    "verify_restraint.py": "5587e88d786d4e3fa7bfbe21823a54a54c97e289d5d7c90b2d9c72200408028a"
+  },
+  "producer_controls_rerun": [
+    {
+      "code": "verify_contacts.py",
+      "controls": 22,
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6d8d5261920d577e0d014cbe7bf18cb4246827c533cc3633cf511a792d79167c"
+    },
+    {
+      "code": "trace_contacts.py",
+      "controls": 9,
+      "exit_code": 0,
+      "stderr_sha256": "42f237d7abc9eb371abada54db94861f647b2fd2e4008b692ec18dfdcc2e00d5",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "root_repeat_equal_except_elapsed": true,
+  "status": "PASS"
+}

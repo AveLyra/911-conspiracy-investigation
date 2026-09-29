@@ -1,0 +1,44 @@
+# Camera 2 target-feature trackability protocol
+
+Exploratory follow-up under the [investigation charter](../CHARTER.md), declared before new target annotations or target-coordinate calculations. Earlier images and the collapse sequence are familiar: this is not an event-level holdout. The completed [reference repair](../camera2-reference-repair/report.md) supports a bounded image-reference comparison, not physical camera calibration.
+
+## Question and acceptance
+
+Which separately defined building-target image features remain identifiable through the visible descent, with what coordinate disagreement and occlusion limits? Does reference-map choice materially affect these coarse image-coordinate observations? A useful outcome is a source-pinned, independently annotated multi-point coverage/position record, including disappearing or disputed features and sensitivity calculations. A failure to follow a feature must remain a failure rather than an invented continuation.
+
+No automatic target matcher, trajectory fit, velocity, acceleration, force, inferred support failure or causal ranking is part of this unit. Computational visual annotation is not the human spot-check or specialist review required before consequential automated measurement. This advances Q03–Q05/WP2's measurement prerequisites without claiming its exit conditions.
+
+## Fixed input and selection
+
+Use only the preserved native-Y Camera 2 PNGs and exact source PTS from `multiview-onset-review/refine01/camera2`, with unchanged source/map/declaration hashes from the completed reference repair. No new decode, interpolation, enhancement or retiming. The fixed 17-frame set is:
+
+`6593, 6654, 6751, 6841, 6886, 6916, 6931, 6946, 6961, 6976, 6991, 7006, 7021, 7036, 7051, 7081, 7104`.
+
+These samples deliberately include early, transition and late imagery, but do not cover every intervening frame. No earliest physical onset or uninterrupted trajectory may be inferred from sample endpoints. The subset must exactly belong to the previously declared 71-frame event selection.
+
+1. From baseline f6593 alone in this pass, the annotator proposes at most three separable target image points, IDs C2-T1/T2/T3. Prefer different parts of the visible upper outline/façade geometry; retain fewer if three distinct definitions cannot be supported. Record exact pixel coordinate, subjective rectangle, appearance definition and whether it is a candidate corner/intersection or a changing silhouette. Avoid smoke and neighboring buildings. Do not assign cardinal direction, floor number, structural-member identity or survey accuracy without independently established geometry.
+2. Root visually checks each proposal on the native baseline and explicitly labeled marker/crop, before later annotation. Freeze accepted definitions and record rejected proposals unchanged. Do not move a proposed coordinate after checking a later image.
+3. Root and the separate annotator independently annotate the accepted definitions in all 17 selected native images, each blind to the other's new evaluation coordinates until both are saved. Shared point definitions and familiar imagery limit independence; record any hints or breaches. Retain exactly 17×accepted-target rows per annotator. Do not replace a vanished rooftop element with a lower roofline or a smoke boundary under the same ID.
+4. Every row separates `localization` (`localized`, `ambiguous`, `unavailable`) from `correspondence` (`appearance_consistent`, `uncertain`, `changed`, `not_assessable`). A precisely localized replacement silhouette can have changed/uncertain correspondence. `appearance_consistent` is not authenticated material identity. A localized row has integer native (x,y), subjective envelope halfwidths and an appearance/continuity note; ambiguous/unavailable rows have no guessed coordinate. Envelopes are not statistical confidence intervals. Each annotator re-localizes the baseline with its own envelope, not an exact error-free coordinate imposed by the proposal; prior knowledge of the shared seed precludes independent baseline construction.
+
+## Presentation and artifact controls
+
+Full native images may be supplemented by a fixed target-region crop `[270,95,475,400)` enlarged 3× by nearest-neighbor, with exterior coordinate ticks and an analytical-derivative label. No feature points, fitted path, temporal overlay, contrast change or the other annotator's coordinates appear in evaluation aids. A marker-only baseline derivative is separate. Preserve the original PNG and the precise crop/scale/padding transform so every display coordinate can be traced to a source pixel.
+
+Check source bytes, native PNG/luma geometry and exact PTS before/after presentation generation. Save input/procedure/runtime pins and two fresh deterministic sets of display products; validate crop/tick geometry on a labeled synthetic coordinate image first. Preserve any failed generation. Root and annotator record actual full-image/crop coverage separately; a file inventory is not a visual attestation.
+
+## Comparison declared before evaluation
+
+For each frame/target, retain both original observations. Compare subjective rectangles only when both localized: report coordinate difference, per-axis interval overlap and whether each center lies in the other's rectangle. Do not average disagreement into a new consensus point. Nonlocalized/definition-changed rows remain distinct; compare coverage without invented values. No hit-rate, sensitivity/specificity or calibrated accuracy estimate is obtained from these few familiar frames.
+
+For each annotator separately, calculate native-coordinate displacement from that annotator's own localized baseline with conservative interval subtraction, only when both baseline and current correspondence are `appearance_consistent`. Retain otherwise localized coordinates but explicitly withhold same-feature displacement for uncertain/changed correspondence. Later and baseline errors can be dependent; these arithmetic rectangles are not a probability model. Report the first *selected* frame whose downward-displacement interval excludes zero, with the preceding scheduled sample and its status, not first physical motion or an onset bracket across obscuration. Apparent image y increases downwards. Preserve nonmonotonicity and every contrary/ambiguous row. Between-target vertical-displacement differences may be compared only for co-localized, appearance-consistent frames with valid baselines, retaining all endpoint envelopes; they do not by themselves measure rigid-body tilt, symmetry of support loss or whole-building motion.
+
+Reference-map sensitivity is a conditional image calculation only. Evaluate inverse translation/proper-similarity/affine maps already saved by `camera2-reference-repair/run01` at the observed points and rectangle corners, only where the stored consistency screen passes; report every unavailable/failed map. No map is refit or selected on target motion. Preserve raw values beside mapped values and compare models/sizes, without treating the spread as complete uncertainty or proof that neighboring reference depths calibrate the target. Keep the known exact-cutoff rounding case explicit. No stabilized historical image or physical trajectory is generated.
+
+Before these calculations, synthetic controls must cover coordinate transforms and inverses, conservative rectangle subtraction, different-frame baselines, asymmetric envelopes, missing/ambiguous/changed definitions, a false agreement from shared image error, and the distinction between selected-frame displacement evidence and continuous onset. Independently recompute material comparisons and inverse-map sensitivities; retain source/output pins and repeat products. Root reviews all result claims against original annotations rather than treating a passing script as visual validation.
+
+## Deliverable and limits
+
+Deliver frozen proposal/acceptance, both full annotation sets, comparison and displacement/sensitivity tables including failures, actual visual coverage, independently reproduced arithmetic, bounded interpretation, and a concrete next test. Separate observation, arithmetic, mapping assumption, inference and hypothesis. A translated silhouette or a vanished feature is not an observed column failure; upward/downward image change is not a calibrated physical displacement or gravitational acceleration.
+
+All artifacts are research-only. Preserve prior source, selection, code, results and reviews. No new agency-production or previously held packet content, external acquisition, bridge, feedback transmission to the archived task, case import, canonical promotion, filing, commit or push. Record real workflow lessons locally under existing feedback items. Prioritize the supplementary-production crosswalk if its exact inspection approval arrives; this protocol does not grant it.

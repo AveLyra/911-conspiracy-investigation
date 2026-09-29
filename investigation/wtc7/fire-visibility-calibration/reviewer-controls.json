@@ -1,0 +1,19 @@
+{
+  "reviewer": "fresh-context-limited-ai-reviewer",
+  "protocol_sha256": "ea5c641475f47ef7a72fcf25876ec89eca8078b2756303920c323affe2a969a5",
+  "stage": "completed_before_geometry_and_image_inspection",
+  "threshold": 0.5,
+  "scope": "Text rule-comprehension controls only; no visual-detection accuracy claim.",
+  "controls": [
+    {"scenario": 1, "preliminary": "eligible", "final": "eligible", "semantic_conflict": false, "reason": "Single candidate has opportunity lower bound 0.5 at the 0.5 threshold. Minor frame and glass cautions do not independently prevent the displayed-appearance description."},
+    {"scenario": 2, "preliminary": "excluded", "final": "excluded", "semantic_conflict": false, "reason": "A reasoned dominant obstruction independently prevents unit-level displayed-appearance assessment; the explicit decisive exclusion takes precedence over the opportunity interval."},
+    {"scenario": 3, "preliminary": "excluded", "final": "excluded", "semantic_conflict": false, "reason": "Clipped candidate identity is an exclusion independent of a localized positive appearance. Preserve the positive label without promoting geometric eligibility."},
+    {"scenario": 4, "preliminary": "excluded", "final": "excluded", "semantic_conflict": false, "reason": "A multi-opening band is not one candidate. Preserve its positive appearance, but not_single identity excludes it from the selected candidate-appearance opportunity subset."},
+    {"scenario": 5, "preliminary": "unknown", "final": "unknown", "semantic_conflict": false, "reason": "Adequate opportunity does not resolve whether the proposed unit identifies one candidate. With no independent exclusion, unresolved identity yields unknown."},
+    {"scenario": 6, "preliminary": "unknown", "final": "unknown", "semantic_conflict": false, "reason": "For [0.25,0.5], the upper bound equals the 0.5 threshold and the lower bound is below it. This boundary-touching interval remains unknown."},
+    {"scenario": 7, "preliminary": "excluded", "final": "excluded", "semantic_conflict": false, "reason": "Opportunity upper bound 0.25 is strictly below threshold 0.5."},
+    {"scenario": 8, "preliminary": "unknown", "final": "unknown", "semantic_conflict": false, "reason": "Null opportunity leaves the threshold decision unresolved, assuming no separate decisive exclusion."},
+    {"scenario": 9, "preliminary": "eligible", "final": "eligible", "semantic_conflict": false, "reason": "Opportunity lower bound 0.75 passes threshold 0.5 independently of appearance. No flame discernible describes the visible portion and does not establish absence of interior fire."},
+    {"scenario": 10, "preliminary": "eligible", "final": "unknown", "semantic_conflict": true, "reason": "Opportunity lower bound 0.5 provisionally passes threshold 0.5, but non_evaluable contradicts a useful appearance assessment. Preserve the inputs and preliminary result and flag unknown pending review, without relabeling as no flame."}
+  ]
+}

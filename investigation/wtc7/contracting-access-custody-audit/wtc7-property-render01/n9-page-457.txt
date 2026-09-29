@@ -1,0 +1,43 @@
+ Structural Heating 
+NIST NCSTAR 1-9, WTC Investigation  391
+10.3 SIMULATED FIRE-INDUCED THERMAL RESPONSE OF WTC 7 
+10.3.1 General 
+It was assumed that the structure was initially at 23 ºC.  The thermal analysis covered the approximately 
+21,600 s (6 h) period over which the FDS fires were present on Floors 7, 8, 9, 11, 12, and 13. The 
+minimum time step for the thermal analysis was 1 ms, while the maximum time step was limited to 50 s. 
+As was done for the towers, the output file for use in the structural analysis contained thermal data at 12 
+instants in time, spaced at 30 min (1,800 s) intervals, beginning at 12:30 p.m. 
+The modeling of the steel elements was similar to that in NIST NCSTAR 1-5G.  However, in WTC 7, 
+there was no evidence of damage to the thermal insulation (away from the immediate impact area of 
+debris from WTC 1).  Since heat transport across the insulation layer was much slower than heat transport 
+into the depth of the steel, temperatures across column sections differed by less than 1 °C.  Temperature 
+gradients through the depth of the steel beams and girders were affected by the presence of the floor slab.  
+Temperatures were uniform (within 1 °C) across the bottom flange and web, but the top flange 
+temperature was less by up to several hundred degrees, because the slab acted as a heat sink (see  
+Figure 4-6 to Figure 4-8). 
+As described in Chapter 2, the floor systems had a concrete slab on a corrugated steel deck.  For Floor 8 
+and above, the overall concrete thickness was 140 mm (5.5 in.), with the corrugations being 75 mm (3 in.) 
+deep.  The FSI simulated these slabs as uniformly 100 mm (4 in.) thick.  The thickness was subdivided 
+into eight elements, each 12.7 mm (0.5 in.) thick.  For the north side of the 7
+th floor, the overall concrete 
+thickness was 200 mm (8 in.), with the corrugations being 75 mm (3 in.) deep.  The south side had a 
+formed 200 mm (8 in.) slab without a metal deck.  The FSI simulated this slab as uniformly 200 mm (8 
+in.) thick.  This thickness was also subdivided into eight elements, each 25 mm (1 in.) thick. 
+For each step, a set of thermal load data was generated to completely specify the thermal state of the 
+lower 16 stories of the building.  The thermal load data were in a format that was consistent with the 
+structural models and could be readily read with the ANSYS finite element software to specify body loads 
+(temperature and temperature gradient information) on the entire structure, for use in the simulations 
+recounted in Chapter 11.  ANSYS performed a linear interpolation between two consecutive thermal load 
+steps.  A second set of thermal load data was generated as input for the LS-DYNA simulations of the 
+building collapse (Chapter 12). 
+The Investigation Team estimated the sensitivity of the thermostructural simulations to the temperatures 
+developed from the fires.  Accordingly, three different thermal response computations were performed 
+that were consistent with a realistic and reasonable range of expected fires.  Case A used the temperature 
+data as obtained from the FDS simulation.  Case B incremented the Case A gas temperatures by 
+10 percent.  This increased the severity of the fire in three ways.  It increased the local heat transfer to the 
+structural members, it increased the area over which the structural members were heated, and it increased 
+the chance of hot zone overlap on adjacent floors.  A 10 percent increase or decrease in gas temperatures 
+resulted in a roughly 30 percent increase or decrease in the heat flux to structural members. For example, 
+a gas temperature of 1000 °C results in a heat flux to nearby objects of about 150 kW/m2. A 10 percent 
+increase in gas temperatures to 1100 °C leads to a heat flux of about 200 kW/m2; a 10 % decrease in 
+temperature leads to a heat flux of just over 100 kW/m2. This range of thermal exposure is fairly broad, 

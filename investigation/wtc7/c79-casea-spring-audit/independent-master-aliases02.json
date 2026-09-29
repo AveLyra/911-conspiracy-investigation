@@ -1,0 +1,1930 @@
+{
+  "command": [
+    "research/sherlock-wtc7-investigation/c79-casea-spring-audit/verify_casea_master_aliases.py",
+    "--out",
+    "independent-master-aliases02.json"
+  ],
+  "controls": {
+    "cases": [
+      {
+        "actual": [
+          {
+            "effective_pid": 1004,
+            "eid": 7,
+            "family": "shell",
+            "line": 50,
+            "node_slots": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "ordered_match": false,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": true,
+        "listed": [],
+        "name": "exact_unlisted",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  2,
+                  1,
+                  4,
+                  3
+                ],
+                "ordered_match": false,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": true,
+                "eid": true,
+                "line": true,
+                "master_node_multiset": true,
+                "ordered_match_flag": true,
+                "ordered_nodes": true,
+                "original_pid": true,
+                "source": true,
+                "thickness_line": true,
+                "thickness_values": true
+              },
+              "listed_in_frozen_casea": false,
+              "passed": true
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [],
+          "missing_eids": [],
+          "passed": true
+        }
+      },
+      {
+        "actual": [
+          {
+            "effective_pid": 1004,
+            "eid": 7,
+            "family": "shell",
+            "line": 50,
+            "node_slots": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "ordered_match": false,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": true,
+        "listed": [
+          7
+        ],
+        "name": "exact_listed",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  2,
+                  1,
+                  4,
+                  3
+                ],
+                "ordered_match": false,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": true,
+                "eid": true,
+                "line": true,
+                "master_node_multiset": true,
+                "ordered_match_flag": true,
+                "ordered_nodes": true,
+                "original_pid": true,
+                "source": true,
+                "thickness_line": true,
+                "thickness_values": true
+              },
+              "listed_in_frozen_casea": true,
+              "passed": true
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [],
+          "missing_eids": [],
+          "passed": true
+        }
+      },
+      {
+        "actual": [
+          {
+            "effective_pid": 1004,
+            "eid": 7,
+            "family": "shell",
+            "line": 50,
+            "node_slots": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "source": 121,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "ordered_match": false,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": false,
+        "listed": [],
+        "name": "source",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  2,
+                  1,
+                  4,
+                  3
+                ],
+                "ordered_match": false,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": true,
+                "eid": true,
+                "line": true,
+                "master_node_multiset": true,
+                "ordered_match_flag": true,
+                "ordered_nodes": true,
+                "original_pid": true,
+                "source": false,
+                "thickness_line": true,
+                "thickness_values": true
+              },
+              "listed_in_frozen_casea": false,
+              "passed": false
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [],
+          "missing_eids": [],
+          "passed": false
+        }
+      },
+      {
+        "actual": [
+          {
+            "effective_pid": 1004,
+            "eid": 7,
+            "family": "shell",
+            "line": 49,
+            "node_slots": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "ordered_match": false,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": false,
+        "listed": [],
+        "name": "line",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  2,
+                  1,
+                  4,
+                  3
+                ],
+                "ordered_match": false,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": true,
+                "eid": true,
+                "line": false,
+                "master_node_multiset": true,
+                "ordered_match_flag": true,
+                "ordered_nodes": true,
+                "original_pid": true,
+                "source": true,
+                "thickness_line": true,
+                "thickness_values": true
+              },
+              "listed_in_frozen_casea": false,
+              "passed": false
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [],
+          "missing_eids": [],
+          "passed": false
+        }
+      },
+      {
+        "actual": [
+          {
+            "effective_pid": 1004,
+            "eid": 7,
+            "family": "shell",
+            "line": 50,
+            "node_slots": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 5,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "ordered_match": false,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": false,
+        "listed": [],
+        "name": "original_pid",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  2,
+                  1,
+                  4,
+                  3
+                ],
+                "ordered_match": false,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": true,
+                "eid": true,
+                "line": true,
+                "master_node_multiset": true,
+                "ordered_match_flag": true,
+                "ordered_nodes": true,
+                "original_pid": false,
+                "source": true,
+                "thickness_line": true,
+                "thickness_values": true
+              },
+              "listed_in_frozen_casea": false,
+              "passed": false
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [],
+          "missing_eids": [],
+          "passed": false
+        }
+      },
+      {
+        "actual": [
+          {
+            "effective_pid": 4,
+            "eid": 7,
+            "family": "shell",
+            "line": 50,
+            "node_slots": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "ordered_match": false,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": false,
+        "listed": [],
+        "name": "effective_pid",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  2,
+                  1,
+                  4,
+                  3
+                ],
+                "ordered_match": false,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": false,
+                "eid": true,
+                "line": true,
+                "master_node_multiset": true,
+                "ordered_match_flag": true,
+                "ordered_nodes": true,
+                "original_pid": true,
+                "source": true,
+                "thickness_line": true,
+                "thickness_values": true
+              },
+              "listed_in_frozen_casea": false,
+              "passed": false
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [],
+          "missing_eids": [],
+          "passed": false
+        }
+      },
+      {
+        "actual": [
+          {
+            "effective_pid": 1004,
+            "eid": 7,
+            "family": "shell",
+            "line": 50,
+            "node_slots": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "original_pid": 4,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "ordered_match": false,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": false,
+        "listed": [],
+        "name": "node_slots",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  2,
+                  1,
+                  4,
+                  3
+                ],
+                "ordered_match": false,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": true,
+                "eid": true,
+                "line": true,
+                "master_node_multiset": true,
+                "ordered_match_flag": false,
+                "ordered_nodes": false,
+                "original_pid": true,
+                "source": true,
+                "thickness_line": true,
+                "thickness_values": true
+              },
+              "listed_in_frozen_casea": false,
+              "passed": false
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [],
+          "missing_eids": [],
+          "passed": false
+        }
+      },
+      {
+        "actual": [
+          {
+            "effective_pid": 1004,
+            "eid": 7,
+            "family": "shell",
+            "line": 50,
+            "node_slots": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              null
+            ]
+          }
+        ],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "ordered_match": false,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": false,
+        "listed": [],
+        "name": "thickness_values",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  2,
+                  1,
+                  4,
+                  3
+                ],
+                "ordered_match": false,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": true,
+                "eid": true,
+                "line": true,
+                "master_node_multiset": true,
+                "ordered_match_flag": true,
+                "ordered_nodes": true,
+                "original_pid": true,
+                "source": true,
+                "thickness_line": true,
+                "thickness_values": false
+              },
+              "listed_in_frozen_casea": false,
+              "passed": false
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [],
+          "missing_eids": [],
+          "passed": false
+        }
+      },
+      {
+        "actual": [
+          {
+            "effective_pid": 1004,
+            "eid": 7,
+            "family": "shell",
+            "line": 50,
+            "node_slots": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "source": 120,
+            "thickness_line": 52,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "ordered_match": false,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": false,
+        "listed": [],
+        "name": "thickness_line",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  2,
+                  1,
+                  4,
+                  3
+                ],
+                "ordered_match": false,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": true,
+                "eid": true,
+                "line": true,
+                "master_node_multiset": true,
+                "ordered_match_flag": true,
+                "ordered_nodes": true,
+                "original_pid": true,
+                "source": true,
+                "thickness_line": false,
+                "thickness_values": true
+              },
+              "listed_in_frozen_casea": false,
+              "passed": false
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [],
+          "missing_eids": [],
+          "passed": false
+        }
+      },
+      {
+        "actual": [],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "ordered_match": false,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": false,
+        "listed": [],
+        "name": "missing",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": null,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  2,
+                  1,
+                  4,
+                  3
+                ],
+                "ordered_match": false,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": false,
+                "eid": false,
+                "line": false,
+                "master_node_multiset": false,
+                "ordered_match_flag": false,
+                "ordered_nodes": false,
+                "original_pid": false,
+                "source": false,
+                "thickness_line": false,
+                "thickness_values": false
+              },
+              "listed_in_frozen_casea": false,
+              "passed": false
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [],
+          "missing_eids": [
+            7
+          ],
+          "passed": false
+        }
+      },
+      {
+        "actual": [
+          {
+            "effective_pid": 1004,
+            "eid": 7,
+            "family": "shell",
+            "line": 50,
+            "node_slots": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          },
+          {
+            "effective_pid": 1004,
+            "eid": 8,
+            "family": "shell",
+            "line": 50,
+            "node_slots": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "ordered_match": false,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": false,
+        "listed": [],
+        "name": "extra",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  2,
+                  1,
+                  4,
+                  3
+                ],
+                "ordered_match": false,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": true,
+                "eid": true,
+                "line": true,
+                "master_node_multiset": true,
+                "ordered_match_flag": true,
+                "ordered_nodes": true,
+                "original_pid": true,
+                "source": true,
+                "thickness_line": true,
+                "thickness_values": true
+              },
+              "listed_in_frozen_casea": false,
+              "passed": true
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [
+            8
+          ],
+          "missing_eids": [],
+          "passed": false
+        }
+      },
+      {
+        "actual": [
+          {
+            "effective_pid": 1004,
+            "eid": 7,
+            "family": "shell",
+            "line": 50,
+            "node_slots": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "ordered_match": true,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": false,
+        "listed": [],
+        "name": "incorrect_order_flag",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  2,
+                  1,
+                  4,
+                  3
+                ],
+                "ordered_match": true,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": true,
+                "eid": true,
+                "line": true,
+                "master_node_multiset": true,
+                "ordered_match_flag": false,
+                "ordered_nodes": true,
+                "original_pid": true,
+                "source": true,
+                "thickness_line": true,
+                "thickness_values": true
+              },
+              "listed_in_frozen_casea": false,
+              "passed": false
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [],
+          "missing_eids": [],
+          "passed": false
+        }
+      },
+      {
+        "actual": [
+          {
+            "effective_pid": 1004,
+            "eid": 7,
+            "family": "shell",
+            "line": 50,
+            "node_slots": [
+              1,
+              2,
+              3,
+              3
+            ],
+            "original_pid": 4,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected": [
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              1,
+              2,
+              3,
+              3
+            ],
+            "ordered_match": true,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              3
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          },
+          {
+            "alias_index": 0,
+            "cid": 1,
+            "effective_pid": 1004,
+            "eid": 7,
+            "line": 50,
+            "master_index": 0,
+            "master_line": 90,
+            "master_nodes": [
+              1,
+              2,
+              3,
+              3
+            ],
+            "ordered_match": true,
+            "ordered_nodes": [
+              1,
+              2,
+              3,
+              3
+            ],
+            "original_pid": 4,
+            "set_id": 1,
+            "source": 120,
+            "thickness_line": 51,
+            "thickness_values": [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              null
+            ]
+          }
+        ],
+        "expected_pass": true,
+        "listed": [
+          7
+        ],
+        "name": "triangle_repeated_alias",
+        "output": {
+          "alias_comparisons": [
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  1,
+                  2,
+                  3,
+                  3
+                ],
+                "ordered_match": true,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  3
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": true,
+                "eid": true,
+                "line": true,
+                "master_node_multiset": true,
+                "ordered_match_flag": true,
+                "ordered_nodes": true,
+                "original_pid": true,
+                "source": true,
+                "thickness_line": true,
+                "thickness_values": true
+              },
+              "listed_in_frozen_casea": true,
+              "passed": true
+            },
+            {
+              "actual_element_index": 0,
+              "expected": {
+                "alias_index": 0,
+                "cid": 1,
+                "effective_pid": 1004,
+                "eid": 7,
+                "line": 50,
+                "master_index": 0,
+                "master_line": 90,
+                "master_nodes": [
+                  1,
+                  2,
+                  3,
+                  3
+                ],
+                "ordered_match": true,
+                "ordered_nodes": [
+                  1,
+                  2,
+                  3,
+                  3
+                ],
+                "original_pid": 4,
+                "set_id": 1,
+                "source": 120,
+                "thickness_line": 51,
+                "thickness_values": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.4,
+                  null
+                ]
+              },
+              "field_equal": {
+                "effective_pid": true,
+                "eid": true,
+                "line": true,
+                "master_node_multiset": true,
+                "ordered_match_flag": true,
+                "ordered_nodes": true,
+                "original_pid": true,
+                "source": true,
+                "thickness_line": true,
+                "thickness_values": true
+              },
+              "listed_in_frozen_casea": true,
+              "passed": true
+            }
+          ],
+          "comparison_fields": [
+            "eid",
+            "source",
+            "line",
+            "original_pid",
+            "effective_pid",
+            "thickness_values",
+            "thickness_line",
+            "ordered_nodes",
+            "master_node_multiset",
+            "ordered_match_flag"
+          ],
+          "extra_eids": [],
+          "missing_eids": [],
+          "passed": true
+        }
+      }
+    ],
+    "create_only_refused": true,
+    "new_count": 20,
+    "own_reader": {
+      "count": 25,
+      "errors": 0,
+      "failures": 0,
+      "passed": true
+    },
+    "passed": true,
+    "rejection_controls": {
+      "duplicate_shell": true,
+      "wrong_family": true
+    },
+    "stage_schema_cases": [
+      {
+        "accepted": true,
+        "expected_accept": true,
+        "input": {
+          "controls": {
+            "errors": 0,
+            "failures": 0,
+            "run": 11
+          },
+          "status": "complete"
+        }
+      },
+      {
+        "accepted": false,
+        "expected_accept": false,
+        "input": {
+          "controls": {
+            "errors": 0,
+            "failures": 0,
+            "run": 11
+          },
+          "status": "PASS"
+        }
+      },
+      {
+        "accepted": false,
+        "expected_accept": false,
+        "input": {
+          "controls": {
+            "errors": 1,
+            "failures": 0,
+            "run": 11
+          },
+          "status": "complete"
+        }
+      },
+      {
+        "accepted": false,
+        "expected_accept": false,
+        "input": {
+          "controls": {
+            "errors": 0,
+            "failures": 0,
+            "run": 10
+          },
+          "status": "complete"
+        }
+      }
+    ]
+  },
+  "dependency_reuse": "Own frozen independent_casea.py; not the root parser.",
+  "elapsed_seconds": 0.1925411670235917,
+  "failure": {
+    "class": "Failure",
+    "code": "master_set_id",
+    "detail_sha256": "4841329b3b67199723a2864a7749b7f546b2b394eb7c6571cab883883c503408"
+  },
+  "peak_bytes": 42893312,
+  "pins_before": {
+    "../CHARTER.md": "54a4a23558a6b1ed756d3398e9e58d0972c6e531aadef5cd4027f29c4b9756bd",
+    "../c79-contact-geometry/stage-root01.json": "deae7314c487b13e84302eb60b53bffb461f63d286f8d596b96a67377e631963",
+    "PROTOCOL.md": "b616114713bdfb20765bc033adc12d38cf888ae95704a41c17f705c3e791ea41",
+    "casea-comparison01.json": "6dcd6bd5ff6c41ffcd09f6c748c4c9ff7ac63ed569ae23e15816d01dd32c7a50",
+    "compare_casea_independent.py": "7c8c330cca7d9a1a79e454bca1adb5f8eb9a2051c5c9ea2e49b4a5c72fc1cde0",
+    "independent-casea01.json": "0dc0c853ca9fe6e58a06f366c3e71febbf3d5e70c235fa9434a47f8f8b5294eb",
+    "independent_casea.py": "19657afc02b4d63ba98e3374f153ce86ab1cfbc7575a6275fb64fc289eaa170c",
+    "own_reader_dependencies": {
+      "../CHARTER.md": "54a4a23558a6b1ed756d3398e9e58d0972c6e531aadef5cd4027f29c4b9756bd",
+      "../c79-contact-geometry/exact-proximity80.json": "25cb6d5a71a5d34908368523725cfe8612a4d8cf37de616220cf36e9663a4324",
+      "../c79-contact-geometry/exact-proximity80.npz": "79bbdc475b2680034096092e207bdd95250e4e7191ae4275ace4106e526c5628",
+      "../c79-contact-geometry/extract_controls.py": "f970de77c746133d5935209e2294e9e623127b17e417a756d88a9ba2e2dd8826",
+      "../c79-contact-geometry/independent-exact-reference80-root01.json": "4f5e0576ea843cd1640c2cac17ece0f44491f8ca19d88b7b38c24f45a47eacb8",
+      "../c79-contact-geometry/stage-root01.json": "deae7314c487b13e84302eb60b53bffb461f63d286f8d596b96a67377e631963",
+      "../c79-contact-geometry/stage-root01.npz": "2324c9a606dbbf45fc593c5a69bbfc05d7ca538aca3db04031970a109db35bcf",
+      "../model-member-map/method-source-review.md": "cbea5556de774752fefc82ff5c49ed299bb73ea3fb65af0fcafc7c0e7f24fe5f",
+      "../model-member-map/run06/receipt.json": "4ed99830a61606e18ac0720102354c3450ecffc61fc7743d35f9b62b9750529d",
+      "PROTOCOL.md": "b616114713bdfb20765bc033adc12d38cf888ae95704a41c17f705c3e791ea41",
+      "producer": "19657afc02b4d63ba98e3374f153ce86ab1cfbc7575a6275fb64fc289eaa170c"
+    },
+    "supplement": "28113e82eaf0898597b6389f715a4d86e1d91e9b1501a82554a872dedcb2a7ca"
+  },
+  "runtime": {
+    "executable": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]"
+  },
+  "sources": {},
+  "status": "FAIL"
+}

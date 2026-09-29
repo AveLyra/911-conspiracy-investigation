@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "research-machine"
+dynamic = ["version"]
+description = "Faraday: a local Research Machine for turning curiosity into testable inquiries."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [{ name = "Humanifest contributors" }]
+keywords = ["research", "science", "provenance", "reproducibility", "open-science"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/humanifest/faraday"
+Repository = "https://github.com/humanifest/faraday"
+Issues = "https://github.com/humanifest/faraday/issues"
+Sponsor = "https://github.com/sponsors/humanifest"
+
+[project.optional-dependencies]
+test = ["pytest>=8", "jsonschema>=4.23"]
+notebook = ["jupyter-client>=8.6", "nbclient>=0.10", "nbformat>=5.10"]
+
+[project.scripts]
+research = "research_machine.interfaces.cli:main"
+research-notebook = "research_machine.executors.protected_notebook:main"
+research-notebook-preflight = "research_machine.executors.notebook_preflight:main"
+research-notebook-runtime-preflight = "research_machine.executors.runtime_preflight:main"
+research-notebook-freeze-bundle = "research_machine.executors.notebook_freeze_bundle:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "research_machine.__version__"}
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+addopts = "-q"

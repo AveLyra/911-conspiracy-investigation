@@ -1,0 +1,696 @@
+{
+  "allowlisted_probe": {
+    "format": {
+      "duration": "268.335002",
+      "size": "208810910",
+      "start_time": "0.000000"
+    },
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "avg_frame_rate": "2997/100",
+        "chroma_location": "left",
+        "codec_name": "h264",
+        "codec_type": "video",
+        "color_primaries": "smpte170m",
+        "color_range": "tv",
+        "color_space": "smpte170m",
+        "color_transfer": "bt709",
+        "display_aspect_ratio": "4:3",
+        "duration": "268.335002",
+        "field_order": "progressive",
+        "height": 480,
+        "index": 0,
+        "nb_frames": "8042",
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30000/1001",
+        "sample_aspect_ratio": "1:1",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "time_base": "1/2997",
+        "width": 640
+      },
+      {
+        "avg_frame_rate": "0/0",
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "duration": "268.333333",
+        "index": 1,
+        "nb_frames": "12880000",
+        "r_frame_rate": "0/0",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "time_base": "1/48000"
+      }
+    ]
+  },
+  "category": "decode_diagnostic_review",
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,avg_frame_rate,r_frame_rate,time_base,start_pts,start_time,duration,nb_frames,field_order,sample_aspect_ratio,display_aspect_ratio,color_range,color_space,color_transfer,color_primaries,chroma_location:format=duration,start_time,size:stream_tags=:stream_disposition=:format_tags=:stream_side_data=",
+        "-of",
+        "json",
+        "/Users/admin/docs/911/research/wtc7-video-comparison/media/analysis-source/NIST Camera 2_CBS-Net Dub6 48 (Converted).mov"
+      ],
+      "returncode": 0,
+      "stderr": "probe.stderr",
+      "stdout": "probe.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "warning",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,width,height:frame_tags=:frame_side_data=",
+        "-of",
+        "compact=p=0:nk=0",
+        "/Users/admin/docs/911/research/wtc7-video-comparison/media/analysis-source/NIST Camera 2_CBS-Net Dub6 48 (Converted).mov"
+      ],
+      "returncode": 0,
+      "stderr": "frame-inventory.stderr",
+      "stdout": "frame-inventory.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-nostats",
+        "-loglevel",
+        "level+info",
+        "-n",
+        "-copyts",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911/research/wtc7-video-comparison/media/analysis-source/NIST Camera 2_CBS-Net Dub6 48 (Converted).mov",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-map_metadata",
+        "-1",
+        "-map_chapters",
+        "-1",
+        "-vf",
+        "select='eq(n,0)+eq(n,60)+eq(n,120)+eq(n,180)+eq(n,240)+eq(n,300)+eq(n,360)+eq(n,420)+eq(n,480)+eq(n,540)+eq(n,600)+eq(n,660)+eq(n,720)+eq(n,780)+eq(n,840)+eq(n,900)+eq(n,960)+eq(n,1019)+eq(n,1079)+eq(n,1139)+eq(n,1199)+eq(n,1259)+eq(n,1319)+eq(n,1379)+eq(n,1439)+eq(n,1499)+eq(n,1559)+eq(n,1619)+eq(n,1679)+eq(n,1739)+eq(n,1799)+eq(n,1859)+eq(n,1919)+eq(n,1978)+eq(n,2038)+eq(n,2098)+eq(n,2158)+eq(n,2218)+eq(n,2278)+eq(n,2338)+eq(n,2398)+eq(n,2458)+eq(n,2518)+eq(n,2578)+eq(n,2638)+eq(n,2698)+eq(n,2758)+eq(n,2818)+eq(n,2878)+eq(n,2938)+eq(n,2997)+eq(n,3057)+eq(n,3117)+eq(n,3177)+eq(n,3237)+eq(n,3297)+eq(n,3357)+eq(n,3417)+eq(n,3477)+eq(n,3537)+eq(n,3597)+eq(n,3657)+eq(n,3717)+eq(n,3777)+eq(n,3837)+eq(n,3897)+eq(n,3957)+eq(n,4016)+eq(n,4076)+eq(n,4136)+eq(n,4196)+eq(n,4256)+eq(n,4316)+eq(n,4376)+eq(n,4436)+eq(n,4496)+eq(n,4556)+eq(n,4616)+eq(n,4676)+eq(n,4736)+eq(n,4796)+eq(n,4856)+eq(n,4916)+eq(n,4975)+eq(n,5035)+eq(n,5095)+eq(n,5155)+eq(n,5215)+eq(n,5275)+eq(n,5335)+eq(n,5395)+eq(n,5455)+eq(n,5515)+eq(n,5575)+eq(n,5635)+eq(n,5695)+eq(n,5755)+eq(n,5815)+eq(n,5875)+eq(n,5935)+eq(n,5994)+eq(n,6054)+eq(n,6114)+eq(n,6174)+eq(n,6234)+eq(n,6294)+eq(n,6354)+eq(n,6414)+eq(n,6474)+eq(n,6534)+eq(n,6594)+eq(n,6654)+eq(n,6714)+eq(n,6774)+eq(n,6834)+eq(n,6894)+eq(n,6954)+eq(n,7013)+eq(n,7073)+eq(n,7133)+eq(n,7193)+eq(n,7253)+eq(n,7313)+eq(n,7373)+eq(n,7433)+eq(n,7493)+eq(n,7553)+eq(n,7613)+eq(n,7673)+eq(n,7733)+eq(n,7793)+eq(n,7853)+eq(n,7913)+eq(n,7972)+eq(n,8032)',showinfo",
+        "-noautoscale",
+        "-pix_fmt",
+        "rgb24",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base:v",
+        "demux",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-video-lineage/v2-run01-VID-WTC7-001/VID-WTC7-001/native/frame-%06d.png"
+      ],
+      "returncode": 0,
+      "stderr": "decode.stderr",
+      "stdout": "decode.stdout"
+    }
+  ],
+  "coverage": {
+    "decoded_frame_count": 8042,
+    "empty_bins_within_observed_range": [],
+    "first_source_pts": 0,
+    "frame_count_per_occupied_bin": [
+      {
+        "bin": 0,
+        "frames": 60
+      },
+      {
+        "bin": 1,
+        "frames": 60
+      },
+      {
+        "bin": 2,
+        "frames": 60
+      },
+      {
+        "bin": 3,
+        "frames": 60
+      },
+      {
+        "bin": 4,
+        "frames": 60
+      },
+      {
+        "bin": 5,
+        "frames": 60
+      },
+      {
+        "bin": 6,
+        "frames": 60
+      },
+      {
+        "bin": 7,
+        "frames": 60
+      },
+      {
+        "bin": 8,
+        "frames": 60
+      },
+      {
+        "bin": 9,
+        "frames": 60
+      },
+      {
+        "bin": 10,
+        "frames": 60
+      },
+      {
+        "bin": 11,
+        "frames": 60
+      },
+      {
+        "bin": 12,
+        "frames": 60
+      },
+      {
+        "bin": 13,
+        "frames": 60
+      },
+      {
+        "bin": 14,
+        "frames": 60
+      },
+      {
+        "bin": 15,
+        "frames": 60
+      },
+      {
+        "bin": 16,
+        "frames": 59
+      },
+      {
+        "bin": 17,
+        "frames": 60
+      },
+      {
+        "bin": 18,
+        "frames": 60
+      },
+      {
+        "bin": 19,
+        "frames": 60
+      },
+      {
+        "bin": 20,
+        "frames": 60
+      },
+      {
+        "bin": 21,
+        "frames": 60
+      },
+      {
+        "bin": 22,
+        "frames": 60
+      },
+      {
+        "bin": 23,
+        "frames": 60
+      },
+      {
+        "bin": 24,
+        "frames": 60
+      },
+      {
+        "bin": 25,
+        "frames": 60
+      },
+      {
+        "bin": 26,
+        "frames": 60
+      },
+      {
+        "bin": 27,
+        "frames": 60
+      },
+      {
+        "bin": 28,
+        "frames": 60
+      },
+      {
+        "bin": 29,
+        "frames": 60
+      },
+      {
+        "bin": 30,
+        "frames": 60
+      },
+      {
+        "bin": 31,
+        "frames": 60
+      },
+      {
+        "bin": 32,
+        "frames": 59
+      },
+      {
+        "bin": 33,
+        "frames": 60
+      },
+      {
+        "bin": 34,
+        "frames": 60
+      },
+      {
+        "bin": 35,
+        "frames": 60
+      },
+      {
+        "bin": 36,
+        "frames": 60
+      },
+      {
+        "bin": 37,
+        "frames": 60
+      },
+      {
+        "bin": 38,
+        "frames": 60
+      },
+      {
+        "bin": 39,
+        "frames": 60
+      },
+      {
+        "bin": 40,
+        "frames": 60
+      },
+      {
+        "bin": 41,
+        "frames": 60
+      },
+      {
+        "bin": 42,
+        "frames": 60
+      },
+      {
+        "bin": 43,
+        "frames": 60
+      },
+      {
+        "bin": 44,
+        "frames": 60
+      },
+      {
+        "bin": 45,
+        "frames": 60
+      },
+      {
+        "bin": 46,
+        "frames": 60
+      },
+      {
+        "bin": 47,
+        "frames": 60
+      },
+      {
+        "bin": 48,
+        "frames": 60
+      },
+      {
+        "bin": 49,
+        "frames": 59
+      },
+      {
+        "bin": 50,
+        "frames": 60
+      },
+      {
+        "bin": 51,
+        "frames": 60
+      },
+      {
+        "bin": 52,
+        "frames": 60
+      },
+      {
+        "bin": 53,
+        "frames": 60
+      },
+      {
+        "bin": 54,
+        "frames": 60
+      },
+      {
+        "bin": 55,
+        "frames": 60
+      },
+      {
+        "bin": 56,
+        "frames": 60
+      },
+      {
+        "bin": 57,
+        "frames": 60
+      },
+      {
+        "bin": 58,
+        "frames": 60
+      },
+      {
+        "bin": 59,
+        "frames": 60
+      },
+      {
+        "bin": 60,
+        "frames": 60
+      },
+      {
+        "bin": 61,
+        "frames": 60
+      },
+      {
+        "bin": 62,
+        "frames": 60
+      },
+      {
+        "bin": 63,
+        "frames": 60
+      },
+      {
+        "bin": 64,
+        "frames": 60
+      },
+      {
+        "bin": 65,
+        "frames": 60
+      },
+      {
+        "bin": 66,
+        "frames": 59
+      },
+      {
+        "bin": 67,
+        "frames": 60
+      },
+      {
+        "bin": 68,
+        "frames": 60
+      },
+      {
+        "bin": 69,
+        "frames": 60
+      },
+      {
+        "bin": 70,
+        "frames": 60
+      },
+      {
+        "bin": 71,
+        "frames": 60
+      },
+      {
+        "bin": 72,
+        "frames": 60
+      },
+      {
+        "bin": 73,
+        "frames": 60
+      },
+      {
+        "bin": 74,
+        "frames": 60
+      },
+      {
+        "bin": 75,
+        "frames": 60
+      },
+      {
+        "bin": 76,
+        "frames": 60
+      },
+      {
+        "bin": 77,
+        "frames": 60
+      },
+      {
+        "bin": 78,
+        "frames": 60
+      },
+      {
+        "bin": 79,
+        "frames": 60
+      },
+      {
+        "bin": 80,
+        "frames": 60
+      },
+      {
+        "bin": 81,
+        "frames": 60
+      },
+      {
+        "bin": 82,
+        "frames": 59
+      },
+      {
+        "bin": 83,
+        "frames": 60
+      },
+      {
+        "bin": 84,
+        "frames": 60
+      },
+      {
+        "bin": 85,
+        "frames": 60
+      },
+      {
+        "bin": 86,
+        "frames": 60
+      },
+      {
+        "bin": 87,
+        "frames": 60
+      },
+      {
+        "bin": 88,
+        "frames": 60
+      },
+      {
+        "bin": 89,
+        "frames": 60
+      },
+      {
+        "bin": 90,
+        "frames": 60
+      },
+      {
+        "bin": 91,
+        "frames": 60
+      },
+      {
+        "bin": 92,
+        "frames": 60
+      },
+      {
+        "bin": 93,
+        "frames": 60
+      },
+      {
+        "bin": 94,
+        "frames": 60
+      },
+      {
+        "bin": 95,
+        "frames": 60
+      },
+      {
+        "bin": 96,
+        "frames": 60
+      },
+      {
+        "bin": 97,
+        "frames": 60
+      },
+      {
+        "bin": 98,
+        "frames": 60
+      },
+      {
+        "bin": 99,
+        "frames": 59
+      },
+      {
+        "bin": 100,
+        "frames": 60
+      },
+      {
+        "bin": 101,
+        "frames": 60
+      },
+      {
+        "bin": 102,
+        "frames": 60
+      },
+      {
+        "bin": 103,
+        "frames": 60
+      },
+      {
+        "bin": 104,
+        "frames": 60
+      },
+      {
+        "bin": 105,
+        "frames": 60
+      },
+      {
+        "bin": 106,
+        "frames": 60
+      },
+      {
+        "bin": 107,
+        "frames": 60
+      },
+      {
+        "bin": 108,
+        "frames": 60
+      },
+      {
+        "bin": 109,
+        "frames": 60
+      },
+      {
+        "bin": 110,
+        "frames": 60
+      },
+      {
+        "bin": 111,
+        "frames": 60
+      },
+      {
+        "bin": 112,
+        "frames": 60
+      },
+      {
+        "bin": 113,
+        "frames": 60
+      },
+      {
+        "bin": 114,
+        "frames": 60
+      },
+      {
+        "bin": 115,
+        "frames": 60
+      },
+      {
+        "bin": 116,
+        "frames": 59
+      },
+      {
+        "bin": 117,
+        "frames": 60
+      },
+      {
+        "bin": 118,
+        "frames": 60
+      },
+      {
+        "bin": 119,
+        "frames": 60
+      },
+      {
+        "bin": 120,
+        "frames": 60
+      },
+      {
+        "bin": 121,
+        "frames": 60
+      },
+      {
+        "bin": 122,
+        "frames": 60
+      },
+      {
+        "bin": 123,
+        "frames": 60
+      },
+      {
+        "bin": 124,
+        "frames": 60
+      },
+      {
+        "bin": 125,
+        "frames": 60
+      },
+      {
+        "bin": 126,
+        "frames": 60
+      },
+      {
+        "bin": 127,
+        "frames": 60
+      },
+      {
+        "bin": 128,
+        "frames": 60
+      },
+      {
+        "bin": 129,
+        "frames": 60
+      },
+      {
+        "bin": 130,
+        "frames": 60
+      },
+      {
+        "bin": 131,
+        "frames": 60
+      },
+      {
+        "bin": 132,
+        "frames": 59
+      },
+      {
+        "bin": 133,
+        "frames": 60
+      },
+      {
+        "bin": 134,
+        "frames": 10
+      }
+    ],
+    "last_source_pts": 804101,
+    "observed_bin_range": [
+      0,
+      134
+    ],
+    "occupied_bin_count": 135,
+    "range_note": "No inference about bins before first or after last decoded frame; empty internal bins are not filled.",
+    "recognized_terminal_delimiter_records": 8042
+  },
+  "exception_type": "CheckError",
+  "phase": "decode",
+  "source": {
+    "bytes": 208810910,
+    "id": "VID-WTC7-001",
+    "path": "/Users/admin/docs/911/research/wtc7-video-comparison/media/analysis-source/NIST Camera 2_CBS-Net Dub6 48 (Converted).mov",
+    "sha256": "84da90a48bdd710faf8b0a60c1a23a0927f22184216a1a631cbd77d4243b6730",
+    "step_seconds": 2
+  },
+  "source_after": {
+    "bytes": 208810910,
+    "sha256": "84da90a48bdd710faf8b0a60c1a23a0927f22184216a1a631cbd77d4243b6730"
+  },
+  "source_after_matches_pin": true,
+  "source_before": {
+    "bytes": 208810910,
+    "sha256": "84da90a48bdd710faf8b0a60c1a23a0927f22184216a1a631cbd77d4243b6730"
+  },
+  "source_id": "VID-WTC7-001",
+  "status": "failed"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "failed_before_source_read",
+  "receipt_kind": "root_record_of_observed_tool_results_not_original_process_json",
+  "producer_sha256": "bea73d76a92ac138a88ab2dd7f712df5a2c35145a057f2fce7439c4c1da18305",
+  "preserved_producer": "extract_geometry-before-ground-review.py",
+  "preserved_producer_sha256": "bea73d76a92ac138a88ab2dd7f712df5a2c35145a057f2fce7439c4c1da18305",
+  "control_command": "bundled Python 3.12.14 -B extract_geometry.py --controls",
+  "control_result": {
+    "exit_code": 1,
+    "tests_run": 11,
+    "failures": 0,
+    "errors": 1,
+    "test": "test_actual_beam_orientation_and_duplicate_family",
+    "code": "element_node_range",
+    "fixture": "discrete element second node equals zero"
+  },
+  "source_attempt_command": "bundled Python 3.12.14 -B extract_geometry.py --output stage-root01.json",
+  "source_attempt_result": {
+    "exit_code": 2,
+    "status": "rejected",
+    "error": "controls_failed",
+    "geometry_sources_read": 0,
+    "numerical_result_written": false
+  },
+  "scope": "Synthetic reader boundary failure, not source evidence or solver behavior. Exact ground-reference convention requires primary-source review before repair.",
+  "preservation_note": "The first copy initially acquired one extra terminal newline through apply_patch. A scoped diff identified only that newline; it was removed, and cmp confirmed byte equality before any implementation repair."
+}

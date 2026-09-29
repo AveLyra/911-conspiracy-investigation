@@ -1,0 +1,149 @@
+{
+  "protocol_sha256": "ea5c641475f47ef7a72fcf25876ec89eca8078b2756303920c323affe2a969a5",
+  "geometry_sha256": "d7c593a6d7ccad9f1f403bf0ee8a2bfe5afd6d0c6e5dd446c3602e6a5e590a13",
+  "reviewer": "fresh-context-limited-ai-reviewer",
+  "independence": {
+    "type": "fresh_context_limited_AI_annotation",
+    "controls_completed_before_geometry_and_images": true,
+    "prior_appearance_annotations_read": false,
+    "prior_appearance_reports_or_count_outcomes_read": false,
+    "other_reviewer_new_labels_read": false,
+    "geometry_identity_suggestions_seen": true,
+    "protocol_disclosed_selection_rationale_and_expected_control_outcomes": true,
+    "native_complete_images_only": true,
+    "new_crops_or_enhancements": false,
+    "qualification_limit": "AI visual calibration, not qualified human forensic expertise, full blindness, or independent camera evidence. Geometry supplies prior identity suggestions, and source images contain embedded labels. Identity and appearance were assessed from these two report-embedded derivative JPEGs only."
+  },
+  "annotations": [
+    {
+      "asset_id": "A-e43e4088a4a2",
+      "unit_id": "U02",
+      "candidate_identity": "not_single",
+      "opportunity": [0.5, 0.75],
+      "cautions": ["Haze and low contrast increase toward the right of the proposed region.", "Glazing, reflection and interior depth are unknown.", "Approximate polygon includes horizontal frame or sill material."],
+      "decisive_exclusions": [],
+      "appearance": "no_flame_discernible",
+      "reason": "Repeated vertical divisions are visible in the left and central portions of this wide strip; they positively identify multiple framed regions rather than one candidate. Their boundaries and dark blue-gray surface differences support displayed detail over a substantial part of the fixed strip, while the right portion is substantially less distinct, motivating [0.5,0.75]. No flame morphology is discernible in the visible portions. This does not establish absence of fire behind dark glazing or haze. The multi-region identity is an exclusion independently of the appearance label; haze is retained as a caution rather than asserted to erase the visible detail."
+    },
+    {
+      "asset_id": "A-e43e4088a4a2",
+      "unit_id": "U04",
+      "candidate_identity": "not_single",
+      "opportunity": [0.5, 0.75],
+      "cautions": ["Haze softens the dark portions and upper boundaries.", "Localized bright cores lose fine detail.", "Foreground/background depth and emitting material are not authenticated.", "Polygon includes dark frame or sill material between and below brighter regions."],
+      "decisive_exclusions": [],
+      "appearance": "flame_structure",
+      "reason": "At least two separated luminous groups and intervening dark vertical structure lie inside the wide polygon; one candidate identity is contradicted by the visible span across multiple regions. Irregular upward orange-red tongues and brighter yellow-white bases in those groups are consistent with flame morphology. Both luminous contours and adjacent dark boundaries remain usable, although haze and small bright cores limit detail; [0.5,0.75] is a coarse judgment of the entire fixed polygon, not its bright-pixel coverage. The positive appearance survives the not_single exclusion and does not authenticate the source, emitting gas, or number of physical openings."
+    },
+    {
+      "asset_id": "A-e43e4088a4a2",
+      "unit_id": "U05",
+      "candidate_identity": "clipped",
+      "opportunity": [0.25, 0.5],
+      "cautions": ["Bright white core is locally saturated or close to saturation.", "Only a narrow orange margin and surrounding dark edge remain visible.", "Source depth behind the light-colored foreground structure is uncertain."],
+      "decisive_exclusions": [],
+      "appearance": "ambiguous_glow",
+      "reason": "The narrow bright feature abuts and disappears behind the light foreground facade; a complete framed candidate cannot be established. The polygon contains foreground material as well as a white-orange luminous sliver. Some outline and color transitions are visible, but the white core and concealed extent leave only limited usable detail in the fixed region, supporting [0.25,0.5]. The visible bright patch is too small and smooth at this scale for a confident flame-morphology description. Clipped identity already excludes the candidate; I do not add a second unit-level veto based solely on the localized saturation."
+    },
+    {
+      "asset_id": "A-e43e4088a4a2",
+      "unit_id": "U06",
+      "candidate_identity": "not_single",
+      "opportunity": [0.25, 0.5],
+      "cautions": ["Low contrast and dark exposure reduce detail across most of the strip.", "Haze softens the faint vertical divisions.", "Dark glazing or concealed interior cannot be distinguished from this image."],
+      "decisive_exclusions": [],
+      "appearance": "no_flame_discernible",
+      "reason": "Faint repeated vertical divisions across the broad horizontal strip support multiple framed regions, not a single candidate. Their weak edges and a few blue-gray surface transitions provide limited displayed detail, motivating [0.25,0.5]; darkness is not counted as verified interior visibility. No flame morphology is discernible in the visible strip. The dark and hazy portions could conceal features and do not demonstrate absence of interior fire. I retain the low-opportunity description without treating every dark pixel as a decisive obstruction."
+    },
+    {
+      "asset_id": "A-ad43dfe2413b",
+      "unit_id": "R01C03",
+      "candidate_identity": "unresolved",
+      "opportunity": null,
+      "cautions": ["A blue-white smoke-like cloud overlaps much of the proposed region.", "Cloud brightness and blur obscure candidate edges and surface detail.", "Visible cloud does not identify its source opening or depth."],
+      "decisive_exclusions": [],
+      "appearance": "smoke_only_source_unknown",
+      "reason": "The fixed polygon crosses a bright diffuse blue-white cloud; dark fragments remain near its left and lower portions, but the lateral boundaries of one framed candidate are not consistently recoverable through the cloud. I therefore challenge the geometry's nominal opening identity and retain unresolved. I cannot assign a stable usable-detail interval from this display, so opportunity is null. The cloud itself can be described as smoke-like, with no discernible flame structure in this region and no authenticated source. Although obscuration is substantial, its exact unit-level extent is not clear enough to assert an additional decisive exclusion."
+    },
+    {
+      "asset_id": "A-ad43dfe2413b",
+      "unit_id": "R01C06",
+      "candidate_identity": "single_candidate",
+      "opportunity": [0.5, 0.75],
+      "cautions": ["Unknown glazing or reflection can affect the luminous appearance.", "The yellow-orange lower portion loses fine texture.", "Approximate polygon includes some frame or sill material."],
+      "decisive_exclusions": [],
+      "appearance": "ambiguous_glow",
+      "reason": "One dark-outlined framed region is visually locatable, and its cool upper surface, internal division, and luminous yellow-orange lower area provide usable contrast across much of the fixed polygon. The bright lower area is relatively smooth and boundary-conforming at native scale; it does not resolve a sufficiently clear tongue-like form for flame_structure in this pass. [0.5,0.75] reflects the visible boundaries and surface variation with reduced detail in the luminous portion, not an estimate of burning area. Glazing and reflection uncertainty limit source interpretation without preventing this displayed-appearance description."
+    },
+    {
+      "asset_id": "A-ad43dfe2413b",
+      "unit_id": "R01C08",
+      "candidate_identity": "single_candidate",
+      "opportunity": [0.5, 0.75],
+      "cautions": ["Dark glazing or a dark surface may conceal activity behind it.", "A small lighter vertical feature occupies part of the right side; its material and depth are uncertain.", "Approximate boundaries include some framing."],
+      "decisive_exclusions": [],
+      "appearance": "no_flame_discernible",
+      "reason": "The proposed region is attributable to one framed dark panel between neighboring brighter regions. Its outer edges, dark blue-gray surface, and localized lighter feature remain distinguishable, supporting [0.5,0.75] for displayed surface detail. No flame morphology is discernible within this polygon. The lighter feature is too localized and its nature too uncertain to justify a dominant-obstruction exclusion. A describable dark surface is not evidence that an interior is clear or free of fire."
+    },
+    {
+      "asset_id": "A-ad43dfe2413b",
+      "unit_id": "R01C10",
+      "candidate_identity": "single_candidate",
+      "opportunity": [0.25, 0.5],
+      "cautions": ["A broad near-white luminous area removes fine detail in the central/lower part.", "Dark vertical and horizontal lines may be framing, material or superposed structure.", "Source depth and reflected versus emitted contributions are unknown."],
+      "decisive_exclusions": [],
+      "appearance": "flame_structure",
+      "reason": "The exterior vertical separations still locate one nominal candidate. Most of the central/lower luminous area is near white, while darker lines and irregular yellow-orange contours survive at the upper and side margins. These surviving irregular contours are consistent with flame morphology, but only limited detail across the fixed region remains, motivating [0.25,0.5]. Saturation is not converted into a larger opportunity estimate because a positive is visible. I do not assert that the lost central texture independently prevents every unit-level appearance description, because the surviving margins support the stated localized morphology."
+    },
+    {
+      "asset_id": "A-ad43dfe2413b",
+      "unit_id": "R01C11",
+      "candidate_identity": "single_candidate",
+      "opportunity": [0.5, 0.75],
+      "cautions": ["Dark horizontal features and a right-side vertical strip overlap the luminous area.", "Localized yellow-white portions lose texture.", "Unknown glazing, reflection and source depth limit identification of emitting material."],
+      "decisive_exclusions": [],
+      "appearance": "flame_structure",
+      "reason": "One framed candidate is visibly bounded beside the brighter narrow region to its left. Orange-yellow internal variation and irregular narrow rising contours are retained around darker horizontal features, supporting morphology consistent with flame. The outer edges and substantial internal color/texture variation permit [0.5,0.75] opportunity even though the overlapping lines and brightest patches reduce fine detail. Those localized limitations do not independently erase the described appearance. The label is morphological and does not verify emitting gas or interior extent."
+    },
+    {
+      "asset_id": "A-ad43dfe2413b",
+      "unit_id": "R01C12",
+      "candidate_identity": "single_candidate",
+      "opportunity": [0.25, 0.5],
+      "cautions": ["Much of the left portion is very dark; whether this is glazing, hanging material or depth is unresolved.", "A narrow near-white vertical feature at the right loses fine texture.", "The luminous strip could include reflection or illuminated material."],
+      "decisive_exclusions": [],
+      "appearance": "ambiguous_glow",
+      "reason": "The outside frame and contrast with adjacent regions locate one nominal candidate, but the proposed polygon is dominated by a dark left portion and a narrow pale-yellow/white feature near its right side. Only limited internal detail is available across the fixed region, supporting [0.25,0.5]. The narrow bright feature has a largely elongated boundary rather than clearly resolved flame tongues, so ambiguous_glow is appropriate. I cannot establish that the dark portion is an opaque material obstruction rather than glazing or an unlit surface; that uncertainty stays visible as a caution rather than becoming a decisive exclusion."
+    },
+    {
+      "asset_id": "A-ad43dfe2413b",
+      "unit_id": "R02C05",
+      "candidate_identity": "single_candidate",
+      "opportunity": [0.25, 0.5],
+      "cautions": ["Pale curved or hanging material-like features overlap the central/right portion.", "Opacity and depth of those features are uncertain.", "Darkness limits detail in the remaining surface or interior.", "Approximate polygon includes part of the framing."],
+      "decisive_exclusions": [],
+      "appearance": "no_flame_discernible",
+      "reason": "The outer frame supports one candidate identity. Pale curved/vertical features and a dark remainder can be described, but their coverage, opacity and relation to the underlying opening are uncertain, and interior detail is sparse; I assign [0.25,0.5] to displayed usable detail. No flame morphology is discernible in the visible portion. I do not promote the material-like features into a reasoned dominant-obstruction veto because the image does not establish their opacity or complete coverage. Neither this surface description nor the absence of a visible flame establishes no fire behind the features."
+    },
+    {
+      "asset_id": "A-ad43dfe2413b",
+      "unit_id": "R02C10",
+      "candidate_identity": "clipped",
+      "opportunity": null,
+      "cautions": ["The proposed region terminates at the right image boundary.", "The full candidate extent and in-frame fraction are unknown."],
+      "decisive_exclusions": [{"code": "edge_sliver_no_unit_detail", "reason": "The polygon is only four native pixels wide at the image edge and shows no recoverable full candidate outline or useful unit-level appearance detail. This independently prevents an appearance assessment, in addition to the clipped identity and automatic native-span exclusion."}],
+      "appearance": "non_evaluable",
+      "reason": "Only a four-pixel-wide edge sliver remains inside the image. It cannot establish a complete candidate boundary or distinguish a useful appearance from edge/frame material, so clipped identity, null opportunity and non_evaluable are retained. This is an observed resolution/framing limitation with a stated assessment effect, not a generic clipping caution or a no-flame finding."
+    },
+    {
+      "asset_id": "A-ad43dfe2413b",
+      "unit_id": "U02",
+      "candidate_identity": "not_single",
+      "opportunity": [0.5, 0.75],
+      "cautions": ["Diffuse blue-gray haze crosses portions of the strip and softens detail.", "Dark glazing or surface material obscures any interior conclusion.", "The polygon spans several frames and adjacent sill material."],
+      "decisive_exclusions": [],
+      "appearance": "smoke_only_source_unknown",
+      "reason": "Several repeated vertical frame divisions are visible across the long lower-left strip, positively identifying multiple regions rather than one candidate. Dark surface areas and frame edges remain usable over a substantial portion despite diffuse haze, supporting [0.5,0.75]. A diffuse blue-gray smoke-like veil is visible across part of the strip, without resolved flame morphology or an identifiable source. The multiple-region identity excludes it independently of this appearance description. No opening count, smoke-source assignment or no-interior-fire conclusion follows."
+    }
+  ]
+}

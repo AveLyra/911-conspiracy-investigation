@@ -1,0 +1,187 @@
+{
+  "argv": [
+    "independent_check.py",
+    "controls",
+    "--output",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch2/independent-controls02.json"
+  ],
+  "check_count": 43,
+  "checker_sha256": "cb8725cc75cf2f99ef5900c5541ff01ce334f61ba7b152a3c21a89c0e60c8b44",
+  "checks": [
+    {
+      "name": "valid_full_membership",
+      "passed": true
+    },
+    {
+      "name": "smoke_and_nondetection_coexist",
+      "passed": true
+    },
+    {
+      "name": "same_count_different_location_not_hidden",
+      "passed": true
+    },
+    {
+      "name": "complete_records_retained",
+      "passed": true
+    },
+    {
+      "name": "description_difference_retained",
+      "passed": true
+    },
+    {
+      "name": "two_luminous_axes_not_exclusive",
+      "passed": true
+    },
+    {
+      "name": "exact_axis_difference",
+      "passed": true
+    },
+    {
+      "name": "comparison_does_not_mutate_input",
+      "passed": true
+    },
+    {
+      "name": "byte_mutation_detected",
+      "passed": true
+    },
+    {
+      "name": "duplicate_json_key_rejected",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_json_rejected",
+      "passed": true
+    },
+    {
+      "name": "malformed_json_rejected",
+      "passed": true
+    },
+    {
+      "name": "bool_coordinate_rejected",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_coordinate_rejected",
+      "passed": true
+    },
+    {
+      "name": "degenerate_rect_rejected",
+      "passed": true
+    },
+    {
+      "name": "out_of_bounds_rect_rejected",
+      "passed": true
+    },
+    {
+      "name": "bool_dimension_rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong_dimension_rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong_image_pin_rejected",
+      "passed": true
+    },
+    {
+      "name": "inspection_false_rejected",
+      "passed": true
+    },
+    {
+      "name": "bad_target_enum_rejected",
+      "passed": true
+    },
+    {
+      "name": "empty_reason_rejected",
+      "passed": true
+    },
+    {
+      "name": "unresolved_nonnull_rejected",
+      "passed": true
+    },
+    {
+      "name": "visible_smoke_without_locator_rejected",
+      "passed": true
+    },
+    {
+      "name": "unidentified_smoke_with_locator_rejected",
+      "passed": true
+    },
+    {
+      "name": "empty_limits_rejected",
+      "passed": true
+    },
+    {
+      "name": "bad_smoke_enum_rejected",
+      "passed": true
+    },
+    {
+      "name": "nonlist_luminous_rejected",
+      "passed": true
+    },
+    {
+      "name": "missing_field_rejected",
+      "passed": true
+    },
+    {
+      "name": "extra_field_rejected",
+      "passed": true
+    },
+    {
+      "name": "missing_membership_rejected",
+      "passed": true
+    },
+    {
+      "name": "duplicate_membership_rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong_order_membership_rejected",
+      "passed": true
+    },
+    {
+      "name": "unresolved_accepted_without_absence_inference",
+      "passed": true
+    },
+    {
+      "name": "uncertain_smoke_without_locator_accepted",
+      "passed": true
+    },
+    {
+      "name": "adapter_all_five_axes",
+      "passed": true
+    },
+    {
+      "name": "adapter_region_location_difference_preserved",
+      "passed": true
+    },
+    {
+      "name": "adapter_description_difference_preserved",
+      "passed": true
+    },
+    {
+      "name": "adapter_coexisting_smoke_nondetection",
+      "passed": true
+    },
+    {
+      "name": "adapter_all_region_fields",
+      "passed": true
+    },
+    {
+      "name": "adapter_all_description_fields",
+      "passed": true
+    },
+    {
+      "name": "adapter_empty_list_retained",
+      "passed": true
+    },
+    {
+      "name": "adapter_mutated_location_detectable",
+      "passed": true
+    }
+  ],
+  "frozen_implementation_source": "\"\"\"Independent batch-2 validation and arithmetic; no producer import or images.\"\"\"\nimport argparse\nimport ast\nfrom collections import Counter\nimport copy\nimport hashlib\nimport json\nimport math\nfrom pathlib import Path\nimport re\nimport sys\n\nBASE = Path(__file__).resolve().parent\nSOURCE = Path('/Users/admin/docs/911/research/sherlock-wtc7-investigation/fire-annotation')\nPROTOCOL_SHA = '8ea3df6a4550e55de334ac20ce45a8fb05aa00f47800a6ca7b874f74803d94ff'\nKEY_SHA = 'c0361c5a3ae52c2663a6772db6078824b4b123e59d8e50d2e24b26d85855afa3'\nMAIN_SHA = '63100450901d2358ee14f253a95b154f038091a88e0d3cf1c81e56126a0c2c2b'\nREVIEWER_SHA = '2f31b1db855ec6533cd6bb9e7a43670ecc54520fa179a7b2ae4f8e55aa404ac7'\nPRIOR_MAIN_SHA = 'd7673cc50ebca454ea30a0d2c45e44041e9d06de9f586e32dd27a65818f535ce'\nPRIOR_REVIEWER_SHA = '03c671cfb383e939509e0008101a81e4954141c8c8f680596bbecde573f128f0'\nIDS = ['A-873f87e7149b', 'A-e1b0c06ad11d', 'A-9e7b4935c8aa', 'A-0b722775db93',\n       'A-fa6f410444bb', 'A-ffe3726a0312', 'A-0e60b82a1a4c', 'A-6902e91e39ee',\n       'A-671f312eade8', 'A-69d899e75343', 'A-8bc36f05fe38', 'A-7b61385d1373',\n       'A-f1e2fa01e344']\nFIELDS = {'asset_id', 'image_sha256', 'dimensions', 'complete_native_image_inspected',\n          'target_rect', 'target_evaluability', 'target_reason', 'luminous_features',\n          'smoke', 'nondetection_regions', 'visibility_limits', 'overlay_regions'}\nAXES = ('target_evaluability', 'any_flame_like', 'any_ambiguous_glow',\n        'smoke_status', 'any_nondetection_region')\nFROZEN_CONTROL_SHA = 'f35841710ded5b2c7770c40630ac4bd3d706e3ff9475248fb5233ab3f8c108a7'\nFROZEN_RESULT_SHA = '75deedc4ab184c9eb079a3f011439479517856005fbca0e58a5fbd6142770ade'\nPRODUCT_SHA = 'f6934003b585a3d2f43e5ae5c7965b9a5b687247c0c5fa590117e7ddcf8e3cfb'\n\n\ndef need(condition, code):\n    if not condition:\n        raise ValueError(code)\n\n\ndef sha_bytes(data):\n    return hashlib.sha256(data).hexdigest()\n\n\ndef sha_file(path):\n    need(not path.is_symlink(), 'input_symlink')\n    return sha_bytes(path.read_bytes())\n\n\ndef strict_json(data):\n    def pairs(items):\n        result = {}\n        for key, value in items:\n            need(key not in result, 'duplicate_json_key')\n            result[key] = value\n        return result\n    def bad_constant(value):\n        raise ValueError('nonfinite_json_constant')\n    return json.loads(data, object_pairs_hook=pairs, parse_constant=bad_constant)\n\n\ndef nonempty(value):\n    return isinstance(value, str) and bool(value.strip())\n\n\ndef finite_number(value):\n    return type(value) in (int, float) and math.isfinite(value)\n\n\ndef rectangle(rect, dimensions):\n    need(isinstance(rect, list) and len(rect) == 4, 'rect_shape')\n    need(all(finite_number(v) for v in rect), 'rect_numeric')\n    x0, y0, x1, y1 = rect\n    need(0 <= x0 < x1 <= dimensions[0] and 0 <= y0 < y1 <= dimensions[1], 'rect_bounds')\n\n\ndef validate_asset(record, metadata):\n    need(isinstance(record, dict) and set(record) == FIELDS, 'asset_fields')\n    need(record['asset_id'] == metadata['asset_id'], 'asset_identity')\n    view = metadata['extracted_view']\n    dims = record['dimensions']\n    need(isinstance(dims, list) and len(dims) == 2 and\n         all(type(d) is int and d > 0 for d in dims), 'dimensions_type')\n    need(dims == metadata['native_pdf_dimensions'] == view['dimensions'], 'dimension_pin')\n    need(record['image_sha256'] == view['sha256'], 'image_pin')\n    need(record['complete_native_image_inspected'] is True, 'inspection_declaration')\n    evaluation = record['target_evaluability']\n    need(evaluation in ('partial_detail', 'limited_detail', 'unresolved_target'), 'target_enum')\n    if evaluation == 'unresolved_target':\n        need(record['target_rect'] is None, 'unresolved_target_rectangle')\n        need(record['nondetection_regions'] == [], 'unresolved_target_nondetection')\n    else:\n        rectangle(record['target_rect'], dims)\n    need(nonempty(record['target_reason']), 'target_reason')\n    need(isinstance(record['luminous_features'], list), 'luminous_list')\n    for feature in record['luminous_features']:\n        need(isinstance(feature, dict) and set(feature) ==\n             {'rect', 'appearance', 'target_relation', 'reason', 'alternatives'}, 'luminous_fields')\n        rectangle(feature['rect'], dims)\n        need(feature['appearance'] in ('flame_like', 'ambiguous_glow'), 'appearance_enum')\n        need(feature['target_relation'] in ('on_candidate_facade', 'uncertain'), 'relation_enum')\n        need(nonempty(feature['reason']), 'luminous_reason')\n        alternatives = feature['alternatives']\n        need((nonempty(alternatives) or (isinstance(alternatives, list) and bool(alternatives)\n              and all(nonempty(a) for a in alternatives))), 'luminous_alternatives')\n    smoke = record['smoke']\n    need(isinstance(smoke, dict) and set(smoke) == {'status', 'regions', 'reason'}, 'smoke_fields')\n    need(smoke['status'] in ('visible', 'uncertain', 'not_identified'), 'smoke_enum')\n    need(isinstance(smoke['regions'], list) and nonempty(smoke['reason']), 'smoke_regions_reason')\n    for rect in smoke['regions']:\n        rectangle(rect, dims)\n    if smoke['status'] == 'visible':\n        need(bool(smoke['regions']), 'visible_smoke_requires_locator')\n    if smoke['status'] == 'not_identified':\n        need(not smoke['regions'], 'unidentified_smoke_has_locator')\n    need(isinstance(record['nondetection_regions'], list), 'nondetection_list')\n    for region in record['nondetection_regions']:\n        need(isinstance(region, dict) and set(region) == {'rect', 'reason'}, 'nondetection_fields')\n        rectangle(region['rect'], dims)\n        need(nonempty(region['reason']), 'nondetection_reason')\n    limits = record['visibility_limits']\n    need(isinstance(limits, list) and bool(limits) and all(nonempty(v) for v in limits), 'visibility_limits')\n    need(isinstance(record['overlay_regions'], list), 'overlay_list')\n    for rect in record['overlay_regions']:\n        rectangle(rect, dims)\n\n\ndef validate_document(document, metadata):\n    need(isinstance(document, dict), 'document_object')\n    need({'reviewer', 'independence', 'protocol_sha256', 'provenance_key_sha256', 'assets'} <= set(document), 'document_fields')\n    need(nonempty(document['reviewer']), 'reviewer')\n    independent = document['independence']\n    need(nonempty(independent) or (isinstance(independent, dict) and bool(independent)), 'independence')\n    need(document['protocol_sha256'] == PROTOCOL_SHA and document['provenance_key_sha256'] == KEY_SHA, 'document_pins')\n    records = document['assets']\n    need(isinstance(records, list), 'assets_array')\n    need(len(records) == len(IDS) and all(isinstance(r, dict) for r in records), 'record_count')\n    need([r.get('asset_id') for r in records] == IDS, 'membership_or_order')\n    for record in records:\n        validate_asset(record, metadata[record['asset_id']])\n\n\ndef axes(record):\n    return dict(zip(AXES, [record['target_evaluability'],\n        any(f['appearance'] == 'flame_like' for f in record['luminous_features']),\n        any(f['appearance'] == 'ambiguous_glow' for f in record['luminous_features']),\n        record['smoke']['status'], bool(record['nondetection_regions'])]))\n\n\ndef differences(left, right, pointer=''):\n    \"\"\"Exact unforced ordered-list and string differences, beyond coarse axes.\"\"\"\n    if type(left) is not type(right):\n        return [{'pointer': pointer, 'kind': 'type', 'main': left, 'reviewer': right}]\n    if isinstance(left, dict):\n        output = []\n        for key in sorted(set(left) | set(right)):\n            child = pointer+'/'+key.replace('~', '~0').replace('/', '~1')\n            if key not in left or key not in right:\n                output.append({'pointer': child, 'kind': 'missing_key',\n                    'main_present': key in left, 'reviewer_present': key in right,\n                    'main': left.get(key), 'reviewer': right.get(key)})\n            else:\n                output.extend(differences(left[key], right[key], child))\n        return output\n    if isinstance(left, list):\n        output = []\n        if len(left) != len(right):\n            output.append({'pointer': pointer, 'kind': 'list_length', 'main': len(left), 'reviewer': len(right)})\n        for index in range(max(len(left), len(right))):\n            child = pointer+'/'+str(index)\n            if index >= len(left) or index >= len(right):\n                output.append({'pointer': child, 'kind': 'unpaired_list_item',\n                    'main_present': index < len(left), 'reviewer_present': index < len(right),\n                    'main': left[index] if index < len(left) else None,\n                    'reviewer': right[index] if index < len(right) else None})\n            else:\n                output.extend(differences(left[index], right[index], child))\n        return output\n    return [] if left == right else [{'pointer': pointer, 'kind': 'value', 'main': left, 'reviewer': right}]\n\n\ndef compare(main, reviewer):\n    output, pairs = [], {axis: [] for axis in AXES}\n    for left, right in zip(main['assets'], reviewer['assets']):\n        need(left['asset_id'] == right['asset_id'], 'comparison_order')\n        la, ra = axes(left), axes(right)\n        values = {axis: {'main': la[axis], 'reviewer': ra[axis], 'agree': la[axis] == ra[axis]} for axis in AXES}\n        for axis in AXES:\n            pairs[axis].append(values[axis])\n        output.append({'asset_id': left['asset_id'], 'axes': values,\n            'all_five_agree': all(value['agree'] for value in values.values()),\n            'full_record_equal': left == right, 'full_field_differences': differences(left, right),\n            'main_record': copy.deepcopy(left), 'reviewer_record': copy.deepcopy(right)})\n    statistics = {}\n    for axis in AXES:\n        agree = sum(pair['agree'] for pair in pairs[axis])\n        counts = Counter(json.dumps([pair['main'], pair['reviewer']]) for pair in pairs[axis])\n        statistics[axis] = {'agree': agree, 'different': len(output)-agree,\n            'pairs': [{'values': json.loads(value), 'count': count} for value, count in sorted(counts.items())],\n            'different_assets': [row['asset_id'] for row in output if not row['axes'][axis]['agree']]}\n    return {'asset_count': len(output), 'axes': statistics, 'per_asset': output,\n            'all_five_agree_count': sum(row['all_five_agree'] for row in output),\n            'full_record_equal_count': sum(row['full_record_equal'] for row in output),\n            'original_records': {'main': copy.deepcopy(main), 'reviewer': copy.deepcopy(reviewer)}}\n\n\ndef synthetic():\n    checks = []\n    def check(name, condition):\n        checks.append({'name': name, 'passed': bool(condition)})\n    def rejects(call):\n        try:\n            call()\n        except (ValueError, TypeError, KeyError):\n            return True\n        return False\n    metadata = {name: {'asset_id': name, 'native_pdf_dimensions': [100, 80],\n        'extracted_view': {'dimensions': [100, 80], 'sha256': 'a'*64}} for name in IDS}\n    record = {'asset_id': IDS[0], 'image_sha256': 'a'*64, 'dimensions': [100, 80],\n        'complete_native_image_inspected': True, 'target_rect': [1, 2, 99, 79],\n        'target_evaluability': 'partial_detail', 'target_reason': 'Synthetic limited visible frontage.',\n        'luminous_features': [{'rect': [10, 20, 20, 30], 'appearance': 'flame_like',\n          'target_relation': 'uncertain', 'reason': 'Synthetic irregular luminous form.',\n          'alternatives': ['Synthetic reflection alternative.']}],\n        'smoke': {'status': 'visible', 'regions': [[1, 3, 90, 60]], 'reason': 'Synthetic veil; source unresolved.'},\n        'nondetection_regions': [{'rect': [30, 30, 50, 50], 'reason': 'No shape identified in this synthetic visible patch; resolution limited.'}],\n        'visibility_limits': ['Synthetic resolution limitation.'], 'overlay_regions': [[90, 2, 99, 10]]}\n    doc = {'reviewer': 'synthetic', 'independence': 'Synthetic controls only.',\n        'protocol_sha256': PROTOCOL_SHA, 'provenance_key_sha256': KEY_SHA, 'assets': []}\n    for name in IDS:\n        item = copy.deepcopy(record); item['asset_id'] = name; doc['assets'].append(item)\n    check('valid_full_membership', not rejects(lambda: validate_document(doc, metadata)))\n    check('smoke_and_nondetection_coexist', axes(record)['smoke_status'] == 'visible' and axes(record)['any_nondetection_region'])\n    altered = copy.deepcopy(doc); altered['assets'][0]['luminous_features'][0]['rect'] = [60, 20, 70, 30]\n    result = compare(doc, altered)\n    check('same_count_different_location_not_hidden', result['all_five_agree_count'] == 13 and\n          not result['per_asset'][0]['full_record_equal'] and bool(result['per_asset'][0]['full_field_differences']))\n    check('complete_records_retained', result['original_records'] == {'main': doc, 'reviewer': altered})\n    altered['assets'][0]['luminous_features'][0]['reason'] = 'Changed synthetic description.'\n    check('description_difference_retained', any(d['pointer'].endswith('/reason') for d in differences(doc, altered)))\n    altered['assets'][0]['luminous_features'].append(dict(record['luminous_features'][0], appearance='ambiguous_glow'))\n    mixed = axes(altered['assets'][0])\n    check('two_luminous_axes_not_exclusive', mixed['any_flame_like'] and mixed['any_ambiguous_glow'])\n    check('exact_axis_difference', compare(doc, altered)['axes']['any_ambiguous_glow']['different_assets'] == [IDS[0]])\n    before = json.dumps(doc, sort_keys=True); compare(doc, altered)\n    check('comparison_does_not_mutate_input', json.dumps(doc, sort_keys=True) == before)\n    check('byte_mutation_detected', sha_bytes(b'original') != sha_bytes(b'changed'))\n    check('duplicate_json_key_rejected', rejects(lambda: strict_json('{\"x\":1,\"x\":2}')))\n    check('nonfinite_json_rejected', rejects(lambda: strict_json('{\"x\":NaN}')))\n    check('malformed_json_rejected', rejects(lambda: strict_json('{')))\n    changes = [\n        ('bool_coordinate', ('target_rect',), [False, 2, 20, 30]),\n        ('nonfinite_coordinate', ('target_rect',), [1, 2, float('inf'), 30]),\n        ('degenerate_rect', ('target_rect',), [2, 2, 2, 30]),\n        ('out_of_bounds_rect', ('target_rect',), [1, 2, 101, 30]),\n        ('bool_dimension', ('dimensions',), [True, 80]),\n        ('wrong_dimension', ('dimensions',), [101, 80]),\n        ('wrong_image_pin', ('image_sha256',), 'b'*64),\n        ('inspection_false', ('complete_native_image_inspected',), False),\n        ('bad_target_enum', ('target_evaluability',), 'confirmed'),\n        ('empty_reason', ('target_reason',), '  '),\n        ('unresolved_nonnull', ('target_evaluability',), 'unresolved_target'),\n        ('visible_smoke_without_locator', ('smoke', 'regions'), []),\n        ('unidentified_smoke_with_locator', ('smoke', 'status'), 'not_identified'),\n        ('empty_limits', ('visibility_limits',), []),\n        ('bad_smoke_enum', ('smoke', 'status'), 'confirmed'),\n        ('nonlist_luminous', ('luminous_features',), None),\n    ]\n    for name, path, value in changes:\n        bad = copy.deepcopy(record); cursor = bad\n        for part in path[:-1]:\n            cursor = cursor[part]\n        cursor[path[-1]] = value\n        check(name+'_rejected', rejects(lambda bad=bad: validate_asset(bad, metadata[IDS[0]])))\n    for name, change in [('missing_field', lambda d: d.pop('smoke')), ('extra_field', lambda d: d.update(extra=1))]:\n        bad = copy.deepcopy(record); change(bad)\n        check(name+'_rejected', rejects(lambda bad=bad: validate_asset(bad, metadata[IDS[0]])))\n    for name, items in [('missing', doc['assets'][:-1]), ('duplicate', [doc['assets'][0]]*13), ('wrong_order', doc['assets'][::-1])]:\n        bad = dict(doc, assets=items)\n        check(name+'_membership_rejected', rejects(lambda bad=bad: validate_document(bad, metadata)))\n    unresolved = copy.deepcopy(record); unresolved.update(target_rect=None,\n        target_evaluability='unresolved_target', luminous_features=[], nondetection_regions=[])\n    check('unresolved_accepted_without_absence_inference', not rejects(lambda: validate_asset(unresolved, metadata[IDS[0]])))\n    uncertain = copy.deepcopy(record); uncertain['smoke'].update(status='uncertain', regions=[])\n    check('uncertain_smoke_without_locator_accepted', not rejects(lambda: validate_asset(uncertain, metadata[IDS[0]])))\n    return {'status': 'passed' if all(c['passed'] for c in checks) else 'failed', 'checks': checks, 'check_count': len(checks)}\n\n\ndef historical():\n    pins = {}\n    def load(path, expected):\n        data = path.read_bytes(); need(not path.is_symlink() and sha_bytes(data) == expected, 'frozen_input_pin')\n        pins[str(path)] = expected\n        return strict_json(data)\n    need(sha_file(BASE/'PROTOCOL.md') == PROTOCOL_SHA, 'protocol_file_pin')\n    pins[str(BASE/'PROTOCOL.md')] = PROTOCOL_SHA\n    key = load(SOURCE/'assets/run-01/reviewed-provenance-key.json', KEY_SHA)\n    prior_main = load(SOURCE/'main-image-level.json', PRIOR_MAIN_SHA)\n    prior_reviewer = load(SOURCE/'reviewer-image-level.json', PRIOR_REVIEWER_SHA)\n    entries = key['assets']; need(len(entries) == 28, 'key_asset_count')\n    need(len({item['asset_id'] for item in entries}) == 28, 'key_duplicate_asset')\n    photos = {item['asset_id'] for item in entries if item['role'] == 'report_photographic_image'}\n    graphics = {item['asset_id'] for item in entries if item['role'] == 'report_geometry_graphic'}\n    need(len(photos) == 25 and len(graphics) == 3 and not photos & graphics, 'role_partition')\n    pm = [r['asset_id'] for r in prior_main['images']]\n    pr = [r['asset_id'] for r in prior_reviewer['assets']]\n    need(len(pm) == len(pr) == len(set(pm)) == len(set(pr)) == 12 and set(pm) == set(pr), 'prior_membership')\n    need(set(pm) <= photos and photos-set(pm) == set(IDS), 'remaining_membership')\n    metadata = {item['asset_id']: item for item in entries}\n    images = []\n    for name in IDS:\n        view = metadata[name]['extracted_view']\n        relative = f'assets/run-01/images/{name}.jpg'\n        need(view['path'] == relative, 'image_path_allowlist')\n        path = SOURCE/relative\n        need(sha_file(path) == view['sha256'] and path.stat().st_size == view['bytes'], 'image_byte_pin')\n        pins[str(path)] = view['sha256']\n        images.append({'asset_id': name, 'sha256': view['sha256'], 'bytes': view['bytes'],\n                       'dimensions': view['dimensions']})\n    main = load(BASE/'main.json', MAIN_SHA); reviewer = load(BASE/'reviewer.json', REVIEWER_SHA)\n    validate_document(main, metadata); validate_document(reviewer, metadata)\n    result = compare(main, reviewer)\n    for path, pin in pins.items():\n        need(sha_file(Path(path)) == pin, 'input_changed_during_check')\n    result.update(status='passed', input_pins=pins, images=images,\n        inventory={'key_assets': 28, 'photographic_assets': 25, 'geometry_graphics': sorted(graphics),\n                   'prior_paired_assets': sorted(pm), 'new_declared_assets': IDS},\n        limits='Schema and arithmetic verification, not visual correctness; same-count lists are not same-location observations. Source-key classifications and image-inspection declarations are not independently interpreted or authenticated.')\n    return result\n\n\ndef project_comparison(own):\n    \"\"\"Adapter added after the independent raw calculation froze; no new axes.\"\"\"\n    names = {'target_evaluability': 'target_evaluability', 'any_flame_like': 'flame_like_identified',\n             'any_ambiguous_glow': 'ambiguous_glow_identified', 'smoke_status': 'smoke_status',\n             'any_nondetection_region': 'nondetection_region_identified'}\n    output = []\n    for row in own['per_asset']:\n        left, right = row['main_record'], row['reviewer_record']\n        paired = {}\n        for key in ('target_rect', 'luminous_features', 'nondetection_regions', 'overlay_regions'):\n            paired[key] = {'left': left[key], 'right': right[key], 'identical_json': left[key] == right[key]}\n        paired['smoke_regions'] = {'left': left['smoke']['regions'], 'right': right['smoke']['regions'],\n                                  'identical_json': left['smoke']['regions'] == right['smoke']['regions']}\n        descriptions = {}\n        for key in ('target_reason', 'visibility_limits'):\n            descriptions[key] = {'left': left[key], 'right': right[key], 'identical_json': left[key] == right[key]}\n        descriptions['smoke_reason'] = {'left': left['smoke']['reason'], 'right': right['smoke']['reason'],\n                                      'identical_json': left['smoke']['reason'] == right['smoke']['reason']}\n        output.append({'asset_id': row['asset_id'], 'regions_without_forced_matching': paired,\n            'descriptions': descriptions, 'axes': {names[name]: {'left': value['main'],\n                'right': value['reviewer'], 'comparison': 'same' if value['agree'] else 'different'}\n                for name, value in row['axes'].items()}})\n    return [{'left_reviewer': own['original_records']['main']['reviewer'],\n             'right_reviewer': own['original_records']['reviewer']['reviewer'], 'assets': output}]\n\n\ndef adapter_controls():\n    left = {'asset_id': 'synthetic', 'target_evaluability': 'limited_detail', 'target_rect': [1, 2, 9, 10],\n        'target_reason': 'Synthetic target reason.', 'visibility_limits': ['Synthetic visibility limit.'],\n        'luminous_features': [], 'smoke': {'status': 'visible', 'regions': [[1, 3, 8, 9]], 'reason': 'Synthetic veil.'},\n        'nondetection_regions': [{'rect': [1, 2, 3, 4], 'reason': 'Synthetic bounded visible patch.'}],\n        'overlay_regions': [[0, 0, 1, 1]]}\n    right = copy.deepcopy(left); right['target_rect'] = [2, 2, 10, 10]\n    right['target_reason'] = 'A different synthetic target reason.'\n    own = compare({'reviewer': 'left', 'assets': [left]}, {'reviewer': 'right', 'assets': [right]})\n    row = project_comparison(own)[0]['assets'][0]\n    checks = {\n        'adapter_all_five_axes': set(row['axes']) == {'target_evaluability', 'flame_like_identified',\n             'ambiguous_glow_identified', 'smoke_status', 'nondetection_region_identified'},\n        'adapter_region_location_difference_preserved': row['regions_without_forced_matching']['target_rect'] ==\n             {'left': [1, 2, 9, 10], 'right': [2, 2, 10, 10], 'identical_json': False},\n        'adapter_description_difference_preserved': not row['descriptions']['target_reason']['identical_json'],\n        'adapter_coexisting_smoke_nondetection': row['axes']['smoke_status']['left'] == 'visible' and\n             row['axes']['nondetection_region_identified']['left'] is True,\n        'adapter_all_region_fields': set(row['regions_without_forced_matching']) ==\n             {'target_rect', 'luminous_features', 'smoke_regions', 'nondetection_regions', 'overlay_regions'},\n        'adapter_all_description_fields': set(row['descriptions']) == {'target_reason', 'smoke_reason', 'visibility_limits'},\n        'adapter_empty_list_retained': row['regions_without_forced_matching']['luminous_features'] ==\n             {'left': [], 'right': [], 'identical_json': True},\n    }\n    changed = copy.deepcopy(row); changed['regions_without_forced_matching']['target_rect']['right'] = [1, 2, 9, 10]\n    checks['adapter_mutated_location_detectable'] = bool(differences(row, changed))\n    return [{'name': key, 'passed': value} for key, value in checks.items()]\n\n\ndef products():\n    need(sha_file(BASE/'independent-controls01.json') == FROZEN_CONTROL_SHA, 'frozen_control_receipt_pin')\n    control = strict_json((BASE/'independent-controls01.json').read_bytes())\n    prior_tree = ast.parse(control['frozen_implementation_source'])\n    now_tree = ast.parse(Path(__file__).read_text())\n    prior_functions = {n.name: ast.dump(n, include_attributes=False) for n in prior_tree.body if isinstance(n, ast.FunctionDef) and n.name != 'main'}\n    now_functions = {n.name: ast.dump(n, include_attributes=False) for n in now_tree.body if isinstance(n, ast.FunctionDef)}\n    need(all(now_functions.get(name) == value for name, value in prior_functions.items()), 'frozen_independent_functions_changed')\n    need(sha_file(BASE/'independent-check01.json') == FROZEN_RESULT_SHA, 'independent_result_pin')\n    own = strict_json((BASE/'independent-check01.json').read_bytes())\n    for path, pin in own['input_pins'].items():\n        need(sha_file(Path(path)) == pin, 'frozen_source_changed')\n    expected_comparison = project_comparison(own)\n    records = [own['original_records']['main'], own['original_records']['reviewer']]\n    hashes = {'code_sha256': sha_file(BASE/'summarize.py'), 'protocol_sha256': PROTOCOL_SHA,\n        'provenance_key_sha256': KEY_SHA, 'labels': [{'reviewer': records[0]['reviewer'], 'sha256': MAIN_SHA},\n        {'reviewer': records[1]['reviewer'], 'sha256': REVIEWER_SHA}],\n        'images': [dict(row, path=f\"assets/run-01/images/{row['asset_id']}.jpg\") for row in own['images']]}\n    products_read = []\n    for name in ('comparison01.json', 'comparison02.json'):\n        path = BASE/name; data = path.read_bytes(); need(sha_bytes(data) == PRODUCT_SHA, 'producer_product_pin')\n        product = strict_json(data)\n        need(product['sample_asset_ids'] == IDS, 'producer_sample_membership')\n        need(product['source_hashes'] == hashes, 'producer_source_hashes')\n        need(product['raw_records'] == records, 'full_raw_records_not_retained')\n        need(product['comparisons'] == expected_comparison, 'producer_full_comparison_discrepancy')\n        products_read.append({'path': name, 'sha256': sha_bytes(data), 'bytes': len(data)})\n    need((BASE/'comparison01.json').read_bytes() == (BASE/'comparison02.json').read_bytes(), 'producer_replays_differ')\n    for path, pin in own['input_pins'].items():\n        need(sha_file(Path(path)) == pin, 'source_changed_during_product_check')\n    for item in products_read:\n        need(sha_file(BASE/item['path']) == item['sha256'], 'product_changed_during_check')\n    region_summary = {}\n    for section in ('regions_without_forced_matching', 'descriptions'):\n        region_summary[section] = {name: sum(row[section][name]['identical_json'] for row in expected_comparison[0]['assets'])\n            for name in expected_comparison[0]['assets'][0][section]}\n    return {'status': 'passed', 'independent_input_result_sha256': FROZEN_RESULT_SHA,\n        'frozen_initial_implementation_sha256': control['checker_sha256'],\n        'all_frozen_functions_ast_unchanged': sorted(prior_functions),\n        'products': products_read, 'producer_source_hashes_verified': hashes,\n        'asset_count': len(IDS), 'axis_comparisons_per_product': len(IDS)*len(AXES),\n        'region_pairs_per_product': len(IDS)*5, 'description_pairs_per_product': len(IDS)*3,\n        'full_raw_documents_per_product': 2, 'identical_pair_counts': region_summary,\n        'independent_axis_summary': own['axes'], 'all_five_agree_count': own['all_five_agree_count'],\n        'full_record_equal_count': own['full_record_equal_count'],\n        'limits': 'Full data-field equality and pinned bytes; producer prose/schema-version not independently validated; source classifications and visual accuracy not inferred.'}\n\n\ndef main():\n    parser = argparse.ArgumentParser(); parser.add_argument('mode', choices=('controls', 'run', 'products'))\n    parser.add_argument('--output', type=Path, required=True); args = parser.parse_args()\n    need(args.output.parent.resolve() == BASE and args.output.name.startswith('independent-'), 'output_scope')\n    if args.output.exists():\n        raise FileExistsError('create_only_output_exists')\n    controls = synthetic(); need(controls['status'] == 'passed', 'synthetic_controls_failed')\n    controls['checks'].extend(adapter_controls()); controls['check_count'] = len(controls['checks'])\n    need(all(row['passed'] for row in controls['checks']), 'adapter_controls_failed')\n    result = controls if args.mode == 'controls' else historical() if args.mode == 'run' else products()\n    result.update(checker_sha256=sha_file(Path(__file__)), python=sys.version, argv=sys.argv)\n    if args.mode == 'controls':\n        result['frozen_implementation_source'] = Path(__file__).read_text()\n    else:\n        result['synthetic_control_count'] = controls['check_count']\n    with args.output.open('x', encoding='utf-8') as stream:\n        json.dump(result, stream, sort_keys=True, indent=2, allow_nan=False); stream.write('\\n')\n    print(json.dumps({key: result[key] for key in ('status', 'check_count', 'asset_count', 'all_five_agree_count', 'full_record_equal_count') if key in result}))\n\n\nif __name__ == '__main__':\n    main()\n",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "status": "passed"
+}

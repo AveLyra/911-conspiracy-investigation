@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "/opt/homebrew/bin/ffmpeg",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "warning",
+    "-n",
+    "-f",
+    "lavfi",
+    "-i",
+    "testsrc2=size=64x48:rate=4:duration=5",
+    "-vf",
+    "select='lt(n,4)+gte(n,12)',setpts=PTS+3/TB,setsar=2/1",
+    "-an",
+    "-c:v",
+    "ffv1",
+    "-fps_mode",
+    "passthrough",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-video-lineage/controls-2026-09-19-root01/tiny-fixture/nonzero-gap.mkv"
+  ],
+  "returncode": 0
+}

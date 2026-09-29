@@ -1,0 +1,33 @@
+test_all_frame_clock_join_and_irregular_timestamps (__main__.Controls.test_all_frame_clock_join_and_irregular_timestamps) ... ok
+test_complete_rgb_panel_labels_and_exterior_corruption (__main__.Controls.test_complete_rgb_panel_labels_and_exterior_corruption) ... ERROR
+test_complete_source_rows_and_membership (__main__.Controls.test_complete_source_rows_and_membership) ... ok
+test_continuous_domain_distinct_from_rounded_cell (__main__.Controls.test_continuous_domain_distinct_from_rounded_cell) ... ok
+test_corrupt_pts_hash_geometry_index_and_count_rejected (__main__.Controls.test_corrupt_pts_hash_geometry_index_and_count_rejected) ... ok
+test_crop_all_cells_padding_and_repetition (__main__.Controls.test_crop_all_cells_padding_and_repetition) ... ok
+test_exclusive_receipt_preserves_existing_bytes (__main__.Controls.test_exclusive_receipt_preserves_existing_bytes) ... ok
+test_full_manifest_derivation_and_exact_geometry (__main__.Controls.test_full_manifest_derivation_and_exact_geometry) ... ok
+test_full_panel_source_crop_marker_and_missing_slot_corruption (__main__.Controls.test_full_panel_source_crop_marker_and_missing_slot_corruption) ... ok
+test_half_up_exact_and_invalid (__main__.Controls.test_half_up_exact_and_invalid) ... ok
+test_invalid_coordinate_presence_and_lexical_identity (__main__.Controls.test_invalid_coordinate_presence_and_lexical_identity) ... ok
+test_marker_exact_arms_and_open_center (__main__.Controls.test_marker_exact_arms_and_open_center) ... ok
+test_missing_duplicate_and_changed_key_rejected (__main__.Controls.test_missing_duplicate_and_changed_key_rejected) ... ok
+test_native_png_pin_and_corruption (__main__.Controls.test_native_png_pin_and_corruption) ... ok
+test_pins_and_duplicate_json_keys (__main__.Controls.test_pins_and_duplicate_json_keys) ... ok
+
+======================================================================
+ERROR: test_complete_rgb_panel_labels_and_exterior_corruption (__main__.Controls.test_complete_rgb_panel_labels_and_exterior_corruption)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/tilted-point-frame-audit/test_verify.py", line 235, in test_complete_rgb_panel_labels_and_exterior_corruption
+    self.assertEqual(v.check_complete_panel(panel, native, [point], frame, True)["exterior_labels_checked"], 15)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/tilted-point-frame-audit/verify.py", line 383, in check_complete_panel
+    require(box[0] >= x and box[1] >= y and box[2] <= x + width and box[3] <= y + 16,
+  File "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/tilted-point-frame-audit/verify.py", line 77, in require
+    raise ValueError(label)
+ValueError: label remains within declared exterior band
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.141s
+
+FAILED (errors=1)

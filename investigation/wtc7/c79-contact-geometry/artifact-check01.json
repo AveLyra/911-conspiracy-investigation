@@ -1,0 +1,482 @@
+{
+  "command": [
+    "verify_unit_artifacts.py",
+    "--output",
+    "artifact-check01.json"
+  ],
+  "counts": {
+    "JSON_parsed": 40,
+    "Markdown_local_links": 107,
+    "python_AST": 23,
+    "text_whitespace": 40
+  },
+  "expected_statuses": {
+    "contact-damage01.json": "PASS",
+    "contact-damage02.json": "PASS",
+    "exact-parts-root01.json": "passed",
+    "exact-parts01.json": "passed",
+    "exact-proximity120.json": "passed",
+    "exact-proximity80-root01.json": "passed",
+    "exact-proximity80.json": "passed",
+    "independent-contact-damage-comparison-root01.json": "PASS",
+    "independent-exact-precision-root01.json": "PASS",
+    "independent-exact-preflight01.json": "REJECTED_BEFORE_CONTROLS_OR_EVALUATION",
+    "independent-exact-reference120-root01.json": "PASS",
+    "independent-exact-reference80-root01.json": "PASS",
+    "independent-exact80-01-failed.json": "FAIL",
+    "proximity-comparison-root01.json": "FAIL_EXACT_REPRODUCTION",
+    "proximity-comparison01.json": "FAIL_EXACT_REPRODUCTION"
+  },
+  "guard_checks": {
+    "actual_entrypoint_refusals": [
+      {
+        "output_unchanged": true,
+        "refusal": "verification_pin",
+        "returncode": 1,
+        "stdout_empty": true
+      },
+      {
+        "output_unchanged": true,
+        "refusal": "output_exists",
+        "returncode": 1,
+        "stdout_empty": true
+      }
+    ],
+    "changed_dependency_through_production_pins": "PASS",
+    "scope": "Synthetic dependency pin function plus actual verification-pin and create-only entrypoint refusals; not every failure path."
+  },
+  "inventory": {
+    "CONTACT-DAMAGE-JOIN-PROTOCOL.md": {
+      "bytes": 3743,
+      "sha256": "36443e2edb37ae596f93b66c58792bceb83b4cd2f902dc4aee1ec13f7ab22cd7"
+    },
+    "EXACT-ARITHMETIC-ADDENDUM.md": {
+      "bytes": 7276,
+      "sha256": "b02c1e3c08c8ab976cafba990088a4d80b06e7db9fea5d2d927fb7d0a9f8bb89"
+    },
+    "GEOMETRIC-IMPLEMENTATION-ADDENDUM.md": {
+      "bytes": 1183,
+      "sha256": "ada9f0cdfcb7d7dd3fd79d3c8cd6daf9f0a3f0937c6e7420f7c23dbd34fba9bd"
+    },
+    "GEOMETRIC-METHOD.md": {
+      "bytes": 8267,
+      "sha256": "73ec992e3c22d981f5cc367a8799635897903aba1b709941ec1ad2aa20c17d9e"
+    },
+    "GROUND-REFERENCE-ADDENDUM.md": {
+      "bytes": 1555,
+      "sha256": "ada80271b18d4de023fc17aafe9931d81c09b39416a3760cdbf33f76b98e86c4"
+    },
+    "INDEPENDENT-STAGE-PLAN.md": {
+      "bytes": 2875,
+      "sha256": "4b616ea1a57727c7b0ac034cdc55bdb25fc656d355ef805907407bcc11cf506f"
+    },
+    "PROTOCOL.md": {
+      "bytes": 4973,
+      "sha256": "b18a519ba88e7d61d331d821232e269c3e3f9a5e690a3e25e3e108e1e70df1ea"
+    },
+    "compare_contact_damage_independent.py": {
+      "bytes": 14226,
+      "sha256": "7a684b8ee7506609d66ad432d61561d2c077ce1ce99b5f30d9a63e35d6f0c7a4"
+    },
+    "compare_exact_precisions.py": {
+      "bytes": 5265,
+      "sha256": "ec8d9c6c32217ebd327afa3097fd676e2b23f1f1fe911accde8e72d636fa071a"
+    },
+    "compare_exact_proximity.py": {
+      "bytes": 17440,
+      "sha256": "9854b4d2df68ae14b03a834539c79163a66961407c0cee193ace2361f9edd7e3"
+    },
+    "compare_exact_reference-before-120-pins.py": {
+      "bytes": 19148,
+      "sha256": "7a2dc840bad20c748e6056b8d45ba79fdd3cb1320a06577113888417b0ec32be"
+    },
+    "compare_exact_reference.py": {
+      "bytes": 21310,
+      "sha256": "d3f0640a73f95001ce8a0ec8115243fd3362cae16c879de86b77cf66bbc06dcc"
+    },
+    "compare_geometry.py": {
+      "bytes": 24128,
+      "sha256": "93d751c87eeae5e1e93609f2d8e4719af1de830a84a82f833d66048ac40efc2a"
+    },
+    "compare_proximity.py": {
+      "bytes": 22596,
+      "sha256": "c5bf5392d85c3abb9d05ee499e97f58d2b4dbce94a401096d35b61ff595c10e2"
+    },
+    "comparison-root01.json": {
+      "bytes": 10414,
+      "sha256": "9cfe8c0873dc1b79e5279b19ea2a91107204af060aac09ba570c66123ee8c269"
+    },
+    "comparison01.json": {
+      "bytes": 10467,
+      "sha256": "3aea77662c5eb6587694e56296809394e9fae666ce4c435f540b10275f682028"
+    },
+    "contact-damage-independent-review.md": {
+      "bytes": 12964,
+      "sha256": "8178c07cceb6ab1e5ded492afcb2c5fe7d2026434f68f8275f1086b3fb257c05"
+    },
+    "contact-damage01.json": {
+      "bytes": 82554,
+      "sha256": "e43d8922c511debb4a004f6342fbdb8c16e76ff26cdb306fbd161c77a536d479"
+    },
+    "contact-damage02.json": {
+      "bytes": 82553,
+      "sha256": "e9b33a59006cf60f722388ad3299a80a50bc5be75233c0a29b9faa98685bdce9"
+    },
+    "contact_damage_join.py": {
+      "bytes": 12033,
+      "sha256": "537f8b025a851572e17fc3dfb654838efde28e1aa54c50edcd48b39ae870d965"
+    },
+    "control-extraction01.json": {
+      "bytes": 37424,
+      "sha256": "dfcca53944ba6772dc65922d5c0083ae5bdec191950f8eb0157d79ffbb6deec8"
+    },
+    "control-method-review.md": {
+      "bytes": 14852,
+      "sha256": "fb1de8f8d2defe43c6af989540895a1dcf4c6caae38666c20cd5483ba27c06a6"
+    },
+    "exact-controls01.json": {
+      "bytes": 2767,
+      "sha256": "afc1efff1a55e7c4ec63dfc9cccb74b7b3545a216098d0b1fc243fbaca9e731d"
+    },
+    "exact-controls02.json": {
+      "bytes": 2837,
+      "sha256": "1bb12933db25b40f7c3190cc366b55866c8ab8e9e516381b9afb4817eb744148"
+    },
+    "exact-parts-review.md": {
+      "bytes": 10107,
+      "sha256": "b240028ff6ab6ad0438cf554e26b2c585ab76ae1de8560a1f37456ac67658b4c"
+    },
+    "exact-parts-root01.json": {
+      "bytes": 2124683,
+      "sha256": "4358020def13b035b5579e89424de5f3f3bfda28e39609183107c7b13c2c958c"
+    },
+    "exact-parts01.json": {
+      "bytes": 2124678,
+      "sha256": "fe62487947a64dd4816c398cc92124073c4253a1d04f40c5401aa18b2e893e1e"
+    },
+    "exact-precision-comparison01.json": {
+      "bytes": 1111,
+      "sha256": "176145b5372b1aded8463d43ad5f7ebb0d75e64142c4c50bfaecb1b1ec057ad3"
+    },
+    "exact-proximity120-proofs.json": {
+      "bytes": 21244695,
+      "sha256": "f653b0d0d4e69bfd42a79bb1321e540c4a18a92bdaa99efd3540bccc13fe80e7"
+    },
+    "exact-proximity120.json": {
+      "bytes": 9530,
+      "sha256": "ec72208fb65f7a849efebae77af5c834c4eb17e1180dddca2f1a17fb525d0711"
+    },
+    "exact-proximity120.npz": {
+      "bytes": 675358,
+      "sha256": "79bbdc475b2680034096092e207bdd95250e4e7191ae4275ace4106e526c5628"
+    },
+    "exact-proximity80-proofs.json": {
+      "bytes": 17548166,
+      "sha256": "53757ba19edeeacf7ec64222786344977cb02eef5d54d7da2cbae0445e4bd2e6"
+    },
+    "exact-proximity80-root01-proofs.json": {
+      "bytes": 17548166,
+      "sha256": "53757ba19edeeacf7ec64222786344977cb02eef5d54d7da2cbae0445e4bd2e6"
+    },
+    "exact-proximity80-root01.json": {
+      "bytes": 9545,
+      "sha256": "60e12bb8f70944cb0c8996e7a1e8387c3405de7e5b341e5d6bfd2c84e08843f3"
+    },
+    "exact-proximity80-root01.npz": {
+      "bytes": 675358,
+      "sha256": "79bbdc475b2680034096092e207bdd95250e4e7191ae4275ace4106e526c5628"
+    },
+    "exact-proximity80.json": {
+      "bytes": 9525,
+      "sha256": "25cb6d5a71a5d34908368523725cfe8612a4d8cf37de616220cf36e9663a4324"
+    },
+    "exact-proximity80.npz": {
+      "bytes": 675358,
+      "sha256": "79bbdc475b2680034096092e207bdd95250e4e7191ae4275ace4106e526c5628"
+    },
+    "exact_proximity.py": {
+      "bytes": 27930,
+      "sha256": "032804acb5862b6202d7037b864b2421c10b0f8383b0f2382a856810423dc25f"
+    },
+    "exact_proximity_preflight01.py": {
+      "bytes": 27015,
+      "sha256": "225a2c69d5235312a3b994e129f725373f47226ae3d8cda115b94bc944e33559"
+    },
+    "extract_controls.py": {
+      "bytes": 11625,
+      "sha256": "f970de77c746133d5935209e2294e9e623127b17e417a756d88a9ba2e2dd8826"
+    },
+    "extract_geometry-before-ground-review.py": {
+      "bytes": 18973,
+      "sha256": "bea73d76a92ac138a88ab2dd7f712df5a2c35145a057f2fce7439c4c1da18305"
+    },
+    "extract_geometry.py": {
+      "bytes": 19579,
+      "sha256": "67c0074e4f873f3b4fb50df77ee740d6c5773b31f0ab23a0c750bb4a0ec1f525"
+    },
+    "final-review.md": {
+      "bytes": 10343,
+      "sha256": "74d7cd0eb62608cc9d9abccbb1e8d0b1d8ae3ff14c6c07cf7175fe3336e0f2e7"
+    },
+    "geometry-method-review.md": {
+      "bytes": 11445,
+      "sha256": "bccdd1f8adb07d07782c4a683778177769c266a8dedcb1c65d0a2deaa3aa00b1"
+    },
+    "independent-contact-damage-comparison-root01.json": {
+      "bytes": 7811,
+      "sha256": "d55867f6a86b09750d721775a982f2f342c995ffe7be33798484333cd26be875"
+    },
+    "independent-contact-damage-comparison01.json": {
+      "bytes": 7864,
+      "sha256": "9e746e77c3258e5a34ca9c316e79c2c07598be3354e207ecf21cd517cfe86de7"
+    },
+    "independent-contact-damage01.json": {
+      "bytes": 7021880,
+      "sha256": "dfc169a0c824f0a0981aea60d0e01a5fac0e4de9af4e26e580bc702b177430de"
+    },
+    "independent-contact-damage02.json": {
+      "bytes": 7021880,
+      "sha256": "60fb501873e30815b74fafa766fcd2b0dd129e4fca2e2978b7df2116569a1a5a"
+    },
+    "independent-exact-precision-root01.json": {
+      "bytes": 6682,
+      "sha256": "cd7ff215a3b8bd1f0e1dfb44600dcff4840bfe6c507e3b5db61a1890e0f0a238"
+    },
+    "independent-exact-precision01.json": {
+      "bytes": 6735,
+      "sha256": "1dc00626509d236a01953836120d4422b1bfbacce6939576f0189115a61a2caf"
+    },
+    "independent-exact-preflight01.json": {
+      "bytes": 769,
+      "sha256": "8eff5b1c579457e1135ad22ba1e90c56932f9726c2c8038d8ffbb44964a9c19c"
+    },
+    "independent-exact-reference120-01.json": {
+      "bytes": 10139,
+      "sha256": "d489f6e99ce1ae09b248e84fe534c826a9209974bcdc628b715ed9e7de3d1c95"
+    },
+    "independent-exact-reference120-root01.json": {
+      "bytes": 10085,
+      "sha256": "5535deca74b1eed2c187a58a77c892e7b34ad206ec6b92ca82aea8015a91b4ef"
+    },
+    "independent-exact-reference80-01.json": {
+      "bytes": 8365,
+      "sha256": "98a4d00dd76241c44345c6b0fab01c0b5ffe710bc17778528cc845708d7e071f"
+    },
+    "independent-exact-reference80-root01.json": {
+      "bytes": 9881,
+      "sha256": "4f5e0576ea843cd1640c2cac17ece0f44491f8ca19d88b7b38c24f45a47eacb8"
+    },
+    "independent-exact120-01.json": {
+      "bytes": 50964570,
+      "sha256": "ecbde1063f26bbc520fdbae40209c88c5e433542eee97c6e92b212dc08ffab62"
+    },
+    "independent-exact120-01.npz": {
+      "bytes": 555413,
+      "sha256": "6c4bf3e3bdfeb00c14ef859407c7d685c950123a415a49452e4058e0aecbd8a4"
+    },
+    "independent-exact80-01-failed.json": {
+      "bytes": 3644,
+      "sha256": "09eb070cccd5a267096ee2f43cb87179358bea3c2f56fada6d81bee024e29313"
+    },
+    "independent-exact80-02.json": {
+      "bytes": 47375426,
+      "sha256": "df8246830906ba20a814835d69f45c0196301ab76179e84b227c447d0352b11e"
+    },
+    "independent-exact80-02.npz": {
+      "bytes": 555413,
+      "sha256": "6c4bf3e3bdfeb00c14ef859407c7d685c950123a415a49452e4058e0aecbd8a4"
+    },
+    "independent-proximity01.json": {
+      "bytes": 134907,
+      "sha256": "cc50ea1607ee4875610fdd7cdae62e22dc5e423eb776842849f1e6199217543c"
+    },
+    "independent-proximity01.npz": {
+      "bytes": 4231330,
+      "sha256": "26a9c9421e37c38e96e7568bb0521763b0cd0e621a12e7e101f8a9b411a2bef5"
+    },
+    "independent-review.md": {
+      "bytes": 34933,
+      "sha256": "2c738a0045f124c931af5263705c7765bafc5508175b676ac5fc0cc06e1ceccc"
+    },
+    "independent-stage01.json": {
+      "bytes": 154235,
+      "sha256": "ead0f771054d3bfbe775a215aa7bc295c3c1e741e172b5201ad59816acfccccd"
+    },
+    "independent-stage01.npz": {
+      "bytes": 10603554,
+      "sha256": "fcab10b2081c7fe3e1c0f9f4cdf92344d55e88e12c408fd7b70ebaeb0bcc0ad5"
+    },
+    "preflight-failed01.json": {
+      "bytes": 1415,
+      "sha256": "b2a147a167e053d4bd917af940db2840ae6929df059918be9c841b259d3de511"
+    },
+    "proximity-comparison-root01.json": {
+      "bytes": 328874,
+      "sha256": "3ae497db581bf158d24b3e2a26498eb8180017ec5bf5ab52db0cea043c677e88"
+    },
+    "proximity-comparison01.json": {
+      "bytes": 328926,
+      "sha256": "17c43652a02a8685d12e9ff0f49d9548678989a5a8157ca2f2fc39202e21221a"
+    },
+    "proximity-implementation-review.md": {
+      "bytes": 14605,
+      "sha256": "7ae0bc30a9cff4f527651306b6ae83a4f270e6b58dfeab74140357d9500f50f5"
+    },
+    "proximity-root01.json": {
+      "bytes": 27180,
+      "sha256": "d2201fcd1f0c36f3240a32813b01ec1c8b90f44d019ac0cbb93ce54a99e5f6cc"
+    },
+    "proximity-root01.npz": {
+      "bytes": 823550,
+      "sha256": "b1557b12783c2a7caa7738c2537f941e45c79d3165c9a1385b1de472f29fbcca"
+    },
+    "proximity-root02.json": {
+      "bytes": 27181,
+      "sha256": "962f378986ad225276c1d1d8f796218b3ce729d1079ce65de5cb3664f615601b"
+    },
+    "proximity-root02.npz": {
+      "bytes": 823550,
+      "sha256": "b1557b12783c2a7caa7738c2537f941e45c79d3165c9a1385b1de472f29fbcca"
+    },
+    "proximity-summary01.json": {
+      "bytes": 10739,
+      "sha256": "b722afe6144e27a6b74ada24c2922f24deb8f8b79d7e0a9cc751580e8bcc3d8f"
+    },
+    "proximity.py": {
+      "bytes": 21413,
+      "sha256": "111f5e99646e05096838997d9aa4cddc0574d9767f784b860cb04dbcf52f0bb2"
+    },
+    "report.md": {
+      "bytes": 21571,
+      "sha256": "2794e40962c350b2d66b2441626b2957836844e261f41921cb2976875924f45a"
+    },
+    "source-crosswalk-review.md": {
+      "bytes": 13238,
+      "sha256": "ecd223c11a23daa1ef1dc3bbd9c228a3489fe5fe7596fa20144d9bbb7f259c34"
+    },
+    "stage-root01.json": {
+      "bytes": 1011507,
+      "sha256": "deae7314c487b13e84302eb60b53bffb461f63d286f8d596b96a67377e631963"
+    },
+    "stage-root01.npz": {
+      "bytes": 4179611,
+      "sha256": "2324c9a606dbbf45fc593c5a69bbfc05d7ca538aca3db04031970a109db35bcf"
+    },
+    "stage-root02.json": {
+      "bytes": 1011507,
+      "sha256": "0a9ff75f944ffa9238c56e01fc234e199f1ca65faccfbed98217c4bd53152a33"
+    },
+    "stage-root02.npz": {
+      "bytes": 4179611,
+      "sha256": "2324c9a606dbbf45fc593c5a69bbfc05d7ca538aca3db04031970a109db35bcf"
+    },
+    "summarize_exact_parts.py": {
+      "bytes": 19741,
+      "sha256": "95f78eb2b6abe8496e2d882e599480617c2f18ea4b9d7d420367dd6219d941d1"
+    },
+    "summarize_proximity.py": {
+      "bytes": 6484,
+      "sha256": "4009b0c5c87bdc4ddf585b956814fd39ff828551519b408b9402b729bfac7f70"
+    },
+    "validation.md": {
+      "bytes": 23912,
+      "sha256": "8a4be5036ad64d2bddbe67bf4362728f1cd52965824b792fa4cdbbd3b7d3e374"
+    },
+    "verify_contact_damage.py": {
+      "bytes": 23950,
+      "sha256": "c49436fbe3be336ee936a68bc685d2921261fbac95b148e468821fa51d11b511"
+    },
+    "verify_exact_proximity-before-buffer-pin.py": {
+      "bytes": 9675,
+      "sha256": "8691d11f63cd1d149f46cf6d5ab894dc20ce398844752b968e3aaeea787eb266"
+    },
+    "verify_exact_proximity-before-mask-memory-fix.py": {
+      "bytes": 31789,
+      "sha256": "1e0dd4d645d610861ac8ffa492754df29fea2bbccc8fbf47d0be215d19ed6cf6"
+    },
+    "verify_exact_proximity.py": {
+      "bytes": 32515,
+      "sha256": "c850bdb2e02843e4cbdf2c3cb08b309e25d47708d9fa7b1e41bc4dbe9d044e2f"
+    },
+    "verify_geometry.py": {
+      "bytes": 34033,
+      "sha256": "a1e60b3625d00f266e3f31c983ffcbe4b3843a1c38087ccf3924e9f006ec8a06"
+    },
+    "verify_proximity.py": {
+      "bytes": 36398,
+      "sha256": "cd3559d84e332ea7a3877a15fe8ef0e7ec8717b9cc2c73746d610e3364a31d9e"
+    },
+    "verify_unit_artifacts.py": {
+      "bytes": 8630,
+      "sha256": "36d903c8a399659bec0af7bde7b664fa59b4c4032cbdc5cedd4d147bd1544a39"
+    }
+  },
+  "replay_comparisons": [
+    {
+      "all_other_fields_equal": true,
+      "excluded_difference_paths": [
+        "/command/2",
+        "/elapsed_seconds"
+      ],
+      "first": "contact-damage01.json",
+      "second": "contact-damage02.json"
+    },
+    {
+      "all_other_fields_equal": true,
+      "excluded_difference_paths": [
+        "/command/0",
+        "/command/4",
+        "/elapsed_seconds",
+        "/peak_bytes"
+      ],
+      "first": "independent-exact-reference120-01.json",
+      "second": "independent-exact-reference120-root01.json"
+    },
+    {
+      "all_other_fields_equal": true,
+      "excluded_difference_paths": [
+        "/command/0",
+        "/command/2",
+        "/peak_bytes",
+        "/seconds"
+      ],
+      "first": "independent-exact-precision01.json",
+      "second": "independent-exact-precision-root01.json"
+    },
+    {
+      "all_other_fields_equal": true,
+      "excluded_difference_paths": [
+        "/command/0",
+        "/command/2",
+        "/peak_bytes",
+        "/producer_control_consumers/1/stderr_sha256",
+        "/seconds"
+      ],
+      "first": "proximity-comparison01.json",
+      "second": "proximity-comparison-root01.json"
+    },
+    {
+      "all_other_fields_equal": true,
+      "excluded_difference_paths": [
+        "/command/4",
+        "/elapsed_seconds"
+      ],
+      "first": "exact-parts01.json",
+      "second": "exact-parts-root01.json"
+    },
+    {
+      "all_other_fields_equal": true,
+      "excluded_difference_paths": [
+        "/command/0",
+        "/command/2",
+        "/elapsed_seconds",
+        "/peak_bytes",
+        "/result/producer_control_reruns/verify_contact_damage.py/stderr_sha256"
+      ],
+      "first": "independent-contact-damage-comparison01.json",
+      "second": "independent-contact-damage-comparison-root01.json"
+    }
+  ],
+  "scope": "Integrity, parse/link/text hygiene, retained status, receipt replay equality and scoped guards. Not independent science, source authenticity or physical validation.",
+  "status": "PASS"
+}

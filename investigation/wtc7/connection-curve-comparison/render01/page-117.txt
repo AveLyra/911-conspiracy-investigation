@@ -1,0 +1,36 @@
+Chapter 3 
+ NIST NCSTAR 1-9A, WTC Investigation 66
+3.6 COMPUTING CONSIDERATIONS 
+3.6.1 System Specifications 
+All simulations were run on ARA’s high speed Linux Beowulf computer cluster. The system consisted of 
+a head node and eight compute nodes. The head node housed two 64 bit AMD Opteron 250 2.4 GHz 
+processors. The head node had 4 GB of RAM and housed 1.5 terabytes of RAID 5 disk storage.  Each 
+compute node housed two 64 bit AMD Opteron dual-core 285 2.6 GHz processors. Six of the compute 
+nodes had 8 GB of RAM, and the remaining two nodes had 16 GB RAM. The compute nodes 
+communicated using Silverstorm Infiniband Interconnects. 
+3.6.2 Model Size and Typical Run Time 
+The global model was constructed with 3,593,049 nodes and 3,045,925 total elements. The type and 
+number of the elements were: 3,006,910 shells, 3,190 beams, 2,461 solids, 33,364 discrete elements, and 
+3,050 rigid elements.  
+The global simulation was first initialized under gravity loading over 4.5 s of simulation time. Then 
+damage and temperature initialization states were applied over 4 additional seconds. Collapse propagation 
+in the global model required approximately 16 additional seconds after initialization, for a total of close to 
+25 seconds of simulated time, which generally took up to 8 weeks using 12 CPUs across 3 nodes (4 CPUs 
+per node). 
+3.6.3 LS-DYNA Version 
+The analyses were performed with the LS-DYNA finite element code (Version mpp971dR4 beta, revision 
+41161). Use of this double precision code results in longer run times than a single precision version 
+would require. However, a double precision version was necessary. In structural models where there are 
+physically large dimensions (spatial extents of the building) compared to the characteristic element 
+length, and long time scales compared to the explicit time step size, rounding errors can occur and 
+accumulate when using a single-precision analysis.  To address this issue, the double precision version of 
+LS-DYNA was used for the global analyses. 
+3.7 REFERENCES 
+Cantor 1985. Irwin G. Cantor P.C., Structural Engineers, Structural Drawings, 7 World Trade Center. 
+Frankel 1985a. Frankel Steel Limited, Fabrication Shop Drawings, 7 World Trade Center (drawing set 
+was not sealed). 
+Sadek, F., El-Tawil, S., Lew, H.S. 2008. Robustness of Composite Floor Systems with Shear 
+Connections: Modeling, Simulation, and Evaluation, J. Struct. Eng., ASCE, Vol 134, No. 11, pg 
+1717-1725. 
+XYZ. 2006. TrueGrid User’s Manual, Volume 1 and 2, Version 2.3.0, XYZ Scientific Applications, Inc., 
+April 2006. 

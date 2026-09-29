@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"37b7ccb661",applicationID:"1089704227",browserID:"1134161994"};;/*! For license information please see nr-loader-rum-1.322.0.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):e[s]instanceof Map||e[s]instanceof Set||e[s]instanceof Date||e[s]instanceof RegExp?r[s]=e[s]:"object"==typeof e[s]&&null!==t[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,a)])},7699(e,t,r){"use strict";var n=r(860);const i={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,1e6,"KC",0,i,"qh",0,"SESSION_ERROR"])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.322.0"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=""+s?.location,u=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,a,"gm",0,s,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=s?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<s.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),a=r(860),s=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:a.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const a=e.ee,o=i.i.handlers;if(a&&!a.aborted&&a.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof s.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete o[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,a=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(i(r,a++).toString(16));return s.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),a=r(944),s=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,s.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,a.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,a){const d=a||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function l(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)("api-"+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",a="browser/blobs",s="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:a,[o.sessionReplay]:a,[o.logging]:s,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,s,"df",0,a,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const a=t[n]={exports:{}};return e[n](a,a.exports,r),a.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],a=t[n++];r.o(e,i)?0===a&&n++:0===a?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:a})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.322.0.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.322.0.PROD:";r.l=(n,i,a,s)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==a){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+a){o=r;break}}}if(!o){c=!0;var d={296:"sha512-/59P7qAoMYQDJAZerTRPChdYcdrlcoEAw2TwA1wz6Y0/XLmt3sblLI5JCXAuxG0YxsW7iqJzgrcO7NJWO58EfQ=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+a),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[s]&&(o.integrity=d[s])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const a=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=a);const s=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(s,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,a,s]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in a)r.o(a,o)&&(r.m[o]=a[o]);if(s)s(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.322.0.PROD"]=self["webpackChunk:NRBA-1.322.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),a=r(1741);var s=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1},R="BA";var A=r(7836),x=r(3241);const E={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908);const k="newrelic-iframe-";function T(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,E)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,s.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:R,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(a.W.prototype).forEach(r=>{const n=a.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=A.ee.get(e.agentIdentifier),e.exposed=f,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(k)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var j=r(1863),P=r(4261),N=r(1738);var O=r(1687),M=r(4234),I=r(5289),D=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,D.V)(e)&&!0===e?.session_trace.enabled}var W=r(6389),B=r(7699);const C=new WeakSet,K=new WeakMap;class U extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,O.Ak)(e,this.featureName),t()}))}):(0,O.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,s.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(K.has(e))return K.get(e);const i=(async()=>{if((0,D.V)(e.init))try{const{setupAgentSession:t}=await r.e(296).then(r.bind(r,1768));t(e)}catch(e){(0,f.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(B.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}const[{Connector:i},{Harvester:a}]=await Promise.all([r.e(296).then(r.bind(r,6589)),r.e(296).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new a(e);const s=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(s.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();K.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,f.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};h.RI?(0,I.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!C.has(e)&&(C.add(e),!(0,s.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}T(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var L=r(6630);class F extends U{static featureName=L.T;constructor(e){var t;super(e,L.T),this.setupInspectionEvents(),t=e,(0,N.Y)(P.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+P.Fw,[(0,j.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(296).then(r.bind(r,908)):r.e(296).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,I.sB)(t=>{e(t,"DOMContentLoaded")}),(0,I.GG)(t=>{e(t,"load")}),(0,I.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class G extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(F),T(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(P.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,P.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,N.Y)(P.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,P.Dl,!0)},e)}(this),function(e){(0,N.Y)(P.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,P.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(P.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+P.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var H=r(2843),z=r(782);class Y extends U{static featureName=z.T;constructor(e){super(e,z.T),h.RI&&((0,H.u)(()=>(0,S.p)("docHidden",[(0,j.t)()],void 0,z.T,this.ee),!0),(0,H.G)(()=>(0,S.p)("winPagehide",[(0,j.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var Z=r(3969);class q extends U{static featureName=Z.TZ;constructor(e){super(e,Z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new G({features:[F,Y,q],loaderType:"lite"})})()})();</script>
+<meta name="description" content="The National Construction Safety Team Advisory Committee" />
+<link rel="shortlink" href="https://www.nist.gov/node/434226" />
+<link rel="canonical" href="https://www.nist.gov/el/ncst-advisory-committee-mtg-minutes-june-22-23-2004" />
+<meta name="citation_title" content="NCST Advisory Committee Mtg. Minutes of June 22-23, 2004 | NIST" />
+<meta property="og:site_name" content="NIST" />
+<meta property="og:type" content="Article" />
+<meta property="og:url" content="https://www.nist.gov/el/ncst-advisory-committee-mtg-minutes-june-22-23-2004" />
+<meta property="og:title" content="NCST Advisory Committee Mtg. Minutes of June 22-23, 2004" />
+<meta property="og:description" content="The National Construction Safety Team Advisory Committee" />
+<meta property="og:image" content="https://www.nist.gov/themes/custom/nist_www/img/homepage/nist_mark.png" />
+<meta property="article:published_time" content="2010-06-29T12:29-04:00" />
+<meta property="article:modified_time" content="2026-05-28T10:02-04:00" />
+<meta name="dcterms.title" content="NCST Advisory Committee Mtg. Minutes of June 22-23, 2004" />
+<meta name="dcterms.description" content="The National Construction Safety Team Advisory Committee" />
+<meta name="dcterms.date" content="2010-06-29T12:29-04:00" />
+<meta name="dcterms.type" content="text" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="https://www.nist.gov/el/ncst-advisory-committee-mtg-minutes-june-22-23-2004" />
+<meta name="dcterms.source" content="NIST" />
+<meta name="dcterms.modified" content="2026-05-28T10:02-04:00" />
+<meta name="dcterms.created" content="2010-06-29T12:29-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="NCST Advisory Committee Mtg. Minutes of June 22-23, 2004" />
+<meta name="twitter:description" content="The National Construction Safety Team Advisory Committee" />
+<meta name="twitter:site" content="NIST" />
+<meta name="google-site-verification" content="QMu0ODkER3rN5hLcMLqNVf7e3bkjYsNLTuhqfH48jCA" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://challenges.cloudflare.com" />
+<meta name="nist_search_modified" class="elastic" content="2026-05-28T10:02:00-04:00" />
+<meta name="nist_search_bundle" class="elastic" content="page" />
+<link rel="icon" href="/themes/custom/nist_www/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <title>NCST Advisory Committee Mtg. Minutes of June 22-23, 2004 | NIST</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_fTdyFqCPAPNylCEpd3ROVcEUT61CeoMg3HvGNDFjsLc.css?delta=0&amp;language=en&amp;theme=nist_www&amp;include=eJxlj_0OgyAMxF-IyCM1BTrtBGooDvf2Q_cRzf5p7ndprldcqwBmP0lRiycwDv0Mnass9qSBvWTjpZANZV0wDnjH7WIExiijoa1GzvPX_aDJrNWOURzGQ8OCI8GNKOxX7L_13qoTJeoFJDoskCTYwIouEvxSobV2Sd45sS-iXMnoUyul_ouSeTA1tcccetYa6QX2J2f-" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_RpbtmXsl7oGQxv9QNBnvPuinCNE4QsmFKhDsc-ClaUc.css?delta=1&amp;language=en&amp;theme=nist_www&amp;include=eJxlj_0OgyAMxF-IyCM1BTrtBGooDvf2Q_cRzf5p7ndprldcqwBmP0lRiycwDv0Mnass9qSBvWTjpZANZV0wDnjH7WIExiijoa1GzvPX_aDJrNWOURzGQ8OCI8GNKOxX7L_13qoTJeoFJDoskCTYwIouEvxSobV2Sd45sS-iXMnoUyul_ouSeTA1tcccetYa6QX2J2f-" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_LpHBc8EPEsDrEJSd96BC5X0OHJG9W5P68QT2eD_fJio.css?delta=2&amp;language=en&amp;theme=nist_www&amp;include=eJxlj_0OgyAMxF-IyCM1BTrtBGooDvf2Q_cRzf5p7ndprldcqwBmP0lRiycwDv0Mnass9qSBvWTjpZANZV0wDnjH7WIExiijoa1GzvPX_aDJrNWOURzGQ8OCI8GNKOxX7L_13qoTJeoFJDoskCTYwIouEvxSobV2Sd45sS-iXMnoUyul_ouSeTA1tcccetYa6QX2J2f-" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_kD2OJBdR8CXkCaKYKnmA_IJ_KK0vj7CPyFm3b68D-2s.css?delta=3&amp;language=en&amp;theme=nist_www&amp;include=eJxlj_0OgyAMxF-IyCM1BTrtBGooDvf2Q_cRzf5p7ndprldcqwBmP0lRiycwDv0Mnass9qSBvWTjpZANZV0wDnjH7WIExiijoa1GzvPX_aDJrNWOURzGQ8OCI8GNKOxX7L_13qoTJeoFJDoskCTYwIouEvxSobV2Sd45sS-iXMnoUyul_ouSeTA1tcccetYa6QX2J2f-" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/434226","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx1kFFywyAMRC9EzZEYYWSsBJAH4ZLevipJE9pOf4TeSrMswNnYQVl3rmJhAuNhvTrlxoedekcrl3-HFzF4a4nK1YZ6HpCWB5rIHBO6BtFGLb95gQvcforZFJJmY2IPae7f9JaBO0LA-sRMa2WhhgPdRmoVuJfEEFyrGpOKGsN9fEBEtyGGr_z2r3TfajtmDcScPFSXOdhAAl6dx6vGTu99Tjnxd7QhveLJhzTM-nGC5p2wix11UfszoenoN67ZPs4lECSOn8ZJplY","theme":"nist_www","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-54VSXXDF"]},"auto_anchors":{"show_automatic_anchor_links":true,"root_elements":".nist-page__region--content, .nist-content-row","anchor_elements":"h2:not(.tl-headline, .nist-subscribe-form__title), h3:not(.tl-headline-date)","link_content":"\u003Cimg src=\u0022\/libraries\/nist-component-library\/dist\/img\/link.svg\u0022 alt=\u0022permalink\u0022\u003E","exclude_admin_pages":true},"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_speed":1200,"back_to_top_prevent_on_mobile":false,"back_to_top_prevent_in_admin":true,"back_to_top_button_type":"image","back_to_top_button_text":"Back to top"},"nist_map":{"mapbox_access_token":"pk.eyJ1IjoidGltd29vZCIsImEiOiJjbXIwdHM2ZWwwaHc2MnFva2duODg1Y3JxIn0.LGaxtrLTglfvQHdKGEsTBw"},"nist_search":{"clickTracking":"search-report-click","isDebug":false,"clickTrackEnabled":true,"message":"NIST Search in debug mode. Check the browsers network inspector for Click Track reporting results..."},"webform":{"dialog":{"options":{"narrow":{"title":"Narrow","width":600},"normal":{"title":"Normal","width":800},"wide":{"title":"Wide","width":1000}},"entity_type":"node","entity_id":"434226"}},"data":{"extlink":{"extTarget":false,"extTargetAppendNewWindowDisplay":true,"extTargetAppendNewWindowLabel":"","extTargetNoOverride":false,"extNofollow":false,"extTitleNoOverride":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"\\.gov\\\/|\\.mil\\\/|\\manufacturingusa\\.com\\\/","extInclude":"","extCssExclude":".ck-editor, .nist-video-thumbnail__lightbox-trigger, a.nist-icon--mail-blue","extCssInclude":"","extCssExplicit":"","extAlert":true,"extAlertText":"Thank you for visiting NIST. We hope your visit was informative. We have provided a link to this site because it has information that may be of interest to our users. NIST does not necessarily endorse the views expressed or the facts presented on this site. Further, NIST does not endorse any commercial products that may be advertised or available on this site. Click OK to be directed to your link.","extHideIcons":false,"mailtoClass":"0","telClass":"","mailtoLabel":"(link sends email)","telLabel":"(link is a phone number)","extUseFontAwesome":false,"extIconPlacement":"after","extPreventOrphan":false,"extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","extAdditionalLinkClasses":"","extAdditionalMailtoClasses":"","extAdditionalTelClasses":"","extFaTelClasses":"fa fa-phone","allowedDomains":[],"extExcludeNoreferrer":""}},"user":{"uid":0,"permissionsHash":"875e680e0313ee626581ae2795425dd5501fdff52b84168125ae1988c7b8b5e4"}}</script>
+<script src="/sites/default/files/js/js_Dmu_Ia9jJ3obSDAZcLMzNA46zWCVvRZdkITMfXTLHCo.js?scope=header&amp;delta=0&amp;language=en&amp;theme=nist_www&amp;include=eJxljmEOgzAIhS_UyZEItVg7aTFtTT3-OnWJ2_4AHzzg0VYVKY2z5gJ0A2NpXLBz1RVuNT6L4b1KSAu4vK0kw4XGq3phrOTB9_DLAz1p_25Gk0Kp4EUtyaNfPnBmcpw_iFPoeqctiZLDmruXkPo2neOVPOPE7N4m4b91qurMsX9VFUsZozpwoZDtlw_rh6a1drPS2E6aI1x5cIFE_QuuxnZ3"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?tm0mmm"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?tm0mmm"></script>
+<script src="/sites/default/files/js/js_5WbAeKWaHF5M7ZGOm0J4MoiuVLINg4UjWTVpVV4wxTc.js?scope=header&amp;delta=3&amp;language=en&amp;theme=nist_www&amp;include=eJxljmEOgzAIhS_UyZEItVg7aTFtTT3-OnWJ2_4AHzzg0VYVKY2z5gJ0A2NpXLBz1RVuNT6L4b1KSAu4vK0kw4XGq3phrOTB9_DLAz1p_25Gk0Kp4EUtyaNfPnBmcpw_iFPoeqctiZLDmruXkPo2neOVPOPE7N4m4b91qurMsX9VFUsZozpwoZDtlw_rh6a1drPS2E6aI1x5cIFE_QuuxnZ3"></script>
+
+  </head>
+  <body class="node-434226">
+        <a href="#main-content" class="visually-hidden focusable" data-elastic-exclude>
+      Skip to main content
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54VSXXDF"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+  <!-- nist-index-ignore-start -->
+<section data-elastic-exclude class="usa-banner" aria-label="Official website of the United States government">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img class="usa-banner__header-flag" src="/libraries/nist-component-library/dist/img/us_flag_small.png" alt="U.S. flag">
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+        </div>
+        <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner-default">
+          <span class="usa-banner__button-text">Here’s how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner-default">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/libraries/nist-component-library/dist/img/icon-dot-gov.svg" role="img" alt="" aria-hidden="true">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Official websites use .gov</strong>
+              <br/>
+              A <strong>.gov</strong> website belongs to an official government organization in the United States.
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/libraries/nist-component-library/dist/img/icon-https.svg" role="img" alt="" aria-hidden="true">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Secure .gov websites use HTTPS</strong>
+              <br/>
+              A <strong>lock</strong> (  <span class="icon-lock">
+    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewbox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description" focusable="false">
+      <title id="banner-lock-title">Lock</title>
+      <desc id="banner-lock-description">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/></svg>
+  </span>
+) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- nist-index-ignore-end -->
+
+    
+    <div data-elastic-exclude>
+<!-- nist-index-ignore-start -->
+<div class="nist-print-header" style="display:none;">
+  <p class="nist-print-header__url">https://www.nist.gov/el/ncst-advisory-committee-mtg-minutes-june-22-23-2004</p>
+  <img class="nist-print-header__logo" width="289" height="38" src="/libraries/nist-component-library/dist/img/logo/nist_logo_sidestack.svg" alt="National Institute of Standards and Technology" />
+</div>
+
+
+<div class="usa-overlay"></div>
+<header class="usa-header nist-header--www nist-header--minimal" role="banner">
+      <div class="usa-navbar__outer">
+    <div class="usa-navbar">
+      <div class="usa-logo flex-fill">
+            <a href="/" title="National Institute of Standards and Technology" aria-label="Home">
+      <img src="/libraries/nist-component-library/dist/img/logo/logo.svg" alt="National Institute of Standards and Technology" width="300px" height="80px" />
+    </a>
+        </div>
+      <div class="usa-header__right grid-row flex-auto">
+                                  <div class="grid-col-fill nist-header__search-group">
+                      
+<form class="usa-search usa-search--small"
+  accept-charset="UTF-8"
+  action="/search"
+  id="search_form"
+  method="get"
+  role="search">
+  <label class="usa-sr-only" for="search-form">Search NIST</label>
+  <input class="usa-input" id="search-form" type="search" name="s" placeholder="Search NIST" required="" maxlength="128">
+  <button class="usa-button" type="submit"><img src="/libraries/nist-component-library/dist/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search"></button>
+</form>
+                  </div>
+                  <div class="grid-col-auto padding-left-1">
+            <button class="usa-menu-btn">Menu</button>
+          </div>
+              </div>
+    </div>
+  </div>
+
+      
+
+
+<nav aria-label="Primary navigation" class="usa-nav">
+  <div class="usa-nav__inner">
+    <button class="usa-nav__close">Close</button>
+    <ul class="usa-nav__primary usa-accordion">
+            <li class="usa-nav__primary-item">
+                <a class="usa-nav__link" href="/publications">Publications</a>
+              </li>
+            <li class="usa-nav__primary-item">
+                <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="primary_menu-2"><span>What We Do</span></button>
+        <div id="primary_menu-2" class="usa-nav__submenu usa-megamenu">
+          <div class="grid-row">
+                                                        <div class="tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="/topics" class="usa-nav__link">All Topics</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/advanced-communications" class="usa-nav__link">Advanced communications</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/artificial-intelligence" class="usa-nav__link">Artificial intelligence</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/biotechnology" class="usa-nav__link">Bioscience</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/buildings-and-construction" class="usa-nav__link">Buildings and construction</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/chemistry" class="usa-nav__link">Chemistry</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/cybersecurity-and-privacy" class="usa-nav__link">Cybersecurity and Privacy</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/electronics" class="usa-nav__link">Electronics</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/energy" class="usa-nav__link">Energy</a>
+                              </li>
+                                                          </ul></div><div class="column-break tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="/environment" class="usa-nav__link">Environment</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/fire" class="usa-nav__link">Fire</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/forensic-science" class="usa-nav__link">Forensic science</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/health" class="usa-nav__link">Health</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/information-technology" class="usa-nav__link">Information technology</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/infrastructure" class="usa-nav__link">Infrastructure</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/manufacturing" class="usa-nav__link">Manufacturing</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/materials" class="usa-nav__link">Materials</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/mathematics-and-statistics" class="usa-nav__link">Mathematics and statistics</a>
+                              </li>
+                                                          </ul></div><div class="column-break tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="/metrology" class="usa-nav__link">Metrology</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/nanotechnology" class="usa-nav__link">Nanotechnology</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/neutron-research" class="usa-nav__link">Neutron research</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/performance-excellence" class="usa-nav__link">Performance excellence</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/physics" class="usa-nav__link">Physics</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/public-safety" class="usa-nav__link">Public safety</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/quantum-information-science" class="usa-nav__link">Quantum information science</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/resilience" class="usa-nav__link">Resilience</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/standards" class="usa-nav__link">Standards</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/transportation" class="usa-nav__link">Transportation</a>
+                              </li>
+                            </ul>
+            </div>
+          </div>
+        </div>
+              </li>
+            <li class="usa-nav__primary-item">
+                <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="primary_menu-3"><span>Labs &amp; Major Programs</span></button>
+        <div id="primary_menu-3" class="usa-nav__submenu usa-megamenu">
+          <div class="grid-row">
+                                                        <div class="tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="/laboratories" class="usa-nav__link">Laboratories</a>
+                                <ul class="usa-nav__submenu-list">
+                                  <li>
+                    <a href="/ctl" class="usa-nav__link">Communications Technology Laboratory</a>
+                  </li>
+                                  <li>
+                    <a href="/el" class="usa-nav__link">Engineering Laboratory</a>
+                  </li>
+                                  <li>
+                    <a href="/itl" class="usa-nav__link">Information Technology Laboratory</a>
+                  </li>
+                                  <li>
+                    <a href="/mml" class="usa-nav__link">Material Measurement Laboratory</a>
+                  </li>
+                                  <li>
+                    <a href="/pml" class="usa-nav__link">Physical Measurement Laboratory</a>
+                  </li>
+                                </ul>
+                              </li>
+                                                          </ul></div><div class="column-break tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="/user-facilities" class="usa-nav__link">User Facilities</a>
+                                <ul class="usa-nav__submenu-list">
+                                  <li>
+                    <a href="/ncnr" class="usa-nav__link">NIST Center for Neutron Research</a>
+                  </li>
+                                  <li>
+                    <a href="/cnst" class="usa-nav__link">CNST NanoFab</a>
+                  </li>
+                                </ul>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/research-test-beds" class="usa-nav__link">Research Test Beds</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/laboratories/projects-programs" class="usa-nav__link">Research Projects</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/laboratories/tools-instruments" class="usa-nav__link">Tools &amp; Instruments</a>
+                              </li>
+                                                          </ul></div><div class="column-break tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="/major-programs" class="usa-nav__link">Major Programs</a>
+                                <ul class="usa-nav__submenu-list">
+                                  <li>
+                    <a href="/chips" class="usa-nav__link">CHIPS for America Initiative</a>
+                  </li>
+                                  <li>
+                    <a href="/cds" class="usa-nav__link">Congressionally Identified Project Program (CIPP)</a>
+                  </li>
+                                  <li>
+                    <a href="/mep" class="usa-nav__link">Manufacturing Extension Partnership (MEP)</a>
+                  </li>
+                                  <li>
+                    <a href="https://www.manufacturingusa.com/" class="usa-nav__link">Manufacturing USA</a>
+                  </li>
+                                  <li>
+                    <a href="/oam" class="usa-nav__link">Office of Advanced Manufacturing</a>
+                  </li>
+                                  <li>
+                    <a href="/tpo" class="usa-nav__link">Technology Partnerships Office</a>
+                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+            </div>
+          </div>
+        </div>
+              </li>
+            <li class="usa-nav__primary-item">
+                <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="primary_menu-4"><span>Services &amp; Resources</span></button>
+        <div id="primary_menu-4" class="usa-nav__submenu usa-megamenu">
+          <div class="grid-row">
+                                                        <div class="tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="/standards-measurements" class="usa-nav__link">Measurements and Standards</a>
+                                <ul class="usa-nav__submenu-list">
+                                  <li>
+                    <a href="/calibrations" class="usa-nav__link">Calibration Services</a>
+                  </li>
+                                  <li>
+                    <a href="/nvlap" class="usa-nav__link">Laboratory Accreditation (NVLAP)</a>
+                  </li>
+                                  <li>
+                    <a href="/nist-quality-system" class="usa-nav__link">Quality System</a>
+                  </li>
+                                  <li>
+                    <a href="/srm" class="usa-nav__link">Standard Reference Materials (SRMs)</a>
+                  </li>
+                                  <li>
+                    <a href="/sri" class="usa-nav__link">Standard Reference Instruments (SRIs)</a>
+                  </li>
+                                  <li>
+                    <a href="/standardsgov" class="usa-nav__link">Standards.gov</a>
+                  </li>
+                                  <li>
+                    <a href="/pml/time-and-frequency-division/time-services" class="usa-nav__link">Time Services</a>
+                  </li>
+                                  <li>
+                    <a href="/pml/owm" class="usa-nav__link">Office of Weights and Measures</a>
+                  </li>
+                                </ul>
+                              </li>
+                                                          </ul></div><div class="column-break tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="/services-resources/software" class="usa-nav__link">Software</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/data" class="usa-nav__link">Data</a>
+                                <ul class="usa-nav__submenu-list">
+                                  <li>
+                    <a href="https://webbook.nist.gov/chemistry/" class="usa-nav__link">Chemistry WebBook</a>
+                  </li>
+                                  <li>
+                    <a href="https://nvd.nist.gov/" class="usa-nav__link">National Vulnerability Database</a>
+                  </li>
+                                  <li>
+                    <a href="/pml/productsservices/physical-reference-data" class="usa-nav__link">Physical Reference Data</a>
+                  </li>
+                                  <li>
+                    <a href="/srd" class="usa-nav__link">Standard Reference Data (SRD)</a>
+                  </li>
+                                </ul>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="https://shop.nist.gov/" class="usa-nav__link">Storefront</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/tpo" class="usa-nav__link">License &amp; Patents</a>
+                              </li>
+                                                          </ul></div><div class="column-break tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="https://csrc.nist.gov/" class="usa-nav__link">Computer Security Resource Center (CSRC)</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/nist-research-library" class="usa-nav__link">NIST Research Library</a>
+                              </li>
+                            </ul>
+            </div>
+          </div>
+        </div>
+              </li>
+            <li class="usa-nav__primary-item">
+                <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="primary_menu-5"><span>News &amp; Events</span></button>
+        <div id="primary_menu-5" class="usa-nav__submenu usa-megamenu">
+          <div class="grid-row">
+                                                        <div class="tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="/news-events/news" class="usa-nav__link">News</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/news-events/events" class="usa-nav__link">Events</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/blogs" class="usa-nav__link">Blogs</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/nist-focus" class="usa-nav__link">NIST In Focus</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/feature-stories" class="usa-nav__link">Feature Stories</a>
+                              </li>
+                                                          </ul></div><div class="column-break tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="/awards" class="usa-nav__link">Awards</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/video-gallery" class="usa-nav__link">Video Gallery</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/image-gallery" class="usa-nav__link">Image Gallery</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/comms/media-contacts" class="usa-nav__link">Media Contacts</a>
+                              </li>
+                            </ul>
+            </div>
+          </div>
+        </div>
+              </li>
+            <li class="usa-nav__primary-item">
+                <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="primary_menu-6"><span>About NIST</span></button>
+        <div id="primary_menu-6" class="usa-nav__submenu usa-megamenu">
+          <div class="grid-row">
+                                                        <div class="tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="/about-nist" class="usa-nav__link">About Us</a>
+                                <ul class="usa-nav__submenu-list">
+                                  <li>
+                    <a href="/director/leadership" class="usa-nav__link">Leadership</a>
+                  </li>
+                                  <li>
+                    <a href="/director/nist-organization-structure" class="usa-nav__link">Organization Structure</a>
+                  </li>
+                                  <li>
+                    <a href="/about-nist/budget-planning" class="usa-nav__link">Budget &amp; Planning</a>
+                  </li>
+                                </ul>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/contact" class="usa-nav__link">Contact Us</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/about-nist/visit" class="usa-nav__link">Visit</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/careers" class="usa-nav__link">Careers</a>
+                                <ul class="usa-nav__submenu-list">
+                                  <li>
+                    <a href="/iaao/academic-affairs-office" class="usa-nav__link">Student programs</a>
+                  </li>
+                                </ul>
+                              </li>
+                                                          </ul></div><div class="column-break tablet:grid-col-fill"><ul class="usa-nav__submenu-list">
+                            <li class="usa-nav__submenu-item">
+                <a href="/about-nist/work-nist" class="usa-nav__link">Work with NIST</a>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/history" class="usa-nav__link">History</a>
+                                <ul class="usa-nav__submenu-list">
+                                  <li>
+                    <a href="http://nistdigitalarchives.contentdm.oclc.org/" class="usa-nav__link">NIST Digital Archives</a>
+                  </li>
+                                  <li>
+                    <a href="/nist-museum" class="usa-nav__link">NIST Museum</a>
+                  </li>
+                                  <li>
+                    <a href="/nist-and-nobel" class="usa-nav__link">NIST and the Nobel</a>
+                  </li>
+                                </ul>
+                              </li>
+                                                        <li class="usa-nav__submenu-item">
+                <a href="/education" class="usa-nav__link">Educational Resources</a>
+                              </li>
+                            </ul>
+            </div>
+          </div>
+        </div>
+              </li>
+          </ul>
+  </div>
+</nav>
+
+
+
+  
+</header>
+<!-- nist-index-ignore-end -->
+</div>
+  
+  <div class="grid-container">
+    
+
+
+
+  </div>
+
+
+
+    
+
+<div
+   id="block-nist-www-content" class="nist-block"
+>
+  
+    
+      
+
+
+
+
+
+        
+<section
+       class="nist-page__content usa-section clearfix"
+    >
+
+  <a id="main-content" tabindex="-1"></a>
+
+        <div
+           class="nist-page__region nist-page__region--content-top-full"
+        >
+        <div
+   class="nist-block"
+>
+  
+    
+      
+  <div class="nist-section-header nist-section-header--341081 nist-section-header--menu nist-section-header--interior">
+                        <div class="nist-section-header__main grid-container">
+                  <div class="nist-section-header__title">
+          <h2><a href="/el">Engineering Laboratory</a></h2>
+        </div>
+              </div>
+  </div>
+
+        
+  </div>
+
+    </div>
+    
+      
+  <div class="grid-container margin-top-4">
+    <div class="grid-row grid-gap-4">
+
+                  <aside class="nist-page__region nist-page__region--sidebar-first tablet-lg:grid-col-4 desktop-lg:grid-col-3">
+        <div>
+          <!-- nist-index-ignore-start -->
+<div
+   class="views-element-container nist-block nist-block--section-nav" data-elastic-exclude=""
+>
+  
+    
+      <div><div class="js-view-dom-id-34a7a3f9beeaae39d624bb0eb7b435623eae764275a1bf81bd2e8df3a9953105">
+  
+  
+  
+
+  
+  
+  
+
+    <div><div class="views-field views-field-nid"><span class="field-content">
+
+  <nav>
+    <ul class="usa-sidenav usa-accordion ">
+          <li class="usa-sidenav__item usa-sidenav__item--parent">
+        <a href="/el/about-el" data-drupal-link-system-path="">About EL</a>
+                            <button class="usa-accordion__button usa-sidenav__item-button" aria-expanded="false" aria-controls="menu-engineering-laboratory-1"><span class="usa-sr-only">Expand or Collapse</span></button>
+          <ul id="menu-engineering-laboratory-1" class="usa-sidenav__sublist usa-accordion">
+                      <li class="usa-sidenav__item">
+              <a href="/el/about-el/careers" data-drupal-link-system-path="">Careers</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/el/about-el/staff-organization" data-drupal-link-system-path="">Divisions &amp; Offices</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/el/about-el/research-opportunities" data-drupal-link-system-path="">Research Opportunities</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/el/about-el/research-facilities" data-drupal-link-system-path="">Research Facilities</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/el/about-el/standards-activities" data-drupal-link-system-path="">Standards Activities</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/el/about-el/contact-us" data-drupal-link-system-path="">Contact Us</a>
+                          </li>
+                    </ul>
+              </li>
+          <li class="usa-sidenav__item usa-sidenav__item--parent">
+        <a href="/el/goals-programs" data-drupal-link-system-path="">Goals &amp; Programs</a>
+                            <button class="usa-accordion__button usa-sidenav__item-button" aria-expanded="false" aria-controls="menu-engineering-laboratory-2"><span class="usa-sr-only">Expand or Collapse</span></button>
+          <ul id="menu-engineering-laboratory-2" class="usa-sidenav__sublist usa-accordion">
+                      <li class="usa-sidenav__item">
+              <a href="/el/goals-programs/advanced-manufacturing-automation-and-autonomous-systems" data-drupal-link-system-path="">Advanced Manufacturing, Automation, and Autonomous Systems</a>
+                                              <button class="usa-accordion__button usa-sidenav__item-button" aria-expanded="false" aria-controls="menu-engineering-laboratory-2-1"><span class="usa-sr-only">Expand or Collapse</span></button>
+                <ul id="menu-engineering-laboratory-2-1" class="usa-sidenav__sublist usa-accordion">
+                                  <li class="usa-sidenav__item">
+                    <a href="/programs-projects/measurement-science-additive-manufacturing-program" data-drupal-link-system-path="">Measurement Science for Additive Manufacturing</a>
+                                      </li>
+                                  <li class="usa-sidenav__item">
+                    <a href="/programs-projects/measurement-science-robotics-and-autonomous-systems" data-drupal-link-system-path="">Measurement Science for Robotics and Autonomous Systems</a>
+                                      </li>
+                                  <li class="usa-sidenav__item">
+                    <a href="/programs-projects/advanced-manufacturing-data-infrastructure-and-analytics-program" data-drupal-link-system-path="">Advanced Manufacturing Data Infrastructure and Analytics</a>
+                                      </li>
+                                </ul>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/el/goals-programs/measurement-science-building-systems" data-drupal-link-system-path="">High Performance for Building Systems</a>
+                                              <button class="usa-accordion__button usa-sidenav__item-button" aria-expanded="false" aria-controls="menu-engineering-laboratory-2-2"><span class="usa-sr-only">Expand or Collapse</span></button>
+                <ul id="menu-engineering-laboratory-2-2" class="usa-sidenav__sublist usa-accordion">
+                                  <li class="usa-sidenav__item">
+                    <a href="https://www.nist.gov/programs-projects/ai-building-systems-innovation-aibsi-program" data-drupal-link-system-path="">AI for Building Systems Innovation (AIBSI)</a>
+                                      </li>
+                                  <li class="usa-sidenav__item">
+                    <a href="/programs-projects/measurement-science-building-systems" data-drupal-link-system-path="">Measurement Science for Building Systems</a>
+                                                                <button class="usa-accordion__button usa-sidenav__item-button" aria-expanded="false" aria-controls="menu-engineering-laboratory-2-2-2"><span class="usa-sr-only">Expand or Collapse</span></button>
+                      <ul id="menu-engineering-laboratory-2-2-2" class="usa-sidenav__sublist">
+                                              <li>
+                         <a href="/el/residential-test-facility/current-activities" data-drupal-link-system-path="">Current Activities</a>
+                        </li>
+                                            </ul>
+                                      </li>
+                                </ul>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/el/goals-programs/disaster-resilient-buildings-infrastructure-and-communities" data-drupal-link-system-path="">Disaster-Resilient Buildings, Infrastructure, and Communities</a>
+                                              <button class="usa-accordion__button usa-sidenav__item-button" aria-expanded="false" aria-controls="menu-engineering-laboratory-2-3"><span class="usa-sr-only">Expand or Collapse</span></button>
+                <ul id="menu-engineering-laboratory-2-3" class="usa-sidenav__sublist usa-accordion">
+                                  <li class="usa-sidenav__item">
+                    <a href="/programs-projects/fire-risk-reduction-buildings-program" data-drupal-link-system-path="">Fire Risk Reduction in Buildings</a>
+                                      </li>
+                                  <li class="usa-sidenav__item">
+                    <a href="/programs-projects/fire-risk-reduction-communities-program" data-drupal-link-system-path="">Fire Risk Reduction in Communities</a>
+                                      </li>
+                                  <li class="usa-sidenav__item">
+                    <a href="https://www.nist.gov/disaster-failure-studies/hurricane-maria-program" data-drupal-link-system-path="">Hurricane Maria</a>
+                                      </li>
+                                  <li class="usa-sidenav__item">
+                    <a href="https://www.nist.gov/programs-projects/materials-and-structures-resilience-program" data-drupal-link-system-path="">Materials and Structures Resilience</a>
+                                      </li>
+                                  <li class="usa-sidenav__item">
+                    <a href="/programs-projects/risk-reduction-and-recovery-program" data-drupal-link-system-path="">Risk Reduction and Recovery</a>
+                                      </li>
+                                </ul>
+                          </li>
+                    </ul>
+              </li>
+          <li class="usa-sidenav__item usa-sidenav__item--parent">
+        <a href="https://www.nist.gov/el/statutory-programs" data-drupal-link-system-path="">Statutory Programs</a>
+                            <button class="usa-accordion__button usa-sidenav__item-button" aria-expanded="false" aria-controls="menu-engineering-laboratory-3"><span class="usa-sr-only">Expand or Collapse</span></button>
+          <ul id="menu-engineering-laboratory-3" class="usa-sidenav__sublist usa-accordion">
+                      <li class="usa-sidenav__item">
+              <a href="https://nist.gov/disaster-failure-studies/national-construction-safety-team-ncst/advisory-committee" data-drupal-link-system-path="">National Construction Safety Team (NCST) Advisory Committee</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="https://www.nist.gov/el/materials-and-structural-systems-division-73100/national-earthquake-hazards-reduction-program" data-drupal-link-system-path="">National Earthquake Hazards Reduction Program (NEHRP)</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="https://www.nist.gov/el/materials-and-structural-systems-division-73100/national-windstorm-impact-reduction-program-nwirp" data-drupal-link-system-path="">National Windstorm Impact Reduction Program (NWIRP)</a>
+                                              <button class="usa-accordion__button usa-sidenav__item-button" aria-expanded="false" aria-controls="menu-engineering-laboratory-3-3"><span class="usa-sr-only">Expand or Collapse</span></button>
+                <ul id="menu-engineering-laboratory-3-3" class="usa-sidenav__sublist usa-accordion">
+                                  <li class="usa-sidenav__item">
+                    <a href="https://www.nist.gov/el/materials-and-structural-systems-division-73100/national-windstorm-impact-reduction-program-4" data-drupal-link-system-path="">NWIRP Statutory Program Description</a>
+                                      </li>
+                                </ul>
+                          </li>
+                    </ul>
+              </li>
+          <li class="usa-sidenav__item usa-sidenav__item--parent">
+        <a href="/el/products-services" data-drupal-link-system-path="">Products &amp; Services</a>
+                            <button class="usa-accordion__button usa-sidenav__item-button" aria-expanded="false" aria-controls="menu-engineering-laboratory-4"><span class="usa-sr-only">Expand or Collapse</span></button>
+          <ul id="menu-engineering-laboratory-4" class="usa-sidenav__sublist usa-accordion">
+                      <li class="usa-sidenav__item">
+              <a href="/el/products-services/extramural-grants-program" data-drupal-link-system-path="">Extramural Grants Program</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/el/products-services/research-information-service" data-drupal-link-system-path="">Research Information Service</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/el/products-services/software" data-drupal-link-system-path="">Software</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/laboratories/tools-instruments?combine=&amp;term_node_tid_depth=All&amp;field_campus_tid=All&amp;term_node_tid_depth_1=5646" data-drupal-link-system-path="" data-drupal-link-query="{&quot;combine&quot;:&quot;&quot;,&quot;field_campus_tid&quot;:&quot;All&quot;,&quot;term_node_tid_depth&quot;:&quot;All&quot;,&quot;term_node_tid_depth_1&quot;:&quot;5646&quot;}">Tools &amp; Instruments</a>
+                          </li>
+                    </ul>
+              </li>
+          <li class="usa-sidenav__item">
+        <a href="/el/staff-directory" data-drupal-link-system-path="">Staff Directory</a>
+              </li>
+          <li class="usa-sidenav__item usa-sidenav__item--parent">
+        <a href="/el/popular-links" data-drupal-link-system-path="">Popular Links</a>
+                            <button class="usa-accordion__button usa-sidenav__item-button" aria-expanded="false" aria-controls="menu-engineering-laboratory-6"><span class="usa-sr-only">Expand or Collapse</span></button>
+          <ul id="menu-engineering-laboratory-6" class="usa-sidenav__sublist usa-accordion">
+                      <li class="usa-sidenav__item">
+              <a href="/el/applied-economics-office" data-drupal-link-system-path="">Applied Economics Office</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/resilience" data-drupal-link-system-path="">Resilience</a>
+                                              <button class="usa-accordion__button usa-sidenav__item-button" aria-expanded="false" aria-controls="menu-engineering-laboratory-6-2"><span class="usa-sr-only">Expand or Collapse</span></button>
+                <ul id="menu-engineering-laboratory-6-2" class="usa-sidenav__sublist usa-accordion">
+                                  <li class="usa-sidenav__item">
+                    <a href="/resilience/disaster-resilience-federal-funding-opportunity-ffo" data-drupal-link-system-path="">Disaster Resilience Federal Funding Opportunity (FFO)</a>
+                                      </li>
+                                </ul>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="http://www.nist.gov/fire/index.cfm" data-drupal-link-system-path="">Fire.gov</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/el/fire/national-fire-research-laboratory" data-drupal-link-system-path="">NFRL</a>
+                          </li>
+                      <li class="usa-sidenav__item">
+              <a href="/el/residential-test-facility" data-drupal-link-system-path="">Net-Zero Energy Residential Test Facility</a>
+                          </li>
+                    </ul>
+              </li>
+        </ul>
+  </nav>
+
+</span></div></div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+        
+  </div>
+<!-- nist-index-ignore-end -->
+<!-- nist-index-ignore-start -->
+
+  <div
+   class="views-element-container nist-block nist-social__wrapper--block" data-elastic-exclude=""
+>
+  
+  <h2
+       class="nist-block__title"
+      >Connect with us</h2>
+      
+      <div><div class="js-view-dom-id-be186514b625029d9d4fdbe71b79a5d74590b339d294aa676cd6ea7c13d8b24f">
+  
+  
+  
+
+  
+  
+  
+
+    <div><div class="views-field views-field-nid"><span class="field-content">
+
+  <div><a href="https://public.govdelivery.com/accounts/USNIST/subscriber/new?topic_id=USNIST_31" class="nist-social nist-social--envelope" title="GovDelivery"><span>GovDelivery</span></a></div>
+</span></div></div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+        
+  </div>
+
+<!-- nist-index-ignore-end -->
+
+        </div>
+      </aside>
+            
+      <div class="tablet-lg:grid-col-8 desktop-lg:grid-col-9">
+        <div class="grid-row grid-gap-4">
+
+          
+                    
+                    <div
+                       class="nist-page__region nist-page__region--content grid-col-12"
+                    >
+            
+<div
+   class="nist-block"
+>
+  
+    
+        <h1 class="nist-page__title">NCST Advisory Committee Mtg. Minutes of June 22-23, 2004</h1>
+
+        
+  </div>
+
+<div
+   class="nist-block"
+>
+  
+    
+      <div class="text-with-summary">
+  
+  
+  
+      <br><br><p><strong><strong>The National Construction Safety Team Advisory Committee</strong><br> National Institute of Standards and Technology</strong></p>  Minutes of June 22-23, 2004, Meeting - Gaithersburg, Maryland  <p>The slides from the presentations are embedded as links to PDF files within this document and, thus, are summarized in these minutes. Each presentation was followed by a discussion period. "Q" indicates a question, "A" the corresponding answer, and "C" a comment. All questions and comments, unless otherwise noted, were made by Advisory Committee members. All answers, unless otherwise noted, were by NIST personnel.</p>  <p>The minutes summarize the main points of each discussion; they are not intended to be a verbatim transcript of the meeting.</p>  <p><strong>June 22, 2004</strong></p>  <p><a id="opening_remarks" name="opening_remarks" href></a><strong>Opening Remarks<br><em>Mr. Paul M. Fitzgerald, Committee Chair</em></strong></p>  <p>Mr. Paul Fitzgerald, chairman of the National Construction Safety Team (NCST) Advisory Committee, opened the meeting at 8 a.m. with a welcome to the Committee members, the National Institute of Standards and Technology (NIST) staff, the media, and the public. Mr. Fitzgerald noted that John Bryan had elected not to renew his term as a member of the Advisory Committee. He thanked Mr. Bryan for his contributions to the NCST Advisory Committee.</p>  <p>Mr. Fitzgerald then turned the floor over to Dr. Hratch Semerjian, Acting Director of NIST, for his opening remarks.</p>  <p><strong><em>Dr. Hratch Semerjian, Acting Director, National Institute of Standards and Technology</em></strong></p>  <p>Welcome to this, your fourth two-day meeting of the NCST Advisory Committee in just a little over one year.</p>  <p>I, Arden Bement, and all of NIST appreciate your commitment to the concept embodied in the National Construction Safety Team Act; that of technical investigations of major building disasters so that building practices, standards, and codes can be improved to make even safer buildings in the future.</p>  <p>In addition to these meetings, I know all of you have spent countless hours reviewing material developed during the course of our two current investigations, including the 1,000-page progress report on the WTC Investigation we sent you within the past 2 weeks. In addition, many of you have traveled to NIST between Committee meetings to attend project review meetings with our staff and contractors.</p>  <p>Your role is very important to me. These are the first two investigations that will have been conducted under our new authority. They must be done in the best tradition of NIST; thorough, impartial, objective, and with meaningful findings and recommendations that will be embraced by the building profession, standards, and codes bodies. You are each recognized authorities in your field. I am counting on you to help guide us to the very best recommendations we can make. I am also counting on you to support our findings and recommendations once the final investigation reports are issued.</p>  <p>Thank you also for your excellent report to Congress completed after your last meeting and submitted early this year. You clearly stated that we have much to do to be ready for our next investigations:</p>  <p>1. Get procedures in place that will readily enable us to launch our Teams,<br> 2. Seek relief from federal regulations that could impact this early launch,<br> 3. Develop "first call" teams who are prepared on a moment's notice, and<br> 4. Develop cooperation with local authorities.</p>  <p>I would like to tell you we have completed all this and more, but unfortunately we have made only slight progress in these directions. The primary reason is the total commitment of our current staff to the completion of the current two investigations and the lack of any additional funds to implement the NCST Act.</p>  <p>We do appreciate your support in the annual report through your statements that we need annual funding of $2 million and an additional $2 million reserve fund to initiate major investigations. We do not have expectations that this will occur anytime soon. This coming fiscal year could be the tightest budget year we have seen in decades due to the rising federal deficit and the commitment we as a nation have made to the war on terrorism. Even under these tight fiscal conditions, the President has requested an increase of $4 million in his FY 2005 budget to Congress for the R&amp;D and dissemination and technical assistance components of the overall WTC response plan. We hope the Congress will appropriate these funds for NIST to address important standards, technology, and practice issues related to first responders and buildings in partnership with private sector stakeholders.</p>  <p>I can report to you that we signed an MOU with the Chemical Safety Board in a ceremony here at NIST on April 30. The MOU commits both organizations to work together, share resources, and cooperate on investigations where we both may have jurisdiction. Jim Hill is already in contact with them about training courses they offer that would be valuable for our staff.</p>  <p>Once again, I appreciate your support and commitment to NIST and the NCST and hope you have a very successful meeting today and tomorrow.</p>  <p><a href="https://www.nist.gov/engineering-laboratory/nist-advisory-committee-mtg-june-22-23-2004-agenda">Back to agenda</a></p>  <p><strong>NCST Advisory Committee Business<br><em>Mr. Paul M. Fitzgerald, Committee Chair</em></strong></p>  <p>Mr. Fitzgerald then announced that the committee had some old business to address with respect to the 2003 Annual Report to Congress. Mr. Fitzgerald turned the floor over to Dr. Forman Williams to discuss his concerns about the Report to Congress.</p>  <p>C: In general, the report to Congress is fine. I propose deleting the one sentence that has no important bearing on the report. On page six, section 2.4, the report reads, "The NCSTAC notes that in 2002 and 2003 there were no major natural catastrophes..." In my opinion, the southern California fires constitute a major natural catastrophe. (Dr. Williams then read the paragraph without the sentence.) I think the paragraph as I read it without the sentence makes the point, and the sentence is superfluous.</p>  <p>Q: Any comments on his suggestion?</p>  <p>C: I'm sympathetic to the intent. The question is the mechanics of correcting the report. One approach would be to make a statement in our 2004 Report to Congress.</p>  <p>C (NIST): The most appropriate approach is to address the concern in the 2004 report. It is very difficult to pull back the report once it has gone to Congress.</p>  <p>C: I agree in taking the sentence out, but it could cause a break in thought sequence. The intent was that there were no investigations that NIST needed to start in 2002 or 2003. The sentence maybe could be rewritten.</p>  <p>C: The term "natural catastrophe" is not normally used for wildfires or urban interface. It is widely used for earthquakes, hurricanes, and floods. I don't believe that the sentence is an error.</p>  <p>C: This brings focus to the issue that Glenn Corbett raised previously on how and when we identify an investigation that needs to be done. For example, would the DeGaulle Airport collapse fall under the law [NCST act] if it occurred in this country and trigger an investigation?</p>  <p>C: I don't think there is a particular reason to debate the words. The Arizona fire would be called a catastrophe. The important thing is how the final report is put together. The Committee members should have the opportunity to read the entire report before it is submitted to the Secretary of Commerce. We should change the procedure of how it is prepared.</p>  <p>C: There's a motion to find a way to address the sentence in the subject paragraph.</p>  <p>C: I suggest deleting it. Mr. DiNenno suggests addressing it in the 2004 report.</p>  <p>C: Options are to address in 2004, or do an addendum.</p>  <p>C: I don't know if we can delete it.</p>  <p>C (NIST): It is awkward, but not impossible.</p>  <p>C: Dr. Williams is calling for motion to delete. Is there a second? There is no second so the motion is denied. There is a motion to look at the process for preparation of the Report to Congress. Is there a second? All in favor? The motion is carried to look at the process for preparing the Report to Congress.</p>  <p><strong>*RECOMMENDATION:</strong> The Committee Chair will develop a calendar and issue it to all members for agreement on how to process the 2004 Annual Report to Congress, including full review by all members before issue.</p>  <p>Mr. Fitzgerald introduced Dr. S. Shyam Sunder, the Lead Investigator of the National Institute of Standards and Technology World Trade Center Investigation.</p>  <p><strong>Status of the World Trade Center Investigation and Discussion</strong><br><em>Dr. S. Shyam Sunder, Acting Deputy Director, Building and Fire</em> Research Laboratory</p>  <p><a href="https://www.nist.gov/document/june2004wtcstatusprintpdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="152ccae8-ba62-4d6b-abe7-ad053f20c2a4">PRESENTATION</a> Dr. Sunder, the Lead Investigator, gave a brief summary of the June 18 press and public briefings held in New York City on the World Trade Center (WTC) Investigation. He then presented an update on the WTC Investigation. He said that good solid technical progress continues to be made on the investigation drawing on talent from NIST, outside experts, and contractors. A second technical progress report was released on June 18, 2004, and is available on the investigation Web site <a href="http://wtc.nist.gov/">http://wtc.nist.gov</a>. The report contains 17 appendixes with detailed interim reports on specific technical tasks within the eight investigation projects where significant progress has been made. The report also presents interim findings. Dr. Sunder said that the current findings may be revised and additional findings will be presented in the final report. He emphasized that NIST is not making any recommendations at this time; all recommendations will be made in the final report.</p>  <p>The NIST-led investigation team has developed a working hypothesis for the collapse of the WTC towers. Dr. Sunder described the chronological sequence of major events that may have led to the eventual collapse of the WTC towers. He stated that specific load redistribution paths and damage scenarios for each building are under analysis to determine the most probable collapse sequence for each building. Photographs were shown to illustrate evidence of column bowing, column instability, and collapse initiation. Dr. Sunder explained the innovative systems of the WTC towers, including the structural system, the elevator and skylobby system, and the use of composite floors with spray-on fireproofing. He also stated that wind loads were a major factor in the design of the components that made up the structures, especially the perimeter frame-tube system.</p>  <p>NIST is examining the relative role of aircraft impact and fire. The robustness of the structural system and the large size of the towers helped the buildings withstand the aircraft impact. Dr. Sunder showed a video to illustrate that WTC 2, which collapsed first and in about half the time as WTC 1, vibrated for over 4 minutes at an oscillation period nearly equal to that measured for the undamaged building. He briefly reviewed results from the preliminary aircraft impact damage analysis.</p>  <p>From the analysis of visual images in its collection, NIST has determined the exact times for the aircraft impact and building collapse initiation. NIST has also developed detailed mappings for the fire, smoke, and condition of windows at several specific times for each tower; work is nearing completion for WTC 7.</p>  <p>NIST has developed a rigorous technical approach to evaluate the role of the post-impact condition of the fireproofing, including its thickness, on the collapse of the towers. In general, the affected floor systems in WTC 1 had upgraded or thicker fireproofing (1.5 inches specified); while the affected floors in WTC 2 had the original fireproofing (0.5 inch specified). NIST is using models and experiments to determine the acceleration of structural members that would be required to dislodge 1 inch of fireproofing and to estimate regions where fireproofing was dislodged.</p>  <p>Dr. Sunder provided an update on the analysis of recovered WTC steel and stated that, based on stampings on steel and mechanical tests, the correct specified materials were provided for specified elements. In addition, tests indicate that the strength and quality of the steel used in the towers were adequate, typical of the era, and likely met all qualifying test requirements. Work is ongoing to analyze the performance of the steel building components under impact and fire conditions up to initiation of global building collapse.</p>  <p>For WTC 7, NIST investigators have been reviewing visual images and interviewing witnesses to gain further information on the collapse. Dr. Sunder showed photographs and videos while describing the observed structural damage and sequence of failures and fires; witnesses reported structural damage to WTC 7 on its south face and southwest corner from WTC 1 debris. NIST is continuing to investigate the possibility that the fuel system for emergency power in WTC 7 may have contributed to fire initiation on Floor 5.</p>  <p>In his update of evacuation and emergency response, Dr. Sunder said that NIST has completed first-person interviews of nearly 1,200 WTC occupants and first responders to collect data on occupant behavior, evacuation, and emergency response. From these interviews, it is estimated that about 17,400 occupants were present in the WTC towers on the morning of September 11, 2001. Dr. Sunder presented information on evacuation rates in the towers based on the interviews. During the last 20 minutes before each building collapsed, the evacuation rate in both buildings had slowed to about one-fifth the immediately prior evacuation rate. This suggests that for those seeking and able to reach and use undamaged exits and stairways, the egress capacity (number and width of exits and stairways) was adequate to accommodate survivors. Dr. Sunder said that based on use of existing egress models and actual evacuation time on September 11, it is estimated that a full capacity evacuation of each tower with 25,000 people (three times the number present) would have required 4 hours.</p>  <p>Dr. Sunder also discussed the issue of roof evacuation, stating that considering the capacity of typical helicopters and travel times, it is not clear what fraction of the large number of occupants could have been evacuated from the WTC towers prior to collapse had roof rescue been possible on September 11, 2001. He reviewed the work that has been done at NIST with the emergency communication recordings and discussed the results from the preliminary analysis. NIST has reviewed audio tapes recorded by the Port Authority of New York and New Jersey, including a recording of the New York City Fire Department's (FDNY) city-wide high-rise Channel 7 (Port Authority Policy Department's [PAPD] Channel 30) radio repeater located at the WTC; New York Police Department; and interviews with FDNY personnel. A surge in communications traffic volume made it more difficult to handle the flow of communications and delivery of information. Dr. Sunder explained that although the FDNY radio repeater was operating, several FDNY personnel at the incident did not think that it was working. NIST continues to evaluate the repeater system and its operation, as well as the handheld radios. Based on face-to-face interviews, NIST has determined that first responders did not have adequate information on, nor an overall perspective of, the conditions in the WTC buildings and what was happening elsewhere at the WTC site.</p>  <p>Dr. Sunder also gave an update on the active fire protection systems and the analysis of building and fire codes and practices. The smoke management systems in the WTC towers were not activated during the fires; and it was determined that the likelihood of these systems being functional was very low due to the damage from aircraft impact. He stated that the use of fiber optic cable, instead of copper lines, for the fire alarm system could have enhanced communications. Fiber optic cable is not susceptible to electric short circuits to the point where the cable is severed. During the initial design of the system, the PANYNJ requested, but did not receive, approval of the City of New York for use of fiber optic communication cable in the system. The code required copper wiring.</p>  <p>Q: How are you sure that that's a floor slab and not a ceiling [referring to the slide with the photographic evidence of a hanging floor slab]?<br> A: The floor is 4 inches thick. The ceiling is composed of tiles.</p>  <p>Q: The ceiling is not a T-Bar system?<br> A: Yes, it was a T-bar system.</p>  <p>Q: What is the feature on the corner of the building?<br> A: The feature is a fin on the corner of the building.</p>  <p>Q: Is that outward bowing at about 8 inches [referring to the photograph in the slide] from the damaged corner?<br> A: That appears to be façade damage.</p>  <p>C: I am a little concerned about the strict interpretation of the structural frame concept. On the West Coast, structural frame generally refers to moment frame. And later on, they developed what they call a special moment frame. But in this particular case, those floor trusses were not moment connections to the exterior columns. They were providing lateral support to the columns to contain their effective lengths, but I don't think people would call them frames. And so you're trying to extend your definition of frame a little bit beyond what I think most structural engineers at that time would have called a structural frame.A: I was reading from the definition in IBC, "structural frames shall be considered to be the columns and the girders, beams, trusses and spandrels having direct connections to the columns and bracing members designed to carry gravity loads." We discussed this quite a bit. I'm putting this out for future discussion in the community. There is some room for debate.</p>  <p>Q: Has there been any testing to show if there is a difference in spalling properties of a 2 inch thick coating versus ½ inch if impacted by pieces from the airplane? Would you have had the same deterioration if it were ½ inch, 1 inch, 2 inches?<br> A: We have not yet done that, but it's something we could consider.</p>  <p>C: The reason I point that out is that I would hate to have us go and say that for our conclusion from this WTC experience is that a 2 inches would have done a better job of longer life in the fire or anything like that, because if the damage were the same it would have collapsed regardless.A: I'll address that momentarily.</p>  <p>Q: In your previous slide, you state that there is a June 2001 evaluation recommendation for a 2 fire rating for the floor?<br> A: Yes</p>  <p>Q: And the others were based on that same 2 hr fire rating?<br> A: Yes</p>  <p>Q: In Glanz and Lipton's book, there is a reference to correspondence from the architect-of-record saying that the WTC buildings were okay as Class 1B. Whereas had it been 1A, I believe the ratings would have been higher. Are you going to include any of that?<br> A: Yes, in fact when we did our code comparison study, and I'll show later, it went from 1A to 1B when they moved from the 1938 code to the 1968 code. Theoretically, you could have had a floor with a 4 hour rating if you had assumed the frame approach with 1A, or there is a whole range. We can play a lot of what-if games, and I think it's entirely appropriate.</p>  <p>Q: Is the fire load used based on interviews with tenants? How did you arrive at the pounds per square foot number?<br> A: We had detailed plans of the North Tower as well as input from the WTC 1 tenants. The Port Authority also had a clean desk policy.</p>  <p>Q: Will you be talking more about the mass of the aircraft?<br> A: We will cover that in a later presentation.</p>  <p>Q: Debris may have knocked off fireproofing?A: We are tracking that and making estimates of fireproofing damage.</p>  <p>Q: In a CBS news report, there is a statement that says you've taken samples of the steel and shot them through an air cannon to precisely calculate the damage done by the highjacked jet. I haven't heard that before. What have you done?<br> A: They are referring to the Kolsky bar tests, which are written up in different ways.</p>  <p>Q: How did you arrive at 2,592 persons being inside the buildings?<br> A: The number does not include passengers on the airplanes, bystanders, etc.</p>  <p>Q: The stair towers had a 2 hour fire rating, but little structural integrity?<br> A: It was not like a concrete core. We're not sure whether they would have passed the hose stream test in ASTM E 119.</p>  <p>Q: During the full evacuations, were elevators used?<br> A: In the first event (1977), yes. Probably yes in 1993. It took about 3 hours to evacuate the bulk of the occupants. Stragglers exited later.</p>  <p>Q: Is there evidence that the Port Authority told people not to go up?<br> A: We have no evidence to support that.</p>  <p>Q: Recently in the New Yorker, the Fire Commissioner had a letter response to an article about the repeater. Yes, it was working, but officers on scene concluded it wasn't. The move to the handie-talkie was probably a good one; the repeater was lost anyway. Are we going to know why information did not get to emergency responders?<br> A: Responders in Tower 2 were on a repeater channel. That was not so in Tower 1. Randy Lawson is analyzing this and he will discuss this later. We will also look at the handheld radios.</p>  <p>Q: Highlight the importance of your findings on interagency coordination. They may be in the 9/11 Commission findings as well, but these are important. New York City elected not to conduct a study of its own. Was the raw data reviewed for the McKinsey studies?<br> A: We have reviewed the 911 tapes as well as the McKinsey report and the supporting data.</p>  <p>Q: Is the stair pressurization analysis based on current standards?<br> A: There was no pressurization system in the towers. We looked at how a pressurization system would have performed if it had been present in the buildings on September 11, 2001.</p>  <p>Q: Did your analysis consider damage?<br> A: Yes. We also considered the effect of opening doors on performance.</p>  <p>Q: What do you mean by early installation of sprinklers?<br> A: We could delete the word "early." We want to express the value of installing sprinkler systems sooner rather than later.</p>  <p>Q: Do you see this list of issues on standards as forming the basis for recommendations? Some are in the codes already. What is the point of this?<br> A: We're putting these out because they seem to merit further study as the investigation moves toward completion.</p>  <p>C: There are more than what is on this list.<br> A: We will have a closed session tomorrow to address recommendations. We're open to input and suggestions.</p>  <p>Q: What were the criteria for making this list of issues and interim findings? Is it relevant to the outcomes of 9/11 or relevant to general building safety questions?<br> A: We're trying to document the design, construction, operation, and maintenance of these buildings over their life. As we've gone through and reviewed documents and we've held public meetings where we've received public input on issues that are in the fronts of different people's minds, we've had to consider those inputs along with what we're finding. This is a cut at where our current thinking is. You'll see when I finish this presentation, we'll have to figure out which of these relate directly to the events of 9/11, which of these relate to communities and buildings that face greater risk, and which of these relate to the more general building and fire safety concerns. So we'll have to bracket them and, ultimately, as you know we don't set codes and standards; we make recommendations and we will assume that the public sector will be able to sort this out.</p>  <p>Q: So, let me try to push it out a little bit. These are the sort of issues that you've identified. You've identified many, many more issues than are on these three pages [referring to the Executive Summary of the June 2004 Progress Report]. And I was just curious as to why some made the list and some didn't.<br> A: No. These are pretty much what we have identified as far as the issues related to standards, codes, and regulations. We've then identified some other issues related to fire safety, design, and egress, which I'll talk about later. At this point, these are a first cut and, as you know, a work in progress. There might be others which are missing, which I've stated, that you think should be there. We'll get your input, that's what we want.</p>  <p>Q: How long is the useful life of a building? How long should records be retained?<br> A: Records should be retained for the service life, which is approximately 50 to 70 years.</p>  <p>Q: Who will be responsible for keeping the records?<br> A: There are regulatory authorities and there are owners. I don't know if it will be designers because sometimes the design firms don't last that long, and it's probably too much information for them to keep. Lots of issues need to be considered. However, the information can be stored efficiently by electronic means.</p>  <p>C: First responders will be particularly interested in holding on to those plans until the building is no longer there.<br> C: If you're going to look at the history, these records will have to be updated every time something is done to the building. It will be a full-time task to keep track of these and make sure it gets to the appropriate group who is keeping that record. It's been a big problem for bridges, which are designed for a 30 year life, but then some last for 100 years. And they have been changed all over the map, and it is very difficult to keep those records. It's going to take a lot of work to figure out how to do it for buildings.&nbsp;</p>  <p><strong>Project 2: Baseline Structural Performance and Aircraft Impact Damage Analysis<br><em>Dr. Fahim Sadek, WTC Investigation, Project 2 Leader</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004baselinestructuralanalysisprintpdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="33486dc2-00a0-4555-80b7-4ebe02f03920">PRESENTATION</a> Dr. Sadek presented an update on Project 2 of the WTC Investigation, which is an analysis of baseline structural performance and the extent of damage from aircraft impact. The project has two primary objectives: (1) to develop reference structural models of the WTC towers and establish baseline performance under gravity loads and wind loads and (2) to simulate aircraft impacts into the towers to estimate probable damage to structural, mechanical, and architectural systems and determine the response of the towers immediately after impact (to answer the question—how close to collapse were the towers immediately after impact?).</p>  <p>He reported that the reference structural models have been completed, reviewed, and approved by NIST; the baseline performance analysis is ongoing. Dr. Sadek illustrated the floor and tower structural models, and described the rigorous review process to check model accuracy. In addition, NIST completed the estimation of wind-induced forces and moments on the towers, based on the state-of-the-art in wind engineering. He reviewed the results thus far and stated that more elaborate tests would be desirable. Wind load calculations should be reported in a standard and transparent manner that can readily be scrutinized and might lead to more comprehensive and precise results.</p>  <p>For the progress on the aircraft impact analysis, Dr. Sadek summarized the work accomplished, including the development of material constitutive and failure modeling from test data of recovered steel. The development of the aircraft model is based on documentary aircraft structural information and data from measurement on a Boeing 767 aircraft. The WTC tower model includes an automated mesh generation for structural systems using the electronic structural database. He showed several graphics from the models with explanation of some of the details.</p>  <p>Dr. Sadek explained that the first type of analysis is the component-level analysis, which involves the impact of an exterior column with an aircraft engine and a segment of a wing, or an interior column with an engine. The object is to study the interactive failure phenomena of the structure and aircraft components, to study fuel tank breakup, and to develop reduced models to be used for the global models. The analysis includes highly detailed finite element models developed with emphasis on constitutive modeling and failure criteria. NIST will also look at coarser finite element modes meshed to be used in the global analysis and to ensure that the results are correlated. He showed details and animations of the model impacts.</p>  <p>The aircraft fuel dispersion is difficult to model so NIST is using special analytical techniques to capture the primary inertial effects of the fuel impacting structural members and the secondary fuel dispersion. The wing segments are modeled with and without fuel and using different methodologies; Dr. Sadek stated that a consideration is the treatment of debris cloud calculations. The subassembly and global modeling were described.</p>  <p>Dr. Sadek discussed the preliminary stability analysis of the towers. This ongoing analysis examines the overall stability of the towers when floors are removed; studies the load redistribution mechanisms when core columns are destroyed by aircraft impact; and studies the response of WTC 1 when columns and spandrels in the exterior walls and columns in the core are destroyed by impact, and columns in the exterior are damaged due to the subsequent fires, as observed in images.</p>  <p>C: It is not obvious that differences in wind tunnel results point to a need to standardize.<br> A: When you use a number in design, it represents a minimum standard. It is important to know what that is. The owner has the option to use higher loads.<br> A: I agree that standardization for its own sake is undesirable, except as Shyam stated. Reporting of results should be open to scrutiny. Some methods used are mathematically incorrect and should be open to scrutiny and further analysis.</p>  <p>C: The major difference is the integration of loads with climatological data.<br> C: Dynamic and nonlinear analysis is permitted for earthquakes. This is similar to wind. Design by ASCE 7 with 80 percent of static analysis results should be acceptable.</p>  <p>Q: What do constitutive relationships mean?<br> A: This refers to the material properties. In particular, the stress-strain relationship, including strain rate effects and failure criteria.</p>  <p>Q: Is deformation axial or out-of-plane?<br> A: Axial shortening.</p>  <p>Q: What is the significance of the selection of 8 or 15 core columns?<br> A: These were initial rough estimates. We expect that fewer than eight core columns were damaged. We're still running analyses.</p>  <p>Q: Was an analysis done of the fuselage?<br> A: Yes. It is done as a part of the global analysis.</p>  <p>Q: Two questions. How random is what happens on a given floor after aircraft impact?<br> A: We're tracking debris inside the towers and capturing contact until there is insufficient momentum to cause damage.</p>  <p>Q: How many runs does that take? You could run out of time.<br> A: Statistical analysis helps us define critical variables.</p>  <p>C: The outcome of the impact analysis affects other projects. Perhaps the other presenters can address.</p>  <p>Q: Are any of the impact columns C-80 or C-88?A: C-88 is in the impact zone. C-80 looks like it might be outside of the impact zone.<br> C: You could look at the steel after the modeling is complete.</p>  <p>Q: There was a considerable fireball outside of the building. The analysis shows fuel carried into the building. Is this a problem?<br> A: Approximately 10 percent of the fuel was dispersed outside of the building based on the modeling.</p>  <p>Q: But how accurate is the model if it does not show dispersion outside of the tower?<br> A: The ignition pushes fuel outside the building.</p>  <p>C: I have comments on the Progress Report. I have reviewed the work on the aircraft impact. There are issues that need to be resolved on the failure models.</p>  <p>Q: Are the splice calculations for Tower 1 only?<br> A: We're working on the calculations for Tower 2. It is likely in Tower 2 that the hat truss was not engaged.</p>  <p>Q: I am impressed with the detail. More detail and more parameters will lead to greater corresponding uncertainty. How large, qualitatively, are the uncertainties?<br> A: That's not yet known.</p>  <p>C (NIST): The point about failure model issues by John Barsom is important, and NIST will follow-up on that.</p>  <p><strong>Project 3: Mechanical and Metallurgical Analysis of Structural Steel<br><em>Dr. Richard Fields, WTC Investigation, Project 3 Technical Leader</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004analysisofstructuralsteelpdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="b55059a8-f9a7-47e6-8751-aa634cf53bc5">PRESENTATION</a> Dr. Fields presented an update on Project 3 of the WTC Investigation, the mechanical and metallurgical analysis of structural steel recovered from the WTC towers. As reported previously, the 236 pieces of steel from WTC 1 and 2 have been catalogued and identified; NIST has samples of all 14 grades that were used in the towers. Detailed information on the steel inventory at NIST and the contemporaneous structural steel specifications are included in the June 2004 Progress Report available at <a href="http://wtc.nist.gov/">http://wtc.nist.gov</a>.</p>  <p>NIST has completed its extensive analysis of failure mechanisms and damage. The photographic evidence was enhanced and compared with the recovered steel to gain a better understanding of fracture and energy absorption. Dr. Fields discussed the trends, including that the collapse did not significantly damage many impacted panels and that weld unzipping was common in the impacted panels. NIST analyzed metallurgical and mechanical properties by conducting tests for room temperature tensile properties, high strain rate properties, and high-temperature properties. Material properties have been determined for all structural steels (29 steels), bolts, and welds; strength and modulus as a function of temperature; strength as a function of strain rate for impacted steels; and thermal expansion, heat capacity, and thermal conductivity as a function of temperature. In many instances, the room-temperature strength exceeded the requirements by 5 to 10 percent.</p>  <p>Dr. Fields described the work done to characterize the thermal excursions of steel. Photographs of recovered panels were mapped for pre-collapse exposure to fire. The paint condition of painted steel was used to map upper limits to temperature exposure, and few perimeter panels (3 of 160 locations were mapped) saw temperatures greater than 250 °C. The area protected by the floor slab stayed under 250 °C.</p>  <p>The interim findings were presented by Dr. Fields and included NIST's conclusion that the strength and quality of the steel used for the towers was adequate for the era.</p>  Q: We've seen a lot of reports from the other projects. You have done a great deal of work. We've only seen two reports, and they don't deal much with the material properties. What is the delay? Why aren't these results available for review?<br> A: There are quite a few tests, for instance, creep tests require a fair amount of analysis, Kolsky tests require a fair amount of analysis, and we are just in the process of putting it all together. It's a lot of testing, and I'm not so sure anyone else had to do this many tests, and each of those had to have machine samples, and you had to measure them and test them.   <p>Q: I agree with you, there is a lot of work that you people have done. But a lot of this work has been done for quite a while. And I'm just wondering why the reporting of that information hasn't really been coming, even interim reports, to just see what you have done.<br> A: I would just say we have lots of draft reports, but they have to go through the system, and there has been a lot of back and forth on that.</p>  <p>Q: This is the first time for mentioning the contractor who did the visual analysis. You've had a draft report from them since October. When will we see it?<br> A: We will issue their report as an appendix to our report. The report is still at the project-level review. We decided to do our own analysis. We will supplement our analysis of the failure mechanisms. We wanted them to tell us if we were missing something.<br> A: We were not as happy with the report that we got from the contractor as we hoped and so decided to do our own analysis and integrate it into our reports, as opposed to releasing the contractor report separately.</p>  <p>Q: I knew that NIST did not like something about that report. It is a very important element of your work. It is a very important step you took and I give you credit. I personally would have liked to have seen the report right away, and worked with your people to try to come up with what tests might have needed to be done to complement that work and to feed into the analysis group and that opportunity was not there.<br> A: I'm sorry about that, and we'll try to get it to you as soon as possible</p>  <p>Q: [For the analysis with painted steel], you mentioned in the maximum temperature, you had a dividing line of 250 °C for where most of the samples, say for three, were below that and three were above it. For the three that were above it, were you able to estimate what the maximum temperatures might have been in the samples?<br> A: The techniques that we used for estimating the maximum temperature included looking at residual stresses and transformations in welds, softening of super hard fasteners, such as washers, etc.; they always needed to be calibrated massively to account for lot variations from different suppliers, so none of those things really worked out. For paint, at 250 °C, because of the difference in thermal expansion, between the paint, which is essentially a ceramic coating and the metal, you got this mud crack pattern that has a certain characteristic scale and characteristic look. You had to be careful that you weren't interpreting cracking that was due to plastic deformation or due to corrosion. So, what we found is that paint had a mudcrack pattern at 250 °C, and at 600 °C to 700 °C, we see wholesale spalling.</p>  <p>Q: You used the phrase that the "welds unzipped." Was it weld metal or heat affected zone of the weld?<br> A: It usually went into the heat affected zone. In some cases, it went over into the weld metal.</p>  <p><strong>Project 5: Reconstruction of Thermal and Tenability Environment<br><em>Dr. Richard G. Gann, WTC Investigation, Project 5 Leader</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004reconstructionofthermal-tenabilityenvpdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="7dfda3cd-af89-4d56-9d0b-29b01c574aae">PRESENTATION</a> Dr. Gann presented the status of the reconstruction of the thermal and tenability environment for the WTC towers and WTC 7, Project 5 of the WTC Investigation. The project purpose is to reconstruct, with assessed uncertainty limits, the time-evolving temperature, thermal radiation, and smoke fields in WTC 1, 2, and 7 for use in evaluating the behavior and fate of occupants and responders and the structural performance of the buildings. In this effort, NIST is relying on computer simulations, fire insight, experiments, photographic evidence, and eyewitness accounts. The reconstruction of fires in this manner has never been done before.</p>  <p>NIST has completed shake table tests of ceilings and fire tests of furnishings and fire irradiance and is in the process of preparing reports. Current technical activity includes the execution of the Fire Dynamics Simulator (FDS) runs of model fires in all three buildings, execution of Fire Structure Interface (FSI) models for bare and coated assemblies in all three buildings, and further analysis and interpretation of the collection of visual images. Dr. Gann stated the interim findings and summarized the results of the fire experiments. NIST found that the loading of building combustibles was on the light side of typical. FDS and FSI can be used with confidence to recreate the thermal effect of a given WTC fire event.</p>  <p>Q: What do you mean by "typical" [referring to slide "Loading of building combustibles was on the light side of typical"].<br> A: Teens of pounds per square foot.</p>  <p>Q: Teens per square foot is based on what?<br> A: It's based on 10, 13 pounds per square foot and different loadings, and the typical data are based on studies that are about 10 years old. The Maryland study of two office buildings is nearly a decade old.</p>  <p>Q: How are you dealing with the debris pile scenarios? Are all the combustibles being loaded into a pile? What are you using as a baseline for the energy release curve; how are you doing it?<br> A: In the simulation, we have a hot upper layer, plus radiation from any fires that are present and its radiating down onto the surface elements.</p>  <p>Q: How do you assemble the debris pile?<br> A: We disassembled the furniture in different ways. Totally collapsed, sort of partially assembled so some air could get in and let the modeling do what it wanted. We were particularly sensitive to that.</p>  <p>Q: The floors and work areas in the buildings appear very homogeneous. What empirical evidence do you have that this is the case?<br> A: In the towers, people reported that you could see all the way across to the windows on the other side. There was relatively little break-up, with only a few conference rooms. Building managers confirmed that it was typical to have cubicles across the entire one acre floors. The floors were very uniform.</p>  <p>C: When you discuss these results in the final report, discuss them quantitatively rather than qualitatively. For example, if you can, rather than saying, "light," qualify it by using some measurement like what the heat release rate might be at a maximum on the floor assuming that they weren't knocked over or something of that nature.<br> A: In our case, we have fairly good documentation. In the case of prior surveys, we'll certainly be able to report what they did.</p>  <p><strong>Simulation of the Fires in WTC 1, 2, and 7<br><em>Dr. Kevin B. McGrattan, WTC Investigation, Project 5, Mathematician</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004firesimulationpdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="4aef872b-61f6-47e3-9e8e-86d63e655153">PRESENTATION</a> Dr. McGrattan provided a briefing on the simulation of fires in WTC 1, 2, and 7 using the Fire Dynamics Simulator. Numerical simulations of fires are ongoing using the latest information provided by the airplane impact and visual analysis teams. A set of "standard fires" has been developed to bound possible outcomes of the calculations. He pointed out that the goal of the simulation is to numerically simulate the fires in WTC 1, 2, and 7 so that the uncertainty in the calculations is less than the uncertainty in the initial and boundary conditions. Dr. McGrattan described the model layout of a typical floor and model inputs, and then showed examples of fire growth and spread. It matched well with the analysis of fire and smoke growth and spread shown in the visual images (photographs and videos). The simulations will be re-run using results of the airplane impact study.</p>  <p>Q: Are you assuming that the shafts are compromised?<br> A: Yes, in this simulation. We also ran the model without damage to test sensitivity.</p>  <p>Q: What insight you do have on piling of debris?<br> A: We're handling it by disassembling furniture and piling ceiling tiles on top. Same amount of fuel, but the burning rate is lower (about half that of virgin furnishings). We are querying our contractor, Applied Research Associates, to get a sense of furnishing movement due to impact.C: Reduced burning rate of rubble pile plus additional mass of combustible furnishings.</p>  <p>Q: Are you trying to back out from the simulation to justify the combustible loading?<br> A: The simulations are burning the floor out in roughly the right amount of time—1 hour—that the contents were consumed—4 pounds per square foot. That matches the evidence we have collected from the responders. There is a fair amount of uncertainty though.</p>  <p>Q: The BPAT study concluded that WTC 7 collapsed due to fire alone. This morning we saw NIST saying that there was some structural damage. Will you be able to say at the end of the investigation that WTC 7 collapsed from structural damage and fire?<br> A: The 7 to 8 hour duration suggest that fires had a role. The question is what role damage played. We're looking at how large a fire was needed to initiate failure.</p>  <p>Q: What was the quantity of combustibles on the plane? How is it distributed?<br> A: We have estimates of contents from the airlines. Contents were distributed along the path in the model. There was approximately 10,000 pounds.</p>  <p>Q: Are there any assumptions on the loss of fuel from the plane hitting, some mention of the paper flurry?<br> A: We have made an estimate of how much fuel was consumed in the fireball and we start our calculation after the fireball. We distribute the remaining fuel over the floors.</p>  <p>Q: The loading was increased to 10 pounds per square foot—why?<br> A: Ten pounds per square foot is a what-if scenario for the undamaged tower.</p>  <p>Q: I have a question about standard fires. It's a good idea, but there are a large number of variables. How many runs are needed to bound the behavior?<br> A: We will do as many runs as possible. After 2 years, I'm not seeing as much variation. As the runs are refined, and we're getting better information and data, we're starting to see similarities and more consistent results.</p>  <p>Q: Fires are ventilation limited. Is the total energy release rate of a floor increasing step-wise with the number of windows breaking out?<br> A: Yes. We made rough estimates. The heat release rate is in the right ballpark. &nbsp;</p>  <p>Q: As you get to the end/tail, you should have more windows open than fuel coming in. Do you have a sense of the duration of that, 1 hour and 15 minutes or 1 hour?<br> A: Typically for floors, we're peaking at 200 to 300 megawatts and the peak is halfway along. Halfway along, 30 minutes to 45 minutes you're peaking at 200, 300 megawatts per floor, and then it starts ramping down after that.</p>  <p><strong>Coupled Fire Dynamics and Thermal Response Analysis of WTC 1, 2, and 7<br><em>Dr. Kuldeep R. Prasad, WTC Investigation, Project 5, Engineer</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004coupledfiredynamicspdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="4d776f3a-5f6b-464b-bb5f-8cd72846eb34">PRESENTATION</a> Dr. Prasad gave a presentation on the coupled fire dynamics and thermal response analysis of WTC 1, 2, and 7. The objectives include the reconstruction of the time-evolving and spatially evolving temperature fields in the steel and concrete in WTC 1, 2, and 7. The role of variability in fireproofing thickness and damage caused by aircraft on steel temperature is being evaluated. Dr. Prasad stated that the Fire Structure Interface, sensitivity to model parameters, and thermal analysis of wall model efforts are completed, and he summarized results. Standard cases for evaluating collapse hypotheses are underway; these include FDS-generated fires with varied fireproofing thicknesses.</p>  <p>C: It's interesting the fireproofing has load-carrying capacity.<br> A: We're not plotting exactly at time equals zero. This data point is not equal to zero, it's a very small time, probably a few seconds since these columns are there even in the few seconds some of the columns have heated up a little bit. The problem is we're plotting it at 5, 10 seconds.</p>  <p>C: You took out 13 columns rather than the 8.<br> A: Yes, 13 of the core columns. This is a simplistic analysis based on a simplistic yield strength analysis, and a more complete analysis will be presented later by others. The goal is to present a fire-structure interface for a 9x9 wall panel and a full floor.</p>  <p><strong>Visual Data Collection and Analysis<br><em>Dr. William M. Pitts, WTC Investigation, Project 5, Research Chemist</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004visualdatacollectionandanalysispdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="55c20bdd-801f-4ba4-b33d-dc30f8972dee">PRESENTATION</a> Dr. Pitts presented updated information on the visual data collection and analysis for the WTC Investigation. NIST is using photographs, videos, and other relevant information to develop detailed timelines for the spread and growth of fires at the peripheries of WTC 1, 2, and 7 and to organize the information such that it can be used by other investigation team members. More than 6,900 photographs have been catalogued with more than 3,060 timed with an accuracy of 3 seconds or better, and approximately 150 hours of videotape have been digitized and clipped (6,882 clips) with 2,674 clips timed with an accuracy of 3 seconds or better. NIST believes that the visual material in its possession is sufficient for the purposes of the Investigation.</p>  <p>Timelines for window openings, smoke, and fire have been completed for WTC 1 and WTC 2. Dr. Pitts explained that although the visual material for WTC 7 is insufficient to develop a detailed timeline, it does provide an adequate description of fire movement and location up to building collapse, and analysis of WTC 7 fires is continuing. Data provided to other WTC Investigation projects includes photographs and videos, estimates of aircraft speeds, characterization of exterior damage, and WTC 2 motion analysis.</p>  <p>There were no questions or comments at the end of Dr. Pitts' presentation.</p>  <p><strong>Project 6: Structural Fire Response and Collapse Analysis<br><em>Dr. John L. Gross, WTC Investigation, Project 6 Co-Leader</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004standardfiretestspdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="bef116f4-ccd8-47c2-b2ea-9db3a49d87a7">PRESENTATION</a> Dr. Gross presented information on Project 6 of the WTC Investigation, which is an analysis of the structural fire response and collapse scenarios. The objectives are to determine the structural response of the WTC towers to internal fires—with and without aircraft impact damage—and to identify the most probable structural collapse mechanisms for the towers. He reported on the status of the project, pointing out that Project 6 relies heavily on information provided by other projects of the investigation. Several detailed nonlinear structural models have been developed. A truss model has been developed, with knuckle and seat components, which includes all potential failure modes that may occur under loading and thermal conditions. It was noted that the actual sequence of failure may differ from that shown in the example under other loading and fire conditions. The exterior wall model that was developed consists of three-by-three exterior wall panels (nine columns by nine spandrel beams) and includes all potential failure modes (columns and splices) that may occur under loading and thermal conditions. The full floor model, which consists of all steel trusses, truss connections, perimeter and core columns, core framing beams, and concrete floor slab, also includes all potential failure modes that may occur under loading and thermal conditions.</p>  <p>To determine the structural response to large fires with and without aircraft impact damage, global models of towers have been developed based on the reference models developed in Project 2. Conditions include impact damage to structure, impact damage to fireproofing, debris distribution on floors, and structural time-temperature histories. Dr. Gross provided further description of the models, including a probabilistic approach to evaluate changes in global capacity.</p>  <p>NIST has developed a working hypothesis that identifies the chronological sequence of major events related to the collapse of WTC 1 and WTC 2. Specific load redistribution paths and damage scenarios are under analysis for the collapse of each tower. NIST is in the process of developing the timeline of fire and structural observations from photographic, video, and interview records. This information will be used to validate the calculations.</p>  <p>Dr. Gross reviewed in detail the progress of the work on the exterior wall model and the full floor model. The steps included development and validation of ANSYS models, evaluation of the structural responses of these subsystems under dead and live loads and elevated structural temperatures, identification of failure modes and failure sequences and associated temperatures and times-to-failure, and identification of simplifications for the global models and analyses.</p>  <p>Q: On slide 52, Thermal Response Continued, at 500 °C, you're still pushing out on exterior columns, and at 650 °C pulling in. What is pulling in? What is the mechanism?<br> A: The floors are still carrying self-weight and live load and sagging. They have deflected about 32 inches.</p>  <p>C: The seat would begin coming down by itself.<br> A: The seats have significant capacity though eroded by temperature.</p>  <p>C: John Barsom is bringing up a point that there is not a lot of difference between 500 degrees and 650 degrees—pushing in at 500 and pushing out at 650. There is lots of work in between there.</p>  <p><strong>Public Comment Period</strong></p>  <p>Mr. Fitzgerald, the Committee chair, stated the ground rules for public comments. Each speaker had 5 minutes to address the Committee. Members of the public may submit their comments in writing at the meeting or at any time. Mr. Fitzgerald called the first speaker to the podium, Mr. David Lau.</p>  <p><em><strong>David Lau, Continental Container, Ltd., Hong Kong, China</strong></em></p>  <p>Mr. Lau had questions on why WTC 7 collapsed and asked if it was because its design was different. He suggested that vibration could explain why WTC 7 would collapse because the fires were not hot enough to cause the collapse. He also wanted to know why the center portions of WTC 1 and WTC 2 were still standing after they collapsed. He asked about the shearing effects of the impact. He said that he came to the meeting because he doesn't like to see too many lives lost in a disaster. He suggested a need for a better safety path for escape from tall buildings in an emergency.</p>  <p>Mr. Fitzgerald called the next speaker, Jake Pauls.</p>  <p><em><strong>Jake Pauls, Consulting Services in Building Use and Safety</strong></em></p>  <p>Jake Pauls said that NIST and the Advisory Committee need to do a better job of scheduling meetings; for example, he was not able to attend the session on June 23 due to a schedule conflict. He stated that the National Fire Protection Association (NFPA) committees meet the last weeks of October. This is an opportunity for NIST to affect the upcoming editions of the code. Therefore, he suggested that the NCST Advisory Committee schedule a meeting in October before the NFPA meeting, but not the first week of October because of another schedule conflict.</p>  <p>Mr. Pauls stated that, generally, the occupant behavior and egress results that he has seen thus far are superficial and biased. He feels that the people who are responsible for that work do not have much background in the real world of code or standards development or with things like fire safety directors and that affects the results. He said that the surveys did not include some detailed questions that should have been dealt with explicitly, for example:</p>  <ul><li>Minimum stair width, which is one of the hardest issues in the code field now.</li>  <li>Preference/deference behavior, which is the strongest factor in the evacuation process, generally, and a big factor in terms of total evacuation versus phased evacuation.</li>  <li>The nature of the movement of disruption from counter flow, which is a huge factor in terms of the first responder use of the exit stairs and whether they should have separate stairs or use separate routes.</li> </ul><p><br> He expressed disappointment that his techniques were not used for the graphical output of the results of the study; the results would be presented in a more meaningful fashion. On the first-person accounts, Mr. Pauls said the term "first-person account" is somewhat misleading to him, and suggested that a better term might be chosen. On the issue of exit remoteness, he felt that it was not dealt with well by NIST in terms of possible code violations. He thinks that the remoteness of the exits was a major factor in life loss.</p>  <p>Mr. Pauls suggested that NIST be careful in using the 25,000 population figure and the 4 hour evacuation time. It could be a two-edged sword. He said that the realistic population is maximally about 20,000 per tower, a number that he has been publishing for years based on Port Authority figures and other data. He said there is good progress on the population estimates in the towers on September 11. He stated that NIST should explain why the population estimate is low, and he feels that it was a major factor in the low loss of life.</p>  <p>He mentioned that the NFPA high-rise safety advisory committee was formed, and it is a mechanism for NIST to present results to the NFPA system. Mr. Pauls concluded by saying that he has characterized some of what NIST has done over the last couple of decades as opportunities missed and, to some extent, findings misconstrued, particularly relative to code implications. Mr. Pauls urged NIST to put some effort into that area.</p>  <p>Mr. Fitzgerald called the next speaker, Mr. Robert Polk.</p>  <p><strong><em>Robert Polk, National Association of State Fire Marshals</em><br></strong><a href="https://www.nist.gov/document/polkcommentspdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="2e397dda-7a09-4c84-8270-b46731d083d0">STATEMENT</a></p>  <p>Mr. Fitzgerald called the next speaker, Dr. Zia Razzaq.</p>  <p><strong><em>Zia Razzaq, Old Dominion University,&nbsp;</em></strong>presented a paper to illustrate the need for a load-path dependent design to account for nonproportional effects.&nbsp; <a href="https://www.nist.gov/document/razzaqcommentspdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="8efc759a-9007-41b5-ae45-af68560ef6dd">STATEMENT</a></p>  <p><strong>Standard Fire Tests of WTC Tower Typical Floor Construction<br><em>Dr. John L. Gross, WTC Investigation, Project 6 Co-Leader</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004standardfiretestspdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="bef116f4-ccd8-47c2-b2ea-9db3a49d87a7">PRESENTATION</a> Dr. Gross gave a briefing on the ASTM E 119 standard fire tests that are planned. In October 1969, the Port Authority stated that certain tower components would have a ½ inch coating of spray-on fireproofing to maintain the Class 1A fire rating of the New York City Building Code. The ASTM E 119 prescribes a standard exposing fire of controlled extent and severity. Tests will be conducted on 17 foot and 35 foot steel trusses with as-specified and as-applied thicknesses of sprayed-on fireproofing. The tests will be conducted by Underwriters Laboratories with monitoring and inspection by NIST. The design of the tests, fabrication of steel trusses, assembly of all four test specimens, and curing and drying of concrete are completed. The instrumentation has been installed on all specimens, and the fireproofing application is in progress. Testing is expected to begin in August.</p>  <p>Q: Are you spray insulating the bridging trusses?<br> A: We analyzed photographs and a report by Les Robertson after the 1975 fire. The report suggests that fireproofing was not required on bridging trusses. Analysis of photographs indicated that roughly one half of the specified thickness for floor trusses was applied to bridging trusses. As specified, no fireproofing was required on bridging trusses.</p>  <p>C: Go back to the first slide. The reference in the Linn letter to 1A; what is the timing to the Emory Roth letter stating 1A?<br> A: Three or 4 years after adoption of the 1968 code allowing 1B.</p>  <p>Q: The codes got very prescriptive on fireproofing. Was it in place in 1968? No basis for ½ inch.<br> A: We haven't seen anything in the codes.</p>  <p>C: There is confusion over reductions from 1A to 1B; allowed to build to 1B and treat as 1A.<br> A: The only thing found was the specification for ½ inch on beams, not on trusses.</p>  <p>Q: Tests with ½ inch and ¾ inch—is the procedure designed to reproduce the installation procedures?<br> A: No, just the thickness. Quality of application is always better in the lab than in the field due to tighter control.</p>  <p><strong>June 23, 2004</strong></p>  <p>The second day of the NCST Advisory Committee meeting opened with a presentation on the WTC Investigation.</p>  <p><strong>WTC 7 Structural Fire Response and Collapse Analysis<br><em>Dr. Therese P. McAllister, WTC Investigation, Project 6 Co-Leader</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004wtc7structuralfire-collapseanalysisprintpdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="3ca58adb-47c2-4cbd-b63c-03b00f4a14d1">PRESENTATION</a> Dr. McAllister presented information on the WTC structural fire response and collapse analysis. The objectives are to determine the structural response of WTC 7 to debris damage and internal fires and to identify the most probable structural collapse mechanism. She described the progress to date, which includes the development of a nonlinear global structural model of WTC 7. NIST has evaluated the model's performance under design gravity loads and is identifying credible failure sequences using the model to analyze the effect of component failures on the structural system stability.</p>  <p>The WTC 7 structure, Con Edison Substation, floor plans, and roof layout were described as well as debris damage from WTC 1 and WTC 2. Dr. McAllister provided information on the observed fire locations and a fire sequence timeline.</p>  <p>Dr. McAllister stated that NIST is analyzing a working collapse hypothesis for WTC 7 which suggests that it was a classic progressive collapse. An initial local failure initiated at the lower floors, below Floor 13, due to fire or debris induced structural damage of a critical column (the initiating event), which supported a large span floor bay with an area of about 2,000 square feet. There was a vertical progression of the initial local failure up to the east penthouse, as large floor bays were unable to redistribute the loads, bringing down the interior structure below the east penthouse. It appeared that there was a subsequent horizontal progression from the east to the west side, with the events resulting in a disproportionate collapse of the entire structure. Dr. McAllister explained possible modes of the column failure, including squashing of the column, weld failure, and column splice failure. Comprehensive analysis is ongoing.</p>  <p>Q: Give a sense of heating time needed for un-fireproofed column exposed to 700 ºC to 800 ºC gas temperature for it to reach 550 ºC.<br> A: We used a gas temperature of 1,100 ºC for the analysis, and it required 30 minutes. With fireproofing in place, it would take hours.</p>  <p>C: Buildings like WTC 7 are quite typical. Close exterior columns are common to resist lateral loads. If you make them highly redundant, cost gets huge. There are lessons to be learned. All buildings had single lateral load resisting systems with no redundancy. In California, buildings would have redundancy—one primary system and a secondary system that would carry up to 25 percent of the lateral load. Progressive collapse, earthquakes, terrorist considerations lead to dual systems. The profession is concerned about overreaction. Had the core resisted lateral loads, this might not have happened. The core should have shared load transfer capability.</p>  <p>Q: What do we know about the splices?<br> A: I would have to look that up to give you the details.</p>  <p>C: The welds are just an erection device. The ends are milled to bear in compression, regardless of the connection.</p>  <p>C: That's what I would expect, but it would be nice to know for the report.</p>  <p>C: I'm concerned about tearing of the weld due to thermal conductivity and expansion.C (NIST): I agree. We are looking at such scenarios.</p>  <p>C: Thank you. I share the Committee's feelings that this is excellent work.</p>  <p><strong>Condition of Thermal Insulation: Methodology<br><em>Dr. Nicholas J. Carino, WTC Investigation, Project 6, Research Structural Engineer</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004thermalinsulationmethodologypdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="c0d2bc03-0c47-4382-89f5-aae49cfb1a43">PRESENTATION</a> Dr. Carino reviewed the methodology for assessing the condition of the sprayed-on fireproofing. The variability of the fireproofing thickness is taken into account by the use of equivalent thickness, and he described the available data used to obtain rational thickness values. Temperature dependence of thermal properties of fireproofing materials has been established (thermal conductivity, specific heat capacity, density, and coefficient of thermal expansion). NIST will use a tensile pull-off test to measure the adhesive or cohesive strength of fireproofing applied to steel plates. The extent of dislodgement of fireproofing will be estimated based on tests and the aircraft impact analyses from Project 2.</p>  <p>Q: You zero in on data for upper floors, assuming data for WTC 1 and WTC 2 for impact areas. Are these data based solely on tenant alteration audit reports?<br> A: Yes, for the upgraded fireproofing.</p>  <p>C: You mention that this is not consistent with photo evidence. I have a problem with that.</p>  <p>Q: I thought the upper floors of WTC 1 had been upgraded, not WTC 2.<br> A: The data show that those floors in WTC 2 included in the alteration audit reports were upgraded.<br> A: Most of the fire-affected floors in WTC 2 were not upgraded.</p>  <p>Q: I had heard that the last diagonal was not sprayed to avoid spraying the dampers.<br> A: We did see photos showing some fireproofing on the struts. That led to the assumption of ½ inch thickness on the end diagonals.</p>  <p>C: Equivalent thickness is a good idea. You need to look at other ways to define equivalent response of a steel member with fireproofing.</p>  <p>C (NIST): We agree and we are working on that. We will examine the behavior under restrained conditions.</p>  <p>Q: My comment is on the variability of the performance of the fireproofing in the manner in which it is applied. It is a sloppy liquid and how does it evaporate? How may it fall off? Do you have information in-place?<br> A: No. This type of fireproofing was applied with an excess amount of water. From observations during recent specimen fabrication, we estimate that as much as 60 percent of the weight is evaporable water. This water is not chemically bound and does not affect properties. We will never know the in-place properties.</p>  <p>Q: I have a mental image of debris impact rather than acceleration.<br> A: We will use the debris field generated by Project 2 and assume that the fireproofing within the debris field is dislodged. We will also try to estimate loss of fireproofing due to vibration of structural elements near the impact zone.</p>  <p>C: Damage to fireproofing is not unusual. Did you take into account the percentage of area that would normally be damaged?<br> A: We're not aware of anyone coming up with estimates of "normal" damage. In the absence of such information, our analyses will not attempt to account for missing fireproofing.</p>  <p>Q: To make it more generally applicable, have you looked at how the numbers compare to square root mean or modal point distribution?<br> A: No. The lognormal distribution appears to be a good descriptor of the thickness distribution. The average thickness and standard deviation were transformed into the parameters for the lognormal distribution by the usual equations. The mean of the lognormal distribution is the median of the thickness values, and the standard deviation of the lognormal distribution is approximately the coefficient of variation of the thickness values.</p>  <p><strong>Project 7: Occupant Behavior, Egress, and Emergency Communications<br><em>Mr. Jason D. Averill, WTC Investigation, Project 7 Leader</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004occupantbehavioremergencycommunicationspdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="b834ef97-e119-40ae-99af-e7b8b0488fa9">PRESENTATION</a> Mr. Averill presented an update on Project 7 of the WTC Investigation, occupant behavior, egress, and emergency communications on September 11, 2001. He reported that NIST is now substantially complete with all first-person data collection. To date, NIST has conducted over 225 face-to-face interviews, 803 telephone interviews, and 6 focus groups. NIST continues to analyze 911 emergency calls logged between 8:46 a.m. and 10:28 a.m. on September 11. The initial analysis of published accounts is completed and is being integrated with other sources of information. Written communications, protocols, and procedures from the design and operation of the WTC are also being analyzed to better understand how the buildings were supposed to operate in an emergency. Mr. Averill said that the causal modeling using the telephone interview data set is almost completed, and the egress modeling is in progress. In addition, valuable eyewitness observations are shared with other projects in the Investigation.</p>  <p>Data was presented on the occupants. NIST estimates that on the morning of September 11, 2001, 17,400 (+/- 1,200) were present in the towers: 8,900 in WTC 1 and 8,500 in WTC 2. The average survivor was in their mid-forties, with survivors ranging in age from the early 20s to the 70s. Sixty-seven percent of WTC 1 survivors had started working in the building within the last 4 years, while 51 percent began working in WTC 2 during the last 4 years. From interview questions about emergency preparedness, it was found that two-thirds of the survivors had participated in at least one fire drill, which was good about pointing out the closest stairwell. About half of the survivors, however, had never used a stairwell prior to September 11. Local Law 5 prohibits requiring people to use stairwells during the fire drills.</p>  <p>Mr. Averill shared details of the results of the evacuation analysis illustrated with interview quotes. He pointed out the similarities and differences between evacuations of the two towers. For example, WTC 2 had a greater rate of evacuation when both stairs and elevators were available for use, and many chose to self evacuate. For the last 20 minutes in each building, the evacuation rate dropped to approximately one-fifth the previous rate. This suggests that for those seeking and able to reach and use the undamaged exits and stairways, the egress capacity was adequate to accommodate survivors. Mr. Averill discussed what the interviewees reported as the aids and constraints to their evacuation. The results of the NIST analysis show that approximately 87 percent of WTC occupants, and over 99 percent of those below the floors of impact, were able to successfully evacuate.</p>  <p>Q: I have a question on the graph of Time Until Out of Building. Is this initiating egress?<br> A: It refers to the time they exited the building?</p>  <p>Q: Elaborate—are you talking about WTC 2 when it has not yet been struck?<br> A: Yes, for most people. For 90 percent of occupants, this was the case.</p>  <p>Q: Are voice instructions considered environmental cues?<br> A: Voice instructions are considered as obtained data. Red lines are the primary processes.</p>  <p>Q: The decrease in the last 20 minutes—why doesn't that continue?<br> A: The stairwells were not full at that time.</p>  <p>Q: You don't talk about the efficiency of using elevators?<br> A: The first finding suggests this.</p>  <p>Q: Why not include elevators in other findings?</p>  <p>C: Generalization about the last 20 minutes is unclear as written. The sentence that follows the initial sentence is not logical. One could infer that crowding in stairwells resulted in slowing.<br> A: The capacity was adequate based upon previous egress rates. This suggests that for those who were able to evacuate, there was sufficient capacity.<br> A: There might be damage above the impact or mobility challenged individuals.</p>  <p>C: Rate might be confused with velocity.</p>  <p>Q: You did 800 telephone and 225 unimpeded narratives. Are you comparing the data on the slides?<br> A: The percentages are generalized from the telephone survey data.</p>  <p>Q: Unimpeded interviews are large and expensive. What is the plan?<br> A: Each interview has been entered into Atlas Ti. Then we can analyze the content. In the telephone surveys, we were locked into a question set. The value of face-to-face interviews is that they added context and allowed us to pursue threads.</p>  <p>Q: What is the plan for writing up the data?<br> A: What you see here is a bit of a preview of one of the phases of how we are planning on writing our final report. One of the phases that we want to look at is describing the events so that everybody who then looks at our interpretation has the same understanding of what happened inside WTC 1 and WTC 2. We want to describe what the average occupant saw, but also those perturbations that may have had a very significant effect on the buildings, such as fireballs in the lobbies, which were observed by very few people, but would definitely need to be described.<br> A: This is very preliminary reporting. We hope to see a much more detailed report soon.</p>  <p>C: There is very interesting information on the psychological and emotional state of people prior to and during the evacuation that has a real bearing on testing hypotheses about so-called panic, i.e., it did not occur. We see that a lot of lives were saved due to the initiative of individuals and not because anybody told anyone what to do. In multivariate analysis, these R2 values in the causal models are incredible and demonstrate the robustness of the models. Throughout this whole process, I've been skeptical that NIST could pull this off, particularly in light of the human subject, legal, liability, confidentiality, and timeframe issues. I'm getting a very good comfort level. It is remarkable that you have been able to pull this off. You haven't gone into the whole process of the badges and getting that sampling frame here today, but that in itself was a monumental accomplishment.</p>  <p>Q: Do you have an estimate of the people alive after impact that couldn't get to an exit path?<br> A: Mostly people above the impact. At this point, Dennis Cauchon's work is a good starting point. We are working on that.C: There are implications for remoteness and redundancy of exit paths.</p>  <p>Q: The break out by tower—how many were alive? About 1,500 people in WTC 2 used elevators. Fifteen minutes per person? What number of elevators were being used for that?<br> A: Yes. We are working on the number of elevators.</p>  <p>Q: The number 2,592 that includes all the people in the tower—does it include first responders? What does the number include?<br> A: Volume 6, Appendix O, page O-10 gives that information.</p>  <p>Q: Specifically with regard to using stairs and hindrances to people moving down the stairwells—would you include the impediments of slower travelers? Could you give me a sense of passing behavior and people going around other people?A: We do have a lot of people mentioning that in the face-to-face interviews. We are still analyzing and pulling together our basic conclusions. For lack of a better word, we've called what you've just described "superflow," people going faster, as opposed to counter flow. That wasn't mentioned in the telephone interviews as one of the predominant variables.</p>  <p>Q: How do your numbers stack up to Columbia?<br> A: We haven't yet compared the basic findings. Their survey data just came out.</p>  <p>Q: Kathleen, can you suggest a way to present the data?<br> A: I think they are already doing that with showing quotes with the data. You have the code book for the telephone survey and you'll have one for the other interviews. You're already doing it by connecting to variables or concepts for coding.</p>  <p>Q: What do you think the implications of findings will be for modeling?<br> A: It's too early to say yet about state-of-the-art.A: There is considerable room for improvement in the models.</p>  <p>C: Demographic data is interesting in that people, on average, had been there only 4 years. There is a need for continuous education on egress. The NIST dissemination and technical assistance program might need to include strategy to educate public and building owners.C (NIST): Also, people travel a lot and miss the training.C: Paul's comment is important. Industries have a high turnover. This is probably not unusual. It needs to be taken into account.C: A continuous education program is needed.</p>  <p><strong>Project 8: Fire Service Technologies and Guidelines<br><em>Mr. J. R. Lawson, WTC Investigation, Project 8 Leader</em></strong></p>  <p><a href="http://wtc.nist.gov/pubs/June2004FireServiceTechnologiesandGuidelines.pdf">PRESENTATION</a> Mr. Lawson presented an update on Project 8 of the WTC Investigation, which includes an analysis of fire service technologies and guidelines. The tasks of this project include data collection, field interviews, and re-creation and analysis.</p>  <p>Mr. Lawson listed the sources of communications, including the PANYNJ radio and telephone communication recordings related to emergency response, New York City recordings of telephone calls made to 911 emergency operators and FDNY fire dispatchers, and first-person accounts of experiences with radio and telephone communications. Mr. Lawson and the NIST team also conducted interviews with more than 100 FDNY, NYPD, and PANYNJ police officers, safety staff, and other personnel. From these sources, it was found that moments after the first aircraft impacted WTC 1, the telephone systems were stressed by increased caller volume. Although there was impact damage and fires were burning in the two towers, some landline telephones were working in the buildings. After the collapse of WTC 2, a number of cellular phone systems were not functioning in lower Manhattan, and there were still some landline telephones working within the city block areas adjacent to the WTC.</p>  <p>Mr. Lawson described the methodology for the analysis of radio communications. He reviewed the findings from the analysis, among them that roughly one-third to one-half of the radio messages during surge conditions were not complete or understandable. He presented the preliminary chronology of emergency communications on September 11—dispatch and arrival of emergency responders, evacuation, emergency response operations, emergency response communications, and conditions—and highlighted noteworthy communications.</p>  <p>Q: Regarding the quality of communication—do you have any context for another large incident?<br> A: The 1993 bombing showed similar conditions.</p>  <p>Q: Also, what about the command and control issue?<br> A: We are looking at that.</p>  <p>Q: Can you assess if commanders had a grasp of the global situation?<br> A: We tried to assess situational awareness through the interviews and other information. This was a problem, but we're not ready to state a finding.</p>  <p>Q: Maybe it's an unreasonable expectation for emergency response.</p>  <p>Q: Do you have a baseline on quality of communications in a nonemergency?<br> A: Prior to the incident, where you don't have surge conditions, if you don't understand a message you ask to have it repeated. With the volume of communications, it's difficult to get back and ask for a repeat.</p>  <p>Q: Is that typical in the area of the WTC to have interference?<br> A: Quality will vary based on location. I couldn't say if things were much better.</p>  <p>Q: Did we look at other baselines, other large emergencies, such as an earthquake?<br> A: I've worked in this area for many years. This is typical. It's not just New York City.</p>  <p>Q: We need to look at command, control, and operations. The 9/11 Commission has done a lot of work in this area. When you talked to the NYPD Aviation Units and FDNY, was there any thought given to putting people in the building through the roof?<br> A: Probably a combination of the two.</p>  <p>Q: There were frenetic conditions in the PATH area and many people went toward PATH. Can you connect this with communications?<br> A: We are still trying to better understand that.</p>  <p>Q: The 22nd floor command center controlled the locked roof doors. Have you found that?<br> A: We haven't found that yet. The average person could not access the roof.</p>  <p>Q: Context is needed for these observations. It would be important to include readability of messages during normal times in New York City.<br> A: We have that already for the Port Authority Police Department. We haven't reported it yet. We do not have information for the NYPD or the FDNY citywide channels. It's difficult to do that under our agreement with New York City.</p>  <p>C: That's a shame. I'd like to point out that hearing a message doesn't mean that you understand or act on a message. I read the book Last Man Standing. The person in the book [who was under the collapsed tower] was describing that he heard a message that "the tower just fell." He thought it meant a communications tower. He was under the tower and didn't know it. Interpretation of messages varies. Mass convergence to the site was a factor. I would observe that running does not infer panic. Also "I have people going crazy," is not a good example—it is not good to put a label on—it's better to describe what the conditions were.A: There were conditions that could have been more orderly.</p>  <p>Q: On operating elevator, where did it get stuck?<br> A: We don't know. A firefighter was operating it. He reported that he was using an ax to try to get out.</p>  <p>Q: Is there anything on the tapes about WTC 7 or WTC 3?<br> A: We are most focused on the towers. There is some information about ESU triage unit locations; some to direct people away from the towers. There is very little on WTC 7.</p>  <p>C: As we move forward, there is a need for a narrative format. A format that connects the dots for the reader will be important.<br> A: We tried in the last few slides to add value to the information and to do what you are suggesting.</p>  <p>C: I'm not talking about the presentation, but I'm talking about the future and all projects.<br> A: Yes, we will be doing that.</p>  <p>C: I want to reinforce that the data from New York City is not in your possession, and therefore, in the future researchers can't have access to it. That's a shame.</p>  <p><strong>Project 4: Investigation of Active Fire Protection Systems<br><em>Dr. David D. Evans, WTC Investigation, Project 4 Leader</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004activefireprotectionsystemspdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="2cbf8fbc-1187-431b-a7a7-d3f3cbc0f5cf">PRESENTATION</a> Dr. Evans provided an update on Project 4, which is investigating three systems: the fire sprinkler system, including the fire standpipes and pre-connected hoses; the fire alarm system; and the smoke management system. Also under this project, NIST assembled a history of significant fires in WTC 1, 2, and 7. Dr. Evans provided NIST's working definition of a "significant" fire, and a finding that 47 fires fell within that definition. Of those fires studies, two involved evacuation of WTC 1 in 1980 and 1981: 300 people and 1,500 people, respectively. Neither incident had reported injuries or casualties. He referred to the June 2004 Progress Report, Appendix G, for details.</p>  <p>Dr. Evans explained the sprinkler and standpipe system and reviewed preliminary findings for the undamaged and fully operational systems. He illustrated that, in general, sprinkler risers provided single points of supply at each floor level, which causes the potential for single point failures. In specific cases, the lack of interconnections for adjacent standpipe zones resulted in the potential for single point failures of the standpipe systems.</p>  <p>The WTC 1 and WTC 2 fire alarm systems consisted of multiple panels distributed within each tower. The distributed panels shared intelligence, information, control, and communication through system signal communication paths. Dr. Evans provided diagrams of the global and local communication paths to the fire alarm panels and discussed the audio/voice system and the firefighter and warden telephone systems. The potential performance differences had fiber optic communications cable been used instead of copper in the system are being studied. Particular attention is being paid to performance under dead electrical short possible in the copper wiring system.</p>  <p>In the analysis of the smoke management system, NIST found that the smoke purge systems in WTC 1 and 2 were not initiated on September 11, 2001. Dr. Evans said that if the smoke purge sequence had been initiated, it is unlikely the system would have functioned as designed due to loss of electrical power and damage to the heating, ventilation, and air-conditioning shafts and other structural elements.</p>  <p>Q: Is there an indication or data about responder efforts to connect to standpipes and the pressures?<br> A: The Fire Department did connect to several outside the building. There was some water pressure early on.</p>  <p>Q: There was mop up?<br> A: There was some water below the impact zone. There was water pressure and head to it.</p>  <p>A: Impression was that around the 77 and 78 floors, it was indicated that there was water there.</p>  <p>C: The Chief on floor 78 indicated that they were trying to extinguish fires in the staircase, but there was no indication of volume or head.</p>  <p>Q: I heard that sprinklers were operating in the lobby. Have you tied that to the fireball?<br> A: We have not analyzed that.C: PAPD indicated that the fireball did activate the sprinklers.<br> A: The sprinkler system in the lower levels of the towers could have functioned normally using the water supply from the tanks in the building.</p>  <p>Q: Have you worked with Randy to analyze the 911 tapes? Did you get any information on alarm performance, particularly in WTC 1?<br> A: We are trying to reconcile those pieces.</p>  <p>Q: Regarding the monitoring of alarm coordination devices and records of that—are they monitored?<br> A: The system was monitored by the Port Authority and recorded on computer hard drives and printouts at the fire command station in the lobby of the towers. We did not have any opportunity to search for surviving hard drives or printouts that would have contained valuable information. There was no remote monitoring of the alarm systems for the towers. WTC 7 was monitored offsite. We have talked about a possible recommendation.</p>  <p>Q: There is an opportunity here for a great deal of "what-if" work, but resources are limited. What if it were a different type of system, and how would it had worked?<br> A: There is the multiyear R&amp;D program to study these issues.</p>  <p><strong>Project 1: Analysis of Building and Fire Codes and Practices<br><em>Dr. H.S. Lew, WTC Investigation, Project 1 Co-LeaderMr. Richard Bukowski, WTC Investigation, Project 1 Co-Leader</em></strong></p>  <p><a href="https://www.nist.gov/document/june2004analysisofbldgandfirecodespdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="736147eb-4a52-4f21-b5c8-feac3b64b83b">PRESENTATION</a> Dr. Lew presented information on Project 1, specifically the building codes and practices. He explained the building codes used in the initial and final designs of WTC 1, 2, and 7 and the code conformance agreement between the Port Authority and the New York City Building Department. The structural requirements included dead loads, live loads, live load reduction, and lateral loads; live load reductions were taken for WTC 1 and WTC 2. He also presented design wind load information. The standards used for the structural system design were listed for WTC 1, 2, and 7, and Dr. Lew discussed the tests performed to support the design, as well as documented modifications to the systems.</p>  <p>Dr. Lew pointed out that innovative systems, technologies, and materials were used in the towers. These included the frame-tube system, the steel floor truss, the uniform exterior column geometry of 14 different grades of steel, the application of viscoelastic dampers to control building motion, wind tunnel testing to establish design wind values for super tall buildings, and the use of three-story prefabricated exterior steel-column panels.</p>  <p>Mr. Bukowski presented information on the fire codes and practices for WTC 1, 2, and 7. The fire resistance rating for WTC 1 and WTC 2 was Construction Class 1B (3 hour protected); they are business occupancy buildings (Group E). He explained the details of this classification. The rating for WTC 7 was 1C (2 hour sprinklered) per Fire Safety Plan filed for the building in 1990, and 1B (3 hour protected) per the Port Authority. He also reviewed the requirements for the means of egress and described the elevator systems. Each tower had 99 elevators (WTC 7 had 38), and by code, were not to be used for fire service access nor for occupant egress during an emergency. He mentioned that the elevators were used for occupant egress in WTC 2 after WTC 1 was hit and before WTC 2 was hit. Requirements for fire suppression and fire alarm systems were also described. Modifications to the codes had major impacts on WTC 1 and WTC 2; Mr. Bukowski provided the details of the code changes.</p>  <p>Mr. Bukowski discussed the interim findings. NIST found that while not subject to the building and fire regulations of New York City, the Port Authority generally followed these at the design stage and as they evolved over the life of the buildings through the adoption of Local Laws. The fire and life safety systems in WTC 1, 2, and 7 were generally consistent with the requirements of national codes, standards, and accepted practices. The Port Authority developed tenant manuals and alteration procedures, and conducted regular condition surveys. The Port Authority also addressed some problems over an extended period of time, including fireproofing, tenant separation walls, sprinkler retrofits, and inspection by independent third parties.</p>  <p>Q: Regarding independent third-party inspection—what is your concern?<br> A: Determination of code compliance is difficult. A lot of judgment goes into checking compliance, and I get concerned when it goes off to a third party who is paid by the builder. Maybe it is a philosophical issue.</p>  <p>Q: Are the New York City people certified to do such work? Are they licensed engineers?<br> A: I don't know.A (Committee Member): The certification he's talking about is architects and engineers.</p>  <p>C: The code compliance issue is essential. You use the words "generally follow" and "generally consistent." You need to say one way or another. I propose the need to state more clearly.A: NIST does not have any regulatory authority. We will not say whether something is code compliant; we won't make a general statement.A: We have noted cases where there were discrepancies.</p>  <p>Q: Need to know what elevators were operational on 9/11. We need to look at records and see what were moving in the South tower for egress. Also, we need to look at door restrictors, hatch locks, etc. Have occupancy loads and egress width for Windows on the World been looked at? Did the tenant construction review manuals contain anything on fireproofing maintenance?<br> A: I don't recall anything. I believe that the Port Authority did the maintenance on the fireproofing and that it was not part of the tenant responsibility.</p>  <p>C: I wondered if there was guidance to tenants not to damage fireproofing.</p>  <p><strong>The Station Nightclub Investigation Overview and Egress Study<br><em>Dr. William L. Grosshandler, Chief, Fire Research Division</em></strong></p>  <p><a href="https://www.nist.gov/document/rhodeislandinvoverviewpdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="3f12ad2b-fc9c-4f72-9873-a2f851194441">PRESENTATIONS</a> Dr. Grosshandler is leading the NCST investigation of the fires at The Station nightclub that occurred in West Warwick, Rhode Island, on February 20, 2003. He presented an overview on the status of the investigation.</p>  <p>Dr. Grosshandler went on to present the status of the egress study and a review of the model building and fire codes for the Station Nightclub Investigation. The purpose of the egress study is to evaluate limitations to egress through doorways in emergencies. Dr. Grosshandler reviewed the detailed timeline that was developed for the event based on the WPRI-TV video and other published accounts. In-place life safety features have been identified, and an extensive review of previous evacuation incidents is under way.</p>  <p>NIST has determined the dates of major construction and changes of use of the Station Nightclub from 1946 to 2001. Dr. Grosshandler described the model fire codes that were applicable during the various modifications of the nightclub. NIST is reviewing the life safety features of these codes.</p>  <p>Q: References are to the fire codes, but not the building codes.<br> A: Those were omitted for brevity, but we have them and they will be in the report.</p>  <p>Q: Are these the model fire codes that were governing in Rhode Island?<br> A: We do not have a record of what was governing at the time in terms of codes.</p>  <p>Q: Someone issued a license, they must have followed a code. Aren't there records of what codes were applicable.<br> A: The permits are incomplete, we have reviewed as many records as are available.</p>  <p><strong>Emergency Response<br><em>Mr. Kenneth Kuntz, The Station Nightclub Investigation, U.S. Fire Administration</em></strong></p>  <p><a href="https://www.nist.gov/document/stationnightclubemergencyresponsepdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="99333aad-4366-4032-aebf-a6abc7a4d8d3">PRESENTATION</a> Mr. Kuntz, from the U.S. Fire Administration, briefed the Committee on the assessment of the emergency response. Audio video tapes, dispatch logs and photographs were independently acquired by the NCST team from state and local agencies and officials. Other information was detailed in after-action reports obtained from various participant interviews, news accounts, existing records, etc. This information was reviewed and analyzed. Mr. Kuntz discussed the magnitude of life loss and injury, the type and scope of the incident, and the West Warwick Fire Department and their rescue and fire suppression efforts.</p>  <p>Q: I visited the site and was surprised to see a street alarm box in front of the building. Was that there at the time?<br> A: I don't know if it was still operational. But a policeman was there at the time and called in the incident.</p>  <p>Q: How did they get the alarm?<br> A: In today's world, with cell phone's, the Regional 911 call center was flooded with calls.</p>  <p>Q: Was 11:10 p.m. when the call was received at the station; 11:14 p.m. is when Engine 4 arrived at the scene?<br> A: Yes. We're trying to track all seconds. The police officer call went out 3 minutes after ignition.</p>  <p>Q: Did ODP (Office of Disaster Planning) do interviews?<br> A: ODP contracted Titan to study the event—response to mass casualty events.</p>  <p>Q: They interviewed responders, not survivors?<br> A: Yes. There was no access to the Fire Department. The interviews were with the mutual aid responders and mutual aid providers. There was no post-incident critique.</p>  <p>Q: When did the survivor at the bottom of the pile get out?<br> A: We don't know exactly. We're still trying to work that out.</p>  <p>Q: Do you have a good breakdown of injuries, such as the nature, severity, disposition, treatment at the site?<br> A: There was an urgency to move casualties. Density at the site made vehicle movement chaotic; not orderly. Sorting of casualties went on at the hospitals. We don't have materials from the Health Department to quantify.</p>  <p>Q: Staffing—did this have a bearing on the outcome?<br> A: The bulk of the casualties occurred before arrival of responders. Staffing would probably not have affected the outcome.</p>  <p>C: Staffing could have affected the outcome given the casualties.<br> A: Don't know—we don't have enough details.</p>  <p><strong>Materials Testing: Testing and Validation Experiments to Support Simulation<br><em>Mr. Nelson P. Bryner, The Station Nightclub Investigation</em></strong></p>  <p><a href="https://www.nist.gov/document/stationnightclubtestingpdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="03a831af-265f-401d-9e34-28dd2a238ce9">PRESENTATION</a> Mr. Bryner presented information on the testing and validation experiments conducted to support the fire simulations of the nightclub fire. Computer fire simulations require input data such as building geometry, ventilation, and material properties. He explained that although data for common materials are available in reference libraries, additional testing is required for less common materials. NIST conducted cone calorimeter lab tests to collect data on polyurethane foam and ceiling. Large fire facility experiments were performed to collect data on pyrotechnics (gerbs) and fire spread. A full-scale mockup of the stage area was created at NIST for these experiments.</p>  <p>Mr. Bryner reported that the experiment without sprinklers led to flashover conditions within the alcove in approximately 60 seconds. The resulting high-temperatures, low oxygen, high carbon monoxide, and high hydrogen cyanide concentrations suggest that conditions in the unsprinklered test became untenable in less than 90 seconds. With sprinklers, near-ambient temperature and oxygen levels were maintained 1.4 meters above the floor.</p>  <p>C: Inferring from heat flux measurements for pyrotechnics—they are so low that they look unimportant.A: In general, I agree with you. The 2 gerb configuration produces higher heat flux and is closer to the foam. The energy from the plume may not have been inconsequential.</p>  <p>Q: The heat flux in your mockup is 25 kilowatts. Do we have film of the floor ignition at that distance?<br> A: Once the camera operator left the club, we have no data. If you look at the video, at 54 seconds, we can still see people moving. They're not falling even though it's bad inside. Once the thermal wave hits the fire wall, things behave differently.</p>  <p>C: Conditions became untenable quickly. There was a delay in evacuation. People went out the way they came in. Crowd crush and delay are important issues. A major contributor to fatalities is crowd crush. There doesn't seem to be any effort to systematically interview the survivors. We need to find ways for NIST to conduct interviews quickly and operate in a litigious environment.A: We were asked not to contact occupants for several months. We are working with the Office of the NIST Counsel to develop questions for future investigations.<br> A: We did have access to the Providence Journal interviews. The information may not be there. We need to have a better way to get information, and I appreciate your point.</p>  <p>C: We don't know how many people were there who could have information to share, for example, on emergency responders. The film shows people who went back to help others.<br> A: Bill Grosshandler and NIST are working with the National Association of State Fire Marshals to develop an approach for responding to events. It's difficult to rely on other than public information gathered by trained investigators.<br> A: We reached a point with the WTC experience that interviews are not viewed as research. Protocols are being developed to conduct interviews shortly after an event. Scope is limited by resources, and we currently do not have resources to conduct an extensive set of interviews of survivors.</p>  <p>Q: Did the foam extend across the ceiling?<br> A: The foam did not extend across the ceiling. The back wall had foam down to the restroom entrance.</p>  <p>Q: When did the sprinklers activate in the test?<br> A: The first activated at 23 seconds, the second at 24 seconds.</p>  <p><strong>Simulation of Fire and Smoke Movement in Laboratory Reconstruction<br><em>Mr. Daniel Madrzykowski, The Station Nightclub Investigation</em></strong></p>  <p><a href="https://www.nist.gov/document/stationnightclubfdssimulationoffirepdf" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="05252e58-72d4-4973-abdf-8af1558b6fb5">PRESENTATION</a> Mr. Madrzykowski presented the status of the simulation of fire and smoke movement in the laboratory reconstruction. Draft models have been completed for the experiment, and the nightclub model is currently being revised to incorporate revised dimensions, thermal properties, and modifications to the Fire Dynamics Simulator. He described the details of the model and real-scale laboratory recreation, including the measurement instrument locations. He pointed out that FDS provides the opportunity to compare computer model results with a known fire condition, prior to applying the model to the actual nightclub geometry. Mr. Madrzykowski discussed some of the results, and stated that the model trends are in qualitative agreement with measurements. FDS will be used to predict fire and smoke spread throughout the nightclub and results will be compared to the available video recording.</p>  <p>C: When you look at the heat release rates in FDS versus tests, the heat release hits a peak higher and drops faster.<br> A: The one-dimensional algorithm grid size is too coarse. We had to revise the model based on experimental observations.</p>  <p>Q (NIST): What spatial resolution was used?<br> A: 10 centimeters.</p>  <p>Q: Are you trying to complete this by the end of the year?<br> C: Our goal is to finish the technical work soon. We hope to have a draft report to share by the end of the summer.&nbsp;</p>  <p>Q: Can we get copies of the contractor reports for Rhode Island?<br> A: Yes, we'll send those to you.</p>  <p><strong>NCST Advisory Committee Business<br><em>Mr. Paul M. Fitzgerald, Committee Chair</em></strong></p>  <p>Copies of rules have been inserted in the committee notebooks under tab 21. Contact Jim Hill if there are any questions.</p>  <p>Tab 22 shows the recommendations of the NCST Advisory Committee from the December 2-3, 2003, meeting and NIST's response to those recommendations. Most recommendations made by the NCST Advisory Committee have been accepted by NIST.</p>  <p>The next item is future committee meetings.</p>  <p>Suggested dates are October 26-27, 2004, January 18-19, 2005, and March 22-23, 2005. Contact Steve Cauffman with your availability for those dates.</p>  <p>C: January 17, 2005 is the 10th anniversary of the Kobe earthquake.</p>  <p>C: October 26 and 27, 2004, also poses a conflict. Can the meeting be moved to October 5 and 6 as originally discussed?</p>  <p>C: We need time at the October meeting to discuss the Report to Congress.</p>  <p>Motion to adjourn the meeting was agreed to.</p>  <p>The open session of the meeting adjourned at 3:45 p.m.</p>  <p><strong>ATTENDANCE</strong></p>  <table align="center"><tbody><tr><td align="top"> <p><strong>Advisory Committee</strong><br> Barsom, John<br> DiNenno, Philip<br> Collins, David<br> Corbett, Glenn<br> Fitzgerald, Paul (chair)<br> Hanson, Robert<br> Thornton, Charles<br> Tierney, Kathleen<br> Williams, Forman<br> &nbsp;<br><em>Hill, James, Acting Designated Federal Official</em></p>  <p><strong>NIST Management</strong><br> Semerjian, Hratch</p>  <p><strong>Office of the General Counsel<br> &nbsp;</strong> Burkhardt, Craig<br> Rubin, Michael<br> Lieberman, Melissa</p>  <p><strong>BFRL WTC Disaster Study Secretariat</strong><br> Heyman, Matthew<br> Lieberman, Melissa<br> Newman, Michael<br> Rubin, Michael</p> </td> <td align="top"> <p><strong>WTC Investigation</strong><br> Averill, Jason<br> Banovic, Stephen<br> Baum, Howard<br> Bukowski, Richard<br> Carino, Nicholas<br> Dols, Stuart<br> Evans, David<br> Fields, Richard<br> Filliben, James<br> Foecke, Tim<br> Fritz, William<br> Gann, Richard<br> Gross, John<br> Kuligowski, Erica<br> Lawson, James R.<br> Luecke, William<br> Lew, H.S.<br> McAllister, Therese<br> McGrattan, Kevin<br> Nelson, Harold<br> Peacock, Richard<br> Pitts, William<br> Prasad, Kuldeep<br> Rehm, Ronald<br> Sadek, Fahim<br> Simiu, Emil<br> Starnes, Monica<br> Sunder, Shyam</p>  <p><strong>The Station Nightclub Investigation</strong><br> Bryner, Nelson<br> Grosshandler, William<br> Madrzykowski, Daniel<br> Kuntz, Ken<br><em>U.S. Fire Administration</em></p>  &nbsp;</td> <td align="top"> <p><strong>WTC Administrative Support</strong><br> Cauffman, Stephen<br> Cavanaugh, Sydel<br> Eichner, John<br> Sawyer, Cheri<br> Soverow, Walter</p>  <p><strong>Public Commentors</strong><br> &nbsp;<br> Lau, David, <em>Continental Container, Ltd.</em><br> &nbsp;<br> Pauls, Jake, <em>Consulting Services in Building Use and Safety</em><br> &nbsp;<br> Polk, Robert, <em>National Association of State Fire Marshals</em><br> &nbsp;<br> Razzaq, Zia, <em>Old Dominion University</em><br> &nbsp;</p>  &nbsp;</td> </tr></tbody></table>
+  
+  </div>
+        
+  </div>
+  <div
+   class="nist-block"
+>
+  
+    
+      <!-- nist-index-ignore-start -->
+<div data-elastic-exclude="" class="nist-tags">
+<a href="/topic-terms/disaster-and-failure-studies" hreflang="en">Disaster and failure studies</a></div>
+<!-- nist-index-ignore-end -->
+
+        
+  </div>
+
+<div
+   class="nist-block"
+>
+  
+    
+      <div class="text-italic font-sans-2xs">
+  Created June 29, 2010, Updated May 28, 2026
+</div>
+        
+  </div>
+
+          </div>
+          
+                  </div>
+      </div>
+    </div>
+  </div>
+
+    
+    <div class="grid-container">
+
+    
+  </div>
+  
+</section>
+
+
+        
+  </div>
+
+
+  
+    
+<div class="nist-page-feedback__block">
+  <a
+    class="usa-button usa-button--outline webform-dialog webform-dialog-narrow nist-page-feedback__button"
+    href="/webform/page_feedback?page=https://www.nist.gov/el/ncst-advisory-committee-mtg-minutes-june-22-23-2004&page_title=NCST Advisory Committee Mtg. Minutes of June 22-23, 2004&source_entity_type=node&source_entity_id=434226"
+    data-dialog-options="{&quot;dialogClass&quot;:&quot;no-titlebar page-feedback&quot;}" rel="nofollow"
+  >
+    Was this page helpful?
+  </a>
+</div>
+
+<div data-elastic-exclude>
+<!-- nist-index-ignore-start -->
+
+<footer class="nist-footer padding-bottom-4">
+
+  
+    <div class="grid-container nist-footer__info">
+      <div class="grid-row">
+        <div class="tablet:grid-col-6">
+          <div class="nist-footer__logo">
+            <a href="/" title="National Institute of Standards and Technology" rel="home">
+              <img class="nist-footer__logo-img" src="/libraries/nist-component-library/dist/img/logo/NIST-Logo-Brand-White.svg" alt="National Institute of Standards and Technology logo" width="300px" height="42px" />
+            </a>
+          </div>
+          <div class="nist-footer__contact">
+            <h3 class="nist-footer__contact-heading">HEADQUARTERS</h3>
+            <address>
+              100 Bureau Drive<br>
+              Gaithersburg, MD 20899<br>
+              <a href="tel:301-975-2000">301-975-2000</a>
+            </address>
+            <p>
+              <a href="/cdn-cgi/l/email-protection#fc9893d18b999e919d8f88998ebc92958f88d29b938a">Webmaster</a> | <a href="https://www.nist.gov/contact">Contact Us</a> | <a href="https://www.nist.gov/visit">Our Other Offices</a>
+            </p>
+          </div>
+        </div>
+        <div class="tablet:grid-col-6">
+          <div class="nist-footer__social-links">
+            
+<a class="nist-social nist-social--x-white" href=" https://x.com/NIST">
+  <span>X.com</span>
+</a>
+            
+<a class="nist-social nist-social--facebook-white" href=" https://www.facebook.com/NIST">
+  <span>Facebook</span>
+</a>
+            
+<a class="nist-social nist-social--linkedin-white" href=" https://www.linkedin.com/company/nist">
+  <span>LinkedIn</span>
+</a>
+            
+<a class="nist-social nist-social--instagram-white" href=" https://www.instagram.com/nist/">
+  <span>Instagram</span>
+</a>
+            
+<a class="nist-social nist-social--youtube-white" href=" https://www.youtube.com/NIST">
+  <span>YouTube</span>
+</a>
+            
+<a class="nist-social nist-social--giphy-white" href=" https://giphy.com/nist">
+  <span>Giphy</span>
+</a>
+            
+<a class="nist-social nist-social--rss-white" href=" https://www.nist.gov/news-events/nist-rss-feeds">
+  <span>RSS Feed</span>
+</a>
+            
+<a class="nist-social nist-social--envelope-white" href=" https://public.govdelivery.com/accounts/USNIST/subscriber/new">
+  <span>Mailing List</span>
+</a>
+          </div>
+                              <div class="nist-footer__feedback">How are we doing?
+                        <a class="usa-button webform-dialog webform-dialog-narrow"
+               href="/webform/nist_gov_feedback?page=/el/ncst-advisory-committee-mtg-minutes-june-22-23-2004"
+                title="Provide feedback" rel="nofollow" data-dialog-options="{&quot;dialogClass&quot;:&quot;no-titlebar page-feedback&quot;}">Feedback</a>
+          </div>
+                  </div>
+      </div>
+    </div>
+
+  
+  <div class="grid-container">
+    <div class="nist-footer__nav" role="navigation">
+      <ul>
+                              <li class="nist-footer__menu-item">
+              <a href="https://www.nist.gov/privacy-policy">Site Privacy</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="https://www.nist.gov/oism/accessibility">Accessibility</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="https://www.nist.gov/privacy">Privacy Program</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="https://www.nist.gov/copyrights-disclaimers">Copyright &amp; Disclaimers</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="https://www.nist.gov/office-director/freedom-information-act">FOIA</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="https://www.commerce.gov/">Commerce.gov</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="http://www.science.gov/">Science.gov</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="http://www.usa.gov/">USA.gov</a>
+            </li>
+                      <li class="nist-footer__menu-item">
+              <a href="https://vote.gov/">Vote.gov</a>
+            </li>
+                        </ul>
+    </div>
+  </div>
+
+    
+</footer>
+<!-- nist-index-ignore-end -->
+</div>
+  
+  </div>
+
+    
+    
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_Wh1HfwIOm0BQSdnxr104D5qO4JhQgu-ddmTg2r8O-fg.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=nist_www&amp;include=eJxljmEOgzAIhS_UyZEItVg7aTFtTT3-OnWJ2_4AHzzg0VYVKY2z5gJ0A2NpXLBz1RVuNT6L4b1KSAu4vK0kw4XGq3phrOTB9_DLAz1p_25Gk0Kp4EUtyaNfPnBmcpw_iFPoeqctiZLDmruXkPo2neOVPOPE7N4m4b91qurMsX9VFUsZozpwoZDtlw_rh6a1drPS2E6aI1x5cIFE_QuuxnZ3"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"37b7ccb661","applicationID":"1089704227","transactionName":"YFxUN0sADEdYVkBaClkWdwBNCA1aFnFGRhVWVWoNVgUHaHpaWkcXWFVaBks9LFtdUGJaAEB6WQ1NEw1YVVBGHltBUFMU","queueTime":13,"applicationTime":879,"atts":"TBtDQQMaHxgbVBYJHkpE","errorBeacon":"bam.nr-data.net","agent":""}</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a419ef97eb73727a',t:'MTc5MDUwNjEwNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

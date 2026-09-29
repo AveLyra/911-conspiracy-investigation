@@ -1,0 +1,189 @@
+"""Freeze literature synthesis commitments before claim extraction."""
+from __future__ import annotations
+
+import hashlib
+import json
+import os
+from pathlib import Path
+import tempfile
+from typing import Any
+
+from research_machine.application.report_language import report_overclaim_terms
+from research_machine.domain.errors import ValidationError
+from research_machine.literature.hashes import require_sha256
+from research_machine.literature.json_loading import load_json_object
+from research_machine.literature.screening import validate_screening_boundary
+from research_machine.literature.snapshot import _text
+
+
+_TYPES = {"qualitative", "quantitative"}
+_MODELS = {"not_applicable", "fixed_effect", "random_effects"}
+QUANTITATIVE_SENSITIVITIES = {
+    "leave_one_study_out",
+    "exclude_high_or_unclear_bias",
+    "alternate_fixed_effect",
+    "alternate_random_effects",
+}
+_BOUNDED_PLAN_FIELDS = (
+    "eligibility_policy",
+    "missing_statistics_policy",
+    "heterogeneity_policy",
+    "multiplicity_policy",
+    "conclusion_rule",
+    "deviation_policy",
+)
+
+
+def _text_list(value: Any, field: str, *, allow_empty: bool = True) -> list[str]:
+    if (not isinstance(value, list)
+            or any(not isinstance(item, str) or not item.strip() for item in value)
+            or any(isinstance(item, str) and item != item.strip() for item in value)
+            or len(value) != len(set(value))
+            or (not allow_empty and not value)):
+        raise ValidationError(f"synthesis plan {field} must be a unique array of canonical non-empty text")
+    return value
+
+
+def _canonical_text(value: Any, field: str) -> str:
+    text = _text(value, field)
+    if text != text.strip():
+        raise ValidationError(f"synthesis plan {field} must be canonical without surrounding whitespace")
+    return text
+
+
+def _bounded_plan_text(value: Any, field: str) -> str:
+    text = _canonical_text(value, field)
+    if report_overclaim_terms(text):
+        raise ValidationError(
+            f"synthesis plan {field} uses prohibited overclaiming language; "
+            "describe the prospective rule without claiming proof, "
+            "confirmation, validation, or explanation"
+        )
+    return text
+
+
+def validate_synthesis_plan_boundary(plan: dict[str, Any]) -> None:
+    """Replay synthesis-plan non-authority and retained limitation boundaries."""
+    if plan.get("scientific_evidence_eligible") is not False:
+        raise ValidationError("synthesis plan must remain scientifically ineligible")
+    if plan.get("conclusion_authorized") is not False:
+        raise ValidationError("synthesis plan must not authorize conclusions")
+    if plan.get("publication_authorized") is not False:
+        raise ValidationError("synthesis plan must not authorize publication claims")
+    if plan.get("reviewer_identity_authenticated", False) is not False:
+        raise ValidationError(
+            "synthesis plan must not authenticate reviewer identity"
+        )
+    limitations = plan.get("limitations")
+    if not isinstance(limitations, list) or not limitations:
+        raise ValidationError("synthesis plan requires retained boundary limitations")
+    for index, limitation in enumerate(limitations):
+        _bounded_plan_text(limitation, f"limitation {index + 1}")
+    for field in _BOUNDED_PLAN_FIELDS:
+        value = plan.get(field)
+        if value is not None:
+            _bounded_plan_text(value, field)
+
+
+def create_synthesis_plan(
+    screening_path: Path,
+    expected_sha256: str,
+    specification: dict[str, Any],
+    output: Path,
+) -> dict[str, Any]:
+    expected_sha256 = require_sha256(expected_sha256, "expected_screening_sha256")
+    screening, digest = load_json_object(screening_path, "screening")
+    if digest != expected_sha256:
+        raise ValidationError("synthesis plan screening does not match the expected SHA-256")
+    if (not isinstance(screening, dict) or screening.get("screening_version") != 2
+            or screening.get("status") != "screening_recorded"):
+        raise ValidationError("synthesis planning requires a completed version 2 screening")
+    validate_screening_boundary(screening)
+    included = sorted(item.get("source_id") for item in screening.get("decisions", [])
+                      if isinstance(item, dict) and item.get("decision") == "include")
+    if (not included
+            or any(not isinstance(item, str) or not item.strip() for item in included)
+            or any(isinstance(item, str) and item != item.strip() for item in included)):
+        raise ValidationError("synthesis planning requires included source records")
+
+    required = {
+        "plan_id", "reviewer", "research_question", "primary_outcome",
+        "synthesis_type", "effect_measure", "contrast_definition", "statistical_model",
+        "minimum_independent_studies", "eligibility_policy", "missing_statistics_policy",
+        "heterogeneity_policy", "multiplicity_policy", "subgroup_analyses",
+        "sensitivity_analyses", "conclusion_rule", "deviation_policy",
+    }
+    if not isinstance(specification, dict) or set(specification) != required:
+        raise ValidationError("synthesis plan fields do not match the documented contract")
+    synthesis_type = specification["synthesis_type"]
+    model = specification["statistical_model"]
+    if synthesis_type not in _TYPES or model not in _MODELS:
+        raise ValidationError("invalid synthesis_type or statistical_model")
+    effect_measure = _canonical_text(specification["effect_measure"], "effect_measure")
+    contrast_definition = _canonical_text(specification["contrast_definition"], "contrast_definition")
+    if synthesis_type == "qualitative" and (effect_measure != "not_applicable" or model != "not_applicable"):
+        raise ValidationError("qualitative synthesis requires not_applicable effect_measure and statistical_model")
+    if synthesis_type == "qualitative" and contrast_definition != "not_applicable":
+        raise ValidationError("qualitative synthesis requires not_applicable contrast_definition")
+    if synthesis_type == "quantitative" and contrast_definition == "not_applicable":
+        raise ValidationError("quantitative synthesis requires an explicit contrast_definition")
+    if synthesis_type == "quantitative" and (effect_measure == "not_applicable" or model == "not_applicable"):
+        raise ValidationError("quantitative synthesis requires a declared effect measure and statistical model")
+    minimum = specification["minimum_independent_studies"]
+    if isinstance(minimum, bool) or not isinstance(minimum, int) or minimum < 1:
+        raise ValidationError("minimum_independent_studies must be a positive integer")
+
+    sensitivities = _text_list(specification["sensitivity_analyses"], "sensitivity_analyses", allow_empty=False)
+    if synthesis_type == "quantitative":
+        unknown = sorted(set(sensitivities) - QUANTITATIVE_SENSITIVITIES)
+        if unknown:
+            raise ValidationError("unknown executable quantitative sensitivity analysis: " + ", ".join(unknown))
+        incompatible = ((model == "fixed_effect" and "alternate_fixed_effect" in sensitivities)
+                        or (model == "random_effects" and "alternate_random_effects" in sensitivities))
+        if incompatible:
+            raise ValidationError("alternate-model sensitivity must differ from the primary statistical model")
+    plan = {
+        "synthesis_plan_version": 1,
+        "screening_sha256": digest,
+        "snapshot_id": screening.get("snapshot_id"),
+        "included_source_ids_at_freeze": included,
+        "plan_id": _canonical_text(specification["plan_id"], "plan_id"),
+        "reviewer": _canonical_text(specification["reviewer"], "reviewer"),
+        "research_question": _canonical_text(specification["research_question"], "research_question"),
+        "primary_outcome": _canonical_text(specification["primary_outcome"], "primary_outcome"),
+        "synthesis_type": synthesis_type,
+        "effect_measure": effect_measure,
+        "contrast_definition": contrast_definition,
+        "statistical_model": model,
+        "minimum_independent_studies": minimum,
+        "eligibility_policy": _bounded_plan_text(specification["eligibility_policy"], "eligibility_policy"),
+        "missing_statistics_policy": _bounded_plan_text(specification["missing_statistics_policy"], "missing_statistics_policy"),
+        "heterogeneity_policy": _bounded_plan_text(specification["heterogeneity_policy"], "heterogeneity_policy"),
+        "multiplicity_policy": _bounded_plan_text(specification["multiplicity_policy"], "multiplicity_policy"),
+        "subgroup_analyses": _text_list(specification["subgroup_analyses"], "subgroup_analyses"),
+        "sensitivity_analyses": sensitivities,
+        "conclusion_rule": _bounded_plan_text(specification["conclusion_rule"], "conclusion_rule"),
+        "deviation_policy": _bounded_plan_text(specification["deviation_policy"], "deviation_policy"),
+        "status": "synthesis_plan_frozen",
+        "scientific_evidence_eligible": False,
+        "conclusion_authorized": False,
+        "publication_authorized": False,
+        "reviewer_identity_authenticated": False,
+        "limitations": [
+            "The plan is hash-bound to screening but the machine does not authenticate the reviewer or prove that freezing preceded extraction outside this workflow.",
+            "A frozen plan does not establish that its effect measure, statistical model, thresholds, or decision rules are scientifically appropriate.",
+            "Departures require a separate declared deviation; this artifact never authorizes selective omission of null, adverse, or high-bias studies.",
+        ],
+    }
+    validate_synthesis_plan_boundary(plan)
+    root = output.expanduser().resolve()
+    if root.exists():
+        raise ValidationError("synthesis plan output already exists")
+    root.parent.mkdir(parents=True, exist_ok=True)
+    encoded = (json.dumps(plan, sort_keys=True, indent=2, ensure_ascii=False, allow_nan=False) + "\n").encode()
+    with tempfile.TemporaryDirectory(prefix=".synthesis-plan-", dir=root.parent) as temporary:
+        staging = Path(temporary) / "synthesis-plan"
+        staging.mkdir()
+        (staging / "synthesis-plan.json").write_bytes(encoded)
+        os.replace(staging, root)
+    return {"path": str(root), "synthesis_plan_sha256": hashlib.sha256(encoded).hexdigest(), **plan}

@@ -1,0 +1,1053 @@
+{
+  "batch": 3,
+  "comparisons": [
+    {
+      "assets": [
+        {
+          "asset_id": "A-79c9dd7424ec",
+          "axes": {
+            "ambiguous_glow_identified": {
+              "comparison": "same",
+              "left": true,
+              "right": true
+            },
+            "flame_like_identified": {
+              "comparison": "same",
+              "left": false,
+              "right": false
+            },
+            "nondetection_region_identified": {
+              "comparison": "same",
+              "left": true,
+              "right": true
+            },
+            "smoke_status": {
+              "comparison": "different",
+              "left": "uncertain",
+              "right": "visible"
+            },
+            "target_evaluability": {
+              "comparison": "same",
+              "left": "limited_detail",
+              "right": "limited_detail"
+            }
+          },
+          "descriptions": {
+            "smoke_reason": {
+              "identical_json": false,
+              "left": "A broad gray veil reduces facade contrast, but this isolated processed still does not clearly separate smoke from haze/exposure or assign an emitting location.",
+              "right": "A diffuse gray veil with uneven density crosses the candidate frontage and reduces contrast. Overlap alone does not assign its source or depth."
+            },
+            "target_reason": {
+              "identical_json": false,
+              "left": "Broad rear facade can be localized behind street foreground, but dark veiling and small projected features limit window/morphology detail.",
+              "right": "The large dark central frontage is a plausible candidate target, with portions of horizontal and vertical divisions faintly discernible. The image cuts its upper extent; haze and foreground trees, lamps, vehicles and people obstruct much of the lower and right portions. The rectangle locates the visible candidate span and does not reconstruct hidden edges."
+            },
+            "visibility_limits": {
+              "identical_json": false,
+              "left": [
+                "Foreground buildings, poles, trees, vehicles and people obscure lower and lateral parts.",
+                "Small and blurred luminous features do not support window counts, emission area or heat.",
+                "Historical clock, assigned floors and camera processing are not independently authenticated.",
+                "No inference about hidden interiors or unseen facades."
+              ],
+              "right": [
+                "The central frontage is low contrast and veiled; apertures and luminous morphology are poorly resolved.",
+                "Trees, poles, lamps, vehicles and people cover portions of the lower and right target region.",
+                "A large blurred foreground oval and the bottom credit obscure image content; no hidden target geometry is inferred.",
+                "Bright patches are not calibrated for emission, temperature or depth, and the image is not a camera original authenticated by this review."
+              ]
+            }
+          },
+          "regions_without_forced_matching": {
+            "luminous_features": {
+              "identical_json": false,
+              "left": [
+                {
+                  "alternatives": [
+                    "Reflection or illuminated material through veiling.",
+                    "Compression and exposure can merge small emitting features."
+                  ],
+                  "appearance": "ambiguous_glow",
+                  "reason": "Several separated red/pale luminous patches align across a facade band; native still does not securely resolve flame tongues throughout this locator.",
+                  "rect": [
+                    329,
+                    90,
+                    549,
+                    122
+                  ],
+                  "target_relation": "on_candidate_facade"
+                },
+                {
+                  "alternatives": [
+                    "Reflection or illuminated material.",
+                    "Unresolved flame viewed through haze."
+                  ],
+                  "appearance": "ambiguous_glow",
+                  "reason": "Small bright pale/orange horizontal patch with insufficient morphology to identify emitting gas.",
+                  "rect": [
+                    278,
+                    141,
+                    303,
+                    161
+                  ],
+                  "target_relation": "on_candidate_facade"
+                },
+                {
+                  "alternatives": [
+                    "Foreground reflection or lit fixture.",
+                    "Unresolved facade luminosity."
+                  ],
+                  "appearance": "ambiguous_glow",
+                  "reason": "Tiny pale patch near a foreground lamp arm; depth association and shape are insecure.",
+                  "rect": [
+                    438,
+                    167,
+                    463,
+                    184
+                  ],
+                  "target_relation": "uncertain"
+                }
+              ],
+              "right": [
+                {
+                  "alternatives": [
+                    "reflection or illuminated material",
+                    "saturation and blur",
+                    "projected depth not resolved"
+                  ],
+                  "appearance": "ambiguous_glow",
+                  "reason": "Small white and reddish horizontal luminous patch against the central dark frontage; insufficiently resolved for a secure tongue-like morphology.",
+                  "rect": [
+                    278,
+                    143,
+                    303,
+                    159
+                  ],
+                  "target_relation": "on_candidate_facade"
+                },
+                {
+                  "alternatives": [
+                    "reflection or illuminated surfaces",
+                    "smoke-filtered light",
+                    "blur and compression"
+                  ],
+                  "appearance": "ambiguous_glow",
+                  "reason": "Faint warm vertical patches appear on the dark frontage but do not resolve into definite irregular flame forms.",
+                  "rect": [
+                    329,
+                    94,
+                    358,
+                    118
+                  ],
+                  "target_relation": "on_candidate_facade"
+                },
+                {
+                  "alternatives": [
+                    "reflections or lit material",
+                    "saturation and blur",
+                    "depth ambiguity behind the apparent frontage"
+                  ],
+                  "appearance": "ambiguous_glow",
+                  "reason": "Several small pale and reddish luminous patches occur along a horizontal frontage band. The locator includes dark intervals and does not imply a continuous emitting region.",
+                  "rect": [
+                    429,
+                    94,
+                    546,
+                    122
+                  ],
+                  "target_relation": "on_candidate_facade"
+                }
+              ]
+            },
+            "nondetection_regions": {
+              "identical_json": false,
+              "left": [
+                {
+                  "reason": "No flame form identified on this visible upper facade band apart from overlaid red labels; veiling, opaque surfaces and unresolved interiors sharply limit this nondetection.",
+                  "rect": [
+                    155,
+                    12,
+                    489,
+                    80
+                  ]
+                }
+              ],
+              "right": [
+                {
+                  "reason": "No distinct luminous flame form is identified in this visible dark frontage patch at the supplied scale. Low contrast, veil and unresolved glazing sharply limit the opportunity; this says nothing about hidden rooms or interior fire.",
+                  "rect": [
+                    150,
+                    184,
+                    313,
+                    239
+                  ]
+                }
+              ]
+            },
+            "overlay_regions": {
+              "identical_json": false,
+              "left": [
+                [
+                  104,
+                  23,
+                  129,
+                  234
+                ],
+                [
+                  135,
+                  58,
+                  562,
+                  81
+                ],
+                [
+                  7,
+                  440,
+                  359,
+                  470
+                ]
+              ],
+              "right": [
+                [
+                  102,
+                  23,
+                  128,
+                  230
+                ],
+                [
+                  131,
+                  56,
+                  558,
+                  81
+                ],
+                [
+                  5,
+                  438,
+                  333,
+                  472
+                ]
+              ]
+            },
+            "smoke_regions": {
+              "identical_json": false,
+              "left": [
+                [
+                  122,
+                  0,
+                  565,
+                  289
+                ]
+              ],
+              "right": [
+                [
+                  128,
+                  73,
+                  554,
+                  296
+                ]
+              ]
+            },
+            "target_rect": {
+              "identical_json": false,
+              "left": [
+                106,
+                0,
+                568,
+                312
+              ],
+              "right": [
+                127,
+                0,
+                616,
+                315
+              ]
+            }
+          }
+        },
+        {
+          "asset_id": "A-0ca71594109e",
+          "axes": {
+            "ambiguous_glow_identified": {
+              "comparison": "same",
+              "left": true,
+              "right": true
+            },
+            "flame_like_identified": {
+              "comparison": "same",
+              "left": false,
+              "right": false
+            },
+            "nondetection_region_identified": {
+              "comparison": "same",
+              "left": true,
+              "right": true
+            },
+            "smoke_status": {
+              "comparison": "same",
+              "left": "visible",
+              "right": "visible"
+            },
+            "target_evaluability": {
+              "comparison": "same",
+              "left": "limited_detail",
+              "right": "limited_detail"
+            }
+          },
+          "descriptions": {
+            "smoke_reason": {
+              "identical_json": false,
+              "left": "Irregular dark plume/veil crosses and obscures the central lower facade; its emitting opening and depth are not established merely from overlap.",
+              "right": "An uneven gray veil obscures contrast across the lower central background frontage. Its origin and depth cannot be assigned from this overlap."
+            },
+            "target_reason": {
+              "identical_json": false,
+              "left": "Rear banded facade is identifiable, but low native resolution and dark lower-frontage plume prevent reliable opening-level detail.",
+              "right": "The broad background frontage with repeated horizontal window bands is a plausible target. The top is outside the frame and foreground buildings hide much of the left and lower frontage; the lower visible section is dark and veiled. The box is a locator for the apparent span, not a recovered building outline."
+            },
+            "visibility_limits": {
+              "identical_json": false,
+              "left": [
+                "Only328x311 source pixels; enlarged page display cannot restore detail.",
+                "Foreground buildings, lamps and trees block lower areas.",
+                "Dark plume, exposure and small bright patches limit morphology and glass-condition judgments.",
+                "Time/floor labels are source overlays, not independently established scene measurements."
+              ],
+              "right": [
+                "The complete raster is small and fine aperture or luminous morphology is unresolved.",
+                "Foreground buildings, vegetation and street lamps obscure the left and lower background frontage.",
+                "The lower dark frontage is veiled, and small warm patches overlap foreground features or ambiguous depth.",
+                "Source-added numerals and credit remain visible and can bias interpretation; their asserted meanings are not authenticated."
+              ]
+            }
+          },
+          "regions_without_forced_matching": {
+            "luminous_features": {
+              "identical_json": false,
+              "left": [
+                {
+                  "alternatives": [
+                    "Unresolved flame and smoke scattering.",
+                    "Reflection or illuminated material."
+                  ],
+                  "appearance": "ambiguous_glow",
+                  "reason": "Prominent orange/yellow patch in the lower facade band; projected morphology is too small/smooth to distinguish a flame tongue securely.",
+                  "rect": [
+                    115,
+                    248,
+                    139,
+                    267
+                  ],
+                  "target_relation": "on_candidate_facade"
+                },
+                {
+                  "alternatives": [
+                    "Unresolved flame or illuminated material.",
+                    "Reflection and mixed foreground/background pixels."
+                  ],
+                  "appearance": "ambiguous_glow",
+                  "reason": "Several separated orange patches lie behind foreground lamps; locator includes dark intervals and is not continuous burning.",
+                  "rect": [
+                    144,
+                    249,
+                    220,
+                    269
+                  ],
+                  "target_relation": "on_candidate_facade"
+                }
+              ],
+              "right": [
+                {
+                  "alternatives": [
+                    "reflection or illuminated material",
+                    "saturated blurred light",
+                    "foreground or depth superposition"
+                  ],
+                  "appearance": "ambiguous_glow",
+                  "reason": "Small bright orange-white patch near the low visible frontage has an indistinct outline; the available pixels do not securely resolve flame morphology or projected depth.",
+                  "rect": [
+                    117,
+                    250,
+                    140,
+                    267
+                  ],
+                  "target_relation": "uncertain"
+                },
+                {
+                  "alternatives": [
+                    "foreground lamp or reflection",
+                    "illuminated material",
+                    "blur and compression"
+                  ],
+                  "appearance": "ambiguous_glow",
+                  "reason": "A faint orange band is near a foreground lamp assembly and the dark lower frontage. Their overlap prevents confident attribution of each bright element.",
+                  "rect": [
+                    140,
+                    252,
+                    184,
+                    269
+                  ],
+                  "target_relation": "uncertain"
+                },
+                {
+                  "alternatives": [
+                    "reflected light",
+                    "illuminated material",
+                    "unresolved depth and pixel mixing"
+                  ],
+                  "appearance": "ambiguous_glow",
+                  "reason": "An isolated dull orange patch appears on the low dark region with no resolved tongue-like structure.",
+                  "rect": [
+                    204,
+                    250,
+                    223,
+                    269
+                  ],
+                  "target_relation": "uncertain"
+                }
+              ]
+            },
+            "nondetection_regions": {
+              "identical_json": false,
+              "left": [
+                {
+                  "reason": "No comparable flame morphology identified in the visible upper horizontal bands; limited pixels and glazing mean this is not evidence of no interior fire.",
+                  "rect": [
+                    149,
+                    25,
+                    290,
+                    166
+                  ]
+                }
+              ],
+              "right": [
+                {
+                  "reason": "No flame form is identified in the visible upper horizontal window bands. Small native dimensions, color cast, glazing and limited contrast restrict detection; no interior absence or lower-frontage absence follows.",
+                  "rect": [
+                    151,
+                    15,
+                    290,
+                    142
+                  ]
+                }
+              ]
+            },
+            "overlay_regions": {
+              "identical_json": false,
+              "left": [
+                [
+                  4,
+                  1,
+                  142,
+                  22
+                ],
+                [
+                  3,
+                  77,
+                  285,
+                  100
+                ],
+                [
+                  298,
+                  54,
+                  315,
+                  285
+                ]
+              ],
+              "right": [
+                [
+                  4,
+                  0,
+                  145,
+                  24
+                ],
+                [
+                  2,
+                  73,
+                  282,
+                  99
+                ],
+                [
+                  294,
+                  58,
+                  319,
+                  311
+                ]
+              ]
+            },
+            "smoke_regions": {
+              "identical_json": false,
+              "left": [
+                [
+                  97,
+                  107,
+                  243,
+                  294
+                ]
+              ],
+              "right": [
+                [
+                  103,
+                  144,
+                  298,
+                  293
+                ]
+              ]
+            },
+            "target_rect": {
+              "identical_json": false,
+              "left": [
+                7,
+                0,
+                305,
+                309
+              ],
+              "right": [
+                14,
+                0,
+                300,
+                292
+              ]
+            }
+          }
+        }
+      ],
+      "left_reviewer": "root-batch3",
+      "right_reviewer": "context-limited AI observer /root/fire3_observer"
+    }
+  ],
+  "input_snapshot": {
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch2/summarize.py": "f24bb98a1b988a8eef20ae2095d5ec7fa6819e3520f0516cbca126c733641464",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch3/PAIR-KEY-NOTE.md": "dad716c5bee95ade5269556f2260cfe6659c810f1bbfa11703ad9fbba6717979",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch3/PROTOCOL.md": "ecdd7be9123231e05217c456ebc5ffbaa71c7828802d1212e0ed26a784e559c6",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch3/TILED-IMAGE-ADDENDUM.md": "bede56a07730055dd16e20d6be22e3e1f32667504ee9028346cbb3e4bbebd724",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch3/anonymous-pair-key.json": "5b01f713bd100c8eda211800b29e93704b023dd6f12aaaa7c7f1210fe79da8e1",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch3/assets/run01/images/A-0ca71594109e.jpg": "6e53ada788d77760b78e6cd3294dd9bcfa7e7097cf24c6d1c55e02de118a391b",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch3/assets/run01/images/A-79c9dd7424ec.jpg": "904c3ccb0b6a011c69586bdc3205f148d20ab82c56f21c21fa7701c5e2e6ab68",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch3/compare.py": "593c51aad319739898aa8f0c3c8fc7e802f22904815b81adad36304327f6a6f7",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch3/observer-pair.json": "795eb0b549f5883bce3d749cc85f16189ab577b1a8b792546181b70479ef5982",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch3/root-pair.json": "d802f84a342b81a3386f1c7472ef3e2342a46133da61b7e7ca3bfee7e0b6fd44"
+  },
+  "limitations": [
+    "Qualitative image descriptions, not fire extent, temperature, cause or event counts.",
+    "Raw disagreements and null/unresolved observations are retained without consensus.",
+    "Matching axes or JSON do not establish accuracy, spatial agreement or independent events.",
+    "Reason strings are checked for presence, not substantive observational adequacy.",
+    "Input integrity is not historical authentication or qualified human review."
+  ],
+  "raw_records": [
+    {
+      "assets": [
+        {
+          "asset_id": "A-79c9dd7424ec",
+          "complete_native_image_inspected": true,
+          "dimensions": [
+            695,
+            476
+          ],
+          "image_sha256": "904c3ccb0b6a011c69586bdc3205f148d20ab82c56f21c21fa7701c5e2e6ab68",
+          "luminous_features": [
+            {
+              "alternatives": [
+                "Reflection or illuminated material through veiling.",
+                "Compression and exposure can merge small emitting features."
+              ],
+              "appearance": "ambiguous_glow",
+              "reason": "Several separated red/pale luminous patches align across a facade band; native still does not securely resolve flame tongues throughout this locator.",
+              "rect": [
+                329,
+                90,
+                549,
+                122
+              ],
+              "target_relation": "on_candidate_facade"
+            },
+            {
+              "alternatives": [
+                "Reflection or illuminated material.",
+                "Unresolved flame viewed through haze."
+              ],
+              "appearance": "ambiguous_glow",
+              "reason": "Small bright pale/orange horizontal patch with insufficient morphology to identify emitting gas.",
+              "rect": [
+                278,
+                141,
+                303,
+                161
+              ],
+              "target_relation": "on_candidate_facade"
+            },
+            {
+              "alternatives": [
+                "Foreground reflection or lit fixture.",
+                "Unresolved facade luminosity."
+              ],
+              "appearance": "ambiguous_glow",
+              "reason": "Tiny pale patch near a foreground lamp arm; depth association and shape are insecure.",
+              "rect": [
+                438,
+                167,
+                463,
+                184
+              ],
+              "target_relation": "uncertain"
+            }
+          ],
+          "nondetection_regions": [
+            {
+              "reason": "No flame form identified on this visible upper facade band apart from overlaid red labels; veiling, opaque surfaces and unresolved interiors sharply limit this nondetection.",
+              "rect": [
+                155,
+                12,
+                489,
+                80
+              ]
+            }
+          ],
+          "overlay_regions": [
+            [
+              104,
+              23,
+              129,
+              234
+            ],
+            [
+              135,
+              58,
+              562,
+              81
+            ],
+            [
+              7,
+              440,
+              359,
+              470
+            ]
+          ],
+          "smoke": {
+            "reason": "A broad gray veil reduces facade contrast, but this isolated processed still does not clearly separate smoke from haze/exposure or assign an emitting location.",
+            "regions": [
+              [
+                122,
+                0,
+                565,
+                289
+              ]
+            ],
+            "status": "uncertain"
+          },
+          "target_evaluability": "limited_detail",
+          "target_reason": "Broad rear facade can be localized behind street foreground, but dark veiling and small projected features limit window/morphology detail.",
+          "target_rect": [
+            106,
+            0,
+            568,
+            312
+          ],
+          "visibility_limits": [
+            "Foreground buildings, poles, trees, vehicles and people obscure lower and lateral parts.",
+            "Small and blurred luminous features do not support window counts, emission area or heat.",
+            "Historical clock, assigned floors and camera processing are not independently authenticated.",
+            "No inference about hidden interiors or unseen facades."
+          ]
+        },
+        {
+          "asset_id": "A-0ca71594109e",
+          "complete_native_image_inspected": true,
+          "dimensions": [
+            328,
+            311
+          ],
+          "image_sha256": "6e53ada788d77760b78e6cd3294dd9bcfa7e7097cf24c6d1c55e02de118a391b",
+          "luminous_features": [
+            {
+              "alternatives": [
+                "Unresolved flame and smoke scattering.",
+                "Reflection or illuminated material."
+              ],
+              "appearance": "ambiguous_glow",
+              "reason": "Prominent orange/yellow patch in the lower facade band; projected morphology is too small/smooth to distinguish a flame tongue securely.",
+              "rect": [
+                115,
+                248,
+                139,
+                267
+              ],
+              "target_relation": "on_candidate_facade"
+            },
+            {
+              "alternatives": [
+                "Unresolved flame or illuminated material.",
+                "Reflection and mixed foreground/background pixels."
+              ],
+              "appearance": "ambiguous_glow",
+              "reason": "Several separated orange patches lie behind foreground lamps; locator includes dark intervals and is not continuous burning.",
+              "rect": [
+                144,
+                249,
+                220,
+                269
+              ],
+              "target_relation": "on_candidate_facade"
+            }
+          ],
+          "nondetection_regions": [
+            {
+              "reason": "No comparable flame morphology identified in the visible upper horizontal bands; limited pixels and glazing mean this is not evidence of no interior fire.",
+              "rect": [
+                149,
+                25,
+                290,
+                166
+              ]
+            }
+          ],
+          "overlay_regions": [
+            [
+              4,
+              1,
+              142,
+              22
+            ],
+            [
+              3,
+              77,
+              285,
+              100
+            ],
+            [
+              298,
+              54,
+              315,
+              285
+            ]
+          ],
+          "smoke": {
+            "reason": "Irregular dark plume/veil crosses and obscures the central lower facade; its emitting opening and depth are not established merely from overlap.",
+            "regions": [
+              [
+                97,
+                107,
+                243,
+                294
+              ]
+            ],
+            "status": "visible"
+          },
+          "target_evaluability": "limited_detail",
+          "target_reason": "Rear banded facade is identifiable, but low native resolution and dark lower-frontage plume prevent reliable opening-level detail.",
+          "target_rect": [
+            7,
+            0,
+            305,
+            309
+          ],
+          "visibility_limits": [
+            "Only328x311 source pixels; enlarged page display cannot restore detail.",
+            "Foreground buildings, lamps and trees block lower areas.",
+            "Dark plume, exposure and small bright patches limit morphology and glass-condition judgments.",
+            "Time/floor labels are source overlays, not independently established scene measurements."
+          ]
+        }
+      ],
+      "independence": "Prior-informed AI reader; previously viewed this pair and adjacent captions in the first-look study. This record is newly structured from complete native images before reading the independent observer or new source attributions. Not a human/expert or blind review.",
+      "protocol_sha256": "ecdd7be9123231e05217c456ebc5ffbaa71c7828802d1212e0ed26a784e559c6",
+      "provenance_key_sha256": "5b01f713bd100c8eda211800b29e93704b023dd6f12aaaa7c7f1210fe79da8e1",
+      "reviewer": "root-batch3"
+    },
+    {
+      "assets": [
+        {
+          "asset_id": "A-79c9dd7424ec",
+          "complete_native_image_inspected": true,
+          "dimensions": [
+            695,
+            476
+          ],
+          "image_sha256": "904c3ccb0b6a011c69586bdc3205f148d20ab82c56f21c21fa7701c5e2e6ab68",
+          "luminous_features": [
+            {
+              "alternatives": [
+                "reflection or illuminated material",
+                "saturation and blur",
+                "projected depth not resolved"
+              ],
+              "appearance": "ambiguous_glow",
+              "reason": "Small white and reddish horizontal luminous patch against the central dark frontage; insufficiently resolved for a secure tongue-like morphology.",
+              "rect": [
+                278,
+                143,
+                303,
+                159
+              ],
+              "target_relation": "on_candidate_facade"
+            },
+            {
+              "alternatives": [
+                "reflection or illuminated surfaces",
+                "smoke-filtered light",
+                "blur and compression"
+              ],
+              "appearance": "ambiguous_glow",
+              "reason": "Faint warm vertical patches appear on the dark frontage but do not resolve into definite irregular flame forms.",
+              "rect": [
+                329,
+                94,
+                358,
+                118
+              ],
+              "target_relation": "on_candidate_facade"
+            },
+            {
+              "alternatives": [
+                "reflections or lit material",
+                "saturation and blur",
+                "depth ambiguity behind the apparent frontage"
+              ],
+              "appearance": "ambiguous_glow",
+              "reason": "Several small pale and reddish luminous patches occur along a horizontal frontage band. The locator includes dark intervals and does not imply a continuous emitting region.",
+              "rect": [
+                429,
+                94,
+                546,
+                122
+              ],
+              "target_relation": "on_candidate_facade"
+            }
+          ],
+          "nondetection_regions": [
+            {
+              "reason": "No distinct luminous flame form is identified in this visible dark frontage patch at the supplied scale. Low contrast, veil and unresolved glazing sharply limit the opportunity; this says nothing about hidden rooms or interior fire.",
+              "rect": [
+                150,
+                184,
+                313,
+                239
+              ]
+            }
+          ],
+          "overlay_regions": [
+            [
+              102,
+              23,
+              128,
+              230
+            ],
+            [
+              131,
+              56,
+              558,
+              81
+            ],
+            [
+              5,
+              438,
+              333,
+              472
+            ]
+          ],
+          "smoke": {
+            "reason": "A diffuse gray veil with uneven density crosses the candidate frontage and reduces contrast. Overlap alone does not assign its source or depth.",
+            "regions": [
+              [
+                128,
+                73,
+                554,
+                296
+              ]
+            ],
+            "status": "visible"
+          },
+          "target_evaluability": "limited_detail",
+          "target_reason": "The large dark central frontage is a plausible candidate target, with portions of horizontal and vertical divisions faintly discernible. The image cuts its upper extent; haze and foreground trees, lamps, vehicles and people obstruct much of the lower and right portions. The rectangle locates the visible candidate span and does not reconstruct hidden edges.",
+          "target_rect": [
+            127,
+            0,
+            616,
+            315
+          ],
+          "visibility_limits": [
+            "The central frontage is low contrast and veiled; apertures and luminous morphology are poorly resolved.",
+            "Trees, poles, lamps, vehicles and people cover portions of the lower and right target region.",
+            "A large blurred foreground oval and the bottom credit obscure image content; no hidden target geometry is inferred.",
+            "Bright patches are not calibrated for emission, temperature or depth, and the image is not a camera original authenticated by this review."
+          ]
+        },
+        {
+          "asset_id": "A-0ca71594109e",
+          "complete_native_image_inspected": true,
+          "dimensions": [
+            328,
+            311
+          ],
+          "image_sha256": "6e53ada788d77760b78e6cd3294dd9bcfa7e7097cf24c6d1c55e02de118a391b",
+          "luminous_features": [
+            {
+              "alternatives": [
+                "reflection or illuminated material",
+                "saturated blurred light",
+                "foreground or depth superposition"
+              ],
+              "appearance": "ambiguous_glow",
+              "reason": "Small bright orange-white patch near the low visible frontage has an indistinct outline; the available pixels do not securely resolve flame morphology or projected depth.",
+              "rect": [
+                117,
+                250,
+                140,
+                267
+              ],
+              "target_relation": "uncertain"
+            },
+            {
+              "alternatives": [
+                "foreground lamp or reflection",
+                "illuminated material",
+                "blur and compression"
+              ],
+              "appearance": "ambiguous_glow",
+              "reason": "A faint orange band is near a foreground lamp assembly and the dark lower frontage. Their overlap prevents confident attribution of each bright element.",
+              "rect": [
+                140,
+                252,
+                184,
+                269
+              ],
+              "target_relation": "uncertain"
+            },
+            {
+              "alternatives": [
+                "reflected light",
+                "illuminated material",
+                "unresolved depth and pixel mixing"
+              ],
+              "appearance": "ambiguous_glow",
+              "reason": "An isolated dull orange patch appears on the low dark region with no resolved tongue-like structure.",
+              "rect": [
+                204,
+                250,
+                223,
+                269
+              ],
+              "target_relation": "uncertain"
+            }
+          ],
+          "nondetection_regions": [
+            {
+              "reason": "No flame form is identified in the visible upper horizontal window bands. Small native dimensions, color cast, glazing and limited contrast restrict detection; no interior absence or lower-frontage absence follows.",
+              "rect": [
+                151,
+                15,
+                290,
+                142
+              ]
+            }
+          ],
+          "overlay_regions": [
+            [
+              4,
+              0,
+              145,
+              24
+            ],
+            [
+              2,
+              73,
+              282,
+              99
+            ],
+            [
+              294,
+              58,
+              319,
+              311
+            ]
+          ],
+          "smoke": {
+            "reason": "An uneven gray veil obscures contrast across the lower central background frontage. Its origin and depth cannot be assigned from this overlap.",
+            "regions": [
+              [
+                103,
+                144,
+                298,
+                293
+              ]
+            ],
+            "status": "visible"
+          },
+          "target_evaluability": "limited_detail",
+          "target_reason": "The broad background frontage with repeated horizontal window bands is a plausible target. The top is outside the frame and foreground buildings hide much of the left and lower frontage; the lower visible section is dark and veiled. The box is a locator for the apparent span, not a recovered building outline.",
+          "target_rect": [
+            14,
+            0,
+            300,
+            292
+          ],
+          "visibility_limits": [
+            "The complete raster is small and fine aperture or luminous morphology is unresolved.",
+            "Foreground buildings, vegetation and street lamps obscure the left and lower background frontage.",
+            "The lower dark frontage is veiled, and small warm patches overlap foreground features or ambiguous depth.",
+            "Source-added numerals and credit remain visible and can bias interpretation; their asserted meanings are not authenticated."
+          ]
+        }
+      ],
+      "independence": "Viewed both complete native JPEGs at original dimensions after saving observer-controls.md. General WTC 7 knowledge and visible source-added markings prevent full blindness. No root labels, first-look record, captions, source-attribution review, or other observer records were read. Not a qualified human forensic review. Pair uses the prospectively declared anonymous-pair-key.json namespace.",
+      "protocol_sha256": "ecdd7be9123231e05217c456ebc5ffbaa71c7828802d1212e0ed26a784e559c6",
+      "provenance_key_sha256": "5b01f713bd100c8eda211800b29e93704b023dd6f12aaaa7c7f1210fe79da8e1",
+      "reviewer": "context-limited AI observer /root/fire3_observer"
+    }
+  ],
+  "reuse": {
+    "single_source_replacement": [
+      "len(data[\"assets\"]) == 13",
+      "len(data[\"assets\"]) == len(SAMPLE)"
+    ],
+    "source": "../fire-coverage-batch2/summarize.py"
+  },
+  "sample_asset_ids": [
+    "A-79c9dd7424ec",
+    "A-0ca71594109e"
+  ],
+  "schema_version": 2,
+  "scope": "pair",
+  "source_hashes": {
+    "batch2_code_sha256": "f24bb98a1b988a8eef20ae2095d5ec7fa6819e3520f0516cbca126c733641464",
+    "code_sha256": "593c51aad319739898aa8f0c3c8fc7e802f22904815b81adad36304327f6a6f7",
+    "images": [
+      {
+        "asset_id": "A-79c9dd7424ec",
+        "bytes": 149499,
+        "dimensions": [
+          695,
+          476
+        ],
+        "format": "JPEG",
+        "path": "assets/run01/images/A-79c9dd7424ec.jpg",
+        "sha256": "904c3ccb0b6a011c69586bdc3205f148d20ab82c56f21c21fa7701c5e2e6ab68"
+      },
+      {
+        "asset_id": "A-0ca71594109e",
+        "bytes": 58899,
+        "dimensions": [
+          328,
+          311
+        ],
+        "format": "JPEG",
+        "path": "assets/run01/images/A-0ca71594109e.jpg",
+        "sha256": "6e53ada788d77760b78e6cd3294dd9bcfa7e7097cf24c6d1c55e02de118a391b"
+      }
+    ],
+    "labels": [
+      {
+        "path": "root-pair.json",
+        "reviewer": "root-batch3",
+        "sha256": "d802f84a342b81a3386f1c7472ef3e2342a46133da61b7e7ca3bfee7e0b6fd44"
+      },
+      {
+        "path": "observer-pair.json",
+        "reviewer": "context-limited AI observer /root/fire3_observer",
+        "sha256": "795eb0b549f5883bce3d749cc85f16189ab577b1a8b792546181b70479ef5982"
+      }
+    ],
+    "protocol_sha256": "ecdd7be9123231e05217c456ebc5ffbaa71c7828802d1212e0ed26a784e559c6",
+    "provenance_key_sha256": "5b01f713bd100c8eda211800b29e93704b023dd6f12aaaa7c7f1210fe79da8e1"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "cbs-vince-acquisition-v1",
+  "date_utc": "2026-09-28",
+  "time_after_transfers_utc": "2026-09-28 14:17:52 UTC",
+  "protocol_sha256": "5dbaca2b2329db7bc85f67fc0995adf5fd15b8fe3fd0c4b0e50f445179dd35bc",
+  "metadata_refresh_sha256": "476d65df2849a72ef85ce29daffd1f1961bd8819c5dc7c616bbba34ce316ee82",
+  "retrieval": {
+    "tool": "google_drive_fetch",
+    "download_raw_file": true,
+    "include_base64": false,
+    "materialization": "Returned top-level file_uri object download_url, supplied through non-echoing curl stdin. Temporary bearer URLs are deliberately not preserved.",
+    "curl_version": "8.7.1",
+    "options": ["--config -", "--proto =https", "--proto-redir =https", "--location", "--fail", "--silent", "--show-error", "--max-time 55", "--connect-timeout 15"],
+    "output_policy": "Separate explicit attempt paths; absence checked before invocation; no live transfer restarted.",
+    "provider_checksum": null,
+    "checksum_limit": "No provider checksum was supplied in the normalized metadata/fetch responses. Local hashes establish received-byte identity, not historical authenticity."
+  },
+  "items": [
+    {
+      "clip_number": 1,
+      "provider_id": "1zQnZPWXQlFkdOzARax4A0js3wbhNQe6U",
+      "title": "Vince Demetri Clip 1.avi",
+      "mime_type": "video/avi",
+      "request_url": "https://drive.google.com/file/d/1zQnZPWXQlFkdOzARax4A0js3wbhNQe6U/view?usp=drivesdk",
+      "catalogue_and_fetch_bytes": 52084896,
+      "max_filesize": 53133472,
+      "selected_attempt": 1,
+      "attempts": [{"attempt": 1, "path": "raw/clip1-attempt1.avi", "exit_code": 0, "http_code": 200, "bytes": 52084896, "transfer_seconds": 27.121694, "content_type": "video/avi", "sha256": "5e5be4b275d8277e72a6243c1130226c257a1a6918bd9d8e29d1de4306a94982", "stderr": "raw/clip1-attempt1.stderr", "stderr_bytes": 0, "terminal_tool_chunk": "91da7d", "disposition": "complete_received_copy"}]
+    },
+    {
+      "clip_number": 2,
+      "provider_id": "10wNZf8XR9qFjSHitJrHdCF6Ioo72qazm",
+      "title": "Vince Demetri Clip 2.avi",
+      "mime_type": "video/avi",
+      "request_url": "https://drive.google.com/file/d/10wNZf8XR9qFjSHitJrHdCF6Ioo72qazm/view?usp=drivesdk",
+      "catalogue_and_fetch_bytes": 100684560,
+      "max_filesize": 101733136,
+      "selected_attempt": 2,
+      "attempts": [
+        {"attempt": 1, "path": "raw/clip2-attempt1.avi", "exit_code": 28, "http_code": 200, "bytes": 99294428, "transfer_seconds": 54.999149, "content_type": "video/avi", "sha256": "2b43fee8db077c918b0a5b5e138bf1e795fda0a80d5318aceba00e6016167d38", "stderr": "raw/clip2-attempt1.stderr", "stderr_bytes": 102, "stderr_sha256": "4e7025fc1c28b0d0c2449c9610cfb21e09be495ce5c5dfc86c2b1b94b795f245", "terminal_tool_chunk": "787b3d", "disposition": "preserved_partial_timeout_not_admitted"},
+        {"attempt": 2, "path": "raw/clip2-attempt2.avi", "exit_code": 0, "http_code": 200, "bytes": 100684560, "transfer_seconds": 36.286948, "content_type": "video/avi", "sha256": "78b141b40008609bdec1a94b042732bb85477ec50633d805d6887eb77dbb3a42", "stderr": "raw/clip2-attempt2.stderr", "stderr_bytes": 0, "terminal_tool_chunk": "00e2d4", "disposition": "complete_received_copy"}
+      ]
+    }
+  ],
+  "limitations": ["Public-source candidate access copies; no original-camera custody authentication.", "No candidate images viewed or decoded during acquisition.", "Titles, sizes and provider IDs agreed with the refreshed metadata; this does not establish a scene match.", "Clips3-8 not acquired in this stage."]
+}

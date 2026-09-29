@@ -1,0 +1,457 @@
+"""Independent citation review without promoting literature claims to facts."""
+from __future__ import annotations
+
+import hashlib
+import json
+import os
+from pathlib import Path
+import tempfile
+from typing import Any
+
+from research_machine.application.report_language import report_overclaim_terms
+from research_machine.domain.errors import ValidationError
+from research_machine.literature.extraction import validate_extraction_boundary
+from research_machine.literature.hashes import require_sha256
+from research_machine.literature.json_loading import load_json_object
+from research_machine.literature.passages import validate_passage_verification_boundary
+from research_machine.literature.snapshot import _text
+
+
+_VERDICTS = {"supported", "partially_supported", "unsupported", "unclear"}
+_EXTRACTION_RECORD_FIELDS = {
+    "extraction_id",
+    "study_id",
+    "claim_text",
+    "evidence_location",
+    "epistemic_layer",
+    "result_direction",
+    "uncertainty",
+    "notes",
+}
+_LEGACY_SOURCE_ANCHOR = "legacy_missing"
+_PASSAGE_MACHINE_VERIFICATION = "exact_utf8_quote_found_in_retained_source_bytes"
+_PASSAGE_RECEIPT_FIELDS = {
+    "passage_verification_sha256",
+    "evidence_quote_sha256",
+    "quote_utf8_byte_count",
+    "quote_occurrence_count",
+    "machine_verification",
+}
+def _canonical_text(value: Any, field: str) -> str:
+    text = _text(value, field)
+    if text != text.strip():
+        raise ValidationError(f"{field} must be canonical without surrounding whitespace")
+    return text
+
+
+def _bounded_citation_text(value: Any, field: str) -> str:
+    text = _canonical_text(value, field)
+    if report_overclaim_terms(text):
+        raise ValidationError(
+            f"{field} uses citation-verification prohibited overclaiming language; "
+            "describe the citation check and bounded verdict without claiming "
+            "proof, confirmation, validation, or explanation"
+        )
+    return text
+
+
+def _source_anchor(value: Any, field: str) -> str:
+    if value == _LEGACY_SOURCE_ANCHOR:
+        return _LEGACY_SOURCE_ANCHOR
+    return require_sha256(value, field)
+
+
+def _extraction_claim_payload_sha256(
+    source_id: str,
+    record: dict[str, Any],
+    source_retained_file_sha256: str = _LEGACY_SOURCE_ANCHOR,
+) -> str:
+    payload = {
+        "source_id": source_id,
+        "extraction_id": record["extraction_id"],
+        "study_id": record["study_id"],
+        "claim_text": record["claim_text"],
+        "evidence_location": record["evidence_location"],
+        "epistemic_layer": record["epistemic_layer"],
+        "result_direction": record["result_direction"],
+        "uncertainty": record["uncertainty"],
+        "notes": record["notes"],
+    }
+    if source_retained_file_sha256 != _LEGACY_SOURCE_ANCHOR:
+        payload["source_retained_file_sha256"] = source_retained_file_sha256
+    encoded = json.dumps(
+        payload, sort_keys=True, separators=(",", ":"), ensure_ascii=False, allow_nan=False
+    ).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def _validate_passage_receipt(
+    value: Any,
+    field: str = "passage_verification",
+) -> dict[str, Any]:
+    if not isinstance(value, dict) or set(value) != _PASSAGE_RECEIPT_FIELDS:
+        raise ValidationError(f"{field} fields are invalid")
+    result: dict[str, Any] = {
+        "passage_verification_sha256": require_sha256(
+            value.get("passage_verification_sha256"),
+            f"{field} passage_verification_sha256",
+        ),
+        "evidence_quote_sha256": require_sha256(
+            value.get("evidence_quote_sha256"),
+            f"{field} evidence_quote_sha256",
+        ),
+        "machine_verification": value.get("machine_verification"),
+    }
+    if result["machine_verification"] != _PASSAGE_MACHINE_VERIFICATION:
+        raise ValidationError(f"{field} machine_verification is invalid")
+    for key in ("quote_utf8_byte_count", "quote_occurrence_count"):
+        count = value.get(key)
+        if isinstance(count, bool) or not isinstance(count, int) or count < 1:
+            raise ValidationError(f"{field} {key} is invalid")
+        result[key] = count
+    return result
+
+
+def validate_citation_verification_boundary(
+    verification: dict[str, Any],
+    assessments: list[dict[str, Any]],
+    *,
+    require_clean_verdicts: bool = False,
+    require_assessment_contract: bool = False,
+) -> None:
+    """Replay citation-review authority, independence, status, and counts."""
+    if (
+        not isinstance(verification, dict)
+        or verification.get("citation_verification_version") != 1
+    ):
+        raise ValidationError("citation verification version is invalid")
+    require_sha256(
+        verification.get("extraction_sha256"),
+        "citation verification extraction_sha256",
+    )
+    _canonical_text(verification.get("snapshot_id"), "citation verification snapshot_id")
+    extraction_reviewer = _canonical_text(
+        verification.get("extraction_reviewer"),
+        "citation verification extraction_reviewer",
+    )
+    citation_reviewer = _canonical_text(
+        verification.get("citation_reviewer"),
+        "citation verification citation_reviewer",
+    )
+    if extraction_reviewer.casefold() == citation_reviewer.casefold():
+        raise ValidationError("citation verification reviewers must be independent")
+    if verification.get("independent_review") is not True:
+        raise ValidationError("citation verification must retain independent-review status")
+    if verification.get("scientific_evidence_eligible") is not False:
+        raise ValidationError("citation verification must remain scientifically ineligible")
+    if verification.get("conclusion_authorized") is not False:
+        raise ValidationError("citation verification must not authorize conclusions")
+    if verification.get("publication_authorized") is not False:
+        raise ValidationError("citation verification must not authorize publication claims")
+    if verification.get("reviewer_identity_authenticated", False) is not False:
+        raise ValidationError(
+            "citation verification must not authenticate reviewer identity"
+        )
+    limitations = verification.get("limitations")
+    if not isinstance(limitations, list) or not limitations:
+        raise ValidationError("citation verification requires retained boundary limitations")
+    for index, limitation in enumerate(limitations):
+        _bounded_citation_text(
+            limitation,
+            f"citation verification limitation {index + 1}",
+        )
+    if (
+        not isinstance(assessments, list)
+        or not assessments
+        or verification.get("assessments") != assessments
+    ):
+        raise ValidationError("citation verification assessments must be retained")
+
+    counts: dict[str, int] = {verdict: 0 for verdict in sorted(_VERDICTS)}
+    for item in assessments:
+        verdict = item.get("verdict") if isinstance(item, dict) else None
+        if verdict not in _VERDICTS:
+            raise ValidationError("citation assessment verdict is invalid")
+        counts[verdict] += 1
+    if verification.get("verdict_counts") != counts:
+        raise ValidationError(
+            "citation verification verdict_counts do not replay from assessments"
+        )
+    expected_status = (
+        "review_required"
+        if counts["unsupported"] or counts["unclear"]
+        else "citation_review_recorded"
+    )
+    if verification.get("status") != expected_status:
+        raise ValidationError("citation verification status does not replay from verdicts")
+    if require_clean_verdicts and (counts["unsupported"] or counts["unclear"]):
+        raise ValidationError(
+            "downstream review requires citation-reviewed claims without unsupported or unclear verdicts"
+        )
+    if require_assessment_contract:
+        seen_extraction_ids: set[str] = set()
+        required_keys = {
+            "extraction_id",
+            "source_id",
+            "source_retained_file_sha256",
+            "study_id",
+            "claim_text",
+            "extracted_evidence_location",
+            "extraction_claim_sha256",
+            "verdict",
+            "checked_location",
+            "rationale",
+        }
+        optional_keys = {"passage_verification"}
+        for item in assessments:
+            if (
+                not isinstance(item, dict)
+                or not required_keys <= set(item) <= required_keys | optional_keys
+            ):
+                raise ValidationError(
+                    "citation assessment fields do not match the documented contract"
+                )
+            extraction_id = _canonical_text(
+                item.get("extraction_id"), "citation extraction_id"
+            )
+            if extraction_id in seen_extraction_ids:
+                raise ValidationError(
+                    "citation assessments contain duplicate extraction_id"
+                )
+            seen_extraction_ids.add(extraction_id)
+            _canonical_text(item.get("source_id"), "citation source_id")
+            _source_anchor(
+                item.get("source_retained_file_sha256"),
+                "citation source_retained_file_sha256",
+            )
+            _canonical_text(item.get("study_id"), "citation study_id")
+            _canonical_text(item.get("claim_text"), "citation claim_text")
+            _canonical_text(
+                item.get("extracted_evidence_location"),
+                "citation extracted_evidence_location",
+            )
+            require_sha256(
+                item.get("extraction_claim_sha256"),
+                "citation extraction_claim_sha256",
+            )
+            _canonical_text(item.get("checked_location"), "checked_location")
+            _bounded_citation_text(item.get("rationale"), "citation rationale")
+            if "passage_verification" in item:
+                _validate_passage_receipt(
+                    item.get("passage_verification"),
+                    "citation passage_verification",
+                )
+
+
+def create_citation_verification(
+    extraction_path: Path,
+    expected_sha256: str,
+    review: dict[str, Any],
+    output: Path,
+    passage_verification_path: Path | None = None,
+    expected_passage_verification_sha256: str | None = None,
+) -> dict[str, Any]:
+    """Record an independent, exhaustive review of extracted source claims."""
+    expected_sha256 = require_sha256(expected_sha256, "expected_extraction_sha256")
+    extraction, extraction_digest = load_json_object(extraction_path, "extraction")
+    if extraction_digest != expected_sha256:
+        raise ValidationError("citation verification extraction does not match the expected SHA-256")
+    if (not isinstance(extraction, dict) or extraction.get("extraction_version") != 1
+            or extraction.get("status") != "extraction_recorded"):
+        raise ValidationError("citation verification requires a completed version 1 extraction")
+
+    extractor = _canonical_text(extraction.get("reviewer"), "extraction reviewer")
+    records: dict[str, dict[str, str]] = {}
+    source_reviews = extraction.get("source_reviews")
+    if not isinstance(source_reviews, list):
+        raise ValidationError("extraction source_reviews must be an array")
+    for source_review in source_reviews:
+        if not isinstance(source_review, dict):
+            raise ValidationError("extraction source review must be an object")
+        source_id = _canonical_text(source_review.get("source_id"), "extraction source_id")
+        source_retained_file_sha256 = _source_anchor(
+            source_review.get(
+                "source_retained_file_sha256", _LEGACY_SOURCE_ANCHOR
+            ),
+            "extraction source_retained_file_sha256",
+        )
+        source_records = source_review.get("records")
+        if not isinstance(source_records, list):
+            raise ValidationError("extraction records must be an array")
+        for record in source_records:
+            if not isinstance(record, dict):
+                raise ValidationError("extraction record must be an object")
+            if set(record) != _EXTRACTION_RECORD_FIELDS:
+                raise ValidationError("extraction record fields do not match the documented contract")
+            extraction_id = _canonical_text(record.get("extraction_id"), "extraction_id")
+            if extraction_id in records:
+                raise ValidationError("extraction contains duplicate extraction_id")
+            normalized_record = {
+                field: _canonical_text(record.get(field), field)
+                for field in _EXTRACTION_RECORD_FIELDS
+            }
+            records[extraction_id] = {
+                "source_id": source_id,
+                "source_retained_file_sha256": source_retained_file_sha256,
+                "study_id": normalized_record["study_id"],
+                "claim_text": normalized_record["claim_text"],
+                "extracted_evidence_location": normalized_record["evidence_location"],
+                "extraction_claim_sha256": _extraction_claim_payload_sha256(
+                    source_id, normalized_record, source_retained_file_sha256
+                ),
+            }
+    if not records:
+        raise ValidationError("citation verification requires at least one extracted claim")
+    validate_extraction_boundary(
+        extraction,
+        len(records),
+        require_source_review_contract=True,
+    )
+    passage_by_id: dict[str, dict[str, Any]] = {}
+    if (passage_verification_path is None) != (
+        expected_passage_verification_sha256 is None
+    ):
+        raise ValidationError(
+            "passage verification file and expected SHA-256 must be supplied together"
+        )
+    if passage_verification_path is not None:
+        expected_passage_digest = require_sha256(
+            expected_passage_verification_sha256,
+            "expected_passage_verification_sha256",
+        )
+        passage_verification, passage_digest = load_json_object(
+            passage_verification_path, "passage verification"
+        )
+        if passage_digest != expected_passage_digest:
+            raise ValidationError(
+                "citation verification passage record does not match the expected SHA-256"
+            )
+        if (
+            not isinstance(passage_verification, dict)
+            or passage_verification.get("passage_verification_version") != 1
+            or passage_verification.get("status") != "passage_verification_recorded"
+            or passage_verification.get("extraction_sha256") != extraction_digest
+        ):
+            raise ValidationError(
+                "citation verification passage record does not bind the supplied extraction"
+            )
+        passage_claims = passage_verification.get("claims")
+        validate_passage_verification_boundary(passage_verification, passage_claims)
+        if not isinstance(passage_claims, list):
+            raise ValidationError("passage verification claims must be an array")
+        for claim in passage_claims:
+            if not isinstance(claim, dict):
+                raise ValidationError("passage verification claim must be an object")
+            extraction_id = _canonical_text(
+                claim.get("extraction_id"),
+                "passage verification extraction_id",
+            )
+            retained = records.get(extraction_id)
+            if retained is None or extraction_id in passage_by_id:
+                raise ValidationError(
+                    "passage verification does not exactly cover extracted claims"
+                )
+            for field in (
+                "source_id",
+                "source_retained_file_sha256",
+                "study_id",
+                "claim_text",
+                "extracted_evidence_location",
+                "extraction_claim_sha256",
+            ):
+                if claim.get(field) != retained.get(field):
+                    raise ValidationError(
+                        "passage verification claim does not replay from the exact extracted claim"
+                    )
+            passage_by_id[extraction_id] = {
+                "passage_verification_sha256": passage_digest,
+                "evidence_quote_sha256": claim["evidence_quote_sha256"],
+                "quote_utf8_byte_count": claim["quote_utf8_byte_count"],
+                "quote_occurrence_count": claim["quote_occurrence_count"],
+                "machine_verification": claim["machine_verification"],
+            }
+        if set(passage_by_id) != set(records):
+            raise ValidationError(
+                "passage verification must cover exactly all extracted claims"
+            )
+    if not isinstance(review, dict) or set(review) != {"reviewer", "assessments"}:
+        raise ValidationError("citation review requires exactly reviewer and assessments")
+    reviewer = _canonical_text(review["reviewer"], "citation reviewer")
+    if reviewer.casefold() == extractor.casefold():
+        raise ValidationError("citation reviewer must be independent of the extraction reviewer")
+    assessments = review["assessments"]
+    if not isinstance(assessments, list):
+        raise ValidationError("citation assessments must be an array")
+
+    by_id: dict[str, dict[str, Any]] = {}
+    required = {"extraction_id", "verdict", "checked_location", "rationale"}
+    for assessment in assessments:
+        if not isinstance(assessment, dict) or set(assessment) != required:
+            raise ValidationError(
+                "each citation assessment requires exactly extraction_id, verdict, checked_location, and rationale"
+            )
+        extraction_id = _canonical_text(assessment["extraction_id"], "citation extraction_id")
+        if extraction_id not in records:
+            raise ValidationError("citation assessment references an unknown extraction_id")
+        if extraction_id in by_id:
+            raise ValidationError("duplicate citation assessment")
+        verdict = assessment["verdict"]
+        if verdict not in _VERDICTS:
+            raise ValidationError("invalid citation verification verdict")
+        retained_assessment = {
+            "extraction_id": extraction_id,
+            **records[extraction_id],
+            "verdict": verdict,
+            "checked_location": _canonical_text(assessment["checked_location"], "checked_location"),
+            "rationale": _bounded_citation_text(
+                assessment["rationale"], "citation rationale"
+            ),
+        }
+        if passage_by_id:
+            retained_assessment["passage_verification"] = _validate_passage_receipt(
+                passage_by_id[extraction_id],
+                "citation passage_verification",
+            )
+        by_id[extraction_id] = retained_assessment
+    if set(by_id) != set(records):
+        raise ValidationError("citation assessments must cover exactly all extracted claims")
+
+    counts = {verdict: sum(item["verdict"] == verdict for item in by_id.values())
+              for verdict in sorted(_VERDICTS)}
+    requires_review = bool(counts["unsupported"] or counts["unclear"])
+    result = {
+        "citation_verification_version": 1,
+        "extraction_sha256": extraction_digest,
+        "snapshot_id": extraction.get("snapshot_id"),
+        "extraction_reviewer": extractor,
+        "citation_reviewer": reviewer,
+        "independent_review": True,
+        "assessments": [by_id[item] for item in sorted(by_id)],
+        "verdict_counts": counts,
+        "status": "review_required" if requires_review else "citation_review_recorded",
+        "scientific_evidence_eligible": False,
+        "conclusion_authorized": False,
+        "publication_authorized": False,
+        "reviewer_identity_authenticated": False,
+        "limitations": [
+            "The machine binds an independent review to extraction bytes but does not interpret source text or authenticate either reviewer.",
+            "A supported verdict is a reviewer judgment, not proof that a claim is true, unbiased, reproducible, or applicable.",
+            "Risk-of-bias assessment, study-identity reconciliation, and quantitative synthesis remain separate gates.",
+        ],
+    }
+    validate_citation_verification_boundary(
+        result,
+        result["assessments"],
+        require_assessment_contract=True,
+    )
+    root = output.expanduser().resolve()
+    if root.exists():
+        raise ValidationError("citation verification output already exists")
+    root.parent.mkdir(parents=True, exist_ok=True)
+    encoded = (json.dumps(result, sort_keys=True, indent=2, ensure_ascii=False, allow_nan=False) + "\n").encode()
+    with tempfile.TemporaryDirectory(prefix=".citation-verification-", dir=root.parent) as temporary:
+        staging = Path(temporary) / "citation-verification"
+        staging.mkdir()
+        (staging / "citation-verification.json").write_bytes(encoded)
+        os.replace(staging, root)
+    return {"path": str(root), "citation_verification_sha256": hashlib.sha256(encoded).hexdigest(), **result}

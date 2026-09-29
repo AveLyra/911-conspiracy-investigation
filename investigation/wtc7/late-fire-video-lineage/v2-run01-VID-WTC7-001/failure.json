@@ -1,0 +1,79 @@
+{
+  "category": "decode_diagnostic_review",
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-version"
+      ],
+      "returncode": 0,
+      "stderr": "ffmpeg-version.stderr",
+      "stdout": "ffmpeg-version.stdout"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-version"
+      ],
+      "returncode": 0,
+      "stderr": "ffprobe-version.stderr",
+      "stdout": "ffprobe-version.stdout"
+    }
+  ],
+  "derivatives": "Native stored-raster RGB PNG; RGB conversion is uncalibrated. Overviews are 3 columns by 4 rows, max 320x240 LANCZOS thumbnails, without SAR correction.",
+  "exception_type": "CheckError",
+  "grammar_declaration_identity": {
+    "bytes": 2663,
+    "sha256": "8c1f26316c6ace3f68fb06881b9eed465827672bb7d7168aa250275ae8efa723"
+  },
+  "limits": "No historical clock, original custody, original cadence, continuous-event duration, calibrated color/area or causal claim. ffprobe and ffmpeg share decoder libraries. Coarse samples can miss short events. Raw diagnostics remain local-only.",
+  "method": "Two complete decoder passes from file start; exact rational source-PTS bins; first decoded source frame per occupied bin.",
+  "phase": "sources",
+  "pillow_version": "12.3.0",
+  "protocol_identity": {
+    "bytes": 7503,
+    "sha256": "f81d1e7e1d8ae914cd62e182cd6f2db642bd60e19737d204f18d3b97d1e70486"
+  },
+  "python_version": "3.12.14",
+  "requested_source_ids": [
+    "VID-WTC7-001"
+  ],
+  "revision": "v2-single-terminal-empty-token",
+  "script_identity": {
+    "bytes": 20997,
+    "sha256": "890963c2104f53813593b4e09da9b3c5892d2461a2a6a415f06f84842b31d8f9"
+  },
+  "selection_identity": {
+    "bytes": 2574,
+    "sha256": "e5abd641738cbbb7656f2c4d0f70336725247787d8955637082a44401047fdc0"
+  },
+  "selection_source_count": 8,
+  "source_pins_after_failure": {
+    "VID-WTC7-001": {
+      "bytes": 208810910,
+      "sha256": "84da90a48bdd710faf8b0a60c1a23a0927f22184216a1a631cbd77d4243b6730"
+    }
+  },
+  "source_pins_before": {
+    "VID-WTC7-001": {
+      "bytes": 208810910,
+      "sha256": "84da90a48bdd710faf8b0a60c1a23a0927f22184216a1a631cbd77d4243b6730"
+    }
+  },
+  "sources": [],
+  "status": "failed",
+  "tools": {
+    "ffmpeg": {
+      "bytes": 421968,
+      "path": "/opt/homebrew/bin/ffmpeg",
+      "sha256": "7697b094387e2918821fe7480c73f5d44543817096e9d5b5fafe58ecd6912569",
+      "version": "ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "bytes": 351920,
+      "path": "/opt/homebrew/bin/ffprobe",
+      "sha256": "fd670257233c93c88608a62ed8b5ddeeb812bd341dfb39bbe0e1c654b91672ad",
+      "version": "ffprobe version 7.1.1 Copyright (c) 2007-2025 the FFmpeg developers"
+    }
+  }
+}

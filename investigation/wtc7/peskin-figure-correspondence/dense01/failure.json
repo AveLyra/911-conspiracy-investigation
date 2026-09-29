@@ -1,0 +1,111 @@
+{
+  "argv": [
+    "research/sherlock-wtc7-investigation/peskin-figure-correspondence/dense_match.py",
+    "--chunk",
+    "1",
+    "--run",
+    "dense01"
+  ],
+  "commands": [
+    [
+      "/opt/homebrew/bin/ffmpeg",
+      "-nostdin",
+      "-hide_banner",
+      "-loglevel",
+      "info",
+      "-copyts",
+      "-seek_timestamp",
+      "1",
+      "-noaccurate_seek",
+      "-ss",
+      "2508",
+      "-t",
+      "12",
+      "-noautorotate",
+      "-i",
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/fire-originals/peskin/sources/peskin-commons-resumed.webm",
+      "-map",
+      "0:v:0",
+      "-an",
+      "-vf",
+      "select='gte(t,2510)*lt(t,2518)',showinfo",
+      "-noautoscale",
+      "-pix_fmt",
+      "rgb24",
+      "-fps_mode",
+      "passthrough",
+      "-enc_time_base:v",
+      "demux",
+      "-f",
+      "rawvideo",
+      "pipe:1"
+    ],
+    [
+      "/opt/homebrew/bin/ffprobe",
+      "-v",
+      "error",
+      "-read_intervals",
+      "2508%2519",
+      "-select_streams",
+      "v:0",
+      "-show_frames",
+      "-show_entries",
+      "frame=pts,best_effort_timestamp,width,height",
+      "-of",
+      "json",
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/fire-originals/peskin/sources/peskin-commons-resumed.webm"
+    ]
+  ],
+  "compare_to": null,
+  "core_sha256": "06a400fbb378dfa710dd86799792f8f615a40eea19e82c23b9f3e0592a3b64a8",
+  "dense_protocol_sha256": "8a7ac08aa7901c0de5956b617950f9fda35a786b7a9b58a26c7ba54c785413f8",
+  "dependency_pins": {
+    "DENSE-01.md": "8a7ac08aa7901c0de5956b617950f9fda35a786b7a9b58a26c7ba54c785413f8",
+    "DENSE-GATES-01.md": "8d0c5bae4654c99813d0d896989963c2b557e80e87a160cbedc5edcebce3ebda",
+    "METHOD-01.md": "412c7aae4da6010d4323d900182c8419dc314fd64953ed9c2c3878b3bd335e6c",
+    "PROTOCOL.md": "e445a976b664e6d2bd8c619d415cf0c1eb0ccc4866743082231b34f0a0f00537",
+    "controls01/summary.json": "175019b3d873ea8632ea14dd4cec1fd4dc35b6c3f9557dab7503491d4e7ffcc7",
+    "direct_oracle.py": "f1ecbbb6fc4c48c58786d43287ac65cdeb1a3428b93ca0ae5bec6bccf43a4e71",
+    "fixtures/producer-comparison01.json": "db673cc6d6a4fc11fc6026ffa1688ce35fd5934b83fcc7067f556b72b647f136"
+  },
+  "elapsed_seconds": 102.38075166603085,
+  "exception_type": "ValueError",
+  "interval": [
+    2510,
+    2518
+  ],
+  "message": "probe/filter PTS list mismatch",
+  "numpy": "2.3.5",
+  "pillow": "12.3.0",
+  "protocol_sha256": "e445a976b664e6d2bd8c619d415cf0c1eb0ccc4866743082231b34f0a0f00537",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "script_sha256": "8c5c92932c43183d0861e16282f95e7be360a36bd9ee016c639e638ebed82bb1",
+  "source_before": {
+    "bytes": 696711067,
+    "sha256": "0f438006c27e3059e7a5a480d4a7ee5382c5a136945c2a0120e583e3456f324d"
+  },
+  "status": "failed",
+  "storage_before": {
+    "baseline_bytes": 9280524,
+    "slot_bytes": {
+      "dense00": 729,
+      "dense01": 729,
+      "dense02": 0,
+      "dense03": 0,
+      "repro00": 0,
+      "repro01": 0,
+      "repro02": 0,
+      "repro03": 0
+    }
+  },
+  "tools": {
+    "ffmpeg": {
+      "sha256": "7697b094387e2918821fe7480c73f5d44543817096e9d5b5fafe58ecd6912569",
+      "version": "ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "sha256": "fd670257233c93c88608a62ed8b5ddeeb812bd341dfb39bbe0e1c654b91672ad",
+      "version": "ffprobe version 7.1.1 Copyright (c) 2007-2025 the FFmpeg developers"
+    }
+  }
+}

@@ -1,0 +1,4266 @@
+{
+  "comparisons": [
+    {
+      "actual": {
+        "bounds": [
+          "5/2",
+          "7/2"
+        ],
+        "branch_name": "local-0",
+        "branch_names": [
+          "local-0"
+        ],
+        "evaluated_x": [
+          "1",
+          "2"
+        ],
+        "query": [
+          "1",
+          "2"
+        ],
+        "reason": null,
+        "status": "resolved",
+        "support": [
+          [
+            "0",
+            "4"
+          ]
+        ],
+        "y_radius": "1/2"
+      },
+      "case": {
+        "curve": [
+          [
+            [
+              0,
+              3
+            ],
+            [
+              4,
+              3
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          "5/2",
+          "7/2"
+        ],
+        "kind": "local",
+        "name": "flat_y_radius",
+        "query": [
+          1,
+          2
+        ],
+        "radius": "1/2"
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "bounds": [
+          "-1/4",
+          "17/4"
+        ],
+        "branch_name": "local-0",
+        "branch_names": [
+          "local-0"
+        ],
+        "evaluated_x": [
+          "-1/2",
+          "3/2"
+        ],
+        "query": [
+          "-1/2",
+          "3/2"
+        ],
+        "reason": null,
+        "status": "resolved",
+        "support": [
+          [
+            "-2",
+            "2"
+          ]
+        ],
+        "y_radius": "1/4"
+      },
+      "case": {
+        "curve": [
+          [
+            [
+              -2,
+              -3
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          "-1/4",
+          "17/4"
+        ],
+        "kind": "local",
+        "name": "signed_affine_endpoints",
+        "query": [
+          "-1/2",
+          "3/2"
+        ],
+        "radius": "1/4"
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "bounds": [
+          "0",
+          "7"
+        ],
+        "branch_name": "local-0",
+        "branch_names": [
+          "local-0"
+        ],
+        "evaluated_x": [
+          "1/4",
+          "49/100",
+          "1/2",
+          "51/100",
+          "3/4"
+        ],
+        "query": [
+          "1/4",
+          "3/4"
+        ],
+        "reason": null,
+        "status": "resolved",
+        "support": [
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "y_radius": "0"
+      },
+      "case": {
+        "curve": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              "49/100",
+              0
+            ],
+            [
+              "1/2",
+              7
+            ],
+            [
+              "51/100",
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          0,
+          7
+        ],
+        "kind": "local",
+        "name": "narrow_interior_peak",
+        "query": [
+          "1/4",
+          "3/4"
+        ],
+        "radius": 0
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "bounds": [
+          "7",
+          "7"
+        ],
+        "branch_name": "local-0",
+        "branch_names": [
+          "local-0"
+        ],
+        "evaluated_x": [
+          "1/2"
+        ],
+        "query": [
+          "1/2",
+          "1/2"
+        ],
+        "reason": null,
+        "status": "resolved",
+        "support": [
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "y_radius": "0"
+      },
+      "case": {
+        "curve": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              "49/100",
+              0
+            ],
+            [
+              "1/2",
+              7
+            ],
+            [
+              "51/100",
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          7,
+          7
+        ],
+        "kind": "local",
+        "name": "point_at_peak",
+        "query": [
+          "1/2",
+          "1/2"
+        ],
+        "radius": 0
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "bounds": [
+          "-1",
+          "1"
+        ],
+        "branch_name": "local-0",
+        "branch_names": [
+          "local-0"
+        ],
+        "evaluated_x": [
+          "0"
+        ],
+        "query": [
+          "0",
+          "0"
+        ],
+        "reason": null,
+        "status": "resolved",
+        "support": [
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "y_radius": "1"
+      },
+      "case": {
+        "curve": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              "49/100",
+              0
+            ],
+            [
+              "1/2",
+              7
+            ],
+            [
+              "51/100",
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          -1,
+          1
+        ],
+        "kind": "local",
+        "name": "support_edge_with_y",
+        "query": [
+          0,
+          0
+        ],
+        "radius": 1
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "bounds": null,
+        "branch_name": null,
+        "branch_names": [
+          "local-0",
+          "local-1"
+        ],
+        "evaluated_x": [],
+        "query": [
+          "1/2",
+          "5/2"
+        ],
+        "reason": "query-not-fully-supported",
+        "status": "unresolved",
+        "support": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "2",
+            "3"
+          ]
+        ],
+        "y_radius": "0"
+      },
+      "case": {
+        "curve": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        ],
+        "expected_bounds": null,
+        "kind": "local",
+        "name": "crosses_gap",
+        "query": [
+          "1/2",
+          "5/2"
+        ],
+        "radius": 0
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "bounds": [
+          "0",
+          "0"
+        ],
+        "branch_name": "local-0",
+        "branch_names": [
+          "local-0",
+          "local-1"
+        ],
+        "evaluated_x": [
+          "1"
+        ],
+        "query": [
+          "1",
+          "1"
+        ],
+        "reason": null,
+        "status": "resolved",
+        "support": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "2",
+            "3"
+          ]
+        ],
+        "y_radius": "0"
+      },
+      "case": {
+        "curve": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          0,
+          0
+        ],
+        "kind": "local",
+        "name": "closed_support_contact",
+        "query": [
+          1,
+          1
+        ],
+        "radius": 0
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "bounds": null,
+        "branch_name": null,
+        "branch_names": [
+          "local-0",
+          "local-1"
+        ],
+        "evaluated_x": [],
+        "query": [
+          "1",
+          "2"
+        ],
+        "reason": "query-not-fully-supported",
+        "status": "unresolved",
+        "support": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "2",
+            "3"
+          ]
+        ],
+        "y_radius": "0"
+      },
+      "case": {
+        "curve": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        ],
+        "expected_bounds": null,
+        "kind": "local",
+        "name": "gap_between_valid_endpoints",
+        "query": [
+          1,
+          2
+        ],
+        "radius": 0
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "bounds": null,
+        "branch_name": null,
+        "branch_names": [
+          "local-0"
+        ],
+        "evaluated_x": [],
+        "query": [
+          "-1",
+          "1"
+        ],
+        "reason": "query-not-fully-supported",
+        "status": "unresolved",
+        "support": [
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "y_radius": "0"
+      },
+      "case": {
+        "curve": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              "49/100",
+              0
+            ],
+            [
+              "1/2",
+              7
+            ],
+            [
+              "51/100",
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        "expected_bounds": null,
+        "kind": "local",
+        "name": "outside_tail",
+        "query": [
+          -1,
+          1
+        ],
+        "radius": 0
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "bounds": null,
+        "branch_name": null,
+        "branch_names": null,
+        "evaluated_x": [],
+        "query": [
+          "0",
+          "1"
+        ],
+        "reason": "unknown-identity-or-support",
+        "status": "unresolved",
+        "support": null,
+        "y_radius": "0"
+      },
+      "case": {
+        "curve": null,
+        "expected_bounds": null,
+        "kind": "local",
+        "name": "unknown_identity",
+        "query": [
+          0,
+          1
+        ],
+        "radius": 0
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "bounds": [
+          "-3",
+          "-2"
+        ],
+        "branch_name": "local-0",
+        "branch_names": [
+          "local-0"
+        ],
+        "evaluated_x": [
+          "-1",
+          "0"
+        ],
+        "query": [
+          "-1",
+          "0"
+        ],
+        "reason": null,
+        "status": "resolved",
+        "support": [
+          [
+            "-2",
+            "2"
+          ]
+        ],
+        "y_radius": "0"
+      },
+      "case": {
+        "curve": [
+          [
+            [
+              -2,
+              -4
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          -3,
+          -2
+        ],
+        "kind": "local",
+        "name": "negative_ordinates",
+        "query": [
+          -1,
+          0
+        ],
+        "radius": 0
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "bounds": [
+          "3",
+          "3"
+        ],
+        "branch_name": "local-0",
+        "branch_names": [
+          "local-0"
+        ],
+        "evaluated_x": [
+          "0",
+          "4"
+        ],
+        "query": [
+          "0",
+          "4"
+        ],
+        "reason": null,
+        "status": "resolved",
+        "support": [
+          [
+            "0",
+            "4"
+          ]
+        ],
+        "y_radius": "0"
+      },
+      "case": {
+        "curve": [
+          [
+            [
+              0,
+              3
+            ],
+            [
+              4,
+              3
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          3,
+          3
+        ],
+        "kind": "local",
+        "name": "full_closed_support",
+        "query": [
+          0,
+          4
+        ],
+        "radius": 0
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "1",
+          "1"
+        ],
+        "candidate_demand": [
+          "0",
+          "1"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "1",
+          "1"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "1",
+            "u": "1",
+            "v": "1"
+          },
+          "minimum": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 2,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "1",
+          "1"
+        ],
+        "query": [
+          "0",
+          "1"
+        ],
+        "reachable_t": [
+          "0",
+          "1"
+        ],
+        "reference_demand": [
+          "0",
+          "1"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "positive",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "4",
+              "4"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "3",
+              "3"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              -10,
+              4
+            ],
+            [
+              10,
+              4
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          1,
+          1
+        ],
+        "expected_sign": "positive",
+        "kind": "pair",
+        "name": "constant_positive",
+        "query": [
+          0,
+          1
+        ],
+        "radii": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              3
+            ],
+            [
+              10,
+              3
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "-100",
+            "100"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "1",
+          "1"
+        ],
+        "candidate_demand": [
+          "0",
+          "1"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "1",
+          "1"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "1",
+            "u": "1",
+            "v": "1"
+          },
+          "minimum": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 2,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "1",
+          "1"
+        ],
+        "query": [
+          "0",
+          "1"
+        ],
+        "reachable_t": [
+          "0",
+          "1"
+        ],
+        "reference_demand": [
+          "0",
+          "1"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "positive",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "4",
+              "4"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "3",
+              "3"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {
+          "y_offset": [
+            -100,
+            100
+          ]
+        },
+        "candidate": [
+          [
+            [
+              -10,
+              4
+            ],
+            [
+              10,
+              4
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          1,
+          1
+        ],
+        "expected_sign": "positive",
+        "kind": "pair",
+        "name": "common_vertical_offset_cancels",
+        "query": [
+          0,
+          1
+        ],
+        "radii": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              3
+            ],
+            [
+              10,
+              3
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "-2",
+          "4"
+        ],
+        "candidate_demand": [
+          "0",
+          "1"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "2",
+        "centerline_bounds": [
+          "1",
+          "1"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "1",
+            "u": "1",
+            "v": "1"
+          },
+          "minimum": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 2,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "-2",
+          "4"
+        ],
+        "query": [
+          "0",
+          "1"
+        ],
+        "reachable_t": [
+          "0",
+          "1"
+        ],
+        "reference_demand": [
+          "0",
+          "1"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "1",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "unresolved",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "4",
+              "4"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "3",
+              "3"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              -10,
+              4
+            ],
+            [
+              10,
+              4
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          -2,
+          4
+        ],
+        "expected_sign": "unresolved",
+        "kind": "pair",
+        "name": "unequal_local_y",
+        "query": [
+          0,
+          1
+        ],
+        "radii": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              3
+            ],
+            [
+              10,
+              3
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "2"
+          ]
+        },
+        "bounds": [
+          "-6",
+          "-3"
+        ],
+        "candidate_demand": [
+          "0",
+          "1"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "-3",
+          "-3"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "1",
+            "u": "1",
+            "v": "1"
+          },
+          "minimum": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 2,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "-3",
+          "-3"
+        ],
+        "query": [
+          "0",
+          "1"
+        ],
+        "reachable_t": [
+          "0",
+          "1"
+        ],
+        "reference_demand": [
+          "0",
+          "1"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "negative",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "1",
+              "1"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "4",
+              "4"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {
+          "y_scale": [
+            1,
+            2
+          ]
+        },
+        "candidate": [
+          [
+            [
+              -10,
+              1
+            ],
+            [
+              10,
+              1
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          -6,
+          -3
+        ],
+        "expected_sign": "negative",
+        "kind": "pair",
+        "name": "negative_shared_gain",
+        "query": [
+          0,
+          1
+        ],
+        "radii": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              4
+            ],
+            [
+              10,
+              4
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "0",
+          "2"
+        ],
+        "candidate_demand": [
+          "0",
+          "1"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "1",
+          "1"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "1",
+            "u": "1",
+            "v": "1"
+          },
+          "minimum": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 2,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "0",
+          "2"
+        ],
+        "query": [
+          "0",
+          "1"
+        ],
+        "reachable_t": [
+          "0",
+          "1"
+        ],
+        "reference_demand": [
+          "0",
+          "1"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "1",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "unresolved",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "4",
+              "4"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "3",
+              "3"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              -10,
+              4
+            ],
+            [
+              10,
+              4
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          0,
+          2
+        ],
+        "expected_sign": "unresolved",
+        "kind": "pair",
+        "name": "zero_contact_is_not_positive",
+        "query": [
+          0,
+          1
+        ],
+        "radii": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              3
+            ],
+            [
+              10,
+              3
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "-2",
+            "2"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "1",
+          "1"
+        ],
+        "candidate_demand": [
+          "-1",
+          "5"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "1",
+          "1"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "5",
+            "u": "5",
+            "v": "5"
+          },
+          "minimum": {
+            "t": "-1",
+            "u": "-1",
+            "v": "-1"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 2,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "1",
+          "1"
+        ],
+        "query": [
+          "1",
+          "3"
+        ],
+        "reachable_t": [
+          "-1",
+          "5"
+        ],
+        "reference_demand": [
+          "-1",
+          "5"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "positive",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "0",
+              "6"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "-1",
+              "5"
+            ],
+            "query": [
+              "-1",
+              "5"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "-1",
+              "5"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "-1",
+              "5"
+            ],
+            "query": [
+              "-1",
+              "5"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {
+          "x_offset": [
+            -2,
+            2
+          ]
+        },
+        "candidate": [
+          [
+            [
+              -10,
+              -9
+            ],
+            [
+              10,
+              11
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          1,
+          1
+        ],
+        "expected_sign": "positive",
+        "kind": "pair",
+        "name": "equal_slopes_shared_horizontal",
+        "query": [
+          1,
+          3
+        ],
+        "radii": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              -10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "-2",
+          "4"
+        ],
+        "candidate_demand": [
+          "-2",
+          "3"
+        ],
+        "candidate_x_radius": "2",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "-2",
+          "4"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "1",
+            "u": "0",
+            "v": "3"
+          },
+          "minimum": {
+            "t": "0",
+            "u": "1",
+            "v": "-2"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 6,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "-2",
+          "4"
+        ],
+        "query": [
+          "0",
+          "1"
+        ],
+        "reachable_t": [
+          "0",
+          "1"
+        ],
+        "reference_demand": [
+          "-1",
+          "2"
+        ],
+        "reference_x_radius": "1",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "unresolved",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "-1",
+              "4"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "-2",
+              "3"
+            ],
+            "query": [
+              "-2",
+              "3"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "-1",
+              "2"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "-1",
+              "2"
+            ],
+            "query": [
+              "-1",
+              "2"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              -10,
+              -9
+            ],
+            [
+              10,
+              11
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          -2,
+          4
+        ],
+        "expected_sign": "unresolved",
+        "kind": "pair",
+        "name": "equal_slopes_independent_local",
+        "query": [
+          0,
+          1
+        ],
+        "radii": [
+          1,
+          2,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              -10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "0",
+          "5"
+        ],
+        "candidate_demand": [
+          "1/2",
+          "5/2"
+        ],
+        "candidate_x_radius": "1/2",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "0",
+          "5"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "2",
+            "u": "7/4",
+            "v": "5/2"
+          },
+          "minimum": {
+            "t": "1",
+            "u": "5/4",
+            "v": "1/2"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 6,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "0",
+          "5"
+        ],
+        "query": [
+          "1",
+          "2"
+        ],
+        "reachable_t": [
+          "1",
+          "2"
+        ],
+        "reference_demand": [
+          "3/4",
+          "9/4"
+        ],
+        "reference_x_radius": "1/4",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "unresolved",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "5/2",
+              "17/2"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "1/2",
+              "5/2"
+            ],
+            "query": [
+              "1/2",
+              "5/2"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "3/2",
+              "9/2"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "3/4",
+              "9/4"
+            ],
+            "query": [
+              "3/4",
+              "9/4"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              -10,
+              -29
+            ],
+            [
+              10,
+              31
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          0,
+          5
+        ],
+        "expected_sign": "unresolved",
+        "kind": "pair",
+        "name": "different_slopes_unequal_radii",
+        "query": [
+          1,
+          2
+        ],
+        "radii": [
+          "1/4",
+          "1/2",
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              -20
+            ],
+            [
+              10,
+              20
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "1",
+            "2"
+          ],
+          "x_scale": [
+            "1",
+            "2"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "-3",
+          "1"
+        ],
+        "candidate_demand": [
+          "-3",
+          "1"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "-3",
+          "1"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "1",
+            "u": "1",
+            "v": "1"
+          },
+          "minimum": {
+            "t": "-3",
+            "u": "-3",
+            "v": "-3"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 2,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "-3",
+          "1"
+        ],
+        "query": [
+          "-2",
+          "-1"
+        ],
+        "reachable_t": [
+          "-3",
+          "1"
+        ],
+        "reference_demand": [
+          "-3",
+          "1"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "unresolved",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "-3",
+              "1"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "-3",
+              "1"
+            ],
+            "query": [
+              "-3",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "0",
+              "0"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "-3",
+              "1"
+            ],
+            "query": [
+              "-3",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {
+          "x_offset": [
+            1,
+            2
+          ],
+          "x_scale": [
+            1,
+            2
+          ]
+        },
+        "candidate": [
+          [
+            [
+              -10,
+              -10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          -3,
+          1
+        ],
+        "expected_sign": "unresolved",
+        "kind": "pair",
+        "name": "signed_query_scale_offset",
+        "query": [
+          -2,
+          -1
+        ],
+        "radii": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "-1",
+            "1"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "0",
+          "3"
+        ],
+        "candidate_demand": [
+          "0",
+          "3"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "0",
+          "3"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "3",
+            "u": "3",
+            "v": "3"
+          },
+          "minimum": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 2,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "0",
+          "3"
+        ],
+        "query": [
+          "1",
+          "2"
+        ],
+        "reachable_t": [
+          "0",
+          "3"
+        ],
+        "reference_demand": [
+          "0",
+          "3"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "unresolved",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "0",
+              "6"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "3"
+            ],
+            "query": [
+              "0",
+              "3"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "0",
+              "3"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "3"
+            ],
+            "query": [
+              "0",
+              "3"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {
+          "x_offset": [
+            -1,
+            1
+          ]
+        },
+        "candidate": [
+          [
+            [
+              -10,
+              -20
+            ],
+            [
+              10,
+              20
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          0,
+          3
+        ],
+        "expected_sign": "unresolved",
+        "kind": "pair",
+        "name": "horizontal_error_different_slopes",
+        "query": [
+          1,
+          2
+        ],
+        "radii": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              -10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "0",
+          "7"
+        ],
+        "candidate_demand": [
+          "1/4",
+          "3/4"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "0",
+          "7"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "1/2",
+            "u": "1/2",
+            "v": "1/2"
+          },
+          "minimum": {
+            "t": "1/4",
+            "u": "1/4",
+            "v": "1/4"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 8,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "0",
+          "7"
+        ],
+        "query": [
+          "1/4",
+          "3/4"
+        ],
+        "reachable_t": [
+          "1/4",
+          "3/4"
+        ],
+        "reference_demand": [
+          "1/4",
+          "3/4"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "unresolved",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "0",
+              "7"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "1/4",
+              "49/100",
+              "1/2",
+              "51/100",
+              "3/4"
+            ],
+            "query": [
+              "1/4",
+              "3/4"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "0",
+                "1"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "0",
+              "0"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "1/4",
+              "3/4"
+            ],
+            "query": [
+              "1/4",
+              "3/4"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              "49/100",
+              0
+            ],
+            [
+              "1/2",
+              7
+            ],
+            [
+              "51/100",
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          0,
+          7
+        ],
+        "expected_sign": "unresolved",
+        "kind": "pair",
+        "name": "pair_narrow_interior_peak",
+        "query": [
+          "1/4",
+          "3/4"
+        ],
+        "radii": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "0",
+          "7"
+        ],
+        "candidate_demand": [
+          "49/100",
+          "51/100"
+        ],
+        "candidate_x_radius": "1/100",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "0",
+          "7"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "1/2",
+            "u": "1/2",
+            "v": "1/2"
+          },
+          "minimum": {
+            "t": "1/2",
+            "u": "1/2",
+            "v": "49/100"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 6,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "0",
+          "7"
+        ],
+        "query": [
+          "1/2",
+          "1/2"
+        ],
+        "reachable_t": [
+          "1/2",
+          "1/2"
+        ],
+        "reference_demand": [
+          "1/2",
+          "1/2"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "unresolved",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "0",
+              "7"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "49/100",
+              "1/2",
+              "51/100"
+            ],
+            "query": [
+              "49/100",
+              "51/100"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "0",
+                "1"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "0",
+              "0"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "1/2"
+            ],
+            "query": [
+              "1/2",
+              "1/2"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              "49/100",
+              0
+            ],
+            [
+              "1/2",
+              7
+            ],
+            [
+              "51/100",
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          0,
+          7
+        ],
+        "expected_sign": "unresolved",
+        "kind": "pair",
+        "name": "point_query_local_radius_spans_peak",
+        "query": [
+          "1/2",
+          "1/2"
+        ],
+        "radii": [
+          0,
+          "1/100",
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "0",
+          "0"
+        ],
+        "candidate_demand": [
+          "0",
+          "1"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "0",
+          "0"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "1",
+            "u": "1",
+            "v": "1"
+          },
+          "minimum": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 14,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "0",
+          "0"
+        ],
+        "query": [
+          "0",
+          "1"
+        ],
+        "reachable_t": [
+          "0",
+          "1"
+        ],
+        "reference_demand": [
+          "0",
+          "1"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "unresolved",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "0",
+              "7"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "49/100",
+              "1/2",
+              "51/100",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "0",
+                "1"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "0",
+              "7"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "49/100",
+              "1/2",
+              "51/100",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "0",
+                "1"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              "49/100",
+              0
+            ],
+            [
+              "1/2",
+              7
+            ],
+            [
+              "51/100",
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          0,
+          0
+        ],
+        "expected_sign": "unresolved",
+        "kind": "pair",
+        "name": "identical_tent_common_location",
+        "query": [
+          0,
+          1
+        ],
+        "radii": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              "49/100",
+              0
+            ],
+            [
+              "1/2",
+              7
+            ],
+            [
+              "51/100",
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "-1/5",
+          "1/5"
+        ],
+        "candidate_demand": [
+          "4/5",
+          "6/5"
+        ],
+        "candidate_x_radius": "1/10",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "-1/5",
+          "1/5"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "11/10",
+            "u": "6/5",
+            "v": "1"
+          },
+          "minimum": {
+            "t": "9/10",
+            "u": "1",
+            "v": "4/5"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 14,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "-1/5",
+          "1/5"
+        ],
+        "query": [
+          "9/10",
+          "11/10"
+        ],
+        "reachable_t": [
+          "9/10",
+          "11/10"
+        ],
+        "reference_demand": [
+          "4/5",
+          "6/5"
+        ],
+        "reference_x_radius": "1/10",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "unresolved",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "4/5",
+              "1"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "4/5",
+              "1",
+              "6/5"
+            ],
+            "query": [
+              "4/5",
+              "6/5"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "0",
+                "2"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "4/5",
+              "1"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "4/5",
+              "1",
+              "6/5"
+            ],
+            "query": [
+              "4/5",
+              "6/5"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "0",
+                "2"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          "-1/5",
+          "1/5"
+        ],
+        "expected_sign": "unresolved",
+        "kind": "pair",
+        "name": "triangle_local_dependence",
+        "query": [
+          "9/10",
+          "11/10"
+        ],
+        "radii": [
+          "1/10",
+          "1/10",
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1/2",
+            "3/2"
+          ]
+        },
+        "bounds": [
+          "-33/8",
+          "-5/8"
+        ],
+        "candidate_demand": [
+          "0",
+          "1"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "1/2",
+        "centerline_bounds": [
+          "-2",
+          "-2"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "1",
+            "u": "1",
+            "v": "1"
+          },
+          "minimum": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 2,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "-11/4",
+          "-5/4"
+        ],
+        "query": [
+          "0",
+          "1"
+        ],
+        "reachable_t": [
+          "0",
+          "1"
+        ],
+        "reference_demand": [
+          "0",
+          "1"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "1/4",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "negative",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "1",
+              "1"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "3",
+              "3"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {
+          "y_scale": [
+            "1/2",
+            "3/2"
+          ]
+        },
+        "candidate": [
+          [
+            [
+              -10,
+              1
+            ],
+            [
+              10,
+              1
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          "-33/8",
+          "-5/8"
+        ],
+        "expected_sign": "negative",
+        "kind": "pair",
+        "name": "negative_gain_and_local_y",
+        "query": [
+          0,
+          1
+        ],
+        "radii": [
+          0,
+          0,
+          "1/4",
+          "1/2"
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              3
+            ],
+            [
+              10,
+              3
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "1",
+          "1"
+        ],
+        "candidate_demand": [
+          "1",
+          "1"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "1",
+          "1"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "1",
+            "u": "1",
+            "v": "1"
+          },
+          "minimum": {
+            "t": "1",
+            "u": "1",
+            "v": "1"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 1,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "1",
+          "1"
+        ],
+        "query": [
+          "1",
+          "1"
+        ],
+        "reachable_t": [
+          "1",
+          "1"
+        ],
+        "reference_demand": [
+          "1",
+          "1"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "positive",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "2",
+              "2"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "1"
+            ],
+            "query": [
+              "1",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "1",
+                "2"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "1",
+              "1"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "1"
+            ],
+            "query": [
+              "1",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "0",
+                "1"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          1,
+          1
+        ],
+        "expected_sign": "positive",
+        "kind": "pair",
+        "name": "degenerate_joint_support_point",
+        "query": [
+          1,
+          1
+        ],
+        "radii": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": null,
+        "candidate_demand": [
+          "0",
+          "3"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": null,
+        "centerline_extremizers": null,
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 0,
+        "failures": [
+          {
+            "curve": "reference",
+            "query": [
+              "0",
+              "3"
+            ],
+            "reason": "query-not-fully-supported"
+          }
+        ],
+        "ordinate_expanded_bounds": null,
+        "query": [
+          "0",
+          "3"
+        ],
+        "reachable_t": [
+          "0",
+          "3"
+        ],
+        "reference_demand": [
+          "0",
+          "3"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": null,
+        "status": "unresolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "0",
+              "0"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "3"
+            ],
+            "query": [
+              "0",
+              "3"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": null,
+            "branch_name": null,
+            "branch_names": [
+              "reference-0",
+              "reference-1"
+            ],
+            "evaluated_x": [],
+            "query": [
+              "0",
+              "3"
+            ],
+            "reason": "query-not-fully-supported",
+            "status": "unresolved",
+            "support": [
+              [
+                "0",
+                "1"
+              ],
+              [
+                "2",
+                "3"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              -10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ]
+        ],
+        "expected_bounds": null,
+        "expected_sign": null,
+        "kind": "pair",
+        "name": "pair_crosses_gap",
+        "query": [
+          0,
+          3
+        ],
+        "radii": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": null,
+        "candidate_demand": [
+          "1/2",
+          "3/4"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": null,
+        "centerline_extremizers": null,
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 0,
+        "failures": [
+          {
+            "curve": "reference",
+            "query": [
+              "0",
+              "5/4"
+            ],
+            "reason": "query-not-fully-supported"
+          }
+        ],
+        "ordinate_expanded_bounds": null,
+        "query": [
+          "1/2",
+          "3/4"
+        ],
+        "reachable_t": [
+          "1/2",
+          "3/4"
+        ],
+        "reference_demand": [
+          "0",
+          "5/4"
+        ],
+        "reference_x_radius": "1/2",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": null,
+        "status": "unresolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "1",
+              "1"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "1/2",
+              "3/4"
+            ],
+            "query": [
+              "1/2",
+              "3/4"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "0",
+                "2"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": null,
+            "branch_name": null,
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [],
+            "query": [
+              "0",
+              "5/4"
+            ],
+            "reason": "query-not-fully-supported",
+            "status": "unresolved",
+            "support": [
+              [
+                "0",
+                "1"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        ],
+        "expected_bounds": null,
+        "expected_sign": null,
+        "kind": "pair",
+        "name": "radius_reaches_missing_tail",
+        "query": [
+          "1/2",
+          "3/4"
+        ],
+        "radii": [
+          "1/2",
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": null,
+        "candidate_demand": [
+          "0",
+          "1"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": null,
+        "centerline_extremizers": null,
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 0,
+        "failures": [
+          {
+            "curve": "candidate",
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": "unknown-identity-or-support"
+          }
+        ],
+        "ordinate_expanded_bounds": null,
+        "query": [
+          "0",
+          "1"
+        ],
+        "reachable_t": [
+          "0",
+          "1"
+        ],
+        "reference_demand": [
+          "0",
+          "1"
+        ],
+        "reference_x_radius": "0",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": null,
+        "status": "unresolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": null,
+            "branch_name": null,
+            "branch_names": null,
+            "evaluated_x": [],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": "unknown-identity-or-support",
+            "status": "unresolved",
+            "support": null,
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "0",
+              "0"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": null,
+        "expected_bounds": null,
+        "expected_sign": null,
+        "kind": "pair",
+        "name": "candidate_identity_unknown",
+        "query": [
+          0,
+          1
+        ],
+        "radii": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    },
+    {
+      "actual": {
+        "axis": {
+          "calibration_id": "root-oracle-shared-axis",
+          "x_offset": [
+            "0",
+            "0"
+          ],
+          "x_scale": [
+            "1",
+            "1"
+          ],
+          "y_offset": [
+            "0",
+            "0"
+          ],
+          "y_scale": [
+            "1",
+            "1"
+          ]
+        },
+        "bounds": [
+          "-3",
+          "2"
+        ],
+        "candidate_demand": [
+          "0",
+          "1"
+        ],
+        "candidate_x_radius": "0",
+        "candidate_y_radius": "0",
+        "centerline_bounds": [
+          "-3",
+          "2"
+        ],
+        "centerline_extremizers": {
+          "maximum": {
+            "t": "0",
+            "u": "-1",
+            "v": "0"
+          },
+          "minimum": {
+            "t": "1",
+            "u": "2",
+            "v": "1"
+          }
+        },
+        "difference": "candidate-minus-reference",
+        "evaluated_vertices": 4,
+        "failures": [],
+        "ordinate_expanded_bounds": [
+          "-3",
+          "2"
+        ],
+        "query": [
+          "0",
+          "1"
+        ],
+        "reachable_t": [
+          "0",
+          "1"
+        ],
+        "reference_demand": [
+          "-1",
+          "2"
+        ],
+        "reference_x_radius": "1",
+        "reference_y_radius": "0",
+        "scope": "uniform-hull-over-query-and-rectangular-parameter-box; not an integral bound",
+        "shared_y_offset_cancels": true,
+        "sign": "unresolved",
+        "status": "resolved",
+        "support_checks": {
+          "candidate": {
+            "bounds": [
+              "0",
+              "1"
+            ],
+            "branch_name": "candidate-0",
+            "branch_names": [
+              "candidate-0"
+            ],
+            "evaluated_x": [
+              "0",
+              "1"
+            ],
+            "query": [
+              "0",
+              "1"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          },
+          "reference": {
+            "bounds": [
+              "-2",
+              "4"
+            ],
+            "branch_name": "reference-0",
+            "branch_names": [
+              "reference-0"
+            ],
+            "evaluated_x": [
+              "-1",
+              "2"
+            ],
+            "query": [
+              "-1",
+              "2"
+            ],
+            "reason": null,
+            "status": "resolved",
+            "support": [
+              [
+                "-10",
+                "10"
+              ]
+            ],
+            "y_radius": "0"
+          }
+        }
+      },
+      "case": {
+        "axis": {},
+        "candidate": [
+          [
+            [
+              -10,
+              -10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ],
+        "expected_bounds": [
+          -3,
+          2
+        ],
+        "expected_sign": "unresolved",
+        "kind": "pair",
+        "name": "one_zero_horizontal_radius",
+        "query": [
+          0,
+          1
+        ],
+        "radii": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "reference": [
+          [
+            [
+              -10,
+              -20
+            ],
+            [
+              10,
+              20
+            ]
+          ]
+        ]
+      },
+      "matches": true
+    }
+  ],
+  "executable": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "expected_unresolved": 7,
+  "input_pins_after": {
+    "HUMAN-REVIEW-GATE.md": "2e6f34d2e2d6d423c440c8a56b4a3c4796429d59f4d0baf0cf03609341a271ee",
+    "NUMERICAL-PROTOCOL.md": "e03c47c1945b9eb9fd0a040d757d5f5f66bf76791ced8944323d3c92d1120df3",
+    "UNCERTAINTY-STAGE.md": "38d075e25e6c8352a4f3229736accdf12f40c09e54b6d833036052e92790e34a",
+    "compare_uncertainty_oracle.py": "5ea93cc3b460e406ac6a7d226c5092021ef11acd4f2986885796acff7c6ce802",
+    "curve_math.py": "7b5a1a3dc4cd822d0e948bdcb6ec5d2793a23bad0744f56dcfcc47980a1300e1",
+    "curve_uncertainty.py": "e8a01c17388ec62f7d2b71d7a94fda9f9fce7b2515c12344e180cc750c644042",
+    "test_curve_uncertainty.py": "91f1ff251dfbd43e4781c73ff5368ce5d508e21e3da2828a5ba166d27c25c234",
+    "uncertainty_oracle.py": "da9b90eef453975eeddb0c803e64ea9395813a1b54afe2102558b96af0b097b6"
+  },
+  "input_pins_before": {
+    "HUMAN-REVIEW-GATE.md": "2e6f34d2e2d6d423c440c8a56b4a3c4796429d59f4d0baf0cf03609341a271ee",
+    "NUMERICAL-PROTOCOL.md": "e03c47c1945b9eb9fd0a040d757d5f5f66bf76791ced8944323d3c92d1120df3",
+    "UNCERTAINTY-STAGE.md": "38d075e25e6c8352a4f3229736accdf12f40c09e54b6d833036052e92790e34a",
+    "compare_uncertainty_oracle.py": "5ea93cc3b460e406ac6a7d226c5092021ef11acd4f2986885796acff7c6ce802",
+    "curve_math.py": "7b5a1a3dc4cd822d0e948bdcb6ec5d2793a23bad0744f56dcfcc47980a1300e1",
+    "curve_uncertainty.py": "e8a01c17388ec62f7d2b71d7a94fda9f9fce7b2515c12344e180cc750c644042",
+    "test_curve_uncertainty.py": "91f1ff251dfbd43e4781c73ff5368ce5d508e21e3da2828a5ba166d27c25c234",
+    "uncertainty_oracle.py": "da9b90eef453975eeddb0c803e64ea9395813a1b54afe2102558b96af0b097b6"
+  },
+  "local_cases": 12,
+  "pair_cases": 20,
+  "python": "3.12.14",
+  "scope": "synthetic analytical examples; not a second general optimizer or historical measurement",
+  "status": "all-fixed-analytical-expectations-match"
+}

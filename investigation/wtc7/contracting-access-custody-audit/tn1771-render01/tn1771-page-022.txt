@@ -1,0 +1,49 @@
+22 
+ 
+bulk temperature was designated as that of the reference node and appropriate convective 
+heat transfer coefficients were used (see the next section). For the radiative heat 
+exchange, surface effect elements were created with a reference node. An imposed 
+temperature constraint (e.g., furnace heating following the ASTM E119 curve) was 
+specified on this node. A resultant emissivity value was specified while creating these 
+surface effect elements. The resultant emissivity includes proper emissivity values of the 
+receiving and emitting surfaces. View factor effects in the radiation heat transfer were not 
+considered, since the furnace was not explicitly modeled in this study and therefore, view 
+factor values were set to 1 for all elements.  
+ 
+ 
+4.2 Thermophysical Properties, Boundary and Initial Conditions 
+ 
+Thermophysical properties for materials used in the model (e.g., steel, concrete, and 
+SFRM) are taken from Ref. [7] and are listed in both tabular and graphical forms in 
+Appendix A. Note that temperature-dependent values of materials properties were used. 
+The three thermophysical properties that are needed for thermal analysis are: density, 
+specific heat, and thermal conductivity.  
+ 
+Proper boundary conditions are needed to model the heat transfer to/from the floor 
+system both at the exposed and unexposed surfaces (e.g., at the bottom and top surfaces 
+of the slab). For the convective surface effects elements at the exposed surface, a 
+convective heat transfer coefficient is specified. A value of 25 W/m
+2/K has often been 
+used [8]. Lamont et al. [6] used a base value of 23 W/m2/K, with minimum and 
+maximum values of 5 W/m2/K and 30 W/m2/K in their sensitivity analysis. Lamont et al. 
+suggested using a lower value of this heat transfer coefficient when the profiled metal 
+deck is not explicitly modeled. This is because the profiled metal deck is known to 
+separate from the rest of the concrete slab during progression of a fire event, thereby 
+creating a gap that reduces the convective heat transport at the exposed surface of the 
+slab. In this analysis, a value of 15 W/m2/K was used for the convective heat transfer 
+coefficient since the profiled metal deck was not modeled this study.  
+ 
+The effective emissivities for radiative heat exchange at the exposed surface depend on 
+many factors such as flame emissivity, compartment walls, etc. For the surface emissivity 
+of the steel member, a value of 0.7 is used. At the exposed surface of the slab, a value of 
+0.6 is used for effective emissivity as recommended by Lamont [6]. This value is slightly 
+different from that of steel and was used as the metal deck was not explicitly modeled in 
+this study. This is because of the air gap that forms at the interface between metal deck 
+and concrete slab. Lamont found very good agreement between modeled and measured 
+concrete slab temperatures when this value of emissivity was used.  
+ 
+Note that adiabatic boundary conditions were maintained at each end of the model in the 
+longitudinal direction of the truss. Average time-temperature values for different 
+segments on the unexposed surface of the concrete slab as determined from recorded 
+thermocouple data during the two fire tests were used as Dirichlet boundary conditions 
+(time varying) for nodes on the unexposed surface of the concrete slab. Note that this 

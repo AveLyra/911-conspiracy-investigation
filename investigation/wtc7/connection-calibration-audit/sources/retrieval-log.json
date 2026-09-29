@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "retrieval_date_utc": "2026-09-13",
+  "recorded_at_utc": "2026-09-13 02:01:45 UTC",
+  "distinct_query_count": 4,
+  "query_call_count": 5,
+  "query_retry_reason": "Q4 repeated with shorter output after capture truncation; not a new distinct query or scope expansion.",
+  "queries": [
+    {"id": "Q1", "query": "\"Robustness of Composite Floor Systems\" filetype:pdf", "domains": ["nist.gov", "umich.edu", "ascelibrary.org"]},
+    {"id": "Q2", "query": "\"0733-9445\" \"134:11\" \"1717\" PDF", "domains": ["nist.gov", "umich.edu", "ascelibrary.org"]},
+    {"id": "Q3", "query": "\"Sadek\" \"El-Tawil\" \"1717\" \"pdf\" \"2008\" \"Robustness\"", "domains": null},
+    {"id": "Q4", "query": "\"Robustness of Composite Floor Systems\" \"Sadek\" filetype:pdf", "domains": null}
+  ],
+  "routes": [
+    {
+      "url": "https://public.websites.umich.edu/~eltawil/publications.html",
+      "method": "web open",
+      "outcome": "Successful author bibliography",
+      "pin": "Archival Journal Publications, item 50",
+      "finding": "Exact 2008 paper identity; no paper-download link attached to this item"
+    },
+    {
+      "url": "https://websites.umich.edu/~eltawil/journals.html",
+      "method": "web open",
+      "outcome": "Successful parallel author bibliography",
+      "finding": "Same paper bibliographic listing; no exact-paper PDF link observed"
+    },
+    {
+      "url": "https://www.nist.gov/publications/robustness-composite-floor-systems-shear-connections-modeling-simulation-and-evaluation",
+      "method": "web open; also clicked from NIST bibliography",
+      "outcome": "Successful exact-title publication entry",
+      "pin": "Published/Created fields, authors, abstract and citation",
+      "finding": "Title and authors confirmed; portal reports February 19, 2017; no download-paper link observed"
+    },
+    {
+      "url": "https://www.nist.gov/el/mssd/structural-robustness-publications",
+      "method": "web open",
+      "outcome": "Successful NIST bibliography",
+      "pin": "Journal Papers, Sadek/El-Tawil/Lew 2008 entry",
+      "finding": "2008, JSE134(11),1717–1725 and exact DOI; linked title returns to NIST entry, not PDF"
+    },
+    {
+      "url": "https://ascelibrary.org/toc/jsendh/134/11",
+      "method": "publisher page returned in web search index",
+      "outcome": "Indexed issue contents available",
+      "pin": "November 2008 issue; exact-title article entry",
+      "finding": "Publisher identification, volume, issue, pages and 2008 publication"
+    },
+    {
+      "url": "https://ascelibrary.org/doi/10.1061/%28ASCE%290733-9445%282008%29134%3A11%281717%29",
+      "method": "web search index and direct web open",
+      "outcome": "Indexed metadata/abstract available; direct open returned internal error",
+      "pin": "Article title, DOI, volume/issue/pages and publication dates",
+      "finding": "Publisher record identifies November 1, 2008 publication; no full text acquired"
+    },
+    {
+      "url": "https://doi.org/10.1061/(ASCE)0733-9445(2008)134:11(1717)",
+      "method": "web open",
+      "outcome": "Tool reported normalized URL unsafe/non-retryable",
+      "finding": "No source text acquired from DOI resolver; no bypass attempted"
+    },
+    {
+      "url": "https://ascelibrary.org/doi/pdf/10.1061/%28ASCE%290733-9445%282008%29134%3A11%281717%29",
+      "method": "web open",
+      "outcome": "Cache-miss error",
+      "finding": "No PDF acquired"
+    },
+    {
+      "url": "https://ascelibrary.org/doi/pdf/10.1061/%28ASCE%290733-9445%282008%29134%3A11%281717%29",
+      "method": "curl --fail --location --silent --show-error --max-time 45, scoped approved public-source retrieval",
+      "outcome": "HTTP 403; curl exit 56; content type text/html;charset=UTF-8; downloaded size 0",
+      "attempted_basename": "sadek-eltawil-lew-2008-publisher.pdf",
+      "finding": "No PDF file remained in sources directory; error body was not acquired or inspected. HTTP 403 does not by itself establish a paywall."
+    },
+    {
+      "url": "https://ascelibrary.org/doi/epdf/10.1061/%28ASCE%290733-9445%282008%29134%3A11%281717%29",
+      "method": "web open",
+      "outcome": "Cache-miss error",
+      "finding": "No PDF acquired"
+    },
+    {
+      "url": "https://ascelibrary.org/doi/full/10.1061/%28ASCE%290733-9445%282008%29134%3A11%281717%29",
+      "method": "web open",
+      "outcome": "Cache-miss error",
+      "finding": "No full text acquired"
+    }
+  ],
+  "excluded_as_substitutes": [
+    "Different Sadek 2008 moment-connection paper, NIST publication 861512",
+    "Later theses and retrospective studies returned by search",
+    "Third-party request-full-text or abstract-only pages",
+    "NIST TN 1749: root may assess separately, not evidence silently attributed to this 2008 paper"
+  ],
+  "stopping_condition": "Four distinct allocated queries and concrete publisher/author/NIST routes completed; no exact full-text primary copy or directly linked original experiment reference acquired.",
+  "limitations": "This is an access-limited bounded search, not proof that a public full-text copy, physical tests, calibration data or further records do not exist."
+}

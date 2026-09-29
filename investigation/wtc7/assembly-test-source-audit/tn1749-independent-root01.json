@@ -1,0 +1,1005 @@
+{
+  "command": [
+    "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "research/sherlock-wtc7-investigation/assembly-test-source-audit/verify_tn1749.py",
+    "--output",
+    "tn1749-independent-root01.json"
+  ],
+  "controls": [
+    {
+      "fixture": "model11 mean10 -> +10 percent",
+      "name": "positive_signed_error",
+      "status": "PASS"
+    },
+    {
+      "fixture": "model9 mean10 -> -10 percent",
+      "name": "negative_signed_error",
+      "status": "PASS"
+    },
+    {
+      "fixture": "model7 mean7 ->0",
+      "name": "zero_error",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Signed percent lexemes, trailing zero precision",
+      "name": "signed_precision",
+      "status": "PASS"
+    },
+    {
+      "fixture": "All4 vertices of model[9,11], mean[19,21]",
+      "name": "interval_vertex_extrema",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Point10percent misses10.1+-0.05; input11.0/10.0 boxes allow overlap",
+      "name": "rounding_only_overlap",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Same input boxes cannot reach50percent",
+      "name": "genuine_nonoverlap",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Intervals[-1,0] and[0,1] retain endpoint-only intersection",
+      "name": "endpoint_tie",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Zero denominator,zero-crossing mean interval,reversed model interval",
+      "name": "invalid_interval_rejection",
+      "status": "PASS"
+    }
+  ],
+  "pins_after": {
+    "arithmetic_protocol": "88954a1929e80b32fd49f061f426be594997532ade2e59528a87c6bbb4bde78e",
+    "code": "f6955dcda59cb1bb09b911c8aa90f3579ffd41619c79a81faac1ee25d3d1c24f",
+    "source_pdf": "5d7461f298654ffb0c9f8df319298330d155fc2d8155d85abcd5391a4d748caf",
+    "transcription": "638b66018eb46fc2ed1ea07949b053a68964ce29a6a1fbc07b696b3267a05dbe",
+    "unit_protocol": "a06f1bc8f7e4283dbca0c9f54337eba0123045538ca47b411eb3aa8c260d637d"
+  },
+  "pins_before": {
+    "arithmetic_protocol": "88954a1929e80b32fd49f061f426be594997532ade2e59528a87c6bbb4bde78e",
+    "code": "f6955dcda59cb1bb09b911c8aa90f3579ffd41619c79a81faac1ee25d3d1c24f",
+    "source_pdf": "5d7461f298654ffb0c9f8df319298330d155fc2d8155d85abcd5391a4d748caf",
+    "transcription": "638b66018eb46fc2ed1ea07949b053a68964ce29a6a1fbc07b696b3267a05dbe",
+    "unit_protocol": "a06f1bc8f7e4283dbca0c9f54337eba0123045538ca47b411eb3aa8c260d637d"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "result": {
+    "comparison_count": 12,
+    "interpretation": "Exact displayed arithmetic and conditional rounding feasibility only. No observed physical error bars, confidence intervals, sample-size inference or model validation.",
+    "mean_cov_status": "Not recomputed from TN1749 summaries; individual original observations are required. Conducted/figure/table counts remain distinct.",
+    "point_outside_count": 9,
+    "rounding_endpoint_only_count": 0,
+    "rounding_incompatible_count": 0,
+    "rows": [
+      {
+        "computed_deviation_percent": {
+          "decimal_approx": -14.519056261343012,
+          "fraction": "-8000/551"
+        },
+        "computed_minus_printed_percentage_points": {
+          "decimal_approx": 0.0809437386569873,
+          "fraction": "223/2755"
+        },
+        "connection_bolts": 3,
+        "displayed_cov_percent": "11.3",
+        "displayed_deviation_percent": "-14.6",
+        "displayed_experiment_mean": "55.1",
+        "displayed_model": "47.1",
+        "mean_box": [
+          {
+            "decimal_approx": 55.05,
+            "fraction": "1101/20"
+          },
+          {
+            "decimal_approx": 55.15,
+            "fraction": "1103/20"
+          }
+        ],
+        "mean_decimal_places": 1,
+        "model": "detailed",
+        "model_box": [
+          {
+            "decimal_approx": 47.05,
+            "fraction": "941/20"
+          },
+          {
+            "decimal_approx": 47.15,
+            "fraction": "943/20"
+          }
+        ],
+        "model_decimal_places": 1,
+        "point_inside_printed_box": false,
+        "point_on_printed_endpoint": false,
+        "possible_deviation_percent": [
+          {
+            "decimal_approx": -14.687216681776972,
+            "fraction": "-16200/1103"
+          },
+          {
+            "decimal_approx": -14.350590372388737,
+            "fraction": "-15800/1101"
+          }
+        ],
+        "printed_deviation_percent_box": [
+          {
+            "decimal_approx": -14.65,
+            "fraction": "-293/20"
+          },
+          {
+            "decimal_approx": -14.55,
+            "fraction": "-291/20"
+          }
+        ],
+        "rounding_compatible": true,
+        "rounding_endpoint_only": false,
+        "rounding_intersection": [
+          {
+            "decimal_approx": -14.65,
+            "fraction": "-293/20"
+          },
+          {
+            "decimal_approx": -14.55,
+            "fraction": "-291/20"
+          }
+        ],
+        "row": 1,
+        "source_physical_page": 46,
+        "source_printed_page": 28,
+        "table": "3-3",
+        "unit": "kN"
+      },
+      {
+        "computed_deviation_percent": {
+          "decimal_approx": -21.234119782214155,
+          "fraction": "-11700/551"
+        },
+        "computed_minus_printed_percentage_points": {
+          "decimal_approx": 0.06588021778584392,
+          "fraction": "363/5510"
+        },
+        "connection_bolts": 3,
+        "displayed_cov_percent": "11.3",
+        "displayed_deviation_percent": "-21.3",
+        "displayed_experiment_mean": "55.1",
+        "displayed_model": "43.4",
+        "mean_box": [
+          {
+            "decimal_approx": 55.05,
+            "fraction": "1101/20"
+          },
+          {
+            "decimal_approx": 55.15,
+            "fraction": "1103/20"
+          }
+        ],
+        "mean_decimal_places": 1,
+        "model": "reduced",
+        "model_box": [
+          {
+            "decimal_approx": 43.35,
+            "fraction": "867/20"
+          },
+          {
+            "decimal_approx": 43.45,
+            "fraction": "869/20"
+          }
+        ],
+        "model_decimal_places": 1,
+        "point_inside_printed_box": false,
+        "point_on_printed_endpoint": false,
+        "possible_deviation_percent": [
+          {
+            "decimal_approx": -21.396192203082503,
+            "fraction": "-23600/1103"
+          },
+          {
+            "decimal_approx": -21.071752951861942,
+            "fraction": "-23200/1101"
+          }
+        ],
+        "printed_deviation_percent_box": [
+          {
+            "decimal_approx": -21.35,
+            "fraction": "-427/20"
+          },
+          {
+            "decimal_approx": -21.25,
+            "fraction": "-85/4"
+          }
+        ],
+        "rounding_compatible": true,
+        "rounding_endpoint_only": false,
+        "rounding_intersection": [
+          {
+            "decimal_approx": -21.35,
+            "fraction": "-427/20"
+          },
+          {
+            "decimal_approx": -21.25,
+            "fraction": "-85/4"
+          }
+        ],
+        "row": 1,
+        "source_physical_page": 46,
+        "source_printed_page": 28,
+        "table": "3-3",
+        "unit": "kN"
+      },
+      {
+        "computed_deviation_percent": {
+          "decimal_approx": -10.612244897959183,
+          "fraction": "-520/49"
+        },
+        "computed_minus_printed_percentage_points": {
+          "decimal_approx": -0.012244897959183673,
+          "fraction": "-3/245"
+        },
+        "connection_bolts": 4,
+        "displayed_cov_percent": "19.5",
+        "displayed_deviation_percent": "-10.6",
+        "displayed_experiment_mean": "73.5",
+        "displayed_model": "65.7",
+        "mean_box": [
+          {
+            "decimal_approx": 73.45,
+            "fraction": "1469/20"
+          },
+          {
+            "decimal_approx": 73.55,
+            "fraction": "1471/20"
+          }
+        ],
+        "mean_decimal_places": 1,
+        "model": "detailed",
+        "model_box": [
+          {
+            "decimal_approx": 65.65,
+            "fraction": "1313/20"
+          },
+          {
+            "decimal_approx": 65.75,
+            "fraction": "263/4"
+          }
+        ],
+        "model_decimal_places": 1,
+        "point_inside_printed_box": true,
+        "point_on_printed_endpoint": false,
+        "possible_deviation_percent": [
+          {
+            "decimal_approx": -10.740992522093814,
+            "fraction": "-15800/1471"
+          },
+          {
+            "decimal_approx": -10.483321987746766,
+            "fraction": "-15400/1469"
+          }
+        ],
+        "printed_deviation_percent_box": [
+          {
+            "decimal_approx": -10.65,
+            "fraction": "-213/20"
+          },
+          {
+            "decimal_approx": -10.55,
+            "fraction": "-211/20"
+          }
+        ],
+        "rounding_compatible": true,
+        "rounding_endpoint_only": false,
+        "rounding_intersection": [
+          {
+            "decimal_approx": -10.65,
+            "fraction": "-213/20"
+          },
+          {
+            "decimal_approx": -10.55,
+            "fraction": "-211/20"
+          }
+        ],
+        "row": 2,
+        "source_physical_page": 46,
+        "source_printed_page": 28,
+        "table": "3-3",
+        "unit": "kN"
+      },
+      {
+        "computed_deviation_percent": {
+          "decimal_approx": 1.7687074829931972,
+          "fraction": "260/147"
+        },
+        "computed_minus_printed_percentage_points": {
+          "decimal_approx": -0.031292517006802724,
+          "fraction": "-23/735"
+        },
+        "connection_bolts": 4,
+        "displayed_cov_percent": "19.5",
+        "displayed_deviation_percent": "+1.8",
+        "displayed_experiment_mean": "73.5",
+        "displayed_model": "74.8",
+        "mean_box": [
+          {
+            "decimal_approx": 73.45,
+            "fraction": "1469/20"
+          },
+          {
+            "decimal_approx": 73.55,
+            "fraction": "1471/20"
+          }
+        ],
+        "mean_decimal_places": 1,
+        "model": "reduced",
+        "model_box": [
+          {
+            "decimal_approx": 74.75,
+            "fraction": "299/4"
+          },
+          {
+            "decimal_approx": 74.85,
+            "fraction": "1497/20"
+          }
+        ],
+        "model_decimal_places": 1,
+        "point_inside_printed_box": true,
+        "point_on_printed_endpoint": false,
+        "possible_deviation_percent": [
+          {
+            "decimal_approx": 1.6315431679129844,
+            "fraction": "2400/1471"
+          },
+          {
+            "decimal_approx": 1.9060585432266848,
+            "fraction": "2800/1469"
+          }
+        ],
+        "printed_deviation_percent_box": [
+          {
+            "decimal_approx": 1.75,
+            "fraction": "7/4"
+          },
+          {
+            "decimal_approx": 1.85,
+            "fraction": "37/20"
+          }
+        ],
+        "rounding_compatible": true,
+        "rounding_endpoint_only": false,
+        "rounding_intersection": [
+          {
+            "decimal_approx": 1.75,
+            "fraction": "7/4"
+          },
+          {
+            "decimal_approx": 1.85,
+            "fraction": "37/20"
+          }
+        ],
+        "row": 2,
+        "source_physical_page": 46,
+        "source_printed_page": 28,
+        "table": "3-3",
+        "unit": "kN"
+      },
+      {
+        "computed_deviation_percent": {
+          "decimal_approx": -5.912863070539419,
+          "fraction": "-1425/241"
+        },
+        "computed_minus_printed_percentage_points": {
+          "decimal_approx": -0.11286307053941909,
+          "fraction": "-136/1205"
+        },
+        "connection_bolts": 5,
+        "displayed_cov_percent": "7.1",
+        "displayed_deviation_percent": "-5.8",
+        "displayed_experiment_mean": "96.4",
+        "displayed_model": "90.7",
+        "mean_box": [
+          {
+            "decimal_approx": 96.35,
+            "fraction": "1927/20"
+          },
+          {
+            "decimal_approx": 96.45,
+            "fraction": "1929/20"
+          }
+        ],
+        "mean_decimal_places": 1,
+        "model": "detailed",
+        "model_box": [
+          {
+            "decimal_approx": 90.65,
+            "fraction": "1813/20"
+          },
+          {
+            "decimal_approx": 90.75,
+            "fraction": "363/4"
+          }
+        ],
+        "model_decimal_places": 1,
+        "point_inside_printed_box": false,
+        "point_on_printed_endpoint": false,
+        "possible_deviation_percent": [
+          {
+            "decimal_approx": -6.013478486262312,
+            "fraction": "-11600/1929"
+          },
+          {
+            "decimal_approx": -5.812143227815257,
+            "fraction": "-11200/1927"
+          }
+        ],
+        "printed_deviation_percent_box": [
+          {
+            "decimal_approx": -5.85,
+            "fraction": "-117/20"
+          },
+          {
+            "decimal_approx": -5.75,
+            "fraction": "-23/4"
+          }
+        ],
+        "rounding_compatible": true,
+        "rounding_endpoint_only": false,
+        "rounding_intersection": [
+          {
+            "decimal_approx": -5.85,
+            "fraction": "-117/20"
+          },
+          {
+            "decimal_approx": -5.812143227815257,
+            "fraction": "-11200/1927"
+          }
+        ],
+        "row": 3,
+        "source_physical_page": 46,
+        "source_printed_page": 28,
+        "table": "3-3",
+        "unit": "kN"
+      },
+      {
+        "computed_deviation_percent": {
+          "decimal_approx": 10.58091286307054,
+          "fraction": "2550/241"
+        },
+        "computed_minus_printed_percentage_points": {
+          "decimal_approx": -0.019087136929460582,
+          "fraction": "-23/1205"
+        },
+        "connection_bolts": 5,
+        "displayed_cov_percent": "7.1",
+        "displayed_deviation_percent": "+10.6",
+        "displayed_experiment_mean": "96.4",
+        "displayed_model": "106.6",
+        "mean_box": [
+          {
+            "decimal_approx": 96.35,
+            "fraction": "1927/20"
+          },
+          {
+            "decimal_approx": 96.45,
+            "fraction": "1929/20"
+          }
+        ],
+        "mean_decimal_places": 1,
+        "model": "reduced",
+        "model_box": [
+          {
+            "decimal_approx": 106.55,
+            "fraction": "2131/20"
+          },
+          {
+            "decimal_approx": 106.65,
+            "fraction": "2133/20"
+          }
+        ],
+        "model_decimal_places": 1,
+        "point_inside_printed_box": true,
+        "point_on_printed_endpoint": false,
+        "possible_deviation_percent": [
+          {
+            "decimal_approx": 10.471747019180922,
+            "fraction": "20200/1929"
+          },
+          {
+            "decimal_approx": 10.690192008303061,
+            "fraction": "20600/1927"
+          }
+        ],
+        "printed_deviation_percent_box": [
+          {
+            "decimal_approx": 10.55,
+            "fraction": "211/20"
+          },
+          {
+            "decimal_approx": 10.65,
+            "fraction": "213/20"
+          }
+        ],
+        "rounding_compatible": true,
+        "rounding_endpoint_only": false,
+        "rounding_intersection": [
+          {
+            "decimal_approx": 10.55,
+            "fraction": "211/20"
+          },
+          {
+            "decimal_approx": 10.65,
+            "fraction": "213/20"
+          }
+        ],
+        "row": 3,
+        "source_physical_page": 46,
+        "source_printed_page": 28,
+        "table": "3-3",
+        "unit": "kN"
+      },
+      {
+        "computed_deviation_percent": {
+          "decimal_approx": -13.66906474820144,
+          "fraction": "-1900/139"
+        },
+        "computed_minus_printed_percentage_points": {
+          "decimal_approx": 0.13093525179856116,
+          "fraction": "91/695"
+        },
+        "connection_bolts": 3,
+        "displayed_cov_percent": "3.4",
+        "displayed_deviation_percent": "-13.8",
+        "displayed_experiment_mean": "0.139",
+        "displayed_model": "0.120",
+        "mean_box": [
+          {
+            "decimal_approx": 0.1385,
+            "fraction": "277/2000"
+          },
+          {
+            "decimal_approx": 0.1395,
+            "fraction": "279/2000"
+          }
+        ],
+        "mean_decimal_places": 3,
+        "model": "detailed",
+        "model_box": [
+          {
+            "decimal_approx": 0.1195,
+            "fraction": "239/2000"
+          },
+          {
+            "decimal_approx": 0.1205,
+            "fraction": "241/2000"
+          }
+        ],
+        "model_decimal_places": 3,
+        "point_inside_printed_box": false,
+        "point_on_printed_endpoint": false,
+        "possible_deviation_percent": [
+          {
+            "decimal_approx": -14.336917562724015,
+            "fraction": "-4000/279"
+          },
+          {
+            "decimal_approx": -12.99638989169675,
+            "fraction": "-3600/277"
+          }
+        ],
+        "printed_deviation_percent_box": [
+          {
+            "decimal_approx": -13.85,
+            "fraction": "-277/20"
+          },
+          {
+            "decimal_approx": -13.75,
+            "fraction": "-55/4"
+          }
+        ],
+        "rounding_compatible": true,
+        "rounding_endpoint_only": false,
+        "rounding_intersection": [
+          {
+            "decimal_approx": -13.85,
+            "fraction": "-277/20"
+          },
+          {
+            "decimal_approx": -13.75,
+            "fraction": "-55/4"
+          }
+        ],
+        "row": 1,
+        "source_physical_page": 46,
+        "source_printed_page": 28,
+        "table": "3-4",
+        "unit": "rad"
+      },
+      {
+        "computed_deviation_percent": {
+          "decimal_approx": -25.899280575539567,
+          "fraction": "-3600/139"
+        },
+        "computed_minus_printed_percentage_points": {
+          "decimal_approx": 0.20071942446043164,
+          "fraction": "279/1390"
+        },
+        "connection_bolts": 3,
+        "displayed_cov_percent": "3.4",
+        "displayed_deviation_percent": "-26.1",
+        "displayed_experiment_mean": "0.139",
+        "displayed_model": "0.103",
+        "mean_box": [
+          {
+            "decimal_approx": 0.1385,
+            "fraction": "277/2000"
+          },
+          {
+            "decimal_approx": 0.1395,
+            "fraction": "279/2000"
+          }
+        ],
+        "mean_decimal_places": 3,
+        "model": "reduced",
+        "model_box": [
+          {
+            "decimal_approx": 0.1025,
+            "fraction": "41/400"
+          },
+          {
+            "decimal_approx": 0.1035,
+            "fraction": "207/2000"
+          }
+        ],
+        "model_decimal_places": 3,
+        "point_inside_printed_box": false,
+        "point_on_printed_endpoint": false,
+        "possible_deviation_percent": [
+          {
+            "decimal_approx": -26.523297491039425,
+            "fraction": "-7400/279"
+          },
+          {
+            "decimal_approx": -25.270758122743683,
+            "fraction": "-7000/277"
+          }
+        ],
+        "printed_deviation_percent_box": [
+          {
+            "decimal_approx": -26.15,
+            "fraction": "-523/20"
+          },
+          {
+            "decimal_approx": -26.05,
+            "fraction": "-521/20"
+          }
+        ],
+        "rounding_compatible": true,
+        "rounding_endpoint_only": false,
+        "rounding_intersection": [
+          {
+            "decimal_approx": -26.15,
+            "fraction": "-523/20"
+          },
+          {
+            "decimal_approx": -26.05,
+            "fraction": "-521/20"
+          }
+        ],
+        "row": 1,
+        "source_physical_page": 46,
+        "source_printed_page": 28,
+        "table": "3-4",
+        "unit": "rad"
+      },
+      {
+        "computed_deviation_percent": {
+          "decimal_approx": -21.62162162162162,
+          "fraction": "-800/37"
+        },
+        "computed_minus_printed_percentage_points": {
+          "decimal_approx": -0.12162162162162163,
+          "fraction": "-9/74"
+        },
+        "connection_bolts": 4,
+        "displayed_cov_percent": "18.8",
+        "displayed_deviation_percent": "-21.5",
+        "displayed_experiment_mean": "0.111",
+        "displayed_model": "0.087",
+        "mean_box": [
+          {
+            "decimal_approx": 0.1105,
+            "fraction": "221/2000"
+          },
+          {
+            "decimal_approx": 0.1115,
+            "fraction": "223/2000"
+          }
+        ],
+        "mean_decimal_places": 3,
+        "model": "detailed",
+        "model_box": [
+          {
+            "decimal_approx": 0.0865,
+            "fraction": "173/2000"
+          },
+          {
+            "decimal_approx": 0.0875,
+            "fraction": "7/80"
+          }
+        ],
+        "model_decimal_places": 3,
+        "point_inside_printed_box": false,
+        "point_on_printed_endpoint": false,
+        "possible_deviation_percent": [
+          {
+            "decimal_approx": -22.42152466367713,
+            "fraction": "-5000/223"
+          },
+          {
+            "decimal_approx": -20.81447963800905,
+            "fraction": "-4600/221"
+          }
+        ],
+        "printed_deviation_percent_box": [
+          {
+            "decimal_approx": -21.55,
+            "fraction": "-431/20"
+          },
+          {
+            "decimal_approx": -21.45,
+            "fraction": "-429/20"
+          }
+        ],
+        "rounding_compatible": true,
+        "rounding_endpoint_only": false,
+        "rounding_intersection": [
+          {
+            "decimal_approx": -21.55,
+            "fraction": "-431/20"
+          },
+          {
+            "decimal_approx": -21.45,
+            "fraction": "-429/20"
+          }
+        ],
+        "row": 2,
+        "source_physical_page": 46,
+        "source_printed_page": 28,
+        "table": "3-4",
+        "unit": "rad"
+      },
+      {
+        "computed_deviation_percent": {
+          "decimal_approx": -16.216216216216218,
+          "fraction": "-600/37"
+        },
+        "computed_minus_printed_percentage_points": {
+          "decimal_approx": 0.3837837837837838,
+          "fraction": "71/185"
+        },
+        "connection_bolts": 4,
+        "displayed_cov_percent": "18.8",
+        "displayed_deviation_percent": "-16.6",
+        "displayed_experiment_mean": "0.111",
+        "displayed_model": "0.093",
+        "mean_box": [
+          {
+            "decimal_approx": 0.1105,
+            "fraction": "221/2000"
+          },
+          {
+            "decimal_approx": 0.1115,
+            "fraction": "223/2000"
+          }
+        ],
+        "mean_decimal_places": 3,
+        "model": "reduced",
+        "model_box": [
+          {
+            "decimal_approx": 0.0925,
+            "fraction": "37/400"
+          },
+          {
+            "decimal_approx": 0.0935,
+            "fraction": "187/2000"
+          }
+        ],
+        "model_decimal_places": 3,
+        "point_inside_printed_box": false,
+        "point_on_printed_endpoint": false,
+        "possible_deviation_percent": [
+          {
+            "decimal_approx": -17.04035874439462,
+            "fraction": "-3800/223"
+          },
+          {
+            "decimal_approx": -15.384615384615385,
+            "fraction": "-200/13"
+          }
+        ],
+        "printed_deviation_percent_box": [
+          {
+            "decimal_approx": -16.65,
+            "fraction": "-333/20"
+          },
+          {
+            "decimal_approx": -16.55,
+            "fraction": "-331/20"
+          }
+        ],
+        "rounding_compatible": true,
+        "rounding_endpoint_only": false,
+        "rounding_intersection": [
+          {
+            "decimal_approx": -16.65,
+            "fraction": "-333/20"
+          },
+          {
+            "decimal_approx": -16.55,
+            "fraction": "-331/20"
+          }
+        ],
+        "row": 2,
+        "source_physical_page": 46,
+        "source_printed_page": 28,
+        "table": "3-4",
+        "unit": "rad"
+      },
+      {
+        "computed_deviation_percent": {
+          "decimal_approx": -24.137931034482758,
+          "fraction": "-700/29"
+        },
+        "computed_minus_printed_percentage_points": {
+          "decimal_approx": 0.16206896551724137,
+          "fraction": "47/290"
+        },
+        "connection_bolts": 5,
+        "displayed_cov_percent": "9.6",
+        "displayed_deviation_percent": "-24.3",
+        "displayed_experiment_mean": "0.087",
+        "displayed_model": "0.066",
+        "mean_box": [
+          {
+            "decimal_approx": 0.0865,
+            "fraction": "173/2000"
+          },
+          {
+            "decimal_approx": 0.0875,
+            "fraction": "7/80"
+          }
+        ],
+        "mean_decimal_places": 3,
+        "model": "detailed",
+        "model_box": [
+          {
+            "decimal_approx": 0.0655,
+            "fraction": "131/2000"
+          },
+          {
+            "decimal_approx": 0.0665,
+            "fraction": "133/2000"
+          }
+        ],
+        "model_decimal_places": 3,
+        "point_inside_printed_box": false,
+        "point_on_printed_endpoint": false,
+        "possible_deviation_percent": [
+          {
+            "decimal_approx": -25.142857142857142,
+            "fraction": "-176/7"
+          },
+          {
+            "decimal_approx": -23.121387283236995,
+            "fraction": "-4000/173"
+          }
+        ],
+        "printed_deviation_percent_box": [
+          {
+            "decimal_approx": -24.35,
+            "fraction": "-487/20"
+          },
+          {
+            "decimal_approx": -24.25,
+            "fraction": "-97/4"
+          }
+        ],
+        "rounding_compatible": true,
+        "rounding_endpoint_only": false,
+        "rounding_intersection": [
+          {
+            "decimal_approx": -24.35,
+            "fraction": "-487/20"
+          },
+          {
+            "decimal_approx": -24.25,
+            "fraction": "-97/4"
+          }
+        ],
+        "row": 3,
+        "source_physical_page": 46,
+        "source_printed_page": 28,
+        "table": "3-4",
+        "unit": "rad"
+      },
+      {
+        "computed_deviation_percent": {
+          "decimal_approx": -5.747126436781609,
+          "fraction": "-500/87"
+        },
+        "computed_minus_printed_percentage_points": {
+          "decimal_approx": -0.1471264367816092,
+          "fraction": "-64/435"
+        },
+        "connection_bolts": 5,
+        "displayed_cov_percent": "9.6",
+        "displayed_deviation_percent": "-5.6",
+        "displayed_experiment_mean": "0.087",
+        "displayed_model": "0.082",
+        "mean_box": [
+          {
+            "decimal_approx": 0.0865,
+            "fraction": "173/2000"
+          },
+          {
+            "decimal_approx": 0.0875,
+            "fraction": "7/80"
+          }
+        ],
+        "mean_decimal_places": 3,
+        "model": "reduced",
+        "model_box": [
+          {
+            "decimal_approx": 0.0815,
+            "fraction": "163/2000"
+          },
+          {
+            "decimal_approx": 0.0825,
+            "fraction": "33/400"
+          }
+        ],
+        "model_decimal_places": 3,
+        "point_inside_printed_box": false,
+        "point_on_printed_endpoint": false,
+        "possible_deviation_percent": [
+          {
+            "decimal_approx": -6.857142857142857,
+            "fraction": "-48/7"
+          },
+          {
+            "decimal_approx": -4.624277456647399,
+            "fraction": "-800/173"
+          }
+        ],
+        "printed_deviation_percent_box": [
+          {
+            "decimal_approx": -5.65,
+            "fraction": "-113/20"
+          },
+          {
+            "decimal_approx": -5.55,
+            "fraction": "-111/20"
+          }
+        ],
+        "rounding_compatible": true,
+        "rounding_endpoint_only": false,
+        "rounding_intersection": [
+          {
+            "decimal_approx": -5.65,
+            "fraction": "-113/20"
+          },
+          {
+            "decimal_approx": -5.55,
+            "fraction": "-111/20"
+          }
+        ],
+        "row": 3,
+        "source_physical_page": 46,
+        "source_printed_page": 28,
+        "table": "3-4",
+        "unit": "rad"
+      }
+    ]
+  },
+  "status": "PASS"
+}

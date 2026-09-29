@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-11",
+  "scope": "Preserved helper execution history, separate from frozen annotations and historical matching outputs.",
+  "interpreter": "/Users/admin/.pyenv/versions/3.13.7/bin/python3",
+  "recorded_runtime": "3.13.7 (main, Oct 24 2025, 00:40:52) [Clang 17.0.0 (clang-1700.0.13.5)]",
+  "criteria_prefix_sha256": "40a98f6bb2ca25c1cc2ea0e5a724bdfacf2da6720b060914553c379c816463fb",
+  "attempts": [
+    {
+      "order": 1,
+      "status": "failed",
+      "exit_code": 1,
+      "helper_snapshot": "compare_r7-failed01.py",
+      "helper_sha256": "64786d97fae2ba829df992e3e3160da8030a491bca81ff95a4e34dc5de73955a",
+      "self_tests": "passed before historical comparison attempt",
+      "exception": "ValueError: Before/after pin mismatch: run01",
+      "failed_check": "initial['pins'] == receipt['pins']",
+      "comparison_json_created": false,
+      "diagnosis": "The initial dictionary contains procedure/runtime pins; the wrapper subsequently adds input-pins and preflight dependencies. Shared initial values were unchanged. Equality of the two differently scoped dictionaries was an incorrect comparator schema assumption."
+    },
+    {
+      "order": 2,
+      "status": "complete",
+      "exit_code": 0,
+      "helper": "compare_r7.py",
+      "helper_sha256": "1ac67a947388f7088c2c34ee1c633d384e2c28f31116a8d8f1d13d9ea2c9c350",
+      "schema_correction": "Verify exact normalized union of initial procedure/runtime pins, input-pins.json and copied preflight selection/receipt identities against final receipt, rejecting conflicts or extra/missing identities. No numerical or annotation criterion changed.",
+      "self_tests": "passed",
+      "output": "comparison.json",
+      "output_sha256": "02525db6ef42ba96f4e4e4cbe810b5b85a60c113b21f5dfe11a68abbf025b67e",
+      "expected_comparison_rows": 10,
+      "actual_comparison_rows": 10
+    },
+    {
+      "order": 3,
+      "status": "complete",
+      "exit_code": 0,
+      "helper": "compare_r7.py",
+      "helper_sha256": "1ac67a947388f7088c2c34ee1c633d384e2c28f31116a8d8f1d13d9ea2c9c350",
+      "output": "comparison-repeat01.json",
+      "output_sha256": "02525db6ef42ba96f4e4e4cbe810b5b85a60c113b21f5dfe11a68abbf025b67e",
+      "comparison_to_attempt_2": "Byte-identical; cmp exit 0.",
+      "visual_inspection_repeated_by_helper": false
+    }
+  ],
+  "preservation": "No historical result, selection, candidate, annotation, shared procedure or protocol was changed. Outputs were created exclusively; the failed helper was copied unchanged before correction."
+}

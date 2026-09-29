@@ -1,0 +1,473 @@
+{
+  "command": [
+    "research/sherlock-wtc7-investigation/camera2-reference-repair/verify_repair.py",
+    "--preflight",
+    "preflight01",
+    "--runs",
+    "run01",
+    "run02",
+    "--out",
+    "research/sherlock-wtc7-investigation/camera2-reference-repair/verification01.json"
+  ],
+  "error": "complete stage input/procedure lineage",
+  "error_type": "AssertionError",
+  "frozen_fit_oracle_sha256": "e2bb15bb6dfc9317b51db40602e53191570c888205cf26640c0b40197340c912",
+  "frozen_oracle_sha256": "b19d4692706e47f29ce9356342c12dcd6821c21dd7124de58d6570f38cc1ed0f",
+  "frozen_subject_sha256": "adb48c18a928ab44bba0f30cc8b6cdffbdd3a60918464600a568249b7822640e",
+  "numpy": "2.3.4",
+  "pillow": "12.0.0",
+  "preflight_inventory": {
+    "files_including_receipt": 12,
+    "initial_procedure_pins": {
+      "/Users/admin/.pyenv/versions/3.13.7/bin/python3": {
+        "bytes": 33816,
+        "sha256": "7d29600aa971dfd764a15b113d5964b1e74a18176a6b70cb31646d45e9e5018e"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/PROTOCOL.md": {
+        "bytes": 6152,
+        "sha256": "78e62afcb9803340f8a7677024e3545183fdb8c8d6c0ea6d05719086b76323b9"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/candidate-seeds.json": {
+        "bytes": 4373,
+        "sha256": "b093c5041ca34b5e1e27b617cc681f46cbd0327c6c525bec89faf43f7991078e"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/repair.py": {
+        "bytes": 15700,
+        "sha256": "092ca6057a5f3ecbfa96bd4968bee9f1e681fb8e7b50c66ff724f65139d33b18"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/test_repair.py": {
+        "bytes": 7454,
+        "sha256": "149534a21922ab4a185f482dbfd6b0675e446a0b4613924235513d171ede06e3"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/camera2-reference-repair/visual-review.json": {
+        "bytes": 1272,
+        "sha256": "8f83c82435f8a6a2ddcdbc27aac48e7aab50bf6706feb1d2c2b2d9acebb9e623"
+      },
+      "/Users/admin/docs/911/research/sherlock-wtc7-investigation/reference-motion/measure.py": {
+        "bytes": 14390,
+        "sha256": "adb48c18a928ab44bba0f30cc8b6cdffbdd3a60918464600a568249b7822640e"
+      }
+    },
+    "listed_products": 11,
+    "receipt": {
+      "bytes": 5218,
+      "sha256": "8fea3c45f64ecf96aefa2c329d0f322a20d03ec42daea80bef9fad49706318b6"
+    },
+    "runtime": {
+      "numpy": "2.3.4",
+      "pillow": "12.0.0",
+      "python": "3.13.7 (main, Oct 24 2025, 00:40:52) [Clang 17.0.0 (clang-1700.0.13.5)]"
+    },
+    "scope": "preflight01",
+    "stage": "preflight"
+  },
+  "preflight_numerics": {
+    "baseline_records": [
+      {
+        "at_search_boundary": false,
+        "baseline_xy": [
+          154,
+          299
+        ],
+        "candidate_xy": [
+          154,
+          299
+        ],
+        "competitor_ncc": 0.6131669349824489,
+        "competitor_xy": [
+          171,
+          296
+        ],
+        "flags": [],
+        "half": 9,
+        "margin": 0.386833065017545,
+        "ncc": 0.9999999999999939,
+        "reference": "C2-R1",
+        "search_bounds": [
+          130,
+          178,
+          275,
+          323
+        ],
+        "status": "candidate",
+        "template_std": 8.51412338622015,
+        "tied_best_count": 1,
+        "undefined_windows": 0
+      },
+      {
+        "at_search_boundary": false,
+        "baseline_xy": [
+          154,
+          299
+        ],
+        "candidate_xy": [
+          154,
+          299
+        ],
+        "competitor_ncc": 0.5512506897421012,
+        "competitor_xy": [
+          162,
+          299
+        ],
+        "flags": [],
+        "half": 13,
+        "margin": 0.44874931025789655,
+        "ncc": 0.9999999999999978,
+        "reference": "C2-R1",
+        "search_bounds": [
+          130,
+          178,
+          275,
+          323
+        ],
+        "status": "candidate",
+        "template_std": 7.392592511141267,
+        "tied_best_count": 1,
+        "undefined_windows": 0
+      },
+      {
+        "at_search_boundary": false,
+        "baseline_xy": [
+          228,
+          398
+        ],
+        "candidate_xy": [
+          228,
+          398
+        ],
+        "competitor_ncc": 0.693523864775341,
+        "competitor_xy": [
+          224,
+          386
+        ],
+        "flags": [],
+        "half": 9,
+        "margin": 0.30647613522465744,
+        "ncc": 0.9999999999999984,
+        "reference": "C2-R2",
+        "search_bounds": [
+          204,
+          252,
+          374,
+          422
+        ],
+        "status": "candidate",
+        "template_std": 14.307777145991977,
+        "tied_best_count": 1,
+        "undefined_windows": 0
+      },
+      {
+        "at_search_boundary": false,
+        "baseline_xy": [
+          228,
+          398
+        ],
+        "candidate_xy": [
+          228,
+          398
+        ],
+        "competitor_ncc": 0.5342947492164948,
+        "competitor_xy": [
+          228,
+          402
+        ],
+        "flags": [],
+        "half": 13,
+        "margin": 0.46570525078350966,
+        "ncc": 1.0000000000000044,
+        "reference": "C2-R2",
+        "search_bounds": [
+          204,
+          252,
+          374,
+          422
+        ],
+        "status": "candidate",
+        "template_std": 13.301042769339881,
+        "tied_best_count": 1,
+        "undefined_windows": 0
+      },
+      {
+        "at_search_boundary": false,
+        "baseline_xy": [
+          509,
+          212
+        ],
+        "candidate_xy": [
+          509,
+          212
+        ],
+        "competitor_ncc": 0.8912744328756835,
+        "competitor_xy": [
+          506,
+          218
+        ],
+        "flags": [],
+        "half": 9,
+        "margin": 0.10872556712431447,
+        "ncc": 0.999999999999998,
+        "reference": "C2-R4",
+        "search_bounds": [
+          485,
+          533,
+          188,
+          236
+        ],
+        "status": "candidate",
+        "template_std": 36.1157413672066,
+        "tied_best_count": 1,
+        "undefined_windows": 0
+      },
+      {
+        "at_search_boundary": false,
+        "baseline_xy": [
+          509,
+          212
+        ],
+        "candidate_xy": [
+          509,
+          212
+        ],
+        "competitor_ncc": 0.9250501836338766,
+        "competitor_xy": [
+          507,
+          216
+        ],
+        "flags": [],
+        "half": 13,
+        "margin": 0.07494981636612452,
+        "ncc": 1.000000000000001,
+        "reference": "C2-R4",
+        "search_bounds": [
+          485,
+          533,
+          188,
+          236
+        ],
+        "status": "candidate",
+        "template_std": 35.029154406498776,
+        "tied_best_count": 1,
+        "undefined_windows": 0
+      },
+      {
+        "at_search_boundary": false,
+        "baseline_xy": [
+          529,
+          167
+        ],
+        "candidate_xy": [
+          529,
+          167
+        ],
+        "competitor_ncc": 0.8680500858642392,
+        "competitor_xy": [
+          526,
+          171
+        ],
+        "flags": [],
+        "half": 9,
+        "margin": 0.13194991413576007,
+        "ncc": 0.9999999999999992,
+        "reference": "C2-R5",
+        "search_bounds": [
+          505,
+          553,
+          143,
+          191
+        ],
+        "status": "candidate",
+        "template_std": 20.989451412982085,
+        "tied_best_count": 1,
+        "undefined_windows": 0
+      },
+      {
+        "at_search_boundary": false,
+        "baseline_xy": [
+          529,
+          167
+        ],
+        "candidate_xy": [
+          529,
+          167
+        ],
+        "competitor_ncc": 0.8558842234108595,
+        "competitor_xy": [
+          533,
+          165
+        ],
+        "flags": [],
+        "half": 13,
+        "margin": 0.14411577658913877,
+        "ncc": 0.9999999999999982,
+        "reference": "C2-R5",
+        "search_bounds": [
+          505,
+          553,
+          143,
+          191
+        ],
+        "status": "candidate",
+        "template_std": 21.407535562861305,
+        "tied_best_count": 1,
+        "undefined_windows": 0
+      },
+      {
+        "at_search_boundary": false,
+        "baseline_xy": [
+          557,
+          319
+        ],
+        "candidate_xy": [
+          557,
+          319
+        ],
+        "competitor_ncc": 0.9137462038932355,
+        "competitor_xy": [
+          555,
+          313
+        ],
+        "flags": [],
+        "half": 9,
+        "margin": 0.08625379610675632,
+        "ncc": 0.9999999999999918,
+        "reference": "C2-R6",
+        "search_bounds": [
+          533,
+          581,
+          295,
+          343
+        ],
+        "status": "candidate",
+        "template_std": 6.233591808743847,
+        "tied_best_count": 1,
+        "undefined_windows": 0
+      },
+      {
+        "at_search_boundary": false,
+        "baseline_xy": [
+          557,
+          319
+        ],
+        "candidate_xy": [
+          557,
+          319
+        ],
+        "competitor_ncc": 0.8072899710063564,
+        "competitor_xy": [
+          556,
+          325
+        ],
+        "flags": [],
+        "half": 13,
+        "margin": 0.19271002899363898,
+        "ncc": 0.9999999999999953,
+        "reference": "C2-R6",
+        "search_bounds": [
+          533,
+          581,
+          295,
+          343
+        ],
+        "status": "candidate",
+        "template_std": 6.466997846815816,
+        "tied_best_count": 1,
+        "undefined_windows": 0
+      },
+      {
+        "at_search_boundary": false,
+        "baseline_xy": [
+          333,
+          413
+        ],
+        "candidate_xy": [
+          333,
+          413
+        ],
+        "competitor_ncc": 0.5238250482235361,
+        "competitor_xy": [
+          356,
+          421
+        ],
+        "flags": [],
+        "half": 9,
+        "margin": 0.4761749517764612,
+        "ncc": 0.9999999999999973,
+        "reference": "C2-R7",
+        "search_bounds": [
+          309,
+          357,
+          389,
+          437
+        ],
+        "status": "candidate",
+        "template_std": 14.64175108778155,
+        "tied_best_count": 1,
+        "undefined_windows": 0
+      },
+      {
+        "at_search_boundary": false,
+        "baseline_xy": [
+          333,
+          413
+        ],
+        "candidate_xy": [
+          333,
+          413
+        ],
+        "competitor_ncc": 0.4579271818223313,
+        "competitor_xy": [
+          356,
+          421
+        ],
+        "flags": [],
+        "half": 13,
+        "margin": 0.5420728181776661,
+        "ncc": 0.9999999999999973,
+        "reference": "C2-R7",
+        "search_bounds": [
+          309,
+          357,
+          389,
+          437
+        ],
+        "status": "candidate",
+        "template_std": 12.222159870148973,
+        "tied_best_count": 1,
+        "undefined_windows": 0
+      }
+    ],
+    "candidate_file": {
+      "bytes": 4373,
+      "sha256": "b093c5041ca34b5e1e27b617cc681f46cbd0327c6c525bec89faf43f7991078e"
+    },
+    "candidate_ids_in_order": [
+      "C2-R7"
+    ],
+    "full_preflight_grids_recomputed": 12,
+    "independent_grid_decision_differences": [],
+    "interpretation": "Baseline construction-image suitability; not physical identity/stationarity or later-frame accuracy.",
+    "max_independent_NCC_difference": 1.4432899320127035e-14,
+    "qualified_ids_in_order": [
+      "C2-R7"
+    ],
+    "selected": "C2-R7",
+    "visual_review": {
+      "bytes": 1272,
+      "sha256": "8f83c82435f8a6a2ddcdbc27aac48e7aab50bf6706feb1d2c2b2d9acebb9e623"
+    }
+  },
+  "python": "3.13.7",
+  "scope": "Independent one-reference repair artifact and numerical review; no video decode or physical/causal validation.",
+  "status": "fail",
+  "v1_preservation": {
+    "products_rehashed": 33,
+    "receipt": {
+      "bytes": 4938,
+      "sha256": "3e84b93f588ba329a122ee6ac8ef0ac7daf67a9ba6451503c75ff968682eaf17"
+    }
+  },
+  "verifier": {
+    "bytes": 32146,
+    "sha256": "b2c6e87c506fd2a8be7b3d4b58e46a28c2471e37264dd1dfd257cb387aeda041"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "lanes": [
+    {
+      "lane_id": "machine",
+      "title": "Research infrastructure"
+    },
+    {
+      "lane_id": "substantive",
+      "title": "Substantive research"
+    }
+  ],
+  "candidates": [
+    {
+      "action_id": "audit-measurement-contract",
+      "title": "Audit the measurement contract",
+      "distinguishes_hypotheses": [],
+      "information_targets": ["machine:measurement-contract-validity"],
+      "expected_discrimination": 0.0,
+      "uncertainty_reduction": 0.7,
+      "cost": 0.2,
+      "duration": 0.2,
+      "burden": 0.2,
+      "safety_risk": 0.0,
+      "ambiguity_risk": 0.1,
+      "prerequisite_evidence_refs": ["design-review:measurement-contract-audit"],
+      "safety_review_refs": ["safety-review:software-only-audit"],
+      "rationale": "Tests whether the machine rejects an omitted measurement parameter.",
+      "lane_id": "machine",
+      "audit_prerequisite_contract": {
+        "contract_version": 1,
+        "action_class": "nonadvancing_information",
+        "subjects": [],
+        "required_audits": [],
+        "evaluator_exposure_statement": "",
+        "nonadvancing_information_statement": "This bounded infrastructure audit gathers workflow information and cannot advance candidate or implementation bytes.",
+        "limitations": ["Successful development establishes software behavior only."],
+        "conclusion_ceiling": "Workflow eligibility only; does not establish audit truth, auditor identity or independence, scientific validity, or evidence eligibility."
+      }
+    },
+    {
+      "action_id": "run-cheap-falsifier",
+      "title": "Run the cheapest candidate falsifier",
+      "distinguishes_hypotheses": ["<hypothesis-id>"],
+      "hypothesis_discrimination_targets": [
+        {
+          "hypothesis_id": "<hypothesis-id>",
+          "discriminating_observation": "The cheapest registered falsifier separates the target hypothesis from the competing ordinary process.",
+          "expected_if_hypothesis": "The target pattern survives the falsifier.",
+          "expected_if_alternative": "The pattern follows the ordinary competing process or disappears.",
+          "would_weaken_if": "The target pattern disappears or follows the competing process under the falsifier.",
+          "competing_model_ref": "<exact registered null_model or competing_model>"
+        }
+      ],
+      "information_targets": ["theory:first-failing-gate"],
+      "expected_discrimination": 0.9,
+      "uncertainty_reduction": 0.8,
+      "cost": 0.3,
+      "duration": 0.3,
+      "burden": 0.2,
+      "safety_risk": 0.0,
+      "ambiguity_risk": 0.1,
+      "prerequisite_evidence_refs": ["design-review:cheap-falsifier-ready"],
+      "safety_review_refs": ["safety-review:bounded-falsifier"],
+      "rationale": "Eliminates an ill-typed or non-tangent candidate before expensive work.",
+      "lane_id": "substantive",
+      "depends_on": [],
+      "audit_prerequisite_contract": {
+        "contract_version": 1,
+        "action_class": "candidate_advancing",
+        "subjects": [
+          {
+            "subject_role": "candidate",
+            "subject_id": "<candidate-id>",
+            "artifact_locator": "candidates/candidate.md",
+            "artifact_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "required_audits": [
+          {
+            "audit_id": "<candidate-audit-id>",
+            "artifact_role": "adversarial_candidate_audit",
+            "artifact_locator": "audits/candidate-audit.json",
+            "artifact_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+            "audited_subject_role": "candidate",
+            "audited_subject_id": "<candidate-id>",
+            "audited_subject_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "verdict": "favorable",
+            "scope": "Exact candidate bytes and the bounded proposed falsifier.",
+            "auditor_identity": "<auditor-identity-as-declared>",
+            "audited_at": "2026-09-12T12:00:00Z",
+            "limitations": ["Identity and independence remain unauthenticated by this artifact."],
+            "supporting_artifacts": [
+              {
+                "artifact_role": "source_pinned_review_finding",
+                "artifact_locator": "audits/candidate-source-finding.json",
+                "artifact_sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+              },
+              {
+                "artifact_role": "detailed_adversarial_audit_report",
+                "artifact_locator": "audits/candidate-audit-report.md",
+                "artifact_sha256": "3333333333333333333333333333333333333333333333333333333333333333"
+              }
+            ]
+          }
+        ],
+        "evaluator_exposure_statement": "",
+        "nonadvancing_information_statement": "",
+        "limitations": ["A favorable audit permits workflow selection only."],
+        "conclusion_ceiling": "Workflow eligibility only; does not establish audit truth, auditor identity or independence, scientific validity, or evidence eligibility."
+      }
+    }
+  ],
+  "completed_action_ids": []
+}

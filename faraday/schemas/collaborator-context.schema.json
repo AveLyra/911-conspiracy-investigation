@@ -1,0 +1,762 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-machine.local/schemas/collaborator-context.schema.json",
+  "title": "Provider-neutral collaborator context",
+  "type": "object",
+  "required": [
+    "context_version",
+    "purpose",
+    "inquiry",
+    "open_questions",
+    "active_hypotheses",
+    "pending_hypotheses",
+    "claims",
+    "evidence",
+    "evidence_status_events",
+    "datasets",
+    "protocols",
+    "runs",
+    "recommendations",
+    "cross_lane_lessons",
+    "ethics_review_events",
+    "context_reference_index",
+    "scientific_constraints",
+    "write_boundary"
+  ],
+  "properties": {
+    "context_version": {"type": "integer", "enum": [1, 2]},
+    "purpose": {"$ref": "#/$defs/canonicalNonEmptyText"},
+    "inquiry": {
+      "type": "object",
+      "required": ["inquiry_id"],
+      "properties": {
+        "inquiry_id": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": true
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/openQuestion"}
+    },
+    "active_hypotheses": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/hypothesis"}
+    },
+    "pending_hypotheses": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/hypothesis"}
+    },
+    "claims": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/claim"}
+    },
+    "evidence": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/evidence"}
+    },
+    "evidence_status_events": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/evidenceStatusEvent"}
+    },
+    "datasets": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/dataset"}
+    },
+    "dataset_inventory": {"$ref": "#/$defs/datasetInventory"},
+    "protocols": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/protocol"}
+    },
+    "alias_proxy_mapping_records": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/aliasProxyMappingRecord"}
+    },
+    "runs": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/run"}
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {"type": "object"}
+    },
+    "cross_lane_lessons": {
+      "type": "array",
+      "items": {"type": "object"}
+    },
+    "ethics_review_events": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/ethicsReviewEvent"}
+    },
+    "context_reference_index": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/contextReference"},
+      "uniqueItems": true
+    },
+    "scientific_constraints": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/canonicalNonEmptyText"},
+      "uniqueItems": true,
+      "allOf": [
+        {
+          "contains": {
+            "type": "string",
+            "pattern": ".*Do not claim.*causality.*mechanism.*replication.*"
+          }
+        },
+        {
+          "contains": {
+            "type": "string",
+            "pattern": ".*Do not authorize.*"
+          }
+        }
+      ]
+    },
+    "write_boundary": {
+      "type": "object",
+      "required": [
+        "context_is_read_only",
+        "provider_required",
+        "canonical_changes_require"
+      ],
+      "properties": {
+        "context_is_read_only": {"const": true},
+        "provider_required": {"const": false},
+        "canonical_changes_require": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/canonicalNonEmptyText"},
+          "uniqueItems": true,
+          "allOf": [
+            {
+              "contains": {
+                "type": "string",
+                "pattern": ".*research.*command.*"
+              }
+            },
+            {
+              "contains": {
+                "type": "string",
+                "pattern": ".*review.*gate.*"
+              }
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {"context_version": {"const": 2}},
+        "required": ["context_version"]
+      },
+      "then": {
+        "required": ["dataset_inventory"],
+        "properties": {
+          "inquiry": {"$ref": "#/$defs/redactedOperationalFieldsV2"},
+          "open_questions": {"items": {"$ref": "#/$defs/redactedOperationalFieldsV2"}},
+          "active_hypotheses": {"items": {"$ref": "#/$defs/redactedOperationalFieldsV2"}},
+          "pending_hypotheses": {"items": {"$ref": "#/$defs/redactedOperationalFieldsV2"}},
+          "claims": {"items": {"$ref": "#/$defs/redactedOperationalFieldsV2"}},
+          "evidence": {"items": {"$ref": "#/$defs/redactedOperationalFieldsV2"}},
+          "evidence_status_events": {"items": {"$ref": "#/$defs/redactedOperationalFieldsV2"}},
+          "datasets": {"items": {"$ref": "#/$defs/datasetV2"}},
+          "protocols": {"items": {"$ref": "#/$defs/redactedOperationalFieldsV2"}},
+          "alias_proxy_mapping_records": {"items": {"$ref": "#/$defs/redactedOperationalFieldsV2"}},
+          "runs": {"items": {"$ref": "#/$defs/redactedOperationalFieldsV2"}},
+          "recommendations": {"items": {"$ref": "#/$defs/redactedOperationalFieldsV2"}},
+          "cross_lane_lessons": {"items": {"$ref": "#/$defs/redactedOperationalFieldsV2"}},
+          "ethics_review_events": {"items": {"$ref": "#/$defs/redactedOperationalFieldsV2"}}
+        }
+      },
+      "else": {"not": {"required": ["dataset_inventory"]}}
+    }
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "canonicalNonEmptyText": {
+      "type": "string",
+      "pattern": "^(?:\\S|\\S.*\\S)$"
+    },
+    "redactedOperationalFields": {
+      "type": "object",
+      "properties": {
+        "artifact_root": {"const": "[redacted: retained in canonical store]"},
+        "attestation_schema_path": {"const": "[redacted: retained in canonical store]"},
+        "custody_artifact_root": {"const": "[redacted: retained in canonical store]"},
+        "ethics_artifact_root": {"const": "[redacted: retained in canonical store]"},
+        "review_artifact_root": {"const": "[redacted: retained in canonical store]"},
+        "run_artifact_root": {"const": "[redacted: retained in canonical store]"},
+        "run_attestation_schema_path": {"const": "[redacted: retained in canonical store]"}
+      },
+      "additionalProperties": true
+    },
+    "redactedOperationalFieldsV2": {
+      "allOf": [
+        {"$ref": "#/$defs/redactedOperationalFields"},
+        {
+          "type": "object",
+          "properties": {
+            "current_synthesis_path": {
+              "enum": [null, "[redacted: retained in canonical store]"]
+            },
+            "evidence_artifact_root": {"const": "[redacted: retained in canonical store]"},
+            "interpreter_path": {"const": "[redacted: retained in canonical store]"},
+            "mapping_artifact_root": {"const": "[redacted: retained in canonical store]"},
+            "origin_artifact_root": {"const": "[redacted: retained in canonical store]"}
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+    "contextRef": {
+      "type": "string",
+      "pattern": "^(inquiry|question|claim|hypothesis|evidence|dataset|protocol|alias_proxy_mapping_record|run|evidence_status_event|ethics_review_event):(?:\\S|\\S.*\\S)$"
+    },
+    "contextKind": {
+      "enum": [
+        "inquiry",
+        "open_question",
+        "claim",
+        "active_hypothesis",
+        "pending_hypothesis",
+        "evidence",
+        "evidence_status_event",
+        "dataset",
+        "protocol",
+        "alias_proxy_mapping_record",
+        "run",
+        "ethics_review_event"
+      ]
+    },
+    "contextReference": {
+      "type": "object",
+      "required": ["ref", "kind"],
+      "properties": {
+        "ref": {"$ref": "#/$defs/contextRef"},
+        "kind": {"$ref": "#/$defs/contextKind"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"kind": {"const": "inquiry"}}, "required": ["kind"]},
+          "then": {"properties": {"ref": {"pattern": "^inquiry:(?:\\S|\\S.*\\S)$"}}}
+        },
+        {
+          "if": {"properties": {"kind": {"const": "open_question"}}, "required": ["kind"]},
+          "then": {"properties": {"ref": {"pattern": "^question:(?:\\S|\\S.*\\S)$"}}}
+        },
+        {
+          "if": {"properties": {"kind": {"const": "claim"}}, "required": ["kind"]},
+          "then": {"properties": {"ref": {"pattern": "^claim:(?:\\S|\\S.*\\S)$"}}}
+        },
+        {
+          "if": {"properties": {"kind": {"const": "active_hypothesis"}}, "required": ["kind"]},
+          "then": {"properties": {"ref": {"pattern": "^hypothesis:(?:\\S|\\S.*\\S)$"}}}
+        },
+        {
+          "if": {"properties": {"kind": {"const": "pending_hypothesis"}}, "required": ["kind"]},
+          "then": {"properties": {"ref": {"pattern": "^hypothesis:(?:\\S|\\S.*\\S)$"}}}
+        },
+        {
+          "if": {"properties": {"kind": {"const": "evidence"}}, "required": ["kind"]},
+          "then": {"properties": {"ref": {"pattern": "^evidence:(?:\\S|\\S.*\\S)$"}}}
+        },
+        {
+          "if": {"properties": {"kind": {"const": "evidence_status_event"}}, "required": ["kind"]},
+          "then": {"properties": {"ref": {"pattern": "^evidence_status_event:(?:\\S|\\S.*\\S)$"}}}
+        },
+        {
+          "if": {"properties": {"kind": {"const": "dataset"}}, "required": ["kind"]},
+          "then": {"properties": {"ref": {"pattern": "^dataset:(?:\\S|\\S.*\\S)$"}}}
+        },
+        {
+          "if": {"properties": {"kind": {"const": "protocol"}}, "required": ["kind"]},
+          "then": {"properties": {"ref": {"pattern": "^protocol:(?:\\S|\\S.*\\S)$"}}}
+        },
+        {
+          "if": {"properties": {"kind": {"const": "alias_proxy_mapping_record"}}, "required": ["kind"]},
+          "then": {"properties": {"ref": {"pattern": "^alias_proxy_mapping_record:(?:\\S|\\S.*\\S)$"}}}
+        },
+        {
+          "if": {"properties": {"kind": {"const": "run"}}, "required": ["kind"]},
+          "then": {"properties": {"ref": {"pattern": "^run:(?:\\S|\\S.*\\S)$"}}}
+        },
+        {
+          "if": {"properties": {"kind": {"const": "ethics_review_event"}}, "required": ["kind"]},
+          "then": {"properties": {"ref": {"pattern": "^ethics_review_event:(?:\\S|\\S.*\\S)$"}}}
+        }
+      ],
+      "additionalProperties": false
+    },
+    "openQuestion": {
+      "type": "object",
+      "allOf": [{"$ref": "#/$defs/redactedOperationalFields"}],
+      "required": ["question_id"],
+      "properties": {
+        "question_id": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": true
+    },
+    "claim": {
+      "type": "object",
+      "allOf": [{"$ref": "#/$defs/redactedOperationalFields"}],
+      "required": ["claim_id"],
+      "properties": {
+        "claim_id": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": true
+    },
+    "hypothesis": {
+      "type": "object",
+      "allOf": [{"$ref": "#/$defs/redactedOperationalFields"}],
+      "required": ["hypothesis_id"],
+      "properties": {
+        "hypothesis_id": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": true
+    },
+    "evidence": {
+      "type": "object",
+      "allOf": [{"$ref": "#/$defs/redactedOperationalFields"}],
+      "required": ["evidence_id"],
+      "properties": {
+        "evidence_id": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": true
+    },
+    "evidenceStatusEvent": {
+      "type": "object",
+      "allOf": [{"$ref": "#/$defs/redactedOperationalFields"}],
+      "required": ["event_id"],
+      "properties": {
+        "event_id": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": true
+    },
+    "dataset": {
+      "type": "object",
+      "allOf": [{"$ref": "#/$defs/redactedOperationalFields"}],
+      "required": ["dataset_id"],
+      "properties": {
+        "dataset_id": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": true
+    },
+    "datasetV2": {
+      "allOf": [
+        {"$ref": "#/$defs/dataset"},
+        {"$ref": "#/$defs/redactedOperationalFieldsV2"},
+        {
+          "type": "object",
+          "properties": {
+            "artifacts": {
+              "type": "array",
+              "items": {"$ref": "#/$defs/collaboratorArtifact"}
+            }
+          }
+        }
+      ]
+    },
+    "collaboratorArtifact": {
+      "type": "object",
+      "required": ["locator", "sha256"],
+      "properties": {
+        "locator": {"const": "[redacted: retained in canonical store]"},
+        "sha256": {
+          "type": "string",
+          "minLength": 64,
+          "maxLength": 64,
+          "pattern": "^[0-9a-f]{64}(?![\\s\\S])"
+        },
+        "size_bytes": {"type": ["integer", "null"], "minimum": 0},
+        "media_type": {"type": "string"},
+        "metadata": {"$ref": "#/$defs/collaboratorArtifactMetadata"}
+      },
+      "additionalProperties": false
+    },
+    "collaboratorArtifactMetadata": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^(?![\\s\\S]*[\\u0000-\\u001f\\u007f])"
+      },
+      "properties": {
+        "effect_estimate_path": {},
+        "evidence_location": {},
+        "p_value_path": {},
+        "uncertainty_path": {}
+      },
+      "patternProperties": {
+        "^(?!(?:effect_estimate_path|evidence_location|p_value_path|uncertainty_path)$)(?:roots?|paths?|locators?|locations?|files?|director(?:y|ies)|uris?|.*_(?:roots?|paths?|locators?|locations?|files?|director(?:y|ies)|uris?))$": {
+          "const": "[redacted: retained in canonical store]"
+        },
+        "^(?:home|home_dir|host|host_id|host_name|hostname|machine_name|user_id|user_name|username)$": {
+          "enum": ["", null, "[redacted: retained in canonical store]"]
+        }
+      },
+      "additionalProperties": {"$ref": "#/$defs/collaboratorArtifactMetadataValue"}
+    },
+    "collaboratorArtifactMetadataValue": {
+      "anyOf": [
+        {"type": ["string", "number", "boolean", "null"]},
+        {
+          "type": "array",
+          "items": {"$ref": "#/$defs/collaboratorArtifactMetadataValue"}
+        },
+        {"$ref": "#/$defs/collaboratorArtifactMetadata"}
+      ]
+    },
+    "datasetInventory": {
+      "type": "object",
+      "required": [
+        "registered_dataset_count",
+        "role_counts",
+        "synthetic_count",
+        "non_synthetic_count",
+        "datasets_with_rigor_errors",
+        "empty_inventory_notice",
+        "interpretation_limit",
+        "datasets"
+      ],
+      "properties": {
+        "registered_dataset_count": {"type": "integer", "minimum": 0},
+        "role_counts": {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "calibration",
+              "exploratory",
+              "training",
+              "confirmatory",
+              "replication"
+            ]
+          },
+          "additionalProperties": {"type": "integer", "minimum": 0}
+        },
+        "synthetic_count": {"type": "integer", "minimum": 0},
+        "non_synthetic_count": {"type": "integer", "minimum": 0},
+        "datasets_with_rigor_errors": {"type": "integer", "minimum": 0},
+        "empty_inventory_notice": {"type": "string"},
+        "interpretation_limit": {"$ref": "#/$defs/canonicalNonEmptyText"},
+        "datasets": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/datasetInventoryRow"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "datasetInventoryRow": {
+      "type": "object",
+      "required": [
+        "dataset_id",
+        "name",
+        "role",
+        "synthetic",
+        "protocol_id",
+        "protocol_present",
+        "artifact_count",
+        "media_types",
+        "source_dataset_ids",
+        "source_authority",
+        "payload_commitment",
+        "observation_access",
+        "measurement_custody",
+        "workflow_materialization",
+        "ethics",
+        "rigor_findings",
+        "readiness",
+        "operational_roots_redacted"
+      ],
+      "properties": {
+        "dataset_id": {"$ref": "#/$defs/canonicalNonEmptyText"},
+        "name": {"$ref": "#/$defs/canonicalNonEmptyText"},
+        "role": {
+          "enum": [
+            "calibration",
+            "exploratory",
+            "training",
+            "confirmatory",
+            "replication"
+          ]
+        },
+        "synthetic": {"type": "boolean"},
+        "protocol_id": {"type": ["string", "null"]},
+        "protocol_present": {"type": "boolean"},
+        "artifact_count": {"type": "integer", "minimum": 0},
+        "media_types": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/canonicalNonEmptyText"}
+        },
+        "source_dataset_ids": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/canonicalNonEmptyText"}
+        },
+        "source_authority": {"$ref": "#/$defs/datasetSourceAuthority"},
+        "payload_commitment": {"$ref": "#/$defs/datasetPayloadCommitment"},
+        "observation_access": {"$ref": "#/$defs/datasetObservationAccess"},
+        "measurement_custody": {"$ref": "#/$defs/datasetMeasurementCustody"},
+        "workflow_materialization": {"$ref": "#/$defs/datasetWorkflowMaterialization"},
+        "ethics": {"$ref": "#/$defs/datasetEthics"},
+        "rigor_findings": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/datasetRigorFinding"}
+        },
+        "readiness": {"$ref": "#/$defs/datasetReadiness"},
+        "operational_roots_redacted": {"const": true}
+      },
+      "additionalProperties": false
+    },
+    "datasetSourceAuthority": {
+      "type": "object",
+      "required": [
+        "status",
+        "source_type",
+        "source_name",
+        "source_record_id",
+        "retrieved_or_collected_at",
+        "classification_service_checked",
+        "source_truth_verified",
+        "custody_verified_by_source_authority",
+        "evidence_eligibility_conferred",
+        "authority_boundary",
+        "limitations",
+        "summary"
+      ],
+      "properties": {
+        "status": {
+          "enum": ["not_recorded", "typed_source_route", "invalid_metadata"]
+        },
+        "source_type": {
+          "enum": [
+            "not_recorded",
+            "invalid_metadata",
+            "registered_experiment",
+            "acquisition_addon",
+            "scientific_connector",
+            "manual_import",
+            "external_attestation",
+            "synthetic_fixture"
+          ]
+        },
+        "source_name": {"type": "string"},
+        "source_record_id": {"type": "string"},
+        "retrieved_or_collected_at": {
+          "anyOf": [
+            {"const": ""},
+            {"type": "string", "format": "date-time"}
+          ]
+        },
+        "classification_service_checked": {"type": "boolean"},
+        "source_truth_verified": {"const": false},
+        "custody_verified_by_source_authority": {"const": false},
+        "evidence_eligibility_conferred": {"const": false},
+        "authority_boundary": {"$ref": "#/$defs/canonicalNonEmptyText"},
+        "limitations": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/canonicalNonEmptyText"},
+          "uniqueItems": true
+        },
+        "summary": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": false
+    },
+    "datasetPayloadCommitment": {
+      "type": "object",
+      "required": ["sealed", "sha256", "summary"],
+      "properties": {
+        "sealed": {"type": "boolean"},
+        "sha256": {
+          "anyOf": [
+            {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            {"type": "null"}
+          ]
+        },
+        "summary": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": false
+    },
+    "datasetObservationAccess": {
+      "type": "object",
+      "required": ["status", "service_verified", "summary"],
+      "properties": {
+        "status": {
+          "enum": [
+            "synthetic_fixture",
+            "protected_observation_bytes_service_verified",
+            "protected_observation_bytes_missing_service_verification",
+            "declared_hashes_only"
+          ]
+        },
+        "service_verified": {"type": "boolean"},
+        "summary": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": false
+    },
+    "datasetMeasurementCustody": {
+      "type": "object",
+      "required": [
+        "status",
+        "required_by_protocol",
+        "service_verified",
+        "summary"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "service_verified",
+            "required_missing_service_verification",
+            "described_not_service_verified",
+            "not_recorded"
+          ]
+        },
+        "required_by_protocol": {"type": "boolean"},
+        "service_verified": {"type": "boolean"},
+        "summary": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": false
+    },
+    "datasetWorkflowMaterialization": {
+      "type": "object",
+      "required": [
+        "status",
+        "service_verified",
+        "source_receipts_replayed",
+        "scientific_evidence_eligible",
+        "scientific_interpretation_verified",
+        "family_step_id",
+        "family_id",
+        "source_count",
+        "output_sha256",
+        "row_count",
+        "summary"
+      ],
+      "properties": {
+        "status": {
+          "enum": ["not_recorded", "source_receipts_replayed", "invalid_metadata"]
+        },
+        "service_verified": {"type": "boolean"},
+        "source_receipts_replayed": {"type": "boolean"},
+        "scientific_evidence_eligible": {"const": false},
+        "scientific_interpretation_verified": {"const": false},
+        "family_step_id": {"type": "string"},
+        "family_id": {"type": "string"},
+        "source_count": {"type": "integer", "minimum": 0},
+        "output_sha256": {
+          "anyOf": [
+            {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            {"type": "null"}
+          ]
+        },
+        "row_count": {"type": "integer", "minimum": 0},
+        "summary": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": false
+    },
+    "datasetEthics": {
+      "type": "object",
+      "required": [
+        "status",
+        "human_subject_protocol",
+        "service_checked",
+        "conditions_service_verified",
+        "summary"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "protocol_missing",
+            "not_bound_to_protocol",
+            "not_human_subject_protocol",
+            "active_service_check",
+            "missing_active_service_check",
+            "active_service_check_with_conditions_verified",
+            "missing_required_ethics_service_verification"
+          ]
+        },
+        "human_subject_protocol": {"type": "boolean"},
+        "service_checked": {"type": "boolean"},
+        "conditions_service_verified": {"type": "boolean"},
+        "summary": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": false
+    },
+    "datasetRigorFinding": {
+      "type": "object",
+      "required": ["code", "severity", "message", "remediation"],
+      "properties": {
+        "code": {"$ref": "#/$defs/canonicalNonEmptyText"},
+        "severity": {"enum": ["error", "warning", "info"]},
+        "message": {"$ref": "#/$defs/canonicalNonEmptyText"},
+        "remediation": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "datasetReadiness": {
+      "type": "object",
+      "required": [
+        "status",
+        "blocking_finding_codes",
+        "warning_finding_codes",
+        "summary"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "not_protected_evidence_dataset",
+            "protected_use_blocked_by_rigor",
+            "protected_use_has_rigor_warnings",
+            "protected_no_dataset_rigor_blockers_detected"
+          ]
+        },
+        "blocking_finding_codes": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/canonicalNonEmptyText"}
+        },
+        "warning_finding_codes": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/canonicalNonEmptyText"}
+        },
+        "summary": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": false
+    },
+    "protocol": {
+      "type": "object",
+      "allOf": [{"$ref": "#/$defs/redactedOperationalFields"}],
+      "required": ["protocol_id"],
+      "properties": {
+        "protocol_id": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": true
+    },
+    "aliasProxyMappingRecord": {
+      "type": "object",
+      "allOf": [{"$ref": "#/$defs/redactedOperationalFieldsV2"}],
+      "required": ["record_id", "mapping_artifact_root"],
+      "properties": {
+        "record_id": {"$ref": "#/$defs/canonicalNonEmptyText"},
+        "mapping_artifact_root": {"const": "[redacted: retained in canonical store]"}
+      },
+      "additionalProperties": true
+    },
+    "run": {
+      "type": "object",
+      "allOf": [{"$ref": "#/$defs/redactedOperationalFields"}],
+      "required": ["run_id"],
+      "properties": {
+        "run_id": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": true
+    },
+    "ethicsReviewEvent": {
+      "type": "object",
+      "allOf": [{"$ref": "#/$defs/redactedOperationalFields"}],
+      "required": ["event_id"],
+      "properties": {
+        "event_id": {"$ref": "#/$defs/canonicalNonEmptyText"}
+      },
+      "additionalProperties": true
+    }
+  }
+}

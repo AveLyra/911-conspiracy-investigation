@@ -1,0 +1,1661 @@
+{
+  "arithmetic": "Exact rational mean/variance; Decimal square roots and COV at80 significant digits, default ROUND_HALF_EVEN context.",
+  "command": [
+    "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "research/sherlock-wtc7-investigation/assembly-test-source-audit/verify_stages.py",
+    "--output",
+    "independent-stage-root01.json"
+  ],
+  "controls": [
+    {
+      "fixture": "Initial2 retained despite secondary3",
+      "name": "initial_rule",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Secondary3 selected with its smaller0.100 rotation, not independently maximized0.200",
+      "name": "higher_secondary_associated_rotation",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Initial2 selected despite secondary's larger rotation0.900",
+      "name": "higher_initial_associated_rotation",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Equal shears choose initial",
+      "name": "exact_tie_initial",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Missing secondary cannot become zero or an invented contrast",
+      "name": "missing_secondary",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Values1,2,3 have mean2,SSE2,sample variance1,population variance2/3",
+      "name": "sample_population_variance",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Sample SD1 and COV50percent for1,2,3",
+      "name": "known_square_root_and_cov",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Two equal positive observations retain zero variability",
+      "name": "zero_variation",
+      "status": "PASS"
+    },
+    {
+      "fixture": "Singleton and zero mean rejected, no fake sample SD or COV",
+      "name": "singleton_zero_mean_rejections",
+      "status": "PASS"
+    },
+    {
+      "fixture": "2->3 shear gives+1,+50percent;0.200->0.100 gives-0.100",
+      "name": "secondary_contrast_signs",
+      "status": "PASS"
+    }
+  ],
+  "decimal_significant_digits": 80,
+  "independence": "Original source and stage code frozen before root stage code/results access; exploratory interpretation included rough mental load/length considerations before systematic calculation, not claimed blind.",
+  "pins_after": {
+    "ARITHMETIC-PROTOCOL.md": "88954a1929e80b32fd49f061f426be594997532ade2e59528a87c6bbb4bde78e",
+    "PROTOCOL.md": "a06f1bc8f7e4283dbca0c9f54337eba0123045538ca47b411eb3aa8c260d637d",
+    "STAGE-DIAGNOSTIC-PROTOCOL.md": "7f1c6ddb2425891869c369e115c8f66eb77836cfdd2bcddbb034bc4ddfee46c4",
+    "code": "56a2b2b0552cd447c2658e6cdbb9638d008d0085445d704dd2fb4c8966c1650f",
+    "source_pdf": "b8eff9830bcc87940c4eadc9c64b80e7381ab43c96f52b528ef773b3b0332e78",
+    "thompson-independent.json": "7f1ff93025f499e62498a5ec2c21700c0a2b3d58213cb72363dd7757b2c153b9"
+  },
+  "pins_before": {
+    "ARITHMETIC-PROTOCOL.md": "88954a1929e80b32fd49f061f426be594997532ade2e59528a87c6bbb4bde78e",
+    "PROTOCOL.md": "a06f1bc8f7e4283dbca0c9f54337eba0123045538ca47b411eb3aa8c260d637d",
+    "STAGE-DIAGNOSTIC-PROTOCOL.md": "7f1c6ddb2425891869c369e115c8f66eb77836cfdd2bcddbb034bc4ddfee46c4",
+    "code": "56a2b2b0552cd447c2658e6cdbb9638d008d0085445d704dd2fb4c8966c1650f",
+    "source_pdf": "b8eff9830bcc87940c4eadc9c64b80e7381ab43c96f52b528ef773b3b0332e78",
+    "thompson-independent.json": "7f1ff93025f499e62498a5ec2c21700c0a2b3d58213cb72363dd7757b2c153b9"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "result": {
+    "exclusions": "No2V,unitconversion,anglecorrection,Table4.1/4.4 pooling,NIST means/COV comparison,probabilities,confidence intervals or calibration thresholds.",
+    "native_units": {
+      "applied_shear": "kip",
+      "beam_end_rotation": "rad"
+    },
+    "original_test_count": 9,
+    "populated_secondary_count": 4,
+    "quantity_summary_count": 24,
+    "scenario_count": 12,
+    "scenarios": [
+      {
+        "bolts": 3,
+        "cohort": "all_reported_tests",
+        "n": 3,
+        "rule": "initial",
+        "selected": [
+          {
+            "failure": "Bolt Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.128",
+            "secondary_available": false,
+            "secondary_missing_footnote": "a",
+            "shear": "6.76",
+            "specimen": "3STR1",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "3ST1"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.137",
+            "secondary_available": false,
+            "secondary_missing_footnote": "a",
+            "shear": "6.43",
+            "specimen": "3STR2",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "3ST2"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.133",
+            "secondary_available": false,
+            "secondary_missing_footnote": "a",
+            "shear": "5.41",
+            "specimen": "3STR3",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "3ST3"
+          }
+        ],
+        "statistics": {
+          "applied_shear_kip": {
+            "mean": {
+              "decimal": "6.2",
+              "fraction": "31/5"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "9.2682309022958978432996560191903201627110524275075120634220510826761547058772392",
+              "denominator": 3,
+              "sd_decimal": "0.57463031594234566628457867318979985008808525050546574793216716712592159176438883",
+              "variance": {
+                "decimal": "0.3302",
+                "fraction": "1651/5000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "11.351218264459940733777915157486483061058825365464571932173087896751611195937080",
+              "denominator": 2,
+              "sd_decimal": "0.70377553239651632549423073976416194978564717265880345979473144959859989414809895",
+              "variance": {
+                "decimal": "0.4953",
+                "fraction": "4953/10000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.9906",
+              "fraction": "4953/5000"
+            },
+            "values": [
+              "169/25",
+              "643/100",
+              "541/100"
+            ]
+          },
+          "beam_end_rotation_rad": {
+            "mean": {
+              "decimal": "0.13266666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "199/1500"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "2.7752163359766986869876667948101299147870049297322867656274127122016910089257545",
+              "denominator": 3,
+              "sd_decimal": "0.0036817870057290869247369712811147723536174265401115004423990341981875767385081677",
+              "variance": {
+                "decimal": "0.000013555555555555555555555555555555555555555555555555555555555555555555555555555556",
+                "fraction": "61/4500000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "3.3989319744896188184487122656736837511119313044363225687359598682435877857716649",
+              "denominator": 2,
+              "sd_decimal": "0.0045092497528228942991419582724604204431418288638855212745230400918698264624570756",
+              "variance": {
+                "decimal": "0.000020333333333333333333333333333333333333333333333333333333333333333333333333333333",
+                "fraction": "61/3000000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.000040666666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "61/1500000"
+            },
+            "values": [
+              "16/125",
+              "137/1000",
+              "133/1000"
+            ]
+          }
+        }
+      },
+      {
+        "bolts": 3,
+        "cohort": "all_reported_tests",
+        "n": 3,
+        "rule": "maximum_reported_stage",
+        "selected": [
+          {
+            "failure": "Bolt Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.128",
+            "secondary_available": false,
+            "secondary_missing_footnote": "a",
+            "shear": "6.76",
+            "specimen": "3STR1",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "3ST1"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.137",
+            "secondary_available": false,
+            "secondary_missing_footnote": "a",
+            "shear": "6.43",
+            "specimen": "3STR2",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "3ST2"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.133",
+            "secondary_available": false,
+            "secondary_missing_footnote": "a",
+            "shear": "5.41",
+            "specimen": "3STR3",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "3ST3"
+          }
+        ],
+        "statistics": {
+          "applied_shear_kip": {
+            "mean": {
+              "decimal": "6.2",
+              "fraction": "31/5"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "9.2682309022958978432996560191903201627110524275075120634220510826761547058772392",
+              "denominator": 3,
+              "sd_decimal": "0.57463031594234566628457867318979985008808525050546574793216716712592159176438883",
+              "variance": {
+                "decimal": "0.3302",
+                "fraction": "1651/5000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "11.351218264459940733777915157486483061058825365464571932173087896751611195937080",
+              "denominator": 2,
+              "sd_decimal": "0.70377553239651632549423073976416194978564717265880345979473144959859989414809895",
+              "variance": {
+                "decimal": "0.4953",
+                "fraction": "4953/10000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.9906",
+              "fraction": "4953/5000"
+            },
+            "values": [
+              "169/25",
+              "643/100",
+              "541/100"
+            ]
+          },
+          "beam_end_rotation_rad": {
+            "mean": {
+              "decimal": "0.13266666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "199/1500"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "2.7752163359766986869876667948101299147870049297322867656274127122016910089257545",
+              "denominator": 3,
+              "sd_decimal": "0.0036817870057290869247369712811147723536174265401115004423990341981875767385081677",
+              "variance": {
+                "decimal": "0.000013555555555555555555555555555555555555555555555555555555555555555555555555555556",
+                "fraction": "61/4500000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "3.3989319744896188184487122656736837511119313044363225687359598682435877857716649",
+              "denominator": 2,
+              "sd_decimal": "0.0045092497528228942991419582724604204431418288638855212745230400918698264624570756",
+              "variance": {
+                "decimal": "0.000020333333333333333333333333333333333333333333333333333333333333333333333333333333",
+                "fraction": "61/3000000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.000040666666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "61/1500000"
+            },
+            "values": [
+              "16/125",
+              "137/1000",
+              "133/1000"
+            ]
+          }
+        }
+      },
+      {
+        "bolts": 4,
+        "cohort": "all_reported_tests",
+        "n": 3,
+        "rule": "initial",
+        "selected": [
+          {
+            "failure": "Block Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.093",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "7.02",
+            "specimen": "4STR1",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "4ST1"
+          },
+          {
+            "failure": "Bolt Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.096",
+            "secondary_available": false,
+            "secondary_missing_footnote": "b",
+            "shear": "8.62",
+            "specimen": "4STR2",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "4ST2"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.093",
+            "secondary_available": false,
+            "secondary_missing_footnote": "c",
+            "shear": "6.34",
+            "specimen": "4STL3",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "4ST3"
+          }
+        ],
+        "statistics": {
+          "applied_shear_kip": {
+            "mean": {
+              "decimal": "7.3266666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "1099/150"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "13.044557552289299480200931137257595261222624777913448424902349990535469154960395",
+              "denominator": 3,
+              "sd_decimal": "0.95573124999772934191605488798973981280557764206179198793117884263989870675343159",
+              "variance": {
+                "decimal": "0.91342222222222222222222222222222222222222222222222222222222222222222222222222222",
+                "fraction": "5138/5625"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "15.976254961738739734372532749434084713042269273156600338202111742650226174111479",
+              "denominator": 2,
+              "sd_decimal": "1.1705269468633916645383608994418706066422302620799402514456080536781732376899010",
+              "variance": {
+                "decimal": "1.3701333333333333333333333333333333333333333333333333333333333333333333333333333",
+                "fraction": "2569/1875"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "2.7402666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "5138/1875"
+            },
+            "values": [
+              "351/50",
+              "431/50",
+              "317/50"
+            ]
+          },
+          "beam_end_rotation_rad": {
+            "mean": {
+              "decimal": "0.094",
+              "fraction": "47/500"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "1.5044825131628670731932858768188277431592253993371788012517869553092898707043691",
+              "denominator": 3,
+              "sd_decimal": "0.0014142135623730950488016887242096980785696718753769480731766797379907324784621070",
+              "variance": {
+                "decimal": "0.000002",
+                "fraction": "1/500000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "1.8426072420945503122632407888360344329178779295855113064423478504807798052221277",
+              "denominator": 2,
+              "sd_decimal": "0.0017320508075688772935274463415058723669428052538103806280558069794519330169088000",
+              "variance": {
+                "decimal": "0.000003",
+                "fraction": "3/1000000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.000006",
+              "fraction": "3/500000"
+            },
+            "values": [
+              "93/1000",
+              "12/125",
+              "93/1000"
+            ]
+          }
+        }
+      },
+      {
+        "bolts": 4,
+        "cohort": "all_reported_tests",
+        "n": 3,
+        "rule": "maximum_reported_stage",
+        "selected": [
+          {
+            "failure": "Bolt Shear Rupture",
+            "physical_page": 105,
+            "rotation": "0.129",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "9.93",
+            "specimen": "4STR1",
+            "stage": "secondary",
+            "table": "4.3",
+            "test": "4ST1"
+          },
+          {
+            "failure": "Bolt Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.096",
+            "secondary_available": false,
+            "secondary_missing_footnote": "b",
+            "shear": "8.62",
+            "specimen": "4STR2",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "4ST2"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.093",
+            "secondary_available": false,
+            "secondary_missing_footnote": "c",
+            "shear": "6.34",
+            "specimen": "4STL3",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "4ST3"
+          }
+        ],
+        "statistics": {
+          "applied_shear_kip": {
+            "mean": {
+              "decimal": "8.2966666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "2489/300"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "17.878711273366296483285565122814661894031477940228435079334293077826634559826229",
+              "denominator": 3,
+              "sd_decimal": "1.4833370786469570648965923863561897818081449531076191637487685156903497806469161",
+              "variance": {
+                "decimal": "2.2002888888888888888888888888888888888888888888888888888888888888888888888888889",
+                "fraction": "99013/45000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "21.896859939146358068816012686295510606098890565095857401053106229552386625623073",
+              "denominator": 2,
+              "sd_decimal": "1.8167094796178428411094351858729841966193379538841196357073727135118630103725276",
+              "variance": {
+                "decimal": "3.3004333333333333333333333333333333333333333333333333333333333333333333333333333",
+                "fraction": "99013/30000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "6.6008666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "99013/15000"
+            },
+            "values": [
+              "993/100",
+              "431/50",
+              "317/50"
+            ]
+          },
+          "beam_end_rotation_rad": {
+            "mean": {
+              "decimal": "0.106",
+              "fraction": "53/500"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "15.386326821037821203892233856317205279704447478862608308613281367079875162750636",
+              "denominator": 3,
+              "sd_decimal": "0.016309506430300090476125767887696237596486714327594364807130078249104667672515674",
+              "variance": {
+                "decimal": "0.000266",
+                "fraction": "133/500000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "18.844324863620923505453190875526686035719411430793808054512361349695637425116175",
+              "denominator": 2,
+              "sd_decimal": "0.019974984355438178915780382328058287197862576116641436537783103030677375670623145",
+              "variance": {
+                "decimal": "0.000399",
+                "fraction": "399/1000000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.000798",
+              "fraction": "399/500000"
+            },
+            "values": [
+              "129/1000",
+              "12/125",
+              "93/1000"
+            ]
+          }
+        }
+      },
+      {
+        "bolts": 5,
+        "cohort": "all_reported_tests",
+        "n": 3,
+        "rule": "initial",
+        "selected": [
+          {
+            "failure": "Block Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.075",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "10.59",
+            "specimen": "5STR1",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "5ST1"
+          },
+          {
+            "failure": "Block Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.083",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "11.69",
+            "specimen": "5STR2",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "5ST2"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.071",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "10.22",
+            "specimen": "5STL3",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "5ST3"
+          }
+        ],
+        "statistics": {
+          "applied_shear_kip": {
+            "mean": {
+              "decimal": "10.833333333333333333333333333333333333333333333333333333333333333333333333333333",
+              "fraction": "65/6"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "5.7628066797700551412434722524579310330938547144815588921790964718964996346268281",
+              "denominator": 3,
+              "sd_decimal": "0.62430405697508930696804282734960919525183426073550221331940211778878746041790636",
+              "variance": {
+                "decimal": "0.38975555555555555555555555555555555555555555555555555555555555555555555555555556",
+                "fraction": "17539/45000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "7.0579679258695664814955816266294428979926699536898827683986772990400777120012536",
+              "denominator": 2,
+              "sd_decimal": "0.76461319196920303549535467621818964728253924498307063324319004072934175213346912",
+              "variance": {
+                "decimal": "0.58463333333333333333333333333333333333333333333333333333333333333333333333333333",
+                "fraction": "17539/30000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "1.1692666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "17539/15000"
+            },
+            "values": [
+              "1059/100",
+              "1169/100",
+              "511/50"
+            ]
+          },
+          "beam_end_rotation_rad": {
+            "mean": {
+              "decimal": "0.076333333333333333333333333333333333333333333333333333333333333333333333333333333",
+              "fraction": "229/3000"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "6.5356460904348321145567663446577280380017813236309640983471536547074849891824262",
+              "denominator": 3,
+              "sd_decimal": "0.0049888765156985885141116649764220657356746930770383025950716606230933802084092520",
+              "variance": {
+                "decimal": "0.000024888888888888888888888888888888888888888888888888888888888888888888888888888889",
+                "fraction": "7/281250"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "8.0044990304905502298481173689572200680951206581099945897069731421954033634022199",
+              "denominator": 2,
+              "sd_decimal": "0.0061101009266077866754507295916373446519792754356906292034763228318758245673970278",
+              "variance": {
+                "decimal": "0.000037333333333333333333333333333333333333333333333333333333333333333333333333333333",
+                "fraction": "7/187500"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.000074666666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "7/93750"
+            },
+            "values": [
+              "3/40",
+              "83/1000",
+              "71/1000"
+            ]
+          }
+        }
+      },
+      {
+        "bolts": 5,
+        "cohort": "all_reported_tests",
+        "n": 3,
+        "rule": "maximum_reported_stage",
+        "selected": [
+          {
+            "failure": "Block Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.075",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "10.59",
+            "specimen": "5STR1",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "5ST1"
+          },
+          {
+            "failure": "Block Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.083",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "11.69",
+            "specimen": "5STR2",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "5ST2"
+          },
+          {
+            "failure": "Bolt Shear Rupture",
+            "physical_page": 105,
+            "rotation": "0.091",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "10.39",
+            "specimen": "5STL3",
+            "stage": "secondary",
+            "table": "4.3",
+            "test": "5ST3"
+          }
+        ],
+        "statistics": {
+          "applied_shear_kip": {
+            "mean": {
+              "decimal": "10.89",
+              "fraction": "1089/100"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "5.2483710436125640304196475429878297348520454130996911230574986136384213780842379",
+              "denominator": 3,
+              "sd_decimal": "0.57154760664940822291269961743137465812538774548655636330096159902522408807337351",
+              "variance": {
+                "decimal": "0.32666666666666666666666666666666666666666666666666666666666666666666666666666667",
+                "fraction": "49/150"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "6.4279155188246097337006427915518824609733700642791551882460973370064279155188246",
+              "denominator": 2,
+              "sd_decimal": "0.7",
+              "variance": {
+                "decimal": "0.49",
+                "fraction": "49/100"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.98",
+              "fraction": "49/50"
+            },
+            "values": [
+              "1059/100",
+              "1169/100",
+              "1039/100"
+            ]
+          },
+          "beam_end_rotation_rad": {
+            "mean": {
+              "decimal": "0.083",
+              "fraction": "83/1000"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "7.8698465631588051347703906014647112994889878896599843483781287301235674777745061",
+              "denominator": 3,
+              "sd_decimal": "0.0065319726474218082618594241992157103785758599484177870091538468460025610065528401",
+              "variance": {
+                "decimal": "0.000042666666666666666666666666666666666666666666666666666666666666666666666666666667",
+                "fraction": "2/46875"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "9.6385542168674698795180722891566265060240963855421686746987951807228915662650602",
+              "denominator": 2,
+              "sd_decimal": "0.008",
+              "variance": {
+                "decimal": "0.000064",
+                "fraction": "1/15625"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.000128",
+              "fraction": "2/15625"
+            },
+            "values": [
+              "3/40",
+              "83/1000",
+              "91/1000"
+            ]
+          }
+        }
+      },
+      {
+        "bolts": 3,
+        "cohort": "TN_figure_subset_without_5ST1",
+        "n": 3,
+        "rule": "initial",
+        "selected": [
+          {
+            "failure": "Bolt Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.128",
+            "secondary_available": false,
+            "secondary_missing_footnote": "a",
+            "shear": "6.76",
+            "specimen": "3STR1",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "3ST1"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.137",
+            "secondary_available": false,
+            "secondary_missing_footnote": "a",
+            "shear": "6.43",
+            "specimen": "3STR2",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "3ST2"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.133",
+            "secondary_available": false,
+            "secondary_missing_footnote": "a",
+            "shear": "5.41",
+            "specimen": "3STR3",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "3ST3"
+          }
+        ],
+        "statistics": {
+          "applied_shear_kip": {
+            "mean": {
+              "decimal": "6.2",
+              "fraction": "31/5"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "9.2682309022958978432996560191903201627110524275075120634220510826761547058772392",
+              "denominator": 3,
+              "sd_decimal": "0.57463031594234566628457867318979985008808525050546574793216716712592159176438883",
+              "variance": {
+                "decimal": "0.3302",
+                "fraction": "1651/5000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "11.351218264459940733777915157486483061058825365464571932173087896751611195937080",
+              "denominator": 2,
+              "sd_decimal": "0.70377553239651632549423073976416194978564717265880345979473144959859989414809895",
+              "variance": {
+                "decimal": "0.4953",
+                "fraction": "4953/10000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.9906",
+              "fraction": "4953/5000"
+            },
+            "values": [
+              "169/25",
+              "643/100",
+              "541/100"
+            ]
+          },
+          "beam_end_rotation_rad": {
+            "mean": {
+              "decimal": "0.13266666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "199/1500"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "2.7752163359766986869876667948101299147870049297322867656274127122016910089257545",
+              "denominator": 3,
+              "sd_decimal": "0.0036817870057290869247369712811147723536174265401115004423990341981875767385081677",
+              "variance": {
+                "decimal": "0.000013555555555555555555555555555555555555555555555555555555555555555555555555555556",
+                "fraction": "61/4500000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "3.3989319744896188184487122656736837511119313044363225687359598682435877857716649",
+              "denominator": 2,
+              "sd_decimal": "0.0045092497528228942991419582724604204431418288638855212745230400918698264624570756",
+              "variance": {
+                "decimal": "0.000020333333333333333333333333333333333333333333333333333333333333333333333333333333",
+                "fraction": "61/3000000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.000040666666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "61/1500000"
+            },
+            "values": [
+              "16/125",
+              "137/1000",
+              "133/1000"
+            ]
+          }
+        }
+      },
+      {
+        "bolts": 3,
+        "cohort": "TN_figure_subset_without_5ST1",
+        "n": 3,
+        "rule": "maximum_reported_stage",
+        "selected": [
+          {
+            "failure": "Bolt Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.128",
+            "secondary_available": false,
+            "secondary_missing_footnote": "a",
+            "shear": "6.76",
+            "specimen": "3STR1",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "3ST1"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.137",
+            "secondary_available": false,
+            "secondary_missing_footnote": "a",
+            "shear": "6.43",
+            "specimen": "3STR2",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "3ST2"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.133",
+            "secondary_available": false,
+            "secondary_missing_footnote": "a",
+            "shear": "5.41",
+            "specimen": "3STR3",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "3ST3"
+          }
+        ],
+        "statistics": {
+          "applied_shear_kip": {
+            "mean": {
+              "decimal": "6.2",
+              "fraction": "31/5"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "9.2682309022958978432996560191903201627110524275075120634220510826761547058772392",
+              "denominator": 3,
+              "sd_decimal": "0.57463031594234566628457867318979985008808525050546574793216716712592159176438883",
+              "variance": {
+                "decimal": "0.3302",
+                "fraction": "1651/5000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "11.351218264459940733777915157486483061058825365464571932173087896751611195937080",
+              "denominator": 2,
+              "sd_decimal": "0.70377553239651632549423073976416194978564717265880345979473144959859989414809895",
+              "variance": {
+                "decimal": "0.4953",
+                "fraction": "4953/10000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.9906",
+              "fraction": "4953/5000"
+            },
+            "values": [
+              "169/25",
+              "643/100",
+              "541/100"
+            ]
+          },
+          "beam_end_rotation_rad": {
+            "mean": {
+              "decimal": "0.13266666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "199/1500"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "2.7752163359766986869876667948101299147870049297322867656274127122016910089257545",
+              "denominator": 3,
+              "sd_decimal": "0.0036817870057290869247369712811147723536174265401115004423990341981875767385081677",
+              "variance": {
+                "decimal": "0.000013555555555555555555555555555555555555555555555555555555555555555555555555555556",
+                "fraction": "61/4500000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "3.3989319744896188184487122656736837511119313044363225687359598682435877857716649",
+              "denominator": 2,
+              "sd_decimal": "0.0045092497528228942991419582724604204431418288638855212745230400918698264624570756",
+              "variance": {
+                "decimal": "0.000020333333333333333333333333333333333333333333333333333333333333333333333333333333",
+                "fraction": "61/3000000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.000040666666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "61/1500000"
+            },
+            "values": [
+              "16/125",
+              "137/1000",
+              "133/1000"
+            ]
+          }
+        }
+      },
+      {
+        "bolts": 4,
+        "cohort": "TN_figure_subset_without_5ST1",
+        "n": 3,
+        "rule": "initial",
+        "selected": [
+          {
+            "failure": "Block Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.093",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "7.02",
+            "specimen": "4STR1",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "4ST1"
+          },
+          {
+            "failure": "Bolt Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.096",
+            "secondary_available": false,
+            "secondary_missing_footnote": "b",
+            "shear": "8.62",
+            "specimen": "4STR2",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "4ST2"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.093",
+            "secondary_available": false,
+            "secondary_missing_footnote": "c",
+            "shear": "6.34",
+            "specimen": "4STL3",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "4ST3"
+          }
+        ],
+        "statistics": {
+          "applied_shear_kip": {
+            "mean": {
+              "decimal": "7.3266666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "1099/150"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "13.044557552289299480200931137257595261222624777913448424902349990535469154960395",
+              "denominator": 3,
+              "sd_decimal": "0.95573124999772934191605488798973981280557764206179198793117884263989870675343159",
+              "variance": {
+                "decimal": "0.91342222222222222222222222222222222222222222222222222222222222222222222222222222",
+                "fraction": "5138/5625"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "15.976254961738739734372532749434084713042269273156600338202111742650226174111479",
+              "denominator": 2,
+              "sd_decimal": "1.1705269468633916645383608994418706066422302620799402514456080536781732376899010",
+              "variance": {
+                "decimal": "1.3701333333333333333333333333333333333333333333333333333333333333333333333333333",
+                "fraction": "2569/1875"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "2.7402666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "5138/1875"
+            },
+            "values": [
+              "351/50",
+              "431/50",
+              "317/50"
+            ]
+          },
+          "beam_end_rotation_rad": {
+            "mean": {
+              "decimal": "0.094",
+              "fraction": "47/500"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "1.5044825131628670731932858768188277431592253993371788012517869553092898707043691",
+              "denominator": 3,
+              "sd_decimal": "0.0014142135623730950488016887242096980785696718753769480731766797379907324784621070",
+              "variance": {
+                "decimal": "0.000002",
+                "fraction": "1/500000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "1.8426072420945503122632407888360344329178779295855113064423478504807798052221277",
+              "denominator": 2,
+              "sd_decimal": "0.0017320508075688772935274463415058723669428052538103806280558069794519330169088000",
+              "variance": {
+                "decimal": "0.000003",
+                "fraction": "3/1000000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.000006",
+              "fraction": "3/500000"
+            },
+            "values": [
+              "93/1000",
+              "12/125",
+              "93/1000"
+            ]
+          }
+        }
+      },
+      {
+        "bolts": 4,
+        "cohort": "TN_figure_subset_without_5ST1",
+        "n": 3,
+        "rule": "maximum_reported_stage",
+        "selected": [
+          {
+            "failure": "Bolt Shear Rupture",
+            "physical_page": 105,
+            "rotation": "0.129",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "9.93",
+            "specimen": "4STR1",
+            "stage": "secondary",
+            "table": "4.3",
+            "test": "4ST1"
+          },
+          {
+            "failure": "Bolt Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.096",
+            "secondary_available": false,
+            "secondary_missing_footnote": "b",
+            "shear": "8.62",
+            "specimen": "4STR2",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "4ST2"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.093",
+            "secondary_available": false,
+            "secondary_missing_footnote": "c",
+            "shear": "6.34",
+            "specimen": "4STL3",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "4ST3"
+          }
+        ],
+        "statistics": {
+          "applied_shear_kip": {
+            "mean": {
+              "decimal": "8.2966666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "2489/300"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "17.878711273366296483285565122814661894031477940228435079334293077826634559826229",
+              "denominator": 3,
+              "sd_decimal": "1.4833370786469570648965923863561897818081449531076191637487685156903497806469161",
+              "variance": {
+                "decimal": "2.2002888888888888888888888888888888888888888888888888888888888888888888888888889",
+                "fraction": "99013/45000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "21.896859939146358068816012686295510606098890565095857401053106229552386625623073",
+              "denominator": 2,
+              "sd_decimal": "1.8167094796178428411094351858729841966193379538841196357073727135118630103725276",
+              "variance": {
+                "decimal": "3.3004333333333333333333333333333333333333333333333333333333333333333333333333333",
+                "fraction": "99013/30000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "6.6008666666666666666666666666666666666666666666666666666666666666666666666666667",
+              "fraction": "99013/15000"
+            },
+            "values": [
+              "993/100",
+              "431/50",
+              "317/50"
+            ]
+          },
+          "beam_end_rotation_rad": {
+            "mean": {
+              "decimal": "0.106",
+              "fraction": "53/500"
+            },
+            "n": 3,
+            "population": {
+              "cov_percent_decimal": "15.386326821037821203892233856317205279704447478862608308613281367079875162750636",
+              "denominator": 3,
+              "sd_decimal": "0.016309506430300090476125767887696237596486714327594364807130078249104667672515674",
+              "variance": {
+                "decimal": "0.000266",
+                "fraction": "133/500000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "18.844324863620923505453190875526686035719411430793808054512361349695637425116175",
+              "denominator": 2,
+              "sd_decimal": "0.019974984355438178915780382328058287197862576116641436537783103030677375670623145",
+              "variance": {
+                "decimal": "0.000399",
+                "fraction": "399/1000000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.000798",
+              "fraction": "399/500000"
+            },
+            "values": [
+              "129/1000",
+              "12/125",
+              "93/1000"
+            ]
+          }
+        }
+      },
+      {
+        "bolts": 5,
+        "cohort": "TN_figure_subset_without_5ST1",
+        "n": 2,
+        "rule": "initial",
+        "selected": [
+          {
+            "failure": "Block Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.083",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "11.69",
+            "specimen": "5STR2",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "5ST2"
+          },
+          {
+            "failure": "Tension Rupture",
+            "physical_page": 104,
+            "rotation": "0.071",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "10.22",
+            "specimen": "5STL3",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "5ST3"
+          }
+        ],
+        "statistics": {
+          "applied_shear_kip": {
+            "mean": {
+              "decimal": "10.955",
+              "fraction": "2191/200"
+            },
+            "n": 2,
+            "population": {
+              "cov_percent_decimal": "6.7092651757188498402555910543130990415335463258785942492012779552715654952076677",
+              "denominator": 2,
+              "sd_decimal": "0.735",
+              "variance": {
+                "decimal": "0.540225",
+                "fraction": "21609/40000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "9.4883338050591041612892853700970158626080221670657857944761260376375022516626992",
+              "denominator": 1,
+              "sd_decimal": "1.0394469683442248608692412122941280877487088284020568337848596074231883716696487",
+              "variance": {
+                "decimal": "1.08045",
+                "fraction": "21609/20000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "1.08045",
+              "fraction": "21609/20000"
+            },
+            "values": [
+              "1169/100",
+              "511/50"
+            ]
+          },
+          "beam_end_rotation_rad": {
+            "mean": {
+              "decimal": "0.077",
+              "fraction": "77/1000"
+            },
+            "n": 2,
+            "population": {
+              "cov_percent_decimal": "7.7922077922077922077922077922077922077922077922077922077922077922077922077922078",
+              "denominator": 2,
+              "sd_decimal": "0.006",
+              "variance": {
+                "decimal": "0.000036",
+                "fraction": "9/250000"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "11.019845940569571808844327721114530482361079548391803167610491464862850481522912",
+              "denominator": 1,
+              "sd_decimal": "0.0084852813742385702928101323452581884714180312522616884390600784279443948707726422",
+              "variance": {
+                "decimal": "0.000072",
+                "fraction": "9/125000"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.000072",
+              "fraction": "9/125000"
+            },
+            "values": [
+              "83/1000",
+              "71/1000"
+            ]
+          }
+        }
+      },
+      {
+        "bolts": 5,
+        "cohort": "TN_figure_subset_without_5ST1",
+        "n": 2,
+        "rule": "maximum_reported_stage",
+        "selected": [
+          {
+            "failure": "Block Shear Rupture",
+            "physical_page": 104,
+            "rotation": "0.083",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "11.69",
+            "specimen": "5STR2",
+            "stage": "initial",
+            "table": "4.2",
+            "test": "5ST2"
+          },
+          {
+            "failure": "Bolt Shear Rupture",
+            "physical_page": 105,
+            "rotation": "0.091",
+            "secondary_available": true,
+            "secondary_missing_footnote": null,
+            "shear": "10.39",
+            "specimen": "5STL3",
+            "stage": "secondary",
+            "table": "4.3",
+            "test": "5ST3"
+          }
+        ],
+        "statistics": {
+          "applied_shear_kip": {
+            "mean": {
+              "decimal": "11.04",
+              "fraction": "276/25"
+            },
+            "n": 2,
+            "population": {
+              "cov_percent_decimal": "5.8876811594202898550724637681159420289855072463768115942028985507246376811594203",
+              "denominator": 2,
+              "sd_decimal": "0.65",
+              "variance": {
+                "decimal": "0.4225",
+                "fraction": "169/400"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "8.3264385465807226605171890465244904988250608604621036917105238196918125996410288",
+              "denominator": 1,
+              "sd_decimal": "0.91923881554251178172109767073630375107028671899501624756484182969397611100036958",
+              "variance": {
+                "decimal": "0.845",
+                "fraction": "169/200"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.845",
+              "fraction": "169/200"
+            },
+            "values": [
+              "1169/100",
+              "1039/100"
+            ]
+          },
+          "beam_end_rotation_rad": {
+            "mean": {
+              "decimal": "0.087",
+              "fraction": "87/1000"
+            },
+            "n": 2,
+            "population": {
+              "cov_percent_decimal": "4.5977011494252873563218390804597701149425287356321839080459770114942528735632184",
+              "denominator": 2,
+              "sd_decimal": "0.004",
+              "variance": {
+                "decimal": "0.000016",
+                "fraction": "1/62500"
+              }
+            },
+            "sample": {
+              "cov_percent_decimal": "6.5021313212556094197778791917687267980214798867905658536858838528309539239637106",
+              "denominator": 1,
+              "sd_decimal": "0.0056568542494923801952067548968387923142786875015077922927067189519629299138484282",
+              "variance": {
+                "decimal": "0.000032",
+                "fraction": "1/31250"
+              }
+            },
+            "sum_squared_deviations": {
+              "decimal": "0.000032",
+              "fraction": "1/31250"
+            },
+            "values": [
+              "83/1000",
+              "91/1000"
+            ]
+          }
+        }
+      }
+    ],
+    "scope": "Initial or maximum reported failure-stage shear, with same-stage rotation. All reported tests and explicitly named figure subset; not acquired-history global peaks or NIST membership.",
+    "secondary_contrasts": [
+      {
+        "bolts": 3,
+        "initial": {
+          "failure": "Bolt Shear Rupture",
+          "physical_page": 104,
+          "rotation": "0.128",
+          "shear": "6.76",
+          "specimen": "3STR1",
+          "table": "4.2"
+        },
+        "secondary": null,
+        "secondary_available": false,
+        "secondary_minus_initial": null,
+        "secondary_missing_footnote": "a",
+        "test": "3ST1"
+      },
+      {
+        "bolts": 3,
+        "initial": {
+          "failure": "Tension Rupture",
+          "physical_page": 104,
+          "rotation": "0.137",
+          "shear": "6.43",
+          "specimen": "3STR2",
+          "table": "4.2"
+        },
+        "secondary": null,
+        "secondary_available": false,
+        "secondary_minus_initial": null,
+        "secondary_missing_footnote": "a",
+        "test": "3ST2"
+      },
+      {
+        "bolts": 3,
+        "initial": {
+          "failure": "Tension Rupture",
+          "physical_page": 104,
+          "rotation": "0.133",
+          "shear": "5.41",
+          "specimen": "3STR3",
+          "table": "4.2"
+        },
+        "secondary": null,
+        "secondary_available": false,
+        "secondary_minus_initial": null,
+        "secondary_missing_footnote": "a",
+        "test": "3ST3"
+      },
+      {
+        "bolts": 4,
+        "initial": {
+          "failure": "Block Shear Rupture",
+          "physical_page": 104,
+          "rotation": "0.093",
+          "shear": "7.02",
+          "specimen": "4STR1",
+          "table": "4.2"
+        },
+        "secondary": {
+          "failure": "Bolt Shear Rupture",
+          "physical_page": 105,
+          "rotation": "0.129",
+          "shear": "9.93",
+          "specimen": "4STR1",
+          "table": "4.3"
+        },
+        "secondary_available": true,
+        "secondary_minus_initial": {
+          "rotation_difference_rad": {
+            "decimal": "0.036",
+            "fraction": "9/250"
+          },
+          "shear_difference_kip": {
+            "decimal": "2.91",
+            "fraction": "291/100"
+          },
+          "shear_percent_change_from_initial": {
+            "decimal": "41.452991452991452991452991452991452991452991452991452991452991452991452991452991",
+            "fraction": "4850/117"
+          }
+        },
+        "secondary_missing_footnote": null,
+        "test": "4ST1"
+      },
+      {
+        "bolts": 4,
+        "initial": {
+          "failure": "Bolt Shear Rupture",
+          "physical_page": 104,
+          "rotation": "0.096",
+          "shear": "8.62",
+          "specimen": "4STR2",
+          "table": "4.2"
+        },
+        "secondary": null,
+        "secondary_available": false,
+        "secondary_minus_initial": null,
+        "secondary_missing_footnote": "b",
+        "test": "4ST2"
+      },
+      {
+        "bolts": 4,
+        "initial": {
+          "failure": "Tension Rupture",
+          "physical_page": 104,
+          "rotation": "0.093",
+          "shear": "6.34",
+          "specimen": "4STL3",
+          "table": "4.2"
+        },
+        "secondary": null,
+        "secondary_available": false,
+        "secondary_minus_initial": null,
+        "secondary_missing_footnote": "c",
+        "test": "4ST3"
+      },
+      {
+        "bolts": 5,
+        "initial": {
+          "failure": "Block Shear Rupture",
+          "physical_page": 104,
+          "rotation": "0.075",
+          "shear": "10.59",
+          "specimen": "5STR1",
+          "table": "4.2"
+        },
+        "secondary": {
+          "failure": "Bolt Shear Rupture",
+          "physical_page": 105,
+          "rotation": "0.087",
+          "shear": "8.16",
+          "specimen": "5STR1",
+          "table": "4.3"
+        },
+        "secondary_available": true,
+        "secondary_minus_initial": {
+          "rotation_difference_rad": {
+            "decimal": "0.012",
+            "fraction": "3/250"
+          },
+          "shear_difference_kip": {
+            "decimal": "-2.43",
+            "fraction": "-243/100"
+          },
+          "shear_percent_change_from_initial": {
+            "decimal": "-22.946175637393767705382436260623229461756373937677053824362606232294617563739377",
+            "fraction": "-8100/353"
+          }
+        },
+        "secondary_missing_footnote": null,
+        "test": "5ST1"
+      },
+      {
+        "bolts": 5,
+        "initial": {
+          "failure": "Block Shear Rupture",
+          "physical_page": 104,
+          "rotation": "0.083",
+          "shear": "11.69",
+          "specimen": "5STR2",
+          "table": "4.2"
+        },
+        "secondary": {
+          "failure": "Bolt Shear Rupture",
+          "physical_page": 105,
+          "rotation": "0.097",
+          "shear": "9.49",
+          "specimen": "5STR2",
+          "table": "4.3"
+        },
+        "secondary_available": true,
+        "secondary_minus_initial": {
+          "rotation_difference_rad": {
+            "decimal": "0.014",
+            "fraction": "7/500"
+          },
+          "shear_difference_kip": {
+            "decimal": "-2.2",
+            "fraction": "-11/5"
+          },
+          "shear_percent_change_from_initial": {
+            "decimal": "-18.819503849443969204448246364414029084687767322497861420017108639863130881094953",
+            "fraction": "-22000/1169"
+          }
+        },
+        "secondary_missing_footnote": null,
+        "test": "5ST2"
+      },
+      {
+        "bolts": 5,
+        "initial": {
+          "failure": "Tension Rupture",
+          "physical_page": 104,
+          "rotation": "0.071",
+          "shear": "10.22",
+          "specimen": "5STL3",
+          "table": "4.2"
+        },
+        "secondary": {
+          "failure": "Bolt Shear Rupture",
+          "physical_page": 105,
+          "rotation": "0.091",
+          "shear": "10.39",
+          "specimen": "5STL3",
+          "table": "4.3"
+        },
+        "secondary_available": true,
+        "secondary_minus_initial": {
+          "rotation_difference_rad": {
+            "decimal": "0.02",
+            "fraction": "1/50"
+          },
+          "shear_difference_kip": {
+            "decimal": "0.17",
+            "fraction": "17/100"
+          },
+          "shear_percent_change_from_initial": {
+            "decimal": "1.6634050880626223091976516634050880626223091976516634050880626223091976516634051",
+            "fraction": "850/511"
+          }
+        },
+        "secondary_missing_footnote": null,
+        "test": "5ST3"
+      }
+    ]
+  },
+  "status": "PASS"
+}

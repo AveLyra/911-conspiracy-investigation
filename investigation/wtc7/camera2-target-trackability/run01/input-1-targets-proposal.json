@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-11",
+  "status": "baseline_only_proposal_pending_root_acceptance",
+  "reviewer": "Computational AI annotator; not human or specialist review.",
+  "independence_limits": "Later imagery and prior Camera 2 research are familiar. This proposal inspected only baseline f6593 and its new labeled derivatives. No later frame was opened or scored for selection. Shared seeds are known; a subsequent baseline re-localization is not independent baseline construction.",
+  "coordinate_convention": "Zero-based native stored pixel centers; origin upper-left; x right, y down.",
+  "uncertainty_definition": "Subjective rectangular localization envelope in native encoded pixels; not a confidence interval, survey accuracy or calibrated physical error.",
+  "baseline": {
+    "camera": "camera2",
+    "source_id": "VID-WTC7-001",
+    "frame_index_zero_based": 6593,
+    "path": "../multiview-onset-review/refine01/camera2/f006593.png",
+    "sha256": "39bcb70c16ccc468133edf92b3a9dc9ea43edbc5692d82d8adcfc08cc22903a8",
+    "source_time_seconds_exact": "219767/999",
+    "mode": "L",
+    "stored_size": [640, 480]
+  },
+  "targets": [
+    {
+      "id": "C2-T1",
+      "xy": [454, 156],
+      "envelope_halfwidth_xy": [3, 3],
+      "description": "Apparent image-right outer upper corner of the large target facade, at the end of the lower of its two visible upper-outline segments.",
+      "point_type": "Apparent silhouette corner: estimated intersection of upper and exterior side boundaries.",
+      "point_definition": "Localize the corner where the short, nearly horizontal lower upper-outline segment meets the long near-vertical image-right exterior boundary of the target. Use the center of the blurred dark-to-light corner transition, not the brightest halo pixel, a nearby smoke edge or a lower foreground roof corner.",
+      "baseline_visual_association": "The red hollow marker in baseline-target-markers.png surrounds the visible outer upper corner; native and coordinate crops show both participating boundary segments.",
+      "material_identity_caveat": "These are projected appearance boundaries, not authenticated material edges or a surveyed corner. Blur, bright halo, smoke/background changes, perspective and overlap can shift the apparent intersection. Exact facade orientation, building component, structural member and persistent material identity are not assigned.",
+      "continuity_rule": "Follow this defined target outer-corner appearance only while identifiable; do not substitute a foreground-building corner or smoke boundary. A localized changed silhouette must retain changed or uncertain correspondence, rather than automatically becoming the same point.",
+      "root_acceptance": "pending"
+    },
+    {
+      "id": "C2-T2",
+      "xy": [424, 144],
+      "envelope_halfwidth_xy": [3, 3],
+      "description": "Upper endpoint of the short downward step in the target's upper outline, image-left of C2-T1.",
+      "point_type": "Apparent stepped-silhouette corner: upper endpoint of the short descending boundary.",
+      "point_definition": "Localize the corner where the higher, long upper-outline segment ends and turns into the short near-vertical downward step. This is the UPPER endpoint near (424,144), not the lower junction near the lower upper-outline segment or an arbitrary point on the horizontal roof edge.",
+      "baseline_visual_association": "The blue hollow marker in baseline-target-markers.png surrounds the upper end of the short outlined step; the separate lower junction is visible below it and is not this target.",
+      "material_identity_caveat": "A raised outline is visible, but no penthouse, roof component, cardinal direction, structural member or material-point identity is authenticated here. Overlapping projections, smoke, blur and deformation can change or remove this corner. A subsequent nearby lower corner can be precisely localized without being a continuation of T2.",
+      "continuity_rule": "If this upper step endpoint can no longer be distinguished, retain ambiguous or unavailable localization as appropriate; do not silently relabel the lower junction or a replacement silhouette as T2. Localization and correspondence must be recorded separately.",
+      "root_acceptance": "pending"
+    }
+  ],
+  "third_point_decision": "No C2-T3 proposed. The image-left upper transition is smoke-softened and the adjacent exterior boundary is not sufficiently distinct for this reviewer to identify a separable corner from the baseline alone. No uniquely defined target facade landmark was selected to fill a quota.",
+  "geometry_limit": "Both proposed points occupy the image-right upper-outline region and are only 30 native pixels apart horizontally and 12 vertically. They do not sample the full facade width or depth and cannot support whole-building rigid motion, symmetry or tilt claims by themselves.",
+  "actual_selection_viewing_coverage": {
+    "distinct_native_full_frames": 1,
+    "native_frame_indices": [6593],
+    "exact_native_resolution_crops": 1,
+    "labeled_nearest_neighbor_coordinate_crops": 1,
+    "labeled_marker_crops": 1,
+    "later_frames_opened_for_selection": 0,
+    "new_numerical_scoring": 0
+  },
+  "derivatives": [
+    {
+      "path": "baseline-upper-outline-native-crop.png",
+      "sha256": "92b54a088155eca639df1f356b21e44671a992cc6ab25c94b290034559100ae9",
+      "transformation": "Exact mode-L crop [280,115,470,200), size 190x85; no resize or contrast change."
+    },
+    {
+      "path": "baseline-upper-outline-coordinate-crop.png",
+      "sha256": "522d3d2ccc820715401bf826ec52501d83424b3b9997f2a0df837ad41b1aec0e",
+      "transformation": "Same crop enlarged 4x nearest-neighbor to 760x340, RGB only for display composition, pasted at (30,25) in an 800x415 white canvas with exterior source-coordinate ticks and explicit analytical labels. No point overlays, contrast adjustment or inferred detail."
+    },
+    {
+      "path": "baseline-target-markers.png",
+      "sha256": "766f13a30d9d7bb9dce7cba79de6cdf44a4b94f71d438c57754f1f989ee70ade",
+      "transformation": "Separate copy of labeled coordinate crop with red T1 and blue T2 hollow crosshair markers and coordinate text; the exact selected source-pixel display block remains uncovered. Proposal aid only, not historical evidence."
+    }
+  ],
+  "derivative_runtime": "Explicit Python 3.13.7 interpreter; Pillow 12.0.0, verified from the actual generating command.",
+  "controls_read": {
+    "../CHARTER.md": "54a4a23558a6b1ed756d3398e9e58d0972c6e531aadef5cd4027f29c4b9756bd",
+    "../camera2-reference-repair/report.md": "45661aa0dd763d0c26c6e2b8fc77b171f123ea40d1c7220d56cc131742e3e8ad",
+    "PROTOCOL.md": "b3cd1d4dc5c9cc8acb4da999bb0b8315bb98ff0df1b79318476f45b24e9766a5"
+  },
+  "next_gate": "Root independently checks and freezes accepted definitions before either analyst opens the evaluation set for this task. Each analyst then records localization and correspondence separately, including an independently re-estimated baseline coordinate/envelope, without seeing the other's new coordinates. This proposal does not begin evaluation."
+}

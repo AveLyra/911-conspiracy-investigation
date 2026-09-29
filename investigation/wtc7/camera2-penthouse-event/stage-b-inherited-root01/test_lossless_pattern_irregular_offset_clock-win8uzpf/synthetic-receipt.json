@@ -1,0 +1,188 @@
+{
+  "decode": {
+    "checked_frames": 4,
+    "command": [
+      "/opt/homebrew/bin/ffmpeg",
+      "-nostdin",
+      "-nostats",
+      "-hide_banner",
+      "-v",
+      "warning",
+      "-copyts",
+      "-noautorotate",
+      "-i",
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-penthouse-event/stage-b-inherited-root01/test_lossless_pattern_irregular_offset_clock-win8uzpf/known-pattern.mkv",
+      "-map",
+      "0:v:0",
+      "-an",
+      "-noautoscale",
+      "-pix_fmt",
+      "yuv420p",
+      "-fps_mode",
+      "passthrough",
+      "-enc_time_base:v",
+      "demux",
+      "-f",
+      "rawvideo",
+      "-"
+    ],
+    "diagnostics": {
+      "audio_layout_guess_stereo_lines": 0,
+      "raw_local_log": "decoder.local-only.log",
+      "unclassified_lines": 0
+    },
+    "exit_code": 0,
+    "geometry": [
+      16,
+      12
+    ],
+    "images": [
+      {
+        "best_effort_timestamp": "5000",
+        "decoded_sha256": "05fa313cbbcfac399be80783a22d0dd98911d934c289482cc0b3a374775d48c3",
+        "frame_index_zero_based": "0",
+        "identical_to_previous_decoded_frame": "False",
+        "luma_sha256": "8b4a544837a1a0280fa8a7c82865c27a1064b3cc6281fda0753566b9bb104a87",
+        "png": "f000000.png",
+        "png_identity": {
+          "bytes": 76,
+          "sha256": "500730959deaba43a89529882eb283ed319c5bb6ee9f1d5f6f88457a5eb31d46"
+        },
+        "selection_reasons": [
+          "synthetic-all"
+        ],
+        "source_pts": "5000",
+        "source_time_base": "1/1000",
+        "source_time_seconds_exact": "5"
+      },
+      {
+        "best_effort_timestamp": "5040",
+        "decoded_sha256": "3792104a0d2a05736937fbbf99e8681aec2892ac0c742ad3316e09f16f9219fa",
+        "frame_index_zero_based": "1",
+        "identical_to_previous_decoded_frame": "False",
+        "luma_sha256": "c47e43d4610031f313e42873b43e2f61cff1aae4e530531d432da2455b7d6dd2",
+        "png": "f000001.png",
+        "png_identity": {
+          "bytes": 74,
+          "sha256": "b78699a3f9a4360387acf6e05b6d32677cc5406fa8f9d4cdc5ea18f317463adf"
+        },
+        "selection_reasons": [
+          "synthetic-all"
+        ],
+        "source_pts": "5040",
+        "source_time_base": "1/1000",
+        "source_time_seconds_exact": "126/25"
+      },
+      {
+        "best_effort_timestamp": "5120",
+        "decoded_sha256": "150b20402a0ee7cf704d847fd4988edbcf8869b8cafa1caf8fed9d064aa4272d",
+        "frame_index_zero_based": "2",
+        "identical_to_previous_decoded_frame": "False",
+        "luma_sha256": "637bda4df1a1ae662a565512996f90a91cb8fb47baf6a29face93d2ca1af57df",
+        "png": "f000002.png",
+        "png_identity": {
+          "bytes": 78,
+          "sha256": "59d2f4b64729713af40fc1ea921f9d680892253528a6743bd14ee69a56d20cae"
+        },
+        "selection_reasons": [
+          "synthetic-all"
+        ],
+        "source_pts": "5120",
+        "source_time_base": "1/1000",
+        "source_time_seconds_exact": "128/25"
+      },
+      {
+        "best_effort_timestamp": "5200",
+        "decoded_sha256": "9bbbded17bec9d0c4341a28eae7f4c891fd8d19094384ecabc9f80d4881dd73e",
+        "frame_index_zero_based": "3",
+        "identical_to_previous_decoded_frame": "False",
+        "luma_sha256": "fa7a7dcc9f942b511a4801f3b3a5fdc250c1ebe9420dee0cc0cd3410aec15898",
+        "png": "f000003.png",
+        "png_identity": {
+          "bytes": 81,
+          "sha256": "d26f49cb2213322fc4db8ec0cece48b5f1bf88cdd5f293684ada842c9684a58f"
+        },
+        "selection_reasons": [
+          "synthetic-all"
+        ],
+        "source_pts": "5200",
+        "source_time_base": "1/1000",
+        "source_time_seconds_exact": "26/5"
+      }
+    ],
+    "raw_stream_sha256": "5c7cf01f61f7fcab53c3577debc0dbd91976eb4952c04188dbc93e2276f8203f"
+  },
+  "encode_command": [
+    "/opt/homebrew/bin/ffmpeg",
+    "-nostdin",
+    "-hide_banner",
+    "-v",
+    "warning",
+    "-f",
+    "rawvideo",
+    "-pixel_format",
+    "yuv420p",
+    "-video_size",
+    "16x12",
+    "-framerate",
+    "25",
+    "-i",
+    "-",
+    "-vf",
+    "settb=1/1000,setpts=if(eq(N\\,0)\\,5000\\,if(eq(N\\,1)\\,5040\\,if(eq(N\\,2)\\,5120\\,5200)))",
+    "-c:v",
+    "ffv1",
+    "-pix_fmt",
+    "yuv420p",
+    "-enc_time_base:v",
+    "1/1000",
+    "-fps_mode",
+    "passthrough",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-penthouse-event/stage-b-inherited-root01/test_lossless_pattern_irregular_offset_clock-win8uzpf/known-pattern.mkv"
+  ],
+  "metadata": {
+    "frames": [
+      {
+        "height": 12,
+        "pix_fmt": "yuv420p",
+        "pts": 5000,
+        "width": 16
+      },
+      {
+        "height": 12,
+        "pix_fmt": "yuv420p",
+        "pts": 5040,
+        "width": 16
+      },
+      {
+        "height": 12,
+        "pix_fmt": "yuv420p",
+        "pts": 5120,
+        "width": 16
+      },
+      {
+        "height": 12,
+        "pix_fmt": "yuv420p",
+        "pts": 5200,
+        "width": 16
+      }
+    ]
+  },
+  "probe_command": [
+    "/opt/homebrew/bin/ffprobe",
+    "-v",
+    "error",
+    "-select_streams",
+    "v:0",
+    "-show_frames",
+    "-show_entries",
+    "frame=pts,width,height,pix_fmt",
+    "-of",
+    "json",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/camera2-penthouse-event/stage-b-inherited-root01/test_lossless_pattern_irregular_offset_clock-win8uzpf/known-pattern.mkv"
+  ],
+  "source": {
+    "bytes": 862,
+    "sha256": "2cd7006e4ab64a8ba0cb3a2a8d75c9cddd39c4667ecdac139d7a3fd52d8d3cd9"
+  }
+}

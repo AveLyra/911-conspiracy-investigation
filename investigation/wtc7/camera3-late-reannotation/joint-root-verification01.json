@@ -1,0 +1,148 @@
+{
+  "control_groups": 5,
+  "control_solutions": 7,
+  "inputs_after": {
+    "JOINT-ENVELOPE-ADDENDUM.md": {
+      "bytes": 2611,
+      "sha256": "d2db97115a3ded371ae5de073607aed0657f8e79c9053c05835b8f2378fd6679"
+    },
+    "PROTOCOL.md": {
+      "bytes": 7092,
+      "sha256": "7b13e006ab382121452f6e7c59f37d7f586b57f297a7e1c7154b86b2aae06c2f"
+    },
+    "independent-observations.json": {
+      "bytes": 10973,
+      "sha256": "529db0a68030a3ef26eef26723f0ab8c635fe47d6a743b780014d375ab95808f"
+    },
+    "joint01/controls.json": {
+      "bytes": 21213,
+      "sha256": "6e0a04c10f228f62c991bf06af42d9cb5a8344909f31714bf5e6af57373d8c6a"
+    },
+    "joint01/receipt.json": {
+      "bytes": 2165,
+      "sha256": "ce7d510d44e0c05782aa29d6268c5c3557c89288f74906a8e2bef15c896fe2a2"
+    },
+    "joint01/result.json": {
+      "bytes": 130134,
+      "sha256": "7e9b4466a1ccbefad226086efd9d66cfaa34d94378100581efb6dd05ad128668"
+    },
+    "joint_feasibility.py": {
+      "bytes": 11702,
+      "sha256": "14fc35b53ae975333c5d3ecc92e5e95265976c24a6c8cc1d796f586d30e0a070"
+    },
+    "root-observations.json": {
+      "bytes": 12214,
+      "sha256": "20b873f21704b3ccb8ceb75cba3eb09a84ab3431223a0c3f68ef7ce54efa397a"
+    },
+    "verify_joint.py": {
+      "bytes": 7310,
+      "sha256": "02388659499102790309fb68e6a8a2c33f6c75571d91ee59f4c88f2496173ba6"
+    }
+  },
+  "inputs_before": {
+    "JOINT-ENVELOPE-ADDENDUM.md": {
+      "bytes": 2611,
+      "sha256": "d2db97115a3ded371ae5de073607aed0657f8e79c9053c05835b8f2378fd6679"
+    },
+    "PROTOCOL.md": {
+      "bytes": 7092,
+      "sha256": "7b13e006ab382121452f6e7c59f37d7f586b57f297a7e1c7154b86b2aae06c2f"
+    },
+    "independent-observations.json": {
+      "bytes": 10973,
+      "sha256": "529db0a68030a3ef26eef26723f0ab8c635fe47d6a743b780014d375ab95808f"
+    },
+    "joint01/controls.json": {
+      "bytes": 21213,
+      "sha256": "6e0a04c10f228f62c991bf06af42d9cb5a8344909f31714bf5e6af57373d8c6a"
+    },
+    "joint01/receipt.json": {
+      "bytes": 2165,
+      "sha256": "ce7d510d44e0c05782aa29d6268c5c3557c89288f74906a8e2bef15c896fe2a2"
+    },
+    "joint01/result.json": {
+      "bytes": 130134,
+      "sha256": "7e9b4466a1ccbefad226086efd9d66cfaa34d94378100581efb6dd05ad128668"
+    },
+    "joint_feasibility.py": {
+      "bytes": 11702,
+      "sha256": "14fc35b53ae975333c5d3ecc92e5e95265976c24a6c8cc1d796f586d30e0a070"
+    },
+    "root-observations.json": {
+      "bytes": 12214,
+      "sha256": "20b873f21704b3ccb8ceb75cba3eb09a84ab3431223a0c3f68ef7ce54efa397a"
+    },
+    "verify_joint.py": {
+      "bytes": 7310,
+      "sha256": "02388659499102790309fb68e6a8a2c33f6c75571d91ee59f4c88f2496173ba6"
+    }
+  },
+  "limitations": "only current rational lattice and subjective supplied y boxes; not observations, calibrated uncertainty or a physical rigid-body model",
+  "method": "quarter-pixel integer inequalities from original observer boxes; no producer import",
+  "original_box_memberships": 304,
+  "python": "3.13.7",
+  "scenarios": [
+    {
+      "constant": "-61/2",
+      "constant_interval": [
+        "-31",
+        "-30"
+      ],
+      "included": 21,
+      "name": "root_selected22",
+      "original_box_membership_checks": 42
+    },
+    {
+      "constant": "-31",
+      "constant_interval": [
+        "-32",
+        "-30"
+      ],
+      "included": 20,
+      "name": "root_late21",
+      "original_box_membership_checks": 40
+    },
+    {
+      "constant": "-31",
+      "constant_interval": [
+        "-32",
+        "-30"
+      ],
+      "included": 19,
+      "name": "independent_selected22",
+      "original_box_membership_checks": 38
+    },
+    {
+      "constant": "-63/2",
+      "constant_interval": [
+        "-33",
+        "-30"
+      ],
+      "included": 18,
+      "name": "independent_late21",
+      "original_box_membership_checks": 36
+    },
+    {
+      "constant": "-61/2",
+      "constant_interval": [
+        "-31",
+        "-30"
+      ],
+      "included": 19,
+      "name": "combined_selected22",
+      "original_box_membership_checks": 76
+    },
+    {
+      "constant": "-63/2",
+      "constant_interval": [
+        "-33",
+        "-30"
+      ],
+      "included": 18,
+      "name": "combined_late21",
+      "original_box_membership_checks": 72
+    }
+  ],
+  "status": "pass_exact_independent_original_box_checks",
+  "witness_rows": 115
+}

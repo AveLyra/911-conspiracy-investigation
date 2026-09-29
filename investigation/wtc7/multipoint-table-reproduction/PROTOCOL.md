@@ -1,0 +1,40 @@
+# Printed multipoint tables: prospective calculation choices
+
+2026-09-19, WP2/Q03-Q05. Research only; [charter](../CHARTER.md) controls. The previous goal turn made progress by completing the traceable Luna-artifact audit and primary paper check. This unit advances its concrete next measurement dependency, not a replacement for independent video reconstruction.
+
+## Authority, scope and acceptance
+
+Source: preserved [Chandler/Walter/Szamboti 2023 PDF](../luna-reevaluation-2026-09-19/chandler-walter-szamboti-2023.pdf), SHA-256 `cb9d5c59010d28444f946f29b7ee4fb1fdaab24264d6cac940c092d893310394`. Source pages control reported data; this protocol controls only our calculations. Originals and prior outputs remain unchanged. All work belongs to this investigation worktree; main/Faraday/Sherlock state remain read-only.
+
+Deliver: two independently frozen table transcriptions, exact field comparison, reproducible arithmetic with all memberships/residuals/sensitivities, independent arithmetic review and source-qualified assessment. Acceptance is accurate input identification and transparent reproduction or localized disagreement, **not agreement with a desired acceleration**. No new source authentication, metric calibration, hidden-failure timing, probability ranking, legal promotion or solver execution.
+
+Root has already seen the reported coefficients, source tables and four complete fit-graph pages. This is a retrospective reproduction with choices fixed before this unit's calculations, not blind scientific preregistration or untouched evaluation. A separate reviewer transcribes without seeing root's transcription or results; another examines source methods without running fits.
+
+## Inputs and transcription
+
+- Page47: all 70 printed rows from -1.0 through 12.8 seconds; selected columns are time, reference-building x/y, and y/v for NE corner, EC roofline, WC roofline and NW corner. Exclude the three rooftop structures expressly; no claim about reproducing their fits.
+- Page50: all 25 rows/all ten numeric columns, preserving printed time, reference y, each point's y/relative y, and the two adjusted-y columns. No western velocity or acceleration fit: source page48 explicitly limits its use to onset and uses the Camera2 corner to align clocks.
+- Preserve decimal tokens and blank cells (null), page/row and headers. Root uses independently coded PDF text-layout extraction plus complete-page visual checks; reviewer produces a separate source-based table. Exact token differences are adjudicated against the page and preserved, not silently averaged. Parsing ambiguity fails rather than shifting columns.
+- Root extraction is frozen before seeing the other transcription. Analysis starts only after both input versions and reconciliation are saved. Source-method corrections before results may amend the protocol transparently; post-result amendments require a new version/output.
+
+## Camera2 arithmetic
+
+1. Use printed time as the nominal grid and printed metric positions/velocities as attributed inputs. No new smoothing, interpolation, dropped points or rescaling. Positive source y is upward; report downward acceleration as minus velocity slope or minus twice the position quadratic coefficient.
+2. For each available interior y triple at adjacent 0.2-second times, compare printed velocity against `(y_next-y_previous)/0.4`. Save every residual. Under independent nearest-0.01 display rounding the per-row maximum discrepancy is 0.030 m/s (0.025 from two position endpoints plus 0.005 from displayed velocity). Check with decimal/rational arithmetic. Compatibility is per-row and conditional on this differencing/grid hypothesis, not recovery of hidden data or joint feasible rounding for the full series.
+3. Fit unweighted OLS velocity lines and OLS position quadratics on identical inclusive printed-time windows; fit an intercept and free slope/curvature, center times internally, and retain selected rows, coefficients and residuals. No force-of-gravity constraint. A position fit does not inherit derivative-noise independence. Values are deterministic calculations, not calibrated confidence intervals.
+4. Primary reconstruction windows: NE **8.0-9.2**, other three **8.2-10.6** seconds. These are our graph/table-informed choices, not authenticated author-selected fit masks; page47's last NE velocity is9.2 and the other plots bend away from the main linear descent later. Failure to match is not evidence of misconduct or necessarily failure of the authors' different window.
+5. Fixed window sensitivity: NE starts `{7.8,8.0,8.2}`, ends `{8.8,9.0,9.2}`; each other point starts `{8.0,8.2,8.4}`, ends `{10.4,10.6,10.8,11.0}`. All45 windows, both fit families, no selective reporting. Also fit each point's full available post-reported-onset velocity sequence and same-time positions; label this whole-post-onset fit as deliberately including later curvature, not a claimed constant-acceleration interval. These four additional windows are separate even if one duplicates a primary/grid window.
+6. Quantify display-rounding sensitivity to fixed-window acceleration using its linear weights: half-width `0.005 * sum(abs(weight))` for velocity or position inputs. Compute the weights through exact rational normal equations as an independent oracle. Compare reported targets (9.30,9.79,9.81,9.92) with their own +/-0.005 display intervals. Report differences/interval overlaps for **all** windows; do not select a best-matching window as proof of the historical author mask.
+7. Time/scale sensitivity is analytic, not a new historical uncertainty estimate: acceleration scales as spatial factor divided by time factor squared. Show factors for separate +/-1% and +/-5% scale and clock changes, with no probability weight or claim that those magnitudes are actual errors. Do not transform display-rounding bounds into physical uncertainty bounds.
+
+## Western-table arithmetic
+
+For every row compare relative y with printed raw y minus reference y. A difference within0.015 is compatible with independent three-value nearest-0.01 rounding. For each adjusted column test whether the intersection of all `[adjusted-relative-0.01, adjusted-relative+0.01]` intervals is nonempty, the condition for a common additive display-rounding-compatible offset **at this comparison level**. Preserve exact intersection/endpoints and every residual; do not claim globally recovered unrounded measurements.
+
+Report each point's displacement relative to its own8.20s printed value and all pairwise differences in those displacements. Use NW relative y and center/SW adjusted y as printed; additive constants cancel. Report the maximum absolute pair difference/time without equating equality or inequality in these coordinates to physical rigidity, simultaneity or a metric perspective correction. No new inferred onset/change point: sampling, tracking error and the declared common-camera alignment are unresolved.
+
+## Implementation, verification and limits
+
+Use a small local script, no new dependency installs. Validate against synthetic constant/linear/quadratic histories with known acceleration, translation invariance, window membership, display-rounding extremal witnesses and explicit malformed/missing-input failures. Fresh numerical production uses centered least squares; separately implemented rational normal equations check every fit's coefficients/weights. Require maximum coefficient/residual differences <=1e-8 in declared units for these finite inputs, exact memberships/counts and exact decimal comparisons. Preserve failed runs; do not relax tolerance to obtain a pass.
+
+Run twice to new output directories and compare deterministic scientific outputs. Bind code/protocol/input/source hashes in receipts. Independently review source interpretation and calculation results before updating research status. Existing repository record checks and scoped link/whitespace checks apply; no UI/browser is involved. Preserve saved images and printed data; neither a successful fit nor a passed test establishes historical source identity, hidden support state or an initiating mechanism.

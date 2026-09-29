@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "status": "frozen_independent_first_pass",
+  "reviewer": "camera2_feature_join subagent; independent annotation pass, not an independent human expert",
+  "frozen_at_utc": "2026-09-19T14:35:17Z",
+  "scope": "Visual source-feature join only. No trajectory, timing alignment, acceleration, structural-cause, or whole-building-symmetry inference.",
+  "independence": {
+    "root_new_annotations_read": false,
+    "old_target_coordinates_read": false,
+    "native_frame_indices_viewed": [6593, 6841],
+    "additional_native_frames_viewed": [],
+    "first_pass_basis": "Full printed/PDF page 13, full extracted Figure 4 raster, full native PNGs 6593 and 6841; selection metadata read only for identity. No overlays, cropped native panels, interpolation, or fresh video decode."
+  },
+  "coordinate_convention": {
+    "origin": "top left",
+    "axes": "x right, y down",
+    "native_size_pixels": [640, 480],
+    "figure_raster_size_pixels": [863, 638],
+    "centers": "Integer visual estimates of existing visible features, not subpixel measurements or recovered Tracker coordinates.",
+    "bounds": "Inclusive subjective [xmin, ymin, xmax, ymax] boxes; localization judgment only, not confidence intervals or validated errors.",
+    "regions": "A region is a search/ambiguity area, not an accepted point. Its midpoint must not be used as a measured coordinate."
+  },
+  "sources": {
+    "paper": {
+      "path": "research/sherlock-wtc7-investigation/luna-reevaluation-2026-09-19/chandler-walter-szamboti-2023.pdf",
+      "sha256": "cb9d5c59010d28444f946f29b7ee4fb1fdaab24264d6cac940c092d893310394",
+      "pdf_page_one_based": 13,
+      "printed_page": 13,
+      "figure": 4,
+      "page_render_sha256": "9d94e60afb2399dee3078c1593ded20bd1de52291f7a9294e1361ba16f9bc6ae",
+      "embedded_image_name": "Image76.jpg",
+      "extracted_image_sha256": "b86c6900c3a1be5be83e206238f60bde11e2b71668b961ec8573abd3dc35220d",
+      "geometry_authentication": "The caption assigns the cardinal labels. This review has not authenticated camera location, building orientation, or architectural identity from an independent geometry source."
+    },
+    "selection": {
+      "path": "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/selection.json",
+      "sha256": "dda0cb2e9f17240562e2aafa9443f05df0c2047fd93d8a4e643233cf53e3175e",
+      "recorded_video_sha256_not_rehashed_here": "84da90a48bdd710faf8b0a60c1a23a0927f22184216a1a631cbd77d4243b6730"
+    },
+    "frames": [
+      {
+        "frame_index_zero_based": 6593,
+        "path": "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006593.png",
+        "sha256": "39bcb70c16ccc468133edf92b3a9dc9ea43edbc5692d82d8adcfc08cc22903a8",
+        "source_pts_from_selection": "659301",
+        "source_time_base_from_selection": "1/2997",
+        "full_frame_viewed": true
+      },
+      {
+        "frame_index_zero_based": 6841,
+        "path": "/Users/admin/docs/911/research/sherlock-wtc7-investigation/multiview-onset-review/refine01/camera2/f006841.png",
+        "sha256": "a6c380c7aa74a8cecebe3577d679cdcf5fb26638522f9ad50fac839359a80f2c",
+        "source_pts_from_selection": "684101",
+        "source_time_base_from_selection": "1/2997",
+        "full_frame_viewed": true
+      }
+    ]
+  },
+  "paper_frame_join": {
+    "native_source_frame_of_figure4": null,
+    "native_source_frame_status": "Not established. Similar roof configuration, camera view, smoke, image crop, or timing guesses do not prove a frame identity.",
+    "baseline_relation": "Fixed native frame 6593 is a comparison baseline only. It does not authenticate the paper raster, the camera's history, or the Figure 4 source frame.",
+    "visual_relation": "Corresponding background arrangement, facade form, lower roofline and raised rooftop structure support a qualitative feature-neighborhood comparison; no numeric image registration was performed.",
+    "paper_markers_as_measurements": "The colored rings/crosses indicate source-assigned neighborhoods. They overwrite source pixels and do not disclose the exact Tracker selection or prove that a ring center is the tracked material point."
+  },
+  "features": [
+    {
+      "source_label": "NE",
+      "source_caption_name": "Northeast corner",
+      "source_color": "neon green",
+      "figure_marker_visual_center": [435, 209],
+      "figure_marker_visual_bounds": [428, 202, 443, 217],
+      "source_marker_relation": "Left end of the lower roofline, below/left of the surviving raised rooftop feature. Smoke and the overlaid marker prevent a secure material-corner identification.",
+      "authenticated_geometry": null,
+      "native_feature_description": "Smoke-softened left end of the visible main facade/lower roofline, not the higher left rooftop silhouette.",
+      "observations": [
+        {
+          "frame_index_zero_based": 6593,
+          "status": "ambiguous_region",
+          "center": null,
+          "region": [299, 145, 320, 164],
+          "reason": "Smoke and overlying/adjacent rooftop structure obscure a unique meeting of the lower roofline and a material vertical facade edge. The upper silhouette is visible but would substitute a different feature."
+        },
+        {
+          "frame_index_zero_based": 6841,
+          "status": "ambiguous_region",
+          "center": null,
+          "region": [301, 146, 319, 161],
+          "reason": "A lower roofline segment emerges toward the raised structure, but its left endpoint is smoke-softened and does not securely resolve a material corner. No unique point accepted."
+        }
+      ],
+      "join_strength": "D: source label is clear; native exact material-point identity is underdetermined."
+    },
+    {
+      "source_label": "EC",
+      "source_caption_name": "East center roofline (NIST's point)",
+      "source_color": "blue",
+      "figure_marker_visual_center": [504, 209],
+      "figure_marker_visual_bounds": [496, 201, 512, 217],
+      "source_marker_relation": "Near the lower left foot of a raised rooftop step. The separate dark-green marker lies above/right on the raised structure. Treating the top of that step as EC would conflate separate source features.",
+      "authenticated_geometry": null,
+      "native_feature_description": "Apparent intersection of lower roofline with the left vertical side of the surviving raised rooftop structure; a projected edge junction, not yet authenticated as a physical material connection.",
+      "observations": [
+        {
+          "frame_index_zero_based": 6593,
+          "status": "ambiguous_region",
+          "center": null,
+          "region": [341, 144, 359, 159],
+          "reason": "The higher rooftop silhouette continues across this area; the lower left step-foot shown in Figure 4 is not distinctly exposed. A dark facade strip or assumed continuation would not supply an independently identified point."
+        },
+        {
+          "frame_index_zero_based": 6841,
+          "status": "visible_projected_junction",
+          "center": [352, 151],
+          "bounds": [348, 148, 356, 155],
+          "reason": "Lower horizontal roofline meets the short left rise to the higher rooftop silhouette. Blur/smoke and possible superposition limit exact localization and material identity."
+        }
+      ],
+      "join_strength": "C for the visible projected junction at 6841; D at 6593. This does not validate a persistent material track."
+    },
+    {
+      "source_label": "WC",
+      "source_caption_name": "West center roofline (new point)",
+      "source_color": "orange",
+      "figure_marker_visual_center": [637, 216],
+      "figure_marker_visual_bounds": [629, 208, 646, 224],
+      "source_marker_relation": "Lower right foot of the raised rooftop step. The light-blue west-penthouse marker is above it on the step's upper edge; those are distinct features.",
+      "authenticated_geometry": null,
+      "native_feature_description": "Right step-foot where the short drop from the higher rooftop silhouette meets the lower roofline extending to the outer right corner. A visible projected junction; its physical construction is not authenticated here.",
+      "observations": [
+        {
+          "frame_index_zero_based": 6593,
+          "status": "visible_projected_junction",
+          "center": [425, 154],
+          "bounds": [422, 151, 429, 158],
+          "reason": "Lower foot of the right rooftop drop is visible. The upper corner near y144-146 is not the accepted WC feature."
+        },
+        {
+          "frame_index_zero_based": 6841,
+          "status": "visible_projected_junction",
+          "center": [425, 154],
+          "bounds": [422, 151, 429, 158],
+          "reason": "Lower foot of the right rooftop drop is visible; preserve uncertainty due to raster blur and edge thickness."
+        }
+      ],
+      "join_strength": "B for qualitative projected-junction correspondence; C for exact material identity and localization. Equal integer estimates are not a finding of zero motion."
+    },
+    {
+      "source_label": "NW",
+      "source_caption_name": "Northwest corner",
+      "source_color": "red",
+      "figure_marker_visual_center": [689, 217],
+      "figure_marker_visual_bounds": [681, 209, 698, 226],
+      "source_marker_relation": "Outer right corner of the lower roofline, where its top edge meets the bright right vertical facade boundary.",
+      "authenticated_geometry": null,
+      "native_feature_description": "Visible outer right facade/roofline corner. This is the strongest material-corner candidate in the fixed frames, although the source's cardinal designation is not independently authenticated.",
+      "observations": [
+        {
+          "frame_index_zero_based": 6593,
+          "status": "visible_corner_candidate",
+          "center": [454, 156],
+          "bounds": [452, 153, 457, 160],
+          "reason": "Lower roofline and right facade edge form a readily identifiable outer corner; image blur produces a several-pixel boundary."
+        },
+        {
+          "frame_index_zero_based": 6841,
+          "status": "visible_corner_candidate",
+          "center": [454, 156],
+          "bounds": [452, 153, 457, 160],
+          "reason": "Same qualitative outer-corner configuration is visible. Equal integer estimates are not a finding of zero motion."
+        }
+      ],
+      "join_strength": "B for qualitative outer-corner correspondence; C for exact material-point localization."
+    }
+  ],
+  "disconfirming_checks": [
+    "Frame 6593 lacks a clearly exposed EC lower-left step-foot; a visual-join claim applying an unqualified EC point to both fixed frames would exceed this pass.",
+    "A roofline meeting the projection of a screen-wall or penthouse side can be a silhouette/occlusion junction rather than one material point. An authenticated drawing/view and Tracker project could change that assessment.",
+    "A ring enclosing a useful feature does not establish that the authors tracked that exact feature or ring center.",
+    "Different apparent scale/crop/color and similar background arrangement do not establish a native frame number for the paper raster."
+  ],
+  "next_step": "Compare this frozen pass with the root's independently frozen pass. Resolve disagreements on the same two frames first. Do not inspect additional native frames until a specific need and selection are declared."
+}
