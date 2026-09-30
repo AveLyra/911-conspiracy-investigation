@@ -31,13 +31,18 @@ that transition is to intermediate fire histories, damage transfer, connection
 behavior, and failure criteria. A threshold in a model is not inherently
 suspicious; its sensitivity matters because it carries a major causal step.
 
-NIST also acknowledges that its later simulated exterior deformation differs
-from the video. It attributes the difference to uncertainty during breakup and
-the omission of nonstructural components. This is a real model-to-video
-divergence after global collapse begins; it does not, by itself, disprove the
-proposed initiation sequence. NIST's account of the observed Stage 2
-near-free-fall interval constrains the motion, but the interval alone cannot
-identify what initiated the collapse.
+NIST acknowledges that after global collapse begins, its analysis predicts
+large inward deformation of the upper exterior walls that is not visible in
+the video. NIST also reports sharply increased uncertainty during breakup and
+says its analysis omitted nonstructural components that contribute stiffness
+and strength. This is a direct model-to-observation mismatch in the late-stage
+exterior response. NIST's explanation accounts for why it expects divergence;
+it does not validate the predicted wall motion. The late-stage animation
+therefore cannot serve as visual confirmation of that response, and treating
+it as such is methodologically dubious. See [Exhibit A: NIST's methodologically
+dubious late-stage exterior-motion validation](research/wtc7-video-comparison/nist-simulation-footage-crosscheck-2026-09-30.md).
+This finding concerns late-stage exterior behavior; the Stage 2 near-free-fall
+interval constrains motion but does not identify what initiated collapse.
 
 ### 2. Released input data contain a specific unresolved anomaly
 
@@ -105,6 +110,7 @@ pathways.
 - Project overview and calibrated summary: [README](README.md)
 - Current assessment: [causal-chain synthesis](investigation/wtc7/causal-chain-synthesis/report.md)
 - NIST-specific proposition audit: [claim-strain audit](research/nist-claim-strain-audit.md)
+- Late-stage simulation/footage mismatch: [Exhibit A](research/wtc7-video-comparison/nist-simulation-footage-crosscheck-2026-09-30.md)
 - Thermal input anomaly: [thermal-assignment trace](investigation/wtc7/thermal-assignment-trace/report.md)
 - UAF method and limits: [UAF final-report audit](investigation/wtc7/uaf-final-method-audit/report.md)
 - Alternative fire path: [Orabi et al. research note](research/orabi-2022-alternative-fire-records-lead.md)
