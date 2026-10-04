@@ -107,7 +107,9 @@ offset. A zero offset compares the AVI with the Ogg's opening segment as well
 as part of its later segment, so it is not a matched-content control. FFmpeg
 also warned during Ogg decoding: `Broken file, keyframe not correctly marked.`
 A scene-detection filter produced a high score at Ogg time 8.76 s, but it did
-not establish an exact clip boundary.
+not establish an exact clip boundary. Thus the duration-subtraction candidate
+of 8.48 s and the high scene-score time of 8.76 s differ by 0.28 s. Neither
+value is adopted as the cut point; the difference is preserved as unresolved.
 
 **Protocol limitation:** the existing collection plan says the synchronization
 method and observable must be specified before further synchronized frame
