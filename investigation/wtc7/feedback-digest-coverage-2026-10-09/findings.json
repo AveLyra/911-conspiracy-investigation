@@ -1,0 +1,529 @@
+[
+  {
+    "id": "G01",
+    "source_starts": [
+      68
+    ],
+    "items": [
+      10,
+      23
+    ],
+    "classification": "partial",
+    "title": "Protect additions, not only the first baseline",
+    "retained": "The digest requires immutable observations, errata and authorized preflights.",
+    "missing": "It does not specify comparison against the complete latest reviewed objects plus ordered additions, rejection of undeclared rows or changed prior acceptance flags, or integrity checks bracketing the entire delegated call.",
+    "test": "Synthetic: append one authorized row, then independently mutate an older qualification, reorder additions and insert an undeclared row. Each unauthorized change must fail, including changes made during the delegated call.",
+    "public_technical_units": [
+      "TR-L0068"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L0068": 175
+    }
+  },
+  {
+    "id": "G02",
+    "source_starts": [
+      89
+    ],
+    "items": [
+      12,
+      13
+    ],
+    "classification": "partial",
+    "title": "Core/fringe agreement is not a confidence interval",
+    "retained": "Item 12 explicitly preserves different core/fringe labels despite equal outer sets.",
+    "missing": "The concrete swapped-label fixture, no-gap-filling rule, prohibition on labeling union/intersection as calibrated original-source confidence bounds and unambiguous agreement-count naming are not fully carried forward.",
+    "test": "Synthetic: A has core {1}, fringe {3}; B has core {3}, fringe {1}. Retain disagreement; do not insert row 2 or label either set operation a calibrated confidence bound.",
+    "public_technical_units": [
+      "TR-L0089"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L0089": 226
+    }
+  },
+  {
+    "id": "G03",
+    "source_starts": [
+      436
+    ],
+    "items": [
+      10,
+      11,
+      24
+    ],
+    "classification": "specific_detail_absent",
+    "title": "Freeze outcome-independent human sampling",
+    "retained": "The digest requires review coverage and says small samples do not establish universal accuracy.",
+    "missing": "It does not require the selection rule and complete target census to be frozen before discrepancy results, or preservation of unavailable targets, ties, coincident footprints and failed original selections.",
+    "test": "Synthetic: replay the frozen rule against the full inventory including tied and unavailable targets. Reject convenient replacements chosen after results. Report actual inspected coverage; a passed spot-check is neither whole-source validation nor a calibrated confidence interval.",
+    "public_technical_units": [
+      "TR-L0436"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L0436": 980
+    }
+  },
+  {
+    "id": "G04",
+    "source_starts": [
+      554
+    ],
+    "items": [
+      2,
+      3,
+      8
+    ],
+    "classification": "specific_detail_absent",
+    "title": "Retain malformed occurrences without fabricated fields",
+    "retained": "The digest distinguishes record grains, missing metadata and quarantine generally.",
+    "missing": "The missing-descriptive-field fixture and reconciliation of total, strict-valid and quarantined occurrences and unique IDs are absent.",
+    "test": "Synthetic: omit a required description but retain the identifier and supplied fields. Do not insert a sentinel or drop the occurrence. Reconcile both counting grains and keep diagnostic success separate from full-contract validity.",
+    "public_technical_units": [
+      "TR-L0554"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L0554": 1237
+    }
+  },
+  {
+    "id": "G05",
+    "source_starts": [
+      955
+    ],
+    "items": [
+      18,
+      19,
+      20,
+      23
+    ],
+    "classification": "specific_detail_absent",
+    "title": "Tests must compute the claimed outcome",
+    "retained": "The digest contains numerical decision and quantity-definition requirements.",
+    "missing": "It does not explicitly require a regression control that computes the expected conclusion rather than merely checking a stored constant.",
+    "test": "Synthetic: positive and negative input cases must reach the actual claimed computation. A test returning or comparing a prewritten conclusion without that computation must not count as outcome verification.",
+    "public_technical_units": [
+      "TR-L0955"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L0955": 2066
+    }
+  },
+  {
+    "id": "G06",
+    "source_starts": [
+      973
+    ],
+    "items": [
+      5,
+      18,
+      23
+    ],
+    "classification": "specific_detail_absent",
+    "title": "Validate equality-colliding inputs after warming caches",
+    "retained": "Item 06 covers a different cache defect: byte-pin caching suppressing dependency traversal.",
+    "missing": "The memoized numeric-type validation failure is absent: valid integer keys can allow equal boolean or float inputs to bypass inner validation.",
+    "test": "Synthetic: warm the cache with valid integer tuples, then submit equality-colliding boolean and float tuples. Both warm and cold paths must reject invalid types; validate outside the memoized computation.",
+    "public_technical_units": [
+      "TR-L0973"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L0973": 2090
+    }
+  },
+  {
+    "id": "G07",
+    "source_starts": [
+      1365
+    ],
+    "items": [
+      5,
+      6
+    ],
+    "classification": "specific_detail_absent",
+    "title": "Separate source changes from mistyped expected hashes",
+    "retained": "The digest protects pins, original failures and original source bytes.",
+    "missing": "It does not distinguish a handwritten expected-value transcription error from actual source change or require checking an independent earlier receipt before correcting the checker.",
+    "test": "Synthetic: test changed source bytes and a mistyped expected digest separately. Preserve the first failure, consult the independent frozen receipt and prefer importing a pinned manifest value over hand transcription. Never silently rebaseline the source.",
+    "public_technical_units": [
+      "TR-L1365"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L1365": 2748
+    }
+  },
+  {
+    "id": "G08",
+    "source_starts": [
+      1649
+    ],
+    "items": [
+      3,
+      5
+    ],
+    "classification": "specific_detail_absent",
+    "title": "XML text tails and lexical coverage",
+    "retained": "The digest covers parser contracts and normalizer omissions generally.",
+    "missing": "The XML-specific child-tail, comment/processing-instruction and parsed-versus-lexical coverage tests are absent.",
+    "test": "Synthetic: use mixed element text and child tails, comments and processing instructions, structured strings and root/track attributes. Preserve immediate text segments and ownership; distinguish missing, empty, whitespace and nonempty values. Hash inventory alone is not plaintext review.",
+    "public_technical_units": [
+      "TR-L1649"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L1649": 3212
+    }
+  },
+  {
+    "id": "G09",
+    "source_starts": [
+      1738
+    ],
+    "items": [
+      18
+    ],
+    "classification": "partial",
+    "title": "Test candidate-search completeness, not just retained agreement",
+    "retained": "Item 18 explicitly preserves exact predicates, failed floating runs and feasible witnesses.",
+    "missing": "It does not explicitly test completeness of a fast broad-phase candidate search independently of numerical agreement among the candidates it retains.",
+    "test": "Synthetic: construct a relevant candidate incorrectly omitted by a fast prefilter. Agreement on every remaining row must not certify the candidate search as complete.",
+    "public_technical_units": [
+      "TR-L1738"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L1738": 3351
+    }
+  },
+  {
+    "id": "G10",
+    "source_starts": [
+      1754
+    ],
+    "items": [
+      5,
+      6,
+      8
+    ],
+    "classification": "partial",
+    "title": "Separate keyword ordering, card ordering and layered failures",
+    "retained": "The digest retains typed namespaces, relation types, blanks and partial failure receipts.",
+    "missing": "It omits the specific reordered-keyword versus ordered-numeric-card fixture, and the requirement not to mask the original parse failure with a later resource-limit failure.",
+    "test": "Synthetic: reorder keyword options without shifting blank numeric cards or losing the heading. Force a parse error followed by a memory-limit check; retain the original error location and the separate later failure, without inventing missing measurements.",
+    "public_technical_units": [
+      "TR-L1754"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L1754": 3372
+    }
+  },
+  {
+    "id": "G11",
+    "source_starts": [
+      1774
+    ],
+    "items": [
+      19,
+      20,
+      22,
+      23
+    ],
+    "classification": "specific_detail_absent",
+    "title": "Keep event and observable paired",
+    "retained": "The digest preserves quantity definitions, channels and event/utterance dates generally.",
+    "missing": "It does not expressly forbid combining maximum load from one event with independently maximized rotation from another, or treating a missing plot or failed channel as exclusion of the whole specimen.",
+    "test": "Synthetic: give two events different load/rotation pairs and retain the rotation at the selected load. Keep null stages and specimen/channel membership. An unsupported normalization or convenient sensor factor is not a documented recipe; a control must exercise the production branch.",
+    "public_technical_units": [
+      "TR-L1774"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L1774": 3395
+    }
+  },
+  {
+    "id": "G12",
+    "source_starts": [
+      1815
+    ],
+    "items": [
+      23
+    ],
+    "classification": "specific_detail_absent",
+    "title": "Check filename exclusions from different working directories",
+    "retained": "The digest requires correct executable escaping and scoped replay.",
+    "missing": "The two-working-directory filename-exclusion regression is absent.",
+    "test": "Synthetic: run the provenance search from the target root and another directory. Assert the excluded path components actually stay excluded; exit success alone does not verify the filtering rule.",
+    "public_technical_units": [
+      "TR-L1815"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L1815": 3556
+    }
+  },
+  {
+    "id": "G13",
+    "source_starts": [
+      1905
+    ],
+    "items": [
+      8,
+      15
+    ],
+    "classification": "specific_detail_absent",
+    "title": "A metadata-output operation may still decode",
+    "retained": "The digest separates probing, decoding and acceptance and preserves alternate metadata.",
+    "missing": "It does not explicitly require verifying internal decoding before promising that a metadata-only output command performs zero decoding.",
+    "test": "Synthetic: instrument the declared probe path and record whether stream discovery invokes decoding. Separate returned output type from actual execution scope; retain truncated captures rather than claiming a complete receipt.",
+    "public_technical_units": [
+      "TR-L1905"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L1905": 3847
+    }
+  },
+  {
+    "id": "G14",
+    "source_starts": [
+      1921
+    ],
+    "items": [
+      15,
+      22
+    ],
+    "classification": "partial",
+    "title": "Preserve conflicting metadata lanes and full payload boundaries",
+    "retained": "Item 15 retains alternative metadata lanes, raw bytes and binary tails.",
+    "missing": "It does not state the specific rule that disagreement must not suppress both usable values, nor explicitly prohibit reporting equal text prefixes as equal complete payloads.",
+    "test": "Synthetic: keep equal NUL-terminated prefixes with differing binary tails and conflicting alternate times. Compare each lane, preserve the conditional ordering conflict and test both declared clock interpretations; neither infer authentication nor erase the conflict merely because editing is possible.",
+    "public_technical_units": [
+      "TR-L1921"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L1921": 3871
+    }
+  },
+  {
+    "id": "G15",
+    "source_starts": [
+      2011
+    ],
+    "items": [
+      16
+    ],
+    "classification": "preserved_in_digest_not_detailed_in_recipient_pointer",
+    "title": "Resampling-kernel exclusion is already in the sent item",
+    "retained": "Item 16 explicitly says to test exclusions through actual resampling kernels. This is not an original-to-digest omission.",
+    "missing": "The recipient's already-covered pointer names broad template/similarity contracts; the inspected saved paragraphs do not enumerate this exact kernel-exclusion acceptance detail.",
+    "test": "Synthetic: perturb excluded native pixels separately for each search branch. Verify that the actual interpolation kernel does not introduce them into scored support; a nearest-mask disjointness check is insufficient. Retain this as a detail-level acknowledgment request, not an accusation of message loss.",
+    "public_technical_units": [
+      "TR-L2011"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L2011": 4041
+    }
+  },
+  {
+    "id": "G16",
+    "source_starts": [
+      2024
+    ],
+    "items": [
+      16,
+      19,
+      21
+    ],
+    "classification": "specific_detail_absent",
+    "title": "Photometric training/evaluation masks and extrapolation",
+    "retained": "The digest preserves fit/evaluation roles, exclusion masks and common support broadly.",
+    "missing": "It does not enumerate photometric mask intersection after resampling, empty threshold unions, clipping ties, out-of-training-range bright values or the distinction between bright-pixel support and physical fire area.",
+    "test": "Synthetic: combine global tone changes with local or displaced bright patches. Assert actual training/evaluation mask separation, preserve the geometry fit and version the photometric mask. Report extrapolation, empty unions and clipping ties without converting encoded brightness to physical area.",
+    "public_technical_units": [
+      "TR-L2024"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L2024": 4061
+    }
+  },
+  {
+    "id": "G17",
+    "source_starts": [
+      2102,
+      2117
+    ],
+    "items": [
+      15,
+      16,
+      21,
+      23
+    ],
+    "classification": "partial",
+    "title": "Reorder images, not only score rows; retain repeated pictures",
+    "retained": "Item 16 includes shared stationary scenery with reordered changing details; item 15 says duplicates must not trigger automatic deletion.",
+    "missing": "The exact false-control distinction (reversing score rows instead of reference images), duplicate-index versus identical-picture-index distinction and dense-refinement dependence are less explicit in the digest.",
+    "test": "Synthetic: actually reorder reference images while preserving stationary scenery. Reject duplicate index entries but retain distinct presented indices with identical pixels. Keep near-best clusters outside a top-two shortlist; dense refinement is not independent corroboration.",
+    "public_technical_units": [
+      "TR-L2102",
+      "TR-L2117"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L2102": 4196,
+      "TR-L2117": 4218
+    }
+  },
+  {
+    "id": "G18",
+    "source_starts": [
+      2126
+    ],
+    "items": [
+      16
+    ],
+    "classification": "partial",
+    "title": "Common-support denominator and failure states",
+    "retained": "Item 16 explicitly requires identical valid positions, selected transforms and no refitting; equal cardinality is not equal support.",
+    "missing": "The original full-mask coverage denominator and missing-transform/coverage/variance failure handling are not explicit in the condensed item.",
+    "test": "Synthetic: two equal-sized but differently positioned valid supports. Evaluate the selected transforms on their intersection, use the original full-mask denominator and retain missing or failed transform/coverage/variance states instead of zero scores.",
+    "public_technical_units": [
+      "TR-L2126"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L2126": 4239
+    }
+  },
+  {
+    "id": "G19",
+    "source_starts": [
+      2194,
+      2206
+    ],
+    "items": [
+      10,
+      12,
+      14
+    ],
+    "classification": "partial",
+    "title": "Observation rows, page boundaries and nested candidates",
+    "retained": "The digest preserves overlap, delayed saving, candidate identity and observer states generally.",
+    "missing": "It does not specify row-scoped parsing when indices recur in prose, page-level save boundaries for images already displayed together, or preservation of a short nested candidate within a longer positive interval.",
+    "test": "Synthetic: repeat an index in explanatory prose without adding an observation; retain shared boundary rows without extra votes. Distinguish new candidate, continuation and no additional candidate. Grouping must preserve a separate short candidate and its unresolved initiation.",
+    "public_technical_units": [
+      "TR-L2194",
+      "TR-L2206"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L2194": 4497,
+      "TR-L2206": 4519
+    }
+  },
+  {
+    "id": "G20",
+    "source_starts": [
+      2239
+    ],
+    "items": [
+      14,
+      15,
+      19,
+      21
+    ],
+    "classification": "partial",
+    "title": "Clock-rate sensitivity and circular calibration",
+    "retained": "The digest separates calibration, endpoint identity, clocks and conditional reasoning broadly.",
+    "missing": "It does not explicitly require the squared effect and correct direction of clock-rate changes on acceleration, distinguish reciprocal scale units, or forbid calibrating with the quantity under test.",
+    "test": "Synthetic: for unchanged positions, scale every elapsed time by k and verify acceleration scales by 1/k². Keep pixels-per-length distinct from length-per-pixel. A separate authenticated calibration experiment is permitted; assuming the target acceleration to calibrate its own test is not.",
+    "public_technical_units": [
+      "TR-L2239"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L2239": 4697
+    }
+  },
+  {
+    "id": "G21",
+    "source_starts": [
+      2289
+    ],
+    "items": [
+      12,
+      18,
+      21
+    ],
+    "classification": "partial",
+    "title": "Opportunity, severity and consistency review",
+    "retained": "Item 12 separates opportunity, caution and decisive exclusion.",
+    "missing": "It does not spell out membership invariance under ordinary appearance-class changes with identical opportunity, or preserve passing opportunity plus non_evaluable as a contradiction requiring review rather than a negative observation.",
+    "test": "Synthetic: vary ordinary appearance classes while holding opportunity constant; membership must not change for that reason alone. Retain contradictory inputs, touching thresholds, zero extent and exclusion precedence. Text-rule comprehension is not visual accuracy calibration.",
+    "public_technical_units": [
+      "TR-L2289"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L2289": 5222
+    }
+  },
+  {
+    "id": "G22",
+    "source_starts": [
+      2305
+    ],
+    "items": [
+      12,
+      14,
+      21,
+      22
+    ],
+    "classification": "partial",
+    "title": "Raw credits, family keys and verified origin are separate",
+    "retained": "The digest preserves source families, nonexclusive positives and correlated observations.",
+    "missing": "It does not explicitly require separate raw-credit, normalized-family and verified-common-origin fields, or prevent importing a precisely timed neighbor's precision into an approximate observation.",
+    "test": "Synthetic: link two videos with inconsistent credit strings while retaining the original strings and known relationship. Preserve separate smoke, local flame nondetection and brightness axes, locators and disagreement. Keep the original time precision instead of fabricating a combined answer.",
+    "public_technical_units": [
+      "TR-L2305"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L2305": 5243
+    }
+  },
+  {
+    "id": "G23",
+    "source_starts": [
+      2349
+    ],
+    "items": [
+      19,
+      20,
+      25
+    ],
+    "classification": "partial",
+    "title": "Multi-factor model changes and schema-runner boundaries",
+    "retained": "The digest preserves model configurations and differentiates schema acceptance from authentication.",
+    "missing": "The concrete two-factor change that must not be called a one-variable ablation, default date-format non-enforcement, and offline runner separation of unavailable validators, rejections and harness failures are not explicit.",
+    "test": "Synthetic: change both geometry and heating and prohibit one-factor attribution. Separately test date-format enforcement under the actual schema validator. An offline schema runner must avoid engine imports and workspace/provider access and distinguish validator absence from schema rejection. Observed schema limits are not defects in an unlocated adapter.",
+    "public_technical_units": [
+      "TR-L2349",
+      "TR-L2350",
+      "TR-L2351"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L2349": 5629,
+      "TR-L2350": 5649,
+      "TR-L2351": 5670
+    }
+  },
+  {
+    "id": "G24",
+    "source_starts": [
+      2437
+    ],
+    "items": [
+      18
+    ],
+    "classification": "partial",
+    "title": "A checker must name what it did not check",
+    "retained": "Item 18 explicitly rejects producer-selected empty comparison fields and unsafe intermediate arithmetic.",
+    "missing": "It does not expressly require a passing field check to list unchecked summary flags and status labels rather than certify the whole report.",
+    "test": "Synthetic: change a summary flag outside the declared checked field set. The result must identify that unchecked field, not imply it passed. Keep the already-preserved empty-field and unsafe-intermediate controls intact.",
+    "public_technical_units": [
+      "TR-L2437"
+    ],
+    "public_unit_line_numbers": {
+      "TR-L2437": 6058
+    }
+  }
+]

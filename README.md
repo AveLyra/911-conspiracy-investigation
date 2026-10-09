@@ -48,6 +48,7 @@ could change each assessment.
 - [Overall causal-chain assessment](investigation/wtc7/causal-chain-synthesis/report.md)
 - [What remains incomplete](investigation/wtc7/completion-audit-2026-09-24/report.md)
 - [Sherlock feedback technical requirements and coverage review](investigation/wtc7/feedback-technical-record-2026-10-09/README.md)
+- [Feedback digest coverage addendum](investigation/wtc7/feedback-digest-coverage-2026-10-09/README.md)
 
 ## Technical explanation
 
