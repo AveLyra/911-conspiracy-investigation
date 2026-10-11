@@ -1,0 +1,83 @@
+{
+  "admissible_values": [],
+  "analysis_design": "[REVIEW REQUIRED]",
+  "causal_variable_measurement_requirements": [],
+  "clock_accuracy_requirement": "",
+  "column_status": "Review-only proposal, not a validated dataset schema or a frozen analysis specification.",
+  "confirmatory_outcomes": [],
+  "control_windows": [],
+  "exploratory_outcomes": [],
+  "factor_interpretability_plan": "",
+  "factorial_or_crossover_design": false,
+  "independent_unit": "[REVIEW REQUIRED]",
+  "manipulated_factors": [],
+  "maximum_excluded_fraction": "[REVIEW REQUIRED]",
+  "maximum_group_excluded_fraction_difference": "[REVIEW REQUIRED]",
+  "measurement_validity": "Every material statement must identify whether it is a direct observation, derived calculation, model-dependent output, inference, or hypothesis and name a falsifier.",
+  "minimum_analyzable_units": "[REVIEW REQUIRED]",
+  "missing_value_codes": [],
+  "missingness_assessment": {
+    "missingness_assessment_gate_id": "[REVIEW REQUIRED]",
+    "missingness_assessment_kind": "[REVIEW REQUIRED]",
+    "missingness_assessment_plan": "[REVIEW REQUIRED]",
+    "missingness_assumption": "[REVIEW REQUIRED]",
+    "missingness_failure_response": "[REVIEW REQUIRED]"
+  },
+  "multiple_testing_policy": "[REVIEW REQUIRED]",
+  "multiplicity_alpha": null,
+  "multiplicity_method": "",
+  "outcome": "Source-pinned claim ledger and falsification-oriented experiment specification",
+  "preprocessing_conformance_gate_id": "",
+  "preprocessing_pipeline": "",
+  "primary_analysis_family": "[REVIEW REQUIRED]",
+  "primary_outcome": "Source-pinned claim ledger and falsification-oriented experiment specification",
+  "proposed_columns": [
+    {
+      "constraint": "Unique per recorded observation; never recycle an identifier after exclusion.",
+      "name": "observation_id",
+      "role": "row_identity",
+      "type": "string"
+    },
+    {
+      "constraint": "Stable pseudonymous identifier for the independently sampled unit, not a new identifier for each repeated row.",
+      "name": "[REVIEW REQUIRED]",
+      "role": "independent_unit_identity",
+      "type": "string"
+    },
+    {
+      "constraint": "Use only the reviewed ordered contrast levels; preserve the masking key separately when applicable.",
+      "name": "[REVIEW REQUIRED]",
+      "role": "comparison_label",
+      "type": "string"
+    },
+    {
+      "constraint": "Specify the measurement scale, units, valid range, and missing-value encoding before collection.",
+      "name": "[REVIEW REQUIRED]",
+      "role": "primary_outcome",
+      "type": "review_required"
+    },
+    {
+      "constraint": "Record acquisition time with timezone and retain instrument clock/calibration provenance.",
+      "name": "captured_at",
+      "role": "acquisition_time",
+      "type": "timestamp_with_offset"
+    }
+  ],
+  "repeated_measures": null,
+  "sample_size_justification": "[REVIEW REQUIRED]",
+  "scaffold_provenance": {
+    "authority": "review_only",
+    "brief_content_sha256": "68f84dce9745fd6f87b455b4c15b5bdc28e301693c794326663181ae7951e33e",
+    "design_findings_sha256": "8a66a678474d6516bc54c2d50c39aefcf338aafa61e31236d13ad29d50e8c536",
+    "schema_version": 1,
+    "scientific_evidence_eligible": false,
+    "source": "guided_experiment_scaffold"
+  },
+  "scale_type": "[REVIEW REQUIRED]",
+  "secondary_outcomes": [],
+  "sensor_requirements": [],
+  "unit_of_observation": "Distinct source-supported proposition or reproducible simulation run",
+  "unit_or_scale": "Claim-level evidence grade",
+  "valid_max": null,
+  "valid_min": null
+}
