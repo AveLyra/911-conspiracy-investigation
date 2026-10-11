@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "record_type": "agent_record_of_observed_tool_results_not_a_test_runner_generated_report",
+  "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/energy89",
+  "runtime": {"python": "3.12.14", "pillow": "12.3.0"},
+  "checker_sha256": "28e25ee983c73ff7439985e8e99b868b3f557bbc68ce083db2dffbb8ebeb5061",
+  "test_sha256": "e5db633a5ae45fcafe37c4cf30fb11341709c9478cc21f1c588c6af43f875c7f",
+  "commands": [
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_e89.py",
+      "tool_chunk_id": "954cae",
+      "exit_code": 0,
+      "tests": 9,
+      "result": "Ran 9 tests in 1.851s; OK",
+      "scope": "13 scalar controls, schema/reference/duplicate-attribution faults, each comparison operation corrupted separately, full four-reader AST/manual replays and coverage, literal refusal to execute expressions, unsorted disjoint runs and fragment IDs, selected-white flag without mutation, fringe-only boundary, and coexistence of distinct attributed and unassigned cells."
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-e89-check.py --output independent-comparison-e89-check01.json",
+      "tool_chunk_id": "3e5823",
+      "exit_code": 0,
+      "output_sha256": "dcafded67e5a5c7db55f04be49c3af5899dff2baa3b3b8f404a3373c2849f620",
+      "output_bytes": 45228,
+      "result": "passed_independent_E8_E9_computational_check"
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-e89-check.py --output independent-comparison-e89-check02.json",
+      "tool_chunk_id": "42e340",
+      "exit_code": 0,
+      "output_sha256": "dcafded67e5a5c7db55f04be49c3af5899dff2baa3b3b8f404a3373c2849f620",
+      "output_bytes": 45228,
+      "result": "passed_independent_E8_E9_computational_check"
+    },
+    {
+      "command": "cmp independent-comparison-e89-check01.json independent-comparison-e89-check02.json",
+      "tool_chunk_id": "fa9d06",
+      "exit_code": 0,
+      "result": "Exact byte equality; same hashes and length."
+    }
+  ],
+  "failed_verification_attempts": [],
+  "annotation_repairs": [],
+  "checker_repairs_after_first_test_run": [],
+  "upstream_attempt_history_reported_by_parent_not_independently_witnessed": {
+    "root_E8_repeat_save": "One approval timeout was followed by an allowed retry. Parent supplied original receipt3f5ae8 and repeat0daaca. Independent checker verifies the resulting saved original/repeat bytes, not the approval event.",
+    "root_E9_saves": "Parent supplied receipts8050a5/4257f5. Resulting saved original/repeat bytes checked independently."
+  },
+  "literal_table_order": "Root E8 DASH lists x595 before x587-593. Runs are nonoverlapping and their expanded outputs are complete and ordered. Source order is preserved; no source annotation or validation criterion was repaired.",
+  "verification_counts": {
+    "reader_route_records": 1260,
+    "reader_unassigned_records": 476,
+    "paired_route_records": 630,
+    "visible_ink_columns": 315,
+    "independently_computed_set_operations": 14175,
+    "fresh_context_cells": 10644,
+    "selected_cells_checked": 3930,
+    "selected_exact_white_cells": 0,
+    "semantic_replay_exclusions": 0,
+    "prior_E345_receipt_input_paths_preserved": 45
+  },
+  "limits": [
+    "Same-source nonblind AI computational verification; no new image viewing, visual classification or human acceptance.",
+    "Independent expansion and list/boolean arithmetic; no reader or comparator import, exec, eval or execution.",
+    "Fresh RGB checks use Pillow12.3.0; saved producer used Pillow12.0.0. Both share the Pillow decoder family.",
+    "No scientific interpretation, calibrated containment, physical support, cause or intent finding. All source disagreements remain preserved."
+  ]
+}

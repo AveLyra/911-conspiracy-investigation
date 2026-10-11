@@ -1,0 +1,66 @@
+{
+  "status": "bounded_numerical_review_passed_not_scientific_or_human_acceptance",
+  "date": "2026-10-07",
+  "reviewer": "/root/curve_recovery_feasibility, separate AI with shared context and prior result disclosure; not blind or human review",
+  "method": "Read protocol and producer implementation. Independent checker imports no producer functions. Rehash all recorded products and current source, script, protocol and available binary pins; freshly decode entire sources and resample; compare full saved profiles between runs; directly center and normalize windows in extended precision at four declared positions per profile; independently enumerate qualifying candidate intervals from full profiles.",
+  "execution": {
+    "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B /Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/review_audio.py",
+    "receipt": "dcc748",
+    "exit": 0,
+    "numpy": "2.3.4",
+    "scipy": "1.16.2",
+    "checker_sha256": "ef4f06ffd4b739b7b8c1649faf019869784079cb91d72a82e72cd768846fd3fd",
+    "checker_bytes": 8483,
+    "decode_command_template": ["/opt/homebrew/bin/ffmpeg", "-nostdin", "-v", "error", "-i", "SOURCE", "-map", "0:a:0", "-vn", "-c:a", "pcm_f32le", "-f", "f32le", "pipe:1"],
+    "sources": {
+      "reference": "../media/SIbqaybkbWI.f140.unmodified.m4a",
+      "query": "/Users/admin/docs/911/research/sherlock-wtc7-investigation/acoustic-audit/run01/edited-stereo.wav"
+    },
+    "both_decodes_exit_zero_empty_stderr": true
+  },
+  "checks": {
+    "controls01_preserved_producer_pin_matched": true,
+    "product_pins_matched": 848,
+    "current_controls02_script_protocol_and_binary_pins_matched": true,
+    "both_historical_controls_gate_pins_matched": true,
+    "all_17_current_control_results_true": true,
+    "fresh_reference_native_frames": 1665024,
+    "fresh_query_native_frames": 1102500,
+    "fresh_reference_resampled_frames": 237861,
+    "fresh_query_resampled_frames": 157500,
+    "fresh_native_bytes_and_resampled_arrays_equal_both_runs": true,
+    "full_signed_profiles_exact_across_runs": 200,
+    "forward_and_reversed_reports_exact_across_runs": true,
+    "direct_oracle_positions": 800,
+    "position_rule": "For every one of 100 profiles per direction: lag zero, integer middle, last, and reported global best; duplicate positions would remain separate checks.",
+    "direct_relative_tolerance": 1e-9,
+    "direct_absolute_tolerance": 1e-9,
+    "direct_max_absolute_error": 7.119305145408816e-14,
+    "global_max_abs_r": {"forward": 0.15850560814539102, "reversed": 0.1378209406063701},
+    "independent_eligible_maxima_and_candidate_rule_match": true,
+    "candidates": {"forward": [], "reversed": []}
+  },
+  "reviewed_receipt_sha256": {
+    "controls01": "0f1d00ae0915d7ebe67a27d73fa4290946fc5c130818dcedffc4deb86f3af5ff",
+    "controls02": "15d190026718d554606c2dfae0674018903adec89bf9d385a6ad1abc0cf359df",
+    "audio01": "85c747b2fc9e28820c2ce667ec3fab5664c31a8767e5afbc6eccbdfcc5afa64c",
+    "audio02": "cccd379521f07b33282d47817c6442640e0bc1e438e1f77db1f6fc48da016ed5"
+  },
+  "scope_limitations": [
+    "Direct oracle checks 800 positions, not every lag. Full-profile checks establish repeat equality and saved extrema, not independent recomputation of all scores.",
+    "Fresh decode and resampling share ffmpeg and scipy with producer; this is not cross-decoder or independent-resampler validation.",
+    "Displayed five-peak lists were checked for exact repeated reports, not independently regenerated as a peak-ranking algorithm.",
+    "Single-scale dominant-peak threshold0.95 does not exclude speed-, mix-, nonlinearly transformed or edited shared audio, or weak/short reused segments.",
+    "Time reversal is not an independent negative population, calibrated null distribution or false-positive rate.",
+    "Synthetic controls lack codec degradation, time-scale variation, realistic speech/music mixing, nonlinear dynamic processing and historical clock validation.",
+    "No listening, sound classification, absence-of-sound finding, acoustic detectability, original-recording authentication, human acceptance or cause conclusion."
+  ],
+  "correction_history": {
+    "prior_execution": "b2ab65, exit0, checker SHA2425d5ec02dbe984884cd0690ea1b1307a03c5e0908897a1211db5a4787fd0f8 (8499bytes)",
+    "error": "Reviewer incorrectly stated that old controls01 producer bytes were not supplied; it had not checked the preserved pre-hardening path.",
+    "correction": "Verified audio_screen.pre-hardening.py directly against controls01 inputs_before/after: SHA6a6028adec12f962db0d5d2213894d5b66c7f7857f531ca2e679dfc2880b312f, 16710bytes. Current checker explicitly checks this preserved version. Rerun dcc748 exit0 reproduced all prior numerical results. No historical scores, source files or producer tests changed."
+  },
+  "highest_value_next_test": "If transformed correspondence remains material, prospectively specify a limited transformation family and source-realistic positive and adverse controls before additional historical scoring; do not retrospectively lower this stage's threshold or select a preferred offset. Human listening and independent source-lineage/image correspondence remain separate.",
+  "conclusion": "The declared dominant-peak scale-one criterion was not met. Its bounded numerical implementation is corroborated by the checks above; no inference of independent soundtracks or absence of a physical sound is warranted.",
+  "cause_ranking_changed": false
+}

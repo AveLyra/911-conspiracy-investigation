@@ -87,7 +87,7 @@ All paths below are under this unit's `sources/`.
 | File | Bytes | SHA-256 |
 | --- | ---: | --- |
 | youtube-oembed.json | 817 | `d73e1a0d4a99791386b5c1f1c5a4e5c61a16da5e022d50e9e5bfb7ca16c0a462` |
-| youtube-watch.html (omitted from public copy; see note) | 1189397 | `e6944e7146ef30ac0fb1ca09306c7caddb2e94aa8488b1f76bc819c1283931b6` |
+| youtube-watch.html | 1189397 | `e6944e7146ef30ac0fb1ca09306c7caddb2e94aa8488b1f76bc819c1283931b6` |
 | ic911-building7.html | 549409 | `da33035e9e8ce9d95bca6d3697f9fe99e8625ad74fee3b2cd5164cef84794eaf` |
 | ic911-wtc7-8.html | 498149 | `dd8c4444fac75104381d469660655c5595b119b8f6d09ab1bc37d8e1cc9cf857` |
 | wayback-other-folder.html | 29819 | `8dd8759c036a557a7cc544586fd0c563cd26faa0aa9f37bc8f6078ac552d908a` |

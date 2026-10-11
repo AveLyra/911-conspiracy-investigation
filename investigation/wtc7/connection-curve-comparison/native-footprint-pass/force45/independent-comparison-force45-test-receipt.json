@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-08",
+  "status": "passed_complete_independent_computational_audit",
+  "scope": "Six literal native annotations and three region-specific comparisons, each with an exact repeated save",
+  "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/force45",
+  "commands": [
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_force45",
+      "receipt": "fe794e",
+      "exit_code": 0,
+      "result": "12 synthetic-only tests passed during checker development; no historical replay included"
+    },
+    {
+      "command": "shasum -a 256 on all six reader scripts/JSONs and all six comparison JSONs",
+      "receipt": "aa4734",
+      "exit_code": 0,
+      "result": "18 artifact hashes read after root confirmed all six readers and comparisons frozen; pins embedded before historical replay"
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_force45",
+      "receipt": "f6529a",
+      "exit_code": 0,
+      "result": "All 12 synthetic-only tests passed against final checker/test code before either historical save"
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-force45-check.py --output independent-comparison-force45-check01.json",
+      "receipt": "6371a6",
+      "exit_code": 0,
+      "result": "Complete historical literal replay, validation, source RGB and set-arithmetic check passed without exclusions"
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-force45-check.py --output independent-comparison-force45-check02.json",
+      "receipt": "d12d9b",
+      "exit_code": 0,
+      "result": "Repeated complete audit passed and produced exactly identical output bytes"
+    },
+    {
+      "command": "Bundled Python output equality, counts, hashes and checker/test trailing-whitespace check; git diff --check",
+      "receipt": "3fc2fe",
+      "exit_code": 0,
+      "result": "Both output bytes identical; new checker/tests and tracked files have no detected trailing-whitespace errors"
+    }
+  ],
+  "verification_counts": {
+    "synthetic_only_tests": 12,
+    "historical_reader_replays": 6,
+    "all_route_records": 1280,
+    "all_unassigned_band_records": 640,
+    "all_set_operations": 14400,
+    "all_source_context_records": 23024,
+    "all_selected_cells": 3866,
+    "selected_exact_white": 0,
+    "prior_energy89_artifact_pins_checked": 37
+  },
+  "counts_limit": "Synthetic test methods include multiple subcases; their count is not a count of independent experiments. Historical replay is separate. Context records include overlapping pixels and are not independent historical observations.",
+  "artifacts": {
+    "independent-comparison-force45-check.py": {
+      "sha256": "d24c9baa45bfce24571d41c3f699855ff0d9b5b21fe44deae8ca97a8d1595b54",
+      "bytes": 37255
+    },
+    "test_independent_comparison_force45.py": {
+      "sha256": "ffcec8c5981ba8da0799eb55327fa309b78720b3f35d92c11a026299451b1874",
+      "bytes": 8752
+    },
+    "independent-comparison-force45-check01.json": {
+      "sha256": "69b80b0558db360974502572c46c8c260d86f17e254af1e2606791db209f4261",
+      "bytes": 31296
+    },
+    "independent-comparison-force45-check02.json": {
+      "sha256": "69b80b0558db360974502572c46c8c260d86f17e254af1e2606791db209f4261",
+      "bytes": 31296
+    }
+  },
+  "methods": {
+    "literal_replay": "Read producer scripts as inert AST, extract explicit manually declared tables and metadata/note literals, and expand them using separately authored code. Resolve only whitelisted data expressions; no arbitrary AST execution, eval or exec. No reader/comparator producer is imported or executed. Full reconstructed JSON objects, not samples or selected fields, must match every saved reader and comparison.",
+    "validation": "Check source-specific region, pair, reader role, source image, boxes and dependency pins; exact target coverage; declared raw-reading block coverage; integer bounds; sorted disjoint core/fringe; membership IDs and unions; selected-cell boundary flags; nonempty notes; status semantics; genuine same-column unresolved-band references; partition across models and unresolved material; and missing versus explicit-empty records.",
+    "arithmetic": "For every route and all-ink column, independently use membership truth tables across the integer row range to derive intersection, union, primary-only, peer-only and symmetric difference for core, fringe and outer classes. Reconstruct and compare every summary and metadata field. Primary and peer roles are explicit, independent of dictionary insertion order.",
+    "source_check": "Fresh Pillow decoding of both unchanged 741-by-88 RGB JPEG sources; every row-major context coordinate and RGB byte checked. Diagnose selected exact-white cells without editing selections. Context, reader and comparison repeat files must be byte-identical. Every dependency and all 37 preserved energy89 pins checked before and after replay."
+  },
+  "failures_and_recoveries": [
+    {
+      "operation": "Initial read-only implementation inspection",
+      "receipt": "00b8fa",
+      "result": "Wrong shortened filename reader-F4-primary.py was not found",
+      "resolution": "Read the actual reader-F4-Im4-primary.py at receipt95f0ec; no file changed or missing source inferred"
+    },
+    {
+      "operation": "Read-only comparator progress inspection",
+      "receipt": "495245",
+      "result": "compare_force45.py was not yet present while root was implementing it",
+      "resolution": "Waited for root's frozen-comparator notice and read final code at receipt80c63d; no restart or historical failure claimed"
+    }
+  ],
+  "parent_reported_comparator_review": {
+    "basis": "Root message, not an independently witnessed tool event",
+    "mutation_demo_receipt": "c34e78",
+    "finding": "Pre-freeze producer comparator permitted references to an explicitly empty band",
+    "repair": "Root required referenced bands to contain selected unresolved material, required reasons, and parsed JSON from the same bytes hashed before freezing comparator outputs",
+    "producer_test_receipt": "8ae381",
+    "producer_test_count": 31,
+    "independent_check": "This checker independently rejects references to empty bands and passed its own corresponding synthetic test; all final historical outputs replay exactly",
+    "limit": "Not a source defect; this record does not claim personal witnessing or rerunning of the parent's mutation demonstration"
+  },
+  "historical_check_failures": [],
+  "source_repairs": [],
+  "independence": {
+    "producer_imports": false,
+    "producer_execution": false,
+    "producer_subprocesses": false,
+    "new_visual_source_reading": false,
+    "checker_runtime": "Python 3.12.14 / Pillow 12.3.0",
+    "codec_limit": "Shared Pillow decoder family; not independent codec validation",
+    "coverage_limit": "Source-reading coverage and perception claims are faithfully replayed and internally checked, not independently witnessed"
+  },
+  "limits": [
+    "Native annotation differences and their exact arithmetic are not model-force differences or evidence of historical cause.",
+    "The separate F5-Im4 and F5-Im2 coordinate systems remain separate; no cross-strip joining or geometric calibration.",
+    "A nonwhite selected pixel is not thereby demonstrated to be curve ink, nor are its model identity and original-curve bounds established.",
+    "No human acceptance, expert endorsement, calibrated containment, physical ordinate, support admission, historical model simulation, causal ranking or legal promotion."
+  ],
+  "human_accepted": false,
+  "physical_support": null
+}

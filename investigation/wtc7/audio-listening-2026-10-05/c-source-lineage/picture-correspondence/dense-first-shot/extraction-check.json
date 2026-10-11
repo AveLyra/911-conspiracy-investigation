@@ -1,0 +1,122 @@
+{
+  "status": "complete",
+  "mode": "extraction",
+  "synthetic_checks": {
+    "pearson_gain_offset": true,
+    "pearson_inversion": true,
+    "flat_null": true,
+    "small_mask_null": true,
+    "coverage_null": true,
+    "full_native_mask": true,
+    "half_native_mask": true,
+    "canvas_0.75": true,
+    "canvas_1": true,
+    "canvas_1.75": true
+  },
+  "script": {
+    "sha256": "9866921fa63dd4384a9e1a029d2805982893a35629eeff6429ea58ff0b949453",
+    "bytes": 15660
+  },
+  "protocol": {
+    "sha256": "ad29e35bec245770f3bb7308192a17861cc22cbb4638c7b53762d585834bec07",
+    "bytes": 6782
+  },
+  "parent_arithmetic": {
+    "sha256": "56784c9f63ea2f8fc775e0d6d77635a80ea1dc3b4aff5dd9326d954272afa2ef",
+    "bytes": 13975
+  },
+  "python": "3.13.7",
+  "numpy": "2.3.4",
+  "pillow": "12.0.0",
+  "binary_pins": {
+    "/opt/homebrew/bin/ffmpeg": {
+      "sha256": "7697b094387e2918821fe7480c73f5d44543817096e9d5b5fafe58ecd6912569",
+      "bytes": 421968
+    },
+    "/opt/homebrew/bin/ffprobe": {
+      "sha256": "fd670257233c93c88608a62ed8b5ddeeb812bd341dfb39bbe0e1c654b91672ad",
+      "bytes": 351920
+    }
+  },
+  "score_tolerance": 1e-09,
+  "coverage_tolerance": 1e-12,
+  "independence": "No producer/core import. Reuses hash-pinned separate checker arithmetic; shared Pillow, decoder and source files. No image viewing or source authentication.",
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,width,height",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/media/SIbqaybkbWI.f133.mp4"
+      ],
+      "exit": 0,
+      "stderr_utf8": "",
+      "stdout_bytes": 113376,
+      "stdout_sha256": "edc66934c201d28fdf0fb91f0571b912187c29942b7f2d5c80b3c78b0a242d57"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/media/SIbqaybkbWI.f133.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-fps_mode",
+        "passthrough",
+        "-pix_fmt",
+        "rgb24",
+        "-f",
+        "rawvideo",
+        "pipe:1"
+      ],
+      "exit": 0,
+      "stderr_utf8": "",
+      "stdout_bytes": 242995200,
+      "stdout_sha256": "27b721d813fab0280a5dfd6fbcfe6db454af25da3cccc905cb88097ebf7c53fa"
+    }
+  ],
+  "verification": {
+    "full_decoded_frames": 1130,
+    "selected_indices": [
+      300,
+      539
+    ],
+    "selected_frames_per_run": 240,
+    "selected_png_pixel_comparisons": 480,
+    "coarse_exact_overlaps": 8,
+    "historical_equal_products": 251,
+    "source_before": {
+      "sha256": "3f6db089b0e89cdfc030f6aaaf81227931681d26e0bd3c801b98cdcf486ba0d7",
+      "bytes": 758909
+    },
+    "source_after": {
+      "sha256": "3f6db089b0e89cdfc030f6aaaf81227931681d26e0bd3c801b98cdcf486ba0d7",
+      "bytes": 758909
+    },
+    "maps": [
+      {
+        "sha256": "846d8155bac947d30bb981373a1f879500672376800c8b94e634bafc48094a29",
+        "bytes": 93188
+      },
+      {
+        "sha256": "846d8155bac947d30bb981373a1f879500672376800c8b94e634bafc48094a29",
+        "bytes": 93188
+      }
+    ],
+    "synthetic_checks_per_run": 6,
+    "limitations": "Same installed decoder; full sequential decode rather than selection helper. No original-camera exposure/custody inference."
+  },
+  "elapsed_s": 1.4573093749349937
+}

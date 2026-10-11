@@ -1,0 +1,636 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "reviewer": "/root/quiet_mechanism_inference_review",
+  "status": "bounded_source_chain_review_complete",
+  "role": "Same-source, nonblind AI record review; not independent historical corroboration, expert validation or human acceptance.",
+  "scope": {
+    "reviewed": "Eight saved listing request/response pairs; four metadata pairs; two sanitized fetch-reference pairs; protocol and both addenda; acquisition procedure and failure receipt; current media directory. Saved preceding Video-catalog request/response used only to check the two declared root-folder joins.",
+    "additional_file": "sources/public-search-log.json appeared during review. It was hashed and included in the saved-text privacy scan, but its search claims/results were not used or substantively audited.",
+    "excluded": "No network, retries, downloads, media decoding, playback, external account inspection, legal-record changes, or source authentication. No other files edited."
+  },
+  "authority": [
+    "/Users/admin/docs/911/AGENTS.md",
+    "/Users/admin/docs/911/WORKFLOW.md",
+    "/Users/admin/docs/911/START-HERE.md",
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/CHARTER.md",
+    "PROTOCOL.md",
+    "METADATA-ADDENDUM.md",
+    "ACQUISITION-ADDENDUM.md"
+  ],
+  "skills_applied": {
+    "evidence-falsification-auditor": "Separated observed saved metadata, computed joins/counts, reported transfer failures and unresolved historical identity; preserved failed checks.",
+    "source-of-truth-guardian": "Kept raw and saved source records unchanged, treated addenda as declared procedure rather than source evidence, and wrote only this research review."
+  },
+  "findings": [
+    {
+      "claim": "The saved folder traversal uses eight distinct requested folders, with maximum descendant depth two from the declared roots.",
+      "type": "Derived record check",
+      "strength": "A for the saved request/response set",
+      "support": "Exact requested folder IDs join to a returned folder ID in the preceding saved response; both declared roots join to the earlier Video catalog.",
+      "limit": "This establishes recorded listing membership, not independently verified native parent fields. All returned parent_ids are null."
+    },
+    {
+      "claim": "The eight new listing responses contain 27 entries: 18 files and nine folders; no returned title equals WTC7COLLAPSE.MPG, including case-insensitive comparison.",
+      "type": "Derived bounded inventory",
+      "strength": "A within those returned rows",
+      "support": "All eight saved response payloads; counts and exact names reproduced by the verification command.",
+      "limit": "There is no pagination or completeness proof. Three returned folder branches were not listed. A filename-negative result is not a source-wide or content-negative result; separate IDs are not independent recordings."
+    },
+    {
+      "claim": "The four presentation items remain differently named, unverified alternative candidates, not demonstrated aliases of the secondary-index target.",
+      "type": "Inference boundary",
+      "strength": "A as a limitation of the current record",
+      "support": "Presentation-list titles, ID/size joins, metadata addendum and prospective acquisition addendum.",
+      "limit": "The Gilsanz February presentation naming connection motivates investigation but does not authenticate the file identity, camera, scene, duration or sound."
+    },
+    {
+      "claim": "Requested video metadata, checksum and download-capability fields are absent from the normalized metadata response objects.",
+      "type": "Observed response content",
+      "strength": "A for those normalized objects",
+      "support": "All four metadata requests ask for videoMediaMetadata and checksums; the saved normalized returns omit them.",
+      "limit": "Cannot distinguish unavailable provider fields from tool normalization or another retrieval limitation. This is not evidence of a duration/dimension mismatch or that the provider lacks the information. Listings separately report can_download=true; that is not a successful transfer."
+    },
+    {
+      "claim": "The two fetch operations returned references and metadata matching the selected IDs and expected sizes; local transfer receipts report HTTP 403 for both.",
+      "type": "Observed saved response and receipt statements",
+      "strength": "A for the saved records, not a fresh reproduction of the network event",
+      "support": "Both sanitized fetch pairs and acquisition-receipt.json. Candidate expected sizes are 86,021,896 and 30,330,880 bytes.",
+      "limit": "A returned artifact reference is not acquired media. The denied step was the local transfer from a tool-returned temporary transport reference, not a demonstrated NIST-origin deletion or denial."
+    },
+    {
+      "claim": "The media directory is currently empty and both expected output filenames are absent; the acquisition script matches the receipt's script hash.",
+      "type": "Direct local check",
+      "strength": "A at verification time",
+      "support": "Current directory listing, expected-path existence tests and SHA-256 comparison.",
+      "limit": "No candidate media bytes, stream contents, scene, duration or sound have been verified. Original transfer execution was not rerun."
+    },
+    {
+      "claim": "Saved ephemeral download_url values in the two sanitized fetch responses are replaced by an explicit omission marker.",
+      "type": "Observed redaction and scoped privacy check",
+      "strength": "A for the checked fields; bounded detection for the wider scan",
+      "support": "All six nested download_url fields checked; 34 current stage text files scanned for temporary transport URLs and suspicious query parameters.",
+      "limit": "No audit of external logs, process memory, other directories, unknown secret encodings or future files; this is not blanket privacy/export clearance."
+    }
+  ],
+  "protocol_boundary": {
+    "initial_listing_budget": "The protocol permits two initial folder listings plus up to eight additional descendant listings, to a maximum descendant depth of two. The actual eight calls comprised two initial folders and six descendant listings, within that cap.",
+    "metadata_extension": "Four metadata requests are separately declared in METADATA-ADDENDUM.md, not miscounted as folder listings.",
+    "acquisition_extension": "ACQUISITION-ADDENDUM.md explicitly broadens the exact-name/documented-alias criterion only to the two named alternatives. Count, byte-size and no-bypass constraints remain.",
+    "actual_scope": "Two raw-file reference requests and two distinct local transfer attempts are documented; the saved procedure contains no retry of a denied target or fallback account/redirect route.",
+    "chronology_limit": "The current addendum states it preceded fetching, consistent with this agent's prior method review. This local audit does not independently establish a tamper-proof execution chronology."
+  },
+  "strongest_alternative_to_global_absence": "The target footage may be present under a changed name, in an unlisted branch or another repository/release arrangement, or the secondary alias description may be inaccurate. Missing normalized video metadata and failed local artifact transfers cannot resolve these alternatives.",
+  "failure_caution": "HTTP 403 at the temporary-artifact transfer layer may reflect transport authorization or availability conditions. It is not evidence that NIST deleted, concealed, lacks, or intentionally withheld the underlying media; the exact explanation was not diagnosed.",
+  "command_history": [
+    {
+      "purpose": "Initial complete local audit; stopped at overbroad privacy classification",
+      "exit_code": 1,
+      "exact_shell_command": "PYTHONDONTWRITEBYTECODE=1 python3 - <<'PY'\nimport ast,hashlib,json,re\nfrom pathlib import Path\nfrom urllib.parse import urlsplit,parse_qsl\nP=Path(\"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy\")\nS=P/\"sources\"\nA=Path(\"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-original-tape-catalog/sources\")\nchecks={};summary=[];pins={}\ndef check(name,condition):\n    checks[name]=bool(condition)\n    assert condition,name\ndef read(p):\n    data=p.read_bytes()\n    pins[str(p)]={\"bytes\":len(data),\"sha256\":hashlib.sha256(data).hexdigest()}\n    return json.loads(data)\ndef fid(url):\n    u=urlsplit(url)\n    assert u.scheme==\"https\" and u.hostname==\"drive.google.com\"\n    m=re.search(r\"/(?:folders|d)/([^/]+)\",u.path)\n    assert m\n    return m.group(1)\nancestor_q=read(A/\"cdvideo-list.request.json\")\nancestor_r=read(A/\"cdvideo-list.response.json\")\ncheck(\"ancestor_saved_catalog_ok\",ancestor_r[\"isError\"] is False and fid(ancestor_q[\"url\"])==\"1GAo8-t_O6CyfBPqwCOfCyAERyZkY1Nth\")\nroots={\"ramon-list\":\"1HfkLxWt8I2Nvi97wxiIgDplOMafNsWYz\",\"gms-list\":\"1qoGwJrsYR33PZe7lYV77cxYrxuHDZBsl\"}\nplan=[(\"ramon-list\",None,0),(\"gms-list\",None,0),(\"gms-child-0\",\"gms-list\",1),(\"gms-child-1\",\"gms-list\",1),(\"gms-child-2\",\"gms-list\",1),(\"gms-child-3\",\"gms-list\",1),(\"presentation-0\",\"gms-child-3\",2),(\"presentation-1\",\"gms-child-3\",2)]\nloaded={};all_rows=[];queried=[]\nfor name,parent,depth in plan:\n    q=read(S/(name+\".request.json\"));r=read(S/(name+\".response.json\"))\n    rows=r[\"structuredContent\"][\"files\"]; parentid=fid(q[\"url\"]);queried.append(parentid)\n    check(name+\":request_contract\",set(q)=={\"url\",\"top_k\"} and q[\"top_k\"]==1000)\n    check(name+\":response_ok\",r[\"isError\"] is False and set(r[\"structuredContent\"])=={\"files\"})\n    prior=ancestor_r[\"structuredContent\"][\"files\"] if parent is None else loaded[parent]\n    hits=[x for x in prior if x[\"id\"]==parentid]\n    check(name+\":exact_parent_returned_child_join\",len(hits)==1 and hits[0][\"file_or_folder\"]==\"folder\")\n    if parent is None:check(name+\":declared_root\",parentid==roots[name])\n    check(name+\":returned_urls_match_ids\",all(fid(x[\"url\"])==x[\"id\"] and fid(x[\"display_url\"])==x[\"id\"] for x in rows))\n    check(name+\":unique_ids_in_response\",len({x[\"id\"] for x in rows})==len(rows))\n    check(name+\":nonexhaustive_response_semantics\",len(rows)<q[\"top_k\"] and all(x[\"parent_ids\"] is None and x[\"source_visibility_status\"]==\"access_not_verified\" for x in rows))\n    loaded[name]=rows;all_rows.extend(rows)\n    summary.append({\"response\":name,\"requested_folder_id\":parentid,\"title_from_parent_listing\":hits[0][\"title\"],\"parent_record\":\"cdvideo-list.response.json\" if parent is None else parent+\".response.json\",\"descendant_depth_from_declared_root\":depth,\"rows\":len(rows),\"files\":sum(x[\"file_or_folder\"]==\"file\" for x in rows),\"folders\":sum(x[\"file_or_folder\"]==\"folder\" for x in rows),\"returned_items\":[{k:x[k] for k in (\"id\",\"title\",\"file_or_folder\",\"size\")} for x in rows]})\ncheck(\"eight_listing_pairs_depth_at_most_two\",len(plan)==8 and max(x[2] for x in plan)==2)\ncheck(\"eight_distinct_folder_requests\",len(set(queried))==8)\ncheck(\"27_rows_18files_9folders\",len(all_rows)==27 and sum(x[\"file_or_folder\"]==\"file\" for x in all_rows)==18 and sum(x[\"file_or_folder\"]==\"folder\" for x in all_rows)==9)\ncheck(\"all27_object_ids_distinct\",len({x[\"id\"] for x in all_rows})==27)\ncheck(\"exact_target_not_in_returned_names\",not any(x[\"title\"].casefold()==\"wtc7collapse.mpg\" for x in all_rows))\nunlisted=[{k:x[k] for k in (\"id\",\"title\")} for x in all_rows if x[\"file_or_folder\"]==\"folder\" and x[\"id\"] not in queried]\ncheck(\"three_returned_folder_branches_unlisted\",len(unlisted)==3)\nexpected=[(\"1cRKKHryagLgSSuRwLoL-Qwq93fI-Mv_o\",\"wtc 7-b1.mpg\",\"video/mpeg\",86021896),(\"1LDl5mlwBxSKnL1C7VpfbDNK0ztvjvFrw\",\"wtc 7-b.mpg\",\"video/mpeg\",30330880),(\"1rhUv1MfKZjEAm44lHPfNT9_W8QIcf1Ph\",\"WTC7fall.m1v\",\"video/mpv\",8621332),(\"1MC3Ts3KtiU9PzgfRA9rWtZxrHgJpH9Ab\",\"WTC7-145040.m1v\",\"video/mpv\",25458675)]\nfields=\"id,name,mimeType,size,md5Checksum,sha1Checksum,sha256Checksum,parents,capabilities(canDownload),videoMediaMetadata\"\nmetadata=[]\nfor i,(id,title,mime,size) in enumerate(expected):\n    q=read(S/f\"candidate-{i}-metadata.request.json\");r=read(S/f\"candidate-{i}-metadata.response.json\");x=r[\"structuredContent\"]\n    parent=next(x for x in loaded[\"presentation-0\"] if x[\"id\"]==id)\n    check(f\"metadata{i}:requested_exact_fields_and_id\",q=={\"fileId\":id,\"fields\":fields})\n    check(f\"metadata{i}:id_title_mime_size_join\",r[\"isError\"] is False and (x[\"id\"],x[\"title\"],x[\"mime_type\"],int(x[\"size\"]))==(id,title,mime,size) and (parent[\"title\"],parent[\"mime_type\"],int(parent[\"size\"]))==(title,mime,size))\n    absent=[k for k in (\"md5Checksum\",\"sha1Checksum\",\"sha256Checksum\",\"videoMediaMetadata\",\"can_download\",\"capabilities\") if k not in x]\n    check(f\"metadata{i}:requested_info_missing_in_normalized_return\",len(absent)==6 and x[\"parent_ids\"] is None)\n    metadata.append({\"id\":id,\"title\":title,\"mime_type\":mime,\"size\":size,\"missing_normalized_fields\":absent,\"listing_can_download\":parent[\"can_download\"]})\nreceipt=read(P/\"acquisition-receipt.json\")\nscript=(P/\"acquire_candidates.py\").read_bytes()\ncheck(\"script_pin_matches_receipt\",hashlib.sha256(script).hexdigest()==receipt[\"procedure_sha256\"])\ntree=ast.parse(script)\nliteral=next(n.value for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(z,ast.Name) and z.id==\"CANDIDATES\" for z in n.targets))\nscript_candidates=ast.literal_eval(literal)\ncheck(\"script_exact_two_candidates\",script_candidates==[(\"wtc-7-b1.mpg\",expected[0][0],expected[0][3]),(\"wtc-7-b.mpg\",expected[1][0],expected[1][3])])\ncheck(\"candidate_count_size_caps\",len(script_candidates)==2 and all(0<x[2]<=300000000 for x in script_candidates))\nfetches=[]\nfor i,(id,title,mime,size) in enumerate(expected[:2]):\n    q=read(S/f\"fetch-{i}.request.json\");r=read(S/f\"fetch-{i}.response-sanitized.json\");x=r[\"structuredContent\"];nested=x[\"structuredContent\"]\n    parent=next(x for x in loaded[\"presentation-0\"] if x[\"id\"]==id)\n    check(f\"fetch{i}:exact_returned_listing_url\",q=={\"url\":parent[\"url\"],\"download_raw_file\":True,\"include_base64\":False})\n    check(f\"fetch{i}:reference_only_response\",r[\"isError\"] is False and x[\"b64_string\"] is None and x[\"content\"]==\"\" and nested[\"content\"]==\"\")\n    check(f\"fetch{i}:preserved_id_title_mime_size\",all((z[\"id\"],z[\"title\"],z[\"mime_type\"],z[\"file_size_bytes\"])==(id,title,mime,size) for z in (x,nested)))\n    check(f\"fetch{i}:all_three_ephemeral_locators_redacted\",x[\"file_uri\"][\"download_url\"]==nested[\"file_uri\"][\"download_url\"]==nested[\"download_url\"]==\"[ephemeral transport URL omitted]\")\n    check(f\"fetch{i}:artifact_ref_preserved_consistently\",x[\"file_uri\"][\"file_id\"]==nested[\"file_uri\"][\"file_id\"]==nested[\"file_id\"] and nested[\"file_id\"].startswith(\"sediment://file_\"))\n    failure=receipt[\"results\"][i]\n    check(f\"fetch{i}:receipt_failure_matches_candidate\",failure[\"drive_id\"]==id and failure[\"expected_bytes\"]==size and failure[\"name\"]==script_candidates[i][0] and failure[\"http_status\"]==403 and failure[\"exception_type\"]==\"HTTPError\" and failure[\"status\"]==\"failed_preserve_partial_if_present\" and \"sha256\" not in failure and \"bytes\" not in failure)\n    fetches.append({\"id\":id,\"title\":title,\"expected_bytes\":size,\"returned_file_name\":x[\"file_name\"],\"reported_transfer_http_status\":failure[\"http_status\"],\"status\":failure[\"status\"]})\ncheck(\"media_directory_empty_now\",(P/\"media\").is_dir() and not list((P/\"media\").iterdir()))\ncheck(\"both_expected_local_files_absent\",all(not (P/\"media\"/name).exists() for name,_,_ in script_candidates))\nstage_files=[x for x in P.rglob(\"*\") if x.is_file() and x.name!=\"independent-review.json\"]\nunsafe_urls=[];query_keys=set();privacy_files=[];text_count=0\nfor p in stage_files:\n    if p.suffix not in (\".json\",\".md\",\".py\"):continue\n    b=p.read_bytes();text=b.decode(\"utf-8\");text_count+=1\n    pins[str(p)]={\"bytes\":len(b),\"sha256\":hashlib.sha256(b).hexdigest()}\n    for url in re.findall(r\"https?://[^\\s<>\\\"']+\",text):\n        u=urlsplit(url);keys={k for k,v in parse_qsl(u.query)}\n        query_keys.update(keys)\n        if u.username or u.password or (u.hostname and u.hostname.endswith(\".oaiusercontent.com\")) or (keys and not (u.hostname==\"drive.google.com\" and keys=={\"usp\"} and dict(parse_qsl(u.query)).get(\"usp\")==\"drivesdk\")):\n            unsafe_urls.append({\"path\":str(p.relative_to(P)),\"url_sha256\":hashlib.sha256(url.encode()).hexdigest(),\"query_key_count\":len(keys)})\n    if re.search(r\"(?:\\?|&)(?:sig|signature|token|access_token|x-amz-signature|x-goog-signature|se|sp|sv)=\",text,re.I):\n        privacy_files.append(str(p.relative_to(P)))\ncheck(\"no_saved_ephemeral_http_urls_or_unapproved_query_parameters_in_scanned_stage\",not unsafe_urls and not privacy_files)\nexpected_source_files={f\"{n}.{kind}.json\" for n,_,_ in plan for kind in (\"request\",\"response\")}\nexpected_source_files.update(f\"candidate-{i}-metadata.{kind}.json\" for i in range(4) for kind in (\"request\",\"response\"))\nexpected_source_files.update(f\"fetch-{i}.request.json\" for i in range(2))\nexpected_source_files.update(f\"fetch-{i}.response-sanitized.json\" for i in range(2))\ncheck(\"exact_28_saved_source_json_files\",{x.name for x in S.iterdir() if x.is_file()}==expected_source_files)\nprint(json.dumps({\"status\":\"pass\",\"assertions\":len(checks),\"failed\":[k for k,v in checks.items() if not v],\"listing_calls\":8,\"metadata_calls\":4,\"fetch_reference_calls\":2,\"coverage\":summary,\"unlisted_returned_folders\":unlisted,\"metadata_candidates\":metadata,\"fetch_outcomes\":fetches,\"current_media_file_count\":len(list((P/\"media\").iterdir())),\"privacy_scan\":{\"text_files\":text_count,\"query_parameter_keys_seen\":sorted(query_keys),\"unsafe_url_count\":len(unsafe_urls),\"secret_query_pattern_file_count\":len(privacy_files),\"scope\":\"Saved text in this stage at verification time only; no audit of outside logs, process memory or other directories.\"},\"pins\":pins,\"limits\":[\"Request-response membership joins are verified; returned parent_ids are null, so no stronger native parent-field claim is made.\",\"No fresh network request or transfer was performed. HTTP403 is verified as a preserved receipt statement, not independently reproduced.\",\"Eight below-limit responses with no pagination/completeness fields do not prove exhaustive repository coverage.\",\"Initial NIST-to-Drive provenance is inherited from the earlier source audit; this pass verifies the saved Video catalog root joins only.\",\"Distinct object IDs and equal sizes do not establish distinct underlying recordings or identical media bytes.\"]},indent=2))\n\nPY",
+      "actual_output": "Traceback (most recent call last):\n  File \"<stdin>\", line 94, in <module>\n  File \"<stdin>\", line 10, in check\nAssertionError: no_saved_ephemeral_http_urls_or_unapproved_query_parameters_in_scanned_stage\n"
+    },
+    {
+      "purpose": "Diagnostic repetition; printed only file locations, URL hashes and query-key names before the same failing assertion",
+      "exit_code": 1,
+      "exact_shell_command": "PYTHONDONTWRITEBYTECODE=1 python3 - <<'PY'\nimport ast,hashlib,json,re\nfrom pathlib import Path\nfrom urllib.parse import urlsplit,parse_qsl\nP=Path(\"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy\")\nS=P/\"sources\"\nA=Path(\"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-original-tape-catalog/sources\")\nchecks={};summary=[];pins={}\ndef check(name,condition):\n    checks[name]=bool(condition)\n    assert condition,name\ndef read(p):\n    data=p.read_bytes()\n    pins[str(p)]={\"bytes\":len(data),\"sha256\":hashlib.sha256(data).hexdigest()}\n    return json.loads(data)\ndef fid(url):\n    u=urlsplit(url)\n    assert u.scheme==\"https\" and u.hostname==\"drive.google.com\"\n    m=re.search(r\"/(?:folders|d)/([^/]+)\",u.path)\n    assert m\n    return m.group(1)\nancestor_q=read(A/\"cdvideo-list.request.json\")\nancestor_r=read(A/\"cdvideo-list.response.json\")\ncheck(\"ancestor_saved_catalog_ok\",ancestor_r[\"isError\"] is False and fid(ancestor_q[\"url\"])==\"1GAo8-t_O6CyfBPqwCOfCyAERyZkY1Nth\")\nroots={\"ramon-list\":\"1HfkLxWt8I2Nvi97wxiIgDplOMafNsWYz\",\"gms-list\":\"1qoGwJrsYR33PZe7lYV77cxYrxuHDZBsl\"}\nplan=[(\"ramon-list\",None,0),(\"gms-list\",None,0),(\"gms-child-0\",\"gms-list\",1),(\"gms-child-1\",\"gms-list\",1),(\"gms-child-2\",\"gms-list\",1),(\"gms-child-3\",\"gms-list\",1),(\"presentation-0\",\"gms-child-3\",2),(\"presentation-1\",\"gms-child-3\",2)]\nloaded={};all_rows=[];queried=[]\nfor name,parent,depth in plan:\n    q=read(S/(name+\".request.json\"));r=read(S/(name+\".response.json\"))\n    rows=r[\"structuredContent\"][\"files\"]; parentid=fid(q[\"url\"]);queried.append(parentid)\n    check(name+\":request_contract\",set(q)=={\"url\",\"top_k\"} and q[\"top_k\"]==1000)\n    check(name+\":response_ok\",r[\"isError\"] is False and set(r[\"structuredContent\"])=={\"files\"})\n    prior=ancestor_r[\"structuredContent\"][\"files\"] if parent is None else loaded[parent]\n    hits=[x for x in prior if x[\"id\"]==parentid]\n    check(name+\":exact_parent_returned_child_join\",len(hits)==1 and hits[0][\"file_or_folder\"]==\"folder\")\n    if parent is None:check(name+\":declared_root\",parentid==roots[name])\n    check(name+\":returned_urls_match_ids\",all(fid(x[\"url\"])==x[\"id\"] and fid(x[\"display_url\"])==x[\"id\"] for x in rows))\n    check(name+\":unique_ids_in_response\",len({x[\"id\"] for x in rows})==len(rows))\n    check(name+\":nonexhaustive_response_semantics\",len(rows)<q[\"top_k\"] and all(x[\"parent_ids\"] is None and x[\"source_visibility_status\"]==\"access_not_verified\" for x in rows))\n    loaded[name]=rows;all_rows.extend(rows)\n    summary.append({\"response\":name,\"requested_folder_id\":parentid,\"title_from_parent_listing\":hits[0][\"title\"],\"parent_record\":\"cdvideo-list.response.json\" if parent is None else parent+\".response.json\",\"descendant_depth_from_declared_root\":depth,\"rows\":len(rows),\"files\":sum(x[\"file_or_folder\"]==\"file\" for x in rows),\"folders\":sum(x[\"file_or_folder\"]==\"folder\" for x in rows),\"returned_items\":[{k:x[k] for k in (\"id\",\"title\",\"file_or_folder\",\"size\")} for x in rows]})\ncheck(\"eight_listing_pairs_depth_at_most_two\",len(plan)==8 and max(x[2] for x in plan)==2)\ncheck(\"eight_distinct_folder_requests\",len(set(queried))==8)\ncheck(\"27_rows_18files_9folders\",len(all_rows)==27 and sum(x[\"file_or_folder\"]==\"file\" for x in all_rows)==18 and sum(x[\"file_or_folder\"]==\"folder\" for x in all_rows)==9)\ncheck(\"all27_object_ids_distinct\",len({x[\"id\"] for x in all_rows})==27)\ncheck(\"exact_target_not_in_returned_names\",not any(x[\"title\"].casefold()==\"wtc7collapse.mpg\" for x in all_rows))\nunlisted=[{k:x[k] for k in (\"id\",\"title\")} for x in all_rows if x[\"file_or_folder\"]==\"folder\" and x[\"id\"] not in queried]\ncheck(\"three_returned_folder_branches_unlisted\",len(unlisted)==3)\nexpected=[(\"1cRKKHryagLgSSuRwLoL-Qwq93fI-Mv_o\",\"wtc 7-b1.mpg\",\"video/mpeg\",86021896),(\"1LDl5mlwBxSKnL1C7VpfbDNK0ztvjvFrw\",\"wtc 7-b.mpg\",\"video/mpeg\",30330880),(\"1rhUv1MfKZjEAm44lHPfNT9_W8QIcf1Ph\",\"WTC7fall.m1v\",\"video/mpv\",8621332),(\"1MC3Ts3KtiU9PzgfRA9rWtZxrHgJpH9Ab\",\"WTC7-145040.m1v\",\"video/mpv\",25458675)]\nfields=\"id,name,mimeType,size,md5Checksum,sha1Checksum,sha256Checksum,parents,capabilities(canDownload),videoMediaMetadata\"\nmetadata=[]\nfor i,(id,title,mime,size) in enumerate(expected):\n    q=read(S/f\"candidate-{i}-metadata.request.json\");r=read(S/f\"candidate-{i}-metadata.response.json\");x=r[\"structuredContent\"]\n    parent=next(x for x in loaded[\"presentation-0\"] if x[\"id\"]==id)\n    check(f\"metadata{i}:requested_exact_fields_and_id\",q=={\"fileId\":id,\"fields\":fields})\n    check(f\"metadata{i}:id_title_mime_size_join\",r[\"isError\"] is False and (x[\"id\"],x[\"title\"],x[\"mime_type\"],int(x[\"size\"]))==(id,title,mime,size) and (parent[\"title\"],parent[\"mime_type\"],int(parent[\"size\"]))==(title,mime,size))\n    absent=[k for k in (\"md5Checksum\",\"sha1Checksum\",\"sha256Checksum\",\"videoMediaMetadata\",\"can_download\",\"capabilities\") if k not in x]\n    check(f\"metadata{i}:requested_info_missing_in_normalized_return\",len(absent)==6 and x[\"parent_ids\"] is None)\n    metadata.append({\"id\":id,\"title\":title,\"mime_type\":mime,\"size\":size,\"missing_normalized_fields\":absent,\"listing_can_download\":parent[\"can_download\"]})\nreceipt=read(P/\"acquisition-receipt.json\")\nscript=(P/\"acquire_candidates.py\").read_bytes()\ncheck(\"script_pin_matches_receipt\",hashlib.sha256(script).hexdigest()==receipt[\"procedure_sha256\"])\ntree=ast.parse(script)\nliteral=next(n.value for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(z,ast.Name) and z.id==\"CANDIDATES\" for z in n.targets))\nscript_candidates=ast.literal_eval(literal)\ncheck(\"script_exact_two_candidates\",script_candidates==[(\"wtc-7-b1.mpg\",expected[0][0],expected[0][3]),(\"wtc-7-b.mpg\",expected[1][0],expected[1][3])])\ncheck(\"candidate_count_size_caps\",len(script_candidates)==2 and all(0<x[2]<=300000000 for x in script_candidates))\nfetches=[]\nfor i,(id,title,mime,size) in enumerate(expected[:2]):\n    q=read(S/f\"fetch-{i}.request.json\");r=read(S/f\"fetch-{i}.response-sanitized.json\");x=r[\"structuredContent\"];nested=x[\"structuredContent\"]\n    parent=next(x for x in loaded[\"presentation-0\"] if x[\"id\"]==id)\n    check(f\"fetch{i}:exact_returned_listing_url\",q=={\"url\":parent[\"url\"],\"download_raw_file\":True,\"include_base64\":False})\n    check(f\"fetch{i}:reference_only_response\",r[\"isError\"] is False and x[\"b64_string\"] is None and x[\"content\"]==\"\" and nested[\"content\"]==\"\")\n    check(f\"fetch{i}:preserved_id_title_mime_size\",all((z[\"id\"],z[\"title\"],z[\"mime_type\"],z[\"file_size_bytes\"])==(id,title,mime,size) for z in (x,nested)))\n    check(f\"fetch{i}:all_three_ephemeral_locators_redacted\",x[\"file_uri\"][\"download_url\"]==nested[\"file_uri\"][\"download_url\"]==nested[\"download_url\"]==\"[ephemeral transport URL omitted]\")\n    check(f\"fetch{i}:artifact_ref_preserved_consistently\",x[\"file_uri\"][\"file_id\"]==nested[\"file_uri\"][\"file_id\"]==nested[\"file_id\"] and nested[\"file_id\"].startswith(\"sediment://file_\"))\n    failure=receipt[\"results\"][i]\n    check(f\"fetch{i}:receipt_failure_matches_candidate\",failure[\"drive_id\"]==id and failure[\"expected_bytes\"]==size and failure[\"name\"]==script_candidates[i][0] and failure[\"http_status\"]==403 and failure[\"exception_type\"]==\"HTTPError\" and failure[\"status\"]==\"failed_preserve_partial_if_present\" and \"sha256\" not in failure and \"bytes\" not in failure)\n    fetches.append({\"id\":id,\"title\":title,\"expected_bytes\":size,\"returned_file_name\":x[\"file_name\"],\"reported_transfer_http_status\":failure[\"http_status\"],\"status\":failure[\"status\"]})\ncheck(\"media_directory_empty_now\",(P/\"media\").is_dir() and not list((P/\"media\").iterdir()))\ncheck(\"both_expected_local_files_absent\",all(not (P/\"media\"/name).exists() for name,_,_ in script_candidates))\nstage_files=[x for x in P.rglob(\"*\") if x.is_file() and x.name!=\"independent-review.json\"]\nunsafe_urls=[];query_keys=set();privacy_files=[];text_count=0\nfor p in stage_files:\n    if p.suffix not in (\".json\",\".md\",\".py\"):continue\n    b=p.read_bytes();text=b.decode(\"utf-8\");text_count+=1\n    pins[str(p)]={\"bytes\":len(b),\"sha256\":hashlib.sha256(b).hexdigest()}\n    for url in re.findall(r\"https?://[^\\s<>\\\"']+\",text):\n        u=urlsplit(url);keys={k for k,v in parse_qsl(u.query)}\n        query_keys.update(keys)\n        if u.username or u.password or (u.hostname and u.hostname.endswith(\".oaiusercontent.com\")) or (keys and not (u.hostname==\"drive.google.com\" and keys=={\"usp\"} and dict(parse_qsl(u.query)).get(\"usp\")==\"drivesdk\")):\n            unsafe_urls.append({\"path\":str(p.relative_to(P)),\"url_sha256\":hashlib.sha256(url.encode()).hexdigest(),\"query_key_count\":len(keys)})\n    if re.search(r\"(?:\\?|&)(?:sig|signature|token|access_token|x-amz-signature|x-goog-signature|se|sp|sv)=\",text,re.I):\n        privacy_files.append(str(p.relative_to(P)))\nprint(json.dumps({\"privacy_diagnostic_only\":{\"unsafe_url_locations_and_hashes\":unsafe_urls,\"secret_pattern_file_paths\":privacy_files,\"query_keys\":sorted(query_keys)}},indent=2))\ncheck(\"no_saved_ephemeral_http_urls_or_unapproved_query_parameters_in_scanned_stage\",not unsafe_urls and not privacy_files)\nexpected_source_files={f\"{n}.{kind}.json\" for n,_,_ in plan for kind in (\"request\",\"response\")}\nexpected_source_files.update(f\"candidate-{i}-metadata.{kind}.json\" for i in range(4) for kind in (\"request\",\"response\"))\nexpected_source_files.update(f\"fetch-{i}.request.json\" for i in range(2))\nexpected_source_files.update(f\"fetch-{i}.response-sanitized.json\" for i in range(2))\ncheck(\"exact_28_saved_source_json_files\",{x.name for x in S.iterdir() if x.is_file()}==expected_source_files)\nprint(json.dumps({\"status\":\"pass\",\"assertions\":len(checks),\"failed\":[k for k,v in checks.items() if not v],\"listing_calls\":8,\"metadata_calls\":4,\"fetch_reference_calls\":2,\"coverage\":summary,\"unlisted_returned_folders\":unlisted,\"metadata_candidates\":metadata,\"fetch_outcomes\":fetches,\"current_media_file_count\":len(list((P/\"media\").iterdir())),\"privacy_scan\":{\"text_files\":text_count,\"query_parameter_keys_seen\":sorted(query_keys),\"unsafe_url_count\":len(unsafe_urls),\"secret_query_pattern_file_count\":len(privacy_files),\"scope\":\"Saved text in this stage at verification time only; no audit of outside logs, process memory or other directories.\"},\"pins\":pins,\"limits\":[\"Request-response membership joins are verified; returned parent_ids are null, so no stronger native parent-field claim is made.\",\"No fresh network request or transfer was performed. HTTP403 is verified as a preserved receipt statement, not independently reproduced.\",\"Eight below-limit responses with no pagination/completeness fields do not prove exhaustive repository coverage.\",\"Initial NIST-to-Drive provenance is inherited from the earlier source audit; this pass verifies the saved Video catalog root joins only.\",\"Distinct object IDs and equal sizes do not establish distinct underlying recordings or identical media bytes.\"]},indent=2))\n\nPY",
+      "actual_output": "{\n  \"privacy_diagnostic_only\": {\n    \"unsafe_url_locations_and_hashes\": [\n      {\n        \"path\": \"sources/public-search-log.json\",\n        \"url_sha256\": \"cba774ce0c35bfbeb61417480cb448baa01aabd21c8600668a69cb81a3d65f91\",\n        \"query_key_count\": 1\n      }\n    ],\n    \"secret_pattern_file_paths\": [],\n    \"query_keys\": [\n      \"usp\",\n      \"v\"\n    ]\n  }\n}\nTraceback (most recent call last):\n  File \"<stdin>\", line 95, in <module>\n  File \"<stdin>\", line 10, in check\nAssertionError: no_saved_ephemeral_http_urls_or_unapproved_query_parameters_in_scanned_stage\n"
+    },
+    {
+      "purpose": "Corrected public-URL classification and explicit distinction between the original 28 source records and separately added locator log",
+      "exit_code": 0,
+      "exact_shell_command": "PYTHONDONTWRITEBYTECODE=1 python3 - <<'PY'\nimport ast,hashlib,json,re\nfrom pathlib import Path\nfrom urllib.parse import urlsplit,parse_qsl\nP=Path(\"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy\")\nS=P/\"sources\"\nA=Path(\"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-original-tape-catalog/sources\")\nchecks={};summary=[];pins={}\ndef check(name,condition):\n    checks[name]=bool(condition)\n    assert condition,name\ndef read(p):\n    data=p.read_bytes()\n    pins[str(p)]={\"bytes\":len(data),\"sha256\":hashlib.sha256(data).hexdigest()}\n    return json.loads(data)\ndef fid(url):\n    u=urlsplit(url)\n    assert u.scheme==\"https\" and u.hostname==\"drive.google.com\"\n    m=re.search(r\"/(?:folders|d)/([^/]+)\",u.path)\n    assert m\n    return m.group(1)\nancestor_q=read(A/\"cdvideo-list.request.json\")\nancestor_r=read(A/\"cdvideo-list.response.json\")\ncheck(\"ancestor_saved_catalog_ok\",ancestor_r[\"isError\"] is False and fid(ancestor_q[\"url\"])==\"1GAo8-t_O6CyfBPqwCOfCyAERyZkY1Nth\")\nroots={\"ramon-list\":\"1HfkLxWt8I2Nvi97wxiIgDplOMafNsWYz\",\"gms-list\":\"1qoGwJrsYR33PZe7lYV77cxYrxuHDZBsl\"}\nplan=[(\"ramon-list\",None,0),(\"gms-list\",None,0),(\"gms-child-0\",\"gms-list\",1),(\"gms-child-1\",\"gms-list\",1),(\"gms-child-2\",\"gms-list\",1),(\"gms-child-3\",\"gms-list\",1),(\"presentation-0\",\"gms-child-3\",2),(\"presentation-1\",\"gms-child-3\",2)]\nloaded={};all_rows=[];queried=[]\nfor name,parent,depth in plan:\n    q=read(S/(name+\".request.json\"));r=read(S/(name+\".response.json\"))\n    rows=r[\"structuredContent\"][\"files\"]; parentid=fid(q[\"url\"]);queried.append(parentid)\n    check(name+\":request_contract\",set(q)=={\"url\",\"top_k\"} and q[\"top_k\"]==1000)\n    check(name+\":response_ok\",r[\"isError\"] is False and set(r[\"structuredContent\"])=={\"files\"})\n    prior=ancestor_r[\"structuredContent\"][\"files\"] if parent is None else loaded[parent]\n    hits=[x for x in prior if x[\"id\"]==parentid]\n    check(name+\":exact_parent_returned_child_join\",len(hits)==1 and hits[0][\"file_or_folder\"]==\"folder\")\n    if parent is None:check(name+\":declared_root\",parentid==roots[name])\n    check(name+\":returned_urls_match_ids\",all(fid(x[\"url\"])==x[\"id\"] and fid(x[\"display_url\"])==x[\"id\"] for x in rows))\n    check(name+\":unique_ids_in_response\",len({x[\"id\"] for x in rows})==len(rows))\n    check(name+\":nonexhaustive_response_semantics\",len(rows)<q[\"top_k\"] and all(x[\"parent_ids\"] is None and x[\"source_visibility_status\"]==\"access_not_verified\" for x in rows))\n    loaded[name]=rows;all_rows.extend(rows)\n    summary.append({\"response\":name,\"requested_folder_id\":parentid,\"title_from_parent_listing\":hits[0][\"title\"],\"parent_record\":\"cdvideo-list.response.json\" if parent is None else parent+\".response.json\",\"descendant_depth_from_declared_root\":depth,\"rows\":len(rows),\"files\":sum(x[\"file_or_folder\"]==\"file\" for x in rows),\"folders\":sum(x[\"file_or_folder\"]==\"folder\" for x in rows),\"returned_items\":[{k:x[k] for k in (\"id\",\"title\",\"file_or_folder\",\"size\")} for x in rows]})\ncheck(\"eight_listing_pairs_depth_at_most_two\",len(plan)==8 and max(x[2] for x in plan)==2)\ncheck(\"eight_distinct_folder_requests\",len(set(queried))==8)\ncheck(\"27_rows_18files_9folders\",len(all_rows)==27 and sum(x[\"file_or_folder\"]==\"file\" for x in all_rows)==18 and sum(x[\"file_or_folder\"]==\"folder\" for x in all_rows)==9)\ncheck(\"all27_object_ids_distinct\",len({x[\"id\"] for x in all_rows})==27)\ncheck(\"exact_target_not_in_returned_names\",not any(x[\"title\"].casefold()==\"wtc7collapse.mpg\" for x in all_rows))\nunlisted=[{k:x[k] for k in (\"id\",\"title\")} for x in all_rows if x[\"file_or_folder\"]==\"folder\" and x[\"id\"] not in queried]\ncheck(\"three_returned_folder_branches_unlisted\",len(unlisted)==3)\nexpected=[(\"1cRKKHryagLgSSuRwLoL-Qwq93fI-Mv_o\",\"wtc 7-b1.mpg\",\"video/mpeg\",86021896),(\"1LDl5mlwBxSKnL1C7VpfbDNK0ztvjvFrw\",\"wtc 7-b.mpg\",\"video/mpeg\",30330880),(\"1rhUv1MfKZjEAm44lHPfNT9_W8QIcf1Ph\",\"WTC7fall.m1v\",\"video/mpv\",8621332),(\"1MC3Ts3KtiU9PzgfRA9rWtZxrHgJpH9Ab\",\"WTC7-145040.m1v\",\"video/mpv\",25458675)]\nfields=\"id,name,mimeType,size,md5Checksum,sha1Checksum,sha256Checksum,parents,capabilities(canDownload),videoMediaMetadata\"\nmetadata=[]\nfor i,(id,title,mime,size) in enumerate(expected):\n    q=read(S/f\"candidate-{i}-metadata.request.json\");r=read(S/f\"candidate-{i}-metadata.response.json\");x=r[\"structuredContent\"]\n    parent=next(x for x in loaded[\"presentation-0\"] if x[\"id\"]==id)\n    check(f\"metadata{i}:requested_exact_fields_and_id\",q=={\"fileId\":id,\"fields\":fields})\n    check(f\"metadata{i}:id_title_mime_size_join\",r[\"isError\"] is False and (x[\"id\"],x[\"title\"],x[\"mime_type\"],int(x[\"size\"]))==(id,title,mime,size) and (parent[\"title\"],parent[\"mime_type\"],int(parent[\"size\"]))==(title,mime,size))\n    absent=[k for k in (\"md5Checksum\",\"sha1Checksum\",\"sha256Checksum\",\"videoMediaMetadata\",\"can_download\",\"capabilities\") if k not in x]\n    check(f\"metadata{i}:requested_info_missing_in_normalized_return\",len(absent)==6 and x[\"parent_ids\"] is None)\n    metadata.append({\"id\":id,\"title\":title,\"mime_type\":mime,\"size\":size,\"missing_normalized_fields\":absent,\"listing_can_download\":parent[\"can_download\"]})\nreceipt=read(P/\"acquisition-receipt.json\")\nscript=(P/\"acquire_candidates.py\").read_bytes()\ncheck(\"script_pin_matches_receipt\",hashlib.sha256(script).hexdigest()==receipt[\"procedure_sha256\"])\ntree=ast.parse(script)\nliteral=next(n.value for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(z,ast.Name) and z.id==\"CANDIDATES\" for z in n.targets))\nscript_candidates=ast.literal_eval(literal)\ncheck(\"script_exact_two_candidates\",script_candidates==[(\"wtc-7-b1.mpg\",expected[0][0],expected[0][3]),(\"wtc-7-b.mpg\",expected[1][0],expected[1][3])])\ncheck(\"candidate_count_size_caps\",len(script_candidates)==2 and all(0<x[2]<=300000000 for x in script_candidates))\nfetches=[]\nfor i,(id,title,mime,size) in enumerate(expected[:2]):\n    q=read(S/f\"fetch-{i}.request.json\");r=read(S/f\"fetch-{i}.response-sanitized.json\");x=r[\"structuredContent\"];nested=x[\"structuredContent\"]\n    parent=next(x for x in loaded[\"presentation-0\"] if x[\"id\"]==id)\n    check(f\"fetch{i}:exact_returned_listing_url\",q=={\"url\":parent[\"url\"],\"download_raw_file\":True,\"include_base64\":False})\n    check(f\"fetch{i}:reference_only_response\",r[\"isError\"] is False and x[\"b64_string\"] is None and x[\"content\"]==\"\" and nested[\"content\"]==\"\")\n    check(f\"fetch{i}:preserved_id_title_mime_size\",all((z[\"id\"],z[\"title\"],z[\"mime_type\"],z[\"file_size_bytes\"])==(id,title,mime,size) for z in (x,nested)))\n    check(f\"fetch{i}:all_three_ephemeral_locators_redacted\",x[\"file_uri\"][\"download_url\"]==nested[\"file_uri\"][\"download_url\"]==nested[\"download_url\"]==\"[ephemeral transport URL omitted]\")\n    check(f\"fetch{i}:artifact_ref_preserved_consistently\",x[\"file_uri\"][\"file_id\"]==nested[\"file_uri\"][\"file_id\"]==nested[\"file_id\"] and nested[\"file_id\"].startswith(\"sediment://file_\"))\n    failure=receipt[\"results\"][i]\n    check(f\"fetch{i}:receipt_failure_matches_candidate\",failure[\"drive_id\"]==id and failure[\"expected_bytes\"]==size and failure[\"name\"]==script_candidates[i][0] and failure[\"http_status\"]==403 and failure[\"exception_type\"]==\"HTTPError\" and failure[\"status\"]==\"failed_preserve_partial_if_present\" and \"sha256\" not in failure and \"bytes\" not in failure)\n    fetches.append({\"id\":id,\"title\":title,\"expected_bytes\":size,\"returned_file_name\":x[\"file_name\"],\"reported_transfer_http_status\":failure[\"http_status\"],\"status\":failure[\"status\"]})\ncheck(\"media_directory_empty_now\",(P/\"media\").is_dir() and not list((P/\"media\").iterdir()))\ncheck(\"both_expected_local_files_absent\",all(not (P/\"media\"/name).exists() for name,_,_ in script_candidates))\nstage_files=[x for x in P.rglob(\"*\") if x.is_file() and x.name!=\"independent-review.json\"]\nunsafe_urls=[];query_keys=set();privacy_files=[];text_count=0\nfor p in stage_files:\n    if p.suffix not in (\".json\",\".md\",\".py\"):continue\n    b=p.read_bytes();text=b.decode(\"utf-8\");text_count+=1\n    pins[str(p)]={\"bytes\":len(b),\"sha256\":hashlib.sha256(b).hexdigest()}\n    for url in re.findall(r\"https?://[^\\s<>\\\"']+\",text):\n        u=urlsplit(url);keys={k for k,v in parse_qsl(u.query)}\n        query_keys.update(keys)\n        if u.username or u.password or (u.hostname and u.hostname.endswith(\".oaiusercontent.com\")) or (keys and not ((u.hostname==\"drive.google.com\" and keys=={\"usp\"} and dict(parse_qsl(u.query)).get(\"usp\")==\"drivesdk\") or (u.hostname in (\"youtube.com\",\"www.youtube.com\") and u.path==\"/watch\" and keys=={\"v\"} and re.fullmatch(r\"[A-Za-z0-9_-]{11}\",dict(parse_qsl(u.query)).get(\"v\",\"\"))))):\n            unsafe_urls.append({\"path\":str(p.relative_to(P)),\"url_sha256\":hashlib.sha256(url.encode()).hexdigest(),\"query_key_count\":len(keys)})\n    if re.search(r\"(?:\\?|&)(?:sig|signature|token|access_token|x-amz-signature|x-goog-signature|se|sp|sv)=\",text,re.I):\n        privacy_files.append(str(p.relative_to(P)))\ncheck(\"no_saved_ephemeral_http_urls_or_unapproved_query_parameters_in_scanned_stage\",not unsafe_urls and not privacy_files)\nexpected_source_files={f\"{n}.{kind}.json\" for n,_,_ in plan for kind in (\"request\",\"response\")}\nexpected_source_files.update(f\"candidate-{i}-metadata.{kind}.json\" for i in range(4) for kind in (\"request\",\"response\"))\nexpected_source_files.update(f\"fetch-{i}.request.json\" for i in range(2))\nexpected_source_files.update(f\"fetch-{i}.response-sanitized.json\" for i in range(2))\nextra_source_files={x.name for x in S.iterdir() if x.is_file()}-expected_source_files\ncheck(\"exact_28_required_saved_source_json_files\",len(expected_source_files)==28 and expected_source_files.issubset({x.name for x in S.iterdir() if x.is_file()}))\ncheck(\"additional_source_file_is_separately_scoped_locator_log\",extra_source_files<= {\"public-search-log.json\"})\nprint(json.dumps({\"status\":\"pass\",\"assertions\":len(checks),\"failed\":[k for k,v in checks.items() if not v],\"listing_calls\":8,\"metadata_calls\":4,\"fetch_reference_calls\":2,\"coverage\":summary,\"unlisted_returned_folders\":unlisted,\"metadata_candidates\":metadata,\"fetch_outcomes\":fetches,\"current_media_file_count\":len(list((P/\"media\").iterdir())),\"additional_source_files_not_used_for_catalog_or_transfer_findings\":sorted(extra_source_files),\"privacy_scan\":{\"text_files\":text_count,\"query_parameter_keys_seen\":sorted(query_keys),\"unsafe_url_count\":len(unsafe_urls),\"secret_query_pattern_file_count\":len(privacy_files),\"scope\":\"Saved text in this stage at verification time only; no audit of outside logs, process memory or other directories.\"},\"pins\":pins,\"limits\":[\"Request-response membership joins are verified; returned parent_ids are null, so no stronger native parent-field claim is made.\",\"No fresh network request or transfer was performed. HTTP403 is verified as a preserved receipt statement, not independently reproduced.\",\"Eight below-limit responses with no pagination/completeness fields do not prove exhaustive repository coverage.\",\"Initial NIST-to-Drive provenance is inherited from the earlier source audit; this pass verifies the saved Video catalog root joins only.\",\"Distinct object IDs and equal sizes do not establish distinct underlying recordings or identical media bytes.\"]},indent=2))\n\nPY",
+      "actual_result": {
+        "status": "pass",
+        "assertions": 89,
+        "failed": [],
+        "listing_calls": 8,
+        "metadata_calls": 4,
+        "fetch_reference_calls": 2,
+        "coverage": [
+          {
+            "response": "ramon-list",
+            "requested_folder_id": "1HfkLxWt8I2Nvi97wxiIgDplOMafNsWYz",
+            "title_from_parent_listing": "RamonGilsanzfromCD",
+            "parent_record": "cdvideo-list.response.json",
+            "descendant_depth_from_declared_root": 0,
+            "rows": 3,
+            "files": 3,
+            "folders": 0,
+            "returned_items": [
+              {
+                "id": "1mTrNKXMdLXLuQof8iowh69xv45Y-Gmea",
+                "title": "Video No. 5.mpeg",
+                "file_or_folder": "file",
+                "size": "1390596"
+              },
+              {
+                "id": "1mgkE8GtIJt9C40Wz7t5uS_5r5raEzUNZ",
+                "title": "Video No. 4.mpg",
+                "file_or_folder": "file",
+                "size": "3302434"
+              },
+              {
+                "id": "18kQRsKIVUnywiKz11bpm6nVfqD0_h681",
+                "title": "Video No. 1.mpg",
+                "file_or_folder": "file",
+                "size": "2703430"
+              }
+            ]
+          },
+          {
+            "response": "gms-list",
+            "requested_folder_id": "1qoGwJrsYR33PZe7lYV77cxYrxuHDZBsl",
+            "title_from_parent_listing": "GilsanzMurraySteficek",
+            "parent_record": "cdvideo-list.response.json",
+            "descendant_depth_from_declared_root": 0,
+            "rows": 4,
+            "files": 0,
+            "folders": 4,
+            "returned_items": [
+              {
+                "id": "1h3Ds-TkFJ9TeA-lcNGjZwcVBVYZrpgeW",
+                "title": "WTCI-101-I-GMS-CD#7",
+                "file_or_folder": "folder",
+                "size": null
+              },
+              {
+                "id": "1M7klE05mJl3clkYhjNV21IqHvisV0exz",
+                "title": "WTCI-102-I-GMS-Keasbey",
+                "file_or_folder": "folder",
+                "size": null
+              },
+              {
+                "id": "1taMq-Iq0fo40biR1eu_s5LFLlutHodNp",
+                "title": "WTCI-134-I-WTC7AnalysisVideos",
+                "file_or_folder": "folder",
+                "size": null
+              },
+              {
+                "id": "12az7liDQ8eWu54A09qj-KT8YcNPo0Cyw",
+                "title": "WTCI-97-I-Multiple",
+                "file_or_folder": "folder",
+                "size": null
+              }
+            ]
+          },
+          {
+            "response": "gms-child-0",
+            "requested_folder_id": "1h3Ds-TkFJ9TeA-lcNGjZwcVBVYZrpgeW",
+            "title_from_parent_listing": "WTCI-101-I-GMS-CD#7",
+            "parent_record": "gms-list.response.json",
+            "descendant_depth_from_declared_root": 1,
+            "rows": 2,
+            "files": 2,
+            "folders": 0,
+            "returned_items": [
+              {
+                "id": "1gZD7-05DJ7dd4jWLXpQX-69QvEcjfrMD",
+                "title": "first.plane.hits.gp.med.asf",
+                "file_or_folder": "file",
+                "size": "827721"
+              },
+              {
+                "id": "1J0eBjQ7frvVh-ltCQZRkvpc2GSFYUx_s",
+                "title": "2nd.plane.hits.cnn.med.asf",
+                "file_or_folder": "file",
+                "size": "1295141"
+              }
+            ]
+          },
+          {
+            "response": "gms-child-1",
+            "requested_folder_id": "1M7klE05mJl3clkYhjNV21IqHvisV0exz",
+            "title_from_parent_listing": "WTCI-102-I-GMS-Keasbey",
+            "parent_record": "gms-list.response.json",
+            "descendant_depth_from_declared_root": 1,
+            "rows": 6,
+            "files": 6,
+            "folders": 0,
+            "returned_items": [
+              {
+                "id": "1v8yLCN5VcHS8H8xQJpWGVNAdizt9CQQh",
+                "title": "K20 web min.mpg",
+                "file_or_folder": "file",
+                "size": "12759391"
+              },
+              {
+                "id": "1nOgfnQZ8Q48vRS3y41nPH_o3W4S6yAiz",
+                "title": "K20 web best.mpg",
+                "file_or_folder": "file",
+                "size": "30591594"
+              },
+              {
+                "id": "1RESxV58pRUDi6iKOjn2B5fWKLxrPCzbx",
+                "title": "K19 web min.mpg",
+                "file_or_folder": "file",
+                "size": "8816302"
+              },
+              {
+                "id": "1iex-az3evKPMSAeyqh6mUghVuR1Neyu3",
+                "title": "K19 web best.mpg",
+                "file_or_folder": "file",
+                "size": "21189529"
+              },
+              {
+                "id": "1xR4t188Tu4RMAo7ex9_9B-zE31-Lu5IM",
+                "title": "K18 web min.mpg",
+                "file_or_folder": "file",
+                "size": "12424753"
+              },
+              {
+                "id": "1qZaTcDcJPwSgqhf1xGHxt37XtveXsWti",
+                "title": "K18 web best.mpg",
+                "file_or_folder": "file",
+                "size": "29831659"
+              }
+            ]
+          },
+          {
+            "response": "gms-child-2",
+            "requested_folder_id": "1taMq-Iq0fo40biR1eu_s5LFLlutHodNp",
+            "title_from_parent_listing": "WTCI-134-I-WTC7AnalysisVideos",
+            "parent_record": "gms-list.response.json",
+            "descendant_depth_from_declared_root": 1,
+            "rows": 3,
+            "files": 3,
+            "folders": 0,
+            "returned_items": [
+              {
+                "id": "17bhqyfbUsv7fO2ryqe5RNQeljjvhXZCM",
+                "title": "WTC7-145040.m1v",
+                "file_or_folder": "file",
+                "size": "25458675"
+              },
+              {
+                "id": "10XThmWXd5cwCU53EegUcnhjjPitS93RG",
+                "title": "Dimentri-wtc7vid.WMV",
+                "file_or_folder": "file",
+                "size": "14053028"
+              },
+              {
+                "id": "1TsszZOE7QAqNxu5Gusflkm6axtb02TMF",
+                "title": "CBS-VMS-Wtc7.wmv",
+                "file_or_folder": "file",
+                "size": "8717690"
+              }
+            ]
+          },
+          {
+            "response": "gms-child-3",
+            "requested_folder_id": "12az7liDQ8eWu54A09qj-KT8YcNPo0Cyw",
+            "title_from_parent_listing": "WTCI-97-I-Multiple",
+            "parent_record": "gms-list.response.json",
+            "descendant_depth_from_declared_root": 1,
+            "rows": 4,
+            "files": 0,
+            "folders": 4,
+            "returned_items": [
+              {
+                "id": "130T8nJladps_Z7mOD6y3tqmVWgEwoCFz",
+                "title": "Baker-Feb 9-10 Presentn-WTC1",
+                "file_or_folder": "folder",
+                "size": null
+              },
+              {
+                "id": "1pjKFb3GeEGoA9f2qrf4m80ZCA-JtTE0C",
+                "title": "Baker-Jan11-12-Videos-WTC1&2",
+                "file_or_folder": "folder",
+                "size": null
+              },
+              {
+                "id": "18ZNNM-l0sY_b0sNl7EQEoRW0nRE7NUhZ",
+                "title": "Gilsanz Pres-Feb 9-10-WTC7",
+                "file_or_folder": "folder",
+                "size": null
+              },
+              {
+                "id": "1bxFiHUzf_I2lbWaWc2LHneV0rvI-pDLo",
+                "title": "Gilsanz Pres-Jan11-12 -WTC7",
+                "file_or_folder": "folder",
+                "size": null
+              }
+            ]
+          },
+          {
+            "response": "presentation-0",
+            "requested_folder_id": "18ZNNM-l0sY_b0sNl7EQEoRW0nRE7NUhZ",
+            "title_from_parent_listing": "Gilsanz Pres-Feb 9-10-WTC7",
+            "parent_record": "gms-child-3.response.json",
+            "descendant_depth_from_declared_root": 2,
+            "rows": 4,
+            "files": 4,
+            "folders": 0,
+            "returned_items": [
+              {
+                "id": "1cRKKHryagLgSSuRwLoL-Qwq93fI-Mv_o",
+                "title": "wtc 7-b1.mpg",
+                "file_or_folder": "file",
+                "size": "86021896"
+              },
+              {
+                "id": "1LDl5mlwBxSKnL1C7VpfbDNK0ztvjvFrw",
+                "title": "wtc 7-b.mpg",
+                "file_or_folder": "file",
+                "size": "30330880"
+              },
+              {
+                "id": "1rhUv1MfKZjEAm44lHPfNT9_W8QIcf1Ph",
+                "title": "WTC7fall.m1v",
+                "file_or_folder": "file",
+                "size": "8621332"
+              },
+              {
+                "id": "1MC3Ts3KtiU9PzgfRA9rWtZxrHgJpH9Ab",
+                "title": "WTC7-145040.m1v",
+                "file_or_folder": "file",
+                "size": "25458675"
+              }
+            ]
+          },
+          {
+            "response": "presentation-1",
+            "requested_folder_id": "1bxFiHUzf_I2lbWaWc2LHneV0rvI-pDLo",
+            "title_from_parent_listing": "Gilsanz Pres-Jan11-12 -WTC7",
+            "parent_record": "gms-child-3.response.json",
+            "descendant_depth_from_declared_root": 2,
+            "rows": 1,
+            "files": 0,
+            "folders": 1,
+            "returned_items": [
+              {
+                "id": "1TIdDRzUQ1CLRFju9Hcb0vOt99hRo_8I9",
+                "title": "Video-NBC",
+                "file_or_folder": "folder",
+                "size": null
+              }
+            ]
+          }
+        ],
+        "unlisted_returned_folders": [
+          {
+            "id": "130T8nJladps_Z7mOD6y3tqmVWgEwoCFz",
+            "title": "Baker-Feb 9-10 Presentn-WTC1"
+          },
+          {
+            "id": "1pjKFb3GeEGoA9f2qrf4m80ZCA-JtTE0C",
+            "title": "Baker-Jan11-12-Videos-WTC1&2"
+          },
+          {
+            "id": "1TIdDRzUQ1CLRFju9Hcb0vOt99hRo_8I9",
+            "title": "Video-NBC"
+          }
+        ],
+        "metadata_candidates": [
+          {
+            "id": "1cRKKHryagLgSSuRwLoL-Qwq93fI-Mv_o",
+            "title": "wtc 7-b1.mpg",
+            "mime_type": "video/mpeg",
+            "size": 86021896,
+            "missing_normalized_fields": [
+              "md5Checksum",
+              "sha1Checksum",
+              "sha256Checksum",
+              "videoMediaMetadata",
+              "can_download",
+              "capabilities"
+            ],
+            "listing_can_download": true
+          },
+          {
+            "id": "1LDl5mlwBxSKnL1C7VpfbDNK0ztvjvFrw",
+            "title": "wtc 7-b.mpg",
+            "mime_type": "video/mpeg",
+            "size": 30330880,
+            "missing_normalized_fields": [
+              "md5Checksum",
+              "sha1Checksum",
+              "sha256Checksum",
+              "videoMediaMetadata",
+              "can_download",
+              "capabilities"
+            ],
+            "listing_can_download": true
+          },
+          {
+            "id": "1rhUv1MfKZjEAm44lHPfNT9_W8QIcf1Ph",
+            "title": "WTC7fall.m1v",
+            "mime_type": "video/mpv",
+            "size": 8621332,
+            "missing_normalized_fields": [
+              "md5Checksum",
+              "sha1Checksum",
+              "sha256Checksum",
+              "videoMediaMetadata",
+              "can_download",
+              "capabilities"
+            ],
+            "listing_can_download": true
+          },
+          {
+            "id": "1MC3Ts3KtiU9PzgfRA9rWtZxrHgJpH9Ab",
+            "title": "WTC7-145040.m1v",
+            "mime_type": "video/mpv",
+            "size": 25458675,
+            "missing_normalized_fields": [
+              "md5Checksum",
+              "sha1Checksum",
+              "sha256Checksum",
+              "videoMediaMetadata",
+              "can_download",
+              "capabilities"
+            ],
+            "listing_can_download": true
+          }
+        ],
+        "fetch_outcomes": [
+          {
+            "id": "1cRKKHryagLgSSuRwLoL-Qwq93fI-Mv_o",
+            "title": "wtc 7-b1.mpg",
+            "expected_bytes": 86021896,
+            "returned_file_name": "wtc 7-b1.mpg.mpeg",
+            "reported_transfer_http_status": 403,
+            "status": "failed_preserve_partial_if_present"
+          },
+          {
+            "id": "1LDl5mlwBxSKnL1C7VpfbDNK0ztvjvFrw",
+            "title": "wtc 7-b.mpg",
+            "expected_bytes": 30330880,
+            "returned_file_name": "wtc 7-b.mpg.mpeg",
+            "reported_transfer_http_status": 403,
+            "status": "failed_preserve_partial_if_present"
+          }
+        ],
+        "current_media_file_count": 0,
+        "additional_source_files_not_used_for_catalog_or_transfer_findings": [
+          "public-search-log.json"
+        ],
+        "privacy_scan": {
+          "text_files": 34,
+          "query_parameter_keys_seen": [
+            "usp",
+            "v"
+          ],
+          "unsafe_url_count": 0,
+          "secret_query_pattern_file_count": 0,
+          "scope": "Saved text in this stage at verification time only; no audit of outside logs, process memory or other directories."
+        },
+        "pins": {
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-original-tape-catalog/sources/cdvideo-list.request.json": {
+            "bytes": 105,
+            "sha256": "1f549bb5bf9202a4494c91c8cec8afe397e1796f542eb672ffd25083b11b16f0"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-original-tape-catalog/sources/cdvideo-list.response.json": {
+            "bytes": 20161,
+            "sha256": "13684f381a30e3571566fd88f0e64c15635e78faf981f972fb20d10f21174931"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/ramon-list.request.json": {
+            "bytes": 105,
+            "sha256": "4dbd4942f565ab0c84c5a8c32dc5f76c9fdde04d0e6bafa10b8674298a26eaf5"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/ramon-list.response.json": {
+            "bytes": 2654,
+            "sha256": "760e70a2ea15dac5b675a73d0fdf2c67f4bdac5d73775a7b38d6940e74b37e0b"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/gms-list.request.json": {
+            "bytes": 105,
+            "sha256": "5f2c892c0ce1b99696d480462c4072bcfc6326e901537063b78edf22933b61bd"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/gms-list.response.json": {
+            "bytes": 3505,
+            "sha256": "c28c74bb62b9bc15c82414555170c75eb5551a3b0f730e7ec4128789dd8e1ccb"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/gms-child-0.request.json": {
+            "bytes": 105,
+            "sha256": "e0c729fcb9e120dc5576ab1b9f2c44272c7602c56ce35f66ced4a221cdf7fca2"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/gms-child-0.response.json": {
+            "bytes": 1853,
+            "sha256": "1d3cecf034d3e735ac4abac6c4fbab5662dea770e24dfe04287bd58f081097ba"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/gms-child-1.request.json": {
+            "bytes": 105,
+            "sha256": "d5671c1f25bf547404871af9f5e882f99ebcfde54d811c2e46d8d24d56c40df5"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/gms-child-1.response.json": {
+            "bytes": 5155,
+            "sha256": "bda2d744f773255f956c52c0de1d068dd3497860077f78298909935b3f264569"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/gms-child-2.request.json": {
+            "bytes": 105,
+            "sha256": "bfd17cb385cfa52412e0ad80543a850bea2faeea9e055aede0b04a4a7fa7eb74"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/gms-child-2.response.json": {
+            "bytes": 2669,
+            "sha256": "b602fcc7b32421970a53ed62bac9d8ad3cb88e57e6a68cd392b6e217de107f96"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/gms-child-3.request.json": {
+            "bytes": 105,
+            "sha256": "4feeab1092deaad3f95cb50960e291c92b52c16e5f2b2e88ad1b3e12b1c61a90"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/gms-child-3.response.json": {
+            "bytes": 3526,
+            "sha256": "05a994810f9ea004c2b57c1a7de4782880a791749d772397d8d328e38b4c23e5"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/presentation-0.request.json": {
+            "bytes": 105,
+            "sha256": "e407f2f6c9ef8ed9dad5fe321837ebe969a5b77779eb928f488a8b198beb4dfa"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/presentation-0.response.json": {
+            "bytes": 3476,
+            "sha256": "a09c00fb4d9168b79c76c49cabd98f5d60d6f7f197c325f1ec535520f3ec24e1"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/presentation-1.request.json": {
+            "bytes": 105,
+            "sha256": "bfbf909014def0ac94dc6a7c0a19c548eced1441539530dd85cc529bd8b045ed"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/presentation-1.response.json": {
+            "bytes": 984,
+            "sha256": "2fd6df4507dbf1c6c045f97f342cdacb9eec5653c2b75a59311dc4c3b0f39830"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/candidate-0-metadata.request.json": {
+            "bytes": 182,
+            "sha256": "5142a895cef3d3d657163850e6bb21674066495e5fab7ee9025f23079e660e1a"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/candidate-0-metadata.response.json": {
+            "bytes": 592,
+            "sha256": "e2fc0f9281a3edc25f53f38102035ef373741955a90f11161768d5d6c2f8dbf3"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/candidate-1-metadata.request.json": {
+            "bytes": 182,
+            "sha256": "d0c228d24e25e3b2d8d1367855129eb3fb5f5f107dd1450908c0ac2a50417521"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/candidate-1-metadata.response.json": {
+            "bytes": 591,
+            "sha256": "02362ce624489c53fe173b0bd3087f885e41da77a7d97a4a7f5981d20d6f88b8"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/candidate-2-metadata.request.json": {
+            "bytes": 182,
+            "sha256": "8ceea970cc5b2f395761b135a5dd204eaf68e8e0a66ac61f6945245f964612a4"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/candidate-2-metadata.response.json": {
+            "bytes": 590,
+            "sha256": "4f7cde63e98f7f69658ee9ab68c40c951ee9223c4779ab0d4e4e46dbb0c08bd7"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/candidate-3-metadata.request.json": {
+            "bytes": 182,
+            "sha256": "1540c9ca3dbac87462278840d11ec92eedb1fcde0760b249958a52b8fa973441"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/candidate-3-metadata.response.json": {
+            "bytes": 594,
+            "sha256": "b251a1caa0772c50eebb8fd810b2aca1b84a8cab8eb2dd98801b1d49af2a0bea"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/acquisition-receipt.json": {
+            "bytes": 979,
+            "sha256": "fc993e66a97b81d2e4d2d8ab8bc230e785f4348cdbaadd658bb8ab00c964f234"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/fetch-0.request.json": {
+            "bytes": 155,
+            "sha256": "a7eba392ba92e6172e8f38d3e7e20a28c08d28932b7a3ecd8b3add6fa1519fff"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/fetch-0.response-sanitized.json": {
+            "bytes": 1906,
+            "sha256": "522ef56e1fb06539b88792bdfba9e2941d7bea889312738e810cf9ece163e449"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/fetch-1.request.json": {
+            "bytes": 155,
+            "sha256": "59ab2d6fba48b31f1c5cf4a351c866cfefc6b17112957c09fbb3368b8bfc5ba8"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/fetch-1.response-sanitized.json": {
+            "bytes": 1899,
+            "sha256": "bc17088d893755472962984e388d2abe256283f4fe4ef93dc940e3557eb25ca6"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/METADATA-ADDENDUM.md": {
+            "bytes": 1038,
+            "sha256": "2e4c40cd5f309f3e2d66666a938955c91fdbdba554ebb3c608ed2f4564284313"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/ACQUISITION-ADDENDUM.md": {
+            "bytes": 2214,
+            "sha256": "022e53a371e4ffc9dd1fdf1f5d323244ce1b7ad00c0a0c056d95602b5b494581"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/acquire_candidates.py": {
+            "bytes": 4270,
+            "sha256": "64b8781a43f1720628d843f74fac26f9288147fec7db33142be9ca753a461bf3"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/PROTOCOL.md": {
+            "bytes": 3556,
+            "sha256": "e56ad57343348ba02ce7dd565b16a3269241a218acc7f71c070efb7342bde5ad"
+          },
+          "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy/sources/public-search-log.json": {
+            "bytes": 1860,
+            "sha256": "27fd633ee3089054e7ad7f1d6a202e1bd8ec9707b928f1a17a5d1d23d12bae88"
+          }
+        },
+        "limits": [
+          "Request-response membership joins are verified; returned parent_ids are null, so no stronger native parent-field claim is made.",
+          "No fresh network request or transfer was performed. HTTP403 is verified as a preserved receipt statement, not independently reproduced.",
+          "Eight below-limit responses with no pagination/completeness fields do not prove exhaustive repository coverage.",
+          "Initial NIST-to-Drive provenance is inherited from the earlier source audit; this pass verifies the saved Video catalog root joins only.",
+          "Distinct object IDs and equal sizes do not establish distinct underlying recordings or identical media bytes."
+        ]
+      }
+    }
+  ],
+  "failure_disposition": "The first check and diagnostic repetition both exited 1 because a public YouTube watch URL in the newly added locator log had the nonsecret v parameter outside the initial Drive-only allowlist. No secret-query pattern or temporary HTTP artifact URL was detected. The correction allows only the exact public YouTube watch form with an 11-character video identifier, retains the temporary-URL/secret-query checks, and separately scopes the added locator log. No source data or scientific matching criterion was changed.",
+  "conclusion": "The bounded source-chain audit passes with the stated coverage limits. Exact-target identification and media-content verification remain unresolved. No cause ranking, scientific acceptance, historical authentication or case-record promotion follows.",
+  "smallest_resolution": "A successfully obtained, authorized copy or usable metadata/content from one of the identified candidates would permit stream and prospectively declared scene screening. This review authorizes and performs no retry or bypass."
+}

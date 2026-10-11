@@ -1,0 +1,41 @@
+{
+  "source_sha256": "53804060d00794d59628d6406337a6db5568bf30df63913ff4888b63082913fd",
+  "protocol_sha256": "407c8f18f4202047aa01e573ceee2f5c1350ece9f9fb7961a3042881ea5e1fea",
+  "reader": "/root/curve_recovery_feasibility; separate prior-informed AI with shared history, not blind or human review",
+  "status": "frozen_provisional_annotation_not_support_or_uncertainty",
+  "method": "Read entire protocol; viewed unchanged full Im4 at original detail and complete composed page076 (display resized1376x1780). Independently read all660 raw RGB cells via Pillow12.0.0/Python3.13.7, printing columns298..309 with rows0..54. Manually assigned core/fringe using local diagonal shape, adjacent columns and raw neutral values, without a scalar cutoff, prior detector masks or root annotation. No reader-root.json or root rowsets read before freeze.",
+  "raw_context": {
+    "columns_inclusive": [298,309],
+    "rows_inclusive": [0,54],
+    "cells": 660,
+    "row_major_rgb_sha256": "ae18ca4e2e632ea4f1f4b9245814f380f95df6c2d394111d3ea2c790b57c1875",
+    "byte_count": 1980,
+    "hash_receipt": "190ad2",
+    "receipt": "732e1c",
+    "representation": "All raw RGB triples retained in tool receipt; pixel-byte hash separately defined as y increasing outer loop, x increasing inner loop, interleaved RGB unsigned bytes."
+  },
+  "observations": [
+    {"fragment":"solid","column":300,"core_rows":[34,35,36],"fringe_rows":[33,38],"status":"provisional_column_boundary","note":"Dark diagonal continues through left x boundary. Row38 is separated pale possible ringing, not filled through row37."},
+    {"fragment":"solid","column":301,"core_rows":[35,36,37],"fringe_rows":[34,38],"status":"provisional","note":"Connected dark diagonal with lighter neighboring edge cells."},
+    {"fragment":"solid","column":302,"core_rows":[36,37,38,39],"fringe_rows":[35,40],"status":"provisional","note":"Four-row diagonal footprint visually coherent with preceding and following columns; outer pale cells uncertain."},
+    {"fragment":"solid","column":303,"core_rows":[38,39,40],"fringe_rows":[37,41],"status":"provisional","note":"Dark diagonal body; adjacent lighter shoulders remain fringe."},
+    {"fragment":"solid","column":304,"core_rows":[39,40,41],"fringe_rows":[38,42,44],"status":"provisional","note":"Row44 is separated pale possible compression fringe; no bridging of row43."},
+    {"fragment":"solid","column":305,"core_rows":[41,42,43],"fringe_rows":[39,40,44],"status":"provisional_column_boundary","note":"Continuing stroke exits right x boundary; row44 is exceptionally pale but adjacent, uncertain attribution rather than confirmed ink."},
+    {"fragment":"dash","column":300,"core_rows":[],"fringe_rows":[],"status":"no_attributable_core_unresolved_gap","note":"Selected dash not confidently attributable in this column. Earlier dash appears above target at rows1..3. Tiny deviations within target are not confidently assigned; empty sets do not certify a physical gap."},
+    {"fragment":"dash","column":301,"core_rows":[6,7],"fringe_rows":[5,8,11],"status":"provisional","note":"Beginning of selected short diagonal dash; isolated pale row11 possibly ringing, retained separately."},
+    {"fragment":"dash","column":302,"core_rows":[6,7,8,9],"fringe_rows":[],"status":"provisional","note":"Coherent short diagonal body; surrounding near-white scattered cells not specifically attributable."},
+    {"fragment":"dash","column":303,"core_rows":[8,9,10],"fringe_rows":[7,13],"status":"provisional","note":"Dark body and lighter upper edge; separated pale row13 uncertain ringing, no gap fill."},
+    {"fragment":"dash","column":304,"core_rows":[9,10,11],"fringe_rows":[8],"status":"provisional","note":"Dark diagonal body with pale leading edge."},
+    {"fragment":"dash","column":305,"core_rows":[10,11,12],"fringe_rows":[9,13],"status":"provisional","note":"Descending body and faint neighboring cells; subsequent dash begins outside target farther below."},
+    {"fragment":"dash","column":306,"core_rows":[11,12],"fringe_rows":[9,10],"status":"provisional_endpoint_appearance","note":"Lighter terminal cells still attributable by local dash geometry. This is an apparent raster fragment termination, not an underlying curve endpoint."},
+    {"fragment":"dash","column":307,"core_rows":[],"fringe_rows":[12],"status":"fringe_only_column_boundary","note":"Pale cell adjacent to selected dash end; next dash's nonwhite cells begin at rows15..16 outside target. No silent extension into next dash."}
+  ],
+  "coverage": "Exactly6solid and8dash target columns; full specified660-cell context read. Annotations deliberately preserve separated fringe cells rather than rectangle fills.",
+  "boundary_assessment": "Solid x300/x305 contain continuing stroke and are truncated subsegment boundaries. No assigned rows touch solid y32/y48 or dash y4/y14. Dash x307 contains only uncertain fringe. Neighboring dash outside target is not merged; no target expansion proposed.",
+  "limits": [
+    "Core/fringe membership is subjective source annotation; raw RGB alone does not identify ink versus compression artifacts.",
+    "Unassigned near-white cells may include faint extensions; these rowsets are not guaranteed pre-raster curve enclosures.",
+    "Shared source, context and prior fragment review limit independence; reader agreement would not constitute external corroboration.",
+    "No scalar threshold, centerline, error radius, physical ordinate, support interval, model difference, human acceptance or cause finding."
+  ]
+}

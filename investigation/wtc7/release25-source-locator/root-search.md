@@ -73,11 +73,10 @@ existence of the release follows from that result.
 5. Anonymous curl of the IC911 page succeeded (exit 0), preserving
    `sources/ic911-building7.html`, 549409 bytes,
    SHA-256 `da33035e9e8ce9d95bca6d3697f9fe99e8625ad74fee3b2cd5164cef84794eaf`.
-6. Anonymous curl of the exact YouTube watch page succeeded (exit 0). The
-   captured HTML is omitted from this public copy because it contains embedded
-   Google client-key material; original size and SHA-256 are preserved in
-   `sources/youtube-watch-source-note.md`. Metadata inspection only; no media
-   download or playback. A local Python
+6. Anonymous curl of the exact YouTube watch page succeeded (exit 0):
+   `sources/youtube-watch.html`, 1189397 bytes,
+   SHA-256 `e6944e7146ef30ac0fb1ca09306c7caddb2e94aa8488b1f76bc819c1283931b6`.
+   Metadata inspection only; no media download or playback. A local Python
    `json.JSONDecoder().raw_decode` of the first `ytInitialPlayerResponse`
    assignment found ID `tZlENw_xuXU`, the same title/author as oEmbed,
    `lengthSeconds: "430"`, `isLiveContent: false`, and playability status

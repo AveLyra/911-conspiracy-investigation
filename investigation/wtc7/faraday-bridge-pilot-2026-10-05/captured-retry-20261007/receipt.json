@@ -1,0 +1,140 @@
+{
+  "addon_entrypoints": [],
+  "boundary_limit": "Python audit instrumentation only; not a security sandbox, native-call proof, source authenticity, scientific validation, or Sherlock acceptance.",
+  "cases": [],
+  "checks": [
+    {
+      "label": "native:exact_nine_collected",
+      "passed": false
+    },
+    {
+      "label": "native:all_nine_passed",
+      "passed": false
+    }
+  ],
+  "commands": [],
+  "engine_pins_after": {
+    "examples/sherlock-bridge-link.json": "34368d23dabb42eeeecbc61340d62435affa631d54dcf4fe9e5bbcff16c9f736",
+    "schemas/sherlock-bridge-link.schema.json": "10400ded1ce9cb771197c4e63eb56d8b122798af9f6c6c6dfb020c24c2b9f662",
+    "sherlock-integration/.gitignore": "7a3a6c3e50cb75fd8aadb61931d51f311572a45b280e2cf1891b9c8bea66856f",
+    "sherlock-integration/CHARTER.md": "158aaed7b482924f6f812ade62424cafa0de75a1cce1f6ff18065386b6315f01",
+    "sherlock-integration/project.json": "b84ebae67bc9625c476c33b8adbc8e4a1951d1e36d7c79d13206c868d1ad1d45",
+    "src/research_machine/adapters/filesystem.py": "5b9f428f5f281e517de801f90b46bb14b27d834a05de306f3a77c4bad77bfde4",
+    "src/research_machine/addons/registry.py": "e99e60426bd75c40f4642bd1e8a6312d76d3581c60d92234d093dbae354bc5fb",
+    "src/research_machine/application/evidence_admission.py": "6d90cf52f0684801c471aac4568374a3f170bd16cadb1e2d90f9870b34f5a4ef",
+    "src/research_machine/application/service.py": "e739b18f1ca97814d1c6f001435e38280948f66480a9be5310ba520f9c20c933",
+    "src/research_machine/application/sherlock_bridge.py": "18a9bba79cbde0df917bdceea592d59c8513a53fcac07ec9571c95e8df5eac79",
+    "src/research_machine/domain/models.py": "bb2eb70b9a2247c38729d02b82ed04a6284d77b482eaf7ed585c7920914ad6a6",
+    "src/research_machine/interfaces/cli.py": "5fdfed7b4bd63ac9d51df1b6701a1775314daa91d6918ba396a9cf0a9aec67aa",
+    "tests/test_sherlock_bridge.py": "6787df5978a7f273c6df153dd0e0951141182400867ad2d7418bc6a81e17ccbe"
+  },
+  "engine_pins_before": {
+    "examples/sherlock-bridge-link.json": "34368d23dabb42eeeecbc61340d62435affa631d54dcf4fe9e5bbcff16c9f736",
+    "schemas/sherlock-bridge-link.schema.json": "10400ded1ce9cb771197c4e63eb56d8b122798af9f6c6c6dfb020c24c2b9f662",
+    "sherlock-integration/.gitignore": "7a3a6c3e50cb75fd8aadb61931d51f311572a45b280e2cf1891b9c8bea66856f",
+    "sherlock-integration/CHARTER.md": "158aaed7b482924f6f812ade62424cafa0de75a1cce1f6ff18065386b6315f01",
+    "sherlock-integration/project.json": "b84ebae67bc9625c476c33b8adbc8e4a1951d1e36d7c79d13206c868d1ad1d45",
+    "src/research_machine/adapters/filesystem.py": "5b9f428f5f281e517de801f90b46bb14b27d834a05de306f3a77c4bad77bfde4",
+    "src/research_machine/addons/registry.py": "e99e60426bd75c40f4642bd1e8a6312d76d3581c60d92234d093dbae354bc5fb",
+    "src/research_machine/application/evidence_admission.py": "6d90cf52f0684801c471aac4568374a3f170bd16cadb1e2d90f9870b34f5a4ef",
+    "src/research_machine/application/service.py": "e739b18f1ca97814d1c6f001435e38280948f66480a9be5310ba520f9c20c933",
+    "src/research_machine/application/sherlock_bridge.py": "18a9bba79cbde0df917bdceea592d59c8513a53fcac07ec9571c95e8df5eac79",
+    "src/research_machine/domain/models.py": "bb2eb70b9a2247c38729d02b82ed04a6284d77b482eaf7ed585c7920914ad6a6",
+    "src/research_machine/interfaces/cli.py": "5fdfed7b4bd63ac9d51df1b6701a1775314daa91d6918ba396a9cf0a9aec67aa",
+    "tests/test_sherlock_bridge.py": "6787df5978a7f273c6df153dd0e0951141182400867ad2d7418bc6a81e17ccbe"
+  },
+  "expected_denials": [
+    {
+      "detail": "/private/tmp/wtc7-faraday-pilot.eGMyO9/guard-refused-native-retry-20261007",
+      "event": "open",
+      "expected_control": "outside_write"
+    },
+    {
+      "detail": "/private/tmp/wtc7-faraday-pilot.eGMyO9/guard-refused-native-retry-20261007",
+      "event": "os.symlink",
+      "expected_control": "outside_symlink"
+    },
+    {
+      "detail": "network, process creation, or native foreign-call access",
+      "event": "socket.__new__",
+      "expected_control": "network"
+    },
+    {
+      "detail": "network, process creation, or native foreign-call access",
+      "event": "subprocess.Popen",
+      "expected_control": "subprocess"
+    }
+  ],
+  "format_version": 1,
+  "guard_controls": {
+    "allowed_inroot_symlink": true,
+    "allowed_local_write": true,
+    "allowed_temporary_replace": true,
+    "denied_controls": [
+      "outside_write",
+      "outside_symlink",
+      "network",
+      "subprocess"
+    ]
+  },
+  "imported_core_sources": {},
+  "invocation": [
+    "/Users/admin/.pyenv/versions/3.13.7/bin/python3",
+    "-I",
+    "-B",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/faraday-bridge-pilot-2026-10-05/verify_bridge_retry.py",
+    "--mode",
+    "native",
+    "--run-root",
+    "/private/tmp/wtc7-faraday-pilot.eGMyO9/native-retry-20261007"
+  ],
+  "mode": "native",
+  "native": {
+    "argv": [
+      "/Users/admin/dev/faraday/tests/test_sherlock_bridge.py",
+      "-q",
+      "-s",
+      "-p",
+      "no:cacheprovider",
+      "--noconftest",
+      "--import-mode=importlib",
+      "--rootdir",
+      "/Users/admin/dev/faraday",
+      "-c",
+      "/private/tmp/wtc7-faraday-pilot.eGMyO9/native-retry-20261007/pytest.ini",
+      "--basetemp",
+      "/private/tmp/wtc7-faraday-pilot.eGMyO9/native-retry-20261007/native-tmp"
+    ],
+    "counts": {
+      "collected": 0,
+      "failed": 0,
+      "passed": 0,
+      "skipped": 0
+    },
+    "exit_code": 3,
+    "fixture_limitation": "Unchanged native dataset fixtures omit --synthetic; these tests do not establish typed synthetic propagation.",
+    "reports": []
+  },
+  "native_files": {},
+  "passed": false,
+  "protocol_erratum_sha256": "727bc53e3ee790cfc560630f237297f1ce25ace83596ba293793d4b98096acf8",
+  "protocol_sha256": "d6b9a077c97dc2b207a587739f7e697f1b94c055bedee1f7a536c022da2569da",
+  "run_root": "/private/tmp/wtc7-faraday-pilot.eGMyO9/native-retry-20261007",
+  "runner_sha256": "e94ae5a743fd6fab45431e68c3eecb916e89b03710e4d48b0da4f5b446902b9b",
+  "runtime": {
+    "executable": "/Users/admin/.pyenv/versions/3.13.7/bin/python3",
+    "packages": {
+      "jsonschema": "4.25.1",
+      "pytest": "8.4.2"
+    },
+    "python": "3.13.7 (main, Oct 24 2025, 00:40:52) [Clang 17.0.0 (clang-1700.0.13.5)]"
+  },
+  "stdout_log_sha256": "5260e627e75c43185054965a1bff9d68bac1717245b8404f117e042b60736b8e",
+  "unexpected_denials": [
+    {
+      "detail": "/dev/null",
+      "event": "open",
+      "expected_control": null
+    }
+  ]
+}

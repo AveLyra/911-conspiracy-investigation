@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "scope": "Completed bounded held-picture correspondence stage, not complete investigation",
+  "final_check": {
+    "command": "ruby -rjson -rdigest -e '\nbase=ARGV.fetch(0)\njsons=Dir.glob(File.join(base,\"**\",\"*.json\"));jsons.each{|p|JSON.parse(File.read(p))}\nresult={}\n%w[controls03 controls04 picture01 picture02].each do |run|\n r=JSON.parse(File.read(File.join(base,run,\"receipt.json\")));raise \"run not complete\" unless r[\"status\"]==\"complete\"&&r[\"before\"]==r[\"after\"]\n r[\"before\"][\"pins\"].each{|f,w|raise \"method pin changed\" unless File.size(f)==w[\"bytes\"]&&Digest::SHA256.file(f).hexdigest==w[\"sha256\"]}\n r[\"products\"].each{|f,w|q=File.join(base,run,f);raise \"product pin changed\" unless File.size(q)==w[\"bytes\"]&&Digest::SHA256.file(q).hexdigest==w[\"sha256\"]}\n result[run]={products:r[\"products\"].size,bytes:r[\"products\"].values.sum{|x|x[\"bytes\"]},status:r[\"status\"]}\nend\nv=JSON.parse(File.read(File.join(base,\"independent-visual-review.json\")))\nv.fetch(\"inputs\").fetch(\"inspected_images\").each{|x|raise \"visual source changed\" unless Digest::SHA256.file(x[\"path\"]).hexdigest==x[\"sha256\"]}\nraise \"visual count differs\" unless v[\"inputs\"][\"inspected_images\"].size==22\nind=JSON.parse(File.read(File.join(base,\"independent-check.json\")));raise \"independent incomplete\" unless ind[\"status\"]==\"complete\"&&ind[\"verification\"][\"pairs\"]==228\nreport=File.join(base,\"report.md\");links=File.read(report).scan(/\\]\\(([^)]+)\\)/).flatten.reject{|x|x.start_with?(\"http://\",\"https://\",\"#\")}\nraise \"broken report link\" unless links.all?{|x|File.exist?(File.expand_path(x.split(\"#\").first,base))}\nnames=%w[PROTOCOL.md config.json preparation-review.json picture_screen.py test_picture_screen.py test_picture_screen.pre-sequence.py independent_check.py independent-check.json root-observations.json independent-visual-review.json execution.json report.md]\npins=names.to_h{|n|f=File.join(base,n);[n,{bytes:File.size(f),sha256:Digest::SHA256.file(f).hexdigest}]}\nputs JSON.pretty_generate({status:\"pass\",json_files:jsons.size,run_products:result,visual_source_pins:22,local_report_links:links.size,pins:pins})\n' /Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/picture-correspondence",
+    "exit_code": 0,
+    "result": {
+      "status": "pass",
+      "json_files": 32,
+      "run_products": {
+        "controls03": {
+          "products": 2,
+          "bytes": 2000,
+          "status": "complete"
+        },
+        "controls04": {
+          "products": 2,
+          "bytes": 2000,
+          "status": "complete"
+        },
+        "picture01": {
+          "products": 231,
+          "bytes": 83561021,
+          "status": "complete"
+        },
+        "picture02": {
+          "products": 231,
+          "bytes": 83561021,
+          "status": "complete"
+        }
+      },
+      "visual_source_pins": 22,
+      "local_report_links": 8,
+      "pins": {
+        "PROTOCOL.md": {
+          "bytes": 7224,
+          "sha256": "d0609694559608ffa87ab517e4b4ca3ea2c0e5bc9556a0458ee0faee103fd120"
+        },
+        "config.json": {
+          "bytes": 2800,
+          "sha256": "56efd21495ef21b37df9137438f0b53183a120b59b1b43eb0f498b4ac47d65b2"
+        },
+        "preparation-review.json": {
+          "bytes": 2119,
+          "sha256": "86510b19d7fa2b08477bfba8f9bd7ca557eb44109c1ce1e6730ed29625bfaca3"
+        },
+        "picture_screen.py": {
+          "bytes": 13381,
+          "sha256": "f5d2c75f758da5f3bdf63bd4b8b38d2eba1897aa6a52c37e93f6f91559d44f86"
+        },
+        "test_picture_screen.py": {
+          "bytes": 8665,
+          "sha256": "8225adf3e4fbc15292e9e439927a8e581a4c15a1ad819c625d584674e67f7c43"
+        },
+        "test_picture_screen.pre-sequence.py": {
+          "bytes": 6410,
+          "sha256": "ca41cba476d77d755fe668fc70fd1bb9765a588836b7c0761744fe5f6b6819d8"
+        },
+        "independent_check.py": {
+          "bytes": 13975,
+          "sha256": "56784c9f63ea2f8fc775e0d6d77635a80ea1dc3b4aff5dd9326d954272afa2ef"
+        },
+        "independent-check.json": {
+          "bytes": 144045,
+          "sha256": "6e8f7907f9bacc9ed99b92c01c5cd3986ccf4b7a82bcae8e0b5e66ed90729392"
+        },
+        "root-observations.json": {
+          "bytes": 3485,
+          "sha256": "c6e6e00c559e48e44574e22523164bc6ab4d7a070f80a98f003449e9a58c746b"
+        },
+        "independent-visual-review.json": {
+          "bytes": 30451,
+          "sha256": "7a464ff6ac6821eb8adc4c7e733af1108e35520dbc1c42b9fda8c7c907aec6cd"
+        },
+        "execution.json": {
+          "bytes": 6093,
+          "sha256": "5fe46819aeb974ad0cdc088229f5d2c42bd61822548953d49c3172159b033607"
+        },
+        "report.md": {
+          "bytes": 9727,
+          "sha256": "837ca98947b392334cb662a2962cbca42b22ac12c64636b7668972caa140e0fe"
+        }
+      }
+    }
+  },
+  "whitespace_check": {
+    "command": "git diff --check",
+    "workdir": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation",
+    "exit_code": 0,
+    "output": ""
+  },
+  "final_reviews": {
+    "numerical_report": {
+      "reviewer": "/root/claim_index_critical_review",
+      "outcome": "No material correction in six table entries, near sets, counts, byte totals, runtime, error tolerances or verification limits; visual findings excluded from this audit."
+    },
+    "visual_comparison": {
+      "reviewer": "/root/quiet_mechanism_inference_review",
+      "first_reading": "independent-visual-review.json",
+      "after_freeze": "Root observations read after independent reading was saved; no material disagreement.",
+      "limits": "Nonblind same-source AI, not human/expert acceptance or independent historical corroboration."
+    }
+  },
+  "authority_boundary": "Working research only; raw sources unchanged, no original sound/clock or cause finding, no accepted Sherlock/Faraday state, no legal promotion, no transmission/commit/push."
+}

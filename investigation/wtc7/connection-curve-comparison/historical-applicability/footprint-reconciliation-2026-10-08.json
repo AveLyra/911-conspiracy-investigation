@@ -1,0 +1,1341 @@
+{
+  "date": "2026-10-08",
+  "status": "completed_existing_evidence_reconciliation_not_completed_supported_domain_inventory",
+  "worktree": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation",
+  "branch": "research/sherlock-wtc7-investigation",
+  "base_head": "ca1c223335c20905d6608eb15c676f88cbfac734",
+  "scope": "All fourteen pairs in the published connection benchmark; joins completed local footprints to the preserved full qualitative inventories. No new source reading, metric, historical simulation or source-annotation repair.",
+  "coordinate_convention": "Zero-based native cell edges, half-open target boxes. Broader qualitative residual descriptions are not exact pixel masks. Context beyond target is not annotated coverage.",
+  "counts": {
+    "completed_regions": 17,
+    "original_readings": 34,
+    "original_route_records": 10840,
+    "pairs": 14,
+    "record_count_limits": "Annotation coverage counts, not independently observed curves or accepted physical measurements; E3 correction is not an additional original reading."
+  },
+  "annotation_candidate_presence": {
+    "criterion": "At least one saved record with identified_local_fragment status and nonempty core for each style somewhere in a pair's completed regions, in both original reader roles. This is not a common-domain, containment or identity-accuracy test.",
+    "pairs_with_both_style_candidates": ["F3", "F4", "F5", "F6", "F7", "F8", "F9", "E5", "E6", "E7", "E8", "E9"],
+    "pairs_without_separate_solid_in_completed_target": ["E3", "E4"],
+    "separate_region_limit": "F7 Im1 has no attributed dash rows; Im2 contains candidates for both styles. No seam join or missing Im1 attribution is supplied by that fact.",
+    "root_record_check_receipt": "471c8d"
+  },
+  "claims": [
+    {
+      "claim": "All fixed locator regions have both original readings.",
+      "type": "derived artifact-coverage count",
+      "strength": "A within checked artifact scope",
+      "support": "Roster, 34 original JSON records and seven batch reports/verification records; exact coverage check.",
+      "falsifier": "Missing source-region/readers, mismatched target coordinates or missing route columns."
+    },
+    {
+      "claim": "The fixed pass does not complete the earlier full-region recovery proposals.",
+      "type": "source-record reconciliation",
+      "strength": "A for declared scope difference",
+      "support": "REGIONS.json selection_limit plus earlier full inventories; F6 lower-Im1 crest and F5 Im3 descent are concrete examples.",
+      "falsifier": "Located complete footprints/exclusions and bounds decisions for the presently omitted inventory regions."
+    },
+    {
+      "claim": "No pair currently has an admitted common physical support domain.",
+      "type": "readiness finding, not physical absence",
+      "strength": "B from the reviewed dependency and acceptance records",
+      "support": "Batch limits, numerical/human protocols and absence of an adopted source-bounds/branch construction in these artifacts.",
+      "falsifier": "A source-specific defensible bounds and identity/support record linked to these readings, with the required actual sample acceptance before consequential use."
+    }
+  ],
+  "preserved_corrections": [
+    {
+      "pair": "E7",
+      "source": "remaining-route-inventory/energy-reconciliation.json",
+      "key": "qualifications[2].controlling_disposition",
+      "status": "Apparent same-color contact/crossing with locally separable pieces on either side, not a recovered through-contact path. Repaired terminal-only target is preserved separately in the fixed roster."
+    },
+    {
+      "pair": "F6",
+      "source": "remaining-route-inventory/force-reconciliation.json",
+      "key": "material_differences[0]",
+      "status": "Broken crest in lower Im1 with arms into Im2; original separate-reader strip error preserved."
+    },
+    {
+      "pair": "E5",
+      "source": "remaining-route-inventory/energy-reconciliation.json",
+      "key": "material_correction.controlling_disposition",
+      "status": "One visible narrow band; both contributions and any solid endpoint unresolved."
+    },
+    {
+      "pair": "E3",
+      "source": "native-footprint-pass/energy345/reader-E3-independent-corrected.json",
+      "status": "Post-exchange erratum removes only three exactly white unassigned-fringe cells; original routes and original comparison remain unchanged. Not an additional independent reading.",
+      "removed_cells": [
+        [
+          372,
+          46
+        ],
+        [
+          373,
+          46
+        ],
+        [
+          381,
+          45
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "f3-descending-corridor/reader-root.json",
+              "physical_support_field": "not_present",
+              "route_records": 180,
+              "target_source_field": "f3-descending-corridor/PROTOCOL.md: fixed inclusive columns 270..359, rows 0..87"
+            },
+            {
+              "human_accepted_field": "not_present",
+              "path": "f3-descending-corridor/reader-independent.json",
+              "physical_support_field": "not_present",
+              "route_records": 180,
+              "target_source_field": "f3-descending-corridor/PROTOCOL.md: fixed inclusive columns 270..359, rows 0..87"
+            }
+          ],
+          "source": "Im4",
+          "target_box": [
+            270,
+            0,
+            360,
+            88
+          ]
+        }
+      ],
+      "pair": "F3",
+      "report": "f3-descending-corridor/report.md",
+      "verification": "f3-descending-corridor/final-verification.json",
+      "full_inventory_sources": [
+        {
+          "path": "f3-remainder-inventory/reader-root.json",
+          "selector": "records[] keyed solid/dashed rise, crest, descent, tail and both seams"
+        },
+        {
+          "path": "f3-remainder-inventory/reader-independent.json",
+          "selector": "regions[] with corresponding colon-separated keys"
+        }
+      ],
+      "remaining_inventory": "Rise and crest in Im3/Im4 outside the corridor, Im3 descending material, Im5 origin and pre-axis tail, and both strip joins. The broader Im4 locator ends at x365 but literal coverage ends at x360; earlier tiny footprints are contained in the corridor.",
+      "identity_and_topology_limits": "Same-black contact, crowded origin, axis/tick ownership, clipped bodies and nonuniform Im5 pitch. Preserve the two readers' holes and fragment disagreements.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "F3Q1",
+          "F3Q2",
+          "F3Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Retain existing 106/102 geometry-eligible rectangles as geometry only. Give the existing rise/crest/tail inventory a finite footprint-or-source-specific-exclusion disposition without rereading the corridor."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force45/reader-F4-Im4-primary.json",
+              "physical_support_field": null,
+              "route_records": 190,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force45/reader-F4-Im4-peer.json",
+              "physical_support_field": null,
+              "route_records": 190,
+              "target_source_field": "target_box"
+            }
+          ],
+          "source": "Im4",
+          "target_box": [
+            330,
+            0,
+            425,
+            88
+          ]
+        }
+      ],
+      "pair": "F4",
+      "report": "native-footprint-pass/force45/report.md",
+      "verification": "native-footprint-pass/force45/verification.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=F4"
+        },
+        {
+          "path": "remaining-route-inventory/reader-force.json",
+          "selector": "pairs[] where id=F4"
+        }
+      ],
+      "remaining_inventory": "Im3 arch/crest/descent, broader Im3/Im4 rising pieces, Im5 origin/tail and unaccepted joins.",
+      "identity_and_topology_limits": "Pale gold extent and near-contact crest; saved dash-body split differs at x362–368.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "F4Q1",
+          "F4Q2",
+          "F4Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Assess bounds and identity for saved separated Im4 fragments, retaining alternative body grouping. Separately dispose of the existing unmeasured rise/crest/tail candidates."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force45/reader-F5-Im4-primary.json",
+              "physical_support_field": null,
+              "route_records": 200,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force45/reader-F5-Im4-peer.json",
+              "physical_support_field": null,
+              "route_records": 200,
+              "target_source_field": "target_box"
+            }
+          ],
+          "source": "Im4",
+          "target_box": [
+            375,
+            0,
+            475,
+            88
+          ]
+        },
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force45/reader-F5-Im2-primary.json",
+              "physical_support_field": null,
+              "route_records": 250,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force45/reader-F5-Im2-peer.json",
+              "physical_support_field": null,
+              "route_records": 250,
+              "target_source_field": "target_box"
+            }
+          ],
+          "source": "Im2",
+          "target_box": [
+            225,
+            50,
+            350,
+            88
+          ]
+        }
+      ],
+      "pair": "F5",
+      "report": "native-footprint-pass/force45/report.md",
+      "verification": "native-footprint-pass/force45/verification.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=F5"
+        },
+        {
+          "path": "remaining-route-inventory/reader-force.json",
+          "selector": "pairs[] where id=F5"
+        }
+      ],
+      "remaining_inventory": "Im3 rise/descent, broader Im4 rise, out-of-box Im2 material, Im5 origin/tail and joins. The earlier Im3/Im4 recovery proposal is not completed by the fixed Im2/Im4 boxes.",
+      "identity_and_topology_limits": "Im4 blue/red overlap x446–455; Im2 allocations at x225 and near286/292; peer generic same-column band references can flag an unrelated route.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "F5Q1",
+          "F5Q2",
+          "F5Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Use saved separated fragments for a conditional bounds decision without importing both-route conflict flags as physical ambiguity. Retain missing Im3 recovery and all contact exclusions."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force69/reader-F6-Im2-primary.json",
+              "physical_support_field": null,
+              "route_records": 320,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force69/reader-F6-Im2-peer.json",
+              "physical_support_field": null,
+              "route_records": 320,
+              "target_source_field": "target_box"
+            }
+          ],
+          "source": "Im2",
+          "target_box": [
+            205,
+            0,
+            365,
+            88
+          ]
+        }
+      ],
+      "pair": "F6",
+      "report": "native-footprint-pass/force69/report.md",
+      "verification": "native-footprint-pass/force69/verification.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=F6"
+        },
+        {
+          "path": "remaining-route-inventory/reader-force.json",
+          "selector": "pairs[] where id=F6"
+        }
+      ],
+      "remaining_inventory": "Corrected broken crest in lower Im1 and its seam; Im3 irregular shoulder and rise/descent; Im4 rise/descent; Im5 origin/tail; remaining Im2 material and joins.",
+      "identity_and_topology_limits": "Same-red meeting x260–267 and differently colored overlap near356; a repeated fragment ID across unknown spans is not continuity.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "F6Q1",
+          "F6Q2",
+          "F6Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Preserve the acknowledged Im1 correction. Assess isolated Im2 pieces locally, while giving corrected crest and existing downstream candidates their own finite recovery/disposition."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force69/reader-F7-Im1-primary.json",
+              "physical_support_field": null,
+              "route_records": 230,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force69/reader-F7-Im1-peer.json",
+              "physical_support_field": null,
+              "route_records": 230,
+              "target_source_field": "target_box"
+            }
+          ],
+          "source": "Im1",
+          "target_box": [
+            220,
+            50,
+            335,
+            88
+          ]
+        },
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force69/reader-F7-Im2-primary.json",
+              "physical_support_field": null,
+              "route_records": 290,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force69/reader-F7-Im2-peer.json",
+              "physical_support_field": null,
+              "route_records": 290,
+              "target_source_field": "target_box"
+            }
+          ],
+          "source": "Im2",
+          "target_box": [
+            330,
+            0,
+            475,
+            88
+          ]
+        }
+      ],
+      "pair": "F7",
+      "report": "native-footprint-pass/force69/report.md",
+      "verification": "native-footprint-pass/force69/verification.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=F7"
+        },
+        {
+          "path": "remaining-route-inventory/reader-force.json",
+          "selector": "pairs[] where id=F7"
+        }
+      ],
+      "remaining_inventory": "Earlier Im4/Im3/Im2 rise, out-of-box Im1/Im2 shoulder, Im3/Im4 decline, Im5 origin/tail and joins.",
+      "identity_and_topology_limits": "Neither reader attributes broken-route cells in the Im1 target. Im2 contact and green/purple ownership remain disputed; separate boxes do not prove a seam join.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "F7Q1",
+          "F7Q2",
+          "F7Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Im1 alone supplies no paired attribution. Assess separated Im2 fragments without using them to fill Im1; retain out-of-box shoulder and earlier approaches as remaining candidates."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force69/reader-F8-Im1-primary.json",
+              "physical_support_field": null,
+              "route_records": 350,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force69/reader-F8-Im1-peer.json",
+              "physical_support_field": null,
+              "route_records": 350,
+              "target_source_field": "target_box"
+            }
+          ],
+          "source": "Im1",
+          "target_box": [
+            195,
+            10,
+            370,
+            88
+          ]
+        }
+      ],
+      "pair": "F8",
+      "report": "native-footprint-pass/force69/report.md",
+      "verification": "native-footprint-pass/force69/verification.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=F8"
+        },
+        {
+          "path": "remaining-route-inventory/reader-force.json",
+          "selector": "pairs[] where id=F8"
+        }
+      ],
+      "remaining_inventory": "Im2–Im4 rise/excursions, later shoulder/descent, Im5 origin/tail, remaining Im1 material and joins.",
+      "identity_and_topology_limits": "Pale cyan, same-color contacts and purple proximity. At x262,263,351,357,358 the peer's route-specific fragment ownership is only in prose; structured references use aggregate bands.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "F8Q1",
+          "F8Q2",
+          "F8Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Assess explicit local ownership alternatives without strengthening the frozen schema. Do not infer reversed displacement from vertical excursions; retain later regions for separate disposition."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force69/reader-F9-Im0-primary.json",
+              "physical_support_field": null,
+              "route_records": 210,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force69/reader-F9-Im0-peer.json",
+              "physical_support_field": null,
+              "route_records": 210,
+              "target_source_field": "target_box"
+            }
+          ],
+          "source": "Im0",
+          "target_box": [
+            220,
+            55,
+            325,
+            88
+          ]
+        },
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force69/reader-F9-Im1-primary.json",
+              "physical_support_field": null,
+              "route_records": 260,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/force69/reader-F9-Im1-peer.json",
+              "physical_support_field": null,
+              "route_records": 260,
+              "target_source_field": "target_box"
+            }
+          ],
+          "source": "Im1",
+          "target_box": [
+            245,
+            0,
+            375,
+            88
+          ]
+        }
+      ],
+      "pair": "F9",
+      "report": "native-footprint-pass/force69/report.md",
+      "verification": "native-footprint-pass/force69/verification.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=F9"
+        },
+        {
+          "path": "remaining-route-inventory/reader-force.json",
+          "selector": "pairs[] where id=F9"
+        }
+      ],
+      "remaining_inventory": "Near-coincident early rise outside targets through Im1–Im4, Im2–Im4 decline, Im3 broken shoulder, Im5 origin/tail and unaccepted joins including Im0/Im1.",
+      "identity_and_topology_limits": "Im0 dash grouping at x286, faint exit at309, Im1 ownership at350 and purple/cyan contacts. Equal total ink is not equal model assignment.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "F9Q1",
+          "F9Q2",
+          "F9Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Retain body/ownership alternatives for saved isolated pieces; separately dispose of the earlier rise and shoulder, with no inferred global route or seam."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/energy345/reader-E3-root.json",
+              "physical_support_field": null,
+              "route_records": 650,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": "not_present",
+              "path": "native-footprint-pass/energy345/reader-E3-independent.json",
+              "physical_support_field": "not_present",
+              "route_records": 650,
+              "target_source_field": "coverage.target_box"
+            }
+          ],
+          "source": "Im10",
+          "target_box": [
+            365,
+            30,
+            690,
+            60
+          ]
+        }
+      ],
+      "pair": "E3",
+      "report": "native-footprint-pass/energy345/report.md",
+      "verification": "native-footprint-pass/energy345/verification.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=E3"
+        },
+        {
+          "path": "remaining-route-inventory/reader-energy.json",
+          "selector": "pairs[] where id=E3"
+        }
+      ],
+      "remaining_inventory": "Im11 crowded origin, earlier Im10 rise and separable pre-contact bend outside target, and Im10/Im11 boundary.",
+      "identity_and_topology_limits": "No separately attributed solid footprint in the completed target. Visible later dashes cannot distinguish ended solid from hidden continuation.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "E3Q1",
+          "E3Q2",
+          "E3Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Recover the already-inventoried separate Im10 approach and last distinguishable solid piece, or give source-specific exclusions. Do not repeat the shared terminal to infer hidden support."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/energy345/reader-E4-root.json",
+              "physical_support_field": null,
+              "route_records": 500,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": "not_present",
+              "path": "native-footprint-pass/energy345/reader-E4-independent.json",
+              "physical_support_field": "not_present",
+              "route_records": 500,
+              "target_source_field": "coverage.target_box"
+            }
+          ],
+          "source": "Im9",
+          "target_box": [
+            440,
+            72,
+            690,
+            92
+          ]
+        }
+      ],
+      "pair": "E4",
+      "report": "native-footprint-pass/energy345/report-e45.md",
+      "verification": "native-footprint-pass/energy345/verification-e45.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=E4"
+        },
+        {
+          "path": "remaining-route-inventory/reader-energy.json",
+          "selector": "pairs[] where id=E4"
+        }
+      ],
+      "remaining_inventory": "Im11 origin, separated Im10 rise, Im10 side of bend, out-of-box Im9 material and Im10/Im11 plus Im9/Im10 boundaries.",
+      "identity_and_topology_limits": "No separately attributed solid footprint in this target. Peer dash-body attribution at x481–485 differs from primary; faint near-coincident ink does not prove two contributions.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "E4Q1",
+          "E4Q2",
+          "E4Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Use the inventoried separated Im10 approach/seam-side candidates in one declared finite recovery; preserve native transforms and unresolved terminal membership."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/energy345/reader-E5-root.json",
+              "physical_support_field": null,
+              "route_records": 590,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/energy345/reader-E5-independent.json",
+              "physical_support_field": null,
+              "route_records": 590,
+              "target_source_field": "target_box"
+            }
+          ],
+          "source": "Im9",
+          "target_box": [
+            395,
+            18,
+            690,
+            47
+          ]
+        }
+      ],
+      "pair": "E5",
+      "report": "native-footprint-pass/energy345/report-e45.md",
+      "verification": "native-footprint-pass/energy345/verification-e45.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=E5"
+        },
+        {
+          "path": "remaining-route-inventory/reader-energy.json",
+          "selector": "pairs[] where id=E5"
+        }
+      ],
+      "remaining_inventory": "Im11 origin, Im10 rise, out-of-box Im9 rise/bend and Im10/Im11 plus Im9/Im10 boundaries. Some pre-convergence approach is already annotated.",
+      "identity_and_topology_limits": "One narrow terminal band has unresolved separate contributions and solid endpoint. Primary loses attribution at x467; peer retains weaker assignments through469.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "E5Q1",
+          "E5Q2",
+          "E5Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Evaluate saved separated approach for conditional local bounds; retain x467–469 disagreement and terminal exclusions. Earlier rise remains a separate coverage obligation."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/reader-E6-root.json",
+              "physical_support_field": "not_present",
+              "route_records": 350,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": "not_present",
+              "path": "native-footprint-pass/reader-E6-independent.json",
+              "physical_support_field": "not_present",
+              "route_records": 350,
+              "target_source_field": "coverage.target_box"
+            }
+          ],
+          "source": "Im8",
+          "target_box": [
+            515,
+            57,
+            690,
+            85
+          ]
+        }
+      ],
+      "pair": "E6",
+      "report": "native-footprint-pass/report.md",
+      "verification": "native-footprint-pass/verification.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=E6"
+        },
+        {
+          "path": "remaining-route-inventory/reader-energy.json",
+          "selector": "pairs[] where id=E6"
+        }
+      ],
+      "remaining_inventory": "Im11 origin, Im10/Im9 rise, Im9/Im8 bend/contact outside target and related joins.",
+      "identity_and_topology_limits": "Earlier crossings and close bend; 30 columns with no peer dash attribution where primary retains candidate fringe. Neither absence nor detector failure establishes a gap.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "E6Q1",
+          "E6Q2",
+          "E6Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Assess saved isolated terminal bodies under explicit bounds/identity assumptions, without retuning the failed detector. Recover or specifically exclude earlier candidates separately."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/reader-E7-root.json",
+              "physical_support_field": "not_present",
+              "route_records": 220,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": "not_present",
+              "path": "native-footprint-pass/reader-E7-independent.json",
+              "physical_support_field": "not_present",
+              "route_records": 220,
+              "target_source_field": "target_rectangle_half_open"
+            }
+          ],
+          "source": "Im8",
+          "target_box": [
+            580,
+            14,
+            690,
+            30
+          ]
+        }
+      ],
+      "pair": "E7",
+      "report": "native-footprint-pass/report.md",
+      "verification": "native-footprint-pass/verification.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=E7"
+        },
+        {
+          "path": "remaining-route-inventory/reader-energy.json",
+          "selector": "pairs[] where id=E7"
+        }
+      ],
+      "remaining_inventory": "Im11 origin, Im10/Im9 approaches, Im8 bend/contact outside repaired target and related joins.",
+      "identity_and_topology_limits": "Same-green contact has no recovered through-path; systematic pale row26 dispute remains despite shared dark row24.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "E7Q1",
+          "E7Q2",
+          "E7Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Use saved terminal edge alternatives for a conditional bounds decision; keep earlier contact excluded unless its own evidence resolves identity. Do not revive the rejected locator."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/energy89/reader-E8-root.json",
+              "physical_support_field": null,
+              "route_records": 310,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/energy89/reader-E8-independent.json",
+              "physical_support_field": "not_present",
+              "route_records": 310,
+              "target_source_field": "target_box"
+            }
+          ],
+          "source": "Im7",
+          "target_box": [
+            535,
+            54,
+            690,
+            86
+          ]
+        }
+      ],
+      "pair": "E8",
+      "report": "native-footprint-pass/energy89/report.md",
+      "verification": "native-footprint-pass/energy89/verification.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=E8"
+        },
+        {
+          "path": "remaining-route-inventory/reader-energy.json",
+          "selector": "pairs[] where id=E8"
+        }
+      ],
+      "remaining_inventory": "Im11 origin, Im10/Im9/Im8 rise, Im8/out-of-box Im7 bend/contact and all related joins.",
+      "identity_and_topology_limits": "Primary x535–539 unassigned versus peer candidates/shared edge; faint row64 and interbody attribution differ. Terminal ordering does not identify prior branches.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "E8Q1",
+          "E8Q2",
+          "E8Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Assess saved well-separated terminal pieces without the close-left ambiguity. Give existing earlier rise/bend candidates their own recovery or source-specific exclusion."
+    },
+    {
+      "completed_footprints": [
+        {
+          "readers": [
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/energy89/reader-E9-root.json",
+              "physical_support_field": null,
+              "route_records": 320,
+              "target_source_field": "target_box"
+            },
+            {
+              "human_accepted_field": false,
+              "path": "native-footprint-pass/energy89/reader-E9-independent.json",
+              "physical_support_field": null,
+              "route_records": 320,
+              "target_source_field": "target_box"
+            }
+          ],
+          "source": "Im7",
+          "target_box": [
+            530,
+            30,
+            690,
+            56
+          ]
+        }
+      ],
+      "pair": "E9",
+      "report": "native-footprint-pass/energy89/report.md",
+      "verification": "native-footprint-pass/energy89/verification.json",
+      "full_inventory_sources": [
+        {
+          "path": "remaining-route-inventory/reader-root.json",
+          "selector": "pairs[] where id=E9"
+        },
+        {
+          "path": "remaining-route-inventory/reader-energy.json",
+          "selector": "pairs[] where id=E9"
+        }
+      ],
+      "remaining_inventory": "Im11 origin, Im10/Im9/Im8 rise, same-purple Im8 contact, out-of-box bend and related joins.",
+      "identity_and_topology_limits": "Interstitial and interbody attribution differ; terminal style does not identify pre-contact branches, and border clipping does not establish an endpoint.",
+      "bounds_status": "Original-curve containment is not established by these annotations. Conditional graphical estimates remain possible if their bounds, identity and support assumptions are explicitly justified.",
+      "admitted_common_support": {
+        "status": "not_established",
+        "intervals_m": null,
+        "length_m": null
+      },
+      "human_curve_samples": {
+        "status": "not_selected_or_accepted",
+        "intended_pair_slot_ids": [
+          "E9Q1",
+          "E9Q2",
+          "E9Q3"
+        ],
+        "reason": "Source bounds and full supported/unsupported disposition remain prerequisites; unknown support is not an empty domain."
+      },
+      "next_evidence_action": "Assess preserved terminal alternatives locally and separately dispose of the existing earlier rise/contact/bend. Do not generalize E3/E4 missing-solid identity to these separated terminal pieces."
+    }
+  ],
+  "method_limits": [
+    "This reconciles existing evidence; it is not a new pixel reading or another independent historical observation.",
+    "Reproducible annotation arithmetic cannot establish original-curve containment or model fidelity.",
+    "Single-fragment geometric eligibility is not a calibrated source bound; F3's existing screen is not repeated or generalized automatically.",
+    "No arbitrary common pixel radius, averaging, gap/seam bridging, hidden-curve duplication or zero-support substitution is adopted.",
+    "Conditional graphical estimates are not prohibited merely because exact pre-raster arrays or identical JPEG encoding are unavailable.",
+    "Inventory candidates outside finished targets remain recoverable work or source-specific unresolved dispositions, not wholesale exclusions introduced for convenience."
+  ],
+  "acceptance": {
+    "axes_and_legend_confirmed": true,
+    "curve_samples_accepted": false,
+    "paired_slots_intended": 42,
+    "model_entries_intended": 84,
+    "quantiles_computed": false,
+    "physical_metric_computed": false,
+    "cause_ranking_changed": false,
+    "full_goal_complete": false
+  },
+  "verified_input_pins": {
+    "HUMAN-REVIEW-GATE.md": {
+      "bytes": 2733,
+      "sha256": "5c739ea10b6fe51b719a10205cef52737ff74cc29d1431272dd5dfea90d92c71"
+    },
+    "HUMAN-SAMPLE-SELECTION.md": {
+      "bytes": 7783,
+      "sha256": "0fc9d115306ed9f429603ee5a4a52b016385ee232012982e28c16b0189509bdb"
+    },
+    "NUMERICAL-PROTOCOL.md": {
+      "bytes": 6688,
+      "sha256": "e03c47c1945b9eb9fd0a040d757d5f5f66bf76791ced8944323d3c92d1120df3"
+    },
+    "PROTOCOL.md": {
+      "bytes": 4432,
+      "sha256": "1ec6fedc9110f9ef2001f69fd1e13ad3a316a904f057345af26a0118d3216e19"
+    },
+    "REGISTRATION-STAGE.md": {
+      "bytes": 4230,
+      "sha256": "18e212edcf4950f370bd30119597b20f786015d61da03fe4aeb19b23125f004c"
+    },
+    "f3-descending-corridor/PROTOCOL.md": {
+      "bytes": 5558,
+      "sha256": "12525bcb149368f18d85e3611f32137ccdeef723cc95df93cf2b5d9b13f2aa27"
+    },
+    "f3-descending-corridor/final-verification.json": {
+      "bytes": 2859,
+      "sha256": "1a2c72b65500296f497e364e02408286db978d2539fc98892429591618e36f28"
+    },
+    "f3-descending-corridor/reader-independent.json": {
+      "bytes": 78174,
+      "sha256": "40c763898afa44619aaf0dfb9a198b44d7c51aff0ed15b4f51e303192d39e6c6"
+    },
+    "f3-descending-corridor/reader-root.json": {
+      "bytes": 99297,
+      "sha256": "50059b664dc330543d6c6c174bc6ea87968d1fe631c8f8879de9cef4683cdd2c"
+    },
+    "f3-descending-corridor/report.md": {
+      "bytes": 6457,
+      "sha256": "8ad1e66b6b2801906c6b5e8c9d77e253e66f439d75cad4ee2e24ff9dacca784e"
+    },
+    "f3-remainder-inventory/reader-independent.json": {
+      "bytes": 15020,
+      "sha256": "882dfea7a82cf6314a8121ecb97e47585dbdd0dd0c7d43332792f00c58901b2f"
+    },
+    "f3-remainder-inventory/reader-root.json": {
+      "bytes": 16695,
+      "sha256": "5cf697485a8c103e19156eea350c14abdbbd084a45f24a10932412df7d67bacb"
+    },
+    "f3-remainder-inventory/report.md": {
+      "bytes": 5527,
+      "sha256": "3fbf1caa7908cf3fef8badfcc7e52cf9a7ad9b456a114d70d35cf5a388ae69ff"
+    },
+    "historical-applicability/PROTOCOL.md": {
+      "bytes": 5027,
+      "sha256": "af7966c0599bc2665075efaedb48ec5eb545d48d10d41ebab51bcb80e3ac68ac"
+    },
+    "historical-applicability/report.md": {
+      "bytes": 14460,
+      "sha256": "4b05df01bf54563d89d822905eeadd8c7f41a43354fc1d14f3826b3550c6dbf2"
+    },
+    "historical-applicability/run01.json": {
+      "bytes": 300207,
+      "sha256": "a6fc92220760a8a0b7068df6b9e7a68d7e04117ceeb6e9256482ca89a5418f4f"
+    },
+    "historical-applicability/verification.json": {
+      "bytes": 10478,
+      "sha256": "f47882436a23d060ac32d689028e6e4ee0d0dd8822b21e328975c2c0f06d4934"
+    },
+    "human-anchor-observations-2026-10-06.md": {
+      "bytes": 2290,
+      "sha256": "c07396b19f14e21bf81af57286bbdeb6867c9867ad009f6fd176d0f8bc6ffd92"
+    },
+    "human-legend-confirmation-2026-10-07.md": {
+      "bytes": 1793,
+      "sha256": "c0c1250c61ea8db022a28590836bc01a71637296fa6ee5406efd7e3f5fa5491b"
+    },
+    "manual-envelope-trial/report.md": {
+      "bytes": 7516,
+      "sha256": "d3f56c561acb6d5a3854724294e02f4c12ab595a405cf03a7ab3f38f6ed20186"
+    },
+    "manual-envelope-trial/source-applicability.json": {
+      "bytes": 1320,
+      "sha256": "8c8846474b252e036daa0e9d191617ed67f4c9fa8a0ba4904b301f820ea646b2"
+    },
+    "native-footprint-pass/REGIONS.json": {
+      "bytes": 3084,
+      "sha256": "ad6ec930f70e367028624bb3e497944147902b9817e5690e4980ea2ebeb2c131"
+    },
+    "native-footprint-pass/energy345/reader-E3-independent-corrected.json": {
+      "bytes": 316434,
+      "sha256": "d1bc331329ecf5eae6a9ac55708efde3d69653c5b3a6c2f9210301f1a3fc1d53"
+    },
+    "native-footprint-pass/energy345/reader-E3-independent.json": {
+      "bytes": 314637,
+      "sha256": "245b5ffe99b0481ab86e57c3bb7d1fccd7d1539a6ce004de967ec118d2e6c243"
+    },
+    "native-footprint-pass/energy345/reader-E3-root.json": {
+      "bytes": 432690,
+      "sha256": "b5a8133dc71a0b516d69a3283bc068d75ef083d91ad4727124f8c70a49fc217f"
+    },
+    "native-footprint-pass/energy345/reader-E4-independent.json": {
+      "bytes": 221803,
+      "sha256": "f7545fea9317bc7c24ec7b5f6e5d63bc5158e1a11b31b361fa29099d39976a01"
+    },
+    "native-footprint-pass/energy345/reader-E4-root.json": {
+      "bytes": 315773,
+      "sha256": "b1ad179b8cbd256e0cb01c9d79ac54778dccc6312698e38008399db6a93c9326"
+    },
+    "native-footprint-pass/energy345/reader-E5-independent.json": {
+      "bytes": 531294,
+      "sha256": "81f9d9d19a7fa827702ca118e8bc3f5d1d4cd8db95380fb765b7407f98a39f38"
+    },
+    "native-footprint-pass/energy345/reader-E5-root.json": {
+      "bytes": 462727,
+      "sha256": "68190d7db15e73a24b04c854c7c3bf5966cd92877550b49ce22ed2730723f536"
+    },
+    "native-footprint-pass/energy345/report-e45.md": {
+      "bytes": 7916,
+      "sha256": "861bda2e27e6c4c05c63dcc4279e2205e982f7bd3c74127473f170593d222e96"
+    },
+    "native-footprint-pass/energy345/report.md": {
+      "bytes": 9412,
+      "sha256": "1c6972e96bdc43bbd4983a0790606252de8f0477eaad0226e337bc697770221c"
+    },
+    "native-footprint-pass/energy345/verification-e45.json": {
+      "bytes": 11553,
+      "sha256": "8c7ca53e57252938f23317c559d8b574b33719511bd1777b273d22748b7ec1c6"
+    },
+    "native-footprint-pass/energy345/verification.json": {
+      "bytes": 5917,
+      "sha256": "b4e7a68dc1808cd38914dff0f5aea0e7037007aac55216837bf40a30675cbc3a"
+    },
+    "native-footprint-pass/energy89/reader-E8-independent.json": {
+      "bytes": 147809,
+      "sha256": "65d92369ea0d766f8260ac52f9b7c775cb09e732e76a6977b4ab406f498861c5"
+    },
+    "native-footprint-pass/energy89/reader-E8-root.json": {
+      "bytes": 216370,
+      "sha256": "d207e809439d24e7ab88e2d61872f36a91cac027ed3b3af3aa86d97e7effcc16"
+    },
+    "native-footprint-pass/energy89/reader-E9-independent.json": {
+      "bytes": 244424,
+      "sha256": "0f1df29307604fa6a3aa04b6b1bc2c5422e284a7542b67415aad4e5565d71dc7"
+    },
+    "native-footprint-pass/energy89/reader-E9-root.json": {
+      "bytes": 222569,
+      "sha256": "5c3a935c553215d364b1bb394ffe93e2d394bd329b63ba543157c8fc1ee44958"
+    },
+    "native-footprint-pass/energy89/report.md": {
+      "bytes": 8968,
+      "sha256": "d32c5b4bd8a1f46b6e3ea7f3113d3dfafbb5490e947e581ac8d3857169d6b0b5"
+    },
+    "native-footprint-pass/energy89/verification.json": {
+      "bytes": 14346,
+      "sha256": "2b61e05714e2d7669052f0dfc467f24e591fb0528a92995c2a6247f6f3611b25"
+    },
+    "native-footprint-pass/force45/reader-F4-Im4-peer.json": {
+      "bytes": 146821,
+      "sha256": "63dec672d9c97ee5e29b88aed6bebc6ae8d86f0d39a08ab8cadc68ad5c40b1f7"
+    },
+    "native-footprint-pass/force45/reader-F4-Im4-primary.json": {
+      "bytes": 188691,
+      "sha256": "efe923d01d0a91154cde9114bd6b4fac972735d49e42c10bd8f7cced3e36bc0b"
+    },
+    "native-footprint-pass/force45/reader-F5-Im2-peer.json": {
+      "bytes": 188563,
+      "sha256": "0ec257d1f95910ddcaf47a7e6512644a04f595688aaff9ea2eb84a2e16cfed36"
+    },
+    "native-footprint-pass/force45/reader-F5-Im2-primary.json": {
+      "bytes": 245167,
+      "sha256": "5757e0a203ec10a23e1b8739ace7feffc030a98436320a77498dc1d431e46cfb"
+    },
+    "native-footprint-pass/force45/reader-F5-Im4-peer.json": {
+      "bytes": 151962,
+      "sha256": "482f8b218c7e1b66e5fca5392720bcd5dcbd4662fd82a900406b55888121e733"
+    },
+    "native-footprint-pass/force45/reader-F5-Im4-primary.json": {
+      "bytes": 189796,
+      "sha256": "2074d58d5d581ed32ea0458c4b47473b2612b42fd0c045235f635e69c7ede84c"
+    },
+    "native-footprint-pass/force45/report.md": {
+      "bytes": 10127,
+      "sha256": "4c5a374a868e2e07553722f9f83eef1447fb692f5e31f84d7e13232ec8d1f777"
+    },
+    "native-footprint-pass/force45/verification.json": {
+      "bytes": 16367,
+      "sha256": "d02f5afd893e31e0398393e698933de70db1b6c68af095cf863ac688ea8ce28f"
+    },
+    "native-footprint-pass/force69/reader-F6-Im2-peer.json": {
+      "bytes": 248340,
+      "sha256": "7fd01971a7c43f6e3b27da672aa3b1f7b1cb1190ed9c1e517d66d224abdb4b4e"
+    },
+    "native-footprint-pass/force69/reader-F6-Im2-primary.json": {
+      "bytes": 328239,
+      "sha256": "b711f83b7e9d502e35283b60151c60d5ebc50c485c7fe5ed4bb95d028f9dffb7"
+    },
+    "native-footprint-pass/force69/reader-F7-Im1-peer.json": {
+      "bytes": 161999,
+      "sha256": "b9f6ac3d5cb8d686788927aeda0c602131e8cf89bc1b04852811334b7303cf6d"
+    },
+    "native-footprint-pass/force69/reader-F7-Im1-primary.json": {
+      "bytes": 202413,
+      "sha256": "d34281e933b382d777b759a7dc73ec633bd844d82b6d6fb8b1ea29c90629b275"
+    },
+    "native-footprint-pass/force69/reader-F7-Im2-peer.json": {
+      "bytes": 211441,
+      "sha256": "b7f50e58ea9d28cdeae44641dcc2ad6ba65a41045bd193d1c3d3a094c2314d4b"
+    },
+    "native-footprint-pass/force69/reader-F7-Im2-primary.json": {
+      "bytes": 264977,
+      "sha256": "760e0bef1068b4b09c2ea8c0f82e92fe9cf77df2c2f2798ee06bbe08ef69ccdc"
+    },
+    "native-footprint-pass/force69/reader-F8-Im1-peer.json": {
+      "bytes": 282273,
+      "sha256": "ac94485164d7ff36c39b6be45287abd9f3bc3ef9022ee11298bbf65e8f889a22"
+    },
+    "native-footprint-pass/force69/reader-F8-Im1-primary.json": {
+      "bytes": 359194,
+      "sha256": "bfda8cbc124d317a40b40fade731bf4de140bc788b47ca802961d6108a96b7c8"
+    },
+    "native-footprint-pass/force69/reader-F9-Im0-peer.json": {
+      "bytes": 141372,
+      "sha256": "81913ce599fc26ac2ba82b845fcdd80d95eb40d28a13ac5f628893e891adfc77"
+    },
+    "native-footprint-pass/force69/reader-F9-Im0-primary.json": {
+      "bytes": 185100,
+      "sha256": "f4a569da1e398e3d2e2a90728d07d97098d975d669f444f30c6df8139849b109"
+    },
+    "native-footprint-pass/force69/reader-F9-Im1-peer.json": {
+      "bytes": 199900,
+      "sha256": "c81af060aab34170c3739daaa033bfb44de1292578dff747bb9b9c1f314fb1ed"
+    },
+    "native-footprint-pass/force69/reader-F9-Im1-primary.json": {
+      "bytes": 254183,
+      "sha256": "d9865e569d6b1b14219b99c2e955754d42dfcf308ffbeb9c0222e72efc4c3373"
+    },
+    "native-footprint-pass/force69/report.md": {
+      "bytes": 14652,
+      "sha256": "95283f4b7a1c743c1fc1e34f1dc1c99d58140a268229fb082b29fc52ef379744"
+    },
+    "native-footprint-pass/force69/verification.json": {
+      "bytes": 27201,
+      "sha256": "d67e32306d6a09a106f9e93d24d00e24963187b91b3331afe6c124a1ad2c86af"
+    },
+    "native-footprint-pass/reader-E6-independent.json": {
+      "bytes": 153161,
+      "sha256": "27304b37ffad172602f114bd9cc852d4cba4c2214b9f77aa643dfebeb8fffb2e"
+    },
+    "native-footprint-pass/reader-E6-root.json": {
+      "bytes": 178287,
+      "sha256": "1a13f01b3e6820f4c36644d6369ed881f9ee342dab96ef4683dd5a75930b524e"
+    },
+    "native-footprint-pass/reader-E7-independent.json": {
+      "bytes": 131242,
+      "sha256": "090f3651e497f74d25826862b0c27468eb4f26d8385345470989dd1903013504"
+    },
+    "native-footprint-pass/reader-E7-root.json": {
+      "bytes": 108456,
+      "sha256": "8f929d7bd6154af3a715b6b739483fdc1d5d7e770106128071ad9bb9156adfca"
+    },
+    "native-footprint-pass/report.md": {
+      "bytes": 9159,
+      "sha256": "8642a2b59c17444f3eeb612f2526606e5bebfa7e0457ece46d6521d8b6b57f3e"
+    },
+    "native-footprint-pass/verification.json": {
+      "bytes": 6012,
+      "sha256": "10b003a9c535fae3d1bb950302ff41df5079690a9dbfe9ae9bee551fb82846aa"
+    },
+    "registration-comparison.md": {
+      "bytes": 7132,
+      "sha256": "27a3677c5f04016667493b7a69fdaeedb969b46a9b6296d266868c31db79c84b"
+    },
+    "registration-method-review.md": {
+      "bytes": 13053,
+      "sha256": "5bd9524fde013b46d1daa860553f262c11df1dffc196082cb8eb21340b530790"
+    },
+    "remaining-route-inventory/energy-reconciliation.json": {
+      "bytes": 2965,
+      "sha256": "df8d9ea63185d86c104be284a8437349cba420005b6a8f91817f3dc3f909ee96"
+    },
+    "remaining-route-inventory/force-reconciliation.json": {
+      "bytes": 2519,
+      "sha256": "9cb2c2003ab6eb014a665f1657fa2858dec9dffc383fbaa9e6e1fcef227e1222"
+    },
+    "remaining-route-inventory/reader-energy.json": {
+      "bytes": 56758,
+      "sha256": "91595d1d00c0dd7af10ac46e4a48bdad36abba8d3a979d4d9518cdfceaf49dce"
+    },
+    "remaining-route-inventory/reader-force.json": {
+      "bytes": 47501,
+      "sha256": "785eb5351c34c4bb7976333f9ecd8bf87d357165f315abfacf10bd7145df20d0"
+    },
+    "remaining-route-inventory/reader-root.json": {
+      "bytes": 30190,
+      "sha256": "4cf6791b358e89b19a47adfe0402d6825168a15b0060aea48d43e4eda4d22981"
+    },
+    "remaining-route-inventory/report.md": {
+      "bytes": 8080,
+      "sha256": "6b11307c467478130e9696f0fb28b603cef56ce00ad37b157ae1b96255f53e0b"
+    }
+  },
+  "artifact_check": {
+    "receipt": "c336bb",
+    "status": "passed",
+    "regions": 17,
+    "readings": 34,
+    "route_records": 10840,
+    "input_files": 75,
+    "checks": "All explicit target-box schemas and every route's complete native column sequence checked; F3 corridor checked by route+column and pinned protocol. Hashes/byte sizes captured; no source modifications."
+  },
+  "attempts": [
+    {
+      "receipt": "4ff3c4",
+      "exit_code": 1,
+      "result": "First read-only inventory assumed top-level target_box; stopped on older explicit coverage.target_box schema. No output file or scientific result.",
+      "resolution": "Read exact variants in dfe44c/a533e2. Successful c336bb uses explicit documented fields and rejects unsupported schemas."
+    }
+  ],
+  "independence": "Root reconciliation with separate read-only force and energy reviews; force review also used a bounded F3–F5 scope cross-check. Shared-source AI review, not human acceptance or professional validation.",
+  "next": "Make one finite source-specific bounds/identity admission decision from the saved footprints, using existing tested geometry/registration methods. Preserve conditional estimates separately from validated bounds, and retain each outside-target inventory item as measured, specifically unresolved, or pending recovery. Do not repeat finished pixel censuses or manufacture all-pair D to select convenient samples."
+}

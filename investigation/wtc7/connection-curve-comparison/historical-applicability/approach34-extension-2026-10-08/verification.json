@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-08",
+  "status": "version_2_verified_conditional_preparation_not_accepted_measurement",
+  "authoritative_result": "run-v2-01.json",
+  "identical_repeat": "run-v2-02.json",
+  "preserved_incomplete_provenance_version": ["run01.json", "run02.json"],
+  "human_accepted": false,
+  "common_support": null,
+  "model_discrepancies": null,
+  "cause_ranking_changed": false,
+  "artifact_sha256": {
+    "PROTOCOL.md": "c6c076c087df0d831e93f5680d8c5a1c4b653196fe2ab9731df17d69079d9590",
+    "PROTOCOL-V2.md": "8f7bfe352480c263437bb1e1ac7d9b6653c13a724d50a12dc01be53724f741a2",
+    "extend.py": "18f5862d014c5e9848cd6332da3929437c7ff93031e3ca255730d1f9e0dfc3f0",
+    "extend_v2.py": "285a0925a25cf4b49f02209777fe2961fc3c0eee0b8f9dcbe5c24d2a6785509d",
+    "test_extend.py": "64e89b9da53ce259c4415166afbdcdd9d3e9caab9d68bf004c49cf5188488981",
+    "test_extend_v2.py": "e9d4c14e317fc38976fef96d8d048e73e12c90bf91339622a4613542f1dd5ec9",
+    "run01.json": "eba3bb5fd8913751052c68b71d0efad3f8fd0da12977a579a85fd793c7406ce7",
+    "run02.json": "eba3bb5fd8913751052c68b71d0efad3f8fd0da12977a579a85fd793c7406ce7",
+    "run-v2-01.json": "1c307f8b41d9fb0e1fbe928d4ea1cc177c6bb923ac897ec608fdfae07349a4be",
+    "run-v2-02.json": "1c307f8b41d9fb0e1fbe928d4ea1cc177c6bb923ac897ec608fdfae07349a4be",
+    "independent_check.py": "c75f3707c48418bf9eaf44a861247953116c2d270ee9fdd26e3e3db18ddd6a9f",
+    "independent-check.json": "42cad3be04a8b88669584f567bb294c17edca7ffde306b9b4dd13828c04e593f",
+    "report.md": "1506179ae16a4f1b96e72fc4567f6fdeb10193d70fa63437d56aa2d67f1c54d2"
+  },
+  "report_context_sha256": {
+    "../../native-footprint-pass/approach34/report.md": "c238d5305f44fbf799b5ea6f3a1436ff9c65ded892c130ec73a114abbf040763"
+  },
+  "pin_scope": {
+    "producer_inputs": 131,
+    "complete_input_map": "run-v2-01.json:inputs and inputs_after, relative to connection-curve-comparison root",
+    "approach_recursive_dependency_files": 37,
+    "approach_recursive_json_nodes": 14,
+    "report_context": "Separately reviewed and pinned; not a producer-read numerical input or source of an otherwise absent parameter"
+  },
+  "coverage": {
+    "pairs": 14,
+    "completed_local_regions": 19,
+    "original_readings": 38,
+    "route_records": 12500,
+    "unchanged_old_readings": 34,
+    "unchanged_old_records": 10840,
+    "new_readings": 4,
+    "new_records": 1660,
+    "new_original_bands_preserved": 228,
+    "new_base_rectangles": 784,
+    "new_conditional_windows": 584,
+    "new_excluded_records": 1076,
+    "new_axis_hulls": 1168,
+    "combined_conditional_windows": 4499,
+    "combined_excluded_records": 8001,
+    "unchanged_non_E3_E4_pair_objects": 12,
+    "pairs_with_both_style_local_candidates": 14
+  },
+  "commands_and_receipts": [
+    {"command": "python3 -B -m unittest -v test_extend", "cwd": "this directory", "result": "8 tests pass before version-1 run", "receipt": "8ad933"},
+    {"command": "python3 -B -m unittest -v test_calculate", "cwd": "../conditional-envelopes-2026-10-08", "result": "12 unchanged prior tests pass", "receipt": "b48d73"},
+    {"command": "python3 -B extend.py run01; then separate invocation python3 -B extend.py run02", "cwd": "this directory", "result": "Both exclusive saves exit 0; later found incomplete transitive provenance checking", "receipts": ["cdc31b", "e9860b"]},
+    {"command": "cmp run01.json run02.json", "result": "exit 0, identical version-1 bytes", "receipt": "e9b5b0"},
+    {"operation": "Nonwriting version-1 build and exact canonical byte comparison with both saved copies", "result": "exact replay", "receipt": "96143a"},
+    {"operation": "Synthetic legacy-schema hazard: two declared members ignored by unadapted normalizer but retained/excluded through adapter", "result": "Expected distinction reproduced; no saved historical result uses unadapted new records", "receipt": "dc3b45"},
+    {"command": "python3 -B -m unittest -v test_extend_v2 test_extend", "cwd": "this directory", "result": "12 tests pass, comprising 4 wrapper and 8 adapter tests", "receipt": "0dbad0"},
+    {"command": "python3 -B extend_v2.py 01; then separate invocation python3 -B extend_v2.py 02", "cwd": "this directory", "result": "Both exclusive saves exit 0, 131 unchanged pins, substantive payload equals version 1", "receipts": ["785dd9", "988e8b"]},
+    {"command": "cmp run-v2-01.json run-v2-02.json", "result": "exit 0, identical 7033282-byte files", "receipt": "07404c"},
+    {"operation": "Nonwriting version-2 build and exact byte comparison with both saved version-2 copies; verify preserved version-1 hash", "result": "exact replay, version 1 preserved", "receipt": "f2801a"},
+    {"command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent_check.py --save", "cwd": "this directory", "result": "Exclusive receipt save after complete independent pass; 45 controls", "receipt": "45f6cd"},
+    {"operation": "Root reads full independent checker, runs check_all with bundled Python, asserts complete equality to saved independent-check.json", "result": "Exact receipt replay; every new decision/rectangle/hull and preservation check passes", "receipt": "e6e6f1"},
+    {"command": "git diff --check", "cwd": "investigation worktree", "result": "exit 0 at pre-final-document check; not a scientific validation", "receipt": "a2bb87"}
+  ],
+  "retained_failures": [
+    {
+      "version": 1,
+      "finding": "Transitive dependency receipt incomplete despite successful tests and repeatable numerical results",
+      "initial_omissions": ["native-footprint-pass/PROTOCOL.md", "native-footprint-pass/read_context.py", "native-footprint-pass/energy345/context01.json"],
+      "further_omissions_from_old_context": ["native-footprint-pass/energy345/PROTOCOL.md", "native-footprint-pass/energy345/read_context.py", "native-strips01/Im9.jpg"],
+      "independent_closure_receipt": "6fe4a1",
+      "resolution": "V2 audits all declared dependency maps before/after; all six currently match their declared pins. V1 code/results preserved and explicitly not fully verified. No observations, numerical rule or result repaired."
+    },
+    {
+      "stage": "independent checker preflight",
+      "failure_receipt": "844ac4",
+      "diagnostic_receipt": "763e0f",
+      "finding": "Checker additionally expected linked narrative report in producer input union",
+      "resolution": "Separate method review found no unique parameter/rule supplied by report. It is pinned as review context rather than a producer execution dependency; all declared dependencies and numerical checks remain required."
+    }
+  ],
+  "review": {
+    "method_reviewer": "conditional_bounds_review",
+    "scope": "Read-only protocol, code, frozen output, residual inventory and dependency checks; no fresh pixels or independent arithmetic claimed",
+    "disposition": "Six upstream omissions repaired in V2; all other preservation, scope and acceptance limits checked; report-context boundary independently reviewed",
+    "arithmetic_checker": "conditional_envelope_oracle",
+    "independence": "Own adapter and structural/dependency checks plus two pinned independent prior helpers; no producer classifier/mapping imports; old rows checked for exact preservation rather than recalculated again"
+  },
+  "environment": {
+    "producer_python": {"path": "/opt/homebrew/opt/python@3.14/bin/python3.14", "version": "3.14.0", "receipt": "4dfee3"},
+    "checker_python": {"path": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3", "version": "3.12.14", "pillow_import_version": "12.3.0", "receipt": "debf63"},
+    "image_decoding_in_extension": false,
+    "browser_validation": "Not applicable; no UI change"
+  },
+  "final_document_checks": [
+    {"operation": "Parse verification manifest, verify all 14 listed artifact/context hashes, check all 11 report links and whitespace in new source/docs", "result": "all pass", "receipt": "440614"},
+    {"operation": "Resolve current navigation links in STATUS, technical preparation and research map", "result": "all 37 checked links resolve", "receipt": "219c51"},
+    {"command": "git diff --check", "result": "exit 0 after navigation and feedback updates", "receipt": "6a511c"}
+  ],
+  "limits": [
+    "Conditional arithmetic does not validate Hidentity, Hsupport or Hink0",
+    "All original disagreements, bands, local fragment identities and separate target boundaries remain",
+    "Counts are annotation coverage, not independent observations, continuous support or model error",
+    "All fourteen-pair outside-target obligations and 42 paired human slots remain; axes/legend confirmation is not curve acceptance",
+    "No new historical solver, accepted engine state, legal promotion, disclosure, commit or push"
+  ]
+}

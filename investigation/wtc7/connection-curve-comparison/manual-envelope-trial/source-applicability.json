@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-07",
+  "status": "encoded_metadata_comparison_only",
+  "source_scope": "All twelve unchanged ../native-strips01/Im0.jpg through Im11.jpg. Pins retained in ../remaining-route-inventory/independent-check.json and rechecked in that unit's final verification.",
+  "trial_reference": "run01/packet/T03.jpg, pinned in run01/manifest.json",
+  "method": "Pillow Image.open, compare .quantization dictionaries and JpegImagePlugin.get_sampling for each native strip against trial JPEG50/subsampling2. No re-encoding, decoding-based quality estimator or curve measurement.",
+  "results": {
+    "native_files_checked": 12,
+    "native_sampling_codes": [2,2,2,2,2,2,2,2,2,2,2,2],
+    "trial_sampling_code": 2,
+    "same_quantization_tables_as_trial": [false,false,false,false,false,false,false,false,false,false,false,false]
+  },
+  "execution": {"command": "python3 -B - (inline metadata comparison)", "receipt": "9c6011", "exit_code": 0},
+  "inference_limit": "Shared subsampling does not establish a matched raster-generation process. Different quantization tables do not by themselves establish worse quality or failure of the method. Neither property identifies the original stroke geometry, earlier compression history or physical model identity. Synthetic coverage is not automatic historical coverage."
+}

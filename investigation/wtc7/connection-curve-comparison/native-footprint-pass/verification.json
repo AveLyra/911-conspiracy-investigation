@@ -1,0 +1,71 @@
+{
+  "stage": "E6_E7_fixed_native_annotation_batch_complete_research_only",
+  "date_local": "2026-10-07",
+  "worktree": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation",
+  "branch": "research/sherlock-wtc7-investigation",
+  "base_head": "ca1c223335c20905d6608eb15c676f88cbfac734",
+  "scope": "Two fixed terminal regions, 570 paired entries and 1140 preserved reader records. Not the entire fourteen-pair pass or full physical support inventory.",
+  "source_and_context": {
+    "source_sha256": "0c49df5f6117d3f0e9b206d7c3352edf57849e4ac00ef9764b857b1445947d83",
+    "protocol_sha256": "2066edbe4f36d4eeb8e3be1695fdd72fe32f9649d779ea897e5e63358cb4fdbd",
+    "regions_sha256": "ad6ec930f70e367028624bb3e497944147902b9817e5690e4980ea2ebeb2c131",
+    "context01_and_context02_sha256": "b611904d9f065dcd23860e7bca998b26a07b6c0196b20dd5af9d3b1e854cadfb",
+    "prior_independent_context_check": "context-independent-check.json",
+    "prior_independent_context_check_sha256": "1907c06961f35ad093ec959d213ad35dee531c33a3fc9cf86f17e476912cba04",
+    "cells_checked": 8008,
+    "limits": "Prior complete native-cell and lossless-display check reused explicitly. Same Pillow decoder; no independent codec validation. Reading coverage remains each reader's attestation."
+  },
+  "frozen_readers": {
+    "reader-E6-root.json": "1a13f01b3e6820f4c36644d6369ed881f9ee342dab96ef4683dd5a75930b524e",
+    "reader-E6-independent.json": "27304b37ffad172602f114bd9cc852d4cba4c2214b9f77aa643dfebeb8fffb2e",
+    "reader-E7-root.json": "8f929d7bd6154af3a715b6b739483fdc1d5d7e770106128071ad9bb9156adfca",
+    "reader-E7-independent.json": "090f3651e497f74d25826862b0c27468eb4f26d8385345470989dd1903013504"
+  },
+  "code_sha256": {
+    "validate_reconcile.py": "59a763e3373ddfb1c4c130ec78f467b0c8ab563a55a9b18c100c8e02a9591543",
+    "test_validate_reconcile.py": "9636fc4ab0b2f029de976c32c762b926f6e07af3010ece55f7410c10ece61919",
+    "independent_reconcile_check.py": "76f8118936b2a9da1654ab389d8b5bfaf23391d0ebb84333d1f10b18c30f9d18",
+    "reader-E6-root.py": "fb6416cdb4bcade2e519259b3acd8ca21cc6bf803bd849475c8a59a7f0cfc75c",
+    "reader-E7-root.py": "0ef4b2efc4e210b1c2376db563265b9b3e58c56636fd80d9dae12bc28d1bf4c5",
+    "reader-E6-independent.py": "5fd63bfd995df4ebc2c8c51189e93d340521932d91edaa6ef18d986ba3158a88"
+  },
+  "root_python": "/Users/admin/.pyenv/versions/3.13.7/bin/python3",
+  "working_directory": "research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass",
+  "executions": [
+    {"arguments": ["-B", "reader-E7-root.py"], "receipt": "a132d8", "exit_code": 0, "records": 220},
+    {"arguments": ["-B", "reader-E6-root.py"], "receipt": "66f919", "exit_code": 0, "records": 350},
+    {"arguments": ["-B", "-m", "unittest", "-v", "test_validate_reconcile.py"], "receipt": "56d5f9", "exit_code": 0, "tests_passed": 13, "before_historical_comparison": true},
+    {"arguments": ["-B", "validate_reconcile.py", "--root", "reader-E6-root.json", "--peer", "reader-E6-independent.json", "--pair", "E6", "--output", "E6-reconciliation01.json"], "receipt": "e2025c", "exit_code": 0},
+    {"arguments": ["-B", "validate_reconcile.py", "--root", "reader-E6-root.json", "--peer", "reader-E6-independent.json", "--pair", "E6", "--output", "E6-reconciliation02.json"], "receipt": "d39ec7", "exit_code": 0},
+    {"arguments": ["-B", "validate_reconcile.py", "--root", "reader-E7-root.json", "--peer", "reader-E7-independent.json", "--pair", "E7", "--output", "E7-reconciliation01.json"], "receipt": "926406", "exit_code": 0},
+    {"arguments": ["-B", "validate_reconcile.py", "--root", "reader-E7-root.json", "--peer", "reader-E7-independent.json", "--pair", "E7", "--output", "E7-reconciliation02.json"], "receipt": "d49f6f", "exit_code": 0},
+    {"arguments": ["-B", "independent_reconcile_check.py", "check"], "receipt": "97f080", "exit_code": 0, "synthetic_controls_passed": 14, "literal_annotation_records_checked": 1140, "set_operations_checked": 8550, "note": "Root replay; output piped through jq with pipefail only to limit display. Agent's preceding full saved check receipt8fdc37 also exited0."}
+  ],
+  "comparison_output_sha256": {
+    "E6-reconciliation01.json": "54a34943a6b08aaee0b36fa0e4e0c5bd48c3d81307d3ff143b0e306f8f488fd1",
+    "E6-reconciliation02.json": "54a34943a6b08aaee0b36fa0e4e0c5bd48c3d81307d3ff143b0e306f8f488fd1",
+    "E7-reconciliation01.json": "1ee237c9f84858e6c9489b5630dd751b2dce1840d0492e30d691834fcf3c28b9",
+    "E7-reconciliation02.json": "1ee237c9f84858e6c9489b5630dd751b2dce1840d0492e30d691834fcf3c28b9"
+  },
+  "independent_result": {
+    "path": "independent-reconciliation-check.json",
+    "sha256": "7ce9af1495facf6808d429cbb514f9fcaaf8a15b5d022b2a3f1c6d88c76aa64d",
+    "status": "passed_independent_reconciliation_verification",
+    "independence_limit": "Separate implementation without producer/reader imports; author also supplied the independent E7 annotation. Not a third visual reading, blind verification, new historical source or professional review."
+  },
+  "critical_review": {
+    "receipt": "6d7e7f",
+    "exit_code": 0,
+    "scope": "Checked report counts, repeated bytes/hashes, actual schema semantics and inference boundaries; opening narrowed to reader-attested view/freeze chronology.",
+    "limit": "Reviewer authored comparison code; this is not the independent arithmetic implementation."
+  },
+  "next": "Frozen roster batch E3/E4/E5, followed by remaining declared regions and separate bounds/identity/support decisions. Do not reannotate completed E6/E7 or F3 corridor. Full supported-domain inventory and actual human samples remain open.",
+  "human_accepted": false,
+  "physical_measurement_admitted": false,
+  "cause_ranking_changed": false,
+  "engine_state_changed": false,
+  "legal_record_changed": false,
+  "feedback": "Deduplicated generic note updated locally; designated Sherlock task remains archived with routing decision pending. No delivery or fix claimed.",
+  "commit_or_push": false,
+  "full_goal_complete": false
+}

@@ -1,0 +1,34 @@
+{
+  "status": "exploratory_identity_conflicts_not_admitted_support",
+  "execution_receipt": "082ef5",
+  "method": "Single AI selected crest/tail regions after native inspection. Same neutral-pixel rule as F3 Im4: RGB chroma<=32 and 255-max>=32,64,96; SciPy eight-connected components, all retained. No threshold chosen as best.",
+  "tuple_fields": ["pixel_count","x_min","y_min","x_max","y_max"],
+  "regions": [
+    {
+      "source": "native-strips01/Im3.jpg",
+      "source_sha256": "af735345f189bba0eab7a836c5c0c6221ab30055febd81b52b331821fe87259b",
+      "box_half_open": [200,60,305,88],
+      "thresholds": {
+        "32": [[203,205,66,274,87],[1,211,68,211,68],[10,224,84,228,87],[20,230,80,237,84],[15,240,78,246,80],[15,249,77,255,79],[18,276,80,283,82],[20,285,79,292,84],[5,294,86,297,87]],
+        "64": [[160,205,67,273,87],[9,224,85,228,87],[14,231,80,237,83],[12,240,78,246,79],[14,249,77,255,79],[16,276,80,283,82],[15,286,79,292,84],[3,294,87,296,87]],
+        "96": [[138,205,67,273,87],[8,224,85,227,87],[9,231,81,236,83],[11,240,78,246,79],[12,249,78,255,79],[12,277,80,282,82],[14,286,80,292,84],[3,294,87,296,87]]
+      },
+      "interpretation": "Visual same-color approach/crossing near the crest. One long connected component cannot prove one model owns all its pixels. Small fragments remain candidates; no identity is propagated through the meeting region. Threshold32 also retains a single isolated pixel; it is not silently discarded."
+    },
+    {
+      "source": "native-strips01/Im5.jpg",
+      "source_sha256": "337e5f14ad7bddd0642e5f8327988ae41834042b1374b666242ea7a37ee03721",
+      "box_half_open": [320,0,400,34],
+      "thresholds": {
+        "32": [[428,320,0,399,32],[7,356,0,359,1],[18,361,3,366,9],[17,369,10,373,17]],
+        "64": [[380,320,0,399,32],[5,357,0,359,1],[16,361,3,366,9],[13,369,11,373,16],[14,376,18,381,24]],
+        "96": [[341,320,0,399,32],[4,357,0,359,1],[12,362,3,366,8],[12,369,11,373,16],[12,376,19,381,24]]
+      },
+      "interpretation": "The long component includes the visible axis/tick system and reaches both horizontal region limits. It is not a valid whole curve. A short component separated at thresholds64/96 merges at32; therefore connectivity-based endpoints depend on threshold. No physical terminal zero or failure displacement is inferred."
+    }
+  ],
+  "human_reviewed": false,
+  "independent_recovery": false,
+  "quantitative_support": null,
+  "limits": ["Regions are exploratory source-inspection locators, not the final quantile-selected review slots.","Bounding boxes include blank space; they are not stroke masks or uncertainty bounds.","No spring/shell difference, model validity, actual connection capacity or collapse-cause conclusion."]
+}

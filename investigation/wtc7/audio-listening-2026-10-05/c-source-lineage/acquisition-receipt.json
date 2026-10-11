@@ -1,0 +1,59 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=SIbqaybkbWI",
+  "acquired_date_utc": "2026-10-07",
+  "metadata": "sources/SIbqaybkbWI-metadata.json",
+  "tool_receipt": "sources/pinned-metadata-receipt.json",
+  "limits": {
+    "max_bytes_per_file": 10485760,
+    "max_seconds_per_call": 90,
+    "max_source_seconds": 60,
+    "no_authentication": true,
+    "no_cookies": true,
+    "no_overwrite": true,
+    "no_info_json": true
+  },
+  "first_call": {
+    "formats": "133,140",
+    "exit_code": 0,
+    "warning": "No supported JavaScript runtime could be found; format enumeration may be incomplete.",
+    "deviation": "Default FixupM4a corrected the audio container despite the no-remux plan. First audio file retained as transformed copy."
+  },
+  "correction": {
+    "format": "140",
+    "fixup": "never",
+    "exit_code": 0,
+    "new_output": "media/SIbqaybkbWI.f140.unmodified.m4a",
+    "warning": "No supported JavaScript runtime could be found; format enumeration may be incomplete."
+  },
+  "files": [
+    {
+      "path": "media/SIbqaybkbWI.f133.mp4",
+      "role": "downloaded video format133, no fixup reported",
+      "bytes": 758909,
+      "sha256": "3f6db089b0e89cdfc030f6aaaf81227931681d26e0bd3c801b98cdcf486ba0d7"
+    },
+    {
+      "path": "media/SIbqaybkbWI.f140.m4a",
+      "role": "first audio acquisition after automatic local container fixup, not raw source bytes",
+      "bytes": 611449,
+      "sha256": "2b5393d4e988ea091d30afe414e303e58ae109bb13058aac24688581a5a2a0fe"
+    },
+    {
+      "path": "media/SIbqaybkbWI.f140.unmodified.m4a",
+      "role": "separate reacquisition with fixup disabled; selected analysis source",
+      "bytes": 611813,
+      "sha256": "0776b39a597f236c85b98b0f1dd3931cb654ab08c967d508d5bfa6fc64f145ef"
+    }
+  ],
+  "pcm_check": {
+    "method": "ffmpeg full-file decode with -map 0:a:0 -vn -c:a pcm_f32le -f f32le pipe:1; no gain/resample/filter",
+    "channels": 2,
+    "sample_rate": 44100,
+    "both_decoder_exit_codes": 0,
+    "both_stderr_bytes": 0,
+    "each_decoded_bytes": 13320192,
+    "each_decoded_sha256": "02f331bf914c5eadab6831e2f27410fa6240f5cf7c840dd16158e390caf0b9c5",
+    "meaning": "Same decoded PCM under this decoder, not byte-identical containers, historical authenticity, listening or equivalence to compilation audio"
+  },
+  "historical_authentication": false
+}

@@ -1,0 +1,89 @@
+{
+  "status": "passed_with_retained_environment_attempt_history",
+  "record_type": "agent_record_of_observed_tool_results_not_a_test_runner_generated_report",
+  "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/energy345",
+  "runtime": {"python": "3.12.14", "pillow": "12.3.0"},
+  "checker_sha256": "1bf56c08320f66d0dd13b41a670a1a19a77b8d8b5b2832cb5ed2c17b437ae055",
+  "test_sha256": "9beadef3c05c9fcc6988a350a3ae77fb1c111c2c604e652a64cec9df6176c976",
+  "final_runs": [
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_e45.py",
+      "tool_chunk_id": "076054",
+      "exit_code": 0,
+      "tests": 11,
+      "result": "Ran 11 tests in 3.317s; OK",
+      "scope": "15 scalar controls; validation fault injection; every comparison operation corrupted separately; literal AST refusal; E4/E5 complete semantic replays; fringe-only boundary and coexistence controls. No reader/comparator module imported or executed."
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-e45-check.py --output independent-comparison-e45-check01.json",
+      "tool_chunk_id": "3b6650",
+      "exit_code": 0,
+      "output_sha256": "9c0136651ce958fb794ed1c333e0e5ba8a2c5bd1921c2ea4e5d84e0e17f9bd1b",
+      "output_bytes": 21199,
+      "result": "passed_independent_E4_E5_computational_check"
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-e45-check.py --output independent-comparison-e45-check02.json",
+      "tool_chunk_id": "a5878b",
+      "exit_code": 0,
+      "output_sha256": "9c0136651ce958fb794ed1c333e0e5ba8a2c5bd1921c2ea4e5d84e0e17f9bd1b",
+      "output_bytes": 21199,
+      "result": "passed_independent_E4_E5_computational_check"
+    },
+    {
+      "command": "cmp independent-comparison-e45-check01.json independent-comparison-e45-check02.json",
+      "tool_chunk_id": "3d0db2",
+      "exit_code": 0,
+      "result": "Exact byte equality, with matching SHA256 and length."
+    }
+  ],
+  "earlier_attempts": [
+    {
+      "command": "python3 -B independent-comparison-e45-check.py --controls",
+      "tool_chunk_id": "b2eddf",
+      "exit_code": 1,
+      "result": "System Python raised ModuleNotFoundError: No module named PIL before controls ran.",
+      "resolution": "Used the existing bundled runtime already recorded in the prior E3/context checks. No installation, source alteration or relaxed criterion."
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-e45-check.py --controls",
+      "tool_chunk_id": "e79dda",
+      "exit_code": 0,
+      "result": "15 scalar controls passed before E5 replay was added. Final full tests repeat these controls."
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_e45.py",
+      "tool_chunk_id": "339bb2",
+      "exit_code": 0,
+      "result": "Earlier nine-test version passed before the two E5 tests were added. Final eleven-test result supersedes coverage, not source evidence."
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-e45-check.py --output independent-comparison-e45-check01.json",
+      "tool_chunk_id": "6a5c4b",
+      "exit_code": 1,
+      "result": "All computational checks completed, then sandbox denied opening the new output path with PermissionError. No receipt was written by this attempt.",
+      "resolution": "Same command rerun with reviewed permission to create the local receipt in the authorized investigation worktree; successful chunk3b6650. No code/input change."
+    }
+  ],
+  "read_only_navigation_mistakes": [
+    "A read_context.py inspection initially used the main cwd instead of the worktree target and returned no such file; corrected by supplying the target cwd.",
+    "A search included two nonexistent relative documentation paths; the needed existing runtime path was found in the preserved context/checker receipts.",
+    "A final scoped git-status request repeated the repository-relative path from inside the target directory and warned of a nonexistent path; no modification or verification conclusion followed from that request."
+  ],
+  "verification_counts": {
+    "reader_route_records": 2180,
+    "reader_unassigned_records": 881,
+    "paired_route_records": 1090,
+    "visible_ink_columns": 545,
+    "independently_computed_set_operations": 24525,
+    "fresh_context_cells": 15455,
+    "selected_cells_checked": 3582,
+    "selected_exact_white_cells": 0,
+    "semantic_replay_exclusions": 0
+  },
+  "limits": [
+    "Same-source nonblind AI computational check, not a separate visual reading or codec implementation.",
+    "No source classification, physical acceptance, model discrepancy, cause or intent finding.",
+    "Preserved readings retain all disagreements; no annotation was repaired or overwritten."
+  ]
+}

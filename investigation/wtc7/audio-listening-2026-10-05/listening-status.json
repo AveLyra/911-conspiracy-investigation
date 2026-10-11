@@ -1,0 +1,25 @@
+{
+  "scope": "Four held full-decode excerpts; research only",
+  "session_audio_capability": "not_established_explicit_audio_input_omission",
+  "historical_listening_passes_this_unit": 0,
+  "human_review_requested_this_unit": true,
+  "human_review_received_this_unit": true,
+  "human_review_scope": "Partial: A rough transcript; B partial sound/speech observation; C approximate noise/bang/dialogue markers; D untimed report of several explosion sounds. No complete protocol coverage inferred.",
+  "human_response_record": ["human-spoken-transcript-2026-10-05.md", "human-listening-response-B-2026-10-05.md", "human-listening-response-CD-2026-10-07.json"],
+  "machine_speech_transcription": {"scope": "Excerpt A only", "report": "local-asr/report.md", "status": "two_gpu_runs_byte_identical_with_unresolved_wording", "cpu_attempt": "600_second_timeout_no_transcript", "human_listening_substitute": false, "acoustic_event_detection": false},
+  "additional_machine_speech_transcription": {"scope": "B/C/D", "report": "local-asr/BCD-REVIEW.md", "status": "two_identical_gpu_runs_per_clip_unreviewed", "human_reviewed": false, "acoustic_event_detection": false, "empty_or_ellipsis_output_means_silence": false},
+  "historical_listening_passes_field_scope": "Agent listening through the tested audio-content route; not a count of the user's listening",
+  "events": null,
+  "latest_reported_event_video_join":"c-event-av-join-2026-10-07.json",
+  "full_C_visual_extension":{"report":"c-full-visual-review/report.md","status":"declared_screening_and_separate_computational_review_complete","historical_frames":750,"native_frames_viewed_per_reviewer":28,"source_interval_half_open_seconds":[430,455],"original_audio_video_sync_established":false,"sound_source_identified":false},
+  "events_null_reason": "Complete accepted event inventory remains unavailable. Human observations now exist for A/B/C/D; C/D candidate records are in human-listening-response-CD-2026-10-07.json. Null is not zero events or no human response.",
+  "windows": [
+    {"id": "A", "file": "spoken-stereo.wav", "source_id": "VID-WTC7-007", "source_start_seconds": 58, "source_end_seconds_exclusive": 76, "duration_seconds": 18, "listening_status": "human_listening_and_rough_speech_transcript_received", "complete_passes": null, "complete_passes_null_reason": "Exact count and uninterrupted coverage not specified; transcript reaches indicated end", "human_local_speech_markers_seconds": [2, 4, 7, 14, 15], "marker_uncertainty": "Rough markers; no calibrated interval supplied"},
+    {"id": "B", "file": "msnbc-stereo.wav", "source_id": "VID-WTC7-007", "source_start_seconds": 578, "source_end_seconds_exclusive": 616, "duration_seconds": 38, "listening_status": "human_partial_observation_received", "complete_passes": null, "complete_passes_null_reason": "User described the opening ~2 seconds and a later anchor passage, but did not specify a complete uninterrupted pass or number of passes", "human_response_record": "human-listening-response-B-2026-10-05.md", "reported_sound_description": "Loud white noise and screams within approximately the first two seconds; user reports an edit/cut, followed by anchor speech saying they thought they heard another explosion, possibly a truck", "user_tentative_interpretation": "Potentially indicates multiple explosions; not established because the initial noise is not source-identified and the anchor describes an uncertain possible sound", "event_inventory_complete": false},
+    {"id": "C", "file": "edited-stereo.wav", "source_id": "VID-WTC7-007", "source_start_seconds": 430, "source_end_seconds_exclusive": 455, "duration_seconds": 25, "listening_status": "human_approximate_event_markers_received", "complete_passes": null, "human_response_record":"human-listening-response-CD-2026-10-07.json", "event_inventory_complete":false},
+    {"id": "D", "file": "comparator-stereo.wav", "source_id": "VID-DEM-002", "source_start_seconds": 8, "source_end_seconds_exclusive": 25, "duration_seconds": 17, "listening_status": "human_untimed_sound_description_received", "complete_passes": null, "human_response_record":"human-listening-response-CD-2026-10-07.json", "event_inventory_complete":false}
+  ],
+  "cause_ranking_changed": false,
+  "accepted_sherlock_finding": false,
+  "legal_promotion": false
+}

@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-frame-correspondence/dv-metadata/collect_dv.py", line 191, in <module>
+    main()
+    ~~~~^^
+  File "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-frame-correspondence/dv-metadata/collect_dv.py", line 177, in main
+    result = collect(source/item["path"], frames)
+  File "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-frame-correspondence/dv-metadata/collect_dv.py", line 146, in collect
+    "metadata": compress_metadata(bytes(retained))}
+                ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-frame-correspondence/dv-metadata/collect_dv.py", line 93, in compress_metadata
+    require(len(encoded) <= 1024*1024, "compressed metadata limit")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-frame-correspondence/dv-metadata/collect_dv.py", line 29, in require
+    raise ValueError(message)
+ValueError: compressed metadata limit

@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-07",
+  "independence": "Separate read-only reviewer checked source leads; reports below summarize tool outcomes rather than preserve HTTP bodies.",
+  "reviewer": "/root/quiet_mechanism_inference_review",
+  "attempts": [
+    {
+      "target": "https://www.youtube.com/watch?v=O0L5uyqIf0g",
+      "method": "web reader",
+      "result": "Cache miss; no page content"
+    },
+    {
+      "target": "http://www.11-septembre.com/web/terrorize.dk/911/wtc7dem2/index.html",
+      "method": "web reader",
+      "result": "Reader normalized to HTTPS, then inaccessible; did not establish HTTP endpoint failure"
+    },
+    {
+      "target": "YouTube oEmbed for O0L5uyqIf0g",
+      "method": "web reader",
+      "result": "Cache miss; no metadata"
+    },
+    {
+      "target": "Internet Archive CDX catalog for exact older mirror page",
+      "method": "web reader",
+      "result": "Catalog endpoint inaccessible to reader; no capture listing"
+    }
+  ],
+  "exact_search_queries": [
+    "\"O0L5uyqIf0g\"",
+    "\"http://www.11-septembre.com/web/terrorize.dk/911/wtc7dem2/index.html\"",
+    "\"terrorize.dk/911/wtc7dem2\""
+  ],
+  "search_result": "Combined response returned no results; bounded coverage, not absence.",
+  "root_initial_watch_open": "Fetch error for SIbqaybkbWI, not a retrieved deletion or privacy notice",
+  "root_exact_search_query": "\"SIbqaybkbWI\"",
+  "root_search_result": "Secondary advocacy-document references to the same video ID; no primary page metadata confirmed through search.",
+  "supersession": "Root's direct public requests later obtained metadata for SIbqaybkbWI, HTTP404 for literal older-page URL, and HTTP403 for the other ID's oEmbed. Those responses are preserved separately.",
+  "media_acquired_by_reviewer": false
+}

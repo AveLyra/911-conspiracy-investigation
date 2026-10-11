@@ -1,0 +1,359 @@
+{
+  "annotations": {
+    "reader-E3-peer.json": {
+      "band_records": 51,
+      "band_status_counts": {
+        "boundary_truncated": 6,
+        "fringe_only": 19,
+        "identified_local_fragment": 26
+      },
+      "multiple_band_columns": 0,
+      "read_receipt_blocks": 15,
+      "route_records": 340,
+      "selected_exact_white_count": 0,
+      "two_literal_builds_and_saved_bytes_equal": true
+    },
+    "reader-E3-primary.json": {
+      "band_records": 54,
+      "band_status_counts": {
+        "identity_conflict": 54
+      },
+      "multiple_band_columns": 0,
+      "read_receipt_blocks": 7,
+      "route_records": 340,
+      "selected_exact_white_count": 0,
+      "two_literal_builds_and_saved_bytes_equal": true
+    },
+    "reader-E4-peer.json": {
+      "band_records": 50,
+      "band_status_counts": {
+        "boundary_truncated": 7,
+        "identity_conflict": 43
+      },
+      "multiple_band_columns": 0,
+      "read_receipt_blocks": 11,
+      "route_records": 490,
+      "selected_exact_white_count": 0,
+      "two_literal_builds_and_saved_bytes_equal": true
+    },
+    "reader-E4-primary.json": {
+      "band_records": 73,
+      "band_status_counts": {
+        "identity_conflict": 73
+      },
+      "multiple_band_columns": 5,
+      "read_receipt_blocks": 13,
+      "route_records": 490,
+      "selected_exact_white_count": 0,
+      "two_literal_builds_and_saved_bytes_equal": true
+    }
+  },
+  "comparisons": {
+    "E3": {
+      "routes": {
+        "class_different": 51,
+        "entries": 340,
+        "outer_different": 40
+      },
+      "selected_exact_white_cells": {
+        "peer": [],
+        "primary": []
+      },
+      "status_different": 16,
+      "visible_ink": {
+        "class_different": 50,
+        "entries": 170,
+        "outer_different": 31
+      }
+    },
+    "E4": {
+      "routes": {
+        "class_different": 99,
+        "entries": 490,
+        "outer_different": 91
+      },
+      "selected_exact_white_cells": {
+        "peer": [],
+        "primary": []
+      },
+      "status_different": 28,
+      "visible_ink": {
+        "class_different": 120,
+        "entries": 245,
+        "outer_different": 101
+      }
+    }
+  },
+  "contexts": {
+    "E3_records": 10266,
+    "E4_records": 22908,
+    "between_region_intersection": 10266,
+    "context_repeat_byte_equal": true,
+    "old_E3_terminal_context_overlap_verified": 116,
+    "old_overlap_is_context_only": true,
+    "records_checked_across_two_runs": 66348,
+    "records_per_context_run": 33174,
+    "unique_source_cells": 22908
+  },
+  "coverage": {
+    "band_records": 228,
+    "comparison_files": 4,
+    "operation_arrays_checked": 37350,
+    "original_annotations": 4,
+    "route_records": 1660
+  },
+  "environment": {
+    "executable": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "pillow": "12.3.0",
+    "python": "3.12.14"
+  },
+  "failures_and_repairs": [
+    "Preflight system python3 lacked PIL (receipt 721f30); bundled Python used. No source or annotation repaired.",
+    "First --save completed checks but receipt creation was denied by the exec filesystem sandbox (PermissionError, receipt f549df). No receipt was created; exact local save requested through sandbox escalation."
+  ],
+  "independence": "Checker author did not annotate this batch. Raw source bytes/RGB, schema and 92-bit arithmetic independently checked; four frozen reader builds imported only for replay. No compare/read_context/force helper imported.",
+  "inputs": {
+    "../../native-strips01/Im10.jpg": {
+      "bytes": 9704,
+      "sha256": "fe8c069f4bb7a19f6eb996b42b266c55552a110f8e9cbc6e9cc0d7269547cdd3"
+    },
+    "../../render01/page-076.png": {
+      "bytes": 943120,
+      "sha256": "0835db6f0a138f5ddebfd6c4c81a857fda6e2da36379eeee1acbc3b5a9a6baf6"
+    },
+    "../PROTOCOL.md": {
+      "bytes": 5438,
+      "sha256": "2066edbe4f36d4eeb8e3be1695fdd72fe32f9649d779ea897e5e63358cb4fdbd"
+    },
+    "../energy345/context01.json": {
+      "bytes": 3276538,
+      "sha256": "59cef4cee1a54d66dacd4e2846e12a12d7b47c8091285ae8f68d8899bf6f2e48"
+    },
+    "../force45/compare_force45.py": {
+      "bytes": 11626,
+      "sha256": "932792f49797c4034beb1124d8174a56c911319e17fa536e199f0709950557be"
+    },
+    "../force69/compare_force69.py": {
+      "bytes": 8802,
+      "sha256": "f332359911f4d7bf5e768bf9e36b37ddb6995e857f6cf7ae5fa5456bb6dd4a6e"
+    },
+    "../read_context.py": {
+      "bytes": 4951,
+      "sha256": "da7d46400de924b75773646f34b7fba1d2284b50736d25395bb0a1c71e629c18"
+    },
+    "PROTOCOL.md": {
+      "bytes": 4971,
+      "sha256": "cc94c588f9b132318c7ca55fcffe1ed7eafbb92fd131583ffcbc74a13e5e54b7"
+    },
+    "READERS.md": {
+      "bytes": 2802,
+      "sha256": "6a019e587d1cdb47303047c5c03dbae4d9c347941a8227f27a7a8e0b8dfd0b5b"
+    },
+    "compare.py": {
+      "bytes": 13177,
+      "sha256": "cb4a2da60959a4b0a40ddb4a072c1cbedf4624da63daf1a50b37db0eb2dd5bac"
+    },
+    "comparison-E3-01.json": {
+      "bytes": 1484006,
+      "sha256": "717dbadc44f355203eefc97de7cb7b4ad3fcc52a1b5f8cfb80ccaa4b00181d76"
+    },
+    "comparison-E3-02.json": {
+      "bytes": 1484006,
+      "sha256": "717dbadc44f355203eefc97de7cb7b4ad3fcc52a1b5f8cfb80ccaa4b00181d76"
+    },
+    "comparison-E4-01.json": {
+      "bytes": 2078635,
+      "sha256": "7976abc5dc6e73f774d79557c22f8eef78ab91901353d823b5690d505870f5da"
+    },
+    "comparison-E4-02.json": {
+      "bytes": 2078635,
+      "sha256": "7976abc5dc6e73f774d79557c22f8eef78ab91901353d823b5690d505870f5da"
+    },
+    "context01.json": {
+      "bytes": 4074111,
+      "sha256": "783cd6f756918cef8a70ea79d925d7b010554b535f8d8f654970605d1c8b9095"
+    },
+    "context02.json": {
+      "bytes": 4074111,
+      "sha256": "783cd6f756918cef8a70ea79d925d7b010554b535f8d8f654970605d1c8b9095"
+    },
+    "independent_check.py": {
+      "bytes": 28008,
+      "sha256": "15c43d9b2fc119fcbe5e6b6a4ad0c28c0bea03e82dcbb16b4a49d925d0ec63fc"
+    },
+    "read_context.py": {
+      "bytes": 5071,
+      "sha256": "384d0bef93d4bc05ed8cb10f5a6d27426ab983ffcb4a3e31d5ca84b116961ac3"
+    },
+    "reader-E3-peer.json": {
+      "bytes": 250938,
+      "sha256": "b93d4745e7b05496a64ebb14c10ae525bfec0b9892cdfeca77b21a7d30352828"
+    },
+    "reader-E3-peer.py": {
+      "bytes": 15270,
+      "sha256": "dde56416f60a972dda91a81e9893e76a18c5abcd1b3f092e19f35ec2302fefb8"
+    },
+    "reader-E3-primary.json": {
+      "bytes": 229697,
+      "sha256": "82a4ffb05f37501871b1a524ba07893d7abed9c7f9b2a5abb34cb0c0b1212eaa"
+    },
+    "reader-E3-primary.py": {
+      "bytes": 9690,
+      "sha256": "02db3fc58aa93e1bd5f83e47d6a86d6cdf2f86815061075fc18d2b9087b7df5d"
+    },
+    "reader-E4-peer.json": {
+      "bytes": 316487,
+      "sha256": "8614172dd792beb83562aef037045b7bb8c2b1123abcc954f08b7be78512e6b8"
+    },
+    "reader-E4-peer.py": {
+      "bytes": 14845,
+      "sha256": "6095e4103a22b9d11a39221ff48bbc2881c138aaaf6a033a97d20b0a85d889e3"
+    },
+    "reader-E4-primary.json": {
+      "bytes": 346992,
+      "sha256": "d84ba3edbfaaae257967ea6dd471db0b9519cfa35504c0b8d6f82a50b784b588"
+    },
+    "reader-E4-primary.py": {
+      "bytes": 13115,
+      "sha256": "cbb619c235276ecb61f34920665a44fc5f12771cab7dd2c6c454a41dfd1483b8"
+    },
+    "test_compare.py": {
+      "bytes": 5053,
+      "sha256": "064879eb268b9b6504f394eb23612993373dffeedf7e14a7b6bc9c48d678b54c"
+    }
+  },
+  "inputs_after": {
+    "../../native-strips01/Im10.jpg": {
+      "bytes": 9704,
+      "sha256": "fe8c069f4bb7a19f6eb996b42b266c55552a110f8e9cbc6e9cc0d7269547cdd3"
+    },
+    "../../render01/page-076.png": {
+      "bytes": 943120,
+      "sha256": "0835db6f0a138f5ddebfd6c4c81a857fda6e2da36379eeee1acbc3b5a9a6baf6"
+    },
+    "../PROTOCOL.md": {
+      "bytes": 5438,
+      "sha256": "2066edbe4f36d4eeb8e3be1695fdd72fe32f9649d779ea897e5e63358cb4fdbd"
+    },
+    "../energy345/context01.json": {
+      "bytes": 3276538,
+      "sha256": "59cef4cee1a54d66dacd4e2846e12a12d7b47c8091285ae8f68d8899bf6f2e48"
+    },
+    "../force45/compare_force45.py": {
+      "bytes": 11626,
+      "sha256": "932792f49797c4034beb1124d8174a56c911319e17fa536e199f0709950557be"
+    },
+    "../force69/compare_force69.py": {
+      "bytes": 8802,
+      "sha256": "f332359911f4d7bf5e768bf9e36b37ddb6995e857f6cf7ae5fa5456bb6dd4a6e"
+    },
+    "../read_context.py": {
+      "bytes": 4951,
+      "sha256": "da7d46400de924b75773646f34b7fba1d2284b50736d25395bb0a1c71e629c18"
+    },
+    "PROTOCOL.md": {
+      "bytes": 4971,
+      "sha256": "cc94c588f9b132318c7ca55fcffe1ed7eafbb92fd131583ffcbc74a13e5e54b7"
+    },
+    "READERS.md": {
+      "bytes": 2802,
+      "sha256": "6a019e587d1cdb47303047c5c03dbae4d9c347941a8227f27a7a8e0b8dfd0b5b"
+    },
+    "compare.py": {
+      "bytes": 13177,
+      "sha256": "cb4a2da60959a4b0a40ddb4a072c1cbedf4624da63daf1a50b37db0eb2dd5bac"
+    },
+    "comparison-E3-01.json": {
+      "bytes": 1484006,
+      "sha256": "717dbadc44f355203eefc97de7cb7b4ad3fcc52a1b5f8cfb80ccaa4b00181d76"
+    },
+    "comparison-E3-02.json": {
+      "bytes": 1484006,
+      "sha256": "717dbadc44f355203eefc97de7cb7b4ad3fcc52a1b5f8cfb80ccaa4b00181d76"
+    },
+    "comparison-E4-01.json": {
+      "bytes": 2078635,
+      "sha256": "7976abc5dc6e73f774d79557c22f8eef78ab91901353d823b5690d505870f5da"
+    },
+    "comparison-E4-02.json": {
+      "bytes": 2078635,
+      "sha256": "7976abc5dc6e73f774d79557c22f8eef78ab91901353d823b5690d505870f5da"
+    },
+    "context01.json": {
+      "bytes": 4074111,
+      "sha256": "783cd6f756918cef8a70ea79d925d7b010554b535f8d8f654970605d1c8b9095"
+    },
+    "context02.json": {
+      "bytes": 4074111,
+      "sha256": "783cd6f756918cef8a70ea79d925d7b010554b535f8d8f654970605d1c8b9095"
+    },
+    "independent_check.py": {
+      "bytes": 28008,
+      "sha256": "15c43d9b2fc119fcbe5e6b6a4ad0c28c0bea03e82dcbb16b4a49d925d0ec63fc"
+    },
+    "read_context.py": {
+      "bytes": 5071,
+      "sha256": "384d0bef93d4bc05ed8cb10f5a6d27426ab983ffcb4a3e31d5ca84b116961ac3"
+    },
+    "reader-E3-peer.json": {
+      "bytes": 250938,
+      "sha256": "b93d4745e7b05496a64ebb14c10ae525bfec0b9892cdfeca77b21a7d30352828"
+    },
+    "reader-E3-peer.py": {
+      "bytes": 15270,
+      "sha256": "dde56416f60a972dda91a81e9893e76a18c5abcd1b3f092e19f35ec2302fefb8"
+    },
+    "reader-E3-primary.json": {
+      "bytes": 229697,
+      "sha256": "82a4ffb05f37501871b1a524ba07893d7abed9c7f9b2a5abb34cb0c0b1212eaa"
+    },
+    "reader-E3-primary.py": {
+      "bytes": 9690,
+      "sha256": "02db3fc58aa93e1bd5f83e47d6a86d6cdf2f86815061075fc18d2b9087b7df5d"
+    },
+    "reader-E4-peer.json": {
+      "bytes": 316487,
+      "sha256": "8614172dd792beb83562aef037045b7bb8c2b1123abcc954f08b7be78512e6b8"
+    },
+    "reader-E4-peer.py": {
+      "bytes": 14845,
+      "sha256": "6095e4103a22b9d11a39221ff48bbc2881c138aaaf6a033a97d20b0a85d889e3"
+    },
+    "reader-E4-primary.json": {
+      "bytes": 346992,
+      "sha256": "d84ba3edbfaaae257967ea6dd471db0b9519cfa35504c0b8d6f82a50b784b588"
+    },
+    "reader-E4-primary.py": {
+      "bytes": 13115,
+      "sha256": "cbb619c235276ecb61f34920665a44fc5f12771cab7dd2c6c454a41dfd1483b8"
+    },
+    "test_compare.py": {
+      "bytes": 5053,
+      "sha256": "064879eb268b9b6504f394eb23612993373dffeedf7e14a7b6bc9c48d678b54c"
+    }
+  },
+  "limits": [
+    "Reading receipts are computational-reader self-attestations, not independently witnessed perception.",
+    "RGB equality and set operations establish bookkeeping, not historical curve identity, support, physical envelopes, model accuracy or cause.",
+    "All original annotations, multiple bands, reader differences and exact-white selections remain preserved."
+  ],
+  "status": "pass_native_ink_bookkeeping_only",
+  "synthetic_controls": [
+    "five_manual_set_operations",
+    "empty_and_native_rows_0_91",
+    "multiple_band_ink_retained",
+    "manual_membership_class_boundary",
+    "duplicate_row_rejected",
+    "class_overlap_rejected",
+    "lost_membership_rejected",
+    "lost_boundary_rejected",
+    "boolean_row_rejected",
+    "in_memory_RGB_corruption_rejected",
+    "two_same_column_route_specific_bands",
+    "candidate_mismatch_rejected",
+    "missing_reciprocal_rejected",
+    "exact_white_flag_and_near_white_retention",
+    "E3_in_memory_set_corruption_rejected",
+    "E4_in_memory_set_corruption_rejected"
+  ]
+}

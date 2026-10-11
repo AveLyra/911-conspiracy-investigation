@@ -25,37 +25,72 @@ dl { display: grid; grid-template-columns: minmax(110px, 170px) minmax(0, 1fr); 
 dd { margin: 0; overflow-wrap: anywhere; }
 code { overflow-wrap: anywhere; }
 .caution { border-left: 4px solid #946e16; padding-left: .65rem; }
+section { background: white; border: 1px solid #a9b4bd; border-radius: .35rem; padding: .8rem; margin: .8rem 0; }
+section h2 { font-size: 1.1rem; margin: 0 0 .4rem; }
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { text-align: left; vertical-align: top; border: 1px solid #a9b4bd; padding: .35rem .45rem; }
+tr[data-current="true"] { outline: 2px solid #1264a3; outline-offset: -2px; background: #edf6ff; }
+textarea { box-sizing: border-box; width: 100%; min-height: 8rem; font: 13px/1.4 ui-monospace, monospace; }
+.muted { color: #526575; }
 </style>
 </head>
 <body>
 <h1>Connection figures — complete-page registration review</h1>
-<p class="caution">Read-only presentation. No points are saved, submitted, exported or accepted. These are <strong>page-render pixels</strong>, not native embedded graph pixels, physical coordinates or new source precision. This viewer does not extract curves or establish a collapse mechanism.</p>
+<p class="caution">Local human review only. Your clicks are kept in this page session and are not uploaded or written to disk; reloading or closing the page clears them. The copyable table is your review record, not scientific or engineering acceptance. Coordinates are <strong>page-render pixels</strong>, not native graph pixels, physical coordinates or new source precision.</p>
 <div>
 <label for="page">Page / control</label>
 <select id="page">
 <option value="control">Synthetic coordinate control</option>
+<option value="76" selected>Physical 76 / printed 25 — figures 3-4 and 3-5</option>
 <option value="73">Physical 73 / printed 22</option>
 <option value="74">Physical 74 / printed 23</option>
 <option value="75">Physical 75 / printed 24</option>
-<option value="76">Physical 76 / printed 25 — figures 3-4 and 3-5</option>
 <option value="77">Physical 77 / printed 26</option>
 <option value="117">Physical 117 / printed 66</option>
 </select>
 <button type="button" data-zoom="fit" aria-pressed="true">Fit complete page</button>
 <button type="button" data-zoom="1" aria-pressed="false">100%</button>
 <button type="button" data-zoom="2" aria-pressed="false">200%</button>
-<button type="button" id="clear">Clear point (Escape)</button>
+<button type="button" id="clear">Hide point marker (Escape)</button>
 </div>
-<p>Origin is the upper-left pixel cell, (0, 0). Hover for integer x/y; click to lock. Focus the image area and use arrow keys to move one pixel. Right/bottom edges are outside. Fit can skip rows or columns with mouse input: use 100%/200% or arrow keys for exact cells. Zoom is CSS presentation only; the full source image stays unchanged.</p>
+<p>Origin is the upper-left pixel cell, (0, 0). Hover to preview integer x/y; click to record the current anchor. Focus the image area and use arrow keys to move that recorded point one pixel. Right/bottom edges are outside. Fit can skip rows or columns with mouse input: use 100%/200% or arrow keys for exact cells. Zoom is CSS presentation only; the full source image stays unchanged.</p>
+<section aria-labelledby="anchor-review-title">
+<h2 id="anchor-review-title">Record the six graph-axis points</h2>
+<p>Start with the highlighted anchor on physical page 76. Click its actual axis intersection; the point appears in the table immediately. Use arrow keys to refine it, then choose <strong>Next anchor</strong>. Choose “Mark unreadable and continue” when you cannot locate it. The proposed center is only a locator: it is not recorded as your answer unless you click the graph.</p>
+<p id="anchor-progress" role="status" aria-live="polite">Loading the page and first anchor…</p>
+<div>
+<button type="button" id="previous-anchor">Previous anchor</button>
+<button type="button" id="next-anchor">Next anchor</button>
+<button type="button" id="mark-unreadable">Mark unreadable and continue</button>
+<button type="button" id="clear-answer">Clear this anchor's answer</button>
+<button type="button" id="hide-marker">Hide marker (keeps the answer)</button>
+</div>
+<table aria-label="Human axis-anchor observations">
+<thead><tr><th>Anchor</th><th>Graph location</th><th>AI locator</th><th>Your observation</th><th>Status</th></tr></thead>
+<tbody>
+<tr id="row-F0"><th scope="row">F0</th><td>Force: left-bottom axis intersection</td><td>(449, 829)</td><td id="answer-F0">Not checked</td><td id="state-F0">Not checked</td></tr>
+<tr id="row-FR"><th scope="row">FR</th><td>Force: right-bottom axis intersection</td><td>(1294, 829)</td><td id="answer-FR">Not checked</td><td id="state-FR">Not checked</td></tr>
+<tr id="row-FT"><th scope="row">FT</th><td>Force: left-top axis intersection</td><td>(449, 224)</td><td id="answer-FT">Not checked</td><td id="state-FT">Not checked</td></tr>
+<tr id="row-E0"><th scope="row">E0</th><td>Energy: left-bottom axis intersection</td><td>(473, 1669)</td><td id="answer-E0">Not checked</td><td id="state-E0">Not checked</td></tr>
+<tr id="row-ER"><th scope="row">ER</th><td>Energy: right-bottom axis intersection</td><td>(1297, 1669)</td><td id="answer-ER">Not checked</td><td id="state-ER">Not checked</td></tr>
+<tr id="row-ET"><th scope="row">ET</th><td>Energy: left-top axis intersection</td><td>(473, 1048)</td><td id="answer-ET">Not checked</td><td id="state-ET">Not checked</td></tr>
+</tbody></table>
+<label for="label-notes">Optional notes or corrections about the printed axes / legend</label>
+<textarea id="label-notes" rows="3" placeholder="For example: upper vertical label matches; lower legend is unreadable; or enter a correction."></textarea>
+<p><button type="button" id="copy-review">Copy review table</button> <span id="copy-status" role="status" aria-live="polite"></span></p>
+<label for="review-output">Copyable review record (this page session only)</label>
+<textarea id="review-output" readonly spellcheck="false" aria-label="Copyable human-review table"></textarea>
+<p class="muted">To report the review, use “Copy review table” and paste it into chat. If clipboard access is blocked, select this text and copy it manually. Hiding a marker does not erase a table answer; use “Clear this anchor’s answer” to remove one.</p>
+</section>
 <details>
-<summary>Optional jumps to AI-proposed axis anchors — not human accepted</summary>
-<p>All six are page 76 proposals, each ±3 page-render pixels in each axis. A jump marks the proposed center at 100%; a real click or keyboard adjustment remains an unsaved selection, not acceptance. Clear the marker to inspect obscured pixels.</p>
-<button type="button" data-candidate="F0">F0: load-axis origin (449, 829)</button>
-<button type="button" data-candidate="Fright">Fright: displacement endpoint (1294, 829)</button>
-<button type="button" data-candidate="Ftop">Ftop: load endpoint (449, 224)</button>
-<button type="button" data-candidate="E0">E0: energy-axis origin (473, 1669)</button>
-<button type="button" data-candidate="Eright">Eright: displacement endpoint (1297, 1669)</button>
-<button type="button" data-candidate="Etop">Etop: energy endpoint (473, 1048)</button>
+<summary>AI-proposed anchor centers and tolerances — not human accepted</summary>
+<p>All six proposals are page 76 render pixels with an assessed ±3-pixel allowance on each axis. A proposed marker or jump is not your observation. Clear/hide the marker to inspect pixels underneath it.</p>
+<button type="button" data-candidate="F0">Go to F0 locator</button>
+<button type="button" data-candidate="FR">Go to FR locator</button>
+<button type="button" data-candidate="FT">Go to FT locator</button>
+<button type="button" data-candidate="E0">Go to E0 locator</button>
+<button type="button" data-candidate="ER">Go to ER locator</button>
+<button type="button" data-candidate="ET">Go to ET locator</button>
 <p>Root candidate-record SHA-256: <code>ec66ae85a45a0169b7e8cc61698cc522e75cda2f2905f4c283f45f88de1f55a7</code>. No native-strip conversion is supplied here. Geometric strip footprints alone would not establish composited visibility through clipping or text overlays.</p>
 </details>
 <p id="load-status" role="status" data-error="false">Loading; coordinates disabled…</p>

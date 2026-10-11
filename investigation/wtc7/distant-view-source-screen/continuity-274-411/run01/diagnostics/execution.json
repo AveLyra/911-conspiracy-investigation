@@ -1,0 +1,51 @@
+{
+  "argv": [
+    "/opt/homebrew/bin/ffmpeg",
+    "-nostdin",
+    "-nostats",
+    "-hide_banner",
+    "-v",
+    "warning",
+    "-copyts",
+    "-noautorotate",
+    "-i",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/distant-view-source-screen/source/DistantViewWTC7.avi",
+    "-map",
+    "0:v:0",
+    "-an",
+    "-noautoscale",
+    "-pix_fmt",
+    "yuv420p",
+    "-fps_mode",
+    "passthrough",
+    "-enc_time_base:v",
+    "demux",
+    "-f",
+    "rawvideo",
+    "-"
+  ],
+  "capture_complete": true,
+  "diagnostic_prefix_limit": 1048576,
+  "elapsed_seconds": 0.42052154208067805,
+  "error": null,
+  "returncode": 0,
+  "status": "returned",
+  "stderr": {
+    "captured_bytes": 0,
+    "captured_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_bytes": 0,
+    "saved_prefix": "stderr-prefix.bin",
+    "saved_prefix_truncated": false,
+    "saved_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "captured_bytes": 487618560,
+    "captured_sha256": "4ffad6fee7b8f256be33ddbdebb2207394bdb3d2d72798c11aa679fe291555c5",
+    "saved_bytes": 1048576,
+    "saved_prefix": "stdout-prefix.bin",
+    "saved_prefix_truncated": true,
+    "saved_sha256": "e2d6468974308d22a6b88c0248cac3aaa98e422683dd388a4c691375783dda7f"
+  },
+  "stdout_limit": 487618560,
+  "timeout_seconds": 60
+}

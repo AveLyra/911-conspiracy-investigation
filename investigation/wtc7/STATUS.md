@@ -1,5 +1,3670 @@
 # Investigation execution status
 
+## NBC candidates acquired and densely screened
+
+**October 9 local source test:** the separate acquisition task now holds both
+NBC candidate files. The [dense picture screen](nbc-dense-screen-2026-10-09/report.md)
+verified those unchanged source bytes and inspected every small-file decoded
+frame (295) plus 357 declared images from the long file (one-second bins and
+final frame). No recognizable C third-shot match was found. The fixed separate
+AI sample agreed, with prior-informed/not-blind limits retained. The long file
+is not exhaustively screened; a brief intervening shot, alternate framing,
+obscuration and its retained decode warnings limit exclusion.
+
+Two extraction runs reproduced all 652 PNGs and 33 sheets byte-for-byte; a
+separate checker verified exact frame/clock/pixel joins and product pins. This
+does not authenticate historical timing or original sound. The prior
+reference-only acquisition failures remain history, but the no-local-bytes
+blocker is resolved for these two files. C's continuous third-shot source and
+soundtrack remain unidentified; the reported bang is neither dismissed nor
+classified. No collapse-cause ordering changes. Main/legal records, frozen
+material index and actual-human/accepted-engine states remain untouched.
+Full goal active/incomplete; this unit is local and uncommitted, with no push.
+
+## October 9 changed evidence review
+
+The [post-v3 opposed assessment](synthesis-packet/post-v3-review-2026-10-09/report.md)
+reconciles all eleven additions represented by the nine preceding status entries.
+It finds no new robust cause ordering. Real preservation-implementation concerns,
+new conditional F7 coverage and source/citation limits are retained without
+turning them into demonstrated destruction, physical model error or a thermal
+mechanism finding. Quiet intervention does not inherit every conventional-blast
+prediction; reported bangs remain unclassified, not evidence of silence.
+
+Two prior-informed AI interpretations were separately frozen. A third reviewer
+checked coverage, selected pins, saved arithmetic and root wording. These are
+research checks of shared inputs, not expert or human acceptance. The version 3
+index remains unchanged; this additive supplement updates only identified stale
+statuses. Native paired structural states, real measurement responses/source
+joins, and exact documentary execution/custody remain distinct dependencies.
+Full charter active/incomplete; local and uncommitted, with no main/legal/raw
+edits, accepted Sherlock/Faraday change, disclosure, commit or push.
+
+## Cather Pound execution source unavailable through the checked locator
+
+**October 9 bounded WP4 source test:** the
+[university overview disposition](comparator-cather-pound/project-overview-2026-10-09/report.md)
+records a newly checked exact link from the held preparation article. The web
+reader returned an internal access error; the single ordinary request then
+failed at DNS resolution with zero bytes and no HTTP response. The question
+of completed, tower-specific preparation remains untested, not answered
+negatively. No source-content, capacity, footprint or collapse-cause finding
+follows. The declared route is stopped, not the whole comparator inquiry.
+
+Parallel read-only checks found no newly executable held-input test in the
+checked WP1 and WP2 lanes. The exact window-opening/time/source join, continuous
+third-shot source/soundtrack, genuine human localization and feature-to-body
+motion bounds remain distinct prerequisites. The unrequested NBC catalog
+candidate remains a lead requiring supported lawful materialization; its
+metadata is not video or an authenticated soundtrack. Earlier completed tests
+must not be repeated as new science. WP3 native-state and WP5 sensitivity
+boundaries remain as previously recorded, not newly completed here.
+
+The prior goal turn completed the viewer diagnostic; this turn resolved a
+previously untried source locator to a bounded access failure. Neither changes
+causal rankings or establishes global evidence exhaustion. Full charter active
+and incomplete; all work local/uncommitted, with main/legal records, original
+sources, the frozen material index and accepted Sherlock/Faraday state unchanged.
+
+## Synthetic viewer miss diagnosed within the new test
+
+**October 8–9 software-method test:** the
+[pointer-delivery diagnostic](distant-view-source-screen/localization-review/fit-diagnostic-2026-10-08/report.md)
+reproduced one intended Fit-mode miss in twelve fixed synthetic cases. Two
+different requested rows received the same delivered coordinates. An independent
+cell-boundary oracle agrees with all twelve reported cells, with no recorded
+geometry change. No mapping defect is demonstrated, no mapping code was changed,
+and the cause of the earlier unlogged miss remains unknown.
+
+All six native/doubled targets succeeded, but that is not a general precision
+guarantee. Keep Fit for overview and use fine-view/keyboard checking. Actual
+DistantView human localization remains pending under its unchanged instructions;
+R1's completed review is not reopened. No new historical measurement, causal
+ranking or Sherlock/Faraday accepted finding follows.
+
+Separate review reconciles the case files, raw event log and keyboard observations.
+Root regression, input-preservation, deterministic-build and live allowlist checks
+passed; setup failures and source-version repair are retained in the execution
+record. The diagnostic server was stopped, while the original viewer remained
+live at closeout. Generic feedback is appended to existing SFB-002/SFB-005 locally,
+not sent through the archived destination. Main/legal records and the frozen
+material index are unchanged. Local uncommitted work; full goal active/incomplete.
+
+## Generator specification retrieval stopped without content
+
+**October 8 bounded source test:** the
+[prepurchase specification disposition](municipal-originals-2026-10-04/generator-spec-166874-2026-10-08/report.md)
+records one terminal connection timeout with zero bytes for the exact catalog
+candidate NYC-WTC_000166874.pdf. The declared route permits no retry. All 52
+reported pages remain unacquired and unread; no sensitivity clearance, control
+match/nonmatch, installation finding or historical inference follows.
+
+The source was a distinct lead identified by the preceding feasibility audit,
+not a restart of the stopped 171909/173834 requests. Its potential use is a
+function/equipment/circuit/drawing identity test between the CO016 changes and
+the July 31, 1999 outstanding generator-stop item. Even a matching specification
+would not establish completed installation or September 2001 operating state.
+A lawful exact copy is the next dependency for that limited test.
+
+The [separate review](municipal-originals-2026-10-04/generator-spec-166874-2026-10-08/independent-review.md)
+found no material discrepancy in the saved disposition. Root and peer checks
+verify local records and retained limits, not the original network event or
+historical source content.
+
+The acoustic clarification retains the distinction between conventional blast
+signatures and thermal intervention; it supplies no new historical measurement
+or cause ranking. Main/legal records, prior sources, the frozen material index,
+human gates and accepted Sherlock/Faraday state remain unchanged. The full
+goal is active and incomplete; this work is local and uncommitted.
+
+## Thermal citation checked beyond its abstract
+
+**October 8 source-scope test completed:** the
+[Polk article check](thermal-source-audit-2026-10-08/report.md) now inspects
+selected author-posted methods/results text, extending the earlier abstract-only
+review. The [separate AI review](thermal-source-audit-2026-10-08/independent-review.md)
+found no material overstatement. This is not a complete, byte-pinned paper,
+figure/supplement review, laboratory replication or historical acoustic test.
+The source-access record preserves the failed DOI/PDF-reader routes and actual
+HTML-text coverage; those failures do not prove source absence.
+
+This later citation qualification does not overwrite the acoustic update,
+causal-chain report or frozen material index. The reported C/D sounds and
+mechanism-specific detectability requirements remain. There is no new cause
+ranking, historical attribution, accepted Sherlock/Faraday finding or legal
+promotion. Source provenance, human review and native-model prerequisites
+remain claim-specific. The full goal stays active; changes are local and
+uncommitted.
+
+## Shop drawing retrieval stopped with source unread
+
+**October 8 source test and closeout:** the
+[Job1854 shop-drawing disposition](municipal-originals-2026-10-04/shopdrawings-173834-2026-10-08/report.md)
+records two terminal connection timeouts for NYC-WTC_000173834.pdf, with zero
+bytes received. The fixed population remains one document / two reported pages;
+neither page was acquired, screened, rendered or read. The earlier metadata
+end-Bates value is 173835; an agent's 171835 was a transcription error, not a
+contradiction in the source metadata.
+
+The document's possible link between CO016 station changes and the July 1999
+generator emergency-stop item remains untested. No control match, nonmatch,
+installation finding, concealment or cause inference follows from the timeout.
+The declared route is stopped; a later lawful exact copy could permit the
+content test. No third request, substitute drawing or gated DEP review occurred.
+
+The following NBC and CO016 entries retain their dated findings; this entry
+updates only the previously unread shop-drawing lead. Main/legal records,
+the frozen material index, human-review requirements and accepted Sherlock/
+Faraday findings are unchanged. The full goal remains active and incomplete;
+this work is local and uncommitted.
+
+## NBC source candidates and remaining acquisition step
+
+**October 8 distinct public-source test:** the
+[NBC folder review](audio-listening-2026-10-05/c-source-lineage/nbc-folder-2026-10-08/report.md)
+lists the previously unqueried Video-NBC child under a recorded WTC7 presentation
+branch. It returns two MPEG IDs not in the prior 27-item traversal. Neither is
+an exact target-title match; omitted stream metadata prevents the proposed
+duration/dimension comparison. Titles and folder ancestry do not identify the
+third shot or its soundtrack. Coverage is this one response, not the archive.
+
+A separately declared native fetch for the first candidate returned only a
+download reference, with no local materialized file or identified supported
+native materialization action. The stage stopped; the second file was not
+fetched. No reference values were disclosed or alternate transport attempted.
+There are zero acquired media files, not two failed media matches. No viewing,
+listening, stream probe, new timing result or causal ranking followed.
+
+Saved-record checks and separate AI review are recorded in the unit. The next
+media discriminator requires lawfully materialized bytes, then a prospective
+third-shot sequence comparison and separate soundtrack authentication. A
+distinct WP5 source lead is NYC-WTC_000173834.pdf, the already catalogued
+two-page Job1854 shop-drawing record; content and sensitivity remain unchecked.
+It may test the CO016 equipment link, not installation by title alone. The
+stopped 171909 route, gated DEP files and pending human reviews remain unchanged.
+
+Main/legal records, frozen prior inputs, material index and accepted Sherlock/
+Faraday state are unchanged. Generic reference-materialization feedback is
+deduplicated locally under SFB-005; the archived destination remains unresolved.
+Local uncommitted progress, not completion or global blockage of the full goal.
+
+## OEM control change source review
+
+**October 8 source review and closeout:** the
+[CO016 letter review](municipal-originals-2026-10-04/co016-control-review-2026-10-08/report.md)
+adds a two-page October 16, 1998 letter describing one pull station added and
+two breakglass stations deleted, alongside unresolved drawing-response and
+cost-substantiation issues. It does not identify those stations as the generator
+emergency-stop item still outstanding at the July 1999 test, or establish field
+installation, September 2001 condition, deliberate disabling or collapse cause.
+Ordinary design coordination and the unresolved review concerns are both retained.
+
+Both admitted pages have separately frozen paired AI readings; a fax-hour
+disagreement remains unused for chronology. Independent technical checking
+reproduced both page renders in bytes and pixels using the same Poppler engine.
+Separate interpretive review found no material overstatement. These checks do
+not provide historical authentication, actual human acceptance or expert review.
+
+The fixed selection remains two documents / three reported pages. The second
+record, NYC-WTC_000171909, is unacquired and unread after two actual connection
+timeouts with zero received bytes. The route stopped as declared; transport
+failure establishes neither content nor withholding. Complete reading of the
+first letter is not complete coverage of the selected population. Next tests
+are exact equipment/drawing identity and dated installation or function-test
+records; a later successful retrieval could fill the one-page source gap.
+
+Earlier sources and metadata-only summaries remain preserved history. The
+version 3 material index is unchanged; this update links the later evidence
+without silently replacing its frozen snapshots. No cause ranking, main/legal
+record, accepted Sherlock/Faraday state, disclosure, commit or push changed.
+F7 and DistantView human responses, native-state prerequisites and the separate
+municipal sensitivity gate remain pending; this unit did not poll the viewers.
+The full goal remains active and incomplete. Work is local and uncommitted.
+
+## Updated F7 human-review packet
+
+**October 8 finite packet unit completed:** the separately versioned
+[F7 review packet](connection-curve-comparison/historical-applicability/f7-review-packet-2026-10-08/report.md)
+now provides proposals for CE-F7Q1–Q3, while retaining the other 39 slots exactly.
+All 42 slots / 84 entries remain uninspected: 32 conditional interior candidates
+and ten boundary-unresolved positions, not accepted support or model-error
+measurements. F7Q3 still lacks a peer spring candidate; missing is not zero.
+
+Two repaired outputs match byte-for-byte. Separate reconstruction verifies
+269 producer inputs, 191 native mapping instances and preserved non-F7 data;
+root replay matches its saved receipt exactly. The initial candidate omitted
+four transitive verification-code pins and failed full closure checking.
+It and its code remain preserved; the declared dependency-only repair changes
+no sample or other non-input field. The separately coded checker has earlier
+F7 annotation authorship, not independent historical-reader status.
+
+The corrected [human viewer and instructions](connection-curve-comparison/historical-applicability/f7-review-packet-2026-10-08/HUMAN-REVIEW.md)
+were verified in the native browser and by byte-matched reads of all 17 live
+routes. Current launch: session 66007, http://127.0.0.1:62409/; this is a
+temporary local address, not a persistent service. All 191 mappings and thirteen
+source images loaded. Synthetic coordinate/response controls did not change
+any real human field. Software checks are not source or human acceptance.
+
+**Next:** actual review may start with CE-F7Q1–Q3; preserve inspected proposal
+scope, corrections/unreadability and the copied full packet hash. Do not repeat
+R1 or completed axes/legend review. The other 39 graph slots, the original
+actual-D sample, DistantView human responses and scientific source/support
+qualifications remain separate obligations. The old packet/viewer are history,
+not silently updated. Native-state and municipal sensitivity gates below remain.
+
+No physical metric, causal ranking, accepted Sherlock/Faraday state, material
+index, main/raw/legal record, disclosure, commit or push changed. Generic
+dependency/version-binding feedback is deduplicated locally under SFB-005;
+delivery remains pending at the archived-destination routing boundary. Full
+goal active and incomplete; this work is local, uncommitted preparation.
+
+## Current F7 completion and municipal preservation follow through
+
+**October 8:** The [full-charter feasibility update](synthesis-packet/feasibility-2026-10-08.md)
+distinguishes completed work from claim-specific prerequisites. The investigation
+is incomplete, not globally blocked. No new execution-ready native collapse/arrest
+pair was located; R1 and earlier finite media/source work must not be repeated.
+
+The [municipal continuation](municipal-preservation-2026-10-08/remaining-records/report.md)
+acquired all 14 remaining PDFs and rendered/technically checked all 70 pages.
+Six documents/20 pages now have separately frozen paired readings: documentary
+preservation and collection instructions, a June 2003 qualified concern about
+some agencies' electronic preservation, and November 2004 incomplete questionnaire
+returns. These are concrete implementation leads, not identified loss, physical
+steel custody or concealment. Eight documents/50 pages remain sensitivity-gated;
+some pages were displayed before the stop, so they are not all "unread."
+The pending local-only handling question must be resolved before affected
+substantive review. Item 153964 has a separate unmarked-content sensitivity
+trigger. The [earlier one-item result](municipal-preservation-2026-10-08/report.md)
+and full fixed population are preserved; the 70-page content unit is incomplete.
+Next documentary tests concern the warning's factual basis, actual collection
+inventories and questionnaire/transfer records, first checking whether the
+remaining fixed items address them if review is authorized.
+
+The [completed F7 paired test](connection-curve-comparison/native-footprint-pass/force7-paired-coverage/report-v2.md)
+now has both frozen readings and two byte-identical outputs. The earlier
+primary-shell zero becomes positive conditional paired coverage in all four
+fixed reader combinations: 24–27 paired segments in 9–10 separate fragment-pair
+runs. All 440 new route records and material arithmetic pass independent
+checking and root receipt replay. Reader disagreements remain; this is C_H
+under unvalidated identity/support/enclosure assumptions, not admitted D or
+a model-discrepancy/physical result. All 156 old peer route records and nine
+bands through x297 are preserved exactly. The old incomplete script and
+rejected displays remain history; no old report or source was rewritten.
+The finite rectangle is complete without target expansion. The separately
+versioned F7 review packet is now completed above; the original 42-slot packet
+and its three unavailable F7 positions remain unchanged and unaccepted.
+
+The v3 index remains unchanged; its 272 selected pins were verified in the prior
+integration unit, not rerun as a software suite by this source review. New results
+are linked here, not silently inserted into its frozen snapshots. DistantView
+and graph human requests remain pending. This source unit did not verify viewer
+liveness; the later packet unit above records its own launch and checks.
+No cause ranking, main/legal/accepted-engine change, feedback send,
+commit or push. Full goal active; local uncommitted progress, not a blocked turn.
+
+## DistantView material claim integration
+
+**October 8 version 3 adopted and checked:** the
+[integration result](synthesis-packet/distant-view-integration-2026-10-08/report.md)
+adds five claims from the four completed DistantView units to the existing
+material index. All 58 earlier links, their qualifications, statuses, adverse
+findings and review history remain unchanged. The new total is 63 links,
+272 selected artifact records, 27 transforms and 21 declared families—not 21
+independent historical sources. Current index SHA256:
+`e9aac5145a7d0b631474ece1d4b8082ba0f9a53ee0a5daaaf1a531dd9b009ff8`.
+
+Root ran 41 existing and 23 new software tests; both candidate builds and the
+final adopted-index check pass. A different-language check independently
+verified preservation, exact additions, selected pins and reachability; its
+initial encoding-sensitive diagnostic failure and correction are retained.
+Separate AI content review found no material overstatement, with method-author
+overlap disclosed. This is traceability verification, not new empirical science.
+
+The original clock-test failure, generated-clock limits, contour/material-point
+distinction, unresolved Fit miss and pending six-frame human review remain.
+R1 human review stays complete. Older unit reports and version 2 snapshots are
+preserved history; their then-pending index labels do not override this update.
+No cause ranking, main/raw/legal record or accepted Sherlock/Faraday state changed.
+Changes are local and uncommitted; generic feedback is queued at the unchanged
+archived-destination boundary. The full goal is active and incomplete.
+
+**Next:** audit remaining feasibility against the full main-repository charter
+and current index, rather than repeat completed units. DistantView measurement
+still needs actual user responses or explicit unavailability, its declared
+method checks and separate physical clock/geometry/body evidence. Other source,
+native-state, graph/F7 and expert/authority requirements remain claim-specific.
+
+## DistantView encoded timing result
+
+**October 8 finite metadata test completed:** the
+[encoded timing audit](distant-view-source-screen/encoded-timing/report.md)
+finds that all329 missing default frame PTS values occur on I/P pictures;
+all633 B pictures have PTS. An explicitly separate `genpts` diagnostic fills
+them and the final missing best-effort label. All962 reported packet payloads
+match source-byte slices, and the metadata/analysis repeats exactly.
+
+Root ran21 producer tests and16 independent checker assertion groups. Two
+raw-output arithmetic checks and separate source interpretation support the
+bounded conclusion: the pattern is consistent with FFmpeg timestamp handling,
+not affirmative evidence of missing historical exposures. The old `stored_pts`
+name means decoded-frame output, not necessarily literal AVI/camera timestamps.
+Generated regularity does not authenticate capture cadence or rule out prior
+editing. The original strict-PTS failure and all original nulls remain intact.
+
+This unit made progress on Q03/Q04/Q10 without bypassing human review. No
+coordinates, physical motion, cross-camera alignment or cause ranking changed.
+The next localization gate is still the six actual user responses below;
+any automatic method also needs its own accuracy/abstention test, and physical
+clock/geometry/body prerequisites remain. No automatic further probe or
+bitstream expansion follows from this completed unit. Its report records
+the next discriminating source/method requirements and retained failures.
+
+Main/raw/legal, the human viewer and accepted Sherlock/Faraday state are
+unchanged. Generic timing-provenance feedback is deduplicated locally, with
+archived-destination routing pending. This result is now joined in version3
+above; its original report remains unchanged. Work remains uncommitted and
+the full goal is active and incomplete.
+
+## DistantView human localization pilot
+
+**October 8 packet prepared for limited human review:** the
+[six-frame viewer and instructions](distant-view-source-screen/localization-review/HUMAN-REVIEW.md)
+use unchanged full native frames 274, 300, 342, 365, 388 and 411, with no
+suggested coordinates. All six human responses remain uninspected. This is
+not the already completed R1 comparator review.
+
+[Verification and retained failures](distant-view-source-screen/localization-review/report.md)
+record 96 passing software test cases, two byte-identical packets, all660
+inherited and17 packet-input pins, and actual localhost route/body checks.
+Native-browser QA used synthetic content; historical loads received only
+DOM dimension/metadata checks. The inherited binary-alias build defect was
+repaired narrowly without relaxing served-file checks or rewriting source pins.
+
+An unresolved Fit-mode click miss—intended synthetic cell (500,180), reported
+(500,179)—is retained, not explained away. Use Fit for overview and100%/200%
+plus keyboard refinement for final endpoints; check displayed coordinates and
+markers. Fine-view mismatch would block use pending diagnosis. These controls
+verify bounded bookkeeping, not human feature accuracy or an error bound.
+
+**Next gate:** preserve actual user judgments or explicit unavailability for
+all six frames. No agent historical coordinates, trajectory, automatic locator,
+acceleration, calibration or causal ranking was generated. A future automatic
+locator still needs its own frozen synthetic challenge; timing/geometry and
+the wider charter work remain separate. The protocol stops at this handoff.
+
+Local viewer session43737/PID10697 serves127.0.0.1:55462; verify its current
+handle before restarting. The packet is now joined in version3, without
+supplying human observations. Work remains uncommitted; no main/raw/legal
+or accepted Sherlock/Faraday state changed. The display lesson is deduplicated
+locally under SFB-002/SFB-005, with archived-destination routing still pending.
+The full goal remains active and incomplete.
+
+## DistantView all-frame correspondence screen
+
+**October 8 new empirical unit completed:** the
+[fixed274–411 interval](distant-view-source-screen/continuity-274-411/report.md)
+now has two separately frozen complete readings. Both classify all138 named
+outer-right corner candidates as identifiable and support all137 separately
+judged adjacent links, with one274–411 run and no categorical disagreements.
+This fills the earlier endpoint-to-endpoint visual correspondence gap. It does
+not establish material-point/COM identity, original exposure intervals,
+independent-camera status, a measured trajectory or a cause-ranking change.
+Peer-noted tonal softening near300 remains explicit, not proof of an edit.
+
+Root ran28 distinct current synthetic controls, two clean derivations and
+the independent packet checker before and after the frozen readings. The
+image/mapping products repeat byte-for-byte; all962 decoded/luma hashes match.
+The final check validates both complete rosters and660 unchanged pins.
+All12 contact pages and three prescribed full contexts were actually inspected
+by each reader, with no adaptive rescue or interpolation. Forty-seven selected
+frames still lack stored PTS; decoder estimates do not repair that source-clock
+limit. Same-source AI agreement is not human/expert acceptance.
+
+**Then-next preparation is completed above:** the separate coordinate-localization
+protocol and limited human packet are prepared, but actual human observations
+remain pending before consequential automated measurement. Keep
+pixel-only correspondence separate from physical motion until timing,
+camera/scale, feature/body geometry and deformation are resolved or bounded.
+The finite current unit stops at411; no further frame selection or fit executed.
+Existing graph/F7, model-state, source-lineage and legal/privacy boundaries
+remain unchanged, and completed R1 human review is not reopened.
+
+This unit and its parent screen are now joined in version3 above; the original
+version2 snapshot remains unchanged. Detailed evidence is in the linked report,
+unchanged first passes and verification receipts.
+Work is uncommitted in the investigation worktree, with no main/raw/legal or
+accepted Sherlock/Faraday state change, disclosure, commit or push. No distinct
+new feedback issue was opened; archived-destination routing remains pending.
+The full goal remains active and incomplete.
+
+## DistantView native source screen
+
+**October 8 new empirical unit completed:** the
+[DistantView source screen](distant-view-source-screen/report.md) examined eight
+prospectively selected native frames from a previously held but natively
+unreviewed AVI. Two separately frozen AI readings identify an outer image-right
+corner in standing scenes and in a lower scene at ordinal411. This is a usable
+continuity/identity lead, not a tracked material point, independent-camera
+finding, lower west-center junction recovery or cause-ranking change.
+
+The first matching-timestamp probe failed:329 of962 frames lack stored PTS;
+the last also lacks a decoder best-effort timestamp. A separately declared
+ordinal-only method preserves those nulls and the failed timing requirement.
+Two clean decodes give identical frame records. Root ran13 ordinal-adapter
+tests and the separate checker's13 tests, all passing; actual checker replay
+passes for both raw metadata sets, all962 repeated hash records and16 PNGs.
+Unselected raw pixels were not independently rehashed. Initial12 tests missed
+contract gaps caught in review; the original failed probe and code remain.
+
+**Then-next continuity work is now completed above.** The differing Dan Rather
+and Camera2 time-zero definitions still bar a naive same-time table join;
+do not optimize a lag to fit the paper. Sample absence is not whole-video
+absence. Do not repeat the completed eight-frame screen as new progress.
+
+This unit remains absent from the preserved version2 snapshot but is now
+joined in version3 above. Current detailed evidence is the linked
+report, two unchanged first-pass notes, source/decoder receipts and independent
+verification. The nullable-clock software lesson is deduplicated locally;
+feedback remains unsent under the archived-destination boundary. Existing
+human/expert, F7, held-matrix, source-access and legal/privacy gates are unchanged.
+Changes are uncommitted in the investigation worktree; no main/legal/raw edit,
+external disclosure, cause verdict, bridge acceptance, commit or push occurred.
+The full goal remains active and incomplete.
+
+## Earlier material claim integration
+
+**Earlier October 8 integration completed:** The preserved
+[index snapshot](synthesis-packet/integration-2026-10-08/candidate-index.json) is version2,
+SHA256 `6ad3012fd455dafe4face2cf031a3624135f83c99b24dfe641e6a35e0084f7e1`.
+All40 baseline claims and their adverse/source/review objects are preserved;
+18 separately identified additions supply current acoustic, warning, SEC,
+Windsor and graph/F7 dispositions. Five dated status overrides control over
+affected old pending labels, without rewriting the preserved observations.
+This is evidence integration, not a new physical result or cause ranking.
+
+[Result and three useful traversals](synthesis-packet/integration-2026-10-08/report.md)
+connect claims to207 pinned artifacts,23 transformations,19 declared families,
+12 exact exit-component rows, D1–D9 and eight causal ordinals. Family counts are
+not counts of independent historical sources. R1 video and comparator D audio
+share an uploaded-item family; A/B/C share the compilation. Artifact-specific
+roles distinguish source assertions, observations, calculations and limits.
+
+Root ran41 synthetic tests and the actual candidate/current-index validator:
+all pass. The reviewed snapshot and current index are byte-identical. Separate
+mechanical and substantive reviews caught and repaired erased-link false
+acceptance, copied locators, a missed shared-source relation and source-role
+wording. A repeated-context patch miss and a reviewer's encoding-comparison
+error were corrected, not concealed as successful first attempts.
+[Execution/review](synthesis-packet/integration-2026-10-08/execution.md) and
+[receipt](synthesis-packet/integration-2026-10-08/validation-receipt.json)
+give actual commands, reviewer contributions and limits. Passing checks do not
+provide human acceptance, qualified engineering review or historical authenticity.
+
+**Next independent work:** this finite join repair is complete. Do not repeat
+it, completed source searches or known missing-case scans as new scientific
+progress. Before another empirical unit, name one distinct, presently executable
+preregistered test or genuinely changed input and its likely discriminating
+effect. Read the current index's per-claim gaps and linked unit records, not
+stale historical next-action paragraphs below. If no such test is ready,
+return the exact missing records, human observation, qualified review or
+authority required; do not invent inputs or keep generating equivalent summaries.
+Full-reasoning scientific interpretation with a separate bounded checker is
+appropriate. This routing check does not itself authorize source expansion,
+media annotation, a solver run or an expert engagement.
+
+Still open: continuous sound-source lineage and detection opportunity;
+defined-body/feature geometry for force inference; applicable native paired
+states and connection/test transfer; sample-level graph human review; F7's
+incomplete peer provenance; building-specific access/installation/custody.
+Existing actual R1 and A–D human inputs stay preserved. The held observation
+matrix and stopped source routes remain held/stopped. No legal promotion,
+engine/bridge activation, external transfer, commit or push occurred. Generic
+feedback is queued locally under the unchanged archived-destination boundary.
+The full investigation goal remains active, not complete or newly blocked.
+
+## Completed Windsor source comparison
+
+**October 8 Windsor thesis:** The [completed source comparison](windsor-thesis-2026-10-08/report.md)
+credits the 2009 thesis's actual mesh and steel timestep sensitivity work.
+It does not resolve the 2007 draft's undefined depth benchmark within the
+77 reviewed pages. Two finer mesh runs are incomplete, and earlier sweeps
+were not fully rerun under later corrected inputs. This limits the demonstrated
+convergence claim; it does not establish the magnitude of the model's error,
+misconduct or a WTC 7 cause. Both separately frozen AI readings agree on
+these distinctions. The separate renderer reproduced all 77 PNGs byte-for-byte
+and pixel-for-pixel, not the author's physical model. [Review](windsor-thesis-2026-10-08/review.md)
+and [execution](windsor-thesis-2026-10-08/execution.md) preserve attribution,
+failed rendering, actual coverage and diagnostic limits.
+
+The previous substantive goal turn made **progress** by acquiring, reading
+and independently rendering this source. The intervening acoustic answer
+added no historical measurement or repository result. This closeout resolves
+the source question within its frozen scope and retains the original worksheet
+and final-configuration refinement results as specific missing discriminators.
+The closed IPB 2008-paper route remains closed. No further Windsor source
+expansion or reconstructed thermal solver follows automatically.
+
+The then-next material-index repair is completed above under its
+[prospectively reviewed protocol](synthesis-packet/integration-2026-10-08/PROTOCOL.md)
+and unchanged [37-input freeze](synthesis-packet/integration-2026-10-08/inputs.json).
+The preparation statement that no index revision had executed is preserved
+history, not the current state.
+
+Main/legal/raw and accepted engine/bridge state are unchanged; no commit or
+push. Feedback remains queued locally under the archived-destination boundary.
+Extensive intentional WIP remains on `research/sherlock-wtc7-investigation`,
+HEAD `ca1c223335c20905d6608eb15c676f88cbfac734`. Graph human review and the
+F7 completion-provenance limit below remain unresolved. The full goal is active.
+
+## Completed security source disposition
+
+**October 8 security lead:** The [bounded SEC filing review](contracting-access-custody-audit/security-scope-2026-10-08/report.md)
+now distinguishes reported complex-level work and project closeout from
+unresolved WTC7 scope and continuing access. The historical client-list
+wording does not establish current contracts, while the general maintenance
+business is contrary context to an all-access-ended inference. Three selected
+bodies were read as partial reader projections; the fourth, a 1997 amendment,
+was inaccessible and not replaced. Four of six allowed queries were used.
+
+Original-file preservation failed with three HTTP403 HTML responses. Six
+saved reader projections retain exact available tool-return strings; their
+hashes do not authenticate originals. A separate AI reader reviewed the same
+representations and found no material interpretive correction. The annual
+index/quarterly-reference date discrepancy is retained. [Execution](contracting-access-custody-audit/security-scope-2026-10-08/execution.md),
+[review](contracting-access-custody-audit/security-scope-2026-10-08/review.md)
+and [validation](contracting-access-custody-audit/security-scope-2026-10-08/validation.md)
+define the actual coverage. No historical access, unauthorized-work, actor or
+collapse-cause conclusion follows; no original-source acquisition is claimed.
+
+The finite filing pass is stopped. A building-specific contract/building schedule, closeout
+and later service/access records would change that lead's disposition;
+their existence and public availability remain unestablished.
+
+The thesis follow-up identified at the end of this SEC review is now completed
+above; its older acquisition-pending status is superseded. Do not repeat the
+completed stable-control, Plasco or graph searches merely because a separate
+human-review gate remains pending. Source-representation feedback remains
+deduplicated under SFB-005, queued locally, not sent or fixed.
+
+## Prior completed sensitivity test and preserved incomplete source reading
+
+**October 8 continuation:** The [F7 follow-up](connection-curve-comparison/native-footprint-pass/force7-paired-coverage/report.md)
+has one frozen primary original; peer completion-provenance was twice rejected
+and remains unresolved. The peer file's complete-inspection flag is false;
+no peer JSON or historical paired outputs exist. Primary replay/pins remain
+exact, and root reran 44 synthetic producer/checker tests, all passing. Neither
+fact supplies the missing peer reading or changes the old coverage result.
+The report states the precise prerequisite without certifying disputed displays
+or bypassing the rejected save. No further annotation expansion is authorized.
+
+The [third-shot aspect sensitivity](audio-listening-2026-10-05/c-source-lineage/picture-correspondence/third-shot-aspect/report.md)
+is complete within its declared scope: C14/19/24 against all38 earlier samples,
+two fixed matched geometry arms and separate fitting/evaluation regions.
+Two runs'233 material products are byte-identical. Fresh producer38 and
+separate-checker26 synthetic checks pass; root replay verifies all substantive
+receipt fields,444 retained transforms and228 common-support diagnostics.
+Two separately frozen AI readers actually reviewed all15 shortlisted earlier
+images and three C references. Neither established a unique three-moment
+match. The fixed correction lowers dynamic median correlations at each moment;
+stationary evaluation is mixed. This does not authenticate the sound or footage,
+identify manipulation, change cause rankings, or constitute human acceptance.
+
+The unit is stopped under its protocol: no automatic further geometry/dense
+search or audio alignment. Specific continuous third-shot source/soundtrack
+evidence remains missing; any new source route or distinct prospective test
+needs its own justification and authorization. Other charter work remains
+available. The existing graph human request remains pending without a repeat
+request or packet modification; the F7 missing peer completion remains separate.
+
+The immediately preceding acoustic-answer turn supplied no new measurement;
+it is **no progress** toward the empirical goal. This continuation made
+bounded progress by testing a declared processing alternative and retaining
+the negative identification result, not restarting completed graph work.
+The full goal stays active. Main/legal files,
+frozen sources, bridge/engine acceptance and external routing remain untouched;
+no commit or push. The completed-packet details below still control its human
+review, while its older next-F7-action text is superseded by this limitation.
+
+## Current conditional graph packet ready for human review
+
+**October 8:** The [conditional-envelope supplement and packet](connection-curve-comparison/historical-applicability/envelope-packet-2026-10-08/report.md)
+now accounts for all 42 paired slots / 84 model entries: 29 conditional
+interior candidates, ten boundary-unresolved positions and three unavailable
+F7 positions. No target was replaced, no peer substituted for missing primary
+coverage, and every human entry remains uninspected. This is the published
+connection benchmark, not a NIST/UAF global-collapse comparison.
+
+Both packet builds, both presentation wrappers, both synthetic raster results
+and the independent receipt reproduce exactly. The separate checker verifies
+180 native mappings, 78 displacement hulls, all 168 scenario states and the
+full 222-pin producer dependency set. Root reran 63 unit/oracle, 17 HTTP and
+seven JavaScript tests, all passing. Native browser checks loaded every CE
+view and all 180 image instances; synthetic responses were isolated and
+cleared. [Verification](connection-curve-comparison/historical-applicability/envelope-packet-2026-10-08/validation.md)
+retains sandbox failures, exact runtime differences and bounded review scope.
+
+The artificial raster challenge demonstrates finite-renderer ambiguity, not a
+historical annotation error rate: different generating extrema or support can
+produce identical pixels. Hidentity/Hsupport/Hink0 stay unvalidated; no
+historical ordinate discrepancy, integral, peak, admitted support or cause
+ranking was calculated. Original exact-polyline/actual-D and broader source
+obligations remain open. Axes and legends already confirmed need no repetition.
+
+**Next human action:** [inspect the packet](connection-curve-comparison/historical-applicability/envelope-packet-2026-10-08/HUMAN-REVIEW.md)
+at the currently started `http://127.0.0.1:61594/`. The server is session-local;
+recheck liveness or restart through its script if unavailable. Copy only
+actually inspected statuses/corrections into chat. Clicks and software tests
+are not acceptance. Boundary locators cannot establish excluded point values.
+The asynchronous review request was issued after final closeout; no response
+has yet been received. Do not repeat it merely on a goal continuation.
+
+**Next independent work:** after attributable responses, assess their exact
+partial-claim coverage and apply the frozen correction/regeneration rule to
+any failed mapping before historical arithmetic. While responses are pending,
+the parent admission report's specific F7 paired-coverage test is available;
+fix any source target prospectively and name the coverage decision it can
+change, rather than repeating the general census. Other charter work remains
+independent. Do not treat waiting on this packet as a universal investigation
+blocker or substitute this supplement for the original numerical obligations.
+
+The previous substantive goal turn made progress by building these components;
+the present turn completes their output verification and usable review packet.
+The intervening acoustic explanation did not supply a new historical
+measurement or change the ranking. The full goal remains active and incomplete.
+Generic feedback is deduplicated locally; the archived Sherlock destination
+has not been reopened or replaced. No bridge activation, engine acceptance,
+legal promotion, external transfer, commit or push. Extensive intentional WIP
+remains on `research/sherlock-wtc7-investigation`, HEAD
+`ca1c223335c20905d6608eb15c676f88cbfac734`. This section controls continuation;
+sections below preserve stage history.
+
+## Prior fourteen-pair admission assessment complete
+
+**October 8:** The [all-pair assessment](connection-curve-comparison/historical-applicability/admission-2026-10-08/report.md)
+now gives a source-specific disposition and metric ceiling for every force
+and energy pair. Thirteen have conditional paired candidates in both
+same-reader scenarios. F7 has none when primary shell is used and one column
+when peer shell is used. E6's tentative shared cell Im8(517,72) excludes that
+location in peer-solid scenarios while preserving later candidates. Neither
+finding establishes a model error or a collapse mechanism.
+
+Both saved results and the separate receipt reproduce byte for byte. Root
+reran 46 current and 41 reused tests: all pass. The independent calculation
+checks all 1,180 new decisions, 4,779 candidate cells, 8,031 elementary
+segments, 611 grouped runs, 56 scenarios and 224 length extrema; all 205
+required producer pins pass, including individual omission controls. Old
+42 readings/13,240 decisions remain by frozen reference, not newly
+reclassified. Root separately verified their recorded object hash. See
+[validation](connection-curve-comparison/historical-applicability/admission-2026-10-08/validation.md)
+for exact checks, retained failures and the corrected distinction between
+graphical benchmark fidelity and building-level physical validation.
+
+**Next task at that stage (now prepared above):** prepare the finite conditional-envelope supplement
+and mapping packet specified at the end of the report. Read that report,
+frozen admission protocol/results, numerical contract and human-sample rule
+first. Declare the additional estimand and sampling-input change prospectively;
+test interval arithmetic and raster limitations, then produce all 42/84
+conditional packet dispositions with independent mappings and actual human
+responses pending. No historical discrepancy before its applicable checks.
+This is a supplement, not replacement of the original exact-polyline/actual-D
+requirements. Do not call conditional candidate coverage admitted support,
+choose a reader for greater overlap, tune a halo to obtain agreement, or
+repeat the general pixel census. Full-reasoning method work and separate
+critical review are appropriate. F7's specific coverage-changing recovery
+remains available; unavailable primary slots must not be silently replaced.
+
+All original 42 paired actual-D slots remain unselected/unaccepted; confirmed
+axes/legends do not need repetition. Outside-target, physical-validation and
+other charter obligations remain. The current unit is complete, the goal is
+not. Generic feedback is queued locally under unchanged archived Sherlock
+routing; no send, bridge activation, engine acceptance, legal promotion,
+commit or push. Extensive intentional WIP remains on
+`research/sherlock-wtc7-investigation`, HEAD `ca1c223335c20905d6608eb15c676f88cbfac734`.
+This section controls continuation; sections below are stage history.
+
+## Prior F6 Im3 source result
+
+**October 8:** The [F6 Im3 result](connection-curve-comparison/native-footprint-pass/force6-im3/report.md)
+completes the fixed rise/shoulder/descent target with two separately frozen
+590-route readings and 122 reader-local uncertainty bands. Both context copies
+and comparisons reproduce exactly. Root reran all four new/old literal builds,
+the complete comparison, 38 current unit tests and the full independent receipt.
+The independent check verifies 73,568 source records across repeated copies
+(26,312 distinct cells), 26,910 comparison arrays and 55 unchanged pins.
+These checks establish source fidelity and arithmetic, not curve ownership.
+
+Keep all 111 outer-set, 126 class and 43 status differences between the 590
+compared route records. Attributed F6/F5 routes have no shared selected cells
+in any of the four reader pairings; shared cells all involve F6 unassigned
+bands. That is uncertainty, not automatic contradiction or verified ownership.
+The primary's charter-path mistake, exact-byte equality check, metadata
+compatibility and peer's pre-save band-ID failure remain documented in
+[validation](connection-curve-comparison/native-footprint-pass/force6-im3/validation.md).
+No frozen original, old inventory object or acceptance criterion was rewritten.
+
+**Next task at that stage (completed above):** a finite all-fourteen-pair admission/limitation
+assessment using the unchanged 21-region V2 conditional inventory below plus
+these new F6 originals. Read that inventory, the new report, the numerical
+protocol and human-sample rule first. For every pair, identify candidate
+disjoint partial domains, unresolved identity/continuity/enclosure and the
+consequence for each proposed metric. Preserve reader/axis alternatives,
+exclusions, source-specific awkward shoulders/peaks/tails and outside-target
+obligations. Any required coordinate mapping belongs to that decision, not
+another stand-alone integration-preparation loop. Do not default to another
+crop: further recovery must name a prerequisite or metric it can change.
+Acceptance is a source-backed disposition for every pair with reproducible
+derived calculations where needed, independently reviewed limits and a concrete
+next test for anything not admitted. Full-reasoning interpretation with separate
+critical review is appropriate. Do not assume Hidentity/Hsupport/Hink0 from
+successful software checks or require original arrays universally.
+
+No continuous support, discrepancy metric, physical-model validation or cause
+ranking is established. All 42 paired human slots remain unselected/unaccepted;
+axes/legends already confirmed must not be requested again. Broader F6 and
+other-pair source regions/seams remain inventoried, not silently resolved.
+This completes the finite source-reading batch, not the investigation goal.
+Generic completion-scope and cross-series-check feedback is queued locally;
+the archived Sherlock task's routing remains unresolved. No task resend,
+bridge activation, engine acceptance, disclosure, legal promotion, commit or
+push. Intentional extensive WIP remains on
+`research/sherlock-wtc7-investigation`, HEAD `ca1c223335c20905d6608eb15c676f88cbfac734`.
+This section controls continuation; sections below preserve stage history.
+
+## Prior F5/F6 conditional integration
+
+**October 8:** The [version-2 integration](connection-curve-comparison/historical-applicability/force56-extension-2026-10-08/report.md)
+adds all four completed F5/F6 readings without changing any of the 38 older
+conditional reading objects. The full fourteen-pair inventory now contains
+21 local regions, 42 readings and 13,240 route records: 4,658 conditional
+windows and 8,582 explicit exclusions. The new 740 records add 159 windows
+and 581 exclusions. All 50 bands and peer identities remain unchanged.
+
+Both current copies match. Independent calculation and root exact-receipt
+replay check all 740 decisions, 215 rectangle conversions and 318 axis hulls.
+The 173-input union is complete and unchanged. Eleven integration controls,
+four correction controls and reused calculator/adapter/source-validator tests
+pass. The separate checker passes 49 arithmetic/schema/preservation controls
+plus 173 individual missing-pin rejection checks. These are computational
+checks, not physical validation or independent observations.
+
+Use `run-v2-01.json` / `run-v2-02.json`. Preserved V1 omitted an older F5
+generic-band-reference caveat in its new inventory prose; V2 restores it and
+F6's repeated-ID continuity warning with no numerical or source changes.
+The initial synthetic path-normalization error and sandbox-denied save are
+recorded in [validation](connection-curve-comparison/historical-applicability/force56-extension-2026-10-08/validation.md).
+All twelve other pair objects, prior regions and acceptance limits remain.
+No common support, graph discrepancy, human acceptance or cause ranking follows.
+
+Next independent task: recover or specifically disposition F6's inventoried
+Im3 shoulder/rise/descent. Read the current inventory inside V2, remaining-route
+reader-root/reader-force and force-reconciliation, the source batch's protocol,
+and existing Im3 target/context records first. Inspect the original source to
+fix a finite target before new annotation. Preserve separate frozen readers,
+full actual coverage, every disagreement and repeated independent checks, or
+state an exact source-limited result. Do not expand into completed F5 material
+without an explicit target/overlap record. Full-reasoning source interpretation
+and independent review are appropriate; reusable tests handle mechanics.
+
+Broader fourteen-pair regions, seams and support/identity obligations remain.
+All 42 paired human slots are still unselected/unaccepted; axes/legends already
+confirmed must not be requested again. This turn made progress through a
+completed, independently reproduced integration; the full charter remains
+active and incomplete. Generic qualifier-preservation feedback is queued
+locally under unchanged archived routing. No bridge activation, source/legal
+edit, engine acceptance, disclosure, commit or push. Work remains intentionally
+dirty on `research/sherlock-wtc7-investigation`, base `ca1c2233`. This section
+controls continuation; older sections preserve stage history.
+
+## Prior five/six-bolt source recovery
+
+**October 8:** The [F5/F6 recovery](connection-curve-comparison/native-footprint-pass/force56-remainder/report.md)
+completes the fixed F5 Im3 descent and corrected F6 lower-Im1 broken-crest
+targets. Two separate readers actually inspected all 13,062 context cells,
+then froze four originals containing 740 route-column records and 50
+reader-local uncertainty bands before exchange. Both comparisons reproduce
+exactly. Separate checking and root replay verify every source cell, original,
+band, 16,650 set-operation arrays and 45 unchanged pins. Final consumer tests
+pass 18 checks; the independent checker passes 35 controls.
+
+Keep the concrete core/fringe, contact and clipping disagreements. Identical
+outer pixels can have different confidence/status and later eligibility.
+F6's solid route is unassigned in this Im1 crop, not physically absent or zero;
+its separately read Im2 crest is not an automatic seam join. No new common
+support, graph discrepancy, physical-model validation or cause ranking.
+
+The failed 745-column source assertion stopped both initial context saves.
+Actual sources are 741 by 88 RGB. Preserved v1 and prospective v2 records show
+unchanged source bytes and targets. The exact peer-name/role compatibility
+mapping was declared before historical comparison, tested and applied without
+rewriting frozen readings. See [validation](connection-curve-comparison/native-footprint-pass/force56-remainder/validation.md)
+for actual coverage, commands, repeats, independence and retained failures.
+
+Next independent task: integrate these four originals into a versioned
+extension of the current nineteen-region conditional inventory. Read the new
+report/compatibility record and the prior approach34 extension, calculator and
+full fourteen-pair inventory first. Preserve all 38 older reading objects,
+every uncertainty band and new inclusion/exclusion; keep the peer serialization
+and reader alternatives. Repeat outputs and independently verify conversions
+and complete transitive pins. No automatic seam join, common-domain union,
+42-slot selection or human acceptance. Broader F5 rise/origin/tail, F6 Im3
+shoulder/downstream regions, other inventory regions and seams remain open.
+Axes/legend confirmations stand; do not repeat this completed source batch.
+
+The previous goal exchange clarified the acoustic inference boundary without
+a new measurement. This turn made scientific progress through completed source
+readings and independently checked reconciliation. The full charter remains
+active and incomplete. Generic source-dimension feedback is deduplicated locally
+under the unchanged archived Sherlock routing; no bridge activation, disclosure,
+legal promotion, commit or push. Work remains intentionally dirty on
+`research/sherlock-wtc7-investigation`, base `ca1c2233`. This section controls
+continuation; the older sections below preserve stage history.
+
+## Prior conditional approach integration
+
+**October 8:** The [version-2 integration](connection-curve-comparison/historical-applicability/approach34-extension-2026-10-08/report.md)
+adds all four completed E3/E4 approach readings to the full fourteen-pair
+inventory. It contains nineteen local regions, thirty-eight original readings
+and 12,500 records: 4,499 conditional windows and 8,001 explicit exclusions.
+The 584 new windows retain two axis alternatives, 228 original uncertainty
+bands and every reader disagreement. All prior 34 reading objects and twelve
+unaffected pair objects remain exactly unchanged. No source pixels were reread.
+
+Use `run-v2-01.json` / `run-v2-02.json`, not the preserved first version with
+incomplete transitive pin coverage. Both corrected copies match; 131 input pins
+remain unchanged. Eight adapter tests, four dependency-wrapper tests, twelve
+prior calculator tests and forty-five independent-checker controls pass. The
+separate checker and root replay verify all 1,660 new decisions, 784 rectangle
+conversions and 1,168 coordinate hulls. The version-1 six-dependency gap and
+an overstrict checker report-pin preflight are retained with their corrections.
+
+All fourteen pairs now have both-style local candidates under the unchanged
+narrow label criterion. The older E3/E4 lack of a separate solid applies only
+to terminal targets. Hidentity/Hsupport/Hink0 remain assumptions; no continuous
+support, model discrepancy or human acceptance follows. E3's adjacent Im10
+targets and E4's Im10/Im9 targets remain separate, with disputed contacts and
+source-edge exits. The updated inventory is inside the version-2 result.
+
+Next independent source task: recover the inventoried F5 Im3 descent and F6
+lower-Im1 broken crest. Read `remaining-route-inventory/reader-root.json`,
+`reader-force.json`, `force-reconciliation.json`, the current versioned inventory,
+parent native-footprint protocol and existing batch methods first. The F6
+separate-reader Im2 crest-location error is corrected by the reconciliation;
+do not restore it. Fix native targets and two-cell clipped contexts before
+new raw readings, designate separate readers before annotation, preserve exact
+coverage and freezes, and independently check repeated comparisons. Existing
+boxes are not a full-domain mask; retain other pending regions and seams.
+Use full reasoning for source identity and tested components for mechanics.
+Do not repeat completed E3/E4 approaches or the prior fourteen-pair terminal
+pass. Full support/identity disposition precedes the unchanged 42 paired slots;
+axes/legend confirmation stands, curve samples remain unselected/unaccepted.
+
+The [acoustic qualification](causal-chain-synthesis/report.md#october-8-hypothesis-specific-acoustic-qualification)
+keeps thermal and conventional blast predictions distinct. No established
+silence, case-specific thermal mechanism or new causal ranking follows.
+Generic membership-schema feedback remains local under archived Sherlock routing,
+not delivered or verified as an engine fix. No Faraday activation occurred.
+
+The previous goal turn completed source annotations; this turn completes the
+versioned inventory/conditional-coordinate extension and its separate check.
+The full charter remains active and incomplete. No legal
+promotion, disclosure, commit or push. Work remains intentionally dirty on
+`research/sherlock-wtc7-investigation`, base `ca1c2233`. This section controls
+continuation; the sections below preserve earlier stage history.
+
+## Prior conditional curve coordinates
+
+**October 8:** The [conditional-envelope calculation](connection-curve-comparison/historical-applicability/conditional-envelopes-2026-10-08/report.md)
+accounts for all 10,840 saved records across 34 readings and fourteen pairs.
+It produces 3,915 conditional local windows, each with two separate axis
+registrations; 6,925 records retain explicit exclusions. Two complete runs
+match exactly. A separate implementation and root replay check every decision,
+5,088 geometric rectangle conversions and 7,830 plotted-coordinate hulls.
+All 84 input pins remain unchanged; 12 new tests, 31 reused tests, 12 checker
+controls and two corruption checks pass. These validate conditional arithmetic,
+not the truth of the identity, full-column support or enclosing-ink assumptions.
+
+No midpoint curves, support unions, graph discrepancies or human sample targets
+were created. E3/E4 lack separate solid terminal windows; F7 Im1 lacks dash
+windows. F9 Im0 column286 remains a disputed primary alternative, not paired
+admission. Native cell extent is not a calibrated compression-error bound.
+Keep readers and shared-axis alternatives separate; no independent-error model.
+
+The E3/E4 approach batch identified at this stage and its subsequent versioned
+extension are now complete as reported above; these older files remain unchanged. The
+[fourteen-pair reconciliation](connection-curve-comparison/historical-applicability/footprint-reconciliation-2026-10-08.md)
+continues to control all outside-target obligations, including F5 Im3 and F6
+lower Im1. No repeat of completed terminal crops or generic calibration loop.
+Full support/identity disposition precedes the unchanged 42-slot selection.
+Axes/legend confirmation stands; curve samples remain unselected/unaccepted.
+
+The previous goal turn completed the reconciliation receipt; this turn completed
+the conditional coordinate calculation and full separate check. No new source
+pixels, causal ranking, historical solver or accepted physical result.
+Main/raw/legal/engine records remain untouched. Work is intentionally dirty on
+`research/sherlock-wtc7-investigation`, base `ca1c2233`; no disclosure, commit or
+push. Generic feedback stays queued under archived routing. This section and
+its linked report describe that prior stage; the current section above controls.
+
+## Current F4/F5 source annotations retain crossing and fragment disputes
+
+**October 8:** The [fixed gold/blue batch](connection-curve-comparison/native-footprint-pass/force45/report.md)
+is complete at the source-annotation/computational-check stage. Three regions
+have six separately frozen readings; all exports, comparisons and separate
+checks reproduce exactly. The independent audit covers 1,280 route records,
+640 bands, 14,400 set operations, 23,024 source-context records and 3,866 selected
+cell entries. All 37 previous E8/E9 artifact pins are unchanged. Root replay
+passes all twelve synthetic-only checker tests and matches the full audit bytes.
+
+Attribution differences remain at crossings and faint edges; F4 also has a
+dash-fragment grouping dispute. The peer's same-column references can mark
+both routes as conflicted even when unresolved material is near only one.
+Thus neither differing pixel sets nor status-label counts are model-accuracy
+scores. Targeted source critique found no definite transcription defect,
+not proof of all attributions. A pre-save empty-band-reference guard defect
+was demonstrated and fixed before comparison saves; original readings remain
+unchanged. These annotations are not calibrated physical measurements.
+
+Next independent source task is the fixed F6–F9 batch under the
+[frozen roster](connection-curve-comparison/native-footprint-pass/REGIONS.json):
+F6/Im2 [205,0,365,88]; F7/Im1 [220,50,335,88] and F7/Im2 [330,0,475,88];
+F8/Im1 [195,10,370,88]; F9/Im0 [220,55,325,88] and F9/Im1 [245,0,375,88].
+Read current protocol/report/verification and numerical/human controls first.
+Declare the bounded protocol and clipped two-cell contexts before new readings.
+Keep six source-region identities separate, with full stated coverage,
+separate freezes, repeats and separate computation checks. Prior-read reuse
+requires exact-source/equality and coverage receipts, not a claim of new
+independent observation. Do not repeat completed F4/F5, energy targets or F3's
+descending corridor. Full fourteen-pair support inventory, remaining F3
+rise/crest/tail, unresolved identity/seams, justified bounds and unchanged
+42 paired human-review slots remain. Axes/legend are confirmed; curves are not.
+
+The [acoustic reassessment](synthesis-packet/acoustic-update-2026-10-07/report.md)
+is unchanged. C/D reported sounds are not established silence or identified
+mechanisms. A thermal hypothesis does not inherit a conventional blast
+prediction, but nanothermite does not guarantee silence. The third shot's
+own continuous source/soundtrack remains useful; do not transfer first-shot
+lineage or retry denied routes.
+
+Full charter is active and incomplete. No new cause ranking, simulation, human
+acceptance, engine activation, legal promotion, disclosure, commit or push.
+Branch `research/sherlock-wtc7-investigation`, base `ca1c2233`, remains
+intentionally dirty with research work. All batch runs are terminal; no
+background solver is running. Generic region/reuse/reference feedback is
+queued locally under the archived Sherlock destination, not delivered or
+verified fixed. This section and the F4/F5 report control continuation;
+earlier next-action language below is preserved stage history.
+
+## Prior cyan and purple annotations retain faint-edge disagreement
+
+**October 8:** The [fixed E8 and E9 batch](connection-curve-comparison/native-footprint-pass/energy89/report.md)
+is complete at the source-annotation/computational-check stage. Two separately
+frozen readings per region cover all 10,644 context records. Both identify
+locally continuous and broken strokes, while retaining close-trace, interstitial
+and faint-edge disputes. E8 has 129 route outer-set differences and 142 all-ink
+column differences; E9 has 37 and 52. Even one fringe cell counts, so these
+are not model-accuracy scores or different physical trajectories.
+
+All four readings and both comparisons reproduce exactly. Separate checking
+verifies all 1,260 route records, 476 band records, 14,175 set operations,
+every source/context record and 3,930 selected cells, with no exact-white
+selection error. Eight context-adapter controls, 28 independent context
+controls, 21 comparator tests and nine separate-checker tests pass; the last
+include historical replay and 13 scalar controls, not nine wholly synthetic
+experiments. Root replay passes. All 34 prior E4/E5 verification pins remain
+unchanged; the [gold/blue result](connection-curve-comparison/native-footprint-pass/energy345/report-e45.md)
+and earlier corrected E3 record retain their original interpretations.
+
+Next independent source task is the fixed F4/F5 batch: Im4 [330,0,425,88],
+Im4 [375,0,475,88] and Im2 [225,50,350,88]. Read the
+[frozen roster](connection-curve-comparison/native-footprint-pass/REGIONS.json),
+current batch protocol/report/verification and numerical/human controls first.
+Freeze the new adapter/protocol before reading new pixels; require full stated
+coverage, separately frozen readings, repeats and separate computation checks.
+Keep F5's two regions and seams distinct. Use full reasoning for interpretation
+and pinned tested components for mechanics. Do not repeat completed E3–E9
+targets or the F3 corridor. These finite locators do not finish the full
+supported-domain inventory: all fourteen applicability decisions, unresolved
+seams/identities, calibrated bounds and unchanged 42 paired human slots remain.
+Axes/legend confirmation is complete; curve acceptance is not.
+
+The [acoustic reassessment](synthesis-packet/acoustic-update-2026-10-07/report.md)
+still controls: the user's C bang and D repeated-sound observations are not
+silence or classified mechanisms. A thermal hypothesis must not inherit a
+conventional blast prediction, but nanothermite does not guarantee silence.
+The third shot's own continuous source/soundtrack remains the useful new
+acoustic input; do not transfer first-shot lineage or retry denied routes.
+
+No new cause ranking, simulation, human acceptance, engine activation, legal
+promotion, disclosure, commit or push. Full charter is active and incomplete.
+Work remains uncommitted on `research/sherlock-wtc7-investigation`, base
+`ca1c2233`. All current batch runs are terminal; no background solver is running.
+One E8 repeat-save approval timed out; the allowed retry succeeded without
+changing the original or criteria. The generic explicit-reader-role ordering
+fixture is queued locally under the archived Sherlock destination, not
+delivered or verified fixed in Sherlock. This section and the E8/E9 report
+supersede earlier next-action language below; those entries remain stage history.
+
+## Black terminal readings preserve ambiguity and a corrected defect
+
+**October 7:** The preceding acoustic reply added no measurement. This
+continuation completed two separately frozen readings of the
+[fixed E3 black terminal region](connection-curve-comparison/native-footprint-pass/energy345/report.md):
+1,300 model-route records, with all 11,186 context cells inspected per reader.
+Both retain unknown solid-curve contribution instead of copying one visible
+band into two model measurements. Local dash bodies are recorded separately.
+The comparison found three exactly white cells mistakenly transcribed as peer
+fringe. The original is preserved and a deterministic post-exchange erratum
+removes only those three cells, leaving every model route unchanged.
+
+The two original comparisons reproduce exactly. Their 56 route outer-set and
+29 all-ink outer-set differences are reader differences, including the preserved
+defect, not measured model discrepancies. Source contexts for E3/E4/E5 total
+26,641 cells and pass a separate full source/display check. Independent
+reconciliation verifies all 1,300 route records, 441 supplied band records,
+14,625 original set operations and the exact correction. Corrected all-ink
+outer differences are 26, not the original 29. Twelve independent controls
+pass alongside 13 producer tests; root replay also passes.
+No physical ordinate, curve containment, human acceptance or cause ranking
+is established. The prior E6/E7 result remains unchanged.
+
+Next: continue the
+[frozen roster](connection-curve-comparison/native-footprint-pass/REGIONS.json)
+with E4/Im9 [440,72,690,92] and E5/Im9 [395,18,690,47], using the
+already saved two-cell contexts and separate freezes. Their annotation is
+still pending; computational context checks are not visual reading. Preserve
+unknown membership when only one band is visible. Do not repeat the completed
+F3 corridor, E6/E7 targets or E3 source reading. The
+[fourteen-pair applicability decisions](connection-curve-comparison/historical-applicability/report.md)
+still control other unresolved regions; this finite locator pass is not the
+full supported-domain inventory. Bounds, identity/support and the unchanged
+42-slot human rule remain separate subsequent requirements. Do not turn unknown
+support into zero or choose samples by discrepancy.
+
+The [acoustic update](synthesis-packet/acoustic-update-2026-10-07/report.md)
+supersedes the older synthesis's blanket unperformed-listening statement.
+The user's C bang and D repeated-sound reports are preserved observations,
+not classified mechanisms. C's bang-bearing third shot has reviewed picture
+coverage but unresolved original sound/source lineage. A quieter hypothesis
+must not inherit loud-scenario predictions; this does not identify intervention
+or establish silence. No new robust cause ranking follows.
+
+Next useful acoustic input is the third shot's own continuous source/soundtrack
+via a new authorized route, not first-shot retuning or denied-transfer retries.
+The native paired collapse/arrest test remains scientifically important but
+not execution-ready. Full charter remains active and incomplete. No new human
+acceptance, engine state, legal promotion, disclosure, commit or push. Work
+stays on `research/sherlock-wtc7-investigation`, base HEAD `ca1c2233`, with
+intentional uncommitted research. Earlier entries below are stage history;
+their next-action language is superseded where this current section says so.
+The E3 and E6/E7 comparison/check runs are terminal. Use the current report and
+verification record for exact commands, pins and remaining source work;
+no background solver is running. Generic feedback remains queued locally
+under the archived Sherlock destination, not delivered or fixed.
+
+## Structural curve recovery covers the full selected descending corridor
+
+**October 7:** The [F3 descending corridor](connection-curve-comparison/f3-descending-corridor/report.md)
+extends the first two fragments to 90 columns per route, with 180 entries per
+reader and all 8,272 raw context cells. Both frozen readings are retained:
+26 outer sets and 56 core/fringe classifications differ. Forty-six entries
+have no attributed cells from either reader; these are not verified gaps or
+zero physical support. Old/new readings match within the earlier row boxes;
+new outside-box cells remain separately labeled prior-informed observations.
+
+Twenty-one synthetic controls pass. Both reconciliations are byte-identical;
+separate verification covers every source cell, lossless display, 360 literal
+records, 2,700 set operations and 28 old/new comparisons. This finite recovery
+stage is complete, not a calibrated original-curve error model or accepted
+physical measurement. Continue the remaining F3 rise/crest/seam/tail recovery
+before the rest of the all-pair inventory and fixed review sample. Do not
+repeat this corridor, reopen failed color thresholds or ask again for the
+already confirmed axes/legend. Full charter remains active and incomplete;
+no cause ranking, human acceptance, engine state or legal record changed.
+All work stays in this uncommitted investigation worktree.
+
+Continuation: branch `research/sherlock-wtc7-investigation`, base HEAD
+`ca1c2233`; intentional dirty research state, no commit/push. Start at the
+corridor report and its `final-verification.json`, then the existing
+`manual-fragment-inventory.json` and numerical/human-review protocols.
+The next independent source task is the remaining F3 route inventory with
+explicit crest/rise/tail conflicts and strip-seam treatment; declare its finite
+coverage before reading new coordinates, preserve gaps and competing identities,
+and require separately frozen readings plus repeat/separate checks. Use full
+reasoning for source interpretation. Do not fill missing support from the
+completed corridor or infer that the 42 review slots are already selected.
+
+## First structural curve footprints recovered with disagreement retained
+
+**October 7:** [Two F3 local fragments](connection-curve-comparison/f3-native-footprints/report.md)
+now have two frozen native-pixel readings and all 660 raw context cells.
+The readers differ in seven of fourteen outer sets and nine core/fringe
+classifications. Seventeen controls, two byte-identical reconciliations and
+separate verification of every raw cell and 210 set operations establish
+recording/reproduction, not a calibrated original-curve uncertainty bound.
+
+This advances the source-recovery prerequisite; it does not measure a
+spring/shell discrepancy or validate either structural model. The next
+measurement must extend beyond these two fragments through a separately
+declared selection. All fourteen pairs, complete support/identity treatment,
+42 paired human-review slots and wider charter work remain required. The
+axes/legend confirmation is already complete. No causal ranking, actual human
+acceptance, engine state or legal record changed. Work remains uncommitted;
+the full charter is active and incomplete.
+
+## Dense first shot comparison preserves multiple alternatives
+
+**October 7:** The [dense refinement](audio-listening-2026-10-05/c-source-lineage/picture-correspondence/dense-first-shot/report.md)
+compares all 240 earlier-copy frames in [10,18) with C0/2/4. It sustains the
+shared-picture lead and better represents C4's advancing lower cloud, but
+21, 31 and six candidates respectively lie within 0.005 of the dynamic score
+leaders, across separated bands. The fixed 12-frame native shortlist does
+not visually resolve all those alternatives. No unique exposure, time map,
+original soundtrack or cause ranking follows.
+
+Both 720-pair runs reproduce all 723 products; separate arithmetic checks
+verify 1,440 retained transforms, and full sequential decoding verifies 480
+selected PNG instances. All 24 overlapping pairs exactly reproduce the
+parent result. This selected refinement is not independent corroboration.
+The first-shot stage is finished, not permission for mask/audio retuning.
+C's later bang-bearing shot still needs its own provenance. Resume the
+already authorized curve-footprint preparation under its existing gates;
+do not repeat the completed axes/legend review or retry denied transfers.
+The full charter remains active and incomplete; work is uncommitted.
+
+## Held picture comparison strengthens the first shot source lead
+
+**October 7:** The [held-image comparison](audio-listening-2026-10-05/c-source-lineage/picture-correspondence/report.md)
+compares six C reference moments against 38 earlier samples. Its first-shot
+changing-detail candidates are stronger than skyline resemblance alone;
+nearby alternatives still prevent exact exposure identification. The later
+shot containing the approximate bang marker remains unresolved. Do not transfer
+the first-shot relationship to its soundtrack or bridge the montage cuts.
+
+Both runs reproduce all 231 products. Separate arithmetic checks verify 444
+retained transforms and all rankings; two same-source AI visual readings agree
+within their stated limits. No playback-rate fit, original-clock/sound finding,
+human acceptance, causal ranking or legal promotion follows. The next useful
+picture test is a separately frozen dense comparison around the early
+12-to-16-second first-shot lead, not another coarse scan or post-result audio
+retuning. The failed source-transfer route remains stopped. Full charter is
+active and incomplete; curve preparation and other scientific gates remain
+independent. Work remains uncommitted in this investigation worktree.
+
+## Longer recording catalog lead narrowed but media not acquired
+
+**October 7:** The [longer-copy source follow-up](audio-listening-2026-10-05/c-source-lineage/longer-copy/report.md)
+verifies eight scoped folder listings with 18 file and nine folder entries.
+A Gilsanz February presentation folder contains four differently named
+alternatives, none an established alias of the secondary index's target.
+Requested duration/dimensions were absent from normalized metadata responses;
+that is not provider absence or a content mismatch. Both selected raw-file
+references returned HTTP 403 on local transfer, and no candidate media bytes
+were acquired. No denied transfer was retried or bypassed.
+
+The separately checked catalog trail narrows the locator problem, not the
+collapse mechanism. No original-sound, silence, deletion/concealment, source-
+authentication or cause-ranking finding follows. This acquisition route stops;
+the full charter remains active and incomplete. Held-media correspondence and
+the already authorized curve-preparation work remain available under their
+existing scientific/human-review gates. Temporary-link diagnostic exposure
+and its saved-file redaction are explicitly documented, not treated as erased.
+
+## Dense earlier-copy review and waveform screen completed
+
+**October 7:** The [transition/audio result](audio-listening-2026-10-05/c-source-lineage/transition-audio/report.md)
+localizes the earlier upload's main picture discontinuity to presented frames
+175/176 (about 5.839/5.873 file seconds). Both AI readers reviewed all 90
+thumbnails in [4,7); fresh pixel/PTS verification passes. The broad background
+facade remains partly visible afterward, correcting the coarse impression.
+The file's step does not measure a historical physical-time gap or identify
+who altered what or why.
+
+The prospectively defined stereo waveform screen found no dominant-peak
+scale-one candidate between the earlier audio and C: maximum |r| 0.158506,
+versus the declared 0.95 block threshold. Both runs are byte-reproducible,
+and 800 separately implemented direct-score checks agree. This is not an
+exclusion of speed-/mix-/nonlinearly transformed shared sound, an absence-of-
+sound finding, source authentication or expert/human acceptance. Source/image
+lineage and independently supported playback-rate relationships are the next
+discriminators; do not lower the criterion retrospectively or shift audio to
+fit a preferred structural event. No cause ranking or legal-record promotion
+changed. Full charter remains active and incomplete.
+
+## Earlier audio-bearing comparison copy preserved
+
+**October 7:** The [earlier-copy check](audio-listening-2026-10-05/c-source-lineage/early-copy-report.md)
+preserved a public upload dated 2007 in platform metadata, with separate
+video/audio streams. A fixed 38-frame screen shows a related viewpoint
+candidate for C's cloud scenes, not an authenticated source or soundtrack
+match. A substantial change between sampled seconds 5 and 6 needs dense
+review; no timing or mechanism inference is drawn from that coarse screen.
+
+The downloader automatically repaired the first audio container despite the
+no-remux plan. That copy is preserved as transformed; a new repair-disabled
+acquisition matches its decoded PCM. Both frame-extraction runs completed
+and all 44 historical image/map products match. The lower-level source
+lineage, audio correspondence and human-review requirements remain open.
+No cause ranking or legal-record promotion changed. The full charter remains
+active and incomplete.
+
+## Excerpt C source lineage remains unresolved
+
+**October 7:** The [bounded lineage check](audio-listening-2026-10-05/c-source-lineage/report.md)
+followed a saved NIST-linked CD138 folder lead. Its five returned entries do
+not include the named longer `WTC7COLLAPSE.MPG`; no new media was acquired.
+Four complete report pages confirm the printed Peskin/Rabanne image credits,
+but do not authenticate excerpt C or its soundtrack. Earlier audio-bearing
+copies and the exact release-28 file remain concrete source leads.
+
+Do not infer acoustic silence from these clips or transfer a conventional-
+blast argument wholesale to hypothetical lower-blast thermal pathways.
+Nanothermite is not assumed silent, and compatibility is not evidence of use.
+No cause ranking or legal-record promotion changed; the full charter remains
+active and incomplete.
+
+## Excerpt C full image coverage completed
+
+**October 7:** The [full C visual review](audio-listening-2026-10-05/c-full-visual-review/report.md)
+preserves every presented frame in track `[430,455)`: 750 frames, independently
+screened as previews by two computational reviewers, each also inspecting 28
+unique native-raster frames. Both confirm the two scene replacements. The
+nominal bang at local 13 seconds and dialogue at 17 seconds are now within
+reviewed coverage; their pictures show cloud among foreground buildings, not
+a uniquely identifiable sound source. Both extraction runs reproduce all
+historical frames/maps/sheets, and 270 old overlapping frames match exactly.
+Timing/source authentication, sound identity and detectability remain open.
+
+The user's [C/D listening response](audio-listening-2026-10-05/human-listening-response-CD-2026-10-07.json)
+supersedes older statements below that C/D await any human response. C has
+approximate noise/bang/dialogue markers; D has an untimed report of several
+explosion sounds. These are partial observations, not accepted classifications
+or complete timed inventories. Neither compilation edits nor unresolved
+acoustic attribution establish concealment, silence or a collapse mechanism.
+No causal ranking or legal-record promotion changed. The full charter remains
+active and incomplete.
+
+## Curve axes and legends confirmed: preparation may proceed
+
+The [October 7 human confirmation](connection-curve-comparison/human-legend-confirmation-2026-10-07.md)
+supersedes the axis/legend blocker below. Together with the six anchor checks,
+it completes that source-mapping review portion. Do not request it again absent
+a concrete discrepancy. The user also authorized selected-curve packet
+preparation, not acceptance of uninspected curve coordinates.
+
+Next executable scope: source-native linewidth/color/identity and supported-
+domain inventory under the existing numerical protocol, followed by frozen
+selection of 42 paired slots using the existing cumulative-support rule.
+Unknown support must not be encoded as empty support. No spring/shell
+discrepancy metric is authorized before the separate uncertainty, identity,
+sample-review and reproduction requirements are satisfied. Audio C/D and
+window gates remain independent. This new input ends the prior review impasse;
+the investigation remains active and incomplete.
+
+## Faraday synthetic retries completed; prior approval blocker superseded
+
+The separately authorized retries and preserved failures are documented in
+[the control-matrix result](faraday-bridge-pilot-2026-10-05/CONTROL-RETRY-RESULT-2026-10-07.md).
+The native log records nine passing tests. Both synthetic matrix receipts
+record 136 passing checks, ten cases and 21 CLI calls, no unexpected guard
+denials, and identical declared semantic results. A main-thread read-only Ruby
+check verified those counts/flags, both full-log hashes and semantic equality;
+it did not rerun the bridge or independently validate scientific findings.
+
+The prior statement that the retry awaits authorization is historical and
+superseded. Export behavior is now exercised, not merely source-inspected.
+Important limits remain: exports accept unresolved destination references,
+do not necessarily revalidate exploratory raw bytes, and retain local artifact
+locators. Two-way Sherlock admission, actual case import, human acceptance
+and scientific rigor are not established by these synthetic tests. No cause
+ranking or legal-record promotion follows. Audio and curve review gates remain.
+
+## Partial human reviews supersede earlier pending labels
+
+The saved [six-anchor response](connection-curve-comparison/human-anchor-observations-2026-10-06.md)
+completes the coordinate-location check: all six reported points fall within
+the proposed ranges. Do not request those six checks again. Axis units/ranges,
+model line styles, bolt-count colors and later selected curve samples remain
+unverified by a human; no historical curve metric is accepted.
+
+The saved [excerpt B response](audio-listening-2026-10-05/human-listening-response-B-2026-10-05.md)
+supplies partial listening observations, superseding the earlier statement
+that B has no human response. It describes noise/screams and uncertain
+explosion-versus-truck speech, not authenticated multiple explosions or a
+complete timed sound-event inventory. C/D still await human review. The
+machine transcripts remain drafts. These inputs change the outstanding
+review work, not the cause ranking. Faraday retry authorization is still
+outstanding; no retry was executed during this reconciliation.
+
+## Remaining audio speech drafts prepared
+
+**2026-10-05 B/C/D local speech processing complete as unreviewed drafts:**
+The [review packet](audio-listening-2026-10-05/local-asr/BCD-REVIEW.md) links
+original stereo audio, machine text, estimated segment times and exact methods.
+Six GPU runs succeeded; each pair is byte-identical. B contains a candidate
+qualification from an explosion description to a possible truck; actual
+listening must verify it. C has three ellipsis-only segments, and D has an
+untranscribed gap; neither means silence. No sound-event or cause conclusion.
+
+The initial interpreter mismatch failed before inference and is preserved;
+the same runner succeeded with explicit installed Python 3.13.7. Thirteen
+invented validator cases and argument matching passed. Separate Ruby code
+verified 39 product hashes/sizes, source preservation, three WAV headers,
+21 segment time bounds, repeat equality and six GPU logs. No independent
+human review is claimed. Human listening status for B/C/D remains awaiting
+review, while transcript drafting is no longer pending. A's nonspeech query,
+curve/window checks, native structural dependencies and user-owned decisions
+remain separate. The app goal is now verified active, superseding the prior
+blocked-status observation below; full charter scope remains incomplete.
+
+## New human audio input
+
+**2026-10-05 Human speech transcript received for excerpt A:** The user's
+[rough transcript](audio-listening-2026-10-05/human-spoken-transcript-2026-10-05.md)
+supplies actual listening input for `spoken-stereo.wav`, with rough local
+markers at 2, 4, 7, 14 and 15 seconds. The live listening record is updated;
+agent perceptual access remains unestablished. Speech describing an explosion
+is not a distinct heard-blast observation. B/C/D and nonspeech-event review
+remain incomplete. The prior no-response impasse below is historical, not the
+current audio state. The user also proposes the existing local Pataphor/Hugging
+Face transcription route; the bounded result is completed below.
+No cause-ranking, legal-record, accepted-engine, commit or push change.
+
+**Local speech-model capability verified for this excerpt:** The cached
+Whisper large-v3-turbo model, called directly without Pataphor's vocabulary
+prompt or the user's transcript, returned five segments in two byte-identical
+GPU runs. See the [result and disagreements](audio-listening-2026-10-05/local-asr/report.md).
+The preceding 600-second CPU timeout remains preserved; a prospective hardware
+addendum preceded any machine transcript. Human and machine agree on speech
+describing an explosion, not detection of a blast. The ending differs and stays
+unverified. No actual sound-event inventory or B/C/D listening is supplied by
+this result. Further speech work may use the demonstrated route with unchanged
+provenance/uncertainty controls. Current app goal status was last observed
+blocked; this new user-directed work is progress, not a claim that the tool's
+status has been resumed. Other review, native-model and authority limits remain.
+
+## Prior blocked audit
+
+**2026-10-05 App goal BLOCKED, not complete:** A third consecutive check
+verified the same missing audio, window and curve responses (`e3b914`) and
+unchanged scoped response-file inventory (`27b9c1`). The prior two turns were
+no progress, not verified waits; no relevant scientific process remains live.
+The app goal-status tool returned `blocked` after this audit. Full charter
+scope is preserved. No new result, ranking change or claim of universal
+source exhaustion follows.
+
+Resume meaningful work when an actual review response, applicable new record
+or authorized capability change becomes available. Immediate prepared routes:
+[four-excerpt listening](audio-listening-2026-10-05/HUMAN-REVIEW.md),
+[six-axis-anchor and legend check](connection-curve-comparison/human-review-packet.md),
+and the [partial window review](nist-acoustic-detectability/WINDOW-STATE-HUMAN-REVIEW.md).
+Native case/state/output dependencies, held matrix-save authority and archived
+feedback routing remain separate. R1 and the finite preparation/review units
+are complete and must not be repeated as new progress. A user resumption starts
+a fresh blocked audit; do not reuse this historical three-turn counter.
+
+## Earlier second impasse check
+
+**2026-10-05 Second consecutive impasse check:** The preceding turn was
+no progress, not a verified wait. Fresh saved-state checks again show no
+audio response/zero listens, unmarked 142-N12 inspection and an unmet curve
+human gate; the scoped response-file inventory contains no new reply.
+No new applicable input, authorization or live scientific job was identified.
+This is the same input-dependent impasse, not a new blocker or scientific
+result. Counter: 2 consecutive checks after the completed sample preparation.
+The app goal is verified active and remains incomplete; no completion or
+blocked status is asserted on this second check.
+
+## First post preparation impasse check
+
+**2026-10-05 First post-preparation impasse check:** The previous goal turn
+completed the prospective sample rule. This continuation produced no new
+scientific result or executable preparation: it rechecked the saved audio,
+window and curve-review states and the bounded response-file inventory.
+Audio still records zero listens and no human response; 142-N12 inspection
+remains unmarked; the curve source-mapping gate remains unmet. All relevant
+subagents are terminal, with no current scientific process handle to wait on.
+The existing packets, native-case dependency proposal and locally queued
+feedback remain the available handoffs. No additional justified pre-human
+task was identified in the checked records; this is not a claim that every
+public source has been exhausted. Do not count this status update as progress,
+repeat completed tests, or invent a human observation. This is the first
+consecutive no-progress impasse check after the completed preparation; the
+full goal remains active/incomplete, not yet marked blocked. A substantive
+human response, applicable new record or authorized capability change can
+unlock the corresponding next task.
+
+## Completed prospective sample preparation
+
+**2026-10-05 Prospective human curve sample selection completed:** The
+[selection addendum](connection-curve-comparison/HUMAN-SAMPLE-SELECTION.md)
+fills the specific missing rule for choosing later human curve-coordinate
+checks before discrepancy results. It retains all seven pairs in both panels,
+uses three common-support positions, and preserves missing, boundary and
+duplicate targets. Four invented interval examples and the 42-paired/84-model
+entry census independently reproduce. Bounded method review requires no
+material correction. This is preparation, not historical measurement; the
+sample cannot alone certify peaks, unshared tails or whole-curve accuracy.
+
+**Next actual observation:** The existing six-axis-anchor/legend human check
+remains pending, before source-native uncertainty/support work and eligible
+historical tracing. The populated later sample packet cannot be invented now.
+No new generic curve framework or repeated synthetic sweep is the next task.
+Other listening/window, native-model and user-owned gates below remain open.
+R1 stays complete. The generic workflow note is local under SFB-004/SFB-005;
+a fresh two-page listing confirms the feedback destination is still archived.
+No send/unarchive, cause-ranking change, main/legal or accepted-engine mutation,
+stage, commit or push. Full goal remains active and incomplete.
+
+## Previous shared changed evidence review
+
+**2026-10-05 Shared changed-evidence review:** Two fresh analytical reviewers
+read the same nineteen-file packet, including all thirteen additions, and
+froze their fire/intervention arguments separately. The
+[root disposition](synthesis-packet/changed-evidence-review-2026-10-05/report.md)
+retains a partial comparison, not a new robust overall ranking. Specific flash
+and construction-anomaly arguments weaken; reported arrest after local damage
+is positive model-level evidence. Historical propagation remains unverified.
+Root expressly limits one reviewer's mild-fire wording to visible appearance,
+not thermal severity, and retains the stable-caption common-clock condition.
+
+**Completed review, not new physics:** The final critic found no material
+correction within scope, after fully reading eleven of nineteen inputs and
+checking the rest through the detailed reconciliations; all nineteen identities
+matched. Both opposing reviewers read all nineteen. These are AI analyses of
+shared derivatives, not professional engineering validation or new historical
+corroboration. This closes the specific expanded-packet review gap; do not
+reopen it without changed evidence or an identified substantive error.
+
+**Next dependencies:** Actual four-excerpt listening is still missing. The
+window response remains partial: 142-N12 has selections but inspection unmarked;
+the other unchecked targets are not silently completed. Curve axis/legend
+inspection and later selected-coordinate checks remain separate. R1 is complete.
+The paired structural test needs authenticated native cases/states/outputs and
+appropriate engineering resources; the existing scan did not find a runnable
+pair. No repeated report review, arbitrary source sweep or guessed substitute
+run supplies these observations. The held matrix-save and archived-feedback
+routing decisions remain user-owned. Full goal active/incomplete; research-only
+WIP on ca1c2233, no main/legal or accepted-engine change, commit or push.
+
+## Previous Figure 5-121 supplement
+
+**2026-10-05 Figure5-121 supplementary observation:** A separately declared
+[full-page reading](fire-coverage-batch3/page-render-5-121-2026-10-05/report.md)
+now addresses the previously unscored upper photograph's appearance. Both
+frozen readers identify a central flame-like band; smaller lower warm patches
+remain ambiguous, right-side illumination/reflection alternatives survive,
+and haze/foreground obstruction limit visibility. The source discloses rotation,
+intensity adjustment and added labels. This is a processed-image observation,
+not a measured thermal history, independent clock or structural conclusion.
+
+**Preserved boundary:** The17-strip native reconstruction remains failed.
+Batch3 still has25 newly admitted images from26 targets; the combined corpus
+still has51 figure representations and50 admitted JPEG assets. The supplementary
+page render changes neither denominator nor the original observations or
+timeline. Two exact repeated renders and two one-view AI readings of the same
+source do not create independent historical evidence. No cause ranking changes.
+
+**Remaining work:** The bounded next-action review identified this as the one
+new feasible empirical task in the checked records, not proof that every
+public source is exhausted. Its completion leaves actual listening, the
+separate curve and Human142-N12 reviews, authenticated camera/installed-state
+joins and native paired structural cases unresolved. Do not repeat completed
+spot, procurement, municipal, source-clock or stable-control searches without
+a concrete changed input. User-owned matrix-save and archived-feedback routing
+decisions remain separate. No extra view/representation sweep is authorized
+by this one-page result. Research branch/ca1c2233 remains intentional WIP;
+main/legal, accepted engine state and the full incomplete goal are unchanged.
+
+## Previous published stable-case check
+
+**2026-10-05 Published stable-case check:** The
+[four-page comparison](causal-chain-synthesis/stable-control-2026-10-05/report.md)
+clarifies the reported 3.5-hour noncollapse control. Local floor/connection
+failure is reported without initiating interior-column buckling. The two
+stable-caption times would be 3.70 and 4.26 seconds after damage application
+if they share its simulation clock; neither establishes a run end or numerical
+stability criterion. A separate no-debris case has a one-second inconsistency
+between its relative and parenthetical time labels. That is a publication
+question, not demonstrated solver failure or manipulation. The sign-caption
+issue retains the readers' lower-legend legibility difference.
+
+**Scientific consequence and verification:** The reported matched-parameter
+comparison is affirmative model-level evidence, not independent validation of
+the real building's damaged state or propagation boundary. Two separately
+frozen AI readings of the same four rendered pages, zero repeat views, exact
+label arithmetic and source/hash checks support this finite source result.
+The source-reader critique's two wording corrections are incorporated. No new
+simulation, physical measurement or cause ranking follows. The failed first
+render and successful declared retry are both preserved in the execution log.
+
+**Next physical discriminator and dependencies:** Existing inventories have
+now been checked for the paired-case feasibility question; no newly located
+executable pair or native outputs emerged. Do not repeat that scan as new
+progress. The report specifies the exact case/include/state/restart/build
+records, applied temperatures and damage, termination criteria, force/contact/
+energy histories and figure-time crosswalk needed to test both outcomes
+unchanged. A paired reproduction requires those records, suitable resources
+and competent review; no guessed replacement state or solver run is authorized.
+This completes the prior next-step source/readiness check, not the physical
+comparison. Continue only distinct feasible charter work or a specifically
+changed-input follow-up; the requested human listening, Human142-N12, curve
+review and matrix-save decisions remain separate, and must not be fabricated.
+
+**State:** Research branch/ca1c2233, intentional WIP; full goal active and
+incomplete. Current unit is research only. Main/legal records, historical
+sources, original annotations, older reconciliation and accepted engine state
+remain unchanged. No new retrieval, model/engine run, outreach, disclosure,
+promotion, staging, commit or push. The existing generic feedback route remains
+pending the unanswered archived-task routing question; this source-reading
+closeout does not create a new Sherlock software defect or new send authority.
+
+## Previous material evidence reconciliation
+
+**2026-10-05 Material evidence reconciliation:** The
+[updated assessment](synthesis-packet/reconciliation-2026-10-05/report.md)
+integrates eleven additions against the unchanged fourteen-report October 4
+selection. It dispositions every addition, Q01–Q10, eight causal links and
+D1–D9. Actual municipal drawings, approvals and qualified commissioning reports
+replace earlier unread/proposal-only descriptions. Four new column anchors
+remain distinct from the unidentified altered beams; no installed-to-mesh or
+physical propagation result follows. The narrow Camera3 feature is persistent
+in the selected images; this is not blanket flash exclusion. Audio remains
+unheard and the Faraday trial remains incomplete before export.
+
+**Assessment:** No robust total cause ranking is newly earned. Positive fire,
+physical-test and conditional acoustic evidence remains alongside unresolved
+global propagation, stable outcomes, source limitations and intervention-
+compatible motion. Ordinary construction/commissioning has positive support
+for the reviewed documents; unfinished work and missing closure remain visible.
+Neither establishes general innocence, guilt or a historical collapse chain.
+Completed retrieval/reading routes are closed as tasks, not as historical
+questions. The first-floor structural-pointer branch is not automatically
+expanded to adjacent records or an electrical memo.
+
+**Verification and review:** All35 frozen inputs and all14 original baseline
+pins match. Root independently checked23 documentary support pins, seven PNG
+container/time records, the WMV source, four WAVs, null/unheard status and the
+bridge zero-collection receipt. Source checks are not new scientific runs.
+Separate component reviews and assembled critique retain their shared-source
+and prior-involvement limits; review disposition is recorded in the linked
+assessment and its validation. A CO23 sentence was corrected to distinguish a
+December1 fax referencing requested sketches from a request made on that date.
+
+**Next scientific work:** The highest-leverage physical test remains paired
+collapse/arrest under justified residual restraints, with actual D3–D6 case
+states, loads, capacities and force/energy diagnostics. Before proposing a run,
+check the existing case/state inventories for a complete 3.5/4.0-hour difference
+and output inventory; do not relabel a known missing-input scan as a new test.
+Acceptance is an exact executable case-specific test or a concrete missing-
+record/resource proposal, not guessed replacement inputs. Full-reasoning
+structural source review is needed; solver resources or expert engagement
+requiring new authority must be proposed separately. The smaller outstanding
+media task is the already requested four-excerpt human listening review, not
+another unchanged failed audio-route attempt.
+
+**State and boundaries:** Same research branch/ca1c2233, intentional WIP;
+full goal active/incomplete. Human142-N12, curve-human, listening and the held
+NIST/UAF observation-matrix save decision remain separate. Generic feedback is
+local pending the unanswered archived-task routing question. Main/legal,
+historical sources, original coordinate bands and accepted engine state are
+unchanged. No acquisition, model/engine run, outreach, external disclosure,
+promotion, staging, commit or push in this reconciliation.
+
+## Previous Faraday capability result
+
+**2026-10-05 Faraday bridge trial remains incomplete:** The
+[declared synthetic pilot](faraday-bridge-pilot-2026-10-05/report.md) reached
+no evidence export. After one preserved environment-preflight repair, the
+native runner failed before collection because our output wrapper lacks a
+required interface. The separately declared custom setup then used an invalid
+direction literal and stopped. These are harness defects, not demonstrated
+Faraday export failures. No second matrix or further repair was attempted.
+The bridge remains unverified for real investigation use.
+
+**Observed and preserved:** Both executed guard self-controls passed within
+their limited scope, with no unexpected denial. Seven custom setup commands
+created a synthetic exploratory dataset, a nonactivated pending-review
+hypothesis and a non-scientific inconclusive record. No export, final audit,
+synthesis, ledger verification or repeated-matrix comparison followed. Both
+full run trees are preserved: 57 entries match, including 25 file byte hashes.
+All 13 engine pins match a separate post-attempt check and Faraday remains
+clean. Source-inspected export limitations remain unverified at runtime; the
+matrix's own post-run inventory fields are absent, not passes.
+The [separate final review](faraday-bridge-pilot-2026-10-05/final-review.md)
+finds the bounded failure report accurate and records the prior review misses;
+it does not accept the bridge or complete any scientific gate.
+
+**Next independent task:** Reconcile material claims and dependencies in the
+existing evidence-organization packet, using the unchanged October 4
+[fourteen-file comparison scope](completion-audit-2026-10-04/COMPARISON-SCOPE.md)
+and eleven expanded result entries: Camera 3 spot persistence; procurement
+Exhibit 14 follow-up and interactive case search; municipal originals synthesis,
+model crosswalk, first-floor plan review, held-metadata locator, public search,
+candidate content review and Change Order 56; and the audio capability trial.
+Read the October 4 report/component reviews, existing WP0 provenance and
+synthesis-packet contracts first. Define the finite input list before edits;
+trace selected material propositions to source/page/time and family/dependency
+records. Acceptance is a reviewed Q01–Q10/eight-causal-link/D1–D9 reconciliation,
+all eleven additions dispositioned, completed searches removed from live queues,
+null/unheard audio retained, and an exact next physical discriminator or missing
+dependency. Do not turn more report rows into completion of the science.
+Use full-reasoning source review, with independent family/claim checking.
+
+**Boundaries and state:** Same research branch/ca1c2233, intentional WIP.
+Main/legal, historical sources, original coordinate ranges, accepted Sherlock
+state and human-review boundaries are unchanged. No collapse ranking change,
+real-data bridge use, engine patch, installation, outreach, promotion,
+publication, staging, commit or push. The separate NIST/UAF observation-matrix
+save boundary, Human142-N12 and curve-human gates remain. Generic harness and
+capability feedback is local under the unanswered archived-task routing question.
+The full goal remains active/incomplete; a failed bounded software trial does
+not block independent evidence integration.
+
+## Previous audio capability result
+
+**2026-10-05 Audio capability result:** The
+[bounded trial](audio-listening-2026-10-05/report.md) returned an explicit
+audio-input omission in this session. Root received no perceptual sound and
+froze that response before the separate fixture assessment. The gate did not
+pass; recognition accuracy is not applicable, not zero. No historical excerpt
+was listened to or assigned a sound event. This does not show that the files
+are silent or that another listener/player cannot use them.
+
+**Verified preparation and actual request:** The separate source check passed
+all four held WAV byte/format/frame-count/recorded-offset joins and two encoded
+source/manifest checks. These are integrity and recorded-lineage findings, not
+new decoding or historical authentication. The
+[98-second human packet](audio-listening-2026-10-05/HUMAN-REVIEW.md) is saved;
+the app queued its opening and the asynchronous review request was accepted.
+Playback and human response are not yet verified. Structured events remain
+null/unheard, not an empty negative finding. The prospective method review
+and final outcome review preserve the actual-human and physical-detectability
+boundaries; no material correction was requested. Later request/log entries
+and explicit listener-context prompts are documented separately from the
+reviewed snapshots.
+
+**Next independent task:** Receive the specific four-excerpt human review or
+establish a genuinely changed authorized audio route; do not rerun this failed
+route unchanged. Independent authorized work remains: scope the synthetic
+Faraday export test already proposed in the
+[setup review](completion-audit-2026-10-04/root-review.md), after reading current
+Faraday controls and checking isolated data flow. Test plumbing and adverse
+reference cases only, not historical physics or real case import. No installation,
+runtime upgrade, real export, accepted finding or outreach is implied.
+
+**State:** Same research branch/ca1c2233 with intentional WIP; main/legal,
+historical source bytes and earlier annotations unchanged. No cause ranking
+change, actual-human acceptance, accepted Sherlock state, Faraday execution,
+fee, sensitive transfer, publication, staging, commit or push. Media-access
+feedback is deduplicated under SFB-002/SFB-005 and remains local pending the
+existing routing question. The full goal and WP2 listened-event requirement
+remain incomplete. This scoped capability limit is not a global blocker.
+
+## Previous Change Order 56 content test
+
+**2026-10-05 Change Order 56 content test:** The
+[one-page review](municipal-co56-review-2026-10-05/report.md) finds a request
+for first-floor fiber-rack electrical work, not the missing structural plan.
+Column42 locates the rack; panelELP-76 is an equipment identifier. Coring and
+patching are included, but no cored member, penetration geometry, sheet or
+revision is supplied. The January18,1999 electrical memo is a concrete lead,
+not a demonstrated bridge to the earlier notch sketch. Approval is requested,
+not verified; installed condition and structural effects remain unknown.
+
+**Verification:** Both complete independent readings froze before exchange,
+one initial image view each, zero repeats; material fields agree. Printed
+costs add to$19,242. Independent rendering reproduces complete bytes/dimensions;
+an initial cache-directory assertion failure and the corrected rerun remain
+preserved. Source-reader critique and separate final logic review requested
+no material correction. These checks establish neither historical authenticity,
+safe/unsafe coring nor a collapse mechanism.
+
+**Next independent task:** Stop this structural-candidate branch under its
+declared nonmatch rule; no automatic memo/adjacent/proposal queue. Return to
+WP2's four held stereo excerpts with a separately frozen listening protocol:
+verify exact bytes and source-time maps, establish a capable listener, then
+record actual heard events, onset intervals and uncertainty. If audio cannot
+be perceptually ingested here, request the specific human review; no waveform,
+transcript or playback-widget substitution. Keep human/qualified acoustic
+checking before event times carry causal weight. Broader physical detectability,
+original-source timing and all other charter dependencies remain separate.
+
+**State:** The prior29-page unit was progress; this test adds one public PDF
+and a scoped negative result that changes the next workstream. Same research
+branch/ca1c2233 and intentional WIP; main/legal and earlier sources/readings
+unchanged. No cause ranking change, actual listening, model/bridge action,
+human acceptance, fee, outreach, sensitive transfer, promotion, publication,
+staging, commit or push. Full goal active/incomplete. No new product defect
+established; archived Sherlock feedback routing remains pending.
+
+## Previous first-floor candidate content review
+
+**2026-10-05 First-floor candidate content review:** The
+[complete29-page review](municipal-first-floor-candidates-2026-10-05/report.md)
+finds no actual first-floor structural plan in either candidate. Drawing
+index173192 repeats the material May15/May13 project5576A references in held
+173199; receipt dates are not issue dates. The25-page169180 packet contains
+fire-prevention/complaint/inspection/service records, including specific
+violations and compliance-related dispositions, not usable blueprint geometry.
+No index-to-October-revision/member/model or installed-condition join follows.
+
+**Verification:** Two separately frozen4+25-page readings and two later held
+comparison views per reader are complete, with zero larger repeats. All29 new
+rasters reproduce byte-for-byte and by dimensions, from two terminal exit0
+processes; source PDFs remain unchanged. Root checked34 captured/preserved
+pairs and all29 reproduction-table rows. Fine directive/date/order wording
+disagreements and the peer's disclosed note-save/append events remain in the
+records. Independent source review corrected one service/follow-through phrase;
+the separate final synthesis review found no further substantive correction.
+These checks do not authenticate history, validate engineering or supply
+human acceptance.
+
+**Next independent task:** Separately declare one complete-page test of exact
+returned CO56 record168526 for a specific first-floor sheet/revision/work
+reference. Its multi-floor label is not a member match. If it supplies no new
+exact pointer, retain the nonmatch and return to another charter workstream;
+no automatic adjacent/archive/proposal queue or renewed166828 view budget.
+The other15 IDs, distinct CO23/CO40 questions, four-window listening and named
+native-state structural tests retain their own evidence/capability limits.
+
+**State:** This unit adds two public PDFs and29 new-page derivatives; it does
+not change cause rankings or complete the investigation. Same research branch,
+ca1c2233 HEAD and intentional WIP. Main/legal and earlier sources/readings are
+unchanged. No model/bridge activation, human acceptance, fee, outreach,
+sensitive transfer, publication, promotion, staging, commit or push. No new
+product defect established; archived Sherlock feedback routing remains pending.
+
+## Previous first-floor public-index lookup
+
+**2026-10-05 First-floor public-index lookup:** The
+[four fixed requests](municipal-first-floor-public-search-2026-10-05/report.md)
+returned 20 appearances / 17 unique IDs. Drawing index **173192** (four reported
+pages) and blueprint/fire-record packet **169180** (25 reported pages) are the
+next content-review candidates, not verified applicable plans. The known
+166828 packet appears under S-S-1 and SKS-S-2, but not the paired S-1/first-floor
+query. All returned sets are uncapped according to the service; archive recall
+and query/OCR semantics remain unverified. One missing folder property is
+explicit. The 306 metadata-reported pages are not newly read pages.
+
+**Verification:** Root's 28 distinct parser tests passed and its saved result
+replays exactly. A separately frozen extraction agrees on all 17 records,
+20 memberships and four coverage rows; root replayed its 20-test command.
+The independent reader's 112-check reconciliation and separate method review
+found no factual correction. All four captured/preserved response byte pairs
+match. The initial local DNS failure and the 48-invocation/28-distinct-test
+distinction remain documented. These checks do not validate drawing content,
+historical authenticity, installed conditions or a structural mechanism.
+
+**Next independent task:** Declare acquisition and complete-content review of
+173192 first, then 169180, using the known public content route and exact IDs.
+Read actual dates, revisions, sheets and geometry; compare the index with held
+173199 only after the new reading is frozen. Preserve duplication, wrong-project,
+different-revision and unreadability outcomes. Keep the other 15 IDs as leads,
+including separate CO56 record168526; no automatic 306-page queue. Do not reopen
+the exhausted S-S-1 image budget. CO23, CO40 and other charter workstreams remain
+distinct and open.
+
+**State:** This metadata-only unit adds two testable source candidates, not a
+cause-ranking change. Same research branch/ca1c2233 HEAD, intentional WIP;
+main/legal, source bytes and prior readings are unchanged. No new PDF/image,
+model execution, fee, outreach, sensitive transfer, publication, promotion,
+staging, commit or push. Existing feedback covers the observed limitations;
+archived Sherlock-task routing remains pending. The full goal is active and
+incomplete.
+
+## Previous first-floor held-metadata lookup
+
+**2026-10-05 First-floor held-metadata lookup:** The
+[fixed local search](municipal-first-floor-locator-2026-10-05/report.md)
+has run over 4,205 folder rows and 23 saved response sets (302 appearances,
+208 unique IDs). It finds no declared sheet-token or combined first-floor/
+structural-subject lead; 36 WTC7 catalog context rows and eight returned
+document context leads remain lower-specificity. The known S-S-1 packet
+166828 is itself a label nonmatch, so this cannot support drawing absence
+or withholding. First-floor rebar labels and drawing indexes remain leads,
+not a proved applicable revision, installed condition or model join.
+
+**Verification:** Root's 16 synthetic tests passed before execution;
+complete result replay and all 24 input hashes match. Original capped
+responses and eight missing folder properties remain explicit. A separately
+frozen independent extraction reproduces all matches, pins, coverage and IDs;
+root replayed its 44-test command and compared complete material outputs.
+Separate method review reran the 16-test suite, added mocked integration
+checks and found no required correction. Failed synthetic/reader-wrapper
+checks and their corrected reruns remain preserved. These checks concern
+local extraction and interpretation, not source authenticity or engineering.
+
+**Next independent task:** Declare a finite public document-index lookup for
+S-S-1, SKS-S-2 and S-1 with first-floor
+context, plus known166828 as a retrieval control. Save exact query syntax,
+counts, caps, omissions and nonmatches; no automatic PDF acquisition, guessed
+adjacent IDs, unbounded folder queue or reopening of the exhausted image
+budget. A returned lead still needs sheet/revision/grid/member-key verification.
+CO23 and CO40 questions and all other charter workstreams remain distinct.
+
+**State:** The immediately preceding coordinate response rechecked old data
+and added no goal progress. This lookup yields new scoped coverage evidence
+and changes the next action, not the full completion standard. Same research
+branch/ca1c2233 HEAD, intentional WIP; main/legal, preserved sources and earlier
+observations unchanged. Data-quality/evidence controls retained grain and
+nonmatch limits; no new Sherlock issue or delivery is claimed. No network,
+image/PDF content, model execution, fee, outreach, transfer, promotion, stage,
+commit or push. The full goal remains active and incomplete.
+
+## Previous first floor legibility review
+
+**2026-10-05 First-floor plan legibility test:** The
+[completed one-page rereading](municipal-first-floor-plan-review-2026-10-05/report.md)
+corrected the earlier image-detail forwarding mismatch but did not recover a
+complete notched-beam identification. Both readers confirm S-S-1, the represented
+first-floor subject/date, Re:S-1 and the express SKS-S-2 condition. Neither can
+trace all leader terminals/branches to named endpoints and a targeted W-section.
+Candidate numeric bubbles are not adopted endpoints; the FS/TS companion-prefix
+uncertainty remains. No altered-member/model or physical cause finding follows.
+
+**Verification:** Each reader used one complete initial view and one justified
+larger repeat of the same held page, with notes saved before the repeat and
+separate final freezes before exchange. Four views are not four sources.
+Both larger deliveries explicitly resized3593x4800 to2751x3676 despite original
+detail flags; native display is not claimed. Source/raster and earlier-note
+pins match, and both initial-note versions recover exactly. Separator-boundary
+guard failures and their corrections remain in the independent receipt.
+Reader-reported tool chronology is not independent timing certification.
+Separate visual/method critiques found no required substantive corrections.
+Root rechecked eleven input/draft pins and both initial-note prefixes.
+
+**Next independent task:** A finite lookup in already-held municipal catalog/
+index fields for the applicable first-floor S-1 or a clearer same-revision
+S-S-1. Define fields/candidate criteria before searching; seek revision,
+grid/member schedule and companion relationships, not filename similarity
+alone. May13,1998 S-1 is a candidate, not a proved underlying revision. Return
+a scoped nonmatch if none is located; no undirected folder/attachment queue or
+automatic acquisition. Do not silently reopen this view budget. CO23's
+seventh-floor sketch and CO40's exact backup remain distinct. Other charter
+workstreams and pending package/matrix/human/expert gates remain open.
+
+**State:** The previous crosswalk was progress; this test closes its specific
+representation question with an unresolved geometric result and changes the
+next action to locating a better applicable source. Same research branch and
+ca1c2233 HEAD, intentional WIP. Original evidence, prior readings and main/legal
+remain unchanged. PDF and evidence-audit controls preserved the viewing budget,
+uncertainty and source roles. Existing image-forwarding feedback received a
+generic local follow-through; archived-destination routing remains pending,
+not delivered or fixed. No new acquisition/render/OCR/model execution, fee,
+outreach, transfer, promotion, staging, commit or push. Full goal still active.
+
+## Previous municipal drawing and model crosswalk
+
+**2026-10-05 Municipal drawing and model crosswalk:** The
+[completed bounded comparison](municipal-model-crosswalk-2026-10-05/report.md)
+locates explicit model diagnostic labels70/71/73/74 from the April municipal
+comments, alongside existing controls44/76/79. Each resolves uniquely through
+its stated part set to a model part and supplied section/material references.
+This is not a guessed numeric-ID mapping. No altered-beam, slab, connection,
+physical-floor or installed-condition correspondence is yet established.
+
+**Discriminator:** The first-floor S-S-1 plan is held, but its complete
+notch-leader/member/grid mapping remains unresolved. CO23's separate seventh-floor
+governing sketch is not supplied by the reviewed records; CO40's exact joint
+is unjoined. Seventh-floor mass titles and the published lower-boundary
+idealization are useful leads, not those missing structural matches. No
+historical model omission, capacity defect or cause-ranking change follows.
+
+**Verification:** Drawing/model notes froze before root synthesis access.
+Separate checking reproduced seven explicit joins. Root verified60 input
+size/hash rows,14+17 referenced-note pins, four frozen unit pins and31 local
+links; the seven-row numeric table matches the pinned derivatives. Critical
+review corrected the geometry-verification scope and CO23 fax wording, and
+preserved the30/31 floor ambiguity and previous larger view's unresolved result.
+Both reviewers verified the corrections. A check detecting a concurrent report
+revision failed before numeric comparison; the confirmed revision was reread
+and the rerun passed. No primary source or historical solver was rerun.
+
+**Next independent task:** Prospectively bound a native-detail legibility
+review of held166828 p4, S-S-1. Target the notch leaders, complete beam/grid
+endpoints and Re:S-1 key with separately recorded readings and a fixed repeat
+budget. Correct the earlier detail-delivery mismatch; do not promise clearer
+source information, overwrite earlier readings or force agreement. Accept a
+defensible member reading or an explicit unresolved result. Then determine
+whether the underlying first-floor S-1/revision/grid schedule is still needed;
+do not select model elements or elevations from number similarity. CO23's
+November3 submission/sketch and CO40's December21 backup remain separate leads.
+No new acquisition or pending drawing-package permission is cleared here.
+
+**State:** The immediately preceding coordinate turn rechecked old data and
+made no new goal progress; this crosswalk completes a new locator unit, not
+the investigation. Same research branch/ca1c2233 HEAD and intentional WIP.
+The full charter and all other workstreams remain active and incomplete.
+Main/legal, sources and earlier frozen observations remain unchanged. Evidence
+audit/source-preservation skills kept source roles and internal verification
+distinct. No new source view/acquisition, engine action, fee, outreach,
+disclosure, promotion, staging, commit or push. Existing feedback already
+covers identity/version/join discipline; archived Sherlock routing remains
+pending. Conditional comparison is not gated on proving every installed detail.
+
+## Previous municipal evidence integration
+
+**2026-10-05 Municipal evidence integration (begun October 4):** The
+[integrated assessment](municipal-originals-2026-10-04/synthesis.md) reconciles
+twenty content units and five locator units across 49 PDFs / 123 physical
+pages. The records include actual first-floor notch/reinforcement and trench
+drawings, express cost approvals, later fuel-route/protection changes, and
+reported July generator operation/readiness with seven outstanding items.
+These support ordinary scoped construction/commissioning more directly than
+an identified covert operation within this documentary subset, but do not
+validate installed adequacy, event-day state or the fire-to-collapse sequence.
+No overall cause ranking changes or numerical probabilities follow.
+
+**Discriminator:** Separate the first-floor drawings from the still-missing
+seventh-floor CO23 governing sketch. CO88/97 weaken an assumption that earlier
+route/protection drawings are final; CO40's joint identity remains unjoined.
+Reported readiness does not validate the intended pump that was not operating
+during that test. Pending-report language supplies a concrete ordinary
+alternative to concealment inferred from nonattachment. Legitimate scope is
+not an actual access log. These are claim-specific limits, not a requirement
+to prove all installed conditions before conditional model comparison.
+
+**Verification:** Separate design and test reviews froze before reading root's
+draft. Final design critique required five narrow source-role corrections;
+all were applied and verified. The test reviewer found no substantive blocker
+within its scope. Current inventory confirms 49 PDFs, 123 pages, 7,859,629 bytes;
+all source pins match prior receipts, and distinct bytes are not independent
+families. Root replayed 116 file size/hash checks and the exact PDF path set,
+then 60 design and 20 test input pins, scope/review pins and 34 synthesis links.
+All passed; root did not reparse pages or rerun historical render/physics tests.
+Delayed notes, display limitations, source disagreements, corrected agent
+errors and the metadata parser failure remain explicit in linked records.
+
+**Next independent task:** Bounded local drawing-to-model locator crosswalk:
+read the synthesis and fixed scope first, then existing structural drawing/model
+inventories and held S-S-1/SKS-S-2/S-TS-7 evidence. Keep CO23 references separate
+from its missing sketch and CO40 separate from an assumed joint. Acceptance:
+each supported member/grid/revision/model link records whether merely indexed,
+held, readable or represented; contradictions and missing originals remain
+explicit. No guessed geometry, fresh simulation or universal missing-record
+claim. Declare any necessary primary rereview separately. Final OEM route and
+fuel/control configuration remain complementary leads; the 191-ID union is not
+a mandatory queue. Full-reasoning integration with bounded mechanical checks
+is appropriate. All other charter workstreams remain open.
+
+**State:** Research worktree/branch unchanged at ca1c2233 with intentional
+uncommitted WIP. The ±1-pixel human comparator record was reconfirmed, not redone
+or counted as a new observation. The municipal synthesis makes new integrative
+progress and closes its declared review unit, not the full investigation.
+Main/legal, earlier audit, operational plan and frozen sources/reviews remain
+unchanged. Existing evidence-audit and source-preservation skills maintained
+these boundaries. No source viewing/acquisition, engine action, outreach,
+fee, disclosure, promotion, staging, commit or push. Generic workflow feedback
+is already deduplicated; archived Sherlock destination routing remains pending.
+
+## Previous generator service review
+
+**2026-10-04 Generator service and factory-test review:** The
+[three-file, twelve-page review](municipal-originals-2026-10-04/generator-service-review/report.md)
+adds a DCAS assertion that a H.O. Penn generator-maintenance contract was
+already awarded, a separate proposed Kaback HVAC agreement, and Cosentini's
+express recommendation for a credit for witnessing prospective Peoria factory
+testing. Future weekly testing, maintenance frequencies and the HVAC one-hour
+emergency-response promise remain service commitments, not performed-work
+records. Kaback's copy has a vendor mark and blank customer acceptance; neither
+universal nonacceptance nor actual performance follows.
+
+**Discriminator:** The Peoria recommendation is affirmative evidence of a
+proposed oversight/cost decision, with a stated technical/commercial rationale.
+It is not certified test data, cancelled testing or implemented credit. The
+older schedules' field-test witnessing deletion is not silently equated with
+this factory-test letter. Earlier reported July testing/readiness and its seven
+open corrections remain intact. The October body/October fax/July footer
+mismatch is preserved without an invented chronology or fabrication finding.
+No physical-compatibility or overall-cause ranking changes.
+
+**Verification:** Both readers covered all twelve pages and froze before
+exchange; zero repeats. Root's final note was saved late after interruption,
+while the other eleven and all observer notes were saved before advancing.
+One delayed save remains a limitation despite material reader agreement. A
+minor brand spelling is excluded from equipment joins. Three independent
+renderer executions reproduce twelve rasters; all 31 preserved pairs match.
+Root rechecked frozen/source pins, ordered12+12 coverage, links and four
+header-ignore guards. Municipal holdings are49 PDFs/123 physical pages,
+including copies, not archive exhaustion. Separate final critical review found
+no substantive blocker or required correction. The one delayed note remains
+a limitation; neither review nor integrity checks certify historical truth.
+
+**Next independent task:** Reconcile the completed municipal generator/design/
+test sequence into the existing WP5 assessment before adding another source
+queue. Use the frozen unit reports and the read-only main operational plan;
+keep any new synthesis in this worktree and preserve the earlier assessment
+as dated history. Identify what resolves a former lead, what remains missing,
+and which remaining record could actually change a physical or operational
+inference. Separate service logs/certified test data/approved-credit linkage
+from the broader model, fire, material and acoustic questions. Do not treat
+the191-ID catalog union as a mandatory reading population or assume every
+administrative detail has equal causal value. Full-reasoning synthesis with
+independent source-role review is appropriate; no new acquisition is preapproved
+by this next-task description beyond the standing charter boundaries.
+
+**State:** Same research branch/ca1c2233 HEAD and intentional WIP. The preceding
+coordinate reconfirmation made no new scientific progress; this review closes
+the unfinished service packet, preserving its deviation. Main/legal, acquired
+sources and frozen readings remain unchanged. Existing feedback already covers
+the delay and document-role lessons; no duplicate issue or new send. Archived
+Sherlock routing remains unresolved. No source views/requests during synthesis,
+engine action, fee, outreach, sensitive transfer, promotion, staging, commit or
+push. The full charter remains active and incomplete; other human/listening/
+expert, native-model, source-clock and matrix-permission gates are unchanged.
+
+## Previous Job 1854 follow-up content review
+
+**2026-10-04 Job 1854 follow-up content review:** The
+[six-file, seven-page synthesis](municipal-originals-2026-10-04/job1854-followup-review/report.md)
+adds an explicit August 1999 statement that H.O. Penn's report was not attached
+and would follow upon receipt. Three copies are one transmittal family; one
+adds a review request, not completed review. This supports ordinary pending
+transmission, not later delivery, universal absence or concealment.
+
+Ambassador reports present emergency readiness based on Cosentini while
+describing future corrections and load-shedding testing. A February 2000 memo
+recommends a specific pump-valve change but does not establish implementation
+or identity with the July temporary pump. The transient-keyword candidate is
+preliminary door/lock material, not measured generator data. Preserve both
+affirmative operation/readiness reports and unfinished-work limits. No physical
+compatibility or overall collapse-cause ranking changes.
+
+**Verification:** Both readers covered all seven pages, saved each note
+before advancing, froze before exchange, and used zero repeats. The readings
+materially agree; an uncertain contractor job prefix is excluded from exact
+joins without rewriting notes. Six independent renderer processes succeeded,
+all seven rasters reproduce and all 41 preserved pairs match. Municipal holdings
+are 46 PDFs / 111 physical pages, including copies, not archive exhaustion.
+Root's closing integrity, coverage-structure, header-ignore and link checks pass.
+Critical review corrected an overstated claim grade and distinguished
+documented nonattachment from a concealment inference; source roles otherwise
+agree. Actual commands and limits are recorded in the source log.
+
+**Next independent task:** Declare full reading of exact held-metadata leads
+172371 (maintenance contracts, 2 pages), 172958 (service agreement, 9) and 168654
+(Peoria generator test, 1). Determine whether they identify dated actual service,
+equipment or acceptance, or only contract terms/planned factory testing; keep
+factory and site tests distinct. Require source admission, all twelve pages,
+separately frozen readings, derivative verification and critical review. No
+assumed equipment/date join or guessed adjacent IDs. Raw July test data, pump
+identity/implementation, CO016, sign-off, chronology and final-route leads remain
+open; this is not an unlimited archive-reading queue. Full-reasoning source
+interpretation with separate mechanical verification remains appropriate.
+
+**State:** Same research branch/ca1c2233 HEAD and intentional WIP. The preceding
+coordinate reconfirmation made no new scientific progress; this synthesis closes
+an unfinished source review and changes the next documentary test. Main/legal,
+sources and frozen observations remain unchanged. Generic search/source-role
+feedback is deduplicated locally; archived-destination routing remains pending.
+No new source views/requests, engine action, outreach, fee, sensitive transfer,
+promotion, staging, commit or push during synthesis. Wider human/listening/expert,
+native-model, source-clock and matrix-permission gates remain separate. Full
+charter active and incomplete.
+
+## Previous Job 1854 follow-up lookup
+
+**2026-10-04 Job 1854 follow-up lookup:** The
+[ten-query diagnostic inventory](municipal-originals-2026-10-04/job1854-followup-locator/report.md)
+retains 142 returned occurrences / 97 unique IDs, including 80 not in the
+preceding 111-ID extraction. The Penn query is capped at 50/157. Eight IDs omit
+the requested folder-name field: the original strict contract failed and stays
+failed; a separate diagnostic preserves all supplied fields and quarantines.
+No new PDF was acquired or read; municipal holdings remain 40 files/104 pages.
+
+**Negative-evidence control:** The transient query misses all five already-read
+Job 1854 report copies, whose frozen readings describe transient testing.
+Other queries retrieve them. The reason is unknown; server termination and
+the successful exact-record control do not establish content-search coverage.
+Do not turn query nonmatches into missing records or concealment.
+
+**Verification:** Root's 20 strict and eight diagnostic synthetic tests passed;
+independent method review added 22 and nine cases respectively. Diagnostic
+replay is exact while strict validation still fails. All 41 preserved copy pairs
+verify. The independently implemented raw extraction is now frozen/reconciled:
+all 97 IDs, supplied fields, memberships, coverage states and exceptions agree.
+The readers were not numerically blind; the original strict failure remains.
+
+**Next independent task:** Freeze acquisition and
+full content review for exact returned IDs 171251, 172976, 172977, 171520,
+174095 and 167866: six PDFs, seven metadata-reported pages. Test actual
+transmittals/attachments, dated corrective work, pump configuration and whether
+transient material is measurement or specification. Require all pages,
+separately frozen readings, source checks and derivative reproduction; preserve
+duplicates and contrary findings. Retain maintenance, service-agreement,
+Peoria-test, CO016 and prepurchase-specification leads without calling them
+completed tests or an unlimited reading queue. Full-reasoning interpretation
+and independent mechanical verification remain appropriate.
+
+**State:** Same research branch/ca1c2233 HEAD and intentional WIP. The preceding
+coordinate reconfirmation was no new scientific progress; this search changes
+the available locator set and demonstrates a retrieval limit. No cause ranking
+changes. Full headers are local-only and ignored by Git after a checker printed
+server-cookie values unnecessarily; no cookie was replayed or values included
+in generic feedback. Missing-field/search and header-output lessons are locally
+deduplicated; archived Sherlock routing remains pending. No main/legal change,
+PDF view, engine action, sensitive transfer, outreach, fee, promotion, stage,
+commit or push. Other human/listening/expert, native-model, source-clock and
+matrix-permission gates remain separate; the full charter stays incomplete.
+
+## Previous Job 1854 report review
+
+**2026-10-04 Job 1854 test report:** The
+[five-file, fifteen-page review](municipal-originals-2026-10-04/generator-job1854/report.md)
+finds one August 2, 1999 Cosentini letter family reporting July 31 testing:
+three engines at full load for 2½ hours, transfer-switch responses around
+seven seconds and the system left automatic/ready for emergency demand.
+Seven corrective or investigative items remained open, including temporary
+building-pump use and a generator startup stoppage. Raw H.O. Penn/APT records,
+chart review, correction closure and permanent/event-day state are not supplied.
+The July 31 report does not establish the outcome of the July 17 plan or supply
+the 1998 cover's enclosures. Both positive operation and unresolved work remain.
+
+**Source family:** Four copies cross out the enclosure phrase and add “refer to”;
+171252 retains the printed wording. Annotation authorship/date are unknown.
+Preserve this material version difference, not five independent tests or proof
+of concealment. No collapse-cause ranking changes.
+
+**Verification:** Both readers covered all fifteen pages, saved each note before
+advancing, and froze before exchange; zero repeats/delayed saves. Readings
+materially agree. Root shorthand was narrowed in synthesis: incorporate/test
+is not an assumed prior test, and present readiness is not deferred until all
+seven corrections. All fifteen rasters reproduce; thirty-one preserved files
+match. A checker's read-only shell-variable error and a reader's failed typo
+patch remain disclosed, not source failures. See the
+[source log](municipal-originals-2026-10-04/generator-job1854/source-log.md).
+Current municipal holdings are 40 PDFs / 104 physical pages, including related
+copies, not independent-source counts or archive exhaustion. Final critical
+review found no substantive blocker in this bounded result.
+
+**Next independent task:** Begin a prospectively bounded lookup for H.O. Penn's
+July 31 test report, APT transient records/Cosentini review, correction closures
+and the July 17/31 date bridge. Four precise folder/title checks in the existing
+111-ID extraction yielded no hits, not content/archive absence; its generator
+query was capped. Use source-specific token variants, exact returned IDs and
+declared coverage, not guessed adjacent documents. Accept located records with
+provenance or a bounded unresolved result. Keep 1998 enclosure, sign-off,
+punch-list and permanent-route/field leads distinct. Full-reasoning source
+interpretation with independent mechanical verification remains appropriate.
+
+**State:** Same research branch/ca1c2233 HEAD, intentional WIP. The preceding
+coordinate reconfirmation was no new investigation progress; this source review
+is progress. Main/legal and frozen evidence unchanged. Generic annotation/version
+feedback is deduplicated locally, with archived destination routing still pending.
+No activation, disclosure, outreach, fee, promotion, staging, commit or push.
+Other listening/human/expert, native-model, source-clock and matrix-permission
+gates remain separate; full charter active and incomplete.
+
+## Previous generator planning and cover review
+
+**2026-10-04 generator-test records:** The
+[four-page source review](municipal-originals-2026-10-04/generator-test-results/report.md)
+directly identifies a planned July 17, 1999 OEM blackout-simulation test.
+It does not establish the outcome or whole-building test coverage. The two
+full-load-labeled PDFs strongly fit a single split fax packet, not independent
+tests. The Generator Test Results item is a 1998 cover naming five pages;
+its result enclosures are absent from that one-page file, not demonstrated
+absent from the archive. Actual test results, sign-off and completion remain open.
+
+**Verification:** Both readers covered all four pages in order, saved each note
+before advancing, and froze before exchange; zero repeats or delayed notes.
+Material readings agree and final critical review found no blocking issue.
+All four rasters reproduce and all eleven preserved files match; a checker's
+diagnostic-filename mistake remains disclosed. Holdings are now 35 PDFs /
+89 pages, including related files. No cause ranking changes.
+
+The preceding [metadata lookup](municipal-originals-2026-10-04/test-acceptance-locator/report.md)
+retains 111 unique IDs from 121 hits. Generator 50/144 and punch 50/91 are capped
+partial results; exact-date zero does not establish record absence. Independent
+parsers agree. Three synthetic parser weaknesses were corrected without
+changing the frozen results. Local filename joins can change after acquisition;
+the lookup records its original holdings snapshot.
+
+**Next independent task:** Declare full reading of the five saved Job 1854
+candidates 171252, 172389, 172539, 172543 and 174096, three pages each. Test
+actual dates, system/location, test method/results and possible ties to the
+1998 cover or 1999 plan; preserve duplicates and adverse results. Acceptance
+requires all 15 pages, independently frozen readings and reproducible source
+derivatives. Keep exact enclosure/sign-off/punch-list and final route/field
+leads open. Full-reasoning interpretation and separate mechanical verification
+remain appropriate. No guessed adjacent-ID acquisition.
+
+**State:** Same research branch/ca1c2233 HEAD, intentional WIP. The prior
+coordinate check made no new investigation progress; this lookup and source
+review do. Main/legal and frozen evidence are unchanged. No engine/bridge,
+sensitive transfer, outreach, fee, promotion, stage, commit or push. Existing
+source-role/segmentation feedback is deduplicated locally; archived routing
+awaits the existing user decision. Scientific, human/listening/expert,
+native-model and matrix-permission gates remain separate. Full goal active.
+
+## Previous municipal candidate review
+
+**2026-10-04 remaining municipal candidate review:** The
+[three-file, nine-page study](municipal-originals-2026-10-04/approval-breakdowns-b/report.md)
+adds a concrete July17,1999 emergency-generator testing condition, PortAuthority
+sign-off and punch-list payment conditions, and earlier fuel-route negotiation
+states. No test outcome, sign-off, final installed route or collapse mechanism
+is supplied. Deletion of a named consultant's test-witnessing service is not
+deletion of all testing. Later payment amount matches remain reconciliation
+leads, not automatic proof of successful testing.
+
+**Qualified verification:** Both readers completed all nine pages, zero repeats,
+and froze notes before exchange. Both page-4 saves were delayed after interruption;
+the deviation remains explicit. Four exact-field transcription disagreements
+are retained and excluded from substantive conclusions. Root's19selected cost
+comparisons yielded18matches/1mismatch: thirteen dated amounts on the June23
+budget exceed its printed subtotal by85,000. The independent calculator found
+the same mismatch. A stale line/formula, mixed version or adjustment remains
+possible; no concealment or missing-funds inference is established. All nine
+rasters independently reproduce; all sixteen preserved files match scratch.
+
+**Coverage:** The saved sixteen-candidate drawing-search content queue is now
+fully represented by two complete recorded readings:16PDFs/47physicalpages.
+This is not archive exhaustion or proof every desired drawing/test record was
+found. Municipal holdings are32PDFs/85physicalpages, including related copies.
+No physical-compatibility or overall cause ranking changes from this unit.
+
+**Then-next task, completed above:** The bounded test/sign-off/punch-list
+lookup and first four-page content selection are now complete. Preserve the
+specific order88route, order97enclosure and later valve/hatch/control leads.
+Conditional documented-design/model comparison can proceed separately;
+historical installed-state omission and physical-consequence claims require
+the additional member/revision/field and model evidence.
+
+**State:** Research branch/ca1c2233, intentional WIP. The repeated coordinate
+turn made no new progress; this resumed documentary review does. Main/legal,
+original sources and frozen notes remain unchanged. Existing interruption/
+transcription feedback is deduplicated locally, with archived routing unresolved.
+No engine/bridge action, disclosure, outreach, fee, promotion, stage, commit or
+push. Human/listening/expert/native-model/matrix gates remain separate. Full
+goal active and incomplete.
+
+## Previous approval breakdown review
+
+**2026-10-04 approval breakdown review:** The
+[three-file, eleven-page study](municipal-originals-2026-10-04/approval-breakdowns-a/report.md)
+adds related July 1999, November 1999 and April 2002 schedule states. They
+identify a later second-floor machine-room corridor fuel route, the prior-line
+credit, a two-hour enclosure substitution and later valve/hatch/suppression
+control work. Payment tables affirmatively report payments, not merely
+proposals. These remain source assertions, not verified disbursement,
+installation, inspection, capacity or an operational intervention chain.
+The March 1999 route references cannot be assumed the last documented revision.
+
+**Review and corrections:** Both readers covered all eleven pages with one
+larger repeat each and froze notes before exchange. Comparison found two root
+transcription errors: row 114's amount is 1,221, not 1,210; July row 87's amount
+is blank, not the later 1,276. A separately declared two-page, post-freeze check
+confirmed the corrections; frozen notes and the earlier failed arithmetic
+remain preserved. The apparent 11-dollar subtotal mismatch was our error,
+not a historical accounting anomaly. Handwritten versus printed approval
+dates remain unresolved. Original and corrective view counts stay separate.
+
+**Verification:** All twelve used rasters independently reproduce; all twenty
+preserved files match scratch. Sixteen corrected root arithmetic comparisons
+and 24 independent equalities match within their stated scope, not a full
+financial audit. Municipal holdings are **29 PDFs / 76 physical pages**,
+including copies. Related schedules are not independent witnesses. No cause
+ranking changes; conditional design/model and installed-state tests remain open.
+
+**Then-next task, completed above:** Declare full review of the three remaining saved
+candidates **172953 (5 pages), 173949 (2), 174004 (2)**. These nine reported
+pages were then unread; 172953 has the literal label None. Then pursue the precise
+order 88 route, order 97 enclosure, and valve/hatch/control approval and field
+records. Resolve CO40's joint/revision before a historical capacity claim.
+A conditional documented-design/model crosswalk need not wait for proof of
+installation, but must not be called an established historical omission.
+
+**State:** Research branch at ca1c2233, intentional WIP. Coordinate confirmation
+rechecked an existing result and did not advance the goal; the resumed
+documentary synthesis does. Main/legal records, source bytes and frozen notes
+remain unchanged. Source-version/transcription feedback is deduplicated and
+queued locally; archived Sherlock routing remains unresolved. Other audio,
+human/expert, model-input and matrix gates are unchanged. No engine/bridge
+action, transfer, outreach, fee, stage, commit or push. Full goal active and
+incomplete.
+
+## Previous agency approval letter review
+
+**2026-10-04 agency approval letter review completed with a method qualification:**
+The [two-file, four-page review](municipal-originals-2026-10-04/various-orders/report.md)
+adds a DCAS/DRES letter dated January25,1999, reissuedFebruary3, expressly
+approving ten orders totaling$78,288subjecttoaudit. CO40's trench/rebar work
+is approved at$21,300;CO23explicitly concerns seventh-floor reinforcement;
+CO41specifies antenna-support clips at ten locations. Exact contractor
+submission dates sharpen follow-up. The two PDFs are one letter family,
+not independent approvals, and establish no installed condition or capacity.
+
+**Method and verification:** Both readers covered all four pages, zero repeats;
+root's first-file page2note was saved only after a coordinate-request diversion
+and context handoff, before the next view/peer content. The immediate-recording
+deviation is preserved, not passed retroactively. Material readings agree.
+All four rasters independently reproduce; all nine preserved files match.
+Municipal holdings now total**26PDFs/65physicalpages**, including copies.
+Source approval is affirmative; payment, audit completion, construction,
+inspection and structural effects remain unproved. No cause ranking changes.
+
+**Then-next task, first batch completed above:** Declare bounded full-reading batches for the six
+saved candidates171286(5pages),171620(3),172947(3),172953(5),173949(2),174004(2).
+Those twenty reported pages were then unread. Five are breakdown-labeled;
+172953has literal labelNone. Test exact CO40detail, revisedCO44Rroute and
+CO55scope; do not infer contents from titles. Follow with an exact-order/sketch
+lookup if needed, not guessed neighbor IDs. Joint/revision, field records and
+engineering validation remain necessary before any causal use.
+
+**State:** Same research branch/ca1c2233HEAD, intentional WIP. No main/legal
+edit or frozen-note replacement. The generic interruption lesson is queued
+under existing Sherlock feedback; archived routing remains unresolved.
+Other audio, human/expert, model-input and matrix gates are unchanged. No
+engine/bridge action, sensitive transfer, outreach, fee, staging, commit or
+push. This unit makes documentary progress; the full goal remains active.
+
+## Previous change order review
+
+**2026-10-04 change-order review completed:** The
+[four-file, ten-page review](municipal-originals-2026-10-04/change-order-review/report.md)
+adds affirmative contractor-reported progress and commercial approval
+accounting. CO38 concerns drains under SKP-3/SKP-4, not first-floor beam work;
+the table reports $7,000 approved. Separate entries describe approved trench
+rebar work (40), revised oil piping (44R) and electrical rerouting (55).
+These are stronger scope/disposition leads than titles or proposals alone,
+but not installed, inspected or adequate-construction findings. No cause
+ranking or intent conclusion follows.
+
+**Open reconciliation:** Entry 40 specifies a three-inch overlap and welding,
+without a floor/drawing identifier. Do not equate it with, or declare it
+contradictory to, the earlier disputed trench drawing before identifying the
+joint and governing revision. Entry 44R names FSK50/SK58 with a March 19, 1999
+date; do not silently substitute the older route drawing as the final version.
+Deletion of Cosentini's witnessing of a generator test is not deletion of
+the test itself. Blank, zero and nonzero approval fields remain distinct.
+
+Both readers completed all ten pages with separate frozen notes, zero repeats
+and explicit original-detail forwarding; no resize notices are not a geometry
+certificate. The peer's section-order insertion error is disclosed, not hidden
+by editing frozen notes. All ten rasters independently reproduce and all
+nineteen preserved files match scratch. Fine-label uncertainties and a
+$516/$576 cost-line inconsistency remain. Municipal coverage is now
+**24 PDFs / 61 physical pages / 12 content units**, including copies.
+
+**Then-next task, completed above:** Declare full review of the saved lookup's two
+Various Change Orders candidates, **167170** (2 pages / 104,270 bytes) and
+**171802** (2 / 113,155). Test narrative scope/disposition and any exact join
+to CO40, CO44R or CO55, retaining copies and negative joins. Their labels do
+not guarantee these details. Keep the six other candidates pending: five
+breakdown-labeled records and 172953, literally labeled None. Do not infer
+that unlabeled record's content. If the specific records remain missing, use a bounded exact-order/
+sketch lookup, not guessed neighboring IDs. No older primary-image comparison
+is necessary merely to re-establish the already-read drain scope. Underlying
+trench details, final route revisions, installation and inspection are the
+highest-value documentary needs. Full-reasoning interpretation plus separate
+mechanical verification is appropriate.
+
+**State:** Same research branch and ca1c2233 HEAD; intentional uncommitted WIP.
+Main/legal records and earlier frozen inputs unchanged. Generic display and
+note-order lessons remain queued under existing Sherlock feedback entries;
+archived routing has not been reopened or bypassed. Human/listening/model-input/
+matrix gates remain separate. No engine/bridge action, sensitive transfer,
+outreach, fees, staging, commit or push. This unit made substantive progress;
+the full charter remains active and incomplete, not blocked or completed.
+
+## Previous oil route and structural packet
+
+The
+[eight-page review](municipal-originals-2026-10-04/oil-route-packet/report.md)
+supplies actual **S-S-1 and SKS-S-2** with scope-limited notch permission and
+reinforcement details, an alternate protected fuel-line route, an earlier
+S-TS-7, a conditional beam-opening response and separate antenna drawings.
+These beam-sheet acquisition gaps are now closed; exact affected-member
+mapping, capacity and installed-state gaps remain. The separate comparison
+shows restoration already prescribed in October and an explicit overlap
+clause added in the December version. The packet has mixed subjects/dates,
+not one contemporaneous oil-route transmission. No cause-ranking change,
+model-omission finding or intentional-weakening conclusion follows.
+
+**Disagreements and method deviation:** Page7opening dimension is4versus9inches
+in the first alternative; underlying drawing reference isFS-7versusTS-7.
+Neither is adopted for numerical/exact-location use. The December overlap
+numeral remains unverified despite a shifted tentative reading. Root's
+stronger plate-extension paraphrase is not accepted geometry. Root requested
+original detail at the loader but did not forward that setting explicitly
+through the image helper; the peer did. This was not matched-display review,
+and fine-text effects are not assumed limited to known disagreements. All
+original notes are preserved. All11usednewrasters independently reproduce;
+that does not resolve display/legibility limitations. Coverage then was
+**20 municipal PDFs/51 physical pages/11 content units**, including copies.
+
+**Then-next task, completed above:** Before acquisition, declare complete review of the
+saved lookup's four change-order candidates: **168580**(1page/41911bytes),
+**168581**(1/48367), **171840**(6/374954), **173920**(2/244250). Ten reported
+pages total; first three are Change Order38labels and the last clarification.
+Use exact preserved metadata and the verified City URL contract; no neighboring
+guesses. Test actual scope, sheet references, revisions/dispositions and
+proposed/approved/performed distinctions. Preserve copy families and negative
+joins; price or approval is not installed compliance. The other finite
+[lookup candidates](municipal-originals-2026-10-04/drawing-locator/report.md)
+and readable master-plan/final-drawing/as-built/inspection needs remain.
+For future views, explicitly preserve original detail through both loader
+and forwarding helper and record returned geometry; do not silently rerun
+this frozen unit. Full-reasoning interpretation plus separate mechanical
+checks is appropriate. Do not reacquire the completed eight-page packet.
+
+**State:** Same research branch and ca1c2233 HEAD; intentional uncommitted WIP.
+Main/legal records and previous frozen inputs unchanged. A generic forwarding
+fixture extends existing SFB-002/SFB-005 locally, not a verified product defect
+or delivered fix. Previously confirmed archived feedback routing and human/
+listening/model-input/matrix gates remain separate. No engine/bridge action,
+sensitive transfer, fees, outreach, staging, commit or push. Both the preceding
+drawing synthesis and this content review made progress; no repeated blocker.
+The full charter and investigation remained active and incomplete.
+
+## Previous folder lookup
+
+**2026-10-04 exact folder listings resolved:** The
+[metadata lookup](municipal-originals-2026-10-04/folder-document-locator/report.md)
+identified the other two structural-services files, **167240 and 167759**,
+and the other sprinkler file, **171557**. The public backend and City portal
+hostname returned matching five-ID listings, exact target folder properties,
+3-document/6-page and 2-document/2-page totals, and explicit no-more-results
+flags. Separate analytical checks reproduced the joins and counts. Four
+bounded metadata requests, no PDF acquisition in this unit; this establishes
+complete returned listings for the two queries, not historical archive
+completeness, document-content independence, installation or inspection.
+
+**Preserved content result:** The prior
+[three-PDF review](municipal-originals-2026-10-04/design-sprinkler-followup/report.md)
+found a structural-services fee proposal, a drawing-transmittal cover and a
+sprinkler quotation, not calculations or completed-work evidence. Its original
+folder-total/first-document misreading and correction remain visible. Fourteen
+municipal PDFs/thirty-four physical pages have been read across eight content
+units, including repeated content. The new metadata does not increase that
+content-coverage count or change the cause ranking.
+
+**Then-next task, now completed above:** Before fetching content, declare complete reading
+and comparison of the exact newly located IDs 167240, 167759 and 171557
+(five pages reported by the portal). Use the saved requests/responses and
+pins in the metadata unit, not inferred neighboring IDs. Compare the two
+structural files against already-read 167235 and the sprinkler file against
+171300. Check actual dates, terms, signatures/client acceptance, attachments,
+technical calculations and installation/inspection evidence; repeated copies
+are a legitimate result and not independent corroboration. Preserve acquired
+bytes, full-page readings, disagreements and independent review. Do not infer
+contents from labels/sizes. The earlier count error is not withholding proof.
+No broader crawl, confidential court packet, fee, outreach or canonical/legal
+promotion. Full-reasoning review is appropriate for interpretation; mechanical
+hash/render checks can be delegated independently.
+
+**State:** Same branch and ca1c2233 HEAD; intentional uncommitted research WIP.
+Earlier frozen inputs and main/legal records unchanged. Existing SFB-005 covers
+the catalog-grain/locator issue; no separate new product-defect claim. The
+designated Sherlock chat was freshly confirmed archived earlier on October 4;
+no repeat polling, send or unarchive in this unit. Human/listening/model-input/
+matrix gates remain. No engine/bridge, sensitive transfer, spending, stage,
+commit or push. Full goal active/incomplete; this turn resolved an available
+records lookup, so there is no repeated-blocker condition.
+
+## Previous hatch comparison
+
+**2026-10-04 inspection/hatch comparison completed:** The
+[new two-record review](municipal-originals-2026-10-04/hatch-followup/report.md)
+identifies a June 2, 2000 request for a proposal to replace the first-floor
+tank-room hatch with a specified Bilco FR-2 hatch that closes on Inergen
+activation, using the existing opening/framing. This adds location and proposed
+work details, not authorization, installation or functional testing. The source
+also describes an existing fire-rated hatch, not a wholly unprotected opening.
+The new 172163 copy repeats the held March 21 memo and is not independent
+inspection corroboration. Completion and 2001 condition remain unknown.
+
+Two complete, separately frozen readings agree on these roles; all three
+selected page renders independently match byte for byte. Display resampling
+limits are retained. Eleven municipal PDFs/thirty physical pages are now read
+across seven source units, including repeated underlying content; these are
+not eleven independent witnesses. The held comparison page was reread, not
+counted as a newly acquired page. No collapse-cause ranking changes.
+
+**Then-next task, first documents now reviewed above:** Define one finite review of the remaining explicitly
+catalogued technical-content candidates NYC-WTC_000167235 (structural engineering
+services, six pages), NYC-WTC_000167873 (SKP-3/SKP-4/revised S-TS-7 transmittal,
+one page), and NYC-WTC_000171300 (fuel-room sprinkler quotation, two pages).
+Use main `research/WTC7_archive_leads_2026-09-16.md` for exact official locators.
+Read actual attachments within a predeclared cap; distinguish engagement/fee
+terms, referenced sheets, supplied technical details, proposals and installed
+work. Do not infer content from titles or reconstruct missing drawings. No
+neighbor guesses, archive crawl, confidential court packet, fees or outreach.
+The original hatch closeout and route/revision/beam/sprinkler dependencies remain
+specific gaps; do not leave the two completed hatch candidates pending.
+
+**State:** Same research branch and ca1c2233 HEAD; intentional uncommitted WIP.
+Main/legal files and earlier frozen inputs unchanged. The recurrence falls
+within existing SFB-005 source-family/document-role fixtures; no new feedback
+issue or send is needed. Archived destination and human/listening/model-input/
+matrix gates remain separate. No engine/bridge action, external disclosure,
+spending, stage, commit or push. Full goal remains active/incomplete.
+
+## Previous FSK-56 candidate review
+
+**2026-10-04 FSK-56 candidate completed — negative fuel-route result:** The
+[complete three-page review](municipal-originals-2026-10-04/fsk56-followup/report.md)
+finds press-room furniture/platform drawings SK-56C/SK-56F, not a fuel route.
+The cover describes FSK-56A/FSK-56D; that mismatch is preserved with unknown
+cause. Shared OEM job 5576A, a platform's 8-inch height and an unexplained
+circled marker do not establish a fuel-segment or structural-column match.
+No approval, installation, cause-ranking or concealment finding follows.
+
+Both readers froze complete observations before exchange. The only recorded
+legibility disagreement is a small room label: root's larger permitted view
+reads 23-33, while the other reader's initial view tentatively reads 23-53.
+It is not used for a location join. All four saved rasters independently
+reproduced byte for byte; the tool's smaller displayed repeat and the checker's
+initially absent configured cache directory remain disclosed. Nine municipal
+PDFs/twenty-eight pages have now been read across six source units. The separate
+six-page NIST comparison is not included in that count. This is new primary
+source progress, not completion of the broad investigation.
+
+**Then-next task, now completed above:** Prospectively define a finite two-record review
+of NYC-WTC_000172163 (fuel-tank-room inspector request, one page) and
+NYC-WTC_000171497 (replacement of fire-rated hatch, one page). Main
+`research/WTC7_archive_leads_2026-09-16.md` lines 81/102 and 88/109 supply
+the exact catalog entries/URLs. Test whether actual contents are requests,
+proposals, authorizations or completed-work records, and whether they join the
+previously read March 2000 hatch/Inergen memo. Do not infer dates, completed
+corrections or installed deficiencies from the titles. No neighbor guesses,
+crawl, fees or outreach. The original mechanical-route, revision/approval,
+beam/Change Order 23 and sprinkler dependencies remain separately unresolved.
+Do not repeat the completed FSK-56 candidate or metadata search as pending work.
+
+**Worktree state:** Same investigation branch and ca1c2233 HEAD; intentional
+research WIP. Main/legal files and earlier frozen records remain untouched.
+Human/listening/model-input/matrix gates and archived-feedback routing remain.
+The cover/actual-attachment mismatch extends the existing SFB-005 fixture
+locally, not a new issue or delivered product fix. No engine/bridge action,
+external transfer, spending, staging, commit or push. Full goal active/incomplete.
+
+## Previous inventory and fuel-route followup
+
+**2026-10-04 OEM inventory and fuel-route followup completed:** The
+[bounded metadata search](municipal-originals-2026-10-04/held-record-locator/report.md)
+checked twelve files, including both case source/exhibit indexes. It found no
+identified holding of the original March 1999 mechanical sheets or W98-7134
+disposition within that scope. Independent matching and classification agree.
+A declared punctuated-OEM supplement located a useful catalog route lead;
+neither a metadata nonmatch nor a repeated citation is original-record absence.
+
+The separately declared [one-page source review](municipal-originals-2026-10-04/fuel-route-followup/report.md)
+then acquired NYC-WTC_000171753. This is a June 30, 1999 contractor letter
+proposing additional route work: 8-inch conduit, three 1-1/4-inch oil lines,
+extra length and 8-foot steel-frame hangers. It is not a route drawing,
+approval, payment, installation or inspection record. Its later 8-inch label
+prevents treating chronology alone as a final 6-inch supersession, but does
+not prove a same-segment conflict. Pipe roles, support types and segment
+identity remain unresolved. No cause ranking changes.
+
+Both readers froze complete observations before exchange; no material
+disagreement was found. A fresh independent render reproduced the full image
+byte for byte with empty diagnostics. The July 1/July 2 fax markings are not the
+letter date; P.02/02 leaves a context gap in this one-page file, not evidence
+of destruction. Eight municipal PDFs/twenty-five pages have now been fully
+read across five source units, not the entire collection. The six-page NIST
+comparison is separate. The preceding coordinate turn only reconfirmed an
+existing result; this inventory plus acquired primary letter is new progress.
+
+**Then-next task, now completed above:** Review the exact catalogued NYC-WTC_000174022
+candidate, labeled attached FSK-56A/FSK-56D, one document/three pages. The main
+`research/WTC7_archive_leads_2026-09-16.md` lines 83/104 provide the label and
+official URL. Before acquisition, declare one exact retrieval and complete-page
+review with a finite cap, sensitivity checks and independent reading. Determine
+whether actual attachments locate the fuel route or are a different subject;
+do not assume a relationship from the FSK prefix. No neighboring-ID guesses,
+crawl, fees or outreach. The desired discriminator remains a reviewed route
+and response joining 98-145/June 30 to a named segment and revision, followed
+separately by installation/inspection. Keep M1.01/M1.07/M4.01, W98-7134,
+E5/SK-58, beam/Change Order 23 and sprinkler dependencies distinct. Do not repeat
+the completed twelve-file metadata search as unresolved work.
+
+**Worktree state:** Same branch and ca1c2233 HEAD; intentional uncommitted
+research WIP. Main/legal records, source originals and older frozen readings
+remain unchanged. SFB-005 now retains the generic punctuation-search/coverage
+counterexample locally; archived-task routing remains unresolved, not sent or
+fixed. Human/listening/model-input/matrix gates remain separate. No engine,
+bridge, external source transfer, spending, staging, commit or push. Full goal
+active and incomplete.
+
+## Previous OEM report comparison
+
+**2026-10-04 OEM source comparison completed:** The
+[six-page comparison](municipal-originals-2026-10-04/enclosure-framing/oem-comparison/report.md)
+read NCSTAR1-1J physical59-64, with a prospective supplement for the directly
+cited layout figures. NIST already describes10-gauge conduit and a2-hour piping
+enclosure. Its1-1/4-inch supply and1-1/2-inch generator-return pipes are not
+the6/8-inch conduit labels in E5/SK-58. The report and figures support a
+first-floor tank/pump location hypothesis, not an exact segment or revision
+join. Figures lack the needed orientation/grid and support details; existing
+riser identity remains expressly uncertain. No bare-line omission, model-input
+contradiction, installed-state finding or collapse ranking change is established.
+
+Both readers separately froze complete text and figure notes before exchange.
+All three initial image pairs retain their prior receipt identities; all three
+new supplement renders independently reproduced byte for byte without warnings.
+Physical64 is intentionally blank and retained. Full combined text review found
+no material correction. The report also preserves the100-versus168sqft/head
+wording and the printed day-tank inequality without treating them as verified
+code, installation or cause findings.
+
+**Then-next task, now completed above:** A finite held-record locator check for original
+OEM mechanical M1.01/M1.07/M4.01 dated March29,1999, W98-7134, and E5/SK-58
+submittal/revision dispositions. Start with the main read-only
+`intake/source-inventory.csv`, `exhibits/index/exhibit-map.csv`, the existing
+equipment-source inventory and `research/WTC7_archive_leads_2026-09-16.md`.
+Predeclare exact identifiers and metadata scope; distinguish a source citation
+or catalog entry from a held original and record exclusions. Do not expand
+into confidentiality-marked court packets, indiscriminate file reading, new
+outreach, fees or guessed downloads. A local nonmatch is not global absence.
+If a public/non-sensitive original is located, define its primary-page review
+before drawing a location/revision conclusion. Keep beam-sketch/Change Order23,
+sprinkler layout and actual inspection/installation dependencies distinct.
+
+**Worktree state:** Same branch and ca1c2233 HEAD; intentional research WIP.
+Main/legal files, raw inputs and old frozen readings unchanged. Existing
+human/listening/model-input/matrix gates and archived-feedback routing remain.
+No engine/bridge action, external transfer, spending, staging, commit or push.
+The full investigation remains active and incomplete.
+
+## Previous enclosure framing check
+
+**2026-10-04 enclosure framing review completed:** The
+[new source review](municipal-originals-2026-10-04/enclosure-framing/report.md)
+acquired and read NYC-WTC_000172233, two pages. Its May10,1999 OEM5576A
+transmittal lists E5 dated April28; the attached plan adds a relative route
+between the fuel-oil tank room and pump plus enclosure/support details.
+Both readers identified **6-inch conduit**, versus the prior SK-58's **8-inch**
+label. Same project and related details do not establish the same segment,
+approved supersession or installed condition. The floor/grid relationship and
+degraded title-block details remain unresolved. No cause ranking changes.
+Seven municipal PDFs/twenty-four pages have now received complete readings
+across four bounded units, not an archive-wide review.
+
+Both page-specific readings froze before exchange. Independent reproduction
+matched both saved page renders byte for byte, with no warnings. Text-only
+synthesis review found no material correction. These checks are local reading
+and derivation controls, not historical authentication or expert acceptance;
+the source log retains actual commands, pins and limitations.
+
+**Then-next task, now completed above:** Test the exact E5/SK-58 relationship against the
+already held NCSTAR1-1J OEM discussion and its original-record references.
+Start with the [main equipment audit](/Users/admin/docs/911/research/sherlock-wtc7-investigation/fuel-system-audit/equipment-source-followup/report.md)
+as a locator, then predeclare a complete primary-page comparison centered on
+physical pages59-61 of its held `sources/ncstar-1-1j-attempt02.pdf`. Check floor,
+route, conduit dimensions, project/submittal/revision and source-role matches;
+retain discrepancies and unresolved joins. Do not confuse the unrelated Salomon
+E-5 with this OEM E5. Use the actual held source and a finite declared page set,
+not the summary as validation. No automatic archive expansion, guessed
+attachments, graphical measurement, numerical capacity model or installation
+inference. This does not close the separate beam-sketch/Change Order23 lead.
+
+**State at that completion:** Same investigation branch and ca1c2233 HEAD; intentional
+research WIP, main/legal files untouched. All separate human, listening,
+model-input and matrix gates remain. Feedback remains local under the archived
+destination boundary; this source-role/version recurrence is covered by
+existing SFB-005 fixtures. No engine/bridge action, outreach, fees, transfer,
+staging, commit or push. Full goal active/incomplete.
+
+## Previous structural record followup
+
+**2026-10-04 structural-record follow-up:** The
+[new source review](municipal-originals-2026-10-04/structural-followup/report.md)
+acquired and fully read two more official PDFs, three pages. NYC-WTC_000171807
+is a December 1998 cover referring to seventh-floor beam sketches and Change
+Order 23, not the sketch or executed order. NYC-WTC_000173900 includes an actual
+March 1999 SK-58 fuel-conduit enclosure/support detail, with concrete fill,
+steel supports and anchorage. Preserve the cover's FSK-58 and drawing's SK-58
+labels. The design is positive content, not installed-state, capacity or
+event-day evidence. No member/location join to a collapse scenario or cause
+ranking change follows. Six municipal PDFs/twenty-two pages have now been
+read across the three bounded units; not a whole archive or folder review.
+
+The two readers froze complete three-page records before exchange and found
+no material disagreement. The current unit's source/derivative receipts record
+actual byte checks and rendering scope, including one permission-review timeout
+before an explicitly permitted successful copy retry. No source acquisition or
+render was repeated as a result. Exact local derivation remains distinct from
+historical authenticity and expert acceptance.
+
+**Then-next task, now completed above:** Follow exact already catalogued candidate
+NYC-WTC_000172233, a two-page fuel-line enclosure framing-plan item, to test
+whether its actual contents locate or otherwise join the newly held SK-58.
+Read the current structural report, the [full charter](/Users/admin/docs/911/research/sherlock-wtc7-investigation/CHARTER.md)
+and main `research/WTC7_archive_leads_2026-09-16.md`. Predeclare one exact official
+acquisition and complete reading within a finite cap. Check project, date,
+drawing/revision, floor/grid, supports and source distinctions; the catalog
+label is not a demonstrated match. A transmittal-only or unrelated result is
+valid. No guessed attachment URLs, automatic crawl, inferred installation,
+numerical capacity model, outreach or fees. The missing Change Order 23/sketch,
+earlier SK-58/comments and closeout records retain separate dependencies.
+Use full-reasoning documentary interpretation plus independent reading before
+planning physical consequences. Do not repeat the completed two-record unit.
+
+**State at that completion:** Same investigation branch and ca1c2233 HEAD; intentional
+uncommitted research WIP. Main/legal sources and all human, listening, model-input
+and matrix gates remain unchanged. No external feedback send under the unresolved
+archived destination. This recurrence is covered by existing SFB-005 attachment/
+catalog fixtures, not a new product bug. No engine/bridge action, outreach,
+spending, transmission, staging, commit or push. Full goal active/incomplete.
+
+## Previous completed municipal review and inspection followup
+
+**2026-10-04 municipal source review completed:** Four exact official-portal
+PDFs, nineteen pages, now replace previously unread catalog leads. The
+[parent report](municipal-originals-2026-10-04/report.md) distinguishes the
+preservation folder cover from an actual directive and the 2002 FOIL request
+with 1998 technical enclosures from an agency response. The comments identify
+tank-support, beam/detail, generator-cooling and fire-protection questions;
+they do not establish unresolved installed defects or 2001 conditions.
+
+The [follow-up report](municipal-originals-2026-10-04/followup/report.md) adds
+a May20,1998 OEM addendum with dated drawing lists and a March21,2000 memo
+reporting a preliminary walk-through, a requested self-closing fuel-room
+hatch tied to Inergen, contractor contact and wiring/pricing in process.
+May4 dates the documents modified by the addendum, not its issue date.
+These are affirmative design/inspection-process records, not completion or
+acceptance evidence. The actual May13 S-1/S-2/S-3/S-5 drawings, item-specific
+responses and hatch commissioning/closeout remain unlocated in these packets.
+No causal ranking changes; no inference of suppression from missing attachments.
+
+Each page received two separately frozen AI readings. Shared sources do not
+become independent historical corroboration or actual-human/expert acceptance.
+The parent derivative audit reproduced all eleven PNGs byte for byte; the
+follow-up verification is recorded in its own source/derivative receipts.
+The parent reading's unsupported later-construction implication was narrowed
+to plan-review stage, preserving the original. Contact data remains in the
+local sources, not outgoing feedback. Original failed tool routes remain
+recorded alongside successful direct acquisition.
+
+**Then-next task, now completed above:** Read the already located structural-response
+candidates NYC-WTC_000171807 (catalogued beam-penetration sketches, one page)
+and NYC-WTC_000173900 (FSK-58 revised after structural comments, two pages).
+Read the main `research/WTC7_archive_leads_2026-09-16.md`, the two current
+municipal reports and the [full charter](/Users/admin/docs/911/research/sherlock-wtc7-investigation/CHARTER.md).
+Predeclare one exact acquisition per located official URL and complete review
+of each admitted file within a finite page cap. Determine actual date, project,
+member/drawing identity, attached technical content and proposed-versus-completed
+status; do not assume these are the missing May13 sheets or answers to the
+April comments. Accept a transmittal-only or unrelated result. No guessed IDs,
+automatic folder crawl, missing-attachment reconstruction, outreach or fees.
+Use full-reasoning interpretation with independent reading. Preserve actual
+drawings if present; engineering consequences require separate scoped analysis.
+
+**State:** Branch `research/sherlock-wtc7-investigation`, HEAD
+`ca1c223335c20905d6608eb15c676f88cbfac734`; intentional research WIP remains
+uncommitted. Main/legal records, listening and model-input tests, actual-human
+gates and pending matrix save retain separate dependencies. Generic feedback
+was deduplicated under SFB-005 and remains locally queued while archived-task
+routing is unresolved. No engine/bridge action, outreach, spending, external
+transmission, staging, commit or push. Full goal active and incomplete.
+
+## Previous completed official interactive search
+
+**2026-10-04 official interactive search completed:** The
+[single-query result](procurement-dta817373/interactive-case-search/report.md)
+returned two decision links for case817373 under the actual default Tribunal
+Decisions/Orders filter. Neither was described as an exhibit packet or case-file
+index; neither PDF was opened. The literal case-variant URLs and search-date
+labels remain unverified as byte equivalents or record dates. The first empty
+interface later populated; it was not a zero-hit result. One saved screenshot
+shows both entries. No original Exhibit14 record was acquired and no cause
+ranking changes. All/ALJ/Commission categories, advanced search and offline
+holdings remain unsearched; this is not global original-record absence.
+
+The [source log](procurement-dta817373/interactive-case-search/source-log.md)
+records the frozen control choice, actual submission, preservation failure and
+successful approved copy. The reviewer confirmed the screenshot and identified
+a minor protocol deviation: a final same-page accessibility read lacked the
+explicit observed-pending prerequisite. That correction is recorded without
+rewriting the protocol; no second submission occurred. The [completed local
+review](procurement-dta817373/interactive-case-search/review.md) has no outstanding
+substantive correction; it is not a search rerun. Five reviewed file pins,
+the screenshot size and six local links passed the final local check; earlier
+source/control pins and `git diff --check` also passed. The preceding coordinate turn only
+reconfirmed a completed result; this new retrieval is actual goal progress.
+
+The [previous static search](procurement-dta817373/exhibit14-followup/report.md)
+remains closed with its original four-page/two-query coverage and attribution
+limits. Its two selected-page checks confirm Exhibit14 references, not original
+exhibit contents; the maintenance invoice's date does not date invoice12318.
+Neither old search nor current decision links are new transaction corroboration.
+Do not repeat these completed searches as pending work.
+
+**Then-next task, now completed above:** Follow the already identified municipal originals
+NYC-WTC_000153903 and NYC-WTC_000173529, rather than make another metadata
+inventory. Read the [documentary reconciliation](completion-audit-2026-10-04/documentary-review.md),
+the main `research/WTC7_archive_leads_2026-09-16.md` and
+`research/NYC_911_PDF_review_2026-09-16.md`, and the
+[full charter](/Users/admin/docs/911/research/sherlock-wtc7-investigation/CHARTER.md).
+Those memos contain exact official first-document URLs; both were located
+again locally, not fetched. Predeclare a finite route and at most one exact
+first-document acquisition per ID, verify identity/sensitivity, then define
+whole-document/page review before interpretation. The first lead is one
+document in a16-document/72-page group, not authority for the whole group;
+the second is catalogued as one document/10pages. Stop at refusal, login,
+fee, sensitive transfer or missing attachments; no bulk mirror, guessed URL,
+crawl or outreach. Use full-reasoning source interpretation plus an independent
+record review. Record an ordinary or unrelated result as readily as a
+discrepancy. A preservation directive alone is not execution, breach, intent
+or a WTC7 mechanism bridge. No municipal original was acquired in that earlier
+interactive-search turn; the subsequent acquisition is documented above.
+
+**State and unresolved:** Branch `research/sherlock-wtc7-investigation`, HEAD
+`ca1c223335c20905d6608eb15c676f88cbfac734`; intentional research WIP remains
+uncommitted. Listening, native-state physical tests, actual-human/curve gates
+and pending matrix save retain distinct dependencies. The generic delayed-
+result lesson extends SFB005 locally; archived-task routing remains unresolved,
+not delivered or fixed. No main/legal change, engine/bridge execution, outreach,
+fee, sensitive transmission, staging, commit or push. Full goal active/incomplete.
+
+## Previous completed Camera3 persistence test
+
+**2026-10-04 Camera3 spot-persistence test completed:** The
+[seven-frame result](camera3-spot-persistence/report.md) finds the clearest
+upper-band light candidate in all seven selected derivative images in both
+separately frozen readings. This is positive recorded persistence, weakening
+a frame258-only-feature interpretation, not proof of a window, reflection,
+emission or original physical duration. Root selected one anchor candidate;
+the other reader retained two additional weaker regions. Their regional/group
+persistence is not two-reader confirmation or individual-constituent tracking.
+A superposed brief brightness change and processing persistence remain
+unexcluded. No collapse-cause ranking changes. The finite image task is closed;
+do not expand the neighborhood or reopen it as pending work.
+
+**Verification:** Twelve synthetic tests passed after one bounded repair;
+one actual exact-recipe decode passed, following a directory-permission failure
+before decoding. Separate checks verified all seven selected pixel identities
+and timing joins. Two readers completed14 first-view displays with zero retries,
+freezing both records before exchange. Text-only scientific critique required
+no correction. Three corruption warnings plus one audio-layout warning remain;
+diagnostic identity is not historical authenticity. See the
+[execution record](camera3-spot-persistence/execution.md) for actual checks/failures.
+
+**Then-next task, now executed above:** The bounded DTA817373 Exhibit14 public
+route has a recorded non-retrieval result. The [original procurement assessment](procurement-dta817373/report.md)
+remains a source interpretation, not inspection of the missing originals. Its
+then-untried exact search is no longer an unexecuted next action.
+
+Actual four-window listening still requires a capable listener; amplitude
+analysis cannot stand in for it. Native-state structural tests, human142-N12,
+curve reviews and pending matrix save retain separate dependencies, not a
+universal investigation stop. Feedback remains locally queued under the
+archived-destination routing limit, not delivered. Branch remains
+`research/sherlock-wtc7-investigation`, HEAD
+`ca1c223335c20905d6608eb15c676f88cbfac734`, intentional uncommitted research WIP.
+No main/legal promotion, engine/bridge use, acquisition, transmission, staging,
+commit or push. The full goal remains active/incomplete.
+
+## Previous completed charter reconciliation
+
+**2026-10-04 charter reconciliation and opposing-case review completed:** The
+[current assessment](completion-audit-2026-10-04/report.md) accounts for every
+WP0–WP6 exit, Q01–Q10, ten controls, six completion conditions and September24
+queue item using four separately frozen component reviews. Two new arguments
+read the same fourteen pinned reports; a third review tested the synthesis.
+These are prior-informed shared-source AI analyses, not new witnesses or
+licensed expert acceptance. The full investigation remains active/incomplete.
+
+Fire has affirmative support as an initiating stressor and a developed
+mechanical pathway; rapid coordinated motion and surviving load paths remain
+substantive constraints. Acoustic negative evidence conditionally disfavors
+the studied conspicuous-blast scenarios relative to alternatives without
+those signals, not fire uniquely. No robust overall cause ordering is earned;
+a weak working fire preference can still be reasonable on disclosed weights.
+The result is neither equal odds nor a finding of innocence/guilt. Specific
+timing/input concerns and positive thermal evidence are both retained.
+
+Completed R1, Camera2, CBS, fire-sample and documentary tasks are not replanned.
+Figure5-121 remains a failed representation; the union has50 admitted unique
+JPEGs, not51 independent exposures. The exact user coordinates and ±1 native-y
+tolerance already match the saved human arm; four-term displacement bounds are
+±4 pixels, not statistical CIs. Both original AI failures remain. Faraday now
+has located export code, but no export/test or science audit was run here.
+
+**Then-next task, now completed above:** The distinct Camera3 frame258 spot's
+fixed255–261 persistence test has its own frozen protocol, two first-view
+records, technical checks and scientific critique. It is not pending or a
+repeat of Camera2; the broader [media review](completion-audit-2026-10-04/media-review.md)
+remains a dated coverage reconciliation rather than a current unexecuted queue.
+
+Four-window actual listening is a separate higher-value unmet task. Exact
+documentary originals and native-state structural tests retain their own
+inputs, authority and finite stops in the assessment. Human142-N12, curve
+axis/legend/sample checks and pending matrix save remain separate gates, not
+universal barriers. Feedback remains locally queued for the last-verified
+archived destination; no implicit reopen or reroute.
+
+**State:** branch `research/sherlock-wtc7-investigation`, HEAD
+`ca1c223335c20905d6608eb15c676f88cbfac734`, intentional uncommitted research WIP.
+No new acquisition, historical media measurement, model/engine execution,
+human attestation, main/legal promotion, disclosure, staging, commit or push.
+The [execution record](completion-audit-2026-10-04/execution.md) separates actual
+runtime/code/record checks from historical validation and retains failures.
+
+## Previous completed Plasco audit
+
+**2026-10-04 Plasco Chapter 3 audit completed:** The
+[robustness result](plasco-robustness-audit/report.md) identifies reported
+heating-induced buckling and load redistribution, not merely prescribed
+support deletion. It does not demonstrate a complete fire-to-total-collapse
+transition. The six-storey model omits connection failure, uses idealized
+exposures rather than a historical fire reconstruction, and preserves several
+stable or temporarily supported configurations. Its broad core-failure summary
+is stronger than the displayed case. Table 7 specifies Transient/Newmark for
+thermal analysis; Chapter 7's static/deletion limitations cannot simply be
+imported into this different calculation. No WTC7 cause-ranking change follows
+from this comparator alone.
+
+Both readers completed all 41 chapter text pages, all 41 full-page images and
+the two declared legibility supplements, then froze their records before
+findings exchange. Separate source audit reproduced 41 text extractions,
+decoded 43 PNGs and checked 217 products; root separately reproduced the
+product/text/dependency checks. The final synthesis received scoped scientific
+review. The failed first extraction, its parser repair and root's early reread
+of the already-known Chapter 7 audit remain disclosed in the
+[execution record](plasco-robustness-audit/execution.md). None of these checks
+reruns or physically validates the author's model.
+
+**Then-next task, now completed above:** Perform a bounded post–September 24 charter-exit
+reconciliation, then update the same-evidence competing-explanation assessment.
+Read the [full charter](/Users/admin/docs/911/research/sherlock-wtc7-investigation/CHARTER.md),
+the [September 24 completion audit](completion-audit-2026-09-24/report.md),
+this status history, the [causal-chain synthesis](causal-chain-synthesis/report.md),
+the [acoustic audit](nist-acoustic-detectability/report.md), and the Plasco result
+above; follow their actual completed-result references rather than treating
+old next-action paragraphs as current instructions. Do not start another
+chapter, exhausted media search or matching run merely to maintain activity.
+
+Acceptance: account for every WP0–WP6 exit and September 24 queue item as
+completed, partial, superseded, feasible now, or dependent on a specific
+missing input/review/authorization. Each disposition needs its latest result
+and claim ceiling, distinguishing observations, conditional calculations,
+model predictions and source attribution. Retire completed next steps.
+Any proposed remaining empirical test must identify held inputs, authority,
+an observable discriminator and what either outcome could change. A focused
+next-work scan did not identify an execution-ready physical discriminator;
+it did not establish that none exists. Test that limit in the reconciliation.
+Use the reconciled evidence set for separate strongest-fire and strongest-
+intervention reviews, including adverse findings and shared-source dependence;
+report changed judgments without invented odds or a forced strict ranking.
+
+The next unit remains research reconciliation, not a save of the separately
+pending matrix or satisfaction of actual-human gates. Human142-N12 and the connection-
+curve axis/legend review remain outstanding. Missing native inputs constrain
+their specific tests, not every other charter workstream. The full goal remains
+active and incomplete.
+
+**State:** branch `research/sherlock-wtc7-investigation`, HEAD
+`ca1c223335c20905d6608eb15c676f88cbfac734`, intentional uncommitted research WIP.
+All collection processes are terminal. Coordinate locks and assessed ±1 native-
+y-pixel ranges remain unchanged, not statistical confidence intervals. No
+human acceptance, matrix save, engine activation, main/legal promotion,
+disclosure, staging, commit or push. Generic feedback remains locally queued
+for the archived destination; no new defect or delivery is claimed.
+
+## Previous completed specific aperture comparison
+
+**2026-10-04 specific aperture comparison completed:** The
+[8-42C result](cbs-frame-correspondence/aperture-8-42c/report.md) distinguishes
+the conspicuous pale patch at8-42B from the targetC beyond the broad pier.
+Both readers locate partialC at the close view's right edge; all seven wide
+images retain a qualification difference between boundedC/D fine-boundary
+location and localized architecturalC with unresolved perimeter. The shared
+result is a supported first-slot location without a resolved complete material
+boundary. This corrects a potential substitution in our own analysis, not a
+demonstrated NIST mislabel. Additional glass loss and its reported one-minute
+direction remain unverified, not falsified. No cause ranking changes.
+
+Each reader completed six full source pages, the two preauthorized300dpi
+legibility supplements and fourteen standalone image assets, freezing before
+exchange. Separate synthesis review found no material overstatement. Artifact
+audit and root reproduction passed the retained source/output checks; both new
+renders retained Fontconfig errors despite readable relevant letters. See the
+[execution record](cbs-frame-correspondence/aperture-8-42c/execution.md).
+The prior [broader-target study](cbs-frame-correspondence/candidate-visibility/report.md)
+is unchanged and is not retrospectively relabeled aC observation.
+
+**Then-next task, now completed above:** Predeclare a complete source audit of Chapter3,
+“Robustness Analysis of Plasco Tower under Fire Conditions,” in the held
+[Domada thesis](/Users/admin/docs/911/research/sherlock-wtc7-investigation/comparator-expansion/plasco-thesis/sources/domada-2025-plasco-thesis-8358.pdf).
+The native contents place it at printed77-117; verify physical-page mapping
+before extraction. Main source SHA-256:
+`0d76577bbf898dfa2d1587d02f1cc51378d531e3b59983fc0d4db8665fd575b4`.
+The [existing coverage log](/Users/admin/docs/911/research/sherlock-wtc7-investigation/comparator-expansion/plasco-thesis/acquisition-log.md)
+and [Chapter7 audit](/Users/admin/docs/911/research/sherlock-wtc7-investigation/comparator-expansion/plasco-thesis/chapter7/report.md)
+do not cover Chapter3's full methods/results. Read those and the full charter
+first. New derivatives/results belong in this worktree, not main.
+
+Question: does that earlier structural study generate critical support loss
+from heating, or test response after prescribing it, and which surviving load
+paths distinguish failure from redistribution? Acceptance: a source-pinned
+case table retaining every reported stable outcome, exposure/load/connectivity
+assumption, removal rule, capacity criterion and numerical-termination limit,
+compared with the already-audited Chapter7 without assuming both ask the same
+question. Use full-reasoning source/structural review with a separate reader.
+No scientific solver, new acquisition, curve digitization, invented input or
+WTC7 validation is authorized by that reading. The2025 journal edition remains
+abstract-only; the closed unsuccessful download route is not to be repeated.
+
+The exact8-42C condition worksheet and native FDS removal entry remain separate
+dependencies, not supplied by downstream structural temperature assignments.
+Retire this finite image test rather than repeating its frames/counter/filename
+checks. Human142-N12, consequential measurement controls and the separate
+connection-curve actual-human axis/legend check remain outstanding. The full
+WP0-WP6 charter stays active and is not narrowed to the next source unit.
+
+**State:** branch `research/sherlock-wtc7-investigation`, HEAD
+`ca1c223335c20905d6608eb15c676f88cbfac734`, intentional uncommitted research WIP.
+No live collection job. Coordinate locks and assessed ±1 native-y-pixel ranges
+remain unchanged, not statistical confidence intervals. No human acceptance,
+matrix save, engine activation, main/legal promotion, disclosure, staging,
+commit or push. Existing generic feedback remains locally queued for the
+archived destination; no new defect or delivery is claimed.
+
+## Previous completed counter continuity test
+
+**2026-10-04 counter continuity completed:** The
+[timecode result](cbs-frame-correspondence/timecode-continuity/report.md)
+finds valid drop-frame counters in all 5,567 held frames, with all 5,559
+within-clip counter transitions advancing by one. All 16 original/alternate
+header-start component comparisons match the first stream counters. Three
+apparent jumps under forced non-drop interpretation are ordinary drop-frame
+label transitions, not demonstrated missing pictures. Internal consistency
+does not authenticate filming chronology: one continuously numbered edited
+master could supply both counter and header agreement. The conditional
+Clip3/5-143 versus Clip7/5-142 order tension remains unresolved. No cause ranking
+or concealment finding follows.
+
+The frozen producer ran once successfully. A separately authored arithmetic
+checker reproduced every frame, transition, header join, rational span and all
+28 interclip pairs; root's read-only replay agreed. Its author also implemented
+upstream extraction/storage, so this is separate calculation from shared inputs,
+not an independent historical source. All 22 dependency pins remained stable.
+The audit's initial output-permission failure and corrected run are recorded in
+the [execution log](cbs-frame-correspondence/timecode-continuity/execution.md).
+The finite counter test is complete; do not repeat it as the next work unit.
+
+**Next independent task:** Predeclare a finite same-target visibility comparison
+using already extracted CBS candidate frames, including neighboring alternatives
+and source-processing limits. Read the dense-clip3/v2 and dense-clip7 reports,
+the September 29 human window review and the full charter. Acceptance is
+separate, complete observation records and an independently reviewed statement
+of which target edges/surfaces are resolvable—not physical glazing state,
+temperature, an authenticated clock or causal ranking. No new acquisition,
+matching rerun or decoder is needed for this candidate-image check. Use
+full-reasoning method design and separate image review. Human142-N12 remains
+uninspected. The existing seven-pair connection-curve test separately awaits its
+own actual-human axis/legend check; roof-point review cannot satisfy that gate.
+
+**State:** branch `research/sherlock-wtc7-investigation`, HEAD
+`ca1c223335c20905d6608eb15c676f88cbfac734`, intentional uncommitted research WIP.
+All collection/audit commands are terminal. Full goal active/incomplete.
+The repeated user coordinates and ±1 native-y-pixel tolerance already match the
+saved human record and completed comparator arm; no new coordinate run is needed.
+That tolerance is not a statistical confidence interval. Feedback remains
+locally queued for the archived destination. No human acceptance, matrix save,
+engine activation, legal/main promotion, disclosure, staging, commit or push.
+
+## Previous completed DV metadata inventory
+
+**2026-10-04 DV stream-metadata inventory:** The
+[bounded result](cbs-frame-correspondence/dv-metadata/report.md) covers all eight
+held AVIs: 5,567 frames and 3,674,220 metadata slots. Timecode-type packs occur
+in every frame; the four declared recording-date/time identifiers never occur.
+The retained bytes do not yet furnish an authenticated filming clock or resolve
+the conditional Clip3/5-143 versus Clip7/5-142 order conflict. No date, time-zone,
+drop-frame, counter-continuity or original-camera interpretation was performed.
+Missing fields in these access copies are not archive-wide absence or evidence
+of deliberate removal. No physical/cause-ranking change follows.
+
+All eight frozen version 2 collection commands returned exit 0 after source,
+dependency and artifact post-checks. Sixty compressed artifacts preserve all
+53,276,190 retained bytes. Root's readback/count check and a separately implemented
+direct-byte audit passed for every frame, slot count, candidate and retained
+byte; the audit's 107 before/after file pins matched. This is reproduction of
+the same sources, not a second historical clock. The original two
+version 1 storage-cap failures remain preserved. Version 2 explicitly increased
+the total storage cap without changing extraction or selecting fewer frames.
+Separate prehistorical review passed 27 version 2 tests, 36 parent tests and a
+high-entropy synthetic integration check. Root's summary-path refusal and its
+corrected read-only check are also recorded, not relabeled an initial pass.
+
+**Next independent task:** Predeclare and review semantic timecode validation
+over these already retained bytes: flag/digit validity, all adjacent transitions,
+exact start-label comparisons and explicit rate/drop-frame alternatives. Retain
+invalid/conflicting values; do not silently substitute nominal DV for AVI rates.
+Acceptance is a reproducible statement of continuity/label agreement and its
+provenance ceiling, not automatic historical authentication. No historical
+media decoder, new acquisition or image-matching rerun is needed. The missing
+camera/edit/still worksheet remains a documentary lead. Other charter workstreams
+and qualified spatial observations are not universally gated on this clock test.
+
+Read first: main charter; current report and execution record; both DV plans and
+freezes; primary format sources; prior sibling-lineage and timing-basis reports.
+Use full-reasoning method design with separate critique; only fixed mechanical
+collection should be delegated without further methodological decisions.
+
+**State:** worktree branch `research/sherlock-wtc7-investigation`, HEAD
+`ca1c223335c20905d6608eb15c676f88cbfac734`; intentional uncommitted research WIP.
+All historical collection processes are terminal. Full goal active/incomplete.
+Coordinates and user-assessed ±1 native-y-pixel placement ranges are unchanged,
+not statistical confidence intervals. Human142-N12 and model/window joins remain
+unresolved. Feedback is locally queued for the archived destination, not sent.
+No human acceptance, matrix save, engine activation, legal/main promotion,
+external disclosure, staging, commit or push.
+
+## Previous completed published timing-basis review
+
+**2026-10-04 published timing-basis review:** The
+[completed primary-source review](cbs-frame-correspondence/timing-basis/report.md)
+shows that Figures 5-141–143 inherit a partly inferential timing chain: visual
+comparisons, assumed crew travel and stated approximate clip intervals. The
+report itself calls this news footage untimestamped. Directly referenced
+comparison images include an enlargement and a visually inferred time; their
+printed labels are not three independent clock calibrations. Derived facade
+maps are not extra timing witnesses. The specific paired camera/edit/still
+join remains unpopulated in the selected held records.
+
+This strengthens a **specific independence/reproducibility concern**, not a
+finding that the dates are false. The prior access-copy label-order conflict
+remains conditional on the source association and recording-time mapping.
+Continuous source footage, calibrated comparison imagery or a populated timing
+worksheet could establish the published order. No new fire/glass classification,
+temperature finding, physical/cause ranking or concealment inference follows.
+
+Root read 29 complete NCSTAR text layers and eight document-page images;
+separate extraction checks matched all 29 text layers. The whole-PDF text
+locator covers 797 pages, with 48 hit pages. A saved double-escaped pattern
+label was preserved and explicitly corrected in a separate executable-map
+audit, which reproduced all per-page counts and 51 saved contexts. Eighteen
+source/result pins matched. Renderer warnings and truncated warning captures
+are disclosed; this is not warning-free render certification. The
+[verification record](cbs-frame-correspondence/timing-basis/verification.md)
+distinguishes source checks, independent review and unperformed physical tests.
+
+**Next independent task:** Scope a finite, non-decoding examination of whether
+the held DV streams preserve recording date/time or discontinuity metadata,
+separate from the completed AVI-tag inventory. Verify the format semantics and
+actual required read population before parsing historical essence. Distinguish
+camera recording, copied-master and timecode dates; missing access-copy fields
+are not archive-wide absence. No ordinary-probe rerun, new decoder selection,
+image matching, acquisition or outreach. The paired source/timing worksheet
+remains a concrete record lead. This clock issue is not a universal gate on
+qualified spatial observations or other charter work.
+
+Read first: the main charter, this unit's PLAN/report/verification, the completed
+sibling-lineage freeze/results and admitted clip receipts. Use full-reasoning
+method design with a separate critique; a mechanical byte inventory can be
+delegated only after its contract is fixed. Acceptance for the next unit:
+documented field semantics, explicit finite coverage and negative controls,
+preserved absent/unreadable fields and copy-date alternatives, and a concrete
+statement of whether any recovered metadata discriminates the ordering—not
+another successful software check described as historical corroboration.
+
+Full goal active/incomplete. Original coordinates and user-assessed ±1
+native-y-pixel placement ranges remain unchanged, not statistical confidence
+intervals. Human142-N12 and model/window joins remain unresolved. Generic
+dependency feedback is locally queued under the existing archived-destination
+boundary; no send, engine acceptance, matrix save, activation, legal/main
+promotion, staging, commit or push.
+
+## Previous completed eight-clip header comparison
+
+**2026-10-04 eight-clip header comparison:** The
+[completed collection and conditional comparison](cbs-frame-correspondence/sibling-lineage/report.md)
+recovers source-name/timecode/comment fields in all eight held complete AVIs.
+All tape-name text prefixes agree, original/alternate timecode text agrees per
+clip, and all four declared label comparisons order Clips1–8. Binary tails
+differ; repeated fields are not independent clocks. All eight video-header
+inventories match prior saved counts/rates. No new image/audio view or decoder.
+
+**Concrete conditional conflict:** Clip3's label precedes Clip7's, whereas
+the report calls5-143 later than5-142. Earlier comparison results associate
+these clips with those figures respectively. Under those within-clip source
+associations and a continuous recording-label mapping, no neighboring-frame
+choice can reverse the sign. Those historical premises are unverified;
+edited-master timing, copied metadata, an incorrectly associated interval and
+a mistaken publication chronology remain alternatives. Clip8's embedded
+slow-motion/impact description motivates an edit-chain check; it is not a new
+visual finding. No physical/cause ranking change.
+
+Method review preceded the single frozen run. Final18 controls passed for
+root/reviewer; result contains192 headers/6928 retained bytes and all28
+conditional adjacent edges. All recorded hashes match before/after and prior
+Clip7 payloads reconstruct exactly. Separate direct audit passed all192 listed
+headers,96 retained payloads,40 tags,eight video headers and28 edges; its two
+old-schema lookup errors remain recorded. See [execution](cbs-frame-correspondence/sibling-lineage/execution.md)
+for actual commands, pre-run corrections and completed separate reviews. The
+full investigation remains active/incomplete, not waiting on an unchanged
+external service.
+
+**Next independent task:** Bound a paired5-142/5-143 provenance/timing-basis
+review, with5-141 as context, in the held report, attribution records and
+already admitted production materials. Seek camera-versus-master semantics,
+edit/export mapping and the actual basis of the stated relative timing. Do
+not repeat the completed header inventory or image matching. Exact exposure
+is not a universal gate on qualified spatial fire observations, but temporal
+glazing/fire-growth claims need chronology and comparable visible regions.
+No outreach, new acquisition, legal promotion or cause-ranking shortcut.
+
+Existing human142-N12 and model/window joins remain unresolved. Original
+annotations and user-assessed±1 native-y-pixel placement ranges are unchanged.
+Generic feedback stays locally queued under the archived-destination boundary;
+no send, human acceptance, matrix save, activation, staging, commit or push.
+
+## Previous embedded source lead
+
+**2026-10-04 embedded source lead recovered:** The
+[Figure 5-142 lineage check](cbs-frame-correspondence/lineage-142/report.md)
+finds native AVI `Tdat` fields with tape-name prefix **Vince Demetri CBS** and
+start/alternate-timecode prefix **00;03;12;26**, omitted by the ordinary probe
+and normalized catalogue. Root and separate direct byte checks agree on all
+relevant payloads; the reviewer checked all24 headers and866 payload bytes.
+Both also confirmed raw PDF object2850/0 equals the held JPEG. This supplies
+a specific retrieval key, not an authenticated camera clock or exact5-142
+exposure/export chain. The source comparison's cause-ranking ceiling remains.
+
+The corrected collector's six header controls passed in root/reviewer runs.
+Initial code and truncated capture are preserved; omission of an index chunk
+from the skip list was corrected, not silently treated as complete output.
+The original no-decoding plan was overstated: ordinary ffprobe may decode
+internally during probing. No frame/audio outputs or new historical image
+views occurred, but these are not certified zero-decoding runs. Positive
+metadata findings survive separate direct reads without probing. See
+[execution](cbs-frame-correspondence/lineage-142/execution.md) for commands,
+scope/deviations and validation; generic parser/resource limits are retained.
+Both separate reviews are complete. Root verified12 documentary source pins,
+two review pins, five Markdown files/21 local links, both Python source versions
+and both navigation entries; tracked whitespace checks passed. No material
+correction to the positive metadata findings was required. The full original
+no-decoding plan is not retroactively described as satisfied.
+
+**Next independent task:** Use the embedded tape/timecode pair as a specific
+lineage key. Declare a bounded inventory of already held sibling AVI headers
+and directly linked catalogue/production records, with source pins and primary
+field/timebase definitions, before interpreting relative ordering. Check
+whether tags furnish consistent edit-source relationships; do not equate
+metadata continuity with original camera chronology or add frame indices to
+the start tag without rate/edit-continuity support. The missing exact still
+export chain remains a separate record lead. No new acquisition/outreach is
+needed to inspect held headers. Do not repeat the completed matcher or imagery
+schedule. Matched qualitative observations can proceed under their own
+place/time/resolution qualifications; exact exposure is not a universal gate.
+Full charter, incomplete actual-human/window joins and other workstreams stay
+in scope. No historical process is running; goal active/incomplete.
+
+No main/legal/raw/previous-score edit, human acceptance, engine activation,
+matrix save, disclosure, staging, commit or push. The metadata-omission/probing
+lesson is deduplicated locally under SFB-002/SFB-005; archived destination
+remains unresolved, not delivered. Existing comparator coordinates and ±1
+native-y-pixel placement ranges are unchanged.
+
+## Previous completed full Clip 7 comparison
+
+**2026-10-04 full Clip 7 comparison complete:** The
+[report](cbs-frame-correspondence/dense-clip7/report.md)
+identifies **538 then 539** as the strongest available changing-detail candidates
+for Figure 5-142 in all three representations, improving on sparse-pilot 564.
+Static winners differ; 249 full, 248 even and 244 odd dynamic comparisons fail
+coverage and remain unavailable. The fixed six native views are compatible at
+a broad scene/detail level, not an exact-field/exposure identification.
+
+All **39 historical jobs** completed under the frozen limits: two 1128-frame
+extractions, 36 scoring chunks and one aggregate. All 3384 repeat comparisons
+and 27 pilot joins reconcile. The separate artifact audit and root rerun agree
+on 228846384 saved static-score cells, 13536 retained transforms across repeats,
+36 complete mandatory-input maps and 9497 input hashes. Root's direct arithmetic
+reproduced 12062 finite scores and 1474 null decisions at 6768 transforms, maximum
+error 2.61e-14. Both final 111-test control suites and all failures remain
+preserved. The [execution record](cbs-frame-correspondence/dense-clip7/execution.md)
+contains actual commands, hashes, resources and precise verification ceilings.
+
+**No historical/check process remains live:** terminals 95429, 29056, 25670,
+48860 and the reviewer's 66511 all ended exit 0. Do not restart them. Root
+already viewed the unchanged full reference and exactly native indices
+538,539,540,541,543,544 once each after the numerical gates; no more views are
+authorized by that completed schedule. The separate
+[synthesis critique](cbs-frame-correspondence/dense-clip7/synthesis-review.md)
+reproduced all six rankings/eighteen sets and found no material correction.
+Its prior adapter authorship is disclosed; no new visual reading is claimed.
+Final documentation checks passed 17 fixed/result/review pins, the current
+34-pin control gate, nine Markdown files, 49 local prose links, eight Python
+syntax/whitespace checks and both navigation entries. Tracked whitespace checks
+passed. This is not a rerun of the full test suites.
+
+The declared **1317-frame paired population is computationally covered**, not
+all public footage or every physical question. The inspected records still lack
+an exact Figure 5-142 frame/field/processing derivation; a bounded non-recovery
+is not evidence of concealment. The next discriminator is that specific
+source-generation chain or a separately constrained derivation/matched-observation
+test—not another run of the same search. The 142-N12 inspection and exact
+model-input/window join remain unresolved, with all other charter work in scope.
+
+**Next independent task:** Declare a bounded lineage follow-up for the held
+Clip 7/Figure 5-142 pair. Read the completed report, attribution entry, original
+metadata/acquisition records and existing window/human crosswalks first. Check
+whether the held container/JPEG/PDF metadata and exact catalogue records supply
+an original source/frame/field/processing pointer before proposing any new
+acquisition or fitting. Preserve raw bytes and distinguish metadata absence
+from an archive-wide absence; no new decoder/transform choice or historical
+claim without a declared test. A useful matched qualitative observation must
+not be blocked merely because exact-exposure identity remains unresolved;
+state which provenance/resolution/timing facts that specific claim actually
+needs. Full-reasoning method choice with separate critique; bounded mechanical
+inventory may be delegated. No outreach or expanded disclosure is authorized.
+
+Full goal remains active/incomplete. Original annotations and the user's
+separate ±1 native-y-pixel placement ranges are unchanged. No physical/cause
+ranking, actual-human gate, legal/main record, matrix-save or disclosure status
+has changed. Generic shared-lane/completeness feedback is queued locally under
+SFB-005; archived-destination routing remains unresolved. No staging/commit/push.
+
+## Previous completed full Clip 3 comparison
+
+**2026-10-04 full Clip 3 comparison:** The
+[completed version-2 comparison](cbs-frame-correspondence/dense-clip3/v2/report.md)
+finds a stronger Figure 5-143 changing-detail candidate at source index **127**,
+followed by **128**, in all three fixed representations. Neither appeared in
+the sparse pilot. Geometry alone remains nonunique: 53 full-arm frames are
+within 0.005 of its best static score. Dynamic coverage fails for 68 full/even
+and 70 odd candidates; no exact-exposure, fire-severity or cause finding follows.
+The fixed six native images and unchanged reference were actually inspected
+once each after the artifact gates; observations are scores-known, not blind.
+
+**Verification and progress:** Root and reviewer verified the decoder producer's
+documented padding format, then introduced only a versioned single-space grammar
+allowance with truthful wrapper/parent identities. Fresh supervisor 16 controls
+and author/root 70-test suites passed. Two complete 189-frame extractions,
+six fixed scoring chunks and one global aggregate completed within unchanged
+limits. All 567 per-pass comparisons/surfaces and 27 paired pilot records
+reconciled. Independent artifact audit and root rerun checked complete rankings,
+38,343,942 saved cells, eighteen near-best sets and 1674 input hashes. Root's
+separate arithmetic check reproduced 1856 finite scores and 412 null decisions
+at 1134 transforms, maximum error 6.30e-14. Original failed products remain
+refused and preserved. [Execution record](cbs-frame-correspondence/dense-clip3/v2/execution.md)
+contains exact commands, the audit-helper correction, receipts and limits.
+Separate synthesis critique required no material correction; its chronology
+clarification was incorporated. Documentation checks passed 23 fixed pins,
+nine Markdown files, twenty then-present links, six Python syntax/whitespace
+checks, two fresh suite receipts, nine jobs and both navigation entries;
+tracked whitespace checks passed. Completed-state verification then passed
+27 dependency/output/review pins, all 22 local links, the fresh runtime gate,
+the same nine documents/six Python sources and both navigation entries.
+
+**Next independent task:** Complete the full 1128-frame Clip 7 paired search
+against Figure 5-142 under the existing fixed image method and a newly declared,
+reviewed finite resource schedule. Read the correspondence protocol/regions,
+pilot, version-2 plan/adapters/reviews, and original Clip 7 metadata/receipts.
+Reuse verified components; no retuned masks, dropped coverage failures, pooled
+arms or partial-run shortlist. Combined distinct coverage is now **198/1317**,
+leaving **1119 unscored**, all Clip 7. Do not promote the Clip 3 lead to exact
+field/exposure, window material, chronology or temperature. Such use requires
+its own lineage test and actual-human review. Other charter work remains open.
+
+**State:** Full goal active/incomplete; this turn advanced complete coverage
+and source localization, rather than only repeating software checks. Research
+branch HEAD ca1c2233; prior WIP and this unit remain uncommitted. Original
+comparator locks/±1 native-y-pixel placement ranges and human boundaries are
+unchanged. SFB-002 has a deduplicated local correction-verification follow-through,
+not a Sherlock fix; archived-destination routing remains unresolved. No send,
+acknowledgment, legal/main promotion, accepted engine finding, matrix save,
+staging, commit or push.
+
+## Previous refused full Clip 3 version 1
+
+**2026-10-03 full Clip 3 attempt:** The
+[dense extraction attempt](cbs-frame-correspondence/dense-clip3/report.md)
+stopped before scoring. The unchanged strict parser rejected a space-padded
+processing-rate field in the final decoder line. Source hashes matched;
+probe/decoder returned zero, but sampler admission was refused and frames.json
+was not written. All 189 PNGs and original diagnostics remain preserved as
+unadmitted failed-run products. No second extraction, scores, shortlist, new
+image view or causal finding occurred. The completed pilot remains unchanged.
+
+**Verification and concrete progress:** A finite all-189-frame schedule received
+separate method review. The new dense adapter passed 22 synthetic tests in both
+author and root runs; parent comparison 25 and extractor 14 controls passed.
+The supervisor passed 16 controls after two preserved failed runs and scoped
+cleanup corrections. An initial extractor test invocation failed on working-
+directory import; rerunning unchanged tests from the module directory passed.
+Root reproduced the historical refusal and checked all 189 logged PTS/geometry/
+SAR/field joins without opening PNG content. A diagnostic-only in-memory space
+removal parsed, but did not repair or admit the saved run. Separate supervisor
+and failure-artifact reviews and exact commands are in the
+[execution record](cbs-frame-correspondence/dense-clip3/execution.md).
+Synthesis review required no material correction. Final documentation checks
+passed 12 fixed pins, seven documents, twelve local links, four Python sources,
+five control receipts and both navigation entries; tracked whitespace checks
+passed, with the untracked review's one verbatim log line explicitly verified.
+
+**Next independent task:** Declare and review a new version addressing only
+the specific decoder's supported padded progress-field format. Read the frozen
+plan, failed receipt/log, source parser/tests and reviews first. Preserve all
+earlier bytes, forbid generic diagnostic allowlists, test valid formatting and
+warning/unknown-line/PTS negatives, freeze code/parent pins and create-only run
+names, then resume bounded extraction and complete repeat joins before scoring.
+Count the preserved failed run's bytes against the next declared resource budget.
+Do not run the unexecuted second extraction as an automatic retry, retrofit
+frames.json, or treat this local parser failure as footage evidence. Clip 7,
+the original 1317-frame population and the full charter remain in scope.
+Full-reasoning method review plus bounded implementation and independent audit.
+
+**State:** Full goal active/incomplete; this turn made implementation and
+failure-localization progress, not a new scientific match. Branch HEAD ca1c2233;
+new dense files and prior WIP remain uncommitted. Locked comparator annotations
+and their existing ±1 native y-pixel placement ranges remain unchanged. Generic
+diagnostic-format and process-supervision lessons were deduplicated locally in
+SFB-002/005; archived-destination routing is still unresolved. No send,
+acknowledgment, legal/main promotion, accepted engine finding, matrix save,
+staging, commit or push. Human consequential-measurement gates remain open.
+
+## Previous completed CBS correspondence pilot
+
+**2026-10-03 CBS frame-correspondence pilot:** The
+[reviewed pilot](cbs-frame-correspondence/report.md) strengthens the two prior
+scene leads without identifying an exact exposure. Clip 7 index 564 leads both
+fixed geometry and dynamic-at-best-static scores for Figure 5-142. For Figure
+5-143, Clip 3 indices 118, 141, 165 and 188 have nearly equal geometry fits.
+Index 141 leads available dynamic scores; geometric leader 188 lacks sufficient
+dynamic coverage, so it is untested there, not a demonstrated mismatch.
+All eight shortlisted images were actually inspected; impaired/context-poor
+runners-up were retained. Scores are not confidence levels or physical findings.
+
+**Verification:** Both fixed runs completed all 108 combinations of 18 frames,
+two references and three representations. Fresh 11/16/73 inherited arithmetic
+checks and 25 adapter tests passed; root read/reran the adapter tests. The
+independent artifact audit reproduced rankings/groups and verified 112 identical
+material products. Root independently recalculated 347 finite selected scores
+and 85 null decisions at 216 retained transforms; maximum difference 6.49e-13.
+Method critique was addressed before scoring; synthesis critique narrowed the
+dynamic-score heading without changing results. Commands, actual scope and
+limits are in [execution](cbs-frame-correspondence/execution.md).
+Final documentation QA passed ten fixed pins, eight documents, fourteen local
+links, three Python syntax/whitespace checks, both navigation entries and the
+two completed receipts; `git diff --check` passed. The report also retains the
+reviewer's caveat that the best static frame uses less mask coverage.
+
+**Previous goal turn and current progress:** The previous turn completed the
+eight-item coarse screen. This turn declared, reviewed, implemented and executed
+a new field/transform-aware candidate pilot. The already completed comparator
+±1-pixel human range was not rerun or revised. Original annotations, legal/main
+files and earlier reports remain unchanged.
+
+**Next independent task:** Prepare the finite dense extraction/runtime/storage
+schedule for Clips 3 and 7 under the frozen CBS correspondence method, then
+review and execute only within that schedule. The pilot scored 18 of 1317
+inventoried frames; 1299 remain unscored. Begin with the shorter Clip 3 lane if
+useful for bounded execution, without dropping Clip 7 or retuning masks to a
+preferred frame. Preserve cross-view controls, coverage failures and ties.
+Read the pilot protocol, regions, method/artifact/synthesis reviews and exact
+execution receipts before extending it. No dense decode was run in this turn.
+
+**State:** Full goal active/incomplete. Research branch HEAD ca1c2233; new
+cbs-frame-correspondence unit and earlier stages/navigation are intentional WIP.
+Human consequential-measurement and matrix-save gates remain. A generic
+resampling-exclusion requirement was deduplicated locally under SFB-002;
+archived-destination routing remains unresolved, without blocking local work.
+No send/acknowledgment, accepted engine finding, legal promotion, staging,
+commit or push.
+
+## Previous completed CBS source screen
+
+**2026-10-03 CBS source screen, final pair and full catalogue:** The
+[Clips 7–8 and all-eight synthesis](cbs-vince-source-screen/stage4/report.md)
+adds a supported Clip 7 to Figure 5-142 scene/view association in both frozen
+readings. Clip 3 remains the supported 5-143 lead; 5-141 remains unresolved,
+with Clip 4 only partial. Clip 8's nine samples show a different, distant
+two-tower scene. No exact published exposure, common original recording,
+glazing state, fire severity or cause ranking is established. Root and the
+second reader's different lower-sign visibility at Clip 7 index 564 remain
+explicit, as does the earlier root-only fine trace in Clip 3.
+
+**Coverage and verification:** All eight exact candidates were acquired and
+sampled under the unchanged rule: 72 selected frames from 5,567 inventoried,
+leaving 5,495 unviewed. Aggregate selected bytes are 692,988,832. Two preserved
+partials total 101,980,621 bytes and are not additional sources. Separate
+coverage audit and root recalculation agree. Stage 4's fresh 14 parent and
+25 adapter controls passed; two complete first-attempt downloads, 18 targets,
+36 PNG/RGB records and 18 repeat pairs reconcile. The independent artifact
+checker and root rerun pass material checks while retaining two unequal logs:
+only final processing-fps fields differ. No diagnostic grammar was widened.
+The earlier Clip 6 time-cap overrun remains a deviation. Critique and final
+documentation verification are recorded in the linked stage execution log.
+The final critique reconciled all 24 reference dispositions without a material
+scientific correction. Final QA passed 14 fixed pins, eight authored documents,
+24 local links, both navigation entries and whitespace checks.
+
+**Previous goal turn:** Progress: it completed the held stage 3 synthesis and
+critique. This turn acquired and screened the final fixed pair, added a new
+scene-supported lead, and reconciled the whole declared candidate set. It did
+not merely repeat a coordinate or status check. All frozen annotations and
+earlier reports are preserved; no missed match is ruled out between samples.
+
+**Next independent task:** Declare and review the bounded frame/field/source-
+transform comparison for acquired Clips 3 and 7 against Figures 5-143 and
+5-142. Read the unchanged screen protocol, reference/observation freezes,
+all-eight report and existing window-state/human-review records. Specify
+allowable transforms, mismatch controls, candidate coverage, tie/failure
+reporting and applicable human gates before execution. Do not choose the
+visually best run after tuning, synthesize missing detail, infer exact exposure
+from scene similarity, or transfer Floor 8 to Floor 12. Keep Clip 4's partial
+5-141 lead open. Full-reasoning method design with separate critique, then
+bounded implementation/verification only within the reviewed scope.
+
+**State and boundaries:** Branch research/sherlock-wtc7-investigation at
+ca1c2233. Stages 2–4 and navigation/feedback changes are intentional WIP.
+Main/legal/raw records, prior observations and full charter remain unchanged.
+The investigation remains active/incomplete; other work packages, human checks
+and matrix-save permission are not cleared. Runtime-log recurrence is recorded
+under the existing acknowledged SFB-002 requirement, not a new verified fix.
+Archived-destination routing still awaits the existing user decision. No new
+delivery/acknowledgment, accepted Sherlock/Faraday finding, external disclosure,
+legal promotion, staging, commit or push.
+
+## Previous completed CBS screen stage 3
+
+**2026-10-03 CBS source screen, stage 3:** The
+[Clips 5–6 result](cbs-vince-source-screen/stage3/report.md) finds no full
+scene/view association in the fixed sample. Clip 6 index 172 supplies a
+partial Figure 5-143 lead, but both readers leave distinguishing fine detail
+unresolved under their separate frozen descriptions. Clip 5's exposed corner
+ordering is contrary to the specified reference view, not proof of a different
+building. Severe impairment in Clip 6's final sample and banner/crop limits
+are retained. The prior Clip 3 association is unchanged. No physical window,
+fire severity, original-exposure or cause ranking follows.
+
+**Verification and exception:** Fresh metadata, 14 parent and 25 adapter
+controls, 18 fixed targets and two repeat extractions are recorded. Independent
+artifact audit and root rerun reconcile three transfer attempts, 726 inventory
+frames, 36 PNG/RGB records and 18 repeat pairs. The first Clip 6 attempt reported
+71.150559 seconds despite a requested 55-second limit; its partial bytes remain
+preserved and excluded. Artifact integrity passed; transfer-cap compliance did
+not. No broader protocol pass is claimed. Each reader viewed 18 images once,
+saved Clip 5 before Clip 6, and froze both before exchange. The replacement
+reader used inherited reference text, not a fresh reference-pixel inspection.
+Review and actual verification details are in the stage report/execution log.
+The separate synthesis critique required no material scientific correction;
+final checks passed 13 fixed pins, eight authored documents, 26 local links,
+both current navigation entries and whitespace validation.
+
+**Previous goal turn:** No new scientific progress; it rechecked the already
+completed comparator-coordinate result. This continuation resumed the held
+Clips 5–6 work, reran the artifact audit and completed a source-specific
+synthesis without new viewing or restarted acquisition.
+
+**Next independent task:** Complete the fixed screen with Clips 7–8. Read
+the unchanged PROTOCOL.md, both frozen reference descriptions, stage reports,
+stage 3's retained timing exception and current code/runtime pins. Preserve
+the same acquisition caps, rational selection rule, paired extractions and
+separately frozen readings. Report requested and observed transfer duration
+separately; do not silently enlarge the limit. No retuned cues or early stop
+on a preferred match. After all eight candidates, declare the exact-frame/
+field/source-transform test for the strongest supported leads. Full-reasoning
+visual/method work plus a separate bounded artifact audit.
+
+**State and boundaries:** Branch research/sherlock-wtc7-investigation at
+ca1c2233. Stage 2, stage 3 and navigation/feedback changes are intentional
+uncommitted work. Main/legal/raw records and original observations remain
+unchanged. Full charter active/incomplete; other human checks and matrix-save
+permission remain open. The timeout-reporting lesson is deduplicated locally
+under SFB-005. Archived-destination routing still awaits the existing user
+decision; no delivery, acknowledgment or fix is claimed. No accepted Sherlock/
+Faraday finding, external disclosure, legal promotion, staging, commit or push.
+
+## Previous completed CBS screen stage 2
+
+**2026-10-03 CBS source screen, stage2:** The
+[Clips3–4 result](cbs-vince-source-screen/stage2/report.md) supplies a new
+bounded scene/view association between Clip3 and Figure5-143 in both separately
+frozen readings. Clip4 gives partial positive5-141 correspondence, but its
+banner hides the lower relationship needed for a full match. No5-142 match,
+exact exposure, common original recording, physical window state or cause
+ranking is established. Root alone recorded the fine descending trace; the
+second reader used other frozen spatial relationships and did not confirm it.
+Clip3's first mixed image and Clip4's severely striped final frame remain
+explicit limitations despite clean decoding and repeatable pixels.
+
+**Verification:** Two complete first-attempt downloads, fresh exact metadata,
+14parent+25adapter controls, fixed18-target preparation and two native sample
+extractions passed. Independent artifact audit and root rerun reconciled the
+395frame inventories,18 selections,36PNG/RGB identities,18 repeat pairs,
+commands, diagnostics and source pins. Each reader viewed18samples once,
+saved Clip3 before Clip4, and froze before exchange. The separate reader is
+a replacement using the original frozen textual reference record, not the
+original observer or an independent reference-pixel rereading. The final
+synthesis review/documentation checks are linked in the stage report/log.
+
+**Previous goal turn:** No new scientific progress; it checked the already
+completed comparator-coordinate result. This turn acquired and screened a
+new fixed pair, changing the source-follow-up from generic unresolved footage
+to a specific scene-supported candidate. No threshold or source set changed.
+
+**Next independent task:** Continue the unchanged eight-item protocol with
+Clips5–6, then7–8. Read PROTOCOL.md, the two frozen reference descriptions,
+stage1 and stage2 reports/reviews, and current acquisition/code/runtime pins.
+Retain nine rational PTS targets, diagnostic refusals, repeat extractions,
+two separately frozen readings and stage-specific immutable outputs. Do not
+stop because Clip3 matched or retune the reference cues. After the finite
+screen, declare an exact-frame/field/source-transform test for the strongest
+supported leads; a source association does not itself accept glazing state.
+Full-reasoning visual/method work plus separate bounded artifact audit.
+
+**State and boundaries:** Branchresearch/sherlock-wtc7-investigation,
+HEADca1c2233; stage2 and navigation/feedback changes are intentional uncommitted
+work. The main repository, legal/raw sources, original observations and
+stage1 report remain unchanged by this turn. Full charter active/incomplete.
+The partial September29 human response remains separate; other human checks
+and matrix-save permission remain open. A generic visual-quality recurrence
+was deduplicated locally underSFB-002/SFB-005; archived-destination routing
+still awaits the existing user decision. No send/acknowledgment, accepted
+Sherlock/Faraday finding, legal promotion, publication, stage, commit or push.
+
+## Previous completed CBS screen stage1
+
 **2026-09-28 CBS source screen, stage1:** The
 [fixed two-clip screen](cbs-vince-source-screen/report.md) acquired Clips1–2
 and found no supported scene/view counterpart to Figures5-141/142/143 in
@@ -1911,7 +5576,7 @@ The renewed reminder's read-only inventory check confirms seven files totaling 7
 | Metric scale, projection and clock admissibility | [Report](metric-motion-audit/report.md), [validation](metric-motion-audit/validation.md), source/clock and calibration reviews, two synthetic runs and independent reconstruction | Assigned metric scale and dimensional leads are real; endpoint/physical-scale and original-clock joins remain conditional. All 26 synthetic examples reproduce. No historical error bound, newly reproduced gravity interval, whole-building force or cause finding. |
 | Camera 2 two-feature appearance trackability | [Report](camera2-target-trackability/report.md), [validation](camera2-target-trackability/validation.md), frozen annotations, two runs and independent arithmetic/conceptual review | Preserves native-image displacement and material correspondence/threshold disagreement. All eligible later differential intervals contain zero; neither equality nor an order of physical motion follows. Near-identity reference-map sensitivity is not physical calibration, whole-building symmetry, acceleration or cause. |
 | Camera 2 baseline-reviewed one-reference repair | [Report](camera2-reference-repair/report.md), [validation](camera2-reference-repair/validation.md), two runs, independent numeric and visual comparison | Correcting our mistaken reference changes admissibility without changing the five retained matches or method. Larger patches support a near-identity map in 71 samples; smaller-patch ambiguity and cutoff roundoff remain explicit. No physical camera calibration, building acceleration or cause. |
-| Camera 2/4 multi-reference image-motion diagnostic | [Report](reference-motion/report.md), [validation](reference-motion/validation.md), two runs, all-grid/fit verification and independent visual comparison | 1,608 candidate rows/grids and 804 model-status rows reproduce; Camera 2 annotation error prevents all-six fits, while Camera 4 has a limited 42-image consistency subset. Retains model/size/late-reference failures. No calibrated trajectory, acceleration, physical stationarity, hidden support timing or cause. |
+| Camera 2/4 multi-reference image-motion diagnostic | [Report](/Users/admin/docs/911/research/sherlock-wtc7-investigation/reference-motion/report.md), [validation](/Users/admin/docs/911/research/sherlock-wtc7-investigation/reference-motion/validation.md), two runs, all-grid/fit verification and independent visual comparison | 1,608 candidate rows/grids and 804 model-status rows reproduce; Camera 2 annotation error prevents all-six fits, while Camera 4 has a limited 42-image consistency subset. Retains model/size/late-reference failures. No calibrated trajectory, acceleration, physical stationarity, hidden support timing or cause. |
 | Camera 2/4 visibility and sequence screening | [Report](multiview-onset-review/report.md), [validation](multiview-onset-review/validation.md), two accepted overview/refinement run pairs, independent visual and artifact review | Staged rooftop/outer-outline appearance changes, Camera2's19-frame mixed-content interruption and Camera4 late reframing. Each extraction matches9,479 raw frames to preserved maps;319initial/226refinement selections. No physical onset, calibrated displacement, synchronization, hidden support timing or causal ranking. |
 | Camera 3 cadence/blend identifiability | [Report](cadence-blend-audit/report.md), [validation](cadence-blend-audit/validation.md), synthetic counterexamples and independent all-row arithmetic | Strong old-copy phase-dependent near-neighbor pattern; different physical/conversion histories can produce identical synthetic pixels. All 2,684 rows reproduce. No unique original rate, clock correction, physical acceleration or cause identified. |
 | Camera 3 WMV warning localization | [Diagnostic report](camera3-recording-comparison/wmv-diagnostic/report.md), [validation](camera3-recording-comparison/wmv-diagnostic/validation.md), two complete retained runs and independent review | Three warnings associate with countdown indices 37/55/63, outside saved point selections. Narrows the original unlocalized warning concern; does not certify later pixels, admit WMV matching, authenticate clocks or change cause ranking. |
@@ -2126,9 +5791,9 @@ Closeout: main read and reran the complete independent verifier; its result equa
 
 The preceding goal turn made **progress by recording the newly flagged production and preserving completed reviewer work**, but did not inspect the new contents. This continuation made scientific progress on Q03–Q05/WP2 by executing the fixed six-reference test, rather than treating the pending content-privacy gate as a blocker on public-footage work.
 
-The [report](reference-motion/report.md) preserves the negative Camera 2 result and the Camera 4 consistency/coverage limits. C2-R3's (288,400) coordinate was mistakenly associated with a nearby bright feature; the original annotator confirmed root's post-output criticism. All prior annotations remain frozen, with an additive correction on ten size-specific comparisons. No reference was silently removed or replaced to obtain a passing fit. Camera 4's all-six fits end at index1199; the later21 selected images fail admission. Affine flexibility produces worse omitted-reference prediction in many cases despite no larger least-squares RMS. None of this determines building acceleration or changes the collapse ranking.
+The [report](/Users/admin/docs/911/research/sherlock-wtc7-investigation/reference-motion/report.md) preserves the negative Camera 2 result and the Camera 4 consistency/coverage limits. C2-R3's (288,400) coordinate was mistakenly associated with a nearby bright feature; the original annotator confirmed root's post-output criticism. All prior annotations remain frozen, with an additive correction on ten size-specific comparisons. No reference was silently removed or replaced to obtain a passing fit. Camera 4's all-six fits end at index1199; the later21 selected images fail admission. Affine flexibility produces worse omitted-reference prediction in many cases despite no larger least-squares RMS. None of this determines building acceleration or changes the collapse ranking.
 
-Two historical runs have 34 byte-identical files each. Root controls02 passes 11 tests; the earlier control failure from an incorrect clipped-grid expectation remains preserved. The independent numerical verifier checks all 1,608 grids, 804 model rows, 252 fits and 1,512 leave-one-out folds; root reran it successfully. Both analysts inspected all 24 overlays. The 120-row manual comparison reproduces across runs, but numerical agreement does not cure the confirmed landmark-identity error. Root's comparison output differs from the original only in its reported Python runtime; the reviewer's own repeated output is separately preserved byte-identically. See [validation](reference-motion/validation.md) for exact scope and corrected runtime bookkeeping.
+Two historical runs have 34 byte-identical files each. Root controls02 passes 11 tests; the earlier control failure from an incorrect clipped-grid expectation remains preserved. The independent numerical verifier checks all 1,608 grids, 804 model rows, 252 fits and 1,512 leave-one-out folds; root reran it successfully. Both analysts inspected all 24 overlays. The 120-row manual comparison reproduces across runs, but numerical agreement does not cure the confirmed landmark-identity error. Root's comparison output differs from the original only in its reported Python runtime; the reviewer's own repeated output is separately preserved byte-identically. See [validation](/Users/admin/docs/911/research/sherlock-wtc7-investigation/reference-motion/validation.md) for exact scope and corrected runtime bookkeeping.
 
 **Next independent task:** If the new production is cleared for inspection, prioritize the already declared model-input/dependency crosswalk; presence alone neither closes nor preserves prior withholding/data-gap conclusions. Without that approval, prepare a separately versioned Camera 2 reference repair: baseline-only candidate/patch overlays, confirmed description-coordinate associations, explicit texture/competitor preflight and fresh snapshots before new scoring. Retain this failed configuration, classify the follow-up as exploratory on already-seen images, and do not tune on target-building motion. The next meaningful acceptance is a supported multi-reference image constraint or a precise remaining failure—not a revised cause ranking from control counts. Human/specialist material-point and physical-calibration gates remain. Full-reasoning scientific review is appropriate.
 

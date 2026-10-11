@@ -1,0 +1,302 @@
+{
+  "status": "verified_native_annotation_comparison_not_physical_measurement",
+  "record_type": "root record of observed tool results with independently generated check receipts",
+  "date_local": "2026-10-07",
+  "branch": "research/sherlock-wtc7-investigation",
+  "base_head": "ca1c223335c20905d6608eb15c676f88cbfac734",
+  "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/energy345",
+  "state": "Uncommitted investigation worktree; original sources and prior E3 artifacts unchanged.",
+  "runtime": {
+    "producer": "Python3.13.7",
+    "independent": "Python3.12.14 / Pillow12.3.0",
+    "decoder_limit": "Pillow family shared with context creation; not independent codec."
+  },
+  "coverage": {
+    "E4": {
+      "target": [
+        440,
+        72,
+        690,
+        92
+      ],
+      "context": [
+        438,
+        70,
+        692,
+        92
+      ],
+      "context_cells_per_reader": 5588,
+      "route_records_per_reader": 500
+    },
+    "E5": {
+      "target": [
+        395,
+        18,
+        690,
+        47
+      ],
+      "context": [
+        393,
+        16,
+        692,
+        49
+      ],
+      "context_cells_per_reader": 9867,
+      "route_records_per_reader": 590
+    },
+    "independently_checked_route_records": 2180,
+    "independently_checked_band_records": 881,
+    "independent_set_operations": 24525,
+    "fresh_context_cells": 15455,
+    "selected_cells": 3582,
+    "selected_exact_white_cells": 0,
+    "physical_support": null,
+    "human_accepted": false
+  },
+  "summaries": {
+    "E4": {
+      "route_entries": 500,
+      "route_outer_different": 10,
+      "route_class_different": 10,
+      "route_status_different": 81,
+      "all_ink_columns": 250,
+      "all_ink_outer_different": 76,
+      "all_ink_class_different": 77
+    },
+    "E5": {
+      "route_entries": 590,
+      "route_outer_different": 23,
+      "route_class_different": 25,
+      "route_status_different": 18,
+      "all_ink_columns": 295,
+      "all_ink_outer_different": 32,
+      "all_ink_class_different": 34
+    }
+  },
+  "commands": [
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B reader-E4-root.py --output reader-E4-root.json",
+      "receipt": "15c429",
+      "exit_code": 0
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B reader-E4-root.py --output reader-E4-root-repeat.json",
+      "receipt": "7ab247",
+      "exit_code": 0
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B reader-E5-root.py --output reader-E5-root.json",
+      "receipt": "e38b17",
+      "exit_code": 0
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B reader-E5-root.py --output reader-E5-root-repeat.json",
+      "receipt": "04170f",
+      "exit_code": 0
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B -m unittest -v test_compare_e45",
+      "receipt": "c48e18",
+      "exit_code": 0,
+      "tests": 20
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B - [inline in-memory build/comparison replay]",
+      "receipt": "189eb8",
+      "exit_code": 0,
+      "result": "All four reader builds equal frozen JSON; all four repeats byte-equal. Both new comparator runs equal saved JSON; pair repeats byte-equal."
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_e45",
+      "receipt": "92921a",
+      "exit_code": 0,
+      "tests": 11
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B - [inline independent checker.run replay]",
+      "receipt": "584a08",
+      "exit_code": 0,
+      "result": "Every field equals saved checker result; both checker files byte-equal;15 scalar controls pass."
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B - [inline previous verification.json sha256 checks]",
+      "receipt": "90553a",
+      "exit_code": 0,
+      "result": "All21 prior E3 pins unchanged."
+    }
+  ],
+  "independent_full_commands_and_attempts": "independent-comparison-e45-test-receipt.json",
+  "saved_comparison_runs": {
+    "E4": {
+      "receipt": "96a5a3",
+      "exit_code": 0
+    },
+    "E5": {
+      "receipt": "ba2d6a",
+      "exit_code": 0
+    }
+  },
+  "independence": {
+    "readers": "Separate pre-exchange freezes by prior-informed same-source AI readers; not blinded historical corroboration or human review.",
+    "comparator": "Peer E4 reader also authored comparator; producer tests not independent verification.",
+    "checker": "Separate author; AST literal extraction and separately authored expansion, all fields; list/boolean operation checks; no producer imports or execution.",
+    "source_critique": "Participating E5 reader reviewed disagreements after exchange; no definite transcription error reported, no third blind reading or harmonization."
+  },
+  "attempts": {
+    "failed_environment": "Independent system Python missing Pillow and initial worktree output denial retained in the independent receipt. Same scoped computation later succeeded without source/code relaxation.",
+    "peer_E5_initial_save": "Peer reported ordinary shell write denied before JSON creation; frozen outputs created later with scoped permission. No failed save counted as freeze.",
+    "documentation_link": "An initial local report link had one extra parent segment; corrected before final link/pin checks. No source content changed."
+  },
+  "verification_limits": [
+    "No selected-white defect is not proof of correct core/fringe assignment or model identity.",
+    "Repeated source perception metadata is not independent witnessing.",
+    "Disagreement counts compare readers, not spring and shell physics.",
+    "No calibrated pre-raster containment bound, support inventory, accepted physical ordinate, simulation, cause ranking or legal finding.",
+    "Frozen files use exclusive-output saves; reproductions must not overwrite them."
+  ],
+  "next": [
+    "E8 Im7 [535,54,690,86]",
+    "E9 Im7 [530,30,690,56]",
+    "Remaining fixed force regions and full all-pair source support/identity inventory",
+    "Calibrated bounds and unchanged42 paired human slots before physical metric admission"
+  ],
+  "feedback": "Deduplicated fringe-only boundary fixture appended locally. Existing Sherlock destination remains archived; no send, acknowledgement or fix.",
+  "pins": {
+    "PROTOCOL.md": {
+      "sha256": "be57860a830ab716498ba5d25733021c1c975da1b0427f50f64071af4eaf5f16",
+      "bytes": 4557
+    },
+    "IDENTITY-CLARIFICATION.md": {
+      "sha256": "c9d79b6d92a5cbc2f4747e027bce81ee5b1cbec0528b018b368f22fd2b01098b",
+      "bytes": 1420
+    },
+    "../PROTOCOL.md": {
+      "sha256": "2066edbe4f36d4eeb8e3be1695fdd72fe32f9649d779ea897e5e63358cb4fdbd",
+      "bytes": 5438
+    },
+    "../REGIONS.json": {
+      "sha256": "ad6ec930f70e367028624bb3e497944147902b9817e5690e4980ea2ebeb2c131",
+      "bytes": 3084
+    },
+    "../../native-strips01/Im9.jpg": {
+      "sha256": "3154e28ea82ca2f39c465a7bdfe367677216543df296cf918cbbd259248f8129",
+      "bytes": 10344
+    },
+    "../../render01/page-076.png": {
+      "sha256": "0835db6f0a138f5ddebfd6c4c81a857fda6e2da36379eeee1acbc3b5a9a6baf6",
+      "bytes": 943120
+    },
+    "context01.json": {
+      "sha256": "59cef4cee1a54d66dacd4e2846e12a12d7b47c8091285ae8f68d8899bf6f2e48",
+      "bytes": 3276538
+    },
+    "context02.json": {
+      "sha256": "59cef4cee1a54d66dacd4e2846e12a12d7b47c8091285ae8f68d8899bf6f2e48",
+      "bytes": 3276538
+    },
+    "context-independent-check.json": {
+      "sha256": "d06d8bce8e58c0016582cd5e0dd52b13ad9daadd86ca21f71f26484305e9373b",
+      "bytes": 19188
+    },
+    "compare_e45.py": {
+      "sha256": "e9f5f1d99a1c041a06cb6f4f86b25bd2d3245f14e8e1e58c8382b3ab3c6974b2",
+      "bytes": 9877
+    },
+    "test_compare_e45.py": {
+      "sha256": "0ebedbb46fb0cb6bd014a5abd84592d307722e667c89bc9f3e0a8fc694735f02",
+      "bytes": 4183
+    },
+    "independent-comparison-e45-check.py": {
+      "sha256": "1bf56c08320f66d0dd13b41a670a1a19a77b8d8b5b2832cb5ed2c17b437ae055",
+      "bytes": 34851
+    },
+    "test_independent_comparison_e45.py": {
+      "sha256": "9beadef3c05c9fcc6988a350a3ae77fb1c111c2c604e652a64cec9df6176c976",
+      "bytes": 6814
+    },
+    "independent-comparison-e45-check01.json": {
+      "sha256": "9c0136651ce958fb794ed1c333e0e5ba8a2c5bd1921c2ea4e5d84e0e17f9bd1b",
+      "bytes": 21199
+    },
+    "independent-comparison-e45-check02.json": {
+      "sha256": "9c0136651ce958fb794ed1c333e0e5ba8a2c5bd1921c2ea4e5d84e0e17f9bd1b",
+      "bytes": 21199
+    },
+    "independent-comparison-e45-test-receipt.json": {
+      "sha256": "0cebb19fd0c66b0829bd30bd8e5afdaab2dd9975f70fd1ba9eb3cd2b5c30f1b4",
+      "bytes": 5312
+    },
+    "report-e45.md": {
+      "sha256": "861bda2e27e6c4c05c63dcc4279e2205e982f7bd3c74127473f170593d222e96",
+      "bytes": 7916
+    },
+    "verification.json": {
+      "sha256": "b4e7a68dc1808cd38914dff0f5aea0e7037007aac55216837bf40a30675cbc3a",
+      "bytes": 5917
+    },
+    "reader-E4-root.py": {
+      "sha256": "5a3becf0ced4dcbd733370c3bf7590b325c2a815a13489c0591aa817caa05376",
+      "bytes": 7311
+    },
+    "reader-E4-root.json": {
+      "sha256": "b1ad179b8cbd256e0cb01c9d79ac54778dccc6312698e38008399db6a93c9326",
+      "bytes": 315773
+    },
+    "reader-E4-root-repeat.json": {
+      "sha256": "b1ad179b8cbd256e0cb01c9d79ac54778dccc6312698e38008399db6a93c9326",
+      "bytes": 315773
+    },
+    "reader-E4-independent.py": {
+      "sha256": "075f83589d5fa12f84eda89b5c6ff2b8ae08e66f3be7cf8e576e43f27c6e5c92",
+      "bytes": 7372
+    },
+    "reader-E4-independent.json": {
+      "sha256": "f7545fea9317bc7c24ec7b5f6e5d63bc5158e1a11b31b361fa29099d39976a01",
+      "bytes": 221803
+    },
+    "reader-E4-independent-repeat.json": {
+      "sha256": "f7545fea9317bc7c24ec7b5f6e5d63bc5158e1a11b31b361fa29099d39976a01",
+      "bytes": 221803
+    },
+    "comparison-E4-01.json": {
+      "sha256": "1304d3e863b6ff2f716ce29da4f491c1e2fd3e440729a0ee93b0f02fa3e61663",
+      "bytes": 1740683
+    },
+    "comparison-E4-02.json": {
+      "sha256": "1304d3e863b6ff2f716ce29da4f491c1e2fd3e440729a0ee93b0f02fa3e61663",
+      "bytes": 1740683
+    },
+    "reader-E5-root.py": {
+      "sha256": "f679bc92da880a0fe80e5eed1ea66e091259393615030e02e28e2f416966d7e8",
+      "bytes": 8418
+    },
+    "reader-E5-root.json": {
+      "sha256": "68190d7db15e73a24b04c854c7c3bf5966cd92877550b49ce22ed2730723f536",
+      "bytes": 462727
+    },
+    "reader-E5-root-repeat.json": {
+      "sha256": "68190d7db15e73a24b04c854c7c3bf5966cd92877550b49ce22ed2730723f536",
+      "bytes": 462727
+    },
+    "reader-E5-independent.py": {
+      "sha256": "d9f3d393d13cbd9458a0cae93e15af00fed3e1f152cdcb60c8e179447500bb13",
+      "bytes": 16906
+    },
+    "reader-E5-independent.json": {
+      "sha256": "81f9d9d19a7fa827702ca118e8bc3f5d1d4cd8db95380fb765b7407f98a39f38",
+      "bytes": 531294
+    },
+    "reader-E5-independent-repeat.json": {
+      "sha256": "81f9d9d19a7fa827702ca118e8bc3f5d1d4cd8db95380fb765b7407f98a39f38",
+      "bytes": 531294
+    },
+    "comparison-E5-01.json": {
+      "sha256": "3488a350f3da9c0be15d265b56ca2e40b3c561e4db7d79a66fb156d72c11876b",
+      "bytes": 2768067
+    },
+    "comparison-E5-02.json": {
+      "sha256": "3488a350f3da9c0be15d265b56ca2e40b3c561e4db7d79a66fb156d72c11876b",
+      "bytes": 2768067
+    }
+  }
+}

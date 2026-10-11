@@ -1,0 +1,266 @@
+{
+  "date": "2026-10-08",
+  "status": "completed_conditional_coordinate_preparation_not_accepted_measurement",
+  "branch": "research/sherlock-wtc7-investigation",
+  "base_head": "ca1c223335c20905d6608eb15c676f88cbfac734",
+  "previous_goal_turn": "progress: finished the existing fourteen-pair reconciliation receipt and final verification; acoustic reply did not supply a new measurement",
+  "current_goal_turn": "progress: explicit conditional ink-to-coordinate decision and full calculation across all 34 saved readings, separately reproduced",
+  "scope": {
+    "pairs": 14,
+    "regions": 17,
+    "readings": 34,
+    "records": 10840,
+    "conditional_reader_route_windows": 3915,
+    "withheld_records": 6925,
+    "base_geometric_rectangles": 5088,
+    "physical_axis_hulls": 7830,
+    "input_pins": 84
+  },
+  "scientific_conditions": {
+    "Hidentity": "Reader-local model/style attribution is correct.",
+    "Hsupport": "Generating curve exists throughout this full native column.",
+    "Hink0": "Its ordinate stays within that reader's selected core-plus-fringe cell-edge rectangle, with no extra unselected-halo allowance.",
+    "uncertainty": "Conditional sets, not calibrated confidence bounds. Native cell extent does not establish a compression-error bound.",
+    "correlation": "Each named axis parameter box is shared across all records/models in its panel; marginal hulls are not independent errors.",
+    "human_acceptance": false,
+    "common_support": null,
+    "quantile_targets": null,
+    "model_discrepancies": null
+  },
+  "checks": [
+    {
+      "receipt": "45dbaf",
+      "cwd": ".",
+      "command": "python3 -B -m unittest -v test_calculate.py",
+      "exit_code": 0,
+      "result": "12 tests passed; synthetic arithmetic/schema controls only."
+    },
+    {
+      "receipt": "7af71d",
+      "cwd": ".",
+      "command": "python3 -B calculate.py run01",
+      "exit_code": 0,
+      "result": "10840 records; 34 readings; 3915 conditional windows; exclusive-created output."
+    },
+    {
+      "receipt": "885f6e",
+      "cwd": ".",
+      "command": "python3 -B calculate.py run02",
+      "exit_code": 0,
+      "result": "Identical counts, 5427285 bytes and SHA-256; independent execution, same implementation."
+    },
+    {
+      "receipt": "d472bc",
+      "cwd": ".",
+      "operation": "Read-only Python exact byte equality plus per-pair/route counts and first qualifying E7/F3 example inspection",
+      "exit_code": 0,
+      "result": "Complete outputs equal; per-reader/source alternatives retained. Examples were not selected human-review samples."
+    },
+    {
+      "receipt": "d70665",
+      "cwd": "../..",
+      "command": "python3 -B -m unittest -v registration_controls.Controls",
+      "exit_code": 0,
+      "result": "20 reused synthetic geometry controls passed."
+    },
+    {
+      "receipt": "1fb26a",
+      "cwd": "..",
+      "command": "python3 -B -m unittest -v test_screen.py",
+      "exit_code": 0,
+      "result": "11 reused geometry/schema tests passed."
+    },
+    {
+      "receipt": "7f012b",
+      "actor": "conditional_envelope_oracle",
+      "cwd": ".",
+      "commands": [
+        "python3 -B independent_check.py --self-test",
+        "python3 -B independent_check.py run01.json"
+      ],
+      "exit_code": 0,
+      "result": "Separate full implementation verifies every record, rectangle and physical hull; 12 manual controls."
+    },
+    {
+      "receipt": "5b22ad",
+      "actor": "root",
+      "cwd": ".",
+      "command": "python3 -B independent_check.py run01.json",
+      "exit_code": 0,
+      "result": "Read complete checker before replay. Saved parsed stdout as independent-check.json; no producer/geometry/classifier imports."
+    },
+    {
+      "receipts": [
+        "717dd8",
+        "9d7dca"
+      ],
+      "actors": [
+        "conditional_envelope_oracle",
+        "root"
+      ],
+      "operation": "In-memory mutations to first qualifying ordinate and first exclusion-reason list, using checker load interception; no file mutations",
+      "exit_code": 0,
+      "result": "Both corruptions rejected at the intended mismatched field; original run bytes unchanged."
+    },
+    {
+      "receipt": "cb2a8a",
+      "operation": "Read-only pair counts, outward-rounded E7 example, and exact F9-Im0 x286 alternative check",
+      "exit_code": 0,
+      "result": "14-pair summary obtained; primary x286 conditional, peer excluded; no paired admission."
+    },
+    {
+      "receipt": "e3c0d2",
+      "cwd": "../../../../..",
+      "command": "git diff --check",
+      "exit_code": 0,
+      "result": "Tracked whitespace check passed; new artifact whitespace separately checked."
+    },
+    {
+      "receipt": "6b432e",
+      "operation": "Read-only final input/output hashes, exact repeat, all14 report-table count rows and new-artifact whitespace",
+      "exit_code": 0,
+      "result": {
+        "input_pins_rechecked": 84,
+        "pins": {
+          "PROTOCOL.md": {
+            "bytes": 6360,
+            "sha256": "b35f1714e88127dcf6d098b404d1ac4330e45c263a0da357f4ffdb67c4053bc2"
+          },
+          "calculate.py": {
+            "bytes": 11195,
+            "sha256": "9d3f00efca8cb858b80a2b34c11f8253d2de59c66b46257df9dfc715d73ee89a"
+          },
+          "independent-check.json": {
+            "bytes": 2796,
+            "sha256": "18c8ad5d71add639838fa27c8ce8cd0c52470302410bc850da910a296e9c8f6f"
+          },
+          "independent_check.py": {
+            "bytes": 20122,
+            "sha256": "8f83a8b591de73aef342ecb6d01830cd012eb0593e43731236ba73f553ad69f0"
+          },
+          "report.md": {
+            "bytes": 7506,
+            "sha256": "1d8ac3cde42e8037a625f6e721923ac0783267d47cce756726722fe7d94c7072"
+          },
+          "run01.json": {
+            "bytes": 5427285,
+            "sha256": "940947030c60d1b5a4d0b1f9ac4f3191db7fb8b355337b47062b796f4ce73678"
+          },
+          "run02.json": {
+            "bytes": 5427285,
+            "sha256": "940947030c60d1b5a4d0b1f9ac4f3191db7fb8b355337b47062b796f4ce73678"
+          },
+          "test_calculate.py": {
+            "bytes": 4943,
+            "sha256": "9602b51b0a240d512f9a6ad6a9321d1d8fdc7766c9669065aa9e265b2d8b4389"
+          }
+        },
+        "status": "pass",
+        "table_pairs_checked": 14
+      }
+    }
+  ],
+  "preserved_failure": {
+    "operation": "First calculate.py creation via apply_patch",
+    "result": "Automatic permission approval review timed out. Read-only ls confirmed no calculate.py; one permitted retry succeeded.",
+    "inspection_receipt": "0270b7",
+    "scientific_result": "No numerical or scientific test had run or failed."
+  },
+  "reviews": [
+    {
+      "reviewer": "conditional_bounds_review",
+      "kind": "read-only method and targeted-result review",
+      "result": "No substantive blocker. Preserve F9 contested alternative and distinguish native cell extent from historical compression-error bound.",
+      "limits": "Shared-source, prior-informed AI review, not human acceptance, independent historical observation or licensed review."
+    }
+  ],
+  "claim_ledger": [
+    {
+      "claim": "All saved records were processed, and every conditional calculation reproduces.",
+      "type": "derived",
+      "grade": "A for stated arithmetic and artifact coverage only",
+      "support": "run01/run02 plus independent-check.json",
+      "limit": "Does not validate assumptions about generating curves.",
+      "falsifier": "A changed pin, unaccounted record, incorrect reason, transform or axis extremum."
+    },
+    {
+      "claim": "These rectangles can bound the plotted generating curve under Hidentity, Hsupport and Hink0.",
+      "type": "conditional model-dependent inference",
+      "grade": "C",
+      "support": "Declared cell-edge convention, source-specific exclusions and finite prior synthetic controls",
+      "alternative": "Faint unselected ink, partial dash extent or mistaken route could violate a premise.",
+      "falsifier": "A source-specific recovered path, accountable rereading or human correction outside the assumed enclosure/identity."
+    },
+    {
+      "claim": "A model discrepancy or historical support loss is established.",
+      "type": "unmade claim",
+      "grade": "E if inferred from this unit alone",
+      "support": null,
+      "limit": "No common domains, metric, selected human curve review or building-specific validation produced."
+    }
+  ],
+  "artifact_pins": {
+    "PROTOCOL.md": {
+      "bytes": 6360,
+      "sha256": "b35f1714e88127dcf6d098b404d1ac4330e45c263a0da357f4ffdb67c4053bc2"
+    },
+    "calculate.py": {
+      "bytes": 11195,
+      "sha256": "9d3f00efca8cb858b80a2b34c11f8253d2de59c66b46257df9dfc715d73ee89a"
+    },
+    "independent-check.json": {
+      "bytes": 2796,
+      "sha256": "18c8ad5d71add639838fa27c8ce8cd0c52470302410bc850da910a296e9c8f6f"
+    },
+    "independent_check.py": {
+      "bytes": 20122,
+      "sha256": "8f83a8b591de73aef342ecb6d01830cd012eb0593e43731236ba73f553ad69f0"
+    },
+    "report.md": {
+      "bytes": 7506,
+      "sha256": "1d8ac3cde42e8037a625f6e721923ac0783267d47cce756726722fe7d94c7072"
+    },
+    "run01.json": {
+      "bytes": 5427285,
+      "sha256": "940947030c60d1b5a4d0b1f9ac4f3191db7fb8b355337b47062b796f4ce73678"
+    },
+    "run02.json": {
+      "bytes": 5427285,
+      "sha256": "940947030c60d1b5a4d0b1f9ac4f3191db7fb8b355337b47062b796f4ce73678"
+    },
+    "test_calculate.py": {
+      "bytes": 4943,
+      "sha256": "9602b51b0a240d512f9a6ad6a9321d1d8fdc7766c9669065aa9e265b2d8b4389"
+    }
+  },
+  "downstream_navigation": [
+    "../../../STATUS.md",
+    "../../technical-preparation.md",
+    "../../../../README.md",
+    "../../../SHERLOCK-FEEDBACK.md"
+  ],
+  "next_task": "Recover the already inventoried separate E3/E4 Im10 approaches and last distinguishable solid pieces in a finite declared source batch; preserve exact target/context coverage and unresolved convergence. Retain the full fourteen-pair outside-target inventory, then resolve continuity/identity for conditional branch construction before all42 paired review slots.",
+  "final_checks": [
+    {
+      "receipt": "d0bcd0",
+      "result": "PASS: all8 artifact pins, all4 navigation paths, 15 local links, parsed/whitespace-clean receipt, and complete independent-check replay equal to its saved receipt."
+    },
+    {
+      "receipt": "123cd1",
+      "command": "git diff --check",
+      "exit_code": 0,
+      "result": "No tracked whitespace errors; new unit intentionally untracked alongside existing WIP."
+    }
+  ],
+  "boundaries": {
+    "goal_active": true,
+    "goal_complete": false,
+    "source_pixels_reread": false,
+    "legal_promotion": false,
+    "engine_acceptance": false,
+    "external_disclosure": false,
+    "commit": false,
+    "push": false,
+    "feedback": "Deduplicated generic conditional-window safeguard queued locally; designated task archived and routing unresolved."
+  }
+}

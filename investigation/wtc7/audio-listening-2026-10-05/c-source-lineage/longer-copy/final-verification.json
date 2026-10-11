@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "scope": "Bounded longer-copy locator and failed-transfer stage; local verification only",
+  "commands": [
+    {
+      "command": "ruby -rjson -rdigest -ruri -e '\nbase=ARGV.fetch(0); review_path=File.join(base,\"independent-review.json\")\nr=JSON.parse(File.read(review_path)); result=r.fetch(\"command_history\").last.fetch(\"actual_result\")\npins=result.fetch(\"pins\"); mismatches=[]\npins.each do |path,expected|\n  actual=File.binread(path)\n  mismatches << path unless actual.bytesize==expected.fetch(\"bytes\") && Digest::SHA256.hexdigest(actual)==expected.fetch(\"sha256\")\nend\nraise \"independent review source-pin mismatch\" unless mismatches.empty?\nraise \"unexpected independent check count\" unless result.fetch(\"assertions\")==89 && result.fetch(\"failed\").empty?\nsource_json=Dir.glob(File.join(base,\"**\",\"*.json\"))\nsource_json.each{|p| JSON.parse(File.read(p))}\nreceipt=JSON.parse(File.read(File.join(base,\"acquisition-receipt.json\")))\nraise \"procedure changed\" unless Digest::SHA256.file(File.join(base,\"acquire_candidates.py\")).hexdigest==receipt.fetch(\"procedure_sha256\")\nraise \"expected exactly two HTTP 403 receipts\" unless receipt.fetch(\"results\").size==2 && receipt.fetch(\"results\").all?{|x| x.fetch(\"http_status\")==403 && x.fetch(\"status\")==\"failed_preserve_partial_if_present\"}\nraise \"unexpected acquired media\" unless Dir.children(File.join(base,\"media\")).empty?\nreport=File.join(base,\"report.md\"); text=File.read(report)\nlinks=text.scan(/\\]\\(([^)]+)\\)/).flatten.reject{|x| x.start_with?(\"https://\",\"http://\",\"#\")}\nmissing=links.reject{|x| File.exist?(File.expand_path(x.split(\"#\").first,base))}\nraise \"unexpected missing link\" unless missing==[\"final-verification.json\"]\nhashes={}\n[\"report.md\",\"PROTOCOL.md\",\"METADATA-ADDENDUM.md\",\"ACQUISITION-ADDENDUM.md\",\"acquire_candidates.py\",\"acquisition-receipt.json\",\"independent-review.json\",\"sources/public-search-log.json\"].each do |n|\n  p=File.join(base,n); hashes[n]={bytes:File.size(p),sha256:Digest::SHA256.file(p).hexdigest}\nend\nputs JSON.pretty_generate({status:\"pass\",review_assertions:89,independent_pins_rechecked:pins.size,json_files_parsed:source_json.size,local_report_links:links.size,existing_local_links:links.size-missing.size,pending_receipt_link:missing,media_files:0,http_403_receipts:2,hashes:hashes,limits:\"Read-only local checks; no network event reproduced, acquired-media verification, content match or source authenticity.\"})\n' /Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy",
+      "exit_code": 0,
+      "result": {
+        "status": "pass",
+        "review_assertions": 89,
+        "independent_pins_rechecked": 36,
+        "json_files_parsed": 31,
+        "local_report_links": 18,
+        "existing_local_links": 17,
+        "pending_receipt_link": [
+          "final-verification.json"
+        ],
+        "media_files": 0,
+        "http_403_receipts": 2,
+        "hashes": {
+          "report.md": {
+            "bytes": 8638,
+            "sha256": "073b45e99ac604fbdae24d5fbcef26247dfdf3fd83b0224db77dfe4d6f719b76"
+          },
+          "PROTOCOL.md": {
+            "bytes": 3556,
+            "sha256": "e56ad57343348ba02ce7dd565b16a3269241a218acc7f71c070efb7342bde5ad"
+          },
+          "METADATA-ADDENDUM.md": {
+            "bytes": 1038,
+            "sha256": "2e4c40cd5f309f3e2d66666a938955c91fdbdba554ebb3c608ed2f4564284313"
+          },
+          "ACQUISITION-ADDENDUM.md": {
+            "bytes": 2214,
+            "sha256": "022e53a371e4ffc9dd1fdf1f5d323244ce1b7ad00c0a0c056d95602b5b494581"
+          },
+          "acquire_candidates.py": {
+            "bytes": 4270,
+            "sha256": "64b8781a43f1720628d843f74fac26f9288147fec7db33142be9ca753a461bf3"
+          },
+          "acquisition-receipt.json": {
+            "bytes": 979,
+            "sha256": "fc993e66a97b81d2e4d2d8ab8bc230e785f4348cdbaadd658bb8ab00c964f234"
+          },
+          "independent-review.json": {
+            "bytes": 70598,
+            "sha256": "2409099615cf0d36f04c88e103f68d6ee452eaa0cf451b38d61dad6fff58d0d2"
+          },
+          "sources/public-search-log.json": {
+            "bytes": 1860,
+            "sha256": "27fd633ee3089054e7ad7f1d6a202e1bd8ec9707b928f1a17a5d1d23d12bae88"
+          }
+        },
+        "limits": "Read-only local checks; no network event reproduced, acquired-media verification, content match or source authenticity."
+      }
+    },
+    {
+      "command": "git diff --check",
+      "workdir": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": "ruby -rjson -rdigest -e '\nbase=ARGV.fetch(0)\nreceipt=JSON.parse(File.read(File.join(base,\"final-verification.json\")))\npins=receipt.fetch(\"commands\").first.fetch(\"result\").fetch(\"hashes\")\npins.each{|name,want| p=File.join(base,name); raise \"changed pinned input\" unless File.size(p)==want.fetch(\"bytes\") && Digest::SHA256.file(p).hexdigest==want.fetch(\"sha256\")}\nlinks=File.read(File.join(base,\"report.md\")).scan(/\\]\\(([^)]+)\\)/).flatten.reject{|x| x.start_with?(\"https://\",\"http://\",\"#\")}\nraise \"broken local report link\" unless links.all?{|x| File.exist?(File.expand_path(x.split(\"#\").first,base))}\njson=Dir.glob(File.join(base,\"**\",\"*.json\")); json.each{|p| JSON.parse(File.read(p))}\nraise \"unexpected media\" unless Dir.children(File.join(base,\"media\")).empty?\nputs JSON.generate({status:\"pass\",stage_json_files:json.size,report_local_links:links.size,pinned_files:pins.size,media_files:0})\n' /Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/longer-copy",
+      "exit_code": 0,
+      "result": {
+        "status": "pass",
+        "stage_json_files": 32,
+        "report_local_links": 18,
+        "pinned_files": 8,
+        "media_files": 0
+      }
+    }
+  ],
+  "limits": [
+    "These checks do not reproduce either network transfer or inspect candidate media.",
+    "The pre-save pending link was resolved by this receipt; the post-save check parsed all 32 stage JSON files, verified all 18 local report links and eight material pins, and confirmed the empty media directory.",
+    "No original-sound, collapse-mechanism, historical source-authenticity, human-acceptance or legal-record finding."
+  ],
+  "final_prose_review": {
+    "reviewer": "/root/quiet_mechanism_inference_review",
+    "scope": "report.md and new STATUS.md opening against the saved source audit",
+    "outcome": "No material corrections; incomplete catalog coverage, metadata omission, reference/acquisition distinction, transfer-layer 403 and no sound/causal inference are preserved.",
+    "limits": "Same-source, nonblind AI review, not expert validation or human acceptance."
+  }
+}

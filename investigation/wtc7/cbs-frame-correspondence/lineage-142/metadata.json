@@ -1,0 +1,458 @@
+{
+  "schema": "figure142-held-metadata-v1",
+  "inputs_before": {
+    "avi": {
+      "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/stage4/raw/clip7-attempt1.avi",
+      "bytes": 140334936,
+      "sha256": "a2aefd37d58a7f2e7cea73c8d06114ec941e2178d1a4ddc9419649dd9936487b"
+    },
+    "jpeg": {
+      "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch3/assets/run01/images/A-7c7cc22dc34c.jpg",
+      "bytes": 151488,
+      "sha256": "68c9d384ac3b1099361f255f80a74d387073d67500089099765f4f0cf030215a"
+    },
+    "pdf": {
+      "path": "/Users/admin/docs/911/authority/nist/wtc7/ncstar-1-9.pdf",
+      "bytes": 52766002,
+      "sha256": "30addb2699370f89e40bccfdcf4b4a18a7f4fb3bc1c0101bd3fcdec9b892b18f"
+    }
+  },
+  "collector": {
+    "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-frame-correspondence/lineage-142/inspect_metadata.py",
+    "bytes": 9063,
+    "sha256": "65bc0e26954ff10b561e34830bb9e707efbc69153a789a1380da0fbd2b155c82"
+  },
+  "plan": {
+    "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-frame-correspondence/lineage-142/PLAN.md",
+    "bytes": 3550,
+    "sha256": "f45a46ccd9bb3046c3f297cd63046a41a04ee4401487807ade50b1c50a17e024"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "pillow": "12.3.0",
+    "pypdf": "6.10.0"
+  },
+  "ffprobe_version": {
+    "argv": [
+      "/opt/homebrew/bin/ffprobe",
+      "-version"
+    ],
+    "returncode": 0,
+    "stdout": "ffprobe version 7.1.1 Copyright (c) 2007-2025 the FFmpeg developers\nbuilt with Apple clang version 17.0.0 (clang-1700.0.13.3)\nconfiguration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon\nlibavutil      59. 39.100 / 59. 39.100\nlibavcodec     61. 19.101 / 61. 19.101\nlibavformat    61.  7.100 / 61.  7.100\nlibavdevice    61.  3.100 / 61.  3.100\nlibavfilter    10.  4.100 / 10.  4.100\nlibswscale      8.  3.100 /  8.  3.100\nlibswresample   5.  3.100 /  5.  3.100\nlibpostproc    58.  3.100 / 58.  3.100\n",
+    "stderr": ""
+  },
+  "container_probe": {
+    "argv": [
+      "/opt/homebrew/bin/ffprobe",
+      "-v",
+      "error",
+      "-show_format",
+      "-show_streams",
+      "-show_chapters",
+      "-of",
+      "json",
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/stage4/raw/clip7-attempt1.avi"
+    ],
+    "returncode": 0,
+    "stdout": "{\n    \"streams\": [\n        {\n            \"index\": 0,\n            \"codec_name\": \"dvvideo\",\n            \"codec_long_name\": \"DV (Digital Video)\",\n            \"codec_type\": \"video\",\n            \"codec_tag_string\": \"dvsd\",\n            \"codec_tag\": \"0x64737664\",\n            \"width\": 720,\n            \"height\": 480,\n            \"coded_width\": 720,\n            \"coded_height\": 480,\n            \"closed_captions\": 0,\n            \"film_grain\": 0,\n            \"has_b_frames\": 0,\n            \"sample_aspect_ratio\": \"8:9\",\n            \"display_aspect_ratio\": \"4:3\",\n            \"pix_fmt\": \"yuv411p\",\n            \"level\": -99,\n            \"chroma_location\": \"topleft\",\n            \"refs\": 1,\n            \"r_frame_rate\": \"10000000/333673\",\n            \"avg_frame_rate\": \"10000000/333673\",\n            \"time_base\": \"333673/10000000\",\n            \"start_pts\": 0,\n            \"start_time\": \"0.000000\",\n            \"duration_ts\": 1128,\n            \"duration\": \"37.638314\",\n            \"bit_rate\": \"28771229\",\n            \"nb_frames\": \"1128\",\n            \"disposition\": {\n                \"default\": 0,\n                \"dub\": 0,\n                \"original\": 0,\n                \"comment\": 0,\n                \"lyrics\": 0,\n                \"karaoke\": 0,\n                \"forced\": 0,\n                \"hearing_impaired\": 0,\n                \"visual_impaired\": 0,\n                \"clean_effects\": 0,\n                \"attached_pic\": 0,\n                \"timed_thumbnails\": 0,\n                \"non_diegetic\": 0,\n                \"captions\": 0,\n                \"descriptions\": 0,\n                \"metadata\": 0,\n                \"dependent\": 0,\n                \"still_image\": 0,\n                \"multilayer\": 0\n            }\n        },\n        {\n            \"index\": 1,\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_long_name\": \"PCM signed 16-bit little-endian\",\n            \"codec_type\": \"audio\",\n            \"codec_tag_string\": \"[1][0][0][0]\",\n            \"codec_tag\": \"0x0001\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"32000\",\n            \"channels\": 2,\n            \"bits_per_sample\": 16,\n            \"initial_padding\": 0,\n            \"r_frame_rate\": \"0/0\",\n            \"avg_frame_rate\": \"0/0\",\n            \"time_base\": \"1/32000\",\n            \"start_pts\": 0,\n            \"start_time\": \"0.000000\",\n            \"bit_rate\": \"1024000\",\n            \"nb_frames\": \"1204427\",\n            \"disposition\": {\n                \"default\": 0,\n                \"dub\": 0,\n                \"original\": 0,\n                \"comment\": 0,\n                \"lyrics\": 0,\n                \"karaoke\": 0,\n                \"forced\": 0,\n                \"hearing_impaired\": 0,\n                \"visual_impaired\": 0,\n                \"clean_effects\": 0,\n                \"attached_pic\": 0,\n                \"timed_thumbnails\": 0,\n                \"non_diegetic\": 0,\n                \"captions\": 0,\n                \"descriptions\": 0,\n                \"metadata\": 0,\n                \"dependent\": 0,\n                \"still_image\": 0,\n                \"multilayer\": 0\n            }\n        }\n    ],\n    \"chapters\": [\n\n    ],\n    \"format\": {\n        \"filename\": \"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/stage4/raw/clip7-attempt1.avi\",\n        \"nb_streams\": 2,\n        \"nb_programs\": 0,\n        \"nb_stream_groups\": 0,\n        \"format_name\": \"avi\",\n        \"format_long_name\": \"AVI (Audio Video Interleaved)\",\n        \"start_time\": \"0.000000\",\n        \"duration\": \"37.638314\",\n        \"size\": \"140334936\",\n        \"bit_rate\": \"29828102\",\n        \"probe_score\": 100\n    }\n}\n",
+    "stderr": ""
+  },
+  "riff": {
+    "records": [
+      {
+        "offset": 0,
+        "kind_hex": "52494646",
+        "kind": "RIFF",
+        "bytes": 140334928,
+        "parents": [],
+        "container_type": "AVI "
+      },
+      {
+        "offset": 12,
+        "kind_hex": "4c495354",
+        "kind": "LIST",
+        "bytes": 64636,
+        "parents": [
+          "AVI "
+        ],
+        "container_type": "hdrl"
+      },
+      {
+        "offset": 24,
+        "kind_hex": "61766968",
+        "kind": "avih",
+        "bytes": 56,
+        "parents": [
+          "AVI ",
+          "hdrl"
+        ],
+        "payload": {
+          "bytes": 56,
+          "sha256": "f91a98b8098fd298866c267275d90d78daacec8c06db4c7d12cec3d9c1edc94e",
+          "hex": "56820000b7df39000100000010080000680400000000000002000000c8d40100d0020000e001000000000000000000000000000000000000"
+        }
+      },
+      {
+        "offset": 88,
+        "kind_hex": "4c495354",
+        "kind": "LIST",
+        "bytes": 32148,
+        "parents": [
+          "AVI ",
+          "hdrl"
+        ],
+        "container_type": "strl"
+      },
+      {
+        "offset": 100,
+        "kind_hex": "73747268",
+        "kind": "strh",
+        "bytes": 56,
+        "parents": [
+          "AVI ",
+          "hdrl",
+          "strl"
+        ],
+        "payload": {
+          "bytes": 56,
+          "sha256": "d0451743ed9ce06e4a2e5886af6ed0bb9a6fd6e6dce57671cdc01c05320bdd1a",
+          "hex": "766964736476736400000000000000000000000069170500809698000000000068040000c8d40100000000000000000000000000d002e001"
+        }
+      },
+      {
+        "offset": 164,
+        "kind_hex": "73747266",
+        "kind": "strf",
+        "bytes": 40,
+        "parents": [
+          "AVI ",
+          "hdrl",
+          "strl"
+        ],
+        "payload": {
+          "bytes": 40,
+          "sha256": "eac33080f1c0a4c7002fc39fcdbacbe760ae5a9ec8c0b0f7fb9952ed7d76f0e6",
+          "hex": "28000000d0020000e00100000100180064767364c0d4010000000000000000000000000000000000"
+        }
+      },
+      {
+        "offset": 212,
+        "kind_hex": "696e6478",
+        "kind": "indx",
+        "bytes": 32024,
+        "parents": [
+          "AVI ",
+          "hdrl",
+          "strl"
+        ],
+        "payload_inspected": false
+      },
+      {
+        "offset": 32244,
+        "kind_hex": "4c495354",
+        "kind": "LIST",
+        "bytes": 32136,
+        "parents": [
+          "AVI ",
+          "hdrl"
+        ],
+        "container_type": "strl"
+      },
+      {
+        "offset": 32256,
+        "kind_hex": "73747268",
+        "kind": "strh",
+        "bytes": 56,
+        "parents": [
+          "AVI ",
+          "hdrl",
+          "strl"
+        ],
+        "payload": {
+          "bytes": 56,
+          "sha256": "9b51711e66263542305b9e0ccec486d009549e62900fb6879059fd02fef53535",
+          "hex": "61756473000000000000000000000000000000000400000000f4010000000000cb60120008f4010000000000040000000000000000000000"
+        }
+      },
+      {
+        "offset": 32320,
+        "kind_hex": "73747266",
+        "kind": "strf",
+        "bytes": 18,
+        "parents": [
+          "AVI ",
+          "hdrl",
+          "strl"
+        ],
+        "payload": {
+          "bytes": 18,
+          "sha256": "e7ef262576f5e85db8c8207aff38f73f82e429f6225d55a2f390a66f6ad8ba4e",
+          "hex": "01000200007d000000f40100040010000000"
+        }
+      },
+      {
+        "offset": 32346,
+        "kind_hex": "4a554e4b",
+        "kind": "JUNK",
+        "bytes": 2,
+        "parents": [
+          "AVI ",
+          "hdrl",
+          "strl"
+        ],
+        "payload_inspected": false
+      },
+      {
+        "offset": 32356,
+        "kind_hex": "696e6478",
+        "kind": "indx",
+        "bytes": 32024,
+        "parents": [
+          "AVI ",
+          "hdrl",
+          "strl"
+        ],
+        "payload_inspected": false
+      },
+      {
+        "offset": 64388,
+        "kind_hex": "4c495354",
+        "kind": "LIST",
+        "bytes": 260,
+        "parents": [
+          "AVI ",
+          "hdrl"
+        ],
+        "container_type": "odml"
+      },
+      {
+        "offset": 64400,
+        "kind_hex": "646d6c68",
+        "kind": "dmlh",
+        "bytes": 248,
+        "parents": [
+          "AVI ",
+          "hdrl",
+          "odml"
+        ],
+        "payload": {
+          "bytes": 248,
+          "sha256": "b56d8e37e89428c69d60f926e35828bfe8dd0718616e1e0e5f8cf77e7969c28d",
+          "utf8": "h\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+        }
+      },
+      {
+        "offset": 64656,
+        "kind_hex": "4c495354",
+        "kind": "LIST",
+        "bytes": 140251112,
+        "parents": [
+          "AVI "
+        ],
+        "container_type": "movi",
+        "payload_inspected": false
+      },
+      {
+        "offset": 140315776,
+        "kind_hex": "69647831",
+        "kind": "idx1",
+        "bytes": 18688,
+        "parents": [
+          "AVI "
+        ],
+        "payload_inspected": false
+      },
+      {
+        "offset": 140334472,
+        "kind_hex": "50726d41",
+        "kind": "PrmA",
+        "bytes": 20,
+        "parents": [
+          "AVI "
+        ],
+        "payload": {
+          "bytes": 20,
+          "sha256": "139c94ef54b842a7080baf0f227fa66db1949c67571fd43efc6e8e86206ad4c9",
+          "hex": "50415266000000140001000000000288000002d0"
+        }
+      },
+      {
+        "offset": 140334500,
+        "kind_hex": "4c495354",
+        "kind": "LIST",
+        "bytes": 152,
+        "parents": [
+          "AVI "
+        ],
+        "container_type": "Tdat"
+      },
+      {
+        "offset": 140334512,
+        "kind_hex": "74635f4f",
+        "kind": "tc_O",
+        "bytes": 18,
+        "parents": [
+          "AVI ",
+          "Tdat"
+        ],
+        "payload": {
+          "bytes": 18,
+          "sha256": "fad7389580c6d4a192a858203b94e758b3cdd1feb8faf8971c79936a1e8a0e52",
+          "utf8": "00;03;12;26\u0000\u0001\u0000\u0000\u0000\u0000\u0000"
+        }
+      },
+      {
+        "offset": 140334538,
+        "kind_hex": "74635f41",
+        "kind": "tc_A",
+        "bytes": 18,
+        "parents": [
+          "AVI ",
+          "Tdat"
+        ],
+        "payload": {
+          "bytes": 18,
+          "sha256": "7b38631924ac500e16c7cba8a4717af6b9b0d8738fc6af95b64faf35f138dd8e",
+          "hex": "30303b30333b31323b3236002f1200e01200"
+        }
+      },
+      {
+        "offset": 140334564,
+        "kind_hex": "726e5f4f",
+        "kind": "rn_O",
+        "bytes": 40,
+        "parents": [
+          "AVI ",
+          "Tdat"
+        ],
+        "payload": {
+          "bytes": 40,
+          "sha256": "3be8f45104ecaa6b60198b95d9f8c23c33669f062b3e539ef268821b70db6767",
+          "hex": "56696e63652044656d657472692043425300000010e01200a574f87700003f14aadf120000df1200"
+        }
+      },
+      {
+        "offset": 140334612,
+        "kind_hex": "726e5f41",
+        "kind": "rn_A",
+        "bytes": 40,
+        "parents": [
+          "AVI ",
+          "Tdat"
+        ],
+        "payload": {
+          "bytes": 40,
+          "sha256": "645e08fe47ebf959cfbe06d053d1db94a99c97deed927fccb33582fa18a7a97d",
+          "hex": "56696e63652044656d6574726920434253000000f8004d0358df120070d01c004ce0120001000000"
+        }
+      },
+      {
+        "offset": 140334660,
+        "kind_hex": "4c495354",
+        "kind": "LIST",
+        "bytes": 268,
+        "parents": [
+          "AVI "
+        ],
+        "container_type": "Cdat"
+      },
+      {
+        "offset": 140334672,
+        "kind_hex": "636d6e74",
+        "kind": "cmnt",
+        "bytes": 256,
+        "parents": [
+          "AVI ",
+          "Cdat"
+        ],
+        "payload": {
+          "bytes": 256,
+          "sha256": "98a48f650b8cf0577f29d329615202ad916d6e2cb3117dc688a66fbc646ff64f",
+          "hex": "57544320372e2020466c616d657320616e6420736d6f6b652073686f6f74696e67206f7574206f662077696e646f77732e206465627269732066616c6c696e672066726f6d206275696c64696e672e20206368756e6b2074616b656e206f7574206f6620636f726e6572206f662062756964696e672e000028852300000078496d706f7274456e747279001e564956410ce012005649564101000000000000000000000000000000000000000000000000000000000000000000000000000000a03d4d03e0cd4d03f4df1200b0df12000c00000020e81200952bf8771076f877ffffffff9ce01200e476f87700004d0394e0120000000000a8e0120001000000"
+        }
+      }
+    ],
+    "metadata_payload_bytes_read": 866,
+    "scope": "header tree excluding movi, JUNK and index payloads; no DV pack parsing"
+  },
+  "jpeg": {
+    "size": [
+      706,
+      457
+    ],
+    "format": "JPEG",
+    "info": {
+      "adobe": 100,
+      "adobe_transform": 1
+    },
+    "exif": {},
+    "application_and_comment_segments": [
+      [
+        "APP14",
+        {
+          "bytes": 12,
+          "sha256": "ec5d9ed1d87d6b99a5c2e6e3d9b8318eca56c3bfd929bc2834dee2a174329086",
+          "hex": "41646f626500648000000001"
+        }
+      ]
+    ],
+    "scope": "Pillow header metadata; no image.load or pixel decoding; no post-SOS scan"
+  },
+  "pdf": {
+    "pages": 797,
+    "document_info": {
+      "/Author": "sonya",
+      "/CreationDate": "D:20090130105736-05'00'",
+      "/Creator": "PScript5.dll Version 5.2.2",
+      "/ModDate": "D:20110224144450-05'00'",
+      "/Producer": "Acrobat Distiller 8.1.0 (Windows)",
+      "/Title": "Microsoft Word - 1-9 Vol 1_1-29-09_FINALREV.doc"
+    },
+    "root_keys": [
+      "/Metadata",
+      "/PageLabels",
+      "/Pages",
+      "/StructTreeRoot",
+      "/Type"
+    ],
+    "image_dictionary": {
+      "/BitsPerComponent": 8,
+      "/ColorSpace": "/DeviceRGB",
+      "/Filter": "/DCTDecode",
+      "/Height": 457,
+      "/Subtype": "/Image",
+      "/Type": "/XObject",
+      "/Width": 706
+    },
+    "page_image_reference": [
+      2850,
+      0
+    ],
+    "image_encoded_bytes": 151488,
+    "image_encoded_sha256": "68c9d384ac3b1099361f255f80a74d387073d67500089099765f4f0cf030215a",
+    "catalog_xmp": {
+      "bytes": 3687,
+      "sha256": "62f1c9f5914ce266cfc0ae0d347a2d114a6d6f15734611c786b8e2ea2ff5bb73",
+      "utf8": "<?xpacket begin=\"\ufeff\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?>\n<x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 4.2.1-c043 52.372728, 2009/01/18-15:08:04        \">\n   <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n      <rdf:Description rdf:about=\"\"\n            xmlns:dc=\"http://purl.org/dc/elements/1.1/\">\n         <dc:format>application/pdf</dc:format>\n         <dc:creator>\n            <rdf:Seq>\n               <rdf:li>sonya</rdf:li>\n            </rdf:Seq>\n         </dc:creator>\n         <dc:title>\n            <rdf:Alt>\n               <rdf:li xml:lang=\"x-default\">Microsoft Word - 1-9 Vol 1_1-29-09_FINALREV.doc</rdf:li>\n            </rdf:Alt>\n         </dc:title>\n      </rdf:Description>\n      <rdf:Description rdf:about=\"\"\n            xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\">\n         <xmp:CreateDate>2009-01-30T10:57:36-05:00</xmp:CreateDate>\n         <xmp:CreatorTool>PScript5.dll Version 5.2.2</xmp:CreatorTool>\n         <xmp:ModifyDate>2011-02-24T14:44:50-05:00</xmp:ModifyDate>\n         <xmp:MetadataDate>2011-02-24T14:44:50-05:00</xmp:MetadataDate>\n      </rdf:Description>\n      <rdf:Description rdf:about=\"\"\n            xmlns:pdf=\"http://ns.adobe.com/pdf/1.3/\">\n         <pdf:Producer>Acrobat Distiller 8.1.0 (Windows)</pdf:Producer>\n      </rdf:Description>\n      <rdf:Description rdf:about=\"\"\n            xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\">\n         <xmpMM:DocumentID>uuid:4cf37afd-55d6-4e44-bc69-2715623e9f19</xmpMM:DocumentID>\n         <xmpMM:InstanceID>uuid:aa026f49-798e-4953-8ed9-d661db5ccea5</xmpMM:InstanceID>\n      </rdf:Description>\n   </rdf:RDF>\n</x:xmpmeta>\n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                           \n<?xpacket end=\"w\"?>"
+    },
+    "scope": "document info/catalog XMP, page272 Im0 and object2850/0; not full-object forensic scan"
+  },
+  "inputs_after": {
+    "avi": {
+      "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/stage4/raw/clip7-attempt1.avi",
+      "bytes": 140334936,
+      "sha256": "a2aefd37d58a7f2e7cea73c8d06114ec941e2178d1a4ddc9419649dd9936487b"
+    },
+    "jpeg": {
+      "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/fire-coverage-batch3/assets/run01/images/A-7c7cc22dc34c.jpg",
+      "bytes": 151488,
+      "sha256": "68c9d384ac3b1099361f255f80a74d387073d67500089099765f4f0cf030215a"
+    },
+    "pdf": {
+      "path": "/Users/admin/docs/911/authority/nist/wtc7/ncstar-1-9.pdf",
+      "bytes": 52766002,
+      "sha256": "30addb2699370f89e40bccfdcf4b4a18a7f4fb3bc1c0101bd3fcdec9b892b18f"
+    }
+  },
+  "source_bytes_unchanged": true
+}

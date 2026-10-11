@@ -1,0 +1,75 @@
+{
+  "assessment_date_utc": "2026-10-05",
+  "assessor": "Separate fixture-generator agent /root/audio_fixture",
+  "classification": "Synthetic audio capability assessment; not historical or case evidence",
+  "protocol": {
+    "path_relative_to_unit": "PROTOCOL.md",
+    "sha256": "c0d6f9aafd8295cfef9e2f865a174c2afbd1335e398fca333a638d7c7782b4af",
+    "hash_verified_before_assessment": true
+  },
+  "frozen_response": {
+    "path_relative_to_unit": "capability-response.md",
+    "sha256": "f7bc6eca8425b6fb6a0c53d19aa5e5e87121b8ef32871b6ed61acc9e817a887f",
+    "hash_matches_root_supplied_frozen_pin": true,
+    "response": "No perceptual audio access. No digit sequence supplied.",
+    "digit_sequence_supplied": false
+  },
+  "fixture": {
+    "path_relative_to_unit": "fixture/synthetic-capability.wav",
+    "sha256": "2efb96b9f62183d3d753098d7fe937964d0736a9ef0e5a29cb5dac92e6ffbe56",
+    "hash_matches_generation_receipt": true,
+    "bytes": 61098,
+    "format": "WAV pcm_s16le, mono, 8000 Hz",
+    "duration_seconds": 3.81375,
+    "synthesis_and_full_decode_succeeded": true,
+    "generation_failures": 0,
+    "generation_repairs": 0,
+    "intelligibility_assessed": false
+  },
+  "ground_truth": {
+    "read_after_frozen_response_and_explicit_scoring_authorization": true,
+    "word_count": 6,
+    "transcript_path_relative_to_fixture": "sealed/transcript.txt",
+    "transcript_sha256": "57ee090848e43d9fe9e75f434cb380d0dd39a89c5a96920b9a2fb8a6109dad31",
+    "structured_path_relative_to_fixture": "sealed/ground-truth.json",
+    "structured_sha256": "b3c81a57d6a8650bf34c9e46768c6a2ce9bdda70bbb6a903be926f70fe9c52b6",
+    "transcript_and_structured_sequence_agree": true,
+    "hashes_match_original_generation_manifest": true,
+    "original_files_preserved": true
+  },
+  "generation_record": {
+    "path_relative_to_fixture": "sealed/generation-receipt.json",
+    "sha256": "af13d39519f4d322cd426d206e310b9aa67dc80a0755d46770763e1caa96f634",
+    "original_manifest_path_relative_to_fixture": "sealed/file-hashes.json",
+    "original_manifest_sha256": "ff4ab092aadb837313e7a7528c3ef35340ecf3e81d2280dda56ad6682ab72069",
+    "manifest_preserved_without_adding_this_later_assessment": true
+  },
+  "delivery_as_recorded_in_frozen_response": {
+    "route": "functions.exec global audio helper with audio/wav content",
+    "attempt_count": 1,
+    "retry_count": 0,
+    "notice": "audio content omitted because you do not support audio input",
+    "base64_characters": 81464,
+    "byte_read_command_count": 10,
+    "all_byte_read_commands_reported_exit_zero": true,
+    "evidence_limit": "Generator verified the saved frozen response and fixture hashes; the root's delivery event is described by that response and the scoring instruction, not independently witnessed by this assessor."
+  },
+  "assessment": {
+    "capability_gate_passed": false,
+    "outcome": "not_passed_route_unsupported",
+    "exact_ordered_agreement": null,
+    "word_recognition_accuracy": null,
+    "score_applicability": "Not applicable: auditory content was omitted and no perceptual sequence was supplied.",
+    "interpretation": "This is an input-route capability failure in the tested session, not an incorrect transcription, misrecognition, or zero-word acoustic accuracy result.",
+    "historical_listening_authorized_by_this_result": false,
+    "limits": "Does not establish that the fixture is silent, defective, or unintelligible; does not establish a general limit of other models, products, or human playback. Does not support a historical acoustic or collapse-cause finding."
+  },
+  "verification": {
+    "commands": [
+      "shasum -a 256 on PROTOCOL.md, capability-response.md and fixture/synthetic-capability.wav",
+      "shasum -a 256 on fixture/sealed/transcript.txt, ground-truth.json, generation-receipt.json and file-hashes.json",
+      "Read frozen response, structured ground truth, original transcript, generation receipt and original file-hashes manifest"
+    ],
+    "result": "All checked pins match; original transcript and structured six-word sequence agree; no perceptual sequence exists to score."
+  }
+}

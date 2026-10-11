@@ -1,0 +1,391 @@
+{
+  "status": "verified_native_annotation_and_comparison_not_physical_measurement",
+  "record_type": "Root record of observed commands and results; independently generated computational receipts retained separately",
+  "date": "2026-10-08",
+  "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/energy89",
+  "branch": "research/sherlock-wtc7-investigation",
+  "base_head": "ca1c223335c20905d6608eb15c676f88cbfac734",
+  "state": "Intentional uncommitted investigation worktree; no commit, push, source edit, human acceptance or legal promotion",
+  "scope": {
+    "E8": {
+      "target": [
+        535,
+        54,
+        690,
+        86
+      ],
+      "context": [
+        533,
+        52,
+        692,
+        88
+      ],
+      "context_cells_per_reader": 5724,
+      "route_records_per_reader": 310
+    },
+    "E9": {
+      "target": [
+        530,
+        30,
+        690,
+        56
+      ],
+      "context": [
+        528,
+        28,
+        692,
+        58
+      ],
+      "context_cells_per_reader": 4920,
+      "route_records_per_reader": 320
+    }
+  },
+  "verification_counts": {
+    "all_reader_route_records": 1260,
+    "supplied_band_records": 476,
+    "paired_route_rows": 630,
+    "all_ink_columns": 315,
+    "set_operations": 14175,
+    "source_context_records": 10644,
+    "selected_cells": 3930,
+    "selected_exact_white": 0,
+    "adapter_controls": 8,
+    "independent_context_controls": 28,
+    "producer_tests": 21,
+    "independent_checker_tests": 9,
+    "independent_scalar_controls": 13,
+    "root_prior_e45_pins_checked": 34,
+    "checker_prior_e345_input_paths_preserved": 45
+  },
+  "test_count_limit": "Nine independent-checker tests include one full four-reader historical replay; thirteen scalar controls are exercised within that suite. Do not describe all nine as independent synthetic experiments or sum overlapping preservation counts as distinct evidence.",
+  "summaries": {
+    "E8": {
+      "route_outer_different": 129,
+      "route_class_different": 135,
+      "route_status_different": 53,
+      "all_ink_outer_different": 142,
+      "all_ink_class_different": 143
+    },
+    "E9": {
+      "route_outer_different": 37,
+      "route_class_different": 38,
+      "route_status_different": 41,
+      "all_ink_outer_different": 52,
+      "all_ink_class_different": 54
+    }
+  },
+  "commands": [
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B read_context.py controls",
+      "receipt": "ec9ee4",
+      "exit_code": 0,
+      "result": "All8 controls pass; earlier pre-save run81db92 also passed."
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B reader-E8-root.py --output reader-E8-root.json",
+      "receipt": "3f5ae8",
+      "exit_code": 0
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B reader-E8-root.py --output reader-E8-root-repeat.json",
+      "receipt": "0daaca",
+      "exit_code": 0,
+      "note": "Allowed retry after permission-review timeout; exact original/repeat equality."
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B reader-E9-root.py --output reader-E9-root.json",
+      "receipt": "8050a5",
+      "exit_code": 0
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B reader-E9-root.py --output reader-E9-root-repeat.json",
+      "receipt": "4257f5",
+      "exit_code": 0
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B context-independent-check.py --controls",
+      "receipt": "883315",
+      "exit_code": 0,
+      "result": "28 controls passed."
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B -m unittest -v test_compare_e89",
+      "receipt": "4665a5",
+      "exit_code": 0,
+      "result": "21 tests passed."
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_e89",
+      "receipt": "38e41a",
+      "exit_code": 0,
+      "result": "9 tests passed, including full literal historical replays."
+    },
+    {
+      "command": "git diff --check",
+      "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation",
+      "receipt": "f721c5",
+      "exit_code": 0,
+      "result": "No tracked whitespace errors; new report/manifest checked separately at close."
+    }
+  ],
+  "root_read_only_replays": [
+    {
+      "receipt": "06e29a",
+      "method": "Run context-independent-check.py in bundled Python; capture its full stdout and assert exact bytes equal context-independent-check.json.",
+      "exit_code": 0,
+      "result_sha256": "b1030a355f46c167433c236dff6082f5495420b08de80c068b12bd176a3714f5"
+    },
+    {
+      "receipt": "37bf19",
+      "method": "Run each reader build in memory; apply peer E8 verify; serialize using its original key-order convention; assert equality with original and repeat bytes.",
+      "exit_code": 0,
+      "readers": 4
+    },
+    {
+      "receipt": "224b69",
+      "method": "Call pinned compare_e89.run for each pair with frozen root/peer hashes; serialize to original format; assert equality with both saved comparisons.",
+      "exit_code": 0,
+      "comparisons": 2
+    },
+    {
+      "receipt": "0e82fc",
+      "method": "Run independent-comparison-e89-check.py in bundled Python and compare its entire stdout byte-for-byte to check01 and check02, with no exclusions.",
+      "exit_code": 0,
+      "result_sha256": "dcafded67e5a5c7db55f04be49c3af5899dff2baa3b3b8f404a3373c2849f620"
+    },
+    {
+      "receipt": "5a8c4a",
+      "method": "Check every hash in prior energy345/verification-e45.json.",
+      "exit_code": 0,
+      "checked": 34,
+      "changed": []
+    }
+  ],
+  "delegated_execution": {
+    "context_controls": "c052ae",
+    "context_saves": [
+      "ed3cd0",
+      "00ac49"
+    ],
+    "peer_E8_freeze": "333e90",
+    "comparator_tests": "cdc78d",
+    "comparison_saves": "0a1914",
+    "independent_receipt": "independent-comparison-e89-test-receipt.json",
+    "note": "Delegated receipts are agent-reported. Root separately replayed material saved outputs and verified their pins; source perception and each historical tool event were not independently witnessed."
+  },
+  "failures_and_recoveries": [
+    {
+      "operation": "Root E8 repeat-save permission review",
+      "result": "Timed out before execution",
+      "recovery": "Tool-authorized single retry succeeded with unchanged code and same output hash",
+      "receipts": [
+        "3f5ae8",
+        "0daaca"
+      ],
+      "evidentiary_effect": "None; failed approval is not a successful save or source defect."
+    },
+    {
+      "operation": "Combined documentation update",
+      "result": "apply_patch rejected a malformed hunk before application",
+      "recovery": "Separate corrected documentation patches succeeded; frozen sources/readings/results unchanged",
+      "evidentiary_effect": "None; no validation criterion weakened."
+    },
+    {
+      "operation": "Read-only progress checks for not-yet-produced comparison/test files",
+      "result": "Returned not found while delegated work was in progress",
+      "recovery": "Artifacts were subsequently created and verified",
+      "evidentiary_effect": "Not failed historical analysis or absent evidence."
+    }
+  ],
+  "review": {
+    "E8": "Participating peer post-exchange review found no definite transcription defect; close-left identity and pale-edge judgments retained.",
+    "E9": "Participating peer post-exchange review found no definite transcription defect; nine interstitial cells and 35 interbody columns accurately described in prose review. Not a third blind source reading."
+  },
+  "runtime": {
+    "producer": "Python3.13.7 / Pillow12.0.0",
+    "independent": "Python3.12.14 / Pillow12.3.0",
+    "codec_limit": "Shared Pillow decoder family"
+  },
+  "next": {
+    "task": "F4/F5 fixed-region source recovery",
+    "regions": [
+      [
+        "Im4",
+        330,
+        0,
+        425,
+        88
+      ],
+      [
+        "Im4",
+        375,
+        0,
+        475,
+        88
+      ],
+      [
+        "Im2",
+        225,
+        50,
+        350,
+        88
+      ]
+    ],
+    "requirements": "Freeze adapter/protocol before new reading; complete stated contexts and native strip/page inspection; separately frozen readings, repeats and independent arithmetic checks; no automatic F5 seam join.",
+    "scope_limit": "Full fourteen-pair supported-domain inventory and unchanged42 paired human slots remain open; do not repeat completed energy targets."
+  },
+  "human_accepted": false,
+  "physical_support": null,
+  "goal_complete": false,
+  "feedback": "Generic role-order fixture appended locally; archived Sherlock destination unresolved, no send or product-fix claim",
+  "pins": {
+    "PROTOCOL.md": {
+      "sha256": "98edc562841efdbc3ffb7f25c813b507cf553142a972f5558680e7218f7e6e25",
+      "bytes": 4132
+    },
+    "compare_e89.py": {
+      "sha256": "55010eeb6fa8d726523d3ca63455d54ff0c90744a7b1f613b610a4afb4e5de36",
+      "bytes": 9813
+    },
+    "comparison-E8-01.json": {
+      "sha256": "38ae2b48756b580947f473afd9dc64924f1451f4c318c662372fe10ebb4e8674",
+      "bytes": 1258264
+    },
+    "comparison-E8-02.json": {
+      "sha256": "38ae2b48756b580947f473afd9dc64924f1451f4c318c662372fe10ebb4e8674",
+      "bytes": 1258264
+    },
+    "comparison-E9-01.json": {
+      "sha256": "8b5e7ed6f72f43dbec70354f39f1bfb8545925ec8c0fb853f292b2e6b11c28b7",
+      "bytes": 1432785
+    },
+    "comparison-E9-02.json": {
+      "sha256": "8b5e7ed6f72f43dbec70354f39f1bfb8545925ec8c0fb853f292b2e6b11c28b7",
+      "bytes": 1432785
+    },
+    "context-independent-check-repeat.json": {
+      "sha256": "b1030a355f46c167433c236dff6082f5495420b08de80c068b12bd176a3714f5",
+      "bytes": 8293
+    },
+    "context-independent-check.json": {
+      "sha256": "b1030a355f46c167433c236dff6082f5495420b08de80c068b12bd176a3714f5",
+      "bytes": 8293
+    },
+    "context-independent-check.py": {
+      "sha256": "8d6037c87381860982b79a8e75952a5106d2dd222a4af4e1ebbc87262b38f5a7",
+      "bytes": 14922
+    },
+    "context01.json": {
+      "sha256": "0f7528e58a57f7244673a79d4fbfd77bdb9c8c6f277cb57b3686cb8bcff818c7",
+      "bytes": 1310218
+    },
+    "context02.json": {
+      "sha256": "0f7528e58a57f7244673a79d4fbfd77bdb9c8c6f277cb57b3686cb8bcff818c7",
+      "bytes": 1310218
+    },
+    "independent-comparison-e89-check.py": {
+      "sha256": "28e25ee983c73ff7439985e8e99b868b3f557bbc68ce083db2dffbb8ebeb5061",
+      "bytes": 32551
+    },
+    "independent-comparison-e89-check01.json": {
+      "sha256": "dcafded67e5a5c7db55f04be49c3af5899dff2baa3b3b8f404a3373c2849f620",
+      "bytes": 45228
+    },
+    "independent-comparison-e89-check02.json": {
+      "sha256": "dcafded67e5a5c7db55f04be49c3af5899dff2baa3b3b8f404a3373c2849f620",
+      "bytes": 45228
+    },
+    "independent-comparison-e89-test-receipt.json": {
+      "sha256": "138bf05f80389fc99358dd92aec7eaef7130f2286282013226d1819cc4617c49",
+      "bytes": 4066
+    },
+    "read_context.py": {
+      "sha256": "377d4f41b990502ca87fc7d1b4b9b069eede0aa71f281c68cb5ae879d7196a2c",
+      "bytes": 3455
+    },
+    "reader-E8-independent-repeat.json": {
+      "sha256": "65d92369ea0d766f8260ac52f9b7c775cb09e732e76a6977b4ab406f498861c5",
+      "bytes": 147809
+    },
+    "reader-E8-independent.json": {
+      "sha256": "65d92369ea0d766f8260ac52f9b7c775cb09e732e76a6977b4ab406f498861c5",
+      "bytes": 147809
+    },
+    "reader-E8-independent.py": {
+      "sha256": "7952536247d8e6b3f3b12196ee458757926a9090a16fd4ee66074ee26fb9ffef",
+      "bytes": 7224
+    },
+    "reader-E8-root-repeat.json": {
+      "sha256": "d207e809439d24e7ab88e2d61872f36a91cac027ed3b3af3aa86d97e7effcc16",
+      "bytes": 216370
+    },
+    "reader-E8-root.json": {
+      "sha256": "d207e809439d24e7ab88e2d61872f36a91cac027ed3b3af3aa86d97e7effcc16",
+      "bytes": 216370
+    },
+    "reader-E8-root.py": {
+      "sha256": "4c133cead7a17d0e30d80d8366940d1fa58d2a9da780a3f898b02209d8974cb3",
+      "bytes": 8215
+    },
+    "reader-E9-independent-repeat.json": {
+      "sha256": "0f1df29307604fa6a3aa04b6b1bc2c5422e284a7542b67415aad4e5565d71dc7",
+      "bytes": 244424
+    },
+    "reader-E9-independent.json": {
+      "sha256": "0f1df29307604fa6a3aa04b6b1bc2c5422e284a7542b67415aad4e5565d71dc7",
+      "bytes": 244424
+    },
+    "reader-E9-independent.py": {
+      "sha256": "5c8f6171832029f4c45fb937a31a80bbe734f56f0143487765f615299715444a",
+      "bytes": 18010
+    },
+    "reader-E9-root-repeat.json": {
+      "sha256": "5c3a935c553215d364b1bb394ffe93e2d394bd329b63ba543157c8fc1ee44958",
+      "bytes": 222569
+    },
+    "reader-E9-root.json": {
+      "sha256": "5c3a935c553215d364b1bb394ffe93e2d394bd329b63ba543157c8fc1ee44958",
+      "bytes": 222569
+    },
+    "reader-E9-root.py": {
+      "sha256": "8639493c8788d4f32906776a85931869d5a9947437929a3b83d583cd8dd76c8f",
+      "bytes": 8140
+    },
+    "report.md": {
+      "sha256": "d32c5b4bd8a1f46b6e3ea7f3113d3dfafbb5490e947e581ac8d3857169d6b0b5",
+      "bytes": 8968
+    },
+    "test_compare_e89.py": {
+      "sha256": "ab9bc25f5afd3d41da2cafde3cf3c5242a610b76f0cebe2f45c31df35c44f1dc",
+      "bytes": 4863
+    },
+    "test_independent_comparison_e89.py": {
+      "sha256": "e5db633a5ae45fcafe37c4cf30fb11341709c9478cc21f1c588c6af43f875c7f",
+      "bytes": 6108
+    },
+    "../PROTOCOL.md": {
+      "sha256": "2066edbe4f36d4eeb8e3be1695fdd72fe32f9649d779ea897e5e63358cb4fdbd",
+      "bytes": 5438
+    },
+    "../REGIONS.json": {
+      "sha256": "ad6ec930f70e367028624bb3e497944147902b9817e5690e4980ea2ebeb2c131",
+      "bytes": 3084
+    },
+    "../read_context.py": {
+      "sha256": "da7d46400de924b75773646f34b7fba1d2284b50736d25395bb0a1c71e629c18",
+      "bytes": 4951
+    },
+    "../../native-strips01/Im7.jpg": {
+      "sha256": "3509c0fb002d47d1cc9d1ae624377534c8b31bd9fea7fdadd380a7b5f4d4a09d",
+      "bytes": 8738
+    },
+    "../../render01/page-076.png": {
+      "sha256": "0835db6f0a138f5ddebfd6c4c81a857fda6e2da36379eeee1acbc3b5a9a6baf6",
+      "bytes": 943120
+    },
+    "../energy345/verification-e45.json": {
+      "sha256": "8c7ca53e57252938f23317c559d8b574b33719511bd1777b273d22748b7ec1c6",
+      "bytes": 11553
+    }
+  }
+}

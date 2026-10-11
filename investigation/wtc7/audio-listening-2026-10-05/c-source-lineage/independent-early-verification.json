@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-07",
+  "reviewer": "/root/claim_index_critical_review",
+  "status": "passed_with_scope_limits",
+  "actions": "Read-only, separate checking code and fresh local decoding; no network or file writes.",
+  "checks": {
+    "source_video_hash_size": true,
+    "source_preserved": true,
+    "products_pinned_per_run": 93,
+    "both_run_product_pins_match": true,
+    "controlled_input_and_binary_pins_match": true,
+    "both_receipts_complete_with_successful_recorded_commands": true,
+    "first_frame_at_or_after_integer_targets_recomputed": 38,
+    "fresh_probe_frames": 1130,
+    "full_sequential_decode_selected_png_pixel_matches": 38,
+    "full_sequential_decode_width": 320,
+    "full_sequential_decode_height": 224,
+    "fresh_decode_diagnostics_bytes": 0,
+    "synthetic_png_formula_checks_per_run": 40,
+    "recorded_synthetic_boolean_checks_per_run": 6,
+    "synthetic_start_times_and_missing_bin_premises_match": true,
+    "decoded_log_sets_inspected_per_run": 3,
+    "decoder_diagnostic_pattern_hits": 0
+  },
+  "audio": {
+    "transformed_sha256": "2b5393d4e988ea091d30afe414e303e58ae109bb13058aac24688581a5a2a0fe",
+    "unmodified_sha256": "0776b39a597f236c85b98b0f1dd3931cb654ab08c967d508d5bfa6fc64f145ef",
+    "sample_rate": 44100,
+    "channels": 2,
+    "format": "interleaved float32 little-endian",
+    "decoded_bytes_each": 13320192,
+    "full_byte_equality": true,
+    "decoded_sha256": "02f331bf914c5eadab6831e2f27410fa6240f5cf7c840dd16158e390caf0b9c5",
+    "both_decode_exit_codes": 0,
+    "both_error_diagnostics_bytes": 0,
+    "sources_unchanged": true
+  },
+  "limits": [
+    "Same installed decoder, not independent codec implementation",
+    "Did not rerun producer exception-control execution; checked saved assertions, generated pixels and missing-bin premises",
+    "No historical authenticity, original microphone continuity, image correspondence, listening or sound classification",
+    "PCM equality does not certify all container metadata or timing semantics"
+  ]
+}

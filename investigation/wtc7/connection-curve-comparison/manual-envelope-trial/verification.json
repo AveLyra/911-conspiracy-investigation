@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-07",
+  "status": "finite_synthetic_trial_verified_not_historical_admission",
+  "pins": {
+    "PROTOCOL.md": "11e1d727b2de69c50ed6c343f59b101a4ec3f3b8c2ad724bff5557da1b0318ad",
+    "READER-TASK.md": "1adba36fc9ad1764e36dba53a47b52d22c2c7113fe3252a4518da8d04be1fc2d",
+    "trial.py": "aa6f691e03b2b576c7b1c89f54f03ee96a7b31ae010bb5250f54ff6764bb0df7",
+    "test_trial.py": "ccd48716ba46fa66419e5858b107aa216e06a2d7ba896f177cb6bb953d48d6ef",
+    "report.md": "d3f56c561acb6d5a3854724294e02f4c12ab595a405cf03a7ab3f38f6ed20186",
+    "independent-check.json": "dd2b18c5a9f9480460dc04daedde45bc3748bd0e60dcfbbc85be5f39304ff99b",
+    "score-independent-check.json": "bc0158b8e266b48a30c980f7148adcd0b0725c7ba00e3d50b10527a80c4425e5",
+    "source-applicability.json": "8c8846474b252e036daa0e9d191617ed67f4c9fa8a0ba4904b301f820ea646b2",
+    "reader-a.json": "a828d3d11cdadfcc8438e67fe0d5d0bbb14d808bbea42010cdef50de9cae1203",
+    "reader-b.json": "07153e7140a2c7f37f39cd041270920b12bf1407faa0d0041a96276a12bb130e",
+    "score-a01.json": "6a7a86d5a4d8c3e4e5ce7dcee1e46a3e190eb3ecb44650a4653079ff528a2049",
+    "score-a02.json": "6a7a86d5a4d8c3e4e5ce7dcee1e46a3e190eb3ecb44650a4653079ff528a2049",
+    "score-b01.json": "49f6e4400e44d0dd87a253ebfa1123de85f41973a95006ce5d6a907daef9b761",
+    "score-b02.json": "49f6e4400e44d0dd87a253ebfa1123de85f41973a95006ce5d6a907daef9b761",
+    "run01/manifest.json": "e26ba850ffc5fdb1fdd702c1345180957097872d72af2cf15eaca45d49eca5ae",
+    "run02/manifest.json": "e26ba850ffc5fdb1fdd702c1345180957097872d72af2cf15eaca45d49eca5ae"
+  },
+  "runtime": "Generation/scoring: Python 3.13.7, Pillow 12.0.0, reported JPEG codec 6.2. Binary pins in run01/runtime.json; not full dependency closure. Reader B's file-metadata check used the bundled runtime and is recorded in its response.",
+  "execution": [
+    {"command": "python3 -B trial.py --generate run01; python3 -B trial.py --generate run02 (from investigation directory with full relative script path)", "start_receipt": "9c5d68", "session_id": 79788, "completion_receipt": "075ce2", "exit_code": 0, "result": "74 products per run; run name in console is incorrectly shadowed by final ambiguity label. Actual output directories and manifests verified."},
+    {"command": "python3 -B -m unittest -v test_trial.py", "receipts": ["c54ee4", "4af5b8"], "exit_code": 0, "result": "10 focused tests passed in both executions."},
+    {"command": "python3 -B trial.py --score reader-a.json --output score-a01.json; repeat to score-a02.json; reader-b.json to score-b01.json and score-b02.json", "receipt": "9690b1", "exit_code": 0, "result": "All four completed; byte equality within each reader's two outputs."},
+    {"command": "python3 -B - (root product/pin/link verifier)", "receipt": "81beb9", "exit_code": 0, "result": "Both synthetic manifests and every listed product match; preceding region-inventory report pins and links verified."},
+    {"command": "python3 -B - (existing-generation refusal check)", "receipt": "287b0b", "exit_code": 0, "result": "Expected FileExistsError on nested generation request; all 74 pre-existing products unchanged."},
+    {"command": "python3 -B - (score repeat/disagreement and overwrite-refusal check)", "receipt": "f221a0", "exit_code": 0, "result": "Both repeats match; full annotation comparison; expected score overwrite refusal leaves original bytes unchanged."},
+    {"command": "python3 -B - (source JPEG metadata comparison)", "receipt": "9c6011", "exit_code": 0, "result": "All twelve sampling codes match2; all twelve quantization tables differ from declared trial JPEG."},
+    {"command": "git diff --check", "receipts": ["81beb9", "bdb9b7", "4af5b8"], "exit_code": 0, "result": "Tracked diff whitespace checks pass; not source or scientific validation."}
+  ],
+  "independent_checks": [
+    {"record": "independent-check.json", "receipt": "285e31", "exit_code": 0, "scope": "All 74 repeated products, 168 true-column definitions and 16128 raw-column cells; independent synthetic oracle, without producer envelope/support import. Separate source-code inspection."},
+    {"command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B -m unittest -v test_trial", "receipt": "7bdb7d", "exit_code": 0, "scope": "Separate dynamic execution of all 10 producer tests, not the independent oracle."},
+    {"command": "independent inline native JPEG metadata check", "receipt": "c097ff", "exit_code": 0, "scope": "All twelve native pins and trial T03 pin; reproduced all sampling/quantization comparisons."},
+    {"record": "score-independent-check.json", "receipt": "cefdd1", "exit_code": 0, "scope": "Independent recomputation of all336 entries and every saved result field, repeats and reader disagreements, without producer import."}
+  ],
+  "root_source_review": "Root inspected contact-04 (T13–T16), R02 and R04, plus all readers' compact row memberships, coverage and limitations. This is a disclosed QA subset, not a third complete source annotation or an independent blind reader. Both readers attest all seven sheets, four refusal images and all raw columns.",
+  "critical_review": "Separate score review required explicit limits for repeated geometries, shared context, manifest hash leakage, cued refusal questions, jointly varied conditions and unsupported historical transfer. Separate post-score scientific review required limiting success to these frozen readings, separating bounds from identity/support, and a finite all-fourteen applicability table. Those corrections are incorporated in the pinned report.",
+  "final_report_review": {"reviewer": "curve_recovery_feasibility, post-score scientific review", "receipt": "8c5840", "report_sha256": "d3f56c561acb6d5a3854724294e02f4c12ab595a405cf03a7ab3f38f6ed20186", "result": "All requested scientific corrections covered; no remaining substantive objection. The then-pending verification-file link is resolved by saving this file. This is not actual human acceptance."},
+  "limits": "No statistical confidence, historical graphical error calibration, selected human sample acceptance, full support inventory, model discrepancy or collapse cause result. Exact pre-raster recovery is not imposed as a requirement. Source conditions and identities need explicit assessment rather than automatic acceptance or rejection.",
+  "state": "Research worktree branch research/sherlock-wtc7-investigation, HEAD ca1c223335c20905d6608eb15c676f88cbfac734, intentionally uncommitted. Full charter active/incomplete. No main edits, accepted engine state, legal promotion, external disclosure, commit or push. Archived-destination feedback remains pending locally."
+}

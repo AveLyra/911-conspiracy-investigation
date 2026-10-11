@@ -1,0 +1,46 @@
+{
+  "date":"2026-10-07",
+  "status":"research_only_reported_sound_to_existing_access_track_join",
+  "scope":"Join new user C/D observations to previously saved visual/edit coverage. No new listening, media decode, transient classification, calibrated timing interval or original-clock authentication.",
+  "inputs":[
+    {"path":"human-listening-response-CD-2026-10-07.json","sha256":"e052d8c14924baf56003b349957bea1734746160a02ade81070ac9c62328d726","role":"Preserved user-reported listening with approximate local markers and unspecified timing uncertainty"},
+    {"path":"/Users/admin/docs/911/research/sherlock-wtc7-investigation/acoustic-audit/av-correspondence/report.md","sha256":"17ada7cecff785c525bc40603da149499e9b9c3fbd2aa5c5de602ab656061a69","role":"Prior derivative visual/edit assessment, including AV01/AV02 and explicit access-copy limits"},
+    {"path":"/Users/admin/docs/911/research/sherlock-wtc7-investigation/acoustic-audit/av-correspondence/run01/compilation-selected.json","sha256":"763589c1e7e0bda55a9978e57815dd0383398567fb50d583c8aa8ff549ec9bfa","role":"Saved source-frame/PTS selection map, not independent historic time"},
+    {"path":"/Users/admin/docs/911/research/sherlock-wtc7-investigation/acoustic-audit/av-correspondence/audio01/measurements.json","sha256":"9d36b8b16419307f410508146c31560463110a0415960e985b49a38308fbcb28","role":"Prior digital measurements around cut coordinates; not a recording of a listener's event onset"}
+  ],
+  "observations_and_joins":[
+    {"id":"C-noise-AV01","user_local_seconds_approximate":5,"nominal_track_seconds":435,"existing_visual_event":"AV01: source frame13049 to13050,434.966667 to435s; abrupt replacement of wide city/cloud shot by closer building/cloud shot","inference":"Nominal time correspondence makes an edit-associated change worth considering. Does not prove exact coincidence or that an edit generated the noise.","contrary_or_alternative":"A real sound may occur near a cut; independently edited sound and picture may also be offset. The reported white noise is not an acoustically measured white spectrum.","strength":"Exact offset calculation; event correspondence remains conditional on rough timing and shared access-track convention"},
+    {"id":"C-bang-AV02","user_local_seconds_approximate":13,"nominal_track_seconds":443,"existing_visual_event":"AV02:13255 to13256,441.833333 to6628/15s; close shot replaced by a plume view","nominal_difference_seconds_exact":"17/15","inference":"The approximate bang marker lies nominally1.133333s after the cut. No justified event interval was supplied; do not assert an exact temporal separation or assign the bang to the edit.","contrary_or_alternative":"Bang may have a physical source, an edited-recording source or an unidentified cause. A nearby picture cut neither identifies nor excludes any of them.","strength":"Arithmetic established; sound source and physical ordering underdetermined"},
+    {"id":"C-dialogue-coverage","user_local_seconds_approximate":17,"nominal_track_seconds":447,"inference":"User reports speech, but this point lies outside the saved C visual interval. Machine segment boundaries elsewhere cannot refine the user's onset without independent checking."},
+    {"id":"D-untimed-comparator","user_description":"several explosion sounds throughout","inference":"Positive untimed auditory report on a different-building comparator. No individual arrival times, cross-recording sound-pressure comparison or WTC7 mechanism attribution follows.","limit":"Do not count several sounds as several independently identified devices; echoes, overlapping sources and recording response remain untested."}
+  ],
+  "coverage_check":{
+    "C_visual_interval_half_open_seconds":[434,443],
+    "count":270,
+    "first_frame_index":13020,
+    "last_frame_index":13289,
+    "last_frame_time_exact":"13289/30",
+    "nominal_bang_frame_present":false,
+    "consequence":"The nominal bang at443s lies immediately outside the saved interval, not inside a newly reviewed collapse sequence. Earlier screening cannot establish what is shown exactly at this sound marker. Dialogue447s is also outside.",
+    "verification":"Root Ruby JSON/source-hash and exact Rational check, receipt d0cd47, exit0. This checks the saved map, not a fresh decode."
+  },
+  "mechanism_boundary":{
+    "positive_result":"C has a user-reported bang. Do not summarize this excerpt as silence or absence of all impulses.",
+    "negative_result_limit":"No absence of a verified blast pattern is established by this limited listening record. Any later negative acoustic inference must specify a mechanism's predicted signal and opportunity to detect it.",
+    "thermal_hypotheses":"A hypothetical lower-blast thermal support-removal pathway is not excluded merely by lack of a conventional blast sequence. Nanothermite is not assumed silent. Quietness, even if established for a specified mechanism, would be compatibility rather than evidence of use.",
+    "ranking":"No new causal ranking: auditory candidate plus unresolved source/clock mapping, not a discriminating mechanism signature."
+  },
+  "next_discriminating_test":"A separately declared visual/source review must cover the nominal bang coordinate and preserve timing uncertainty, without choosing a convenient audio peak. Prefer an authenticated continuous source and A/V mapping. Existing[434,443)screening is not that review; no fresh extraction executed here.",
+  "existing_audio_window_limit":"The prior cut-centered measurements cover[434.8,435.2)and[441+2/3,442+1/15)track seconds. Neither contains nominal443s; do not reuse those values as a measurement of the reported bang.",
+  "critical_review":{
+    "reviewer":"/root/c_bang_av_join",
+    "independence":"Separate read-only computational reviewer, shared environment and prior context; no human/expert certification or separate historical source.",
+    "coverage":"Freshly hashed source records and C/D WAVs; viewed five existing full1280x720 images corresponding to frames13049,13050,13255,13256,13289. Root reviewed saved report/map and exact arithmetic, not these new image views.",
+    "conclusion":"Confirms two abrupt scene replacements and half-open image-coverage limit. No physical event interval or sound-source identification established.",
+    "added_corrections":"Explicitly record that prior audio windows do not cover nominal bang; preserve real collapse-related sound with propagation delay or asynchronous editing as an alternative, not only noncollapse sounds.",
+    "next_test":"Predeclare whole-excerpt C visual coverage extension;435/443/447 remain navigation coordinates, not presumed events. No new extraction done in this join."
+  },
+  "cause_ranking_changed":false,
+  "accepted_sherlock_finding":false,
+  "legal_promotion":false
+}

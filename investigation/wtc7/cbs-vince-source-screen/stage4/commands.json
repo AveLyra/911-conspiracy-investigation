@@ -1,0 +1,100 @@
+{
+  "schema": "recorded-invocations-v1",
+  "note": "Actual outer invocations and transcript-derived terminal records. Inner command/stdout/stderr/status files are preserved separately. Controls and repeatability are not historical validation.",
+  "commands": [
+    {
+      "purpose": "fresh parent synthetic controls",
+      "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-sequence",
+      "argv": [
+        "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "test_sample_sequence.py",
+        "--out",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/stage4/controls-parent01"
+      ],
+      "exit_code": 0,
+      "terminal_chunk": "9e9eb1",
+      "result": "14 tests passed"
+    },
+    {
+      "purpose": "fresh adapter synthetic controls",
+      "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen",
+      "argv": [
+        "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "test_prepare_samples.py",
+        "--out",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/stage4/controls-adapter01"
+      ],
+      "exit_code": 0,
+      "terminal_chunk": "dfe840",
+      "result": "25 tests passed"
+    },
+    {
+      "purpose": "fixed target preparation",
+      "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen",
+      "argv": [
+        "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "prepare_samples.py",
+        "--manifest",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/stage4/input.json",
+        "--manifest-sha256",
+        "ca06dd79aeae760997e3d2f1a61fe8b92ee54c644f8b40493f1cfaa0843ed86b",
+        "--protocol",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/PROTOCOL.md",
+        "--protocol-sha256",
+        "5dbaca2b2329db7bc85f67fc0995adf5fd15b8fe3fd0c4b0e50f445179dd35bc",
+        "--out",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/stage4/preparation01"
+      ],
+      "exit_code": 0,
+      "terminal_chunk": "b96c82",
+      "result": "prepared_not_executed"
+    },
+    {
+      "purpose": "native repeated extraction run01",
+      "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-sequence",
+      "argv": [
+        "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "sample_sequence.py",
+        "--manifest",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/stage4/preparation01/sampling-manifest.json",
+        "--manifest-sha256",
+        "8cfc8ac6ce67b0c1ca15c874b3663a638585798bb3aba8461bfe2b5c4fbc4fd6",
+        "--plan",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/PROTOCOL.md",
+        "--plan-sha256",
+        "5dbaca2b2329db7bc85f67fc0995adf5fd15b8fe3fd0c4b0e50f445179dd35bc",
+        "--out",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/stage4/run01"
+      ],
+      "exit_code": 0,
+      "terminal_chunk": "153ed5",
+      "result": "descriptive_candidates_only"
+    },
+    {
+      "purpose": "native repeated extraction run02",
+      "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/late-fire-sequence",
+      "argv": [
+        "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "sample_sequence.py",
+        "--manifest",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/stage4/preparation01/sampling-manifest.json",
+        "--manifest-sha256",
+        "8cfc8ac6ce67b0c1ca15c874b3663a638585798bb3aba8461bfe2b5c4fbc4fd6",
+        "--plan",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/PROTOCOL.md",
+        "--plan-sha256",
+        "5dbaca2b2329db7bc85f67fc0995adf5fd15b8fe3fd0c4b0e50f445179dd35bc",
+        "--out",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-vince-source-screen/stage4/run02"
+      ],
+      "exit_code": 0,
+      "terminal_chunk": "790564",
+      "result": "descriptive_candidates_only"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "scope": "fixed_two_record_CO016_source_test",
+  "protocol_sha256": "e37fe180397f5e57d8c8fbfc2af5c5fcdd39042c82242abd170b6b264d71942f",
+  "metadata_path": "../job1854-followup-locator/root-diagnostic.json",
+  "metadata_sha256": "c6a80ecc100e77cc3d387e17fa032e8c4032e4e13cb761d20bffd6eaed51e7d8",
+  "selection": "Exact declared two-record subset of eight break_glass results; not exhaustive archive or query-content review.",
+  "documents": [
+    {
+      "id": "NYC-WTC_000171905",
+      "url": "https://sept11documents.cityofnewyork.us/apps/content/September11_MD/NYC-WTC_000171905.pdf",
+      "expected_bytes": 89091,
+      "expected_pages": 2,
+      "expected_last_bates": "NYC-WTC_000171906",
+      "status": "acquired_basic_admission_passed",
+      "file": "NYC-WTC_000171905.pdf",
+      "bytes": 89091,
+      "pages": 2,
+      "sha256": "4e10972135a0d9e24a61da9560cd554a4b5f6e66087aeee109ba041ad4fd2ca6",
+      "retrieval_utc_bounds": ["2026-10-09 02:34:27", "2026-10-09 02:35:19"],
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "redirects": 0,
+      "curl_exit": 0,
+      "tool_receipt": "8352d5",
+      "historical_authentication": "not_established",
+      "sensitivity": "limited_local_keyword_triage_and_root_page_inspection_found_no_explicit_restriction; not_general_clearance",
+      "page_derivatives": [
+        {"page": 1, "file": "NYC-WTC_000171905-1.png", "bytes": 120265, "sha256": "3c966e459dac95876a423fc5c23b799fe7574a137ca0927e77588b98d03f2d75"},
+        {"page": 2, "file": "NYC-WTC_000171905-2.png", "bytes": 98315, "sha256": "ae767d63f79b21869c981566eae8443c98b36c4063d3672003ae2d9bfb4258e2"}
+      ]
+    },
+    {
+      "id": "NYC-WTC_000171909",
+      "url": "https://sept11documents.cityofnewyork.us/apps/content/September11_MD/NYC-WTC_000171909.pdf",
+      "expected_bytes": 57584,
+      "expected_pages": 1,
+      "expected_last_bates": "NYC-WTC_000171909",
+      "status": "unacquired_route_stopped_after_two_connection_timeouts",
+      "file": null,
+      "sha256": null,
+      "content_review": "unread",
+      "attempts": [
+        {"tool_receipt": "b90e26", "curl_exit": 28, "http_status": null, "received_bytes": 0, "elapsed_seconds": 20.008823},
+        {"tool_receipt": "3f5678", "curl_exit": 28, "http_status": null, "received_bytes": 0, "elapsed_seconds": 20.006215}
+      ],
+      "inference_limit": "Transport failure does not establish document contents, archival absence or withholding."
+    }
+  ],
+  "reported_population": {"documents": 2, "pages": 3, "bytes": 146675},
+  "acquired_population": {"documents": 1, "pages": 2, "bytes": 89091},
+  "full_content_population_complete": false,
+  "accepted_engine_finding": false
+}

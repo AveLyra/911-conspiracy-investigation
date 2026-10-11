@@ -1,0 +1,17 @@
+2026-10-04 root summary verifier, command 5f0ae8, exit 1.
+The read-only summarizer supplied a relative results directory to verify_chunks.
+Its absolute-path guard refused before reading the first chunk. This was a caller
+path error, not a source or artifact mismatch. No collection was rerun or changed.
+
+Traceback (most recent call last):
+  File "<stdin>", line 9, in <module>
+  File "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-frame-correspondence/dv-metadata/v2/storage.py", line 168, in verify_chunks
+    path = _path(directory)
+  File "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-frame-correspondence/dv-metadata/v2/storage.py", line 55, in _path
+    _require(path.is_absolute() and path.anchor == "/" and len(path.parts) > 1,
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             "output must be an absolute non-root path")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/cbs-frame-correspondence/dv-metadata/v2/storage.py", line 34, in _require
+    raise StorageError(message)
+storage.StorageError: output must be an absolute non-root path

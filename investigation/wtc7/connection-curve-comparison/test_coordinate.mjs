@@ -1,7 +1,7 @@
 // Synthetic display geometry and minimal DOM lifecycle; no historical pixels read.
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { pointerToPixel as map, pixelCenter, nudgePixel, ASSETS, CANDIDATES,
+import { pointerToPixel as map, pixelCenter, nudgePixel, ASSETS, CANDIDATES, ANCHORS, formatReviewTSV,
   initializeReview } from './coordinate.mjs';
 const rect = (left, top, width, height) => ({left, top, width, height});
 
@@ -58,9 +58,17 @@ test('literal seven-asset scope and six valid candidate points', () => {
   assert.equal(Object.keys(CANDIDATES).length,6);
   for(const p of Object.values(CANDIDATES)) assert.deepEqual(map(p.x+.5,p.y+.5,rect(0,0,1700,2200),1700,2200),p);
 });
+test('six-anchor TSV preserves proposed ranges and sanitizes pasted cells', () => {
+  assert.deepEqual(ANCHORS.map(a=>a.id),['F0','FR','FT','E0','ER','ET']);
+  const tsv=formatReviewTSV({F0:{status:'observed',point:{x:448,y:830}},FR:{status:'unreadable'}},'upper\tlabel\ncorrection');
+  assert.match(tsv,/F0\tForce: left-bottom axis intersection\t\(449, 829\)\t446–452\t826–832\tobserved\t448\t830/);
+  assert.match(tsv,/FR\tForce: right-bottom axis intersection\t\(1294, 829\).*unreadable\t\t/);
+  assert.match(tsv,/Axis \/ legend notes\tupper label correction/);
+  assert.equal(tsv.split('\n').length,9);
+});
 
 // Deliberately small fake DOM: checks lifecycle, not browser layout or event quantization.
-function fakeDOM() {
+function fakeDOM(page='control') {
   class Element {
     constructor() { this.listeners={}; this.dataset={}; this.style={}; this.hidden=false; this.textContent=''; this.clientWidth=800; this.clientHeight=600; this.scrollLeft=0; this.scrollTop=0; }
     addEventListener(k,f) { this.listeners[k]=f; }
@@ -71,12 +79,17 @@ function fakeDOM() {
     getBoundingClientRect() { return rect(0,0,1700,2200); }
     replaceWith(next) { nodes['page-image']=next; }
   }
-  const nodes=Object.fromEntries(['viewport','stage','marker','page','readout','load-status','page-image','kind','dimensions','hash','source-hash','clear'].map(k=>[k,new Element()]));
-  nodes.page.value='control';
+  const ids=['viewport','stage','marker','page','readout','load-status','page-image','kind','dimensions','hash','source-hash','clear',
+    'anchor-progress','review-output','label-notes','previous-anchor','next-anchor','mark-unreadable','clear-answer','hide-marker','copy-review','copy-status',
+    ...ANCHORS.flatMap(a=>[`row-${a.id}`,`answer-${a.id}`,`state-${a.id}`])];
+  const nodes=Object.fromEntries(ids.map(k=>[k,new Element()]));
+  nodes['label-notes'].value=''; nodes['review-output'].value='';
+  nodes.page.value=page;
   const zooms=['fit','1','2'].map(z=>Object.assign(new Element(),{dataset:{zoom:z}}));
-  const candidates=Object.keys(CANDIDATES).map(k=>Object.assign(new Element(),{dataset:{candidate:k}}));
+  const candidates=ANCHORS.map(a=>Object.assign(new Element(),{dataset:{candidate:a.id}}));
   const document=new Element(); document.getElementById=k=>nodes[k];
   document.querySelectorAll=s=>s==='[data-zoom]'?zooms:candidates;
+  document.createElement=()=>new Element();
   const images=[]; class Image extends Element { constructor(){super();images.push(this);} }
   globalThis.document=document; globalThis.Image=Image;
   globalThis.ResizeObserver=class { constructor(f){this.f=f;} observe(){} };
@@ -112,5 +125,29 @@ test('candidate provenance, genuine click, nudge, clear, frame reset and variabl
     d.document.fire('keydown',{key:'Escape'}); assert.equal(d.nodes.marker.hidden,true);
     d.nodes.page.value='73'; d.nodes.page.fire('change'); assert.match(d.nodes.readout.textContent,/unavailable/);
     d.load(1700,2200); assert.match(d.nodes.readout.textContent,/No point/);
+  } finally { delete globalThis.document; delete globalThis.Image; delete globalThis.ResizeObserver; }
+});
+test('human click records active anchor, nudges update it, navigation and unreadable are in-memory', () => {
+  const d=fakeDOM('76');
+  try {
+    assert.equal(d.nodes.page.value,'76');
+    d.load(1700,2200);
+    assert.match(d.nodes.readout.textContent,/AI PROPOSED F0/);
+    assert.equal(d.nodes['state-F0'].textContent,'Not checked');
+    d.nodes.stage.fire('click',{clientX:500.5,clientY:800.5});
+    assert.equal(d.nodes['answer-F0'].textContent,'(500, 800)');
+    assert.equal(d.nodes['state-F0'].textContent,'Observed by click');
+    d.nodes.viewport.fire('keydown',{key:'ArrowLeft'});
+    assert.equal(d.nodes['answer-F0'].textContent,'(499, 800)');
+    assert.match(d.nodes['review-output'].value,/F0\tForce: left-bottom axis intersection.*observed\t499\t800/);
+    d.nodes['next-anchor'].fire('click');
+    assert.equal(d.nodes['row-FR'].dataset.current,'true');
+    assert.match(d.nodes.readout.textContent,/AI PROPOSED Fright/);
+    d.nodes['mark-unreadable'].fire('click');
+    assert.equal(d.nodes['state-FR'].textContent,'Unreadable');
+    assert.equal(d.nodes['row-FT'].dataset.current,'true');
+    assert.match(d.nodes['review-output'].value,/FR\tForce: right-bottom axis intersection.*unreadable/);
+    d.nodes['clear-answer'].fire('click');
+    assert.equal(d.nodes['state-FT'].textContent,'Not checked');
   } finally { delete globalThis.document; delete globalThis.Image; delete globalThis.ResizeObserver; }
 });

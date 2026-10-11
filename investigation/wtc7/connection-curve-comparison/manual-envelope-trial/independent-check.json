@@ -1,0 +1,65 @@
+{
+  "status": "passed_independent_generation_and_oracle_checks",
+  "products_identical": 74,
+  "manifest_listed_products": 73,
+  "truth_columns_verified": 168,
+  "raw_column_cells_verified": 16128,
+  "synthetic_oracle_checks": [
+    "negative_slope",
+    "boundary_equality",
+    "midpoint_false_pass",
+    "gap",
+    "empty",
+    "disconnected",
+    "overlap",
+    "boolean",
+    "fractional",
+    "duplicate",
+    "unresolved",
+    "all_withheld_nonvacuity_fails",
+    "erroneous_refusal_fails"
+  ],
+  "pins": {
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/manual-envelope-trial/PROTOCOL.md": {
+      "bytes": 5150,
+      "sha256": "11e1d727b2de69c50ed6c343f59b101a4ec3f3b8c2ad724bff5557da1b0318ad"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/manual-envelope-trial/trial.py": {
+      "bytes": 10498,
+      "sha256": "aa6f691e03b2b576c7b1c89f54f03ee96a7b31ae010bb5250f54ff6764bb0df7"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/raster_uncertainty.py": {
+      "bytes": 16380,
+      "sha256": "878872fcde4316e2655e156221de970a41f5186351a9525159c7eb7520e8760f"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/manual-envelope-trial/run01/manifest.json": {
+      "bytes": 8596,
+      "sha256": "e26ba850ffc5fdb1fdd702c1345180957097872d72af2cf15eaca45d49eca5ae"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/manual-envelope-trial/run02/manifest.json": {
+      "bytes": 8596,
+      "sha256": "e26ba850ffc5fdb1fdd702c1345180957097872d72af2cf15eaca45d49eca5ae"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/manual-envelope-trial/run01/truth.json": {
+      "bytes": 17925,
+      "sha256": "ccdd9a664c7abc68ca1fd7a997f01c583de090f540c994c14786263906bfef05"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/manual-envelope-trial/run01/packet/index.json": {
+      "bytes": 2915,
+      "sha256": "b55c7e85198846e7a60a895cdec48d9917ed406ebdb25c7168232f0b5036da4a"
+    }
+  },
+  "scope": "No reader annotations or scores read. Independent oracle tests plus producer code inspection, not dynamic execution of producer scorer. No producer envelope/support import.",
+  "execution": {
+    "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B - (independent inline verifier)",
+    "exit_code": 0,
+    "tool_receipt": "285e31"
+  },
+  "review": {
+    "scorer": "Inspected full-column doubled-endpoint comparisons, negative-slope min/max, gap precedence, per-tile nonvacuity at interior columns20/36 and refusal answer logic; no substantive arithmetic mismatch identified. Independent synthetic oracle exercised classifications; producer scorer was not dynamically executed by this checker.",
+    "nonvacuity_test_limit": "All-withheld and erroneous-refusal oracle checks are direct logical negative checks, not full producer score invocations.",
+    "malformed": "Malformed accepted entries abort scoring via ValueError rather than returning per-entry method-failure records. Preserve any such exception as failed method/input evidence; do not silently fix reader sets or count absence of output as pass.",
+    "reporting_bug": "generate's loop shadows name with final ambiguity kind, so printed run label can be full-occlusion. Output path was fixed before shadowing and manifests/products agree; this is not evidence of wrong directory generation.",
+    "limits": "Finite synthetic conditions only, not historical compression calibration or human acceptance. No annotation/score outcomes inspected. Refusal latent descriptors and packet exist; no independent rerender of ambiguity scenes performed."
+  }
+}

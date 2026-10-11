@@ -41,6 +41,28 @@ export const CANDIDATES = {
   "F0":{"x":449,"y":829}, "Fright":{"x":1294,"y":829}, "Ftop":{"x":449,"y":224},
   "E0":{"x":473,"y":1669}, "Eright":{"x":1297,"y":1669}, "Etop":{"x":473,"y":1048}
 };
+export const ANCHORS = [
+  {id:"F0",plot:"Force",feature:"left-bottom axis intersection",candidate:"F0",xRange:"446–452",yRange:"826–832"},
+  {id:"FR",plot:"Force",feature:"right-bottom axis intersection",candidate:"Fright",xRange:"1291–1297",yRange:"826–832"},
+  {id:"FT",plot:"Force",feature:"left-top axis intersection",candidate:"Ftop",xRange:"446–452",yRange:"221–227"},
+  {id:"E0",plot:"Energy",feature:"left-bottom axis intersection",candidate:"E0",xRange:"470–476",yRange:"1666–1672"},
+  {id:"ER",plot:"Energy",feature:"right-bottom axis intersection",candidate:"Eright",xRange:"1294–1300",yRange:"1666–1672"},
+  {id:"ET",plot:"Energy",feature:"left-top axis intersection",candidate:"Etop",xRange:"470–476",yRange:"1045–1051"}
+];
+
+const cleanCell = (value) => String(value ?? "").replace(/[\t\r\n]+/g, " ").trim();
+export function formatReviewTSV(observations, labelNotes = "") {
+  const lines = ["Anchor\tGraph location\tAI locator (page pixels)\tProposed x range\tProposed y range\tHuman status\tObserved x\tObserved y"];
+  for (const anchor of ANCHORS) {
+    const proposed = CANDIDATES[anchor.candidate];
+    const answer = observations[anchor.id];
+    lines.push([anchor.id, `${anchor.plot}: ${anchor.feature}`, `(${proposed.x}, ${proposed.y})`,
+      anchor.xRange, anchor.yRange, answer?.status ?? "not checked",
+      answer?.point?.x ?? "", answer?.point?.y ?? ""].map(cleanCell).join("\t"));
+  }
+  lines.push("", `Axis / legend notes\t${cleanCell(labelNotes)}`);
+  return lines.join("\n");
+}
 
 export function initializeReview() {
   const byId = (id) => document.getElementById(id);
@@ -48,6 +70,40 @@ export function initializeReview() {
   const selector = byId("page"), readout = byId("readout"), status = byId("load-status");
   let image = byId("page-image"), item = ASSETS.control, ready = false, point = null;
   let locked = false, provenance = "", zoom = "fit", generation = 0;
+  const observations = Object.create(null);
+  let anchorIndex = 0;
+  const anchorProgress = byId("anchor-progress"), reviewOutput = byId("review-output");
+
+  function renderReview() {
+    for (let i = 0; i < ANCHORS.length; i++) {
+      const anchor = ANCHORS[i], answer = observations[anchor.id];
+      byId(`row-${anchor.id}`).dataset.current = String(i === anchorIndex);
+      byId(`answer-${anchor.id}`).textContent = answer?.point ? `(${answer.point.x}, ${answer.point.y})` : "—";
+      byId(`state-${anchor.id}`).textContent = answer?.status === "unreadable" ? "Unreadable" :
+        answer?.point ? "Observed by click" : "Not checked";
+    }
+    const anchor = ANCHORS[anchorIndex];
+    anchorProgress.textContent = `Anchor ${anchorIndex + 1} of ${ANCHORS.length}: ${anchor.id} — ${anchor.plot}, ${anchor.feature}. Click the actual intersection, then use arrow keys if needed.`;
+    reviewOutput.value = formatReviewTSV(observations, byId("label-notes").value);
+    byId("previous-anchor").disabled = anchorIndex === 0;
+    byId("next-anchor").disabled = anchorIndex === ANCHORS.length - 1;
+  }
+
+  function activateAnchor() {
+    if (selector.value !== "76" || !ready) return;
+    const anchor = ANCHORS[anchorIndex], answer = observations[anchor.id];
+    setZoom("1");
+    if (answer?.point) {
+      point = { ...answer.point }; locked = true; provenance = "YOUR RECORDED OBSERVATION"; showPoint();
+      const r = image.getBoundingClientRect();
+      viewport.scrollLeft = (point.x + .5) * (r.width / item.width) - viewport.clientWidth / 2;
+      viewport.scrollTop = (point.y + .5) * (r.height / item.height) - viewport.clientHeight / 2;
+      viewport.focus({ preventScroll: true });
+      viewport.scrollIntoView({ block: "center" });
+    } else {
+      markCandidate(anchor.candidate);
+    }
+  }
 
   function showPoint() {
     marker.hidden = true;
@@ -112,9 +168,10 @@ export function initializeReview() {
         return;
       }
       ready = true; next.hidden = false;
-      status.textContent = `Loaded ${item.width} × ${item.height}; coordinates enabled; nothing is saved.`;
+      status.textContent = `Loaded ${item.width} × ${item.height}; coordinates enabled; observations remain only in this page session.`;
       sizeImage();
       if (candidate !== null) markCandidate(candidate);
+      else activateAnchor();
     };
     next.onerror = () => {
       if (current !== generation) return;
@@ -132,24 +189,62 @@ export function initializeReview() {
   stage.addEventListener("click", (e) => {
     const selected = pointer(e); if (!selected) return;
     point = selected; locked = true; provenance = "CLICK LOCKED";
+    if (selector.value === "76") observations[ANCHORS[anchorIndex].id] = {status:"observed", point:{...point}};
+    renderReview();
     viewport.focus({ preventScroll: true }); showPoint();
   });
   viewport.addEventListener("keydown", (e) => {
     if (!ready || !locked) return;
     const moved = nudgePixel(point, e.key, item.width, item.height);
     if (!moved) return;
-    e.preventDefault(); point = moved; provenance = "KEYBOARD ADJUSTED"; showPoint();
+    e.preventDefault(); point = moved; provenance = "KEYBOARD ADJUSTED";
+    if (selector.value === "76" && observations[ANCHORS[anchorIndex].id]?.status === "observed") {
+      observations[ANCHORS[anchorIndex].id].point = {...point};
+    }
+    renderReview(); showPoint();
   });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") { e.preventDefault(); clearPoint(); } });
   viewport.addEventListener("scroll", () => { if (!locked) clearPoint(); });
   byId("clear").addEventListener("click", clearPoint);
   selector.addEventListener("change", () => loadPage());
+  byId("previous-anchor").addEventListener("click", () => {
+    if (anchorIndex === 0) return;
+    anchorIndex--; renderReview(); activateAnchor();
+  });
+  byId("next-anchor").addEventListener("click", () => {
+    if (anchorIndex >= ANCHORS.length - 1) return;
+    anchorIndex++; renderReview(); activateAnchor();
+  });
+  byId("mark-unreadable").addEventListener("click", () => {
+    observations[ANCHORS[anchorIndex].id] = {status:"unreadable"};
+    clearPoint();
+    if (anchorIndex < ANCHORS.length - 1) anchorIndex++;
+    renderReview(); activateAnchor();
+  });
+  byId("clear-answer").addEventListener("click", () => {
+    delete observations[ANCHORS[anchorIndex].id]; clearPoint(); renderReview(); activateAnchor();
+  });
+  byId("hide-marker").addEventListener("click", clearPoint);
+  byId("label-notes").addEventListener("input", renderReview);
+  byId("copy-review").addEventListener("click", async () => {
+    reviewOutput.value = formatReviewTSV(observations, byId("label-notes").value);
+    try {
+      await navigator.clipboard.writeText(reviewOutput.value);
+      byId("copy-status").textContent = "Copied. Paste the table into chat when ready.";
+    } catch {
+      reviewOutput.focus(); reviewOutput.select();
+      byId("copy-status").textContent = "Clipboard access is unavailable. The table is selected; copy it manually, then paste into chat.";
+    }
+  });
   for (const b of document.querySelectorAll("[data-zoom]")) b.addEventListener("click", () => setZoom(b.dataset.zoom));
   for (const b of document.querySelectorAll("[data-candidate]")) b.addEventListener("click", () => {
-    const name = b.dataset.candidate; if (!Object.hasOwn(CANDIDATES, name)) return;
-    selector.value = "76"; setZoom("1"); loadPage(name);
+    const anchor = ANCHORS.find((entry) => entry.id === b.dataset.candidate);
+    if (!anchor) return;
+    anchorIndex = ANCHORS.indexOf(anchor); renderReview();
+    selector.value = "76"; setZoom("1"); loadPage(anchor.candidate);
   });
   new ResizeObserver(sizeImage).observe(viewport);
+  renderReview();
   loadPage();
 }
 if (typeof document !== "undefined") initializeReview();

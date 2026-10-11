@@ -1,0 +1,32 @@
+{
+  "status": "frozen before separate visual review",
+  "role": "computational image screening, not human acceptance or forensic expert opinion",
+  "coverage": {
+    "run": "dense01",
+    "all_overview_thumbnails": 90,
+    "source_indices_inclusive": [120, 209],
+    "overview_files": ["early-dense-overview/sheet-0000.png", "early-dense-overview/sheet-0030.png", "early-dense-overview/sheet-0060.png"],
+    "native_files": ["early-dense/frame-0055.png", "early-dense/frame-0056.png", "early-dense/frame-0057.png", "early-dense/frame-0058.png"],
+    "native_source_indices": [174, 175, 176, 177]
+  },
+  "observations": [
+    "The first 56 thumbnails show gradual reframing of a skyline, including a large background facade amid cloud and a dark foreground building on the right.",
+    "The adjacent source frames 175 and 176 show an abrupt global change in framing and cloud configuration. Native frame 175 also has a narrow strip of inconsistent-looking image content at the bottom edge; this has not received a field/interlace/compression analysis.",
+    "The post-change image still includes a broad background facade next to the cloud. The coarse-screen impression must not be promoted to a finding that the whole facade disappeared in this interval.",
+    "Frames after the transition show continued cloud development and modest camera movement. No second comparably conspicuous whole-scene replacement was identified in this 90-thumbnail screen. That is not a full continuity audit."
+  ],
+  "transition": {
+    "source_indices": [175, 176],
+    "source_pts": [175175, 176176],
+    "time_base": "1/30000",
+    "seconds_exact": ["7007/1200", "11011/1875"],
+    "seconds_approximate": [5.839166666666666, 5.872533333333333]
+  },
+  "inference": "A picture discontinuity is directly visible; an edit or source interruption is strongly indicated, but these images alone do not identify how it arose or its physical-time gap. Do not treat the adjacent-frame spacing as the duration of the underlying physical change.",
+  "alternatives_and_limits": [
+    "An edit, dropped material, camera reframe coupled with an unpreserved interval, or other source-chain processing can account for a discontinuity. A specific editor, original capture continuity, intent or concealment is not identified.",
+    "Do not infer building identity, support loss, event time, audio continuity, original microphone association or collapse cause from this screen.",
+    "No automated motion measurement, pixel-difference threshold, image enhancement or interpolated frame was used. Native RGB derivatives and thumbnail sheets come from the declared extractor.",
+    "Two extraction runs completed. Independent actual-pixel/clock verification remains pending when these observations are frozen."
+  ]
+}

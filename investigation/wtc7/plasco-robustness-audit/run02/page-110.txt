@@ -1,0 +1,31 @@
+95 
+ 
+ Analysis parameters 
+The following analysis parameters were used in the OpenSEES analysis. The dead load 
+has been applied in 10 load increments , whereas the temperature load (3600 seconds of fire 
+duration) is in 100 steps.  
+ 
+Analysis commands Dead load Thermomechanical 
+System solver UmfPack UmfPack  
+ Davis (2004) 
+Numbered Plain Plain 
+Constraints Plain Plain 
+Integrator LoadControl Newmark 
+ (Newmark (1959)) 
+Convergence test NormDispIncr NormDispIncr 
+Algorithm ModifiedNewton KrylovNewton 
+(Scott & Fenves (2010)) 
+Analysis Static Transient 
+ 
+Table 7 Analysis parameters used in the study (Command Manual - OpenSeesWiki 
+(n.d.)). 
+ 
+An element size varying from 100-300 mm is used for meshing the truss members, 300-
+400 mm for columns at 750mm and shells are discretised at 300-500 mm. The fully meshed 
+model was composed of 71000 nodes and 105000 finite elements.  
+ 
+3.4. Gravity load transfer mechanism 
+The floors of the Plasco tower can be seen as a group of 9 individual structural segments, 
+as seen in Figure 3.4, with each segment having at least one core column near a corner. The 
+interior part has four core columns near the four corners, and the edge segments have two core 
+columns on one side. The corner columns were designed to resist the global twisting and 

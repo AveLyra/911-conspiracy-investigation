@@ -1,0 +1,594 @@
+{
+  "all_required_recursive_inputs_present": true,
+  "annotations": {
+    "../force56-remainder/reader-F5-peer.json": {
+      "attested_read_blocks": 8,
+      "multiple_band_columns": 0,
+      "route_records": 230,
+      "selected_exact_white_cells": 0,
+      "statuses": {
+        "boundary_truncated": 11,
+        "fringe_only": 9,
+        "identified_local_fragment": 80,
+        "identity_conflict": 18,
+        "no_attributable_cells": 112
+      },
+      "unassigned_band_records": 18
+    },
+    "../force56-remainder/reader-F5-primary.json": {
+      "attested_read_blocks": 15,
+      "multiple_band_columns": 1,
+      "route_records": 230,
+      "selected_exact_white_cells": 0,
+      "statuses": {
+        "boundary_truncated": 11,
+        "fringe_only": 2,
+        "identified_local_fragment": 82,
+        "identity_conflict": 20,
+        "no_attributable_cells": 115
+      },
+      "unassigned_band_records": 21
+    },
+    "reader-peer.json": {
+      "attested_read_blocks": 16,
+      "multiple_band_columns": 3,
+      "route_records": 590,
+      "selected_exact_white_cells": 0,
+      "statuses": {
+        "boundary_truncated": 18,
+        "fringe_only": 15,
+        "identified_local_fragment": 132,
+        "identity_conflict": 62,
+        "no_attributable_cells": 363
+      },
+      "unassigned_band_records": 54
+    },
+    "reader-primary.json": {
+      "attested_read_blocks": 14,
+      "multiple_band_columns": 6,
+      "route_records": 590,
+      "selected_exact_white_cells": 0,
+      "statuses": {
+        "boundary_truncated": 16,
+        "fringe_only": 7,
+        "identified_local_fragment": 133,
+        "identity_conflict": 62,
+        "no_attributable_cells": 372
+      },
+      "unassigned_band_records": 68
+    }
+  },
+  "authority_path_compatibility": "The primary pinned the worktree charter. Both exact charter paths are pinned and their bytes are equal; main remains controlling. This does not establish a canonical-main read by the primary or permit other outside paths.",
+  "comparison_files": 2,
+  "comparison_summary": {
+    "routes": {
+      "class_different": 126,
+      "entries": 590,
+      "outer_different": 111
+    },
+    "selected_exact_white_cells": {
+      "peer": [],
+      "primary": []
+    },
+    "status_different": 43,
+    "visible_ink": {
+      "class_different": 129,
+      "entries": 295,
+      "outer_different": 114
+    }
+  },
+  "contexts": {
+    "contexts_byte_equal_within_batch": true,
+    "direct_source_records_checked": 73568,
+    "new_cells_per_copy": 26312,
+    "new_context_copies": 2,
+    "new_distinct_source_cells": 26312,
+    "old_F5_cells_per_copy": 10472,
+    "old_F5_context_copies": 2,
+    "overlap_cells_per_pairing": 10472,
+    "overlap_is_repeated_same_source_not_new_independent_evidence": true,
+    "overlap_pairings_checked": 4,
+    "source": "Im3.jpg",
+    "source_size": [
+      741,
+      88
+    ]
+  },
+  "controls": [
+    "manual_five_operations_native_extremes",
+    "one_cell_direct_source_check",
+    "wrong_width_rejected",
+    "wrong_mode_rejected",
+    "source_RGB_corruption_rejected",
+    "required_dependency_omission_rejected",
+    "outside_path_rejected",
+    "JSON_false_not_numeric_zero",
+    "corrupted_literal_readings_rejected",
+    "corrupted_prior_F5_readings_rejected",
+    "corrupted_summary_rejected",
+    "corrupted_route_set_rejected",
+    "corrupted_cross_pair_intersection_rejected",
+    "omitted_old_reader_script_rejected"
+  ],
+  "controls_count": 14,
+  "cross_pair_summary": [
+    {
+      "all_scope_outer_intersections": 70,
+      "f5_reader": "primary",
+      "f6_reader": "primary"
+    },
+    {
+      "all_scope_outer_intersections": 65,
+      "f5_reader": "peer",
+      "f6_reader": "primary"
+    },
+    {
+      "all_scope_outer_intersections": 73,
+      "f5_reader": "primary",
+      "f6_reader": "peer"
+    },
+    {
+      "all_scope_outer_intersections": 69,
+      "f5_reader": "peer",
+      "f6_reader": "peer"
+    }
+  ],
+  "environment": {
+    "pillow": "12.3.0",
+    "python": "3.12.14"
+  },
+  "fixed_primary_compatibility": "The frozen F6 primary may omit outgoing band unassigned_band_refs; any present value must be an empty list. Routes still require every reciprocal reference. Coverage rows/rows_covered/rows_inspected aliases must all be exact integer [0,87]. Originals remain unmodified.",
+  "independence": "Standalone direct Pillow source checks, native-row truth tables and cross-pair bit masks. No producer comparator, source helper or reader imports. Earlier independent checker inspected and adapted, pinned as a method reference.",
+  "input_pin_count": 55,
+  "input_pins_unchanged_after_check": true,
+  "inputs": {
+    "../../../../../../../../.codex/skills/evidence-falsification-auditor/SKILL.md": {
+      "bytes": 4215,
+      "sha256": "7894e7c6150319ec9591ec39ee1d11c3687f37deaf494d8a7c97b515f29c48a2"
+    },
+    "../../../../../../../../.codex/skills/evidence-falsification-auditor/references/claim-ledger-template.md": {
+      "bytes": 566,
+      "sha256": "daf05820e54f7b6aa622e60b8406505a9d838ea4b5e8bdff6d265af60f6d402c"
+    },
+    "../../../../../../../../.codex/skills/source-of-truth-guardian/SKILL.md": {
+      "bytes": 4218,
+      "sha256": "d283182d3b1f493001ad8952102ff70ebf4d7d0575cbfa1891a38df80e313ab5"
+    },
+    "../../../../../../../../.codex/skills/source-of-truth-guardian/references/audit-checklist.md": {
+      "bytes": 841,
+      "sha256": "b17b3fef9af6199f6efb0c7fc4ba772c2504cb76a28b4d0eecc4dfc0b8a78450"
+    },
+    "../../../../../../../911/AGENTS.md": {
+      "bytes": 15240,
+      "sha256": "934437bfc0ddbe522cc73461819593706d12c0644cb306d263d9f1fe3914a857"
+    },
+    "../../../../../../../911/START-HERE.md": {
+      "bytes": 6383,
+      "sha256": "b291da2b9ab3f1a8e9e69ff5a5d930c689ff2d45a6b2ce06a521e76295fbd560"
+    },
+    "../../../../../../../911/WORKFLOW.md": {
+      "bytes": 5868,
+      "sha256": "17c41f8e81bb419a5a740a4ec8bb1984cb29c381d26ff8d54cec679f6ac6637a"
+    },
+    "../../../../../../../911/research/sherlock-wtc7-investigation/CHARTER.md": {
+      "bytes": 24068,
+      "sha256": "54a4a23558a6b1ed756d3398e9e58d0972c6e531aadef5cd4027f29c4b9756bd"
+    },
+    "../../../../../AGENTS.md": {
+      "bytes": 3256,
+      "sha256": "0632c96247e3f9764e5046a8d5af6247733fb5c2a095c196e4347f89165e490a"
+    },
+    "../../../CHARTER.md": {
+      "bytes": 24068,
+      "sha256": "54a4a23558a6b1ed756d3398e9e58d0972c6e531aadef5cd4027f29c4b9756bd"
+    },
+    "../../HUMAN-REVIEW-GATE.md": {
+      "bytes": 2733,
+      "sha256": "5c739ea10b6fe51b719a10205cef52737ff74cc29d1431272dd5dfea90d92c71"
+    },
+    "../../NUMERICAL-PROTOCOL.md": {
+      "bytes": 6688,
+      "sha256": "e03c47c1945b9eb9fd0a040d757d5f5f66bf76791ced8944323d3c92d1120df3"
+    },
+    "../../native-strips01/Im1.jpg": {
+      "bytes": 9292,
+      "sha256": "929f5d00d2f9ab1eba27a4aad8af37320a4fd37f2455f9b51d750ec7e15e8139"
+    },
+    "../../native-strips01/Im3.jpg": {
+      "bytes": 13212,
+      "sha256": "af735345f189bba0eab7a836c5c0c6221ab30055febd81b52b331821fe87259b"
+    },
+    "../../remaining-route-inventory/force-reconciliation.json": {
+      "bytes": 2519,
+      "sha256": "9cb2c2003ab6eb014a665f1657fa2858dec9dffc383fbaa9e6e1fcef227e1222"
+    },
+    "../../remaining-route-inventory/reader-force.json": {
+      "bytes": 47501,
+      "sha256": "785eb5351c34c4bb7976333f9ecd8bf87d357165f315abfacf10bd7145df20d0"
+    },
+    "../../remaining-route-inventory/reader-root.json": {
+      "bytes": 30190,
+      "sha256": "4cf6791b358e89b19a47adfe0402d6825168a15b0060aea48d43e4eda4d22981"
+    },
+    "../../remaining-route-inventory/report.md": {
+      "bytes": 8080,
+      "sha256": "6b11307c467478130e9696f0fb28b603cef56ce00ad37b157ae1b96255f53e0b"
+    },
+    "../../render01/page-076.png": {
+      "bytes": 943120,
+      "sha256": "0835db6f0a138f5ddebfd6c4c81a857fda6e2da36379eeee1acbc3b5a9a6baf6"
+    },
+    "../PROTOCOL.md": {
+      "bytes": 5438,
+      "sha256": "2066edbe4f36d4eeb8e3be1695fdd72fe32f9649d779ea897e5e63358cb4fdbd"
+    },
+    "../approach34/compare.py": {
+      "bytes": 13177,
+      "sha256": "cb4a2da60959a4b0a40ddb4a072c1cbedf4624da63daf1a50b37db0eb2dd5bac"
+    },
+    "../approach34/read_context.py": {
+      "bytes": 5071,
+      "sha256": "384d0bef93d4bc05ed8cb10f5a6d27426ab983ffcb4a3e31d5ca84b116961ac3"
+    },
+    "../approach34/reader-E3-primary.py": {
+      "bytes": 9690,
+      "sha256": "02db3fc58aa93e1bd5f83e47d6a86d6cdf2f86815061075fc18d2b9087b7df5d"
+    },
+    "../force45/compare_force45.py": {
+      "bytes": 11626,
+      "sha256": "932792f49797c4034beb1124d8174a56c911319e17fa536e199f0709950557be"
+    },
+    "../force56-remainder/PROTOCOL-V2.md": {
+      "bytes": 1365,
+      "sha256": "181a5eda9115ffedd282ae1e83b05c55a07659d6e44b44378b2101388d458b28"
+    },
+    "../force56-remainder/PROTOCOL.md": {
+      "bytes": 4079,
+      "sha256": "1ad63b566212539b9a7011650264d0ac427357fc5d9042670eea6d750fcabedc"
+    },
+    "../force56-remainder/READERS.md": {
+      "bytes": 3332,
+      "sha256": "e2508d4ca55ea9e6f06fef260a7ab17613ecbe533be47376c5c63264c436da2f"
+    },
+    "../force56-remainder/compare.py": {
+      "bytes": 10642,
+      "sha256": "81dc892b21e891a9c11d2bc7697d1b936a497a91950584659e04fc718776313a"
+    },
+    "../force56-remainder/context01.json": {
+      "bytes": 1606454,
+      "sha256": "6289f98ee3ae3c89e894b10b8c5dd512e1b9d4716075ff6fe8a62900028b6ab5"
+    },
+    "../force56-remainder/context02.json": {
+      "bytes": 1606454,
+      "sha256": "6289f98ee3ae3c89e894b10b8c5dd512e1b9d4716075ff6fe8a62900028b6ab5"
+    },
+    "../force56-remainder/independent_check.py": {
+      "bytes": 34499,
+      "sha256": "326cd663a0e5bf8f9eefafb45d1421fa5f81056891a26228ad49168fc28665b0"
+    },
+    "../force56-remainder/read_context.py": {
+      "bytes": 4421,
+      "sha256": "7eb45a46ea63716e20b9b00dcc7b4757f6a3c021e25cc0c170c97e5cab46951b"
+    },
+    "../force56-remainder/read_context_v2.py": {
+      "bytes": 3898,
+      "sha256": "02bf4d365183f458ba3577a18ff638526a0c63e2742ec05b26c256cd1967e829"
+    },
+    "../force56-remainder/reader-F5-peer.json": {
+      "bytes": 161197,
+      "sha256": "dbed8ae98651c5fc21a4a11e2d97c6897ed609eac809e20b1638e376246de5f4"
+    },
+    "../force56-remainder/reader-F5-peer.py": {
+      "bytes": 13524,
+      "sha256": "7e5bf88b89275aab01f6c38e779b63f34ca4022b27af47660a8dab6198285565"
+    },
+    "../force56-remainder/reader-F5-primary.json": {
+      "bytes": 161437,
+      "sha256": "6ce861b44d73e09a88e3d79e754f7f2f41b9458a0baafb1630c22b2de3f2c2b3"
+    },
+    "../force56-remainder/reader-F5-primary.py": {
+      "bytes": 18455,
+      "sha256": "bf2f935905fc99d9c10c373fa8c0341f44d80390b06280480b63e27dd4df5282"
+    },
+    "../force69/compare_force69.py": {
+      "bytes": 8802,
+      "sha256": "f332359911f4d7bf5e768bf9e36b37ddb6995e857f6cf7ae5fa5456bb6dd4a6e"
+    },
+    "../read_context.py": {
+      "bytes": 4951,
+      "sha256": "da7d46400de924b75773646f34b7fba1d2284b50736d25395bb0a1c71e629c18"
+    },
+    "CONSUMER-COMPATIBILITY.md": {
+      "bytes": 2648,
+      "sha256": "6faa9f91d73199e10c76c5e0a522310510c85ee446a3184b8f70a55238741e5a"
+    },
+    "PROTOCOL.md": {
+      "bytes": 6231,
+      "sha256": "fe2abe1dcee3680c3046022f979db59b37c948a37212cdc84066f44724c6c0f7"
+    },
+    "READERS.md": {
+      "bytes": 2663,
+      "sha256": "bfa02c4cd1639efa1b90173c725651d32ad903350ccf1ab83640627756717a4f"
+    },
+    "compare.py": {
+      "bytes": 11427,
+      "sha256": "63dae6eb1e69ac974f4a065650440ac13f5fbb5f4cbfdd41b7bddad8f2076ce7"
+    },
+    "comparison01.json": {
+      "bytes": 2720586,
+      "sha256": "e6b1202512e0615e7f35bb4d7e843edfd9e73127278e12916c6ad11944103a02"
+    },
+    "comparison02.json": {
+      "bytes": 2720586,
+      "sha256": "e6b1202512e0615e7f35bb4d7e843edfd9e73127278e12916c6ad11944103a02"
+    },
+    "context01.json": {
+      "bytes": 3232288,
+      "sha256": "8cdcf742827f98c2c1cb4d2a7920d248bc4b5ff99e8194e8f6c006cb8990d024"
+    },
+    "context02.json": {
+      "bytes": 3232288,
+      "sha256": "8cdcf742827f98c2c1cb4d2a7920d248bc4b5ff99e8194e8f6c006cb8990d024"
+    },
+    "independent_check.py": {
+      "bytes": 35116,
+      "sha256": "d0eb3c11e38c135a51e6012d1ab549287ee9a9c245cd186cf8478e3eb5a2571b"
+    },
+    "read_context.py": {
+      "bytes": 4868,
+      "sha256": "f37c9f55ccdc69d6a3d83d01015cbe5eff7b1f2f8aea4febe6c40863812ae5ec"
+    },
+    "reader-peer.json": {
+      "bytes": 365573,
+      "sha256": "ab84ccc41a395414982489c8ef4e9d874908a4e79c6b08a84a6d3c651ba32f42"
+    },
+    "reader-peer.py": {
+      "bytes": 20137,
+      "sha256": "f1256c2a7a1944e84a9ba34139680a71dd4f3ac0060d353089d26e074c6db4c3"
+    },
+    "reader-primary.json": {
+      "bytes": 341477,
+      "sha256": "d53723cc3d1b86bdbaf5cbed2dec5690e18ddf67efad2dae323bc7905690a3e9"
+    },
+    "reader-primary.py": {
+      "bytes": 17734,
+      "sha256": "c39fafafc7fdc807b91c841eca12684a49e12dfb452f7a5323232fbbefb850e3"
+    },
+    "test_compare.py": {
+      "bytes": 9094,
+      "sha256": "ab75d37cffb1ab63171e4efe79e110e6bf9ae06856519ce332116a9fc63062ac"
+    },
+    "test_independent_check.py": {
+      "bytes": 16936,
+      "sha256": "c7c3cbb1c271c98d123f6a034f5352e543db76ec6670d11aad33701ff69f6d95"
+    }
+  },
+  "inputs_after": {
+    "../../../../../../../../.codex/skills/evidence-falsification-auditor/SKILL.md": {
+      "bytes": 4215,
+      "sha256": "7894e7c6150319ec9591ec39ee1d11c3687f37deaf494d8a7c97b515f29c48a2"
+    },
+    "../../../../../../../../.codex/skills/evidence-falsification-auditor/references/claim-ledger-template.md": {
+      "bytes": 566,
+      "sha256": "daf05820e54f7b6aa622e60b8406505a9d838ea4b5e8bdff6d265af60f6d402c"
+    },
+    "../../../../../../../../.codex/skills/source-of-truth-guardian/SKILL.md": {
+      "bytes": 4218,
+      "sha256": "d283182d3b1f493001ad8952102ff70ebf4d7d0575cbfa1891a38df80e313ab5"
+    },
+    "../../../../../../../../.codex/skills/source-of-truth-guardian/references/audit-checklist.md": {
+      "bytes": 841,
+      "sha256": "b17b3fef9af6199f6efb0c7fc4ba772c2504cb76a28b4d0eecc4dfc0b8a78450"
+    },
+    "../../../../../../../911/AGENTS.md": {
+      "bytes": 15240,
+      "sha256": "934437bfc0ddbe522cc73461819593706d12c0644cb306d263d9f1fe3914a857"
+    },
+    "../../../../../../../911/START-HERE.md": {
+      "bytes": 6383,
+      "sha256": "b291da2b9ab3f1a8e9e69ff5a5d930c689ff2d45a6b2ce06a521e76295fbd560"
+    },
+    "../../../../../../../911/WORKFLOW.md": {
+      "bytes": 5868,
+      "sha256": "17c41f8e81bb419a5a740a4ec8bb1984cb29c381d26ff8d54cec679f6ac6637a"
+    },
+    "../../../../../../../911/research/sherlock-wtc7-investigation/CHARTER.md": {
+      "bytes": 24068,
+      "sha256": "54a4a23558a6b1ed756d3398e9e58d0972c6e531aadef5cd4027f29c4b9756bd"
+    },
+    "../../../../../AGENTS.md": {
+      "bytes": 3256,
+      "sha256": "0632c96247e3f9764e5046a8d5af6247733fb5c2a095c196e4347f89165e490a"
+    },
+    "../../../CHARTER.md": {
+      "bytes": 24068,
+      "sha256": "54a4a23558a6b1ed756d3398e9e58d0972c6e531aadef5cd4027f29c4b9756bd"
+    },
+    "../../HUMAN-REVIEW-GATE.md": {
+      "bytes": 2733,
+      "sha256": "5c739ea10b6fe51b719a10205cef52737ff74cc29d1431272dd5dfea90d92c71"
+    },
+    "../../NUMERICAL-PROTOCOL.md": {
+      "bytes": 6688,
+      "sha256": "e03c47c1945b9eb9fd0a040d757d5f5f66bf76791ced8944323d3c92d1120df3"
+    },
+    "../../native-strips01/Im1.jpg": {
+      "bytes": 9292,
+      "sha256": "929f5d00d2f9ab1eba27a4aad8af37320a4fd37f2455f9b51d750ec7e15e8139"
+    },
+    "../../native-strips01/Im3.jpg": {
+      "bytes": 13212,
+      "sha256": "af735345f189bba0eab7a836c5c0c6221ab30055febd81b52b331821fe87259b"
+    },
+    "../../remaining-route-inventory/force-reconciliation.json": {
+      "bytes": 2519,
+      "sha256": "9cb2c2003ab6eb014a665f1657fa2858dec9dffc383fbaa9e6e1fcef227e1222"
+    },
+    "../../remaining-route-inventory/reader-force.json": {
+      "bytes": 47501,
+      "sha256": "785eb5351c34c4bb7976333f9ecd8bf87d357165f315abfacf10bd7145df20d0"
+    },
+    "../../remaining-route-inventory/reader-root.json": {
+      "bytes": 30190,
+      "sha256": "4cf6791b358e89b19a47adfe0402d6825168a15b0060aea48d43e4eda4d22981"
+    },
+    "../../remaining-route-inventory/report.md": {
+      "bytes": 8080,
+      "sha256": "6b11307c467478130e9696f0fb28b603cef56ce00ad37b157ae1b96255f53e0b"
+    },
+    "../../render01/page-076.png": {
+      "bytes": 943120,
+      "sha256": "0835db6f0a138f5ddebfd6c4c81a857fda6e2da36379eeee1acbc3b5a9a6baf6"
+    },
+    "../PROTOCOL.md": {
+      "bytes": 5438,
+      "sha256": "2066edbe4f36d4eeb8e3be1695fdd72fe32f9649d779ea897e5e63358cb4fdbd"
+    },
+    "../approach34/compare.py": {
+      "bytes": 13177,
+      "sha256": "cb4a2da60959a4b0a40ddb4a072c1cbedf4624da63daf1a50b37db0eb2dd5bac"
+    },
+    "../approach34/read_context.py": {
+      "bytes": 5071,
+      "sha256": "384d0bef93d4bc05ed8cb10f5a6d27426ab983ffcb4a3e31d5ca84b116961ac3"
+    },
+    "../approach34/reader-E3-primary.py": {
+      "bytes": 9690,
+      "sha256": "02db3fc58aa93e1bd5f83e47d6a86d6cdf2f86815061075fc18d2b9087b7df5d"
+    },
+    "../force45/compare_force45.py": {
+      "bytes": 11626,
+      "sha256": "932792f49797c4034beb1124d8174a56c911319e17fa536e199f0709950557be"
+    },
+    "../force56-remainder/PROTOCOL-V2.md": {
+      "bytes": 1365,
+      "sha256": "181a5eda9115ffedd282ae1e83b05c55a07659d6e44b44378b2101388d458b28"
+    },
+    "../force56-remainder/PROTOCOL.md": {
+      "bytes": 4079,
+      "sha256": "1ad63b566212539b9a7011650264d0ac427357fc5d9042670eea6d750fcabedc"
+    },
+    "../force56-remainder/READERS.md": {
+      "bytes": 3332,
+      "sha256": "e2508d4ca55ea9e6f06fef260a7ab17613ecbe533be47376c5c63264c436da2f"
+    },
+    "../force56-remainder/compare.py": {
+      "bytes": 10642,
+      "sha256": "81dc892b21e891a9c11d2bc7697d1b936a497a91950584659e04fc718776313a"
+    },
+    "../force56-remainder/context01.json": {
+      "bytes": 1606454,
+      "sha256": "6289f98ee3ae3c89e894b10b8c5dd512e1b9d4716075ff6fe8a62900028b6ab5"
+    },
+    "../force56-remainder/context02.json": {
+      "bytes": 1606454,
+      "sha256": "6289f98ee3ae3c89e894b10b8c5dd512e1b9d4716075ff6fe8a62900028b6ab5"
+    },
+    "../force56-remainder/independent_check.py": {
+      "bytes": 34499,
+      "sha256": "326cd663a0e5bf8f9eefafb45d1421fa5f81056891a26228ad49168fc28665b0"
+    },
+    "../force56-remainder/read_context.py": {
+      "bytes": 4421,
+      "sha256": "7eb45a46ea63716e20b9b00dcc7b4757f6a3c021e25cc0c170c97e5cab46951b"
+    },
+    "../force56-remainder/read_context_v2.py": {
+      "bytes": 3898,
+      "sha256": "02bf4d365183f458ba3577a18ff638526a0c63e2742ec05b26c256cd1967e829"
+    },
+    "../force56-remainder/reader-F5-peer.json": {
+      "bytes": 161197,
+      "sha256": "dbed8ae98651c5fc21a4a11e2d97c6897ed609eac809e20b1638e376246de5f4"
+    },
+    "../force56-remainder/reader-F5-peer.py": {
+      "bytes": 13524,
+      "sha256": "7e5bf88b89275aab01f6c38e779b63f34ca4022b27af47660a8dab6198285565"
+    },
+    "../force56-remainder/reader-F5-primary.json": {
+      "bytes": 161437,
+      "sha256": "6ce861b44d73e09a88e3d79e754f7f2f41b9458a0baafb1630c22b2de3f2c2b3"
+    },
+    "../force56-remainder/reader-F5-primary.py": {
+      "bytes": 18455,
+      "sha256": "bf2f935905fc99d9c10c373fa8c0341f44d80390b06280480b63e27dd4df5282"
+    },
+    "../force69/compare_force69.py": {
+      "bytes": 8802,
+      "sha256": "f332359911f4d7bf5e768bf9e36b37ddb6995e857f6cf7ae5fa5456bb6dd4a6e"
+    },
+    "../read_context.py": {
+      "bytes": 4951,
+      "sha256": "da7d46400de924b75773646f34b7fba1d2284b50736d25395bb0a1c71e629c18"
+    },
+    "CONSUMER-COMPATIBILITY.md": {
+      "bytes": 2648,
+      "sha256": "6faa9f91d73199e10c76c5e0a522310510c85ee446a3184b8f70a55238741e5a"
+    },
+    "PROTOCOL.md": {
+      "bytes": 6231,
+      "sha256": "fe2abe1dcee3680c3046022f979db59b37c948a37212cdc84066f44724c6c0f7"
+    },
+    "READERS.md": {
+      "bytes": 2663,
+      "sha256": "bfa02c4cd1639efa1b90173c725651d32ad903350ccf1ab83640627756717a4f"
+    },
+    "compare.py": {
+      "bytes": 11427,
+      "sha256": "63dae6eb1e69ac974f4a065650440ac13f5fbb5f4cbfdd41b7bddad8f2076ce7"
+    },
+    "comparison01.json": {
+      "bytes": 2720586,
+      "sha256": "e6b1202512e0615e7f35bb4d7e843edfd9e73127278e12916c6ad11944103a02"
+    },
+    "comparison02.json": {
+      "bytes": 2720586,
+      "sha256": "e6b1202512e0615e7f35bb4d7e843edfd9e73127278e12916c6ad11944103a02"
+    },
+    "context01.json": {
+      "bytes": 3232288,
+      "sha256": "8cdcf742827f98c2c1cb4d2a7920d248bc4b5ff99e8194e8f6c006cb8990d024"
+    },
+    "context02.json": {
+      "bytes": 3232288,
+      "sha256": "8cdcf742827f98c2c1cb4d2a7920d248bc4b5ff99e8194e8f6c006cb8990d024"
+    },
+    "independent_check.py": {
+      "bytes": 35116,
+      "sha256": "d0eb3c11e38c135a51e6012d1ab549287ee9a9c245cd186cf8478e3eb5a2571b"
+    },
+    "read_context.py": {
+      "bytes": 4868,
+      "sha256": "f37c9f55ccdc69d6a3d83d01015cbe5eff7b1f2f8aea4febe6c40863812ae5ec"
+    },
+    "reader-peer.json": {
+      "bytes": 365573,
+      "sha256": "ab84ccc41a395414982489c8ef4e9d874908a4e79c6b08a84a6d3c651ba32f42"
+    },
+    "reader-peer.py": {
+      "bytes": 20137,
+      "sha256": "f1256c2a7a1944e84a9ba34139680a71dd4f3ac0060d353089d26e074c6db4c3"
+    },
+    "reader-primary.json": {
+      "bytes": 341477,
+      "sha256": "d53723cc3d1b86bdbaf5cbed2dec5690e18ddf67efad2dae323bc7905690a3e9"
+    },
+    "reader-primary.py": {
+      "bytes": 17734,
+      "sha256": "c39fafafc7fdc807b91c841eca12684a49e12dfb452f7a5323232fbbefb850e3"
+    },
+    "test_compare.py": {
+      "bytes": 9094,
+      "sha256": "ab75d37cffb1ab63171e4efe79e110e6bf9ae06856519ce332116a9fc63062ac"
+    },
+    "test_independent_check.py": {
+      "bytes": 16936,
+      "sha256": "c7c3cbb1c271c98d123f6a034f5352e543db76ec6670d11aad33701ff69f6d95"
+    }
+  },
+  "legacy_metadata_compatibility": "The preserved F5 originals may carry optional band-only other_possible_origins (list of nonempty strings) and continuity_claim:false. Their original fields are preserved exactly, not stripped; these optional fields are not added to the F6 schema.",
+  "limits": "Same-source overlap and AI reader arithmetic only. No semantic ownership, continuity, pre-raster enclosure, physical support, human acceptance, metric, model discrepancy or historical cause validation. Pillow decoding is not an independent JPEG decoder.",
+  "literal_replay_limit": "This checker does not execute reader build(). Coordinator literal-build reproduction remains separately evidenced. Saved reading attestations are checked for bookkeeping, not independently witnessed perception.",
+  "operation_arrays_checked": 26910,
+  "required_comparison_dependency_count": 50,
+  "status": "pass_native_cell_bookkeeping_only"
+}

@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-08",
+  "status": "partial_F9_Im0_computational_audit_passed",
+  "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/force69",
+  "annotation_region_scope": [
+    "F9-Im0"
+  ],
+  "full_fixed_batch_annotation_audit": false,
+  "controls": {
+    "synthetic_only_unittest_methods": 20,
+    "commands": [
+      {
+        "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_force69.py",
+        "receipt": "ba1053",
+        "exit_code": 0,
+        "result": "Initial 19 synthetic-only tests passed; no historical output was run"
+      },
+      {
+        "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_force69.py",
+        "receipt": "33c4ab",
+        "exit_code": 0,
+        "result": "Final 20 synthetic-only tests passed before first historical replay; added peer membership/candidate expansion test"
+      }
+    ]
+  },
+  "historical_runs": [
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-force69-check.py --region F9-Im0 --output independent-comparison-force69-F9-Im0-check01.json",
+      "receipt": "d83f2a",
+      "exit_code": 0
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-force69-check.py --region F9-Im0 --output independent-comparison-force69-F9-Im0-check02.json",
+      "receipt": "e7a4e2",
+      "exit_code": 0
+    },
+    {
+      "command": "Bundled Python read-only script/test/output hashes and lengths, exact audit-byte equality, selected counts and source whitespace check",
+      "receipt": "9a65c9",
+      "exit_code": 0
+    }
+  ],
+  "read_only_replay_command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-force69-check.py --region F9-Im0",
+  "command_metadata_limitation": "The internal audit command field records the base executable/script only and omits --region F9-Im0. Use read_only_replay_command here for this partial audit. Frozen source and outputs remain unchanged; a future version must include scope in its command field.",
+  "artifacts": {
+    "independent-comparison-force69-check.py": {
+      "sha256": "a0962601b354ead66ee7ed021ac58b80abc56136f7596495cf131535dcf129f6",
+      "bytes": 42478
+    },
+    "test_independent_comparison_force69.py": {
+      "sha256": "24ce596a6a320902e67e9370bb87170fadc0ea2e4661b4f9cebd537a210a6950",
+      "bytes": 17962
+    },
+    "independent-comparison-force69-F9-Im0-check01.json": {
+      "sha256": "95fc5f822443d01557328ee6356295f0c4a617acf58f3e66050162e8bda42de0",
+      "bytes": 25567
+    },
+    "independent-comparison-force69-F9-Im0-check02.json": {
+      "sha256": "95fc5f822443d01557328ee6356295f0c4a617acf58f3e66050162e8bda42de0",
+      "bytes": 25567
+    }
+  },
+  "counts": {
+    "reader_route_records": 420,
+    "reader_band_records": 210,
+    "paired_route_comparisons": 210,
+    "all_ink_columns": 105,
+    "set_operations": 4725,
+    "selected_cells": {
+      "primary": 390,
+      "peer": 351
+    },
+    "selected_exact_white": {
+      "primary": 0,
+      "peer": 0
+    },
+    "source_context_records": 62231,
+    "prior_force45_artifact_pins_preserved": 41
+  },
+  "verified": [
+    "F9-Im0 literal script metadata and every record independently reconstructed from inert AST data; no excluded fields.",
+    "Every literal run is bounds/type/member checked, including runs the primary producer might otherwise ignore outside its target.",
+    "Explicit candidate_routes, fragment-owner unions, bidirectional route references, actual selected-cell boundary flags, and model/band partitions checked.",
+    "Primary coverage rebuilt from inclusive columns and rows; peer coverage rebuilt from the union of source-specific receipt boxes with reused RGB equality.",
+    "All 15 set operations per route/all-ink comparison reproduced through integer membership truth tables; every original record and metadata field retained.",
+    "Every source-context RGB record independently decoded and compared; all dependency and prior pins checked before and after; reader/comparison/audit repeats identical."
+  ],
+  "independence": {
+    "producer_imports": false,
+    "producer_execution": false,
+    "producer_selection_or_expansion_execution": false,
+    "comparator_execution": false,
+    "method": "Inert AST data parsing; separately implemented expansion, record validation, coverage union, raw RGB check, and truth-table arithmetic.",
+    "source": "Adapted from the prior force45 independent checker, adding the force69 primary and peer representation contracts and explicit candidate-route semantics.",
+    "author_limit": "Checker author also adapted the raw-context producer and raw-context checker; this annotation/comparison checker is separate from the annotation readers and comparator author.",
+    "runtime": "Python 3.12.14 / Pillow 12.3.0",
+    "codec_limit": "Same Pillow family; not independent codec validation.",
+    "other_new_annotation_regions_read": false
+  },
+  "review_findings_before_historical_comparison": [
+    {
+      "finding": "Missing candidate_routes accepted as []",
+      "demonstration_receipt": "26e64a",
+      "status": "Root fixed comparator before comparison saves; original comparator preserved"
+    },
+    {
+      "finding": "Empty band identity_conflict accepted",
+      "demonstration_receipt": "400644",
+      "status": "Root fixed comparator before comparison saves; F9 frozen readings had no such entries"
+    },
+    {
+      "finding": "Peer exporter expander_pin absent from comparator checks/dependencies",
+      "status": "Root fixed before comparison saves; checker independently checks helper pin"
+    }
+  ],
+  "failures_and_repairs": [],
+  "preservation": "These checker/test source filenames and partial audit outputs are frozen. Later regions require a new checker/test filename or separate frozen input data; do not alter these files.",
+  "limits": [
+    "Only F9-Im0 annotations/comparisons are audited here; other five annotation regions remain uninspected by this checker author.",
+    "The complete 62,231-cell raw context audit is not completion of other annotation regions.",
+    "Same-source, prior-informed computational audit; no new visual annotation, human acceptance, or expert review.",
+    "Recorded viewing and reading coverage are internally checked, not independently witnessed.",
+    "Counts include repeated and overlapping positions and are not independent historical observations.",
+    "No source authenticity, calibrated curve bounds, physical ordinate, model fidelity, seam join, causal ranking, legal promotion, solver or publication follows."
+  ],
+  "human_accepted": false,
+  "physical_support": null
+}

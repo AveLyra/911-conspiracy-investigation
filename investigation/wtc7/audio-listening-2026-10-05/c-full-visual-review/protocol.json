@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-07",
+  "status": "prospectively_declared_extension_with_prior_partial_familiarity",
+  "scope": "WP2/Q07: full excerpt C image coverage and scene-transition screening. No new listening, acoustic classification, physical-event clock or causal ranking.",
+  "reason": "Previous every-frame interval [434,443) excludes the user's approximate bang at local13/track443 and dialogue at local17/track447. Preserve the prior audit unchanged.",
+  "source_id": "VID-WTC7-006",
+  "source_sha256": "1ea6063dac3847ee01969987bcee66991056d85ad61839ec301fb888a4456d87",
+  "source_bytes": 124393041,
+  "interval_half_open_track_seconds": [430,455],
+  "selection": "Every presented frame with exact source PTS in [430,455). Expected750, indices12900..13649 and t=index/30. Reject discrepancy rather than silently reconstruct cadence.",
+  "image_contract": "Preserve source1280x720 raster in RGB PNG, no autorotation, autoscaling, interpolation, stabilization or crop. RGB decoding is not colorimetric calibration.",
+  "viewing_plan": {
+    "overview": "Root and separate computational reviewer inspect all25 labeled sheets,30frames each. These are320x180 previews, not native-pixel measurements.",
+    "fixed_native": "Both inspect every integer-second frame430 through454 inclusive:25 full1280x720 PNGs. These include nominal user markers435,443,447 without claiming exact auditory onset.",
+    "transition_native": "After overview screening, inspect both adjacent native frames of every candidate abrupt scene replacement in this interval; freeze candidate indices before those views. Ambiguous reframe versus edit stays ambiguous.",
+    "independence": "Same source and shared project context; separate computational assessment, not blind, human or qualified-expert review. Root freezes own initial scene notes before receiving reviewer interpretation."
+  },
+  "verification": [
+    "Pin source, protocol, wrapper, existing extraction helper and its helper before and after execution; pin runtime and decoder binaries.",
+    "Reuse existing exact-PTS selection/extraction with its deterministic synthetic RGB fixtures, including nonzero start and missing-bin rejection, before historical extraction.",
+    "Check full source probe against decoder showinfo, exact selected indices/PTS, PNG dimensions/mode and all750 frame hashes.",
+    "Repeat extraction into fresh run02; require equality of historical frame PNGs, selection maps and overview sheets. Synthetic container bytes may differ; require identical fixture pixel outputs and timing maps.",
+    "Compare all270 overlapping old [434,443) PNG hashes by original source_index.",
+    "Test existing-output refusal and verify existing receipt remains unchanged. Keep all failures and diagnostics local.",
+    "Separate reviewer independently checks coverage and overlaps without importing root wrapper."
+  ],
+  "acceptance": "Complete declared image coverage, source-integrity and reproduction checks, explicit viewed-frame coverage, scene/visibility observations tied to exact access-copy coordinates, and independent-review disposition. A successfully decoded packet alone is not completed visual review.",
+  "inference_limits": [
+    "Video-only compilation access copy and separately acquired soundtrack do not establish original microphone synchronization or continuous historical time.",
+    "User times5,13,17 are approximate navigation markers with unspecified uncertainty, not precise sound onsets.",
+    "A cut does not establish fabricated sound, missing event duration or deceptive intent. Dust/cloud imagery does not identify its physical cause or building without separate evidence.",
+    "Failure to recognize motion or a flash in previews is not a calibrated nondetection; no explosive/nonexplosive verdict follows."
+  ],
+  "boundaries": "Local research worktree only; no old-output/source edits, legal promotion, Sherlock acceptance, bridge invocation, transmission, commit or push."
+}

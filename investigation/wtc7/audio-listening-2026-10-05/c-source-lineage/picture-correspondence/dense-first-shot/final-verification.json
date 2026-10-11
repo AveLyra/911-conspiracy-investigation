@@ -1,0 +1,233 @@
+{
+  "status": "complete",
+  "before": {
+    "PROTOCOL.md": {
+      "sha256": "ad29e35bec245770f3bb7308192a17861cc22cbb4638c7b53762d585834bec07",
+      "bytes": 6782
+    },
+    "config.json": {
+      "sha256": "302856529366721965a09a7ae0216548a3edec013e5a1f694a1fbb3d2263c590",
+      "bytes": 1549
+    },
+    "preparation-review.json": {
+      "sha256": "0fe1e638c42219956dc69894bc0c4967b48b1942064de67c07a3a5807046c209",
+      "bytes": 12138
+    },
+    "extract_dense.py": {
+      "sha256": "fbe5e249fcc91028e56bb5421b04a589e5128726808b6925e08c8717519996ab",
+      "bytes": 6587
+    },
+    "dense_screen.py": {
+      "sha256": "947dec69c5f8fa690f2d07bdf15859c5ef685841282ae090beadc272f6fff321",
+      "bytes": 10706
+    },
+    "test_dense_screen.py": {
+      "sha256": "8a78537f1cf73d0db2f8b19a83f99bb00b565a675eb2114c684069407a355e6a",
+      "bytes": 5421
+    },
+    "independent_check.py": {
+      "sha256": "9866921fa63dd4384a9e1a029d2805982893a35629eeff6429ea58ff0b949453",
+      "bytes": 15660
+    },
+    "extraction-check.json": {
+      "sha256": "61bb3f86987a4fe24ebbf8c01e0a05b92f57b115da5a3c2c9115ad970939218f",
+      "bytes": 3674
+    },
+    "independent-check.json": {
+      "sha256": "c69097859948d15da433eed49e3eec09cc5354460eb3f48cc830f478074dadaa",
+      "bytes": 455812
+    },
+    "root-observations.json": {
+      "sha256": "27034a13f79bb62c4a853405e82ea7c419199be3267143ed6e9ae47d493a0ea2",
+      "bytes": 4674
+    },
+    "independent-visual-review.json": {
+      "sha256": "405ce7b2b3d8a5bd7b542e794565fa5da9787b1bd829173ccad2f2151194978d",
+      "bytes": 30917
+    },
+    "report.md": {
+      "sha256": "fbb9a12224252b04a5c15b16d73b1d21941a999d888ef3c8cdce790500511644",
+      "bytes": 9657
+    },
+    "final_verify.py": {
+      "sha256": "5ff613c5df18df6baea148c16b40a1aa5667000fcc2e3ab14dba775b394d0318",
+      "bytes": 4592
+    }
+  },
+  "python": "/Users/admin/.pyenv/versions/3.13.7/bin/python3",
+  "synthetic_replay": {
+    "pearson_gain_offset": true,
+    "pearson_inversion": true,
+    "flat_null": true,
+    "small_mask_null": true,
+    "coverage_null": true,
+    "full_native_mask": true,
+    "half_native_mask": true,
+    "canvas_0.75": true,
+    "canvas_1": true,
+    "canvas_1.75": true
+  },
+  "score_replay": {
+    "pairs": 720,
+    "input_images": 243,
+    "selected_transform_checks": 1440,
+    "dynamic_nulls": 196,
+    "max_absolute_score_error": 1.5543122344752192e-15,
+    "max_absolute_coverage_error": 4.440892098500626e-16,
+    "two_run_products": 723,
+    "ranking_groups": 3
+  },
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,width,height",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/media/SIbqaybkbWI.f133.mp4"
+      ],
+      "exit": 0,
+      "stderr_utf8": "",
+      "stdout_bytes": 113376,
+      "stdout_sha256": "edc66934c201d28fdf0fb91f0571b912187c29942b7f2d5c80b3c78b0a242d57"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/media/SIbqaybkbWI.f133.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-fps_mode",
+        "passthrough",
+        "-pix_fmt",
+        "rgb24",
+        "-f",
+        "rawvideo",
+        "pipe:1"
+      ],
+      "exit": 0,
+      "stderr_utf8": "",
+      "stdout_bytes": 242995200,
+      "stdout_sha256": "27b721d813fab0280a5dfd6fbcfe6db454af25da3cccc905cb88097ebf7c53fa"
+    }
+  ],
+  "extraction_replay": {
+    "full_decoded_frames": 1130,
+    "selected_indices": [
+      300,
+      539
+    ],
+    "selected_frames_per_run": 240,
+    "selected_png_pixel_comparisons": 480,
+    "coarse_exact_overlaps": 8,
+    "historical_equal_products": 251,
+    "source_before": {
+      "sha256": "3f6db089b0e89cdfc030f6aaaf81227931681d26e0bd3c801b98cdcf486ba0d7",
+      "bytes": 758909
+    },
+    "source_after": {
+      "sha256": "3f6db089b0e89cdfc030f6aaaf81227931681d26e0bd3c801b98cdcf486ba0d7",
+      "bytes": 758909
+    },
+    "maps": [
+      {
+        "sha256": "846d8155bac947d30bb981373a1f879500672376800c8b94e634bafc48094a29",
+        "bytes": 93188
+      },
+      {
+        "sha256": "846d8155bac947d30bb981373a1f879500672376800c8b94e634bafc48094a29",
+        "bytes": 93188
+      }
+    ],
+    "synthetic_checks_per_run": 6,
+    "limitations": "Same installed decoder; full sequential decode rather than selection helper. No original-camera exposure/custody inference."
+  },
+  "coarse_overlap": {
+    "rows_transforms": 24,
+    "identical_npz_files": 24
+  },
+  "existing_output_refusal": {
+    "argv": [
+      "/Users/admin/.pyenv/versions/3.13.7/bin/python3",
+      "-B",
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/picture-correspondence/dense-first-shot/dense_screen.py",
+      "screen",
+      "--run",
+      "screen01",
+      "--controls",
+      "controls01"
+    ],
+    "exit": 1,
+    "expected_exception": "FileExistsError",
+    "preserved_files": 725
+  },
+  "json_files_parsed_before_receipt": 46,
+  "report_local_links": 10,
+  "after": {
+    "PROTOCOL.md": {
+      "sha256": "ad29e35bec245770f3bb7308192a17861cc22cbb4638c7b53762d585834bec07",
+      "bytes": 6782
+    },
+    "config.json": {
+      "sha256": "302856529366721965a09a7ae0216548a3edec013e5a1f694a1fbb3d2263c590",
+      "bytes": 1549
+    },
+    "preparation-review.json": {
+      "sha256": "0fe1e638c42219956dc69894bc0c4967b48b1942064de67c07a3a5807046c209",
+      "bytes": 12138
+    },
+    "extract_dense.py": {
+      "sha256": "fbe5e249fcc91028e56bb5421b04a589e5128726808b6925e08c8717519996ab",
+      "bytes": 6587
+    },
+    "dense_screen.py": {
+      "sha256": "947dec69c5f8fa690f2d07bdf15859c5ef685841282ae090beadc272f6fff321",
+      "bytes": 10706
+    },
+    "test_dense_screen.py": {
+      "sha256": "8a78537f1cf73d0db2f8b19a83f99bb00b565a675eb2114c684069407a355e6a",
+      "bytes": 5421
+    },
+    "independent_check.py": {
+      "sha256": "9866921fa63dd4384a9e1a029d2805982893a35629eeff6429ea58ff0b949453",
+      "bytes": 15660
+    },
+    "extraction-check.json": {
+      "sha256": "61bb3f86987a4fe24ebbf8c01e0a05b92f57b115da5a3c2c9115ad970939218f",
+      "bytes": 3674
+    },
+    "independent-check.json": {
+      "sha256": "c69097859948d15da433eed49e3eec09cc5354460eb3f48cc830f478074dadaa",
+      "bytes": 455812
+    },
+    "root-observations.json": {
+      "sha256": "27034a13f79bb62c4a853405e82ea7c419199be3267143ed6e9ae47d493a0ea2",
+      "bytes": 4674
+    },
+    "independent-visual-review.json": {
+      "sha256": "405ce7b2b3d8a5bd7b542e794565fa5da9787b1bd829173ccad2f2151194978d",
+      "bytes": 30917
+    },
+    "report.md": {
+      "sha256": "fbb9a12224252b04a5c15b16d73b1d21941a999d888ef3c8cdce790500511644",
+      "bytes": 9657
+    },
+    "final_verify.py": {
+      "sha256": "5ff613c5df18df6baea148c16b40a1aa5667000fcc2e3ab14dba775b394d0318",
+      "bytes": 4592
+    }
+  },
+  "elapsed_s": 25.750097625073977
+}

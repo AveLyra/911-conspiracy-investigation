@@ -1,0 +1,279 @@
+{
+  "checker_role": "same-source nonblind AI computational check; no ink classification or image viewing",
+  "declared_pin_count": 8,
+  "independent_parser_control_count": 10,
+  "independent_parser_controls": {
+    "bad_channel": true,
+    "dark_retained": true,
+    "duplicate_column": true,
+    "duplicate_row": true,
+    "exact_white_recovered": true,
+    "missing_column": true,
+    "near_white_retained": true,
+    "out_of_order_rows": true,
+    "outside_row": true,
+    "white_not_omitted": true
+  },
+  "inputs": {
+    "../../native-strips01/Im10.jpg": {
+      "bytes": 9704,
+      "sha256": "fe8c069f4bb7a19f6eb996b42b266c55552a110f8e9cbc6e9cc0d7269547cdd3"
+    },
+    "../../native-strips01/Im9.jpg": {
+      "bytes": 10344,
+      "sha256": "3154e28ea82ca2f39c465a7bdfe367677216543df296cf918cbbd259248f8129"
+    },
+    "../../render01/page-076.png": {
+      "bytes": 943120,
+      "sha256": "0835db6f0a138f5ddebfd6c4c81a857fda6e2da36379eeee1acbc3b5a9a6baf6"
+    },
+    "../PROTOCOL.md": {
+      "bytes": 5438,
+      "sha256": "2066edbe4f36d4eeb8e3be1695fdd72fe32f9649d779ea897e5e63358cb4fdbd"
+    },
+    "../REGIONS.json": {
+      "bytes": 3084,
+      "sha256": "ad6ec930f70e367028624bb3e497944147902b9817e5690e4980ea2ebeb2c131"
+    },
+    "../read_context.py": {
+      "bytes": 4951,
+      "sha256": "da7d46400de924b75773646f34b7fba1d2284b50736d25395bb0a1c71e629c18"
+    },
+    "PROTOCOL.md": {
+      "bytes": 4557,
+      "sha256": "be57860a830ab716498ba5d25733021c1c975da1b0427f50f64071af4eaf5f16"
+    },
+    "context01.json": {
+      "bytes": 3276538,
+      "sha256": "59cef4cee1a54d66dacd4e2846e12a12d7b47c8091285ae8f68d8899bf6f2e48"
+    },
+    "context02.json": {
+      "bytes": 3276538,
+      "sha256": "59cef4cee1a54d66dacd4e2846e12a12d7b47c8091285ae8f68d8899bf6f2e48"
+    },
+    "read_context.py": {
+      "bytes": 3631,
+      "sha256": "67e6788059653ba5d1e3eb18302e46bbc4299149646a8fed1516416dd7d1fe22"
+    }
+  },
+  "inputs_after": {
+    "../../native-strips01/Im10.jpg": {
+      "bytes": 9704,
+      "sha256": "fe8c069f4bb7a19f6eb996b42b266c55552a110f8e9cbc6e9cc0d7269547cdd3"
+    },
+    "../../native-strips01/Im9.jpg": {
+      "bytes": 10344,
+      "sha256": "3154e28ea82ca2f39c465a7bdfe367677216543df296cf918cbbd259248f8129"
+    },
+    "../../render01/page-076.png": {
+      "bytes": 943120,
+      "sha256": "0835db6f0a138f5ddebfd6c4c81a857fda6e2da36379eeee1acbc3b5a9a6baf6"
+    },
+    "../PROTOCOL.md": {
+      "bytes": 5438,
+      "sha256": "2066edbe4f36d4eeb8e3be1695fdd72fe32f9649d779ea897e5e63358cb4fdbd"
+    },
+    "../REGIONS.json": {
+      "bytes": 3084,
+      "sha256": "ad6ec930f70e367028624bb3e497944147902b9817e5690e4980ea2ebeb2c131"
+    },
+    "../read_context.py": {
+      "bytes": 4951,
+      "sha256": "da7d46400de924b75773646f34b7fba1d2284b50736d25395bb0a1c71e629c18"
+    },
+    "PROTOCOL.md": {
+      "bytes": 4557,
+      "sha256": "be57860a830ab716498ba5d25733021c1c975da1b0427f50f64071af4eaf5f16"
+    },
+    "context01.json": {
+      "bytes": 3276538,
+      "sha256": "59cef4cee1a54d66dacd4e2846e12a12d7b47c8091285ae8f68d8899bf6f2e48"
+    },
+    "context02.json": {
+      "bytes": 3276538,
+      "sha256": "59cef4cee1a54d66dacd4e2846e12a12d7b47c8091285ae8f68d8899bf6f2e48"
+    },
+    "read_context.py": {
+      "bytes": 3631,
+      "sha256": "67e6788059653ba5d1e3eb18302e46bbc4299149646a8fed1516416dd7d1fe22"
+    }
+  },
+  "limits": [
+    "The independent checker does not import producer functions. It runs the producer show command only as a black-box output under test; that command internally reuses the frozen parent helper.",
+    "The saved producer used Pillow 12.0.0 and this checker uses Pillow 12.3.0. Both use the Pillow decoder family; this is not validation by an independent decoder implementation.",
+    "No source images were visually inspected and no curve ink/model identity, annotation, support, uncertainty envelope, physical ordinate or human acceptance was evaluated.",
+    "The composed-page file is hash-checked only; its rendering and visual correspondence were not re-evaluated.",
+    "Historical context cells are checked in both saved files through proven byte identity; fresh per-cell comparison traverses context01 once."
+  ],
+  "pair_results": {
+    "E3": {
+      "checked_cells": 11186,
+      "context_box": [
+        363,
+        28,
+        692,
+        62
+      ],
+      "display_columns": 329,
+      "display_exit_code": 0,
+      "display_roundtrip": "all match source with exact-white default only",
+      "display_stdout_bytes": 26515,
+      "display_stdout_sha256": "52a17ef781f37c818831833ac570e7675775ffcbbc1bb9802b5174286e7de679",
+      "exact_white_omitted": 9454,
+      "near_white_nonwhite_retained": 168,
+      "nonwhite_shown": 1732,
+      "ordering": "complete unique row-major y then x",
+      "pixel_comparison": "all match fresh decoded RGB byte offsets",
+      "source": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-strips01/Im10.jpg",
+      "source_representation": "RGB 745x92",
+      "target_box": [
+        365,
+        30,
+        690,
+        60
+      ]
+    },
+    "E4": {
+      "checked_cells": 5588,
+      "context_box": [
+        438,
+        70,
+        692,
+        92
+      ],
+      "display_columns": 254,
+      "display_exit_code": 0,
+      "display_roundtrip": "all match source with exact-white default only",
+      "display_stdout_bytes": 48334,
+      "display_stdout_sha256": "643e2da3cf03383b996e59b7840ca9d541ac91774829c482e3c6f56d0b9c02ef",
+      "exact_white_omitted": 2451,
+      "near_white_nonwhite_retained": 337,
+      "nonwhite_shown": 3137,
+      "ordering": "complete unique row-major y then x",
+      "pixel_comparison": "all match fresh decoded RGB byte offsets",
+      "source": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-strips01/Im9.jpg",
+      "source_representation": "RGB 745x92",
+      "target_box": [
+        440,
+        72,
+        690,
+        92
+      ]
+    },
+    "E5": {
+      "checked_cells": 9867,
+      "context_box": [
+        393,
+        16,
+        692,
+        49
+      ],
+      "display_columns": 299,
+      "display_exit_code": 0,
+      "display_roundtrip": "all match source with exact-white default only",
+      "display_stdout_bytes": 78426,
+      "display_stdout_sha256": "506854e7dc710a0ec9a7d81dbb420c5fb64acd1e4f0c0f681b93cb95640a672d",
+      "exact_white_omitted": 4688,
+      "near_white_nonwhite_retained": 955,
+      "nonwhite_shown": 5179,
+      "ordering": "complete unique row-major y then x",
+      "pixel_comparison": "all match fresh decoded RGB byte offsets",
+      "source": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-strips01/Im9.jpg",
+      "source_representation": "RGB 745x92",
+      "target_box": [
+        395,
+        18,
+        690,
+        47
+      ]
+    }
+  },
+  "pillow": "12.3.0",
+  "python": "3.12.14",
+  "read_only_display_commands": [
+    [
+      "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/energy345/read_context.py",
+      "show",
+      "--pair",
+      "E3",
+      "--first",
+      "363",
+      "--last",
+      "691"
+    ],
+    [
+      "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/energy345/read_context.py",
+      "show",
+      "--pair",
+      "E4",
+      "--first",
+      "438",
+      "--last",
+      "691"
+    ],
+    [
+      "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/energy345/read_context.py",
+      "show",
+      "--pair",
+      "E5",
+      "--first",
+      "393",
+      "--last",
+      "691"
+    ]
+  ],
+  "repeat_bytes_equal": true,
+  "repeat_structure_equal": true,
+  "saved_producer_runtime": {
+    "pillow": "12.0.0",
+    "python": "3.13.7"
+  },
+  "status": "passed",
+  "total_checked_cells": 26641,
+  "created_date": "2026-10-07",
+  "independent_check_execution": {
+    "argv": [
+      "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "-c",
+      "import hashlib,json,os,platform,re,subprocess,sys\nfrom pathlib import Path\nfrom PIL import Image,__version__ as pillow_version\nD=Path(\"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/energy345\")\ndef pin(p):\n    b=p.read_bytes()\n    return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}\ndef require(ok,label):\n    if not ok: raise AssertionError(label)\nexpected={\n'../read_context.py':'da7d46400de924b75773646f34b7fba1d2284b50736d25395bb0a1c71e629c18',\n'../PROTOCOL.md':'2066edbe4f36d4eeb8e3be1695fdd72fe32f9649d779ea897e5e63358cb4fdbd',\n'../REGIONS.json':'ad6ec930f70e367028624bb3e497944147902b9817e5690e4980ea2ebeb2c131',\n'PROTOCOL.md':'be57860a830ab716498ba5d25733021c1c975da1b0427f50f64071af4eaf5f16',\n'../../native-strips01/Im9.jpg':'3154e28ea82ca2f39c465a7bdfe367677216543df296cf918cbbd259248f8129',\n'../../native-strips01/Im10.jpg':'fe8c069f4bb7a19f6eb996b42b266c55552a110f8e9cbc6e9cc0d7269547cdd3',\n'../../render01/page-076.png':'0835db6f0a138f5ddebfd6c4c81a857fda6e2da36379eeee1acbc3b5a9a6baf6',\n'read_context.py':'67e6788059653ba5d1e3eb18302e46bbc4299149646a8fed1516416dd7d1fe22',\n'context01.json':'59cef4cee1a54d66dacd4e2846e12a12d7b47c8091285ae8f68d8899bf6f2e48',\n'context02.json':'59cef4cee1a54d66dacd4e2846e12a12d7b47c8091285ae8f68d8899bf6f2e48'}\nbefore={p:pin(D/p) for p in expected}\nfor p,h in expected.items(): require(before[p]['sha256']==h,'frozen pin '+p)\nraw1=(D/'context01.json').read_bytes();raw2=(D/'context02.json').read_bytes()\nrequire(raw1==raw2,'repeated context bytes')\na=json.loads(raw1); b=json.loads(raw2)\nrequire(a==b,'repeated context structures')\ntargets={'E3':[365,30,690,60],'E4':[440,72,690,92],'E5':[395,18,690,47]}\nsources={'E3':'Im10.jpg','E4':'Im9.jpg','E5':'Im9.jpg'}\nrequire(a['target_boxes']==targets and a['sources']==sources,'prospective targets/sources')\nrequire(a['classification'] is None and a['human_accepted'] is False,'unclassified/unaccepted')\nrequire(set(a['cells'])==set(targets),'pair coverage')\nrequire(set(a['inputs'])==set(expected)-{'context01.json','context02.json'},'exact declared dependencies')\nfor p,v in a['inputs'].items(): require(v==before[p],'declared dependency pin '+p)\nroster=json.loads((D/'../REGIONS.json').read_text())\nr={x['id']:x for x in roster['pairs']}\nfor pair,box in targets.items(): require(r[pair]['new_regions']==[[sources[pair][:-4]]+box],'parent roster '+pair)\ndef parse_display(lines,box):\n    x0,y0,x1,y1=box\n    require(len(lines)==x1-x0,'display column count')\n    values={}\n    for pos,line in enumerate(lines):\n        lead,body=line.split(':',1)\n        require(lead==str(x0+pos),'display column order')\n        x=int(lead);previous=y0-1\n        for token in body.split():\n            row,rgb=token.split(':',1)\n            require(re.fullmatch(r'[0-9]+',row) is not None,'row integer')\n            y=int(row)\n            require(y0<=y<y1 and y>previous,'display row order/range')\n            previous=y\n            channels=rgb.split(',')\n            require(len(channels)==3 and all(re.fullmatch(r'[0-9]+',n) for n in channels),'RGB arity')\n            value=tuple(int(n) for n in channels)\n            require(all(0<=n<=255 for n in value),'RGB range')\n            require(value!=(255,255,255),'no explicit exact-white')\n            values[x,y]=value\n    return values\nfixture=['1: 1:255,254,255','2: 0:0,4,7']\nparsed=parse_display(fixture,[1,0,3,2])\ncontrols={'near_white_retained':parsed[1,1]==(255,254,255),\n'exact_white_recovered':parsed.get((1,0),(255,255,255))==(255,255,255),\n'dark_retained':parsed[2,0]==(0,4,7)}\nbad=[\n('duplicate_column',['1:','1:']),\n('missing_column',['1:']),\n('out_of_order_rows',['1: 1:1,2,3 0:1,2,3','2:']),\n('duplicate_row',['1: 1:1,2,3 1:4,5,6','2:']),\n('outside_row',['1: 2:1,2,3','2:']),\n('white_not_omitted',['1: 0:255,255,255','2:']),\n('bad_channel',['1: 0:256,1,2','2:'])]\nfor label,lines in bad:\n    try: parse_display(lines,[1,0,3,2])\n    except (AssertionError,ValueError): controls[label]=True\n    else: controls[label]=False\nrequire(all(controls.values()),'independent parser controls')\nenv=dict(os.environ);env['PYTHONDONTWRITEBYTECODE']='1'\ndetails={};commands=[]\nfor pair,box in targets.items():\n    path=(D/'../../native-strips01'/sources[pair]).resolve()\n    with Image.open(path) as im:\n        require(im.mode=='RGB' and im.size==(745,92),'source representation '+pair)\n        im.load();pixels=im.tobytes();w,h=im.size\n    derived=[max(0,box[0]-2),max(0,box[1]-2),min(w,box[2]+2),min(h,box[3]+2)]\n    require(a['context_boxes'][pair]==derived,'clipped 2-cell box '+pair)\n    x0,y0,x1,y1=derived\n    rows=a['cells'][pair]\n    require(len(rows)==(x1-x0)*(y1-y0),'cell count '+pair)\n    expected_pixels={}\n    white=nearwhite=0\n    for index,row in enumerate(rows):\n        x=x0+index%(x1-x0); y=y0+index//(x1-x0)\n        require(set(row)=={'x','y','rgb'},'cell keys')\n        require(type(row['x']) is int and type(row['y']) is int and row['x']==x and row['y']==y,'row-major exact coordinates')\n        require(type(row['rgb']) is list and len(row['rgb'])==3 and all(type(v) is int and 0<=v<=255 for v in row['rgb']),'integer RGB')\n        off=3*(y*w+x);value=tuple(pixels[off:off+3])\n        require(tuple(row['rgb'])==value,'fresh sequential byte pixel '+pair+str((x,y)))\n        expected_pixels[x,y]=value\n        white+=value==(255,255,255)\n        nearwhite+=value!=(255,255,255) and min(value)>=254\n    command=[sys.executable,'-B',str(D/'read_context.py'),'show','--pair',pair,'--first',str(x0),'--last',str(x1-1)]\n    run=subprocess.run(command,capture_output=True,text=True,env=env,check=False)\n    require(run.returncode==0 and not run.stderr,'display command '+pair)\n    lines=run.stdout.splitlines()\n    require(lines[0]==f'Native {pair}; exact RGB, only exact (255,255,255) omitted; all other context cells shown.','display header')\n    sparse=parse_display(lines[1:],derived)\n    require(len(sparse)==len(rows)-white,'exact-white-only omission '+pair)\n    for xy,value in expected_pixels.items(): require(sparse.get(xy,(255,255,255))==value,'display roundtrip '+pair+str(xy))\n    details[pair]={'source':str(path),'target_box':box,'context_box':derived,'checked_cells':len(rows),'display_columns':x1-x0,'exact_white_omitted':white,'nonwhite_shown':len(sparse),'near_white_nonwhite_retained':nearwhite,'source_representation':'RGB 745x92','ordering':'complete unique row-major y then x','pixel_comparison':'all match fresh decoded RGB byte offsets','display_roundtrip':'all match source with exact-white default only','display_stdout_sha256':hashlib.sha256(run.stdout.encode()).hexdigest(),'display_stdout_bytes':len(run.stdout.encode()),'display_exit_code':run.returncode}\n    commands.append(command)\nafter={p:pin(D/p) for p in expected}\nrequire(before==after,'before/after inputs unchanged')\ntotal=sum(x['checked_cells'] for x in details.values())\nrequire(total==26641,'total coverage')\nprint(json.dumps({'status':'passed','checker_role':'same-source nonblind AI computational check; no ink classification or image viewing','python':platform.python_version(),'pillow':pillow_version,'saved_producer_runtime':{'python':a['python'],'pillow':a['pillow']},'inputs':before,'inputs_after':after,'pair_results':details,'total_checked_cells':total,'independent_parser_controls':controls,'independent_parser_control_count':len(controls),'repeat_bytes_equal':True,'repeat_structure_equal':True,'declared_pin_count':len(a['inputs']),'read_only_display_commands':commands,'limits':['The independent checker does not import producer functions. It runs the producer show command only as a black-box output under test; that command internally reuses the frozen parent helper.','The saved producer used Pillow '+a['pillow']+' and this checker uses Pillow '+pillow_version+'. Both use the Pillow decoder family; this is not validation by an independent decoder implementation.','No source images were visually inspected and no curve ink/model identity, annotation, support, uncertainty envelope, physical ordinate or human acceptance was evaluated.','The composed-page file is hash-checked only; its rendering and visual correspondence were not re-evaluated.','Historical context cells are checked in both saved files through proven byte identity; fresh per-cell comparison traverses context01 once.']},sort_keys=True))"
+    ],
+    "tool_chunk_id": "ce50d6",
+    "exit_code": 0,
+    "wall_time_seconds": 0.43144075,
+    "earlier_run": {
+      "tool_chunk_id": "f5f400",
+      "exit_code": 0,
+      "note": "Same numerical checks passed; a hard-coded limitation sentence incorrectly described the checker as Pillow 12.0.0. Corrected reporting to actual producer 12.0.0 versus checker 12.3.0 and reran all checks; the final run above is controlling."
+    }
+  },
+  "actual_coverage": {
+    "images_visually_viewed": [],
+    "annotations_read": [],
+    "source_rgb_cells_computationally_compared": 26641,
+    "contexts": [
+      "context01.json",
+      "context02.json"
+    ],
+    "repeat_handling": "Both complete saved files proven byte-identical; all cells of context01 compared individually to a fresh source decode in each check run.",
+    "sparse_display_handling": "All 882 context columns parsed computationally from actual producer show output, then every omitted cell restored only as exact white and compared with source. Not a manual reading or annotation."
+  },
+  "method_review": {
+    "decision": "proceed_with_source_recovery_boundaries",
+    "protocol_sha256": "be57860a830ab716498ba5d25733021c1c975da1b0427f50f64071af4eaf5f16",
+    "scope": "Prospective uncertainty representation review; no new historical ink classification.",
+    "clarifications": [
+      "Unassigned-band core means confidently selected visible ink, not confidently assigned model identity.",
+      "Empty model-route entries have no selected-cell boundary flags; referenced band boundary flags remain separate.",
+      "Allow identifiable local pieces and unassigned material to coexist at a column without copying the same cells into both.",
+      "Check band references at the same pair and column, preserve disconnected row sets and holes, and prevent duplication into model sets.",
+      "Completing E3 does not complete E4/E5, model support, all 14 pairs/42 paired human slots, or human acceptance."
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "date_utc": "2026-10-07",
+  "source_url": "https://www.youtube.com/watch?v=SIbqaybkbWI",
+  "method": "yt-dlp 2025.06.09, exact public URL, metadata only, ignored configuration, no cookies or authentication, no cache",
+  "command": "/opt/homebrew/bin/yt-dlp --ignore-config --no-config-locations --no-playlist --skip-download --no-cache-dir --socket-timeout 15 --retries 1 --extractor-retries 1 --print '%(.{id,title,description,duration,upload_date,uploader,channel_url,webpage_url,availability,live_status})j' 'https://www.youtube.com/watch?v=SIbqaybkbWI'",
+  "attempts": [
+    {
+      "scope": "initial default sandbox",
+      "exit_code": 1,
+      "result": "DNS resolution failed for www.youtube.com; no metadata returned",
+      "evidence_note": "Failure category transcribed from tool output, not a complete raw log"
+    },
+    {
+      "scope": "approved exact network retry",
+      "session_id": 10232,
+      "exit_code": 1,
+      "terminal_output": "WARNING: [youtube] SIbqaybkbWI: Some web client https formats have been skipped as they are missing a url. YouTube is forcing SABR streaming for this client. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details\nERROR: [youtube] SIbqaybkbWI: The page needs to be reloaded.\n"
+    }
+  ],
+  "conclusion": "No metadata acquired by this tool route. Not evidence that the video was deleted, private or globally unavailable.",
+  "media_downloaded": false
+}

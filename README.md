@@ -1,8 +1,12 @@
-# WTC 7: Research, Evidence, and Open Questions
+# September 11: Research, Evidence, and Open Questions
 
 This repository collects scientific and technical research about the collapse
 of World Trade Center 7 on September 11, 2001. It is an unfinished research
 archive, not an expert report or a finding about the cause.
+
+WTC 7 remains the principal investigation. Related September 11 record studies
+are kept separately, including the
+[FBI van laboratory-release study](investigation/urban-moving-systems/fbi-van-lab-release-2026-10-06/README.md).
 
 ## In plain language
 
@@ -48,6 +52,8 @@ could change each assessment.
 - [Overall causal-chain assessment](investigation/wtc7/causal-chain-synthesis/report.md)
 - [What remains incomplete](investigation/wtc7/completion-audit-2026-09-24/report.md)
 - [Sherlock feedback technical requirements and coverage review](investigation/wtc7/feedback-technical-record-2026-10-09/README.md)
+- [FBI van laboratory-release study](investigation/urban-moving-systems/fbi-van-lab-release-2026-10-06/README.md)
+- [October 10 research preservation and source manifest](publication/preservation-2026-10-10/README.md)
 - [Feedback digest coverage addendum](investigation/wtc7/feedback-digest-coverage-2026-10-09/README.md)
 
 ## Technical explanation
@@ -136,6 +142,9 @@ or incomplete routes; an individual report is not an accepted overall finding.
 - [`investigation/wtc7/`](investigation/wtc7/) — the WTC 7 investigation:
   questions, reports, protocols, source locators, data, code, and reproduction
   records.
+- [`investigation/urban-moving-systems/`](investigation/urban-moving-systems/) —
+  a separate study of released FBI records, laboratory-document locators, and
+  unresolved release questions.
 - [`research/`](research/) — related scientific synthesis, video comparison,
   reconstruction workbench, and source-review material.
 - [`faraday/`](faraday/) — an MIT-licensed Research Machine source snapshot
@@ -150,6 +159,12 @@ The WTC 7 material was copied from the research worktree at source commit
 changes. Faraday was copied from upstream commit
 `8d87c078fae6dcbda1541c4979568d88aa1fb9ae`; its separate local, unpushed
 Vindication Machine changes were not included.
+
+The [October 10 preservation export](publication/preservation-2026-10-10/README.md)
+combines previously published research branches and adds later working-state
+snapshots. Its manifest pins source commits, paths, hashes, and the documented
+test-fixture link relocations. Exporting a draft or captured run does not change
+its research status; study-level reports and protocols still control its scope.
 
 The separate Luna case-management chat was excluded. Source media and
 investigation materials are retained at the repository owner's direction.

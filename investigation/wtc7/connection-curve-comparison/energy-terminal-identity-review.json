@@ -1,0 +1,137 @@
+{
+  "status": "exploratory_native_visual_review_not_quantitative_support",
+  "date": "2026-10-07",
+  "reader": "single AI analyst, not human acceptance or independent recovery",
+  "purpose": "Test whether apparent terminal agreement actually exposes two independently identifiable model traces.",
+  "sources": [
+    {"path": "native-strips01/Im6.jpg", "sha256": "011580cb010c39d9df79fa7a9e861b2c57a070b006da72f5da1050e0c3d8476d"},
+    {"path": "native-strips01/Im7.jpg", "sha256": "3509c0fb002d47d1cc9d1ae624377534c8b31bd9fea7fdadd380a7b5f4d4a09d"},
+    {"path": "native-strips01/Im8.jpg", "sha256": "0c49df5f6117d3f0e9b206d7c3352edf57849e4ac00ef9764b857b1445947d83"},
+    {"path": "native-strips01/Im9.jpg", "sha256": "3154e28ea82ca2f39c465a7bdfe367677216543df296cf918cbbd259248f8129"},
+    {"path": "native-strips01/Im10.jpg", "sha256": "fe8c069f4bb7a19f6eb996b42b266c55552a110f8e9cbc6e9cc0d7269547cdd3"},
+    {"path": "native-strips01/Im11.jpg", "sha256": "9cbe7adcb0d05a3948e516f6c5ad5a534f07664a051019429e879e269fffb108"}
+  ],
+  "method": "Viewed all six unchanged energy-panel source JPEG strips at original detail, Im9-11 first and Im6-8 in the continuation. Im11 supplies horizontal-axis context only; strip-local rows must not be joined with an assumed uniform pitch. Im6 contains underlying label text replaced in the composed PDF: the confirmed published-page legend, not the underlying Shear wording, controls model naming. No threshold selection, tracing, ordinate extraction, or physical interval endpoints.",
+  "observations": [
+    {
+      "pair": "E3",
+      "source": "native-strips01/Im10.jpg",
+      "visible": "The black solid-looking rising route and separate dashed route approach a common narrow horizontal band. Farther right, the visible band has white interruptions characteristic of a dashed stroke; a separately visible uninterrupted black stroke is not established there.",
+      "alternatives": ["The solid series terminates earlier while the dashed series continues.", "Rendering, overplotting or raster resolution prevents separate recovery of two underlying traces."],
+      "consequence": "Do not duplicate the right-hand dashed band's pixels into both model entries or extend the spring trace to the plot boundary.",
+      "next_test": "Trace solid and dashed footprints through the transition in native coordinates, preserving an unresolved endpoint if the last separately attributable solid pixels cannot be recovered. Original plotting arrays would resolve whether the series actually terminates."
+    },
+    {
+      "pair": "E4",
+      "source": "native-strips01/Im9.jpg",
+      "visible": "The gold terminal route lies near the bottom of this strip and appears nearly coincident across line styles. This view alone does not establish separately attributable pixels for both models throughout the terminal band.",
+      "consequence": "A single gold band is not two independent ordinate measurements; near-strip-edge footprints require adjacent-strip registration.",
+      "next_test": "Follow each style through the leveling region with the actual strip transforms and retain ambiguous or clipped footprints."
+    },
+    {
+      "pair": "E5",
+      "source": "native-strips01/Im9.jpg",
+      "visible": "A blue solid-looking route flattens while a blue dashed route approaches it from below. The right-hand narrow band does not clearly preserve two separately recoverable ordinates.",
+      "consequence": "Apparent terminal coincidence is a resolution/identity question, not established exact equality of model energies.",
+      "next_test": "Recover both traces before convergence and identify the onset of unresolved identity without supplying a hidden branch by interpolation."
+    },
+    {
+      "pair": "E6",
+      "source": "native-strips01/Im8.jpg",
+      "visible": "At the right side, two red strokes are visually distinguishable: a solid-looking upper stroke and a dashed lower stroke, with a small separation. This is unlike the unresolved blue terminal band.",
+      "consequence": "Do not classify this entire pair as unreadable on the basis of lower-bolt overlap. Local visible separation does not establish a calibrated difference or continuity through the earlier approach.",
+      "next_test": "Inventory each red stroke's native footprint, including the near-merger toward the left and every dash gap; quantify only after source-native uncertainty and sample review."
+    },
+    {
+      "pair": "E7",
+      "source": "native-strips01/Im8.jpg",
+      "visible": "At the right side, a green dashed stroke lies above a solid-looking green stroke. Toward the left of this terminal region they approach or cross, so right-side ordering alone cannot identify branches through the transition.",
+      "consequence": "Retain the visible separated portion as a candidate for recovery, not an accepted full-length pair or an inferred branch assignment at the crossing.",
+      "next_test": "Follow style on both sides of the green transition, mark the identity-conflict footprint, and preserve gaps separately."
+    },
+    {
+      "pair": "E8",
+      "source": "native-strips01/Im7.jpg",
+      "visible": "Near the bottom-right of Im7, the cyan dashed terminal stroke lies visibly above the cyan solid-looking stroke. The approach continues into the neighboring strip and cannot be assigned by terminal height alone.",
+      "consequence": "The separate cyan strokes counter a blanket claim of terminal nonseparability. They do not supply their own ordinate error bounds or establish an engineering-significant mismatch.",
+      "next_test": "Recover cyan footprints across Im7/Im8 using their actual transforms; preserve the approach/crossing uncertainty and dash gaps."
+    },
+    {
+      "pair": "E9",
+      "source": "native-strips01/Im7.jpg",
+      "visible": "At the right side, a solid-looking purple terminal stroke lies above a dashed purple stroke. Both styles are visually distinguishable there; continuity back through the rising region is a separate question.",
+      "consequence": "Retain both visible terminal routes without forcing equality or extrapolating terminal identity through earlier crossings.",
+      "next_test": "Inventory purple native footprints and their transition across Im7/Im8, then bound the measured separation under the fixed uncertainty and review protocol."
+    }
+  ],
+  "strongest_counterpoint": "The underlying model results may genuinely agree within plotting resolution. Failure to resolve two strokes neither establishes disagreement nor discredits that possibility.",
+  "coverage": "All seven energy-panel pairs inspected at native detail for terminal identity. This is not the complete supported-domain inventory: no quantitative support is admitted for any pair by this visual review.",
+  "E6_pixel_probe": {
+    "method_file": "probe_energy_red.py",
+    "region_half_open": [400,70,690,92],
+    "outputs": ["energy-red-pixels01.json", "energy-red-pixels02.json"],
+    "identical_output_sha256": "2c46bc569bf4433266a566143d3aa3587e13d0c6656bb5de69703ad848514c49",
+    "execution_receipt": "e925ee",
+    "selected_pixels_at_32_64_96": [829,752,662],
+    "component_counts_at_32_64_96": [22,24,24],
+    "verification": "Five existing component tests passed; exact pixel-run roundtrips passed on both runs. Receipt b8d8eb separately used NumPy/SciPy to reproduce all 70 component summaries, checked predicate boundary controls, source hash and byte-identical repeats. Same analyst; not independent scientific recovery.",
+    "interpretation": "The largest component spans x416-689 and y70-91 at all three thresholds and touches the top, bottom and right crop edges. Connectivity does not isolate an accepted whole model trace; the candidate region includes a transition and truncated strokes. Threshold32 yields fewer components than64/96. Retain every component without assuming each is a physical dash or choosing a threshold for visual agreement.",
+    "next_test": "Review exact component footprints against both red styles, mark merged/ambiguous and crop-truncated spans, and continue the complete pair inventory. Do not enlarge accepted support from these component boxes."
+  },
+  "counterexample_to_blanket_unreadability": "E6-E9 expose distinguishable terminal styles. E3-E5 limitations must not be generalized to the entire panel. Neither visual agreement nor visual separation alone establishes calibration adequacy.",
+  "E6_crop_repair": {
+    "reason": "Column-level inspection (2e69ad) showed that the original crop's top edge y70 intersected the upper red route. That original region is unsuitable for a full-stroke envelope.",
+    "method": "probe_energy_red_expanded.py calls the preserved original extraction, changing only the top crop boundary from70 to60. Thresholds and color predicate unchanged; original files preserved.",
+    "outputs": ["energy-red-expanded01.json", "energy-red-expanded02.json"],
+    "identical_output_sha256": "b67003c9855b9a56ecb8d70a12390d69108e43095355251a85f767e802be6262",
+    "execution_receipt": "103ad2",
+    "selected_pixels_at_32_64_96": [999,914,814],
+    "added_pixels_at_32_64_96": [170,162,152],
+    "separate_check": "f611bd: all70 NumPy/SciPy component summaries agree, both outputs byte-identical, all original-region pixels unchanged at each threshold, no selected pixel touches new top edge y60.",
+    "diagnostic_example": "At native x550 all three thresholds now preserve two runs y69-70 and y73-74. Original crop omitted y69. This example was chosen for diagnosis, not the deterministic final review sample.",
+    "limits": "No top-edge selected pixels is not proof that all visible ink is captured by the RGB predicate. Left/right/bottom truncation and model identity remain separate issues. No physical-coordinate measurement or uncertainty acceptance follows."
+  },
+  "support_intervals": null,
+  "E6_style_adverse_check": {
+    "status": "shared_color_cutoff_limits_threshold_agreement",
+    "source": "native-strips01/Im8.jpg",
+    "source_sha256": "0c49df5f6117d3f0e9b206d7c3352edf57849e4ac00ef9764b857b1445947d83",
+    "raw_pixel_receipt": "d98b4a",
+    "method": "For each of the16 missing-column ranges at threshold32 in the preceding style check, inspect every original RGB pixel at y72 through80. Record maximum R-max(G,B) and maximum255-min(R,G,B). These are digital channel values, not light intensity or calibrated color measurements.",
+    "range_summary_fields": ["x_min","x_max","max_red_excess","max_channel_deficit"],
+    "range_summaries": [[548,549,27,29],[557,558,19,25],[567,567,23,27],[576,577,31,36],[585,586,17,19],[594,595,31,32],[604,604,16,24],[613,614,31,32],[623,623,26,30],[631,632,26,35],[641,641,14,26],[650,651,23,29],[659,660,20,27],[669,669,18,25],[678,679,25,29],[687,688,19,25]],
+    "finding": "All nominal gaps contain nonwhite pixels; their maximum channel deficits range19-36. Their red-excess maxima are below the shared strict cutoff>32. The red-excess result is partly selection-defined and cannot independently validate the gap. Pale pixels can reflect antialiasing/compression spill or a faint stroke; this check does not distinguish those causes.",
+    "synthetic_counterexample": {
+      "description": "A149-column invented nonwhite RGB line: (255,230,230) when x modulo9 is0 or1, otherwise(255,100,100). All columns contain colored pixels, yet the unchanged predicate produces identical artificial gaps at thresholds32,64,96.",
+      "reproduction": "Apply probe_energy_red.selected to every RGB triplet for each threshold; assert every triplet differs from white and all three boolean selection sequences match while omitting some columns.",
+      "scope": "An adversarial numerical counterexample, not a physically validated rendering model, historical frame, or evidence that this artifact actually occurred in the NIST plot."
+    },
+    "disposition": "Retain the local solid/dashed assignment as a visual candidate, not detector-validated identity. Threshold invariance under a shared color cutoff does not resolve it. No threshold retuning or model comparison is justified by this check."
+  },
+  "E6_terminal_style_check": {
+    "input": "energy-red-expanded01.json",
+    "input_sha256": "b67003c9855b9a56ecb8d70a12390d69108e43095355251a85f767e802be6262",
+    "receipt": "ec225e",
+    "selection": "Retrospective local style diagnostic, not a final review sample. Half-open x540-689; upper y60-72, lower y72-81. Declared before this calculation after prior visual and pixel inspection.",
+    "reproduction": "Expand saved inclusive column runs into (x,y) pixel sets separately at thresholds32,64,96. For each half-open band count distinct selected x coordinates. Missing columns are the complement in integer x540 through688; no bridging.",
+    "upper_present_columns_at_32_64_96": [149,149,149],
+    "lower_present_columns_at_32_64_96": [122,112,99],
+    "upper_missing_ranges_at_all_thresholds": [],
+    "lower_missing_ranges_at_32": [[548,549],[557,558],[567,567],[576,577],[585,586],[594,595],[604,604],[613,614],[623,623],[631,632],[641,641],[650,651],[659,660],[669,669],[678,679],[687,688]],
+    "interpretation": "The selected upper band has uninterrupted column occupancy while the lower band has repeated gaps at all three thresholds. Together with the native-image reading and confirmed legend, this supports a local candidate assignment of upper solid/spring and lower dashed/shell. It is stronger than assigning identity from component membership or vertical order alone.",
+    "alternative_and_limits": "Color selection can create gaps, and column occupancy alone is not continuous two-dimensional path identity. This is the same source and analyst, not independent corroboration or human acceptance. Do not transfer the assignment through the left-hand transition or to other curves, fill lower gaps, or infer a physical uncertainty bound.",
+    "disconfirming_test": "Inspect native pixels outside the predicate and actual line style; revise or reject the candidate assignment if the apparent lower gaps are detector misses on a solid stroke or the upper occupancy comes from mixed branches. Final independently recovered and human-reviewed sample mappings remain required."
+  },
+  "E6_column_inventory": {
+    "outputs": ["energy-red-inventory01.json", "energy-red-inventory02.json"],
+    "identical_sha256": "21a4a67fd09d7ed6d38716a4d71b57c8ad31f6a746fc0e5aa56fc93a1896792f",
+    "method": "inventory_energy_red.py classifies all290 crop columns, retaining runs at all three thresholds. Crop contact takes precedence; two candidate bands require separation of cross-threshold cell envelopes. No interpolation or model assignments.",
+    "counts": {"two_separate_candidate_bands":131,"gap_merge_or_threshold_ambiguity":145,"crop_contact":14},
+    "verification": "Five classification controls passed; two runs byte-identical. Separate Ruby implementation replayed all290 classifications and checked source hash, totals and repeat equality.",
+    "meaning": "131 columns provide candidate two-band locations for subsequent style/identity and uncertainty review. The other159 remain unresolved by this rule. Counts describe this deliberately chosen image crop, not a physical-domain coverage estimate or a population success rate.",
+    "next_action": "Recover solid/dashed identity across the transition without treating global component membership as identity; extend the all-pair inventory under the existing protocol. No final quantile selection is possible from this partial crop."
+  },
+  "uncertainty_bounds": null,
+  "historical_metric_admitted": false,
+  "cause_ranking_changed": false
+}

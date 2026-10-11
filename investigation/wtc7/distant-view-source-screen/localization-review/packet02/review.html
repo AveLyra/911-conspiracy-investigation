@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DistantView — human localization pilot</title>
+  <style>
+    :root { color-scheme: light; font: 16px/1.45 system-ui, sans-serif; color: #17212b; background: #f4f6f8; }
+    body { margin: 0 auto; padding: 1.2rem; max-width: 1500px; }
+    h1 { font-size: 1.6rem; margin: 0 0 .5rem; } h2 { font-size: 1.1rem; }
+    p { margin: .5rem 0; } button, select, textarea { font: inherit; }
+    button, select { padding: .4rem .65rem; } button { cursor: pointer; }
+    button:disabled { cursor: not-allowed; } button[aria-pressed="true"] { background: #173c58; color: white; }
+    :focus-visible { outline: 3px solid #095da5; outline-offset: 2px; }
+    .notice { padding: .7rem; border-left: 4px solid #ad6523; background: #fff6e9; }
+    .controls { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: .6rem 0; }
+    .panel { background: white; border: 1px solid #c9d1d8; padding: .8rem; margin: .8rem 0; }
+    #viewport { width: 100%; height: 62vh; min-height: 280px; max-height: 800px; overflow: auto; padding: 0; border: 1px solid #8997a3; background: #d9dde0; }
+    #stage { position: relative; padding: 0; border: 0; margin: 0; line-height: 0; }
+    #native-image { display: block; width: 100%; height: auto; max-width: none; padding: 0; border: 0; margin: 0; cursor: crosshair; }
+    #native-image[hidden], [hidden] { display: none !important; }
+    #marker { position: absolute; width: 11px; height: 11px; border: 1px solid #f3003e; border-radius: 50%; transform: translate(-50%, -50%); pointer-events: none; box-shadow: 0 0 0 1px white; }
+    #readout, #box-readout { font-family: ui-monospace, monospace; min-height: 1.5em; }
+    [data-error="true"] { color: #a01515; }
+    textarea { display: block; box-sizing: border-box; width: 100%; padding: .5rem; }
+    #response-text { font-family: ui-monospace, monospace; font-size: .85rem; }
+    dl { display: grid; grid-template-columns: minmax(8rem, auto) 1fr; gap: .2rem .7rem; }
+    dt { font-weight: 600; } dd { margin: 0; overflow-wrap: anywhere; }
+    .small { font-size: .9rem; } #load-status, #feedback { min-height: 1.5em; }
+    @media (max-width: 620px) { body { padding: .6rem; } dl { display: block; } dd { margin-bottom: .4rem; } }
+  </style>
+</head>
+<body>
+  <h1>DistantView — human localization pilot</h1>
+  <p class="notice">Session-only draft, not saved or accepted. This interface does not authenticate a human. Only your actual reply in chat can become a preserved human observation. Reloading loses the draft.</p>
+  <p>For each of six full frames, inspect the junction of the dark target facade’s outer <strong>image-right top and right-side outlines</strong>. Not the raised roof-step foot, bright compression rim, plume, foreground roof, or adjacent background building. Image-right is not a compass direction or structural member.</p>
+  <p class="small">This is a purposive six-frame feasibility sample, not an accuracy test or a replacement for all 138 frames. A plausible-position box is subjective: not a confidence interval, guaranteed error bound, inferred center, or proof of a fixed material point. Do not surround unrelated alternatives merely to resolve identity uncertainty.</p>
+  <div class="controls">
+    <label for="frame">Image</label><select id="frame" aria-describedby="kind"></select>
+    <button type="button" data-zoom="fit" aria-pressed="true">Fit</button>
+    <button type="button" data-zoom="1" aria-pressed="false">100%</button>
+    <button type="button" data-zoom="2" aria-pressed="false">200%</button>
+  </div>
+  <p id="kind">Synthetic control is the default; no historical thumbnail is loaded.</p>
+  <p id="load-status" role="status" aria-live="polite">Loading the local review module…</p>
+  <div id="viewport" tabindex="0" role="region" aria-label="Full image. Click to lock a point; arrow keys move a locked point one native pixel." aria-describedby="coordinate-help">
+    <div id="stage"><img id="native-image" alt="No image loaded" hidden><span id="marker" hidden></span></div>
+  </div>
+  <p id="coordinate-help" class="small">Hover is transient. Click locks a point; focus this image region and use arrow keys for one-pixel moves. Escape clears the point. Source pixels are zero-based, upper-left origin, right/down positive; right/bottom outer edges are excluded. No position is prefilled.</p>
+  <p id="readout" aria-live="off">No point.</p>
+  <div class="controls">
+    <button id="clear-point" type="button">Clear point</button>
+    <button id="start-box" type="button">New box: next two image clicks</button>
+    <button id="use-endpoint" type="button">Use locked point as next endpoint</button>
+    <button id="clear-box" type="button">Clear box</button>
+  </div>
+  <p class="small">For a box, choose the upper-left endpoint first and lower-right second (inclusive cells). Reversed endpoints are rejected, never swapped. For keyboard refinement, lock/nudge a point, then use it as an endpoint. One cell is allowed only if that is your judgment.</p>
+  <p id="box-readout">No pending box.</p>
+  <section class="panel" aria-labelledby="response-heading">
+    <h2 id="response-heading">Current image — unrecorded entry</h2>
+    <p><label><input id="inspected" type="checkbox"> I actually inspected the currently loaded full image.</label></p>
+    <div class="controls"><label for="judgment">Status</label><select id="judgment">
+      <option value="notinspected">Not inspected — no response</option>
+      <option value="localizable">Localizable — box required</option>
+      <option value="ambiguous">Ambiguous — box optional</option>
+      <option value="obscured">Obscured — hidden; null box</option>
+      <option value="notlocated">Not located — not a physical-absence claim; null box</option>
+      <option value="outside">Outside or display inadequate — null box</option>
+    </select></div>
+    <label for="note">Explanatory note (required for every entered status)</label>
+    <textarea id="note" rows="3" placeholder="Explain the adjoining contours, competing alternatives, obscuration, or specific display problem."></textarea>
+    <div class="controls"><button id="record-row" type="button" disabled>Record session-only draft row</button><button id="clear-row" type="button">Clear current draft row</button></div>
+    <p id="feedback" role="status" aria-live="polite"></p>
+    <p class="small">Changing or reloading an image clears the current point, pending box, checkbox, status and note. Recorded draft rows remain only in memory, are never prefilled into the new entry, and can be cleared separately. Recording again replaces that unsaved session draft only; it cannot modify a response already sent in chat. Send any later correction separately.</p>
+  </section>
+  <details class="panel"><summary>Image identity and nullable source metadata</summary><dl>
+    <dt>Ordinal</dt><dd id="index"></dd><dt>Image</dt><dd id="dimensions"></dd>
+    <dt>Stored metadata</dt><dd id="clock"></dd><dt>Image SHA256</dt><dd id="hash"></dd>
+    <dt>Source SHA256</dt><dd id="source-hash"></dd><dt>Protocol SHA256</dt><dd id="protocol-hash"></dd>
+  </dl><p class="small">Null means missing, not zero. Neither timestamp field is substituted for the other or adopted as a capture clock. Hashes identify preserved bytes, not historical authenticity.</p></details>
+  <section class="panel" aria-labelledby="draft-heading">
+    <h2 id="draft-heading">Recorded session-only draft — manual copy</h2>
+    <p id="draft-count">No historical responses recorded.</p>
+    <p class="small">Select and copy this text yourself into chat if you choose. There is no save, submit, download, clipboard API, storage, analytics, or upload. Synthetic practice is labeled separately and never counts as a historical response.</p>
+    <label for="response-text">Draft response text (read-only; uninspected rows contain no answer)</label>
+    <textarea id="response-text" rows="18" readonly spellcheck="false"></textarea>
+  </section>
+  <noscript>This packet needs local JavaScript; no inspection or response is recorded without it.</noscript>
+  <script type="module" src="./review.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+{
+  "started_at_utc": "2026-10-05T16:42:37.768141+00:00",
+  "status": "executed_with_repeat_comparison_not_accuracy_certification",
+  "commands": [
+    {
+      "name": "gpu-repeat1",
+      "argv": [
+        "/opt/homebrew/bin/whisper-cli",
+        "-m",
+        "/Users/admin/dev/pataphor/data/audio-models/ggml-large-v3-turbo-q5_0.bin",
+        "-f",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/local-asr/run01/spoken-mono-16k.wav",
+        "-l",
+        "en",
+        "-t",
+        "4",
+        "-p",
+        "1",
+        "-tp",
+        "0",
+        "-nf",
+        "-bs",
+        "5",
+        "-bo",
+        "5",
+        "-ojf",
+        "-otxt",
+        "-osrt",
+        "-of",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/local-asr/run02-gpu/repeat1/spoken"
+      ],
+      "timeout_seconds": 300,
+      "exit_code": 0,
+      "elapsed_seconds": 7.846709624980576
+    },
+    {
+      "name": "gpu-repeat2",
+      "argv": [
+        "/opt/homebrew/bin/whisper-cli",
+        "-m",
+        "/Users/admin/dev/pataphor/data/audio-models/ggml-large-v3-turbo-q5_0.bin",
+        "-f",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/local-asr/run01/spoken-mono-16k.wav",
+        "-l",
+        "en",
+        "-t",
+        "4",
+        "-p",
+        "1",
+        "-tp",
+        "0",
+        "-nf",
+        "-bs",
+        "5",
+        "-bo",
+        "5",
+        "-ojf",
+        "-otxt",
+        "-osrt",
+        "-of",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/local-asr/run02-gpu/repeat2/spoken"
+      ],
+      "timeout_seconds": 300,
+      "exit_code": 0,
+      "elapsed_seconds": 5.00645666604396
+    }
+  ],
+  "environment": {
+    "PATH": "/opt/homebrew/bin:/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "HF_HUB_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1"
+  },
+  "runner_sha256": "463f78b417610a6e3d74e48a61cd0aa01cb2f8111ae60efbd8e69f1beb3a75dd",
+  "shared_runner_sha256": "81902b049995e2a4de94d89c1a377e6cd519a69b0aa7eec3327329f68b1a569a",
+  "protocol_sha256": "f6699b976dcc96e6033439ff753da20f154f0429929839da4ff698e6ce082a2c",
+  "addendum_sha256": "73cfd3c6f7c066de57690afb964fbcb0ed08b852eaa05398d96d8c9590c46cb0",
+  "cpu_receipt_sha256": "9439221770c928dd93a1f67e01ed08061d7a27ed1b82d6092cc9bf1cf71edc6a",
+  "human_listening": false,
+  "causal_inference": false,
+  "inputs_before": {
+    "source": {
+      "path": "/Users/admin/docs/911/research/sherlock-wtc7-investigation/acoustic-audit/run01/spoken-stereo.wav",
+      "bytes": 6350458,
+      "sha256": "5b12b06ab0f2699539e5621b8483d9c96163364cabdace3768c8b296240de127"
+    },
+    "model": {
+      "path": "/Users/admin/dev/pataphor/data/audio-models/ggml-large-v3-turbo-q5_0.bin",
+      "bytes": 574041195,
+      "sha256": "394221709cd5ad1f40c46e6031ca61bce88931e6e088c188294c6d5a55ffa7e2"
+    },
+    "whisper": {
+      "path": "/opt/homebrew/bin/whisper-cli",
+      "bytes": 658608,
+      "sha256": "40bca494d49af736058eb3f33cbcebaa020eacf6d0087b623f334946e1ab2128"
+    },
+    "ffmpeg": {
+      "path": "/opt/homebrew/bin/ffmpeg",
+      "bytes": 421968,
+      "sha256": "7697b094387e2918821fe7480c73f5d44543817096e9d5b5fafe58ecd6912569"
+    }
+  },
+  "converted_audio": {
+    "sha256": "84bf174495fbc380861a314a73295ba58754778615f26c0b4833c420d2788943",
+    "properties": [
+      1,
+      2,
+      16000,
+      288000
+    ]
+  },
+  "repeat_transcription_equal": true,
+  "output_hashes": [
+    {
+      ".json": "3534f3169ca750292a490980312c05cc5b0d2f96a82281e057fb0346991ec6e0",
+      ".txt": "6a1f6bf4d3e92e33e72d5a1ef863dc1c593dfb063809041cbd5b803043be503d",
+      ".srt": "ffe06326c16626e856dcc5614715eecb6bbde9b174b8f93a080ae673a79647c4"
+    },
+    {
+      ".json": "3534f3169ca750292a490980312c05cc5b0d2f96a82281e057fb0346991ec6e0",
+      ".txt": "6a1f6bf4d3e92e33e72d5a1ef863dc1c593dfb063809041cbd5b803043be503d",
+      ".srt": "ffe06326c16626e856dcc5614715eecb6bbde9b174b8f93a080ae673a79647c4"
+    }
+  ],
+  "repeat_output_bytes_equal": true,
+  "inputs_after": {
+    "source": {
+      "path": "/Users/admin/docs/911/research/sherlock-wtc7-investigation/acoustic-audit/run01/spoken-stereo.wav",
+      "bytes": 6350458,
+      "sha256": "5b12b06ab0f2699539e5621b8483d9c96163364cabdace3768c8b296240de127"
+    },
+    "model": {
+      "path": "/Users/admin/dev/pataphor/data/audio-models/ggml-large-v3-turbo-q5_0.bin",
+      "bytes": 574041195,
+      "sha256": "394221709cd5ad1f40c46e6031ca61bce88931e6e088c188294c6d5a55ffa7e2"
+    },
+    "whisper": {
+      "path": "/opt/homebrew/bin/whisper-cli",
+      "bytes": 658608,
+      "sha256": "40bca494d49af736058eb3f33cbcebaa020eacf6d0087b623f334946e1ab2128"
+    },
+    "ffmpeg": {
+      "path": "/opt/homebrew/bin/ffmpeg",
+      "bytes": 421968,
+      "sha256": "7697b094387e2918821fe7480c73f5d44543817096e9d5b5fafe58ecd6912569"
+    }
+  },
+  "finished_at_utc": "2026-10-05T16:42:53.949267+00:00",
+  "products": {
+    "repeat1/spoken.json": {
+      "bytes": 17792,
+      "sha256": "3534f3169ca750292a490980312c05cc5b0d2f96a82281e057fb0346991ec6e0"
+    },
+    "repeat1/spoken.srt": {
+      "bytes": 458,
+      "sha256": "ffe06326c16626e856dcc5614715eecb6bbde9b174b8f93a080ae673a79647c4"
+    },
+    "repeat1/spoken.txt": {
+      "bytes": 288,
+      "sha256": "6a1f6bf4d3e92e33e72d5a1ef863dc1c593dfb063809041cbd5b803043be503d"
+    },
+    "repeat1.stderr.log": {
+      "bytes": 6807,
+      "sha256": "3c2f952b8428f0691aaa7df601413c39c69b4f450edc3c5de1519480da804b22"
+    },
+    "repeat1.stdout.log": {
+      "bytes": 459,
+      "sha256": "0926fc3fb4f34a81d95f649592c1606464e71dc39775ec5312e65138d93f6b85"
+    },
+    "repeat2/spoken.json": {
+      "bytes": 17792,
+      "sha256": "3534f3169ca750292a490980312c05cc5b0d2f96a82281e057fb0346991ec6e0"
+    },
+    "repeat2/spoken.srt": {
+      "bytes": 458,
+      "sha256": "ffe06326c16626e856dcc5614715eecb6bbde9b174b8f93a080ae673a79647c4"
+    },
+    "repeat2/spoken.txt": {
+      "bytes": 288,
+      "sha256": "6a1f6bf4d3e92e33e72d5a1ef863dc1c593dfb063809041cbd5b803043be503d"
+    },
+    "repeat2.stderr.log": {
+      "bytes": 6807,
+      "sha256": "ec6fc0b9e55ba6d0ab000d3ccc59b6116fc3d1d99a7fb5f21f0c3fa0ecc42ad0"
+    },
+    "repeat2.stdout.log": {
+      "bytes": 459,
+      "sha256": "0926fc3fb4f34a81d95f649592c1606464e71dc39775ec5312e65138d93f6b85"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "third-shot-aspect-visual-review-v1",
+  "date": "2026-10-08",
+  "reader": "root AI; nonblind, prior-informed, shared-source review",
+  "status": "Initial observations frozen before reading the separate reader's visual interpretation",
+  "human_accepted": false,
+  "input_map": "aspect01/input-map.json",
+  "input_map_sha256": "c9498734d3fb164a410c47a3dc674d0733d6e3221e26f300501017fc622eecc5",
+  "display_method": "tools.view_image with detail original; pixels forwarded through functions.exec image(), unchanged local source PNGs",
+  "display_scope": "Full native images, not score heatmaps, newly annotated crops or an audio review",
+  "early_base": "../../screen01/early-copy",
+  "early_batches_actually_viewed": [
+    [{"index":90,"file":"frame-0004.png"},{"index":180,"file":"frame-0007.png"},{"index":210,"file":"frame-0008.png"},{"index":240,"file":"frame-0009.png"},{"index":270,"file":"frame-0010.png"}],
+    [{"index":300,"file":"frame-0011.png"},{"index":540,"file":"frame-0019.png"},{"index":570,"file":"frame-0020.png"},{"index":600,"file":"frame-0021.png"},{"index":630,"file":"frame-0022.png"}],
+    [{"index":870,"file":"frame-0030.png"},{"index":900,"file":"frame-0031.png"},{"index":930,"file":"frame-0032.png"},{"index":1049,"file":"frame-0036.png"},{"index":1079,"file":"frame-0037.png"}]
+  ],
+  "c_base": "../../../c-full-visual-review/run01/compilation",
+  "c_references_actually_viewed_before_protocol_and_reopened_before_this_save": [
+    {"index":13320,"local_seconds":14,"file":"frame-0421.png"},
+    {"index":13470,"local_seconds":19,"file":"frame-0571.png"},
+    {"index":13620,"local_seconds":24,"file":"frame-0721.png"}
+  ],
+  "observations": [
+    "The apparent scene includes a tall dark windowed facade on the right, a pale narrow tower to its left, a lower central roof with a small pale cupola or vent, and a cloud advancing behind these foreground structures. This describes visible correspondences, not authenticated source identity.",
+    "C uses a tighter view with substantial crop and tone differences. The full right building's roof is visible at local19 but clipped at local14 and local24, so framing is not constant even within these three references.",
+    "Early90 has materially different cloud development and framing. Early180 through300 show broad darker upper-left cloud, open blue upper-right sky and a less developed lower pale front. They are not convincing whole-picture counterparts of the prominent bright lobed front in C19 or C24.",
+    "Early540 through630 show a growing pale rolling cloud behind the central roof. Broad development can resemble C14, but no unique fine-outline and foreground-relative match was established.",
+    "Early870 through1079 show more developed pale billows through the corridor. The broad later stage can resemble later C references, while lobe outlines, light-dark patterns and their placement relative to the foreground remain insufficient for a unique exposure match. Late1049 and1079 show a more advanced front around the central roof than the early240/300 dynamic leaders.",
+    "No uniquely supported three-moment association was identified from this finite native-image review. This is a negative identification result, not proof that the copies cannot be related."
+  ],
+  "derived_not_directly_observed": [
+    "Dynamic-ranking leader indices baseline540,270,1049 and native-relative570,240,300 are nonmonotonic across C14,19,24. Argmax order alone neither proves nor disproves common source.",
+    "High local facade correlation can coexist with contradictory or ambiguous whole-picture cloud detail. Broad background and repeated windows can contribute to non-discriminating scores."
+  ],
+  "strongest_alternative": "The same underlying footage could have undergone unmodeled cropping, prior aspect distortion, camera movement or other transfer changes; a genuinely matching exposure may lie between coarse samples. The fixed correction and finite scale/translation family do not exclude those alternatives.",
+  "limits": [
+    "No calibrated camera geometry, event clock, playback rate or continuous shot identity established.",
+    "No soundtrack listened to or authenticated in this image review; no sound source or mechanism inferred.",
+    "Nonblind AI agreement is not independent-camera corroboration, human acceptance or expert authentication."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-07",
+  "scope": "Held-image correspondence; no new media, original-clock or sound claim",
+  "method_review": "preparation-review.json",
+  "root_controls": {
+    "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B picture_screen.py controls --run controls04",
+    "exit_code": 0,
+    "output": "test_canvas_extremes_and_offsets (picture_adapter_tests.AdapterControls.test_canvas_extremes_and_offsets) ... ok\ntest_changing_image_sequence_and_reordered_references (picture_adapter_tests.AdapterControls.test_changing_image_sequence_and_reordered_references) ... ok\ntest_control_gate_refuses_stale_and_product_change (picture_adapter_tests.AdapterControls.test_control_gate_refuses_stale_and_product_change) ... ok\ntest_direct_oracle_and_padding (picture_adapter_tests.AdapterControls.test_direct_oracle_and_padding) ... ok\ntest_dynamic_change_and_flat (picture_adapter_tests.AdapterControls.test_dynamic_change_and_flat) ... ok\ntest_hash_geometry_and_existing_refusal (picture_adapter_tests.AdapterControls.test_hash_geometry_and_existing_refusal) ... ok\ntest_map_missing_duplicates_and_pts (picture_adapter_tests.AdapterControls.test_map_missing_duplicates_and_pts) ... ok\ntest_native_masks_and_invalid_geometry (picture_adapter_tests.AdapterControls.test_native_masks_and_invalid_geometry) ... ok\ntest_rank_ties_reordering_missing (picture_adapter_tests.AdapterControls.test_rank_ties_reordering_missing) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.400s\n\nOK\n{\"synthetic_sequence\": {\"dynamic_score_matrices\": [[[1.0, -0.015684759919343243, -0.003002312443988569], [-0.015684759919343243, 1.0, 0.008532283691514255], [-0.003002312443988569, 0.008532283691514255, 1.0]], [[-0.003002312443988569, 0.008532283691514255, 1.0], [1.0, -0.015684759919343243, -0.003002312443988569], [-0.015684759919343243, 1.0, 0.008532283691514255]]], \"recovered_dynamic_orders\": [[0, 1, 2], [2, 0, 1]], \"reference_orders\": [[0, 1, 2], [2, 0, 1]], \"static_leaders\": [[0, 0, 0], [0, 0, 0]]}}\n{\"status\": \"complete\", \"result\": {\"pass\": true, \"tests_run\": 9, \"inherited\": {\"controls\": 11, \"pass\": true}}}\n"
+  },
+  "root_independent_synthetic": {
+    "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B independent_check.py --synthetic-only",
+    "exit_code": 0,
+    "checks": 10
+  },
+  "historical_commands": [
+    {
+      "run": "picture01",
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B picture_screen.py screen --run picture01 --controls controls04",
+      "session_id": 22202,
+      "status": "complete",
+      "exit_code": 0,
+      "output": "{\"status\": \"complete\", \"result\": {\"pairs\": 228, \"surface_shape\": [21, 51, 51], \"frames_verified\": 44}}\n",
+      "receipt": "picture01/receipt.json"
+    },
+    {
+      "run": "picture02",
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B picture_screen.py screen --run picture02 --controls controls04",
+      "session_id": 22378,
+      "status": "complete",
+      "exit_code": 0,
+      "output": "{\"status\": \"complete\", \"result\": {\"pairs\": 228, \"surface_shape\": [21, 51, 51], \"frames_verified\": 44}}\n",
+      "receipt": "picture02/receipt.json"
+    }
+  ],
+  "preserved_deviations": [
+    {
+      "stage": "author synthetic controls",
+      "observation": "Initial sandbox mkdir was denied before any output was written; scoped escalation succeeded."
+    },
+    {
+      "stage": "root pre-historical review",
+      "observation": "The original row-order test did not cover changing-image sequence order. The prior test source was preserved, an actual synthetic three-image sequence was added, and fresh controls03/04 passed before historical scoring. Producer and scoring protocol unchanged."
+    },
+    {
+      "stage": "checker synthetic controls",
+      "observation": "Initial JSON serialization failed on a NumPy boolean. Corrected to Python bool without changing numerical logic or tolerance; ten checks then passed."
+    },
+    {
+      "stage": "refusal-check orchestration",
+      "observation": "First JavaScript tool cell had an unexpected closing token and failed before any shell command ran. Corrected cell executed the intended refusal check, which passed and preserved all233 existing files."
+    }
+  ],
+  "root_independent_replay": {
+    "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B -c 'import json; from pathlib import Path; import independent_check as c; tests=c.synthetic(); r=c.verify(Path(\"picture01\"),Path(\"picture02\")); print(json.dumps({\"synthetic_checks\":len(tests),**{k:v for k,v in r.items() if k!=\"comparisons\"}}))'",
+    "chunk_id": "c5b302",
+    "wall_time_seconds": 7.706615708,
+    "exit_code": 0,
+    "original_token_count": 68,
+    "output": "{\"synthetic_checks\": 10, \"pairs\": 228, \"selected_transform_checks\": 444, \"dynamic_nulls\": 70, \"max_absolute_score_error\": 1.887379141862766e-15, \"max_absolute_coverage_error\": 4.440892098500626e-16, \"two_run_products\": 231, \"source_map_frames\": 44, \"ranking_groups\": 6}\n"
+  },
+  "root_existing_output_refusal": {
+    "command": "ruby -rjson -rdigest -ropen3 -e 'snapshot=-> {Dir.glob(\"picture01/**/*\").select{|p|File.file?(p)}.sort.to_h{|p|[p,[File.size(p),Digest::SHA256.file(p).hexdigest]]}};before=snapshot.call;out,err,status=Open3.capture3(\"/Users/admin/.pyenv/versions/3.13.7/bin/python3\",\"-B\",\"picture_screen.py\",\"screen\",\"--run\",\"picture01\",\"--controls\",\"controls04\");after=snapshot.call;raise \"did not preserve refused output\" unless status.exitstatus==1&&err.include?(\"FileExistsError\")&&before==after;puts JSON.generate({status:\"pass\",expected_command_exit:status.exitstatus,error:\"FileExistsError\",preserved_files:before.size,same_bytes:true})'",
+    "chunk_id": "3f7801",
+    "wall_time_seconds": 0.464815167,
+    "exit_code": 0,
+    "original_token_count": 28,
+    "output": "{\"status\":\"pass\",\"expected_command_exit\":1,\"error\":\"FileExistsError\",\"preserved_files\":233,\"same_bytes\":true}\n"
+  }
+}

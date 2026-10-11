@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-08",
+  "status": "passed",
+  "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/force69",
+  "role": "Separate computational raw-context and display audit; no annotation interpretation",
+  "scope": "Six fixed F6–F9 source-regions; preservation of all 41 preceding force45 artifact pins",
+  "protocol_sha256": "558eb117125fc3df1458e2c153e3a9635b67ed931df15e9114c26b507e209ff7",
+  "commands": [
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B read_context.py controls",
+      "receipt": "019c2d",
+      "exit_code": 0,
+      "controls": 13,
+      "timing": "Before both historical context saves"
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B read_context.py save01",
+      "receipt": "52a316",
+      "exit_code": 0,
+      "result": "Exclusive first save; 62,231 context records"
+    },
+    {
+      "command": "/Users/admin/.pyenv/versions/3.13.7/bin/python3 -B read_context.py save02",
+      "receipt": "ce3df2",
+      "exit_code": 0,
+      "result": "Exclusive second save; byte-identical to first"
+    },
+    {
+      "command": "cmp context01.json context02.json && shasum -a 256 read_context.py context01.json context02.json",
+      "receipt": "d84e8a",
+      "exit_code": 0
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B context-independent-check.py --controls",
+      "receipt": "b85721",
+      "exit_code": 0,
+      "controls": 47,
+      "timing": "Before the separate checker's historical decoding or saves"
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B context-independent-check.py --output context-independent-check.json",
+      "receipt": "30e1fc",
+      "exit_code": 0,
+      "result": "Every source RGB record, every sparse display column and all prior pins verified"
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B context-independent-check.py --output context-independent-check-repeat.json",
+      "receipt": "2ce0f2",
+      "exit_code": 0,
+      "result": "Full second check repeats exact bytes"
+    },
+    {
+      "command": "Bundled Python read-only six artifact hashes/lengths, exact audit equality, summary and source trailing-whitespace checks; git diff --check",
+      "receipt": "ee075f",
+      "exit_code": 0,
+      "result": "Exact audit repeat; no source trailing-whitespace or tracked whitespace errors"
+    }
+  ],
+  "artifacts": {
+    "read_context.py": {
+      "sha256": "ee266545221eb4ed63faa04c59e48fbcd69571092621c38d3d57d84e67af6a90",
+      "bytes": 5675
+    },
+    "context01.json": {
+      "sha256": "ac65b18cb58bbe1e7f003163e2b8dde55baddc4c1ef061655e202caef2820cb1",
+      "bytes": 7648192
+    },
+    "context02.json": {
+      "sha256": "ac65b18cb58bbe1e7f003163e2b8dde55baddc4c1ef061655e202caef2820cb1",
+      "bytes": 7648192
+    },
+    "context-independent-check.py": {
+      "sha256": "daaa3525317030d01a0e026fe6ea4efba20934c5868e8988c984c29f0f4e00aa",
+      "bytes": 20055
+    },
+    "context-independent-check.json": {
+      "sha256": "9ddd692d51443ebfba6a4d39a42519a54bbf8cbc1567b428e7c7aa907148424e",
+      "bytes": 26294
+    },
+    "context-independent-check-repeat.json": {
+      "sha256": "9ddd692d51443ebfba6a4d39a42519a54bbf8cbc1567b428e7c7aa907148424e",
+      "bytes": 26294
+    }
+  },
+  "counts": {
+    "context_records": 62231,
+    "display_columns": 854,
+    "prior_force45_artifact_pins_preserved": 41,
+    "producer_controls": 13,
+    "separate_checker_controls": 47,
+    "producer_dependency_pins": 9
+  },
+  "region_context_record_counts": {
+    "F6-Im2": 14432,
+    "F7-Im1": 4760,
+    "F7-Im2": 13112,
+    "F8-Im1": 14320,
+    "F9-Im0": 3815,
+    "F9-Im1": 11792
+  },
+  "verification_detail": "A separate implementation checks strict metadata/coordinate types, source-region identities, roster geometry, clipping, every saved row-major RGB record against independently decoded bytes, exact-white sparse display roundtrip, both context saves, and every preceding artifact pin before and after its run.",
+  "independence": {
+    "origin": "Adapted from the separately authored force45/context-independent-check.py (d9c5f52907a9d75e244bc8f4df3eeb3b5121f279f02d46ff3c1e477c57bf6767)",
+    "adapter_authorship": "This batch's producer adapter and checker adapter were both integrated by force69_context; new authorship independence is not claimed.",
+    "producer_imports": false,
+    "producer_selection_or_expansion_execution": false,
+    "read_only_producer_display_subprocess": true,
+    "current_annotation_files_accessed": false,
+    "prior_annotation_artifacts": "Opaque integrity hashing only; no annotation interpretation.",
+    "checker_runtime": "Python 3.12.14 / Pillow 12.3.0",
+    "producer_runtime": "Python 3.13.7 / Pillow 12.0.0",
+    "codec_limit": "Same Pillow decoder family; not independent codec validation"
+  },
+  "failures_or_repairs": [],
+  "limits": [
+    "Counts include overlapping and repeated source positions; they are not independent historical observations.",
+    "Source integrity is checked, not historical authenticity.",
+    "Composed-page bytes are pinned only; no rendering or visual correspondence check is made here.",
+    "No curve identity, native ink selection, calibrated curve bound, physical ordinate, seam join, model comparison, causal ranking or human acceptance follows.",
+    "No historical source was rewritten. All outputs are local research derivatives.",
+    "No external disclosure, solver, legal promotion, engine activation, commit or push."
+  ],
+  "human_accepted": false,
+  "physical_support": null
+}

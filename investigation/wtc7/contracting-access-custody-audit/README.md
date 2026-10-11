@@ -6,6 +6,18 @@
 
 ## Core question
 
+**October 8 security-source scope result:** The
+[bounded corporate-filing review](security-scope-2026-10-08/report.md)
+supports a company-reported WTC project and closeout, not a WTC7-specific
+assignment or continuous security control through September 2001. Historical
+client lists do not supply current contracts; project closeout does not prove
+all maintenance or access ended. Three partial primary-content representations
+were reviewed; the selected 1997 filing remained inaccessible. Original-byte
+preservation failed, and a separate reader reviewed the same saved projections,
+not independently acquired originals. Scope/access remain unresolved; no
+unauthorized-operation or cause finding follows. Do not repeat this finite
+filing pass as if it were unstarted.
+
 **September 27 structural-condition follow-through:** The
 [two-project and 1997 survey audit](structural-condition-followup-2026-09-27.md)
 confirms the existing 1-1C attribution and the reported filing-load
@@ -161,7 +173,7 @@ Evidence for an earlier proposition does not establish a later one.
 | Alterations and infrastructure | NIST NCSTAR 1-1J project identifiers W94-7176.02, W93-7233, W98-7134, W-7004/W-7005 | What were the approved scopes, contractors, dates, changes, inspections, and closeout records? |
 | Structural modifications | NIST NCSTAR 1-1C: W00-7122, W00-7224, W00-7202; April 1997 condition survey WTCI-122-P. Published entries reviewed in the linked follow-throughs above. | Were deficiencies repaired, by whom, and with what inspection evidence? Original project/closeout and full-survey records remain unresolved after the bounded appendix-index check; full appendix content was not audited. |
 | Fire-alarm monitoring | NIST NCSTAR 1-4 AFA history; September 11 test condition; recorded requester “Williams”; July 16, 2003 explanatory letter | What was requested, why, by whom, and how did it compare with a longer ordinary-maintenance baseline? |
-| Security systems | Securacom/Stratesec SEC filing and building-specific statement of work/service records | What was the actual WTC 7 scope and what access continued after project closeout? |
+| Security systems | Securacom/Stratesec SEC filings; [October 8 bounded source result](security-scope-2026-10-08/report.md) | Company-reported complex-level work/closeout supported within the saved-representation limit. WTC7 scope and continuing access unresolved; original building schedules, closeout and subsequent service/access records would discriminate. |
 | Cleanup and custody | NYC Health Registry Turner-sector designation; original cleanup contracts, manifests, instructions, and disposition records | Who controlled WTC 7 material and what preservation/disposal decisions were made? |
 | Recovered material | FEMA/NIST steel inventories, intake and laboratory records | Can any attributed sample be tied to a specific member, location, custody path, or method-specific finding? |
 | New municipal archive | September 2026 NYC WTC archive inventory and WTC 7 collection | What records are actually available; do not infer contents from the announcement. |

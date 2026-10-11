@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-08",
+  "status": "failed_before_audit_output_saved",
+  "annotation_region_scope": [
+    "F6-Im2",
+    "F7-Im1",
+    "F7-Im2",
+    "F8-Im1",
+    "F9-Im0",
+    "F9-Im1"
+  ],
+  "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-force69-all-v2-check.py --output independent-comparison-force69-all-v2-check01.json",
+  "command_receipt": "26440d",
+  "exit_code": 1,
+  "failure": "KeyError: 'context_blocks_inclusive'",
+  "failing_stage": "F7-Im1 primary coverage after its exact annotation reconstruction. F7-Im1 and F8-Im1 primary declare actual_shared_raw_blocks rather than context_blocks_inclusive.",
+  "interpretation": "Second checker representation-support gap. The failure does not demonstrate missing source inspection or invalid annotation; the shared-block schema requires separately implemented source-specific cell-union validation.",
+  "code_pins": {
+    "independent-comparison-force69-all-v2-check.py": {
+      "sha256": "94666990106566a0c819da55cb87d540831952e140b52cb3d1d4aed1365a8140",
+      "bytes": 53802
+    },
+    "test_independent_comparison_force69_all_v2.py": {
+      "sha256": "cfd133652d4b1555c8dfce576d59eef61cbb7c7fb925370e7a2e1dd05115fadb",
+      "bytes": 33546
+    }
+  },
+  "synthetic_tests": {
+    "count": 33,
+    "receipt": "06f8dc",
+    "exit_code": 0
+  },
+  "output_exists": false,
+  "no_output_and_schema_check_receipt": "9196d4",
+  "completed_before_failure": [
+    "Frozen inputs and preserved failure-version pins matched.",
+    "Raw-context and prior force45 pins matched.",
+    "All 62,231 source-context RGB records matched fresh native decoding.",
+    "F6-Im2 complete primary/peer reconstruction, coverage and comparison arithmetic passed.",
+    "F7-Im1 primary metadata and every annotation record reconstructed exactly and records validated before coverage dispatch failed."
+  ],
+  "not_completed": [
+    "F7-Im1 primary coverage validation",
+    "Remaining all-six annotation/comparison audit",
+    "Post-run preservation check",
+    "Any full audit output"
+  ],
+  "repair": "One bounded v2 repair reconstructed literal peer data additions without executing producer code. Unsupported peer operations reject; repeated dictionary keys across updates preserve last-write semantics and are explicitly logged.",
+  "prior_failure": {
+    "receipt": "independent-comparison-force69-all-failure-receipt.json",
+    "root_read_only_reproduction_receipt": "364c43",
+    "root_result": "Same ownership assertion, exit 1, empty stdout and no output file.",
+    "root_receipt_review": "b4cfd8"
+  },
+  "repair_limit": "Stopped code changes after this different coverage-schema failure. Root was sent exact read-only schema evidence and a proposed new v3 supporting only actual_shared_raw_blocks with source-specific RGB union tests.",
+  "preserved_semantic_limitation": "Root identified F8 peer columns 262, 263, 351, 357 and 358 with multiple unassigned fragments whose per-route ownership is prose only; structured references use aggregate band_id. No machine-verified fragment-specific ownership may be claimed. Route-selected cells exclude bands; all-ink unions bands once. Preserve exact schema and prose without interpreting prose as enforceable per-cell route ownership.",
+  "preservation": "Original partial checker/output, failed all checker/test, v2 checker/test, all reader/comparison/context/source files remain unchanged.",
+  "limits": [
+    "Computational AI audit only; no independent source interpretation, independent codec validation, human acceptance, physical metric or legal promotion."
+  ],
+  "human_accepted": false,
+  "physical_support": null
+}

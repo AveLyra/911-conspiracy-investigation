@@ -1,0 +1,70 @@
+{
+  "schema": "wtc7-bounded-source-access-v1",
+  "unit_date_local": "2026-10-08",
+  "status": "stopped_unacquired",
+  "protocol": {
+    "path": "PROTOCOL.md",
+    "bytes": 5337,
+    "sha256": "cf299c917a662a81f15ae9403939e51a6b13e5b59c7e77b938d09c2700e6638f"
+  },
+  "selection_source": {
+    "path": "../job1854-followup-locator/root-diagnostic.json",
+    "sha256": "c6a80ecc100e77cc3d387e17fa032e8c4032e4e13cb761d20bffd6eaed51e7d8",
+    "json_locator": "documents.NYC-WTC_000166874"
+  },
+  "selected": {
+    "document_id": "NYC-WTC_000166874",
+    "filename": "NYC-WTC_000166874.pdf",
+    "reported_pages": 52,
+    "reported_bytes": 2600724,
+    "reported_end_bates": "NYC-WTC_000166925",
+    "reported_source": "WTC 7",
+    "reported_box": "7DCAS",
+    "reported_folder": "GENERATOR PREPURCHASE SPECIFICATION",
+    "query_memberships": ["penn", "transient", "load_shedding", "break_glass"],
+    "metadata_strict_valid": true,
+    "metadata_missing_fields": [],
+    "metadata_error": null
+  },
+  "attempts": [
+    {
+      "ordinal": 1,
+      "url": "https://sept11documents.cityofnewyork.us/apps/content/September11_MD/NYC-WTC_000166874.pdf",
+      "clock_before_launch_utc": "2026-10-09 03:42:04 UTC",
+      "clock_after_terminal_observation_utc": "2026-10-09 03:42:31 UTC",
+      "elapsed_seconds_reported_by_curl": 20.009377,
+      "connect_timeout_seconds": 20,
+      "total_timeout_seconds": 45,
+      "maximum_bytes": 10485760,
+      "tool_session_id": 76269,
+      "launch_receipt": "ecfc31",
+      "nonterminal_poll_receipt": "cbb2c4",
+      "terminal_poll_receipt": "c77faf",
+      "terminal": true,
+      "exit_code": 28,
+      "curl_http_code": "000",
+      "http_response_status": null,
+      "received_bytes": 0,
+      "content_type": null,
+      "redirect_count": 0,
+      "outcome": "connection_timeout",
+      "acquired_sha256": null
+    }
+  ],
+  "retry_permitted": false,
+  "scratch_directory": "/private/tmp/wtc7-spec166874.mgFhuk",
+  "source_file_present_at_closeout": false,
+  "source_admitted": false,
+  "sensitivity_screen_performed": false,
+  "source_pages_rendered": 0,
+  "source_pages_read": 0,
+  "reported_pages_unread": 52,
+  "content_test_completed": false,
+  "source_authentication": "no_bytes_acquired",
+  "control_identity_result": "untested",
+  "historical_condition_result": "unknown",
+  "cause_ranking_changed": false,
+  "human_acceptance": false,
+  "sherlock_or_faraday_admission": false,
+  "coverage": "One selected catalog record and one direct request; not archive availability or content coverage."
+}

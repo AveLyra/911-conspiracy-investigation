@@ -14,7 +14,6 @@ IDs are stable in [discrepancy-index.csv](discrepancy-index.csv). This page is f
 | [DISC-012](discrepancy-index.csv) | Loads APDL includes `FL2-LOAD1`…`FL7-LOAD1` | Those six APDL files are not in the extract |
 | [DISC-016](discrepancy-index.csv) | June letter promised LS-DYNA inputs; June extract had none | Historical omission; six files arrived 2026-09-11 |
 | [DISC-022](discrepancy-index.csv) | `WTC7_CaseB_400pm.int` is not a June thermal-zip member | How does ANSYS Case B map onto this LS-DYNA field? |
-| [DISC-029](discrepancy-index.csv) | Case B `WTC7-Fl08-1C137-2.int` is 328 NUL bytes; A/C twins are BF TEMP cards | Readable Case B copy of that member |
 
 ## Version / variant labels
 
@@ -22,7 +21,7 @@ IDs are stable in [discrepancy-index.csv](discrepancy-index.csv). This page is f
 |---|---|
 | [DISC-001](discrepancy-index.csv) | 4.1hr vs 4.0hr |
 | [DISC-011](discrepancy-index.csv) | July include names vs August delivered APDL; loads file also banners 30JUL07 |
-| [DISC-013](discrepancy-index.csv) | Case B thermal folder `INTFILES+10%14SEP07`; A/C have no +10% twin. 400 shared members are not a uniform 1.10 scale of Case A |
+| [DISC-013](discrepancy-index.csv) | Case B thermal folder `INTFILES+10%14SEP07`; A/C have no +10% twin |
 | [DISC-014](discrepancy-index.csv) | Case B 8,906 = 8,364 shared ints + 96 `SLNo` + 173 `.nod` + 272 PNG + `mover` vs Fletcher 8,910 |
 | [DISC-025](discrepancy-index.csv) | `22AUG07` filename vs 15 August 07 comment |
 
@@ -82,10 +81,8 @@ New since the first ten LS-DYNA rows: **DISC-011–023**. The same pattern appea
 
 Phase 1 text-read every thermal member ≤2 KiB (23,713 files) plus a stratified header sample of large `.int` files. New rows: **DISC-024–028**. Floor 07 is commented in all 12 Case A/B hour drivers (pin correction to DISC-015). Case B’s extra 96 files are a live `SLNo` class. No new named include appeared beyond DISC-001/011/012.
 
-Second sweep (2026-09-12): hashed all 8,364 shared A/B/C basenames; scanned 1,644 large `.int` bodies for `/input`/delete/hour comments; extracted the SRC-029 June letter PDF from the EML; read PNG text chunks. New row: **DISC-029** (Case B `1C137-2` is NULs). DISC-013/016 pins corrected. Large bodies added no new named include. PNG text chunks: none. A≠B≠C on most shared names is the three-case structure, not a new mismatch.
-
-Remaining unread: PNG pixels; full BF/BFE numeric bodies beyond the include/comment hunt. That is a remaining gap, not a negative finding.
+Remaining unread as full bodies: large SLAB/member `.int` files beyond their headers, and PNG pixels. That is a remaining gap, not a negative finding.
 
 ## Priority (what to keep in front)
 
-See [README](README.md#definitely-note). Short version: for the case, keep the June omission, the named missing/unmatched files, the connection-material boundary, and the 2010/Case B count questions. For the investigation, keep the documented handoff, the one-sided 3.5 / 4.0-hour pair, and the June omission; treat +10%/`SLNo`/Fl11-13 only as follow-ups to the hour cut. Do not treat penthouse decoupling, hot unlabeled nodes, `mover`, or “hidden connections” as conspiracy evidence.
+See [README](README.md#definitely-note). Short version: for the case, keep the June omission, the named missing/unmatched files, the connection-material boundary, and the 2010/Case B count questions. For the investigation, keep the now-readable handoff and the one-sided 3.5 / 4.1 / +10% controls. Do not treat penthouse decoupling, hot unlabeled nodes, or +10% as conspiracy evidence.

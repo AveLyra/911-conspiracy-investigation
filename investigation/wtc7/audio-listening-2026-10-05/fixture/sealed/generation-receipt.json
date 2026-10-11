@@ -1,0 +1,169 @@
+{
+  "created_utc": "2026-10-05T06:42:07.122185+00:00",
+  "classification": "SYNTHETIC capability fixture; not historical or case evidence",
+  "seal": "Procedural withholding from root until frozen response; not encryption.",
+  "protocol_sha256": "c0d6f9aafd8295cfef9e2f865a174c2afbd1335e398fca333a638d7c7782b4af",
+  "generator_sha256": "dea891dd79724247c34f4f72ed2ae7d169f0ac43fc80715735f84eeb7961d772",
+  "python": "3.13.7 (main, Oct 24 2025, 00:40:52) [Clang 17.0.0 (clang-1700.0.13.5)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "randomization": "six independent secrets.choice selections with replacement; OS entropy; no resampling",
+  "voice": "Samantha",
+  "speech_rate_words_per_minute": 125,
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/sw_vers"
+      ],
+      "returncode": 0,
+      "stdout": "macos-version.stdout",
+      "stderr": "macos-version.stderr"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-version"
+      ],
+      "returncode": 0,
+      "stdout": "ffmpeg-version.stdout",
+      "stderr": "ffmpeg-version.stderr"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-version"
+      ],
+      "returncode": 0,
+      "stdout": "ffprobe-version.stdout",
+      "stderr": "ffprobe-version.stderr"
+    },
+    {
+      "argv": [
+        "/usr/bin/codesign",
+        "-dvv",
+        "/usr/bin/say"
+      ],
+      "returncode": 0,
+      "stdout": "say-signature.stdout",
+      "stderr": "say-signature.stderr"
+    },
+    {
+      "argv": [
+        "/usr/bin/say",
+        "-v",
+        "Samantha",
+        "-r",
+        "125",
+        "-f",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/fixture/sealed/transcript.txt",
+        "-o",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/fixture/sealed/synthesis.aiff"
+      ],
+      "returncode": 0,
+      "stdout": "synthesis.stdout",
+      "stderr": "synthesis.stderr"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/fixture/sealed/synthesis.aiff",
+        "-map_metadata",
+        "-1",
+        "-ac",
+        "1",
+        "-ar",
+        "8000",
+        "-c:a",
+        "pcm_s16le",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/fixture/synthetic-capability.wav"
+      ],
+      "returncode": 0,
+      "stdout": "convert.stdout",
+      "stderr": "convert.stderr"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-show_entries",
+        "format=format_name,duration,size:stream=codec_name,sample_rate,channels,bits_per_sample",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/fixture/synthetic-capability.wav"
+      ],
+      "returncode": 0,
+      "stdout": "probe.stdout",
+      "stderr": "probe.stderr"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/fixture/synthetic-capability.wav",
+        "-f",
+        "null",
+        "-"
+      ],
+      "returncode": 0,
+      "stdout": "full-decode.stdout",
+      "stderr": "full-decode.stderr"
+    }
+  ],
+  "attempt": 1,
+  "heard_by_generator": false,
+  "historical_inputs": [],
+  "loudspeaker_playback": false,
+  "say_binary_sha256": "a0c75425dfcaaf5316fe255f9d7be0748a1a24041dccaf50cfc73dbe02e18016",
+  "synthesis_success": true,
+  "synthesis_aiff_sha256": "f1dbb872f3abf7b34d0a2a486904dbc3da70c83d69b605670799656d593f0710",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "8000",
+        "channels": 1,
+        "bits_per_sample": 16
+      }
+    ],
+    "format": {
+      "format_name": "wav",
+      "duration": "3.813750",
+      "size": "61098"
+    }
+  },
+  "format_check": {
+    "frames": 30510,
+    "rate": 8000,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "compression": "NONE",
+    "full_pcm_byte_length": 61020,
+    "nonzero_pcm": true
+  },
+  "decode_success": true,
+  "verification_limit": "Format/decode/nonempty verification only; no intelligibility or listening claim.",
+  "output": {
+    "path": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/fixture/synthetic-capability.wav",
+    "sha256": "2efb96b9f62183d3d753098d7fe937964d0736a9ef0e5a29cb5dac92e6ffbe56",
+    "bytes": 61098,
+    "format": "WAV pcm_s16le",
+    "sample_rate_hz": 8000,
+    "channels": 1,
+    "duration_seconds": 3.81375,
+    "synthesis_success": true,
+    "decode_success": true
+  },
+  "status": "format-valid synthetic fixture generated"
+}

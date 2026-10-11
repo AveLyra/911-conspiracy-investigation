@@ -4,7 +4,450 @@
 
 **Destination:** Existing SHERLOCK task **Define Phase 0 invariants**, task ID `01a074ee-3dc0-7821-9125-aa8d9ffc2f8c`. Record notes there; do not create new tasks, external issues, or unsolicited implementation instructions by default.
 
-**Current routing:** That task is archived. New notes are **pending locally**, not delivered, while the existing user question about reopening it or choosing another task remains unanswered. The standing feedback request does not by itself select a replacement destination or authorize silently unarchiving a task. Continue the investigation and batch useful notes; do not repeatedly retry the archived destination.
+**Current routing:** On October 9, 2026, the user expressly authorized sending the sanitized queue to the existing destination and recording acknowledgment. The direct send succeeded. The consolidated 27-item batch is **delivered and acknowledged in the destination log**, not implemented or verified fixed. Details and exact payload are in the delivery entry below. Earlier dated local-only statements remain accurate history, not the current routing state.
+
+<!-- feedback-delivery-2026-10-09:start -->
+## October 9 authorized feedback delivery
+
+Batch **SFB-BATCH-2026-10-09** contains 27 consolidated acceptance extensions under existing SFB-002 through SFB-005, retaining SFB-001's resolved status. All 2,455 pre-delivery log lines were read in three complete partitions; root consolidated the themes and reviewed the exact outbound text, with a separate privacy/scope check. The raw log, case material, real source identifiers, private paths and attachments were not sent. Logging/triage only was requested, not implementation or investigation access.
+
+- [Exact sent text](feedback-delivery-2026-10-09/outbound.txt): 28,070 bytes; SHA-256 `bd3f148bdfb1c5c4c55a33afbba0bedad7e3d3258c224754a12566925d61a740`.
+- [Delivery and acknowledgment receipt](feedback-delivery-2026-10-09/receipt.json): send requested 12:55:56 UTC / 08:55:56 EDT. The app returned success for the exact destination; a subsequent snapshot confirmed turn `01a120bc-17ad-7c22-9d65-f95d545e7b2b`. Root then read the [saved acknowledgment](/Users/admin/dev/sherlock/FEEDBACK.md:6) and verified all 27 item IDs exactly once: 24 acknowledged extensions and items 15, 16 and 27 reported already covered. Those three coverage classifications are the recipient's dispositions, not independently verified implementation coverage. No clarification item was reported in the saved batch.
+- The reopen attempt returned “no archived rollout found”; no successful unarchive is claimed. The subsequent successful send and running target establish actual delivery independently.
+- Prior source-log SHA-256: `b15c8252d1de66034bd6778ef6185c9a345d1f597f358e5e412085ed3cd39c78`. Detailed dated recurrences remain preserved below; delivery of this consolidated digest does not mean the raw log was transmitted or every original sentence copied.
+
+The destination turn completed with an explicit [acknowledgment reply](feedback-delivery-2026-10-09/acknowledgment.txt) covering items 01–27. Its reported repository checks included a timing-sensitive suite failure that passed when rerun alone; root does not certify a fully passing suite or feature fix from that report. The exact sent-file hash/size/item checks, pre-delivery source-log reconstruction, destination-history reconstruction and `git diff --check` passed. No fix, feature retest, activation, case transfer or scientific finding follows from delivery or acknowledgment. Other source-handling and human-review gates are unchanged.
+<!-- feedback-delivery-2026-10-09:end -->
+
+**October 8 reference-only acquisition recurrence, SFB-005, local only:** A
+native raw-file fetch can return success, stated size/MIME and a `file_uri`
+object containing an expiring download locator without a local materialized
+file. The observed tool set supplied no identified native materialization
+action. Extend existing acquisition-state and redact-before-display fixtures:
+use a dummy reference-only response and require acquired-bytes=false until a
+supported transfer produces a checked local artifact. Do not expose reference
+values in diagnostics, infer source refusal from this local capability gap,
+or mark an unattempted second item failed. Desired behavior is a supported,
+privacy-preserving file-reference-to-local-artifact path with size/hash checks
+and distinct referenced/materialized/admitted states. This is an observed
+integration need, not a demonstrated Sherlock defect or tested product fix.
+Generic response shape only; no real locators, file IDs, titles, case material
+or private paths. Deduplicated locally, not sent, acknowledged or activated.
+
+**October 8 byte-boundary and diagnostic-status recurrence, SFB-004/SFB-005,
+local only:** A local append-log verifier falsely reported a changed snapshot
+because it added a newline to a prefix that already retained its final newline.
+Its shell wrapper then ran a successful final check, masking the first process
+failure in the aggregate status. Synthetic reproduction: append a heading to
+`"x\n"`, split immediately before that heading, and compare the exact prefix
+with the original; adding another newline must fail. Separately, a failing
+first command followed by a successful command must not become overall verified
+success. These behaviors were reproduced locally; the corrected real check
+preserved all source bytes. Acceptance: compare literal byte boundaries and
+retain each operation's result or propagate failure explicitly, without
+relaxing expected hashes. This extends existing provenance/diagnostic fixtures,
+not a demonstrated Sherlock defect or product fix. Generic examples only;
+queued locally, not sent, acknowledged or activated.
+
+**October 8 claim-link integration recurrence, SFB-004/SFB-005, local only:**
+A local synthetic check initially accepted complete ID rosters with every
+evidence/transform edge erased. Require applicable joins or field-specific
+consequential gaps, and test actual traversal reachability; counts alone are
+not coverage. The corrected local controls reject erased/unreachable links.
+Separate content review also caught analysis-section locators copied onto
+upstream inputs and two modalities of one uploaded item assigned unjoined
+families. Synthetic acceptance must distinguish input, derivation and output
+locators, preserve shared origins without asserting original synchronization,
+and keep semantic review separate from structural validation. A reviewer also
+withdrew an apparent file-change warning after binary/UTF-8 string equality
+was corrected: compare byte-normalized data/hashes and file state, not string
+encoding metadata. These are reproduced local workflow/checker issues, not
+inspected Sherlock defects or implemented product fixes. Generic examples
+only; no case payload, external transmission, new destination or acknowledgment.
+
+October 8 additive-revision recurrence, same SFB-004/SFB-005 note: a verifier
+bound to an initial baseline does not automatically protect later additions.
+For a synthetic baseline-plus-extension update, retain the complete latest
+reviewed objects and ordered additions, not only their IDs or original subset.
+Reject undeclared new rows and changed old qualifications/acceptance flags;
+bracket the full delegated validation call with control-integrity checks.
+The local wrapper's mutation/reordering/flag fixtures pass, with its real
+selected-file check separately executed. This is a local versioned-preservation
+requirement, not a demonstrated Sherlock defect or product fix. The existing
+Ruby byte-versus-encoding diagnostic lesson recurred and was resolved without
+changing data. Generic examples only; queued locally, not sent or acknowledged.
+
+October 8 reading-provenance recurrence, same SFB-004/SFB-005 fixtures:
+a later complete small-block observation can resolve an earlier truncated-read
+gap without retrospectively certifying rejected displays. Preserve the pinned
+partial snapshot; append attributable new reading receipts and version any
+completed output/consumer binding. Test that a new observation does not silently
+flip old completion or human-acceptance flags. This is an observed local workflow
+requirement, not a demonstrated product defect or fix. No case content, private
+path or new destination is included; queued locally under unchanged routing.
+
+**October 7 annotation partition extension, SFB-004/SFB-005, local only:**
+Two readers can choose the same outer pixel set while assigning different
+cells to a confident core and tentative fringe. Extend the existing
+annotation/dependence fixture to retain these classifications separately.
+Synthetic case: reader A core {1}, fringe {3}; reader B core {3}, fringe {1}.
+Acceptance: outer-set equality must not become complete agreement, row 2
+must not be filled, and neither the intersection nor union may be labeled a
+calibrated original-source confidence bound. Require unambiguous names for
+agreement versus disagreement counts. Priority: prevent scientific overclaim
+from a reproducible annotation. This is an observed local workflow need,
+not an inspected Sherlock defect. Generic synthetic data only; no source
+images, case details or private paths. Queued locally, not sent or fixed.
+
+Extend that same annotation fixture to fragment membership: two separately
+named pieces can have a contiguous combined row set without becoming one
+identified stroke. A single identifier without an optional membership map
+must also remain distinguishable from missing attribution. Synthetic acceptance:
+preserve original schemas/labels, reject automatic multi-piece fusion, and
+report geometry eligibility separately from source containment or acceptance.
+Both forms are exercised by local synthetic controls. This is an observed
+workflow need, not an inspected Sherlock defect; no new issue, case payload,
+delivery or claimed fix. Routing remains pending locally.
+
+The same fixture now also covers uncertainty vocabulary and provenance
+adapters. One reader can label unassigned tentative cells `fringe_only`,
+another `identity_conflict`; preserve the literal labels and represent unknown
+fragment membership separately. A known-label fringe can remain distinct from
+either. Accept only documented pin/target schema aliases, reject contradictory
+aliases, and distinguish an originally declared source pin from a verifier's
+later additional pin. Synthetic controls exercise these cases and changed
+dependencies before comparing actual records. This is a reproduced local
+workflow need, not a demonstrated Sherlock defect or a delivered fix. No new
+issue family or sensitive payload; pending under the same routing boundary.
+
+The same schema fixture now has a reproduced silent-field-loss hazard: an old
+normalizer recognized a membership map under one coordinate schema but ignored
+a list-valued membership field under another. In a synthetic two-piece record,
+unadapted classification admitted a single-fragment rectangle; an explicit
+copy-only adapter retained both memberships and excluded it. Acceptance:
+dispatch only declared schemas, preserve all originals and membership unions,
+reject conflicting aliases, and prevent an unsupported field combination from
+silently weakening the single-fragment rule. The new local integration uses
+the tested adapter; no saved historical result is shown affected. This is a
+local-method hazard, not an inspected Sherlock bug or product fix. Generic
+synthetic example only; deduplicated under SFB-004/SFB-005, queued locally.
+
+October 8 qualification-preservation recurrence, same SFB-004/SFB-005 fixture:
+a versioned inventory can preserve all old measurements exactly while its
+rewritten summary drops a still-applicable limitation. Generic reproduction:
+an older annotation batch has broad conflict references; a later batch has
+precise references, but both remain in the combined dataset. Acceptance:
+preserve each batch's qualifier and scope in current summaries; do not imply
+that the newer schema retroactively repairs old data. Review semantic changes
+alongside object/hash equality. If found after output freeze, preserve that
+version and make an explicit, narrowly checked narrative correction without
+changing numerical arrays. This was a local authoring lapse caught by separate
+review, not a demonstrated Sherlock defect or product fix. Generic fixture
+only, no case values, identities, paths or source payload. Queued locally
+under unchanged archived routing; not sent or acknowledged.
+
+Related local dependency-test recurrence, same SFB-005 fixture: resolving a
+child path but not its root can misconstruct a relative dependency key across
+an operating-system alias. Test canonical and aliased temporary roots, normalize
+both sides consistently, and retain strict allowed-path boundaries rather than
+widening them to make a test pass. The local synthetic failure was repaired
+before historical output; no Sherlock implementation was inspected or changed.
+No real paths or diagnostics are proposed for transmission.
+
+October 8 owner-map recurrence, same SFB-005 fixture: a local consumer assumed
+two manifests used one relative-path base, although each declared a different
+owner. It failed before sample selection. Resolve each map against its own
+owner before normalizing the combined keys; synthetic parent/child aliases
+must resolve to one unchanged artifact, and before/after drift must fail.
+Both new regression checks pass locally. This is a reproduced local integration
+error, not an inspected Sherlock defect; no source payload or real path is
+included, and delivery remains pending under the existing routing boundary.
+
+The same closure fixture recurred at the next verification layer: checking
+every listed pin still missed four dependencies of an already pinned receipt.
+An independently reconstructed required closure rejected the candidate before
+release. Preserve it and its code, extend the complete receipt dependency map
+under a separate output identity, and assert every non-dependency scientific
+field is unchanged. Do not relabel a successful listed-pin hash check as full
+closure. This local repair and retained failure are not a Sherlock product fix.
+
+Related versioned-review recurrence under SFB-004/SFB-005: stable sample labels
+can identify different coordinates after a declared input extension. Bind
+display and copied human responses to the packet ID and full byte hash, preserve
+the old packet and all uninspected states, and prohibit automatic acceptance
+transfer based on label equality. A generic same-label/two-version fixture is
+the proposed product test, not a request for case access or a delivered fix.
+
+October 8 closure-cache recurrence, same SFB-005 fixture: a local wrapper
+pre-pinned a JSON input, then a recursive helper's already-pinned early return
+skipped that file's dependencies. Generic reproduction: pre-pin A and B where
+A declares B and B declares C, then require a complete dependency closure.
+Acceptance must include C and reject changed C bytes despite A/B being cached;
+keep traversal expansion state separate from the byte-pin map. The local fix
+and nested-map/script regressions passed before historical output. This is not
+an inspected Sherlock defect or product fix. Generic fixture only; no case
+payload or new issue family. Routing remains pending locally, not delivered.
+
+The same fixture family should distinguish one visible band from two
+independently identified series: an overplotted pair and a single remaining
+series can look alike. Acceptance must preserve unknown membership rather
+than duplicate one observation into apparent two-series agreement. Keep a
+later correction alongside the original reading, including when every
+checklist field was filled. This is an observed annotation/inference risk,
+not a verified Sherlock defect. No new issue family, case payload, delivery
+or implementation approval is implied.
+
+The same fixture now has a reproduced transcription failure: a compact manual
+run included exactly white cells as tentative visible ink. Synthetic acceptance
+must compare every selected cell to the preserved source, distinguish an
+explicit uncertainty envelope from an ink annotation, and flag a mismatch
+without silently editing the frozen reading. A versioned erratum must identify
+its parent, exact membership changes, unchanged remainder and post-exchange
+status; retain the original freeze as history, not a new independent reading.
+Repeatable correction does not validate the remaining annotations. This extends
+the existing fixture, not a new product-defect claim. Generic data only;
+pending locally under the same archived-destination boundary.
+
+The same fixture now covers fringe-only boundary truncation: a selected faint
+edge can touch the crop boundary while its confidently visible core lies
+outside the target. A prior local checker required a nonempty core for every
+truncated fragment; the next checker removes that unnecessary restriction
+without rewriting the earlier frozen outputs, which were unaffected. Synthetic
+acceptance must permit a nonempty fringe-only identified boundary fragment,
+reject empty truncation and invented flags, and keep the unknown outside-crop
+continuation separate from a true endpoint. This is a demonstrated local
+validator limitation and tested fixture, not an inspected Sherlock defect.
+Generic coordinates only; no case payload or new transmission. Queued under
+the unchanged archived-destination routing boundary.
+
+October 8 extension to that same comparison fixture: reader roles must not
+depend on dictionary insertion order. A newly tested local adapter explicitly
+selects the named primary and secondary reader before forming directional
+differences. Synthetic acceptance reverses the input mapping order and requires
+identical output, with primary-only and secondary-only cells still attributed
+to the correct reader. This addresses a potential API-order weakness observed
+in the preceding local implementation; its saved runs used the expected order
+and are not shown wrong. The local adapter/control passes, not a verified
+Sherlock product fix. Generic synthetic roles and cells only; no source data,
+case payload or transmission. Pending under the same archived destination.
+
+The same fixture now includes two source regions for one named series. Native
+coordinates can coincide while the source images and transforms differ.
+Synthetic acceptance keeps both region/source keys, rejects swapping or
+collapsing them, and never infers a seam join from the shared series label.
+An overlapping region may reuse an actual prior reading only after exact
+source-cell equality and explicit coverage/receipt linkage; that is not a
+second observation. A local mutation also demonstrated that a named but empty
+unassigned band could receive a seemingly valid reference. The corrected local
+validator requires a nonempty same-column band and a recorded reason, while
+still preserving empty records separately from missing records. The new
+controls pass; no original source annotation was changed. Priority: attribution
+and missingness integrity. These are observed local workflow needs, not
+verified Sherlock defects or fixes. Generic synthetic examples only, no case
+payload, new destination, delivery or acknowledgment; routing remains local.
+
+Extend this same region-coverage fixture to completion scope: every item in a
+fixed crop roster can be finished while broader source-region obligations
+remain. Preserve separate states for qualitative inspection, literal footprint,
+justified measurement bounds, admitted support and actual human acceptance.
+Synthetic acceptance joins completed crops to the original full-scope inventory,
+retains unmeasured and unresolved portions separately, and refuses to convert
+unknown common support to an empty domain. A context halo does not enlarge
+the target and overlapping older work is not new evidence. This recurrence
+is a local workflow risk, not a demonstrated Sherlock defect. Generic fixtures
+only; the archived destination remains unresolved and no note was transmitted.
+
+October 8 continuation of that completion-scope fixture: repeated successful
+recovery batches can defer the actual measurement-admission decision even when
+the controlling protocol permits partial domains. Require a named limiting
+condition and expected decision impact before adding another recovery batch;
+do not infer completion from more annotations or relabel accessible unmeasured
+regions unreadable. A proposed synthetic acceptance case has two completed
+local regions and one unresolved contact: the next action must assess the
+existing regions' admission, or explain which specific prerequisite the next
+recovery resolves. This transition is adopted locally; the proposed product
+test has not been implemented or run. Deduplicated workflow feedback, not a
+verified Sherlock defect. Generic fixture only, queued locally; no delivery.
+
+The shared-source attribution fixture also now includes two different series,
+each read twice, using overlapping source cells. Local synthetic checks cover
+all four reader pairings, both confidence classes and unassigned material;
+same row numbers in different columns must not intersect. Preserve every
+cross-series intersection as a candidate attribution conflict, not corroboration
+or permission to overwrite either original. These tests pass in the local
+comparison harness, not Sherlock. No case payload, new issue family or delivery;
+the archived routing boundary is unchanged.
+
+The same fixture now separates a conditional coordinate window from established
+curve support. A visible dash cap may occupy a pixel without its generating
+path covering the entire column; a selected-cell enclosure does not establish
+an error bound for omitted halo. Synthetic acceptance preserves identity,
+full-column existence and enclosure assumptions separately, retains competing
+reader/axis alternatives, and prevents marginal boxes sharing one calibration
+from becoming independent errors or automatic support. Local synthetic and
+complete arithmetic checks exercise the conversion, not those assumptions.
+This is an observed workflow need, not a verified Sherlock defect. No new
+issue family or case payload; queued locally under the same archived routing.
+
+October 8 candidate-admission extension to the same fixture: presence of both
+series somewhere does not establish overlapping comparison support. Compute
+overlap in shared source geometry before uncertain coordinate mapping; two
+disjoint intervals shifted by one shared uncertain offset can have overlapping
+marginal hulls without ever intersecting together. Also check cross-route
+ownership even within one reader: a tentative edge cell can appear in both
+series although each route's core/fringe sets are individually disjoint.
+Synthetic acceptance preserves the original selections, flags the shared
+cell, retains unaffected local intervals and does not convert conditional
+coverage or an empty candidate set into accepted support or a zero curve.
+Twenty local producer controls exercise these safeguards, including all four
+reader combinations; 26 separate checker controls and full calculation replay
+also pass. These are not a Sherlock product test or verified fix.
+Generic fixture only; deduplicated SFB-004/SFB-005 note, queued locally under
+unchanged archived routing, not delivered.
+
+Scope-of-claim review adds a recurrence to the same completion-scope fixture:
+a prerequisite for full physical-system validation must not silently become
+a gate for a narrower published-graph comparison. Preserve different claims
+and their actual dependencies in separate rows. Synthetic acceptance should
+reject both automatic physical promotion from graph agreement and blanket
+withholding of graphical analysis pending a system-level test. This was a
+local report wording issue corrected by review, not an inspected product bug;
+no new issue, sensitive payload, external delivery or product fix is claimed.
+
+The same fixture now needs distinct namespaces for a conditional review sample
+and an originally required accepted-support sample. A length-quantile target
+can lie on an excluded shared endpoint even when adjacent intervals merge for
+length bookkeeping. Synthetic acceptance must retain that target as unresolved,
+keep missing primary coverage rather than substitute a peer, display all
+same-position alternatives, and never treat a UI click as a human response.
+Separately, finite-renderer controls can have identical pixels but different
+subpixel support/extrema: preserve the renderer-specific limitation without
+claiming historical error rates. These local controls were exercised; this is
+a workflow need, not an inspected Sherlock defect or product fix. Deduplicated
+under SFB-004/SFB-005; generic examples only, pending locally under unchanged
+archived-destination routing. No new payload or destination is authorized.
+
+That same fixture now distinguishes route-specific uncertainty from a generic
+same-column conflict. A band tentatively belonging to route B must not make
+an unrelated empty route A conflicted. Require explicit candidate-route labels
+(including an explicit empty list), reciprocal same-column references, and
+nonempty material for a conflict status. Local synthetic tests exposed missing
+labels silently defaulting to empty and empty bands carrying conflict status;
+the pre-fix code is preserved and the repaired checks pass. Also verify any
+separately recorded expansion-helper pin, not only files in a primary input
+map. A changed-helper fixture must fail even when the frozen annotation bytes
+are unchanged. These are local provenance/representation safeguards, not
+verified Sherlock product defects or source-reading corrections. Generic
+fixtures only; queued locally under the same unresolved archived destination.
+
+One remaining representation limit in that fixture: prose may assign two
+pieces of an aggregate uncertainty band to different candidate routes while
+both machine references target the entire band. Do not describe that as
+machine-enforced fragment ownership. Synthetic acceptance must preserve the
+original aggregate schema and notes, distinguish it from explicit member-level
+references, and prevent downstream support construction from silently assigning
+all band cells to each route. Existing all-ink set comparisons can remain
+valid without that stronger identity claim. This is an observed local encoding
+limit, not a verified Sherlock defect; no frozen observation is rewritten.
+
+Extend that same fixture to multiple disjoint uncertainty bands in one column.
+A local legacy validator/index assumed a single band; a later frozen reading
+legitimately supplied two, with different candidate routes. Synthetic example:
+at one x, band U selects row1 for route A and band V selects row4 for route B.
+Acceptance: retain both original records under (x,band_id), preserve each
+reciprocal reference, union both only for an explicitly all-visible-ink
+comparison, reject cross-route references, and never overwrite by x alone.
+An explicit schema adapter may validate and translate local-ink status labels
+without rewriting originals or silently changing ownership. Local synthetic
+tests now cover both-band retention and rejection of a wrong-route reference.
+This is a demonstrated local workflow limitation, not an inspected Sherlock
+defect or product fix. Deduplicated SFB-004/SFB-005 extension, generic cells
+only; queued locally under the unchanged archived-destination boundary.
+
+The same provenance fixture now covers an incomplete replay command: a local
+partial audit saved the executable and script but omitted the required scope
+argument. Its external receipt preserves the working command without rewriting
+the original output. Acceptance: commands reproduce the exact declared scope;
+saved partial code and outputs remain immutable when later scope is added;
+an expanded version has a distinct identity and complete dependency pins.
+A generic synthetic fixture must distinguish one-region from all-region
+replays and fail before reading inputs when the required frozen scope is
+missing. This is a demonstrated local receipt defect, not an inspected Sherlock
+product defect. Keep it deduplicated under provenance/replay safeguards; no
+case payload, transmission, acknowledgment or product fix is claimed.
+
+The same reproducibility safeguard must cover inert source reconstruction:
+an independent local checker read an initial configuration literal but ignored
+later explicit data-only updates, then failed its historical equality check.
+Preserve that failure and implementation. A versioned correction must handle
+only declared data operations, retain list order and update semantics, reject
+unsupported mutations, and pass synthetic fixtures before replay. Do not
+execute producer code or copy its result to manufacture independence. This
+extends the existing replay fixture, not the source observation or a verified
+Sherlock defect. Generic example: a declared map, a literal submap update and
+a literal list append must reconstruct all three; an unknown operation fails
+closed. Queued locally, with no case payload or transmission.
+
+The same fixture also needs explicit coverage-schema dispatch: a later local
+checker supported direct column blocks but failed on declared same-source
+shared rectangles. Preserve that failed version. A separate repair must check
+exact schema, source identity, typed bounds, referenced-context containment,
+receipts, complete source-cell union and equality; counts or overlapping areas
+alone cannot establish coverage. Reject ambiguous schemas and gaps. Passing
+these checks verifies the recorded coverage, not independently witnessed
+perception. The repaired local full audit passes without rewriting source
+annotations; this is not a verified Sherlock fix. Same queued-only routing.
+
+Extend the existing reader-independence safeguard to metadata: a permitted
+integrity manifest can expose truth-related filenames and equal hashes even
+when the actual answer file is withheld. A minimal synthetic test gives a
+reader two unnamed candidate images plus a manifest containing alternative
+labels and hashes. Acceptance: a truth-withheld packet uses only its own
+allowlisted artifact manifest, and any exposure is retained as a blinding
+limitation rather than retroactively called independent discovery. This is
+an observed local workflow issue, not an inspected product defect. Generic
+fixture only; pending locally under the same archived-destination boundary.
+
+**October 7 shared exclusion rule extension, SFB-004/SFB-005, local only:**
+An exploratory detector sweep changed contrast thresholds while retaining one
+color exclusion. A continuous synthetic nonwhite band then produced identical
+artificial gaps in every run. Reproducibility and parameter agreement did not
+validate the detected topology. Desired behavior: retain shared preprocessing
+and exclusion dependencies when presenting sensitivity or validation results;
+do not label correlated runs independent evidence. Minimal synthetic fixture:
+alternate pale and saturated colored pixels along an uninterrupted band,
+apply a fixed color cutoff with several contrast cutoffs, and retain the
+known-continuous ground truth alongside the broken detections. Acceptance:
+the record preserves the failed control, shared rule and narrowed claim; a
+passing replay cannot promote line identity or erase the control. Priority:
+scientific-validity safeguard before consequential measurement. This is an
+observed workflow need, not a demonstrated Sherlock implementation defect.
+No case imagery, names, private paths or physical measurements are included.
+Queued locally; not sent, acknowledged, implemented or verified fixed. The
+latest destination turn read supplies no newer acknowledgment and its
+notLoaded status alone does not independently establish archival status.
+
+October 5 current-state routing check: two archived-task pages of fifty were
+queried using the returned cursor; page two again contained the exact target
+ID/title. Only the relevant target metadata was surfaced. No send, unarchive,
+new task or rerouting occurred. This confirms the same pending decision, not
+scientific progress or feedback delivery.
+
+**October 5 human-sample selection extension, SFB-004/SFB-005, local only:**
+An observation workflow can require selected human checks while failing to
+specify how the samples are selected. Extend the existing candidate-freeze,
+review-coverage and partial-admission fixtures: freeze an outcome-independent
+selection rule and complete target census before discrepancy results; preserve
+unavailable targets, boundary ties, coincident native footprints and original
+failed selections rather than replacing them with convenient points. Retain
+the source/registration version, actual inspected coverage and attributable
+response. Acceptance requires deterministic replay from the frozen inventory
+and rejects a passed spot-check as whole-source validation or a calibrated
+confidence interval. Priority: evidence integrity before consequential use.
+This is an observed local method gap, not an inspected Sherlock defect or a
+new issue family. Generic synthetic fixture only; no case names, sources,
+measurements or private paths proposed for transfer. Pending locally under
+the archived-destination decision, not sent, acknowledged or fixed.
 
 September28 current-state recheck: `read_thread` returned the designated task
 "Define Phase 0 invariants" with its last completed triage turn; `notLoaded`
@@ -15,6 +458,134 @@ the target without pagination. No send, unarchive, replacement or implementation
 request occurred. New source-display feedback remains locally pending.
 
 **States:** observed/proposed → sent → acknowledged/triaged → fix-reported → locally verified. Acknowledgment is not a fix. Include a date, source/version when available, impact, safe reproduction, and acceptance check. Before every send, apply the repository privacy rule to the exact payload and destination. Case-sensitive and sensitive security details stay local pending specific approval; an apparently harmless synthetic example is preferred.
+
+**October 5 audio access recurrence, SFB-002/SFB-005, local only:** A valid
+synthetic speech file was forwarded through an available audio-content helper,
+but the returned content explicitly stated that audio input was omitted because
+the recipient did not support it. File-generation and byte-delivery checks
+passed; auditory perception did not occur. This is an observed caller workflow
+limit, not an inspected Sherlock defect. Priority: prevent fabricated media
+review and unblock the human-listening handoff. Generic acceptance fixture:
+retain separate file-ready, emitted, perceptually-accessible, listened and
+human-reviewed states; an unsupported-modality response must leave events
+unknown, not an empty list interpreted as no events. Preserve the failed route,
+offer a local human-review packet, and do not loop without changed capability.
+Even a successful clean-speech control must not certify noisy-event detection
+or causal timing. This extends existing representation/admission feedback;
+no new issue family or implementation authorization. No case data, paths or
+historical audio are proposed for transfer. Pending locally under the existing
+routing question; no new send, acknowledgment or claimed fix.
+
+October 4 routing recheck: two actual archived-task pages of fifty entries
+were inspected using the returned cursor. The second page contained the exact
+designated task ID/title. Archived status is established by that listing,
+not its `notLoaded` field. No send, unarchive or replacement was performed;
+new minimized notes remain queued locally under the existing routing question.
+
+**October 4 acquisition and document-role recurrence, SFB-005, local only:**
+The existing access-response/representation fixtures should retain a reader-only
+failure followed by a separately declared successful direct acquisition, without
+rewriting the failure or calling it server refusal. Extend the catalog-cover
+fixture with a later request that encloses earlier design comments: request,
+attachment, agency response, revision and installed-state acceptance must remain
+separate. Acceptance rejects both a folder label promoted to an instruction and
+a review comment promoted to an unresolved historical defect. The same fixture
+now distinguishes a document's own date
+from the earlier documents it modifies, and listed sheets from selected issued
+sheets or completed work. These are source-role checks, not separate product
+issues. This is workflow feedback, not an inspected Sherlock bug; no sources, real values,
+private paths or attachments are proposed for transfer. Deduplicated locally;
+archived-task routing unchanged, nothing sent or claimed fixed.
+
+October 8 reader-projection recurrence, same SFB-005 fixture: a reader can
+display selected source passages while direct acquisition returns an error
+body. Preserve the exact projection, requested windows and failed response
+as different artifact roles; a hash of either is not a hash of the unavailable
+original. Synthetic acceptance uses a partial text view, an HTTP403 HTML body
+and a second reviewer who can inspect only the shared view. Reject original-
+acquisition, whole-document coverage and independent-corroboration claims;
+allow a separately labeled interpretation review. This is a workflow need,
+not an inspected Sherlock defect or implemented fixture. P2 under existing
+SFB-005, generic payload only, pending locally under the unchanged archived
+destination; no new delivery, acknowledgment or verified fix.
+
+October 4 identifier-search recurrence, same SFB-005 fixture: a synthetic
+catalog uses `A.B.C.` while an initial literal search uses `ABC`. Preserve
+the original zero/match coverage and prospectively declared normalization
+pass separately; report token, line, logical-record and source-family counts
+as different quantities. A known original can lack its drawing number in
+metadata, so a metadata nonmatch must not become original-record absence.
+Acceptance includes that counterexample and rejects both retroactive query
+rewriting and double-counting link labels/URLs. This is a reproducible workflow
+need, not an inspected product defect. No case payload or new delivery;
+existing archived-destination boundary remains.
+
+October 5 follow-through, same identifier-search fixture: a short token such
+as `Q-1` can match inside `A-Q-1` or `Q-1.1`. Preserve the complete original
+field and distinguish token leads from exact identifiers; exercise these
+compound cases before selection. Another local run again found a known source
+under a generic, nonmatching label. These extend the existing acceptance
+fixture, not a new product issue or verified fix. Synthetic labels only;
+no case payload, transfer or new delivery. Routing remains pending locally.
+
+October 4 catalog-grain recurrence, same SFB-005 fixture: an introduction
+defines counts as folder totals and links as the first document, while a row
+alone appears to describe a multi-page download. Our row-only intake initially
+misread the grain; the introduction corrected it. Synthetic acceptance must
+carry the parent count/link definitions into selection, retain the original
+expectation and correction, and distinguish complete-file from complete-folder
+coverage. Do not report expected first-document length as a failed download
+or missing evidence. This is a local workflow error and fixture extension,
+not an inspected Sherlock defect or fixed product behavior. No real source
+values, names, paths or attachments proposed for transfer; pending locally.
+
+October 4 search-extraction recurrence, same SFB-005 fixture: a saved metadata
+result can remain identical while a live local-filename join changes after
+new acquisition. Preserve the acquisition-time inventory or label that join
+as current-state enrichment; do not call its change a source mutation or a
+failed historical reproduction. Synthetic acceptance also preserves capped
+queries, previous-page availability, missing termination evidence, absent
+empty-result keys and inconsistent reported counts. Local parser defects
+were corrected without changing the frozen real extraction; these are workflow
+requirements, not inspected Sherlock bugs. The split-cover recurrence is already
+covered by the existing document-role fixture. No new case payload, delivery
+or acknowledgment; archived routing remains pending.
+
+The same search-extraction fixture now includes an omitted descriptive field.
+Keep the strict-contract failure, supplied fields and quarantined occurrences;
+do not fill the omission with a literal sentinel or discard its identifier.
+Acceptance reconciles total, strict-valid and quarantined counts at occurrence
+and unique-ID grain, while a separate diagnostic success cannot become a
+full-contract pass. Include a known-positive content item that one terminated
+keyword query misses but another retrieves; a successful locator control does
+not certify OCR/index coverage. Generic workflow extension only, not an inspected
+product defect. Pending locally, with no case payload or new delivery.
+
+The same fixture includes a keyword-positive catalog precaution and an actual
+measurement report that the query misses. Acceptance requires source-context
+roles before either a match becomes a measured event or a nonmatch becomes
+absence. A related cover explicitly says an enclosure will follow upon receipt;
+preserve that pending state and a separate review request without promoting
+either to later delivery or completed review. Generic extension of the existing
+search/source-role fixture only; no new product defect, case payload or delivery.
+
+October 4 attachment-label recurrence, same SFB-005 fixture: a synthetic
+cover promises drawings A/D but the supplied title blocks say C/F and concern
+another subsystem of the same project. Preserve both descriptions and classify
+the actual attachments; do not rewrite them to match the catalog or infer
+intent from the mismatch. Acceptance also rejects joining an equal numerical
+dimension when one is a platform height and the other a conduit diameter.
+This extends existing attachment/quantity-role checks, not a new defect or
+product fix. Generic example only; no case payload. Pending locally under the
+unchanged archived-destination boundary, not sent or acknowledged.
+
+The same attachment-role fixture now includes one unmarked copy saying
+"included" and related copies with a handwritten "consult separate file".
+Preserve the annotation, unknown author/date and shared source family; neither
+overwrite the text silently nor count versions as independent events. Acceptance
+rejects treating every copy as promising an enclosure or the annotation alone
+as suppression. This is a generic workflow extension, not an inspected product
+bug. No case details or new delivery; the existing routing decision is pending.
 
 **2026-09-27 experimental-endpoint extension — local only, SFB-004/SFB-005:**
 Extend existing quantity-definition, nominal/realized-input and version fixtures.
@@ -151,6 +722,55 @@ adapter failure is established by stale documentation. Generic fixture only;
 no case payload, paths, identifiers or source data proposed for transmission.
 Queued under the unchanged archived-destination boundary, not sent or fixed.
 
+October 4 export-boundary extension, same SFB-005 fixture: distinguish an
+export's read-only scientific projection from its new output files and expected
+audit-log append. Use synthetic records to check these categories separately;
+a false authority-merger flag is not proof that no state changed. Destination
+IDs and well-formed hashes also need actual endpoint/byte verification before
+being called resolved. Test whole-object metadata minimization before real
+payload selection. This is a source-inspected integration requirement, not a
+run-verified defect or scientific validation. Generic note only; no case data,
+private paths or attachments proposed. Queued locally, not sent or fixed.
+
+October 5 execution follow-up to the same SFB-005 export fixture: the bounded
+pilot did not reach export. Its harness missed a test-runner stream interface
+and supplied an unsupported evidence-direction literal. Preserve a distinction
+between launch/configuration failure, fixture-setup refusal, executed target
+case and verified result. Zero collected tests with zero reported test failures
+is not a pass; absent post-run inventory is not an empty successful inventory.
+Acceptance for a future generic fixture: check the actual CLI enum and stream
+contract before target execution, preserve all attempts, retain explicit
+synthetic/pending/non-scientific fields, and never rename an unexecuted export
+case as a product failure or passing capability. The single repair allowance
+was exhausted, so no automatic corrective loop follows. These are our harness
+defects and review misses, not verified Sherlock defects or bridge-result
+findings. Existing endpoint/metadata/export-event requirements above remain
+source-inspected, not runtime-verified. No case payload, private path or source
+document is proposed for transmission; locally queued, not sent or acknowledged.
+
+October 7 executed export follow-up, same SFB-005 fixture, local only:
+separately authorized synthetic retries now reached export. Two runs retained
+synthetic/pending/non-scientific flags and matched declared semantic results.
+They also accepted a nonexistent destination with a syntactically valid digest,
+and allowed exploratory evidence export after its raw file changed or went
+missing. Local artifact locators remained in exported metadata. These are
+observed scope limits, not proof of a violated product contract, a successful
+Sherlock admission, or valid scientific evidence. Earlier unexecuted states
+remain preserved as history.
+
+Desired integration behavior: distinguish serialized, destination-resolved,
+current-source-verified, admitted and human-accepted states explicitly. Before
+reliance on a real export, independently resolve its destination and digest,
+recheck selected source bytes, review the exact metadata payload for disclosure,
+and retain any unresolved state rather than silently upgrading it. Synthetic
+acceptance tests should include valid and missing destinations, matching and
+mismatched digests, changed and missing source bytes, and locator disclosure;
+test the declared enforcement layer without retroactively changing exporter
+requirements. No automatic product patch or real-case transfer is authorized.
+The reproduction and limits are in the local control-retry result. This
+deduplicated note contains no case payload and remains queued, not delivered,
+acknowledged or fixed, pending the archived-destination routing decision.
+
 **2026-09-24 quantifier/review-role supplement — local only, SFB-004/SFB-005:**
 Extend the existing quantity-definition and completion fixtures, not a new
 issue. Synthetic reproduction: a question asks whether motion was mostly
@@ -211,6 +831,31 @@ request, not an inspected Sherlock defect. Existing failure-capture fixtures
 also cover setup before receipt initialization and logger-versus-direct-stderr
 gaps; no duplicate issue or verified product fix is claimed. Queued under the
 unchanged archived-destination routing boundary; no case payload or new send.
+
+**October 4 batched-search attribution extension, same SFB-005 — local only:**
+A two-query request returned one combined result list without per-result query
+membership. Preserve both requested queries and their combined returned set;
+do not invent per-query hit counts, rankings or zero-hit claims. Synthetic
+acceptance: a mock two-query union with one shared result must either retain
+explicit query-result joins or label them unknown; both queries still consume
+the declared budget. Separate calls can preserve attribution prospectively,
+but a missing join does not authorize an extra historical search after the
+budget is used. This is an observed tool/workflow limitation, not an inspected
+Sherlock defect or verified fix. Generic dummy queries only, locally queued;
+no real identifiers, returned personal information or new transmission.
+
+**October 4 delayed search-result extension, same SFB-005 — local only:**
+A submitted search first exposed a heading without entries or an explicit
+zero-result state; a later same-page observation showed results. Synthetic
+acceptance: distinguish typed, submitted, pending/unknown, populated and explicit
+zero-result states; record the selected category, not just the query; allow a
+declared bounded readiness observation without a second submission. An empty
+temporary container must not become a negative source finding. Preserve both
+states and label an inferred delay when no loading marker was observed.
+This extends the search-coverage and loading-state fixtures, not a demonstrated
+Sherlock defect or verified fix. Generic dummy query/UI only; no case data or
+paths proposed for transfer. Locally queued under the unchanged archived-task
+routing boundary, not sent or acknowledged.
 
 September27 extraction-scope extension, same SFB-005 fixture: a coordinate-
 filtered header/footer locator admitted entire scanned-page OCR objects,
@@ -448,6 +1093,18 @@ Sherlock defects or verified fixes. No real IDs, URLs, case material, environmen
 values or private paths belong in the proposed payload. Queued locally under
 the existing archived-destination limit; not transmitted or acknowledged.
 
+October 7 recurrence, same acquisition-default fixture: an ordinary download
+again invoked an automatic container repair after a prose-only no-remux plan.
+The changed copy was retained, a separate repair-disabled acquisition obtained,
+and native decoded audio compared equal under the tested decoder. This is an
+execution lapse against a known default, not a new historical-evidence claim
+or proven Sherlock defect. The existing acceptance requirement should be
+fail-closed in acquisition preflight: a raw-preservation job must explicitly
+disable repair before execution; a subsequently matching decoded stream must
+not retroactively relabel changed container bytes as raw. Deduplicated here;
+no case payload, paths, source IDs or new external message. Routing remains
+pending at the existing archived-destination boundary.
+
 **2026-09-20 failure/display/baseline extension — local only, SFB-002/SFB-005:**
 Extend the existing diagnostic and truncated-display fixtures. A subprocess
 timeout can raise before a wrapper preserves captured output; a diagnostic
@@ -478,6 +1135,133 @@ fixtures only; no case values, source names, images, private paths or diagnostic
 metadata are proposed for transfer. Queued locally under the unchanged
 archived-destination routing boundary; not delivered or acknowledged.
 
+**2026-10-08 prerequisite-gating recurrence — local only, same SFB-002/SFB-005:**
+A failed output-directory prerequisite was followed by dependent render jobs,
+which all failed. This was an observed local orchestration defect, not an
+inspected Sherlock defect. Extend the existing failure fixture: an explicitly
+denied output-directory setup must launch zero dependent children; preserve
+the failing setup result. Recovery must confirm earlier children terminal,
+create only an authorized scoped destination, and pass one bounded preflight
+before fan-out. Retain original failure receipts separately from successful
+recovery and distinguish truncated projections from complete stdout/stderr.
+Priority: prevent avoidable repeated failures and false processing claims.
+Generic synthetic fixture only; no case source, private path or raw diagnostic
+payload. This acceptance test is proposed, not implemented or engine-verified.
+Queued locally under the unchanged archived-destination boundary; not sent.
+
+**2026-10-04 image-forwarding recurrence — local only, same SFB-002/SFB-005:**
+An image loader received an explicit original-detail request, but the caller
+forwarded its image through a helper without preserving that detail argument.
+A second reader explicitly preserved it. Recorded displays differed; the
+invocation difference does not prove the sole cause of resizing or a product
+defect. Extend the existing display-integrity fixture with a synthetic fine-text
+page, both forwarding paths, and a larger saved raster that may still be
+displayed smaller. Acceptance: retain loader request, forwarding request,
+saved geometry and actual returned geometry separately; never call these
+matched-resolution reviews merely because source hashes match. Preserve
+frozen readings and disagreements; do not assume effects are confined to
+known disputed glyphs or silently rerun a failed representation contract.
+Priority: evidence-integrity reporting. Generic local workflow note only;
+no case images, measurements, names, source IDs or private paths proposed for
+transfer. Archived-destination routing remains unchanged; not sent, acknowledged,
+implemented or verified fixed.
+
+Same-day local follow-through: both readers explicitly carried the original-
+detail request through loader and forwarding helper on the next fixed page
+set. No explicit resize notice returned. This verifies the recorded invocation
+change only, not matched displayed geometry, an A/B causal test, calibrated
+fine-text accuracy or a Sherlock product fix. No case examples are transmitted.
+
+October5 local follow-through on the same fixture: both readers preserved
+the original-detail flag at both stages, yet the larger representation
+explicitly reported resizing. Record that as a display limitation, not a
+failed source hash or proof that the invocation repair had no effect. A larger
+delivered image still did not resolve the selected fine-detail relationship.
+This updates the existing workflow observation, not a new product issue or
+verified Sherlock fix. No real images, identifiers, dimensions or case findings
+are proposed for transfer; archived routing remains pending locally.
+
+October8 source-dimension recurrence, same SFB-002/SFB-005 fixture: copying a
+neighboring raster's width into a new protocol can pass synthetic display
+checks while the actual-source preflight rejects it. The guard correctly
+stopped the local run before output or annotation; this is an analyst setup
+error, not an inspected Sherlock defect. Generic reproduction: two image
+families share height and color mode but have different stored widths.
+Acceptance: obtain geometry from each pinned source before freezing its
+protocol, test wrong-width rejection, preserve failed configurations, and
+record a prospective amendment rather than quietly revising source metadata.
+Keep orientation-display size separate from stored-pixel size. No real image,
+dimension, source identifier, path or case result is proposed for transfer.
+Queued locally under the existing archived-destination routing boundary;
+not sent, acknowledged or verified as an engine change.
+
+**Same provenance fixture, note-order recurrence, local only:** A repeated
+patch anchor placed a final observation section before intermediate sections,
+although the actual view/save operations followed the declared sequence.
+Preserve the frozen artifact and disclose the layout error; do not treat
+heading order as independent evidence of acquisition/observation chronology.
+Synthetic acceptance: reject ambiguous insertion anchors, verify expected
+section membership/order before freezing, and retain an append-only operation
+sequence separately from the editable presentation. This is an observed local
+authoring error and improvement need, not an inspected Sherlock defect.
+An interruption extension is now needed: a source view followed by an unrelated
+user request and context handoff can leave the note unsaved until resumption.
+Synthetic acceptance should retain the view/save sequence and delayed-note
+attribution, prevent an automatic immediate-recording compliance claim, and
+require preservation before the next source view. Independent agreement may
+support the content but cannot retroactively cure the timing deviation.
+Generic fixture only; no real sources, case values, personal fields, private
+paths or images proposed for transfer. Deduplicated under SFB-002/SFB-005;
+archived routing remains pending, not sent, acknowledged or fixed.
+
+Same fixture, source-version transcription extension: a later schedule has a
+numeric value where an earlier schedule is blank; a reader accidentally carries
+the value backward. Another miscopied numeral creates an apparent subtotal
+discrepancy. Synthetic acceptance must bind each transcription to its exact
+source version, page, row and field; preserve blank/zero/unknown separately;
+and require a source check before calling an arithmetic mismatch a source
+anomaly. Keep frozen readings, initial failed arithmetic and a prospectively
+declared post-exchange correction distinct. Arithmetic agreement alone must
+not choose the preferred numeral or retroactively manufacture independent
+agreement. Priority: evidence integrity. This is an observed local workflow
+failure, not a demonstrated Sherlock product defect or verified fix. Generic
+fixture only, with no case sources, values, identities or private paths;
+deduplicated under SFB-002/SFB-005, local only while routing remains unresolved.
+
+**2026-10-04 validation-order recurrence — local only, same SFB-002/SFB-005:**
+Separate method and source reviews caught a local adapter branch that rejected
+short output before recording a completed subprocess's return code and byte
+count/hash. Extend the existing failure fixture: capture basic status/partial
+output diagnostics before shape/content validation, including timeout paths;
+test the full publication/failure path, not only helper functions. A repaired
+local adapter passes synthetic success, short/nonzero, timeout, changed-input
+and anchor-mismatch controls. This is not a Sherlock defect or verified engine
+fix. The interpreter-selection issue is already covered by the runtime fixture
+above. No case data, source names, private paths or raw diagnostics are proposed
+for transfer. Deduplicated and queued locally; no archived-task reopen, send,
+acknowledgment or reroute is claimed.
+
+The same diagnostic fixture also needs labeled counts: one warning category's
+count must not be presented as the count of all warnings. A synthetic mixed-log
+test should retain each category and severity, report the aggregate separately,
+and preserve a checker's failed assertion when an overlooked category is found.
+The local producer's frozen result was qualified, not rewritten to hide its
+ambiguous label; no new Sherlock test or fix is claimed. This extends the same
+queued generic fixture, without source identifiers or diagnostic payloads.
+
+**2026-10-03 content-quality recurrence — local only, same SFB-002/SFB-005:**
+A received video frame can contain severe visual banding while its decoder
+reports no warnings and repeated extraction yields identical pixels. Extend
+the existing integrity-versus-usability fixture, rather than open a duplicate
+issue: a synthetic clip with intentionally embedded stripes and an opaque
+banner should pass byte/decoder repeatability while retaining a separate
+visual-quality flag and an unobservable-region mask. A passing technical
+receipt must not clear historical authenticity or physical-measurement gates.
+This is a research-workflow lesson, not an inspected Sherlock defect or claimed
+fix. No real image, source identifier, private path or case detail is proposed
+for transfer. Queued locally under the existing archived-destination routing
+boundary; not delivered or acknowledged.
+
 **2026-09-24 human-coordinate-viewer follow-up — same SFB-002/SFB-005:**
 A required human spot-check cannot be fulfilled when the available image
 viewer lacks reliable native-pixel coordinates. The user explicitly reported
@@ -502,6 +1286,38 @@ can skip native pixels; disclose that limitation and provide native/doubled
 scale or single-pixel keyboard adjustment. Preserve loading states and stale
 geometry/tool-action failures rather than calling them successful selections.
 These local results are not a Sherlock implementation or verified Sherlock fix.
+
+October8 recurrence, same SFB-002/SFB-005, local only: an automated synthetic
+click aimed at a cell center in a reduced view reached the adjacent native
+row. Delivered event coordinates were not logged; do not diagnose input
+quantization or exonerate mapping from marker alignment alone. Retain intended
+and reported cells separately. Require fine-view/keyboard checking and explicit
+abstention when precise selection remains unreliable; never infer a universal
+one-pixel bound. Acceptance for a future diagnostic fixture: preserve source
+size, displayed rectangle, DPR, intended input, delivered event coordinates,
+reported cell and marker location through zoom/scroll/resize, keeping automated
+practice separate from actual human review. This adds diagnostic detail to the
+existing reduced-scale fixture, not a new issue or demonstrated engine defect.
+No case examples or private paths are proposed for transfer. Still queued
+locally under the archived-destination routing boundary; not sent or acknowledged.
+
+October8–9 diagnostic follow-through, same SFB-002/SFB-005, local only:
+a separate synthetic-only logger preserved requested versus delivered pointer
+coordinates and event-time geometry across twelve fixed Fit/native/doubled
+targets. One intended reduced-view miss recurred: adjacent intended rows received
+the same delivered position. The independently authored cell-boundary oracle
+agreed with all twelve selected cells; recorded geometry was stable. This
+supports delivery change as the explanation for the **new** miss, not the
+unlogged earlier event, a particular stack layer or a universal rounding rule.
+No production mapping repair is indicated by this sample. Six fine-view hits
+are not a general accuracy guarantee; retain fine-view/keyboard checks and
+explicit abstention. No historical annotation or human acceptance was generated.
+The local diagnostic and computational review are complete, not a verified
+Sherlock implementation/fix. Preparation failures, a source-pin race and the
+replacement packets remain documented; no failed case was silently replaced.
+This is a deduplicated workflow result, with no case examples/private paths
+proposed for transfer. Still queued under the unchanged archived-destination
+routing boundary; not sent, acknowledged or activated.
 
 **2026-09-20 display-integrity extension — local only, SFB-002/SFB-004:**
 Extend the existing image/annotation fixtures, not a new engine-defect claim.
@@ -596,7 +1412,14 @@ figure instead of dropping it from coverage or treating it as nondetection.
 Page-layout rendering may supply context but must not silently replace a
 native-image contract. Pin imported dependencies as well as the producer;
 a later independent calculation can corroborate a result without repairing
-the original run's missing dependency closure. Keep ciphertext, decrypted
+the original run's missing dependency closure. The same fixture now includes
+recorded dependencies of dependencies: A pins B, whose map pins C. Acceptance
+traverses declared maps with explicit relative-path bases, rejects conflicting
+pins and missing descendants, and distinguishes required execution inputs from
+separately pinned narrative/navigation context. Preserve the incomplete first
+run; a versioned before/after repair must retain identical substantive outputs
+or explicitly explain any difference. This recurred in local analysis and was
+repaired/tested there, not verified in Sherlock. Keep ciphertext, decrypted
 encoded-image bytes and rendered pixels distinct. This extends existing
 fixtures after an observed local-method limitation, not a demonstrated
 Sherlock defect or verified fix. No real image, measurement, source identity,
@@ -615,6 +1438,28 @@ local source check exercised these states, not a Sherlock engine test; no
 verified product defect/fix is claimed. No real URLs, headers, identities or
 case content are proposed for transmission. Existing destination remains
 archived; this deduplicated extension is not delivered or acknowledged.
+
+October 4 recurrence: a local checker printed complete raw response headers
+unnecessarily. Use allowlisted header/transport fields for diagnostics and
+retain raw headers as local-only preservation material with an explicit staging
+guard. Acceptance checks that logs and proposed feedback omit cookie values;
+byte-preservation success alone is not disclosure clearance. This records a
+workflow error and mitigation, not a demonstrated Sherlock implementation bug.
+
+October 7 recurrence, same SFB-002/SFB-005 fixture: a provider operation returned
+successful remote artifact references, but local byte transfers returned
+HTTP403 and produced no file. Preserve listed, referenced, transferred and
+media-verified as separate states. Requested fields omitted by a normalized
+metadata response must not become provider absence. Signed transport links
+were also echoed in diagnostic output before saved-response redaction; this
+recurs under the existing redact-before-display requirement. Acceptance uses
+dummy temporary URLs and synthetic responses to test redaction before output,
+stable-ID preservation, stop-on-denial behavior and a public query-parameter
+control that must not be misclassified as a secret. Later saved-file redaction
+does not erase earlier output. These are observed workflow failures/needs, not
+an inspected Sherlock defect or verified product fix. No actual URLs, source
+IDs, metadata, case content or private paths are proposed for transfer. Local
+only under the unchanged archived-task routing boundary; not sent or acknowledged.
 
 **2026-09-20 archived-link identity extension — local only, SFB-004/SFB-005:**
 Extend the existing provenance fixture with an anchor whose displayed URL
@@ -1029,6 +1874,153 @@ No source payload; local only under the unchanged archived-destination boundary.
 
 ## SFB-002 — Measurement add-on boundary and media lineage
 
+**2026-10-05 same local ASR route, output-state and runtime extension:**
+Preserve ellipsis-only segments and untranscribed intervals separately from
+silence or no-event findings, even when repeated machine outputs match exactly.
+Keep nearby self-corrections and alternative explanations with event-related
+speech. Synthetic acceptance: punctuation-only output cannot become a sound
+absence claim, and quotation extraction must not discard a following qualifying
+clause. Also name the verified interpreter: an ambient older Python passed
+validator-only tests but failed the shared hashing helper before inference.
+Preflight must exercise required runtime capabilities, not just imports or
+unrelated unit tests. This extends SFB-002/SFB-005; no new product defect,
+sensitive example, external send or claimed fix. Archived routing is unchanged.
+
+**2026-10-05 local speech-model route extension — local only, also SFB-005:**
+A conversational audio-input failure does not establish that an already cached
+local speech-recognition model is unavailable. Inventory authorized local
+routes separately from perceptual access. Existing project wrappers may add
+domain vocabulary prompts, read unrelated manifests/credentials, or rewrite
+transcripts; inspect those side effects before reuse. A neutral investigation
+adapter should expose model/source/runtime identities, exact preprocessing,
+prompt use, raw text/timing outputs and repeat disagreement, while preserving
+human observations as a separate layer. Synthetic acceptance: an adapter
+invocation omits an unrelated wrapper lexicon, leaves its project unchanged,
+records downmix/resampling, and never converts a spoken report about an event
+into detection of that event. This is an observed workflow opportunity, not
+a demonstrated Sherlock defect or a claim that ASR supplies human listening.
+No private source text, files or paths are part of this generic note. Queued
+locally under the unresolved archived-destination routing; not sent or fixed.
+
+**2026-10-04 native-metadata and probe-scope extension — local only, also SFB-005:**
+A generic probe/normalized catalogue can omit native source-name/timecode tags
+that a bounded container-header check recovers. Synthetic acceptance: preserve
+the returned projection separately from field absence; retain raw offsets,
+payloads, NUL-terminated text prefixes and uninterpreted binary tails; never
+promote editable metadata to an authenticated event clock. Repeated alternate
+fields in one file are not independent corroboration. A metadata-output command
+may internally decode while discovering stream information, so verify that
+behavior before promising zero decoding. Separate output type from execution
+scope. Preserve oversized/truncated captures and index-skip defects; cap displays
+without converting missing capture into a complete receipt. These extend the
+existing provenance/probe and failure-scope fixtures, not a verified Sherlock
+bug or fix. No actual names, clocks, case text, source files or private paths in
+the proposed generic payload. Queued locally under unchanged archived routing;
+no delivery, acknowledgment or new project task.
+
+**Same fixture, eight-item follow-through:** Original and alternate metadata
+lanes must remain independently comparable; disagreement should not suppress
+both usable values. Prefix equality must not be reported as complete-payload
+equality when binary tails differ. A source-order conflict can survive every
+within-clip frame choice while still depending on unverified camera-versus-
+edited-master semantics. Synthetic acceptance must preserve that conditional
+conflict, test both interpretations, retain mixed lossless byte encodings, and
+neither authenticate chronology nor erase the conflict merely because an edit
+is possible. This is a workflow/test requirement, not a verified engine defect.
+Only generic examples are queued locally; archived routing and no-send status
+remain unchanged.
+
+**Same fixture, display conversion versus evidence validation:** A primary
+library's display helper maps invalid counter digits to zero. An investigation
+adapter must preserve invalid/unknown components and raw bytes instead of
+inheriting that convenient display fallback. Synthetic acceptance: malformed
+digits, omitted counter labels, changing counting modes, repeated/skipped
+values and day-wrap candidates stay explicit; an accidental one-step difference
+across a mode change is not continuous timing in one convention. Matching a
+stream counter to an editable file label supplies internal consistency, not two
+independent clocks. This is an observed integration risk and tested local
+contract, not a source-inspected Sherlock defect or product fix. Generic note
+only; no case values, files or private paths, and no send under archived routing.
+
+**Same fixture, visual-clock dependency extension (also SFB-004):** A source
+image can be dated using an observed object's state; an enlargement or derived
+map may inherit that time. Neither the extra representation nor its new label
+creates an independent clock or validation observation. Synthetic acceptance:
+retain the image-to-state-to-inferred-time dependency graph, shared offsets and
+unexplained travel/dwell assumptions; do not convert overlapping marginal
+ranges into an independent relative-time confidence interval. Permit explicit
+joint reconstruction but reject an independent-validation label when it reuses
+the state that supplied its clock. A primary workflow description is not proof
+of its application to a particular file. This is a method-contract need, not
+an inspected Sherlock defect or fix. Only generic examples remain locally queued;
+no case imagery, clocks, source IDs or private paths are proposed for transfer.
+No send or acknowledgment under unchanged archived routing.
+
+**Same fixture, executable search-specification check:** A saved pattern map
+can contain extra escaping even when the recorded search results are correct.
+Preserve that original, publish the exact executable pattern/flag map separately,
+and reproduce every declared source/page count before calling the search
+reproducible. A display representation is not automatically executable syntax.
+The local investigation corrected and checked its own artifact; no Sherlock
+implementation or product fix is claimed, and no new payload was delivered.
+
+**Same fixture, metadata-storage recurrence:** A whole-item compressed-output
+allowance rejected completed raw-metadata inventories. Synthetic uniform data
+had not predicted the historical bytes' storage size. Do not discard unexplained
+padding or selected metadata fields to force a pass. A versioned correction may
+partition lossless metadata at fixed frame boundaries, with explicit per-artifact
+and total bounds, exact gap-free coverage, strict decompression and byte equality,
+exclusive output creation and final source checks. Preserve the original refusals
+and distinguish a newly enlarged total storage contract from meeting the old
+limit. This is a local pipeline design issue and a generic regression-test need,
+not a verified Sherlock defect or fix. No case files or raw values are queued
+for transmission; unchanged archived routing keeps the note local and unsent.
+
+Local retest: the revised storage implementation passed boundary, corruption,
+collision and incomplete-output controls, including a high-entropy synthetic
+fixture and a real synthetic container-to-artifact round trip. The new bounded
+historical collection also completed; the old cap failures remain recorded.
+This verifies the investigation's local correction only, not a Sherlock product
+change. Byte-consistent metadata still requires a separate provenance/clock
+interpretation; storage success must not auto-promote it to historical truth.
+
+**2026-10-03 diagnostic-format recurrence — local only, same fixture:** A strict
+producer-specific parser accepted a zero-valued runtime throughput field but
+refused a space-padded integer form during a larger run. Synthetic acceptance
+should cover supported producer formatting independently from encoded media
+timing, while still rejecting unknown lines, warnings and changed frame joins.
+Preserve the original failed log and admission; a diagnostic-only in-memory
+normalization is not permission to relabel it clean. Any grammar correction
+requires a new pinned version, negative controls and a declared execution
+schedule. This is an observed local investigation-parser defect, not an
+inspected Sherlock defect or verified fix. No case media, raw logs, values or
+private paths are proposed for transfer. Queued locally under the unchanged
+archived-destination boundary; no send or acknowledgment.
+
+**October 4 local verification follow-through, same recurrence:** Checked the
+producer's tagged primary source before permitting exactly its single-ASCII-
+space padding at one named field. A separately identified wrapper preserves
+the original module and refused output, records both parent and wrapper hashes,
+and keeps cumulative resource accounting across versions. Author and independent
+fresh controls passed; new paired extractions also passed while earlier products
+remained excluded. Tests distinguish inherited child-process coverage from
+actual configured-wrapper coverage. This verifies the narrow local correction,
+not a Sherlock implementation or fix, historical source authenticity, or a
+general diagnostic normalizer. No new payload, send or acknowledgment.
+
+**2026-10-03 resampling exclusion extension — local only, same fixture:**
+During method preparation, both reviewers identified that a nearest-resized
+validity mask can admit values contaminated by bilinear mixing from excluded
+pixels. Mask disjointness alone does not test this. Add a synthetic pair with
+identical permitted content and contrasting excluded content; require identical
+values at every declared-valid output location through every allowed resize
+and field-selection branch. A conservative buffer is acceptable only in its
+tested domain, with lost coverage explicit. Priority: before relying on scored
+measurements. This is a diagnosed local method-design risk, not an inspected
+Sherlock bug or verified product fix. No case imagery, coordinates, paths or
+results belong in the proposed payload. It remains unsent under the existing
+archived-destination routing boundary.
+
 **Photometric fit/evaluation supplement — local only:** A rectangle labeled
 "background evaluation" can overlap a separately named training rectangle.
 Require an actual mask-intersection assertion after resampling/exclusions,
@@ -1107,6 +2099,45 @@ generic synthetic cases are proposed for later triage; no case values, media,
 private paths or raw diagnostics. Not sent while the designated task remains
 archived and routing is unresolved.
 
+October 7 extension to the same SFB-002/SFB-004 scene-correspondence fixture:
+reversing a list of scored rows is not a test of changing-image sequence order.
+Use invented image sequences with identical stationary scenery and distinct
+changing regions, then reorder the reference images. Acceptance preserves
+ambiguous stationary assignments while recovering the reordered changing-detail
+candidates; it must not issue an original-clock or soundtrack certificate.
+Keep candidate-set alternatives, coarse-sampling endpoints, mask-dependent
+detail and aspect normalization explicit. A good candidate can justify a dense
+test without authorizing post-result threshold/region tuning. The local
+synthetic control was added and passed before historical execution; this is a
+workflow correction, not an inspected Sherlock implementation defect or
+verified engine fix. Generic invented examples only; no source images,
+identities, measurements, private paths or case data proposed for transmission.
+Unsent under the unchanged archived-destination routing boundary.
+
+Dense-refinement clarification for that same fixture: reject duplicate index
+entries, not distinct presented indices carrying identical pictures. A new
+synthetic control retains all such entries. A top-two visual shortlist can
+sample only one near-identical cluster while other near-best bands remain
+unviewed; retain those alternatives and forbid a uniqueness certificate.
+Refining a previously selected time window is not independent corroboration.
+These are local workflow safeguards, not an inspected product defect or new
+issue family; no case payload or delivery is added.
+
+**October 8 common-support recurrence, same SFB-002/SFB-004 fixture, local only:**
+Two fitted transforms can admit equally many pixels at different positions.
+Comparing scores on those different sets can misattribute a support change to
+geometry. A synthetic fixture now explicitly gives equal-cardinality but
+unequal-position valid sets. Acceptance records both sets and their intersection,
+evaluates the already selected transforms on that common set without refitting,
+and applies coverage against the original full-mask denominator. Preserve
+missing-transform and coverage/variance failures rather than replacing them
+with zero. Independent controls pass for the differing-position fixture and
+common-support gates. This extends the existing scene-correspondence contract,
+not an inspected Sherlock defect or a verified product fix. Only this generic
+synthetic lesson is queued; no case images, values, identities, private paths
+or raw diagnostics are proposed for transfer. Unsent while the designated
+destination remains archived and routing unresolved.
+
 **Observed need:** 2026-09-08. **Priority:** P2, required before quantitative media work. **State:** acknowledged; no fix reported.
 
 The README documents specialist processing only for deterministic text comparison. A separate media workbench currently preserves bytes and derivatives; a validated motion/audio-measurement bridge is not established here. This is a capability request, not a claim that every underlying schema field is missing.
@@ -1120,6 +2151,19 @@ The README documents specialist processing only for deterministic text compariso
 **2026-09-08 technical supplement acknowledged:** Synthetic review of the local timing prototype exposed default autorotation/autoscaling and output clock normalization. The corrected diagnostic disables implicit transforms, validates per-frame geometry/format, checks exact rational source/output PTS alignment, rejects malformed hashes, and preserves initial/sanitized failure provenance. These generic acceptance lessons were sent under SFB-002, without historical footage, case results or private metadata. The destination turn completed and direct inspection of its FEEDBACK.md confirmed the requirements were appended under SFB-002. This supplements the same issue; it does not claim Sherlock has implemented or validated the method.
 
 **2026-09-11 acoustic-method supplement — local only, SFB-002:** A measured default downmix can differ from an arithmetic mean; independent-channel content can cancel; direct seeking can return different decoded samples than full-file decoding at the same requested interval. Plot limits can hide retained numeric peaks, and machine transcript segment offsets can be mistaken for sound or visual event times. Synthetic acceptance: left-only/right-only/in-phase/antiphase fixtures; measured mixing coefficients; full-decode versus seek comparisons with retained residuals; explicit plotted-versus-numeric range checks; separate audio sample clock, video PTS, transcript navigation and independently reviewed event annotations. A successful rerun must not imply source authenticity or detection calibration. These are observed workflow needs, not demonstrated Sherlock defects. No case files, values, source names, paths or raw diagnostics are proposed for transfer. Delivery remains pending under the archived-destination routing limit.
+
+**October 7 waveform-specificity extension, same SFB-002/SFB-005, local only:**
+A synthetic repeated tone produces multiple perfect waveform matches, whereas
+a shifted nonperiodic passage has a recoverable offset. Acceptance: retain full
+signed search profiles, competing peaks, undefined low-energy scores, channel
+pairs and explicit candidate selection; separate sample-grid resolution from
+timing accuracy. A scale-one failed screen must not exclude shared material
+after speed or other processing changes, and reversal is not a calibrated
+independent null. Historical execution should require a successful controls
+receipt tied to the actual code, protocol, runtime and decoder pins. These are
+tested local workflow needs, not newly inspected Sherlock defects or fixes.
+No case payload or real results proposed for transfer. Deduplicated here;
+not sent while the designated archived-task routing remains unresolved.
 
 **2026-09-11 visual-coverage supplement — local only, SFB-002:** Extend the existing media fixture with endpoint samples separated by an uninspected interval, later refinement that starts after a visible change, and two synthetic containers with identical decoded pixels/timestamps but unequal container bytes. Acceptance: a negative claim requires explicit temporal and resolution coverage; refinement keeps its original declared selection and cannot become earliest-onset coverage retrospectively; distinguish byte identity from decoded-product identity and record runtime pins for each execution. Separate shot changes, foreground actions, camera movement, transcript pointers and structural features instead of assigning a generic event-onset field. This records demonstrated workflow needs, not inspected Sherlock defects or verified fixes. Only the generic fixture is proposed for later transfer; no case frames, values, names, paths or local diagnostics. Not delivered while the archived destination's routing remains unresolved.
 
@@ -1216,6 +2260,8 @@ claim. Generic synthetic examples only; queued locally, not transmitted.
 
 **2026-09-08 second measurement supplement acknowledged:** Added SFB-002 lessons from synthetic template tracking: high correlation is not physical-point identity; retain full search surfaces and competing coordinates; record boundary/occlusion stopping rather than silent interpolation; distinguish deterministic scientific products from variable runtime logs. The payload contained no historical frames, real coordinates or case content. Acceptance is reconstruction of each selected/competing result plus known-translation and identity/occlusion limitation tests. The destination turn completed and direct inspection of its FEEDBACK.md confirmed the supplement; no implementation or fix verification is claimed.
 
+**2026-10-03 runtime-log recurrence, local only, same SFB-002:** Two extraction runs can have identical sampled pixels and encoded timestamps while their final processing-throughput fields differ. This is already covered by the acknowledged deterministic-products versus runtime-logs requirement, not a new issue. Retain complete logs and explicit differing fields; keep material equality separate from whole-log inequality. A synthetic fixture should preserve that distinction while refusing changed frame timestamps, unexpected diagnostic lines or unexplained differences. Do not expand a generic warning allowlist to obtain a pass. The local audit retained this distinction; no inspected Sherlock defect, implementation fix, new delivery or acknowledgment is claimed. No actual media, case identifiers, private paths or raw logs are proposed for transfer; the existing archived-destination routing boundary remains.
+
 ## SFB-004 — Operation-scoped labels and dependent validation data
 
 **Original-source search disposition extension, local only, SFB-004/SFB-005:** Extend the existing acquisition-state fixture with four distinct outcomes: a located packet not fetched pending approval; a standalone route rejected by the tool; an attachment name without a usable link in the inspected representation; and a paper located only through a bibliography. Acceptance: do not collapse these into unavailable, reviewed, withheld or historically absent; preserve exact search coverage, independent source-family limits and unused search allowance. A guessed sheet name used as a query must never become a verified member locator. This deduplicates observed source-review needs, not a new inspected Sherlock defect or fixed feature. Generic synthetic examples only; no case records, actual URLs, private paths or personal data proposed for transmission. Delivery remains pending the existing archived-destination routing decision.
@@ -1281,6 +2327,7 @@ pending the archived destination's routing decision; no new send or receipt.
 - **SFB-002/SFB-004, compilation clocks and inherited exposure times:** Synthetic reproduction: a joined video lists rounded chapter offsets and historical start times, while a report's cited close-up appears at a different relative position; a film photo is timed using a separate digital exposure. Acceptance: retain shot coverage, source-declared clocks, actual decoder PTS, exact-versus-similar frame correspondence and missing edit/clock records separately. Do not invent a constant offset, continuous burn history or independent corroboration from a reused source family. Truncated displays count as unreviewed, not successful visual inspections.
 - **SFB-005, partial acquisition versus current HTTP status:** Synthetic reproduction: HTTP 200 terminates with a timeout and partial bytes; a fresh no-clobber copy resumes with HTTP 206. Acceptance: preserve the failed original, verify numeric range, final size/hash and prefix identity before admitting the new file. Keep transport metadata local pending exact-payload review. A successful HTTP or process exit alone is not source acquisition, and an access denial is not historical absence. The Didik transport-state lesson is deduplicated here.
   **September28 recurrence, local only:** A declared timeout again left an HTTP200 partial; a separately preserved full retry met the expected byte count and passed later checks. Retain both attempt states and never treat the partial as an extra source. Extend the generic adapter fixture to accept a documented top-level authenticated file-reference object as well as any supported string form; do not misclassify an object as a missing download or print/store its temporary bearer URL. Test shape validation, empty inline bytes, exact source/size joins and secret-free receipts. These are observed workflow needs, not inspected Sherlock defects or verified fixes. No case data or local paths proposed for transfer; archived-destination routing remains unresolved, with no new delivery or acknowledgment.
+  **October3 recurrence, local only:** A terminal timeout receipt reported elapsed time beyond the explicitly requested cap. Desired behavior: retain configured limit, reported elapsed time, terminal status and admitted/excluded state separately; a requested setting is not proof the cap was met. Synthetic extension: a mock HTTP200 partial ends with a timeout after its configured limit, followed by one permitted, separately preserved complete retry. Acceptance: flag the overrun without silently relaxing the rule, retain and exclude the partial, distinguish integrity checks from protocol compliance, and never restart a live process merely because an observation wait ended. Priority: evidence-integrity reporting. The cause remains unknown; this is an observed workflow requirement, not an inspected Sherlock defect or verified fix. Proposed feedback contains no real source IDs, media, case values or local paths. Existing archived-destination routing remains unresolved; no new delivery or acknowledgment.
 - **SFB-004/SFB-005, received candidate versus authenticated origin:** Synthetic reproduction: a field inventory attributes items A/B to a facility; a receiving agency preserves those exact compound codes but leaves origin blank and lists them as unidentified. Acceptance: advance receipt without claiming accepted origin; distinguish report acknowledgement from a signed transfer and a physical-photo join, Trip Date from intake date, repeated tables from independent custody evidence, and a request-log locator from a response/outcome. Preserve the earlier unknown-receipt state as dated history and require attribution worksheets for the remaining question.
 
 **2026-09-09 model-scope/version supplements — delivery failed, retained locally:** A new minimized note was submitted to the designated task, but the app returned that the task is archived. No receipt or acknowledgment is claimed. The user was asked whether to reopen that task or designate another. Do not silently unarchive or create a replacement task. This is a feedback-routing limit, not a blocker on the independent scientific work.
@@ -1319,6 +2366,32 @@ The destination turn completed, and direct inspection of `/Users/admin/dev/sherl
 
 ## SFB-005 — Resolved-package completeness and run identity
 
+**2026-10-04 shared-lane and dependency-map extension — local only:** A passing
+synthetic suite did not test omission of a required source entry from one
+chunk's input map. Acceptance must check every chunk against a fresh mandatory
+source/reference map; checking only a conflict-free union is insufficient.
+Separate negative controls now exercise missing source/reference, cross-pass
+conflicts and changed bytes at final recheck. A second local failure arose when
+parallel synthetic suites shared a byte-counted directory and one removed its
+temporary fixture during the other's filesystem walk. Preserve the incomplete
+run, serialize runs sharing that accounting boundary, and rerun unchanged
+checks; do not convert missing files into zero-byte successes. These are local
+workflow lessons, not verified Sherlock defects or product fixes. Generic
+fixture only; no case payload or private paths. Archived routing unchanged:
+queued locally, not sent, acknowledged or fixed in Sherlock.
+
+**2026-10-03 process-supervision extension — local only, same fixture:** Test a
+successful parent with a still-running child, a termination-ignoring descendant,
+an immediate stop, interruption and a failed final filesystem inspection.
+Acceptance requires bounded cleanup of the owned process group, the original
+failure reason, honest unknown measurements, persistent failure receipts and
+actual child-termination checks. A successful leader exit alone is insufficient;
+requested limits, observed duration and possible polling overshoot stay separate.
+Local preflight failures and their subsequent passing checks were retained;
+their operating-system cause is unproven. This is a workflow requirement based
+on local code review, not a demonstrated Sherlock defect or product fix. Generic
+synthetic fixture only; archived routing unchanged, not sent or acknowledged.
+
 **Observed integration need:** 2026-09-08. **Priority:** P2. **State:** acknowledged; no fix reported. This is an investigation workflow requirement, not a source-inspected defect in Sherlock.
 
 A successful HTTP response and valid ZIP may deliver only a README pointing elsewhere. Different landing pages may converge on the same package. A repaired earlier-version archive, a final report and a public solver engine do not establish a complete final-version executable case. A published postprocessor warning about previous-run outputs also motivates an explicit input/run/output identity contract; no contaminated scientific run was demonstrated here.
@@ -1328,6 +2401,48 @@ A successful HTTP response and valid ZIP may deliver only a README pointing else
 **Acceptance:** Distinguish link located, response obtained, wrapper acquired, target package acquired, version crosswalk verified, dependencies complete, execution reproduced and physical validation. Deduplicate convergent origins; retain exact artifact hashes and unresolved version relationships. Engine availability must not imply case completeness. Postprocessing must bind outputs to a specific input/run manifest, flag stale or unmatched outputs without deleting preserved records, and retain failures as separate results.
 
 **Related SFB-002 supplement:** Saved project frame duration/step settings are distinct from encoded presentation timestamps and original acquisition timing. Retain nested archive/project/media lineage, literal settings and verified software semantics separately. Use a synthetic archive with safe relative media and a duplicate Windows-absolute entry; never use the latter as an extraction destination or repeat personal path components in diagnostics. This adds scope to the existing measurement contract, not a request to launch untrusted projects.
+
+October 8 nullable-clock recurrence, same SFB-002/SFB-005 fixture: a local
+native-media parser accepted absent stored PTS and relabeled decoder
+best-effort timestamps as PTS; it also failed on a final record without either
+field. Preserve nullable stored and decoder-estimated clocks separately,
+including genuine zero values. An ordinal-only source screen may continue
+under its own declared method, but must not clear a failed timing test or
+fill absent values from nominal frame rate. A nine-frame synthetic fixture
+with missing first/final fields now passes the local separation controls;
+present disagreement, nonmonotonic known values and fewer-than-eight inputs
+are rejected for the fixed eight-frame screen. This is a reproduced local
+adapter issue/repair, not an inspected Sherlock defect or product fix.
+Failure-output preservation remains covered by the existing diagnostic
+fixture; partial stdout on timeout and oversized-output receipt handling
+remain limitations of this local adapter. Generic fixture only; no source
+names, actual frame counts, images or paths sent. Queued locally under the
+unchanged archived-destination boundary, not delivered or acknowledged.
+
+October 8 timestamp-provenance clarification, same nullable-clock fixture:
+the earlier shorthand “stored PTS” must not imply literal container or camera
+storage merely because a decoder reports a value. A normal processing path
+may derive a present timestamp; an explicit generation path can fill absent
+values without authenticating exposure timing. Extend the synthetic fixture
+with distinct packet DTS, frame PTS, best-effort and generated-output fields,
+picture reordering and ordinal gaps. Acceptance: preserve raw nulls and field
+provenance; generated regularity cannot clear an original-clock gate; compare
+timestamp differences against ordinal gaps, not just successive known values.
+Source-slice hash equality and unique positional joins must not become proof
+of one packet per exposure. This records a demonstrated local workflow need,
+not an inspected Sherlock defect or a verified product fix. Generic example
+only; no case values, media, paths or source names transmitted. Still queued
+locally under the same archived-destination routing decision.
+
+Related checker controls, under the existing completeness/exact-arithmetic
+fixture: a producer-selected empty comparison-field list must not make a
+changed baseline pass; independently enforce the full declared field set.
+Two individually safe integers can yield an unsafe subtraction or product;
+reject unsafe intermediates or use exact integer arithmetic. Both failures
+were reproduced synthetically and repaired in the local checker before its
+historical use. A passing check must list unchecked summary flags/status
+labels rather than silently certify the whole report. No product-wide fix
+or delivery is claimed.
 
 
 ## 2026-09-08 — SFB-001 local adoption verification

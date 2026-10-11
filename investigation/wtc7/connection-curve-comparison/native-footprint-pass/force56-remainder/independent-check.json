@@ -1,0 +1,543 @@
+{
+  "annotations": {
+    "reader-F5-peer.json": {
+      "attested_read_blocks": 8,
+      "band_records": 18,
+      "multiple_band_columns": 0,
+      "route_records": 230,
+      "selected_exact_white_cells": 0,
+      "statuses": {
+        "boundary_truncated": 11,
+        "fringe_only": 9,
+        "identified_local_fragment": 80,
+        "identity_conflict": 18,
+        "no_attributable_cells": 112
+      }
+    },
+    "reader-F5-primary.json": {
+      "attested_read_blocks": 15,
+      "band_records": 21,
+      "multiple_band_columns": 1,
+      "route_records": 230,
+      "selected_exact_white_cells": 0,
+      "statuses": {
+        "boundary_truncated": 11,
+        "fringe_only": 2,
+        "identified_local_fragment": 82,
+        "identity_conflict": 20,
+        "no_attributable_cells": 115
+      }
+    },
+    "reader-F6-peer.json": {
+      "attested_read_blocks": 5,
+      "band_records": 5,
+      "multiple_band_columns": 0,
+      "route_records": 140,
+      "selected_exact_white_cells": 0,
+      "statuses": {
+        "boundary_truncated": 4,
+        "fringe_only": 8,
+        "identified_local_fragment": 28,
+        "identity_conflict": 5,
+        "no_attributable_cells": 95
+      }
+    },
+    "reader-F6-primary.json": {
+      "attested_read_blocks": 9,
+      "band_records": 6,
+      "multiple_band_columns": 0,
+      "route_records": 140,
+      "selected_exact_white_cells": 0,
+      "statuses": {
+        "boundary_truncated": 4,
+        "fringe_only": 3,
+        "identified_local_fragment": 28,
+        "identity_conflict": 6,
+        "no_attributable_cells": 99
+      }
+    }
+  },
+  "comparison_summaries": {
+    "F5": {
+      "routes": {
+        "class_different": 82,
+        "entries": 230,
+        "outer_different": 77
+      },
+      "selected_exact_white_cells": {
+        "peer": [],
+        "primary": []
+      },
+      "status_different": 11,
+      "visible_ink": {
+        "class_different": 85,
+        "entries": 115,
+        "outer_different": 78
+      }
+    },
+    "F6": {
+      "routes": {
+        "class_different": 19,
+        "entries": 140,
+        "outer_different": 15
+      },
+      "selected_exact_white_cells": {
+        "peer": [],
+        "primary": []
+      },
+      "status_different": 8,
+      "visible_ink": {
+        "class_different": 21,
+        "entries": 70,
+        "outer_different": 17
+      }
+    }
+  },
+  "contexts": {
+    "F5_cells_per_copy": 10472,
+    "F6_cells_per_copy": 2590,
+    "byte_equal": true,
+    "cell_records_checked": 26124,
+    "cells_per_copy": 13062,
+    "copies": 2,
+    "distinct_source_cells": 13062,
+    "source_identity_in_coordinate_key": true,
+    "source_size": [
+      741,
+      88
+    ]
+  },
+  "controls": [
+    "manual_five_operations_including_native_extremes",
+    "multiple_visible_pieces_retained",
+    "correct_741_width_context",
+    "wrong_745_width_rejected",
+    "in_memory_RGB_corruption_rejected",
+    "in_memory_coordinate_corruption_rejected",
+    "exact_membership_and_boundary_flags",
+    "duplicate_rows_rejected",
+    "boolean_row_rejected",
+    "class_overlap_rejected",
+    "missing_membership_rejected",
+    "missing_boundary_rejected",
+    "json_false_not_numeric_zero",
+    "two_same_column_route_specific_bands_retained",
+    "declared_force56_peer_alias_preserved_and_accepted_as_peer",
+    "peer_alias_rejected_as_primary",
+    "unknown_peer_alias_rejected",
+    "missing_reciprocal_rejected",
+    "wrong_candidate_route_rejected",
+    "orphan_band_reference_rejected",
+    "missing_route_column_rejected",
+    "duplicate_fragment_rejected",
+    "lost_attested_column_rejected",
+    "truncated_attested_block_rejected",
+    "band_cells_duplicated_in_route_rejected",
+    "exact_white_flag_and_near_white_retained",
+    "required_dependency_coverage_accepts_complete_map",
+    "required_dependency_omission_rejected",
+    "conflicting_normalized_alias_rejected",
+    "six_exact_authority_context_paths_allowed",
+    "arbitrary_outside_context_path_rejected",
+    "F5_in_memory_set_corruption_rejected",
+    "F5_in_memory_context_dependency_omission_rejected",
+    "F6_in_memory_set_corruption_rejected",
+    "F6_in_memory_context_dependency_omission_rejected"
+  ],
+  "controls_count": 35,
+  "coverage": {
+    "all_producer_dependency_maps_cover_independent_required_closures": true,
+    "comparison_files": 4,
+    "original_readings": 4,
+    "route_records": 740,
+    "unassigned_band_records": 50
+  },
+  "declared_compatibility": "CONSUMER-COMPATIBILITY.md predates comparisons: exactly force56_peer or peer denotes the peer role only. Six exact pinned main/skill files are authority context, not new scientific evidence. Frozen originals are unchanged; no wider path exception is allowed.",
+  "environment": {
+    "pillow": "12.3.0",
+    "python": "3.12.14"
+  },
+  "independence": "Standalone native-cell and truth-table arithmetic; no producer, context, force or reader imports. Saved reading attestations are checked for bookkeeping, not independently witnessed perception.",
+  "input_pin_count": 45,
+  "input_pins_unchanged_after_check": true,
+  "inputs": {
+    "../../../../../../../../.codex/skills/evidence-falsification-auditor/SKILL.md": {
+      "bytes": 4215,
+      "sha256": "7894e7c6150319ec9591ec39ee1d11c3687f37deaf494d8a7c97b515f29c48a2"
+    },
+    "../../../../../../../../.codex/skills/source-of-truth-guardian/SKILL.md": {
+      "bytes": 4218,
+      "sha256": "d283182d3b1f493001ad8952102ff70ebf4d7d0575cbfa1891a38df80e313ab5"
+    },
+    "../../../../../../../911/AGENTS.md": {
+      "bytes": 15240,
+      "sha256": "934437bfc0ddbe522cc73461819593706d12c0644cb306d263d9f1fe3914a857"
+    },
+    "../../../../../../../911/START-HERE.md": {
+      "bytes": 6383,
+      "sha256": "b291da2b9ab3f1a8e9e69ff5a5d930c689ff2d45a6b2ce06a521e76295fbd560"
+    },
+    "../../../../../../../911/WORKFLOW.md": {
+      "bytes": 5868,
+      "sha256": "17c41f8e81bb419a5a740a4ec8bb1984cb29c381d26ff8d54cec679f6ac6637a"
+    },
+    "../../../../../../../911/research/sherlock-wtc7-investigation/CHARTER.md": {
+      "bytes": 24068,
+      "sha256": "54a4a23558a6b1ed756d3398e9e58d0972c6e531aadef5cd4027f29c4b9756bd"
+    },
+    "../../HUMAN-REVIEW-GATE.md": {
+      "bytes": 2733,
+      "sha256": "5c739ea10b6fe51b719a10205cef52737ff74cc29d1431272dd5dfea90d92c71"
+    },
+    "../../NUMERICAL-PROTOCOL.md": {
+      "bytes": 6688,
+      "sha256": "e03c47c1945b9eb9fd0a040d757d5f5f66bf76791ced8944323d3c92d1120df3"
+    },
+    "../../native-strips01/Im1.jpg": {
+      "bytes": 9292,
+      "sha256": "929f5d00d2f9ab1eba27a4aad8af37320a4fd37f2455f9b51d750ec7e15e8139"
+    },
+    "../../native-strips01/Im3.jpg": {
+      "bytes": 13212,
+      "sha256": "af735345f189bba0eab7a836c5c0c6221ab30055febd81b52b331821fe87259b"
+    },
+    "../../remaining-route-inventory/force-reconciliation.json": {
+      "bytes": 2519,
+      "sha256": "9cb2c2003ab6eb014a665f1657fa2858dec9dffc383fbaa9e6e1fcef227e1222"
+    },
+    "../../remaining-route-inventory/reader-force.json": {
+      "bytes": 47501,
+      "sha256": "785eb5351c34c4bb7976333f9ecd8bf87d357165f315abfacf10bd7145df20d0"
+    },
+    "../../remaining-route-inventory/reader-root.json": {
+      "bytes": 30190,
+      "sha256": "4cf6791b358e89b19a47adfe0402d6825168a15b0060aea48d43e4eda4d22981"
+    },
+    "../../remaining-route-inventory/report.md": {
+      "bytes": 8080,
+      "sha256": "6b11307c467478130e9696f0fb28b603cef56ce00ad37b157ae1b96255f53e0b"
+    },
+    "../../render01/page-076.png": {
+      "bytes": 943120,
+      "sha256": "0835db6f0a138f5ddebfd6c4c81a857fda6e2da36379eeee1acbc3b5a9a6baf6"
+    },
+    "../PROTOCOL.md": {
+      "bytes": 5438,
+      "sha256": "2066edbe4f36d4eeb8e3be1695fdd72fe32f9649d779ea897e5e63358cb4fdbd"
+    },
+    "../approach34/compare.py": {
+      "bytes": 13177,
+      "sha256": "cb4a2da60959a4b0a40ddb4a072c1cbedf4624da63daf1a50b37db0eb2dd5bac"
+    },
+    "../approach34/read_context.py": {
+      "bytes": 5071,
+      "sha256": "384d0bef93d4bc05ed8cb10f5a6d27426ab983ffcb4a3e31d5ca84b116961ac3"
+    },
+    "../approach34/reader-E3-primary.py": {
+      "bytes": 9690,
+      "sha256": "02db3fc58aa93e1bd5f83e47d6a86d6cdf2f86815061075fc18d2b9087b7df5d"
+    },
+    "../force45/compare_force45.py": {
+      "bytes": 11626,
+      "sha256": "932792f49797c4034beb1124d8174a56c911319e17fa536e199f0709950557be"
+    },
+    "../force69/compare_force69.py": {
+      "bytes": 8802,
+      "sha256": "f332359911f4d7bf5e768bf9e36b37ddb6995e857f6cf7ae5fa5456bb6dd4a6e"
+    },
+    "../read_context.py": {
+      "bytes": 4951,
+      "sha256": "da7d46400de924b75773646f34b7fba1d2284b50736d25395bb0a1c71e629c18"
+    },
+    "CONSUMER-COMPATIBILITY.md": {
+      "bytes": 1740,
+      "sha256": "fd3334f963a703b495ce45eacc449f803f553ed1798e986f188ba2a8c81cbaef"
+    },
+    "PROTOCOL-V2.md": {
+      "bytes": 1365,
+      "sha256": "181a5eda9115ffedd282ae1e83b05c55a07659d6e44b44378b2101388d458b28"
+    },
+    "PROTOCOL.md": {
+      "bytes": 4079,
+      "sha256": "1ad63b566212539b9a7011650264d0ac427357fc5d9042670eea6d750fcabedc"
+    },
+    "READERS.md": {
+      "bytes": 3332,
+      "sha256": "e2508d4ca55ea9e6f06fef260a7ab17613ecbe533be47376c5c63264c436da2f"
+    },
+    "compare.py": {
+      "bytes": 10642,
+      "sha256": "81dc892b21e891a9c11d2bc7697d1b936a497a91950584659e04fc718776313a"
+    },
+    "comparison-F5-01.json": {
+      "bytes": 1021829,
+      "sha256": "d4df145a105099db75d012a38c4b5d7bc5083ab4b75aa965607222dbe5d59205"
+    },
+    "comparison-F5-02.json": {
+      "bytes": 1021829,
+      "sha256": "d4df145a105099db75d012a38c4b5d7bc5083ab4b75aa965607222dbe5d59205"
+    },
+    "comparison-F6-01.json": {
+      "bytes": 532083,
+      "sha256": "74aa6e596286ffab22ea44db56a9cf060d573c09f7abd575a67bcd2dd28c086d"
+    },
+    "comparison-F6-02.json": {
+      "bytes": 532083,
+      "sha256": "74aa6e596286ffab22ea44db56a9cf060d573c09f7abd575a67bcd2dd28c086d"
+    },
+    "context01.json": {
+      "bytes": 1606454,
+      "sha256": "6289f98ee3ae3c89e894b10b8c5dd512e1b9d4716075ff6fe8a62900028b6ab5"
+    },
+    "context02.json": {
+      "bytes": 1606454,
+      "sha256": "6289f98ee3ae3c89e894b10b8c5dd512e1b9d4716075ff6fe8a62900028b6ab5"
+    },
+    "independent_check.py": {
+      "bytes": 34499,
+      "sha256": "326cd663a0e5bf8f9eefafb45d1421fa5f81056891a26228ad49168fc28665b0"
+    },
+    "read_context.py": {
+      "bytes": 4421,
+      "sha256": "7eb45a46ea63716e20b9b00dcc7b4757f6a3c021e25cc0c170c97e5cab46951b"
+    },
+    "read_context_v2.py": {
+      "bytes": 3898,
+      "sha256": "02bf4d365183f458ba3577a18ff638526a0c63e2742ec05b26c256cd1967e829"
+    },
+    "reader-F5-peer.json": {
+      "bytes": 161197,
+      "sha256": "dbed8ae98651c5fc21a4a11e2d97c6897ed609eac809e20b1638e376246de5f4"
+    },
+    "reader-F5-peer.py": {
+      "bytes": 13524,
+      "sha256": "7e5bf88b89275aab01f6c38e779b63f34ca4022b27af47660a8dab6198285565"
+    },
+    "reader-F5-primary.json": {
+      "bytes": 161437,
+      "sha256": "6ce861b44d73e09a88e3d79e754f7f2f41b9458a0baafb1630c22b2de3f2c2b3"
+    },
+    "reader-F5-primary.py": {
+      "bytes": 18455,
+      "sha256": "bf2f935905fc99d9c10c373fa8c0341f44d80390b06280480b63e27dd4df5282"
+    },
+    "reader-F6-peer.json": {
+      "bytes": 87267,
+      "sha256": "b1345970d11e24d552e1bb755279f84f2d251db1232e1d4cedc298b02135310e"
+    },
+    "reader-F6-peer.py": {
+      "bytes": 3783,
+      "sha256": "68d0c634063def98b1bec1073fe60bc86de623834fe70081efa3df9246d23dd4"
+    },
+    "reader-F6-primary.json": {
+      "bytes": 86931,
+      "sha256": "4e3dab2e3cf358854da349a987e897fbb1f5915f8ee5c2e67e246cfa06da96be"
+    },
+    "reader-F6-primary.py": {
+      "bytes": 14982,
+      "sha256": "ac2ca2561dbcbe95c1a0bcef646380a5183c81811eccc1f21dff324dc51dd8ba"
+    },
+    "test_compare.py": {
+      "bytes": 5511,
+      "sha256": "92205d8fc32cabeca978af42732b54349f3b4bf731c27c34c66b4ef44f6bf269"
+    }
+  },
+  "inputs_after": {
+    "../../../../../../../../.codex/skills/evidence-falsification-auditor/SKILL.md": {
+      "bytes": 4215,
+      "sha256": "7894e7c6150319ec9591ec39ee1d11c3687f37deaf494d8a7c97b515f29c48a2"
+    },
+    "../../../../../../../../.codex/skills/source-of-truth-guardian/SKILL.md": {
+      "bytes": 4218,
+      "sha256": "d283182d3b1f493001ad8952102ff70ebf4d7d0575cbfa1891a38df80e313ab5"
+    },
+    "../../../../../../../911/AGENTS.md": {
+      "bytes": 15240,
+      "sha256": "934437bfc0ddbe522cc73461819593706d12c0644cb306d263d9f1fe3914a857"
+    },
+    "../../../../../../../911/START-HERE.md": {
+      "bytes": 6383,
+      "sha256": "b291da2b9ab3f1a8e9e69ff5a5d930c689ff2d45a6b2ce06a521e76295fbd560"
+    },
+    "../../../../../../../911/WORKFLOW.md": {
+      "bytes": 5868,
+      "sha256": "17c41f8e81bb419a5a740a4ec8bb1984cb29c381d26ff8d54cec679f6ac6637a"
+    },
+    "../../../../../../../911/research/sherlock-wtc7-investigation/CHARTER.md": {
+      "bytes": 24068,
+      "sha256": "54a4a23558a6b1ed756d3398e9e58d0972c6e531aadef5cd4027f29c4b9756bd"
+    },
+    "../../HUMAN-REVIEW-GATE.md": {
+      "bytes": 2733,
+      "sha256": "5c739ea10b6fe51b719a10205cef52737ff74cc29d1431272dd5dfea90d92c71"
+    },
+    "../../NUMERICAL-PROTOCOL.md": {
+      "bytes": 6688,
+      "sha256": "e03c47c1945b9eb9fd0a040d757d5f5f66bf76791ced8944323d3c92d1120df3"
+    },
+    "../../native-strips01/Im1.jpg": {
+      "bytes": 9292,
+      "sha256": "929f5d00d2f9ab1eba27a4aad8af37320a4fd37f2455f9b51d750ec7e15e8139"
+    },
+    "../../native-strips01/Im3.jpg": {
+      "bytes": 13212,
+      "sha256": "af735345f189bba0eab7a836c5c0c6221ab30055febd81b52b331821fe87259b"
+    },
+    "../../remaining-route-inventory/force-reconciliation.json": {
+      "bytes": 2519,
+      "sha256": "9cb2c2003ab6eb014a665f1657fa2858dec9dffc383fbaa9e6e1fcef227e1222"
+    },
+    "../../remaining-route-inventory/reader-force.json": {
+      "bytes": 47501,
+      "sha256": "785eb5351c34c4bb7976333f9ecd8bf87d357165f315abfacf10bd7145df20d0"
+    },
+    "../../remaining-route-inventory/reader-root.json": {
+      "bytes": 30190,
+      "sha256": "4cf6791b358e89b19a47adfe0402d6825168a15b0060aea48d43e4eda4d22981"
+    },
+    "../../remaining-route-inventory/report.md": {
+      "bytes": 8080,
+      "sha256": "6b11307c467478130e9696f0fb28b603cef56ce00ad37b157ae1b96255f53e0b"
+    },
+    "../../render01/page-076.png": {
+      "bytes": 943120,
+      "sha256": "0835db6f0a138f5ddebfd6c4c81a857fda6e2da36379eeee1acbc3b5a9a6baf6"
+    },
+    "../PROTOCOL.md": {
+      "bytes": 5438,
+      "sha256": "2066edbe4f36d4eeb8e3be1695fdd72fe32f9649d779ea897e5e63358cb4fdbd"
+    },
+    "../approach34/compare.py": {
+      "bytes": 13177,
+      "sha256": "cb4a2da60959a4b0a40ddb4a072c1cbedf4624da63daf1a50b37db0eb2dd5bac"
+    },
+    "../approach34/read_context.py": {
+      "bytes": 5071,
+      "sha256": "384d0bef93d4bc05ed8cb10f5a6d27426ab983ffcb4a3e31d5ca84b116961ac3"
+    },
+    "../approach34/reader-E3-primary.py": {
+      "bytes": 9690,
+      "sha256": "02db3fc58aa93e1bd5f83e47d6a86d6cdf2f86815061075fc18d2b9087b7df5d"
+    },
+    "../force45/compare_force45.py": {
+      "bytes": 11626,
+      "sha256": "932792f49797c4034beb1124d8174a56c911319e17fa536e199f0709950557be"
+    },
+    "../force69/compare_force69.py": {
+      "bytes": 8802,
+      "sha256": "f332359911f4d7bf5e768bf9e36b37ddb6995e857f6cf7ae5fa5456bb6dd4a6e"
+    },
+    "../read_context.py": {
+      "bytes": 4951,
+      "sha256": "da7d46400de924b75773646f34b7fba1d2284b50736d25395bb0a1c71e629c18"
+    },
+    "CONSUMER-COMPATIBILITY.md": {
+      "bytes": 1740,
+      "sha256": "fd3334f963a703b495ce45eacc449f803f553ed1798e986f188ba2a8c81cbaef"
+    },
+    "PROTOCOL-V2.md": {
+      "bytes": 1365,
+      "sha256": "181a5eda9115ffedd282ae1e83b05c55a07659d6e44b44378b2101388d458b28"
+    },
+    "PROTOCOL.md": {
+      "bytes": 4079,
+      "sha256": "1ad63b566212539b9a7011650264d0ac427357fc5d9042670eea6d750fcabedc"
+    },
+    "READERS.md": {
+      "bytes": 3332,
+      "sha256": "e2508d4ca55ea9e6f06fef260a7ab17613ecbe533be47376c5c63264c436da2f"
+    },
+    "compare.py": {
+      "bytes": 10642,
+      "sha256": "81dc892b21e891a9c11d2bc7697d1b936a497a91950584659e04fc718776313a"
+    },
+    "comparison-F5-01.json": {
+      "bytes": 1021829,
+      "sha256": "d4df145a105099db75d012a38c4b5d7bc5083ab4b75aa965607222dbe5d59205"
+    },
+    "comparison-F5-02.json": {
+      "bytes": 1021829,
+      "sha256": "d4df145a105099db75d012a38c4b5d7bc5083ab4b75aa965607222dbe5d59205"
+    },
+    "comparison-F6-01.json": {
+      "bytes": 532083,
+      "sha256": "74aa6e596286ffab22ea44db56a9cf060d573c09f7abd575a67bcd2dd28c086d"
+    },
+    "comparison-F6-02.json": {
+      "bytes": 532083,
+      "sha256": "74aa6e596286ffab22ea44db56a9cf060d573c09f7abd575a67bcd2dd28c086d"
+    },
+    "context01.json": {
+      "bytes": 1606454,
+      "sha256": "6289f98ee3ae3c89e894b10b8c5dd512e1b9d4716075ff6fe8a62900028b6ab5"
+    },
+    "context02.json": {
+      "bytes": 1606454,
+      "sha256": "6289f98ee3ae3c89e894b10b8c5dd512e1b9d4716075ff6fe8a62900028b6ab5"
+    },
+    "independent_check.py": {
+      "bytes": 34499,
+      "sha256": "326cd663a0e5bf8f9eefafb45d1421fa5f81056891a26228ad49168fc28665b0"
+    },
+    "read_context.py": {
+      "bytes": 4421,
+      "sha256": "7eb45a46ea63716e20b9b00dcc7b4757f6a3c021e25cc0c170c97e5cab46951b"
+    },
+    "read_context_v2.py": {
+      "bytes": 3898,
+      "sha256": "02bf4d365183f458ba3577a18ff638526a0c63e2742ec05b26c256cd1967e829"
+    },
+    "reader-F5-peer.json": {
+      "bytes": 161197,
+      "sha256": "dbed8ae98651c5fc21a4a11e2d97c6897ed609eac809e20b1638e376246de5f4"
+    },
+    "reader-F5-peer.py": {
+      "bytes": 13524,
+      "sha256": "7e5bf88b89275aab01f6c38e779b63f34ca4022b27af47660a8dab6198285565"
+    },
+    "reader-F5-primary.json": {
+      "bytes": 161437,
+      "sha256": "6ce861b44d73e09a88e3d79e754f7f2f41b9458a0baafb1630c22b2de3f2c2b3"
+    },
+    "reader-F5-primary.py": {
+      "bytes": 18455,
+      "sha256": "bf2f935905fc99d9c10c373fa8c0341f44d80390b06280480b63e27dd4df5282"
+    },
+    "reader-F6-peer.json": {
+      "bytes": 87267,
+      "sha256": "b1345970d11e24d552e1bb755279f84f2d251db1232e1d4cedc298b02135310e"
+    },
+    "reader-F6-peer.py": {
+      "bytes": 3783,
+      "sha256": "68d0c634063def98b1bec1073fe60bc86de623834fe70081efa3df9246d23dd4"
+    },
+    "reader-F6-primary.json": {
+      "bytes": 86931,
+      "sha256": "4e3dab2e3cf358854da349a987e897fbb1f5915f8ee5c2e67e246cfa06da96be"
+    },
+    "reader-F6-primary.py": {
+      "bytes": 14982,
+      "sha256": "ac2ca2561dbcbe95c1a0bcef646380a5183c81811eccc1f21dff324dc51dd8ba"
+    },
+    "test_compare.py": {
+      "bytes": 5511,
+      "sha256": "92205d8fc32cabeca978af42732b54349f3b4bf731c27c34c66b4ef44f6bf269"
+    }
+  },
+  "limits": "No semantic ownership, continuity, pre-raster enclosure, physical support, human acceptance, model discrepancy or historical-cause validation. Source decoding uses Pillow as did extraction; this is not an independent JPEG decoder.",
+  "literal_replay_limit": "Reader build() is deliberately not imported or executed by this checker. The coordinator separately performs literal-build reproduction; this checker validates saved original records, their pins and complete preservation.",
+  "operation_arrays_checked": 16650,
+  "required_comparison_dependency_counts": {
+    "F5": 36,
+    "F6": 37
+  },
+  "retained_failures": [
+    {
+      "artifact": "read_context.py v1",
+      "error": "wrong 745 source width; actual pinned sources are 741 by 88 RGB",
+      "receipt": "320519",
+      "repair": "source bytes/targets unchanged; version-2 protocol and runner preserved separately before annotation"
+    }
+  ],
+  "status": "pass_native_cell_bookkeeping_only"
+}

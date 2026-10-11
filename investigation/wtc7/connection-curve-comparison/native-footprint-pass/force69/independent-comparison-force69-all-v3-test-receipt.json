@@ -1,0 +1,269 @@
+{
+  "date": "2026-10-08",
+  "status": "full_six_region_force69_computational_audit_passed_with_preserved_checker_failures",
+  "cwd": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/force69",
+  "annotation_region_scope": [
+    "F6-Im2",
+    "F7-Im1",
+    "F7-Im2",
+    "F8-Im1",
+    "F9-Im0",
+    "F9-Im1"
+  ],
+  "full_fixed_batch_annotation_audit": true,
+  "artifacts": {
+    "independent-comparison-force69-all-v3-check.py": {
+      "sha256": "c97cd0861fb5f8f70d02490537dd05f1430831d07bc730224064be3521636868",
+      "bytes": 56918
+    },
+    "test_independent_comparison_force69_all_v3.py": {
+      "sha256": "083985cd9dd7c7ae1f9cc17e9b0ee2c0e5a04aa6cd272fb167d2db1ade21b012",
+      "bytes": 37815
+    },
+    "independent-comparison-force69-all-v3-check01.json": {
+      "sha256": "134a95bc42659deebfbd63f7caceabab9f5906ed7c309bd77ae08d4ee6bbe229",
+      "bytes": 61893
+    },
+    "independent-comparison-force69-all-v3-check02.json": {
+      "sha256": "134a95bc42659deebfbd63f7caceabab9f5906ed7c309bd77ae08d4ee6bbe229",
+      "bytes": 61893
+    },
+    "independent-comparison-force69-all-failure-receipt.json": {
+      "sha256": "cd066b1d971d9b942e9b8ba75e1f9cbae9f725bcedab97be7b43368ecd8179a3",
+      "bytes": 3011
+    },
+    "independent-comparison-force69-all-v2-failure-receipt.json": {
+      "sha256": "99aa76214e1657b7d560e8a4aec58f134e131a1f8f0b8d5ef433e83ad05ad2bb",
+      "bytes": 3695
+    }
+  },
+  "synthetic_controls": {
+    "final_unittest_methods": 36,
+    "historical_replays_counted_as_synthetic_tests": false,
+    "final_command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_force69_all_v3.py",
+    "final_receipt": "563ac9",
+    "final_exit_code": 0,
+    "before_any_v3_historical_run": true,
+    "earlier_preparation_runs": [
+      {
+        "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_force69_all.py",
+        "receipt": "1a1ce6",
+        "methods": 28,
+        "exit_code": 0
+      },
+      {
+        "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_force69_all.py",
+        "receipt": "4d17e5",
+        "methods": 29,
+        "exit_code": 0
+      },
+      {
+        "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_force69_all.py",
+        "receipt": "62b5db",
+        "methods": 29,
+        "exit_code": 0
+      },
+      {
+        "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest -v test_independent_comparison_force69_all_v2.py",
+        "receipt": "06f8dc",
+        "methods": 33,
+        "exit_code": 0
+      }
+    ]
+  },
+  "successful_historical_runs": [
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-force69-all-v3-check.py --output independent-comparison-force69-all-v3-check01.json",
+      "receipt": "cde541",
+      "exit_code": 0
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent-comparison-force69-all-v3-check.py --output independent-comparison-force69-all-v3-check02.json",
+      "receipt": "b4300f",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/force69/independent-comparison-force69-all-v3-check.py",
+        "--region",
+        "F6-Im2",
+        "--region",
+        "F7-Im1",
+        "--region",
+        "F7-Im2",
+        "--region",
+        "F8-Im1",
+        "--region",
+        "F9-Im0",
+        "--region",
+        "F9-Im1"
+      ],
+      "receipt": "5b8eda",
+      "exit_code": 0,
+      "result": "Saved explicit-scope read-only command returned exactly the saved audit bytes; stderr empty."
+    }
+  ],
+  "read_only_replay_command": [
+    "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/connection-curve-comparison/native-footprint-pass/force69/independent-comparison-force69-all-v3-check.py",
+    "--region",
+    "F6-Im2",
+    "--region",
+    "F7-Im1",
+    "--region",
+    "F7-Im2",
+    "--region",
+    "F8-Im1",
+    "--region",
+    "F9-Im0",
+    "--region",
+    "F9-Im1"
+  ],
+  "command_metadata_scope": "Every audited region is explicitly listed. --output is omitted by design; this is a read-only replay command and both saved repeats contain identical metadata.",
+  "verification": {
+    "final_pre_run_code_pin_receipt": "f37a06",
+    "post_run_exact_replay_pins_and_counts_receipt": "5b8eda",
+    "saved_repeats_byte_identical": true,
+    "read_only_replay_byte_identical": true,
+    "new_input_pins_before_after": 82,
+    "prior_force45_pins_before_after": 41,
+    "source_whitespace_check": "passed for v3 checker and tests"
+  },
+  "counts": {
+    "reader_route_records": 3320,
+    "reader_unassigned_band_records": 1660,
+    "paired_route_comparisons": 1660,
+    "all_ink_columns": 830,
+    "set_operations": 37350,
+    "source_context_records": 62231,
+    "selected_cells_by_region": {
+      "F6-Im2": {
+        "peer": 948,
+        "primary": 968
+      },
+      "F7-Im1": {
+        "peer": 399,
+        "primary": 388
+      },
+      "F7-Im2": {
+        "peer": 558,
+        "primary": 554
+      },
+      "F8-Im1": {
+        "peer": 1064,
+        "primary": 1064
+      },
+      "F9-Im0": {
+        "peer": 351,
+        "primary": 390
+      },
+      "F9-Im1": {
+        "peer": 642,
+        "primary": 671
+      }
+    },
+    "selected_cells_total": {
+      "primary": 4035,
+      "peer": 3962
+    },
+    "selected_exact_white_total": {
+      "primary": 0,
+      "peer": 0
+    }
+  },
+  "peer_literal_data_additions": {
+    "F6-Im2": {
+      "operations": 5,
+      "overwritten_keys": []
+    },
+    "F7-Im1": {
+      "operations": 11,
+      "overwritten_keys": []
+    },
+    "F7-Im2": {
+      "operations": 4,
+      "overwritten_keys": []
+    },
+    "F8-Im1": {
+      "operations": 19,
+      "overwritten_keys": []
+    },
+    "F9-Im0": {
+      "operations": 0,
+      "overwritten_keys": []
+    },
+    "F9-Im1": {
+      "operations": 13,
+      "overwritten_keys": []
+    }
+  },
+  "preserved_failures": [
+    {
+      "version": "all-check",
+      "receipt": "independent-comparison-force69-all-failure-receipt.json",
+      "run_receipt": "f011b3",
+      "exit_code": 1,
+      "no_audit_output_saved": true,
+      "cause": "Initial static declaration extraction ignored later literal peer CONFIG additions.",
+      "root_independent_replay": {
+        "receipt": "364c43",
+        "result": "Same failure, no output saved."
+      },
+      "repair": "New v2 checker restricts parsing to observed literal map updates, raw-block list additions, and string-note assignments; unsupported statements reject; overwritten keys preserve actual last-write semantics and are logged."
+    },
+    {
+      "version": "all-v2-check",
+      "receipt": "independent-comparison-force69-all-v2-failure-receipt.json",
+      "run_receipt": "26440d",
+      "exit_code": 1,
+      "no_audit_output_saved": true,
+      "cause": "Coverage routine assumed context_blocks_inclusive; F7-Im1 and F8-Im1 primary used actual_shared_raw_blocks.",
+      "root_review": "396797 and 42304f confirmed a different explicit schema, not missing observed coverage.",
+      "repair": "New v3 checker checks exactly one coverage schema; shared blocks require integer inclusive bounds, exact fields, same source, referenced-context bounds, receipts, unique source rectangles, actual full source-cell union and RGB equality."
+    }
+  ],
+  "verified": [
+    "Every frozen literal run checked, including intervals the primary exporter might otherwise ignore outside target bounds.",
+    "Every expanded annotation field, literal instruction, route record, unassigned record, status, note and original comparison record reconstructed exactly without excluding metadata.",
+    "Explicit route candidates, existing structured fragment-owner maps, aggregate unions, bidirectional band references, selected-cell boundary flags and model/band partitions checked.",
+    "Primary fixed-column and shared-source coverage and peer shared-source coverage validated from actual declared cells, with source-specific unions and exact RGB equality.",
+    "All 37,350 set operations reproduced with independent integer membership truth tables; all directional differences retained.",
+    "All reader repeats, comparison repeats, complete audit repeats and explicit-scope direct replay matched exactly.",
+    "Original F9 partial checker/test/receipt/outputs, both failed all-check versions, prior force45 artifacts and all current dependencies were pinned and preserved."
+  ],
+  "structural_limitations": [
+    "F8 peer x262, x263, x351, x357 and x358 contain multiple unresolved fragments with route ownership explained in prose while structured references point to aggregate band IDs. This audit preserves and checks the exact records; it does not turn prose into enforceable fragment-specific or per-cell route ownership.",
+    "Route-selected cell comparisons exclude unassigned bands; all-ink comparisons include each unassigned band once. Passing aggregate arithmetic does not resolve route identity."
+  ],
+  "independence": {
+    "producer_imports": false,
+    "producer_execution": false,
+    "producer_selection_or_expansion_execution": false,
+    "comparator_execution": false,
+    "method": "Inert AST data with a separate bounded peer-data parser; separately implemented literal expansion, validation, coverage unions, raw RGB checking and truth-table comparison arithmetic.",
+    "lineage": "Versioned extension of the preserved partial independent checker; both failed whole-batch versions retained at their original paths.",
+    "scope": "Computational AI review, not a new source interpretation, independent historical observation, independent codec implementation or human/expert review.",
+    "runtime": {
+      "pillow": "12.3.0",
+      "python": "3.12.14"
+    }
+  },
+  "limits": [
+    "Same-source nonblind computational check, not a new visual reading, human acceptance, or expert validation.",
+    "Recorded reading coverage and perception are internally checked and replayed, not independently witnessed.",
+    "Shared Pillow decoder family; fresh source RGB is not independent codec validation or historical authentication.",
+    "F8 peer x262,263,351,357,358: fragment-specific route ownership is prose only and structured references identify aggregate bands. Exact prose/schema preservation is not enforceable per-cell route ownership; route selections exclude unresolved bands and all-ink includes them once.",
+    "Exact-white screening diagnoses one transcription-error class; nonwhite cells need not be curve ink.",
+    "Region identities, including separate F7 and F9 sources, are retained; no seam join or cross-source coordinate union.",
+    "Complete literal replay and set arithmetic establish no original-curve bounds, physical support, model discrepancy, cause, or intent.",
+    "Reading/viewing claims and recorded receipts were internally checked, not independently witnessed.",
+    "Context and selected-cell counts include repeated or overlapping source positions and are not independent observations.",
+    "This completes only this fixed locator batch's computational audit. The broader supported-domain inventory, F3 remainder, source-native bounds, identity/seam decisions and unchanged human review slots remain separate."
+  ],
+  "preservation": "V3 checker, tests, outputs and this receipt are frozen. Any future source or schema change requires a separate version; no reader/source/comparator/protocol/navigation/legal/Sherlock files were edited by this task.",
+  "human_accepted": false,
+  "physical_support": null
+}

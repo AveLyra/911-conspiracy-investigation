@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-08",
+  "status": "fixed_source_annotation_batch_verified_not_physical_measurement",
+  "scope": "E3 and E4 Im10 approach regions only; four frozen prior-informed computational readers",
+  "human_accepted": false,
+  "physical_support": null,
+  "cause_inference": null,
+  "source_sha256": {
+    "../../native-strips01/Im10.jpg": "fe8c069f4bb7a19f6eb996b42b266c55552a110f8e9cbc6e9cc0d7269547cdd3",
+    "../../render01/page-076.png": "0835db6f0a138f5ddebfd6c4c81a857fda6e2da36379eeee1acbc3b5a9a6baf6"
+  },
+  "artifact_sha256": {
+    "PROTOCOL.md": "cc94c588f9b132318c7ca55fcffe1ed7eafbb92fd131583ffcbc74a13e5e54b7",
+    "READERS.md": "6a019e587d1cdb47303047c5c03dbae4d9c347941a8227f27a7a8e0b8dfd0b5b",
+    "read_context.py": "384d0bef93d4bc05ed8cb10f5a6d27426ab983ffcb4a3e31d5ca84b116961ac3",
+    "context01.json": "783cd6f756918cef8a70ea79d925d7b010554b535f8d8f654970605d1c8b9095",
+    "context02.json": "783cd6f756918cef8a70ea79d925d7b010554b535f8d8f654970605d1c8b9095",
+    "reader-E3-primary.json": "82a4ffb05f37501871b1a524ba07893d7abed9c7f9b2a5abb34cb0c0b1212eaa",
+    "reader-E3-primary.py": "02db3fc58aa93e1bd5f83e47d6a86d6cdf2f86815061075fc18d2b9087b7df5d",
+    "reader-E3-primary-notes.md": "c091b482414672a1ee9e71999495167033dcbc23d88cd5e4cd8c58c841cf50c7",
+    "reader-E3-peer.json": "b93d4745e7b05496a64ebb14c10ae525bfec0b9892cdfeca77b21a7d30352828",
+    "reader-E3-peer.py": "dde56416f60a972dda91a81e9893e76a18c5abcd1b3f092e19f35ec2302fefb8",
+    "reader-E3-peer-notes.md": "7c24ebd4df8c18d18e07267ed09aa56d23955149e2567003861ec03c67554308",
+    "reader-E4-primary.json": "d84ba3edbfaaae257967ea6dd471db0b9519cfa35504c0b8d6f82a50b784b588",
+    "reader-E4-primary.py": "cbb619c235276ecb61f34920665a44fc5f12771cab7dd2c6c454a41dfd1483b8",
+    "reader-E4-primary-notes.md": "727001b7d11dc44d7878cb68d397ad504efef69134dac90cc258ab16f4af4e4b",
+    "reader-E4-peer.json": "8614172dd792beb83562aef037045b7bb8c2b1123abcc954f08b7be78512e6b8",
+    "reader-E4-peer.py": "6095e4103a22b9d11a39221ff48bbc2881c138aaaf6a033a97d20b0a85d889e3",
+    "reader-E4-peer-notes.md": "5f5ba51541621bc613e842481b918a849e5bc03d17594fe1d4421dd60dd81680",
+    "compare.py": "cb4a2da60959a4b0a40ddb4a072c1cbedf4624da63daf1a50b37db0eb2dd5bac",
+    "test_compare.py": "064879eb268b9b6504f394eb23612993373dffeedf7e14a7b6bc9c48d678b54c",
+    "comparison-E3-01.json": "717dbadc44f355203eefc97de7cb7b4ad3fcc52a1b5f8cfb80ccaa4b00181d76",
+    "comparison-E3-02.json": "717dbadc44f355203eefc97de7cb7b4ad3fcc52a1b5f8cfb80ccaa4b00181d76",
+    "comparison-E4-01.json": "7976abc5dc6e73f774d79557c22f8eef78ab91901353d823b5690d505870f5da",
+    "comparison-E4-02.json": "7976abc5dc6e73f774d79557c22f8eef78ab91901353d823b5690d505870f5da",
+    "independent_check.py": "15c43d9b2fc119fcbe5e6b6a4ad0c28c0bea03e82dcbb16b4a49d925d0ec63fc",
+    "independent-check.json": "fd38b2f372166c124fe46e908e9eeef2bfd20f92e4e3e24fb7d1d375a6072c23"
+  },
+  "coverage": {
+    "region_context_records_per_copy": 33174,
+    "unique_source_cells": 22908,
+    "context_copies": 2,
+    "old_E3_terminal_context_overlap_cells": 116,
+    "original_route_records": 1660,
+    "original_band_records": 228,
+    "E4_primary_multiple_band_columns": [275, 276, 277, 278, 279],
+    "comparison_files": 4,
+    "operation_arrays_across_all_copies": 37350,
+    "independent_checker_unchanged_pins": 27
+  },
+  "checks": [
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B read_context.py controls",
+      "cwd": "this directory",
+      "result": "11 controls pass; repeated after final batch without changing inputs",
+      "pre_save_receipt": "8b0f18",
+      "root_replay_receipt": "f6e262"
+    },
+    {
+      "command": "python3 -B -m unittest -v test_compare",
+      "cwd": "this directory",
+      "result": "15 tests pass",
+      "receipt": "dbb4d7"
+    },
+    {
+      "operation": "Two exclusive-create context exports, complete repeated comparisons and byte comparison",
+      "context_receipt": "4f3663",
+      "comparison_receipt": "5777ad",
+      "result": "Both context files identical; both saved comparison copies per pair identical"
+    },
+    {
+      "operation": "python3 -B nonwriting compare.run(pair, frozen_reading_hashes), canonical JSON encoding, exact byte comparison against both saved copies for each pair",
+      "result": "E3 and E4 both match both saved copies; four reader literal builds reproduce",
+      "receipt": "8bd2c6"
+    },
+    {
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B independent_check.py --save",
+      "cwd": "this directory",
+      "result": "pass_native_ink_bookkeeping_only; 16 controls pass; saved after exact-command sandbox escalation",
+      "receipt": "e9b2c6"
+    },
+    {
+      "operation": "Bundled Python -B imports independent_check, runs check_all(), asserts exact object equality with independent-check.json; no write",
+      "result": "Complete root replay equals saved receipt, including 27 unchanged pins and all 16 controls",
+      "receipt": "49070c"
+    }
+  ],
+  "retained_failures": [
+    {"receipt": "2ac470", "issue": "Old one-band validator rejected original reader-local unassigned-band status", "resolution": "Validate original, adapt copy, preserve all original records before historical comparison save"},
+    {"receipt": "8a3634", "issue": "Single coverage-key assumption failed on peer schema after 13 synthetic tests passed", "resolution": "Validate each actual attestation schema and complete receipt coverage; final 15 tests pass"},
+    {"receipt": "721f30", "issue": "System Python lacked PIL for independent checker", "resolution": "Use installed bundled Python; no scientific-input change"},
+    {"receipt": "f549df", "issue": "Independent receipt exclusive-create denied by filesystem sandbox; no receipt created", "resolution": "Exact local save through sandbox escalation succeeded as e9b2c6"}
+  ],
+  "review": {
+    "reviewer": "conditional_bounds_review",
+    "scope": "Read-only method and reporting review of documents, code and comparisons; no fresh image annotation or test execution claimed",
+    "finding": "No critical substantive overclaim; preserve E3 reader-specific uncertainty, E4 clipping, correlated-source limits and downstream schema incompatibility",
+    "disposition": "Qualifications and explicit future envelope-adapter dependency incorporated in report.md; final review confirmed hashes/counts and prompted correction of the copy-adapter validation sequence wording"
+  },
+  "post_write_checks": [
+    {"command": "git diff --check", "result": "exit 0, no whitespace errors in tracked changes", "receipt": "328ed8"},
+    {"operation": "Parse verification.json, recompute all 27 source/artifact SHA256 values and resolve all 20 report links", "result": "all pass", "receipt": "493af2"},
+    {"operation": "Resolve local links in current navigation sections", "result": "all checked links exist", "receipt": "0c7a70"}
+  ],
+  "limits": [
+    "Computational consistency and RGB fidelity do not prove perception, curve ownership, historical validity, supported domain, calibrated envelopes or cause",
+    "Shared source pixels and Pillow decoding are not independent historical observations or independent JPEG decoding",
+    "Reader alternatives and multiple same-column bands remain distinct; no forced consensus",
+    "Earlier conditional-envelope dataset remains unchanged; new schema requires an explicit tested adapter",
+    "Full fourteen-pair outside-target inventory and unchanged 42 paired human-review slots remain open",
+    "No disclosure, accepted engine finding, legal promotion, commit or push"
+  ]
+}

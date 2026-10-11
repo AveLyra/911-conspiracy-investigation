@@ -1,0 +1,72 @@
+{
+  "status":"complete_visual_review_partial_and_fallible_locator_proposals_not_tracing",
+  "date":"2026-10-07",
+  "reviewer":"/root/curve_recovery_feasibility; prior-informed separate AI, shared context, not human or blind",
+  "reported_coverage":"All native Im0-Im11 viewed once; composed-page context viewed earlier. No detector boxes used to derive these proposals.",
+  "coordinates":"Approximate half-open native inspection rectangles; not ink boundaries, support, error bounds or samples. Root has not independently verified all rectangles.",
+  "proposals":[
+    {"pair":"F3","regions":[["Im4",270,0,365,88]],"limit":"Separated local solid/broken descent; crest and axis conflicts, clipped strip continuations."},
+    {"pair":"F4","regions":[["Im4",330,0,425,88]],"limit":"Gold local descent styles; faint edges, crest proximity and axis merging."},
+    {"pair":"F5","regions":[["Im4",375,0,475,88],["Im2",225,50,350,88]],"limit":"Blue descent/crest cues; other-color crossings prevent whole dashed-route identification."},
+    {"pair":"F6","regions":[["Im2",205,0,365,88]],"limit":"Red arch and broken profile; same-color crossings and irregular lower descent unresolved."},
+    {"pair":"F7","regions":[["Im1",220,50,335,88],["Im2",330,0,475,88]],"limit":"Green crest and separated descent cues; locators do not connect branches across seams."},
+    {"pair":"F8","regions":[["Im1",195,10,370,88]],"limit":"Cyan smooth/broken crest cues; purple proximity, crossings and congested rise."},
+    {"pair":"F9","regions":[["Im0",220,55,325,88],["Im1",245,0,375,88]],"limit":"Purple crest and local styles; clipping, crossings, cyan proximity and untraced descent."},
+    {"pair":"E3","regions":[["Im10",365,30,690,60]],"limit":"Terminal black merged band; no two independently recovered ordinates or solid endpoint."},
+    {"pair":"E4","regions":[["Im9",440,72,690,92]],"limit":"Gold near-coincident band at seam; adjacent Im10 necessary, no separate terminal identities."},
+    {"pair":"E5","regions":[["Im9",395,18,690,47]],"limit":"Blue approach and merger; boundary of identity loss not recovered."},
+    {"pair":"E6","regions":[["Im8",515,57,690,85]],"limit":"Red solid upper/broken lower candidates; boundaries and left convergence unvalidated."},
+    {"pair":"E7","regions":[["Im8",500,34,690,61]],"limit":"Reviewer intended green broken-above-solid terminal routes.","root_disposition":"REJECTED locator: native Im8 right-hand green terminal strokes lie visibly above this rectangle, approximately near rows20-25. Original proposal retained. No replacement bounds admitted."},
+    {"pair":"E8","regions":[["Im7",535,54,690,86]],"limit":"Cyan broken upper/solid lower terminal candidates; seam-spanning approach untraced."},
+    {"pair":"E9","regions":[["Im7",530,30,690,56]],"limit":"Purple solid upper/broken lower terminal candidates; earlier continuity untraced."}
+  ],
+  "root_rejection_evidence":{"source":"native-strips01/Im8.jpg","sha256":"0c49df5f6117d3f0e9b206d7c3352edf57849e4ac00ef9764b857b1445947d83","method":"Direct native-image view and fresh byte hash; visual rejection of terminal locator, not a calibrated replacement measurement."},
+  "global_limits":"Apply composed-page masks over Im0/Im6; raw label ink is not curve support. Axis contacts in Im5/Im11 are not physical endpoints. Blank/overplotted/terminated latent content may be indistinguishable.",
+  "consequence":"One full-source review is complete, not full tracing or coordinate validation. A demonstrably misplaced locator defeats any blanket acceptance of these rectangles. Further coordinate recovery must verify actual source locations; all untested rectangles remain proposals.",
+  "root_energy_batch_check":{
+    "coverage":"Viewed complete native Im7,Im8,Im9,Im10 in one batch. Assessed terminal locations toward the right-hand portion of each proposed rectangle, not every pixel or the full left-hand approach.",
+    "results":[
+      {"pair":"E3","disposition":"Right-hand black band lies in proposed region; two model traces remain inseparable. A box containing the band does not establish both series."},
+      {"pair":"E4","disposition":"Right-hand gold band lies near the bottom of Im9 within the proposed region; seam and coincident-style limitations retained."},
+      {"pair":"E5","disposition":"Right-hand blue band lies within proposed region; full left boundary and merger transition not validated."},
+      {"pair":"E6","disposition":"Right-hand red solid/broken pair lies within proposed region; outer stroke bounds and gap authenticity not established."},
+      {"pair":"E7","disposition":"Rejected rectangle confirmed: green terminal pair lies above y34. Preserve original rejection; no replacement rectangle chosen."},
+      {"pair":"E8","disposition":"Right-hand cyan terminal pair lies within proposed region; seam-spanning approach not checked as a continuous route."},
+      {"pair":"E9","disposition":"Right-hand purple terminal pair lies within proposed region; earlier convergence not validated."}
+    ],
+    "ceiling":"Coarse region sanity check only. No six-of-seven measurement-accuracy rate, full-width enclosure claim, independent experimental evidence or accepted numerical support follows.",
+    "next_action":"For E7, recover a new explicit native locator from coordinates and preserve the rejected version; for all pairs, actual stroke footprints and uncertainty require separate checks. Force-pair rectangles have not received this root batch check."
+  },
+  "root_force_batch_check":{
+    "coverage":"Viewed complete native Im0-Im4 together; checked all seven proposed force-pair inspection regions against visible local routes. Not a column-by-column enclosure test.",
+    "results":[
+      {"pair":"F3","disposition":"Region locates separated black descents. Strip exits and crest/tail ambiguity remain; no complete support."},
+      {"pair":"F4","disposition":"Region locates gold continuous and broken descents. Faint edges and crop contacts preclude an endpoint claim."},
+      {"pair":"F5","disposition":"Regions locate blue descent and upper crest portions. Other-color and same-color interactions remain; do not assign every mark in either rectangle to blue."},
+      {"pair":"F6","disposition":"Region locates red arch and broken route. Its lower/right boundaries truncate continuing strokes; not a whole descending branch."},
+      {"pair":"F7","disposition":"Regions locate green crest and descending/broken portions. They do not establish identity through the intervening crossings or seam."},
+      {"pair":"F8","disposition":"Region locates cyan crest and irregular broken portions, with adjacent purple ink. Mixed-region pixels cannot be treated as one trace."},
+      {"pair":"F9","disposition":"Regions locate purple crest and local descending routes. Im0 bottom truncation and Im1 cyan proximity remain; underlying raster legend differs from composed-page labels, which control naming."}
+    ],
+    "decision":"Retain as coarse inspection locators only. No additional clearly misplaced force locator found in this visual check; that is not full-width enclosure or measurement validation."
+  },
+  "locator_pass_closeout":{
+    "status":"closed_bounded_all14_region_sanity_check",
+    "retained_failure":"E7 remains rejected without a silently substituted rectangle.",
+    "limitation":"A successful region check does not recover exact ink, assign crossing continuity, calibrate uncertainty or establish supported intervals. The initial F3 fragment checks are narrower than a complete curve.",
+    "next_required_work":"Source-native stroke-footprint and uncertainty recovery, with independently checked identities and the existing human gates. Do not repeat these coarse checks or treat additional locator boxes alone as completion of that work.",
+    "cause_assessment":"No model calibration discrepancy or collapse-cause finding admitted."
+  },
+  "E7_locator_repair":{
+    "original_status":"Rejected original rectangle retained unchanged in proposals",
+    "replacement_proposal":["Im8",580,14,690,30],
+    "scope_change":"Explicitly narrower terminal-only inspection region, not a repair of the entire original x500-690 approach. Earlier crossing and approach remain unresolved.",
+    "basis":"Fresh native image inspection plus unfiltered RGB column reads at x600,620,640 for every row16-28, tool receipt627601, exit0. No color selection or fitted centreline.",
+    "selected_raw_checks":[{"x":600,"y":19,"rgb":[63,109,62]},{"x":600,"y":24,"rgb":[63,123,72]},{"x":620,"y":19,"rgb":[144,192,142]},{"x":620,"y":24,"rgb":[73,133,81]},{"x":640,"y":19,"rgb":[228,255,230]},{"x":640,"y":24,"rgb":[64,117,71]}],
+    "interpretation":"Native values locate darker green ink near the visually observed terminal rows, not in the rejected y34-61 rectangle. The pale upper pixel at x640 is preserved rather than reclassified as no line or exact dash gap.",
+    "limits":"Three column inspections are not full-region enclosure or calibrated stroke uncertainty. Replacement remains a locator proposal, not accepted support, an independent replication, a gap rule or a physical energy difference. No general detector is introduced."
+  },
+  "human_accepted":false,
+  "quantitative_support":null,
+  "cause_ranking_changed":false
+}

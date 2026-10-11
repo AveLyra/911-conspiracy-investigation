@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "date": "2026-10-08",
+  "scope": "Local artifact/receipt/link checks for the bounded Windsor thesis review; not physical validation or historical authentication",
+  "initial_root_audit": {
+    "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B - <<'PY'\nimport hashlib,json,re,subprocess\nfrom pathlib import Path\nfrom PIL import Image\nfrom pypdf import PdfReader\nb=Path('/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/windsor-thesis-2026-10-08')\nw=b.parents[2]\ndef pin(p): return {'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}\nm=json.loads((b/'manifest.json').read_text())\nassert len(m['artifacts'])==137 and len(m['external_dependencies'])==3\nassert len({r['path'] for r in m['artifacts']})==137\nfor row in m['artifacts']+m['external_dependencies']:\n p=(b/row['path']).resolve(); assert pin(p)=={k:row[k] for k in ['bytes','sha256']},row['path']\nfor rel,h in m['prior_pin_assertions'].items(): assert pin(b/rel)['sha256']==h,rel\nranges=[(1,1),(11,15),(33,34),(81,94),(114,138),(139,152),(153,154),(161,162),(166,171),(197,202)]\nroster=[n for a,z in ranges for n in range(a,z+1)]\nnames={f'page-{n:03d}.png' for n in roster}\nassert len(roster)==len(set(roster))==77\nassert {p.name for p in (b/'render').glob('page-*.png')}==names\nassert {r['physical_page'] for r in m['artifacts'] if r['role']=='derived_full_page_image'}==set(roster)\nr=json.loads((b/'independent-render/receipt.json').read_text())\nassert r['status']=='passed' and r['roster']==roster and len(r['comparisons'])==77\nassert r['held_before']==r['held_after']\nassert r['source_before']==r['source_after']==r['source_final']==pin(b/'fletcher-2009-thesis.pdf')\nassert r['method_before']==r['method_after']\nfor row in r['comparisons']:\n p=b/'render'/row['name']; assert pin(p)==row['png']==r['held_after'][row['name']]\n assert row['byte_identical'] is True and row['pixel_identical'] is True\n with Image.open(p) as im:\n  im.load(); assert list(im.size)==row['dimensions']==[910,1287] and im.mode==row['mode']=='RGB'\n  assert hashlib.sha256(im.tobytes()).hexdigest()==row['decoded_pixel_sha256']\nassert (b/'fletcher-2009-thesis.pdf').read_bytes().startswith(b'%PDF-')\nassert len(PdfReader(b/'fletcher-2009-thesis.pdf').pages)==207\nroot_jobs=json.loads((b/'render/render-receipts.json').read_text())+json.loads((b/'render/expansion-render-receipts.json').read_text())\ncovered=[]\nfor job in root_jobs:\n c=job['command']; a=int(c[c.index('-f')+1]); z=int(c[c.index('-l')+1]); covered+=range(a,z+1)\n assert job['returncode']==0 and job['stdout_bytes']==job['stderr_bytes']==0\n for stream in ['stdout','stderr']: assert (b/f'render/render-{a}-{z}.{stream}').stat().st_size==0\nassert len(root_jobs)==9 and set(covered)==set(roster)-{1} and len(covered)==76\ntitle=json.loads((b/'render/title-render-receipt.json').read_text())\nassert title['terminal']['exit_code']==0 and title['terminal']['output']==''\nassert 'separate raw stdout/stderr files were not captured' in title['diagnostic_scope']\nassert len(r['commands'])==10\nfor (a,z),job in zip(ranges,r['commands']):\n c=job['command']; assert int(c[c.index('-f')+1])==a and int(c[c.index('-l')+1])==z\n assert job['returncode']==0\n for stream in ['stdout','stderr']:\n  p=b/f'independent-render/render-{a}-{z}.{stream}'\n  assert pin(p)==job[stream] and p.stat().st_size==0\nfailed=json.loads((b/'failed-render-receipts.json').read_text())['receipts']\nassert len(failed)==8 and all(x['terminal']['exit_code']==1 for x in failed)\nassert any('truncated' in x['terminal']['output'] for x in failed)\njson_files=list(b.rglob('*.json'))\nfor p in json_files: json.loads(p.read_text())\nlinks=0; pending=[]\nfor rel in ['report.md','execution.md','review.md']:\n p=b/rel; s=p.read_text()\n assert not re.search(r'^(<<<<<<< |=======\\s*$|>>>>>>> )',s,re.M)\n assert all(not x.endswith((' ','\\t')) for x in s.splitlines()),rel\n for match in re.finditer(r'\\[[^\\]]*\\]\\(([^)]+)\\)',s):\n  target=match.group(1)\n  if '://' in target or target.startswith('#'): continue\n  q=(p.parent/target.split('#')[0]).resolve()\n  if not q.exists():\n   assert target=='validation.md',(rel,target)\n   pending.append({'file':rel,'target':target})\n  links+=1\nchanged=['research/README.md','research/sherlock-wtc7-investigation/STATUS.md','research/sherlock-wtc7-investigation/SHERLOCK-FEEDBACK.md']\ngit=subprocess.run(['git','diff','--check','--',*changed],cwd=w,capture_output=True,text=True)\nassert git.returncode==0 and not git.stdout and not git.stderr,(git.returncode,git.stdout,git.stderr)\nnav={rel:pin(w/rel) for rel in changed}\nprint(json.dumps({'status':'passed_with_declared_pending_validation_links','manifest':pin(b/'manifest.json'),'artifact_rows':137,'external_dependency_rows':3,'prior_freezes_unchanged':True,'rendered_pages_checked':77,'png_bytes':sum((b/'render'/n).stat().st_size for n in names),'decoded_pixels_match_preserved_reproduction':True,'source_pdf_pages':207,'root_successful_range_jobs':9,'root_captured_empty_streams':18,'title_diagnostic_scope':'combined terminal output only','independent_successful_range_jobs':10,'independent_captured_empty_streams':20,'preserved_terminal_failed_renders':8,'parsed_json_files':len(json_files),'new_document_local_links_checked':links,'pending_links':pending,'scoped_git_diff_check':{'returncode':git.returncode,'stdout':git.stdout,'stderr':git.stderr},'navigation_pins':nav,'limits':['This checks retained artifacts and receipts, not a new render run or native physical model.','Only the three named final unit documents receive this lexical/local-link check; no whole-repository link audit.','Human acceptance, causal ranking and canonical promotion remain unchanged.']},indent=2))\nPY",
+    "tool_receipt": {
+      "chunk_id": "fd850d",
+      "wall_time_seconds": 0.621133916,
+      "exit_code": 0,
+      "original_token_count": 461,
+      "output": "{\n  \"status\": \"passed_with_declared_pending_validation_links\",\n  \"manifest\": {\n    \"bytes\": 44203,\n    \"sha256\": \"fcf5df31adbacea09c1c90d3f0e85b095460f672c56924cde6086df52490e7d8\"\n  },\n  \"artifact_rows\": 137,\n  \"external_dependency_rows\": 3,\n  \"prior_freezes_unchanged\": true,\n  \"rendered_pages_checked\": 77,\n  \"png_bytes\": 9822021,\n  \"decoded_pixels_match_preserved_reproduction\": true,\n  \"source_pdf_pages\": 207,\n  \"root_successful_range_jobs\": 9,\n  \"root_captured_empty_streams\": 18,\n  \"title_diagnostic_scope\": \"combined terminal output only\",\n  \"independent_successful_range_jobs\": 10,\n  \"independent_captured_empty_streams\": 20,\n  \"preserved_terminal_failed_renders\": 8,\n  \"parsed_json_files\": 9,\n  \"new_document_local_links_checked\": 24,\n  \"pending_links\": [\n    {\n      \"file\": \"execution.md\",\n      \"target\": \"validation.md\"\n    },\n    {\n      \"file\": \"review.md\",\n      \"target\": \"validation.md\"\n    }\n  ],\n  \"scoped_git_diff_check\": {\n    \"returncode\": 0,\n    \"stdout\": \"\",\n    \"stderr\": \"\"\n  },\n  \"navigation_pins\": {\n    \"research/README.md\": {\n      \"bytes\": 121650,\n      \"sha256\": \"533db0e0057f4f71bc8afb7f1ec22e8214bea3e2e0835ca3172ca9662e9a49a6\"\n    },\n    \"research/sherlock-wtc7-investigation/STATUS.md\": {\n      \"bytes\": 563869,\n      \"sha256\": \"d0d93b8c4c396ccf7b450ef624c96beb66cfe2f20d37da148356c1dad39a82cc\"\n    },\n    \"research/sherlock-wtc7-investigation/SHERLOCK-FEEDBACK.md\": {\n      \"bytes\": 206198,\n      \"sha256\": \"8941a4e29970c7790618bf33a4b006954ef8484e7841f33e7527b2d492e4c130\"\n    }\n  },\n  \"limits\": [\n    \"This checks retained artifacts and receipts, not a new render run or native physical model.\",\n    \"Only the three named final unit documents receive this lexical/local-link check; no whole-repository link audit.\",\n    \"Human acceptance, causal ranking and canonical promotion remain unchanged.\"\n  ]\n}\n"
+    },
+    "result": {
+      "status": "passed_with_declared_pending_validation_links",
+      "manifest": {
+        "bytes": 44203,
+        "sha256": "fcf5df31adbacea09c1c90d3f0e85b095460f672c56924cde6086df52490e7d8"
+      },
+      "artifact_rows": 137,
+      "external_dependency_rows": 3,
+      "prior_freezes_unchanged": true,
+      "rendered_pages_checked": 77,
+      "png_bytes": 9822021,
+      "decoded_pixels_match_preserved_reproduction": true,
+      "source_pdf_pages": 207,
+      "root_successful_range_jobs": 9,
+      "root_captured_empty_streams": 18,
+      "title_diagnostic_scope": "combined terminal output only",
+      "independent_successful_range_jobs": 10,
+      "independent_captured_empty_streams": 20,
+      "preserved_terminal_failed_renders": 8,
+      "parsed_json_files": 9,
+      "new_document_local_links_checked": 24,
+      "pending_links": [
+        {
+          "file": "execution.md",
+          "target": "validation.md"
+        },
+        {
+          "file": "review.md",
+          "target": "validation.md"
+        }
+      ],
+      "scoped_git_diff_check": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "navigation_pins": {
+        "research/README.md": {
+          "bytes": 121650,
+          "sha256": "533db0e0057f4f71bc8afb7f1ec22e8214bea3e2e0835ca3172ca9662e9a49a6"
+        },
+        "research/sherlock-wtc7-investigation/STATUS.md": {
+          "bytes": 563869,
+          "sha256": "d0d93b8c4c396ccf7b450ef624c96beb66cfe2f20d37da148356c1dad39a82cc"
+        },
+        "research/sherlock-wtc7-investigation/SHERLOCK-FEEDBACK.md": {
+          "bytes": 206198,
+          "sha256": "8941a4e29970c7790618bf33a4b006954ef8484e7841f33e7527b2d492e4c130"
+        }
+      },
+      "limits": [
+        "This checks retained artifacts and receipts, not a new render run or native physical model.",
+        "Only the three named final unit documents receive this lexical/local-link check; no whole-repository link audit.",
+        "Human acceptance, causal ranking and canonical promotion remain unchanged."
+      ]
+    }
+  },
+  "independent_closeout": {
+    "reviewer": "/root/envelope_arithmetic",
+    "reported_tool_receipt": "6c65c7",
+    "reported_exit_code": 0,
+    "command_description": "Bundled Python -B -c read-only JSON/hash/pixel/receipt/link audit; exact independent command not copied into this root receipt",
+    "artifact_rows": 137,
+    "external_dependencies": 3,
+    "prior_pins": 9,
+    "pages": 77,
+    "empty_captured_streams": 38,
+    "terminal_failed_renders": 8,
+    "existing_local_links": 22,
+    "deferred_validation_links": 2,
+    "manifest_sha256": "fcf5df31adbacea09c1c90d3f0e85b095460f672c56924cde6086df52490e7d8",
+    "writes": false,
+    "network": false,
+    "rerender": false,
+    "limit": "Reported independent tool result, not a second copy of that tool's raw output"
+  },
+  "final_link_closure": {
+    "command": "python3 - <<'PY'\nimport hashlib,json,re,subprocess\nfrom pathlib import Path\nb=Path('/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/windsor-thesis-2026-10-08')\nw=b.parents[2]\nchecks=[]\nfor rel in ['report.md','execution.md','review.md','validation.md']:\n p=b/rel; s=p.read_text(); count=0\n assert not re.search(r'^(<<<<<<< |=======\\s*$|>>>>>>> )',s,re.M)\n assert all(not x.endswith((' ','\\t')) for x in s.splitlines()),rel\n for match in re.finditer(r'\\[[^\\]]*\\]\\(([^)]+)\\)',s):\n  target=match.group(1)\n  if '://' in target or target.startswith('#'): continue\n  assert (p.parent/target.split('#')[0]).resolve().exists(),(rel,target)\n  count+=1\n checks.append({'path':rel,'local_links':count})\nstatus=w/'research/sherlock-wtc7-investigation/STATUS.md'\nsection=status.read_text().split('## Completed security source disposition')[0]\ncount=0\nfor match in re.finditer(r'\\[[^\\]]*\\]\\(([^)]+)\\)',section):\n target=match.group(1); assert (status.parent/target.split('#')[0]).resolve().exists(),target; count+=1\nreadme=w/'research/README.md'\nparagraph=[s for s in readme.read_text().split('\\n\\n') if s.startswith('The [Windsor 2009 thesis comparison]')]\nassert len(paragraph)==1\nfor target in re.findall(r'\\[[^\\]]*\\]\\(([^)]+)\\)',paragraph[0]): assert (readme.parent/target).resolve().exists(),target\nassert 'prerequisite-gating recurrence' in (w/'research/sherlock-wtc7-investigation/SHERLOCK-FEEDBACK.md').read_text()\nassert hashlib.sha256((b/'manifest.json').read_bytes()).hexdigest()=='fcf5df31adbacea09c1c90d3f0e85b095460f672c56924cde6086df52490e7d8'\nresult=subprocess.run(['git','diff','--check','--','research/README.md','research/sherlock-wtc7-investigation/STATUS.md','research/sherlock-wtc7-investigation/SHERLOCK-FEEDBACK.md'],cwd=w,capture_output=True,text=True)\nassert result.returncode==0 and not result.stdout and not result.stderr\nprint(json.dumps({'status':'passed','document_checks':checks,'local_links_total':sum(x['local_links'] for x in checks),'pending_links':[],'current_status_section_links':count,'new_research_index_paragraph_verified':True,'feedback_recurrence_present':True,'manifest_unchanged':True,'git_diff_check_exit':result.returncode},indent=2))\nPY",
+    "tool_receipt": {
+      "chunk_id": "93cd11",
+      "wall_time_seconds": 0.130560583,
+      "exit_code": 0,
+      "original_token_count": 137,
+      "output": "{\n  \"status\": \"passed\",\n  \"document_checks\": [\n    {\n      \"path\": \"report.md\",\n      \"local_links\": 8\n    },\n    {\n      \"path\": \"execution.md\",\n      \"local_links\": 11\n    },\n    {\n      \"path\": \"review.md\",\n      \"local_links\": 5\n    },\n    {\n      \"path\": \"validation.md\",\n      \"local_links\": 2\n    }\n  ],\n  \"local_links_total\": 26,\n  \"pending_links\": [],\n  \"current_status_section_links\": 4,\n  \"new_research_index_paragraph_verified\": true,\n  \"feedback_recurrence_present\": true,\n  \"manifest_unchanged\": true,\n  \"git_diff_check_exit\": 0\n}\n"
+    },
+    "result": {
+      "status": "passed",
+      "document_checks": [
+        {
+          "path": "report.md",
+          "local_links": 8
+        },
+        {
+          "path": "execution.md",
+          "local_links": 11
+        },
+        {
+          "path": "review.md",
+          "local_links": 5
+        },
+        {
+          "path": "validation.md",
+          "local_links": 2
+        }
+      ],
+      "local_links_total": 26,
+      "pending_links": [],
+      "current_status_section_links": 4,
+      "new_research_index_paragraph_verified": true,
+      "feedback_recurrence_present": true,
+      "manifest_unchanged": true,
+      "git_diff_check_exit": 0
+    }
+  },
+  "scientific_review": {
+    "reviewer": "/root/admission_method_review",
+    "verdict": "No remaining blocker or required correction in final report, execution and review.",
+    "reviewed_hashes": {
+      "report": "8478592de0193b6588f8c2210a9fcbd8a8ca8eba34a68f5296fdd5b186758a8c",
+      "execution": "e7aaae4884b93e54d8019a29610ad43082937a84ae10c3afa5add1139283eb85",
+      "review": "59a5ae72928ba7d4a4ee5e68cddd88c9db537b3ca3cb67c060853a013b89507e"
+    },
+    "limits": "Prior-informed AI textual review; no new source inspection, physical model reproduction, independent historical evidence or human acceptance."
+  },
+  "cause_ranking_changed": false,
+  "canonical_promotion": false,
+  "human_acceptance": false
+}

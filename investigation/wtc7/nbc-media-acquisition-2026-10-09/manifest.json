@@ -1,0 +1,78 @@
+{
+  "schema": "nbc-candidate-acquisition-v1",
+  "acquisition_date": "2026-10-09",
+  "date_timezone": "America/New_York",
+  "status": "both_candidates_acquired_and_initially_screened",
+  "scope": "Research source intake; not historical authentication or a collapse-cause finding",
+  "sources": [
+    {
+      "catalog_title": "collapse wtc.mpg",
+      "drive_id": "1uBxFfgQNfD4wXTCz_5si4c5mPFvj0i2S",
+      "public_view_url": "https://drive.google.com/file/d/1uBxFfgQNfD4wXTCz_5si4c5mPFvj0i2S/view",
+      "public_download_url_observed_in_view_page": "https://drive.usercontent.google.com/uc?id=1uBxFfgQNfD4wXTCz_5si4c5mPFvj0i2S&export=download",
+      "path": "sources/collapse wtc.mpg",
+      "metadata_size_bytes": 2703430,
+      "acquired_size_bytes": 2703430,
+      "sha256": "9ebd451c32f2a2bfd031cefae87aba5f74e238e31abd2b66f5cf39c5dc62ff54",
+      "http_status": 200,
+      "http_content_type": "application/octet-stream",
+      "file_magic": "MPEG sequence, v1, system multiplex",
+      "probe": "inspection/small-probe.json",
+      "decoded_video_frame_count": 295,
+      "full_decode_exit_code": 0,
+      "decode_diagnostics": "inspection/small-decode.stderr.txt",
+      "decode_diagnostics_empty": true,
+      "contact_sheet": "inspection/small-contact.png",
+      "contact_sheet_sha256": "5bd1b00bd28664c46ed84b9dfc8f1fe77ef1f9414bdd57ff04730b0957ee0e96"
+    },
+    {
+      "catalog_title": "wtc5.mpeg.mpg",
+      "drive_id": "1UEfuJwL-EXTKTf-YQ1l0F88e5eY6scBS",
+      "public_view_url": "https://drive.google.com/file/d/1UEfuJwL-EXTKTf-YQ1l0F88e5eY6scBS/view",
+      "public_download_url_observed_in_view_page": "https://drive.usercontent.google.com/uc?id=1UEfuJwL-EXTKTf-YQ1l0F88e5eY6scBS&export=download",
+      "path": "sources/wtc5.mpeg.mpg",
+      "metadata_size_bytes": 99297340,
+      "acquired_size_bytes": 99297340,
+      "sha256": "1bc402b59122eb8ecd1cdd7b473c4fa6b492e98c85cf42afa26f71134ed4d4de",
+      "http_status": 200,
+      "http_content_type": "application/octet-stream",
+      "file_magic": "MPEG sequence, v1, system multiplex",
+      "probe": "inspection/large-probe.json",
+      "decoded_video_frame_count": 10648,
+      "full_decode_exit_code": 0,
+      "decode_diagnostics": "inspection/large-decode.stderr.txt",
+      "decode_diagnostics_empty": false,
+      "decode_warning": "ac-tex damaged at 18 5; Warning MVs not available; corrupt decoded frame",
+      "contact_sheet": "inspection/large-contact.png",
+      "contact_sheet_sha256": "ddc07135a2579ffb6374928c7b13ec5fa5b7ff5db9f2a26186f63e58afae92c1"
+    }
+  ],
+  "shared_source_limits": [
+    "The catalog route was previously attributed to the Video-NBC child of NIST's public collection; it is not an original-camera custody chain.",
+    "Fresh metadata supplied matching title, MIME type and size but no usable provider checksum.",
+    "Unauthenticated public-page/download requests succeeded without credentials, sharing changes or bearer-reference disclosure.",
+    "Byte hashes establish identity of this acquisition, not a filming date or complete historical authenticity.",
+    "Sources were neither repaired nor remuxed nor re-encoded.",
+    "No affirmative source match or original-soundtrack authentication was established by the initial screen."
+  ],
+  "tools": {
+    "ffmpeg": "7.1.1",
+    "ffprobe": "7.1.1",
+    "git_lfs": "3.8.0"
+  },
+  "preserved_attempt_limits": [
+    "The small candidate's fresh connector fetch returned a temporary file reference, not local bytes; its secret reference was not saved or used in commands.",
+    "Both public Drive view URLs failed in the web reader; ordinary curl GET requests returned HTTP 200.",
+    "An initial ffprobe invocation used the wrong working directory and failed before media inspection; corrected invocations generated the saved probes.",
+    "The first contact-sheet command failed on unescaped filter commas; its diagnostic is retained separately. Corrected extraction used unchanged sample indices.",
+    "The isolated worktree checkout warned about one pre-existing nonpointer .npy file. It is outside this task and was not repaired or staged."
+  ],
+  "publication_boundary": {
+    "destination": "roryscot/911 existing private GitHub repository",
+    "branch": "research/nbc-media-acquisition-2026-10-09",
+    "base_already_published_commit": "aa2f20a6f6e8e28048e0ea29f6f13467020c9e66",
+    "new_payload": "Only this research packet; two public source videos, derived inspection images, generated metadata/diagnostics and provenance notes",
+    "parent_investigation_and_main_modified": false,
+    "legal_or_human_acceptance_changed": false
+  }
+}

@@ -367,6 +367,45 @@ cancellation, without excluding short local effects or establishing original
 detectability. NIST's separate blast analysis has not been reproduced
 by these audio audits.[^17]
 
+### October 8 hypothesis-specific acoustic qualification
+
+The user's thermal/nanothermite alternative requires a different acoustic
+prediction from conventional explosive demolition. A proposed predominantly
+thermal mechanism need not inherit the same sharp blast-sequence prediction.
+That is a reason to limit a broad acoustic exclusion, not a finding that this
+mechanism occurred or could produce the particular structural history.
+
+Targeted primary-source checks distinguish material families rather than
+treating nanothermite as intrinsically silent. Jacob, Kline and Zachariah's
+2018 experiments report composition-dependent gas release and pressure
+generation ([Journal of Applied Physics, DOI10.1063/1.5021890](https://doi.org/10.1063/1.5021890)).
+Polk and colleagues' 2024 study investigates low-gas thermitic heat sources
+([author-institution abstract](https://digitalcommons.njit.edu/fac_pubs/530/)).
+These later studies establish reported material behavior under their test
+conditions, not availability, deployment, cutting effectiveness or microphone
+detectability at WTC7 in2001. The 2018 abstract/introduction and pressure-results
+passage, and the 2024 abstract, were checked online on October8; this is not a
+new byte-pinned full-paper/laboratory replication or a building-scale test.
+
+The user's reported bang around13seconds in the edited excerpt remains a
+listener-reported candidate in this supplement, not a freshly authenticated
+acoustic event. The preserved audio audit's detection/synchronization limits
+remain controlling. Neither a loud comparator soundtrack nor absence of a
+verified charge sequence calibrates a different recording automatically.
+
+| Claim | Layer / present strength | Discriminating test |
+|---|---|---|
+| Every deliberate-removal proposal must produce the conventional explosive signature. | Unsupported generalization (E). | Mechanism-specific pressure/acoustic predictions and relevant detection opportunities. |
+| Nanothermite is necessarily silent. | Contradicted as a general material claim (E); specific application unknown. | Applicable composition/condition data; do not extrapolate laboratory pressure directly to field audibility. |
+| A thermal intervention occurred at WTC7. | Hypothesis; this supplement supplies no case-specific identification (D). | Authenticated material/damage evidence distinguishable from fire and contamination, constrained timing and independently corroborated operational records. |
+| Non-detection distinguishes fire from a quieter intervention. | Conditional inference, currently unresolved (D). | Different, justified probabilities of detectable observations under specified alternatives; no invented likelihood ratio. |
+
+This preserves a legitimate alternative for investigation without awarding it
+evidence simply for explaining a missing signature. Failure of a reliably
+detectable prediction could change relative support, but that reliability has
+not been established by this supplement. No cause ranking, finding of intent,
+legal record or accepted Sherlock finding changes.
+
 ## Updated comparison
 
 | Explanation | Present assessment | Evidence that could change it |

@@ -1,0 +1,587 @@
+{
+  "addon_entrypoints": [],
+  "boundary_limit": "Python audit instrumentation only; not a security sandbox, native-call proof, source authenticity, scientific validation, or Sherlock acceptance.",
+  "cases": [],
+  "checks": [
+    {
+      "label": "native:exact_nine_collected",
+      "passed": true
+    },
+    {
+      "label": "native:all_nine_passed",
+      "passed": true
+    }
+  ],
+  "commands": [],
+  "engine_pins_after": {
+    "examples/sherlock-bridge-link.json": "34368d23dabb42eeeecbc61340d62435affa631d54dcf4fe9e5bbcff16c9f736",
+    "schemas/sherlock-bridge-link.schema.json": "10400ded1ce9cb771197c4e63eb56d8b122798af9f6c6c6dfb020c24c2b9f662",
+    "sherlock-integration/.gitignore": "7a3a6c3e50cb75fd8aadb61931d51f311572a45b280e2cf1891b9c8bea66856f",
+    "sherlock-integration/CHARTER.md": "158aaed7b482924f6f812ade62424cafa0de75a1cce1f6ff18065386b6315f01",
+    "sherlock-integration/project.json": "b84ebae67bc9625c476c33b8adbc8e4a1951d1e36d7c79d13206c868d1ad1d45",
+    "src/research_machine/adapters/filesystem.py": "5b9f428f5f281e517de801f90b46bb14b27d834a05de306f3a77c4bad77bfde4",
+    "src/research_machine/addons/registry.py": "e99e60426bd75c40f4642bd1e8a6312d76d3581c60d92234d093dbae354bc5fb",
+    "src/research_machine/application/evidence_admission.py": "6d90cf52f0684801c471aac4568374a3f170bd16cadb1e2d90f9870b34f5a4ef",
+    "src/research_machine/application/service.py": "e739b18f1ca97814d1c6f001435e38280948f66480a9be5310ba520f9c20c933",
+    "src/research_machine/application/sherlock_bridge.py": "18a9bba79cbde0df917bdceea592d59c8513a53fcac07ec9571c95e8df5eac79",
+    "src/research_machine/domain/models.py": "bb2eb70b9a2247c38729d02b82ed04a6284d77b482eaf7ed585c7920914ad6a6",
+    "src/research_machine/interfaces/cli.py": "5fdfed7b4bd63ac9d51df1b6701a1775314daa91d6918ba396a9cf0a9aec67aa",
+    "tests/test_sherlock_bridge.py": "6787df5978a7f273c6df153dd0e0951141182400867ad2d7418bc6a81e17ccbe"
+  },
+  "engine_pins_before": {
+    "examples/sherlock-bridge-link.json": "34368d23dabb42eeeecbc61340d62435affa631d54dcf4fe9e5bbcff16c9f736",
+    "schemas/sherlock-bridge-link.schema.json": "10400ded1ce9cb771197c4e63eb56d8b122798af9f6c6c6dfb020c24c2b9f662",
+    "sherlock-integration/.gitignore": "7a3a6c3e50cb75fd8aadb61931d51f311572a45b280e2cf1891b9c8bea66856f",
+    "sherlock-integration/CHARTER.md": "158aaed7b482924f6f812ade62424cafa0de75a1cce1f6ff18065386b6315f01",
+    "sherlock-integration/project.json": "b84ebae67bc9625c476c33b8adbc8e4a1951d1e36d7c79d13206c868d1ad1d45",
+    "src/research_machine/adapters/filesystem.py": "5b9f428f5f281e517de801f90b46bb14b27d834a05de306f3a77c4bad77bfde4",
+    "src/research_machine/addons/registry.py": "e99e60426bd75c40f4642bd1e8a6312d76d3581c60d92234d093dbae354bc5fb",
+    "src/research_machine/application/evidence_admission.py": "6d90cf52f0684801c471aac4568374a3f170bd16cadb1e2d90f9870b34f5a4ef",
+    "src/research_machine/application/service.py": "e739b18f1ca97814d1c6f001435e38280948f66480a9be5310ba520f9c20c933",
+    "src/research_machine/application/sherlock_bridge.py": "18a9bba79cbde0df917bdceea592d59c8513a53fcac07ec9571c95e8df5eac79",
+    "src/research_machine/domain/models.py": "bb2eb70b9a2247c38729d02b82ed04a6284d77b482eaf7ed585c7920914ad6a6",
+    "src/research_machine/interfaces/cli.py": "5fdfed7b4bd63ac9d51df1b6701a1775314daa91d6918ba396a9cf0a9aec67aa",
+    "tests/test_sherlock_bridge.py": "6787df5978a7f273c6df153dd0e0951141182400867ad2d7418bc6a81e17ccbe"
+  },
+  "expected_denials": [
+    {
+      "detail": "/private/tmp/wtc7-faraday-pilot.eGMyO9/guard-refused-native-log-retry-20261007",
+      "event": "open",
+      "expected_control": "outside_write"
+    },
+    {
+      "detail": "/private/tmp/wtc7-faraday-pilot.eGMyO9/guard-refused-native-log-retry-20261007",
+      "event": "os.symlink",
+      "expected_control": "outside_symlink"
+    },
+    {
+      "detail": "network, process creation, or native foreign-call access",
+      "event": "socket.__new__",
+      "expected_control": "network"
+    },
+    {
+      "detail": "network, process creation, or native foreign-call access",
+      "event": "subprocess.Popen",
+      "expected_control": "subprocess"
+    }
+  ],
+  "format_version": 1,
+  "guard_controls": {
+    "allowed_inroot_symlink": true,
+    "allowed_local_write": true,
+    "allowed_temporary_replace": true,
+    "denied_controls": [
+      "outside_write",
+      "outside_symlink",
+      "network",
+      "subprocess"
+    ]
+  },
+  "imported_core_sources": {
+    "research_machine": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/__init__.py",
+      "sha256": "481e5e77faab39620de54d59e9bb816af1e03ac814510997ee18ed537d5db428"
+    },
+    "research_machine.adapters": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/adapters/__init__.py",
+      "sha256": "637bb878da4c809fb1bc7e0996dd85ee9d332d7f5baa52329ba75c84fe83c185"
+    },
+    "research_machine.adapters.filesystem": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/adapters/filesystem.py",
+      "sha256": "5b9f428f5f281e517de801f90b46bb14b27d834a05de306f3a77c4bad77bfde4"
+    },
+    "research_machine.addons": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/addons/__init__.py",
+      "sha256": "bfb2eac2b90e7098f8e5737f82a15ff4cc26e29b2d886a284fad776535088a98"
+    },
+    "research_machine.addons.connector": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/addons/connector.py",
+      "sha256": "17fdacda30a679b241e303dff5cbb19b285db35c2d1e204a3ac0418603a28ec0"
+    },
+    "research_machine.addons.contracts": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/addons/contracts.py",
+      "sha256": "2d9fdcbcc6143c30b63773a29c3e3ec6e0258eca0b42684ba3998abcd2f3cb0e"
+    },
+    "research_machine.addons.execution": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/addons/execution.py",
+      "sha256": "1c39a8cdff3777e0f8236292238b29f32b83e7809285bac690c4631cd1b2a682"
+    },
+    "research_machine.addons.general_science": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/addons/general_science.py",
+      "sha256": "05c44b386760d7cf3ecdab35aeb622d18c6c570242b5ff3df2f36d1d45af3470"
+    },
+    "research_machine.addons.models": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/addons/models.py",
+      "sha256": "8cd701509c9903b038cf341c41c8f2dd6e11765bc2c7ca165a8944e8d731e76f"
+    },
+    "research_machine.addons.registry": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/addons/registry.py",
+      "sha256": "e99e60426bd75c40f4642bd1e8a6312d76d3581c60d92234d093dbae354bc5fb"
+    },
+    "research_machine.addons.result_contract": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/addons/result_contract.py",
+      "sha256": "e686e846ed30e02a62bb7e10b19ab5b7912a35533bcdce1ace785a16a8465f14"
+    },
+    "research_machine.application": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/__init__.py",
+      "sha256": "d4c071f08f28ca60a1d1ff336051371171e7670b2b9949c00fc57cd71378a29c"
+    },
+    "research_machine.application.alias_proxy_mapping": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/alias_proxy_mapping.py",
+      "sha256": "d1886ba7983bfa8cf731c6c4116bc63c99aabb53505cfa201a1ec012a54f4821"
+    },
+    "research_machine.application.artifact_integrity": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/artifact_integrity.py",
+      "sha256": "4170eea9a02e3e10e773d12e1112baa29785d5b9321b70b8d39f838b40356523"
+    },
+    "research_machine.application.audit_prerequisite": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/audit_prerequisite.py",
+      "sha256": "132836b8cb3a955bb6ee908df76616855c93ac15b278668b201189e85cbfebef"
+    },
+    "research_machine.application.claim_integrity": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/claim_integrity.py",
+      "sha256": "bd072ee79630a9a68adf90f43472919582addc7a3422162e12bb7672f986687c"
+    },
+    "research_machine.application.commands": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/commands.py",
+      "sha256": "41bd6b22f81ef0ca9a4fa2fdf9a9c937cac6ad228c9bef847f144482e10c1bc4"
+    },
+    "research_machine.application.cross_lane_lesson_integrity": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/cross_lane_lesson_integrity.py",
+      "sha256": "76ee93989dcd388f1e39d16fc94985bade5b0017795b530b3793ac7fd8bab6cc"
+    },
+    "research_machine.application.dataset_integrity": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/dataset_integrity.py",
+      "sha256": "3378f9698c2402b0df514621d6e2bef6d3c07006be0a21b05065c01f84a153d9"
+    },
+    "research_machine.application.dataset_inventory": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/dataset_inventory.py",
+      "sha256": "a6ae0fcbc92defad42ec472d1644c27ade4ccf3a23350cd975543aa77c166d85"
+    },
+    "research_machine.application.dataset_source_authority": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/dataset_source_authority.py",
+      "sha256": "26f6de6c12e1e22adc1d99770a00fed55c6530b2745c762269ee45fff37906e0"
+    },
+    "research_machine.application.ethics": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/ethics.py",
+      "sha256": "aaf4e9ae68543ad0d44b142c721d0e8c29301713c2d540566b2fd048560e1bb9"
+    },
+    "research_machine.application.evidence_admission": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/evidence_admission.py",
+      "sha256": "6d90cf52f0684801c471aac4568374a3f170bd16cadb1e2d90f9870b34f5a4ef"
+    },
+    "research_machine.application.evidence_status": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/evidence_status.py",
+      "sha256": "5d30da69c2debda95dc8a9076a09d5e8ae9c887991fb6b47288eb814383a9574"
+    },
+    "research_machine.application.hypothesis_integrity": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/hypothesis_integrity.py",
+      "sha256": "e4a7ad28f03aa54e7e5021991d04e53540e2fa0006779488f2b257252bbd09c5"
+    },
+    "research_machine.application.json_schema_profile": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/json_schema_profile.py",
+      "sha256": "936b1b04aa899b4f78f07f7ec76bffd6bf0604fb85cb5b5bedb3087ec421e2ee"
+    },
+    "research_machine.application.policies": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/policies.py",
+      "sha256": "a5f8490d9e2e19555d40fe3bf8ea76372852fef10ced546796438958dd143ba2"
+    },
+    "research_machine.application.protocol_integrity": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/protocol_integrity.py",
+      "sha256": "46c61ef13cbb291cfc64e4a11635a3405b999bc46db4ca24995ee22ae59e6744"
+    },
+    "research_machine.application.report_language": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/report_language.py",
+      "sha256": "4ba0ec5aef5aa8bd3fdba5e9cc7ce0cf0c03b2f5029a44c056aa1cebbcf86743"
+    },
+    "research_machine.application.rigor": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/rigor.py",
+      "sha256": "90608aa5893acbb12cc5cbe64f83710254fa7dcb5c7629d75ba19c810bb973c9"
+    },
+    "research_machine.application.run_integrity": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/run_integrity.py",
+      "sha256": "bc3637032f0ca7ad4ed41b2e144a26324da92c8f24b2550c8cf218912e0e9519"
+    },
+    "research_machine.application.service": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/service.py",
+      "sha256": "e739b18f1ca97814d1c6f001435e38280948f66480a9be5310ba520f9c20c933"
+    },
+    "research_machine.application.sherlock_bridge": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/application/sherlock_bridge.py",
+      "sha256": "18a9bba79cbde0df917bdceea592d59c8513a53fcac07ec9571c95e8df5eac79"
+    },
+    "research_machine.collaboration": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/collaboration/__init__.py",
+      "sha256": "a4142db1de9f85ae2a9e83e95547e029699083617990bdf8312433b235a41be9"
+    },
+    "research_machine.collaboration.proposal": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/collaboration/proposal.py",
+      "sha256": "94c8ad4c599911f6ba8d91facf7a86aaec3816172a04871c87442831971cbb5c"
+    },
+    "research_machine.collaboration.redaction": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/collaboration/redaction.py",
+      "sha256": "5d98e51d8a7d79c1b69a6b59da852e55dec687ab82b443da3e62a2c2571c4ddf"
+    },
+    "research_machine.design": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/design/__init__.py",
+      "sha256": "ba93b9b3abd1a921d8a06ef5307d62c4f331c91e5596dd2387017896162f9038"
+    },
+    "research_machine.design.causal": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/design/causal.py",
+      "sha256": "9435792c44cc6ae85d1b4f5ffcb1afd8eb4e05af2374d38b42ed052baf26f314"
+    },
+    "research_machine.design.initializer": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/design/initializer.py",
+      "sha256": "04bd0dafe8154a7b6a0cb5a7147821730e810a03e2182f19811bf259214bee82"
+    },
+    "research_machine.design.precision": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/design/precision.py",
+      "sha256": "7f3058a1e0cc5e9395b419594a965000e6ed791e4738da263f1b144149b34c96"
+    },
+    "research_machine.design.randomization": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/design/randomization.py",
+      "sha256": "38199b10410fea003f981b2534f60ddab57008ff59c34a820c19ad2f706fc1de"
+    },
+    "research_machine.design.scaffold": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/design/scaffold.py",
+      "sha256": "2c9981c5f291461636534502053d8b7291ee3f2cd15154ce9246f6241c96b47e"
+    },
+    "research_machine.domain": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/domain/__init__.py",
+      "sha256": "db5bbf79f0517e156ed686dc9a93afc2839a18dac7b3396d594b079e58137ecd"
+    },
+    "research_machine.domain.errors": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/domain/errors.py",
+      "sha256": "a65571741f072a5298cdb86db6f6ee7f5a28ffd89bf1bb11273b8c8b3dcc1517"
+    },
+    "research_machine.domain.models": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/domain/models.py",
+      "sha256": "bb2eb70b9a2247c38729d02b82ed04a6284d77b482eaf7ed585c7920914ad6a6"
+    },
+    "research_machine.executors": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/executors/__init__.py",
+      "sha256": "75134dc62948f48dca98355379682e0c954b740911a3ec4494953229bfaf3f94"
+    },
+    "research_machine.executors.notebook_freeze_bundle": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/executors/notebook_freeze_bundle.py",
+      "sha256": "caa8a6cf605f9a3ea06f66ed64a932fe35b9d61da8d7d8213bf29cf26a44254a"
+    },
+    "research_machine.executors.notebook_preflight": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/executors/notebook_preflight.py",
+      "sha256": "9c4c994cb75d2fcad73cc0f9531c4723ee25702ae5385439a6cdf1a7ad58b5d7"
+    },
+    "research_machine.executors.runtime_preflight": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/executors/runtime_preflight.py",
+      "sha256": "6b962057cc5c13c3efbf7ba1368611f9be0fcbe90e9bbfe580f4286783489c60"
+    },
+    "research_machine.interfaces": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/interfaces/__init__.py",
+      "sha256": "04b6760a5812a730a4a9a1f1613fc48cf15631e477e2b5c88ad1e2160362880e"
+    },
+    "research_machine.interfaces.cli": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/interfaces/cli.py",
+      "sha256": "5fdfed7b4bd63ac9d51df1b6701a1775314daa91d6918ba396a9cf0a9aec67aa"
+    },
+    "research_machine.literature": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/literature/__init__.py",
+      "sha256": "efa01ea371da233fea4c04f721e1fb2e5754e9d0804e1f7d027bfdb3815f6043"
+    },
+    "research_machine.literature.hashes": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/literature/hashes.py",
+      "sha256": "6f05b914d197b48ffbde69d5b10a89ea4b4b40a92f1004c616b03ccf36115915"
+    },
+    "research_machine.literature.snapshot": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/literature/snapshot.py",
+      "sha256": "205403382486968e625da209436baebbcb5517e9c20e4c18b89e71123815a232"
+    },
+    "research_machine.measurement": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/measurement/__init__.py",
+      "sha256": "78440ae51f0801aca67834d311c42ec39d437d635422a7241b5df57755072042"
+    },
+    "research_machine.measurement.custody": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/measurement/custody.py",
+      "sha256": "432e8dd61a762ec284602270b91dde90ad5a12cbea6404b1768a7e49b4c168b7"
+    },
+    "research_machine.measurement.instrument": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/measurement/instrument.py",
+      "sha256": "c0acf29220adb773d7aa011c92948ef1ec8c84ac03b17410889d942e7d985aff"
+    },
+    "research_machine.measurement.preprocessing": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/measurement/preprocessing.py",
+      "sha256": "28f310ccc84daf1bf84212f14fe119d2b7e11d6713b571794792cd45d06170a5"
+    },
+    "research_machine.ports": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/ports/__init__.py",
+      "sha256": "b6f6d3a4b09ac91dcdb539afde63897e33e33739a62a87ae6024aacb453f9b92"
+    },
+    "research_machine.ports.repository": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/ports/repository.py",
+      "sha256": "7df8af06afeff6186ec659def041504acf1298e503f613c459f20f3bf4287025"
+    },
+    "research_machine.replication": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/replication/__init__.py",
+      "sha256": "cdda84963719d2ac1188030efa549f7640f9bf90fe8313bdddf52596c9319c24"
+    },
+    "research_machine.replication.package": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/replication/package.py",
+      "sha256": "fcbd8ba506d206cf2fb8c7dd403d9eb9aab7a8f6e5ed58769990ae4fdfd83bbe"
+    },
+    "research_machine.reporting": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/reporting/__init__.py",
+      "sha256": "c278ce85ad4b75113ad07a03056bf6b21606e2d8c5378050c916c5345cdc2b38"
+    },
+    "research_machine.reporting.synthesis": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/reporting/synthesis.py",
+      "sha256": "626c88577aa8d75dec5fd7512e2fa0205441f1fb9b3f1d89c03231b92ee04be9"
+    },
+    "research_machine.selection": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/selection/__init__.py",
+      "sha256": "a7eb549a07df95155d7c19c564c3ace0ef1e8dd3e4c287452c5acda4b5649a37"
+    },
+    "research_machine.selection.recommendation": {
+      "path": "/Users/admin/dev/faraday/src/research_machine/selection/recommendation.py",
+      "sha256": "7fef2a273898eb130271928d2ab8ef2e68cc710d8d08b60f7086f24268417876"
+    }
+  },
+  "invocation": [
+    "/Users/admin/.pyenv/versions/3.13.7/bin/python3",
+    "-I",
+    "-B",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/faraday-bridge-pilot-2026-10-05/verify_bridge_retry_log.py",
+    "--mode",
+    "native",
+    "--run-root",
+    "/private/tmp/wtc7-faraday-pilot.eGMyO9/native-log-retry-20261007"
+  ],
+  "mode": "native",
+  "native": {
+    "argv": [
+      "/Users/admin/dev/faraday/tests/test_sherlock_bridge.py",
+      "-q",
+      "-s",
+      "-p",
+      "no:cacheprovider",
+      "--noconftest",
+      "--import-mode=importlib",
+      "--rootdir",
+      "/Users/admin/dev/faraday",
+      "-c",
+      "/private/tmp/wtc7-faraday-pilot.eGMyO9/native-log-retry-20261007/pytest.ini",
+      "--basetemp",
+      "/private/tmp/wtc7-faraday-pilot.eGMyO9/native-log-retry-20261007/native-tmp",
+      "--log-file",
+      "/private/tmp/wtc7-faraday-pilot.eGMyO9/native-log-retry-20261007/pytest.log"
+    ],
+    "counts": {
+      "collected": 9,
+      "failed": 0,
+      "passed": 9,
+      "skipped": 0
+    },
+    "exit_code": 0,
+    "fixture_limitation": "Unchanged native dataset fixtures omit --synthetic; these tests do not establish typed synthetic propagation.",
+    "reports": [
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_example_matches_published_schema",
+        "outcome": "passed",
+        "when": "setup"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_example_matches_published_schema",
+        "outcome": "passed",
+        "when": "call"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_example_matches_published_schema",
+        "outcome": "passed",
+        "when": "teardown"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_schema_rejects_authority_merger[faraday_canonical_state_mutated]",
+        "outcome": "passed",
+        "when": "setup"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_schema_rejects_authority_merger[faraday_canonical_state_mutated]",
+        "outcome": "passed",
+        "when": "call"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_schema_rejects_authority_merger[faraday_canonical_state_mutated]",
+        "outcome": "passed",
+        "when": "teardown"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_schema_rejects_authority_merger[sherlock_note_is_faraday_evidence]",
+        "outcome": "passed",
+        "when": "setup"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_schema_rejects_authority_merger[sherlock_note_is_faraday_evidence]",
+        "outcome": "passed",
+        "when": "call"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_schema_rejects_authority_merger[sherlock_note_is_faraday_evidence]",
+        "outcome": "passed",
+        "when": "teardown"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_schema_rejects_authority_merger[publication_authorized]",
+        "outcome": "passed",
+        "when": "setup"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_schema_rejects_authority_merger[publication_authorized]",
+        "outcome": "passed",
+        "when": "call"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_schema_rejects_authority_merger[publication_authorized]",
+        "outcome": "passed",
+        "when": "teardown"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_schema_rejects_authority_merger[review_promotion_authorized]",
+        "outcome": "passed",
+        "when": "setup"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_schema_rejects_authority_merger[review_promotion_authorized]",
+        "outcome": "passed",
+        "when": "call"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_schema_rejects_authority_merger[review_promotion_authorized]",
+        "outcome": "passed",
+        "when": "teardown"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_project_keeps_runtime_lock_local",
+        "outcome": "passed",
+        "when": "setup"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_project_keeps_runtime_lock_local",
+        "outcome": "passed",
+        "when": "call"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_project_keeps_runtime_lock_local",
+        "outcome": "passed",
+        "when": "teardown"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_project_binds_exact_charter_bytes",
+        "outcome": "passed",
+        "when": "setup"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_project_binds_exact_charter_bytes",
+        "outcome": "passed",
+        "when": "call"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_sherlock_bridge_project_binds_exact_charter_bytes",
+        "outcome": "passed",
+        "when": "teardown"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_cli_exports_sherlock_evidence_bridge_receipt",
+        "outcome": "passed",
+        "when": "setup"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_cli_exports_sherlock_evidence_bridge_receipt",
+        "outcome": "passed",
+        "when": "call"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_cli_exports_sherlock_evidence_bridge_receipt",
+        "outcome": "passed",
+        "when": "teardown"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_cli_sherlock_evidence_export_is_write_once",
+        "outcome": "passed",
+        "when": "setup"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_cli_sherlock_evidence_export_is_write_once",
+        "outcome": "passed",
+        "when": "call"
+      },
+      {
+        "longrepr": null,
+        "nodeid": "tests/test_sherlock_bridge.py::test_cli_sherlock_evidence_export_is_write_once",
+        "outcome": "passed",
+        "when": "teardown"
+      }
+    ]
+  },
+  "native_files": {
+    "test_cli_exports_sherlock_evid0/fixture.csv": "1a80986111952a11d02e84dbed98ae00f279469aad0615d17fa81911f8a6b428",
+    "test_cli_exports_sherlock_evid0/sherlock-export/faraday-summary.json": "f64bf2d99a7bfe1dc8dd955b41c88ea10713ba9683b7ca8427f78e0dd7edeb97",
+    "test_cli_exports_sherlock_evid0/sherlock-export/sherlock-bridge-link.json": "1cf61d3373290759c4b50b9f8c35ec8d3026d9474e353a7b3bc5680201741a58",
+    "test_cli_exports_sherlock_evid0/workspace/inquiries/bridge-case/claims.json": "27d406c9721ca97a369cd84bbe06563574104f6a344408df3a81aa327d437761",
+    "test_cli_exports_sherlock_evid0/workspace/inquiries/bridge-case/datasets/dataset-fixture.json": "cef557aa50a5e21133333624a1cd6c99aad14a93a7f2679c44d3e662f9063aac",
+    "test_cli_exports_sherlock_evid0/workspace/inquiries/bridge-case/evidence/evd-591e85958cce.json": "d6a7af3d7f04df16c023542bfedb4a46a673144609b00cf51f8d9baaad9595b1",
+    "test_cli_exports_sherlock_evid0/workspace/inquiries/bridge-case/hypotheses/pending_review/hyp-5f1fede8af70.json": "f72c67d74386aec4cea3c743ff025d45b3b68e22a0c8f4370216138810fa9d9f",
+    "test_cli_exports_sherlock_evid0/workspace/inquiries/bridge-case/inquiry.json": "f5eaed9d8b12d9e49c9127c2e1476ea4f2b9582885697527c753bf711a415758",
+    "test_cli_exports_sherlock_evid0/workspace/inquiries/bridge-case/ledger.jsonl": "f75bc1035f2c2bbedd504c8a87b9bbad1c9ead9d19e493106832a39003ab4dcf",
+    "test_cli_exports_sherlock_evid0/workspace/inquiries/bridge-case/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "test_cli_exports_sherlock_evid0/workspace/workspace.json": "e192be145a68127515f2fa71acdfb2ef521abaf3228a8c64b410dc054f484ce9",
+    "test_cli_sherlock_evidence_exp0/sherlock-export/faraday-summary.json": "d113a5946b62c231a267063e33a7e5c97dfe24050fae012c5aca656b48a7eabd",
+    "test_cli_sherlock_evidence_exp0/sherlock-export/sherlock-bridge-link.json": "5f04aad30344fe08e04f5bedf18901d5c849f1273fe7cd8748c8f9a51dc6508e",
+    "test_cli_sherlock_evidence_exp0/workspace/inquiries/write-once/claims.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "test_cli_sherlock_evidence_exp0/workspace/inquiries/write-once/datasets/dataset-write-once.json": "1f8b4773eaef17f01a554d738f149e8a5b5507d80ee95c454691e78870d40dbf",
+    "test_cli_sherlock_evidence_exp0/workspace/inquiries/write-once/evidence/evd-2b8e0730ca06.json": "577e4b9ede9e4e4e46b19fa4a3724d03481aa7d2613fe5fc7ac999ce31374ea7",
+    "test_cli_sherlock_evidence_exp0/workspace/inquiries/write-once/hypotheses/pending_review/hyp-2061cd6fd8c7.json": "8151c96a214e2aec4fbb17cecb57db8293e743a5109b00a2a45d7e35a84bddab",
+    "test_cli_sherlock_evidence_exp0/workspace/inquiries/write-once/inquiry.json": "09286c5f7b32293a12401e0a5d1078eb1b42c601bac5c4c94318d4a5f2d488e7",
+    "test_cli_sherlock_evidence_exp0/workspace/inquiries/write-once/ledger.jsonl": "1b485adb6ec04d8bc5cbc925bd548846fe20538f9c072b4a939092d1001a3506",
+    "test_cli_sherlock_evidence_exp0/workspace/inquiries/write-once/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "test_cli_sherlock_evidence_exp0/workspace/workspace.json": "55696b93390e7f238768798c43c55d5025565622ea10dc6a3b550ff670fe551b",
+    "test_cli_sherlock_evidence_exp0/write-once.csv": "1a80986111952a11d02e84dbed98ae00f279469aad0615d17fa81911f8a6b428"
+  },
+  "passed": true,
+  "protocol_erratum_sha256": "727bc53e3ee790cfc560630f237297f1ce25ace83596ba293793d4b98096acf8",
+  "protocol_sha256": "d6b9a077c97dc2b207a587739f7e697f1b94c055bedee1f7a536c022da2569da",
+  "run_root": "/private/tmp/wtc7-faraday-pilot.eGMyO9/native-log-retry-20261007",
+  "runner_sha256": "b5f5ecd8f7293c03740e6255db921984723424e1091511263b56117b6ff365c7",
+  "runtime": {
+    "executable": "/Users/admin/.pyenv/versions/3.13.7/bin/python3",
+    "packages": {
+      "jsonschema": "4.25.1",
+      "pytest": "8.4.2"
+    },
+    "python": "3.13.7 (main, Oct 24 2025, 00:40:52) [Clang 17.0.0 (clang-1700.0.13.5)]"
+  },
+  "stdout_log_sha256": "fe5576912089a2990f94d1905f2745a806c0b482698d129d069777f013f1bf17",
+  "unexpected_denials": []
+}

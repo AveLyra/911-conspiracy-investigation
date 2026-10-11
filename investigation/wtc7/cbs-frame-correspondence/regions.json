@@ -1,0 +1,29 @@
+{
+  "schema": "cbs-correspondence-regions-v1",
+  "coordinate_convention": "Half-open rectangles [left, top, right, bottom] in each full stored reference raster; working centers map to native dimensions.",
+  "view_record": "Root reopened each complete native reference once after PROTOCOL.md was written, on 2026-10-04 UTC. No new candidate frame was displayed and no score was computed before these choices.",
+  "targets": [
+    {
+      "id": "143",
+      "paired_clip": 3,
+      "path": "../fire-coverage-batch3/assets/run01/images/A-60c26b7f3416.jpg",
+      "sha256": "744b8faff26ea05c8303dfe278d1644f7e949a0f0b3ec02ab13abf9a4af3fb75",
+      "size": [705, 480],
+      "static": [[380, 115, 655, 185], [405, 195, 635, 305]],
+      "dynamic": [[35, 40, 300, 350]],
+      "rationale": "Static registration uses right-hand facade and rectangular window/louver outlines below the upper irregular opening area. Dynamic comparison uses the left orange/yellow and smoke region. Bottom copyright strip, top irregular openings and thin descending trace are not decisive static fit cues.",
+      "limits": "Sparse/repetitive static detail can alias. Grayscale loses color information. Dynamic region includes veiling and background, not pure flame, temperature or material state. Visible architectural outlines are only approximate stationary registration aids."
+    },
+    {
+      "id": "142",
+      "paired_clip": 7,
+      "path": "../fire-coverage-batch3/assets/run01/images/A-7c7cc22dc34c.jpg",
+      "sha256": "68c9d384ac3b1099361f255f80a74d387073d67500089099765f4f0cf030215a",
+      "size": [706, 457],
+      "static": [[10, 45, 95, 260], [104, 177, 211, 271], [470, 190, 665, 275]],
+      "dynamic": [[200, 45, 329, 160], [225, 165, 345, 267]],
+      "rationale": "Static regions use the separate left foreground building, highway sign and right facade grid while excluding red report labels and upper flames. Dynamic regions sample the veiled corner and orange/yellow region between foreground and main facade. Top copyright strip and lower street signs are excluded.",
+      "limits": "Different object depths mean camera translation can cause parallax outside the allowed transform. Sign letters are geometry aids, not proof of recording identity. Dynamic regions contain stable objects/background and smoke. This is not a full visible-fire-area sample."
+    }
+  ]
+}

@@ -1,0 +1,708 @@
+{
+  "binary_pins": {
+    "/opt/homebrew/bin/ffmpeg": {
+      "bytes": 421968,
+      "sha256": "7697b094387e2918821fe7480c73f5d44543817096e9d5b5fafe58ecd6912569"
+    },
+    "/opt/homebrew/bin/ffprobe": {
+      "bytes": 351920,
+      "sha256": "fd670257233c93c88608a62ed8b5ddeeb812bd341dfb39bbe0e1c654b91672ad"
+    }
+  },
+  "binary_pins_after": {
+    "/opt/homebrew/bin/ffmpeg": {
+      "bytes": 421968,
+      "sha256": "7697b094387e2918821fe7480c73f5d44543817096e9d5b5fafe58ecd6912569"
+    },
+    "/opt/homebrew/bin/ffprobe": {
+      "bytes": 351920,
+      "sha256": "fd670257233c93c88608a62ed8b5ddeeb812bd341dfb39bbe0e1c654b91672ad"
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-n",
+        "-f",
+        "rawvideo",
+        "-pixel_format",
+        "rgb24",
+        "-video_size",
+        "64x48",
+        "-framerate",
+        "12",
+        "-i",
+        "pipe:0",
+        "-vf",
+        "setpts=PTS+0/TB",
+        "-c:v",
+        "ffv1",
+        "-pix_fmt",
+        "bgr0",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen01/synthetic-0.mkv"
+      ],
+      "exit": 0,
+      "label": "synthetic-0-generate",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,time_base,start_pts,start_time,duration,sample_aspect_ratio,display_aspect_ratio,r_frame_rate,avg_frame_rate,color_range,color_space,color_transfer,color_primaries:stream_side_data=side_data_type,rotation",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen01/synthetic-0.mkv"
+      ],
+      "exit": 0,
+      "label": "synthetic-0-stream",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,best_effort_timestamp,width,height,pix_fmt",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen01/synthetic-0.mkv"
+      ],
+      "exit": 0,
+      "label": "synthetic-0-frames",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "info",
+        "-n",
+        "-copyts",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen01/synthetic-0.mkv",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "select='eq(n,0)+eq(n,3)+eq(n,6)+eq(n,9)+eq(n,12)+eq(n,15)+eq(n,18)+eq(n,21)+eq(n,24)+eq(n,25)+eq(n,26)+eq(n,27)+eq(n,28)+eq(n,29)+eq(n,30)+eq(n,31)+eq(n,32)+eq(n,33)+eq(n,34)+eq(n,35)',format=rgb24,showinfo",
+        "-frames:v",
+        "20",
+        "-noautoscale",
+        "-pix_fmt",
+        "rgb24",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base:v",
+        "demux",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen01/synthetic-0-selected/frame-%04d.png"
+      ],
+      "exit": 0,
+      "label": "synthetic-0-selected-decode",
+      "stderr_bytes": 8320
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-n",
+        "-f",
+        "rawvideo",
+        "-pixel_format",
+        "rgb24",
+        "-video_size",
+        "64x48",
+        "-framerate",
+        "12",
+        "-i",
+        "pipe:0",
+        "-vf",
+        "setpts=PTS+5/TB",
+        "-c:v",
+        "ffv1",
+        "-pix_fmt",
+        "bgr0",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen01/synthetic-5.mkv"
+      ],
+      "exit": 0,
+      "label": "synthetic-5-generate",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,time_base,start_pts,start_time,duration,sample_aspect_ratio,display_aspect_ratio,r_frame_rate,avg_frame_rate,color_range,color_space,color_transfer,color_primaries:stream_side_data=side_data_type,rotation",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen01/synthetic-5.mkv"
+      ],
+      "exit": 0,
+      "label": "synthetic-5-stream",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,best_effort_timestamp,width,height,pix_fmt",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen01/synthetic-5.mkv"
+      ],
+      "exit": 0,
+      "label": "synthetic-5-frames",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "info",
+        "-n",
+        "-copyts",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen01/synthetic-5.mkv",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "select='eq(n,0)+eq(n,3)+eq(n,6)+eq(n,9)+eq(n,12)+eq(n,15)+eq(n,18)+eq(n,21)+eq(n,24)+eq(n,25)+eq(n,26)+eq(n,27)+eq(n,28)+eq(n,29)+eq(n,30)+eq(n,31)+eq(n,32)+eq(n,33)+eq(n,34)+eq(n,35)',format=rgb24,showinfo",
+        "-frames:v",
+        "20",
+        "-noautoscale",
+        "-pix_fmt",
+        "rgb24",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base:v",
+        "demux",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen01/synthetic-5-selected/frame-%04d.png"
+      ],
+      "exit": 0,
+      "label": "synthetic-5-selected-decode",
+      "stderr_bytes": 8319
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,time_base,start_pts,start_time,duration,sample_aspect_ratio,display_aspect_ratio,r_frame_rate,avg_frame_rate,color_range,color_space,color_transfer,color_primaries:stream_side_data=side_data_type,rotation",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/media/SIbqaybkbWI.f133.mp4"
+      ],
+      "exit": 0,
+      "label": "early-copy-stream",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,best_effort_timestamp,width,height,pix_fmt",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/media/SIbqaybkbWI.f133.mp4"
+      ],
+      "exit": 0,
+      "label": "early-copy-frames",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "info",
+        "-n",
+        "-copyts",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/media/SIbqaybkbWI.f133.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "select='eq(n,0)+eq(n,30)+eq(n,60)+eq(n,90)+eq(n,120)+eq(n,150)+eq(n,180)+eq(n,210)+eq(n,240)+eq(n,270)+eq(n,300)+eq(n,330)+eq(n,360)+eq(n,390)+eq(n,420)+eq(n,450)+eq(n,480)+eq(n,510)+eq(n,540)+eq(n,570)+eq(n,600)+eq(n,630)+eq(n,660)+eq(n,690)+eq(n,720)+eq(n,750)+eq(n,780)+eq(n,810)+eq(n,840)+eq(n,870)+eq(n,900)+eq(n,930)+eq(n,960)+eq(n,990)+eq(n,1019)+eq(n,1049)+eq(n,1079)+eq(n,1109)',format=rgb24,showinfo",
+        "-frames:v",
+        "38",
+        "-noautoscale",
+        "-pix_fmt",
+        "rgb24",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base:v",
+        "demux",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen01/early-copy/frame-%04d.png"
+      ],
+      "exit": 0,
+      "label": "early-copy-decode",
+      "stderr_bytes": 16715
+    }
+  ],
+  "historical_frames": 38,
+  "inputs_after": {
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen-protocol.json": {
+      "bytes": 881,
+      "sha256": "b96a6ae99be1ca93342c637d333718b8f138455f030fa18904dad30413606c5a"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen_early_copy.py": {
+      "bytes": 5044,
+      "sha256": "4a850ef103797eb7f3076151fd923b93b74c530c3fb0bfcb122019a3e10911d7"
+    },
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/acoustic-audit/av-correspondence/extract_frames.py": {
+      "bytes": 11356,
+      "sha256": "2fc45bb67ba656c3670fea188f2b71261a9ca315718aaf92e16010ef4bcceb6a"
+    },
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/fire-originals/peskin/sample_every_second.py": {
+      "bytes": 9351,
+      "sha256": "a913be680052ceb61ddf1ed89ef675c9d21972f8869a62e9e038be2f8048d40b"
+    }
+  },
+  "inputs_before": {
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen-protocol.json": {
+      "bytes": 881,
+      "sha256": "b96a6ae99be1ca93342c637d333718b8f138455f030fa18904dad30413606c5a"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/screen_early_copy.py": {
+      "bytes": 5044,
+      "sha256": "4a850ef103797eb7f3076151fd923b93b74c530c3fb0bfcb122019a3e10911d7"
+    },
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/acoustic-audit/av-correspondence/extract_frames.py": {
+      "bytes": 11356,
+      "sha256": "2fc45bb67ba656c3670fea188f2b71261a9ca315718aaf92e16010ef4bcceb6a"
+    },
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/fire-originals/peskin/sample_every_second.py": {
+      "bytes": 9351,
+      "sha256": "a913be680052ceb61ddf1ed89ef675c9d21972f8869a62e9e038be2f8048d40b"
+    }
+  },
+  "numpy": "2.3.5",
+  "overview_sheets": 2,
+  "pillow": "12.3.0",
+  "products": {
+    "early-copy-all-frame-pts.json": {
+      "bytes": 159643,
+      "sha256": "09da363a81d26e857a3838b26df4b5281e5bc87a30ddaed73b90b07f70b5cd6a"
+    },
+    "early-copy-overview/sheet-0000.png": {
+      "bytes": 1937996,
+      "sha256": "7419451433df37eda37075a20cc3a57c7cc48a1c76dee181d102d5d23bb828e3"
+    },
+    "early-copy-overview/sheet-0030.png": {
+      "bytes": 597138,
+      "sha256": "1de82afb61909573c179e2cb6db0e53598576a71d1df532a2ecca597ac2502b7"
+    },
+    "early-copy-selected.json": {
+      "bytes": 14223,
+      "sha256": "bc8095da320c003bc7a9fa990c6b188f00b76f591d51db8fcac08dbb38ef47d5"
+    },
+    "early-copy-stream.json": {
+      "bytes": 606,
+      "sha256": "232204059c66dcca2f11b72bc86fd54cc22a4408cc89567c27c51883243edd56"
+    },
+    "early-copy/frame-0001.png": {
+      "bytes": 385,
+      "sha256": "21a2799b289b7685cc0f9fcb3baf9a6dffc41955ea2ced8983650fa8b6cf8212"
+    },
+    "early-copy/frame-0002.png": {
+      "bytes": 74838,
+      "sha256": "d69f8fd54d47971505cef9dfa2538ab01e96622620b974144260183c26688fd4"
+    },
+    "early-copy/frame-0003.png": {
+      "bytes": 93059,
+      "sha256": "c9a39f2b6d2bdcbf508ed6d0dec00348e4eb4a715ea1af6cd00077845a11f76e"
+    },
+    "early-copy/frame-0004.png": {
+      "bytes": 103552,
+      "sha256": "3b30e0c841be63cef4a19f30bc57cccbb3201ac5faa1db9aa513b91ea1577dba"
+    },
+    "early-copy/frame-0005.png": {
+      "bytes": 108471,
+      "sha256": "c6d8a374688d6b865387c27b896cf8319c35a7fa16fce4abce11ed0d386b7c9a"
+    },
+    "early-copy/frame-0006.png": {
+      "bytes": 110351,
+      "sha256": "57a93155c40449e671d7088768d4647a3b41f281ff9bde7a0dbf54490489a4a2"
+    },
+    "early-copy/frame-0007.png": {
+      "bytes": 88943,
+      "sha256": "08dbdf025073aba2a7f06241322a6a053aab1829cd93d650d925d426901ed59d"
+    },
+    "early-copy/frame-0008.png": {
+      "bytes": 108184,
+      "sha256": "a20158d561f71d581935a31dfadfcb4992cf95cd87e8b649fe0b79b14cc1e000"
+    },
+    "early-copy/frame-0009.png": {
+      "bytes": 113420,
+      "sha256": "e880b943acaebe84d8924c817fc22d50592916ae615b98f50c48710d3a4292fa"
+    },
+    "early-copy/frame-0010.png": {
+      "bytes": 113872,
+      "sha256": "aedb1bdc8685cd1385a7e442a7bc32572ed473a93e819b23561896360fff1698"
+    },
+    "early-copy/frame-0011.png": {
+      "bytes": 114811,
+      "sha256": "375f9e3161844edae8195c57b8d95a30b4e720d2fc5055ba4b3e46aefe346909"
+    },
+    "early-copy/frame-0012.png": {
+      "bytes": 113759,
+      "sha256": "9a9510b2f5c45f41cbfc01f96027bed8c846ee248e4af80356620f2bc0e3d573"
+    },
+    "early-copy/frame-0013.png": {
+      "bytes": 118675,
+      "sha256": "137a889548978d89a283e81539b1df46c80e02c9a40aa7dace107a37864b5d32"
+    },
+    "early-copy/frame-0014.png": {
+      "bytes": 114160,
+      "sha256": "d72d3be6a48aa66ded2d399d2b5a097319fe53c63a7786e413e27f035646a40c"
+    },
+    "early-copy/frame-0015.png": {
+      "bytes": 115581,
+      "sha256": "b906a0f9c464bddcb276c074b5dbe71e7be8333702ef21cdc5a151e681876e94"
+    },
+    "early-copy/frame-0016.png": {
+      "bytes": 116912,
+      "sha256": "ca1680b50696015a0007c5e1a65d4f0e7fe8a376f3f26fc88255531c0eb42ffb"
+    },
+    "early-copy/frame-0017.png": {
+      "bytes": 100412,
+      "sha256": "72a47e02048b561d5c77cb8019fc389b9ddda75ea2628d131efb1431930ec4bb"
+    },
+    "early-copy/frame-0018.png": {
+      "bytes": 127848,
+      "sha256": "8eeb129ccddb909f473a20a78c5ca9a6bd41937b4b1f675395b4251eb1bf2729"
+    },
+    "early-copy/frame-0019.png": {
+      "bytes": 130208,
+      "sha256": "e33562b2ac253ef4a42e7bad318a3b8c1d0a957a467a19c486159322e3a83b66"
+    },
+    "early-copy/frame-0020.png": {
+      "bytes": 131057,
+      "sha256": "5dfcaed63447928f676f6072a0d2b1edad8cbf21b6aa8a7bb7386bd8d3a730be"
+    },
+    "early-copy/frame-0021.png": {
+      "bytes": 134070,
+      "sha256": "63400bbe934e1246c83e6e287b4279b7f425541cd787b5609c5e2978910672d8"
+    },
+    "early-copy/frame-0022.png": {
+      "bytes": 133541,
+      "sha256": "6480ae2c614810ef571bb987808482c51087636d5452aee00e9c380a321c2555"
+    },
+    "early-copy/frame-0023.png": {
+      "bytes": 128517,
+      "sha256": "5b11395ba1de60b7d6888db20bc568b0ca4c3e6945f44de2ca7acda617b59ad1"
+    },
+    "early-copy/frame-0024.png": {
+      "bytes": 131419,
+      "sha256": "ade0e575951f2b4cbc6a6b053433ba551df4d9b449963be76241be00e3273c4a"
+    },
+    "early-copy/frame-0025.png": {
+      "bytes": 135651,
+      "sha256": "a076aefeb5e3ffc09bbb459cf2ee11513d82c62078b01c1aae735a09b0248b7e"
+    },
+    "early-copy/frame-0026.png": {
+      "bytes": 134059,
+      "sha256": "d647c1a5c652e553a304c38dc1d4dd1fde1c0a31fd496600d4ccaf52d29e9c44"
+    },
+    "early-copy/frame-0027.png": {
+      "bytes": 133613,
+      "sha256": "f7ad4d250133df1efeca79546d7a2421b5547e44ce91684086853473e1ee67a7"
+    },
+    "early-copy/frame-0028.png": {
+      "bytes": 126194,
+      "sha256": "ed9a564b648eeb7a36a03c546729f8eb9546b4fb0411aeb79c19a65695bb6abc"
+    },
+    "early-copy/frame-0029.png": {
+      "bytes": 128674,
+      "sha256": "6f6117a373b3fc3cc6df5ca21a792352690dc0c7ef607f6ac2cc8d7bf2022a9b"
+    },
+    "early-copy/frame-0030.png": {
+      "bytes": 132356,
+      "sha256": "c2ce934a2402d4633fa4bb3678b64bf966d72ae0d95fbb1a3797a7f2e172683c"
+    },
+    "early-copy/frame-0031.png": {
+      "bytes": 132105,
+      "sha256": "5506a98e25e3c450f46f632d6defc90aafa0ecf4cd0c434a5d6922c2858168c5"
+    },
+    "early-copy/frame-0032.png": {
+      "bytes": 135870,
+      "sha256": "5569319ef72a024061b494962b98b93369a9625809b3119c2367a82895aab3bd"
+    },
+    "early-copy/frame-0033.png": {
+      "bytes": 122012,
+      "sha256": "7a506fc12ed4c2a5d6c792bd79ae4853e050f4c3ff9ebb8fbc8b2f0ed375d82d"
+    },
+    "early-copy/frame-0034.png": {
+      "bytes": 126736,
+      "sha256": "566f70aad82c46671bc40a7a1099ffb0834e3dba1b871024d931c5a59ea28536"
+    },
+    "early-copy/frame-0035.png": {
+      "bytes": 129272,
+      "sha256": "44d8f1cad32e0710996f4f0dda7054923519ccf2aee59e55399d0827d8333fad"
+    },
+    "early-copy/frame-0036.png": {
+      "bytes": 132070,
+      "sha256": "9681c12b0822e35f53ac9bf464f43e74ce3ba9b0f8b5e4e68bb3194480bcb905"
+    },
+    "early-copy/frame-0037.png": {
+      "bytes": 134478,
+      "sha256": "1d29ce777441b818172b1573c7f6b92c0fbdaa03ac8fd734c4763e9bd47d0a1f"
+    },
+    "early-copy/frame-0038.png": {
+      "bytes": 133060,
+      "sha256": "6dceda05d4eb764808bd10b537a6e7b63ab5ab4563e7b6bd374598ed659a860f"
+    },
+    "fixed-native-selection.json": {
+      "bytes": 2236,
+      "sha256": "14f299b04cb4709dddbe16bc345997cfad18627fd7dae8340b88de02c126bff1"
+    },
+    "synthetic-0-all-frame-pts.json": {
+      "bytes": 4743,
+      "sha256": "c92d5e09212506eaf95d567cf30e340cc3627ded873f49045202a8807a41df76"
+    },
+    "synthetic-0-selected-selected.json": {
+      "bytes": 7414,
+      "sha256": "7ffb48bc4c20612163fc0d337a943de0611cb3beaeddcbdab14a9148a7239773"
+    },
+    "synthetic-0-selected/frame-0001.png": {
+      "bytes": 132,
+      "sha256": "282f43363c9d521381bd75f94d6970050dd13bcdf74fe2ae18b37f033fb8f991"
+    },
+    "synthetic-0-selected/frame-0002.png": {
+      "bytes": 170,
+      "sha256": "784940457f084f33b6d8470432a2ecf6f378d0ddeaefb634aaaed783695e4ba7"
+    },
+    "synthetic-0-selected/frame-0003.png": {
+      "bytes": 170,
+      "sha256": "07e7eb260caaf0a53f7f6f367abeb8ade48e1bff59196680c1a306696e80cd4a"
+    },
+    "synthetic-0-selected/frame-0004.png": {
+      "bytes": 169,
+      "sha256": "49163d24c511618a30c875eb9ee7d99fc8d6513c1a24aeb078eb6e32543e540b"
+    },
+    "synthetic-0-selected/frame-0005.png": {
+      "bytes": 169,
+      "sha256": "6640f4c7a46fe3e16cd38ce14f97836eaca346f8f4a0c73212a69561ac5c0b3b"
+    },
+    "synthetic-0-selected/frame-0006.png": {
+      "bytes": 169,
+      "sha256": "d3523f3bcf0f30348a07d9540f49c7328c13205074857af6069c91aab04494b2"
+    },
+    "synthetic-0-selected/frame-0007.png": {
+      "bytes": 169,
+      "sha256": "8a22df12f3809467b4087cd10951152a4062ab285b4911d5ebe2cc81309b157b"
+    },
+    "synthetic-0-selected/frame-0008.png": {
+      "bytes": 169,
+      "sha256": "f8dfe928d5bf7925a97b831661862dd45d92c5632cf772726db055c6c800f91f"
+    },
+    "synthetic-0-selected/frame-0009.png": {
+      "bytes": 169,
+      "sha256": "90afff031ada783ac1e01251db8c193ae2ce431e382912b2594206c49e7b67bd"
+    },
+    "synthetic-0-selected/frame-0010.png": {
+      "bytes": 169,
+      "sha256": "7d3c2fedc04ce456ec9ca547ebe480b36983419fb5ae10f5a4781c7fd59e7ce8"
+    },
+    "synthetic-0-selected/frame-0011.png": {
+      "bytes": 169,
+      "sha256": "7fc8d0c048ab9a91f8d6ac89acff63f011b143e950cb7a443cdc9304b913f263"
+    },
+    "synthetic-0-selected/frame-0012.png": {
+      "bytes": 169,
+      "sha256": "e9bc62c2cfdf9777d92477d254e36fa440195a03e7137eea53aca3514f7561b2"
+    },
+    "synthetic-0-selected/frame-0013.png": {
+      "bytes": 169,
+      "sha256": "e70ea59575ff68ce28623dab2c14aec11ba43c328f5cc9705571dc5a591bd88a"
+    },
+    "synthetic-0-selected/frame-0014.png": {
+      "bytes": 169,
+      "sha256": "91f5e253115794bbaca62f027759ce670c2189772345cc2e3a78744eb5d8a489"
+    },
+    "synthetic-0-selected/frame-0015.png": {
+      "bytes": 169,
+      "sha256": "4441d35275d2fc03695fcd8cd33d18fcf110a9c871e58ab73985a940817b276f"
+    },
+    "synthetic-0-selected/frame-0016.png": {
+      "bytes": 169,
+      "sha256": "c0b0cdccb64618c1188ba57df624f5b8e1a794275911e239663170a5ce336bd3"
+    },
+    "synthetic-0-selected/frame-0017.png": {
+      "bytes": 168,
+      "sha256": "fb86f29f3be8412edcc8459ecba97b649d4615efbc73ae90eb3432bcdff8e704"
+    },
+    "synthetic-0-selected/frame-0018.png": {
+      "bytes": 169,
+      "sha256": "e691cb0acae4e043a2c0d7f292b91b088b48f2ddb8fac9c2ed48586eb770f434"
+    },
+    "synthetic-0-selected/frame-0019.png": {
+      "bytes": 169,
+      "sha256": "3a7744b5057b8e4b39830e3936e1d5fadee0ca25baf8101dd7ba53de39e3db26"
+    },
+    "synthetic-0-selected/frame-0020.png": {
+      "bytes": 169,
+      "sha256": "75f5932c0537936d416802adb06e2354d13bad5fc12494ba112f3a5ac8a01e76"
+    },
+    "synthetic-0-stream.json": {
+      "bytes": 414,
+      "sha256": "320c49463637e7ed9937ebd22165650cf932a931c55456ac4158c0216b08c24e"
+    },
+    "synthetic-0.mkv": {
+      "bytes": 5191,
+      "sha256": "dc8ef702cda2a71f6a0fa38b4ce9807bf31a0e9e2dfd3be4df67451ea6ea3fce"
+    },
+    "synthetic-5-all-frame-pts.json": {
+      "bytes": 4773,
+      "sha256": "4b7a13f11fe1128f9960a76e8b61c0f9660ed341b666534cdd8bd5d9cb41f2c9"
+    },
+    "synthetic-5-selected-selected.json": {
+      "bytes": 7436,
+      "sha256": "9c41382f7e7fef4b843ed984c177bc964ab6914ac7d2fc91fd4e47adce8e3e7f"
+    },
+    "synthetic-5-selected/frame-0001.png": {
+      "bytes": 132,
+      "sha256": "282f43363c9d521381bd75f94d6970050dd13bcdf74fe2ae18b37f033fb8f991"
+    },
+    "synthetic-5-selected/frame-0002.png": {
+      "bytes": 170,
+      "sha256": "784940457f084f33b6d8470432a2ecf6f378d0ddeaefb634aaaed783695e4ba7"
+    },
+    "synthetic-5-selected/frame-0003.png": {
+      "bytes": 170,
+      "sha256": "07e7eb260caaf0a53f7f6f367abeb8ade48e1bff59196680c1a306696e80cd4a"
+    },
+    "synthetic-5-selected/frame-0004.png": {
+      "bytes": 169,
+      "sha256": "49163d24c511618a30c875eb9ee7d99fc8d6513c1a24aeb078eb6e32543e540b"
+    },
+    "synthetic-5-selected/frame-0005.png": {
+      "bytes": 169,
+      "sha256": "6640f4c7a46fe3e16cd38ce14f97836eaca346f8f4a0c73212a69561ac5c0b3b"
+    },
+    "synthetic-5-selected/frame-0006.png": {
+      "bytes": 169,
+      "sha256": "d3523f3bcf0f30348a07d9540f49c7328c13205074857af6069c91aab04494b2"
+    },
+    "synthetic-5-selected/frame-0007.png": {
+      "bytes": 169,
+      "sha256": "8a22df12f3809467b4087cd10951152a4062ab285b4911d5ebe2cc81309b157b"
+    },
+    "synthetic-5-selected/frame-0008.png": {
+      "bytes": 169,
+      "sha256": "f8dfe928d5bf7925a97b831661862dd45d92c5632cf772726db055c6c800f91f"
+    },
+    "synthetic-5-selected/frame-0009.png": {
+      "bytes": 169,
+      "sha256": "90afff031ada783ac1e01251db8c193ae2ce431e382912b2594206c49e7b67bd"
+    },
+    "synthetic-5-selected/frame-0010.png": {
+      "bytes": 169,
+      "sha256": "7d3c2fedc04ce456ec9ca547ebe480b36983419fb5ae10f5a4781c7fd59e7ce8"
+    },
+    "synthetic-5-selected/frame-0011.png": {
+      "bytes": 169,
+      "sha256": "7fc8d0c048ab9a91f8d6ac89acff63f011b143e950cb7a443cdc9304b913f263"
+    },
+    "synthetic-5-selected/frame-0012.png": {
+      "bytes": 169,
+      "sha256": "e9bc62c2cfdf9777d92477d254e36fa440195a03e7137eea53aca3514f7561b2"
+    },
+    "synthetic-5-selected/frame-0013.png": {
+      "bytes": 169,
+      "sha256": "e70ea59575ff68ce28623dab2c14aec11ba43c328f5cc9705571dc5a591bd88a"
+    },
+    "synthetic-5-selected/frame-0014.png": {
+      "bytes": 169,
+      "sha256": "91f5e253115794bbaca62f027759ce670c2189772345cc2e3a78744eb5d8a489"
+    },
+    "synthetic-5-selected/frame-0015.png": {
+      "bytes": 169,
+      "sha256": "4441d35275d2fc03695fcd8cd33d18fcf110a9c871e58ab73985a940817b276f"
+    },
+    "synthetic-5-selected/frame-0016.png": {
+      "bytes": 169,
+      "sha256": "c0b0cdccb64618c1188ba57df624f5b8e1a794275911e239663170a5ce336bd3"
+    },
+    "synthetic-5-selected/frame-0017.png": {
+      "bytes": 168,
+      "sha256": "fb86f29f3be8412edcc8459ecba97b649d4615efbc73ae90eb3432bcdff8e704"
+    },
+    "synthetic-5-selected/frame-0018.png": {
+      "bytes": 169,
+      "sha256": "e691cb0acae4e043a2c0d7f292b91b088b48f2ddb8fac9c2ed48586eb770f434"
+    },
+    "synthetic-5-selected/frame-0019.png": {
+      "bytes": 169,
+      "sha256": "3a7744b5057b8e4b39830e3936e1d5fadee0ca25baf8101dd7ba53de39e3db26"
+    },
+    "synthetic-5-selected/frame-0020.png": {
+      "bytes": 169,
+      "sha256": "75f5932c0537936d416802adb06e2354d13bad5fc12494ba112f3a5ac8a01e76"
+    },
+    "synthetic-5-stream.json": {
+      "bytes": 417,
+      "sha256": "732715d77af6295b33f7a5f94047301cb562aab19c45df9cc4534f93d1fdbf7c"
+    },
+    "synthetic-5.mkv": {
+      "bytes": 5193,
+      "sha256": "df2125e1d4440a85c485c1b5795d79a02bbad83198a40045134b0048291252c8"
+    },
+    "synthetic-checks.json": {
+      "bytes": 293,
+      "sha256": "2b42e2e8013f453966f704d742ca06a8b06a5329db1ed407a71e33d60631f6ab"
+    }
+  },
+  "python": "3.12.14",
+  "source": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/media/SIbqaybkbWI.f133.mp4",
+  "source_after": {
+    "bytes": 758909,
+    "sha256": "3f6db089b0e89cdfc030f6aaaf81227931681d26e0bd3c801b98cdcf486ba0d7"
+  },
+  "source_before": {
+    "bytes": 758909,
+    "sha256": "3f6db089b0e89cdfc030f6aaaf81227931681d26e0bd3c801b98cdcf486ba0d7"
+  },
+  "status": "complete"
+}

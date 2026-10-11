@@ -1,0 +1,923 @@
+{
+  "binary_pins": {
+    "/opt/homebrew/bin/ffmpeg": {
+      "bytes": 421968,
+      "sha256": "7697b094387e2918821fe7480c73f5d44543817096e9d5b5fafe58ecd6912569"
+    },
+    "/opt/homebrew/bin/ffprobe": {
+      "bytes": 351920,
+      "sha256": "fd670257233c93c88608a62ed8b5ddeeb812bd341dfb39bbe0e1c654b91672ad"
+    }
+  },
+  "binary_pins_after": {
+    "/opt/homebrew/bin/ffmpeg": {
+      "bytes": 421968,
+      "sha256": "7697b094387e2918821fe7480c73f5d44543817096e9d5b5fafe58ecd6912569"
+    },
+    "/opt/homebrew/bin/ffprobe": {
+      "bytes": 351920,
+      "sha256": "fd670257233c93c88608a62ed8b5ddeeb812bd341dfb39bbe0e1c654b91672ad"
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-n",
+        "-f",
+        "rawvideo",
+        "-pixel_format",
+        "rgb24",
+        "-video_size",
+        "64x48",
+        "-framerate",
+        "12",
+        "-i",
+        "pipe:0",
+        "-vf",
+        "setpts=PTS+0/TB",
+        "-c:v",
+        "ffv1",
+        "-pix_fmt",
+        "bgr0",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense01/synthetic-0.mkv"
+      ],
+      "exit": 0,
+      "label": "synthetic-0-generate",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,time_base,start_pts,start_time,duration,sample_aspect_ratio,display_aspect_ratio,r_frame_rate,avg_frame_rate,color_range,color_space,color_transfer,color_primaries:stream_side_data=side_data_type,rotation",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense01/synthetic-0.mkv"
+      ],
+      "exit": 0,
+      "label": "synthetic-0-stream",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,best_effort_timestamp,width,height,pix_fmt",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense01/synthetic-0.mkv"
+      ],
+      "exit": 0,
+      "label": "synthetic-0-frames",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "info",
+        "-n",
+        "-copyts",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense01/synthetic-0.mkv",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "select='eq(n,0)+eq(n,3)+eq(n,6)+eq(n,9)+eq(n,12)+eq(n,15)+eq(n,18)+eq(n,21)+eq(n,24)+eq(n,25)+eq(n,26)+eq(n,27)+eq(n,28)+eq(n,29)+eq(n,30)+eq(n,31)+eq(n,32)+eq(n,33)+eq(n,34)+eq(n,35)',format=rgb24,showinfo",
+        "-frames:v",
+        "20",
+        "-noautoscale",
+        "-pix_fmt",
+        "rgb24",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base:v",
+        "demux",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense01/synthetic-0-selected/frame-%04d.png"
+      ],
+      "exit": 0,
+      "label": "synthetic-0-selected-decode",
+      "stderr_bytes": 8352
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-n",
+        "-f",
+        "rawvideo",
+        "-pixel_format",
+        "rgb24",
+        "-video_size",
+        "64x48",
+        "-framerate",
+        "12",
+        "-i",
+        "pipe:0",
+        "-vf",
+        "setpts=PTS+5/TB",
+        "-c:v",
+        "ffv1",
+        "-pix_fmt",
+        "bgr0",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense01/synthetic-5.mkv"
+      ],
+      "exit": 0,
+      "label": "synthetic-5-generate",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,time_base,start_pts,start_time,duration,sample_aspect_ratio,display_aspect_ratio,r_frame_rate,avg_frame_rate,color_range,color_space,color_transfer,color_primaries:stream_side_data=side_data_type,rotation",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense01/synthetic-5.mkv"
+      ],
+      "exit": 0,
+      "label": "synthetic-5-stream",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,best_effort_timestamp,width,height,pix_fmt",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense01/synthetic-5.mkv"
+      ],
+      "exit": 0,
+      "label": "synthetic-5-frames",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "info",
+        "-n",
+        "-copyts",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense01/synthetic-5.mkv",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "select='eq(n,0)+eq(n,3)+eq(n,6)+eq(n,9)+eq(n,12)+eq(n,15)+eq(n,18)+eq(n,21)+eq(n,24)+eq(n,25)+eq(n,26)+eq(n,27)+eq(n,28)+eq(n,29)+eq(n,30)+eq(n,31)+eq(n,32)+eq(n,33)+eq(n,34)+eq(n,35)',format=rgb24,showinfo",
+        "-frames:v",
+        "20",
+        "-noautoscale",
+        "-pix_fmt",
+        "rgb24",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base:v",
+        "demux",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense01/synthetic-5-selected/frame-%04d.png"
+      ],
+      "exit": 0,
+      "label": "synthetic-5-selected-decode",
+      "stderr_bytes": 8351
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=index,codec_type,codec_name,pix_fmt,width,height,time_base,start_pts,start_time,duration,sample_aspect_ratio,display_aspect_ratio,r_frame_rate,avg_frame_rate,color_range,color_space,color_transfer,color_primaries:stream_side_data=side_data_type,rotation",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/media/SIbqaybkbWI.f133.mp4"
+      ],
+      "exit": 0,
+      "label": "early-dense-stream",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pts,best_effort_timestamp,width,height,pix_fmt",
+        "-of",
+        "json",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/media/SIbqaybkbWI.f133.mp4"
+      ],
+      "exit": 0,
+      "label": "early-dense-frames",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "info",
+        "-n",
+        "-copyts",
+        "-noautorotate",
+        "-i",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/media/SIbqaybkbWI.f133.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "select='eq(n,120)+eq(n,121)+eq(n,122)+eq(n,123)+eq(n,124)+eq(n,125)+eq(n,126)+eq(n,127)+eq(n,128)+eq(n,129)+eq(n,130)+eq(n,131)+eq(n,132)+eq(n,133)+eq(n,134)+eq(n,135)+eq(n,136)+eq(n,137)+eq(n,138)+eq(n,139)+eq(n,140)+eq(n,141)+eq(n,142)+eq(n,143)+eq(n,144)+eq(n,145)+eq(n,146)+eq(n,147)+eq(n,148)+eq(n,149)+eq(n,150)+eq(n,151)+eq(n,152)+eq(n,153)+eq(n,154)+eq(n,155)+eq(n,156)+eq(n,157)+eq(n,158)+eq(n,159)+eq(n,160)+eq(n,161)+eq(n,162)+eq(n,163)+eq(n,164)+eq(n,165)+eq(n,166)+eq(n,167)+eq(n,168)+eq(n,169)+eq(n,170)+eq(n,171)+eq(n,172)+eq(n,173)+eq(n,174)+eq(n,175)+eq(n,176)+eq(n,177)+eq(n,178)+eq(n,179)+eq(n,180)+eq(n,181)+eq(n,182)+eq(n,183)+eq(n,184)+eq(n,185)+eq(n,186)+eq(n,187)+eq(n,188)+eq(n,189)+eq(n,190)+eq(n,191)+eq(n,192)+eq(n,193)+eq(n,194)+eq(n,195)+eq(n,196)+eq(n,197)+eq(n,198)+eq(n,199)+eq(n,200)+eq(n,201)+eq(n,202)+eq(n,203)+eq(n,204)+eq(n,205)+eq(n,206)+eq(n,207)+eq(n,208)+eq(n,209)',format=rgb24,showinfo",
+        "-frames:v",
+        "90",
+        "-noautoscale",
+        "-pix_fmt",
+        "rgb24",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base:v",
+        "demux",
+        "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense01/early-dense/frame-%04d.png"
+      ],
+      "exit": 0,
+      "label": "early-dense-decode",
+      "stderr_bytes": 33744
+    }
+  ],
+  "historical_frames": 90,
+  "inputs_after": {
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/PROTOCOL.md": {
+      "bytes": 6747,
+      "sha256": "e78b19836d6c8cc1bf0c0006674e2628ed733c1fcea0cb0308ce15092ffc191b"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense_frames.py": {
+      "bytes": 4369,
+      "sha256": "4c4a6259aa5b2c78a15c126f8202859a67e7f75ea3e60ed6cd51c21798e1a646"
+    },
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/acoustic-audit/av-correspondence/extract_frames.py": {
+      "bytes": 11356,
+      "sha256": "2fc45bb67ba656c3670fea188f2b71261a9ca315718aaf92e16010ef4bcceb6a"
+    },
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/fire-originals/peskin/sample_every_second.py": {
+      "bytes": 9351,
+      "sha256": "a913be680052ceb61ddf1ed89ef675c9d21972f8869a62e9e038be2f8048d40b"
+    }
+  },
+  "inputs_before": {
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/PROTOCOL.md": {
+      "bytes": 6747,
+      "sha256": "e78b19836d6c8cc1bf0c0006674e2628ed733c1fcea0cb0308ce15092ffc191b"
+    },
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/transition-audio/dense_frames.py": {
+      "bytes": 4369,
+      "sha256": "4c4a6259aa5b2c78a15c126f8202859a67e7f75ea3e60ed6cd51c21798e1a646"
+    },
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/acoustic-audit/av-correspondence/extract_frames.py": {
+      "bytes": 11356,
+      "sha256": "2fc45bb67ba656c3670fea188f2b71261a9ca315718aaf92e16010ef4bcceb6a"
+    },
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/fire-originals/peskin/sample_every_second.py": {
+      "bytes": 9351,
+      "sha256": "a913be680052ceb61ddf1ed89ef675c9d21972f8869a62e9e038be2f8048d40b"
+    }
+  },
+  "numpy": "2.3.5",
+  "overview_sheets": 3,
+  "pillow": "12.3.0",
+  "plan": [
+    [
+      4,
+      7,
+      null
+    ]
+  ],
+  "products": {
+    "early-dense-all-frame-pts.json": {
+      "bytes": 159643,
+      "sha256": "09da363a81d26e857a3838b26df4b5281e5bc87a30ddaed73b90b07f70b5cd6a"
+    },
+    "early-dense-overview/sheet-0000.png": {
+      "bytes": 1799619,
+      "sha256": "6f9a3f3e7a13a9134adc6c8273a4ce1271029e97c93c8989b2a626679738d119"
+    },
+    "early-dense-overview/sheet-0030.png": {
+      "bytes": 1685836,
+      "sha256": "8517d47292ab543e7842e262dfea17c1e83c2b53fac390a9d93fab58d513e292"
+    },
+    "early-dense-overview/sheet-0060.png": {
+      "bytes": 1605450,
+      "sha256": "44be7dbfab561086b8276b3fc239abc7aeca6313a8f83d7b46edeb235900eeb6"
+    },
+    "early-dense-selected.json": {
+      "bytes": 34627,
+      "sha256": "afcb9c0dcf17972047838e1b1b3da961326a094c00cdfeee07a069f84ecce75b"
+    },
+    "early-dense-stream.json": {
+      "bytes": 606,
+      "sha256": "232204059c66dcca2f11b72bc86fd54cc22a4408cc89567c27c51883243edd56"
+    },
+    "early-dense/frame-0001.png": {
+      "bytes": 108471,
+      "sha256": "c6d8a374688d6b865387c27b896cf8319c35a7fa16fce4abce11ed0d386b7c9a"
+    },
+    "early-dense/frame-0002.png": {
+      "bytes": 109031,
+      "sha256": "2c281aa142db1d96ce3b67200d71ab11a77c524a7365bfcafc223b65bd7e6a06"
+    },
+    "early-dense/frame-0003.png": {
+      "bytes": 108477,
+      "sha256": "7fde9ffe6c497bce6689d86f2864ea1da84afa3e7f6fc3f9d9998e1c0f45c12e"
+    },
+    "early-dense/frame-0004.png": {
+      "bytes": 106510,
+      "sha256": "cb2d8b393319b1cf4a0f5bdbf8f02abed8e053f813295ae5d31753e47d7f1e99"
+    },
+    "early-dense/frame-0005.png": {
+      "bytes": 107705,
+      "sha256": "bdfd6722932536c2aa0c1af602356f8a76cbbccf3511180de31f0a85483ea123"
+    },
+    "early-dense/frame-0006.png": {
+      "bytes": 108253,
+      "sha256": "52a2dcc993dee68283a600c71174c43704e676f94a2139311dbb803195856d7b"
+    },
+    "early-dense/frame-0007.png": {
+      "bytes": 108663,
+      "sha256": "c16aa3ddef6f772ba7df75936b28e6731366707620cf39f1200dff17c12c501a"
+    },
+    "early-dense/frame-0008.png": {
+      "bytes": 107765,
+      "sha256": "99218f3f3af77d2cf3075984d016780577ad32f972048a464802862ac111ecee"
+    },
+    "early-dense/frame-0009.png": {
+      "bytes": 108781,
+      "sha256": "af00048e9ef89b1f3a93c24c18326b10af1414287ffcda51016b8674f1825e03"
+    },
+    "early-dense/frame-0010.png": {
+      "bytes": 110765,
+      "sha256": "4513f41420db241a7c7a109772e0574f6d6ab98cfac2705a26ff520cb73e4195"
+    },
+    "early-dense/frame-0011.png": {
+      "bytes": 111957,
+      "sha256": "edae567c1048c838697cf8ad63f3c81da3a52550bb6dc996bd608ed6ae6bd725"
+    },
+    "early-dense/frame-0012.png": {
+      "bytes": 111086,
+      "sha256": "5918f8db722a56812e1aa3c4ccb0c91639cdebc784ba3e64d138e8445fbddde1"
+    },
+    "early-dense/frame-0013.png": {
+      "bytes": 110988,
+      "sha256": "5e0ebe8ac4244b9af5acd801f44c34e760768dc9a2f1a9557477aa30d53c2b4b"
+    },
+    "early-dense/frame-0014.png": {
+      "bytes": 109978,
+      "sha256": "0bf5fd7002a68f8d4626f6f791d21bb31f0cc51519f1e36d14026a0c1314236d"
+    },
+    "early-dense/frame-0015.png": {
+      "bytes": 111320,
+      "sha256": "d6c0e6755a3d5acc6f08e92d33af3d0ee740607b6be32136110f47aef44231c1"
+    },
+    "early-dense/frame-0016.png": {
+      "bytes": 109804,
+      "sha256": "8b3420ce1351195a08eba2e0ff2a4f7a039afca36993f0eee80c4dfead7ab909"
+    },
+    "early-dense/frame-0017.png": {
+      "bytes": 110603,
+      "sha256": "751e2aba3d89e80f22ac5bb78f8fc4d7969603310476680565cc01d8b2242341"
+    },
+    "early-dense/frame-0018.png": {
+      "bytes": 110681,
+      "sha256": "b25ea723fdd83b617344c13c4f58c0d66cdc9afb189f9501b2082389043cdde0"
+    },
+    "early-dense/frame-0019.png": {
+      "bytes": 111451,
+      "sha256": "be805e56179b8dada53b6259c045ac494d296b9d93859b6850b13d3e83a4ebb5"
+    },
+    "early-dense/frame-0020.png": {
+      "bytes": 110326,
+      "sha256": "bc5780aa300c73bc7274c14b8be18e360aa068774f5a9a92ffb2b9bf3512041e"
+    },
+    "early-dense/frame-0021.png": {
+      "bytes": 110620,
+      "sha256": "b63c72f814d932494047c7e32553fb54c5c794f86f027b389c485bb45b731add"
+    },
+    "early-dense/frame-0022.png": {
+      "bytes": 110068,
+      "sha256": "d043068b453128c5924aaf3cd21808f4ced72aba4b5a2cc01df3144b7ca315d3"
+    },
+    "early-dense/frame-0023.png": {
+      "bytes": 109695,
+      "sha256": "2ae8a5acf2fa36e5d63ff7236faec0a0b72f32ed95158cd1bc4147a22117eb6e"
+    },
+    "early-dense/frame-0024.png": {
+      "bytes": 107996,
+      "sha256": "c60c33f16c05ba2d17af932ac3a3914f96caeffae779e1ce344a0d6d7c5f7069"
+    },
+    "early-dense/frame-0025.png": {
+      "bytes": 108940,
+      "sha256": "933f6b92d61fe5ea43aa35b257089713c8bf3dc2691b83c8676f9ca219f8ca49"
+    },
+    "early-dense/frame-0026.png": {
+      "bytes": 110457,
+      "sha256": "33036f6d953f502255632778c6b856e420ea820f0da4ba16a7d57f47561445c4"
+    },
+    "early-dense/frame-0027.png": {
+      "bytes": 110067,
+      "sha256": "62b56325738be68365955411e114523e833b26df75399e4c6e4e4808b8ea940f"
+    },
+    "early-dense/frame-0028.png": {
+      "bytes": 108876,
+      "sha256": "7d59816c3625596631905eeea02411f1a955fbc9ca981e505b6d1d96896073c4"
+    },
+    "early-dense/frame-0029.png": {
+      "bytes": 109585,
+      "sha256": "34ee287c1a1951ab39c036d1bf87afb4e75b90b5fbf577cca36fa6b2ab92f42d"
+    },
+    "early-dense/frame-0030.png": {
+      "bytes": 111133,
+      "sha256": "ee0d0983c0b9215d19e083a95befa60cbbadf1ff58192ca90501758cba7cb66a"
+    },
+    "early-dense/frame-0031.png": {
+      "bytes": 110351,
+      "sha256": "57a93155c40449e671d7088768d4647a3b41f281ff9bde7a0dbf54490489a4a2"
+    },
+    "early-dense/frame-0032.png": {
+      "bytes": 108586,
+      "sha256": "3af5c3d5abe077d2c2bc8ab8ebb8ef631c7b212044ccc68d203b3dc2f6149804"
+    },
+    "early-dense/frame-0033.png": {
+      "bytes": 108567,
+      "sha256": "734e588842a8158699a6d9fdd500b6df2f7391c96f9c6584d8e326f7f08c5eff"
+    },
+    "early-dense/frame-0034.png": {
+      "bytes": 109065,
+      "sha256": "1b17b539872eb5be0bbddac1ada3a4b9525db65c5602c689429516778fe51bde"
+    },
+    "early-dense/frame-0035.png": {
+      "bytes": 108608,
+      "sha256": "83ad9ad79519e63e848de4fa5beabe1366725694f1c95fe2a5d521da171b2384"
+    },
+    "early-dense/frame-0036.png": {
+      "bytes": 108061,
+      "sha256": "8a832752fb24571973a5080f6e83638c2eded7ce9fbc28b9925f18978fdcc9e2"
+    },
+    "early-dense/frame-0037.png": {
+      "bytes": 109746,
+      "sha256": "fda7bf4dbdeadfc579b64684b682fae1345e17aa3067c1224dcf0e14e48a7b91"
+    },
+    "early-dense/frame-0038.png": {
+      "bytes": 111762,
+      "sha256": "644f963ad640e079ac3209fb82c85efdf6db22255517507b9d40b8f9b765bd5b"
+    },
+    "early-dense/frame-0039.png": {
+      "bytes": 110592,
+      "sha256": "78064e413c7b25b010706d60f31ef332b05a6944df68e58eb19dd85e6ccf8918"
+    },
+    "early-dense/frame-0040.png": {
+      "bytes": 110008,
+      "sha256": "d9ca045cc6c182916728073cfac1e5958f616263ba1cfff4eaacfef14f09a6d3"
+    },
+    "early-dense/frame-0041.png": {
+      "bytes": 89663,
+      "sha256": "26a38b8ced3e816751d2f31edc17c5c167091bf1ff65ae2383acc97d178521bd"
+    },
+    "early-dense/frame-0042.png": {
+      "bytes": 94457,
+      "sha256": "4ea2362c39a7eff060297c195f3dbd21c926b47ed78e0b0d629620c0f3e76930"
+    },
+    "early-dense/frame-0043.png": {
+      "bytes": 97453,
+      "sha256": "45ca7c83fff62dbed3b94da4c45d7123dca5f68b64d6919dde7a7cc269b6e3dc"
+    },
+    "early-dense/frame-0044.png": {
+      "bytes": 97313,
+      "sha256": "2689813be5e5d85456c4e3b7a8e2c95e8cf6239c0b1a0b7de4416e96c51b4362"
+    },
+    "early-dense/frame-0045.png": {
+      "bytes": 94727,
+      "sha256": "9237024bd91113c7a7fcdfa76d0456182958a77135173a8b9002a4a0c73a5331"
+    },
+    "early-dense/frame-0046.png": {
+      "bytes": 101631,
+      "sha256": "58887fa5ba4401d249a7ef23713797b6428e76d669ae3758f797239b7ad8f685"
+    },
+    "early-dense/frame-0047.png": {
+      "bytes": 102508,
+      "sha256": "83a68aabd3c2c0a5806b2a73207b2f91c72ccb205094364303266649f1217fbe"
+    },
+    "early-dense/frame-0048.png": {
+      "bytes": 103654,
+      "sha256": "3d428d823071ab83b6d7bf5e73d84598c9b2342557693f3f52745a55f478ee4d"
+    },
+    "early-dense/frame-0049.png": {
+      "bytes": 102749,
+      "sha256": "715a7dc971dcbe2f5297db9b3904a2d8bdb9ab266bf6f3c58160aa81927deec4"
+    },
+    "early-dense/frame-0050.png": {
+      "bytes": 105135,
+      "sha256": "aed3fbb40161ffd7eb8b832c38e39607849db09fb2d6f44baa7ec870d27af2a0"
+    },
+    "early-dense/frame-0051.png": {
+      "bytes": 107523,
+      "sha256": "b3b12f7922c2ea3e76c2b1fa29a4b701814107855053d41c25b1d082c8162259"
+    },
+    "early-dense/frame-0052.png": {
+      "bytes": 108176,
+      "sha256": "a82a660a2e3e30d6279c3496b44bce81997593ce0ddf76159fd0c5f36430def0"
+    },
+    "early-dense/frame-0053.png": {
+      "bytes": 107571,
+      "sha256": "9f5d55074c216bda224473b14208bbc0b96824e2af7410520940dbf5fc1e9c31"
+    },
+    "early-dense/frame-0054.png": {
+      "bytes": 107848,
+      "sha256": "618f7ae5d12753c311c3ebeeb85ebfef4cb8e544c4e75d580d5b6bb3d432413b"
+    },
+    "early-dense/frame-0055.png": {
+      "bytes": 108220,
+      "sha256": "89d876834fc77cd6545faf4f3f9b2f6693e648b416d9e0a1bb2211c0d65204f4"
+    },
+    "early-dense/frame-0056.png": {
+      "bytes": 108025,
+      "sha256": "e175209da84c7961bd01111eadcb3c7b75ebd79274e6a76ecf18f341fc993613"
+    },
+    "early-dense/frame-0057.png": {
+      "bytes": 84309,
+      "sha256": "7820a958d763276753cbc49303034fa2a69d6aa8f5d7bbdd4bcf9d189b3f8256"
+    },
+    "early-dense/frame-0058.png": {
+      "bytes": 89568,
+      "sha256": "8a3ba625e4e56353542e0b70e792e0ec38792739c498819b332d9e698251b115"
+    },
+    "early-dense/frame-0059.png": {
+      "bytes": 90228,
+      "sha256": "cef20dce016f3acc3ab5e604481d0da9fc4189b28f1f3f5047b714cccdf30b10"
+    },
+    "early-dense/frame-0060.png": {
+      "bytes": 90650,
+      "sha256": "9b8e5dba5173aed3a06fc6989d7e5948d1e813eca98a21c11737165025522c69"
+    },
+    "early-dense/frame-0061.png": {
+      "bytes": 88943,
+      "sha256": "08dbdf025073aba2a7f06241322a6a053aab1829cd93d650d925d426901ed59d"
+    },
+    "early-dense/frame-0062.png": {
+      "bytes": 93161,
+      "sha256": "2d566f13e99237837ff469bb690ab9deb1421f7f978dc7347d317d74e1f2578a"
+    },
+    "early-dense/frame-0063.png": {
+      "bytes": 96732,
+      "sha256": "27712d2f8992ff190c5960d1d6e04b13f2a538e30862ef901a09040222a9bbe6"
+    },
+    "early-dense/frame-0064.png": {
+      "bytes": 98829,
+      "sha256": "d0c089c734a6d7a27123d039ed4f387e391fed136f508df033faecaa3cf901dd"
+    },
+    "early-dense/frame-0065.png": {
+      "bytes": 97968,
+      "sha256": "43ca8cd893be4a0561913f434cdc7ae62b3ae5f2fcf871130dc08c510ec20f3b"
+    },
+    "early-dense/frame-0066.png": {
+      "bytes": 98581,
+      "sha256": "197f7a2682901f9472e768b43e035685aba8e71b280f927ebe95b6957c3eed94"
+    },
+    "early-dense/frame-0067.png": {
+      "bytes": 98039,
+      "sha256": "f401d1c4bbfc70d64e5b3fb21250a50a1a90a7b91b95ba55edb74c11a9df9818"
+    },
+    "early-dense/frame-0068.png": {
+      "bytes": 98649,
+      "sha256": "3de95c3e34e8ca24863f241a3e8165aaf209472a33d06910008a51f166ac9824"
+    },
+    "early-dense/frame-0069.png": {
+      "bytes": 98841,
+      "sha256": "4d095b83c7c04aedff6af253b9c609d74d01510f411d3a0608590612ed660de2"
+    },
+    "early-dense/frame-0070.png": {
+      "bytes": 98761,
+      "sha256": "f95d527c52559f94e5e36480c12c0534565382d3c6a73a5a411c2a70f6f179bf"
+    },
+    "early-dense/frame-0071.png": {
+      "bytes": 99012,
+      "sha256": "5fe1dd634fa105d0015a3437d5f2892e9aa5c0871984de31ad31f8edad120800"
+    },
+    "early-dense/frame-0072.png": {
+      "bytes": 100070,
+      "sha256": "abe0ea0c2b93ffe79524b8eb85cb0239ca0ec58fc0166ef7d248e3d64f59aa0d"
+    },
+    "early-dense/frame-0073.png": {
+      "bytes": 99817,
+      "sha256": "3190b00052020fafd94e1ae951ff6e2b8e037ad5d7d198787e546bd12759f112"
+    },
+    "early-dense/frame-0074.png": {
+      "bytes": 100129,
+      "sha256": "e6fc5348a9f7827d5aa0a5d439bb5bdbd253715849d1b508de5f124a9e4730df"
+    },
+    "early-dense/frame-0075.png": {
+      "bytes": 100441,
+      "sha256": "de9a4fc41dc7476923622d5df0848d67494fda7fb933dd46d8e8b4a84444d0fa"
+    },
+    "early-dense/frame-0076.png": {
+      "bytes": 100708,
+      "sha256": "e22656f33efd3dec9ab128c43ab0d0042c72287c5171c57204d849d8c3c8a920"
+    },
+    "early-dense/frame-0077.png": {
+      "bytes": 101399,
+      "sha256": "59c3567c67caeb6c553c2334f707f8d5d9ae96d6b6316040cdef55adb02b9435"
+    },
+    "early-dense/frame-0078.png": {
+      "bytes": 102870,
+      "sha256": "81a777f94ecae90c62cdb02581bb57553a05f8b3af6be0d281efce67f8c9552f"
+    },
+    "early-dense/frame-0079.png": {
+      "bytes": 103542,
+      "sha256": "c743a8157a5d606efc5de8399da141f1e6afeec352a31b780b0577830f24773a"
+    },
+    "early-dense/frame-0080.png": {
+      "bytes": 104710,
+      "sha256": "18f71223e21189893946f5550c4497f9d3da4ff1f793f17395f4e826c819cdad"
+    },
+    "early-dense/frame-0081.png": {
+      "bytes": 104056,
+      "sha256": "174e8615901c702ce55e1569fd913785ef37a8bc628295409c650e3557891dbc"
+    },
+    "early-dense/frame-0082.png": {
+      "bytes": 104368,
+      "sha256": "e3d2686b7b81c4ea7bd28be1ab3afb59e04abba36b20fb583ee99ce80d6788ff"
+    },
+    "early-dense/frame-0083.png": {
+      "bytes": 104904,
+      "sha256": "500bab8984ae9b4dc120f46f0fa5445a5b1f608df5bfc08058a5bec8529736f6"
+    },
+    "early-dense/frame-0084.png": {
+      "bytes": 105500,
+      "sha256": "650637da78c8bc1dff847ad7e7d509b8c9685c2a6645f2ee5b367211d1ba6406"
+    },
+    "early-dense/frame-0085.png": {
+      "bytes": 104837,
+      "sha256": "20cc067089795b6d52a37ec35560e539d59ecfbf5e49a3be8f442e5043b0084a"
+    },
+    "early-dense/frame-0086.png": {
+      "bytes": 106475,
+      "sha256": "4fd7f6d3ca41723541d96e31e0842c9da6aa376d1c046b695789558e8aa6046c"
+    },
+    "early-dense/frame-0087.png": {
+      "bytes": 107119,
+      "sha256": "51709d6849fad415e0625d2945ab53a0a5957b2a40320a864b5d7592cd38b67d"
+    },
+    "early-dense/frame-0088.png": {
+      "bytes": 107564,
+      "sha256": "04c574718a605c4f4685e8f55634dc24de53c3321ac935040e828baa78d980db"
+    },
+    "early-dense/frame-0089.png": {
+      "bytes": 106839,
+      "sha256": "537e6430393e74be4f3d2ad3d6af6b5e4c073768f4a2a7476e5e4156722f1a0a"
+    },
+    "early-dense/frame-0090.png": {
+      "bytes": 107577,
+      "sha256": "534e0c9d569ac948de3dd22d923333a2a9acca4cb17f1e879bcee969622995e9"
+    },
+    "synthetic-0-all-frame-pts.json": {
+      "bytes": 4743,
+      "sha256": "c92d5e09212506eaf95d567cf30e340cc3627ded873f49045202a8807a41df76"
+    },
+    "synthetic-0-selected-selected.json": {
+      "bytes": 7414,
+      "sha256": "7ffb48bc4c20612163fc0d337a943de0611cb3beaeddcbdab14a9148a7239773"
+    },
+    "synthetic-0-selected/frame-0001.png": {
+      "bytes": 132,
+      "sha256": "282f43363c9d521381bd75f94d6970050dd13bcdf74fe2ae18b37f033fb8f991"
+    },
+    "synthetic-0-selected/frame-0002.png": {
+      "bytes": 170,
+      "sha256": "784940457f084f33b6d8470432a2ecf6f378d0ddeaefb634aaaed783695e4ba7"
+    },
+    "synthetic-0-selected/frame-0003.png": {
+      "bytes": 170,
+      "sha256": "07e7eb260caaf0a53f7f6f367abeb8ade48e1bff59196680c1a306696e80cd4a"
+    },
+    "synthetic-0-selected/frame-0004.png": {
+      "bytes": 169,
+      "sha256": "49163d24c511618a30c875eb9ee7d99fc8d6513c1a24aeb078eb6e32543e540b"
+    },
+    "synthetic-0-selected/frame-0005.png": {
+      "bytes": 169,
+      "sha256": "6640f4c7a46fe3e16cd38ce14f97836eaca346f8f4a0c73212a69561ac5c0b3b"
+    },
+    "synthetic-0-selected/frame-0006.png": {
+      "bytes": 169,
+      "sha256": "d3523f3bcf0f30348a07d9540f49c7328c13205074857af6069c91aab04494b2"
+    },
+    "synthetic-0-selected/frame-0007.png": {
+      "bytes": 169,
+      "sha256": "8a22df12f3809467b4087cd10951152a4062ab285b4911d5ebe2cc81309b157b"
+    },
+    "synthetic-0-selected/frame-0008.png": {
+      "bytes": 169,
+      "sha256": "f8dfe928d5bf7925a97b831661862dd45d92c5632cf772726db055c6c800f91f"
+    },
+    "synthetic-0-selected/frame-0009.png": {
+      "bytes": 169,
+      "sha256": "90afff031ada783ac1e01251db8c193ae2ce431e382912b2594206c49e7b67bd"
+    },
+    "synthetic-0-selected/frame-0010.png": {
+      "bytes": 169,
+      "sha256": "7d3c2fedc04ce456ec9ca547ebe480b36983419fb5ae10f5a4781c7fd59e7ce8"
+    },
+    "synthetic-0-selected/frame-0011.png": {
+      "bytes": 169,
+      "sha256": "7fc8d0c048ab9a91f8d6ac89acff63f011b143e950cb7a443cdc9304b913f263"
+    },
+    "synthetic-0-selected/frame-0012.png": {
+      "bytes": 169,
+      "sha256": "e9bc62c2cfdf9777d92477d254e36fa440195a03e7137eea53aca3514f7561b2"
+    },
+    "synthetic-0-selected/frame-0013.png": {
+      "bytes": 169,
+      "sha256": "e70ea59575ff68ce28623dab2c14aec11ba43c328f5cc9705571dc5a591bd88a"
+    },
+    "synthetic-0-selected/frame-0014.png": {
+      "bytes": 169,
+      "sha256": "91f5e253115794bbaca62f027759ce670c2189772345cc2e3a78744eb5d8a489"
+    },
+    "synthetic-0-selected/frame-0015.png": {
+      "bytes": 169,
+      "sha256": "4441d35275d2fc03695fcd8cd33d18fcf110a9c871e58ab73985a940817b276f"
+    },
+    "synthetic-0-selected/frame-0016.png": {
+      "bytes": 169,
+      "sha256": "c0b0cdccb64618c1188ba57df624f5b8e1a794275911e239663170a5ce336bd3"
+    },
+    "synthetic-0-selected/frame-0017.png": {
+      "bytes": 168,
+      "sha256": "fb86f29f3be8412edcc8459ecba97b649d4615efbc73ae90eb3432bcdff8e704"
+    },
+    "synthetic-0-selected/frame-0018.png": {
+      "bytes": 169,
+      "sha256": "e691cb0acae4e043a2c0d7f292b91b088b48f2ddb8fac9c2ed48586eb770f434"
+    },
+    "synthetic-0-selected/frame-0019.png": {
+      "bytes": 169,
+      "sha256": "3a7744b5057b8e4b39830e3936e1d5fadee0ca25baf8101dd7ba53de39e3db26"
+    },
+    "synthetic-0-selected/frame-0020.png": {
+      "bytes": 169,
+      "sha256": "75f5932c0537936d416802adb06e2354d13bad5fc12494ba112f3a5ac8a01e76"
+    },
+    "synthetic-0-stream.json": {
+      "bytes": 414,
+      "sha256": "320c49463637e7ed9937ebd22165650cf932a931c55456ac4158c0216b08c24e"
+    },
+    "synthetic-0.mkv": {
+      "bytes": 5191,
+      "sha256": "894e5b90bd552db6187490b15f5d7e1be790cdff2f75c7bdc47df06b34fbcf58"
+    },
+    "synthetic-5-all-frame-pts.json": {
+      "bytes": 4773,
+      "sha256": "4b7a13f11fe1128f9960a76e8b61c0f9660ed341b666534cdd8bd5d9cb41f2c9"
+    },
+    "synthetic-5-selected-selected.json": {
+      "bytes": 7436,
+      "sha256": "9c41382f7e7fef4b843ed984c177bc964ab6914ac7d2fc91fd4e47adce8e3e7f"
+    },
+    "synthetic-5-selected/frame-0001.png": {
+      "bytes": 132,
+      "sha256": "282f43363c9d521381bd75f94d6970050dd13bcdf74fe2ae18b37f033fb8f991"
+    },
+    "synthetic-5-selected/frame-0002.png": {
+      "bytes": 170,
+      "sha256": "784940457f084f33b6d8470432a2ecf6f378d0ddeaefb634aaaed783695e4ba7"
+    },
+    "synthetic-5-selected/frame-0003.png": {
+      "bytes": 170,
+      "sha256": "07e7eb260caaf0a53f7f6f367abeb8ade48e1bff59196680c1a306696e80cd4a"
+    },
+    "synthetic-5-selected/frame-0004.png": {
+      "bytes": 169,
+      "sha256": "49163d24c511618a30c875eb9ee7d99fc8d6513c1a24aeb078eb6e32543e540b"
+    },
+    "synthetic-5-selected/frame-0005.png": {
+      "bytes": 169,
+      "sha256": "6640f4c7a46fe3e16cd38ce14f97836eaca346f8f4a0c73212a69561ac5c0b3b"
+    },
+    "synthetic-5-selected/frame-0006.png": {
+      "bytes": 169,
+      "sha256": "d3523f3bcf0f30348a07d9540f49c7328c13205074857af6069c91aab04494b2"
+    },
+    "synthetic-5-selected/frame-0007.png": {
+      "bytes": 169,
+      "sha256": "8a22df12f3809467b4087cd10951152a4062ab285b4911d5ebe2cc81309b157b"
+    },
+    "synthetic-5-selected/frame-0008.png": {
+      "bytes": 169,
+      "sha256": "f8dfe928d5bf7925a97b831661862dd45d92c5632cf772726db055c6c800f91f"
+    },
+    "synthetic-5-selected/frame-0009.png": {
+      "bytes": 169,
+      "sha256": "90afff031ada783ac1e01251db8c193ae2ce431e382912b2594206c49e7b67bd"
+    },
+    "synthetic-5-selected/frame-0010.png": {
+      "bytes": 169,
+      "sha256": "7d3c2fedc04ce456ec9ca547ebe480b36983419fb5ae10f5a4781c7fd59e7ce8"
+    },
+    "synthetic-5-selected/frame-0011.png": {
+      "bytes": 169,
+      "sha256": "7fc8d0c048ab9a91f8d6ac89acff63f011b143e950cb7a443cdc9304b913f263"
+    },
+    "synthetic-5-selected/frame-0012.png": {
+      "bytes": 169,
+      "sha256": "e9bc62c2cfdf9777d92477d254e36fa440195a03e7137eea53aca3514f7561b2"
+    },
+    "synthetic-5-selected/frame-0013.png": {
+      "bytes": 169,
+      "sha256": "e70ea59575ff68ce28623dab2c14aec11ba43c328f5cc9705571dc5a591bd88a"
+    },
+    "synthetic-5-selected/frame-0014.png": {
+      "bytes": 169,
+      "sha256": "91f5e253115794bbaca62f027759ce670c2189772345cc2e3a78744eb5d8a489"
+    },
+    "synthetic-5-selected/frame-0015.png": {
+      "bytes": 169,
+      "sha256": "4441d35275d2fc03695fcd8cd33d18fcf110a9c871e58ab73985a940817b276f"
+    },
+    "synthetic-5-selected/frame-0016.png": {
+      "bytes": 169,
+      "sha256": "c0b0cdccb64618c1188ba57df624f5b8e1a794275911e239663170a5ce336bd3"
+    },
+    "synthetic-5-selected/frame-0017.png": {
+      "bytes": 168,
+      "sha256": "fb86f29f3be8412edcc8459ecba97b649d4615efbc73ae90eb3432bcdff8e704"
+    },
+    "synthetic-5-selected/frame-0018.png": {
+      "bytes": 169,
+      "sha256": "e691cb0acae4e043a2c0d7f292b91b088b48f2ddb8fac9c2ed48586eb770f434"
+    },
+    "synthetic-5-selected/frame-0019.png": {
+      "bytes": 169,
+      "sha256": "3a7744b5057b8e4b39830e3936e1d5fadee0ca25baf8101dd7ba53de39e3db26"
+    },
+    "synthetic-5-selected/frame-0020.png": {
+      "bytes": 169,
+      "sha256": "75f5932c0537936d416802adb06e2354d13bad5fc12494ba112f3a5ac8a01e76"
+    },
+    "synthetic-5-stream.json": {
+      "bytes": 417,
+      "sha256": "732715d77af6295b33f7a5f94047301cb562aab19c45df9cc4534f93d1fdbf7c"
+    },
+    "synthetic-5.mkv": {
+      "bytes": 5193,
+      "sha256": "a924e6e6d495f46500a2b7d2a5052fece13fea09cc06ee39db8ef9066078dd5a"
+    },
+    "synthetic-checks.json": {
+      "bytes": 293,
+      "sha256": "2b42e2e8013f453966f704d742ca06a8b06a5329db1ed407a71e33d60631f6ab"
+    }
+  },
+  "python": "3.12.14",
+  "source": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/audio-listening-2026-10-05/c-source-lineage/media/SIbqaybkbWI.f133.mp4",
+  "source_after": {
+    "bytes": 758909,
+    "sha256": "3f6db089b0e89cdfc030f6aaaf81227931681d26e0bd3c801b98cdcf486ba0d7"
+  },
+  "source_before": {
+    "bytes": 758909,
+    "sha256": "3f6db089b0e89cdfc030f6aaaf81227931681d26e0bd3c801b98cdcf486ba0d7"
+  },
+  "status": "complete"
+}

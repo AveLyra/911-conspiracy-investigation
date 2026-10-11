@@ -1,0 +1,111 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "pinned_source_and_earlier_payload_unchanged",
+      "result": "pass"
+    },
+    {
+      "name": "pinned_recipient_log_unchanged",
+      "result": "pass"
+    },
+    {
+      "name": "all_272_source_blocks_accounted_for_in_order",
+      "result": "pass"
+    },
+    {
+      "name": "all_225_technical_bundles_exactly_retained_after_declared_substitutions",
+      "result": "pass"
+    },
+    {
+      "name": "all_47_exclusions_explicitly_classified",
+      "result": "pass"
+    },
+    {
+      "name": "stable_supplement_ids_unique_contiguous",
+      "result": "pass"
+    },
+    {
+      "name": "five_logged_substitutions_only",
+      "result": "pass"
+    },
+    {
+      "name": "complete_annex_hash_and_size",
+      "result": "pass"
+    },
+    {
+      "name": "annex_contains_each_retained_bundle_exactly_once",
+      "result": "pass"
+    },
+    {
+      "name": "csv_register_same_roster_and_hashes_as_json",
+      "result": "pass"
+    },
+    {
+      "name": "prior_27_item_and_ack_rosters_match",
+      "result": "pass"
+    },
+    {
+      "name": "traceability_preserves_draft_null_receipts",
+      "result": "pass"
+    },
+    {
+      "name": "all_24_findings_link_to_retained_original_bundles_and_sent_items",
+      "result": "pass"
+    },
+    {
+      "name": "proposed_payload_has_no_screened_locators_names_contacts_or_uuid_receipts",
+      "result": "pass"
+    },
+    {
+      "name": "disclosure_screen_benign_word_and_sensitive_marker_controls",
+      "result": "pass"
+    },
+    {
+      "name": "negative_control_missing_source_block_rejected",
+      "result": "pass"
+    },
+    {
+      "name": "negative_control_changed_technical_text_rejected",
+      "result": "pass"
+    },
+    {
+      "name": "negative_control_duplicate_supplement_id_rejected",
+      "result": "pass"
+    },
+    {
+      "name": "negative_control_altered_annex_hash_rejected",
+      "result": "pass"
+    }
+  ],
+  "checked_at_utc": "2026-10-09T14:15:54Z",
+  "runtime": "ruby 2.6.10p210 (2022-04-12 revision 67958) [universal.arm64e-darwin25]",
+  "prior_attempt": {
+    "status": "harness_failed_before_completion",
+    "error": "NoMethodError: Array#filter_map unavailable in installed Ruby",
+    "repair": "Use map followed by compact with unchanged roster predicate; no acceptance criterion changed."
+  },
+  "commands": [
+    "ruby -c build_register.rb",
+    "ruby build_register.rb <empty-output-directory>",
+    "ruby build_report.rb <output-directory> findings.json",
+    "ruby verify_audit.rb <output-directory>"
+  ],
+  "limits": [
+    "Mechanical retention and lineage checks do not prove exhaustive semantic equivalence or privacy clearance.",
+    "No proposed acceptance test was run against Sherlock.",
+    "No transmission, implementation, commit or push was performed."
+  ],
+  "payloads": [
+    {
+      "file": "supplement-cover.txt",
+      "bytes": 2364,
+      "sha256": "783bdce6f25281e11ada123151b6d47095744f19a2b6506392b74d460965910f"
+    },
+    {
+      "file": "technical-annex.txt",
+      "bytes": 216768,
+      "sha256": "716edae9941b217170f97a316fc81ecc74a0abc87d52c2d8f539ed2280fd2029"
+    }
+  ]
+}

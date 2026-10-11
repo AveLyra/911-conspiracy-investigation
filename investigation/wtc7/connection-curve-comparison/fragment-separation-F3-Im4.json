@@ -1,0 +1,20 @@
+{
+  "status": "local_selected_pixel_geometry_not_physical_model_difference",
+  "input": "neutral-fragments01.json",
+  "input_sha256": "9509af833d1fbf28ad7c11d6b21625d6dabbc91e1c258b3eff97a015401a5f6f",
+  "scope": "Only the previously inspected Im4 rectangle, all three thresholds. Largest component versus every other retained component. No model assignment required for this geometric calculation.",
+  "initial_error": {
+    "receipt": "659189",
+    "description": "Directional subtraction incorrectly assumed the largest component was above the others. Negative values were printed as nonpositive gaps; they must not be interpreted as overlap. No underlying pixels changed.",
+    "minimum_directional_values_threshold_32_64_96": [-36,-35,-34]
+  },
+  "corrected_method": "Treat inclusive pixel run [a,aa] as closed cell-edge interval [a,aa+1]. For another [b,bb+1], unsigned separation is max(0,b-aa-1,a-bb-1). At each shared x take the minimum across all pairs of runs. Report every threshold, not a selected best case.",
+  "corrected_receipt": "bef6ae",
+  "results": [
+    {"threshold":32,"coobserved_columns":47,"min_gap_native_pixels":12,"max_gap_native_pixels":30,"touch_or_overlap_columns":[],"largest_component_max_vertical_span_pixels":5},
+    {"threshold":64,"coobserved_columns":42,"min_gap_native_pixels":13,"max_gap_native_pixels":30,"touch_or_overlap_columns":[],"largest_component_max_vertical_span_pixels":4},
+    {"threshold":96,"coobserved_columns":39,"min_gap_native_pixels":14,"max_gap_native_pixels":30,"touch_or_overlap_columns":[],"largest_component_max_vertical_span_pixels":3}
+  ],
+  "limits": ["Only selected neutral pixels: undetected ink and compression artifacts are not bounded by these gaps.","A footprint span includes slope within one native column and is not perpendicular linewidth or centreline uncertainty.","Shared column counts are not admitted continuous displacement intervals; gaps remain gaps.","No calibrated graph uncertainty, physical ordinates, engineering discrepancy, human acceptance or causal ranking."],
+  "human_accepted": false
+}

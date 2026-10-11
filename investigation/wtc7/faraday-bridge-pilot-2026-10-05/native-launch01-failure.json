@@ -1,0 +1,18 @@
+{
+  "format_version": 1,
+  "stage": "preflight_before_audit_guard_and_target_imports",
+  "tool_result_id": "587495",
+  "exit_code": 1,
+  "runner_sha256": "5747e97e9f08220c1f09ef49701464b152c9e1910c94dc9ae6caada0e772d3fd",
+  "argv": ["/usr/bin/env", "-i", "PATH=/usr/bin:/bin", "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1", "/Users/admin/.pyenv/versions/3.13.7/bin/python3", "-I", "-B", "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/faraday-bridge-pilot-2026-10-05/verify_bridge.py", "--mode", "native", "--run-root", "/private/tmp/wtc7-faraday-pilot.eGMyO9/native-run01"],
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/faraday-bridge-pilot-2026-10-05/verify_bridge.py\", line 445, in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File \"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/faraday-bridge-pilot-2026-10-05/verify_bridge.py\", line 387, in main\n    require(not set(os.environ) - {\"PATH\", \"PYTEST_DISABLE_PLUGIN_AUTOLOAD\", \"LC_CTYPE\"}, \"caller must clear external environment\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/faraday-bridge-pilot-2026-10-05/verify_bridge.py\", line 57, in require\n    raise RuntimeError(message)\nRuntimeError: caller must clear external environment\n",
+  "followup_diagnostic_tool_result_id": "f6c7ad",
+  "followup_diagnostic_exit_code": 0,
+  "observed_environment_key_names_only": ["LC_CTYPE", "PATH", "PYTEST_DISABLE_PLUGIN_AUTOLOAD", "__CF_USER_TEXT_ENCODING"],
+  "temporary_parent_empty_after_failure": true,
+  "target_imported": false,
+  "native_tests_executed": 0,
+  "matrix_cases_executed": 0,
+  "proposed_repair": "Remove only __CF_USER_TEXT_ENCODING before the otherwise unchanged strict environment assertion. Preserve old source and obtain separate review."
+}

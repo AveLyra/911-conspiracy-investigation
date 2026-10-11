@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/opt/homebrew/bin/ffprobe",
+    "-v",
+    "warning",
+    "-select_streams",
+    "v:0",
+    "-show_entries",
+    "stream=index,codec_name,codec_type,width,height,pix_fmt,sample_aspect_ratio,display_aspect_ratio,r_frame_rate,avg_frame_rate,time_base,start_pts,start_time,duration_ts,duration,nb_frames:stream_side_data=side_data_type,rotation,displaymatrix:frame=stream_index,best_effort_timestamp,pts,duration,pkt_duration,width,height,pix_fmt,key_frame,pict_type",
+    "-of",
+    "json",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/distant-view-source-screen/source/DistantViewWTC7.avi"
+  ],
+  "returncode": 0,
+  "status": "returned",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_truncated": false,
+  "stdout_bytes": 270579,
+  "stdout_sha256": "c0c7ce905e0f3e96a4ce9fedbc8b4309d9c9a13c43d5f86afbe0d176e2e5ac84"
+}

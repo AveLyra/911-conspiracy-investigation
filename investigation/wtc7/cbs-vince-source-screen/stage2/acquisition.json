@@ -1,0 +1,125 @@
+{
+  "schema": "cbs-vince-acquisition-v1",
+  "date_utc": "2026-10-03",
+  "time_after_transfers_utc": "2026-10-03 22:45:16 UTC",
+  "protocol_sha256": "5dbaca2b2329db7bc85f67fc0995adf5fd15b8fe3fd0c4b0e50f445179dd35bc",
+  "metadata_refresh_sha256": "e0c52f41ddd9ce8b6b2837af3b5cd7527f81aaabf46955de6dec34b0e6c424a4",
+  "retrieval": {
+    "tool": "google_drive_fetch",
+    "download_raw_file": true,
+    "include_base64": false,
+    "materialization": "Returned top-level file_uri object download_url supplied through non-echoing curl stdin; bearer URLs deliberately not preserved.",
+    "curl_version": "8.7.1",
+    "options": [
+      "--config -",
+      "--proto =https",
+      "--proto-redir =https",
+      "--location",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--max-time 55",
+      "--connect-timeout 15"
+    ],
+    "output_policy": "Separate explicit attempt paths, absence checked before invocation; no retries needed or live transfers restarted.",
+    "provider_checksum": null,
+    "checksum_limit": "Normalized responses omit provider checksums; received-byte hashes are not historical authentication."
+  },
+  "items": [
+    {
+      "clip_number": 3,
+      "provider_id": "1ksEl9qtGFxPGBqWDWcJfEnniSyiT7uyf",
+      "title": "Vince Demetri Clip 3.avi",
+      "mime_type": "video/avi",
+      "request_url": "https://drive.google.com/file/d/1ksEl9qtGFxPGBqWDWcJfEnniSyiT7uyf/view?usp=drivesdk",
+      "catalogue_and_fetch_bytes": 23621148,
+      "max_filesize": 24669724,
+      "selected_attempt": 1,
+      "fetch_safe_result": {
+        "clip": "3",
+        "isError": false,
+        "title": "Vince Demetri Clip 3.avi",
+        "file_name": "Vince Demetri Clip 3.avi",
+        "mime_type": "video/avi",
+        "id": "1ksEl9qtGFxPGBqWDWcJfEnniSyiT7uyf",
+        "file_size_bytes": 23621148,
+        "reference_type": "object",
+        "reference_keys": [
+          "download_url",
+          "file_id",
+          "mime_type",
+          "file_name"
+        ],
+        "inline_bytes_present": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "path": "raw/clip3-attempt1.avi",
+          "started_before_stdin_utc": "2026-10-03 22:44:29 UTC",
+          "exit_code": 0,
+          "http_code": 200,
+          "bytes": 23621148,
+          "transfer_seconds": 2.968772,
+          "content_type": "video/avi",
+          "sha256": "ced46b4c4318ef53c38eaf9485b76efa4d4d2c155b7194871a8479f0841a993d",
+          "stderr": "raw/clip3-attempt1.stderr",
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "terminal_tool_chunk": "110be5",
+          "disposition": "complete_received_copy"
+        }
+      ]
+    },
+    {
+      "clip_number": 4,
+      "provider_id": "1WSC_2P7PUPZElRjONinwKtN-hIFmCOCX",
+      "title": "Vince Demetri Clip 4.avi",
+      "mime_type": "video/avi",
+      "request_url": "https://drive.google.com/file/d/1WSC_2P7PUPZElRjONinwKtN-hIFmCOCX/view?usp=drivesdk",
+      "catalogue_and_fetch_bytes": 25734188,
+      "max_filesize": 26782764,
+      "selected_attempt": 1,
+      "fetch_safe_result": {
+        "clip": "4",
+        "isError": false,
+        "title": "Vince Demetri Clip 4.avi",
+        "file_name": "Vince Demetri Clip 4.avi",
+        "mime_type": "video/avi",
+        "id": "1WSC_2P7PUPZElRjONinwKtN-hIFmCOCX",
+        "file_size_bytes": 25734188,
+        "reference_type": "object",
+        "reference_keys": [
+          "download_url",
+          "file_id",
+          "mime_type",
+          "file_name"
+        ],
+        "inline_bytes_present": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "path": "raw/clip4-attempt1.avi",
+          "started_before_stdin_utc": "2026-10-03 22:44:56 UTC",
+          "exit_code": 0,
+          "http_code": 200,
+          "bytes": 25734188,
+          "transfer_seconds": 3.112392,
+          "content_type": "video/avi",
+          "sha256": "a4eb4934882428b15a156d2a7bfe1755e3dc00b37667f08a59c365645b3e07e8",
+          "stderr": "raw/clip4-attempt1.stderr",
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "terminal_tool_chunk": "4268dc",
+          "disposition": "complete_received_copy"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Public-catalogue candidate access copies, not original-camera custody authentication.",
+    "No images viewed or historical media decoded during acquisition.",
+    "Clips5–8 remain outside this stage."
+  ]
+}

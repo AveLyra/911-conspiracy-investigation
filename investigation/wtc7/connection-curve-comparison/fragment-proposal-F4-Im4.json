@@ -1,0 +1,27 @@
+{
+  "status": "exploratory_candidate_components_not_admitted_support",
+  "source": "native-strips01/Im4.jpg",
+  "source_sha256": "53804060d00794d59628d6406337a6db5568bf30df63913ff4888b63082913fd",
+  "execution_receipt": "050187",
+  "region_half_open": [330,0,425,88],
+  "method": "Native RGB without resampling; R>=G>=B, R-B>32, 255-B>=threshold; scipy eight-connected components. All components retained at thresholds32,64,96. This local warm-color predicate is exploratory and not specific to four-bolt gold.",
+  "selection": "Single AI visual inspection of descending gold pair after F3. Region is not the final quantile sample and does not define complete support.",
+  "tuple_fields": ["pixel_count","x_min","y_min","x_max","y_max"],
+  "thresholds": {
+    "32": [[396,332,0,399,87],[25,356,2,361,7],[51,362,9,368,26],[26,369,27,373,35],[52,372,37,383,48],[22,383,50,389,53],[24,389,55,392,62],[54,395,60,405,74],[27,405,73,409,80],[24,409,81,415,85],[4,415,6,417,7],[17,420,12,424,19]],
+    "64": [[254,333,0,399,87],[15,356,2,361,7],[16,362,10,364,16],[15,365,19,367,25],[14,370,28,372,34],[13,373,38,376,43],[14,379,42,382,47],[12,384,50,388,52],[12,390,56,392,61],[16,395,60,399,66],[15,399,70,404,73],[13,406,74,408,80],[16,410,82,415,85],[3,416,6,417,7],[13,420,12,424,19]],
+    "96": [[176,333,0,399,87],[6,357,3,360,6],[7,363,11,364,15],[9,365,20,367,25],[10,370,29,372,33],[8,373,38,375,42],[8,380,43,382,47],[6,384,51,387,52],[7,390,56,391,60],[9,396,61,398,66],[7,400,70,403,72],[7,406,75,408,79],[12,410,82,415,84],[2,416,6,417,7],[12,420,12,424,18]]
+  },
+  "interpretation": "One long component is consistent with the visually proposed gold solid descent. Smaller components track a nearby broken route but merge or separate as threshold changes. Two upper-right groups around x415-424, y6-19 are outside the visually proposed gold descending route and may be neighboring red pixels; retained as potential contamination, not assigned to gold.",
+  "limits": ["Threshold32 merges candidate dash fragments that separate at64/96; connectivity is not true dash topology.","Long component touches top/bottom of the crop; rightmost component touches its right boundary. None is a physical endpoint.","No deletion of suspected contamination or nearest-label winner selection.","Bounding boxes are not full pixel masks or calibrated uncertainty envelopes.","No model-identity acceptance, continuous support, physical ordinate or discrepancy metric."],
+  "human_reviewed": false,
+  "independent_recovery": false,
+  "separate_code_check": {
+    "receipt": "a4e305",
+    "status": "all_42_component_counts_and_bounds_match",
+    "method": "Scalar RGB predicate and set/depth-first component traversal reproduced the original NumPy/SciPy labeling. Same analyst and source; not independent human identity recovery.",
+    "pixel_totals_threshold_32_64_96": [722,441,286]
+  },
+  "local_identity_calibration_review": "Requested human distinction of the black and gold solid/dashed routes in the unchanged Im4 strip. No response inferred. This calibration is additional to, not a replacement for, the final deterministic 42-slot sample review.",
+  "quantitative_support": null
+}

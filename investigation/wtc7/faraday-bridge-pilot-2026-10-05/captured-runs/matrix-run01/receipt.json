@@ -1,0 +1,2578 @@
+{
+  "addon_entrypoints": [],
+  "boundary_limit": "Python audit instrumentation only; not a security sandbox, native-call proof, source authenticity, scientific validation, or Sherlock acceptance.",
+  "cases": [],
+  "checks": [],
+  "commands": [
+    {
+      "after": {
+        "files": {
+          "workspace.json": "9d5e0b4cb1bc675724fd23a1fed71cc0cf31cc7826cb041dd20381fbeaecde47"
+        },
+        "ledger": [],
+        "scientific_files": {
+          "workspace.json": "9d5e0b4cb1bc675724fd23a1fed71cc0cf31cc7826cb041dd20381fbeaecde47"
+        }
+      },
+      "argv": [
+        "--workspace",
+        "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/workspace",
+        "--actor",
+        "codex-synthetic-fixture",
+        "--json",
+        "workspace",
+        "init"
+      ],
+      "before": {
+        "files": {},
+        "ledger": [],
+        "scientific_files": {}
+      },
+      "exit_code": 0,
+      "label": "init",
+      "response": {
+        "ok": true,
+        "result": {
+          "active_inquiry_id": null,
+          "created_at": "2026-10-05T07:26:55.558594Z",
+          "inquiry_ids": [],
+          "schema_version": 1
+        }
+      },
+      "stderr": "",
+      "stdout": "{\"ok\": true, \"result\": {\"active_inquiry_id\": null, \"created_at\": \"2026-10-05T07:26:55.558594Z\", \"inquiry_ids\": [], \"schema_version\": 1}}\n"
+    },
+    {
+      "after": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "e14a3aa499206393a359073daacf021637bff16b4e7f57aab82fc6c6eea78260",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "argv": [
+        "--workspace",
+        "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/workspace",
+        "--actor",
+        "codex-synthetic-fixture",
+        "--json",
+        "inquiry",
+        "create",
+        "--id",
+        "synthetic-bridge-pilot",
+        "--title",
+        "Synthetic bridge plumbing fixture",
+        "--statement",
+        "Does this toy bridge retain declared software-fixture limitations?"
+      ],
+      "before": {
+        "files": {
+          "workspace.json": "9d5e0b4cb1bc675724fd23a1fed71cc0cf31cc7826cb041dd20381fbeaecde47"
+        },
+        "ledger": [],
+        "scientific_files": {
+          "workspace.json": "9d5e0b4cb1bc675724fd23a1fed71cc0cf31cc7826cb041dd20381fbeaecde47"
+        }
+      },
+      "exit_code": 0,
+      "label": "inquiry",
+      "response": {
+        "ok": true,
+        "result": {
+          "created_at": "2026-10-05T07:26:55.633976Z",
+          "current_synthesis_path": null,
+          "decision_change_criteria": [],
+          "decision_owner": "",
+          "decision_to_support": "",
+          "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+          "inquiry_id": "synthetic-bridge-pilot",
+          "minimum_evidence": "",
+          "status": "clarifying",
+          "title": "Synthetic bridge plumbing fixture"
+        }
+      },
+      "stderr": "",
+      "stdout": "{\"ok\": true, \"result\": {\"created_at\": \"2026-10-05T07:26:55.633976Z\", \"current_synthesis_path\": null, \"decision_change_criteria\": [], \"decision_owner\": \"\", \"decision_to_support\": \"\", \"initial_statement\": \"Does this toy bridge retain declared software-fixture limitations?\", \"inquiry_id\": \"synthetic-bridge-pilot\", \"minimum_evidence\": \"\", \"status\": \"clarifying\", \"title\": \"Synthetic bridge plumbing fixture\"}}\n"
+    },
+    {
+      "after": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "dfeb001b4b956b9cc1072baf689ff51748fa9753601208546018451b125f0cdf",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "clm-c7a48e0fb114",
+            "aggregate_type": "claim",
+            "command": "claim.add",
+            "event_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "event_id": "evt-cfe9b90d71e44f72",
+            "payload": {
+              "claim_id": "clm-c7a48e0fb114",
+              "confidence": null,
+              "conflicts_with": [],
+              "created_at": "2026-10-05T07:26:55.697095Z",
+              "decision_owner": "",
+              "disposition": "unresolved",
+              "epistemic_layer": "unresolved",
+              "falsified_by": [],
+              "last_reviewed": null,
+              "level": "measurement_validity",
+              "parent_claims": [],
+              "scientific_content_sha256": "1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00",
+              "scope": "Generated software fixture only; no historical observation.",
+              "source_refs": [],
+              "statement": "The synthetic fixture note contains a toy value."
+            },
+            "previous_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "sequence": 2,
+            "timestamp": "2026-10-05T07:26:55.699568Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "argv": [
+        "--workspace",
+        "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/workspace",
+        "--actor",
+        "codex-synthetic-fixture",
+        "--json",
+        "claim",
+        "add",
+        "--statement",
+        "The synthetic fixture note contains a toy value.",
+        "--level",
+        "measurement_validity",
+        "--scope",
+        "Generated software fixture only; no historical observation."
+      ],
+      "before": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "e14a3aa499206393a359073daacf021637bff16b4e7f57aab82fc6c6eea78260",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "exit_code": 0,
+      "label": "claim",
+      "response": {
+        "ok": true,
+        "result": {
+          "claim_id": "clm-c7a48e0fb114",
+          "confidence": null,
+          "conflicts_with": [],
+          "created_at": "2026-10-05T07:26:55.697095Z",
+          "decision_owner": "",
+          "disposition": "unresolved",
+          "epistemic_layer": "unresolved",
+          "falsified_by": [],
+          "last_reviewed": null,
+          "level": "measurement_validity",
+          "parent_claims": [],
+          "scientific_content_sha256": "1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00",
+          "scope": "Generated software fixture only; no historical observation.",
+          "source_refs": [],
+          "statement": "The synthetic fixture note contains a toy value."
+        }
+      },
+      "stderr": "",
+      "stdout": "{\"ok\": true, \"result\": {\"claim_id\": \"clm-c7a48e0fb114\", \"confidence\": null, \"conflicts_with\": [], \"created_at\": \"2026-10-05T07:26:55.697095Z\", \"decision_owner\": \"\", \"disposition\": \"unresolved\", \"epistemic_layer\": \"unresolved\", \"falsified_by\": [], \"last_reviewed\": null, \"level\": \"measurement_validity\", \"parent_claims\": [], \"scientific_content_sha256\": \"1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00\", \"scope\": \"Generated software fixture only; no historical observation.\", \"source_refs\": [], \"statement\": \"The synthetic fixture note contains a toy value.\"}}\n"
+    },
+    {
+      "after": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/drafts/hypotheses/hyp-842f110ffe83.json": "bace6eb36a04c140e62a409375bcae9758e8c2afa63290b52d10ebc9a0aa243d",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "ad92670f9cd7e77c126cfc4f49e28c774a0a19145a605e399691227e46da1866",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "clm-c7a48e0fb114",
+            "aggregate_type": "claim",
+            "command": "claim.add",
+            "event_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "event_id": "evt-cfe9b90d71e44f72",
+            "payload": {
+              "claim_id": "clm-c7a48e0fb114",
+              "confidence": null,
+              "conflicts_with": [],
+              "created_at": "2026-10-05T07:26:55.697095Z",
+              "decision_owner": "",
+              "disposition": "unresolved",
+              "epistemic_layer": "unresolved",
+              "falsified_by": [],
+              "last_reviewed": null,
+              "level": "measurement_validity",
+              "parent_claims": [],
+              "scientific_content_sha256": "1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00",
+              "scope": "Generated software fixture only; no historical observation.",
+              "source_refs": [],
+              "statement": "The synthetic fixture note contains a toy value."
+            },
+            "previous_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "sequence": 2,
+            "timestamp": "2026-10-05T07:26:55.699568Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.propose",
+            "event_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "event_id": "evt-5f2263e7b41c437a",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": null,
+              "pending_review_by": null,
+              "pending_review_confidence": "",
+              "pending_review_rationale": "",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "unreviewed"
+            },
+            "previous_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "sequence": 3,
+            "timestamp": "2026-10-05T07:26:55.781232Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/drafts/hypotheses/hyp-842f110ffe83.json": "bace6eb36a04c140e62a409375bcae9758e8c2afa63290b52d10ebc9a0aa243d",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "argv": [
+        "--workspace",
+        "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/workspace",
+        "--actor",
+        "codex-synthetic-fixture",
+        "--json",
+        "hypothesis",
+        "propose",
+        "--statement",
+        "The synthetic toy observation remains unresolved.",
+        "--parent-claim",
+        "clm-c7a48e0fb114",
+        "--scope",
+        "Generated software fixture only.",
+        "--prediction",
+        "The generated toy note contains value 1.",
+        "--null-model",
+        "The toy note does not contain value 1.",
+        "--competing-model",
+        "The toy note contains a different value.",
+        "--falsification",
+        "The generated note contains only value 2.",
+        "--support-condition",
+        "The generated note retains value 1.",
+        "--boundary-condition",
+        "No real-world inference is permitted."
+      ],
+      "before": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "dfeb001b4b956b9cc1072baf689ff51748fa9753601208546018451b125f0cdf",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "clm-c7a48e0fb114",
+            "aggregate_type": "claim",
+            "command": "claim.add",
+            "event_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "event_id": "evt-cfe9b90d71e44f72",
+            "payload": {
+              "claim_id": "clm-c7a48e0fb114",
+              "confidence": null,
+              "conflicts_with": [],
+              "created_at": "2026-10-05T07:26:55.697095Z",
+              "decision_owner": "",
+              "disposition": "unresolved",
+              "epistemic_layer": "unresolved",
+              "falsified_by": [],
+              "last_reviewed": null,
+              "level": "measurement_validity",
+              "parent_claims": [],
+              "scientific_content_sha256": "1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00",
+              "scope": "Generated software fixture only; no historical observation.",
+              "source_refs": [],
+              "statement": "The synthetic fixture note contains a toy value."
+            },
+            "previous_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "sequence": 2,
+            "timestamp": "2026-10-05T07:26:55.699568Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "exit_code": 0,
+      "label": "hypothesis",
+      "response": {
+        "ok": true,
+        "result": {
+          "activated_at": null,
+          "boundary_conditions": [
+            "No real-world inference is permitted."
+          ],
+          "causal_direction": "",
+          "competing_models": [
+            "The toy note contains a different value."
+          ],
+          "contrast_definition": "",
+          "contrast_groups": [],
+          "covariates": [],
+          "created_at": "2026-10-05T07:26:55.778335Z",
+          "evidence_assessment": "unassessed",
+          "expected_effect_direction": "",
+          "falsification_conditions": [
+            "The generated note contains only value 2."
+          ],
+          "generated_by": "codex",
+          "hypothesis_id": "hyp-842f110ffe83",
+          "known_confounds": [],
+          "lineage": [],
+          "null_model": "The toy note does not contain value 1.",
+          "observable_prediction": "The generated toy note contains value 1.",
+          "parent_claims": [
+            "clm-c7a48e0fb114"
+          ],
+          "pending_review_at": null,
+          "pending_review_by": null,
+          "pending_review_confidence": "",
+          "pending_review_rationale": "",
+          "primary_estimand": "",
+          "replication_state": "untested",
+          "required_replications": null,
+          "retirement": null,
+          "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+          "scope": "Generated software fixture only.",
+          "source_context": [],
+          "statement": "The synthetic toy observation remains unresolved.",
+          "support_conditions": [
+            "The generated note retains value 1."
+          ],
+          "time_window": "",
+          "workflow_state": "unreviewed"
+        }
+      },
+      "stderr": "",
+      "stdout": "{\"ok\": true, \"result\": {\"activated_at\": null, \"boundary_conditions\": [\"No real-world inference is permitted.\"], \"causal_direction\": \"\", \"competing_models\": [\"The toy note contains a different value.\"], \"contrast_definition\": \"\", \"contrast_groups\": [], \"covariates\": [], \"created_at\": \"2026-10-05T07:26:55.778335Z\", \"evidence_assessment\": \"unassessed\", \"expected_effect_direction\": \"\", \"falsification_conditions\": [\"The generated note contains only value 2.\"], \"generated_by\": \"codex\", \"hypothesis_id\": \"hyp-842f110ffe83\", \"known_confounds\": [], \"lineage\": [], \"null_model\": \"The toy note does not contain value 1.\", \"observable_prediction\": \"The generated toy note contains value 1.\", \"parent_claims\": [\"clm-c7a48e0fb114\"], \"pending_review_at\": null, \"pending_review_by\": null, \"pending_review_confidence\": \"\", \"pending_review_rationale\": \"\", \"primary_estimand\": \"\", \"replication_state\": \"untested\", \"required_replications\": null, \"retirement\": null, \"scientific_content_sha256\": \"5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f\", \"scope\": \"Generated software fixture only.\", \"source_context\": [], \"statement\": \"The synthetic toy observation remains unresolved.\", \"support_conditions\": [\"The generated note retains value 1.\"], \"time_window\": \"\", \"workflow_state\": \"unreviewed\"}}\n"
+    },
+    {
+      "after": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "3f965f1bafeec57cf81cffce0b944ee1461f238a24ec3a1ceaa400d5627dcb3b",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "clm-c7a48e0fb114",
+            "aggregate_type": "claim",
+            "command": "claim.add",
+            "event_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "event_id": "evt-cfe9b90d71e44f72",
+            "payload": {
+              "claim_id": "clm-c7a48e0fb114",
+              "confidence": null,
+              "conflicts_with": [],
+              "created_at": "2026-10-05T07:26:55.697095Z",
+              "decision_owner": "",
+              "disposition": "unresolved",
+              "epistemic_layer": "unresolved",
+              "falsified_by": [],
+              "last_reviewed": null,
+              "level": "measurement_validity",
+              "parent_claims": [],
+              "scientific_content_sha256": "1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00",
+              "scope": "Generated software fixture only; no historical observation.",
+              "source_refs": [],
+              "statement": "The synthetic fixture note contains a toy value."
+            },
+            "previous_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "sequence": 2,
+            "timestamp": "2026-10-05T07:26:55.699568Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.propose",
+            "event_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "event_id": "evt-5f2263e7b41c437a",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": null,
+              "pending_review_by": null,
+              "pending_review_confidence": "",
+              "pending_review_rationale": "",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "unreviewed"
+            },
+            "previous_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "sequence": 3,
+            "timestamp": "2026-10-05T07:26:55.781232Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.stage_pending_review",
+            "event_hash": "971d66cb6ed5bcac364add106fb53b6aeaba6371d826386d8f06b6ba45db63f7",
+            "event_id": "evt-433dcbe38f674732",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": "2026-10-05T07:26:55.838082Z",
+              "pending_review_by": "codex-synthetic-fixture",
+              "pending_review_confidence": "high",
+              "pending_review_rationale": "Complete synthetic software fixture for exploratory export checks only; human review remains pending.",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "pending_review"
+            },
+            "previous_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "sequence": 4,
+            "timestamp": "2026-10-05T07:26:55.839576Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "argv": [
+        "--workspace",
+        "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/workspace",
+        "--actor",
+        "codex-synthetic-fixture",
+        "--json",
+        "hypothesis",
+        "stage",
+        "hyp-842f110ffe83",
+        "--confidence",
+        "high",
+        "--rationale",
+        "Complete synthetic software fixture for exploratory export checks only; human review remains pending."
+      ],
+      "before": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/drafts/hypotheses/hyp-842f110ffe83.json": "bace6eb36a04c140e62a409375bcae9758e8c2afa63290b52d10ebc9a0aa243d",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "ad92670f9cd7e77c126cfc4f49e28c774a0a19145a605e399691227e46da1866",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "clm-c7a48e0fb114",
+            "aggregate_type": "claim",
+            "command": "claim.add",
+            "event_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "event_id": "evt-cfe9b90d71e44f72",
+            "payload": {
+              "claim_id": "clm-c7a48e0fb114",
+              "confidence": null,
+              "conflicts_with": [],
+              "created_at": "2026-10-05T07:26:55.697095Z",
+              "decision_owner": "",
+              "disposition": "unresolved",
+              "epistemic_layer": "unresolved",
+              "falsified_by": [],
+              "last_reviewed": null,
+              "level": "measurement_validity",
+              "parent_claims": [],
+              "scientific_content_sha256": "1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00",
+              "scope": "Generated software fixture only; no historical observation.",
+              "source_refs": [],
+              "statement": "The synthetic fixture note contains a toy value."
+            },
+            "previous_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "sequence": 2,
+            "timestamp": "2026-10-05T07:26:55.699568Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.propose",
+            "event_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "event_id": "evt-5f2263e7b41c437a",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": null,
+              "pending_review_by": null,
+              "pending_review_confidence": "",
+              "pending_review_rationale": "",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "unreviewed"
+            },
+            "previous_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "sequence": 3,
+            "timestamp": "2026-10-05T07:26:55.781232Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/drafts/hypotheses/hyp-842f110ffe83.json": "bace6eb36a04c140e62a409375bcae9758e8c2afa63290b52d10ebc9a0aa243d",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "exit_code": 0,
+      "label": "stage",
+      "response": {
+        "ok": true,
+        "result": {
+          "activated_at": null,
+          "boundary_conditions": [
+            "No real-world inference is permitted."
+          ],
+          "causal_direction": "",
+          "competing_models": [
+            "The toy note contains a different value."
+          ],
+          "contrast_definition": "",
+          "contrast_groups": [],
+          "covariates": [],
+          "created_at": "2026-10-05T07:26:55.778335Z",
+          "evidence_assessment": "unassessed",
+          "expected_effect_direction": "",
+          "falsification_conditions": [
+            "The generated note contains only value 2."
+          ],
+          "generated_by": "codex",
+          "hypothesis_id": "hyp-842f110ffe83",
+          "known_confounds": [],
+          "lineage": [],
+          "null_model": "The toy note does not contain value 1.",
+          "observable_prediction": "The generated toy note contains value 1.",
+          "parent_claims": [
+            "clm-c7a48e0fb114"
+          ],
+          "pending_review_at": "2026-10-05T07:26:55.838082Z",
+          "pending_review_by": "codex-synthetic-fixture",
+          "pending_review_confidence": "high",
+          "pending_review_rationale": "Complete synthetic software fixture for exploratory export checks only; human review remains pending.",
+          "primary_estimand": "",
+          "replication_state": "untested",
+          "required_replications": null,
+          "retirement": null,
+          "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+          "scope": "Generated software fixture only.",
+          "source_context": [],
+          "statement": "The synthetic toy observation remains unresolved.",
+          "support_conditions": [
+            "The generated note retains value 1."
+          ],
+          "time_window": "",
+          "workflow_state": "pending_review"
+        }
+      },
+      "stderr": "",
+      "stdout": "{\"ok\": true, \"result\": {\"activated_at\": null, \"boundary_conditions\": [\"No real-world inference is permitted.\"], \"causal_direction\": \"\", \"competing_models\": [\"The toy note contains a different value.\"], \"contrast_definition\": \"\", \"contrast_groups\": [], \"covariates\": [], \"created_at\": \"2026-10-05T07:26:55.778335Z\", \"evidence_assessment\": \"unassessed\", \"expected_effect_direction\": \"\", \"falsification_conditions\": [\"The generated note contains only value 2.\"], \"generated_by\": \"codex\", \"hypothesis_id\": \"hyp-842f110ffe83\", \"known_confounds\": [], \"lineage\": [], \"null_model\": \"The toy note does not contain value 1.\", \"observable_prediction\": \"The generated toy note contains value 1.\", \"parent_claims\": [\"clm-c7a48e0fb114\"], \"pending_review_at\": \"2026-10-05T07:26:55.838082Z\", \"pending_review_by\": \"codex-synthetic-fixture\", \"pending_review_confidence\": \"high\", \"pending_review_rationale\": \"Complete synthetic software fixture for exploratory export checks only; human review remains pending.\", \"primary_estimand\": \"\", \"replication_state\": \"untested\", \"required_replications\": null, \"retirement\": null, \"scientific_content_sha256\": \"5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f\", \"scope\": \"Generated software fixture only.\", \"source_context\": [], \"statement\": \"The synthetic toy observation remains unresolved.\", \"support_conditions\": [\"The generated note retains value 1.\"], \"time_window\": \"\", \"workflow_state\": \"pending_review\"}}\n"
+    },
+    {
+      "after": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/datasets/synthetic-dataset.json": "a70cdbcf4677ade44663d43188f621e4d4d5513924b04e757f1e51d6952739f2",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "e7c62b9177baf3f69047c0647bbb40a093752c670b6bd3090090fe37384b6493",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "clm-c7a48e0fb114",
+            "aggregate_type": "claim",
+            "command": "claim.add",
+            "event_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "event_id": "evt-cfe9b90d71e44f72",
+            "payload": {
+              "claim_id": "clm-c7a48e0fb114",
+              "confidence": null,
+              "conflicts_with": [],
+              "created_at": "2026-10-05T07:26:55.697095Z",
+              "decision_owner": "",
+              "disposition": "unresolved",
+              "epistemic_layer": "unresolved",
+              "falsified_by": [],
+              "last_reviewed": null,
+              "level": "measurement_validity",
+              "parent_claims": [],
+              "scientific_content_sha256": "1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00",
+              "scope": "Generated software fixture only; no historical observation.",
+              "source_refs": [],
+              "statement": "The synthetic fixture note contains a toy value."
+            },
+            "previous_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "sequence": 2,
+            "timestamp": "2026-10-05T07:26:55.699568Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.propose",
+            "event_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "event_id": "evt-5f2263e7b41c437a",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": null,
+              "pending_review_by": null,
+              "pending_review_confidence": "",
+              "pending_review_rationale": "",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "unreviewed"
+            },
+            "previous_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "sequence": 3,
+            "timestamp": "2026-10-05T07:26:55.781232Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.stage_pending_review",
+            "event_hash": "971d66cb6ed5bcac364add106fb53b6aeaba6371d826386d8f06b6ba45db63f7",
+            "event_id": "evt-433dcbe38f674732",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": "2026-10-05T07:26:55.838082Z",
+              "pending_review_by": "codex-synthetic-fixture",
+              "pending_review_confidence": "high",
+              "pending_review_rationale": "Complete synthetic software fixture for exploratory export checks only; human review remains pending.",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "pending_review"
+            },
+            "previous_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "sequence": 4,
+            "timestamp": "2026-10-05T07:26:55.839576Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-dataset",
+            "aggregate_type": "dataset",
+            "command": "dataset.register",
+            "event_hash": "af6aa598091ab62b4595fbe891de825f10d74b2006ce0fafafa1c753428a185b",
+            "event_id": "evt-25dd930b510348fe",
+            "payload": {
+              "artifacts": [
+                {
+                  "locator": "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/synthetic-fixture.csv",
+                  "media_type": "",
+                  "metadata": {},
+                  "sha256": "1a80986111952a11d02e84dbed98ae00f279469aad0615d17fa81911f8a6b428",
+                  "size_bytes": 8
+                }
+              ],
+              "created_at": "2026-10-05T07:26:55.937141Z",
+              "dataset_id": "synthetic-dataset",
+              "description": "Software fixture only; not an acquired observation.",
+              "metadata": {
+                "dataset_payload_sha256": "04a91059e715a5f45ed406b3fa6925b23ca8ff14578059e0eea6f5ed6048b55c"
+              },
+              "name": "Generated synthetic toy source",
+              "observation_unit": "",
+              "protocol_id": null,
+              "quality_attestations": [],
+              "role": "exploratory",
+              "source_dataset_ids": [],
+              "synthetic": true
+            },
+            "previous_hash": "971d66cb6ed5bcac364add106fb53b6aeaba6371d826386d8f06b6ba45db63f7",
+            "sequence": 5,
+            "timestamp": "2026-10-05T07:26:55.938513Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/datasets/synthetic-dataset.json": "a70cdbcf4677ade44663d43188f621e4d4d5513924b04e757f1e51d6952739f2",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "argv": [
+        "--workspace",
+        "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/workspace",
+        "--actor",
+        "codex-synthetic-fixture",
+        "--json",
+        "dataset",
+        "register",
+        "--id",
+        "synthetic-dataset",
+        "--name",
+        "Generated synthetic toy source",
+        "--role",
+        "exploratory",
+        "--synthetic",
+        "--description",
+        "Software fixture only; not an acquired observation.",
+        "--file",
+        "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/synthetic-fixture.csv"
+      ],
+      "before": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "3f965f1bafeec57cf81cffce0b944ee1461f238a24ec3a1ceaa400d5627dcb3b",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "clm-c7a48e0fb114",
+            "aggregate_type": "claim",
+            "command": "claim.add",
+            "event_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "event_id": "evt-cfe9b90d71e44f72",
+            "payload": {
+              "claim_id": "clm-c7a48e0fb114",
+              "confidence": null,
+              "conflicts_with": [],
+              "created_at": "2026-10-05T07:26:55.697095Z",
+              "decision_owner": "",
+              "disposition": "unresolved",
+              "epistemic_layer": "unresolved",
+              "falsified_by": [],
+              "last_reviewed": null,
+              "level": "measurement_validity",
+              "parent_claims": [],
+              "scientific_content_sha256": "1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00",
+              "scope": "Generated software fixture only; no historical observation.",
+              "source_refs": [],
+              "statement": "The synthetic fixture note contains a toy value."
+            },
+            "previous_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "sequence": 2,
+            "timestamp": "2026-10-05T07:26:55.699568Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.propose",
+            "event_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "event_id": "evt-5f2263e7b41c437a",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": null,
+              "pending_review_by": null,
+              "pending_review_confidence": "",
+              "pending_review_rationale": "",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "unreviewed"
+            },
+            "previous_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "sequence": 3,
+            "timestamp": "2026-10-05T07:26:55.781232Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.stage_pending_review",
+            "event_hash": "971d66cb6ed5bcac364add106fb53b6aeaba6371d826386d8f06b6ba45db63f7",
+            "event_id": "evt-433dcbe38f674732",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": "2026-10-05T07:26:55.838082Z",
+              "pending_review_by": "codex-synthetic-fixture",
+              "pending_review_confidence": "high",
+              "pending_review_rationale": "Complete synthetic software fixture for exploratory export checks only; human review remains pending.",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "pending_review"
+            },
+            "previous_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "sequence": 4,
+            "timestamp": "2026-10-05T07:26:55.839576Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "exit_code": 0,
+      "label": "dataset",
+      "response": {
+        "ok": true,
+        "result": {
+          "artifacts": [
+            {
+              "locator": "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/synthetic-fixture.csv",
+              "media_type": "",
+              "metadata": {},
+              "sha256": "1a80986111952a11d02e84dbed98ae00f279469aad0615d17fa81911f8a6b428",
+              "size_bytes": 8
+            }
+          ],
+          "created_at": "2026-10-05T07:26:55.937141Z",
+          "dataset_id": "synthetic-dataset",
+          "description": "Software fixture only; not an acquired observation.",
+          "metadata": {
+            "dataset_payload_sha256": "04a91059e715a5f45ed406b3fa6925b23ca8ff14578059e0eea6f5ed6048b55c"
+          },
+          "name": "Generated synthetic toy source",
+          "observation_unit": "",
+          "protocol_id": null,
+          "quality_attestations": [],
+          "role": "exploratory",
+          "source_dataset_ids": [],
+          "synthetic": true
+        }
+      },
+      "stderr": "",
+      "stdout": "{\"ok\": true, \"result\": {\"artifacts\": [{\"locator\": \"/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/synthetic-fixture.csv\", \"media_type\": \"\", \"metadata\": {}, \"sha256\": \"1a80986111952a11d02e84dbed98ae00f279469aad0615d17fa81911f8a6b428\", \"size_bytes\": 8}], \"created_at\": \"2026-10-05T07:26:55.937141Z\", \"dataset_id\": \"synthetic-dataset\", \"description\": \"Software fixture only; not an acquired observation.\", \"metadata\": {\"dataset_payload_sha256\": \"04a91059e715a5f45ed406b3fa6925b23ca8ff14578059e0eea6f5ed6048b55c\"}, \"name\": \"Generated synthetic toy source\", \"observation_unit\": \"\", \"protocol_id\": null, \"quality_attestations\": [], \"role\": \"exploratory\", \"source_dataset_ids\": [], \"synthetic\": true}}\n"
+    },
+    {
+      "after": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/datasets/synthetic-dataset.json": "a70cdbcf4677ade44663d43188f621e4d4d5513924b04e757f1e51d6952739f2",
+          "inquiries/synthetic-bridge-pilot/evidence/evd-7c270dcf32df.json": "b9a386ea33144cab286e206c681fce4023b31ac4b1b8e5d2ad893c2f129d5faf",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "1284c7fdba43690bc7f4052639c442c237493203438cbbacceb3aa50c90104b5",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "clm-c7a48e0fb114",
+            "aggregate_type": "claim",
+            "command": "claim.add",
+            "event_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "event_id": "evt-cfe9b90d71e44f72",
+            "payload": {
+              "claim_id": "clm-c7a48e0fb114",
+              "confidence": null,
+              "conflicts_with": [],
+              "created_at": "2026-10-05T07:26:55.697095Z",
+              "decision_owner": "",
+              "disposition": "unresolved",
+              "epistemic_layer": "unresolved",
+              "falsified_by": [],
+              "last_reviewed": null,
+              "level": "measurement_validity",
+              "parent_claims": [],
+              "scientific_content_sha256": "1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00",
+              "scope": "Generated software fixture only; no historical observation.",
+              "source_refs": [],
+              "statement": "The synthetic fixture note contains a toy value."
+            },
+            "previous_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "sequence": 2,
+            "timestamp": "2026-10-05T07:26:55.699568Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.propose",
+            "event_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "event_id": "evt-5f2263e7b41c437a",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": null,
+              "pending_review_by": null,
+              "pending_review_confidence": "",
+              "pending_review_rationale": "",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "unreviewed"
+            },
+            "previous_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "sequence": 3,
+            "timestamp": "2026-10-05T07:26:55.781232Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.stage_pending_review",
+            "event_hash": "971d66cb6ed5bcac364add106fb53b6aeaba6371d826386d8f06b6ba45db63f7",
+            "event_id": "evt-433dcbe38f674732",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": "2026-10-05T07:26:55.838082Z",
+              "pending_review_by": "codex-synthetic-fixture",
+              "pending_review_confidence": "high",
+              "pending_review_rationale": "Complete synthetic software fixture for exploratory export checks only; human review remains pending.",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "pending_review"
+            },
+            "previous_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "sequence": 4,
+            "timestamp": "2026-10-05T07:26:55.839576Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-dataset",
+            "aggregate_type": "dataset",
+            "command": "dataset.register",
+            "event_hash": "af6aa598091ab62b4595fbe891de825f10d74b2006ce0fafafa1c753428a185b",
+            "event_id": "evt-25dd930b510348fe",
+            "payload": {
+              "artifacts": [
+                {
+                  "locator": "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/synthetic-fixture.csv",
+                  "media_type": "",
+                  "metadata": {},
+                  "sha256": "1a80986111952a11d02e84dbed98ae00f279469aad0615d17fa81911f8a6b428",
+                  "size_bytes": 8
+                }
+              ],
+              "created_at": "2026-10-05T07:26:55.937141Z",
+              "dataset_id": "synthetic-dataset",
+              "description": "Software fixture only; not an acquired observation.",
+              "metadata": {
+                "dataset_payload_sha256": "04a91059e715a5f45ed406b3fa6925b23ca8ff14578059e0eea6f5ed6048b55c"
+              },
+              "name": "Generated synthetic toy source",
+              "observation_unit": "",
+              "protocol_id": null,
+              "quality_attestations": [],
+              "role": "exploratory",
+              "source_dataset_ids": [],
+              "synthetic": true
+            },
+            "previous_hash": "971d66cb6ed5bcac364add106fb53b6aeaba6371d826386d8f06b6ba45db63f7",
+            "sequence": 5,
+            "timestamp": "2026-10-05T07:26:55.938513Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "evd-7c270dcf32df",
+            "aggregate_type": "evidence",
+            "command": "evidence.record",
+            "event_hash": "cf32a14b250f63afc78a15fe204bcd67e9f64ae6627e0535b536fd1796b40b33",
+            "event_id": "evt-a6657ed40e9f45f4",
+            "payload": {
+              "admission_checks": {},
+              "analysis_claim_ceiling": "",
+              "analysis_id": "synthetic-source-assessment",
+              "analysis_output_sha256": "",
+              "claim_id": "clm-c7a48e0fb114",
+              "controls_failed": [],
+              "controls_passed": [],
+              "created_at": "2026-10-05T07:26:55.996558Z",
+              "dataset_id": "synthetic-dataset",
+              "direction": "inconclusive",
+              "effect_estimate": "",
+              "effect_estimate_path": "",
+              "evidence_id": "evd-7c270dcf32df",
+              "exploratory": true,
+              "higher_level_conclusions_unsupported": [
+                "Every real-world scientific, historical, causal, and legal conclusion."
+              ],
+              "hypothesis_id": "hyp-842f110ffe83",
+              "measurement_validity_check_ids": [],
+              "protocol_id": null,
+              "result_direction_check": "not_applicable",
+              "run_id": null,
+              "scientific_evidence_eligible": false,
+              "scope": "Generated software fixture only.",
+              "summary": "Synthetic source-assessment fixture with inconclusive direction; no scientific conclusion.",
+              "uncertainty": "Generated toy fixture; no inferential uncertainty estimate or real-world measurement is supplied.",
+              "uncertainty_path": "",
+              "validation_tags": [
+                "source_assessment"
+              ]
+            },
+            "previous_hash": "af6aa598091ab62b4595fbe891de825f10d74b2006ce0fafafa1c753428a185b",
+            "sequence": 6,
+            "timestamp": "2026-10-05T07:26:55.998433Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/datasets/synthetic-dataset.json": "a70cdbcf4677ade44663d43188f621e4d4d5513924b04e757f1e51d6952739f2",
+          "inquiries/synthetic-bridge-pilot/evidence/evd-7c270dcf32df.json": "b9a386ea33144cab286e206c681fce4023b31ac4b1b8e5d2ad893c2f129d5faf",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "argv": [
+        "--workspace",
+        "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/workspace",
+        "--actor",
+        "codex-synthetic-fixture",
+        "--json",
+        "evidence",
+        "record",
+        "--hypothesis",
+        "hyp-842f110ffe83",
+        "--claim",
+        "clm-c7a48e0fb114",
+        "--direction",
+        "inconclusive",
+        "--summary",
+        "Synthetic source-assessment fixture with inconclusive direction; no scientific conclusion.",
+        "--dataset",
+        "synthetic-dataset",
+        "--analysis",
+        "synthetic-source-assessment",
+        "--uncertainty",
+        "Generated toy fixture; no inferential uncertainty estimate or real-world measurement is supplied.",
+        "--scope",
+        "Generated software fixture only.",
+        "--higher-conclusion-unsupported",
+        "Every real-world scientific, historical, causal, and legal conclusion.",
+        "--validation-tag",
+        "source_assessment"
+      ],
+      "before": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/datasets/synthetic-dataset.json": "a70cdbcf4677ade44663d43188f621e4d4d5513924b04e757f1e51d6952739f2",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "e7c62b9177baf3f69047c0647bbb40a093752c670b6bd3090090fe37384b6493",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "clm-c7a48e0fb114",
+            "aggregate_type": "claim",
+            "command": "claim.add",
+            "event_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "event_id": "evt-cfe9b90d71e44f72",
+            "payload": {
+              "claim_id": "clm-c7a48e0fb114",
+              "confidence": null,
+              "conflicts_with": [],
+              "created_at": "2026-10-05T07:26:55.697095Z",
+              "decision_owner": "",
+              "disposition": "unresolved",
+              "epistemic_layer": "unresolved",
+              "falsified_by": [],
+              "last_reviewed": null,
+              "level": "measurement_validity",
+              "parent_claims": [],
+              "scientific_content_sha256": "1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00",
+              "scope": "Generated software fixture only; no historical observation.",
+              "source_refs": [],
+              "statement": "The synthetic fixture note contains a toy value."
+            },
+            "previous_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "sequence": 2,
+            "timestamp": "2026-10-05T07:26:55.699568Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.propose",
+            "event_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "event_id": "evt-5f2263e7b41c437a",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": null,
+              "pending_review_by": null,
+              "pending_review_confidence": "",
+              "pending_review_rationale": "",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "unreviewed"
+            },
+            "previous_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "sequence": 3,
+            "timestamp": "2026-10-05T07:26:55.781232Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.stage_pending_review",
+            "event_hash": "971d66cb6ed5bcac364add106fb53b6aeaba6371d826386d8f06b6ba45db63f7",
+            "event_id": "evt-433dcbe38f674732",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": "2026-10-05T07:26:55.838082Z",
+              "pending_review_by": "codex-synthetic-fixture",
+              "pending_review_confidence": "high",
+              "pending_review_rationale": "Complete synthetic software fixture for exploratory export checks only; human review remains pending.",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "pending_review"
+            },
+            "previous_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "sequence": 4,
+            "timestamp": "2026-10-05T07:26:55.839576Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-dataset",
+            "aggregate_type": "dataset",
+            "command": "dataset.register",
+            "event_hash": "af6aa598091ab62b4595fbe891de825f10d74b2006ce0fafafa1c753428a185b",
+            "event_id": "evt-25dd930b510348fe",
+            "payload": {
+              "artifacts": [
+                {
+                  "locator": "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/synthetic-fixture.csv",
+                  "media_type": "",
+                  "metadata": {},
+                  "sha256": "1a80986111952a11d02e84dbed98ae00f279469aad0615d17fa81911f8a6b428",
+                  "size_bytes": 8
+                }
+              ],
+              "created_at": "2026-10-05T07:26:55.937141Z",
+              "dataset_id": "synthetic-dataset",
+              "description": "Software fixture only; not an acquired observation.",
+              "metadata": {
+                "dataset_payload_sha256": "04a91059e715a5f45ed406b3fa6925b23ca8ff14578059e0eea6f5ed6048b55c"
+              },
+              "name": "Generated synthetic toy source",
+              "observation_unit": "",
+              "protocol_id": null,
+              "quality_attestations": [],
+              "role": "exploratory",
+              "source_dataset_ids": [],
+              "synthetic": true
+            },
+            "previous_hash": "971d66cb6ed5bcac364add106fb53b6aeaba6371d826386d8f06b6ba45db63f7",
+            "sequence": 5,
+            "timestamp": "2026-10-05T07:26:55.938513Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/datasets/synthetic-dataset.json": "a70cdbcf4677ade44663d43188f621e4d4d5513924b04e757f1e51d6952739f2",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "exit_code": 0,
+      "label": "evidence-inconclusive",
+      "response": {
+        "ok": true,
+        "result": {
+          "admission_checks": {},
+          "analysis_claim_ceiling": "",
+          "analysis_id": "synthetic-source-assessment",
+          "analysis_output_sha256": "",
+          "claim_id": "clm-c7a48e0fb114",
+          "controls_failed": [],
+          "controls_passed": [],
+          "created_at": "2026-10-05T07:26:55.996558Z",
+          "dataset_id": "synthetic-dataset",
+          "direction": "inconclusive",
+          "effect_estimate": "",
+          "effect_estimate_path": "",
+          "evidence_id": "evd-7c270dcf32df",
+          "exploratory": true,
+          "higher_level_conclusions_unsupported": [
+            "Every real-world scientific, historical, causal, and legal conclusion."
+          ],
+          "hypothesis_id": "hyp-842f110ffe83",
+          "measurement_validity_check_ids": [],
+          "protocol_id": null,
+          "result_direction_check": "not_applicable",
+          "run_id": null,
+          "scientific_evidence_eligible": false,
+          "scope": "Generated software fixture only.",
+          "summary": "Synthetic source-assessment fixture with inconclusive direction; no scientific conclusion.",
+          "uncertainty": "Generated toy fixture; no inferential uncertainty estimate or real-world measurement is supplied.",
+          "uncertainty_path": "",
+          "validation_tags": [
+            "source_assessment"
+          ]
+        }
+      },
+      "stderr": "",
+      "stdout": "{\"ok\": true, \"result\": {\"admission_checks\": {}, \"analysis_claim_ceiling\": \"\", \"analysis_id\": \"synthetic-source-assessment\", \"analysis_output_sha256\": \"\", \"claim_id\": \"clm-c7a48e0fb114\", \"controls_failed\": [], \"controls_passed\": [], \"created_at\": \"2026-10-05T07:26:55.996558Z\", \"dataset_id\": \"synthetic-dataset\", \"direction\": \"inconclusive\", \"effect_estimate\": \"\", \"effect_estimate_path\": \"\", \"evidence_id\": \"evd-7c270dcf32df\", \"exploratory\": true, \"higher_level_conclusions_unsupported\": [\"Every real-world scientific, historical, causal, and legal conclusion.\"], \"hypothesis_id\": \"hyp-842f110ffe83\", \"measurement_validity_check_ids\": [], \"protocol_id\": null, \"result_direction_check\": \"not_applicable\", \"run_id\": null, \"scientific_evidence_eligible\": false, \"scope\": \"Generated software fixture only.\", \"summary\": \"Synthetic source-assessment fixture with inconclusive direction; no scientific conclusion.\", \"uncertainty\": \"Generated toy fixture; no inferential uncertainty estimate or real-world measurement is supplied.\", \"uncertainty_path\": \"\", \"validation_tags\": [\"source_assessment\"]}}\n"
+    },
+    {
+      "after": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/datasets/synthetic-dataset.json": "a70cdbcf4677ade44663d43188f621e4d4d5513924b04e757f1e51d6952739f2",
+          "inquiries/synthetic-bridge-pilot/evidence/evd-7c270dcf32df.json": "b9a386ea33144cab286e206c681fce4023b31ac4b1b8e5d2ad893c2f129d5faf",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "1284c7fdba43690bc7f4052639c442c237493203438cbbacceb3aa50c90104b5",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "clm-c7a48e0fb114",
+            "aggregate_type": "claim",
+            "command": "claim.add",
+            "event_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "event_id": "evt-cfe9b90d71e44f72",
+            "payload": {
+              "claim_id": "clm-c7a48e0fb114",
+              "confidence": null,
+              "conflicts_with": [],
+              "created_at": "2026-10-05T07:26:55.697095Z",
+              "decision_owner": "",
+              "disposition": "unresolved",
+              "epistemic_layer": "unresolved",
+              "falsified_by": [],
+              "last_reviewed": null,
+              "level": "measurement_validity",
+              "parent_claims": [],
+              "scientific_content_sha256": "1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00",
+              "scope": "Generated software fixture only; no historical observation.",
+              "source_refs": [],
+              "statement": "The synthetic fixture note contains a toy value."
+            },
+            "previous_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "sequence": 2,
+            "timestamp": "2026-10-05T07:26:55.699568Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.propose",
+            "event_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "event_id": "evt-5f2263e7b41c437a",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": null,
+              "pending_review_by": null,
+              "pending_review_confidence": "",
+              "pending_review_rationale": "",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "unreviewed"
+            },
+            "previous_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "sequence": 3,
+            "timestamp": "2026-10-05T07:26:55.781232Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.stage_pending_review",
+            "event_hash": "971d66cb6ed5bcac364add106fb53b6aeaba6371d826386d8f06b6ba45db63f7",
+            "event_id": "evt-433dcbe38f674732",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": "2026-10-05T07:26:55.838082Z",
+              "pending_review_by": "codex-synthetic-fixture",
+              "pending_review_confidence": "high",
+              "pending_review_rationale": "Complete synthetic software fixture for exploratory export checks only; human review remains pending.",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "pending_review"
+            },
+            "previous_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "sequence": 4,
+            "timestamp": "2026-10-05T07:26:55.839576Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-dataset",
+            "aggregate_type": "dataset",
+            "command": "dataset.register",
+            "event_hash": "af6aa598091ab62b4595fbe891de825f10d74b2006ce0fafafa1c753428a185b",
+            "event_id": "evt-25dd930b510348fe",
+            "payload": {
+              "artifacts": [
+                {
+                  "locator": "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/synthetic-fixture.csv",
+                  "media_type": "",
+                  "metadata": {},
+                  "sha256": "1a80986111952a11d02e84dbed98ae00f279469aad0615d17fa81911f8a6b428",
+                  "size_bytes": 8
+                }
+              ],
+              "created_at": "2026-10-05T07:26:55.937141Z",
+              "dataset_id": "synthetic-dataset",
+              "description": "Software fixture only; not an acquired observation.",
+              "metadata": {
+                "dataset_payload_sha256": "04a91059e715a5f45ed406b3fa6925b23ca8ff14578059e0eea6f5ed6048b55c"
+              },
+              "name": "Generated synthetic toy source",
+              "observation_unit": "",
+              "protocol_id": null,
+              "quality_attestations": [],
+              "role": "exploratory",
+              "source_dataset_ids": [],
+              "synthetic": true
+            },
+            "previous_hash": "971d66cb6ed5bcac364add106fb53b6aeaba6371d826386d8f06b6ba45db63f7",
+            "sequence": 5,
+            "timestamp": "2026-10-05T07:26:55.938513Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "evd-7c270dcf32df",
+            "aggregate_type": "evidence",
+            "command": "evidence.record",
+            "event_hash": "cf32a14b250f63afc78a15fe204bcd67e9f64ae6627e0535b536fd1796b40b33",
+            "event_id": "evt-a6657ed40e9f45f4",
+            "payload": {
+              "admission_checks": {},
+              "analysis_claim_ceiling": "",
+              "analysis_id": "synthetic-source-assessment",
+              "analysis_output_sha256": "",
+              "claim_id": "clm-c7a48e0fb114",
+              "controls_failed": [],
+              "controls_passed": [],
+              "created_at": "2026-10-05T07:26:55.996558Z",
+              "dataset_id": "synthetic-dataset",
+              "direction": "inconclusive",
+              "effect_estimate": "",
+              "effect_estimate_path": "",
+              "evidence_id": "evd-7c270dcf32df",
+              "exploratory": true,
+              "higher_level_conclusions_unsupported": [
+                "Every real-world scientific, historical, causal, and legal conclusion."
+              ],
+              "hypothesis_id": "hyp-842f110ffe83",
+              "measurement_validity_check_ids": [],
+              "protocol_id": null,
+              "result_direction_check": "not_applicable",
+              "run_id": null,
+              "scientific_evidence_eligible": false,
+              "scope": "Generated software fixture only.",
+              "summary": "Synthetic source-assessment fixture with inconclusive direction; no scientific conclusion.",
+              "uncertainty": "Generated toy fixture; no inferential uncertainty estimate or real-world measurement is supplied.",
+              "uncertainty_path": "",
+              "validation_tags": [
+                "source_assessment"
+              ]
+            },
+            "previous_hash": "af6aa598091ab62b4595fbe891de825f10d74b2006ce0fafafa1c753428a185b",
+            "sequence": 6,
+            "timestamp": "2026-10-05T07:26:55.998433Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/datasets/synthetic-dataset.json": "a70cdbcf4677ade44663d43188f621e4d4d5513924b04e757f1e51d6952739f2",
+          "inquiries/synthetic-bridge-pilot/evidence/evd-7c270dcf32df.json": "b9a386ea33144cab286e206c681fce4023b31ac4b1b8e5d2ad893c2f129d5faf",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "argv": [
+        "--workspace",
+        "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/workspace",
+        "--actor",
+        "codex-synthetic-fixture",
+        "--json",
+        "evidence",
+        "record",
+        "--hypothesis",
+        "hyp-842f110ffe83",
+        "--claim",
+        "clm-c7a48e0fb114",
+        "--direction",
+        "contradicts",
+        "--summary",
+        "Synthetic source-assessment fixture with contradicts direction; no scientific conclusion.",
+        "--dataset",
+        "synthetic-dataset",
+        "--analysis",
+        "synthetic-source-assessment",
+        "--uncertainty",
+        "Generated toy fixture; no inferential uncertainty estimate or real-world measurement is supplied.",
+        "--scope",
+        "Generated software fixture only.",
+        "--higher-conclusion-unsupported",
+        "Every real-world scientific, historical, causal, and legal conclusion.",
+        "--validation-tag",
+        "source_assessment"
+      ],
+      "before": {
+        "files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/datasets/synthetic-dataset.json": "a70cdbcf4677ade44663d43188f621e4d4d5513924b04e757f1e51d6952739f2",
+          "inquiries/synthetic-bridge-pilot/evidence/evd-7c270dcf32df.json": "b9a386ea33144cab286e206c681fce4023b31ac4b1b8e5d2ad893c2f129d5faf",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/ledger.jsonl": "1284c7fdba43690bc7f4052639c442c237493203438cbbacceb3aa50c90104b5",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        },
+        "ledger": [
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-bridge-pilot",
+            "aggregate_type": "inquiry",
+            "command": "inquiry.create",
+            "event_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "event_id": "evt-4418afe32a0143de",
+            "payload": {
+              "created_at": "2026-10-05T07:26:55.633976Z",
+              "current_synthesis_path": null,
+              "decision_change_criteria": [],
+              "decision_owner": "",
+              "decision_to_support": "",
+              "initial_statement": "Does this toy bridge retain declared software-fixture limitations?",
+              "inquiry_id": "synthetic-bridge-pilot",
+              "minimum_evidence": "",
+              "status": "clarifying",
+              "title": "Synthetic bridge plumbing fixture"
+            },
+            "previous_hash": null,
+            "sequence": 1,
+            "timestamp": "2026-10-05T07:26:55.642597Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "clm-c7a48e0fb114",
+            "aggregate_type": "claim",
+            "command": "claim.add",
+            "event_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "event_id": "evt-cfe9b90d71e44f72",
+            "payload": {
+              "claim_id": "clm-c7a48e0fb114",
+              "confidence": null,
+              "conflicts_with": [],
+              "created_at": "2026-10-05T07:26:55.697095Z",
+              "decision_owner": "",
+              "disposition": "unresolved",
+              "epistemic_layer": "unresolved",
+              "falsified_by": [],
+              "last_reviewed": null,
+              "level": "measurement_validity",
+              "parent_claims": [],
+              "scientific_content_sha256": "1a3202f159d1d6a09ed140e90f8d73bf7119a3b457c9f457e744579eebf45b00",
+              "scope": "Generated software fixture only; no historical observation.",
+              "source_refs": [],
+              "statement": "The synthetic fixture note contains a toy value."
+            },
+            "previous_hash": "ff5ab70d5836db783c7ecc0dd220faeb582ce0c877fc0ccdda422e25ecf80352",
+            "sequence": 2,
+            "timestamp": "2026-10-05T07:26:55.699568Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.propose",
+            "event_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "event_id": "evt-5f2263e7b41c437a",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": null,
+              "pending_review_by": null,
+              "pending_review_confidence": "",
+              "pending_review_rationale": "",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "unreviewed"
+            },
+            "previous_hash": "8a14d76de06baad6938fd691cabd0387eacf60f8edea6ed0a1f2762e846984a4",
+            "sequence": 3,
+            "timestamp": "2026-10-05T07:26:55.781232Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "hyp-842f110ffe83",
+            "aggregate_type": "hypothesis",
+            "command": "hypothesis.stage_pending_review",
+            "event_hash": "971d66cb6ed5bcac364add106fb53b6aeaba6371d826386d8f06b6ba45db63f7",
+            "event_id": "evt-433dcbe38f674732",
+            "payload": {
+              "activated_at": null,
+              "boundary_conditions": [
+                "No real-world inference is permitted."
+              ],
+              "causal_direction": "",
+              "competing_models": [
+                "The toy note contains a different value."
+              ],
+              "contrast_definition": "",
+              "contrast_groups": [],
+              "covariates": [],
+              "created_at": "2026-10-05T07:26:55.778335Z",
+              "evidence_assessment": "unassessed",
+              "expected_effect_direction": "",
+              "falsification_conditions": [
+                "The generated note contains only value 2."
+              ],
+              "generated_by": "codex",
+              "hypothesis_id": "hyp-842f110ffe83",
+              "known_confounds": [],
+              "lineage": [],
+              "null_model": "The toy note does not contain value 1.",
+              "observable_prediction": "The generated toy note contains value 1.",
+              "parent_claims": [
+                "clm-c7a48e0fb114"
+              ],
+              "pending_review_at": "2026-10-05T07:26:55.838082Z",
+              "pending_review_by": "codex-synthetic-fixture",
+              "pending_review_confidence": "high",
+              "pending_review_rationale": "Complete synthetic software fixture for exploratory export checks only; human review remains pending.",
+              "primary_estimand": "",
+              "replication_state": "untested",
+              "required_replications": null,
+              "retirement": null,
+              "scientific_content_sha256": "5558cb8076dbd938ddac258b022c103d270de1b7d38a58b5b56e7cd9cd944b9f",
+              "scope": "Generated software fixture only.",
+              "source_context": [],
+              "statement": "The synthetic toy observation remains unresolved.",
+              "support_conditions": [
+                "The generated note retains value 1."
+              ],
+              "time_window": "",
+              "workflow_state": "pending_review"
+            },
+            "previous_hash": "e7597468b24a4bd5e669c5c58d7a46df24934bd08324b9e2846b6078bc406ab4",
+            "sequence": 4,
+            "timestamp": "2026-10-05T07:26:55.839576Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "synthetic-dataset",
+            "aggregate_type": "dataset",
+            "command": "dataset.register",
+            "event_hash": "af6aa598091ab62b4595fbe891de825f10d74b2006ce0fafafa1c753428a185b",
+            "event_id": "evt-25dd930b510348fe",
+            "payload": {
+              "artifacts": [
+                {
+                  "locator": "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01/synthetic-fixture.csv",
+                  "media_type": "",
+                  "metadata": {},
+                  "sha256": "1a80986111952a11d02e84dbed98ae00f279469aad0615d17fa81911f8a6b428",
+                  "size_bytes": 8
+                }
+              ],
+              "created_at": "2026-10-05T07:26:55.937141Z",
+              "dataset_id": "synthetic-dataset",
+              "description": "Software fixture only; not an acquired observation.",
+              "metadata": {
+                "dataset_payload_sha256": "04a91059e715a5f45ed406b3fa6925b23ca8ff14578059e0eea6f5ed6048b55c"
+              },
+              "name": "Generated synthetic toy source",
+              "observation_unit": "",
+              "protocol_id": null,
+              "quality_attestations": [],
+              "role": "exploratory",
+              "source_dataset_ids": [],
+              "synthetic": true
+            },
+            "previous_hash": "971d66cb6ed5bcac364add106fb53b6aeaba6371d826386d8f06b6ba45db63f7",
+            "sequence": 5,
+            "timestamp": "2026-10-05T07:26:55.938513Z"
+          },
+          {
+            "actor": "codex-synthetic-fixture",
+            "aggregate_id": "evd-7c270dcf32df",
+            "aggregate_type": "evidence",
+            "command": "evidence.record",
+            "event_hash": "cf32a14b250f63afc78a15fe204bcd67e9f64ae6627e0535b536fd1796b40b33",
+            "event_id": "evt-a6657ed40e9f45f4",
+            "payload": {
+              "admission_checks": {},
+              "analysis_claim_ceiling": "",
+              "analysis_id": "synthetic-source-assessment",
+              "analysis_output_sha256": "",
+              "claim_id": "clm-c7a48e0fb114",
+              "controls_failed": [],
+              "controls_passed": [],
+              "created_at": "2026-10-05T07:26:55.996558Z",
+              "dataset_id": "synthetic-dataset",
+              "direction": "inconclusive",
+              "effect_estimate": "",
+              "effect_estimate_path": "",
+              "evidence_id": "evd-7c270dcf32df",
+              "exploratory": true,
+              "higher_level_conclusions_unsupported": [
+                "Every real-world scientific, historical, causal, and legal conclusion."
+              ],
+              "hypothesis_id": "hyp-842f110ffe83",
+              "measurement_validity_check_ids": [],
+              "protocol_id": null,
+              "result_direction_check": "not_applicable",
+              "run_id": null,
+              "scientific_evidence_eligible": false,
+              "scope": "Generated software fixture only.",
+              "summary": "Synthetic source-assessment fixture with inconclusive direction; no scientific conclusion.",
+              "uncertainty": "Generated toy fixture; no inferential uncertainty estimate or real-world measurement is supplied.",
+              "uncertainty_path": "",
+              "validation_tags": [
+                "source_assessment"
+              ]
+            },
+            "previous_hash": "af6aa598091ab62b4595fbe891de825f10d74b2006ce0fafafa1c753428a185b",
+            "sequence": 6,
+            "timestamp": "2026-10-05T07:26:55.998433Z"
+          }
+        ],
+        "scientific_files": {
+          "inquiries/synthetic-bridge-pilot/claims.json": "3ed000a0ec6bd178e771f8f33ed0ecf7c703f20cc8b600938c9b26113b9518f7",
+          "inquiries/synthetic-bridge-pilot/datasets/synthetic-dataset.json": "a70cdbcf4677ade44663d43188f621e4d4d5513924b04e757f1e51d6952739f2",
+          "inquiries/synthetic-bridge-pilot/evidence/evd-7c270dcf32df.json": "b9a386ea33144cab286e206c681fce4023b31ac4b1b8e5d2ad893c2f129d5faf",
+          "inquiries/synthetic-bridge-pilot/hypotheses/pending_review/hyp-842f110ffe83.json": "428cc703027bc4694dfe201026f8725ad62f11de0846a058b5875f61ee50928f",
+          "inquiries/synthetic-bridge-pilot/inquiry.json": "853db805e811e5e3a729c2d950cc681cf343f851b6499b10141f633faaa554c0",
+          "inquiries/synthetic-bridge-pilot/questions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "workspace.json": "8b224efecc5a86ebad9675508303d35b38a0fde5164ed0cf44140fe35255fa48"
+        }
+      },
+      "exit_code": 2,
+      "label": "evidence-contradicts",
+      "response": null,
+      "stderr": "usage: research evidence record [-h] --hypothesis HYPOTHESIS\n                                --direction {supports,weakens,refutes,inconclusive}\n                                --summary SUMMARY [--dataset DATASET]\n                                [--run RUN] [--analysis ANALYSIS]\n                                [--claim CLAIM]\n                                [--effect-estimate EFFECT_ESTIMATE]\n                                [--uncertainty UNCERTAINTY]\n                                [--analysis-output-sha256 ANALYSIS_OUTPUT_SHA256]\n                                [--effect-estimate-path EFFECT_ESTIMATE_PATH]\n                                [--uncertainty-path UNCERTAINTY_PATH]\n                                --scope SCOPE\n                                [--control-passed CONTROL_PASSED]\n                                [--control-failed CONTROL_FAILED]\n                                --higher-conclusion-unsupported HIGHER_CONCLUSION_UNSUPPORTED\n                                --validation-tag {source_assessment,calibration,internal_consistency,controlled_benchmark,independent_replication,known_result_reproduction,novel_prediction,empirical_test,causal_estimate}\n                                [--confirmatory] [--inquiry INQUIRY]\nresearch evidence record: error: argument --direction: invalid choice: 'contradicts' (choose from supports, weakens, refutes, inconclusive)\n",
+      "stdout": ""
+    }
+  ],
+  "engine_pins_before": {
+    "examples/sherlock-bridge-link.json": "34368d23dabb42eeeecbc61340d62435affa631d54dcf4fe9e5bbcff16c9f736",
+    "schemas/sherlock-bridge-link.schema.json": "10400ded1ce9cb771197c4e63eb56d8b122798af9f6c6c6dfb020c24c2b9f662",
+    "sherlock-integration/.gitignore": "7a3a6c3e50cb75fd8aadb61931d51f311572a45b280e2cf1891b9c8bea66856f",
+    "sherlock-integration/CHARTER.md": "158aaed7b482924f6f812ade62424cafa0de75a1cce1f6ff18065386b6315f01",
+    "sherlock-integration/project.json": "b84ebae67bc9625c476c33b8adbc8e4a1951d1e36d7c79d13206c868d1ad1d45",
+    "src/research_machine/adapters/filesystem.py": "5b9f428f5f281e517de801f90b46bb14b27d834a05de306f3a77c4bad77bfde4",
+    "src/research_machine/addons/registry.py": "e99e60426bd75c40f4642bd1e8a6312d76d3581c60d92234d093dbae354bc5fb",
+    "src/research_machine/application/evidence_admission.py": "6d90cf52f0684801c471aac4568374a3f170bd16cadb1e2d90f9870b34f5a4ef",
+    "src/research_machine/application/service.py": "e739b18f1ca97814d1c6f001435e38280948f66480a9be5310ba520f9c20c933",
+    "src/research_machine/application/sherlock_bridge.py": "18a9bba79cbde0df917bdceea592d59c8513a53fcac07ec9571c95e8df5eac79",
+    "src/research_machine/domain/models.py": "bb2eb70b9a2247c38729d02b82ed04a6284d77b482eaf7ed585c7920914ad6a6",
+    "src/research_machine/interfaces/cli.py": "5fdfed7b4bd63ac9d51df1b6701a1775314daa91d6918ba396a9cf0a9aec67aa",
+    "tests/test_sherlock_bridge.py": "6787df5978a7f273c6df153dd0e0951141182400867ad2d7418bc6a81e17ccbe"
+  },
+  "expected_denials": [
+    {
+      "detail": "/private/tmp/wtc7-faraday-pilot.eGMyO9/guard-refused-matrix-run01",
+      "event": "open",
+      "expected_control": "outside_write"
+    },
+    {
+      "detail": "/private/tmp/wtc7-faraday-pilot.eGMyO9/guard-refused-matrix-run01",
+      "event": "os.symlink",
+      "expected_control": "outside_symlink"
+    },
+    {
+      "detail": "network, process creation, or native foreign-call access",
+      "event": "socket.__new__",
+      "expected_control": "network"
+    },
+    {
+      "detail": "network, process creation, or native foreign-call access",
+      "event": "subprocess.Popen",
+      "expected_control": "subprocess"
+    }
+  ],
+  "fatal_error": "Traceback (most recent call last):\n  File \"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/faraday-bridge-pilot-2026-10-05/verify_bridge.py\", line 426, in main\n    getattr(pilot, args.mode)()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/faraday-bridge-pilot-2026-10-05/verify_bridge.py\", line 296, in matrix\n    evidence[direction] = self.call(\"evidence-\" + direction, [\"evidence\", \"record\", \"--hypothesis\", self.hypothesis[\"hypothesis_id\"],\n                          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        \"--claim\", self.claim[\"claim_id\"], \"--direction\", direction, \"--summary\", f\"Synthetic source-assessment fixture with {direction} direction; no scientific conclusion.\",\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        \"--dataset\", self.dataset[\"dataset_id\"], \"--analysis\", \"synthetic-source-assessment\", \"--uncertainty\", self.uncertainty,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        \"--scope\", \"Generated software fixture only.\", \"--higher-conclusion-unsupported\", \"Every real-world scientific, historical, causal, and legal conclusion.\",\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        \"--validation-tag\", \"source_assessment\"], required=True)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/faraday-bridge-pilot-2026-10-05/verify_bridge.py\", line 194, in call\n    require(code == 0 and record[\"response\"] and record[\"response\"].get(\"ok\") is True,\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n            f\"required setup/inspection command failed: {label}\")\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/faraday-bridge-pilot-2026-10-05/verify_bridge.py\", line 57, in require\n    raise RuntimeError(message)\nRuntimeError: required setup/inspection command failed: evidence-contradicts\n",
+  "format_version": 1,
+  "guard_controls": {
+    "allowed_inroot_symlink": true,
+    "allowed_local_write": true,
+    "allowed_temporary_replace": true,
+    "denied_controls": [
+      "outside_write",
+      "outside_symlink",
+      "network",
+      "subprocess"
+    ]
+  },
+  "invocation": [
+    "/Users/admin/.pyenv/versions/3.13.7/bin/python3",
+    "-I",
+    "-B",
+    "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation/research/sherlock-wtc7-investigation/faraday-bridge-pilot-2026-10-05/verify_bridge.py",
+    "--mode",
+    "matrix",
+    "--run-root",
+    "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01"
+  ],
+  "mode": "matrix",
+  "passed": false,
+  "protocol_erratum_sha256": "727bc53e3ee790cfc560630f237297f1ce25ace83596ba293793d4b98096acf8",
+  "protocol_sha256": "d6b9a077c97dc2b207a587739f7e697f1b94c055bedee1f7a536c022da2569da",
+  "run_root": "/private/tmp/wtc7-faraday-pilot.eGMyO9/matrix-run01",
+  "runner_sha256": "b5b6fac51b2785af156eca0542771028f44df2b5017b2476849e25d4305bb3df",
+  "runtime": {
+    "executable": "/Users/admin/.pyenv/versions/3.13.7/bin/python3",
+    "packages": {
+      "jsonschema": "4.25.1",
+      "pytest": "8.4.2"
+    },
+    "python": "3.13.7 (main, Oct 24 2025, 00:40:52) [Clang 17.0.0 (clang-1700.0.13.5)]"
+  },
+  "stdout_log_sha256": "0204b856ab5e9f2c494acaed18d3a2d45d65970fea7c8a2532883dc4b4e2c639",
+  "unexpected_denials": []
+}

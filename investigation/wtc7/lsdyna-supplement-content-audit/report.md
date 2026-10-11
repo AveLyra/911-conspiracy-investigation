@@ -128,6 +128,6 @@ Neither mismatch proves a defective search or an altered model. Both are reasons
 2. **Agency crosswalk.** Ask whether these six files are the 2010 Case B Impact releases; where `Damage_Global_ANSYS_CaseB_4.1hr.k`, `WTC7-1.int`, and the 3.5-hour damage list sit; and whether `G6A_CaseA_El_Delete_List` is impact damage, Case A, or unused.
 3. **Do not execute the model** as intake or as a causal test. A later executable protocol would need an explicit termination/restart choice, the missing or substituted damage file, solver version, and a plan that treats comments as data. That is a separate approval.
 
-Indexed IDs: [released-file discrepancy index](../released-file-discrepancy-index/README.md) (`DISC-001`–`DISC-029`). Investigation and case implications: [discrepancy-implications.md](discrepancy-implications.md).
+Indexed IDs: [released-file discrepancy index](../released-file-discrepancy-index/README.md) (`DISC-001`–`DISC-028`). Investigation and case implications: [discrepancy-implications.md](discrepancy-implications.md).
 
 No source, exhibit, fact, timeline, pleading, or outbound message was changed by this audit.

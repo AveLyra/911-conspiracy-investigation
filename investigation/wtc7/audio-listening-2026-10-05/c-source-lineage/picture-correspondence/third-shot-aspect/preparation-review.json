@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "method_feasible_subject_to_pre_score_controls_not_historical_go",
+  "date": "2026-10-08",
+  "reviewer": "admission_method_review",
+  "scope": "Prior-informed independent method/code inspection, not source acquisition, new image scoring, listening, human acceptance or engineering opinion.",
+  "reviewed_sha256": {
+    "/Users/admin/docs/911/AGENTS.md": "934437bfc0ddbe522cc73461819593706d12c0644cb306d263d9f1fe3914a857",
+    "/Users/admin/docs/911/research/sherlock-wtc7-investigation/CHARTER.md": "54a4a23558a6b1ed756d3398e9e58d0972c6e531aadef5cd4027f29c4b9756bd",
+    "PROTOCOL.md": "bc369159ff6aa3f71e204e72f9c01eb8749e81008f8271b83f8f31d0ca7ddc25",
+    "../PROTOCOL.md": "d0609694559608ffa87ab517e4b4ca3ea2c0e5bc9556a0458ee0faee103fd120",
+    "../report.md": "837ca98947b392334cb662a2962cbca42b22ac12c64636b7668972caa140e0fe",
+    "../config.json": "56efd21495ef21b37df9137438f0b53183a120b59b1b43eb0f498b4ac47d65b2",
+    "../picture_screen.py": "f5d2c75f758da5f3bdf63bd4b8b38d2eba1897aa6a52c37e93f6f91559d44f86",
+    "../test_picture_screen.py": "8225adf3e4fbc15292e9e439927a8e581a4c15a1ad819c625d584674e67f7c43",
+    "../independent_check.py": "56784c9f63ea2f8fc775e0d6d77635a80ea1dc3b4aff5dd9326d954272afa2ef",
+    "../../../../peskin-figure-correspondence/match_screen.py": "06a400fbb378dfa710dd86799792f8f615a40eea19e82c23b9f3e0592a3b64a8"
+  },
+  "decision": "Exactly two matched first-static-fit arms are justified. The fixed factor corrects a known relative distortion introduced by the declared digital-raster normalization, without asserting the original camera geometry. No method defect requiring protocol revision was found.",
+  "derivation": {
+    "unrounded_native_horizontal_magnification": "(950/320)*s",
+    "unrounded_native_vertical_magnification": "(720/224)*s*f",
+    "fixed_height_factor": "(950/320)/(720/224)=133/144",
+    "baseline_relative_vertical_to_horizontal": "144/133",
+    "actual_horizontal_magnification": "950*sw/(180*320)",
+    "actual_vertical_magnification": "720*sh/(120*224)",
+    "candidate_native_edge_x": "320*(left+i+1/2-canvas_x)/sw",
+    "candidate_native_edge_y": "224*(top+j+1/2-canvas_y)/sh",
+    "reference_native_edge_x": "165+950*(i+1/2)/180",
+    "reference_native_edge_y": "720*(j+1/2)/120",
+    "mapping_limit": "These are geometric pixel-center maps. Two-stage bilinear filtering and intermediate integer pixels are not equivalent to a single continuous-point intensity sample."
+  },
+  "geometry_only_oracles": {
+    "corrected_sizes_and_origins": [
+      {"scale": "3/4", "size": [135, 83], "origin": [47, 43]},
+      {"scale": "1", "size": [180, 111], "origin": [25, 29]},
+      {"scale": "7/4", "size": [315, 194], "origin": [-43, -12]}
+    ],
+    "fit_mask": {"x_inclusive": [118, 169], "y_inclusive": [13, 104], "pixels": 4784},
+    "static_evaluation_mask": {"x_inclusive": [5, 51], "y_inclusive": [82, 110], "pixels": 1363},
+    "dynamic_mask": {"x_inclusive": [59, 99], "y_inclusive": [10, 55], "pixels": 1886},
+    "quantization_limit": "Actual rounded magnifications, centered origins and clipping must be retained; requested scale alone is not the native map."
+  },
+  "resolved_design_risks": [
+    "Both new arms fit only the first inherited static rectangle. Old combined-static results remain history, not a like-for-like control.",
+    "The same core.working then canvas-resize pipeline is retained in both arms. Direct native resizing or letterboxing is not silently introduced.",
+    "Static evaluation and dynamic regions are withheld from transform estimation, not genuinely unseen data; previous score and scene familiarity is disclosed.",
+    "Different valid pixels can change correlation even at identical coverage counts. The protocol retains set equality and common-valid-pixel diagnostics with the full-mask denominator and unchanged gates; no refit or ranking from that diagnostic.",
+    "Top-two fits, all rankings, near-best sets, nulls and boundary leaders remain visible. Source ordering is descriptive, not a clock or unique correspondence."
+  ],
+  "strongest_objection": "Native access-raster aspect is not necessarily true scene aspect. Existing transfers can already contain anisotropic scaling, cropping, pixel-aspect changes, perspective or parallax. One tall repetitive facade can fit spuriously, and the other facade may occupy a different depth or be occluded. Broad evolving cloud can correlate at nearby times or cameras. Corrected-arm gains therefore demonstrate sensitivity to this declared processing choice, not that the correction reconstructs true geometry or proves shared exposure.",
+  "pre_historical_checks_required_not_yet_run_by_this_reviewer": [
+    "Pinned source/config/method/runtimes and all 41 selected PNGs/PTS before and after.",
+    "Fresh inherited core/adapter controls and new factor-one equivalence, exact size/origin/mask/mapping, padding/clipping and null/tie controls.",
+    "Known aspect and changed-evaluation synthetic counterexamples, including unchanged fitting scores with conflicting evaluation detail.",
+    "Independent selected-fit/evaluation/common-support direct arithmetic within score1e-9 and coverage1e-12, complete saved-surface top-two selection and all228 arm-pair memberships.",
+    "Two-run product identity, input omission/stale-control rejection and exclusive-write refusal."
+  ],
+  "finite_stop": "Exactly C14/C19/C24 times all38 early samples in both fixed arms; two runs capped at600 seconds and384 MiB each, followed by independent arithmetic and at most36 unique shortlisted early images plus three C references. Stop for positive, mixed, null or failed results. No automatic finer-time search, additional aspect/warp family, audio alignment or time-map fitting.",
+  "claim_ceiling": "A reproduced, prior-informed processing-sensitivity result and qualified picture-correspondence lead or limitation. No sound authenticity, original-capture speed, continuous-source authentication, historical clock, physical mechanism or cause ranking.",
+  "actions_performed": "Read-only cat/sed/rg inspections and SHA256 checks; elementary dimension/mask-center calculations only. No new historical score, source decoding, source annotation, acquisition or external action.",
+  "skills_applied": ["evidence-falsification-auditor", "source-of-truth-guardian", "development-verification"],
+  "historical_execution_authorized_by_this_review": false,
+  "human_accepted": false
+}

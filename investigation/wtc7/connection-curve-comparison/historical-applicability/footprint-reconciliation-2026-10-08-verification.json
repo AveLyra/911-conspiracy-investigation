@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-08",
+  "status": "completed_existing_evidence_reconciliation_with_checked_scope_and_preserved_limits",
+  "worktree": "/Users/admin/docs/911-worktrees/sherlock-wtc7-investigation",
+  "branch": "research/sherlock-wtc7-investigation",
+  "base_head": "ca1c223335c20905d6608eb15c676f88cbfac734",
+  "previous_goal_turn": "Progress: last fixed annotation batch and full separate computational audit completed, including preserved failed versions.",
+  "current_goal_turn": "Progress: all fourteen pairs' completed footprints reconciled with earlier full-region inventories; exact residual coverage and distinct bounds/identity barriers recorded.",
+  "authority": "Main investigation CHARTER; parent source/numerical/registration and actual-human controls. This versioned supplement does not modify frozen protocols, observations, original reports or legal sources.",
+  "scope": "Read-only inspection of existing source-annotation artifacts, their coverage and interpretation limits. No fresh historical source pixels, mathematical-curve estimates, support domains or discrepancy results.",
+  "counts": {
+    "completed_regions": 17,
+    "original_readings": 34,
+    "original_route_records": 10840,
+    "pairs": 14,
+    "record_count_limits": "Annotation coverage counts, not independently observed curves or accepted physical measurements; E3 correction is not an additional original reading."
+  },
+  "results": {
+    "artifact_pins": {
+      "footprint-reconciliation-2026-10-08.json": {
+        "bytes": 57421,
+        "sha256": "ed4a1ded5e53b7d102c9462f5f939883640359da5c0472220a92fbba1b7a354e"
+      },
+      "footprint-reconciliation-2026-10-08.md": {
+        "bytes": 9755,
+        "sha256": "047dbad8f7895498c4543a66a378035a4ab51af681f2b7a81f3034e9e3b3eb8f"
+      }
+    },
+    "document_whitespace": "passed",
+    "existing_local_links": 19,
+    "input_pins": 75,
+    "intended_slots": 42,
+    "original_readings": 34,
+    "original_regions": 17,
+    "original_route_records": 10840,
+    "pairs": 14,
+    "pairs_with_both_style_candidates": [
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "E5",
+      "E6",
+      "E7",
+      "E8",
+      "E9"
+    ],
+    "pending_verification_link_count": 1,
+    "quantile_targets_selected": false,
+    "status": "passed"
+  },
+  "commands": [
+    {
+      "receipt": "4ff3c4",
+      "operation": "Initial read-only Python stdin inventory",
+      "exit_code": 1,
+      "result": "KeyError: target_box when the routine encountered an older reader's explicit coverage.target_box field. Stopped without saving an output.",
+      "preservation": "Tool execution record preserves the failed stdin command; no script revision or new scientific artifact was created. The target-schema assumption, not source annotation, was corrected."
+    },
+    {
+      "receipts": [
+        "dfe44c",
+        "a533e2"
+      ],
+      "operation": "Read-only explicit JSON-schema inspection",
+      "exit_code": 0,
+      "result": "Confirmed top-level target_box, nested coverage.target_box and target_rectangle_half_open variants; F3 uses its fixed protocol plus route/column observations."
+    },
+    {
+      "receipt": "c336bb",
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B - <<'PY'\nfrom pathlib import Path\nimport hashlib,json\nbase=Path.cwd()\nroster=json.loads((base/'native-footprint-pass/REGIONS.json').read_text())\nbyid={p['id']:p for p in roster['pairs']}\ndef pin(name):\n    raw=(base/name).read_bytes();return {'sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw)}\npins={}\ndef take(name):\n    pins[name]=pin(name);return json.loads((base/name).read_text())\nrows=[]\nfor pair in byid:\n    if pair=='F3':\n        regions=[['Im4',270,0,360,88]]\n        folder='f3-descending-corridor'\n        report=folder+'/report.md';verify=folder+'/final-verification.json'\n    else:\n        regions=byid[pair]['new_regions']\n        folder='native-footprint-pass'\n        if pair in ['E3','E4','E5']:folder+='/energy345'\n        elif pair in ['E8','E9']:folder+='/energy89'\n        elif pair in ['F4','F5']:folder+='/force45'\n        elif pair in ['F6','F7','F8','F9']:folder+='/force69'\n        report=folder+('/report-e45.md' if pair in ['E4','E5'] else '/report.md')\n        verify=folder+('/verification-e45.json' if pair in ['E4','E5'] else '/verification.json')\n    completed=[]\n    for region in regions:\n        source,*box=region\n        if pair=='F3':names=[folder+'/reader-root.json',folder+'/reader-independent.json']\n        elif pair.startswith('F'):names=[f'{folder}/reader-{pair}-{source}-primary.json',f'{folder}/reader-{pair}-{source}-peer.json']\n        else:names=[f'{folder}/reader-{pair}-root.json',f'{folder}/reader-{pair}-independent.json']\n        readers=[]\n        expected=(box[2]-box[0])*2\n        for name in names:\n            value=take(name)\n            if pair=='F3':\n                records=value['observations']\n                assert len(records)==expected\n                assert sorted((x['route'],x['column']) for x in records)==sorted((r,x) for r in ['solid','dash'] for x in range(270,360))\n                box_field='f3-descending-corridor/PROTOCOL.md: fixed inclusive columns 270..359, rows 0..87'\n            else:\n                if 'target_box' in value:\n                    declared=value['target_box'];box_field='target_box'\n                elif name=='native-footprint-pass/reader-E7-independent.json':\n                    declared=value['target_rectangle_half_open'];box_field='target_rectangle_half_open'\n                elif name in ['native-footprint-pass/energy345/reader-E3-independent.json','native-footprint-pass/energy345/reader-E4-independent.json','native-footprint-pass/reader-E6-independent.json']:\n                    declared=value['coverage']['target_box'];box_field='coverage.target_box'\n                else:raise AssertionError('Unsupported explicit target schema: '+name)\n                assert declared==box,(name,'box')\n                assert set(value['routes'])=={'solid','dash'}\n                for records in value['routes'].values():\n                    assert [x['x'] for x in records]==list(range(box[0],box[2])),name\n                assert sum(map(len,value['routes'].values()))==expected\n            readers.append({'path':name,'route_records':expected,'target_source_field':box_field,'human_accepted_field':value.get('human_accepted','not_present'),'physical_support_field':value.get('physical_support','not_present')})\n        completed.append({'source':source,'target_box':box,'readers':readers})\n    for name in [report,verify]:pins[name]=pin(name)\n    rows.append({'pair':pair,'completed_footprints':completed,'report':report,'verification':verify})\nfor name in ['PROTOCOL.md','NUMERICAL-PROTOCOL.md','HUMAN-REVIEW-GATE.md','HUMAN-SAMPLE-SELECTION.md','human-anchor-observations-2026-10-06.md','human-legend-confirmation-2026-10-07.md','REGISTRATION-STAGE.md','registration-comparison.md','registration-method-review.md','native-footprint-pass/REGIONS.json','historical-applicability/PROTOCOL.md','historical-applicability/report.md','historical-applicability/verification.json','historical-applicability/run01.json','f3-remainder-inventory/report.md','f3-remainder-inventory/reader-root.json','f3-remainder-inventory/reader-independent.json','f3-descending-corridor/PROTOCOL.md','remaining-route-inventory/report.md','remaining-route-inventory/reader-root.json','remaining-route-inventory/reader-force.json','remaining-route-inventory/reader-energy.json','remaining-route-inventory/force-reconciliation.json','remaining-route-inventory/energy-reconciliation.json','manual-envelope-trial/report.md','manual-envelope-trial/source-applicability.json','native-footprint-pass/energy345/reader-E3-independent-corrected.json']:\n    pins[name]=pin(name)\nassert len(rows)==14\nregions=sum(len(x['completed_footprints']) for x in rows)\nreadings=sum(len(y['readers']) for x in rows for y in x['completed_footprints'])\nrecords=sum(y['route_records'] for x in rows for z in x['completed_footprints'] for y in z['readers'])\nassert (regions,readings,records)==(17,34,10840)\nprint(json.dumps({'rows':rows,'pins':pins,'counts':{'pairs':14,'completed_regions':regions,'original_readings':readings,'original_route_records':records,'record_count_limits':'Annotation coverage counts, not independently observed curves or accepted physical measurements; E3 correction is not an additional original reading.'}},sort_keys=True))\nPY",
+      "exit_code": 0,
+      "result": "All 17 regions/34 readings/10840 original route records checked; 75 input hashes and byte sizes captured."
+    },
+    {
+      "receipt": "9e0e3f",
+      "operation": "Repeat the complete inventory command above",
+      "exit_code": 0,
+      "result": "Same coverage counts and all75 input pins."
+    },
+    {
+      "receipt": "471c8d",
+      "operation": "Traverse all original route records; count identified_local_fragment records with a nonempty core separately by reader and style.",
+      "exit_code": 0,
+      "result": "Twelve pairs contain both-style candidates somewhere in their completed regions; E3/E4 contain no separate solid candidates; F7 Im1 lacks dash while Im2 has both. Label-presence evidence only, not a support-domain test."
+    },
+    {
+      "receipt": "cde739",
+      "command": "/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B - <<'PY'\nfrom pathlib import Path\nimport json,hashlib,re\nbase=Path.cwd()\np=base/'historical-applicability/footprint-reconciliation-2026-10-08.json'\nv=json.loads(p.read_text())\nexpected=[f'{panel}{n}' for panel in 'FE' for n in range(3,10)]\nassert [x['pair'] for x in v['pairs']]==expected\nfor name,pin in v['verified_input_pins'].items():\n    data=(base/name).read_bytes()\n    assert len(data)==pin['bytes'] and hashlib.sha256(data).hexdigest()==pin['sha256'],name\nslots=[]; candidates=[]\nfor pair in v['pairs']:\n    assert pair['admitted_common_support']=={'status':'not_established','intervals_m':None,'length_m':None}\n    slots.extend(pair['human_curve_samples']['intended_pair_slot_ids'])\n    present=[set(),set()]\n    for region in pair['completed_footprints']:\n        for i,reader in enumerate(region['readers']):\n            d=json.loads((base/reader['path']).read_text())\n            if pair['pair']=='F3':\n                records=d['observations']\n                for r in records:\n                    if r['status']=='identified_local_fragment' and r['core_rows']:present[i].add(r['route'])\n            else:\n                for route,records in d['routes'].items():\n                    if any(r['status']=='identified_local_fragment' and r['core'] for r in records):present[i].add(route)\n    if all(x=={'solid','dash'} for x in present):candidates.append(pair['pair'])\nassert candidates==v['annotation_candidate_presence']['pairs_with_both_style_candidates']\nassert len(slots)==len(set(slots))==42\nassert slots==[p+'Q'+str(q) for p in expected for q in range(1,4)]\nreport=base/'historical-applicability/footprint-reconciliation-2026-10-08.md'\nbody=report.read_text()\nassert [re.match(r'\\| ([FE][3-9]) \\|',line).group(1) for line in body.splitlines() if re.match(r'\\| ([FE][3-9]) \\|',line)]==expected\nlinks=0;pending=[]\nfor target,limit in [(report,None),(base.parent/'STATUS.md',40),(base/'technical-preparation.md',22),(base.parents[1]/'README.md',40)]:\n    source=target.read_text()\n    if limit:source='\\n'.join(source.splitlines()[:limit])\n    for name in re.findall(r'\\]\\(([^)]+)\\)',source):\n        if '://' in name or name.startswith('#'):continue\n        q=target.parent/name.split('#')[0]\n        if not q.exists():pending.append(str(q))\n        else:links+=1\nassert all(x.endswith('/footprint-reconciliation-2026-10-08-verification.json') for x in pending),pending\nfor q in [p,report]:assert not any(line.rstrip()!=line for line in q.read_text().splitlines()),str(q)\nprint(json.dumps({'status':'passed','input_pins':len(v['verified_input_pins']),'pairs':len(expected),'original_regions':v['counts']['completed_regions'],'original_readings':v['counts']['original_readings'],'original_route_records':v['counts']['original_route_records'],'pairs_with_both_style_candidates':candidates,'intended_slots':len(slots),'quantile_targets_selected':False,'existing_local_links':links,'pending_verification_link_count':len(pending),'document_whitespace':'passed','artifact_pins':{q.name:{'sha256':hashlib.sha256(q.read_bytes()).hexdigest(),'bytes':q.stat().st_size} for q in [p,report]}},sort_keys=True))\nPY",
+      "exit_code": 0,
+      "result": "All75 input pins, 14 ordered pair rows, 42 unique intended slot IDs, candidate-presence claims, links and whitespace passed. One verification link awaited this receipt; no quantile targets selected."
+    },
+    {
+      "receipt": "40b8f6",
+      "command": "git diff --check; git branch --show-current; git rev-parse HEAD",
+      "exit_code": 0,
+      "result": "No tracked whitespace errors; expected research branch/base."
+    }
+  ],
+  "post_creation_checks": [
+    {
+      "receipt": "1ffcc5",
+      "operation": "Rerun the saved final document-check command after creating this receipt",
+      "exit_code": 0,
+      "result": "All75 input pins unchanged; 14 pairs, 17 regions, 34 readings, 10840 records and 42 intended slots verified. Twenty local links exist and zero verification links remain pending. Both report artifact hashes and sizes unchanged; no quantile targets selected."
+    },
+    {
+      "receipt": "29ca78",
+      "operation": "Parse this receipt, recompute both artifact hashes and byte lengths, and resolve all four downstream_updates paths relative to its directory",
+      "exit_code": 0,
+      "result": "Passed after correcting three relative navigation paths; scientific artifacts and conclusions unchanged."
+    }
+  ],
+  "reviews": [
+    {
+      "reviewer": "force69_primary",
+      "scope": "F3–F9 final report and structured rows; exact original-reader pins; residual coverage, candidate presence, source bounds and acceptance limits",
+      "receipts": [
+        "0c4a51",
+        "2f267b"
+      ],
+      "result": "No discrepancy. Twenty force-reader hashes/sizes match; omitted F5 Im3 and F6 lower-Im1 candidates retained.",
+      "limit": "Read-only shared-source AI review, including bounded delegated F3–F5 cross-check; not new pixels or physical validation."
+    },
+    {
+      "reviewer": "energy_support_reconciliation",
+      "scope": "E3–E9 final report/JSON, boxes/counts, residual regions, no false whole-domain completion and E3/E5/E7 corrections",
+      "result": "No substantive discrepancy; all14 referenced original energy paths exist. Optional explicit E7 correction entry added after review using the already pinned energy reconciliation.",
+      "limit": "Read-only shared-source AI review; no new pixels or professional/human acceptance."
+    }
+  ],
+  "files_created": [
+    "footprint-reconciliation-2026-10-08.md",
+    "footprint-reconciliation-2026-10-08.json",
+    "footprint-reconciliation-2026-10-08-verification.json"
+  ],
+  "downstream_updates": [
+    "../../STATUS.md (current section replaced, not new research evidence)",
+    "../technical-preparation.md (current navigation)",
+    "../../../README.md (research map)",
+    "../../SHERLOCK-FEEDBACK.md (deduplicated generic coverage-state fixture, queued locally)"
+  ],
+  "artifact_pins": {
+    "footprint-reconciliation-2026-10-08.json": {
+      "bytes": 57421,
+      "sha256": "ed4a1ded5e53b7d102c9462f5f939883640359da5c0472220a92fbba1b7a354e"
+    },
+    "footprint-reconciliation-2026-10-08.md": {
+      "bytes": 9755,
+      "sha256": "047dbad8f7895498c4543a66a378035a4ab51af681f2b7a81f3034e9e3b3eb8f"
+    }
+  },
+  "scientific_limits": [
+    "The scope counts refer to source-annotation records, not independent historical observations.",
+    "Bounds and identity problems require different tests; no arbitrary padding or hidden-curve duplication is adopted.",
+    "Quantile selection and actual human curve review remain unperformed; earlier axes/legend confirmation stands.",
+    "Partial crop completion does not discharge the full-region recovery obligation.",
+    "No cause ranking, historical structural calculation, solver output or accepted physical metric follows."
+  ],
+  "next_task": "One finite bounds/identity admission decision from the saved footprints using existing tested geometry and strip registration, preserving conditional estimates separately from calibrated bounds. Independently retain the full outside-target inventory as recovered, specifically unresolved, or pending recovery. Do not repeat completed pixel censuses or retune samples to discrepancies.",
+  "state": {
+    "goal_active": true,
+    "goal_complete": false,
+    "human_accepted": false,
+    "legal_promotion": false,
+    "engine_activation": false,
+    "external_transmission": false,
+    "commit": false,
+    "push": false,
+    "intentional_uncommitted_work": true
+  },
+  "feedback": "Coverage-state recurrence recorded under existing SFB-004/SFB-005 fixture. Archived Sherlock destination routing remains unresolved; no delivery or claimed product fix.",
+  "skill_effect": "Source preservation retained earlier errors and corrections; evidence audit separated annotation geometry from containment and common support; repository/documentation/handoff guidance kept the supplement local with exact next work rather than creating a parallel framework."
+}

@@ -1,0 +1,26 @@
+92 
+ 
+ 
+3.3. Finite element modelling 
+3.3.1. OpenSees for fire 
+Realistic fire modelling was not done in this investigation. Chapters 4 and 5 provide a 
+thorough examination and discussion based on the CFD -based fire spread analysis by Khan 
+(2022a)The heat transfer analysis conducted on the steel and concrete sections involved 
+applying temperature-time profiles derived from the standard fire curve. The GiD+OpenSees 
+interface was employed as a post -processing tool to develop the FE model and visualiz e the 
+outcomes of the thermomechanical analysis.  
+ 
+3.3.2. Model description.  
+ GiD+OpenSees interface 
+GiD is a flexible pre- and postprocessor (Melendo et al. (2018) ) with the ability to be 
+extended for various purposes , like automation . It  provides functionalities for creating and 
+modifying geometries, generating meshes, and performing post -processing tasks. However, it 
+does not include a preconfigured numerical solver as part of its built -in features. To carry out 
+numerical analyses, including a solution engine , is necessary, such as the OpenSees for fire 
+module. This is achieved by integrating the readily available GiD interface libraries  already 
+incorporated within the software onto the existing interface. The supplementary functionality is 
+implemented as a "problem type" that permits the user to specify one of three generic objects: 
+general problem data, materials, and conditions. The GiD+OpenSees problem type, developed 
+by researchers at Aristotle University of Thessaloniki (Papanikolaou et al. (2017)), enables the 
+simulation of earthquake behaviour in structures using the combined capabilities of GiD and 
+OpenSees. 

@@ -1,0 +1,30 @@
+{
+  "status": "exploratory_candidate_components_not_admitted_support",
+  "source": "native-strips01/Im4.jpg",
+  "source_sha256": "53804060d00794d59628d6406337a6db5568bf30df63913ff4888b63082913fd",
+  "execution_receipt": "66c3c7",
+  "region_half_open": [270,0,355,88],
+  "method": "Native RGB without resampling. Chroma max-minus-min <=32; deficit 255-max >= threshold. Eight-neighbor components, all retained and ordered by lexicographic first pixel. Bounding boxes inclusive.",
+  "selection": "Single AI visually selected a separated descending part of the first fixed bolt pair. This is not quantile sample selection or a complete support inventory. All three thresholds retained.",
+  "tuple_fields": ["pixel_count","x_min","y_min","x_max","y_max"],
+  "thresholds": {
+    "32": [[257,272,0,341,87],[14,295,0,300,3],[19,301,6,306,12],[20,307,15,313,21],[18,314,23,317,30],[18,318,33,323,39],[17,324,42,328,48],[18,329,51,333,58],[19,333,60,338,67],[18,338,69,344,74],[19,346,76,352,81],[3,354,83,354,85]],
+    "64": [[208,272,0,341,87],[12,295,0,300,3],[17,301,6,306,12],[14,308,15,312,21],[13,314,24,317,29],[16,318,33,323,39],[14,324,42,327,48],[13,330,51,332,57],[15,333,60,337,66],[15,339,69,344,74],[15,346,76,351,81],[3,354,83,354,85]],
+    "96": [[176,272,0,340,87],[8,296,0,300,3],[13,301,6,305,12],[12,308,15,312,21],[11,314,24,317,29],[12,318,33,323,38],[10,324,42,327,47],[10,330,51,332,57],[11,333,61,337,66],[11,339,70,343,74],[12,346,77,351,81],[2,354,84,354,85]]
+  },
+  "interpretation": "One long and eleven short components at each threshold are consistent with proposed solid-left/dashed-right black routes. Model assignment remains unaccepted.",
+  "limits": ["Bounding boxes include background, not just stroke pixels.","Region-boundary truncation is not a physical curve endpoint.","No dash-gap or strip-seam bridging.","Local exploratory neutral-color selection is not a validated historical classifier.","No centreline, physical ordinate, calibrated uncertainty, common-domain interval or discrepancy metric."],
+  "human_reviewed": false,
+  "independent_recovery": false,
+  "separate_code_check": {
+    "status": "all_36_component_counts_and_bounds_match",
+    "receipt": "4634f5",
+    "method": "NumPy mask plus SciPy eight-connected labeling, versus original scalar set/depth-first traversal. Same analyst; not independent human identity recovery.",
+    "runtime": "Python 3.13.7; NumPy 2.3.4; SciPy 1.16.2; Pillow 12.0.0",
+    "initial_failure": "6d86ff: bundled Python lacked scipy; failed at import before image analysis. Existing installed runtime used after a5cad2 verified dependencies; no installation.",
+    "pixel_totals_threshold_32_64_96": [440,355,288],
+    "boundary_touching_component_indices_zero_based": [0,1,11],
+    "boundary_implication": "At each threshold the long stroke touches the top and bottom of the region; first short component touches top; last short component touches right. None of those edges establishes a true curve endpoint. Nine other short components are interior, but identity and pixel uncertainty remain unaccepted."
+  },
+  "quantitative_support": null
+}

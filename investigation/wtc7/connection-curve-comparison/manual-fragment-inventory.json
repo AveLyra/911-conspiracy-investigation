@@ -1,0 +1,52 @@
+{
+  "status":"partial_provisional_manual_inventory_not_admitted_support",
+  "date":"2026-10-07",
+  "reader":"Root AI; prior-informed by earlier detector proposals, not independent recovery or human acceptance",
+  "required_order":["F3","F4","F5","F6","F7","F8","F9","E3","E4","E5","E6","E7","E8","E9"],
+  "coordinate_convention":"Zero-based native pixel cells; boxes half-open [left,top,right,bottom]. Boxes are conservative proposed inspection footprints containing background, not stroke masks or calibrated uncertainty.",
+  "method":"Viewed complete unchanged native Im4, Im3 and Im5. Used earlier candidate records as locators only; no new color predicate, interpolation, physical ordinate or discrepancy calculation. Local visual cues do not establish whole-curve continuity.",
+  "pairs":[{
+    "id":"F3",
+    "coverage":"Two separately reviewed local proposals plus an unreviewed descending-dash extension and explicit unresolved route regions; incomplete full-route inventory",
+    "source":"native-strips01/Im4.jpg",
+    "source_sha256":"53804060d00794d59628d6406337a6db5568bf30df63913ff4888b63082913fd",
+    "fragments":[
+      {"id":"F3-manual-solid-01","box_half_open":[300,32,306,49],"provisional_model":"spring","cue":"Locally uninterrupted descending black stroke, separated to the left/below the broken black route. Solid style, not height alone, motivates assignment.","status":"proposed_outer_footprint_needs_independent_recovery"},
+      {"id":"F3-manual-dash-01","box_half_open":[300,4,308,15],"provisional_model":"shell","cue":"One visible short black dash with apparent gaps before and after in the descending broken route. Gap authenticity and exact endpoints remain unvalidated.","status":"proposed_single_dash_needs_independent_recovery"}
+    ],
+    "descending_dash_extension":{
+      "status":"prior_informed_locator_proposals_not_independently_measured_masks",
+      "method":"Fresh native Im4 visual check confirms a broken descending black route beside the continuous route. Earlier fragment-proposal-F3-Im4 component bounds provide navigation seeds; these expanded boxes are not an independent reproduction of those bounds or a validated ink envelope. Individual dash proposals remain separate.",
+      "provisional_model":"shell",
+      "boxes_half_open":[[306,13,315,23],[313,22,319,32],[317,31,325,41],[323,40,330,50],[328,49,335,60],[332,58,340,69],[337,68,346,76],[345,75,354,83]],
+      "cue":"Repeated short black strokes separated by apparent gaps, beside a locally continuous black descending route; no identity propagated through the crest crossing.",
+      "boundary_fragments":"The route enters at the top of Im4 and continues beyond the selected right/lower region. Those clipped pieces and all strip-seam joins remain unresolved, not curve endpoints.",
+      "acceptance":"Each box needs source-to-footprint recovery and ambiguity checks. Do not union boxes across gaps, convert bounding-box coverage into supported displacement, or count inherited locator agreement as independent evidence."
+    },
+    "unresolved_route_inventory":[
+      {"region":"Initial rise near the plot origin across Im4/Im5","state":"Crowded colored/black strokes and axis proximity; native footprint recovery not completed, not proven impossible."},
+      {"region":"Crest in Im3","state":"Existing conflict locator retained; separate pre-crossing/post-crossing identities not recovered."},
+      {"region":"Continuous descending route in Im4 outside original solid proposal","state":"Visually identifiable locally; detailed footprint and source-native uncertainty not yet recovered."},
+      {"region":"Tail in Im5 and every strip seam","state":"Axis contact, endpoints and seam continuity remain unresolved; no zero-capacity point admitted."}
+    ],
+    "conflicts":[
+      {"source":"native-strips01/Im3.jpg","source_sha256":"af735345f189bba0eab7a836c5c0c6221ab30055febd81b52b331821fe87259b","locator_half_open":[200,60,305,88],"reason":"Same-color crest approach/crossing; do not propagate either fragment's identity through this region."},
+      {"source":"native-strips01/Im5.jpg","source_sha256":"337e5f14ad7bddd0642e5f8327988ae41834042b1374b666242ea7a37ee03721","locator_half_open":[320,0,400,34],"reason":"Black descending strokes approach the axis and ticks; no endpoint, zero capacity or joined tail is admitted."}
+    ]
+  }],
+  "remaining":"Complete F3 route inventory before F4-F9 and E3-E9; retain gaps and unknowns. No completed all-pair freeze or42-slot selection.",
+  "rejection_rule":"Reject or revise a footprint that misses visible ink, overlaps an unresolved identity conflict, is hidden by composition, or admits another plausible identity. Preserve original proposals and separate reviewer corrections.",
+  "first_fragment_review":{
+    "reviewer":"/root/curve_recovery_feasibility",
+    "independence":"Separate prior-informed AI reviewer sharing context; not human acceptance or blind recovery.",
+    "method":"Reviewer inspected original-detail Im4 and complete composed page (display resized), and read raw neutral RGB values around both boxes without the previous detector predicate/component counts. Reviewer reports matching Im4 hash. Root separately viewed complete composed page.",
+    "solid_disposition":"No correction proposed: visible dark route across native columns300-305 lies approximately at rows34-43 within the box. Left/right boundaries truncate a continuing stroke and are not physical endpoints.",
+    "dash_disposition":"No correction proposed: one short visible dash principally at columns301-306, rows6-12 lies within the box; no competing route or same-color crossing identified inside it. Surrounding pattern and source legend support provisional local style.",
+    "limits":"Pale JPEG deviations outside dark strokes remain. No exact ink mask, calibrated centreline uncertainty, admitted support or whole-route continuity is established.",
+    "decision":"Retain both original proposals for continued inventory work. Do not upgrade to accepted measurements."
+  },
+  "quantitative_support":null,
+  "human_accepted":false,
+  "cause_ranking_changed":false,
+  "canonical_promotion":false
+}

@@ -19,8 +19,6 @@ That proposition is materially different from alleging that NIST's conclusion is
 | `wtc7-video-demolition-comparison.md` | Main assessment: observations, comparison, physics, inference limits, and complaint-use boundary |
 | `collapse-warning-and-premature-reporting.md` | Evidence-focused treatment of responder warnings, street audio, and premature CNN/BBC collapse reports |
 | `27-angles-audio-audit.md` | Source-level audit of the compilation's explosion language, transients, edits, and confirmed-implosion control |
-| `nist-simulation-footage-crosscheck-2026-09-30.md` | Working Exhibit A arguing that NIST's late-stage upper-exterior-motion validation is methodologically dubious; includes the review montage and source limits |
-| `review/animation-footage-comparison-2026-09-30.png` | Review-only progression sheet: simulation derivative above and Camera 3 copy below, on separate clocks |
 | `feature-matrix.csv` | Machine-readable comparison of WTC 7 with explosive, nonexplosive induced, mechanical, and accidental fire-collapse modes |
 | `source-manifest.csv` | Source provenance, intended use, and limitations |
 | `sources/` | Preserved non-NIST source documents and their checksums |
