@@ -59,3 +59,16 @@ GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/AveLyra/911-conspiracy-invest
 
 Fetch the particular assets needed for a study using `git lfs pull --include`
 with that study's paths. Avoid fetching all LFS assets into every new worktree.
+
+## Additional retained records and historical branch
+
+The [retained-record supplement](../preservation-supplement-2026-10-10/README.md)
+preserves 26 acquisition and reproducibility records kept during cleanup.
+Originals are encrypted in a private backup; public response headers omit
+session-cookie and request-trace fields. The original manifest above remains
+unchanged.
+
+The historical `backup/pre-split-20260929` branch is preserved at commit
+`7007733195fa865d2db469e00f50c575e3db2e03`. All of its file contents and LFS
+objects are already in published history. Its older status pages and findings
+are historical snapshots; current study records remain controlling.
