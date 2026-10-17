@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-17",
+  "scope": "One public source-version/access audit; original observations preserved, not a model reproduction",
+  "skills_applied": ["repo-orchestrator", "source-of-truth-guardian", "evidence-falsification-auditor", "development-verification for audit-script tests"],
+  "executed_command": "PYTHONDONTWRITEBYTECODE=1 python3 audit_access.py --repository VERIFIED_PUBLIC_CHECKOUT --output observations.json",
+  "execution_result": {"exit_code": 0, "institutional_GET_status": 200, "first_report_HEAD_status": 200, "second_report_HEAD_status": 200, "redirects": 0, "pdf_body_acquisitions": 0},
+  "tests_executed": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v test_audit_access.py",
+  "tests_passed": 7,
+  "test_scope": ["Exact pointer fields and malformed-input rejection", "HEAD retained across permitted HTTPS redirect; HTTP redirect rejected", "Synthetic HEAD response must never have its body read", "Only selected report links retained", "Saved pointer/header relationships and 2299-byte difference"],
+  "separate_checks": {"exact_previous_Git_blobs_and_literal_receipts": 5, "independent_pointer_field_parses": 2, "all_JSON_parses": "pass", "all_Python_AST_parses": "pass", "targeted_credential_private_contact_scan": "no matches; supplemented by substantive public-payload review"},
+  "pins": {"protocol_sha256": "8a6e55317a3857bb7d99b8de077290540b491b5e5c65050f9cd143aa0378517c", "observations_sha256": "e696c74cb54b7fc7aafe98a261e6c82e5db3833a1adb3581ceb2df86b6bbccb6", "audit_script_sha256": "cac982920300d0b58d7679b81d434ec1a83ba421e6047d5dc10926c6e482a042"},
+  "preserved_workflow_limits": [
+    "The old local private archival ref was not present in the active case Git database. No private history or case data was fetched. A fresh sparse research checkout was prepared from the recorded already public preservation commit instead.",
+    "The new no-checkout worktree initially had an empty index. A status command displayed apparent staged deletions; there was no deletion of source files. Initialization from preserved HEAD completed before any new files were staged, and a separate check confirmed zero staged deletions. A later commit gate requires only this run's additive paths.",
+    "The operational media resolver reported the selected historical UAF PDF absent at that operational path. No fallback to retained archives, bare LFS pull, source-PDF hydration or media rewrite was used. This infrastructure observation is not evidence of author action or historical removal.",
+    "No PDF contents, figures, equations, native cases, semantic differences or later corrections were compared. No independent reviewer, blind model test or changed causal ranking is claimed.",
+    "The full institutional HTML was hashed but only selected link observations were retained, not its unrelated footer/contact text. Its shortened final-report link was not followed.",
+    "No third-party contact, litigation record changes, private disclosure, fees, archive-dataset retries or accepted Faraday engine-state changes occurred."
+  ],
+  "strongest_alternative": "The two PDFs could be scientifically equivalent and differ only in PDF packaging or metadata. The present pin/HEAD evidence cannot adjudicate that possibility against content changes.",
+  "publication": "Eligible for a separately named redundant copy and additive public commit as AveLyra. This pre-publication record does not itself claim that a push already succeeded."
+}

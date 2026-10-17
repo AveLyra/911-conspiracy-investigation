@@ -1,0 +1,142 @@
+{
+  "audit_date": "2026-10-17",
+  "derived": {
+    "different_recorded_sha256": true,
+    "recorded_size_difference_bytes": 2299
+  },
+  "limitations": [
+    "Pins identify the payloads recorded in Git history; neither PDF body was read or freshly hashed here.",
+    "HEAD metadata does not independently prove a PDF hash, 125-page count, textual difference, edition order, scientific difference or body equivalence.",
+    "The selected historical UAF report was unavailable at its requested operational-media path. No preservation-copy fallback or media hydration was attempted.",
+    "Different source URL spellings and hash/size pins are preserved without choosing which report is authoritative or inferring alteration, deception, historical cause or intent.",
+    "A comparison of authenticated PDF text, page renders, metadata and native case crosswalks would discriminate content changes from packaging-only differences. It has not been done by this audit."
+  ],
+  "preserved_pdf_pins": [
+    {
+      "pointer": {
+        "literal_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:f3a001ab68dcc6b6e230456aac4729613740336796c1b2515671141589c38bfa\nsize 45196602\n",
+        "pdf_bytes_as_recorded": 45196602,
+        "pdf_sha256_as_recorded": "f3a001ab68dcc6b6e230456aac4729613740336796c1b2515671141589c38bfa",
+        "pointer_sha256": "97a57f0743b1f363c2daf422f69927b462d1c85f3a21ad870ea660b0f6d291d5"
+      },
+      "record": {
+        "bytes": 133,
+        "git_blob_oid": "aed6caadeb871ead39b8a5e29323363d87d0bae6",
+        "literal_text": "version https://git-lfs.github.com/spec/v1\noid sha256:f3a001ab68dcc6b6e230456aac4729613740336796c1b2515671141589c38bfa\nsize 45196602\n",
+        "path": "investigation/wtc7/uaf-final-method-audit/source/uaf-final-2020.pdf",
+        "sha256": "97a57f0743b1f363c2daf422f69927b462d1c85f3a21ad870ea660b0f6d291d5",
+        "source_commit": "3236dd826b7fb203fb8c364af320e5b10101fdbe"
+      },
+      "source_url_from_existing_receipt_or_protocol": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf"
+    },
+    {
+      "pointer": {
+        "literal_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:41dd3390627fac24c2bd696160c48f15e05d3213cc05325c4e4e89608df96d27\nsize 45194303\n",
+        "pdf_bytes_as_recorded": 45194303,
+        "pdf_sha256_as_recorded": "41dd3390627fac24c2bd696160c48f15e05d3213cc05325c4e4e89608df96d27",
+        "pointer_sha256": "4015d6d9adbb8a3c4a25622f762e56e5648427fea1c997819d4d92c1d04204c7"
+      },
+      "record": {
+        "bytes": 133,
+        "git_blob_oid": "eb35934969b97b245a3fae285b7bf77bf1dbe96c",
+        "literal_text": "version https://git-lfs.github.com/spec/v1\noid sha256:41dd3390627fac24c2bd696160c48f15e05d3213cc05325c4e4e89608df96d27\nsize 45194303\n",
+        "path": "research/steel-video-deep-audit/sources/hulsey-uaf-final-2020.pdf",
+        "sha256": "4015d6d9adbb8a3c4a25622f762e56e5648427fea1c997819d4d92c1d04204c7",
+        "source_commit": "3236dd826b7fb203fb8c364af320e5b10101fdbe"
+      },
+      "source_url_from_existing_receipt_or_protocol": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March-2020.pdf"
+    }
+  ],
+  "preserved_receipts": [
+    {
+      "bytes": 1270,
+      "git_blob_oid": "96c36b348a546b144adc928193ceb1c7e86357c9",
+      "literal_text": "# Source receipt: UAF final report\n\n| Field | Value |\n| --- | --- |\n| Title | *A Structural Reevaluation of the Collapse of World Trade Center 7* |\n| Authors / date | J. Leroy Hulsey, Zhili Quan, Feng Xiao; March 2020 |\n| Public URL | https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March-2020.pdf |\n| Institutional project locator | https://ine.uaf.edu/wtc7 |\n| Acquired filename | hulsey-uaf-final-2020.pdf |\n| SHA-256 | 41dd3390627fac24c2bd696160c48f15e05d3213cc05325c4e4e89608df96d27 |\n| Bytes / pages | 45,194,303 / 125 |\n\nThe first bounded HTTP transfer stopped at 39,329,792 bytes despite the public response header's stated 45,194,303-byte length. The source server advertised byte ranges; a resumed transfer completed the file and it passed PDF structural inspection. The interrupted transfer is an acquisition condition, not evidence of a historical source defect, withholding, or author action.\n\nThis PDF is preserved as a public technical source for this research branch. It is neither a case exhibit nor a verified reproduction archive. Its stated external-review and funding disclosures are analyzed in the parent report without treating them as dispositive of its technical conclusions.\n",
+      "path": "research/steel-video-deep-audit/sources/README.md",
+      "sha256": "1f17d391448016f1285b1449e3a7c06ac67cc9a052bd330e1c1004dbf5ead77c",
+      "source_commit": "3236dd826b7fb203fb8c364af320e5b10101fdbe"
+    },
+    {
+      "bytes": 4350,
+      "git_blob_oid": "211b3643cd3433f0d4286e5982f7504e72ad4a1b",
+      "literal_text": "# UAF final-report method and case audit\n\n2026-09-20 UTC. Research only. Previous goal turn made progress by completing\nthe bounded DEM-05 preparation assessment. This task addresses Luna's explicit\ntechnical-review-update item3 and charter WP3/Q06/Q10; no full-goal completion\nclaim. Main AGENTS/WORKFLOW/START-HERE/full charter control; current hashes\nmatch the previously fully read versions. Worktree research branch at e8d83d7;\npreserve existing WIP and raw evidence. No main/canonical/legal/engine writes.\n\n## Questions and acceptance\n\nDoes the report include geometric nonlinear effects of gravity on a laterally\ndisplaced structure (P-delta), and which outcomes arise from calculation versus\nprescribed failures? Separate software capability, stated model settings,\nsettings tied to a named case/result, and verified historical execution.\n\nProduce a case-specific source crosswalk and independently reviewed claim\ndispositions: supported, contradicted or not established by the published\nreport. Include exact missing run-level links, consequences and falsifiers.\nMissing documentation is not proof of omitted physics. Prescribed support\nloss can constrain subsequent motion but does not identify its initiating\ncause. Apply the same distinction to NIST and the alternative.\n\n## Fixed acquisition scope\n\nThe held institutional uaf-project.html (main model-access-audit/sources/),\nSHA256 a7906534ff243b61592972858cad8b5ef729d3cbd4a4e9d7dccf1848b69a7f73,\nline163 links to this exact report:\nhttps://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf\n\nOne ordinary acquisition of this PDF, at most50MiB, timeout60s; web access\nmay precede byte preservation. Stop across clients on server denial or unsafe\nrejection. Local sandbox transport failure can be retried with approved normal\nnetwork access. No archive/metadata retries, mirrors, dataset, linked media,\nsolver, operational explosive details, fees, outreach, publication or sensitive\ntransfer. Prior archive unsafe rejections stay closed. No credentials, custom\nidentity or access-control bypass.\n\n## Reading stages\n\nPreserve source bytes, headers, URL, UTC, size, hash and failures. Validate PDF\nformat/page count; text-search/contents screening is for page selection, not\nfull visual review. Then freeze complete-page selection for methods, relevant\nsolver settings, case definitions/results/qualifications. Declare any necessary\ncoverage expansion before reading it. Avoid cherry-picked sentences/figures.\n\nRoot and a separate prior-informed AI reader each inspect every selected\ncomplete page, freeze notes before exchange, and retain differences. Neither\nis an expert witness or a new historical experiment. Preserve displayed\nsettings exactly with software/case scope. Distinguish stability, buckling,\npost-buckling, large deflection, dynamic response, contact and material failure.\nDo not equate a P-delta checkbox with all nonlinear phenomena or infer a\nsoftware option's exact implementation without appropriate documentation.\n\nNo numerical historical reproduction is promised without actual inputs and\nsolver. The stopping point is this report-level obligation's disposition,\nnot another open-ended archive hunt or a causal probability verdict. Independent\nsource-reading, integrity and local-link checks are required before closeout.\n\n## Prospective acquisition-time amendment\n\nThe web reader reported its own content-length limit (45,196,602 bytes), not\nan unsafe rejection or server access denial. The ordinary request then returned\nHTTP200 but terminated at its60-second limit with27,341,395 bytes; session63289\nis confirmed terminal, exit28. No PDF content has been admitted or read.\n\nBefore another request, preserve that partial file and headers as attempt01.\nPermit exactly one fresh same-URL download to a different file, at most50MiB\nand240s, asynchronously observed so user updates remain possible. No range\nassembly, repair, authentication change or bypass. This is an explicit timing-\nbudget amendment, not a silent retry or a change to scientific scope. Preserve\nthe second result even on failure, then stop acquisition. Completeness requires\nmatching declared content length, successful parser opening without repair,\nsource hashing and complete relevant-page inspection before any findings.\n",
+      "path": "investigation/wtc7/uaf-final-method-audit/PROTOCOL.md",
+      "sha256": "bacffb9075dbc0a946b255c7835158179bd4419614743b38c9795bc47d7978e1",
+      "source_commit": "3236dd826b7fb203fb8c364af320e5b10101fdbe"
+    },
+    {
+      "bytes": 5490,
+      "git_blob_oid": "980f70956bb8ea77ee7a54b8b96b4c8f27fe8040",
+      "literal_text": "# UAF final-report audit \u2014 execution record\n\n2026-09-20 UTC; research worktree/branch at e8d83d7. Main control hashes\nunchanged, prior WIP preserved, repository intake run. Goal active.\n\n## Acquiring the source\n\n- Web open of the exact declared PDF returned a reader error: content length\n  45,196,602 exceeds its limit. No PDF text/pages returned, no unsafe rejection\n  or server access refusal reported.\n- Curl8.7.1 (x86_64-apple-darwin25.0, SecureTransport, LibreSSL3.3.6,\n  zlib1.2.12, nghttp2/1.68.1), approved ordinary network request, HTTPS only,\n  redirects restricted to HTTPS, file cap52,428,800bytes, max-time60.\n  Session63289 ended exit28 at60.008s with27,341,395 bytes of45,196,602.\n  HTTP200, application/pdf, unchanged effective URL. No content admitted.\n- Preserve source/attempt01.partial SHA256\n  e4807cc8a07a9b3205ccbe7501626a4accddcb3e5215a0623149e028fcac5864\n  and source/attempt01.headers SHA256\n  e71da496c415e96b9b555be261600247cb3ba809b77713c54543e1fbd8dc291c.\n- Prospective protocol amendment then allowed one fresh same-URL request to\n  /private/tmp/uaf-final-method.nB4sSI/attempt02.pdf and attempt02.headers,\n  max-time240, same size/access limits. No range assembly or source repair.\n  Session13466 is the actual follow-up handle; its final result is not yet\n  recorded at this initial log stage.\n\nThe complete command structure is curl --location --max-time TIME\n--max-filesize 52428800 --proto '=https' --proto-redir '=https'\n--dump-header HEADER --output BODY --write-out HTTP/effective-URL/size/type\nagainst the one URL in PROTOCOL.md. First temporary outputs were report.pdf\nand report.headers in the same temporary directory. No authentication or\ncustom identity supplied. Failed and successful payloads are distinct.\n\n## Runtime and prior-claim checks\n\nBundled dependency paths located. Its Python does not have pymupdf; explicit\nimport returned ModuleNotFoundError (not a clean runtime check). Existing\n/Users/admin/.pyenv/versions/3.13.7/bin/python3 successfully imports\nPyMuPDF1.27.2.2/MuPDF1.27.2. No install or global configuration change.\nKnown prior Poppler font-configuration failures remain unresolved; the clean\nMuPDF reading-derivative route is available and will require page inspection.\n\nIndependent prior-claim check confirms Luna asked whether P-delta treatment\nwas included in the compared results; it did not assert omission. Item3 asks\nfor exact pages/settings/case status. The claimed lack of an independent\nreconstruction is not evidence of missing physics. Source note SHA256\n70ee769d60bbd70b7f3c73cfc76cd8de71ecdd7c0c7bbfc27784511906c86815,\ntechnical-review-update.md lines17,32. Independent check did not inspect this\nnew final report or re-run archive acquisition. The planned crosswalk must\ninclude case identity, gravity initialization, computed/prescribed failures\nand actual run linkage, not just keyword presence.\n\n## Completed acquisition and derivatives\n\nSession13466 subsequently completed exit0, HTTP200 with45,196,602 bytes,\nsame effective URL and application/pdf. The successful output was preserved\nwithout modification as source/uaf-final-2020.pdf; attempt02.headers separately.\nNo repaired partial or assembled ranges were used. Raw cp -n preservation\nkept distinct attempts. SHA256:\n\n- complete PDF f3a001ab68dcc6b6e230456aac4729613740336796c1b2515671141589c38bfa\n- second headers 8d10e01d3a295ee5117c74ea4bc716f683af15a8732cfd08520d8617fcf099e0\n\nMuPDF opened125pages without encryption, repair or opening warnings, reporting\neffective PDF1.4. Independent verification later distinguished the PDF1.3\nbyte header from the catalog's /Version /1.4; this is not source corruption.\nThe fixed37-page selection was declared after disclosed text screening and\nbefore visual interpretation. No full-report visual-reading claim.\n\nAST inspection of render.py passed before execution. Actual production command:\n`/Users/admin/.pyenv/versions/3.13.7/bin/python3 research/sherlock-wtc7-investigation/uaf-final-method-audit/render.py`\nfrom the research worktree. Session20576 completed exit0:37pages, no recorded\npage warnings, unchanged five input pins, status complete_not_visual_review.\nOutput render01 has37PNG,37TXT, start.json and receipt.json. No PDF edited.\nThe helper's complete status establishes derivatives, not source correctness\nor completed human/AI reading. Prior Poppler issues were not repaired.\n\n## Separate readings and review\n\nRoot read all37complete selected page images: prior25 then physical112\u2013123.\nNo failed image display or repeat was needed; extracted-text screening was\ndisclosed in PAGE-SELECTION. Dense reaction labels were not individually\ntranscribed. Root froze root-notes.md before exchanging substantive readings:\ne168d35bb3c782eebd91fcaa2a65ffc1a008891f03efefdc2bb2da629a0f16b1.\nObserver separately read all37full pages, with text assistance for10; its note\npreserves the recovered receipt-text truncation, not a failed page display.\nFreeze observer-notes.md:\n064f3d0df679b829423bcb6e6745f134531cefa3c75a408af668d9b15f7ded59.\n\nAfter both freezes root read the observer's note. Its useful narrowing is\nretained: \u00a74.4 expressly introduces Figs4.8\u20134.16, so the neighboring exclusion\nmust not be represented as a separately authenticated configuration for\nFigs4.17\u20134.20. The report now states that scope explicitly. Neither freeze was\nrewritten to erase the distinction. No source data or solver was executed.\nIndependent review/integrity records and final checks are in validation.md.\n",
+      "path": "investigation/wtc7/uaf-final-method-audit/execution.md",
+      "sha256": "ea3790749bf9299db76cdef72382667967144c1bd9a883dcc38cc9554bdb83b6",
+      "source_commit": "3236dd826b7fb203fb8c364af320e5b10101fdbe"
+    }
+  ],
+  "public_requests": [
+    {
+      "accessed_utc": "2026-10-17T13:22:27.994931+00:00",
+      "final_url": "https://ine.uaf.edu/wtc7",
+      "headers": {
+        "Content-Length": "17727",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sat, 17 Oct 2026 13:22:28 GMT"
+      },
+      "html_bytes": 17727,
+      "html_sha256": "d406c7adf86139c471af8df925ea7ddc7595d91be0df8683f96c68a027b9fba2",
+      "method": "GET",
+      "redirects": [],
+      "requested_url": "https://ine.uaf.edu/wtc7",
+      "scope": "HTML hash plus selected link text/URLs only; no linked asset fetched by this parser",
+      "selected_report_links": [
+        {
+          "href": "http://bit.ly/Hulsey-WTC-report-Org",
+          "label": "Download Final Report"
+        },
+        {
+          "href": "http://bit.ly/Hulsey-WTC-report-Org",
+          "label": "A Structural Reevaluation of the Collapse of World Trade Center 7"
+        },
+        {
+          "href": "/media/222439/uaf_wtc7_draft_report_09-03-2019.pdf",
+          "label": "A Structural Reevaluation of the Collapse of World Trade Center 7"
+        },
+        {
+          "href": "http://bit.ly/Hulsey-WTC-report-Org",
+          "label": "Download Final Report"
+        }
+      ],
+      "status": 200
+    },
+    {
+      "accessed_utc": "2026-10-17T13:22:27.995543+00:00",
+      "final_url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf",
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Content-Length": "45196602",
+        "Content-Type": "application/pdf",
+        "Date": "Sat, 17 Oct 2026 13:22:28 GMT"
+      },
+      "method": "HEAD",
+      "pdf_body_acquired": false,
+      "redirects": [],
+      "requested_url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf",
+      "status": 200
+    },
+    {
+      "accessed_utc": "2026-10-17T13:22:27.995644+00:00",
+      "final_url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March-2020.pdf",
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Content-Length": "45194303",
+        "Content-Type": "application/pdf",
+        "Date": "Sat, 17 Oct 2026 13:22:28 GMT"
+      },
+      "method": "HEAD",
+      "pdf_body_acquired": false,
+      "redirects": [],
+      "requested_url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March-2020.pdf",
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Two preserved March 2020 UAF report byte identities and their live access metadata",
+  "date": "2026-10-17",
+  "status": "Public-source provenance/access finding, not a new physical collapse result",
+  "new_joint_observation": "Two already published research source paths are both identified as the March 2020 UAF final report, but their preserved Git LFS pointers record different SHA-256 digests and lengths. Their previously documented source URLs also differ by one hyphen in March2020 versus March-2020. Both exact URLs returned HTTP 200 to fresh HEAD requests, with Content-Length values matching their respective recorded sizes.",
+  "variants_kept_side_by_side": [
+    {
+      "url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf",
+      "recorded_pdf_sha256": "f3a001ab68dcc6b6e230456aac4729613740336796c1b2515671141589c38bfa",
+      "recorded_pdf_bytes": 45196602,
+      "new_HEAD_content_length": 45196602,
+      "historical_public_record": "investigation/wtc7/uaf-final-method-audit/source/uaf-final-2020.pdf"
+    },
+    {
+      "url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March-2020.pdf",
+      "recorded_pdf_sha256": "41dd3390627fac24c2bd696160c48f15e05d3213cc05325c4e4e89608df96d27",
+      "recorded_pdf_bytes": 45194303,
+      "new_HEAD_content_length": 45194303,
+      "historical_public_record": "research/steel-video-deep-audit/sources/hulsey-uaf-final-2020.pdf"
+    }
+  ],
+  "derived_size_difference_bytes": 2299,
+  "why_it_matters": "A report edition/hash must be specified when comparing UAF against NIST or joining figures to native model cases. A shared title/date is not a byte-level version identifier. Both earlier research paths and their conclusions remain preserved; this audit does not choose a preferred edition.",
+  "interpretive_limits": [
+    "The distinct historical payload pins were already present separately. The new result is their explicit paired comparison plus fresh status/length observations, not discovery of a new structural defect.",
+    "Neither PDF body was downloaded, read, rendered or freshly hashed in this run. Recorded pointer digests must not be relabeled as current downloaded-file digests.",
+    "Equal HEAD Content-Length and historical size does not authenticate a current payload hash or prove that its contents are unchanged.",
+    "Metadata-only packaging differences, PDF producer settings or substantive page changes are untested alternatives; no one explanation is adopted.",
+    "The institutional UAF page currently exposes a shortened Final Report link. This audit captured that link without following it and does not establish which PDF variant it currently selects.",
+    "No claim of fraud, replacement, hidden edits, evidence destruction, demolition, legal noncompliance or historical cause follows. Nothing here vindicates NIST or discredits UAF's calculations by association."
+  ],
+  "next_discriminating_work": "With authorized operational source access, compare authenticated copies' PDF metadata, page count, normalized text, complete-page renderings and figure/case crosswalks. Preserve both files and every difference. That content comparison has not been done here.",
+  "claim_strength": {
+    "archived_pointer_and_receipt_difference": "A: directly read from exact already published Git blobs",
+    "current_HTTP_status_and_declared_lengths": "A: directly acquired HEAD response metadata, not PDF content",
+    "substantive_report_or_model_difference": "D: underdetermined; no body or native-model comparison"
+  },
+  "source_research_role": "Retained original audit in fresh Faraday source-integrity research worktree; this is not accepted engine state or a native-model experiment.",
+  "publication_role": "Separately named redundant public copy of the new audit, with no rewriting of old records."
+}
