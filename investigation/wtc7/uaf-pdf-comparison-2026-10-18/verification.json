@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-18",
+  "status": "Comparison completed; publication receipt is separate",
+  "scope": "Two historical UAF PDF byte sequences, all 125 corresponding pages, metadata, xref and stream inventories, page commands and images",
+  "primary_runtime": "Python 3.13.7; PyMuPDF 1.27.2.2 / MuPDF 1.27.2",
+  "pre_measurement_controls": {"command": "PYTHONDONTWRITEBYTECODE=1 /Users/admin/.pyenv/versions/3.13.7/bin/python3 -m unittest -v test_compare_pdfs", "tests_run": 7, "passed": 7, "failed": 0, "executed_before_real_measurement": true},
+  "post_measurement_acceptance": {"command": "PYTHONDONTWRITEBYTECODE=1 /Users/admin/.pyenv/versions/3.13.7/bin/python3 -m unittest -v test_compare_pdfs test_results", "tests_run": 11, "passed": 11, "failed": 0},
+  "real_comparison_commands": [
+    "python3 compare_pdfs.py compare --media <verified-acquisition-directory> --results results",
+    "python3 supplemental_checks.py <verified-acquisition-directory> results",
+    "python3 compare_pdfs.py compare --media <verified-acquisition-directory> --results repeat-results --rasters <verified-acquisition-directory>/repeat-rasters"
+  ],
+  "repeat": "All per-page records, object inventories and diffs, document records and primary runtime record matched exactly. Summary matched after excluding only completed_at_utc.",
+  "independent_text_parser": "pypdf strict=True, all 125 pages; difference-page list agrees with MuPDF; exact pypdf version and hashes are in results/independent-pypdf-text-check.json",
+  "independent_renderer": "Poppler pdftoppm 26.05.0, -f 91 -l 91 -singlefile -r 150 -png, March-2020 source; successful exit 0 and full-page visual inspection confirmed the toolbar fragment and clipped column",
+  "visual_review": ["Complete March2020 physical page 91", "Complete March-2020 physical page 91", "Complete March2020 physical page 1 control", "Complete March-2020 physical page 91 independently rendered by Poppler"],
+  "preservation": "Both source sizes and hashes match historical pins and remain unchanged after primary and repeat passes. Redundant Intel operational copies are byte-identical; package manifest records paths and hashes.",
+  "limitations": ["150 dpi equality is fixed-renderer and fixed-resolution, not every possible PDF behavior", "Same-xref comparison is not semantic object alignment", "No native model or original figure/export file was tested", "No attribution, publication chronology, intent or historical cause established"],
+  "discrepancy_status": "Preserved channel by channel; no preferred edition or causal explanation selected"
+}
