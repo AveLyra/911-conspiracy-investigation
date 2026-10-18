@@ -1,0 +1,55 @@
+{
+  "title": "Prospective comparison of the two pinned March 2020 UAF report PDFs",
+  "date": "2026-10-18",
+  "status": "Protocol frozen before document-content comparison; acquisition and measurement not executed",
+  "hypothesis": "hyp-7390ed186b6c",
+  "bounded_unit_completed": "Define the source-admission gates, full-page comparison observables, controls and inference limits for the outstanding report-version test",
+  "previous_source_observation": "The October 17 audit preserved two distinct historical PDF hash/size pins, paired each with its existing source URL, and acquired HEAD 200/length observations. It did not acquire or compare PDF bodies. That record is unchanged.",
+  "previous_public_audit_commit": "57a69046026c5dd8cfb3e449709fbc4e09c0f992",
+  "source_pair": [
+    {
+      "label": "March2020 URL, no month-year hyphen",
+      "url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf",
+      "expected_historical_sha256": "f3a001ab68dcc6b6e230456aac4729613740336796c1b2515671141589c38bfa",
+      "expected_historical_bytes": 45196602
+    },
+    {
+      "label": "March-2020 URL, month-year hyphen",
+      "url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March-2020.pdf",
+      "expected_historical_sha256": "41dd3390627fac24c2bd696160c48f15e05d3213cc05325c4e4e89608df96d27",
+      "expected_historical_bytes": 45194303
+    }
+  ],
+  "storage_dependency": {
+    "observed_2026_10_18": "The repository media resolver returned exit 2: Intel share is not mounted; reconnect it before using media. Both prospective output-path checks failed. No acquisition or media fallback followed.",
+    "gate": "Verify mounted operational share and store identity through the current repository media resolver before any acquisition, PDF access or media output.",
+    "prohibited_fallbacks": ["No retained/preservation-copy substitution", "No local bulk media hydration", "No bare LFS pull", "No writing large source files into the local case or publication tree", "No mounting, repairing or changing storage configuration automatically"]
+  },
+  "source_admission": [
+    "Use already authorized matching operational copies if available; otherwise one bounded ordinary public GET per exact listed PDF URL may be prepared after the storage gate passes. This does not reopen any closed native-model/archive route.",
+    "Use unique date/run/source output names and create-only writes in the verified operational store. Never overwrite a source, repair a partial PDF, assemble ranges, or replace an earlier acquisition. Retain failures separately.",
+    "For fresh acquisition, cap each source at 64 MiB and 240 seconds overall; use short socket waits and asynchronous execution so no individual blocking wait exceeds 60 seconds. HTTPS only, bounded redirects, no credentials or cookies. Stop on access denial rather than changing clients or routes.",
+    "Record exact requested/final URL, acquisition UTC, safe response metadata, acquired byte count, complete response SHA-256 and completion/failure status. A response status or content length is not source authenticity.",
+    "Admit the historical pair for this comparison only if each complete source matches its own expected length and SHA-256. If either differs, preserve the newly acquired bytes and old pin side by side, report a new version observation and stop this historical-pair comparison without choosing a preferred file."
+  ],
+  "prospective_measurement": {
+    "runtime": "Pin parser/renderer name, version, interpreter and available binary hashes before results. Do not install or change a global runtime to obtain agreement.",
+    "PDF_opening": "Record byte header version, catalog version, encryption, repair/opening warnings, page count, page dimensions/boxes/rotation, and document-level metadata keys separately. Do not rewrite the PDFs.",
+    "coverage": "Compare every corresponding physical page in original order, one-based. Earlier receipts report 125 pages each, but freshly report actual counts. Record unmatched extra pages separately; do not silently truncate or realign.",
+    "text_channels": ["Per-page exact extracted UTF-8 text SHA-256 and length", "Separate per-page Unicode NFC plus whitespace-collapse text SHA-256 and length; never substitute this for the raw extraction", "Record extraction errors and empty pages distinctly; two failed extractions must not count as agreement"],
+    "raster_channel": "Per complete page, render at fixed 150 dpi with the same pinned MuPDF build, RGB and alpha disabled, using the original page geometry. Record dimensions, rotation, channel count and raw decoded-pixel SHA-256. No crop, resize, registration, retiming, enhancement or parameter tuning after looking at differences. Process pages incrementally in memory; any saved raster belongs only in the verified operational store.",
+    "metadata_channel": "Compare header/catalog versions, non-personal producer/creation/modification fields, trailer identifiers, metadata-presence/hash and object/attachment inventories where inspectable. Review exact fields for privacy before public export; do not publish contact information, credentials, scripts or arbitrary embedded payloads.",
+    "source_stability": "Rehash both input files after the entire pass and require unchanged bytes. Preserve per-page failures and differences rather than normalizing them away."
+  },
+  "required_controls_before_real_measurement": [
+    "Synthetic PDFs with identical page content and differing document metadata: byte hashes should differ, while prescribed text/pixel observables should agree.",
+    "A synthetic text change: the raw-text channel must distinguish the pages; record whether the fixed renderer distinguishes them.",
+    "A synthetic graphics-only change: the raster channel must distinguish pages even if extracted text is identical.",
+    "Malformed/truncated PDF and deliberately failed extraction: reject or record failure without falsely counting matching null results.",
+    "A second invocation must reproduce the recorded hashes under the same runtime and inputs. These controls and reruns have not been performed by this protocol-writing unit."
+  ],
+  "classification_rule": "Publish exact channel-by-channel observations, not a global same/different scientific verdict. Even equal full-page text and fixed-resolution pixels do not erase the original byte discrepancy or establish every embedded object, annotation, revision, accessibility layer or native model case is equivalent. Unequal channels identify specific differences for later full-page inspection; they do not by themselves establish changed calculations or intent.",
+  "not_authorized_or_claimed_here": ["No model dataset download, solver run or figure-to-native-case reconstruction", "No body acquisition, PDF decoding, page rendering or content-equivalence finding in this run", "No selection of a correct edition, discrepancy adjudication, historical-cause inference or causal ranking", "No private case material, correspondence, legal-record edit, third-party contact, fees or independent expert endorsement"],
+  "acceptance": "A future execution must preserve both admitted sources, actual controls, runtime, complete per-page coverage/results, failures, before/after hashes and limitations. Code success alone is not source equivalence or scientific validation.",
+  "next_action": "Reconnect the approved Intel operational-media share, verify its identity with the media resolver, then perform one separately logged bounded acquisition/comparison unit under this prospective protocol. Do not repeat the October 17 HEAD-only check as though it answers content equivalence."
+}
