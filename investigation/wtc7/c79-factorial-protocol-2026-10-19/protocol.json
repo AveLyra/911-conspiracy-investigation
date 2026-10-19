@@ -1,0 +1,91 @@
+{
+  "protocol_id": "c79-factorial-protocol-2026-10-19",
+  "date_utc": "2026-10-19",
+  "status": "factorial_design_frozen_execution_blocked",
+  "active_hypotheses": ["hyp-fd092a41aee9", "hyp-7390ed186b6c"],
+  "question": "What are the separate and interacting effects of western side-plate protrusion removal and the published thermal-expansion-coefficient increase on the identified UAF Column 79 case?",
+  "evidence_layer": "prospective_protocol_not_model_result",
+  "source_pins": [
+    {
+      "id": "uaf_march2020",
+      "url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf",
+      "sha256": "f3a001ab68dcc6b6e230456aac4729613740336796c1b2515671141589c38bfa",
+      "acquisition_date": "2026-10-18",
+      "pin_basis": "existing_preserved_acquisition_not_fresh_retrieval",
+      "printed_pages": [77, 78, 79, 80, 81],
+      "physical_pdf_pages": [90, 91, 92, 93, 94]
+    },
+    {
+      "id": "uaf_march_2020",
+      "url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March-2020.pdf",
+      "sha256": "41dd3390627fac24c2bd696160c48f15e05d3213cc05325c4e4e89608df96d27",
+      "acquisition_date": "2026-10-18",
+      "pin_basis": "existing_preserved_acquisition_not_fresh_retrieval",
+      "printed_pages": [77, 78, 79, 80, 81],
+      "physical_pdf_pages": [90, 91, 92, 93, 94]
+    },
+    {
+      "id": "nist_ncstar_1_9",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9.pdf",
+      "sha256": "30addb2699370f89e40bccfdcf4b4a18a7f4fb3bc1c0101bd3fcdec9b892b18f",
+      "hash_verified_date": "2026-10-18",
+      "pin_basis": "existing_preserved_source_review_not_fresh_retrieval",
+      "printed_pages": [351, 353, 482, 483],
+      "physical_pdf_pages": [395, 397, 548, 549]
+    }
+  ],
+  "factors": {
+    "plate": {
+      "levels": ["P0", "P1"],
+      "P0": "exact_intact_baseline_geometry",
+      "P1": "identified_published_protrusion_modification_not_entire_plate_deletion",
+      "native_geometry_mapping": null,
+      "mass_stiffness_mesh_consequences": "measure_and_report_do_not_claim_unchanged"
+    },
+    "alpha": {
+      "levels": ["A0", "A1"],
+      "scope_members": ["K3004", "C3004", "B3004", "A3004"],
+      "unchanged_named_member": "G3005",
+      "A0": "exact_original_native_material_definition",
+      "A0_native_value": null,
+      "A1": "published_modified_definition_subject_to_native_verification",
+      "A1_report_value": "11.5e-6",
+      "unit": "in/in/degree_F",
+      "reported_increase": "approximately_40_percent_not_an_exact_multiplier",
+      "temperature_increase": false,
+      "infer_A0_by_dividing_A1_by_1_4": false
+    }
+  },
+  "cases": [
+    {"id": "P0_A0", "plate": "P0", "alpha": "A0", "role": "published_trapping_case_reproduction", "executed": false},
+    {"id": "P1_A0", "plate": "P1", "alpha": "A0", "role": "geometry_control_at_original_expansion", "executed": false},
+    {"id": "P0_A1", "plate": "P0", "alpha": "A1", "role": "coefficient_control_with_intact_plate", "executed": false},
+    {"id": "P1_A1", "plate": "P1", "alpha": "A1", "role": "published_compound_case_reproduction", "executed": false}
+  ],
+  "contrasts": [
+    {"id": "plate_at_A0", "subtract": ["P1_A0", "P0_A0"], "varied_factor": "plate"},
+    {"id": "plate_at_A1", "subtract": ["P1_A1", "P0_A1"], "varied_factor": "plate"},
+    {"id": "alpha_at_P0", "subtract": ["P0_A1", "P0_A0"], "varied_factor": "alpha"},
+    {"id": "alpha_at_P1", "subtract": ["P1_A1", "P1_A0"], "varied_factor": "alpha"}
+  ],
+  "interaction": {"subtract_contrasts": ["plate_at_A1", "plate_at_A0"], "requires_common_predeclared_scalar_observable": true},
+  "compound_comparison": {"subtract": ["P1_A1", "P0_A0"], "isolates_single_factor": false},
+  "shared_controls": ["thermal_histories", "gravity_loading", "restraints_and_ties", "contact_laws", "material_laws_except_declared_alpha_factor", "failure_and_deletion_laws", "solver_build_and_controls", "shared_region_mesh_and_predeclared_refinement_policy"],
+  "required_outputs": ["girder_end_xyz_displacement", "girder_end_rotation", "axial_overlap", "side_plate_gap_contact_state_and_force", "seat_contact_area_and_reaction", "plate_and_weld_response", "bolt_failure_and_deletion_events", "energy_and_convergence", "temperature_and_analysis_time_separately"],
+  "required_before_execution": ["figure_to_native_case_mapping_and_hashes", "both_published_case_inputs_and_reference_outputs", "solver_build_units_and_coordinates", "drawing_revision_and_geometry_mapping", "complete_initial_contact_restraint_and_failure_definitions", "freeze_numerical_execution_addendum_before_new_results", "reproduce_both_published_cases_before_interpreting_controls"],
+  "numerical_execution_details": {
+    "baseline_reproduction_tolerances": null,
+    "seat_contact_loss_threshold": null,
+    "all_vertical_support_loss_definition": null,
+    "convergence_and_energy_criteria": null,
+    "mesh_and_time_step_sensitivity": null,
+    "output_sampling": null,
+    "freeze_status": "pending_native_input_review_before_new_outputs"
+  },
+  "native_case_execution_count": 0,
+  "historical_prevention": null,
+  "nist_native_reproduction": false,
+  "indispensable_input": "identified_UAF_baseline_and_modified_native_inputs_with_reference_outputs_and_final_report_crosswalk",
+  "exclusions": ["no_source_overwrite", "no_discrepancy_adjudication", "no_third_party_contact", "no_private_case_material", "no_litigation_record_changes", "no_solver_installation_or_run", "no_aggregate_download_or_rejected_route_retry", "no_historical_cause_or_intent_inference"],
+  "amendment_rule": "preserve_this_design_and_record_any_changes_in_separate_dated_addenda_before_inspecting_affected_new_outputs"
+}
