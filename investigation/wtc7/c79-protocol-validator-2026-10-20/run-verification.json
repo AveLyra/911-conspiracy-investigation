@@ -1,0 +1,176 @@
+{
+  "checked_at_utc": "2026-10-20T13:03:06.357439+00:00",
+  "artifact_kind": "reproducible_protocol_consistency_test_not_collapse_model",
+  "based_on_public_commit": "b57c0a52e9a9e26ad8f77046f773c1266eb52d8a",
+  "protocol_url": "https://github.com/AveLyra/911-conspiracy-investigation/blob/b57c0a52e9a9e26ad8f77046f773c1266eb52d8a/investigation/wtc7/c79-factorial-protocol-2026-10-19/protocol.json",
+  "active_hypotheses": [
+    "hyp-fd092a41aee9",
+    "hyp-7390ed186b6c"
+  ],
+  "python_version": "3.13.7",
+  "portable_reproduction_commands": [
+    "python3 -B verify_protocol.py",
+    "python3 -B -m unittest -v test_verify_protocol"
+  ],
+  "unit_test_count": 11,
+  "unit_test_failures": 0,
+  "unit_test_errors": 0,
+  "targeted_negative_controls": 22,
+  "targeted_negative_controls_scope": "One synthetic mutated input for each recorded check; these are subtests within one unit test, not 22 additional unit tests.",
+  "unit_test_output": "test_actual_malformed_json_is_rejected_by_cli (test_verify_protocol.ProtocolControls.test_actual_malformed_json_is_rejected_by_cli) ... ok\ntest_changed_bytes_fail_even_when_design_checks_pass (test_verify_protocol.ProtocolControls.test_changed_bytes_fail_even_when_design_checks_pass) ... ok\ntest_cli_failed_check_is_nonzero (test_verify_protocol.ProtocolControls.test_cli_failed_check_is_nonzero) ... ok\ntest_cli_parse_failure_and_nonzero_exit (test_verify_protocol.ProtocolControls.test_cli_parse_failure_and_nonzero_exit) ... ok\ntest_cli_success_has_no_model_result (test_verify_protocol.ProtocolControls.test_cli_success_has_no_model_result) ... ok\ntest_deterministic_and_read_only (test_verify_protocol.ProtocolControls.test_deterministic_and_read_only) ... ok\ntest_malformed_input_fails_closed (test_verify_protocol.ProtocolControls.test_malformed_input_fails_closed) ... ok\ntest_missing_fields_do_not_create_a_pass_or_uncaught_error (test_verify_protocol.ProtocolControls.test_missing_fields_do_not_create_a_pass_or_uncaught_error) ... ok\ntest_one_targeted_negative_control_for_every_check (test_verify_protocol.ProtocolControls.test_one_targeted_negative_control_for_every_check) ... ok\ntest_original_replays_all_22_checks_and_three_pins (test_verify_protocol.ProtocolControls.test_original_replays_all_22_checks_and_three_pins) ... ok\ntest_unknown_is_not_false_zero_or_empty_string (test_verify_protocol.ProtocolControls.test_unknown_is_not_false_zero_or_empty_string) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.013s\n\nOK\n",
+  "protocol_result": {
+    "scope": "frozen_protocol_integrity_and_design_checks_not_structural_validation",
+    "frozen_file_hash_checks": [
+      {
+        "path": "README.md",
+        "sha256": "f45e11d9a87adba5fe72fc34dec4e81840e3fd092288414d73b9cbe66c19c0fc",
+        "matches_frozen_pin": true
+      },
+      {
+        "path": "protocol.json",
+        "sha256": "90180e549dffc51da0d6a877328576f764ff54a2877416011ab7afeed65d0060",
+        "matches_frozen_pin": true
+      },
+      {
+        "path": "verification.json",
+        "sha256": "61a0e80788585d6c334a2dad3929a27350cee69d22a0b293ae9ab3b57bfec7d4",
+        "matches_frozen_pin": true
+      }
+    ],
+    "design_check_count": 22,
+    "design_checks": [
+      {
+        "name": "complete_two_by_two_design",
+        "passed": true
+      },
+      {
+        "name": "case_identifiers_unique",
+        "passed": true
+      },
+      {
+        "name": "plate_at_A0_changes_only_declared_factor",
+        "passed": true
+      },
+      {
+        "name": "plate_at_A1_changes_only_declared_factor",
+        "passed": true
+      },
+      {
+        "name": "alpha_at_P0_changes_only_declared_factor",
+        "passed": true
+      },
+      {
+        "name": "alpha_at_P1_changes_only_declared_factor",
+        "passed": true
+      },
+      {
+        "name": "compound_changes_both_and_not_single_factor",
+        "passed": true
+      },
+      {
+        "name": "interaction_is_difference_of_plate_contrasts",
+        "passed": true
+      },
+      {
+        "name": "original_alpha_unknown_not_back_calculated",
+        "passed": true
+      },
+      {
+        "name": "coefficient_scope_matches_named_four_beams",
+        "passed": true
+      },
+      {
+        "name": "coefficient_not_temperature_increase",
+        "passed": true
+      },
+      {
+        "name": "no_native_execution_claim",
+        "passed": true
+      },
+      {
+        "name": "historical_result_unknown",
+        "passed": true
+      },
+      {
+        "name": "numerical_execution_details_explicitly_pending",
+        "passed": true
+      },
+      {
+        "name": "all_source_pins_match_prior_records_and_readme",
+        "passed": true
+      },
+      {
+        "name": "UAF_page_crosswalk",
+        "passed": true
+      },
+      {
+        "name": "NIST_page_crosswalk",
+        "passed": true
+      },
+      {
+        "name": "public_only_sources",
+        "passed": true
+      },
+      {
+        "name": "preservation_and_scope_exclusions_present",
+        "passed": true
+      },
+      {
+        "name": "nonphysical_contact_shortcut_distinguished",
+        "passed": true
+      },
+      {
+        "name": "observable_support_loss_distinctions",
+        "passed": true
+      },
+      {
+        "name": "no_private_local_paths_in_public_payload",
+        "passed": true
+      }
+    ],
+    "prior_record_check_names_match": true,
+    "all_passed": true,
+    "native_solver_runs": 0,
+    "historical_cause_assessment": null
+  },
+  "identical_cli_repeats": 2,
+  "cli_output_sha256": "fe32711c4b7006cb2f24f44101388474c110dfd71b6ca6e53171178996f08a87",
+  "frozen_inputs_sha256_before": {
+    "README.md": "f45e11d9a87adba5fe72fc34dec4e81840e3fd092288414d73b9cbe66c19c0fc",
+    "protocol.json": "90180e549dffc51da0d6a877328576f764ff54a2877416011ab7afeed65d0060",
+    "verification.json": "61a0e80788585d6c334a2dad3929a27350cee69d22a0b293ae9ab3b57bfec7d4"
+  },
+  "frozen_inputs_sha256_after": {
+    "README.md": "f45e11d9a87adba5fe72fc34dec4e81840e3fd092288414d73b9cbe66c19c0fc",
+    "protocol.json": "90180e549dffc51da0d6a877328576f764ff54a2877416011ab7afeed65d0060",
+    "verification.json": "61a0e80788585d6c334a2dad3929a27350cee69d22a0b293ae9ab3b57bfec7d4"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2521,
+      "sha256": "c21d31bbbf9b965fc0b5e938aee8d1a7cf526c345bf7937695c8c55657e0f4c9"
+    },
+    {
+      "path": "verify_protocol.py",
+      "bytes": 8195,
+      "sha256": "8a5aac98fd84a7ea904cbd0762dd0562361987e9973e8b4c197d94b9f2136959"
+    },
+    {
+      "path": "test_verify_protocol.py",
+      "bytes": 7914,
+      "sha256": "eda40e04c95fdb23d04c2212e0f78dbeb97422d7f87cc6ff11366353b0bf45b4"
+    }
+  ],
+  "native_solver_runs": 0,
+  "new_primary_source_acquisitions": 0,
+  "new_collapse_findings": 0,
+  "browser_validation": "not_applicable_command_line_only_no_UI_changes",
+  "limitations": [
+    "No finite-element validation or native-model execution",
+    "Existing source pins compared, not fresh source authentication",
+    "Targeted invariants are not an exhaustive schema or privacy clearance",
+    "No discrepancy adjudication or historical-cause inference"
+  ],
+  "source_and_public_copies": "Mirror byte equality must be checked after creating the public copy; this record alone does not certify a later push."
+}
