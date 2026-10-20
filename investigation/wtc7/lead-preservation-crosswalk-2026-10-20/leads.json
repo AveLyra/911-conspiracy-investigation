@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-20",
+  "scope": "Seven leads underlying the five preceding summary bullets; additive source and preservation crosswalk, not new scientific findings",
+  "prior_public_commit": "c4923d6d4766d2987708695ca16b565b73931a8f",
+  "status": "conflicting_records_preserved_no_adjudication",
+  "leads": [
+    {
+      "id": "C79-PLATES",
+      "type": "conditional_geometry_and_competing_model_accounts",
+      "observations": [
+        {"source": "UAF section 3.2.1, printed 77-79", "lateral_plate_gap_in": "3.678", "web_clearance_travel_in": "6.290", "claim": "Axial expansion traps A2001 behind the western side plate"},
+        {"source": "NIST NCSTAR 1-9 printed 351 and 353", "claim": "Preliminary detailed LS-DYNA model includes side-cover-plate contact and describes subsequent rocking off the seat"},
+        {"source": "NIST NCSTAR 1-9 printed 482-483", "claim": "Reduced ANSYS connection uses discrete connection/contact/failure representations; equivalent effective plate restraint is not independently verified here"}
+      ],
+      "derived": {"difference_in": "2.612", "meaning": "travel_difference_not_capacity_or_safety_margin"},
+      "primary_sources": [
+        {"url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf#page=90", "sha256": "f3a001ab68dcc6b6e230456aac4729613740336796c1b2515671141589c38bfa"},
+        {"url": "https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9.pdf", "preserved": "sources/nist-ncstar-1-9-original.pdf", "pages": {"printed": [351, 353, 482, 483], "physical": [395, 397, 548, 549]}},
+        {"url": "https://www.metabunk.org/attachments/9114-pdf.28807/", "sha256": "c02608a6b90c11b7d06a8d6d515fe3d264cebe0f92babd5183c9a0527030caf6", "custody": "public_attachment_copy_not_authenticated_agency_original"},
+        {"url": "https://www.metabunk.org/attachments/1091-pdf.28913/", "sha256": "640cad6a983a269c77f52ae72224365ed2b4d1c6c90fb7959c2d0865c3a4c343", "custody": "public_attachment_copy_not_authenticated_agency_original"}
+      ],
+      "preserved_note": "preserved-records/c79-audit.md",
+      "limits": ["Requires axial and vertical engagement and adequate resistance", "No native UAF or NIST case reproduced", "Blocking translation is not proof against rocking or all support-loss routes"],
+      "next_records": ["Exact baseline and modified native cases and figure mapping", "Drawing revisions, contact, constraints and failure definitions", "Motion, rotation, contact-force and seat-reaction histories"],
+      "deliberate_concealment_established": false
+    },
+    {
+      "id": "NIST-DIMENSIONS",
+      "type": "publication_version_difference_and_unverified_historical_input_assertion",
+      "observations": [
+        {"source": "Original NCSTAR 1-9 printed 482", "axial_in": "6.25", "lateral_in": "5.5"},
+        {"source": "Original NCSTAR 1-9 printed 527", "bearing_seat_width_in": "11"},
+        {"source": "June 2012 errata page 2", "axial_in": "5.5", "lateral_in": "6.25", "bearing_seat_width_in": "12", "agency_explanation": "Typographical errors; correct dimensions and lateral displacements were used in analyses"},
+        {"source": "UAF printed 79 compared with NIST errata", "uaf_web_clearance_in": "6.290", "nist_lateral_threshold_in": "6.25", "difference_in": "0.040", "cause": null}
+      ],
+      "primary_sources": [
+        {"url": "https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9.pdf", "preserved": "sources/nist-ncstar-1-9-original.pdf", "pages": {"printed": [482, 527], "physical": [548, 593]}},
+        {"url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=901225", "preserved": "sources/nist-errata-2012-original.pdf", "sha256": "d5b006c0580acc73683660ec39eecbc2b4eefeba13d7ecbbf5ffa3787561d9c7", "physical_pages": [2]}
+      ],
+      "preserved_note": "preserved-records/c79-audit.md",
+      "limits": ["Errata establishes NIST's statement, not independent verification of historical solver inputs", "Prose changes do not prove wrong solver dimensions", "Original and later wording remain distinct"],
+      "next_records": ["Dated geometry and connection cards", "Run/version crosswalk", "Native displacement and support histories"],
+      "deliberate_concealment_established": false
+    },
+    {
+      "id": "NIST-FIG1268",
+      "type": "caption_panel_clock_inconsistency",
+      "observations": [
+        {"source": "Figure 12-68 panels", "pairs_seconds": [["6.2", "19.5"], ["7.4", "20.7"], ["8.5", "21.8"]], "offset_seconds": "13.3"},
+        {"source": "Figure 12-68 caption endpoints", "pairs_seconds": [["5.5", "21.5"], ["7.8", "23.8"]], "offset_seconds": "16.0"},
+        {"source": "Neighboring Figure 12-69", "control": "Panel and caption pairs agree with a 13.3-second offset"}
+      ],
+      "primary_sources": [{"url": "https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9.pdf#page=659", "preserved": "sources/nist-ncstar-1-9-original.pdf", "printed_page": 593, "physical_page": 659}],
+      "preserved_note": "preserved-records/timing-audit.md",
+      "original_data_record": "investigation/wtc7/animation-timing-audit-2026-10-16/timing-observations.json",
+      "limits": ["Human transcription and reproducible arithmetic, not a new solver result", "No preferred clock chosen", "Publication inconsistency does not establish solver failure"],
+      "next_records": ["Run/frame/time crosswalk", "Original manuscript and corrections", "Render/export scripts and native results"],
+      "deliberate_concealment_established": false
+    },
+    {
+      "id": "NIST-WESTPH",
+      "type": "published_model_observation_timing_residual",
+      "observations": [
+        {"source": "Table 3-1 observation", "seconds": "9.3"},
+        {"source": "Table 3-1 debris model views", "seconds": ["6.9", "7.3"]},
+        {"source": "Table 3-1 no-debris model views", "seconds": ["10.6", "10.9"]}
+      ],
+      "derived": {"model_minus_observation_seconds": ["-2.4", "-2.0"]},
+      "primary_sources": [{"url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=861610#page=85", "preserved": "sources/nist-ncstar-1a-original.pdf", "printed_page": 43, "physical_page": 85, "table": "3-1"}],
+      "preserved_note": "preserved-records/timing-audit.md",
+      "original_data_record": "investigation/wtc7/animation-timing-audit-2026-10-16/timing-observations.json",
+      "limits": ["Different model views are not independent runs or uncertainty bounds", "East-penthouse start aligned to zero", "Not a newly independently timed video result"],
+      "next_records": ["Original timing worksheets and uncertainties", "Synchronized source video trajectories", "Matching model-view and native run records"],
+      "deliberate_concealment_established": false
+    },
+    {
+      "id": "NIST-129VALIDATION",
+      "type": "validation_claim_and_proxy_endpoint_qualification",
+      "observations": [
+        {"source": "NIST FAQ Q25", "agency_claim": "Measured and analytically predicted floor-failure-to-roofline-motion intervals both 12.9 seconds"},
+        {"source": "NCSTAR 1A section 3.5.1", "observation_basis": "Exterior east-west vibration corroborates inferred hidden floor failures, not direct visual observation of those failures"},
+        {"source": "NCSTAR 1A section 3.5", "counterevidence_to_undisclosed_fitting_claim": "NIST discloses using some photographic observations to direct simulations and acknowledges later-stage uncertainty"}
+      ],
+      "derived": {"observation_arithmetic_seconds": "6.9 - (-6.0) = approximately 12.9", "model_arithmetic_seconds": "6.3 - (-6.6) = 12.9"},
+      "primary_sources": [
+        {"url": "https://www.nist.gov/world-trade-center-investigation/study-faqs/wtc-7-investigation", "locator": "Q25", "preserved_statements": "investigation/wtc7/animation-timing-audit-2026-10-16/nist-faq-capture-2026-10-16.json"},
+        {"url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=861610#page=84", "preserved": "sources/nist-ncstar-1a-original.pdf", "pages": {"printed": [42, 43, 44], "physical": [84, 85, 86]}}
+      ],
+      "preserved_note": "preserved-records/timing-audit.md",
+      "limits": ["Arithmetic agreement is real at published precision", "Proxy dependence does not prove the inferred failures absent or the comparison fitted", "Independent calibration/validation division remains unverified"],
+      "next_records": ["Event-identification and synchronization worksheets", "Calibration/holdout criteria", "Uncertainty and native comparison histories"],
+      "deliberate_concealment_established": false
+    },
+    {
+      "id": "AVI-METADATA",
+      "type": "container_stream_metadata_and_tool_report_difference",
+      "observations": [
+        {"source": "AVI avih bytes", "width": "998", "height": "725"},
+        {"source": "AVI strf BITMAPINFOHEADER bytes", "width": "996", "height": "724", "bits_per_pixel": "16", "compression_fourcc": "CRAM"},
+        {"source": "Recorded file output", "dimensions": "998 x 725", "codec_description": "uncompressed"},
+        {"source": "Recorded FFmpeg 7.1.1 output", "dimensions": "996 x 724", "codec_description": "Microsoft Video 1 / msvideo1", "pixel_format": "RGB555LE", "fps": "5"}
+      ],
+      "primary_sources": [
+        {"url": null, "url_status": "acquisition_origin_unknown_do_not_invent", "preserved": "research/faraday-wtc7-model-compare/media/nist-simulations/CaseB-Temp-4.0hr_Dmg_NorthWestView.avi", "sha256": "f74f653134c8016d858840334919bfedba96fb36dec1db29eff47cb3a0dd5744"},
+        {"url": "https://learn.microsoft.com/en-us/windows/win32/directshow/avi-riff-file-reference", "role": "field_definitions_not_authentication_or_cause"}
+      ],
+      "preserved_note": "preserved-records/avi-header-audit.md",
+      "untested_hypotheses": ["Replacement or non-original copy", "Export or transcoding behavior", "Padding or cropping", "Malformed header", "Parser conventions"],
+      "limits": ["Hash pins bytes, not origin or NIST-master identity", "No metadata interpretation chosen", "No deliberate replacement demonstrated"],
+      "next_records": ["Authenticated independent source copies", "Acquisition/export history", "Frame-by-frame comparison with source-authenticated animation"],
+      "deliberate_concealment_established": false
+    },
+    {
+      "id": "UAF-PDF-VERSIONS",
+      "type": "two_preserved_publication_versions",
+      "observations": [
+        {"source": "March2020 PDF", "figure_3_3": "Complete column illustration", "bytes": 45196602},
+        {"source": "March-2020 PDF", "figure_3_3": "Toolbar fragment and clipped column illustration", "bytes": 45194303},
+        {"source": "Pairwise comparison", "figure_3_4_embedded_image": "matching hashes", "vertical_placement_difference_pdf_points": "approximately 9.20", "other_matching_pages_at_defined_text_and_150dpi_raster_test": 124}
+      ],
+      "primary_sources": [
+        {"url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf#page=91", "preserved": "investigation/wtc7/uaf-pdf-comparison-2026-10-18/sources/march2020.pdf", "sha256": "f3a001ab68dcc6b6e230456aac4729613740336796c1b2515671141589c38bfa"},
+        {"url": "https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March-2020.pdf#page=91", "preserved": "investigation/wtc7/uaf-pdf-comparison-2026-10-18/sources/march-2020.pdf", "sha256": "41dd3390627fac24c2bd696160c48f15e05d3213cc05325c4e4e89608df96d27"}
+      ],
+      "preserved_note": "preserved-records/uaf-pdf-comparison.md",
+      "original_data_record": "investigation/wtc7/uaf-pdf-comparison-2026-10-18/results/page-resource-and-command-differences.json",
+      "limits": ["No preferred edition selected", "Internal object and metadata differences retained separately", "No changed native model or engineering calculation established"],
+      "next_records": ["Publication chronology", "Original figure/export files", "Native-case mapping"],
+      "deliberate_concealment_established": false
+    }
+  ],
+  "new_collapse_experiments": 0,
+  "rules": ["Preserve each observation and source separately", "Do not overwrite earlier records", "Do not substitute summaries for original sources", "Do not multiply corroboration by copying", "No source origin invented for the AVI", "No historical cause or intent inferred from these discrepancies"]
+}
