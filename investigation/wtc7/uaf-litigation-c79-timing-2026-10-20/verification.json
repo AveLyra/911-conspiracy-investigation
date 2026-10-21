@@ -1,0 +1,42 @@
+{
+  "date_local": "2026-10-20",
+  "timezone": "America/New_York",
+  "runtime": "Existing Python 3.13.7, PyMuPDF 1.27.2.2, pypdf",
+  "audit_py_completed": true,
+  "source_files_unchanged": true,
+  "post_audit_checks_passed": 16,
+  "post_audit_checks": [
+    "Five source hashes unchanged",
+    "Cole 18 extracted page texts match prior copy",
+    "Four exact-term searches of Cole opinion have no hits",
+    "NIST Table 8-2 event order retained",
+    "Independent Decimal calculation gives 0.08 s",
+    "Figure 12-68 caption and panel offsets retained separately",
+    "Figure 3.4 decoded streams match both UAF editions",
+    "Figure 3.4 decoded pixels match both UAF editions",
+    "Figure 3.7 decoded streams match both UAF editions",
+    "Figure 3.7 decoded pixels match both UAF editions",
+    "Actual Cole submission remains explicitly unverified",
+    "No FE execution claimed",
+    "Quick raw hash and size match acquisition receipt",
+    "Cole raw hash and size match acquisition receipt",
+    "AE2022 opinion raw hash and size match acquisition receipt",
+    "Direct FAQ access failure retained"
+  ],
+  "initial_check_failures": [
+    "Default python3 in source checkout lacked fitz; used existing Python 3.13.7 instead, without installation or environment modification.",
+    "Cross-page exact prose match was interrupted by a page footer; two explicit page-specific fragments now preserve and check the sentence boundary. No source text changed."
+  ],
+  "actually_visually_reviewed_complete_pages": {
+    "NIST NCSTAR 1-9 physical": [396, 397, 659],
+    "UAF physical": [89, 93, 94, 97],
+    "Cole govinfo physical": [18],
+    "AE2022 govinfo physical": [9]
+  },
+  "other_visual_review": "UAF Figure 3.4 and 3.7 embedded images inspected at original resolution.",
+  "rendering_diagnostic": "MuPDF emitted a No common ancestor in structure tree diagnostic while creating the review set; listed pages and extracted images rendered and were inspected. No repair of a source PDF was attempted.",
+  "legal_review": "Public legal history only. Distinguishes availability, actual submission, allegations and judicial holdings; preserves adverse Quick/Cole holdings; no case-specific draft, discovery position, transmission or litigation record changed.",
+  "publication_payload": "Original research notes and three unaltered public court opinions. No raw party complaint, press-release contact fields, complete webpage HTML, private correspondence or credentials published.",
+  "scientific_scope": "Source integrity, image/text identity and arithmetic only. No solver run, new historical video timing, established cause or intent, or discrepancy adjudication.",
+  "publication_status_at_creation": "Prepared locally; remote verification follows commit and push."
+}
