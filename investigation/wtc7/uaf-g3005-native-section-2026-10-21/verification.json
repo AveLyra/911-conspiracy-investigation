@@ -1,0 +1,46 @@
+{
+  "date_local": "2026-10-21",
+  "input_checks_passed": 18,
+  "synthetic_unit_tests_passed": 6,
+  "unit_test_command": "python3 -B -m unittest -v test_audit",
+  "native_model_run": false,
+  "actual_UAF_G3005_section": null,
+  "actual_NIST_G3005_section": null,
+  "claim_strengths": [
+    {"claim": "The rendered W21 label and underlying W24 image label differ.", "type": "source observation", "grade": "A within the pinned PDF representations", "alternative": "A stale label may have been corrected without changing model inputs.", "discriminator": "Matching native geometry/assignment and export history."},
+    {"claim": "No declared native suffix candidate was found in the enumerated scopes.", "type": "bounded availability observation", "grade": "A for the recorded snapshots only", "alternative": "Needed models may exist outside these roots, under another format, or in the unacquired dataset.", "discriminator": "A new native file, member manifest or authenticated export."},
+    {"claim": "UAF actually used W21x44 or W24x55 for G3005.", "type": "unresolved native assignment", "grade": "D underdetermined", "alternative": "Either label could fail to describe the native geometry.", "discriminator": "Matching case-to-figure crosswalk and active member definition."},
+    {"claim": "The section choice materially changes the published numerical conclusion.", "type": "unmeasured sensitivity", "grade": "D underdetermined", "alternative": "The result may be insensitive within correctly matched cases.", "discriminator": "Predeclared matched section/bracing comparison after native baseline reproduction."}
+  ],
+  "four_source_hashes_unchanged": true,
+  "six_physical_enumerations_completed_without_errors": true,
+  "zip_directories_checked": 5,
+  "zip_member_count_including_duplicate_copies": 115,
+  "zip_native_suffix_candidates": [],
+  "both_UAF_PDF_attachment_counts": 0,
+  "complete_pages_actually_visually_reviewed": {
+    "UAF": [97, 99],
+    "NIST NCSTAR1-9": [394, 398]
+  },
+  "review_images": [
+    {"source": "uaf", "physical_page": 97, "file": "uaf-physical-97.png", "sha256": "ddecb5b78429be6f8b30e9418d7cdc3d741263d2f81aa3d641fa7a5bbd369f28", "dpi": 130},
+    {"source": "uaf", "physical_page": 99, "file": "uaf-physical-99.png", "sha256": "93722b097bbf5a58d060f4de7f174bb5b48a87ab849334f19b30f57c63166d8c", "dpi": 130},
+    {"source": "nist", "physical_page": 394, "file": "nist-physical-394.png", "sha256": "6d87daeae7d4f30f39542c0b9f5b13061e915ade85a8ec4650330acf44e774bd", "dpi": 130},
+    {"source": "nist", "physical_page": 398, "file": "nist-physical-398.png", "sha256": "29d1cfa45aeb657ea8b8a707088fea4b3826b5725fc5938e08a6dbcc4be5f7c1", "dpi": 130}
+  ],
+  "review_image_location": "Intel operational public tree, investigation/wtc7/uaf-g3005-native-section-2026-10-21/review; not newly republished",
+  "manually_inspected_locators": [
+    {"figure": "3.11", "physical_page": 97, "locator": "Model-9_Nonlinear_10s.odb", "native_file_recovered": false},
+    {"figure": "3.14", "physical_page": 99, "locator": "Model-10_Nonlinear_10s_No_Support.odb", "native_file_recovered": false}
+  ],
+  "workflow_limitations": [
+    "Initial pathlib metadata-heavy share enumeration was interrupted before writing a result. It was replaced by bounded rg --files -uuu --no-follow scans; all six completed without errors.",
+    "An attempted ps diagnostic was denied by the sandbox; it supplied no source evidence.",
+    "Native file absence is scoped by roots, suffixes and plaintext scan. It is not an assertion that UAF never published its models.",
+    "Large Motion Lab archive full hashes were not computed; matching ZIP directory records do not establish complete byte identity.",
+    "The earlier separate-raster manual label transcription was preserved, not newly produced by OCR in this followup.",
+    "No full E12/13 sheet or model section definition was newly authenticated."
+  ],
+  "public_payload": "Original research notes, checker/tests, scoped inventory and source references only. No new complete UAF report/figure, private case record, correspondence, third-party contact detail or credential.",
+  "publication_status_at_creation": "Local verification; commit and remote checks follow separately."
+}
