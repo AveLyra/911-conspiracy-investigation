@@ -1,0 +1,7 @@
+{
+  "stage": "September thermal-node parser after full June archive pass",
+  "exception": "ValueError: invalid literal for int() with base 10: '842747,'",
+  "cause": "New census parser initially assumed whitespace-delimited numeric thermal cards; source uses comma-delimited free format.",
+  "attribution": "Analysis-code error, not a source defect or agency discrepancy.",
+  "disposition": "No scientific result accepted from failed run. Added comma/whitespace parser and regression test; rerun required."
+}

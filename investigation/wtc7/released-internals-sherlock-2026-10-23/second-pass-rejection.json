@@ -1,0 +1,8 @@
+{
+  "stage": "Source comparison of September thermal statistics",
+  "problem": "Parser assigned second and third fields to TB and TS, opposite the keyword's NID, TS, TB, LCID layout.",
+  "detection": "Counts of repeated IDs agreed, but claimed zero unequal coefficients contradicted earlier source-pinned counts; inspected raw cards and corrected named field assignment.",
+  "attribution": "New analysis-code error, not conflicting agency evidence.",
+  "retained_failed_output": "rejected-field-order-result.json",
+  "disposition": "Rejected thermal-field interpretation. Test now uses actual raw-card ordering. Final rerun and separately implemented CSV-reader comparison required."
+}

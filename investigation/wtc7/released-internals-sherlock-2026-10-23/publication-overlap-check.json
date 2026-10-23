@@ -1,0 +1,94 @@
+{
+  "checks": [
+    "all 288 case/floor/step cells present",
+    "all previous overlap summary fields unchanged by range extension",
+    "BF row totals match full census",
+    "three case maxima directly checked at raw physical lines",
+    "order matches original floor-driver text"
+  ],
+  "limitations": "post-result checker; not solver execution or complete independent regeneration of all overlap groups",
+  "peak_examples": [
+    {
+      "case": "A",
+      "driver": "CaseA_Temps/WTC7-Fl14-10.int",
+      "driver_sha256": "07ec2f96a395187372df8cf39ccb0278ba9cac9e3d9bad848a7de61c635efb50",
+      "node_id": 32223,
+      "selected_as": "largest within-driver range among active top-level branches; exploratory descriptive extreme",
+      "source_rows": [
+        {
+          "archive_path": "CaseA_Temps/WTC7-Fl14-CoreB-10.int",
+          "body_sha256": "c139fb53d4919ef4f008da78f5c65dac492a05c92c1d73abdcdb1f5714426e68",
+          "original_line": "BF,32223,TEMP,716.37126158898",
+          "physical_line": 3037
+        },
+        {
+          "archive_path": "CaseA_Temps/WTC7-Fl14-1C137-10.int",
+          "body_sha256": "cdbfb309412b650fd9daec8316148e79a69f5e534879db14e184ee1b19dce7b1",
+          "original_line": "BF,32223,TEMP,147.92918794817",
+          "physical_line": 4
+        },
+        {
+          "archive_path": "CaseA_Temps/WTC7-Fl14-2C137-10.int",
+          "body_sha256": "6e7c5984be48c349f85b5825c338390c3fe9a330fd70dfc93185c8a14e4f6972",
+          "original_line": "BF,32223,TEMP,25",
+          "physical_line": 12
+        }
+      ]
+    },
+    {
+      "case": "B",
+      "driver": "CaseB_Temps/INTFILES+10%14SEP07/WTC7-Fl14-10.int",
+      "driver_sha256": "64c360a080b350cb93ec88fe46dcafc7e4a70c13b95c132a57760f8a429e1c31",
+      "node_id": 32223,
+      "selected_as": "largest within-driver range among active top-level branches; exploratory descriptive extreme",
+      "source_rows": [
+        {
+          "archive_path": "CaseB_Temps/INTFILES+10%14SEP07/WTC7-Fl14-CoreB-10.int",
+          "body_sha256": "427bdd0d3fb4df21712002fe6e58df08347487f77a20d754cf7014f8439439af",
+          "original_line": "BF,32223,TEMP,735.35309903946",
+          "physical_line": 3037
+        },
+        {
+          "archive_path": "CaseB_Temps/INTFILES+10%14SEP07/WTC7-Fl14-1C137-10.int",
+          "body_sha256": "68902244390d7bfdd2a5d3d4e5c68b093ed1710a354a25a9f2dd48ada0afcd5e",
+          "original_line": "BF,32223,TEMP,154.12150800272",
+          "physical_line": 4
+        },
+        {
+          "archive_path": "CaseB_Temps/INTFILES+10%14SEP07/WTC7-Fl14-2C137-10.int",
+          "body_sha256": "6e7c5984be48c349f85b5825c338390c3fe9a330fd70dfc93185c8a14e4f6972",
+          "original_line": "BF,32223,TEMP,25",
+          "physical_line": 12
+        }
+      ]
+    },
+    {
+      "case": "C",
+      "driver": "CaseC_Temps/WTC7-Fl14-10.int",
+      "driver_sha256": "07ec2f96a395187372df8cf39ccb0278ba9cac9e3d9bad848a7de61c635efb50",
+      "node_id": 32223,
+      "selected_as": "largest within-driver range among active top-level branches; exploratory descriptive extreme",
+      "source_rows": [
+        {
+          "archive_path": "CaseC_Temps/WTC7-Fl14-CoreB-10.int",
+          "body_sha256": "f9dea199e5a2e6529db42f3316b70439b1a9477eeacbc471a6943428ef7e76cd",
+          "original_line": "BF,32223,TEMP,670.91492016075",
+          "physical_line": 3037
+        },
+        {
+          "archive_path": "CaseC_Temps/WTC7-Fl14-1C137-10.int",
+          "body_sha256": "8d887c2f14e04f727751f70c006a209b41e7e47a615d3a3f6decc65753366b38",
+          "original_line": "BF,32223,TEMP,136.79702245968",
+          "physical_line": 4
+        },
+        {
+          "archive_path": "CaseC_Temps/WTC7-Fl14-2C137-10.int",
+          "body_sha256": "6e7c5984be48c349f85b5825c338390c3fe9a330fd70dfc93185c8a14e4f6972",
+          "original_line": "BF,32223,TEMP,25",
+          "physical_line": 12
+        }
+      ]
+    }
+  ],
+  "status": "pass"
+}
