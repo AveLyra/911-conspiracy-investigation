@@ -1,0 +1,37 @@
+{
+  "schema_version": "provisional-ranking-v1",
+  "date": "2026-10-25",
+  "status": "subjective_retrospective_judgment_not_probability_or_new_evidence",
+  "column_order": ["fire_generally", "nist_exact", "deliberate_removal"],
+  "nested_categories": "nist_exact is a subset of fire_generally; scores are not exclusive probabilities and must not be summed across candidates",
+  "rows": [
+    {"id": "PR01", "label": "Observed fire and reported developing distress", "points": [0.5, 0.5, 0]},
+    {"id": "PR02", "label": "Grouped movement and conditional motion compatibility", "points": [0.5, 0.5, 1]},
+    {"id": "PR03", "label": "Specific NIST motion-fidelity discrepancies", "points": [0, -1.5, 0]},
+    {"id": "PR04", "label": "Specific NIST thermal-history/input limitations", "points": [0, -0.5, 0]},
+    {"id": "PR05", "label": "Provisional acoustic credit; not established cause attribution", "points": [0, 0, 0.5]},
+    {"id": "PR06", "label": "Generic incomplete historical chain; no score assigned to any candidate", "points": [0, 0, 0]},
+    {"id": "PR07", "label": "No reported explosive sounds; unsupported premise excluded", "points": [0, 0, 0]},
+    {"id": "PR08", "label": "Other unjoined material/documentary leads and unmatched comparators", "points": [0, 0, 0]}
+  ],
+  "favorable": [1, 1, 1.5],
+  "adverse": [0, -2, 0],
+  "net": [1, -1, 1.5],
+  "nominal_rank": ["deliberate_removal", "fire_generally", "nist_exact"],
+  "unscored": ["other_fire_sequences", "other_or_mixed_mechanisms"],
+  "scenarios": [
+    {"id": "S00", "overrides": [], "expected": [1, -1, 1.5]},
+    {"id": "S01", "overrides": [{"row": "PR05", "candidate": "deliberate_removal", "value": 0}], "expected": [1, -1, 1]},
+    {"id": "S02", "overrides": [{"row": "PR02", "candidate": "deliberate_removal", "value": 0.5}], "expected": [1, -1, 1]},
+    {"id": "S03", "overrides": [{"row": "PR05", "candidate": "deliberate_removal", "value": 0}, {"row": "PR02", "candidate": "deliberate_removal", "value": 0.5}], "expected": [1, -1, 0.5]},
+    {"id": "S04", "overrides": [{"row": "PR01", "candidate": "fire_generally", "value": 1}, {"row": "PR01", "candidate": "nist_exact", "value": 1}], "expected": [1.5, -0.5, 1.5]}
+  ],
+  "limitations": [
+    "Weights are analyst choices, not calibrated effect sizes or likelihood ratios.",
+    "PR05 is a discretionary assumption scenario; the underlying acoustic audit remains causally underdetermined.",
+    "Source families and correlated motion/model findings are not independent votes.",
+    "Zero missing-chain penalty is not validation, and actual historical chains remain unresolved.",
+    "The score of a broad family versus a specified sequence has a specificity disadvantage.",
+    "No simulation, media analysis, source authentication or scientific reproduction is performed by this tally."
+  ]
+}
