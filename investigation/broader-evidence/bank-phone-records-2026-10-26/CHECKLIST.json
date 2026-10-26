@@ -1,0 +1,89 @@
+{
+  "request": "Pursue original bank and telephone records; preserve conflicts; document findings/gaps; commit and push publicly as AveLyra",
+  "items": [
+    {
+      "id": "R01",
+      "requirement": "Original bank records first",
+      "outcome": "Pursued exact receipt, repayment and teller targets; original FBI financial/interview reports acquired; specified bank originals remain open.",
+      "locations": [
+        "RECORD.md#bp01",
+        "RECORD.md#bp02",
+        "RECORD.md#bp03",
+        "NEXT-RECORDS.md"
+      ],
+      "verification": "Acquired-byte hashes; original-page inspection; exact exhibit/Bates references",
+      "unresolved": "BPR01\u201305 remain open"
+    },
+    {
+      "id": "R02",
+      "requirement": "Original telephone records first",
+      "outcome": "Acquired carrier return, loading form and actual carrier call-detail sample; February4 cellular raw returns remain open.",
+      "locations": [
+        "RECORD.md#bp04",
+        "RECORD.md#bp07",
+        "RECORD.md#bp08",
+        "NEXT-RECORDS.md"
+      ],
+      "verification": "FBI source PDFs, visual pages and8-row sample; reproduced67-row count",
+      "unresolved": "BPR06\u201309 remain open"
+    },
+    {
+      "id": "R03",
+      "requirement": "Preserve conflicting records",
+      "outcome": "Retained sources, signs, date/count/line/component/funder descriptions and earlier unresolved statuses without selecting a preferred value.",
+      "locations": [
+        "RECORD.md",
+        "CALL-ROWS.json",
+        "SOURCES.json"
+      ],
+      "verification": "Original source hashes; five preceding source rehashes; original records never edited",
+      "unresolved": "Causes, record mappings and discrepancy adjudication not established"
+    },
+    {
+      "id": "R04",
+      "requirement": "Document findings and gaps",
+      "outcome": "Ten labelled observations, confirming/contrary material, exact source locators, ten original-record targets and limited retrieval failures.",
+      "locations": [
+        "RECORD.md",
+        "NEXT-RECORDS.md",
+        "METHOD.md"
+      ],
+      "verification": "URL/hash/page mapping; acquired versus described records distinguished",
+      "unresolved": "No claim of complete public/docket search or final liability result"
+    },
+    {
+      "id": "R05",
+      "requirement": "Public AveLyra commit and push",
+      "outcome": "Prepared additive text-only payload for normal commit/push; exact identity/destination verified; execution evidence retained separately after publication.",
+      "locations": [
+        "README.md",
+        "MANIFEST.json"
+      ],
+      "verification": "ghave account AveLyra; PUBLIC repository; gitave author/committer; remote branch/file verification follows",
+      "unresolved": "Do not equate prepared payload with published commit"
+    },
+    {
+      "id": "R06",
+      "requirement": "Revision accountability",
+      "outcome": "Saved predecessors for draft updates, actual text diffs and unchanged previous-public-record inventory.",
+      "locations": [
+        "EDITORIAL-CORRECTIONS.json",
+        "diffs/publication-additions.diff",
+        "diffs/unchanged-records.json"
+      ],
+      "verification": "Git diff of new files against /dev/null; native draft history retained",
+      "unresolved": "PDF rendering is separate from text-diff verification"
+    },
+    {
+      "id": "R07",
+      "requirement": "Disclosure and authority boundaries",
+      "outcome": "Only public-source research notes and non-identifying fields; no raw PDFs, personal identifiers, private correspondence or litigation edits.",
+      "locations": [
+        "METHOD.md",
+        "SOURCES.json"
+      ],
+      "verification": "Manual full-payload read and identifier checks before commit; staged file list constrained",
+      "unresolved": "No private push, outreach, paid access, legal filing, overwrite or deletion authorized/performed"
+    }
+  ]
+}
