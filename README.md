@@ -47,6 +47,7 @@ could change each assessment.
 ### Where to start
 
 - [Crucial findings and their limits](CRUCIAL-FINDINGS.md)
+- [DEP preservation anomalies and unresolved recovery outcomes](investigation/wtc7/municipal-preservation-findings-2026-10-15/README.md)
 - [Current scope and questions](investigation/wtc7/CHARTER.md)
 - [Current status and limits](investigation/wtc7/STATUS.md)
 - [Overall causal-chain assessment](investigation/wtc7/causal-chain-synthesis/report.md)
