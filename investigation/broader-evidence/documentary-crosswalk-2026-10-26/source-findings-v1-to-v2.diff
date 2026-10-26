@@ -1,0 +1,49 @@
+diff --git a/research/broader-evidence-review-2026-10-26/build_source_findings.py b/research/broader-evidence-review-2026-10-26/build_source_findings-v2.py
+index 1e34649f..7bbc0278 100644
+--- a/research/broader-evidence-review-2026-10-26/build_source_findings.py
++++ b/research/broader-evidence-review-2026-10-26/build_source_findings-v2.py
+@@ -46,7 +46,7 @@ add('S003','Later oversight nonproduction is a distinct event',
+     ['later disclosure/possible concealment','no established pre-attack-purpose bridge'])
+ add('S004','FBI-asset tenancy and conflicting disclosures',
+     'The OIG reports that Hazmi and Mihdhar boarded with an FBI informational asset in 2000. It records inconsistent accounts about whether the asset told his handler about them, what identities were supplied and what follow-up occurred.',
+-    OIG,['III.B.3; blocks P199–P211; notes 130–135 at P653–P658'],['B113'],
++    OIG,['III.B.3; blocks P199–P211; notes 130–135 at P653–P658'],['B118'],
+     'The asset and retired handler were not interviewed directly by OIG, although the handler had spoken to FBI supervisors and congressional investigators. OIG notes an inconclusive polygraph and the San Diego FBI conclusion that the asset was not complicit. None should be dropped.',
+     ['Contemporaneous asset contact reports','Complete original post-attack statements','Congressional interview/testimony originals and OIG interview requests'],
+     'Cross-reference dated contact notes against each later account and identify which assertions are independently documented.',
+@@ -54,7 +54,7 @@ add('S004','FBI-asset tenancy and conflicting disclosures',
+     ['assistance/contact','FBI source handling','foreknowledge not established'])
+ add('S005','Documentation criticism differs from a proved policy violation',
+     'The OIG criticizes thin annual bona-fides documentation and missing retrievable information, while saying no specific FBI rule required the handler to investigate or record the identities of these boarders.',
+-    OIG,['IV.B.3; blocks P511–P527; conclusions P594–P596'],['B113'],
++    OIG,['IV.B.3; blocks P511–P527; conclusions P594–P596'],['B118'],
+     'The lack of a specific boarder rule and disagreement among other agents are contrary to a blanket “proved rule violation” characterization. The policy review still identifies a concrete oversight weakness.',
+     ['Controlling contemporaneous asset policies','Annual source evaluations with supporting checks','Contact-report retention/indexing rules'],
+     'Inspect the actual evaluation and policy texts, separating a missing policy from failure to follow an existing one.',
+@@ -62,7 +62,7 @@ add('S005','Documentation criticism differs from a proved policy violation',
+     ['institutional conduct','source reliability','no automatic attack direction'])
+ add('S006','A documented payment/closure lead without an established purpose',
+     'OIG note 133 reports that the initially unpaid asset received $100,000 and was closed as an asset in July 2003.',
+-    OIG,['Note 133; derived block P656'],['B113'],
++    OIG,['Note 133; derived block P656'],['B118'],
+     'The note does not establish what the payment compensated, who approved it or why the asset was closed. A hush-payment or protection theory is a hypothesis, not a result of reading the amount.',
+     ['Payment authorization and purpose','Disbursement voucher','Source closeout and approval records'],
+     'Obtain the payment/closeout authorization before assigning a motive.',
+@@ -141,7 +141,7 @@ def main():
+     output=dict(status='First bounded source tranche; not complete verification of all assessment claims',findings=records,source_pins=acquisitions,
+                 source_scope=dict(primary_hosted_documents=3,additional_same_chain_FBI_representation=1,catalog_representation=1,original_bank_records_acquired=0,original_CIA_CIR_acquired=0,original_interview_or_deposition_records_acquired=0,native_model_runs=0),
+                 hypothesis_separation=['assistance','foreknowledge','deliberate nonintervention','demolition','subsequent concealment'])
+-    with (R/'source-findings-v1.json').open('x') as f:json.dump(output,f,indent=2,ensure_ascii=False);f.write('\n')
++    with (R/'source-findings-v2.json').open('x') as f:json.dump(output,f,indent=2,ensure_ascii=False);f.write('\n')
+     lines=['# Saudi-assistance and FBI-source-handling review','',
+            'This is a checked-source first tranche, not acceptance of the documentary assessment. Each S-ID separates the report’s content from an unresolved historical inference. All B/H inventory assertions remain claims to test; these source findings support only their stated narrower propositions.','']
+     for r in records:
+@@ -150,7 +150,7 @@ def main():
+                   'Contrary evidence and limits: '+r['contrary_evidence_and_limits'],'',
+                   'Needed: '+'; '.join(r['missing_records'])+'.','',
+                   'Next test: '+r['smallest_discriminating_step'],'']
+-    with (R/'SAUDI-FBI-REVIEW-v1.md').open('x') as f:f.write('\n'.join(lines)+'\n')
++    with (R/'SAUDI-FBI-REVIEW-v2.md').open('x') as f:f.write('\n'.join(lines)+'\n')
+     print(json.dumps(dict(source_findings=len(records),original_bank_or_interview_records_acquired=0,publication_performed=False)))
+ 
+ if __name__=='__main__':main()

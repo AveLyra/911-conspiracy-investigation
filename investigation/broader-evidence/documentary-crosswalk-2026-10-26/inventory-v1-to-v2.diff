@@ -1,0 +1,67 @@
+diff --git a/research/broader-evidence-review-2026-10-26/build_inventory.py b/research/broader-evidence-review-2026-10-26/build_inventory-v2.py
+index f2815df0..c635d146 100644
+--- a/research/broader-evidence-review-2026-10-26/build_inventory.py
++++ b/research/broader-evidence-review-2026-10-26/build_inventory-v2.py
+@@ -31,7 +31,6 @@ MAP = {
+     290: ('partly covered', [7,87,124], 'Mechanism versus model-output limits and generator lead overlap; every diesel-history account is not covered.'),
+     292: ('partly covered', [72,73,74,101,102,103,104,105,106,107,108,127,130,131], 'UAF geometry/state and prescribed-result limits overlap; report review history and every support-loss case are separate assertions.'),
+     295: ('partly covered', [57,86], 'Source-specific destructive-event timing overlaps; exact Jennings/Hess recording chains remain to test.'),
+-    310: ('partly covered', [113,114], 'Canine alerts and UMS investigation are different from the Sirius/WTC-security-detail claim; keep those propositions separate.'),
+     311: ('partly covered', [115,116], 'Contractor scope/time is covered; director biography and day-of-attack control must be separately verified.'),
+     312: ('partly covered', [42,115,116], 'Installed conditions/access evidence overlaps; specific elevator/powerdown allegations are additional leads.'),
+     313: ('partly covered', [59,60,65,66,109,110,111,112,123], 'Actual steel records and preservation vulnerabilities are covered; every disposal decision is not.'),
+@@ -40,9 +39,9 @@ MAP = {
+     316: ('partly covered', [46,48,49,50,51,52,54,132,133,134], 'Release/reproduction/notice questions overlap; withholding, legal merits and fraud are separate propositions.'),
+ }
+ HMAP = {
+-    9: ('partly covered', [59,65,66,109,110,111,112,123], 'Related steel/preservation chain; specific NSF request and recycling decision require original hearing/decision records.'),
+-    11: ('partly covered', [113,114], 'UMS samples and VHS examination are covered; the October 17 Exxon possible-match/clock lead is a distinct unresolved chain.'),
+-    15: ('partly covered', [113,114], 'Related UMS file family; the exact June 2002 deletion sheet is an additional disclosure-scope claim.'),
++    10: ('partly covered', [59,65,66,109,110,111,112,123], 'Related steel/preservation chain; specific NSF request and recycling decision require original hearing/decision records.'),
++    12: ('partly covered', [113,114], 'UMS samples and VHS examination are covered; the October 17 Exxon possible-match/clock lead is a distinct unresolved chain.'),
++    16: ('partly covered', [113,114], 'Related UMS file family; the exact June 2002 deletion sheet is an additional disclosure-scope claim.'),
+ }
+ 
+ def save(p, value):
+@@ -65,11 +64,11 @@ def edition(file, line, headings):
+     return dict(film='Cross-film context and later evidence', edition='No scene-level attribution established; later 2025/2026 evidence is not content of a 2004 film', attribution_verified=False)
+ 
+ def topic_priority(text, line, file):
+-    if (file.startswith('HIGHLIGHT') and line in [7,8,10]) or (file.startswith('ASSESSMENT') and line in [52,201,335]):
++    if (file.startswith('HIGHLIGHT') and line in [7,8,11]) or (file.startswith('ASSESSMENT') and line in [52,201,335,359,361,363,365,367,398,399]):
+         return 'P1 Saudi assistance / FBI-source and intelligence handling', 'Concrete assistance, dated intelligence and source-handling decisions can be tested against original records.'
+-    if any(x in text.lower() for x in ['interrogat', 'detainees', 'voluntariness', 'planning narrative']):
++    if any(x in text.lower() for x in ['interrogat', 'detainees', 'voluntariness', 'planning narrative', 'coercive questioning']):
+         return 'P1 interrogation-dependent narrative', 'Trace exact propositions to independent evidence; distinguish date, voluntariness, reliability and corroboration.'
+-    if (216 <= line <= 221 and file.startswith('ASSESSMENT')) or any(x in text for x in ['Mineta', 'FAA executives', 'FAA manager']):
++    if (216 <= line <= 221 and file.startswith('ASSESSMENT')) or (file.startswith('ASSESSMENT') and line==400) or any(x in text for x in ['Mineta', 'FAA executives', 'FAA manager']):
+         return 'P1 FAA/NORAD/Mineta and preservation', 'Operational recordings and dated responses can discriminate conflicting chronology and subsequent conduct.'
+     if any(x in text.lower() for x in ['briefing', 'presidential warnings', 'daily briefing']):
+         return 'P1 presidential warnings', 'Test warning content, actual recipients and response rather than general foreseeability alone.'
+@@ -117,7 +116,7 @@ def generate(file, prefix):
+         boundaries = [0] + [m.end() for m in re.finditer(r'(?<=[.!?])\s+(?=[A-Z*“])', exact)] + [len(exact)]
+         boundaries = sorted(set(boundaries))
+         children = [dict(id=ident + f'.s{i+1:02d}', character_span=[a,b], exact_wording=exact[a:b], coverage=status, M_ids=[f'M{x:03d}' for x in mids], source_status='Inventory only; assessment verdict is a proposition to test, not inherited truth') for i,(a,b) in enumerate(zip(boundaries,boundaries[1:]))]
+-        record = dict(id=ident, source_file=file, source_line_start=number, source_line_end=end,
++        record = dict(unit_kind='film-or-lead-table-row-with-assessment' if raw.startswith('|') else 'assessment-prose-or-methodological-proposal', id=ident, source_file=file, source_line_start=number, source_line_end=end,
+                       exact_original_wording=exact, subject=label, heading_context=list(headers),
+                       film_attribution=edition(file,number,headers), coverage=status,
+                       matching_M_ids=[f'M{x:03d}' for x in mids], coverage_reason=reason,
+@@ -148,14 +147,14 @@ def main():
+                    source_hashes={n:hashlib.sha256((R/n).read_bytes()).hexdigest() for n in line_coverage},
+                    line_accountability=line_coverage,
+                    qualification='This inventory is not verification of film occurrence, primary evidence, earlier verdicts or all compound facts. One chain repeated across rows remains one chain.')
+-    save(R/'claim-crosswalk-v1.json',inventory)
++    save(R/'claim-crosswalk-v2.json',inventory)
+     text=['# Documentary-claim inventory and M001–M134 cross-reference','',
+-          'Every assessment verdict below is retained as a claim to test. Coverage is topic/claim overlap, not agreement, authentication or engineering validation. B and H IDs never renumber the frozen M baseline. Exact full text, citations, line accounting and child spans are in `claim-crosswalk-v1.json`.','',
++          'Every assessment verdict below is retained as a claim to test. Coverage is topic/claim overlap, not agreement, authentication or engineering validation. B and H IDs never renumber the frozen M baseline. Exact full text, citations, line accounting and child spans are in `claim-crosswalk-v2.json`.','',
+           '| ID | Original source line(s) | Subject | Existing coverage | M IDs |','|---|---|---|---|---|']
+     for r in records:
+         title=r['subject'].replace('|',' / ').replace('\n',' ')[:170]
+         text.append(f"| {r['id']} | {r['source_file']}:{r['source_line_start']}–{r['source_line_end']} | {title} | {r['coverage']} | {', '.join(r['matching_M_ids']) or '—'} |")
+-    with (R/'CROSSWALK-v1.md').open('x') as f:f.write('\n'.join(text)+'\n')
++    with (R/'CROSSWALK-v2.md').open('x') as f:f.write('\n'.join(text)+'\n')
+     print(json.dumps({k:inventory[k] for k in ['record_count','child_text_spans','coverage_counts']},indent=2))
+ 
+ if __name__=='__main__':

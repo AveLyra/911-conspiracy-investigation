@@ -1,0 +1,55 @@
+{
+  "items": [
+    {
+      "id": "BE-AE01",
+      "owner": "our tooling",
+      "failed_command": "bundled Python -B read_documents.py",
+      "exit_code": 1,
+      "error": "ModuleNotFoundError: No module named bs4",
+      "effect": "Import failed before document outputs; no source evidence changed",
+      "repair": "Separate v2 uses stdlib HTMLParser; no installation",
+      "diff": "read-documents-v1-to-v2.diff"
+    },
+    {
+      "id": "BE-AE02",
+      "owner": "our execution environment",
+      "error": "Initial sandbox cannot resolve government document hosts",
+      "effect": "No bytes acquired on v1; escalation-only retry acquired same public URLs",
+      "records": [
+        "acquisition-v1.json",
+        "acquisition-v2.json"
+      ]
+    },
+    {
+      "id": "BE-AE03",
+      "owner": "our execution environment",
+      "error": "Media derivative directory creation denied in sandbox",
+      "effect": "No document derivative written before error; explicit authorized Intel write retry succeeded",
+      "command": "read_documents-v2.py",
+      "not_source_absence": true
+    },
+    {
+      "id": "BE-AE04",
+      "owner": "our crosswalk generator",
+      "error": "Initial highlight line keys were off by one; a Sirius/WTC-dog claim also inherited unrelated UMS canine coverage",
+      "effect": "Caught before publication; v2 maps steel to M059/M065/etc, UMS to M113/M114, Saudi and FAA rows outside the register; Sirius row outside",
+      "diff": "inventory-v1-to-v2.diff"
+    },
+    {
+      "id": "BE-AE05",
+      "owner": "our PDF comparison",
+      "error": "v1 put runtime memory identity into ColorSpace repr and treated a falsey-but-present ContentStream as empty",
+      "effect": "Spurious image-state inequality and a noninformative empty content hash; no source bytes changed",
+      "repair": "v2 fixed the ContentStream check and added decoded pixels but still failed to dereference ColorSpace; v3 dereferences it explicitly and checks no transient representation survives. All17 tested page components match.",
+      "retained_result": "source-version-comparison-v1.json",
+      "diff": "source-version-check-v1-to-v2.diff"
+    },
+    {
+      "id": "BE-AE06",
+      "owner": "our source-to-inventory link",
+      "error": "Landlord source findings initially linked B113 (victim lists), not the exact line201 claim",
+      "effect": "Caught by checking subject text before publication; changed only link metadata to B118",
+      "diff": "source-findings-v1-to-v2.diff"
+    }
+  ]
+}
