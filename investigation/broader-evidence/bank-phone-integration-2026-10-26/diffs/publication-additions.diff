@@ -1,0 +1,629 @@
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..ef83e839
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,46 @@
++# Bank/telephone integration and current operational-record targets
++
++October 26, 2026. This publishes the integration of all ten BP findings from
++[AveLyra commit bb9e9c5d](https://github.com/AveLyra/911-conspiracy-investigation/commit/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2)
++with the [operational-record follow-up](../operational-record-followup-2026-10-26/README.md).
++Both confirming and conflicting observations remain in the investigation.
++
++- [Integration report](REPORT.md): all BP01-BP10 findings and their significance.
++- [Exact source/line crosswalk](integrated-findings.json): unchanged published
++  wording and fixed-commit references.
++- [Current five-bundle targets](targets-v2.json): BR01 progress, all ten BPR
++  acquisition targets, and the other four bundles' unresolved statuses.
++- [Preserved fifteen-file bank/telephone snapshot](sources/published/README.md):
++  redundant byte-exact copies, not new independent evidence.
++- [Requirements checklist](CHECKLIST.json) and [native integration diff](diffs/native-integration.diff).
++
++The eight-call June 23, 2000 carrier sample agrees with a narrow FBI account.
++The source-pinned table recount is 67 printed rows overall and 27 in the
++specified window, split 21/6 between labelled lines. The 22-call account,
++April 19/20 dates, conflicting $1,558 signs/repayment descriptions, cash-source
++and endpoint descriptions all remain beside their sources. No selection rule,
++date correction, speaker identity or conversational purpose is invented.
++
++The 1A reference concerns apartment-payment attachments and custody. It does
++not identify the July 2003 $100,000 informant-payment voucher. Original bank
++receipt/teller evidence and the February 4 cellular returns remain targets.
++
++## Preservation and status
++
++The integration report, protocol, checklist, ledgers, recount receipt and native
++diff are unchanged copies of the preceding local integration. Statements there
++that it was local/unpublished describe that earlier stage. This README and
++PUBLICATION-SCOPE.json record the user's subsequent publication instruction.
++INTEGRATION-STUDY-MANIFEST.json inventories the original local integration;
++MANIFEST.json defines this public package's content files.
++
++PUBLICATION-VERIFIED.json verifies the earlier bank/telephone commit. It is not
++presented as verification of this new push. The new push is checked separately
++after creation. Original downloads and native images remain unchanged locally;
++no raw source PDFs, contact details, account/telephone numbers, private case
++material or credentials are added to the public payload.
++
++Run `python3 -B verify_publication.py` here to check both new packages. It checks
++published-copy hashes, coverage, links and retained counts. It does not rerun
++the historical investigation, authenticate conversations or adjudicate a
++conspiracy hypothesis. Text diffs remain separate from prior PDF inspection.
+diff --git a/REPORT.md b/REPORT.md
+new file mode 100644
+index 00000000..cbfb6939
+--- /dev/null
++++ b/REPORT.md
+@@ -0,0 +1,103 @@
++# Bank and telephone findings integrated into the investigation
++
++October26,2026. All **BP01-BP10** findings from the published bank/telephone
++tranche are now included, with their original identifiers, source links,
++qualifications and open targets. The exact source is AveLyra commit
++**bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2**; the fifteen-file published snapshot
++is retained unchanged under sources/published/. BP IDs count research entries,
++not independent witnesses or independent evidence of a conspiracy.
++
++[Published record](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md)
++and [source URLs/hashes](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/SOURCES.json).
++
++## What changes in the current investigation
++
++The first bank/carrier bundle **BR01**, linked to **S007/S013**, is now partially
++fulfilled: actual AT&T carrier-produced billing/call-detail pages, a subpoena
++return and FBI loading documentation are located. Earlier blanket statements
++that this bundle had not yet been independently integrated are historical.
++The preceding operational report/targets remain unchanged; this integration
++supplies a dated continuation rather than rewriting that record.
++
++The confirming sample concerns **June23,2000**, not the original carrier records
++for the **February4,2000 cellular sequence**. Original bank transaction images,
++teller evidence and the specifically cited repayment exhibits remain needed.
++The other four operational bundles retain their unresolved statuses in
++[targets-v2.json](targets-v2.json).
++
++## Integrated findings and their exact source locations
++
++The citations below refer to physical PDF pages and Bates identifiers in the
++published source catalog. Full conflicting wording is retained in the byte-exact
++[source record](sources/published/RECORD.md); the table states its limited bearing.
++
++| ID | Incorporated observation | Source location and current limit |
++| --- | --- | --- |
++| [BP01](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L7) | October14,2002 and November18,2002 FBI accounts differ about support for reimbursement. July21,2004 EC describes a $1,558 positive cash deposit/check and three transactions within seven minutes. | Joint Inquiry physical13 / printed422 n.1; FBI Part5 physical16, EO14040-002738; court p21. Congressional quotations and report statements do not supply the missing bank images/teller original. |
++| [BP02](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L34) | A draft financial table prints **-$1,558 Cash** and **-$1,558 cashier's check**, beside the separate positive-deposit description. | Part5 physical184, EO14040-002906; draft explicitly says sourcing incomplete. Preserve the signs and document status; do not repair a sign or infer two actual withdrawals. |
++| [BP03](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L54) | The 2003 interview's uncertain **$4,000-$8,000** cash estimate, a reported **$9,900** opening deposit, and differing attribution of the cash remain distinct. | Released2003 interview physical11, Bates000002669; averment section1637 / physical416; court p21. Amount, depositor, bank companion and ultimate cash source are different propositions. |
++| [BP04](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L76) | Five post-bank calls appear in an FBI analysis; an endpoint is described as **CBR** in that account and **cell phone** in the averment. | Part5 physical30 and35-37, EO14040-002752/002757-002759; averment section1639. The analysis is not a carrier return, and call content/speaker/subscriber attribution remain unknown. |
++| [BP05](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L109) | **April19,2000** in the FBI report versus **April20,2000** in the averment remains unresolved. | Part5 physical37, EO14040-002759; averment section758 / physical197. No timezone or transcription explanation is adopted. |
++| [BP06](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L122) | FBI table has **67 printed rows** overall; the inclusive December6,1999-February4,2000 window has **27 rows:21 BAYOUMI#2 and6 BAYOUMI#4**. The averment uses **22 calls**. | Part5 physical35-37; averment sections1641-1643 / physical416-417. Row counts are not authenticated unique conversations; no selection rule resolving22/27 has been supplied. |
++| [BP07](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L146) | Seven line-specific ranges identify toll records received, with gaps between service history and the listed received coverage. | Part5 physical27, EO14040-002749. An unobserved interval is not zero calls, destruction or proof that records were never collected elsewhere. |
++| [BP08](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L169) | Carrier-produced AT&T pages, subpoena return, loading form and an eight-call sample are located; the sample agrees with the FBI's date/count/destination description. | Supplemental1 physical164-166,198,200; EO14040-003831-003833/003865/003867. June23 sample:8 rows,6 Saudi Arabia,2 UK,42 billed minutes. This narrow confirming check does not authenticate the February4 calls or identify speakers. |
++| [BP09](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L199) | Rental-manager account, payment-component/office-visit differences, a $1,010 payment, a copying/re-stapling concern and explicit **1A-section** attachment custody lead are retained. | Supplemental1 physical161-163, EO14040-003828-003830; averment section1638. $775+$8 insurance+$775 differs from the application-fee description; alone versus accompanied accounts need originals. Witness inference about document handling is not forensic proof of tampering. |
++| [BP10](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L227) | A July18,2007 EC names a **42-page frequency spreadsheet and i2 charts**; the entire named enclosure has not been separately verified. | Part5 physical75-76, EO14040-002797-002798; averment sections756-759. The analysis/graphics are not additional independent carrier records. S013's incomplete `02/2000` day remains unknown. |
++
++## Confirming evidence is retained alongside discrepancies
++
++BP08 supports one FBI report against an actual carrier sample. That matters to
++our own evaluation: a register containing only mismatches would misdescribe the
++reviewed evidence. It does not establish accuracy of every FBI analysis or
++resolve separate dates, repayment descriptions or22/27 units.
++
++This integration reran the published recount against its hash-pinned403-page
++FBI source. It reproduced67 rows overall and27 within the specified window,
++split21/6 across the labelled lines. It also checked the preserved carrier
++transcription's8 rows, six/two destinations and42 billed minutes. This second
++check is arithmetic on the published transcription, not a fresh visual or
++carrier-authentication examination. The underlying sample visual check remains
++attributed to the original bank/telephone study.
++
++## The 1A lead does not close the informant-payment track
++
++The 1A passage concerns **Parkwood apartment-payment documents and ledgers**.
++The next useful target is the attachment list and 1A inventory for the
++October28,2001 rental-manager interview, together with its actual payment
++attachments, originals/copies and custody records.
++
++This is separate from **BR04**, the July2003 **$100,000 informant payment**.
++No voucher or purpose for that payment has been located through the apartment
++record. BR04 remains open. Nor does a witness's suspicion that apartment records
++were copied establish who handled them, why, or whether anything was altered.
++
++## Current next records
++
++All ten published **BPR01-BPR10** targets are carried verbatim into
++targets-v2.json with their scope and limitations. The first acquisitions remain:
++
++1. Plaintiffs Ex550/FBI8057 opening-deposit receipt and account-opening material.
++2. KSA Ex91/FBI2808-09, original cash entry/check images and debit/credit ledger.
++3. Teller interview/worksheets referenced at EO14040-002738; both2002 FBI originals.
++4. Parkwood payment attachments and the specific1A inventory/custody chain.
++5. Ex12A and source February4 cellular returns, subscriber attribution, original
++   time fields and the selection/deduplication rules behind22 versus27.
++
++April19/20 carrier rows, the42-page enclosure, complete AT&T return/account
++linkage and the full2003 interview/deposition editions remain in that target
++set. No pending record was silently removed because another record was found.
++
++## Publication, preservation and limits
++
++The existing public commit's author/committer and all15 GitHub file blob IDs
++were checked against the Git snapshot and local reviewed copies through the
++documented AveLyra profile. That verifies the cited publication, not a new push
++of this integration. The full old operational report, eight RF records, original
++target ledger and first-tranche source findings remain unchanged.
++
++The integration is research rather than a promotion to legal facts or pleading
++authority. It does not establish conversational content, attack foreknowledge,
++participation, deliberate record alteration or a demolition connection.
++Conflicting values remain unresolved, and same-source repetition is not
++independent corroboration. [Requirement checklist](CHECKLIST.json) and
++[text changes](diffs/integration.diff) preserve revision accountability.
+diff --git a/PROTOCOL.md b/PROTOCOL.md
+new file mode 100644
+index 00000000..5c05e092
+--- /dev/null
++++ b/PROTOCOL.md
+@@ -0,0 +1,31 @@
++# Integrate the published bank/telephone tranche
++
++October26,2026. User instruction: include the findings published in AveLyra
++commit bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2 in the investigation.
++
++Scope: integrate all BP01-BP10 findings, not only the short announcement;
++distinguish original carrier material, FBI analysis, interview recollection,
++party descriptions and remaining roots. Preserve every conflicting value and
++the positive eight-call sample. Do not turn any conflict into an actor/intent
++finding or claim independent corroboration from repeated source accounts.
++
++Deliver an integration report and structured crosswalk; update the current
++five-bundle record targets and research navigation; preserve the preceding
++source report, ledger and target files unchanged. Save a byte-exact snapshot of
++the fifteen published files, check it against the Git commit and live GitHub
++blob IDs, and record the exact author/committer and publication scope.
++
++The 1A reference concerns apartment payment documents. It does not locate or
++close the separate July2003 $100,000 informant-payment voucher target.
++June23,2000 AT&T billing records do not supply the February4 cellular returns.
++Printed rows, billing units, unique calls and speakers must remain separate.
++
++Acceptance: all10 BP IDs and10 BPR targets accounted for; S007/S013 and BR01
++links explicit; other four operational bundles retain their unresolved status;
++old source records byte-identical; exact text diff against preceding navigation
++and target versions; actual verification commands/results. No new raw personal
++data, case facts, litigation records, outreach, fees or private push.
++
++This is a local research integration of an already published source tranche.
++Do not represent the previous operational-source follow-up as publicly published
++or claim this integration itself was committed/pushed without doing so.
+diff --git a/integrated-findings.json b/integrated-findings.json
+new file mode 100644
+index 00000000..9551382c
+--- /dev/null
++++ b/integrated-findings.json
+@@ -0,0 +1,128 @@
++{
++  "date": "2026-10-26",
++  "published_commit": "bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2",
++  "count_semantics": "Ten existing research entries, not ten independent evidence chains.",
++  "local_scope": "All are now linked to current research; only the table recount was rerun here.",
++  "findings": [
++    {
++      "id": "BP01",
++      "heading": "BP01 \u2014 Conflicting reimbursement assessments",
++      "published_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L7",
++      "source_lines_1based": [
++        7,
++        33
++      ],
++      "source_level": "Published research entry; primary-source citations and limitations retained in its original body.",
++      "verbatim_published_body": "\nThe declassified Joint Inquiry, **printed p.422, footnote 1; physical PDF p.13**, places\ntwo FBI accounts alongside one another. Its quotation of a **November 18, 2002\nresponse, p.3**, says an equal cash deposit on the check date suggests reimbursement.\nIts quotation of an **October 14, 2002 document** says there was no bank\ndocumentation supporting reimbursement from Hazmi or Mihdhar. We acquired the\ncongressional reproduction, not those two underlying FBI originals.\n[Joint Inquiry release](https://www.govinfo.gov/content/pkg/GOVPUB-Y4_IN8_18-PURL-gpo71223/pdf/GOVPUB-Y4_IN8_18-PURL-gpo71223.pdf#page=13)\n\nA **July 21, 2004 FBI EC**, **EO14040-002738; physical p.16**, describes a $1,558\ncashier's check, an equal cash **deposit**, and the $9,900 account opening, all posted\nwithin seven minutes on February 4, 2000. It reports teller corroboration; the\nreference identifying the teller interview is redacted. This is the FBI's account\nof the records and corroboration, not our independent bank/teller examination.\n[FBI Part 5](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file#page=16)\n\nThe OIG's same-day repayment account and the 2025 court's repayment finding remain\nbeside these records. Neither repetition supplies the missing transaction images.\nThe court cites **KSA Ex91, FBI2808\u201309**, not plaintiffs' Ex91 (Ratchford declaration).\n[OIG chapter 5, notes128\u2013129](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)\n\u00b7 [2025 opinion, p.21](https://www.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011182.pdf#page=21)\n\n**Open test:** obtain both dated FBI documents, the original credit/debit ledger,\ncash deposit/check images and teller statement. Equal amounts alone do not identify\nthe person who supplied cash. No preferred account is selected here.\n",
++      "integration_limit": "Copied from the verified public source; not additional independent corroboration or a newly discovered historical event."
++    },
++    {
++      "id": "BP02",
++      "heading": "BP02 \u2014 A sign conflict inside a draft financial summary",
++      "published_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L34",
++      "source_lines_1based": [
++        34,
++        53
++      ],
++      "source_level": "Published research entry; primary-source citations and limitations retained in its original body.",
++      "verbatim_published_body": "\n**EO14040-002906; Part5 physical p.184, printed p.43**, visibly lists:\n\n```text\n02/04/2000   -$ 1,558.00   Cash\n02/04/2000   -$ 1,558.00   Parkwood Apts. (Cashier's Check)\n```\n\nThe page is marked **\u201cDRAFT; SOURCING OF INFORMATION INCOMPLETE.\u201d** The minus sign\non the cash entry is present in the rendered page, not merely a text-extraction\nguess. The July 2004 EC describes a positive cash deposit. Preserve both signs and\ntheir different document status. This does not establish two actual withdrawals,\nnor permit repairing the draft to match the July 2004 account.\n[Draft page](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file#page=184)\n\n**Open test:** bank debit/credit columns and source worksheets, plus the draft's\ncreation/revision history. A transcription error is an untested possibility, not\nan adopted explanation.\n",
++      "integration_limit": "Copied from the verified public source; not additional independent corroboration or a newly discovered historical event."
++    },
++    {
++      "id": "BP03",
++      "heading": "BP03 \u2014 Cash amount and source must remain distinct",
++      "published_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L54",
++      "source_lines_1based": [
++        54,
++        75
++      ],
++      "source_level": "Published research entry; primary-source citations and limitations retained in its original body.",
++      "verbatim_published_body": "\nThe released **August 4\u20136, 2003 Bayoumi interview FD-302**, transcribed August 18,\n**continuation p.5, physical p.11, Bates000002669**, records his uncertain estimate\nthat the men possessed **$4,000\u2013$8,000**. Later records describe a **$9,900 cash\nopening deposit**. The original receipt identified as **plaintiffs Ex550/FBI8057**\nhas not been acquired here. The interview and reported receipt concern differently\ndescribed quantities and different levels of certainty; retain both without turning\nthe mismatch into a finding of lying.\n[Released interview](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-investigation-2003-09-sep/at_download/file#page=11)\n\nA 2024 Motley Rice news account attributes nearly $10,000 transferred into their\naccount to Bayoumi. Its own public averment \u00a71637 instead describes Mihdhar's cash\ndeposit; the court p.21 also attributes the cash deposit to the hijackers. These\ndescriptions are preserved, not equated. A bank companion, cash depositor and\nultimate source of funds are separate propositions.\n[News account, extracted block B056](https://www.motleyrice.com/news/september-11-2001-new-evidence-23-years-later)\n\u00b7 [Averment \u00a71637, physical p.416](https://www.motleyrice.com/sites/default/files/documents/AT_HR/9-11/20240802%20Redacted%20public%20averment.pdf#page=416)\n\n**Open test:** receipt, account-opening documents and cash-origin evidence. The\n$9,900 amount alone does not establish intent to evade reporting requirements.\n",
++      "integration_limit": "Copied from the verified public source; not additional independent corroboration or a newly discovered historical event."
++    },
++    {
++      "id": "BP04",
++      "heading": "BP04 \u2014 A specific post-bank call sequence, with limited attribution",
++      "published_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L76",
++      "source_lines_1based": [
++        76,
++        108
++      ],
++      "source_level": "Published research entry; primary-source citations and limitations retained in its original body.",
++      "verbatim_published_body": "\nThe **September 29, 2005 FBI telephone-analysis EC**, **EO14040-002752; physical p.30,\nprinted p.5**, places the bank visit approximately **15:30\u201315:40** and prints:\n\n| Time as printed | From label | To label | Duration as printed |\n|---|---|---|---|\n|16:40|BAYOUMI Cell|AULAQI Home|1:00|\n|16:42|BAYOUMI Cell|AR-RIBAT PAYPHONE|1:00|\n|16:43|BAYOUMI Cell|AR-RIBAT FAX|1:00|\n|16:52|ALTHUMAIRY (CBR)|BAYOUMI Cell|1:00|\n|16:55|BAYOUMI Cell|ALTHUMAIRY (CBR)|2:00|\n\nThis is an original FBI **analysis table**, not the carrier return for those calls.\nIts later discussion states that the calls' significance is unknown because their\ncontent is unavailable. It also records Bayoumi's denial of introductions while\noffering introductions as an investigative possibility.\n[Table](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file#page=30)\n\u00b7 [limits, EO14040-002759/p.37](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file#page=37)\n\nThe averment \u00a71639 calls the 16:55 destination Thumairy's **cell phone**; the FBI\ntable calls it **CBR**, and EO14040-002757 describes that number as a can-be-reached\nnumber subscribed to someone else. Preserve both descriptions; the carrier and\nsubscriber evidence needed to map them is still missing. A fax/payphone label does\nnot identify a particular human speaker.\n[Averment \u00a71639/p.416](https://www.motleyrice.com/sites/default/files/documents/AT_HR/9-11/20240802%20Redacted%20public%20averment.pdf#page=416)\n\u00b7 [number definitions, FBI p.35](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file#page=35)\n\n**Open test:** plaintiffs Ex12A, Ex5 p.197 and their underlying Sprint/local-carrier\nreturns; mapping/subscriber documents, direction, timezone, billing units and\nduplicate-record rules. Timing is a testable lead; conversational purpose is not\nestablished by proximity to the bank visit.\n",
++      "integration_limit": "Copied from the verified public source; not additional independent corroboration or a newly discovered historical event."
++    },
++    {
++      "id": "BP05",
++      "heading": "BP05 \u2014 April 19 versus April 20 remains open",
++      "published_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L109",
++      "source_lines_1based": [
++        109,
++        121
++      ],
++      "source_level": "Published research entry; primary-source citations and limitations retained in its original body.",
++      "verbatim_published_body": "\n**EO14040-002759, physical p.37** lists **April 19, 2000** for a call to Aulaqi's home\nfrom the line believed used by Bayoumi's wife and says Bayoumi was then in Saudi\nArabia. The averment **\u00a7758, physical p.197** gives **April 20, 2000**, citing that Bates\npage. We verified the April 19 rendering against the source image. Do not silently\nchange either date or infer who used the phone from travel alone.\n[FBI page](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file#page=37)\n\u00b7 [Averment \u00a7758](https://www.motleyrice.com/sites/default/files/documents/AT_HR/9-11/20240802%20Redacted%20public%20averment.pdf#page=197)\n\n**Open test:** originating and receiving carrier rows, original clock/timezone\nfields and the pleading's worksheet. Date conversion or transcription is untested.\n",
++      "integration_limit": "Copied from the verified public source; not additional independent corroboration or a newly discovered historical event."
++    },
++    {
++      "id": "BP06",
++      "heading": "BP06 \u2014 Count rows, line sets and people separately",
++      "published_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L122",
++      "source_lines_1based": [
++        122,
++        145
++      ],
++      "source_level": "Published research entry; primary-source citations and limitations retained in its original body.",
++      "verbatim_published_body": "\nThe FBI table **EO14040-002757\u2013002759, physical pp.35\u201337** says **67 contacts** for\nDecember 16, 1998\u2013December 20, 2000. A reproducible extraction counts **67 printed dated\nrows**. In the inclusive December 6, 1999\u2013February 4, 2000 window it counts **27 rows**:\n**21** involving BAYOUMI#2 and **6** involving BAYOUMI#4. The averment **\u00a7\u00a71641\u20131643**\nuses **22 calls** for that window. Both counts and the unsupplied selection rule\nare preserved. No subset is asserted to explain the pleading's total.\n[FBI table](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file#page=35)\n\u00b7 [Averment \u00a7\u00a71641\u20131643, physical pp.416\u2013417](https://www.motleyrice.com/sites/default/files/documents/AT_HR/9-11/20240802%20Redacted%20public%20averment.pdf#page=416)\n\n[CALL-ROWS.json](CALL-ROWS.json) preserves every printed row and its extracted-text\nline; [recount_calls.py](recount_calls.py) reproduces the count from the pinned PDF.\nRows are not automatically unique conversations: matching two endpoints, repeated\nentries and carrier billing conventions require checks. No statistical claim of\nan unusually dense call cluster is made without comparable coverage and baseline.\n\nKSA's public reply disputes shared-line attribution and the proposed call-circle\ninference. Preserve this adversarial account alongside the plaintiffs' account;\nneither is a carrier record. The 2025 court made substantive jurisdiction findings,\nbut reserved merits/credibility determinations; this review does not erase that.\n[KSA reply, printed p.15/physical p.29 n.8](https://www.motleyrice.com/sites/default/files/documents/AT_HR/9-11/Docket%20%23%209795%20-%20Redacted%20Public%20Version%20%20KSA%20REPLY%20MOL%20ISO%20%5B9368%5D%20MTN%20to%20Dismiss%20%28Prev.%20filed%20under%20seal%20on%203.4%2C%202024%29.pdf#page=29)\n\u00b7 [2025 opinion](https://www.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011182.pdf)\n",
++      "integration_limit": "Copied from the verified public source; not additional independent corroboration or a newly discovered historical event."
++    },
++    {
++      "id": "BP07",
++      "heading": "BP07 \u2014 The FBI's received-record windows are not full service histories",
++      "published_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L146",
++      "source_lines_1based": [
++        146,
++        168
++      ],
++      "source_level": "Published research entry; primary-source citations and limitations retained in its original body.",
++      "verbatim_published_body": "\n**EO14040-002749, physical p.27** lists seven line-specific toll-record ranges:\n\n| FBI list item | Provider/line description | Tolls received cover |\n|---|---|---|\n|1|Pacific Bell home|Jan 17, 2000\u2013Jun 30, 2001|\n|2|Sprint cell, earlier number|Jan 9, 2000\u2013Jun 7, 2000|\n|3|Sprint cell, later number|Jun 8, 2000\u2013Apr 2, 2001|\n|4|Airtouch, c/o spouse|Nov 20, 1998\u2013Sep 20, 2000|\n|5|Pacific Bell Wireless, spouse subscriber|Sep 1, 2000\u2013Jul 28, 2001|\n|6|Pacific Bell mosque office|Jul 1, 1998\u2013Apr 22, 2001|\n|7|Pacific Bell, primarily Internet connection|Dec 15, 1999\u2013Jan 17, 2001|\n\nThe earlier Sprint service is separately described as beginning September 27, 1998.\nIts listed toll coverage begins much later. This does not establish that earlier\ncalls never happened, were destroyed, or were never collected elsewhere.\n[Inventory](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file#page=27)\n\n**Open test:** provider return manifests, subpoena date/scope, all pages, import\nlogs and the relationship among changed numbers, office lines and subscriber/users.\nUnobserved intervals must not be counted as zero calls.\n",
++      "integration_limit": "Copied from the verified public source; not additional independent corroboration or a newly discovered historical event."
++    },
++    {
++      "id": "BP08",
++      "heading": "BP08 \u2014 An actual carrier-record sample and its custody trail",
++      "published_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L169",
++      "source_lines_1based": [
++        169,
++        198
++      ],
++      "source_level": "Published research entry; primary-source citations and limitations retained in its original body.",
++      "verbatim_published_body": "\nThe FBI's **2(c)/2(d) supplemental release1** contains:\n\n- **EO14040-003831; physical p.164:** January 7, 2002 FD-302 saying AT&T toll records\n  were entered on December 27, 2001; it describes eight calls on June 23, 2000.\n- **EO14040-003832; p.165:** data-loading request with originals-attached marked\n  yes, assigned December 27 and completed December 28, 2001.\n- **EO14040-003833; p.166:** AT&T November 29, 2001 subpoena-return letter describing\n  **two accounts for one number**, enclosed account/toll material and an **18-month**\n  retention period. This records the carrier's statement, not independent legal\n  verification of its retention-law claim or proof about other carriers.\n- **EO14040-003865 and003867; pp.198,200:** July 4, 2000 bill usage summary and actual\n  carrier call-detail page: **eight June 23 rows, six to Saudi Arabia and two to the\n  UK, total42 billed minutes**. This agrees with the FD-302's count/date/destination\n  description. Recipient/account numbers are redacted and are not republished.\n- **EO14040-003884; p.217:** a separate July 27, 1998 carrier call-detail page, showing\n  that the public packet includes earlier original billing material too. It is not\n  joined to the July 2000 account through redacted identifiers.\n\n[Carrier return and loading trail](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-2-d-supplemental-release-1/at_download/file#page=164)\n\u00b7 [Original call detail](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-2-d-supplemental-release-1/at_download/file#page=200)\n\nThis is a positive source check within one evidentiary chain, not independent\ncorroboration by multiple witnesses. It does not authenticate the February 4\ncellular sequence or identify the June 23 speakers. The carrier's bill legend says\none call can be displayed more than once for separate rate periods; that convention\nmust be checked before using row totals from this carrier as unique-call totals.\nIt is not assumed to explain the separate 27-versus22 comparison.\n",
++      "integration_limit": "Copied from the verified public source; not additional independent corroboration or a newly discovered historical event."
++    },
++    {
++      "id": "BP09",
++      "heading": "BP09 \u2014 Payment originals and a specific custody concern",
++      "published_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L199",
++      "source_lines_1based": [
++        199,
++        226
++      ],
++      "source_level": "Published research entry; primary-source citations and limitations retained in its original body.",
++      "verbatim_published_body": "\nThe **October 28, 2001 rental-manager interview**, transcribed October 29,\n**EO14040-003828\u2013003830; supplemental1 physical pp.161\u2013163**, describes the check as\n**$775 deposit + $8 insurance + $775 rent = $1,558**. The averment \u00a71638 instead\ndescribes rent, security deposit and an application fee. Keep both component labels.\nThe interview says Bayoumi brought the check **alone**; the averment \u00a71638 describes\nhim returning with both men. We have not obtained the cited later declaration and\ndeposition needed to compare those accounts directly.\n[Interview p.2](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-2-d-supplemental-release-1/at_download/file#page=162)\n\u00b7 [Averment \u00a71638](https://www.motleyrice.com/sites/default/files/documents/AT_HR/9-11/20240802%20Redacted%20public%20averment.pdf#page=416)\n\nThe interview also reports a roughly February 15 **$1,010** cashier's check and says\nits difference from the $775 rent was unexplained to the witness. The ledger,\nreceipt/check images, credits and allocation are needed; the difference is not\nevidence of concealed funding by itself.\n\nFinally, the witness thought the February deposit slip/accounting ledger had been\nreviewed and copied because it appeared re-stapled, with a copy in place of the\noriginal. The FD-302 says supporting payment documents/ledgers were attached and\noriginal copies would be maintained in the **1A section of the file**. This is an\nFBI record of a witness's observation/inference, not a forensic finding of tampering\nor identification of whoever handled the papers. The immediately following released\npage is a January 2002 telephone-record report, not an identified payment attachment.\nWe have not located those attachments; their absence from that position does not\nestablish that they were destroyed or omitted from every release.\n[Custody/attachment passage, p.163](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-2-d-supplemental-release-1/at_download/file#page=163)\n",
++      "integration_limit": "Copied from the verified public source; not additional independent corroboration or a newly discovered historical event."
++    },
++    {
++      "id": "BP10",
++      "heading": "BP10 \u2014 A named enclosure is not the underlying carrier dataset",
++      "published_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L227",
++      "source_lines_1based": [
++        227,
++        245
++      ],
++      "source_level": "Published research entry; primary-source citations and limitations retained in its original body.",
++      "verbatim_published_body": "\nThe **July 18, 2007 EC**, **EO14040-002797\u2013002798; Part5 pp.75\u201376**, names a 42-page\nfrequency spreadsheet for phones used by Bayoumi, Mihdhar and Hazmi, with i2 link\ncharts. The continuation emphasizes a particular line but describes a broader\nnetwork exercise. We acquired the EC; we have not separately identified and\nverified that entire 42-page enclosure or its source carrier returns. The averment\n\u00a7\u00a7756\u2013759 is a lead to these pages, not a substitute for the enclosure.\n[EC cover](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file#page=75)\n\u00b7 [Averment \u00a7\u00a7756\u2013759](https://www.motleyrice.com/sites/default/files/documents/AT_HR/9-11/20240802%20Redacted%20public%20averment.pdf#page=196)\n\nThe preceding S013 report's incomplete `02/2000` date and temporal wording remain\nunresolved. None of these newly obtained pages supplies a verified replacement\nfor that missing day or silently changes its original wording.\n\nThe next steps are [specific missing originals](NEXT-RECORDS.md), not an inference\nthat any one conflict establishes coordination or that an unlocated record never\nexisted. Assistance, funding, foreknowledge and later record handling remain\nseparate hypotheses.",
++      "integration_limit": "Copied from the verified public source; not additional independent corroboration or a newly discovered historical event."
++    }
++  ]
++}
+diff --git a/targets-v2.json b/targets-v2.json
+new file mode 100644
+index 00000000..21ca9725
+--- /dev/null
++++ b/targets-v2.json
+@@ -0,0 +1,204 @@
++{
++  "date": "2026-10-26",
++  "targets": [
++    {
++      "id": "BR01",
++      "supplied_ids": [
++        "S007",
++        "S013"
++      ],
++      "bundle": "Bank/carrier roots",
++      "status": "Partially fulfilled: original June23,2000 AT&T carrier pages, subpoena return and loading trail acquired in the published tranche; February4 bank/repayment/teller and exact cellular roots remain outstanding.",
++      "inputs": [
++        "Ex550/FBI8057",
++        "KSA Ex91/FBI2808-09",
++        "Ex12A",
++        "bank/carrier original records and attribution"
++      ],
++      "test": "Join actual deposits, debits, repayment and call times; do not infer communication contents from metadata.",
++      "acquired_evidence": [
++        {
++          "finding": "BP08",
++          "date_of_calls": "2000-06-23",
++          "scope": "8 printed carrier rows;6 Saudi Arabia,2 UK;42 billed minutes; agrees with a narrow FBI description.",
++          "locations": "EO14040-003831-003833/003865/003867; Supplemental1 physical164-166,198,200",
++          "limit": "Not the February4 cellular dataset; no speaker/conversation-content identification."
++        }
++      ],
++      "conflicts_retained": [
++        "BP01: conflicting2002 reimbursement accounts",
++        "BP02: -$1,558 draft cash entry versus positive-deposit account",
++        "BP03: $4,000-$8,000 recollection versus reported$9,900 deposit and source attribution",
++        "BP04: CBR versus cell description and missing caller mapping",
++        "BP05: April19 versus April20",
++        "BP06:22 calls versus27 printed rows, units/selection unresolved",
++        "BP09: payment components, accompanied/alone accounts, $1,010 payment and copying concern"
++      ],
++      "remaining_target_ids": [
++        "BPR01",
++        "BPR02",
++        "BPR03",
++        "BPR04",
++        "BPR05",
++        "BPR06",
++        "BPR07",
++        "BPR08",
++        "BPR09",
++        "BPR10"
++      ]
++    },
++    {
++      "id": "BR02",
++      "supplied_ids": [
++        "S008",
++        "S009"
++      ],
++      "bundle": "Complete witnesses",
++      "status": "Complete2004MFR acquired; earlier/later editions still missing.",
++      "inputs": [
++        "October8,2001 IsamuDyson FD302",
++        "October16-17,2003 Bayoumi interview",
++        "Ex120",
++        "Ex112",
++        "Ex92",
++        "Ex450"
++      ],
++      "test": "Compare questions, chronology, aliases, opportunity to hear and coincidence belief; no duplicate-witness counting."
++    },
++    {
++      "id": "BR03",
++      "supplied_ids": [
++        "S001",
++        "S002",
++        "S003"
++      ],
++      "bundle": "CIA dissemination and oversight",
++      "status": "Underlying originals unacquired; requested later CIA report returned HTML.",
++      "inputs": [
++        "draftCIR",
++        "hold annotation",
++        "routing/access audit",
++        "claimed delivery/receipt",
++        "follow-up email/response",
++        "oversight request/search/production logs"
++      ],
++      "test": "Test purpose, actual recipient knowledge and later disclosure chronology without presuming a plot or routine error."
++    },
++    {
++      "id": "BR04",
++      "supplied_ids": [
++        "S004",
++        "S005",
++        "S006"
++      ],
++      "bundle": "Informant handling/payment",
++      "status": "Original payment purpose, voucher and source-file record unavailable.",
++      "inputs": [
++        "contact reports",
++        "annual bona-fides evaluations",
++        "payment authorization",
++        "voucher/disbursement",
++        "closure decision",
++        "underlying interviews"
++      ],
++      "test": "Determine what was known and why payment was approved, preserving contrary findings and policy limits."
++    },
++    {
++      "id": "BR05",
++      "supplied_ids": [
++        "S010",
++        "S011",
++        "S012"
++      ],
++      "bundle": "Drawing/media/experts",
++      "status": "Official expert-review order and more copy/custody locators obtained; full original exhibits still absent.",
++      "inputs": [
++        "Ex678M",
++        "Ex679B",
++        "Ex11N",
++        "Ex678DD/FMT69/2002",
++        "Ex148/Ex104",
++        "ECF9118-3",
++        "ECF10615",
++        "Ex10F",
++        "Ex10K/10K-TR"
++      ],
++      "test": "Authenticate creation/custody/context, reproduce math and compare ordinary uses; distinguish admissibility, preliminary inference and historical participation."
++    }
++  ],
++  "other_supplied_ids": {
++    "S014": "Earlier provenance/version comparison preserved unchanged; new low-weight metadata in RF008."
++  },
++  "no_outreach_or_fees": true,
++  "revision": "v2-bank-phone-integration",
++  "parent_record": "../operational-record-followup-2026-10-26/targets.json",
++  "published_bank_phone_commit": "bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2",
++  "bank_phone_original_targets": [
++    {
++      "id": "BPR01",
++      "exact_target_verbatim": "Plaintiffs Ex550, **FBI8057**, Bank of America opening deposit receipt; associated original deposit ticket and account-opening paperwork, February 4, 2000",
++      "status_and_test_verbatim": "Identified by the averment \u00a71637 and court p.21, not acquired as a separately identified exhibit. Test the $9,900 amount and15:40 time; a receipt alone may not identify ultimate cash origin.",
++      "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/NEXT-RECORDS.md"
++    },
++    {
++      "id": "BPR02",
++      "exact_target_verbatim": "**KSA Ex91, FBI2808\u201309**; February 4 $1,558 cash entry, cashier's-check image and original bank ledger debit/credit columns",
++      "status_and_test_verbatim": "Not acquired as the cited exhibit. Test the positive-deposit versus negative-Cash descriptions. Do not confuse with plaintiffs Ex91, the Ratchford declaration.",
++      "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/NEXT-RECORDS.md"
++    },
++    {
++      "id": "BPR03",
++      "exact_target_verbatim": "Bank teller interview referenced but file/serial-redacted at **EO14040-002738**; underlying teller worksheets/transaction timestamps",
++      "status_and_test_verbatim": "Only the July 21, 2004 EC's claim of corroboration acquired. Identify the interview, exact statement and basis for its three-transactions/seven-minute account.",
++      "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/NEXT-RECORDS.md"
++    },
++    {
++      "id": "BPR04",
++      "exact_target_verbatim": "**October 14, 2002 FBI document** and **November 18, 2002 FBI response p.3** quoted at Joint Inquiry printed p.422 n.1",
++      "status_and_test_verbatim": "Congressional quotations acquired; complete underlying records not acquired. Preserve each scope, bank accounts examined, dates and wording; do not select a controlling reimbursement account.",
++      "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/NEXT-RECORDS.md"
++    },
++    {
++      "id": "BPR05",
++      "exact_target_verbatim": "Payment documents/ledgers attached to the **October 28, 2001 Parkwood interview**, **EO14040-003828\u2013003830**; original copies recorded in the case file's **1A section**",
++      "status_and_test_verbatim": "Interview acquired. Attachments not located/verified here; the next released page begins an unrelated telephone entry report. Obtain the attachment list, 1A inventory, receipt/custody records, originals/copies and check/deposit images. Test the $8 insurance/application-fee descriptions, $1,010 payment, and copying/re-stapling concern without presuming tampering.",
++      "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/NEXT-RECORDS.md"
++    },
++    {
++      "id": "BPR06",
++      "exact_target_verbatim": "Plaintiffs **Ex12A**, especially February 2\u20134 entries, and **Ex5 pp.197\u2013198**; original Sprint/local-carrier returns, subscriber records and FBI TA import/analysis versions",
++      "status_and_test_verbatim": "FBI2005 table acquired; cited litigation table/expert pages and exact source cellular returns not acquired as identified records. Map each row's carrier, original timezone, units, direction and number-to-person attribution; test CBR/cell description and22/27 totals.",
++      "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/NEXT-RECORDS.md"
++    },
++    {
++      "id": "BPR07",
++      "exact_target_verbatim": "Original originating/receiving records for the Aulaqi-home call identified at **EO14040-002759**, plus averment \u00a7758 worksheet",
++      "status_and_test_verbatim": "Date remains April 19 in FBI report versus April 20 in pleading. Inspect native date/timezone fields, not an assumed conversion.",
++      "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/NEXT-RECORDS.md"
++    },
++    {
++      "id": "BPR08",
++      "exact_target_verbatim": "**July 18, 2007 EC EO14040-002797\u2013002814** and its named **42-page frequency spreadsheet plus i2 charts**, original source returns/import logs",
++      "status_and_test_verbatim": "EC acquired; full named enclosure not separately identified/verified. Preserve the broader three-person/network scope and line-specific emphasis. Link chart edges back to carrier rows rather than treating them as additional independent evidence.",
++      "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/NEXT-RECORDS.md"
++    },
++    {
++      "id": "BPR09",
++      "exact_target_verbatim": "AT&T November 29, 2001 return and all pages for its **two accounts**, with redacted identifiers lawfully mapped; corresponding subpoena and December 27\u201328 data-loading artifacts, **EO14040-003831\u2013003884** selected pages",
++      "status_and_test_verbatim": "Actual carrier pages and loading form acquired. Preserve the eight-rowJune23, 2000/42-billed-minute sample. Determine complete returned date windows/account linkage; do not generalize its18-month retention statement to other carriers or to later FBI custody.",
++      "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/NEXT-RECORDS.md"
++    },
++    {
++      "id": "BPR10",
++      "exact_target_verbatim": "Complete **August 4\u20136, 2003 Bayoumi FD-302**, transcribedAugust18, 2003, and exhibits identified in its FD-340 envelope; later plaintiffs **Ex91 declaration** and **Ex120 deposition** 440\u2013447,737,452\u2013454",
++      "status_and_test_verbatim": "Selected FD-302 pages acquired, including originalp.5. The released file jumps from cover to selected continuations; do not call it the full interview. Compare the $4,000\u2013$8,000 recollection, return-to-office accounts and supplied cash against underlying records.",
++      "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/NEXT-RECORDS.md"
++    }
++  ],
++  "cross_track_safeguards": {
++    "BR04": "The1A apartment-payment documents are not the July2003 $100,000 informant-payment authorization/voucher; BR04 remains unchanged and open.",
++    "BR02": "BPR10 adds a related complete-interview target; it does not establish that Ex120/112/92/450 have been acquired.",
++    "S013": "The incomplete02/2000 day remains unresolved; the June23 sample supplies no replacement.",
++    "independence": "Same witness, table or carrier chain repeated in several reports is not new independent corroboration."
++  }
++}
+diff --git a/CHECKLIST.json b/CHECKLIST.json
+new file mode 100644
+index 00000000..6e2c3b89
+--- /dev/null
++++ b/CHECKLIST.json
+@@ -0,0 +1,81 @@
++{
++  "date": "2026-10-26",
++  "items": [
++    {
++      "point": "Include the cited published findings in the investigation",
++      "outcome": "All BP01-BP10 entries integrated with exact published file/line references; navigation and BR01 updated.",
++      "locations": [
++        "REPORT.md",
++        "integrated-findings.json",
++        "targets-v2.json",
++        "../README.md",
++        "../operational-record-followup-2026-10-26/CURRENT.md"
++      ],
++      "verification": "Verified15 fixed-commit snapshots against GitHub blob IDs, Git objects and reviewed PUBLIC-DRAFT bytes."
++    },
++    {
++      "point": "AT&T original pages, subpoena return and loading documentation",
++      "outcome": "BP08 incorporated as actual located carrier-source material, with June23 scope.",
++      "locations": [
++        "REPORT.md",
++        "targets-v2.json"
++      ],
++      "verification": "Published source/preservation record verified; no fresh native-page inspection claimed in integration."
++    },
++    {
++      "point": "Keep the eight-call confirming sample",
++      "outcome": "Retained8 rows,6 Saudi Arabia/2 UK and42 billed minutes; limited agreement with FBI description.",
++      "locations": [
++        "REPORT.md",
++        "sources/published/CARRIER-SAMPLE.json"
++      ],
++      "verification": "Published transcription arithmetic checked; not a new carrier-authentication examination."
++    },
++    {
++      "point": "Preserve $1,558 repayment and sign conflict",
++      "outcome": "2002 conflicting assessments, draft negative sign and2004 positive deposit remain separate.",
++      "locations": [
++        "REPORT.md",
++        "integrated-findings.json"
++      ],
++      "verification": "Full BP01/BP02 source bodies retained unchanged."
++    },
++    {
++      "point": "Preserve April19/20 and22/27",
++      "outcome": "Dates unresolved; printed rows and unique calls not equated.",
++      "locations": [
++        "REPORT.md",
++        "recount-verification.json"
++      ],
++      "verification": "Published recount rerun against hash-pinned original403-page PDF:67 overall,27 window,21/6 split."
++    },
++    {
++      "point": "Include1A custody lead",
++      "outcome": "BPR05 retained in BR01 as apartment-payment attachment/inventory target, separate from BR04 informant payment.",
++      "locations": [
++        "REPORT.md",
++        "targets-v2.json"
++      ],
++      "verification": "Published exact custody locator and limiting witness/attachment language retained."
++    },
++    {
++      "point": "Bank deposit receipt, teller and February4 cell records remain outstanding",
++      "outcome": "Explicit next targets; no premature closure from June23 sample or report summaries.",
++      "locations": [
++        "REPORT.md",
++        "targets-v2.json"
++      ],
++      "verification": "All ten BPR targets carried verbatim; other four original BR objects preserved unchanged."
++    },
++    {
++      "point": "Retain original downloads and unresolved conflicts",
++      "outcome": "Eight preceding source/ledger files pinned unchanged; no raw PDFs altered or deleted.",
++      "locations": [
++        "baseline.json",
++        "diffs/unchanged-records.json"
++      ],
++      "verification": "Hash checks and text diff distinguish additive integration from evidence editing."
++    }
++  ],
++  "execution_note": "Initial recount in systemPython lacked pypdf; the configured bundled Python runtime completed the same source-pinned recount. No installation or source repair."
++}
