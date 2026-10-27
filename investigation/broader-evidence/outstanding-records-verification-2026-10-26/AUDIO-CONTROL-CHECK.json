@@ -1,0 +1,55 @@
+{
+  "method": "Independent read/hash of preserved WAV PCM and ASR JSON; engine not rerun and no audio uploaded. Text is unaccepted model output, not testimony.",
+  "checks": [
+    {
+      "input_name": "CONTROL-silence-15s.wav",
+      "input_sha256": "7545d6b7173ac299093c9a07465b88cb2ea1ba5393c778148d6205e465954a73",
+      "sample_rate": 16000,
+      "channels": 1,
+      "sample_width": 2,
+      "sample_frames": 240000,
+      "duration_seconds": 15.0,
+      "all_pcm_bytes_zero": true,
+      "output_name": "CONTROL-silence-15s.json",
+      "output_sha256": "0abf9d4e588dd5b00a82f2bdf71a1911b58315c8ee30f40d5ef21ebd8c04775d",
+      "segments": 1,
+      "most_repeated_text": "You",
+      "most_repeated_count": 1,
+      "segments_past_clip": 0
+    },
+    {
+      "input_name": "source-offset-00000-180s.wav",
+      "input_sha256": "474aab98eae96ab279dd914244821144c82d83d4d6b249e933e7e3206ad84d88",
+      "sample_rate": 16000,
+      "channels": 1,
+      "sample_width": 2,
+      "sample_frames": 2880000,
+      "duration_seconds": 180.0,
+      "all_pcm_bytes_zero": false,
+      "output_name": "source-offset-00000-180s.json",
+      "output_sha256": "7e8314e47c5d94986926f374286d1b771bd25be8f5fdba099a7193caba98f07c",
+      "segments": 47,
+      "most_repeated_text": "Okay, so let's go ahead and do that.",
+      "most_repeated_count": 46,
+      "segments_past_clip": 1
+    },
+    {
+      "input_name": "source-offset-00900-180s.wav",
+      "input_sha256": "adb07b76c94c17564bacf36d4dcb7dd86d23bec34574296b9a8cbb35f3c4663f",
+      "sample_rate": 16000,
+      "channels": 1,
+      "sample_width": 2,
+      "sample_frames": 2880000,
+      "duration_seconds": 180.0,
+      "all_pcm_bytes_zero": false,
+      "output_name": "source-offset-00900-180s.json",
+      "output_sha256": "34eae3e4e77617136568f59cb8ddc95d3cfd8b984af20f01a33b9d0477a5828f",
+      "segments": 96,
+      "most_repeated_text": ">> We're going to need a 2-9.",
+      "most_repeated_count": 92,
+      "segments_past_clip": 1
+    }
+  ],
+  "evidentiary_transcription_accepted": false,
+  "wall_clock_map": null
+}
