@@ -1,0 +1,104 @@
+"""Inspect one preserved NTAP LST3 printout; no clock fitting or identity inference."""
+import argparse
+from collections import Counter
+import hashlib
+import json
+from pathlib import Path
+import re
+
+PIN = '5409296c7834e0e834f201e6b78bc43042a2920053af49c243384ded9a5f3f0e'
+ROW = re.compile(
+    r'(?P<symbol>[A-Z])\s+(?P<flag>\*)?\s*(?P<code>\d{4})\s+'
+    r'(?P<alt>\d{3})\s+(?P<hhmm>\d{4})\s+(?P<ss>\d{2})\s+'
+    r'(?P<x>\d+\.\d+)\s+(?P<y>\d+\.\d+)\s+'
+    r'(?P<latd>\d{2})\s+(?P<latm>\d{2})\s+(?P<lats>\d{2})N\s+'
+    r'(?P<lond>\d{3})\s+(?P<lonm>\d{2})\s+(?P<lons>\d{2})W'
+)
+
+def inspect(path):
+    raw = path.read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == PIN, 'Input differs from preserved source'
+    lines = raw.decode('latin1').splitlines()
+    start = next(i for i, l in enumerate(lines) if 'LST3 - LIST OF PLOT SYMBOLS IN TIME SEQUENCE WITH LAT/LONG CONVERSION' in l)
+    end = next(i for i in range(start + 1, len(lines)) if 'LAST RECORDED POSITION' in lines[i])
+    offsets = []
+    pos = 0
+    for line in raw.splitlines(keepends=True):
+        offsets.append(pos)
+        pos += len(line)
+    rows, nonnumeric = [], []
+    for idx in range(start + 3, end):
+        line = lines[idx]
+        matches = list(ROW.finditer(line))
+        residue = list(line)
+        for m in matches:
+            g = m.groupdict()
+            hh, mm, ss = int(g['hhmm'][:2]), int(g['hhmm'][2:]), int(g['ss'])
+            assert hh < 24 and mm < 60 and ss < 60
+            assert int(g['latd']) <= 90 and int(g['lond']) <= 180
+            assert all(int(g[k]) < 60 for k in ['latm', 'lats', 'lonm', 'lons'])
+            rows.append({
+                'source_line': idx + 1, 'column_one_based': m.start() + 1,
+                'byte_offset_zero_based': offsets[idx] + m.start(),
+                'symbol': g['symbol'], 'flag': g['flag'] or '',
+                'code': g['code'], 'alt_raw': g['alt'],
+                'printed_time': g['hhmm'] + ':' + g['ss'],
+                'nominal_seconds_in_unconfirmed_timebase': hh * 3600 + mm * 60 + ss,
+                'x_raw': g['x'], 'y_raw': g['y'],
+                'latitude_raw': f"{g['latd']} {g['latm']} {g['lats']}N",
+                'longitude_raw': f"{g['lond']} {g['lonm']} {g['lons']}W",
+                'matched_source_text': m.group(0)
+            })
+            residue[m.start():m.end()] = ' ' * (m.end() - m.start())
+        residue = ''.join(residue).strip()
+        if residue and residue != '0':
+            nonnumeric.append({'source_line': idx + 1, 'residue': residue,
+                              'scope': 'Preserved nonnumeric fixed-point or FIRE plot text; not treated as another numeric-code position'})
+    groups = {}
+    for code in sorted({r['code'] for r in rows}):
+        subset = [r for r in rows if r['code'] == code]
+        ticks = [r['nominal_seconds_in_unconfirmed_timebase'] for r in subset]
+        deltas = [b-a for a,b in zip(ticks,ticks[1:])]
+        assert all(x >= 0 for x in deltas), 'Within-code print order is not chronological'
+        groups[code] = {'entries': len(subset), 'first_printed': subset[0]['printed_time'],
+                        'last_printed': subset[-1]['printed_time'],
+                        'symbols': dict(Counter(x['symbol'] for x in subset)),
+                        'flags': dict(Counter(x['flag'] or 'none' for x in subset)),
+                        'successive_printed_interval_counts_seconds': dict(Counter(deltas)),
+                        'alt_raw_values': sorted({x['alt_raw'] for x in subset})}
+    controls = [
+        (386,'6553','1237:43','290'),
+        (393,'6553','1240:10','330'),
+        (393,'3743','1240:34','330'),
+        (435,'3743','1256:19','350')
+    ]
+    control_results = []
+    for line,code,t,alt in controls:
+        passed = any(r['source_line']==line and r['code']==code and r['printed_time']==t and r['alt_raw']==alt for r in rows)
+        control_results.append({'source_line':line,'code':code,'printed_time':t,'alt_raw':alt,'match':passed})
+    assert all(x['match'] for x in control_results), 'Manual source-row control failed'
+    assert all(not re.search(r'\b(?:3743|6553)\b', r['residue']) for r in nonnumeric), 'Unparsed selected-code residue'
+    return {
+        'source_sha256': PIN, 'bytes': len(raw), 'physical_lines': len(lines),
+        'display_encoding': 'Latin1 one-byte mapping, not an authenticated original character encoding',
+        'nonascii_bytes': {f'0x{k:02x}':v for k,v in Counter(raw).items() if k>127},
+        'nul_bytes': raw.count(b'\0'), 'ends_with_ctrl_z': raw.rstrip(b'\r\n').endswith(b'\x1a'),
+        'scope': 'Only LST3 numeric-code plot entries, not all source radar returns or independent repeated layouts',
+        'block_start_line': start+1, 'block_end_line_exclusive': end+1,
+        'numeric_code_entries': len(rows), 'per_code': groups,
+        'manual_row_controls': control_results, 'nonnumeric_residue': nonnumeric,
+        'timebase_utc_authenticated': False, 'altitude_units_authenticated': False,
+        'clock_offset_fitted': False, 'physical_aircraft_identity_independently_verified': False,
+        'rows': rows
+    }
+
+if __name__ == '__main__':
+    cli = argparse.ArgumentParser(description=__doc__)
+    cli.add_argument('input', type=Path)
+    cli.add_argument('--output', required=True, type=Path)
+    args = cli.parse_args()
+    result = inspect(args.input)
+    with args.output.open('x') as stream:
+        json.dump(result, stream, indent=2)
+        stream.write('\n')
+    print(json.dumps({k:v for k,v in result.items() if k != 'rows'}, indent=2))

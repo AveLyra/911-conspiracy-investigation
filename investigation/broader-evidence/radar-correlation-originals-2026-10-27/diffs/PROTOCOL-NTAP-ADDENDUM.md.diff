@@ -1,0 +1,15 @@
+diff --git a/investigation/broader-evidence/radar-correlation-originals-2026-10-27/PROTOCOL-NTAP-ADDENDUM.md b/investigation/broader-evidence/radar-correlation-originals-2026-10-27/PROTOCOL-NTAP-ADDENDUM.md
+new file mode 100644
+index 00000000..6e2c12dd
+--- /dev/null
++++ b/investigation/broader-evidence/radar-correlation-originals-2026-10-27/PROTOCOL-NTAP-ADDENDUM.md
+@@ -0,0 +1,9 @@
++# NTAP byte and structure test
++
++Post-acquisition protocol, not a blind test. NARA catalog7596008 provides a37,242-byte public FAA NTAP print file with input tapeID1635, job/output dates, selection cards, plot legend, multiple repeated output layouts and numerical CODE/ALT/time/position fields. The original is retained byte-for-byte. No original SAR tape, NTAP executable/control manual, complete radarCD, FDR-clock worksheet or end-to-end custody packet has been acquired.
++
++Parse only the explicitly headed LST3 list in time sequence with latitude/longitude conversion, preserving physical source line and match column. Capture all syntactically matched numeric-code entries (not only an expected flight code). Record all nonnumeric fixed-point/FIRE rows separately, without interpreting FIRE as physical fire. Do not count LST1/2/4 representations as independent additional observations. Date/header/selection/program messages remain quoted at exact lines.
++
++Use a reversible Latin1 byte-to-codepoint display solely to retain all values; original encoding is unverified. Do not replace raw bytes or repair five nonASCII bytes, NULs or trailingCtrlZ. Compute count, printed time range, repeated labels and cadence only inside this extraction; identify separate codes and preserve flags. Native ALT values retain original units until a definition is acquired. Check geographically valid DMS components, sorted time within each code and several source-row controls. Source integrity or parser agreement is not independent historical validation.
++
++Report FORMAT ERROR for ALTLIM and program condition0000 together, without assuming the invalid card changed altitude selection or invalidated every result. Preserve PLOT requested start123400 versus tape start123432 and stated stop125800; these describe extraction coverage, not destroyed data. Printed duration1409 and arithmetic endpoints require their documented unit/inclusivity convention; do not label an unconfirmed1second error. No airframe identity inference from code or filename alone, no fitted offset from the desired event, no crash/impact timing claim, and no automatic25.3second adjustment.

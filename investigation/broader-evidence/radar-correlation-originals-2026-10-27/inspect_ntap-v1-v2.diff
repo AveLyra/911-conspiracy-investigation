@@ -1,0 +1,22 @@
+diff --git a/investigation/broader-evidence/radar-correlation-originals-2026-10-27/inspect_ntap.py b/investigation/broader-evidence/radar-correlation-originals-2026-10-27/inspect_ntap_v2.py
+index 5aff2711..72466214 100644
+--- a/investigation/broader-evidence/radar-correlation-originals-2026-10-27/inspect_ntap.py
++++ b/investigation/broader-evidence/radar-correlation-originals-2026-10-27/inspect_ntap_v2.py
+@@ -20,7 +20,7 @@ def inspect(path):
+     assert hashlib.sha256(raw).hexdigest() == PIN, 'Input differs from preserved source'
+     lines = raw.decode('latin1').splitlines()
+     start = next(i for i, l in enumerate(lines) if 'LST3 - LIST OF PLOT SYMBOLS IN TIME SEQUENCE WITH LAT/LONG CONVERSION' in l)
+-    end = next(i for i in range(start + 1, len(lines)) if 'LAST RECORDED POSITION' in lines[i])
++    end = next(i for i in range(start + 1, len(lines)) if 'LST4 - RADAR DATA ANALYSIS REPORT' in lines[i])
+     offsets = []
+     pos = 0
+     for line in raw.splitlines(keepends=True):
+@@ -70,7 +70,7 @@ def inspect(path):
+         (386,'6553','1237:43','290'),
+         (393,'6553','1240:10','330'),
+         (393,'3743','1240:34','330'),
+-        (435,'3743','1256:19','350')
++        (433,'3743','1256:19','350')
+     ]
+     control_results = []
+     for line,code,t,alt in controls:

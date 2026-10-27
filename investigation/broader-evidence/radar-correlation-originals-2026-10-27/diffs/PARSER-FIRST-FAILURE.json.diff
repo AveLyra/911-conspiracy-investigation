@@ -1,0 +1,21 @@
+diff --git a/investigation/broader-evidence/radar-correlation-originals-2026-10-27/PARSER-FIRST-FAILURE.json b/investigation/broader-evidence/radar-correlation-originals-2026-10-27/PARSER-FIRST-FAILURE.json
+new file mode 100644
+index 00000000..0c1b006d
+--- /dev/null
++++ b/investigation/broader-evidence/radar-correlation-originals-2026-10-27/PARSER-FIRST-FAILURE.json
+@@ -0,0 +1,15 @@
++{
++  "first_run": "inspect_ntap.py source --output NTAP-LST3-RESULT.json",
++  "exit_code": 1,
++  "exception": "AssertionError: Manual source-row control failed",
++  "output_written": false,
++  "cause": "Analyst assigned the last plot-entry control to source line435; actual downloaded bytes show it on line433. The v1 boundary also reached the next LAST RECORDED POSITION heading and included three LST4 heading lines in residue. Neither is a source anomaly.",
++  "repair": "v2 corrects the control line to433 and stops at the first LST4 heading at434. Expected code/time/alt values, hash, all four controls, geospatial constraints and no-unparsed-code checks retained. v1 preserved.",
++  "source_controls_checked": [
++    386,
++    393,
++    433
++  ],
++  "v1_sha256": "036d037494d2ff9f28da6f48f6797bf6b543b0a75a877078458d7b64acf4fa6b",
++  "v2_sha256": "9a1e759e1b6ff2b73bb09e0a5c0a6778021f862008d03270b49ebc84a5ffdb3f"
++}

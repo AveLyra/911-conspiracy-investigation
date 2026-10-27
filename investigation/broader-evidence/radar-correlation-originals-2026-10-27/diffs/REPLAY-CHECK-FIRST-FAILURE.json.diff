@@ -1,0 +1,13 @@
+diff --git a/investigation/broader-evidence/radar-correlation-originals-2026-10-27/REPLAY-CHECK-FIRST-FAILURE.json b/investigation/broader-evidence/radar-correlation-originals-2026-10-27/REPLAY-CHECK-FIRST-FAILURE.json
+new file mode 100644
+index 00000000..0272d2a3
+--- /dev/null
++++ b/investigation/broader-evidence/radar-correlation-originals-2026-10-27/REPLAY-CHECK-FIRST-FAILURE.json
+@@ -0,0 +1,7 @@
++{
++  "failed_check": "In-memory Python dictionary compared directly with JSON-decoded output",
++  "exception": "AssertionError",
++  "diagnosis": "Only per_code histogram keys differed in type: integer Python keys become string JSON object keys. All exact serialized output bytes reproduce. This is a verification-harness type-comparison error, not source inconsistency.",
++  "repair": "Compare the complete fresh serialized output, including every field/row, byte-for-byte against the original output file. No fields/requirements dropped.",
++  "corrected_check_passed": true
++}
