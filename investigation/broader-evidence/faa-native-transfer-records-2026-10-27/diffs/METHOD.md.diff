@@ -1,0 +1,19 @@
+diff --git a/Users/admin/docs/911-worktrees/public-inclusive-lead-review-2026-10-15/investigation/broader-evidence/faa-native-transfer-records-2026-10-27/METHOD.md b/Users/admin/docs/911-worktrees/public-inclusive-lead-review-2026-10-15/investigation/broader-evidence/faa-native-transfer-records-2026-10-27/METHOD.md
+new file mode 100644
+index 00000000..dfed8e20
+--- /dev/null
++++ b/Users/admin/docs/911-worktrees/public-inclusive-lead-review-2026-10-15/investigation/broader-evidence/faa-native-transfer-records-2026-10-27/METHOD.md
+@@ -0,0 +1,13 @@
++# Reading and reproduction scope
++
++The native files were downloaded from the exact public National Archives links in ACQUISITIONS.json. Their full bytes are preserved locally; they are not included in this public payload. Selected exact extraction lines, source hashes, safe native structural properties and research notes are published.
++
++macOS textutil was run with `-info`, and separately with `-noload -nostore -convert txt -stdout` and `-noload -nostore -convert wordml -stdout` on each source. All six commands exited zero; originals retained their hashes. The full conversion artifacts and native metadata remain local. The text extractions have 199 and 39 physical lines; source/extraction hashes and selected line text are in SOURCE-EXCERPTS.json. These are extraction lines, not original pagination.
++
++Quick Look ran `qlmanage -t -s 1600 -o OUTPUT_DIRECTORY SOURCE1 SOURCE2`. Two first-page thumbnails were produced and visually read. That checks selected visible text/layout only. The full Word pagination, revision/comment history, object contents and macro structures were not audited.
++
++For native dates, obtain the exact olefile 0.47 wheel from TOOL-PROVENANCE.json, verify its SHA-256, and run `python3 inspect_native_properties.py WHEEL_PATH INVENTORY_DOC ANALYSIS_DOC`. The script reads only and prints JSON. It independently parses the two standard FILETIME properties from the logical SummaryInformation stream and compares them with olefile. Raw ticks/bytes/offsets are retained. Compare against NATIVE-PROPERTY-AUDIT.json. Absence of reported parsing issues is limited to this operation.
++
++For candidate identifier joins, the earlier independently acquired NTAP text, row extraction and parser are published under [radar-correlation-originals-2026-10-27](../radar-correlation-originals-2026-10-27/README.md), commit e8209abd23940047f02fe8c15be86202555aacd2. Run `python3 check_source_joins.py INVENTORY_TEXTUTIL_TXT ANALYSIS_TEXTUTIL_TXT NTAP_TXT NTAP_LST3_RESULT_JSON`. It checks the held NTAP hash and all 80 prior code-3743 row byte spans, plus literal inventory/analysis labels. It does not independently decode tape data, fit clocks, validate altitude units or authenticate aircraft identity.
++
++README.md and REPORT-v2.md are redundant provenance-preserving copies of the current native report. REPORT-v1.md is the preserved preceding text. diffs/REPORT-v1-v2.diff records the specific addition distinguishing the tape-header stop from the inventory minute label and PLOT query. Other diffs show additions against an absent preceding file. Earlier published studies are unchanged.

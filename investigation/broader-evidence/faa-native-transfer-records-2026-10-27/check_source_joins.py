@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+"""Check only identifier/label joins; do not fit clocks or authenticate aircraft.
+
+Usage: python3 check_source_joins.py INVENTORY_TXT ANALYSIS_TXT NTAP_TXT OLD_ROWS_JSON
+The old row extraction is separately published, including its parser and controls.
+All rows used here must still point to the exact source bytes they claim.
+"""
+import hashlib
+import json
+from pathlib import Path
+import re
+import sys
+
+inventory, analysis, raw_path, rows_path = map(Path, sys.argv[1:])
+inv = inventory.read_text()
+ana = analysis.read_text()
+raw = raw_path.read_bytes()
+old = json.loads(rows_path.read_text())
+assert hashlib.sha256(raw).hexdigest() == old["source_sha256"]
+assert old["source_sha256"] == "5409296c7834e0e834f201e6b78bc43042a2920053af49c243384ded9a5f3f0e"
+rows = [r for r in old["rows"] if r["code"] == "3743"]
+assert len(rows) == 80
+for row in rows:
+    start = row["byte_offset_zero_based"]
+    text = row["matched_source_text"].encode("latin1")
+    assert raw[start:start + len(text)] == text
+last = max(rows, key=lambda r: r["nominal_seconds_in_unconfirmed_timebase"])
+assert (last["printed_time"], last["alt_raw"]) == ("1256:19", "350")
+lines = raw.decode("latin1").splitlines()
+tape_lines = [
+    {"line": i, "text": line}
+    for i, line in enumerate(lines, 1)
+    if "1635" in line and "TAPE" in line.upper()
+]
+assert tape_lines, "Expected tape-ID line in actual NTAP source"
+assert re.search(r"ID 1635\s+1234-1258 UTC", inv)
+assert "1256:19 UTC [350]" in inv
+assert "12:56:19Z" in ana and "13:04:32Z" in ana
+assert "QRI (Lynch, KY)" in ana
+assert "1308-1318 UTC (No VOX)" in inv
+print(json.dumps({
+    "scope": "Identifier and printed-label candidate joins only",
+    "inputs": {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
+               for p in (inventory, analysis, raw_path, rows_path)},
+    "ntap_tape_lines": tape_lines,
+    "prior_code3743_rows_checked_against_raw_byte_spans": len(rows),
+    "last_code3743_source_line": last["source_line"],
+    "last_printed_time": last["printed_time"],
+    "last_raw_alt": last["alt_raw"],
+    "inventory_tape_and_last_time_agree_at_label_level": True,
+    "analysis_point_A_agrees_at_label_level": True,
+    "analysis_primary_site_literal": "QRI (Lynch, KY)",
+    "inventory_HNN3_literal": "1308-1318 UTC (No VOX)",
+    "clock_offset_fitted": False,
+    "independent_aircraft_identity_or_altitude_units_verified": False,
+    "original_tape_byte_identity_or_full_custody_verified": False,
+}, indent=2))

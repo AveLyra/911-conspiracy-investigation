@@ -1,0 +1,99 @@
+diff --git a/Users/admin/docs/911-worktrees/public-inclusive-lead-review-2026-10-15/investigation/broader-evidence/faa-native-transfer-records-2026-10-27/inspect_native_properties.py b/Users/admin/docs/911-worktrees/public-inclusive-lead-review-2026-10-15/investigation/broader-evidence/faa-native-transfer-records-2026-10-27/inspect_native_properties.py
+new file mode 100644
+index 00000000..2fd47e9b
+--- /dev/null
++++ b/Users/admin/docs/911-worktrees/public-inclusive-lead-review-2026-10-15/investigation/broader-evidence/faa-native-transfer-records-2026-10-27/inspect_native_properties.py
+@@ -0,0 +1,93 @@
++#!/usr/bin/env python3
++"""Read-only OLE dates/stream audit; not a complete Word revision/macro parser.
++
++Usage: python3 inspect_native_properties.py OLEFILE_WHEEL SOURCE_DOC [...]
++Reads only. Prints JSON to stdout. No source mutation or macro execution.
++Offsets reported below are logical SummaryInformation-stream offsets, not
++physical offsets in the compound file. Unknown metadata values are not emitted.
++"""
++import datetime as dt
++import hashlib
++import json
++from pathlib import Path
++import struct
++import sys
++
++sys.path.insert(0, sys.argv[1])
++import olefile  # noqa: E402
++
++
++def manual_dates(raw):
++    """Decode only standard PIDs 12/13, independently of olefile's date decoder."""
++    assert raw[:2] == b"\xfe\xff", "Unexpected property-set byte order"
++    sections = struct.unpack_from("<I", raw, 24)[0]
++    assert sections == 1, "This narrow control expects one SummaryInformation section"
++    section = struct.unpack_from("<I", raw, 44)[0]
++    size, count = struct.unpack_from("<II", raw, section)
++    assert section + size <= len(raw)
++    result = {}
++    for i in range(count):
++        pid, rel = struct.unpack_from("<II", raw, section + 8 + i * 8)
++        if pid not in (12, 13):
++            continue
++        offset = section + rel
++        kind = struct.unpack_from("<I", raw, offset)[0]
++        assert kind == 0x40, "Expected VT_FILETIME for date property"
++        ticks = struct.unpack_from("<Q", raw, offset + 4)[0]
++        # Retain exact ticks; datetime rounds only the sub-microsecond remainder.
++        seconds, remainder = divmod(ticks, 10_000_000)
++        value = dt.datetime(1601, 1, 1, tzinfo=dt.timezone.utc) + dt.timedelta(
++            seconds=seconds, microseconds=remainder // 10
++        )
++        result[str(pid)] = {
++            "property_stream_offset": offset,
++            "value_stream_offset": offset + 4,
++            "type_hex": "0x0040",
++            "filetime_ticks": ticks,
++            "value_raw_hex": raw[offset + 4:offset + 12].hex(),
++            "utc": value.isoformat(),
++        }
++    assert set(result) == {"12", "13"}, "Both expected date properties required"
++    return result
++
++
++results = []
++for name in sys.argv[2:]:
++    path = Path(name)
++    before = hashlib.sha256(path.read_bytes()).hexdigest()
++    with olefile.OleFileIO(str(path), write_mode=False) as compound:
++        stream = compound.openstream("\x05SummaryInformation").read()
++        direct = manual_dates(stream)
++        meta = compound.get_metadata()
++        library = {
++            "12": meta.create_time.replace(tzinfo=dt.timezone.utc).isoformat(),
++            "13": meta.last_saved_time.replace(tzinfo=dt.timezone.utc).isoformat(),
++        }
++        assert all(direct[k]["utc"] == library[k] for k in direct)
++        item = {
++            "filename": path.name,
++            "bytes": path.stat().st_size,
++            "sha256": before,
++            "parser": "olefile " + olefile.__version__ + "; read-only",
++            "directory": [
++                {"path": "/".join(parts), "bytes": compound.get_size(parts)}
++                for parts in compound.listdir()
++            ],
++            "summary_information_sha256": hashlib.sha256(stream).hexdigest(),
++            "date_properties": direct,
++            "olefile_date_crosscheck": library,
++            "manual_and_library_dates_agree": True,
++            "reported_nonfatal_parsing_issues": [
++                {"type": getattr(kind, "__name__", str(kind)), "message": str(message)}
++                for kind, message in compound.parsing_issues
++            ],
++            "limitations": [
++                "Stored metadata is not authenticated authorship or an event date",
++                "Logical stream directory is not a complete Word revision/comment/attachment/macro audit",
++                "Other metadata values omitted; source binaries remain local",
++            ],
++        }
++    item["input_unchanged"] = before == hashlib.sha256(path.read_bytes()).hexdigest()
++    assert item["input_unchanged"]
++    results.append(item)
++print(json.dumps(results, indent=2))

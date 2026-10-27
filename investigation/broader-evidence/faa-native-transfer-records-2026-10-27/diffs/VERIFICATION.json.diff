@@ -1,0 +1,58 @@
+diff --git a/Users/admin/docs/911-worktrees/public-inclusive-lead-review-2026-10-15/investigation/broader-evidence/faa-native-transfer-records-2026-10-27/VERIFICATION.json b/Users/admin/docs/911-worktrees/public-inclusive-lead-review-2026-10-15/investigation/broader-evidence/faa-native-transfer-records-2026-10-27/VERIFICATION.json
+new file mode 100644
+index 00000000..8cc671f9
+--- /dev/null
++++ b/Users/admin/docs/911-worktrees/public-inclusive-lead-review-2026-10-15/investigation/broader-evidence/faa-native-transfer-records-2026-10-27/VERIFICATION.json
+@@ -0,0 +1,52 @@
++{
++  "utc": "2026-10-27T18:42:38.535994+00:00",
++  "checks": [
++    {
++      "check": "Pinned olefile wheel hash",
++      "pass": true,
++      "version": "0.47",
++      "sha256": "543c7da2a7adadf21214938bb79c83ea12b473a4b6ee4ad4bf854e7715e13d1f"
++    },
++    {
++      "check": "Read-only native-property audit exact replay",
++      "pass": true,
++      "source_files": 2,
++      "standard_date_properties": 4,
++      "manual_and_olefile_dates_agree": true
++    },
++    {
++      "check": "textutil dates match four directly decoded properties",
++      "pass": true
++    },
++    {
++      "check": "Six successful textutil outputs and stored hashes",
++      "pass": true,
++      "outputs": 6
++    },
++    {
++      "check": "Both native source lengths and hashes unchanged",
++      "pass": true
++    },
++    {
++      "check": "All published selected excerpts match source extraction lines exactly",
++      "pass": true
++    },
++    {
++      "check": "80 prior NTAP row byte spans plus tape/time labels",
++      "pass": true,
++      "scope": "Candidate joins; no clock fit, original-tape identity, or aircraft authentication"
++    },
++    {
++      "check": "Two first-page Quick Look thumbnails generated and visually inspected",
++      "pass": true,
++      "not_checked": "Full native pagination, revision history, comments and embedded objects"
++    }
++  ],
++  "all_passed": true,
++  "limitations": [
++    "No independent calibration or clock fit",
++    "No complete native Word revision/comment/macro audit",
++    "Listed transfer originals and actual source media not acquired",
++    "Integrity/reproducibility is not historical verification"
++  ]
++}
