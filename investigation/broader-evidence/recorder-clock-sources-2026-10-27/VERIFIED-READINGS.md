@@ -1,0 +1,92 @@
+# AA77 ATC clock-source readings
+
+These are analyst transcriptions of visually inspected source images, not the PDF's nonexistent text layer or native agency line numbers. Physical page numbers refer to the complete 13-page GWU file. Quoted values and wording are retained; display wrapping is collapsed only where shown. The source PDF remains unchanged. OCR is a separate, fallible locator.
+
+## R01 — source identity, physical page 1, title and accident block
+
+Date: `December 21, 2001`; title: `Air Traffic Control Recording`; `Specialist’s Report by Joseph A. Gregor`; agency: National Transportation Safety Board, Vehicle Recorders Division. Aircraft: `Boeing 757-200`; NTSB Number: `DCA01SA064`.
+
+## R02 — acquisition lineage, physical page 1, Summary
+
+“A certified analog copy of air traffic control (ATC) transmissions recorded on September 11, 2001 at various tower, departure, and Air Route Traffic Control Center (ARTCC) positions along the route of flight was sent to the audio laboratory of the National Transportation Safety Board.”
+
+“These recordings were used to create an audio track and text transcript of the aircraft-ground communications from takeoff to accident time.”
+
+This is the report's account of an analog-copy transfer, not a separately acquired certification, tape inventory, transfer receipt or complete custody log.
+
+## R03 — source periods, physical page 2 (printed ii), table
+
+| Facility | Time Period (UTC) | Position |
+| --- | --- | --- |
+| IAD | 1211 - 1226 | LCW |
+| IAD (merged cell) | 1215 - 1230 | ND |
+| IAD (merged cell) | 1218 - 1231 | NH |
+| ZDC | 1220 - 1236 | Sector 05R |
+| ZDC | 1226 - 1246 | Sector 03R |
+| ZID | 1234 - 1309 | HNN-R |
+| ZID (merged cell) | 1249 - 1313 | DAC-RA |
+| ZID (merged cell) | 1249 - 1313 | DAC-R |
+
+Merged-cell attribution is stated here, not additional repeated text in the scan. Hyphens/spaces reproduce the table values without choosing which source range is correct.
+
+## R04 — digitization and composite, physical page 2 (printed ii), paragraph under table
+
+“Sections of the tape recordings containing air-ground transmissions to and from the incident aircraft were digitized at a 22,050 Samples/second data rate and saved as standard Microsoft .wav files.”
+
+“Individual .wav files were combined into a single 43 minute 59 second long .wav file containing all transmissions to and from the incident aircraft from 1219:20 UTC (aircraft cleared for takeoff) to 1303:19 UTC.”
+
+“A transcript was obtained from the final composite recording. Times are approximate due to limitations inherent in the data obtained from the FAA.”
+
+These are descriptions, not acquired WAV metadata or a measured waveform duration.
+
+## R05 — aircraft labels and scope, physical page 3 (printed iii)
+
+Heading: `Transcript of ATC communications with a Boeing B-757-200 (American Airlines flight 77)`.
+
+AAL-77 legend: `Radio transmission from American B-767-200, flight 77`.
+
+Note 1: `Times are expressed in universal coordinated time (UTC).`
+
+Note 2: `Only radio transmissions to and from the accident aircraft were transcribed.`
+
+The report has an intra-cockpit column, but the inspected contents are ATC communications, not an acquired CVR transcript or audio recording.
+
+## R06 — NH source-label example, physical page 5 (printed transcript 2 of 8)
+
+Time `1223:43`, AAL-77; bracketed tape source `IAD 1215-1230 NH`. The same range appears with NH entries on this page. Preserve beside R03's `1218 - 1231` NH table entry.
+
+## R07 — source-period and timecode-mark example, physical page 8 (printed transcript 5 of 8)
+
+Time `1240:13` carries a superscript `+`; AAL-77; the bracketed source is `ZDC 1234-1409 HNN-R`. The following `1240:15` and `1240:19` entries also carry `+` marks and the same bracketed range. Preserve beside R03's `ZID` and `1234 - 1309` HNN-R entry.
+
+## R08 — late attempts and duplicate time, physical page 10 (printed transcript 7 of 8)
+
+`1258:20` DAC-RA cites `ZDC 1249-1317 DAC-RA`.
+
+Two `1300:56` rows identify DAC-RA and DAC-R separately and cite `ZDC 1249-1317` with their respective positions. Two rows are not proof of two separate transmitted utterances or independent clocks.
+
+`1303:06` HNN-R is the final row on this physical page; it is a controller call to American 77, not a transcribed reply from AAL-77.
+
+## R09 — later guard entry and timecode reader, physical page 11 (printed transcript 8 of 8)
+
+`~1315:15` / `AAL-683` / `[called AAL-77 on guard at center request]. [ZDC 1249-1317 DAC-RA]`
+
+The page also says `End of transcript` and, following a superscript `+`, `times verified via FAA timecode reader.`
+
+The report does not on these pages supply the reader make/version, tape-channel clock offsets, calibration, measured error bounds or the verification worksheet. The approximate guard entry is not marked as an AAL-77 transmission.
+
+## R10 — appended transcript pages, physical pages 12–13
+
+Two unnumbered monospaced transcript pages repeat entries from the eight-page formatted transcript. Physical page 13 includes `~1315:15 AAL-683 [called AAL-77 on guard at center request]. [ZDC 1249-1317 DAC-RA]`. Its provenance as an appended representation has not been separately established. It is not independent corroboration of the eight-page transcript. No exhaustive character-by-character comparison of the two layouts was performed.
+
+## R11 — prior official FDR comparator, physical pages 1 and 3
+
+Distinct file: NTSB official `AAL77_fdr.pdf`, SHA-256 `5784213460f2a2e422f853547611c62f1c71ccae50103f9ffc83a5cae40430cc`; January 31, 2002; physical page 1: `DCA01MA064`, `B-757-200, N644AA` and `Loral Fairchild Model F-2100`.
+
+Physical page 3, Time Correlation: `The SSFDR data were correlated to local time (Eastern Daylight Time (EDT)). See the Time Correlation Report for further details on the correlation between SSFDR and local time.`
+
+The ATC report uses `DCA01SA064`; this official FDR report uses `DCA01MA064`. Keep both document identifiers available for retrieval without inferring two aircraft, a substituted file or the correct administrative convention. The separate named report remains unacquired.
+
+## R12 — OCR control, physical page 6
+
+The visual time for the Sector 03R climb instruction is `1231:21`. Rotated OCR produced `1231:24`; this is our OCR error, not a discrepancy between source records. Keep the raw OCR output as a locator and use the scan for this reading.

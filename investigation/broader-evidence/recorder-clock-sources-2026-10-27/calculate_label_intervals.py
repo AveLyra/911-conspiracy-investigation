@@ -1,0 +1,25 @@
+"""Subtract document labels; do not infer actual audio gaps or clock accuracy."""
+import json
+
+def seconds(label):
+    hh, mm, ss = map(int, label.split(":"))
+    return 3600 * hh + 60 * mm + ss
+
+start = "12:19:20"
+end = "13:03:19"
+later_nominal = "13:15:15"
+result = {
+    "input_basis": "Visually read ATC report physical pages 2 and 11; later entry has ~ prefix",
+    "start_label_utc": start,
+    "composite_end_label_utc": end,
+    "later_approximate_label_nominal_utc": later_nominal,
+    "composite_label_interval_seconds": seconds(end) - seconds(start),
+    "stated_composite_duration_seconds": 43 * 60 + 59,
+    "arithmetic_agrees": seconds(end) - seconds(start) == 43 * 60 + 59,
+    "later_label_minus_composite_end_nominal_seconds": seconds(later_nominal) - seconds(end),
+    "audio_acquired": False,
+    "audio_gap_measured": False,
+    "clock_alignment_performed": False,
+    "accuracy_bound_established": False
+}
+print(json.dumps(result, indent=2))
