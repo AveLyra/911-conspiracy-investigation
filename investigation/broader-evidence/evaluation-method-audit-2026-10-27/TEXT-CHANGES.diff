@@ -1,0 +1,1167 @@
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..09d0a565
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,39 @@
++# Independent audit of our ten-claim review
++
++October 27, 2026. This supplement checks our reasoning, references and verification claims. It freezes the six-file first source pass at [1229c07b](https://github.com/AveLyra/911-conspiracy-investigation/tree/1229c07b033394c0e50907a9edf3fe8fc22aec3e/investigation/broader-evidence/ten-claim-audit-2026-10-27). Later materials work is a separate continuation. Earlier wording and conflicts remain in the byte-identical [frozen snapshots](frozen/REVIEW.json).
++
++## Concrete corrections
++
++**Make the public references followable.** The first-pass README line 25 names an arithmetic file absent from that publication. This supplement supplies the [unchanged COMPARISONS.json](COMPARISONS.json). Its two-second difference compares document labels; it does not measure a clock error or missing audio. The 37 minus 35 result is arithmetic on attributed counts, not a carrier-log test. EM01.
++
++Some source references point to unpublished derived line numbers or native FAA/steel study names. [LOCATOR-MAP.json](LOCATOR-MAP.json) connects the six NPS derived lines to exact raw HTML lines in the pinned source. Raw lines change with website versions: compare the hash first. The two earlier report-export joins remain open. Their absence under those names in this commit does not mean their primary records do not exist. EM02.
++
++Our preceding explanation also contained an incorrect local Millette link. The held file exists and matches SHA-256 `4165663adf2e377c09cc27750a70d1d62a4aab62bba1edc43cd6c3e2d9b0cd38`. Use the [verified source route](https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf). This corrects our pointer; it changes no source bytes or chemical result. EM07.
++
++## Improvements to the reasoning
++
++**Cite each assertion within a combined judgment.** The Flight 93 path study describes a reconstruction from reported recorder/radar inputs. Our older sentence also invoked recovered material and occupant identifications; this pass did not separately trace those assertions. A credible path study is not a substitute for every identification record. That is an evidentiary-coverage gap, not a finding that the unjoined assertions are false. [NTSB physical pages 1–2](https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf#page=1). EM03.
++
++The same check matters for Olson: Commission note 57 supports uncertain matching among connected calls, but does not itself provide the Keyton interview or the zero-duration exhibit invoked in our original sentence. The earlier pass correctly exposed that gap. We should apply that sentence-by-sentence standard across the review, including our affirmative FAA and steel criticisms. [Commission printed page 455, note 57](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7).
++
++**Map shared sources instead of merely warning about them.** All ten rows use the same dependence warning. Three reuse the UA93 study; two reuse the CVR transcript. [SOURCE-DEPENDENCE.json](SOURCE-DEPENDENCE.json) makes those overlaps explicit. Distinct named measurement channels can still corroborate each other; their custody, clocks and shared processing have not been independently established here. Neither ten claim rows nor seven source hashes is an independent-experiment count. EM04.
++
++**Separate a historical assessment from our work status.** A failed download does not weaken an event merely by failing, and successful decoding or hash checks do not establish its historical interpretation. Likewise, control inputs do not logically exclude every imaginable external strike, but that possibility supplies no affirmative strike evidence. A specified alternative needs observations or predictions distinguishing it from the compared account. This standard applies to both allegations and dismissals. The original review already states key parts of this safeguard; we are preserving a sound qualification, not announcing a newly discovered reversal. EM05.
++
++**Finish decisive identification evidence before broad materials conclusions.** The frozen pass acknowledged that most Harrit identification figures and Millette appendices remained unread. Its narrow custody/same-specimen qualifications can still stand, but a wider chemistry verdict needs the actual result-to-specimen links and relevant identification arguments. Different specimens, chemical identity, building attribution and deliberate installation are separate questions. The original B161 already contained the different-sample qualification; it was not a newly overturned conclusion. Later evaluation-owner materials work is outside this frozen audit. EM06.
++
++## What passed, and what the checks mean
++
++The 11 baseline checks passed: all ten exact earlier statements were retained; four original analytical baseline hashes remained unchanged; all 16 prior task contracts survived; the five additions have priorities, sources and acceptance criteria; all seven held source pins match; and incomplete/no-independent-replication flags remain explicit. [NATIVE-CHECKS.json](NATIVE-CHECKS.json) records their precise scope. Purposeful sampling and prior exposure are disclosed. The sample gives no investigation-wide error rate.
++
++The review also correctly distinguishes the last listed utterance from recorder termination, an extracted altitude value from the visible figure, reported call counts from authenticated calls, inaccurate accounts from intentional original falsity, and preservation losses from total disappearance. Those are positive findings of this audit. DOT's separate notification-error and known-noncorrection findings should stay distinct. [DOT 2006 executive summary and printed pages 8–12](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf).
++
++[CLAIM-SUPPORT.json](CLAIM-SUPPORT.json) gives two compact assertion groups for every selected parent claim. Those 20 groups are a practical minimum, not a count of independent observations. [FINDINGS.json](FINDINGS.json) records evidence, exact frozen file/line references, strongest objections, repairs and adoption status. Proposed annotations are implemented on the audit side only; no substantive owner's register, source or historical verdict was overwritten.
++
++## Next records and acceptance limits
++
++Prioritize the exact Keyton interview and zero-duration trial/carrier record; aircraft recovery/identification joins separately from flight-path reports; native recorder/radar/clock/custody records; and materials sample-to-test/native-instrument/control joins. For steel, join preservation decisions and candidate attribution to item-specific records. For FAA, distinguish the original timeline, later knowledge, correction responsibility and recommendation disposition. These are existing leads, not new proof that every unacquired record was withheld or destroyed.
++
++This audit performed no aircraft reconstruction, audio decoding, chemical assay, clock calibration or historical-intent test. It warrants no new historical verdict reversal. It supplies concrete sourcing repairs and narrower acceptance criteria for future conclusions.
++
++Run `python3 verify.py` here for the portable document checks. Their scope is explicit; local source/baseline checks were separately run with `audit_checks.py`. [CHECKS.json](CHECKS.json) gives the portable result and [VERIFICATION-NOTE.md](VERIFICATION-NOTE.md) preserves the verification history. [CHECKLIST.md](CHECKLIST.md) carries unresolved work forward. [TEXT-CHANGES.diff](TEXT-CHANGES.diff) shows this new report against an empty predecessor; the six prior public files are unchanged snapshots. No raw private assessment or third-party source attachment is exported. A separate dated receipt must verify public account/ref/commit/blob state; publication does not mean substantive acceptance. EM08.
+diff --git a/FINDINGS.json b/FINDINGS.json
+new file mode 100644
+index 00000000..f7cf064d
+--- /dev/null
++++ b/FINDINGS.json
+@@ -0,0 +1,243 @@
++{
++  "scope": "Independent methods audit of the frozen first source pass; finding kinds distinguish actual defects, improvements, safeguards and uncompleted work.",
++  "target_commit": "1229c07b033394c0e50907a9edf3fe8fc22aec3e",
++  "findings": [
++    {
++      "id": "EM01",
++      "kind": "confirmed publication-reference defect",
++      "priority": "P2",
++      "confidence": "high",
++      "observation": "The public README names COMPARISONS.json, but the frozen six-file publication contains no such file. The native file exists and contains only two labeled subtractions.",
++      "locations": [
++        {
++          "file": "frozen/README.md",
++          "line_start": 25,
++          "line_end": 25
++        }
++      ],
++      "test": "Exact target Git tree enumeration plus inspection and hashing of the native arithmetic file.",
++      "effect": "A reader cannot inspect that named artifact from the target publication.",
++      "strongest_objection": "Both arithmetic inputs are in the narrative; the omitted file does not change either calculation or establish missing historical evidence.",
++      "repair": "This additive supplement includes an unchanged, hash-pinned COMPARISONS.json. The original publication is left intact.",
++      "state": "repaired in this supplement; parent publication unchanged",
++      "not_established": "No clock calibration, call authentication, data deletion or historical misconduct follows."
++    },
++    {
++      "id": "EM02",
++      "kind": "confirmed locator and dependency reviewability gap",
++      "priority": "P2",
++      "confidence": "high for target publication; not a corpus-wide absence finding",
++      "observation": "The calls locators are derived text lines, not raw HTML lines, and their extraction is absent from the public payload. Two reused native FAA/steel reports are not present under their cited names in the target public tree.",
++      "locations": [
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 154,
++          "line_end": 159
++        },
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 285,
++          "line_end": 290
++        },
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 327,
++          "line_end": 332
++        },
++        {
++          "file": "frozen/PROVENANCE.json",
++          "line_start": 36,
++          "line_end": 36
++        }
++      ],
++      "test": "Compared preserved raw HTML, the held derived line layers and the frozen target tree. LOCATOR-MAP.json bridges six NPS locators and records court candidates.",
++      "effect": "Readers can open publisher URLs but cannot follow every local locator or reused-report dependency exactly from this derivative.",
++      "strongest_objection": "The reviewer disclosed reuse, and relevant primary records or other public studies may exist elsewhere. This is not proof that no such records were reviewed or published.",
++      "repair": "Publish source-hash-specific raw/derived anchor bridges and full public links. Nominate the original study owner to close the two report-export joins after disclosure review.",
++      "state": "NPS bridge implemented; full reused-report publication joins remain open"
++    },
++    {
++      "id": "EM03",
++      "kind": "compound-claim support needs finer attribution",
++      "priority": "P1",
++      "confidence": "high for scope of this source pass",
++      "observation": "Some original verdicts combine distinct evidentiary assertions under one citation. A flight-path report is not an inspected occupant-identification record; Commission note57 does not supply the Keyton interview or the zero-duration exhibit.",
++      "locations": [
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 7,
++          "line_end": 7
++        },
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 37,
++          "line_end": 37
++        },
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 167,
++          "line_end": 167
++        },
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 299,
++          "line_end": 299
++        }
++      ],
++      "test": "Compared every frozen claim with its declared inspection scope; separately checked NTSB physical1–2, Commission note57 and the NPS methods passage. CLAIM-SUPPORT.json records all ten rows.",
++      "effect": "A well-supported part can lend unwarranted apparent coverage to adjacent assertions.",
++      "strongest_objection": "The current review already flags several gaps. Unjoined evidence can exist and be persuasive; incomplete citation coverage does not prove a historical conclusion false.",
++      "repair": "Keep parent claim IDs and wording, but identify each assertion, its source, inspection status and inferential role. Join recovery, occupant-ID, office-witness and preservation-decision records separately.",
++      "state": "audit-side support matrix implemented; substantive parent adoption pending"
++    },
++    {
++      "id": "EM04",
++      "kind": "dependence warning needs an actual source map",
++      "priority": "P1",
++      "confidence": "high for reuse; historical input dependence partly unknown",
++      "observation": "All ten rows repeat the same independence warning. UA93 is reused for B096/B097/B100, and the CVR transcript for B097/B100. Ten claim reviews are not ten independent experimental checks.",
++      "locations": [
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 30,
++          "line_end": 30
++        },
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 62,
++          "line_end": 62
++        },
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 95,
++          "line_end": 95
++        },
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 128,
++          "line_end": 128
++        },
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 340,
++          "line_end": 340
++        }
++      ],
++      "test": "Counted the unique warning strings and mapped each inspected_source_locators entry to claim IDs.",
++      "effect": "A generic warning does not let a reader identify which conclusions share evidence.",
++      "strongest_objection": "The report already expressly disclaims ten independent tests. Different instrument channels may provide corroboration; shared authorship or publication does not erase it.",
++      "repair": "SOURCE-DEPENDENCE.json distinguishes repeated documents, reported distinct channels, shared reconstruction and unknown clock/custody/calibration relationships. Do not assign an independent-corroboration count without the underlying joins.",
++      "state": "document-level map implemented; historical channel independence not established"
++    },
++    {
++      "id": "EM05",
++      "kind": "interpretation guardrail, not an established reversal",
++      "priority": "P1",
++      "confidence": "high",
++      "observation": "The review states that an access failure is not counterevidence and that control inputs do not logically exclude an external strike. These are limits of the performed audit, not affirmative evidence for a different event.",
++      "locations": [
++        {
++          "file": "frozen/README.md",
++          "line_start": 7,
++          "line_end": 7
++        },
++        {
++          "file": "frozen/README.md",
++          "line_start": 19,
++          "line_end": 21
++        },
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 25,
++          "line_end": 28
++        },
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 87,
++          "line_end": 90
++        }
++      ],
++      "test": "Read verdict and objection fields together; compared original wording with actual inspection/replication scope.",
++      "effect": "Readers or later summaries may convert audit incompleteness into a historical downgrade, or treat a merely possible alternative as equally supported.",
++      "strongest_objection": "The first pass already makes the key qualifications. A new complicated scoring framework would add little; relevant unresolved contrary evidence must still be considered.",
++      "repair": "Use explicit source_support, historical_assessment and work_status annotations in summaries. Require a specified alternative to supply discriminating predictions or contrary evidence, while retaining relevant circumstantial support.",
++      "state": "guardrail recorded; no historical verdict reversed by this audit"
++    },
++    {
++      "id": "EM06",
++      "kind": "open substantive acceptance work, accurately disclosed",
++      "priority": "P1",
++      "confidence": "high about reading scope; no new chemistry verdict",
++      "observation": "The frozen materials pass did not read most Harrit identification figures or all Millette appendices. It accurately disclosed that limitation and performed no assay. Later materials continuation is outside this frozen target.",
++      "locations": [
++        {
++          "file": "frozen/PROVENANCE.json",
++          "line_start": 15,
++          "line_end": 15
++        },
++        {
++          "file": "frozen/PROVENANCE.json",
++          "line_start": 43,
++          "line_end": 43
++        },
++        {
++          "file": "frozen/README.md",
++          "line_start": 13,
++          "line_end": 13
++        },
++        {
++          "file": "frozen/README.md",
++          "line_start": 25,
++          "line_end": 25
++        }
++      ],
++      "test": "Compared stated page/image scopes with claim-level conclusions; confirmed every historical-replication flag remains false.",
++      "effect": "Methods/custody observations alone cannot complete an evaluation of all identification results or classify every specimen.",
++      "strongest_objection": "One need not read every appendix to support a narrow directly observed qualification. The different-sample limit already appears in the original B161 wording.",
++      "repair": "Finish the decisive already-held identification evidence, author responses and sample-to-result joins before a broader chemical verdict. Distinguish chemical identity, building attribution and intentional placement.",
++      "state": "substantive evaluation-owner continuation; not newly completed here"
++    },
++    {
++      "id": "EM07",
++      "kind": "confirmed error in our preceding explanation",
++      "priority": "P2",
++      "confidence": "high",
++      "observation": "Our preceding plain-English explanation linked Millette to a nonexistent study-date path. The held PDF exists in the ten-claim source directory and matches the published source hash.",
++      "locations": [
++        {
++          "file": "our preceding chat explanation",
++          "locator": "Millette source link; source contents not alleged missing"
++        }
++      ],
++      "test": "Checked existence of the earlier and correct local targets and hashed the correct PDF.",
++      "effect": "The reader could not follow that link, although the evidence file was present.",
++      "strongest_objection": "This is our citation-path error; it changes neither the source bytes nor the laboratory result.",
++      "repair": "Use the verified publisher URL in the public report and the corrected exact local path in the local audit receipt. Preserve the error record.",
++      "state": "corrected source pointer supplied; earlier explanation preserved"
++    },
++    {
++      "id": "EM08",
++      "kind": "publication-state guardrail and audit pass",
++      "priority": "P2",
++      "confidence": "high for frozen target; current state requires dated verification",
++      "observation": "Committed locally, published on a branch, on default main, included in a PR, and accepted substantively are distinct states. The target is fixed by commit, and is not assumed to be default-main content.",
++      "locations": [
++        {
++          "file": "frozen/README.md",
++          "line_start": 29,
++          "line_end": 29
++        },
++        {
++          "file": "frozen/REVIEW.json",
++          "line_start": 32,
++          "line_end": 32
++        }
++      ],
++      "test": "Freeze by full commit and exact blob hashes; perform a separate timestamped destination/ref/blob verification for this publication.",
++      "effect": "Main-only checks can miss branch-only work; successful push is not acceptance of historical analysis.",
++      "strongest_objection": "publication_at_creation intentionally records the creation state; a frozen status field is not itself a false current-state claim.",
++      "repair": "Report the exact public ref, commit, date, account and payload check separately. Do not silently edit a frozen creation-state field.",
++      "state": "publication will have a separate verified receipt; no acceptance implied"
++    }
++  ]
++}
+diff --git a/CLAIM-SUPPORT.json b/CLAIM-SUPPORT.json
+new file mode 100644
+index 00000000..fb20e7fb
+--- /dev/null
++++ b/CLAIM-SUPPORT.json
+@@ -0,0 +1,216 @@
++{
++  "scope": "Audit-side assertion groups, not new baseline IDs or adjudicated replacements. Two groups per parent are a compact minimum; lists inside a group may need further itemization. Twenty groups are bookkeeping, not independent observations.",
++  "claims": [
++    {
++      "claim_id": "B078",
++      "original_wording_location": "frozen/REVIEW.json#/claims/0/exact_original_wording",
++      "assessment_source_line": 140,
++      "assertions": [
++        {
++          "id": "a",
++          "assertion": "Flight-recorder/radar reconstruction",
++          "support_in_frozen_pass": "not inspected in this pass; access failed",
++          "evidence_locator": "REVIEW.json:25–29",
++          "next_record_or_check": "AA77 factual report plus raw recorder/radar, decoder, custody and synchronization"
++        },
++        {
++          "id": "b",
++          "assertion": "Structural damage, recovered material, photographs and witnesses",
++          "support_in_frozen_pass": "combined original assertion without item-specific joins here",
++          "evidence_locator": "Original line140; single supplied flight-path URL",
++          "next_record_or_check": "Separate physical-item, damage and first-person records; do not assume the path report covers all"
++        }
++      ]
++    },
++    {
++      "claim_id": "B096",
++      "original_wording_location": "frozen/REVIEW.json#/claims/1/exact_original_wording",
++      "assessment_source_line": 164,
++      "assertions": [
++        {
++          "id": "a",
++          "assertion": "Reported recorder/radar path to Pennsylvania",
++          "support_in_frozen_pass": "supported at reconstruction-report level",
++          "evidence_locator": "NTSB physical1–2; REVIEW.json:56",
++          "next_record_or_check": "Raw data, identity/custody and time-calibration roots"
++        },
++        {
++          "id": "b",
++          "assertion": "Recovered aircraft material and occupant identifications",
++          "support_in_frozen_pass": "not independently traced by this pass",
++          "evidence_locator": "Original line164; REVIEW.json:57",
++          "next_record_or_check": "Recovery inventories, serial/identity joins and identification records; no unnecessary personal-data publication"
++        }
++      ]
++    },
++    {
++      "claim_id": "B097",
++      "original_wording_location": "frozen/REVIEW.json#/claims/2/exact_original_wording",
++      "assessment_source_line": 165,
++      "assertions": [
++        {
++          "id": "a",
++          "assertion": "Terminal sequence and control inputs",
++          "support_in_frozen_pass": "reported in NTSB; selected transcript pages inspected",
++          "evidence_locator": "NTSB physical2; court P200056T physical8–9",
++          "next_record_or_check": "Time-aligned recording/parameter provenance"
++        },
++        {
++          "id": "b",
++          "assertion": "External-strike alternative",
++          "support_in_frozen_pass": "not established by these documents; logical nonexclusion is not positive support",
++          "evidence_locator": "REVIEW.json:88–90",
++          "next_record_or_check": "Specify timing/mechanism and discriminating observations before treating it as an evidenced competitor"
++        }
++      ]
++    },
++    {
++      "claim_id": "B100",
++      "original_wording_location": "frozen/REVIEW.json#/claims/3/exact_original_wording",
++      "assessment_source_line": 168,
++      "assertions": [
++        {
++          "id": "a",
++          "assertion": "Transcript last listed utterance10:03:09 and reported impact10:03:11",
++          "support_in_frozen_pass": "direct document labels; earlier approximate wording narrowed",
++          "evidence_locator": "P200056T physical9; NTSB physical2",
++          "next_record_or_check": "Recording-end definition, original audio and clock chain"
++        },
++        {
++          "id": "b",
++          "assertion": "Completeness/no erasure of underlying audio",
++          "support_in_frozen_pass": "not independently authenticated",
++          "evidence_locator": "REVIEW.json:121–123",
++          "next_record_or_check": "Native recording, transcription/edit/custody history; do not treat last utterance as recorder termination"
++        }
++      ]
++    },
++    {
++      "claim_id": "B105",
++      "original_wording_location": "frozen/REVIEW.json#/claims/4/exact_original_wording",
++      "assessment_source_line": 178,
++      "assertions": [
++        {
++          "id": "a",
++          "assertion": "NPS attributes37calls/35Airfones to FBI",
++          "support_in_frozen_pass": "directly supported as an attributed reconstruction",
++          "evidence_locator": "NPS Phone Calls of Flight93 section; LOCATOR-MAP.json",
++          "next_record_or_check": "Per-call carrier/operator/FBI exhibit chain"
++        },
++        {
++          "id": "b",
++          "assertion": "Blanket cellphone argument fails for Airfone-attributed calls",
++          "support_in_frozen_pass": "limited inference from instrument classification",
++          "evidence_locator": "REVIEW.json:154–156",
++          "next_record_or_check": "Test separately any disputed cellular call; do not infer all calls authenticated"
++        }
++      ]
++    },
++    {
++      "claim_id": "B110",
++      "original_wording_location": "frozen/REVIEW.json#/claims/5/exact_original_wording",
++      "assessment_source_line": 183,
++      "assertions": [
++        {
++          "id": "a",
++          "assertion": "Four connected calls; unique Olson matching unresolved",
++          "support_in_frozen_pass": "supported by Commission note57",
++          "evidence_locator": "Commission physical7/printed455 note57",
++          "next_record_or_check": "FBI American Airlines Airphone Usage Sept20,2001; Olson/Voss interviews; AAL Jan20,2004 response"
++        },
++        {
++          "id": "b",
++          "assertion": "Zero-duration attempt and Keyton statement",
++          "support_in_frozen_pass": "not supplied by note57; primary join remains open",
++          "evidence_locator": "Original line183; REVIEW.json:187",
++          "next_record_or_check": "Exact trial/carrier row and Keyton interview/FD302; preserve dates and uncertain attribution"
++        }
++      ]
++    },
++    {
++      "claim_id": "B160",
++      "original_wording_location": "frozen/REVIEW.json#/claims/6/exact_original_wording",
++      "assessment_source_line": 264,
++      "assertions": [
++        {
++          "id": "a",
++          "assertion": "Collection history and air-flow calorimetry",
++          "support_in_frozen_pass": "partial source-report inspection",
++          "evidence_locator": "Harrit physical3–4,21; PROVENANCE.json:43",
++          "next_record_or_check": "Complete identification arguments and sample-to-test mapping"
++        },
++        {
++          "id": "b",
++          "assertion": "All methods applied to all four collections; installed demolition inference",
++          "support_in_frozen_pass": "universal sample/test linkage not established by this pass; installed system not inferred",
++          "evidence_locator": "Original line264; REVIEW.json:220–222",
++          "next_record_or_check": "Chip/collection/test crosswalk, raw instrument records and discriminating controls; later work is separate"
++        }
++      ]
++    },
++    {
++      "claim_id": "B161",
++      "original_wording_location": "frozen/REVIEW.json#/claims/7/exact_original_wording",
++      "assessment_source_line": 265,
++      "assertions": [
++        {
++          "id": "a",
++          "assertion": "Different specimens and reported epoxy/iron-oxide/kaolin interpretation",
++          "support_in_frozen_pass": "supported as Millette report statements",
++          "evidence_locator": "Millette physical2–6; source hash in PROVENANCE",
++          "next_record_or_check": "Native spectra/diffraction/FTIR and actual sample custody"
++        },
++        {
++          "id": "b",
++          "assertion": "Every Harrit chip is a particular paint",
++          "support_in_frozen_pass": "not concluded; original already expressly warns against it",
++          "evidence_locator": "Original line265; REVIEW.json:254–256",
++          "next_record_or_check": "Matched specimens and reference products; finish relevant appendices before broader verdict"
++        }
++      ]
++    },
++    {
++      "claim_id": "B129",
++      "original_wording_location": "frozen/REVIEW.json#/claims/8/exact_original_wording",
++      "assessment_source_line": 217,
++      "assertions": [
++        {
++          "id": "a",
++          "assertion": "Earlier FAA/NORAD account contained inaccuracies",
++          "support_in_frozen_pass": "prior audit reused; not a new audio reconstruction",
++          "evidence_locator": "REVIEW.json:286–290; primary DOT2006 report",
++          "next_record_or_check": "Original operational recordings/clock identities and actual earlier account"
++        },
++        {
++          "id": "b",
++          "assertion": "Known noncorrection versus knowing original falsity or attack participation",
++          "support_in_frozen_pass": "separate propositions; DOT treats them differently",
++          "evidence_locator": "DOT2006 executive summary and reportpp8–12",
++          "next_record_or_check": "QFR drafting/knowledge/correction/disposition records; not the independent cassette-destruction chain"
++        }
++      ]
++    },
++    {
++      "claim_id": "B188",
++      "original_wording_location": "frozen/REVIEW.json#/claims/9/exact_original_wording",
++      "assessment_source_line": 313,
++      "assertions": [
++        {
++          "id": "a",
++          "assertion": "Preservation losses and surviving materials work",
++          "support_in_frozen_pass": "prior substantive audit reused",
++          "evidence_locator": "REVIEW.json:328–332; hearing/FEMA/NIST roots below",
++          "next_record_or_check": "Direct preservation decisions, processing/yard/coupon/transfer records"
++        },
++        {
++          "id": "b",
++          "assertion": "WTC7 candidate receipt versus accepted building attribution",
++          "support_in_frozen_pass": "prior audit preserves different classifications",
++          "evidence_locator": "FEMA AppendixD and NCSTAR1-3B inventory; NCSTAR1-3 pp114–115",
++          "next_record_or_check": "Item-specific original attribution/intake/photograph and present-custody joins; no forced reconciliation"
++        }
++      ]
++    }
++  ],
++  "historical_verdict_changes_by_this_audit": 0
++}
+diff --git a/SOURCE-DEPENDENCE.json b/SOURCE-DEPENDENCE.json
+new file mode 100644
+index 00000000..a632ba51
+--- /dev/null
++++ b/SOURCE-DEPENDENCE.json
+@@ -0,0 +1,72 @@
++{
++  "document_reuse": {
++    "ua93.pdf": [
++      "B096",
++      "B097",
++      "B100"
++    ],
++    "cvr93.pdf": [
++      "B097",
++      "B100"
++    ],
++    "calls.html": [
++      "B105"
++    ],
++    "commission-notes-held": [
++      "B110"
++    ],
++    "harrit-complete.pdf": [
++      "B160"
++    ],
++    "millette.pdf": [
++      "B161"
++    ],
++    "faa-norad-mineta-2026-10-26/REPORT.md": [
++      "B129"
++    ],
++    "evidence-preservation-chains-2026-10-26/STEEL-REPORT.md": [
++      "B188"
++    ]
++  },
++  "repeated_independence_warning_distinct_values": 1,
++  "channel_relationships": [
++    {
++      "records": [
++        "UA93 study",
++        "FDR",
++        "FAA radar",
++        "Air Force radar"
++      ],
++      "known": "The study describes integrating these reported inputs; they are different named measurement streams, not separate studies.",
++      "unknown": "Native files, complete custody and calibration/synchronization dependence not established here."
++    },
++    {
++      "records": [
++        "UA93 study",
++        "P200056T CVR transcript"
++      ],
++      "known": "Different published record types; repeated use across three selected claims.",
++      "unknown": "Whether event clocks were independently calibrated and which common sources shaped the study narrative."
++    },
++    {
++      "records": [
++        "NPS calls reconstruction",
++        "FBI interviews",
++        "trial evidence",
++        "Commission records"
++      ],
++      "known": "NPS expressly names these source categories; most quotations are not direct recordings.",
++      "unknown": "Per-call overlap, independent recollections versus recycled reports, and carrier joins."
++    },
++    {
++      "records": [
++        "Harrit specimens",
++        "Millette specimens"
++      ],
++      "known": "Different specimen sets; this limits same-specimen replication claims.",
++      "unknown": "Population representativeness, common source products and authenticated provenance."
++    }
++  ],
++  "rule": "Do not count publications or claim rows as independent corroborations. Do not erase potentially corroborating distinct channels just because they appear in one report. Unknown dependence stays unknown.",
++  "independent_historical_replications_performed": 0
++}
+diff --git a/LOCATOR-MAP.json b/LOCATOR-MAP.json
+new file mode 100644
+index 00000000..48b189cd
+--- /dev/null
++++ b/LOCATOR-MAP.json
+@@ -0,0 +1,106 @@
++{
++  "scope": "Version-specific source bridge, not universal browser line numbers. Re-fetches may differ; compare SHA256 first. The original public derivative did not include these derived text layers.",
++  "anchors": [
++    {
++      "source_id": "calls.html",
++      "source_sha256": "82dbc564c00223d846ccb22e728f80de663336777d8182aefb5bcc4ab9b8ca23",
++      "original_derived_line": 104,
++      "held_raw_html_line": 925,
++      "section_heading": "Phone Calls of Flight 93",
++      "meaning": "FBI-attributed total and Airfone counts",
++      "test": "Exact derived text is contained in the specified raw HTML line; rendered line wrapping is not used."
++    },
++    {
++      "source_id": "calls.html",
++      "source_sha256": "82dbc564c00223d846ccb22e728f80de663336777d8182aefb5bcc4ab9b8ca23",
++      "original_derived_line": 118,
++      "held_raw_html_line": 944,
++      "section_heading": "Phone Calls of Flight 93",
++      "meaning": "Chronology, recorded-call subset and default instrument type",
++      "test": "Exact derived text is contained in the specified raw HTML line; rendered line wrapping is not used."
++    },
++    {
++      "source_id": "calls.html",
++      "source_sha256": "82dbc564c00223d846ccb22e728f80de663336777d8182aefb5bcc4ab9b8ca23",
++      "original_derived_line": 119,
++      "held_raw_html_line": 946,
++      "section_heading": "Phone Calls of Flight 93",
++      "meaning": "FBI interview-source category",
++      "test": "Exact derived text is contained in the specified raw HTML line; rendered line wrapping is not used."
++    },
++    {
++      "source_id": "calls.html",
++      "source_sha256": "82dbc564c00223d846ccb22e728f80de663336777d8182aefb5bcc4ab9b8ca23",
++      "original_derived_line": 120,
++      "held_raw_html_line": 947,
++      "section_heading": "Phone Calls of Flight 93",
++      "meaning": "Trial-evidence category",
++      "test": "Exact derived text is contained in the specified raw HTML line; rendered line wrapping is not used."
++    },
++    {
++      "source_id": "calls.html",
++      "source_sha256": "82dbc564c00223d846ccb22e728f80de663336777d8182aefb5bcc4ab9b8ca23",
++      "original_derived_line": 121,
++      "held_raw_html_line": 948,
++      "section_heading": "Phone Calls of Flight 93",
++      "meaning": "Commission-source category",
++      "test": "Exact derived text is contained in the specified raw HTML line; rendered line wrapping is not used."
++    },
++    {
++      "source_id": "calls.html",
++      "source_sha256": "82dbc564c00223d846ccb22e728f80de663336777d8182aefb5bcc4ab9b8ca23",
++      "original_derived_line": 122,
++      "held_raw_html_line": 950,
++      "section_heading": "Phone Calls of Flight 93",
++      "meaning": "Quotation and recording qualification",
++      "test": "Exact derived text is contained in the specified raw HTML line; rendered line wrapping is not used."
++    },
++    {
++      "source_id": "court-landing-held",
++      "source_sha256": "d8d6c1ee51b5075d7354207b9becc35c2e89e444f76c87e8d1a32264ea3d23d1",
++      "original_derived_line": 61,
++      "held_raw_html_candidate_lines": [
++        207
++      ],
++      "section_heading": "Trial Exhibits",
++      "meaning": "Exhibit display scope",
++      "test": "Candidate raw source lines located by the first eight derived words; empty matches remain explicitly unresolved."
++    },
++    {
++      "source_id": "court-landing-held",
++      "source_sha256": "d8d6c1ee51b5075d7354207b9becc35c2e89e444f76c87e8d1a32264ea3d23d1",
++      "original_derived_line": 72,
++      "held_raw_html_candidate_lines": [
++        220
++      ],
++      "section_heading": "Trial Exhibits",
++      "meaning": "Public-copy qualification",
++      "test": "Candidate raw source lines located by the first eight derived words; empty matches remain explicitly unresolved."
++    },
++    {
++      "source_id": "court-landing-held",
++      "source_sha256": "d8d6c1ee51b5075d7354207b9becc35c2e89e444f76c87e8d1a32264ea3d23d1",
++      "original_derived_line": 73,
++      "held_raw_html_candidate_lines": [
++        221
++      ],
++      "section_heading": "Trial Exhibits",
++      "meaning": "Public-copy qualification",
++      "test": "Candidate raw source lines located by the first eight derived words; empty matches remain explicitly unresolved."
++    },
++    {
++      "source_id": "court-landing-held",
++      "source_sha256": "d8d6c1ee51b5075d7354207b9becc35c2e89e444f76c87e8d1a32264ea3d23d1",
++      "original_derived_line": 83,
++      "held_raw_html_candidate_lines": [
++        231
++      ],
++      "section_heading": "Trial Exhibits",
++      "meaning": "Exhibit presentation qualification",
++      "test": "Candidate raw source lines located by the first eight derived words; empty matches remain explicitly unresolved."
++    }
++  ],
++  "unclosed_dependencies": [
++    "The two prior native FAA and steel report names are not present as named in the target public tree. Primary-source routes below are separate evidence references, not claims that those native reports have now been exported."
++  ]
++}
+diff --git a/PROVENANCE.json b/PROVENANCE.json
+new file mode 100644
+index 00000000..583985e7
+--- /dev/null
++++ b/PROVENANCE.json
+@@ -0,0 +1,156 @@
++{
++  "audit_created_utc": "2026-10-27T13:29:52.593200+00:00",
++  "frozen_target_commit": "1229c07b033394c0e50907a9edf3fe8fc22aec3e",
++  "frozen_files": [
++    {
++      "file": "frozen/BACKLOG.json",
++      "source_commit": "1229c07b033394c0e50907a9edf3fe8fc22aec3e",
++      "source_path": "investigation/broader-evidence/ten-claim-audit-2026-10-27/BACKLOG.json",
++      "bytes": 7267,
++      "sha256": "085f98ca60a7719134e4a3aa76fd07d88004b59458645c2dd95ca5951c4142be"
++    },
++    {
++      "file": "frozen/CLAIMS-FROZEN.json",
++      "source_commit": "1229c07b033394c0e50907a9edf3fe8fc22aec3e",
++      "source_path": "investigation/broader-evidence/ten-claim-audit-2026-10-27/CLAIMS-FROZEN.json",
++      "bytes": 16879,
++      "sha256": "eccfe31967375b5d53cd9a1adfa89d44431112e2a4def246e118730264cde33e"
++    },
++    {
++      "file": "frozen/PROVENANCE.json",
++      "source_commit": "1229c07b033394c0e50907a9edf3fe8fc22aec3e",
++      "source_path": "investigation/broader-evidence/ten-claim-audit-2026-10-27/PROVENANCE.json",
++      "bytes": 2926,
++      "sha256": "4f082c6368151c42816f0fe82f17f98fd623533abe3579741e09a683cc8a1778"
++    },
++    {
++      "file": "frozen/README.md",
++      "source_commit": "1229c07b033394c0e50907a9edf3fe8fc22aec3e",
++      "source_path": "investigation/broader-evidence/ten-claim-audit-2026-10-27/README.md",
++      "bytes": 6529,
++      "sha256": "7a6cee52b0a4d21c8e4c9c96d7a6d6102b0a23cb2b9ab32e282da31183228a8e"
++    },
++    {
++      "file": "frozen/REVIEW.json",
++      "source_commit": "1229c07b033394c0e50907a9edf3fe8fc22aec3e",
++      "source_path": "investigation/broader-evidence/ten-claim-audit-2026-10-27/REVIEW.json",
++      "bytes": 28370,
++      "sha256": "92648cf9d400480139bb095b3218d6c41b1813fe6e56859ac80a583e33f81b94"
++    },
++    {
++      "file": "frozen/TEXT-CHANGES.md",
++      "source_commit": "1229c07b033394c0e50907a9edf3fe8fc22aec3e",
++      "source_path": "investigation/broader-evidence/ten-claim-audit-2026-10-27/TEXT-CHANGES.md",
++      "bytes": 10774,
++      "sha256": "7a9aaf3d353ec2ca24195ab7cc21a01784cf14e56cdeeae10037fa0b8b0a6c86"
++    }
++  ],
++  "source_versions": [
++    {
++      "id": "ua93.pdf",
++      "url": "https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf",
++      "sha256": "1003b1e24d58ff36df3c4d5b5f9cdaa7476d8bfe02d4414007ca7e7291baf8c2",
++      "bytes": 869391,
++      "version_scope": "February19,2002,7pages; narrative/text pages1–4 read; images3–4 inspected; pages5–7 not substantively reviewed"
++    },
++    {
++      "id": "millette.pdf",
++      "url": "https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf",
++      "sha256": "4165663adf2e377c09cc27750a70d1d62a4aab62bba1edc43cd6c3e2d9b0cd38",
++      "bytes": 1503226,
++      "version_scope": "March1,2012 revision,59PDFpages with21page main report plus appendices; text1–6 read, images2,6 inspected; appendices not fully reviewed"
++    },
++    {
++      "id": "calls.html",
++      "url": "https://www.nps.gov/flni/learn/historyculture/phone-calls-and-seating-chart.htm",
++      "sha256": "82dbc564c00223d846ccb22e728f80de663336777d8182aefb5bcc4ab9b8ca23",
++      "bytes": 90696,
++      "version_scope": "NPS reconstruction retrieved October27,2026; opening methods/count and selected call passages read; not a native telephone log"
++    },
++    {
++      "id": "cvr93.pdf",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/P200056T.pdf",
++      "sha256": "68b9d6adea5eb06036e89b51799b2f66df5e024330e014c1de5136e4612bc54d",
++      "bytes": 153577,
++      "version_scope": "Court exhibit P200056T,9pages; images1,2,8,9 actually inspected; no extracted text; pages3–7 not read"
++    },
++    {
++      "id": "court-landing-held",
++      "url": "https://www.vaed.uscourts.gov/node/150",
++      "sha256": "d8d6c1ee51b5075d7354207b9becc35c2e89e444f76c87e8d1a32264ea3d23d1",
++      "bytes": 30332,
++      "version_scope": "Held official court HTML, published display notes; source lines61,72–73,83 read; not all exhibit contents"
++    },
++    {
++      "id": "harrit-complete.pdf",
++      "url": "https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf",
++      "sha256": "79770185441015e8d943565972f2de0ee95ceca762b7f2cc4c54ca6ab3f0ff88",
++      "bytes": 10364712,
++      "version_scope": "2009 journal article,25pages; text3,4,21 read; three page images inspected; other pages searched for locators, not full substantive review"
++    },
++    {
++      "id": "commission-notes-held",
++      "url": "https://www.9-11commission.gov/report/911Report_Notes.pdf",
++      "sha256": "d59f7501da1899836bbe553e3e35fd056152046f2eae8050670f6424919869ad",
++      "version_scope": "2004 final report notes, physical7/printed455 note57 text read; source lists four calls but no unique matching; underlying records not acquired."
++    }
++  ],
++  "additional_primary_routes": [
++    {
++      "id": "DOT2006",
++      "url": "https://www.oig.dot.gov/sites/default/files/cc2006085.pdf",
++      "locator": "Executive summary and printed8–12",
++      "scope": "Official report read for inaccurate notification accounts, separate known liaison noncorrection and recommendations; no new postreport disposition search."
++    },
++    {
++      "id": "steel-hearing",
++      "url": "https://commdocs.house.gov/committees/science/hsy77747.000/hsy77747_0.HTM",
++      "locator": "March6,2002, printed182–184",
++      "scope": "Primary-source lead from the held prior steel study; not newly authenticated correspondence or disposal order in this audit."
++    },
++    {
++      "id": "FEMA-D",
++      "url": "https://www.fema.gov/pdf/library/fema403_apd.pdf",
++      "locator": "Physical14–16 and inventory",
++      "scope": "Primary-source route carried from prior study; not newly re-fetched/visually reviewed here."
++    },
++    {
++      "id": "NCSTAR1-3",
++      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3.pdf",
++      "locator": "Printed114–115",
++      "scope": "Material-attribution limitation route carried from prior study; no new physical testing."
++    },
++    {
++      "id": "NCSTAR1-3B",
++      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf",
++      "locator": "TableA-1, candidate inventory; verify item association in prior study",
++      "scope": "Source route, not an assertion that candidate attribution has been authenticated here."
++    },
++    {
++      "id": "TMS",
++      "url": "https://www.tms.org/pubs/journals/jom/0711/banovic-0711.html",
++      "scope": "Primary published metallurgy article read; not a substitute for item custody or preservation decisions."
++    }
++  ],
++  "current_primary_web_check_date": "2026-10-27",
++  "current_web_scope": "NTSB path study, NPS calls, Commission notes, TMS metallurgy and DOT report. Browser extraction is not byte authentication against held hashes. Harrit/Millette scope here reuses the pinned held sources and prior page inspection.",
++  "arithmetic_copy": {
++    "file": "COMPARISONS.json",
++    "sha256": "40e0e1735f97a6ca79c0bebfa0c8d65397a8e667867262cedc43150d034fc20a",
++    "bytes": 604,
++    "origin": "Held native first-pass arithmetic, copied unchanged; previously named but absent from target public payload."
++  },
++  "target_tree_observations": {
++    "named_arithmetic_absent": true,
++    "named_prior_reports_present": [],
++    "scope": "Only exact paths/names in the frozen commit; not a claim of global nonpublication or historical absence."
++  },
++  "own_prior_citation_correction": {
++    "wrong_relative_shape": "broader-evidence-review-2026-10-27/sources/millette.pdf",
++    "correct_relative_to_native_study": "ten-claim-review-2026-10-27/sources/millette.pdf",
++    "correct_public_source_url": "https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf",
++    "correct_source_sha256": "4165663adf2e377c09cc27750a70d1d62a4aab62bba1edc43cd6c3e2d9b0cd38",
++    "scope": "Citation error, not absent evidence or changed PDF."
++  },
++  "snapshot_and_input_scope": "The six snapshots are already-public original research. Full private assessment, case/control files, chat exports, correspondence, contacts, private repository history and third-party source attachments are excluded."
++}
+diff --git a/COMPARISONS.json b/COMPARISONS.json
+new file mode 100644
+index 00000000..cb6bafb8
+--- /dev/null
++++ b/COMPARISONS.json
+@@ -0,0 +1,13 @@
++{
++  "inputs": {
++    "transcript_last_listed_time_EDT": "10:03:09",
++    "NTSB_reported_impact_EDT": "10:03:11",
++    "NPS_FBI_attributed_total_calls": 37,
++    "NPS_FBI_attributed_Airfone_calls": 35
++  },
++  "performed_comparisons": {
++    "nominal_label_difference_seconds": 2,
++    "NPS_summary_non_Airfone_count_by_subtraction": 2
++  },
++  "qualification": "Two-second label difference is not measured clock offset, missing audio, calibrated uncertainty or an independent impact time.37-35 is arithmetic on an attributed reconstruction, not a raw-record audit. No reconstruction or chemical test performed."
++}
+diff --git a/NATIVE-CHECKS.json b/NATIVE-CHECKS.json
+new file mode 100644
+index 00000000..6804ed34
+--- /dev/null
++++ b/NATIVE-CHECKS.json
+@@ -0,0 +1,148 @@
++{
++  "result": "PASS",
++  "checks": [
++    {
++      "check": "captured_bytes",
++      "passed": true,
++      "scope": "Snapshot byte preservation only"
++    },
++    {
++      "check": "original_baselines_unchanged",
++      "passed": true,
++      "scope": "Four earlier analytical baseline hashes, not historical authenticity"
++    },
++    {
++      "check": "ten_unique_claims",
++      "passed": true,
++      "scope": "Selected claim units, not independent experiments"
++    },
++    {
++      "check": "exact_earlier_wording",
++      "passed": true,
++      "scope": "Exact original lines retained"
++    },
++    {
++      "check": "review_retains_frozen_fields",
++      "passed": true,
++      "scope": "All frozen attributes, including rationale and film uncertainty"
++    },
++    {
++      "check": "review_freeze_hash",
++      "passed": true,
++      "scope": "The reviewed freeze is the captured freeze"
++    },
++    {
++      "check": "five_prioritized_supplements",
++      "passed": true,
++      "scope": "Presence of five task contracts; not their completion"
++    },
++    {
++      "check": "completion_limits_retained",
++      "passed": true,
++      "scope": "No completed historical replication is claimed"
++    },
++    {
++      "check": "sample_limit_disclosed",
++      "passed": true,
++      "scope": "Purposeful sampling and prior exposure disclosed"
++    },
++    {
++      "check": "sixteen_prior_tasks_preserved",
++      "passed": true,
++      "scope": "The five additions did not replace the original sixteen contracts"
++    },
++    {
++      "check": "seven_source_pins",
++      "passed": true,
++      "scope": "Held bytes match published pins; original-custody authenticity is not tested"
++    }
++  ],
++  "source_pin_checks": [
++    {
++      "id": "ua93.pdf",
++      "sha256": "1003b1e24d58ff36df3c4d5b5f9cdaa7476d8bfe02d4414007ca7e7291baf8c2",
++      "matching_held_files": [
++        "ua93.pdf"
++      ]
++    },
++    {
++      "id": "millette.pdf",
++      "sha256": "4165663adf2e377c09cc27750a70d1d62a4aab62bba1edc43cd6c3e2d9b0cd38",
++      "matching_held_files": [
++        "millette.pdf"
++      ]
++    },
++    {
++      "id": "calls.html",
++      "sha256": "82dbc564c00223d846ccb22e728f80de663336777d8182aefb5bcc4ab9b8ca23",
++      "matching_held_files": [
++        "calls.html"
++      ]
++    },
++    {
++      "id": "cvr93.pdf",
++      "sha256": "68b9d6adea5eb06036e89b51799b2f66df5e024330e014c1de5136e4612bc54d",
++      "matching_held_files": [
++        "cvr93.pdf"
++      ]
++    },
++    {
++      "id": "court-landing-held",
++      "sha256": "d8d6c1ee51b5075d7354207b9becc35c2e89e444f76c87e8d1a32264ea3d23d1",
++      "matching_held_files": [
++        "court-exhibits-landing.html"
++      ]
++    },
++    {
++      "id": "harrit-complete.pdf",
++      "sha256": "79770185441015e8d943565972f2de0ee95ceca762b7f2cc4c54ca6ab3f0ff88",
++      "matching_held_files": [
++        "harrit-complete.pdf"
++      ]
++    },
++    {
++      "id": "commission-notes-held",
++      "sha256": "d59f7501da1899836bbe553e3e35fd056152046f2eae8050670f6424919869ad",
++      "matching_held_files": [
++        "commission-notes.pdf"
++      ]
++    }
++  ],
++  "citation_finding": {
++    "earlier_link_exists": false,
++    "correct_file_exists": true,
++    "correct_sha256": "4165663adf2e377c09cc27750a70d1d62a4aab62bba1edc43cd6c3e2d9b0cd38",
++    "classification": "Our preceding explanation contained an incorrect local link; the held source itself exists."
++  },
++  "locator_usage": {
++    "ua93.pdf": [
++      "B096",
++      "B097",
++      "B100"
++    ],
++    "cvr93.pdf": [
++      "B097",
++      "B100"
++    ],
++    "calls.html": [
++      "B105"
++    ],
++    "commission-notes-held": [
++      "B110"
++    ],
++    "harrit-complete.pdf": [
++      "B160"
++    ],
++    "millette.pdf": [
++      "B161"
++    ],
++    "faa-norad-mineta-2026-10-26/REPORT.md": [
++      "B129"
++    ],
++    "evidence-preservation-chains-2026-10-26/STEEL-REPORT.md": [
++      "B188"
++    ]
++  },
++  "historical_replications": 0,
++  "qualification": "Mechanical and source-scope checks only; conceptual findings and proposed repairs are separate. No data decoding, clock calibration, chemical assay or historical intent test."
++}
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..6cb3a23e
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,13 @@
++# Requirements and disposition
++
++| Item | Outcome and location | Verification / remaining work |
++|---|---|---|
++| RQ01 Continue independent auditing | Eight typed entries in FINDINGS.json; all ten selected claims in CLAIM-SUPPORT.json | Frozen commit and exact source locators; scope is this sample, not the entire investigation |
++| RQ02 Find concrete improvements | Missing arithmetic reference repaired; source anchors and dependence map supplied; assertion-level coverage recorded | Parent register/wording adoption remains with its nominated editor |
++| RQ03 Preserve earlier wording/conflicts | Six exact public Git-blob snapshots under frozen/; no source or prior report overwritten | SHA256 checks and local four-baseline preservation pass; original2second/text-image conflicts remain unadjudicated |
++| RQ04 Keep evidence independent/traceable | Explicit passes, objections, source versions and unrun tests; SOURCE-DEPENDENCE.json | Historical input independence and causal tests remain open |
++| RQ05 Eligible AveLyra publication | Public-safe original research and already-public snapshots only | Commit/ref/account/blob evidence belongs in the dated publication receipt; this checklist alone asserts no successful push |
++| RQ06 Carry unresolved work forward | README next-record list; EM02/03/04/06 open joins | No raw-data replication or overall completion claimed |
++| RQ07 Audit our own explanations | EM07 corrects our prior Millette link; EM05 prevents turning source-access gaps into event reversals | Source exists and matches pinned hash; earlier answer remains preserved |
++
++This supplement closes documentation defects only to the stated extent. It does not replace the published134-entry baseline, the original16tasks or five supplemental task contracts. The substantive editor has not yet adopted these audit-side proposals. PDF/source-image verification is separate from the text diff. Current publication status requires its own actual check, not an inferred label in a frozen document.
+diff --git a/VERIFICATION-NOTE.md b/VERIFICATION-NOTE.md
+new file mode 100644
+index 00000000..270ed00e
+--- /dev/null
++++ b/VERIFICATION-NOTE.md
+@@ -0,0 +1,9 @@
++# Verification history and limits
++
++The first portable run passed its 12 document checks and flagged TEXT-CHANGES.diff in the narrow disclosure-pattern screen. Inspection showed that the generated diff reproduced the verifier's own search-pattern literals, not a local username/path or private key. That failed result and the preceding checker/diff versions are preserved in the local study's revisions directory.
++
++The screen now matches an actual absolute user-path shape, complete private-key header or token shape. Synthetic positive controls for all three and a negative control for the original source-pattern literals are included. This fixes a test false positive; it does not clear a disclosure without review. The final run's exact outcome is in CHECKS.json. The payload was also manually reviewed as original public research, already-public snapshots and small reproducibility files, with no private assessment, correspondence, case strategy, source attachments or native repository history included.
++
++The 11 local source/baseline checks in NATIVE-CHECKS.json and the portable checks have different scopes. Neither counts as a historical experiment, an independent witness, physical authentication, legal approval or scientific acceptance. External-source reading and earlier source-image inspection are not layout verification of this Markdown report.
++
++TEXT-CHANGES.diff records new substantive supplement files against empty predecessors. README-REVISION.diff additionally shows the report's immediate editorial predecessor. The six frozen public files are byte-identical to their pinned target blobs; their unchanged status is deliberate. Verification result files, this note and diff artifacts have no preceding published versions; the full publication commit diff separately records every addition.
+diff --git a/verify.py b/verify.py
+new file mode 100644
+index 00000000..cbe02a72
+--- /dev/null
++++ b/verify.py
+@@ -0,0 +1,86 @@
++"""Read-only portable document checks. These do not test historical truth."""
++from pathlib import Path
++import hashlib
++import json
++import re
++
++ROOT = Path(__file__).resolve().parent
++
++
++def read(name):
++    return json.loads((ROOT / name).read_text())
++
++
++def sha(data):
++    return hashlib.sha256(data).hexdigest()
++
++
++def main():
++    checks = []
++
++    def check(name, passed, scope):
++        checks.append({'name': name, 'passed': bool(passed), 'scope': scope})
++
++    provenance = read('PROVENANCE.json')
++    review = read('frozen/REVIEW.json')
++    frozen = read('frozen/CLAIMS-FROZEN.json')
++    findings = read('FINDINGS.json')['findings']
++    support = read('CLAIM-SUPPORT.json')
++    dependence = read('SOURCE-DEPENDENCE.json')
++    compare = read('COMPARISONS.json')
++    check('six_target_snapshots', len(provenance['frozen_files']) == 6 and all(sha((ROOT / r['file']).read_bytes()) == r['sha256'] and (ROOT / r['file']).stat().st_size == r['bytes'] and r['source_commit'] == provenance['frozen_target_commit'] for r in provenance['frozen_files']), 'Exact exported prior research bytes, not source or historical authenticity')
++    check('ten_originals_preserved', len(frozen['claims']) == len(review['claims']) == 10 and all(all(review['claims'][i].get(k) == v for k, v in c.items()) for i, c in enumerate(frozen['claims'])), 'Every frozen claim field retained; exact assessment-line check was separately local')
++    check('freeze_reference', review['freeze_sha256'] == sha((ROOT / 'frozen/CLAIMS-FROZEN.json').read_bytes()), 'Review points to the captured freeze')
++    check('all_claims_covered_once', len(support['claims']) == 10 and {x['claim_id'] for x in support['claims']} == {x['claim_id'] for x in review['claims']} and len({x['claim_id'] for x in support['claims']}) == 10 and all(len(x['assertions']) == 2 for x in support['claims']), 'Twenty compact assertion groups; no experiment count or complete atomization claimed')
++    check('eight_typed_findings', {x['id'] for x in findings} == {'EM%02d' % n for n in range(1, 9)} and all(x.get('kind') and x.get('confidence') and x.get('strongest_objection') and x.get('repair') and x.get('state') for x in findings), 'Issue, objection, repair and adoption state represented; not automatic endorsement')
++    valid_locs = True
++    for finding in findings:
++        for locator in finding['locations']:
++            if locator['file'].startswith('frozen/'):
++                lines = (ROOT / locator['file']).read_text().splitlines()
++                valid_locs = valid_locs and 1 <= locator['line_start'] <= locator['line_end'] <= len(lines)
++    check('frozen_line_references_in_range', valid_locs, 'Bounds only; semantic citation coverage is a separate reading judgment')
++    expected_usage = {}
++    for claim in review['claims']:
++        for locator in claim['inspected_source_locators']:
++            expected_usage.setdefault(locator.split(':', 1)[0], []).append(claim['claim_id'])
++    check('document_reuse_map', dependence['document_reuse'] == expected_usage and dependence['repeated_independence_warning_distinct_values'] == len({x['independence'] for x in review['claims']}), 'Reported document overlap, not instrument-channel dependence authentication')
++    values = compare['inputs']
++
++    def seconds(value):
++        h, m, s = map(int, value.split(':'))
++        return h * 3600 + m * 60 + s
++
++    check('labeled_arithmetic', seconds(values['NTSB_reported_impact_EDT']) - seconds(values['transcript_last_listed_time_EDT']) == compare['performed_comparisons']['nominal_label_difference_seconds'] == 2 and values['NPS_FBI_attributed_total_calls'] - values['NPS_FBI_attributed_Airfone_calls'] == compare['performed_comparisons']['NPS_summary_non_Airfone_count_by_subtraction'] == 2, 'Arithmetic on labeled source statements, not measured clock offset or authenticated call count')
++    a = provenance['arithmetic_copy']
++    check('arithmetic_copy_unchanged', sha((ROOT / a['file']).read_bytes()) == a['sha256'] and (ROOT / a['file']).stat().st_size == a['bytes'], 'Unchanged held native arithmetic copy; original target-tree absence separately observed')
++    nps_hash = next(x['sha256'] for x in provenance['source_versions'] if x['id'] == 'calls.html')
++    anchors = [x for x in read('LOCATOR-MAP.json')['anchors'] if x['source_id'] == 'calls.html']
++    check('six_versioned_nps_anchors', len(anchors) == 6 and len({x['original_derived_line'] for x in anchors}) == 6 and all(x['source_sha256'] == nps_hash and x['held_raw_html_line'] > 0 for x in anchors), 'Anchor/hash consistency; exact source text containment separately checked in local build')
++    broken = []
++    for target in re.findall(r'\]\(([^)]+)\)', (ROOT / 'README.md').read_text()):
++        if not target.startswith(('https://', 'http://', '#')) and not (ROOT / target.split('#', 1)[0]).is_file():
++            broken.append(target)
++    check('new_report_relative_links_resolve', not broken, 'This supplement report only; frozen predecessor defects intentionally preserved')
++    check('completion_and_replication_limits', review['complete'] is False and read('frozen/BACKLOG.json')['complete'] is False and all(x['independent_historical_replication'] is False for x in review['claims']) and support['historical_verdict_changes_by_this_audit'] == 0 and dependence['independent_historical_replications_performed'] == 0, 'No historical replication, adjudication or audit-wide completion claim')
++    # Match actual path/key/token shapes, not those patterns' source-code spelling.
++    marker_patterns = [re.compile(r'/Users/[A-Za-z0-9._-]+/'), re.compile(r'-----BEGIN (?:[A-Z0-9 ]+ )?PRIVATE KEY-----'), re.compile(r'gh[pousr]_[A-Za-z0-9]{20,}')]
++
++    def has_marker(value):
++        return any(pattern.search(value) for pattern in marker_patterns)
++
++    synthetic_markers = ['/' + 'Users' + '/example/unapproved.txt', '-' * 5 + 'BEGIN OPENSSH PRIVATE KEY' + '-' * 5, 'ghp_' + 'a' * 36]
++    check('marker_screen_controls', all(has_marker(value) for value in synthetic_markers) and not has_marker("'/Users/' in text or 'PRIVATE KEY-----' in text"), 'Synthetic positive path/key/token shapes and negative source-pattern literal; no actual credentials used')
++    local_markers = []
++    for path in ROOT.rglob('*'):
++        if path.is_file() and path.suffix in ['.md', '.json', '.diff']:
++            text = path.read_text()
++            if has_marker(text):
++                local_markers.append(str(path.relative_to(ROOT)))
++    check('local_path_and_secret_pattern_screen', not local_markers, 'Narrow pattern screen only; manual payload disclosure review remains separate')
++    print(json.dumps({'result': 'PASS' if all(x['passed'] for x in checks) else 'FAIL', 'checks': checks, 'broken_report_links': broken, 'local_marker_files': local_markers, 'historical_tests_performed': 0, 'scope': 'Portable document preservation, consistency and arithmetic checks only. Does not repeat private-baseline checks or authenticate historical evidence.'}, indent=2))
++    return 0 if all(x['passed'] for x in checks) else 1
++
++
++if __name__ == '__main__':
++    raise SystemExit(main())

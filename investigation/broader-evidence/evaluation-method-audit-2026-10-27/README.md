@@ -1,0 +1,39 @@
+# Independent audit of our ten-claim review
+
+October 27, 2026. This supplement checks our reasoning, references and verification claims. It freezes the six-file first source pass at [1229c07b](https://github.com/AveLyra/911-conspiracy-investigation/tree/1229c07b033394c0e50907a9edf3fe8fc22aec3e/investigation/broader-evidence/ten-claim-audit-2026-10-27). Later materials work is a separate continuation. Earlier wording and conflicts remain in the byte-identical [frozen snapshots](frozen/REVIEW.json).
+
+## Concrete corrections
+
+**Make the public references followable.** The first-pass README line 25 names an arithmetic file absent from that publication. This supplement supplies the [unchanged COMPARISONS.json](COMPARISONS.json). Its two-second difference compares document labels; it does not measure a clock error or missing audio. The 37 minus 35 result is arithmetic on attributed counts, not a carrier-log test. EM01.
+
+Some source references point to unpublished derived line numbers or native FAA/steel study names. [LOCATOR-MAP.json](LOCATOR-MAP.json) connects the six NPS derived lines to exact raw HTML lines in the pinned source. Raw lines change with website versions: compare the hash first. The two earlier report-export joins remain open. Their absence under those names in this commit does not mean their primary records do not exist. EM02.
+
+Our preceding explanation also contained an incorrect local Millette link. The held file exists and matches SHA-256 `4165663adf2e377c09cc27750a70d1d62a4aab62bba1edc43cd6c3e2d9b0cd38`. Use the [verified source route](https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf). This corrects our pointer; it changes no source bytes or chemical result. EM07.
+
+## Improvements to the reasoning
+
+**Cite each assertion within a combined judgment.** The Flight 93 path study describes a reconstruction from reported recorder/radar inputs. Our older sentence also invoked recovered material and occupant identifications; this pass did not separately trace those assertions. A credible path study is not a substitute for every identification record. That is an evidentiary-coverage gap, not a finding that the unjoined assertions are false. [NTSB physical pages 1–2](https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf#page=1). EM03.
+
+The same check matters for Olson: Commission note 57 supports uncertain matching among connected calls, but does not itself provide the Keyton interview or the zero-duration exhibit invoked in our original sentence. The earlier pass correctly exposed that gap. We should apply that sentence-by-sentence standard across the review, including our affirmative FAA and steel criticisms. [Commission printed page 455, note 57](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7).
+
+**Map shared sources instead of merely warning about them.** All ten rows use the same dependence warning. Three reuse the UA93 study; two reuse the CVR transcript. [SOURCE-DEPENDENCE.json](SOURCE-DEPENDENCE.json) makes those overlaps explicit. Distinct named measurement channels can still corroborate each other; their custody, clocks and shared processing have not been independently established here. Neither ten claim rows nor seven source hashes is an independent-experiment count. EM04.
+
+**Separate a historical assessment from our work status.** A failed download does not weaken an event merely by failing, and successful decoding or hash checks do not establish its historical interpretation. Likewise, control inputs do not logically exclude every imaginable external strike, but that possibility supplies no affirmative strike evidence. A specified alternative needs observations or predictions distinguishing it from the compared account. This standard applies to both allegations and dismissals. The original review already states key parts of this safeguard; we are preserving a sound qualification, not announcing a newly discovered reversal. EM05.
+
+**Finish decisive identification evidence before broad materials conclusions.** The frozen pass acknowledged that most Harrit identification figures and Millette appendices remained unread. Its narrow custody/same-specimen qualifications can still stand, but a wider chemistry verdict needs the actual result-to-specimen links and relevant identification arguments. Different specimens, chemical identity, building attribution and deliberate installation are separate questions. The original B161 already contained the different-sample qualification; it was not a newly overturned conclusion. Later evaluation-owner materials work is outside this frozen audit. EM06.
+
+## What passed, and what the checks mean
+
+The 11 baseline checks passed: all ten exact earlier statements were retained; four original analytical baseline hashes remained unchanged; all 16 prior task contracts survived; the five additions have priorities, sources and acceptance criteria; all seven held source pins match; and incomplete/no-independent-replication flags remain explicit. [NATIVE-CHECKS.json](NATIVE-CHECKS.json) records their precise scope. Purposeful sampling and prior exposure are disclosed. The sample gives no investigation-wide error rate.
+
+The review also correctly distinguishes the last listed utterance from recorder termination, an extracted altitude value from the visible figure, reported call counts from authenticated calls, inaccurate accounts from intentional original falsity, and preservation losses from total disappearance. Those are positive findings of this audit. DOT's separate notification-error and known-noncorrection findings should stay distinct. [DOT 2006 executive summary and printed pages 8–12](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf).
+
+[CLAIM-SUPPORT.json](CLAIM-SUPPORT.json) gives two compact assertion groups for every selected parent claim. Those 20 groups are a practical minimum, not a count of independent observations. [FINDINGS.json](FINDINGS.json) records evidence, exact frozen file/line references, strongest objections, repairs and adoption status. Proposed annotations are implemented on the audit side only; no substantive owner's register, source or historical verdict was overwritten.
+
+## Next records and acceptance limits
+
+Prioritize the exact Keyton interview and zero-duration trial/carrier record; aircraft recovery/identification joins separately from flight-path reports; native recorder/radar/clock/custody records; and materials sample-to-test/native-instrument/control joins. For steel, join preservation decisions and candidate attribution to item-specific records. For FAA, distinguish the original timeline, later knowledge, correction responsibility and recommendation disposition. These are existing leads, not new proof that every unacquired record was withheld or destroyed.
+
+This audit performed no aircraft reconstruction, audio decoding, chemical assay, clock calibration or historical-intent test. It warrants no new historical verdict reversal. It supplies concrete sourcing repairs and narrower acceptance criteria for future conclusions.
+
+Run `python3 verify.py` here for the portable document checks. Their scope is explicit; local source/baseline checks were separately run with `audit_checks.py`. [CHECKS.json](CHECKS.json) gives the portable result and [VERIFICATION-NOTE.md](VERIFICATION-NOTE.md) preserves the verification history. [CHECKLIST.md](CHECKLIST.md) carries unresolved work forward. [TEXT-CHANGES.diff](TEXT-CHANGES.diff) shows this new report against an empty predecessor; the six prior public files are unchanged snapshots. No raw private assessment or third-party source attachment is exported. A separate dated receipt must verify public account/ref/commit/blob state; publication does not mean substantive acceptance. EM08.
