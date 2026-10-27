@@ -1,0 +1,7 @@
+# First preserved version and authority limits
+
+New additive report; no preceding version existed. The diff is against an empty predecessor. Existing source reports, work plan and conflicting observations remain unchanged. Text diffs, machine checks and all12page-image readings are separate. A municipal source copy is not independent court/native-email authentication.
+
+The newly acquired order is datedOctober16,2009, not either missing omnibus order. This difference is explicit and no missing source was relabeled as acquired. The earlier holdings search included a bad native path and was repeated correctly before acquisition; that process error is not historical evidence. Global search/portal results remain locators, not an absence census. Public publication is a separate verified event, not implied by a completed candidate checklist.
+
+The final candidate adds normal spacing to the authored report for readability. Historical values, source bytes and raw extraction remain unchanged. The immediately preceding report is preserved under drafts/README-v1.md, and diffs/README.md.diff records the exact v1-to-v2 change. The original addition diff remains under drafts/. No source discrepancy was reconciled.
