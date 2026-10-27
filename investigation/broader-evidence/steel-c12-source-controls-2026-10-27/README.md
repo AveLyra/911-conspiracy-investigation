@@ -1,0 +1,50 @@
+# C12 retrieval and a C13a/S-19 photographic control
+
+October 27, 2026. Original-record plan track 5; existing B188/H005 and AUD011/AUD016. This supplements the preserved steel attribution and W14A/B image studies. It does not complete their missing custody or building-attribution chains.
+
+**Two newly acquired, full current archive JPEGs provide a limited C13a/S-19 identifier control. The sought C12a/b field photographs and their intake/alias records remain unlocated.** A current anonymous download, a visible handling mark, a published inventory attribution and actual physical origin are different facts.
+
+## The actual new sources
+
+The official [NIST photo/video index](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations) leads to its Collected Steel archive and the [Miscellaneous Photos folder](https://drive.google.com/drive/folders/17kBcjKKEj7XROfiNJp494bIS_2Sz6x4h). Two files observed in that public folder were downloaded through ordinary anonymous public URLs, without account cookies, Authorization headers or temporary connector transfer links. Both returned HTTP 200, image/jpeg, and exactly the metadata-listed byte counts on October 27, 2026. The hashes identify the entities obtained now, not their camera originals or historical custody.
+
+| Current archive source | Bytes; decoded dimensions | SHA-256 |
+|---|---|---|
+| [C-13a Markings.jpg](https://drive.google.com/file/d/1FS6nEkewurpM65c-Kz-LjdYiY-KFPyW_/view) | 955,550; 2272 × 1704 | `ae556c181c7dc3e2cf7ea82b1d738dc5b85a741eef9089fa424dc731463453f9` |
+| [C-13a OVERALL #1.jpg](https://drive.google.com/file/d/1xLSRlLlmeqaTyGuMf5Q9Tbv6yNjHsvmn/view) | 531,437; 1200 × 1600 | `332483b50a89baf5e4d4ed59a73758d186c49baef9a9dd787fa2c3d21320809c` |
+
+`IMAGE-SOURCES.json` preserves exact download URLs, access times, sizes and hashes. The connector's metadata labeled visibility **access_not_verified**; the separate anonymous successful retrieval is the actual public-access test. Neither establishes redistribution rights. Raw photographs, inspection images and response headers remain in local source storage; this public addition contains original notes, safe metadata, source links and verification code only.
+
+## Side-by-side records, without reconstructing missing characters
+
+| Record and locator | What is recorded or actually visible | Limit |
+|---|---|---|
+| FEMA 403 Appendix D, physical page 16, Steel Data Collection Summary 2 of 13, row 25, **C13a** | Trip **1/23/02**, note taker **Sharp**; markings **321 B200 92 90 3T <569>**. Separate photo reference **DKoutsoubis:1/25/02:#15-19**. | These are published field records. Trip date and referenced photo date are separately preserved; neither dates the newly acquired JPEGs. The field photographs themselves have not been authenticated by this acquisition. |
+| Current **C-13a Markings.jpg**, full raster inspected | Chalk **S-19** at left; a clear stenciled **3T** and **569** inside a diamond at right. Other old painted characters are worn, partly outside the view or ambiguous. | Only this readable subset is transcribed. We do not fill the remaining photograph characters from FEMA's text, measure a member or infer a building from them. |
+| Current **C-13a OVERALL #1.jpg**, full raster inspected | A long steel member with a visible chalk **S-19** near the foreground; multiple other steel pieces and labels share the scene. | Filename and matching handling mark support association with the inventory, not an independent custody witness, a capture date or a building-of-origin determination. Other pieces are not automatically C13a. |
+| NIST NCSTAR 1-3B, physical page 87 / printed 59, Table A-1, **C-13a or S-19** row | Type **C**, **Partial of single column**; markings **B200: 90-92**; building **WTC 2**, column **200**, floors **90-92**, location **PL**. | This is NIST's published classification. The photograph-to-alias connection is supported by the visible S-19; the full construction/custody proof of that classification was not obtained. |
+| Same NIST table, immediately preceding **C-13 or S-11** row | Separate entry, **Single rectangular column with large spandrels**, also **B200: 90-92**, WTC 2 / 200 / 90-92 / PL. | The two rows are not collapsed into one object or counted as independent corroboration of wrongdoing. Repeated section/location markings alone do not prove duplication, substitution or a counting error. Their physical relationship needs the underlying inventory/alias records. |
+
+Sources: [FEMA Appendix D, physical 16](https://www.fema.gov/pdf/library/fema403_apd.pdf#page=16); [NIST NCSTAR 1-3B, physical 87](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=87). Both held PDF entities were hash-checked before their selected pages were extracted and directly viewed. Exact text-layer output is preserved in `CHECK-RESULT.json`; extraction errors and punctuation are not substituted for the displayed cells.
+
+The limited inference is that the archive can provide a visible **S-19** alias and a partial painted-mark match for a candidate named **C13a** in the published inventory. This is a positive control for tracing identifiers. It is not evidence about a demolition mechanism or a WTC 7 connection. A mislabeled image, reused code, incomplete view or missing transfer history could weaken a broader same-piece claim; original photograph logs, full marks, matched geometry and intake records would test it.
+
+## C12 remains a separate, unfinished retrieval
+
+FEMA physical page 16, row 24, labels **C12a** a **WTC#7 W14 tree column-column piece** and **C12b** a **WTC#7 W14 tree column-beam piece**, attached to C12a. Their photo reference is **DKoutsoubis:1/21/02:#40-45**. That source is preserved as written. C13a's filenames, visible S-19 mark and NIST WTC 2 entry do not join it to either C12 piece, W14A/B, FEMA Appendix C Sample 1 or Column 79/G3005.
+
+The connector's paged name/parent search and legacy search returned no results even for a known W14 positive control. Its listing cap was 1,000. Those negative search responses cannot establish a missing record. Browser fallback used normal public-folder navigation, with Name / A to Z displayed, and retained **1,000 loaded DOM filename/ID rows**, including C-series names and later D-prefixed names. No row matched the specifically tested C12/C-12/C-012/C12a/C12b prefix forms. The exact regular expression and captured-list hash are in `DISCOVERY-SCOPE.json`.
+
+This is a bounded filename observation, not a complete archive search or evidence of withholding, deletion, nonreceipt or concealment. Other folders, generic filenames, aliases, unlisted originals and unobserved files remain possible. The loading/sorting/search failures concern the tools, not the historical record. The native 1,000-row public-name capture and earlier intermediate captures are retained locally; only the limited comparison selection and capture hash are in this publication. No hidden state, authenticated session extraction or access-gate bypass was used.
+
+The missing substantive records remain: the January 21 C12 series and its index/camera provenance; native field workbook/version history; candidate-specific intake, alias, transfer/coupon and classification worksheets; the basis of the WTC#7 labels; actual DOC-NIST-2013-001311 submissions and response; and current specimen/coupon availability. The prior W14A/B field WTC#7 versus later unidentified classifications and February/March 2002 shipping-start accounts remain unchanged and unresolved. The C13a control does not resolve them.
+
+## Verification and actual completion status
+
+`verify_candidate_control.py` was run using bundled Python 3.12 with Pillow and pypdf: **8 of 8 bounded checks passed**—four source entity pins, two full JPEG raster/dimension checks and two exact PDF extraction-anchor groups. The manual reading was two newly acquired photographs and two rendered source pages, separate from those machine checks. No whole-archive visual review, calibrated dimension measurement, physical specimen test or independent chain-of-custody authentication was performed. Pillow returned zero recognized EXIF entries in both JPEGs; other application/embedded metadata was not exhaustively audited here, and no capture date is inferred.
+
+Processing failures are retained locally: system/bundled Python lacked PyMuPDF; bundled pypdf worked; a default sandbox write to the Intel QA directory failed, then the authorized store write succeeded through reviewed execution. Poppler emitted font-configuration/cache warnings while producing the two rendered pages; the actual renderings were inspected. Failed UI controls are separately logged. None is a historical anomaly.
+
+FAA PD01–PD04 was revisited first. Four additional independent repository queries acquired no case-specific corrected QFR, delivery receipt or signed administrative/recommendation disposition. Unrelated DOT/DoD records are not adopted as governing policy. That local negative checkpoint does not advance an allegation or close the FAA track. Telephone original call-leg/caller joins, recorder continuity/custody/clock tests, materials native measurements/specimen joins, and steel decision/custody chains all remain open. No completed peer analysis is newly claimed.
+
+Earlier reports and source bytes remain unchanged. This is an additive report with its exact addition diff, checklist and unresolved requirements, not a replacement assessment. No third-party contact, request, private-case publication, fee, deletion or private push occurred. Public publication, once verified, is a dissemination milestone only; the original-record goal remains active.
