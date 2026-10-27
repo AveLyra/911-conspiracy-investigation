@@ -1,0 +1,24 @@
+{
+  "source": "A01",
+  "source_sha256": "d03e9cbf7b838c84cfeb7fcb04782b563d5122a0e2442a7ad0853038e2f4f694",
+  "source_bytes": 69528137,
+  "command": [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-xerror",
+    "-nostdin",
+    "-i",
+    "SOURCE",
+    "-map",
+    "0:a:0",
+    "-f",
+    "null",
+    "-"
+  ],
+  "returncode": 0,
+  "stderr": "",
+  "scope": "Full file decoded without content/clock/custody authentication; no audio utterances verified or timestamp joins performed.",
+  "ffmpeg_version_observed_after_run": "ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers",
+  "interpretation": "The same pinned MP3 decoded fully without reported errors. This does not authenticate its words, original media, clocks, segment boundaries or completeness."
+}

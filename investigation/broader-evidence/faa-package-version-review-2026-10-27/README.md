@@ -1,0 +1,92 @@
+# FAA Flight 77 packet: source-version differences and a released audio lead
+
+**All 77 previously outstanding page images are now inspected.** Together with the preceding pass, this covers the complete 72-page FAA Issues and Questions package (**F04**, NAID7596179) and 11-page Final FAA Testimony package (**F05**, NAID7601963). Their original PDF bytes are unchanged. This completes that reading dependency; it does **not** recover the corrected May 2003 QFR/receipt or a signed administrative disposition.
+
+The comparison found printed differences in turn instructions, one acknowledgment’s seconds, radar-graphic hour labels, aircraft-type descriptions and how uncertainty was relayed. Each value remains tied to its own source. We also acquired and decoded an official NARA **Tyson-position MP3** relevant to the C-130 report. Its speech, historical clock and custody have not yet been verified.
+
+## Source and method boundaries
+
+[F04 official PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-658-FAA-Issues-and-Questions-Package.pdf) · [F05 official PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-586-Email-Final-FAA-Testimony.pdf) · [A01 official audio catalog record](https://catalog.archives.gov/id/7595603).
+
+[SOURCES.json](SOURCES.json) pins the precise entities, acquisition times, URLs, SHA256 and review scope. [PAGE-MAP.json](PAGE-MAP.json) identifies components and printed Bates labels; [SOURCE-EXCERPTS.json](SOURCE-EXCERPTS.json) preserves selected text-layer lines; [COMPARISONS.json](COMPARISONS.json) separates visual observations, calculations, candidate event matches and uncertainties. Page references below are one-based PDF pages. Extracted line numbers are page-local machine locators, not original numbered agency lines. Pixel/byte comparisons do not authenticate historical assertions.
+
+These are official public archival representations. Printed dates, a signature image or an evidence-envelope label do not supply native authorship/metadata, complete custody, a certified continuous recording or proof of receipt. Raw scans, audio, signatures, personnel/contact information and full extractions remain local. No personal identifiers are reconstructed from obscured fields. All primary PDFs and earlier assessments remain preserved unchanged.
+
+## D01 — 20-degree instruction versus 10-degree instruction/readback
+
+The expanded AAT20 chronology on **F04, p52, M-WFB-00001971** records:
+
+| Printed time | Entry |
+|---|---|
+| 0847:20 | Instruction to turn **20 degrees right** for traffic |
+| 0847:23 | Acknowledgment **10 right AAL77** |
+
+Its own instruction and readback differ. The typed radio transcripts on **p38, M-WFB-00001949** and **p72, M-WFB-00001945** say **ten degrees** for the instruction and **ten right** for the acknowledgment. The handwritten DRAFT on **p67, M-WFB-00001940** also shows 10 degrees/10 right. Exact text-layer locators: p52, lines 18–19 and 36–37 ; p38, lines 41–42 and 61–63 ; p72, lines 8–9 and 44–46. The handwritten observation is image-based.
+
+This is a source discrepancy, not a measured aircraft maneuver. It could concern the command, its transcription, the readback or a summary/version difference; those possibilities remain untested. The underlying channel recordings, certified transcripts and revision records are required. No preferred value is adopted.
+
+## D02 — One acknowledgment differs by 10 seconds; other printed anchors agree
+
+**F04, p38** gives **1247:33** for the ten-right acknowledgment; **p39** and **p72**, and the handwritten **p67**, give **1247:23**. The associate-position heading and radar-position/draft labels are retained. We tentatively match the event by flight, words and surrounding sequence, not by an authenticated event ID.
+
+Five other candidate matched times on p38 versus p71–72 agree: **1240:14, 1240:16, 1243:52, 1243:54, 1247:20**. The six printed-time differences are **0, 0, 0, 0, 0, +10 seconds** when p38 is compared with p71–72. A single constant 10-second shift therefore does not fit all six matched printed rows. This narrow result does not calibrate either recording, rule out channel-specific effects or establish the correct historical time. The printed values and competing possible causes stay unresolved.
+
+## D03 — The radar graphic contains mixed-hour labels
+
+**F04, p49, M-WFB-00001959** is a static annotated radar graphic. Its heading says **September 11, 2001, 9:38 am ET**; the temporal role of that heading is not authenticated. Its annotations contain:
+
+| Candidate event | Graphic p49 | Comparison source |
+|---|---|---|
+| Turn | **9:54:43** | **0854:43**, four-flight chronology p14, AAL77 column |
+| Last transponder return / loss candidate association | **9:56:19 am ET** | **0856:19**, p16, AAL77 column |
+| Direct Falmouth instruction | **8:50:48 am ET** | **0850:48**, expanded chronology p52 |
+
+The annotation body is not present in the PDF’s searchable text layer; it was read from enlarged source-preserving renders. The candidate differences are **+3600, +3600, 0 seconds**, not a uniform shift across all three labels. These are comparison inputs, not an accepted clock model. Last return and detection of loss need not be identical events; the comparison pages do not all declare the same time convention. No timezone/daylight-saving explanation or corrected value is adopted. Obtain the native graphic/annotation revision history, radar extraction, display settings and actual clock references before interpreting cause or physical timing. The source graphic stays untouched.
+
+## D04 — C-130 description: appeared to be B767 versus reports B757
+
+The same-day DCA fax **F04, p53, M-WFB-00001974** says the C-130 crew’s traffic **appeared to be a B767**. The AAT20 chronologies **p50, M-WFB-00001966** and **p52, M-WFB-00001971**, both bearing a September 13, 2001, 9:00 am footer, say it **was a B757**. This changes both the type label and the displayed level of certainty. Locators: p53, lines 33–35; p50, lines 40–42; p52, lines 61–65. The raw OCR on p53 misreads characters; the visible B767 label was checked on the scan.
+
+These sources do not establish a different aircraft, substitution, a deliberate falsehood or which description exactly matches the original utterance. The original C-130/Tyson recording, partial-transcript source, authorship and revision trail are the discriminating records. The newly acquired A01 MP3 is a candidate for that content check; acquisition/decoding has not performed it.
+
+## D05 — How reported certainty changes within a communications transcript
+
+On **F04, p45, M-WFB-00001955**, the airline-dispatch speaker labels the second-impact report **unconfirmed** at **1309:05** and again at **1309:27**. A subsequent HNNRA relay at **1310:34** says the two impacts were **confirmed**. On **p46, M-WFB-00001956, 1311:30**, HNNRA again attributes confirmation to dispatch. The difference between the first printed time and the first relay is **89 seconds** on that printed time scale. Exact source lines: p45, 1–4, 27–31, 42–50; p46, 14 and 46–49.
+
+Another exchange on **p47, M-WFB-00001957** records HNNRA asking about a New York departure at 1314:42 and the dispatch reply **Boston** at 1314:45. Both statements are preserved. This is evidence about what the transcript says was conveyed and checked; it does not authenticate actual utterances, identify the original source of every report, prove there was no intervening information on another channel, or establish intentional fabrication. Chaotic relay, source qualification, transcription and deliberate misstatement remain distinguishable hypotheses requiring actual recordings and contemporaneous context.
+
+## D06 — Preserve witness limitations and distinguish event types
+
+The handwritten preliminary account on **p56, M-WFB-00001922** expressly says it was dictated/copied and that inaccuracies may be present. Several personnel statements report unknown equipment configuration; p58, M-WFB-00001924 states it was not recalled. Claims about primary targets, their later identification and what a supervisor heard over a phone are distinct evidence layers.
+
+The four-flight chronology’s **p16** says its initial review and personnel statements did not indicate primary/secondary returns displayed at **ZID**. Its **p19** records an approximate **0925–0930** primary-target observation at **Dulles**, with later association to AAL77. Those involve different facilities, times and later identification; we do not turn them into a universal claim that no primary radar data existed.
+
+The incident header on **p61, M-WFB-00001927** gives **1340 UTC**. Its body describes White House/hotline warnings but gives no separate precise warning-call timestamp. Treating 1340 as proof the first warning occurred then would add an assumption the body does not supply. The DCA synopsis separately records 1333 UTC approach coordination and 1334 UTC an account of White House contact. Preserve header, body and synopsis separately; do not erase the differing labels or use them to manufacture a calibrated notification timeline.
+
+## D07 — Repeated pages and poor text layers affect evidence counting
+
+**F04, p63 and p64** display the same handwritten account and the same **M-WFB-00001929** label. They are not pixel-identical, and their text layers contain only **63 bytes versus 192 bytes** despite the substantial visible handwriting. A search miss or different extracted text would not establish an absent or substantively different witness account. The comparison code records pixel/text results separately from manual content association.
+
+The packet’s page map has **25 BSA-labeled pages, 44 WFB-labeled pages with 43 unique WFB identifiers, and 3 pages without a transcribed Bates label**. Those three are the opening questions, a visually blank page and an office directory. Other components include an envelope describing a commercial flight-deck-video sales record and a CD-label photograph. Bates order is nonsequential. These observations make the 72-page file a compilation to inspect component by component; they do not establish destruction, improper omission, the full agency/FBI case inventory, or the reason this compilation has this form. Neither repeated components nor their envelope/summary should be counted as independent corroboration.
+
+## D08 — Actual audio acquisition, with its representation and testing limits
+
+[A01, NARA 7595603](https://catalog.archives.gov/id/7595603) is cataloged as **DCA105, TYSON 1324–1350 UTC; ENSUE 1503–1513 UTC**. Its visible agency-assigned identifier ends **.wav**, while its public Download/source URL ends **.mp3**. Both labels are retained; a native WAV or original cassette has not been obtained merely by reading that field.
+
+The acquired MP3 has **69,528,137 bytes**, SHA256 **d03e9cbf7b838c84cfeb7fcb04782b563d5122a0e2442a7ad0853038e2f4f694**. ffprobe reports MP3, **44,100 Hz, 2 channels, 2172.686438 seconds**. A full ffmpeg decode completed with return code 0 and no error output. This is a representation/decoder readiness result, not speech verification or a completeness/custody/clock test. No source utterance has yet been listened to or independently transcribed here.
+
+The two catalog-labeled intervals sum to 36 minutes if treated as exact endpoints; the decoded file duration is approximately 36 minutes 12.686 seconds. Rounded labels, announcements, boundaries, re-recording and encoding behavior have not been mapped. That difference alone does not establish a 12.686-second evidentiary gap, cut, insertion or synchronization offset. Actual spoken clock marks, segment boundaries, certified re-recording records and original source media are the next checks.
+
+An initial download stopped at a local 32 MiB bound. A subsequent HEAD verified the advertised 69,528,137-byte size, and an explicit 80 MiB single-file limit permitted the acquisition. This was a research-tool size bound, not an archive access denial or a suspicious source event. The failed attempt/headers remain local. No raw audio was uploaded or published.
+
+## D09 — Final FAA Testimony package now fully inspected
+
+**F05** consists of two visible email covers dated September 20 and 24, 2001, followed by nine numbered pages headed as **Monte R. Belger’s September 25, 2001 prepared statement**. These statement pages concern postattack security/screening measures and ongoing investigation. The first cover refers to Administrator testimony, the second to Deputy Administrator testimony. A single title Final does not establish a single native attachment chain. Neither native Word attachment nor actual hearing submission/receipt has been authenticated, and this file does not supply the missing May 2003 corrected QFR. The earlier partial-reading assessment remains unchanged as a historical record; this follow-up supplies the completed page inspection.
+
+## Next originals and completion status
+
+[OPEN-RECORDS.md](OPEN-RECORDS.md) gives exact catalog/record targets, including HNNR/HNNRA partial-transcript sources, certification/rerecording and retained-reel records, the DCA/Tyson transcript and original C-130 exchange, raw radar/source-graphic records, and the separate FAA correction/disposition roots. Newly located catalog entries are **locators**, not acquired/read findings.
+
+The 77-page reading dependency is complete. **PD01–PD04 and the five-track substantive goal remain open.** We have not recovered the actual corrected QFR/receipt, signed action/no-action decision, complete recommendation disposition, authenticated full recording chain, independent raw recorder reconstruction, native materials/specimen joins or steel-attribution rationale. Eligible public publication verifies preservation/disclosure of these findings, not their unperformed historical or empirical tests.
+
+Strongest objection to a conspiratorial interpretation: these discrepancies occur in a compilation containing drafts, summaries, different recording positions, imperfect text layers, approximate and relayed observations, and explicit source limitations. Those features offer alternative explanations that remain untested; they do not erase the conflicts. No conclusion about wrongdoing, motive or historical cause is selected. [Checklist](CHECKLIST.md) · [Executed checks](VERIFICATION.json) · [Revision accounting](REVISION-STATUS.json).
