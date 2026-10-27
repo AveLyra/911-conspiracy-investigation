@@ -1,0 +1,90 @@
+{
+  "rows": [
+    {
+      "basis": "atomic",
+      "reported_approximate_Al_over_O_assumed_exact_for_algebra": "3/1",
+      "max_fraction_reported_Al_explainable_as_Al2O3": "2/9",
+      "fraction_reported_Al_not_explained_as_Al2O3_given_measured_O": "7/9",
+      "required_multiplier_on_reported_O_over_Al_to_allow_all_Al_as_Al2O3": "9/2",
+      "max_percent": 22.22222222222222,
+      "unassigned_percent": 77.77777777777779,
+      "oxygen_ratio_multiplier": 4.5
+    },
+    {
+      "basis": "mass_with_rounded_masses27_and16",
+      "reported_approximate_Al_over_O_assumed_exact_for_algebra": "3/1",
+      "max_fraction_reported_Al_explainable_as_Al2O3": "3/8",
+      "fraction_reported_Al_not_explained_as_Al2O3_given_measured_O": "5/8",
+      "required_multiplier_on_reported_O_over_Al_to_allow_all_Al_as_Al2O3": "8/3",
+      "max_percent": 37.5,
+      "unassigned_percent": 62.5,
+      "oxygen_ratio_multiplier": 2.6666666666666665
+    }
+  ],
+  "assumptions": [
+    "Reported3:1 is a corrected atom or mass ratio, not raw xray peak-height/count ratio.",
+    "ReportedAl andO quantify the same analyzed material without unmodeled substrate, geometry, contamination or response bias.",
+    "All reportedO is allocated toAl2O3 to maximize oxideAl; oxygen bound toFe,Si orother constituents would lower that maximum.",
+    "The remainder is not automaticallyAlmetal; unmeasured nonoxygen compounds, response errors or wrong sample attribution remain possible.",
+    "Approximate published ratio has no supplied uncertainty here; no confidence interval or actual dust/metal mass fraction is inferred."
+  ],
+  "raw_counts_basis": "Not identifiable from this algebra; detector/matrix response must first convert counts to composition.",
+  "falsifying_scenarios": [
+    "Foratomic3:1, a4.5fold upward correction inO/Al allows allAl asAl2O3; for mass3:1, the threshold is8/3. No evidence such an error actually occurred is supplied.",
+    "A verified oxide standard returns zero unassignedAl. An accurately validated3:1 composition would conflict with an all-Al-as-oxide description of that analyzed region.",
+    "NonoxygenAl compounds or substrate contributions break inference from oxygen deficit to metallicAl."
+  ],
+  "checks": [
+    {
+      "name": "atom3:1 conservative upper bound",
+      "passed": true
+    },
+    {
+      "name": "atom3:1 unassigned fraction",
+      "passed": true
+    },
+    {
+      "name": "atom3:1 oxygen correction threshold",
+      "passed": true
+    },
+    {
+      "name": "mass3:1 conservative upper bound",
+      "passed": true
+    },
+    {
+      "name": "mass3:1 unassigned fraction",
+      "passed": true
+    },
+    {
+      "name": "mass3:1 oxygen correction threshold",
+      "passed": true
+    },
+    {
+      "name": "stoichiometric atom oxide has no unassignedAl",
+      "passed": true
+    },
+    {
+      "name": "stoichiometric mass oxide has no unassignedAl",
+      "passed": true
+    },
+    {
+      "name": "atom_basis monotonic conditional remainder",
+      "passed": true
+    },
+    {
+      "name": "atom_basis rejects undefinedzero ratio",
+      "passed": true
+    },
+    {
+      "name": "mass_basis monotonic conditional remainder",
+      "passed": true
+    },
+    {
+      "name": "mass_basis rejects undefinedzero ratio",
+      "passed": true
+    }
+  ],
+  "passed": 12,
+  "failed": 0,
+  "scope": "Exact conditional stoichiometry only, not verification of the reported ratio, a spectrum measurement, elemental-state assay, thermite identification or mechanism probability."
+}
