@@ -1,0 +1,2163 @@
+--- /dev/null
++++ b/CHECKLIST-v1-v2.diff
+@@ -0,0 +1,17 @@
++--- a/drafts/CHECKLIST-v1.md
+++++ b/CHECKLIST.md
++@@ -4,10 +4,10 @@
++ |---|---|---|
++ | Pursue FAA original-record roots first | SOURCES F01–F05 preserve five official PDFs; README O01–O06 and SOURCE-EXCERPTS give exact pages/lines. | PD01 corrected QFR/receipt and PD02–PD03 signed disposition not acquired. PD04 policy/custody joins remain. |
++ | Preserve conflicting accounts and our assumptions | O01–O04 retain production, reported restrictions, disputed scope, Final/conditional/status wording and quantities in their separate units. | Actual original instructions/receipts/tasking; note author/date; no preferred account or motive selected. |
++-| Distinguish acquisition, extraction and reading | Seven initial pages fully read; six adjacent identifying pages visually read. SOURCES records13/90coverage. |77pages not fully reviewed. The all-acquired-page protocol criterion is not marked passed or weakened. |
++-| Avoid title-only false matches | O05 identifies two2001testimony emails; O03 is a2003interview follow-up. | Neither supplies corrected May2003 QFR or signed2006 action. |
++-| Obtain recorder/timeline custody leads | O06 records FD340 copy-description and1A-1A76869/M-BSA-00006682. | Detailed package comparison/native audio/clock/custody joins unperformed. |
++-| Preserve all five goal tracks | OPEN-RECORDS keeps FAA,telephone,recorder,materials,steel dependencies visible. | No original-record or empirical-testing dependency disappears because a publication succeeds. |
+++| Distinguish acquisition, extraction and reading | Seven initial pages fully read; six adjacent identifying pages visually read. SOURCES records13/90 coverage. |77 pages not fully reviewed. The all-acquired-page protocol criterion is not marked passed or weakened. |
+++| Avoid title-only false matches | O05 identifies two2001testimony emails; O03 is a2003interview follow-up. | Neither supplies corrected May 2003 QFR or signed 2006 action. |
+++| Obtain recorder/timeline custody leads | O06 records FD340 copy-description and 1A-1A76869/M-BSA-00006682. | Detailed package comparison/native audio/clock/custody joins unperformed. |
+++| Preserve all five goal tracks | OPEN-RECORDS keeps FAA, telephone, recorder, materials, steel dependencies visible. | No original-record or empirical-testing dependency disappears because a publication succeeds. |
++ | Reproduce narrow checks | verify_sources.py plus SOURCE-VERIFICATION receipt check entity/text/excerpt integrity and literal status count. | Not historical authentication, substantive legal review or physical validation. |
++ | Version accountability | PUBLIC-ADDITION.diff, README-addition.diff and REVISION-STATUS preserve full new text plus six unchanged prior hashes. | Original protocol/notes/sources retained; no source correction or old-history rewrite. |
++ | Lawful AveLyra public mirror | Reviewed notes/pins/code only; exact public destination/account/commit metadata must be verified before push; all remote files checked after. | No raw personnel/health/signature/contact files, private case data or private push. This checklist is not a push receipt. |
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,15 @@
++# Requirement coverage and unresolved items
++
++| Point | Outcome / exact location | Still open |
++|---|---|---|
++| Pursue FAA original-record roots first | SOURCES F01–F05 preserve five official PDFs; README O01–O06 and SOURCE-EXCERPTS give exact pages/lines. | PD01 corrected QFR/receipt and PD02–PD03 signed disposition not acquired. PD04 policy/custody joins remain. |
++| Preserve conflicting accounts and our assumptions | O01–O04 retain production, reported restrictions, disputed scope, Final/conditional/status wording and quantities in their separate units. | Actual original instructions/receipts/tasking; note author/date; no preferred account or motive selected. |
++| Distinguish acquisition, extraction and reading | Seven initial pages fully read; six adjacent identifying pages visually read. SOURCES records13/90 coverage. |77 pages not fully reviewed. The all-acquired-page protocol criterion is not marked passed or weakened. |
++| Avoid title-only false matches | O05 identifies two2001testimony emails; O03 is a2003interview follow-up. | Neither supplies corrected May 2003 QFR or signed 2006 action. |
++| Obtain recorder/timeline custody leads | O06 records FD340 copy-description and 1A-1A76869/M-BSA-00006682. | Detailed package comparison/native audio/clock/custody joins unperformed. |
++| Preserve all five goal tracks | OPEN-RECORDS keeps FAA, telephone, recorder, materials, steel dependencies visible. | No original-record or empirical-testing dependency disappears because a publication succeeds. |
++| Reproduce narrow checks | verify_sources.py plus SOURCE-VERIFICATION receipt check entity/text/excerpt integrity and literal status count. | Not historical authentication, substantive legal review or physical validation. |
++| Version accountability | PUBLIC-ADDITION.diff, README-addition.diff and REVISION-STATUS preserve full new text plus six unchanged prior hashes. | Original protocol/notes/sources retained; no source correction or old-history rewrite. |
++| Lawful AveLyra public mirror | Reviewed notes/pins/code only; exact public destination/account/commit metadata must be verified before push; all remote files checked after. | No raw personnel/health/signature/contact files, private case data or private push. This checklist is not a push receipt. |
++
++No third-party contact, new request, fee, personal-mailbox access, filing, case-spine edit, deletion or overwrite. Goal remains active; new acquisition progress does not satisfy the missing originals or unrun tests.
+--- /dev/null
++++ b/CLAIM-LEDGER.json
+@@ -0,0 +1,83 @@
++[
++  {
++    "id": "O01",
++    "existing_claim": "B129 / PD01–PD04",
++    "claim": "The telephone-call record reports both provision of requested materials and restrictions on some releases. It attributes UAL93-only release guidance to AAT-200 litigation personnel and restrictions on some FBI-held information to ANE legal.",
++    "type": "source observation / attributed account",
++    "source": "F02",
++    "primary_or_derivative": "Public archival primary-document scan; statements within it remain attributed accounts",
++    "replication": "Byte/extraction checks separately run; manual reading coverage explicit",
++    "assumptions": "No original AAT-200/ANE instructions, particular withheld-item schedule, production manifest or receiving acknowledgment acquired. Reported Commission/HQ positions are layered attribution.",
++    "grade": "A for the existence/content of the pinned scan only; historical implications remain underdetermined",
++    "strongest_alternative": "Different dates, scopes, channels, tasking definitions or document purposes may account for apparent tensions; not tested or adopted as resolution",
++    "would_weaken_or_falsify": "Actual instructions, tasking, source versions, receipts or later complete status records inconsistent with the reported interpretation; preserve them alongside this record"
++  },
++  {
++    "id": "O02",
++    "existing_claim": "B129 / PD01–PD04",
++    "claim": "The note addressed to Shirley and ending Dana says field visits exposed unproduced materials; reiterates complete accident files rather than accident packages; and says the additional categories are examples, not narrowing the original all-documents request.",
++    "type": "source observation / competing attributed account",
++    "source": "F03",
++    "primary_or_derivative": "Public archival primary-document scan; statements within it remain attributed accounts",
++    "replication": "Byte/extraction checks separately run; manual reading coverage explicit",
++    "assumptions": "Middle of October is printed; October2003 is contextual inference, not an authenticated exact date. Claims about four centers are the author’s account, not four separately acquired attestations. Relationship to F02 remains unadjudicated.",
++    "grade": "A for the existence/content of the pinned scan only; historical implications remain underdetermined",
++    "strongest_alternative": "Different dates, scopes, channels, tasking definitions or document purposes may account for apparent tensions; not tested or adopted as resolution",
++    "would_weaken_or_falsify": "Actual instructions, tasking, source versions, receipts or later complete status records inconsistent with the reported interpretation; preserve them alongside this record"
++  },
++  {
++    "id": "O03",
++    "existing_claim": "B129 / PD01–PD04",
++    "claim": "Final Follow-up Response subject and should-complete wording coexist with 31 listed people, of whom27 entries are literally Completed and4 have other status descriptions.",
++    "type": "calculation from manually reviewed source entries",
++    "source": "F01",
++    "primary_or_derivative": "Public archival primary-document scan; statements within it remain attributed accounts",
++    "replication": "Byte/extraction checks separately run; manual reading coverage explicit",
++    "assumptions": "Thirty table rows plus one prose entry, not31 table rows; not all employees or a completion percentage for the workforce. This is an interview-status follow-up referencing an October8,2003 fax, not the corrected May2003 QFR. Final subject/conditional wording/statuses are preserved without selecting a controlling meaning. No inference of refusal, concealment or motive; personal details excluded.",
++    "grade": "A for the existence/content of the pinned scan only; historical implications remain underdetermined",
++    "strongest_alternative": "Different dates, scopes, channels, tasking definitions or document purposes may account for apparent tensions; not tested or adopted as resolution",
++    "would_weaken_or_falsify": "Actual instructions, tasking, source versions, receipts or later complete status records inconsistent with the reported interpretation; preserve them alongside this record"
++  },
++  {
++    "id": "O04",
++    "existing_claim": "B129 / PD01–PD04",
++    "claim": "F02 records over3088 recorded hours,6 recorders×40channels and a354days-manpower estimate. F03 says the author’s request would not require review of3000+ phone lines.",
++    "type": "source observation / units safeguard",
++    "source": [
++      "F02",
++      "F03"
++    ],
++    "primary_or_derivative": "Public archival primary-document scan; statements within it remain attributed accounts",
++    "replication": "Byte/extraction checks separately run; manual reading coverage explicit",
++    "assumptions": "Recorded hours, channels, person-days and phone lines are different quantities. No numerical contradiction, actual workload estimate verification, matched recording inventory or completeness result is established.",
++    "grade": "A for the existence/content of the pinned scan only; historical implications remain underdetermined",
++    "strongest_alternative": "Different dates, scopes, channels, tasking definitions or document purposes may account for apparent tensions; not tested or adopted as resolution",
++    "would_weaken_or_falsify": "Actual instructions, tasking, source versions, receipts or later complete status records inconsistent with the reported interpretation; preserve them alongside this record"
++  },
++  {
++    "id": "O05",
++    "existing_claim": "B129 / PD01–PD04",
++    "claim": "The Final FAA Testimony package includes email pages dated September20 and24,2001, referring respectively to Administrator and Deputy Administrator testimony. It is not the missing May2003 corrected QFR.",
++    "type": "acquisition / false-association control",
++    "source": "F05",
++    "primary_or_derivative": "Public archival primary-document scan; statements within it remain attributed accounts",
++    "replication": "Byte/extraction checks separately run; manual reading coverage explicit",
++    "assumptions": "Only PDF pages1,2,11 visually reviewed; the statement heading on p3 was text-inspected but not visually checked. Attachment icons do not authenticate retained native Word attachments, delivery or a single complete testimony version. This result excludes a title-only association, not all possible relevant content.",
++    "grade": "A for the existence/content of the pinned scan only; historical implications remain underdetermined",
++    "strongest_alternative": "Different dates, scopes, channels, tasking definitions or document purposes may account for apparent tensions; not tested or adopted as resolution",
++    "would_weaken_or_falsify": "Actual instructions, tasking, source versions, receipts or later complete status records inconsistent with the reported interpretation; preserve them alongside this record"
++  },
++  {
++    "id": "O06",
++    "existing_claim": "B129 / PD01–PD04",
++    "claim": "The72page Issues and Questions package opens with Flight77 questions, a DRAFT-marked communications transcript page and an FD340 evidence-envelope form describing a copy of an FAA radar/communications timeline. These are newly acquired as a package; component independence and novelty are untested.",
++    "type": "acquisition / uncompleted review",
++    "source": "F04",
++    "primary_or_derivative": "Public archival primary-document scan; statements within it remain attributed accounts",
++    "replication": "Byte/extraction checks separately run; manual reading coverage explicit",
++    "assumptions": "Pages4–72 have not received detailed reading or visual review; all72 text layers were extracted only. No timeline/transcript comparison, native audio join, QFR correction or complete custody chain is claimed. An evidence-envelope form describing a copy does not authenticate the original recordings.",
++    "grade": "A for the existence/content of the pinned scan only; historical implications remain underdetermined",
++    "strongest_alternative": "Different dates, scopes, channels, tasking definitions or document purposes may account for apparent tensions; not tested or adopted as resolution",
++    "would_weaken_or_falsify": "Actual instructions, tasking, source versions, receipts or later complete status records inconsistent with the reported interpretation; preserve them alongside this record"
++  }
++]
+--- /dev/null
++++ b/METHOD-v1-v2.diff
+@@ -0,0 +1,20 @@
++--- a/drafts/METHOD-v1.md
+++++ b/METHOD.md
++@@ -1,13 +1,13 @@
++ # Method, provenance and limits
++ 
++-1. Existing B129/PD01–PD04 and the five-track work plan controlled the question; titles were locators, not conclusions. The NARA Boxes96–107 finding aid led to five exact catalog-linked downloads. Anonymous GETs returned PDF entities with HTTP200 and application/pdf. Original files, full transport metadata, page-text extracts and QA rasters are preserved locally. No native agency email headers or complete original custody chain were authenticated merely by retrieval.
+++1. Existing B129 / PD01–PD04 and the five-track work plan controlled the question; titles were locators, not conclusions. The NARA Boxes96–107 finding aid led to five exact catalog-linked downloads. Anonymous GETs returned PDF entities with HTTP200 and application/pdf. Original files, full transport metadata, page-text extracts and QA rasters are preserved locally. No native agency email headers or complete original custody chain were authenticated merely by retrieval.
++ 2. SOURCES pins exact URL/catalog/access time/bytes/SHA256/page count and every extracted page-text hash. SHA256 identifies the entity examined; it is not proof of truth, original authorship, historical completeness, receipt or absence of alteration before release. An official NARA host establishes the public release route, not every underlying assertion.
++-3. All pages of F01–F03 were visually reviewed. F04 pages1–3 and F05 pages1,2,11 were visually reviewed. F05 page3’s heading was text-inspected only. The rest of F04/F05 remains a detailed-reading dependency. Text extraction is not human review. These distinctions also account for the original protocol’s still-unmet77page inspection requirement.
+++3. All pages of F01–F03 were visually reviewed. F04 pages 1–3 and F05 pages 1, 2, 11 were visually reviewed. F05 page3’s heading was text-inspected only. The rest of F04/F05 remains a detailed-reading dependency. Text extraction is not human review. These distinctions also account for the original protocol’s still-unmet77page inspection requirement.
++ 4. SOURCE-EXCERPTS preserves selected raw text-layer lines verbatim. It excludes personnel/contact/health text. One-based locators refer to PyMuPDF page.get_text().splitlines(), not original numbered lines. Visual transcription and OCR differ in places; no silent repair is made. Status counts use visible rows/prose and are manual calculations; literal Completed counts are also checked against the text layer. Software does not prove the interpretation.
++ 5. F02’s statements retain their note-taker/regional official/Commission/HQ attribution layers. F03’s author/date remain incomplete. Never count a quoted source, evidence envelope, draft transcript and later summary as independent corroboration. Disputed scope/production is preserved without assigning motive or adjudicating facts.
++-6. Quantities are retained with their source units: hours,channels,person-days,phone lines. No cross-unit discrepancy or realized workload is calculated. F01 listed people are not the full workforce. F04 is an acquired package, not72 independent records or a completed Flight77 comparison.
+++6. Quantities are retained with their source units: hours,channels,person-days, phone lines. No cross-unit discrepancy or realized workload is calculated. F01 listed people are not the full workforce. F04 is an acquired package, not 72 independent records or a completed Flight 77 comparison.
++ 7. Native research is the source of these notes; the public addition is a reviewed redundant mirror. No main case facts/timeline/pleading/correspondence authority changed. Public content excludes raw scans, signatures, personal health/contact details, private correspondence, credentials and local network paths. Existing public official links remain visible.
++-8. verify_sources.py checks all five local PDF entities, decoding, page/text hashes, selected line quotations and27literal Completed markers. The resulting receipt is an integrity/reproducibility check, not authentication of any event or completion of the original-record goal. Publication account/commit/ref/file checks are a separate subsequent operation.
+++8. verify_sources.py checks all five local PDF entities, decoding, page/text hashes, selected line quotations and 27 literal Completed markers. The resulting receipt is an integrity/reproducibility check, not authentication of any event or completion of the original-record goal. Publication account/commit/ref/file checks are a separate subsequent operation.
++ 9. Six prior plan/review documents were hashed before this pass; REVISION-STATUS compares them afterward. Existing source bytes are checked against acquisition hashes. New text has no preceding version, so its diff is a full addition; previous assessments and all conflicting values remain available. No source overwrite, deletion, normalization, private push, outreach, request, fee, personal-mailbox access or history rewrite.
++ 
++ Official finding aid: https://www.archives.gov/research/foia/faa-finding-aid-96-107 . NARA source links and access timestamps are in SOURCES. The finding-aid listing is not an independently authenticated transmission manifest.
+--- /dev/null
++++ b/METHOD.md
+@@ -0,0 +1,13 @@
++# Method, provenance and limits
++
++1. Existing B129 / PD01–PD04 and the five-track work plan controlled the question; titles were locators, not conclusions. The NARA Boxes96–107 finding aid led to five exact catalog-linked downloads. Anonymous GETs returned PDF entities with HTTP200 and application/pdf. Original files, full transport metadata, page-text extracts and QA rasters are preserved locally. No native agency email headers or complete original custody chain were authenticated merely by retrieval.
++2. SOURCES pins exact URL/catalog/access time/bytes/SHA256/page count and every extracted page-text hash. SHA256 identifies the entity examined; it is not proof of truth, original authorship, historical completeness, receipt or absence of alteration before release. An official NARA host establishes the public release route, not every underlying assertion.
++3. All pages of F01–F03 were visually reviewed. F04 pages 1–3 and F05 pages 1, 2, 11 were visually reviewed. F05 page3’s heading was text-inspected only. The rest of F04/F05 remains a detailed-reading dependency. Text extraction is not human review. These distinctions also account for the original protocol’s still-unmet77page inspection requirement.
++4. SOURCE-EXCERPTS preserves selected raw text-layer lines verbatim. It excludes personnel/contact/health text. One-based locators refer to PyMuPDF page.get_text().splitlines(), not original numbered lines. Visual transcription and OCR differ in places; no silent repair is made. Status counts use visible rows/prose and are manual calculations; literal Completed counts are also checked against the text layer. Software does not prove the interpretation.
++5. F02’s statements retain their note-taker/regional official/Commission/HQ attribution layers. F03’s author/date remain incomplete. Never count a quoted source, evidence envelope, draft transcript and later summary as independent corroboration. Disputed scope/production is preserved without assigning motive or adjudicating facts.
++6. Quantities are retained with their source units: hours,channels,person-days, phone lines. No cross-unit discrepancy or realized workload is calculated. F01 listed people are not the full workforce. F04 is an acquired package, not 72 independent records or a completed Flight 77 comparison.
++7. Native research is the source of these notes; the public addition is a reviewed redundant mirror. No main case facts/timeline/pleading/correspondence authority changed. Public content excludes raw scans, signatures, personal health/contact details, private correspondence, credentials and local network paths. Existing public official links remain visible.
++8. verify_sources.py checks all five local PDF entities, decoding, page/text hashes, selected line quotations and 27 literal Completed markers. The resulting receipt is an integrity/reproducibility check, not authentication of any event or completion of the original-record goal. Publication account/commit/ref/file checks are a separate subsequent operation.
++9. Six prior plan/review documents were hashed before this pass; REVISION-STATUS compares them afterward. Existing source bytes are checked against acquisition hashes. New text has no preceding version, so its diff is a full addition; previous assessments and all conflicting values remain available. No source overwrite, deletion, normalization, private push, outreach, request, fee, personal-mailbox access or history rewrite.
++
++Official finding aid: https://www.archives.gov/research/foia/faa-finding-aid-96-107 . NARA source links and access timestamps are in SOURCES. The finding-aid listing is not an independently authenticated transmission manifest.
+--- /dev/null
++++ b/OBSERVATIONS.json
+@@ -0,0 +1,90 @@
++[
++  {
++    "id": "O01",
++    "kind": "source observation / attributed account",
++    "source": "F02",
++    "pdf_page": 1,
++    "extracted_lines": "7–26,30–35",
++    "claim": "The telephone-call record reports both provision of requested materials and restrictions on some releases. It attributes UAL93-only release guidance to AAT-200 litigation personnel and restrictions on some FBI-held information to ANE legal.",
++    "support": "Contemporaneous-looking official archival scan; what the note-taker recorded people saying, not the actual instructions or delivery receipts.",
++    "limits": "No original AAT-200/ANE instructions, particular withheld-item schedule, production manifest or receiving acknowledgment acquired. Reported Commission/HQ positions are layered attribution."
++  },
++  {
++    "id": "O02",
++    "kind": "source observation / competing attributed account",
++    "source": "F03",
++    "pdf_pages": [
++      1,
++      2,
++      3
++    ],
++    "extracted_lines": "p1:5–37; p2:1–40; p3:2–4",
++    "claim": "The note addressed to Shirley and ending Dana says field visits exposed unproduced materials; reiterates complete accident files rather than accident packages; and says the additional categories are examples, not narrowing the original all-documents request.",
++    "support": "F03 visible typed pages. Exact full sender/date/native email headers are absent.",
++    "limits": "Middle of October is printed; October2003 is contextual inference, not an authenticated exact date. Claims about four centers are the author’s account, not four separately acquired attestations. Relationship to F02 remains unadjudicated."
++  },
++  {
++    "id": "O03",
++    "kind": "calculation from manually reviewed source entries",
++    "source": "F01",
++    "pdf_pages": [
++      1,
++      2
++    ],
++    "extracted_lines": "p1:5–19 plus visible personnel status tables; p2 visible status paragraph/table",
++    "claim": "Final Follow-up Response subject and should-complete wording coexist with 31 listed people, of whom27 entries are literally Completed and4 have other status descriptions.",
++    "calculation": {
++      "retired": 6,
++      "relocated_or_transferred": 12,
++      "separate_prose_entry": 1,
++      "leave_or_logistics_table": 12,
++      "listed_people": 31,
++      "literal_completed": 27,
++      "other_status_entries": 4
++    },
++    "limits": "Thirty table rows plus one prose entry, not31 table rows; not all employees or a completion percentage for the workforce. This is an interview-status follow-up referencing an October8,2003 fax, not the corrected May2003 QFR. Final subject/conditional wording/statuses are preserved without selecting a controlling meaning. No inference of refusal, concealment or motive; personal details excluded."
++  },
++  {
++    "id": "O04",
++    "kind": "source observation / units safeguard",
++    "sources": [
++      "F02",
++      "F03"
++    ],
++    "pdf_pages": {
++      "F02": [
++        1
++      ],
++      "F03": [
++        2
++      ]
++    },
++    "claim": "F02 records over3088 recorded hours,6 recorders×40channels and a354days-manpower estimate. F03 says the author’s request would not require review of3000+ phone lines.",
++    "limits": "Recorded hours, channels, person-days and phone lines are different quantities. No numerical contradiction, actual workload estimate verification, matched recording inventory or completeness result is established."
++  },
++  {
++    "id": "O05",
++    "kind": "acquisition / false-association control",
++    "source": "F05",
++    "pdf_pages": [
++      1,
++      2,
++      11
++    ],
++    "extracted_lines": "p1:1–2,17–19; p2:2–3,18–21",
++    "claim": "The Final FAA Testimony package includes email pages dated September20 and24,2001, referring respectively to Administrator and Deputy Administrator testimony. It is not the missing May2003 corrected QFR.",
++    "limits": "Only PDF pages1,2,11 visually reviewed; the statement heading on p3 was text-inspected but not visually checked. Attachment icons do not authenticate retained native Word attachments, delivery or a single complete testimony version. This result excludes a title-only association, not all possible relevant content."
++  },
++  {
++    "id": "O06",
++    "kind": "acquisition / uncompleted review",
++    "source": "F04",
++    "pdf_pages": [
++      1,
++      2,
++      3
++    ],
++    "claim": "The72page Issues and Questions package opens with Flight77 questions, a DRAFT-marked communications transcript page and an FD340 evidence-envelope form describing a copy of an FAA radar/communications timeline. These are newly acquired as a package; component independence and novelty are untested.",
++    "limits": "Pages4–72 have not received detailed reading or visual review; all72 text layers were extracted only. No timeline/transcript comparison, native audio join, QFR correction or complete custody chain is claimed. An evidence-envelope form describing a copy does not authenticate the original recordings."
++  }
++]
+--- /dev/null
++++ b/OPEN-RECORDS-v1-v2.diff
+@@ -0,0 +1,27 @@
++--- a/drafts/OPEN-RECORDS-v1.md
+++++ b/OPEN-RECORDS.md
++@@ -4,18 +4,18 @@
++ 
++ | Priority | Existing dependency or new exact locator | Still required | What the record could test |
++ |---|---|---|---|
++-| 1 | PD01 | Actual corrected May2003 QFR; drafts, approval chain, transmittal and receiving acknowledgment | Whether a correction existed, what changed, who knew, and whether it reached its recipient. A2001 final-testimony email or2003 interview memo is not a substitute. |
+++| 1 | PD01 | Actual corrected May 2003 QFR; drafts, approval chain, transmittal and receiving acknowledgment | Whether a correction existed, what changed, who knew, and whether it reached its recipient. A2001 final-testimony email or2003 interview memo is not a substitute. |
++ | 1 | PD02–PD03 | Signed FAA action/no-action decision; OIG recommendation responses, referral records and accepted closure/return-to-agency dispositions | Whether findings prompted action and why; no inference from an absent search hit or generic follow-up policy. |
++ | 1 | F02 AAT-200 and ANE legal references | Actual release/hold instructions, dates, recipients, authority, item-level schedules, productions and receipts | Whether restrictions occurred as reported, their content/scope/legal basis and whether another channel supplied records. |
++ | 1 | F03 production dispute | Complete original requests/amendments, HQ-to-ZBW/ZNY/ZID/ZOB tasking, center accident-file inventories, production manifests/receipts | Competing completeness/scope accounts. Four centers named by one note are not four acquired affidavits. |
++-| 2 | F01 October8,2003 AAT-1 fax | Fax itself, enclosures, recipients, employee universe, status definitions, actual interviews and later status updates | Relationship between Final subject, should-complete wording and actual incomplete/other status descriptions. No personal medical detail is needed to frame this request target. |
+++| 2 | F01 October 8, 2003 AAT-1 fax | Fax itself, enclosures, recipients, employee universe, status definitions, actual interviews and later status updates | Relationship between Final subject, should-complete wording and actual incomplete/other status descriptions. No personal medical detail is needed to frame this request target. |
++ | 2 | F03 after-action/radar examples | Cleveland management memo, Indianapolis outside-contractor radar-coverage review and each relevant SATORI native reconstruction, version/clock/source records | Existing-record evaluations and coverage gaps, not a new invented global report. |
++ | 2 | F03 author/date | Native message or routing record establishing full sender, recipient and exact date; handwriting provenance | Authentication of the note, not surname inference from Dana alone. |
++-| 2 | F04 1A-1A76869 / M-BSA-00006682 | Finish detailed review of remaining69pages; compare components to held sources; follow envelope/FD302/native FAA timeline and recordings | Source custody, draft/final transcript/timeline differences, duplicate components and clocks. Envelope describes a copy, not native recordings. |
++-| 2 | F05 source-package association | Finish remaining8visual/detailed page reviews; inspect actual retained attachments and hearing submission records if pertinent | What the2001 package contains; not a May2003 correction on the basis of its title. |
++-| Open | Telephone | Native carrier/operator/PBX records; Keyton source interview; caller/event/leg joins; original zero-duration exhibit and Sept20usage source/release joins; relevant email/native deliveries | Distinguish attempted, routed, accepted and connected events. Earlier154/159,eight/seven,operator/caller and timestamp uncertainties remain. |
+++| 2 | F04 1A-1A76869 / M-BSA-00006682 | Finish detailed review of remaining 69 pages; compare components to held sources; follow envelope/FD302/native FAA timeline and recordings | Source custody, draft/final transcript/timeline differences, duplicate components and clocks. Envelope describes a copy, not native recordings. |
+++| 2 | F05 source-package association | Finish remaining 8 visual/detailed page reviews; inspect actual retained attachments and hearing submission records if pertinent | What the2001 package contains; not a May 2003 correction on the basis of its title. |
+++| Open | Telephone | Native carrier/operator/PBX records; Keyton source interview; caller/event/leg joins; original zero-duration exhibit and Sept20usage source/release joins; relevant email/native deliveries | Distinguish attempted, routed, accepted and connected events. Earlier154/159, eight/seven, operator/caller and timestamp uncertainties remain. |
++ | Open | Recorder/radar | Raw data/audio completeness, independent decoding, custody, schema/calibration and clock alignment | Existing decoder/label/altitude questions; other-chat work is not completed here by reference. |
++ | Open | Harrit/Millette | Native counts/spectra, calibration/geometry/quantification, authenticated custody and same-specimen heating/phase joins | Conditional published-data calculations are not empirical replication. |
++ | Open | Steel | Original preservation decisions and intake/coupon/yard transfers; field-to-NIST aliases; rationale for WTC7-attributed candidates appearing as unidentified | Actual attribution chain, not an inference of intentional relabeling from names alone. |
++ 
++-The protocol’s all-acquired-pages inspection criterion is unfinished for77pages. Keep that visible rather than treating entity hashes as passing a reading criterion. No new requests, messages, fees or case filings were made. Goal remains active; this is progress, not a finding of global blockage or completion.
+++The protocol’s all-acquired-pages inspection criterion is unfinished for 77 pages. Keep that visible rather than treating entity hashes as passing a reading criterion. No new requests, messages, fees or case filings were made. Goal remains active; this is progress, not a finding of global blockage or completion.
+--- /dev/null
++++ b/OPEN-RECORDS.md
+@@ -0,0 +1,21 @@
++# Carry-forward original-record targets
++
++Existing B129 / PD01–PD04 are retained; this unit creates no legal-fact IDs or replacement master list.
++
++| Priority | Existing dependency or new exact locator | Still required | What the record could test |
++|---|---|---|---|
++| 1 | PD01 | Actual corrected May 2003 QFR; drafts, approval chain, transmittal and receiving acknowledgment | Whether a correction existed, what changed, who knew, and whether it reached its recipient. A2001 final-testimony email or2003 interview memo is not a substitute. |
++| 1 | PD02–PD03 | Signed FAA action/no-action decision; OIG recommendation responses, referral records and accepted closure/return-to-agency dispositions | Whether findings prompted action and why; no inference from an absent search hit or generic follow-up policy. |
++| 1 | F02 AAT-200 and ANE legal references | Actual release/hold instructions, dates, recipients, authority, item-level schedules, productions and receipts | Whether restrictions occurred as reported, their content/scope/legal basis and whether another channel supplied records. |
++| 1 | F03 production dispute | Complete original requests/amendments, HQ-to-ZBW/ZNY/ZID/ZOB tasking, center accident-file inventories, production manifests/receipts | Competing completeness/scope accounts. Four centers named by one note are not four acquired affidavits. |
++| 2 | F01 October 8, 2003 AAT-1 fax | Fax itself, enclosures, recipients, employee universe, status definitions, actual interviews and later status updates | Relationship between Final subject, should-complete wording and actual incomplete/other status descriptions. No personal medical detail is needed to frame this request target. |
++| 2 | F03 after-action/radar examples | Cleveland management memo, Indianapolis outside-contractor radar-coverage review and each relevant SATORI native reconstruction, version/clock/source records | Existing-record evaluations and coverage gaps, not a new invented global report. |
++| 2 | F03 author/date | Native message or routing record establishing full sender, recipient and exact date; handwriting provenance | Authentication of the note, not surname inference from Dana alone. |
++| 2 | F04 1A-1A76869 / M-BSA-00006682 | Finish detailed review of remaining 69 pages; compare components to held sources; follow envelope/FD302/native FAA timeline and recordings | Source custody, draft/final transcript/timeline differences, duplicate components and clocks. Envelope describes a copy, not native recordings. |
++| 2 | F05 source-package association | Finish remaining 8 visual/detailed page reviews; inspect actual retained attachments and hearing submission records if pertinent | What the2001 package contains; not a May 2003 correction on the basis of its title. |
++| Open | Telephone | Native carrier/operator/PBX records; Keyton source interview; caller/event/leg joins; original zero-duration exhibit and Sept20usage source/release joins; relevant email/native deliveries | Distinguish attempted, routed, accepted and connected events. Earlier154/159, eight/seven, operator/caller and timestamp uncertainties remain. |
++| Open | Recorder/radar | Raw data/audio completeness, independent decoding, custody, schema/calibration and clock alignment | Existing decoder/label/altitude questions; other-chat work is not completed here by reference. |
++| Open | Harrit/Millette | Native counts/spectra, calibration/geometry/quantification, authenticated custody and same-specimen heating/phase joins | Conditional published-data calculations are not empirical replication. |
++| Open | Steel | Original preservation decisions and intake/coupon/yard transfers; field-to-NIST aliases; rationale for WTC7-attributed candidates appearing as unidentified | Actual attribution chain, not an inference of intentional relabeling from names alone. |
++
++The protocol’s all-acquired-pages inspection criterion is unfinished for 77 pages. Keep that visible rather than treating entity hashes as passing a reading criterion. No new requests, messages, fees or case filings were made. Goal remains active; this is progress, not a finding of global blockage or completion.
+--- /dev/null
++++ b/PATCH-STATUS.json
+@@ -0,0 +1,7 @@
++{
++  "initial_package_patch": "Failed git apply check; preserved locally as PUBLIC-ADDITION-FAILED-v1.diff. It was not committed/pushed.",
++  "cause": "Initial unified-diff generator omitted no-newline-at-end markers for some authored JSON files. This is a wrapper error, not a source-record discrepancy.",
++  "current_package_patch": "PUBLIC-ADDITION-v2.diff",
++  "prior_reference_correction": "Where REVISION-STATUS.json or CHECKLIST.md names PUBLIC-ADDITION.diff, use PUBLIC-ADDITION-v2.diff. Earlier text remains preserved.",
++  "report_unchanged": "REPORT-v2.md / README.md; no source values or assertions changed for the wrapper repair."
++}
+\ No newline at end of file
+--- /dev/null
++++ b/PUBLICATION-SCOPE.md
+@@ -0,0 +1,7 @@
++# Exact publication scope
++
++This addition contains original public research notes, safe source pins, selected official-document text-layer excerpts, source-integrity code/results, revision drafts/diffs and carry-forward dependencies. The public destination is AveLyra/911-conspiracy-investigation. Standing user authorization covers eligible public-source research and this additive AveLyra publication.
++
++No raw PDF, image, signature, personal roster, personal health/contact detail, private case correspondence/strategy, mailbox content, secret, credential, private-network path or unrelated working-tree file is in the payload. Official NARA links allow independent source inspection; linking to a public source does not authenticate its every historical assertion. Officials’ professional-role descriptions in selected source excerpts remain attributed public-record content. Full source originals, transport headers and extracts remain local.
++
++This scope record is an internal research publication boundary, not evidence of a completed push. Commit/ref/account/actor/all-file remote verification follows separately. No private push, case-spine update, external contact, request, fee, deletion, overwrite or history rewrite.
+--- /dev/null
++++ b/README-addition.diff
+@@ -0,0 +1,78 @@
++--- /dev/null
+++++ b/README.md
++@@ -0,0 +1,75 @@
+++# FAA Commission follow-up: production accounts, release restrictions and unfinished original-record work
+++
+++**New primary-source acquisition, partial comparison; existing B129 / PD01–PD04 remain open.** Five PDFs were obtained from NARA’s public catalog and preserved unchanged with source URLs, access times and SHA-256 pins. This is a first review of three complete records and selected identifying pages in two additional packages. It has **not** recovered the corrected May2003 answer, its delivery receipt, a signed2006 action/no-action decision, or the recommendation-disposition records.
+++
+++The clearest new lead is an FAA telephone-call record attributing restrictions on some releases to headquarters litigation personnel and regional counsel. It also reports substantial production. A separate note reports unproduced materials and insists on the complete accident files. These accounts are retained together; neither has been selected as controlling and their causes remain unresolved. The originals behind the recorded instructions, requests and deliveries are the next useful evidence.
+++
+++## Sources and reading coverage
+++
+++All page numbers below are **one-based PDF pages**. Each F-number maps to an official download, acquisition time, entity hash, page count and reading coverage in [SOURCES.json](SOURCES.json). Exact selected text-layer lines are in [SOURCE-EXCERPTS.json](SOURCE-EXCERPTS.json); OCR errors remain visible. Line numbers are page-local extraction locators, not original agency line numbering.
+++
+++| Pin | Official record | Pages | Actual visual coverage |
+++|---|---|---:|---|
+++| F01 | [AWA673, Final Follow-up Response, NAID7601973](https://catalog.archives.gov/id/7601973) | 2 | Both pages |
+++| F02 | [AWA661, Record of Telephone Calls, NAID7601970](https://catalog.archives.gov/id/7601970) | 1 | Entire page |
+++| F03 | [AWA660, Note—9/11 Commission File, NAID7596181](https://catalog.archives.gov/id/7596181) | 4 | All four pages |
+++| F04 | [AWA658, FAA Issues and Questions Package, NAID7596179](https://catalog.archives.gov/id/7596179) | 72 | Pages1–3 only; remaining69 detailed page reviews pending |
+++| F05 | [AWA586, Email—Final FAA Testimony, NAID7601963](https://catalog.archives.gov/id/7601963) | 11 | Pages1,2,11 only; remaining8 detailed page reviews pending |
+++
+++Total acquired: **five PDF entities,90 pages,3,106,377 bytes**. Actual visual reading:13pages. Text extraction of90pages is not reading90pages. The original protocol’s requirement to inspect every acquired page remains **unmet for77 pages in the added packages**; it has not been waived or redefined as a passing check. Acquisition and partial findings can be reported without claiming that the enlarged review or five-track goal is complete. Several components may repeat material held elsewhere; no independence or unique-evidence count is inferred from the number of PDF files. Raw scans, signatures, personnel/contact/health information and complete extractions stay local; these public notes link to the official sources.
+++
+++## O01 — The FAA call record reports production and restrictions
+++
+++The [AWA661 PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-661-Record-of-Telephone-Calls-9-11-Commission-Followup-.pdf#page=1) is headed Record of Telephone Calls /9/11Commission Follow-up /AEA/ANE/AGL Regions and dated **10-03-03,1500–1600EDT**. Reading that printed date as October3,2003 is an interpretation of its format; the original string is preserved here. It records regional officials’ accounts, not an audio recording of those calls or the underlying legal instructions.
+++
+++- **AEA / New York:** the note says the Commission received a complete accident-file index, copies of all requested information and controller statements; the facility felt all requests had been met. This is affirmative production evidence in the record and must not be omitted. F02,p1,extracted lines7–12.
+++- **AGL:** the note says the Commission did not receive the entire accident file; approximately40 requested pieces were copied and sent for release. It says the facility received guidance from **AAT-200 litigation personnel to release all data concerning UAL93 but nothing else**. It separately reports that the Commission sought field copies of headquarters telecons because headquarters was not releasing them. That latter claim has additional attribution layers: the note-taker records a regional official relaying the Commission’s position. F02,p1,lines13–26.
+++- **ANE / Boston:** the note says interviewers learned about material in the accident file absent from the formal accident package. It lists QA bulletins, lessons learned, sector maps and frequencies supplied, while saying some requested material was not released because of **ANE legal guidance about information on hold by the FBI**. F02,p1,lines30–35.
+++
+++**What this establishes:** a publicly archived contemporaneous-looking FAA record reports particular release restrictions, partial production and claimed compliance. **What it does not establish:** the exact original instruction, its legal basis, what each item contained, whether another channel supplied it, final completeness, unlawful withholding or motive. No signed action/no-action decision is attached. Obtain the actual instructions, itemized inventories and receiving records before inferring their effect.
+++
+++## O02 — A separate note disputes production completeness and request scope
+++
+++The [AWA660 PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf#page=1) is addressed to **Shirley** and ends **Dana** onp3. It has no verified complete sender header, native email metadata or exact date. The phrase **middle of October** appears onp2. October2003 is contextual inference from the2003 request discussion, not an authenticated exact sending date. Do not silently assign a full author identity or treat this scan as proof of email delivery.
+++
+++The note quotes a May7,2003 request, due May14, for all FAA tracking documents including NORAD communications. It cites DOTRequest2,items3,7,16 and19 as additional examples, while expressly retaining the broader original request. It says managers/QA officials at **ZBW,ZNY,ZID,ZOB** reported never having been asked to gather these materials or to produce them from headquarters. These are statements in one note, not four independently acquired center affidavits. F03,p1,lines5–37;p2,lines1–9;p3,lines2–4.
+++
+++Its next steps insist on the complete **accident file**, rather than the **accident package**; all three Boston boxes if those contain relevant material; and all FAA facilities, not merely the four visited. It specifically identifies a Cleveland management memo, the Indianapolis outside-contractor review of the Flight77 radar-coverage lapse, and centers’ SATORI reconstructions. F03,p2,lines11–32. Page4 is a handwritten locator sheet; authorship, date and unclear characters remain unverified. A handwritten recording lead is not proof the recording was made, preserved or supplied.
+++
+++**Preserved difference:** AWA661 records facility-level claimed compliance and some productions; AWA660 describes unproduced materials and rejects a narrower file/package reading. Their dates, speakers, request scopes and later production sequence are not established as identical. We do not smooth them into one account, label one false, or infer concealment. Original requests and amendments, HQ-to-center tasking, actual legal guidance, center inventories, release manifests and receiving acknowledgments would test the relationship.
+++
+++## O03 — “Final” interview follow-up does not demonstrate universal completion
+++
+++The [AWA673 memo](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-673-Memo-Presidential-9-11-Commission-Final-Follow-up-Response.pdf#page=1), dated **November7,2003**, runs from Boston ARTCC,ZBW-1 to Evaluations and Investigations,AAT-20. Its subject says **Presidential9/11 Commission Final Follow-up Response**; its opening says the information **should complete** outstanding requirements under an **October8,2003 AAT-1 faxed memorandum**. It explicitly concerns interviews of employees who worked on9/11. F01,p1,lines5–19.
+++
+++A manual count of the visible entries, retaining all statuses without publishing personal details, is:
+++
+++| Source group | People listed | Entries literally marked Completed | Other status descriptions |
+++|---|---:|---:|---:|
+++| Retired, p1 | 6 | 6 | 0 |
+++| Changed facility/relocated, p1 | 12 | 9 | 3 |
+++| Separate prose entry, p2 | 1 | 0 | 1 |
+++| Leave/logistics table, p2 | 12 | 12 | 0 |
+++| **Listed total** | **31** | **27** | **4** |
+++
+++These are30table rows plus one prose entry. They are not a workforce census or31uncompleted interviews. Nor does Completed establish that a new substantive account was obtained: group headings also say no additional information was provided. The conditional completion wording, Final subject, completed statuses and other statuses are all preserved. This tension warrants checking the referenced directive and later follow-up; it does **not** establish refusal, concealment or a contradiction in a signed2006 disciplinary outcome. The other status details are not republished because they include personal information unnecessary to the research claim.
+++
+++**Next original:** the October8,2003 AAT-1 fax, its recipients and enclosures, underlying interview notes/status definitions and subsequent follow-up. This memo is **not** the corrected May2003 QFR or its receipt.
+++
+++## O04 — Keep recording quantities in their actual units
+++
+++F02 records **over3,088 hours** of information, **6recorders×40channels**, and a **354days-of-manpower** estimate. F03 says the requested collection would not require review of **3000+phone lines**. These are different units and attributed estimates. We have not acquired a channel-by-time inventory, verified the workload estimate, established matched scopes or demonstrated a numerical contradiction. Preserve each value and its source rather than divide or equate them to manufacture one. F02,p1,lines16–24;F03,p2,lines33–40.
+++
+++## O05–O06 — Additional packages acquired; association and detailed review remain limited
+++
+++**F05:** the file titled Final FAA Testimony contains visible email pages dated **September20,2001,2:47PM** and **September24,2001,4:17PM**, referring respectively to Administrator and Deputy Administrator testimony. F05,p1,lines1–2,17–19;p2,lines2–3,18–21. These are different2001 emails, not two versions of a May2003 correction. The PDF includes an ensuing statement headed September25,2001 in its extracted text, but that heading has not yet been visually checked. Attachment icons do not authenticate recovered native Word documents or establish that every referenced attachment survives in this PDF. We have not compared every testimony page or authenticated a final submitted version.
+++
+++**F04:** the72page Issues and Questions Package opens with Flight77 radar/notification questions,p1; a DRAFT-marked communications transcript,p2; and an FD340 evidence-envelope form describing a **copy** of an FAA radar/communications timeline,p3. The form has printed identifiers **1A-1A76869** and **M-BSA-00006682**. Those are concrete custody/locator leads, not raw-audio authentication. Pages4–72 await detailed review. Extracting all text layers does not establish the package’s completeness, internal joins, newness of components, correct clocks or a corrected QFR. Do not count copied transcripts, timelines and their envelope as independent corroboration.
+++
+++## What changes, what remains open
+++
+++This pass moves from search-result titles to five preserved official PDF entities and fully reads three short records. It identifies specific release-instruction, tasking, interview and source-envelope targets. It does **not** close **PD01–PD04**, establish a deliberate cover-up, authenticate an FAA correction’s actual delivery, resolve conflicting accounts, complete a recorder reconstruction or validate a materials/steel hypothesis. A complete enlarged review remains pending77pages. Other tracks retain their previously documented dependencies; [OPEN-RECORDS.md](OPEN-RECORDS.md) carries them forward.
+++
+++A cover-up hypothesis would gain support from authenticated instructions or communications showing knowing suppression or alteration and actual withheld material inconsistent with representations. It would be weakened by contemporaneous complete transmissions, coherent lawful handling records, corrected answers and receiving acknowledgments. Neither account can be chosen from these scans alone. The strongest objection to treating the new material as proof of wrongdoing is that it records **disputed scope and channel-specific restrictions as well as production**, without the actual instructions, final disposition or complete receipt trail.
+++
+++[Method and limitations](METHOD.md) · [Claim ledger](CLAIM-LEDGER.json) · [Checklist](CHECKLIST.md) · [Revision accounting](REVISION-STATUS.json). Source integrity/software checks are separate from manual interpretation and publication verification. Earlier records remain unchanged; no outreach, request, fee, personal-mailbox access, case-spine edit, private push, deletion or history rewrite is authorized by this report.
+--- /dev/null
++++ b/README-v1-v2.diff
+@@ -0,0 +1,86 @@
++--- a/drafts/README-v1.md
+++++ b/README.md
++@@ -1,6 +1,6 @@
++ # FAA Commission follow-up: production accounts, release restrictions and unfinished original-record work
++ 
++-**New primary-source acquisition, partial comparison; existing B129 / PD01–PD04 remain open.** Five PDFs were obtained from NARA’s public catalog and preserved unchanged with source URLs, access times and SHA-256 pins. This is a first review of three complete records and selected identifying pages in two additional packages. It has **not** recovered the corrected May2003 answer, its delivery receipt, a signed2006 action/no-action decision, or the recommendation-disposition records.
+++**New primary-source acquisition, partial comparison; existing B129 / PD01–PD04 remain open.** Five PDFs were obtained from NARA’s public catalog and preserved unchanged with source URLs, access times and SHA-256 pins. This is a first review of three complete records and selected identifying pages in two additional packages. It has **not** recovered the corrected May 2003 answer, its delivery receipt, a signed 2006 action/no-action decision, or the recommendation-disposition records.
++ 
++ The clearest new lead is an FAA telephone-call record attributing restrictions on some releases to headquarters litigation personnel and regional counsel. It also reports substantial production. A separate note reports unproduced materials and insists on the complete accident files. These accounts are retained together; neither has been selected as controlling and their causes remain unresolved. The originals behind the recorded instructions, requests and deliveries are the next useful evidence.
++ 
++@@ -13,34 +13,34 @@
++ | F01 | [AWA673, Final Follow-up Response, NAID7601973](https://catalog.archives.gov/id/7601973) | 2 | Both pages |
++ | F02 | [AWA661, Record of Telephone Calls, NAID7601970](https://catalog.archives.gov/id/7601970) | 1 | Entire page |
++ | F03 | [AWA660, Note—9/11 Commission File, NAID7596181](https://catalog.archives.gov/id/7596181) | 4 | All four pages |
++-| F04 | [AWA658, FAA Issues and Questions Package, NAID7596179](https://catalog.archives.gov/id/7596179) | 72 | Pages1–3 only; remaining69 detailed page reviews pending |
++-| F05 | [AWA586, Email—Final FAA Testimony, NAID7601963](https://catalog.archives.gov/id/7601963) | 11 | Pages1,2,11 only; remaining8 detailed page reviews pending |
+++| F04 | [AWA658, FAA Issues and Questions Package, NAID7596179](https://catalog.archives.gov/id/7596179) | 72 | Pages 1–3 only; remaining 69 detailed page reviews pending |
+++| F05 | [AWA586, Email—Final FAA Testimony, NAID7601963](https://catalog.archives.gov/id/7601963) | 11 | Pages 1, 2, 11 only; remaining 8 detailed page reviews pending |
++ 
++-Total acquired: **five PDF entities,90 pages,3,106,377 bytes**. Actual visual reading:13pages. Text extraction of90pages is not reading90pages. The original protocol’s requirement to inspect every acquired page remains **unmet for77 pages in the added packages**; it has not been waived or redefined as a passing check. Acquisition and partial findings can be reported without claiming that the enlarged review or five-track goal is complete. Several components may repeat material held elsewhere; no independence or unique-evidence count is inferred from the number of PDF files. Raw scans, signatures, personnel/contact/health information and complete extractions stay local; these public notes link to the official sources.
+++Total acquired: **five PDF entities, 90 pages, 3,106,377 bytes**. Actual visual reading:13 pages. Text extraction of 90 pages is not reading 90 pages. The original protocol’s requirement to inspect every acquired page remains **unmet for 77 pages in the added packages**; it has not been waived or redefined as a passing check. Acquisition and partial findings can be reported without claiming that the enlarged review or five-track goal is complete. Several components may repeat material held elsewhere; no independence or unique-evidence count is inferred from the number of PDF files. Raw scans, signatures, personnel/contact/health information and complete extractions stay local; these public notes link to the official sources.
++ 
++ ## O01 — The FAA call record reports production and restrictions
++ 
++-The [AWA661 PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-661-Record-of-Telephone-Calls-9-11-Commission-Followup-.pdf#page=1) is headed Record of Telephone Calls /9/11Commission Follow-up /AEA/ANE/AGL Regions and dated **10-03-03,1500–1600EDT**. Reading that printed date as October3,2003 is an interpretation of its format; the original string is preserved here. It records regional officials’ accounts, not an audio recording of those calls or the underlying legal instructions.
+++The [AWA661 PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-661-Record-of-Telephone-Calls-9-11-Commission-Followup-.pdf#page=1) is headed Record of Telephone Calls /9/11 Commission Follow-up /AEA/ANE/AGL Regions and dated **10-03-03, 1500–1600 EDT**. Reading that printed date as October 3, 2003 is an interpretation of its format; the original string is preserved here. It records regional officials’ accounts, not an audio recording of those calls or the underlying legal instructions.
++ 
++-- **AEA / New York:** the note says the Commission received a complete accident-file index, copies of all requested information and controller statements; the facility felt all requests had been met. This is affirmative production evidence in the record and must not be omitted. F02,p1,extracted lines7–12.
++-- **AGL:** the note says the Commission did not receive the entire accident file; approximately40 requested pieces were copied and sent for release. It says the facility received guidance from **AAT-200 litigation personnel to release all data concerning UAL93 but nothing else**. It separately reports that the Commission sought field copies of headquarters telecons because headquarters was not releasing them. That latter claim has additional attribution layers: the note-taker records a regional official relaying the Commission’s position. F02,p1,lines13–26.
++-- **ANE / Boston:** the note says interviewers learned about material in the accident file absent from the formal accident package. It lists QA bulletins, lessons learned, sector maps and frequencies supplied, while saying some requested material was not released because of **ANE legal guidance about information on hold by the FBI**. F02,p1,lines30–35.
+++- **AEA / New York:** the note says the Commission received a complete accident-file index, copies of all requested information and controller statements; the facility felt all requests had been met. This is affirmative production evidence in the record and must not be omitted. F02, p1,extracted lines7–12.
+++- **AGL:** the note says the Commission did not receive the entire accident file; approximately 40 requested pieces were copied and sent for release. It says the facility received guidance from **AAT-200 litigation personnel to release all data concerning UAL93 but nothing else**. It separately reports that the Commission sought field copies of headquarters telecons because headquarters was not releasing them. That latter claim has additional attribution layers: the note-taker records a regional official relaying the Commission’s position. F02, p1, lines13–26.
+++- **ANE / Boston:** the note says interviewers learned about material in the accident file absent from the formal accident package. It lists QA bulletins, lessons learned, sector maps and frequencies supplied, while saying some requested material was not released because of **ANE legal guidance about information on hold by the FBI**. F02, p1, lines30–35.
++ 
++ **What this establishes:** a publicly archived contemporaneous-looking FAA record reports particular release restrictions, partial production and claimed compliance. **What it does not establish:** the exact original instruction, its legal basis, what each item contained, whether another channel supplied it, final completeness, unlawful withholding or motive. No signed action/no-action decision is attached. Obtain the actual instructions, itemized inventories and receiving records before inferring their effect.
++ 
++ ## O02 — A separate note disputes production completeness and request scope
++ 
++-The [AWA660 PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf#page=1) is addressed to **Shirley** and ends **Dana** onp3. It has no verified complete sender header, native email metadata or exact date. The phrase **middle of October** appears onp2. October2003 is contextual inference from the2003 request discussion, not an authenticated exact sending date. Do not silently assign a full author identity or treat this scan as proof of email delivery.
+++The [AWA660 PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf#page=1) is addressed to **Shirley** and ends **Dana** on p3. It has no verified complete sender header, native email metadata or exact date. The phrase **middle of October** appears on p2. October 2003 is contextual inference from the 2003 request discussion, not an authenticated exact sending date. Do not silently assign a full author identity or treat this scan as proof of email delivery.
++ 
++-The note quotes a May7,2003 request, due May14, for all FAA tracking documents including NORAD communications. It cites DOTRequest2,items3,7,16 and19 as additional examples, while expressly retaining the broader original request. It says managers/QA officials at **ZBW,ZNY,ZID,ZOB** reported never having been asked to gather these materials or to produce them from headquarters. These are statements in one note, not four independently acquired center affidavits. F03,p1,lines5–37;p2,lines1–9;p3,lines2–4.
+++The note quotes a May 7, 2003 request, due May 14, for all FAA tracking documents including NORAD communications. It cites DOT Request 2, items 3, 7, 16 and 19 as additional examples, while expressly retaining the broader original request. It says managers/QA officials at **ZBW, ZNY, ZID, ZOB** reported never having been asked to gather these materials or to produce them from headquarters. These are statements in one note, not four independently acquired center affidavits. F03, p1, lines5–37 ; p2, lines1–9 ; p3, lines2–4.
++ 
++-Its next steps insist on the complete **accident file**, rather than the **accident package**; all three Boston boxes if those contain relevant material; and all FAA facilities, not merely the four visited. It specifically identifies a Cleveland management memo, the Indianapolis outside-contractor review of the Flight77 radar-coverage lapse, and centers’ SATORI reconstructions. F03,p2,lines11–32. Page4 is a handwritten locator sheet; authorship, date and unclear characters remain unverified. A handwritten recording lead is not proof the recording was made, preserved or supplied.
+++Its next steps insist on the complete **accident file**, rather than the **accident package**; all three Boston boxes if those contain relevant material; and all FAA facilities, not merely the four visited. It specifically identifies a Cleveland management memo, the Indianapolis outside-contractor review of the Flight 77 radar-coverage lapse, and centers’ SATORI reconstructions. F03, p2, lines11–32. Page4 is a handwritten locator sheet; authorship, date and unclear characters remain unverified. A handwritten recording lead is not proof the recording was made, preserved or supplied.
++ 
++ **Preserved difference:** AWA661 records facility-level claimed compliance and some productions; AWA660 describes unproduced materials and rejects a narrower file/package reading. Their dates, speakers, request scopes and later production sequence are not established as identical. We do not smooth them into one account, label one false, or infer concealment. Original requests and amendments, HQ-to-center tasking, actual legal guidance, center inventories, release manifests and receiving acknowledgments would test the relationship.
++ 
++ ## O03 — “Final” interview follow-up does not demonstrate universal completion
++ 
++-The [AWA673 memo](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-673-Memo-Presidential-9-11-Commission-Final-Follow-up-Response.pdf#page=1), dated **November7,2003**, runs from Boston ARTCC,ZBW-1 to Evaluations and Investigations,AAT-20. Its subject says **Presidential9/11 Commission Final Follow-up Response**; its opening says the information **should complete** outstanding requirements under an **October8,2003 AAT-1 faxed memorandum**. It explicitly concerns interviews of employees who worked on9/11. F01,p1,lines5–19.
+++The [AWA673 memo](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-673-Memo-Presidential-9-11-Commission-Final-Follow-up-Response.pdf#page=1), dated **November 7, 2003**, runs from Boston ARTCC, ZBW-1 to Evaluations and Investigations, AAT-20. Its subject says **Presidential 9/11 Commission Final Follow-up Response**; its opening says the information **should complete** outstanding requirements under an **October 8, 2003 AAT-1 faxed memorandum**. It explicitly concerns interviews of employees who worked on 9/11. F01, p1, lines5–19.
++ 
++ A manual count of the visible entries, retaining all statuses without publishing personal details, is:
++ 
++@@ -52,23 +52,23 @@
++ | Leave/logistics table, p2 | 12 | 12 | 0 |
++ | **Listed total** | **31** | **27** | **4** |
++ 
++-These are30table rows plus one prose entry. They are not a workforce census or31uncompleted interviews. Nor does Completed establish that a new substantive account was obtained: group headings also say no additional information was provided. The conditional completion wording, Final subject, completed statuses and other statuses are all preserved. This tension warrants checking the referenced directive and later follow-up; it does **not** establish refusal, concealment or a contradiction in a signed2006 disciplinary outcome. The other status details are not republished because they include personal information unnecessary to the research claim.
+++These are 30 table rows plus one prose entry. They are not a workforce census or 31 uncompleted interviews. Nor does Completed establish that a new substantive account was obtained: group headings also say no additional information was provided. The conditional completion wording, Final subject, completed statuses and other statuses are all preserved. This tension warrants checking the referenced directive and later follow-up; it does **not** establish refusal, concealment or a contradiction in a signed 2006 disciplinary outcome. The other status details are not republished because they include personal information unnecessary to the research claim.
++ 
++-**Next original:** the October8,2003 AAT-1 fax, its recipients and enclosures, underlying interview notes/status definitions and subsequent follow-up. This memo is **not** the corrected May2003 QFR or its receipt.
+++**Next original:** the October 8, 2003 AAT-1 fax, its recipients and enclosures, underlying interview notes/status definitions and subsequent follow-up. This memo is **not** the corrected May 2003 QFR or its receipt.
++ 
++ ## O04 — Keep recording quantities in their actual units
++ 
++-F02 records **over3,088 hours** of information, **6recorders×40channels**, and a **354days-of-manpower** estimate. F03 says the requested collection would not require review of **3000+phone lines**. These are different units and attributed estimates. We have not acquired a channel-by-time inventory, verified the workload estimate, established matched scopes or demonstrated a numerical contradiction. Preserve each value and its source rather than divide or equate them to manufacture one. F02,p1,lines16–24;F03,p2,lines33–40.
+++F02 records **over 3,088 hours** of information, **6 recorders × 40 channels**, and a **354 days-of-manpower** estimate. F03 says the requested collection would not require review of **3000+ phone lines**. These are different units and attributed estimates. We have not acquired a channel-by-time inventory, verified the workload estimate, established matched scopes or demonstrated a numerical contradiction. Preserve each value and its source rather than divide or equate them to manufacture one. F02, p1, lines16–24;F03, p2, lines33–40.
++ 
++ ## O05–O06 — Additional packages acquired; association and detailed review remain limited
++ 
++-**F05:** the file titled Final FAA Testimony contains visible email pages dated **September20,2001,2:47PM** and **September24,2001,4:17PM**, referring respectively to Administrator and Deputy Administrator testimony. F05,p1,lines1–2,17–19;p2,lines2–3,18–21. These are different2001 emails, not two versions of a May2003 correction. The PDF includes an ensuing statement headed September25,2001 in its extracted text, but that heading has not yet been visually checked. Attachment icons do not authenticate recovered native Word documents or establish that every referenced attachment survives in this PDF. We have not compared every testimony page or authenticated a final submitted version.
+++**F05:** the file titled Final FAA Testimony contains visible email pages dated **September 20, 2001,2:47PM** and **September 24, 2001,4:17PM**, referring respectively to Administrator and Deputy Administrator testimony. F05, p1, lines1–2,17–19 ; p2, lines2–3,18–21. These are different 2001 emails, not two versions of a May 2003 correction. The PDF includes an ensuing statement headed September 25, 2001 in its extracted text, but that heading has not yet been visually checked. Attachment icons do not authenticate recovered native Word documents or establish that every referenced attachment survives in this PDF. We have not compared every testimony page or authenticated a final submitted version.
++ 
++-**F04:** the72page Issues and Questions Package opens with Flight77 radar/notification questions,p1; a DRAFT-marked communications transcript,p2; and an FD340 evidence-envelope form describing a **copy** of an FAA radar/communications timeline,p3. The form has printed identifiers **1A-1A76869** and **M-BSA-00006682**. Those are concrete custody/locator leads, not raw-audio authentication. Pages4–72 await detailed review. Extracting all text layers does not establish the package’s completeness, internal joins, newness of components, correct clocks or a corrected QFR. Do not count copied transcripts, timelines and their envelope as independent corroboration.
+++**F04:** the 72-page Issues and Questions Package opens with Flight 77 radar/notification questions, p1; a DRAFT-marked communications transcript, p2; and an FD340 evidence-envelope form describing a **copy** of an FAA radar/communications timeline, p3. The form has printed identifiers **1A-1A76869** and **M-BSA-00006682**. Those are concrete custody/locator leads, not raw-audio authentication. Pages 4–72 await detailed review. Extracting all text layers does not establish the package’s completeness, internal joins, newness of components, correct clocks or a corrected QFR. Do not count copied transcripts, timelines and their envelope as independent corroboration.
++ 
++ ## What changes, what remains open
++ 
++-This pass moves from search-result titles to five preserved official PDF entities and fully reads three short records. It identifies specific release-instruction, tasking, interview and source-envelope targets. It does **not** close **PD01–PD04**, establish a deliberate cover-up, authenticate an FAA correction’s actual delivery, resolve conflicting accounts, complete a recorder reconstruction or validate a materials/steel hypothesis. A complete enlarged review remains pending77pages. Other tracks retain their previously documented dependencies; [OPEN-RECORDS.md](OPEN-RECORDS.md) carries them forward.
+++This pass moves from search-result titles to five preserved official PDF entities and fully reads three short records. It identifies specific release-instruction, tasking, interview and source-envelope targets. It does **not** close **PD01–PD04**, establish a deliberate cover-up, authenticate an FAA correction’s actual delivery, resolve conflicting accounts, complete a recorder reconstruction or validate a materials/steel hypothesis. A complete enlarged review remains pending 77 pages. Other tracks retain their previously documented dependencies; [OPEN-RECORDS.md](OPEN-RECORDS.md) carries them forward.
++ 
++ A cover-up hypothesis would gain support from authenticated instructions or communications showing knowing suppression or alteration and actual withheld material inconsistent with representations. It would be weakened by contemporaneous complete transmissions, coherent lawful handling records, corrected answers and receiving acknowledgments. Neither account can be chosen from these scans alone. The strongest objection to treating the new material as proof of wrongdoing is that it records **disputed scope and channel-specific restrictions as well as production**, without the actual instructions, final disposition or complete receipt trail.
++ 
+--- /dev/null
++++ b/README-v2-addition.diff
+@@ -0,0 +1,78 @@
++--- /dev/null
+++++ b/README.md
++@@ -0,0 +1,75 @@
+++# FAA Commission follow-up: production accounts, release restrictions and unfinished original-record work
+++
+++**New primary-source acquisition, partial comparison; existing B129 / PD01–PD04 remain open.** Five PDFs were obtained from NARA’s public catalog and preserved unchanged with source URLs, access times and SHA-256 pins. This is a first review of three complete records and selected identifying pages in two additional packages. It has **not** recovered the corrected May 2003 answer, its delivery receipt, a signed 2006 action/no-action decision, or the recommendation-disposition records.
+++
+++The clearest new lead is an FAA telephone-call record attributing restrictions on some releases to headquarters litigation personnel and regional counsel. It also reports substantial production. A separate note reports unproduced materials and insists on the complete accident files. These accounts are retained together; neither has been selected as controlling and their causes remain unresolved. The originals behind the recorded instructions, requests and deliveries are the next useful evidence.
+++
+++## Sources and reading coverage
+++
+++All page numbers below are **one-based PDF pages**. Each F-number maps to an official download, acquisition time, entity hash, page count and reading coverage in [SOURCES.json](SOURCES.json). Exact selected text-layer lines are in [SOURCE-EXCERPTS.json](SOURCE-EXCERPTS.json); OCR errors remain visible. Line numbers are page-local extraction locators, not original agency line numbering.
+++
+++| Pin | Official record | Pages | Actual visual coverage |
+++|---|---|---:|---|
+++| F01 | [AWA673, Final Follow-up Response, NAID7601973](https://catalog.archives.gov/id/7601973) | 2 | Both pages |
+++| F02 | [AWA661, Record of Telephone Calls, NAID7601970](https://catalog.archives.gov/id/7601970) | 1 | Entire page |
+++| F03 | [AWA660, Note—9/11 Commission File, NAID7596181](https://catalog.archives.gov/id/7596181) | 4 | All four pages |
+++| F04 | [AWA658, FAA Issues and Questions Package, NAID7596179](https://catalog.archives.gov/id/7596179) | 72 | Pages 1–3 only; remaining 69 detailed page reviews pending |
+++| F05 | [AWA586, Email—Final FAA Testimony, NAID7601963](https://catalog.archives.gov/id/7601963) | 11 | Pages 1, 2, 11 only; remaining 8 detailed page reviews pending |
+++
+++Total acquired: **five PDF entities, 90 pages, 3,106,377 bytes**. Actual visual reading:13 pages. Text extraction of 90 pages is not reading 90 pages. The original protocol’s requirement to inspect every acquired page remains **unmet for 77 pages in the added packages**; it has not been waived or redefined as a passing check. Acquisition and partial findings can be reported without claiming that the enlarged review or five-track goal is complete. Several components may repeat material held elsewhere; no independence or unique-evidence count is inferred from the number of PDF files. Raw scans, signatures, personnel/contact/health information and complete extractions stay local; these public notes link to the official sources.
+++
+++## O01 — The FAA call record reports production and restrictions
+++
+++The [AWA661 PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-661-Record-of-Telephone-Calls-9-11-Commission-Followup-.pdf#page=1) is headed Record of Telephone Calls /9/11 Commission Follow-up /AEA/ANE/AGL Regions and dated **10-03-03, 1500–1600 EDT**. Reading that printed date as October 3, 2003 is an interpretation of its format; the original string is preserved here. It records regional officials’ accounts, not an audio recording of those calls or the underlying legal instructions.
+++
+++- **AEA / New York:** the note says the Commission received a complete accident-file index, copies of all requested information and controller statements; the facility felt all requests had been met. This is affirmative production evidence in the record and must not be omitted. F02, p1,extracted lines7–12.
+++- **AGL:** the note says the Commission did not receive the entire accident file; approximately 40 requested pieces were copied and sent for release. It says the facility received guidance from **AAT-200 litigation personnel to release all data concerning UAL93 but nothing else**. It separately reports that the Commission sought field copies of headquarters telecons because headquarters was not releasing them. That latter claim has additional attribution layers: the note-taker records a regional official relaying the Commission’s position. F02, p1, lines13–26.
+++- **ANE / Boston:** the note says interviewers learned about material in the accident file absent from the formal accident package. It lists QA bulletins, lessons learned, sector maps and frequencies supplied, while saying some requested material was not released because of **ANE legal guidance about information on hold by the FBI**. F02, p1, lines30–35.
+++
+++**What this establishes:** a publicly archived contemporaneous-looking FAA record reports particular release restrictions, partial production and claimed compliance. **What it does not establish:** the exact original instruction, its legal basis, what each item contained, whether another channel supplied it, final completeness, unlawful withholding or motive. No signed action/no-action decision is attached. Obtain the actual instructions, itemized inventories and receiving records before inferring their effect.
+++
+++## O02 — A separate note disputes production completeness and request scope
+++
+++The [AWA660 PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf#page=1) is addressed to **Shirley** and ends **Dana** on p3. It has no verified complete sender header, native email metadata or exact date. The phrase **middle of October** appears on p2. October 2003 is contextual inference from the 2003 request discussion, not an authenticated exact sending date. Do not silently assign a full author identity or treat this scan as proof of email delivery.
+++
+++The note quotes a May 7, 2003 request, due May 14, for all FAA tracking documents including NORAD communications. It cites DOT Request 2, items 3, 7, 16 and 19 as additional examples, while expressly retaining the broader original request. It says managers/QA officials at **ZBW, ZNY, ZID, ZOB** reported never having been asked to gather these materials or to produce them from headquarters. These are statements in one note, not four independently acquired center affidavits. F03, p1, lines5–37 ; p2, lines1–9 ; p3, lines2–4.
+++
+++Its next steps insist on the complete **accident file**, rather than the **accident package**; all three Boston boxes if those contain relevant material; and all FAA facilities, not merely the four visited. It specifically identifies a Cleveland management memo, the Indianapolis outside-contractor review of the Flight 77 radar-coverage lapse, and centers’ SATORI reconstructions. F03, p2, lines11–32. Page4 is a handwritten locator sheet; authorship, date and unclear characters remain unverified. A handwritten recording lead is not proof the recording was made, preserved or supplied.
+++
+++**Preserved difference:** AWA661 records facility-level claimed compliance and some productions; AWA660 describes unproduced materials and rejects a narrower file/package reading. Their dates, speakers, request scopes and later production sequence are not established as identical. We do not smooth them into one account, label one false, or infer concealment. Original requests and amendments, HQ-to-center tasking, actual legal guidance, center inventories, release manifests and receiving acknowledgments would test the relationship.
+++
+++## O03 — “Final” interview follow-up does not demonstrate universal completion
+++
+++The [AWA673 memo](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-673-Memo-Presidential-9-11-Commission-Final-Follow-up-Response.pdf#page=1), dated **November 7, 2003**, runs from Boston ARTCC, ZBW-1 to Evaluations and Investigations, AAT-20. Its subject says **Presidential 9/11 Commission Final Follow-up Response**; its opening says the information **should complete** outstanding requirements under an **October 8, 2003 AAT-1 faxed memorandum**. It explicitly concerns interviews of employees who worked on 9/11. F01, p1, lines5–19.
+++
+++A manual count of the visible entries, retaining all statuses without publishing personal details, is:
+++
+++| Source group | People listed | Entries literally marked Completed | Other status descriptions |
+++|---|---:|---:|---:|
+++| Retired, p1 | 6 | 6 | 0 |
+++| Changed facility/relocated, p1 | 12 | 9 | 3 |
+++| Separate prose entry, p2 | 1 | 0 | 1 |
+++| Leave/logistics table, p2 | 12 | 12 | 0 |
+++| **Listed total** | **31** | **27** | **4** |
+++
+++These are 30 table rows plus one prose entry. They are not a workforce census or 31 uncompleted interviews. Nor does Completed establish that a new substantive account was obtained: group headings also say no additional information was provided. The conditional completion wording, Final subject, completed statuses and other statuses are all preserved. This tension warrants checking the referenced directive and later follow-up; it does **not** establish refusal, concealment or a contradiction in a signed 2006 disciplinary outcome. The other status details are not republished because they include personal information unnecessary to the research claim.
+++
+++**Next original:** the October 8, 2003 AAT-1 fax, its recipients and enclosures, underlying interview notes/status definitions and subsequent follow-up. This memo is **not** the corrected May 2003 QFR or its receipt.
+++
+++## O04 — Keep recording quantities in their actual units
+++
+++F02 records **over 3,088 hours** of information, **6 recorders × 40 channels**, and a **354 days-of-manpower** estimate. F03 says the requested collection would not require review of **3000+ phone lines**. These are different units and attributed estimates. We have not acquired a channel-by-time inventory, verified the workload estimate, established matched scopes or demonstrated a numerical contradiction. Preserve each value and its source rather than divide or equate them to manufacture one. F02, p1, lines16–24;F03, p2, lines33–40.
+++
+++## O05–O06 — Additional packages acquired; association and detailed review remain limited
+++
+++**F05:** the file titled Final FAA Testimony contains visible email pages dated **September 20, 2001,2:47PM** and **September 24, 2001,4:17PM**, referring respectively to Administrator and Deputy Administrator testimony. F05, p1, lines1–2,17–19 ; p2, lines2–3,18–21. These are different 2001 emails, not two versions of a May 2003 correction. The PDF includes an ensuing statement headed September 25, 2001 in its extracted text, but that heading has not yet been visually checked. Attachment icons do not authenticate recovered native Word documents or establish that every referenced attachment survives in this PDF. We have not compared every testimony page or authenticated a final submitted version.
+++
+++**F04:** the 72-page Issues and Questions Package opens with Flight 77 radar/notification questions, p1; a DRAFT-marked communications transcript, p2; and an FD340 evidence-envelope form describing a **copy** of an FAA radar/communications timeline, p3. The form has printed identifiers **1A-1A76869** and **M-BSA-00006682**. Those are concrete custody/locator leads, not raw-audio authentication. Pages 4–72 await detailed review. Extracting all text layers does not establish the package’s completeness, internal joins, newness of components, correct clocks or a corrected QFR. Do not count copied transcripts, timelines and their envelope as independent corroboration.
+++
+++## What changes, what remains open
+++
+++This pass moves from search-result titles to five preserved official PDF entities and fully reads three short records. It identifies specific release-instruction, tasking, interview and source-envelope targets. It does **not** close **PD01–PD04**, establish a deliberate cover-up, authenticate an FAA correction’s actual delivery, resolve conflicting accounts, complete a recorder reconstruction or validate a materials/steel hypothesis. A complete enlarged review remains pending 77 pages. Other tracks retain their previously documented dependencies; [OPEN-RECORDS.md](OPEN-RECORDS.md) carries them forward.
+++
+++A cover-up hypothesis would gain support from authenticated instructions or communications showing knowing suppression or alteration and actual withheld material inconsistent with representations. It would be weakened by contemporaneous complete transmissions, coherent lawful handling records, corrected answers and receiving acknowledgments. Neither account can be chosen from these scans alone. The strongest objection to treating the new material as proof of wrongdoing is that it records **disputed scope and channel-specific restrictions as well as production**, without the actual instructions, final disposition or complete receipt trail.
+++
+++[Method and limitations](METHOD.md) · [Claim ledger](CLAIM-LEDGER.json) · [Checklist](CHECKLIST.md) · [Revision accounting](REVISION-STATUS.json). Source integrity/software checks are separate from manual interpretation and publication verification. Earlier records remain unchanged; no outreach, request, fee, personal-mailbox access, case-spine edit, private push, deletion or history rewrite is authorized by this report.
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,75 @@
++# FAA Commission follow-up: production accounts, release restrictions and unfinished original-record work
++
++**New primary-source acquisition, partial comparison; existing B129 / PD01–PD04 remain open.** Five PDFs were obtained from NARA’s public catalog and preserved unchanged with source URLs, access times and SHA-256 pins. This is a first review of three complete records and selected identifying pages in two additional packages. It has **not** recovered the corrected May 2003 answer, its delivery receipt, a signed 2006 action/no-action decision, or the recommendation-disposition records.
++
++The clearest new lead is an FAA telephone-call record attributing restrictions on some releases to headquarters litigation personnel and regional counsel. It also reports substantial production. A separate note reports unproduced materials and insists on the complete accident files. These accounts are retained together; neither has been selected as controlling and their causes remain unresolved. The originals behind the recorded instructions, requests and deliveries are the next useful evidence.
++
++## Sources and reading coverage
++
++All page numbers below are **one-based PDF pages**. Each F-number maps to an official download, acquisition time, entity hash, page count and reading coverage in [SOURCES.json](SOURCES.json). Exact selected text-layer lines are in [SOURCE-EXCERPTS.json](SOURCE-EXCERPTS.json); OCR errors remain visible. Line numbers are page-local extraction locators, not original agency line numbering.
++
++| Pin | Official record | Pages | Actual visual coverage |
++|---|---|---:|---|
++| F01 | [AWA673, Final Follow-up Response, NAID7601973](https://catalog.archives.gov/id/7601973) | 2 | Both pages |
++| F02 | [AWA661, Record of Telephone Calls, NAID7601970](https://catalog.archives.gov/id/7601970) | 1 | Entire page |
++| F03 | [AWA660, Note—9/11 Commission File, NAID7596181](https://catalog.archives.gov/id/7596181) | 4 | All four pages |
++| F04 | [AWA658, FAA Issues and Questions Package, NAID7596179](https://catalog.archives.gov/id/7596179) | 72 | Pages 1–3 only; remaining 69 detailed page reviews pending |
++| F05 | [AWA586, Email—Final FAA Testimony, NAID7601963](https://catalog.archives.gov/id/7601963) | 11 | Pages 1, 2, 11 only; remaining 8 detailed page reviews pending |
++
++Total acquired: **five PDF entities, 90 pages, 3,106,377 bytes**. Actual visual reading:13 pages. Text extraction of 90 pages is not reading 90 pages. The original protocol’s requirement to inspect every acquired page remains **unmet for 77 pages in the added packages**; it has not been waived or redefined as a passing check. Acquisition and partial findings can be reported without claiming that the enlarged review or five-track goal is complete. Several components may repeat material held elsewhere; no independence or unique-evidence count is inferred from the number of PDF files. Raw scans, signatures, personnel/contact/health information and complete extractions stay local; these public notes link to the official sources.
++
++## O01 — The FAA call record reports production and restrictions
++
++The [AWA661 PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-661-Record-of-Telephone-Calls-9-11-Commission-Followup-.pdf#page=1) is headed Record of Telephone Calls /9/11 Commission Follow-up /AEA/ANE/AGL Regions and dated **10-03-03, 1500–1600 EDT**. Reading that printed date as October 3, 2003 is an interpretation of its format; the original string is preserved here. It records regional officials’ accounts, not an audio recording of those calls or the underlying legal instructions.
++
++- **AEA / New York:** the note says the Commission received a complete accident-file index, copies of all requested information and controller statements; the facility felt all requests had been met. This is affirmative production evidence in the record and must not be omitted. F02, p1,extracted lines7–12.
++- **AGL:** the note says the Commission did not receive the entire accident file; approximately 40 requested pieces were copied and sent for release. It says the facility received guidance from **AAT-200 litigation personnel to release all data concerning UAL93 but nothing else**. It separately reports that the Commission sought field copies of headquarters telecons because headquarters was not releasing them. That latter claim has additional attribution layers: the note-taker records a regional official relaying the Commission’s position. F02, p1, lines13–26.
++- **ANE / Boston:** the note says interviewers learned about material in the accident file absent from the formal accident package. It lists QA bulletins, lessons learned, sector maps and frequencies supplied, while saying some requested material was not released because of **ANE legal guidance about information on hold by the FBI**. F02, p1, lines30–35.
++
++**What this establishes:** a publicly archived contemporaneous-looking FAA record reports particular release restrictions, partial production and claimed compliance. **What it does not establish:** the exact original instruction, its legal basis, what each item contained, whether another channel supplied it, final completeness, unlawful withholding or motive. No signed action/no-action decision is attached. Obtain the actual instructions, itemized inventories and receiving records before inferring their effect.
++
++## O02 — A separate note disputes production completeness and request scope
++
++The [AWA660 PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf#page=1) is addressed to **Shirley** and ends **Dana** on p3. It has no verified complete sender header, native email metadata or exact date. The phrase **middle of October** appears on p2. October 2003 is contextual inference from the 2003 request discussion, not an authenticated exact sending date. Do not silently assign a full author identity or treat this scan as proof of email delivery.
++
++The note quotes a May 7, 2003 request, due May 14, for all FAA tracking documents including NORAD communications. It cites DOT Request 2, items 3, 7, 16 and 19 as additional examples, while expressly retaining the broader original request. It says managers/QA officials at **ZBW, ZNY, ZID, ZOB** reported never having been asked to gather these materials or to produce them from headquarters. These are statements in one note, not four independently acquired center affidavits. F03, p1, lines5–37 ; p2, lines1–9 ; p3, lines2–4.
++
++Its next steps insist on the complete **accident file**, rather than the **accident package**; all three Boston boxes if those contain relevant material; and all FAA facilities, not merely the four visited. It specifically identifies a Cleveland management memo, the Indianapolis outside-contractor review of the Flight 77 radar-coverage lapse, and centers’ SATORI reconstructions. F03, p2, lines11–32. Page4 is a handwritten locator sheet; authorship, date and unclear characters remain unverified. A handwritten recording lead is not proof the recording was made, preserved or supplied.
++
++**Preserved difference:** AWA661 records facility-level claimed compliance and some productions; AWA660 describes unproduced materials and rejects a narrower file/package reading. Their dates, speakers, request scopes and later production sequence are not established as identical. We do not smooth them into one account, label one false, or infer concealment. Original requests and amendments, HQ-to-center tasking, actual legal guidance, center inventories, release manifests and receiving acknowledgments would test the relationship.
++
++## O03 — “Final” interview follow-up does not demonstrate universal completion
++
++The [AWA673 memo](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-673-Memo-Presidential-9-11-Commission-Final-Follow-up-Response.pdf#page=1), dated **November 7, 2003**, runs from Boston ARTCC, ZBW-1 to Evaluations and Investigations, AAT-20. Its subject says **Presidential 9/11 Commission Final Follow-up Response**; its opening says the information **should complete** outstanding requirements under an **October 8, 2003 AAT-1 faxed memorandum**. It explicitly concerns interviews of employees who worked on 9/11. F01, p1, lines5–19.
++
++A manual count of the visible entries, retaining all statuses without publishing personal details, is:
++
++| Source group | People listed | Entries literally marked Completed | Other status descriptions |
++|---|---:|---:|---:|
++| Retired, p1 | 6 | 6 | 0 |
++| Changed facility/relocated, p1 | 12 | 9 | 3 |
++| Separate prose entry, p2 | 1 | 0 | 1 |
++| Leave/logistics table, p2 | 12 | 12 | 0 |
++| **Listed total** | **31** | **27** | **4** |
++
++These are 30 table rows plus one prose entry. They are not a workforce census or 31 uncompleted interviews. Nor does Completed establish that a new substantive account was obtained: group headings also say no additional information was provided. The conditional completion wording, Final subject, completed statuses and other statuses are all preserved. This tension warrants checking the referenced directive and later follow-up; it does **not** establish refusal, concealment or a contradiction in a signed 2006 disciplinary outcome. The other status details are not republished because they include personal information unnecessary to the research claim.
++
++**Next original:** the October 8, 2003 AAT-1 fax, its recipients and enclosures, underlying interview notes/status definitions and subsequent follow-up. This memo is **not** the corrected May 2003 QFR or its receipt.
++
++## O04 — Keep recording quantities in their actual units
++
++F02 records **over 3,088 hours** of information, **6 recorders × 40 channels**, and a **354 days-of-manpower** estimate. F03 says the requested collection would not require review of **3000+ phone lines**. These are different units and attributed estimates. We have not acquired a channel-by-time inventory, verified the workload estimate, established matched scopes or demonstrated a numerical contradiction. Preserve each value and its source rather than divide or equate them to manufacture one. F02, p1, lines16–24;F03, p2, lines33–40.
++
++## O05–O06 — Additional packages acquired; association and detailed review remain limited
++
++**F05:** the file titled Final FAA Testimony contains visible email pages dated **September 20, 2001,2:47PM** and **September 24, 2001,4:17PM**, referring respectively to Administrator and Deputy Administrator testimony. F05, p1, lines1–2,17–19 ; p2, lines2–3,18–21. These are different 2001 emails, not two versions of a May 2003 correction. The PDF includes an ensuing statement headed September 25, 2001 in its extracted text, but that heading has not yet been visually checked. Attachment icons do not authenticate recovered native Word documents or establish that every referenced attachment survives in this PDF. We have not compared every testimony page or authenticated a final submitted version.
++
++**F04:** the 72-page Issues and Questions Package opens with Flight 77 radar/notification questions, p1; a DRAFT-marked communications transcript, p2; and an FD340 evidence-envelope form describing a **copy** of an FAA radar/communications timeline, p3. The form has printed identifiers **1A-1A76869** and **M-BSA-00006682**. Those are concrete custody/locator leads, not raw-audio authentication. Pages 4–72 await detailed review. Extracting all text layers does not establish the package’s completeness, internal joins, newness of components, correct clocks or a corrected QFR. Do not count copied transcripts, timelines and their envelope as independent corroboration.
++
++## What changes, what remains open
++
++This pass moves from search-result titles to five preserved official PDF entities and fully reads three short records. It identifies specific release-instruction, tasking, interview and source-envelope targets. It does **not** close **PD01–PD04**, establish a deliberate cover-up, authenticate an FAA correction’s actual delivery, resolve conflicting accounts, complete a recorder reconstruction or validate a materials/steel hypothesis. A complete enlarged review remains pending 77 pages. Other tracks retain their previously documented dependencies; [OPEN-RECORDS.md](OPEN-RECORDS.md) carries them forward.
++
++A cover-up hypothesis would gain support from authenticated instructions or communications showing knowing suppression or alteration and actual withheld material inconsistent with representations. It would be weakened by contemporaneous complete transmissions, coherent lawful handling records, corrected answers and receiving acknowledgments. Neither account can be chosen from these scans alone. The strongest objection to treating the new material as proof of wrongdoing is that it records **disputed scope and channel-specific restrictions as well as production**, without the actual instructions, final disposition or complete receipt trail.
++
++[Method and limitations](METHOD.md) · [Claim ledger](CLAIM-LEDGER.json) · [Checklist](CHECKLIST.md) · [Revision accounting](REVISION-STATUS.json). Source integrity/software checks are separate from manual interpretation and publication verification. Earlier records remain unchanged; no outreach, request, fee, personal-mailbox access, case-spine edit, private push, deletion or history rewrite is authorized by this report.
+--- /dev/null
++++ b/REVISION-STATUS.json
+@@ -0,0 +1,52 @@
++{
++  "created_utc": "2026-10-27T22:57:45.495924+00:00",
++  "status": "First new report; previous version absent. All prior baseline documents unchanged.",
++  "prior_documents": [
++    {
++      "path": "faa-correction-trail-2026-10-26/public-notes-final/README.md",
++      "previous_sha256": "3e6d2f4a84e15687fe1977ec06bd4001c27e2e74298f1cb4aa303aa222463bc7",
++      "current_sha256": "3e6d2f4a84e15687fe1977ec06bd4001c27e2e74298f1cb4aa303aa222463bc7",
++      "unchanged": true,
++      "bytes": 19507
++    },
++    {
++      "path": "faa-postreport-disposition-2026-10-27/public-release-v2/README.md",
++      "previous_sha256": "5ce843aec08f3506bae449d244d0e15fee8d187d318f1afe47af247c8e3a848d",
++      "current_sha256": "5ce843aec08f3506bae449d244d0e15fee8d187d318f1afe47af247c8e3a848d",
++      "unchanged": true,
++      "bytes": 7880
++    },
++    {
++      "path": "faa-postreport-disposition-2026-10-27/public-release-v2/OPEN-RECORDS.md",
++      "previous_sha256": "442ed5ca8f85e457d267da5befeb76dd42338cf3e1d814f17971597f074b22e6",
++      "current_sha256": "442ed5ca8f85e457d267da5befeb76dd42338cf3e1d814f17971597f074b22e6",
++      "unchanged": true,
++      "bytes": 3606
++    },
++    {
++      "path": "faa-original-disposition-roots-2026-10-27/REVIEW.md",
++      "previous_sha256": "c9fee8b26e1fab213f21026a3c51cfbc46e40fed4f3a62787c74a98c678adbb4",
++      "current_sha256": "c9fee8b26e1fab213f21026a3c51cfbc46e40fed4f3a62787c74a98c678adbb4",
++      "unchanged": true,
++      "bytes": 6510
++    },
++    {
++      "path": "original-records-work-plan-2026-10-27/WORK-PLAN.md",
++      "previous_sha256": "d23c01a77bcc468f06faabb13b708df8032a6870586ec539c59edc9e0ae3d7cb",
++      "current_sha256": "d23c01a77bcc468f06faabb13b708df8032a6870586ec539c59edc9e0ae3d7cb",
++      "unchanged": true,
++      "bytes": 16724
++    },
++    {
++      "path": "telephone-operator-custodian-2026-10-27/REPORT-v2.md",
++      "previous_sha256": "cb9d06690249b14661b11876dc3703fa3923fa181945f6e31b99058828215a1c",
++      "current_sha256": "cb9d06690249b14661b11876dc3703fa3923fa181945f6e31b99058828215a1c",
++      "unchanged": true,
++      "bytes": 8767
++    }
++  ],
++  "earlier_protocols": "PROTOCOL.md and PROTOCOL-ADDENDUM.md retained unchanged locally; all-page reading requirement still unmet for77pages.",
++  "diffs": "README-addition.diff and PUBLIC-ADDITION.diff are full additions from absent files; no deletion/replacement of earlier records.",
++  "layout_verification": "Source PDF visual reading coverage recorded independently; no output PDF artifact generated.",
++  "goal": "active"
++}
+--- /dev/null
++++ b/REVISION-UPDATE-v2.json
+@@ -0,0 +1,20 @@
++{
++  "status": "Readability-only refinement of authored prose; raw source text/PDFs unchanged",
++  "prior_native_report": "REPORT.md",
++  "current_native_report": "REPORT-v2.md",
++  "preserved_drafts": [
++    "drafts/CHECKLIST-v1.md",
++    "drafts/METHOD-v1.md",
++    "drafts/OPEN-RECORDS-v1.md",
++    "drafts/README-v1.md"
++  ],
++  "immediate_predecessor_diffs": [
++    "CHECKLIST-v1-v2.diff",
++    "METHOD-v1-v2.diff",
++    "OPEN-RECORDS-v1-v2.diff",
++    "README-v1-v2.diff"
++  ],
++  "full_new_report_diff": "README-v2-addition.diff",
++  "earlier_v1_addition_diff": "README-addition.diff",
++  "unresolved": "77 detailed acquired-page reviews and PD01\u2013PD04 originals remain open; no acceptance criterion waived"
++}
+\ No newline at end of file
+--- /dev/null
++++ b/SOURCE-EXCERPTS.json
+@@ -0,0 +1,645 @@
++{
++  "method": "Existing PDF text layer via PyMuPDF page.get_text().splitlines(); one-based page-local lines. Whitespace/OCR errors retained. Visual reading controls manual transcription; no source wording is silently repaired.",
++  "excerpts": [
++    {
++      "source": "F01",
++      "pdf_page": 1,
++      "extracted_lines": [
++        {
++          "line": 5,
++          "text": "Subject: "
++        },
++        {
++          "line": 6,
++          "text": "INFORMATION: Presidential9/ll Commission Final "
++        },
++        {
++          "line": 7,
++          "text": "Follow-up Response "
++        },
++        {
++          "line": 8,
++          "text": "From: "
++        },
++        {
++          "line": 9,
++          "text": "Air Traffic Manager, Boston ARTCC, ZBW-1 "
++        },
++        {
++          "line": 10,
++          "text": "To: "
++        },
++        {
++          "line": 11,
++          "text": "Manager, Evaluations and Investigations Branch, AAT-20 "
++        },
++        {
++          "line": 12,
++          "text": "Memorandum "
++        },
++        {
++          "line": 13,
++          "text": "Date: "
++        },
++        {
++          "line": 14,
++          "text": "November 7, 2003 "
++        },
++        {
++          "line": 15,
++          "text": "Reply to "
++        },
++        {
++          "line": 16,
++          "text": "Attn. of: "
++        },
++        {
++          "line": 17,
++          "text": "This information should complete our outstanding requirements as outlined in the Faxed Memorandum sent "
++        },
++        {
++          "line": 18,
++          "text": "by the Director of Air Traffic, AAT-1, dated October 8, 2003. This Memorandum will provide you with an "
++        },
++        {
++          "line": 19,
++          "text": "update on the request to interview all employees that worked on September 11, 2001. "
++        }
++      ]
++    },
++    {
++      "source": "F02",
++      "pdf_page": 1,
++      "extracted_lines": [
++        {
++          "line": 7,
++          "text": "Commission has not been to New York TRACON as of yet. The Commission did visit New "
++        },
++        {
++          "line": 8,
++          "text": "York Center and was provided a complete index of all materials in the accident files. The "
++        },
++        {
++          "line": 9,
++          "text": "Commission was given copies of all information requested from those files. The Center felt that "
++        },
++        {
++          "line": 10,
++          "text": "the Commission was confused about the difference between an accident package and an accident "
++        },
++        {
++          "line": 11,
++          "text": "file. The Commission had questions about controller statements and was provided copies of all "
++        },
++        {
++          "line": 12,
++          "text": "controller statements. The facility felt they met all of the Commission requests. "
++        },
++        {
++          "line": 13,
++          "text": "Spoke with Cindy Coram, Acting AGL-505. The Commission did not receive the entire accident "
++        },
++        {
++          "line": 14,
++          "text": "file. They requested approximately 40 pieces of information from the file that were copied and "
++        },
++        {
++          "line": 15,
++          "text": "sent to Shirley Miller for release. One female from the Commission requested cassette tapes for "
++        },
++        {
++          "line": 16,
++          "text": "all of the frequencies and all of the landtines on 9/11. She was advised that there was over 3088 "
++        },
++        {
++          "line": 17,
++          "text": "hours of recorded information (6 recorders, 40 channels each, aU being used). She then requested "
++        },
++        {
++          "line": 18,
++          "text": "the cassette tapes from the accident package and was told they were not releasable from the "
++        },
++        {
++          "line": 19,
++          "text": "package. No request was made for re-recordi.tigs of the cassettes in the accident packages. The "
++        },
++        {
++          "line": 20,
++          "text": "Commissioned indicated they were looking for tapes of tel cons that were being held by FAA "
++        },
++        {
++          "line": 21,
++          "text": "Headquarters that the facility might have recorded. The Commission indicated they had to get "
++        },
++        {
++          "line": 22,
++          "text": "these from the field since FAA Headquarters was not releasing them. The facility received "
++        },
++        {
++          "line": 23,
++          "text": "guidance from AA T -200 litigation personnel to release all data concerning UAL93 but nothing "
++        },
++        {
++          "line": 24,
++          "text": "else: Note: It will take 354 days ofmanpowertomakeaH ofthe recordings requested. The "
++        },
++        {
++          "line": 25,
++          "text": "Commission was told that release of further information could be accomplished making a request "
++        },
++        {
++          "line": 26,
++          "text": "through the proper channels. "
++        }
++      ]
++    },
++    {
++      "source": "F02",
++      "pdf_page": 1,
++      "extracted_lines": [
++        {
++          "line": 30,
++          "text": "information contained in the accident file that was not contained in the formal accident package.·· "
++        },
++        {
++          "line": 31,
++          "text": "They asked Mr. Jones to go through the file and provide copies of all pertinent data. Mr. Jones "
++        },
++        {
++          "line": 32,
++          "text": "provided copies of QA bulletins, facility lessons learned paper, printed sector maps with "
++        },
++        {
++          "line": 33,
++          "text": "frequencies. Some of the data they requested was not released due to guidance from ANE legal "
++        },
++        {
++          "line": 34,
++          "text": "regarding information on hold by the FBI. The Commission was told that release of further "
++        },
++        {
++          "line": 35,
++          "text": "information could be accomplished making a request through the proper channels. Regional "
++        }
++      ]
++    },
++    {
++      "source": "F03",
++      "pdf_page": 1,
++      "extracted_lines": [
++        {
++          "line": 5,
++          "text": "materials that, for whatever reason, were not produced to the Commission. Let me first "
++        },
++        {
++          "line": 6,
++          "text": "review some of the Commission's pertinent document requests, and then address where "
++        },
++        {
++          "line": 7,
++          "text": "we go from here. "
++        },
++        {
++          "line": 8,
++          "text": "I. Requests "
++        },
++        {
++          "line": 9,
++          "text": "On May 7, 2003, the Commission submitted to the Department of Transportation a "
++        },
++        {
++          "line": 10,
++          "text": "request seeking \"All documents related to the FAA's tracking of hijacked airliners on "
++        },
++        {
++          "line": 11,
++          "text": "9/11/01, including without limitation communications with NORAD.\" These documents "
++        },
++        {
++          "line": 12,
++          "text": "were due to the Commission on May 14, 2003. "
++        },
++        {
++          "line": 13,
++          "text": "As the Commission became more familiar with the events of the day and the FAA's air "
++        },
++        {
++          "line": 14,
++          "text": "traffic control system, it submitted additional requests for specific items, including the "
++        },
++        {
++          "line": 15,
++          "text": "following: "
++        },
++        {
++          "line": 16,
++          "text": "( 1) Any document -- whether in draft or final form -- prepared by DOT, the FAA, any of "
++        },
++        {
++          "line": 17,
++          "text": "their components, or any of their employees as after-action or other evaluations ofthe "
++        },
++        {
++          "line": 18,
++          "text": "department's or agency's response to the events of September 11, 2001. This request "
++        },
++        {
++          "line": 19,
++          "text": "includes, but is not limited to, all documents prepared by Steve Brown regarding the ATC "
++        },
++        {
++          "line": 20,
++          "text": "response to 9/11101. (DOT Request No.2, Item 3) "
++        }
++      ]
++    },
++    {
++      "source": "F03",
++      "pdf_page": 1,
++      "extracted_lines": [
++        {
++          "line": 29,
++          "text": "(3) All logs, tapes, and transcripts ofFAA communications with NORAD on the "
++        },
++        {
++          "line": 30,
++          "text": "morning of9/11/01. (DOT Request No.2, Item 16) "
++        },
++        {
++          "line": 31,
++          "text": "( 4) All logs, tapes, and transcripts of internal FAA communications, including "
++        },
++        {
++          "line": 32,
++          "text": "interphone conversations among FAA locations, concerning aircraft presumed to be "
++        },
++        {
++          "line": 33,
++          "text": "hijacked on 9/11/01. (DOT Request No.2, Item 19) "
++        },
++        {
++          "line": 34,
++          "text": "As you can see, these requests specifically targeted after-action reports, interview reports, "
++        },
++        {
++          "line": 35,
++          "text": "tapes of communications with NORAD, and all tapes of internal FAA communications "
++        },
++        {
++          "line": 36,
++          "text": "on 9/11. Inclusion of these specific requests in no way, however, modified our original "
++        },
++        {
++          "line": 37,
++          "text": "request seeking \"all documents\" related to the FAA's tracking of hijacked airliners. "
++        }
++      ]
++    },
++    {
++      "source": "F03",
++      "pdf_page": 2,
++      "extracted_lines": [
++        {
++          "line": 1,
++          "text": "Much to our surprise, the managers and quality assurance officials at each of the four "
++        },
++        {
++          "line": 2,
++          "text": "centers we visited (ZBW, ZNY, ZID, ZOB) told us they were never asked to gather these "
++        },
++        {
++          "line": 3,
++          "text": "materials for the Commission. At each facility we interviewed both the quality assurance "
++        },
++        {
++          "line": 4,
++          "text": "manager and the air traffic manager. We asked what was the available universe of "
++        },
++        {
++          "line": 5,
++          "text": "documents related to 9/11 (i.e., what lines were recorded? what documents were "
++        },
++        {
++          "line": 6,
++          "text": "produced? were they retained?) and whether anyone from headquarters had ever asked "
++        },
++        {
++          "line": 7,
++          "text": "the Centers to produce these materials to the Commission. Across the board the answer "
++        },
++        {
++          "line": 8,
++          "text": "was no. It is now the middle of October -- with our deadline looming - and we are still "
++        },
++        {
++          "line": 9,
++          "text": "mired in the discussion over access to documents requested in May. "
++        }
++      ]
++    },
++    {
++      "source": "F03",
++      "pdf_page": 2,
++      "extracted_lines": [
++        {
++          "line": 11,
++          "text": "Where do we go from here? In short, our original document request stands as written. "
++        },
++        {
++          "line": 12,
++          "text": "The Commission is seeking \"All documents related to the FAA's tracking ofhijacked "
++        },
++        {
++          "line": 13,
++          "text": "airliners on 911110 1.\" Obviously, the FAA is in a better position to know the universe of "
++        },
++        {
++          "line": 14,
++          "text": "materials related to these flights than are we at the Commission. Having said that, here "
++        },
++        {
++          "line": 15,
++          "text": "are some examples of items we are seeking: "
++        },
++        {
++          "line": 16,
++          "text": "(1) \"Accident File\" versus \"Accident Package\": The Commission hereby requests the "
++        },
++        {
++          "line": 17,
++          "text": "complete \"accident file\" --not the \"accident package\" --related to the events of 9/11. "
++        },
++        {
++          "line": 18,
++          "text": "That means that if Boston has three boxes of materials related to 9/11, we want "
++        },
++        {
++          "line": 19,
++          "text": "everything in all three boxes. Moreover, this request applies to all FAA air traffic "
++        },
++        {
++          "line": 20,
++          "text": "facilities, not just the four centers we visited. "
++        },
++        {
++          "line": 21,
++          "text": "(2) After Action Reports: The Commission hereby requests any document that "
++        },
++        {
++          "line": 22,
++          "text": "summarizes, describes, evaluates or assesses the FAA's performance in tracking and "
++        },
++        {
++          "line": 23,
++          "text": "responding to the hijackings of 9/11. So, for example, the document that the Air Traffic "
++        },
++        {
++          "line": 24,
++          "text": "Manager at Cleveland wrote and sent to the Great Lakes Regional Office would clearly "
++        },
++        {
++          "line": 25,
++          "text": "fall under this heading. Similarly, any materials related to the outside contractor the Air "
++        },
++        {
++          "line": 26,
++          "text": "Traffic Manger at Indianapolis hired to assess the lapse of radar coverage tracking Flight "
++        },
++        {
++          "line": 27,
++          "text": "77 would qualify. Finally, the Satoris that each center produced reconstructing the "
++        },
++        {
++          "line": 28,
++          "text": "hijacked flights would clearly fall under this category. "
++        },
++        {
++          "line": 29,
++          "text": "As I have emphasized before, this request is not limited to a global comprehensive report "
++        },
++        {
++          "line": 30,
++          "text": "that I understand the air traffic division never produced. We are looking for anything that "
++        },
++        {
++          "line": 31,
++          "text": "was produced by anyone within the FAA evaluating the air traffic performance that "
++        },
++        {
++          "line": 32,
++          "text": "day. "
++        },
++        {
++          "line": 33,
++          "text": "(3) Tapes: The Commission hereby requests any and all tapes related to the FAA's "
++        },
++        {
++          "line": 34,
++          "text": "tracking of the hijacked airliners on 9/11101. That means all communications by FAA air "
++        },
++        {
++          "line": 35,
++          "text": "traffic mangers and other personnel to others within the FAA, in the military, and at the "
++        },
++        {
++          "line": 36,
++          "text": "airlines. Having familiarized ourselves with these facilities and the people involved, I am "
++        },
++        {
++          "line": 37,
++          "text": "confident this is an achievable request that does not entail the review of 3000+ phone "
++        },
++        {
++          "line": 38,
++          "text": "lines. I suggest that we have a meeting or conference call ASAP with the entities "
++        },
++        {
++          "line": 39,
++          "text": "involved in this enterprise, and specifically go through the recording tasks at each "
++        },
++        {
++          "line": 40,
++          "text": "facility. "
++        }
++      ]
++    },
++    {
++      "source": "F03",
++      "pdf_page": 3,
++      "extracted_lines": [
++        {
++          "line": 2,
++          "text": "Finally, let me reiterate that the aforementioned three categories are merely examples of "
++        },
++        {
++          "line": 3,
++          "text": "responsive evidence that the Commission is lacking. I look forward to working with you "
++        },
++        {
++          "line": 4,
++          "text": "to expeditiously resolve these matters. Dana. "
++        }
++      ]
++    },
++    {
++      "source": "F04",
++      "pdf_page": 1,
++      "extracted_lines": [
++        {
++          "line": 19,
++          "text": "10. When did you lose the transponder signal from Flight 77? "
++        },
++        {
++          "line": 20,
++          "text": "11. Could you still \"see\" and track the aircraft on radar after the transponder was turned off? "
++        },
++        {
++          "line": 21,
++          "text": "How/explain? "
++        },
++        {
++          "line": 22,
++          "text": ". Is the radar return based upon altitude? "
++        },
++        {
++          "line": 23,
++          "text": "Did you lose the aircraft from the radar? "
++        },
++        {
++          "line": 24,
++          "text": "Ifso, when? "
++        },
++        {
++          "line": 25,
++          "text": "12. When did the ATC determine that Flight 77 was hijacked? "
++        },
++        {
++          "line": 26,
++          "text": "13. What notifications were made when it was determined that Flight 77 was hijacked? "
++        },
++        {
++          "line": 27,
++          "text": "14. Why did Flight 77 make the type of approach that it did? "
++        },
++        {
++          "line": 28,
++          "text": "15. How did Flight 77 navigate? "
++        }
++      ]
++    },
++    {
++      "source": "F04",
++      "pdf_page": 2,
++      "extracted_lines": [
++        {
++          "line": 22,
++          "text": "DRAFT "
++        },
++        {
++          "line": 23,
++          "text": "american twenty four ninety three go ahead "
++        },
++        {
++          "line": 24,
++          "text": "yeah we uh sent a message to dispatch to have him come up on "
++        },
++        {
++          "line": 25,
++          "text": "twenty twenty seven is that what you want em to do "
++        },
++        {
++          "line": 26,
++          "text": "yeah we had em on wesl side of our airspace and they went "
++        },
++        {
++          "line": 27,
++          "text": "into coast and uh don't have a track on em and now he's not "
++        },
++        {
++          "line": 28,
++          "text": "talking to me so we don't know exactly what happened to him "
++        },
++        {
++          "line": 29,
++          "text": "we're trying to get a hold of him we also contacted your "
++        },
++        {
++          "line": 30,
++          "text": "company so thanks for the help "
++        },
++        {
++          "line": 31,
++          "text": "alright "
++        }
++      ]
++    },
++    {
++      "source": "F05",
++      "pdf_page": 1,
++      "extracted_lines": [
++        {
++          "line": 1,
++          "text": "Date: "
++        },
++        {
++          "line": 2,
++          "text": "09/20/2001 2:47PM "
++        }
++      ]
++    },
++    {
++      "source": "F05",
++      "pdf_page": 1,
++      "extracted_lines": [
++        {
++          "line": 17,
++          "text": "Subject: Final FAA Testimony "
++        },
++        {
++          "line": 18,
++          "text": "All--This is the final, cleared draft of the testimony for the Administrator for tomorrow's "
++        },
++        {
++          "line": 19,
++          "text": "hearing. Please do not release until after 10:00 am, the time of the hearing. "
++        }
++      ]
++    },
++    {
++      "source": "F05",
++      "pdf_page": 2,
++      "extracted_lines": [
++        {
++          "line": 2,
++          "text": "Date: "
++        },
++        {
++          "line": 3,
++          "text": "09/24/2001 4:17 PM "
++        }
++      ]
++    },
++    {
++      "source": "F05",
++      "pdf_page": 2,
++      "extracted_lines": [
++        {
++          "line": 18,
++          "text": "Subject:Final FAA Testimony "
++        },
++        {
++          "line": 19,
++          "text": "All, "
++        },
++        {
++          "line": 20,
++          "text": "This is the final, cleared draft of the testimony for the Deputy Administrator for tomorrow's "
++        },
++        {
++          "line": 21,
++          "text": "hearing. Please do not release until after 2:30 p.m., the time of the hearing. "
++        }
++      ]
++    }
++  ]
++}
+--- /dev/null
++++ b/SOURCE-VERIFICATION.json
+@@ -0,0 +1,385 @@
++{
++  "verified_utc": "2026-10-27T22:59:14.782798+00:00",
++  "fitz_version": "1.27.2.2",
++  "scope": "Five PDF entities/page-text hashes and selected exact text-layer lines; not truth/authorship, full human reading, historical completeness/receipt or five-track completion",
++  "pdf_entities": 5,
++  "pdf_pages": 90,
++  "bytes": 3106377,
++  "checks": [
++    {
++      "id": "F01",
++      "filename": "NARA-7601973-AWA673.pdf",
++      "actual": {
++        "bytes": 67185,
++        "sha256": "d40c227a9210a2fb3753204bdfe1554f913dedb2d0b47986c22c8712b6c13331",
++        "pdf_pages": 2,
++        "page_text_sha256": [
++          "057c53cf7118877985ab285fd874c78fa570cb71261c4f9292ddfffdb4f38b5d",
++          "dd12f594783b7fc975ec85559665eb582f4f10fb1de4cf7ea84393aff3ba5d38"
++        ]
++      },
++      "expected": {
++        "bytes": 67185,
++        "sha256": "d40c227a9210a2fb3753204bdfe1554f913dedb2d0b47986c22c8712b6c13331",
++        "pdf_pages": 2,
++        "page_text_sha256": [
++          "057c53cf7118877985ab285fd874c78fa570cb71261c4f9292ddfffdb4f38b5d",
++          "dd12f594783b7fc975ec85559665eb582f4f10fb1de4cf7ea84393aff3ba5d38"
++        ]
++      },
++      "passed": true
++    },
++    {
++      "id": "F02",
++      "filename": "NARA-7601970-AWA661.pdf",
++      "actual": {
++        "bytes": 80293,
++        "sha256": "e54e578725cfef6bca5a340aade2bbfb590f1bd66f30896906b61a0268cfb60b",
++        "pdf_pages": 1,
++        "page_text_sha256": [
++          "c14008458e753bdd591602997e8a0710a88aee118c9510c312985804b836fa22"
++        ]
++      },
++      "expected": {
++        "bytes": 80293,
++        "sha256": "e54e578725cfef6bca5a340aade2bbfb590f1bd66f30896906b61a0268cfb60b",
++        "pdf_pages": 1,
++        "page_text_sha256": [
++          "c14008458e753bdd591602997e8a0710a88aee118c9510c312985804b836fa22"
++        ]
++      },
++      "passed": true
++    },
++    {
++      "id": "F03",
++      "filename": "NARA-7596181-AWA660.pdf",
++      "actual": {
++        "bytes": 171713,
++        "sha256": "45bb64401dbaa1d7c037939f9ab7c7b3464f4ba1e1c71df3900b452e51d052b8",
++        "pdf_pages": 4,
++        "page_text_sha256": [
++          "4c1ee165c1e0c42718614e392eb9ff630d9a2be326b74f654011d89e99c2f423",
++          "18b5a01954b40ddb94a5c9ef4a413002a5d062721b547615af707d31239abc5f",
++          "3e19f1d7c16c22bef597e9f6ae28bdb62077f9a9b93c16847d38fbe8d600d82e",
++          "3b362f9d32f66e780ebc4fd8c31ca6dfa6432239e802d8230422e0ca6c5c7e45"
++        ]
++      },
++      "expected": {
++        "bytes": 171713,
++        "sha256": "45bb64401dbaa1d7c037939f9ab7c7b3464f4ba1e1c71df3900b452e51d052b8",
++        "pdf_pages": 4,
++        "page_text_sha256": [
++          "4c1ee165c1e0c42718614e392eb9ff630d9a2be326b74f654011d89e99c2f423",
++          "18b5a01954b40ddb94a5c9ef4a413002a5d062721b547615af707d31239abc5f",
++          "3e19f1d7c16c22bef597e9f6ae28bdb62077f9a9b93c16847d38fbe8d600d82e",
++          "3b362f9d32f66e780ebc4fd8c31ca6dfa6432239e802d8230422e0ca6c5c7e45"
++        ]
++      },
++      "passed": true
++    },
++    {
++      "id": "F04",
++      "filename": "NARA-7596179-AWA658.pdf",
++      "actual": {
++        "bytes": 2409363,
++        "sha256": "27580b551698194522fb21d7896964b676d5921b63c7fd05e64b9ae8559c507d",
++        "pdf_pages": 72,
++        "page_text_sha256": [
++          "44c0d2f0bb1296e4e29cfd4e0ee2c9bccfd1e308fc2893bec7e6a82833615501",
++          "4da580cead1b516c66df5b3a2c5256abb3614aa17af56516d9b5c28b6d6b53d3",
++          "6387c556432a70def6c81dbc67537bbde885e3ca2677fd093374ff4e0111fa4e",
++          "76615c2dd2e795995d8a0f17fcafa2dda14767dfe30bf710e2a09b24f4f40b81",
++          "f88404bcdf1f24766fe396cadae9a01ad13c6ee7e88a350a87703965f571da3f",
++          "2fa75b8ecef62ce7794c052cb04829d439ca5bfd2ab88fd6fd4d5fe512d1813b",
++          "be4bcd66449753e26d93500c883d474630b0d920f09c5dad0e076996f422b3ab",
++          "40c24b2f7d447fd19ad18f763f77811772b75df4fc2c14b44e7dba017cbbf09b",
++          "66d17694843a71e86e5fc709b06a70bfb0b395b1facfac1094cefd93230dcc52",
++          "07aae2efd8c6af9c423e053256845dbbc92565678c5a385ad37d10661b76be10",
++          "e411309ead09a3c503f6f135e4352b196a74e81a00edf0312bfeab30bd6c6aec",
++          "e97ea1baa016a7d23a187433e67d21bfb38b2ee5d04fc214c8a6c11fb4e645d2",
++          "64d7c331875592da7b679e4b7c746501557216add2ca361206c9e8a31c5252e5",
++          "87e99670832b47fe7adbc528c7fe87714755511fe5fac44831323ef9087244e7",
++          "cc319fc11c9f1cd1215b2097791585eb0ae3a6fbada69536ada23238a1c04977",
++          "425aa20e052ae23be13c270af7cfb85aecaa11c84e177a0327aed8d13ff45380",
++          "68883888d5706d6a379b75add7504d638dacd06efdcb837ae50d1ba73d249ca0",
++          "69c8e98e9e23cc10bd5d3c047e36ad4cf416495c9387b34180ad785a5cffafb5",
++          "c6d754e1c21871e81c9454c18ccdd32a72ad265c5fcd6794e7a403682446a643",
++          "858a455ffe23bbc145f45747bfa649937f32683d6d82bf6430669c6e4b5bc5a8",
++          "73ff2b1278534232c3a546ea9fde0c8dcd95ab6b57bc0e56363575585f8ccd80",
++          "356fd5473522f4db9d7d895c7a59de481ccffab718e5979898775db4a9a4a454",
++          "9d27ffb6c2091f94c4e2e083cb6e96485c6cac77cf47b2047deff2bbc566ef41",
++          "86520572035d84460c21271326ee4d462539a63d4e2c95760d921b34b2669899",
++          "2ce06f3a6023baf37b6deee1b11ef77b3fd20a01eefe6d69404d7761ec569159",
++          "9d072cc1c68a8e6cb808584211f3705978d56afdc40a7dec18cf6a2bc7c5ca57",
++          "9aea6ccce8ef70cc842d8a92fe2ae1c10201e09e0fe155f3872d2e9ae4853482",
++          "3c246ee07e2b22e18d7bfd15aff5f624ada6fb532d65adee90f30bda21497ca4",
++          "3f5403038921c6012462d2946e8a6d69b81b51c10e779f569c9574805aefd59e",
++          "ee2c2a50bfbe5a1deae0621a67ae3b375155c02437818ffd05e7b20b3bc62537",
++          "e7414b799dabeefa319630655df5d6aa9685fc3a061e51500441de450c851cba",
++          "a0bdf1430f2448c1b6f4fed51c49420c42ac0f11cd30fcf17cca2bbad4700578",
++          "304962ce4b0bc3c6ed4251b6df63fb2f1292e28477188ef95fa923de894c1587",
++          "e0e3c4ea46dafe306424da243f63818217915043ccb3eb7cb5cea54109d92fb4",
++          "1bfd8372d4a336f9809b1bbea53d3c1d4c0ddcee2b69583998b2005e3d73353e",
++          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++          "99bc879a43d08dd62b67a2acb7001f5575bd8eae175eee85d74e653a3ecb59b3",
++          "0faf9d038344e8393347d589c81af8580ea531ea3f0e482ecce73d34ab466942",
++          "42ffcb2922ac9e145b41ef54a40afcb67be07f4edfae383bb119a9d30745d403",
++          "1b5f7bdc319506c95fb4d3fded9511c6e3cb19fdf0670fb9be871cd459735360",
++          "677fe47de64ed929a5c828268267535b4132525a5458bf9b5300781c2c67e0a7",
++          "72389fc0b8e6669b04772f04556bff8bac57a1e76feb1ffdd1e525b9b893b3d9",
++          "e083ba680d47bcf162fc365bab3c8431881262630c11313fd14aab195edb2c24",
++          "866927aad7a6a9b93f59ff921811119b0bb2c6d122209b90fc1f5c5ee8910eb7",
++          "2140dc90376d318aa8f86732211bb22b41878f1ab4c1b0953c77b9360ff90922",
++          "b8281d9b8b6da2e12535179850123f2fcfbc38899923a764c096075f2846b193",
++          "6d14b5175ef6c12621f2bb41057db85bd42911684d1be0e97ef1b9330e09b05a",
++          "bbbede65c30aaa6a0cc4b9a19818b9f9131bf3e930a8bd324a286a8725a79654",
++          "3d7399b775b92efd5e0d0b3ae6c1b5f70a53a9dc67eda3985c69d239da4f2c00",
++          "6773b8c2614e7969f27b2dd5f94ba0783f7de49f8dd65e0e4239354ade38e430",
++          "0c753efdef41e3714eb18f603abc09f945f5b8f5113000ad2c978c755b93337b",
++          "6ef3840d5e09290d7e200e2729676842c842ecc50cb5cdbc8c81ea90fe2d9d54",
++          "feff0f5dc8a89e52cf636bfb7f65c9dee7052a849d31e0f1bb00a3204636232e",
++          "3abac2d7f692ef67eb91a37881ef7459e895f979f9ef10ca7b5971d3c0ed6970",
++          "f14d3873c440c31b85d0a60ea0015ba61bb7d69ff3f22000d48705b4a6afb582",
++          "11a2ee898f293f708a96c21a2109691e9bf63eff00111d7988daf66a59d26421",
++          "0a5dfe0a02ce4c33e839dd96be2239db1890e3c74a3414f3e1a33fe736bff13c",
++          "1a172fa9f01508fab02bbb4277c15c66b8b019696496021a2e778331d9813c3c",
++          "38c39732143e13061e190b924e0beb8ebdec1f48f6d437bda4aa6d1489e880f3",
++          "996d923861bd1f75a9c4cdfd3ec6921acea3920a86e0daa603c23e0a7beec88d",
++          "12f6a848f535db6b4489951d383957894bfcf873b201598c4a791c6050fd4c35",
++          "a36a75622fd84b0097053d867edfdeb2e92032ffb18597b950f8027b8f8ded7e",
++          "fac38d26fba8a19de7bee3d3d9c8d08ce22de1f00e6b159433344ffb32fa53ef",
++          "52415271d4d45c2e8a5d90c6e2e3de64acd7202e4d200a6a64bc6c4fcfa902cc",
++          "b3056a275dfa117e87e63886fff65108892571f6dc63b31282521d0846350916",
++          "165e2ce07bae889ae6038afe50051ea7b37c531eb1d8dd929f0c325b99ab76a0",
++          "5d6b52c1c24521e38c691e9c9c5f82b00ff39f7597f3d8f56d54414445ba63bb",
++          "245c23a347716930145c5c7c9e243b86ac059a29f0303b110cd3b7aaa8fe8f32",
++          "964d9bf5d5a4f4675169fba3ed4f175c60a6eb7356f1948a7aa2ab023f9a5d86",
++          "06b8d96715bc334322b709b7bf1241075acf950122b190aeb370999023660893",
++          "109d7537dafe47f9720d60f0dfd2d6a27a5b482978b86a415f57e7eb34d2df7f",
++          "098ae9fe24c88017e0180b08efdfd2a611bf9e5133360d19d5d0deda9e8cac19"
++        ]
++      },
++      "expected": {
++        "bytes": 2409363,
++        "sha256": "27580b551698194522fb21d7896964b676d5921b63c7fd05e64b9ae8559c507d",
++        "pdf_pages": 72,
++        "page_text_sha256": [
++          "44c0d2f0bb1296e4e29cfd4e0ee2c9bccfd1e308fc2893bec7e6a82833615501",
++          "4da580cead1b516c66df5b3a2c5256abb3614aa17af56516d9b5c28b6d6b53d3",
++          "6387c556432a70def6c81dbc67537bbde885e3ca2677fd093374ff4e0111fa4e",
++          "76615c2dd2e795995d8a0f17fcafa2dda14767dfe30bf710e2a09b24f4f40b81",
++          "f88404bcdf1f24766fe396cadae9a01ad13c6ee7e88a350a87703965f571da3f",
++          "2fa75b8ecef62ce7794c052cb04829d439ca5bfd2ab88fd6fd4d5fe512d1813b",
++          "be4bcd66449753e26d93500c883d474630b0d920f09c5dad0e076996f422b3ab",
++          "40c24b2f7d447fd19ad18f763f77811772b75df4fc2c14b44e7dba017cbbf09b",
++          "66d17694843a71e86e5fc709b06a70bfb0b395b1facfac1094cefd93230dcc52",
++          "07aae2efd8c6af9c423e053256845dbbc92565678c5a385ad37d10661b76be10",
++          "e411309ead09a3c503f6f135e4352b196a74e81a00edf0312bfeab30bd6c6aec",
++          "e97ea1baa016a7d23a187433e67d21bfb38b2ee5d04fc214c8a6c11fb4e645d2",
++          "64d7c331875592da7b679e4b7c746501557216add2ca361206c9e8a31c5252e5",
++          "87e99670832b47fe7adbc528c7fe87714755511fe5fac44831323ef9087244e7",
++          "cc319fc11c9f1cd1215b2097791585eb0ae3a6fbada69536ada23238a1c04977",
++          "425aa20e052ae23be13c270af7cfb85aecaa11c84e177a0327aed8d13ff45380",
++          "68883888d5706d6a379b75add7504d638dacd06efdcb837ae50d1ba73d249ca0",
++          "69c8e98e9e23cc10bd5d3c047e36ad4cf416495c9387b34180ad785a5cffafb5",
++          "c6d754e1c21871e81c9454c18ccdd32a72ad265c5fcd6794e7a403682446a643",
++          "858a455ffe23bbc145f45747bfa649937f32683d6d82bf6430669c6e4b5bc5a8",
++          "73ff2b1278534232c3a546ea9fde0c8dcd95ab6b57bc0e56363575585f8ccd80",
++          "356fd5473522f4db9d7d895c7a59de481ccffab718e5979898775db4a9a4a454",
++          "9d27ffb6c2091f94c4e2e083cb6e96485c6cac77cf47b2047deff2bbc566ef41",
++          "86520572035d84460c21271326ee4d462539a63d4e2c95760d921b34b2669899",
++          "2ce06f3a6023baf37b6deee1b11ef77b3fd20a01eefe6d69404d7761ec569159",
++          "9d072cc1c68a8e6cb808584211f3705978d56afdc40a7dec18cf6a2bc7c5ca57",
++          "9aea6ccce8ef70cc842d8a92fe2ae1c10201e09e0fe155f3872d2e9ae4853482",
++          "3c246ee07e2b22e18d7bfd15aff5f624ada6fb532d65adee90f30bda21497ca4",
++          "3f5403038921c6012462d2946e8a6d69b81b51c10e779f569c9574805aefd59e",
++          "ee2c2a50bfbe5a1deae0621a67ae3b375155c02437818ffd05e7b20b3bc62537",
++          "e7414b799dabeefa319630655df5d6aa9685fc3a061e51500441de450c851cba",
++          "a0bdf1430f2448c1b6f4fed51c49420c42ac0f11cd30fcf17cca2bbad4700578",
++          "304962ce4b0bc3c6ed4251b6df63fb2f1292e28477188ef95fa923de894c1587",
++          "e0e3c4ea46dafe306424da243f63818217915043ccb3eb7cb5cea54109d92fb4",
++          "1bfd8372d4a336f9809b1bbea53d3c1d4c0ddcee2b69583998b2005e3d73353e",
++          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++          "99bc879a43d08dd62b67a2acb7001f5575bd8eae175eee85d74e653a3ecb59b3",
++          "0faf9d038344e8393347d589c81af8580ea531ea3f0e482ecce73d34ab466942",
++          "42ffcb2922ac9e145b41ef54a40afcb67be07f4edfae383bb119a9d30745d403",
++          "1b5f7bdc319506c95fb4d3fded9511c6e3cb19fdf0670fb9be871cd459735360",
++          "677fe47de64ed929a5c828268267535b4132525a5458bf9b5300781c2c67e0a7",
++          "72389fc0b8e6669b04772f04556bff8bac57a1e76feb1ffdd1e525b9b893b3d9",
++          "e083ba680d47bcf162fc365bab3c8431881262630c11313fd14aab195edb2c24",
++          "866927aad7a6a9b93f59ff921811119b0bb2c6d122209b90fc1f5c5ee8910eb7",
++          "2140dc90376d318aa8f86732211bb22b41878f1ab4c1b0953c77b9360ff90922",
++          "b8281d9b8b6da2e12535179850123f2fcfbc38899923a764c096075f2846b193",
++          "6d14b5175ef6c12621f2bb41057db85bd42911684d1be0e97ef1b9330e09b05a",
++          "bbbede65c30aaa6a0cc4b9a19818b9f9131bf3e930a8bd324a286a8725a79654",
++          "3d7399b775b92efd5e0d0b3ae6c1b5f70a53a9dc67eda3985c69d239da4f2c00",
++          "6773b8c2614e7969f27b2dd5f94ba0783f7de49f8dd65e0e4239354ade38e430",
++          "0c753efdef41e3714eb18f603abc09f945f5b8f5113000ad2c978c755b93337b",
++          "6ef3840d5e09290d7e200e2729676842c842ecc50cb5cdbc8c81ea90fe2d9d54",
++          "feff0f5dc8a89e52cf636bfb7f65c9dee7052a849d31e0f1bb00a3204636232e",
++          "3abac2d7f692ef67eb91a37881ef7459e895f979f9ef10ca7b5971d3c0ed6970",
++          "f14d3873c440c31b85d0a60ea0015ba61bb7d69ff3f22000d48705b4a6afb582",
++          "11a2ee898f293f708a96c21a2109691e9bf63eff00111d7988daf66a59d26421",
++          "0a5dfe0a02ce4c33e839dd96be2239db1890e3c74a3414f3e1a33fe736bff13c",
++          "1a172fa9f01508fab02bbb4277c15c66b8b019696496021a2e778331d9813c3c",
++          "38c39732143e13061e190b924e0beb8ebdec1f48f6d437bda4aa6d1489e880f3",
++          "996d923861bd1f75a9c4cdfd3ec6921acea3920a86e0daa603c23e0a7beec88d",
++          "12f6a848f535db6b4489951d383957894bfcf873b201598c4a791c6050fd4c35",
++          "a36a75622fd84b0097053d867edfdeb2e92032ffb18597b950f8027b8f8ded7e",
++          "fac38d26fba8a19de7bee3d3d9c8d08ce22de1f00e6b159433344ffb32fa53ef",
++          "52415271d4d45c2e8a5d90c6e2e3de64acd7202e4d200a6a64bc6c4fcfa902cc",
++          "b3056a275dfa117e87e63886fff65108892571f6dc63b31282521d0846350916",
++          "165e2ce07bae889ae6038afe50051ea7b37c531eb1d8dd929f0c325b99ab76a0",
++          "5d6b52c1c24521e38c691e9c9c5f82b00ff39f7597f3d8f56d54414445ba63bb",
++          "245c23a347716930145c5c7c9e243b86ac059a29f0303b110cd3b7aaa8fe8f32",
++          "964d9bf5d5a4f4675169fba3ed4f175c60a6eb7356f1948a7aa2ab023f9a5d86",
++          "06b8d96715bc334322b709b7bf1241075acf950122b190aeb370999023660893",
++          "109d7537dafe47f9720d60f0dfd2d6a27a5b482978b86a415f57e7eb34d2df7f",
++          "098ae9fe24c88017e0180b08efdfd2a611bf9e5133360d19d5d0deda9e8cac19"
++        ]
++      },
++      "passed": true
++    },
++    {
++      "id": "F05",
++      "filename": "NARA-7601963-AWA586.pdf",
++      "actual": {
++        "bytes": 377823,
++        "sha256": "b2f44c74e2c4383015db06ae9cf8baa86c52515dc38610782ccba86ad38451ab",
++        "pdf_pages": 11,
++        "page_text_sha256": [
++          "f44b9687b5b7e64e5079a711457389b06d2ab711171b1fcfb7161fde03a021c8",
++          "d268faaff5105860b0cebe2c68cc379b76b5b4d989a8d229662df538424f7f5f",
++          "a783afd0a9d474f83135b370d94eab4f63f7c7a0914c83f24c69232fd365a4e3",
++          "6d13501631b254b9e3c0ec972b4813f0201d678e5eccf3e66f0e3653a2b5ef84",
++          "92ed5a31f339bcdc638f18bfe7ffb60d96741d8127122290e25a1d9ae4b2687e",
++          "b46e60bdd6ff60bfa6a424c8e21688c3bc5461df6b1af1f998a79e7b4b83a6ce",
++          "171a6124d5808208237dd6b8ae045acdaa73cca820cb92ee040a661433ef325d",
++          "d160e93b9eb69dca7bdb6aa7363a9dd7756232f33e4c96d308e2b814c4af7392",
++          "2a373f857fe34d01227e87ac4867591cd3af7e56c5634aa7c9c17123c2f058b3",
++          "bc963f905baeb41f1c0616a267b8c7abd85bd16137420c95e27c71ef2ba6a672",
++          "8395a937c0452145056875360fde7d87736750d16dc4b12a53196a0b24ef235c"
++        ]
++      },
++      "expected": {
++        "bytes": 377823,
++        "sha256": "b2f44c74e2c4383015db06ae9cf8baa86c52515dc38610782ccba86ad38451ab",
++        "pdf_pages": 11,
++        "page_text_sha256": [
++          "f44b9687b5b7e64e5079a711457389b06d2ab711171b1fcfb7161fde03a021c8",
++          "d268faaff5105860b0cebe2c68cc379b76b5b4d989a8d229662df538424f7f5f",
++          "a783afd0a9d474f83135b370d94eab4f63f7c7a0914c83f24c69232fd365a4e3",
++          "6d13501631b254b9e3c0ec972b4813f0201d678e5eccf3e66f0e3653a2b5ef84",
++          "92ed5a31f339bcdc638f18bfe7ffb60d96741d8127122290e25a1d9ae4b2687e",
++          "b46e60bdd6ff60bfa6a424c8e21688c3bc5461df6b1af1f998a79e7b4b83a6ce",
++          "171a6124d5808208237dd6b8ae045acdaa73cca820cb92ee040a661433ef325d",
++          "d160e93b9eb69dca7bdb6aa7363a9dd7756232f33e4c96d308e2b814c4af7392",
++          "2a373f857fe34d01227e87ac4867591cd3af7e56c5634aa7c9c17123c2f058b3",
++          "bc963f905baeb41f1c0616a267b8c7abd85bd16137420c95e27c71ef2ba6a672",
++          "8395a937c0452145056875360fde7d87736750d16dc4b12a53196a0b24ef235c"
++        ]
++      },
++      "passed": true
++    }
++  ],
++  "excerpt_checks": [
++    {
++      "source": "F01",
++      "page": 1,
++      "lines": 15,
++      "passed": true
++    },
++    {
++      "source": "F02",
++      "page": 1,
++      "lines": 20,
++      "passed": true
++    },
++    {
++      "source": "F02",
++      "page": 1,
++      "lines": 6,
++      "passed": true
++    },
++    {
++      "source": "F03",
++      "page": 1,
++      "lines": 16,
++      "passed": true
++    },
++    {
++      "source": "F03",
++      "page": 1,
++      "lines": 9,
++      "passed": true
++    },
++    {
++      "source": "F03",
++      "page": 2,
++      "lines": 9,
++      "passed": true
++    },
++    {
++      "source": "F03",
++      "page": 2,
++      "lines": 30,
++      "passed": true
++    },
++    {
++      "source": "F03",
++      "page": 3,
++      "lines": 3,
++      "passed": true
++    },
++    {
++      "source": "F04",
++      "page": 1,
++      "lines": 10,
++      "passed": true
++    },
++    {
++      "source": "F04",
++      "page": 2,
++      "lines": 10,
++      "passed": true
++    },
++    {
++      "source": "F05",
++      "page": 1,
++      "lines": 2,
++      "passed": true
++    },
++    {
++      "source": "F05",
++      "page": 1,
++      "lines": 3,
++      "passed": true
++    },
++    {
++      "source": "F05",
++      "page": 2,
++      "lines": 2,
++      "passed": true
++    },
++    {
++      "source": "F05",
++      "page": 2,
++      "lines": 4,
++      "passed": true
++    }
++  ],
++  "literal_status_count": {
++    "scope": "Literal text-layer Completed markers only; manual person/group classification is not software-proven",
++    "by_pdf_page": [
++      15,
++      12
++    ],
++    "expected": [
++      15,
++      12
++    ],
++    "total": 27,
++    "passed": true
++  },
++  "all_passed": true
++}
+\ No newline at end of file
+--- /dev/null
++++ b/SOURCES.json
+@@ -0,0 +1,205 @@
++[
++  {
++    "id": "F01",
++    "naid": "7601973",
++    "filename": "NARA-7601973-AWA673.pdf",
++    "source_subdirectory": "sources",
++    "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-673-Memo-Presidential-9-11-Commission-Final-Follow-up-Response.pdf",
++    "catalog_url": "https://catalog.archives.gov/id/7601973",
++    "access_utc": "2026-10-27T22:44:55.634585+00:00",
++    "http_status": 200,
++    "content_type": "application/pdf",
++    "bytes": 67185,
++    "sha256": "d40c227a9210a2fb3753204bdfe1554f913dedb2d0b47986c22c8712b6c13331",
++    "pdf_pages": 2,
++    "page_text_sha256": [
++      "057c53cf7118877985ab285fd874c78fa570cb71261c4f9292ddfffdb4f38b5d",
++      "dd12f594783b7fc975ec85559665eb582f4f10fb1de4cf7ea84393aff3ba5d38"
++    ],
++    "visually_reviewed_pdf_pages": [
++      1,
++      2
++    ],
++    "review_complete": true,
++    "authority": "Official NARA public PDF entity; archival host is established, native document authorship/completeness and historical delivery are not independently authenticated"
++  },
++  {
++    "id": "F02",
++    "naid": "7601970",
++    "filename": "NARA-7601970-AWA661.pdf",
++    "source_subdirectory": "sources",
++    "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-661-Record-of-Telephone-Calls-9-11-Commission-Followup-.pdf",
++    "catalog_url": "https://catalog.archives.gov/id/7601970",
++    "access_utc": "2026-10-27T22:44:56.190520+00:00",
++    "http_status": 200,
++    "content_type": "application/pdf",
++    "bytes": 80293,
++    "sha256": "e54e578725cfef6bca5a340aade2bbfb590f1bd66f30896906b61a0268cfb60b",
++    "pdf_pages": 1,
++    "page_text_sha256": [
++      "c14008458e753bdd591602997e8a0710a88aee118c9510c312985804b836fa22"
++    ],
++    "visually_reviewed_pdf_pages": [
++      1
++    ],
++    "review_complete": true,
++    "authority": "Official NARA public PDF entity; archival host is established, native document authorship/completeness and historical delivery are not independently authenticated"
++  },
++  {
++    "id": "F03",
++    "naid": "7596181",
++    "filename": "NARA-7596181-AWA660.pdf",
++    "source_subdirectory": "sources",
++    "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf",
++    "catalog_url": "https://catalog.archives.gov/id/7596181",
++    "access_utc": "2026-10-27T22:44:56.752132+00:00",
++    "http_status": 200,
++    "content_type": "application/pdf",
++    "bytes": 171713,
++    "sha256": "45bb64401dbaa1d7c037939f9ab7c7b3464f4ba1e1c71df3900b452e51d052b8",
++    "pdf_pages": 4,
++    "page_text_sha256": [
++      "4c1ee165c1e0c42718614e392eb9ff630d9a2be326b74f654011d89e99c2f423",
++      "18b5a01954b40ddb94a5c9ef4a413002a5d062721b547615af707d31239abc5f",
++      "3e19f1d7c16c22bef597e9f6ae28bdb62077f9a9b93c16847d38fbe8d600d82e",
++      "3b362f9d32f66e780ebc4fd8c31ca6dfa6432239e802d8230422e0ca6c5c7e45"
++    ],
++    "visually_reviewed_pdf_pages": [
++      1,
++      2,
++      3,
++      4
++    ],
++    "review_complete": true,
++    "authority": "Official NARA public PDF entity; archival host is established, native document authorship/completeness and historical delivery are not independently authenticated"
++  },
++  {
++    "id": "F04",
++    "naid": "7596179",
++    "filename": "NARA-7596179-AWA658.pdf",
++    "source_subdirectory": "sources02",
++    "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-658-FAA-Issues-and-Questions-Package.pdf",
++    "catalog_url": "https://catalog.archives.gov/id/7596179",
++    "access_utc": "2026-10-27T22:48:05.125184+00:00",
++    "http_status": 200,
++    "content_type": "application/pdf",
++    "bytes": 2409363,
++    "sha256": "27580b551698194522fb21d7896964b676d5921b63c7fd05e64b9ae8559c507d",
++    "pdf_pages": 72,
++    "page_text_sha256": [
++      "44c0d2f0bb1296e4e29cfd4e0ee2c9bccfd1e308fc2893bec7e6a82833615501",
++      "4da580cead1b516c66df5b3a2c5256abb3614aa17af56516d9b5c28b6d6b53d3",
++      "6387c556432a70def6c81dbc67537bbde885e3ca2677fd093374ff4e0111fa4e",
++      "76615c2dd2e795995d8a0f17fcafa2dda14767dfe30bf710e2a09b24f4f40b81",
++      "f88404bcdf1f24766fe396cadae9a01ad13c6ee7e88a350a87703965f571da3f",
++      "2fa75b8ecef62ce7794c052cb04829d439ca5bfd2ab88fd6fd4d5fe512d1813b",
++      "be4bcd66449753e26d93500c883d474630b0d920f09c5dad0e076996f422b3ab",
++      "40c24b2f7d447fd19ad18f763f77811772b75df4fc2c14b44e7dba017cbbf09b",
++      "66d17694843a71e86e5fc709b06a70bfb0b395b1facfac1094cefd93230dcc52",
++      "07aae2efd8c6af9c423e053256845dbbc92565678c5a385ad37d10661b76be10",
++      "e411309ead09a3c503f6f135e4352b196a74e81a00edf0312bfeab30bd6c6aec",
++      "e97ea1baa016a7d23a187433e67d21bfb38b2ee5d04fc214c8a6c11fb4e645d2",
++      "64d7c331875592da7b679e4b7c746501557216add2ca361206c9e8a31c5252e5",
++      "87e99670832b47fe7adbc528c7fe87714755511fe5fac44831323ef9087244e7",
++      "cc319fc11c9f1cd1215b2097791585eb0ae3a6fbada69536ada23238a1c04977",
++      "425aa20e052ae23be13c270af7cfb85aecaa11c84e177a0327aed8d13ff45380",
++      "68883888d5706d6a379b75add7504d638dacd06efdcb837ae50d1ba73d249ca0",
++      "69c8e98e9e23cc10bd5d3c047e36ad4cf416495c9387b34180ad785a5cffafb5",
++      "c6d754e1c21871e81c9454c18ccdd32a72ad265c5fcd6794e7a403682446a643",
++      "858a455ffe23bbc145f45747bfa649937f32683d6d82bf6430669c6e4b5bc5a8",
++      "73ff2b1278534232c3a546ea9fde0c8dcd95ab6b57bc0e56363575585f8ccd80",
++      "356fd5473522f4db9d7d895c7a59de481ccffab718e5979898775db4a9a4a454",
++      "9d27ffb6c2091f94c4e2e083cb6e96485c6cac77cf47b2047deff2bbc566ef41",
++      "86520572035d84460c21271326ee4d462539a63d4e2c95760d921b34b2669899",
++      "2ce06f3a6023baf37b6deee1b11ef77b3fd20a01eefe6d69404d7761ec569159",
++      "9d072cc1c68a8e6cb808584211f3705978d56afdc40a7dec18cf6a2bc7c5ca57",
++      "9aea6ccce8ef70cc842d8a92fe2ae1c10201e09e0fe155f3872d2e9ae4853482",
++      "3c246ee07e2b22e18d7bfd15aff5f624ada6fb532d65adee90f30bda21497ca4",
++      "3f5403038921c6012462d2946e8a6d69b81b51c10e779f569c9574805aefd59e",
++      "ee2c2a50bfbe5a1deae0621a67ae3b375155c02437818ffd05e7b20b3bc62537",
++      "e7414b799dabeefa319630655df5d6aa9685fc3a061e51500441de450c851cba",
++      "a0bdf1430f2448c1b6f4fed51c49420c42ac0f11cd30fcf17cca2bbad4700578",
++      "304962ce4b0bc3c6ed4251b6df63fb2f1292e28477188ef95fa923de894c1587",
++      "e0e3c4ea46dafe306424da243f63818217915043ccb3eb7cb5cea54109d92fb4",
++      "1bfd8372d4a336f9809b1bbea53d3c1d4c0ddcee2b69583998b2005e3d73353e",
++      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++      "99bc879a43d08dd62b67a2acb7001f5575bd8eae175eee85d74e653a3ecb59b3",
++      "0faf9d038344e8393347d589c81af8580ea531ea3f0e482ecce73d34ab466942",
++      "42ffcb2922ac9e145b41ef54a40afcb67be07f4edfae383bb119a9d30745d403",
++      "1b5f7bdc319506c95fb4d3fded9511c6e3cb19fdf0670fb9be871cd459735360",
++      "677fe47de64ed929a5c828268267535b4132525a5458bf9b5300781c2c67e0a7",
++      "72389fc0b8e6669b04772f04556bff8bac57a1e76feb1ffdd1e525b9b893b3d9",
++      "e083ba680d47bcf162fc365bab3c8431881262630c11313fd14aab195edb2c24",
++      "866927aad7a6a9b93f59ff921811119b0bb2c6d122209b90fc1f5c5ee8910eb7",
++      "2140dc90376d318aa8f86732211bb22b41878f1ab4c1b0953c77b9360ff90922",
++      "b8281d9b8b6da2e12535179850123f2fcfbc38899923a764c096075f2846b193",
++      "6d14b5175ef6c12621f2bb41057db85bd42911684d1be0e97ef1b9330e09b05a",
++      "bbbede65c30aaa6a0cc4b9a19818b9f9131bf3e930a8bd324a286a8725a79654",
++      "3d7399b775b92efd5e0d0b3ae6c1b5f70a53a9dc67eda3985c69d239da4f2c00",
++      "6773b8c2614e7969f27b2dd5f94ba0783f7de49f8dd65e0e4239354ade38e430",
++      "0c753efdef41e3714eb18f603abc09f945f5b8f5113000ad2c978c755b93337b",
++      "6ef3840d5e09290d7e200e2729676842c842ecc50cb5cdbc8c81ea90fe2d9d54",
++      "feff0f5dc8a89e52cf636bfb7f65c9dee7052a849d31e0f1bb00a3204636232e",
++      "3abac2d7f692ef67eb91a37881ef7459e895f979f9ef10ca7b5971d3c0ed6970",
++      "f14d3873c440c31b85d0a60ea0015ba61bb7d69ff3f22000d48705b4a6afb582",
++      "11a2ee898f293f708a96c21a2109691e9bf63eff00111d7988daf66a59d26421",
++      "0a5dfe0a02ce4c33e839dd96be2239db1890e3c74a3414f3e1a33fe736bff13c",
++      "1a172fa9f01508fab02bbb4277c15c66b8b019696496021a2e778331d9813c3c",
++      "38c39732143e13061e190b924e0beb8ebdec1f48f6d437bda4aa6d1489e880f3",
++      "996d923861bd1f75a9c4cdfd3ec6921acea3920a86e0daa603c23e0a7beec88d",
++      "12f6a848f535db6b4489951d383957894bfcf873b201598c4a791c6050fd4c35",
++      "a36a75622fd84b0097053d867edfdeb2e92032ffb18597b950f8027b8f8ded7e",
++      "fac38d26fba8a19de7bee3d3d9c8d08ce22de1f00e6b159433344ffb32fa53ef",
++      "52415271d4d45c2e8a5d90c6e2e3de64acd7202e4d200a6a64bc6c4fcfa902cc",
++      "b3056a275dfa117e87e63886fff65108892571f6dc63b31282521d0846350916",
++      "165e2ce07bae889ae6038afe50051ea7b37c531eb1d8dd929f0c325b99ab76a0",
++      "5d6b52c1c24521e38c691e9c9c5f82b00ff39f7597f3d8f56d54414445ba63bb",
++      "245c23a347716930145c5c7c9e243b86ac059a29f0303b110cd3b7aaa8fe8f32",
++      "964d9bf5d5a4f4675169fba3ed4f175c60a6eb7356f1948a7aa2ab023f9a5d86",
++      "06b8d96715bc334322b709b7bf1241075acf950122b190aeb370999023660893",
++      "109d7537dafe47f9720d60f0dfd2d6a27a5b482978b86a415f57e7eb34d2df7f",
++      "098ae9fe24c88017e0180b08efdfd2a611bf9e5133360d19d5d0deda9e8cac19"
++    ],
++    "visually_reviewed_pdf_pages": [
++      1,
++      2,
++      3
++    ],
++    "review_complete": false,
++    "authority": "Official NARA public PDF entity; archival host is established, native document authorship/completeness and historical delivery are not independently authenticated"
++  },
++  {
++    "id": "F05",
++    "naid": "7601963",
++    "filename": "NARA-7601963-AWA586.pdf",
++    "source_subdirectory": "sources02",
++    "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-586-Email-Final-FAA-Testimony.pdf",
++    "catalog_url": "https://catalog.archives.gov/id/7601963",
++    "access_utc": "2026-10-27T22:48:05.849280+00:00",
++    "http_status": 200,
++    "content_type": "application/pdf",
++    "bytes": 377823,
++    "sha256": "b2f44c74e2c4383015db06ae9cf8baa86c52515dc38610782ccba86ad38451ab",
++    "pdf_pages": 11,
++    "page_text_sha256": [
++      "f44b9687b5b7e64e5079a711457389b06d2ab711171b1fcfb7161fde03a021c8",
++      "d268faaff5105860b0cebe2c68cc379b76b5b4d989a8d229662df538424f7f5f",
++      "a783afd0a9d474f83135b370d94eab4f63f7c7a0914c83f24c69232fd365a4e3",
++      "6d13501631b254b9e3c0ec972b4813f0201d678e5eccf3e66f0e3653a2b5ef84",
++      "92ed5a31f339bcdc638f18bfe7ffb60d96741d8127122290e25a1d9ae4b2687e",
++      "b46e60bdd6ff60bfa6a424c8e21688c3bc5461df6b1af1f998a79e7b4b83a6ce",
++      "171a6124d5808208237dd6b8ae045acdaa73cca820cb92ee040a661433ef325d",
++      "d160e93b9eb69dca7bdb6aa7363a9dd7756232f33e4c96d308e2b814c4af7392",
++      "2a373f857fe34d01227e87ac4867591cd3af7e56c5634aa7c9c17123c2f058b3",
++      "bc963f905baeb41f1c0616a267b8c7abd85bd16137420c95e27c71ef2ba6a672",
++      "8395a937c0452145056875360fde7d87736750d16dc4b12a53196a0b24ef235c"
++    ],
++    "visually_reviewed_pdf_pages": [
++      1,
++      2,
++      11
++    ],
++    "review_complete": false,
++    "authority": "Official NARA public PDF entity; archival host is established, native document authorship/completeness and historical delivery are not independently authenticated"
++  }
++]
+--- /dev/null
++++ b/drafts/CHECKLIST-v1.md
+@@ -0,0 +1,15 @@
++# Requirement coverage and unresolved items
++
++| Point | Outcome / exact location | Still open |
++|---|---|---|
++| Pursue FAA original-record roots first | SOURCES F01–F05 preserve five official PDFs; README O01–O06 and SOURCE-EXCERPTS give exact pages/lines. | PD01 corrected QFR/receipt and PD02–PD03 signed disposition not acquired. PD04 policy/custody joins remain. |
++| Preserve conflicting accounts and our assumptions | O01–O04 retain production, reported restrictions, disputed scope, Final/conditional/status wording and quantities in their separate units. | Actual original instructions/receipts/tasking; note author/date; no preferred account or motive selected. |
++| Distinguish acquisition, extraction and reading | Seven initial pages fully read; six adjacent identifying pages visually read. SOURCES records13/90coverage. |77pages not fully reviewed. The all-acquired-page protocol criterion is not marked passed or weakened. |
++| Avoid title-only false matches | O05 identifies two2001testimony emails; O03 is a2003interview follow-up. | Neither supplies corrected May2003 QFR or signed2006 action. |
++| Obtain recorder/timeline custody leads | O06 records FD340 copy-description and1A-1A76869/M-BSA-00006682. | Detailed package comparison/native audio/clock/custody joins unperformed. |
++| Preserve all five goal tracks | OPEN-RECORDS keeps FAA,telephone,recorder,materials,steel dependencies visible. | No original-record or empirical-testing dependency disappears because a publication succeeds. |
++| Reproduce narrow checks | verify_sources.py plus SOURCE-VERIFICATION receipt check entity/text/excerpt integrity and literal status count. | Not historical authentication, substantive legal review or physical validation. |
++| Version accountability | PUBLIC-ADDITION.diff, README-addition.diff and REVISION-STATUS preserve full new text plus six unchanged prior hashes. | Original protocol/notes/sources retained; no source correction or old-history rewrite. |
++| Lawful AveLyra public mirror | Reviewed notes/pins/code only; exact public destination/account/commit metadata must be verified before push; all remote files checked after. | No raw personnel/health/signature/contact files, private case data or private push. This checklist is not a push receipt. |
++
++No third-party contact, new request, fee, personal-mailbox access, filing, case-spine edit, deletion or overwrite. Goal remains active; new acquisition progress does not satisfy the missing originals or unrun tests.
+--- /dev/null
++++ b/drafts/METHOD-v1.md
+@@ -0,0 +1,13 @@
++# Method, provenance and limits
++
++1. Existing B129/PD01–PD04 and the five-track work plan controlled the question; titles were locators, not conclusions. The NARA Boxes96–107 finding aid led to five exact catalog-linked downloads. Anonymous GETs returned PDF entities with HTTP200 and application/pdf. Original files, full transport metadata, page-text extracts and QA rasters are preserved locally. No native agency email headers or complete original custody chain were authenticated merely by retrieval.
++2. SOURCES pins exact URL/catalog/access time/bytes/SHA256/page count and every extracted page-text hash. SHA256 identifies the entity examined; it is not proof of truth, original authorship, historical completeness, receipt or absence of alteration before release. An official NARA host establishes the public release route, not every underlying assertion.
++3. All pages of F01–F03 were visually reviewed. F04 pages1–3 and F05 pages1,2,11 were visually reviewed. F05 page3’s heading was text-inspected only. The rest of F04/F05 remains a detailed-reading dependency. Text extraction is not human review. These distinctions also account for the original protocol’s still-unmet77page inspection requirement.
++4. SOURCE-EXCERPTS preserves selected raw text-layer lines verbatim. It excludes personnel/contact/health text. One-based locators refer to PyMuPDF page.get_text().splitlines(), not original numbered lines. Visual transcription and OCR differ in places; no silent repair is made. Status counts use visible rows/prose and are manual calculations; literal Completed counts are also checked against the text layer. Software does not prove the interpretation.
++5. F02’s statements retain their note-taker/regional official/Commission/HQ attribution layers. F03’s author/date remain incomplete. Never count a quoted source, evidence envelope, draft transcript and later summary as independent corroboration. Disputed scope/production is preserved without assigning motive or adjudicating facts.
++6. Quantities are retained with their source units: hours,channels,person-days,phone lines. No cross-unit discrepancy or realized workload is calculated. F01 listed people are not the full workforce. F04 is an acquired package, not72 independent records or a completed Flight77 comparison.
++7. Native research is the source of these notes; the public addition is a reviewed redundant mirror. No main case facts/timeline/pleading/correspondence authority changed. Public content excludes raw scans, signatures, personal health/contact details, private correspondence, credentials and local network paths. Existing public official links remain visible.
++8. verify_sources.py checks all five local PDF entities, decoding, page/text hashes, selected line quotations and27literal Completed markers. The resulting receipt is an integrity/reproducibility check, not authentication of any event or completion of the original-record goal. Publication account/commit/ref/file checks are a separate subsequent operation.
++9. Six prior plan/review documents were hashed before this pass; REVISION-STATUS compares them afterward. Existing source bytes are checked against acquisition hashes. New text has no preceding version, so its diff is a full addition; previous assessments and all conflicting values remain available. No source overwrite, deletion, normalization, private push, outreach, request, fee, personal-mailbox access or history rewrite.
++
++Official finding aid: https://www.archives.gov/research/foia/faa-finding-aid-96-107 . NARA source links and access timestamps are in SOURCES. The finding-aid listing is not an independently authenticated transmission manifest.
+--- /dev/null
++++ b/drafts/OPEN-RECORDS-v1.md
+@@ -0,0 +1,21 @@
++# Carry-forward original-record targets
++
++Existing B129 / PD01–PD04 are retained; this unit creates no legal-fact IDs or replacement master list.
++
++| Priority | Existing dependency or new exact locator | Still required | What the record could test |
++|---|---|---|---|
++| 1 | PD01 | Actual corrected May2003 QFR; drafts, approval chain, transmittal and receiving acknowledgment | Whether a correction existed, what changed, who knew, and whether it reached its recipient. A2001 final-testimony email or2003 interview memo is not a substitute. |
++| 1 | PD02–PD03 | Signed FAA action/no-action decision; OIG recommendation responses, referral records and accepted closure/return-to-agency dispositions | Whether findings prompted action and why; no inference from an absent search hit or generic follow-up policy. |
++| 1 | F02 AAT-200 and ANE legal references | Actual release/hold instructions, dates, recipients, authority, item-level schedules, productions and receipts | Whether restrictions occurred as reported, their content/scope/legal basis and whether another channel supplied records. |
++| 1 | F03 production dispute | Complete original requests/amendments, HQ-to-ZBW/ZNY/ZID/ZOB tasking, center accident-file inventories, production manifests/receipts | Competing completeness/scope accounts. Four centers named by one note are not four acquired affidavits. |
++| 2 | F01 October8,2003 AAT-1 fax | Fax itself, enclosures, recipients, employee universe, status definitions, actual interviews and later status updates | Relationship between Final subject, should-complete wording and actual incomplete/other status descriptions. No personal medical detail is needed to frame this request target. |
++| 2 | F03 after-action/radar examples | Cleveland management memo, Indianapolis outside-contractor radar-coverage review and each relevant SATORI native reconstruction, version/clock/source records | Existing-record evaluations and coverage gaps, not a new invented global report. |
++| 2 | F03 author/date | Native message or routing record establishing full sender, recipient and exact date; handwriting provenance | Authentication of the note, not surname inference from Dana alone. |
++| 2 | F04 1A-1A76869 / M-BSA-00006682 | Finish detailed review of remaining69pages; compare components to held sources; follow envelope/FD302/native FAA timeline and recordings | Source custody, draft/final transcript/timeline differences, duplicate components and clocks. Envelope describes a copy, not native recordings. |
++| 2 | F05 source-package association | Finish remaining8visual/detailed page reviews; inspect actual retained attachments and hearing submission records if pertinent | What the2001 package contains; not a May2003 correction on the basis of its title. |
++| Open | Telephone | Native carrier/operator/PBX records; Keyton source interview; caller/event/leg joins; original zero-duration exhibit and Sept20usage source/release joins; relevant email/native deliveries | Distinguish attempted, routed, accepted and connected events. Earlier154/159,eight/seven,operator/caller and timestamp uncertainties remain. |
++| Open | Recorder/radar | Raw data/audio completeness, independent decoding, custody, schema/calibration and clock alignment | Existing decoder/label/altitude questions; other-chat work is not completed here by reference. |
++| Open | Harrit/Millette | Native counts/spectra, calibration/geometry/quantification, authenticated custody and same-specimen heating/phase joins | Conditional published-data calculations are not empirical replication. |
++| Open | Steel | Original preservation decisions and intake/coupon/yard transfers; field-to-NIST aliases; rationale for WTC7-attributed candidates appearing as unidentified | Actual attribution chain, not an inference of intentional relabeling from names alone. |
++
++The protocol’s all-acquired-pages inspection criterion is unfinished for77pages. Keep that visible rather than treating entity hashes as passing a reading criterion. No new requests, messages, fees or case filings were made. Goal remains active; this is progress, not a finding of global blockage or completion.
+--- /dev/null
++++ b/drafts/README-v1.md
+@@ -0,0 +1,75 @@
++# FAA Commission follow-up: production accounts, release restrictions and unfinished original-record work
++
++**New primary-source acquisition, partial comparison; existing B129 / PD01–PD04 remain open.** Five PDFs were obtained from NARA’s public catalog and preserved unchanged with source URLs, access times and SHA-256 pins. This is a first review of three complete records and selected identifying pages in two additional packages. It has **not** recovered the corrected May2003 answer, its delivery receipt, a signed2006 action/no-action decision, or the recommendation-disposition records.
++
++The clearest new lead is an FAA telephone-call record attributing restrictions on some releases to headquarters litigation personnel and regional counsel. It also reports substantial production. A separate note reports unproduced materials and insists on the complete accident files. These accounts are retained together; neither has been selected as controlling and their causes remain unresolved. The originals behind the recorded instructions, requests and deliveries are the next useful evidence.
++
++## Sources and reading coverage
++
++All page numbers below are **one-based PDF pages**. Each F-number maps to an official download, acquisition time, entity hash, page count and reading coverage in [SOURCES.json](SOURCES.json). Exact selected text-layer lines are in [SOURCE-EXCERPTS.json](SOURCE-EXCERPTS.json); OCR errors remain visible. Line numbers are page-local extraction locators, not original agency line numbering.
++
++| Pin | Official record | Pages | Actual visual coverage |
++|---|---|---:|---|
++| F01 | [AWA673, Final Follow-up Response, NAID7601973](https://catalog.archives.gov/id/7601973) | 2 | Both pages |
++| F02 | [AWA661, Record of Telephone Calls, NAID7601970](https://catalog.archives.gov/id/7601970) | 1 | Entire page |
++| F03 | [AWA660, Note—9/11 Commission File, NAID7596181](https://catalog.archives.gov/id/7596181) | 4 | All four pages |
++| F04 | [AWA658, FAA Issues and Questions Package, NAID7596179](https://catalog.archives.gov/id/7596179) | 72 | Pages1–3 only; remaining69 detailed page reviews pending |
++| F05 | [AWA586, Email—Final FAA Testimony, NAID7601963](https://catalog.archives.gov/id/7601963) | 11 | Pages1,2,11 only; remaining8 detailed page reviews pending |
++
++Total acquired: **five PDF entities,90 pages,3,106,377 bytes**. Actual visual reading:13pages. Text extraction of90pages is not reading90pages. The original protocol’s requirement to inspect every acquired page remains **unmet for77 pages in the added packages**; it has not been waived or redefined as a passing check. Acquisition and partial findings can be reported without claiming that the enlarged review or five-track goal is complete. Several components may repeat material held elsewhere; no independence or unique-evidence count is inferred from the number of PDF files. Raw scans, signatures, personnel/contact/health information and complete extractions stay local; these public notes link to the official sources.
++
++## O01 — The FAA call record reports production and restrictions
++
++The [AWA661 PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-661-Record-of-Telephone-Calls-9-11-Commission-Followup-.pdf#page=1) is headed Record of Telephone Calls /9/11Commission Follow-up /AEA/ANE/AGL Regions and dated **10-03-03,1500–1600EDT**. Reading that printed date as October3,2003 is an interpretation of its format; the original string is preserved here. It records regional officials’ accounts, not an audio recording of those calls or the underlying legal instructions.
++
++- **AEA / New York:** the note says the Commission received a complete accident-file index, copies of all requested information and controller statements; the facility felt all requests had been met. This is affirmative production evidence in the record and must not be omitted. F02,p1,extracted lines7–12.
++- **AGL:** the note says the Commission did not receive the entire accident file; approximately40 requested pieces were copied and sent for release. It says the facility received guidance from **AAT-200 litigation personnel to release all data concerning UAL93 but nothing else**. It separately reports that the Commission sought field copies of headquarters telecons because headquarters was not releasing them. That latter claim has additional attribution layers: the note-taker records a regional official relaying the Commission’s position. F02,p1,lines13–26.
++- **ANE / Boston:** the note says interviewers learned about material in the accident file absent from the formal accident package. It lists QA bulletins, lessons learned, sector maps and frequencies supplied, while saying some requested material was not released because of **ANE legal guidance about information on hold by the FBI**. F02,p1,lines30–35.
++
++**What this establishes:** a publicly archived contemporaneous-looking FAA record reports particular release restrictions, partial production and claimed compliance. **What it does not establish:** the exact original instruction, its legal basis, what each item contained, whether another channel supplied it, final completeness, unlawful withholding or motive. No signed action/no-action decision is attached. Obtain the actual instructions, itemized inventories and receiving records before inferring their effect.
++
++## O02 — A separate note disputes production completeness and request scope
++
++The [AWA660 PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf#page=1) is addressed to **Shirley** and ends **Dana** onp3. It has no verified complete sender header, native email metadata or exact date. The phrase **middle of October** appears onp2. October2003 is contextual inference from the2003 request discussion, not an authenticated exact sending date. Do not silently assign a full author identity or treat this scan as proof of email delivery.
++
++The note quotes a May7,2003 request, due May14, for all FAA tracking documents including NORAD communications. It cites DOTRequest2,items3,7,16 and19 as additional examples, while expressly retaining the broader original request. It says managers/QA officials at **ZBW,ZNY,ZID,ZOB** reported never having been asked to gather these materials or to produce them from headquarters. These are statements in one note, not four independently acquired center affidavits. F03,p1,lines5–37;p2,lines1–9;p3,lines2–4.
++
++Its next steps insist on the complete **accident file**, rather than the **accident package**; all three Boston boxes if those contain relevant material; and all FAA facilities, not merely the four visited. It specifically identifies a Cleveland management memo, the Indianapolis outside-contractor review of the Flight77 radar-coverage lapse, and centers’ SATORI reconstructions. F03,p2,lines11–32. Page4 is a handwritten locator sheet; authorship, date and unclear characters remain unverified. A handwritten recording lead is not proof the recording was made, preserved or supplied.
++
++**Preserved difference:** AWA661 records facility-level claimed compliance and some productions; AWA660 describes unproduced materials and rejects a narrower file/package reading. Their dates, speakers, request scopes and later production sequence are not established as identical. We do not smooth them into one account, label one false, or infer concealment. Original requests and amendments, HQ-to-center tasking, actual legal guidance, center inventories, release manifests and receiving acknowledgments would test the relationship.
++
++## O03 — “Final” interview follow-up does not demonstrate universal completion
++
++The [AWA673 memo](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-673-Memo-Presidential-9-11-Commission-Final-Follow-up-Response.pdf#page=1), dated **November7,2003**, runs from Boston ARTCC,ZBW-1 to Evaluations and Investigations,AAT-20. Its subject says **Presidential9/11 Commission Final Follow-up Response**; its opening says the information **should complete** outstanding requirements under an **October8,2003 AAT-1 faxed memorandum**. It explicitly concerns interviews of employees who worked on9/11. F01,p1,lines5–19.
++
++A manual count of the visible entries, retaining all statuses without publishing personal details, is:
++
++| Source group | People listed | Entries literally marked Completed | Other status descriptions |
++|---|---:|---:|---:|
++| Retired, p1 | 6 | 6 | 0 |
++| Changed facility/relocated, p1 | 12 | 9 | 3 |
++| Separate prose entry, p2 | 1 | 0 | 1 |
++| Leave/logistics table, p2 | 12 | 12 | 0 |
++| **Listed total** | **31** | **27** | **4** |
++
++These are30table rows plus one prose entry. They are not a workforce census or31uncompleted interviews. Nor does Completed establish that a new substantive account was obtained: group headings also say no additional information was provided. The conditional completion wording, Final subject, completed statuses and other statuses are all preserved. This tension warrants checking the referenced directive and later follow-up; it does **not** establish refusal, concealment or a contradiction in a signed2006 disciplinary outcome. The other status details are not republished because they include personal information unnecessary to the research claim.
++
++**Next original:** the October8,2003 AAT-1 fax, its recipients and enclosures, underlying interview notes/status definitions and subsequent follow-up. This memo is **not** the corrected May2003 QFR or its receipt.
++
++## O04 — Keep recording quantities in their actual units
++
++F02 records **over3,088 hours** of information, **6recorders×40channels**, and a **354days-of-manpower** estimate. F03 says the requested collection would not require review of **3000+phone lines**. These are different units and attributed estimates. We have not acquired a channel-by-time inventory, verified the workload estimate, established matched scopes or demonstrated a numerical contradiction. Preserve each value and its source rather than divide or equate them to manufacture one. F02,p1,lines16–24;F03,p2,lines33–40.
++
++## O05–O06 — Additional packages acquired; association and detailed review remain limited
++
++**F05:** the file titled Final FAA Testimony contains visible email pages dated **September20,2001,2:47PM** and **September24,2001,4:17PM**, referring respectively to Administrator and Deputy Administrator testimony. F05,p1,lines1–2,17–19;p2,lines2–3,18–21. These are different2001 emails, not two versions of a May2003 correction. The PDF includes an ensuing statement headed September25,2001 in its extracted text, but that heading has not yet been visually checked. Attachment icons do not authenticate recovered native Word documents or establish that every referenced attachment survives in this PDF. We have not compared every testimony page or authenticated a final submitted version.
++
++**F04:** the72page Issues and Questions Package opens with Flight77 radar/notification questions,p1; a DRAFT-marked communications transcript,p2; and an FD340 evidence-envelope form describing a **copy** of an FAA radar/communications timeline,p3. The form has printed identifiers **1A-1A76869** and **M-BSA-00006682**. Those are concrete custody/locator leads, not raw-audio authentication. Pages4–72 await detailed review. Extracting all text layers does not establish the package’s completeness, internal joins, newness of components, correct clocks or a corrected QFR. Do not count copied transcripts, timelines and their envelope as independent corroboration.
++
++## What changes, what remains open
++
++This pass moves from search-result titles to five preserved official PDF entities and fully reads three short records. It identifies specific release-instruction, tasking, interview and source-envelope targets. It does **not** close **PD01–PD04**, establish a deliberate cover-up, authenticate an FAA correction’s actual delivery, resolve conflicting accounts, complete a recorder reconstruction or validate a materials/steel hypothesis. A complete enlarged review remains pending77pages. Other tracks retain their previously documented dependencies; [OPEN-RECORDS.md](OPEN-RECORDS.md) carries them forward.
++
++A cover-up hypothesis would gain support from authenticated instructions or communications showing knowing suppression or alteration and actual withheld material inconsistent with representations. It would be weakened by contemporaneous complete transmissions, coherent lawful handling records, corrected answers and receiving acknowledgments. Neither account can be chosen from these scans alone. The strongest objection to treating the new material as proof of wrongdoing is that it records **disputed scope and channel-specific restrictions as well as production**, without the actual instructions, final disposition or complete receipt trail.
++
++[Method and limitations](METHOD.md) · [Claim ledger](CLAIM-LEDGER.json) · [Checklist](CHECKLIST.md) · [Revision accounting](REVISION-STATUS.json). Source integrity/software checks are separate from manual interpretation and publication verification. Earlier records remain unchanged; no outreach, request, fee, personal-mailbox access, case-spine edit, private push, deletion or history rewrite is authorized by this report.
+--- /dev/null
++++ b/verify_sources.py
+@@ -0,0 +1,40 @@
++"""Verify held NARA PDF entities and selected extraction locators; not historical claims."""
++import argparse,hashlib,json
++from pathlib import Path
++from datetime import datetime,timezone
++import fitz
++parser=argparse.ArgumentParser()
++parser.add_argument('source_root',type=Path)
++parser.add_argument('release',type=Path)
++parser.add_argument('output',type=Path)
++a=parser.parse_args()
++assert not a.output.exists(),'Preserve the earlier receipt and choose a new output'
++pins=json.loads((a.release/'SOURCES.json').read_text())
++checks=[];docs={}
++for pin in pins:
++ path=a.source_root/pin['source_subdirectory']/pin['filename']
++ body=path.read_bytes()
++ with fitz.open(path) as doc:
++  pages=[p.get_text() for p in doc]
++  actual={'bytes':len(body),'sha256':hashlib.sha256(body).hexdigest(),'pdf_pages':len(pages),'page_text_sha256':[hashlib.sha256(p.encode()).hexdigest() for p in pages]}
++ expected={k:pin[k] for k in actual}
++ passed=body.startswith(b'%PDF-') and actual==expected
++ checks.append({'id':pin['id'],'filename':pin['filename'],'actual':actual,'expected':expected,'passed':passed})
++ docs[pin['id']]=pages
++excerpts=json.loads((a.release/'SOURCE-EXCERPTS.json').read_text())['excerpts']
++line_checks=[]
++for e in excerpts:
++ actual=docs[e['source']][e['pdf_page']-1].splitlines()
++ ok=all(actual[row['line']-1]==row['text'] for row in e['extracted_lines'])
++ line_checks.append({'source':e['source'],'page':e['pdf_page'],'lines':len(e['extracted_lines']),'passed':ok})
++completed=[sum(s.strip()=='Completed' for s in t.splitlines()) for t in docs['F01']]
++status={'scope':'Literal text-layer Completed markers only; manual person/group classification is not software-proven','by_pdf_page':completed,'expected':[15,12],'total':sum(completed),'passed':completed==[15,12]}
++result={'verified_utc':datetime.now(timezone.utc).isoformat(),'fitz_version':fitz.VersionBind,
++ 'scope':'Five PDF entities/page-text hashes and selected exact text-layer lines; not truth/authorship, full human reading, historical completeness/receipt or five-track completion',
++ 'pdf_entities':len(checks),'pdf_pages':sum(len(p) for p in docs.values()),'bytes':sum(x['actual']['bytes'] for x in checks),
++ 'checks':checks,'excerpt_checks':line_checks,'literal_status_count':status,
++ 'all_passed':all(x['passed'] for x in checks+line_checks+[status])}
++with a.output.open('x') as h:json.dump(result,h,indent=2)
++print(json.dumps({k:result[k] for k in ['pdf_entities','pdf_pages','bytes','fitz_version','all_passed']},indent=2))
++print('Exact excerpt groups:',len(line_checks),'Literal Completed markers:',sum(completed))
++assert result['all_passed']

@@ -1,0 +1,21 @@
+# Carry-forward original-record targets
+
+Existing B129 / PD01–PD04 are retained; this unit creates no legal-fact IDs or replacement master list.
+
+| Priority | Existing dependency or new exact locator | Still required | What the record could test |
+|---|---|---|---|
+| 1 | PD01 | Actual corrected May2003 QFR; drafts, approval chain, transmittal and receiving acknowledgment | Whether a correction existed, what changed, who knew, and whether it reached its recipient. A2001 final-testimony email or2003 interview memo is not a substitute. |
+| 1 | PD02–PD03 | Signed FAA action/no-action decision; OIG recommendation responses, referral records and accepted closure/return-to-agency dispositions | Whether findings prompted action and why; no inference from an absent search hit or generic follow-up policy. |
+| 1 | F02 AAT-200 and ANE legal references | Actual release/hold instructions, dates, recipients, authority, item-level schedules, productions and receipts | Whether restrictions occurred as reported, their content/scope/legal basis and whether another channel supplied records. |
+| 1 | F03 production dispute | Complete original requests/amendments, HQ-to-ZBW/ZNY/ZID/ZOB tasking, center accident-file inventories, production manifests/receipts | Competing completeness/scope accounts. Four centers named by one note are not four acquired affidavits. |
+| 2 | F01 October8,2003 AAT-1 fax | Fax itself, enclosures, recipients, employee universe, status definitions, actual interviews and later status updates | Relationship between Final subject, should-complete wording and actual incomplete/other status descriptions. No personal medical detail is needed to frame this request target. |
+| 2 | F03 after-action/radar examples | Cleveland management memo, Indianapolis outside-contractor radar-coverage review and each relevant SATORI native reconstruction, version/clock/source records | Existing-record evaluations and coverage gaps, not a new invented global report. |
+| 2 | F03 author/date | Native message or routing record establishing full sender, recipient and exact date; handwriting provenance | Authentication of the note, not surname inference from Dana alone. |
+| 2 | F04 1A-1A76869 / M-BSA-00006682 | Finish detailed review of remaining69pages; compare components to held sources; follow envelope/FD302/native FAA timeline and recordings | Source custody, draft/final transcript/timeline differences, duplicate components and clocks. Envelope describes a copy, not native recordings. |
+| 2 | F05 source-package association | Finish remaining8visual/detailed page reviews; inspect actual retained attachments and hearing submission records if pertinent | What the2001 package contains; not a May2003 correction on the basis of its title. |
+| Open | Telephone | Native carrier/operator/PBX records; Keyton source interview; caller/event/leg joins; original zero-duration exhibit and Sept20usage source/release joins; relevant email/native deliveries | Distinguish attempted, routed, accepted and connected events. Earlier154/159,eight/seven,operator/caller and timestamp uncertainties remain. |
+| Open | Recorder/radar | Raw data/audio completeness, independent decoding, custody, schema/calibration and clock alignment | Existing decoder/label/altitude questions; other-chat work is not completed here by reference. |
+| Open | Harrit/Millette | Native counts/spectra, calibration/geometry/quantification, authenticated custody and same-specimen heating/phase joins | Conditional published-data calculations are not empirical replication. |
+| Open | Steel | Original preservation decisions and intake/coupon/yard transfers; field-to-NIST aliases; rationale for WTC7-attributed candidates appearing as unidentified | Actual attribution chain, not an inference of intentional relabeling from names alone. |
+
+The protocol’s all-acquired-pages inspection criterion is unfinished for77pages. Keep that visible rather than treating entity hashes as passing a reading criterion. No new requests, messages, fees or case filings were made. Goal remains active; this is progress, not a finding of global blockage or completion.
