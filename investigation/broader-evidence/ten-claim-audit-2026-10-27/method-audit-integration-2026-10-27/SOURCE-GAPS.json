@@ -1,0 +1,318 @@
+{
+  "authority": "A public derivative of record_gaps embedded under existing AUD016-A5 in audit-todos-v34; not a parallel investigation register.",
+  "records": [
+    {
+      "id": "AUD016-A1:G01",
+      "existing_task": "AUD016-A1",
+      "priority": "P1",
+      "claim_ids": [
+        "B078"
+      ],
+      "assertion": "Raw Flight77 recorder decoding and terminal data",
+      "source_url": "https://www.ntsb.gov/about/Documents/AAL77_fdr.pdf",
+      "exact_locator_or_explicit_gap": "Report physical2\u20134; cited electronicIII\u2013V; original compressed FDR listed by author, not acquired",
+      "current_state": "Official36page report, airline printout, decoder source and producer full/reduced output acquired. Output-consistency check completed; raw re-decoding unrun.",
+      "next_feasible_record_or_test": "Acquire/pin original compressedFDR, NTSBCSV and applicable Boeinglayout; reproduce frame boundaries/error handling and terminal sample comparison.",
+      "dependencies": [
+        "Intel storage for listed native assets >=16MiB",
+        "Original input and decoder-version/format joins"
+      ],
+      "observable_completion_criteria": "Pinned originalbytes and reproducible independently checked terminalword/parameter extraction; preserve invalid/missing words and compare historicalCSV explicitly.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD016-A1:G02",
+      "existing_task": "AUD016-A1",
+      "priority": "P1",
+      "claim_ids": [
+        "B078",
+        "B096",
+        "B097",
+        "B100"
+      ],
+      "assertion": "Absolute clocks and recorder/radar channel joins",
+      "source_url": "https://www.ntsb.gov/about/Documents/AAL77_fdr.pdf",
+      "exact_locator_or_explicit_gap": "AA77 physical3 TimeCorrelationReport; UA93 physical1\u20132 input description",
+      "current_state": "Separate AA77 timingreport and original radar/clock calibration not acquired. Document-label arithmetic already done; it is not a clock test.",
+      "next_feasible_record_or_test": "Locate named timingreport and raw clock-reference/radar series; test offsets/drift with independentanchors, not fitted impact labels.",
+      "dependencies": [
+        "AUD016-A1:G01",
+        "UA93 native channels"
+      ],
+      "observable_completion_criteria": "Actual reference/time conventions, aligned observations, uncertainty and competing offsets tested with heldout anchors.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD016-A1:G03",
+      "existing_task": "AUD016-A1",
+      "priority": "P1",
+      "claim_ids": [
+        "B078",
+        "B096"
+      ],
+      "assertion": "Recovered-aircraft identity and physical custody",
+      "source_url": "https://www.vaed.uscourts.gov/node/150",
+      "exact_locator_or_explicit_gap": "OriginalB078 line140 and B096 line164; item-specific recovery/serial records not yet identified",
+      "current_state": "Broad original assertions preserved; individual recovery/serial/installation/intake joins not reproduced.",
+      "next_feasible_record_or_test": "Identify public recoveryinventories and serial/installation/transfer records; compare with path reconstruction without assuming title authenticates identity.",
+      "dependencies": [
+        "Named physical items and lawful public records"
+      ],
+      "observable_completion_criteria": "Source-specific item/identity/custody table with inspected pages and contrary records, or bounded documented inability to obtain originals.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD016-A1:G04",
+      "existing_task": "AUD016-A1",
+      "priority": "P1",
+      "claim_ids": [
+        "B096"
+      ],
+      "assertion": "Occupant identification separate from flight path",
+      "source_url": "https://www.vaed.uscourts.gov/node/150",
+      "exact_locator_or_explicit_gap": "OriginalB096 line164; identification record identifiers unlocated",
+      "current_state": "Flightpath source cannot substitute for uninspected identification records.",
+      "next_feasible_record_or_test": "Locate public identification-method/custody findings; omit unnecessary personal details and distinguish method from asserted outcome.",
+      "dependencies": [
+        "Item-specific identification-source locator"
+      ],
+      "observable_completion_criteria": "Document exact public methodology/outcome source and limits separately from radar/FDR; no privatebiometrics or personaldata acquisition.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD016-A1:G05",
+      "existing_task": "AUD016-A1",
+      "priority": "P1",
+      "claim_ids": [
+        "B078"
+      ],
+      "assertion": "Damage path, photographs and first-person observations",
+      "source_url": "https://www.vaed.uscourts.gov/node/150",
+      "exact_locator_or_explicit_gap": "OriginalB078 line140; each physical/witness/photo item requires its own exhibit identifier",
+      "current_state": "No complete item-specific join in this ten-claim review.",
+      "next_feasible_record_or_test": "Join named damageitems, dated sourceimages and direct witnessrecords; test sightlines/timing and contradictory accounts.",
+      "dependencies": [
+        "Authenticated exhibit/source versions"
+      ],
+      "observable_completion_criteria": "Separate assertion-level source/inspection/counterevidence dispositions; do not count derivative summaries as new witnesses.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD016-A1:G06",
+      "existing_task": "AUD016-A1",
+      "priority": "P1",
+      "claim_ids": [
+        "B097",
+        "B100"
+      ],
+      "assertion": "Flight93 audio completeness and terminal mechanism",
+      "source_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/P200056T.pdf",
+      "exact_locator_or_explicit_gap": "P200056T physical8\u20139; transcript lastlisted10:03:09; NTSBphysical2 impact10:03:11",
+      "current_state": "Selected transcript and report reviewed. Originalaudio/edit/custody/termination and a synchronized external-strike test not independently reproduced.",
+      "next_feasible_record_or_test": "Acquire native recording/readout/transcription/custody records; map utterances and actual termination on independently calibrated clock. Specify any alternative predicted signature.",
+      "dependencies": [
+        "Audio/clock/version roots",
+        "AUD016-A1:G02"
+      ],
+      "observable_completion_criteria": "Distinguish utterance endpoint, data termination, editing and synchronization using actualsources; no affirmative external-strike inference from logicalnonexclusion.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD016-A1:G07",
+      "existing_task": "AUD016-A1",
+      "priority": "P1",
+      "claim_ids": [
+        "B105",
+        "B110"
+      ],
+      "assertion": "Telephone instrument, carrier/operator and office-transfer joins",
+      "source_url": "https://www.nps.gov/flni/learn/historyculture/phone-calls-and-seating-chart.htm",
+      "exact_locator_or_explicit_gap": "Published telephone supplement639bd09f TEL01\u2013TEL06; Keytonphysical48/Voss51; May20briefing1\u20132; AA77.swf textIDs1691\u20131694. Preserve159vs154seconds, eightcalls vsseventablerows, secondcall direct vsbothcollect.",
+      "current_state": "Completed telephone supplement acquired officialcourtZIP, mirroredFD302pages and two-page May2004briefing; selected sourceimages/staticdefinitions checked. Nativecarrier/operator/PBX and caller/instrument joins remain open.",
+      "next_feasible_record_or_test": "Reuse completed sourcechecks; seek complete Sept20Airphone analysis M-INT-00158680 / 265A-NY-280350-IN-41864, April26DOJRequest14 enclosures, Jan20AALsupplement and operator/PBX records.",
+      "dependencies": [
+        "Specific call IDs and carrier/exhibit versions"
+      ],
+      "observable_completion_criteria": "Per-call source, timestamps, timezone, duration, routing and attribution uncertainty; derived count alone is insufficient.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD016-A1:G08",
+      "existing_task": "AUD016-A1",
+      "priority": "P1",
+      "claim_ids": [
+        "B110"
+      ],
+      "assertion": "Exact Keyton interview/FD302",
+      "source_url": "https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=48",
+      "exact_locator_or_explicit_gap": "Mirrored Team7Box13 FlightCallNotes/302s physical48; REQ.#35-13 000000736; investigation9/11/01 versus transcription09/14/2001; related Vossphysical51.",
+      "current_state": "Acquired releasedmirror and extraction; selectednativepages48/51 now also viewed in ownerintegration. Not authenticatedoriginalaudio/notes or canonicalagencycopy. EarlierFBI403 remains historicalroutefailure.",
+      "next_feasible_record_or_test": "Authenticate canonical provenance and any originalagentnotes/audio; compare interview/transcriptiondates and actualoffice/operatorrecords. Do not re-open mirroracquisition as missing.",
+      "dependencies": [
+        "Exact record/date locator",
+        "AUD016-A1:G07"
+      ],
+      "observable_completion_criteria": "Distinguish inspectedmirror from canonicalprovenance; pin actualagentnotes/audio if public, reconcile direct/collect accounts with rawrouting or explicitly retain limits.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD016-A1:G09",
+      "existing_task": "AUD016-A1",
+      "priority": "P1",
+      "claim_ids": [
+        "B110"
+      ],
+      "assertion": "Zero-duration attempt versus connected calls",
+      "source_url": "https://coop.vaed.uscourts.gov/moussaoui/flights.zip",
+      "exact_locator_or_explicit_gap": "OfficialflightsZIP AA77.swf statictextIDs1691\u20131694 at offsets3183776/3183822/3183887/3183950; telephone supplement TEL01\u2013TEL03.",
+      "current_state": "Zero-duration named storedpresentation label acquired/decoded; courtZIP and sourcepins available. Underlying carrierrow/classification/clock and callerattribution remain unverified; no runtimeFlash execution.",
+      "next_feasible_record_or_test": "Test nativecarrier/operatorfieldsemantics, attempt/connection/legs and officePBX/callermatching against the alreadyacquired label and preserved159vs154seconds/countconflicts.",
+      "dependencies": [
+        "Exhibitidentifier/version",
+        "AUD016-A1:G07",
+        "AUD016-A1:G08"
+      ],
+      "observable_completion_criteria": "Keep verifiedstoredlabel separate from carrier/callertruth; actualsourcefielddefinitions and provenance/routing comparison, without treating an unconnectednamedentry as proof no otherconversation.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD011-A2:G10",
+      "existing_task": "AUD011-A2",
+      "priority": "P1",
+      "claim_ids": [
+        "B160",
+        "B161"
+      ],
+      "assertion": "Chemical identification and instrument/control inputs",
+      "source_url": "https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf",
+      "exact_locator_or_explicit_gap": "Harrit physical11\u201315,23; Millette physical14,19,32,48,54,57\u201359 selected follow-up",
+      "current_state": "Later materials identification figures/appendices were inspected; conditional oxygen calculation reproduced. Native spectra/geometry/quantification/diffraction/FTIR/control files remain unacquired.",
+      "next_feasible_record_or_test": "Obtain native Al-rich spectra/quantification and measurementgeometry; inspect phase/FTIR/raw reference fits and independentcontrol records.",
+      "dependencies": [
+        "Actual specimen IDs and acquisition settings"
+      ],
+      "observable_completion_criteria": "Native data support/contrary tests of chemical phases and quantitative Al/O error; algebra on reported ratios is not measurement validation.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD011-A2:G11",
+      "existing_task": "AUD011-A2",
+      "priority": "P1",
+      "claim_ids": [
+        "B160",
+        "B161"
+      ],
+      "assertion": "Specimen-to-test, custody and matched-sample replication",
+      "source_url": "https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf",
+      "exact_locator_or_explicit_gap": "Figure19 physical14: MacKinlay1,MacKinlay2,Intermont,White; MEK collection2 atphysical11",
+      "current_state": "Four plottedtraces/three namedcollectiongroups crosswalk completed. Millette different-specimen qualification confirmed. Chip/run identity and independentcustody remain open.",
+      "next_feasible_record_or_test": "Seek actual chip/run identifiers, collection/transfer/storage and testfiles for the MEKchip, DSCcurves and postheat products; matchedspecimens/controlproducts.",
+      "dependencies": [
+        "Authenticated specimen/test join",
+        "AUD011-A2:G10"
+      ],
+      "observable_completion_criteria": "Explicit chip-to-collection-to-run table with actualnativefiles, or bounded unresolved status; do not infer no unplottedexperiment or installeddemolition.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD016-A5:G12",
+      "existing_task": "AUD016-A5",
+      "priority": "P2",
+      "claim_ids": [
+        "B129"
+      ],
+      "assertion": "Public export of reused FAA report",
+      "source_url": "https://www.oig.dot.gov/sites/default/files/cc2006085.pdf",
+      "exact_locator_or_explicit_gap": "Original frozen REVIEW.json cited faa-norad-mineta-2026-10-26/REPORT.md",
+      "current_state": "Closed at integration-file preparation: exact historical report copied under dependencies; publication/ref verification pending.",
+      "next_feasible_record_or_test": "Verify outgoing byteidentity and remote publishedblob for the explicit dependency link.",
+      "dependencies": [
+        "Current authorized publicsafe packet"
+      ],
+      "observable_completion_criteria": "Remote file hash matches historical named report; this closes a publicationjoin only, not raw clock or administrative-action tests.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD016-A5:G13",
+      "existing_task": "AUD016-A5",
+      "priority": "P2",
+      "claim_ids": [
+        "B188"
+      ],
+      "assertion": "Public export of reused steel report",
+      "source_url": "https://www.fema.gov/pdf/library/fema403_apd.pdf",
+      "exact_locator_or_explicit_gap": "Original frozen REVIEW.json cited evidence-preservation-chains-2026-10-26/STEEL-REPORT.md",
+      "current_state": "Closed at integration-file preparation: exact historical report copied under dependencies; publication/ref verification pending.",
+      "next_feasible_record_or_test": "Verify outgoing byteidentity and remote publishedblob for the explicit dependency link.",
+      "dependencies": [
+        "Current authorized publicsafe packet"
+      ],
+      "observable_completion_criteria": "Remote file hash matches historical named report; this closes a publicationjoin only, not specimen attribution/custody or preservation decisions.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD005:G14",
+      "existing_task": "AUD005",
+      "priority": "P1",
+      "claim_ids": [
+        "B129"
+      ],
+      "assertion": "FAA knowledge/correction and recommendation disposition",
+      "source_url": "https://www.oig.dot.gov/sites/default/files/cc2006085.pdf",
+      "exact_locator_or_explicit_gap": "CC-2006-085 executive summary and printed8\u201312; existing FAA postreport-owner study",
+      "current_state": "Source-level notification errors, liaison known-noncorrection, recommendations and conflicting accounts already audited. Actual postreport correction/action disposition remains a separate owned investigation.",
+      "next_feasible_record_or_test": "Read current owner continuation before newwork; locate actual correctedanswer/transmittal, managementdecision/action/noaction and recommendationclosure.",
+      "dependencies": [
+        "Investigate9/11conspiracy owner; preserve division of responsibility"
+      ],
+      "observable_completion_criteria": "Actual response/decision/receipt distinguished from investigative closure; no recreated task based solely on frozen old gap.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD011:G15",
+      "existing_task": "AUD011",
+      "priority": "P1",
+      "claim_ids": [
+        "B188"
+      ],
+      "assertion": "Steel preservation authority and item attribution",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf",
+      "exact_locator_or_explicit_gap": "NCSTAR1-3B TableA-1/TableA-7 W-14A/W-14B; AppendixD physical14\u201316; NCSTAR1-3 printed114\u2013115",
+      "current_state": "FEMArows/NISTcandidate inventory and fullAppendixD recovered/compared; earlier14page-mirror gap closed. Originaldecisions/attribution and currentcustody unverified.",
+      "next_feasible_record_or_test": "Seek specific preservationrequests/replies, authorization/contracts, yard/coupon/transfer and candidateattribution/photos; retain Sample1 and C12 separate.",
+      "dependencies": [
+        "Item/record identities; currentcustody/access before any futurephysicaltest"
+      ],
+      "observable_completion_criteria": "Item-level supporting/contrary custody/attribution and decision chain; preserve survivors, uncertain origin and documented losses without forced reconciliation.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    },
+    {
+      "id": "AUD016:G16",
+      "existing_task": "AUD016",
+      "priority": "P2",
+      "claim_ids": [
+        "B078",
+        "B096",
+        "B097",
+        "B100",
+        "B105",
+        "B110",
+        "B160",
+        "B161",
+        "B129",
+        "B188"
+      ],
+      "assertion": "Film edition and timestamp attribution",
+      "source_url": "https://github.com/AveLyra/911-conspiracy-investigation",
+      "exact_locator_or_explicit_gap": "Frozen CLAIMS-FROZEN.json film_attribution/film_timestamp fields",
+      "current_state": "Exactcut/timestamps remain unverified; tenclaimselection deliberate/nonrandom.",
+      "next_feasible_record_or_test": "Inspect the actual authorized edition/timecode for each claim; retain sourceedition/hash and disconfirmingcontext.",
+      "dependencies": [
+        "Legitimate exactfilmcut and storage"
+      ],
+      "observable_completion_criteria": "Actual audiovisual segment supports wording/time attribution, or explicitcutgap. No investigation-wide error-rate estimate from selectedclaims.",
+      "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+    }
+  ],
+  "whole_investigation_complete": false
+}
