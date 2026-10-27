@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+"""OCR rendered, visible pages only; never extract text behind PDF redactions.
+
+Usage: python3 ocr_visible_pages.py RENDER_DIRECTORY RENDER_RECEIPTS_JSON OUTPUT_JSON
+Uses installed local Tesseract. Does not modify sources/images or use a service.
+"""
+from concurrent.futures import ThreadPoolExecutor
+import hashlib
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+render_root, manifest, output = map(Path, sys.argv[1:])
+entries = json.loads(manifest.read_text())
+engine = "/opt/homebrew/bin/tesseract"
+version = subprocess.check_output([engine, "--version"], text=True).splitlines()[0]
+jobs = [(doc["naid"], page) for doc in entries for page in doc["pages"]]
+
+
+def read(job):
+    naid, page = job
+    image = render_root / page["filename"]
+    assert hashlib.sha256(image.read_bytes()).hexdigest() == page["sha256"]
+    command = [engine, str(image), "stdout", "-l", "eng", "--psm", "3"]
+    result = subprocess.run(
+        command, capture_output=True, text=True,
+        env=dict(os.environ, OMP_THREAD_LIMIT="1"), check=True, timeout=45,
+    )
+    return {
+        "naid": naid, "physical_page": page["page"],
+        "render_sha256": page["sha256"], "engine": version,
+        "settings": "-l eng --psm 3; OMP_THREAD_LIMIT=1; 110 dpi input",
+        "exit": result.returncode, "text": result.stdout, "stderr": result.stderr,
+        "scope": "Visible raster OCR; may misread letters, dates, handwriting and layout",
+    }
+
+
+with ThreadPoolExecutor(max_workers=3) as pool:
+    rows = list(pool.map(read, jobs))
+with output.open("x") as handle:
+    json.dump(rows, handle, indent=2)
+    handle.write("\n")
+print(json.dumps({"pages": len(rows), "engine": version, "all_exit_zero": True,
+                  "full_originals_unchanged": "Verify hashes separately",
+                  "visual_review": "Separate from OCR success"}))

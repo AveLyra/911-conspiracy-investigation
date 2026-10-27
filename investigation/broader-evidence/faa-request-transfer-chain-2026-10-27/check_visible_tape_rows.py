@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+"""Independent raster-OCR control for manual tape windows, not native decoding.
+
+Usage: python3 check_visible_tape_rows.py SELECTED_TABLE_OCR_JSON LABEL_TRANSCRIPTION_JSON
+Prints results and returns 1 if any OCR count/window sequence fails to match.
+Does not repair OCR, change the source, fit clocks or certify a shipment.
+"""
+import json
+from pathlib import Path
+import re
+import sys
+
+ocr = json.loads(Path(sys.argv[1]).read_text())
+manual = json.loads(Path(sys.argv[2]).read_text())
+expected = [row["printed_window"] for row in manual["tapes"]]
+results = []
+for block in ocr:
+    found, unmatched = [], []
+    for line in block["text"].splitlines():
+        if "-" not in line:
+            continue
+        match = re.search(r"(?<!\d)(\d{4}-\d{4})(?!\d)", line)
+        if match:
+            found.append(match.group(1))
+        else:
+            unmatched.append(line)
+    results.append({
+        "naid": block["naid"], "physical_page": block["physical_page"],
+        "expected_manual_rows": len(expected), "automated_rows": len(found),
+        "manual_windows": expected, "raw_OCR_windows": found,
+        "unmatched_OCR_lines": unmatched, "matches": found == expected,
+    })
+passed = all(row["matches"] for row in results)
+print(json.dumps({"scope": "OCR sequence control only", "results": results,
+                  "all_OCR_sequences_match_manual": passed}, indent=2))
+raise SystemExit(0 if passed else 1)

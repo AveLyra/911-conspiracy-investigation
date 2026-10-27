@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-27T19:02:23.971766+00:00",
+  "checks": [
+    {
+      "check": "Four acquired PDF signatures/lengths/hashes and unchanged originals",
+      "result": "pass",
+      "count": 4
+    },
+    {
+      "check": "37 render hashes and per-page visual-reading ledger",
+      "result": "pass",
+      "count": 37,
+      "scope": "Visual observation; not native-email or event authentication"
+    },
+    {
+      "check": "Visible raster OCR commands",
+      "result": "pass",
+      "count": 37,
+      "engine": "tesseract 5.5.2",
+      "scope": "Execution success does not verify OCR accuracy"
+    },
+    {
+      "check": "Two independent raster OCR table controls",
+      "result": "one pass, one fail; failure exactly reproduced",
+      "raw_exit": 1,
+      "scope": "14 vs13 automatic windows; missing IMP RC row is visible in source; no source-content repair or test weakening"
+    },
+    {
+      "check": "Manual table/role accounting",
+      "result": "pass",
+      "tape_rows": 14,
+      "transcript_rows": 12,
+      "initial_statement_role_rows": 20,
+      "late_labels": 1,
+      "scope": "Rows only, no unique-person/received-item inference"
+    },
+    {
+      "check": "Three previously pinned plan/report hashes unchanged; earlier completed unit retained",
+      "result": "pass",
+      "scope": "No factual/legal validation inferred"
+    }
+  ],
+  "all_tests_passed": false,
+  "failure_retained": "One OCR control fails; manual source reading and raw failure are both preserved",
+  "unperformed": [
+    "Native-mail authentication",
+    "Receiver/payload acceptance",
+    "Clock calibration/audio sample fit",
+    "Complete native audio decoding/custody test",
+    "FAA corrected QFR/signed disposition",
+    "Other three tracks substantive tests"
+  ]
+}

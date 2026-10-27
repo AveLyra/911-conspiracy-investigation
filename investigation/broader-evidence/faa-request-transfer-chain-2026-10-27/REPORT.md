@@ -1,0 +1,68 @@
+# FAA request 01-096: requests, dispatch claims, receipts and rerecording rules
+
+October 27, 2026. Existing original-record plan, AUD016-A1 / TC01–TC04. This unit narrows the radar/voice transfer gap identified in the preceding native-inventory study. It does not complete the separate corrected-QFR and administrative-disposition questions PD01–PD04.
+
+Four agency-hosted scan packets now supply an actual request, a refinement, an upload email and reported read receipt, an October shipment wrapper and item list, and follow-up concerning an initially missing statement. They also contain specific rerecording instructions. These are stronger sources for the sender-side chain than an inventory alone. Native email, website/download logs, recipient acceptance, original audio and copy-generation logs remain unacquired. No finding of concealment, fabricated evidence or complete delivery follows from these scans.
+
+## Source copies and reading scope
+
+All four exact public download links were observed in the National Archives catalog. The [official finding aid](https://www.archives.gov/research/foia/faa-finding-aid-36-47) identifies these ZID folders. Acquisition was October 27, 2026, approximately 18:49 UTC; all responses were HTTP 200, `application/pdf`. The preserved sources are released scans, not native emails or authenticated mail-system exports.
+
+| Short ID | Official catalog / exact released PDF | Pages; bytes; SHA-256 |
+| --- | --- | --- |
+| R | [7596524](https://catalog.archives.gov/id/7596524) / [ZID-230 request packet](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-230-NTSB-request-01-096-REDACT-SEALED.pdf) | 8; 541,234; `3b40dd9e4f1091024d715ea5fc1eb3edc061bf4e6ed9e1e57b52d4b98acb18f2` |
+| E | [7596437](https://catalog.archives.gov/id/7596437) / [ZID-116 annotated emails](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-116-Emails-ref-NTSB-obscured.pdf) | 9; 941,116; `6007fbf4bfc505edf5439b7a7b9f2570e75df4c7525c07350679a4c6658fadc0` |
+| F | [7596442](https://catalog.archives.gov/id/7596442) / [ZID-120 fax covers and emails](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-120-FAX-covers-%26-emails-support-for-NTSB-plus.pdf) | 12; 408,894; `82caff9943c889e69f9f5a4275db89026a66dc2fc40cb1bfe0fd7c82ae32fd96` |
+| P | [7596612](https://catalog.archives.gov/id/7596612) / [ZID-78 NTSB information](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-78-NTSB-information.pdf) | 8; 964,197; `b7b318f6a9b2f342ad23c143a88b047f601a85ea95a5ba8e28aa7bdd6bc04082` |
+
+All **37 physical pages were visually inspected**, including blank/backside and repeated pages. P page 8 was additionally rendered at 220 dpi for handwriting. Visible-page OCR was performed locally; no text behind redactions was extracted and no concealed identifier was reconstructed. Source images govern the quoted readings; raw OCR errors are preserved separately. PDF/layout inspection and text-diff verification are separate operations. Catalog use is labeled unrestricted; the access note separately warns that some FAA records have redactions. Hosting and labels do not authenticate every historical assertion.
+
+## What each stage actually establishes
+
+| Printed date / source locator | Recorded statement or artifact | Evidentiary limit |
+| --- | --- | --- |
+| September 20; R pp. 2–3, E pp. 4, 6 | Request 01-096 seeks eight categories: enroute NTAP, terminal data, DART tracking, reports by controllers/pilots, aircraft-contact recordings, landline communications, personnel statements and related transcripts/logs. Response deadline October 9. | A request establishes scope sought, not that every category existed or was delivered. |
+| September 24; P p. 7 | Sender says a certified HNN R/HNN RA cassette pair was sent overnight to Doug Gould; regional reply says thanks. | Sender report and regional acknowledgment; not a courier delivery record or recipient acceptance of both tapes. This is distinct from the October shipment. |
+| September 24–25; P pp. 5–6 | Refinement asks for routine portions of whole routes and underlying terminal sources, tracking-only DART runs, any/all available ERIT data, and inventories of available/posted files. | Request refinement and selected product specification, not a received payload or a complete master-data inventory. ERIT's technical definition is not established in this unit. |
+| September 25, 3:36 PM; P p. 4 | Sender says radar data were placed on the website and maps five old descriptions to exact posted filenames. | A posting assertion and naming map. Actual posted bytes, manifest and download history remain absent. |
+| September 26, 7:10:42 AM; P p. 3 | Scanned receipt reports the September 25 message was read by the addressed account. | Supports a reported message-read event. It does not show which files were downloaded, their integrity, NTSB receipt, or mail-system authentication. |
+| October 9; R pp. 6–7 | Signed route slip and sender's FedEx airbill address support data to Robin Holmes at FAA headquarters. | Shipment preparation/dispatch evidence. No delivery scan, recipient signature or content verification acquired. |
+| October 10, 9:13 AM; R p. 8; F pp. 2, 4, 10 | Sender says transcripts, voice tapes, statements, operational logs and an ALNOT were forwarded October 9. One unfinished statement was omitted, with a later fax proposed. | A contemporaneous sender account explicitly admitting an incomplete item; repeated quotations are the same account. |
+| October 11; R pp. 4–5; P pp. 1–2; F pp. 1–2, 4, 10 | Item list says material was submitted to NTSB October 9 and marks IMP RC–KATH as faxed October 11. Cover identifies two statement pages; sender reports contacting Robin and faxing them. Regional reply says thanks. | Actual underlying statement, successful fax transmission report and recipient confirmation remain missing. Two pages are not two independent witnesses. The typed NTSB submission claim and FAA-addressed wrapper remain separate observations. |
+
+All times above are **as printed**. Their time zones and clock calibration have not been independently established. The forwarding chain also prints a September 21 “Just proceed” message at **7:26 AM**, above a “proceed or HOLD off?” question dated **7:29 AM** (R p. 1; E p. 2). Both values remain preserved. An apparent three-minute ordering difference is not proof of retroactive editing or a measured clock offset; native message records would be needed to test it.
+
+## Record variants and counts that matter
+
+The original request's subject and aircraft-identification fields print **“UAL 77 and 93”** alongside AAL11/AAL77 (R p. 2; E p. 4). The later refinement names **UAL175** (P p. 5). We preserve both labels without silently correcting one. They do not establish that a different aircraft existed or that the request was fraudulently changed. A contemporaneous correction/version chain could determine how the request was understood and executed.
+
+The five posted names are `ZID_ntapAAL77A.TXT`, `ZID_AAL77dartA.TXT`, `ZID_AAL77dartB.ZIP`, `ZID_AAL77dartC.ZIP` and `ZID_AAL77dartD.TXT` (P p. 4). E p. 7 has a handwritten naming sheet. These names are acquisition targets, not authenticated joins to the differently named NTAP file previously acquired. No matching byte hashes or original website manifest were supplied in these packets.
+
+The submission list contains **14 tape-window rows: 11 under REFERENCE AAL77 and three under REFERENCE UAL93**; **12 transcript-position rows**; and **20 initial statement-role rows**, plus the separate late IMP RC entry (R pp. 4–5; P pp. 1–2). Role rows are not unique people. The two scan copies do not make 28 tapes or 40 independent statements. [LABEL-TRANSCRIPTION.json](LABEL-TRANSCRIPTION.json) preserves every tape window and the limited count definitions.
+
+HNN R is listed at both **1238–1339** and **1234–1309**; HNN RA at **1238–1339** and **1234–1320**. DAC R is **1249–1313**, while DAC RA is **1249–1317**. These values remain alongside the earlier master-reel, draft, cassette, SATORI and NTSB-study labels. The tape-list page itself does not specify a timebase. No particular listed tape has yet been joined by actual audio samples to the NTSB composite or a master reel. The listed longer windows therefore neither establish missing audio in a particular derivative nor prove that derivative complete. This advances the comparison with actual source labels; it does not resolve the prior timing differences.
+
+## Rerecording rules and scope controls
+
+P page 8, a handwritten October 2 telephone-call record, says to record **Track A from five minutes before initial contact through five minutes after last contact**, without stopping when “R.C.” starts. It separately describes **“Track B” (“Radar Posn Alone”)**, from the tracker plugging in and the radar position being on channel B/select mode. It says a B-track recording is unnecessary if that position makes no further pertinent transmissions. These are voice-position rerecording instructions, not a newly acquired radar-sensor stream. The exact hardware/channel implementation, meaning of R.C., tapes to which the instructions applied, and actual execution remain unverified. The note supports a concrete copy-selection inquiry; it does not demonstrate intentional removal of relevant speech, erasure, or survival of master tapes.
+
+The same page's header places `10/2/01` in the TIME field and `0945` in DATE, while the bottom date also reads `10/2/01`. These printed/handwritten field placements are retained as a low-weight form-label issue. They are not used to calibrate an event clock.
+
+The refinement wrapper says to supply only information specified in the request, “nothing additional” (P p. 5). The underlying request also asks for entire routes, all available underlying sources, any/all ERIT and availability inventories (P pp. 5–6). Both passages are necessary to evaluate scope. The words “nothing additional” alone do not establish suppression; neither does the broad request prove comprehensive production. The original DART request and later tracking-only specification should be tested against the actual available products, selection instructions and delivered manifests.
+
+F page 9 explicitly describes **two fax runs: front sides, then back sides**; F p. 11 similarly describes fronts and reverses. A request to confirm receipt appears at F p. 12. Thus a visible front-side-only set cannot establish complete statements. F p. 3 discusses changing a request-letter date in a **separate January 18, 2000 N74CC matter**. It is not evidence that September 11 data were altered. E's paper-obscured and agency-supplied unobscured versions, annotations, blank backs and repeated pages are retained without treating them as separate corroborating events.
+
+## Actual controls, failures and preservation
+
+All four source lengths/hashes and 37 render hashes are retained; no originals were changed. The selected tape-table OCR was checked against the manual reading of both images. One scan's OCR reproduces all 14 time windows. The other yields **13**, because OCR reads the IMP RC row as **“IMP RE 91351-1359.”** Both page images visibly show **IMP RC 1351–1359**. OCR also reads BTV as BIV. Raw OCR and the failed sequence-control result (exit 1) are preserved; the test was not changed to obtain a pass. This is our extraction limitation, not a source disagreement. Handwriting OCR was too poor for reliable verbatim transcription; the reported instruction uses the higher-resolution visual reading. [OCR-CONTROL-RESULT.json](OCR-CONTROL-RESULT.json) and its code record the narrow scope.
+
+Only safe selected public-source readings, source links/hashes, table/control artifacts and original research are the publication payload. Native PDF bytes, full OCR and page rasters remain preserved locally; signatures, contact/logistics identifiers and concealed values are not republished. Earlier studies and conflicting values remain unchanged. Exact text additions are preserved under diffs/; no case-fact promotion, private push, outreach, fee, new request, deletion or history rewrite occurred.
+
+## Next indispensable records
+
+1. Native request/refinement/email and receipt records; website file inventory, upload/download logs, retained five-file payload and hashes. The scanned read receipt is now acquired; actual payload receipt is not.
+2. Recipient-side FAA/NTSB intake inventories, courier delivery evidence, fax completion/acceptance and the actual IMP RC–Kath statement, including both sides and attachments. The acquired sender airbill is not a missing delivery signature.
+3. Original/certified audio, master-to-copy logs, channel maps, selection/quality-control instructions and timecode-reader verification/calibration worksheets. These are required to test the expanded tape-label comparison and October 2 copying rules.
+4. For the separate FAA knowledge/correction track, the actual corrected QFR/receipt, signed action/no-action decision and recommendation-disposition records remain open. Telephone, materials and steel requirements remain active; this unit claims no completion of their substantive tests.
+
+Ordinary staged collection and copying remain plausible competing accounts: the records openly request broad data and acknowledge an initially unfinished statement. That does not establish compliance or explain every discrepancy. Testing a concealment hypothesis requires the actual available-versus-selected-versus-delivered records and media, with contrary findings retained. The overall goal remains active and incomplete.
