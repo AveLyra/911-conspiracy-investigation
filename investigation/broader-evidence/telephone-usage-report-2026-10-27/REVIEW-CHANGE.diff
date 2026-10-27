@@ -1,0 +1,10 @@
+diff --git a/Users/admin/docs/911-worktrees/broader-evidence-review-2026-10-26/research/broader-evidence-review-2026-10-26/telephone-usage-report-2026-10-27/drafts/verify-before-review.py b/Users/admin/docs/911-worktrees/broader-evidence-review-2026-10-26/research/broader-evidence-review-2026-10-26/telephone-usage-report-2026-10-27/public-release/verify_comparison.py
+index c4f7852c..59ff0090 100644
+--- a/Users/admin/docs/911-worktrees/broader-evidence-review-2026-10-26/research/broader-evidence-review-2026-10-26/telephone-usage-report-2026-10-27/drafts/verify-before-review.py
++++ b/Users/admin/docs/911-worktrees/broader-evidence-review-2026-10-26/research/broader-evidence-review-2026-10-26/telephone-usage-report-2026-10-27/public-release/verify_comparison.py
+@@ -48,5 +48,4 @@ if [r['early_table_row'] for r in cross['rows']]!=list(range(1,9)):
+ print(json.dumps(dict(zip_hash_verified=True,swf_hash_verified=True,
+       static_pins_checked=len(checks),candidate_minute_matches=rows,
+       early_numbered_rows=len(rows),all_eight_minute_labels_agree=all(x['minute_labels_agree'] for x in rows),
+-      unchanged_duration_pair_seconds=[159,154],
+       scope='Integrity, static text and candidate minute-label accounting only; not native carrier decoding, call identity, clock calibration, eight completed calls, or proof of the reason for later omission.'),indent=2))
