@@ -1,0 +1,121 @@
+{
+  "scope": "Manual printed identifier comparison and timestamp-label arithmetic only; no native CDR/schema, clock calibration or caller identification",
+  "entities": [
+    {
+      "reader_page": 15,
+      "sha256": "7a011e1601eba15f8f1636eb5944dca70f5e48bcc0f5b78b4915f9db86347941",
+      "bytes": 93154,
+      "matches": true
+    },
+    {
+      "reader_page": 16,
+      "sha256": "7559e9f5ea45662aa62f0e7dafef38dfd8ea39b9f2198f1b0395185dc1f9b1aa",
+      "bytes": 94774,
+      "matches": true
+    },
+    {
+      "reader_page": 20,
+      "sha256": "1789b8a646a1be546956df9ef56cae80363ef66b193f9ca43ed9c647ce0d7baa",
+      "bytes": 91879,
+      "matches": true
+    },
+    {
+      "reader_page": 21,
+      "sha256": "b21fd825d9934b6e051bcf5f4a1c8fe2acc250b2fd16913e944419fd8cd21b11",
+      "bytes": 95819,
+      "matches": true
+    }
+  ],
+  "groups": [
+    {
+      "group": "G18",
+      "rows": [
+        "E18-M",
+        "E18-D"
+      ],
+      "same_transcribed_csc": true,
+      "same_transcribed_gs": true,
+      "inference_limit": "Printed identifier grouping in a qualified mirror; not physical leg/caller/recipient/custody authentication"
+    },
+    {
+      "group": "G25",
+      "rows": [
+        "E25-M",
+        "E25-R",
+        "E25-D"
+      ],
+      "same_transcribed_csc": true,
+      "same_transcribed_gs": true,
+      "inference_limit": "Printed identifier grouping in a qualified mirror; not physical leg/caller/recipient/custody authentication"
+    }
+  ],
+  "cross_group_identifiers_differ": true,
+  "G18": [
+    {
+      "id": "E18-M",
+      "printed_duration": 0,
+      "start_to_event_seconds": 46
+    },
+    {
+      "id": "E18-D",
+      "printed_duration": 0,
+      "start_to_event_seconds": 59
+    }
+  ],
+  "G25": {
+    "menu_start_to_event_seconds": 28,
+    "start_to_disconnect_seconds": 193,
+    "start_to_billing_seconds": 34,
+    "billing_to_disconnect_seconds": 159,
+    "printed_duration": 159,
+    "route_event_minus_billing_seconds_if_each_reading": {
+      "07:26:18": -4,
+      "07:26:28": 6
+    },
+    "route_reading_selected": false
+  },
+  "checks": [
+    {
+      "check": "Reader15 entity pin",
+      "passed": true
+    },
+    {
+      "check": "Reader16 entity pin",
+      "passed": true
+    },
+    {
+      "check": "Reader20 entity pin",
+      "passed": true
+    },
+    {
+      "check": "Reader21 entity pin",
+      "passed": true
+    },
+    {
+      "check": "G18 transcribed CSC/GS equality",
+      "passed": true
+    },
+    {
+      "check": "G25 transcribed CSC/GS equality",
+      "passed": true
+    },
+    {
+      "check": "Two actual source groups have different transcribed identifiers",
+      "passed": true
+    },
+    {
+      "check": "G18 two zero fields coexist with 46/59-second label spans",
+      "passed": true
+    },
+    {
+      "check": "G25 193 total / 34 pre-billing / 159 billing interval",
+      "passed": true
+    },
+    {
+      "check": "Ambiguous routed time preserved; no unique signed offset",
+      "passed": true
+    }
+  ],
+  "passed": 10,
+  "total": 10
+}

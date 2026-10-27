@@ -1,0 +1,69 @@
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..0f76e604
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,63 @@
++# Telephone event groups: printed identifiers, zero fields and one reading caution
++
++October 27, 2026. Original-record goal track 2; existing AUD016-A1 / TC05-B105 / TC06-B110. This is an additive test of selected held carrier-record images, not a new authenticated carrier release or a completed call reconstruction.
++
++**The selected records can now be grouped by their printed CSC/GS identifiers, rather than by start time alone. Two records with zero duration share an identifier and have start-to-event label spans of 46 and 59 seconds. Another printed identifier occurs on both zero-duration and 159-duration records.** These facts concern the printout's fields. They do not establish a conversation, its caller, its recipient, or the operational meaning of zero.
++
++This pass also qualifies our own earlier precise transcription of the routed-event time. Its source image has not changed. The former **07:26:28** reading remains preserved; the crossed digit is now recorded as uncertain between **07:26:18** and **07:26:28**. This is a reading limitation, not two historical source versions or evidence of tampering.
++
++## Inputs and actual reading scope
++
++The held [public reader](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record) supplies hosted JPEG reproductions of released records. The earlier [carrier-enclosure study](../telephone-carrier-enclosures-2026-10-27/README.md) acquired 28 current images and documented its page gap. This pass reuses unchanged images, checks their pinned bytes and reads five selected event blocks on reader pages 15, 16, 20 and 21. It does not acquire a complete agency-native Request 14 delivery, authenticate the uploader/release chain, inspect every AA77 event anew or provide native switching data.
++
++`SOURCE-PINS.json` gives exact public image URLs, source relationship, original access UTC, byte sizes and SHA-256 values. `EVENT-OBSERVATIONS.json` gives reader/Bates/block/native-pixel rectangles and safe field transcriptions. Full CSC/GS values, inspection crops and OCR remain local; they are not published. The public group names G18 and G25 are our temporary labels for this comparison, not carrier-provided caller identities or globally unique call IDs.
++
++| Selected event | Source locator | Start Time | Event label and Event Time | Duration |
++|---|---|---|---|---|
++| E18-M / group G18 | [Reader 15, lower block](https://html.scribdassets.com/5bafzdomdce6sz3/images/15-d3c94df2c0.jpg), M-WFA-00000636 | 07:18:58 | OSF Menu: Valid Selection (25), **07:19:44** | **0** |
++| E18-D / group G18 | [Reader 16, upper block](https://html.scribdassets.com/5bafzdomdce6sz3/images/16-6aa0e8fe82.jpg), M-WFA-00000637 | 07:18:58 | Air Party Disconnect (4), **07:19:57** | **0** |
++| E25-M / group G25 | [Reader 20, lower block](https://html.scribdassets.com/5bafzdomdce6sz3/images/20-b3a78ffadd.jpg), M-WFA-00000641 | 07:25:48 | OSF Menu: Valid Selection (25), **07:26:16** | **0** |
++| E25-R / group G25 | [Reader 21, upper block](https://html.scribdassets.com/5bafzdomdce6sz3/images/21-1a330ff42d.jpg), M-WFA-00000642 | 07:25:48 | Routed to AT&T OSPS (29), **07:26:18 / 07:26:28 reading uncertainty** | **0** |
++| E25-D / group G25 | [Reader 21, lower block](https://html.scribdassets.com/5bafzdomdce6sz3/images/21-1a330ff42d.jpg), M-WFA-00000642 | 07:25:48 | Air Party Disconnect (4), **07:29:01** | **159** |
++
++Times in this table are the printed source labels, dated September 11, 2001. No time zone or clock calibration was newly established. Source order is retained. A menu-selection label, air-party-disconnect label or handwritten incomplete annotation is not a native network definition. No person is identified by the matching headers.
++
++## J01 — What the identifier comparison adds
++
++Manual source-pixel transcriptions give the same CSC and GS strings for the two G18 records, and the same CSC and GS strings for the three G25 records. The G18 and G25 strings differ. The verifier tests these within-group equalities and the contrary cross-group comparison; it does not infer a match from the common Start Time or populate unreadable values from the desired result. The raw comparison inputs remain local, with their locators and source-image pins available publicly.
++
++This strengthens a limited association within the mirrored printout. It does not prove that a printed identifier uniquely represents a physical call, an end-to-end connection or an operator leg, or that these are all events belonging to it. The system's identifier allocation/reuse rules, complete event export and source-to-report transformation remain missing. A common source label is not an independent witness. An assembly error, copied/misassociated key or incorrect transcription could weaken the association; a native export and data dictionary would test it.
++
++## J02 — Zero is not a measurement of the whole displayed start-to-event span
++
++For G18, **07:18:58 to 07:19:44 = 46 seconds**, and **07:18:58 to 07:19:57 = 59 seconds**, while both Duration fields say **0**. This establishes a distinction between the printed Duration and simple subtraction of those labels in these selected records. It does not establish 59 seconds of conversation, a completed operator transfer or an actual elapsed interval measured by calibrated clocks. Incorrect/default fields or reporting transformations remain possible.
++
++For G25, the selected menu/routed records say zero while the disconnect record says 159 under the matching printed identifiers. The latter prints Billing Start and Answer Supervision **07:26:22**. Its Start Time to Event Time span is **193 seconds**; Start Time to Billing Start is **34 seconds**; Billing Start to Event Time is **159 seconds**. This reuses the earlier arithmetic but now ties the selected rows by printed identifiers as well. It is not independent corroboration of a conversation or a universal billing rule.
++
++The G18 zero records remain alongside the court's later **09:18:58 / zero / unconnected** label and the September 20 report's early connected-to-office description. No cause or preferred account is selected. A conditional two-hour label comparison does not itself establish a clock conversion or link the early unnamed caller, Barbara Olson, a particular operator transaction and an office recipient. The newly tested header match does not supply those missing joins.
++
++## J03 — A precise field in our earlier report now requires a reading caution
++
++The earlier report's C04 and FIELD-OBSERVATIONS CE01 record **07:26:28** for the upper routed event on reader 21. A new enlarged source-pixel view places **07:26:18** among the readings of the tens-of-seconds digit crossed by the fax line. We retain both readings without selecting one because it produces a more orderly sequence. The current safe observation deliberately has no single Event Time value for E25-R; both strings and the reason are preserved in `TRANSCRIPTION-CAUTION.json`.
++
++Relative to the lower block's 07:26:22 Billing Start, those readings would give **minus 4 seconds** or **plus 6 seconds**. Neither offset is treated as an established signed timing anomaly. The unchanged 904 × 1242 source image, an authenticated higher-resolution scan/native record and the field/clock definitions are the relevant discriminating inputs. The old report and CE01 remain unchanged; the exact new-addition diff and earlier-document hash status accompany this notice. This concerns our transcription precision, not a changed carrier record.
++
++The lower 159 field, 07:29:01 event and the G18 comparisons do not depend on selecting the routed-event digit. A separate check of the earlier reader-15 Billing Start/Answer Supervision shows the already recorded 07:16:59 labels; it adds no new historical finding and does not promote search-engine OCR into source truth.
++
++## What remains unresolved
++
++The earlier **154 versus 159 seconds**, **eight calls versus seven displayed briefing rows**, **direct versus collect**, and **early connected versus later unconnected** records remain preserved. This pass supplies neither the actual operator/office records nor a historical reconciliation. It does not establish fabricated calls, substitution, concealment or a cover-up.
++
++Priority originals remain the complete Request 14 delivery, later Bates version and attachment/receipt/assembly history, including the existing **609–631 / fax 011–033** gap; native CDR events, keys and field definitions; OSPS billing/tickets and collect/transfer/bridge legs; office switch/transfer records; the original September 20 analysis and attachments; and caller/leg/source-to-exhibit worksheets. A completed mirrored form is not source interview notes/audio. New exact-Bates, NARA/Commission and Claircom-definition queries did not acquire these records; search failure is not proof of agency absence or withholding. Failed unchanged endpoints were not repeated.
++
++The strongest objection to treating the zero field as suspicious evidence is that the same source shows different event/domain/duration contexts, and no native dictionary has been obtained. Conversely, that ordinary possibility does not establish the disputed caller/recipient mapping or erase the early/later descriptions. The sought records could support or weaken each interpretation.
++
++## Verification, revision and goal status
++
++`verify_event_groups.py` ran on the four pinned source images and five manually transcribed event rows: **10 of 10 scoped checks passed**, covering entity pins, within/between-group identifier comparisons, label arithmetic and preservation of the uncertain routed-time alternatives. The software checks the supplied transcription, not its historical truth or automatic character recognition. Exact-pixel header/field crops were read separately. No entire telephone record census, original-record authentication, calibrated clock test or physical experiment was performed.
++
++To reproduce, obtain the linked image entities and verify their hashes; independently transcribe the five CSC/GS fields into a local list keyed by E18-M, E18-D, E25-M, E25-R and E25-D; run the script with the image directory, EVENT-OBSERVATIONS.json, that local identifier file and a new output filename. Raw identifier values are excluded from the public output. Do not treat the safe group labels as independent proof that the manual transcription was correct.
++
++Earlier telephone reports, observations and results retain their preceding hashes. This report is a new additive document with a full addition diff and point-by-point checklist. Raw screenshots, network/financial/contact data, search-return OCR and local coordination records are excluded from publication. No agency contact, new request, fee, private material, personal mailbox access, deletion, overwrite or private push occurred.
++
++Neither this comparison nor earlier publication checks complete the other source/custody investigations. FAA PD01–PD04, the telephone originals above, recorder continuity/custody/clock tests, materials native/specimen joins, and steel preservation/intake/attribution chains remain open. The five-track goal remains active.
