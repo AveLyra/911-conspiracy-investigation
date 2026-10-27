@@ -1,0 +1,67 @@
+# Steel attribution: an earlier inventory and specific missing records
+
+October 27, 2026. Original-record plan track 5; existing B188/H005 and AUD011/AUD016. This is a documentary chronology and acquisition supplement. It does not determine historical building origin or complete the steel custody investigation.
+
+## What this pass adds
+
+An acquired official **June 2004** NIST progress report already lists **W-14A or A** and **W-14B** as unidentified wide-flange sections. The same two entries were previously checked in the September 2005 final inventory. The new held source therefore places the published unidentified status in June 2004, about 15 months before that final edition. It does not date the underlying decision or explain it. [June 2004 report, physical page 163 / printed F-47, Table 1-7](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication1000-5v3.pdf#page=163); [September 2005 inventory, physical page 96 / printed 68, Table A-7](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=96).
+
+FEMA's field spreadsheet labels the candidates WTC#7. Both accounts remain preserved. Neither the field label nor the later unidentified classification is accepted here as controlling evidence of the pieces' actual origin. The missing item-specific attribution rationale remains the important unresolved record. [FEMA Appendix D, physical page 16, Steel Data Collection Summary 2 of 13, rows 20–21](https://www.fema.gov/pdf/library/fema403_apd.pdf#page=16).
+
+The progress report also describes an intake-photography practice and original-code/alias handling. Those statements identify concrete records to obtain; this pass has not obtained the W14A/W14B intake photographs, transfer sheets, classification worksheets or native spreadsheet. The earlier field-photo references are rechecked below, not claimed as newly discovered evidence.
+
+## Preserved record comparison
+
+| Source and exact locator | W14A candidate | W14B candidate | What the entry establishes and leaves open |
+|---|---|---|---|
+| FEMA 403 Appendix D, physical 16, spreadsheet rows 20–21; spreadsheet dated March 15, 2002 | Piece ID **A or W14A**. Remark begins **WTC#7 W14**. Trip date **12/19/01**. | Piece ID **B or W14B**. Remark begins **WTC#7 W14**. Trip date **12/19/01**. | Published field attribution and measured/photographed candidates. A trip date is not an authenticated shipment or NIST receipt date. |
+| NIST SP 1000-5, June 2004, volume 3, physical 159 / F-43, Table 1-1 | **W-14A or A**, type **W**, **Heavy Wide flange**, FEMA column **Y**, location **205**. Markings/building/column/floors blank. | **W-14B**, type **W**, **Heavy Wide flange**, FEMA column **Y**, location **PL**. Markings/building/column/floors blank. | A published received-inventory entry under corresponding identifiers. Blank cells do not establish that the physical pieces had no marks. |
+| Same June 2004 report, physical 163 / F-47, Table 1-7 | **W-14A or A**, heavy wide flange, **205**. | **W-14B**, heavy wide flange, **PL**. | Both appear in the table explicitly headed **List of unidentified wide flange sections**. This and Table 1-1 are the same inventory, not independent custody witnesses. |
+| NIST NCSTAR 1-3B, September 2005, physical 92 / printed 64, Table A-1; physical 96 / printed 68, Table A-7 | **W-14A or A**, heavy wide flange, **205**, unidentified table. | **W-14B**, heavy wide flange, **PL**, unidentified table. | The selected classification and location entries persist into this edition. It does not establish continuous storage, current existence, no intervening analysis, or an item-specific decision history. |
+
+In the inventory key, **205** means the Building 205 parking lot and **PL** means the Building 202 parking lot. They are report-period NIST location codes, not WTC floor numbers or present-custody verification. Physical source pages, rather than imperfect extracted text, control the transcription of these displayed cells. The exact machine extraction is separately retained without spelling repairs in `SOURCE-PAGES.json`.
+
+## Photo and measurement targets already identified in the field record
+
+FEMA physical page 16 gives the following retrievable identifiers. Original images have not been acquired in this pass:
+
+- **A or W14A**, row 20: photograph reference **DKoutsoubis:1/30/02:#68-73**; seat **8 inches × 7-1/2 inches × 3/8 inch**; stiffener **9-5/8 inches × 5-1/4 inches × 3/8 inch**. The row separately records member depth **16 inches**, flange width **15-1/2 inches**, and top-flange thickness **1-3/16 inches**.
+- **B or W14B**, row 21: photograph reference **DKoutsoubis:1/30/02:#63-67**; seat **7-1/2 inches × 7-1/4 inches × 3/8 inch**. Other member dimensions are not populated as in row 20.
+- **C12a and C12b**, row 24: separate WTC#7-labeled tree-column pieces; photograph reference **DKoutsoubis:1/21/02:#40-45**. They are not silently joined to W14A, W14B or FEMA Appendix C Sample 1.
+
+These are identifiers in a published summary, not authenticated original photographs, camera timestamps or a demonstrated connection to Column 79/G3005. The two different seat measurements concern different candidate pieces; their difference alone is not a contradiction. The spreadsheet's WTC#7 assertions remain distinct from NIST's unidentified status.
+
+## What NIST's earlier method account supplies
+
+At physical page 119 / F-3, the June 2004 report says pieces were marked SAVE, some had coupons removed, and shipment to NIST began in March 2002 and continued through October 2002. It describes environmental asbestos/paint-lead testing before shipment. These are general accounts; they do not prove the particular candidates traveled on any named date or received any particular assay.
+
+At F-3 and physical page 121 / F-5, it says overall images were taken as samples arrived, original SEAoNY codes were retained, and where a piece had two codes the first already being documented was used. It describes U-series labels for pieces lacking a code. This supports looking for intake images, accession/alias records and source documentation. It does not authenticate a particular identifier join merely because a general procedure existed. [June 2004 report, physical pages 119–121](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication1000-5v3.pdf#page=119).
+
+Physical page 156 / F-40 lists the Voorsanger **November 2002, Draft 2, WTC Archives Interim Storage Facility, JFK International Airport: Preservation and Inventory Report** under **References from Nonpublic Sources**. The narrative at F-3 also identifies that report. It could help with Hangar 17 material and transfer records, but no source here establishes that W14A or W14B passed through Hangar 17. The report itself was not acquired. The machine text renders part of its title differently; the displayed source page was read directly, and the extraction remains unchanged.
+
+## The already known FOIA route remains incomplete
+
+A rechecked public mirror of NIST's released fiscal-2013 log lists **DOC-NIST-2013-001311**, received **July 29, 2013**, subject **column W14B** (physical page 6 / log page 4). This was already an investigation lead; acquiring this mirror is not a new independent allegation. The enclosing February 28, 2014 letter concerns log request **2014-000573**, not a substantive answer to the W14B request. [Released log mirror](https://documents.theblackvault.com/documents/foia/2014-000573AckLtr-FinalResponse.pdf#page=6).
+
+The submitted W14B request, attachments, search/response, any appeal, referral and final disposition are still unacquired. A log subject neither identifies every record requested nor establishes that responsive attribution worksheets were released, withheld, destroyed or never existed. The acquired mirror's entity hash is recorded; agency-hosted release authentication and native correspondence are not established by that hash.
+
+## What could change the assessment
+
+1. **Yard originals:** the native spreadsheet/version history, January 2002 photograph sets and metadata, contemporaneous field notes and the basis for the WTC#7 labels. These could strengthen the attribution, expose a mistaken field label or leave it uncertain.
+2. **NIST intake and attribution originals:** arrival images, accession/alias sheets, transport/coupon records, measured section/connection geometry, drawing comparisons, and the dated analyst/reviewer rationale for the unidentified classification. These could establish a supported rejection, an unsupported change, an identity mismatch or a continuing lack of information. None is selected as the answer here.
+3. **Actual 2013 request file:** its scope, response and attachments could reveal whether these questions were already answered or identify further custodians. A public log cannot substitute for the file.
+4. **Current specimen and coupon status:** a record linking the old storage codes to surviving pieces/coupons would be needed before proposing a present physical comparison. No present availability, site visit, sampling or new experiment is claimed.
+
+The strongest objection to an inference of concealment is that field labels can be provisional and agency identification can require information the field sheet lacks. Conversely, that plausible explanation does not supply the missing candidate-specific rationale or erase the differing records. The June 2004 entry weakens a claim that unidentified status first appeared only in the September 2005 final report; it does not resolve the original attribution disagreement or establish motive, demolition, deliberate loss or a cover-up.
+
+## Verification and limits
+
+The source test was run with Python 3.13.7 and pypdf 6.10.0, using `verify_sources.py` with four explicitly supplied local PDF paths. It checked entity SHA-256/size, page counts and selected text locations. **22 of 22** final checks passed. These are source-integrity/location checks, not experimental replication, independent custody authentication or verification of every entry in either report.
+
+The first run passed 21 of 22: the final report's text layer renders the heading as **TableA-7.Ustofjjnidentifiedwideflangesections.**, so the literal word check failed. The raw extraction was preserved. A second version checks that exact extraction signature and relies on the independently viewed page image for the printed heading; it does not correct the source text. Both results and the code diff are preserved.
+
+Thirteen selected page images were actually viewed in this pass: June 2004 pages 1, 119, 121, 156, 159 and 163; FEMA pages 14–16; September 2005 pages 3, 92 and 96; released-log page 6. Layout/image review is separate from the automated count. The whole reports and all referenced photo collections were not visually reviewed anew.
+
+The acquired PDF's initial local filename contains **2003**. That was our unverified intake assumption: its cover and title page say **June 2004**. The original filename and initial scope note remain preserved, with this explicit correction to our attribution. This is an analyst error, not a NIST date discrepancy.
+
+The full official June 2004 entity is retained unchanged in source storage and supplied as an LFS-preserved public redundant copy with its hash. Earlier source PDFs remain unchanged. The public log is linked and hashed; unrelated requesters' details are excluded from our new extracted-page publication. Prior assessments and the master register are not overwritten. FAA, telephone, recorder and materials dependencies in the active plan remain open; this supplement does not complete them or the steel track.

@@ -1,0 +1,16 @@
+--- verify_sources.v1.py
++++ verify_sources.py
+@@ -78,7 +78,12 @@
+     check("final: title page reads September 2005", "september2005" in compact(page("final", 3)))
+     for key, n in [("interim", 163), ("final", 96)]:
+         t = compact(page(key, n))
+-        check(key + ": selected table says unidentified", "unidentified" in t)
++        if key == "interim":
++            check(key + ": extracted heading says unidentified", "unidentified" in t)
++        else:
++            # Frozen OCR layer misreads the heading; do not repair the source text.
++            # The printed heading was verified independently in the source image.
++            check(key + ": frozen raw OCR heading signature", "tablea-7.ustofjjnidentifiedwideflangesections." in t)
+         check(key + ": selected table includes W-14A or A", "w-14aora" in t)
+         check(key + ": selected table includes W-14B", "w-14b" in t)
+     check("interim: intake-photo method present", "overallimages" in compact(page("interim", 119)))
