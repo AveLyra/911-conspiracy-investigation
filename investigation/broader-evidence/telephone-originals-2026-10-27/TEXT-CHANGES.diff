@@ -1,0 +1,1499 @@
+--- /dev/null
++++ b/CALL-COMPARISON.json
+@@ -0,0 +1,53 @@
++{
++  "scope": "Only four unknown connected entries; reported durations, not independently measured calls. No identity assignment.",
++  "rows": [
++    {
++      "start_ed_t": "09:15:34",
++      "briefing_seconds": 102,
++      "court_text_seconds": 102,
++      "commission_minutes": 1,
++      "commission_seconds_component": 42,
++      "court_time_id": 1992,
++      "court_duration_id": 1993,
++      "commission_seconds": 102,
++      "difference_seconds": 0
++    },
++    {
++      "start_ed_t": "09:20:15",
++      "briefing_seconds": 274,
++      "court_text_seconds": 274,
++      "commission_minutes": 4,
++      "commission_seconds_component": 34,
++      "court_time_id": 1995,
++      "court_duration_id": 1996,
++      "commission_seconds": 274,
++      "difference_seconds": 0
++    },
++    {
++      "start_ed_t": "09:25:48",
++      "briefing_seconds": 159,
++      "court_text_seconds": 159,
++      "commission_minutes": 2,
++      "commission_seconds_component": 34,
++      "court_time_id": 1997,
++      "court_duration_id": 1998,
++      "commission_seconds": 154,
++      "difference_seconds": 5
++    },
++    {
++      "start_ed_t": "09:30:56",
++      "briefing_seconds": 260,
++      "court_text_seconds": 260,
++      "commission_minutes": 4,
++      "commission_seconds_component": 20,
++      "court_time_id": 1999,
++      "court_duration_id": 2000,
++      "commission_seconds": 260,
++      "difference_seconds": 0
++    }
++  ],
++  "totals": {
++    "briefing_court": 795,
++    "commission": 790
++  }
++}
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,17 @@
++# Coverage and revision accountability
++
++| User/work-plan point | Outcome and location | Verification / unresolved issue |
++| --- | --- | --- |
++| Pursue FAA originals first | Eight additional exact searches retained in local FAA-SEARCH-CHECKPOINT.json; prior PD01–04 remain open. | No corrected QFR, receipt or signed action/no-action record located; no claim of nonexistence or disposition. |
++| Advance telephone original records | TEL01–TEL06; SOURCES.json. | Official court ZIP acquired; released office-interview mirror and two-page briefing scan acquired. Carrier/operator native data remain missing. |
++| Keyton interview | TEL04, PDF page 48 / stamp 000000736. | Actual mirrored form read and visually checked; date fields and device uncertainty retained. Official counterpart / notes / audio open. |
++| Exact zero-duration exhibit | TEL01, SWF IDs 1691–1694. | Original court file statically decoded. Carrier semantics and runtime screen display not independently tested. |
++| Carrier / usage / transfer roots | OPEN-RECORDS.md. | Request 14 cover preview and precise report locator found. Previews not complete attachments; operator/office logs unacquired. |
++| Preserve conflicting values | TEL02–TEL06; CALL-COMPARISON.json. | 159 versus 154; eight versus seven; direct versus both collect; two conversations versus four inferred connected entries retained without choosing a winner. |
++| Disconfirming evidence / source dependence | README and METHOD. | Witness device/clock limits, shared office information, common analytical roots and incomplete raw data explicit. No misconduct verdict. |
++| Reproducible checks | extract_swf_text.py and verify.py. | Exact hashes, glyph/tag bounds, source pins and duration conversion; these are not experimental/historical validation. |
++| Earlier wording and text diff | PREVIOUS-WORDING.md; TEXT-CHANGES.diff. | Earlier first-pass files unchanged; additive diff against absent prior directory. No discrepancy normalized or old record rewritten. |
++| Other plan tracks | Existing recorder/materials owners and steel queue retained in work plan. | This supplement does not claim their completion, retest their results or replace shared registers. |
++| Public AveLyra publication | Separate commit/push receipt retained locally after verification. | Only reviewed additive public-source derivative files; source and research originals retained. Publication status must be verified independently. |
++
++No outreach, request submission, fees, mailbox access, deletion, force push, private-repository push or case-record change occurred in this unit.
+--- /dev/null
++++ b/METHOD.md
+@@ -0,0 +1,26 @@
++# Method, dependence and limits
++
++Public-source acquisition and inspection on 2026-10-27. Earlier findings, original files and working registers remain unchanged. This directory is an additive research supplement, not a case filing or scientific replication.
++
++1. Downloaded the official court item HTML and its linked 28,304,524-byte ZIP via HTTPS. Tested ZIP CRCs and preserved originals. Extracted only `AA77.swf`; never executed the bundled Windows/Mac launchers or ActionScript.
++2. Parsed SWF header, tag boundaries, recursive sprites, DefineFont2 character tables and DefineText/DefineText2 glyph indices with `extract_swf_text.py`. The header length and every visited tag/text/font boundary are checked. All 548 text definitions and 14 fonts decoded without an out-of-range glyph. Public `SWF-SOURCE-PINS.json` retains 25 relevant definitions and exact offsets/glyph indices. This is static source-content examination, not a Flash display-list renderer, a trial playback audit or a validation of carrier data. Formatting line breaks are not fully reconstructed; trailing spaces and joined words are preserved as decoded.
++3. Acquired the 73-page Flight Call Notes and 302s PDF from a public mirror. Extracted text with pypdf and visually inspected physical pages 47–51. Recorded form/production locators; no full substantive reading of all 73 pages claimed. The mirror is not authenticated against an acquired official FBI bundle. The prior official bundle 403 is retained in the earlier first-pass record; it was not repeated here.
++4. Acquired the publicly accessible two-page May 20 briefing embed and its two referenced scan JPEGs. Read both images and checked text-layer values. These are mirror page entities, **not the original PDF, a native MFR, or proof of its archival chain**. A hash fixes the acquired bytes only. Historic sensitivity markings are visible on the public scan; no identity behind redactions was reconstructed.
++5. Rehashed the held official Commission notes PDF; extracted and visually inspected PDF page 7, printed 455, note 57. Converted the four printed minutes/seconds to seconds without changing source values. `CALL-COMPARISON.json` retains all three descriptions. Source agreement may reflect shared derivation, not independent corroboration.
++6. Acquired only three accessible preview pages each from the Request 14 response and Key 302s embeds. No paywall or login restriction was bypassed. The Request 14 preview supplies the 50-page enclosure and later Bates-version lead; the Key 302s preview does not contain the September 20 report. Search results displaying later text are pointers, not complete acquired records. Their full contents remain open.
++
++One retrieved GWU `doc02.pdf` was initially saved under a telephone-oriented local filename. Inspection of its seven pages and the publisher index identified it as the **NTSB AA77 flight-path study**, not a telephone response. Its bytes and misleading initial label remain preserved locally; it is excluded from the telephone evidence. A filename is not document identity. The attempted alternate complete-response mirror failed DNS resolution. Neither event establishes a historical discrepancy.
++
++PDF images: Poppler `pdftoppm -f 47 -l 51 -r 100 -png` for interview pages; PyMuPDF 1.27.2.2 at 1.5 scale for note 57. Python 3.13.7 and pypdf 6.10.0. Visual verification and text checks are separate. A Java runtime was unavailable, so no independent Java Flash exporter was run; no such check is claimed.
++
++Reproduce static extraction with Python's standard library:
++
++```sh
++python3 extract_swf_text.py /absolute/path/to/AA77.swf /absolute/path/to/new-output.json
++python3 verify.py
++python3 verify.py --zip /absolute/path/to/flights.zip --notes /absolute/path/to/911Report_Notes.pdf --interviews /absolute/path/to/Team7-Box13-Flight-Call-Notes-and-302s.pdf
++```
++
++The optional source verification requires pypdf. These commands verify acquired versions, exact source pins and arithmetic; they cannot establish caller identity, actual duration, completeness, intent or historical cause. They do not download records or transmit data.
++
++Publication contains original research notes, source URLs/hashes, masked court labels and reproducible code. Original downloads, full raw interview/OCR text, source HTML scripts, unmasked contact/card data, scan images and unrelated records remain local. No private case correspondence, litigation strategy or credentials are part of this payload.
+--- /dev/null
++++ b/OPEN-RECORDS.md
+@@ -0,0 +1,14 @@
++# Outstanding telephone originals and discriminating tests
++
++Existing keys: AUD016-A1; TC05/B105 and TC06/B110. No new request or outreach has been sent.
++
++| Target | Located evidence and exact route | Needed test / possible contrary result |
++| --- | --- | --- |
++| Carrier CDR and billing/event definitions | [April 26, 2004 DOJ response to Request 14, accessible preview page 1](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record). It describes 50 enclosed pages and a later Bates-stamped version. This pass obtained only preview pages 1–3, not the complete attachment. | Acquire all enclosures and version/custody records; join CSC/ground-station event IDs before counting calls. Distinguish handoff events from conversations. Determine field defaults, duration, billing/answer events and time zone from definitions rather than inference. A zero field in a handoff record cannot automatically be assigned the meaning of the court's zero-duration attempt label. |
++| Operator-assisted and incoming-office legs | May 20 briefing page 2 labels the first unknown destination **Operator**; the later three have unknown numbers. Keyton describes attempted automated calls and a live operator. | Carrier operator-services routing, billed-party details, operator tickets and DOJ PBX/extension transfer logs could link or exclude particular rows. Do not assume any blank field represents an operator or that multiple legs explain the count mismatch. |
++| September 20, 2001 FBI Airphone analysis | [Key 302s file](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s), search-displayed record **M-INT-00158680**, **265A-NY-280350-IN-41864**, description American Airlines Airphone Usage. The accessible three-page embed preview does not contain that report. | Obtain the actual complete report and charts, source attachments and revised versions. Search-displayed text and note 57's citation do not complete acquisition or authentication. Check whether 154/159 appears and with what field definition. |
++| May 20, 2004 briefing and trial build sources | Commission Team 7, Box 12, Flight 93 Calls—General, 408; Bill Johnstone MFR. [Court P200054](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html) distributes a four-flight ZIP. | Obtain the agency/archives original MFR and attachments, briefing worksheets, complete call list and trial source/build/version mapping. Determine whether the eight/seven distinction was deliberate scope or a different error; retain all versions. |
++| Keyton / Voss / Olson / Ferber originals | [Released-scan mirror, PDF pages 47–51](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=47), production stamps 000000735–739. | Official released counterparts, original notes and any audio/amendments; investigation-date versus transcription-date fields; who actually answered and transferred each leg. Recorded recollections may differ without establishing deception. Device/service and exact clock matching remain unverified. |
++| January 20, 2004 airline supplement | [Commission final note 57, printed 455](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7) identifies the AAL response. | Obtain actual response and attachments, not just the footnote. Determine what independent record or interview supports each attribution. |
++
++Competing hypotheses remain open: ordinary transcription/editorial/counting differences; distinct operator/call-event definitions; incomplete retained/reporting data; or more consequential misdescription. The proposed records could support or weaken each. No test has established a cause, an intentional falsehood or fabricated calls. One identified record may not survive; public access failure does not establish its destruction or withholding.
+--- /dev/null
++++ b/PREVIOUS-WORDING.md
+@@ -0,0 +1,7 @@
++# Preserved earlier wording
++
++Earlier TC06/B110 wording, unchanged; preserved for accountability rather than adopted as a new result. The October 27 first pass had already recorded its incomplete sourcing.
++
++| **The FBI proved Barbara Olson never called** | **False as stated, but attribution uncertainty is real.** A zero-duration entry concerns an unsuccessful attempt. Other connected calls had incompletely identified recipients; the Commission acknowledged that precise matching was unresolved. Ted Olson’s secretary, Lori Keyton, separately told the FBI she answered and transferred two calls identifying the caller as Barbara. This supports calls reaching the office without pretending every electronic record has been perfectly matched. [911commission.gov](https://www.911commission.gov/report/911Report_Notes.htm?utm_source=chatgpt.com) |
++
++This supplement acquires a public mirror of the actual office interview forms and the official court presentation; it does not rewrite the earlier record or infer a caller from an unknown-number row.
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,23 @@
++# Flight 77 telephone evidence: original-presentation and released-scan checks
++
++2026-10-27. Continuation of AUD016-A1 and TC05/B105–TC06/B110. This supplement obtains underlying public records that the first review had not inspected. It preserves discrepancies without selecting a preferred value or explaining their cause. These are overlapping verification leads, not independent findings of wrongdoing.
++
++## Findings
++
++**TEL01 — The disputed zero-duration entry exists in the court's own distributed presentation.** The court's [P200054 index](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html) links a ZIP containing the four-flight Flash presentations. In its `AA77.swf`, the text definitions associated with Barbara Olson contain `09:18:58`, `0 SECONDS ` and `DEPARTMENT OF JUSTICE` / `UNCONNECTED CALL` (IDs 1691–1694; zero-based SWF offsets 3183776, 3183822, 3183887 and 3183950). The number in the presentation is already masked. We statically decoded these definitions; we did not run Flash or certify which screen was displayed at trial. This directly verifies the stored label, not its underlying carrier classification or a claim that no other calls reached the office. [Original ZIP](https://coop.vaed.uscourts.gov/moussaoui/flights.zip) · [Exact decoded definitions](SWF-SOURCE-PINS.json).
++
++**TEL02 — A five-second duration discrepancy is preserved.** For the unknown connected entry starting **09:25:48**, the [May 20, 2004 Commission briefing scan, page 2](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408) says **159 seconds**. The court file stores **159 SECONDS**, ID 1998 at offset 5075752, paired in the sequence with time ID 1997 at 5075706. The [Commission's final report note 57, printed page 455 / PDF page 7](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7) says **2 minutes, 34 seconds**, or **154 seconds**. Both scan images and the final note were viewed. The other three listed starts and durations agree across these descriptions: 09:15:34 / 102, 09:20:15 / 274 and 09:30:56 / 260 seconds. The totals therefore differ, 795 versus 790 seconds; that arithmetic is not an independent observation. No carrier record has been used to decide which duration is accurate, whether they use identical definitions, or why they differ. [Comparison rows and arithmetic](CALL-COMPARISON.json).
++
++**TEL03 — The May briefing's count and its displayed table differ.** Page 1 describes **eight calls** and identification of the called number for three. Its page 2 table displays **seven rows**, five with positive durations and two labeled no connection. The court SWF also contains **09:14:57**, **ON BUTTON / PRESSED** and **UNCONNECTED CALL** definitions (IDs 2001–2003; offsets 5075936, 5075982, 5076055), plus summary labels for Renee May: two calls; Barbara Olson: one call; unknown caller: five calls (IDs 2129–2130, 2136–2137, 2140–2141). These supply a concrete record to compare, but do not establish that an omitted button event explains the briefing's count. A button action, call attempt, operator leg and connected conversation may have different counting rules; those rules remain unverified. The briefing's own statement of complete identification concerns **completed calls**, not necessarily every attempted leg. [Briefing](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408) · [Court text locators](SWF-SOURCE-PINS.json).
++
++**TEL04 — The actual Keyton form supports the earlier witness-description claim, with explicit limits.** A public mirror of [Team 7, Box 13, Flight Call Notes and 302s](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=48) contains Lori Lynn Keyton's FD-302 at physical page 48, production stamp **REQ. #35-13 000000736**. It records six to eight automated collect attempts, then an operator-assisted call identifying Barbara Olsen, and a second call a few to five minutes later that Keyton described as direct rather than collect. It records no caller ID and her uncertainty whether the caller used an onboard phone or cell phone. The form's investigation field is **9/11/01**; its transcription field is **09/14/2001**. The original agents' notes, audio and office switch logs were not obtained. This is a mirrored released scan, not authenticated native interview audio or proof of which electronic row belongs to the speaker. The public FBI bundle remains unacquired after the earlier 403; this pass did not repeat that unchanged endpoint.
++
++**TEL05 — Collect/direct accounts conflict; neither is silently preferred.** Helen Voss's form at [physical page 51](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=51), stamp **000000739**, says she believed both calls were collect. Keyton's form says the second was direct and not collect. Voss also says Keyton relayed the caller's arrival and that the security officer arrived after the second call. Allen Ferber's [physical page 47](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=47), stamp **000000735**, describes arriving after two calls; he did not answer the initial request or witness the calls themselves. These accounts concern a shared office and information relayed there; they are not independent carrier confirmations. No motive is established by their difference.
++
++**TEL06 — Caller attribution is explicitly inferential in the source, not a number-based match.** The [May briefing, page 2](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408) acknowledges no direct evidence for the unknown calls and describes a conclusion drawn from recipient and family interviews, including Keyton. Page 1 attributes the identified 09:12:18 call to credit-card information and other identities to interviews. The [final note 57](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7) retains uncertain matching between four connected entries and two reported conversations, alongside FBI/DOJ belief that all four went to the office. The [Ted Olson forms, physical pages 49–50](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=49), stamps **000000737–738**, describe two conversations, no watch check for the approximate initial time, and uncertainty about the calling device. The missing operator and office records must test this join. The unknown entries cannot be counted as four independently identified Olson conversations; the unconnected named entry cannot by itself establish that no other conversation occurred.
++
++## What changed and what remains open
++
++The first review lacked the Keyton form and precise court entry. This pass acquired the court ZIP and a mirrored 73-page released-file scan, decoded all 548 static text definitions in its AA77 file, and visually inspected the five relevant interview pages, both May briefing scan pages and final note 57. It also inspected accessible preview layers of two other releases; those previews are **not complete productions**. [Method](METHOD.md) · [Sources and hashes](SOURCES.json) · [Checklist](CHECKLIST.md) · [Preserved earlier wording](PREVIOUS-WORDING.md) · [Text changes](TEXT-CHANGES.diff).
++
++Still missing: native carrier and operator event/billing records, field definitions and clock basis; the complete September 20, 2001 Airphone analysis; the complete April 26, 2004 DOJ Request 14 response and later Bates-stamped version; office switch/transfer and command-center records; source interview notes/audio; and the worksheets supporting attribution and duration versions. The May memo and the court presentation may share the same underlying analysis and do not authenticate one another independently. No experimental call reconstruction, complete call census, historical cause, fabrication or concealment finding is claimed. [Precise next records and tests](OPEN-RECORDS.md).
+--- /dev/null
++++ b/SOURCES.json
+@@ -0,0 +1,116 @@
++{
++  "date": "2026-10-27",
++  "qualification": "Hashes identify acquired entities, not native-source authenticity. GWU doc02 excluded: actually NTSB flight-path study. Scribd Request14 and Key302s embeds expose only three preview pages each. No full-production claim. Original files retained locally; URLs and hashes published.",
++  "sources": [
++    {
++      "name": "court-flights.zip",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/flights.zip",
++      "final_url": "https://coop.vaed.uscourts.gov/moussaoui/flights.zip",
++      "access_utc": "2026-10-27T13:40:38.310051+00:00",
++      "status": 200,
++      "content_type": "application/x-zip-compressed",
++      "bytes": 28304524,
++      "sha256": "3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801"
++    },
++    {
++      "name": "flight-call-notes-302s-mirror.pdf",
++      "url": "https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf",
++      "final_url": "https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf",
++      "access_utc": "2026-10-27T13:40:38.310907+00:00",
++      "status": 200,
++      "content_type": "application/pdf",
++      "bytes": 2997662,
++      "sha256": "e3cf374351cb753d1297433f86bb5807c56cb42a6dc69837a9df02dd0d54f4aa"
++    },
++    {
++      "name": "doj-calls-response-gwu.pdf",
++      "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB196/doc02.pdf",
++      "final_url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB196/doc02.pdf",
++      "access_utc": "2026-10-27T13:40:38.311136+00:00",
++      "status": 200,
++      "content_type": "application/pdf",
++      "bytes": 748214,
++      "sha256": "d93f41e4d59c07907a2474eb3edf3faf1cc788dbb1c7c0ddb8f8bb7a6b7115e7",
++      "actual_identity": "NTSB AA77 flight-path study; excluded from telephone evidence",
++      "local_filename_is_misleading": true
++    },
++    {
++      "name": "may2004-briefing-scribd.html",
++      "url": "https://www.scribd.com/embeds/18886083/content",
++      "final_url": "https://www.scribd.com/embeds/18886083/content",
++      "access_utc": "2026-10-27T13:44:51.816125+00:00",
++      "status": 200,
++      "content_type": "text/html; charset=utf-8",
++      "bytes": 261809,
++      "sha256": "05d02a9fa10f552828f9ec39d88ea92880e856e4e3bb478620b29e96ddf4ded9"
++    },
++    {
++      "name": "swf-spec19-mirror.pdf",
++      "url": "https://open-flash.github.io/mirrors/swf-spec-19.pdf",
++      "final_url": "https://open-flash.github.io/mirrors/swf-spec-19.pdf",
++      "access_utc": "2026-10-27T13:44:51.816262+00:00",
++      "status": 200,
++      "content_type": "application/pdf",
++      "bytes": 1724258,
++      "sha256": "6a1625b0929a86329021d365ba079c7e1f51502dfb4ea7d92ec9947841625cdd"
++    },
++    {
++      "name": "doj-request14-embed.html",
++      "url": "https://www.scribd.com/embeds/13499791/content",
++      "final_url": "https://www.scribd.com/embeds/13499791/content",
++      "access_utc": "2026-10-27T13:46:47.691855+00:00",
++      "status": 200,
++      "content_type": "text/html; charset=utf-8",
++      "bytes": 358760,
++      "sha256": "867609e5916a649c6286893f2b52e0de8867102f1964773f9e138cd08a41d09e",
++      "pages": 3
++    },
++    {
++      "name": "key302s-embed.html",
++      "url": "https://www.scribd.com/embeds/24392516/content",
++      "final_url": "https://www.scribd.com/embeds/24392516/content",
++      "access_utc": "2026-10-27T13:46:47.692270+00:00",
++      "status": 200,
++      "content_type": "text/html; charset=utf-8",
++      "bytes": 392090,
++      "sha256": "830ef6a47d550ca7575957e9147fff73bb0d35b40d86d3c046059a97512d597c",
++      "pages": 3
++    },
++    {
++      "name": "may-briefing-page1.jpg",
++      "url": "https://html.scribd.com/1nqyjnnp4wcm3mj/images/1-e7a3b0736f.jpg",
++      "final_url": "https://html.scribd.com/1nqyjnnp4wcm3mj/images/1-e7a3b0736f.jpg",
++      "access_utc": "2026-10-27T13:46:47.692373+00:00",
++      "status": 200,
++      "content_type": "image/jpeg",
++      "bytes": 279333,
++      "sha256": "7eb55c9bdeb9354c54c704e3d65a08ff354b74804cb18963474071da2c003351"
++    },
++    {
++      "name": "may-briefing-page2.jpg",
++      "url": "https://html.scribd.com/1nqyjnnp4wcm3mj/images/2-581ddbd2bd.jpg",
++      "final_url": "https://html.scribd.com/1nqyjnnp4wcm3mj/images/2-581ddbd2bd.jpg",
++      "access_utc": "2026-10-27T13:46:47.692435+00:00",
++      "status": 200,
++      "content_type": "image/jpeg",
++      "bytes": 288710,
++      "sha256": "c65d139f10049bb3d5d38f21bdd110f53c93e7433e12a73bef0f8ca8f36bd72d"
++    },
++    {
++      "name": "official-commission-notes-held.pdf",
++      "url": "https://www.9-11commission.gov/report/911Report_Notes.pdf",
++      "access_date": "2026-10-27 rehash/read of held copy",
++      "bytes": 684452,
++      "sha256": "d59f7501da1899836bbe553e3e35fd056152046f2eae8050670f6424919869ad",
++      "used_pages": "PDF 7 / printed 455 / note57"
++    },
++    {
++      "name": "AA77.swf",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/flights.zip",
++      "member": "AA77.swf",
++      "bytes": 5162821,
++      "sha256": "844dfb545c8414f9e7da1edc89ffe090a09d00d721a2c65c820e15f5fe201a06",
++      "scope": "Official court distribution; static text, not carrier native input."
++    }
++  ]
++}
+--- /dev/null
++++ b/SWF-SOURCE-PINS.json
+@@ -0,0 +1,981 @@
++{
++  "source": "court flights.zip / AA77.swf",
++  "source_sha256": "844dfb545c8414f9e7da1edc89ffe090a09d00d721a2c65c820e15f5fe201a06",
++  "locator": "zero-based uncompressed SWF byte offsets; font-coded text definitions, not runtime screenshot",
++  "pins": [
++    {
++      "tag": 11,
++      "offset": 3183776,
++      "byte_length": 40,
++      "id": 1691,
++      "container": "root",
++      "bounds_twips": [
++        -841,
++        701,
++        115,
++        364
++      ],
++      "text": "09:18:58",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            5,
++            14,
++            15,
++            6,
++            13,
++            15,
++            10,
++            13
++          ],
++          "text": "09:18:58"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 3183822,
++      "byte_length": 59,
++      "id": 1692,
++      "container": "root",
++      "bounds_twips": [
++        -810,
++        699,
++        115,
++        364
++      ],
++      "text": "0 SECONDS ",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            5
++          ],
++          "text": "0"
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            0
++          ],
++          "text": " "
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            30,
++            17,
++            15,
++            27,
++            26,
++            16,
++            30,
++            0
++          ],
++          "text": "SECONDS "
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 3183887,
++      "byte_length": 57,
++      "id": 1693,
++      "container": "root",
++      "bounds_twips": [
++        -2824,
++        844,
++        141,
++        571
++      ],
++      "text": "(202) 514-XXXX",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            1,
++            7,
++            5,
++            7,
++            2,
++            0,
++            10,
++            6,
++            9,
++            4,
++            36,
++            36,
++            36,
++            36
++          ],
++          "text": "(202) 514-XXXX"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 3183950,
++      "byte_length": 125,
++      "id": 1694,
++      "container": "root",
++      "bounds_twips": [
++        -2965,
++        975,
++        79,
++        691
++      ],
++      "text": "DEPARTMENT OF JUSTICEUNCONNECTED CALL",
++      "runs": [
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            16,
++            17,
++            28,
++            13,
++            29,
++            31,
++            25,
++            17,
++            26,
++            31,
++            0
++          ],
++          "text": "DEPARTMENT "
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            27,
++            18
++          ],
++          "text": "OF"
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            0,
++            22,
++            32,
++            30,
++            31,
++            21,
++            15,
++            17
++          ],
++          "text": " JUSTICE"
++        },
++        {
++          "font_id": 1102,
++          "glyph_indices": [
++            12,
++            8,
++            4,
++            9,
++            8,
++            8,
++            6,
++            4,
++            11,
++            6,
++            5,
++            0,
++            4,
++            3,
++            7,
++            7
++          ],
++          "text": "UNCONNECTED CALL"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5075353,
++      "byte_length": 61,
++      "id": 1991,
++      "container": "root",
++      "bounds_twips": [
++        -2265,
++        238,
++        154,
++        942
++      ],
++      "text": "UNKNOWNNUMBER",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            33,
++            27,
++            24,
++            27,
++            28,
++            35,
++            27
++          ],
++          "text": "UNKNOWN"
++        },
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            27,
++            33,
++            26,
++            17,
++            20,
++            30
++          ],
++          "text": "NUMBER"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5075420,
++      "byte_length": 40,
++      "id": 1992,
++      "container": "root",
++      "bounds_twips": [
++        -833,
++        705,
++        115,
++        364
++      ],
++      "text": "09:15:34",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            5,
++            14,
++            15,
++            6,
++            10,
++            15,
++            8,
++            9
++          ],
++          "text": "09:15:34"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5075466,
++      "byte_length": 63,
++      "id": 1993,
++      "container": "root",
++      "bounds_twips": [
++        -1227,
++        699,
++        115,
++        364
++      ],
++      "text": "102 SECONDS ",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            6,
++            5,
++            7
++          ],
++          "text": "102"
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            0
++          ],
++          "text": " "
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            30,
++            17,
++            15,
++            27,
++            26,
++            16,
++            30,
++            0
++          ],
++          "text": "SECONDS "
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5075535,
++      "byte_length": 50,
++      "id": 1994,
++      "container": "root",
++      "bounds_twips": [
++        382,
++        3020,
++        79,
++        328
++      ],
++      "text": "CONNECTED CALL",
++      "runs": [
++        {
++          "font_id": 1102,
++          "glyph_indices": [
++            4,
++            9,
++            8,
++            8,
++            6,
++            4,
++            11,
++            6,
++            5,
++            0,
++            4,
++            3,
++            7,
++            7
++          ],
++          "text": "CONNECTED CALL"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5075591,
++      "byte_length": 40,
++      "id": 1995,
++      "container": "root",
++      "bounds_twips": [
++        -833,
++        692,
++        115,
++        364
++      ],
++      "text": "09:20:15",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            5,
++            14,
++            15,
++            7,
++            5,
++            15,
++            6,
++            10
++          ],
++          "text": "09:20:15"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5075637,
++      "byte_length": 63,
++      "id": 1996,
++      "container": "root",
++      "bounds_twips": [
++        -1220,
++        699,
++        115,
++        363
++      ],
++      "text": "274 SECONDS ",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            7,
++            12,
++            9
++          ],
++          "text": "274"
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            0
++          ],
++          "text": " "
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            30,
++            17,
++            15,
++            27,
++            26,
++            16,
++            30,
++            0
++          ],
++          "text": "SECONDS "
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5075706,
++      "byte_length": 40,
++      "id": 1997,
++      "container": "root",
++      "bounds_twips": [
++        -856,
++        701,
++        115,
++        364
++      ],
++      "text": "09:25:48",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            5,
++            14,
++            15,
++            7,
++            10,
++            15,
++            9,
++            13
++          ],
++          "text": "09:25:48"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5075752,
++      "byte_length": 63,
++      "id": 1998,
++      "container": "root",
++      "bounds_twips": [
++        -1216,
++        699,
++        115,
++        364
++      ],
++      "text": "159 SECONDS ",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            6,
++            10,
++            14
++          ],
++          "text": "159"
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            0
++          ],
++          "text": " "
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            30,
++            17,
++            15,
++            27,
++            26,
++            16,
++            30,
++            0
++          ],
++          "text": "SECONDS "
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5075821,
++      "byte_length": 40,
++      "id": 1999,
++      "container": "root",
++      "bounds_twips": [
++        -856,
++        703,
++        115,
++        364
++      ],
++      "text": "09:30:56",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            5,
++            14,
++            15,
++            8,
++            5,
++            15,
++            10,
++            11
++          ],
++          "text": "09:30:56"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5075867,
++      "byte_length": 63,
++      "id": 2000,
++      "container": "root",
++      "bounds_twips": [
++        -1255,
++        699,
++        115,
++        364
++      ],
++      "text": "260 SECONDS ",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            7,
++            11,
++            5
++          ],
++          "text": "260"
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            0
++          ],
++          "text": " "
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            30,
++            17,
++            15,
++            27,
++            26,
++            16,
++            30,
++            0
++          ],
++          "text": "SECONDS "
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5075936,
++      "byte_length": 40,
++      "id": 2001,
++      "container": "root",
++      "bounds_twips": [
++        -828,
++        698,
++        115,
++        364
++      ],
++      "text": "09:14:57",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            5,
++            14,
++            15,
++            6,
++            9,
++            15,
++            10,
++            12
++          ],
++          "text": "09:14:57"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5075982,
++      "byte_length": 67,
++      "id": 2002,
++      "container": "root",
++      "bounds_twips": [
++        -2357,
++        323,
++        154,
++        982
++      ],
++      "text": "ON BUTTONPRESSED",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            28,
++            27,
++            0,
++            17,
++            33,
++            32,
++            32,
++            28,
++            27
++          ],
++          "text": "ON BUTTON"
++        },
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            29,
++            30,
++            20,
++            31,
++            31,
++            20,
++            19
++          ],
++          "text": "PRESSED"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5076055,
++      "byte_length": 53,
++      "id": 2003,
++      "container": "root",
++      "bounds_twips": [
++        157,
++        3257,
++        79,
++        328
++      ],
++      "text": "UNCONNECTED CALL",
++      "runs": [
++        {
++          "font_id": 1102,
++          "glyph_indices": [
++            12,
++            8,
++            4,
++            9,
++            8,
++            8,
++            6,
++            4,
++            11,
++            6,
++            5,
++            0,
++            4,
++            3,
++            7,
++            7
++          ],
++          "text": "UNCONNECTED CALL"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5076114,
++      "byte_length": 52,
++      "id": 2004,
++      "container": "root",
++      "bounds_twips": [
++        383,
++        2878,
++        71,
++        292
++      ],
++      "text": "CONNECTED CALLS",
++      "runs": [
++        {
++          "font_id": 1102,
++          "glyph_indices": [
++            4,
++            9,
++            8,
++            8,
++            6,
++            4,
++            11,
++            6,
++            5,
++            0,
++            4,
++            3,
++            7,
++            7,
++            10
++          ],
++          "text": "CONNECTED CALLS"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5077543,
++      "byte_length": 55,
++      "id": 2008,
++      "container": "root",
++      "bounds_twips": [
++        275,
++        3181,
++        71,
++        292
++      ],
++      "text": "UNCONNECTED CALLS",
++      "runs": [
++        {
++          "font_id": 1102,
++          "glyph_indices": [
++            12,
++            8,
++            4,
++            9,
++            8,
++            8,
++            6,
++            4,
++            11,
++            6,
++            5,
++            0,
++            4,
++            3,
++            7,
++            7,
++            10
++          ],
++          "text": "UNCONNECTED CALLS"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5158495,
++      "byte_length": 50,
++      "id": 2129,
++      "container": "root",
++      "bounds_twips": [
++        -26,
++        696,
++        167,
++        779
++      ],
++      "text": "2CALLS",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            7
++          ],
++          "text": "2"
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            15,
++            13,
++            24,
++            24,
++            30
++          ],
++          "text": "CALLS"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5158551,
++      "byte_length": 55,
++      "id": 2130,
++      "container": "root",
++      "bounds_twips": [
++        -2121,
++        -1149,
++        84,
++        696
++      ],
++      "text": "RENEEMAY",
++      "runs": [
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            29,
++            17,
++            26,
++            17,
++            17
++          ],
++          "text": "RENEE"
++        },
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            26,
++            16,
++            37
++          ],
++          "text": "MAY"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5160980,
++      "byte_length": 48,
++      "id": 2136,
++      "container": "root",
++      "bounds_twips": [
++        42,
++        644,
++        173,
++        779
++      ],
++      "text": "1CALL",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            6
++          ],
++          "text": "1"
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            15,
++            13,
++            24,
++            24
++          ],
++          "text": "CALL"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5161034,
++      "byte_length": 63,
++      "id": 2137,
++      "container": "root",
++      "bounds_twips": [
++        -2131,
++        -685,
++        84,
++        700
++      ],
++      "text": "BARBARAOLSON",
++      "runs": [
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            14,
++            13,
++            29,
++            14,
++            13,
++            29,
++            13
++          ],
++          "text": "BARBARA"
++        },
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            28,
++            25,
++            31,
++            28,
++            27
++          ],
++          "text": "OLSON"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5161734,
++      "byte_length": 50,
++      "id": 2140,
++      "container": "root",
++      "bounds_twips": [
++        -26,
++        696,
++        173,
++        779
++      ],
++      "text": "5CALLS",
++      "runs": [
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            10
++          ],
++          "text": "5"
++        },
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            15,
++            13,
++            24,
++            24,
++            30
++          ],
++          "text": "CALLS"
++        }
++      ]
++    },
++    {
++      "tag": 11,
++      "offset": 5161790,
++      "byte_length": 65,
++      "id": 2141,
++      "container": "root",
++      "bounds_twips": [
++        -2131,
++        -331,
++        79,
++        700
++      ],
++      "text": "UNKNOWNCALLER",
++      "runs": [
++        {
++          "font_id": 788,
++          "glyph_indices": [
++            32,
++            26,
++            23,
++            26,
++            27,
++            33,
++            26
++          ],
++          "text": "UNKNOWN"
++        },
++        {
++          "font_id": 1098,
++          "glyph_indices": [
++            18,
++            16,
++            25,
++            25,
++            20,
++            30
++          ],
++          "text": "CALLER"
++        }
++      ]
++    }
++  ]
++}
+--- /dev/null
++++ b/extract_swf_text.py
+@@ -0,0 +1,155 @@
++"""Static SWF DefineFont2/DefineText extraction; never execute ActionScript.
++
++Usage: python3 extract_swf_text.py INPUT.swf OUTPUT.json
++References: Adobe SWF file format specification, DefineFont2, DefineText,
++TEXTRECORD and GLYPHENTRY. Offsets are zero-based uncompressed SWF bytes.
++This extracts text definitions, not proof that a particular screen was shown.
++"""
++import collections
++import hashlib
++import json
++from pathlib import Path
++import struct
++import sys
++import zlib
++
++
++class Bits:
++    def __init__(self, data, byte=0):
++        self.data, self.bit = data, byte * 8
++
++    def take(self, count, signed=False):
++        assert self.bit + count <= len(self.data) * 8
++        value = 0
++        for _ in range(count):
++            value = value * 2 + ((self.data[self.bit // 8] >> (7-self.bit % 8)) & 1)
++            self.bit += 1
++        return value - (1 << count) if signed and count and value & (1 << (count-1)) else value
++
++    def align(self):
++        self.bit = (self.bit + 7) // 8 * 8
++        return self.bit // 8
++
++    def rect(self):
++        width = self.take(5)
++        values = [self.take(width, True) for _ in range(4)]
++        self.align()
++        return values
++
++    def matrix(self):
++        for _ in range(2):
++            if self.take(1):
++                width = self.take(5)
++                self.take(width, True)
++                self.take(width, True)
++        width = self.take(5)
++        self.take(width, True)
++        self.take(width, True)
++        self.align()
++
++
++def tags(data, start, stop, path="root"):
++    pos = start
++    while pos + 2 <= stop:
++        offset = pos
++        head = struct.unpack_from('<H', data, pos)[0]
++        pos += 2
++        code, length = head >> 6, head & 63
++        if length == 63:
++            length = struct.unpack_from('<I', data, pos)[0]
++            pos += 4
++        assert pos + length <= stop, (offset, code, length, stop)
++        yield code, offset, data[pos:pos+length], path
++        if code == 39:
++            sprite = struct.unpack_from('<H', data, pos)[0]
++            yield from tags(data, pos+4, pos+length, path+f'/sprite-{sprite}')
++        pos += length
++        if code == 0:
++            assert pos == stop, (path, pos, stop)
++            return
++    assert pos == stop
++
++
++def extract(raw):
++    assert raw[:3] in (b'FWS', b'CWS')
++    data = raw if raw[:3] == b'FWS' else b'FWS'+raw[3:8]+zlib.decompress(raw[8:])
++    assert struct.unpack_from('<I', data, 4)[0] == len(data)
++    bits = Bits(data, 8)
++    stage = bits.rect()
++    start = bits.align()+4
++    all_tags = list(tags(data, start, len(data)))
++    fonts = {}
++    for code, offset, body, path in all_tags:
++        if code != 48:
++            continue
++        fid, flags, language, name_len = struct.unpack_from('<HBBB', body)
++        pos = 5
++        name = body[pos:pos+name_len].decode('latin1')
++        pos += name_len
++        count = struct.unpack_from('<H', body, pos)[0]
++        pos += 2
++        table_start = pos
++        width = 4 if flags & 8 else 2
++        code_offset = int.from_bytes(body[pos+count*width:pos+(count+1)*width], 'little')
++        pos = table_start + code_offset
++        code_width = 2 if flags & 4 else 1
++        assert pos + count*code_width <= len(body)
++        chars = [chr(int.from_bytes(body[pos+i*code_width:pos+(i+1)*code_width], 'little')) for i in range(count)]
++        assert fid not in fonts
++        fonts[fid] = dict(name=name, count=count, chars=chars, offset=offset)
++    texts = []
++    for code, offset, body, path in all_tags:
++        if code not in (11, 33):
++            continue
++        tid = struct.unpack_from('<H', body)[0]
++        bits = Bits(body, 2)
++        rect = bits.rect()
++        bits.matrix()
++        pos = bits.align()
++        glyph_bits, advance_bits = body[pos:pos+2]
++        pos += 2
++        fid = None
++        runs = []
++        while body[pos]:
++            flags = body[pos]
++            pos += 1
++            assert flags & 128 and not flags & 112
++            if flags & 8:
++                fid = struct.unpack_from('<H', body, pos)[0]
++                pos += 2
++            if flags & 4:
++                pos += 4 if code == 33 else 3
++            if flags & 1:
++                pos += 2
++            if flags & 2:
++                pos += 2
++            if flags & 8:
++                pos += 2
++            count = body[pos]
++            pos += 1
++            bits = Bits(body, pos)
++            indices = []
++            for _ in range(count):
++                indices.append(bits.take(glyph_bits))
++                bits.take(advance_bits, True)
++            assert fid in fonts
++            assert all(i < fonts[fid]['count'] for i in indices)
++            text = ''.join(fonts[fid]['chars'][i] for i in indices)
++            runs.append(dict(font_id=fid, glyph_indices=indices, text=text))
++            pos = bits.align()
++        assert pos + 1 == len(body)
++        texts.append(dict(tag=code, offset=offset, byte_length=len(body), id=tid,
++                          container=path, bounds_twips=rect,
++                          text=''.join(r['text'] for r in runs), runs=runs))
++    return dict(input_sha256=hashlib.sha256(raw).hexdigest(),
++                input_bytes=len(raw), uncompressed_bytes=len(data), stage_twips=stage,
++                tag_counts=dict(collections.Counter(t[0] for t in all_tags)),
++                fonts=fonts, text_definitions=texts,
++                scope='Static text definitions only; no display-list, action, runtime or carrier-data validation.')
++
++
++if __name__ == '__main__':
++    result = extract(Path(sys.argv[1]).read_bytes())
++    Path(sys.argv[2]).write_text(json.dumps(result, indent=2)+'\n')
++    print(json.dumps({'text_definitions': len(result['text_definitions']),
++                      'fonts': len(result['fonts']), 'input_sha256': result['input_sha256']}))
+--- /dev/null
++++ b/verify.py
+@@ -0,0 +1,77 @@
++"""Verify publication bytes, reported-value arithmetic and optional source pins.
++
++No network, uploads, source edits or historical-authentication claim.
++"""
++import argparse
++import hashlib
++import json
++from pathlib import Path
++import tempfile
++import zipfile
++
++
++def sha(data):
++    return hashlib.sha256(data).hexdigest()
++
++
++def main():
++    ap = argparse.ArgumentParser()
++    ap.add_argument('--zip', type=Path)
++    ap.add_argument('--notes', type=Path)
++    ap.add_argument('--interviews', type=Path)
++    args = ap.parse_args()
++    base = Path(__file__).resolve().parent
++    checks = []
++    def check(label, condition):
++        if not condition:
++            raise AssertionError(label)
++        checks.append(label)
++    manifest = json.loads((base/'MANIFEST.json').read_text())
++    for row in manifest['files']:
++        data = (base/row['file']).read_bytes()
++        check('sha256:'+row['file'], sha(data) == row['sha256'])
++        check('bytes:'+row['file'], len(data) == row['bytes'])
++    comp = json.loads((base/'CALL-COMPARISON.json').read_text())
++    for row in comp['rows']:
++        label = row['start_ed_t']
++        check('minutes-to-seconds:'+label,
++              60*row['commission_minutes']+row['commission_seconds_component'] == row['commission_seconds'])
++        check('retained-difference:'+label,
++              row['court_text_seconds']-row['commission_seconds'] == row['difference_seconds'])
++    check('retained-159-versus-154', comp['rows'][2]['court_text_seconds'] == 159 and comp['rows'][2]['commission_seconds'] == 154)
++    check('totals', sum(r['court_text_seconds'] for r in comp['rows']) == 795 and sum(r['commission_seconds'] for r in comp['rows']) == 790)
++    if args.zip:
++        from extract_swf_text import extract
++        data = args.zip.read_bytes()
++        check('official-distribution-acquired-version', sha(data) == '3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801')
++        with zipfile.ZipFile(args.zip) as z:
++            check('ZIP-CRC-all-members', z.testzip() is None)
++            raw = z.read('AA77.swf')
++        result = extract(raw)
++        check('AA77-acquired-version', result['input_sha256'] == '844dfb545c8414f9e7da1edc89ffe090a09d00d721a2c65c820e15f5fe201a06')
++        check('text-and-font-coverage', len(result['text_definitions']) == 548 and len(result['fonts']) == 14)
++        by_id = {r['id']:r for r in result['text_definitions']}
++        for pin in json.loads((base/'SWF-SOURCE-PINS.json').read_text())['pins']:
++            check('source-text-definition:'+str(pin['id']), by_id[pin['id']] == pin)
++    if args.notes or args.interviews:
++        from pypdf import PdfReader
++        if args.notes:
++            check('notes-acquired-version', sha(args.notes.read_bytes()) == 'd59f7501da1899836bbe553e3e35fd056152046f2eae8050670f6424919869ad')
++            text = ' '.join(PdfReader(args.notes).pages[6].extract_text().split())
++            check('note57-154-source', '9:25:48 for 2 minutes, 34 seconds' in text)
++            check('note57-matching-limit', 'do not allow for a determination' in text)
++        if args.interviews:
++            check('interviews-acquired-version', sha(args.interviews.read_bytes()) == 'e3cf374351cb753d1297433f86bb5807c56cb42a6dc69837a9df02dd0d54f4aa')
++            reader = PdfReader(args.interviews)
++            check('interview-scan-page-count', len(reader.pages) == 73)
++            for n, snippets in {48:['Keyton','It was not a collect call','caller identification'],51:['Voss believes that both calls','collect calls'],49:['he did not look at his','watch']}.items():
++                text = ' '.join(reader.pages[n-1].extract_text().split())
++                for snippet in snippets:
++                    check('interview-source:'+str(n)+':'+snippet, snippet in text)
++    print(json.dumps({'status':'passed','checks':checks,'count':len(checks),
++                      'source_mode':bool(args.zip or args.notes or args.interviews),
++                      'limit':'Byte/source-pin/arithmetic verification only; visual review separately documented. No caller, duration, completeness or intent validation.'},indent=2))
++
++
++if __name__ == '__main__':
++    main()
