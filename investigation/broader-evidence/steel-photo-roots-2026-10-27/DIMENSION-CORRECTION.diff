@@ -1,0 +1,47 @@
+--- drafts/REPORT-before-dimension-check.md
++++ README.md
+@@ -8,7 +8,7 @@
+ 
+ **56 archive image file IDs were acquired unchanged:** all 50 listed `WTC001.jpg`–`WTC050.jpg` scans, four selected sampling/packing images, and the same named scrapyard example from two different folders. Their source entities total **40,908,936 bytes**, with **55 distinct SHA-256 hashes** because the two scrapyard copies match. The scan subset alone totals **37,796,640 bytes**. These are file/byte counts, not counts of independent specimens, witnesses, photographic exposures or evidentiary confirmations. `IMAGE-SOURCES.json` supplies every acquired file's canonical URL, hash, size and acquisition time.
+ 
+-The 50 scan files are **3456 × 2502 pixels**. The viewed pages show mounted-print composites, including a two-print last page. They are the archive's JPEG entities, not authenticated camera originals, negatives or a complete intake-photo archive. Source bytes and redundant aliases remain in the verified local media store.
++All 50 scan files are **3456 pixels wide**, with five recorded height groups: **2484 (1 file), 2490 (2), 2501 (4), 2502 (33), and 2508 (10)**. These are different scan files; variation in their raster sizes is not itself an inconsistent description of one file. The viewed pages show mounted-print composites, including a two-print last page. They are the archive's JPEG entities, not authenticated camera originals, negatives or a complete intake-photo archive. Source bytes and redundant aliases remain in the verified local media store.
+ 
+ ## A directly inspectable sampling and alias control
+ 
+@@ -60,3 +60,7 @@
+ Still required for the selected WTC 7 candidates are the original January 30, 2002 W14A photographs **68–73**, W14B photographs **63–67**, and January 21 C12a/b photographs **40–45**, with their photo index/camera or negative provenance; candidate-specific NIST intake/alias/transfer/coupon records; measured-geometry/drawing comparisons and attribution decisions; and the actual DOC-NIST-2013-001311 request/response file. No recovered image has been authenticated as one of those precise field series in this pass. FEMA's WTC#7 labels and NIST's unidentified entries remain intact and unresolved.
+ 
+ This pass acquires photographic source material and tests one alias/sampling control and the OCR method's limitations. It performs no new metallurgy, source-clock calibration, custody certification or WTC 7 simulation. The other four work-plan tracks and their missing originals remain open. Earlier reports and the shared master list are unchanged.
++
++## Correction caught during verification
++
++The first draft generalized the 3456 × 2502 dimensions of the first two acquired scans to all 50. The first verifier then failed on WTC007.jpg (3456 × 2501), exposing that unsupported generalization. The complete saved inspection shows the five groups above. The earlier draft and checker are retained under `drafts/`, and `DIMENSION-CORRECTION.diff` records the report and checker changes. The new check compares each JPEG with its own captured dimensions and the full recorded distribution. It does not normalize images, change any source, adjudicate historical evidence, or relax a user requirement that images share one resolution—there was no such requirement. An empty redirected output from the failed verifier is not treated as a valid result.
+
+--- drafts/verify-before-dimension-check.py
++++ verify.py
+@@ -25,6 +25,7 @@
+     assert {r["name"] for r in scans} == {f"WTC{n:03}.jpg" for n in range(1, 51)}
+     assert sum(r["bytes"] for r in scans) == 37796640
+     checked = []
++    verified_dimensions = {}
+     for row in rows:
+         path = args.source_dir / row["relative_source_path"]
+         raw = path.read_bytes()
+@@ -32,6 +33,7 @@
+         assert hashlib.sha256(raw).hexdigest() == row["sha256"], row["name"]
+         with Image.open(path) as im:
+             assert im.format == "JPEG", row["name"]
++            verified_dimensions[row["id"]] = list(im.size)
+             im.verify()
+         checked.append({"id": row["id"], "name": row["name"], "matches_captured_hash_and_size": True})
+     inspection = json.loads((here / "SCAN-INSPECTION.json").read_text())
+@@ -39,7 +41,7 @@
+     for scan in inspection["images"]:
+         capture = next(r for r in scans if r["name"] == scan["name"])
+         assert scan["sha256"] == capture["sha256"]
+-        assert scan["dimensions"] == [3456, 2502]
++        assert scan["dimensions"] == verified_dimensions[capture["id"]]
+         assert scan["exif"] in ({}, {"ExifIFD": {}})
+         assert scan["ocr_returncode"] == 0
+     controls = json.loads((here / "OCR-CONTROLS.json").read_text())["controls"]
