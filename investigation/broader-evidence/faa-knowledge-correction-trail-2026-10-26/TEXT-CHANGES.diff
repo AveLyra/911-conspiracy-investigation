@@ -1,0 +1,2281 @@
+--- /dev/null
++++ b/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/CHECKLIST.md
+@@ -0,0 +1,18 @@
++# Request accountability
++
++| User point / requirement | Outcome and location | Verification / unresolved issue |
++|---|---|---|
++| Pursue FAA trail first | This entire additive study; CIA/Mineta clocks not expanded | Scope and acceptance fixed in preserved local protocol |
++| Find original drafts | Native 2003 answer and actual 2005 DOC attachments remain open; README§§1/5 and R01/R07 | Draft labels and drafting recollections recovered; embedded-file name-tree inspection found no attachments; no claim native drafts were obtained |
++| Find emails | Reproduced 2004 QFR and 2005 OIG emails acquired; P17–P20, R02/R07 | Exact source PDF hashes/physical pages/text offsets; native transport headers remain missing |
++| Find final administrative-action records | Recorded closure recovered; final action/no-action and recommendation disposition remain open; README§7, R04–R06 | V01–V02 are image-verified fields; recommendation is not completed action |
++| Preserve conflicting accounts | Drafters, awareness, correction expectation, event definitions, website entries, status wording, dates and release scopes preserved in 45 pins and FC01–FC14 | No preferred date/value selected; no causes adjudicated |
++| Preserve originals and sources | Public URLs/byte hashes in SOURCES.json; raw bytes/extractions/rasters retained separately | Public mirror contains reviewed notes, selected government-record excerpts and identifiers, not raw bulk/private sources |
++| Test assumptions and contrary evidence | README final section; FC14; every ledger row has alternative/discriminator | OIG limits, witness memory limits and recorded corrections retained; no attack participation/advance-knowledge inference |
++| Document exact locations | EXCERPTS.json source page, printed page, extraction offsets/lines, page-text SHA; EXCERPTS.md selected text | Manual image fields explicitly separate; line numbers are derivative extraction lines, not historical transcript lines |
++| Public AveLyra commit/push | Authorized destination AveLyra/911-conspiracy-investigation; publication receipt saved separately after push | Verify author/committer for every newly published agent commit, remote branch reachability and exact published blobs; never claim pushed from this checklist alone |
++| Revision accountability | TEXT-CHANGES.diff is additive text against absent new files; previous 175-entry master and earlier studies unchanged | Prior publication baseline 568b48572cd77c6ec16a7ed33b12c2486affb1ed; final diff must contain only this new directory |
++| Unresolved work carried forward | R01–R10, including final disposition and actual 2003 transmission | Completion of this public review does not mark original-record recovery complete |
++| Exclusions | No private mailbox/case correspondence, outreach, fees, filing, deletion, history rewrite or private push | Public official-role names only; no attempted reconstruction of redacted identities or export of contact details |
++
++Text verification, PDF image inspection and remote publication verification are distinct. The verification script checks preservation/citation mechanics; it cannot prove testimony true, completeness of search, legality of redactions or a conspiracy.
+--- /dev/null
++++ b/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/CHRONOLOGY.md
+@@ -0,0 +1,30 @@
++# Record chronology — dates are attributed, not harmonized
++
++Every date is an observation of a record or a witness's later account. Dates of awareness are not independently authenticated event times. Pins refer to EXCERPTS.json/EXCERPTS.md.
++
++| Recorded date | Record and exact locator | Significance and unresolved point |
++|---|---|---|
++| September 11, 2001 | QFR says immediate bridge participation; liaison later describes early building arrival and later upstairs arrival. P09, P13, P28–P31 | Keep building/upstairs/bridge/NORAD-contact events separate |
++| August 12, 2002 heading | Original and revised website printouts, DOT-429 pp.169–172; V05–V06 | Same heading survives on later printouts; not proof of the date each version went live |
++| May 22–23, 2003 | Hearing read-in; Brown describes handoff to Garvey; P16 | Native draft, approval and transport headers not acquired |
++| Same/next day, perhaps weeks later, or summer 2003 | Differing interview recollections; P02, P06, P08, P10, P14–P15 | No preferred awareness date selected |
++| July 24 versus July 29, 2004 | Synopsis predication P27 versus referral-letter image V03 | Preserve both; July 29 letter has August 24 receipt stamp |
++| August 24, 2004 | Open status history, DOT-429 p.7; V02 | Administrative investigation status, not offense date or proof of discipline |
++| September 24, 2004 | Osmus interview; original website printout footer; P04–P05/P08/P11, V05 | Interview is retrospective; source-validation and follow-up claims need originals |
++| September 27, 2004 | Mead memorandum and revised printout; P23/P25, V06 | Memo specifically asks for revision notation/errata |
++| September 27–28, 2004 | Reproduced QFRs thread; P17–P18 | Retrospective request/answer, not the 2003 drafting email |
++| October 21, 2004 as quoted | December briefing quotes “9:20” and “revised entry 10/21/04”; P26 | Different from September printouts'0924; intervening versions missing |
++| December 9, 2004 | Schuessler interview and OIG briefing; P06/P09/P26/P32 | An interim briefing is not the final disposition |
++| January 3, 2005 as printed | Redacted liaison interview cover; P12–P14/P28–P30 | Native audio, original Commission interview and exact date authentication remain open |
++| February 10, 2005 | Miller interview; P07/P15/P31 | Denies preparation role and does not recall corrective transmission |
++| February 14, 2005 | Draft-outline/results-in-brief email; P20 | Expressly not yet approved by HQ; native attachments missing |
++| August 31, 2005 | Brown interview; P10/P16 | Handoff to Garvey; later knowledge, attributed to Miller |
++| November 14 and 21, 2005 | Draft-report email and resend, DOT-INTERVIEWS pp.2182–2183; P19, V04 | Draft filename is a retrieval lead, not a recovered DOC file |
++| 2006 review updates | December synopsis DOT-INTERVIEWS p.2188 | Records revisions, proposed joint transmittal, later decision not to issue joint report; retains pending wording |
++| August 31, 2006 | CC-2006-085 issued; P01–P03 | Recommendations to correct and consider action; no completed-action finding |
++| October 1 update / December 12, 2006 synopsis | P21–P22 | Both “pending” and issued-report statements retained |
++| December 12, 2006 | TIGR close field and case-status screen; V01–V02 | Recorded investigative closure; separate from correction/action/recommendation disposition |
++| December 22, 2011 | OIG FI-2012-0005 response cites October 5 request; P35 | Describes 4,845 responsive pages and referrals, not total public disclosure |
++| December 30, 2011 | FAA FOIA 2012-2153/FI-2012-0005 response cites July 6 request; P34 | Releases 255 pages; request-date relationship unestablished |
++| September 30, 2021 | OIG FI-2021-0047 letter; P33 | Says 4,376 attached pages, 255 referred to FAA; this is a different request/release context |
++| October 26 local / October 27 UTC, 2026 | Present acquisition/hash and source review | No outreach, new FOIA filing, fees or legal-record amendment performed |
+--- /dev/null
++++ b/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/EMBEDDED-FILE-AUDIT.json
+@@ -0,0 +1,26 @@
++[
++  {
++    "id": "DOT-INTERVIEWS",
++    "sha256": "6c0b0be96d101becd3d1c00fb24e73ab517c2fa2bc475ec16e660eb2afc156a2",
++    "physical_pages": 4380,
++    "pypdf_attachment_names": [],
++    "root_names_keys": [],
++    "scope": "PDF embedded-file name-tree inspection only; no carving, execution, mailbox or native repository access."
++  },
++  {
++    "id": "FAA-NEADS",
++    "sha256": "74a28116bff5aaf19ed796f96856130ae50a90ac2cb493d5bf479c3f260791d8",
++    "physical_pages": 257,
++    "pypdf_attachment_names": [],
++    "root_names_keys": [],
++    "scope": "PDF embedded-file name-tree inspection only; no carving, execution, mailbox or native repository access."
++  },
++  {
++    "id": "DOT-RELEASE-429",
++    "sha256": "bb16236b89b7a2f30c8ddcd377696e70ee870368e775c2e34fb0fe01bbc1add6",
++    "physical_pages": 429,
++    "pypdf_attachment_names": [],
++    "root_names_keys": [],
++    "scope": "PDF embedded-file name-tree inspection only; no carving, execution, mailbox or native repository access."
++  }
++]
+--- /dev/null
++++ b/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/EXCERPTS.json
+@@ -0,0 +1,695 @@
++{
++  "method": "PDF physical pages are 1-based; printed page is separate. Character offsets and extraction-line numbers refer to complete preserved page text, not historical transcript line numbers. Manual image fields have no claimed extraction offsets. No redaction reconstruction.",
++  "excerpts": [
++    {
++      "id": "P01",
++      "source_id": "DOT-FINAL",
++      "source_url": "https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=2",
++      "physical_page": 2,
++      "printed_page": 2,
++      "title": "OIG limits its intentional-falsity conclusion to notification statements",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "ae103a8ae2292a4bd215cda749332a000c8e505c29758e903bbde8529cf4429c",
++      "character_start": 483,
++      "character_end": 800,
++      "source_extraction_line_start": 11,
++      "source_extraction_line_end": 16,
++      "excerpt_sha256": "f9d8f276d5a80521924da05a1d1743a52e0baa4d0efb68d455b6c6eb42228d22",
++      "text": "1. We did not find evidence to  conclude that FAA officials knowingly made false \nstatements, purposely omitted accurate information from any statement, or \nintentionally failed to correct any inaccur ate statement after becoming aware of it, \nregarding FAA notifications to DOD about the September 11 hijackings. \n \n"
++    },
++    {
++      "id": "P02",
++      "source_id": "DOT-FINAL",
++      "source_url": "https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=10",
++      "physical_page": 10,
++      "printed_page": 10,
++      "title": "OIG records different knowledge dates and no correction",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "577571f4d1ccc042532e537987e229b3f646314d2739303bcdc4a0206f124b66",
++      "character_start": 183,
++      "character_end": 2005,
++      "source_extraction_line_start": 6,
++      "source_extraction_line_end": 33,
++      "excerpt_sha256": "309582ee1447d737303dd35923a2c93a1b92ab686c1edf129222b45a146e3efa",
++      "text": "The now-retired FAA executive told us she learned during a conversation with the Air \nForce Liaison, which she told us may have  occurred on the same day that FAA’s QFR \nresponse was read into the record, that the response was inaccurate regarding when the \nLiaison joined the phone-bridge.  The other tw o FAA executives also told us that they \nlearned from speaking with the Liaison that  the QFR response was inaccurate.  One \nexecutive told us that she spoke with the Liaison with in a few weeks of the   \nsubmission of the QFR response,  the other executive told us  she spoke to the Liaison \nby the end of the summer.  None of th ese executives, howev er, informed the \nCommission of the inaccuracy.   \n \nThe now-retired executive told us she knew th e other two executives were aware of  \nthe inaccuracy and assumed they  would correct it.  The two current executives told us \nthey thought that the Air Force Liaison,  when interviewed by Commission staff,   \nwould tell the staff that she did not imme diately join the phone-bridge on September \n11.  The Air Force Liaison told us that  no one at the FAA spoke to her about  \ncorrecting FAA’s QFR response during her Commission staff interview and she did \nnot address the response when interviewe d.  Therefore, no one corrected this \ninaccuracy.   \n \nIn our view, these FAA executives had an affirmative obligation to correct FAA’s  \nMay 2003 response to the Commission’s QFR directly with the Commission, as \nopposed to relying on the Air Force Liais on to do so.  Part of the Commission’s \nmandate was to examine, and accurately re port on, the interaction between FAA and \nDOD on September 11.  The time at which the Air Force Liaison joined the FAA \nheadquarters phone-bridge and established c ontact with NORAD was relevant to the \nCommission’s mandate. \n \n"
++    },
++    {
++      "id": "P03",
++      "source_id": "DOT-FINAL",
++      "source_url": "https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12",
++      "physical_page": 12,
++      "printed_page": 12,
++      "title": "Correction recommendation versus consideration of administrative action",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "120e9d39b0ce1658719c1dc98d9f93fa3c8cb927231dae7951ed6c43a29ab9a6",
++      "character_start": 1366,
++      "character_end": 2196,
++      "source_extraction_line_start": 23,
++      "source_extraction_line_end": 41,
++      "excerpt_sha256": "37b933a6f89cd99ac40b64219c70af76a01e6910a3ec49c983b7cdc84920ab0c",
++      "text": "Recommendations \n \n1. FAA should correct its response to th e Commission’s May 22, 2003, Question for \nthe Record. \n \n2. FAA should consider appr opriate administrative action for the two current \nexecutives who did not act to correct th e record with the Commission.  In our \nview, they had an affirmative obligati on to do so in light of the Commission’s \nmandate that included examining, and accurately reporting on, the interaction \nbetween FAA and DOD on Sept ember 11.  The time at which the Air Force \nLiaison joined the FAA headquarters phone -bridge and established contact with \nNORAD was relevant to the Commission’s mandate. \n \nAs a mitigating factor, and to provide some  context, we note th at at the time, the \nFAA, including these executives, produced over 6,000 documents and materials   \nto the Commission. \n \n \n"
++    },
++    {
++      "id": "P04",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3294",
++      "physical_page": 3294,
++      "printed_page": 20,
++      "title": "Osmus names the drafting group",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "9ac399eaec3a3b8319adba61d2232059748620b4cee470509bf7512b54bb4407",
++      "character_start": 391,
++      "character_end": 1046,
++      "source_extraction_line_start": 14,
++      "source_extraction_line_end": 32,
++      "excerpt_sha256": "2470d282c207481f1b1d95e26fe0e9c9235727eeabbf5ba0f67fd87a8fa743bd",
++      "text": "So, Linda Schuessler, myself and Laura \nBrown, who's the deputy in Public Affairs, got \ntogether in Laura's office. Linda called, \n20 \n- --pardon me I'm having a senior moment, it'll \ncome to me in a moment--it will come to me--the \n[unintell.] office- · \nMS. OSMUS: \nat DOD who was the liaison with FAA. And, you \nknow, quickly on the phone they had tried \nto-\n9/11. \nhad clearly been in the FAA building on \nShe was trying to figure out exactly what \ntime that was . Her recollection, at the time, was \nfairly early in the morning. And so the statement \nthat - put together based on that conversation \nwas the one that went back to the Commission. And \n"
++    },
++    {
++      "id": "P05",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3296",
++      "physical_page": 3296,
++      "printed_page": 22,
++      "title": "Osmus describes Brown typing the statement",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "f4a732601c66188ad576cf35c700b9b92f6c044286ce9507069b6c061b6f2d80",
++      "character_start": 490,
++      "character_end": 752,
++      "source_extraction_line_start": 19,
++      "source_extraction_line_end": 27,
++      "excerpt_sha256": "775512057eb667cab0a0e2fddb55e2093ecd9871cffea52ceb666befefcbe08f",
++      "text": "MS. OSMUS: Laura typed it on her \ncomputer, Linda was standing behind her telling her \nwhat the conversation was with and we \nwere just trying to keep it very simple and \nstraightforward, so it was, literally, a sentence \nor two, as I recall. \nformat--\nformat? \n"
++    },
++    {
++      "id": "P06",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4056",
++      "physical_page": 4056,
++      "printed_page": 5,
++      "title": "Schuessler names Miller and Osmus as compilers; uncertain next-day knowledge",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "8ecc91d425f1f0b3f1b61ea96564a2ae273476b3addc175fcbef1624ba76e910",
++      "character_start": 468,
++      "character_end": 898,
++      "source_extraction_line_start": 16,
++      "source_extraction_line_end": 26,
++      "excerpt_sha256": "1dc35617fc641cec38e959a2431eb8f7adc9cf663bd978022b4c816a24692b57",
++      "text": "MS. SCHUESSLER: Right, and in part \nof--part of gathering information, I talked to \nto try and get a little bit more \ninformation from her vantage point, when she joined \nthe telecons. And, if I remember correctly, she \ngave me some information and I shared that with \nShirley and Lynne and they compiled the statement \nand then, I think, maybe the following day, that's \nwhen said, oh, I'm not quite sure \nthat that's accurate. \n"
++    },
++    {
++      "id": "P07",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2681",
++      "physical_page": 2681,
++      "printed_page": 12,
++      "title": "Miller denies involvement in preparing the answer",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "f77d4215fe9d2a34d71d961c868641a89bff9c0685d00a3911dba61573e0c7d8",
++      "character_start": 57,
++      "character_end": 347,
++      "source_extraction_line_start": 6,
++      "source_extraction_line_end": 17,
++      "excerpt_sha256": "e6ef5500a3b02b5330807bc2cd98c68fad3f40edb02fd40d083d5e0c593d07f0",
++      "text": "actually been involved in preparing this . \nMS. MILLER : \nSPECIAL AGENT \nMS. MILLER : \nWell, that's incorrect. \nOkay. \nI think people, you know, \n12 \nthey associate me with 9/11, and they assume I was \nworking it from the very beginning, and that's just \nnot the case. \nSPECIAL AGENT Okay. "
++    },
++    {
++      "id": "P08",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3295",
++      "physical_page": 3295,
++      "printed_page": 21,
++      "title": "Osmus: perhaps a couple of weeks later, correction through interview",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "5d547bd0f4a67ad2f73df9f4f622abe70e6661c5176c88a046dde9ad904f5c9d",
++      "character_start": 120,
++      "character_end": 820,
++      "source_extraction_line_start": 8,
++      "source_extraction_line_end": 25,
++      "excerpt_sha256": "e2aa33eb3d20cb87062b55fe4203229df0b6c8a6d54a3c8620b51a4198da515e",
++      "text": "Sometime later, and I want to say, a \ncouple of weeks later, perhaps, but \nwas in the building on other business and I was \ntalking to Shirley Miller about something and she \ncame into the office and was relating to us she \n21 \nknew that she would be interviewed by the \nCommission at some point and had been, again, going \nback through her notes and her recollection and \nthat sort of thing about where she had been on that \nday and realized that she had actually come to the \nFAA building later in the day than she had \nrealized. \nSo, we knew there needed to be some \ncorrection there and knowing that she was going to \nbe interviewed, we thought that was the way to \nclarify the record for that. \n"
++    },
++    {
++      "id": "P09",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4058",
++      "physical_page": 4058,
++      "printed_page": 7,
++      "title": "Schuessler: immediate on arrival versus immediate during the events",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "a6cfdbf36edf70a1bc8d55820d24255134360c7db70bd1b7e4be2d9219995c76",
++      "character_start": 86,
++      "character_end": 281,
++      "source_extraction_line_start": 7,
++      "source_extraction_line_end": 12,
++      "excerpt_sha256": "9f497c340ed5a002a771caf27258b4ea829e7b552fc50174c11f59dbc90f6a40",
++      "text": "something when something happened. So, that \nindicated to here that, well, yes, I joined \nimmediately when I got into headquarters but it \nwasn't immediately when the situation was \nunfolding . \n"
++    },
++    {
++      "id": "P10",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4330",
++      "physical_page": 4330,
++      "printed_page": 28,
++      "title": "Brown: Miller handled contacts; awareness weeks later",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "f656fec93a1b2957a601a557ab52bcbdb0833f5fae0228c4950089d66359092e",
++      "character_start": 56,
++      "character_end": 821,
++      "source_extraction_line_start": 5,
++      "source_extraction_line_end": 25,
++      "excerpt_sha256": "f920e0a42dd3b1a3a342b7378087a8d380a1d775f71ac32274974d967a69e055",
++      "text": "MS. BROWN: Shirley handled all that. \nShirley was the one who had the direct \ncommunication with the commission and I don't know, \nyou know, what her communication with the \ncommission was on that. \nSPECIAL AGENT That's Shirley \nMiller? \nMS. BROWN: Right. \nSPECIAL AGENT Okay. \nSo after you sent that statement to Jane \nGarvey, that was the end of your involvement in \nthat? \nMS. BROWN: Right, and I heard some time \nafter that, and, you know, my recollection is it \nwas a while after that. It was not shortly after \nthat. It was weeks after that, I said something to \nShirley about it, and she said, oh, and then she \ntold me that Sheryl had said that she couldn't \nremember the things that we thought that she had \nbeen involved in so--but that was weeks later. \n"
++    },
++    {
++      "id": "P11",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3306",
++      "physical_page": 3306,
++      "printed_page": 32,
++      "title": "Osmus: knew inaccurate, relied on liaison interview",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "b7e3bc17a046e15da41aee355b3b34220499850b0474e583eeeea9da0d761746",
++      "character_start": 170,
++      "character_end": 969,
++      "source_extraction_line_start": 10,
++      "source_extraction_line_end": 28,
++      "excerpt_sha256": "70e2e634bef1ffabbb849ecbd014a25ebce51b38e91714eb36da0ab576766c9b",
++      "text": "MS. OSMUS: Yeah, I mean, we knew after we \ntalked to her again that her recollection was \ndifferent, therefore, this wasn't accurate as \npresented. We also knew that she was on the list \nof folks to be interviewed by the Commission, so we \nknew that staff would hear it from her and she \nwould make the point about when she, you know, when \nshe came and what she participated on and what she \nknew firsthand in terms of FAA and DOD \ncommunications. \nSo, as far as correcting the \nrecord, then, you guys were going to rely on her \ninterview with the Commission? \nMS. OSMUS: Yeah, I don't remember, I \ndon't know if Shirley did anything beyond that. It \nwouldn't have occurred to me to suggest she did, \nbecause I figured bringing a person in from-­\nwas the most direct way for the Commission to get \n"
++    },
++    {
++      "id": "P12",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4139",
++      "physical_page": 4139,
++      "printed_page": 43,
++      "title": "Liaison interviewee: nobody asked for clarification with Commission",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "4c42d45b6ba2cd9a8c3cdfbcb6eb67c11c1215d2303d2dd8a8b4cccd7ec8827f",
++      "character_start": 132,
++      "character_end": 222,
++      "source_extraction_line_start": 10,
++      "source_extraction_line_end": 14,
++      "excerpt_sha256": "66a9c60508bf31a20d88da204aef7b80a1fccf117967292848db53858dc9a544",
++      "text": "No one talked to me about \nclarifying that point with them. \nthat, no. \nI would remember \n"
++    },
++    {
++      "id": "P13",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4136",
++      "physical_page": 4136,
++      "printed_page": 40,
++      "title": "Liaison interviewee calls the answer misleading; denies immediate NORAD calls",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "17ae4966ba9414b58852c63bd0405a01dcd8503a3713a4a2ea9cfd0978ef46b4",
++      "character_start": 306,
++      "character_end": 842,
++      "source_extraction_line_start": 15,
++      "source_extraction_line_end": 26,
++      "excerpt_sha256": "0c9fc0d5a52232f6602e6ca425631ceb476df49c273609846137a4100c49e699",
++      "text": "I think it's misleading. \nBecause it says established contact with NORAD on a \nseparate line. I remember making phone calls to \nNORAD from a phone outside of the conference room \nbecause we were all running to use whatever phones \nwe could, it was not a command post where everybody \nhad phones and everything. So, I made phone calls, \nbut I did not do it--this almost looks like I had \nsome kind of hotline or something going with them, \nand it was not immediately by any way shape or \nform. I know I didn't talk to them immediately. \n"
++    },
++    {
++      "id": "P14",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4134",
++      "physical_page": 4134,
++      "printed_page": 38,
++      "title": "Liaison interviewee cannot date the clarification discussion",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "3b13ffb0cc408189198620ff4fac7409157f28de7fede01d6ddb90acc72efbe9",
++      "character_start": 546,
++      "character_end": 1005,
++      "source_extraction_line_start": 18,
++      "source_extraction_line_end": 28,
++      "excerpt_sha256": "a860f323d0a15d9ebea16572954594d25d153f42e4393204924a8a8d6833c672",
++      "text": "Somebody--somebody coordinated \nor talked to me about something, because I \nremember, at some point, I can't tell you \nwhen--this could have been before the 9/11 \nCommission, it could have been after that May 2003, \nyou're talking about. Somebody at some point \ntalked to me about me being notified or something \nthat made me clarify to them that couldn't have \nhappened, I wasn't up there yet. And I don't \nremember who it was or the timing, but I remember \n"
++    },
++    {
++      "id": "P15",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2689",
++      "physical_page": 2689,
++      "printed_page": 20,
++      "title": "Miller: no better timeline and opportunity for interview",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "d1e89d1e4281450f19aaf5c4e1294a6ac14af1316514875b83ecdfd29302becc",
++      "character_start": 342,
++      "character_end": 557,
++      "source_extraction_line_start": 15,
++      "source_extraction_line_end": 20,
++      "excerpt_sha256": "47f61f30a70fb6f664ffdc56ef31c0d9539f6fac14076bd2a5fa2a1841981a9e",
++      "text": "MS. MILLER: Yeah. I mean she didn't have \nany better time line. There wasn't really anything \nelse to tell them as far as I was concerned. And \nshe had her opportunity to talk to them anyway \nin--in her interview. \n"
++    },
++    {
++      "id": "P16",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4325",
++      "physical_page": 4325,
++      "printed_page": 23,
++      "title": "Brown says she gave the statement to Garvey",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "6a9f99bb74c7af074f4cf89fc66ad92a900abfef93d789ba1e4e41287d0bb6de",
++      "character_start": 771,
++      "character_end": 897,
++      "source_extraction_line_start": 26,
++      "source_extraction_line_end": 29,
++      "excerpt_sha256": "000b0a1219250262ccc3fcbcfeb0857e1c0c634c013207cfd8f67b09114149e2",
++      "text": "MS. BROWN: No. I gave it to Jane. She \nwanted to provide it to Member Ben-Veniste herself, \nbecause he had asked her for it. \n"
++    },
++    {
++      "id": "P17",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2495",
++      "physical_page": 2495,
++      "printed_page": 1,
++      "title": "September 28, 2004 email: draft-statement lead and claimed follow-up process",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "6c3f828d470cf52c235429a3251d535c3bcc7a6f8de8638b36fda8c679eefdd7",
++      "character_start": 192,
++      "character_end": 1128,
++      "source_extraction_line_start": 13,
++      "source_extraction_line_end": 25,
++      "excerpt_sha256": "569cde6e40779388d850da7dfbbaff78af4cdb150d7c14f9dca7620e9d30f1de",
++      "text": "-I talked to Lynne Osmus, who was the lead at that time and worked with Jane Garvey and \nothers to draft the statement that was sent to the Commission -- i.e., the piece that Ms . \nGarvey indicates she thought she would be able to send to the staff the evening \nof the day of the hearing . Lynne believes that was the extent of \nproviding anything for the record. At the time of the hearing, the Commission was just \ngetting organized and they didn't really have a process that they followed for hearing \nfollow up . As I recall it was quite some time before there was a transcript from the \nhearing. \nWe did submit the air traffic control chronology (Summary of Air Traffic Hijack Events) as \npart of the document production to the Commission. We also spent time with the staff here \ngoing over what happened that day, viewing a powerpoint presentation that is consistent \nwith the times in the Summary of Air Traffic Hijack Events . \n"
++    },
++    {
++      "id": "P18",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2495",
++      "physical_page": 2495,
++      "printed_page": 1,
++      "title": "Embedded September 27 email: no handling after May hearing",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "6c3f828d470cf52c235429a3251d535c3bcc7a6f8de8638b36fda8c679eefdd7",
++      "character_start": 1611,
++      "character_end": 1743,
++      "source_extraction_line_start": 37,
++      "source_extraction_line_end": 39,
++      "excerpt_sha256": "3334320a0d601b81cc9898adcfbfd13ac8c4e51047bed415a76e882b477a10f2",
++      "text": "I will double check with others who were involved . I know I did not handle anything for \nthe record after the May 22 '03 hearing. \n"
++    },
++    {
++      "id": "P19",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2182",
++      "physical_page": 2182,
++      "printed_page": 1,
++      "title": "November 2005 report circulation and proposed joint transmittal",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "30797ab526942435f35050cab5ef427b8f9d50fa1d9728ce717e160d09f39028",
++      "character_start": 229,
++      "character_end": 728,
++      "source_extraction_line_start": 18,
++      "source_extraction_line_end": 24,
++      "excerpt_sha256": "80777b07a290a35824c7242c27ee65dad9c74ceef935bc1dd9e5f872c8704f84",
++      "text": "Attached for your review is the FAA/NORAD Statements to the 9-11 Commission report. \nI spoke with this morning and he advised that plans are still in place to issue \na joint transmittal letter covering our respective reports. The acting IG at DOD is \nHe affirmed my understand from our last meeting that he would write the first draft of the \ntransmittal letter upon receipt of our near final report. If you don't have any concerns \nI will provide him with a copy of this most recent draft report. \n"
++    },
++    {
++      "id": "P20",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2185",
++      "physical_page": 2185,
++      "printed_page": 1,
++      "title": "February 2005: draft outline not yet approved",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "86d4ad8e33dcd8ac521c785dfaa94ee9efb5ec77a5d6a898336718fe8da893c2",
++      "character_start": 2356,
++      "character_end": 2528,
++      "source_extraction_line_start": 57,
++      "source_extraction_line_end": 58,
++      "excerpt_sha256": "a4f814f3a751ef4de2baea5801560cb9de6cfe882f1cccf6b4393fc6bebc9429",
++      "text": "As discussed, attached please find a copy of our results in brief and a draft report \noutline . The outline has not been approved by my HQ yet so it is subject to change. -"
++    },
++    {
++      "id": "P21",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2188",
++      "physical_page": 2188,
++      "printed_page": 3,
++      "title": "December synopsis: final pending line beside issuance update",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "f1dbca847dbe2e5aea7bc42cbdacd988147910bb4ea16ac9d138752253869535",
++      "character_start": 2770,
++      "character_end": 3977,
++      "source_extraction_line_start": 49,
++      "source_extraction_line_end": 62,
++      "excerpt_sha256": "a0db3bd45ce9884254b18933ab2701f240704709d178ad3be4b998562a0306d9",
++      "text": "Final report is pending. \n10A>112006 On August 31, 2006, the final report was issued documenting the results of our review from a referral \nmade by the 9/11 Commission staff regarding certain inaccurate statements made by FAA officials \nregarding their notifications to DOD during the September 11 hijackings. Our investigation included \nexamining whether FAA officials knowingly made any false statements. The report contained the \nreview results, which indicated that, we did not find evidence to conclude that FAA officials knowingly \nmade false statements, purposely omitted accurate information from any statement, or intentionally \nfailed to correct an inaccurate statement after becoming aware of it. However, the review did \ndiscovere that three FAA executives did not act to correct an erroneous FAA response to a \nCommission Question for the Record (QFR) after leaming it was inaccurate. The report contained \nrecommendations to the FAA Administrator that FAA correct its QFR response and consider \nappropriate administrative action for two current executives . The other recommendations to the \nAdministrator include enhancing FAA's capability to respond to and report on hijacked or suspicious \n"
++    },
++    {
++      "id": "P22",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2189",
++      "physical_page": 2189,
++      "printed_page": 4,
++      "title": "December synopsis: investigation is to be closed",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "4ad183820d7ee2b4cf0578d47a9a5fbbba8af67c5f87dd6149dfd8b80a6bfcf7",
++      "character_start": 198,
++      "character_end": 373,
++      "source_extraction_line_start": 7,
++      "source_extraction_line_end": 11,
++      "excerpt_sha256": "a5cd3d3987a690ee356a155b5f405dc39d52ca5dd3eb92980955e217abcaffc4",
++      "text": "On September 12, 2006, 000/0IG separately issued its public redacted version of its classified report \non its review findings. \nInvestigation is to be closed. \nFINAL UPDATE. \n"
++    },
++    {
++      "id": "P23",
++      "source_id": "DOT-429",
++      "source_url": "https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=168",
++      "physical_page": 168,
++      "printed_page": null,
++      "title": "September 27 memorandum flags unmarked revision",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "e3a99dbd9711b6929008fb6444802f5aabf134d3e74d001cf4a3d6c64ce66d93",
++      "character_start": 1045,
++      "character_end": 1641,
++      "source_extraction_line_start": 29,
++      "source_extraction_line_end": 37,
++      "excerpt_sha256": "8d3db6b5b22d5ce0fefd6b61b52f07fcf0703d43d7d6516d3ae9125923fc2eae",
++      "text": "We notified Laura Brown, Deputy Assistant Administrator for Public Affairs, of \nthis discrepancy on Friday, and the Fact Sheet has since been revised (see \nAttachment 2). One observation, however, is that the new entry is not identified as \na recent revision and we believe such a notation, or errata, should be made given \nour ongoing investigation. \nWe have already contacted the individual responsible for preparing the original \nFact Sheet and will be interviewing the FAA personnel who provided that source \ninformation. We will also determine the accuracy of the revised Fact Sheet entry. \n"
++    },
++    {
++      "id": "P24",
++      "source_id": "DOT-429",
++      "source_url": "https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=169",
++      "physical_page": 169,
++      "printed_page": 1,
++      "title": "Original fact-sheet 0924 entry",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "6b5a98fa5446d65bd6b37d26d44dd83ead5b71a9375000adb9f3a0d4320626ba",
++      "character_start": 1761,
++      "character_end": 1955,
++      "source_extraction_line_start": 31,
++      "source_extraction_line_end": 33,
++      "excerpt_sha256": "9d24bfbc6e10a3413c28780f040f2a99ed8505ca67c9b86688a91ae1a468b7be",
++      "text": "0924. The FAA notifies NORAD's Northeast Air Defense Sector about the suspected hijacking of American \nFlight 77. The FAA and NORAD establish an open line to discuss American 77 and United 93. \n"
++    },
++    {
++      "id": "P25",
++      "source_id": "DOT-429",
++      "source_url": "https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=171",
++      "physical_page": 171,
++      "printed_page": 1,
++      "title": "Revised fact-sheet 0924 entry",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "e1aac228cc3e2ac355c1f449fb09c93717d2d2d6fd7c57a495c065f5ec3ff30f",
++      "character_start": 1768,
++      "character_end": 1923,
++      "source_extraction_line_start": 32,
++      "source_extraction_line_end": 34,
++      "excerpt_sha256": "c8644cdd5fd93b4958572199ec9594b607ec4b6a8460a8255002f6e5c954e667",
++      "text": "0924. The FAA establishes an open phone line with other government agencies and the military to share \ninformation about missing or suspicious aircraft . \n"
++    },
++    {
++      "id": "P26",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2467",
++      "physical_page": 2467,
++      "printed_page": null,
++      "title": "December 9 briefing describes 9:20 and revised-entry date",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "e9bd855205415e73276f7cf8ad81970b1c622ac516a79f2b23687ad6807c1e0f",
++      "character_start": 42,
++      "character_end": 286,
++      "source_extraction_line_start": 4,
++      "source_extraction_line_end": 7,
++      "excerpt_sha256": "defe8e2d467e7733a949d75b5df29083184c1d7ee6e4888f7ab32a58fc1f2721",
++      "text": "to the FAA's attention and they changed both sites to read: \"9:20 . The FAA \nestablishes an open phone line with other government agencies and the military to \nshare information about missing or suspicious aircraft. (revised entry 10/21/04).\" \n"
++    },
++    {
++      "id": "P27",
++      "source_id": "DOT-429",
++      "source_url": "https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=13",
++      "physical_page": 13,
++      "printed_page": 1,
++      "title": "Synopsis referral-date wording",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "ff6bbffcddee37a2ee7d8f208516d19c7cb7febd29e27019d3b0566abe2591b3",
++      "character_start": 233,
++      "character_end": 346,
++      "source_extraction_line_start": 8,
++      "source_extraction_line_end": 9,
++      "excerpt_sha256": "6fd68fa258affd015cfa42aaf0fd6387022bd4985191fc63c770a6706dfa6baa",
++      "text": "Case opened at the direction of DAIGI, DOT-OIG based on a referral a July 24, 2004 from the National Commission \n"
++    },
++    {
++      "id": "P28",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4104",
++      "physical_page": 4104,
++      "printed_page": 8,
++      "title": "Liaison interviewee: building arrival before second impact",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "fdb9d3e99ea86ea3f9103323a2f212f5185fdac0d1401b0e5dbade94b1380b8e",
++      "character_start": 581,
++      "character_end": 886,
++      "source_extraction_line_start": 26,
++      "source_extraction_line_end": 35,
++      "excerpt_sha256": "29a955e7eba9dbca9a4fce3ebf250d84a59ec0d120ee94a150d6a6b0307ec55d",
++      "text": "I was en route to the building \nwhen the first plane hit the World Trade Center. I \nwas on the bridge, kind of almost a view of the \nPentagon, so probably five, ten minutes after that, \nI got to the building. \nDo you think that you got to \nthe building before the second--\nYes, I did. \n--you did? Okay . \n"
++    },
++    {
++      "id": "P29",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4106",
++      "physical_page": 4106,
++      "printed_page": 10,
++      "title": "Liaison interviewee: upstairs after Pentagon impact",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "2e4aa5dcf53dd1bc6e39ef767256b35bd7a0dcfe9866174f2a18d4b90d862f41",
++      "character_start": 527,
++      "character_end": 767,
++      "source_extraction_line_start": 25,
++      "source_extraction_line_end": 36,
++      "excerpt_sha256": "d9c345177a4caa1df81aa360c47e277867177d07c2eb257f818feef8bd5d074c",
++      "text": "About what time do you think \nthat you had gone up there? \nIt was right after the \nairplane hit the Pentagon. \nthe building? \nOkay. \nIt was, like, right there. \nWhere was your office at in \n10 \nFourth floor. \nFourth floor? So you actually \n"
++    },
++    {
++      "id": "P30",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4111",
++      "physical_page": 4111,
++      "printed_page": 15,
++      "title": "Liaison interviewee disclaims precise clock confidence",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "af927b3e0a455a844a96c3e196e0afc2c12ea6206d4e4c3c8d919200af2235b6",
++      "character_start": 120,
++      "character_end": 930,
++      "source_extraction_line_start": 8,
++      "source_extraction_line_end": 25,
++      "excerpt_sha256": "7421c14364867a0ba75d26c8370fbd8727993e310fbc5ea805c84954c3b9a8c3",
++      "text": "honestly say anything about the time frame that day \nI have confidence in because a good friend of mine \ncalled me from New York to make sure I was okay. \nWeeks, maybe days later, I don't know, he was \nsaying something about his phone call to me and I \nsaid, blah, blah, when you called me that \nafternoon, And he said, I didn't \ncall you the afternoon, it was around midnight by \nthe time I finally got through to you. So my who \npersonal frame work of time that day was off. I \nknow that, because I would have bet money that \n- and I talked in the afternoon and he said, \nit was midnight. So, I don't feel very \nconfident about my sense of time. Everything moved \nvery quickly that day. I thought he called me in \nthe afternoon, so, I'm not a good judge of being \nable to give you any accurate time frames. \n"
++    },
++    {
++      "id": "P31",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2682",
++      "physical_page": 2682,
++      "printed_page": 13,
++      "title": "Miller recalls building arrival after Pentagon impact",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "3fb5e0eb1452d754ba79c884b11bb5bb596c90eb68d8fc101ae908d3fc75c693",
++      "character_start": 56,
++      "character_end": 265,
++      "source_extraction_line_start": 5,
++      "source_extraction_line_end": 10,
++      "excerpt_sha256": "70250fd1d685e37a22549c8ed486b0d8811dd5a8c058c08049f5466bc9df4ffd",
++      "text": "that she had communicated with, you know, Lynne and \nLinda, you know, because then when she really \nstarted thinking about it, she said she came in \nafter--! think she said after the plane hit the \nPentagon. \n"
++    },
++    {
++      "id": "P32",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4096",
++      "physical_page": 4096,
++      "printed_page": 45,
++      "title": "Schuessler denies intentional misleading effort",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "f67f9cdac21c556e51f5bf8bceb42c3d31113c2429877a71118d2eeecf3cd6a8",
++      "character_start": 129,
++      "character_end": 582,
++      "source_extraction_line_start": 8,
++      "source_extraction_line_end": 18,
++      "excerpt_sha256": "1594e718ad204b3e5f4bffdc6c9a279c5aae15c5f581390ad675ef3d722405d8",
++      "text": "MS. SCHUESSLER: No, I don't think so, \nprobably reiterate the statement I made when we \nfirst talked. I do not believe there was any \nintentional effort going on to mislead anybody on \ntime frames. I just think this is a massive amount \nof data and trying to put it together, every time \nyou pick up one rock you see something else that's \nthere and has an impact on something else. And \nit's just very, very difficult to put all the \npieces together. \n"
++    },
++    {
++      "id": "P33",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2",
++      "physical_page": 2,
++      "printed_page": null,
++      "title": "2021 release letter: 255-page referral and 4376-page release",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "200e40dad4561c77e2c7c6ed9297e8f723f0f4aa8230d349d502215dcd4385fb",
++      "character_start": 647,
++      "character_end": 1053,
++      "source_extraction_line_start": 12,
++      "source_extraction_line_end": 17,
++      "excerpt_sha256": "9ab75146907879af5500b22dd559852f57452ec117c510864a728f99ad2a4dc5",
++      "text": "Some of the records, 255 pages, originated with the Federal Aviation Administration \n(FAA); and is therefore referred to the FAA. The appropriate personnel from the FAA \nwill review the documents for FOIA and respond directly to you. \nAttached are 4,376 pages of documents responsive to your request. Please be aware \nthat all 9/11 Commission hearing transcripts are released in full, without redactions. \n"
++    },
++    {
++      "id": "P34",
++      "source_id": "FAA-NEADS",
++      "source_url": "https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf#page=2",
++      "physical_page": 2,
++      "printed_page": null,
++      "title": "2011 FAA response: request date, control IDs and 255 pages",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "058578f34c8fe1038caf5ff64436ffa5bc0b17218c9d87d8c5b4d513605c0b39",
++      "character_start": 213,
++      "character_end": 711,
++      "source_extraction_line_start": 10,
++      "source_extraction_line_end": 17,
++      "excerpt_sha256": "0da8b52cfc34e3df97f5c0ff4bf20341c0fc02790b01efb07567d6d5e86f538e",
++      "text": "This responds to your July 6, 2011 FOIA request to the Department ofTransportation's \nOffice oflnspector General (OIG), which they identified as FI-2012-0005. Your request \nsought records pertaining to the 9/11 Commission and any investigations; and interactions \nbetween the FAA, and NEADS and NORAD. \nWhile processing your request, the OIG identified 255 pages of FAA records, which were \nforwarded to us for review. Based on our review, the enclosed records can be released in \ntheir entirety. \n"
++    },
++    {
++      "id": "P35",
++      "source_id": "DOT-429",
++      "source_url": "https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=2",
++      "physical_page": 2,
++      "printed_page": null,
++      "title": "2011 OIG letter: October request and release/referral counts",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "195a129d4bcdb5d9e8c831e7e3de04c4081e6cc34c1d689cab5e51b2d19c62d2",
++      "character_start": 183,
++      "character_end": 1534,
++      "source_extraction_line_start": 10,
++      "source_extraction_line_end": 28,
++      "excerpt_sha256": "9fbac9ac5f758a849eae34213bb84122464dbe2cbdf9ba620a9e2eb4911794ce",
++      "text": "This letter is in response to your electronic Freedom of Information Act (FOIA) \nrequest dated October 5, 2011, sent to the U.S. Department of Transportation (DOT), \nOffice of the Inspector General (OIG). You requested a copy of all documents \nconcerning any investigation conducted by the Office of Inspector General of the \nDepartment of Transportation concerning the actions of the FAA on September 11, \n2001, relating to interactions between FAA and the entities known as NEADS and/or \nNORAD. \nPlease be advised that we have identified a total of 4845 pages of responsive records. \nThere were 255 pages which originated at the Federal Aviation Administration \n(FAA), and must be coordinated with FAA pursuant to 49 CFR 7 .16. In addition, \nthere were 2241 pages of 9/11 Commission documents which we must coordinate \nwith the U.S. National Archives and Records Administration (NARA) pursuant to 49 \nCFR 7.16. The appropriate personnel from the FAA and NARA will review their \ndocuments for FOIA and respond directly to you. \nPlease know that 2349 pages of the responsive records originated at DOT OIG. You \nwill note that some information was redacted or withheld pursuant to exemptions \nprovided by the Freedom of Information Act (5 U.S.C. § 552(b)(5), (6), (7)(C) and \n(7)(E)). 1 On the enclosed CD, we are producing 426 pages with redactions. \n"
++    },
++    {
++      "id": "P36",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3275",
++      "physical_page": 3275,
++      "printed_page": 1,
++      "title": "Osmus interview cover time as printed",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "1289425e4def73f672cc440f03071027c7db1b9256243a460d392801033b64e1",
++      "character_start": 205,
++      "character_end": 258,
++      "source_extraction_line_start": 15,
++      "source_extraction_line_end": 17,
++      "excerpt_sha256": "c91456a464500bcc940859f7bbb0c83cd91d2b69d749ef229e5bd66086e3b5bc",
++      "text": "Friday, September 24, 2004 \n10:05 p.m. - 11:01 a.m. \n"
++    },
++    {
++      "id": "P37",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3276",
++      "physical_page": 3276,
++      "printed_page": 2,
++      "title": "Osmus interview opening time as printed",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "55adc4163eb17fbfdb755da2670eab56ab58d5740ea82c8a5cd85a9826dc80ad",
++      "character_start": 85,
++      "character_end": 164,
++      "source_extraction_line_start": 7,
++      "source_extraction_line_end": 9,
++      "excerpt_sha256": "0134363cb1e653519238e3e9b02cec25f2b83bcfa50a7d8c8d62d1184fd12e96",
++      "text": "--2004 and the time is 10:05 \na.m. We're at FAA Building 10-A, Room 300-East, \n"
++    },
++    {
++      "id": "P38",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3299",
++      "physical_page": 3299,
++      "printed_page": 25,
++      "title": "Osmus did not know log origin; review not for accuracy",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "e4a7dda92bf10df45a68c26c1692d80b1227d3e6c7e3e162e2eec8b54b54a484",
++      "character_start": 135,
++      "character_end": 831,
++      "source_extraction_line_start": 9,
++      "source_extraction_line_end": 28,
++      "excerpt_sha256": "e0c4f66ff069b59459b224c61b76c6ecbc2ef67ce924da18b51eafc49e2794d8",
++      "text": "MS. OSMUS: Those were logs or time lines \nthat Linda had, I don't know what the origin was. \nDid you review any NORAD logs, \nyourself? \nMS. OSMUS: I have subsequently, I'm just \nlooking, when Shirley was working with the \nCommission, I don't know that I had looked at any \nprior to the hearing . \nOkay, subsequent to--when do \nyou think that you had a chance to actually review \nsome logs? \nMS. OSMUS: From time to time as Shirley \ngot additional requests from the Commission, and a \ncomprehensive time line was put together for all \nthe flights? \nMm-hmm. \nMS. OSMUS: Shirley and Linda Schuessler \nand a couple of Linda's folks and I sat down and \njust went over it--not for accuracy, because I \n"
++    },
++    {
++      "id": "P39",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3300",
++      "physical_page": 3300,
++      "printed_page": 26,
++      "title": "Osmus: no recollection of reviewing logs by May 2003",
++      "method": "Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.",
++      "page_text_sha256": "4bc8d18a698405065cc3a093273e1694551a72e5208487bc2cb728ea60cbb3be",
++      "character_start": 88,
++      "character_end": 893,
++      "source_extraction_line_start": 6,
++      "source_extraction_line_end": 27,
++      "excerpt_sha256": "307b5394060bc539abab4afb10785664391c47dd356a22d9f5a68aac37a38b87",
++      "text": "didn't have the basis for where the numbers were \ncoming from, but things like spelling out acronyms \nand making sure that to a non-FAA reader it made \nsense to most. So, I mean, that sort of thing. \nI've not done any scrubbing of one long against \nanother to analyze time or anything like that. \nSo, when this was prepared, \nback in May 2003, you hadn't actually reviewed any \nlogs yourself? \nMS. OSMUS: No, I don't recall seeing any \nlogs up until that point. \nDo you know where this \nreference would have come from? \nMS. OSMUS: No. \nOkay. \nMS. OSMUS: I mean, you know, I think as \nShirley probably mentioned to you, folks were \nkeeping notes about time from various perspectives, \njust recognizing what a momentous event had \noccurred on 9/11. But I don't know what particular \nsource that came from. \n"
++    },
++    {
++      "id": "V01",
++      "source_id": "DOT-429",
++      "source_url": "https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=6",
++      "physical_page": 6,
++      "title": "TIGR input-sheet handwritten fields",
++      "method": "Manual selected-field transcription from inspected page image; punctuation separating fields supplied by researcher. Full original unchanged. Not an OCR-exact substring.",
++      "image_sha256": "6d40407ed32f2dab3a1893b5a439d885b60626201e5481f7ccfde5242df13e57",
++      "excerpt_sha256": "9490ed67924054e682c497dd3151769542c81c7deb769e031f1b4d5b3186dbc8",
++      "text": "Investigation No.: 042R0122001; ROI Date: 8/31/06; Close Investigation Date: 12/12/06."
++    },
++    {
++      "id": "V02",
++      "source_id": "DOT-429",
++      "source_url": "https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=7",
++      "physical_page": 7,
++      "title": "Case-status screen fields",
++      "method": "Manual selected-field transcription from inspected page image; punctuation separating fields supplied by researcher. Full original unchanged. Not an OCR-exact substring.",
++      "image_sha256": "4b68b41f58017506567a6fd384af456eeffcc6a46c75f2199c70afb2c358c9b8",
++      "excerpt_sha256": "747b2e8d96f1052039b1fc236f5bf19e868229287ebe86c3eba993676614dec4",
++      "text": "Case No.: 042R0122001; Current Description: Closed; Start: 12/12/2006. Status history: Open, 08/24/2004."
++    },
++    {
++      "id": "V03",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2325",
++      "physical_page": 2325,
++      "title": "Referral letter date and receipt stamp",
++      "method": "Manual selected-field transcription from inspected page image; punctuation separating fields supplied by researcher. Full original unchanged. Not an OCR-exact substring.",
++      "image_sha256": "262896f417e075bf9340cdfb16c1f8d3552a6f86d568aa6ad1234b3b8ee45f06",
++      "excerpt_sha256": "9510fbbd0bda788fffc84f45ca33c217c44885711f324fee0fb6cd7ee161f10f",
++      "text": "July 29, 2004. RECEIVED AUG 24 2004. DOT-OIG INVESTIGATIONS."
++    },
++    {
++      "id": "V04",
++      "source_id": "DOT-INTERVIEWS",
++      "source_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2182",
++      "physical_page": 2182,
++      "title": "Wrapped attachment filename",
++      "method": "Manual selected-field transcription from inspected page image; punctuation separating fields supplied by researcher. Full original unchanged. Not an OCR-exact substring.",
++      "image_sha256": "56ae247a82c1b3e94515ba139909b5b99b71efd939540f78d7fe457d81a3c591",
++      "excerpt_sha256": "8ed34d37fd5bea09c1f5694924483c6784e0b3e45b8645a58470ffc515e1fedb",
++      "text": "draft_final_repor / t_27a.doc (12... [two visible filename lines; size truncated])"
++    },
++    {
++      "id": "V05",
++      "source_id": "DOT-429",
++      "source_url": "https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=169",
++      "physical_page": 169,
++      "title": "Original printout heading/footer",
++      "method": "Manual selected-field transcription from inspected page image; punctuation separating fields supplied by researcher. Full original unchanged. Not an OCR-exact substring.",
++      "image_sha256": "0288cc32599895f87890274767e58b231bd8c73bee88585513bd632b23cd2afd",
++      "excerpt_sha256": "2d410b871603ea348c3e46b8bf8597ee462086937834e05cc373e517b63ef43a",
++      "text": "August 12, 2002; print footer 9/24/2004."
++    },
++    {
++      "id": "V06",
++      "source_id": "DOT-429",
++      "source_url": "https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=171",
++      "physical_page": 171,
++      "title": "Revised printout heading/footer",
++      "method": "Manual selected-field transcription from inspected page image; punctuation separating fields supplied by researcher. Full original unchanged. Not an OCR-exact substring.",
++      "image_sha256": "7496654a9c1c8259743efc54283f7758d281f531c7b85c630153bf23debacbd8",
++      "excerpt_sha256": "18aae98b00b1f9f90fcb2ec82771352e2701cdd5c185def56811f53aa2553f72",
++      "text": "August 12, 2002; print footer 9/27/2004."
++    }
++  ]
++}
+--- /dev/null
++++ b/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/EXCERPTS.md
+@@ -0,0 +1,782 @@
++# Selected source excerpts
++
++These selected government-record excerpts preserve extracted wording, including errors and uncertainty. They are not native email/audio originals. Source-file hashes are in SOURCES.json; exact offsets and page-text hashes are in EXCERPTS.json. Manual image transcriptions are explicitly labeled.
++
++## P01: OIG limits its intentional-falsity conclusion to notification statements
++
++Source: [DOT-FINAL, physical page 2](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=2); printed page 2.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++1. We did not find evidence to  conclude that FAA officials knowingly made false 
++statements, purposely omitted accurate information from any statement, or 
++intentionally failed to correct any inaccur ate statement after becoming aware of it, 
++regarding FAA notifications to DOD about the September 11 hijackings.
++```
++
++## P02: OIG records different knowledge dates and no correction
++
++Source: [DOT-FINAL, physical page 10](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=10); printed page 10.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++The now-retired FAA executive told us she learned during a conversation with the Air 
++Force Liaison, which she told us may have  occurred on the same day that FAA’s QFR 
++response was read into the record, that the response was inaccurate regarding when the 
++Liaison joined the phone-bridge.  The other tw o FAA executives also told us that they 
++learned from speaking with the Liaison that  the QFR response was inaccurate.  One 
++executive told us that she spoke with the Liaison with in a few weeks of the   
++submission of the QFR response,  the other executive told us  she spoke to the Liaison 
++by the end of the summer.  None of th ese executives, howev er, informed the 
++Commission of the inaccuracy.   
++ 
++The now-retired executive told us she knew th e other two executives were aware of  
++the inaccuracy and assumed they  would correct it.  The two current executives told us 
++they thought that the Air Force Liaison,  when interviewed by Commission staff,   
++would tell the staff that she did not imme diately join the phone-bridge on September 
++11.  The Air Force Liaison told us that  no one at the FAA spoke to her about  
++correcting FAA’s QFR response during her Commission staff interview and she did 
++not address the response when interviewe d.  Therefore, no one corrected this 
++inaccuracy.   
++ 
++In our view, these FAA executives had an affirmative obligation to correct FAA’s  
++May 2003 response to the Commission’s QFR directly with the Commission, as 
++opposed to relying on the Air Force Liais on to do so.  Part of the Commission’s 
++mandate was to examine, and accurately re port on, the interaction between FAA and 
++DOD on September 11.  The time at which the Air Force Liaison joined the FAA 
++headquarters phone-bridge and established c ontact with NORAD was relevant to the 
++Commission’s mandate.
++```
++
++## P03: Correction recommendation versus consideration of administrative action
++
++Source: [DOT-FINAL, physical page 12](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12); printed page 12.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++Recommendations 
++ 
++1. FAA should correct its response to th e Commission’s May 22, 2003, Question for 
++the Record. 
++ 
++2. FAA should consider appr opriate administrative action for the two current 
++executives who did not act to correct th e record with the Commission.  In our 
++view, they had an affirmative obligati on to do so in light of the Commission’s 
++mandate that included examining, and accurately reporting on, the interaction 
++between FAA and DOD on Sept ember 11.  The time at which the Air Force 
++Liaison joined the FAA headquarters phone -bridge and established contact with 
++NORAD was relevant to the Commission’s mandate. 
++ 
++As a mitigating factor, and to provide some  context, we note th at at the time, the 
++FAA, including these executives, produced over 6,000 documents and materials   
++to the Commission.
++```
++
++## P04: Osmus names the drafting group
++
++Source: [DOT-INTERVIEWS, physical page 3294](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3294); printed page 20.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++So, Linda Schuessler, myself and Laura 
++Brown, who's the deputy in Public Affairs, got 
++together in Laura's office. Linda called, 
++20 
++- --pardon me I'm having a senior moment, it'll 
++come to me in a moment--it will come to me--the 
++[unintell.] office- · 
++MS. OSMUS: 
++at DOD who was the liaison with FAA. And, you 
++know, quickly on the phone they had tried 
++to-
++9/11. 
++had clearly been in the FAA building on 
++She was trying to figure out exactly what 
++time that was . Her recollection, at the time, was 
++fairly early in the morning. And so the statement 
++that - put together based on that conversation 
++was the one that went back to the Commission. And
++```
++
++## P05: Osmus describes Brown typing the statement
++
++Source: [DOT-INTERVIEWS, physical page 3296](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3296); printed page 22.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++MS. OSMUS: Laura typed it on her 
++computer, Linda was standing behind her telling her 
++what the conversation was with and we 
++were just trying to keep it very simple and 
++straightforward, so it was, literally, a sentence 
++or two, as I recall. 
++format--
++format?
++```
++
++## P06: Schuessler names Miller and Osmus as compilers; uncertain next-day knowledge
++
++Source: [DOT-INTERVIEWS, physical page 4056](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4056); printed page 5.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++MS. SCHUESSLER: Right, and in part 
++of--part of gathering information, I talked to 
++to try and get a little bit more 
++information from her vantage point, when she joined 
++the telecons. And, if I remember correctly, she 
++gave me some information and I shared that with 
++Shirley and Lynne and they compiled the statement 
++and then, I think, maybe the following day, that's 
++when said, oh, I'm not quite sure 
++that that's accurate.
++```
++
++## P07: Miller denies involvement in preparing the answer
++
++Source: [DOT-INTERVIEWS, physical page 2681](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2681); printed page 12.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++actually been involved in preparing this . 
++MS. MILLER : 
++SPECIAL AGENT 
++MS. MILLER : 
++Well, that's incorrect. 
++Okay. 
++I think people, you know, 
++12 
++they associate me with 9/11, and they assume I was 
++working it from the very beginning, and that's just 
++not the case. 
++SPECIAL AGENT Okay.
++```
++
++## P08: Osmus: perhaps a couple of weeks later, correction through interview
++
++Source: [DOT-INTERVIEWS, physical page 3295](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3295); printed page 21.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++Sometime later, and I want to say, a 
++couple of weeks later, perhaps, but 
++was in the building on other business and I was 
++talking to Shirley Miller about something and she 
++came into the office and was relating to us she 
++21 
++knew that she would be interviewed by the 
++Commission at some point and had been, again, going 
++back through her notes and her recollection and 
++that sort of thing about where she had been on that 
++day and realized that she had actually come to the 
++FAA building later in the day than she had 
++realized. 
++So, we knew there needed to be some 
++correction there and knowing that she was going to 
++be interviewed, we thought that was the way to 
++clarify the record for that.
++```
++
++## P09: Schuessler: immediate on arrival versus immediate during the events
++
++Source: [DOT-INTERVIEWS, physical page 4058](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4058); printed page 7.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++something when something happened. So, that 
++indicated to here that, well, yes, I joined 
++immediately when I got into headquarters but it 
++wasn't immediately when the situation was 
++unfolding .
++```
++
++## P10: Brown: Miller handled contacts; awareness weeks later
++
++Source: [DOT-INTERVIEWS, physical page 4330](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4330); printed page 28.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++MS. BROWN: Shirley handled all that. 
++Shirley was the one who had the direct 
++communication with the commission and I don't know, 
++you know, what her communication with the 
++commission was on that. 
++SPECIAL AGENT That's Shirley 
++Miller? 
++MS. BROWN: Right. 
++SPECIAL AGENT Okay. 
++So after you sent that statement to Jane 
++Garvey, that was the end of your involvement in 
++that? 
++MS. BROWN: Right, and I heard some time 
++after that, and, you know, my recollection is it 
++was a while after that. It was not shortly after 
++that. It was weeks after that, I said something to 
++Shirley about it, and she said, oh, and then she 
++told me that Sheryl had said that she couldn't 
++remember the things that we thought that she had 
++been involved in so--but that was weeks later.
++```
++
++## P11: Osmus: knew inaccurate, relied on liaison interview
++
++Source: [DOT-INTERVIEWS, physical page 3306](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3306); printed page 32.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++MS. OSMUS: Yeah, I mean, we knew after we 
++talked to her again that her recollection was 
++different, therefore, this wasn't accurate as 
++presented. We also knew that she was on the list 
++of folks to be interviewed by the Commission, so we 
++knew that staff would hear it from her and she 
++would make the point about when she, you know, when 
++she came and what she participated on and what she 
++knew firsthand in terms of FAA and DOD 
++communications. 
++So, as far as correcting the 
++record, then, you guys were going to rely on her 
++interview with the Commission? 
++MS. OSMUS: Yeah, I don't remember, I 
++don't know if Shirley did anything beyond that. It 
++wouldn't have occurred to me to suggest she did, 
++because I figured bringing a person in from-­
++was the most direct way for the Commission to get
++```
++
++## P12: Liaison interviewee: nobody asked for clarification with Commission
++
++Source: [DOT-INTERVIEWS, physical page 4139](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4139); printed page 43.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++No one talked to me about 
++clarifying that point with them. 
++that, no. 
++I would remember
++```
++
++## P13: Liaison interviewee calls the answer misleading; denies immediate NORAD calls
++
++Source: [DOT-INTERVIEWS, physical page 4136](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4136); printed page 40.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++I think it's misleading. 
++Because it says established contact with NORAD on a 
++separate line. I remember making phone calls to 
++NORAD from a phone outside of the conference room 
++because we were all running to use whatever phones 
++we could, it was not a command post where everybody 
++had phones and everything. So, I made phone calls, 
++but I did not do it--this almost looks like I had 
++some kind of hotline or something going with them, 
++and it was not immediately by any way shape or 
++form. I know I didn't talk to them immediately.
++```
++
++## P14: Liaison interviewee cannot date the clarification discussion
++
++Source: [DOT-INTERVIEWS, physical page 4134](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4134); printed page 38.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++Somebody--somebody coordinated 
++or talked to me about something, because I 
++remember, at some point, I can't tell you 
++when--this could have been before the 9/11 
++Commission, it could have been after that May 2003, 
++you're talking about. Somebody at some point 
++talked to me about me being notified or something 
++that made me clarify to them that couldn't have 
++happened, I wasn't up there yet. And I don't 
++remember who it was or the timing, but I remember
++```
++
++## P15: Miller: no better timeline and opportunity for interview
++
++Source: [DOT-INTERVIEWS, physical page 2689](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2689); printed page 20.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++MS. MILLER: Yeah. I mean she didn't have 
++any better time line. There wasn't really anything 
++else to tell them as far as I was concerned. And 
++she had her opportunity to talk to them anyway 
++in--in her interview.
++```
++
++## P16: Brown says she gave the statement to Garvey
++
++Source: [DOT-INTERVIEWS, physical page 4325](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4325); printed page 23.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++MS. BROWN: No. I gave it to Jane. She 
++wanted to provide it to Member Ben-Veniste herself, 
++because he had asked her for it.
++```
++
++## P17: September 28, 2004 email: draft-statement lead and claimed follow-up process
++
++Source: [DOT-INTERVIEWS, physical page 2495](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2495); printed page 1.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++-I talked to Lynne Osmus, who was the lead at that time and worked with Jane Garvey and 
++others to draft the statement that was sent to the Commission -- i.e., the piece that Ms . 
++Garvey indicates she thought she would be able to send to the staff the evening 
++of the day of the hearing . Lynne believes that was the extent of 
++providing anything for the record. At the time of the hearing, the Commission was just 
++getting organized and they didn't really have a process that they followed for hearing 
++follow up . As I recall it was quite some time before there was a transcript from the 
++hearing. 
++We did submit the air traffic control chronology (Summary of Air Traffic Hijack Events) as 
++part of the document production to the Commission. We also spent time with the staff here 
++going over what happened that day, viewing a powerpoint presentation that is consistent 
++with the times in the Summary of Air Traffic Hijack Events .
++```
++
++## P18: Embedded September 27 email: no handling after May hearing
++
++Source: [DOT-INTERVIEWS, physical page 2495](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2495); printed page 1.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++I will double check with others who were involved . I know I did not handle anything for 
++the record after the May 22 '03 hearing.
++```
++
++## P19: November 2005 report circulation and proposed joint transmittal
++
++Source: [DOT-INTERVIEWS, physical page 2182](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2182); printed page 1.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++Attached for your review is the FAA/NORAD Statements to the 9-11 Commission report. 
++I spoke with this morning and he advised that plans are still in place to issue 
++a joint transmittal letter covering our respective reports. The acting IG at DOD is 
++He affirmed my understand from our last meeting that he would write the first draft of the 
++transmittal letter upon receipt of our near final report. If you don't have any concerns 
++I will provide him with a copy of this most recent draft report.
++```
++
++## P20: February 2005: draft outline not yet approved
++
++Source: [DOT-INTERVIEWS, physical page 2185](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2185); printed page 1.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++As discussed, attached please find a copy of our results in brief and a draft report 
++outline . The outline has not been approved by my HQ yet so it is subject to change. -
++```
++
++## P21: December synopsis: final pending line beside issuance update
++
++Source: [DOT-INTERVIEWS, physical page 2188](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2188); printed page 3.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++Final report is pending. 
++10A>112006 On August 31, 2006, the final report was issued documenting the results of our review from a referral 
++made by the 9/11 Commission staff regarding certain inaccurate statements made by FAA officials 
++regarding their notifications to DOD during the September 11 hijackings. Our investigation included 
++examining whether FAA officials knowingly made any false statements. The report contained the 
++review results, which indicated that, we did not find evidence to conclude that FAA officials knowingly 
++made false statements, purposely omitted accurate information from any statement, or intentionally 
++failed to correct an inaccurate statement after becoming aware of it. However, the review did 
++discovere that three FAA executives did not act to correct an erroneous FAA response to a 
++Commission Question for the Record (QFR) after leaming it was inaccurate. The report contained 
++recommendations to the FAA Administrator that FAA correct its QFR response and consider 
++appropriate administrative action for two current executives . The other recommendations to the 
++Administrator include enhancing FAA's capability to respond to and report on hijacked or suspicious
++```
++
++## P22: December synopsis: investigation is to be closed
++
++Source: [DOT-INTERVIEWS, physical page 2189](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2189); printed page 4.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++On September 12, 2006, 000/0IG separately issued its public redacted version of its classified report 
++on its review findings. 
++Investigation is to be closed. 
++FINAL UPDATE.
++```
++
++## P23: September 27 memorandum flags unmarked revision
++
++Source: [DOT-429, physical page 168](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=168).
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++We notified Laura Brown, Deputy Assistant Administrator for Public Affairs, of 
++this discrepancy on Friday, and the Fact Sheet has since been revised (see 
++Attachment 2). One observation, however, is that the new entry is not identified as 
++a recent revision and we believe such a notation, or errata, should be made given 
++our ongoing investigation. 
++We have already contacted the individual responsible for preparing the original 
++Fact Sheet and will be interviewing the FAA personnel who provided that source 
++information. We will also determine the accuracy of the revised Fact Sheet entry.
++```
++
++## P24: Original fact-sheet 0924 entry
++
++Source: [DOT-429, physical page 169](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=169); printed page 1.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++0924. The FAA notifies NORAD's Northeast Air Defense Sector about the suspected hijacking of American 
++Flight 77. The FAA and NORAD establish an open line to discuss American 77 and United 93.
++```
++
++## P25: Revised fact-sheet 0924 entry
++
++Source: [DOT-429, physical page 171](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=171); printed page 1.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++0924. The FAA establishes an open phone line with other government agencies and the military to share 
++information about missing or suspicious aircraft .
++```
++
++## P26: December 9 briefing describes 9:20 and revised-entry date
++
++Source: [DOT-INTERVIEWS, physical page 2467](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2467).
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++to the FAA's attention and they changed both sites to read: "9:20 . The FAA 
++establishes an open phone line with other government agencies and the military to 
++share information about missing or suspicious aircraft. (revised entry 10/21/04)."
++```
++
++## P27: Synopsis referral-date wording
++
++Source: [DOT-429, physical page 13](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=13); printed page 1.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++Case opened at the direction of DAIGI, DOT-OIG based on a referral a July 24, 2004 from the National Commission
++```
++
++## P28: Liaison interviewee: building arrival before second impact
++
++Source: [DOT-INTERVIEWS, physical page 4104](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4104); printed page 8.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++I was en route to the building 
++when the first plane hit the World Trade Center. I 
++was on the bridge, kind of almost a view of the 
++Pentagon, so probably five, ten minutes after that, 
++I got to the building. 
++Do you think that you got to 
++the building before the second--
++Yes, I did. 
++--you did? Okay .
++```
++
++## P29: Liaison interviewee: upstairs after Pentagon impact
++
++Source: [DOT-INTERVIEWS, physical page 4106](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4106); printed page 10.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++About what time do you think 
++that you had gone up there? 
++It was right after the 
++airplane hit the Pentagon. 
++the building? 
++Okay. 
++It was, like, right there. 
++Where was your office at in 
++10 
++Fourth floor. 
++Fourth floor? So you actually
++```
++
++## P30: Liaison interviewee disclaims precise clock confidence
++
++Source: [DOT-INTERVIEWS, physical page 4111](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4111); printed page 15.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++honestly say anything about the time frame that day 
++I have confidence in because a good friend of mine 
++called me from New York to make sure I was okay. 
++Weeks, maybe days later, I don't know, he was 
++saying something about his phone call to me and I 
++said, blah, blah, when you called me that 
++afternoon, And he said, I didn't 
++call you the afternoon, it was around midnight by 
++the time I finally got through to you. So my who 
++personal frame work of time that day was off. I 
++know that, because I would have bet money that 
++- and I talked in the afternoon and he said, 
++it was midnight. So, I don't feel very 
++confident about my sense of time. Everything moved 
++very quickly that day. I thought he called me in 
++the afternoon, so, I'm not a good judge of being 
++able to give you any accurate time frames.
++```
++
++## P31: Miller recalls building arrival after Pentagon impact
++
++Source: [DOT-INTERVIEWS, physical page 2682](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2682); printed page 13.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++that she had communicated with, you know, Lynne and 
++Linda, you know, because then when she really 
++started thinking about it, she said she came in 
++after--! think she said after the plane hit the 
++Pentagon.
++```
++
++## P32: Schuessler denies intentional misleading effort
++
++Source: [DOT-INTERVIEWS, physical page 4096](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4096); printed page 45.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++MS. SCHUESSLER: No, I don't think so, 
++probably reiterate the statement I made when we 
++first talked. I do not believe there was any 
++intentional effort going on to mislead anybody on 
++time frames. I just think this is a massive amount 
++of data and trying to put it together, every time 
++you pick up one rock you see something else that's 
++there and has an impact on something else. And 
++it's just very, very difficult to put all the 
++pieces together.
++```
++
++## P33: 2021 release letter: 255-page referral and 4376-page release
++
++Source: [DOT-INTERVIEWS, physical page 2](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2).
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++Some of the records, 255 pages, originated with the Federal Aviation Administration 
++(FAA); and is therefore referred to the FAA. The appropriate personnel from the FAA 
++will review the documents for FOIA and respond directly to you. 
++Attached are 4,376 pages of documents responsive to your request. Please be aware 
++that all 9/11 Commission hearing transcripts are released in full, without redactions.
++```
++
++## P34: 2011 FAA response: request date, control IDs and 255 pages
++
++Source: [FAA-NEADS, physical page 2](https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf#page=2).
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++This responds to your July 6, 2011 FOIA request to the Department ofTransportation's 
++Office oflnspector General (OIG), which they identified as FI-2012-0005. Your request 
++sought records pertaining to the 9/11 Commission and any investigations; and interactions 
++between the FAA, and NEADS and NORAD. 
++While processing your request, the OIG identified 255 pages of FAA records, which were 
++forwarded to us for review. Based on our review, the enclosed records can be released in 
++their entirety.
++```
++
++## P35: 2011 OIG letter: October request and release/referral counts
++
++Source: [DOT-429, physical page 2](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=2).
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++This letter is in response to your electronic Freedom of Information Act (FOIA) 
++request dated October 5, 2011, sent to the U.S. Department of Transportation (DOT), 
++Office of the Inspector General (OIG). You requested a copy of all documents 
++concerning any investigation conducted by the Office of Inspector General of the 
++Department of Transportation concerning the actions of the FAA on September 11, 
++2001, relating to interactions between FAA and the entities known as NEADS and/or 
++NORAD. 
++Please be advised that we have identified a total of 4845 pages of responsive records. 
++There were 255 pages which originated at the Federal Aviation Administration 
++(FAA), and must be coordinated with FAA pursuant to 49 CFR 7 .16. In addition, 
++there were 2241 pages of 9/11 Commission documents which we must coordinate 
++with the U.S. National Archives and Records Administration (NARA) pursuant to 49 
++CFR 7.16. The appropriate personnel from the FAA and NARA will review their 
++documents for FOIA and respond directly to you. 
++Please know that 2349 pages of the responsive records originated at DOT OIG. You 
++will note that some information was redacted or withheld pursuant to exemptions 
++provided by the Freedom of Information Act (5 U.S.C. § 552(b)(5), (6), (7)(C) and 
++(7)(E)). 1 On the enclosed CD, we are producing 426 pages with redactions.
++```
++
++## P36: Osmus interview cover time as printed
++
++Source: [DOT-INTERVIEWS, physical page 3275](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3275); printed page 1.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++Friday, September 24, 2004 
++10:05 p.m. - 11:01 a.m.
++```
++
++## P37: Osmus interview opening time as printed
++
++Source: [DOT-INTERVIEWS, physical page 3276](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3276); printed page 2.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++--2004 and the time is 10:05 
++a.m. We're at FAA Building 10-A, Room 300-East,
++```
++
++## P38: Osmus did not know log origin; review not for accuracy
++
++Source: [DOT-INTERVIEWS, physical page 3299](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3299); printed page 25.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++MS. OSMUS: Those were logs or time lines 
++that Linda had, I don't know what the origin was. 
++Did you review any NORAD logs, 
++yourself? 
++MS. OSMUS: I have subsequently, I'm just 
++looking, when Shirley was working with the 
++Commission, I don't know that I had looked at any 
++prior to the hearing . 
++Okay, subsequent to--when do 
++you think that you had a chance to actually review 
++some logs? 
++MS. OSMUS: From time to time as Shirley 
++got additional requests from the Commission, and a 
++comprehensive time line was put together for all 
++the flights? 
++Mm-hmm. 
++MS. OSMUS: Shirley and Linda Schuessler 
++and a couple of Linda's folks and I sat down and 
++just went over it--not for accuracy, because I
++```
++
++## P39: Osmus: no recollection of reviewing logs by May 2003
++
++Source: [DOT-INTERVIEWS, physical page 3300](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3300); printed page 26.
++
++Unmodified substring of held PDF text extraction; line breaks/OCR artifacts retained. Page image is a separate check.
++
++```text
++didn't have the basis for where the numbers were 
++coming from, but things like spelling out acronyms 
++and making sure that to a non-FAA reader it made 
++sense to most. So, I mean, that sort of thing. 
++I've not done any scrubbing of one long against 
++another to analyze time or anything like that. 
++So, when this was prepared, 
++back in May 2003, you hadn't actually reviewed any 
++logs yourself? 
++MS. OSMUS: No, I don't recall seeing any 
++logs up until that point. 
++Do you know where this 
++reference would have come from? 
++MS. OSMUS: No. 
++Okay. 
++MS. OSMUS: I mean, you know, I think as 
++Shirley probably mentioned to you, folks were 
++keeping notes about time from various perspectives, 
++just recognizing what a momentous event had 
++occurred on 9/11. But I don't know what particular 
++source that came from.
++```
++
++## V01: TIGR input-sheet handwritten fields
++
++Source: [DOT-429, physical page 6](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=6).
++
++Manual selected-field transcription from inspected page image; punctuation separating fields supplied by researcher. Full original unchanged. Not an OCR-exact substring.
++
++```text
++Investigation No.: 042R0122001; ROI Date: 8/31/06; Close Investigation Date: 12/12/06.
++```
++
++## V02: Case-status screen fields
++
++Source: [DOT-429, physical page 7](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=7).
++
++Manual selected-field transcription from inspected page image; punctuation separating fields supplied by researcher. Full original unchanged. Not an OCR-exact substring.
++
++```text
++Case No.: 042R0122001; Current Description: Closed; Start: 12/12/2006. Status history: Open, 08/24/2004.
++```
++
++## V03: Referral letter date and receipt stamp
++
++Source: [DOT-INTERVIEWS, physical page 2325](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2325).
++
++Manual selected-field transcription from inspected page image; punctuation separating fields supplied by researcher. Full original unchanged. Not an OCR-exact substring.
++
++```text
++July 29, 2004. RECEIVED AUG 24 2004. DOT-OIG INVESTIGATIONS.
++```
++
++## V04: Wrapped attachment filename
++
++Source: [DOT-INTERVIEWS, physical page 2182](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2182).
++
++Manual selected-field transcription from inspected page image; punctuation separating fields supplied by researcher. Full original unchanged. Not an OCR-exact substring.
++
++```text
++draft_final_repor / t_27a.doc (12... [two visible filename lines; size truncated])
++```
++
++## V05: Original printout heading/footer
++
++Source: [DOT-429, physical page 169](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=169).
++
++Manual selected-field transcription from inspected page image; punctuation separating fields supplied by researcher. Full original unchanged. Not an OCR-exact substring.
++
++```text
++August 12, 2002; print footer 9/24/2004.
++```
++
++## V06: Revised printout heading/footer
++
++Source: [DOT-429, physical page 171](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=171).
++
++Manual selected-field transcription from inspected page image; punctuation separating fields supplied by researcher. Full original unchanged. Not an OCR-exact substring.
++
++```text
++August 12, 2002; print footer 9/27/2004.
++```
+--- /dev/null
++++ b/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/FINDINGS.json
+@@ -0,0 +1,290 @@
++{
++  "scope": "Fourteen overlapping research entries, not fourteen proven errors, crimes or independent incidents. Each is a document observation with separate inference and disconfirming target.",
++  "crosswalk": [
++    "M166 / FA003",
++    "M167 / FA004",
++    "M171–M175 source-dependency/partial-production context"
++  ],
++  "entries": [
++    {
++      "id": "FC01",
++      "title": "Drafting-role conflict",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P04",
++        "P05",
++        "P06",
++        "P07",
++        "P16"
++      ],
++      "observation": "Osmus names Brown as typist and Schuessler as the source of the liaison conversation; Schuessler names Miller and Osmus as compilers; Miller denies preparing the answer; Brown describes handing it to Garvey.",
++      "inference": "Specific authoring/custodian/transmission targets can be pursued.",
++      "strongest_alternative_or_objection": "Roles such as typing, supplying information, compiling and forwarding differ; later memory may be inaccurate. These possibilities do not remove the recorded attribution conflict.",
++      "what_would_change_assessment": "Native drafts, revision history, approvals, Brown-to-Garvey handoff and Garvey-to-Commission transport/receipt records.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "material record lead",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC02",
++      "title": "Awareness-date conflict",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P02",
++        "P06",
++        "P08",
++        "P10",
++        "P14"
++      ],
++      "observation": "Records describe possibly the same/next day, perhaps a couple of weeks later, weeks later, or a summer discussion; liaison interviewee cannot date the clarification.",
++      "inference": "The date and recipients of actual knowledge remain material unresolved facts.",
++      "strongest_alternative_or_objection": "Uncertain memory and different conversations could produce these accounts; source wording does not identify a single date.",
++      "what_would_change_assessment": "Contemporaneous calendar, messages, notes, calls and recipient acknowledgment.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "material record lead",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC03",
++      "title": "Expected correction versus no instruction",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P11",
++        "P12",
++        "P15",
++        "P02"
++      ],
++      "observation": "Osmus says the answer was inaccurate as presented and expected the liaison interview to clarify it; liaison interviewee says nobody asked for that clarification; Miller did not recall transmitting it.",
++      "inference": "A follow-through and accountability gap is specifically supported as a record question.",
++      "strongest_alternative_or_objection": "Expecting an interview to communicate a fact is not the same as issuing an instruction; confusion or poor process remains possible.",
++      "what_would_change_assessment": "Actual liaison Commission interview/audio, written clarification request, staff receipt and amended answer.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "strongest direct knowledge-and-follow-through lead in this review",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC04",
++      "title": "Building, upstairs, bridge and NORAD-contact events",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P28",
++        "P29",
++        "P30",
++        "P31",
++        "P13"
++      ],
++      "observation": "Liaison interview describes building arrival before second impact, upstairs arrival after Pentagon impact and uncertain clock times; Miller recalls a later building arrival. Liaison interviewee also disputes immediate NORAD contact and hotline implication.",
++      "inference": "Separate event fields are necessary; contradictory building-arrival accounts remain open.",
++      "strongest_alternative_or_objection": "Later descriptions may refer to different locations or phases, but that has not been established as the cause of the conflicting building-arrival statements.",
++      "what_would_change_assessment": "Access logs, contemporaneous notes, phone records, actual room/bridge logs and original audio.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "material record lead",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC05",
++      "title": "Individual source-validation limit",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P38",
++        "P39"
++      ],
++      "observation": "Osmus did not know the origin of the logs/timelines cited in the answer and did not recall reviewing logs before May 2003; later review included presentation rather than accuracy.",
++      "inference": "Locate the actual source-and-approval chain for each sentence.",
++      "strongest_alternative_or_objection": "Other participants may have checked the source; her account does not establish a universal failure.",
++      "what_would_change_assessment": "Cited log versions, annotations, authorship and reviewer sign-off.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "material record lead",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC06",
++      "title": "Recovered retrospective QFR emails",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P17",
++        "P18"
++      ],
++      "observation": "September 27–28, 2004 thread describes no handling after the May hearing and identifies earlier statement preparation and chronology production.",
++      "inference": "A contemporary-to-OIG-investigation email chain narrows follow-up targets.",
++      "strongest_alternative_or_objection": "These emails are retrospective accounts, not the original 2003 drafting chain or proof no other communications occurred.",
++      "what_would_change_assessment": "Native message thread with headers/attachments and predecessor/successor messages.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "material record lead",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC07",
++      "title": "OIG draft and joint-transmittal trail",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P19",
++        "P20",
++        "P21",
++        "V04"
++      ],
++      "observation": "2005 emails identify an unapproved outline, results-in-brief and draft_final_report_27a.doc; later synopsis describes revisions and decision not to issue a joint report.",
++      "inference": "Specific draft files, review comments and routing records are identifiable.",
++      "strongest_alternative_or_objection": "Drafting, review and changed publication plans are routine possibilities; delay/version changes do not establish intentional concealment.",
++      "what_would_change_assessment": "Actual native attachments, all preserved drafts, review comments, approval and transmittal records.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "material record lead",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC08",
++      "title": "Website before/after and revision-labeling concern",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P23",
++        "P24",
++        "P25",
++        "P26",
++        "V05",
++        "V06"
++      ],
++      "observation": "September printouts retain 0924 while changing the description; a December briefing quotes 9:20 and revised-entry10/21/04. Mead memorandum asks for notation of the revision.",
++      "inference": "A concrete website publication/version history remains to reconstruct without selecting a preferred record.",
++      "strongest_alternative_or_objection": "A sequential correction series could be involved; current evidence does not establish every intermediate version or cause.",
++      "what_would_change_assessment": "Original web files, publication logs, edit instructions, saved snapshots and native timeline-dotoig.xls.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "documented correction plus unresolved version details; not evidence of blanket noncorrection",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC09",
++      "title": "Recorded investigative closure",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "V01",
++        "V02",
++        "P22"
++      ],
++      "observation": "Input sheet and status screen record12/12/2006 close/Closed; quarterly synopsis says investigation is to be closed and FINAL UPDATE.",
++      "inference": "The investigative case has a recorded closure date.",
++      "strongest_alternative_or_objection": "Closure may follow report issuance independently of FAA personnel action or recommendation completion.",
++      "what_would_change_assessment": "Closure authorization, final action referral/response and separate recommendation-management file.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "direct administrative-status finding with narrow scope",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC10",
++      "title": "Pending and issued wording in the synopsis",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P21",
++        "P22"
++      ],
++      "observation": "December 12 synopsis retains Final report is pending and separately records August 31 issuance in an October1 update.",
++      "inference": "Version/status wording must be retained rather than normalized.",
++      "strongest_alternative_or_objection": "A cumulative synopsis retaining earlier updates is an untested possibility; its cause was not adjudicated.",
++      "what_would_change_assessment": "Native synopsis history, prior updates and report routing records.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "low weight for misconduct; useful version-control lead",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC11",
++      "title": "Final FAA correction/action disposition remains unlocated",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P03",
++        "V01",
++        "V02",
++        "P22"
++      ],
++      "observation": "Official report recommends correction and consideration of action. No final correction, taking/declining-action decision or recommendation-closure record was acquired in the specified search.",
++      "inference": "Those exact existing records are the highest-value next disposition targets.",
++      "strongest_alternative_or_objection": "The records could exist outside the releases/search index, be referred/withheld, or have a documented no-action result. Absence from this review is not absence from agency holdings.",
++      "what_would_change_assessment": "FAA Administrator and appropriate counsel/personnel response; OIG follow-up/closure evidence; corrected answer and delivery receipt.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "indispensable missing evidence for a completed-action claim",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC12",
++      "title": "Release-version and referral-scope limits",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P33",
++        "P34",
++        "P35",
++        "P19",
++        "P17"
++      ],
++      "observation": "2011 and 2021 release counts, referral descriptions, request dates and disclosure levels differ. Corresponding reproduced emails in 2021 expose more body text.",
++      "inference": "Preserve each production context and obtain inventories/referral responses; do not count overlapping copies as independent corroboration.",
++      "strongest_alternative_or_objection": "Different requests, scope and processing dates may account for differences; same page count/control references do not prove matching contents.",
++      "what_would_change_assessment": "Original requests, referral inventories, full release letters, processing records and corresponding document IDs.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "material record lead",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC13",
++      "title": "Referral-date and interview-cover inconsistencies",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P27",
++        "V03",
++        "P36",
++        "P37"
++      ],
++      "observation": "Synopsis saysJuly 24, 2004; reproduced referral letterJuly 29 withAugust 24 receipt. Osmus cover prints10:05p.m.–11:01a.m.; opening says10:05a.m.",
++      "inference": "Retain as separate low-weight record discrepancies.",
++      "strongest_alternative_or_objection": "Different referral stages or clerical/transcription error are untested possibilities, not adjudicated explanations.",
++      "what_would_change_assessment": "Original referral/routing metadata and interview audio/native transcript.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "low; not attack-day clock measurements or proof of tampering",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    },
++    {
++      "id": "FC14",
++      "title": "Adverse findings and uncertainty retained",
++      "evidence_type": "Observation of released records / attributed retrospective statement",
++      "source_pins": [
++        "P01",
++        "P02",
++        "P03",
++        "P30",
++        "P32"
++      ],
++      "observation": "OIG did not find sufficient intentional-falsity/purposeful-omission evidence for notification claims; report attributes AA77 error to inaccurate chronologies, notes workload; Schuessler denies intentional misleading; liaison disclaims clock confidence.",
++      "inference": "Any intentional-concealment hypothesis must confront these limits while preserving the known-noncorrection finding.",
++      "strongest_alternative_or_objection": "OIG conclusions and witness denials are themselves evidence to evaluate, not automatic resolution or proof that every account is true.",
++      "what_would_change_assessment": "Underlying interviews/audio and workpapers plus contemporaneous contradictory or corroborating records.",
++      "record_support_grade": "A: directly checked wording or fields in identified released copies; not an A-grade finding that every historical assertion is true",
++      "conspiracy_inference_grade": "D: underdetermined from these records alone",
++      "relative_weight": "essential adverse/alternative evidence; no new independent event",
++      "conflict_status": "Preserved without adjudication",
++      "originals_status": "Raw source versions retained unchanged; native audio/email/attachment authentication remains separate"
++    }
++  ]
++}
+--- /dev/null
++++ b/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/OPEN-RECORDS.json
+@@ -0,0 +1,85 @@
++{
++  "status": "Specific existing-record retrieval targets; not proof that each record exists or authorization to send a request. No outreach, fees or new FOIA submission in this run.",
++  "targets": [
++    {
++      "id": "R01",
++      "record_group": "May 22–23, 2003 FAA answer authoring and transmission",
++      "source_locator": "Brown/Osmus/Schuessler accounts; P04–P07/P16",
++      "records_to_locate": "All extant drafts and native authoring files, tracked changes/version history, source annotations, approvals, handoff to Garvey, transmittal to Commission and receipt; related message headers and attachments.",
++      "both_direction_value": "Would distinguish typing, content contribution, compilation, approval and delivery.",
++      "current_status": "Not acquired; public read-in/reproductions and later accounts are held."
++    },
++    {
++      "id": "R02",
++      "record_group": "Knowledge and clarification messages",
++      "source_locator": "P02/P06/P08/P10/P14",
++      "records_to_locate": "Existing messages, calendars, notes and call records of the changed liaison account, with dates and recipients; any correction instruction or follow-up.",
++      "both_direction_value": "Would test each asserted awareness date and responsibility without presuming intent.",
++      "current_status": "Not acquired as contemporaneous 2003 originals."
++    },
++    {
++      "id": "R03",
++      "record_group": "Liaison Commission interview and recording",
++      "source_locator": "P11–P14; redacted OIG interview coverT5676 / case 042R0122001",
++      "records_to_locate": "Original Commission interview audio, notes/MFR, contemporaneous transcript and exhibits; any requested clarification and resulting correction entry.",
++      "both_direction_value": "Would test whether and how the earlier public answer was addressed.",
++      "current_status": "OIG interview reproduction acquired; original Commission interview/audio not acquired or authenticated here. Do not reconstruct redacted identity."
++    },
++    {
++      "id": "R04",
++      "record_group": "Final correction after CC-2006-085",
++      "source_locator": "P03; report August 31, 2006",
++      "records_to_locate": "FAA corrected QFR response, approval, transmittal, recipient acknowledgment, public record placement and any explanation of no correction.",
++      "both_direction_value": "Would strengthen or weaken the claim that institutional correction remained incomplete after the report.",
++      "current_status": "No final correction/disposition located in bounded search; not a claim of nonexistence."
++    },
++    {
++      "id": "R05",
++      "record_group": "Final administrative-action or no-action decision",
++      "source_locator": "P03; case 042R0122001",
++      "records_to_locate": "FAA response considering action for the two then-current executives, taking/declining-action determination and rationale, implementation or completion record, and legally releasable segregable portions.",
++      "both_direction_value": "Would distinguish recommendation, consideration, decision and implementation; a no-action outcome is a possible responsive result.",
++      "current_status": "Not located. Do not equate investigation closure with action or identify the redacted executives by guesswork."
++    },
++    {
++      "id": "R06",
++      "record_group": "OIG recommendation disposition and investigative closure",
++      "source_locator": "V01–V02/P21–P22",
++      "records_to_locate": "Recommendation follow-up register, management response/decision, closure evidence and authorization, final referral correspondence, and relevant case-status audit trail.",
++      "both_direction_value": "Would distinguish Closed on12/12/2006 from correction or recommendation completion.",
++      "current_status": "Recorded closure acquired; supporting authorization and recommendation disposition not acquired."
++    },
++    {
++      "id": "R07",
++      "record_group": "OIG drafting and review attachments",
++      "source_locator": "P19–P21/V04",
++      "records_to_locate": "November 14/21, 2005 native9-11Report thread and draft_final_report_27a.doc; February 14 unapproved outline/results-in-brief; review comments, successive drafts, 2006 briefing/executive summary and joint-transmittal decision records.",
++      "both_direction_value": "Would permit actual draft-to-final comparison; version suffix27a is not a measured count of 27 drafts.",
++      "current_status": "Attachment labels and reproduced emails acquired; native attachment contents not recovered as files."
++    },
++    {
++      "id": "R08",
++      "record_group": "Website publication and timeline workbook",
++      "source_locator": "P23–P26; DOT-429pp.175–177",
++      "records_to_locate": "Native before/after website files and edit/publication log, September 27 revision-label request and disposition, October21 revision history, timeline-dotoig.xls identified in September 30/October 5, 2004 thread.",
++      "both_direction_value": "Would test 0924 versus 9:20 version relation, editorial instructions and revision marking.",
++      "current_status": "Reproduced printouts/memo/attachment labels acquired; native workbook/publication logs not acquired."
++    },
++    {
++      "id": "R09",
++      "record_group": "Release inventories and referral completion",
++      "source_locator": "P33–P35",
++      "records_to_locate": "Complete2011/2021 requests, responsive-record inventories, document-level referral lists, FAA responses and status of the 255-page 2021 referral; basis for different redactions.",
++      "both_direction_value": "Would test completeness and whether similarly sized referrals correspond.",
++      "current_status": "2011 FAA 255-page response acquired; not joined to2021 referral merely by size."
++    },
++    {
++      "id": "R10",
++      "record_group": "Native audio/transcripts and archival QFR folders",
++      "source_locator": "P36–P37; NARA-AIDphysicalp. 94",
++      "records_to_locate": "Interview audio and native/corrected transcript for coversT5337 / T5676; actual contents of FAA QFR Responses folder in Tom Eldridge filesBox 69.",
++      "both_direction_value": "Would test transcription and whether the folder is relevant to this liaison answer rather than another topic.",
++      "current_status": "Folder-title locator only. Current availability and responsive contents unverified; no request or outreach made."
++    }
++  ]
++}
+--- /dev/null
++++ b/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/README.md
+@@ -0,0 +1,110 @@
++# FAA knowledge-and-correction trail
++
++Review date: October 26, 2026, America/New_York. Additive public research record; earlier findings and conflicting source records remain unchanged.
++
++**The strongest new result is a recoverable drafting-and-noncorrection trail, with conflicting witness accounts beneath the Inspector General's summary.** We acquired a 4,380-page release containing interviews, reproduced emails and OIG working records. We also located a case-status screen recording the investigation as **Closed on December 12, 2006**. We have **not** obtained the native May 2003 answer drafts, their original transmission email, a final FAA correction, or a final administrative-action/no-action decision. Investigation closure does not supply those missing dispositions.
++
++These records concern FAA's account of communications during the attacks and its later answer to the Commission. They do not establish advance knowledge, participation in the attacks, WTC 7 demolition, or a coordinated conspiracy. The concern with the most direct support is the handling of an answer after a material inaccuracy became known. The strongest objection to inferring intentional concealment is the witnesses' uncertain and conflicting recollections, their stated expectations of follow-up by others, and the OIG's limited intentional-falsity finding. Those points remain beside the noncorrection evidence.
++
++## What was actually recovered
++
++| Requested record | Result of this review | What remains missing |
++|---|---|---|
++| Original May 2003 FAA answer | Reproduced answer in the official OIG report, Appendix 5, plus its reading in the May 23 public hearing transcript | Native authoring file, version history, approvals and original transmission with headers |
++| Drafts and emails | Reproduced September 2004 QFR emails; February and November 2005 OIG draft-report emails; direct drafting recollections in interviews | Native 2003 drafting emails; the DOC/XLS attachments themselves; complete message/attachment metadata |
++| Knowledge and attempted correction | Interview accounts from Osmus, Schuessler, Miller, Brown and the redacted liaison interview, with different dates and responsibilities | Contemporary clarification messages, recipient acknowledgments and actual Commission correction entry |
++| Final administrative action | OIG recommendation to **consider** action; recorded investigation closure on December 12, 2006 | FAA decision taking or declining action, rationale and implementation; OIG recommendation-closure evidence |
++| Website correction | September 27, 2004 OIG memorandum and reproduced before/after sheets; later briefing describing another entry and revision date | Full publication/version history and the native editorial instructions |
++
++Primary links: [official OIG report](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf), [4,380-page release](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf), [429-page release](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf), [May 23, 2003 hearing](https://govinfo.library.unt.edu/911/archive/hearing2/9-11Commission_Hearing_2003-05-23.htm). File hashes and provenance limits are in [SOURCES.json](SOURCES.json). Page numbers below are **physical PDF pages**, with printed transcript pages separately identified in [EXCERPTS.json](EXCERPTS.json).
++
++## 1. Who prepared and transmitted the answer?
++
++The archived hearing transcript credits **“Mr. Asmus and Ms. Schuessler.”** That wording is retained; it is not silently renamed. The subsequent interviews offer more specific but conflicting accounts:
++
++- **Osmus, September 24, 2004:** she, Linda Schuessler and Laura Brown gathered in Brown's office; Schuessler called the liaison; Brown typed the answer on her computer while Schuessler described the conversation. Osmus first remembered only one or two sentences, then acknowledged the text shown to her was longer than she recalled. [Physical pages 3294–3298](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3294); preserved excerpts P04–P05.
++- **Schuessler, December 9, 2004:** she supplied information to **“Shirley and Lynne and they compiled the statement”** and later described them as the leads. [Pages 4056 and 4060](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4056); P06.
++- **Miller, February 10, 2005:** told investigators that the assertion she helped prepare it was **“incorrect.”** She said people associated her with Commission work from the beginning, although her involvement began later. [Pages 2679–2681](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2679); P07.
++- **Brown, August 31, 2005:** confirmed working with Schuessler and Osmus and said she gave the statement to Garvey, who wanted to provide it to Ben-Veniste herself. This is Brown's account of the route, not the original transmittal. [Page 4325](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4325); P16.
++
++These identify useful custodians and files to seek. They do not establish which recollection controls, who approved each sentence, or whether the surviving read-in text equals every draft. The identities of the unnamed executives in the final OIG report are not assigned by matching these interviews to redacted roles.
++
++## 2. When did people learn the answer was inaccurate?
++
++The final OIG report says the liaison did not join the phone bridge immediately after the first impact, and that three executives learned of the inaccuracy but did not correct it with the Commission. Its page 10 preserves different awareness dates: potentially the read-in day, within weeks, and by summer's end. [Official report, pages 9–10](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=9); P02.
++
++The newly examined interviews preserve the uncertainty beneath that summary:
++
++| Account | Wording/date claim retained | Limitation |
++|---|---|---|
++| Schuessler, December 2004 | **“maybe the following day”**; also refers to reflection that evening and a next-day conversation | Repeated memory qualifications; not a contemporaneous dated correction |
++| Osmus, September 2004 | **“a couple of weeks later, perhaps”** | An approximate recollection |
++| Brown, August 2005 | **“It was weeks after that”**, not shortly after | Does not fix a particular date; attributes information to Miller |
++| Miller, February 2005 | Probably summer 2003; does not recall a specific QFR discussion or follow-up correction | Her account questions whether the uncertain recollection supplied a better timeline |
++| Redacted liaison interview | Remembers clarifying that she was not upstairs then, but not who was present or when; could have been before or after May 2003 | Does not independently date the claimed initial drafting call or later clarification |
++
++Sources: [3295](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3295), [4056–4059](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4056), [4330](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4330), [2681–2689](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2681), [4133–4135](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4133); P06, P08–P10, P14–P15. Do not turn these into a single established date of knowledge.
++
++## 3. Expecting a correction is different from asking for one
++
++Osmus said **“we knew”** the answer was inaccurate as presented and expected the liaison's Commission interview to clarify it. She did not know whether Miller had done more. The redacted liaison interviewee, asked about that specific point, replied: **“No one talked to me about clarifying that point with them. I would remember that, no.”** [Pages 3306–3307](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3306) and [4138–4139](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4138); P11–P12.
++
++Miller did not recall transmitting a clarification and said there was no better timeline to supply; Brown deferred to Miller's Commission contacts; Schuessler did not know how correction had been handled. These accounts support a specific follow-through question. They do not, without more, distinguish responsibility being passed along, poor process, incomplete recollection, self-protection, or intentional concealment. Original clarification messages, the actual liaison Commission interview and the Commission's receipt/correction records would test those possibilities.
++
++## 4. Preserve the event being timed
++
++The liaison interviewee describes reaching the **building** about five or ten minutes after the first impact and before the second; separately she describes going **upstairs to the tenth-floor situation room** after the Pentagon impact. She also warns that she cannot give reliable clock times, although she recalls the sequence around the Pentagon impact. Miller recalls a conversation placing arrival **at the building** after the Pentagon impact. Osmus likewise uses “FAA building” in her later-arrival account. [Pages 4104–4112](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4104), [2681–2682](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2681), [3295–3296](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3295); P28–P31.
++
++The liaison also calls the QFR's NORAD-contact description misleading: it suggested a hotline, whereas she recalls separate calls from available phones and denies immediate contact. [Page 4136](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4136); P13.
++
++**Building arrival, upstairs arrival, bridge participation and NORAD contact must remain separate fields.** The contradictory building-arrival accounts remain unresolved. The distinction between events does not itself reconcile the witnesses or prove that other FAA–military communications did not occur. Visitor/access logs, contemporaneous notes and call records would be better tests than assigning an exact clock time from later recollection.
++
++Osmus also says she did not recall reviewing logs before the May 2003 answer, did not know the origin of the cited logs/timelines, and later reviewed presentation matters rather than accuracy. That is an individual source-validation limit, not proof that nobody checked any evidence. [Pages 3299–3300](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3299); P38–P39.
++
++## 5. Actual reproduced emails and draft-report targets
++
++The September 27–28, 2004 **QFRs** thread includes Miller saying she had not handled anything for the record after the May 22 hearing, followed by an account identifying Osmus as the earlier lead and describing subsequent chronology production. These are 2004 retrospective emails, not the missing May 2003 drafting/transmission thread. [Pages 2495–2496](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2495); P17–P18.
++
++A February 14, 2005 reproduced OIG email refers to a draft outline and results-in-brief, explicitly **not yet approved by headquarters**. November 14 and 21 emails refer to the wrapped attachment label **`draft_final_report_27a.doc`**, review of a near-final report and a proposed joint transmittal. The December synopsis later records that a joint DOD report would not be issued. These are specific version/review-chain targets. The DOC attachment, its tracked changes, approvals and native messages have not been recovered here. [Pages 2182–2185](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2182), [2188](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2188); P19–P21, V04.
++
++The 429-page packet preserves more heavily redacted versions of the November 2005 and September 2004 threads. The 2021 packet exposes more body text at the corresponding pages. Both versions and their hashes are retained. **Different disclosure versions are not evidence that the historical email itself changed.** A redaction's validity or purpose is not adjudicated here.
++
++## 6. Website corrections have their own version trail
++
++The September 27, 2004 Mead-to-Blakey memorandum says the website error was reported to Brown, that the fact sheet had since been revised, and that the revision was **not identified as recent**; it requested a notation or errata. The attached printouts retain the August 12, 2002 heading:
++
++| Preserved record | Entry retained |
++|---|---|
++| Original printout, footer September 24, 2004 | **0924:** AA77 suspected-hijacking notification to NEADS, followed by an open line discussing AA77/UA93 |
++| Revised printout, footer September 27, 2004 | **0924:** general open phone line with agencies and military, sharing missing/suspicious-aircraft information |
++| December 9, 2004 OIG briefing | Describes changed sites with **“9:20”** and **“(revised entry 10/21/04)”** |
++
++[429-page packet, pages 168–172](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=168); [4,380-page packet, page 2467](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2467); P23–P26, V05–V06. The 0924 and 9:20 records remain side by side; we have not reconstructed every intermediate publication version or selected one value. The printouts also retain other values, including AA77 impact **0940** and UA93 crash **1007**; those were not silently replaced with other chronologies.
++
++This is evidence of a documented correction and a contemporaneous concern about revision labeling. It does not establish erasure of all prior versions, deliberate deception or correction of the separate Commission answer.
++
++## 7. Closure is established more narrowly than final administrative action
++
++The TIGR input sheet records case **042R0122001**, ROI date **8/31/06**, and close-investigation date **12/12/06**. A separate case-status screen says **Closed**, start **12/12/2006**, with an earlier Open entry dated **08/24/2004**. [429-page packet, pages 6–7](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=6); V01–V02. These image-only details were not captured by ordinary PDF text search.
++
++The December 12 quarterly synopsis retains **“Final report is pending”** beside an October 1 update saying the report issued August 31, 2006; its following page says **“Investigation is to be closed”** and **“FINAL UPDATE.”** We preserve all wording rather than normalizing the status history. [2021 packet, pages 2188–2189](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2188); P21–P22.
++
++The actual final report recommends that FAA correct its response and **consider appropriate administrative action** for two then-current executives. That does not say action occurred. No final action, no-action rationale, completed QFR correction or recommendation-disposition file was located in the bounded public-source review. The 2006 semiannual report repeats the recommendations; targeted searches in the two 2007 semiannual reports did not identify a case-specific disposition. Direct downloads of those semiannual PDFs returned 403; web-tool access was limited to parsed text. These limits cannot prove the records do not exist. [Official report, page 12](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12); P03; [search scope](SEARCH-AND-METHOD.md).
++
++## 8. Smaller discrepancies and source limits are retained
++
++- **Referral date:** the synopsis says July 24, 2004; the reproduced referral letter is dated July 29, 2004 and bears an August 24 receipt stamp. Those are different recorded dates; this review does not supply a cause or assume all refer to the same act. P27, V03.
++- **Interview cover time:** Osmus's cover prints **10:05 p.m.–11:01 a.m.**; the opening says **10:05 a.m.** This is a low-weight transcript inconsistency, not evidence of tampering or an attack-day timeline finding. P36–P37.
++- **Release scope:** the 2011 OIG letter describes 4,845 responsive pages, referrals and a 426-page production; the 2021 letter describes 4,376 attached pages and a 255-page FAA referral. A separate 2011 FAA letter releases 255 pages and gives a July 6 request date, while the OIG letter cites October 5. Same-size referrals or a shared control number do not establish identical contents or resolve the request-date history. P33–P35.
++- **Transcription and provenance:** Commission interview transcripts in the larger packet bear an “unofficial, uncorrected” notice. OIG interview covers say prepared from tape recordings. “ORIGINAL” stamped on a reproduced page does not authenticate native audio, the underlying emails or file history. No original tapes or native email containers were acquired.
++- **Embedded-file inspection:** all three downloaded release PDFs expose no embedded-file attachment names through the inspected PDF name trees. This limited structural test does not establish that source attachments never existed, that no text reproduction is present, or that no content is recoverable by other methods. [Audit](EMBEDDED-FILE-AUDIT.json).
++
++## What would strengthen or weaken the concern?
++
++The most useful next targets are the **actual May 2003 draft/transmission chain**, contemporaneous messages showing **who learned which fact when**, the liaison's **original Commission interview and audio**, and the **post-August 2006 correction/action/disposition records**. A documented correction received by Commission staff would weaken an inference of uncorrected institutional concealment while remaining beside the OIG's contrary account. A reasoned no-action decision would address a different question from whether a correction occurred. Evidence of explicit instructions to preserve a known false account would strengthen an intentional-concealment hypothesis. Neither result is presumed.
++
++The OIG reported insufficient evidence of knowing false notification statements or purposeful omission, and attributed the AA77 notification error to reliance on inaccurate chronologies. Schuessler separately denied an intentional effort to mislead and described the volume of data; the final report noted more than 6,000 materials supplied to the Commission. These are retained as adverse/alternative evidence, not adopted as a resolution of every discrepancy. P01–P03, P32. A personal expectation of correction is not proof that one was made, and failure to locate a disposition is not proof it was suppressed.
++
++Related published master entries remain **M166/FA003**, **M167/FA004** and the partial-production/source-dependency entries. This study adds source detail; it does not renumber the [175-entry master](../../wtc7/master-lead-register-2026-10-26-outstanding/README.md) or count overlapping interview/summary versions as independent events.
++
++[Chronology](CHRONOLOGY.md) · [Claim/alternative ledger](FINDINGS.json) · [Missing-record targets](OPEN-RECORDS.json) · [Selected exact excerpts](EXCERPTS.md) · [Checklist](CHECKLIST.md) · [Text diff](TEXT-CHANGES.diff). Raw originals remain preserved; this publication contains reviewed research notes, selected government-record excerpts and identifiers.
+--- /dev/null
++++ b/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/SEARCH-AND-METHOD.md
+@@ -0,0 +1,44 @@
++# Search and verification scope
++
++This is a bounded public-source follow-up, not a certification that every responsive agency record has been located. No agency, witness or third party was contacted. No new FOIA request, fee commitment, private-mailbox access or litigation-record change was made.
++
++## Acquired and held records
++
++- Rechecked the held 429-page DOT OIG production as an unchanged, hashed input. Full-text searches supplied locators; complete selected pages and decisive page images were then examined.
++- Acquired the 4,380-page 2021 DOT OIG release and separate 257-page 2011 FAA response from the public GovernmentAttic links. Preserved downloads unchanged, hashed them, extracted all pages with Python 3.13.7 / pypdf 6.10.0 and searched the extracted text. **Full-text indexing is not full substantive review of 4,380 pages.**
++- Read targeted drafting, correction, interview and status passages in context. Earlier official report, reproduced answer and public hearing sources were retained and rechecked. The source registry distinguishes agency-hosted material, government records in third-party releases, and public hearing transcripts in the UNT government archive.
++- Inspected PDF embedded-file attachment-name trees in all three release PDFs; no attachment names were exposed. No files were carved or executed. This test does not establish the contents of every page or that native attachments never existed.
++- Source PDFs, full extractions, acquisition receipts and page rasters remain preserved separately. This public copy contains selected reviewed text/identifiers, not bulk raw production downloads, email addresses, phone numbers or private case data.
++
++## Image inspection versus text search
++
++The 429-page release's case-status screen has almost no extractable text. Its Closed field and date were checked in the image rather than inferred from a keyword search. Likewise, wrapped attachment filenames and printout dates were checked visually.
++
++Physical pages actually inspected visually in this run:
++
++- **DOT-429 (29 pages):**6,7,8,9,10,11,12,13,14,15,16,17,18,19,106,168,169,170,171,172,175,176,177,178,179,180,182,183,184.
++- **DOT-INTERVIEWS (41 pages):**2,5,2182,2183,2185,2188,2189,2325,2466,2467,2495,2670,2681,2685,2688,2689,3275,3276,3294,3295,3296,3306,3307,4052,4056,4057,4058,4060,4096,4097,4104,4106,4107,4111,4134,4135,4136,4139,4303,4325,4330.
++
++Additional pages were rendered but are not counted as visually reviewed merely because a PNG exists. This inspection checked content/labels, not a new print-layout/export artifact. No original interview audio was replayed or authenticated.
++
++## Public search scope and access limits
++
++Search strings are preserved in SEARCH-QUERIES.json. They target case/report identifiers, QFRs, correction, administrative action, named public officials, interview releases and archival folders. Searches generated overlapping and irrelevant hits; query count is not an evidence count. Raw search-result bodies were not saved for every query. Acquired source bodies and their hashes are distinguished from search-only pointers.
++
++The GovernmentAttic document menu identified the larger release's exact URL. Initial menu/direct requests returned 403/406 in some attempts; ordinary public GETs later succeeded for the release PDFs. Those access outcomes are logged locally and are not treated as evidence of suppression.
++
++The official DOT library page still links CC-2006-085 but supplies no case-specific final administrative disposition on that page. The official semiannual index links the April–September 2006 and both 2007 reports. Direct PDF downloads returned 403. The web tool could parse them: physical page46 of sar_2006.pdf repeats the recommendation to correct the QFR and consider action. Keyword searches of the 2007 parsed reports for 9/11 and CC-2006-085 did not identify a case-specific disposition. This was **not** a complete audit of personnel files, every semiannual-report page, recommendation-management systems or the entire agency website. No raw-byte hash is assigned to a PDF obtained only as web-tool parsed text.
++
++The January14, 2009 NARA finding aid, physical page94, lists **FAA QFR Responses** in **Box 69, Tom Eldridge's Files**. Surrounding folders concern other topics, so the title alone does not establish this particular liaison answer is inside. A current FAA archival finding-aid table was searched as a locator; no specific original answer/transmission or final administrative decision was identified. Current folder contents and availability remain unverified.
++
++## Excerpt/pin semantics
++
++EXCERPTS.json contains 39 unmodified substring pins and 6 separately labeled manual image-field transcriptions. A substring pin includes source ID, one-based physical page, printed page where known, complete extraction SHA-256, character range, derivative line range and excerpt hash. Those lines are not the historical transcript's original numbered lines. OCR/text-extraction mistakes and visible source errors are retained; neither is silently normalized into an evidentiary correction.
++
++Manual fields have a page-image hash and a description of the supplied punctuation. The archive's full original remains the reference for redactions, layout and context. The public script can mechanically recheck byte hashes and the 39 substring pins when supplied with a local source map. It cannot independently verify manual transcription, authenticity of a reproduced email, witness truthfulness, search completeness, intent or a conspiracy.
++
++## Revision and publication scope
++
++This new directory is an additive supplement to public commit 568b48572cd77c6ec16a7ed33b12c2486affb1ed. It leaves the 175-entry master and earlier studies unchanged. A failed candidate build stopped on an exact substring-boundary mismatch; that incomplete local candidate was retained, the boundary was repaired, and source checks were rerun. No source text was edited to make a check pass. pdftotext was unavailable; its failed attempt was retained and pypdf was used explicitly instead.
++
++TEXT-CHANGES.diff records all new narrative/structured research text against absent new files. The local earlier candidate and final-candidate text comparison are retained separately; no old finding is overwritten. Manifest checks, source re-extraction, manual image reading and remote Git publication checks are reported separately. Successful publication is established by the subsequent commit/ref/blob receipt, not by a statement written into this draft.
+--- /dev/null
++++ b/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/SEARCH-QUERIES.json
+@@ -0,0 +1,46 @@
++{
++  "scope": "Literal public web search strings in this bounded run; no claim exhaustive or independent hits. Search-result bodies not retained for every query.",
++  "queries": [
++    "\"CC-2006-085\" \"recommendations\" FAA",
++    "\"FAA\" \"Air Force Liaison\" \"administrative action\"",
++    "\"Asmus\" \"Schuessler\" \"2003\" FAA response",
++    "site:oig.dot.gov \"9/11\" \"2006\" \"2007\" FAA",
++    "site:oig.dot.gov \"CC2006085\"",
++    "site:oversight.gov \"9/11 Commission Staff Referral\"",
++    "\"FAA\" \"2006\" \"Schuessler\" investigation",
++    "\"042R0122001\"",
++    "\"FAA\" \"QFR\" \"2006\" \"correct\" \"2007\"",
++    "site:governmentattic.org \"FAA\" \"Commission\" \"2003\"",
++    "site:oig.dot.gov \"9/11\" \"recommendation\" \"closed\"",
++    "\"Interviews with\" \"FAA\" \"2002-2006\" \"governmentattic\"",
++    "\"governmentattic.org\" \"133\" \"FAA\" \"2021\"",
++    "site:governmentattic.org \"FAA\" \"personnel\" \"9/11\"",
++    "\"FAA\" \"Interviews\" \"site:governmentattic.org/40docs\"",
++    "\"site:governmentattic.org\" \"9-11\" \"2021\" \"Interviews\"",
++    "site:governmentattic.org \"2002-2006\" \"FAA\"",
++    "site:governmentattic.org/ \"Interviews\" \"Commission Staff\"",
++    "site:governmentattic.org \"FAA911\"",
++    "site:governmentattic.org \"FAA\" \"2021.pdf\"",
++    "\"Interviews with Federal Aviation Agency\" -\"ExecBr\"",
++    "\"9/11 Commission Staff\" \"133\" pdf",
++    "\"DOT\" \"2002-2006.pdf\" \"9/11\"",
++    "site:governmentattic.org \"FAA\" \"2021\" \"Interviews\" -\"ExecBr\" -\"IAgencies\" -\"documentsAll\"",
++    "site:archives.gov \"QFR\" \"FAA\"",
++    "site:oig.dot.gov \"CC-2006-085\" \"closed\"",
++    "site:govinfo.gov \"FAA\" \"two executives\" \"2006\"",
++    "site:archives.gov \"FAA\" \"Asmus\" \"2003\"",
++    "\"FAA\" \"Commission\" \"QFR\" \"September\" \"2006\" -\"Appropriations\" -\"Quarterly Financial\"",
++    "\"CC2006085\" \"status\"",
++    "\"FAA\" \"9/11\" \"administrative action\" \"2007\" -\"QFR\"",
++    "\"FAA\" \"CC-2006-085\" \"recommendations\" action",
++    "\"FAA\" \"9/11 Commission\" \"administrative action\" \"2007\"",
++    "site:oig.dot.gov \"2006\" \"semiannual\" \"2007\"",
++    "\"FAA\" \"correct its response\" \"Commission\" \"2007\"",
++    "\"FAA Communications with NORAD\" \"May\" \"2003\"",
++    "\"FAA\" \"correct\" \"2006\" \"Osmus\" \"Commission\"",
++    "site:archives.gov \"FAA\" \"QFR Responses\"",
++    "\"CC-2006-085\" \"FAA\" -site:coherentbabble.com -site:oig.dot.gov",
++    "\"FAA\" \"9/11\" \"correction\" \"Blakey\" \"2006\" \"executives\"",
++    "\"042R0122001\" \"2006\" \"2007\""
++  ]
++}
+--- /dev/null
++++ b/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/SOURCES.json
+@@ -0,0 +1,122 @@
++{
++  "review_date_local": "2026-10-26",
++  "timezone": "America/New_York",
++  "utc_date_note": "Fresh acquisitions crossed October 27 UTC; research date remained October 26 in New York.",
++  "sources": {
++    "DOT-FINAL": {
++      "id": "DOT-FINAL",
++      "url": "https://www.oig.dot.gov/sites/default/files/cc2006085.pdf",
++      "accessed_utc": "2026-10-27T00:35:41.460785+00:00",
++      "status": 200,
++      "final_url": "https://www.oig.dot.gov/sites/default/files/cc2006085.pdf",
++      "content_type": "application/pdf",
++      "bytes": 3632256,
++      "sha256": "8dde0e97d6e6adac23afea241cfff77c9a0fb4095087959f54874fc6640dc616",
++      "complete_response": true,
++      "physical_pages": 30
++    },
++    "DOT-429": {
++      "id": "DOT-429",
++      "bytes": 58960286,
++      "sha256": "bb16236b89b7a2f30c8ddcd377696e70ee870368e775c2e34fb0fe01bbc1add6",
++      "physical_pages": 429,
++      "url": "https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf",
++      "acquisition": "Held public-source bytes independently hashed; earlier acquisition preserved.",
++      "provenance": "Third-party-hosted production packet, including government report/appendices and a release letter. Not a complete responsive-record inventory."
++    },
++    "NARA-AID": {
++      "id": "NARA-AID",
++      "bytes": 510869,
++      "sha256": "de97d93a615673f476b4b413794c27d5cdb4e9ef0fdac93f15985cc458e867d4",
++      "physical_pages": 145,
++      "url": "https://www.archives.gov/files/research/9-11/finding-aid.pdf",
++      "acquisition": "Held public-source bytes independently hashed; earlier acquisition preserved.",
++      "accessed_utc": "2026-10-27T00:35:41.981727+00:00",
++      "status": 200,
++      "final_url": "https://www.archives.gov/files/research/9-11/finding-aid.pdf",
++      "content_type": "application/pdf",
++      "complete_response": true,
++      "provenance": "Official January 14, 2009 finding aid; folder titles and withdrawal annotations describe that edition, not present folder contents or current availability."
++    },
++    "DOT-INTERVIEWS": {
++      "id": "DOT-INTERVIEWS",
++      "url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf",
++      "accessed_utc": "2026-10-27T02:18:13.175126+00:00",
++      "status": 200,
++      "content_type": "application/pdf",
++      "declared_bytes": "140301732",
++      "final_url": "https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf",
++      "bytes": 140301732,
++      "sha256": "6c0b0be96d101becd3d1c00fb24e73ab517c2fa2bc475ec16e660eb2afc156a2",
++      "complete": true,
++      "starts_pdf": true,
++      "physical_pages": 4380,
++      "provenance": "Third-party-hosted agency release with reproduced September 30, 2021 DOT OIG letter, control FI-2021-0047. Not native email/audio authentication or proof of a complete holding."
++    },
++    "FAA-NEADS": {
++      "id": "FAA-NEADS",
++      "url": "https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf",
++      "accessed_utc": "2026-10-27T02:18:13.182808+00:00",
++      "status": 200,
++      "content_type": "application/pdf",
++      "declared_bytes": "9264585",
++      "final_url": "https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf",
++      "bytes": 9264585,
++      "sha256": "74a28116bff5aaf19ed796f96856130ae50a90ac2cb493d5bf479c3f260791d8",
++      "complete": true,
++      "starts_pdf": true,
++      "physical_pages": 257,
++      "provenance": "Third-party-hosted December 30, 2011 FAA response, FAA FOIA 2012-2153 / OIG FI-2012-0005. Letter refers to a July 6, 2011 request. Not identified as the result of the separate 2021 referral."
++    },
++    "HEARING-MAY23": {
++      "id": "HEARING-MAY23",
++      "url": "https://govinfo.library.unt.edu/911/archive/hearing2/9-11Commission_Hearing_2003-05-23.htm",
++      "accessed_utc": "2026-10-27T02:31:01.269873+00:00",
++      "status": 200,
++      "content_type": "text/html; charset=UTF-8",
++      "final_url": "https://govinfo.library.unt.edu/911/archive/hearing2/9-11Commission_Hearing_2003-05-23.htm",
++      "bytes": 272970,
++      "sha256": "55ba3d8d852eb2eceb5924d69e59cc6903ff5453747cb52f840415d047353f8f",
++      "complete": true,
++      "provenance": "Commission public hearing transcript preserved in UNT government archive; source says Mr. Asmus. That wording is retained rather than silently renamed."
++    },
++    "DOT-LIBRARY": {
++      "id": "DOT-LIBRARY",
++      "url": "https://www.oig.dot.gov/library-item/30630",
++      "accessed_utc": "2026-10-27T02:14:40.538930+00:00",
++      "status": 200,
++      "content_type": "text/html; charset=utf-8",
++      "final_url": "https://www.oig.dot.gov/library-item/30630",
++      "bytes": 41178,
++      "sha256": "4bfece67872141bad4eebcca51272b2743feb0b36c7869e7ee075a59e4fe81b8",
++      "relevant_links": [
++        {
++          "label": "View PDF Document",
++          "href": "https://www.oig.dot.gov/sites/default/files/cc2006085.pdf"
++        }
++      ]
++    },
++    "SAR-2006-WEB": {
++      "id": "SAR-2006-WEB",
++      "url": "https://www.oig.dot.gov/sites/default/files/sar_2006.pdf",
++      "physical_pages": 78,
++      "sha256": null,
++      "acquisition": "Web-tool parsed PDF inspected at physical page 46; direct download returned HTTP 403. No original-byte hash assigned. Repeats recommendations; not a personnel disposition."
++    },
++    "SAR-2007-FIRST-WEB": {
++      "id": "SAR-2007-FIRST-WEB",
++      "url": "https://www.oig.dot.gov/sites/default/files/trans4_SAR1H_09_072307_508_compliant.pdf",
++      "physical_pages": 112,
++      "sha256": null,
++      "acquisition": "Web-tool text locator searches only, not full page-by-page review. Direct download HTTP 403. No original-byte hash assigned."
++    },
++    "SAR-2007-SECOND-WEB": {
++      "id": "SAR-2007-SECOND-WEB",
++      "url": "https://www.oig.dot.gov/sites/default/files/oigsar2007.pdf",
++      "physical_pages": 88,
++      "sha256": null,
++      "acquisition": "Web-tool text locator searches only, not full page-by-page review. Direct download HTTP 403. No original-byte hash assigned."
++    }
++  },
++  "preservation": "Downloaded PDFs, complete page extractions and rasters remain separate from this additive public note. Hashes identify inspected bytes, not truth of testimony."
++}
