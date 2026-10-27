@@ -1,0 +1,935 @@
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,14 @@
++# Point-by-point completion and carry-forward
++
++| Requirement | Actual outcome and location | Unresolved |
++|---|---|---|
++| Seek underlying telephone records | SOURCES OP01/OP07 are newly acquired images of two FBI interview forms; OP02–OP06 are a newly acquired counsel-response selection. README O01–O05 and OBSERVATIONS give exact locators. | Agency authentication/native documents, tickets, switch logs, schema and actual email remain missing. |
++| Test source dependence and caller assumptions | O01–O02 distinguish Lorenzo's reported receipt from Gonzalez's relay and an unattributed annotation. CLAIM-LEDGER records the inference limits. | No authenticated caller/recipient/call-time/event-ID join. Two forms are not two independent passenger-call observations. |
++| Preserve conflicting records/values | O02 preserves reported weapons and role descriptions; O03 preserves GTE/AT&T Claircom wording; O04 keeps printed year/provisional queue/parent date separate. Earlier 154/159, eight/seven, direct/collect, early/later and digit uncertainties remain. | No cause, correct year or controlling account selected. An omission is not automatically a contradiction; our queue is not a primary source. |
++| Trace custody, recordings and office records | O03/O05 and OPEN-RECORDS name carrier, successor/investigative, November production, airline-office and DOJ-office targets separately. | No disposal, failed search or universal nonexistence inferred from counsel's bounded representations. |
++| Reproducibility and exact sources | SOURCES, OBSERVATIONS, verify_sources.py and actual SOURCE-VERIFICATION separate seven entity checks from manual reading. | No historical call connection or empirical test passed by hashing. |
++| Preserve revisions and prior wording | drafts/README-v1.md, README-v1-v2.diff, README-addition.diff, PUBLIC-ADDITION.diff and REVISION-STATUS. | Prior documents/sources not modified; no historical correction/adjudication. |
++| Eligible public publication as AveLyra | Reviewed notes/pins/code only; exact authorized destination/identity and subsequent remote receipt verified separately before claiming publication. | Raw entities/PII/case material excluded; publication is not substantive five-track completion. |
++| Keep all five plan tracks | FAA, telephone, recorder, materials and steel dependencies carried in OPEN-RECORDS. | Original records/empirical tests still open. Goal remains active. |
++
++No contact, request, fee, personal mailbox access, private push, deletion, overwrite or history rewrite was performed. Public commit/ref/file verification is a separate step recorded in the publication receipt; this checklist alone is not evidence of a push.
+--- /dev/null
++++ b/CLAIM-LEDGER.json
+@@ -0,0 +1,90 @@
++[
++  {
++    "id": "O01-O02",
++    "claim": "Held FBI reproductions record Lorenzo reporting receipt of the passenger call and Gonzalez relaying Lorenzo.",
++    "type": "observed source content",
++    "strength": "Directly observed in the qualified reproductions; underlying historical accuracy not authenticated",
++    "source_observations": [
++      "O01a",
++      "O01b",
++      "O02a",
++      "O02b"
++    ],
++    "assumption": "Source reproduction and manual reading accurate",
++    "alternative": "Interview summary/transmission or later assembly could be incomplete or mistaken",
++    "would_change_assessment": "Agency copy, interview notes/audio, native ticket and caller/recipient/event join",
++    "not_established": [
++      "two independent passenger-call witnesses",
++      "Barbara Olson identification",
++      "completed transfer"
++    ]
++  },
++  {
++    "id": "O02-differences",
++    "claim": "Weapons/role/flight-identification descriptions differ in scope from later caller attribution and the earlier office interview.",
++    "type": "comparison with unresolved association",
++    "strength": "Underidentified comparison; not an established same-call contradiction",
++    "source_observations": [
++      "O01b",
++      "O01c",
++      "O02b"
++    ],
++    "alternative": "Different callers/calls, incomplete summaries or transmission errors; substantive misdescription also possible",
++    "counterevidence": "Gonzalez attributes to Lorenzo; nonmention is not denial; annotation is unattributed",
++    "would_change_assessment": "Same-call identification, verified follow-up and operator/office evidence"
++  },
++  {
++    "id": "O03",
++    "claim": "Counsel attributed itemized records to AT&T Claircom while the request used GTE.",
++    "type": "observed attributed representation and retrieval inference",
++    "strength": "Representation observed; actual custody/configuration unverified",
++    "source_observations": [
++      "O03a",
++      "O03b"
++    ],
++    "alternative": "Different hardware/service labels, report limitations or inaccurate representations",
++    "would_change_assessment": "Carrier service/configuration records and custody/retention/production records",
++    "not_established": [
++      "records destroyed at cessation",
++      "generic GTE field rules apply",
++      "deliberately misdirected search"
++    ]
++  },
++  {
++    "id": "O04",
++    "claim": "Printed email-year2003 must remain beside parent2004 and earlier provisional queue2004.",
++    "type": "source versus research-metadata distinction",
++    "strength": "Printed values observed; actual email date/identity unknown",
++    "source_observations": [
++      "O04a",
++      "O04b",
++      "O03a"
++    ],
++    "alternative": "Earlier email, editorial error or mistaken queue association",
++    "would_change_assessment": "Actual native cited email and attachments",
++    "not_established": [
++      "two historical email versions",
++      "corrected date",
++      "deliberate alteration"
++    ]
++  },
++  {
++    "id": "O05",
++    "claim": "Counsel made limited audio-production/search and airline-office log representations.",
++    "type": "observed attributed representations",
++    "strength": "Source assertions observed; actual completeness/search/implementation not independently established",
++    "source_observations": [
++      "O05a",
++      "O05b",
++      "O05c",
++      "O05d"
++    ],
++    "alternative": "Compatible possession scopes, incomplete searches or substantive misdescription",
++    "would_change_assessment": "Actual production manifest/CD/transcripts, search records, later supplements and separate DOJ records",
++    "not_established": [
++      "no recordings anywhere",
++      "all logs destroyed",
++      "DOJ office had no records"
++    ]
++  }
++]--- /dev/null
++++ b/CROSS-REFERENCES.md
+@@ -0,0 +1,12 @@
++# Earlier source comparisons remain preserved
++
++These were already held/read in the earlier studies; they are not new acquisitions in this unit.
++
++- **Olson's account:** [73-page released-scan mirror, physical49–50](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=49), production737–738, describes knives/box cutters and two conversations. New O01–O02 must not treat a nonmention as a denial, or assume identical callers/conversations. Source PDF SHA-256: `e3cf374351cb753d1297433f86bb5807c56cb42a6dc69837a9df02dd0d54f4aa`.
++- **Keyton/Voss and source-to-caller inference:** [the same mirror, physical48](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=48) and [physical51](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=51); [May20,2004 briefing](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408); [earlier checked account and exact court text offsets](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md). Interpretations remain unresolved.
++- **Court original presentation:** [itemP200054](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html) and [official ZIP](https://coop.vaed.uscourts.gov/moussaoui/flights.zip), SHA-256 `3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801`. Static decoding of AA77.swf is distinct from trial playback, carrier meanings and caller authentication.
++- **Final-report duration:** [note57, printed455 / PDF7](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7). The prior 154/159 comparison is not newly measured or settled here.
++- **Early usage analysis:** [published source-pinned reading](https://github.com/AveLyra/911-conspiracy-investigation/blob/5031c6dfa73e1f59491f259e00f168c37cb21788/investigation/broader-evidence/telephone-usage-report-2026-10-27/README.md). Its early connected account remains beside later labels.
++- **Carrier grouping and our digit caution:** [published event-group study](https://github.com/AveLyra/911-conspiracy-investigation/blob/cd950cd141582ab562ad74e17be6231077a2cc4c/investigation/broader-evidence/telephone-event-joins-2026-10-27/README.md). The 609–631 hosted-copy gap and source-reading uncertainty remain in that study. This unit does not acquire those missing carrier enclosures.
++
++The cited earlier files can share underlying sources; do not count links or repeated accounts as independent corroboration. Our earlier provisional January2004 queue label is research metadata, not a historical email source.
+--- /dev/null
++++ b/METHOD.md
+@@ -0,0 +1,13 @@
++# Method and limitations
++
++This unit began with the current telephone reports, open-records queues and prior query logs. Exact-string searches for the new interview identifiers and distinct operator/custodian routes followed; unchanged failed PDFCoffee/Drive routes were not retried. One old local HTML link-list was parsed to locate the separate Key-302 reader. An attempted BeautifulSoup import failed; a standard-library HTML parser was used instead. No packages were installed. Search returns and processing failures remain local; search results were locators, not source verification. No personal-directory result was pursued.
++
++Normal public-reader navigation used the visible Jump to Page control. Image URLs were read from rendered DOM image elements. Independently requested queryless URLs returned seven JPEG entities without cookies, sign-in or tokens; gated PDF download actions were not used. SOURCES.json records exact URLs, UTC access, status, media type, format, dimensions, bytes and SHA-256. Raw entities remain local in the verified operational media store. The two FBI interviews are OP01 and OP07; OP02–OP06 are five selected response pages. No complete native PDF or full 36/52/50-page review is claimed.
++
++Each of the seven downloaded pages was opened as a local image and manually read. OBSERVATIONS.json contains safe manual transcriptions/paraphrases with physical reader/printed/form identifiers and native-pixel rectangles. These rectangles locate passages; they are not automated OCR validation. All manual reading was by this same assistant. No independent examiner or separate audit was performed.
++
++verify_sources.py checks saved entities against the preserved metadata and image decoding. SOURCE-VERIFICATION.json records the actual run. It cannot authenticate the uploader, agency release chain, underlying interview accuracy, a physical telephone connection, event semantics or historical clocks. No original carrier replay, operator/PBX reconstruction or laboratory/physical experiment occurred. The full underlying call-identification requirements remain open.
++
++Public material is original analysis, safe source pins, observations, checklist, code/results and revision records. No raw scans, full OCR, signatures, card/network/contact identifiers, raw search returns, browser query tokens, private correspondence or case strategy is included. The public source URLs contain no query parameters. The counsel letter's historical confidentiality language is retained as source context, not authorization or a finding that this independently hosted copy was lawfully released; only our limited public-source research notes/pins are published, not the private-authored letter images.
++
++REPORT.md is the preserved first draft. The final README corrects one locator from the broad item17–18 wording to the actually visible continuing Response(Item11) and numberedentry18 on reader11. The exact diff preserves that change. It changes our locator, not source bytes or a historical account. Earlier reports and the work plan retain their baseline hashes; they are not overwritten or adjudicated.
+--- /dev/null
++++ b/OBSERVATIONS.json
+@@ -0,0 +1,243 @@
++{
++  "method": "Manual source-pixel reading, same assistant; rectangle origin upper-left native pixels; no independent text verification",
++  "observations": [
++    {
++      "id": "O01a",
++      "source": "OP07",
++      "locator": "reader17/form1, production header",
++      "rectangle_xyxy": [
++        61,
++        91,
++        455,
++        188
++      ],
++      "kind": "manual transcription",
++      "values": {
++        "BEGPRODNO": "M-INT-00000059",
++        "BEGBATES": "265A-NY-280350-302-22171",
++        "interview_subject": "MERCY LORENZO",
++        "date": "09/11/2001"
++      }
++    },
++    {
++      "id": "O01b",
++      "source": "OP07",
++      "locator": "reader17/form1, body paragraphs1\u20133",
++      "rectangle_xyxy": [
++        252,
++        305,
++        670,
++        544
++      ],
++      "kind": "manual observation/paraphrase",
++      "values": {
++        "reported_role": "AT&T operator; says received the passenger call",
++        "caller_named_in_body": false,
++        "flight_number_in_body": false,
++        "call_time_or_identifier_in_body": false,
++        "husband_role_as_printed": "sergeant",
++        "weapons_as_printed": "guns and knives",
++        "completed_transfer_asserted": false
++      },
++      "limit": "An absent statement is not proof that the event did not occur."
++    },
++    {
++      "id": "O01c",
++      "source": "OP07",
++      "locator": "reader17, handwritten top-right annotation",
++      "rectangle_xyxy": [
++        642,
++        20,
++        861,
++        138
++      ],
++      "kind": "manual transcription",
++      "values": {
++        "annotation": "Olson to Operator",
++        "author_date_basis": "unknown"
++      },
++      "limit": "Separate from the interview body; not authenticated caller identification."
++    },
++    {
++      "id": "O02a",
++      "source": "OP01",
++      "locator": "reader36/form1, production header",
++      "rectangle_xyxy": [
++        61,
++        93,
++        464,
++        186
++      ],
++      "kind": "manual transcription",
++      "values": {
++        "BEGPRODNO": "M-INT-00000058",
++        "BEGBATES": "265A-NY-280350-302-22170",
++        "interview_subject": "TERESA GONZALEZ",
++        "date": "09/11/2001"
++      }
++    },
++    {
++      "id": "O02b",
++      "source": "OP01",
++      "locator": "reader36/form1, body paragraphs1\u20133",
++      "rectangle_xyxy": [
++        254,
++        306,
++        680,
++        554
++      ],
++      "kind": "manual observation/paraphrase",
++      "values": {
++        "fbi_interlocutor": "Teresa Gonzalez",
++        "reported_call_recipient": "Mercy Lorenzo",
++        "flight_as_printed": "77",
++        "destination": "redacted; no reconstruction",
++        "husband_role_as_printed": "Sergeant",
++        "weapons_as_printed": "guns and knives",
++        "caller_named_in_body": false
++      },
++      "limit": "Related report; not a second independent claim of directly hearing the passenger."
++    },
++    {
++      "id": "O03a",
++      "source": "OP04",
++      "locator": "reader6/printed1, date/subject and opening",
++      "rectangle_xyxy": [
++        103,
++        248,
++        853,
++        708
++      ],
++      "kind": "manual observation",
++      "values": {
++        "letter_date": "February 9, 2004",
++        "response_to": "January 9, 2004 requests",
++        "fax_label": "Feb-10-2004; P.002/011"
++      }
++    },
++    {
++      "id": "O03b",
++      "source": "OP03",
++      "locator": "reader8/printed3, numberedentry7 Request/Response(Items1,2)",
++      "rectangle_xyxy": [
++        119,
++        520,
++        865,
++        944
++      ],
++      "kind": "manual observation/paraphrase",
++      "values": {
++        "request_provider_label": "GTE",
++        "response_provider_label": "AT&T Claircom",
++        "claimed_itemized_record_holder": "Claircom",
++        "claimed_airline_reports": "monthly system-wide reliability reports; no individual calls",
++        "claimed_business_cessation": "2002"
++      },
++      "limit": "What counsel represented; not independent carrier retention/disposal verification."
++    },
++    {
++      "id": "O04a",
++      "source": "OP03",
++      "locator": "reader8/printed3, final paragraph",
++      "rectangle_xyxy": [
++        171,
++        797,
++        858,
++        946
++      ],
++      "kind": "manual transcription of date and addressees",
++      "values": {
++        "referenced_email_date": "January 20, 2003",
++        "named_recipients": [
++          "John Raidt",
++          "Bill Johnstone"
++        ],
++        "native_email_acquired": false
++      }
++    },
++    {
++      "id": "O04b",
++      "source": "OP02",
++      "locator": "reader7/printed2, numberedentry4 final paragraph",
++      "rectangle_xyxy": [
++        172,
++        856,
++        865,
++        1008
++      ],
++      "kind": "manual observation",
++      "values": {
++        "referenced_load_factor_email_date": "January 20, 2003"
++      },
++      "limit": "No identity between this email, OP03 cited email and prior provisional2004 queue target established."
++    },
++    {
++      "id": "O05a",
++      "source": "OP02",
++      "locator": "reader7/printed2, numberedentry2 Response(Item5)",
++      "rectangle_xyxy": [
++        168,
++        338,
++        865,
++        503
++      ],
++      "kind": "manual observation/paraphrase",
++      "values": {
++        "claimed_prior_production": "November 13\u201314, 2003",
++        "claimed_contents": "DEC/ACARS and held audio CD/transcripts"
++      },
++      "limit": "Actual delivery and file manifest not acquired here."
++    },
++    {
++      "id": "O05b",
++      "source": "OP05",
++      "locator": "reader9/printed4, numberedentry8 Response(Item3)",
++      "rectangle_xyxy": [
++        170,
++        285,
++        855,
++        386
++      ],
++      "kind": "manual observation/paraphrase",
++      "values": {
++        "claimed_not_located": "Sweeney/Woodward and Flight77-person call recordings/transcripts"
++      },
++      "limit": "Airline possession/search representation, not universal absence or destruction."
++    },
++    {
++      "id": "O05c",
++      "source": "OP05",
++      "locator": "reader9/printed4, numberedentry12 Response(Item2)",
++      "rectangle_xyxy": [
++        126,
++        861,
++        862,
++        965
++      ],
++      "kind": "manual observation/paraphrase",
++      "values": {
++        "claimed_no_itemized_logs_bills": "SOC including Clark desk"
++      }
++    },
++    {
++      "id": "O05d",
++      "source": "OP06",
++      "locator": "reader11/printed6, continuing Response(Item11) and numberedentry18 Response(Item12)",
++      "rectangle_xyxy": [
++        126,
++        184,
++        865,
++        491
++      ],
++      "kind": "manual observation/paraphrase",
++      "values": {
++        "claimed_no_itemized_logs_bills": "SOC",
++        "claimed_pending_searches": [
++          "SERO",
++          "Logan Flight Service Office"
++        ]
++      },
++      "limit": "No claim about DOJ Solicitor General office records."
++    }
++  ]
++}--- /dev/null
++++ b/OPEN-RECORDS.md
+@@ -0,0 +1,17 @@
++# Originals still needed
++
++Existing AUD016-A1 / TC05-B105 / TC06-B110 remain open. The new operator interviews are evidence of attributed reports, not carrier tickets or a completed caller reconstruction.
++
++| Target | Source-specific locator and useful next record | What it could test |
++|---|---|---|
++| Operator transaction and billing chain | OP07 Lorenzo interview M-INT-00000059 / 302-22171; OP01 Gonzalez M-INT-00000058 / 302-22170. Seek existing AT&T OSPS tickets, operator-position logs, collect/transfer/bridge billing legs and recordings, their carrier-to-FBI returns and evidence indexes. | Whether a transfer completed; actual recipient/caller/leg; connection and billing semantics; whether any exact call time or event ID joins the reported conversation. |
++| Interview provenance and follow-up | Native/released certified copies, original interview notes/audio, lead assignments, any follow-up; authorship/date/basis of the handwritten Olson annotation on OP07. | What each operator personally heard, how Gonzalez learned the account, flight/name identification and the guns/knives/sergeant wording. Do not infer concealed content from a redaction. |
++| Native carrier events and schema | Existing Request14 cover says 50 enclosures; held reader provides 27. Bates609–631/fax011–033 remain missing from that hosted sequence. Seek complete agency deliveries, attachments, receipts/assembly, carrier returns, data/version dictionary, identifier reuse and event/answer/duration/clock definitions. | Full accounting and actual field meanings. Acquiring an interview page is not acquiring these missing enclosures or raw events. |
++| Actual airline email | OP03 reader8/printed3 cites January20,2003 to John Raidt and Bill Johnstone; OP02 reader7/printed2 repeats that date for another subject. Parent response is February9,2004; earlier research queue used January20,2004. Seek the email with native date/header and attachments, preserving every version. | Whether these references identify one or several messages; date and content; what American and the Commission actually possessed. Do not silently select a year. |
++| Carrier retention and successor trail | OP03 attributes itemized records to AT&T Claircom and says American received monthly reliability reports. Seek the actual system-wide reports, carrier custodian declarations, transfers/retention schedules/disposition logs and investigative copies. | What records were held where and survived. Ceasing service/business does not establish disposal of data. Generic GTE documentation cannot define Claircom fields without an implementation/version link. |
++| Audio-production and airline-office searches | OP02 numberedentry2 names a November13–14,2003 production; OP05 entry8 reports no located Sweeney/Woodward or Flight77-person call recordings/transcripts. OP05 entry12/OP06 continuingResponse(Item11) and entry18 address SOC logs and still-pending SERO/Logan searches. Seek actual production manifests, CD/transcript contents, written search records and later supplements. | Scope/completeness of held audio, whether specific offices generated logs and whether later searches found records. These passages concern airline custody, not every carrier/recipient. |
++| Recipient-office and source-to-exhibit joins | Existing Keyton/Voss/Olson interviews, September20 analysis and May20 briefing, court AA77 static text and new OP01/OP07. Seek DOJ PBX/incoming/extension-transfer/command-center records, retained voicemail, call-analysis worksheets and original September20 attachments. | Direct/collect, two conversations/four inferred calls, early connected/later unconnected, eight/seven and 154/159. An unlabeled requested transfer is not a completed call, and a shared printed start is not an authenticated identity join. |
++
++Alternative outcomes remain possible: coherent carrier/operator legs, a reporting/transcription difference, incomplete retained evidence, mistaken association or a substantive misdescription. None is selected. A completed search or document-integrity check does not establish that a missing original was withheld, destroyed or never created.
++
++FAA correction/receipt and signed disposition; recorder decoding/custody/clock tests; materials native measurements/same-specimen joins; and steel intake/transfer/building-attribution rationale also remain open under their existing study records. No new request, outreach, fee or physical test was performed here.
+--- /dev/null
++++ b/README-addition.diff
+@@ -0,0 +1,50 @@
++--- /dev/null
+++++ README.md
++@@ -0,0 +1,47 @@
+++# Telephone originals: two operator reports and the call-record custodian
+++
+++October 27, 2026. Existing AUD016-A1 / TC05-B105 / TC06-B110. This is an additive acquisition and source comparison. Earlier reports and conflicting values remain unchanged.
+++
+++**Seven newly acquired page-image entities provide two released FBI interview summaries and selected pages of American Airlines' February 9, 2004 response.** They advance the operator and custody trail. They do not provide native call events, operator tickets, a field dictionary, calibrated call times or authenticated caller-to-record joins.
+++
+++## O01 — A report from the operator who says she received the call
+++
+++[Key-302 reader page 17](https://html.scribdassets.com/4wfmf4jddsfxfj8/images/17-ce884a0772.jpg), OP07, identifies **M-INT-00000059 / 265A-NY-280350-302-22171**, transcription and investigation dated September 11, 2001. Its opening paragraph says AT&T operator Mercy Lorenzo contacted the FBI about an emergency call she received. The following paragraphs attribute to the female passenger a seatback-phone origin, a request to reach her husband in Washington, a hijacking, guns and knives, passengers moving rearward, and uncertainty about the pilots' awareness.
+++
+++The interview body calls the husband a **sergeant**. It gives no passenger name, flight number, call time, call identifier, destination number, completed transfer or collect-billing confirmation. A separate handwritten **Olson to Operator** notation appears above the form. Its author, date and basis are not established. Do not promote that annotation into an identification made by the interviewee or reconstruct the missing destination from other accounts.
+++
+++## O02 — The other operator's report is a related, different evidence layer
+++
+++[Flight-77 reader page 36](https://html.scribdassets.com/7na47jw8009n4uh/images/36-58fb41f51b.jpg), OP01, identifies **M-INT-00000058 / 265A-NY-280350-302-22170**, also dated September 11. Its opening identifies the FBI's interlocutor as **Teresa Gonzalez**. The next paragraph says **Lorenzo** received the passenger's call. This version specifies Flight 77, contains a redacted requested number, and repeats guns/knives and the husband's sergeant description.
+++
+++This is not a second operator independently claiming to have heard the passenger. Two FBI forms are not two independent passenger-call observations. The forms do document two reported contacts with the FBI; their underlying accounts may share Lorenzo as the source. Notes, recordings, routing and follow-up interviews could test the transmission chain.
+++
+++The guns/knives wording remains beside the earlier Olson interview's knives/box-cutters account and the later caller attribution. A nonmention of guns is not an explicit denial. Without identifying the same caller and conversation, these differences cannot be treated as established contradictory eyewitness descriptions of one event. Miscommunication, different callers/calls, incomplete summaries and more substantive misdescription remain untested possibilities; none is selected.
+++
+++## O03 — The airline's response names a different record holder
+++
+++[Counsel reader page 6](https://html.scribdassets.com/czuxmc1fkakhxb/images/6-d34c11fc42.jpg), OP04, dates the response February 9, 2004 and identifies the January 9 requests. [Reader page 8 / printed page 3, item 7](https://html.scribdassets.com/czuxmc1fkakhxb/images/8-fc7c20e2d1.jpg), OP03, reproduces a request using **GTE** and answers that **AT&T Claircom** provided the service and held the itemized records. Counsel says American received monthly system-wide reliability reports without individual calls, and says Claircom ceased business in 2002.
+++
+++This pins what counsel represented, not an independently authenticated system configuration, exhaustive custody history or proof the records ceased to exist. The request's GTE label and response's AT&T Claircom label are preserved separately. Generic GTE system rules cannot simply define the Claircom/OSPS printout. The acquired record gives a concrete reason to seek carrier, successor and already-produced investigative copies, not only airline-held records. It does not demonstrate a failed or deliberately misdirected search.
+++
+++## O04 — Preserve the dates without manufacturing a historical conflict
+++
+++OP03 cites an email to John Raidt and Bill Johnstone dated **January 20, 2003**. [Reader page 7 / printed page 2, item 4](https://html.scribdassets.com/czuxmc1fkakhxb/images/7-cd5987ce20.jpg), OP02, also prints that date for a load-factor email. The parent letter says 2004. Our earlier retrieval queue used January 20, **2004** for the anticipated airline supplement.
+++
+++Those are different evidence layers: a date printed in this source, the parent document's date, and our provisional queue label. We have not acquired the cited native email or established that the queue and letter refer to the same message. Do not silently correct the year, infer two historical email versions, or treat our queue as independent corroboration. An editorial error, an earlier message or a mistaken target association are open hypotheses.
+++
+++## O05 — Recording and switch-log representations have limited scope
+++
+++[Reader page 7 / printed page 2, item 2](https://html.scribdassets.com/czuxmc1fkakhxb/images/7-cd5987ce20.jpg) says a November 2003 production included American's held audio and transcripts. [Reader page 9 / printed page 4, item 8](https://html.scribdassets.com/czuxmc1fkakhxb/images/9-d1266f0d0c.jpg), OP05, says American could not locate Sweeney/Woodward or Flight-77-person call recordings/transcripts. Page 4 item 12 and [reader page 11 / printed page 6, continuing Response(Item11) and entry18](https://html.scribdassets.com/czuxmc1fkakhxb/images/11-6bf3af6645.jpg), OP06, say the SOC maintained no itemized telephone logs/bills; searches concerning SERO and Logan remained pending.
+++
+++These are counsel's bounded possession/search representations. Broad production language and a narrower unsuccessful search are not automatically incompatible. An airline SOC is not the Solicitor General's DOJ office: this does not answer whether DOJ incoming, transfer, command-center or voicemail records existed. The November production manifest, underlying searches and later supplements are the discriminating records, not an assumption that all audio was recorded or all logs destroyed.
+++
+++## Provenance, verification and limits
+++
+++The scans come from three public [reader](https://www.scribd.com/document/13950194/T7-B17-FBI-302s-of-Interest-Flight-77-Fdr-Entire-Contents-393) [compilations](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s) [of released records](https://www.scribd.com/document/15492358/DM-B1-Airlines-Fdr-Letters-From-Condon-Forsyth-LLP-Re-American-Airlines-Document-Requests). They are hosted reproductions of primary records, not downloads authenticated by the originating agency. The original release receipt, native PDF/email, carrier database and interview notes/audio remain unacquired. The uploader's title and AI description are not evidence of completeness.
+++
+++All seven acquired images, totaling **691,199 bytes**, were manually viewed; the automated verifier separately checks their saved SHA-256, size, dimensions and image format. This reading covers two one-page interviews and **five selected response pages**, not every page in the 36-, 52- and 50-page readers. No complete-release, call-connection, clock or physical test was performed. Source pixels and paragraph/crop references appear in [OBSERVATIONS.json](OBSERVATIONS.json); [SOURCES.json](SOURCES.json) pins every entity. Raw scans, personal/contact identifiers, source signatures, search returns and browser tokens are excluded from this public addition.
+++
+++The prior **154/159 seconds**, **eight/seven**, **direct/collect**, **early connected/later unconnected**, **609–631 missing hosted-copy labels**, and the **18/28 digit-reading caution** remain unresolved. These new interview reports do not pick a matching carrier event or establish fabricated calls, concealment or wrongdoing. Conversely, a plausible reporting explanation does not supply the missing joins.
+++
+++[OPEN-RECORDS.md](OPEN-RECORDS.md) identifies the next originals, including operator tickets, transfer and billing legs, native event/clock definitions, interview originals, actual cited email, production manifests and office logs. [CLAIM-LEDGER.json](CLAIM-LEDGER.json) separates observed source content from inferences and alternatives. [CHECKLIST.md](CHECKLIST.md), the full addition diff and preceding-document hash status record scope and preservation. The five-track goal remains active; publication does not complete its missing-original or empirical-test requirements.
+--- /dev/null
++++ b/README-v1-v2.diff
+@@ -0,0 +1,11 @@
++--- drafts/README-v1.md
+++++ README.md
++@@ -32,7 +32,7 @@
++ 
++ ## O05 — Recording and switch-log representations have limited scope
++ 
++-[Reader page 7 / printed page 2, item 2](https://html.scribdassets.com/czuxmc1fkakhxb/images/7-cd5987ce20.jpg) says a November 2003 production included American's held audio and transcripts. [Reader page 9 / printed page 4, item 8](https://html.scribdassets.com/czuxmc1fkakhxb/images/9-d1266f0d0c.jpg), OP05, says American could not locate Sweeney/Woodward or Flight-77-person call recordings/transcripts. Page 4 item 12 and [reader page 11 / printed page 6, items 17–18](https://html.scribdassets.com/czuxmc1fkakhxb/images/11-6bf3af6645.jpg), OP06, say the SOC maintained no itemized telephone logs/bills; searches concerning SERO and Logan remained pending.
+++[Reader page 7 / printed page 2, item 2](https://html.scribdassets.com/czuxmc1fkakhxb/images/7-cd5987ce20.jpg) says a November 2003 production included American's held audio and transcripts. [Reader page 9 / printed page 4, item 8](https://html.scribdassets.com/czuxmc1fkakhxb/images/9-d1266f0d0c.jpg), OP05, says American could not locate Sweeney/Woodward or Flight-77-person call recordings/transcripts. Page 4 item 12 and [reader page 11 / printed page 6, continuing Response(Item11) and entry18](https://html.scribdassets.com/czuxmc1fkakhxb/images/11-6bf3af6645.jpg), OP06, say the SOC maintained no itemized telephone logs/bills; searches concerning SERO and Logan remained pending.
++ 
++ These are counsel's bounded possession/search representations. Broad production language and a narrower unsuccessful search are not automatically incompatible. An airline SOC is not the Solicitor General's DOJ office: this does not answer whether DOJ incoming, transfer, command-center or voicemail records existed. The November production manifest, underlying searches and later supplements are the discriminating records, not an assumption that all audio was recorded or all logs destroyed.
++ 
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,47 @@
++# Telephone originals: two operator reports and the call-record custodian
++
++October 27, 2026. Existing AUD016-A1 / TC05-B105 / TC06-B110. This is an additive acquisition and source comparison. Earlier reports and conflicting values remain unchanged.
++
++**Seven newly acquired page-image entities provide two released FBI interview summaries and selected pages of American Airlines' February 9, 2004 response.** They advance the operator and custody trail. They do not provide native call events, operator tickets, a field dictionary, calibrated call times or authenticated caller-to-record joins.
++
++## O01 — A report from the operator who says she received the call
++
++[Key-302 reader page 17](https://html.scribdassets.com/4wfmf4jddsfxfj8/images/17-ce884a0772.jpg), OP07, identifies **M-INT-00000059 / 265A-NY-280350-302-22171**, transcription and investigation dated September 11, 2001. Its opening paragraph says AT&T operator Mercy Lorenzo contacted the FBI about an emergency call she received. The following paragraphs attribute to the female passenger a seatback-phone origin, a request to reach her husband in Washington, a hijacking, guns and knives, passengers moving rearward, and uncertainty about the pilots' awareness.
++
++The interview body calls the husband a **sergeant**. It gives no passenger name, flight number, call time, call identifier, destination number, completed transfer or collect-billing confirmation. A separate handwritten **Olson to Operator** notation appears above the form. Its author, date and basis are not established. Do not promote that annotation into an identification made by the interviewee or reconstruct the missing destination from other accounts.
++
++## O02 — The other operator's report is a related, different evidence layer
++
++[Flight-77 reader page 36](https://html.scribdassets.com/7na47jw8009n4uh/images/36-58fb41f51b.jpg), OP01, identifies **M-INT-00000058 / 265A-NY-280350-302-22170**, also dated September 11. Its opening identifies the FBI's interlocutor as **Teresa Gonzalez**. The next paragraph says **Lorenzo** received the passenger's call. This version specifies Flight 77, contains a redacted requested number, and repeats guns/knives and the husband's sergeant description.
++
++This is not a second operator independently claiming to have heard the passenger. Two FBI forms are not two independent passenger-call observations. The forms do document two reported contacts with the FBI; their underlying accounts may share Lorenzo as the source. Notes, recordings, routing and follow-up interviews could test the transmission chain.
++
++The guns/knives wording remains beside the earlier Olson interview's knives/box-cutters account and the later caller attribution. A nonmention of guns is not an explicit denial. Without identifying the same caller and conversation, these differences cannot be treated as established contradictory eyewitness descriptions of one event. Miscommunication, different callers/calls, incomplete summaries and more substantive misdescription remain untested possibilities; none is selected.
++
++## O03 — The airline's response names a different record holder
++
++[Counsel reader page 6](https://html.scribdassets.com/czuxmc1fkakhxb/images/6-d34c11fc42.jpg), OP04, dates the response February 9, 2004 and identifies the January 9 requests. [Reader page 8 / printed page 3, item 7](https://html.scribdassets.com/czuxmc1fkakhxb/images/8-fc7c20e2d1.jpg), OP03, reproduces a request using **GTE** and answers that **AT&T Claircom** provided the service and held the itemized records. Counsel says American received monthly system-wide reliability reports without individual calls, and says Claircom ceased business in 2002.
++
++This pins what counsel represented, not an independently authenticated system configuration, exhaustive custody history or proof the records ceased to exist. The request's GTE label and response's AT&T Claircom label are preserved separately. Generic GTE system rules cannot simply define the Claircom/OSPS printout. The acquired record gives a concrete reason to seek carrier, successor and already-produced investigative copies, not only airline-held records. It does not demonstrate a failed or deliberately misdirected search.
++
++## O04 — Preserve the dates without manufacturing a historical conflict
++
++OP03 cites an email to John Raidt and Bill Johnstone dated **January 20, 2003**. [Reader page 7 / printed page 2, item 4](https://html.scribdassets.com/czuxmc1fkakhxb/images/7-cd5987ce20.jpg), OP02, also prints that date for a load-factor email. The parent letter says 2004. Our earlier retrieval queue used January 20, **2004** for the anticipated airline supplement.
++
++Those are different evidence layers: a date printed in this source, the parent document's date, and our provisional queue label. We have not acquired the cited native email or established that the queue and letter refer to the same message. Do not silently correct the year, infer two historical email versions, or treat our queue as independent corroboration. An editorial error, an earlier message or a mistaken target association are open hypotheses.
++
++## O05 — Recording and switch-log representations have limited scope
++
++[Reader page 7 / printed page 2, item 2](https://html.scribdassets.com/czuxmc1fkakhxb/images/7-cd5987ce20.jpg) says a November 2003 production included American's held audio and transcripts. [Reader page 9 / printed page 4, item 8](https://html.scribdassets.com/czuxmc1fkakhxb/images/9-d1266f0d0c.jpg), OP05, says American could not locate Sweeney/Woodward or Flight-77-person call recordings/transcripts. Page 4 item 12 and [reader page 11 / printed page 6, continuing Response(Item11) and entry18](https://html.scribdassets.com/czuxmc1fkakhxb/images/11-6bf3af6645.jpg), OP06, say the SOC maintained no itemized telephone logs/bills; searches concerning SERO and Logan remained pending.
++
++These are counsel's bounded possession/search representations. Broad production language and a narrower unsuccessful search are not automatically incompatible. An airline SOC is not the Solicitor General's DOJ office: this does not answer whether DOJ incoming, transfer, command-center or voicemail records existed. The November production manifest, underlying searches and later supplements are the discriminating records, not an assumption that all audio was recorded or all logs destroyed.
++
++## Provenance, verification and limits
++
++The scans come from three public [reader](https://www.scribd.com/document/13950194/T7-B17-FBI-302s-of-Interest-Flight-77-Fdr-Entire-Contents-393) [compilations](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s) [of released records](https://www.scribd.com/document/15492358/DM-B1-Airlines-Fdr-Letters-From-Condon-Forsyth-LLP-Re-American-Airlines-Document-Requests). They are hosted reproductions of primary records, not downloads authenticated by the originating agency. The original release receipt, native PDF/email, carrier database and interview notes/audio remain unacquired. The uploader's title and AI description are not evidence of completeness.
++
++All seven acquired images, totaling **691,199 bytes**, were manually viewed; the automated verifier separately checks their saved SHA-256, size, dimensions and image format. This reading covers two one-page interviews and **five selected response pages**, not every page in the 36-, 52- and 50-page readers. No complete-release, call-connection, clock or physical test was performed. Source pixels and paragraph/crop references appear in [OBSERVATIONS.json](OBSERVATIONS.json); [SOURCES.json](SOURCES.json) pins every entity. Raw scans, personal/contact identifiers, source signatures, search returns and browser tokens are excluded from this public addition.
++
++The prior **154/159 seconds**, **eight/seven**, **direct/collect**, **early connected/later unconnected**, **609–631 missing hosted-copy labels**, and the **18/28 digit-reading caution** remain unresolved. These new interview reports do not pick a matching carrier event or establish fabricated calls, concealment or wrongdoing. Conversely, a plausible reporting explanation does not supply the missing joins.
++
++[OPEN-RECORDS.md](OPEN-RECORDS.md) identifies the next originals, including operator tickets, transfer and billing legs, native event/clock definitions, interview originals, actual cited email, production manifests and office logs. [CLAIM-LEDGER.json](CLAIM-LEDGER.json) separates observed source content from inferences and alternatives. [CHECKLIST.md](CHECKLIST.md), the full addition diff and preceding-document hash status record scope and preservation. The five-track goal remains active; publication does not complete its missing-original or empirical-test requirements.
+--- /dev/null
++++ b/REVISION-STATUS.json
+@@ -0,0 +1,50 @@
++{
++  "checked_utc": "2026-10-27T22:34:13.298445+00:00",
++  "earlier_documents": [
++    {
++      "path": "telephone-originals-2026-10-27/REPORT.md",
++      "bytes": 8202,
++      "sha256": "0b3f344a783842528d99cfa7310faf450b96fda3dbbd0bf8b189768af9582e97",
++      "current_sha256": "0b3f344a783842528d99cfa7310faf450b96fda3dbbd0bf8b189768af9582e97",
++      "unchanged": true
++    },
++    {
++      "path": "telephone-carrier-enclosures-2026-10-27/REPORT.md",
++      "bytes": 8866,
++      "sha256": "6d1c7a2a04f5ba413db64fb85563bf526e1eb8516a7118d1a7f3ab7e7f328a8f",
++      "current_sha256": "6d1c7a2a04f5ba413db64fb85563bf526e1eb8516a7118d1a7f3ab7e7f328a8f",
++      "unchanged": true
++    },
++    {
++      "path": "telephone-carrier-enclosures-2026-10-27/REPORT-v2.md",
++      "bytes": 8780,
++      "sha256": "9368f8b3f91e28a7144117cd9b5186ba30635b14532facad05d84dd055c592b9",
++      "current_sha256": "9368f8b3f91e28a7144117cd9b5186ba30635b14532facad05d84dd055c592b9",
++      "unchanged": true
++    },
++    {
++      "path": "telephone-event-joins-2026-10-27/REPORT.md",
++      "bytes": 11368,
++      "sha256": "0175327eb569fb7e87dc1e8d8bd8a259faea385f7dc3dc02a5a98bea9f10cb23",
++      "current_sha256": "0175327eb569fb7e87dc1e8d8bd8a259faea385f7dc3dc02a5a98bea9f10cb23",
++      "unchanged": true
++    },
++    {
++      "path": "telephone-usage-report-2026-10-27/REPORT.md",
++      "bytes": 10016,
++      "sha256": "aae63033f869079599eac522a6a91e6cb74f492117e43601f60e78f915998a6a",
++      "current_sha256": "aae63033f869079599eac522a6a91e6cb74f492117e43601f60e78f915998a6a",
++      "unchanged": true
++    },
++    {
++      "path": "original-records-work-plan-2026-10-27/WORK-PLAN.md",
++      "bytes": 16724,
++      "sha256": "d23c01a77bcc468f06faabb13b708df8032a6870586ec539c59edc9e0ae3d7cb",
++      "current_sha256": "d23c01a77bcc468f06faabb13b708df8032a6870586ec539c59edc9e0ae3d7cb",
++      "unchanged": true
++    }
++  ],
++  "source_mutations": "None; seven new hosted image entities retained unchanged",
++  "research_status": "Additive original-record acquisition, not substantive goal completion",
++  "revision": "First draft retained; exact immediately preceding draft comparison in README-v1-v2.diff; new public addition in README-addition.diff"
++}--- /dev/null
++++ b/SOURCE-VERIFICATION.json
+@@ -0,0 +1,141 @@
++{
++  "scope": "Entity integrity and decoding only; manual transcriptions, historical provenance and call joins are not software-verified",
++  "source_checks": 7,
++  "passed": 7,
++  "all_passed": true,
++  "checks": [
++    {
++      "id": "OP01",
++      "filename": "operator-reader-36.jpg",
++      "actual": {
++        "bytes": 69173,
++        "sha256": "389503aa169c24a8ef8579fb1f4a9a01d83ca218d283bc0deb43bbaefb47d8bf",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "expected": {
++        "bytes": 69173,
++        "sha256": "389503aa169c24a8ef8579fb1f4a9a01d83ca218d283bc0deb43bbaefb47d8bf",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "passed": true
++    },
++    {
++      "id": "OP02",
++      "filename": "counsel-reader-07.jpg",
++      "actual": {
++        "bytes": 113177,
++        "sha256": "8d34d250c92a2b28a7124f25f29fd3d334a7afba72ee48d46a014c7fed6c98aa",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "expected": {
++        "bytes": 113177,
++        "sha256": "8d34d250c92a2b28a7124f25f29fd3d334a7afba72ee48d46a014c7fed6c98aa",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "passed": true
++    },
++    {
++      "id": "OP03",
++      "filename": "counsel-reader-08.jpg",
++      "actual": {
++        "bytes": 113916,
++        "sha256": "8302e7e9ea2e66e4e85f56417921a58fac8e34fc2f75afe0a2e2ddbff6d607b7",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "expected": {
++        "bytes": 113916,
++        "sha256": "8302e7e9ea2e66e4e85f56417921a58fac8e34fc2f75afe0a2e2ddbff6d607b7",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "passed": true
++    },
++    {
++      "id": "OP04",
++      "filename": "counsel-reader-06.jpg",
++      "actual": {
++        "bytes": 101513,
++        "sha256": "862fc89020445cac062a6f1bda7919a361508e46fc41bbd3059e52eb16fedd96",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "expected": {
++        "bytes": 101513,
++        "sha256": "862fc89020445cac062a6f1bda7919a361508e46fc41bbd3059e52eb16fedd96",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "passed": true
++    },
++    {
++      "id": "OP05",
++      "filename": "counsel-reader-09.jpg",
++      "actual": {
++        "bytes": 90983,
++        "sha256": "a97e214d8683335e5d15a680903601d8fedb5c71e078484da8cab1ecb9ac90a5",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "expected": {
++        "bytes": 90983,
++        "sha256": "a97e214d8683335e5d15a680903601d8fedb5c71e078484da8cab1ecb9ac90a5",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "passed": true
++    },
++    {
++      "id": "OP06",
++      "filename": "counsel-reader-11.jpg",
++      "actual": {
++        "bytes": 134007,
++        "sha256": "21fbb9ff1956931792d972ff4123f8c979c48fefcb2713cd344615b50d60f178",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "expected": {
++        "bytes": 134007,
++        "sha256": "21fbb9ff1956931792d972ff4123f8c979c48fefcb2713cd344615b50d60f178",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "passed": true
++    },
++    {
++      "id": "OP07",
++      "filename": "key302-reader-17.jpg",
++      "actual": {
++        "bytes": 68430,
++        "sha256": "4403a3372a1a1c1ee18a28f83be193b99246d9aa293a3636b931875d1298968b",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "expected": {
++        "bytes": 68430,
++        "sha256": "4403a3372a1a1c1ee18a28f83be193b99246d9aa293a3636b931875d1298968b",
++        "width": 904,
++        "height": 1242,
++        "image_format": "JPEG"
++      },
++      "passed": true
++    }
++  ]
++}--- /dev/null
++++ b/SOURCES.json
+@@ -0,0 +1,135 @@
++[
++  {
++    "filename": "operator-reader-36.jpg",
++    "reader_page": 36,
++    "document_id": "13950194",
++    "url": "https://html.scribdassets.com/7na47jw8009n4uh/images/36-58fb41f51b.jpg",
++    "access_utc": "2026-10-27T22:25:44.130643+00:00",
++    "status": 200,
++    "content_type": "image/jpeg",
++    "final_url": "https://html.scribdassets.com/7na47jw8009n4uh/images/36-58fb41f51b.jpg",
++    "bytes": 69173,
++    "sha256": "389503aa169c24a8ef8579fb1f4a9a01d83ca218d283bc0deb43bbaefb47d8bf",
++    "image_format": "JPEG",
++    "width": 904,
++    "height": 1242,
++    "authentication": "None; queryless public asset, no cookies, sign-in or token",
++    "relationship": "Reader image reproduction, not agency-native PDF/native carrier or operator data",
++    "id": "OP01",
++    "reader_url": "https://www.scribd.com/document/13950194"
++  },
++  {
++    "filename": "counsel-reader-07.jpg",
++    "reader_page": 7,
++    "document_id": "15492358",
++    "url": "https://html.scribdassets.com/czuxmc1fkakhxb/images/7-cd5987ce20.jpg",
++    "access_utc": "2026-10-27T22:25:44.174001+00:00",
++    "status": 200,
++    "content_type": "image/jpeg",
++    "final_url": "https://html.scribdassets.com/czuxmc1fkakhxb/images/7-cd5987ce20.jpg",
++    "bytes": 113177,
++    "sha256": "8d34d250c92a2b28a7124f25f29fd3d334a7afba72ee48d46a014c7fed6c98aa",
++    "image_format": "JPEG",
++    "width": 904,
++    "height": 1242,
++    "authentication": "None; queryless public asset, no cookies, sign-in or token",
++    "relationship": "Reader image reproduction, not agency-native PDF/native carrier or operator data",
++    "id": "OP02",
++    "reader_url": "https://www.scribd.com/document/15492358"
++  },
++  {
++    "filename": "counsel-reader-08.jpg",
++    "reader_page": 8,
++    "document_id": "15492358",
++    "url": "https://html.scribdassets.com/czuxmc1fkakhxb/images/8-fc7c20e2d1.jpg",
++    "access_utc": "2026-10-27T22:25:44.153139+00:00",
++    "status": 200,
++    "content_type": "image/jpeg",
++    "final_url": "https://html.scribdassets.com/czuxmc1fkakhxb/images/8-fc7c20e2d1.jpg",
++    "bytes": 113916,
++    "sha256": "8302e7e9ea2e66e4e85f56417921a58fac8e34fc2f75afe0a2e2ddbff6d607b7",
++    "image_format": "JPEG",
++    "width": 904,
++    "height": 1242,
++    "authentication": "None; queryless public asset, no cookies, sign-in or token",
++    "relationship": "Reader image reproduction, not agency-native PDF/native carrier or operator data",
++    "id": "OP03",
++    "reader_url": "https://www.scribd.com/document/15492358"
++  },
++  {
++    "filename": "counsel-reader-06.jpg",
++    "reader_page": 6,
++    "document_id": "15492358",
++    "url": "https://html.scribdassets.com/czuxmc1fkakhxb/images/6-d34c11fc42.jpg",
++    "access_utc": "2026-10-27T22:27:06.819439+00:00",
++    "status": 200,
++    "content_type": "image/jpeg",
++    "final_url": "https://html.scribdassets.com/czuxmc1fkakhxb/images/6-d34c11fc42.jpg",
++    "bytes": 101513,
++    "sha256": "862fc89020445cac062a6f1bda7919a361508e46fc41bbd3059e52eb16fedd96",
++    "image_format": "JPEG",
++    "width": 904,
++    "height": 1242,
++    "authentication": "None; queryless public asset, no cookies, sign-in or token",
++    "relationship": "Reader image reproduction, not agency-native PDF/native carrier or operator data",
++    "id": "OP04",
++    "reader_url": "https://www.scribd.com/document/15492358"
++  },
++  {
++    "filename": "counsel-reader-09.jpg",
++    "reader_page": 9,
++    "document_id": "15492358",
++    "url": "https://html.scribdassets.com/czuxmc1fkakhxb/images/9-d1266f0d0c.jpg",
++    "access_utc": "2026-10-27T22:27:06.799164+00:00",
++    "status": 200,
++    "content_type": "image/jpeg",
++    "final_url": "https://html.scribdassets.com/czuxmc1fkakhxb/images/9-d1266f0d0c.jpg",
++    "bytes": 90983,
++    "sha256": "a97e214d8683335e5d15a680903601d8fedb5c71e078484da8cab1ecb9ac90a5",
++    "image_format": "JPEG",
++    "width": 904,
++    "height": 1242,
++    "authentication": "None; queryless public asset, no cookies, sign-in or token",
++    "relationship": "Reader image reproduction, not agency-native PDF/native carrier or operator data",
++    "id": "OP05",
++    "reader_url": "https://www.scribd.com/document/15492358"
++  },
++  {
++    "filename": "counsel-reader-11.jpg",
++    "reader_page": 11,
++    "document_id": "15492358",
++    "url": "https://html.scribdassets.com/czuxmc1fkakhxb/images/11-6bf3af6645.jpg",
++    "access_utc": "2026-10-27T22:27:06.846229+00:00",
++    "status": 200,
++    "content_type": "image/jpeg",
++    "final_url": "https://html.scribdassets.com/czuxmc1fkakhxb/images/11-6bf3af6645.jpg",
++    "bytes": 134007,
++    "sha256": "21fbb9ff1956931792d972ff4123f8c979c48fefcb2713cd344615b50d60f178",
++    "image_format": "JPEG",
++    "width": 904,
++    "height": 1242,
++    "authentication": "None; queryless public asset, no cookies, sign-in or token",
++    "relationship": "Reader image reproduction, not agency-native PDF/native carrier or operator data",
++    "id": "OP06",
++    "reader_url": "https://www.scribd.com/document/15492358"
++  },
++  {
++    "filename": "key302-reader-17.jpg",
++    "reader_page": 17,
++    "document_id": "24392516",
++    "url": "https://html.scribdassets.com/4wfmf4jddsfxfj8/images/17-ce884a0772.jpg",
++    "access_utc": "2026-10-27T22:28:21.254800+00:00",
++    "status": 200,
++    "content_type": "image/jpeg",
++    "final_url": "https://html.scribdassets.com/4wfmf4jddsfxfj8/images/17-ce884a0772.jpg",
++    "bytes": 68430,
++    "sha256": "4403a3372a1a1c1ee18a28f83be193b99246d9aa293a3636b931875d1298968b",
++    "image_format": "JPEG",
++    "width": 904,
++    "height": 1242,
++    "authentication": "None; queryless public asset, no cookies, sign-in or token",
++    "relationship": "Reader image reproduction, not agency-native PDF/native carrier or operator data",
++    "id": "OP07",
++    "reader_url": "https://www.scribd.com/document/24392516"
++  }
++]--- /dev/null
++++ b/drafts/README-v1.md
+@@ -0,0 +1,47 @@
++# Telephone originals: two operator reports and the call-record custodian
++
++October 27, 2026. Existing AUD016-A1 / TC05-B105 / TC06-B110. This is an additive acquisition and source comparison. Earlier reports and conflicting values remain unchanged.
++
++**Seven newly acquired page-image entities provide two released FBI interview summaries and selected pages of American Airlines' February 9, 2004 response.** They advance the operator and custody trail. They do not provide native call events, operator tickets, a field dictionary, calibrated call times or authenticated caller-to-record joins.
++
++## O01 — A report from the operator who says she received the call
++
++[Key-302 reader page 17](https://html.scribdassets.com/4wfmf4jddsfxfj8/images/17-ce884a0772.jpg), OP07, identifies **M-INT-00000059 / 265A-NY-280350-302-22171**, transcription and investigation dated September 11, 2001. Its opening paragraph says AT&T operator Mercy Lorenzo contacted the FBI about an emergency call she received. The following paragraphs attribute to the female passenger a seatback-phone origin, a request to reach her husband in Washington, a hijacking, guns and knives, passengers moving rearward, and uncertainty about the pilots' awareness.
++
++The interview body calls the husband a **sergeant**. It gives no passenger name, flight number, call time, call identifier, destination number, completed transfer or collect-billing confirmation. A separate handwritten **Olson to Operator** notation appears above the form. Its author, date and basis are not established. Do not promote that annotation into an identification made by the interviewee or reconstruct the missing destination from other accounts.
++
++## O02 — The other operator's report is a related, different evidence layer
++
++[Flight-77 reader page 36](https://html.scribdassets.com/7na47jw8009n4uh/images/36-58fb41f51b.jpg), OP01, identifies **M-INT-00000058 / 265A-NY-280350-302-22170**, also dated September 11. Its opening identifies the FBI's interlocutor as **Teresa Gonzalez**. The next paragraph says **Lorenzo** received the passenger's call. This version specifies Flight 77, contains a redacted requested number, and repeats guns/knives and the husband's sergeant description.
++
++This is not a second operator independently claiming to have heard the passenger. Two FBI forms are not two independent passenger-call observations. The forms do document two reported contacts with the FBI; their underlying accounts may share Lorenzo as the source. Notes, recordings, routing and follow-up interviews could test the transmission chain.
++
++The guns/knives wording remains beside the earlier Olson interview's knives/box-cutters account and the later caller attribution. A nonmention of guns is not an explicit denial. Without identifying the same caller and conversation, these differences cannot be treated as established contradictory eyewitness descriptions of one event. Miscommunication, different callers/calls, incomplete summaries and more substantive misdescription remain untested possibilities; none is selected.
++
++## O03 — The airline's response names a different record holder
++
++[Counsel reader page 6](https://html.scribdassets.com/czuxmc1fkakhxb/images/6-d34c11fc42.jpg), OP04, dates the response February 9, 2004 and identifies the January 9 requests. [Reader page 8 / printed page 3, item 7](https://html.scribdassets.com/czuxmc1fkakhxb/images/8-fc7c20e2d1.jpg), OP03, reproduces a request using **GTE** and answers that **AT&T Claircom** provided the service and held the itemized records. Counsel says American received monthly system-wide reliability reports without individual calls, and says Claircom ceased business in 2002.
++
++This pins what counsel represented, not an independently authenticated system configuration, exhaustive custody history or proof the records ceased to exist. The request's GTE label and response's AT&T Claircom label are preserved separately. Generic GTE system rules cannot simply define the Claircom/OSPS printout. The acquired record gives a concrete reason to seek carrier, successor and already-produced investigative copies, not only airline-held records. It does not demonstrate a failed or deliberately misdirected search.
++
++## O04 — Preserve the dates without manufacturing a historical conflict
++
++OP03 cites an email to John Raidt and Bill Johnstone dated **January 20, 2003**. [Reader page 7 / printed page 2, item 4](https://html.scribdassets.com/czuxmc1fkakhxb/images/7-cd5987ce20.jpg), OP02, also prints that date for a load-factor email. The parent letter says 2004. Our earlier retrieval queue used January 20, **2004** for the anticipated airline supplement.
++
++Those are different evidence layers: a date printed in this source, the parent document's date, and our provisional queue label. We have not acquired the cited native email or established that the queue and letter refer to the same message. Do not silently correct the year, infer two historical email versions, or treat our queue as independent corroboration. An editorial error, an earlier message or a mistaken target association are open hypotheses.
++
++## O05 — Recording and switch-log representations have limited scope
++
++[Reader page 7 / printed page 2, item 2](https://html.scribdassets.com/czuxmc1fkakhxb/images/7-cd5987ce20.jpg) says a November 2003 production included American's held audio and transcripts. [Reader page 9 / printed page 4, item 8](https://html.scribdassets.com/czuxmc1fkakhxb/images/9-d1266f0d0c.jpg), OP05, says American could not locate Sweeney/Woodward or Flight-77-person call recordings/transcripts. Page 4 item 12 and [reader page 11 / printed page 6, items 17–18](https://html.scribdassets.com/czuxmc1fkakhxb/images/11-6bf3af6645.jpg), OP06, say the SOC maintained no itemized telephone logs/bills; searches concerning SERO and Logan remained pending.
++
++These are counsel's bounded possession/search representations. Broad production language and a narrower unsuccessful search are not automatically incompatible. An airline SOC is not the Solicitor General's DOJ office: this does not answer whether DOJ incoming, transfer, command-center or voicemail records existed. The November production manifest, underlying searches and later supplements are the discriminating records, not an assumption that all audio was recorded or all logs destroyed.
++
++## Provenance, verification and limits
++
++The scans come from three public [reader](https://www.scribd.com/document/13950194/T7-B17-FBI-302s-of-Interest-Flight-77-Fdr-Entire-Contents-393) [compilations](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s) [of released records](https://www.scribd.com/document/15492358/DM-B1-Airlines-Fdr-Letters-From-Condon-Forsyth-LLP-Re-American-Airlines-Document-Requests). They are hosted reproductions of primary records, not downloads authenticated by the originating agency. The original release receipt, native PDF/email, carrier database and interview notes/audio remain unacquired. The uploader's title and AI description are not evidence of completeness.
++
++All seven acquired images, totaling **691,199 bytes**, were manually viewed; the automated verifier separately checks their saved SHA-256, size, dimensions and image format. This reading covers two one-page interviews and **five selected response pages**, not every page in the 36-, 52- and 50-page readers. No complete-release, call-connection, clock or physical test was performed. Source pixels and paragraph/crop references appear in [OBSERVATIONS.json](OBSERVATIONS.json); [SOURCES.json](SOURCES.json) pins every entity. Raw scans, personal/contact identifiers, source signatures, search returns and browser tokens are excluded from this public addition.
++
++The prior **154/159 seconds**, **eight/seven**, **direct/collect**, **early connected/later unconnected**, **609–631 missing hosted-copy labels**, and the **18/28 digit-reading caution** remain unresolved. These new interview reports do not pick a matching carrier event or establish fabricated calls, concealment or wrongdoing. Conversely, a plausible reporting explanation does not supply the missing joins.
++
++[OPEN-RECORDS.md](OPEN-RECORDS.md) identifies the next originals, including operator tickets, transfer and billing legs, native event/clock definitions, interview originals, actual cited email, production manifests and office logs. [CLAIM-LEDGER.json](CLAIM-LEDGER.json) separates observed source content from inferences and alternatives. [CHECKLIST.md](CHECKLIST.md), the full addition diff and preceding-document hash status record scope and preservation. The five-track goal remains active; publication does not complete its missing-original or empirical-test requirements.
+--- /dev/null
++++ b/verify_sources.py
+@@ -0,0 +1,28 @@
++"""Check seven held image entities; this does not authenticate any telephone call."""
++import argparse, hashlib, json
++from pathlib import Path
++from PIL import Image
++
++parser=argparse.ArgumentParser()
++parser.add_argument('source_directory',type=Path)
++parser.add_argument('pins',type=Path)
++parser.add_argument('output',type=Path)
++args=parser.parse_args()
++assert not args.output.exists(), 'Preserve the earlier run; choose a new output'
++checks=[]
++for row in json.loads(args.pins.read_text()):
++    path=args.source_directory/row['filename']
++    body=path.read_bytes()
++    with Image.open(path) as image:
++        actual={'bytes':len(body),'sha256':hashlib.sha256(body).hexdigest(),
++                'width':image.width,'height':image.height,'image_format':image.format}
++        image.verify()
++    expected={key:row[key] for key in actual}
++    checks.append(dict(id=row['id'],filename=row['filename'],actual=actual,
++                       expected=expected,passed=actual==expected))
++result=dict(scope='Entity integrity and decoding only; manual transcriptions, historical provenance and call joins are not software-verified',
++            source_checks=len(checks),passed=sum(x['passed'] for x in checks),
++            all_passed=all(x['passed'] for x in checks),checks=checks)
++with args.output.open('x') as handle:json.dump(result,handle,indent=2)
++print(json.dumps({key:value for key,value in result.items() if key!='checks'},indent=2))
++assert result['all_passed']
