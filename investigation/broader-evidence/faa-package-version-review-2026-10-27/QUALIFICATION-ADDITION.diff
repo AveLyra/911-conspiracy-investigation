@@ -1,0 +1,12 @@
+--- /dev/null
++++ b/ACQUISITION-GUARD-QUALIFICATION.md
+@@ -0,0 +1,9 @@
++# Qualification of the first audio-acquisition attempt
++
++The initial report’s D08 and SOURCES describe the first attempt as stopping at the local 32 MiB bound. The actual first script used one assertion combining HTTP status, byte count and Content-Type. It stopped before preserving the body or those individual values. Its error therefore does **not independently identify which predicate failed**.
++
++A later HEAD response independently reported HTTP 200, audio/mpeg and 69,528,137 bytes—larger than 32 MiB. The subsequent explicit 80 MiB acquisition succeeded, preserved 69,528,137 bytes with the published SHA256, and decoded without reported error. Those later results establish the successful entity and that the original size bound was insufficient for that entity. Attributing the **first** failure specifically to size is an inference from later evidence, not a preserved direct observation of that attempt. A different initial response cannot be excluded from the saved first-attempt record.
++
++Retain the first report, its source pins and the local failed-attempt record unchanged. No archive access denial, suppression, tampering or other suspicious event is established by that first local guard failure. The original PDF observations, acquisition hash, codec result, printed-time comparisons and unresolved historical questions are unaffected. No source evidence has been corrected or overwritten.
++
++The original MANIFEST and PUBLIC-ADDITION.diff describe the first 22-file publication at 36f4e67e857e71ee6760e2310aea5fd44d4edd63. This qualification and its addition diff are subsequent additive records; they do not retroactively change that inventory. The later publication receipt separately checks all 24 current files.
