@@ -1,0 +1,220 @@
+diff --git a/README.md b/README.md
+index c6f725af..a5d73cb9 100644
+--- a/README.md
++++ b/README.md
+@@ -56,0 +57 @@ could change each assessment.
++- [CIA decision accounts and Mineta follow-up records (October 27)](investigation/broader-evidence/cia-mineta-record-followup-2026-10-27/REPORT.md)
+diff --git a/investigation/broader-evidence/cia-mineta-record-followup-2026-10-27/CHECKLIST.md b/investigation/broader-evidence/cia-mineta-record-followup-2026-10-27/CHECKLIST.md
+new file mode 100644
+index 00000000..015884ca
+--- /dev/null
++++ b/investigation/broader-evidence/cia-mineta-record-followup-2026-10-27/CHECKLIST.md
+@@ -0,0 +1,23 @@
++# Publication checklist
++
++This update turns the October 27 source reviews into a public, source-linked summary. It is an addendum to the existing CIA and FAA/Mineta studies, not a replacement for their source records or acceptance criteria.
++
++| Reviewed point | Outcome and location | Source verification | Still unresolved |
++| --- | --- | --- | --- |
++| Scheuer's allegation about the March 25, 1999 PDB | Included with attribution and a clear limit: it is one interview account, not an independently established motive. `REPORT.md`, section 1. | NARA Document 6: all 11 text pages read; selected native pages include page 7. Hash and URL in `SOURCES.json`. | Author's memorandum, PDB drafts/final, instruction, recipients, and receipt records. |
++| Scheuer's UAE-call chronology and “less than 30 hours” statement | Included; the duration is not misdescribed as a call-to-departure delay. `REPORT.md`, section 2. | NARA Documents 7 and 8: all 16 text pages read; selected native pages include the relevant pages. Hashes and URLs in `SOURCES.json`. | Actual call record, clearance, decision chronology, diplomatic cable, source movement, and objection response. |
++| Clarke's contrary UAE-call account and page 9 correction | Included; the native page says agreement to call off the attack, not agreement to make the UAE call. `REPORT.md`, section 2. | NARA Documents 2 and 3: all 42 text pages read; native pages 9 and 10 of Document 3 viewed. Hashes and URLs in `SOURCES.json`. | Contemporaneous decision and clearance records; the MFRs are not verbatim transcripts. |
++| Clarke's account that he was not told Mihdhar and Hazmi were in the United States | Included as a bounded nonreceipt account, without inferring that nobody at FBI knew or identifying a knowing hold. `REPORT.md`, section 3. | NARA Document 3, especially page 16; fully text-read and selected native images reviewed. | Original visa draft/hold, cable versions, actual recipients, watchlist actions, and later oversight search/production records. |
++| CIA draft's systemic watchlisting and tactical/strategic critique | Included with its partial-reading and source-dependence limits. Its August 7 bulletin listing and post-attack effects are separated from recipient knowledge and prior intent. `REPORT.md`, section 4. | 21 of 80 pages fully text-read; six native pages viewed. Exact source and hash in `SOURCES.json`. | Remaining 59 pages, CIA system original, authorship/distribution, underlying event records, and recipient/action evidence. |
++| Mineta's January 8, 2004 follow-up memorandum | Included as evidence of a follow-up meeting, not as a timing resolution or retraction. Calendar mismatch is reported only as a literal consistency issue. `REPORT.md`, section 5. | NARA catalog item 2610327: all three pages text-read and viewed as native images. Hash and URLs in `SOURCES.json`. | Meeting notes, question outline, PEOC/call records, contemporaneous movement records, and independent clock evidence. |
++| Prior public CIA and Mineta studies | Cross-linked and left unchanged; this supplement does not duplicate their findings or claim to close their open records. | Compared against the immediately preceding public base `7c9530c5`. | Prior reports retain their own methods and open questions. |
++| WTC 7 collapse assessment | Explicitly stated unchanged; these records provide no physical mechanism evidence about WTC 7. | Scope comparison with the public repository's WTC 7 charter and synthesis. | All WTC 7 causal-chain tasks remain governed by their existing reports. |
++| Raw/private material and legal-case content | Not copied. The publication consists of a report, a source index, a checklist, a text diff, and a one-line navigation update. | Exact changed paths and diff reviewed before commit. | None for this payload; this does not certify unrelated local records for publication. |
++
++## Change and verification record
++
++- Text changes are preserved in [`TEXT-CHANGES.diff`](TEXT-CHANGES.diff), comparing the new report and root navigation edit with their immediately preceding public versions. The new checklist and source index have no earlier public version.
++- The existing CIA lead report and Mineta/FAA chronology report are unchanged.
++- The deliverable is Markdown and JSON. PDF layout verification does not apply.
++- Verification commands: `python3 -m json.tool SOURCES.json` and `git diff --check`.
++- A passing hash or JSON check preserves file identity and syntax; it does not authenticate a witness's recollection or prove a historical claim.
+diff --git a/investigation/broader-evidence/cia-mineta-record-followup-2026-10-27/REPORT.md b/investigation/broader-evidence/cia-mineta-record-followup-2026-10-27/REPORT.md
+new file mode 100644
+index 00000000..19e24b37
+--- /dev/null
++++ b/investigation/broader-evidence/cia-mineta-record-followup-2026-10-27/REPORT.md
+@@ -0,0 +1,61 @@
++# October 27 follow-up records: CIA decision accounts and the Mineta chronology
++
++October 27, 2026. This supplement records newly reviewed public interview memoranda and a CIA history draft. It adds documentary leads to the broader September 11 investigation; it does not establish a coordinated conspiracy, prior knowledge of the attacks, or a cause of the World Trade Center 7 collapse.
++
++The most useful new items are specific and testable: Mike Scheuer's allegation that a 1999 presidential briefing omitted material to hide an FBI-to-CIA delay; competing accounts by Scheuer and Richard Clarke about when a warning call to the United Arab Emirates occurred relative to a decision not to strike; Clarke's account that he was not told two named suspects were in the United States; and an agency draft's description of watchlisting as a systemic failure. The newly acquired Norman Mineta follow-up memorandum documents a later meeting but supplies no independent timing anchor for the disputed White House exchange.
++
++## Sources and reading scope
++
++Six released NARA memoranda were reviewed: four interviews of Scheuer and Clarke, a Scheuer briefing memorandum, and a January 2004 Mineta follow-up. Their 72 pages of extracted text were read; 31 selected native page images were also viewed. These memoranda summarize interviews. They are not verbatim transcripts, and an interviewee's recollection remains attributed testimony even where the memorandum says the witness was under oath. The source links, SHA-256 hashes, page counts, and exact reading coverage are recorded in [SOURCES.json](SOURCES.json).
++
++The separate CIA *DCI Report: The Rise of UBL and Al-Qa'ida and the Intelligence Community Response* is an 80-page March 19, 2004 draft reproduced by the National Security Archive. Twenty-one pages were fully text-read and six selected pages were viewed as images. The other 59 pages were not fully read. This reproduction has not been byte-authenticated against a CIA system original; its authorship, distribution, and dependence on earlier agency reviews were not independently established.
++
++## Findings
++
++### 1. Scheuer alleges a specific 1999 briefing omission
++
++In the [December 11, 2003 NARA interview memorandum](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-6-release-508.pdf#page=7), Scheuer says material concerning chemical-weapons threats was excluded from a March 25, 1999 Presidential Daily Brief on the DCI's direction because it would reveal a two-year FBI-to-CIA information delay. He identifies an underlying memorandum by the product's author, who allegedly received the instruction. The interview record makes this a concrete allegation with identifiable records that could test it. The author memorandum, relevant draft and final brief, and their circulation and receipt records were not acquired in this review. The account does not independently establish the omission's reason or the DCI's intent.
++
++The allegation concerns one earlier information-control decision. No record in this review connects it to the January 2000 Mihdhar/Hazmi handling, the 9/11 attacks, or a common plan. It is not evidence that no chemical-weapons or terrorism analysis existed: the question is whether particular material was omitted from a particular briefing, for the reason Scheuer attributes.
++
++### 2. The UAE warning account remains disputed
++
++Scheuer's [January 6, 2004 NARA memorandum](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-7-release-508.pdf#page=9) places Richard Clarke's call to UAE officials before a decision whether to strike a camp. Scheuer says a Clarke memorandum indicated CIA agreement to the contact, disputes that agreement, and recounts that an official denied approving it. His [March 11 briefing memorandum](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-8-release-508.pdf#page=4) adds that he was uncertain how serious senior strike discussions had been and had been excluded from some deliberations. He describes the camp as a continuing possible target opportunity, not necessarily an immediately executable strike.
++
++The same March 11 memorandum says “less than 30 hours” for the camp's dismantling. That is the reported duration of dismantling. It does not measure the interval between the March 7 call and a later sighting or establish that the camp departed immediately after the call. Scheuer also allows an innocent explanation for dismantling and acknowledges that his causal inference could be wrong.
++
++Clarke's [January 12, 2004 NARA memorandum](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-3-release-508.pdf#page=9) supplies important contrary testimony: he recalls making the UAE call after the U.S. government had decided not to strike. Native page 9 corrects a misleading implication in the text extraction: Clarke and Tenet agreed to call off the attack; the sentence does not say they agreed to make the UAE call. Clarke says on page 10 that he does not remember whether the call was coordinated with CIA. This neither proves CIA approval nor proves that approval was absent.
++
++The Commission's [published notes to Chapter 4](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=38) already cite the March 7 NSC memorandum, Scheuer's interview, other interviews, and March 29 CIA talking points that describe the UAE as being tipped off while a source was moved. That weighs against saying the controversy was wholly concealed from the public record. It does not show that the Commission fully resolved the authorization, timing, collection-risk, or motive questions. The cited records overlap in their source lineages and are not independent contemporaneous proof of clearance.
++
++The next discriminating records are the March 7 call memorandum and any version history; the dated strike decision and clearance trail; the diplomatic cable and its recipients; the movement and collection records for the relevant source; and the response to Scheuer's objection. Routine camp movement, uncertain target location, operational and collateral-risk concerns, and the distinction between a future opportunity and an immediate strike remain alternative explanations to test.
++
++### 3. Clarke reports that he was not told Mihdhar and Hazmi were in the United States
++
++In the [January 12 NARA memorandum](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-3-release-508.pdf#page=16), Clarke says he was not informed that Khalid al-Mihdhar and Nawaf al-Hazmi were in the United States. He recounts asking Watson, Tenet, and Black after the attacks why he had not known; he attributes to them an explanation involving an analyst's failure to put the men on a watchlist. These are recollections of later conversations, without the underlying notes or independent confirmation in this review.
++
++This is a specific senior recipient's nonreceipt account. It does not establish that no FBI employee knew other information, identify who placed or maintained a hold, verify whether visa information reached any FBI recipient, or explain the full oversight-production history. A single analyst's error and broader systemic weaknesses could coexist. The 2004 CIA draft's systemic characterization does not prove that Clarke's reported explanation was knowingly false; the draft's date also does not establish what its authors or the interview participants knew earlier.
++
++The January 2000 draft, hold annotation, cable versions, recipient records, watchlist nomination and review records, and the later search-and-production trail remain the records most capable of separating mistaken handoff, incomplete escalation, systemic process failure, and knowing withholding. The existing [CIA lead verification](../cia-lead-verification-2026-10-26/REPORT.md) covers the overlapping draft, hold, and claimed-delivery questions; this supplement adds Clarke's account without duplicating that master.
++
++### 4. The CIA draft acknowledges both systemic failure and prior warning activity
++
++The [March 2004 CIA draft reproduction](https://nsarchive.gwu.edu/sites/default/files/documents/qx7xqj-swjpt/2004-03-19-dci-report-the-rise-of-ubl-and-al.pdf#page=57) describes the watchlisting failure as not attributable to a single point and says a new system was needed. It also describes analysts as absorbed by tactical work and identifies a need for better strategic balance. Those statements strengthen the reason to investigate institutional process rather than stopping at one analyst. They are statements in a later CIA draft, not native event logs; they do not name the January 2000 hold author or establish an actual FBI receipt.
++
++The same partially reviewed draft lists an August 7, 2001 intelligence bulletin about Bin Ladin's desire to strike in the United States. The listing is relevant to absolute claims that no domestic threat possibility was recognized, but it does not show who received or read the bulletin, what specific plot details they knew, or whether it supplied actionable foreknowledge. On a different page, the draft describes post-attack changes in authorities, resources, and policy. Such effects can identify questions about institutional incentives; benefits after an attack do not establish prior intent or participation. The draft also praises intelligence and counterterrorism efforts. Its admissions, warnings, and favorable self-description must be read together.
++
++### 5. The Mineta follow-up is not a timing resolution
++
++NARA's [January 8, 2004 Mineta memorandum (catalog item 2610327)](https://catalog.archives.gov/id/2610327) states that the meeting followed up on Mineta's May 23, 2003 testimony. It says the answers were summarized from meeting notes, that the meeting was not recorded, and that no transcript was made. The three-page memorandum contains no account of the disputed PEOC approach-distance exchange and no calibrated arrival time.
++
++This is evidence that a follow-up meeting occurred, but not that staff adequately examined the timing discrepancy. Its silence on that exchange neither retracts Mineta's public testimony nor confirms it. The memorandum also pairs weekdays with September 15–17, 2001 in a way that conflicts with the Gregorian calendar. The literal mismatch is real; its author and cause are unknown. It is not a clock calibration, proof that a timestamp was altered, or evidence of intent.
++
++The [existing Mineta/FAA chronology review](../outstanding-records-verification-2026-10-26/REPORT.md) preserves the full hearing, competing accounts, and limits. The next useful records are the actual meeting notes and question outline, PEOC access/call records, contemporaneous movement records, and any independently calibrated clock or channel data. No recording should be described as destroyed: the memorandum says one was not made.
++
++## What these records do and do not change
++
++These public records add specific allegations and recollections that can be tested against originals. They also provide material counterevidence and source limitations: Clarke's contrary call sequence, uncertainty about the seriousness and timing of decisions, a published Commission discussion of the UAE controversy, the Mineta memorandum's narrow scope, and an incomplete reading of the DCI draft. Missing originals remain unacquired, not proven withheld, lost, or destroyed.
++
++The records justify targeted document searches. They do not establish a 9/11 conspiracy, a knowing decision to facilitate the attacks, or a shared intent across the 1999 PDB omission, the UAE call, the 2000 watchlisting episode, and later oversight. They provide no evidence about WTC 7's physical collapse mechanism. No causal ranking or probability is inferred from these records.
++
++The most useful next tests are the identified contemporaneous records: the PDB author's instruction and the brief's versions and receipt trail; the UAE call, strike-clearance, cable, and source-movement chronology; and the original visa draft, hold, transmission, and recipient records. Each could strengthen, weaken, or redirect the respective hypothesis. The public report links these sources rather than copying raw PDFs or private investigative ledgers.
+diff --git a/investigation/broader-evidence/cia-mineta-record-followup-2026-10-27/SOURCES.json b/investigation/broader-evidence/cia-mineta-record-followup-2026-10-27/SOURCES.json
+new file mode 100644
+index 00000000..eb6b727c
+--- /dev/null
++++ b/investigation/broader-evidence/cia-mineta-record-followup-2026-10-27/SOURCES.json
+@@ -0,0 +1,112 @@
++{
++  "title": "October 27 follow-up records: CIA decision accounts and the Mineta chronology",
++  "date": "2026-10-27",
++  "records": [
++    {
++      "id": "NARA-2026-201-2",
++      "title": "Richard A. Clarke interview memorandum",
++      "date": "2003-12-18",
++      "source_url": "https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-2-release-508.pdf",
++      "pages": 24,
++      "bytes": 2786674,
++      "sha256": "de4285391700aa43b9f695ec4b03cfdd5238700676c1794d4a4a77ab95292b25",
++      "text_read": "24/24 pages",
++      "native_pages_viewed": [1, 4, 11, 15, 16, 17],
++      "notes": "Interview memorandum, not a verbatim transcript."
++    },
++    {
++      "id": "NARA-2026-201-3",
++      "title": "Richard A. Clarke interview memorandum",
++      "date": "2004-01-12",
++      "source_url": "https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-3-release-508.pdf",
++      "pages": 18,
++      "bytes": 2079578,
++      "sha256": "ea1bdf7ffd2fc56cff583e9f7dea5e81fc6fdcbf468f62f1f49b20946ce9643e",
++      "text_read": "18/18 pages",
++      "native_pages_viewed": [1, 2, 9, 10, 16, 17],
++      "notes": "Interview memorandum, not a verbatim transcript. Native page 9 was checked because the text extraction omitted the sentence ending."
++    },
++    {
++      "id": "NARA-2026-201-6",
++      "title": "Mike Scheuer interview memorandum",
++      "date": "2003-12-11",
++      "source_url": "https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-6-release-508.pdf",
++      "pages": 11,
++      "bytes": 1321565,
++      "sha256": "32724533620cb82090b563bf86794f7cdca05b5f025fa6477a57a4f65016b7bc",
++      "text_read": "11/11 pages",
++      "native_pages_viewed": [1, 3, 7, 8, 10, 11],
++      "notes": "The memorandum says the witness was under oath; it is not a verbatim transcript."
++    },
++    {
++      "id": "NARA-2026-201-7",
++      "title": "Mike Scheuer interview memorandum",
++      "date": "2004-01-06",
++      "source_url": "https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-7-release-508.pdf",
++      "pages": 12,
++      "bytes": 1057948,
++      "sha256": "82739adb50ed874b803f0c76f7211287894eebe6c45b12b13e24d82acb4c8886",
++      "text_read": "12/12 pages",
++      "native_pages_viewed": [1, 4, 5, 8, 9, 11],
++      "notes": "The memorandum says the witness was reminded of the oath from his first interview; it is not a verbatim transcript."
++    },
++    {
++      "id": "NARA-2026-201-8",
++      "title": "Mike Scheuer briefing memorandum",
++      "date": "2004-03-11",
++      "source_url": "https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-8-release-508.pdf",
++      "pages": 4,
++      "bytes": 286629,
++      "sha256": "424234e39a18b4c918388291020acf75dd36ddea3553dbc314cfdad9dd2e8688",
++      "text_read": "4/4 pages",
++      "native_pages_viewed": [1, 2, 3, 4],
++      "notes": "Briefing memorandum, not a verbatim transcript."
++    },
++    {
++      "id": "NARA-NAID-2610327",
++      "title": "Norman Mineta follow-up interview memorandum",
++      "date": "2004-01-08",
++      "catalog_url": "https://catalog.archives.gov/id/2610327",
++      "source_url": "https://catalog.archives.gov/medialive/27/6103/2610327/content/arcmedia/9-11/MFR/t-0148-911MFR-00732.pdf",
++      "pages": 3,
++      "bytes": 588820,
++      "sha256": "3cdbf9d1ed6da85f880b7ff71375d856b3e6c525275d6192ec009d5cb81b36f3",
++      "text_read": "3/3 pages",
++      "native_pages_viewed": [1, 2, 3],
++      "notes": "The memorandum says the meeting was not recorded and no transcript was made; its answers were summarized from meeting notes."
++    },
++    {
++      "id": "CIA-DCI-DRAFT-2004-03-19",
++      "title": "DCI Report: The Rise of UBL and Al-Qa'ida and the Intelligence Community Response (Draft)",
++      "date": "2004-03-19",
++      "archive_record_url": "https://nsarchive.gwu.edu/document/24302-dci-report-rise-ubl-and-al-qa-ida-and-intelligence-community-response-draft-central",
++      "source_url": "https://nsarchive.gwu.edu/sites/default/files/documents/qx7xqj-swjpt/2004-03-19-dci-report-the-rise-of-ubl-and-al.pdf",
++      "pages": 80,
++      "bytes": 4440958,
++      "sha256": "1eb996b45a53105e390e8f4b5e03e74425f9dba68840b5c0e0648c33cc17ffae",
++      "text_read": "21/80 pages fully read",
++      "native_pages_viewed": [3, 5, 46, 47, 57, 74],
++      "notes": "National Security Archive reproduction of a CIA draft. The other 59 pages were not fully read. The source bytes were not authenticated against a CIA system original, and author/distribution metadata was not inspected."
++    },
++    {
++      "id": "9-11-COMMISSION-NOTES-161-164",
++      "title": "The 9/11 Commission Report, Notes to Chapter 4",
++      "source_url": "https://www.9-11commission.gov/report/911Report_Notes.pdf",
++      "locator": "Notes 161-164; printed page 486, physical PDF page 38",
++      "notes": "Published Commission notes cite the March 7 NSC memorandum, interviews, and March 29 CIA talking points. They document that the issue appeared in the published notes; they do not resolve authorization or motive."
++    }
++  ],
++  "reading_totals": {
++    "interview_memorandum_pages_text_read": 72,
++    "selected_interview_memorandum_native_pages_viewed": 31,
++    "dci_draft_pages_fully_text_read": 21,
++    "dci_draft_pages_total": 80,
++    "dci_draft_native_pages_viewed": 6
++  },
++  "distribution": {
++    "destination": "AveLyra/911-conspiracy-investigation",
++    "raw_source_pdfs_copied": false,
++    "private_investigative_ledger_copied": false,
++    "legal_case_records_or_strategy_copied": false
++  }
++}

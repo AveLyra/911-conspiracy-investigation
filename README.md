@@ -54,6 +54,7 @@ could change each assessment.
 - [What remains incomplete](investigation/wtc7/completion-audit-2026-09-24/report.md)
 - [Sherlock feedback technical requirements and coverage review](investigation/wtc7/feedback-technical-record-2026-10-09/README.md)
 - [FBI van laboratory-release study](investigation/urban-moving-systems/fbi-van-lab-release-2026-10-06/README.md)
+- [CIA decision accounts and Mineta follow-up records (October 27)](investigation/broader-evidence/cia-mineta-record-followup-2026-10-27/REPORT.md)
 - [October 10 research preservation and source manifest](publication/preservation-2026-10-10/README.md)
 - [Feedback digest coverage addendum](investigation/wtc7/feedback-digest-coverage-2026-10-09/README.md)
 
