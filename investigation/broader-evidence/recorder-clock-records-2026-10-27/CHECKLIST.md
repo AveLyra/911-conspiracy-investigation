@@ -1,0 +1,14 @@
+# Revision and request accountability
+
+| Requirement | Actual outcome | Remaining issue |
+| --- | --- | --- |
+| Read existing technical/audit work before duplication | Newer raw/frame/page/readout study receipts and independent methods integration inspected | No decoder/page test rerun or claim that all technical validation is complete. |
+| Obtain underlying operational records | Five-page production-letter/inventory representation and complete CDC-hosted scanned historical volume acquired | Native agency production, actual RAPS/audio/radar payloads and Time Correlation Report remain unacquired. |
+| Perform feasible reproducible test | Same six frozen FAA event cues compared; five conditional agreements, one invalid seconds field; 37 typed rows counted | Manual source transcription and candidate joins, not independent historical timing or event identity. |
+| Preserve conflicts and alternatives | Book 8:43:81 versus FAA1243:51; other five agreements; older status cells versus later cover assertion; OCR16/36 distinction | No preferred cause selected, silent repair, carried seconds or inference of intent. |
+| Exact sources and reading scope | SOURCES, anchors and report page locators; five reader pages and eleven book pages inspected | Additional rendered pages and machine navigation are not full review. |
+| Source/record quantities | 37 typed rows,35complete,2other statuses; source bytes/hashes retained | Rows are not independent evidence, files, current availability or verified recipient possession. |
+| Revision diff and original preservation | DIFFS additions and unchanged predecessor status; frozen input/code hashes checked | Previous reports and sources are not overwritten; PDF inspection separate from text diff. |
+| Privacy and public routing | Reviewed notes/pins/code/results only; AveLyra metadata/account/SSH and remote verification after execution | Raw image/PDF/contact/signature/header/token payload excluded; prepared files are not a verified push. |
+| Periodic Overview updates | Exact handoff/delivery receipt after verified publication | Tool acceptance does not establish downstream integration or scientific acceptance. |
+| Full goal | Five tracks retained; original clock/readout/materials/custody/disposition inputs remain explicit | No completion percentage or full-goal completion claimed. |

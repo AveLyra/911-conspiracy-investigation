@@ -1,0 +1,171 @@
+{
+  "source_checks": [
+    {
+      "source": "C01",
+      "sha256": "4fd344667cacfd9b0c3bbfcec4282181ce209d3c132159a2bbca0e343825673d",
+      "pages": 144
+    },
+    {
+      "source": "FAA-S04",
+      "sha256": "6c304d1a27a2ae34951e2883182a3f1fc2ec682258061e9de6512fc79aa19d99",
+      "pages": 5
+    },
+    {
+      "source": "FAA-S05",
+      "sha256": "1a6252be9720f383377310b07e876e1e95173b198ce9b5a1a5cb21e6e581f2e0",
+      "pages": 13
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "A1",
+      "event": "Check-in",
+      "book_label": "8:40:13",
+      "valid_hh_mm_ss": true,
+      "december": {
+        "time": "1240:13",
+        "physical_page": 2,
+        "derived_start_line": 19,
+        "derived_end_line": 19
+      },
+      "may": {
+        "time": "1240:13",
+        "physical_page": 2,
+        "derived_start_line": 11,
+        "derived_end_line": 11
+      },
+      "conditional_book_plus_4h_minus_december_seconds": 0,
+      "conditional_book_plus_4h_minus_may_seconds": 0
+    },
+    {
+      "id": "A2",
+      "event": "Squawk instruction",
+      "book_label": "8:40:15",
+      "valid_hh_mm_ss": true,
+      "december": {
+        "time": "1240:15",
+        "physical_page": 2,
+        "derived_start_line": 22,
+        "derived_end_line": 23
+      },
+      "may": {
+        "time": "1240:15",
+        "physical_page": 2,
+        "derived_start_line": 14,
+        "derived_end_line": 15
+      },
+      "conditional_book_plus_4h_minus_december_seconds": 0,
+      "conditional_book_plus_4h_minus_may_seconds": 0
+    },
+    {
+      "id": "A3",
+      "event": "Climb instruction",
+      "book_label": "8:43:81",
+      "valid_hh_mm_ss": false,
+      "december": {
+        "time": "1243:51",
+        "physical_page": 2,
+        "derived_start_line": 30,
+        "derived_end_line": 31
+      },
+      "may": {
+        "time": "1243:51",
+        "physical_page": 4,
+        "derived_start_line": 12,
+        "derived_end_line": 13
+      },
+      "conditional_book_plus_4h_minus_december_seconds": null,
+      "conditional_book_plus_4h_minus_may_seconds": null
+    },
+    {
+      "id": "A4",
+      "event": "Climb readback",
+      "book_label": "8:43:55",
+      "valid_hh_mm_ss": true,
+      "december": {
+        "time": "1243:55",
+        "physical_page": 2,
+        "derived_start_line": 34,
+        "derived_end_line": 34
+      },
+      "may": {
+        "time": "1243:55",
+        "physical_page": 4,
+        "derived_start_line": 16,
+        "derived_end_line": 16
+      },
+      "conditional_book_plus_4h_minus_december_seconds": 0,
+      "conditional_book_plus_4h_minus_may_seconds": 0
+    },
+    {
+      "id": "A5",
+      "event": "Right-vector instruction",
+      "book_label": "8:47:16",
+      "valid_hh_mm_ss": true,
+      "december": {
+        "time": "1247:16",
+        "physical_page": 2,
+        "derived_start_line": 39,
+        "derived_end_line": 40
+      },
+      "may": {
+        "time": "1247:16",
+        "physical_page": 4,
+        "derived_start_line": 21,
+        "derived_end_line": 22
+      },
+      "conditional_book_plus_4h_minus_december_seconds": 0,
+      "conditional_book_plus_4h_minus_may_seconds": 0
+    },
+    {
+      "id": "A6",
+      "event": "Ten-right readback",
+      "book_label": "8:47:20",
+      "valid_hh_mm_ss": true,
+      "december": {
+        "time": "1247:20",
+        "physical_page": 2,
+        "derived_start_line": 43,
+        "derived_end_line": 43
+      },
+      "may": {
+        "time": "1247:20",
+        "physical_page": 4,
+        "derived_start_line": 25,
+        "derived_end_line": 25
+      },
+      "conditional_book_plus_4h_minus_december_seconds": 0,
+      "conditional_book_plus_4h_minus_may_seconds": 0
+    }
+  ],
+  "valid_selected_labels": 5,
+  "invalid_selected_labels": 1,
+  "product_rows": 37,
+  "product_status_counts": {
+    "complete": 35,
+    "approved by FBI, not yet released": 1,
+    "awaiting FBI approval": 1
+  },
+  "product_section_counts": {
+    "UA93": 9,
+    "AA77": 7,
+    "AA11": 3,
+    "UA175": 5,
+    "Miscellaneous": 4,
+    "Miscellaneous continued": 9
+  },
+  "controls_passed": 3,
+  "source_hashes_unchanged": {
+    "C01": true,
+    "FAA-S04": true,
+    "FAA-S05": true
+  },
+  "assumptions": [
+    "Same candidate events by frozen words and sequence, not native IDs",
+    "Four-hour addition is conditional label arithmetic, not clock calibration",
+    "One typed row is not a count of files, CD objects or independent evidence",
+    "Human image transcription; original images retained; OCR not controlling"
+  ],
+  "historical_clock_calibrated": false,
+  "independent_recorder_measurement": false
+}
