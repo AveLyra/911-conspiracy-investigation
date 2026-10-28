@@ -1,0 +1,5 @@
+# Method-scope clarification
+
+The README and checklist use the broad phrase about no new indexed historical-source search. That exclusion concerns **new Internet historical-source searches**. We did use **local keyword locators on the already held, hash-checked pypdf text** to select typed/context pages. The five locator patterns concerned Thales,30days,380,conference bridge and Crisis Management Center. Their invoice false positives were inspected and excluded from retention evidence. The exact local locator result is preserved in the native unit.
+
+This clarification records what was actually done; it does not change the thirteen full-page reading scope, source pins, manual observations, uncertainties or missing-original requirements. The earlier public README, checklist and commit remain preserved unchanged. This is a correction to our method description, not a discrepancy in historical evidence, a new source acquisition or a completed FAA disposition.
