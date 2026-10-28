@@ -1,5 +1,7 @@
 # Six-lead follow-up: requests dispatched, research tests still open
 
+Later scoped work: [execution follow-through](../six-lead-execution-2026-10-28/README.md). This file preserves the earlier checkpoint.
+
 October 27, 2026 checkpoint. Research status and next-test specification; no new physical or conspiracy conclusion.
 
 The NTSB recorder and SEC trading-support requests have now been dispatched.
