@@ -1,0 +1,983 @@
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..11a527a3
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,18 @@
++# Scope and revision checklist
++
++- [x] FAA PD01–PD04 inspected first; failed/indexed routes not treated as missing-record proof.
++- [x] Previously unperformed UA175 fields and cited note chain selected; no repeat of completed UA93 accounting.
++- [x] Seven new displayed source entities preserved and read; image2/7 source dependence identified.
++- [x] Letter/email now held as qualified third-party representations; native and agency-release authentication still open.
++- [x] Three/two/one descriptions and75/31 versus18/24 fields preserved together; no preferred field/cause.
++- [x] Row6 digit uncertainty and untranscribed fields retained; no forced267, units or total conversation count.
++- [x] Interview1A/SF97 and actual UAL/custody/schema retrieval targets recorded, including contrary outcomes.
++- [x] Full relevant report page images/notes inspected; AI synopsis not accepted as a historical source.
++- [x] Reproducible supplied-input comparison with negative controls; no claim that code authenticates a call.
++- [x] Earlier sources/registers and original requirements remain unchanged; exact addition diffs supplied.
++- [x] Public payload excludes source images, signatures, personal/contact/card/network data, page HTML and temporary queries. Only reviewed research paraphrases, technical fields and source locators included.
++- [ ] Obtain original native/agency/control files and complete TEL01–TEL04. This bounded unit does not do so.
++- [ ] Close FAA, recorder/materials and steel criteria. No such completion claimed.
++- [ ] Public commit/push/ref and file verification — record actual outcome separately.
++
++The underlying scans carry redaction/security markings. This report does not infer declassification or publish the raw scans. Public notes distinguish the official Commission's already-public account from new mirrored source representations, without exposing masked identities or private case data. Review/verification here is not legal or historical certification.
+
+diff --git a/CLAIM-LOCATORS.json b/CLAIM-LOCATORS.json
+new file mode 100644
+index 00000000..9e50fc53
+--- /dev/null
++++ b/CLAIM-LOCATORS.json
+@@ -0,0 +1,47 @@
++[
++  {
++    "id": "U175-01",
++    "source": "SOURCE-PINS.json",
++    "locator": "new reader1–7; see per-page hashes"
++  },
++  {
++    "id": "U175-02",
++    "source": "new reader6",
++    "locator": "UASSI1-00032888, first two body paragraphs and final determination paragraph; approximate native rectangle[180,385,780,780]"
++  },
++  {
++    "id": "U175-02",
++    "source": "T01",
++    "locator": "physical90 bottom note166 continued at physical91 top; body physical21"
++  },
++  {
++    "id": "U175-03",
++    "source": "old reader26",
++    "locator": "data rows2/5, time and rightmost duration columns; bands in ROW-FIELDS.json"
++  },
++  {
++    "id": "U175-04",
++    "source": "old reader26 / new reader7",
++    "locator": "reader26 row6; reader7 left-hand October30 email body, UASSI1-00032889"
++  },
++  {
++    "id": "U175-05",
++    "source": "new reader3/5",
++    "locator": "reader3 reference line SanFranciscoSF97; reader5 final paragraph above footer"
++  },
++  {
++    "id": "U175-06",
++    "source": "new reader3–4 / T01",
++    "locator": "reader3 final body paragraph, reader4 middle06:00 paragraph; T01 physical21 male-attendant account"
++  },
++  {
++    "id": "U175-07",
++    "source": "new reader6 / T01",
++    "locator": "reader6 third body paragraph; T01 physical91 note179"
++  },
++  {
++    "id": "U175-08",
++    "source": "public reader / new reader7",
++    "locator": "AI-enhanced description above viewer; reader7 distinct left/right email columns"
++  }
++]
+
+diff --git a/COMPARISON-INPUTS.json b/COMPARISON-INPUTS.json
+new file mode 100644
+index 00000000..bbad88d2
+--- /dev/null
++++ b/COMPARISON-INPUTS.json
+@@ -0,0 +1,55 @@
++{
++  "letter": {
++    "source": "new reader6, UASSI1-00032888",
++    "reported_attempts": [
++      {
++        "minute": "08:52",
++        "duration_seconds": 75,
++        "connection_report": "made connection"
++      },
++      {
++        "minute": "08:56",
++        "duration_seconds": 31,
++        "connection_report": "made connection"
++      },
++      {
++        "minute": "08:57",
++        "duration_seconds": 267,
++        "connection_report": "did not make connection"
++      }
++    ],
++    "ual_best_determination_conversations": 1,
++    "source_relationship": "Third-party image of a redacted July31,2002 letter; attributed to Plantz by T01 note166, author signature obscured in image. Not authenticated native or verified release chain."
++  },
++  "email": {
++    "source": "new reader7, UASSI1-00032889; duplicated upside down in reader2",
++    "date_label": "October30,2001",
++    "ua175_start_labels": [
++      "08:52:01",
++      "08:56:19",
++      "08:57:28"
++    ],
++    "reported_last_connection": false,
++    "ua93_separately_reported_rows": 5,
++    "clock_label": "All calls are eastern time; clock calibration not held"
++  },
++  "staff_note166": {
++    "source": "T01 physical90–91 / note166",
++    "reported_completed_calls": 2,
++    "starts": [
++      "08:52:01",
++      "08:56:19"
++    ],
++    "durations_seconds": [
++      75,
++      31
++    ],
++    "reported_ual_received_calls": 1
++  },
++  "joins": {
++    "clock_alignment_authenticated": false,
++    "network_key_join_authenticated": false,
++    "independent_measurements": false,
++    "row6_exact_connect_accepted": false
++  }
++}
+
+diff --git a/OBSERVATIONS.json b/OBSERVATIONS.json
+new file mode 100644
+index 00000000..ab41c6cc
+--- /dev/null
++++ b/OBSERVATIONS.json
+@@ -0,0 +1,81 @@
++[
++  {
++    "id": "U175-01",
++    "type": "source acquisition/reading",
++    "claim": "Seven public-reader image entities acquired and read: cover1, email2, interview3–5, letter6, email7. Images2/7 represent the same email printout in different orientation/size, not independent witnesses.",
++    "sources": [
++      "new reader1–7"
++    ],
++    "limit": "Not an authenticated agency-native release, native messages or complete original attachments."
++  },
++  {
++    "id": "U175-02",
++    "type": "reported conflicting accounts",
++    "claim": "Letter6 reports three GTE attempts, first two connected and third unconnected; its own inquiry could substantiate one conversation. T01 note166 retains two completed versus one received accounts.",
++    "sources": [
++      "new reader6",
++      "T01 physical90–91 note166"
++    ],
++    "limit": "Attempts, network connection, received call and remembered conversation may differ. Cause and actual count unresolved."
++  },
++  {
++    "id": "U175-03",
++    "type": "field comparison",
++    "claim": "For summary rows2/5, note166 and letter75/31 match printed SCP numbers, while Connect reads18/24.",
++    "sources": [
++      "old reader26 rows2/5",
++      "new reader6",
++      "T01 note166"
++    ],
++    "limit": "Label/time candidate association, not native event/recipient/clock join. No field selected as controlling or universal definition inferred."
++  },
++  {
++    "id": "U175-04",
++    "type": "contrary evidence / reading limit",
++    "claim": "All11 visible Connect entries are positive readings or positive candidate readings. The email and letter call the08:57 attempt unconnected. Its summary row6 reads2?7, not a forced267 or207.",
++    "sources": [
++      "old reader26 rows1–11",
++      "new reader6–7"
++    ],
++    "limit": "No inference that a positive Connect field proves an end-to-end conversation. Exact row6 number and field semantics unresolved."
++  },
++  {
++    "id": "U175-05",
++    "type": "missing-source locator",
++    "claim": "The interview ends by saying its notes were placed in a1A envelope and sent to the file; it identifies San Francisco leadSF97.",
++    "sources": [
++      "new reader3 and5"
++    ],
++    "limit": "Actual notes, completeness, author/version and present custody not acquired; do not identify the redacted interviewee."
++  },
++  {
++    "id": "U175-06",
++    "type": "source-specific wording/time limits",
++    "claim": "Interview3 uses approximately05:30 for an office-arrival/discussion passage before the relayed UA175 report, and interview4 approximately06:00 for a separate reported UA93 contact. T01 and the email use other event/time labels. Interview3 uses her plane; T01 describes a male attendant.",
++    "sources": [
++      "new reader3–4",
++      "T01 physical21"
++    ],
++    "limit": "No stated clock calibration or exact boundary ties the approximate arrival/discussion time to the call. Reported speech/pronouns are not verified caller identity or sex; no advance-knowledge calculation."
++  },
++  {
++    "id": "U175-07",
++    "type": "scope/custody qualification",
++    "claim": "Letter6 reports no recordings or detailed validation logs on the receiving-office side; T01 note179 separately attributes a tie-line no-record/billing account to a July16,2004 UAL report. These do not establish that GTE generated no air-ground records.",
++    "sources": [
++      "new reader6",
++      "T01 physical91 note179"
++    ],
++    "limit": "Underlying system/configuration, preservation/disposition and July16 report are missing. Not a destruction finding."
++  },
++  {
++    "id": "U175-08",
++    "type": "derivative-description caution",
++    "claim": "The reader labels its description AI-enhanced; that description assigns five calls toUA175 and no records toUA93, while the displayed email separates threeUA175 attempts and fiveUA93 call labels.",
++    "sources": [
++      "public reader description",
++      "new reader7"
++    ],
++    "limit": "An error in current generated description is not a historical agency-record anomaly or evidence of alteration."
++  }
++]
+
+diff --git a/OPEN-RECORDS.json b/OPEN-RECORDS.json
+new file mode 100644
+index 00000000..eb065109
+--- /dev/null
++++ b/OPEN-RECORDS.json
+@@ -0,0 +1,34 @@
++{
++  "existing_ids": [
++    "AUD016-A1",
++    "TC05-B105",
++    "TC06-B110",
++    "TEL01",
++    "TEL02",
++    "TEL03",
++    "TEL04"
++  ],
++  "targets": [
++    {
++      "record": "Agency-held letterUASSI1-00032888 and emailUASSI1-00032889, exact native/attachment versions and release/delivery history",
++      "custodians": "EOUSA-EDVA, FBI, NARA Commission Team7/actual archival location",
++      "why": "Authenticate the mirrored entities and complete their source/version chain."
++    },
++    {
++      "record": "Actual GTE *FIX event/switch export, schema, connection/Connect/SCP units and system/aircraft routing definitions; underlying July30,2002 interview/material",
++      "custodians": "Agency-retained GTE returns and UAL source-copy holdings",
++      "why": "Test three attempts/two connections/one conversation and the competing duration fields; preserve contrary outcomes."
++    },
++    {
++      "record": "Original notes and full interview/addenda for San Francisco leadSF97, referenced1A envelope; written controller statement and investigators referenced by the letter",
++      "custodians": "FBI San Francisco/PENTTBOM evidence/source files and retained Commission copies",
++      "why": "Test source, wording, reported times, possibleUA93/UA175 confusion and dependence without unmasking identities."
++    },
++    {
++      "record": "July16,2004 UAL Explanation of SAMC Phone Records for Calls to United WHQ, configuration/retention supports and actual disposition records",
++      "custodians": "NARA Commission, EOUSA/FBI retained source copies, actual UAL holder",
++      "why": "Distinguish no generation, no retained record, conversion, unsearched copy and disposal. A cited assertion alone does not prove any."
++    }
++  ],
++  "status": "Seven image representations now acquired/read; original native/agency/control records and lab/recorder/steel/FAA outcome tests remain unresolved. No new request or outreach."
++}
+
+diff --git a/READER-DESCRIPTION-PIN.json b/READER-DESCRIPTION-PIN.json
+new file mode 100644
+index 00000000..b4b8c3ca
+--- /dev/null
++++ b/READER-DESCRIPTION-PIN.json
+@@ -0,0 +1,8 @@
++{
++  "url": "https://www.scribd.com/document/13499792/T7-B13-Flight-175-Calls-Fdr-Entire-Contents-Starfix-and-RINC",
++  "final_url": "https://www.scribd.com/document/13499792/T7-B13-Flight-175-Calls-Fdr-Entire-Contents-Starfix-and-RINC",
++  "http_status": 200,
++  "bytes": 1366885,
++  "sha256": "b7d1438f5c7096912293bc6dc53293896dc29ce124a3d24908d62532b4f45208",
++  "access_utc": "2026-10-28T13:04:40.801267+00:00"
++}
+
+diff --git a/READING-SCOPE.json b/READING-SCOPE.json
+new file mode 100644
+index 00000000..c3d05fd0
+--- /dev/null
++++ b/READING-SCOPE.json
+@@ -0,0 +1,23 @@
++{
++  "new_images": [
++    1,
++    2,
++    3,
++    4,
++    5,
++    6,
++    7
++  ],
++  "official_T01_physical_images": [
++    21,
++    22,
++    23,
++    90,
++    91
++  ],
++  "old_reader26": "header; all11 time/Connect/Operator rows; SCP onlyrows2/5; other identifying fields not transcribed",
++  "method": "Manual image inspection by one analyst. Existing text extraction navigation only; no new OCR.",
++  "duplicate_source": "new reader2 upside-down email printout and reader7 upright representation; no independent corroboration inferred",
++  "not_read_or_authenticated": "Other T01 pages not newly visually reviewed; native email headers/attachments; official-release/custody chain; carrier switch/schema; actual1A notes and citedJuly16report.",
++  "all_historical_claims_validated": false
++}
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..87b51ddb
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,46 @@
++# UA175: underlying letter and email recovered; call-count and duration-field conflicts preserved
++
++October 28, 2026. Existing AUD016-A1 / TC05-B105 / TC06-B110; TEL01–TEL04. This advances the original-record plan through a previously unread source chain. It does not authenticate the calls or complete the telephone investigation.
++
++## Actual acquisition
++
++The [public Flight175 folder](https://www.scribd.com/document/13499792/T7-B13-Flight-175-Calls-Fdr-Entire-Contents-Starfix-and-RINC) exposes seven page images. All seven entities were preserved unchanged and inspected. Reader6 is a July31,2002 United letter to the EDVA prosecutor, stamped **UASSI1-00032888**. Reader7 is a related email printout, **UASSI1-00032889**, also reproduced upside down in reader2. Reader3–5 is a three-page FBI interview representation; reader1 is a folder cover. These are third-party images of underlying records, not authenticated native emails, agency delivery receipts or a verified complete release. The letter's author signature is masked; the Commission attributes it to Jeff Plantz. No masked identity is reconstructed.
++
++The supported browser retrieved displayed images without login or the gated document-download action. The observed image URLs end in.jpg, but the captured image entities are WebP. That delivery-format observation is not an allegation about alteration. Temporary image-query data, page HTML, raw images, personal/contact/card/network fields and signatures are excluded from this public addition. [Source pins](SOURCE-PINS.json) identify the actual preserved entities and timing limitations.
++
++## U175-02 — three attempts, two reported connections, one substantiated conversation
++
++The letter reports GTE information for attempts at **08:52 /75seconds**, **08:56 /31seconds**, and **08:57 /267seconds**. It says GTE reported connections for the first two and no connection for the third. Its own inquiry could substantiate **one conversation**, while acknowledging the discrepancy remained unresolved. Possible confusion involving Flight93 is offered by that author as a hypothesis, not demonstrated by this review.
++
++The accompanying email supplies **08:52:01,08:56:19,08:57:28**, labels them Eastern, and likewise says the last did not connect. Its separate Flight93 list contains five labels. The two email representations are one source lineage, not two corroborations.
++
++The official [Commission staff report, physical90–91, note166](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=90) itself preserves **two completed calls versus one received communication**. Physical21 describes an approximately two-minute recollection. The report does not conceal this disagreement in its footnote. Attempts, network connection, receipt and conversation are not interchangeable units. Neither the letter nor this review selects a resolved count.
++
++## U175-03 — a concrete duration-field question
++
++The already held [UA175 summary, reader26](https://html.scribdassets.com/5bafzdomdce6sz3/images/26-6b763d149c.jpg) was previously checked only for its header. Its selected fields now read:
++
++| Source row / printed time | Duration Connect | Duration Operator | Scp Duration | Letter / note166 duration |
++|---|---:|---:|---:|---:|
++|2 /08:52:01|18|0|75|75seconds|
++|5 /08:56:19|24|0|31|31seconds|
++
++The reported75/31 agree numerically with the **SCP** column, not the **Connect** column. That is a field-choice/source-mapping lead, not proof that the report used the wrong field. Native definitions, units, export rules and event/recipient joins remain missing. These could concern different stages; incorrect compilation/reading remains possible. No account is selected as controlling and no field is automatically conversation length.
++
++There are **11 visible rows**, not11 independently established people or conversations. All Connect entries have positive supplied readings or positive candidate readings; all11 Operator entries read0. The08:57:28 Connect entry remains **2?7**, with207/267 retained as candidates. It is not filled from the letter's267. Its SCP field was not accepted. A positive field alongside the letter/email's unconnected description warrants the definitions; it does not establish a conversation or fabricated records. [Safe transcriptions](ROW-FIELDS.json).
++
++## U175-05–07 — specific originals still needed
++
++The FBI interview's final paragraph says notes were placed in a **1A envelope** and sent to the file; its first page gives **San Francisco leadSF97**. These are concrete retrieval locators for the actual notes and version/custody chain. The interview includes approximate05:30 and06:00 passages and relayed speech. It does not provide calibrated call times. Its pronoun wording and the report's attendant description are preserved as wording differences, not authenticated caller identity, a clock conversion or advance knowledge.
++
++The letter's receiving-office no-recording/detailed-log account and the report's separately cited **July16,2004 UAL SAMC-to-WHQ telephone explanation** do not establish absence of GTE air-ground records. Generation, receipt, retained copies and disposal remain separate questions. Seek that actual UAL report, source/configuration support, written controller statement,1A notes and agency-held letter/email/native event returns. [Exact targets](OPEN-RECORDS.json). No new request was submitted.
++
++## Source dependence and a current description error
++
++The current reader explicitly labels its synopsis AI-enhanced. That synopsis assigns five calls toUA175 and no records toUA93, contrary to the displayed email's three/five distinction. This is a derivative-description error, not a historical FBI discrepancy. The synopsis was not used as evidence. Likewise, the Commission report cites the letter; the report and letter cannot be counted as independent measurements of the same calls.
++
++## Tests, limits and preserved scope
++
++[Verifier](verify_comparison.py) calculates the selected-field comparisons and row accounting, checks pinned inputs, and uses altered-field and mistaken-positive-means-connected controls. It tests supplied transcriptions and dependence rules, not glyph-reading accuracy, native field meanings or historical calls. No new OCR, clock fit, network decoding or physical test ran. [Results](RESULTS.json), [reading scope](READING-SCOPE.json), [claim locators](CLAIM-LOCATORS.json), [checklist](CHECKLIST.md) and [exact text additions](TEXT-CHANGES.diff).
++
++FAA PD01–PD04 still needs actual correction/receipt, signed action/no-action and case disposition/applicability records. Steel still needs native attribution/custody/preservation decisions. Recorder/materials work remains with its existing technical owner; its active NEADS source review was not duplicated or claimed complete here. All five original-record/testing requirements remain open. Earlier sources, contradictory values, reports and shared registers were not overwritten. Publication is a separate milestone; a verified public copy cannot complete those historical tests.
+
+diff --git a/RESULTS.json b/RESULTS.json
+new file mode 100644
+index 00000000..dbacc2a2
+--- /dev/null
++++ b/RESULTS.json
+@@ -0,0 +1,113 @@
++{
++  "scope": "Safe supplied-field calculations, uncertainty and source-entity checks; not source-reading accuracy, native semantics, caller identity, historical authenticity or completion of TEL01\u2013TEL04.",
++  "checks": [
++    {
++      "check": "eleven consecutive row positions",
++      "passed": true,
++      "kind": "transcription accounting"
++    },
++    {
++      "check": "eleven positive Connect readings/candidates",
++      "passed": true,
++      "kind": "supplied-input calculation"
++    },
++    {
++      "check": "eleven zero Operator readings",
++      "passed": true,
++      "kind": "supplied-input calculation"
++    },
++    {
++      "check": "row6 exact Connect remains unaccepted",
++      "passed": true,
++      "kind": "uncertainty preservation"
++    },
++    {
++      "check": "both note166 numbers match selected SCP numbers",
++      "passed": true,
++      "kind": "field comparison"
++    },
++    {
++      "check": "neither note166 number matches selected Connect number",
++      "passed": true,
++      "kind": "contrary field comparison"
++    },
++    {
++      "check": "altered field does not preserve both matches",
++      "passed": true,
++      "kind": "negative control"
++    },
++    {
++      "check": "three distinct email start labels and last-negative report",
++      "passed": true,
++      "kind": "reported-source accounting"
++    },
++    {
++      "check": "no authenticated network/clock join claimed",
++      "passed": true,
++      "kind": "scope gate"
++    },
++    {
++      "check": "provided original entities match pins",
++      "passed": true,
++      "kind": "byte integrity only"
++    }
++  ],
++  "source_checks": [
++    {
++      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/1-95c31c62bb.jpg",
++      "passed": true
++    },
++    {
++      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/2-6c3ce5c58c.jpg",
++      "passed": true
++    },
++    {
++      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/3-710fedd9a1.jpg",
++      "passed": true
++    },
++    {
++      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/4-3ee7865803.jpg",
++      "passed": true
++    },
++    {
++      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/5-0ecf3dbc3d.jpg",
++      "passed": true
++    },
++    {
++      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/6-ad6cec0f2c.jpg",
++      "passed": true
++    },
++    {
++      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/7-19bf7a70d5.jpg",
++      "passed": true
++    },
++    {
++      "source": "https://html.scribdassets.com/5bafzdomdce6sz3/images/26-6b763d149c.jpg",
++      "passed": true
++    },
++    {
++      "source": "https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf",
++      "passed": true
++    }
++  ],
++  "passed": 10,
++  "failed": 0,
++  "computed": {
++    "row_positions": 11,
++    "positive_connect_readings_or_candidates": 11,
++    "exact_connect_readings": 10,
++    "uncertain_connect_rows": [
++      6
++    ],
++    "zero_operator_readings": 11,
++    "selected_scp_matches": 2,
++    "selected_connect_matches": 0,
++    "reported_letter_attempts": 3,
++    "reported_ual_conversations": 1,
++    "reported_note166_completed_calls": 2,
++    "source_entities_checked": 9
++  },
++  "native_units_established": false,
++  "actual_conversation_count_established": false,
++  "inference_limit": "A naive positive-Connect-means-completed-conversation rule would conflict with the reported negative third attempt; it is not applied. Neither account is thereby authenticated or preferred."
++}
+
+diff --git a/REVISION-STATUS.json b/REVISION-STATUS.json
+new file mode 100644
+index 00000000..91b9d24e
+--- /dev/null
++++ b/REVISION-STATUS.json
+@@ -0,0 +1,28 @@
++{
++  "type": "additive new source/field review, not replacement or source correction",
++  "new_inputs": "seven public reader image entities; all prior sources unchanged",
++  "predecessors": [
++    {
++      "path": "telephone-landscape-review-2026-10-27/REPORT.md",
++      "sha256": "3d7ea4c7536112e494d392f8c21f3cb85a6bc05fc9112410572370cc820307d0",
++      "changed": false
++    },
++    {
++      "path": "telephone-full-table-joins-2026-10-28/publication/README.md",
++      "sha256": "021214bbe918bfbc82f404625b42a51d15246c01400880556001eae73db81e90",
++      "changed": false
++    },
++    {
++      "path": "telephone-native-release-chain-2026-10-27/REPORT.md",
++      "sha256": "573b2fc47ce7b4c3ebb344b02112512bd95d8824f8a56b39cfa34ec361c7803d",
++      "changed": false
++    },
++    {
++      "path": "original-records-work-plan-2026-10-27/WORK-PLAN.md",
++      "sha256": "d23c01a77bcc468f06faabb13b708df8032a6870586ec539c59edc9e0ae3d7cb",
++      "changed": false
++    }
++  ],
++  "pdf_layout_export": "none; PDF page-image source inspection is separate from the text diff",
++  "scope": "all original goal requirements retained; no shared-register integration claimed"
++}
+
+diff --git a/ROW-FIELDS.json b/ROW-FIELDS.json
+new file mode 100644
+index 00000000..0310ff13
+--- /dev/null
++++ b/ROW-FIELDS.json
+@@ -0,0 +1,232 @@
++{
++  "rows": [
++    {
++      "row": 1,
++      "time_label": "08:52:00",
++      "timezone_printed": "ET",
++      "connect": 13,
++      "connect_reading": "13",
++      "connect_candidates": [
++        13
++      ],
++      "operator": 0,
++      "scp": null,
++      "scp_scope": "not transcribed",
++      "source": "Request14 reader26",
++      "row_band_native_pixels": [
++        140,
++        217,
++        1148,
++        236
++      ]
++    },
++    {
++      "row": 2,
++      "time_label": "08:52:01",
++      "timezone_printed": "ET",
++      "connect": 18,
++      "connect_reading": "18",
++      "connect_candidates": [
++        18
++      ],
++      "operator": 0,
++      "scp": 75,
++      "scp_scope": "accepted selected reading",
++      "source": "Request14 reader26",
++      "row_band_native_pixels": [
++        140,
++        245,
++        1148,
++        264
++      ]
++    },
++    {
++      "row": 3,
++      "time_label": "08:52:07",
++      "timezone_printed": "ET",
++      "connect": 29,
++      "connect_reading": "29",
++      "connect_candidates": [
++        29
++      ],
++      "operator": 0,
++      "scp": null,
++      "scp_scope": "not transcribed",
++      "source": "Request14 reader26",
++      "row_band_native_pixels": [
++        140,
++        261,
++        1148,
++        280
++      ]
++    },
++    {
++      "row": 4,
++      "time_label": "08:54:14",
++      "timezone_printed": "ET",
++      "connect": 6,
++      "connect_reading": "6",
++      "connect_candidates": [
++        6
++      ],
++      "operator": 0,
++      "scp": null,
++      "scp_scope": "not transcribed",
++      "source": "Request14 reader26",
++      "row_band_native_pixels": [
++        140,
++        276,
++        1148,
++        295
++      ]
++    },
++    {
++      "row": 5,
++      "time_label": "08:56:19",
++      "timezone_printed": "ET",
++      "connect": 24,
++      "connect_reading": "24",
++      "connect_candidates": [
++        24
++      ],
++      "operator": 0,
++      "scp": 31,
++      "scp_scope": "accepted selected reading",
++      "source": "Request14 reader26",
++      "row_band_native_pixels": [
++        140,
++        290,
++        1148,
++        309
++      ]
++    },
++    {
++      "row": 6,
++      "time_label": "08:57:28",
++      "timezone_printed": "ET",
++      "connect": null,
++      "connect_reading": "2?7",
++      "connect_candidates": [
++        207,
++        267
++      ],
++      "operator": 0,
++      "scp": null,
++      "scp_scope": "not transcribed",
++      "source": "Request14 reader26",
++      "row_band_native_pixels": [
++        140,
++        305,
++        1148,
++        324
++      ]
++    },
++    {
++      "row": 7,
++      "time_label": "08:57:39",
++      "timezone_printed": "ET",
++      "connect": 29,
++      "connect_reading": "29",
++      "connect_candidates": [
++        29
++      ],
++      "operator": 0,
++      "scp": null,
++      "scp_scope": "not transcribed",
++      "source": "Request14 reader26",
++      "row_band_native_pixels": [
++        140,
++        320,
++        1148,
++        339
++      ]
++    },
++    {
++      "row": 8,
++      "time_label": "08:58:45",
++      "timezone_printed": "ET",
++      "connect": 32,
++      "connect_reading": "32",
++      "connect_candidates": [
++        32
++      ],
++      "operator": 0,
++      "scp": null,
++      "scp_scope": "not transcribed",
++      "source": "Request14 reader26",
++      "row_band_native_pixels": [
++        140,
++        334,
++        1148,
++        353
++      ]
++    },
++    {
++      "row": 9,
++      "time_label": "08:58:57",
++      "timezone_printed": "ET",
++      "connect": 23,
++      "connect_reading": "23",
++      "connect_candidates": [
++        23
++      ],
++      "operator": 0,
++      "scp": null,
++      "scp_scope": "not transcribed",
++      "source": "Request14 reader26",
++      "row_band_native_pixels": [
++        140,
++        349,
++        1148,
++        368
++      ]
++    },
++    {
++      "row": 10,
++      "time_label": "09:00:02",
++      "timezone_printed": "ET",
++      "connect": 22,
++      "connect_reading": "22",
++      "connect_candidates": [
++        22
++      ],
++      "operator": 0,
++      "scp": null,
++      "scp_scope": "not transcribed",
++      "source": "Request14 reader26",
++      "row_band_native_pixels": [
++        140,
++        364,
++        1148,
++        383
++      ]
++    },
++    {
++      "row": 11,
++      "time_label": "09:00:03",
++      "timezone_printed": "ET",
++      "connect": 14,
++      "connect_reading": "14",
++      "connect_candidates": [
++        14
++      ],
++      "operator": 0,
++      "scp": null,
++      "scp_scope": "not transcribed",
++      "source": "Request14 reader26",
++      "row_band_native_pixels": [
++        140,
++        380,
++        1148,
++        399
++      ]
++    }
++  ],
++  "scope": "Manual reading of time/Connect/Operator on all 11 visible UA175 rows; SCP only rows2/5. No identifier, card, contact or recipient data copied.",
++  "units": "Connect/Operator/SCP operational units and definitions not authenticated; report and letter separately describe seconds.",
++  "reading_limit": "Same analyst, not blind/independent transcription. Row6 middle Connect digit remains unaccepted; no sum or forced reading.",
++  "source_dimensions": [
++    1242,
++    904
++  ]
++}
+
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..6792f7f9
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,115 @@
++[
++  {
++    "reader_page": 1,
++    "public_reader": "https://www.scribd.com/document/13499792/T7-B13-Flight-175-Calls-Fdr-Entire-Contents-Starfix-and-RINC",
++    "asset_base_url": "https://html.scribdassets.com/dy6fry0xse6syx/images/1-95c31c62bb.jpg",
++    "delivery": "Supported browser downloadMedia on exposed public-reader image element; no gated document download or login; temporary query omitted",
++    "actual_format": "WEBP",
++    "width": 904,
++    "height": 1242,
++    "bytes": 10578,
++    "sha256": "910cc5fa269b65c4806f3fa57bf1807ec94bf5f3a9e857d6e77c7b753ffe1f66",
++    "copied_utc": "2026-10-28T13:58:39.069221+00:00"
++  },
++  {
++    "reader_page": 2,
++    "public_reader": "https://www.scribd.com/document/13499792/T7-B13-Flight-175-Calls-Fdr-Entire-Contents-Starfix-and-RINC",
++    "asset_base_url": "https://html.scribdassets.com/dy6fry0xse6syx/images/2-6c3ce5c58c.jpg",
++    "delivery": "Supported browser downloadMedia on exposed public-reader image element; no gated document download or login; temporary query omitted",
++    "actual_format": "WEBP",
++    "width": 1242,
++    "height": 904,
++    "bytes": 93166,
++    "sha256": "5d0d1890dcfef117a084b4a14f215e800d634c55cf77c05930b70f22942d2403",
++    "copied_utc": "2026-10-28T13:58:39.543150+00:00"
++  },
++  {
++    "reader_page": 3,
++    "public_reader": "https://www.scribd.com/document/13499792/T7-B13-Flight-175-Calls-Fdr-Entire-Contents-Starfix-and-RINC",
++    "asset_base_url": "https://html.scribdassets.com/dy6fry0xse6syx/images/3-710fedd9a1.jpg",
++    "delivery": "Supported browser downloadMedia on exposed public-reader image element; no gated document download or login; temporary query omitted",
++    "actual_format": "WEBP",
++    "width": 904,
++    "height": 1242,
++    "bytes": 110414,
++    "sha256": "0a51c67372f9c911c32f0eb544adadd5f9b78e2fda484de166c2cd8ecad7740f",
++    "copied_utc": "2026-10-28T13:58:40.054091+00:00"
++  },
++  {
++    "reader_page": 4,
++    "public_reader": "https://www.scribd.com/document/13499792/T7-B13-Flight-175-Calls-Fdr-Entire-Contents-Starfix-and-RINC",
++    "asset_base_url": "https://html.scribdassets.com/dy6fry0xse6syx/images/4-3ee7865803.jpg",
++    "delivery": "Supported browser downloadMedia on exposed public-reader image element; no gated document download or login; temporary query omitted",
++    "actual_format": "WEBP",
++    "width": 1242,
++    "height": 904,
++    "bytes": 94348,
++    "sha256": "dbd1a9db560c9ebe42737c6b7a66c8f5ca59347abc461119d31d3fabd6241ba3",
++    "copied_utc": "2026-10-28T13:58:40.499682+00:00"
++  },
++  {
++    "reader_page": 5,
++    "public_reader": "https://www.scribd.com/document/13499792/T7-B13-Flight-175-Calls-Fdr-Entire-Contents-Starfix-and-RINC",
++    "asset_base_url": "https://html.scribdassets.com/dy6fry0xse6syx/images/5-0ecf3dbc3d.jpg",
++    "delivery": "Supported browser downloadMedia on exposed public-reader image element; no gated document download or login; temporary query omitted",
++    "actual_format": "WEBP",
++    "width": 1242,
++    "height": 904,
++    "bytes": 65956,
++    "sha256": "49f6c94590d90022038b93233476e21f30b354e57c3a80dba0a1a2ca9eb8f0fd",
++    "copied_utc": "2026-10-28T13:58:40.870642+00:00"
++  },
++  {
++    "reader_page": 6,
++    "public_reader": "https://www.scribd.com/document/13499792/T7-B13-Flight-175-Calls-Fdr-Entire-Contents-Starfix-and-RINC",
++    "asset_base_url": "https://html.scribdassets.com/dy6fry0xse6syx/images/6-ad6cec0f2c.jpg",
++    "delivery": "Browser pageAssets bundle of the currently displayed public reader image; temporary query omitted from provenance output; no gated download or login",
++    "actual_format": "WEBP",
++    "width": 904,
++    "height": 1242,
++    "bytes": 81134,
++    "sha256": "93f822d5f89657a99468fdcec1ab1666be9e12b328dc7b09ed51da34922c5149",
++    "copied_utc": "2026-10-28T13:54:40.598341+00:00"
++  },
++  {
++    "reader_page": 7,
++    "public_reader": "https://www.scribd.com/document/13499792/T7-B13-Flight-175-Calls-Fdr-Entire-Contents-Starfix-and-RINC",
++    "asset_base_url": "https://html.scribdassets.com/dy6fry0xse6syx/images/7-19bf7a70d5.jpg",
++    "delivery": "Browser pageAssets bundle of the currently displayed public reader image; temporary query omitted from provenance output; no gated download or login",
++    "actual_format": "WEBP",
++    "width": 904,
++    "height": 1242,
++    "bytes": 64234,
++    "sha256": "6f00beb420e35486009d84b262b159bf0e9cbdb58ddfc6a156a870d381b03ff4",
++    "copied_utc": "2026-10-28T13:54:40.907093+00:00"
++  },
++  {
++    "reader_page": 26,
++    "public_asset_url": "https://html.scribdassets.com/5bafzdomdce6sz3/images/26-6b763d149c.jpg",
++    "access_utc": "2026-10-27T19:24:43.085492+00:00",
++    "status": 200,
++    "content_type": "image/jpeg",
++    "actual_format": "JPEG",
++    "width": 1242,
++    "height": 904,
++    "bytes": 63549,
++    "sha256": "b63ce7c7a1dd41dd19b03ee80167f7b0918edd9e4e0d3f3c4234ed5328d8a1a5",
++    "filename": "reader-page-26.jpg",
++    "authentication": "None; no query, token or cookies",
++    "source_relationship": "Public reader image entity; not native agency PDF or carrier database export"
++  },
++  {
++    "id": "T01",
++    "title": "Staff Report,August26,2004 / Four Flights and Civil Aviation Security",
++    "url": "https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf",
++    "catalog_url": "https://www.archives.gov/research/9-11",
++    "attempt_utc": "2026-10-28T00:16:15.117345+00:00",
++    "status": 200,
++    "captured_bytes": 6760035,
++    "sha256_captured_entity": "9671b7afe9a45928dcbe053e567b7f830876bc31e32a1d221b39fa59493d5bbb",
++    "filename": "T01-NARA-staff-report-sept2005.pdf",
++    "pages": 121,
++    "kind": "Official archival scanned PDF; not native carrier or missing FBI report",
++    "bulk_pdf_published": false
++  }
++]
+
+diff --git a/verify_comparison.py b/verify_comparison.py
+new file mode 100644
+index 00000000..f6a4e85b
+--- /dev/null
++++ b/verify_comparison.py
+@@ -0,0 +1,93 @@
++"""Check safe supplied readings and, optionally, preserved source entities.
++
++This does not authenticate calls, source glyphs, field definitions or custody.
++"""
++import argparse
++import copy
++import hashlib
++import json
++from pathlib import Path
++
++
++def selected_field_matches(rows, report, column):
++    matches = []
++    for time, duration in zip(report['starts'], report['durations_seconds']):
++        candidates = [r for r in rows if r['time_label'] == time]
++        matches.append(len(candidates) == 1 and candidates[0][column] == duration)
++    return matches
++
++
++def main():
++    parser = argparse.ArgumentParser()
++    parser.add_argument('--directory', type=Path, default=Path(__file__).resolve().parent)
++    parser.add_argument('--new-images', type=Path)
++    parser.add_argument('--old-reader26', type=Path)
++    parser.add_argument('--t01', type=Path)
++    parser.add_argument('--output', type=Path)
++    args = parser.parse_args()
++    rows = json.loads((args.directory / 'ROW-FIELDS.json').read_text())['rows']
++    inputs = json.loads((args.directory / 'COMPARISON-INPUTS.json').read_text())
++    report = inputs['staff_note166']
++    checks = []
++
++    def check(name, result, kind):
++        checks.append({'check': name, 'passed': bool(result), 'kind': kind})
++
++    check('eleven consecutive row positions', [r['row'] for r in rows] == list(range(1, 12)), 'transcription accounting')
++    positive = [r for r in rows if r['connect_candidates'] and all(v > 0 for v in r['connect_candidates'])]
++    check('eleven positive Connect readings/candidates', len(positive) == 11, 'supplied-input calculation')
++    check('eleven zero Operator readings', sum(r['operator'] == 0 for r in rows) == 11, 'supplied-input calculation')
++    check('row6 exact Connect remains unaccepted', rows[5]['connect'] is None and rows[5]['connect_candidates'] == [207, 267], 'uncertainty preservation')
++    scp = selected_field_matches(rows, report, 'scp')
++    connect = selected_field_matches(rows, report, 'connect')
++    check('both note166 numbers match selected SCP numbers', scp == [True, True], 'field comparison')
++    check('neither note166 number matches selected Connect number', connect == [False, False], 'contrary field comparison')
++    altered = copy.deepcopy(rows)
++    altered[1]['scp'] = altered[1]['connect']
++    check('altered field does not preserve both matches', selected_field_matches(altered, report, 'scp') != [True, True], 'negative control')
++    check('three distinct email start labels and last-negative report', len(set(inputs['email']['ua175_start_labels'])) == 3 and inputs['email']['reported_last_connection'] is False, 'reported-source accounting')
++    check('no authenticated network/clock join claimed', inputs['joins']['clock_alignment_authenticated'] is False and inputs['joins']['network_key_join_authenticated'] is False, 'scope gate')
++
++    source_checks = []
++    pins = json.loads((args.directory / 'SOURCE-PINS.json').read_text())
++    for pin in pins:
++        path = None
++        if 'asset_base_url' in pin and args.new_images is not None:
++            path = args.new_images / ('reader-%s.webp' % pin['reader_page'])
++        elif pin.get('reader_page') == 26 and args.old_reader26 is not None:
++            path = args.old_reader26
++        elif pin.get('id') == 'T01' and args.t01 is not None:
++            path = args.t01
++        if path is not None:
++            expected = pin.get('sha256', pin.get('sha256_captured_entity'))
++            ok = path.exists() and hashlib.sha256(path.read_bytes()).hexdigest() == expected
++            source_checks.append({'source': pin.get('asset_base_url', pin.get('public_asset_url', pin.get('url'))), 'passed': ok})
++    check('provided original entities match pins', all(x['passed'] for x in source_checks), 'byte integrity only')
++    result = {
++        'scope': 'Safe supplied-field calculations, uncertainty and source-entity checks; not source-reading accuracy, native semantics, caller identity, historical authenticity or completion of TEL01–TEL04.',
++        'checks': checks,
++        'source_checks': source_checks,
++        'passed': sum(x['passed'] for x in checks),
++        'failed': sum(not x['passed'] for x in checks),
++        'computed': {'row_positions': len(rows), 'positive_connect_readings_or_candidates': len(positive),
++                     'exact_connect_readings': sum(r['connect'] is not None for r in rows),
++                     'uncertain_connect_rows': [r['row'] for r in rows if r['connect'] is None],
++                     'zero_operator_readings': sum(r['operator'] == 0 for r in rows),
++                     'selected_scp_matches': sum(scp), 'selected_connect_matches': sum(connect),
++                     'reported_letter_attempts': len(inputs['letter']['reported_attempts']),
++                     'reported_ual_conversations': inputs['letter']['ual_best_determination_conversations'],
++                     'reported_note166_completed_calls': report['reported_completed_calls'],
++                     'source_entities_checked': len(source_checks)},
++        'native_units_established': False, 'actual_conversation_count_established': False,
++        'inference_limit': 'A naive positive-Connect-means-completed-conversation rule would conflict with the reported negative third attempt; it is not applied. Neither account is thereby authenticated or preferred.'}
++    if args.output:
++        with args.output.open('x') as f:
++            json.dump(result, f, indent=2)
++            f.write('\n')
++    print(json.dumps({'passed': result['passed'], 'failed': result['failed'], 'computed': result['computed']}, indent=2))
++    if result['failed']:
++        raise SystemExit(1)
++
++
++if __name__ == '__main__':
++    main()
