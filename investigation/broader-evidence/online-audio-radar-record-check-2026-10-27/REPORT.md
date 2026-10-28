@@ -3,6 +3,8 @@
 **Checked:** October 27, 2026
 **Scope:** public NARA/Commission/NTSB sources relevant to the existing audio and radar work; record-location review, not a new clock reconstruction or audio interpretation.
 
+**Scope qualification:** this availability check covers the separate MCC/A90/general-radar leads. It does not complete the targeted DCA/TYSON item 7595603 listening/transcript comparison, Henderson source-audio joins, or the F04 p49/p51 radar-source/version/calibration review. Those remain open; the related record groups must not be treated as interchangeable.
+
 ## Results
 
 ### Audio and transcript
@@ -46,6 +48,6 @@ The newly verified online routes make the request scope more specific and reduce
 - NARA, [FAA finding aid boxes 96–107](https://www.archives.gov/research/foia/faa-finding-aid-96-107)
 - NARA, [FAA finding aid boxes 108–126](https://www.archives.gov/research/foia/faa-finding-aid-108-126)
 - 9/11 Commission, [May 23, 2003 hearing transcript](https://www.911commission.gov/archive/hearing2/9-11Commission_Hearing_2003-05-23.htm)
-- NTSB, [Radar data study for all aircraft](https://www.ntsb.gov/Documents/Rec_Radar_Data_Study_all_aircraft.pdf)
+- NTSB, [Radar data study for all aircraft](https://www.ntsb.gov/about/Documents/Rec_Radar_Data_Study_all_aircraft.pdf)
 
 The NARA finding aids were checked on October 27, 2026. Their online labels are descriptions, not authentication of physical media or proof that all files survive.
