@@ -1,0 +1,45 @@
+# Steel contractor review: disclosure concerns, the later agreement statement and missing originals
+
+October 27, 2026 research unit; source access continued October 28 UTC. Existing claims AUD011/AUD016, B188/H005 and SPT01–SPT08 remain open. This is an operational-record supplement, not a new collapse-model result or an attribution of WTC 7 origin to any specimen.
+
+## Source-pinned observations
+
+**The official minutes record a concrete review-access concern.** In the Project 3 discussion of the [June 22–23, 2004 NCST meeting](https://www.nist.gov/el/ncst-advisory-committee-mtg-minutes-june-22-23-2004), a committee question says a contractor's visual-analysis draft had been held since October and asks when it would be available. NIST's recorded responses describe project-level review, dissatisfaction, its own analysis and integration rather than a separate release. Another answer promises an appendix; a committee comment says earlier access could have informed complementary tests. These are summarized minutes, not a verbatim transcript. October's year and exact receipt date are not independently established here. Project 3 extract lines 18–23; web-reader lines 378–382.
+
+**The final report presents a general-agreement account.** In the held, hash-verified [NCSTAR 1-3](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3.pdf#page=150), physical page 150 / printed page 102, section 6.8.8 says an outside contractor's observations about possible local failure mechanisms generally agreed with NIST's. The executive summary, physical page 41 / printed xxxix, describes an independent outside study and general agreement; physical page 179 / printed 131 repeats the agreement statement. Those three passages are one report, not three independent investigations. All three page images were inspected; the remainder of the report was not newly reviewed in full.
+
+**The linked presentation supplies a parallel status description.** The [June 22, 2004 Project 3 slides](https://www.nist.gov/document/june2004analysisofstructuralsteelpdf), physical slide/page 4, describe the contractor inspection and analysis as complete with a drafted report, alongside extensive NIST analysis. That is a recorded work-status assertion, not proof that the contractor draft had been delivered to the committee or incorporated unchanged. This source was read through the official web PDF reader; a native PDF entity was not acquired by this unit.
+
+## What remains unresolved
+
+Keep the 2004 dissatisfaction/integration account, the appendix promise, the committee's access concern and the 2005 general-agreement statement side by side. **They are not an established scientific contradiction.** Dissatisfaction could concern quality, scope, documentation, presentation, particular observations or substantive conclusions; none is selected as the cause. A report may be integrated and also reproduced in an appendix. Conversely, a later agreement statement does not demonstrate that all adverse observations, draft differences or requested tests were retained. The actual drafts and review trail are missing.
+
+The exact contractor, contract, draft/version and eventual appendix associated with each account have not been joined here. Accordingly, this is a **specific record-completeness and review-opportunity lead**, not proof of suppression, altered results, bad faith or a concealed failure mechanism. The cited passages concern recovered tower steel; they do not identify W-14A/A, W-14B, C12a/b or a WTC 7-specific component. Do not transfer their general agreement to the unresolved WTC 7 attribution chain.
+
+The strongest objection to an adverse interpretation is that independent analysis and normal project review can produce dissatisfaction with a draft while leaving agreement on its principal observations. The strongest unresolved concern is that delayed review may have limited the committee's opportunity to propose tests before the work was integrated. The acquisition of original drafts, comments, deliveries and final crosswalk—not a choice between those narratives—would test the distinction.
+
+## Original-record targets
+
+Supplemental target **SR01**, subordinate to the existing steel work rather than a replacement for SPT01–SPT08:
+
+1. The contractor identity, statement of work, task/order numbers, original visual-inspection photographs and member-level observation sheets.
+2. Each received draft, covering message and receipt date; determine which October the question referred to without assuming a date.
+3. NIST review comments, requested corrections, responses, NIST's parallel analysis and the decision/routing record for integration or separate release.
+4. Committee delivery records and proposed complementary tests, including whether those tests occurred or were declined.
+5. The actual published appendix/report and a paragraph/member-level crosswalk to each draft, retaining changes, omissions, reasons and contrary observations.
+
+The needed test is a source/version join and reproducible comparison. It has not been performed. A published general-agreement sentence cannot substitute for the underlying independent report. No committee speaker is identified from an unattributed Q/A label alone.
+
+## WTC 7 candidate and preservation work still open
+
+The existing FEMA-to-NIST W14 candidate crosswalk is preserved unchanged, not claimed as a new discovery. The bounded search did not obtain DOC-NIST-2013-001311's outcome, the original Claremont photo series, NIST intake/attribution worksheets, a shipment receipt, a workbook history or the original preservation decisions. These remain the substantive SPT01–SPT08 dependencies. No field label, approximate geometry or generic section name was used to invent a specimen identity. The native workbook and exact C12a/b and FEMA Sample 1 joins remain unavailable.
+
+The initially located SP 1000-5 volume and 2020 public appeal were not acquired: each anonymous download returned a 17-byte HTTP 403 entity rather than a PDF. A direct URL exposed by the presentation's browser redirect likewise returned 403 to the downloader. The response hashes identify those response bytes only. The 2005 1-3C endpoint also failed in the web reader; it was an inferred volume route from the held bibliography, not an acquired report. These access failures establish nothing about historical deletion or withholding. Previously stopped Exhibit E, unsafe-mirror and held routes were not retried.
+
+## Preservation, verification and publication scope
+
+[SOURCES.json](SOURCES.json) distinguishes the new visible-DOM minute capture, the web-reader representation, the reused official report and failed downloads. A DOM capture hash is not the hash of a native 2004 file or transport response. The live minutes page says it summarizes discussion; its present page dates do not authenticate its original posting or later editing history. [CLAIMS.json](CLAIMS.json) records the observation/inference limits and exact source locators.
+
+The 12-query search cap was reached and retained; no further indexed query was issued. A local range-selection mistake initially included later meeting sections in displayed output; the bounded Project 3 extract was then saved using its actual next heading. The full capture is unchanged, and unrelated portions are not relied on. Three selected NCSTAR page images were rendered and inspected. Source hashes, derived-range checks and predecessor-status checks are documentary verification, not an independent steel examination or scientific replication.
+
+Public material is limited to this reviewed report, source pins, the claim/open-record ledger, checklist, verifier/results and exact addition/status diffs. Original captures, raw response headers/cookies, unrelated public-page material, private case files, full PDFs and rasters remain local. The public report is a redundant copy of the research report. All earlier sources and assessments remain preserved. No outreach, fees, new requests/filings, personal mailbox access, private push, source replacement, deletion or history rewrite occurred. The five-track goal remains active; this supplement does not complete the steel original-record chain.
