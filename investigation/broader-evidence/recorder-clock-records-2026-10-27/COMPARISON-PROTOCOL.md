@@ -1,0 +1,9 @@
+# Adaptive printed-record comparison
+
+Written after viewing the five product-letter/inventory pages and the scanned volume's relevant appendix pages; not a blind preregistration. The book explicitly labels its appendix as excerpts. Do not relabel that derivative as the original complete NTSB report or clock-calibration worksheet.
+
+Reuse all six event cues A1–A6 from the prior frozen FAA source-certification comparison: check-in, squawk instruction, climb instruction/readback, right-vector instruction/readback. Do not select a subset because its times agree or conflict. Compare the visually transcribed book labels against the previously acquired December-radar and May-associate values. Check hours/minutes/seconds strictly before arithmetic; any printed invalid seconds stay invalid, never silently carried into the next minute or replaced with an expected value. A conditional four-hour addition is a label-convention assumption, not an independently calibrated clock or sensor measurement. Keep the candidate word/sequence join qualification.
+
+Transcribe the typed product rows of the three inventory pages, retaining their own section/status/format. Count rows, not files, independent witnesses or actual transmitted objects. Keep handwritten additions separate and unattributed; the table's February 21, 2002 print label and July 17, 2003 cover letter have different scopes. Do not make older status cells a verified July2003 release state. A complete status is not a receipt or a presently acquired payload.
+
+Preserve all source bytes, raw observations, code and failed checks. Source images govern visual reading; OCR, if used, is a separately labeled derivative. Freeze the actual candidate-row inputs and checker hashes before execution. Recheck those pins after execution. No changes to prior FAA/recorder tests, no renewed search beyond this unit's 12-query cap, no historical-cause or deliberate-manipulation conclusion.
