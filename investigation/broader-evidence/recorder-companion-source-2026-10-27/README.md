@@ -1,0 +1,41 @@
+# Archived recorder companion: parameter labels, not recovered flight data
+
+October27,2026 original-record study; acquired October28UTC. Existing AUD016-A1/G01–G02, AUD016-A5 and TC01–TC04 remain open. **A newly acquired archived text file contains345label-like lines,not the missing NTSB flight-data CSV,layout definition or clock-correlation report.** This qualifies an original-file retrieval lead; it does not change an aircraft,trajectory,demolition or concealment assessment.
+
+## Source and actual acquisition
+
+The [observed Internet Archive directory response](https://web.archive.org/cdx/search/cdx?url=aa77fdr.com%2Fsource%2F%2A&output=json&filter=statuscode%3A200&collapse=urlkey&limit=1000&fl=timestamp%2Coriginal%2Cmimetype%2Cstatuscode%2Cdigest%2Clength) exposed two rows: the previously acquired American_77.fdr candidate and a previously unacquired AA77_ParamsTabular.txt. This unit did not reacquire or rerun tests on the raw recorder candidate. A separate exact-URL capture query,collapsed by digest,returned one variant. These are actual bounded index responses,not a complete historical server inventory or proof no other capture/file exists.
+
+The [February12,2008 raw replay of AA77_ParamsTabular.txt](https://web.archive.org/web/20080212044303id_/http://www.aa77fdr.com:80/source/AA77_ParamsTabular.txt) returned HTTP200,text/plain,**4,812bytes**,SHA256 **8138393a8829963bad5d66a1c753c36cb0b951e97a92d5081d9148b806c1770c**. Its computed SHA1/base32 digest matches the index's5ZSM2BSGJPSUXLNKFRKQ4ROIAMNJ3MFQ. The CDX length field says1709; retain it as an index field rather than assume it measures the same bytes as the decoded entity. No cause of the different values is inferred. URLs,hashes and source relationships are in [SOURCES.json](SOURCES.json).
+
+This is an archived third-party-host representation. Archive digest agreement identifies the archived bytes; it does not authenticate NTSB delivery,author,export software,aircraft/recorder custody or a contemporaneous agency attachment. The2008capture label is not a flight or file-creation clock. The blocked CD host was not accessed through another client,proxy or archive route; this uses the separate public source host already associated with the held raw candidate.
+
+## What the file actually contains
+
+All4,812bytes and all345logical lines were read. Lines1–4 are Eastern,VERTICAL,LONGITUDINAL,LATERAL; line48 is AIR/GROUND. Several entries are abbreviated or repeated. The exact raw entity remains unchanged locally. We do not combine neighboring labels into invented complete names or interpret Eastern as an authenticated clock convention.
+
+The read-only lexical checker found:
+
+| Quantity | Actual result | What it does not count or establish |
+| --- | ---: | --- |
+| Logical lines |345| Not345independently validated sensors or parameters |
+| Distinct complete line strings |242| Not242unique physical channels |
+| Repeated string types |66| Repetition is not duplicate measurement or fabrication |
+| Occurrences beyond each string's first |103| Not103missing or discarded records |
+| Whole-line numeric values / time literals |0/0| A lexical property,not a general detector of every possible data format |
+| Tab / comma bytes |0/0| File-format observation,not proof of a lost CSV conversion |
+| LF / CR bytes |344/0|345logical lines with no terminal newline; original bytes preserved |
+
+Full reading shows labels rather than time-series rows. Some range-selection labels contain units. The entity supplies no complete parameter-by-parameter units table,word/subframe/bit assignments,scales,sample-rate definitions,measurement rows,error flags or verifiable channel-validation table. Recognizing a label is not decoding or validating the corresponding channel. In particular,AIR/GROUND on line48 cannot identify what a terminal0in the separate raw-data study means. No raw/frame/page calculation was rerun. [RESULT.json](RESULT.json),[checker](inspect_companion.py) and the [adaptive protocol](ANALYSIS-PROTOCOL.md) expose the narrow method.
+
+## Keep the requested originals distinct
+
+The [official NTSB factual report,page4](https://www.ntsb.gov/about/Documents/AAL77_fdr.pdf#page=4) names DCA01MA064_tabular.csv,D226A101-3G.pdf and757-3b_1.txt. AA77_ParamsTabular.txt is a different basename; neither a host association nor its suggestive title establishes identity with any of those attachments. The previously held official PDF was rehashed; its earlier page-image reading is reused,not claimed as a new full report review. Page3separately references a Time Correlation Report. None of those desired original payloads was recovered in this unit.
+
+The strongest contrary reading is that this list may have been derived from a genuine agency export. That is possible,but the underlying export/version/author and transformation remain unverified. Conversely,repeated or incomplete-looking labels do not prove deliberate editing,invalid recorder measurements or suppression. A complete paired agency CSV and layout,release cover/media directory,version history and actual clock worksheet would test the source relationship and permit the still-unperformed joins. No explanation of the list's origin is selected.
+
+## Preservation and limits
+
+Two distinct index requests and one replay were executed within the frozen route limits. Three source hashes were checked before and after the lexical accounting; all remained unchanged. Code/protocol/source pins were frozen before that calculation,after exposure to the source,so this was not a blind test. No historical timing,flight-path or sensor-validation experiment was performed. Earlier numerical tests,source files,reports and conflicting readings remain unchanged.
+
+This public addition contains original notes,source pins,selected labels,index metadata and reproducibility code/results. The raw text entity and HTTP headers remain local; no raw recorder data,image media,private case information or correspondence is published. [Checklist](CHECKLIST.md) and [text diffs](DIFFS/) record the exact scope. Acquiring and qualifying a candidate advances the source trail without fulfilling the missing native-data criteria. All five original-record tracks remain active. No outreach,fees,new request/filing,personal mailbox,private push,source replacement,deletion or history rewrite occurred.

@@ -1,0 +1,11 @@
+--- REPORT.md (preserved first draft)
++++ REPORT-v2.md
+@@ -26,7 +26,7 @@
+ | Tab / comma bytes |0/0| File-format observation,not proof of a lost CSV conversion |
+ | LF / CR bytes |344/0|345logical lines with no terminal newline; original bytes preserved |
+ 
+-Full reading shows labels rather than time-series rows. No units,word/subframe/bit assignments,scales,sample-rate definitions,measurement rows,error flags or verifiable channel-validation table were recovered from this entity. Recognizing a label is not decoding or validating the corresponding channel. In particular,AIR/GROUND on line48 cannot identify what a terminal0in the separate raw-data study means. No raw/frame/page calculation was rerun. [RESULT.json](RESULT.json),[checker](inspect_companion.py) and the [adaptive protocol](ANALYSIS-PROTOCOL.md) expose the narrow method.
++Full reading shows labels rather than time-series rows. Some range-selection labels contain units. The entity supplies no complete parameter-by-parameter units table,word/subframe/bit assignments,scales,sample-rate definitions,measurement rows,error flags or verifiable channel-validation table. Recognizing a label is not decoding or validating the corresponding channel. In particular,AIR/GROUND on line48 cannot identify what a terminal0in the separate raw-data study means. No raw/frame/page calculation was rerun. [RESULT.json](RESULT.json),[checker](inspect_companion.py) and the [adaptive protocol](ANALYSIS-PROTOCOL.md) expose the narrow method.
+ 
+ ## Keep the requested originals distinct
+ 
