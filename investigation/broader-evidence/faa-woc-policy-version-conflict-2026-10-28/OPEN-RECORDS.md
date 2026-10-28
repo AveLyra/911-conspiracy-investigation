@@ -1,0 +1,11 @@
+# Existing-record priorities and unchanged gates
+
+1. **PD01–PD04 remain required.** Actual corrected congressional response and receipt; signed action/no-action; recommendation disposition/closure; applicable investigation-follow-up authority. Neither this memo reference nor a procedural handbook substitutes.
+2. **Policy/capability join.** Supplied September11/current Crisis Management Handbook Chapter4, tab4-2; revision/transmittal/effective-date history; response to February2005 promised version check; contemporary equipment/configuration and net-routing records. Include contrary versions and negative search results.
+3. **Completed Guidelist.** September11 notification/time form, copies/scans and actual entries if surviving; blank/form version; documented searches and renovation/transfer/retention/disposal records. Reported belief is not authenticated destruction.
+4. **Reorganization original.** October18,2001 memorandum, both reported title forms with/without ACTION prefix, routing/enclosures/approval and implementation; review notes. Six memo Internet queries exhausted for this unit; do not repeat them without a new independent route.
+5. **Boston/FBI join.** October18,2001 ZBW/FBI custody form named in two inventory lists; corresponding receipt, recording identifiers, original/certified copies, transcript/selection instructions and clocks. A Boston representation does not establish WOC recording.
+
+Other goal dependencies stay live: telephone native carrier/schema/operator/office/leg/exhibit joins (held Keyton reports are not missing acquisitions); recorder installed definitions/error policy/continuity/custody/paired outputs/radar clocks in the existing technical owner's work; Harrit/Millette native measurements/calibration and donor→chip→region→run→phase/thermal joins; steel original workbook/field/coupon/transfer/intake/attribution/preservation decisions. No new empirical test, outreach, request, fee or other-chat instruction is authorized by this supplement.
+
+Completion remains separate from search completion, source integrity, publication and coordination. No substantive gate is closed by this pass. The next useful action is to find an actual policy-version-check response or underlying custody/preservation record, rather than re-summarize these same passages.
