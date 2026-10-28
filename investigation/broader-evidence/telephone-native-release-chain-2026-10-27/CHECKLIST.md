@@ -1,0 +1,14 @@
+# Revision and user-request accountability
+
+| Requirement | Outcome and location | Verification / unresolved issue |
+| --- | --- | --- |
+| Pursue original records rather than repeat summaries | REPORT, OPEN-RECORDS, SOURCES: acquired two official archival PDFs and identified NAID 2608440 | Missing September 20 report, raw carrier files, actual DOJ log and source joins remain open; staff products are not relabeled originals of those records. |
+| Preserve conflicting records and assumptions | REPORT items 1–6; OBSERVATIONS; original files unchanged | Both citation dates, all reported call times/durations and the limitations remain distinct. No historical adjudication. |
+| Exact source links and file/page references | SOURCES and OBSERVATIONS; selected images inspected | 18 selected pages read; 107 acquired pages not visually inspected. Extraction is not comprehensive review. |
+| Test interpretations and contrary evidence | REPORT conflict/limits section; OPEN-RECORDS | Source dependence and uncertain recollection weaken an overprecise account; manipulation remains untested. |
+| Quantitative and reproducible checks | verify_records.py and VERIFICATION.json | PDF hash/page/content checks; arithmetic and citation checks. These do not independently reconstruct the events. |
+| Protocol accountability | SCOPE-ADDENDUM; COVERAGE | 17 operations under conservative counting versus cap 16. Scope exception retained, not declared passed. |
+| Text diff against preceding preserved state | DIFFS additions and predecessor status | New documents compared with absence; predecessor reports/source bytes checked unchanged. No PDF-layout pass substituted for a text diff. |
+| Protect original sources and private material | Native local preservation; public payload limited to reviewed notes/pins/code | Original PDFs/QA kept local; no phone/account numbers, credentials, private correspondence or unexamined bulk records in the payload. |
+| Periodic AveLyra commits and Overview updates | Publication and handoff receipts recorded locally after execution | A prepared addition is not a verified push. Overview tool acceptance is not proof of integration into its conclusions. |
+| Preserve five-track goal | OPEN-RECORDS and local goal checkpoint | FAA dispositions, telephone joins, recorder/materials tests and steel attribution/transfer originals remain substantive dependencies. No completion percentage inferred from counts. |

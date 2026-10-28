@@ -1,0 +1,7 @@
+# Scope and query-count addendum
+
+The exact September20analysis and May20AA77briefing were not acquired by the initial search. NARA's actual Team7series search identifies the Key302sfileunit,NAID2608440; its content/release must be checked rather than assumed from a matching title.
+
+Two observed public officialPDFroutes are followed next: the121page staff monograph and the four-page-listed Halleck/Houck interview. These are actual original Commission-authored archival representations, **not native carrier events or the missing September20FBIreport**. Inspect the entire short interview, monograph cover/scope, the AA77section and relevant source notes; record every actually read page and leave the rest uninspected. Do not claim a complete125pagereview or that additional staff summaries close raw-record gaps. Use their references to sharpen the actual custody/record targets and preserve both-direction evidence.
+
+The initial protocol cap was16indexedqueries. The executed scope is16websearchquerystrings plus one catalog-within-series query for Key302s. Counting that catalogquery conservatively gives17searchoperations,onebeyond the stated cap; the protocol is not rewritten or silently declared passed. No further searchqueries are issued in this unit. Following the already observed exact fileunit/download links is document inspection, not a new broad search. This is a process-accounting limit,not evidence about the historical record.
