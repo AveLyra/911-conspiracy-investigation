@@ -1,0 +1,15 @@
+# Checked source readings and exact locators
+
+Manual source readings and explicit paraphrases; no native operational files newly acquired. All originals are unchanged.
+
+- P01 — V1 physical71/printed218 §6.2:16WTC1panels,2WTC2samples(M-10a/M-10b),3other panels(N-9,C-11,M-14),total21. C-11/M-14 described as unidentified. This is source prose and arithmetic, not an authenticated selection manifest.
+- P02 — V2 TableE1 physical164–170/printed448–454:25distinct sample labels, grouped as21exterior+4core. Manual first-column index has M-4 and no M-14; this is a bounded full-table reading, not an archive-wide string absence claim.
+- P03 — V2 physical170/printed454: M-4 block has columns1–3 at middle and top portions plus middle/upper spandrels, eight rows; location Unidentified, exposure/duration unknown, sufficient paint and negative for mud cracking. These are published states, not measured temperatures or zero exposure. No Z-mark crosswalk is supplied by these rows.
+- P04 — V2 physical236/printedB-520: WJE M-4 worksheet dated25June2003; buildingWTC1orWTC2, column/floors unknown; possible fire effects, with Z2/Z4 and other region descriptions. V2 physical257/printed479 uses PanelM-4(unidentified) and says no mudcracking found. Different region language does not prove the same paint spots were tested.
+- P05 — I3B physical93/printed65 TableA2: N-13 orM-14, identified WTC1,column130,floors99–102. I3B physical91/printed63 TableA1: M-4 orM-5 with accepted building/column/floors blank. These published aliases do not authorize substituting M-4 for M-14 or prove the historical labels were stable.
+- P06 — V2 physical169/printed453: TableE1 M-10a andM-10b As-built location repeatedly says WTC1,Northface; V1 §6.2 and I3B physical91 say WTC2 for these identifiers. Rows83rd/84th are inspected portions; do not call their smaller floor subset a contradiction with the full specimen's floor range.
+- P07 — E1 candidate groups C-22,C-40,C-55,C-93,M-2,M-26,N-7 have observed-fire entries and do not occur in G3's nine-panel possible-fire list. Their published paint states include negative, inconclusive and unavailable/no-conclusion cases. Conditional set reconstruction only; not the authored seven-item list or independent replication.
+- P08 — V2 physical177/printed461 §1.2 describes the additional WJE-on-NIST draft review as non-binding. Actual scope/performance still requires signed terms/amendments and review/delivery records. This qualification supplements the previously acquired award notice; it does not erase the separate-review target.
+- P09 — Standard text extraction did not return M-4 in the sideways E1table while the full rotated page image clearly contains its eight rows. A keyword miss would have been false absence; no OCR miss was counted as an evidentiary anomaly. Reading rotations preserve source bytes.
+
+Primary sources: [V1](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv1.pdf), [V2](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf), [inventory](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf).

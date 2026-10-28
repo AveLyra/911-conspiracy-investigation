@@ -1,0 +1,11 @@
+--- preserved/initial-verifier.py
++++ final/verify_sources.py
+@@ -18,7 +18,7 @@
+ def phrase(key,page,words,name):check(name,norm(words) in norm(docs[key][page-1].get_text()))
+ phrase('V1',71,'C-l 1 and M-14, both unidentified','Main selection text retains M14 and unidentified label')
+ phrase('V1',71,'two samples from WTC 2','Main selection text identifies WTC2 samples')
+-phrase('V1',71,'M-10a and M-10b','Main sample identifiers')
++phrase('V1',71,'M-lOa and M-lOb','Literal extracted label string; visible M10a/M10b read separately')
+ phrase('V1',71,'21 panels selected','Main text total21')
+ phrase('V2',177,'non-binding technical review','Published scope non-binding qualification')
+ phrase('V2',236,'Piece ID Mark: M-4','WJE worksheet identifier')

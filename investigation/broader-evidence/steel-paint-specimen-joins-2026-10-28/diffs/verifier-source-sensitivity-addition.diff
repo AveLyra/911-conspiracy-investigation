@@ -1,0 +1,12 @@
+--- preserved/checked-v2.py
++++ public-final/verify_sources.py
+@@ -50,4 +50,9 @@
+ check('Exact selected-reading line references',len(loc)==9 and all(reading[r['line']-1].startswith('- '+r['id']+' ') for r in loc))
+ scope=json.loads((root/'READING-SCOPE.json').read_text())
+ check('Reading scope13unique pages2details',scope['distinct_full_pages_read']==13 and scope['extra_details_read']==2 and len(scope['images'])==15)
++sensitivity=json.loads((root/'CANDIDATE-SENSITIVITY.json').read_text())
++g2=sensitivity['G2_summary_eight']
++check('G2alternative8panel source labels retained',len(g2)==8 and all(norm(x) in norm(docs['V2'][251].get_text()) for x in g2))
++check('Alternative source-list rule gives8includingK1',sorted(fire-set(g2))==sensitivity['alternative_same_set_rule_using_G2'] and len(fire-set(g2))==8 and 'K-1' in fire-set(g2))
++check('Actual G2/G3 input difference is K1',set(working['G3_nine_panel_list'])-set(g2)=={'K-1'})
+ print(json.dumps({'result':'PASS','check_count':len(checks),'checks':checks,'software':{'python':sys.version.split()[0],'pymupdf':fitz.VersionBind},'scope':'Source-byte/page/phrase and manual-index/set/qualification checks. Visual cells were read separately. No native operational record acquisition, independent measurement, historical specimen authentication, temperature/collapse validation or adjudication.'},indent=2))
