@@ -57,6 +57,7 @@ could change each assessment.
 - [CIA decision accounts and Mineta follow-up records (October 27)](investigation/broader-evidence/cia-mineta-record-followup-2026-10-27/REPORT.md)
 - [Online audio, transcript, and radar record check (October 27)](investigation/broader-evidence/online-audio-radar-record-check-2026-10-27/REPORT.md)
 - [October 27 research synthesis and prioritized record gaps](investigation/broader-evidence/oct27-research-summary-and-record-gaps/README.md)
+- [Six-lead follow-up status: dispatched requests and remaining tests (October 27)](investigation/broader-evidence/six-lead-followup-status-2026-10-27/README.md)
 - [October 10 research preservation and source manifest](publication/preservation-2026-10-10/README.md)
 - [Feedback digest coverage addendum](investigation/wtc7/feedback-digest-coverage-2026-10-09/README.md)
 
