@@ -1,0 +1,7 @@
+# Award-notice PDF metadata: version qualification, not evidence of tampering
+
+The acquired two-page **award notice**, SHA-256 `500ba9d66cd2d4d953bce636424aebf38a3625e23dec6060e983783522171279`, labels its award date **6/9/2003** on page 1. PyMuPDF **1.27.2.2** reads its PDF creator and producer as **Microsoft® Word 2010**, and both creationDate and modDate as **`D:20110804094749-04'00'`**. The executable source check and result preserve the actual environment and literal fields.
+
+These are different kinds of dates: an award-event label, mutable document metadata and the archive's **20120310003549** capture timestamp. None authenticates original authoring or delivery time. Later export/republication is a possible account, not an established explanation. Do not claim a native 2003 file, fabrication, historical substitution or substantive award change from these fields.
+
+This note concerns the **award announcement**, not the separately published WJE report dated26November2003; do not transfer the award PDF's metadata to that report. Unneeded metadata-author details are excluded from this public selection. Complete original bytes and the full metadata capture remain unchanged locally. [Archived source](https://web.archive.org/web/20120310003549id_/http://www.nist.gov/el/disasterstudies/wtc/upload/WTCcontractaward_0155.pdf).
