@@ -1,0 +1,65 @@
+--- /dev/null
++++ README.md
+@@ -0,0 +1,62 @@
++# FAA handwritten notes: a concrete limit on our text searches
++
++October 28, 2026 UTC. Existing B129 / PD01–PD04 and PD07; original-record work plan unchanged.
++
++**The held public FAA packet contains handwritten agent-note pages that our text searches and a fresh local OCR pass did not reliably read.** Four selected visible strings are absent from that OCR output even after removing spaces and punctuation. This is a demonstrated limitation of our search method, not evidence that an agency removed text. The pages offer specific underlying-note and policy-record leads. They do **not** supply the corrected Commission answer, delivery acknowledgment or signed administrative action/no-action decision.
++
++## Inputs and what was actually examined
++
++| Held public source | Physical pages | Selected low-text pages |
++|---|---:|---:|
++| [DOT-OIG interview release](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf) | 4,380 | 77 |
++| [FAA/NEADS release](https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf) | 257 | 13 |
++
++SOURCE-PINS.json preserves their existing URLs, original acquisition UTC, bytes and SHA-256. These are third-party-hosted released scans, not authenticated native notes, recordings or email systems. They were already held; **no new agency production or source PDF was acquired**.
++
++The selection rule was fewer than 100 non-whitespace characters in the existing hashed pypdf page extraction. It selected **90 pages**, not 90 missing documents or 90 unread substantive records. The threshold is a locator heuristic. A new visible-image pass rendered those pages in memory at scale2 and ran the existing local Tesseract with `--psm 3`. All90 selected OCR processes completed. No external OCR, installation, hidden-redaction recovery or source alteration occurred.
++
++Three 30-page contact sheets were visually inspected for triage. They show a mixture of handwritten notes, system screenshots, cover/divider sheets, maps, photographs and other reproduced material. Thumbnails do **not** support a claim of fully reading90pages. Four selected handwritten pages were then rendered and inspected individually in full. Five separate late-date keyword candidates were also inspected in full and identified as copies of printed CC-2006-085 pages2,3,9,10,12. Those copies do not constitute later management decisions or independent corroboration.
++
++## H01 — Handwritten pages and exact retrieval locators
++
++Page numbers are one-based physical PDF pages in the 4,380-page DOT release, not original agency pagination. Names behind redactions are not reconstructed; adjacency alone does not establish a speaker, author or interview-to-report join.
++
++| Page | Visible content relevant to a next record | What is not established |
++|---|---|---|
++| [2204](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2204) | Handwritten notes refer to TOPOFF III and an after-action product being drafted; they also discuss tabletop exercises and coordination. | Exact note author/date, whether the referenced draft was completed, or implementation of the later2006 recommendations. Seek the actual draft/final after-action record and its distribution. |
++| [2694](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2694) | Visible header string1/27/05 and a Special Operations heading; notes describe policy/planning functions. | A native timestamp, authenticated author/interview identity or a post-report disposition. Header date is a source string, not verified creation time. |
++| [2700](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2700) | Notes name7110.65 and discuss hijacking, NORDO and policy-routing procedures. | The actual controlling historical edition, execution on9/11 or a demonstrated rule violation. Obtain the relevant order/version and underlying interview context. |
++| [2702](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2702) | Notes discuss suspicious-aircraft reporting, WOCC procedures and checking the Kentucky governor incident. | An authoritative finding that no rule existed, proof a check occurred or the resulting inquiry record. Seek the governing instructions and actual follow-up material. |
++
++These are underlying released-note locators, not a new interview, four independent witnesses or proof that any particular executive authorized concealment. The notes' substantive statements remain attributed observations requiring comparison with the typed interview, source audio and controlling documents. A contemporaneous-looking handwritten page is not self-authenticating.
++
++## H02 — Four visible-source controls failed in this OCR pass
++
++| Physical page | Manually read visible anchor | OCR non-whitespace characters | Exact anchor found in OCR, ignoring case? | Found after alphanumeric normalization? |
++|---|---|---:|---|---|
++| 2204 | TOPOFF | 189 | No | No |
++| 2694 | Special Operations | 0 | No | No |
++| 2700 | 7110.65 | 242 | No | No |
++| 2702 | suspicious aircraft | 237 | No | No |
++
++MANUAL-OCR-CONTROLS.json records these supplied visual readings and OCR hashes. The raw OCR and full images remain local. Removing whitespace/punctuation does not recover these particular strings, so a mere formatting difference is insufficient to explain these selected misses. Incorrect manual reading, handwriting quality, scan degradation and OCR configuration remain possible contributors; no single cause is selected. Another engine/configuration or human reading could improve extraction.
++
++The broader target-term scan returned only one hit page, carrying a case identifier. It **did not find a correction or decision**. Because the visible controls fail, that sparse result cannot establish that the packet lacks relevant handwritten content. The controls were selected after visual triage; they do not estimate a corpus-wide error rate, compare engines or prove that every handwritten statement was missed. Conversely, these four pages have not themselves supplied the sought2006 correction, receipt or decision. Preserve both limitations.
++
++The correct next action is a source-image/typed-interview join for the remaining relevant handwritten pages, retaining uncertain words, rather than repeating the same negative keyword search as proof of absence. Candidate neighboring notes are identified in NEXT-RECORDS.md; their contents are not claimed read or verified here.
++
++## Acquisition routes that did not advance the missing-original requirements
++
++Thirteen indexed query strings were used in grouped searches; several led back to held records. The first group was not retained in full and contained a malformed site filter. All three semiannual-report URLs were already in the prior acquisition manifest; they are **not new sources or evidence of a completed correction**. The currently parsed OIG case page repeats the recommendations. A contemporaneous bibliographic entry supplied no exact legacy OIG link in the retrieved HTML. The exact current-item archive index returned20rows at its20-row limit, not a complete capture census. Its earliest listed replay attempt returned **HTTP429**, so no archived response body was obtained and no retry/bypass was attempted. No deletion, withholding or historical cause is inferred from those access results.
++
++Those failures are recorded locally and are not presented as new suspicious findings. Four direct public HTTP attempts and the grouped index/search operations are separate from native-record acquisition. The source images, raw HTML/OCR, contact/personnel material, screenshots, search returns and internal coordination remain local; only safe original research notes/pins/observations/code/results/diffs are included publicly.
++
++## Open requirements and verification
++
++**PD01–PD04 remain open:** the corrected QFR and recipient receipt; signed consideration/action/no-action record; recommendation-response/implementation/closure history; and applicable investigation-follow-up policy. Handwritten policy notes, a closed OIG investigation and repeated recommendations cannot substitute for those records. A reasoned decision or delivery proof could weaken a concealment interpretation; evidence of deliberate suppression could strengthen it. Neither follows from OCR quality.
++
++The telephone originals and network/office joins, recorder continuity/custody/format/error policy/clocks, materials native measurements/specimen joins and steel preservation/transfer/attribution chains remain incomplete. The technical owner's current snapshot concerns CIA work; no new recorder/materials completion is inferred. The independent audit's saved27-check closure concerns integration/publication, not those substantive missing inputs.
++
++`verify_controls.py` checks both actual source hashes, the90supplied OCR entities and character counts, selected-page coverage, the four anchor-comparison outcomes and a positive matching control. Actual output is in RESULTS.json. Software checks bytes and supplied comparisons, not historical truth or independent handwriting recognition. Earlier reports and source hashes remain unchanged. README.diff is the exact first-addition text diff; CHECKLIST.md records scope and unresolved items. Rendering/visual reading is separate from that diff.
++
++This unit makes a bounded source-reading/method-validation advance and identifies underlying handwritten-note leads; it does **not** complete any missing-original acceptance criterion or establish a new conspiracy fact. No agency contact, new request, fee, filing, personal-mailbox access, private push, source repair, deletion or published-history rewrite occurred.
