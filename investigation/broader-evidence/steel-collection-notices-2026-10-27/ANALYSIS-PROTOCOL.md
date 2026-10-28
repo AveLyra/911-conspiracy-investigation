@@ -1,0 +1,7 @@
+# Adaptive publisher-notice comparison
+
+The actual native-workbook target remains unsatisfied. Two new archived publisher notices are underlying contemporaneous solicitations relevant to SPT01–SPT03, not a substitute workbook or candidate-specific custody decision. This adaptive comparison was specified after reading both visible notice texts and FEMA D-1/D-2; it is not blind preregistration.
+
+Verify the two unchanged HTML source entities and the held FEMA PDF. Parse static HTML text without executing scripts or accessing forms. Check selected short literal anchors, retaining the original file hashes and normalized-text offsets. Inspect the full surrounding visible paragraphs manually; an anchor by itself does not prove the contextual claim. For FEMA, preserve physical page and extraction-line spans separately from the page-image reading. Record any parse/render warnings and uninspected material.
+
+Preserve the November notice's broad FEMA-associated description and its unpaid staffing, FEMA's separate sponsored-effort description, the NY/NJ strings, and the May notice's priorities without selecting a cause, legal organizational relationship, accurate historical clock or physical specimen identity. Report proposed teams versus later visits/participants as different units if used; do not invent a common denominator. No additional query, source-body acquisition or old specimen/decoder test. No native workbook, shipping receipt or attribution worksheet is inferred from an appeal for contributors or volunteers.

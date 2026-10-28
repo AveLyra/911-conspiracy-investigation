@@ -1,0 +1,91 @@
+{
+  "source_checks": [
+    {
+      "id": "P01",
+      "bytes": 6830,
+      "sha256": "39337ced6e84e08365a5ea591cfc9eca0011d4329374e974cc159846f1f06fee"
+    },
+    {
+      "id": "P02",
+      "bytes": 13684,
+      "sha256": "f59e2ac56f3b1d7dbe62e837d79fd7430e58829f5b30b98ab09e3c58740d221b"
+    },
+    {
+      "id": "FEMA-D",
+      "bytes": 2333446,
+      "sha256": "e054a70f9410b1fe0b141f0ec2401244183f67da4d0a703df5ffb18483d6f6fc"
+    }
+  ],
+  "anchor_checks": [
+    {
+      "id": "N01",
+      "source": "P01",
+      "physical_page": null,
+      "normalized_text_offset": 1481,
+      "meaning": "The public recruitment notice describes volunteer staffing; not a payroll or funding ledger."
+    },
+    {
+      "id": "N02",
+      "source": "P01",
+      "physical_page": null,
+      "normalized_text_offset": 1511,
+      "meaning": "A stated recruitment condition, not proof no institution spent money."
+    },
+    {
+      "id": "N03",
+      "source": "P01",
+      "physical_page": null,
+      "normalized_text_offset": 2750,
+      "meaning": "Published search scope includes WTC7; not authenticated recovery or building attribution."
+    },
+    {
+      "id": "N04",
+      "source": "P01",
+      "physical_page": null,
+      "normalized_text_offset": 2210,
+      "meaning": "Preserve notice location string beside FEMA NJ; no custody conclusion."
+    },
+    {
+      "id": "N05",
+      "source": "P02",
+      "physical_page": null,
+      "normalized_text_offset": 2102,
+      "meaning": "WTC7 is expressly prioritized in the surrounding paragraph."
+    },
+    {
+      "id": "N06",
+      "source": "P02",
+      "physical_page": null,
+      "normalized_text_offset": 2771,
+      "meaning": "The surrounding text describes those views as rarer; not a measured census."
+    },
+    {
+      "id": "F01",
+      "source": "FEMA-D",
+      "physical_page": 1,
+      "normalized_text_offset": 591,
+      "meaning": "FEMA published organizational/sponsorship description; actual authorizations and accounts remain missing."
+    },
+    {
+      "id": "F02",
+      "source": "FEMA-D",
+      "physical_page": 1,
+      "normalized_text_offset": 1439,
+      "meaning": "Preserve exact geographic description without adopting it as the correct location."
+    }
+  ],
+  "source_hashes_unchanged": {
+    "P01": true,
+    "P02": true,
+    "FEMA-D": true
+  },
+  "pymupdf_version": "1.27.2.2",
+  "scope": "Three source-identity and eight literal/context-locator checks; no specimen, payroll, timing or funding authentication",
+  "native_workbook_acquired": false,
+  "candidate_specific_custody_verified": false,
+  "conflicting_scope_descriptions_preserved": true,
+  "location_strings_preserved": [
+    "Staten Island, NY",
+    "Staten Island, NJ"
+  ]
+}
