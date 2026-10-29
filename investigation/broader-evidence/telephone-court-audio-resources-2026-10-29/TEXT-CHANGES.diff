@@ -1,0 +1,1055 @@
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-court-audio-resources-2026-10-29/DECODE-RESULTS.json
+@@ -0,0 +1,88 @@
++{
++  "archive_sha256": "3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801",
++  "decoder_versions": {
++    "ffprobe": "ffprobe version 7.1.1 Copyright (c) 2007-2025 the FFmpeg developers",
++    "ffmpeg": "ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers"
++  },
++  "scope": "Two untrimmed event MP3 frame sequences extracted/decoded, never listened to or semantically/caller/custody authenticated. Header and decoder sample counts kept separately; original SWF SeekSamples not applied by standalone MP3 decoder. PCM hashed in memory only; no PCM output file or external disclosure.",
++  "results": [
++    {
++      "member": "Lyles.swf",
++      "member_sha256": "28f2a83db87177a2538ebd36ddfc03b63e7b696b7d16603a793921ff27ce4ec7",
++      "uncompressed_tag_offset": 26,
++      "sound_id": 1,
++      "resource_body_sha256": "17e075660f64010ba0a97192deaa2617a9285f2e24ebe9a70109c80250870d55",
++      "sound_data_sha256": "14e162cf5695f856980277e4c6ee7fa6c4c294da8e9128720135eb546320e1d3",
++      "signed_seek_samples": 0,
++      "swf_declared_sample_count": 1987200,
++      "swf_rate_code": 3,
++      "mp3_bytes": 540735,
++      "mp3_sha256": "53d4d3256cf941cb2ad659e4bfdaed341e440d4dfa1484a3c84b2e07210e197e",
++      "probe": {
++        "codec_name": "mp3",
++        "sample_rate": "44100",
++        "channels": 1
++      },
++      "decoded_PCM_format": "signed16bit_little_endian_original_rate_channels",
++      "decoded_pcm_sha256": "8e2f0e515d8dde7aa3fded75c6bef82afad92a7de3af9d7d536783c25f7cd01f",
++      "decoded_pcm_bytes": 3974400,
++      "decoded_sample_count_per_channel": 1987200,
++      "probed_frame_count": 1725,
++      "probed_frame_sample_sum": 1987200,
++      "decoded_minus_declared_samples": 0,
++      "decode_seconds_by_probe_rate": 45.06122448979592,
++      "ffprobe_stderr": "",
++      "frame_probe_stderr": "",
++      "decoder_returncodes": [
++        0,
++        0,
++        0
++      ],
++      "ffmpeg_warning": "Duration estimated from bitrate; may be inaccurate. Exact sample count here uses emitted PCM bytes and frame-sample sum, not the bitrate-duration estimate.",
++      "MP3_frame_bytes_half_open_uncompressed_SWF_range": [
++        41,
++        540776
++      ],
++      "declared_seconds_at_probe_rate": 45.06122448979592
++    },
++    {
++      "member": "Ong.swf",
++      "member_sha256": "8c844a2370852e55597a4aa73ef8b8ff0e6c03e3fec982a9cd98aeb937e5a3ec",
++      "uncompressed_tag_offset": 26,
++      "sound_id": 1,
++      "resource_body_sha256": "18cec28ca9895f8b7fa765fc631bdf5d60e09bb517c66f70904d94de3a5af8ff",
++      "sound_data_sha256": "2a02658259f2fe5f23582d55ef4bd376423bbdf98bd9a06567eebcbdce8f843e",
++      "signed_seek_samples": 1669,
++      "swf_declared_sample_count": 2726784,
++      "swf_rate_code": 1,
++      "mp3_bytes": 492856,
++      "mp3_sha256": "b1340270d0e8f4b159bb4b057ea57ec227cd021fb12dc5fd37a46b7e3e9b78b5",
++      "probe": {
++        "codec_name": "mp3",
++        "sample_rate": "11025",
++        "channels": 1
++      },
++      "decoded_PCM_format": "signed16bit_little_endian_original_rate_channels",
++      "decoded_pcm_sha256": "3f63b0884240c467a8f3e2570314a1c2b6e814d79feb3327aff62ccab7cfc229",
++      "decoded_pcm_bytes": 5459328,
++      "decoded_sample_count_per_channel": 2729664,
++      "probed_frame_count": 4739,
++      "probed_frame_sample_sum": 2729664,
++      "decoded_minus_declared_samples": 2880,
++      "decode_seconds_by_probe_rate": 247.58857142857144,
++      "ffprobe_stderr": "",
++      "frame_probe_stderr": "",
++      "decoder_returncodes": [
++        0,
++        0,
++        0
++      ],
++      "ffmpeg_warning": "Duration estimated from bitrate; may be inaccurate. Exact sample count here uses emitted PCM bytes and frame-sample sum, not the bitrate-duration estimate.",
++      "MP3_frame_bytes_half_open_uncompressed_SWF_range": [
++        41,
++        492897
++      ],
++      "declared_seconds_at_probe_rate": 247.32734693877552
++    }
++  ]
++}
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-court-audio-resources-2026-10-29/OPEN-TODOS.json
+@@ -0,0 +1,64 @@
++{
++  "unchanged_inherited_requirements": {
++    "TEL01": {
++      "status": "TODO",
++      "held_advance": "Official NARA briefing copies00216/00217 now held; not the full Request14 native delivery.",
++      "missing": "Complete Request14cover/attachment/page/version/custody chain, including missingBates609\u2013631/fax011\u2013033 counterpart."
++    },
++    "TEL02": {
++      "status": "TODO_PARTIAL_ADVANCE",
++      "held": "Official briefing reports, column explanations, caller-name compilation account,11UA175/35UA93Airfone rows and2cellular labels.",
++      "missing": "Underlying GTEengineer materials, interview/leg/source-to-exhibit worksheets, original Keyton/usage-report source chain, court transcript content and formal source-to-caller associations."
++    },
++    "TEL03": {
++      "status": "TODO_PARTIAL_ADVANCE",
++      "held": "Source-specific reported Connect/Operator/SCP/ACIS/zone/compilation explanations; twoNoConn controls;23matching acceptedSCP/time candidates.",
++      "missing": "Applicable vendor dictionary/native export/version/error/default/billing/disconnect rules; timezone/clock config; independent high-resolution source readings, installed system and actual engineering validation.",
++      "preserve": [
++        "18/24Connect versus75/31SCP/MFR",
++        "2?7 and207/267candidate versus267letter andNoConnMFR",
++        "7565summary/MFR versus7555carrier",
++        "3?25summary versus14?5carrier versus3925MFR",
++        "8:32:39INT versus9:32:29MFR",
++        "earlier9:37:01/9:48:46transcriptions versus current9:37:03/9:48:48readings\u2014possible analyst errors, not establishedhistoricaldiscrepancies"
++      ],
++      "next_discriminating_input": "Actual named spreadsheet version/dictionary and the engineer/source-to-summary worksheets, including setup/failure/ground/operator legs; independently transcribed larger original."
++    },
++    "TEL04": {
++      "status": "TODO",
++      "missing": "Actual OSPS/operator/billing/transfer/recipient/PBX/DOJwatch-log records and call/leg identifiers; no identity inference from time matching.",
++      "test": "Join device/service -> nativeevent -> operator/transferleg -> recipient -> exhibit; preserve competing counts/descriptions."
++    },
++    "FAA_PD01_PD04": "All remain open: correctedQFR/receipt, signedaction/noaction/reasons, case-specificresolution/implementation and operative policy/routing.",
++    "recorder_materials": "Existing technical owner retains native/clock/specimen/calibration tasks; no duplicate or new endorsed result claimed.",
++    "steel": "Preservation decisions/native inventory/transfer/attribution rationale remain open.",
++    "goal_scope": "All five tracks and eighteen original-input requirements unchanged; partial acquisition and publication do not complete them.",
++    "authorization_limits": "No contact, fees, new requests/submissions, private source publication, mailbox access, hidden-identity reconstruction, source changes, deletion, private push, merge or rewrite."
++  },
++  "TEL02_resource_advance": "Two exact event MP3 sequences from the court derivative are now held/decoded; eightSWF resource census complete at stated scope. This is not acquisition of native carrier/recipient recording masters or a complete trial asset review.",
++  "remaining_resource_tests": [
++    {
++      "input": "Native source recording, exhibit-preparation/edit/custody and source-to-call mapping for the selected resources",
++      "test": "Compare masters/source segments and independently authenticated call identity; preserve contrary matches and edits.",
++      "next_route": "Original trial exhibit/transcript and release inventory, not filenames alone",
++      "trigger": "Actual source or preparation record becomes available"
++    },
++    {
++      "input": "Playback-state/in-out/loop/latency rules and applicable encoder details",
++      "test": "Separate sound-definition sample counts, MP3 decoded padding and actual played interval; preserve 2726784/2729664/1669",
++      "next_route": "Bounded passive SoundInfo/button/timeline analysis; no executable launch",
++      "trigger": "Specific source-state mapping is frozen before testing"
++    },
++    {
++      "input": "Actual intended transcript and separately authorized local semantic/custody review",
++      "test": "Listen/align selected telephone derivative without assigning identity from filename; no external transcription",
++      "status": "Unperformed; current test never listened"
++    },
++    {
++      "input": "Uninspected AA11alternate/UA93alternate/menu members and stream-resource contents",
++      "test": "Test their own resources if relevant; no all-archive absence/identity claim",
++      "status": "Inventory-only"
++    }
++  ],
++  "not_changed": "All five substantive tracks and eighteen original-input requirements remain open; no global blockage or completion from metadata/decoder/publication checks."
++}
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-court-audio-resources-2026-10-29/README.md
+@@ -0,0 +1,63 @@
++# Court archive contains separate encoded sound resources; two telephone candidates decoded locally
++
++The held court archive contains sound resources outside the four flight-diagram files previously used for telephone-summary text. A passive inspection found MP3-format event resources in **Lyles.swf, Ong.swf, Atta.swf and Jarrah.swf**. Two exact event resources from the first two files can be extracted and decoded locally. This advances the recording-artifact route under **AUD016-A1 / TC05-B105 / TC06-B110 and TEL02**. It does not authenticate speakers, calls, device/service, native recording provenance or carrier/operator fields.
++
++## Source and actual scope
++
++The [court's P200054 page](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html) links the [original distributed ZIP](https://coop.vaed.uscourts.gov/moussaoui/flights.zip). It describes a Flight77 summary that also includes the other three flights. The unchanged held ZIP is **28,304,524 bytes**, SHA-256 **3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801**, acquired October27,2026 at13:40:38.310051UTC. It contains12SWFs and two launchers. Those are not14 independent source records.
++
++Eight specified SWFs were recursively traversed, including nested sprites. Four other SWFs and the launchers were inventoried only. Nothing executable was run. Earlier work decoded selected static text; this unit adds resource classification and two local audio-format decodes. The [earlier briefing review](https://github.com/AveLyra/911-conspiracy-investigation/blob/681797a20a39d8c30e367c2220be15a191e3a409/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/README.md) and all earlier originals/conflicting values remain unchanged.
++
++| SWF member | DefineSound event resources | Streaming blocks | Result scope |
++|---|---:|---:|---|
++| AA11.swf |0|0|No inspected standard sound/import/video/binary tags|
++| AA77.swf |0|0|Same bounded result|
++| UA175.swf |0|0|Same bounded result|
++| UA93.swf |0|0|Same bounded result|
++| Lyles.swf |2|541|Root event1 selected for local decode|
++| Ong.swf |2|2894|Root event1 selected for local decode|
++| Atta.swf |3|579|Resource/header census only; no decoding/listening|
++| Jarrah.swf |5|431|Resource/header census only; no decoding/listening|
++
++This is **12 event definitions, not12 calls**. A small3,137-byte sound-data payload has the same SHA-256 in all four ancillary files: **ad509a1a6288c0aab21e9d2d220ebc8203a4de99e3232e25cd19d313136c1984**. Their resource IDs and containing bodies differ. Without listening or playback-state analysis its role is unassigned; count neither four independent recordings nor four corroborating events from this repeated resource. Streaming blocks also need not be distinct recordings or nonempty audio frames. The zero counts in the diagrams do not exclude external/script-loaded audio or sound elsewhere in the archive.
++
++## Exact two-resource extraction and test
++
++Both selected DefineSound tags begin at **uncompressed SWF byte26**, root container, soundID1. Their MP3 frame sequences start at byte41 after the tag header, sound fields and separate signed16bit SeekSamples value. Ranges below are zero-based, half-open, in the decompressed SWF, not byte positions in the ZIP or compressed SWF.
++
++| Field | Lyles.swf event1 | Ong.swf event1 |
++|---|---:|---:|
++| MP3 frame byte range |[41,540776)|[41,492897)|
++| MP3 bytes |540735|492856|
++| Decoder sample rate/channels |44100Hz / mono|11025Hz / mono|
++| SWF declared sample count |1987200|2726784|
++| Signed SeekSamples field |0|1669|
++| Standalone decoded sample count |1987200|2729664|
++| Decoded minus declared count |0|2880|
++| Declared count divided by probed rate |45.061224490s|247.327346939s|
++| Decoded count divided by probed rate |45.061224490s|247.588571429s|
++
++The **Ong resource's declared count, standalone decoded count and playback offset are different quantities, all preserved here**. The difference2880samples is about0.261224490seconds at11025Hz. The1669 offset is separately about0.151383220seconds; it is not silently subtracted or treated as explaining the difference. The standalone decoder did not receive SWF playback instructions. Encoder latency/padding, publication/authoring sample accounting, or other format behavior are untested possibilities; no preferred explanation or discrepancy resolution is adopted. These results do not establish an edit, deletion, fabricated call, precise conversational length or a historical clock offset.
++
++Exact extracted MP3 SHA-256 values:
++
++- Lyles: **53d4d3256cf941cb2ad659e4bfdaed341e440d4dfa1484a3c84b2e07210e197e**.
++- Ong: **b1340270d0e8f4b159bb4b057ea57ec227cd021fb12dc5fd37a46b7e3e9b78b5**.
++
++FFmpeg/ffprobe7.1.1 locally decoded original-rate/channel signed16bit PCM. PCM byte-derived sample counts agreed with summed probed-frame samples. FFmpeg and ffprobe share a library family: this is **not independent decoder validation**. Bitrate-duration warnings occurred; these figures use exact emitted PCM counts, not bitrate duration estimates. No trimming, resampling, normalization or source overwrite occurred. Raw MP3 derivatives remain on guarded local media; PCM was hashed in memory only. No audio was listened to, transcribed, uploaded or published, and no claim is made about its audible contents.
++
++## Method controls and limits
++
++Member hashes, declared/decompressed length limits, tag/container bounds, terminalEnd positions and nested-sprite traversal were checked. Exact tag tuples also agreed with the earlier local parser. A known event-tag fixture and three malformed-container cases checked identification/rejection. A portable reproduction used a separate arithmetic RECT-header offset calculation and reproduced all eight member hashes/counts plus the two PCM hashes/counts. This reuses traversal logic and the same codec implementation; agreement is not a second independent source or universal parser certification.
++
++Tag/field interpretation follows the [Adobe2012SWF19 specification, mirrored copy](https://open-flash.github.io/mirrors/swf-spec-19.pdf): printed177–180/188 for coding/event/latency fields;181–184 for streams;235–237 for numeric tag index. The originalAdobe endpoint returned404. Mirror identity, bytes and hash are recorded; no claim that it is the exact historical authoring version. Only relevant passages were read, not all243pages. The code treats sound-definition counts and playback controls separately.
++
++The critical adverse limit is provenance: **a court presentation may contain prepared excerpts or other derivatives**. Recovering valid encoded bytes does not establish an unedited recipient/carrier master, voice identity, service type or linkage to a particular switch row. File names and trial-page labeling alone cannot make those joins. Radio-named files remain out of this chat's substantive recorder interpretation.
++
++## TODOs and continuation
++
++TEL01–TEL04 and the inherited conflicting carrier/briefing/usage values remain open in [OPEN-TODOS.json](OPEN-TODOS.json). Native engineering dictionaries, switch/operator/transfer records, actual Keyton/usage originals and source-to-call worksheets were not recovered. Four targeted engineer searches and a museum-route inspection did not produce those originals; their non-acquisition is not evidence of destruction, withholding or wrongdoing. No failed route was retold as a new suspicious finding.
++
++The next feasible test is **passive mapping of the selected sound IDs to SoundInfo/button/timeline controls**, frozen before execution, to distinguish defined resources from actual played intervals. Independent native source-recording and exhibit-preparation/custody records are needed for any stronger authenticity or excerpt claim. Museum recipient-supplied audio remains a separate accession/transfer lead, not an acquired original. All five work-plan tracks and18original-input requirements remain; this bounded resource/test advance does not complete them.
++
++Source hashes/locators: [SOURCES.json](SOURCES.json), [RESOURCE-COUNTS.json](RESOURCE-COUNTS.json), [DECODE-RESULTS.json](DECODE-RESULTS.json). Method: [reproduce_resources.py](reproduce_resources.py), [REPRODUCE.md](REPRODUCE.md). Actual scope/checklist: [REVIEW-AND-CHECKS.json](REVIEW-AND-CHECKS.json). The exact additive note/code diff is [TEXT-CHANGES.diff](TEXT-CHANGES.diff); predecessor reports remain frozen. Raw archive/audio/PDF/images, private correspondence, personal/contact/account fields, case strategy and credentials are excluded from the public payload. No outreach, fee, request/filing, private push, deletion, merge, history rewrite or historical conspiracy finding is made.
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-court-audio-resources-2026-10-29/REPRODUCE.md
+@@ -0,0 +1,11 @@
++# Reproduction
++
++Use the unchanged court ZIP linked in SOURCES.json, verifying its SHA-256 first. Python3 standard library is sufficient for passive counts. Local ffprobe/ffmpeg7.1.1 are required for the two selected audio decodes; later versions may produce different decoded PCM and need comparison. Put them on PATH. Do not run any archive launcher or SWF runtime.
++
++```sh
++python3 reproduce_resources.py /absolute/path/to/court-flights.zip --decode > reproduction.json
++```
++
++The script writes no extracted audio or PCM, prints numeric/hash results, and never plays sound. It checks the exact archive, traverses eight explicit members/sprites, records all tag counts and event-resource metadata, and decodes only root event1 in Lyles/Ong. Decode is optional: omit --decode for resource inspection alone. Compare members/tag_counts/events with RESOURCE-COUNTS.json and decodes with DECODE-RESULTS.json. Frame-byte ranges are in decompressedSWF. The code ignores scripts/external resources and does not reconstruct display/playback state.
++
++The performed native run also preserved exact MP3 extracts locally through the repository's media guard, used the prior parser for tuple cross-checks, and rejected three malformed fixtures. The portable run does not purport to repeat those extra implementation controls or make an independent codec implementation. Header sample counts and signedSeekSamples remain separate from untrimmed decoder samples. No inference about original conversation or authentication follows from successful reproduction.
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-court-audio-resources-2026-10-29/RESOURCE-COUNTS.json
+@@ -0,0 +1,575 @@
++{
++  "archive_sha256": "3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801",
++  "archive_inventory": [
++    {
++      "name": "UA93.swf",
++      "bytes": 3464811,
++      "compressed_bytes": 3047967
++    },
++    {
++      "name": "_Start Here PC.exe",
++      "bytes": 1088804,
++      "compressed_bytes": 604538
++    },
++    {
++      "name": "AA 11 Calls.swf",
++      "bytes": 4835234,
++      "compressed_bytes": 4514413
++    },
++    {
++      "name": "AA11.swf",
++      "bytes": 4835834,
++      "compressed_bytes": 4515537
++    },
++    {
++      "name": "AA77.swf",
++      "bytes": 5162821,
++      "compressed_bytes": 4909562
++    },
++    {
++      "name": "Atta.swf",
++      "bytes": 390835,
++      "compressed_bytes": 310656
++    },
++    {
++      "name": "Jarrah.swf",
++      "bytes": 2790006,
++      "compressed_bytes": 801935
++    },
++    {
++      "name": "Lyles.swf",
++      "bytes": 3179634,
++      "compressed_bytes": 1208952
++    },
++    {
++      "name": "Main.swf",
++      "bytes": 85276,
++      "compressed_bytes": 56758
++    },
++    {
++      "name": "MainNew.swf",
++      "bytes": 85276,
++      "compressed_bytes": 56758
++    },
++    {
++      "name": "Ong.swf",
++      "bytes": 1324975,
++      "compressed_bytes": 1115173
++    },
++    {
++      "name": "UA 93 Calls.swf",
++      "bytes": 3464520,
++      "compressed_bytes": 3046981
++    },
++    {
++      "name": "UA175.swf",
++      "bytes": 3877362,
++      "compressed_bytes": 3511119
++    },
++    {
++      "name": "_Start Here Mac OSX",
++      "bytes": 1303487,
++      "compressed_bytes": 602783
++    }
++  ],
++  "members_tested": [
++    {
++      "member": "AA11.swf",
++      "member_sha256": "046a56ac1d1cd53fca4dae990547de0346946cfff49c32a66c3e19985cdff9d6",
++      "member_bytes": 4835834,
++      "uncompressed_bytes": 4835834,
++      "tag_counts": {
++        "9": 1,
++        "2": 582,
++        "34": 387,
++        "22": 114,
++        "39": 118,
++        "12": 503,
++        "26": 18076,
++        "1": 5397,
++        "0": 119,
++        "48": 17,
++        "11": 725,
++        "46": 663,
++        "32": 236,
++        "28": 1994,
++        "43": 403,
++        "33": 1,
++        "21": 97,
++        "8": 1,
++        "6": 1
++      },
++      "event_resources": [],
++      "root_stream_headers": []
++    },
++    {
++      "member": "AA77.swf",
++      "member_sha256": "844dfb545c8414f9e7da1edc89ffe090a09d00d721a2c65c820e15f5fe201a06",
++      "member_bytes": 5162821,
++      "uncompressed_bytes": 5162821,
++      "tag_counts": {
++        "9": 1,
++        "2": 455,
++        "34": 253,
++        "22": 84,
++        "39": 98,
++        "26": 18330,
++        "1": 4282,
++        "0": 99,
++        "48": 14,
++        "11": 547,
++        "46": 462,
++        "32": 160,
++        "28": 1540,
++        "12": 402,
++        "43": 310,
++        "33": 1,
++        "21": 70
++      },
++      "event_resources": [],
++      "root_stream_headers": []
++    },
++    {
++      "member": "UA175.swf",
++      "member_sha256": "e175c6586bd86de54f9cc7ccbd4777dba4e364b51a948e5898f6c55328f7c9d4",
++      "member_bytes": 3877362,
++      "uncompressed_bytes": 3877362,
++      "tag_counts": {
++        "9": 1,
++        "2": 508,
++        "34": 239,
++        "22": 104,
++        "39": 106,
++        "26": 28888,
++        "1": 4382,
++        "0": 107,
++        "46": 464,
++        "28": 1500,
++        "32": 158,
++        "48": 15,
++        "11": 533,
++        "12": 357,
++        "43": 284,
++        "33": 1,
++        "21": 68
++      },
++      "event_resources": [],
++      "root_stream_headers": []
++    },
++    {
++      "member": "UA93.swf",
++      "member_sha256": "f104ab54492e05550c9e776894e0dbb0d9238039a8f2e9c40be41b1a122d7675",
++      "member_bytes": 3464811,
++      "uncompressed_bytes": 3464811,
++      "tag_counts": {
++        "9": 1,
++        "2": 454,
++        "34": 234,
++        "48": 15,
++        "11": 419,
++        "22": 127,
++        "39": 87,
++        "26": 40686,
++        "1": 3726,
++        "0": 88,
++        "46": 355,
++        "28": 1216,
++        "32": 181,
++        "12": 326,
++        "43": 242,
++        "33": 1,
++        "21": 48
++      },
++      "event_resources": [],
++      "root_stream_headers": []
++    },
++    {
++      "member": "Lyles.swf",
++      "member_sha256": "28f2a83db87177a2538ebd36ddfc03b63e7b696b7d16603a793921ff27ce4ec7",
++      "member_bytes": 3179634,
++      "uncompressed_bytes": 3179634,
++      "tag_counts": {
++        "9": 1,
++        "14": 2,
++        "56": 1,
++        "18": 1,
++        "12": 18,
++        "22": 12,
++        "26": 147067,
++        "2": 51,
++        "10": 9,
++        "13": 9,
++        "11": 137,
++        "32": 30,
++        "34": 14,
++        "39": 12,
++        "45": 12,
++        "43": 66,
++        "1": 62889,
++        "28": 31,
++        "0": 13,
++        "46": 12,
++        "21": 1,
++        "17": 4,
++        "19": 541
++      },
++      "event_resources": [
++        {
++          "code": 14,
++          "name": "DefineSound",
++          "uncompressed_tag_offset": 26,
++          "body_bytes": 540744,
++          "body_sha256": "17e075660f64010ba0a97192deaa2617a9285f2e24ebe9a70109c80250870d55",
++          "container": "root",
++          "sound_id": 1,
++          "format_code": 2,
++          "rate_code": 3,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "sample_count": 1987200,
++          "sound_data_bytes": 540737,
++          "sound_data_sha256": "14e162cf5695f856980277e4c6ee7fa6c4c294da8e9128720135eb546320e1d3"
++        },
++        {
++          "code": 14,
++          "name": "DefineSound",
++          "uncompressed_tag_offset": 3025472,
++          "body_bytes": 3144,
++          "body_sha256": "5268849f5d336acd1ac0c5bf6d7920f423fea47594014701d7ce4590ebdeba49",
++          "container": "root",
++          "sound_id": 224,
++          "format_code": 2,
++          "rate_code": 2,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "sample_count": 6912,
++          "sound_data_bytes": 3137,
++          "sound_data_sha256": "ad509a1a6288c0aab21e9d2d220ebc8203a4de99e3232e25cd19d313136c1984"
++        }
++      ],
++      "root_stream_headers": [
++        {
++          "code": 18,
++          "name": "SoundStreamHead",
++          "uncompressed_tag_offset": 540795,
++          "body_bytes": 6,
++          "body_sha256": "2be97b7ba2b425dd53dc792092cfb16027f05c0a1a5791e877127aa9c3a6ed2b",
++          "container": "root",
++          "header_hex": "262696036106",
++          "stream_compression": 2,
++          "rate_code": 1,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "average_sample_count": 918
++        }
++      ]
++    },
++    {
++      "member": "Ong.swf",
++      "member_sha256": "8c844a2370852e55597a4aa73ef8b8ff0e6c03e3fec982a9cd98aeb937e5a3ec",
++      "member_bytes": 1324975,
++      "uncompressed_bytes": 1324975,
++      "tag_counts": {
++        "9": 1,
++        "14": 2,
++        "56": 1,
++        "18": 1,
++        "12": 10,
++        "22": 7,
++        "26": 13460,
++        "2": 38,
++        "48": 10,
++        "11": 340,
++        "32": 28,
++        "34": 74,
++        "39": 9,
++        "45": 9,
++        "1": 6042,
++        "43": 98,
++        "28": 78,
++        "0": 10,
++        "46": 12,
++        "21": 1,
++        "17": 2,
++        "19": 2894
++      },
++      "event_resources": [
++        {
++          "code": 14,
++          "name": "DefineSound",
++          "uncompressed_tag_offset": 26,
++          "body_bytes": 492865,
++          "body_sha256": "18cec28ca9895f8b7fa765fc631bdf5d60e09bb517c66f70904d94de3a5af8ff",
++          "container": "root",
++          "sound_id": 1,
++          "format_code": 2,
++          "rate_code": 1,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "sample_count": 2726784,
++          "sound_data_bytes": 492858,
++          "sound_data_sha256": "2a02658259f2fe5f23582d55ef4bd376423bbdf98bd9a06567eebcbdce8f843e"
++        },
++        {
++          "code": 14,
++          "name": "DefineSound",
++          "uncompressed_tag_offset": 677270,
++          "body_bytes": 3144,
++          "body_sha256": "7424f42b9b917beebe960f823289dc9d101cd076de555e1e5e9f5f9fdfa9d58c",
++          "container": "root",
++          "sound_id": 345,
++          "format_code": 2,
++          "rate_code": 2,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "sample_count": 6912,
++          "sound_data_bytes": 3137,
++          "sound_data_sha256": "ad509a1a6288c0aab21e9d2d220ebc8203a4de99e3232e25cd19d313136c1984"
++        }
++      ],
++      "root_stream_headers": [
++        {
++          "code": 18,
++          "name": "SoundStreamHead",
++          "uncompressed_tag_offset": 492914,
++          "body_bytes": 6,
++          "body_sha256": "2be97b7ba2b425dd53dc792092cfb16027f05c0a1a5791e877127aa9c3a6ed2b",
++          "container": "root",
++          "header_hex": "262696036106",
++          "stream_compression": 2,
++          "rate_code": 1,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "average_sample_count": 918
++        }
++      ]
++    },
++    {
++      "member": "Atta.swf",
++      "member_sha256": "f6e28e7c578aca8015b3880d988e479349db7a11d645312905e3cbf36af5713d",
++      "member_bytes": 390835,
++      "uncompressed_bytes": 390835,
++      "tag_counts": {
++        "9": 1,
++        "14": 3,
++        "56": 2,
++        "18": 1,
++        "12": 16,
++        "22": 13,
++        "26": 3732,
++        "2": 38,
++        "10": 11,
++        "13": 11,
++        "11": 218,
++        "32": 27,
++        "34": 75,
++        "39": 8,
++        "45": 8,
++        "1": 1331,
++        "43": 101,
++        "28": 28,
++        "0": 9,
++        "46": 11,
++        "21": 1,
++        "17": 4,
++        "19": 579
++      },
++      "event_resources": [
++        {
++          "code": 14,
++          "name": "DefineSound",
++          "uncompressed_tag_offset": 26,
++          "body_bytes": 19249,
++          "body_sha256": "1d10cd539380be76a90208b6f781be36c3179aa54be8c36463e8f460b1319758",
++          "container": "root",
++          "sound_id": 1,
++          "format_code": 2,
++          "rate_code": 1,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "sample_count": 103680,
++          "sound_data_bytes": 19242,
++          "sound_data_sha256": "6ac920dbe5584ca3e4b74ba9b7f7aa926cc3525da0ac49bc7747439eda2a8ec4"
++        },
++        {
++          "code": 14,
++          "name": "DefineSound",
++          "uncompressed_tag_offset": 19300,
++          "body_bytes": 76033,
++          "body_sha256": "c9a529eed414531ba47245ad3e5b7ba65330fde55d2d97566a908e9cf111d156",
++          "container": "root",
++          "sound_id": 2,
++          "format_code": 2,
++          "rate_code": 1,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "sample_count": 418176,
++          "sound_data_bytes": 76026,
++          "sound_data_sha256": "a4b042d2a994c4ef42c544710824749f8ecaa9e1bbe89f21f1f2fbe57761fcfd"
++        },
++        {
++          "code": 14,
++          "name": "DefineSound",
++          "uncompressed_tag_offset": 250912,
++          "body_bytes": 3144,
++          "body_sha256": "aefb6d093d77e57c9aaddfc6b4dc44d4ba3c7ff55ee272b2de9e7e44325000b3",
++          "container": "root",
++          "sound_id": 354,
++          "format_code": 2,
++          "rate_code": 2,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "sample_count": 6912,
++          "sound_data_bytes": 3137,
++          "sound_data_sha256": "ad509a1a6288c0aab21e9d2d220ebc8203a4de99e3232e25cd19d313136c1984"
++        }
++      ],
++      "root_stream_headers": [
++        {
++          "code": 18,
++          "name": "SoundStreamHead",
++          "uncompressed_tag_offset": 95358,
++          "body_bytes": 6,
++          "body_sha256": "2be97b7ba2b425dd53dc792092cfb16027f05c0a1a5791e877127aa9c3a6ed2b",
++          "container": "root",
++          "header_hex": "262696036106",
++          "stream_compression": 2,
++          "rate_code": 1,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "average_sample_count": 918
++        }
++      ]
++    },
++    {
++      "member": "Jarrah.swf",
++      "member_sha256": "a89ed3b8f04502c0c25a620463e70e9d8779a9a363a8aa0b68c045ade037133a",
++      "member_bytes": 2790006,
++      "uncompressed_bytes": 2790006,
++      "tag_counts": {
++        "9": 1,
++        "14": 5,
++        "56": 4,
++        "18": 1,
++        "12": 50,
++        "22": 20,
++        "26": 146737,
++        "2": 62,
++        "10": 10,
++        "13": 10,
++        "11": 143,
++        "32": 36,
++        "34": 20,
++        "39": 11,
++        "45": 11,
++        "43": 93,
++        "1": 62055,
++        "28": 348,
++        "0": 12,
++        "46": 20,
++        "21": 1,
++        "17": 8,
++        "19": 431
++      },
++      "event_resources": [
++        {
++          "code": 14,
++          "name": "DefineSound",
++          "uncompressed_tag_offset": 26,
++          "body_bytes": 142325,
++          "body_sha256": "cde2e5badbf6303e79358a7bcc80333908c1f982cce28713d4a9e422a56d8873",
++          "container": "root",
++          "sound_id": 1,
++          "format_code": 2,
++          "rate_code": 1,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "sample_count": 130752,
++          "sound_data_bytes": 142318,
++          "sound_data_sha256": "9b538ab02936f5daf7bbcb78ebb111c9f2e559627125c9122b767ebb05c38c56"
++        },
++        {
++          "code": 14,
++          "name": "DefineSound",
++          "uncompressed_tag_offset": 142376,
++          "body_bytes": 16961,
++          "body_sha256": "31e48a389305cff778da377a425feb81bf18bec90d8a2ea4b3d2abbe6d1a8ff3",
++          "container": "root",
++          "sound_id": 2,
++          "format_code": 2,
++          "rate_code": 1,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "sample_count": 91008,
++          "sound_data_bytes": 16954,
++          "sound_data_sha256": "609cd7dee00178443e64c114380b3a4730653b20a8c2ddf4e8c77583437283af"
++        },
++        {
++          "code": 14,
++          "name": "DefineSound",
++          "uncompressed_tag_offset": 159362,
++          "body_bytes": 12177,
++          "body_sha256": "fff6cb283932c722a3ff68c0c2022645e16e6acb6fbc2282caa8a179c95d984a",
++          "container": "root",
++          "sound_id": 3,
++          "format_code": 2,
++          "rate_code": 1,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "sample_count": 64512,
++          "sound_data_bytes": 12170,
++          "sound_data_sha256": "992a8986072deed1afd5c872d7b337ad5aae6aca1c66ea6a9e95799bc85c1439"
++        },
++        {
++          "code": 14,
++          "name": "DefineSound",
++          "uncompressed_tag_offset": 171565,
++          "body_bytes": 14465,
++          "body_sha256": "54e7263536cdc0ba55c8b3bdf52f2ecc0851b90418b642117cb49e23176d50be",
++          "container": "root",
++          "sound_id": 4,
++          "format_code": 2,
++          "rate_code": 1,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "sample_count": 77184,
++          "sound_data_bytes": 14458,
++          "sound_data_sha256": "703dba843b1e0d9889c02e28e101ad427321582b0f811294e81e1348643dc6b2"
++        },
++        {
++          "code": 14,
++          "name": "DefineSound",
++          "uncompressed_tag_offset": 2638824,
++          "body_bytes": 3144,
++          "body_sha256": "04859d48abf55c43a3e8ed74b3da5ba628b3ac6c0792b0d00c31743555ac2d02",
++          "container": "root",
++          "sound_id": 241,
++          "format_code": 2,
++          "rate_code": 2,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "sample_count": 6912,
++          "sound_data_bytes": 3137,
++          "sound_data_sha256": "ad509a1a6288c0aab21e9d2d220ebc8203a4de99e3232e25cd19d313136c1984"
++        }
++      ],
++      "root_stream_headers": [
++        {
++          "code": 18,
++          "name": "SoundStreamHead",
++          "uncompressed_tag_offset": 186056,
++          "body_bytes": 6,
++          "body_sha256": "2be97b7ba2b425dd53dc792092cfb16027f05c0a1a5791e877127aa9c3a6ed2b",
++          "container": "root",
++          "header_hex": "262696036106",
++          "stream_compression": 2,
++          "rate_code": 1,
++          "size_flag": 1,
++          "stereo_flag": 0,
++          "average_sample_count": 918
++        }
++      ]
++    }
++  ],
++  "scope": "Eight named SWFs, recursively including sprites. The other four SWFs and two launchers are inventory-only. No standalone audio files appear by extension. No script execution or claim that tag absence rules out scripted/external resources."
++}
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-court-audio-resources-2026-10-29/REVIEW-AND-CHECKS.json
+@@ -0,0 +1,47 @@
++{
++  "checked_utc": "2026-10-29T20:40:53.905264+00:00",
++  "performed": {
++    "eight_member_hash_and_count_reproduction": true,
++    "two_MP3_and_PCM_count_hash_reproduction": true,
++    "declared_lengths_tag_sprite_bounds": true,
++    "known_fixture": true,
++    "malformed_fixtures_rejected": 3,
++    "source_original_hash": true,
++    "predecessor_report_and_TODO_hashes_unchanged": true,
++    "head_and_format_bytes_not_semantic_authentication": true
++  },
++  "checklist": [
++    {
++      "requirement": "Underlying records rather than another report summary",
++      "result": "Actually recovered two encoded court-derivative audio resources; native masters/engineering/carrier inputs remain missing"
++    },
++    {
++      "requirement": "Reproducible test with competing accounts",
++      "result": "Exact resource/frame/PCM hashes and counts;2880difference and1669offset retained; codec/authoring alternatives untested"
++    },
++    {
++      "requirement": "Source links and locators",
++      "result": "CourtURL/acquisition/hash/member/tag/range; method-reference mirror explicitly qualified"
++    },
++    {
++      "requirement": "Conflicts, prior versions and TODOs",
++      "result": "InheritedTEL01\u201304plus five/eighteen goals unchanged; new state/identity/native source gaps retained"
++    },
++    {
++      "requirement": "Revision accounting",
++      "result": "New unit additions against empty paths; predecessor working source bytes unchanged; exact additive diff excludes itself"
++    },
++    {
++      "requirement": "Publish eligible additions asAveLyra",
++      "result": "Numeric/method notes only; publication/ref/body/identity verification is a separate subsequent receipt, not claimed by this build"
++    }
++  ],
++  "not_performed": [
++    "No listening/transcription or caller/voice authentication",
++    "No native-carrier/recipient master acquisition",
++    "No script execution, playback-state or clock reconstruction",
++    "No substantive radio/recorder interpretation",
++    "No physical/scientific replication or overall-goal completion"
++  ],
++  "public_payload_review": "Original research numeric/hash/method text only. No raw audio/archive/PDF/images, contact/account identifiers, private correspondence/strategy or credentials."
++}
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-court-audio-resources-2026-10-29/SOURCES.json
+@@ -0,0 +1,35 @@
++{
++  "court_archive": {
++    "url": "https://coop.vaed.uscourts.gov/moussaoui/flights.zip",
++    "access_utc": "2026-10-27T13:40:38.310051+00:00",
++    "bytes": 28304524,
++    "sha256": "3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801",
++    "relationship": "Held court-distributed trial presentation; not native carrier/voicemail evidence or source custody."
++  },
++  "court_item_page": {
++    "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html",
++    "held_bytes": 2117,
++    "held_sha256": "866887c38f78c1f5b68ab73a695ae5345812eaf53a3e34da240f5345a1cd96c5",
++    "reading": "Held court page and current public page inspected. Page identifies P200054 as a Flight77 summary containing other-flight material; label is not individual audio custody."
++  },
++  "format_reference": {
++    "url": "https://open-flash.github.io/mirrors/swf-spec-19.pdf",
++    "resolved_url": "https://open-flash.github.io/mirrors/swf-spec-19.pdf",
++    "access_utc": "2026-10-29T20:37:36.021723+00:00",
++    "bytes": 1724258,
++    "sha256": "6a1625b0929a86329021d365ba079c7e1f51502dfb4ea7d92ec9947841625cdd",
++    "http_status": 200,
++    "relationship": "Mirror of Adobe2012SWF19 technical specification, not court source or authenticated historical version",
++    "scope_read": "Selected sound fields and tag-index passages only; not all243pages; originalAdobeURL404; rawPDF excluded frompublicpayload"
++  },
++  "predecessor_review": {
++    "url": "https://github.com/AveLyra/911-conspiracy-investigation/blob/681797a20a39d8c30e367c2220be15a191e3a409/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/README.md",
++    "sha256": "a5a834c8e368f8e2df839f59cefafd16014c2d22ef4dcdcc41a8cef7d9eb5434",
++    "status": "Frozen unchanged; its native-input conflicts are not resolved by this resource test."
++  },
++  "inspection_UTC": {
++    "diagrams": "2026-10-29T20:32:50.621120+00:00",
++    "ancillary": "2026-10-29T20:33:46.104624+00:00",
++    "decode": "2026-10-29T20:35:36.900997+00:00"
++  }
++}
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-court-audio-resources-2026-10-29/reproduce_resources.py
+@@ -0,0 +1,148 @@
++"""Portable passive court-resource check; optional local-only audio decoding.
++
++Usage: python3 reproduce_resources.py /path/to/court-flights.zip --decode
++Prints numeric/hash results; never executes SWF code, plays audio or saves audio.
++"""
++import argparse
++import collections
++import hashlib
++import json
++import shutil
++import struct
++import subprocess
++import zipfile
++import zlib
++
++EXPECTED = "3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801"
++MEMBERS = ("AA11.swf", "AA77.swf", "UA175.swf", "UA93.swf",
++           "Lyles.swf", "Ong.swf", "Atta.swf", "Jarrah.swf")
++MAX_BYTES = 64 * 1024 * 1024
++SELECTED = (14, 15, 17, 18, 19, 45, 89, 57, 71, 60, 61, 87)
++
++
++def sha(data):
++    return hashlib.sha256(data).hexdigest()
++
++
++def unpack(raw):
++    if len(raw) < 12 or raw[:3] not in (b"FWS", b"CWS"):
++        raise ValueError("Unsupported or short SWF")
++    declared = struct.unpack_from("<I", raw, 4)[0]
++    if not 12 <= declared <= MAX_BYTES:
++        raise ValueError("Declared length outside scope")
++    if raw[:3] == b"CWS":
++        dec = zlib.decompressobj()
++        body = dec.decompress(raw[8:], declared - 8 + 1)
++        if not dec.eof or dec.unused_data or dec.unconsumed_tail:
++            raise ValueError("Incomplete, trailing or excessive compressed data")
++        data = b"FWS" + raw[3:8] + body
++    else:
++        data = raw
++    if len(data) != declared:
++        raise ValueError("Declared/actual length mismatch")
++    return data
++
++
++def walk(data, start, stop, path="root", depth=0):
++    if depth > 64 or not 0 <= start <= stop <= len(data):
++        raise ValueError("Container bounds/depth")
++    pos = start
++    while pos < stop:
++        offset = pos
++        if pos + 2 > stop:
++            raise ValueError("Short tag header")
++        header = struct.unpack_from("<H", data, pos)[0]
++        pos += 2
++        code, size = header >> 6, header & 63
++        if size == 63:
++            if pos + 4 > stop:
++                raise ValueError("Short extended header")
++            size = struct.unpack_from("<I", data, pos)[0]
++            pos += 4
++        if pos + size > stop:
++            raise ValueError("Tag exceeds container")
++        body = data[pos:pos + size]
++        yield code, offset, body, path
++        if code == 39:
++            if size < 6:
++                raise ValueError("Short sprite")
++            sprite = struct.unpack_from("<H", body)[0]
++            yield from walk(data, pos + 4, pos + size,
++                            path + "/sprite-" + str(sprite), depth + 1)
++        pos += size
++        if code == 0:
++            if size or pos != stop:
++                raise ValueError("Nonterminal or nonempty End tag")
++            return
++    raise ValueError("Missing End tag")
++
++
++def decode(mp3, ffprobe, ffmpeg):
++    def run(args):
++        return subprocess.run(args, input=mp3, capture_output=True, check=True, timeout=90)
++    probe = run([ffprobe, "-v", "error", "-select_streams", "a:0", "-show_entries",
++                 "stream=codec_name,sample_rate,channels", "-of", "json", "pipe:0"])
++    stream = json.loads(probe.stdout)["streams"][0]
++    frames = run([ffprobe, "-v", "error", "-select_streams", "a:0", "-show_frames",
++                  "-show_entries", "frame=nb_samples", "-of", "json", "pipe:0"])
++    frame_list = json.loads(frames.stdout)["frames"]
++    pcm = run([ffmpeg, "-v", "error", "-i", "pipe:0", "-map", "0:a:0",
++               "-c:a", "pcm_s16le", "-f", "s16le", "pipe:1"]).stdout
++    assert len(pcm) <= MAX_BYTES and len(pcm) % (2 * int(stream["channels"])) == 0
++    samples = len(pcm) // (2 * int(stream["channels"]))
++    assert samples == sum(int(x["nb_samples"]) for x in frame_list)
++    return {"probe": stream, "decoded_pcm_sha256": sha(pcm), "decoded_pcm_bytes": len(pcm),
++            "decoded_sample_count_per_channel": samples, "probed_frame_count": len(frame_list),
++            "probed_frame_sample_sum": samples}
++
++
++def main():
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument("archive")
++    parser.add_argument("--decode", action="store_true")
++    args = parser.parse_args()
++    with open(args.archive, "rb") as f:
++        assert sha(f.read()) == EXPECTED
++    ffprobe, ffmpeg = shutil.which("ffprobe"), shutil.which("ffmpeg")
++    if args.decode and not (ffprobe and ffmpeg):
++        raise RuntimeError("Local ffprobe and ffmpeg required for --decode")
++    result = {"archive_sha256": EXPECTED, "members": [], "decodes": []}
++    with zipfile.ZipFile(args.archive) as z:
++        for name in MEMBERS:
++            assert z.getinfo(name).file_size <= MAX_BYTES
++            raw = z.read(name)
++            data = unpack(raw)
++            # RECT begins with five-bit Nbits, then four signed Nbits fields.
++            start = 8 + (5 + 4 * (data[8] >> 3) + 7) // 8 + 4
++            tags = list(walk(data, start, len(data)))
++            counts = collections.Counter(t[0] for t in tags)
++            events = []
++            streams = []
++            for code, offset, body, path in tags:
++                if code == 14:
++                    assert len(body) >= 7
++                    row = {"uncompressed_tag_offset": offset, "body_bytes": len(body),
++                           "body_sha256": sha(body), "container": path,
++                           "sound_id": struct.unpack_from("<H", body)[0],
++                           "format_code": body[2] >> 4, "rate_code": (body[2] >> 2) & 3,
++                           "sample_count": struct.unpack_from("<I", body, 3)[0],
++                           "sound_data_bytes": len(body) - 7, "sound_data_sha256": sha(body[7:])}
++                    events.append(row)
++                    if args.decode and name in ("Lyles.swf", "Ong.swf") and row["sound_id"] == 1 and path == "root":
++                        assert row["format_code"] == 2 and len(body) >= 9
++                        mp3 = body[9:]
++                        checked = decode(mp3, ffprobe, ffmpeg)
++                        checked.update(member=name, mp3_sha256=sha(mp3), mp3_bytes=len(mp3),
++                                       signed_seek_samples=struct.unpack_from("<h", body, 7)[0],
++                                       swf_declared_sample_count=row["sample_count"])
++                        result["decodes"].append(checked)
++                if code in (18, 45) and path == "root":
++                    streams.append({"uncompressed_tag_offset": offset, "header_hex": body.hex()})
++            result["members"].append({"member": name, "member_sha256": sha(raw),
++                                       "tag_counts": dict(counts), "events": events,
++                                       "root_stream_headers": streams})
++    print(json.dumps(result, indent=2))
++
++
++if __name__ == "__main__":
++    main()
