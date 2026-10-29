@@ -1,0 +1,427 @@
+--- /dev/null
++++ COMPARISON.json
+@@ -0,0 +1,74 @@
++[
++  {
++    "id": "CW01",
++    "source": "CW2010",
++    "pages": [
++      3,
++      4
++    ],
++    "locator": "Item3.2 at physical/printedp3; paragraph1p4; current pypdf linesp3:38–45 andp4:2–10",
++    "observation": "The authorization item identifies G-0006 and a January31,2007 artifact inventory; the account describes a36in-long tube with no visible identification marks.",
++    "status": "Official account, not independent authentication of origin, inventory entry, execution or delivery."
++  },
++  {
++    "id": "CW02",
++    "source": "CW2010",
++    "pages": [
++      4
++    ],
++    "locator": "Paragraph1, final two sentences; current pypdf lines8–10",
++    "verbatim_fragment": "be cut into two pieces if requested",
++    "observation": "Conditional cutting is described in the minutes.",
++    "status": "The signed agreement and any actual cutting/condition/receipt records remain missing; no cutting event inferred."
++  },
++  {
++    "id": "BH01",
++    "source": "BH2011",
++    "pages": [
++      2
++    ],
++    "locator": "Staff report opening paragraph, third sentence; current pypdf line1 (words concatenate in this extraction)",
++    "observation": "Beverly Hills staff reports a nonalteration requirement for its artifact.",
++    "status": "Retained alongside the earlier finding that an equivalent express clause was not located in the attached letter/order; any separate instruction remains missing."
++  },
++  {
++    "id": "BH02",
++    "source": "BH2011",
++    "pages": [
++      11,
++      12
++    ],
++    "locator": "Order final paragraphp11 continuing first paragraphp12; current pypdf p11lines19–20 / p12lines1–3",
++    "observation": "The reproduced item-specific order reserves inspection/testing for litigation parties or representatives with ten days notice.",
++    "status": "No present enforceability, public entitlement, actual test or application to G-0006 established."
++  },
++  {
++    "id": "CW03",
++    "source": "CW2010",
++    "pages": [
++      4
++    ],
++    "locator": "Paragraph2; current pypdf lines12–15",
++    "verbatim_fragment": "holds neither",
++    "observation": "The minutes use this wording while describing an indemnification clause.",
++    "status": "An unusual account requiring comparison with its own operative agreement; not a legal-effect finding, typo correction, or assumption that another recipient's contract controls."
++  },
++  {
++    "id": "JOIN01",
++    "sources": [
++      "CW2010",
++      "BH2011"
++    ],
++    "pages": {
++      "CW2010": [
++        4
++      ],
++      "BH2011": [
++        8
++      ]
++    },
++    "locator": "CW paragraph1; BH transfer-letter opening paragraph (p8 reused from earlier reading; not newly image-read)",
++    "observation": "Both cite January31,2007, but concern different artifact identifiers: G-0006 and visually read I-0137; the BH text extraction gives1-0137.",
++    "status": "A shared inventory reference is not acquisition of the inventory, an alias/physical-object join, or a W14A/B/C12/Sample1/NIST coupon link."
++  }
++]
+--- /dev/null
++++ OPEN-TODOS.json
+@@ -0,0 +1,43 @@
++{
++  "existing_ids": [
++    "B188/H005",
++    "AUD011/AUD016",
++    "SPT01–SPT08",
++    "STL01",
++    "STL02",
++    "STL03",
++    "STL04"
++  ],
++  "items": [
++    {
++      "id": "STL01",
++      "advance": "New municipal G-0006 transfer account acquired; signature/adoption/implementation not established.",
++      "missing": "Own signed transfer agreement, incorporated court order/list, separate instructions, adoption/execution evidence and any amendment. DOC-NIST-2013-001311 response/outcome/attachments remain unacquired.",
++      "test": "Compare staff description to operative terms without using another object's contract as controlling; separate authorized and performed handling.",
++      "next_untried_route": "Public CityClerk archive or separately indexed original order/list, not repeated unchanged Novus DNS route. No request sent.",
++      "trigger": "Actual operative source or a genuinely new public access route."
++    },
++    {
++      "id": "STL02",
++      "advance": "Two recipient records identify a shared inventory date but distinct objects.",
++      "missing": "Actual2004/2006/January2007 volumes/version histories, G-0006/I-0137 entries/photos, cutting/coupon and transfer/receipt records.",
++      "test": "Trace edition and item identities, permission, actual handling and conditions; do not assume G-0006 split occurred.",
++      "trigger": "New inventory, signed manifest/receipt or original image/condition/alteration record."
++    },
++    {
++      "id": "STL03",
++      "advance": "None; no candidate-specific building-attribution rationale acquired.",
++      "missing": "W14A/B, C12a/b, FEMA Sample1 intake/alias/origin/rationale chain.",
++      "test": "Field labels to native attribution and physical identity, preserving unidentified versus field-attributed labels.",
++      "trigger": "Candidate-specific native record."
++    },
++    {
++      "id": "STL04/SR01",
++      "advance": "None; no native WJE draft/review/delivery or calibration acquired.",
++      "missing": "Signed terms, native field/region/calibration, selection/draft/comment/delivery/acceptance chain.",
++      "test": "Item/region/draft joins, actual review/execution and source-to-method mapping.",
++      "trigger": "Native substantive records, not another summary."
++    }
++  ],
++  "other_tracks": "FAA PD01–PD04 correctedQFR/receipt/signeddecision/recommendation outcome remain open. TEL01–TEL04 native carrier/operator/recipient/Keyton/usage/exhibit/call-leg/clock requirements remain open with prior source advances preserved. Recorder/radar and materials original-data/custody/calibration/independent tests remain with technical owner; no new result claimed. All18 original requirements and five-track acceptance criteria unchanged."
++}
+--- /dev/null
++++ README.md
+@@ -0,0 +1,25 @@
++# Steel transfer instructions: a new Clearwater record, distinct objects and missing operative terms
++
++October 29, 2026. Existing B188/H005, AUD011/AUD016, SPT01–SPT08 and STL01–STL04 remain open. **One newly acquired official municipal source advances the transfer-record trail. It does not recover the artifact inventory or identify a disputed WTC 7 specimen.**
++
++The [December 13, 2010 Clearwater work-session minutes](https://clearwater.granicus.com/MinutesViewer.php?clip_id=1841&view_id=25#page=3), physical/printed pp. 3–4, item 3.2, identify artifact **G-0006**, citing a **January 31, 2007** inventory. They describe a 36-inch tube without visible identification marks and conditional cutting into two pieces. The item seeks authorization to sign/accept; it does not by itself prove adoption, execution, shipment, cutting or receipt. Page 4 also uses **“holds neither”** in describing indemnification. Preserve the wording; its own operative agreement is needed before assigning legal effect. CW01–CW03 in [COMPARISON.json](COMPARISON.json).
++
++The [earlier Beverly Hills packet](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11#page=2) concerns a different artifact, visually read **I-0137** (raw extraction **1-0137**). Staff reports nonalteration on p. 2. Its reproduced order, pp. 11–12, reserves inspection/testing for litigation parties or their representatives upon ten days notice. The [preceding review](https://github.com/AveLyra/911-conspiracy-investigation/blob/240914e0f1851956e74dae61a076e6cd52c45847/investigation/broader-evidence/steel-artifact-transfer-orders-2026-10-27/README.md) found no equivalent express nonalteration clause in the attached letter/order; any separate instruction remains unacquired. These accounts and source layers are retained unchanged. This unit newly re-viewed p. 2 and pp. 11–12; the remainder relies on the earlier qualified review.
++
++## What the comparison actually tests
++
++Different recipient/object instructions do not establish a contradiction about the same transaction. Neither record proves a uniform preservation rule. A hypothetical blanket claim that every distributed artifact had an identical nonalteration condition would need to account for Clearwater's contrary description. Conversely, a staff summary cannot certify the terms or implementation of its missing signed agreement. The strongest competing reading is item-specific permission or differing document scope; that remains an untested explanation, not a resolution.
++
++The shared January 2007 inventory reference provides a concrete retrieval key, not a complete custody chain. The October 2004 completion account ([2005 minutes, p. 6](https://dspace.njstatelib.org/server/api/core/bitstreams/c960df66-1aba-40cd-9eb0-140585e3be89/content#page=6)), 2006 completion account ([2012 LMDC report, p. 5](https://www.renewnyc.org/attachments/content/pdfs/WTC_Historic_Resources_Report_January_2012.pdf#page=5)) and January 31, 2007 reference remain side by side. Those two earlier accounts are inherited from the [preserved study](../steel-preservation-decisions-2026-10-27/README.md), not newly source-read here. We have not obtained the editions, change history, item crosswalks or delivery records. No arithmetic on unlike collections, inferred alias match, authenticity finding, deliberate destruction or concealment inference is supported here. A physically unmarked item can have an administrative inventory number; that combination alone is not inconsistent.
++
++The decisive tests remain obtaining each signed agreement and incorporated order/instruction, the referenced inventory entry/photo and revisions, and actual dispatch/receipt/cutting/condition logs. Compare permission, performance and later condition separately. Neither object has been joined to W14A/B, C12a/b, FEMA Sample 1 or a NIST-retained coupon. The inspection condition in the held Beverly Hills order is meaningful contrary evidence to a blanket loss-of-testing-rights claim; it is not proof of an experiment or a right applying to the public or to Clearwater's item.
++
++## Acquisition, reading and reproducibility
++
++CW2010 is a newly acquired 26-page, 141,452-byte municipal PDF; SHA-256 `c0202fb6da7681f4d064bc091ab9834420874118926beed26bf9d994f29aa179`. Two selected page images were read. BH2011 is the unchanged 12-page municipal copy; SHA-256 `140f527241183d46aba69b89533e115ef7a06d15b7a3c17f7d0a7355066a0b3a`; three selected page images were re-read. No video was reviewed, no OCR was run, signatures were not authenticated, and the actual inventory and Clearwater agreement remain missing. [SOURCES.json](SOURCES.json) and [COMPARISON.json](COMPARISON.json) supply URLs, access times, roles and physical/page-local extraction locators. Text extraction is a derivative; matching a text anchor does not authenticate historical assertions.
++
++Eight new indexed queries reached the frozen cap; one malformed domain query was ineffective and is logged locally. The exact public agenda link exposed by the player failed DNS resolution; the steel-item annotation returned navigation script rather than an agreement. Do not treat either access outcome as evidence of historical removal. An existing journal inventory-caption route supplied no newly acquired inventory; a previously failed image was not retried. Full acquisition/parser/error receipts remain local. Two parser/runtime setup errors were corrected without changing any source bytes.
++
++`verify_records.py --clearwater-pdf PATH --beverly-pdf PATH` verifies both entity hashes/page counts, selected literal anchors and the shared date/different-ID reference test. It does not test actual custody, authority, specimen identity or historical truth. [RESULTS.json](RESULTS.json) is the executed documentary result; [OPEN-TODOS.json](OPEN-TODOS.json) preserves the unperformed tests and all five track dependencies. [REVIEW-AND-CHECKS.json](REVIEW-AND-CHECKS.json) gives actual scope/checklist and predecessor status. [TEXT-CHANGES.diff](TEXT-CHANGES.diff) records only these additive notes. Earlier sources, reports and conflicting values are untouched.
++
++Only reviewed research notes, safe locators and verification artifacts enter this public addition. Raw sources/renders, signatures/contact data, private correspondence, internal coordination and strategy remain outside its payload. No outreach, fees, request or filing, physical sampling, deletion, private push, merge or history rewrite occurred. Documentary acquisition/testing and any verified publication are partial milestones; the substantive five-track goal remains open.
+--- /dev/null
++++ RESULTS.json
+@@ -0,0 +1,85 @@
++{
++  "scope": "Entity/text-anchor and reference comparison only; page-image readings separately recorded.",
++  "checks": [
++    {
++      "check": "CW2010 entity SHA256",
++      "passed": true
++    },
++    {
++      "check": "CW2010 bytes",
++      "passed": true
++    },
++    {
++      "check": "CW2010 pages",
++      "passed": true
++    },
++    {
++      "check": "BH2011 entity SHA256",
++      "passed": true
++    },
++    {
++      "check": "BH2011 bytes",
++      "passed": true
++    },
++    {
++      "check": "BH2011 pages",
++      "passed": true
++    },
++    {
++      "check": "CW item",
++      "passed": true
++    },
++    {
++      "check": "CW identifier",
++      "passed": true
++    },
++    {
++      "check": "CW inventory date",
++      "passed": true
++    },
++    {
++      "check": "CW cutting condition",
++      "passed": true
++    },
++    {
++      "check": "CW identification wording",
++      "passed": true
++    },
++    {
++      "check": "CW unusual indemnity wording",
++      "passed": true
++    },
++    {
++      "check": "BH nonalteration account",
++      "passed": true
++    },
++    {
++      "check": "BH inventory date",
++      "passed": true
++    },
++    {
++      "check": "BH raw extracted identifier",
++      "passed": true
++    },
++    {
++      "check": "BH inspection right",
++      "passed": true
++    },
++    {
++      "check": "BH notice",
++      "passed": true
++    }
++  ],
++  "passed": 17,
++  "reference_comparison": {
++    "same_inventory_date_referenced": true,
++    "same_artifact_identifier": false,
++    "CW_staff_reported_cutting_conditional": true,
++    "BH_staff_reported_nonalteration": true,
++    "actual_CW_agreement_or_inventory_acquired": false,
++    "actual_cutting_tested": false,
++    "same_object_conflict_established": false,
++    "W14_C12_or_NIST_coupon_join_established": false
++  },
++  "limits": "Whitespace and case normalized for anchor matching only. Raw sources and conflicting extraction/image prefixes unchanged. A shared date does not authenticate a volume or physical-object identity. No historical cause, custody, contract enforceability or actual performance test."
++}
+--- /dev/null
++++ REVIEW-AND-CHECKS.json
+@@ -0,0 +1,102 @@
++{
++  "scope": {
++    "new_source": "One official municipal26pagePDF plus navigationHTML; no actualinventory orCWagreement",
++    "new_visual_pages": {
++      "CW2010": [
++        3,
++        4
++      ]
++    },
++    "reused_visual_pages": {
++      "BH2011": [
++        2,
++        11,
++        12
++      ]
++    },
++    "new_visual_total": 5,
++    "not_newly_image_read": "CW remaining24pages; BH other9pages. BH letter inventory-date locator inherited from qualified earlier full review. Video and nativeitem/contract/authentication tests unperformed.",
++    "text_test": "17 executed entity/page/anchor checks. Matching removes whitespace and ignores case; no source bytes are normalized."
++  },
++  "checklist": [
++    {
++      "requirement": "Use original operational/public records rather than only another summary",
++      "outcome": "New official work-session account held; operativecontract/inventory stillTODO; report makes that evidentiary limit explicit.",
++      "location": "README.md paragraphs1–2; SOURCES.json"
++    },
++    {
++      "requirement": "Preserve conflicting values and predecessor records",
++      "outcome": "Different objects/source layers preserved side by side; no universalrule, same-object contradiction or preferred explanation selected. Priorprefix and inventorydate states retained.",
++      "location": "COMPARISON.json; README.md comparison; predecessorhashes"
++    },
++    {
++      "requirement": "Exact source links/hash/page/line and actual reading",
++      "outcome": "Two PDFsource pins, page-local current extraction line locators and qualified oldreading provenance.",
++      "location": "SOURCES.json; COMPARISON.json"
++    },
++    {
++      "requirement": "Falsifiable test and strongest counterevidence",
++      "outcome": "17documentarychecks; same-date/different-item reference comparison; actualcontracts and implementation could weaken or strengthen allegations. Existing inspection condition contrary evidence preserved.",
++      "location": "verify_records.py; RESULTS.json; README.md"
++    },
++    {
++      "requirement": "Leave missinginputs asTODOs and continueavailablework",
++      "outcome": "AllSTL01–04/SPT/SR01tests carried; exact failedagenda route recorded as accessonly; nextuntriedCityClerk/original-source route left.",
++      "location": "OPEN-TODOS.json"
++    },
++    {
++      "requirement": "Maintain five-track goal and original18requirements",
++      "outcome": "No acceptancecriteria closed. FAA and telephone requirements remain; recorder/materials technicallyownedelsewhere.",
++      "location": "OPEN-TODOS.json"
++    },
++    {
++      "requirement": "Keep operational-record work separate from unperformed technical tests",
++      "outcome": "No new recorder/materials result or independent-audit endorsement is asserted. Native dependent tests remain open.",
++      "location": "OPEN-TODOS.json; exact research reading/test scope"
++    },
++    {
++      "requirement": "Publication asAveLyra usingreviewed safeadditions",
++      "outcome": "Onlyresearchnotes/safepins/code/results/diff; no rawPDF/raster/signature/contact/privatecorrespondence. Remoteverification remains a separate postpushmilestone.",
++      "location": "Publicmanifest and forthcoming localpublicationreceipt"
++    },
++    {
++      "requirement": "Exactdiff and unchangedstatus",
++      "outcome": "Additive TEXT-CHANGES.diff plus sixunchanged predecessorhashes; originalstudies notedited.",
++      "location": "TEXT-CHANGES.diff; predecessorhashes"
++    }
++  ],
++  "predecessors": [
++    {
++      "file": "original-records-work-plan-2026-10-27/WORK-PLAN.md",
++      "sha256": "b8511383fb40878bdcfc094adff12c9eda2ce9cc17e514adf6d129ebd7c80659",
++      "unchanged": true
++    },
++    {
++      "file": "steel-preservation-decisions-2026-10-27/REPORT.md",
++      "sha256": "c34a509f0610df9eabf82773ce1378bc078bac89a0abf17b195c1f728359b3a6",
++      "unchanged": true
++    },
++    {
++      "file": "steel-artifact-transfer-orders-2026-10-27/REPORT.md",
++      "sha256": "ed569b7f8c2815d781ab83d18b4eb81753853aa28a4499d01a85e6ba821978e3",
++      "unchanged": true
++    },
++    {
++      "file": "steel-workbook-originals-2026-10-27/REPORT-v2.md",
++      "sha256": "f565477f1bfc2b4eb17b7fdae81c8772b83ffe5732a6e00fb5a0f0a09f3b253c",
++      "unchanged": true
++    },
++    {
++      "file": "steel-attribution-originals-2026-10-27/REPORT.md",
++      "sha256": "57b7e225c4de9447d206f63549ec3e271330d25a7d53035a744bba948eef0e02",
++      "unchanged": true
++    },
++    {
++      "file": "steel-artifact-transfer-orders-2026-10-27/REPORT-v2.md",
++      "sha256": "1f15feac6785de507d11494253d073a086d3052918cd4784955c3e8da9ffd0d2",
++      "unchanged": true
++    }
++  ],
++  "limitations": "No independent/blinded reader or external auditor participation; sourcecomparison not physicalscientificreplication or originalcustody/contractauthentication. No legal-effect or misconduct determination.",
++  "revision": "Candidate v1 preserved locally. V2 removes nonessential coordination status from public review metadata, qualifies case/whitespace normalization accurately and improves report spacing. No source or historical observation altered. Candidate v3 adds explicit prior-source links/reading qualification for the preserved2004/2006 date accounts and corrects one spacing issue; v1/v2 and their diffs remain local."
++}
+--- /dev/null
++++ SOURCES.json
+@@ -0,0 +1,34 @@
++{
++  "CW2010": {
++    "url": "https://clearwater.granicus.com/MinutesViewer.php?clip_id=1841&view_id=25",
++    "resolved_url": "https://clearwater.granicus.com/DocumentViewer.php?file=clearwater_dbfb183ba774aea0077dbaa6263cab42.pdf&view=1",
++    "status": 200,
++    "content_type": "application/pdf",
++    "access_utc": "2026-10-29T18:27:05.108793+00:00",
++    "bytes": 141452,
++    "sha256": "c0202fb6da7681f4d064bc091ab9834420874118926beed26bf9d994f29aa179",
++    "pages": 26,
++    "role": "New official municipal work-session minutes; not the signed transfer agreement or inventory",
++    "visual_read_this_unit": [
++      3,
++      4
++    ],
++    "reading_limits": "Only selected two of 26 page images; no whole-meeting/video or actual adoption/receipt validation."
++  },
++  "BH2011": {
++    "url": "https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11",
++    "status": 200,
++    "content_type": "application/pdf",
++    "access_utc": "2026-10-27T22:06:12.038318+00:00",
++    "bytes": 369384,
++    "sha256": "140f527241183d46aba69b89533e115ef7a06d15b7a3c17f7d0a7355066a0b3a",
++    "pages": 12,
++    "role": "Previously acquired municipal packet reproducing staff report, letter agreement and item-specific court order; not a direct ECF original",
++    "visual_reread_this_unit": [
++      2,
++      11,
++      12
++    ],
++    "reading_limits": "Other packet pages rely on preceding full-image review, explicitly not newly re-read in full."
++  }
++}
+--- /dev/null
++++ verify_records.py
+@@ -0,0 +1,43 @@
++#!/usr/bin/env python3
++"""Reproduce a documentary source-reference test; no historical adjudication."""
++import argparse,hashlib,json,re
++from pathlib import Path
++from pypdf import PdfReader
++P=argparse.ArgumentParser()
++P.add_argument('--clearwater-pdf',required=True)
++P.add_argument('--beverly-pdf',required=True)
++a=P.parse_args();base=Path(__file__).parent
++sources=json.loads((base/'SOURCES.json').read_text());checks=[];readers={}
++def check(label,value):
++ checks.append({'check':label,'passed':bool(value)})
++ if not value:raise AssertionError(label)
++for key,path in [('CW2010',a.clearwater_pdf),('BH2011',a.beverly_pdf)]:
++ b=Path(path).read_bytes();s=sources[key]
++ check(key+' entity SHA256',hashlib.sha256(b).hexdigest()==s['sha256'])
++ check(key+' bytes',len(b)==s['bytes'])
++ r=PdfReader(path);readers[key]=r
++ check(key+' pages',len(r.pages)==s['pages'])
++def compact(t):return re.sub(r'\s+','',t).casefold()
++def text(k,page):return readers[k].pages[page-1].extract_text() or ''
++c3=text('CW2010',3);c4=text('CW2010',4);b2=text('BH2011',2);b8=text('BH2011',8)
++b11=text('BH2011',11);b12=text('BH2011',12)
++for label,full,fragment in [
++ ('CW item',c3,'Authorize the Fire Chief to sign'),
++ ('CW identifier',c4,'G-0006'),
++ ('CW inventory date',c4,'January 31, 2007'),
++ ('CW cutting condition',c4,'be cut into two pieces if requested'),
++ ('CW identification wording',c4,'no visible identification marks'),
++ ('CW unusual indemnity wording',c4,'holds neither'),
++ ('BH nonalteration account',b2,'not alter the Artifact'),
++ ('BH inventory date',b8,'January31,2007'),
++ ('BH raw extracted identifier',b11,'1-0137'),
++ ('BH inspection right',b12,'inspect and test'),
++ ('BH notice',b12,'ten days notice')]:check(label,compact(fragment) in compact(full))
++result={'scope':'Entity/text-anchor and reference comparison only; page-image readings separately recorded.',
++ 'checks':checks,'passed':len(checks),
++ 'reference_comparison':{'same_inventory_date_referenced':True,'same_artifact_identifier':False,
++  'CW_staff_reported_cutting_conditional':True,'BH_staff_reported_nonalteration':True,
++  'actual_CW_agreement_or_inventory_acquired':False,'actual_cutting_tested':False,
++  'same_object_conflict_established':False,'W14_C12_or_NIST_coupon_join_established':False},
++ 'limits':'Whitespace and case normalized for anchor matching only. Raw sources and conflicting extraction/image prefixes unchanged. A shared date does not authenticate a volume or physical-object identity. No historical cause, custody, contract enforceability or actual performance test.'}
++print(json.dumps(result,indent=2,ensure_ascii=False))
