@@ -1,0 +1,309 @@
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,35 @@
++# A public archive catalog matches the held NEADS MP3, but supplies no native clock package
++
++October 29, 2026. Original recording-provenance and clock-input work, REC01–REC03, alongside FAA operational-clock questions. This is an acquisition/source-selection supplement to the existing technical owner's FA041/FA042 work. It does not rerun decoding or substitute metadata examples for calibrated historical time.
++
++## New source-level result
++
++The [public Internet Archive metadata endpoint](https://archive.org/metadata/NORAD_9-11_audio) returned a complete JSON entity of **75,905 bytes**. It lists **257 file records**, including **21 MP3 offerings**. None of the returned names ends in `.wav`, `.mdb`, `.accdb`, `.arc`, `.iso`, `.zip` or `.7z`. These are observations about this returned item inventory, not proof that original recordings or a database never existed or are unavailable elsewhere.
++
++One catalog entry names **DRM1_DAT2_Channel_2_MCC_Op.mp3**, the same basename as the held file previously extracted from a Government Attic ZIP. The offered size is **137,854,277 bytes**, with SHA-1 **34d8e0d6bbc8926adeaa9a590cd640c6f63fcdb2**. The existing local file was read and both size and computed SHA-1 match those catalog fields. Its computed SHA-256 also matches the preceding held-source pin: **ad66977c17384288096b4ccb99758c6e14f1c1efa2972f1491946845ae1da1e1**.
++
++No archive audio body was downloaded for this check. Thus this is a held-file-to-catalog fingerprint match, not a new byte-by-byte comparison of two retrieved media entities. It does not authenticate agency custody, recording date, channel meaning, unchanged timing, native format or independent UTC. The ZIP and catalog distributions may share a lineage; they are not counted as independent witnesses to historical events.
++
++## “Original” is an archive field, not a recording-master finding
++
++The catalog labels the selected MP3 `source: original` and `format: VBR MP3`. Those are the archive's supplied classification fields. They do not turn an MP3 into a native recorder export or uncompressed master.
++
++The 257 records include many derivatives: waveform/peak data, Ogg files, images and spectrograms, as well as collection metadata. The `source` field classifies **23 entries as original**, including entries other than the 21 MP3 audio offerings. Neither 257 nor 23 is a count of independently recorded calls, original tapes, recovered channels or native source carriers. [CATALOG-RESULTS.json](CATALOG-RESULTS.json) preserves the exact accounting and the selected entry without uploader/contact fields. No duration, waveform, continuity, call attribution or clock fit was newly tested.
++
++## A separate carrier-inventory lead remains qualified
++
++The public reader of [Releases Spreadsheet 2012-01-04](https://www.scribd.com/document/78046326/Releases-Spreadsheet-2012-01-04) presents a 13-page reproduction. Its parsed text, reader line **148** in the saved representation, includes **RDOD 03012646–RDOD 03012647** described as two NEADS DAT-audio DVDs; **RDOD 03011011**, another NEADS DAT-audio DVD; and **RDOD 04020857**, a DRM-1 dictaphone remake DVD.
++
++These are literal retrieval leads from a later third-party representation. The original PDF/spreadsheet, native row definitions and actual media are unacquired. Flattened text does not establish which box/date cells belong to these descriptions. No page-image reading, native-file hash, release-date/box assignment, metadata-database schema or waveform join is claimed. The participant article's shorter literal **RDoD0312646** remains beside the reader's longer string; no identifier was silently corrected or selected as controlling. The DRM-1 remake description is not automatically the source carrier for the held DAT2-named MP3.
++
++One official NARA collection-index navigation, its linked FAQ and two exact-title official-domain searches did not recover the matching original release spreadsheet in this bounded pass. Unrelated general declassification results were excluded. This is not evidence of missing holdings or a withholding determination. Historical FAQ wording is not adopted as proof of present access status or as a rule for agency records in another proceeding.
++
++## What this advances and what remains unperformed
++
++The new catalog entity narrows acquisition: re-downloading the listed MCC MP3 would repeat a held representation, not supply the sought continuous WAV/database. The reproduced inventory supplies more specific carrier targets. Neither source provides the missing typed `Call`/`Callfile` rows, recorder/export/receipt mapping, corresponding native waveform or independent clock authority. Those remain necessary for the proposed pairing and calibration tests; the previously completed FA042 example arithmetic is not repeated here.
++
++Only public metadata and reader text were inspected in this unit. The full catalog entity and reader responses remain locally preserved; public files contain reviewed source pins, selected nonpersonal metadata, original notes and verification code. No raw metadata with uploader/contact fields, bulk reader text, images, audio, private correspondence, signatures or credentials are published. The catalog's small file inventory was inspected; no media, MDB, ARC or disk image was downloaded, decoded, played or uploaded.
++
++[SOURCES.json](SOURCES.json) distinguishes source-entity and reader-representation hashes. [verify_catalog.py](verify_catalog.py) checks the catalog identity/accounting and selected entry when supplied the preserved metadata; [RESULTS.json](RESULTS.json) records actual execution. The earlier held-file fingerprint check is separately pinned, not presented as an independent historical validation. [OPEN-TODOS.json](OPEN-TODOS.json) retains the exact source relationships and all five work-plan tracks. [REVIEW-AND-CHECKS.json](REVIEW-AND-CHECKS.json) and [TEXT-CHANGES.diff](TEXT-CHANGES.diff) record scope and additive revision accountability.
++
++Source research and the technical owner's reports/registers are unchanged. All eighteen original-input requirements retain their substantive acceptance criteria. No FAA corrected-answer/disposition, telephone carrier join, aircraft association, native timing test, specimen test, steel attribution rationale or historical-intent conclusion is completed by this catalog check. No outreach, fees, new request/filing, mailbox access, private push, merge, deletion or history rewrite occurred.
+--- /dev/null
++++ b/SOURCES.json
+@@ -0,0 +1,66 @@
++{
++  "recorded_utc": "2026-10-29T22:50:02.586526+00:00",
++  "archive_metadata": {
++    "source_url": "https://archive.org/metadata/NORAD_9-11_audio",
++    "resolved_url": "https://archive.org/metadata/NORAD_9-11_audio",
++    "access_started_utc": "2026-10-29T22:39:35.803478+00:00",
++    "access_completed_utc": "2026-10-29T22:39:37.006058+00:00",
++    "http_status": 200,
++    "content_type": "application/json",
++    "bytes": 75905,
++    "sha256": "10de8ad30033a586a72aa8fc034f4d588a40a571459041d3cd6d1d1947705919",
++    "scope": "Publiccatalog response entity; complete returnedfilelist,not allagencyholdings/privateitems/nativeaudio/custodyproof."
++  },
++  "held_file_check": {
++    "filename": "DRM1_DAT2_Channel_2_MCC_Op.mp3",
++    "bytes": 137854277,
++    "sha256": "ad66977c17384288096b4ccb99758c6e14f1c1efa2972f1491946845ae1da1e1",
++    "sha1": "34d8e0d6bbc8926adeaa9a590cd640c6f63fcdb2",
++    "checked_utc": "2026-10-29T22:43:56.117866+00:00",
++    "preceding_sha256_pin": "ad66977c17384288096b4ccb99758c6e14f1c1efa2972f1491946845ae1da1e1",
++    "prior_distribution_url": "https://www.governmentattic.org/docs/DRM1_DAT2_Channel_2_MCC_Op.zip",
++    "matches_catalog_size": true,
++    "matches_catalog_sha1": true,
++    "archive_media_body_retrieved": false
++  },
++  "release_reader": {
++    "source_url": "https://www.scribd.com/document/78046326/Releases-Spreadsheet-2012-01-04",
++    "advertised_pages": 13,
++    "representation_file_reading": "SPREADSHEET-READER-LOCAL.txt andSPREADSHEET-FIND-LOCAL.txt keptlocally only",
++    "saved_reader_representation_bytes": 10758,
++    "saved_reader_representation_sha256": "e8041f8cb99342d723e5e1d1133576b2652ffadda107dc936c3fdd5b5fe3afbe",
++    "saved_find_representation_sha256": "c799369743ceb73d4760c97e8eeacebd0e6bb1b102995ef7208ab90fd1997605",
++    "locator": "Readerline148containscarrierdescriptions; exactphysicalpage/date/box alignment notauthenticated.",
++    "literal_article_locator_preserved": "RDoD0312646",
++    "reader_locator_strings": [
++      "RDOD 03012646",
++      "RDOD 03012647",
++      "RDOD 03011011",
++      "RDOD 04020857"
++    ],
++    "source_status": "Thirdpartyparsedrepresentation; not originalPDF/MIME/MDB/carrierpayload. No newpageimages inspected."
++  },
++  "predecessor_reports": [
++    {
++      "relative_file": "faa-norad-mineta-2026-10-26/continuous-WAV-locator-2026-10-29/REPORT.md",
++      "sha256": "6944e92c8a3227d361347c6772cfbc754191816bf59072099cbba0649b83db86",
++      "unchanged_since_read": true,
++      "status": "Otherownerlocalunpublishedstudy; not edited or claimedpublichere."
++    },
++    {
++      "relative_file": "faa-norad-mineta-2026-10-26/native-export-inventory-2026-10-29/REPORT.md",
++      "sha256": "b01723bf1823d838de707d8db598725125c7adbe2b09c386a00fd59cb4a1c8eb",
++      "unchanged_since_read": true,
++      "status": "Otherownerlocalunpublishedstudy; not edited or claimedpublichere."
++    }
++  ],
++  "official_counterpart_scope": {
++    "official_index_url": "https://www.archives.gov/research/9-11",
++    "linked_faq_url": "https://www.archives.gov/research/9-11/faqs.html",
++    "exact_queries": [
++      "site:archives.gov \"Folders Containing Records Released\" \"2012\"",
++      "site:archives.gov \"releases-spreadsheet\" \"2012\""
++    ],
++    "result": "No matchingoriginalinventorypayload recoveredwithinthisboundedstage. Unrelatedgeneraldeclassificationresults excluded. No agencyabsence/withholdinginference."
++  }
++}
+--- /dev/null
++++ b/CATALOG-RESULTS.json
+@@ -0,0 +1,44 @@
++{
++  "file_records": 257,
++  "format_counts": {
++    "Columbia Peaks": 168,
++    "VBR MP3": 21,
++    "Ogg Vorbis": 21,
++    "PNG": 21,
++    "Spectrogram": 21,
++    "Archive BitTorrent": 1,
++    "Metadata": 3,
++    "Item Tile": 1
++  },
++  "source_counts": {
++    "derivative": 231,
++    "original": 23,
++    "metadata": 3
++  },
++  "original_format_counts": {
++    "VBR MP3": 21,
++    "Metadata": 1,
++    "Item Tile": 1
++  },
++  "searched_filename_extensions": [
++    ".wav",
++    ".mdb",
++    ".accdb",
++    ".arc",
++    ".iso",
++    ".zip",
++    ".7z"
++  ],
++  "matches_for_searched_extensions": [],
++  "selected_entry": [
++    {
++      "name": "DRM1_DAT2_Channel_2_MCC_Op.mp3",
++      "format": "VBR MP3",
++      "source": "original",
++      "size": "137854277",
++      "sha1": "34d8e0d6bbc8926adeaa9a590cd640c6f63fcdb2",
++      "md5": "78250e0a905e9cf20b8d8baa56bfc66a",
++      "private": null
++    }
++  ]
++}
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,14 @@
++{
++  "REC01": "Actualagency/input/aircraft/installedconfiguration/custody andnativeexport/copyreceipt mapping remain open; catalogfingerprint doesnotauthenticate recorderorigin.",
++  "REC02": "Installedformat/errorhandling andactualpairedagencyoutput remain open; no decoder rerun or acceptancechange.",
++  "REC03": "ActualtypedCall/Callfilemetadata,MDB,correspondingcontinuousWAV andindependentlyjustifiedclockreference remain open; no pair/cut/rate/alignmentfit run.",
++  "inventory_next": "ObtainoriginalreleasedinventoryPDF/nativefile andexactrow/date/box/carrier association forliteralRDoDvariants; actualDVD/MDB/export/receipt filemanifest. No guessing thearticleID repair.",
++  "acquisition_decision": "Do not redownloadthelistedheldMCCMP3asthoughitweremissingnativeWAV. Do notinferarchiveglobalabsencefromsingleitemcatalog. Actualcandidate<=512MiBneedsseparateprospectiveprotocol/sourcejoin/Intelguard.",
++  "other_tracks_retained": {
++    "FAA": "PD01\u201304actualQFR/delivery,signedaction/no-action/reasons,casefollowup/policy/routing.",
++    "telephone": "TEL01\u201304native/release/eventdictionary/clock/operator/recipient joins; heldsources/testsremain held/performed.",
++    "materials": "MAT01\u201303authenticatedspecimen/run/region/thermal/instrument/calibration/matchedsample joins.",
++    "steel": "STL01\u201304decision/nativeinventory/custody/attribution/WJEreview/deliveryoriginals."
++  },
++  "scope": "Alloriginalfiveworkpackages/eighteeninputcriteria retained; no physical/historicalgoalcompletion. No newsubmission,outreach,fee,privatepushorotherownermessage."
++}
+--- /dev/null
++++ b/REVIEW-AND-CHECKS.json
+@@ -0,0 +1,39 @@
++{
++  "recorded_utc": "2026-10-29T22:50:02.586526+00:00",
++  "checklist": [
++    {
++      "point": "Currentauthorityandownercoordination",
++      "outcome": "Currentcontrolsunchanged; latestmatrixv77comparedwithv74; actualFA041/FA042reports readandhashpinned. No technicalworkduplicated."
++    },
++    {
++      "point": "Realnewsourceentity",
++      "outcome": "OnepublicIAmetadataGET returned200/75905bytes/257entries; bodypreserved locally and hashed. No media orprivateobject access."
++    },
++    {
++      "point": "Fingerprintcomparison",
++      "outcome": "Alreadyheld137854277byteMP3read; computedSHA1matchesexactcatalogentry, SHA256matchespriorpin. No archiveremotebytecomparisonoragencyoriginclaim."
++    },
++    {
++      "point": "Interpretationlimits",
++      "outcome": "Catalogoriginalfield not native-master authentication. Absence only in returnedinventory. Neitherfilenames nor clockexamples proveUTC."
++    },
++    {
++      "point": "Conflictingidentifiers",
++      "outcome": "ArticleRDoD0312646andreaderRDOD03012646/47remain sidebyside; actualbox/date/copy mappingsunverified."
++    },
++    {
++      "point": "Sourcefollowupcap",
++      "outcome": "Knownreader+2finds andprospectiveofficialindex/FAQ+2exactqueries; no originalreleasePDF recovered. No moreunchangedqueries."
++    },
++    {
++      "point": "Publicpayload",
++      "outcome": "Selectednonpersonalmetadata,sourcepins,notesandcodeonly; rawmetadata/uploadercontacts,readertext,images,audio,privatecase/credentials excluded."
++    },
++    {
++      "point": "Revisionaccountability",
++      "outcome": "AdditiveGitstyle textdiff andpreserved predecessors; publicidentity/ref/filechecks recordedseparatelyafterpublication."
++    }
++  ],
++  "scope": "Catalogentityandfingerprint result only; no new nativeaudio/database/codeexecution/waveform/clock/personnel/call/custody/physicaltest.",
++  "publication": "No completioninferredfromthisprepublicationcheck; actualreceiptwillbe separate."
++}
+--- /dev/null
++++ b/RESULTS.json
+@@ -0,0 +1,56 @@
++{
++  "executed_utc": "2026-10-29T22:50:02.586526+00:00",
++  "command_template": "python3 verify_catalog.py --metadata PRESERVED_CATALOG_ENTITY",
++  "exit": 0,
++  "result": {
++    "catalog_identity_and_accounting": "passed",
++    "result": {
++      "file_records": 257,
++      "format_counts": {
++        "Columbia Peaks": 168,
++        "VBR MP3": 21,
++        "Ogg Vorbis": 21,
++        "PNG": 21,
++        "Spectrogram": 21,
++        "Archive BitTorrent": 1,
++        "Metadata": 3,
++        "Item Tile": 1
++      },
++      "source_counts": {
++        "derivative": 231,
++        "original": 23,
++        "metadata": 3
++      },
++      "original_format_counts": {
++        "VBR MP3": 21,
++        "Metadata": 1,
++        "Item Tile": 1
++      },
++      "searched_filename_extensions": [
++        ".wav",
++        ".mdb",
++        ".accdb",
++        ".arc",
++        ".iso",
++        ".zip",
++        ".7z"
++      ],
++      "matches_for_searched_extensions": [],
++      "selected_entry": [
++        {
++          "name": "DRM1_DAT2_Channel_2_MCC_Op.mp3",
++          "format": "VBR MP3",
++          "source": "original",
++          "size": "137854277",
++          "sha1": "34d8e0d6bbc8926adeaa9a590cd640c6f63fcdb2",
++          "md5": "78250e0a905e9cf20b8d8baa56bfc66a",
++          "private": null
++        }
++      ]
++    },
++    "held_check": "Saved executed fingerprint comparison matches this catalog entry; media is not reread here.",
++    "limits": "No archive media body, native master, custody, clock, waveform or historical-event authentication."
++  },
++  "held_fingerprint_check_executed_separately": true,
++  "limits": "Entity/accounting/locatorchecks only; no historicalrecordingorclockvalidation."
++}
+--- /dev/null
++++ b/verify_catalog.py
+@@ -0,0 +1,34 @@
++"""Inspect a preserved public catalog entity; no network or media acquisition."""
++import argparse
++import collections
++import hashlib
++import json
++from pathlib import Path
++
++parser = argparse.ArgumentParser()
++parser.add_argument('--metadata', type=Path, required=True)
++args = parser.parse_args()
++root = Path(__file__).resolve().parent
++pins = json.loads((root / 'SOURCES.json').read_text())
++raw = args.metadata.read_bytes()
++assert len(raw) == pins['archive_metadata']['bytes']
++assert hashlib.sha256(raw).hexdigest() == pins['archive_metadata']['sha256']
++data = json.loads(raw)
++files = data['files']
++result = {
++    'file_records': len(files),
++    'format_counts': dict(collections.Counter(f.get('format', 'unspecified') for f in files)),
++    'source_counts': dict(collections.Counter(f.get('source', 'unspecified') for f in files)),
++    'original_format_counts': dict(collections.Counter(f.get('format', 'unspecified') for f in files if f.get('source') == 'original')),
++    'searched_filename_extensions': ['.wav', '.mdb', '.accdb', '.arc', '.iso', '.zip', '.7z'],
++    'matches_for_searched_extensions': [f['name'] for f in files if f.get('name', '').lower().endswith(('.wav', '.mdb', '.accdb', '.arc', '.iso', '.zip', '.7z'))],
++    'selected_entry': [{k: f.get(k) for k in ['name', 'format', 'source', 'size', 'sha1', 'md5', 'private']} for f in files if f.get('name') == 'DRM1_DAT2_Channel_2_MCC_Op.mp3'],
++}
++assert result == json.loads((root / 'CATALOG-RESULTS.json').read_text())
++held = pins['held_file_check']
++selected = result['selected_entry'][0]
++assert held['bytes'] == int(selected['size']) and held['sha1'] == selected['sha1']
++assert held['sha256'] == held['preceding_sha256_pin']
++print(json.dumps({'catalog_identity_and_accounting': 'passed', 'result': result,
++                  'held_check': 'Saved executed fingerprint comparison matches this catalog entry; media is not reread here.',
++                  'limits': 'No archive media body, native master, custody, clock, waveform or historical-event authentication.'}, indent=2))
