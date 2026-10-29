@@ -1,0 +1,47 @@
+# FAA briefing versions: a reported replacement practice, a repeat interview, and a newly acquired archive copy
+
+This review adds an underlying report copy and precise interview passages to the FAA knowledge/correction inquiry, B129 / PD01–PD04. It does **not** recover the actual corrected May 2003 answer, its delivery acknowledgment, or a signed administrative-action/no-action decision. Those remain TODOs, separately from the earlier investigation-closure entry and recommendation history.
+
+## What is now held and read
+
+The [NARA-hosted AWA-570 report, NAID 7596136](https://catalog.archives.gov/id/7596136) has been acquired unchanged: **65 pages, 4,439,909 bytes**, SHA-256 `255e4d8c3853ea0363c06808855e151093f97d624eeb53f1beb16ef80b0a330c`. Its cover visibly reads *Summary of Air Traffic Hijack Events*, September 11, 2001, source AAT-20. Physical pages **7 and 33** carry **AAT-20 / September 17, 2001 / 6:30 AM**. The latter is a footer observation, not proof of when the file was authored, dispatched or received.
+
+These controls can be compared with the November 10, 2004 Canoles interview in the [released DOT-OIG packet](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3951), case **042R0122001**, transcript identifier **T5530**. Its physical page **3960 / printed page 10** records the interviewer's reference to an AAT-20 September 17, 2001 / 6:30 a.m. stamp. The archive copy thus supplies a concrete title/stamp counterpart, **not an authenticated identity match to the book exhibited during that interview**. The interview is a released scan hosted by GovernmentAttic; the report is a NARA-hosted digitization. Neither is native authoring or transport metadata.
+
+The [NARA finding aid](https://www.archives.gov/research/foia/faa-finding-aid-96-107) already listed AWA-570 under four flight-file placements. This review acquired **one** of those bodies; it did not discover four new versions or four independent corroborating records. The other three copies have not been acquired/compared in this unit. The inspected copy includes material for multiple flights despite its catalog placement under AAL77.
+
+## The replacement/destruction statement and its qualifications
+
+On physical **3960 / printed 10**, Canoles says:
+
+> I don't know how good we were at that discipline, but that was the conscious decision we made, so that we could try to hopefully collect out-dated information and destroy it as we produced the new stuff.
+
+The surrounding passage matters. On the same page he describes additional information arriving after a bulletin and says it **“would not necessarily invalidate the previous bulletin”**. He says dates alone became insufficient and times were added. The interviewer asks whether this was a way to track what they were producing; Canoles agrees on **3961 / printed 11**. On **3958 / printed 8** he identifies short “alert bulletins,” management/press-inquiry use, and a broader book intended to be comprehensive and correct for future study. On **3956–3957 / printed 6–7**, the stated briefing purpose includes bringing systemic problems to management for correction, alongside issues that could bring agency criticism.
+
+**Established at source level:** the released transcript attributes an explicit replacement/collection/destruction intention and uncertainty about its implementation to Canoles. **Not established:** a specific bulletin was destroyed, how many copies or versions were affected, whether a master or recipient copy survived, the applicable retention authority, legality, or a motive to conceal. Ordinary replacement of stale briefing copies and improper removal of evidentiary versions remain distinguishable possibilities. The relevant records must test both; this review does not select an explanation or infer a link to the May 2003 QFR merely from the shared investigation.
+
+The next discriminators are native bulletin/book versions and metadata; the time-stamping or recall instructions; distribution lists and recipient copies; backup/version records; and any actual collection/destruction log or authorization. An intact later compilation cannot establish that every earlier version survived, and the quoted intention cannot establish that all earlier versions were lost.
+
+## A specific interview-record gap
+
+On physical **3954 / printed 4**, the interviewer says that the November 10 session repeats a **September 30, 2004** interview because there were **“technical problems with the tape recording”** and they had not obtained everything needed concerning the notes. The November title and opening, **3951–3953 / printed 1–3**, describe a tape-recorded sworn interview. These are statements within a released transcript; an “ORIGINAL” stamp does not authenticate the native audio or certify completeness.
+
+This supplies a concrete target: both interview recordings and their inventories/custody; the recording-fault account; contemporaneous notes; the complete transcripts/certification; and the actual document exhibits reviewed in each session. This unit has **not** established that the September recording is wholly missing, erased, or irrecoverable. The fact that a repeat interview was undertaken is also contrary to treating the identified fault alone as proof of an attempt to avoid recording the account. Whether the repeat captured all material still requires the underlying records.
+
+## Keep dates, document identities and label scopes separate
+
+The same interview initially gives **September 12** for a Secretary briefing, **3959 / printed 9**, then qualifies it as **“the 12th or the 13th”**, **3961 / printed 11**. The passage also distinguishes a recalled early FBI briefing from the Secretary briefing. Preserve the initial and qualified accounts without silently choosing a date, counting them as independent witnesses, or concluding that an event was fabricated.
+
+On **3959**, Canoles distinguishes **pieces of the content** shown to the Secretary from the later assembled book, which he does not believe existed at that early briefing. On **3963–3964 / printed 13–14**, he describes radar/voice presentations on CD-ROMs loaded onto the Secretary's computer. Those are source-specific leads for surviving presentation media and receipt/copy records, not proof that a particular CD survives or contains raw, complete recordings. A book footer, a component presentation date and a remembered briefing date must not be collapsed into a single creation/receipt timestamp.
+
+In the newly acquired archive report, **page 27** separately labels a radar presentation **“Prepared by AAT-20 9/17 0900”** and its heading **“September 11, 2001, 10:04am ET”**. Pages **7 and 33** have the **6:30 AM** footer. All values and their label scopes are preserved. No event-clock alignment, technical radar validation, clock contradiction or preferred reconstructed assembly sequence is inferred from them.
+
+## Reading and verification limits
+
+Actual image reading covers **14 interview pages, 3951–3964**, and **six preselected report pages, 1, 2, 4, 7, 27 and 33**. That is the beginning of one interview and selected report controls, **not all 4,380 interview-packet pages, the complete interview, or all 65 report pages**. The complete held extraction was searched only as a locator; 77 title-phrase matches are not 77 independent documents or findings. No new OCR, blind independent reader, native interview/audio authentication, transport/version join, forensic deletion test, retention-law ruling or technical radar/recorder test was performed.
+
+The report's visually readable cover yielded only **two Unicode characters** in the pypdf extraction used here. This is a reproducible limit of this extraction, not proof the graphic cover was absent or removed. A text-search miss cannot establish that the underlying scan lacks the information. The catalog's coarse **“3 MB”** display and the downloaded entity's **4,439,909 bytes** are also retained separately in the source record; the label's convention/entity mapping is unverified, so no version-change inference follows.
+
+[SOURCES.json](SOURCES.json) records the two PDF entities, acquisition dates and relationships. [OBSERVATIONS.json](OBSERVATIONS.json) supplies physical/printed pages, extracted-line ranges, minimal exact quotations and inference limits. [verify_sources.py](verify_sources.py) checks supplied source entities and selected extracted anchors; [SOURCE-CHECKS.json](SOURCE-CHECKS.json) records its actual run. These are integrity/locator checks, not independent confirmation of what happened in 2001 or 2004. [REVIEW-AND-CHECKS.json](REVIEW-AND-CHECKS.json) records actual reading, request coverage and protected predecessors. [TEXT-CHANGES.diff](TEXT-CHANGES.diff) contains exact additions of the research notes, not a diff of missing native bulletin versions.
+
+[OPEN-TODOS.json](OPEN-TODOS.json) retains the new precise input targets and the earlier FAA PD01–PD04 correction/decision/policy gaps. All five original work tracks, 18 deferred requirements and other owners' uncompleted recorder/materials tests remain open. Missing inputs defer their tests; they do not prevent independent work. Existing reports and source bytes are unchanged. Public derivatives exclude raw PDFs/rasters/extractions, signatures, personal/contact/account data, private correspondence and litigation strategy. No outreach, fee, new request, mailbox access, private push, deletion, merge or history rewrite is authorized by this report.
