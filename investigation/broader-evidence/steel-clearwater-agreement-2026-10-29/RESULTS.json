@@ -1,0 +1,199 @@
+{
+  "method": "Three entity and page counts, PDF-exposed header/anchor tests and counts of supplied manual observations; no body OCR or independent glyph validation.",
+  "runtime": {
+    "python": "3.12.14",
+    "pypdf": "6.10.0"
+  },
+  "checks": [
+    {
+      "check": "AGENDA SHA256",
+      "passed": true,
+      "kind": "entity"
+    },
+    {
+      "check": "AGENDA bytes",
+      "passed": true,
+      "kind": "entity"
+    },
+    {
+      "check": "AGENDA pages",
+      "passed": true,
+      "kind": "entity"
+    },
+    {
+      "check": "BINDER SHA256",
+      "passed": true,
+      "kind": "entity"
+    },
+    {
+      "check": "BINDER bytes",
+      "passed": true,
+      "kind": "entity"
+    },
+    {
+      "check": "BINDER pages",
+      "passed": true,
+      "kind": "entity"
+    },
+    {
+      "check": "PRIOR-MINUTES SHA256",
+      "passed": true,
+      "kind": "entity"
+    },
+    {
+      "check": "PRIOR-MINUTES bytes",
+      "passed": true,
+      "kind": "entity"
+    },
+    {
+      "check": "PRIOR-MINUTES pages",
+      "passed": true,
+      "kind": "entity"
+    },
+    {
+      "check": "Letter attachment marker p64",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Letter attachment marker p65",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Letter attachment marker p66",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Court attachment header p67",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Court attachment header p68",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Court attachment header p69",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Court attachment header p70",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Court attachment header p71",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Court attachment header p72",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Court attachment header p73",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Court attachment header p74",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Court attachment header p75",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Court attachment header p76",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Court attachment header p77",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Retained minute wrapper p10",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Retained minute wrapper p19",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Retained minute wrapper p20",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Retained minute wrapper p21",
+      "passed": true,
+      "kind": "exposed-header-only"
+    },
+    {
+      "check": "Prior conditional cutting wording",
+      "passed": true,
+      "kind": "extracted-text-anchor"
+    },
+    {
+      "check": "Prior indemnity wording",
+      "passed": true,
+      "kind": "extracted-text-anchor"
+    },
+    {
+      "check": "Supplied label count",
+      "passed": true,
+      "kind": "supplied-transcription-accounting"
+    },
+    {
+      "check": "Supplied label uniqueness",
+      "passed": true,
+      "kind": "supplied-transcription-accounting"
+    },
+    {
+      "check": "Supplied page76 labels",
+      "passed": true,
+      "kind": "supplied-transcription-accounting"
+    },
+    {
+      "check": "Supplied page77 labels",
+      "passed": true,
+      "kind": "supplied-transcription-accounting"
+    },
+    {
+      "check": "Duplicate observations retained",
+      "passed": true,
+      "kind": "supplied-transcription-accounting"
+    }
+  ],
+  "passed": 34,
+  "label_accounting": {
+    "rows": 104,
+    "unique_supplied_labels": 104,
+    "by_page": {
+      "76": 61,
+      "77": 43
+    },
+    "complete_list_total": "not counted",
+    "physical_piece_count": "not established",
+    "nativeNIST236_or_W14_C12_join": false
+  },
+  "states_preserved": {
+    "unsigned_letter": true,
+    "draft_unapproved_minutes": true,
+    "staff_letter_wording_difference_unresolved": true,
+    "alternative_order_assembly_unresolved": true,
+    "actualexecution_receipt_cutting_unverified": true
+  },
+  "limits": "Passes do not authenticate authoring, signatures, approved status, actual transfer, contract effect, specimen origin, image-transcription completeness, conspiracy or goal completion. Whitespace/case normalization is for exposed text checks only; source bytes and literal observations are unchanged."
+}
