@@ -1,0 +1,563 @@
+--- /dev/null
++++ b/EDIT-AND-ROUTE-COMPARISON.json
+@@ -0,0 +1,74 @@
++{
++  "reported_edits": [
++    {
++      "item": 1,
++      "reported": "Assemble foreign-power material; add if package reaches possible OIPR stage",
++      "test": "Match material and actual draft/submission; distinguish promise from executed referral"
++    },
++    {
++      "item": 2,
++      "reported": "No need for verbatim interview answers; presentation said accurate",
++      "test": "Compare questions, source interview record and exact draft wording"
++    },
++    {
++      "item": 3,
++      "reported": "Criticizes earlier explanation and favors own draft",
++      "test": "Align the earlier explanation and replacement; preserve both readings"
++    },
++    {
++      "item": 4,
++      "reported": "Inserted 'not', added viewpoint wording, discounted joyride material",
++      "test": "Identify affected sentence, negation scope and source support; no inferred semantic reversal"
++    },
++    {
++      "item": 5,
++      "reported": "Added words for point; rest judged not helpful",
++      "test": "Recover actual comments and both draft texts"
++    },
++    {
++      "item": 6,
++      "reported": "Paris-supplied name/spelling; group connection deemed adequate",
++      "test": "Recover paragraph and Paris record; compare group/foreign-power criteria without assuming equivalence"
++    }
++  ],
++  "stages": [
++    {
++      "source": "347",
++      "date_as_displayed": "August24,2001",
++      "stage": "Emergency local property/residence request; supportingLHM",
++      "missing": "Exact reviewed-package/version join and actual application/outcome"
++    },
++    {
++      "source": "350",
++      "date_as_displayed": "August28,2001 1:29PM",
++      "stage": "Edit account and conditional OIPR stage",
++      "missing": "Attachment, actual material, native questions and referral/receipt"
++    },
++    {
++      "source": "351",
++      "date_as_displayed": "August28,2001; quoted1:56PM; top3:56PM",
++      "stage": "Maltbie participant report of NSLU meeting and further-work statement; Morrow acknowledgment",
++      "missing": "Original meeting advice/material, native clock/header/receipt and executed steps"
++    },
++    {
++      "source": "334",
++      "date_as_displayed": "September10,2001",
++      "stage": "Samit attributes both-route adverse assessment, INS posture and non-pursuit; foreign-search plan/attendance opposition",
++      "missing": "Original dual-route basis/decision and executed alternative"
++    }
++  ],
++  "preserved_relationships": [
++    "Adequate group connection versus inadequate foreign-power connection",
++    "Local urgent request versus conditional routing and negative assessment",
++    "FISA-specific explanation versus later two-route account",
++    "Further LEGAT steps versus non-pursuit and foreign-attendance opposition"
++  ],
++  "unperformed": [
++    "Original-draft character/semantic diff",
++    "Interview-to-draft accuracy test",
++    "Legal sufficiency/foreign-power ruling",
++    "Exact native version join",
++    "Clock alignment or executed-search verification"
++  ],
++  "evidence_dependence": "Own headquarters report adds provenance specificity; related reports/acknowledgments do not become independent corroboration of wrongdoing."
++}
+--- /dev/null
++++ b/OBSERVATIONS.json
+@@ -0,0 +1,150 @@
++[
++  {
++    "id": "DRAFT-01",
++    "source": "350",
++    "physical_page": 1,
++    "zone": "Header/banner/CC, subject and opening body",
++    "kind": "Visible fields and attachment reference",
++    "observation": "Maltbie From; Jones To; Flack CC and page banner; Aug28,2001 1:29PM; draft2 subject; see-attached instruction.",
++    "limits": "Banner is not a competing author; no embedded attachment exposed in PDF does not establish original attachment absence or cause. No native transport/receipt.",
++    "report_line": 17
++  },
++  {
++    "id": "DRAFT-02",
++    "source": "350",
++    "physical_page": 1,
++    "zone": "Numbered item1",
++    "kind": "Reported assembly and conditional routing",
++    "literal_fragment": "If we get to the point where we can send this to OIPR",
++    "observation": "Foreign-power material being assembled; would add to LHM at potential OIPR stage.",
++    "limits": "No actual referral, final package, withheld-material finding or legal ruling.",
++    "report_line": 19
++  },
++  {
++    "id": "DRAFT-03",
++    "source": "350",
++    "physical_page": 1,
++    "zone": "Numbered items2–5 and closing paragraph",
++    "kind": "Explicit edit/content-selection account",
++    "literal_fragment": "I inserted the 'not'",
++    "observation": "Nonverbatim interview presentation, criticism of earlier explanation, negation and viewpoint additions, joyride/remainder judged not useful, tightening/audience rationale.",
++    "limits": "Actual questions, original evidence and both drafts missing; semantic/factual effect and accuracy not tested.",
++    "report_line": 30
++  },
++  {
++    "id": "DRAFT-04",
++    "source": "350",
++    "physical_page": 1,
++    "zone": "Numbered item6",
++    "kind": "Reported Paris attribution and group-connection assessment",
++    "literal_fragment": "adequate connection to the group",
++    "observation": "Name/spelling attributed to ALAT-Paris; paragraph deemed adequate for group connection.",
++    "limits": "No redacted-name reconstruction or actual foreign-power/criteria ruling. Exact paragraph/version missing.",
++    "report_line": 34
++  },
++  {
++    "id": "DRAFT-05",
++    "source": "351",
++    "physical_page": 1,
++    "zone": "Quoted Maltbie message, first paragraph",
++    "kind": "Participant account of attributed advice",
++    "literal_fragments": [
++      "#1 in NSLU",
++      "we still don't have a connection to a foreign power"
++    ],
++    "observation": "Reports just leaving meeting with Spike Bowman and adverse assessment; membership/integral-part distinction described.",
++    "limits": "Maltbie's own court-represented report, not Bowman's original advice, OIPR decision or judicial disposition.",
++    "report_line": 9
++  },
++  {
++    "id": "DRAFT-06",
++    "source": "351",
++    "physical_page": 1,
++    "zone": "Quoted Maltbie message, second paragraph; top-level Morrow reply",
++    "kind": "Further-work statement and acknowledgment",
++    "literal_fragment": "neutralize this guy",
++    "observation": "Praises identification/interview/neutralize work, proposes further call and LEGAT-assisted steps; Morrow thanks for support.",
++    "limits": "Meaning/executed scope not independently established; acknowledgment is not independent verification of meeting or completed further steps.",
++    "report_line": 11
++  },
++  {
++    "id": "DRAFT-07",
++    "sources": [
++      "350",
++      "351",
++      "347"
++    ],
++    "physical_pages": {
++      "350": [
++        1
++      ],
++      "351": [
++        1
++      ],
++      "347": [
++        1,
++        2,
++        4,
++        9
++      ]
++    },
++    "zone": "350item1/6;351quotedfirstparagraph;347request/details",
++    "kind": "Unresolved scope/version/assessment tension",
++    "observation": "Urgent property/residence request; conditional OIPR/foreign-power assembly; adequate group connection versus reported insufficient foreign-power connection.",
++    "limits": "No controlling value or explanation chosen; original paragraphs/material/meeting and routing needed.",
++    "report_line": 36
++  },
++  {
++    "id": "DRAFT-08",
++    "sources": [
++      "351",
++      "334"
++    ],
++    "physical_pages": {
++      "351": [
++        1
++      ],
++      "334": [
++        1
++      ]
++    },
++    "zone": "351quotedfirstparagraph versus334quotedSamitfirstparagraph",
++    "kind": "Assessment-scope difference",
++    "observation": "351 describes FISA/foreign-power concern;334 reports assessment against both criminal and FISA warrants for computer.",
++    "limits": "Separate criminal basis and disposition unknown; no finding that FISA criterion was or was not improperly applied to criminal route.",
++    "report_line": 38
++  },
++  {
++    "id": "DRAFT-09",
++    "sources": [
++      "351",
++      "334"
++    ],
++    "physical_pages": {
++      "351": [
++        1
++      ],
++      "334": [
++        1
++      ]
++    },
++    "zone": "351quotedsecondparagraph;334quotedSamitfirst/lastoperativeparagraphs",
++    "kind": "Unresolved timing/action relationship",
++    "observation": "Further LEGAT work versus reported non-pursuit/INS direction and opposition to attendance in France.",
++    "limits": "Different stages/tasks/changed positions or inconsistent accounts are untested alternatives; no blanket halt or completed search inferred.",
++    "report_line": 40
++  },
++  {
++    "id": "DRAFT-10",
++    "source": "351",
++    "physical_page": 1,
++    "zone": "Top-level Morrow header and quoted Maltbie header",
++    "kind": "Displayed timestamps",
++    "literal_values": [
++      "Tue, Aug28,2001 3:56PM",
++      "08/28/01 01:56PM"
++    ],
++    "limits": "No time zone; no calculated actual elapsed interval or native dispatch/receipt.",
++    "report_line": 7
++  }
++]
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,75 @@
++{
++  "items": [
++    {
++      "id": "DRAFT-T01",
++      "status": "TODO_INPUT",
++      "missing_input": "Native350 draft2 attachment, earlier draft/LHM versions and original recipient questions/comments",
++      "dependent_test": "Locate each reported insertion/deletion, especially not, and test factual/semantic effects and exact347-to350 version join",
++      "searches_completed": "Court index; entire350/351 PDFs; passive embedded attachment enumeration; selected347 pages and prior full report. Native draft not exposed by this PDF.",
++      "next_untried_route": "Inspect actual court693 LHM and349 exchange as candidate counterparts, without assuming title/date identifies the attachment.",
++      "revisit_trigger": "Actual draft files/comments or explicit attachment/version mapping"
++    },
++    {
++      "id": "DRAFT-T02",
++      "status": "TODO_INPUT",
++      "missing_input": "Source interview records/notes/questions and exact paragraphs referred to in350items2–5",
++      "dependent_test": "Test nonverbatim accuracy, explanatory/viewpoint changes, negation scope and omitted joyride/other context",
++      "searches_completed": "All six edit responses and closing rationale read; original questions/interview-to-draft alignment not supplied by new exhibits.",
++      "next_untried_route": "Explicit source paragraph/version pointers in693/349, then authentic interview counterpart; do not substitute summary assertions.",
++      "revisit_trigger": "Matched interview source and before/after paragraph with provenance"
++    },
++    {
++      "id": "DRAFT-T03",
++      "status": "TODO_INPUT",
++      "missing_input": "Bowman original advice/meeting notes, attendees, evidentiary package, standards applied and subsequent reconsideration",
++      "dependent_test": "Test completeness/accuracy of Maltbie report and reason for group-versus-foreign-power assessments",
++      "searches_completed": "351 own participant account acquired;350item6 and347 alleged links compared;334 previously held. Original advice not recovered.",
++      "next_untried_route": "349/693 actual contents for concrete input/referral/meeting links; any directly identified legal-unit record.",
++      "revisit_trigger": "Original advice/notes/material or authenticated specific counterpart"
++    },
++    {
++      "id": "DRAFT-T04",
++      "status": "TODO_INPUT",
++      "missing_input": "Complete foreign-power/ALAT-Paris material and actual assembled LHM/submission package",
++      "dependent_test": "Identify material known/added/omitted and source/version/criterion joins without resolving redactions by inference",
++      "searches_completed": "350item1/6,351firstquotedparagraph and347p2 inspected; material itself not reproduced here.",
++      "next_untried_route": "Actual349 and693; trace explicit dated references rather than use index names to fill hidden fields.",
++      "revisit_trigger": "Underlying Paris/intelligence documents and exact package/version association"
++    },
++    {
++      "id": "DRAFT-T05",
++      "status": "TODO_INPUT",
++      "missing_input": "Actual OIPR transmittal/receipt/reply or documented nonreferral, separate criminal/prosecutor review, applications/orders/returns/no-action and alternative task outcomes",
++      "dependent_test": "Distinguish internal screening from referral/adjudication and test both-route/INS/LEGAT/France accounts",
++      "searches_completed": "350conditionalstage,351meeting/furtherwork,334bothroute/Franceaccount and347request compared; no formal disposition or execution supplied.",
++      "next_untried_route": "Follow explicit counterpart pointers in349/693, then original legal/routing and custody/search records; retain all independent FAA work TODOs.",
++      "revisit_trigger": "Source-specific referral/nonreferral, decision/application/order/return or task/custody/result record"
++    },
++    {
++      "id": "DRAFT-T06",
++      "status": "TODO_INPUT",
++      "missing_input": "Full native messages/threads/attachments and transport/recipient/timezone evidence",
++      "dependent_test": "Authenticate exact versions, attachment maps, dispatch/receipt and chronology; distinguish print banners from sender/custodian fields",
++      "searches_completed": "All350/351visibleheaders/bodies and334wholepage inspected; PDF attachment lists empty; no native authentication performed.",
++      "next_untried_route": "Actual companion exhibits and explicit production/attachment manifest; avoid unchanged replay of unavailable routes.",
++      "revisit_trigger": "Native headers, full thread, explicit attachment manifest or independently recorded receipt"
++    }
++  ],
++  "carry_forward": "All18 original input requirements and all5track substantive criteria remain open. Preserve earlier 688/692/810/701/334/347 copy/scope/version/receipt issues and FAA correction/administrative dispositions. Prior sources and reports unchanged; only dependent tests deferred.",
++  "ready_next": [
++    {
++      "exhibit": "349",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/349.pdf",
++      "index_description": "August28 11:51AM exchange",
++      "status": "AVAILABLE_UNACQUIRED_UNREAD",
++      "test": "Read actual body and explicit evidence/edit pointers; do not infer hidden identity or content from index title."
++    },
++    {
++      "exhibit": "693",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/693.pdf",
++      "index_description": "August24 LHM drafted by Maltbie",
++      "status": "AVAILABLE_UNACQUIRED_UNREAD",
++      "test": "Read and compare actual paragraphs/request/court-name fields to347 and350; title/date alone does not establish draft2 identity."
++    }
++  ]
++}
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,54 @@
++# August 28 FISA drafts and advice: a more direct headquarters account, with unresolved edits and routing
++
++The newly acquired court copies of **351 and 350** add Maltbie's own contemporaneous written accounts of an NSLU meeting, draft editing and possible OIPR routing. This advances beyond the September 10 account in 334 that attributes a warrant assessment to him. They still do not supply Bowman's original advice, the draft attachment, an actual OIPR submission or a judicial ruling. Original source bytes, earlier reports and competing accounts remain unchanged.
++
++## Exhibit 351: the reported meeting and further work
++
++[351](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/351.pdf), physical page 1, contains Morrow's top-level acknowledgment to Maltbie, displayed **Tuesday, August 28, 2001, 3:56 PM**, and a quoted Maltbie message displayed **08/28/01 01:56PM**. The latter is addressed in its body to Ray and Greg. The court index and rendered fields are retrieval/representation evidence, not native transport logs. No time zone is displayed; no exact elapsed interval or receipt chronology is inferred.
++
++In the quoted Maltbie message, first paragraph, he writes that they have just left a meeting with **Spike Bowman, described as “#1 in NSLU”**. He attributes to Bowman a view that they have even less than he thought and says **“we still don't have a connection to a foreign power”**, even if the identity link described in that paragraph could be made. He describes needing intelligence that the person was actually part of the group or movement rather than merely an individual advising another person. The redacted person's identity is not reconstructed. This is Maltbie's account of the meeting and its reasoning, not Bowman's own contemporaneous note or our ruling on the applicable legal standard.
++
++The next quoted paragraph praises prior work to identify, interview and **“neutralize this guy”**, asks Greg to call about next steps, and says there are still things they can do with LEGAT assistance. The exact phrase and surrounding tasks are preserved. It is not an independently documented executed act or a defined operational instruction; underlying task/action records would test its intended scope. The stated further work is contrary evidence to a blanket claim that every FBI effort had stopped by August 28. It does not prove that those further steps occurred or succeeded.
++
++Morrow's acknowledgment thanks Maltbie for help and continued support. That is a distinct message, but it is not independent corroboration that Bowman's remarks were quoted completely or accurately. NSLU, OIPR, a prosecutor and the court are not interchangeable source labels: this page reports an NSLU meeting and does not document an OIPR referral or court disposition.
++
++## Exhibit 350: six edit responses, and a conditional OIPR stage
++
++[350](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/350.pdf), physical page 1, is a Maltbie message to Greg Jones, with Rita Flack copied, displayed **Tuesday, August 28, 2001, 1:29 PM**, subject **“ZM fisa - draft 2”**. The page banner names Flack while the From field names Maltbie; those distinct representation fields are preserved, not treated as competing authors or proof of actual receipt. The body says to see an attachment and responds to the recipient's questions. The one-page PDF exposes no embedded attachment in the passive enumeration. That does not establish whether the original email lacked an attachment or why a native draft is absent from this court representation.
++
++All six numbered items were read. Their source-level content and the dependent tests are retained:
++
++| Item, physical page 1 | Sender's recorded account | Missing input needed to assess effect |
++|---|---|---|
++| 1 | Rita is assembling foreign-power material. **“If we get to the point where we can send this to OIPR”**, it will be added to the LHM. | Actual material, draft attachment, review stages and transmittal; the conditional statement is not an actual referral. |
++| 2 | Verbatim answers to interview questions are said not to be needed; the sender considers the current presentation accurate. | Interview record, questions/comments and both draft texts; neither accuracy nor distortion independently tested. |
++| 3 | The sender criticizes how Harry set out an explanation and favors his own draft's presentation. | Exact earlier wording, context and revision; disagreement about presentation is visible, the effect is not. |
++| 4 | **“I inserted the 'not'”**; wording is added to present a point as the recipient's view. The sender calls the subject a liar and says the joyride material adds nothing to the package. | The specific sentence, negation scope, original comments/interview evidence and draft versions. No claim that a fact was reversed or exculpatory material suppressed is established by this account alone. |
++| 5 | Words are added to cover a point; the remaining material is judged not to add to the package. | The point, original comments and actual additions/omissions. |
++| 6 | A name/spelling supplied by **ALAT-Paris** is used; the paragraph is said to make an **“adequate connection to the group”**. | Underlying Paris information, exact paragraph/version and the criterion being evaluated. No redacted name is inferred from other sources. |
++
++The closing paragraph says the editing aims to tighten language, be more concise and adapt the LHM to a new targeted audience, while saying the earlier LHM is not necessarily wrong. That is the sender's stated rationale, not an independent validation of the edits. Preserve it alongside the explicit content-selection and negation statements; do not adopt either accurate editing or misleading alteration as the resolved explanation.
++
++## What remains in tension
++
++**Group connection versus foreign-power connection.** Item 6 of 350 calls the paragraph's group connection adequate; the quoted Maltbie message in 351 reports that a foreign-power connection is still lacking. Both statements remain visible. They refer to differently worded objects and potentially different review stages, but the exact paragraph, material reviewed and meeting record are missing. We do not declare them equivalent, reconcile them as a settled legal distinction, infer a reversal from the displayed times, or select a controlling account.
++
++**Local urgent request versus conditional routing and negative assessment.** [347](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/347.pdf), August 24, physical pages **1–2 and 4/9**, requests emergency authority to search property/effects and a residence. Page 2 attributes alleged group/leader links to the information then held and also preserves uncertainty about plan extent and associates. In 350, foreign-power material is still described as being assembled for a possible OIPR stage; 351 reports the adverse connection assessment. Without the draft and decision trail, these records do not establish which material was included, omitted, sent, reviewed or rejected, or whether OIPR ever received that version.
++
++**The FISA-specific explanation versus the later two-route account.** [334](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/334.pdf), physical page 1, quoted Samit update paragraph 1, attributes an insufficient-evidence assessment for both criminal and FISA warrants for the computer to Maltbie, reports INS-related direction and non-pursuit, and strongly disagrees. Exhibit 351 describes a foreign-power/FISA concern; it does not separately give a criminal-warrant analysis. Do not turn that one recorded concern into proof that either criminal authority was unavailable or the wrong standard was applied to it. The specific criminal-review basis and disposition remain a concrete missing-record test.
++
++**Further LEGAT work versus reported non-pursuit and opposition to attendance.** The August 28 further-work statement in 351 and September 10 account in 334 remain side by side. The latter also describes a France-search proposal and RFU opposition to FBI attendance. They could concern different times, acts or changes of position, or reflect inconsistent accounts; those are untested alternatives. Neither blanket abandonment nor completed foreign-search activity is established here.
++
++The earlier [334/347 comparison](../moussaoui-emergency-fisa-comparison-2026-10-28/README.md) remains frozen. Its question about the original headquarters assessment has advanced in a precise respect: 351 now supplies a court copy of Maltbie's own report, and 350 his edit/routing account. Bowman's original advice, complete reviewed package, formal legal referral and actual authorization/search outcomes remain unacquired. These messages concern related actors and requests; they must not be counted as independent corroboration of wrongful obstruction merely because there are more exhibits.
++
++## Reading scope, preservation and feasible continuation
++
++Both new one-page exhibits were read completely at 180 dpi. Five prior pages were reinspected: 334 p. 1 and 347 pp. 1/2/4/9. The prior full nine-page 347 review is reused, not newly repeated. The two new pages returned zero extracted text characters; no OCR, hidden-name reconstruction, native-email authentication, clock alignment or legal adjudication was performed. Four PDF byte/hash/page-count preservation checks passed. These checks establish representation identity, not the truth of every assertion or legal sufficiency.
++
++[SOURCES.json](SOURCES.json) gives URLs, access UTC/local time, byte counts, SHA-256, page counts and selected HTTP response fields. Those present-day transport fields are preserved as metadata; they are not treated as native message dates, global content identities or evidence of historical tampering. [OBSERVATIONS.json](OBSERVATIONS.json) supplies exact physical-page, message/item and report-line locators. [EDIT-AND-ROUTE-COMPARISON.json](EDIT-AND-ROUTE-COMPARISON.json) keeps stated edits, advice, conditional referral, authorization and outcomes separate. [REVIEW-AND-CHECKS.json](REVIEW-AND-CHECKS.json) records the user checklist and actual reading/tests; [TEXT-CHANGES.diff](TEXT-CHANGES.diff) preserves exact note additions, not a purported original-draft diff.
++
++[OPEN-TODOS.json](OPEN-TODOS.json) retains the native draft-2 attachment, earlier versions, recipient questions, interview evidence, foreign-power/Paris material, original NSLU advice, the package and OIPR/prosecutor/court routing/disposition, full message headers and executed alternatives. Each lists what test depends on it, searches completed, the next untried route and a revisit trigger. All 18 original input requirements and five-track acceptance criteria, including FAA correction/administrative dispositions and earlier copy/scope/receipt gaps, remain open. Missing inputs defer dependent tests only.
++
++The court index makes exhibits **349** (August 28 exchange) and **693** (August 24 headquarters-drafted LHM) available next leads. Their bodies have not been acquired or read here. Do not identify either as the missing draft-2 attachment or recover a redacted identity from an index title. The next feasible work is to inspect those actual sources and test explicit version/paragraph joins, not repeat unchanged failed routes or infer a final decision from a title.
++
++Original PDFs, page order, redactions and earlier notes remain unchanged on verified media. The public payload excludes raw scans/rasters/extractions, signatures, contact/identification/account details, private correspondence and strategy. No agency/witness outreach, fees, new request/submission, mailbox access, merge, history rewrite, private push, or conclusion of unlawful obstruction, concealment or conspiracy is part of this review.
+--- /dev/null
++++ b/REVIEW-AND-CHECKS.json
+@@ -0,0 +1,109 @@
++{
++  "recorded_utc": "2026-10-29T12:57:25.197832+00:00",
++  "client_task_date": "2026-10-29 America/New_York",
++  "visual_scope": {
++    "351": [
++      1
++    ],
++    "350": [
++      1
++    ],
++    "prior_pages_reinspected": {
++      "334": [
++        1
++      ],
++      "347": [
++        1,
++        2,
++        4,
++        9
++      ]
++    },
++    "new_pages_read": 2,
++    "prior_pages_reinspected_count": 5,
++    "new_render_dpi": 180,
++    "scope_limit": "Prior full347 and other studies reused; no new exhaustive12-page source reread or original draft diff claimed."
++  },
++  "new_text_layer_characters": {
++    "351": [
++      0
++    ],
++    "350": [
++      0
++    ]
++  },
++  "new_PDF_embedded_attachment_names": {
++    "351": [],
++    "350": []
++  },
++  "OCR_performed": false,
++  "source_preservation": [
++    {
++      "exhibit": "351",
++      "bytes": 55801,
++      "sha256": "31450d96a76505bfd7cb1830c90ea42feb7e4f8ee6649170d20d9c9f57ed6056",
++      "pdf_pages": 1,
++      "verified_unchanged": true
++    },
++    {
++      "exhibit": "350",
++      "bytes": 53907,
++      "sha256": "d3a862b610a8819b59d09e7ec0bd0cfbee881cea7382117cc2a54605a12cd2ca",
++      "pdf_pages": 1,
++      "verified_unchanged": true
++    },
++    {
++      "exhibit": "334",
++      "bytes": 68665,
++      "sha256": "b18bde88c4ee0d24fcbc543889ee8426fd922ffdd538550f7c819ae6ca7825fb",
++      "pdf_pages": 1,
++      "verified_unchanged": true
++    },
++    {
++      "exhibit": "347",
++      "bytes": 726567,
++      "sha256": "7df842ae5d3430073f4cf09cdd98e8eee84746f9899c05c5a5b5b3e84cf8c09a",
++      "pdf_pages": 9,
++      "verified_unchanged": true
++    }
++  ],
++  "earlier_report": {
++    "sha256": "0c0f0f911adbcc0488c37a63de966a9837ee97bcd9746bfe6f76e6af7b00f02d",
++    "bytes": 11837,
++    "status": "Frozen unchanged native predecessor, not rewritten"
++  },
++  "user_checklist": [
++    {
++      "request": "Review351and350",
++      "outcome": "Both complete pages visually read; all six350edititems and both351messages covered",
++      "unresolved": "Native attachment/source advice and authentication"
++    },
++    {
++      "request": "Comparewith334and347",
++      "outcome": "Five prior pages reinspected; draft/advice/request/routing/authorization/outcome separated",
++      "unresolved": "Original version/material/decision joins and executed actions"
++    },
++    {
++      "request": "Preserveconflictsandsourcelinks",
++      "outcome": "Source URLs/access/hash and exact page/message/item/report-line pins; no preferred value selected",
++      "unresolved": "Group/foreignpower, conditionalreferral, FISA/bothroute and furtherwork/nonpursuit tensions remain"
++    },
++    {
++      "request": "MissinginputTODOsandcontinue",
++      "outcome": "Six groups with dependent test/search/next-route/revisit;349/693 available and unread;18inputs/5criteria carried",
++      "unresolved": "Evidence-dependent tests not waived or declared complete"
++    },
++    {
++      "request": "CommitpushAveLyra",
++      "outcome": "Review only this new additive public payload; exact identity/ref/file receipts recorded separately after actual push",
++      "unresolved": "Publication does not prove historical claims or complete substantive goal"
++    }
++  ],
++  "not_performed": [
++    "No native email or attachment authentication",
++    "No actual original-draft semantic diff",
++    "No legal sufficiency/advice adjudication",
++    "No transport/timezone/clock validation",
++    "No agency/witness contact, fee, new request, mailbox access, merge, deletion or private push"
++  ]
++}
+--- /dev/null
++++ b/SOURCES.json
+@@ -0,0 +1,83 @@
++{
++  "court_index": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html",
++  "index_locator": "Phase1, exhibits351/350, compared with334/347;349/693 are next unacquired leads.",
++  "documents": [
++    {
++      "exhibit": "351",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/351.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/351.pdf",
++      "access_utc": "2026-10-29T12:48:33.799738+00:00",
++      "access_New_York": "2026-10-29T08:48:33.799738-04:00",
++      "bytes": 55801,
++      "sha256": "31450d96a76505bfd7cb1830c90ea42feb7e4f8ee6649170d20d9c9f57ed6056",
++      "pages": 1,
++      "http_status": 200,
++      "selected_http_fields": {
++        "Content-Type": "application/pdf",
++        "Last-Modified": "Fri, 19 May 2006 15:23:00 GMT",
++        "ETag": "\"022f81c587bc61:0\"",
++        "Date": "Thu, 29 Oct 2026 12:48:32 GMT",
++        "Content-Length": "55801"
++      },
++      "status": "New acquisition, entire page read"
++    },
++    {
++      "exhibit": "350",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/350.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/350.pdf",
++      "access_utc": "2026-10-29T12:48:35.147872+00:00",
++      "access_New_York": "2026-10-29T08:48:35.147872-04:00",
++      "bytes": 53907,
++      "sha256": "d3a862b610a8819b59d09e7ec0bd0cfbee881cea7382117cc2a54605a12cd2ca",
++      "pages": 1,
++      "http_status": 200,
++      "selected_http_fields": {
++        "Content-Type": "application/pdf",
++        "Last-Modified": "Fri, 19 May 2006 15:23:00 GMT",
++        "ETag": "\"022f81c587bc61:0\"",
++        "Date": "Thu, 29 Oct 2026 12:48:33 GMT",
++        "Content-Length": "53907"
++      },
++      "status": "New acquisition, entire page read"
++    },
++    {
++      "exhibit": "334",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/334.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/334.pdf",
++      "access_utc": "2026-10-29T01:40:04.140995+00:00",
++      "access_New_York": "2026-10-28T21:40:04.140995-04:00",
++      "bytes": 68665,
++      "sha256": "b18bde88c4ee0d24fcbc543889ee8426fd922ffdd538550f7c819ae6ca7825fb",
++      "pages": 1,
++      "http_status": 200,
++      "selected_http_fields": {
++        "Content-Type": "application/pdf",
++        "Last-Modified": "Fri, 19 May 2006 15:23:00 GMT",
++        "ETag": "\"022f81c587bc61:0\"",
++        "Date": "Thu, 29 Oct 2026 01:40:02 GMT",
++        "Content-Length": "68665"
++      },
++      "status": "Earlier unchanged acquisition reused; current reading scope separately specified"
++    },
++    {
++      "exhibit": "347",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/347.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/347.pdf",
++      "access_utc": "2026-10-29T01:42:52.505411+00:00",
++      "access_New_York": "2026-10-28T21:42:52.505411-04:00",
++      "bytes": 726567,
++      "sha256": "7df842ae5d3430073f4cf09cdd98e8eee84746f9899c05c5a5b5b3e84cf8c09a",
++      "pages": 9,
++      "http_status": 200,
++      "selected_http_fields": {
++        "Content-Type": "application/pdf",
++        "Last-Modified": "Fri, 19 May 2006 15:23:00 GMT",
++        "ETag": "\"022f81c587bc61:0\"",
++        "Date": "Thu, 29 Oct 2026 01:42:50 GMT",
++        "Content-Length": "726567"
++      },
++      "status": "Earlier unchanged acquisition reused; current reading scope separately specified"
++    }
++  ],
++  "limits": "Official court representations, not native-message/attachment, complete-case-file, transport, delivery or outcome certification. HTTP metadata is recorded without a historical-content inference."
++}
