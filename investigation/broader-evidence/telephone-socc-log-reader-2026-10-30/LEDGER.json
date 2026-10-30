@@ -1,0 +1,170 @@
+{
+  "source_rows": {
+    "source": "L01",
+    "page": 3,
+    "bates": "AA KEAN COMM002532",
+    "transcription_role": "manual semantic transcription of visible table time cells and paraphrased subjects; not a native carrier export or independent analyst review",
+    "rows": [
+      {
+        "row": 1,
+        "time_literal": "0740",
+        "description": "Report attributed to an operations manager about a call from the number1 flight attendant and aircraft emergency; same row begins with normal departure language.",
+        "limit": "Not uniquely joined to the Gonzalez call; who spoke directly to whom and which time event this is remain unknown."
+      },
+      {
+        "row": 2,
+        "time_literal": "0738",
+        "description": "Flight11 lockout; this row does not itself say manifest.",
+        "limit": "N19 supplies manifest context separately; do not silently add that noun to the table."
+      },
+      {
+        "row": 3,
+        "time_literal": null,
+        "description": "Boston traffic-center call and reported communications/transponder/threat information.",
+        "limit": "Blank time cell retained; do not silently inherit0738 or0744."
+      },
+      {
+        "row": 4,
+        "time_literal": "0744",
+        "description": "ATC reportedly handling the flight as a hijack, possible JFK destination."
+      },
+      {
+        "row": 5,
+        "time_literal": "0745",
+        "description": "Morning conference briefing."
+      },
+      {
+        "row": 6,
+        "time_literal": "0748",
+        "description": "Request to contact FAA command center about removing or de-identifying Flight11 on ASD.",
+        "limit": "Recorded request, not proof of execution, display state or aircraft position."
+      },
+      {
+        "row": 7,
+        "time_literal": "0749",
+        "description": "SOC/SOCC message reportedly sent.",
+        "limit": "Not a delivery/recipient receipt."
+      },
+      {
+        "row": 8,
+        "time_literal": "0752",
+        "description": "Participants reportedly dropped a call and redialed for a secure call.",
+        "limit": "Conversation/participants/system not uniquely identified; not joined to N19 tape-counter reset."
+      },
+      {
+        "row": 9,
+        "time_literal": "0754",
+        "description": "Reservations reported receiving a flight-attendant call.",
+        "limit": "Not uniquely identified with row1 or any authenticated call leg."
+      },
+      {
+        "row": 10,
+        "time_literal": "0758",
+        "description": "Reported confirmation of aircraft hitting WTC.",
+        "limit": "Reported knowledge entry, not an independent impact timestamp."
+      },
+      {
+        "row": 11,
+        "time_literal": "0805",
+        "description": "Flight77 lockout; parenthetical0745 notification by center manager.",
+        "limit": "Two distinct printed labels preserved; notification, event and entry meanings not adjudicated."
+      },
+      {
+        "row": 12,
+        "time_literal": null,
+        "description": "Additional flight-attendant information.",
+        "limit": "Blank time retained; not automatically part of the preceding0805 event."
+      }
+    ],
+    "raw_order_retained": true,
+    "blank_time_cell_policy": "null; never zero/inherit/deduplicate"
+  },
+  "observations": [
+    {
+      "id": "SL01",
+      "type": "observed reader/image provenance",
+      "source": "L01/B01",
+      "locator": "p1 handwritten title and boxed scope statement; p3/p4 footers",
+      "finding": "A concrete log representation is readable publicly. It describes selected information recorded by SOCC director/support, not all events. Printed January2002 label and two exact Bates pages give narrower authentication targets.",
+      "counterevidence_or_limit": "Mirror and bibliography are not proof of release/custody/native version or completeness. This is not the acquired official source used at the interview."
+    },
+    {
+      "id": "SL02",
+      "type": "observed conflicting row labels; conditional comparison",
+      "source": "L01/N19",
+      "locator": "L01 p3 AA KEAN COMM002532 table rows1-4; N19 p2 first paragraph and p3 lockout/declaration paragraphs",
+      "values": [
+        "L01 first table row0740, followed by0738; blank time on Boston-call row; next timed row0744",
+        "N19 first Gonzalez call7:27CT attributed to SOC timeline; lockout7:38CT; nearby declaration7:44CT"
+      ],
+      "finding": "The visible table is not monotonically ordered at its start. Some labels match interview labels, while the opening report has a different value/description. Preserve each row and its source context.",
+      "counterevidence_or_limit": "Not evidence of a13-minute actual delay or altered chronology. Row1 describes a number1-flight-attendant report and may be a different event or report; exact version/event/utterance and time semantics are missing. Matching7:38/7:44 does not independently corroborate the interview, which used a timeline. Do not fill blank cells, reorder rows or force elapsed/absolute clock joins."
+    },
+    {
+      "id": "SL03",
+      "type": "source-reported request, not execution",
+      "source": "L01",
+      "locator": "p3 row0748",
+      "finding": "An instruction/request to seek FAA removal or de-identification of Flight11 from ASD is a specific operational-record lead.",
+      "counterevidence_or_limit": "No completed removal, changed feed, flight movement, intentional concealment or cause of a later screen trace is established. Seek actual request/receipt, action/audit log and display/feed version. Technical interpretation belongs to the technical owner."
+    },
+    {
+      "id": "SL04",
+      "type": "source-reported call change, not recording test",
+      "source": "L01/N19",
+      "locator": "L01 p3 row0752; N19 p4 opening paragraph",
+      "finding": "The log describes a redial for a secure call; the interview separately reports a tape-counter reset and second recording. Preserve these as separate candidates.",
+      "counterevidence_or_limit": "Do not assume they are the same call, clock, mechanism or missing segment. No native call/tape continuity or content test here; previously held public audio derivatives/tests remain held/performed."
+    },
+    {
+      "id": "SL05",
+      "type": "source reports with distinct knowledge states",
+      "source": "L01",
+      "locator": "p4 AA KEAN COMM002533 rows0822,0833-0834,0846,0905,0916,0936,0941",
+      "values": [
+        "0822 unconfirmed United-aircraft report;0905 unconfirmed second-aircraft report;0916 United175 identification",
+        "0833 ATC ground-stop report;0846 airline land/hold instruction",
+        "0834 report attributed both WTC aircraft to American;0936 FAA presence in an office;0941 conference contact"
+      ],
+      "finding": "Keep unconfirmed information, misidentification, instruction, reported contact and later identification as different record types, not one event or uniformly accurate historical statements.",
+      "counterevidence_or_limit": "No equation of0916 with physical impact time, no global claim that nobody knew earlier, no measured notification delay or complete FAA-contact failure. Reports of multiple contacts and mistaken identification constrain a simple total-blackout account without proving why any failure occurred."
+    },
+    {
+      "id": "SL06",
+      "type": "observed labels, clock interpretation untested",
+      "source": "L01",
+      "locator": "p1 upper flight-information display; p3/p4 table/footer",
+      "values": [
+        "0739 11Sep01",
+        "11/1238Z",
+        "printed1/15/02 7:21",
+        "four-digit table labels without a verified table-clock definition"
+      ],
+      "finding": "Printed dates/time labels have different explicit contexts. Preserve them literally rather than applying one clock convention to every field.",
+      "counterevidence_or_limit": "No timezone conversion, actual device clock, calibrated offset, reconstruction or version date established. N19 uses Central Time; that does not authenticate the mirror table clock."
+    }
+  ],
+  "todos": [
+    {
+      "id": "TEL-NI-TIME",
+      "status": "partly advanced: selected public log pages read; native/version/event/clock join still TODO",
+      "missing": "Agency/release counterpart or authenticated native log; exact FI record; complete table/attachment version used by staff; authors/revision and entry/event/receipt definitions; original annotated timeline and Halleck notes."
+    },
+    {
+      "id": "TEL-SL-ASD",
+      "status": "TODO",
+      "missing": "Actual FAA request/receipt and execution/audit/display/feed records for row0748; do not infer execution from request."
+    },
+    {
+      "id": "TEL-SL-BRIDGE",
+      "status": "TODO",
+      "missing": "Call identifiers, participants, invitation/redial/recording logs; first/second original tape identities; same-conversation joins; recording clocks and continuity. No new audio test performed."
+    },
+    {
+      "id": "ALL18",
+      "status": "open/partial",
+      "missing": "All original five-track criteria retained; this unit does not acquire FAA correctedQFR/receipt/signed decision or native carrier/recorder/material/steel inputs."
+    }
+  ],
+  "limits": "No adjudication of clocks/versions/cause, no historical attendance/notification/flight-location/intent finding."
+}
