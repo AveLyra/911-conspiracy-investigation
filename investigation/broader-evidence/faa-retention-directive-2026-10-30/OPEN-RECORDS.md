@@ -1,0 +1,15 @@
+# Existing FAA tasks — new exact record targets, still deferred
+
+October30,2026. Existing B129 / PD01–PD05 / FAA01–FAA04. This does not replace the shared master or revise the work plan's acceptance criteria.
+
+| Existing task | Underlying record to pursue | What would discriminate; what remains open |
+|---|---|---|
+| PD04–PD05 | Native counterpart of September14,2001 AEA2579 instruction; complete attachments, routing/distribution, recipient acknowledgments and any forwarding by hub managers to FCTs. Grounded copy: NARA7596109 / RG237, series7419198, AAL77 Other. AEA-505 is an office locator in the body, not proof of present custody. | Authenticate version and actual delivery. A printout's To list or all-facilities heading does not establish receipt or implementation everywhere. |
+| PD04–PD05 | Later withdrawal, amendment, clarification, exceptions, release-of-hold and actual recordkeeping/transfer/disposition crosswalk for the data expressly described by the email. | Establish applicable scope and duration through actual records. Neither a later generic schedule nor a current missing copy proves the notice ended, remained legally controlling, or was breached. |
+| PD04 / FAA01 | Underlying interviews, contemporaneous policy reasoning and supporting materials for the contrasting OIG2004 accounts on physical/printed8and22, including each manager's receipt and application of the instruction. | Test the report's receipt/action findings and the stated contrary interpretations. Preserve source wording, reported intent and local application separately. No new conclusion on destruction motive is established. |
+| PD01 / FAA01–02 | Actual original/versioned May22,2003 answer and corrected answer; approvals, outgoing transmission, complete attachments and recipient acknowledgment. | Test content, knowledge, correction and delivery separately. The September2001 email's data window is not proof that a later2003document fell under that instruction. |
+| PD02–PD03 / FAA03–04 | Signed consideration/action/no-action determination with reasons; distinct recommendation-response, implementation and closure approval/version histories. | Separate investigation closure, recommendation resolution, correction delivery and personnel action. Keep report recommendations1–2 onp12 distinct from3–4 onp13. |
+
+Revisit on an actually exposed original, new exact official locator, authorized supplied local record or completed applicable technical result. Do not rerun unchanged failed routes, infer absence from search hits, contact an agency, incur fees or submit a request/filing under this note. No mailbox access or private-case publication is authorized.
+
+The telephone release/schema/leg joins, recorder installed configuration/custody/error policy/clocks, materials authenticated specimen/native calibration joins, and steel preservation/inventory/attribution/review-delivery originals remain unfinished alongside these FAA tasks. No source or prior conflicting value is overwritten or resolved. Publication is separate from substantive completion.
