@@ -1,0 +1,144 @@
+{
+  "runtime": {
+    "python": "3.12.14",
+    "pypdf": "6.10.0"
+  },
+  "checks": [
+    {
+      "check": "AEA1127 exact PDF bytes/hash/page count",
+      "passed": true
+    },
+    {
+      "check": "AEA1128 exact PDF bytes/hash/page count",
+      "passed": true
+    },
+    {
+      "check": "AEA1129 exact PDF bytes/hash/page count",
+      "passed": true
+    },
+    {
+      "check": "AEA1127-p1 raster and performed-OCR hashes/line count",
+      "passed": true
+    },
+    {
+      "check": "AEA1128-p1 raster and performed-OCR hashes/line count",
+      "passed": true
+    },
+    {
+      "check": "AEA1129-p1 raster and performed-OCR hashes/line count",
+      "passed": true
+    },
+    {
+      "check": "AEA1129-p2 raster and performed-OCR hashes/line count",
+      "passed": true
+    },
+    {
+      "check": "AEA1129-p3 raster and performed-OCR hashes/line count",
+      "passed": true
+    },
+    {
+      "check": "AEA1129-p4 raster and performed-OCR hashes/line count",
+      "passed": true
+    },
+    {
+      "check": "AEA1128 physical1 selected safe anchors 1-1",
+      "passed": true
+    },
+    {
+      "check": "AEA1128 physical1 selected safe anchors 12-19",
+      "passed": true
+    },
+    {
+      "check": "AEA1129 physical1 selected safe anchors 1-1",
+      "passed": true
+    },
+    {
+      "check": "AEA1129 physical1 selected safe anchors 14-17",
+      "passed": true
+    },
+    {
+      "check": "AEA1129 physical1 selected safe anchors 25-32",
+      "passed": true
+    },
+    {
+      "check": "AEA1129 physical1 selected safe anchors 41-50",
+      "passed": true
+    },
+    {
+      "check": "AEA1129 physical1 selected safe anchors 54-55",
+      "passed": true
+    },
+    {
+      "check": "AEA1129 physical2 selected safe anchors 5-34",
+      "passed": true
+    },
+    {
+      "check": "AEA1129 physical4 selected safe anchors 22-23",
+      "passed": true
+    },
+    {
+      "check": "AEA1129 physical4 selected safe anchors 28-29",
+      "passed": true
+    },
+    {
+      "check": "AEA1129 physical4 selected safe anchors 34-34",
+      "passed": true
+    },
+    {
+      "check": "AEA1129 physical4 selected safe anchors 39-44",
+      "passed": true
+    },
+    {
+      "check": "Three response phrase counts reproduced without treating them as implementation",
+      "passed": true
+    },
+    {
+      "check": "Three Section6 unavailable-response phrases, not independent missing events",
+      "passed": true
+    },
+    {
+      "check": "Two Section11 TMU-unavailability responses remain distinct from no-log assertion",
+      "passed": true
+    },
+    {
+      "check": "Forwarded receipt date/case match standalone receipt's selected fields",
+      "passed": true
+    },
+    {
+      "check": "Manual annex group-accounting only:5+24+6=35",
+      "passed": true
+    },
+    {
+      "check": "All six released-source pages actually image-read; airbill OCR intentionally absent",
+      "passed": true
+    },
+    {
+      "check": "One-byte changed receipt source fails identity",
+      "passed": true
+    },
+    {
+      "check": "Three distinct source entities do not imply three independent receipts",
+      "passed": true
+    }
+  ],
+  "passed": 29,
+  "failed": 0,
+  "safe_response_phrase_counts": {
+    "Correction made": 23,
+    "No Correction required": 1,
+    "Legend is correct": 1
+  },
+  "manual_numbered_item_counts": {
+    "position_log": 5,
+    "transcripts": {
+      "first": 7,
+      "second": 2,
+      "third": 7,
+      "fourth": 2,
+      "fifth": 4,
+      "eighth": 2
+    },
+    "personnel_statements": 6
+  },
+  "limits": "Source/derivative identity and selected safe fields only; manual role joins, airbill date/service options, second attachment label and annex number grouping remain image observations. No native headers/attachments, actual pickup/delivery, exact contents/version, final acceptance, deadline compliance, missing-log cause, lawful disposition or intent established. Repeated forwarded receipt is not independent corroboration."
+}

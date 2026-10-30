@@ -1,0 +1,110 @@
+# FAA package receipts and unavailable position logs
+
+October 30, 2026. **Actual released receipt acknowledgments are now located:** a November 15, 2001 email says the UAL175 accident package was received; a February 1, 2002 email says corrections were received and requests further changes. The latter includes a forwarded request and three pages of annotated review notes. This advances the receipt and review trail while leaving exact native enclosures, delivered transcript versions and final acceptance unverified.
+
+The review notes also supply specific missing-record targets: a military-operations sign-on-log assertion and two unavailable TMU-log responses. These are agency statements to test, not established destruction, absence from duty or concealment.
+
+## Primary sources and actual reading
+
+| Source | Official catalogue | Saved response entity | Pages actually read |
+|---|---|---|---|
+| AEA1127, airbill | [NARA 34911617](https://catalog.archives.gov/id/34911617) | 199,693 bytes; SHA-256 `c7f79d061579f7c5e2ec8b5b6bc3789fcabe14a74509ffda5552b2d2bd9846e9` | 1 of 1 |
+| AEA1128, package acknowledgment | [NARA 7598365](https://catalog.archives.gov/id/7598365) | 13,114 bytes; SHA-256 `d8ec5235e2d8eab48d5336d75f07c04dbd5e77cd6e993d5efea05c3f81de9f4e` | 1 of 1 |
+| AEA1129, corrections acknowledgment and review | [NARA 7598366](https://catalog.archives.gov/id/7598366) | 163,359 bytes; SHA-256 `226568e667bb9f63dbc9579ea5f8e6b9e8a6dc54856a71eb726d0061c54feaed` | 4 of 4 |
+
+All three exact download links were exposed in the actual catalogue UI, acquired once on October 30, 2026, and returned HTTP 200 / application/pdf. [SOURCE-PINS.json](SOURCE-PINS.json) contains those URLs, access times, headers selected for provenance, source and raster/OCR hashes, page counts and method limits. [RECEIPT-LEDGER.json](RECEIPT-LEDGER.json) records the selected fields and their locators.
+
+All **six images** were read. Five visible-raster OCR derivatives were then made. The sideways airbill was read manually; no OCR, barcode decoding or recovery of redacted shipping identifiers was performed. Original entities and rasters are preserved on the guarded Intel store. These are publicly released scans, not authenticated native email, server headers, native Word files or a carrier's delivery system. No hidden text extraction or redaction reconstruction occurred.
+
+Raw PDFs, rasters, full OCR, names, signatures, contact/address, shipping/tracking/account identifiers, private correspondence and case strategy are excluded from this public derivative. Public notes use dates, case fields, organizational/role labels and qualified original observations only.
+
+## Receipt, further changes and airbill are separate records
+
+| Recorded statement | Exact locator | Supported finding and limit |
+|---|---|---|
+| **11/15/2001 7:46 AM:** package received | AEA1128 physical 1; OCR date 1, body 12–19, case 17 | A released email acknowledges the UAL175 / ZNY-ARTCC-148 package and promises status updates. It supplies no itemized enclosures or exact transcript version. Timezone is unstated. |
+| **2/1/2002 8:39 AM:** corrections received; facility asked to make attached changes | AEA1129 physical 1; OCR date 1, body 14–17 | Receipt and a further-change request coexist in the source. Do not translate receipt into final acceptance or treat the request as proof that no corrections had arrived. |
+| Forwarded **12/18/2001 8:57 AM** request; corrections requested by **January 4, 2002** | AEA1129 physical 1; OCR 25–32 | A specific earlier request and requested deadline are preserved. Compliance, exceptions and native transmission remain unverified. |
+| Forwarded **11/15/2001 7:46 AM** receipt | AEA1129 physical 1; OCR 41–50 | Repeats the earlier receipt's date, case and claim. This is a nested account, not independent evidence of a second delivery. |
+| Two printed Word attachment labels: `UAL175 Change 2.doc` and `UAL175 9-11-01.doc` | AEA1129 physical 1, bottom icons; first OCR label at 54; second label manually image-read | Native files have not been acquired. Three following review pages exist within this released PDF, but their assignment to either icon and native version history remain unverified. |
+| Airbill literal date **2/12/02**, “Sender's Copy,” marked Priority Overnight / Envelope | AEA1127 physical 1; manual image reading only | Form preparation and selected options are visible. Actual pickup/delivery, contents, exact case relationship and transcript-version identity are not established. No visible case/version inventory is supplied in the read unredacted fields. |
+
+No timezone conversion or controlling chronology is imposed. The airbill's date is retained literally, separately from the receipt dates. Catalogue proximity and FAA office routing do not by themselves join this form to either earlier acknowledgment or to a particular corrected transcript.
+
+## Specific unavailable-log claims
+
+AEA1129 physical 2, Section 6, identifies five staff-position concerns. Two responses cite alternate forms in other sections. Three say that position-log information is unavailable. Physical 4, Section 11, revisits the same roles in reviewing personnel statements and distinguishes different explanations:
+
+| Role, names omitted | Section 6 statement / locator | Section 11 statement / locator |
+|---|---|---|
+| Operations Supervisor-in-Charge | On-position time said to be in ZNY Form 3600.1, Area B personnel log, Section 5; physical 2 / OCR 14–17 | Employee said not to have signed the personnel log for the stated period and not required to sign the automated sign-in/sign-out log; physical 4 / OCR 22–23 |
+| Operations Manager | On-position time said to be in FAA Form 7230-4, Section 4; physical 2 / OCR 19–22 | Sign-in/sign-out said to be indicated on FAA Form 7230-4; physical 4 / OCR 28–29 |
+| Military Operations Specialist | Position-log information “not available”; physical 2 / OCR 24–26 | “Sign-on log does not exist for this position”; physical 4 / OCR 34 |
+| Departure Director | Position-log information “not available”; physical 2 / OCR 28–30 | Would have appeared on TMU log; “log not available”; physical 4 / OCR 39 |
+| Traffic Management Coordinator | Position-log information “not available”; physical 2 / OCR 32–34 | Would have appeared on TMU log; “log not available”; physical 4 / OCR 44 |
+
+The role joins are manual within-document comparisons using the visible source; personal names are omitted. Assertions that a log was unavailable, did not exist for a position, was unnecessary for an automated process, or could be found on another form are **distinct statements**. Preserve them without assuming they mean the same thing or independently proving any one account.
+
+Needed: the actual referenced forms and TMU log, the relevant sign-on rules and exceptions, original personnel statements, source-level times, review worksheets and any search/retention/disposition record. The unavailable-log responses do not establish that a person was absent, that no contemporaneous record ever existed, that a log was destroyed, or that information was concealed. The alternate-form references are concrete contrary evidence to treating every position-log query as a wholly undocumented period.
+
+Section 6 and Section 11 overlap in people and subject matter. Do not count their repeated concerns as independent corroboration.
+
+## What the annotated review does—and does not—show
+
+The three review pages contain **35 manually counted numbered entries**:
+
+- Section 6 position logs: **5**.
+- Section 9 transcript review: **24**, across the First, Second, Third, Fourth, Fifth and Eighth groups (**7 / 2 / 7 / 2 / 4 / 2**).
+- Section 11 personnel statements: **6**.
+
+The selected response phrases reproduce **23 “Correction made,” one “No Correction required,” and one “Legend is correct.”** Other responses include alternate-record references, unavailability and role-specific claims.
+
+These entries mix recertification dates, spelling/capitalization/punctuation, agency labels, timing questions and personnel-log checks. They are not 35 independently established errors or wrongdoing events. A displayed status is evidence of the source's response, not proof that the underlying correction was accurate or incorporated in the delivered copy.
+
+The same source's outer email requests further changes. Both that request and the annotations remain preserved. The released scan does not independently date each annotation or authenticate which native attachment produced each following page. A native version/attachment chain is needed before assigning a complete edit or acceptance chronology.
+
+Earlier January and February review lists remain separately preserved in the [January/May source study](https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/README.md) and the [February 5 correction study](https://github.com/AveLyra/911-conspiracy-investigation/blob/608171664400ed8d1e95f70277ea994702a3cbd7/investigation/broader-evidence/faa-package-corrections-2002-2026-10-30/README.md). Overlap is not independent corroboration; exact text/native equality has not been established. Here the Third group is Radar Sector 55 with a 28-page reference, while the Fourth is Radar Associate Sector 55 with a 29-page reference. Different positions must not be collapsed into one page-count discrepancy.
+
+## Catalogue-size and response-byte observations
+
+The catalogue UI and acquired response entities are separately pinned:
+
+| Source | Literal UI size display | Saved HTTP response entity |
+|---|---|---:|
+| AEA1127 | “195 KB” | 199,693 bytes |
+| AEA1128 | “8 KB” | 13,114 bytes |
+| AEA1129 | “41 KB” | 163,359 bytes |
+
+The catalogue page counts were 1 / 1 / 4, matching the acquired PDFs. The displayed sizes and response bytes are different observations; representation, units, processing/version and metadata relationships have not been tested. No source was normalized to the UI number, no cause selected, and no inference of alteration, suppression or intent follows from this table. The actual saved entities are identified by their hashes above.
+
+## What remains outstanding
+
+General package and corrections acknowledgments have moved from catalogue-only leads to **acquired and read released-source records**. Earlier dated availability statements are retained. Remaining inputs include:
+
+1. Native receipt emails and complete headers; both printed Word attachments and their version metadata.
+2. An enclosure-level crosswalk tying a dispatch to the exact reviewed/corrected transcript bytes, historical certification and recipient acknowledgment. The [237-page released package](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md) is not authenticated as the version either acknowledgment received.
+3. Referenced personnel/operational forms, TMU log, applicable position-specific sign-on rules, and search/retention history for unavailable material.
+4. The **actual May 2003 draft/corrected QFR and delivery acknowledgment**, signed administrative action/no-action/reasons, and distinct recommendation implementation/closure records. These 2001–2002 package records do not supply them.
+
+All five tracks and eighteen substantive criteria remain partial/open. Telephone native carrier/operator/call-leg/recipient/clock joins, recorder authenticated configuration/custody/output/clocks, materials specimen/native/calibration/same-specimen joins and steel native preservation/transfer/inventory/attribution/selection inputs remain TODOs. Existing technical tests are not duplicated or relabelled unperformed. No outreach, new request, fee, filing, private-case use, private push, deletion, source overwrite or history rewrite occurred.
+
+## Verification and accountability
+
+[verify_receipts.py](verify_receipts.py) and [VERIFICATION.json](VERIFICATION.json) preserve **29 passing scoped checks, zero failures**: three pinned PDF identities/page counts, six raster identities, five performed-OCR identities/line counts, selected safe receipt and role-response anchors, repeated receipt fields, response-phrase counts and a changed-source control. Annex numbering and role joins, airbill fields and the second attachment label remain explicit manual observations. UI size displays are recorded observations, not independently validated service metadata.
+
+A rerun uses Python 3.12.14 / pypdf 6.10.0 and the preserved source/raster/OCR directories:
+
+```sh
+python3 verify_receipts.py --media-root /path/to/faa-shipping-receipt-originals-2026-10-30
+```
+
+The checks establish scoped reproduction and integrity, not actual delivery, native attachment identity, correctness, acceptance, deadline compliance, missing-record cause, independence or intent. Prior studies and their failed checks remain unchanged.
+
+| Requirement | Outcome | Limit / open input |
+|---|---|---|
+| Obtain underlying public records | Three actual PDFs; all six images read | Released scans; native originals and carrier system unverified |
+| Preserve conflicts and provenance | Receipt/further-change language, dates, statuses, role claims and UI/entity quantities kept separately | No account selected as controlling or cause resolved |
+| Avoid false corroboration | Forwarded receipt and repeated staff concerns identified | Neither PDF counts nor annotations measure wrongdoing |
+| Keep missing inputs as TODOs | General acknowledgments now available; native enclosures, precise delivery and actual May 2003/2006 outcomes remain open | No substantive acceptance criterion closed |
+| Exact revision record | [TEXT-CHANGES.diff](TEXT-CHANGES.diff), additive new unit; native draft-to-final diff retained locally | No earlier source or public report overwritten; image reading separate |
+| Publish as AveLyra | Safe original notes, pins, selected fields and code/results only | Separate local receipt verifies account, author/committer, ref and every remote file; no main merge claimed |
