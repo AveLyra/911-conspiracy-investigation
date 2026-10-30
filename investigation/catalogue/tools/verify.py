@@ -20,7 +20,7 @@ check('247 original documentary IDs',len(documentary)==247 and {x['id'] for x in
 for name,ids in sets.items():
     actual=set(re.findall(r'<a id="([^"]+)"', (P/name).read_text()))
     check('exact annotation IDs '+name,actual==ids)
-check('43 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==43)
+check('44 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==44)
 for ident in ['fa044','pl022','pl023','pl024','pl025','nr068','nr069','nr070','nr071','nr072','pl026','pl027','nr073','pl028','pl029']:
     text=(P/'SOURCE-FINDINGS.md').read_text().split(f'<a id="{ident}"></a>',1)[1].split('<a id=',1)[0]
     check('addition observation contrary and TODO '+ident,all(word in text for word in ['**Context / contrary evidence:**','**Open TODO:**','**Citations:**']))
@@ -41,6 +41,13 @@ check('FAA054 memo acquired dialogue and media remain open',all(v in text for v 
 check('FAA054 roles matching control and unopened corrections preserved',all(v in text for v in ['ZNY OMIC and CC-NOM separately','not timestamped communications','subject and work-file aircraft labels both say UAL175','neither corrects AWA937','Title-only/unopened NARA7598362','companion7598360','not a proven replacement relationship or the May2003 QFR correction','191c27f34284bdbbf006db5bb2b41071125f19d7']))
 check('FAA055 all33 rows acquisition and different correction stages retained',all(v in text for v in ['Previously title-only AEA1124','AEA1122/NARA7598360 are now acquired','All33 visible requests/queries','F01–F29','M01–M04','separate evidentiary stages','conditional release are distinct','608171664400ed8d1e95f70277ea994702a3cbd7']))
 check('FAA055 disputed values contrary evidence and native tests stay open',all(v in text for v in ['1301:06/1301:05','1305:34/1305:33','ZBW IGN at1306:17','contrary original/remaining-copy response','contrary evidence to assuming every change was concealed','UAL175 9-11-01.doc','UAL175 Change 2.doc','do not infer twenty deleted pages','AEA1121/NARA7598359','AEA1123/NARA7598361','Actual May2003 draft/corrected QFR/receipt']))
+check('FAA056 acquired entities and exact publication',all(v in text for v in ['AEA1121/NARA7598359 and AEA1123/NARA7598361 are now acquired','464,135 bytes','190,274 bytes','a42d0956202dacc3b971d21f479966d56fefcd60']))
+check('FAA056 missing page dispatch and receipt distinct',all(v in text for v in ['page 2 of the 23-page','two copies enclosed','not in the acquired three-page scan','Friday as certified','5/14/02','actual receipt and approval','Native filenames']))
+check('FAA056 timestamp pairs not measured clocks',all(v in text for v in ['1245:58/1245:59','1244:58/1244:59','1302:00/1302:02','1302:04/1302:06','−60, −60, +4, +4 seconds','not measured hardware-clock offsets','1301:37/1301:35','1311:06 following 1311:09']))
+check('FAA056 contrary source explanations attributed',all(v in text for v in ['both correct or no change','not independently verified equipment behavior','radio/landline coordination','channel-specific reception','1258:18','1305:22/1310:46']))
+check('FAA056 version and line1078 distinctions preserved',all(v in text for v in ['28 pages for the fourth/associate55','page 19 placed after page 9','four Correction made annotations','five-page Ninth','Eighth nine-page','does not authenticate the two-page AWA937','not independent corroboration']))
+check('FAA056 selected ledger and count limits preserved',all(v in text for v in ['30 selected FIELD-LEDGER observations V01–V30','135 numbered transcript-review items','19+26+24+41+6+7+7+5','not 135 independent errors or events','Prior update055’s 33 rows']))
+check('FAA056 policy originals copies and acceptance gaps preserved',all(v in text for v in ['from copies of Form8020-3','not destruction of the original','2000 FAA Order8020.11B','2003 Change 1','not newly read here','72c(11)/77d(4)','May 2003 QFR drafting/correction/delivery','five tracks/eighteen substantive criteria remain incomplete/partial','not a new independent twelve-page image review']))
 pattern=re.compile(r'\]\((?:<([^>]+)>|([^\)\n]+))\)');broken=[];links=0
 for f in P.glob('*.md'):
     for angled,plain in pattern.findall(f.read_text()):
