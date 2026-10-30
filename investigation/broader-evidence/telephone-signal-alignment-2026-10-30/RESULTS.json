@@ -1,0 +1,1879 @@
+{
+  "projection_rule": "All numeric/source/software/parameter/control/window fields retained; only decoder stderr diagnostic strings omitted. Full first and repeated raw logs remain local unchanged.",
+  "first_full_log_bytes": 57936,
+  "first_full_log_sha256": "d4a83ea2ad412da6a4fb62aeefdeb81ddabe1e0feec2c8ff50cae284c80574f1",
+  "core_metrics": {
+    "archive_url": "https://coop.vaed.uscourts.gov/moussaoui/flights.zip",
+    "archive_sha256": "3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801",
+    "script_sha256": "4d626674520d5bf0ece26fe937ab861fd71e77b60f1ee4e57d39ea5b8e89c331",
+    "helper_sha256": "2af3d0339c5ca876255948a014205f8caa6ff019c1303e79a0ba774a22f36ade",
+    "software": {
+      "Python": "3.12.14",
+      "NumPy": "2.3.5",
+      "ffmpeg": {
+        "version_line": "ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers",
+        "version_output_sha256": "79a60e49d52ba87ff39e5a4f0fd1b18542d72bc7f511bc600ec890b2245067fe"
+      },
+      "ffprobe": {
+        "version_line": "ffprobe version 7.1.1 Copyright (c) 2007-2025 the FFmpeg developers",
+        "version_output_sha256": "6b7c7bda5bd51e472062910a7c8b6d2a186f55bfadd7aeefa9d6ecf2df0fd7a6"
+      }
+    },
+    "parameters": {
+      "analysis_rate": 8000,
+      "global_max_lag_samples": 240000,
+      "global_min_overlap": "max(30s,80% shorter array)",
+      "window_samples": 80000,
+      "local_max_lag_samples": 8000,
+      "local_min_overlap": "90% window",
+      "peak": "greatest absolute Pearson with sign; greatest signed also retained",
+      "lag_definition": "event[k+lag] aligns with stream[k]; nominal analysis units only",
+      "secondary_exclusion_samples": 2000,
+      "direct_fft_tolerance": 1e-09,
+      "FFT_max_points": 4194304,
+      "source_seek_and_player_metadata_applied": false
+    },
+    "controls": {
+      "seed": 9110,
+      "expected_lag_samples": 137,
+      "positive_and_negative_gain_and_dc": "pass",
+      "unrelated_noise_absolute_max_under_0_1": "pass",
+      "results": {
+        "cropped_gain_dc": {
+          "status": "ok",
+          "candidate_lags": 1001,
+          "eligible_lags": 1001,
+          "nfft": 131072,
+          "best_absolute": {
+            "lag_samples": 137,
+            "signed_pearson": 0.9999999999999215,
+            "overlap_samples": 39360
+          },
+          "greatest_signed": {
+            "lag_samples": 137,
+            "signed_pearson": 0.9999999999999215,
+            "overlap_samples": 39360
+          },
+          "alternative_outside_exclusion": null,
+          "alternative_exclusion_samples": 2000,
+          "direct_selected_pearson": 0.9999999999999999,
+          "direct_fft_abs_difference": 7.838174553853605e-14,
+          "x_overlap_range": [
+            137,
+            39497
+          ],
+          "y_overlap_range": [
+            0,
+            39360
+          ],
+          "x_unmatched_prefix_suffix": [
+            137,
+            503
+          ],
+          "y_unmatched_prefix_suffix": [
+            0,
+            0
+          ]
+        },
+        "cropped_negative_gain_dc": {
+          "status": "ok",
+          "candidate_lags": 1001,
+          "eligible_lags": 1001,
+          "nfft": 131072,
+          "best_absolute": {
+            "lag_samples": 137,
+            "signed_pearson": -0.9999999999999215,
+            "overlap_samples": 39360
+          },
+          "greatest_signed": {
+            "lag_samples": -393,
+            "signed_pearson": 0.012111323793579105,
+            "overlap_samples": 38967
+          },
+          "alternative_outside_exclusion": null,
+          "alternative_exclusion_samples": 2000,
+          "direct_selected_pearson": -0.9999999999999999,
+          "direct_fft_abs_difference": 7.838174553853605e-14,
+          "x_overlap_range": [
+            137,
+            39497
+          ],
+          "y_overlap_range": [
+            0,
+            39360
+          ],
+          "x_unmatched_prefix_suffix": [
+            137,
+            503
+          ],
+          "y_unmatched_prefix_suffix": [
+            0,
+            0
+          ]
+        },
+        "unrelated_noise": {
+          "status": "ok",
+          "candidate_lags": 1001,
+          "eligible_lags": 1001,
+          "nfft": 131072,
+          "best_absolute": {
+            "lag_samples": 139,
+            "signed_pearson": 0.018552336304636492,
+            "overlap_samples": 39360
+          },
+          "greatest_signed": {
+            "lag_samples": 139,
+            "signed_pearson": 0.018552336304636492,
+            "overlap_samples": 39360
+          },
+          "alternative_outside_exclusion": null,
+          "alternative_exclusion_samples": 2000,
+          "direct_selected_pearson": 0.01855233630463655,
+          "direct_fft_abs_difference": 5.898059818321144e-17,
+          "x_overlap_range": [
+            139,
+            39499
+          ],
+          "y_overlap_range": [
+            0,
+            39360
+          ],
+          "x_unmatched_prefix_suffix": [
+            139,
+            501
+          ],
+          "y_unmatched_prefix_suffix": [
+            0,
+            0
+          ]
+        }
+      },
+      "scope": "Algorithm controls only, not historical/voice/source authentication"
+    },
+    "results": [
+      {
+        "member": "Lyles.swf",
+        "member_sha256": "28f2a83db87177a2538ebd36ddfc03b63e7b696b7d16603a793921ff27ce4ec7",
+        "event_tag_offset": 26,
+        "event_fields": {
+          "declared_sample_count": 1987200,
+          "seek_samples": 0,
+          "rate_code": 3
+        },
+        "stream_fields": {
+          "header": {
+            "offset": 540795,
+            "latency_seek": 1633,
+            "rate_code": 1
+          },
+          "block_count": 541,
+          "first_last_offsets": [
+            3059582,
+            3179412
+          ],
+          "sample_prefix_sum": 498240,
+          "first_seek_samples": 1633
+        },
+        "event_decode": {
+          "mp3_bytes": 540735,
+          "mp3_sha256": "53d4d3256cf941cb2ad659e4bfdaed341e440d4dfa1484a3c84b2e07210e197e",
+          "probe": {
+            "codec_name": "mp3",
+            "sample_rate": "44100",
+            "channels": 1
+          },
+          "native_pcm_format": "s16le original rate/channel; no seeking metadata applied",
+          "native_pcm_bytes": 3974400,
+          "native_pcm_samples_per_channel": 1987200,
+          "native_pcm_sha256": "8e2f0e515d8dde7aa3fded75c6bef82afad92a7de3af9d7d536783c25f7cd01f",
+          "analysis_view": "Derived mono8000Hz f32le; FFmpeg default resampler, no silence removal/gain/crop; not replacement original",
+          "analysis_samples": 360490,
+          "analysis_rate": 8000,
+          "analysis_f32_sha256": "3a2d27246eb0b40f806d322e4a06ae920c333cd8099817de5f3825cf3698bb4f",
+          "analysis_rms": 0.07165919833955114,
+          "analysis_min": -0.5920706987380981,
+          "analysis_max": 0.8587636351585388,
+          "commands": {
+            "probe": [
+              "-v",
+              "error",
+              "-select_streams",
+              "a:0",
+              "-show_entries",
+              "stream=codec_name,sample_rate,channels",
+              "-of",
+              "json",
+              "pipe:0"
+            ],
+            "native": [
+              "-v",
+              "warning",
+              "-i",
+              "pipe:0",
+              "-map",
+              "0:a:0",
+              "-c:a",
+              "pcm_s16le",
+              "-f",
+              "s16le",
+              "pipe:1"
+            ],
+            "view": [
+              "-v",
+              "warning",
+              "-i",
+              "pipe:0",
+              "-map",
+              "0:a:0",
+              "-ac",
+              "1",
+              "-ar",
+              "8000",
+              "-c:a",
+              "pcm_f32le",
+              "-f",
+              "f32le",
+              "pipe:1"
+            ]
+          },
+          "returncodes": [
+            0,
+            0,
+            0
+          ]
+        },
+        "stream_decode": {
+          "mp3_bytes": 89960,
+          "mp3_sha256": "b01692e3acebe4731d1c863da1162a70b2bc21cad3d99f913a3810bb10b9be92",
+          "probe": {
+            "codec_name": "mp3",
+            "sample_rate": "11025",
+            "channels": 1
+          },
+          "native_pcm_format": "s16le original rate/channel; no seeking metadata applied",
+          "native_pcm_bytes": 996480,
+          "native_pcm_samples_per_channel": 498240,
+          "native_pcm_sha256": "13660b88e44cf3affb425ae793ea86247294d378ecbf0965197e99da8fe1505b",
+          "analysis_view": "Derived mono8000Hz f32le; FFmpeg default resampler, no silence removal/gain/crop; not replacement original",
+          "analysis_samples": 361534,
+          "analysis_rate": 8000,
+          "analysis_f32_sha256": "8385b884fe823b1942802263a019a0a5d6766d7c5d22aadd5ccb434162a2a00a",
+          "analysis_rms": 0.07122472580971768,
+          "analysis_min": -0.6542198061943054,
+          "analysis_max": 0.8586934804916382,
+          "commands": {
+            "probe": [
+              "-v",
+              "error",
+              "-select_streams",
+              "a:0",
+              "-show_entries",
+              "stream=codec_name,sample_rate,channels",
+              "-of",
+              "json",
+              "pipe:0"
+            ],
+            "native": [
+              "-v",
+              "warning",
+              "-i",
+              "pipe:0",
+              "-map",
+              "0:a:0",
+              "-c:a",
+              "pcm_s16le",
+              "-f",
+              "s16le",
+              "pipe:1"
+            ],
+            "view": [
+              "-v",
+              "warning",
+              "-i",
+              "pipe:0",
+              "-map",
+              "0:a:0",
+              "-ac",
+              "1",
+              "-ar",
+              "8000",
+              "-c:a",
+              "pcm_f32le",
+              "-f",
+              "f32le",
+              "pipe:1"
+            ]
+          },
+          "returncodes": [
+            0,
+            0,
+            0
+          ]
+        },
+        "global_fit": {
+          "status": "ok",
+          "candidate_lags": 480001,
+          "eligible_lags": 145241,
+          "nfft": 1048576,
+          "best_absolute": {
+            "lag_samples": -1185,
+            "signed_pearson": 0.957865680475151,
+            "overlap_samples": 360349
+          },
+          "greatest_signed": {
+            "lag_samples": -1185,
+            "signed_pearson": 0.957865680475151,
+            "overlap_samples": 360349
+          },
+          "alternative_outside_exclusion": {
+            "lag_samples": -21829,
+            "signed_pearson": -0.015393773800087102,
+            "overlap_samples": 339705
+          },
+          "alternative_exclusion_samples": 2000,
+          "direct_selected_pearson": 0.9578656804752262,
+          "direct_fft_abs_difference": 7.527312106958561e-14,
+          "x_overlap_range": [
+            0,
+            360349
+          ],
+          "y_overlap_range": [
+            1185,
+            361534
+          ],
+          "x_unmatched_prefix_suffix": [
+            0,
+            141
+          ],
+          "y_unmatched_prefix_suffix": [
+            1185,
+            0
+          ]
+        },
+        "windows": [
+          {
+            "overlap_start_analysis_sample": 0,
+            "event_start_analysis_sample": 0,
+            "stream_start_analysis_sample": 1185,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.959749905394995,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9597499053949661,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9597499053949661,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 5062,
+                "signed_pearson": 0.025979379494000296,
+                "overlap_samples": 74938
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.959749905394995,
+              "direct_fft_abs_difference": 2.8976820942716586e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 80000,
+            "event_start_analysis_sample": 80000,
+            "stream_start_analysis_sample": 81185,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9638366453941078,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.963836645394066,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.963836645394066,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 2558,
+                "signed_pearson": -0.024048327344610418,
+                "overlap_samples": 77442
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9638366453941078,
+              "direct_fft_abs_difference": 4.18554080283684e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 160000,
+            "event_start_analysis_sample": 160000,
+            "stream_start_analysis_sample": 161185,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9674525943936412,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9674525943935987,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9674525943935987,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 6322,
+                "signed_pearson": 0.03841849585429886,
+                "overlap_samples": 73678
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9674525943936412,
+              "direct_fft_abs_difference": 4.2521541843143495e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 240000,
+            "event_start_analysis_sample": 240000,
+            "stream_start_analysis_sample": 241185,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9344817656022788,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9344817656022608,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9344817656022608,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 7961,
+                "signed_pearson": -0.026761344281625396,
+                "overlap_samples": 72039
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9344817656022788,
+              "direct_fft_abs_difference": 1.7985612998927536e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "window_tail_not_analyzed_samples": 40349
+      },
+      {
+        "member": "Ong.swf",
+        "member_sha256": "8c844a2370852e55597a4aa73ef8b8ff0e6c03e3fec982a9cd98aeb937e5a3ec",
+        "event_tag_offset": 26,
+        "event_fields": {
+          "declared_sample_count": 2726784,
+          "seek_samples": 1669,
+          "rate_code": 1
+        },
+        "stream_fields": {
+          "header": {
+            "offset": 492914,
+            "latency_seek": 1633,
+            "rate_code": 1
+          },
+          "block_count": 2894,
+          "first_last_offsets": [
+            692367,
+            1324753
+          ],
+          "sample_prefix_sum": 2658240,
+          "first_seek_samples": 1633
+        },
+        "event_decode": {
+          "mp3_bytes": 492856,
+          "mp3_sha256": "b1340270d0e8f4b159bb4b057ea57ec227cd021fb12dc5fd37a46b7e3e9b78b5",
+          "probe": {
+            "codec_name": "mp3",
+            "sample_rate": "11025",
+            "channels": 1
+          },
+          "native_pcm_format": "s16le original rate/channel; no seeking metadata applied",
+          "native_pcm_bytes": 5459328,
+          "native_pcm_samples_per_channel": 2729664,
+          "native_pcm_sha256": "3f63b0884240c467a8f3e2570314a1c2b6e814d79feb3327aff62ccab7cfc229",
+          "analysis_view": "Derived mono8000Hz f32le; FFmpeg default resampler, no silence removal/gain/crop; not replacement original",
+          "analysis_samples": 1980709,
+          "analysis_rate": 8000,
+          "analysis_f32_sha256": "3b9b7033b8ac59b93f8a2d3bba378cf5e7e3cc581b0bf417281759d9b8063990",
+          "analysis_rms": 0.184568098048796,
+          "analysis_min": -1.6543647050857544,
+          "analysis_max": 1.756330132484436,
+          "commands": {
+            "probe": [
+              "-v",
+              "error",
+              "-select_streams",
+              "a:0",
+              "-show_entries",
+              "stream=codec_name,sample_rate,channels",
+              "-of",
+              "json",
+              "pipe:0"
+            ],
+            "native": [
+              "-v",
+              "warning",
+              "-i",
+              "pipe:0",
+              "-map",
+              "0:a:0",
+              "-c:a",
+              "pcm_s16le",
+              "-f",
+              "s16le",
+              "pipe:1"
+            ],
+            "view": [
+              "-v",
+              "warning",
+              "-i",
+              "pipe:0",
+              "-map",
+              "0:a:0",
+              "-ac",
+              "1",
+              "-ar",
+              "8000",
+              "-c:a",
+              "pcm_f32le",
+              "-f",
+              "f32le",
+              "pipe:1"
+            ]
+          },
+          "returncodes": [
+            0,
+            0,
+            0
+          ]
+        },
+        "stream_decode": {
+          "mp3_bytes": 479960,
+          "mp3_sha256": "076067d2fe207c9efb95d62ed0a1cc33f24df2f60568cdf143631885b15fcfcd",
+          "probe": {
+            "codec_name": "mp3",
+            "sample_rate": "11025",
+            "channels": 1
+          },
+          "native_pcm_format": "s16le original rate/channel; no seeking metadata applied",
+          "native_pcm_bytes": 5316480,
+          "native_pcm_samples_per_channel": 2658240,
+          "native_pcm_sha256": "b779d504abd6cd61eb77f7effe1591c48d5e0fc20afb62badf69cf0d2b8beba1",
+          "analysis_view": "Derived mono8000Hz f32le; FFmpeg default resampler, no silence removal/gain/crop; not replacement original",
+          "analysis_samples": 1928882,
+          "analysis_rate": 8000,
+          "analysis_f32_sha256": "bd89d12522230295946bbda6d0fefb9f6d21f8ce9b56ee6904d7915c96060b14",
+          "analysis_rms": 0.18832212161926823,
+          "analysis_min": -2.091942548751831,
+          "analysis_max": 2.0179755687713623,
+          "commands": {
+            "probe": [
+              "-v",
+              "error",
+              "-select_streams",
+              "a:0",
+              "-show_entries",
+              "stream=codec_name,sample_rate,channels",
+              "-of",
+              "json",
+              "pipe:0"
+            ],
+            "native": [
+              "-v",
+              "warning",
+              "-i",
+              "pipe:0",
+              "-map",
+              "0:a:0",
+              "-c:a",
+              "pcm_s16le",
+              "-f",
+              "s16le",
+              "pipe:1"
+            ],
+            "view": [
+              "-v",
+              "warning",
+              "-i",
+              "pipe:0",
+              "-map",
+              "0:a:0",
+              "-ac",
+              "1",
+              "-ar",
+              "8000",
+              "-c:a",
+              "pcm_f32le",
+              "-f",
+              "f32le",
+              "pipe:1"
+            ]
+          },
+          "returncodes": [
+            0,
+            0,
+            0
+          ]
+        },
+        "global_fit": {
+          "status": "ok",
+          "candidate_lags": 480001,
+          "eligible_lags": 480001,
+          "nfft": 4194304,
+          "best_absolute": {
+            "lag_samples": 27,
+            "signed_pearson": 0.9163875371725145,
+            "overlap_samples": 1928882
+          },
+          "greatest_signed": {
+            "lag_samples": 27,
+            "signed_pearson": 0.9163875371725145,
+            "overlap_samples": 1928882
+          },
+          "alternative_outside_exclusion": {
+            "lag_samples": 34378,
+            "signed_pearson": 0.007722699611424154,
+            "overlap_samples": 1928882
+          },
+          "alternative_exclusion_samples": 2000,
+          "direct_selected_pearson": 0.9163875371726933,
+          "direct_fft_abs_difference": 1.787459069646502e-13,
+          "x_overlap_range": [
+            27,
+            1928909
+          ],
+          "y_overlap_range": [
+            0,
+            1928882
+          ],
+          "x_unmatched_prefix_suffix": [
+            27,
+            51800
+          ],
+          "y_unmatched_prefix_suffix": [
+            0,
+            0
+          ]
+        },
+        "windows": [
+          {
+            "overlap_start_analysis_sample": 0,
+            "event_start_analysis_sample": 27,
+            "stream_start_analysis_sample": 0,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9452028079846213,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9452028079845809,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9452028079845809,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -7144,
+                "signed_pearson": 0.0284409807208879,
+                "overlap_samples": 72856
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9452028079846213,
+              "direct_fft_abs_difference": 4.04121180963557e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 80000,
+            "event_start_analysis_sample": 80027,
+            "stream_start_analysis_sample": 80000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.8860583117466646,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8860583117466286,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8860583117466286,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -3479,
+                "signed_pearson": 0.06420948632762984,
+                "overlap_samples": 76521
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.8860583117466646,
+              "direct_fft_abs_difference": 3.597122599785507e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 160000,
+            "event_start_analysis_sample": 160027,
+            "stream_start_analysis_sample": 160000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9089263063392187,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9089263063391975,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9089263063391975,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 2071,
+                "signed_pearson": -0.06922628925680333,
+                "overlap_samples": 77929
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9089263063392187,
+              "direct_fft_abs_difference": 2.120525977034049e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 240000,
+            "event_start_analysis_sample": 240027,
+            "stream_start_analysis_sample": 240000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9188881171850216,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9188881171849861,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9188881171849861,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -6790,
+                "signed_pearson": 0.023229623106259867,
+                "overlap_samples": 73210
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9188881171850216,
+              "direct_fft_abs_difference": 3.552713678800501e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 320000,
+            "event_start_analysis_sample": 320027,
+            "stream_start_analysis_sample": 320000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9215584249086212,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9215584249086054,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9215584249086054,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -2814,
+                "signed_pearson": -0.02700812016873585,
+                "overlap_samples": 77186
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9215584249086212,
+              "direct_fft_abs_difference": 1.5765166949677223e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 400000,
+            "event_start_analysis_sample": 400027,
+            "stream_start_analysis_sample": 400000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.8926901750537745,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8926901750537533,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8926901750537533,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 5959,
+                "signed_pearson": 0.05221774732558008,
+                "overlap_samples": 74041
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.8926901750537745,
+              "direct_fft_abs_difference": 2.120525977034049e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 480000,
+            "event_start_analysis_sample": 480027,
+            "stream_start_analysis_sample": 480000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.895493708607568,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8954937086075331,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8954937086075331,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -7773,
+                "signed_pearson": -0.027876275083317442,
+                "overlap_samples": 72227
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.895493708607568,
+              "direct_fft_abs_difference": 3.497202527569243e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 560000,
+            "event_start_analysis_sample": 560027,
+            "stream_start_analysis_sample": 560000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9347434804036514,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9347434804036109,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9347434804036109,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -6094,
+                "signed_pearson": -0.02736763640245024,
+                "overlap_samples": 73906
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9347434804036514,
+              "direct_fft_abs_difference": 4.0523140398818214e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 640000,
+            "event_start_analysis_sample": 640027,
+            "stream_start_analysis_sample": 640000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.937927760397802,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.93792776039776,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.93792776039776,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 3768,
+                "signed_pearson": 0.042796064481029225,
+                "overlap_samples": 76232
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.937927760397802,
+              "direct_fft_abs_difference": 4.196643033083092e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 720000,
+            "event_start_analysis_sample": 720027,
+            "stream_start_analysis_sample": 720000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.8729158831986887,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8729158831986491,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8729158831986491,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -7453,
+                "signed_pearson": 0.022085623412272704,
+                "overlap_samples": 72547
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.8729158831986887,
+              "direct_fft_abs_difference": 3.963496197911809e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 800000,
+            "event_start_analysis_sample": 800027,
+            "stream_start_analysis_sample": 800000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.930293595055355,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9302935950553265,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9302935950553265,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 6758,
+                "signed_pearson": -0.02592065669810691,
+                "overlap_samples": 73242
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.930293595055355,
+              "direct_fft_abs_difference": 2.853273173286652e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 880000,
+            "event_start_analysis_sample": 880027,
+            "stream_start_analysis_sample": 880000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.8981914344797316,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8981914344796971,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8981914344796971,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -6404,
+                "signed_pearson": 0.02820313927819519,
+                "overlap_samples": 73596
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.8981914344797316,
+              "direct_fft_abs_difference": 3.452793606584237e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 960000,
+            "event_start_analysis_sample": 960027,
+            "stream_start_analysis_sample": 960000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9377981113708097,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9377981113707711,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9377981113707711,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -2434,
+                "signed_pearson": -0.04553671338239882,
+                "overlap_samples": 77566
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9377981113708097,
+              "direct_fft_abs_difference": 3.863576125695545e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 1040000,
+            "event_start_analysis_sample": 1040027,
+            "stream_start_analysis_sample": 1040000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.8909458080163809,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8909458080163655,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8909458080163655,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 2471,
+                "signed_pearson": 0.04128052153915733,
+                "overlap_samples": 77529
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.8909458080163809,
+              "direct_fft_abs_difference": 1.5432100042289676e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 1120000,
+            "event_start_analysis_sample": 1120027,
+            "stream_start_analysis_sample": 1120000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.8959956336161196,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.895995633616087,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.895995633616087,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 7940,
+                "signed_pearson": 0.02550049584401259,
+                "overlap_samples": 72060
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.8959956336161196,
+              "direct_fft_abs_difference": 3.2529534621517087e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 1200000,
+            "event_start_analysis_sample": 1200027,
+            "stream_start_analysis_sample": 1200000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9145720169232919,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9145720169232516,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9145720169232516,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -3192,
+                "signed_pearson": 0.030291822475638518,
+                "overlap_samples": 76808
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9145720169232919,
+              "direct_fft_abs_difference": 4.030109579389318e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 1280000,
+            "event_start_analysis_sample": 1280027,
+            "stream_start_analysis_sample": 1280000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9409374506860222,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9409374506859912,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9409374506859912,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 5416,
+                "signed_pearson": -0.09682395283964103,
+                "overlap_samples": 74584
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9409374506860222,
+              "direct_fft_abs_difference": 3.097522238704187e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 1360000,
+            "event_start_analysis_sample": 1360027,
+            "stream_start_analysis_sample": 1360000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9269661786263944,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9269661786263645,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9269661786263645,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -2572,
+                "signed_pearson": -0.04302702951166022,
+                "overlap_samples": 77428
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9269661786263944,
+              "direct_fft_abs_difference": 2.986499936241671e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 1440000,
+            "event_start_analysis_sample": 1440027,
+            "stream_start_analysis_sample": 1440000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9302720959339009,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9302720959338651,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9302720959338651,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -5513,
+                "signed_pearson": 0.03800402591370819,
+                "overlap_samples": 74487
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9302720959339009,
+              "direct_fft_abs_difference": 3.5860203695392556e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 1520000,
+            "event_start_analysis_sample": 1520027,
+            "stream_start_analysis_sample": 1520000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9343321422503733,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9343321422503461,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9343321422503461,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 2350,
+                "signed_pearson": -0.06697770727194202,
+                "overlap_samples": 77650
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9343321422503733,
+              "direct_fft_abs_difference": 2.7200464103316335e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 1600000,
+            "event_start_analysis_sample": 1600027,
+            "stream_start_analysis_sample": 1600000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.8916635441415711,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8916635441415632,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.8916635441415632,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": -6202,
+                "signed_pearson": -0.0743691511100167,
+                "overlap_samples": 73798
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.8916635441415711,
+              "direct_fft_abs_difference": 7.882583474838611e-15,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 1680000,
+            "event_start_analysis_sample": 1680027,
+            "stream_start_analysis_sample": 1680000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9423466663430328,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9423466663429966,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9423466663429966,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 4124,
+                "signed_pearson": 0.025109422588052595,
+                "overlap_samples": 75876
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9423466663430328,
+              "direct_fft_abs_difference": 3.6193270602780103e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 1760000,
+            "event_start_analysis_sample": 1760027,
+            "stream_start_analysis_sample": 1760000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9326056217440969,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9326056217440674,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9326056217440674,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 5516,
+                "signed_pearson": 0.04253523117783848,
+                "overlap_samples": 74484
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9326056217440969,
+              "direct_fft_abs_difference": 2.9531932455029164e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "overlap_start_analysis_sample": 1840000,
+            "event_start_analysis_sample": 1840027,
+            "stream_start_analysis_sample": 1840000,
+            "samples": 80000,
+            "pearson_at_global_alignment": 0.9187150732409511,
+            "local_fit": {
+              "status": "ok",
+              "candidate_lags": 16001,
+              "eligible_lags": 16001,
+              "nfft": 262144,
+              "best_absolute": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9187150732409078,
+                "overlap_samples": 80000
+              },
+              "greatest_signed": {
+                "lag_samples": 0,
+                "signed_pearson": 0.9187150732409078,
+                "overlap_samples": 80000
+              },
+              "alternative_outside_exclusion": {
+                "lag_samples": 4821,
+                "signed_pearson": -0.033998197305525765,
+                "overlap_samples": 75179
+              },
+              "alternative_exclusion_samples": 2000,
+              "direct_selected_pearson": 0.9187150732409511,
+              "direct_fft_abs_difference": 4.3298697960381105e-14,
+              "x_overlap_range": [
+                0,
+                80000
+              ],
+              "y_overlap_range": [
+                0,
+                80000
+              ],
+              "x_unmatched_prefix_suffix": [
+                0,
+                0
+              ],
+              "y_unmatched_prefix_suffix": [
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "window_tail_not_analyzed_samples": 8882
+      }
+    ],
+    "scope": "Same-decoder file-signal comparison only; no listening/runtime/speaker/carrier/custody/historical clock authentication"
+  }
+}
