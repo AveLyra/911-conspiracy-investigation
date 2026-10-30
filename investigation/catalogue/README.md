@@ -1,8 +1,8 @@
 # Investigation catalogue — public research edition
 
-October 30, 2026. This edition publishes the maintained catalogue through received update 056, including all fifteen later source findings and the steel minute-approval qualification. It is a research publication derived from a broader private working catalogue; it does not establish a collapse cause, conspiracy conclusion or completion percentage.
+October 30, 2026. This edition publishes the maintained catalogue through received handoffs 057–062, including all fifteen later source findings and the steel minute-approval qualification. It is a research publication derived from a broader private working catalogue; it does not establish a collapse cause, conspiracy conclusion or completion percentage.
 
-The overlapping populations are **175 extended-master entries, 370 source findings, 49 consolidated leads, 13 recent breadcrumbs, 44 later report bodies/43 units, 247 documentary claim/text units and eleven recovered earlier contexts**. Historical research items retain their original numbering. Entries sharing a source are not independent evidence and must not be added as votes or probabilities.
+The overlapping populations are **175 extended-master entries, 370 source findings, 49 consolidated leads, 13 recent breadcrumbs, 50 later report bodies/49 units, 247 documentary claim/text units and eleven recovered earlier contexts**. Historical research items retain their original numbering. Entries sharing a source are not independent evidence and must not be added as votes or probabilities.
 
 The fifteen finding additions are FA044, PL022–PL029 and NR068–NR073. They retain conditional event-order limits, Spanish identification/transaction qualifications, CIA accountability/disclosure and denominator issues, and source/citation corrections. The steel approval is distinct from exact approved-text identity, agreement execution, transport, receipt, cutting and specimen custody. FAA schedule and catalog associations remain distinct from executed transfers and case-specific outcomes.
 
@@ -22,6 +22,17 @@ Both2002correction records are now held: AEA1124five pages andAEA1122one forward
 
 The next FAA study acquires AEA1121 (nine pages) and AEA1123 (three pages), previously uninspected locators. It preserves the report of missing radar42 page2of23, attempted supply of two copies and certified/electronic dispatch claims while actual copies, native attachments, receipt and final approval remain unverified. Four displayed timestamp pairs differ by −60, −60, +4 and +4 seconds; these are document-label comparisons, not measured clock errors or recording gaps. The source’s radio/landline and no-change explanations remain attributed, untested contrary findings. A five-page Ninth line1078 transcript is distinguished from the nine-page Eighth TMU record and AWA937’s unresolved version mismatch. The 28/29-page, OMIC ordering and annotation differences, held-but-unread policy paragraphs, all30selected observations and original-record TODOs remain. The135numbered items overlap and are not135independent errors. [Report, source/page/line citations and next tests](https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/README.md); [selected field ledger](https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/FIELD-LEDGER.json).
 
+## Received handoffs057–062
+
+- **057:** Cited policy clauses now read and edition-qualified; the explicit 2003 quiet-minute grouping provision must not be applied retroactively to 2002 corrections. [Source study](https://github.com/AveLyra/911-conspiracy-investigation/blob/2e38da9806a4b3bc2550d66718831488aea76a6c/investigation/broader-evidence/faa-transcript-policy-crosswalk-2026-10-30/README.md).
+- **058:** The actual237-page package and selected transcript counterparts are acquired; aircraft/case labels conflict and the original32-pass/four-failure OCR result remains unchanged. [Source study](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md).
+- **059:** All five released1078 pages are examined and the1301:43 uncertainty marking located; counts and timing arithmetic remain printed fields, with058’s failed checks preserved. [Source study](https://github.com/AveLyra/911-conspiracy-investigation/blob/8b787be27fcb665a851a42e318ccc4fd0b6117e9/investigation/broader-evidence/faa-1078-marked-passages-2026-10-30/README.md).
+- **060:** General2001–2002 receipt acknowledgments and an airbill are held; exact enclosures/final acceptance and military/TMU log assertions remain unresolved. [Source study](https://github.com/AveLyra/911-conspiracy-investigation/blob/0681d662e507d45698521d40dff151ea7d9543af/investigation/broader-evidence/faa-shipping-receipt-originals-2026-10-30/README.md).
+- **061:** Actual alternate forms supply two supervisor-role ranges and three conditional240-minute comparisons; no controlling Time Off, timezone conversion or complete sign-in/out history is established. [Source study](https://github.com/AveLyra/911-conspiracy-investigation/blob/e435bea2ce37b8103997773e1e873e1b569b4254/investigation/broader-evidence/faa-operational-form-crosswalk-2026-10-30/README.md).
+- **062:** The November interview is now held alongside the conflicting April catalogue body; event-attribution/recording-boundary leads and its29-pass/one-failed-anchor result remain qualified. [Source study](https://github.com/AveLyra/911-conspiracy-investigation/blob/99cba5e45d03da7355a7df0449b9f8e4e5cad608/investigation/broader-evidence/telephone-november-interview-2026-10-30/README.md).
+
+The source studies retain four failed OCR anchors in058 and one in062; later checks do not repair or replace them. Exact results and unchanged code are linked in the later-source catalogue. Acquisition and field comparisons do not complete any of the eighteen substantive criteria.
+
 ## Reader and source routes
 
 - [Master leads](MASTER-LEADS.md) and [370 source findings](SOURCE-FINDINGS.md).
@@ -34,7 +45,7 @@ The next FAA study acquires AEA1121 (nine pages) and AEA1123 (three pages), prev
 
 Original studies control their own methods and acceptance. Supplied URLs are citation leads unless an owning report records inspection. Normalized public data preserve research content while excluding private file locators and administration. Unpublished originals remain explicit gaps; a pointer is not new authentication. This edition excludes lawsuit strategy, private correspondence, mailbox/attachment inventories, chat transcripts, credentials and local identifying paths. The private source catalogue remains separately preserved.
 
-Run `python3 investigation/catalogue/tools/verify.py` from this repository. Structural/source-snapshot verification does not independently validate historical events or scientific conclusions. Later source deliveries after update 056 require their own explicit reconciliation.
+Run `python3 investigation/catalogue/tools/verify.py` from this repository. Structural/source-snapshot verification does not independently validate historical events or scientific conclusions. Later source deliveries after update 062 require their own explicit reconciliation.
 
 ## Readable research guide
 

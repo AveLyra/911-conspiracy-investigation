@@ -20,7 +20,7 @@ check('247 original documentary IDs',len(documentary)==247 and {x['id'] for x in
 for name,ids in sets.items():
     actual=set(re.findall(r'<a id="([^"]+)"', (P/name).read_text()))
     check('exact annotation IDs '+name,actual==ids)
-check('44 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==44)
+check('50 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==50)
 for ident in ['fa044','pl022','pl023','pl024','pl025','nr068','nr069','nr070','nr071','nr072','pl026','pl027','nr073','pl028','pl029']:
     text=(P/'SOURCE-FINDINGS.md').read_text().split(f'<a id="{ident}"></a>',1)[1].split('<a id=',1)[0]
     check('addition observation contrary and TODO '+ident,all(word in text for word in ['**Context / contrary evidence:**','**Open TODO:**','**Citations:**']))
@@ -48,6 +48,18 @@ check('FAA056 contrary source explanations attributed',all(v in text for v in ['
 check('FAA056 version and line1078 distinctions preserved',all(v in text for v in ['28 pages for the fourth/associate55','page 19 placed after page 9','four Correction made annotations','five-page Ninth','Eighth nine-page','does not authenticate the two-page AWA937','not independent corroboration']))
 check('FAA056 selected ledger and count limits preserved',all(v in text for v in ['30 selected FIELD-LEDGER observations V01–V30','135 numbered transcript-review items','19+26+24+41+6+7+7+5','not 135 independent errors or events','Prior update055’s 33 rows']))
 check('FAA056 policy originals copies and acceptance gaps preserved',all(v in text for v in ['from copies of Form8020-3','not destruction of the original','2000 FAA Order8020.11B','2003 Change 1','not newly read here','72c(11)/77d(4)','May 2003 QFR drafting/correction/delivery','five tracks/eighteen substantive criteria remain incomplete/partial','not a new independent twelve-page image review']))
+check('057policy edition applicability and incomplete original tests',all(v in text for v in ['77d(3)(a)','72c(11)','four or more quiet minutes','Do not backdate that rule','76a NOTE','Two delimiter failures']))
+check('058actual package counterpart and conflicts retained',all(v in text for v in ['15,505,493 bytes /237 pages','Physical49/printed2of23','1244:58/ZBW IGN','1244:59/R42','AAL11/ZBW-ARTCC-148/AAL11','DESTROY:March11,2004','32 passed /4 failed literal OCR anchors']))
+check('059marked body uncertainty and duplicate rows not erased',all(v in text for v in ['1301:43/Unknown','1301:28/N90','1301:46/Unknown','All48 timed rows,45 distinct second labels','1301:07,1303:39 and1303:40','341+573+346=1,260seconds','unchanged and unrepaired']))
+check('060general acknowledgment not precise final delivery',all(v in text for v in ['11/15/2001 7:46AM','2/1/2002 8:39AM','January4,2002','2/12/02','not a second independent delivery','35','different positions, not automatically a page-count discrepancy','final acceptance']))
+check('061form ranges conditional time pairs and pagination limits',all(v in text for v in ['0632–1432','0632–0810','0810/0930/1315','1210/1330/1715','240minutes conditional','neither range controls','Page8of8 not located','physical34 remained unread','34/237 images leaves203']))
+check('062November body versus April association and event attributions',all(v in text for v in ['e45e7435e80b81df3f0c0376fb7be049595c1653dc6a00f1b6718c1b7dd411b3','c19d9e7ae4176fb411def7259f7657d2c80bf1bdf1a803c8f4fb1b7af83bab5f','7:38 is manifest lockout','7:44 concerns declaration','29 checks passed/1 exact OCR anchor failed','nor were they','TI-TODO01']))
+source_results=meta['source_check_results'];expected_results={'057':(20,0),'058':(32,4),'059':(24,0),'060':(29,0),'061':(33,0),'062':(29,1)}
+check('all six original source-check totals and exact failure counts retained',set(source_results)==set(expected_results) and all((source_results[n]['passed'],source_results[n]['failed'])==counts and len(source_results[n]['failed_checks'])==counts[1] for n,counts in expected_results.items()))
+check('058four original failed predicates retained',[z['check'] for z in source_results['058']['failed_checks']]==['Physical49 safe field anchors at4-16','Physical186 safe field anchors at54-54','Physical187 safe field anchors at5-5','Physical190 safe field anchors at3-37'])
+check('062original failed predicate retained',source_results['062']['failed_checks']==[{'label':'selected visible OCR anchor p8: not in continuous contact','actual':False,'expected':True,'passed':False}])
+check('source-check results linked with immutable result hashes',all(z['verification_url'].startswith('https://github.com/AveLyra/911-conspiracy-investigation/blob/'+z['commit']+'/') and len(z['verification_sha256'])==64 for z in source_results.values()))
+check('allfive tracks eighteen criteria stay unfinished','All five tracks and eighteen substantive criteria remain open/partial' in text and 'not a fresh independent primary-image' in text)
 pattern=re.compile(r'\]\((?:<([^>]+)>|([^\)\n]+))\)');broken=[];links=0
 for f in P.glob('*.md'):
     for angled,plain in pattern.findall(f.read_text()):
