@@ -1,0 +1,11 @@
+--- preserved-pre-OCR-anchor-verifier.py
++++ verify_sources.py
+@@ -75,7 +75,7 @@
+ with ThreadPoolExecutor(max_workers=3) as pool:
+     texts = list(pool.map(ocr, rendered))
+ anchors = {
+-    1: ['8000.1c', '7-20-89', '8000.1b'],
++    1: ['8000.1¢', '7-20-89', '8000.1b'],
+     2: ['audits'],
+     11: ['investigations', 'assistant inspector general for investigations', 'followup system'],
+     12: ['record of resolution action', 'other than those involving personnel actions', 'when warranted'],
