@@ -1,0 +1,1029 @@
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..bdc79099
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,67 @@
++# FAA transcript policy: what the cited rules can—and cannot—establish
++
++October 30, 2026. The cited order gives precise meanings to transcript scope, timing remarks, uncertainty footnotes and copy handling. **These provisions identify better original-record tests; they do not determine whether the FAA's particular corrections were accurate or implemented.** All conflicting case values and earlier reports remain preserved.
++
++## Primary sources and actual reading
++
++| Retained edition | Source | SHA-256 | Actual page images read now |
++|---|---|---|---|
++| August 16, 2000 FAA Order 8020.11B; university-hosted primary government document,389 pages |[Retained source URL](https://libraryonline.erau.edu/online-full-text/books-online/1177.pdf)|`4a079eef3618704785a50283ca6a28fb26be694191570a7f0b8549893ef8e3cf`|Physical51,58,59,60; printed 315,322,323,324|
++| FAA-hosted copy including May 12, 2003 Change 1,397 pages |[Retained source URL](https://www.faa.gov/documentlibrary/media/order/8020.11b.pdf)|`8144fe5bdb3badb2131a000875d0a7709036c2b5bcb4f0e804d68a4a0cbe00a4`|Physical2,3,51,60,61,62; cover,control chart,printed 317,326–328|
++
++Both files were already acquired in the earlier preservation study. Current full hashes were checked; new redundant copies were saved to the verified Intel store while retaining the existing originals. There was **no network redownload**. One tested legacy Intel-relative file was individually absent; the verified store remained available and the existing research copy matched its pin. No outage, suppression or loss of the source is inferred.
++
++Only the ten listed page images were read now, not all 389/397 pages. Pinned earlier full-text extractions were searched as locators; new selected-page text was extracted with pypdf 6.10.0 after visual inspection. [SOURCE-PINS.json](SOURCE-PINS.json) records physical/printed pages, exact selected-text lines/hashes, clause boundaries, comparisons and edition limits. Four nonfatal Fontconfig warnings appeared during rendering; all ten selected images were legible and read. No source was repaired or overwritten, no redacted case-text layer inspected, and no audio/listening/decoder/clock test performed.
++
++## Policy-to-record findings
++
++The [thirteen-row crosswalk](RECORD-CROSSWALK.json) links the provisions to the [preserved package-correction review](https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/README.md). Reading the policy does not replace the missing underlying transcripts, recordings or case-specific directions.
++
++- **Full versus partial concerns selection scope.** Paragraph77a, 2000 physical 58/printed 322, defines the partial transcript around subject-aircraft communications over the stated five-minute-before/after window. A full transcript includes all recorded communications at that operational position over the defined period, regardless of source. Positions are transcribed separately unless integration is requested. Thus a Partial-to-Full label instruction is not itself a measurement of missing duration, and two controller positions are not assumed to have identical content. Whether the actual files meet either definition remains untested. The cited paragraph 76a NOTE and case-specific requests were not newly read here.
++- **A first-page memorandum and later certification date are prescribed fields.** Paragraph77d(1), 2000 physical 59–60/printed 323–324, specifies a memorandum first page, certification/signing date, position/UTC coverage and legend. Certification is by the person who transcribed, not automatically a manager. This qualifies what can be inferred from a memo-shaped entity or multiple date fields. It does not supply the missing 26-page OMIC orfive-page 1078body, explain any aircraft/case/footer mismatch, or authenticate any signature/date.
++- **The timing method has an explicit record location.** Paragraph77d(3)(a), 2000 physical 60/printed 324, provides for beginning-of-transmission times when a time-announce system exists; otherwise the certification contains a timing-method remark. Those remarks, original time channels and timing/check worksheets are concrete targets for the written−60/+4 second disagreements. No actual offset was measured here. A missing remark is not automatically a violation without knowing whether its condition applied.
++- **The uncertainty footnote is conditional.** Paragraph77d(4),same page, distinguishes marking unintelligible sound from interpreting a garbled word/portion. The interpretation is parenthesized/asterisked and accompanied by a note about uncertainty. This is not a universal footer certifying every timestamp or a general test for whether any transcript is complete. The source's declined footnote for sector 55 and requested footnote for line1078 remain distinct, unresolved judgments; inspect the actual marked passages and supporting recording to test them.
++- **Copy and original handling are different.** Paragraph77c, 2000 physical 59/printed 323, provides for transcription from a recording copy to protect the original, with original available for checking. Paragraph72c(11),physical 51/printed 315, addresses personal-number sanitization from copies, with a specified exception and retention of those numbers in original documents. These are source-generation/copy requirements, not proof of what happened in this case or authority to alter our evidence.
++- **Package numbering differs without proving missing content.** The 2000 order labels Form 8020-3, personnel statements and weather as Sections 11/12/13; the 2002 review uses 10/11/12. The 2003 page also lists transcripts as Section 10, while the packet review uses 9. Preserve both numbering schemes; obtain the underlying case index and organization instructions. No section deletion, governing exception or violation is inferred from the labels alone.
++
++## Edition comparison: preserve differences, do not backdate a later rule
++
++The 2003 page-control chart,physical 3/printed 2, calls for replacing printed 301–346 with 301–350 among other pages. Both original files remain unchanged here. Seven regex-delimited selections were compared after collapsing whitespace **only**; raw clauses and hashes remain preserved. No dehyphenation, glyph repair, punctuation substitution or case-value reconciliation was used to make a match.
++
++| Selection | Recorded comparison result | Scope |
++|---|---|---|
++| Personal-number note 72c(11) |Matches after whitespace collapse |Only the selected note, not the changed form heading or whole page.|
++| Scope 77a |Literal extracted differences retained |Includes line-end `communica-`/`tions` versus `communications`, and `AAI-100` versus extracted `AAI-lOO`; no office-change inference.|
++| Recording-copy paragraph 77c |Literal difference retained |Extraction has `separately.` versus `separately,`; no punctuation normalized to force equality.|
++| Certification-date 77d(1)(b) |Matches after whitespace collapse |Selected date instruction only.|
++| Time-announcement/method 77d(3)(a) |Matches after whitespace collapse |Does not establish actual time equipment or compliance.|
++| Digital/cardinal-minute77d(3)(b) |Different; explicit2003 addition |Later text includes transmissions beginning on a minute and permits grouped quiet minutes under stated conditions.|
++| Garbled-interpretation/footnote selection 77d(4) |Matches after whitespace collapse |From uncertainty trigger through footnote text, not a claim the entire paragraph/chapter is identical.|
++
++The 2000cardinal-minute instruction provides an exception when a transmission extends through a minute. The 2003 revision explicitly includes a transmission beginning on a minute and allows optional grouping after four or more quiet minutes, with prescribed delimiters and boundary-minute entries (2003 physical 62/printed 328). The nearby spacing instructions also expand in that edition. **Do not apply those later details retroactively to the 2002 review without establishing the applicable version and directions.** A documented public policy revision is not evidence of a case-specific cover-up or an explanation of the particular timing differences.
++
++Initial clause-selection attempts stopped on a source comma inside the Date quotation and a line break in the final footnote. Both failed attempts, selected source text and actual script diffs were retained; delimiters were repaired without changing a source value. The completed comparison's True/False results are observations, not pass/fail judgments about historical compliance.
++
++## Next original records
++
++The already captured [official finding aid](https://www.archives.gov/research/foia/faa-finding-aid-96-107),rows 3125–3130, provides the following **uninspected locators**, retained in SOURCE-PINS.json:
++
++- [AEA1130 /7598367](https://catalog.archives.gov/id/7598367), labelled Completed Accident Package: priority route to the actual package/index and enclosures.
++- [AEA1126 /7598364](https://catalog.archives.gov/id/7598364), labelled Full Transcript for sector 55,1248:26–1320:21 UTC, but filename says MEMO: inspect the body before claiming a full transcript.
++- [AEA1125 /7598363](https://catalog.archives.gov/id/7598363), May 3 correction-memo label; [AEA1127 /34911617](https://catalog.archives.gov/id/34911617), shipping record; [AEA1128 /7598365](https://catalog.archives.gov/id/7598365) and[AEA1129 /7598366](https://catalog.archives.gov/id/7598366), receipt-email labels. Dates, relationship, enclosures and actual receipt remain unverified from the bodies. Shipping/contact/personnel numbers are excluded here.
++
++No completed search was repeated or new broad query made. Locator reuse does not establish target acquisition, reading, completeness or independent corroboration. Earlier receipt chains may simply repeat in another scan.
++
++TODO: obtain exact original/corrected transcripts with timing-method and uncertainty markings; certification/check history; original→copy→transcript mappings and recording configuration; actual missing sector 42page2/enclosures and receipt; native May 14 attachment binaries; case-specific edition/exception/index directions and the referred paragraph 76a NOTE. Keep the actual May 2003 draft/corrected QFR/delivery, signed action/no-action/reasons and separate recommendation outcomes open. This policy unit does not establish those outcomes.
++
++## Accountability and acceptance
++
++| User/control point | Outcome and evidence | Remaining limit |
++|---|---|---|
++| Inspect available originals and relevant policy |Two held source hashes verified; ten selected images actually read |Partial policy scope; no new whole-order or case-compliance claim.|
++| Preserve conflicts and contrary explanations |Source files, all selected raw values, seven comparison outcomes and thirteen-row crosswalk |No controlling case value selected; source reports remain distinct from proven events.|
++| Keep missing inputs as TODOs, advance available work |Specific certification, uncertainty, copy-chain and catalogue targets above |No substantive eighteen-item criterion closed.|
++| Deliver exact text changes and source links |[TEXT-CHANGES.diff](TEXT-CHANGES.diff), new dated unit against absent-file baseline |Previous reports and original bytes unchanged; diff is separate from visual reading.|
++| Publish only eligible reviewed material as AveLyra |Safe original notes, selected policy comparisons/pins/code/results |No raw source/rasters/fulltext/speech/personnel/contact/signature/private-case material. Separate receipt must verify identity/ref/all published file bodies.|
++
++All five tracks remain active/partial: FAA native correction/disposition, telephone carrier/operator/call-leg originals, recorder authenticated configuration/custody/paired-output/clocks, materials authenticated specimen/native calibration/same-specimen joins, and steel native preservation/transfer/inventory/attribution records. Prior technical tests are preserved within their actual limits. No outreach, new request/fee/filing, private push, deletion, source overwrite or history rewrite occurred. Source integrity, matched clause text and publication do not complete the substantive goal.
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..8920a4f8
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,533 @@
++{
++  "sources": [
++    {
++      "id": "ORDER2000",
++      "source_url": "https://libraryonline.erau.edu/online-full-text/books-online/1177.pdf",
++      "source_type": "FAA-authored historical order; retained university-hosted copy",
++      "file_name": "faa-8020-11b-2000-erau.pdf",
++      "bytes": 4705411,
++      "sha256": "4a079eef3618704785a50283ca6a28fb26be694191570a7f0b8549893ef8e3cf",
++      "total_pdf_pages": 389,
++      "earlier_acquisition_log": "Earlier evidence-preservation study records acquisition, not reacquired here; precise original access timestamp not provided in its source-pin entry.",
++      "hash_verification_and_redundant_copy_utc": "2026-10-30T17:54:39.340729+00:00",
++      "retained_original_unchanged": true,
++      "new_network_download": false
++    },
++    {
++      "id": "ORDER2003",
++      "source_url": "https://www.faa.gov/documentlibrary/media/order/8020.11b.pdf",
++      "source_type": "FAA-hosted historical order with Change1 included",
++      "file_name": "faa-8020-11b-2003-change1.pdf",
++      "bytes": 14108899,
++      "sha256": "8144fe5bdb3badb2131a000875d0a7709036c2b5bcb4f0e804d68a4a0cbe00a4",
++      "total_pdf_pages": 397,
++      "earlier_acquisition_log": "Earlier evidence-preservation study records acquisition, not reacquired here; precise original access timestamp not provided in its source-pin entry.",
++      "hash_verification_and_redundant_copy_utc": "2026-10-30T17:54:39.340729+00:00",
++      "retained_original_unchanged": true,
++      "new_network_download": false
++    }
++  ],
++  "selected_physical_pages": {
++    "ORDER2000": [
++      51,
++      58,
++      59,
++      60
++    ],
++    "ORDER2003": [
++      2,
++      3,
++      51,
++      60,
++      61,
++      62
++    ]
++  },
++  "actual_page_images_read": 10,
++  "printed_page_mapping": {
++    "ORDER2000": {
++      "51": "315",
++      "58": "322",
++      "59": "323",
++      "60": "324"
++    },
++    "ORDER2003": {
++      "2": "Title cover",
++      "3": "Change1 page-control chart, printed2",
++      "51": "317",
++      "60": "326",
++      "61": "327",
++      "62": "328"
++    }
++  },
++  "selected_page_pins": [
++    {
++      "id": "ORDER2000",
++      "physical_page": 51,
++      "text_sha256": "aead763cabea0b6da0d1376f9e117e1307cf67439164a2a5fb0c69e3ddd27aa0",
++      "line_count": 34,
++      "raster_sha256": "c887e4bace018d693678f2414836a39d4f074b9e0f2976323150df7f0468b451"
++    },
++    {
++      "id": "ORDER2000",
++      "physical_page": 58,
++      "text_sha256": "538c39f8876c315e4f4ec560ae44897a0b287f6ee33d21e440c7b6000bec635a",
++      "line_count": 36,
++      "raster_sha256": "b1f32c0e9e47eec1839da64ade7a00519c74fa5628033e81e5e094d8e02eb203"
++    },
++    {
++      "id": "ORDER2000",
++      "physical_page": 59,
++      "text_sha256": "d9ed940bdbc66ed02ae16f3981d93a1624eab8656c3d9782920a1c5c5f81474c",
++      "line_count": 33,
++      "raster_sha256": "09a14f3b0c1fe6260fe6c116036c20849da1e1d5d7f3b48fef910819ed8cd17f"
++    },
++    {
++      "id": "ORDER2000",
++      "physical_page": 60,
++      "text_sha256": "d978da83b3664e1747af385b020b30085ed2af4a09bb44e00415e340a52bc0e3",
++      "line_count": 37,
++      "raster_sha256": "a984ce19a307a6b60ef237916aa3269a5108162798e47c7fe928aca90190b7ee"
++    },
++    {
++      "id": "ORDER2003",
++      "physical_page": 2,
++      "text_sha256": "8ad0a8ab81063ed381400bb2c8ae60242888ca2c13df0558056b9d143f5e1dcd",
++      "line_count": 9,
++      "raster_sha256": "64f027f599fb0fbd2eb0e40002af2fb27e4bc950efe4fdb92677c39b046beaf7"
++    },
++    {
++      "id": "ORDER2003",
++      "physical_page": 3,
++      "text_sha256": "db4081760d6cbfa59de8db666f604dc9fadcd8d0530eb7af81f959ebffbc3d5b",
++      "line_count": 36,
++      "raster_sha256": "5ec02e2ac521f20f63502e96c99f4e6b09231d64f9516288137405d76c5b68a2"
++    },
++    {
++      "id": "ORDER2003",
++      "physical_page": 51,
++      "text_sha256": "3942e6c84a822936d2b799d15f2b7680c1c816255f1d2c5c12aa7ae1af365b82",
++      "line_count": 37,
++      "raster_sha256": "baa03e41fbed87cc06545dc72be99f16ef61a2ab7040e50eb646e17167866a1e"
++    },
++    {
++      "id": "ORDER2003",
++      "physical_page": 60,
++      "text_sha256": "6fe0c14e137bf8b6808ed72971eaee8b9cc6bc3deb57bc46168b4a42e868928a",
++      "line_count": 42,
++      "raster_sha256": "8cd1e3bd7de278aa69872f4f33727ee07b8aaf913d382c654c717cabbee4cb7f"
++    },
++    {
++      "id": "ORDER2003",
++      "physical_page": 61,
++      "text_sha256": "43c37478f0719e166b3fef4be5b8d05f3156c7351cd808a55a9de1d430ae5d6a",
++      "line_count": 30,
++      "raster_sha256": "a83c10c627cbb17b7fa18df844837adcd7c0d6544ecdaa461cb041c899258449"
++    },
++    {
++      "id": "ORDER2003",
++      "physical_page": 62,
++      "text_sha256": "80894c9de1fe498e02ae61fd2f4df2c621686f840f3909c83e9c09974ccd6d96",
++      "line_count": 38,
++      "raster_sha256": "864bad149d38d324e6e28c2da760c4d4bc75d27a9ba34cd933a1f36608e0155f"
++    }
++  ],
++  "comparison_method": "Current pypdf6.10.0 selected page text, after all10page images visually inspected. Exact regex-delimited raw clauses retained; equality transform collapses whitespace only, with no dehyphenation, punctuation repair or source rewrite. Text-diff outcomes are observations, not pass/fail predictions of substantive equivalence.",
++  "comparisons": [
++    {
++      "key": "privacy72c11",
++      "recipe": {
++        "start_regex": "NOTE:\\s*Unless requested",
++        "end_regex": "these numbers on the original document\\."
++      },
++      "sources": {
++        "ORDER2000": {
++          "physical_page": 51,
++          "selected_text_lines": [
++            4,
++            9
++          ],
++          "raw_clause_sha256": "f3fc896c2116acbe9091db8a5ce0a953dc0ebc196eb7366182b1cdca91923ddf",
++          "whitespace_only_sha256": "81d79ab300e3984cfb2511af561e5119bfadc6721d8db4947f1c852b44e05ee7",
++          "raw_characters": 466
++        },
++        "ORDER2003": {
++          "physical_page": 51,
++          "selected_text_lines": [
++            10,
++            15
++          ],
++          "raw_clause_sha256": "c7765e4e4247427ee85572b4f2c92df467b304acf61a9b60090790b9ea24daca",
++          "whitespace_only_sha256": "81d79ab300e3984cfb2511af561e5119bfadc6721d8db4947f1c852b44e05ee7",
++          "raw_characters": 469
++        }
++      },
++      "same_after_whitespace_only": true,
++      "normalized_token_diff": []
++    },
++    {
++      "key": "scope77a",
++      "recipe": {
++        "start_regex": "Typewritten transcriptions",
++        "end_regex": "described and prepared in paragraph\\s*76\\."
++      },
++      "sources": {
++        "ORDER2000": {
++          "physical_page": 58,
++          "selected_text_lines": [
++            22,
++            36
++          ],
++          "raw_clause_sha256": "87646db5bcc13a46ebd89d85ae14729de8eb7292b133a1afe795ab4ae9975cef",
++          "whitespace_only_sha256": "73a61c714a78b32f34bd82d0bba8c53cf829eed78cc65f768f31947fdebca19c",
++          "raw_characters": 1341
++        },
++        "ORDER2003": {
++          "physical_page": 60,
++          "selected_text_lines": [
++            9,
++            23
++          ],
++          "raw_clause_sha256": "6c0ed4dd23a9c21533c9b7b7f6e0893b7a6a9f11c9bb675c5410c9ba27ee8ac6",
++          "whitespace_only_sha256": "d619bceac1933d3fc54a29f5ae67531b12238a2d61654b27926da4acdfac8b1e",
++          "raw_characters": 1347
++        }
++      },
++      "same_after_whitespace_only": false,
++      "normalized_token_diff": [
++        "--- ORDER2000-scope77a",
++        "+++ ORDER2003-scope77a",
++        "@@ -24,8 +24,7 @@",
++        " contain",
++        " all",
++        " recorded",
++        "-communica-",
++        "-tions",
++        "+communications",
++        " concerning",
++        " the",
++        " subject",
++        "@@ -57,7 +56,7 @@",
++        " specifically",
++        " requested",
++        " by",
++        "-AAI-100,",
++        "+AAI-lOO,",
++        " the",
++        " AT",
++        " division,"
++      ]
++    },
++    {
++      "key": "copy77c",
++      "recipe": {
++        "start_regex": "When informed that litigation",
++        "end_regex": "The original recording may be used to check the transcription\\."
++      },
++      "sources": {
++        "ORDER2000": {
++          "physical_page": 59,
++          "selected_text_lines": [
++            6,
++            19
++          ],
++          "raw_clause_sha256": "3ba7953ed9ca0aafb471734282fa78386cd97d0585df206cc110978f3aa4be29",
++          "whitespace_only_sha256": "ed5422c0a13cc1989873a35a1a4d2f2a8ad1db302e6c63e7f9fcba2b27536245",
++          "raw_characters": 1280
++        },
++        "ORDER2003": {
++          "physical_page": 60,
++          "selected_text_lines": [
++            27,
++            40
++          ],
++          "raw_clause_sha256": "5a1036c3df6bd437401bd79a632eac5ed95b9946e004d155e83f7523d56ad8dd",
++          "whitespace_only_sha256": "f8eba5ecebb863a51e7d070f4e42620aec0a084e441486ee18e3c6621d93a84e",
++          "raw_characters": 1287
++        }
++      },
++      "same_after_whitespace_only": false,
++      "normalized_token_diff": [
++        "--- ORDER2000-copy77c",
++        "+++ ORDER2003-copy77c",
++        "@@ -132,7 +132,7 @@",
++        " shall",
++        " be",
++        " transcribed",
++        "-separately.",
++        "+separately,",
++        " Do",
++        " not",
++        " integrate"
++      ]
++    },
++    {
++      "key": "date77d1b",
++      "recipe": {
++        "start_regex": "For\\s*[\"“]Date,?[\"”]",
++        "end_regex": "the transcription was certified and signed\\."
++      },
++      "sources": {
++        "ORDER2000": {
++          "physical_page": 59,
++          "selected_text_lines": [
++            25,
++            25
++          ],
++          "raw_clause_sha256": "39839984784a14ac434f659469cb889b3730cbded6af7cf976ce22f75c556e84",
++          "whitespace_only_sha256": "39839984784a14ac434f659469cb889b3730cbded6af7cf976ce22f75c556e84",
++          "raw_characters": 69
++        },
++        "ORDER2003": {
++          "physical_page": 61,
++          "selected_text_lines": [
++            6,
++            6
++          ],
++          "raw_clause_sha256": "39839984784a14ac434f659469cb889b3730cbded6af7cf976ce22f75c556e84",
++          "whitespace_only_sha256": "39839984784a14ac434f659469cb889b3730cbded6af7cf976ce22f75c556e84",
++          "raw_characters": 69
++        }
++      },
++      "same_after_whitespace_only": true,
++      "normalized_token_diff": []
++    },
++    {
++      "key": "timing77d3a",
++      "recipe": {
++        "start_regex": "If time-announce systems are present",
++        "end_regex": "regarding the timing method used\\."
++      },
++      "sources": {
++        "ORDER2000": {
++          "physical_page": 60,
++          "selected_text_lines": [
++            22,
++            24
++          ],
++          "raw_clause_sha256": "bb88c0356e03d4f43bf4526f13f9d188f1163f3c860680c988b86f9d06bd21ca",
++          "whitespace_only_sha256": "a924fdf0885a1f22f5e71bbec0c4595c0b0dc949219ff32d8c84e0b38cf6e879",
++          "raw_characters": 232
++        },
++        "ORDER2003": {
++          "physical_page": 62,
++          "selected_text_lines": [
++            10,
++            12
++          ],
++          "raw_clause_sha256": "c52a7f7c2b25600bed24f88f04dad47a9cc6d373bedbf1b27e682d69d917589d",
++          "whitespace_only_sha256": "a924fdf0885a1f22f5e71bbec0c4595c0b0dc949219ff32d8c84e0b38cf6e879",
++          "raw_characters": 233
++        }
++      },
++      "same_after_whitespace_only": true,
++      "normalized_token_diff": []
++    },
++    {
++      "key": "minutes77d3b",
++      "recipe": {
++        "start_regex": "If electronically digital time systems are present",
++        "end_regex": "(?=\\(4\\)\\s*The transcription)"
++      },
++      "sources": {
++        "ORDER2000": {
++          "physical_page": 60,
++          "selected_text_lines": [
++            25,
++            29
++          ],
++          "raw_clause_sha256": "a4a967392b14644aa02a45740c1386e2b84b4bb2fa38729c7e5c78bb888f1681",
++          "whitespace_only_sha256": "1484f83d74454d187923515862f33bb300354d0df8044556c6a89ed49f4e09c9",
++          "raw_characters": 309
++        },
++        "ORDER2003": {
++          "physical_page": 62,
++          "selected_text_lines": [
++            13,
++            23
++          ],
++          "raw_clause_sha256": "b33882a16cbb2ab057417ab5b473b0a95a6e821e29495fc4da8e83733e680f5e",
++          "whitespace_only_sha256": "83476ac8a20694e76ac47b5d651f2e6dc3915418dcb2e15253c3b624a9886762",
++          "raw_characters": 724
++        }
++      },
++      "same_after_whitespace_only": false,
++      "normalized_token_diff": [
++        "--- ORDER2000-minutes77d3b",
++        "+++ ORDER2003-minutes77d3b",
++        "@@ -24,12 +24,16 @@",
++        " shall",
++        " be",
++        " indicated",
++        "-unless",
++        "+unless:",
++        "+(1)",
++        "+A",
++        "+transmission",
++        "+beginning",
++        "+with",
++        "+or",
++        "+extending",
++        "+through",
++        " a",
++        "-transmission",
++        "-extends",
++        "-through",
++        "-the",
++        " cardinal",
++        " minute",
++        " in",
++        "@@ -45,3 +49,66 @@",
++        " (see",
++        " Appendix",
++        " 2).",
++        "+(2)",
++        "+If",
++        "+four",
++        "+or",
++        "+more",
++        "+cardinal",
++        "+minutes",
++        "+have",
++        "+passed",
++        "+without",
++        "+any",
++        "+transmissions.",
++        "+The",
++        "+grouping",
++        "+of",
++        "+the",
++        "+times",
++        "+is",
++        "+optional,",
++        "+however,",
++        "+if",
++        "+used",
++        "+shall",
++        "+be",
++        "+indicated",
++        "+as",
++        "+follows:",
++        "+The",
++        "+minutes",
++        "+being",
++        "+grouped",
++        "+shall",
++        "+be",
++        "+in",
++        "+parentheses",
++        "+and",
++        "+separated",
++        "+by",
++        "+a",
++        "+single",
++        "+dash.",
++        "+Example",
++        "+(1708-",
++        "+1720).",
++        "+The",
++        "+grouped",
++        "+minutes",
++        "+shall",
++        "+have",
++        "+a",
++        "+single",
++        "+cardinal",
++        "+minute",
++        "+on",
++        "+the",
++        "+line",
++        "+immediately",
++        "+above",
++        "+and",
++        "+below",
++        "+the",
++        "+grouped",
++        "+minutes."
++      ]
++    },
++    {
++      "key": "uncertainty77d4",
++      "recipe": {
++        "start_regex": "When an\\s*interpretation of a garbled word",
++        "end_regex": "best\\s+interpretation\\s+possible\\s+under\\s+the\\s+circumstances\\."
++      },
++      "sources": {
++        "ORDER2000": {
++          "physical_page": 60,
++          "selected_text_lines": [
++            32,
++            37
++          ],
++          "raw_clause_sha256": "0fbb7db60b61dd2ff09683d70f47e134b72765aabade02a05a48f1eea701f7ab",
++          "whitespace_only_sha256": "cbc8a9f4001ad4baada3b76cb3b99472403abc8242015f0810a16713be1a602b",
++          "raw_characters": 354
++        },
++        "ORDER2003": {
++          "physical_page": 62,
++          "selected_text_lines": [
++            26,
++            31
++          ],
++          "raw_clause_sha256": "ac537d87cd2bffcf5d7a91c1086b0bd04b7936287c78be8a092d97addea596de",
++          "whitespace_only_sha256": "cbc8a9f4001ad4baada3b76cb3b99472403abc8242015f0810a16713be1a602b",
++          "raw_characters": 358
++        }
++      },
++      "same_after_whitespace_only": true,
++      "normalized_token_diff": []
++    }
++  ],
++  "scope_limits": "Only selected historical policy pages, not all389/397pages, case-specific exceptions/directives or compliance. Referenced paragraph76a NOTE was not newly read. No audio, clock fitting or case-source hidden-text extraction. Four nonfatal Fontconfig warnings arose during rendering; all10selected images were legible and actually read, original hashes unchanged.",
++  "runtime": {
++    "python": "3.12.14",
++    "pypdf": "6.10.0",
++    "pdftoppm": "26.05.0"
++  },
++  "locator_source": {
++    "url": "https://www.archives.gov/research/foia/faa-finding-aid-96-107",
++    "form": "Previously captured official finding-aid text reused as locator, not fresh network query or target-body reading",
++    "capture_log_sha256": "3dc2d311f9ecb481241847732d1efd8c34496d92b3ca6fe0c9b510626dd44ee8",
++    "capture_entry": "faa_nara_boxes96_locators",
++    "captured_row_range": "3125–3130",
++    "target_holdings_check": "Only old table capture and current locator record matched targeted IDs in scoped native-study notes/source metadata; not a search of all government holdings."
++  },
++  "next_record_locators": [
++    {
++      "code": "AEA1125",
++      "catalogue": "https://catalog.archives.gov/id/7598363",
++      "captured_label": "Package-correction memorandum; May3,2002",
++      "status": "Locator only; body unacquired/unread in this unit."
++    },
++    {
++      "code": "AEA1126",
++      "catalogue": "https://catalog.archives.gov/id/7598364",
++      "captured_label": "Full Transcript; radar sector55;1248:26–1320:21UTC; filename saysMEMO",
++      "status": "Candidate only; label does not establish full transcript body."
++    },
++    {
++      "code": "AEA1130",
++      "catalogue": "https://catalog.archives.gov/id/7598367",
++      "captured_label": "Completed Accident Package; ZNY-ARTCC-148/UAL175",
++      "status": "Priority candidate, not proof of native completeness, original enclosures or exact corrected version."
++    },
++    {
++      "code": "AEA1127",
++      "catalogue": "https://catalog.archives.gov/id/34911617",
++      "captured_label": "Shipping airbill",
++      "status": "Uninspected; relationship/date/enclosures/delivery unverified. Tracking/contact/personnel fields excluded."
++    },
++    {
++      "code": "AEA1128",
++      "catalogue": "https://catalog.archives.gov/id/7598365",
++      "captured_label": "Receipt-of-package email; November15,2001",
++      "status": "Uninspected separate entity; may repeat the already-read forwarding chain, not independent corroboration."
++    },
++    {
++      "code": "AEA1129",
++      "catalogue": "https://catalog.archives.gov/id/7598366",
++      "captured_label": "Receipt-of-corrections email; February1,2002",
++      "status": "Uninspected separate entity; does not itself prove final correction delivery."
++    }
++  ]
++}
+diff --git a/RECORD-CROSSWALK.json b/RECORD-CROSSWALK.json
+new file mode 100644
+index 00000000..683c2e03
+--- /dev/null
++++ b/RECORD-CROSSWALK.json
+@@ -0,0 +1,223 @@
++{
++  "existing_keys": "B129/PD01–PD04/FAA01–FAA04; operational inputs relevant toREC01–REC03. PC identifiers are local crosswalk keys, not replacement master IDs.",
++  "prior_public_record_review": "https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/README.md",
++  "prior_field_ledger": "https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/FIELD-LEDGER.json",
++  "scope": "Thirteen source-linked policy/record relationships. Original and revised source values retained, no adjudication of actual corrections or native authenticity.",
++  "rows": [
++    {
++      "id": "PC01",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2000",
++        "physical_page": 51,
++        "printed_page": "315",
++        "paragraph": "72c(11)",
++        "text_lines": [
++          4,
++          9
++        ]
++      },
++      "released_record": "January package Section10/Form8020-3; priorV22",
++      "supported_limited_statement": "Personal home/cellular/pager numbers are sanitized from copies subject to named-office exception; original accident-file/package and originating-facility documents retain them.",
++      "unresolved": "Actual originals, authorized exception, copy history and compliance. No direction here to destroy operational evidence."
++    },
++    {
++      "id": "PC02",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2000",
++        "physical_page": 58,
++        "printed_page": "322",
++        "paragraph": "77a",
++        "text_lines": [
++          22,
++          36
++        ]
++      },
++      "released_record": "ConditionalPartial/Full label requests in January/February correction lists",
++      "supported_limited_statement": "Partial selects subject-aircraft communications for defined five-before/five-after period; full includes all recorded communications at the specific position for that period.",
++      "unresolved": "Actual selection/duration, recorded source content, paragraph76a NOTE and any case-specific instruction. Label alone cannot establish completeness or deletion."
++    },
++    {
++      "id": "PC03",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2000",
++        "physical_page": 58,
++        "printed_page": "322",
++        "paragraph": "77a",
++        "text_lines": [
++          22,
++          36
++        ]
++      },
++      "released_record": "R42/associate42 andR55/associate55 differing transcripts; priorV08–V12",
++      "supported_limited_statement": "Positions are transcribed separately; integration requires the specified request. Separate records need not contain identical communications.",
++      "unresolved": "Actual channel configuration and paired signals; no assumption that a reported switching explanation occurred."
++    },
++    {
++      "id": "PC04",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2000",
++        "physical_page": 59,
++        "printed_page": "323",
++        "paragraph": "77c",
++        "text_lines": [
++          6,
++          19
++        ]
++      },
++      "released_record": "Reported tape verification/recertification and missing native inputs",
++      "supported_limited_statement": "Full transcription uses a recording copy to protect original; original may be used to check. This supplies a generation/custody test, not proof a case followed it.",
++      "unresolved": "Original→rerecording→transcription version/channel chain and actual comparison worksheets."
++    },
++    {
++      "id": "PC05",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2000",
++        "physical_page": 59,
++        "printed_page": "323",
++        "paragraph": "77d(1)(a)-(f)",
++        "text_lines": [
++          21,
++          34
++        ]
++      },
++      "released_record": "AWA937/AWA940 memo-style first pages, date/coverage/legend fields",
++      "supported_limited_statement": "First page is prescribed asFAA memorandum; date field is certification/signing date; body states position/UTC range and identifies abbreviations. A memo first page is expected by the form.",
++      "unresolved": "Does not establish that any particular two-page entity contains the whole referenced transcript or explain mismatched aircraft/case/footer fields."
++    },
++    {
++      "id": "PC06",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2000",
++        "physical_page": 60,
++        "printed_page": "324",
++        "paragraph": "77d(1)(g)",
++        "text_lines": [
++          3,
++          12
++        ]
++      },
++      "released_record": "Missing-signature and re-certification requests",
++      "supported_limited_statement": "Certification is by preparer, not manager unless manager prepared it; specified wording refers to the subject accident.",
++      "unresolved": "Actual certification/signature/date and who prepared/checked. Standard wording alone cannot measure actual content or resolve aircraft mismatch."
++    },
++    {
++      "id": "PC07",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2000",
++        "physical_page": 60,
++        "printed_page": "324",
++        "paragraph": "77d(3)(a)",
++        "text_lines": [
++          22,
++          24
++        ]
++      },
++      "released_record": "One-minute/four-second written disagreements and reviewer requests to check tapes",
++      "supported_limited_statement": "With time-announce systems, entries begin each transmission; absent such systems, certification includes timing-method remark.",
++      "unresolved": "Whether time announcements existed; actual timing-method remark, original time channel/reference and offset/uncertainty test. No hardware clock measured here."
++    },
++    {
++      "id": "PC08",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2000",
++        "physical_page": 60,
++        "printed_page": "324",
++        "paragraph": "77d(3)(b)",
++        "text_lines": [
++          25,
++          29
++        ]
++      },
++      "released_record": "Requests to add or decline cardinal-minute markers",
++      "supported_limited_statement": "2000text requires cardinal minutes except where a transmission extends through one, then next minute indicated.",
++      "unresolved": "Actual transmission extent and marker placement; instruction alone does not prove missing audio."
++    },
++    {
++      "id": "PC09",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2003",
++        "physical_page": 62,
++        "printed_page": "328",
++        "paragraph": "77d(3)(b)",
++        "text_lines": [
++          13,
++          23
++        ]
++      },
++      "released_record": "Later edition and quiet-minute grouping",
++      "supported_limited_statement": "2003revision explicitly includes transmissions beginning on a minute and optional grouping after four or more quiet minutes, with formatting conditions.",
++      "unresolved": "Not retroactively applied to2002records; actual governing edition/directives and source-media coverage remain open."
++    },
++    {
++      "id": "PC10",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2000",
++        "physical_page": 60,
++        "printed_page": "324",
++        "paragraph": "77d(4)",
++        "text_lines": [
++          30,
++          37
++        ]
++      },
++      "released_record": "Third/radar55 declined footnote versus Ninth/1078 requested footnote, priorV18–V19",
++      "supported_limited_statement": "Rule distinguishes unintelligible insertion from interpretation of garbled words; interpretation uses parentheses, asterisk and an uncertainty footnote.",
++      "unresolved": "Need exact marked passages and the actual check recording; different conditional judgments not resolved or treated as contradictions merely from footer absence."
++    },
++    {
++      "id": "PC11",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2003",
++        "physical_page": 3,
++        "printed_page": "2",
++        "paragraph": "Change1 page-control chart",
++        "text_lines": "Page image/control table; complete selected-page pin provided"
++      },
++      "released_record": "2000versus2003policy pages",
++      "supported_limited_statement": "Chart orders replacement of printed301–346 with301–350, among other pages, datedMay12,2003. Historical replacement instruction is evidence, not permission to replace our copies.",
++      "unresolved": "Selected clause comparisons are scoped; matching text is not proof an entire chapter or all case obligations were unchanged."
++    },
++    {
++      "id": "PC12",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2000",
++        "physical_page": 51,
++        "printed_page": "315",
++        "paragraph": "72c(11)-(13)",
++        "text_lines": "Complete selected-page pin; form/personnel/weather headings read"
++      },
++      "released_record": "Packet Sections10/11/12 versus order Sections11/12/13",
++      "supported_limited_statement": "The same named form/personnel/weather categories use different section numbers in the preserved order and package-correction list.",
++      "unresolved": "Underlying case package index and case-specific organization/authority; no omission or policy violation inferred from numbering alone."
++    },
++    {
++      "id": "PC13",
++      "claim_type": "Historical policy observation and qualified relationship to released record, not compliance/intent finding",
++      "policy_source": {
++        "source": "ORDER2003",
++        "physical_page": 62,
++        "printed_page": "328",
++        "paragraph": "77d(4)",
++        "text_lines": [
++          26,
++          31
++        ]
++      },
++      "released_record": "Original2000uncertainty clause atphysical60,32–37",
++      "supported_limited_statement": "Selected uncertainty-trigger/footnote text matches under whitespace-only comparison; all raw input and token differences in other clauses preserved.",
++      "unresolved": "Not a finding that the entire77d(4), order or historical implementation is identical or correct."
++    }
++  ]
++}
+diff --git a/verify_sources.py b/verify_sources.py
+new file mode 100644
+index 00000000..4f0ab2a3
+--- /dev/null
++++ b/verify_sources.py
+@@ -0,0 +1,47 @@
++#!/usr/bin/env python3
++"""Reproduce seven selected historical-policy comparisons from pinned PDFs.
++Requires pypdf6.10.0. Read-only, no network or audio. Exact regex-delimited
++clauses are hashed raw and after whitespace collapse only; differences stay.
++This verifies source/selection reproducibility, not case compliance or intent.
++"""
++from pathlib import Path
++import argparse,difflib,hashlib,json,re,sys
++import pypdf
++
++def main():
++ p=argparse.ArgumentParser(description=__doc__)
++ p.add_argument('--original2000',type=Path,required=True)
++ p.add_argument('--changed2003',type=Path,required=True)
++ a=p.parse_args();root=Path(__file__).resolve().parent
++ pins=json.loads((root/'SOURCE-PINS.json').read_text())
++ paths={'ORDER2000':a.original2000,'ORDER2003':a.changed2003}
++ checks=[];texts={};comparisons=[]
++ def check(label,passed):checks.append({'check':label,'passed':bool(passed)})
++ for x in pins['sources']:
++  data=paths[x['id']].read_bytes();reader=pypdf.PdfReader(paths[x['id']])
++  check(x['id']+' pinned source entity and page count',hashlib.sha256(data).hexdigest()==x['sha256'] and len(data)==x['bytes'] and len(reader.pages)==x['total_pdf_pages'])
++  for page in pins['selected_physical_pages'][x['id']]:texts[(x['id'],page)]=reader.pages[page-1].extract_text()
++ for x in pins['selected_page_pins']:
++  t=texts[(x['id'],x['physical_page'])]
++  check(x['id']+' selected-page'+str(x['physical_page'])+' text/line pins',hashlib.sha256(t.encode()).hexdigest()==x['text_sha256'] and len(t.splitlines())==x['line_count'])
++ for spec in pins['comparisons']:
++  computed={};normalized=[]
++  for key,x in spec['sources'].items():
++   text=texts[(key,x['physical_page'])]
++   start=re.search(spec['recipe']['start_regex'],text,re.S)
++   if start is None:raise ValueError('Start delimiter not found: '+spec['key'])
++   end=re.search(spec['recipe']['end_regex'],text[start.start():],re.S)
++   if end is None:raise ValueError('End delimiter not found: '+spec['key'])
++   stop=start.start()+end.end();raw=text[start.start():stop];normal=' '.join(raw.split())
++   computed[key]={'physical_page':x['physical_page'],'selected_text_lines':[text.count('\n',0,start.start())+1,text.count('\n',0,stop)+1],'raw_clause_sha256':hashlib.sha256(raw.encode()).hexdigest(),'whitespace_only_sha256':hashlib.sha256(normal.encode()).hexdigest(),'raw_characters':len(raw)}
++   normalized.append(normal)
++  same=normalized[0]==normalized[1]
++  diff=list(difflib.unified_diff(normalized[0].split(),normalized[1].split(),fromfile='ORDER2000-'+spec['key'],tofile='ORDER2003-'+spec['key'],lineterm=''))
++  ok=computed==spec['sources'] and same==spec['same_after_whitespace_only'] and diff==spec['normalized_token_diff']
++  check(spec['key']+' exact selection and comparison reproduced',ok)
++  comparisons.append({'key':spec['key'],'same_after_whitespace_only':same,'reproduced':ok})
++ src=pins['sources'][0];data=paths[src['id']].read_bytes();mutated=bytearray(data);mutated[len(mutated)//2]^=1
++ check('One-byte source mutation rejected',hashlib.sha256(mutated).hexdigest()!=src['sha256'])
++ result={'runtime':{'python':sys.version.split()[0],'pypdf':pypdf.__version__},'checks':checks,'passed':sum(c['passed'] for c in checks),'failed':sum(not c['passed'] for c in checks),'actual_comparisons':comparisons,'scope':'Two source entities, ten selected-page text pins and seven clause comparisons. Equality is an observed value; not all clauses match. No source rewritten, dehyphenation or glyph/punctuation repair.','limits':'Does not establish actual historical compliance, recording completeness, hardware time, implemented correction, native authenticity, delivery, source independence, intent or applicability of a later edition.'}
++ print(json.dumps(result,indent=2));return int(result['failed']>0)
++if __name__=='__main__':sys.exit(main())
+diff --git a/VERIFICATION.json b/VERIFICATION.json
+new file mode 100644
+index 00000000..9430cdde
+--- /dev/null
++++ b/VERIFICATION.json
+@@ -0,0 +1,129 @@
++{
++  "runtime": {
++    "python": "3.12.14",
++    "pypdf": "6.10.0"
++  },
++  "checks": [
++    {
++      "check": "ORDER2000 pinned source entity and page count",
++      "passed": true
++    },
++    {
++      "check": "ORDER2003 pinned source entity and page count",
++      "passed": true
++    },
++    {
++      "check": "ORDER2000 selected-page51 text/line pins",
++      "passed": true
++    },
++    {
++      "check": "ORDER2000 selected-page58 text/line pins",
++      "passed": true
++    },
++    {
++      "check": "ORDER2000 selected-page59 text/line pins",
++      "passed": true
++    },
++    {
++      "check": "ORDER2000 selected-page60 text/line pins",
++      "passed": true
++    },
++    {
++      "check": "ORDER2003 selected-page2 text/line pins",
++      "passed": true
++    },
++    {
++      "check": "ORDER2003 selected-page3 text/line pins",
++      "passed": true
++    },
++    {
++      "check": "ORDER2003 selected-page51 text/line pins",
++      "passed": true
++    },
++    {
++      "check": "ORDER2003 selected-page60 text/line pins",
++      "passed": true
++    },
++    {
++      "check": "ORDER2003 selected-page61 text/line pins",
++      "passed": true
++    },
++    {
++      "check": "ORDER2003 selected-page62 text/line pins",
++      "passed": true
++    },
++    {
++      "check": "privacy72c11 exact selection and comparison reproduced",
++      "passed": true
++    },
++    {
++      "check": "scope77a exact selection and comparison reproduced",
++      "passed": true
++    },
++    {
++      "check": "copy77c exact selection and comparison reproduced",
++      "passed": true
++    },
++    {
++      "check": "date77d1b exact selection and comparison reproduced",
++      "passed": true
++    },
++    {
++      "check": "timing77d3a exact selection and comparison reproduced",
++      "passed": true
++    },
++    {
++      "check": "minutes77d3b exact selection and comparison reproduced",
++      "passed": true
++    },
++    {
++      "check": "uncertainty77d4 exact selection and comparison reproduced",
++      "passed": true
++    },
++    {
++      "check": "One-byte source mutation rejected",
++      "passed": true
++    }
++  ],
++  "passed": 20,
++  "failed": 0,
++  "actual_comparisons": [
++    {
++      "key": "privacy72c11",
++      "same_after_whitespace_only": true,
++      "reproduced": true
++    },
++    {
++      "key": "scope77a",
++      "same_after_whitespace_only": false,
++      "reproduced": true
++    },
++    {
++      "key": "copy77c",
++      "same_after_whitespace_only": false,
++      "reproduced": true
++    },
++    {
++      "key": "date77d1b",
++      "same_after_whitespace_only": true,
++      "reproduced": true
++    },
++    {
++      "key": "timing77d3a",
++      "same_after_whitespace_only": true,
++      "reproduced": true
++    },
++    {
++      "key": "minutes77d3b",
++      "same_after_whitespace_only": false,
++      "reproduced": true
++    },
++    {
++      "key": "uncertainty77d4",
++      "same_after_whitespace_only": true,
++      "reproduced": true
++    }
++  ],
++  "scope": "Two source entities, ten selected-page text pins and seven clause comparisons. Equality is an observed value; not all clauses match. No source rewritten, dehyphenation or glyph/punctuation repair.",
++  "limits": "Does not establish actual historical compliance, recording completeness, hardware time, implemented correction, native authenticity, delivery, source independence, intent or applicability of a later edition."
++}
