@@ -1,0 +1,159 @@
+{
+  "runtime": {
+    "python": "3.12.14",
+    "pypdf": "6.10.0"
+  },
+  "checks": [
+    {
+      "check": "Pinned released PDF bytes/hash/page count",
+      "passed": true
+    },
+    {
+      "check": "Physical186 unchanged OCR/raster hashes and line count",
+      "passed": true
+    },
+    {
+      "check": "Physical186 exact ordered timestamp/line ledger, repeated rows retained",
+      "passed": true
+    },
+    {
+      "check": "Physical187 unchanged OCR/raster hashes and line count",
+      "passed": true
+    },
+    {
+      "check": "Physical187 exact ordered timestamp/line ledger, repeated rows retained",
+      "passed": true
+    },
+    {
+      "check": "Physical188 unchanged OCR/raster hashes and line count",
+      "passed": true
+    },
+    {
+      "check": "Physical188 exact ordered timestamp/line ledger, repeated rows retained",
+      "passed": true
+    },
+    {
+      "check": "Physical189 unchanged OCR/raster hashes and line count",
+      "passed": true
+    },
+    {
+      "check": "Physical189 exact ordered timestamp/line ledger, repeated rows retained",
+      "passed": true
+    },
+    {
+      "check": "Physical190 unchanged OCR/raster hashes and line count",
+      "passed": true
+    },
+    {
+      "check": "Physical190 exact ordered timestamp/line ledger, repeated rows retained",
+      "passed": true
+    },
+    {
+      "check": "Two new images plus three reused/reread, whole package not asserted read",
+      "passed": true
+    },
+    {
+      "check": "All minute marker rows and locators reproduced",
+      "passed": true
+    },
+    {
+      "check": "Twenty-two separate cardinal-minute labels1255through1316",
+      "passed": true
+    },
+    {
+      "check": "Forty-eight rows with nondecreasing valid second labels, not deduplicated",
+      "passed": true
+    },
+    {
+      "check": "One marked parenthetical structure at preserved physical188/OCR58",
+      "passed": true
+    },
+    {
+      "check": "Separate unintelligible notation anchors physical188/OCR50,60",
+      "passed": true
+    },
+    {
+      "check": "Uncertainty footer and end label locators retained",
+      "passed": true
+    },
+    {
+      "check": "Manual-row aggregate matches page totals; attribution remains image-based",
+      "passed": true
+    },
+    {
+      "check": "Three repeated second labels remain two separately labelled rows each",
+      "passed": true
+    },
+    {
+      "check": "Nominal1260second label span partitions341+573+346 only as arithmetic",
+      "passed": true
+    },
+    {
+      "check": "One-byte mutated source fails identity",
+      "passed": true
+    },
+    {
+      "check": "Dropped final row changes frozen row accounting",
+      "passed": true
+    },
+    {
+      "check": "Deduplicating equal timestamps changes frozen row accounting",
+      "passed": true
+    }
+  ],
+  "passed": 24,
+  "failed": 0,
+  "accounting": {
+    "timed_rows": 48,
+    "unique_second_labels": 45,
+    "timed_rows_by_physical_page": {
+      "186": 1,
+      "187": 15,
+      "188": 14,
+      "189": 13,
+      "190": 5
+    },
+    "manual_image_agency_counts": {
+      "AD1": 21,
+      "N90": 20,
+      "Unknown": 2,
+      "AREA C OS": 2,
+      "AD2": 3
+    },
+    "repeated_second_labels": {
+      "1301:07": {
+        "rows": 2,
+        "manual_agency_codes": [
+          "N90",
+          "AD1"
+        ]
+      },
+      "1303:39": {
+        "rows": 2,
+        "manual_agency_codes": [
+          "AD1",
+          "N90"
+        ]
+      },
+      "1303:40": {
+        "rows": 2,
+        "manual_agency_codes": [
+          "AD1",
+          "N90"
+        ]
+      }
+    },
+    "minute_markers": 22,
+    "first_last_timed_row_labels": [
+      "1300:41",
+      "1310:14"
+    ],
+    "nominal_header_span_seconds": 1260,
+    "nominal_first_to_last_timed_row_seconds": 573,
+    "nominal_header_start_to_first_row_seconds": 341,
+    "nominal_last_row_to_header_end_seconds": 346,
+    "limits": "Label arithmetic and visible-row accounting only. Not measured audio duration, silence, erased material, independent clocks, call counts, speakers or accurate speech."
+  },
+  "prior_OCR_anchor_failures": "Earlier32pass/4fail result is preserved unchanged and not rerun or repaired by these different timestamp-ledger checks. No glyph normalization.",
+  "manual_limits": "Agency/notation row joins and printed-page readings remain explicit manual image observations, not machine-authenticated voices, event accuracy, original clocks, delivered copy, native lineage or compliance."
+}
