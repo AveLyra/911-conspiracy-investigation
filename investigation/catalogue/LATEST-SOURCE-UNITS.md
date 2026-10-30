@@ -1,5 +1,5 @@
 <!-- BEGIN OCT30 CURRENT NOTICE -->
-**Current edition:** 41 distinct later report bodies from 40 units, including the dated additions below. Earlier report states remain historical source observations. The new catalog association narrows a previously open link; it does not supply an executed transfer or case-specific outcome.
+**Current edition:** 42 distinct later report bodies from 41 units, including the dated additions below. Earlier report states remain historical source observations. The new catalog association narrows a previously open link; it does not supply an executed transfer or case-specific outcome.
 <!-- END OCT30 CURRENT NOTICE -->
 
 # Later source-unit findings and qualifications
@@ -442,6 +442,31 @@ The owning study acquired and read both images of NARA7599161/AWA937 (27,138 byt
 
 **Citations:** [exact report](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md); [all safe observed fields](CITATIONS.md#reference-3316be4282ff6c12); [source/page/line pins](CITATIONS.md#reference-5d4426d66cacadd2); [owner verification](CITATIONS.md#reference-1f0e8666e22856fa); [reading scope](CITATIONS.md#reference-e0d3656e05ed258b); [original open records](CITATIONS.md#reference-942647ad9db5eaac); [focused publication receipt](CITATIONS.md#reference-4be5247b953aadd0); [handoff](CITATIONS.md#reference-c0529efbc1523f89).
 [NARA7599161](https://catalog.archives.gov/id/7599161); [source PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/c-Transcripts/5-AWA-937-Memorandum-Fill-Transcript-New-York-ARTCC.pdf); [fixed public report](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md).
+
+<!-- BEGIN UPDATE054 ADDITION -->
+<a id="unit-faa-omic-memorandum-2026-10-30-818890dc"></a>
+## Received update 054 — OMIC memorandum held; full dialogue and recordings still open
+
+Previously title-only AWA940/NARA7599164 is now acquired as a released two-page Operations Manager In Charge memorandum (31,742 bytes; SHA-256 97baabe1e23b268da2c9e02d6510b7c19bd65234e22f3e1cb8b1bdeb210fe530). Its OMIC1230–1344 UTC declaration is a closer candidate counterpart of the Item16 label. This narrows the earlier acquisition TODO to the underlying full dialogue, recording, native versions and exact enclosure/copy/channel/certification join; those remain unacquired or unverified.
+
+**Acquired entity / strongest limits:** Physical1 subject Full Transcript/UAL175, case ZNY-ARTCC-148, printed February 4, 2002, OMIC1230–1344 UTC; physical2 work-file UAL175_MEMO.doc and footer09/25/2001. Both pages contain descriptive memorandum/legend/footer and placeholders, with no visible time-coded dialogue. A memorandum referring to a Full Transcript need not contain the transcript body; intended cover/form, selected assembly, incomplete export or other version explanations remain untested. No missing speech, trimming or measured gap is established; earlier1230–1331/1331–1340 rerecording labels and four-minute end-label arithmetic remain unchanged.
+
+**Role-legend boundary:** The printed role legend defines ZNY OMIC and CC-NOM separately, and labels Huntress as24th Air Division. These are attributed definitions, not timestamped communications, proof of bridge participation, independently validated organization history or a mapping of generic NOM audio files to the OMIC position.
+
+**Comparison / contrary evidence:** AWA940 subject and work-file aircraft labels both say UAL175. This is contrary evidence to a claim that every memorandum has the earlier mismatch; it neither corrects AWA937’s AAL11/UAL175_R42_memo.doc fields nor selects the right flight. AWA937’s one visible1300:41 utterance remains an observation of that acquired entity. Shared layouts or production features can be source dependence, not independent corroboration.
+
+**Distinct date/capture layers:** Printed February 4, 2002, footer09/25/2001, PDF CreationDate D:20051222232630-05'00', ModDate D:20131106161615-05'00', Creator Canon DR-9080C TWAIN, Producer Adobe Acrobat 10.1.8 Paper Capture Plug-in and hosting Last-Modified Sat, 04 Sep 2021 04:01:31 GMT are different fields/layers. They establish no authenticated authoring, signing, transmission, scan/clock history or deliberate alteration.
+
+**Grounded next locators:** Title-only/unopened NARA7598362/AEA1124 names a formal accident package for ZNY-ARTCC-148/UAL175 on correction February5,2002; companion7598360/AEA1122 is an email on corrections. These were observed in an earlier saved catalog view; no new search or body reading occurred. Shared case/nearby date supports a future version/enclosure check, not a proven replacement relationship or the May2003 QFR correction. The locator note also reports footer File8020.1; its classification/retention applicability is unverified.
+
+**Open TODO:** Native UAL175_MEMO.doc, approved/certified full dialogue and attachments, page/export/assembly/version manifests; matched OMIC source tapes/certifications/channel/copy/clock/end-label rules; native AWA937 and TMU1078 counterparts; delivery/enclosure manifests/receipts. Retrieve and compare the unopened correction-package candidates without merging them with the May2003 QFR. Actual correctedMay2003 QFR/receipt, signed consideration/action/no-action/reasons and distinct implementation/closure remain open. All five tracks/eighteen substantive criteria remain unfinished.
+
+**Publication and review scope:** Published as AveLyra at191c27f34284bdbbf006db5bb2b41071125f19d7; six derivative file identities/ref/accounts checked. Owner read both source images and checked selected byte/page/visible-field/zero-HHMM:SS observations. Overview checked the held derivative and actual publication, not a new PDF/native/audio test. An ambiguous phrase in the agent’s draft was qualified before publication; that wording diff is review history, not evidence of a native document revision or independent provenance.
+
+**Citations:** [exact report and task table](https://github.com/AveLyra/911-conspiracy-investigation/blob/191c27f34284bdbbf006db5bb2b41071125f19d7/investigation/broader-evidence/faa-omic-memorandum-2026-10-30/README.md); [source/fields/locators](CITATIONS.md#reference-00f46da2c335009e); [owner verification](CITATIONS.md#reference-bda19b9817601a41); [focused publication receipt](CITATIONS.md#reference-7c8ccd2a45c9a044); [title-only locator record](CITATIONS.md#reference-488099187368c735); [agent wording qualification](CITATIONS.md#reference-6cee0d603dd3dd34); [handoff](CITATIONS.md#reference-ff759cb8cdd885a7).
+[NARA7599164](https://catalog.archives.gov/id/7599164); [fixed public report](https://github.com/AveLyra/911-conspiracy-investigation/blob/191c27f34284bdbbf006db5bb2b41071125f19d7/investigation/broader-evidence/faa-omic-memorandum-2026-10-30/README.md); [unopened7598362](https://catalog.archives.gov/id/7598362); [unopened7598360](https://catalog.archives.gov/id/7598360).
+
+Raw PDF/DOM/full text, speech, staff/contact/signature and private-case material remain excluded from the derivative. Zero enumerated PDF attachments does not establish absence of native or separately delivered files. No audio/native-clock reconstruction, outreach, mailbox, request, fee, filing, private push, source overwrite, deletion or main merge was performed by this integration.
 
 
 ## Publication status reconciliation — October 30

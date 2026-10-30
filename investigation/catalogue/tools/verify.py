@@ -20,7 +20,7 @@ check('247 original documentary IDs',len(documentary)==247 and {x['id'] for x in
 for name,ids in sets.items():
     actual=set(re.findall(r'<a id="([^"]+)"', (P/name).read_text()))
     check('exact annotation IDs '+name,actual==ids)
-check('41 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==41)
+check('42 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==42)
 for ident in ['fa044','pl022','pl023','pl024','pl025','nr068','nr069','nr070','nr071','nr072','pl026','pl027','nr073','pl028','pl029']:
     text=(P/'SOURCE-FINDINGS.md').read_text().split(f'<a id="{ident}"></a>',1)[1].split('<a id=',1)[0]
     check('addition observation contrary and TODO '+ident,all(word in text for word in ['**Context / contrary evidence:**','**Open TODO:**','**Citations:**']))
@@ -37,6 +37,8 @@ check('FAA052 conditional labels matching control and no sum',all(v in text for 
 check('FAA052 actual reading routing and instruments remain qualified',all(v in text for v in ['1,2,3,4,8,15,16,26','eighteen pages remain unread','AAT-20','AAT-200','partly occluded footer','underlying instruments','corrected May2003','62a102da31cc82a7216dc41e60bed185a11c8d45']))
 check('FAA053 candidate and all distinct fields preserved',all(v in text for v in ['TMU commercial line1078','1255–1316 UTC','not the initially sought Operations Manager1230–1344','Fill Transcript','Full Transcript','AAL11','ZBW-ARTCC-148','UAL175_R42_memo.doc','1300:41','09/27/2001','D:20051222232254','D:20131106161605']))
 check('FAA053 sparse dialogue and search limits remain open',all(v in text for v in ['does not prove missing speech','pertaining to the subject accident','no correct flight label is selected','title-only/unopened','NOM audio remains metadata-only/unmapped','0584407dac2190a9f9514ee157124446e60672d5']))
+check('FAA054 memo acquired dialogue and media remain open',all(v in text for v in ['Previously title-only AWA940','31,742 bytes','OMIC1230–1344','UAL175_MEMO.doc','ZNY-ARTCC-148','February 4, 2002','09/25/2001','need not contain the transcript body','No missing speech, trimming or measured gap']))
+check('FAA054 roles matching control and unopened corrections preserved',all(v in text for v in ['ZNY OMIC and CC-NOM separately','not timestamped communications','subject and work-file aircraft labels both say UAL175','neither corrects AWA937','Title-only/unopened NARA7598362','companion7598360','not a proven replacement relationship or the May2003 QFR correction','191c27f34284bdbbf006db5bb2b41071125f19d7']))
 pattern=re.compile(r'\]\((?:<([^>]+)>|([^\)\n]+))\)');broken=[];links=0
 for f in P.glob('*.md'):
     for angled,plain in pattern.findall(f.read_text()):
