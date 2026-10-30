@@ -1,5 +1,5 @@
 <!-- BEGIN OCT30 CURRENT NOTICE -->
-**Current edition:** 39 distinct later report bodies from 38 units, including the three dated additions below. Earlier report states remain historical source observations. The new catalog association narrows a previously open link; it does not supply an executed transfer or case-specific outcome.
+**Current edition:** 40 distinct later report bodies from 39 units, including the dated additions below. Earlier report states remain historical source observations. The new catalog association narrows a previously open link; it does not supply an executed transfer or case-specific outcome.
 <!-- END OCT30 CURRENT NOTICE -->
 
 # Later source-unit findings and qualifications
@@ -398,6 +398,29 @@ This integration checked the nine committed derivative bodies and their preserve
 ## Update 051 publication verified after handoff
 
 Actual public publication of the nine-file FAA derivative is now verified as AveLyra at commit 45ee3925dc1edd3137cf85182570bfc8440afcac. The earlier NOT PUSHED/local-only wording is preserved as its handoff-time status. Publication closes only that coordination TODO; native authenticity, delivery, compliance, withdrawal and 2003–2006 applicability remain open. [Public report](https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md); [actual publication receipt](CITATIONS.md#reference-9db1b8a92e076eca). The nine remote file blobs match the held derivative; raw scan, full extraction, recipients/contacts, private correspondence and lawsuit material were excluded.
+
+<!-- BEGIN UPDATE052 ADDITION -->
+<a id="unit-faa-response-labels-2026-10-30-8e5669d0"></a>
+## Received update 052 — FAA response labels, conditional differences and matching controls
+
+The owning study acquired NARA34913873/AWA1077, a 26-page assembled Request2/response scan (4,592,330 bytes; SHA-256 06bd6869f765702e620fe4344f38ab622763439979a8e9a91779ec710904ec93). It supplies division-response and Item16/19/20 retrieval locators. Physical8/printed1 cites July2,2003 and asks another office to review the answers for accuracy/suitability; this is a review/routing lead, not proof of approved dispatch, receipt or complete enclosures.
+
+**Printed labels and conditional arithmetic:** Conditional facility/role/start pairs, as printed in UTC: New York Operations rerecordings 1230–1331 and 1331–1340 versus full transcript 1230–1344; New York TMU 1245–1314 versus 1245–1316; New York TMU 1255–1315 versus 1255–1316; Boston Military Operations 1232–1259 versus 1232–1259. The corresponding same-day end-label arithmetic is 4, 2, 1 and 0 minutes; no actual media duration or coverage gap is established.
+
+**Context / contrary evidence:** Do not sum these differences into missing audio. Unique tape/channel IDs, source generations and clock correspondence are unacquired; minute precision, indexing/assembly, different copies/channels, further Item20 material or an actual coverage difference remain untested possibilities. The matching Boston pair is retained as contrary evidence to a claim that every pair differs. No audio was acquired, decoded, aligned or listened to in this source pass.
+
+**Request/version/custody context:** Catalog AAT-20 and physical8 heading AAT-200 remain distinct labels with unknown cause/routing equivalence. The July16,2003 production date on physical2 belongs to Request2, not the earlier May14 due date for another request. Physical4 has a partly occluded footer, not reconstructed from the response date. Items16/19 cross-reference Item20; physical26 names a Cleveland custody memorandum and SATORI list, but does not supply those underlying instruments.
+
+**Actual reading scope:** The owner visually read physical pages 1,2,3,4,8,15,16,26 only. Twenty-three pages rendered and sixteen OCR-locator pages are not full26-page reading; eighteen pages remain unread. No native text/embedded attachments enumerated in this scan does not establish absence of native enclosures elsewhere. A search-title match within the communications request is not the actual corrected May2003 answer, and a 2001–2004 collection does not establish a 2006 disposition by search silence.
+
+**Open TODO:** Item16 certified recordings, full transcripts/certifications, unique source/tape/channel/generation IDs and end-label rules; Item20 complete enclosure inventory and transmission/receipt; native division review/approval; actual Cleveland custody memorandum and SATORI list. Separately retain the corrected May2003 QFR/delivery, signed consideration/action/no-action and distinct implementation/closure. All five tracks/eighteen substantive criteria remain unfinished.
+
+**Publication reconciliation:** The new ten-file derivative is published as AveLyra at 62a102da31cc82a7216dc41e60bed185a11c8d45, with remote ref/account/file identities checked. The owner also reconfirmed existing b30daf0f/6dffea2a and45ee3925 publications; these are additional publication checks, not new independent research findings. The earlier static test performed no new decoding; the later same-decoder signal study did decode. Their timing/scope qualifications and unmatched regions remain unchanged.
+
+**Citations:** [exact published report](https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md); [source/page/line pins](CITATIONS.md#reference-2849b36304d51886); [all observed ranges](CITATIONS.md#reference-b085aabd688311ef); [owner arithmetic/source checks](CITATIONS.md#reference-a1d22008723d9319); [actual reading scope](CITATIONS.md#reference-95309c2de408488f); [original open records](CITATIONS.md#reference-d52004287058669b); [focused publication receipt](CITATIONS.md#reference-df893377ea0c8a2d); [owner publication checks](CITATIONS.md#reference-53fc89a77c37ae1b); [handoff](CITATIONS.md#reference-0bde14096229ef3e).
+[NARA34913873](https://catalog.archives.gov/id/34913873); [fixed public report](https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md).
+
+The Overview checks committed derivative bodies, source annotations and publication identity. It does not independently re-read all PDF pages, rerun label arithmetic as a new historical test, acquire/align recordings, authenticate native custody/clocks or complete original-record gates. Raw scans/OCR/DOM, signatures, contacts/personnel, private correspondence and litigation strategy remain outside this derivative.
 
 
 ## Publication status reconciliation — October 30

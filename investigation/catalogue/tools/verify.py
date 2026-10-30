@@ -20,7 +20,7 @@ check('247 original documentary IDs',len(documentary)==247 and {x['id'] for x in
 for name,ids in sets.items():
     actual=set(re.findall(r'<a id="([^"]+)"', (P/name).read_text()))
     check('exact annotation IDs '+name,actual==ids)
-check('39 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==39)
+check('40 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==40)
 for ident in ['fa044','pl022','pl023','pl024','pl025','nr068','nr069','nr070','nr071','nr072','pl026','pl027','nr073','pl028','pl029']:
     text=(P/'SOURCE-FINDINGS.md').read_text().split(f'<a id="{ident}"></a>',1)[1].split('<a id=',1)[0]
     check('addition observation contrary and TODO '+ident,all(word in text for word in ['**Context / contrary evidence:**','**Open TODO:**','**Citations:**']))
@@ -33,6 +33,8 @@ check('current method publication distinguished from dated local-only state','##
 check('unperformed same-content tests remain open','Re-encoding can change bytes' in text and 'waveform alignment' in text and 'Open TODO' in text)
 check('FAA preservation source clocks and qualifications retained',all(v in text for v in ['110000 UTC to 120400 UTC','2000 - 2400 local','0000 - 2400 local','09/14/2001 01:00 PM','header zone unverified','not independent witnesses','documented deviation','withdrawal/amendment']))
 check('FAA handoff and verified publication states distinguished','## Update 051 publication verified after handoff' in text and 'handoff-time status' in text and '45ee3925dc1edd3137cf85182570bfc8440afcac' in text)
+check('FAA052 conditional labels matching control and no sum',all(v in text for v in ['1230–1331 and 1331–1340','1230–1344','1245–1314','1245–1316','1255–1315','1255–1316','1232–1259','4, 2, 1 and 0 minutes','matching Boston pair','Do not sum','Unique tape/channel IDs']))
+check('FAA052 actual reading routing and instruments remain qualified',all(v in text for v in ['1,2,3,4,8,15,16,26','eighteen pages remain unread','AAT-20','AAT-200','partly occluded footer','underlying instruments','corrected May2003','62a102da31cc82a7216dc41e60bed185a11c8d45']))
 pattern=re.compile(r'\]\((?:<([^>]+)>|([^\)\n]+))\)');broken=[];links=0
 for f in P.glob('*.md'):
     for angled,plain in pattern.findall(f.read_text()):
