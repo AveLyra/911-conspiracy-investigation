@@ -1,0 +1,809 @@
+--- /dev/null
++++ investigation/broader-evidence/telephone-source-interview-controls-2026-10-29/CHECKLIST.json
+@@ -0,0 +1,41 @@
++{
++  "items": [
++    {
++      "point": "Next available lead without repeated searches",
++      "outcome": "Three concrete catalog-exposed PDFs acquired; two exact new FAA searches negative without a public suspicious-finding claim",
++      "location": "SOURCE-PINS.json; SCOPE.md",
++      "verification": "Observed public links, hashes/page counts and ten images",
++      "unresolved": "November interview unavailable"
++    },
++    {
++      "point": "Preserve conflicts and links",
++      "outcome": "Dates/pages/association, file forms, event subjects, times, sequence and warning claims retained",
++      "location": "TI01–TI07; README.md",
++      "verification": "New pages and held T01 pp31/94, T02 pp3/4 read",
++      "unresolved": "Cause, exact call and clock not adjudicated"
++    },
++    {
++      "point": "Missing inputs as TODOs",
++      "outcome": "Six dependency groups retained under existing parent keys without lowering acceptance criteria",
++      "location": "OPEN-TODOS.json",
++      "verification": "Original five-track plan and ownership boundaries followed",
++      "unresolved": "All18 original criteria unfinished"
++    },
++    {
++      "point": "Audit own assumptions, retain earlier version",
++      "outcome": "Initial note259 call framing preserved and qualified using surrounding body and Arpey context",
++      "location": "SCOPE.md; TI03",
++      "verification": "Staff p31/p94 and Arpey pp2–3 compared",
++      "unresolved": "No conclusion that witness or citation is false"
++    },
++    {
++      "point": "Commit/push eligible findings as AveLyra",
++      "outcome": "Exact reviewed additive notes/code candidate prepared; source PDFs/private data excluded",
++      "location": "Unique public study path; local actual publication receipt",
++      "verification": "Account/repository checked; commit/ref/body checks separately receipted after execution",
++      "unresolved": "Branch publication is not merge or historical validation"
++    }
++  ],
++  "stage": "Reviewed candidate; no publication success inferred",
++  "revision_policy": "First version against absence, exact addition diff; earlier reports/sources unchanged; PDF reading separate."
++}
+--- /dev/null
++++ investigation/broader-evidence/telephone-source-interview-controls-2026-10-29/OBSERVATIONS.json
+@@ -0,0 +1,137 @@
++{
++  "parent_keys": [
++    "AUD016-A1",
++    "AUD016-TC05/B105",
++    "AUD016-TC06/B110",
++    "TEL02",
++    "TEL04"
++  ],
++  "observations": [
++    {
++      "id": "TI01",
++      "kind": "catalog/body association",
++      "locators": [
++        "C2609600 title, Produced, paper Extent, viewer and Download fields",
++        "I02 PDF p1 date; pp1–3",
++        "C2609603 same fields; I03 PDF p1 date and pp1–3"
++      ],
++      "values": {
++        "C2609600_date": "November 19, 2003",
++        "C2609600_paper_extent": "9 pages",
++        "C2609600_viewer": "PDF Page 1 of 3",
++        "I02_header_date": "April 26, 2004",
++        "I02_pages": 3,
++        "C2609603_date": "April 26, 2004",
++        "C2609603_paper_extent": "3 pages",
++        "I03_date": "April 26, 2004",
++        "I03_pages": 3
++      },
++      "assessment": "Preserve descriptive fields, exposed link and downloaded body separately. Expected November interview remains unacquired. No cause, historical replacement, deliberate removal or paper-file incompleteness is established."
++    },
++    {
++      "id": "TI02",
++      "kind": "two acquired PDF versions",
++      "locators": [
++        "I02 and I03 full PDFs; RESULTS.json"
++      ],
++      "values": {
++        "I02_bytes": 158153,
++        "I03_bytes": 532100,
++        "pages_each": 3,
++        "exact_extracted_text_equal_by_page": [
++          false,
++          false,
++          false
++        ],
++        "decoded_image_samples_equal_by_page": [
++          false,
++          false,
++          false
++        ],
++        "media_boxes_equal_by_page": [
++          false,
++          false,
++          false
++        ]
++      },
++      "assessment": "All six page images read; tracked April26 header and assertions found in both. No differing tracked assertion identified. Manual reading is not exhaustive forensic proof of textual or rendering equivalence. Export sequence, OCR/resampling origin and underlying testimony alteration not established."
++    },
++    {
++      "id": "TI03",
++      "kind": "qualification of starting premise",
++      "locators": [
++        "T01 PDF/printed p31 note259 paragraph and separate9:16 paragraph/note264",
++        "T01 p94 notes259/264",
++        "I01 p2 CentralTime statement and p3 around8AM /8:05–8:10 paragraph"
++      ],
++      "values": {
++        "T01_note259_Marquis": "approximately 9:00 A.M.",
++        "T01_note259_Arpey": "between 9:05 and 9:10",
++        "T01_note259_later_AAL": "some time after 9:10 A.M.",
++        "I01_zone": "Central Time for all subsequent time entries",
++        "I01_8_05_to_8_10_subject": "lost communications/transponder contact with a United flight, then extension of AAL ground stop",
++        "T01_p31_note259_subject": "notification that United was missing a plane and nationwide ground stop",
++        "T01_p31_note264_subject": "separate 9:16 A.M. Herndon conversation"
++      },
++      "assessment": "Do not treat all values as independent direct timings of one call. I01 does not explicitly describe Arpey making or hearing the Halleck–Herndon call. Conditional one-hour CT-to-ET arithmetic aligns the intervals, but does not calibrate a clock or identify a call. Preserve initial protocol wording and add qualification, not a historical-record correction. No source falsity or miscitation established."
++    },
++    {
++      "id": "TI04",
++      "kind": "knowledge-order tension",
++      "locators": [
++        "T02 p3 Flight77 final paragraph and p4 first paragraphs",
++        "I02/I03 p3 Communications and Notifications on AAL77"
++      ],
++      "values": {
++        "T02_sequence": "Halleck learned United was missing a plane, called his United counterpart who would not confirm loss, then called Herndon",
++        "April26_sequence": "Herndon call just after second tower impact; SOC thought second aircraft might be AA77 while not yet aware United was missing a plane",
++        "T02_cautions": "difficulty recalling exact times and sequence; simultaneous events made sequencing hard",
++        "April26_cautions": "Halleck did not know when they realized AA77 was missing; confusion and conflicting information"
++      },
++      "assessment": "Keep differing recollections and qualifications. Multiple contacts, differing knowledge, memory and drafting are untested alternatives. Do not force one call sequence or count dependent retrospective accounts as independent clock evidence."
++    },
++    {
++      "id": "TI05",
++      "kind": "reported warning and information controls",
++      "locators": [
++        "I02/I03 p2 first paragraph under Communications and Notifications on AAL11 and information/manifest paragraphs",
++        "I02/I03 p3 penultimate paragraph"
++      ],
++      "values": {
++        "warning_request": "SOC said no Herndon cockpit-intrusion warning request received, and believed they would have complied if received",
++        "warning_decision": "SOC reported no management decision to notify pilots to beware cockpit intrusions",
++        "instruction_quote": "contain and control information",
++        "manifest": "reported restriction on internal access to AA11 manifest",
++        "reported_explanation": "confusion, conflicting information, focus on safe landings"
++      },
++      "assessment": "Reported controls are contemporaneous-record targets, not established warning suppression or motive. Nonreceipt, no decision and failure to transmit are separate propositions. Seek actual messages, request/receipt, policy and access/distribution logs including timely warnings and legitimate controls."
++    },
++    {
++      "id": "TI06",
++      "kind": "reported display behavior; ownership limit",
++      "locators": [
++        "I02/I03 p1 Technical and Communications Equipment",
++        "I02/I03 p3 final paragraph"
++      ],
++      "values": {
++        "systems": "AAL ASD versus FAA TSD",
++        "AA11_Alpha": "staff told Halleck primary track continued south after impact; he did not recall name or know continuation",
++        "AA77": "SOC said ASD track continued west after known Pentagon impact"
++      },
++      "assessment": "Retrospective source statements, not raw radar, independent aircraft positions or evidence of continued flight. Seek feeds, track/source IDs, coasting definitions and clock provenance. Technical interpretation/testing stays with assigned technical owner; not performed here."
++    },
++    {
++      "id": "TI07",
++      "kind": "low-weight catalog field observation",
++      "locators": [
++        "C2609600 displayed size field; I02 acquisition bytes"
++      ],
++      "values": {
++        "catalog_label": "Portable Document File (PDF), 1 KB",
++        "acquired_bytes": 158153
++      },
++      "assessment": "Separately scoped display metadata and observed response size, not an independent event or corroboration of wrongdoing. Cause untested."
++    }
++  ],
++  "independence_limit": "I02 and I03 contain the same tracked April26 MFR assertions in two file forms, not two independent interviews. Staff report depends on source accounts; catalog, PDF and text layers are not independent corroboration."
++}
+--- /dev/null
++++ investigation/broader-evidence/telephone-source-interview-controls-2026-10-29/OPEN-TODOS.json
+@@ -0,0 +1,53 @@
++{
++  "todos": [
++    {
++      "id": "TI-TODO01",
++      "parent": "TEL02/TEL04",
++      "missing": "Actual November19,2003 nine-page Marquis/Parfitt/Mulcahy/Bertapelle interview and attachments/association history",
++      "next_route": "Concrete NAID2609600 paper file or verified preserved counterpart; current catalog download route already tested",
++      "acceptance": "Actual dated body and full page sequence inspected; version/association conflicts retained",
++      "status": "TODO; no outreach or new request"
++    },
++    {
++      "id": "TI-TODO02",
++      "parent": "TEL04",
++      "missing": "Actual AAL April26 and July7,2004 QFR answers/report; SOC chronology; staff citation papers",
++      "next_route": "Exact cited titles/dates in released Commission file units; do not assume April26 SOC MFR equals April26 QFR",
++      "acceptance": "Each source/time joined to its event and evidence without collapsing calls",
++      "status": "TODO"
++    },
++    {
++      "id": "TI-TODO03",
++      "parent": "TEL02/TEL04",
++      "missing": "Native Halleck–Herndon audio, line/routing logs and clock documentation",
++      "next_route": "T01 note264: FAA ATCSCC NOM Line5149, position34B, Sept11,2001; AAL transcript counterpart",
++      "acceptance": "Source identity, specific calls, boundaries, event/receipt time and clocks joined, with nonmatches retained",
++      "status": "TODO; referenced recording not acquired here"
++    },
++    {
++      "id": "TI-TODO04",
++      "parent": "TEL02/TEL04",
++      "missing": "Warning request/receipt; SOC/dispatcher notifications; actual containment instruction/policy; manifest access/distribution records",
++      "next_route": "Contemporaneous operational originals, not another retelling of MFR",
++      "acceptance": "Separate no request, failed delivery, receipt, decision and actual transmission; retain timely-warning and legitimate-control evidence",
++      "status": "TODO"
++    },
++    {
++      "id": "TI-TODO05",
++      "parent": "REC01–03; technical owner",
++      "missing": "ASD/TSD feeds, display/track IDs, coasting definitions and clock provenance",
++      "next_route": "Authorized Overview handoff of source locators; no duplicate technical tests here",
++      "acceptance": "Technical owner authenticates and tests actual feed/track/clock chain",
++      "status": "TODO; no radar test"
++    },
++    {
++      "id": "TI-TODO06",
++      "parent": "FAA PD01–04 and remaining five-track inputs",
++      "missing": "Corrected QFR/receipt, signed decision and recommendation closure; original telephone, recorder, materials and steel inputs",
++      "next_route": "Carry existing dependencies unchanged; two exact new FAA cancellation searches found no qualifying original this unit",
++      "acceptance": "Original substantive criteria, not metadata summary, integrity checks or publication counts",
++      "status": "TODO; all18 original criteria unfinished"
++    }
++  ],
++  "constraint": "Missing inputs defer dependent work, not unrelated ready acquisition. No outreach, fees, new FOIA, mailbox access or privacy bypass authorized."
++}
+--- /dev/null
++++ investigation/broader-evidence/telephone-source-interview-controls-2026-10-29/README.md
+@@ -0,0 +1,50 @@
++# Interview-source controls: call identity, warnings and catalog associations
++
++October 29, 2026. This new source review serves TEL02/TEL04 and existing AUD016 telephone questions. It preserves accounts and uncertainties; it does not establish coordinated obstruction or a historical call chronology.
++
++Three public archival PDFs were acquired and all ten page images read: the four-page January8,2004 Arpey memorandum and two different three-page PDFs displaying the April26,2004 American Airlines SOC memorandum. Held Halleck/Houck interview pages3–4 and staff-report pages31/94 were reinspected. Native call logs, interview audio, carrier records and radar feeds were not acquired.
++
++## What the catalog supplies
++
++[NARA's MFR index](https://www.archives.gov/research/9-11/commission-memoranda.html) identifies NAID2609600 as the November19,2003 Marquis/Parfitt/Mulcahy/Bertapelle interview, nine pages. Its [current catalog entry](https://catalog.archives.gov/id/2609600) likewise says November19,2003 and nine paper pages. Yet the exposed [2609600_AASOC.pdf](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/2609600_AASOC.pdf) says April26,2004 on page1 and contains three pages. The viewer also says three pages. Preserve descriptive fields, exposed link and downloaded-body identity separately.
++
++The concrete [counterpart catalog2609603](https://catalog.archives.gov/id/2609603) describes the April26,2004 SOC interview and supplies [t-0148-911MFR-00017.pdf](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00017.pdf), also three pages. The acquired hashes are:
++
++- Catalog2609600 PDF: c19d9e7ae4176fb411def7259f7657d2c80bf1bdf1a803c8f4fb1b7af83bab5f; 158,153 bytes.
++- Catalog2609603 PDF: 1c331f5a4aa23f7299531ed295b04ee172d9f64bfc0df74b3a8aa8c8966a09f6; 532,100 bytes.
++
++File bytes, extracted strings, page dimensions and decoded image samples differ. Manual reading found the tracked April26 statements in both sets of images; that is not exhaustive proof of textual or rendered equivalence. Export sequence and the catalog association's cause remain unestablished. The November19 nine-page interview remains unacquired. Two file forms are not independent interviews; this mismatch does not establish deliberate substitution or removal. See TI01/TI02/TI07 in [OBSERVATIONS.json](OBSERVATIONS.json).
++
++## Qualification to our starting timing premise
++
++Our initial protocol framed staff-report note259 as differently attributed Halleck–Herndon contact times. The surrounding [staff-report text, PDF/printed p31](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=31), requires a more specific distinction: the paragraph bearing note259 concerns notification that United was missing a plane and extension of American's ground stop nationwide. The same page separately describes a **9:16A.M.** Herndon conversation under note264.
++
++[Note259, PDF p94](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94), retains Marquis's approximately **9:00A.M.**, Arpey's **9:05–9:10**, and later AAL information placing a Halleck call after **9:10**. It says evidence relating to this call had not been found in the Commission's reviewed Herndon tapes/transcripts. Note264 separately identifies a recording/transcript source. Read each note with its body paragraph; do not expand the missing-record statement to every call or silently merge the two notes.
++
++The [Arpey MFR, pp2–3](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00005.pdf#page=2), says all subsequent times are Central Time. On p3, **8:05–8:10** concerns a report of lost communications/transponder contact with a **United** flight, followed by extension of American's ground stop. It does not explicitly describe Arpey making or hearing the Halleck–Herndon call. With a conventional one-hour CT-to-ET offset, this interval would be9:05–9:10. That conditional arithmetic does not calibrate a historical clock or identify the call.
++
++This qualifies our premise, rather than correcting a historical record. The initial wording is retained in [SCOPE.md](SCOPE.md); differently scoped accounts remain in TI03. Actual AAL answers of April26 and July7,2004, the SOC chronology and staff citation papers are needed to test how the narrative was assembled. The April26 SOC MFR is not assumed to be the separately cited April26 answer to Commission questions.
++
++## Differing recollections of United's missing flight
++
++The held [Halleck/Houck interview p3](https://catalog.archives.gov/medialive/97/6095/2609597/content/arcmedia/9-11/MFR/t-0148-911MFR-00011.pdf#page=3) describes Halleck learning United was missing a plane, contacting his United counterpart and then calling Herndon. It explicitly acknowledges difficulty recalling times and sequence; p4 reiterates that simultaneous events made sequencing hard.
++
++The [April26 SOC memorandum p3](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00017.pdf#page=3) places a Herndon call just after the second tower impact, while explaining that SOC personnel thought the second aircraft might be AA77 because they did not yet know United was missing a plane. That memorandum also says Halleck did not know exactly when AA77 was realized missing and records substantial confusion.
++
++This is a knowledge-order tension, not a verified contradiction about one uniquely identified call. Multiple contacts, different knowledge among personnel, imperfect recall and memorandum scope remain untested alternatives. Neither account is controlling. Original call/SOC logs and the later AAL answers are discriminating records. See TI04.
++
++## Warning, information-control and display leads
++
++On [SOC p2](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00017.pdf#page=2), personnel said they had not received a Herndon request to warn aircraft of cockpit intrusions and believed they would have complied if received. On p3 they reported no management decision to give such a warning, attributing the situation to confusion, conflicting reports and focus on safe landings. Nonreceipt and no management decision are distinct claims; neither establishes intentional withholding.
++
++Page2 attributes **“contain and control information”** to Marquis and reports restricted internal access to the Flight11 manifest. These identify specific contemporaneous instruction, policy, distribution and access records to seek. The MFR alone does not establish the instruction's exact scope, legitimacy, effect or motive. Preserve timely notifications and ordinary operational controls as well as evidence of omissions. See TI05.
++
++On pp1/3 the MFR distinguishes AAL's ASD from FAA's TSD. It records Commission staff telling Halleck that a primary track associated with AA11 continued south after impact, and SOC personnel saying an AA77 ASD track continued west after Pentagon impact. These are reported display observations, not raw radar or independent post-impact aircraft positions. Actual feeds, track identifiers, coasting/extrapolation definitions and clocks remain missing. Technical interpretation/testing belongs to the assigned technical investigation; none was performed here. See TI06.
++
++## Verification and remaining work
++
++[SOURCE-PINS.json](SOURCE-PINS.json) supplies URLs, access dates, hashes, page counts and source roles. [RESULTS.json](RESULTS.json) preserves exact byte/image/text comparisons; [compare_held_pdfs.py](compare_held_pdfs.py) reproduces the bounded comparison with pypdf and locally held source PDFs. It does not execute embedded content, normalize testimony, infer intent or authenticate prior history. All three downloads remain separate and unchanged. Unobserved Content-Type headers stay null.
++
++[OPEN-TODOS.json](OPEN-TODOS.json) retains the missing November interview, source answers, contemporaneous call/notification records and technical inputs. All18 original five-track input/test criteria remain unfinished. Two new exact FAA cancellation searches found no correction, signed decision or closure record; unchanged failed routes were not repeated.
++
++[CHECKLIST.json](CHECKLIST.json) accounts for the user requirements. [TEXT-CHANGES.diff](TEXT-CHANGES.diff) records additions against absent files at this unique new path, separately from PDF image reading. Earlier reports and original evidence are unchanged. Raw PDFs, scans, OCR/extracted text, contacts, private correspondence and strategy are excluded. Actual commit/ref/file verification is separately receipted; publication does not validate the historical claims.
+--- /dev/null
++++ investigation/broader-evidence/telephone-source-interview-controls-2026-10-29/RESULTS.json
+@@ -0,0 +1,274 @@
++{
++  "method": "pypdf page image decoded samples and exact extracted UTF-8; no OCR or source alteration",
++  "source_descriptions": [
++    {
++      "filename": "Arpey-2609591.pdf",
++      "bytes": 587565,
++      "sha256": "c9430e524896601c042057ac88152a115fb2014c86664bb4f7ef36bce11adf5a",
++      "page_count": 4,
++      "embedded_attachment_count": 0,
++      "pages": [
++        {
++          "page": 1,
++          "media_box": [
++            "0",
++            "0",
++            "612",
++            "786"
++          ],
++          "extracted_characters": 1559,
++          "extracted_utf8_sha256": "34e60a9dabd14c99f8896b79c4f4310cbd6db7dcb18ad523c9d7e4e1b7a4061b",
++          "images": [
++            {
++              "mode": "1",
++              "size": [
++                3405,
++                4372
++              ],
++              "decoded_samples_sha256": "6a638fb1b78d745e3a541ee8b2357e6ee9fc929b9afc6d5815f2d043d7a0f199"
++            }
++          ]
++        },
++        {
++          "page": 2,
++          "media_box": [
++            "0",
++            "0",
++            "612",
++            "785"
++          ],
++          "extracted_characters": 2280,
++          "extracted_utf8_sha256": "d6fbe38d11e640fa4c29003090be74e31281b48e0de74a0846b804219a442428",
++          "images": [
++            {
++              "mode": "1",
++              "size": [
++                3405,
++                4365
++              ],
++              "decoded_samples_sha256": "64304ef6243fca188e368b2a1d874d19931c2547599925758d1f41a1160c060c"
++            }
++          ]
++        },
++        {
++          "page": 3,
++          "media_box": [
++            "0",
++            "0",
++            "613",
++            "786"
++          ],
++          "extracted_characters": 2744,
++          "extracted_utf8_sha256": "a074c6f95ec0a7d269619353b3a7832b1bbe6e08f3d080f87e32113eb6bcf2d5",
++          "images": [
++            {
++              "mode": "1",
++              "size": [
++                3408,
++                4369
++              ],
++              "decoded_samples_sha256": "4320c4ce1436cc689ddf6f430b9862ce84973c83c3c72d8ba87f5ce7ba4e1540"
++            }
++          ]
++        },
++        {
++          "page": 4,
++          "media_box": [
++            "0",
++            "0",
++            "613",
++            "785"
++          ],
++          "extracted_characters": 860,
++          "extracted_utf8_sha256": "125eee442688fcc107bdac78727980ccf8b8c0e9199a96806a3e16d20b4bb124",
++          "images": [
++            {
++              "mode": "1",
++              "size": [
++                3406,
++                4364
++              ],
++              "decoded_samples_sha256": "b353b1ae444fc73d163f0e9ba78560ac368657461f7ec52c7568f040803a6dd4"
++            }
++          ]
++        }
++      ]
++    },
++    {
++      "filename": "Marquis-2609600.pdf",
++      "bytes": 158153,
++      "sha256": "c19d9e7ae4176fb411def7259f7657d2c80bf1bdf1a803c8f4fb1b7af83bab5f",
++      "page_count": 3,
++      "embedded_attachment_count": 0,
++      "pages": [
++        {
++          "page": 1,
++          "media_box": [
++            "0.0",
++            "0.0",
++            "614.88",
++            "794.4"
++          ],
++          "extracted_characters": 1897,
++          "extracted_utf8_sha256": "a5c27e15ecf5ca85618d0a63f096baee78f9a588586f5f1e177a862f34b51ef9",
++          "images": [
++            {
++              "mode": "1",
++              "size": [
++                2562,
++                3310
++              ],
++              "decoded_samples_sha256": "0e5481586c21184341b9d0e88405397315ffaee21a00c164d8b2a7a1f5b1e781"
++            }
++          ]
++        },
++        {
++          "page": 2,
++          "media_box": [
++            "0.0",
++            "0.0",
++            "614.88",
++            "794.4"
++          ],
++          "extracted_characters": 2650,
++          "extracted_utf8_sha256": "0bb902f66543fce06aa463765f6905ba8c7e3f53e03d9a1e5950f9f3f08a5a8d",
++          "images": [
++            {
++              "mode": "1",
++              "size": [
++                2562,
++                3310
++              ],
++              "decoded_samples_sha256": "b3c4034fa39b147ca069fed4f53bfaf58a329bf36f4c7eef3181d3be7ea6887f"
++            }
++          ]
++        },
++        {
++          "page": 3,
++          "media_box": [
++            "0.0",
++            "0.0",
++            "613.44",
++            "793.2"
++          ],
++          "extracted_characters": 2358,
++          "extracted_utf8_sha256": "be489316933dfd4c9d9fda90ff0f847a269e6db652c2562f274a4e5082d04af8",
++          "images": [
++            {
++              "mode": "1",
++              "size": [
++                2556,
++                3305
++              ],
++              "decoded_samples_sha256": "95680764a616dd8e5fe7e03a48ca903cbca1350530b924741f7735cd342073ba"
++            }
++          ]
++        }
++      ]
++    },
++    {
++      "filename": "SOC-2609603.pdf",
++      "bytes": 532100,
++      "sha256": "1c331f5a4aa23f7299531ed295b04ee172d9f64bfc0df74b3a8aa8c8966a09f6",
++      "page_count": 3,
++      "embedded_attachment_count": 0,
++      "pages": [
++        {
++          "page": 1,
++          "media_box": [
++            "0",
++            "0",
++            "612",
++            "786"
++          ],
++          "extracted_characters": 1638,
++          "extracted_utf8_sha256": "4b3e55185caa09fdb3aac4d2d871df6cf616c4bce7871a2ec4761555d10822fc",
++          "images": [
++            {
++              "mode": "1",
++              "size": [
++                3405,
++                4371
++              ],
++              "decoded_samples_sha256": "21614916e096b3463b6727b880c5f85562fc585281b3f9fb16f7a42e35242db5"
++            }
++          ]
++        },
++        {
++          "page": 2,
++          "media_box": [
++            "0",
++            "0",
++            "612",
++            "786"
++          ],
++          "extracted_characters": 2252,
++          "extracted_utf8_sha256": "b2f5519619d0731f012711d1706270dbc8d93fe8aa0b33581c2997788816e115",
++          "images": [
++            {
++              "mode": "1",
++              "size": [
++                3405,
++                4370
++              ],
++              "decoded_samples_sha256": "1cc7da03d7919c679529f23e40e56491279de501fc924ac77a43333b9c829d50"
++            }
++          ]
++        },
++        {
++          "page": 3,
++          "media_box": [
++            "0",
++            "0",
++            "613",
++            "786"
++          ],
++          "extracted_characters": 1995,
++          "extracted_utf8_sha256": "7699a230bd968e33f67d93d1857869d9c6690b55c5b718cc0c0003197674e3e6",
++          "images": [
++            {
++              "mode": "1",
++              "size": [
++                3407,
++                4369
++              ],
++              "decoded_samples_sha256": "ab90577453e497106ec68eb764079c738bb4b11bffc7a5ffef1f541ecfd034ab"
++            }
++          ]
++        }
++      ]
++    }
++  ],
++  "pair_comparison": {
++    "pdf_bytes_identical": false,
++    "page_counts_equal": true,
++    "page_pairs": [
++      {
++        "page": 1,
++        "exact_extracted_text_equal": false,
++        "decoded_image_sample_sets_equal": false,
++        "media_boxes_equal": false
++      },
++      {
++        "page": 2,
++        "exact_extracted_text_equal": false,
++        "decoded_image_sample_sets_equal": false,
++        "media_boxes_equal": false
++      },
++      {
++        "page": 3,
++        "exact_extracted_text_equal": false,
++        "decoded_image_sample_sets_equal": false,
++        "media_boxes_equal": false
++      }
++    ]
++  },
++  "not_tested": [
++    "PDF production history",
++    "provenance before current official downloads",
++    "verbatim interview audio",
++    "native carrier/operator or FAA clocks",
++    "full page rendering equivalence by pixel subtraction",
++    "completeness of November 19 paper interview"
++  ]
++}
+--- /dev/null
++++ investigation/broader-evidence/telephone-source-interview-controls-2026-10-29/SCOPE.md
+@@ -0,0 +1,33 @@
++# Preserved protocol and extension
++
++Initial framing is retained verbatim below. TI03 qualifies its event/call premise after reading staff-report p31; historical accounts are not rewritten.
++
++## Initial protocol
++
++# Original archival interview controls for telephone attribution and timing
++
++TEL02/TEL04, AUD016-A1 / TC05-B105 / TC06-B110. FAA cancellation/successor exact searches returned no relevant underlying record and are retained separately, without another public metadata finding. Continue a concrete official-archive source route rather than repeat missing-input summaries.
++
++The held staff report T01 p94/note259 preserves differently attributed Halleck–Herndon contact times from Marquis, Arpey and later AA information. The original NARA interview copies for Marquis and Arpey were not found in the inspected source/acquisition records. The official MFR index supplies exact candidate IDs2609600 and2609591, advertised nine/four pages. These are candidate interview sources, not native carrier logs, proof of unique-call identity or independent clock calibration.
++
++Acquire only the actual catalog-exposed public PDFs if available: two original archival items, maximum thirteen pages total for complete source-context reading. Obtain download links from the actual public catalog, not guessed sequential filenames. The web reader cannot access these catalog pages; use the ordinary public catalog interface, no hidden API, authentication or download gate bypass. No outreach, fee or new request. Preserve URL/catalog relationship, UTC/client date, SHA-256/bytes/pages and exact reading scope. Do not reconstruct redactions or publish raw witness/contact/account data.
++
++Question: what did the interviewees actually say about the contact, who made/heard it, available recordings/logs and time/recollection limits? Compare with the frozen staff-report citation and held Halleck MFR. Identify explicit source/attachment/custody references that can locate the operational original. Preserve source dependence and counterevidence; do not force accounts into one call, choose a preferred time, infer deliberate misstatement or treat a later MFR as a contemporaneous2001carrier event.
++
++If no public body is available, preserve a bounded access/locator TODO and stop that route, with no duplicate public finding. A real new source-level observation may receive an additive reviewed report/checklist/source pins/TODOs/diff and verified AveLyra publication. All original five tracks and eighteen criteria remain unchanged and unfinished; no case outcome, native carrier test or technical-owner recorder/materials work is duplicated or claimed. No mailbox, private case correspondence, deletion, source overwrite, private push, merge or history rewrite.
++
++Separate ready artifact question, not executed by this protocol: the held court ZIP inventory contains uninspected AA 11 Calls.swf, UA 93 Calls.swf, Main.swf and MainNew.swf. Comparing those exact source variants against already studied members could audit presentation version/caller-field provenance, but cannot replace native carrier/operator/recipient joins. Preserve it for a distinct prospective test rather than silently broadening this interview acquisition.
++
++## Prospective extension
++
++# Prospective counterpart check
++
++The actual public catalog for NAID 2609600 describes a November 19, 2003 record and nine paper pages, while its exposed PDF download contains an April 26, 2004 SOC conference-call memorandum in three pages. The first two acquisitions total seven pages, below the original thirteen-page ceiling. Preserve the catalog and downloaded-body associations separately; do not rename the held download to conceal this distinction.
++
++Before any further acquisition, permit inspection of the concrete counterpart NAID 2609603, which the official MFR index describes as an April 26, 2004 SOC interview. Permit at most one additional catalog-exposed PDF of up to nine pages, for at most sixteen PDF pages total. Do not guess a filename. If the counterpart exposes the same URL already held, preserve that new association without repeating the network download. Any differing body is a separate source and requires its own hash and complete page reading. The November 19 nine-page interview remains missing unless its actual body is recovered and inspected. Catalog/body discrepancies remain unresolved, not evidence of replacement, intent, or archive deletion.
++
++All prior privacy, source preservation, ownership, publication and acceptance restrictions remain in force.
++
++## Completed scope
++
++Three acquired PDFs, ten pages, all page images read. Held T01 pp31/94 and T02 pp3/4 reinspected. No native carrier logs, interview audio, ASD/TSD feed, new FAA disposition record or clock test. Search misses remain local rather than being republished as suspicious findings.
+--- /dev/null
++++ investigation/broader-evidence/telephone-source-interview-controls-2026-10-29/SOURCE-PINS.json
+@@ -0,0 +1,162 @@
++{
++  "client_date": "2026-10-29",
++  "new_pdf_sources": [
++    {
++      "id": "I01",
++      "catalog_url": "https://catalog.archives.gov/id/2609591",
++      "download_url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00005.pdf",
++      "access_utc": "2026-10-30T02:05:11.719581+00:00",
++      "access_America_New_York": "2026-10-29T22:05:11.719581-04:00",
++      "http_status": 200,
++      "content_type_observed": null,
++      "sha256": "c9430e524896601c042057ac88152a115fb2014c86664bb4f7ef36bce11adf5a",
++      "bytes": 587565,
++      "pdf_pages": 4,
++      "source_role": "Official archival interview memorandum copy; not native2001carrier/operator logs or verbatiminterview audio",
++      "raw_source_published": false
++    },
++    {
++      "id": "I02",
++      "catalog_url": "https://catalog.archives.gov/id/2609600",
++      "download_url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/2609600_AASOC.pdf",
++      "access_utc": "2026-10-30T02:05:12.336679+00:00",
++      "access_America_New_York": "2026-10-29T22:05:12.336679-04:00",
++      "http_status": 200,
++      "content_type_observed": "application/pdf",
++      "sha256": "c19d9e7ae4176fb411def7259f7657d2c80bf1bdf1a803c8f4fb1b7af83bab5f",
++      "bytes": 158153,
++      "pdf_pages": 3,
++      "source_role": "Official archival interview memorandum copy; not native2001carrier/operator logs or verbatiminterview audio",
++      "raw_source_published": false
++    },
++    {
++      "id": "I03",
++      "catalog_url": "https://catalog.archives.gov/id/2609603",
++      "download_url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00017.pdf",
++      "access_utc": "2026-10-30T02:13:50.786787+00:00",
++      "access_America_New_York": "2026-10-29T22:13:50.786787-04:00",
++      "http_status": 200,
++      "content_type_observed": null,
++      "sha256": "1c331f5a4aa23f7299531ed295b04ee172d9f64bfc0df74b3a8aa8c8966a09f6",
++      "bytes": 532100,
++      "pdf_pages": 3,
++      "source_role": "Official archival MFR copy; not contemporaneous carrier, dispatcher or FAA event logs",
++      "raw_source_published": false
++    }
++  ],
++  "held_cross_references": [
++    {
++      "id": "T01",
++      "url": "https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf",
++      "catalog_url": "https://www.archives.gov/research/9-11",
++      "access_utc": "2026-10-28T00:16:15.117345+00:00",
++      "sha256": "9671b7afe9a45928dcbe053e567b7f830876bc31e32a1d221b39fa59493d5bbb",
++      "bytes": 6760035,
++      "pdf_pages": 121,
++      "new_acquisition": false,
++      "reading_this_unit": [
++        31,
++        94
++      ],
++      "raw_source_published": false
++    },
++    {
++      "id": "T02",
++      "url": "https://catalog.archives.gov/medialive/97/6095/2609597/content/arcmedia/9-11/MFR/t-0148-911MFR-00011.pdf",
++      "catalog_url": "https://catalog.archives.gov/id/2609597",
++      "access_utc": "2026-10-28T00:16:17.229575+00:00",
++      "sha256": "8e32a96701a04a3d9f4e979158bb5ecd753111d1d9f50f7b7a44f003d3ca2e1b",
++      "bytes": 576593,
++      "pdf_pages": 4,
++      "new_acquisition": false,
++      "reading_this_unit": [
++        3,
++        4
++      ],
++      "raw_source_published": false
++    }
++  ],
++  "catalog_observations": [
++    {
++      "id": "C2609600",
++      "access_utc": "2026-10-30 02:13:45 UTC",
++      "capture_method": "Ordinary rendered public catalog DOM; selected title/date/extent/viewer/download fields; no hidden API",
++      "observation": {
++        "dateDescription": "This item was produced or created on November 19, 2003.",
++        "displayedFileSize": "Portable Document File (PDF), 1 KB",
++        "extent": "\t9 pages\t",
++        "links": [
++          {
++            "label": "Download the PDF",
++            "url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/2609600_AASOC.pdf"
++          },
++          {
++            "label": "Download",
++            "url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/2609600_AASOC.pdf"
++          },
++          {
++            "label": "2609600_AASOC.pdf",
++            "url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/2609600_AASOC.pdf"
++          }
++        ],
++        "produced": "Produced: November 19, 2003",
++        "title": "Memorandum for the Record (MFR) of the Interview of Craig Marquis, Craig Parfitt, Mike Mulcahy and Joe Bertapelle of American Airlines Conducted by Team 7; 8",
++        "url": "https://catalog.archives.gov/id/2609600",
++        "viewer": "PDF Page 1 of 3"
++      },
++      "selected_observation_json_sha256": "2337992735f2fa405b1d4ad0ab5768cd25d3ae00677265ccae084e685083b488",
++      "hash_scope": "Canonical selected fields, not full HTTP response, PDF or historical catalog version"
++    },
++    {
++      "id": "C2609603",
++      "access_utc": "2026-10-30 02:13:45 UTC",
++      "capture_method": "Ordinary rendered public catalog DOM; selected title/date/extent/viewer/download fields; no hidden API",
++      "observation": {
++        "dateDescription": "This item was produced or created on April 26, 2004.",
++        "displayedFileSize": "Portable Document File (PDF),",
++        "extents": [
++          "\t3 pages\t"
++        ],
++        "links": [
++          {
++            "label": "Download the PDF",
++            "url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00017.pdf"
++          },
++          {
++            "label": "Download",
++            "url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00017.pdf"
++          },
++          {
++            "label": "Download the PDF",
++            "url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00017.pdf"
++          }
++        ],
++        "produced": "Produced: April 26, 2004",
++        "title": "Memorandum for the Record (MFR) of the Interview of the Systems Operation Center (SOC), Craig Parfitt, Craig Marquis, Bill Halleck and Ray Howland of American Airlines Conducted by Team 7; 8",
++        "url": "https://catalog.archives.gov/id/2609603",
++        "viewer": "PDF Page 1 of 3"
++      },
++      "selected_observation_json_sha256": "54e27ae13fb4d1f0f6563380421042a5379cfc4a9afa4af509d50a62c7b5a8f9",
++      "hash_scope": "Canonical selected fields, not full HTTP response, PDF or historical catalog version"
++    }
++  ],
++  "official_mfr_index": {
++    "url": "https://www.archives.gov/research/9-11/commission-memoranda.html",
++    "observed_entries": {
++      "2609591": {
++        "date": "January 8, 2004",
++        "pages": 4
++      },
++      "2609600": {
++        "date": "November 19, 2003",
++        "pages": 9
++      },
++      "2609603": {
++        "date": "April 26, 2004",
++        "pages": 3
++      }
++    },
++    "sha256": null,
++    "limit": "Web-reader index observation, not a saved HTTP response entity"
++  }
++}
+--- /dev/null
++++ investigation/broader-evidence/telephone-source-interview-controls-2026-10-29/compare_held_pdfs.py
+@@ -0,0 +1,35 @@
++"""Compare byte identity and decoded page images without changing source PDFs.
++
++Usage: bundled-python compare_held_pdfs.py SOURCES_DIRECTORY
++This compares image samples, not histories, intent, native interview recordings,
++or the completeness of the original paper file. Text equality is reported only
++as exact extracted-string equality; no normalization selects a preferred value.
++"""
++import hashlib, json, pathlib, sys
++from pypdf import PdfReader
++
++def digest(data): return hashlib.sha256(data).hexdigest()
++
++def describe(path):
++    body=path.read_bytes()
++    reader=PdfReader(path)
++    pages=[]
++    for number,page in enumerate(reader.pages,1):
++        images=[]
++        for item in page.images:
++            im=item.image
++            images.append({'mode':im.mode,'size':list(im.size),'decoded_samples_sha256':digest(im.tobytes())})
++        text=page.extract_text() or ''
++        pages.append({'page':number,'media_box':[str(x) for x in page.mediabox],'extracted_characters':len(text),'extracted_utf8_sha256':digest(text.encode()),'images':images})
++    return {'filename':path.name,'bytes':len(body),'sha256':digest(body),'page_count':len(pages),'embedded_attachment_count':len(reader.attachments),'pages':pages}
++
++def compare(root):
++    a=describe(root/'Marquis-2609600.pdf')
++    b=describe(root/'SOC-2609603.pdf')
++    arpey=describe(root/'Arpey-2609591.pdf')
++    pairs=[]
++    for x,y in zip(a['pages'],b['pages']):
++        pairs.append({'page':x['page'],'exact_extracted_text_equal':x['extracted_utf8_sha256']==y['extracted_utf8_sha256'],'decoded_image_sample_sets_equal':x['images']==y['images'],'media_boxes_equal':x['media_box']==y['media_box']})
++    return {'method':'pypdf page image decoded samples and exact extracted UTF-8; no OCR or source alteration','source_descriptions':[arpey,a,b],'pair_comparison':{'pdf_bytes_identical':a['sha256']==b['sha256'],'page_counts_equal':a['page_count']==b['page_count'],'page_pairs':pairs},'not_tested':['PDF production history','provenance before current official downloads','verbatim interview audio','native carrier/operator or FAA clocks','full page rendering equivalence by pixel subtraction','completeness of November 19 paper interview']}
++
++if __name__=='__main__': print(json.dumps(compare(pathlib.Path(sys.argv[1])),indent=2))
