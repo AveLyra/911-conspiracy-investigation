@@ -46,6 +46,7 @@ could change each assessment.
 
 ### Where to start
 
+- [Investigation catalogue: source findings, leads and open tests](investigation/catalogue/README.md)
 - [Crucial findings and their limits](CRUCIAL-FINDINGS.md)
 - [DEP preservation anomalies and unresolved recovery outcomes](investigation/wtc7/municipal-preservation-findings-2026-10-15/README.md)
 - [Current scope and questions](investigation/wtc7/CHARTER.md)
