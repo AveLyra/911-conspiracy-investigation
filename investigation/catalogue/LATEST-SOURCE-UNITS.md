@@ -1,5 +1,5 @@
 <!-- BEGIN OCT30 CURRENT NOTICE -->
-**Current edition:** 38 distinct later report bodies from 37 units, including the three dated additions below. Earlier report states remain historical source observations. The new catalog association narrows a previously open link; it does not supply an executed transfer or case-specific outcome.
+**Current edition:** 39 distinct later report bodies from 38 units, including the three dated additions below. Earlier report states remain historical source observations. The new catalog association narrows a previously open link; it does not supply an executed transfer or case-specific outcome.
 <!-- END OCT30 CURRENT NOTICE -->
 
 # Later source-unit findings and qualifications
@@ -372,6 +372,32 @@ The owning same-decoder test reports fitted-overlap correlations of 0.9578656805
 **Citations:** [exact follow-up report](https://github.com/AveLyra/911-conspiracy-investigation/blob/6dffea2a1a83972f3fad87c2e6ba4d39473099f8/investigation/broader-evidence/telephone-signal-alignment-2026-10-30/README.md); [all results and windows](CITATIONS.md#reference-e2bfdf90e8a545fa); [source pins](CITATIONS.md#reference-56539905e79e8c21); [original TODOs](CITATIONS.md#reference-11073d82d77922b9); [verified follow-up receipt](CITATIONS.md#reference-214169041a47fcfe); [method-publication receipt](CITATIONS.md#reference-aa8ab82910989c43); [public report](https://github.com/AveLyra/911-conspiracy-investigation/blob/6dffea2a1a83972f3fad87c2e6ba4d39473099f8/investigation/broader-evidence/telephone-signal-alignment-2026-10-30/README.md).
 
 The owning report retains the same-decoder transformation, fixed search/window controls, software versions and reproduction limits. This integration checked actual publication identities and file hashes; it did not rerun the audio computation or original source/custody tests.
+
+<!-- BEGIN UPDATE051 ADDITION -->
+<a id="unit-faa-retention-directive-2026-10-30-7e9896e5"></a>
+## Received update 051 — FAA preservation-instruction counterpart acquired
+
+The owning study acquired and completely read the one-page NARA-released AEA2579 email printout/scan. It supplies a counterpart of the September 14, 2001 preservation instruction previously known here through the DOT OIG quotation. The recorded PDF is 24,441 bytes with SHA-256 ace9aa35cb266decd2344d48c06bd0d2625cfc5ce2bded8dd2bafdca67898329; that identifies acquired bytes, not a native message or delivery.
+
+**Original expressions / scope:** Keep page1 extraction line2 as 09/14/2001 01:00 PM, with header zone unverified. Lines12–15 print 110000 UTC to 120400 UTC; September10,2001 2000 - 2400 local; and September11,2001 0000 - 2400 local. Preserve these expressions without reconstructing a calibrated historical clock interval.
+
+**Context / contrary evidence:** The broad retention wording and OIG-reported differing interpretations remain side by side. Email and OIG quotation may reflect the same instruction; they are not independent witnesses to receipt, destruction or intent. The current comparison reused held OIG page8/22 excerpts, not a fresh whole-report audit. Native authentication, actual distribution/receipt/compliance, withdrawal/amendment and applicability to 2003–2006 records remain unverified. A later retention schedule does not itself prove withdrawal. Ordinary preservation and disputed case-specific application remain alternatives.
+
+**Search and reading limit:** The source-owner search read selected first-page titles from two queries showing 117 corrected and 219 administrative hits. The ten-title cap was exceeded in the corrected views (20 and 16 complete titles plus one identifier); that is a documented deviation, not a passing cap. No full census, historical-absence or suppression conclusion follows.
+
+**Open TODO:** Native instruction/version and distribution/acknowledgments; withdrawal/amendment/interpretation records; actual record-to-hold/schedule transfer/disposition crosswalk; underlying OIG interview/application evidence. Separately retain the corrected May2003 QFR and delivery receipt, signed consideration/action/no-action, and distinct recommendation implementation/closure. All five tracks/eighteen substantive criteria remain unfinished.
+
+**Publication state:** Local source commit 45ee3925dc1edd3137cf85182570bfc8440afcac contains nine verified derivative files/49,148 bytes. Publication was not verified; the owning handoff reports NOT PUSHED and no new PR. No new GitHub report-file URL is invented. Its reported SSH issue is an owner-side coordination state, not evidence that the existing AveLyra identity needs replacement or that source records are absent.
+
+**Citations:** [held local report](https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md); [source/page/line pins](CITATIONS.md#reference-af4842842d02e22d); [source-owner verification](CITATIONS.md#reference-bce0626656ad3511); [actual reading scope](CITATIONS.md#reference-0775e16d019cf834); [original open records](CITATIONS.md#reference-36f62d9b3a8f9e6b); [local commit/body verification](CITATIONS.md#reference-cecc20cafb03b363); [received handoff](CITATIONS.md#reference-bc3251bf8b26dbf6).
+[NARA item 7596109](https://catalog.archives.gov/id/7596109); [released email PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AEA-2579-EMAIL--REF-RECORD-RETENTION-REGARDING-09-11-EVENTS.pdf); [DOT OIG CC-2004-003, page8](https://www.oig.dot.gov/sites/default/files/cc2004003.pdf#page=8) and [page22](https://www.oig.dot.gov/sites/default/files/cc2004003.pdf#page=22).
+
+This integration checked the nine committed derivative bodies and their preserved review records. It did not reacquire or independently re-read the PDF, authenticate native email, settle legal applicability, or perform a physical/conspiracy test. Raw scan/image/full extraction/DOM and recipient/contact material remain with the owning source study, outside this derived snapshot.
+
+<a id="publication-faa051"></a>
+## Update 051 publication verified after handoff
+
+Actual public publication of the nine-file FAA derivative is now verified as AveLyra at commit 45ee3925dc1edd3137cf85182570bfc8440afcac. The earlier NOT PUSHED/local-only wording is preserved as its handoff-time status. Publication closes only that coordination TODO; native authenticity, delivery, compliance, withdrawal and 2003–2006 applicability remain open. [Public report](https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md); [actual publication receipt](CITATIONS.md#reference-9db1b8a92e076eca). The nine remote file blobs match the held derivative; raw scan, full extraction, recipients/contacts, private correspondence and lawsuit material were excluded.
 
 
 ## Publication status reconciliation — October 30

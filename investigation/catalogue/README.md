@@ -1,14 +1,16 @@
 # Investigation catalogue — public research edition
 
-October 30, 2026. This edition publishes the maintained catalogue through received update 050, including all fifteen later source findings and the steel minute-approval qualification. It is a research publication derived from a broader private working catalogue; it does not establish a collapse cause, conspiracy conclusion or completion percentage.
+October 30, 2026. This edition publishes the maintained catalogue through received update 051, including all fifteen later source findings and the steel minute-approval qualification. It is a research publication derived from a broader private working catalogue; it does not establish a collapse cause, conspiracy conclusion or completion percentage.
 
-The overlapping populations are **175 extended-master entries, 370 source findings, 49 consolidated leads, 13 recent breadcrumbs, 38 later report bodies/37 units, 247 documentary claim/text units and eleven recovered earlier contexts**. Historical research items retain their original numbering. Entries sharing a source are not independent evidence and must not be added as votes or probabilities.
+The overlapping populations are **175 extended-master entries, 370 source findings, 49 consolidated leads, 13 recent breadcrumbs, 39 later report bodies/38 units, 247 documentary claim/text units and eleven recovered earlier contexts**. Historical research items retain their original numbering. Entries sharing a source are not independent evidence and must not be added as votes or probabilities.
 
 The fifteen finding additions are FA044, PL022–PL029 and NR068–NR073. They retain conditional event-order limits, Spanish identification/transaction qualifications, CIA accountability/disclosure and denominator issues, and source/citation corrections. The steel approval is distinct from exact approved-text identity, agreement execution, transport, receipt, cutting and specimen custody. FAA schedule and catalog associations remain distinct from executed transfers and case-specific outcomes.
 
 The telephone byte comparison retains the re-encoding alternative, all count/seek mismatches and unfinished semantic/runtime/source tests. The method qualification is now public: **“independent decoder” means previous standalone FFmpeg output**; independent decoder validation was not performed. [Published qualification](https://github.com/AveLyra/911-conspiracy-investigation/blob/b30daf0f664b8688b18dea4fa08587a12dbefa97/investigation/broader-evidence/telephone-sound-controls-2026-10-30/method-qualification-2026-10-30/METHOD-QUALIFICATION.md).
 
 The subsequent same-decoder comparison reports fitted-overlap correlations near 0.958 and 0.916, while retaining an unexamined Ong suffix of nominally 6.475 seconds in the derived view. Related signal structure qualifies what byte differences alone imply; it does not establish identical words, full coverage, actual playback, speakers or historical clocks. [Report and all unmatched-region limits](https://github.com/AveLyra/911-conspiracy-investigation/blob/6dffea2a1a83972f3fad87c2e6ba4d39473099f8/investigation/broader-evidence/telephone-signal-alignment-2026-10-30/README.md).
+
+The new FAA source unit supplies a released counterpart of the September 14, 2001 preservation instruction previously known here through an OIG quotation. The printed clock expressions, OIG-reported differing interpretations, search-cap deviation and unverified native/delivery/compliance/withdrawal and later-applicability questions remain explicit. [Source study](https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md).
 
 ## Reader and source routes
 
@@ -22,7 +24,7 @@ The subsequent same-decoder comparison reports fitted-overlap correlations near 
 
 Original studies control their own methods and acceptance. Supplied URLs are citation leads unless an owning report records inspection. Normalized public data preserve research content while excluding private file locators and administration. Unpublished originals remain explicit gaps; a pointer is not new authentication. This edition excludes lawsuit strategy, private correspondence, mailbox/attachment inventories, chat transcripts, credentials and local identifying paths. The private source catalogue remains separately preserved.
 
-Run `python3 investigation/catalogue/tools/verify.py` from this repository. Structural/source-snapshot verification does not independently validate historical events or scientific conclusions. Later source deliveries after update 050 require their own explicit reconciliation.
+Run `python3 investigation/catalogue/tools/verify.py` from this repository. Structural/source-snapshot verification does not independently validate historical events or scientific conclusions. Later source deliveries after update 051 require their own explicit reconciliation.
 
 ## Readable research guide
 
