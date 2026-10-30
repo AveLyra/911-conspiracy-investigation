@@ -1,0 +1,740 @@
+diff --git a/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/CHECKLIST.md b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/CHECKLIST.md
+--- /dev/null
++++ b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/CHECKLIST.md
+@@ -0,0 +1,16 @@
++# Request, evidence and preservation checklist
++
++- [x] Existing task IDs, full five-track goal and ownership retained.
++- [x] Three actual official metadata responses and four exact reference-photo entities preserved with hashes.
++- [x] All four reference images viewed; actual negative/TIFF/field-material acquisition not claimed.
++- [x] Visible shared scene content, border/label differences, byte/pixel differences and uncertain writing preserved.
++- [x] Numeric method and limits frozen before results, with cross-column and identical-source controls and crop sensitivity.
++- [x] Fitted similarity distinguished from validated exposure, negative, thermal or custody identity.
++- [x] Different metadata date fields, catalogue/photo IDs and earlier report conflicts retained separately.
++- [x] Sources, exact JSON-pointer/byte locators, code, results, unchanged predecessors and text additions recorded.
++- [x] Earlier failed modern access retained beside successful legacy route; no suppression inference or source replacement.
++- [ ] Original-negative/exposure, N1200, transport/object/sample and calibration joins.
++- [ ] Remaining FAA, telephone, recorder, materials and steel native-input/testing acceptance.
++- [ ] Separate public-payload review/approval and publication; pending earlier 24-file question is not expanded.
++
++Only original research notes, safe source fields and code are in this candidate; raw photographs/catalogue bodies, private correspondence/case files, personal/contact/signature data and credentials are excluded. No public action or Overview message is claimed.
+diff --git a/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/CLAIM-LOCATORS.json b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/CLAIM-LOCATORS.json
+--- /dev/null
++++ b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/CLAIM-LOCATORS.json
+@@ -0,0 +1,46 @@
++[
++  {
++    "source": "P31",
++    "metadata_file": "PARENT-SEARCH-02-BODY-LOCAL.json",
++    "json_pointer": "/results/30",
++    "pk_byte_occurrences_zero_based": [
++      51058,
++      51157,
++      52255
++    ],
++    "reading": "Full 640-pixel-high reference image viewed; border markings partly legible; no hidden writing reconstructed."
++  },
++  {
++    "source": "P29",
++    "metadata_file": "PARENT-SEARCH-02-BODY-LOCAL.json",
++    "json_pointer": "/results/28",
++    "pk_byte_occurrences_zero_based": [
++      47940,
++      48039,
++      49146
++    ],
++    "reading": "Full 640-pixel-high reference image viewed; border markings partly legible; no hidden writing reconstructed."
++  },
++  {
++    "source": "A26",
++    "metadata_file": "CHILD-SEARCH-03-BODY-LOCAL.json",
++    "json_pointer": "/results/25",
++    "pk_byte_occurrences_zero_based": [
++      44106,
++      44205,
++      45304
++    ],
++    "reading": "Full 640-pixel-high reference image viewed; border markings partly legible; no hidden writing reconstructed."
++  },
++  {
++    "source": "A21",
++    "metadata_file": "CHILD-SEARCH-03-BODY-LOCAL.json",
++    "json_pointer": "/results/20",
++    "pk_byte_occurrences_zero_based": [
++      36245,
++      36344,
++      37451
++    ],
++    "reading": "Full 640-pixel-high reference image viewed; border markings partly legible; no hidden writing reconstructed."
++  }
++]
+diff --git a/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/IMAGE-COMPARISON-PROTOCOL.md b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/IMAGE-COMPARISON-PROTOCOL.md
+--- /dev/null
++++ b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/IMAGE-COMPARISON-PROTOCOL.md
+@@ -0,0 +1,9 @@
++# Predeclared image-comparison scope
++
++All four acquired 640-pixel-high JPEG reference views have now been visually inspected. Their borders/labels and widths differ; the two intended pairs show corresponding scene details. Do not call their files or raw decoded pixels identical without checking. No high-resolution TIFF, original negative or exposure worksheet was acquired. The archived June 2004 caption date is not independently timed by this test.
++
++Use installed Pillow 12.3.0 and NumPy 2.3.5; OpenCV/SciPy are unavailable and will not be installed. Preserve original JPEG bytes. For a descriptive scene-similarity comparison only, convert each source to grayscale in memory, crop equal fractional margins, resize to 256 by 256 pixels with Pillow bicubic sampling, and compare the central 224 by 224 parent region with all equal-sized child windows. Maximum translations are 16 pixels in each direction after resizing. Report centered and best translated Pearson correlations, fitted translation and the same quantities for unrelated cross-column pairings. Run margins 5%, 10% and 15% as predefined sensitivity views, and identical-source controls to check implementation. No transformed image file is written.
++
++Targets: P31/A26 and P29/A21. Cross-column comparisons P31/A21 and P29/A26 are limited negative controls, not a calibrated population of distinct exposures from the same viewpoint. No probability, universal threshold or same-negative conclusion may be derived from four views. Fit and evaluation use the same pixels; this is descriptive registration, not independent prediction. Distinct exposure times of a static scene, copied photographs, crop/rescan/contrast and reproduction effects may remain indistinguishable. Zero historical thermal/custody/chemical tests are performed.
++
++Inspect border identifiers as visible at reference resolution, retaining partial/uncertain readings; do not reconstruct obscured writing or infer who changed it. A photograph number can be a reproduction label, not a unique original negative number. Exact decoded-pixel hashes are computed with shape recorded separately. All raw inputs and contrary/different results are retained.
+diff --git a/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/METADATA-SOURCES.json b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/METADATA-SOURCES.json
+--- /dev/null
++++ b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/METADATA-SOURCES.json
+@@ -0,0 +1,35 @@
++[
++  {
++    "url": "https://www.loc.gov/pictures/item/ny2014/?fo=json",
++    "final_url": "https://www.loc.gov/pictures/item/ny2014/?fo=json",
++    "status": 200,
++    "access_utc": "2026-10-28T14:59:32.362126+00:00",
++    "bytes": 17474,
++    "sha256": "525e270e1734be38fc39a2ddab17df71975322384b5a24dea070015ded96ff74",
++    "headers": {
++      "Content-Type": "text/plain; charset=UTF-8"
++    }
++  },
++  {
++    "url": "https://www.loc.gov/pictures/search/?q=Photograph%3A+ny2014&fi=number&op=PHRASE&va=exact&co=hh&st=gallery&sg=true&fo=json&c=100",
++    "final_url": "https://www.loc.gov/pictures/search/?q=Photograph%3A+ny2014&fi=number&op=PHRASE&va=exact&co=hh&st=gallery&sg=true&fo=json&c=100",
++    "status": 200,
++    "access_utc": "2026-10-28T15:00:32.639506+00:00",
++    "bytes": 162089,
++    "sha256": "58ca8b801e9c4b0a2ff86b6a1d962fc7f8a1a19b6553260c6447c192727efbfb",
++    "headers": {
++      "Content-Type": "text/plain; charset=UTF-8"
++    }
++  },
++  {
++    "url": "https://www.loc.gov/pictures/search/?q=Photograph%3A+ny2396&fi=number&op=PHRASE&va=exact&co=hh&st=gallery&sg=true&fo=json&c=40",
++    "final_url": "https://www.loc.gov/pictures/search/?q=Photograph%3A+ny2396&fi=number&op=PHRASE&va=exact&co=hh&st=gallery&sg=true&fo=json&c=40",
++    "status": 200,
++    "access_utc": "2026-10-28T15:01:28.032194+00:00",
++    "bytes": 45405,
++    "sha256": "1545e31e42b9e2dd91613d8565fb5546a42f470ab5075bfdf05000990ab1cb07",
++    "headers": {
++      "Content-Type": "text/plain; charset=UTF-8"
++    }
++  }
++]
+diff --git a/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/OPEN-RECORDS.md b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/OPEN-RECORDS.md
+--- /dev/null
++++ b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/OPEN-RECORDS.md
+@@ -0,0 +1,10 @@
++# Inputs and discriminating outcomes
++
++1. Original negative/exposure numbers, dated contact sheets and reproduction/crop/scan/caption history for both proposed pairs. A documented common negative could authenticate shared source; distinct exposure records could weaken that inference. Matching scene content alone does not choose between them.
++2. Actual catalogue-listed N1200 field material and its accession/manifest. A successful catalogue response now confirms the locator, not the contents or a negative/object join.
++3. Native marking/cut/removal/transport/Hangar17 intake/object records for the reported paint- and smoke-affected remnants, plus current museum/sample custody where recorded. A confirmed mismatch can exclude the proposed identity; similar descriptions cannot establish it.
++4. Construction drawings and component/material/coating/region identification for J3/10 and J4/12, plus any source-specific calibration and later sampling. Do not assume these are the exposed-steel specimens or paint calibration used in a different NIST study.
++5. Actual April2005 agreement and August2005 submission/receipt/version manifest, distinct from the earlier April2004 programmatic agreement and the inventory editions. The new catalogue objects do not authenticate that delivery.
++6. Native inventory/alias/coupon/intake/building-attribution records for the existing selected NIST candidates remain indispensable. All earlier conflicts and open FAA, telephone, recorder and materials tests remain open.
++
++No request or contact is sent. A failure to find an original is not proof it was destroyed, withheld, false or deliberately altered.
+diff --git a/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/README.md b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/README.md
+--- /dev/null
++++ b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/README.md
+@@ -0,0 +1,45 @@
++# HABS photographs: matching scene content, different digital reproductions; custody still unverified
++
++October 28, 2026. Existing STL01–STL04 / B188-H005 / AUD011-AUD016 / SPT01–SPT08 / SR01; follows IDR06 and HBR02/HBR03/HBR05. This acquires and inspects four actual reference photographs, advancing beyond the earlier caption-only comparison. The earlier report's unperformed-test statement remains preserved as its creation-time status; it is not silently rewritten.
++
++## What changed
++
++A documented **legacy Library of Congress catalogue API succeeded**, although earlier modern-page reader requests failed. The parent catalogue and two resource listings are now preserved as actual response entities, not only indexed snippets. The parent resource response lists 103 results and the child lists 26; only the four relevant image bodies were acquired. [Metadata source pins](METADATA-SOURCES.json).
++
++The acquired JPEG reference views total **432,606 bytes**. All four were viewed in full at their available 640-pixel height. Each source's original bytes, SHA-256, dimensions, decoded-RGB hash, exact URL, catalogue item and field-specific metadata are preserved in [SOURCES.json](SOURCES.json). No raw image, negative or catalogue response is included in this publication candidate.
++
++| Proposed pair | Parent reference | Child reference | Source subject |
++|---|---|---|---|
++|Paint detail|[NY-6369-31](https://www.loc.gov/pictures/collection/hh/item/ny2014.photos.362115p/), 529×640|[NY-6369-A-26](https://www.loc.gov/pictures/collection/hh/item/ny2396.photos.387822p/), 511×640|Captioned J3/10, B2|
++|Smoke detail|[NY-6369-29](https://www.loc.gov/pictures/collection/hh/item/ny2014.photos.362113p/), 527×640|[NY-6369-A-21](https://www.loc.gov/pictures/collection/hh/item/ny2396.photos.387817p/), 512×640|Captioned J4/12, B2|
++
++The intended pairs show closely matching column, surface, cable/netting or surrounding structural details. Their borders and reproduction labels differ; some border writing is partly obscured or too small to read confidently. No hidden text was reconstructed. **Both original-file hashes and both raw decoded-pixel comparisons differ.** Thus the delivered files are not identical, even though the pictured scene content strongly overlaps. Crop, scan, reproduction and different-exposure possibilities are not adjudicated by those hash differences.
++
++## Reproducible, limited image comparison
++
++The [method](IMAGE-COMPARISON-PROTOCOL.md) was saved before numeric results. It uses grayscale conversion, equal fractional crops and bicubic resizing to 256×256 in memory, then bounded translation of a 224×224 comparison region. It fits and evaluates the same pixels. No transformed source file is written. These are descriptive similarity calculations, not a probability of authenticity or independently validated exposure identification.
++
++At the predefined 10% margin:
++
++| Comparison | Centered Pearson r | Best translated r |
++|---|---:|---:|
++|31 versus A-26|0.672398|0.788351|
++|29 versus A-21|0.733800|0.790636|
++|31 versus A-21, cross-column control|0.095433|0.203774|
++|29 versus A-26, cross-column control|0.100430|0.166423|
++
++Across 5%, 10% and 15% margins, intended-pair best correlations were **0.783561–0.792821**; the two cross-column controls were **0.145388–0.203774**. Identical-source controls returned 1.0 at zero shift. These six intended, six cross-column and six identical-source calculations are not eighteen independent historical tests. Four source-byte/dimension/decoded-pixel checks also passed. [Actual results](RESULTS.json); [standalone verifier/comparison](compare_reference_images.py).
++
++The cross-column controls are limited: some best offsets reach the allowed search boundary, and different photographs of the same static scene were not used as a validated alternative population. Resizing also changes aspect geometry. No universal threshold, confidence percentage or same-negative conclusion is justified. A larger negative/exposure corpus and original film identifiers could weaken or strengthen the reuse interpretation.
++
++The defensible inference is that the two catalogue-number pairs represent highly overlapping photographic content and should not be assumed to be independent damage observations. **Whether either pair is the same original exposure remains unverified.** Distinct catalogue labels do not by themselves prove distinct exposures; visual similarity does not by itself prove one negative.
++
++## What remains separate
++
++The catalogue now explicitly supplies the N1200 field-material locator, but those field records remain unacquired. Source fields report 2004 as the photo-date label, while backend created/modified and source-created fields contain different dates. Preserve them by field name; they are not treated as interchangeable exposure, submission or digitization dates. The earlier HAER/HABS caption-label and October 2004/2006 inventory accounts remain untouched.
++
++These photographs do not establish which parts were cut or transported, whether they match the two columns described among four Hangar 17 remnants, or whether a NIST candidate came from either location. Component material, coating, calibration and cut/transfer/object/sample records remain necessary. No join to W14A/B, C12a/b, Sample 1 or Column 79 is established; WTC6 substructure and WTC7-adjacent geography remain separate. A photographic paint description is not a calibrated temperature or incendiary identification.
++
++The next decisive records are original negative/exposure identifiers and contact sheets, N1200, caption/reproduction history, selected-column drawings/material/coating records, and cut/mark/removal/transport/intake registers. The actual inventory editions, August 2005 submission/receipt and NIST attribution rationale remain missing. [Remaining records and falsifiers](OPEN-RECORDS.md).
++
++This local addition does not close the FAA correction/disposition, telephone native call-leg/schema/custody, recorder clocks/configuration, materials specimen/calibration or steel native-custody requirements. No outreach, request, fee, mailbox, source overwrite, history rewrite, public push or PR occurred. The preceding two steel commits and their pending 24-file approval request are unchanged; that request does not cover this separate addition. [Checklist](CHECKLIST.md), [exact locators](CLAIM-LOCATORS.json), [revision status](REVISION-STATUS.json), [addition diff](TEXT-CHANGES.diff).
+diff --git a/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/REPLAY-VERIFICATION.json b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/REPLAY-VERIFICATION.json
+--- /dev/null
++++ b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/REPLAY-VERIFICATION.json
+@@ -0,0 +1,7 @@
++{
++  "prepare_compare_AST_unchanged": true,
++  "all_results_exactly_reproduced": true,
++  "four_entity_checks_pass": true,
++  "comparison_rows": 18,
++  "scope": "Interface adaptation replay only; not eighteen new or independent historical tests"
++}
+diff --git a/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/RESULTS.json b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/RESULTS.json
+--- /dev/null
++++ b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/RESULTS.json
+@@ -0,0 +1,305 @@
++{
++  "entity_checks": [
++    {
++      "id": "P31",
++      "passed": true,
++      "sha256": "e785966536966f496a0b6092eb62c60b8296aa6f14a121d1a945981b71e42c05",
++      "decoded_RGB_sha256": "20b9fb9e8196b89747d1354cd330e53fdc93d2c37c31a211410a696482d14494",
++      "pixels": [
++        529,
++        640
++      ]
++    },
++    {
++      "id": "P29",
++      "passed": true,
++      "sha256": "8dc5dd07ee66f71629bd59f72daeec1f4b186926de6464b03d52bbd115c42454",
++      "decoded_RGB_sha256": "1293157f8b1395c2dbde475f93cd9c95d3828848d98a173d74daa660feea8688",
++      "pixels": [
++        527,
++        640
++      ]
++    },
++    {
++      "id": "A26",
++      "passed": true,
++      "sha256": "598be880338dc3e49185a297aeff6f8aecf29aa102b3ec06a12048e7be8fbfab",
++      "decoded_RGB_sha256": "1aaafdf28e684d060bb499f3ddd0393704c265597215f0f553b297562655f424",
++      "pixels": [
++        511,
++        640
++      ]
++    },
++    {
++      "id": "A21",
++      "passed": true,
++      "sha256": "be8678b12535ec76c4a74ed1fbeed25ed167f64ab9f3c4df5e41ac91784c300b",
++      "decoded_RGB_sha256": "1a5bf19c612f16aa58ff7254f62124e74eacd1c83ee7b9447d80a544ffd94a59",
++      "pixels": [
++        512,
++        640
++      ]
++    }
++  ],
++  "comparisons": [
++    {
++      "parent": "P31",
++      "other": "A26",
++      "kind": "intended",
++      "fractional_margin": 0.05,
++      "original_files_equal": false,
++      "centered_pearson_r": 0.6832756621500851,
++      "best_translated_pearson_r": 0.7904310838099681,
++      "best_window_offset_from_center": [
++        9,
++        -2
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P29",
++      "other": "A21",
++      "kind": "intended",
++      "fractional_margin": 0.05,
++      "original_files_equal": false,
++      "centered_pearson_r": 0.7421990026295914,
++      "best_translated_pearson_r": 0.7864091247035493,
++      "best_window_offset_from_center": [
++        3,
++        -2
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P31",
++      "other": "A21",
++      "kind": "cross_column_control",
++      "fractional_margin": 0.05,
++      "original_files_equal": false,
++      "centered_pearson_r": 0.09930450840848051,
++      "best_translated_pearson_r": 0.19860404846051272,
++      "best_window_offset_from_center": [
++        -16,
++        11
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P29",
++      "other": "A26",
++      "kind": "cross_column_control",
++      "fractional_margin": 0.05,
++      "original_files_equal": false,
++      "centered_pearson_r": 0.09069032181280859,
++      "best_translated_pearson_r": 0.14538845249025042,
++      "best_window_offset_from_center": [
++        3,
++        -12
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P31",
++      "other": "P31",
++      "kind": "identical_source_control",
++      "fractional_margin": 0.05,
++      "original_files_equal": true,
++      "centered_pearson_r": 1.0000000000000004,
++      "best_translated_pearson_r": 1.0000000000000004,
++      "best_window_offset_from_center": [
++        0,
++        0
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P29",
++      "other": "P29",
++      "kind": "identical_source_control",
++      "fractional_margin": 0.05,
++      "original_files_equal": true,
++      "centered_pearson_r": 0.9999999999999989,
++      "best_translated_pearson_r": 0.9999999999999989,
++      "best_window_offset_from_center": [
++        0,
++        0
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P31",
++      "other": "A26",
++      "kind": "intended",
++      "fractional_margin": 0.1,
++      "original_files_equal": false,
++      "centered_pearson_r": 0.6723981866354459,
++      "best_translated_pearson_r": 0.7883508258166754,
++      "best_window_offset_from_center": [
++        10,
++        -3
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P29",
++      "other": "A21",
++      "kind": "intended",
++      "fractional_margin": 0.1,
++      "original_files_equal": false,
++      "centered_pearson_r": 0.7338000099978638,
++      "best_translated_pearson_r": 0.7906358701557172,
++      "best_window_offset_from_center": [
++        3,
++        -2
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P31",
++      "other": "A21",
++      "kind": "cross_column_control",
++      "fractional_margin": 0.1,
++      "original_files_equal": false,
++      "centered_pearson_r": 0.09543284960184609,
++      "best_translated_pearson_r": 0.20377412723709581,
++      "best_window_offset_from_center": [
++        -16,
++        11
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P29",
++      "other": "A26",
++      "kind": "cross_column_control",
++      "fractional_margin": 0.1,
++      "original_files_equal": false,
++      "centered_pearson_r": 0.10042970063947648,
++      "best_translated_pearson_r": 0.16642308580547338,
++      "best_window_offset_from_center": [
++        4,
++        -16
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P31",
++      "other": "P31",
++      "kind": "identical_source_control",
++      "fractional_margin": 0.1,
++      "original_files_equal": true,
++      "centered_pearson_r": 1.0000000000000004,
++      "best_translated_pearson_r": 1.0000000000000004,
++      "best_window_offset_from_center": [
++        0,
++        0
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P29",
++      "other": "P29",
++      "kind": "identical_source_control",
++      "fractional_margin": 0.1,
++      "original_files_equal": true,
++      "centered_pearson_r": 1.0000000000000002,
++      "best_translated_pearson_r": 1.0000000000000002,
++      "best_window_offset_from_center": [
++        0,
++        0
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P31",
++      "other": "A26",
++      "kind": "intended",
++      "fractional_margin": 0.15,
++      "original_files_equal": false,
++      "centered_pearson_r": 0.6313057301302829,
++      "best_translated_pearson_r": 0.7835606680138039,
++      "best_window_offset_from_center": [
++        12,
++        -3
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P29",
++      "other": "A21",
++      "kind": "intended",
++      "fractional_margin": 0.15,
++      "original_files_equal": false,
++      "centered_pearson_r": 0.7314855204178038,
++      "best_translated_pearson_r": 0.7928207892333146,
++      "best_window_offset_from_center": [
++        4,
++        -3
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P31",
++      "other": "A21",
++      "kind": "cross_column_control",
++      "fractional_margin": 0.15,
++      "original_files_equal": false,
++      "centered_pearson_r": 0.06525240588688055,
++      "best_translated_pearson_r": 0.15240538587883173,
++      "best_window_offset_from_center": [
++        16,
++        2
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P29",
++      "other": "A26",
++      "kind": "cross_column_control",
++      "fractional_margin": 0.15,
++      "original_files_equal": false,
++      "centered_pearson_r": 0.0871205046278428,
++      "best_translated_pearson_r": 0.17580281946218126,
++      "best_window_offset_from_center": [
++        4,
++        -16
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P31",
++      "other": "P31",
++      "kind": "identical_source_control",
++      "fractional_margin": 0.15,
++      "original_files_equal": true,
++      "centered_pearson_r": 0.9999999999999997,
++      "best_translated_pearson_r": 0.9999999999999997,
++      "best_window_offset_from_center": [
++        0,
++        0
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    },
++    {
++      "parent": "P29",
++      "other": "P29",
++      "kind": "identical_source_control",
++      "fractional_margin": 0.15,
++      "original_files_equal": true,
++      "centered_pearson_r": 1.0000000000000002,
++      "best_translated_pearson_r": 1.0000000000000002,
++      "best_window_offset_from_center": [
++        0,
++        0
++      ],
++      "translation_space": "256x256 normalized thumbnail; not historical native-image displacement"
++    }
++  ],
++  "versions": {
++    "numpy": "2.3.5",
++    "Pillow": "12.3.0"
++  },
++  "method": "Predeclared grayscale/crop/resize/translation Pearson correlation; same pixels fitted and evaluated; no statistical identification threshold.",
++  "physical_or_exposure_identity_test": false,
++  "custody_or_calibrated_thermal_test": false
++}
+diff --git a/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/REVISION-STATUS.json b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/REVISION-STATUS.json
+--- /dev/null
++++ b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/REVISION-STATUS.json
+@@ -0,0 +1,31 @@
++{
++  "kind": "Additive actual-reference-photo acquisition and descriptive comparison; earlier caption-only and inventory records unchanged",
++  "predecessors": [
++    {
++      "relative": "steel-habs-original-route-2026-10-28/REPORT.md",
++      "sha256": "8c871b694f076dc94f2839e38018dfdc49aeb1f6a60d7e3af4e67ae800266cc9",
++      "changed": false
++    },
++    {
++      "relative": "steel-habs-original-route-2026-10-28/publication-final/CAPTION-CANDIDATES.csv",
++      "sha256": "07dfe6a85147536057bc198f40140b6ffed48c539c1e58bd014141fa1848d8bb",
++      "changed": false
++    },
++    {
++      "relative": "steel-inventory-delivery-roots-2026-10-28/public-candidate/README.md",
++      "sha256": "1d19ebe4e93dc1978832fe8ef644f30d1ae968c6a63f9871e4dd6a1ced79c3d0",
++      "changed": false
++    },
++    {
++      "relative": "original-records-work-plan-2026-10-27/WORK-PLAN.md",
++      "sha256": "d23c01a77bcc468f06faabb13b708df8032a6870586ec539c59edc9e0ae3d7cb",
++      "changed": false
++    }
++  ],
++  "shared_registers_changed": false,
++  "pending_public_commits_changed": false,
++  "source_images_changed": false,
++  "authored_PDF": false,
++  "text_diff_scope": "All new candidate text additions; earlier report status is retained as creation-time status, not rewritten",
++  "method": "Published comparison functions must match local numeric-method functions; final interface replay separately verified"
++}
+diff --git a/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/SOURCES.json b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/SOURCES.json
+--- /dev/null
++++ b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/SOURCES.json
+@@ -0,0 +1,126 @@
++[
++  {
++    "id": "P31",
++    "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ny/ny2000/ny2014/photos/362115pr.jpg",
++    "final_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ny/ny2000/ny2014/photos/362115pr.jpg",
++    "status": 200,
++    "access_utc": "2026-10-28T15:02:00.818039+00:00",
++    "headers": {
++      "Content-Type": "image/jpeg",
++      "Content-Length": "62723",
++      "Last-Modified": "Tue, 21 Apr 2009 21:52:02 GMT"
++    },
++    "bytes": 62723,
++    "sha256": "e785966536966f496a0b6092eb62c60b8296aa6f14a121d1a945981b71e42c05",
++    "image_format": "JPEG",
++    "pixels": [
++      529,
++      640
++    ],
++    "mode": "L",
++    "decoded_RGB_sha256": "20b9fb9e8196b89747d1354cd330e53fdc93d2c37c31a211410a696482d14494",
++    "file": "P31-reference.jpg",
++    "reproduction_number": "HABS NY-6369-31",
++    "catalogue_item": "https://www.loc.gov/pictures/collection/hh/item/ny2014.photos.362115p/",
++    "metadata_pk": "ny2014.photos.362115p",
++    "creator_role": "Harms, Bruce A.",
++    "metadata_created_published_date": "2004",
++    "metadata_created": "2024-12-04T16:57:28Z",
++    "metadata_modified": "2024-12-04T16:57:28Z",
++    "metadata_source_created": "1970-01-01T00:00:00Z",
++    "relationship": "Official public JPEG reference reproduction; not an original negative, full-resolution master, authenticated specimen or custody record."
++  },
++  {
++    "id": "P29",
++    "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ny/ny2000/ny2014/photos/362113pr.jpg",
++    "final_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ny/ny2000/ny2014/photos/362113pr.jpg",
++    "status": 200,
++    "access_utc": "2026-10-28T15:02:01.683741+00:00",
++    "headers": {
++      "Content-Type": "image/jpeg",
++      "Content-Length": "56699",
++      "Last-Modified": "Tue, 21 Apr 2009 21:51:41 GMT"
++    },
++    "bytes": 56699,
++    "sha256": "8dc5dd07ee66f71629bd59f72daeec1f4b186926de6464b03d52bbd115c42454",
++    "image_format": "JPEG",
++    "pixels": [
++      527,
++      640
++    ],
++    "mode": "L",
++    "decoded_RGB_sha256": "1293157f8b1395c2dbde475f93cd9c95d3828848d98a173d74daa660feea8688",
++    "file": "P29-reference.jpg",
++    "reproduction_number": "HABS NY-6369-29",
++    "catalogue_item": "https://www.loc.gov/pictures/collection/hh/item/ny2014.photos.362113p/",
++    "metadata_pk": "ny2014.photos.362113p",
++    "creator_role": "Harms, Bruce A.",
++    "metadata_created_published_date": "2004",
++    "metadata_created": "2024-12-04T16:57:27Z",
++    "metadata_modified": "2024-12-04T16:57:28Z",
++    "metadata_source_created": "1970-01-01T00:00:00Z",
++    "relationship": "Official public JPEG reference reproduction; not an original negative, full-resolution master, authenticated specimen or custody record."
++  },
++  {
++    "id": "A26",
++    "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ny/ny2300/ny2396/photos/387822pr.jpg",
++    "final_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ny/ny2300/ny2396/photos/387822pr.jpg",
++    "status": 200,
++    "access_utc": "2026-10-28T15:02:02.432278+00:00",
++    "headers": {
++      "Content-Type": "image/jpeg",
++      "Content-Length": "165546",
++      "Last-Modified": "Fri, 28 Jun 2024 11:49:13 GMT"
++    },
++    "bytes": 165546,
++    "sha256": "598be880338dc3e49185a297aeff6f8aecf29aa102b3ec06a12048e7be8fbfab",
++    "image_format": "JPEG",
++    "pixels": [
++      511,
++      640
++    ],
++    "mode": "L",
++    "decoded_RGB_sha256": "1aaafdf28e684d060bb499f3ddd0393704c265597215f0f553b297562655f424",
++    "file": "A26-reference.jpg",
++    "reproduction_number": "HABS NY-6369-A-26",
++    "catalogue_item": "https://www.loc.gov/pictures/collection/hh/item/ny2396.photos.387822p/",
++    "metadata_pk": "ny2396.photos.387822p",
++    "creator_role": "Harms, Bruce A.",
++    "metadata_created_published_date": "2004",
++    "metadata_created": "2024-12-04T17:02:29Z",
++    "metadata_modified": "2024-12-04T17:02:29Z",
++    "metadata_source_created": "1970-01-01T00:00:00Z",
++    "relationship": "Official public JPEG reference reproduction; not an original negative, full-resolution master, authenticated specimen or custody record."
++  },
++  {
++    "id": "A21",
++    "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ny/ny2300/ny2396/photos/387817pr.jpg",
++    "final_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ny/ny2300/ny2396/photos/387817pr.jpg",
++    "status": 200,
++    "access_utc": "2026-10-28T15:02:03.427063+00:00",
++    "headers": {
++      "Content-Type": "image/jpeg",
++      "Content-Length": "147638",
++      "Last-Modified": "Fri, 28 Jun 2024 11:48:15 GMT"
++    },
++    "bytes": 147638,
++    "sha256": "be8678b12535ec76c4a74ed1fbeed25ed167f64ab9f3c4df5e41ac91784c300b",
++    "image_format": "JPEG",
++    "pixels": [
++      512,
++      640
++    ],
++    "mode": "L",
++    "decoded_RGB_sha256": "1a5bf19c612f16aa58ff7254f62124e74eacd1c83ee7b9447d80a544ffd94a59",
++    "file": "A21-reference.jpg",
++    "reproduction_number": "HABS NY-6369-A-21",
++    "catalogue_item": "https://www.loc.gov/pictures/collection/hh/item/ny2396.photos.387817p/",
++    "metadata_pk": "ny2396.photos.387817p",
++    "creator_role": "Harms, Bruce A.",
++    "metadata_created_published_date": "2004",
++    "metadata_created": "2024-12-04T17:02:28Z",
++    "metadata_modified": "2024-12-04T17:02:28Z",
++    "metadata_source_created": "1970-01-01T00:00:00Z",
++    "relationship": "Official public JPEG reference reproduction; not an original negative, full-resolution master, authenticated specimen or custody record."
++  }
++]
+diff --git a/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/compare_reference_images.py b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/compare_reference_images.py
+--- /dev/null
++++ b/investigation/broader-evidence/habs-reference-photo-comparison-2026-10-28/compare_reference_images.py
+@@ -0,0 +1,66 @@
++from pathlib import Path
++import argparse,hashlib,json
++import numpy as np
++import PIL
++from PIL import Image
++from numpy.lib.stride_tricks import sliding_window_view
++
++def prepare(path,margin):
++    with Image.open(path) as im:
++        im=im.convert('L')
++        w,h=im.size
++        box=(round(w*margin),round(h*margin),round(w*(1-margin)),round(h*(1-margin)))
++        cropped=im.crop(box)
++        return np.asarray(cropped.resize((256,256),resample=Image.Resampling.BICUBIC),dtype=np.float64)
++
++def compare(a,b):
++    patch=a[16:240,16:240]
++    centered=patch-patch.mean()
++    denominator_a=np.sqrt(np.sum(centered**2))
++    windows=sliding_window_view(b,(224,224))
++    sums=windows.sum(axis=(-2,-1))
++    sums_sq=np.einsum('ijkl,ijkl->ij',windows,windows,optimize=False)
++    numerator=np.einsum('ijkl,kl->ij',windows,centered,optimize=False)
++    denominator=denominator_a*np.sqrt(np.maximum(0,sums_sq-sums**2/patch.size))
++    scores=np.divide(numerator,denominator,out=np.full_like(numerator,np.nan),where=denominator>0)
++    y,x=np.unravel_index(np.nanargmax(scores),scores.shape)
++    return {'centered_pearson_r':float(scores[16,16]),'best_translated_pearson_r':float(scores[y,x]),
++            'best_window_offset_from_center':[int(x)-16,int(y)-16],
++            'translation_space':'256x256 normalized thumbnail; not historical native-image displacement'}
++
++def main():
++    parser=argparse.ArgumentParser()
++    parser.add_argument('--input',action='append',required=True,help='P31=path, P29=path, A26=path, A21=path')
++    args=parser.parse_args()
++    supplied=dict(item.split('=',1) for item in args.input)
++    assert set(supplied)=={'P31','P29','A26','A21'}
++    rows=json.loads((Path(__file__).parent/'SOURCES.json').read_text())
++    for row in rows:
++        row['path']=supplied[row['id']]
++    paths={}
++    entity_checks=[]
++    for row in rows:
++        p=Path(row['path']);data=p.read_bytes()
++        with Image.open(p) as im:
++            shape=list(im.size);pixel_hash=hashlib.sha256(im.convert('RGB').tobytes()).hexdigest()
++        passed=(hashlib.sha256(data).hexdigest()==row['sha256'] and len(data)==row['bytes']
++                and shape==row['pixels'] and pixel_hash==row['decoded_RGB_sha256'])
++        entity_checks.append({'id':row['id'],'passed':passed,'sha256':row['sha256'],'decoded_RGB_sha256':pixel_hash,'pixels':shape})
++        paths[row['id']]=p
++    assert all(r['passed'] for r in entity_checks)
++    pairs=[('P31','A26','intended'),('P29','A21','intended'),('P31','A21','cross_column_control'),('P29','A26','cross_column_control'),('P31','P31','identical_source_control'),('P29','P29','identical_source_control')]
++    results=[]
++    for margin in [0.05,0.10,0.15]:
++        images={key:prepare(path,margin) for key,path in paths.items()}
++        for first,second,kind in pairs:
++            values=compare(images[first],images[second])
++            results.append({'parent':first,'other':second,'kind':kind,'fractional_margin':margin,
++                            'original_files_equal':paths[first].read_bytes()==paths[second].read_bytes(),
++                            **values})
++    print(json.dumps({'entity_checks':entity_checks,'comparisons':results,
++                      'versions':{'numpy':np.__version__,'Pillow':PIL.__version__},
++                      'method':'Predeclared grayscale/crop/resize/translation Pearson correlation; same pixels fitted and evaluated; no statistical identification threshold.',
++                      'physical_or_exposure_identity_test':False,
++                      'custody_or_calibrated_thermal_test':False},indent=2))
++if __name__=='__main__':
++    main()
