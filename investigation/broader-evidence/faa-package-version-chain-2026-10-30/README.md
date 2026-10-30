@@ -1,0 +1,74 @@
+# UAL175 package versions: missing-page report, paired transcripts and dispatch claims
+
+Review completed October 30, 2026. **Two newly read official scans add an earlier correction list and a later missing-page/dispatch trail.** They identify specific records to retrieve and explanations to test. They do not establish deliberate falsification or accurate implementation of the reported corrections. The actual May 2003 QFR correction and 2006 administrative disposition remain separate missing records.
+
+## Exact sources and scope
+
+| Released source | Original | Preserved entity | Read |
+|---|---|---|---|
+| AEA1121 / NARA 7598359, cover dated January 18, 2002 plus eight-page correction list |[Official PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1121-MEMORANDUM--FORMAL-ACCIDENT-PACKAGE-REF-ZNY-ARTCC-148-UAL175-CORRECTIONS.pdf) · [catalogue](https://catalog.archives.gov/id/7598359)|464,135 bytes; SHA-256 `71c0ecec8e0fa0a92bc27cfe28483733877b66c371ea732f12d5c5ad5c7905c6`|All 9 page images|
+| AEA1123 / NARA 7598361, May 8 cover and May 14 forwarded emails |[Official PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1123-MEMO--FORMAL-ACCIDENT-PACKAGE-REF-ZNY-ARTCC-148-UAL175-ON-CORRECTIONS-REDACT-SEALED.pdf) · [catalogue](https://catalog.archives.gov/id/7598361)|190,274 bytes; SHA-256 `470af9efe87e4c784e3f491d050ce1dec7705658849f024a37830e81a57501e8`|All 3 page images|
+
+HTTP 200 / application/pdf entities were acquired October 30, 2026 from their observed official download links. Exact access times, selected PDF/HTTP metadata, raster/OCR hashes and predecessor pins are in [SOURCE-PINS.json](SOURCE-PINS.json). Official hosting and hashes qualify the retrieved bytes; they do not authenticate native email/Word, signatures, amendment dates, enclosures, shipment or historical accuracy.
+
+All 12 images were read before visible-raster OCR. No hidden PDF-layer extraction, redaction reconstruction, audio acquisition/listening/decoding, clock fitting or technical-owner test duplication occurred. Line numbers below refer to Tesseract 5.5.2 / psm3 output from 1800-pixel renders, include blank lines and are derivative-specific. Images govern readings, and OCR errors are explicitly distinguished. Raw scans, full OCR, speech excerpts, names, signatures and contact data are excluded from this public derivative. [FIELD-LEDGER.json](FIELD-LEDGER.json) retains 30 selected observations with conflicts, sources and limits; it is not a verbatim transcript of all correction requests.
+
+## The new records and conflicting observations
+
+**1. A concrete missing-page and delivery lead.** The May 8 cover says its remaining packages lacked **page 2of23 of the first/radar-sector 42 transcript**. It says two copies are included and asks the recipient to ensure its packages have that page (AEA1123 physical 1, visibleOCR21–26). The acquired three-page entity contains the cover and two email renderings, not those actual transcript-page copies. We have a report of incomplete packages and attempted supply, not independent proof of why the page was absent, whether every recipient lacked it, or whether it was actually received. A handwritten posted5/9 note is a separate, unauthenticated annotation, not final approval.
+
+A May 14 email says its author was informed corrections went out Friday as certified and would arrive later (physical 2,5–9). Three printed PDF icons numbered3,2,1 appear below (line 16); their labels and OCR spellings do not authenticate native filenames or attachment bytes. Another rendering has handwriting Corrections sent electronically and5/14/02 (physical 3, bottom image). Reported certified dispatch, reported electronic transmission, final review and actual receipt are separate milestones; neither route is proved by the scan alone. Friday is preserved as written, not silently converted to a calendar date.
+
+**2. Proposed one-minute changes and four-second disagreements.** The January list requests changing1245:58/1245:59 to1244:58/1244:59 in the radar42 transcript, asks for tape verification and displays Change made (AEA1121 physical 2,37–38). It also compares associate42 timestamps1302:00/1302:02 with R42 values1302:04/1302:06 (physical 4,23–26). The first response selects1302:04 as correct, and both show Change made. We preserve that source judgment without adopting it as an independently measured time.
+
+The displayed pairs differ by−60, −60, +4, +4 seconds respectively. This is arithmetic on selected document labels, not four measured clock offsets, a constant clock correction, proof of a one-minute recording gap, or proof the proposed replacements were accurate. Other entries flag1301:37/1301:35 and1311:06 appearing after 1311:09 as incorrect or out of order without giving authenticated replacements (physical 3,17–18; physical 7,67–68). Underlying paired recordings, clock references and check worksheets remain essential.
+
+**3. The same review supplies competing explanations for unequal transcripts.** At1258:18, the associate42 response says a partial transmission reflected landline coordination and no change was required (physical 4,5–7). For associate55 at1250:02,1256:42,1257:53,1259:33 and1259:53, responses describe radio/landline coordination cutting or limiting reception, sometimes calling both records correct (physical 6,12–14,35–54). Related explanations occur at1305:22 and1310:46 (physical 7,40–42,63–65).
+
+These are specific operational hypotheses/agency reports to test, not explanations we have independently proved or imposed to reconcile the evidence. Their presence weighs against treating every textual difference, without testing, as invented speech or deletion. The source explanations themselves are not independent corroboration that the switching occurred. The actual channel/switching configuration, identified original signals and contemporaneous logs could strengthen or weaken those explanations. Some requests were expressly declined or deemed unnecessary; the correction list is not a blanket admission every questioned passage was wrong.
+
+**4. Version and completeness labels require qualification.** The January scan supplies printed correction-list pages 1–8of8 after its cover. That closes one visible-list access gap; it does not supply native Word or the separate Change 2document previously seen as pages 1/22 and 2/22. Several groups ask whether a transcript is partial/full and conditionally request Partial-to-Full subject changes, with Change made annotations (physical 4,57–61; physical 5,61–68; physical 7,90–91; physical 8,19–23). No actual underlying coverage is authenticated from those labels.
+
+The January list refers to28 pages for the fourth/associate55 transcript; the February list refers to 29. It also reports OMIC page 19 was misplaced after page9 in one package, says that copy was reordered and asks about the other copy (physical 8,10–14). Page-count, ordering and copy-specific changes are version fingerprints to investigate, not proof a substantive page was inserted/deleted. Annotation dates are not authenticated by the cover dates.
+
+**5. A stronger locator for line 1078, kept separate from another TMU position.** The January list explicitly identifies a **five-page Ninth transcript for TMU commercial phone line 1078** (physical 8,63–71; physical 9,5–12). It separately identifies an Eighth nine-page radar TMU Departure Coordinator transcript. The Ninth entry queries Area C Sup versus Area C OS, certification/end margins and a footnote under FAA Order8020.11B 77d(4).
+
+The previously acquired [AWA937 memorandum](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md) is a two-page memorandum/fragment associated with line 1078 and retains an AAL11/UAL175 and case-label mismatch. The new list is a stronger full-transcript locator, not an authenticated join showing that AWA937 is this exact five-page version. Nor should the Ninth record be collapsed into the Eighth position or later1245–1316TMU label merely because each says TMU. Complete versions, native enclosures and channel/case mappings remain missing.
+
+**6. Statement, policy and annotation questions remain open.** The list asks for handwritten equipment configurations in personnel statements and lining out Attachment only where no attachment was actually included (physical 9,20–24). Separate items request accident time1303 or ask whether a statement reads1303/1309 (32–35). These are instructions and marked responses, not the original/amended statements, final retained values or independently observed event times. Names and speech are excluded here, while original scans remain intact locally.
+
+The source cites FAA Order8020.11B 77d(4) in different footnote judgments: the sector 55 response says a tape check showed no footnote needed; the 1078 request displays Change made (physical 5,52–54; physical 9,11–12). These can concern different factual contexts and are not adjudicated here. Section 10specifically directs removal of personal home/cellular/pager numbers **from copies** of Form 8020-3, citing72c(11) (physical 9,14–16). That is not a direction to destroy the original operational record. The 2000 order and 2003Change1version were acquired in prior work; the holdings log was inspected, but those particular paragraphs were not newly read or their applicability verified in this unit.
+
+Finally, the May 7 request body reappears in the May 14 printout without the four Correction made annotations visible in AEA1122 (physical 3,19–31 versus the [preserved earlier record](https://github.com/AveLyra/911-conspiracy-investigation/blob/608171664400ed8d1e95f70277ea994702a3cbd7/investigation/broader-evidence/faa-package-corrections-2002-2026-10-30/README.md)). Both representations remain preserved. Common request content, added annotations, forwarding and later dispatch reports are related stages, not independent corroboration. We have not authenticated when or by whom annotations were added.
+
+## Quantity and evidentiary weight
+
+The eight named transcript groups contain 19, 26, 24, 41, 6, 7, 7 and 5 numbered items, respectively: **135 numbered transcript-review items**. The source ordinals are 1–6, 8, 9. The absent Seventh heading in a correction list does not establish an absent seventh transcript. The ledger records the group/page inventory and exact arithmetic.
+
+These counts include overlapping comparisons of paired records, spelling/formatting, proposed timing/agency changes and no-change responses. They are not 135 independent errors, events, witnesses or corroborations. We have not assigned evidence weight from a count, classified every item by severity or reproduced raw speech. The more useful evidence is the named version/channel/copy and the exact record that can test it.
+
+## TODOs and next discriminating records
+
+| Dependency | Obtain/test next | Current status |
+|---|---|---|
+| Missing sector 42page2 and final package |The two stated copies, enclosure manifest, tracking/recipient acknowledgment and approved final version |Specific acquisition target identified; actual page/receipt unacquired.|
+| Native May 14attachments |The three exact binaries, native messages with attachment metadata and authentic hashes |Printed labels/report of sending only; no native attachment acquired.|
+| Paired controller transcripts |Original/amended R42/associate42 and R55/associate55 versions, exact recordings, switching/channel configuration and check worksheets |Written conflicts and explanations read; no signal/clock test performed here.|
+| Line1078 and OMIC |Complete five-page Ninth and 26-page Sixth versions, certification/annotation history and exact join to AWA937/AWA940 |Locators improved; complete bodies and version joins remain open.|
+| Statement/equipment fields |Original/amended forms, handwritten configurations, initials/reasons and actual attachments |Instructions read, source forms absent; privacy restrictions continue.|
+| Cited policy |Read already acquired 2000 Order 8020.11B 72c(11)/77d(4), preserve later Change 1 differences and determine applicability |Already held editions, paragraph verification still to do; do not redownload or assume later text applied.|
+| FAA 2003/2006 outcomes |Native drafting/awareness chain, actual corrected QFR and receipt; signed action/no-action/reasons; separate recommendation implementation/closure |Still missing; these 2002package records are not substitutes.|
+
+All five tracks and eighteen substantive acceptance criteria remain incomplete/partial. Telephone carrier/operator/native call-leg joins; recorder authenticated inputs/config/custody/paired output/clocks; materials specimen/native calibration/same-specimen joins; and steel native preservation/transfer/inventory/attribution/selection records remain open. Prior technical tests are preserved within their actual limits and not duplicated or relabeled unperformed. No new request, outreach, fees, filing, private push, source overwrite or deletion occurred.
+
+## Revision accountability and verification
+
+| Requirement | Outcome | Verification/limit |
+|---|---|---|
+| Acquire underlying originals rather than repeat summaries/searches |Two directly identified official PDFs, all 12 images read |Released scans, not native completed transcript/media chains.|
+| Preserve conflicting values, contrary evidence and links |Selected field ledger, full local originals/OCR, prior record link and all values above |Source opinions, requested changes and completed outcomes remain separate; no source harmonization.|
+| Keep missing inputs as TODOs and proceed |Specific page, native attachment, transcript, configuration, policy and receipt targets |No closure of an eighteen-item criterion from a search or publication.|
+| Preserve prior versions/diffs |New dated additive unit; actual [TEXT-CHANGES.diff](TEXT-CHANGES.diff) against absent-file baseline |Older reports and source bytes unchanged; not a PDF/layout check.|
+| Public identity/privacy and publication proof |Safe notes/pins/selected labels/code/results only; source bodies/personnel/contact/signature/speech excluded |AveLyra account/author/committer and exact public destination/ref/all file bodies must be independently verified in the separate publication receipt.|
+
+The verifier checks exact PDFentities/pages, raster-OCR integrity/selected locators and the four displayed-label differences. It does not verify historical correctness, a global clock offset, tape continuity, authorial intent, corrected implementation, receipt or source independence. The field ledger is selected, not exhaustive; full source reading and independent experimental replication remain distinct.
