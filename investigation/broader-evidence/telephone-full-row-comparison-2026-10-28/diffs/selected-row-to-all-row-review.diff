@@ -1,0 +1,122 @@
+--- preceding-preserved-selected-row/REPORT.md
++++ README.md
+@@ -1,74 +1,63 @@
+-# UA93 telephone tables: one SCP-field mismatch and limits on counting
++# UA93: all 35 keyed row positions compared, with uncertain joins retained
+ 
+-October 27 investigation unit; follow-up inspection completed October 28, 2026 UTC. Existing AUD016-A1 / TC05-B105 / TC06-B110. This adds a narrow held-record comparison to the [carrier-enclosure study](https://github.com/AveLyra/911-conspiracy-investigation/blob/ad7be60185f5d3a49f0e0b7564f4da3610afaf92/investigation/broader-evidence/telephone-carrier-enclosures-2026-10-27/README.md). Earlier records and assessments remain preserved.
++October 28, 2026. Existing **AUD016-A1 / TC05-B105 / TC06-B110**. This extends the [earlier selected-row review](https://github.com/AveLyra/911-conspiracy-investigation/blob/74b2133ec389d68dd9906ccf89894442d07b58b7/investigation/broader-evidence/telephone-landscape-review-2026-10-27/README.md). No new native carrier record was acquired.
+ 
+-**One candidate-matched UA93 row has different visually read “Scp Duration” values: 7565 in the airline summary and 7555 in the carrier-table continuation. Its “Duration Connect” value is 14 in both.** The ten-unit difference is an unresolved image-level observation. It is not a measured ten-second difference in conversation length, evidence of an altered call, or an authenticated carrier-database inconsistency.
++**The supplied readings give 33 matching full printed keys, two uncertain-key candidate associations and matching Duration Connect fields across all 35 candidate pairs. One apparent operator-field discrepancy needs a better source.** This is evidence about the held images and our readings, not an authenticated reconstruction of calls.
+ 
+-## Sources and actual inspection
++## Scope and preserved sources
+ 
+-The held [public reader](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record) supplies JPEG reproductions. The acquisition study already obtained these images; this unit made **no new source download or network search**. All four originals were viewed and their SHA-256 values rechecked. They are not agency-native PDFs, authenticated original releases or native network exports. SOURCE-PINS.json preserves the exact asset URLs, original access UTC, byte lengths and digests.
++The three held JPEGs are hosted reproductions of released records: [reader 25, airline summary](https://html.scribdassets.com/5bafzdomdce6sz3/images/25-a00d283656.jpg); [reader 27, UA93 GTE table 1 of 2](https://html.scribdassets.com/5bafzdomdce6sz3/images/27-e74aaab25b.jpg); [reader 28, continuation 2 of 2](https://html.scribdassets.com/5bafzdomdce6sz3/images/28-778a401475.jpg). Exact entity URLs, original access times, dimensions, lengths and SHA-256 values are in [SOURCE-PINS.json](SOURCE-PINS.json). They remain unchanged.
+ 
+-| Reader page | Printed subject | Inspection in this unit |
++All 35 keyed row positions in each representation were inspected in the time, key and three duration columns. The two separately labeled cellular additions are excluded from this comparison. This is **not every cell, caller identity or table in the larger release**. Full pages and focused nearest-neighbor reading copies were inspected; enlargement added no information. No new OCR, software installation or downloaded executable was used. Raw identifiers, card/contact data and images remain local and are excluded from this public addition.
++
++Both representations were transcribed separately by the same analyst before the comparison. This was not a blinded or independent-expert reading. Uncertain characters were retained rather than filled from the desired match. The [row locators](ROW-LOCATORS.json) preserve original order and approximate native-pixel bands; the row number below the header is the primary locator. The continuation carries time/position but no repeated full Acis key, so its association to reader 27 remains a source-page continuation assumption.
++
++## F01 — Most selected fields agree, and time alone is insufficient
++
++| Checked quantity | Result | What it does not prove |
++|---|---:|---|
++| Keyed row positions per representation | 35 | Not 35 independent people or conversations. |
++| Accepted full printed key pairs | 33 | Key allocation/global uniqueness and historical event identity unverified. |
++| Uncertain-key candidate pairs | 2 | Summary rows 25 and 31 remain candidate associations, not full-key matches. |
++| Repeated time-label groups per representation | 2 | A time-only match can pick the wrong row. |
++| Matching Duration Connect pairs | 35 | Field semantics, units and completed conversations unverified. |
++| Operator fields reading zero per representation | 34 | Not proof of no operator handling. |
++| SCP pairs with accepted numbers in both | 25 | No inference from the ten unaccepted/blank pairs. |
++| Equal SCP numbers / differing SCP numbers | 24 / 1 | Not independent network corroboration; sources may share inputs. |
++
++Full-key matches do not depend on source order; the carrier rows are in a different sequence. The two masked-key candidates use repeated time plus Connect value in the remaining rows, and are explicitly weaker. In particular, two rows share **9:42:44**, and two share **9:43:48**, within each representation. That is a reason to avoid treating a timestamp as a unique event key; it is not proof of duplicated or fabricated calls.
++
++All 35 candidate-paired Connect fields have positive supplied numbers and agree. This is contrary evidence to an interpretation that the two held presentations generally disagree in that column. It does not establish 35 successful conversations or change what the AA77 zero fields mean: those involve a different service/source. Nor do the two source presentations provide independent corroboration if one was compiled from the other.
++
++## F02 — Apparent operator-duration difference; exact digits unresolved
++
++Summary **row 26**, reader 25, and carrier **row 34**, reader 27/28, have matching accepted printed keys, the **9:43:48** label and Connect **77**. Their operator fields have incompatible manual readings:
++
++| Source | Retained operator-field reading | Limit |
+ |---|---|---|
+-| [25](https://html.scribdassets.com/5bafzdomdce6sz3/images/25-a00d283656.jpg) | United Airlines Flight #93 — Telephone Calls | Header, row accounting, timezone legend, two cellular additions and one selected key/time/duration row |
+-| [26](https://html.scribdassets.com/5bafzdomdce6sz3/images/26-6b763d149c.jpg) | United Airlines Flight #175 — Telephone Calls | Header and column structure; no complete numeric transcription or call reconstruction |
+-| [27](https://html.scribdassets.com/5bafzdomdce6sz3/images/27-e74aaab25b.jpg) | UA 93 GTE Airfone Records, 1 of 2 | Body-row accounting and selected final-row printed key/time |
+-| [28](https://html.scribdassets.com/5bafzdomdce6sz3/images/28-778a401475.jpg) | UA 93 GTE Airfone Records, 2 of 2 | Body-row accounting, continuation fields and selected final-row time/durations |
++| Reader 25, summary row 26 | **3?25** | Second glyph unaccepted; do not publish a precise 3925 as established. |
++| Reader 28, continuation row 34 | **14?5** | Third glyph unaccepted; do not publish a precise 1435 as established. |
+ 
+-The four landscape pages therefore concern UA93 and UA175, not AA77. GTE table semantics cannot be imported into the earlier AA77 AT&T/Claircom evidence merely because these pages occur in the same reader. This is not a transcription of every cell on four pages or an independent census of calls.
++The accepted leading glyphs differ, but **these low-resolution readings could still be wrong**. The apparent difference therefore remains a qualified source-reading lead. No subtraction, seconds/minutes conversion, post-impact interval or conversation length is inferred. A blank/unaccepted SCP field on this row is not set to zero.
+ 
+-## L01 — Candidate row association, with its assumptions exposed
++Native-pixel inspection bands: summary **[1018,506,1150,528]**; continuation **[580,405,716,431]**, with row 34 the middle of the three visible continuation rows. These bands include context; they do not add detail. Seek the authenticated higher-resolution scan/native export, exact operator-duration definition and source-to-summary compilation/version history. Those could remove, change or substantiate this apparent difference. No cause is selected.
+ 
+-Count data rows from the top below the headers. Summary page 25 row 9 and carrier page 27 row 35 have the same manually read full printed Acis Call Id and time label **9:37:41**. Raw identifiers remain local. The public label **U93-A** is our temporary association label, not a caller identity or an assertion that the carrier key is globally unique.
++## F03 — The earlier SCP readings remain, with broader controls
+ 
+-Page 28 does not repeat that Acis key. The association from page 27 row 35 to page 28 row 35 relies on the two printed continuation labels, equal visible body-row counts, final-row position and the repeated **9:37:41** date/time label. This is a candidate continuation join, not an authenticated database join. Misassembly, independent sorting, a repeated/reused key, a transcription error or a changed export could weaken it. No full cross-page uniqueness or ordering validation was performed.
++Summary **row 9** versus carrier **row 35** retains **7565 versus 7555**, time **9:37:41**, Connect **14** and operator **0**. The earlier [source-level discrepancy](https://github.com/AveLyra/911-conspiracy-investigation/blob/74b2133ec389d68dd9906ccf89894442d07b58b7/investigation/broader-evidence/telephone-landscape-review-2026-10-27/README.md) is not a newly acquired independent measurement. Its unit and cause remain unknown.
+ 
+-Native upper-left pixel locators, with rectangles interpreted as left/top inclusive and right/bottom exclusive:
++The full-row accounting adds 24 equal accepted SCP pairs around it. Ten pairs have no accepted numeric reading in one or both sources; they were excluded from numerical comparison and not silently converted to zero. A reading error, copying/compilation difference or different export state could affect either apparent discrepancy. These are untested hypotheses, not explanations established by this work. A native dictionary and original source/version join remain necessary.
+ 
+-- Summary page 25 selected time/key: **[140,257,277,283]**; durations: **[1018,257,1144,283]**.
+-- Carrier page 27 final-row key/time: **[148,411,521,435]**. This rectangle also includes the preceding row; the final row is the selected one.
+-- Carrier page 28 final-row durations: **[583,410,717,435]**. This rectangle also includes the preceding row. The time is on the same final row in the full source image and the separately inspected left-hand strip.
++## F04 — Clocks and identities remain separate
+ 
+-Focused nearest-neighbor reading crops preserve the underlying pixels; they add no source detail. Source bytes remain unchanged. Independently recheck the linked original images, especially the small digit under discussion, before relying on this as a precise numerical discrepancy.
++The two early summary rows retain **INT**, and the later keyed rows **ET**. No equivalent timezone field or clock calibration was established for the carrier table. Equal printed time strings therefore do not measure synchronized clocks or authorize an automatic offset. No person was identified from a matching key. The reported 35+2 summary accounting remains a count of visible categories, not an independently verified FBI reconstruction of 37 calls.
+ 
+-## L02 — Preserve the two SCP readings and the agreement beside them
++## Reproduction, limitations and outstanding originals
+ 
+-| Source row for U93-A | Printed time label | Duration Connect | Duration Operator | Scp Duration |
+-|---|---|---:|---:|---:|
+-| Summary page 25, row 9 | 9:37:41, ET | 14 | 0 | **7565** |
+-| Carrier continuation page 28, row 35 | 9:37:41, no timezone established here | 14 | 0 | **7555** |
++[compare_tables.py](compare_tables.py) and [RESULTS.json](RESULTS.json) record **18 passed scoped checks**: three source entities; all row positions; accepted-key subset comparisons; uncertain-key candidate accounting; order reversal and an altered-key negative control; repeated-time ambiguity; and the supplied time/Connect comparisons. The code calculates, rather than assumes, the duration comparison counts. It checks the supplied transcriptions; it cannot certify that the analyst read each glyph correctly. [Input commitments](INPUT-COMMITMENTS.json) identify the unchanged local input without publishing the full keys. Independently transcribe the linked originals before rerunning; do not derive a second input from the first to manufacture agreement.
+ 
+-These are **manual image readings**, not values extracted from a native carrier table. The conditional arithmetic is 7565 − 7555 = **10 field units**. The units and operational definition of “Scp Duration” were not established. Neither the matching 14 nor the zero operator field establishes an actual conversation, its participant, its length or the absence of operator handling.
++No agency-native Request 14 delivery, missing Bates 609–631/fax 011–033 pages, network export/schema, operator ticket, office switch log, source-to-exhibit worksheet or authenticated clock join was acquired. The AA77 154/159, early connected/later unconnected, eight/seven, direct/collect and uncertain routed-event digit remain unresolved. This UA93 comparison supplies none of those missing joins.
+ 
+-The matching Duration Connect and Duration Operator fields are contrary evidence to a claim that every duration on this candidate row differs. They do not explain the SCP difference. The summary and carrier reproduction may derive from the same source and cannot be counted as independent corroboration of historical events.
++The current public search pass also acquired no FAA corrected QFR/receipt or signed action/no-action/disposition record. Some queries repeated earlier routes; they were stopped and logged locally as a process limit, not published as evidence of absence or concealment. The recently acquired FAA policy is separate from the actual case acts.
+ 
+-One initially considered difference in Duration Connect did **not** survive focused reading: a coarse view of the continuation could be misread as 10, but its enlarged original pixels read 14. That was our viewing limitation, not a conflict between historical versions. We did not publish the provisional 10 as a source value. The SCP readings remain side by side; no source is selected as controlling and no cause is adjudicated.
+-
+-Possible explanations include a reading error, copying/assembly error, or differing export/transformation states. These are **untested hypotheses**. They do not establish tampering, fabricated calls, a cover-up or why either value was printed. A higher-resolution authenticated scan, native export, field dictionary and source-to-summary transformation history are the discriminating records.
+-
+-## L03 — Table rows, service categories and clocks are different quantities
+-
+-Manual visual row accounting gives:
+-
+-| Held representation | Visible rows in counted scope | Counting limit |
+-|---|---:|---|
+-| UA93 summary, keyed airphone portion | 35 | Printed data rows, not independently established calls or conversations |
+-| UA93 summary, separately labeled cellular portion | 2 | Two additions below the keyed portion; not silently merged into carrier-table coverage |
+-| UA93 carrier page 27 | 35 | First half of a two-page table |
+-| UA93 carrier page 28 | 35 | Continuation columns; **not 35 additional calls** |
+-
+-Thus the summary contains 35 + 2 = **37 visible rows in those categories**, while the carrier table has 35 row positions across two pages. This is not an inconsistency merely because the totals differ. Nor does equal row count prove a complete 35-row match, 35 unique attempts, 37 unique people or any particular number of successful conversations. No all-key uniqueness test or full row-by-row transcription was performed. The counted scope excludes headers, legends, annotations, footers and privacy notices.
+-
+-The summary explicitly distinguishes **ET / Eastern Time Zone** and **INT / Indiana Time Zone**. Two early keyed rows carry INT; later rows carry ET. The selected row carries ET. The carrier pages do not establish equivalent timezone calibration here. Preserve the source's mixed labels; no automatic offset, clock conversion or inference about post-crash calls is applied. Source labels, real elapsed time and synchronized historical clocks remain separate.
+-
+-## Verification and remaining records
+-
+-`verify_landscape.py` checks the four original source digests, the supplied local selected-key equality with an unequal-key negative control, selected repeated time labels, the supplied duration-field agreement/difference, continuation row counts and counting-category arithmetic. RESULTS.json records the actual checks. These are checks of pinned bytes and manually supplied observations, **not independent OCR, historical authentication, a network-schema test, validated clock alignment or a physical experiment**. There is no false precision about the fraction of all telephone evidence verified.
+-
+-Raw source images, crops, full OCR, printed network/payment/contact identifiers, local paths and coordination material are excluded from the public payload. Safe field transcriptions, precise source locators, source pins, code, results and revision records are included. No external OCR, downloaded executable, dependency installation, outreach, fee, new request, filing or personal mailbox access occurred.
+-
+-Priority telephone inputs remain the complete agency Request 14 release and assembly/receipt history; carrier-native events and Acis key/field/time definitions; the summary's compilation/version history; OSPS transfer/collect/billing legs and office switch records; the original September 20 analysis and attachments; and source-to-court-exhibit worksheets. The earlier **154/159**, **eight/seven**, **direct/collect**, **connected/unconnected**, uncertain **07:26:18/07:26:28**, and hosted **609–631 / fax 011–033** gap remain unchanged and unresolved. This UA93 finding does not supply the missing AA77 caller/operator/office joins.
+-
+-All five original-record tracks remain active: FAA correction/delivery and signed disposition; telephone originals and leg joins; recorder continuity/custody/schema/clocks; materials native measurements/specimen joins; and steel preservation/intake/attribution. This small table comparison advances held-source checking and identifies a source-to-summary retrieval question. It does not complete those criteria or turn an uncertainty into conspiracy evidence.
+-
+-CHECKLIST.md accounts for scope, findings, contrary evidence, unresolved inputs and publication. README.diff is the exact first-addition diff. REVISION-STATUS.json records earlier-report hashes, checked unchanged. Publication and delivery to Overview are verified separately after the research check; successful delivery does not prove integration into the destination chat's master list.
++Original images, earlier reports, conflicting values and the full five-track work plan remain unchanged. The [revision record](REVISION-STATUS.json), [exact predecessor diff](diffs/selected-row-to-all-row-review.diff) and [checklist](CHECKLIST.md) account for this additive update. No private case/correspondence, outreach, new request, fee, private push, physical experiment, deletion or source overwrite occurred. All five native-input/testing gates remain open. Public branch/PR delivery and Overview integration are verified separately; publication cannot complete the scientific or historical questions.
