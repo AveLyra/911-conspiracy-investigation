@@ -1,5 +1,5 @@
 <!-- BEGIN OCT30 CURRENT NOTICE -->
-**Current edition:** 40 distinct later report bodies from 39 units, including the dated additions below. Earlier report states remain historical source observations. The new catalog association narrows a previously open link; it does not supply an executed transfer or case-specific outcome.
+**Current edition:** 41 distinct later report bodies from 40 units, including the dated additions below. Earlier report states remain historical source observations. The new catalog association narrows a previously open link; it does not supply an executed transfer or case-specific outcome.
 <!-- END OCT30 CURRENT NOTICE -->
 
 # Later source-unit findings and qualifications
@@ -421,6 +421,27 @@ The owning study acquired NARA34913873/AWA1077, a 26-page assembled Request2/res
 [NARA34913873](https://catalog.archives.gov/id/34913873); [fixed public report](https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md).
 
 The Overview checks committed derivative bodies, source annotations and publication identity. It does not independently re-read all PDF pages, rerun label arithmetic as a new historical test, acquire/align recordings, authenticate native custody/clocks or complete original-record gates. Raw scans/OCR/DOM, signatures, contacts/personnel, private correspondence and litigation strategy remain outside this derivative.
+
+<!-- BEGIN UPDATE053 ADDITION -->
+<a id="unit-faa-tmu1078-source-2026-10-30-8f063f41"></a>
+## Received update 053 — candidate TMU1078 memorandum and unresolved source fields
+
+The owning study acquired and read both images of NARA7599161/AWA937 (27,138 bytes/two pages; SHA-256 a10386e4e39d455c7438328eca88bb28a76b7aea5c33282b4537779924851432). Physical1 names TMU commercial line1078 and 1255–1316 UTC. It is a candidate counterpart of the earlier Item16 TMU1255 transcript range, not the initially sought Operations Manager1230–1344 source. Exact delivered-copy/channel/certification correspondence remains unverified; the earlier1255–1315 rerecording versus1255–1316 transcript label difference is unchanged.
+
+**Preserved document fields:** Keep catalog Fill Transcript versus subject Full Transcript; physical1 subject/certification AAL11 and Aircraft Accident File ZBW-ARTCC-148 versus physical2 work-file reference UAL175_R42_memo.doc. Physical1 shows six minute markers1255–1300 and one visible time-stamped utterance1300:41; physical2 is routing/footer with no additional visible time-coded dialogue. Visible pagination/masthead placeholders remain a preparation/version question. Speech and identifying fields are not republished; no correct flight label is selected.
+
+**Distinct dates and metadata layers:** The printed January 17, 2002 memorandum date, physical2 footer09/27/2001, PDF CreationDate D:20051222232254-05'00', ModDate D:20131106161605-05'00', Creator Canon DR-9080C TWAIN, Producer Adobe Acrobat 10.1.8 Paper Capture Plug-in and hosting Last-Modified Sat, 04 Sep 2021 04:01:33 GMT are distinct fields/layers. They are not a normalized historical clock, proof of actual scanner/software use or an inferred authoring history.
+
+**Context / contrary evidence:** The certification is qualified to conversations pertaining to the subject accident. Sparse typed dialogue over a declared range does not prove missing speech or an audio-gap duration. Different subject/reference roles, filename/template reuse, selected or incomplete conversion/assembly and other version explanations remain untested. No deliberate alteration or native authenticity follows from the fields or hash. Zero enumerated PDF attachments does not establish absence of native files elsewhere; no audio was acquired, decoded, played, listened to or aligned.
+
+**Actual reading and search scope:** Both acquired page images were read by the owner; this integration checked derived source/verification records and published bytes, not a new PDF or speech review. All51 folder titles across six pages were inspected, not all contents. A role/end query returned no hits despite terms visible in held inventory; a1230 query gave433 hits with only two ten-title views. The original three-description cap was explicitly extended for concrete937/940 locators, without changing source/PDF/page limits. NOM audio remains metadata-only/unmapped; NARA7599164/AWA940 is title-only/unopened, not an acquired second transcript.
+
+**Open TODO:** Native UAL175_R42_memo.doc, complete certified/export/version/assembly copies and page/attachment manifests; case/flight/position mapping; line1078 rerecording/transcript/certification, unique source/tape/channel/generation and clock/end-label rules. The actual Operations Manager counterpart remains open. Separately preserve correctedMay2003 QFR/receipt, signed consideration/action/no-action/reasons and distinct recommendation implementation/closure. All five tracks/eighteen substantive criteria remain unfinished.
+
+**Publication state:** The ten-file derivative is published as AveLyra at0584407dac2190a9f9514ee157124446e60672d5. Source-owner raw-body checks and Overview commit/ref/account/blob checks concern derivative identity, not independent historical evidence or scientific acceptance. No raw scan, DOM/full extraction, speech, staff/contact/signature or private-case material was added to the public derivative.
+
+**Citations:** [exact report](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md); [all safe observed fields](CITATIONS.md#reference-3316be4282ff6c12); [source/page/line pins](CITATIONS.md#reference-5d4426d66cacadd2); [owner verification](CITATIONS.md#reference-1f0e8666e22856fa); [reading scope](CITATIONS.md#reference-e0d3656e05ed258b); [original open records](CITATIONS.md#reference-942647ad9db5eaac); [focused publication receipt](CITATIONS.md#reference-4be5247b953aadd0); [handoff](CITATIONS.md#reference-c0529efbc1523f89).
+[NARA7599161](https://catalog.archives.gov/id/7599161); [source PDF](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/c-Transcripts/5-AWA-937-Memorandum-Fill-Transcript-New-York-ARTCC.pdf); [fixed public report](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md).
 
 
 ## Publication status reconciliation — October 30
