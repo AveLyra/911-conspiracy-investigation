@@ -1,0 +1,39 @@
+# The purportedly omitted call: what two candidate copies actually contain
+
+October 31, 2026. **The Alderson-attributed public candidate contains a near-matching difficult-time/military-coordinator call and the following conditional Langley-backup discussion.** That is a substantive qualification to a broad omission reading of the staff notes. It does not settle which versions or exact call the notes meant, whether a whole clear call was retained, or whether timing errors were corrected.
+
+The [official interview/review notes, page 17](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17), report that a clear ZNY positioning call and some following conversations occur in an original transcript but not Alderson, and require a later MCC Channel 2 timing redo. That warning remains preserved, unchanged and unresolved. The exact versions, source/channel relationship and completed verification remain TODOs.
+
+## Positive passages, not an absence inferred from a search
+
+| Selected passage | Earlier [compiled reproduction](https://www.scribd.com/document/14142009/NYC-Box-2-NEADS-Transcript-Rome-NY-Fdr-Transcript-Pgs-1-82-1237-1417) | [Alderson-attributed candidate](https://www.scribd.com/document/14142047/NYC-Box-3-Neads-conr-norad-Fdr-Transcript-Neads-Channel-2-Mcc-Upside-006) |
+| --- | --- | --- |
+| Difficulty contacting the military coordinator; NORAD wants fighters held over New York | Printed59/NCT0000107, lower block; rows `:53`, `:54`, `:57` after the earlier `13:12:02` label | Viewer22, internal 0052, lines 8–25 |
+| Nearby short McCarthy/Nasypany exchange | Printed60/NCT0000108, `13:13:29` through `:41` | Viewer22, internal 0053, lines 5–15 |
+| Conditional Langley/tanker/backup discussion | Printed60/NCT0000108, `13:15:04` paragraph | Viewer23, internal 0055, lines 1–7 |
+
+The content sequence gives a better comparison than a single word match. It does **not** authenticate a unique audio event, prove the note's named caller, or establish identical complete calls. These copies may share underlying recordings and are not independent witnesses. No clock offset is calculated; abbreviated old time fields remain abbreviated rather than expanded into invented fully printed timestamps. Exact locators and limits are in `COMPARISON-PINS.json`, OC01/03/05.
+
+The strongest objection to concluding that the staff warning was wrong is that **we have not identified the exact versions or exact call it referred to**. A later/different transcript, another related call, a channel/coverage difference or partial versus complete audibility could matter. These are untested alternatives, not resolved explanations. Conversely, the currently visible content prevents treating the warning as proof that every Alderson-attributed copy lacks this entire sequence.
+
+## A new comparison confound and a local wording difference
+
+**Channel scope:** immediately above the earlier copy's target call, printed 59 has a **Channel 12/MCC-OP** heading. Its DRM number is not clearly supplied in that local heading; we do not fill it in. The previously inspected printed 50 heading was **DRM2/DAT2 Channel 2**, while the other candidate's cover identifies **DRM1/DAT2 Channel 2 MCC Upside**. All three observations remain side by side. Do not automatically assign the printed 50 heading to every later block, or treat this as a demonstrated Channel 2-to-Channel 2 comparison. The additional context does not resolve the DRM-label discrepancy or prove why the note reports an omission. OC02 records the legible local fields, the separate reader rendering and the punctuation/DRM-digit uncertainty beside the prior labels.
+
+**Tanker wording:** old printed 60, the `:37` sentence, displays **A KC10**; new viewer 23/internal 0054, line 16 displays **Two KC-10s**. This is a local text difference in near-matching passages. It is not evidence that one or two tankers were actually ordered or supplied. Neither reading is selected. Source recordings, speaker/context mapping and transcription quality-control records would be needed to test it. OC04 preserves both.
+
+## What was actually read and preserved
+
+Two ordinary reader finds supplied positive locators in both public copies. Actual visual reading then covered selected viewports on old printed 59/60 and new viewer 22/23. The first old59 screenshot was clipped and did not show the target call; it is retained as such. One prospectively documented extra same-page view after ordinary browser zoom exposed the lower call and footer. Old60 was zoomed out with small text and only selected passages adopted, with reader locator support. New22/23 show the relevant internal sections, but parts of those pages remain outside the view. No complete 82-page or 93-page review, whole-version diff or exhaustive following-conversation test occurred. `READING-SCOPE.json` records the actual deviation from the initial viewport cap rather than hiding it.
+
+Five unedited JPEGs remain in the verified native media store. `SOURCES.json` gives each byte count/SHA-256, including the clipped view. Key target views are old59lower SHA-256 `2be27ccbce1866ead7430d0c8343a19f4e436a155c5bc62b908945974787db07` and new22 SHA-256 `9e6680750eec50897d0d45187b1f453840ef8650a6c70c50a75551e86bdc0be2`. These identify **our browser representations**, not native transcript PDFs or historical masters. No native source PDF was acquired or hashed. The official note packet's separately retained hash and previous source readings are distinguished from this unit's preview work.
+
+The previews displayed no reading gate for these views. No signup, download, trial, ad installation, hidden endpoint, source repair or gate workaround was used. Platform AI titles/upload fields and handwritten annotations are not adopted as authentication. Raw screenshots/marked pages/full speech and incidental personal/contact/access/ad details are excluded from the public notes.
+
+## What remains to obtain
+
+Obtain the actual original/Alderson version pair, source/copy/channel manifests and staff call/page referents; then test the whole allegedly missing call and the specific following conversations. Obtain the post-about9:10 redo worksheets, validated output and delivery history. A completed and propagated correction could weaken an integrity concern; an established known uncorrected error in the actual relied-on version could strengthen a narrower one. These candidates establish neither outcome.
+
+`OPEN-TODOS.json` preserves the prior MC/MFR/AV/OM dependencies and original 18 requirements. AV-T02 advances only to **candidate passages inspected**. FAA corrected-QFR/receipt and signed action/no-action/recommendation outcomes, telephone native field/call joins, recorder configuration/custody/clock inputs, materials specimen/native-calibration joins and steel preservation/inventory/attribution/delivery gaps remain open/partial. No calibrated technical-owner test was duplicated. No original criterion is complete from this comparison.
+
+The [preceding report](https://github.com/AveLyra/911-conspiracy-investigation/blob/e7e67b0b3ced08a95400a401448dee6dc4ae3a4e/investigation/broader-evidence/neads-alderson-preview-2026-10-31/README.md), conflicting records and all earlier source bytes remain unchanged. `CHECKLIST.md` accounts for the requirements; `SOURCE-CHECKS.json` separates representation checks from historical validation; `TEXT-CHANGES.diff` supplies actual additive text changes. `EDITORIAL-REVISION.diff` preserves the pre-publication qualification of hard-to-read heading punctuation against the retained draft; this changes our precision, not the source. No outreach, fee, request, filing, private-case use, deletion, private push, merge or public-history rewrite occurred. Publication is a separate milestone, not substantive goal completion.
