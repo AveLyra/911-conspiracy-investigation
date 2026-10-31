@@ -20,7 +20,7 @@ check('247 original documentary IDs',len(documentary)==247 and {x['id'] for x in
 for name,ids in sets.items():
     actual=set(re.findall(r'<a id="([^"]+)"', (P/name).read_text()))
     check('exact annotation IDs '+name,actual==ids)
-check('55 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==55)
+check('56 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==56)
 for ident in ['fa044','pl022','pl023','pl024','pl025','nr068','nr069','nr070','nr071','nr072','pl026','pl027','nr073','pl028','pl029']:
     text=(P/'SOURCE-FINDINGS.md').read_text().split(f'<a id="{ident}"></a>',1)[1].split('<a id=',1)[0]
     check('addition observation contrary and TODO '+ident,all(word in text for word in ['**Context / contrary evidence:**','**Open TODO:**','**Citations:**']))
@@ -61,7 +61,7 @@ check('062original failed predicate retained',source_results['062']['failed_chec
 check('source-check results linked with immutable result hashes',all(z['verification_url'].startswith('https://github.com/AveLyra/911-conspiracy-investigation/blob/'+z['commit']+'/') and len(z['verification_sha256'])==64 for z in source_results.values()))
 check('allfive tracks eighteen criteria stay unfinished','All five tracks and eighteen substantive criteria remain open/partial' in text and 'not a fresh independent primary-image' in text)
 methods=meta['source_method_records']
-check('five new research reports distinct from one execution note',set(methods)=={'063','064','065','066','326-639-939'} and len(meta['execution_status_notes'])==1 and meta['counts']['source_units']==55)
+check('five new research reports distinct from one execution note',set(methods)-{'336-337'}=={'063','064','065','066','326-639-939'} and len(meta['execution_status_notes'])==1 and meta['counts']['source_units']==56)
 check('063partial mirror raw order blanks and source-role limits',all(v in text for v in ['No source PDF was downloaded','0740,0738','own time cell blank','12rows,10time cells and2blanks','No unique event/call/version join or actual 13-minute delay','not receipt/execution/display state']))
 r63=methods['063']['record'];check('063original screenshot ledger result retained',r63['all_capture_bytes_and_hashes_match'] and r63['manual_rows']==12 and r63['printed_time_cells']==10 and r63['blank_time_cells_preserved']==2 and len(r63['decreasing_adjacent_labels'])==1 and r63['decreasing_adjacent_labels'][0]['nominal_label_seconds_difference']==-120)
 check('064plans and distinct document schedule objects retained',all(v in text for v in ['row1343','Row1739','Accident_1738/11sep.doc','not proof audio was saved','row1743 continues at p7top with schedule','row0015/12Sep','independent reader']))
@@ -76,6 +76,14 @@ reply=methods['326-639-939']['record'];check('replysix reference checks not inde
 check('replydates nonautomatic thread and unidentified referent retained',all(v in text for v in ['August16,2001','August15 inquiry','not automatically a reply','August24,5:29PM','unidentified earlier communication','London/Paris','Frahm']))
 check('replyvisible equality source dependence and contrary explanation retained',all(v in text for v in ['March11,2006','physicalp5 repeats','detected no substantive visible wording difference','no pixel/native identity','not independent corroboration','Different information, questions, thresholds','blanket stopped-investigation','DRAFT-T01–T06','336/337 are untried']))
 check('new method records have immutable source-result links',all(z['result_url'].startswith('https://github.com/AveLyra/911-conspiracy-investigation/blob/'+z['commit']+'/') and len(z['result_sha256'])==64 for z in methods.values()))
+check('336337source copy roles and missing report boundary retained',all(v in text for v in ['301,981bytes/six pages','359,793bytes/five pages','August21,2001 request/cover','No readable counterpart of the referenced report/page7','not visibly a French intelligence agency assessment','Masood Al-Benin','dark image that remained uninterpretable']))
+check('336337index labels do not authenticate attachment or motive',all(v in text for v in ['Broad index labels are retained beside actual contents','exact missing-attachment join','not independent evidence','no controlling account','blanket stopped-investigation']))
+check('336337editorial held-versus-new corrections preserved',all(v in text for v in ['M-MP1-88000363–88000368','M-MP1-88000370–88000374','Report-line pins locate derivative prose only','326/639are previously acquired/read','939was previously acquired/read but not newly acquired or read','previous_now_held/searches_completed','strict whitespace gate remained enabled']))
+r336=methods['336-337']['record'];p336={z['exhibit']:z for z in r336['checks'] if 'exhibit' in z}
+check('336337six PDF plus index reference integrity within limits',len(r336['checks'])==7 and all(z['matches'] for z in r336['checks']) and p336['336']['sha256']=='fd8137a4554318a5a6b1b71ebfe032da8fb996d7cd69c863edd4cbd407fa5f37' and p336['336']['pages']==6 and p336['337']['sha256']=='fc4f9d1ac19ce4c638d5dd4989f53dec4d55ea5a6f2626daae199b5a0942af68' and p336['337']['pages']==5 and not r336['manual_reading_independently_verified_by_this_code'] and not r336['historical_or_native_authentication_performed'])
+f336=meta['source_workflow_failures']['336-337'];e336=meta['editorial_history']['336-337']
+check('336337failed precommit and pinned editorial history preserved',f336['failed_operation']=='gitave diff --cached --check before commit' and f336['result'].startswith('exit2;') and f336['no_commit_or_push_created_by_failed_script'] and 'strict whitespace gate unchanged' in f336['repair'] and e336['diff_url'].endswith('/EDITORIAL-REVISION.diff') and len(e336['sha256'])==64)
+check('336337open TODOs and next candidates remain unaccepted',all(v in text for v in ['DRAFT-T01–T06 remain','complete referenced report/page7','59B/346/642 are indexed candidate','All five tracks and eighteen original substantive criteria remain open/partial']))
 pattern=re.compile(r'\]\((?:<([^>]+)>|([^\)\n]+))\)');broken=[];links=0
 for f in P.glob('*.md'):
     for angled,plain in pattern.findall(f.read_text()):

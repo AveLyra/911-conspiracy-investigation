@@ -1,8 +1,8 @@
 # Investigation catalogue — public research edition
 
-October 30, 2026. This edition publishes the maintained catalogue through received063–067 and the326/639/939review, including all fifteen later source findings and the steel minute-approval qualification. It is a research publication derived from a broader private working catalogue; it does not establish a collapse cause, conspiracy conclusion or completion percentage.
+October 31, 2026. This edition publishes the maintained catalogue through the336/337 source-identification update, including all fifteen later source findings and the steel minute-approval qualification. It is a research publication derived from a broader private working catalogue; it does not establish a collapse cause, conspiracy conclusion or completion percentage.
 
-The overlapping populations are **175 extended-master entries, 370 source findings, 49 consolidated leads, 13 recent breadcrumbs, 55 later report bodies/54 units, 247 documentary claim/text units and eleven recovered earlier contexts**. Historical research items retain their original numbering. Entries sharing a source are not independent evidence and must not be added as votes or probabilities.
+The overlapping populations are **175 extended-master entries, 370 source findings, 49 consolidated leads, 13 recent breadcrumbs, 56 later report bodies/55 units, 247 documentary claim/text units and eleven recovered earlier contexts**. Historical research items retain their original numbering. Entries sharing a source are not independent evidence and must not be added as votes or probabilities.
 
 The fifteen finding additions are FA044, PL022–PL029 and NR068–NR073. They retain conditional event-order limits, Spanish identification/transaction qualifications, CIA accountability/disclosure and denominator issues, and source/citation corrections. The steel approval is distinct from exact approved-text identity, agreement execution, transport, receipt, cutting and specimen custody. FAA schedule and catalog associations remain distinct from executed transfers and case-specific outcomes.
 
@@ -43,6 +43,10 @@ The source studies retain four failed OCR anchors in058 and one in062; later che
 - **326-639-939:** An earlier reply and a later caution coexist with reported dissemination; the939 attachment associates639 but is not independent corroboration. [Source report](https://github.com/AveLyra/911-conspiracy-investigation/blob/3f50f2c6904eca6a39efa4c06c15ea838729a65d/investigation/broader-evidence/moussaoui-reply-update-2026-10-30/README.md).
 
 Five public research-report bodies are added;067is a separate execution-status note, not a historical-source body or archive-exhaustion finding. The navigation-cap failure and older OCR failures remain. No screenshot hash authenticates a native log, and no document count proves independent corroboration or conspiracy.
+
+## October31 integration —336/337
+
+Both court copies are acquired and inspected:336is request/identification material with a referenced report-page7 target;337is a web-profile printout, not an identified French agency assessment. The index labels remain beside actual contents; a request, working-copy disclaimer and an article do not authenticate the missing French/CIA assessment or its receipt. Earlier control messages, contrary accounts of information-seeking and all native/package/version TODOs remain. Editorial held-versus-new status corrections and the failed v2 whitespace gate are preserved. [Full findings and source pins](https://github.com/AveLyra/911-conspiracy-investigation/blob/385f959fd70d5caee75fe192325771ed7d8bdc9d/investigation/broader-evidence/moussaoui-french-controls-2026-10-30/README.md); [exact editorial corrections](https://github.com/AveLyra/911-conspiracy-investigation/blob/385f959fd70d5caee75fe192325771ed7d8bdc9d/investigation/broader-evidence/moussaoui-french-controls-2026-10-30/EDITORIAL-REVISION.diff).
 
 ## Reader and source routes
 
