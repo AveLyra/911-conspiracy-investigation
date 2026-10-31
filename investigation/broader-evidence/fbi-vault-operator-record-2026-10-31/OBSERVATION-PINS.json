@@ -1,0 +1,98 @@
+{
+  "source_sha256": "a7d3d872daf33d41c993ade5ccf2e9aa5421ffb1f4cda6164d6bb712372dde41",
+  "source_url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file",
+  "pins": [
+    {
+      "id": "VP01",
+      "type": "Official source acquisition and record identity",
+      "page": 4,
+      "page_url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4",
+      "locator": "Datedheading; role paragraph; lower visible date/case fields",
+      "source_fields": {
+        "date": "09/11/2001",
+        "person": "Lisa Jefferson",
+        "role_as_printed": "GTE Airphone Customer Service Representative",
+        "case": "265D-NY-280350"
+      },
+      "observed": "An FBI-hosted interview record, whose continuation is physical5/internal2. It is not the September20AmericanAirlinesusageanalysis or its M-INT/265Aidentifier.",
+      "limits": "Officialhosting qualifies provenance of this releasedscan only. Redactedagent/contact/identityfields not reconstructed, no sourceaudio or signednativeinterview authentication."
+    },
+    {
+      "id": "VP02",
+      "type": "Source report of direct conversation",
+      "page": 4,
+      "page_url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4",
+      "locator": "Bodyparagraphs2–5",
+      "printed_times_and_intervals": {
+        "initial_call": "approximately 8:45 a.m. Central time",
+        "before_cockpit_entry": "seven minutes",
+        "further_conversation": "another eight minutes",
+        "passengers_preparing_to_act": "approximately 9:00 a.m. Central time"
+      },
+      "source_report": "Jefferson reports a conversation with a caller identifying himself as ToddBeamer. The report describes changing cabin events and an unusually low amount of background noise.",
+      "limits": "Participantinterview as recordedbyFBI, not rawaudio/nativecalllog or independentlyverifiedvoice/clock. Reported speech/eventsequence doesnotindependentlydateaircraft events."
+    },
+    {
+      "id": "VP03",
+      "type": "Source report of silent open connection",
+      "page": 5,
+      "page_url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=5",
+      "locator": "Firstparagraph",
+      "printed_times_and_intervals": {
+        "last_exchange": "9:00 a.m. Central time",
+        "connection_kept_open": "another twenty minutes"
+      },
+      "source_report": "After a reported go-ahead, Jefferson says she heard nothing and kept the connection open until she disconnected.",
+      "limits": "Reported connection persistence is distinct from continuing passenger speech. Doesnot independentlyidentify a switchleg, billinginterval, physicalaircraftcondition or preciseeventendpoint."
+    },
+    {
+      "id": "VP04",
+      "type": "Source report of indirect provider chain",
+      "page": 5,
+      "page_url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=5",
+      "locator": "Secondparagraph",
+      "printed_times_and_intervals": {
+        "callback_delay": "approximately five minutes later",
+        "callback_clock_estimate": "9:30 a.m. Central time",
+        "conversation_endpoint": "approximately 9:43 a.m."
+      },
+      "source_report": "A VerizonQualityControl contact relayed information from relatives reportedly incontact with another passenger; Jefferson explicitly couldnothear that passenger herself and received informationsecondhand. The report says the providerconversationcontinued until the connectionwiththeairphoneended.",
+      "limits": "Do not complete the passengerLNUname or identifyredactedparticipants. Exactrouting, simultaneouslegs, calleridentity and whichconnectionendpoint these labels describe remainunverified. This is not a GTEraw-eventdictionary or directmonitoring of the laterpassenger."
+    },
+    {
+      "id": "VP05",
+      "type": "Source report of equipment indication",
+      "page": 5,
+      "page_url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=5",
+      "locator": "Endoffirstparagraph",
+      "source_report": "The interview says trackingequipment indicated a Pittsburghtransceiver and its servicearea.",
+      "limits": "Equipmentrecords, clockdefinitions, service-area bounds and actualdisplay not acquired. Not a precisegeolocation, a verifiedaircraftpath or an authentication of an eventrow."
+    },
+    {
+      "id": "VP06",
+      "type": "Conditional arithmetic/source-estimate comparison",
+      "pages": [
+        4,
+        5
+      ],
+      "page_urls": [
+        "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4",
+        "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=5"
+      ],
+      "locator": "VP02–04 printedtimes/intervals; TIMING-ARITHMETIC.json",
+      "inputs_preserved": [
+        "8:45Central",
+        "7minutes",
+        "8minutes",
+        "9:00Central",
+        "20minutes",
+        "approximately5minutes",
+        "estimated9:30Central"
+      ],
+      "observed": "Nominal7+8minutes agrees with8:45→9:00. Taking9:00plus20plus5literally yields9:25, beside the separately estimated9:30callback.",
+      "limits": "Five-minutearithmeticdifference underliteralnominalinputs only, not an empiricallymeasuredtimegap. The interview uses estimates and supplies no uncertaintybounds or synchronizedclockverification. Preserve both; nopreferredtime or cause selected."
+    }
+  ],
+  "locator_convention": "PhysicalPDFpages and visible paragraph/heading anchors, not invented native agencyline numbers. No private/contact/numericaccount data adopted.",
+  "source_dependence": "One interview report of two described contacts with different audibility chains. Not independent witnesses or proof of every latercallattribution."
+}
