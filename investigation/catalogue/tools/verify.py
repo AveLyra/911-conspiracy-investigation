@@ -20,7 +20,7 @@ check('247 original documentary IDs',len(documentary)==247 and {x['id'] for x in
 for name,ids in sets.items():
     actual=set(re.findall(r'<a id="([^"]+)"', (P/name).read_text()))
     check('exact annotation IDs '+name,actual==ids)
-check('50 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==50)
+check('55 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==55)
 for ident in ['fa044','pl022','pl023','pl024','pl025','nr068','nr069','nr070','nr071','nr072','pl026','pl027','nr073','pl028','pl029']:
     text=(P/'SOURCE-FINDINGS.md').read_text().split(f'<a id="{ident}"></a>',1)[1].split('<a id=',1)[0]
     check('addition observation contrary and TODO '+ident,all(word in text for word in ['**Context / contrary evidence:**','**Open TODO:**','**Citations:**']))
@@ -60,6 +60,22 @@ check('058four original failed predicates retained',[z['check'] for z in source_
 check('062original failed predicate retained',source_results['062']['failed_checks']==[{'label':'selected visible OCR anchor p8: not in continuous contact','actual':False,'expected':True,'passed':False}])
 check('source-check results linked with immutable result hashes',all(z['verification_url'].startswith('https://github.com/AveLyra/911-conspiracy-investigation/blob/'+z['commit']+'/') and len(z['verification_sha256'])==64 for z in source_results.values()))
 check('allfive tracks eighteen criteria stay unfinished','All five tracks and eighteen substantive criteria remain open/partial' in text and 'not a fresh independent primary-image' in text)
+methods=meta['source_method_records']
+check('five new research reports distinct from one execution note',set(methods)=={'063','064','065','066','326-639-939'} and len(meta['execution_status_notes'])==1 and meta['counts']['source_units']==55)
+check('063partial mirror raw order blanks and source-role limits',all(v in text for v in ['No source PDF was downloaded','0740,0738','own time cell blank','12rows,10time cells and2blanks','No unique event/call/version join or actual 13-minute delay','not receipt/execution/display state']))
+r63=methods['063']['record'];check('063original screenshot ledger result retained',r63['all_capture_bytes_and_hashes_match'] and r63['manual_rows']==12 and r63['printed_time_cells']==10 and r63['blank_time_cells_preserved']==2 and len(r63['decreasing_adjacent_labels'])==1 and r63['decreasing_adjacent_labels'][0]['nominal_label_seconds_difference']==-120)
+check('064plans and distinct document schedule objects retained',all(v in text for v in ['row1343','Row1739','Accident_1738/11sep.doc','not proof audio was saved','row1743 continues at p7top with schedule','row0015/12Sep','independent reader']))
+r64=methods['064']['record'];check('064two screenshot checks not native or successful retrieval',len(r64['actual_checks'])==2 and all(z['bytes_match'] and z['sha256_match'] for z in r64['actual_checks']) and not r64['source_PDF_or_DOC_authenticated'] and not r64['recording_retrieval_success_or_delivery_proved'])
+check('065official locator and metadata-level limits retained',all(v in text for v in ['NARA2608461','series2555805','Container20','510,869bytes','Not Yet Available Online','Possibly Restricted','Partially Restricted','T1:','T2:','T3:']))
+r65=methods['065']['record'];check('065exact FAILED prospective cap preserved',r65['prospective_navigation_cap']==8 and r65['actual_navigation_requests']==10 and r65['navigation_cap_result'].startswith('FAIL: two requests over') and r65['pdf_page_images_read']==2 and 'not retrospectively called passing' in text)
+r66=methods['066']['record'];check('066date unknown partial views and raw identifiers retained',r66['within_caps'] and r66['actual']['new_viewer_pages']==4 and r66['actual']['viewport_images']==7 and not r66['actual_full_pages_read'] and all(v in text for v in ['Page9 date header was not inspected','0834/1133 cannot be assigned to the attack morning','raw advisory ID01 025','not a validated count of25','not current','fax/retraction','not a whole-log absence finding']))
+s67=meta['execution_status_notes'][0];ids67={f'{p}{i:02}' for p,count in [('FAA',4),('TEL',4),('REC',3),('MAT',3),('STL',4)] for i in range(1,count+1)}
+check('067dated blocked state all18 IDs without private goal payload',s67['id']=='067' and s67['original_record_goal_status']=='blocked' and set(s67['criteria_ids'])==ids67 and len(s67['criteria_ids'])==18 and s67['full_scope_preserved'] and not s67['global_archive_exhaustion_claimed'] and not s67['private_source_records_exported'] and not s67['later_collateral_step_completes_original_goal'])
+check('067bounded searches and dated owner limits not absence proof',all(v in text for v in ['three consecutive goal turns','notLoaded/interrupted','2187/2234/2236/2241','not in RECAP','Four approximate SOCC native searches','Three PASSUR queries','The audit did not establish every external archive exhausted','dated owner states']))
+reply=methods['326-639-939']['record'];check('replysix reference checks not independent manual truth',len(reply['checks'])==6 and all(z['matches'] for z in reply['checks']) and not reply['manual_reading_independently_verified_by_this_code'] and not reply['historical_or_native_authentication_performed'])
+check('replydates nonautomatic thread and unidentified referent retained',all(v in text for v in ['August16,2001','August15 inquiry','not automatically a reply','August24,5:29PM','unidentified earlier communication','London/Paris','Frahm']))
+check('replyvisible equality source dependence and contrary explanation retained',all(v in text for v in ['March11,2006','physicalp5 repeats','detected no substantive visible wording difference','no pixel/native identity','not independent corroboration','Different information, questions, thresholds','blanket stopped-investigation','DRAFT-T01–T06','336/337 are untried']))
+check('new method records have immutable source-result links',all(z['result_url'].startswith('https://github.com/AveLyra/911-conspiracy-investigation/blob/'+z['commit']+'/') and len(z['result_sha256'])==64 for z in methods.values()))
 pattern=re.compile(r'\]\((?:<([^>]+)>|([^\)\n]+))\)');broken=[];links=0
 for f in P.glob('*.md'):
     for angled,plain in pattern.findall(f.read_text()):

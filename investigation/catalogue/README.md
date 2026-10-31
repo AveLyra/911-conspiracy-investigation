@@ -1,8 +1,8 @@
 # Investigation catalogue — public research edition
 
-October 30, 2026. This edition publishes the maintained catalogue through received handoffs 057–062, including all fifteen later source findings and the steel minute-approval qualification. It is a research publication derived from a broader private working catalogue; it does not establish a collapse cause, conspiracy conclusion or completion percentage.
+October 30, 2026. This edition publishes the maintained catalogue through received063–067 and the326/639/939review, including all fifteen later source findings and the steel minute-approval qualification. It is a research publication derived from a broader private working catalogue; it does not establish a collapse cause, conspiracy conclusion or completion percentage.
 
-The overlapping populations are **175 extended-master entries, 370 source findings, 49 consolidated leads, 13 recent breadcrumbs, 50 later report bodies/49 units, 247 documentary claim/text units and eleven recovered earlier contexts**. Historical research items retain their original numbering. Entries sharing a source are not independent evidence and must not be added as votes or probabilities.
+The overlapping populations are **175 extended-master entries, 370 source findings, 49 consolidated leads, 13 recent breadcrumbs, 55 later report bodies/54 units, 247 documentary claim/text units and eleven recovered earlier contexts**. Historical research items retain their original numbering. Entries sharing a source are not independent evidence and must not be added as votes or probabilities.
 
 The fifteen finding additions are FA044, PL022–PL029 and NR068–NR073. They retain conditional event-order limits, Spanish identification/transaction qualifications, CIA accountability/disclosure and denominator issues, and source/citation corrections. The steel approval is distinct from exact approved-text identity, agreement execution, transport, receipt, cutting and specimen custody. FAA schedule and catalog associations remain distinct from executed transfers and case-specific outcomes.
 
@@ -33,6 +33,17 @@ The next FAA study acquires AEA1121 (nine pages) and AEA1123 (three pages), prev
 
 The source studies retain four failed OCR anchors in058 and one in062; later checks do not repair or replace them. Exact results and unchanged code are linked in the later-source catalogue. Acquisition and field comparisons do not complete any of the eighteen substantive criteria.
 
+## Received063–067 and326/639/939
+
+- **063:** A public mirror narrows page/Bates targets; native bytes, clock definitions and a unique interview/call join remain unknown. [Source report](https://github.com/AveLyra/911-conspiracy-investigation/blob/b4c559927c95180b96870112374910a0af15d65e/investigation/broader-evidence/telephone-socc-log-reader-2026-10-30/README.md).
+- **064:** The1343 conditional recording plan and1739 document checkpoint identify separate missing originals; neither establishes surviving audio. [Source report](https://github.com/AveLyra/911-conspiracy-investigation/blob/0ed019eb2c9a36dff0108785eae4069761c22db3/investigation/broader-evidence/telephone-socc-recording-followup-2026-10-30/README.md).
+- **065:** NARA2608461 supplies a folder-level route, not authenticated mirror pages; the8-request navigation cap was exceeded by2. [Source report](https://github.com/AveLyra/911-conspiracy-investigation/blob/490562c7747d26c6fa33a17bc0fe35262a6d5262/investigation/broader-evidence/telephone-socc-nara-locator-2026-10-30/README.md).
+- **066:** Later entries identify data/notice targets; page9’s uninspected date header prevents assigning its time labels to the attack morning. [Source report](https://github.com/AveLyra/911-conspiracy-investigation/blob/565a624e10d986a83865d3c0f239db8ba75a707f/investigation/broader-evidence/telephone-socc-later-leads-2026-10-30/README.md).
+- **067:** The original-record goal was marked blocked after repeated missing-input barriers; this is execution metadata, not archive exhaustion or historical evidence. This is a dated execution-status note; the underlying private audit/goal records are not published.
+- **326-639-939:** An earlier reply and a later caution coexist with reported dissemination; the939 attachment associates639 but is not independent corroboration. [Source report](https://github.com/AveLyra/911-conspiracy-investigation/blob/3f50f2c6904eca6a39efa4c06c15ea838729a65d/investigation/broader-evidence/moussaoui-reply-update-2026-10-30/README.md).
+
+Five public research-report bodies are added;067is a separate execution-status note, not a historical-source body or archive-exhaustion finding. The navigation-cap failure and older OCR failures remain. No screenshot hash authenticates a native log, and no document count proves independent corroboration or conspiracy.
+
 ## Reader and source routes
 
 - [Master leads](MASTER-LEADS.md) and [370 source findings](SOURCE-FINDINGS.md).
@@ -45,7 +56,7 @@ The source studies retain four failed OCR anchors in058 and one in062; later che
 
 Original studies control their own methods and acceptance. Supplied URLs are citation leads unless an owning report records inspection. Normalized public data preserve research content while excluding private file locators and administration. Unpublished originals remain explicit gaps; a pointer is not new authentication. This edition excludes lawsuit strategy, private correspondence, mailbox/attachment inventories, chat transcripts, credentials and local identifying paths. The private source catalogue remains separately preserved.
 
-Run `python3 investigation/catalogue/tools/verify.py` from this repository. Structural/source-snapshot verification does not independently validate historical events or scientific conclusions. Later source deliveries after update 062 require their own explicit reconciliation.
+Run `python3 investigation/catalogue/tools/verify.py` from this repository. Structural/source-snapshot verification does not independently validate historical events or scientific conclusions. Later source deliveries after this received batch require their own explicit reconciliation.
 
 ## Readable research guide
 

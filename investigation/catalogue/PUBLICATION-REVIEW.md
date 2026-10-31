@@ -12,7 +12,7 @@
 
 The immediately preceding public edition remains preserved in Git and is named in PUBLICATION.json. Original source objects and reader hashes are pinned in PUBLICATION.json without private filesystem paths. The native private catalogue and all earlier revisions remain preserved. No original evidence was modified or deleted. No PDF was authored or laid out.
 
-Missing historical inputs remain TODOs. The eighteen original substantive criteria remain open; this publication does not alter their acceptance. Later deliveries after update 062 await explicit reconciliation. Publication/ref/body and account verification are recorded after the actual push, separately from these preparation checks.
+Missing historical inputs remain TODOs. The eighteen original substantive criteria remain open; this publication does not alter their acceptance. Later deliveries after this received batch await explicit reconciliation. Publication/ref/body and account verification are recorded after the actual push, separately from these preparation checks.
 
 ## Received handoff056 checklist
 
@@ -36,3 +36,18 @@ Missing historical inputs remain TODOs. The eighteen original substantive criter
 All source citations and selected ledgers/crosswalks remain linked. Snapshot/manual/derived observations, competing explanations and exact missing native inputs remain separate. The original05832passed/4failed and06229passed/1failed runs remain unchanged, with public result/code links and exact failed predicates recorded in PUBLICATION.json. These are source-check results, not the result of this catalogue verifier. Catalogue check success establishes retention, not historical accuracy.
 
 The six new source imports were independently checked against42remote public file bodies and their AveLyra publication identities. This integration did not newly read primary page images or rerun source-media experiments. Earlier stable objects/readers and dated assessments remain preserved. All five tracks/eighteen substantive criteria remain open/partial. No lawsuit material, private correspondence, raw scans/fullOCR/speech/personnel/contact/signatures/rosters/tracking/account/private-provenance/chat inventories or machine-identifying paths are published.
+
+## Received063–067 and326/639/939 checklist
+
+- **063:** A public mirror narrows page/Bates targets; native bytes, clock definitions and a unique interview/call join remain unknown.
+- **064:** The1343 conditional recording plan and1739 document checkpoint identify separate missing originals; neither establishes surviving audio.
+- **065:** NARA2608461 supplies a folder-level route, not authenticated mirror pages; the8-request navigation cap was exceeded by2.
+- **066:** Later entries identify data/notice targets; page9’s uninspected date header prevents assigning its time labels to the attack morning.
+- **067:** The original-record goal was marked blocked after repeated missing-input barriers; this is execution metadata, not archive exhaustion or historical evidence.
+- **326-639-939:** An earlier reply and a later caution coexist with reported dissemination; the939 attachment associates639 but is not independent corroboration.
+
+The five original public reports and all36remote file bodies were verified against the reviewed candidates as AveLyra.067is a dated coordination/dependency note, counted separately from research reports. Its original18-ID matrix/blocked receipt are pinned privately; only a research-status summary and IDs are published. No private goal objective, thread IDs, execution payload or lawsuit/correspondence material is copied.
+
+The0658-request/10-actual cap failure remains verbatim. Earlier058four and062one failed anchors and all prior source/method records are unchanged. Source-specific screenshot/manual/locator/structure checks retain their actual roles; there is no fabricated uniform pass count.066’s initial-plan stale draft was rejected by byte comparison; the reviewed candidate and wording history remain preserved. The326/639/939 court research concerns historical exhibits, not the user’s lawsuit. Reported dissemination and different information/threshold explanations remain alongside the concern about differing assessments.
+
+All18 original criteria remain open/partial. Bounded nonacquisition is not global absence; dated owner/goal states are not historical proof. No new independent primary-image/native/audio/clock/material/steel test is claimed. Raw sources/screenshots/fullOCR/audio/speech, contact/passport/signature/roster/access-code/account data, private correspondence, case strategy and private provenance/chat inventories remain excluded.
