@@ -1,0 +1,419 @@
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..8bf9acc0
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,16 @@
++# User request and revision checklist
++
++- [x] Leave missinginputs asTODOs: allsixDRAFTIDs and original18requirements preserved; previousmissingwording copiedverbatim with priorpubliclink.
++- [x] Pursue anotheravailablepublicsourcelead: actualindexlinks643/644, holdings-first check, bothPDFsacquired, all3pagesvisuallyread; no genericrepeatquery.
++- [x] Preserve conflictingrecords/source links: CONFLICTS.json rawindex/header/time/wordingvalues and attributionlimit; no preferredvalue or causalresolution.
++- [x] Exactlocators: sourceURLs/accessUTC-NewYork/bytes/SHA256/page/mark, cachedindexbyte-lines and READMElinepins; no inventednativeemail/rasterline numbers.
++- [x] Distinguish sourceassertion/inference/action: planning, roughtranslation, investigatorassessment, reportedvisit, potentialNSL and completedaction separated.
++- [x] Counterevidence: ongoingreportedwork weighsagainstblanketnoactivity; underlyingtruth/reviewadequacy/actualoutcomesunverified. Repeatedcover notindependentintelligence.
++- [x] Held/new scope review: inherited642 acquisition/reading labels are explicitly prior-unit fields; onlypage1reinspectedhere. V1 preserved; exacteditorialdiff included.
++- [x] Sourceoriginals preserved: unchangedPDFs/renders onverifiedIntelstore; held642reused, earlierreports/TODOs unchanged; no rawpublicpayload.
++- [x] Limits/failures: defaultPythonmoduleerrorbeforeGET; bundleusedwithoutinstall. UTF8indexdecodefailure; rawbyte-linepositions usedwithoutreencoding. Neither is historicalevidence.
++- [x] Privacy/authorization: publicoriginalnotesonly; exclude rawscans/signatures/specificfinancial/contact/personal/privatecase/credentialmaterial. No outreach/fee/request/filing/mailbox/privatepush/deletion/historyrewrite.
++- [x] Revision accountability: actualGitadditiondiff againstprecedingabsenttext; source/layoutreading separate. No fabricatedtestorhistoricalvalidationclaim.
++- [ ] AveLyra commit/push/ref/every-file verification: performed and recorded separately after frozenpayload review; notpredictedbythischecklist.
++
++Priorrecord/hash/version preservation and publicationareseparatefromsubstantivehistoricalacceptance. No originalcriterionclosed by thisreview.
+diff --git a/CONFLICTS.json b/CONFLICTS.json
+new file mode 100644
+index 00000000..862479eb
+--- /dev/null
++++ b/CONFLICTS.json
+@@ -0,0 +1,66 @@
++{
++  "items": [
++    {
++      "id": "FP-TIME01",
++      "record_a": {
++        "source": "Courtindex",
++        "entity_sha256": "edcd445da51f7a86ea3e7b94c07297f3e65ad1dd1767697ac5a837e9643269bc",
++        "raw_byte_line": 572,
++        "exhibit": "644",
++        "value": "8/30/01 (12:58a)"
++      },
++      "record_b": {
++        "source": "644PDF",
++        "page": 1,
++        "mark": "M-MP1-88000425",
++        "value": "8/30/01 12:58PM"
++      },
++      "status": "UNRESOLVED",
++      "limit": "Differentrecordlayers; no actualsendtime, cause, controllingvalue or tamperinginferred"
++    },
++    {
++      "id": "FP-TIME02",
++      "record_a": {
++        "source": "643PDFquotedAbbottparent",
++        "page": 1,
++        "value": "08/30/01 10:31AM"
++      },
++      "record_b": {
++        "source": "642PDFcoverheader",
++        "page": 1,
++        "value": "Thu, Aug 30, 2001 11:32 AM"
++      },
++      "status": "UNRESOLVED_UNJOINED_NATIVE_MESSAGES",
++      "limit": "Similarbody doesnotestablish samenativeMessageID/version or timezone; noelapsedtimefit"
++    },
++    {
++      "id": "FP-WORD01",
++      "record_a": {
++        "source": "Courtindex",
++        "raw_byte_line": 562,
++        "exhibit": "643",
++        "short_phrase": "We plan to have a plan in the works"
++      },
++      "record_b": {
++        "source": "643PDFreply",
++        "page": 1,
++        "short_phrase": "We have a plan in the works"
++      },
++      "status": "PRESERVED_DESCRIPTION_BODY_CONTRAST",
++      "limit": "No executedaction followsfromeitherwording; no independentmisconductcorroboration"
++    }
++  ],
++  "attribution_limit": {
++    "source": "644PDFphysicalpage2",
++    "signoff": "Scott B.",
++    "separate_native_header": "Notvisible/acquired",
++    "status": "UNRESOLVED_THREAD_PAGE_ASSOCIATION",
++    "limit": "NotalltextautomaticallyattributedtofirstpageFromfield; no historicalmisassemblyfinding"
++  },
++  "prohibited_inferences": [
++    "No preferredcorrection",
++    "No normalizedsourceclock",
++    "No sourceidentityfrommasks",
++    "No conspiracy/intent/outcomeclaimfrommetadataorabsence"
++  ]
++}
+diff --git a/EDITORIAL-REVISION.diff b/EDITORIAL-REVISION.diff
+new file mode 100644
+index 00000000..45abd9cc
+--- /dev/null
++++ b/EDITORIAL-REVISION.diff
+@@ -0,0 +1,29 @@
++diff --git a/publication-v1/CHECKLIST.md b/publication-v2/CHECKLIST.md
++index 31b10d35..8bf9acc0 100644
++--- a/publication-v1/CHECKLIST.md
+++++ b/publication-v2/CHECKLIST.md
++@@ -8,0 +9 @@
+++- [x] Held/new scope review: inherited642 acquisition/reading labels are explicitly prior-unit fields; onlypage1reinspectedhere. V1 preserved; exacteditorialdiff included.
++diff --git a/publication-v1/README.md b/publication-v2/README.md
++index 80abfdf1..d42be4eb 100644
++--- a/publication-v1/README.md
+++++ b/publication-v2/README.md
++@@ -46 +46 @@ All three new pages were viewed at1800pixels on the longest dimension; one held6
++-[SOURCE-PINS.json](SOURCE-PINS.json) gives physical pages, visible headers/paragraphs/production marks, cached-index byte-line positions and this report's line references; no raster source-line numbers are invented. [CHECKLIST.md](CHECKLIST.md) and [TEXT-CHANGES.diff](TEXT-CHANGES.diff) record the actual new-text addition against the immediately preceding absent state. Prior reports, source order, masks, annotations, conflicting values and TODOs remain unchanged; source/layout reading is separate from the text diff.
+++[SOURCE-PINS.json](SOURCE-PINS.json) gives physical pages, visible headers/paragraphs/production marks, cached-index byte-line positions and this report's line references; no raster source-line numbers are invented. [CHECKLIST.md](CHECKLIST.md), the editorial [EDITORIAL-REVISION.diff](EDITORIAL-REVISION.diff), and [TEXT-CHANGES.diff](TEXT-CHANGES.diff) record the actual new-text addition against the immediately preceding absent state. Prior reports, source order, masks, annotations, conflicting values and TODOs remain unchanged; source/layout reading is separate from the text diff.
++@@ -48,0 +49,2 @@ The public payload contains original research notes and locators only. Raw PDFs/
+++
+++Editorial review relabeled inherited642 acquisition/reading fields as prior-unit metadata and explicitly records only page1 reinspected here. This corrects our scope description, leaves source bytes and conflicting time labels unchanged, and is preserved in the version diff.
++diff --git a/publication-v1/SOURCES.json b/publication-v2/SOURCES.json
++index d471f45e..390723da 100644
++--- a/publication-v1/SOURCES.json
+++++ b/publication-v2/SOURCES.json
++@@ -66,3 +66,5 @@
++-    "role": "Newly acquired official court-hosted representation after scoped holdings-first check; not a native message or independently authenticated historical source",
++-    "reading_this_unit": "All physical pages inspected visually; source and translation assertions remain attributed, and faint/redacted contents are not reconstructed",
++-    "status_this_unit": "HeldPDF/page1reused; notnewacquisition"
+++    "status_this_unit": "HeldPDF/page1reused; notnewacquisition",
+++    "prior_reading_status": "All physical pages inspected visually; source and translation assertions remain attributed, and faint/redacted contents are not reconstructed",
+++    "prior_acquisition_role": "Newly acquired official court-hosted representation after scoped holdings-first check; not a native message or independently authenticated historical source",
+++    "reading_this_unit": "Onlyphysicalpage1reinspectedfromheldrender; allsevenpageswere read inpriorunit, notfreshlyreread here.",
+++    "role_this_unit": "Heldofficialcourt-servedcopy, notnewlyacquired; no nativeemail/transport or historicalactionauthentication."
+diff --git a/OPEN-TODOS.json b/OPEN-TODOS.json
+new file mode 100644
+index 00000000..4f8eb785
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,74 @@
++{
++  "items": [
++    {
++      "id": "DRAFT-T01",
++      "status": "TODO_INPUT_PARTIAL_SOURCE_ADVANCE",
++      "prior_missing_input_verbatim": "Complete336attachedinvestigativereport and requestedpage7; nativeAugust15/16EC/writeup, fullthread/attachments, exactdraft/version/package chain; earliercommunication referencedin639.",
++      "prior_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json",
++      "advance_this_unit": "643quotesaFrance-interestparent and644containsdistinctsignedvoice; nativeparent/attachment/version/pageassociation remainsunacquired.",
++      "dependent_test_preserved": "Map exact proposed/revised words and establish which draft state each representation belongs to",
++      "revisit_trigger_preserved": "Native attachment/version chain or explicit authenticated pointer",
++      "remaining_inputs": "642actual native email/attachment and final EC upload/version log; exact59B/346serial/enclosure association."
++    },
++    {
++      "id": "DRAFT-T02",
++      "status": "TODO_INPUT_PARTIAL_SOURCE_ADVANCE",
++      "prior_missing_input_verbatim": "Actual August16 interview/notes/questions and disputed statement/draft passages.",
++      "prior_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json",
++      "advance_this_unit": "644reportsroughtranslations and stronginvestigatorinterpretations; originalaudio/will/translatornotes/claimedchecking and disputedAug16interview remainunacquired.",
++      "dependent_test_preserved": "Test defensive-tactics, hearing-plan, no-answer/unconvincing-answer and negation claims against source statements",
++      "revisit_trigger_preserved": "Matched original statement/interview and paragraph/version evidence",
++      "remaining_inputs": "Original interview and translation counterpart with exact statement-to-draft join; no inference from similar characterizations."
++    },
++    {
++      "id": "DRAFT-T03",
++      "status": "TODO_INPUT",
++      "prior_missing_input_verbatim": "Original Bowman advice, meeting inputs, reviewed package and legal-review record.",
++      "prior_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json",
++      "advance_this_unit": "No newBowman/NSLU/OIPRadvice or actualreviewpackage; concerns/proposedalternativesnotlegalreviewrecord.",
++      "dependent_test_preserved": "Assess review completeness and group-versus-foreign-power rationale without adopting a legal conclusion",
++      "revisit_trigger_preserved": "Source-specific advice/meeting/input record",
++      "remaining_inputs": "ExactAug22/Aug24/Aug30recipient and legal-review package/acknowledgment; distinguish subsequent supplementation from earlier inputs."
++    },
++    {
++      "id": "DRAFT-T04",
++      "status": "TODO_INPUT",
++      "prior_missing_input_verbatim": "OriginalFrench/Paris/CIA/UKintelligence, substantiveFrenchreply and translation, completepacketmanifest, recipientcopies/receipt and substantive taskreturns; no newcourtcopy proveswhichmaterialwasreviewed.",
++      "prior_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json",
++      "advance_this_unit": "RepeatedAbbottcover doesnotindependentlycorroborate Frenchintelligence or actualBritishreceipt; source originals/certifiedtranslation/taskreturns remainmissing.",
++      "dependent_test_preserved": "Test evidence inclusion/omission and accuracy, retaining redaction-versus-absence distinction",
++      "revisit_trigger_preserved": "Underlying source and authenticated package/version join",
++      "remaining_inputs": "August22fax/source interview and enclosures, August29supplement and original Frenchtext, qualified translation and delivery/receipt/taskreturns."
++    },
++    {
++      "id": "DRAFT-T05",
++      "status": "TODO_INPUT_PARTIAL_SOURCE_ADVANCE",
++      "prior_missing_input_verbatim": "Actual referral/nonreferral, criminal/FISA determinations/orders/returns and executed alternative actions.",
++      "prior_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json",
++      "advance_this_unit": "643reportsaplaninworks;644page2reportsauniversity/INSinquiry and conditionalfollowup; no Franceapproval/transfer/search/NSL/immigrationfinaldisposition acquired.",
++      "dependent_test_preserved": "Distinguish drafting/advice from referral/adjudication/execution and test actual reason/outcome",
++      "revisit_trigger_preserved": "Actual source-specific referral/nonreferral/decision/order/return/task record",
++      "remaining_inputs": "Franceoption recommendation/response/disposition, legal authority, escort/transport/custody/examination record, or documented non-execution."
++    },
++    {
++      "id": "DRAFT-T06",
++      "status": "TODO_INPUT_PARTIAL_SOURCE_ADVANCE",
++      "prior_missing_input_verbatim": "Native headers/timezones, transport/receipt, authoring/version and source-to-court assembly/declassification record.",
++      "prior_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json",
++      "advance_this_unit": "Index64412:58a/PDF12:58PM and643quoted10:31AM/642displayed11:32AMpreserved; nativeIDs/timezones/transportandpageassemblyremainunverified.",
++      "dependent_test_preserved": "Authenticate chronology, authorship, dispatch/receipt and date/content relationships",
++      "revisit_trigger_preserved": "Native/independently recorded version, transport, receipt or assembly record",
++      "remaining_inputs": "Nativeparent/attachment messageids and final upload timestamps/log; original-to-court production chain and version-specific recipient receipts."
++    }
++  ],
++  "new_specific_targets": [
++    "643nativeparent/reply/attachment/MessageID/timezone/version/recipientreceipt",
++    "OriginalFrance-relatedplan and approval/refusal/revision/abandonment/execution",
++    "644originalcallaudio, will, translatorrecord/method and reportedchecking",
++    "644page2nativeparent/header/pageassociation; underlyingreporteduniversity/INSinquiry/statusfollowup and anyissuedNSL/return",
++    "Courtindexdescription/version/assembly history behindtime/wordinglabels"
++  ],
++  "all_original_eighteen_five_track_requirements": "Unchangedopen/partial, inputsdeferred; thissourceunitdoesnotcompleteanynative/empirical/custodycriterion",
++  "no_outreach_or_gate_bypass": true,
++  "current_source_status": "643/644newlyacquiredandall3pagesread, notnativeemail. Held642page1reused. Missingoriginalsnotinventedordeduplicatedaway."
++}
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..d42be4eb
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,50 @@
++# August 30 follow-ups: France-option planning, investigative reports and unresolved time labels
++
++Research date: October 31, 2026. Existing DRAFT-T01–T06 remain open. Following the [earlier French-source review](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md), court exhibits **643 and 644** were acquired from the actual links in the [official defense-exhibit index](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html). All three new physical pages were visually inspected; held exhibit642 page1 was reinspected for comparison. Originals and previous findings remain unchanged.
++
++The useful addition is a recorded reply describing a plan to meet French interest, plus source-attributed investigative and proposed immigration/banking follow-ups. These distinguish continuing activity from an executed search, removal or final decision. They do not supply the missing native emails, original intelligence, translations, orders or results.
++
++## FP01 — A reply describes a France-related plan, not its execution
++
++[643, physical page1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf#page=1), marked **M-MP1-88000424**, displays Harry Samit to W.Jay Abbott, August30 at **11:55AM**. Samit thanks Abbott, describes a plan in the works to meet French interest, and promises an update. The quoted parent describes French interest in further exploring deportation/transport to France, permission to share information with the British, and a draft/rough-translation/upload qualification. This is a source-level reply/acknowledgment representation; it does not establish that the complete attached EC was received, finalized, legally approved or acted upon.
++
++The earlier59B/642 conditional escort/evidence proposal and custody qualification remain preserved in the prior review. The reply adds reported planning, not a completed France option. A native parent/reply/attachment association, actual plan, recommendation/response and disposition would discriminate between continued planning, revision, abandonment or execution. No outcome is selected here.
++
++## FP02 — Two time-label contrasts remain unresolved
++
++| Records compared | Values preserved | Scope and limit |
++| --- | --- | --- |
++| [644 index description](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html) versus [644 page1 header](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=1) | Index **12:58a**; displayed email header **12:58PM**, August30 | Navigation metadata and a rendered email header are different source layers. Their cause and the actual send time are not established |
++| [643 page1 quoted Abbott header](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf#page=1) versus [642 page1 displayed cover header](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf#page=1) | **08/30/01 10:31AM** versus **Thu, Aug30,2001 11:32AM** | The readable cover bodies are similar; native Message-ID/version/forwarding identity and timezone are unverified. This is not an authenticated elapsed interval or calibrated clock offset |
++
++Both accounts are retained without choosing a controlling value. Editorial description, differing message/version or rendering/clock conventions are untested possibilities. The evidence needed is the native parent/reply and forwarding chain, headers/timezones, transport/recipient records and original-to-court assembly history. The index/body contrast alone does not establish altered evidence or what any investigator received.
++
++A smaller wording contrast also remains: the index describes643 using an additional planning step, whereas the visible reply says a plan is already in the works. That is a description-versus-body observation; neither wording establishes an implemented plan. [CONFLICTS.json](CONFLICTS.json) preserves the short source strings and byte-line locators from the cached index.
++
++## FP03 — Allegations, reported inquiry and proposed action are different propositions
++
++[644, physical page1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=1), marked **M-MP1-88000425**, displays Samit to Scott Billings. Samit recounts a roughly translated Al-Attas telephone conversation and will, reports additional checking, draws strong conclusions about intent, and advocates prompt immigration action if a basis arises. These are the author's reports and interpretations. The original audio, original-language will, translator notes/method and the claimed checking are not attached or independently validated here. Religious wording, anxiety or a forceful investigative characterization does not itself complete the inferred-plan test; the underlying context and competing readings remain necessary.
++
++[644, physical page2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=2), marked **M-MP1-88000426**, ends with a **Scott B.** signoff but has no separate visible From/To/Date header. It mentions possible bank-record NSLs and reports a university visit with INS to check enrollment, followed by a conditional future status check. This is a source-reported inquiry, not the underlying school/bank/INS records or a completed NSL, status determination, removal or search. Relative yesterday/Friday wording is not silently converted into fixed dates while the native message association is missing. Specific financial/contact/personal details are omitted from this derivative.
++
++The page2 signoff also prevents treating every sentence of this two-page exhibit as independently authenticated Samit-authored text. An included earlier message is a plausible reading, but the native thread and page-assembly record are unacquired. No misassembly, identity reconstruction or historical falsification is established.
++
++## Evidentiary strength and remaining originals
++
++These records support the narrower source-level account that field planning and inquiry continued. They weigh against a blanket claim that no activity followed the French information. They do not independently establish the truth of the reported allegations, the adequacy of the inquiry, inclusion in a warrant-review package or an executed alternative. A documented completed or declined action, contrary translation, unsupported attribution or different reviewed package could materially change the assessment; none is selected as the explanation.
++
++The repeated Abbott passage is not a second independent intelligence source. Court hosting, stamps, production marks and hashes identify these representations, not native email transport, historical truth or approval. Similar prose is not proof of a byte-identical attachment or that later information was available earlier.
++
++[OPEN-TODOS.json](OPEN-TODOS.json) carries all six prior DRAFT IDs and their earlier missing-input wording forward, alongside the new plan/attribution/time tests. The original eighteen five-track input requirements remain open or partial. This broader operational-record step neither closes them nor duplicates the technical owner's recorder/materials work.
++
++## Sources, reading and revision accountability
++
++643 is **61,911bytes /1page**, SHA-256 **f69602cf016f31a6060c90c174108a5ea34e1ebced8f2f90df307337ff3dccc8**. 644 is **136,111bytes /2pages**, SHA-256 **9c0c63a7f8cb81f370d2b2a4ba5d32ca8c3824e18300a672d23bb27c1447e541**. [SOURCES.json](SOURCES.json) records actual access UTC/NewYork time, URLs, roles and the reused index identity. The held642 PDF hash remains **6968155013d3d53aa6c26c14338310fc6cb603552b9cf3836822bf70a7d96b0f**; its acquisition is not new.
++
++All three new pages were viewed at1800pixels on the longest dimension; one held642 page was reinspected. Faint/redacted material remains qualified. No OCR, hidden-layer extraction, masked-identity reconstruction, exhaustive word/pixel comparison, native-message/clock authentication, legal sufficiency adjudication or physical test was performed. Passive PDF inspection exposed no embedded attachment names; that does not establish the absence of historical attachments.
++
++[SOURCE-PINS.json](SOURCE-PINS.json) gives physical pages, visible headers/paragraphs/production marks, cached-index byte-line positions and this report's line references; no raster source-line numbers are invented. [CHECKLIST.md](CHECKLIST.md), the editorial [EDITORIAL-REVISION.diff](EDITORIAL-REVISION.diff), and [TEXT-CHANGES.diff](TEXT-CHANGES.diff) record the actual new-text addition against the immediately preceding absent state. Prior reports, source order, masks, annotations, conflicting values and TODOs remain unchanged; source/layout reading is separate from the text diff.
++
++The public payload contains original research notes and locators only. Raw PDFs/renders, signatures, specific financial/contact/personal data, private case correspondence/strategy and credentials are excluded. No outreach, fee, new request/filing, mailbox access, deletion, source overwrite, private push, merge or history rewrite occurred. AveLyra publication/ref/all-file verification follows the frozen candidate separately; publication does not complete the underlying historical questions.
++
++Editorial review relabeled inherited642 acquisition/reading fields as prior-unit metadata and explicitly records only page1 reinspected here. This corrects our scope description, leaves source bytes and conflicting time labels unchanged, and is preserved in the version diff.
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..b0949d44
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,64 @@
++{
++  "locator_rule": "PhysicalPDFpage/visibleheader/paragraph/productionmark; indexrawbyte-lineinunchangedcachedHTML; reportlineisthisREADME, notinventedrasterline",
++  "pins": [
++    {
++      "id": "FP01",
++      "report_line": 9,
++      "source": "643",
++      "physical_page": 1,
++      "mark": "M-MP1-88000424",
++      "anchor": "VisibleFrom/To/Date and openingreply, then quotedAbbottparent/PS",
++      "observation": "Source-reportedplan and quotedcover, notexecutedaction/attachmentreceipt",
++      "limit": "Nativeheaders/transport/ECidentityunknown",
++      "source_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf#page=1"
++    },
++    {
++      "id": "FP02A",
++      "report_line": 17,
++      "sources": [
++        "Cachedindexline572",
++        "644page1header"
++      ],
++      "observation": "12:58a versus12:58PM retained",
++      "limit": "Layercontrast, notactualtimeauthentication"
++    },
++    {
++      "id": "FP02B",
++      "report_line": 18,
++      "sources": [
++        "643page1quotedparent",
++        "642page1header"
++      ],
++      "observation": "10:31AM versus11:32AM retained",
++      "limit": "No authenticatedmessage/version/timezonejoin"
++    },
++    {
++      "id": "FP03",
++      "report_line": 26,
++      "source": "644",
++      "physical_page": 1,
++      "mark": "M-MP1-88000425",
++      "anchor": "Narrativeaftergreetingandbefore closing",
++      "observation": "Sourceauthorreportsroughtranslation/otherchecking and drawsstronginferences/proposesconditionalaction",
++      "limit": "Notindependentintent/translation/truthfinding",
++      "source_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=1"
++    },
++    {
++      "id": "FP04",
++      "report_line": 28,
++      "source": "644",
++      "physical_page": 2,
++      "mark": "M-MP1-88000426",
++      "anchor": "FYIopening, reporteduniversity/INSinquiry andScottBsignoff",
++      "observation": "Potentialbankrecordroute and reportedinquiry, conditionalfollowup",
++      "limit": "No separatevisibleheader or completedNSL/status/removal/actionproof",
++      "source_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=2"
++    }
++  ],
++  "acquired_source_hashes": {
++    "643": "f69602cf016f31a6060c90c174108a5ea34e1ebced8f2f90df307337ff3dccc8",
++    "644": "9c0c63a7f8cb81f370d2b2a4ba5d32ca8c3824e18300a672d23bb27c1447e541"
++  },
++  "held642_sha256": "6968155013d3d53aa6c26c14338310fc6cb603552b9cf3836822bf70a7d96b0f",
++  "reading": "All3newpages1800px;held642page1; faint/maskedcontentqualified. No OCR/identityreconstruction/exhaustiveworddiff/nativehistoricalauthentication."
++}
+diff --git a/SOURCES.json b/SOURCES.json
+new file mode 100644
+index 00000000..390723da
+--- /dev/null
++++ b/SOURCES.json
+@@ -0,0 +1,78 @@
++{
++  "research_date": "2026-10-31 America/New_York",
++  "new_documents": [
++    {
++      "exhibit": "643",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf",
++      "http_status": 200,
++      "content_type": "application/pdf",
++      "access_utc": "2026-10-31T16:47:12.944155+00:00",
++      "access_America_New_York": "2026-10-31T12:47:12.944155-04:00",
++      "bytes": 61911,
++      "sha256": "f69602cf016f31a6060c90c174108a5ea34e1ebced8f2f90df307337ff3dccc8",
++      "source_relationship": "Officialcourt-servedexhibitcopy, notnativeemail/transport or independentlyverifiedhistoricalaction",
++      "index_link_observed": true,
++      "index_description": "643 E-mail, dated 8/30/01 (11:55a), Samit/Abbott, “Thanks.  We plan to have  a plan in the works to meet French interest . . .”",
++      "pages": 1,
++      "encrypted": false,
++      "native_embedded_attachment_names": 0,
++      "hidden_text_extraction_performed": false
++    },
++    {
++      "exhibit": "644",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf",
++      "http_status": 200,
++      "content_type": "application/pdf",
++      "access_utc": "2026-10-31T16:47:13.382513+00:00",
++      "access_America_New_York": "2026-10-31T12:47:13.382513-04:00",
++      "bytes": 136111,
++      "sha256": "9c0c63a7f8cb81f370d2b2a4ba5d32ca8c3824e18300a672d23bb27c1447e541",
++      "source_relationship": "Officialcourt-servedexhibitcopy, notnativeemail/transport or independentlyverifiedhistoricalaction",
++      "index_link_observed": true,
++      "index_description": "644 E-mail, dated 8/30/01 (12:58a), Samit/Billings, “Re  Moussaou, Thanks for the info . . .”",
++      "pages": 2,
++      "encrypted": false,
++      "native_embedded_attachment_names": 0,
++      "hidden_text_extraction_performed": false
++    }
++  ],
++  "new_document_bytes": 198022,
++  "new_pages_actually_read": 3,
++  "cached_court_index": {
++    "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html",
++    "bytes": 70907,
++    "sha256": "edcd445da51f7a86ea3e7b94c07297f3e65ad1dd1767697ac5a837e9643269bc",
++    "acquisition": "ExistingOct31acquisition reused; not newindexdownload"
++  },
++  "index_capture_reused": true,
++  "index_access_receipt": "2026-10-31T13:10:30.674772+00:00, precedingstudy; notcurrentfreshHTTPcapture",
++  "held_control": {
++    "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf",
++    "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf",
++    "status": 200,
++    "content_type": "application/pdf",
++    "access_utc": "2026-10-31T13:10:33.798265+00:00",
++    "access_America_New_York": "2026-10-31T09:10:33.798265-04:00",
++    "bytes": 496653,
++    "sha256": "6968155013d3d53aa6c26c14338310fc6cb603552b9cf3836822bf70a7d96b0f",
++    "exhibit": "642",
++    "pages": 7,
++    "encrypted": false,
++    "embedded_attachment_name_count": 0,
++    "hidden_text_extraction_performed": false,
++    "index_link_observed": true,
++    "status_this_unit": "HeldPDF/page1reused; notnewacquisition",
++    "prior_reading_status": "All physical pages inspected visually; source and translation assertions remain attributed, and faint/redacted contents are not reconstructed",
++    "prior_acquisition_role": "Newly acquired official court-hosted representation after scoped holdings-first check; not a native message or independently authenticated historical source",
++    "reading_this_unit": "Onlyphysicalpage1reinspectedfromheldrender; allsevenpageswere read inpriorunit, notfreshlyreread here.",
++    "role_this_unit": "Heldofficialcourt-servedcopy, notnewlyacquired; no nativeemail/transport or historicalactionauthentication."
++  },
++  "new_page_images_read": 3,
++  "held_page_images_reinspected": 1,
++  "render_long_dimension_pixels": 1800,
++  "native_source_or_action_authentication": false,
++  "prior_review": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md",
++  "scope": "Only643/644new;642page1reinspection, otherheldcontrols throughpriorpins. No nativeemails, audio, originalwill, field/NSL/school/INSrecords or completedaction acquired."
++}

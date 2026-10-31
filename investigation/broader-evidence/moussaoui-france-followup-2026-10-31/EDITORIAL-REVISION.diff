@@ -1,0 +1,29 @@
+diff --git a/publication-v1/CHECKLIST.md b/publication-v2/CHECKLIST.md
+index 31b10d35..8bf9acc0 100644
+--- a/publication-v1/CHECKLIST.md
++++ b/publication-v2/CHECKLIST.md
+@@ -8,0 +9 @@
++- [x] Held/new scope review: inherited642 acquisition/reading labels are explicitly prior-unit fields; onlypage1reinspectedhere. V1 preserved; exacteditorialdiff included.
+diff --git a/publication-v1/README.md b/publication-v2/README.md
+index 80abfdf1..d42be4eb 100644
+--- a/publication-v1/README.md
++++ b/publication-v2/README.md
+@@ -46 +46 @@ All three new pages were viewed at1800pixels on the longest dimension; one held6
+-[SOURCE-PINS.json](SOURCE-PINS.json) gives physical pages, visible headers/paragraphs/production marks, cached-index byte-line positions and this report's line references; no raster source-line numbers are invented. [CHECKLIST.md](CHECKLIST.md) and [TEXT-CHANGES.diff](TEXT-CHANGES.diff) record the actual new-text addition against the immediately preceding absent state. Prior reports, source order, masks, annotations, conflicting values and TODOs remain unchanged; source/layout reading is separate from the text diff.
++[SOURCE-PINS.json](SOURCE-PINS.json) gives physical pages, visible headers/paragraphs/production marks, cached-index byte-line positions and this report's line references; no raster source-line numbers are invented. [CHECKLIST.md](CHECKLIST.md), the editorial [EDITORIAL-REVISION.diff](EDITORIAL-REVISION.diff), and [TEXT-CHANGES.diff](TEXT-CHANGES.diff) record the actual new-text addition against the immediately preceding absent state. Prior reports, source order, masks, annotations, conflicting values and TODOs remain unchanged; source/layout reading is separate from the text diff.
+@@ -48,0 +49,2 @@ The public payload contains original research notes and locators only. Raw PDFs/
++
++Editorial review relabeled inherited642 acquisition/reading fields as prior-unit metadata and explicitly records only page1 reinspected here. This corrects our scope description, leaves source bytes and conflicting time labels unchanged, and is preserved in the version diff.
+diff --git a/publication-v1/SOURCES.json b/publication-v2/SOURCES.json
+index d471f45e..390723da 100644
+--- a/publication-v1/SOURCES.json
++++ b/publication-v2/SOURCES.json
+@@ -66,3 +66,5 @@
+-    "role": "Newly acquired official court-hosted representation after scoped holdings-first check; not a native message or independently authenticated historical source",
+-    "reading_this_unit": "All physical pages inspected visually; source and translation assertions remain attributed, and faint/redacted contents are not reconstructed",
+-    "status_this_unit": "HeldPDF/page1reused; notnewacquisition"
++    "status_this_unit": "HeldPDF/page1reused; notnewacquisition",
++    "prior_reading_status": "All physical pages inspected visually; source and translation assertions remain attributed, and faint/redacted contents are not reconstructed",
++    "prior_acquisition_role": "Newly acquired official court-hosted representation after scoped holdings-first check; not a native message or independently authenticated historical source",
++    "reading_this_unit": "Onlyphysicalpage1reinspectedfromheldrender; allsevenpageswere read inpriorunit, notfreshlyreread here.",
++    "role_this_unit": "Heldofficialcourt-servedcopy, notnewlyacquired; no nativeemail/transport or historicalactionauthentication."
