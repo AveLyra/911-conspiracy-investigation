@@ -1,0 +1,671 @@
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..359c4f3f
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,14 @@
++# Requirement accountability
++
++| Requirement | Outcome / location | Actual verification and remaining limit |
++| --- | --- | --- |
++| Continue a specific original-record lead | Official six-page2610370MFR acquired/read; SOURCES.json | Current public catalogue exposed the actual file; no guessed asset or gated route. This is a released scan, not native authoring/audio. |
++| Compare with held records | COMPARISON-PINS.json, MFR01–09 | Full new MFR visual reading plus reused prior18page note reading; selected document comparison, not audio/clock test. |
++| Preserve conflicts, source links and values | README and each pin | Recording labels, warnings present/absent, log/day/time uncertainty, capability/participation and readiness values retained; no controlling value/cause selected. |
++| Preserve originals and prior versions | Both source hashes unchanged | MFR is a different actual file/extent. It does not replace notes or resolve assembly/source lineage. |
++| Carry missing inputs as TODOs | OPEN-TODOS.json | MC-T07partiallyadvanced, not closed; MFR-T01–03added; all18originalcriteria and technical ownership retained. |
++| Test assumptions and disconfirmation | README and pin limits | Summary scope, source dependence, possible completed correction, ordinary reconstruction and missing orders retained; no deception/intent/absence inference. |
++| Exact revision diff; layout separate | TEXT-CHANGES.diff, EDITORIAL-REVISION.diff; PAGE-READING.json/SOURCE-CHECKS.json | Real Git addition diff from absent prior paths; six whole-page views separate from render/fingerprint success. |
++| Account for acquisition failure | SOURCES.json; native failed script/receipt and correction diff | Null Content-Type preserved; stopped before body; one corrective fetch validates actual PDF. Own guard correction is not historical evidence. |
++| Public AveLyra commit and push | Separate native plan/receipts after review | Exact account/repository/author+committer/ref/all-file checks required before success claim. No main merge, private push or history rewrite. |
++| Overview coordination | Separate local handoff after verified publication | Only authorized verified Overview destination; delivery is not acceptance/integration. |
+diff --git a/COMPARISON-PINS.json b/COMPARISON-PINS.json
+new file mode 100644
+index 00000000..b869ef16
+--- /dev/null
++++ b/COMPARISON-PINS.json
+@@ -0,0 +1,274 @@
++{
++  "MFR": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf",
++  "notes": "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf",
++  "pins": [
++    {
++      "id": "MFR01",
++      "MFR_source_sha256": "9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942",
++      "MFR_physical_pages": [
++        1
++      ],
++      "MFR_page_urls": [
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=1"
++      ],
++      "retained_notes_source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "retained_notes_physical_and_printed_pages": [],
++      "retained_notes_page_urls": [],
++      "visible_anchor": "MFRheading/date/preparer/recording-reference line",
++      "new_MFR_observation_or_report": "Six-page MFR labels the same subject/interview dates January22/23,2004and names GeoffreyBrown as preparer. A visible line referring to a recorded interview for further details is crossed through.",
++      "earlier_note_observation_or_report": "The18-page packet has mixed note forms and Jan22/23labels; its typed interview section begins15. It is a different acquired file and extent.",
++      "selected_MFR_literal_wording": [
++        "Please refer to the recorded interview for further details."
++      ],
++      "interpretation_limits_and_next_test": "Distinct file/form/extent established; complete authoring/assembly/approval relationship not established. The visible crossing-out is not attributed to a person/date/reason and does not prove an interview recording exists, does not exist or was destroyed.",
++      "comparison_method": "Actual six-page MFRimage reading plus reused prior18-page noteimage/pinreview; document comparison, not native/audio/clock/historical authentication."
++    },
++    {
++      "id": "MFR02",
++      "MFR_source_sha256": "9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942",
++      "MFR_physical_pages": [
++        3
++      ],
++      "MFR_page_urls": [
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=3"
++      ],
++      "retained_notes_source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "retained_notes_physical_and_printed_pages": [
++        17
++      ],
++      "retained_notes_page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17"
++      ],
++      "visible_anchor": "Underlinedreview paragraph; notes’ missing-call and boldtiming bullets",
++      "new_MFR_observation_or_report": "MFRexplicitly says Commissionstaff reviewed DRM1DAT2Channel2MCCOp audio with that position’s AldersonReporting transcript. The specific missing-call and post9:10redo warnings were not observed anywhere in its sixpages.",
++      "earlier_note_observation_or_report": "Notes17say a ZNY/fighter-positioning call and some following clear conversations are only in an original transcript, not Alderson; the later Alderson times must be redone and verified.",
++      "selected_MFR_literal_wording": [
++        "DRM 1 DAT 2 Channel 2 MCC Op",
++        "Alderson Reporting transcript"
++      ],
++      "interpretation_limits_and_next_test": "The MFRnarrows the reported review-source label but supplies neither transcript-version pair nor completed verification record. Content omission from a summary is not proof of concealment, correction completion, or knowing reliance on uncorrected times. Keep earlierDRM2label and heldMP3name unresolved; nooffset/nameis selected as controlling.",
++      "comparison_method": "Actual six-page MFRimage reading plus reused prior18-page noteimage/pinreview; document comparison, not native/audio/clock/historical authentication."
++    },
++    {
++      "id": "MFR03",
++      "MFR_source_sha256": "9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942",
++      "MFR_physical_pages": [
++        2
++      ],
++      "MFR_page_urls": [
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=2"
++      ],
++      "retained_notes_source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "retained_notes_physical_and_printed_pages": [
++        15
++      ],
++      "retained_notes_page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=15"
++      ],
++      "visible_anchor": "Chatlogsparagraph versus typedexercise/RADESbullets",
++      "new_MFR_observation_or_report": "MFRrecords real-world information in the exercise chatlog and says the interviewee did not know why it had disjointed time/day entries.",
++      "earlier_note_observation_or_report": "Notes15also record mixed real-world/exercise information and say some data, including RADES, may have been entered post9/11; that explicit later-data qualification was not observed in the MFR.",
++      "selected_MFR_literal_wording": [
++        "disjointed time and day entries"
++      ],
++      "interpretation_limits_and_next_test": "Preserve both. Unknown cause and a possible later addition are not resolved into one explanation. Event-time versus entry-time fields, actual logs, edits and source data remain required. Neither document is an independent log-integrity test.",
++      "comparison_method": "Actual six-page MFRimage reading plus reused prior18-page noteimage/pinreview; document comparison, not native/audio/clock/historical authentication."
++    },
++    {
++      "id": "MFR04",
++      "MFR_source_sha256": "9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942",
++      "MFR_physical_pages": [
++        2
++      ],
++      "MFR_page_urls": [
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=2"
++      ],
++      "retained_notes_source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "retained_notes_physical_and_printed_pages": [
++        9,
++        10,
++        15
++      ],
++      "retained_notes_page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=9",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=10",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=15"
++      ],
++      "visible_anchor": "FAAcommunication/phonecapabilityparagraphs versus bridgebullets",
++      "new_MFR_observation_or_report": "MFRdescribes FAA communication through ID, an available FAArepresentative inBattleCab, personal nonmonitoring of FAAconferencecalls, CONRconnection and noCheyenneMountainconnection.",
++      "earlier_note_observation_or_report": "Notesmention twoFAAbridges(WOC/Herndon), potentialaccessbutpersonalnonparticipation, possibleBattleCabaccess and noAirThreatparticipation/monitoring.",
++      "selected_MFR_literal_wording": [
++        "He did not monitor any FAA conference calls on 9/11."
++      ],
++      "interpretation_limits_and_next_test": "These statements have different detail and scope. Do not conflate individual absence, organizational participation, communications path, access capability, monitoring and speaking. Actual source/recipient/call-leg/bridge records remain unjoined.",
++      "comparison_method": "Actual six-page MFRimage reading plus reused prior18-page noteimage/pinreview; document comparison, not native/audio/clock/historical authentication."
++    },
++    {
++      "id": "MFR05",
++      "MFR_source_sha256": "9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942",
++      "MFR_physical_pages": [
++        3,
++        4
++      ],
++      "MFR_page_urls": [
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=3",
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=4"
++      ],
++      "retained_notes_source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "retained_notes_physical_and_printed_pages": [
++        16,
++        17
++      ],
++      "retained_notes_page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=16",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17"
++      ],
++      "visible_anchor": "Otis/UAL175andLangleyscramblesections versus rebirthandtimingbullets",
++      "new_MFR_observation_or_report": "MFRrecounts Otisintent, a qualified believedAA11target, no remembered UAL175 information before the operations floor heard that there was a second hijack, Langleybattle-stationsaround9:09AMandbarriercapintent. It does not expressly repeat the notes’ IDs→MCCAmerican11rebirth-source passage.",
++      "earlier_note_observation_or_report": "Notes16/17record UAL175notificationwithsecond-hitnotification and explicitly attribute American11-still-airborne/toward-Washington information to IDs→MCC, while separately discussingBattleCab’sLangleydecision.",
++      "selected_MFR_literal_wording": [
++        "9:09 AM"
++      ],
++      "interpretation_limits_and_next_test": "Do not treat differently condensed accounts as a proved contradiction or independent validation. Battle stations, scramble decision, intended positioning, actual route and received source information are distinct events. The original rumor and exactFAA1326/1329calllegs remain unjoined.",
++      "comparison_method": "Actual six-page MFRimage reading plus reused prior18-page noteimage/pinreview; document comparison, not native/audio/clock/historical authentication."
++    },
++    {
++      "id": "MFR06",
++      "MFR_source_sha256": "9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942",
++      "MFR_physical_pages": [
++        4,
++        5
++      ],
++      "MFR_page_urls": [
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=4",
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=5"
++      ],
++      "retained_notes_source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "retained_notes_physical_and_printed_pages": [
++        17
++      ],
++      "retained_notes_page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17"
++      ],
++      "visible_anchor": "010/090for60andAFIOparagraphs versus operational-control bullets",
++      "new_MFR_observation_or_report": "MFRpreserves010versus090for60heading descriptions and specifically defers explanation toLangley/GiantKiller. It attributes nonacceptance ofhandofftoairtrafficvolume and says the interviewee didnotrecollectwhetherherecommendedBattleCabAFIOauthorityoractedhimself; post9/11higherauthorityisdescribed separately.",
++      "earlier_note_observation_or_report": "Notes17record expectations thatNorfolk/GiantKillerfolloworders, technicalcontrol/AFIOlimitations and an uncertainbeliefBattleCabapprovedAFIO.",
++      "selected_MFR_literal_wording": [
++        "010",
++        "090 for 60"
++      ],
++      "interpretation_limits_and_next_test": "Keep each statement as attributed. Unknown agreements, actual ordercontents, receipt, routing and implementation still needed. Post9/11rules are not automatically rules on9/11; this record does not prove sabotage or a valid/invalid order.",
++      "comparison_method": "Actual six-page MFRimage reading plus reused prior18-page noteimage/pinreview; document comparison, not native/audio/clock/historical authentication."
++    },
++    {
++      "id": "MFR07",
++      "MFR_source_sha256": "9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942",
++      "MFR_physical_pages": [
++        5,
++        6
++      ],
++      "MFR_page_urls": [
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=5",
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=6"
++      ],
++      "retained_notes_source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "retained_notes_physical_and_printed_pages": [
++        4,
++        5,
++        6,
++        7,
++        14
++      ],
++      "retained_notes_page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=4",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=5",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=6",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=7",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=14"
++      ],
++      "visible_anchor": "ROE/DEFCONsourcechronology versus shorthand/orderterminology",
++      "new_MFR_observation_or_report": "MFRattributes negativeclearancetoshootaround10:10AM, noengagementordersat10:14AM, staffpresentationofPeacetimeROEat1415GMT,1431GMTconditionalshootdownauthorityand1433VPclearance, andDEFCON3relayatapproximately11:03AM. It separately describesoverwhelmedradiocoverage.",
++      "earlier_note_observation_or_report": "Handwrittennotescontainreadiness/orderquestions,1031relayandVP/ROEterminology; notes14saysnodistinctiontotheinterviewee betweenVPdirectiveandROEchange. The FAA1330exchangehadnoformalDEFCONlevel/order.",
++      "selected_MFR_literal_wording": [
++        "1415 GMT",
++        "1431 (GMT)",
++        "1433",
++        "11:03 AM"
++      ],
++      "interpretation_limits_and_next_test": "These are source-attributed times/claims, not our independent calibration or recovered orders. Preserve AM/GMT and approximate wording. Do not equate formalDEFCON3with an unspecified earlierreadinessstatement, nor clearance,ROE,operationalrelay,pilotreceiptandactualuseofforce.",
++      "comparison_method": "Actual six-page MFRimage reading plus reused prior18-page noteimage/pinreview; document comparison, not native/audio/clock/historical authentication."
++    },
++    {
++      "id": "MFR08",
++      "MFR_source_sha256": "9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942",
++      "MFR_physical_pages": [
++        1,
++        2,
++        3,
++        4,
++        5,
++        6
++      ],
++      "MFR_page_urls": [
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=1",
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=2",
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=3",
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=4",
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=5",
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=6"
++      ],
++      "retained_notes_source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "retained_notes_physical_and_printed_pages": [
++        8,
++        9,
++        14,
++        16
++      ],
++      "retained_notes_page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=8",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=9",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=14",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=16"
++      ],
++      "visible_anchor": "Full-MFRselectedabsencecomparison with earlierliteralnotevalues",
++      "new_MFR_observation_or_report": "The full sixpageMFRdoesnotrepeat the literal9/18/04/0843pressrelease challenge, handwritten925/CAP/second-hit wording or the mixed/crossed-outnoteheader. Its ownpagesthreeandsixsupplydifferentexplicitrecording/timefields.",
++      "earlier_note_observation_or_report": "Earlierliteral9/18/04,0843,925,1/22/04,1/23andheaderchange remain unchanged in the18pagepacket and its publishedreport.",
++      "selected_MFR_literal_wording": [],
++      "interpretation_limits_and_next_test": "Absence from this summary neither fixes nor explains those values. Do not silentlycorrectdates, infer thecreator’smotive or suppose publication ofonecopyreplacedtheother. Actualpressrelease, source/log/correctionfiles and assemblyhistoryremain open.",
++      "comparison_method": "Actual six-page MFRimage reading plus reused prior18-page noteimage/pinreview; document comparison, not native/audio/clock/historical authentication."
++    },
++    {
++      "id": "MFR09",
++      "MFR_source_sha256": "9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942",
++      "MFR_physical_pages": [
++        1,
++        2,
++        3,
++        6
++      ],
++      "MFR_page_urls": [
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=1",
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=2",
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=3",
++        "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=6"
++      ],
++      "retained_notes_source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "retained_notes_physical_and_printed_pages": [
++        15,
++        16
++      ],
++      "retained_notes_page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=15",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=16"
++      ],
++      "visible_anchor": "Exerciseincreaseinstaffing,initialexerciseassumption,informationfeed,radioandtrainingparagraphs",
++      "new_MFR_observation_or_report": "MFRreports increasedstaffingduringtheexercise, initialbeliefthattheexercisehadbegun, rapidlyprovidedinformation, operationaltrafficconstraintsandoverwhelmedradio. These accounts of capability and strain are retained together.",
++      "earlier_note_observation_or_report": "Notesinclude favorableawarenessassessments, initialcallabsence and target-identityqualifications.",
++      "selected_MFR_literal_wording": [],
++      "interpretation_limits_and_next_test": "Preserve positive and limitingaccounts without turningstaffingintoaproofofnoexerciseeffect orstrainintointentionalobstruction. The MFRis a staffsummaryofinterview/recordreview,notanindependentmeasuredperformance or conspiracytest.",
++      "comparison_method": "Actual six-page MFRimage reading plus reused prior18-page noteimage/pinreview; document comparison, not native/audio/clock/historical authentication."
++    }
++  ],
++  "line_reference_convention": "Page-image/heading/paragraph/bullet anchors, not invented native text-line or recording timestamps.",
++  "source_dependence": "Copies/notes/summaries from one interview/recordreview do not count as independent corroboration."
++}
+diff --git a/EDITORIAL-REVISION.diff b/EDITORIAL-REVISION.diff
+new file mode 100644
+index 00000000..ae2c3698
+--- /dev/null
++++ b/EDITORIAL-REVISION.diff
+@@ -0,0 +1,21 @@
++diff --git a/publication-v1/CHECKLIST.md b/publication-v2/CHECKLIST.md
++index a482c346..359c4f3f 100644
++--- a/publication-v1/CHECKLIST.md
+++++ b/publication-v2/CHECKLIST.md
++@@ -11 +11 @@
++-| Exact revision diff; layout separate | TEXT-CHANGES.diff; PAGE-READING.json/SOURCE-CHECKS.json | Real Git addition diff from absent prior paths; six whole-page views separate from render/fingerprint success. |
+++| Exact revision diff; layout separate | TEXT-CHANGES.diff, EDITORIAL-REVISION.diff; PAGE-READING.json/SOURCE-CHECKS.json | Real Git addition diff from absent prior paths; six whole-page views separate from render/fingerprint success. |
++diff --git a/publication-v1/COMPARISON-PINS.json b/publication-v2/COMPARISON-PINS.json
++index b8e78ea7..b869ef16 100644
++--- a/publication-v1/COMPARISON-PINS.json
+++++ b/publication-v2/COMPARISON-PINS.json
++@@ -127 +127 @@
++-      "new_MFR_observation_or_report": "MFRrecounts Otisintent, a qualified believedAA11target, no rememberedUAL175informationbeforeasecondhijack, Langleybattle-stationsaround9:09AMandbarriercapintent. It does not expressly repeat the notes’ IDs→MCCAmerican11rebirth-source passage.",
+++      "new_MFR_observation_or_report": "MFRrecounts Otisintent, a qualified believedAA11target, no remembered UAL175 information before the operations floor heard that there was a second hijack, Langleybattle-stationsaround9:09AMandbarriercapintent. It does not expressly repeat the notes’ IDs→MCCAmerican11rebirth-source passage.",
++diff --git a/publication-v1/README.md b/publication-v2/README.md
++index 7bdf4e7a..bbfef5e9 100644
++--- a/publication-v1/README.md
+++++ b/publication-v2/README.md
++@@ -53 +53 @@ MC-T07 is now **partial: MFR acquired/read and selected content compared**. The
++-Original PDFs and separate rasters remain in the native Intel source store. New public notes preserve the competing wording; prior reports, source bytes and public history remain unchanged. `SOURCE-CHECKS.json` separates format/fingerprint/render checks from visual reading and historical authentication. `CHECKLIST.md` records requirement outcomes; `TEXT-CHANGES.diff` is the actual new-document Git addition diff. Public payload excludes raw marked pages/full speech, ancillary personnel/contact/access details, private correspondence, strategy and credentials. No outreach, fee, request, filing, source repair/deletion, audio decoding, clock fitting, experiment, private push or history rewrite occurred. Publication is a separate verified milestone, not acceptance of the substantive goal.
+++Original PDFs and separate rasters remain in the native Intel source store. New public notes preserve the competing wording; prior reports, source bytes and public history remain unchanged. `SOURCE-CHECKS.json` separates format/fingerprint/render checks from visual reading and historical authentication. `CHECKLIST.md` records requirement outcomes; `TEXT-CHANGES.diff` is the actual new-document Git addition diff. `EDITORIAL-REVISION.diff` preserves the final clarification of one paraphrase against the retained draft: remembered information before staff heard of a second hijack, rather than before the independently timed event. No source wording or value was changed. Public payload excludes raw marked pages/full speech, ancillary personnel/contact/access details, private correspondence, strategy and credentials. No outreach, fee, request, filing, source repair/deletion, audio decoding, clock fitting, experiment, private push or history rewrite occurred. Publication is a separate verified milestone, not acceptance of the substantive goal.
+diff --git a/OPEN-TODOS.json b/OPEN-TODOS.json
+new file mode 100644
+index 00000000..ba73ca15
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,116 @@
++{
++  "new_targets": [
++    {
++      "id": "MC-T01",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Actual Alderson and original transcript versions, their complete calls/channel/copy manifests, source audio and assembly/transmittal history.",
++      "test_and_revisit_trigger": "Compare the stated omitted Bellucio/ZNY and following calls across the actual versions; establish version-specific coverage, not an inferred universal omission."
++    },
++    {
++      "id": "MC-T02",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Actual post9:10timing redo/verification worksheet, validated transcript, review comments and source clock/CD/export crosswalk.",
++      "test_and_revisit_trigger": "Determine whether/when the required verification occurred and its results. Keep NCT0056356/RDOD04013680 and RDOD04020795 as existing unacquired targets, not automatically the worksheet mentioned here. No repeat clock queries or alignment to a preferred narrative."
++    },
++    {
++      "id": "MC-T03",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Original ID-section received information, source/validation/correction notes and matched MCC/FAA call-leg or message records.",
++      "test_and_revisit_trigger": "Trace the reported ID→MCCstep back to its originating source and actual recipients. Join AEA1130at1326/1329only through content/source/leg evidence, not matching topics or printed clocks."
++    },
++    {
++      "id": "MC-T04",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Native MCC/M CCT, CONR/AWC and exercise chat logs, exports, schemas, authors and version/entry-time history.",
++      "test_and_revisit_trigger": "Separate event time, entry time, subsequent reconstruction and source data. Test omissions, later annotation and ordinary reconstruction as well as alteration, without assuming either."
++    },
++    {
++      "id": "MC-T05",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "WOC/Herndon/AirThreat bridge participation and BattleCab/secure/DSN call-routing records.",
++      "test_and_revisit_trigger": "Test capability versus actual individual/organizational participation, recipients, bridges and time. A personal did-not statement is not organization-wide absence."
++    },
++    {
++      "id": "MC-T06",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "The actual NORAD press release referred to by the literal9/18/04/0843line, all relevant versions and note-creation/correction history.",
++      "test_and_revisit_trigger": "Preserve literal04and January2004labels; identify the actual source before considering typo, later compilation, wrong referent or another explanation. Test the challenged0843value against authenticated records, not the interview label alone."
++    },
++    {
++      "id": "MC-T07",
++      "status": "PARTIAL_MFR_ACQUIRED_AND_READ",
++      "missing_or_unperformed": "Official six-page MFR NAID2610370and a source-to-note/author/date/assembly crosswalk.",
++      "test_and_revisit_trigger": "Compare the actual MFR with the18-page ISCAPpacket; establish which notes/questions belong to which interview, what was adopted and what remained an open question. Neither same title nor different extent settles equivalence.",
++      "previous_status_preserved": "TODO_INPUT",
++      "previous_missing_wording_preserved": "Official six-page MFR NAID2610370and a source-to-note/author/date/assembly crosswalk.",
++      "new_outcome": "ActualNARA2610370MFRacquired,6pages/724933bytes,all6imagesread; selectedpassagescomparedwithpriornotes. Exactsource-to-note author/date/assembly/version/approval crosswalk remains unproved."
++    },
++    {
++      "id": "MC-T08",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Underlying RADES/raw target information, original Z-point/source records and aircraft/call association.",
++      "test_and_revisit_trigger": "Test primary-target identity, source accuracy and information-flow scope independently; no new technical decoding/calibration task is duplicated here."
++    },
++    {
++      "id": "MC-T09",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Original readiness/authority orders, routing/receipt records, staff-note custody and formal after-action/correction records.",
++      "test_and_revisit_trigger": "Test the remaining readiness/control/debrief claims. Keep recollection, policy, order, actual execution, later record collection and signed FAA personnel/disposition events distinct."
++    },
++    {
++      "id": "MFR-T01",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "MFRauthoring/draft/version/approval/transmittal and source-to-note assembly/correctionhistory; actual recordedinterview or its disposition if any.",
++      "test_and_revisit_trigger": "Trace what was summarized, omitted, corrected, adopted anddelivered, andwhy. Do not infer any of these from the visible crossed-through recording-reference line or absent warnings alone."
++    },
++    {
++      "id": "MFR-T02",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "ActualAldersonandoriginaltranscript/media versions withversion/channel/export/reviewmapping and timingredo/verification output.",
++      "test_and_revisit_trigger": "Join the MFRexplicitDRM1DAT2Ch2label, noteAldersonwarning, priorreproductionDRM2label and heldMP3onlythroughrealmanifest/content/version evidence; no filename-basedidentity/offsetadjudication."
++    },
++    {
++      "id": "MFR-T03",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "OriginalLangley/Norfolk/GiantKillerorders/agreements, transmissions/receipts and nativeROE/DEFCONorders/logs withclockdefinitions.",
++      "test_and_revisit_trigger": "Test attributedheadings/control/authority/readinessbyactualsource records, with contraryornegativeoutcomesretained; no post9/11policybackprojection oractualexecutionfromaMFRlabel."
++    }
++  ],
++  "previous_omic_todos": {
++    "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/dcdc9f647130139c60128ae3c131d40955536b34/investigation/broader-evidence/faa-omic-body-completion-2026-10-31/OPEN-TODOS.json",
++    "status": "OM-T01–07andOM-T09–12remain open. OM-T08only page reading complete. New ID→MCCsource attribution partially advances OM-T09 but does not complete original-message/call joins."
++  },
++  "all_original_requirements": {
++    "FAA": [
++      "FAA01",
++      "FAA02",
++      "FAA03",
++      "FAA04"
++    ],
++    "telephone": [
++      "TEL01",
++      "TEL02",
++      "TEL03",
++      "TEL04"
++    ],
++    "recorder": [
++      "REC01",
++      "REC02",
++      "REC03"
++    ],
++    "materials": [
++      "MAT01",
++      "MAT02",
++      "MAT03"
++    ],
++    "steel": [
++      "STL01",
++      "STL02",
++      "STL03",
++      "STL04"
++    ]
++  },
++  "completion": "All18originalcriteria remain open/partial; source acquisition/review progresses the operational trail, not native authentication, receipt or an unperformed empirical test.",
++  "ownership": "Operational acquisition here; recorder/materials decoding and calibrated clock tests retain the assigned technical owner. No outreach, request, fee or new experiment performed.",
++  "current_MFR_report": "Newread/acquisitiononly; no original18criterion complete. MC-T01–06/08–09 and previousOMinputs remain open; MC-T07partiallyadvanced,notfullyclosed."
++}
+diff --git a/PAGE-READING.json b/PAGE-READING.json
+new file mode 100644
+index 00000000..30d3cfef
+--- /dev/null
++++ b/PAGE-READING.json
+@@ -0,0 +1,37 @@
++{
++  "new_MFR_images": [
++    {
++      "physical_page": 1,
++      "scope_actually_read": "MFR heading/record metadata and visible struck-through recording-reference line; background and staffing section. No authorship/time/cause inferred from the crossing-out.",
++      "whole_page_viewed": true
++    },
++    {
++      "physical_page": 2,
++      "scope_actually_read": "Staffing continuation; secure/CONR communications; chat logs and unknown disjointed day/time entries; FAA communication and personal conference-call nonmonitoring; phone capability.",
++      "whole_page_viewed": true
++    },
++    {
++      "physical_page": 3,
++      "scope_actually_read": "Initial exercise expectation, information-feed account, explicit DRM1/DAT2Ch2/Alderson review label, Otis tactics/FAAcoordination/Z-point/qualified target account.",
++      "whole_page_viewed": true
++    },
++    {
++      "physical_page": 4,
++      "scope_actually_read": "UAL175recollection, holding/spin description, Langley battle stations and010versus090for60heading account, request for other-source explanation, uncertain authority/handoff andAFIOstart.",
++      "whole_page_viewed": true
++    },
++    {
++      "physical_page": 5,
++      "scope_actually_read": "AFIOcontinuation; AA77/UAL93/Delta1989andfifth-aircraft reports; authority/regulation recollection. No own event/aircraft reconstruction.",
++      "whole_page_viewed": true
++    },
++    {
++      "physical_page": 6,
++      "scope_actually_read": "Approximately10:10/10:14AM,1415/1431/1433GMTand11:03AMsource-attributed orders/readiness sequence, radio/training context and ancillary awards section. Personnel detail excluded from public notes.",
++      "whole_page_viewed": true
++    }
++  ],
++  "reading_method": "Six1800pxwhole-page images actually viewed in threepairs. NoOCR, hidden/redacted-text recovery, audio replay, decoded waveform or clock fitting. Not a verbatim transcription of everymark.",
++  "prior_notes": "Reuse preceding unit’s actual18pagevisualreview and sourcepins; no new claim of re-viewing those18images. Relevant public literal fields compared, not incidental personnel details.",
++  "absence_scope": "Not observed in the complete six-page MFR: the specific Alderson missing-call warning, post9:10redo requirement, explicit RADESmayhavebeenaddedafter9/11qualification, literal9/18/04pressrelease reference and the notes’ explicit American11IDs→MCCrebirth-source passage. This is bounded document content coverage, not historical absence or cause."
++}
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..bbfef5e9
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,53 @@
++# Six-page NEADS MFR compared with the retained interview notes
++
++October 31, 2026. The separately indexed **six-page Nasypany MFR is now acquired and fully read**. It is a different released file from the retained **18-page interview/review notes**. Both originals remain unchanged. This advances MC-T07 without completing the authoring/assembly/version relationship or any of the original 18 substantive criteria.
++
++## Main result
++
++On [MFR page 3](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=3), Commission staff explicitly say they reviewed **“DRM 1 DAT 2 Channel 2 MCC Op”** audio with the **Alderson Reporting transcript**. The retained [notes page 17](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17) says some clear calls occur in an **original transcript** but not Alderson, and that Alderson MCC OP Ch. 2 times from around **9:10 onward** must be redone and verified.
++
++Those specific missing-call and timing-redo warnings were **not observed in the complete six-page MFR**. That is a bounded comparison of what these copies contain. It does not establish why the coverage differs, whether the warning was later addressed, or whether anyone intentionally concealed it. The MFR's review statement is not a completed timing worksheet.
++
++The explicit recording label is useful for tracing the review. It remains beside the previously observed **DRM2/DAT2 Channel2** label in a selected transcript reproduction and the held MP3's **DRM1_DAT2_Channel_2_MCC_Op.mp3** filename. We do not choose one as controlling or authenticate a recording from its name. The actual versions, source/copy/channel manifest and completed verification work are still required.
++
++## Source and actual reading
++
++| Record | Newly acquired six-page MFR | Previously held notes packet |
++| --- | --- | --- |
++| Official locator | [NAID 2610370](https://catalog.archives.gov/id/2610370), [actual PDF](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf) | [ISCAP 2011-048, doc8](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf) |
++| Extent / bytes | **6 pages / 724,933 bytes** | **18 pages / 13,154,124 bytes** |
++| SHA-256 | `9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942` | `598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e` |
++| Form / fields | Self-titled MFR, interview dates **January 22 and 23, 2004**, **Prepared by Geoffrey Brown**, Team8 | Mixed handwritten excerpt/question/interview/continuation notes plus typed interview bullets |
++| This unit's reading | All six whole-page images, visually read | Reused the preceding unit's actual 18-page reading/pins; no newly claimed re-viewing of those images |
++
++The catalogue loaded through the ordinary public browser and exposed the current PDF download. Its six-page extent matched the acquired PDF. That does not explain the different 18-page note packet or establish a complete draft-to-MFR lineage. Acquisition times and source response fields are in `SOURCES.json`; actual image scope is in `PAGE-READING.json`.
++
++The file was served without a Content-Type header. Our first header-only guard stopped before saving the body; its script/failure remain preserved. One corrective acquisition retained the missing header as null and required the actual PDF signature, successful parse, size cap and readback hash. This was our acquisition-assumption correction, not a suspicious finding about the historical record. No login, challenge or alternate-host bypass occurred. Raw catalogue/contact text and marked source pages are excluded from this public derivative.
++
++## Side-by-side findings
++
++| Pin / exact source scope | MFR | Retained notes / unresolved comparison |
++| --- | --- | --- |
++| MFR01, page1 heading and crossed-through line | States interview subject/dates/preparer. A visible line referring the reader to the recorded interview for further details is struck through. | Do not identify who crossed it out, why, when, or whether a recording exists or was destroyed. The actual interview/source/version history remains a retrieval target. |
++| MFR02, page3 review statement; all six pages for the bounded warning check | Names DRM1/DAT2/Ch2 and Alderson review; no specific missing-call or post9:10 redo warning observed. | Notes17 contains those warnings. Summarization, scope/version differences, completed correction and improper omission remain possible explanations; none is selected. |
++| MFR03, page2 *Chat logs* | Reports real-world information in the exercise log and says Nasypany **did not know why** time/day entries were disjointed. | Notes15 also says some data, including RADES, **may** have been entered after9/11. That explicit qualification was not observed in the MFR. Native entries/schema/creation-event-edit history needed; no fabricated-log conclusion. |
++| MFR04, page2 *FAA communication* and phone paragraphs | Describes communication through ID, possible use of the FAA representative in BattleCab and personal nonmonitoring of FAA conference calls; secure/CONR versus CheyenneMountain connections are distinguished. | Notes9–10/15 give different detail on possible WOC/Herndon bridge access, personal nonparticipation and BattleCab/AirThreat roles. Capability, speaking, monitoring and organization-wide participation are not equivalent. |
++| MFR05, pages3–4 *Otis/UAL175/Langley* | Gives qualified target/recollection accounts, Langley battle stations around9:09AM and barrier-cap intent. It does not expressly repeat the notes' American11-still-airborne **IDs→MCC** source passage. | Notes16–17 preserve the specific source path and second-hit/notification wording. The underlying rumor, validation/correction and exact FAA1326/1329 call legs remain unjoined. Distinct battle-stations, scramble, positioning and receipt events are not conflated. |
++| MFR06, pages4–5 *Langley/AFIO* | Retains **010** versus **090 for60** headings, says other Langley/GiantKiller sources are needed, and records uncertainty whether Nasypany recommended BattleCab AFIO authority or acted himself. A higher-authority requirement is specifically described as post9/11. | Notes17 give qualified expectations/control beliefs. Actual agreements, commands, handoffs, receivers and execution remain needed. Later policy does not automatically establish the applicable9/11 rule. |
++| MFR07, pages5–6 *ROE/DEFCON* | Records source-attributed approximate10:10/10:14AM, **1415GMT**, **1431(GMT)**, **1433**, and approximately**11:03AM** statements. The MFR distinguishes clearance/ROE information and DEFCON3 relay. | Keep these labels and qualifications beside the handwritten readiness/order notes. No independent clock fit or recovered signed order. The earlier FAA1330 “we just went up” passage did not identify a formal level; do not automatically treat it as the same event. |
++| MFR08, all six pages versus notes8/9/14/16 | No repetition observed of the literal **9/18/04 / 0843** press-release challenge, handwritten **925** CAP/second-hit line or mixed/crossed-out subject header. | Earlier source values remain preserved, unexplained and unrepaired. Absence from this summary does not authenticate a corrected value or erase the note record. |
++| MFR09, pages1–3/6 | Retains increased exercise staffing, initial exercise expectation, rapid information-feed account, operational traffic constraints and overwhelmed radio coverage. | Preserve capability and strain together. Neither establishes zero exercise effect, deliberate obstruction or independent measured response performance. |
++
++`COMPARISON-PINS.json` supplies each exact source hash, page URL, visible heading/paragraph anchor, literal fields and inference limits. These are image/page references, not invented native text-line numbers. The two records may share the same interview, recordings and staff review; they are not independent corroboration merely because they are separate files.
++
++## What could change the assessment
++
++An actual comparison of the original/Alderson versions could establish which calls and times differed. The redo worksheet or corrected transcript could show accurate correction and propagation, weakening a concealment interpretation while preserving the earlier defect. Conversely, source-supported known uncorrected errors or unexplained incompatible delivered versions could strengthen a specific integrity concern. The present MFR does not settle either possibility.
++
++Native logs and edit history could distinguish ordinary later reconstruction, mixed logging conventions or actual alteration. Orders, routing/receipt records and source clocks could test the attributed headings/readiness/authority accounts. None of those tests has been performed from this six-page acquisition, and a staff summary's assertion is not an independent measurement.
++
++## Status and preservation
++
++MC-T07 is now **partial: MFR acquired/read and selected content compared**. The complete note-to-MFR author/date/assembly/approval crosswalk remains missing. All earlier MC/OM input gaps and the original18requirements across FAA, telephone, recorder, materials and steel remain open/partial. In particular this is not the actual May2003 corrected QFR/receipt, signed2006 consideration/action/no-action decision or recommendation-disposition chain. Earlier completed technical tests remain performed; they were not duplicated here.
++
++Original PDFs and separate rasters remain in the native Intel source store. New public notes preserve the competing wording; prior reports, source bytes and public history remain unchanged. `SOURCE-CHECKS.json` separates format/fingerprint/render checks from visual reading and historical authentication. `CHECKLIST.md` records requirement outcomes; `TEXT-CHANGES.diff` is the actual new-document Git addition diff. `EDITORIAL-REVISION.diff` preserves the final clarification of one paraphrase against the retained draft: remembered information before staff heard of a second hijack, rather than before the independently timed event. No source wording or value was changed. Public payload excludes raw marked pages/full speech, ancillary personnel/contact/access details, private correspondence, strategy and credentials. No outreach, fee, request, filing, source repair/deletion, audio decoding, clock fitting, experiment, private push or history rewrite occurred. Publication is a separate verified milestone, not acceptance of the substantive goal.
+diff --git a/SOURCE-CHECKS.json b/SOURCE-CHECKS.json
+new file mode 100644
+index 00000000..e2f08a48
+--- /dev/null
++++ b/SOURCE-CHECKS.json
+@@ -0,0 +1,58 @@
++{
++  "time_utc": "2026-10-31T20:56:22.729920+00:00",
++  "source_and_raster_checks": [
++    {
++      "source": "MFR2610370",
++      "sha256": "9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942",
++      "unchanged": true
++    },
++    {
++      "source": "ISCAPdoc8",
++      "sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "unchanged": true
++    },
++    {
++      "MFR_raster_page": 1,
++      "sha256": "2bba68f0741826f434f034c5e6436cd1d4fc5caa409ad34cb20b197c5c0f1f34",
++      "matches_render_receipt": true
++    },
++    {
++      "MFR_raster_page": 2,
++      "sha256": "d9f6f0c9205ef7b2990ff4b39ee1f278923936e6f29cf0ea20ee2666ec1a656d",
++      "matches_render_receipt": true
++    },
++    {
++      "MFR_raster_page": 3,
++      "sha256": "3c183ed01f1c4bd1ca67105118fcc18451b2a893fbcd12616da4a02b93689974",
++      "matches_render_receipt": true
++    },
++    {
++      "MFR_raster_page": 4,
++      "sha256": "a0ca6431f6c36be00296f5c5618bdbe5fd97b454aceb19d1f4e3a3cd05f13df2",
++      "matches_render_receipt": true
++    },
++    {
++      "MFR_raster_page": 5,
++      "sha256": "0ebe152737064a7106ecd7de854558d437344cdfc09ad19837d63f2f12e96d5c",
++      "matches_render_receipt": true
++    },
++    {
++      "MFR_raster_page": 6,
++      "sha256": "4b1d92d0e075865446bab193ba4da8d115af97bea9a845060cd7c7567b7982d4",
++      "matches_render_receipt": true
++    }
++  ],
++  "format_and_extent": "Actual%PDFsignature, successfulpypdfparse,6pages/724933bytes; contenttypeheaderabsentpreserved. Sizecap/readback intact.",
++  "render_exit_code": 0,
++  "actual_visual_scope": "Sixwholepageimagesviewed inthreepairs; prior18pageview/pinsreused,notclaimedasnewreading.",
++  "document_comparison": "Selectedmanualfull-MFRversusprior-notescomparison. Boundedabsencechecks applyonlytothesix-pageMFRandnamedpassages. NoXML/hiddenstate/OCR/redactionreconstruction.",
++  "not_proven": [
++    "Nativeauthoring/version/approval/custodyequivalence",
++    "Sourceaudio/call/speaker/aircraftidentity",
++    "Calibratedeventclock,actualcommandsorreceipts",
++    "Reasonforcondensation/omissions/crossed-throughline",
++    "Historicalcause/intent/coordinationororiginal18goalcompletion"
++  ],
++  "public_payload_review": "Originaleligiblepublic-sourceresearchnotes/safeinstitutionalrecordfields only. RawmarkedPDF/images/fullspeech,incidentalpersonal/contact/access/privatecase/credentialdataexcluded.",
++  "publication": "Mustbeverifiedseparatelybyactualremotecommit/ref/bodies."
++}
+diff --git a/SOURCES.json b/SOURCES.json
+new file mode 100644
+index 00000000..aa9e86b8
+--- /dev/null
++++ b/SOURCES.json
+@@ -0,0 +1,50 @@
++{
++  "new_MFR": {
++    "id": "NARA2610370",
++    "catalogue": "https://catalog.archives.gov/id/2610370",
++    "url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf",
++    "final_url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf",
++    "status": 200,
++    "started_utc": "2026-10-31T20:51:09.092317+00:00",
++    "finished_utc": "2026-10-31T20:51:09.382684+00:00",
++    "bytes": 724933,
++    "sha256": "9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942",
++    "physical_pages": 6,
++    "readback_matches": true,
++    "observed_title": "Memorandum for the Record (MFR) of the Interview of Kevin J. Nasypany of the NEADS Conducted by Team8",
++    "visible_record_fields": "Interview dates January22and23,2004; Prepared by GeoffreyBrown; Team8. These are record fields, not a verified authoring/approval timestamp.",
++    "source_form": "Released six-page scan; not native authoring document, interview audio, source transcript or approved command order.",
++    "selected_response_headers": {
++      "Content-Type": null,
++      "Content-Length": "724933",
++      "Last-Modified": "Mon, 31 Aug 2026 18:27:40 GMT",
++      "ETag": "\"9a5900ea60bf91e1493506a4941c4938\""
++    },
++    "header_limit": "Content-Type was absent in both observed acquisition responses, preserved as null. Actual PDF signature/parse/readback validated the acquired format. A header omission is not evidence of source alteration."
++  },
++  "retained_notes_packet": {
++    "id": "ISCAP2011-048-doc8",
++    "url": "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf",
++    "final_url": "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf",
++    "status": 200,
++    "started_utc": "2026-10-31T20:36:21.517821+00:00",
++    "finished_utc": "2026-10-31T20:36:25.232235+00:00",
++    "bytes": 13154124,
++    "sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++    "physical_pages": 18,
++    "readback_matches": true,
++    "form": "18-page mixed handwritten and typed interview/review notes, not byte/page-equivalent to this MFR. Original source preserved unchanged.",
++    "prior_reading_report": "https://github.com/AveLyra/911-conspiracy-investigation/blob/6724cdda3c988831a49ad14cf0952adca43275d4/investigation/broader-evidence/neads-command-source-notes-2026-10-31/README.md"
++  },
++  "MFR_public_locator_chain": "Exact2610370query→official index and an official DOD-hosted historical citation to legacy media.nara.govURL. Web reader could not access exact catalogue/legacyURL; ordinary public browser catalogue loaded and visibly exposed the current medialz download. No guessed asset/API route or login bypass.",
++  "catalogue_observation_scope": "Read exact item title, NAID, one downloadable file, six-page extent, unrestricted access/use labels, displayed document text and actual download link. Public contact/footer fields not included in this derivative. UI observation is separate from acquired PDF bytes.",
++  "prior_reproduction_label_kept": {
++    "url": "https://www.scribd.com/document/14142009/NYC-Box-2-NEADS-Transcript-Rome-NY-Fdr-Transcript-Pgs-1-82-1237-1417",
++    "prior_selected_page": 50,
++    "prior_visible_label": "DRM2/DAT2 Channel2 MCC-OP",
++    "prior_bates": "NCT0000098",
++    "scope": "Reused prior selected facsimile observation only; no fresh opening, full source PDF or hash acquired here. Its identity remains unjoined to MFR-reviewed media and actual source recording."
++  },
++  "reading_date": "2026-10-31",
++  "source_dependence": "The MFR and note packet apparently concern the same interview/source-record review. Shared content is not independent corroboration or a demonstrated complete draft-to-final lineage."
++}
