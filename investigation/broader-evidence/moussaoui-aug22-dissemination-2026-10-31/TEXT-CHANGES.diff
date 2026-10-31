@@ -1,0 +1,576 @@
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..a99cdd0a
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,15 @@
++# Request accountability
++
++| User point | Outcome and location | Verification and remaining issue |
++| --- | --- | --- |
++| Leave missing inputs as TODOs | OPEN-TODOS.json retains DRAFT-T01–T06 prior wording and all18 original requirement IDs; adds AD-T01–T06 | No criterion silently closed;633 remains unread |
++| Pursue another available public-source lead | New327 court PDF acquired and all8pages read;633 acquired separately | SOURCES.json and SOURCE-PINS.json; original supporting records/returns still absent |
++| Avoid repeating completed searches | Existing court index reused; bounded holdings check preceded acquisition | No duplicate source download/old open-recommendations query; FAA all-report miss kept local |
++| Preserve conflicting records | CONFLICTS.json keeps source-reported accounts and investigator interpretation, identity uncertainty and links to prior conflicts | No preferred account, normalized value, redaction recovery or implied adjudication |
++| Keep source links and exact references | Each AD01–AD07 observation has court URL, physical pages and visible Bates references | Image sources have no fabricated line numbering; hash is downloaded-copy identity |
++| Commit/push eligible new findings as AveLyra | Candidate contains only additive original notes/locators/TODOs and actual Git addition diff | Commit, account, destination, remote ref and every file must be checked after execution; no advance success claim |
++| Preserve unrelated/private/source material | Raw PDFs/rasters retained separately; no earlier public files overwritten | No private push, case correspondence, contact/personal details, signature or credentials in payload |
++| Supply revision diff | TEXT-CHANGES.diff records each new text file versus absent preceding path | Git-generated relative addition diff; not source-document or PDF-layout verification |
++| Share meaningful progress with Overview | Exact public commit/link, scope/limits and remaining records eligible for a compact handoff | Actual delivery recorded separately; no claim of adoption or independent review |
++
++Earlier public records remain unchanged. Publication is not completion of the original-record goal or validation of a conspiracy hypothesis.
+diff --git a/CONFLICTS.json b/CONFLICTS.json
+new file mode 100644
+index 00000000..45eccc60
+--- /dev/null
++++ b/CONFLICTS.json
+@@ -0,0 +1,92 @@
++{
++  "items": [
++    {
++      "id": "AD-C01",
++      "type": "Unresolved source-reported account and investigator interpretation",
++      "accounts": [
++        {
++          "source": "327",
++          "pages": [
++            4,
++            5
++          ],
++          "record": "Reported interview account describes ordinary training/peaceful study, denies violent discussion and explains bail assistance."
++        },
++        {
++          "source": "327",
++          "pages": [
++            6,
++            7
++          ],
++          "record": "Writer interprets inconsistencies as a deliberate pattern of deception and possible involvement; certain supporting claims include qualifications."
++        }
++      ],
++      "resolution": "None. Preserve both; underlying interviews/checks/identity resolution and actual task returns required."
++    },
++    {
++      "id": "AD-C02",
++      "type": "Unresolved identity association and qualification, not an adjudicated false match",
++      "accounts": [
++        {
++          "source": "327",
++          "pages": [
++            4,
++            8
++          ],
++          "record": "Identity equivalence is posed as a task to be established, with a partly masked comparator."
++        },
++        {
++          "source": "327",
++          "pages": [
++            6,
++            7
++          ],
++          "record": "Criminal-history/association claims are used in the writer’s argument, including a probability qualification."
++        }
++      ],
++      "resolution": "No masked identity inferred, no preferred identity selected, no criminal record assigned to an unverified match."
++    },
++    {
++      "id": "AD-C03",
++      "type": "Prior conflicting records preserved unchanged",
++      "record": "Prior draft/translation/permission/custody and court-index-versus-email time observations remain in their original reports and CONFLICTS.json files at commits d39c2a1f and 77fd8020.",
++      "resolution": "Not newly adjudicated or independently retested in this batch."
++    }
++  ],
++  "not_claimed_discrepancies": [
++    {
++      "source": "327",
++      "pages": [
++        1
++      ],
++      "values": [
++        "08/15/2001 initiation",
++        "08/21/2001 reported telephone contacts",
++        "08/22/2001 face date"
++      ],
++      "limit": "Different described events; retain all dates without inventing a conflict."
++    },
++    {
++      "source": "327",
++      "pages": [
++        3,
++        6,
++        7
++      ],
++      "values": [
++        "13 attempts",
++        "12 refused/busy/unanswered",
++        "13th/final conversation"
++      ],
++      "limit": "Do not relabel all attempts as completed conversations or count the later summary as independent corroboration."
++    },
++    {
++      "source": "327",
++      "pages": [
++        2
++      ],
++      "value": "Training request sufficient to take off and land",
++      "limit": "Original witness/training record is missing; no contradictory statement is attributed to unread 633."
++    }
++  ]
++}
+diff --git a/OPEN-TODOS.json b/OPEN-TODOS.json
+new file mode 100644
+index 00000000..1cabee0c
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,154 @@
++{
++  "items": [
++    {
++      "id": "DRAFT-T01",
++      "status": "TODO_INPUT_PARTIAL_SOURCE_ADVANCE",
++      "prior_missing_input_verbatim": "Complete336attachedinvestigativereport and requestedpage7; nativeAugust15/16EC/writeup, fullthread/attachments, exactdraft/version/package chain; earliercommunication referencedin639.",
++      "prior_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json",
++      "dependent_test_preserved": "Map exact proposed/revised words and establish which draft state each representation belongs to",
++      "revisit_trigger_preserved": "Native attachment/version chain or explicit authenticated pointer",
++      "remaining_inputs": "642actual native email/attachment and final EC upload/version log; exact59B/346serial/enclosure association.",
++      "advance_this_prior_unit_preserved": "643quotesaFrance-interestparent and644containsdistinctsignedvoice; nativeparent/attachment/version/pageassociation remainsunacquired.",
++      "this_unit_update": "327 supplies another court EC with Serial3 and August21 call references; it does not establish the complete earlier draft/attachment/report-page7 chain."
++    },
++    {
++      "id": "DRAFT-T02",
++      "status": "TODO_INPUT_PARTIAL_SOURCE_ADVANCE",
++      "prior_missing_input_verbatim": "Actual August16 interview/notes/questions and disputed statement/draft passages.",
++      "prior_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json",
++      "dependent_test_preserved": "Test defensive-tactics, hearing-plan, no-answer/unconvincing-answer and negation claims against source statements",
++      "revisit_trigger_preserved": "Matched original statement/interview and paragraph/version evidence",
++      "remaining_inputs": "Original interview and translation counterpart with exact statement-to-draft join; no inference from similar characterizations.",
++      "advance_this_prior_unit_preserved": "644reportsroughtranslations and stronginvestigatorinterpretations; originalaudio/will/translatornotes/claimedchecking and disputedAug16interview remainunacquired.",
++      "this_unit_update": "327 recites interview/training/calling accounts; actual interview notes, call log/audio and training records remain missing."
++    },
++    {
++      "id": "DRAFT-T03",
++      "status": "TODO_INPUT",
++      "prior_missing_input_verbatim": "Original Bowman advice, meeting inputs, reviewed package and legal-review record.",
++      "prior_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json",
++      "dependent_test_preserved": "Assess review completeness and group-versus-foreign-power rationale without adopting a legal conclusion",
++      "revisit_trigger_preserved": "Source-specific advice/meeting/input record",
++      "remaining_inputs": "ExactAug22/Aug24/Aug30recipient and legal-review package/acknowledgment; distinguish subsequent supplementation from earlier inputs.",
++      "advance_this_prior_unit_preserved": "No newBowman/NSLU/OIPRadvice or actualreviewpackage; concerns/proposedalternativesnotlegalreviewrecord.",
++      "this_unit_update": "327 shows a headquarters information lead, not Bowman/NSLU/OIPR advice or the exact actual legal-review package."
++    },
++    {
++      "id": "DRAFT-T04",
++      "status": "TODO_INPUT",
++      "prior_missing_input_verbatim": "OriginalFrench/Paris/CIA/UKintelligence, substantiveFrenchreply and translation, completepacketmanifest, recipientcopies/receipt and substantive taskreturns; no newcourtcopy proveswhichmaterialwasreviewed.",
++      "prior_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json",
++      "dependent_test_preserved": "Test evidence inclusion/omission and accuracy, retaining redaction-versus-absence distinction",
++      "revisit_trigger_preserved": "Underlying source and authenticated package/version join",
++      "remaining_inputs": "August22fax/source interview and enclosures, August29supplement and original Frenchtext, qualified translation and delivery/receipt/taskreturns.",
++      "advance_this_prior_unit_preserved": "RepeatedAbbottcover doesnotindependentlycorroborate Frenchintelligence or actualBritishreceipt; source originals/certifiedtranslation/taskreturns remainmissing.",
++      "this_unit_update": "327 gives field investigative tasks; underlying foreign intelligence, recipient acknowledgments and completed returns remain missing."
++    },
++    {
++      "id": "DRAFT-T05",
++      "status": "TODO_INPUT_PARTIAL_SOURCE_ADVANCE",
++      "prior_missing_input_verbatim": "Actual referral/nonreferral, criminal/FISA determinations/orders/returns and executed alternative actions.",
++      "prior_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json",
++      "dependent_test_preserved": "Distinguish drafting/advice from referral/adjudication/execution and test actual reason/outcome",
++      "revisit_trigger_preserved": "Actual source-specific referral/nonreferral/decision/order/return/task record",
++      "remaining_inputs": "Franceoption recommendation/response/disposition, legal authority, escort/transport/custody/examination record, or documented non-execution.",
++      "advance_this_prior_unit_preserved": "643reportsaplaninworks;644page2reportsauniversity/INSinquiry and conditionalfollowup; no Franceapproval/transfer/search/NSL/immigrationfinaldisposition acquired.",
++      "this_unit_update": "327 gives requested fieldwork and a conditional removal estimate; actual warrant, custody, search, removal and task dispositions are not acquired."
++    },
++    {
++      "id": "DRAFT-T06",
++      "status": "TODO_INPUT_PARTIAL_SOURCE_ADVANCE",
++      "prior_missing_input_verbatim": "Native headers/timezones, transport/receipt, authoring/version and source-to-court assembly/declassification record.",
++      "prior_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json",
++      "dependent_test_preserved": "Authenticate chronology, authorship, dispatch/receipt and date/content relationships",
++      "revisit_trigger_preserved": "Native/independently recorded version, transport, receipt or assembly record",
++      "remaining_inputs": "Nativeparent/attachment messageids and final upload timestamps/log; original-to-court production chain and version-specific recipient receipts.",
++      "advance_this_prior_unit_preserved": "Index64412:58a/PDF12:58PM and643quoted10:31AM/642displayed11:32AMpreserved; nativeIDs/timezones/transportandpageassemblyremainunverified.",
++      "this_unit_update": "327 supplies visible dates/fields/serial pointer; native ACS, transport, receipt and source-to-court assembly chain remain missing."
++    }
++  ],
++  "all_original_eighteen_five_track_requirements": "Unchangedopen/partial, inputsdeferred; thissourceunitdoesnotcompleteanynative/empirical/custodycriterion",
++  "no_outreach_or_gate_bypass": true,
++  "current_source_status": "327 newly acquired and all8 pages read; 633 newly acquired but body unread. Prior source/status fields above are retained as prior-unit history, not claimed as new reading.",
++  "new_specific_targets_preserved_from_prior_unit": [
++    "643nativeparent/reply/attachment/MessageID/timezone/version/recipientreceipt",
++    "OriginalFrance-relatedplan and approval/refusal/revision/abandonment/execution",
++    "644originalcallaudio, will, translatorrecord/method and reportedchecking",
++    "644page2nativeparent/header/pageassociation; underlyingreporteduniversity/INSinquiry/statusfollowup and anyissuedNSL/return",
++    "Courtindexdescription/version/assembly history behindtime/wordinglabels"
++  ],
++  "new_specific_targets": [
++    {
++      "id": "AD-T01",
++      "status": "TODO_INPUT",
++      "missing": "Native327 EC/ACS serial/version/enclosure and dispatch/recipient records; Serial3 and August21 telephone contacts",
++      "test": "Join exact information/version to actual receipt and review input",
++      "trigger": "Authenticated native/recipient/transport record"
++    },
++    {
++      "id": "AD-T02",
++      "status": "TODO_INPUT",
++      "missing": "Oklahoma City and Memphis task assignments, returns, identity resolution and closing entries",
++      "test": "Requested task versus actual completed/negative/inconclusive/unperformed result",
++      "trigger": "Source-specific return/disposition or explicit file pointer"
++    },
++    {
++      "id": "AD-T03",
++      "status": "TODO_INPUT",
++      "missing": "Original detention call log, event definitions, any audio, officer interview and translation records",
++      "test": "Attempt/connection/timing/source-characterization accuracy without assuming content or language",
++      "trigger": "Matched source records, not another retelling"
++    },
++    {
++      "id": "AD-T04",
++      "status": "TODO_INPUT",
++      "missing": "Training request, instructor/school records, original interviews and relevant database returns",
++      "test": "Compare allegations and contrary accounts with their underlying records; keep identity uncertain until actually joined",
++      "trigger": "Original records and explicit source-to-claim join"
++    },
++    {
++      "id": "AD-T05",
++      "status": "TODO_INPUT",
++      "missing": "Actual custody/property/removal decision and execution record",
++      "test": "Separate estimate/proposal/approval/execution, including contrary outcomes",
++      "trigger": "Case-specific decision/receipt/return"
++    },
++    {
++      "id": "AD-T06",
++      "status": "TODO_AVAILABLE_UNREVIEWED",
++      "missing": "Visual reading of preserved633 page1",
++      "test": "Inspect its actual body before making any training/source comparison",
++      "trigger": "Next bounded prospective reading scope; acquisition alone is not reading"
++    }
++  ],
++  "original_eighteen_requirement_ids": {
++    "FAA": [
++      "FAA01",
++      "FAA02",
++      "FAA03",
++      "FAA04"
++    ],
++    "telephone": [
++      "TEL01",
++      "TEL02",
++      "TEL03",
++      "TEL04"
++    ],
++    "recorders": [
++      "REC01",
++      "REC02",
++      "REC03"
++    ],
++    "materials": [
++      "MAT01",
++      "MAT02",
++      "MAT03"
++    ],
++    "steel": [
++      "STL01",
++      "STL02",
++      "STL03",
++      "STL04"
++    ]
++  }
++}
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..c9b2b0d4
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,46 @@
++# August 22 dissemination and investigative leads: exhibit 327
++
++Research date: October 31, 2026. **The court copy supplies an eight-page FBI communication with explicit investigative leads and a stated aircraft-attack suspicion before September 11. It does not establish actual recipient reading, completed task returns, a verified directing group or deliberate obstruction.** This is a new acquisition and reading in this investigation, not a claim that the document was previously unknown publicly.
++
++The [official court exhibit](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=1), [source identities](SOURCES.json), [page/Bates pins](SOURCE-PINS.json), [unresolved comparisons](CONFLICTS.json) and [carried TODOs](OPEN-TODOS.json) preserve the source and its limits. All eight physical pages were visually inspected. The original PDF remains unchanged in the verified source store. This new directory adds notes; it replaces no earlier source or public assessment.
++
++## What the communication actually records
++
++**Distribution and task setting.** Page 1 is marked PRIORITY, dated 08/22/2001, and originates in Minneapolis. It lists Counterterrorism, Oklahoma City and Memphis, references case 199M-MP-60130, Serial 3, and says the information was discussed in August 21 telephone calls. The full-field-investigation field says 08/15/2001. Page 8 sets three leads: headquarters at ITOS/RFU receives an information lead; Oklahoma City receives an identity-coordination task plus investigation into possible terrorist or criminal activity; Memphis receives an identity-coordination task. These are visible destinations and requested work, not dispatch logs, acknowledged receipt, the exact package a legal reviewer examined, or proof of completed work. [Pages 1 and 8](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=8), AD01 and AD07.
++
++**Suspicion is explicit; the directing group is not established.** Page 2 reports Minneapolis's belief that Moussaoui was preparing for international terrorism. Page 7 says Minneapolis opines that Moussaoui and Al-Attas were preparing an attack involving a Boeing 747-400, directed by an as-yet-unknown international group. Those are contemporaneously dated investigator assessments in this court representation. They are not an independently verified operational plan, a demonstrated al-Qaeda link, proof of a specific target/date, or evidence that every recipient knew an attack would occur. Page 7 also alleges that associates deliberately downplayed the threat. Preserve that allegation as the author's interpretation, not a finding independently established here. [Pages 2 and 7](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=7), AD02.
++
++**The supporting accounts are disputed and qualified within the memo.** Pages 4–5 report an interviewee's account of ordinary flight training, peaceful study, denial of violent discussions, and a practical explanation for arranging bail. Pages 6–7 argue that inconsistencies and other information suggest deception and involvement. Page 4 says investigators are trying to establish an identity match; page 8 repeats that task. Part of the comparison is masked. Page 6's criminal-history argument itself includes a probability qualification. The investigator's interpretation, the reported contrary account and the unresolved identity question all remain visible. Neither this reading nor similarity of names resolves them. Underlying interviews, database returns and identity-resolution records would be needed. [Pages 4–8](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=4), AD03–AD04.
++
++**A telephone-record lead has a specific source chain.** Page 3 reports that a detention-unit sergeant supplied a call log: 13 attempts between 1:07 p.m. and 4:14 p.m., with the first 12 refused, busy or unanswered and a final conversation described as heated. The language and tone are reported characterizations; the memo says the officer presumed the language. Pages 6–7 refer back to the same calling pattern. This is not 13 demonstrated completed conversations, a translated recording, an independent carrier return or several independent corroborations. No telephone number, address, birth date or other unnecessary personal identifier is reproduced in these notes. The original log, event definitions, any recording and the underlying interview are concrete TODOs. [Page 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=3), AD05.
++
++**Training and custody descriptions need their source records.** Page 2 reports a request for 747-400 instruction sufficient to take off and land. That wording is preserved; no contradictory source is invented or selected to replace it. Original school records, instructor interviews and actual requested lessons would test it. Page 3 reports a conditional estimate of deportation and return of property unless investigative progress was made. An estimate is not an executed deportation, an authorization to search, a completed property return or the later France proposal's disposition. [Pages 2–3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=2), AD06–AD07.
++
++## How this fits the existing trail
++
++The [earlier French-report study](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md) preserved attributed intelligence, draft warnings and questions about exact review packages. The [France-option follow-up](https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md) preserved proposed alternatives and conflicting time labels. Those prior records and values remain unchanged; they were not newly reauthenticated or completely reread in this batch.
++
++Exhibit 327 adds a different retrieval path: its named field-office tasks, headquarters information lead, Serial 3 reference, August 21 telephone contacts and source-log attribution. **The existence of investigative tasks weighs against a blanket assertion that nobody initiated or requested any investigation.** It does not show that the tasks were sufficient or fulfilled. Conversely, a task without a return in these eight pages is not evidence that no return existed. Nor does an information lead establish that headquarters prohibited action elsewhere.
++
++The memo's August 15 initiation date, August 21 telephone contacts and August 22 face date describe different events. They are retained as printed; their difference alone is not a chronology conflict. The 13 attempts and 12 unsuccessful attempts likewise are related counts, not a demonstrated numerical contradiction. The actual unresolved disputes concern the reported accounts, identity association, supporting evidence, receipt and follow-through.
++
++## Next discriminating records, kept as TODOs
++
++1. Native EC/ACS record, serial history, package/enclosure manifest, dispatch and recipient acknowledgments; matched legal-review copies if any.
++2. Oklahoma City and Memphis lead assignments, responses, identity-resolution records and closure/disposition entries. Compare the requested task with each actual return, including contrary or negative results.
++3. Serial 3 and original August 21 telephone-contact records; the original detention call log, outcome-code definitions, preserved audio if any, and source interview/translation records.
++4. Original training request, school/instructor records and the actual interview statements underlying both the suspicion and the contrary explanation.
++5. Any actual custody/property/removal decision and execution record, kept separate from estimates and later proposed alternatives.
++6. Exhibit 633: acquired and preserved from its actual court-index link, but its one-page body was **not read in this batch**. Its index label is not a substitute for reading it or a basis for claiming agreement/disagreement.
++
++[OPEN-TODOS.json](OPEN-TODOS.json) carries DRAFT-T01–T06 and their prior missing-input wording forward. All 18 original FAA/telephone/recorder/materials/steel requirements remain open or partial; none is completed by this source review. No new outreach, request, fee or filing was made. The failed FAA-catalog route remains a separate local search result, not evidence of suppression and not this public finding.
++
++## Confidence, alternatives and verification limits
++
++High confidence is limited to the readable wording, page order and fields of the acquired court PDF. Confidence in actual delivery, completeness, underlying allegation accuracy and historical action is unresolved. The court host supplies provenance for this released representation; a hash identifies these downloaded bytes, not the unproduced native EC, original interviews or transmission chain.
++
++A deliberate-obstruction interpretation would need a matched record showing material information was received and knowingly misrepresented, withheld or left unacted on for an improper reason. Contemporaneous fieldwork, substantive task returns, a mistaken source/identity inference, different actual review inputs, or documented legitimate decisions could weaken it. These remain possible discriminating outcomes, not explanations adopted to resolve the conflicts. The memo alone establishes neither a conspiracy nor the adequacy of the investigation.
++
++Actual work: two source downloads; eight newly read pages in 327; 633 preserved but unread; passive page/attachment-name checks and source/render hash checks. No OCR, hidden-layer extraction, masked-field recovery, native-email authentication, audio decoding, independent interview verification, full source-to-source text diff, legal-sufficiency determination or counterfactual prevention test was performed. An empty embedded-attachment-name list does not prove there were no historical enclosures. Reading every page does not certify every faint character; masked content remains unknown.
++
++[SOURCE-CHECKS.json](SOURCE-CHECKS.json) records preservation checks, not historical validation. [CHECKLIST.md](CHECKLIST.md) accounts for the request. [TEXT-CHANGES.diff](TEXT-CHANGES.diff) is the actual Git addition diff against this directory's preceding absent state; it is not an FBI draft/version diff. Raw PDFs, rasters, full transcriptions, signatures, private case material, personal/contact data and credentials are excluded from publication. Public commit/ref/body verification is recorded separately after execution; publication does not close the substantive investigation.
+diff --git a/SOURCE-CHECKS.json b/SOURCE-CHECKS.json
+new file mode 100644
+index 00000000..e601f39a
+--- /dev/null
++++ b/SOURCE-CHECKS.json
+@@ -0,0 +1,67 @@
++{
++  "performed": [
++    {
++      "check": "Public source acquisition",
++      "result": "Two200 application/pdf entities, exact requested/resolvedURLs and SHA-256 preserved in SOURCES.json"
++    },
++    {
++      "check": "Passive PDF inventory",
++      "result": "3278pages,6331page; neither encrypted; zero embedded attachment names observed in each; no historical enclosure inference"
++    },
++    {
++      "check": "Manual reading",
++      "result": "3278whole pages viewed at longestdimension1800;633unread; no OCR/hidden-layer extraction"
++    },
++    {
++      "check": "Source preservation after reading",
++      "result": true,
++      "sha256": "2bc15966bfa0d5ae505477a5d4da5da38cad61d4106b62fcefebc2c5ea6c067e"
++    },
++    {
++      "check": "Render artifact hashes",
++      "files": [
++        {
++          "name": "327-1.png",
++          "sha256": "d2ec4bfddd48247affdca05ec9e0221ffee3370aaca1813acdb4457b1cceb72f"
++        },
++        {
++          "name": "327-2.png",
++          "sha256": "fe1cd14ebc233dcd327b862a59dc669f5fa514ed20f1266a5502b91e63ef9fd8"
++        },
++        {
++          "name": "327-3.png",
++          "sha256": "fa47f6302d94c4d76f55fda7c9c0303fc8fc3eab654eb23f6c4df6f3547b2acb"
++        },
++        {
++          "name": "327-4.png",
++          "sha256": "bcdbfb4af2a2cd4633032ea2dcc1a69680220535fd30d08b7d13ab2f4c4fbc54"
++        },
++        {
++          "name": "327-5.png",
++          "sha256": "e4b9954deb869b4bc84de818029a8a0766af2e4f1417f668c90de2c10a9e21d8"
++        },
++        {
++          "name": "327-6.png",
++          "sha256": "8d205616a3bb4f2708a7d8e7a18e5fbd0e353bd1fa5f906534de76e4e18c4583"
++        },
++        {
++          "name": "327-7.png",
++          "sha256": "f2f45da595368652e7a11d4837b5891d986e499ef6bcc00349b163801a8c6dff"
++        },
++        {
++          "name": "327-8.png",
++          "sha256": "f5aff0032474c2d7d7d0e7d39b7100cd2ea0c8b5a4309c2f00e014a774dc5852"
++        }
++      ]
++    }
++  ],
++  "not_performed": [
++    "OCR/hidden layer or redaction reconstruction",
++    "Original interviews/telephone logs/audio comparison",
++    "Native ACS upload/transport/recipient receipt or task-return authentication",
++    "Historical allegation/group/intent adjudication",
++    "Legal sufficiency or counterfactual prevention test"
++  ],
++  "scope": "Copy integrity and stated reading only. No historical validation, independent replication, actual receipt or action proved by these checks.",
++  "publication": "Not claimed by these local source checks; actual commit/ref/all-file evidence recorded separately."
++}
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..7cc59492
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,119 @@
++{
++  "pins": [
++    {
++      "id": "AD01",
++      "source": "327",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=1",
++      "PDF_pages": [
++        1,
++        8
++      ],
++      "Bates": [
++        "M-MP1-88000032",
++        "M-MP1-88000039"
++      ],
++      "locator": "Page1 precedence, destinations, reference/administrative fields; page8 Set Leads1–3",
++      "observation": "Priority EC dated08/22/2001, Minneapolis origin, counterterrorism/OklahomaCity/Memphis destinations; p8 headquartersforinformation andfieldinvestigative leads. Header/leadsetting notactualreceipt/return.",
++      "reading_role": "Manual visual reading of court representation; supporting native records not acquired"
++    },
++    {
++      "id": "AD02",
++      "source": "327",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=2",
++      "PDF_pages": [
++        2,
++        7
++      ],
++      "Bates": [
++        "M-MP1-88000033",
++        "M-MP1-88000038"
++      ],
++      "locator": "Page2 closing assessment; page7 paragraph beginning Minneapolis opines and its closing allegation",
++      "observation": "p2writerbeliefpreparationforinternationalterrorism; p7Minneapolisopinesaircraftattackatanasyetunknowninternationalgroupdirection. Sourceinference, notverifiedplan/group/connection.",
++      "reading_role": "Manual visual reading of court representation; supporting native records not acquired"
++    },
++    {
++      "id": "AD03",
++      "source": "327",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=4",
++      "PDF_pages": [
++        4,
++        8
++      ],
++      "Bates": [
++        "M-MP1-88000035",
++        "M-MP1-88000039"
++      ],
++      "locator": "Page4 opening identity-matching discussion; page8 second and third office task blocks",
++      "observation": "Identitymatchstillposedastobeestablished, partlymaskedreference; no joiningredactedperson.",
++      "reading_role": "Manual visual reading of court representation; supporting native records not acquired"
++    },
++    {
++      "id": "AD04",
++      "source": "327",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=5",
++      "PDF_pages": [
++        5,
++        6,
++        7
++      ],
++      "Bates": [
++        "M-MP1-88000036",
++        "M-MP1-88000037",
++        "M-MP1-88000038"
++      ],
++      "locator": "Pages4–5 reported interview account; pages6–7 investigator argument and qualifications",
++      "observation": "Reportedpeaceful-studyandbail-explanationaccount alongsidewriterdeliberatedeception/cover-up-involvementinterpretation. Neitheradjudicated; linkedchecks/interviewsrequired.",
++      "reading_role": "Manual visual reading of court representation; supporting native records not acquired"
++    },
++    {
++      "id": "AD05",
++      "source": "327",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=3",
++      "PDF_pages": [
++        3,
++        6,
++        7
++      ],
++      "Bates": [
++        "M-MP1-88000034",
++        "M-MP1-88000037",
++        "M-MP1-88000038"
++      ],
++      "locator": "Page3 second full paragraph on call log; page6 last bullet continuing onto page7",
++      "observation": "13callattempts between1:07pm and4:14pm, first12refused/busy/unanswered, finalheatedcallreported; summary13calls togetthroughsameaccountnot13connectedcalls.",
++      "reading_role": "Manual visual reading of court representation; supporting native records not acquired"
++    },
++    {
++      "id": "AD06",
++      "source": "327",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=2",
++      "PDF_pages": [
++        2
++      ],
++      "Bates": [
++        "M-MP1-88000033"
++      ],
++      "locator": "Page2 first full biographical/investigative paragraph, requested training sentence",
++      "observation": "Writerreportsrequested747-400training sufficienttotakeoffandland. Originalwitness/trainingrecordneeded; 633bodyunread, nocontrarysourceclaiminvented.",
++      "reading_role": "Manual visual reading of court representation; supporting native records not acquired"
++    },
++    {
++      "id": "AD07",
++      "source": "327",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=1",
++      "PDF_pages": [
++        1,
++        3
++      ],
++      "Bates": [
++        "M-MP1-88000032",
++        "M-MP1-88000034"
++      ],
++      "locator": "Page1 date/initiation/administrative fields; page3 first full paragraph, conditional custody/removal estimate",
++      "observation": "FullField08/15initiation,08/21reportedcalls and08/22face dateare differentstatedevents; p3custody/deportationestimateconditionalnotexecutedtransfer.",
++      "reading_role": "Manual visual reading of court representation; supporting native records not acquired"
++    }
++  ],
++  "page_number_rule": "PDF physical page, with visible Bates reference; no fabricated source line numbers or redaction completion"
++}
+diff --git a/SOURCES.json b/SOURCES.json
+new file mode 100644
+index 00000000..fed2e37c
+--- /dev/null
++++ b/SOURCES.json
+@@ -0,0 +1,41 @@
++{
++  "sources": [
++    {
++      "exhibit": "327",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf",
++      "access_utc": "2026-10-31T19:37:13.565851+00:00",
++      "status": 200,
++      "content_type": "application/pdf",
++      "bytes": 757726,
++      "sha256": "2bc15966bfa0d5ae505477a5d4da5da38cad61d4106b62fcefebc2c5ea6c067e",
++      "pages": 8,
++      "role": "Official court-hosted released representation, not authenticated native FBI file",
++      "reading_status": "All eight PDF pages visually read in this batch"
++    },
++    {
++      "exhibit": "633",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/633.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/633.pdf",
++      "access_utc": "2026-10-31T19:37:14.390970+00:00",
++      "status": 200,
++      "content_type": "application/pdf",
++      "bytes": 100357,
++      "sha256": "90081e552c28f58a6c389de8dcf286e1f186872e6c034e9a8e9dd47eb4ec60fd",
++      "pages": 1,
++      "role": "Official court-hosted released representation, not authenticated native FBI file",
++      "reading_status": "Acquired only; one page unreviewed"
++    }
++  ],
++  "index": {
++    "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html",
++    "sha256": "edcd445da51f7a86ea3e7b94c07297f3e65ad1dd1767697ac5a837e9643269bc",
++    "access_utc": "2026-10-31T13:10:30.674772Z",
++    "role": "Previously acquired court index reused without a new request; physical byte-line locators 162 and 502 contain the actual 327/633 links; not a new source download"
++  },
++  "prior_public_records": [
++    "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md",
++    "https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md"
++  ],
++  "privacy_scope": "Research notes and source locators only; no raw scans, signatures, unnecessary personal identifiers, banking/contact data, private case records or correspondence"
++}
