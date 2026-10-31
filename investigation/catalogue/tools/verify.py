@@ -20,7 +20,7 @@ check('247 original documentary IDs',len(documentary)==247 and {x['id'] for x in
 for name,ids in sets.items():
     actual=set(re.findall(r'<a id="([^"]+)"', (P/name).read_text()))
     check('exact annotation IDs '+name,actual==ids)
-check('56 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==56)
+check('60 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==60)
 for ident in ['fa044','pl022','pl023','pl024','pl025','nr068','nr069','nr070','nr071','nr072','pl026','pl027','nr073','pl028','pl029']:
     text=(P/'SOURCE-FINDINGS.md').read_text().split(f'<a id="{ident}"></a>',1)[1].split('<a id=',1)[0]
     check('addition observation contrary and TODO '+ident,all(word in text for word in ['**Context / contrary evidence:**','**Open TODO:**','**Citations:**']))
@@ -61,7 +61,7 @@ check('062original failed predicate retained',source_results['062']['failed_chec
 check('source-check results linked with immutable result hashes',all(z['verification_url'].startswith('https://github.com/AveLyra/911-conspiracy-investigation/blob/'+z['commit']+'/') and len(z['verification_sha256'])==64 for z in source_results.values()))
 check('allfive tracks eighteen criteria stay unfinished','All five tracks and eighteen substantive criteria remain open/partial' in text and 'not a fresh independent primary-image' in text)
 methods=meta['source_method_records']
-check('five new research reports distinct from one execution note',set(methods)-{'336-337'}=={'063','064','065','066','326-639-939'} and len(meta['execution_status_notes'])==1 and meta['counts']['source_units']==56)
+check('five new research reports distinct from one execution note',set(methods)-{'336-337','59B-346-642','socc-page-locators','socc-record-targets','socc-maintenance-targets'}=={'063','064','065','066','326-639-939'} and len(meta['execution_status_notes'])==1 and meta['counts']['source_units']==60)
 check('063partial mirror raw order blanks and source-role limits',all(v in text for v in ['No source PDF was downloaded','0740,0738','own time cell blank','12rows,10time cells and2blanks','No unique event/call/version join or actual 13-minute delay','not receipt/execution/display state']))
 r63=methods['063']['record'];check('063original screenshot ledger result retained',r63['all_capture_bytes_and_hashes_match'] and r63['manual_rows']==12 and r63['printed_time_cells']==10 and r63['blank_time_cells_preserved']==2 and len(r63['decreasing_adjacent_labels'])==1 and r63['decreasing_adjacent_labels'][0]['nominal_label_seconds_difference']==-120)
 check('064plans and distinct document schedule objects retained',all(v in text for v in ['row1343','Row1739','Accident_1738/11sep.doc','not proof audio was saved','row1743 continues at p7top with schedule','row0015/12Sep','independent reader']))
@@ -84,6 +84,19 @@ check('336337six PDF plus index reference integrity within limits',len(r336['che
 f336=meta['source_workflow_failures']['336-337'];e336=meta['editorial_history']['336-337']
 check('336337failed precommit and pinned editorial history preserved',f336['failed_operation']=='gitave diff --cached --check before commit' and f336['result'].startswith('exit2;') and f336['no_commit_or_push_created_by_failed_script'] and 'strict whitespace gate unchanged' in f336['repair'] and e336['diff_url'].endswith('/EDITORIAL-REVISION.diff') and len(e336['sha256'])==64)
 check('336337open TODOs and next candidates remain unaccepted',all(v in text for v in ['DRAFT-T01–T06 remain','complete referenced report/page7','59B/346/642 are indexed candidate','All five tracks and eighteen original substantive criteria remain open/partial']))
+recent=meta['recent_source_review'];check('recent exactly four published derivatives29files',len(recent)==4 and sum(z['file_count'] for z in recent)==29 and sum(z['bytes'] for z in recent)==335191 and {z['number'] for z in recent}=={'59B-346-642','socc-page-locators','socc-record-targets','socc-maintenance-targets'})
+check('recent findings retain native/version and actual receipt boundaries',all(z in text for z in ['explicit draft warning','do not backdate supplemental availability','no finality, certified translation','actual complete sharing','not336’s internally referenced reportpage7','original advice/referral/nonreferral/actions']))
+cr=methods['59B-346-642']['record'];fr=meta['source_reading_failures']['59B-346-642']['record']
+check('recent French9entity19render checks are not manual/native validation',len(cr['pdf_entities'])==cr['expected_pdf_entities_matched']==9 and len(cr['renders'])==cr['expected_render_hashes_matched']==19 and sum(z['physical_pages'] for z in cr['pdf_entities'][:3])==17 and 'no independent second analyst' in cr['independence'])
+check('recent suspected custody discrepancy FAILED and correction retained',fr['comparisons'][0]['59B']['actual_short_clause']==fr['comparisons'][0]['642']['actual_short_clause']=='not be returned to Moussaoui' and {z['id'] for z in fr['failed_checks']}=={'FC01','FC02','FC03'} and 'Not substantiated' in fr['failed_checks'][0]['disposition'] and all(z in text for z in ['BOTH read not be returned to Moussaoui','agent’s reading error','never recycle it']))
+vl=methods['socc-page-locators']['record']
+check('recent locator capture and native hash distinct',not vl['capture_hash_is_native_PDF_hash'] and not vl['manual_readings_independently_verified_by_code_or_second_analyst'] and vl['original18_requirements_closed']==0 and all(z in text for z in ['COMM002538,002539,002540,002541','page10middle','Page9’s governing date header remains unseen','screenshot identity only']))
+vf=methods['socc-record-targets']['record']
+check('recent held interview and three checks not new source or completed action',len(vf['actual_checks'])==3 and all(z['matches_prior_receipt'] for z in vf['actual_checks']) and vf['log_native_hash'] is None and vf['empirical_tests_performed']==vf['original_acceptance_criteria_closed']==0 and all(z in text for z in ['September18event, not September11recordings','all-OK','Log-reported dispatch','not new acquisition or independent corroboration','truncated before review']))
+sm=methods['socc-maintenance-targets']['record']
+check('recent maintenance20cap unknown source and corrected from scope',sm['actual_images']==sm['cap']==20 and sm['native_pdf_sha256'] is None and 'Not silently converted to one-day-only' in sm['segment_date_scope'] and all(z in text for z in ['does not identify BBP as77','5BP','no independent date header appears beside1854','does not establish a one-day-only range','SOCC-MAINT01','SOCC-SEG01','SOCC-CLOSE01']))
+check('recent reported effort not completed preservation or review',all(z in text for z in ['weigh against a blanket no-review premise','execution and effectiveness remain unknown','plans a1000closing conference','DRAFT-T01–T06 remain open/input-dependent','All five tracks and eighteen original substantive criteria remain open/partial.']))
+check('recent immutable failure and editorial links pinned',meta['source_reading_failures']['59B-346-642']['result_url'].endswith('/COMPARISON-AND-FAILED-CHECKS.json') and len(meta['source_reading_failures']['59B-346-642']['result_sha256'])==64 and all(len(meta['editorial_history'][z]['sha256'])==64 for z in ['336-337','59B-346-642','socc-maintenance-targets']))
 pattern=re.compile(r'\]\((?:<([^>]+)>|([^\)\n]+))\)');broken=[];links=0
 for f in P.glob('*.md'):
     for angled,plain in pattern.findall(f.read_text()):
