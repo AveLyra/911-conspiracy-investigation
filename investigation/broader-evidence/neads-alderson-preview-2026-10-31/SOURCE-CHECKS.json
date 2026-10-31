@@ -1,0 +1,43 @@
+{
+  "checked_at_utc": "2026-10-31T21:14:50.925432+00:00",
+  "checks": [
+    {
+      "check": "Native screenshot exclusive-write/readback and JPEG signature/hash",
+      "representation": "cover-view.jpg",
+      "bytes": 97504,
+      "sha256": "4ab7824d516cc54610ddb65901ad3448bae18160d8729256224ef1e52ed895d6",
+      "result": "MATCH",
+      "historical_authentication": false
+    },
+    {
+      "check": "Native screenshot exclusive-write/readback and JPEG signature/hash",
+      "representation": "common-passage-view26.jpg",
+      "bytes": 126575,
+      "sha256": "d33e2697691520903a98885e8c13a932620119936702dcefdf2e1ddd23d3945d",
+      "result": "MATCH",
+      "historical_authentication": false
+    },
+    {
+      "check": "Prior selected pin and web-representation fingerprints",
+      "pin_sha256": "bd2690341f7cb514db16d20584acc9c25d3c8f4084289191a89b72be8c68c7c5",
+      "reader_sha256": "17a3ef75087d8d25d030ca1f4cd5b07fa95c8f6086b825f1062b18001173b62b",
+      "result": "Measured; source-PDF identity not implied"
+    },
+    {
+      "check": "Scope against viewed screenshots",
+      "result": "Cover and common viewport visually read; partial coverage explicitly retained. No native whole-file diff or clock test performed."
+    },
+    {
+      "check": "Public JSON parse",
+      "result": "All five JSON payloads parsed after generation, before diff/plan creation."
+    }
+  ],
+  "not_tested": [
+    "Historical authenticity/completeness",
+    "Native transcript version equivalence",
+    "Specific missing call",
+    "Clock origin/offset/redo",
+    "Independent aircraft or operational event"
+  ],
+  "claim": "Representation integrity and scope checks only, not historical or causal validation."
+}
