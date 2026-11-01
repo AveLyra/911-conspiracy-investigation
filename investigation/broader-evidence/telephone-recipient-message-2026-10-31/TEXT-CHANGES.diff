@@ -1,0 +1,323 @@
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..2ee86014
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,14 @@
++# Request accountability and revision status
++
++| Requirement | Outcome/location | Verification and unresolved issue |
++|---|---|---|
++| Advance original-record work | README CE40 recipient/notification targets and SF2442 answering-machine target | Primary released report representations read; native audio/table/notes/custody not acquired. |
++| Preserve source wording, values and distinctions | Receipt window, estimated duration, GTE belief, no-background/air-noise descriptions, caller assumptions and exact approximatePST message label retained | Paragraph/page/footer locators in SOURCE-PINS.json. No controlling clock/service or cause inferred. |
++| Preserve source links and original captures | Official part05 item; seven unchanged local viewer images with hashes | BrowserJPEG identity is not nativePDF/audio authentication. No raw capture/contact/private payload published. |
++| Avoid repeated searches and source-dependent overcounting | No public keyword query or denieddownload retry; bounded earlier-report/context lookup and new official item reading | No prior-report match in selected paths is not global novelty. Two pages of one CE40 account are not independent corroboration; separate records are not automatically the same call. |
++| Missing inputs stay TODOs while available work continues | OPEN-TODOS.json | All18 original acceptance requirements stay open/partial. No test completion from documentation. |
++| Respect privacy/redactions and ownership | Only relevant public report/form fields adopted | No masked recipient/agent/relative identity filled, unrelated personal form/ethnicity/photo fields published, mailbox/outreach/fee/experiment or technical-owner duplication. |
++| Publish as AveLyra with exact verification | Separate reviewed publication plan plus actual commit/push/API/SSH/allfile receipts | This checklist is not a push receipt; verify actual remote evidence before claiming success. |
++| Text diff and unchanged records | TEXT-CHANGES.diff against absent predecessor | New additive unit; earlier source reports remain unchanged. Capture verification is separate from text diff and historical/empirical testing. |
++
++No original waveform, system row, independent event clock, voice verification or physical test was obtained or performed. Reported message existence is kept separate from a claim of FBI custody. The broader goal remains active.
+diff --git a/OPEN-TODOS.json b/OPEN-TODOS.json
+new file mode 100644
+index 00000000..9b276078
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,12 @@
++{
++  "status":"Open original-record dependencies, not evidence of suppression, destruction or falsity",
++  "items":[
++    {"id":"TEL-CE40-ORIGINAL","target":"Original notes/audio and intake/custody records for CE40, released part05viewer25–26/footer000000151–152","test":"Compare contemporaneous source to typed report, preserving wording, date, time and source-role differences","status":"Not acquired; masked recipient/agent identities not reconstructed"},
++    {"id":"TEL-CE40-CARRIER","target":"Call-specific carrier/operator records and applicable device/service, attempt/connection/duration, clock and export definitions","test":"Test the reported GTE-seatback belief, unzoned9:30–10:00receipt window and estimated5–10minute duration; no cross-service/cross-call shortcut","status":"Not acquired or joined to a native row"},
++    {"id":"TEL-CE40-NOTIFICATION","target":"Reported immediate UnitedNewark notification and later FBIChicago contact records","test":"Trace original call/log/incident/interview entries and independent clocks without treating report order as a measured timeline","status":"Not acquired; no thirdparty contact authorized"},
++    {"id":"TEL-SF2442-MESSAGE","target":"Original answering-machine message described in SF2442, part05viewer17 LastContact/footer000000273, report09/25/2001","test":"Identify original device/export/audio/transcription and any collection/copy/examination/custody records; preserve approximate6:00a.m.PacificStandardTime label","status":"Not acquired; FBI possession or current survival not established"},
++    {"id":"TEL-SF2442-CLOCK","target":"Original message/device timestamp and clock configuration, source export and independently identifiable event anchors","test":"Test clock roles/offsets with uncertainty; no silentPST/PDT correction or desired-chronology fit","status":"Unperformed; no original message metadata or independent clock input"},
++    {"id":"TEL-AVAILABLE-SOURCES","target":"Relevant unread part05pages2–15/19–24 or actual officialparts06–07, original tables/media/attachments rather than another summary","test":"Prospectively bounded source selection and exact provenance; no corpus-wide absence claim from six selected pages","status":"Not read in this pass; no denieddownload retry or guessed asset"},
++    {"id":"PLAN-18","target":"All originalFAA4/telephone4/recorder3/materials3/steel4 requirements","test":"Original work-plan acceptance and actual input/field/decoder/specimen/custody tests with assigned ownership respected","status":"All18remain open/partial; none closed by this source reading or publication"}
++  ]
++}
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..2fef84fa
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,38 @@
++# Telephone originals: a recipient interview and an answering-machine lead
++
++October 31, 2026 Eastern / November 1 UTC. The [official FBI September interviews, part 05 of 08](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-05-of-08/view) supplies two source-specific retrieval leads. These are released interview/form representations, not acquired native carrier tables or audio. They do not complete any of the eighteen original five-track requirements.
++
++## 1. Recipient report CE40: separate recollection, belief and caller statements
++
++**Viewer pages 25–26**, internal pages 1–2, are an FD-302-style report with **Lead Control Number CE40**, transcription date **09/12/2001**, and **REQ. #35-13** footers **000000151–000000152**. The caller is identified in the visible text as Sandra Bradshaw. The recipient's masked identity remains masked.
++
++| Source location | What the report actually says | What has not been established here |
++|---|---|---|
++| Page 25, incoming-call paragraph | A call was received between **9:30 a.m. and 10:00 a.m.** on September 11. | A measured switch timestamp or a time zone. No zone is supplied in that passage. |
++| Page 26, second paragraph | The recipient **believes** the call used a **GTE telephone mounted on the back of an airplane seat**. | Verified device, carrier/service routing or a match to a native billing/switch row. |
++| Same paragraph | The call was **estimated** to last **five to ten minutes**. | An independently measured duration or actual start/end pair. The thirty-minute receipt window and duration estimate describe different quantities. |
++| Same paragraph | The connection was described as poor; the wording includes inability to hear background conversations or noise, followed by mostly hearing **air noise**. | A recording-based acoustic result or an inference that other passengers were silent or absent. Preserve both descriptions without choosing or rewriting one. |
++| Pages 25–26, relayed narrative | Caller statements include hijackers, passenger movement and an asserted flight location. The page-25 account also describes crew location as an **assumption** and says the first-class curtain obstructed the caller's view. | Direct observation by the recipient, independently measured aircraft position or direct sight of the cockpit. |
++| Page 26, notification paragraph | The recipient reportedly called **United Airlines in Newark immediately afterward** and spoke to an **FBI Chicago agent later**. | Original outgoing call records, airline intake/incident log, agent-contact record, independently established sequence or a calibrated time. |
++
++Page 25 also reports **27 passengers at the back** with the caller. This remains a relayed, phase-specific account, not a manifest census or an independently verified count. It must not be combined with other calls' headcounts as though every account describes the same moment and population. No row-level accounting was performed from this narrative.
++
++The most discriminating next records are the original recipient interview notes, any source recording, call-specific carrier/operator records and event definitions, and the reported United/FBI notification records. Those could test the service belief, clock, duration and chronology in either direction. They have not been acquired here. Unclear footer fields outside the adopted locators are left untranscribed rather than silently regularized.
++
++## 2. SF2442: an answering-machine message is described, not produced
++
++**Viewer page 16** opens a form/report dated **09/25/2001**, citing **lead control number SF 2442**. Its **page 17 “Last Contact” field**, footer **REQ. #35-13 / 000000273**, says **Lauren Grandcolas** left a message on a telephone answering machine at approximately **6:00 a.m., Pacific Standard Time**, on **September 11, 2001**.
++
++Preserve the approximation and printed **Pacific Standard Time** label. No PST/PDT substitution, UTC conversion, alignment to a desired flight chronology or comparison to another caller's clock was performed. The field is a reported last-contact description, not a native answering-machine timestamp or proof that its clock was set correctly. This unit supplies no independently verified conflicting event time.
++
++**Concrete original-record target:** the answering-machine recording, original device/export metadata, any contemporaneous transcription and the records of its collection, copying or examination, if such records exist. The form does **not** say the FBI acquired or retained the recording. The inspected continuation on page 18 adds contact/support information, rather than the sought recording or a collection receipt. No raw message or custody attachment was found in these inspected form portions; this is not a claim about every other page, file or repository.
++
++This differs in evidentiary role from the [previously preserved March 2002 playback report](https://github.com/AveLyra/911-conspiracy-investigation/blob/abefdac15a5474b2cba2407dc7d0e6bcd58ead59/investigation/broader-evidence/telephone-playback-custody-2026-10-31/README.md), which expressly reports a cassette and transcription remaining in FBI custody then. **No same-recording, same-caller or custody join between these reports has been established.** A description of a message does not inherit the other report's custody assertion.
++
++## Scope, preservation and outstanding tests
++
++The official item advertises **1,097,079 PDF bytes** and its viewer exposes **26 pages**. Six distinct source pages were inspected: **1, 16, 17, 18, 25 and 26**. Page 1's photographic-identification interview is outside the adopted telephone findings. Only the relevant header of the personal/background form on 16 was adopted; personal/contact fields and unrelated narrative were excluded. Larger and fitted views of 25–26 support the selected paragraph/footer readings. Pages **2–15 and 19–24** were not read; neither thumbnails nor loading frames establish their content or absence of attachments.
++
++Seven unmodified viewer images were retained locally. [SOURCE-PINS.json](SOURCE-PINS.json) records the official URL, selected page/paragraph/footer locators, SHA-256 values and preservation timestamps. These hashes identify **captured browser views**, not an original FBI PDF, audio, answering-machine device or authentic historical event. No PDF was requested or obtained, and no audio was acquired, played, decoded, transcribed or forensically tested. No new OCR, hidden-identity recovery, failed-download retry or access workaround occurred.
++
++[OPEN-TODOS.json](OPEN-TODOS.json) carries the original-message and recipient-record dependencies alongside all existing FAA/telephone/recorder/materials/steel requirements. No witness/agency contact, new request, fee, experiment, mailbox access or private case-material use occurred. Raw images, contact details, signatures, masked identities and private correspondence are excluded from the public payload. Earlier records and published assessments remain unchanged; no conspiracy, fabricated-call, suppression or current-retention finding follows from these source limitations.
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..3ee57b11
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,173 @@
++{
++  "source_url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-05-of-08/view",
++  "research_date_eastern": "2026-10-31",
++  "access_date_utc": "2026-11-01",
++  "advertised_pdf_bytes": 1097079,
++  "public_viewer_pages": 26,
++  "native_pdf_requested": false,
++  "native_pdf_acquired": false,
++  "native_pdf_sha256": null,
++  "captures": [
++    {
++      "capture": "viewer-p25-fit.jpg",
++      "bytes": 172591,
++      "sha256": "ecf5dc778ffc4ed703503c375a2f3d2a405bd8f6a7ce14ee850379515d07a3e3",
++      "preserved_at_utc": "2026-11-01T02:27:39.414682+00:00",
++      "capture_window_utc": {
++        "before": "2026-11-01T02:22:57.921Z",
++        "after": "2026-11-01T02:22:58.072Z"
++      }
++    },
++    {
++      "capture": "viewer-p25.jpg",
++      "bytes": 206819,
++      "sha256": "bf1952f2ec2aa1b84648e8f2b4c2de8ec2fe4d6ee40a4295b89f441d2e1c098b",
++      "preserved_at_utc": "2026-11-01T02:27:51.131645+00:00",
++      "capture_window_utc": {
++        "before": "2026-11-01T02:23:17.766Z",
++        "after": "2026-11-01T02:23:17.897Z"
++      }
++    },
++    {
++      "capture": "viewer-p26.jpg",
++      "bytes": 162822,
++      "sha256": "d54cf431fe886c68a9c73986ff0a943105b4778bbb5861e84202ded88425eeb1",
++      "preserved_at_utc": "2026-11-01T02:27:54.680166+00:00",
++      "capture_window_utc": {
++        "before": "2026-11-01T02:22:16.490Z",
++        "after": "2026-11-01T02:22:16.569Z"
++      }
++    },
++    {
++      "capture": "viewer-p26-fit.jpg",
++      "bytes": 142268,
++      "sha256": "1d7c52e191d4156c47fb4dc49dc5cbc3c933b5e96347c6d7aa6abe93376507da",
++      "preserved_at_utc": "2026-11-01T02:27:59.273964+00:00",
++      "capture_window_utc": {
++        "before": "2026-11-01T02:22:48.983Z",
++        "after": "2026-11-01T02:22:49.092Z"
++      }
++    },
++    {
++      "capture": "viewer-p16-header.jpg",
++      "bytes": 152689,
++      "sha256": "4e8eb51dfb784915ed97b65382045d3c4a961b8a7dbdb99f5fee424c0c774e47",
++      "preserved_at_utc": "2026-11-01T02:28:02.964321+00:00",
++      "capture_window_utc": {
++        "before": "2026-11-01T02:24:39.317Z",
++        "after": "2026-11-01T02:24:39.459Z"
++      }
++    },
++    {
++      "capture": "viewer-p17-fit.jpg",
++      "bytes": 135156,
++      "sha256": "e8d02656e216dc247d3f3bcff51ab26ff2126221719b8fe9ea4d5920313ae7aa",
++      "preserved_at_utc": "2026-11-01T02:28:07.859931+00:00",
++      "capture_window_utc": {
++        "before": "2026-11-01T02:25:28.897Z",
++        "after": "2026-11-01T02:25:29.042Z"
++      }
++    },
++    {
++      "capture": "viewer-p18-fit.jpg",
++      "bytes": 122621,
++      "sha256": "573e80b4f6e5a87cefe833257c518d52aaa907e30031ed9f27498eee3a6494db",
++      "preserved_at_utc": "2026-11-01T02:28:11.984730+00:00",
++      "capture_window_utc": {
++        "before": "2026-11-01T02:25:38.271Z",
++        "after": "2026-11-01T02:25:38.383Z"
++      }
++    }
++  ],
++  "locators": [
++    {
++      "id": "CE40-P25",
++      "viewer_page": 25,
++      "internal_page": 1,
++      "captures": [
++        "viewer-p25-fit.jpg",
++        "viewer-p25.jpg"
++      ],
++      "location": "LeadControlNumberCE40 and transcription09/12/2001 header; call paragraph; reported observation/assumption paragraphs; REQ35-13/footer000000151",
++      "adopted_values": [
++        "SandraBradshaw named in source",
++        "Between9:30a.m.and10:00a.m. reported receipt, no visible zone",
++        "27passengers at back reported",
++        "Crew location expressly an assumption; curtain-obstructed view reported"
++      ],
++      "limit": "Source report and relayed statements, not nativecarrier rows, manifest census or direct recipient observations. Masked recipient identity not reconstructed; unclear file/footer fields not transcribed."
++    },
++    {
++      "id": "CE40-P26",
++      "viewer_page": 26,
++      "internal_page": 2,
++      "captures": [
++        "viewer-p26.jpg",
++        "viewer-p26-fit.jpg"
++      ],
++      "location": "Continuation header09/12/01; second paragraph; next notification paragraph; REQ35-13/footer000000152",
++      "adopted_values": [
++        "Recipient believes GTEseatback phone",
++        "Estimatedfive-to-tenminute duration",
++        "Reported inability to hear background conversations/noise beside mostly airnoise",
++        "Reported immediateUnitedNewark notification and laterFBIChicago contact"
++      ],
++      "limit": "Belief/recollection/relay, not verified device, route, duration, acoustic measurement, notification receipt or calibrated chronology. Both noise descriptions retained."
++    },
++    {
++      "id": "SF2442-P16",
++      "viewer_page": 16,
++      "capture": "viewer-p16-header.jpg",
++      "location": "09/25/2001 date and opening SF2442 lead-reference line only",
++      "adopted_values": [
++        "SF2442",
++        "09/25/2001"
++      ],
++      "limit": "Personal/background form; other contact/DOB/identity/biographic fields excluded, not a nativecarrier table. Visible portion only."
++    },
++    {
++      "id": "SF2442-P17",
++      "viewer_page": 17,
++      "internal_page": 2,
++      "capture": "viewer-p17-fit.jpg",
++      "location": "LastContact field;09/25/2001header;REQ35-13/footer000000273",
++      "adopted_values": [
++        "Message attributed toLaurenGrandcolas on telephone answeringmachine",
++        "Approximately6:00a.m.,PacificStandardTime,onSeptember11,2001"
++      ],
++      "limit": "Reported LastContact entry, not nativeevent/deviceclock/audio or evidenceFBI collected/retained message. No PST/PDT substitution or maskedidentity/relative mapping."
++    },
++    {
++      "id": "SF2442-P18",
++      "viewer_page": 18,
++      "internal_page": 3,
++      "capture": "viewer-p18-fit.jpg",
++      "location": "Continuation type/header and brief form body only",
++      "adopted_values": [
++        "Continuation has contact/support fields rather than sought recording/custody attachment"
++      ],
++      "limit": "No unrelated personal field or identity adopted. Limited local observation, not sourcewide absence of attachment or proofnoagencyholding."
++    }
++  ],
++  "reading_scope": {
++    "distinct_source_pages_observed": [
++      1,
++      16,
++      17,
++      18,
++      25,
++      26
++    ],
++    "not_read": "Pages2–15and19–24",
++    "page1": "Photographic-identification interview; outside adopted telephone findings, no personal/ethnicity inference",
++    "page16": "Header and record type only; unrelated personal fields excluded",
++    "six_page_limit": "Met, no expansion beyond planned six",
++    "thumbnails": "Selection cues only, not sourcebody reading",
++    "loading_frames": "Not adopted as blank/missing source pages",
++    "native_audio_or_table_or_custody_receipt": "Not acquired",
++    "new_ocr_or_hidden_layer_or_identity_recovery": "None",
++    "new_public_query_or_denied_download_retry": "None"
++  },
++  "hash_meaning": "SHA256 of retained unmodified browser JPEG, not nativeFBI PDF, original audio/device, master authenticity or historical truth",
++  "public_payload": "Original safe research notes/source locators/hashes/TODOs/textdiff only; rawimages/audio/PDF/contact/signatures/biography/privatecase/correspondence/credentials/identity reconstruction excluded"
++}
+diff --git a/VERIFICATION.json b/VERIFICATION.json
+new file mode 100644
+index 00000000..f99763eb
+--- /dev/null
++++ b/VERIFICATION.json
+@@ -0,0 +1,56 @@
++{
++  "verified_at_utc": "2026-11-01T02:31:55.255217+00:00",
++  "seven_preserved_capture_hashes_match": true,
++  "source_preservation": [
++    {
++      "capture": "viewer-p25-fit.jpg",
++      "bytes": 172591,
++      "sha256": "ecf5dc778ffc4ed703503c375a2f3d2a405bd8f6a7ce14ee850379515d07a3e3",
++      "matches_preserved_view": true
++    },
++    {
++      "capture": "viewer-p25.jpg",
++      "bytes": 206819,
++      "sha256": "bf1952f2ec2aa1b84648e8f2b4c2de8ec2fe4d6ee40a4295b89f441d2e1c098b",
++      "matches_preserved_view": true
++    },
++    {
++      "capture": "viewer-p26.jpg",
++      "bytes": 162822,
++      "sha256": "d54cf431fe886c68a9c73986ff0a943105b4778bbb5861e84202ded88425eeb1",
++      "matches_preserved_view": true
++    },
++    {
++      "capture": "viewer-p26-fit.jpg",
++      "bytes": 142268,
++      "sha256": "1d7c52e191d4156c47fb4dc49dc5cbc3c933b5e96347c6d7aa6abe93376507da",
++      "matches_preserved_view": true
++    },
++    {
++      "capture": "viewer-p16-header.jpg",
++      "bytes": 152689,
++      "sha256": "4e8eb51dfb784915ed97b65382045d3c4a961b8a7dbdb99f5fee424c0c774e47",
++      "matches_preserved_view": true
++    },
++    {
++      "capture": "viewer-p17-fit.jpg",
++      "bytes": 135156,
++      "sha256": "e8d02656e216dc247d3f3bcff51ab26ff2126221719b8fe9ea4d5920313ae7aa",
++      "matches_preserved_view": true
++    },
++    {
++      "capture": "viewer-p18-fit.jpg",
++      "bytes": 122621,
++      "sha256": "573e80b4f6e5a87cefe833257c518d52aaa907e30031ed9f27498eee3a6494db",
++      "matches_preserved_view": true
++    }
++  ],
++  "source_reading": "Six selected official viewer source pages; relevant report/form portions only, not a complete26page source audit",
++  "actual_tests": "Captured-view byte/hash and source-locator/document checks only; no nativewaveform/carrierrow/deviceclock/voice or historical test",
++  "source_limits": "Official rendered report representations, no originalFBI PDF/nativeaudio/answeringmachine/custodyreceipt obtained",
++  "source_roles": "CE40receiptwindow, durationestimate and devicebelief distinct; SF2442LastContact field not a native eventlog or custody claim",
++  "public_payload_review": "Original research notes/links/locators/hashes only; no rawimages/audio/PDF/personalcontact/DOB/signature/privatecase/correspondence/strategy/credential or maskedidentity data",
++  "revision": "New additive study; TEXT-CHANGES.diff includes five base documents against absence. Earlier records unchanged.",
++  "original_criteria_completed": 0,
++  "publication_status": "Not performed by this verifier; separate actual commit/push/ref/allfile receipts required"
++}
