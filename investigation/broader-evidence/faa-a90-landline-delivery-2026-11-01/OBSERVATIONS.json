@@ -1,0 +1,89 @@
+{
+  "claim_ids": [
+    "B129",
+    "PD01–PD04",
+    "FAA01–FAA04"
+  ],
+  "memo": {
+    "source": "A90-71/NARA7599620",
+    "page": 1,
+    "date": "October 10, 2003",
+    "subject": "Boston TRACON (A90), Re-recordings from 9/11/01",
+    "from": "Manager, Boston TRACON, A90-1",
+    "to": "Manager, Evaluations and Investigation Staff, AAT-20",
+    "body_positions": [
+      "Traffic Management Unit (TMU)",
+      "Operational Supervisor in Charge (OSIC)",
+      "Operational Supervisor (OS)"
+    ],
+    "body_scope": "all landlines in the named positions, as reported by memo",
+    "body_date": "September 11, 2001",
+    "body_start": "0800",
+    "body_end": "1200",
+    "body_timezone": "local",
+    "certification_start": "1200",
+    "certification_end": "1605",
+    "certification_timezone": "UTC",
+    "certification_date": "September 11, 2001",
+    "certification_source": "Digital Voice Recording System data received",
+    "skip_silence": "The “skip silence” feature was utilized in the making of the re-recordings. Source says this skips portions where nothing was said, eliminates blank space and compresses actual tape length.",
+    "attachments": [
+      {
+        "position": "TMU",
+        "printed_count": 1,
+        "printed_unit": "tape"
+      },
+      {
+        "position": "OSIC",
+        "printed_count": 2,
+        "printed_unit": "tapes"
+      },
+      {
+        "position": "OS",
+        "printed_count": null,
+        "printed_unit": "tape",
+        "reading": "No numeral visible between dash and tape in inspected source"
+      }
+    ],
+    "locators": "Header/from/to; opening scope paragraph; skip-silence paragraph; certification above first signature; Attachments footer",
+    "limit": "Certification/attachment/preparation assertions only. No audio enclosure, actual dispatch/receipt, waveform/speech retention, edit threshold or native clock map authenticated."
+  },
+  "time_comparison_method": "Subtract endpoints within each separately labelled same-day interval. Compare durations without selecting a local timezone or translating either endpoint into historical UTC. Different described scopes could be intended; no source preferred.",
+  "fixed_offset_test": "Compare numeric endpoint differences separately. A single constant offset cannot make0800→1200 and1200→1605both exact; this is a conditional label-alignment result, not measured drift/gap.",
+  "prior_memo_context": {
+    "source": "A90-67/NARA7598345",
+    "page": 1,
+    "date": "October 8, 2003",
+    "copy_positions": [
+      "Initial Departure (ID)",
+      "Lincoln (SL)"
+    ],
+    "copy_window": "1209 UTC–1228 UTC, September11,2001",
+    "reported_DAT_window": "2359ZSeptember10–0001ZSeptember12,2001",
+    "access_account": "Equipment problems prevented reproducing the broaderDAT at that time",
+    "limit": "Different named positions and source/copy scopes; the October10landline memo neither proves a repair nor contradicts every October8assertion. Same facility/date proximity is not a source-to-copy join."
+  },
+  "index_observations": {
+    "physical_pages": 4,
+    "numbered_scope": "Boston TRACON (A90), TAB1–65acrossphysical1–2",
+    "AAL11_scope": "Boston TRACON Accident Package–AAL11, A–M, physical3",
+    "UAL175_scope": "Boston TRACON UAL175, A–L, physical4",
+    "same_letters_different_contents": [
+      "AAL11H:ATCSCC East Area Log / UAL175H:FOIA Freedom of Information Act",
+      "AAL11I:Fax Transmission Verification Reports / UAL175I:Headquarters Guidance and Communications",
+      "AAL11L:Certified Re-recordings / UAL175L:RADAR Data"
+    ],
+    "same_category_different_letters": [
+      "Certified Re-recordings:AAL11L/UAL175K",
+      "RADAR Data:AAL11M/UAL175L"
+    ],
+    "no_delivery_proof": "No signed recipient acknowledgment, delivery date, tape barcode/serial/hash, copy-to-original crosswalk or individual recording list is supplied by these four index pages. This is a bounded visible-field observation, not proof no such records exist."
+  },
+  "proposed_tests_not_performed": [
+    "Join sourceDAT/DVRS/eachcassette to surviving digital files by identifiers and custody",
+    "Measure skipped spans/speech retention versus continuous original",
+    "Authenticate timecode/clock anchors rather than infer elapsed walltime from playback",
+    "Compare actual enclosure manifest and signedreceipt with each index tab",
+    "Interpret body/certification boundary difference from native export/version/clock instructions"
+  ]
+}
