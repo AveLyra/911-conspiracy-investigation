@@ -1,0 +1,557 @@
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..abce7e2f
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,12 @@
++# Request accountability
++
++- **Pursue an available public-source lead:** completed two indexed queries and one native public catalogue query; inspected the actual three-page May 11 MFR reproduction. Original September 14 letter not recovered. S1/P01–P09 identify the new content and limits.
++- **Underlying records rather than another retelling:** acquired a qualified interview-record reproduction with a specified original-note form/holder and annotation/relay targets. No original note/audio/letter or complete custody accepted. It does not substitute for the missing native inputs.
++- **Preserve sources and conflicting values:** raw text and six viewport captures retained separately; all prior sources unchanged; COMPARISONS.json preserves count, timing, role, information-basis and certainty differences. No preferred value or causal resolution.
++- **Exact source references:** SOURCES.json records URLs/access/fingerprints/entity forms; SOURCE-PINS.json records actual page/paragraph/DOM-line locators and image names. Browser capture hashes are not native PDF/audio hashes. Four current source byte checks cover only stated entities.
++- **Missing inputs as TODOs and all five tracks:** OPEN-TODOS.json carries the new individual-note/letter/MFR/manifest/relay targets; original 18 requirements remain open or partial in the native goal state. Existing technical owners and completed prior tests are not duplicated or relabeled complete.
++- **Both-direction scrutiny:** note-value limitation, same-witness/source dependence, manifest qualification and tentative recollections retained. No conspiracy, concealment, caller-fakery, foreknowledge or independent measurement inferred.
++- **Revision accountability:** this is an additive supplementary report, not a correction of the earlier sources. TEXT-CHANGES.diff records every public note/JSON addition against its immediately preceding absence; previous report and public history remain unchanged. No PDF export/layout generation occurred.
++- **Public eligibility:** selected safe original research/paraphrases and source links only; no raw marked source/full speech, contact/personal/financial/access/signature data, private case/correspondence/strategy or credentials. No reconstructed redacted identities.
++- **Publication and identity:** completion is established only by separate actual AveLyra account/repository/SSH/author/committer and remote-ref/all-file receipts. This prepublication checklist does not claim a push, main merge, acceptance or Overview delivery.
++- **Excluded actions:** no outreach, fees, new FOIA/request/filing, experiment, personal mailbox, deletion, overwrite, private push or history rewrite. Overview handoff remains subject to the separately recorded transmission boundary; no send attempted.
+diff --git a/COMPARISONS.json b/COMPARISONS.json
+new file mode 100644
+index 00000000..2ec91ffd
+--- /dev/null
++++ b/COMPARISONS.json
+@@ -0,0 +1,89 @@
++{
++  "comparisons": [
++    {
++      "id": "C01",
++      "subject": "Original notes / receipt",
++      "observations": [
++        {
++          "source_pin": "P02",
++          "value": "Few basic Post-it notes; FBI held them according to 2004 account; speaker regarded informational gain as limited"
++        },
++        {
++          "source_pin": "P03",
++          "value": "Earlier report says notes, typed summary and screen print handed to interviewing agent"
++        }
++      ],
++      "unresolved": "Whether the same physical items, original versus copy, complete set and date/custody trail. No barcode or source identity is assumed.",
++      "discriminator": "Original notes, packaging/attachment manifest, intake and transfer receipts, surviving copies and disposition."
++    },
++    {
++      "id": "C02",
++      "subject": "Other operator notes",
++      "observations": [
++        {
++          "source_pin": "P04",
++          "value": "2004 memorandum records uncertainty whether Johnson took notes"
++        }
++      ],
++      "unresolved": "Do not convert uncertainty into proof none were made; no original individual note set obtained.",
++      "discriminator": "Individual contemporaneous notes, original interview/attachment and custody inventory."
++    },
++    {
++      "id": "C03",
++      "subject": "Front/back allocation and basis",
++      "observations": [
++        {
++          "source_pin": "P05",
++          "value": "10 front / 27 back / 5 flight attendants; parenthetical manifest qualification"
++        },
++        {
++          "source_pin": "P06",
++          "value": "Earlier letter-reading reproduction: 27 front / 10 back; later dialogue: 10 front / 27 back"
++        }
++      ],
++      "unresolved": "Counts and information basis are preserved; no controlling account or editorial/copying explanation selected. Equal sum 37 is not an independently validated headcount.",
++      "discriminator": "Original letter/enclosures, notes, actual manifest, source recordings and MFR drafting/annotation basis."
++    },
++    {
++      "id": "C04",
++      "subject": "Silent-open / later-event durations",
++      "observations": [
++        {
++          "source_pin": "P07",
++          "value": "2004 memorandum 15 minutes; earlier official account 20 minutes plus separate approximately 5-minute later-contact interval; follow-up reproduction about 10 more minutes then news about 10 minutes later"
++        }
++      ],
++      "unresolved": "Different source dates and described phases; no common clock, summed timeline or billing-leg join established.",
++      "discriminator": "Contemporaneous notes, carrier/operator/bridge event clocks, raw media/continuity and independently identifiable event boundaries."
++    },
++    {
++      "id": "C05",
++      "subject": "Local recording versus relay path",
++      "observations": [
++        {
++          "source_pin": "P08",
++          "value": "Reported AOSC notification and continuing FBI connection"
++        },
++        {
++          "source": "S4 viewer18/Bates12186",
++          "value": "Reported local recording would require leaving floor / going to an office"
++        }
++      ],
++      "unresolved": "No contradiction or reconciliation imposed across unjoined facilities/legs; no independent relay recording proved or ruled out.",
++      "discriminator": "AOSC/FBI watch-log, bridge/relay routing, call-leg identifiers, installed recording policy/configuration and actual media/disposition."
++    },
++    {
++      "id": "C06",
++      "subject": "Information provenance and source dependence",
++      "observations": [
++        {
++          "source_pin": "P09",
++          "value": "Some events reportedly occurred earlier; tentative belief about another operator listening to another call"
++        }
++      ],
++      "unresolved": "Not all details are independent direct contemporaneous observations; no reconstructed identity, carrier or clock claim adopted.",
++      "discriminator": "Initial notes/interview originals, role/leg records and applicable event-time sources."
++    }
++  ],
++  "discrepancy_rule": "Preserve each account and provenance; do not normalize, reconcile or choose a controlling value. Causal explanations and suggested discriminating tests are untested."
++}
+diff --git a/OPEN-TODOS.json b/OPEN-TODOS.json
+new file mode 100644
+index 00000000..fc27f840
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,37 @@
++{
++  "status": "OPEN / PARTIAL; no original criterion closed",
++  "todo_groups": [
++    {
++      "id": "TEL01",
++      "target": "Individual original operator Post-it/other notes and the earlier notes/summary/screen-print attachments",
++      "holders_as_reported_not_verified": "FBI as reported in S1/S2; original operator/provider copies remain candidate sources, not demonstrated current holdings.",
++      "next_test": "Item/copy/date/receipt/retention and actual-content join; distinguish present retention from a 2004 statement."
++    },
++    {
++      "id": "TEL02",
++      "target": "Original September 14 letter, synopsis, skipped contact enclosure and actual delivery/copy history",
++      "next_test": "Compare with the recorded reading without using its date to date the recording. Original remains unacquired."
++    },
++    {
++      "id": "TEL02",
++      "target": "Underlying May 11, 2004 interview notes/recording and MFR native draft/version/annotation history",
++      "next_test": "Authenticate the public reproduction and identify the factual basis of manifest qualification and reported note custody."
++    },
++    {
++      "id": "TEL03",
++      "target": "Actual applicable manifest, contemporaneous count notes and native carrier/operator event/clock definitions",
++      "next_test": "Test count basis and phase/leg boundaries; preserve 27/10 versus 10/27 and 15/20/about10 estimates, without desired clock alignment."
++    },
++    {
++      "id": "TEL04",
++      "target": "AOSC/FBI relay/bridge/watch-log and recording/disposition records",
++      "next_test": "Join original caller, operator, facility and FBI relay legs; distinguish possible recording from demonstrated recording."
++    },
++    {
++      "id": "ALL18",
++      "target": "All original FAA, telephone, recorder, materials and steel unmet native/custody/calibration/decision criteria",
++      "next_test": "No criterion closed by this acquisition/publication; existing owner work and performed tests retained. No outreach/request/fee/experiment or private-source disclosure authorized."
++    }
++  ],
++  "revisit_trigger": "A concrete native/source-authenticated note, letter, receipt, media, manifest, draft/version, event/clock or custody/decision record; not an unchanged search miss or another reprint."
++}
+diff --git a/READING-SCOPE.json b/READING-SCOPE.json
+new file mode 100644
+index 00000000..cd2aef5e
+--- /dev/null
++++ b/READING-SCOPE.json
+@@ -0,0 +1,33 @@
++{
++  "new_source": "S1",
++  "reported_pages": 3,
++  "pages_read": [
++    1,
++    2,
++    3
++  ],
++  "reading_mode": "Complete ordinarily accessible reader text and five adopted visible viewport images across three pages. Page-one header/body/lower viewports complement each other; pages two and three loaded in reader.",
++  "all_viewport_captures": 6,
++  "adopted": 5,
++  "transient_loading_frame": "Sixth capture retained locally only; not evidence of an originally blank page.",
++  "DOM_capture_lines": 1237,
++  "native_PDF_or_server_entity_acquired": false,
++  "new_source_genuine_limit": "Third-party reproduction of a staff MFR about an interview, not original 2001 note/audio/letter or independently verified historic event.",
++  "queries": {
++    "indexed_web": 2,
++    "native_catalogue": 1,
++    "catalogue_reported_general_result_count": 1346,
++    "result_count_limit": "Inspected visible returned titles/locators only; neither complete catalogue review nor 1,346 relevant originals claimed. AI overview ignored."
++  },
++  "existing_sources": "Selected prior source pins compared; four actual preserved entity hashes rechecked. No full old PDF re-reading or repeated arithmetic/decoder/materials test.",
++  "empirical_tests_performed": [],
++  "not_performed": [
++    "Native note/letter or media acquisition",
++    "Agency release/custody authentication of S1/S4",
++    "Call-leg/clock/billing join",
++    "Actual-manifest validation",
++    "Independent second-reader audit",
++    "REC/MAT empirical acceptance"
++  ],
++  "no_personal_mailbox_or_private_correspondence": true
++}
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..e50cbdc7
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,43 @@
++# A later operator interview identifies original notes and qualifies the reported counts
++
++October 31, 2026, America/New_York; capture November 1 UTC. **TEL01–TEL04 / AUD016-A1, TC05-B105 and TC06-B110.** A newly inspected three-page public reproduction of a May 11, 2004 Commission interview memorandum identifies a concrete missing-record target: Jefferson's brief Post-it notes, reportedly held by the FBI. It also supplies an explicit qualification about reported passenger counts and another silent-line estimate. These are statements in a later interview record, not authenticated original notes or independently measured call events.
++
++## Source, provenance and reading scope
++
++The [public reader](https://www.scribd.com/document/18886438/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-5-11-04-MFR-Lisa-Jefferson-416) labels the upload as a call transcript, but its actual body is headed **MEMORANDUM FOR THE RECORD**, dated **May 11, 2004**, prepared by **John Raidt**, Team **7**, and describes a briefing by Lisa Jefferson. The uploader is **9/11 Document Archive**, a third-party mirror. Neither the platform's AI-enhanced title/description nor its catalogue ranking establishes document type, truth or agency custodianship. The reproduced historical Commission Sensitive / Unclassified markings are retained as provenance; no classification or release-authority conclusion is inferred from them.
++
++All three displayed pages were read in the normally accessible reader text and visible images. Five adopted viewport captures cover the three pages; a sixth captured page 3 while loading and is retained only as a diagnostic. The subsequent loaded page 3 is readable. A transient blank frame is not a blank original, deletion or missing-page finding. No login, free trial, download gate, hidden API or guessed asset route was used.
++
++The browser DOM/text capture is **54,260 UTF-8 bytes**, SHA-256 **90ecfacf04cb7fdf9cd2a1fc339262efe43ff94aaeb32c3e1358fb1f6183264a**. That fingerprints a captured reader representation, including its fragmentation and interface material; it is not a native PDF or agency-master hash. Raw source text/images and incidental personal/interface details remain outside this public payload. [Source fingerprints](SOURCES.json), [exact printed-page/paragraph and captured-line pins](SOURCE-PINS.json), [scope](READING-SCOPE.json).
++
++## Original notes: a specified form and reported holder
++
++**S1 printed page 3, Additional clarifications, second paragraph** says Jefferson made only a few basic notes on a small Post-it pad and that the FBI held them. The same passage reports her view that they would add little information. Preserve both parts; this is neither a recovered note nor an independent appraisal of its evidentiary value. The interview occurred in 2004 and does not prove present retention, completeness, original acquisition date or a particular evidence barcode. P02.
++
++The already held [official FBI interview report, physical page 45](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=45), says notes, a typed event summary and a screen print were handed to the interviewing agent. That separately specifies attachment and receipt targets. It does not, without an item/copy/custody join, identify those notes as the same physical Post-it material described in 2004. A typed synopsis, a screen print, original notes and later recorded recollection remain distinct artifacts. No redacted identity is reconstructed. P03.
++
++**S1 page 3, first clarification** records uncertainty about whether the first operator, Johnson, took notes. Preserve that uncertainty. It does not establish either that she made none or that no such record survived. Obtain the individual originals, not a collective assumption about both operators. P04.
++
++## Counts: the memorandum adds a provenance qualification
++
++**S1 page 2, third paragraph** reports **10 in front / 27 in back / 5 flight attendants**, through an account attributed to the flight attendant. Its parenthetical note says the description reflects the flight manifest rather than contemporaneous distribution within the cabin. That is the memorandum's qualification; the actual manifest, initial notes and interviewer drafting basis are not attached or independently checked here. It cannot be treated as a verified explanation of every earlier count. P05.
++
++Keep the [earlier transcript reproduction](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419) beside it: viewer **5 / Bates M-NKA-00012173** reports **27 front / 10 back**, while viewer **10 / Bates M-NKA-00012178** reports **10 front / 27 back**. Neither allocation is selected, repaired or converted into measured seating positions. The shared total **37** is only arithmetic on reported numbers, not an authenticated manifest or independent headcount. P06.
++
++## Timing and information paths remain unjoined
++
++**S1 page 3, opening paragraph** reports a **15-minute** silent/open-line interval, followed by news of a crash and termination. The [earlier official operator account, physical pages 4–5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4) reports **20 minutes** of silent-open time and a separate **approximately 5-minute** later-contact estimate. The September follow-up reproduction, viewer **19–20 / Bates 12187–12188**, reports **about 10 more minutes** holding and news **about 10 minutes later**. These are separate estimates and phase descriptions. No sum, controlling endpoint, clock conversion or identification with billed duration is imposed. P07.
++
++**S1 page 1, notification/handoff paragraphs** describes the **Airplane Operations Surveillance Center (AOSC)** notifying authorities and an FBI connection remaining with AOSC while the operators spoke with the caller. This specifies a relay/bridge record target. It does not demonstrate an FBI recording, prove direct monitoring of every word or authenticate a particular communications leg. Preserve the prior reported lack of local recording capability alongside this reported relay path; different paths have not been joined or tested. P08.
++
++**S1 page 3, third clarification** distinguishes earlier events being recounted to the operator from events occurring during the call. The final clarification is explicitly tentative about another operator listening to a different passenger's call. Neither passage authenticates a clock, carrier assignment or recording of that separate call. They caution against treating all reported detail as simultaneously and independently overheard. P09.
++
++## Next originals and limits
++
++The immediate targets are the individual original Post-it/other operator notes, attachment inventories and transfer receipts; original September 14 letter/synopsis and enclosures; interview notes/recording and draft/version records behind the 2004 memorandum; the actual manifest and source of its parenthetical qualification; and AOSC/FBI relay, bridge, watch-log and any recording/disposition records. Native carrier/operator identifiers, field definitions, clock rules, actual media and complete production/exhibit joins remain open. No new contact or request was sent.
++
++The strongest limitation is source dependence: a 2004 staff memorandum recording one operator's recollection, a 2001 interview summary and a later transcript reproduction are different records, not necessarily independent measurements. Memory, source copying, wording, transcription, scope or other causes could matter; none is selected as a resolution. These observations do not establish fabricated calls, concealment, foreknowledge or attack participation. They identify records that can test those interpretations in either direction.
++
++The separate September 14 letter was **not** recovered in this search. The new substantive advance is the actually inspected interview record's specified note form/holder, count qualification and phase/relay claims. Earlier originals, conflicting values, public history and shared registers remain unchanged. All original five tracks and 18 requirements remain open or partial; publication is not empirical completion or independent audit acceptance.
++
++[Comparison and discriminating records](COMPARISONS.json), [TODOs](OPEN-TODOS.json), [checklist](CHECKLIST.md), [verification limits](VERIFICATION.json) and [additive text diff](TEXT-CHANGES.diff) accompany these redundant public research notes. No raw privacy-marked source, full speech, contact/financial/access/signature data, private correspondence, litigation strategy or credentials are published. Prior [recording-index review](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e75761061f0bfa9148eb98a213aa4a24f1ad123/investigation/broader-evidence/telephone-recording-index-2026-10-31/README.md) remains unchanged.
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..d10d1229
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,146 @@
++{
++  "pins": [
++    {
++      "id": "P01",
++      "source": "S1",
++      "page": 1,
++      "locator": "header: document type, date, prepared-by and Team",
++      "dom_lines": [
++        22,
++        62
++      ],
++      "observation": "Actual body is a memorandum dated May 11, 2004, prepared by John Raidt, Team 7; platform title is not its record type.",
++      "image": "mfr-p01-header.jpg"
++    },
++    {
++      "id": "P02",
++      "source": "S1",
++      "page": 3,
++      "locator": "Additional clarifications, paragraph 2",
++      "dom_lines": [
++        949,
++        978
++      ],
++      "observation": "Brief basic Post-it notes; FBI reportedly holds them; reported view that they add little information. No physical original or receipt obtained.",
++      "image": "mfr-p03-loaded.jpg"
++    },
++    {
++      "id": "P03",
++      "source": "S2",
++      "physical_page": 45,
++      "locator": "notes / typed event summary / screen-print handoff paragraph",
++      "observation": "Interview report states materials handed to agent. Physical note identity and custody not joined to S1.",
++      "representation": "Previously read official PDF page image; ordinary extraction is garbled and is not silently repaired."
++    },
++    {
++      "id": "P04",
++      "source": "S1",
++      "page": 3,
++      "locator": "Additional clarifications, paragraph 1",
++      "dom_lines": [
++        921,
++        948
++      ],
++      "observation": "Uncertainty about whether Johnson took notes. Not proof no notes existed.",
++      "image": "mfr-p03-loaded.jpg"
++    },
++    {
++      "id": "P05",
++      "source": "S1",
++      "page": 2,
++      "locator": "third body paragraph, reported front/back count and parenthetical Note",
++      "dom_lines": [
++        370,
++        442
++      ],
++      "readings": {
++        "front": 10,
++        "back": 27,
++        "flight_attendants": 5
++      },
++      "qualification": "Memorandum describes the reported count as manifest-related, not observed distribution then. Actual manifest and basis of annotation not acquired.",
++      "image": "mfr-p02-loaded.jpg"
++    },
++    {
++      "id": "P06",
++      "source": "S4",
++      "locators": [
++        {
++          "viewer_page": 5,
++          "bates": "M-NKA-00012173",
++          "front": 27,
++          "back": 10
++        },
++        {
++          "viewer_page": 10,
++          "bates": "M-NKA-00012178",
++          "front": 10,
++          "back": 27
++        }
++      ],
++      "observation": "Conflicting reported allocations preserved; no preferred count or original manifest authentication."
++    },
++    {
++      "id": "P07",
++      "source": "S1",
++      "page": 3,
++      "locator": "opening body paragraph, held line / later news / termination",
++      "dom_lines": [
++        850,
++        919
++      ],
++      "held_line_minutes": 15,
++      "compared_sources": [
++        {
++          "source": "S3",
++          "physical_pages": [
++            4,
++            5
++          ],
++          "silent_open_minutes": 20,
++          "separate_later_contact_minutes_approx": 5
++        },
++        {
++          "source": "S4",
++          "viewer_pages": [
++            19,
++            20
++          ],
++          "bates": [
++            "M-NKA-00012187",
++            "M-NKA-00012188"
++          ],
++          "held_more_minutes_approx": 10,
++          "later_news_minutes_approx": 10
++        }
++      ],
++      "unperformed": "No calibrated clock, event-leg boundary, raw audio continuity, native billing-duration join or selected controlling timeline.",
++      "image": "mfr-p03-loaded.jpg"
++    },
++    {
++      "id": "P08",
++      "source": "S1",
++      "page": 1,
++      "locator": "notification and operator-handoff paragraphs",
++      "dom_lines": [
++        100,
++        211
++      ],
++      "observation": "Reported AOSC notification/continuing FBI connection; separate from original caller/operator leg. No relay recording proved.",
++      "image": "mfr-p01-body.jpg"
++    },
++    {
++      "id": "P09",
++      "source": "S1",
++      "page": 3,
++      "locator": "Additional clarifications, paragraphs 3–4",
++      "dom_lines": [
++        979,
++        1060
++      ],
++      "observation": "Prior-event recounting distinguished from contemporaneous events; tentative other-operator listening statement not authenticated carrier/clock/media evidence.",
++      "image": "mfr-p03-loaded.jpg"
++    }
++  ],
++  "locator_rules": "Printed page/paragraph locators are for the reproduced MFR. Captured DOM line numbers refer only to the pinned browser capture; neither is a native PDF byte offset. Old PDF physical pages and S4 viewer/Bates labels remain distinct."
++}
+diff --git a/SOURCES.json b/SOURCES.json
+new file mode 100644
+index 00000000..dfdf8c13
+--- /dev/null
++++ b/SOURCES.json
+@@ -0,0 +1,102 @@
++{
++  "sources": [
++    {
++      "id": "S1",
++      "url": "https://www.scribd.com/document/18886438/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-5-11-04-MFR-Lisa-Jefferson-416",
++      "title": "May 11, 2004 memorandum for the record: Jefferson briefing",
++      "form": "Third-party public reader reproduction; visible facsimile images and fragmented DOM text, not authenticated native PDF or custody chain",
++      "access_date_local": "2026-10-31",
++      "capture_or_prior_acquisition": "New normal reader capture 2026-11-01T01:03:38.115Z",
++      "preserved_entity_bytes": 54260,
++      "preserved_entity_sha256": "90ecfacf04cb7fdf9cd2a1fc339262efe43ff94aaeb32c3e1358fb1f6183264a",
++      "hash_scope": "Browser DOM/text capture, not native PDF/audio",
++      "native_pdf_hash": null,
++      "historical_truth_or_complete_custody_authenticated": false
++    },
++    {
++      "id": "S2",
++      "url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file",
++      "title": "FBI Vault interviews part 01 of 08",
++      "form": "Previously acquired official-hosted PDF; physical 45 is the comparison target",
++      "access_date_local": "2026-10-31",
++      "capture_or_prior_acquisition": "Previously held; relevant source byte fingerprint rechecked in this unit",
++      "preserved_entity_bytes": 4468234,
++      "preserved_entity_sha256": "4760de107bef3c75f4d7629f90f7a70d2c861cb3b53dcbe37a3bf0fb768f93cb",
++      "hash_scope": "Preserved official-hosted PDF body",
++      "native_pdf_hash": "4760de107bef3c75f4d7629f90f7a70d2c861cb3b53dcbe37a3bf0fb768f93cb",
++      "historical_truth_or_complete_custody_authenticated": false
++    },
++    {
++      "id": "S3",
++      "url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file",
++      "title": "FBI Vault interviews part 08 of 08",
++      "form": "Previously acquired official-hosted PDF; physical 4–5 are the earlier operator-account comparison",
++      "access_date_local": "2026-10-31",
++      "capture_or_prior_acquisition": "Previously held; relevant source byte fingerprint rechecked in this unit",
++      "preserved_entity_bytes": 1985063,
++      "preserved_entity_sha256": "a7d3d872daf33d41c993ade5ccf2e9aa5421ffb1f4cda6164d6bb712372dde41",
++      "hash_scope": "Preserved official-hosted PDF body",
++      "native_pdf_hash": "a7d3d872daf33d41c993ade5ccf2e9aa5421ffb1f4cda6164d6bb712372dde41",
++      "historical_truth_or_complete_custody_authenticated": false
++    },
++    {
++      "id": "S4",
++      "url": "https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419",
++      "title": "Indexed/OCR/transcript reproduction of later reading and follow-up conversations",
++      "form": "Previously acquired third-party public reader representation, not original audio/letter/master PDF",
++      "access_date_local": "2026-10-31",
++      "capture_or_prior_acquisition": "Previously held; relevant source byte fingerprint rechecked in this unit",
++      "preserved_entity_bytes": 65271,
++      "preserved_entity_sha256": "f97c92e565db27da6a7445a4e2114163ddb8320c5c4f52a73b4712ab43e0eeeb",
++      "hash_scope": "Browser DOM/text capture, not native PDF/audio",
++      "native_pdf_hash": null,
++      "historical_truth_or_complete_custody_authenticated": false
++    }
++  ],
++  "new_source_native_PDF_acquired": false,
++  "source_captures": [
++    {
++      "name": "mfr-p01-header.jpg",
++      "bytes": 92855,
++      "sha256": "c2dfd0a8e3ff85f3f23dec999cfc5f096d116f886ab50f15d60abd94b990926c",
++      "kind": "visible header and initial page-one viewport",
++      "adopted_as_page_evidence": true
++    },
++    {
++      "name": "mfr-p01-body.jpg",
++      "bytes": 96864,
++      "sha256": "5fb74d15b0d5cd9f63f7a3e57b33e372b2abb0494eae13b35ff0afd46a2a8b0f",
++      "kind": "page-one upper and middle body viewport",
++      "adopted_as_page_evidence": true
++    },
++    {
++      "name": "mfr-p01-lower.jpg",
++      "bytes": 71401,
++      "sha256": "92bb59c09c9aaba10301dc88d86b2d1e71297b52ceba3e47727c50b974f684eb",
++      "kind": "page-one lower body and footer viewport",
++      "adopted_as_page_evidence": true
++    },
++    {
++      "name": "mfr-p02-loaded.jpg",
++      "bytes": 89520,
++      "sha256": "b5678927f689540d9ca83dc8126a8df1be0c89ed565ec2008b38687cb223d694",
++      "kind": "loaded page two viewport",
++      "adopted_as_page_evidence": true
++    },
++    {
++      "name": "mfr-p03-loading-diagnostic.jpg",
++      "bytes": 16328,
++      "sha256": "77c284eb2a5f10d1a336c7e527730aa2fc15853db6fa20ffe5a5b80cce3a252b",
++      "kind": "transient loading frame, not adopted as source page",
++      "adopted_as_page_evidence": false
++    },
++    {
++      "name": "mfr-p03-loaded.jpg",
++      "bytes": 49256,
++      "sha256": "0b464a59546312014fbf3130c83f50e011e57c40d464184f99e8b1b9172a50fb",
++      "kind": "loaded page three viewport",
++      "adopted_as_page_evidence": true
++    }
++  ],
++  "raw_source_payload_published": false
++}
+diff --git a/VERIFICATION.json b/VERIFICATION.json
+new file mode 100644
+index 00000000..84de14bf
+--- /dev/null
++++ b/VERIFICATION.json
+@@ -0,0 +1,47 @@
++{
++  "checked_utc": "2026-11-01T01:09:42.471177+00:00",
++  "scope": "Source byte preservation, capture/page/locator/source-ID accounting and safe-note review. No historical truth or empirical completion test.",
++  "entity_checks": [
++    {
++      "id": "S1",
++      "bytes": 54260,
++      "sha256": "90ecfacf04cb7fdf9cd2a1fc339262efe43ff94aaeb32c3e1358fb1f6183264a",
++      "matches_preserved_entity": true
++    },
++    {
++      "id": "S2",
++      "bytes": 4468234,
++      "sha256": "4760de107bef3c75f4d7629f90f7a70d2c861cb3b53dcbe37a3bf0fb768f93cb",
++      "matches_preserved_entity": true
++    },
++    {
++      "id": "S3",
++      "bytes": 1985063,
++      "sha256": "a7d3d872daf33d41c993ade5ccf2e9aa5421ffb1f4cda6164d6bb712372dde41",
++      "matches_preserved_entity": true
++    },
++    {
++      "id": "S4",
++      "bytes": 65271,
++      "sha256": "f97c92e565db27da6a7445a4e2114163ddb8320c5c4f52a73b4712ab43e0eeeb",
++      "matches_preserved_entity": true
++    }
++  ],
++  "six_captures_byte_hash_rechecked": true,
++  "adopted_source_viewports": 5,
++  "loading_diagnostic_viewports": 1,
++  "source_pin_ids_unique": true,
++  "source_pin_primary_references_valid": true,
++  "preserved_conflicts": [
++    "C01",
++    "C02",
++    "C03",
++    "C04",
++    "C05",
++    "C06"
++  ],
++  "original_requirements_closed": 0,
++  "native_audio_letter_notes_obtained": false,
++  "no_source_overwrite_or_private_payload": true,
++  "new_public_commit_verified": "Not yet performed; separate publication receipts required."
++}
