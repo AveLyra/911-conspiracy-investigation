@@ -1,0 +1,1031 @@
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..16165606
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,15 @@
++# Request and source-review checklist
++
++| Requirement | Outcome | Limits / remaining work |
++| --- | --- | --- |
++| Pursue originals through a distinct available route | Normal public catalogue returned matching 21-page record; SOURCES/RP01 | Qualified mirror/index/OCR/transcript representation captured, original audio/master PDF/FD340/letter/receipt still missing |
++| Inspect actual contents, not AI titles/book retellings | Readertext through21reported Bateslabels and end-of-tape;12 selected JPEGs | Not21 complete facsimile images; source-format/readinglimits in READING-SCOPE |
++| Preserve conflicting values/source links | Counts, 40/10/15, phase estimates,285A/265A and date roles; CONFLICTS-AND-TESTS/RP01-11 | No preferred value, repaired code, calibrated clock or inferred historicalcause |
++| Preserve contrary context/assumptions | RP03,RP07-09; README2-4 | Localrecording explanation, laterlearning/inference and source dependence retained; no fake-call or cover-up inference |
++| Original record-type/identity/custody distinctions | Letter-reading/followup/sourceindex/audio/enclosure kept separate | Maskedpersons not reconstructed; UALS-A-C not expanded as FBIauthority; custody/casecrosswalk remains TODO |
++| Exact provenance and references | Capturedentity/JPEGhashes; viewer/Bates/paragraph/capture-line locators | Hashes identify captures, not original PDF/audio; captureline numbers not native archival lines |
++| Maintain full goal/ownership and missing inputs | OPEN-TODOS all five/original 18open | Previouslyperformedtests stayperformed; technicalowner work not duplicated or claimed complete |
++| Preserve originals/prior versions | Newnative notes plus separate reviewedpublicderivative; TEXT-CHANGES | Earlier reports/registers/workplan/source bytes and public history unchanged |
++| Eligible scoped AveLyra commit/push verification | Exactmanifest and actual remote receipts saved separately | This prepublication note is not pushproof; no raw/personal/private-case payload or unrelated staging |
++
++No newanother-chat delivery/adoption is claimed. No empty/status-only commit, native audio decoding, physical experiment or independent historical validation is substituted for the requested original tests.
+diff --git a/CONFLICTS-AND-TESTS.json b/CONFLICTS-AND-TESTS.json
+new file mode 100644
+index 00000000..ca33b11f
+--- /dev/null
++++ b/CONFLICTS-AND-TESTS.json
+@@ -0,0 +1,110 @@
++[
++  {
++    "id": "RC01",
++    "topic": "Front/back allocation",
++    "values": [
++      {
++        "source": "S1p5/Bates12173",
++        "front": 27,
++        "back": 10
++      },
++      {
++        "source": "S1p10/Bates12178",
++        "front": 10,
++        "back": 27
++      }
++    ],
++    "interpretation": "Clear difference in represented allocations. Bothsum37as arithmetic only; actual population, seat locations and cause unverified.",
++    "next": "Originalletter/synopsis, nativeaudio/transcript and relevant actual records; retain each version even if a later source supports one."
++  },
++  {
++    "id": "RC02",
++    "topic": "Case prefix",
++    "values": [
++      {
++        "source": "S1p3",
++        "value": "285A-NY-280350-NK"
++      },
++      {
++        "source": "S2physical47-48",
++        "value": "265A-NY-280350-NK"
++      }
++    ],
++    "interpretation": "Different source/reproduction fields, unresolved provenance/retrieval join. OCR/index/transcription, different record-family or other causes remain untested. No preferred prefix or tampering finding.",
++    "next": "OriginalFD340/transcriptfacsimile and authoritativecase/item/Bates/releasecrosswalk."
++  },
++  {
++    "id": "RC03",
++    "topic": "Media chronology",
++    "values": [
++      {
++        "source": "S1p1P_SEIZDATE",
++        "value": "09/15/2001"
++      },
++      {
++        "source": "S2Sept22report",
++        "value": "Recordingcopy to be provided at later date"
++      },
++      {
++        "source": "S1p21processing",
++        "CREATE_DATE": "08/19/2003",
++        "EDIT_DATE": "10/30/2003"
++      }
++    ],
++    "interpretation": "Keep date labels/object roles distinct. A dated index is not proof of physicalFBIreceipt; a futurepromise is not receipt. Actualtimeline/mediaidentity unknown.",
++    "next": "Originalenvelope, intake/receipt/copygeneration and indexing/version/disposition records; nativeaudio metadata whereavailable."
++  },
++  {
++    "id": "RC04",
++    "topic": "Durations and endpoints",
++    "values": [
++      {
++        "source": "S1p14",
++        "minutes": [
++          40,
++          10,
++          15
++        ]
++      },
++      {
++        "source": "S1p19",
++        "holding": "about10moreminutes"
++      },
++      {
++        "source": "S1p20",
++        "later_news": "about10minuteslater"
++      },
++      {
++        "source": "S3prioraccount",
++        "holding": "20minutes",
++        "later_contact": "approximately5minutes"
++      },
++      {
++        "source": "S1p6letter",
++        "ending": "ninea.m."
++      }
++    ],
++    "interpretation": "Different reported estimates/phase descriptions, not independently aligned measurements. No silent10-15range, sum, controllingduration, crash-time or actualmedia-length inference.",
++    "next": "Originalaudio/notes/synopsis/sourceworksheets, carrier/transfer/call-leg definitions and independentclockanchors."
++  },
++  {
++    "id": "RC05",
++    "topic": "What kind of transcript?",
++    "values": [
++      {
++        "source": "S1p4opening",
++        "term": "transcripts"
++      },
++      {
++        "source": "S1p4letterdescription",
++        "term": "textrecollection"
++      },
++      {
++        "source": "S1p18",
++        "account": "Negative/local-recording explanation"
++      }
++    ],
++    "interpretation": "Nested objects/source roles require separation: laterrecording, letterreading, reportedoriginalcall and transcriptrepresentation. Originalcallaudio not acquired; localrecordingaccount does not prove no othercapture.",
++    "next": "Actualmedia, native transcript/letter and facility/bridge/FBIcapture policy/logs whereavailable."
++  }
++]
+diff --git a/EDITORIAL-REVISION.diff b/EDITORIAL-REVISION.diff
+new file mode 100644
+index 00000000..9e8427ad
+--- /dev/null
++++ b/EDITORIAL-REVISION.diff
+@@ -0,0 +1,93 @@
++diff --git a/publication/CHECKLIST.md b/publication-v2/CHECKLIST.md
++index 741bd6b5..16165606 100644
++--- a/publication/CHECKLIST.md
+++++ b/publication-v2/CHECKLIST.md
++@@ -5,3 +5,3 @@
++-| Pursue originals through a distinct available route | Normalpubliccatalogue returned exact21-page record; SOURCES/RP01 | Qualified mirror/index/OCR/transcript representation captured, originalaudio/master PDF/FD340/letter/receipt still missing |
++-| Inspect actual contents, not AI titles/book retellings | Readertext through21reported Bateslabels and end-of-tape;12selectedJPEGs | Not21completefacsimileimages; source-format/readinglimits in READING-SCOPE |
++-| Preserve conflicting values/source links | Counts,40/10/15, phase estimates,285A/265Aand date roles; CONFLICTS-AND-TESTS/RP01-11 | No preferred value, repaired code, calibrated clock or inferred historicalcause |
+++| Pursue originals through a distinct available route | Normal public catalogue returned matching 21-page record; SOURCES/RP01 | Qualified mirror/index/OCR/transcript representation captured, original audio/master PDF/FD340/letter/receipt still missing |
+++| Inspect actual contents, not AI titles/book retellings | Readertext through21reported Bateslabels and end-of-tape;12 selected JPEGs | Not21 complete facsimile images; source-format/readinglimits in READING-SCOPE |
+++| Preserve conflicting values/source links | Counts, 40/10/15, phase estimates,285A/265A and date roles; CONFLICTS-AND-TESTS/RP01-11 | No preferred value, repaired code, calibrated clock or inferred historicalcause |
++@@ -10 +10 @@
++-| Exact provenance and references | Capturedentity/JPEGhashes; viewer/Bates/paragraph/capture-line locators | Hashes identify captures, not originalPDF/audio; captureline numbers not native archival lines |
+++| Exact provenance and references | Capturedentity/JPEGhashes; viewer/Bates/paragraph/capture-line locators | Hashes identify captures, not original PDF/audio; captureline numbers not native archival lines |
++@@ -12 +12 @@
++-| Preserve originals/prior versions | Newnative notes plus separate reviewedpublicderivative; TEXT-CHANGES | Earlier reports/registers/workplan/sourcebytes and public history unchanged |
+++| Preserve originals/prior versions | Newnative notes plus separate reviewedpublicderivative; TEXT-CHANGES | Earlier reports/registers/workplan/source bytes and public history unchanged |
++diff --git a/publication/README.md b/publication-v2/README.md
++index f20ed35f..c1f8bd1b 100644
++--- a/publication/README.md
+++++ b/publication-v2/README.md
++@@ -3 +3 @@
++-October 31, 2026, America/New_York; captures extend into November 1 UTC. **TEL01-TEL04 / existing AUD016-A1, TC05-B105 and TC06-B110.** The ordinary public catalogue returned the exact cited 21-page record. Its indexed/OCR representation supplies **item 1A-1A64148**, **SOURCE_ACCN 2496**, and Bates range **M-NKA-00012169–00012189**. These are more precise retrieval keys for the underlying media and records. The actual original audio, envelope, native transcript and receipt remain unacquired.
+++October 31, 2026, America/New_York; captures extend into November 1 UTC. **TEL01-TEL04 / existing AUD016-A1, TC05-B105 and TC06-B110.** The ordinary public catalogue returned a 21-page reproduction matching the cited title. Its indexed/OCR representation supplies **item 1A-1A64148**, **SOURCE_ACCN 2496**, and Bates range **M-NKA-00012169–00012189**. These are more precise retrieval keys for the underlying media and records. The actual original audio, envelope, native transcript and receipt remain unacquired.
++@@ -7 +7 @@ October 31, 2026, America/New_York; captures extend into November 1 UTC. **TEL01
++-[Public record 18886478](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419) is a third-party mirror under a 9/11 Document Archive upload attribution. Its title is a catalogue pointer, not proof of official custodianship. Its actual pages display indexed fields, an OCR section, transcript text and privacy markings. We did not obtain an authenticated original FD340facsimile, a master PDF or audio. No nativePDF/audio hash is claimed.
+++[Public record 18886478](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419) is a third-party mirror under a 9/11 Document Archive upload attribution. Its title is a catalogue pointer, not proof of official custodianship. Its actual pages display indexed fields, an OCR section, transcript text and privacy markings. We did not obtain an authenticated original FD340 facsimile, a master PDF or audio. No native PDF/audio hash is claimed.
++@@ -9 +9 @@ October 31, 2026, America/New_York; captures extend into November 1 UTC. **TEL01
++-Normal public search/page/zoom controls exposed the text without sign-in or export. One catalogue query and one matching-result open were used; the second planned query was unnecessary. After an initial four-page check, the reading scope was prospectively extended to the same complete 21-page representation to understand its nested records. All 21reported Bateslabels and the end-of-tape text were read/captured through the ordinary reader. Twelve selected viewport JPEGs across ten viewer pages support the important fields; these are not 21completefacsimileimages. Contact-pattern lines were omitted from the printed reading aid, and no incidental family details are adopted here.
+++Normal public search/page/zoom controls exposed the text without sign-in or export. One catalogue query and one matching-result open were used; the second planned query was unnecessary. After an initial four-page check, the reading scope was prospectively extended to the same complete 21-page representation to understand its nested records. All 21 reported Bates labels and the end-of-tape text were read/captured through the ordinary reader. Twelve selected viewport JPEGs across ten viewer pages support the important fields; these are not 21 complete facsimile images. Contact-pattern lines were omitted from the printed reading aid, and no incidental family details are adopted here.
++@@ -11 +11 @@ Normal public search/page/zoom controls exposed the text without sign-in or expo
++-The preserved browser-decodedUTF8source capture is **65,271 bytes**, SHA-256 **f97c92e565db27da6a7445a4e2114163ddb8320c5c4f52a73b4712ab43e0eeeb**. This fingerprints that capture, not an originalPDF, recording or FBI master. Raw privacy-marked images, reader text and full speech remain outside this public payload. [Source/capture fingerprints](SOURCES.json), [actual scope](READING-SCOPE.json), [page/Bates/paragraph and capture-line pins](SOURCE-PINS.json). Use the reader's JumpToPage control for the viewer-page locators below; capturedDOM line numbers are separate from archival pagination.
+++The preserved browser-decoded UTF-8 source capture is **65,271 bytes**, SHA-256 **f97c92e565db27da6a7445a4e2114163ddb8320c5c4f52a73b4712ab43e0eeeb**. This fingerprints that capture, not an original PDF, recording or FBI master. Raw privacy-marked images, reader text and full speech remain outside this public payload. [Source/capture fingerprints](SOURCES.json), [actual scope](READING-SCOPE.json), [page/Bates/paragraph and capture-line pins](SOURCE-PINS.json). Use the reader's Jump to Page control for the viewer-page locators below; captured DOM line numbers are separate from archival pagination.
++@@ -17 +17 @@ Viewer page 1/Bates 12169 displays **FBIITEMNO 1A-1A64148**, **EVIDENCETYPE 1A**
++-The previously read [official September 22FD302, physical 47-48](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=47) describes a September 15follow-up being taped, a synopsis copy in 1A, and a recording copy to be provided later. Preserve that future-copy wording beside the new index date. No original envelope/receipt or media hash currently proves whether these concern the same copy, what the date field means operationally, or when material entered FBI custody. Do not convert either source into a controlling receipt date.
+++The previously read [official September 22 FD302, physical 47-48](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=47) describes a September 15 follow-up being taped, a synopsis copy in 1A, and a recording copy to be provided later. Preserve that future-copy wording beside the new index date. No original envelope/receipt or media hash currently proves whether these concern the same copy, what the date field means operationally, or when material entered FBI custody. Do not convert either source into a controlling receipt date.
++@@ -19 +19 @@ The previously read [official September 22FD302, physical 47-48](https://vault.f
++-The mirror header on viewer page 3/Bates 12171 reads **285A-NY-280350-NK**. The official September 22form reads **265A-NY-280350-NK**. Both source readings remain. The mirror's indexed/OCR form makes the originalfacsimile and case/item/Bates crosswalk especially important. An OCR/index/transcription issue, a different record assignment or another explanation remains untested. This is a provenance/retrieval difference, not established historical misfiling or tampering. No redacted identities are filled from this or another release.
+++The mirror header on viewer page 3/Bates 12171 reads **285A-NY-280350-NK**. The official September 22 form reads **265A-NY-280350-NK**. Both source readings remain. The mirror's indexed/OCR form makes the original facsimile and case/item/Bates crosswalk especially important. An OCR/index/transcription issue, a different record assignment or another explanation remains untested. This is a provenance/retrieval difference, not established historical misfiling or tampering. No redacted identities are filled from this or another release.
++@@ -23 +23 @@ The mirror header on viewer page 3/Bates 12171 reads **285A-NY-280350-NK**. The
++-Viewer page s4-6/Bates 12172-12174 begin with a United Airlines representative reading a letter. The opening uses transcript terminology; the cover being read calls its content a **“text recollection.”** The described three-page letter contains a cover, contact information and an account; the reader skips the contact page. A letter dated September 14is being read, which does not independently date the recording of that reading. S-A-C is the representative's stated UAL designation; its expansion and any claimed FBI authority are not established here.
+++Viewer pages 4-6/Bates 12172-12174 begin with a United Airlines representative reading a letter. The opening uses transcript terminology; the cover being read calls its content a **“text recollection.”** The described three-page letter contains a cover, contact information and an account; the reader skips the contact page. A letter dated September 14 is being read, which does not independently date the recording of that reading. S-A-C is the representative's stated UAL designation; its expansion and any claimed FBI authority are not established here.
++@@ -33,4 +33,4 @@ Viewer page 18/Bates 12186 contains a negative response to a question about a ta
++-| Front/back count | Viewer5/Bates 12173: **27 front / 10 back** | Viewer10/Bates 12178: **10 front / 27 back** | Original letter and audio/transcription, source of counts and actual manifest/locations. Both sums are 37 only as arithmetic of reported values. Neither value is selected. |
++-| Conversation length | No independently measured duration obtained | Viewer14/Bates 12182: initial **about 40 minutes**, then a **10-minute** reference attributed to others, then **15 minutes** | These are separate statements, not an adopted 10–15 range or calibrated duration. Who supplied the later figure and what each measured remain unknown. |
++-| End/held-line descriptions | Viewer6/Bates 12174 describes silence while connected, followed by an ending at **nine a.m.** | Viewer19-20/Bates 12187-12188 describe **about 10 more minutes** holding and later radio news **about 10 minutes later**. The [earlier official operator account](https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md) records a **20-minute** silent-open phase and a separate **approximately 5-minute** later-contact estimate. | Event/leg boundaries, recording and clock alignment are missing. No arithmetic timeline or controlling duration is imposed. |
++-| Phrase attribution | Viewer6/Bates 12174 leaves a phrase to an unspecified speaker | Viewer15/Bates 12183 contains a question/answer attributing a later wording to Todd | Original audio, notes and synopsis versions are needed. Do not silently make different reported wording a single verbatim last statement. |
+++| Front/back count | Viewer 5/Bates 12173: **27 front / 10 back** | Viewer 10/Bates 12178: **10 front / 27 back** | Original letter and audio/transcription, source of counts and actual manifest/locations. Both sums are 37 only as arithmetic of reported values. Neither value is selected. |
+++| Conversation length | No independently measured duration obtained | Viewer 14/Bates 12182: initial **about 40 minutes**, then a **10-minute** reference attributed to others, then **15 minutes** | These are separate statements, not an adopted 10–15 range or calibrated duration. Who supplied the later figure and what each measured remain unknown. |
+++| End/held-line descriptions | Viewer 6/Bates 12174 describes silence while connected, followed by an ending at **nine a.m.** | Viewer 19-20/Bates 12187-12188 describe **about 10 more minutes** holding and later radio news **about 10 minutes later**. The [earlier official operator account](https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md) records a **20-minute** silent-open phase and a separate **approximately 5-minute** later-contact estimate. | Event/leg boundaries, recording and clock alignment are missing. No arithmetic timeline or controlling duration is imposed. |
+++| Phrase attribution | Viewer 6/Bates 12174 leaves a phrase to an unspecified speaker | Viewer 15/Bates 12183 contains a question/answer attributing a later wording to Todd | Original audio, notes and synopsis versions are needed. Do not silently make different reported wording a single verbatim last statement. |
++@@ -42 +42 @@ The later dialogue also reports a call time of **about 8:45 central standard tim
++-Viewer page s13-14/Bates 12181-12182 distinguish prior service use/corporate-program information, facts learned later and an inference about passengers discussing action together. Those distinctions matter for independence: a later detail is not automatically something independently heard during the original call. The actual provider/account records, initial notes, synopsis and recording versions should test that chain.
+++Viewer pages 13-14/Bates 12181-12182 distinguish prior service use/corporate-program information, facts learned later and an inference about passengers discussing action together. Those distinctions matter for independence: a later detail is not automatically something independently heard during the original call. The actual provider/account records, initial notes, synopsis and recording versions should test that chain.
++@@ -44 +44 @@ Viewer page s13-14/Bates 12181-12182 distinguish prior service use/corporate-pro
++-Viewer19/Bates 12187 reports information told to the speaker about handling **over 200 simultaneous calls** in ordinary winter-storm conditions, **360** that day, and a lock-up described as short of a total crash. This is an anecdotal/reported technical account. Over 200 is not a hard 200 maximum, and 360 is not an authenticated incident metric. Native fault/recovery/session/clock logs are needed before using the passage to explain any particular billed or held duration.
+++Viewer 19/Bates 12187 reports information told to the speaker about handling **over 200 simultaneous calls** in ordinary winter-storm conditions, **360** that day, and a lock-up described as short of a total crash. This is an anecdotal/reported technical account. Over 200 is not a hard 200 maximum, and 360 is not an authenticated incident metric. Native fault/recovery/session/clock logs are needed before using the passage to explain any particular billed or held duration.
++@@ -50 +50 @@ The dialogue's calmness discussion, expressed uncertainty, later-learning disclo
++-Viewer21/Bates 12189 displays **INPUTBATCH: 1st Batch of 1A1B1C's delivered in August**, **RPTTEXT01: 1**, **EDIT_DATE: 10/30/2003**, **CREATE_DATE: 08/19/2003**, and **SOURCE_ACCN: 2496**. The 1 belongs to RPTTEXT01; the field does not say delivery on August 1. August has no supplied year/day. The footer elsewhere displays May 10, 2004 11:57am. Preserve those processing/footer labels separately from P_SEIZDATE 09/15/2001, the September 14letter date and September 22interview/copy promise.
+++Viewer 21/Bates 12189 displays **INPUTBATCH: 1st Batch of 1A1B1C's delivered in August**, **RPTTEXT01: 1**, **EDIT_DATE: 10/30/2003**, **CREATE_DATE: 08/19/2003**, and **SOURCE_ACCN: 2496**. The 1 belongs to RPTTEXT01; the field does not say delivery on August 1. August has no supplied year/day. The footer elsewhere displays May 10, 2004 11:57 a.m.. Preserve those processing/footer labels separately from P_SEIZDATE 09/15/2001, the September 14 letter date and September 22 interview/copy promise.
++@@ -52 +52 @@ Viewer21/Bates 12189 displays **INPUTBATCH: 1st Batch of 1A1B1C's delivered in A
++-No label alone authenticates a delivery recipient/date, physical custody, a particular Commission request, an edit to the historical account, or the completeness of a production. The original schema, batch manifest and actual receipt/version records remain missing. The21-page container and inclusive 12169–12189 Bates range agree arithmetically; the transcript header/final page separately display internal PAGE 1 / PAGE 19. Different pagination is not proof of missing pages, and matching totals do not authenticate content or audio.
+++No label alone authenticates a delivery recipient/date, physical custody, a particular Commission request, an edit to the historical account, or the completeness of a production. The original schema, batch manifest and actual receipt/version records remain missing. The 21-page container and inclusive 12169–12189 Bates range agree arithmetically; the transcript header/final page separately display internal PAGE 1 / PAGE 19. Different pagination is not proof of missing pages, and matching totals do not authenticate content or audio.
++@@ -56 +56 @@ No label alone authenticates a delivery recipient/date, physical custody, a part
++-Highest retrieval value: item **1A-1A64148**, **SOURCE_ACCN 2496**, the exact Batesrange, original released FD340/transcript facsimiles, actual media/copy/receipt/disposition and the original letter/synopsis. Then compare recorded words and source versions with the conflicting counts, duration/phase descriptions and attribution. Native carrier/operator/recipient/clock/usage/exhibit joins and the GTE paper/Excel 97 diskette remain required. No native audio, original letter, master PDF, confirmed custody or independent clock/vendor test is claimed here.
+++Highest retrieval value: item **1A-1A64148**, **SOURCE_ACCN 2496**, the exact Bates range, original released FD340/transcript facsimiles, actual media/copy/receipt/disposition and the original letter/synopsis. Then compare recorded words and source versions with the conflicting counts, duration/phase descriptions and attribution. Native carrier/operator/recipient/clock/usage/exhibit joins and the GTE paper/Excel 97 diskette remain required. No native audio, original letter, master PDF, confirmed custody or independent clock/vendor test is claimed here.
++@@ -58 +58 @@ Highest retrieval value: item **1A-1A64148**, **SOURCE_ACCN 2496**, the exact Ba
++-[OPEN-TODOS.json](OPEN-TODOS.json) preserves all five tracks and original 18requirements. FAA drafting/knowledge/corrected QFR/receipt/signed-action and separate recommendation-outcome originals remain open. Recorder/materials native-input and empirical tests remain with their technical owner. Steel preservation/transfer/native inventory/attribution and contractor-originals remain open. This source acquisition and reading advances TEL provenance and retrieval; it closes none of the original 18criteria.
+++[OPEN-TODOS.json](OPEN-TODOS.json) preserves all five tracks and original 18 requirements. FAA drafting/knowledge/corrected QFR/receipt/signed-action and separate recommendation-outcome originals remain open. Recorder/materials native-input and empirical tests remain with their technical owner. Steel preservation/transfer/native inventory/attribution and contractor-originals remain open. This source acquisition and reading advances TEL provenance and retrieval; it closes none of the original 18 criteria.
++diff --git a/publication/VERIFICATION.json b/publication-v2/VERIFICATION.json
++index 7a18584b..e981823c 100644
++--- a/publication/VERIFICATION.json
+++++ b/publication-v2/VERIFICATION.json
++@@ -119 +119,18 @@
++-  "preservation": "Rawreadertext/JPEGs remain native/Intel only; previoussources/reports/registers/workplan and publichistory unchanged. Newstandalonepublicsupplement."
+++  "preservation": "Rawreadertext/JPEGs remain native/Intel only; previoussources/reports/registers/workplan and publichistory unchanged. Newstandalonepublicsupplement.",
+++  "previous_official_source_fingerprints_rechecked": [
+++    {
+++      "url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file",
+++      "bytes": 4468234,
+++      "sha256": "4760de107bef3c75f4d7629f90f7a70d2c861cb3b53dcbe37a3bf0fb768f93cb",
+++      "readback": "MATCH",
+++      "scope": "Previouslyheldoriginalintegrityonly, not newreading/historicalvalidation"
+++    },
+++    {
+++      "url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file",
+++      "bytes": 1985063,
+++      "sha256": "a7d3d872daf33d41c993ade5ccf2e9aa5421ffb1f4cda6164d6bb712372dde41",
+++      "readback": "MATCH",
+++      "scope": "Previouslyheldoriginalintegrityonly, not newreading/historicalvalidation"
+++    }
+++  ],
+++  "citation_identity_limit": "The inaccessible124.pdfmirror was not acquired or hashed; matchingtitle and contents do not prove byteidentity or originalreleasechain. This publicreader reproduction is a candidate source counterpart."
+diff --git a/OPEN-TODOS.json b/OPEN-TODOS.json
+new file mode 100644
+index 00000000..e4ad8b37
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,50 @@
++{
++  "new_targets": [
++    {
++      "id": "TEL04-RP-ITEM",
++      "status": "TODO",
++      "record": "OriginalreleasedFD340/envelope, item/index/case/Bates crosswalk for1A-1A64148; SOURCE_ACCN2496; M-NKA-00012169-00012189",
++      "test": "Authenticate the displayed metadata and265A/285Ajoin without rewriting either source or filling redactions. Establish actualmedia/object identity."
++    },
++    {
++      "id": "TEL04-RP-AUDIO",
++      "status": "TODO",
++      "record": "Actualrecording/copies associated with item1A-1A64148, nativeaudio/transcription/masterfiles, media/copy/receipt/retention/disposition history",
++      "test": "Compare segmentboundaries, completeness, speaker/timing/transcription details and source versions. End-of-tape text and a viewer title are not validation."
++    },
++    {
++      "id": "TEL04-RP-SYNOPSIS",
++      "status": "TODO",
++      "record": "Actualthree-pageletter/synopsis/fax, authorship/version/transmission/receipt, originaloperator notes and1Aattachment join",
++      "test": "Compare front/backcounts, timing/attribution wording and source chronology; a recorded reading is not the originalenclosure. Do not acquire/use personalcontact data unnecessarily."
++    },
++    {
++      "id": "TEL01-RP-RELEASE",
++      "status": "TODO",
++      "record": "Actualbatchmanifest/delivery/processing schema for displayedINPUTBATCH/SOURCE_ACCN and broadercompleteRequest14/productionchain",
++      "test": "Identify recipient/year/date/coverage and namespaces. Do not turnAugust+followingRPTTEXT01value1intoAugust1, assume a specificrequest, or infer completeness."
++    },
++    {
++      "id": "TEL03-RP-NETWORK",
++      "status": "TODO",
++      "record": "Nativeproviderprogram/account/configuration, call/event/clock/answer/disconnect/recovery logs and documented recordingfacilities/captureavailability",
++      "test": "Test reportedserviceuse/load/lock/held-line statements against actualnativeinputs; over200notmaximum200; narrative360notloggedmetric; localrecordingaccountnotallcaptureabsence."
++    },
++    {
++      "id": "TEL04-RP-INDEPENDENCE",
++      "status": "TODO",
++      "record": "Audio/notes/synopsis/version and source-to-caller/operator/recipient/exhibit worksheets",
++      "test": "Separate directcontact, relayed/inferred/later-learned information, recordingmetadata and reconstruction. Preserve all contradictory accounts; no independentcorroboration from dependent retellings."
++    }
++  ],
++  "original_eighteen_closed_here": 0,
++  "all_five_tracks": {
++    "FAA01-04 / PD01-04": "NativeMay2003draft/knowledge, actualcorrectedQFR/receipt, signedconsideration/action/no-action and distinctrecommendationimplementation/closure/policy remain open.",
++    "TEL01-04": "Newqualifiedrecordcontent/index/custody pointers acquired; nativecarrier/operator/recipient/clock/usage/exhibit/authenticatedreleasejoins remain open.",
++    "REC01-03": "Priorrawframe/page/Hamming/terminaltests remainperformed; actualaircraft/custody/installedconfig/pairedoutput/calibratedclocks/authorizedaudio remain technical-owner inputs. Phone transcript is not CVR/radarvalidation.",
++    "MAT01-03": "Publishedmethods/conditionalalgebra remainperformed; nativeinstrument/calibration/specimen/run/thermal/matchedtests remain technical-owner inputs.",
++    "STL01-04": "Preservation/transfer/nativeinventory/attribution and signedcontractor/draft/comment/delivery/acceptance originals remain open."
++  },
++  "disposition": "All original18criteria open/partial; publicsource reading/provenance/arithmetics and publication do not close required native/empirical tests. Missing inputs deferred, not waived.",
++  "permitted": "Existingpublicsource/authorizedlocalrecord research only; no newrequest, outreach, fee, mailbox/privatecase, physicalexperiment, deletion, privatepush, sourceoverwrite or historyrewrite."
++}
+diff --git a/READING-SCOPE.json b/READING-SCOPE.json
+new file mode 100644
+index 00000000..fa79607b
+--- /dev/null
++++ b/READING-SCOPE.json
+@@ -0,0 +1,25 @@
++{
++  "catalogue_queries": 1,
++  "second_query_not_used": true,
++  "matching_result_opens": 1,
++  "source": "S1publicreader",
++  "text_scope": "PublicrenderedDOM/text throughall21reportedBateslabels and end-of-tape read as relevantrecordcontext. Incidentalcontactpatterns omitted from printed readingaid; no privatefamilydetails adopted/published.",
++  "selected_viewport_pages": [
++    1,
++    2,
++    3,
++    4,
++    5,
++    8,
++    10,
++    14,
++    19,
++    21
++  ],
++  "viewport_captures": 12,
++  "qualification": "Selectedviewports/zoomdetails, not21completefacsimilepageimages. Capturehash identifies normalbrowsertext/JPEGs, not originalPDF/serverbytes/audio.",
++  "prospective_scope_change": "Initial4-pagecheck extended to samecomplete21-page representation after actualbody revealed nestedletter/followup context. No newsearch/entity/download or accessgate bypass.",
++  "method": "NormalpublicSearch,Fullscreen,JumpToPage andZoomcontrols only; waited/reobserved samepage for transientblankloading. Exactmarker failures caused by OCRspacing handled using actual observed nearbyfooters, no textrewriting/absenceinference.",
++  "actual_source_forms": "Indexfields plus OCR/text/transcriptreproduction. No nativePDF/download, originalFD340/typedtranscript/fax/audio, waveform/speaker/clock or vendor test.",
++  "privacy": "No rawmarkedcaptures/fullspeech, incidentalpersonal/contact/financial/access/signature data, credentials, privatecasecorrespondence or inferred redactedpersonidentities in publicpayload."
++}
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..c1f8bd1b
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,62 @@
++# A public transcript reproduction supplies a recording item ID and conflicting accounts
++
++October 31, 2026, America/New_York; captures extend into November 1 UTC. **TEL01-TEL04 / existing AUD016-A1, TC05-B105 and TC06-B110.** The ordinary public catalogue returned a 21-page reproduction matching the cited title. Its indexed/OCR representation supplies **item 1A-1A64148**, **SOURCE_ACCN 2496**, and Bates range **M-NKA-00012169–00012189**. These are more precise retrieval keys for the underlying media and records. The actual original audio, envelope, native transcript and receipt remain unacquired.
++
++## Source form and actual reading
++
++[Public record 18886478](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419) is a third-party mirror under a 9/11 Document Archive upload attribution. Its title is a catalogue pointer, not proof of official custodianship. Its actual pages display indexed fields, an OCR section, transcript text and privacy markings. We did not obtain an authenticated original FD340 facsimile, a master PDF or audio. No native PDF/audio hash is claimed.
++
++Normal public search/page/zoom controls exposed the text without sign-in or export. One catalogue query and one matching-result open were used; the second planned query was unnecessary. After an initial four-page check, the reading scope was prospectively extended to the same complete 21-page representation to understand its nested records. All 21 reported Bates labels and the end-of-tape text were read/captured through the ordinary reader. Twelve selected viewport JPEGs across ten viewer pages support the important fields; these are not 21 complete facsimile images. Contact-pattern lines were omitted from the printed reading aid, and no incidental family details are adopted here.
++
++The preserved browser-decoded UTF-8 source capture is **65,271 bytes**, SHA-256 **f97c92e565db27da6a7445a4e2114163ddb8320c5c4f52a73b4712ab43e0eeeb**. This fingerprints that capture, not an original PDF, recording or FBI master. Raw privacy-marked images, reader text and full speech remain outside this public payload. [Source/capture fingerprints](SOURCES.json), [actual scope](READING-SCOPE.json), [page/Bates/paragraph and capture-line pins](SOURCE-PINS.json). Use the reader's Jump to Page control for the viewer-page locators below; captured DOM line numbers are separate from archival pagination.
++
++## 1. The evidence index is more specific than the earlier promise
++
++Viewer page 1/Bates 12169 displays **FBIITEMNO 1A-1A64148**, **EVIDENCETYPE 1A**, **P_SEIZDATE 09/15/2001** and **P_DESCR “RECORDING OF CONVERSATION”**. The item repeats in later footers. This is displayed index/OCR content, not independent proof of a seizure or physical receipt on that date. Handwritten/garbled received-date text and masked agent fields were not accepted or reconstructed.
++
++The previously read [official September 22 FD302, physical 47-48](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=47) describes a September 15 follow-up being taped, a synopsis copy in 1A, and a recording copy to be provided later. Preserve that future-copy wording beside the new index date. No original envelope/receipt or media hash currently proves whether these concern the same copy, what the date field means operationally, or when material entered FBI custody. Do not convert either source into a controlling receipt date.
++
++The mirror header on viewer page 3/Bates 12171 reads **285A-NY-280350-NK**. The official September 22 form reads **265A-NY-280350-NK**. Both source readings remain. The mirror's indexed/OCR form makes the original facsimile and case/item/Bates crosswalk especially important. An OCR/index/transcription issue, a different record assignment or another explanation remains untested. This is a provenance/retrieval difference, not established historical misfiling or tampering. No redacted identities are filled from this or another release.
++
++## 2. Two conversations and a letter require separate source roles
++
++Viewer pages 4-6/Bates 12172-12174 begin with a United Airlines representative reading a letter. The opening uses transcript terminology; the cover being read calls its content a **“text recollection.”** The described three-page letter contains a cover, contact information and an account; the reader skips the contact page. A letter dated September 14 is being read, which does not independently date the recording of that reading. S-A-C is the representative's stated UAL designation; its expansion and any claimed FBI authority are not established here.
++
++Viewer page 7/Bates 12175 then notes a pause, introduces another conversation, mentions a received summary and asks to record the conversation. The document's recording label cannot collapse these into an original in-flight recording, one continuous call, or an authenticated single cassette. A transcript of a later reading is not the original written enclosure. Original audio, typed transcript, letter/fax and source-version/copy records remain separate targets.
++
++Viewer page 18/Bates 12186 contains a negative response to a question about a tape and an explanation that local recording would have required leaving the floor/going to an office. Preserve the scope: this is a reported local-recording account, not a demonstrated absence of every possible carrier, facility or FBI relay capture. It provides contrary context to an assumption that the original in-flight call must have been recorded and then withheld. The facility policy/configuration and surviving media are still unverified.
++
++## 3. Preserve the numerical and wording differences
++
++| Question | Letter-reading segment | Later dialogue / other source | What remains untested |
++| --- | --- | --- | --- |
++| Front/back count | Viewer 5/Bates 12173: **27 front / 10 back** | Viewer 10/Bates 12178: **10 front / 27 back** | Original letter and audio/transcription, source of counts and actual manifest/locations. Both sums are 37 only as arithmetic of reported values. Neither value is selected. |
++| Conversation length | No independently measured duration obtained | Viewer 14/Bates 12182: initial **about 40 minutes**, then a **10-minute** reference attributed to others, then **15 minutes** | These are separate statements, not an adopted 10–15 range or calibrated duration. Who supplied the later figure and what each measured remain unknown. |
++| End/held-line descriptions | Viewer 6/Bates 12174 describes silence while connected, followed by an ending at **nine a.m.** | Viewer 19-20/Bates 12187-12188 describe **about 10 more minutes** holding and later radio news **about 10 minutes later**. The [earlier official operator account](https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md) records a **20-minute** silent-open phase and a separate **approximately 5-minute** later-contact estimate. | Event/leg boundaries, recording and clock alignment are missing. No arithmetic timeline or controlling duration is imposed. |
++| Phrase attribution | Viewer 6/Bates 12174 leaves a phrase to an unspecified speaker | Viewer 15/Bates 12183 contains a question/answer attributing a later wording to Todd | Original audio, notes and synopsis versions are needed. Do not silently make different reported wording a single verbatim last statement. |
++
++The later dialogue also reports a call time of **about 8:45 central standard time** at viewer 8/Bates 12176. The letter-reading has an 8:45 a.m. label. Neither establishes a calibrated timebase, EST/EDT conversion or a match to a particular native row. Retellings and billing fields cannot be joined by a desired time alone. [All retained values and discriminating tests](CONFLICTS-AND-TESTS.json).
++
++## 4. Later knowledge, service claims and contrary evidence
++
++Viewer pages 13-14/Bates 12181-12182 distinguish prior service use/corporate-program information, facts learned later and an inference about passengers discussing action together. Those distinctions matter for independence: a later detail is not automatically something independently heard during the original call. The actual provider/account records, initial notes, synopsis and recording versions should test that chain.
++
++Viewer 19/Bates 12187 reports information told to the speaker about handling **over 200 simultaneous calls** in ordinary winter-storm conditions, **360** that day, and a lock-up described as short of a total crash. This is an anecdotal/reported technical account. Over 200 is not a hard 200 maximum, and 360 is not an authenticated incident metric. Native fault/recovery/session/clock logs are needed before using the passage to explain any particular billed or held duration.
++
++The dialogue's calmness discussion, expressed uncertainty, later-learning disclosures and local-recording explanation are contrary evidence to treating every difference as an admission of fakery or concealed reconstruction. The ending discusses prospective press contact and information sharing; it does not itself establish a false account, foreknowledge or attack coordination. Different recollections, source copying, transcription/OCR problems and other causes remain untested. No preferred cause is adopted.
++
++## 5. Processing dates are not one historical event
++
++Viewer 21/Bates 12189 displays **INPUTBATCH: 1st Batch of 1A1B1C's delivered in August**, **RPTTEXT01: 1**, **EDIT_DATE: 10/30/2003**, **CREATE_DATE: 08/19/2003**, and **SOURCE_ACCN: 2496**. The 1 belongs to RPTTEXT01; the field does not say delivery on August 1. August has no supplied year/day. The footer elsewhere displays May 10, 2004 11:57 a.m.. Preserve those processing/footer labels separately from P_SEIZDATE 09/15/2001, the September 14 letter date and September 22 interview/copy promise.
++
++No label alone authenticates a delivery recipient/date, physical custody, a particular Commission request, an edit to the historical account, or the completeness of a production. The original schema, batch manifest and actual receipt/version records remain missing. The 21-page container and inclusive 12169–12189 Bates range agree arithmetically; the transcript header/final page separately display internal PAGE 1 / PAGE 19. Different pagination is not proof of missing pages, and matching totals do not authenticate content or audio.
++
++## Next originals and the full work plan
++
++Highest retrieval value: item **1A-1A64148**, **SOURCE_ACCN 2496**, the exact Bates range, original released FD340/transcript facsimiles, actual media/copy/receipt/disposition and the original letter/synopsis. Then compare recorded words and source versions with the conflicting counts, duration/phase descriptions and attribution. Native carrier/operator/recipient/clock/usage/exhibit joins and the GTE paper/Excel 97 diskette remain required. No native audio, original letter, master PDF, confirmed custody or independent clock/vendor test is claimed here.
++
++[OPEN-TODOS.json](OPEN-TODOS.json) preserves all five tracks and original 18 requirements. FAA drafting/knowledge/corrected QFR/receipt/signed-action and separate recommendation-outcome originals remain open. Recorder/materials native-input and empirical tests remain with their technical owner. Steel preservation/transfer/native inventory/attribution and contractor-originals remain open. This source acquisition and reading advances TEL provenance and retrieval; it closes none of the original 18 criteria.
++
++High confidence attaches to the displayed fields and the retained captures within their stated scope. Fidelity to original documents/media, complete custody and historical event truth remain unverified. The next originals could weaken or strengthen particular interpretations; source count, arithmetic or publication is not proof of conspiracy. Earlier contradictory observations, sources, reports, shared registers/workplan and public history remain unchanged.
++
++[Reading/checklist](CHECKLIST.md), [verification limits](VERIFICATION.json) and [actual addition diff](TEXT-CHANGES.diff) accompany the notes. Only appropriate original research, selected safe values and source links form this redundant public derivative. Raw privacy-marked source captures/full speech, incidental personal/contact/financial/access/signature data, private case material and credentials are excluded. No account/gate bypass, outreach, fees, new request/filing, mailbox access, experiment, source overwrite, deletion, private push or history rewrite occurred. Publication is established separately by the actual AveLyra account/commit/ref/all-file receipts; no independent audit acceptance is implied.
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..5fd6d431
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,362 @@
++[
++  {
++    "id": "RP01",
++    "source": "S1",
++    "viewer_pages": [
++      1,
++      2
++    ],
++    "bates": [
++      "M-NKA-00012169",
++      "M-NKA-00012170"
++    ],
++    "locator": "Page1metadata block and OCR field; page2 repeated item/footer",
++    "observation": {
++      "BEGBATES": "M-NKA-00012169",
++      "ENDBATES": "M-NKA-00012189",
++      "PAGES": 21,
++      "EVIDENCETYPE": "1A",
++      "FBIITEMNO": "1A-1A64148",
++      "P_SEIZDATE": "09/15/2001",
++      "P_DESCR": "RECORDING OF CONVERSATION"
++    },
++    "limits": "Displayed index/OCR fields, not authenticated original envelope, seizure/receipt event, native recording or complete custody. Handwritten/OCR received-date and acquiring-agent fields not adopted.",
++    "capture_line_marker_occurrences": {
++      "M-NKA-00012169": [
++        14,
++        21
++      ],
++      "M-NKA-00012170": [
++        123,
++        133
++      ]
++    },
++    "capture_line_scope": "Line numbers locate marker occurrences in the preserved browserDOM capture only; not official/native record line numbers or a complete-production proof."
++  },
++  {
++    "id": "RP02",
++    "source": "S1",
++    "viewer_pages": [
++      3
++    ],
++    "bates": [
++      "M-NKA-00012171"
++    ],
++    "locator": "Transcript header and PAGE1 field",
++    "observation": {
++      "CASE_ID_reading": "285A-NY-280350-NK",
++      "TYPE_OF_RECORDING": "TELEPHONIC",
++      "transcriber_field": "redacted"
++    },
++    "limits": "Preserve285A besideS2official265A. No correction, inferred controlling case, unredaction or historical-misfiling/tampering conclusion; original facsimile/crosswalk needed. Majorcaseglyph and ambiguous speaker-code expansion not adopted.",
++    "capture_line_marker_occurrences": {
++      "M-NKA-00012171": [
++        147,
++        187
++      ]
++    },
++    "capture_line_scope": "Line numbers locate marker occurrences in the preserved browserDOM capture only; not official/native record line numbers or a complete-production proof."
++  },
++  {
++    "id": "RP03",
++    "source": "S1",
++    "viewer_pages": [
++      4,
++      5,
++      6
++    ],
++    "bates": [
++      "M-NKA-00012172",
++      "M-NKA-00012173",
++      "M-NKA-00012174"
++    ],
++    "locator": "Opening representative/letter description, cover-date and reading continuation",
++    "observation": "A UnitedAirlines representative usesS-A-C, describes a three-page letter, reads a cover datedSeptember14and a text-recollection account, and skips a contact-information page. The spoken opening also uses transcript terminology.",
++    "limits": "Do not expandS-A-C intoFBIauthority, treat the letter as originalinflightrecording/transcript, or claim possession of the actual letter/fax/enclosure. A datedletter is not proof of the call date.",
++    "capture_line_marker_occurrences": {
++      "M-NKA-00012172": [
++        203,
++        380
++      ],
++      "M-NKA-00012173": [
++        393,
++        551
++      ],
++      "M-NKA-00012174": [
++        563,
++        665
++      ]
++    },
++    "capture_line_scope": "Line numbers locate marker occurrences in the preserved browserDOM capture only; not official/native record line numbers or a complete-production proof."
++  },
++  {
++    "id": "RP04",
++    "source": "S1",
++    "viewer_pages": [
++      5,
++      10
++    ],
++    "bates": [
++      "M-NKA-00012173",
++      "M-NKA-00012178"
++    ],
++    "locator": "Letter-reading passenger allocation versus later-dialogue front/back answer",
++    "observation": {
++      "letter_reading": {
++        "front": 27,
++        "back": 10
++      },
++      "later_dialogue": {
++        "front": 10,
++        "back": 27
++      }
++    },
++    "limits": "Both source allocations preserved, no preferred value; reported counts not independently verified passenger manifest, physical seat map or evidence of a staged call. Shared information chain is not independent corroboration.",
++    "capture_line_marker_occurrences": {
++      "M-NKA-00012173": [
++        393,
++        551
++      ],
++      "M-NKA-00012178": [
++        1066,
++        1164
++      ]
++    },
++    "capture_line_scope": "Line numbers locate marker occurrences in the preserved browserDOM capture only; not official/native record line numbers or a complete-production proof."
++  },
++  {
++    "id": "RP05",
++    "source": "S1",
++    "viewer_pages": [
++      7,
++      8,
++      14
++    ],
++    "bates": [
++      "M-NKA-00012175",
++      "M-NKA-00012176",
++      "M-NKA-00012182"
++    ],
++    "locator": "Pause/new-conversation/recording request; approximate call-time and duration sequence",
++    "observation": {
++      "structure": "A pause separates the letter-reading from another conversation, which mentions receiving a summary and asks to record the call.",
++      "time": "about eight forty-five central standard time",
++      "duration_statements_minutes": [
++        40,
++        10,
++        15
++      ],
++      "duration_roles": [
++        "about40initialimpression",
++        "they-told-me10reference",
++        "following15statement"
++      ]
++    },
++    "limits": "Not proof of one continuouscall/cassette or recording date/custody. Do not collapse40/10/15into one corrected value/range, calibrateCST, infer who they were or equate talking time with held/billed duration.",
++    "capture_line_marker_occurrences": {
++      "M-NKA-00012175": [
++        678,
++        766
++      ],
++      "M-NKA-00012176": [
++        780,
++        899
++      ],
++      "M-NKA-00012182": [
++        1595,
++        1746
++      ]
++    },
++    "capture_line_scope": "Line numbers locate marker occurrences in the preserved browserDOM capture only; not official/native record line numbers or a complete-production proof."
++  },
++  {
++    "id": "RP06",
++    "source": "S1",
++    "viewer_pages": [
++      6,
++      19,
++      20
++    ],
++    "bates": [
++      "M-NKA-00012174",
++      "M-NKA-00012187",
++      "M-NKA-00012188"
++    ],
++    "locator": "Letter end description; held-line and later-radio-news passages",
++    "observation": {
++      "letter_reading": "Still connected/silent, followed by ended-at-nine-a.m. description",
++      "later_dialogue": "About10moreminutes holding; later-radio-news wording about10minuteslater",
++      "earlier_S3_account": "20-minute silentopenconnection and separate approximately5-minute later-contact estimate"
++    },
++    "limits": "Preserve all phase descriptions and estimates; no common-event endpoint/clock/leg mapping or additive interval is established. No selected duration, crash timing or post-crash airborne conversation inferred.",
++    "capture_line_marker_occurrences": {
++      "M-NKA-00012174": [
++        563,
++        665
++      ],
++      "M-NKA-00012187": [
++        2333,
++        2481
++      ],
++      "M-NKA-00012188": [
++        2495,
++        2629
++      ]
++    },
++    "capture_line_scope": "Line numbers locate marker occurrences in the preserved browserDOM capture only; not official/native record line numbers or a complete-production proof."
++  },
++  {
++    "id": "RP07",
++    "source": "S1",
++    "viewer_pages": [
++      6,
++      14,
++      15
++    ],
++    "bates": [
++      "M-NKA-00012174",
++      "M-NKA-00012182",
++      "M-NKA-00012183"
++    ],
++    "locator": "Unspecified speaker in letter-reading; later attribution question/answer; later-learned/inferred details",
++    "observation": "The letter-reading leaves a phrase to an unspecified speaker; the later dialogue namesToddin a question/answer about the phrase. The dialogue separately identifies information learned later and describes group-planning as an inference.",
++    "limits": "Do not treat every retold detail as contemporaneous firsthand knowledge or these variants as independent testimony. Actualaudio/notes/synopsis/version history needed; no invented fabrication/coaching/motive finding.",
++    "capture_line_marker_occurrences": {
++      "M-NKA-00012174": [
++        563,
++        665
++      ],
++      "M-NKA-00012182": [
++        1595,
++        1746
++      ],
++      "M-NKA-00012183": [
++        1764,
++        1895
++      ]
++    },
++    "capture_line_scope": "Line numbers locate marker occurrences in the preserved browserDOM capture only; not official/native record line numbers or a complete-production proof."
++  },
++  {
++    "id": "RP08",
++    "source": "S1",
++    "viewer_pages": [
++      13,
++      18,
++      19
++    ],
++    "bates": [
++      "M-NKA-00012181",
++      "M-NKA-00012186",
++      "M-NKA-00012187"
++    ],
++    "locator": "Corporate-program statement, recording question/local-position explanation, load/lock anecdote",
++    "observation": {
++      "corporate_program": "ReportedGTEcorporateprogram/priorservice-use connection",
++      "recording": "Negative response to question about a tape, with explanation that local recording would require leaving the floor/going to the office",
++      "load": "Reportednormalabilityover200simultaneouscalls;360reported thatday; lock-up not totalcrash language, framed as information told to the speaker"
++    },
++    "limits": "Reportedrecollections, not nativeaccount identification, calibratedcapacity/incidentlogs or absence of everyrecording elsewhere. Do not convertover200into hardmaximum200 or use anecdote to explain a specificSCPduration.",
++    "capture_line_marker_occurrences": {
++      "M-NKA-00012181": [
++        1458,
++        1583
++      ],
++      "M-NKA-00012186": [
++        2220,
++        2319
++      ],
++      "M-NKA-00012187": [
++        2333,
++        2481
++      ]
++    },
++    "capture_line_scope": "Line numbers locate marker occurrences in the preserved browserDOM capture only; not official/native record line numbers or a complete-production proof."
++  },
++  {
++    "id": "RP09",
++    "source": "S1",
++    "viewer_pages": [
++      20,
++      21
++    ],
++    "bates": [
++      "M-NKA-00012188",
++      "M-NKA-00012189"
++    ],
++    "locator": "Press-contact question and intended information-sharing; closing annotations",
++    "observation": "The later dialogue discusses potential press contact and prospective information release, then printed end-of-conversation/end-of-tape labels.",
++    "limits": "No actualpressdelivery or originalaudio/completeness validated. Posteventcommunication does not establish fabrication, priorcoordination, foreknowledge or attackparticipation.",
++    "capture_line_marker_occurrences": {
++      "M-NKA-00012188": [
++        2495,
++        2629
++      ],
++      "M-NKA-00012189": [
++        15,
++        2650,
++        2707
++      ]
++    },
++    "capture_line_scope": "Line numbers locate marker occurrences in the preserved browserDOM capture only; not official/native record line numbers or a complete-production proof."
++  },
++  {
++    "id": "RP10",
++    "source": "S1",
++    "viewer_pages": [
++      21
++    ],
++    "bates": [
++      "M-NKA-00012189"
++    ],
++    "locator": "Final aligned processing-field block",
++    "observation": {
++      "INPUTBATCH": "1st Batch of 1A1B1C's delivered in August",
++      "RPTTEXT01": "1",
++      "EDIT_DATE": "10/30/2003",
++      "CREATE_DATE": "08/19/2003",
++      "SOURCE_ACCN": "2496"
++    },
++    "limits": "August has no suppliedyear/day. The following1belongs toRPTTEXT01, notAugust1delivery. Fields are processing/index values, not authenticated historicalcall/receipt/delivery dates or proof of a particularCommissionrequest.",
++    "capture_line_marker_occurrences": {
++      "M-NKA-00012189": [
++        15,
++        2650,
++        2707
++      ]
++    },
++    "capture_line_scope": "Line numbers locate marker occurrences in the preserved browserDOM capture only; not official/native record line numbers or a complete-production proof."
++  },
++  {
++    "id": "RP11",
++    "source": "S1",
++    "viewer_pages": [
++      3,
++      21
++    ],
++    "bates": [
++      "M-NKA-00012171",
++      "M-NKA-00012189"
++    ],
++    "locator": "Internal PAGE1/PAGE19 versus21-page container; source footer date",
++    "observation": {
++      "container_pages": 21,
++      "first_internal_transcript_page": 1,
++      "last_internal_transcript_page": 19,
++      "source_footer_date_string": "May10,2004 11:57am"
++    },
++    "limits": "Different pagination/date roles preserved; no missing-two-pages inference, physicalprint-date authentication or complete-original-transcript/audio proof.",
++    "capture_line_marker_occurrences": {
++      "M-NKA-00012171": [
++        147,
++        187
++      ],
++      "M-NKA-00012189": [
++        15,
++        2650,
++        2707
++      ]
++    },
++    "capture_line_scope": "Line numbers locate marker occurrences in the preserved browserDOM capture only; not official/native record line numbers or a complete-production proof."
++  }
++]
+diff --git a/SOURCES.json b/SOURCES.json
+new file mode 100644
+index 00000000..951f9d73
+--- /dev/null
++++ b/SOURCES.json
+@@ -0,0 +1,123 @@
++[
++  {
++    "id": "S1",
++    "url": "https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419",
++    "source_form": "Third-party public reader reproduction of indexed metadata/OCR/transcript content, uploaded under9/11DocumentArchive attribution; not an authenticated official nativePDF, originalFD340facsimile or audio.",
++    "observed_container_pages": 21,
++    "reader_capture": {
++      "file": "public-reader-source21-dom.txt",
++      "captured_at_utc": "2026-11-01T00:25:05.053Z",
++      "bytes": 65271,
++      "sha256": "f97c92e565db27da6a7445a4e2114163ddb8320c5c4f52a73b4712ab43e0eeeb",
++      "form": "Browser-decodedUTF8DOM/text entity, not originalPDF/server bytes/audio"
++    },
++    "native_PDF_sha256": null,
++    "native_audio_sha256": null,
++    "viewport_captures": [
++      {
++        "file": "preview-p01-lower.jpg",
++        "bytes": 40714,
++        "sha256": "f668e01354bf65acab657bc98df68cfd9b7ef069311ffad4412f75c85046f547",
++        "saved_at_utc": "2026-11-01T00:11:53.197899+00:00",
++        "scope": "Same public page1 lower viewport after normal zoom, not a second source page"
++      },
++      {
++        "file": "preview-p01-upper.jpg",
++        "bytes": 66048,
++        "sha256": "ddcccbb87f131e2a84aa1243646c619c382ce079b4ca7966c38e441f8b6f191a",
++        "saved_at_utc": "2026-11-01T00:11:50.168952+00:00",
++        "scope": "First viewport, upper portion of public page1, metadata/index plus OCR field; not original PDF/FD340 facsimile authentication"
++      },
++      {
++        "file": "preview-p02.jpg",
++        "bytes": 18716,
++        "sha256": "77f32d71b2ce7355bff6441fc02ec23a266fe3a3846b3a6f79f2fdcd57ca1915",
++        "saved_at_utc": "2026-11-01T00:11:56.536238+00:00",
++        "scope": "Public page2 loaded viewport, metadata/OCR representation, not original media"
++      },
++      {
++        "file": "preview-p03-case-detail.jpg",
++        "bytes": 35460,
++        "sha256": "10619069d01ca1e2954bed83d76ad2692847770949e8e983e35e29b49d1b80b8",
++        "saved_at_utc": "2026-11-01T00:17:38.731775+00:00",
++        "scope": "Same page3 printed CASE ID reading285A-NY-280350-NK at normal reader zoom; do not correct to265A"
++      },
++      {
++        "file": "preview-p03-header.jpg",
++        "bytes": 31272,
++        "sha256": "d732d5d33d5ada46c8c8566c62b9feedd9d757f436debe89c0e9d4fc46018c76",
++        "saved_at_utc": "2026-11-01T00:17:35.238228+00:00",
++        "scope": "Public page3 metadata/OCR transcript header, not original envelope or PDF authentication"
++      },
++      {
++        "file": "preview-p04-body.jpg",
++        "bytes": 78182,
++        "sha256": "4f77dfd607921e1f31be4a26c6af7f43d7b8116c21d798ced13c6d5344799bc6",
++        "saved_at_utc": "2026-11-01T00:17:45.224397+00:00",
++        "scope": "Public page4 first transcript body, reading of a letter, not inflight audio"
++      },
++      {
++        "file": "preview-p05-counts.jpg",
++        "bytes": 80049,
++        "sha256": "3073923b64ab003d52a818531532490d9d684f3dc7ba50daeddec721de9c34cf",
++        "saved_at_utc": "2026-11-01T00:29:58.722921+00:00",
++        "scope": "Public page5 letter-reading says27front/10back; source representation, no actualmanifest validation"
++      },
++      {
++        "file": "preview-p08-dialogue.jpg",
++        "bytes": 59321,
++        "sha256": "0d138137da4b64cafe6a3b0c4d6230e26f0d65bc6f9bf9b14a710f3154a25322",
++        "saved_at_utc": "2026-11-01T00:29:49.823595+00:00",
++        "scope": "Public page8 dialogue viewport; part of the later conversation, not inflight audio"
++      },
++      {
++        "file": "preview-p10-counts.jpg",
++        "bytes": 57563,
++        "sha256": "f0eb1887dd77d309cb23a1a8c58436f451fe2d02c2f4f6c601b7a98d1aa182fd",
++        "saved_at_utc": "2026-11-01T00:30:04.162144+00:00",
++        "scope": "Public page10 laterdialogue says10front/27back; conflict preserved, no preferredvalue"
++      },
++      {
++        "file": "preview-p14-duration.jpg",
++        "bytes": 62751,
++        "sha256": "71f74e9e7312362c1f6875f13f004b04e19ba5f169eff3f66cf1eaf8121adb92",
++        "saved_at_utc": "2026-11-01T00:30:07.956416+00:00",
++        "scope": "Public page14 about40, told10, then15minutes statements, not a calibratedduration or adoptedrange"
++      },
++      {
++        "file": "preview-p19-hold-load.jpg",
++        "bytes": 62149,
++        "sha256": "db3ef1de18088addd55e9b5a16780de04edaadddde4076b3cebfd4e0997f403f",
++        "saved_at_utc": "2026-11-01T00:33:39.202420+00:00",
++        "scope": "Page19 load and hold assertions: over200/360reported, tenmoreminutes; labels not silently reassigned"
++      },
++      {
++        "file": "preview-p21-processing.jpg",
++        "bytes": 47100,
++        "sha256": "9201088bb95f9abc6d1c285e18a92c9e9e4704206864e849611e7b6e5600c782",
++        "saved_at_utc": "2026-11-01T00:29:52.809091+00:00",
++        "scope": "Public page21 ending and processing fields; INPUTBATCH endsAugust, following1belongsRPTTEXT01"
++      }
++    ],
++    "raw_material_published": false,
++    "access": "October31,2026America/New_York / November1UTC; normal publicsearch/reader/page/zoom only, no account, trial, download/export or hiddenAPI/gateworkaround."
++  },
++  {
++    "id": "S2",
++    "url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=47",
++    "bytes": 4468234,
++    "physical_pages": 49,
++    "sha256": "4760de107bef3c75f4d7629f90f7a70d2c861cb3b53dcbe37a3bf0fb768f93cb",
++    "scope": "Previously acquired/read officialFBI-hostedSept22FD302, physical47-48. Existing source values reused, not a new download or independent witness.",
++    "prior_report": "https://github.com/AveLyra/911-conspiracy-investigation/blob/9e6b2c93674bfea36f0afc4d0c79c54980796d8f/investigation/broader-evidence/fbi-operator-followup-tape-2026-10-31/README.md"
++  },
++  {
++    "id": "S3",
++    "url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4",
++    "bytes": 1985063,
++    "physical_pages": 21,
++    "sha256": "a7d3d872daf33d41c993ade5ccf2e9aa5421ffb1f4cda6164d6bb712372dde41",
++    "scope": "Previously acquired/read officialFBI-hostedoperator account, physical4-5. Prior estimates and phase distinctions reused, not a new reading/clock test.",
++    "prior_report": "https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md"
++  }
++]
+diff --git a/VERIFICATION.json b/VERIFICATION.json
+new file mode 100644
+index 00000000..e981823c
+--- /dev/null
++++ b/VERIFICATION.json
+@@ -0,0 +1,137 @@
++{
++  "time_utc": "2026-11-01T00:39:09.219853+00:00",
++  "reader_capture": {
++    "bytes": 65271,
++    "sha256": "f97c92e565db27da6a7445a4e2114163ddb8320c5c4f52a73b4712ab43e0eeeb",
++    "readback": "MATCH",
++    "form": "CapturedDOM/text, not originalPDF/audio"
++  },
++  "viewport_files": [
++    {
++      "file": "preview-p01-lower.jpg",
++      "bytes": 40714,
++      "sha256": "f668e01354bf65acab657bc98df68cfd9b7ef069311ffad4412f75c85046f547",
++      "saved_at_utc": "2026-11-01T00:11:53.197899+00:00",
++      "scope": "Same public page1 lower viewport after normal zoom, not a second source page"
++    },
++    {
++      "file": "preview-p01-upper.jpg",
++      "bytes": 66048,
++      "sha256": "ddcccbb87f131e2a84aa1243646c619c382ce079b4ca7966c38e441f8b6f191a",
++      "saved_at_utc": "2026-11-01T00:11:50.168952+00:00",
++      "scope": "First viewport, upper portion of public page1, metadata/index plus OCR field; not original PDF/FD340 facsimile authentication"
++    },
++    {
++      "file": "preview-p02.jpg",
++      "bytes": 18716,
++      "sha256": "77f32d71b2ce7355bff6441fc02ec23a266fe3a3846b3a6f79f2fdcd57ca1915",
++      "saved_at_utc": "2026-11-01T00:11:56.536238+00:00",
++      "scope": "Public page2 loaded viewport, metadata/OCR representation, not original media"
++    },
++    {
++      "file": "preview-p03-case-detail.jpg",
++      "bytes": 35460,
++      "sha256": "10619069d01ca1e2954bed83d76ad2692847770949e8e983e35e29b49d1b80b8",
++      "saved_at_utc": "2026-11-01T00:17:38.731775+00:00",
++      "scope": "Same page3 printed CASE ID reading285A-NY-280350-NK at normal reader zoom; do not correct to265A"
++    },
++    {
++      "file": "preview-p03-header.jpg",
++      "bytes": 31272,
++      "sha256": "d732d5d33d5ada46c8c8566c62b9feedd9d757f436debe89c0e9d4fc46018c76",
++      "saved_at_utc": "2026-11-01T00:17:35.238228+00:00",
++      "scope": "Public page3 metadata/OCR transcript header, not original envelope or PDF authentication"
++    },
++    {
++      "file": "preview-p04-body.jpg",
++      "bytes": 78182,
++      "sha256": "4f77dfd607921e1f31be4a26c6af7f43d7b8116c21d798ced13c6d5344799bc6",
++      "saved_at_utc": "2026-11-01T00:17:45.224397+00:00",
++      "scope": "Public page4 first transcript body, reading of a letter, not inflight audio"
++    },
++    {
++      "file": "preview-p05-counts.jpg",
++      "bytes": 80049,
++      "sha256": "3073923b64ab003d52a818531532490d9d684f3dc7ba50daeddec721de9c34cf",
++      "saved_at_utc": "2026-11-01T00:29:58.722921+00:00",
++      "scope": "Public page5 letter-reading says27front/10back; source representation, no actualmanifest validation"
++    },
++    {
++      "file": "preview-p08-dialogue.jpg",
++      "bytes": 59321,
++      "sha256": "0d138137da4b64cafe6a3b0c4d6230e26f0d65bc6f9bf9b14a710f3154a25322",
++      "saved_at_utc": "2026-11-01T00:29:49.823595+00:00",
++      "scope": "Public page8 dialogue viewport; part of the later conversation, not inflight audio"
++    },
++    {
++      "file": "preview-p10-counts.jpg",
++      "bytes": 57563,
++      "sha256": "f0eb1887dd77d309cb23a1a8c58436f451fe2d02c2f4f6c601b7a98d1aa182fd",
++      "saved_at_utc": "2026-11-01T00:30:04.162144+00:00",
++      "scope": "Public page10 laterdialogue says10front/27back; conflict preserved, no preferredvalue"
++    },
++    {
++      "file": "preview-p14-duration.jpg",
++      "bytes": 62751,
++      "sha256": "71f74e9e7312362c1f6875f13f004b04e19ba5f169eff3f66cf1eaf8121adb92",
++      "saved_at_utc": "2026-11-01T00:30:07.956416+00:00",
++      "scope": "Public page14 about40, told10, then15minutes statements, not a calibratedduration or adoptedrange"
++    },
++    {
++      "file": "preview-p19-hold-load.jpg",
++      "bytes": 62149,
++      "sha256": "db3ef1de18088addd55e9b5a16780de04edaadddde4076b3cebfd4e0997f403f",
++      "saved_at_utc": "2026-11-01T00:33:39.202420+00:00",
++      "scope": "Page19 load and hold assertions: over200/360reported, tenmoreminutes; labels not silently reassigned"
++    },
++    {
++      "file": "preview-p21-processing.jpg",
++      "bytes": 47100,
++      "sha256": "9201088bb95f9abc6d1c285e18a92c9e9e4704206864e849611e7b6e5600c782",
++      "saved_at_utc": "2026-11-01T00:29:52.809091+00:00",
++      "scope": "Public page21 ending and processing fields; INPUTBATCH endsAugust, following1belongsRPTTEXT01"
++    }
++  ],
++  "mechanical_accounting": {
++    "reported_Bates_range_count": 21,
++    "reported_container_pages": 21,
++    "reported_labels_observed": 21,
++    "source_allocations": [
++      [
++        27,
++        10
++      ],
++      [
++        10,
++        27
++      ]
++    ],
++    "arithmetic_sums": [
++      37,
++      37
++    ],
++    "meaning": "Accounting of supplieddisplayedreadings/capture only, not independent sourceauthenticity, manifest, recordingcompleteness or historicalvalidation"
++  },
++  "quality_checks": "Own tentativehold-speaker anomaly checked against two savedDOMsnapshots and actualrender; no sourcedifference established, notpublished. Majorcaseglyph not adopted. StrictOCRdelimiter probes failed, actualobservedmarkers used; no text rewriting or absence claim. INPUTBATCH/RPTTEXT01 alignedfromimage, noAugust1claim.",
++  "source_reading": "NormalpublicbrowserUI/DOM, sameanalyst; whitespace-rejoinedreadingaid with contactpattern exclusions. No independent/blindedtranscriber, masterPDF/audio/source-facsimile/custody/clock/vendor/physicaltest.",
++  "historical_requirements_closed": 0,
++  "publication_status": "Not asserted here; account/metadata/SSH/API/ref/file evidence recorded separately.",
++  "preservation": "Rawreadertext/JPEGs remain native/Intel only; previoussources/reports/registers/workplan and publichistory unchanged. Newstandalonepublicsupplement.",
++  "previous_official_source_fingerprints_rechecked": [
++    {
++      "url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file",
++      "bytes": 4468234,
++      "sha256": "4760de107bef3c75f4d7629f90f7a70d2c861cb3b53dcbe37a3bf0fb768f93cb",
++      "readback": "MATCH",
++      "scope": "Previouslyheldoriginalintegrityonly, not newreading/historicalvalidation"
++    },
++    {
++      "url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file",
++      "bytes": 1985063,
++      "sha256": "a7d3d872daf33d41c993ade5ccf2e9aa5421ffb1f4cda6164d6bb712372dde41",
++      "readback": "MATCH",
++      "scope": "Previouslyheldoriginalintegrityonly, not newreading/historicalvalidation"
++    }
++  ],
++  "citation_identity_limit": "The inaccessible124.pdfmirror was not acquired or hashed; matchingtitle and contents do not prove byteidentity or originalreleasechain. This publicreader reproduction is a candidate source counterpart."
++}
