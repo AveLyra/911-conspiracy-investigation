@@ -1,0 +1,41 @@
+# Ong-labelled records: a documented CD-to-tape conversion and unresolved transcript differences
+
+November 2, 2026. TEL02/TEL04; AUD016-A1 / TC05-B105 / TC06-B110. The previously unexamined continuations identify recording-generation and engineering-record targets. They do not establish altered audio, an impossible call or a completed source-authentication test.
+
+## What was acquired and read
+
+The [official FBI September release, part 04](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08) was retrieved as an 18-page PDF: **601,286 bytes**, SHA-256 **854bf3408241640a4b5549fba79b7a1f8a9a2639267488b9db3132bd08ac3caf**. The [previous study](https://github.com/AveLyra/911-conspiracy-investigation/blob/abefdac15a5474b2cba2407dc7d0e6bcd58ead59/investigation/broader-evidence/telephone-playback-custody-2026-10-31/README.md) had viewed selected browser images, without acquiring this binary or reading pages 3–16.
+
+This unit visually read pages **1–17**: fourteen previously unread pages, plus three context pages. Page 18's separate playback record was not reread. This is a released reproduction, not native audio or a complete FBI production. [SOURCES.json](SOURCES.json) records the actual acquisition and reading scope; [SOURCE-PINS.json](SOURCE-PINS.json) supplies physical/internal-page, footer and passage locators.
+
+## Two source chains must stay distinct
+
+**First record, physical 1–9, DL-336:** its cover has transcription date **09/12/2001**, but investigation/dictation fields **09/11/2001**. Page 2 opens a retrospective session at **12:28 p.m. Central Time**, asks about the morning and requests playback. Page 3 introduces the playback. After a recording-concluded marker on page 7, questions and recollection continue through page 8. These are different source roles and dates, not a reason to classify the whole report as contemporaneous airborne dialogue. Page 9 has a continuation header/footer with a visually empty body; no cause or missing-content finding follows.
+
+**Second record, physical 10–14, lead controls DL267/CE66:** page 10 explicitly describes material obtained from American Airlines on September 11 and copied **from CD-ROM onto analog audio tape for transcription**. Its transcription/investigation/dictation fields show **09/12/2001**. This supplies a concrete conversion and custody target. It does not supply that CD or tape, file identity, conversion settings, duplication log or fidelity test. The different date fields are retained in their respective roles; neither date authenticates the call clock.
+
+## What the first continuation adds
+
+At physical **7 / internal 7 / footer 000000406**, after playback ends, a question describes another **five or ten minutes** of conversation and receives an affirmative reply. A speaker then reports that communications staff were checking why recording stopped despite the emergency button remaining on. This is an attributed account of an inquiry, not a completed technical explanation or independently measured duration.
+
+The earlier [Charlotte EC review](https://github.com/AveLyra/911-conspiracy-investigation/blob/d5b279a04f2fe18b78548222aea75451bfa7f60a/investigation/broader-evidence/telephone-sero-evidence-inventory-2026-10-31/README.md) preserves a later default-timer explanation, four-minute capture and approximately 25-minute call. Keep those accounts alongside the new passage. They could describe a developing inquiry, but that relationship has not been verified. Do not add the durations, select a controlling total or infer deliberate truncation. The actual engineering findings, effective configuration, audit history and source recordings remain missing.
+
+At physical **8 / footer 000000407**, an interviewer assumes a cellular phone; the reply says the speaker did not know and had not determined it. The question is not evidence of service type. The final exchange also requests **two statements by fax** and receives a promise. The statements, fax transmission and recipient receipt remain concrete original-record targets; a promise is not delivery.
+
+## Selected conflicting transcript readings
+
+| Potentially corresponding passage | DL-336 record | DL267/CE66 transcription |
+| --- | --- | --- |
+| Injury description after the number-one reference | Physical 5 / footer 000000404: **our passenger is stabbed** | Physical 12 / footer 000000459: **our purser has been stabbed** |
+
+These are the printed words, not independently heard speech. The reviewed records contain other dialogue and attribution differences; this is **not an exhaustive textual collation** or a sample-aligned audio comparison. Neither wording is selected or silently corrected. Copy generation, source coverage and transcription choices are untested alternatives to an underlying content change. Source media and segment mappings would distinguish them.
+
+The second transcript also prints **Flight 12** near its opening and later **Flight 11** responses (physical 11–13). Keep the surrounding dialogue; an initial statement or speaker label is not independent aircraft identification. Physical 15–17 begin a separate report and are not an extension of this transcript.
+
+## Evidentiary limits and next work
+
+The useful advance is an item-level map to the **CD, analog rerecording, recorded interview/playback session, engineering check and promised statements**. It narrows TEL02's retrieval chain. The strongest competing interpretation is ordinary copying/transcription and an evolving technical inquiry. Neither that account nor fabrication is established by these paper records. Related transcripts and an inventory must not be counted as independent authentication of the call.
+
+No listening, voice identification, native waveform comparison, carrier join, calibrated clock test or full cross-version collation was performed. The previously tested court audio representations remain preserved with their own limits; no master-to-court join is newly demonstrated. [TODOs](OPEN-TODOS.md) retain those originals and all five tracks/eighteen substantive requirements. None is newly accepted by acquiring and reading a scan.
+
+Prior reports and conflicting records remain unchanged. [Checklist](CHECKLIST.md), [source checks](VERIFICATION.json) and [addition diff](REVISION.diff) accompany this redundant public note. Raw scans/images/text/audio, contacts, signatures, masked identities, private case material and correspondence are excluded. No outreach, new request, fee, filing, mailbox access, deletion, overwrite, private push or history rewrite occurred.
