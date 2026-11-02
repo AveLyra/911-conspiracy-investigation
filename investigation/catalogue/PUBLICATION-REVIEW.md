@@ -78,3 +78,15 @@ All18 original criteria remain open/partial. Bounded nonacquisition is not globa
 |Revision/publication | TEXT-CHANGES.diff is the exact change against the immediately preceding public commit. Source-owner editorial diffs are separately linked/pinned. All new commits and pushes asAveLyra, with exact remote verification; no mainmerge/privatepush/deletion/source/history rewrite. |
 
 Initial catalogue preflight retained360passes/two failed literal assertions: summary-only wording was searched in the detailed-note scope. Both underlying meanings were already present. The two assertions now target the exact detailed wording; no source/content/acceptance change. Initial checker/helper/output are privately preserved. This is a catalogue-check repair, not a historical discrepancy.
+
+## November 2 record-request priority supplement
+
+| Requested point | Reviewed outcome and limit |
+| --- | --- |
+| Document all discussed leads | Six RP-L leads map to four RR packages in the linked supplement and JSON: recording cutoff/conversion, transcript wording, routing, disclosed editing, FAA copying/delivery, and ASCE dates. |
+| Prioritize useful retrieval | FBI and FAA Boston high, NARA hearing sources medium, ASCE correspondence low. Priority measures potential to discriminate explanations, not likelihood of wrongdoing. |
+| Preserve evidence and contrary findings | Four published report and four TODO bodies checked by exact GitHub bytes and source-commit attribution. Original investigations control their readings; no new listening, primary-page authentication or native test claimed. Ordinary copying/transcription, different batches/call phases, disclosed presentation editing and header/assembly alternatives remain. |
+| Preserve open tests | Actual media, engineering/copying/custody records, transcript/source joins, routing/clock records, manifests, original edits and letter versions/receipts remain TODOs. All packages are proposed and unsent; no new fees or agency submission. |
+| Correct access routes and overlap | Legislative Commission archival access is distinguished from FOIA; private-only company records require another route. Existing request scope is preserved. Exact saved overlap sources and personal/request/correspondence details remain private; no full older-request or fresh mailbox/status audit claimed. |
+| Scope and privacy | Only the research supplement, public citation pins/status map, navigation, review, manifest, verifier and exact text diff change. No lawsuit material, private correspondence, raw source media, personal contacts, private locators or credentials copied. Earlier source/failure/method/coverage objects and data remain unchanged. |
+| Revision and verification | Immediate predecessor is catalogue commit60f3d93c90374e2b50147bfb19867aceccb3ba0e. TEXT-CHANGES.diff contains the exact staged Git text diff for the five reader/source-map/review/checker files changed by this supplement, excluding the diff and its containing payload manifest. No PDF/layout work. Actual destination/account/commit/body checks follow the push. |

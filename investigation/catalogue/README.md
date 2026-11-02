@@ -57,6 +57,10 @@ Both court copies are acquired and inspected:336is request/identification materi
 
 The custody-reading suspicion failed verification: both clauses contain not. The FOS contact, proposed lessons log, reported later fax and planned conference are distinct from completed preservation, delivery and implementation. All original substantive criteria and missing-input tests remain open/partial. The later observations qualify earlier dated candidate/null states without rewriting them.
 
+## November 2 supplement — proposed record-request priorities
+
+The [six-lead assessment and four access packages](RECORD-REQUEST-PRIORITIES-2026-11-02.md) prioritize FBI Ong media and FAA Boston copying/delivery records, use NARA archival access for Commission hearing sources, and retain the ASCE date-version question at lower priority. Citations, contrary explanations, overlap controls and original-record TODOs are explicit. All four packages are proposed and unsent. This bounded research supplement does not change the historical catalogue counts or claim a complete reconciliation of later source reports. [Source pins and package/status map](RECORD-REQUEST-PRIORITIES-2026-11-02.json).
+
 ## Reader and source routes
 
 - [Master leads](MASTER-LEADS.md) and [370 source findings](SOURCE-FINDINGS.md).
