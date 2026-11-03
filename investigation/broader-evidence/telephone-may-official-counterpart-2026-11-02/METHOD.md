@@ -1,0 +1,11 @@
+# Method and reading scope
+
+This was a new held-source question, not a repeat of completed provider, tape-pickup or HQ1492 searches. The prospective protocol selected the existing official September parts 01/02/08 navigation indexes and five public name/date/footer patterns. A name hit on official part 02 page 73 led to image reading. No external query or new download was needed.
+
+Six unique full faces were inspected: official 72–76 at 140 dpi, and reused mirror 71 at 140 dpi. Official 76 was an unrelated-record stop boundary; no body content was adopted or published, and page 77 was not read. Additional views of already-selected faces did not expand this scope. The old footer census, September response 70–71 and mirror 70/72/73 assessments remain reused results, not fresh body readings.
+
+Original source and selected-raster hashes were checked against saved receipts. Rendering receipts describe creation-time status; the additive reading-adoption receipt records actual inspection. There was no new OCR, suppressed-text recovery, identity reconstruction, audio processing, carrier-clock test or native-note examination. Exact footer/date misses alongside a visible matching page demonstrate an ordinary-text navigation limitation. They are not an agency absence test.
+
+The report and observations are a selected manual transcription/paraphrase. verify.py checks bundle integrity, source bytes when paths are supplied, and reproducibility of the five-pattern lookup against the exact saved indexes. It does not independently read image text or prove the interview/call/voice, source completeness, redaction history, custody or disposition. BUNDLE-HASHES excludes itself and the generated verification result to avoid a self-hash cycle; remote publication verification checks every file, including those two.
+
+Different dates remain attached to their different field roles and source entities. The June family interview cannot authenticate or repair a different workplace report's year. Existing documents and sources are preserved; a zero-context Git diff appends this report to the immediately preceding combined review. No prior publication is overwritten. Personal/contact/personnel identifiers, excluded biographies, raw images/PDFs, masked fields and unrelated-record content stay outside this derivative.
