@@ -1,0 +1,74 @@
+# AA77 carrier printouts: event stages, zero fields and the limits of call counts
+
+November2,2026, America/New_York. TEL01/TEL03/TEL04; AUD016-A1 / TC05-B105 / TC06-B110. **New comparison of an already-held reproduced record span; no new download, native carrier database, authenticated conversation or complete release.**
+
+The available Flight77 section contains **23 source-annotated records with eight different printed Start Time labels**. Of these,18print zero in the Duration field and5print positive numbers. In **four accepted CSC-identifier groups**, a routed-to-operator record has zero while a later disconnect record with the same printed identifier has a positive Duration. One group includes handoff-started/completed records as well. This makes it unsafe to count each zero record as a separate failed conversation, or each printed record as a separate call. It does **not** establish the real number of conversations, their callers, their recipients or what happened in the disputed named zero-duration entry.
+
+## Source, actual reading and new-versus-reused work
+
+The [public Request14 reader](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record) supplied28hosted JPEG entities on October27,2026. This unit reads **reader11–24**, Bates **M-WFA-00000632–645**, fax labels034–047, as reproduced images. All14preserved entity lengths and SHA-256 values match their acquisition pins. [Every image's exact URL/access date/hash](SOURCES.json).
+
+The [earlier enclosure review](https://github.com/AveLyra/911-conspiracy-investigation/blob/ad7be60185f5d3a49f0e0b7564f4da3610afaf92/investigation/broader-evidence/telephone-carrier-enclosures-2026-10-27/README.md) had read selected fields and all page-accounting labels. Its C05 already documented158-versus146anchor arithmetic. The [earlier selected-event comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/cd950cd141582ab562ad74e17be6231077a2cc4c/investigation/broader-evidence/telephone-event-joins-2026-10-27/README.md) tested fiveblocks on15/16/20/21 and exact CSC/GS pairs for two groups. Those are reused findings, not new discoveries here. The new work is the **whole available Flight77 span's record/continuation accounting, accepted CSC-only grouping, broader phase patterns and explicit annotation map**. The completed UA93/UA175 table work and court-label analysis are not repeated as new evidence.
+
+All14whole page images were inspected, plus local nearest-neighbor key/field detail sheets. Enlargement adds no source detail; no OCR or new automated transcription was run. The upper fragment on11 precedes the Flight77 heading and is **excluded**, not silently assigned to that flight. Several records continue across pages; the final fragment on24 continues record23, not an extra event. Source circled1–23labels are useful locators, **not authenticated native unique record IDs**. Their author and insertion date remain unknown. [23record operational readings](OBSERVATIONS.json) · [Computed results](RESULT.json) · [Method and reading limits](METHOD.md).
+
+## 1. Quantities in the held span
+
+| Quantity | Result | Meaning and limit |
+|---|---:|---|
+|Source-annotated record headers under the Flight77 heading |23 |Not23people, calls or conversations; page continuations excluded from extra counting. |
+|Distinct printed Start Time strings |8 |Not independent clock calibration or eight authenticated calls. Source order includes07:14:57 before07:12:18. |
+|Accepted complete CSC readings / distinct CSC values |22records /7values |One first-record repeated-digit/length reading remains unaccepted. No claim of eight accepted full identifier groups. |
+|Full GS strings independently accepted for this census |0 |GS fields were inspected but uncertain separators/final glyphs were not filled; no new full CSC+GS equality claim. Earlier selected pair tests remain separate. |
+|Zero / positive Duration fields |18 /5 |Field values, not failure/success findings about conversations. |
+|Event-type codes represented |6 |Menu selection25:9; routing29:4; air disconnect4:7; ground disconnect3:1; handoff started1:1; handoff completed2:1. |
+
+Raw CSC values, GS reading details, contact/card/phone fields and images are excluded from publication. Public K01–K07 labels are **our derived aliases**, not carrier IDs or caller identities. The first unaccepted CSC record is retained separately; it is not matched to another row using its clock. Equal printed identifiers strengthen a printout association but do not prove installed identifier allocation/reuse rules, actual physical call identity, a unique end-to-end leg or a complete export.
+
+## 2. Four groups contain zero routing records and positive disconnect records
+
+|Our alias / printed start |Source-annotated records and reader pages |Printed event-code sequence |Duration fields in that source order |
+|---|---|---|---|
+|K03 /07:15:34 |4–7; reader13–15, Bates634–636 |menu25,menu25,routed29,air disconnect4 |0,0,0,102 |
+|K05 /07:20:15 |10–15; reader16–19, Bates637–640 |menu25,menu25,routed29,handoff1,handoff2,air disconnect4 |0,0,0,0,0,274 |
+|K06 /07:25:48 |16–19; reader19–22, Bates640–643 |menu25,menu25,routed29,air disconnect4 |0,0,0,159 |
+|K07 /07:30:56 |20–23; reader22–24, Bates643–645 |menu25,menu25,routed29,air disconnect4 |0,0,0,260 |
+
+The code groups these records by **individually entered accepted CSC strings**, not by desired start/time matches, circled labels or a group key copied into all rows. Full GS-string equality is not asserted. The K06 selected zero/159pair was already documented; the other three full phase groups and the broader accounting extend that observation. These are related stages in the **same reproduced source**, not four independent witnesses or corroborations of a historical conversation.
+
+For K05, the [handoff-started record13 on reader18](https://html.scribdassets.com/5bafzdomdce6sz3/images/18-f7e10d4c8d.jpg) prints07:24:01 and its [completed continuation14 on reader19](https://html.scribdassets.com/5bafzdomdce6sz3/images/19-1f570a8a28.jpg) prints07:24:06. Both have zero Duration; the later disconnect record15 prints274. Those labels do not establish aircraft position, a measured five-second transfer, the effective radio configuration or what any person heard. They are a concrete target for the actual event/schema/clock and station-mapping records. No timing cause or preferred account is selected.
+
+The07:18:58group K04 remains different: its two held records8–9, [reader15–16](https://html.scribdassets.com/5bafzdomdce6sz3/images/15-d3c94df2c0.jpg), print zero. The early connected-to-office narrative and later court/briefing unconnected label remain alongside it. **Positive fields in other groups do not resolve K04**, identify Barbara Olson or prove which operator/office event the early unnamed narrative describes. The first two source-annotated records are also zero and are not transformed into conversations from their start-to-event spans.
+
+## 3. The printout itself contains scoped explanatory annotations
+
+[Reader13, Bates634, record4](https://html.scribdassets.com/5bafzdomdce6sz3/images/13-ec2683a0f2.jpg) marks the1969billing-start and answer-supervision fields with **“Time is not tracked because OSPS bills”**. [Reader14, Bates635, record6](https://html.scribdassets.com/5bafzdomdce6sz3/images/14-92e4203dc6.jpg) marks the routed-event duration **“Duration is not tracked by AWS”**. The record4annotation also describes an operator-selection path; that remains the annotator's description, not an inspected operator ticket or proof of an actual completed transfer.
+
+These are source-image annotations. They are more specific than a generic possible explanation, but **the annotator, insertion date, installed version and governing authority are unverified**. A fax header naming AT&T Wireless does not authenticate who added every note. Do not promote the annotations into a universal carrier data dictionary, or apply GTE ACIS definitions to this different AT&T/Claircom evidence.
+
+All18zero rows in this span also show the printed1969billing/answer dates. Those literal values remain; we do not replace them with0, an epoch conversion, a true call time or a demonstrated explanation for their presence. The annotations specifically address selected fields/records; they do not establish that every zero, including the07:18:58disconnect, is merely an untracked value.
+
+## 4. Broader arithmetic controls, without reannouncing old discrepancies
+
+The positive Duration values are158,102,274,159and260. In all five, the number equals the difference between the supplied printed event and billing-start clocks. In four it also equals the answer-supervision-to-event difference. The [record3 continuation on reader13](https://html.scribdassets.com/5bafzdomdce6sz3/images/13-ec2683a0f2.jpg) is the existing exception:07:13:11billing,07:13:23answer,07:15:49event, Duration158; the answer interval is146. **The12-second anchor distinction was already published as C05**, not newly discovered. The new all-positive accounting supplies controls around it; it does not establish universal duration units, conversation onset or calibrated elapsed time.
+
+The [routed record18 on reader21](https://html.scribdassets.com/5bafzdomdce6sz3/images/21-1a330ff42d.jpg) retains the earlier **07:26:18 /07:26:28** reading uncertainty; no single event time is accepted for that row. It is not converted into a measured negative/positive timing anomaly or silently chosen to make the sequence orderly. Higher-quality source media and effective system definitions remain discriminators.
+
+## Conflicts, contrary evidence and what remains missing
+
+- **159/154seconds:**the reproduced159field remains beside the Commission final-report note57's154; the new grouping does not explain or correct either account. [Final-report notes, printed455](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7).
+- **Connected/unconnected:**the September20,2001report reader43–44/internal1–2 describes an unnamed caller connected to the office; the May2004briefing and court classify the09:18:58entry as unconnected. A unique underlying event/leg join is still missing. [Early report](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s) · [May briefing](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408).
+- **Eight/seven, direct/collect and May6:05Pacific/6:13nozone:**earlier count, recipient and time accounts remain source-specific and unresolved. Eight different start strings here do not adjudicate another report's counting conventions. Keyton's released form, Sept20reader rendering and the May-family released response are held components, not wholly missing categories.
+- **Counterevidence to simplistic interpretations:**multiple printed phase records share accepted CSC values; zero routing/handoff fields coexist with positive disconnect fields. That weakens counting every zero as a separate failed call. Conversely, a positive duration and a named display label do not independently authenticate an actual speaker/conversation. The [staff report physical94note265](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94) expressly leaves conversation-to-unknown-record matching uncertain.
+
+Routine event-stage reporting, transcription/compilation error, version differences, different legs or incorrect attribution are competing possibilities to test; deliberate manipulation is untested. Neither explanation nor motive is inferred from this census. The source printouts, their summaries and exhibit may share inputs and are not independent corroboration.
+
+The full Request14delivery/release/version chain and missing Bates609–631/fax011–033remain open. No contents are inferred for that hosted gap. Native carrier/switch/operator/office records, key-allocation and field/clock rules, annotator/transformation records and source-to-exhibit/caller/recipient joins remain needed. [TODOs](OPEN-TODOS.md) retain all five tracks and18full criteria; this unit closes none by publication or arithmetic.
+
+## Reproduction and preservation
+
+[compare_events.py](compare_events.py) computes counts and groupings from supplied manual readings. Native execution used the local raw-CSC transcription; the public derivative retains only aliases. Controls include an unequal-key pair, a changed key with the same start, reversed input membership and two missing keys that must not be joined. They validate comparison behavior, **not our ability to read each glyph or a historical event**. No blinded second analyst, native export or independent image decoder was used.
+
+`python3 -B verify.py` checks the bundle and safe derived-data reproduction. Optional `--capture-dir` checks original JPEG hashes; optional `--transcriptions` repeats the accepted raw-CSC comparison from locally supplied readings. An independent reviewer should transcribe the original public images first, rather than copying our groups as a second source. [Actual verification](VERIFICATION.json).
+
+Original images/old reports/public history remain unchanged; [REVISION.diff](REVISION.diff) is actual zero-context Git output against the immediately preceding preserved combined review. Initial source-path guesses, premature image views while a producer was still live, and mispositioned reading crops were our process errors, not historical anomalies. The same live process was awaited to terminal success; no failed output was counted as source absence. No raw images/keys/contacts/card data, signatures, private case material, outreach, new request, fee, deletion, overwrite, main merge or history rewrite is part of this public addition.

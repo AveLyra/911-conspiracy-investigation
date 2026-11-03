@@ -1,0 +1,26 @@
+{
+  "utc": "2026-11-03T00:04:19.580938+00:00",
+  "command": "python3 -B verify.py --capture-dir <preserved-JPEG-directory> --transcriptions <local-manual-CSC-readings>",
+  "exit_code": 0,
+  "result": {
+    "bundle_hashes_match": true,
+    "derived_public_readings_reproduce": true,
+    "original_image_hashes_checked": 14,
+    "raw_CSC_transcription_comparison": true,
+    "supplied_transcription_sha256": "1cb00cb3cdbb9178f8f509c0a37e18467efc89e21256290bc0fd31e078473452",
+    "record_count": 23,
+    "accepted_CSC_groups": 7,
+    "unaccepted_CSC_records": [
+      1
+    ],
+    "equality_negative_controls": {
+      "accepted_equal_pair": true,
+      "unequal_pair": true,
+      "changed_key_same_time_not_joined": true,
+      "reversed_input_same_memberships": true,
+      "two_missing_keys_not_joined": true
+    },
+    "scope": "Arithmetic/equality on supplied manual readings and optional source-byte integrity; no independent image transcription, native carrier release, clock calibration, schema authority, caller/recipient/voice/conversation or historical causal authentication."
+  },
+  "scope": "All14source-byte hashes;localacceptedCSCcomputation and safealiasreproduction on same analyst suppliedreadings,not independent image/clock/native/history authentication."
+}
