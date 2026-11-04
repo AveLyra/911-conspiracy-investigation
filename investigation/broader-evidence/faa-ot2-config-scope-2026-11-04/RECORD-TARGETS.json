@@ -1,0 +1,53 @@
+{
+  "status": "Retrieval/testing targets only; nothing requested or sent",
+  "targets": [
+    {
+      "id": "OT-R01",
+      "source_pins": [
+        "OT-PRESET",
+        "OT-TRANSITION"
+      ],
+      "records": "SEC/ATCpreset rosters and versions; Red Switch FAA directory entries and changes; add/drop/initiation/establishment/termination events and conference/line IDs",
+      "custodian_route": "NMCC/OT2, Red Switch/CWO maintenance, Cables and FAA conference/communications records, as identified in the released account; actual current custodians/retention/possession unverified",
+      "test": "Determine the actual preset/endpoint/conference, notification and connection state. Match by IDs and timebase, not agency-name proximity."
+    },
+    {
+      "id": "OT-R02",
+      "source_pins": [
+        "OT-TRANSITION"
+      ],
+      "records": "FAA/NMCC secure-terminal models/configuration/baud settings and versions, interoperability test results, handshake/fault/repair/incident records and connection segments",
+      "custodian_route": "NMCC communications/maintenance and corresponding FAA endpoint records; no current custodian or surviving record assumed",
+      "test": "Test whether the recorded incompatibility applied to the identified session and whether later correction/configuration change is documented. Negative/inconclusive records retained."
+    },
+    {
+      "id": "OT-R03",
+      "source_pins": [
+        "OT-COVER"
+      ],
+      "records": "Original cover and both attachments, authoring/version/approval/distribution/routing/transmission/receipt and recipient records, plus later references from FAA/Commission/OIG files",
+      "custodian_route": "NMCCOT2/JointStaff report file and actual distribution/receipt trail; no named FAA recipient inferred from a military sender line",
+      "test": "Establish what version reached whom and when before attributing knowledge of these specific problems. A dated cover does not prove particular FAA executives received it."
+    },
+    {
+      "id": "OT-R04",
+      "source_pins": [
+        "OT-FAA-PARTICIPATION",
+        "OT-METHOD"
+      ],
+      "records": "Underlying ATC/SEC/NOIWON recordings/logs/notes, chronology row-source/colour/version map, source clock/custody, and actual conference/participant identifiers",
+      "custodian_route": "Existing NMCC source/clock technical owner and original recorder/log keepers; coordination is read-only here",
+      "test": "Separate requests, reported participation and confirmed connection; compare literal sources without silently repairing labels, assigning colours or merging document21 and26."
+    },
+    {
+      "id": "OT-R05",
+      "source_pins": [
+        "OT-CAPTURE"
+      ],
+      "records": "Issued recording/tasking/handoff procedures, configuration/procurement/installation/test/acceptance and follow-up records tied to the actual expressed needs",
+      "custodian_route": "Identified NMCC operational/communications policy and implementation files; separate from later FAA OIG recommendation disposition",
+      "test": "Establish actual action and outcome. A recommendation or statement of need does not prove implementation, absence of an earlier recording or improper destruction."
+    }
+  ],
+  "no_new_authority_to_contact_or_submit": true
+}

@@ -1,0 +1,53 @@
+{
+  "existing_keys": [
+    "B129",
+    "FAA01",
+    "FAA04",
+    "PD01",
+    "PD04",
+    "AUD005",
+    "AUD016"
+  ],
+  "source_reuse": "NR150",
+  "claims": [
+    {
+      "id": "OT01",
+      "source_pin": "OT-PRESET",
+      "observed_source_account": "No FAA in Preset Conf; no Red Switch FAA number available; direction to add FAA after the conference comes up",
+      "limits": "Specific conference/preset account, not absence of all FAA information or proof of deliberate exclusion. Original configuration and connection records not examined."
+    },
+    {
+      "id": "OT02",
+      "source_pin": "OT-TRANSITION",
+      "observed_source_account": "SEC-to-ATC transition; services dropped due to preset configuration; unable to keep FAA in a secure conference due to STU-Ill baud rates",
+      "limits": "Keep service-drop and FAA-compatibility clauses distinct. These are attributed mechanisms, not independently reproduced faults or a reconciliation of all testimony."
+    },
+    {
+      "id": "OT03",
+      "source_pin": "OT-FAA-PARTICIPATION",
+      "observed_source_account": "FAA passed flight-authorization requests into the national-level conference",
+      "limits": "Retain beside the no-FAA-preset and secure-connection account; no same-channel, same-session, common-clock or successful-call join established. No first/last contact inferred."
+    },
+    {
+      "id": "OT04",
+      "source_pin": "OT-COVER",
+      "observed_source_account": "NMCC/Joint Staff heading, OT-2from/subject text, two attachment references and Deputy Director of Operations line; literal date4-Oct-0 l",
+      "limits": "Cover date/role/attachments are not native creation metadata, signature authentication, proof of an addressee, FAA circulation or any executive knowledge. Final date glyph needs native-face check; no recipient reconstructed."
+    },
+    {
+      "id": "OT05",
+      "source_pin": "OT-METHOD",
+      "observed_source_account": "Integrated chronology describes a compilation, paraphrased ATCcomments and accuracy within a matter of minutes",
+      "limits": "Scope is this packet attachment; no chosen numerical error bar and no automatic transfer to separate NARAdocument21. Individual row colour/source assignments unverified."
+    },
+    {
+      "id": "OT06",
+      "source_pin": "OT-CAPTURE",
+      "observed_source_account": "Need to capture conference taskings/assignments/responses; insufficient phone/work space and phone management",
+      "limits": "Expressed need/account, not evidence a specific recorder or policy was later installed or that all previous recordings were absent."
+    }
+  ],
+  "adopted_historical_cause_or_intent": false,
+  "configuration_test_performed": false,
+  "source_conference_identity_join": false
+}
