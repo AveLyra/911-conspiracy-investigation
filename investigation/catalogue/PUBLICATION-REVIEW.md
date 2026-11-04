@@ -90,3 +90,18 @@ Initial catalogue preflight retained360passes/two failed literal assertions: sum
 | Correct access routes and overlap | Legislative Commission archival access is distinguished from FOIA; private-only company records require another route. Existing request scope is preserved. Exact saved overlap sources and personal/request/correspondence details remain private; no full older-request or fresh mailbox/status audit claimed. |
 | Scope and privacy | Only the research supplement, public citation pins/status map, navigation, review, manifest, verifier and exact text diff change. No lawsuit material, private correspondence, raw source media, personal contacts, private locators or credentials copied. Earlier source/failure/method/coverage objects and data remain unchanged. |
 | Revision and verification | Immediate predecessor is catalogue commit60f3d93c90374e2b50147bfb19867aceccb3ba0e. TEXT-CHANGES.diff contains the exact staged Git text diff for the five reader/source-map/review/checker files changed by this supplement, excluding the diff and its containing payload manifest. No PDF/layout work. Actual destination/account/commit/body checks follow the push. |
+
+## November 4 current-master publication checklist
+
+| Requested point | Outcome / verification boundary |
+| --- | --- |
+| Updated master and findings | 481 stable finding IDs, including all111 additions; original M001–M175 and earlier370 normalized objects retained unchanged. |
+| Additional report context | All65 later research bodies retained with public citation routes; report-version index accounts for1,085representations/677bodies without publishing private origin inventories. |
+| Evidence discipline | Supporting/contrary findings, failed checks, corrected suspicions, source dependence, exact missing records and original tests remain. Source and causal acceptance are unchanged. |
+| Privacy | Research-only projection; no private case material, correspondence, requester contacts, filesystem paths, raw chat/attachment inventories, credentials or private execution/status records. Private originals and earlier editions remain preserved. |
+| Request-proposal corrections | Historical proposal retained with an explicit status qualification. Current private receipt/status data is excluded; no request, fee or outreach performed. |
+| Revision accountability | TEXT-CHANGES.diff compares the reader, normalized-data and verification text with the immediately preceding public commit named in PUBLICATION.json. The diff and its containing hash manifest are excluded from their own diff; Git retains their exact changes. |
+| Identity and destination | Commit author/committer and authenticated push must be AveLyra to AveLyra/911-conspiracy-investigation. Actual commit/ref/body checks are recorded privately after execution. No published history is rewritten. |
+| Checks and limits | Existing public verifier plus current exact-ID, whole-body, additive-preservation, link, inventory and privacy checks. Passing structural checks are not independent primary-source or historical validation. No PDF/layout work. |
+
+Actual export verification: **2,228 checks passed, zero failures, zero broken reader links and zero privacy-pattern matches**. All65 added report bodies match their owning source prose independently of rewritten link destinations. These are preservation/publication checks; primary and causal validation remain unperformed by this export.

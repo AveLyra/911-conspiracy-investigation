@@ -1,3 +1,12 @@
+<!-- BEGIN CURRENT PUBLIC RECONCILIATION 2026-11-04 -->
+# Investigation catalogue — current public edition, November 4, 2026
+
+The updated master and annotations now cover **481 findings (111 additions)** and **65 additional complete report bodies**, through November4 at11:56a.m.EST. [Open the current guide](CURRENT-RECONCILIATION-2026-11-04.md) or [master list](MASTER-LEADS.md).
+
+Earlier compilation counts and request-proposal labels below are preserved as dated history. Private case/correspondence status is excluded from this research publication. Evidence limits, contrary findings, failed checks and open tests remain attached to each lead.
+
+<!-- END CURRENT PUBLIC RECONCILIATION 2026-11-04 -->
+
 # Investigation catalogue — public research edition
 
 October 31, 2026. This edition publishes the maintained catalogue through the59B/346/642 review and three recent SOCC updates, including all fifteen later source findings and the steel minute-approval qualification. It is a research publication derived from a broader private working catalogue; it does not establish a collapse cause, conspiracy conclusion or completion percentage.

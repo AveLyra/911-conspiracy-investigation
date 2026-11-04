@@ -1,3 +1,10 @@
+<!-- BEGIN CURRENT PUBLIC RECONCILIATION 2026-11-04 -->
+# Historical request-priority proposal — status qualification November 4
+
+The November2 proposal below is preserved as research history. Its proposed/unsent labels are not current execution status. Current receipt and correspondence records are excluded from this public research edition. This publication performs no submission, fee authorization or outreach.
+
+<!-- END CURRENT PUBLIC RECONCILIATION 2026-11-04 -->
+
 # Record-request priorities: Ong recordings, FAA Boston, hearing edits and ASCE correspondence
 
 November 2, 2026. **Research recommendations; proposed and unsent.** This assessment organizes six documentary leads into four access packages. It does not submit a request, authorize fees, amend an existing request or establish misconduct. Priority reflects the potential to resolve a specific uncertainty, not a probability of conspiracy.

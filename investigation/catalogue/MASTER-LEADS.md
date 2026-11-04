@@ -1,3 +1,10 @@
+<!-- BEGIN CURRENT PUBLIC RECONCILIATION 2026-11-04 -->
+# Master leads — November 4, 2026
+
+The original M001–M175 entries are preserved. The appended navigation adds all **111 later findings** and **65 qualified report bodies**. The source-finding register now contains **481 overlapping research records**. [Current scope and evidence limits](CURRENT-RECONCILIATION-2026-11-04.md).
+
+<!-- END CURRENT PUBLIC RECONCILIATION 2026-11-04 -->
+
 # Model, materials and extended master leads
 This is a source-backed research catalogue, compiled October 29, 2026. The evaluation chat began September 2, 2026. Coverage is against the frozen registers listed in PUBLICATION.json; it is not a claim to have replayed every historical chat turn or independently checked every primary source.
 
@@ -1841,3 +1848,200 @@ Independent PCM inspection verifies15.0 seconds of all-zero16kHz mono16-bit inpu
 **Next record/test:** Before any future transcription use a changed, predeclared local protocol with positive/negative controls, independent human listening and replication; require native lineage and independent clock anchors for time claims.
 
 **Citations:** [pinned entry M175](CITATIONS.md#local-74a7b0476073a2df); [www.governmentattic.org — DRM1_DAT2_Channel_2_MCC_Op.zip](https://www.governmentattic.org/docs/DRM1_DAT2_Channel_2_MCC_Op.zip)
+
+
+<!-- BEGIN MASTER RECONCILIATION 2026-11-04 -->
+
+## November 4 additions to the master navigation
+
+The original M001–M175 namespace remains intact. The source-finding IDs below are their own stable namespace, not newly invented M numbers. All 481 current source-finding objects are annotated in [SOURCE-FINDINGS.md](SOURCE-FINDINGS.md); these 111 are the additions since the preceding catalogue. Corrections and unresolved record tests remain included.
+
+| Source ID | Readable lead / source-review topic | Full context and next tests |
+| --- | --- | --- |
+| SF024 | thin extraction omitted substantive November follow-up records | [Annotated finding](SOURCE-FINDINGS.md#sf024) |
+| SF025 | the September analysis was already held; its underlying inputs still matter | [Annotated finding](SOURCE-FINDINGS.md#sf025) |
+| SF026 | April analysis identified; the advertised timeline remains a separate target | [Annotated finding](SOURCE-FINDINGS.md#sf026) |
+| SF027 | date matches did not recover the requested originals | [Annotated finding](SOURCE-FINDINGS.md#sf027) |
+| SF028 | a concrete Coos-papers lead and discretionary follow-up | [Annotated finding](SOURCE-FINDINGS.md#sf028) |
+| PL030 | preliminary operational claims, money and acknowledged disagreement | [Annotated finding](SOURCE-FINDINGS.md#pl030) |
+| OPT07 | a primary price lead, and a test of what daily aggregates cannot tell us | [Annotated finding](SOURCE-FINDINGS.md#opt07) |
+| NR074 | reproduced 2002 requests behind the access-limitation account | [Annotated finding](SOURCE-FINDINGS.md#nr074) |
+| NR075 | a contemporaneous request to resolve CIA–NSC access scope | [Annotated finding](SOURCE-FINDINGS.md#nr075) |
+| NR076 | a provisional Commission-side receipt claim for Hadley's answers | [Annotated finding](SOURCE-FINDINGS.md#nr076) |
+| NR077 | scope limits in three held cover-letter reproductions | [Annotated finding](SOURCE-FINDINGS.md#nr077) |
+| NR078 | visual qualification of the July 7 cover letters | [Annotated finding](SOURCE-FINDINGS.md#nr078) |
+| NR079 | agency completion claims versus staff tracking states | [Annotated finding](SOURCE-FINDINGS.md#nr079) |
+| NR080 | FBI manual production lead and tracking-quality qualification | [Annotated finding](SOURCE-FINDINGS.md#nr080) |
+| NR081 | recipient-side filing claim and an outgoing item-coded response | [Annotated finding](SOURCE-FINDINGS.md#nr081) |
+| NR082 | CIA monthly-update scope change: proposal, caveats and execution gap | [Annotated finding](SOURCE-FINDINGS.md#nr082) |
+| NR083 | DoD response matching, summary records and consciously limited searches | [Annotated finding](SOURCE-FINDINGS.md#nr083) |
+| NR084 | renewed DoD searches and a narrower military-report interpretation | [Annotated finding](SOURCE-FINDINGS.md#nr084) |
+| NR085 | three indexed interim NORAD report ranges, with duplicate-copy controls | [Annotated finding](SOURCE-FINDINGS.md#nr085) |
+| NR086 | September8follow-up and correction of a recycled clock locator | [Annotated finding](SOURCE-FINDINGS.md#nr086) |
+| NR087 | Request52 dated-cover association — local research | [Annotated finding](SOURCE-FINDINGS.md#nr087) |
+| NR088 | Repeated interagency request and a qualified NOIWON account | [Annotated finding](SOURCE-FINDINGS.md#nr088) |
+| NR089 | Timeline provenance, search limits and conditional timing interpretation | [Annotated finding](SOURCE-FINDINGS.md#nr089) |
+| NR090 | A specific CIA log-bundle target and its archival access limits | [Annotated finding](SOURCE-FINDINGS.md#nr090) |
+| SF029 | Unfinished2005tasks and a qualified2006foreknowledge assessment | [Annotated finding](SOURCE-FINDINGS.md#sf029) |
+| SF030 | Full context of the August 2006 network assessment | [Annotated finding](SOURCE-FINDINGS.md#sf030) |
+| SF031 | London September18-labelled EC: discreet Bayoumi inquiry, identity cautions and administrative clearance | [Annotated finding](SOURCE-FINDINGS.md#sf031) |
+| SF032 | Mueller briefing predecessor and reported UK-to-FBI digital follow-up,2001 | [Annotated finding](SOURCE-FINDINGS.md#sf032) |
+| SF033 | Bayoumi laptop custody trace: reported follow-up, attached returns and other-device attribution controls | [Annotated finding](SOURCE-FINDINGS.md#sf033) |
+| SF034 | Public Bayoumi exhibit routes distinguish alleged letter copies, later video production and laptop custody | [Annotated finding](SOURCE-FINDINGS.md#sf034) |
+| SF035 | UKinterviewer allegation ofselectiveexhibitnonaccess: originalbroadcastreportandcontemporaneouscontrarycontext | [Annotated finding](SOURCE-FINDINGS.md#sf035) |
+| SF036 | David Campbell exhibit-access claim: earlier publication, exact notebook locators and bounded DOJ call-record trace | [Annotated finding](SOURCE-FINDINGS.md#sf036) |
+| SF037 | Notebook reproduction and conditional geometry: exact receipt search yields a dependent public handout, not the original | [Annotated finding](SOURCE-FINDINGS.md#sf037) |
+| SF038 | Notebook explanations and copy locators: witness account, counsel hypothesis and jurisdictional finding separated | [Annotated finding](SOURCE-FINDINGS.md#sf038) |
+| NR091 | January29 congressional classification safeguard request and qualified Goss actor connection | [Annotated finding](SOURCE-FINDINGS.md#nr091) |
+| NR092 | May22Muellerinterimanswer:prepared/oralwordingandrecipientdifferencequalifyblanketnonresponse | [Annotated finding](SOURCE-FINDINGS.md#nr092) |
+| NR093 | June18Mueller/GAOreformcomparison:partialprogress,unfinishedplansandlimitedindependence | [Annotated finding](SOURCE-FINDINGS.md#nr093) |
+| NR094 | GAOstaffingmeasures:allocation,recordedworkyearsandoutcomesdistinguished;conditionalarithmeticnotheadcount | [Annotated finding](SOURCE-FINDINGS.md#nr094) |
+| NR095 | June18 hearing identity and concrete congressional follow-up record targets | [Annotated finding](SOURCE-FINDINGS.md#nr095) |
+| NR096 | Conference adoption of FBI reporting directions; original submissions still unacquired | [Annotated finding](SOURCE-FINDINGS.md#nr096) |
+| NR097 | February12 FBI cover identifies financial-timeline/disc batch; actual payload and receipt unacquired | [Annotated finding](SOURCE-FINDINGS.md#nr097) |
+| NR098 | Request27 labelled-medium image and draft-table reproduction; exact payload/receipt remains unverified | [Annotated finding](SOURCE-FINDINGS.md#nr098) |
+| NR099 | Exhibit156 citation, version limits and call-purpose inference | [Annotated finding](SOURCE-FINDINGS.md#nr099) |
+| NR100 | Official Team4 folder identifiers and unresolved spreadsheet association | [Annotated finding](SOURCE-FINDINGS.md#nr100) |
+| IN011 | Port Authority insurance cash flows: actual accounting reconciliation, owner benefit still unknown | [Annotated finding](SOURCE-FINDINGS.md#in011) |
+| IN012 | Receivable composition does not establish the cash/revenue allocation | [Annotated finding](SOURCE-FINDINGS.md#in012) |
+| IN013 | Identified original-agreement exhibit roots; another rounded183million comparison | [Annotated finding](SOURCE-FINDINGS.md#in013) |
+| CT013 | DOD's planning-order scope defense and GAO's reply | [Annotated finding](SOURCE-FINDINGS.md#ct013) |
+| CT014 | SIGIR planning narrative traced to its cited sources | [Annotated finding](SOURCE-FINDINGS.md#ct014) |
+| CT015 | Bowen's limited-attestation account; SIGIR-05-019 itself remains unacquired | [Annotated finding](SOURCE-FINDINGS.md#ct015) |
+| NR101 | PEOC web photograph: conflicting embedded caption, no calibrated time | [Annotated finding](SOURCE-FINDINGS.md#nr101) |
+| NR102 | NARA photo identifiers recovered; Mineta image has later processing dates | [Annotated finding](SOURCE-FINDINGS.md#nr102) |
+| NR103 | Reno interview: missing handout, corrected premise and promised follow-up | [Annotated finding](SOURCE-FINDINGS.md#nr103) |
+| NR104 | Reno's recalled sharing authority and the published OLC opinion | [Annotated finding](SOURCE-FINDINGS.md#nr104) |
+| NR105 | Actual sharing procedures: duties, restrictions and event limits | [Annotated finding](SOURCE-FINDINGS.md#nr105) |
+| NR106 | Interim measures: approval representation, limited LHM adoption and implementation concerns | [Annotated finding](SOURCE-FINDINGS.md#nr106) |
+| NR107 | Reno's prevention and implementation account, with question-premise limits | [Annotated finding](SOURCE-FINDINGS.md#nr107) |
+| NR108 | PDD document basis: later recollection, formal versus practical roles and a paper-handling allegation | [Annotated finding](SOURCE-FINDINGS.md#nr108) |
+| NR109 | Access assurances, request roles and a bounded editing-recollection check | [Annotated finding](SOURCE-FINDINGS.md#nr109) |
+| NR110 | Announced PDB access terms and the distinction between review and production | [Annotated finding](SOURCE-FINDINGS.md#nr110) |
+| NR111 | PDB review completion claim and separate cooperation disputes | [Annotated finding](SOURCE-FINDINGS.md#nr111) |
+| SF039 | Hotel guest-list return and a separate hotel-folio exhibit route | [Annotated finding](SOURCE-FINDINGS.md#sf039) |
+| SF040 | A distinct hotel return and a qualified pager/lease witness account | [Annotated finding](SOURCE-FINDINGS.md#sf040) |
+| SF041 | A false hotel match and a partially sourced chronology's original-record leads | [Annotated finding](SOURCE-FINDINGS.md#sf041) |
+| SF042 | WFO source trace: September 15 EC and September 26 briefing | [Annotated finding](SOURCE-FINDINGS.md#sf042) |
+| NR112 | CIA partnering and case handoff: qualified institutional context | [Annotated finding](SOURCE-FINDINGS.md#nr112) |
+| NR113 | Joint-asset photo identification: distinct sessions, reporting and receipt | [Annotated finding](SOURCE-FINDINGS.md#nr113) |
+| NR114 | January FBI originals route and a qualified OIG release comparison | [Annotated finding](SOURCE-FINDINGS.md#nr114) |
+| NR115 | Official JICI interview-folder locator; target date and contents unresolved | [Annotated finding](SOURCE-FINDINGS.md#nr115) |
+| NR116 | a precise CIA comments record target; underlying photo-receipt claim untested | [Annotated finding](SOURCE-FINDINGS.md#nr116) |
+| NR117 | preliminary Malaysia account versus later photo/reporting evidence | [Annotated finding](SOURCE-FINDINGS.md#nr117) |
+| NR118 | Black's prepared and oral FBI-access claims | [Annotated finding](SOURCE-FINDINGS.md#nr118) |
+| NR119 | specific visa noncorroboration, uncertain FBI access and a warning follow-up | [Annotated finding](SOURCE-FINDINGS.md#nr119) |
+| NR120 | an actual CIA QFR transmittal, not the Burr aviation answer | [Annotated finding](SOURCE-FINDINGS.md#nr120) |
+| NR121 | October17 Levin exchange: specific claims, admissions and unanswered responsibility | [Annotated finding](SOURCE-FINDINGS.md#nr121) |
+| NR122 | PA06: different published school counts and a specific recipient-message route | [Annotated finding](SOURCE-FINDINGS.md#nr122) |
+| NR123 | PA06: one actual court exhibit supports an inquiry and narrows sender attribution | [Annotated finding](SOURCE-FINDINGS.md#nr123) |
+| NR124 | Non-IC sharing: positive channels, specific omissions and an untested boarding claim | [Annotated finding](SOURCE-FINDINGS.md#nr124) |
+| NR125 | WIP: followed the unused interview-release lead to actual source records | [Annotated finding](SOURCE-FINDINGS.md#nr125) |
+| NR126 | Bush–Cheney memorandum: completed reading and log/timeline trace | [Annotated finding](SOURCE-FINDINGS.md#nr126) |
+| NR127 | Individual input TODOs and continued Gonzales/Commission records pursuit | [Annotated finding](SOURCE-FINDINGS.md#nr127) |
+| NR128 | Commission-side follow-up: June 15 letter and distinct archival routes | [Annotated finding](SOURCE-FINDINGS.md#nr128) |
+| NR129 | CIA HUMINT assessment, customer-source dependence and DUCS preservation route | [Annotated finding](SOURCE-FINDINGS.md#nr129) |
+| NR130 | August 17 diary release and the Commission's reported confirmation — WIP | [Annotated finding](SOURCE-FINDINGS.md#nr130) |
+| NR131 | CIA tape records: cited schedule acquired and compared — WIP | [Annotated finding](SOURCE-FINDINGS.md#nr131) |
+| NR132 | United Defense dividend timing and cash-flow check — WIP | [Annotated finding](SOURCE-FINDINGS.md#nr132) |
+| NR133 | United Defense credit record, IPO route and fee-payment distinction — WIP | [Annotated finding](SOURCE-FINDINGS.md#nr133) |
+| NR134 | Released court copies: August watchlist request and FBI investigation request — WIP | [Annotated finding](SOURCE-FINDINGS.md#nr134) |
+| NR135 | Sanitized-sharing approval and a disputed participation restriction — WIP | [Annotated finding](SOURCE-FINDINGS.md#nr135) |
+| NR136 | New York follow-up lead and the “Mary” testimony substitute — WIP | [Annotated finding](SOURCE-FINDINGS.md#nr136) |
+| NR137 | Senior CIA briefing, assumed onward delivery and deferred court-page review — WIP | [Annotated finding](SOURCE-FINDINGS.md#nr137) |
+| NR138 | CIA tape-copy claim, review-origin tension and surviving chronology — WIP | [Annotated finding](SOURCE-FINDINGS.md#nr138) |
+| NR139 | Actual OIG declaration and limited court-deferral review — WIP | [Annotated finding](SOURCE-FINDINGS.md#nr139) |
+| NR140 | Durham disclosure cases — source review, WIP, local only | [Annotated finding](SOURCE-FINDINGS.md#nr140) |
+| NR141 | Durham interview production — actual first tranche and filed exhibits | [Annotated finding](SOURCE-FINDINGS.md#nr141) |
+| NR142 | Durham congressional access: request, summary offer and actual disclosure limits | [Annotated finding](SOURCE-FINDINGS.md#nr142) |
+| NR143 | Parliamentary extradition inquiries: actual questions, nonanswers and remaining call records | [Annotated finding](SOURCE-FINDINGS.md#nr143) |
+| NR144 | Later interrogation records: actual requests, replies and source-access limits | [Annotated finding](SOURCE-FINDINGS.md#nr144) |
+| NR145 | Bank-exhibit route and cross-examination: access, use and custody dates | [Annotated finding](SOURCE-FINDINGS.md#nr145) |
+| NR146 | A held discovery order identifies record classes; compliance remains unproved | [Annotated finding](SOURCE-FINDINGS.md#nr146) |
+| NR147 | Interview forms, a limited update promise and OIP closure are different records | [Annotated finding](SOURCE-FINDINGS.md#nr147) |
+| NR148 | Separate the older exhibits, later interview report and declination standard | [Annotated finding](SOURCE-FINDINGS.md#nr148) |
+| NR149 | Released NMCC-related chronology: usable source, uncalibrated labels | [Annotated finding](SOURCE-FINDINGS.md#nr149) |
+| NR150 | OT2 identifies compilation limits and specific communication failures | [Annotated finding](SOURCE-FINDINGS.md#nr150) |
+| NR151 | Pass-down and event-log records sharpen message and clock tests | [Annotated finding](SOURCE-FINDINGS.md#nr151) |
+| NR152 | Turki correction, liaison claims and specific original-record leads | [Annotated finding](SOURCE-FINDINGS.md#nr152) |
+| NR153 | Dated public warning account and the records needed to test it | [Annotated finding](SOURCE-FINDINGS.md#nr153) |
+| NR154 | Exact archival routes for the promised charity printouts | [Annotated finding](SOURCE-FINDINGS.md#nr154) |
+| NR155 | Informant work-plan variants and actual July follow-up records | [Annotated finding](SOURCE-FINDINGS.md#nr155) |
+| NR156 | Specific archival locations for the FBI source-paper follow-up | [Annotated finding](SOURCE-FINDINGS.md#nr156) |
+| NR157 | What the work-plan entry counts do and do not establish | [Annotated finding](SOURCE-FINDINGS.md#nr157) |
+
+### Later report-led leads and corrections
+
+These reports add source, telephone, FAA, steel and method detail. Their whole bodies and qualifications are preserved; report counts must not be added to finding counts.
+
+| Source unit | Finding or correction | Preserved evidence, limits and TODOs |
+| --- | --- | --- |
+| `asce-letter-date-facsimiles-2026-11-02` | ASCE letter: conflicting dates confirmed in the reproduced page images | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-c607864b037b456d) |
+| `bh-steel-ratification-minutes-2026-11-03` | Beverly Hills recorded approval of the WTC steel transfer | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-5ee6f88b5be0e359) |
+| `bh-steel-resolution-face-2026-11-03` | Resolution 11-R-12833: signed first page located; certification and exhibits remain unverified | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-bb251068021b76b8) |
+| `faa-a90-certification-worklogs-2026-11-01` | FAA collection certification and reproduction records: what was asked, copied and actually evidenced | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-5c5adacb1d0184a2) |
+| `faa-a90-landline-delivery-2026-11-01` | A90 landline rerecordings: disclosed silence removal, differing time scopes and an index without receipts | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-2f856f7d2721b703) |
+| `faa-a90-original-copy-trail-2026-11-01` | A90 source recordings, rerecordings and a reported reproduction barrier | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-f7f1936acbf50157) |
+| `faa-notification-personnel-originals-2026-11-01` | FAA notification form and personnel statements: what was recorded, and what remains unverified | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-8714d26d40f416b1) |
+| `faa-omic-body-2026-10-31` | Actual FAA Operations Manager dialogue: twelve new page readings | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-f913b44363a21a3b) |
+| `faa-omic-body-completion-2026-10-31` | FAA Operations Manager transcript: remaining body and notification-source leads | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-cd092d9bfcf68aa2) |
+| `faa-personnel-continuation-2026-11-01` | FAA personnel accounts: military contacts, routing and correction instructions | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-f9aab6baa4dcec3a) |
+| `faa-position-log-crosscheck-2026-11-01` | FAA position records: four time matches, distinct labels and unresolved clocks | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-76abaaa5ebacde0c) |
+| `fbi-keyton-acis-originals-2026-10-31` | FBI telephone sources: a reported original diskette, field definitions and the Keyton counterpart | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-ed26c86f9767f929) |
+| `fbi-operator-followup-tape-2026-10-31` | A September 15 follow-up recording and an FBI 1A synopsis pointer | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-f6471a7744b99171) |
+| `fbi-vault-operator-record-2026-10-31` | FBI-hosted operator interview: speech, open connections and indirect contacts | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-137a2a9b52a16fc9) |
+| `five-inconsistency-tests-2026-10-31` | Five inconsistencies: source-role tests and new transcript endpoint checks | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-e02e5cbadac852e1) |
+| `moussaoui-aug22-dissemination-2026-10-31` | August 22 dissemination and investigative leads: exhibit 327 | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-f9ad884615f0b296) |
+| `moussaoui-france-followup-2026-10-31` | August 30 follow-ups: France-option planning, investigative reports and unresolved time labels | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-e3a4a45216933e86) |
+| `neads-alderson-preview-2026-10-31` | Candidate Alderson transcript: a limited version comparison | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-722d82d8f6867d19) |
+| `neads-command-source-notes-2026-10-31` | NEADS command interview notes: transcript omissions, timing verification and information sources | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-987ea25ff1ee40ed) |
+| `neads-mfr-version-crosswalk-2026-10-31` | Six-page NEADS MFR compared with the retained interview notes | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-af56e6e51af941eb) |
+| `neads-omitted-call-candidates-2026-10-31` | The purportedly omitted call: what two candidate copies actually contain | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-5641efa31d50b8c0) |
+| `steel-cooperation-records-2026-11-01` | Port Authority support letter, report use and the missing confirmation | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-f7deb2f5cb7549a4) |
+| `steel-exhibition-records-and-label-2026-11-03` | Steel provenance: exhibition folders and a photographed label | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-9d168a068410648b) |
+| `steel-nysa-flatbed-photo-2026-11-03` | Archival photograph: steel prepared for transport to the State Museum | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-11d35c231f66ce7c) |
+| `steel-nysm-provenance-lead-2026-11-03` | New York State Museum: steel descriptions and an inventory lead | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-6c41b20bd1137595) |
+| `steel-save-marking-followup-2026-11-03` | SAVE markings in collected-steel footage: identifier and retention-record leads | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-49ad307d9813f4aa) |
+| `steel-tape2-3-source-2026-11-03` | A second collected-steel movie: readable marking and unequal frame counters | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-b7b15309f29a0e90) |
+| `telephone-aa77-event-census-2026-11-02` | AA77 carrier printouts: event stages, zero fields and the limits of call counts | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-fb46aa22712dbc1c) |
+| `telephone-answering-system-property-2026-11-02` | An answering-system collection report supplies a concrete property-record target | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-ae2f2071277cb6b4) |
+| `telephone-britton-source-chain-2026-10-31` | Britton telephone evidence: underlying interview, reference dates and search coverage | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-9ca9357fc59c4fd7) |
+| `telephone-first-operator-followup-2026-11-02` | First operator’s 2002 interview: screen-print lead, handoffs and conflicting labels | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-db35489ff539b5bd) |
+| `telephone-hq1492-recording-request-2026-11-02` | HQ1492: an explicit request to obtain the reported Flight 77 message | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-0368da16ae973391) |
+| `telephone-may-family-relays-2026-11-02` | May-family relays: the interview-request chain and preserved source differences | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-19e41c750f30f8e9) |
+| `telephone-may-official-counterpart-2026-11-02` | May interview: first page located in an already-held official release | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-659e757a9dc5e1b4) |
+| `telephone-may-response-qualification-2026-11-02` | May-family response status: a released September 12 record is already held | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-c5c27cdaec790f60) |
+| `telephone-notes-lead-assignment-2026-10-31` | Telephone originals: two note sheets and an operational lead-assignment trail | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-27e08d91225ff52d) |
+| `telephone-official-part03-2026-10-31` | Official telephone-release lead: recording labels and separate reporting channels | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-1752be6522ace761) |
+| `telephone-offline-reading-control-2026-11-02` | Silent-input control failed; court speech was not transcribed | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-7bb21f69292085bd) |
+| `telephone-operator-notes-mfr-2026-10-31` | A later operator interview identifies original notes and qualifies the reported counts | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-a0c82e0e8d10d467) |
+| `telephone-operator-official-counterpart-2026-11-02` | FBI-hosted counterpart preserves the Flight 99 reading and engineering-record lead | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-55f1fc90da422986) |
+| `telephone-pg1012-disregard-2026-10-31` | PG1012: a reported telephone story and an instruction to disregard it | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-e9a3b30e010cabc2) |
+| `telephone-pickup-hq1492-disposition-2026-11-02` | Tape-pickup and HQ1492 follow-up: collection outcomes still open, further May records located | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-848b3c42adf6bff4) |
+| `telephone-pickup-preincident-2026-11-02` | A reported FBI tape pickup and a separate pre-incident message intake | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-ebfc4dae28e69589) |
+| `telephone-playback-custody-2026-10-31` | Telephone-record lead: reported FBI cassette custody and a later playback | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-4d98af31362ca56e) |
+| `telephone-playback-text-comparison-2026-11-02` | Two Ong-labelled transcripts: fuller printed comparison, unresolved audio provenance | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-727382fccfadc025) |
+| `telephone-recipient-message-2026-10-31` | Telephone originals: a recipient interview and an answering-machine lead | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-42745b526bfd4006) |
+| `telephone-recipient-statement-2026-11-02` | Initial call recipient: statement, observation limits and reported restrictions | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-45cc8d533013c3d1) |
+| `telephone-recording-custody-relays-2026-11-02` | A reported cassette handover and two different telephone relay accounts | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-84d9bf49ac5fefae) |
+| `telephone-recording-index-2026-10-31` | A public transcript reproduction supplies a recording item ID and conflicting accounts | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-0b37db336b1a5c98) |
+| `telephone-sero-evidence-inventory-2026-10-31` | Charlotte's SERO evidence inventory identifies original media, statements and copy routes | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-a26cf2f0058df413) |
+| `telephone-signed-notes-continuations-2026-10-31` | An FBI interview continuation identifies signed and dated call notes | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-e0ce31674748d495) |
+| `telephone-sweeney-source-conflicts-2026-11-02` | Sweeney telephone reports: preserve service descriptions, separate clocks and missing recording custody | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-8e36df708b91ae3e) |
+| `telephone-transcript-generation-chain-2026-11-02` | Ong-labelled records: a documented CD-to-tape conversion and unresolved transcript differences | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-40ff313e5bda5b1c) |
+| `telephone-transfer-relay-records-2026-11-02` | Transfer, relay and declared audio editing: source records kept separate | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-ed579d9453f9a597) |
+| `telephone-ua93-court-variants-2026-11-02` | Two UA93 court assets: equal decoded text, different source bytes | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-c3a55b65083d40b9) |
+| `telephone-wf1899-voicemail-access-2026-11-02` | WF1899: a voicemail-access lead with unlocated collection and message identities | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-8f2176657a63cef6) |
+| `telephone-wf334-court-name-2026-11-02` | WF334 name check: a court-presentation candidate, not a verified message | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-6d58b01ca5b5c1a0) |
+| `telephone-wf334-recording-lead-2026-11-02` | WF334: a reported saved-message lead and an unlocated follow-up outcome | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-25a529fdf45379b8) |
+| `telephone-wf334-static-context-2026-11-02` | WF334: static court-animation links clarify the name's presentation context | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-ab23e621a3d48fbe) |
+| `telephone-zero-entry-context-2026-11-02` | Flight77 court exhibit: the zero entry's actual structural context | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-fa03c3f3f844096a) |
+| `faa-nmcc-bridge-scope-2026-11-04` | FAA and NMCC communications records: unresolved bridge and connection joins | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-2067d4599e340e25) |
+| `faa-ot2-config-scope-2026-11-04` | A released NMCC account identifies concrete configuration and circulation records to pursue | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-a2fcc622bf233984) |
+| `faa-role-service-log-2026-11-04` | FAA contact-role and conference entries: service and timing joins remain unresolved | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-681f71d3bb083652) |
+| `steel-fbi-conservation-2026-11-04` | A separate FBI steel artifact and a conservation-record trail | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-691486a847e5aa4e) |
+| `steel-n10-c3b-catalog-2026-11-04` | A specific photograph lead for the filmed N10-C3B marking | [Full qualified report](LATEST-SOURCE-UNITS.md#supplement-f6b3d6eecf727938) |
+
+The [complete report-version inventory](REPORT-INVENTORY-2026-11-04.md) includes earlier/native/public variants without treating repeated versions as independent corroboration.
+
+<!-- END MASTER RECONCILIATION 2026-11-04 -->

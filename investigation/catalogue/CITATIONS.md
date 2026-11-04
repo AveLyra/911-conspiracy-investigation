@@ -1,3 +1,10 @@
+<!-- BEGIN CURRENT PUBLIC RECONCILIATION 2026-11-04 -->
+# Research citation routes — November 4 edition
+
+Earlier citation records are preserved. Added routes disclose unavailable/unpublished originals and distinguish supplied URLs from newly authenticated sources.
+
+<!-- END CURRENT PUBLIC RECONCILIATION 2026-11-04 -->
+
 # Research citation routes and limits
 
 Primary URLs in the normalized records and entries are retained as supplied citation routes. Some annotations also relied on unpublished research inputs. Their original private locations, correspondence, attachment inventories and full transcripts are excluded. The entries below disclose that limit rather than inventing publicly authenticated originals. Each record retains contrary findings and next tests.
@@ -8552,3 +8559,12317 @@ Research citation retained; an unpublished report/input is not distributed or ne
 ## reference-ff759cb8cdd885a7
 
 Research citation retained; an unpublished report/input is not distributed or newly authenticated.
+
+
+<!-- BEGIN RESEARCH CITATIONS 2026-11-04 -->
+
+## November 4 source routes and explicit limits
+
+<a id="nov04-00eb14775ca272425b59"></a>
+### nov04-00eb14775ca272425b59
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-017d1b29f784370fa76d"></a>
+### nov04-017d1b29f784370fa76d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17)
+
+[Supplied citation 2](https://www.scribd.com/document/14142009/NYC-Box-2-NEADS-Transcript-Rome-NY-Fdr-Transcript-Pgs-1-82-1237-1417)
+
+[Supplied citation 3](https://www.scribd.com/document/14142047/NYC-Box-3-Neads-conr-norad-Fdr-Transcript-Neads-Channel-2-Mcc-Upside-006)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/e7e67b0b3ced08a95400a401448dee6dc4ae3a4e/investigation/broader-evidence/neads-alderson-preview-2026-10-31/README.md)
+
+<a id="nov04-01a2f331a7baf465949d"></a>
+### nov04-01a2f331a7baf465949d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-01ab95c73c58aa7216f1"></a>
+### nov04-01ab95c73c58aa7216f1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-027a4f1444f2760edc5d"></a>
+### nov04-027a4f1444f2760edc5d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-02ab8d888e9d68d50db1"></a>
+### nov04-02ab8d888e9d68d50db1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-02f19dcd1278c25f824d"></a>
+### nov04-02f19dcd1278c25f824d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-03b1b651c79f7f52842f"></a>
+### nov04-03b1b651c79f7f52842f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-045a42c66a2803e3e1f8"></a>
+### nov04-045a42c66a2803e3e1f8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.oredigger61.org/?p=2903)
+
+[Supplied citation 2](https://911files.info/)
+
+<a id="nov04-04b7ea9d8593fe15debf"></a>
+### nov04-04b7ea9d8593fe15debf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-04bf24df1a78027af7db"></a>
+### nov04-04bf24df1a78027af7db
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/926139fc0a26c869387a85030352613b8f0674d7/investigation/broader-evidence/telephone-wf334-court-name-2026-11-02/README.md):)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+[Supplied citation 5](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf#page=50)
+
+[Supplied citation 6](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf#page=243)
+
+<a id="nov04-04c6481222fc1d4f9cd7"></a>
+### nov04-04c6481222fc1d4f9cd7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0511240dd19da625a3d4"></a>
+### nov04-0511240dd19da625a3d4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-05141117e69c2a3e4f8f"></a>
+### nov04-05141117e69c2a3e4f8f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nysm.nysed.gov/about/press/phase-2-world-trade-center-exhibition-opens-feb-1-nys-museum)
+
+[Supplied citation 2](https://nysm.nysed.gov/exhibitions/ongoing/world-trade-center-rescue-recovery-response)
+
+[Supplied citation 3](https://nysm.nysed.gov/research-collections/history/political-history/collections/911)
+
+[Supplied citation 4](https://nysm.nysed.gov/sites/default/files/2024-10/wtc.guide_.pdf)
+
+<a id="nov04-052801c8eeeae4926664"></a>
+### nov04-052801c8eeeae4926664
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-052f27c065872a7b0eef"></a>
+### nov04-052f27c065872a7b0eef
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+<a id="nov04-052fe2a2b7e236b2b13f"></a>
+### nov04-052fe2a2b7e236b2b13f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nysm.nysed.gov/about/press/phase-2-world-trade-center-exhibition-opens-feb-1-nys-museum)
+
+[Supplied citation 2](https://nysm.nysed.gov/exhibitions/ongoing/world-trade-center-rescue-recovery-response)
+
+[Supplied citation 3](https://nysm.nysed.gov/research-collections/history/political-history/collections/911)
+
+[Supplied citation 4](https://nysm.nysed.gov/sites/default/files/2024-10/wtc.guide_.pdf)
+
+<a id="nov04-05a8fa83639b7be9a917"></a>
+### nov04-05a8fa83639b7be9a917
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-658-FAA-Issues-and-Questions-Package.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-586-Email-Final-FAA-Testimony.pdf)
+
+[Supplied citation 3](https://catalog.archives.gov/id/7595603)
+
+<a id="nov04-05a9c1bc541495675e67"></a>
+### nov04-05a9c1bc541495675e67
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://web.archive.org/web/20241030203137id_/https://www.transportation.gov/sites/dot.gov/files/docs/dotorders/DOT8000.1C_Office%20of%20Inspector%20General%20Audit%20and%20Investigation%20Report%20Findings%2C%20Recommendations%2C%20and%20Followup%20Action_20-Jul-89.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/README.md)
+
+[Supplied citation 3](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12)
+
+<a id="nov04-05b9050eaf23be465c77"></a>
+### nov04-05b9050eaf23be465c77
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-05cdbda168e1dd07b77c"></a>
+### nov04-05cdbda168e1dd07b77c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-05d3ad4449ad639da264"></a>
+### nov04-05d3ad4449ad639da264
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/a8b410fc96d29f50f9c134f87acb0822eedc8961/investigation/broader-evidence/telephone-playback-text-comparison-2026-11-02/README.md)
+
+<a id="nov04-06005f1a8216e700a6f3"></a>
+### nov04-06005f1a8216e700a6f3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/16762194/T7-B20-Timelines-911-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version)
+
+[Supplied citation 2](https://catalog.archives.gov/medialive/0/6096/2609600/content/arcmedia/9-11/MFR/t-0148-911MFR-00014.pdf#page=4)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/b4c559927c95180b96870112374910a0af15d65e/investigation/broader-evidence/telephone-socc-log-reader-2026-10-30/README.md)
+
+<a id="nov04-060e789de10b5e43869a"></a>
+### nov04-060e789de10b5e43869a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0675139513d1f1749ba4"></a>
+### nov04-0675139513d1f1749ba4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-067df4af4f9bf7ba0fb5"></a>
+### nov04-067df4af4f9bf7ba0fb5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d148a319c76e579b59dece22395501d66b64463/investigation/broader-evidence/faa-ot2-config-scope-2026-11-04/README.md)
+
+<a id="nov04-06cb9997232f9f0f9550"></a>
+### nov04-06cb9997232f9f0f9550
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-06cc1d34b775839662ab"></a>
+### nov04-06cc1d34b775839662ab
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-06d762df3f3e70123613"></a>
+### nov04-06d762df3f3e70123613
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/MM00651.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution.html)
+
+<a id="nov04-071f94dccd0200a3c9eb"></a>
+### nov04-071f94dccd0200a3c9eb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=18)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=23)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d9d2c9684c29602cf5bb570cbf38c46e09fd50d/investigation/broader-evidence/telephone-first-operator-followup-2026-11-02/README.md)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+<a id="nov04-075f57d642f971251824"></a>
+### nov04-075f57d642f971251824
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0776596625cf5d24a6fe"></a>
+### nov04-0776596625cf5d24a6fe
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0799143605bf320ebd1a"></a>
+### nov04-0799143605bf320ebd1a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 2](https://www.scribd.com/document/19131547/T7-B13-DOJ-Doc-Req-35-13-Packet-6-Fdr-Entire-Contents-FBI-Reports-730)
+
+[Supplied citation 3](https://html.scribdassets.com/3eeag56pc0crfqc/images/84-fded612764.jpg)
+
+[Supplied citation 4](https://html.scribdassets.com/3eeag56pc0crfqc/images/1-8300f8dfc3.jpg)
+
+[Supplied citation 5](https://www.archives.gov/files/research/9-11/finding-aid.pdf)
+
+<a id="nov04-079e8fa22715d9fcc413"></a>
+### nov04-079e8fa22715d9fcc413
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-07add4db31519dea57fe"></a>
+### nov04-07add4db31519dea57fe
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://9-11commission.gov/archive/hearing8/9-11Commission_Hearing_2004-03-24.htm),438,587bytes)
+
+[Supplied citation 2](https://www.9-11commission.gov/staff_statements/staff_statement_10.pdf),168,251bytes)
+
+<a id="nov04-07bf54bf45a896ffdfd5"></a>
+### nov04-07bf54bf45a896ffdfd5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f78618d88ebcbd3e91811e9ba17f6457a6027ef/investigation/broader-evidence/telephone-wf334-static-context-2026-11-02/README.md)
+
+[Supplied citation 4](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s)
+
+[Supplied citation 5](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408)
+
+[Supplied citation 6](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/e451c84f5494eef39539807b9b984bdb2bcd8eec/investigation/broader-evidence/telephone-may-response-qualification-2026-11-02/README.md)
+
+[Supplied citation 9](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+[Supplied citation 10](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf)
+
+<a id="nov04-080f73898c7eadf34724"></a>
+### nov04-080f73898c7eadf34724
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://9-11commission.gov/staff_statements/staff_statement_16.pdf:)
+
+<a id="nov04-081eca3b7028f9924b45"></a>
+### nov04-081eca3b7028f9924b45
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://digitalcollections.iu.edu/concern/archival_materials/q811m8407?locale=en)
+
+[Supplied citation 2](https://digitalcollections.iu.edu/concern/archival_materials/ks65j253p?locale=en)
+
+[Supplied citation 3](https://digitalcollections.iu.edu/concern/archival_materials/4b29bv83x?locale=en)
+
+<a id="nov04-08345d8562b2887bdf07"></a>
+### nov04-08345d8562b2887bdf07
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-084cd8999b0146fb0609"></a>
+### nov04-084cd8999b0146fb0609
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/foia/pra-notifications/pdf/bush43/rn-lpgwb-2022-021.pdf)
+
+<a id="nov04-084d053cdca3c7ceb4c4"></a>
+### nov04-084d053cdca3c7ceb4c4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/13499792/T7-B13-Flight-175-Calls-Fdr-Entire-Contents-Starfix-and-RINC)
+
+[Supplied citation 2](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=90)
+
+[Supplied citation 3](https://html.scribdassets.com/5bafzdomdce6sz3/images/26-6b763d149c.jpg)
+
+<a id="nov04-086020a039435cc18937"></a>
+### nov04-086020a039435cc18937
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://web.archive.org/cdx/search/cdx?url=aa77fdr.com%2Fsource%2FAmerican_77.fdr&output=json&filter=statuscode%3A200&collapse=digest)
+
+[Supplied citation 2](https://web.archive.org/web/20080212182941id_/http://www.aa77fdr.com:80/source/American_77.fdr)
+
+[Supplied citation 3](https://web.archive.org/web/20081121075836id_/http://www.aa77fdr.com/source/American_77.fdr)
+
+<a id="nov04-08b61ab70d5e55a223fa"></a>
+### nov04-08b61ab70d5e55a223fa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0907d0ce6790bc1d5b41"></a>
+### nov04-0907d0ce6790bc1d5b41
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-09526c73e87ca9f44faa"></a>
+### nov04-09526c73e87ca9f44faa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-09745cf14cce1189f012"></a>
+### nov04-09745cf14cce1189f012
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-09a1513055169a328838"></a>
+### nov04-09a1513055169a328838
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-09bc281d8b995ebd1489"></a>
+### nov04-09bc281d8b995ebd1489
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-09c9ca65faeb659f4e25"></a>
+### nov04-09c9ca65faeb659f4e25
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0a02c70628cfc1ddf4a9"></a>
+### nov04-0a02c70628cfc1ddf4a9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0a2378d15aab30702f54"></a>
+### nov04-0a2378d15aab30702f54
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0ab8f70d625b10b638bf"></a>
+### nov04-0ab8f70d625b10b638bf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0ad673b026ff3e6e4e95"></a>
+### nov04-0ad673b026ff3e6e4e95
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/research/9-11/finding-aid.pdf#page=109)
+
+[Supplied citation 2](https://catalog.archives.gov/id/2608461)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2555805)
+
+[Supplied citation 4](https://catalog.archives.gov/search-within/2555805?q=Timelines)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/0ed019eb2c9a36dff0108785eae4069761c22db3/investigation/broader-evidence/telephone-socc-recording-followup-2026-10-30/README.md)
+
+[Supplied citation 6](https://www.scribd.com/document/16762194/T7-B20-Timelines-911-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version)
+
+<a id="nov04-0ae2b7c09316bdeb6802"></a>
+### nov04-0ae2b7c09316bdeb6802
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.flickr.com/photos/wallyg/55558340145/)
+
+<a id="nov04-0b5b7c539d64bb8f3a9b"></a>
+### nov04-0b5b7c539d64bb8f3a9b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0ba70358ef176adaadcd"></a>
+### nov04-0ba70358ef176adaadcd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nsarchive.gwu.edu/sites/default/files/documents/4454519/Document-01-CIA-Office-of-the-Inspector-General.pdf):2,081,498bytes,SHA256`a6b733a7fbeaa890e5836c294ac587cc829b18de5f3e4165f145b84ee4e81123`,82pages)
+
+[Supplied citation 2](https://nsarchive.gwu.edu/document/16545-document-01-cia-office-inspector-general)
+
+<a id="nov04-0bc36405ef2dc4b242ff"></a>
+### nov04-0bc36405ef2dc4b242ff
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/60f3d93c90374e2b50147bfb19867aceccb3ba0e/investigation/catalogue/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/8b787be27fcb665a851a42e318ccc4fd0b6117e9/investigation/broader-evidence/faa-1078-marked-passages-2026-10-30/README.md)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/8bc80894a40ac207b2ccce62a9fdd6d22d4c1139/investigation/broader-evidence/faa-911-special-schedule-2026-10-30/README.md)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/3f50f2c6904eca6a39efa4c06c15ea838729a65d/investigation/broader-evidence/moussaoui-reply-update-2026-10-30/README.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md)
+
+[Supplied citation 11](https://github.com/AveLyra/911-conspiracy-investigation/blob/591ed5873ce7895f47c092f83f244d98efa18154/investigation/broader-evidence/moussaoui-aug22-dissemination-2026-10-31/README.md)
+
+[Supplied citation 12](https://catalog.archives.gov/id/7599161)
+
+[Supplied citation 13](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/c-Transcripts/5-AWA-937-Memorandum-Fill-Transcript-New-York-ARTCC.pdf)
+
+[Supplied citation 14](https://catalog.archives.gov/id/7598367)
+
+[Supplied citation 15](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 16](https://catalog.archives.gov/id/34913873)
+
+[Supplied citation 17](https://catalog.archives.gov/medialive/73/9138/34913873/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-1077-4-Red-Tab-Commision-Request-No--2-and-AAT-20-Response-REDACT-SEALED.pdf)
+
+[Supplied citation 18](https://catalog.archives.gov/id/7596181)
+
+[Supplied citation 19](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf)
+
+[Supplied citation 20](https://catalog.archives.gov/id/7596109)
+
+[Supplied citation 21](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AEA-2579-EMAIL--REF-RECORD-RETENTION-REGARDING-09-11-EVENTS.pdf)
+
+[Supplied citation 22](https://www.oig.dot.gov/sites/default/files/cc2004003.pdf)
+
+[Supplied citation 23](https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0237/n1-237-05-004_sf115.pdf)
+
+[Supplied citation 24](https://www.faa.gov/documentLibrary/media/order/finance/1350-15C/media/chapter5.pdf)
+
+[Supplied citation 25](https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/SOURCE-PINS.json)
+
+[Supplied citation 26](https://www.faa.gov/documentLibrary/media/order/finance/1350-15C/media/chapter6.pdf)
+
+[Supplied citation 27](https://catalog.archives.gov/id/7597271)
+
+[Supplied citation 28](https://catalog.archives.gov/id/7419198)
+
+[Supplied citation 29](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/059B.pdf)
+
+[Supplied citation 30](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/346.pdf)
+
+[Supplied citation 31](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf)
+
+[Supplied citation 32](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/336.pdf)
+
+[Supplied citation 33](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/337.pdf)
+
+[Supplied citation 34](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/326.pdf)
+
+[Supplied citation 35](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/636.pdf)
+
+[Supplied citation 36](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/637.pdf)
+
+[Supplied citation 37](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/639.pdf)
+
+[Supplied citation 38](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf)
+
+[Supplied citation 39](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf)
+
+<a id="nov04-0c04737a17c511a17b7b"></a>
+### nov04-0c04737a17c511a17b7b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0c286cb687c290259f4b"></a>
+### nov04-0c286cb687c290259f4b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0c49fb8d5331dffb4d76"></a>
+### nov04-0c49fb8d5331dffb4d76
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 2](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/75347e9c38e09b5c2037ee9490e6c2c5acf0f799/investigation/broader-evidence/steel-candidate-originals-2026-10-27/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/71b47a3713297a336e56109e9cea805a8547fa3e/investigation/broader-evidence/steel-save-marking-followup-2026-11-03/README.md)
+
+<a id="nov04-0c5184ba34eadb9c98ce"></a>
+### nov04-0c5184ba34eadb9c98ce
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/75347e9c38e09b5c2037ee9490e6c2c5acf0f799/investigation/broader-evidence/steel-candidate-originals-2026-10-27/SOURCE.json)
+
+[Supplied citation 2](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 3](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/75347e9c38e09b5c2037ee9490e6c2c5acf0f799/investigation/broader-evidence/steel-candidate-originals-2026-10-27/README.md)
+
+[Supplied citation 5](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf)
+
+<a id="nov04-0c5da20dbc15b1bf2508"></a>
+### nov04-0c5da20dbc15b1bf2508
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0c7020131885b9643688"></a>
+### nov04-0c7020131885b9643688
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0cac18d5a9f1a3e6f7f2"></a>
+### nov04-0cac18d5a9f1a3e6f7f2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=38)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=41)
+
+<a id="nov04-0cb938c311139cbd1ebd"></a>
+### nov04-0cb938c311139cbd1ebd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 2](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf)
+
+[Supplied citation 3](https://www.cia.gov/stories/story/cia-releases-declassified-documents-related-to-9-11-attacks/)
+
+[Supplied citation 4](https://nara-media-001.s3.amazonaws.com/arcmedia/9-11/MFR/t-0148-911MFR-00724.pdf)
+
+[Supplied citation 5](https://www.archives.gov/research/9-11/commission-memoranda.html)
+
+<a id="nov04-0cefef2e73e30bed85bd"></a>
+### nov04-0cefef2e73e30bed85bd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0cf2255bf862315539f3"></a>
+### nov04-0cf2255bf862315539f3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://digitalcollections.iu.edu/concern/archival_materials/pn89dx584)
+
+<a id="nov04-0d57b78e4cc38bc1a543"></a>
+### nov04-0d57b78e4cc38bc1a543
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=69)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=70)
+
+[Supplied citation 4](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md)
+
+<a id="nov04-0dae742b56d5ea68fd3c"></a>
+### nov04-0dae742b56d5ea68fd3c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0ddcf001d42ec255999a"></a>
+### nov04-0ddcf001d42ec255999a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/s0606/chapter5.htm`)
+
+<a id="nov04-0dec9250e20eaaaec159"></a>
+### nov04-0dec9250e20eaaaec159
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-21.pdf)
+
+[Supplied citation 3](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=9)
+
+[Supplied citation 4](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=10)
+
+<a id="nov04-0e04b7889180c114fb51"></a>
+### nov04-0e04b7889180c114fb51
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/2605267)|CIA)
+
+[Supplied citation 2](https://catalog.archives.gov/id/2605269)|May20,2003)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2605301)|Dana)
+
+[Supplied citation 4](https://catalog.archives.gov/id/2605376)|Tobin—CIA)
+
+[Supplied citation 5](https://catalog.archives.gov/id/2605386)|Late2003)
+
+[Supplied citation 6](https://catalog.archives.gov/id/2605387)|July11,2003)
+
+[Supplied citation 7](https://catalog.archives.gov/id/2605388)|October)
+
+[Supplied citation 8](https://catalog.archives.gov/id/2605419)|DCI)
+
+[Supplied citation 9](https://catalog.archives.gov/id/2605420)|DCI)
+
+[Supplied citation 10](https://catalog.archives.gov/id/2604750)|Certifications)
+
+[Supplied citation 11](https://catalog.archives.gov/id/2604751)|CIA)
+
+[Supplied citation 12](https://catalog.archives.gov/id/2604768)|Document)
+
+[Supplied citation 13](https://catalog.archives.gov/id/2606348)|Document)
+
+[Supplied citation 14](https://catalog.archives.gov/id/2606349)|DCI)
+
+[Supplied citation 15](https://hcgroups.wordpress.com/2009/04/12/miscellaneous-911-commission-documents/)
+
+[Supplied citation 16](https://www.scribd.com/document/15492445/Certifications-of-Completion-and-Compliance-with-9-11-Document-Requests)
+
+<a id="nov04-0e0d731c49bdfb3f33b2"></a>
+### nov04-0e0d731c49bdfb3f33b2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/study-faqs/wtc-7-investigation)
+
+[Supplied citation 2](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9.pdf):)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/5243c055/investigation/wtc7/thermal-transfer-crosswalk/report.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/5243c055/investigation/wtc7/model-member-map/report.md)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/5243c055/investigation/wtc7/thermal-assignment-trace/report.md),63node)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/5243c055/investigation/wtc7/material-run-crosswalk/report.md),19material)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/5243c055/investigation/wtc7/released-file-discrepancy-index/index.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/5243c055/investigation/wtc7/lead-prioritization-2026-10-22/README.md)
+
+<a id="nov04-0e6637fa5ef5d23599ae"></a>
+### nov04-0e6637fa5ef5d23599ae
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.9-11commission.gov/staff_statements/staff_statement_10.pdf)
+
+[Supplied citation 2](https://www.9-11commission.gov/report/911Report_Notes.htm)
+
+[Supplied citation 3](https://oig.justice.gov/sites/default/files/archive/special/s0606/chapter5.htm)
+
+<a id="nov04-0e6674e44ebb30da35b5"></a>
+### nov04-0e6674e44ebb30da35b5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0ebb85025b0a1d53252e"></a>
+### nov04-0ebb85025b0a1d53252e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=30)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/e357f0778da4001ee9ea41d56ce77bae974e862f/investigation/broader-evidence/telephone-signed-notes-continuations-2026-10-31/README.md)
+
+<a id="nov04-0ec681425cd0f1ab384d"></a>
+### nov04-0ec681425cd0f1ab384d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=47)
+
+[Supplied citation 3](https://vault.f)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/9e6b2c93674bfea36f0afc4d0c79c54980796d8f/investigation/broader-evidence/fbi-operator-followup-tape-2026-10-31/README.md)
+
+[Supplied citation 8](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+<a id="nov04-0f05f4903900c6d36be2"></a>
+### nov04-0f05f4903900c6d36be2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0f740b014afd3d5b6840"></a>
+### nov04-0f740b014afd3d5b6840
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0f892c51875915c42ac4"></a>
+### nov04-0f892c51875915c42ac4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0f9d891d227f95f1585b"></a>
+### nov04-0f9d891d227f95f1585b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/abefdac15a5474b2cba2407dc7d0e6bcd58ead59/investigation/broader-evidence/telephone-playback-custody-2026-10-31/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/d5b279a04f2fe18b78548222aea75451bfa7f60a/investigation/broader-evidence/telephone-sero-evidence-inventory-2026-10-31/README.md)
+
+<a id="nov04-0fcd2fc8f0db5f41e45c"></a>
+### nov04-0fcd2fc8f0db5f41e45c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-0fd213897e5edb3dd123"></a>
+### nov04-0fd213897e5edb3dd123
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=149)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=151)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=152)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=154)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=155)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=158)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=159)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=160)
+
+<a id="nov04-0fe63b76b54cf00f818e"></a>
+### nov04-0fe63b76b54cf00f818e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-101847c1a5e15ab6deaa"></a>
+### nov04-101847c1a5e15ab6deaa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf#page=1)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=1)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf#page=1)
+
+[Supplied citation 6](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=2)
+
+<a id="nov04-102566b5447308944b98"></a>
+### nov04-102566b5447308944b98
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1090999e006fb7043614"></a>
+### nov04-1090999e006fb7043614
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/7598367)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/README.md)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/2e38da9806a4b3bc2550d66718831488aea76a6c/investigation/broader-evidence/faa-transcript-policy-crosswalk-2026-10-30/README.md)
+
+[Supplied citation 6](https://libraryonline.erau.edu/online-full-text/books-online/1177.pdf)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md)
+
+<a id="nov04-109a87f505fdedf1e53a"></a>
+### nov04-109a87f505fdedf1e53a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.theguardian.com/world/2003/mar/04/alqaida.terrorism)
+
+<a id="nov04-10ab85ec47f61634e1cb"></a>
+### nov04-10ab85ec47f61634e1cb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-10b4162687bb6d9be3d9"></a>
+### nov04-10b4162687bb6d9be3d9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/2e8a072977f1fd387a2cb9e3e0336e5268a7d895/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/README.md)
+
+[Supplied citation 2](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12)
+
+[Supplied citation 3](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=6)
+
+[Supplied citation 4](https://www.faa.gov/documentLibrary/media/order/finance/1350-15C/media/chapter5.pdf#page=27)
+
+[Supplied citation 5](https://www.faa.gov/documentLibrary/media/Order/FAA_Order_2970.3.pdf#page=3)
+
+[Supplied citation 6](https://www.faa.gov/documentLibrary/media/Order/0000.5E.pdf#page=28)
+
+[Supplied citation 7](https://www.faa.gov/documentLibrary/media/order/finance/1350-15C/media/chapter6.pdf#page=22)
+
+[Supplied citation 8](https://www.nytimes.com/2006/09/02/washington/02faa.html)
+
+[Supplied citation 9](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=20)
+
+[Supplied citation 10](https://www.faa.gov/regulations_policies/orders_notices/index.cfm/go/document.information/documentid/13134)
+
+[Supplied citation 11](https://www.faa.gov/documentLibrary/media/Order/FAA_1350.14B.pdf#page=1)
+
+<a id="nov04-10bdf9daa4c7020f9900"></a>
+### nov04-10bdf9daa4c7020f9900
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=61)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=62)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=3)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=1)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=38)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=41)
+
+<a id="nov04-10cc712152c5d4994dbc"></a>
+### nov04-10cc712152c5d4994dbc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-10d2abebb7c52cf3d783"></a>
+### nov04-10d2abebb7c52cf3d783
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/7fdee56fbc807ef5d7f5eeda85f7ad0b24935a33/investigation/broader-evidence/steel-photo-roots-2026-10-27/README.md)
+
+[Supplied citation 2](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 3](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 4](https://developer.apple.com/documentation/quicktime-file-format/movie_header_atom/creation_time)
+
+[Supplied citation 5](https://developer.apple.com/documentation/quicktime-file-format/track_header_atom/creation_time)
+
+<a id="nov04-11081058bf0f56d19a1b"></a>
+### nov04-11081058bf0f56d19a1b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-112b8d36abb62ee2bdd2"></a>
+### nov04-112b8d36abb62ee2bdd2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-113a2aa5d2d18c8af13f"></a>
+### nov04-113a2aa5d2d18c8af13f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/2fe66dcb3817ed3d37b2594805f950d6cd4854ee/investigation/broader-evidence/faa-bulletin-version-control-2026-10-29/README.md)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7596136)
+
+[Supplied citation 3](https://catalog.archives.gov/id/7597139)
+
+[Supplied citation 4](https://catalog.archives.gov/id/7597905)
+
+[Supplied citation 5](https://catalog.archives.gov/id/7598444)
+
+<a id="nov04-11a20c4d23ab31a25053"></a>
+### nov04-11a20c4d23ab31a25053
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA176)
+
+[Supplied citation 2](https://www.govinfo.gov/content/pkg/USCODE-2000-title15/pdf/USCODE-2000-title15-chap7-sec281a.pdf)
+
+[Supplied citation 3](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA161&output=text)
+
+[Supplied citation 4](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA166&output=text)
+
+[Supplied citation 5](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA171&output=text)
+
+[Supplied citation 6](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA176&output=text)
+
+[Supplied citation 7](https://catalog.archives.gov/id/7595603)
+
+[Supplied citation 8](https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-base.en.bin)
+
+[Supplied citation 9](https://github.com/ggml-org/whisper.cpp)
+
+<a id="nov04-11b57e08bb8ff57c3ee7"></a>
+### nov04-11b57e08bb8ff57c3ee7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-11cdbeb5d57314b38f05"></a>
+### nov04-11cdbeb5d57314b38f05
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-11fafa606d9ed7f1b321"></a>
+### nov04-11fafa606d9ed7f1b321
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1253726e2bb126b5cdf8"></a>
+### nov04-1253726e2bb126b5cdf8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-12727a60cfc18873d0ea"></a>
+### nov04-12727a60cfc18873d0ea
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+<a id="nov04-129ef7e0f744189e81cf"></a>
+### nov04-129ef7e0f744189e81cf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1)
+
+[Supplied citation 2](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=5)
+
+[Supplied citation 3](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=6)
+
+[Supplied citation 4](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=10)
+
+[Supplied citation 5](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=11)
+
+[Supplied citation 6](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11#page=4)
+
+<a id="nov04-12c8b51e436b69e6fea2"></a>
+### nov04-12c8b51e436b69e6fea2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://beverlyhills.org/161/Agreements-Ordinances-Resolutions)
+
+[Supplied citation 2](https://apps.beverlyhills.org/cityclerk/searchagreementsordinancesresolutions/)
+
+[Supplied citation 3](https://apps.beverlyhills.org/cityclerk/searchagreementsordinancesresolutions/web.jsp?SEARCHTYPE=ALL&DOCQUERY=&QUERYTYPE=AND&VENDOR=&NUMBER=11-R-12833&DATE=&TYPE=&action=Search)
+
+[Supplied citation 4](https://aedocs.beverlyhills.org/AppEnhancer/datasources/AX-COBH_City/ISubmitQuery?DocNavBlocked=True&DispMode=11&AppName=CITY-RESOLUTIONS_ORDINANCES_AGREEMENTS&ViewMode=ResultSet&SearchAllRevisions=True&PublicQuery=False&FulltextQuery=&FulltextQueryType=And&FulltextOperation=AND&FulltextThesaurus=False&DATE=09-08-2011&DOC%20TYPE=RESOLUTION&NUMBER%20(ORD%2FAGR%2FRESO)=11-R-12833)
+
+[Supplied citation 5](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11)
+
+[Supplied citation 6](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/4ac0f984339daabcf92b2ffe71c046d0d3d0dff5/investigation/broader-evidence/bh-steel-ratification-minutes-2026-11-03/README.md)
+
+<a id="nov04-12f32b7c8e14e400f815"></a>
+### nov04-12f32b7c8e14e400f815
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1325acd1da256efbe664"></a>
+### nov04-1325acd1da256efbe664
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 2](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf)
+
+[Supplied citation 3](https://www.archives.gov/files/research/9-11/finding-aid.pdf)
+
+<a id="nov04-135ace4cdee239dc6ad9"></a>
+### nov04-135ace4cdee239dc6ad9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-136aa7bd94a6386d5f94"></a>
+### nov04-136aa7bd94a6386d5f94
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-138e7b57f03b6d4c0339"></a>
+### nov04-138e7b57f03b6d4c0339
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1391656049ea73f783b5"></a>
+### nov04-1391656049ea73f783b5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57):)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=58)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=59)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e9ce8fa287fa4410241bc8fba303cefd6476467/investigation/broader-evidence/telephone-wf334-recording-lead-2026-11-02/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f78618d88ebcbd3e91811e9ba17f6457a6027ef/investigation/broader-evidence/telephone-wf334-static-context-2026-11-02/README.md)
+
+<a id="nov04-13e00290f13a7842a30d"></a>
+### nov04-13e00290f13a7842a30d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=9)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view)
+
+[Supplied citation 3](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=99)
+
+[Supplied citation 4](https://www.scribd.com/document/13499803/T7-B13-Flights-Phone-Calls-Fdr-Search-of-FBI-302-Files-for-175-77-and-93)
+
+<a id="nov04-1403e2a001bf38e47656"></a>
+### nov04-1403e2a001bf38e47656
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-26.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/597fb92d0d4da93fba6938452db95500ab74e76f/investigation/broader-evidence/faa-nmcc-bridge-scope-2026-11-04/README.md)
+
+<a id="nov04-14131256b0cc17a028c7"></a>
+### nov04-14131256b0cc17a028c7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1429cd381a2b6820638b"></a>
+### nov04-1429cd381a2b6820638b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/a8b410fc96d29f50f9c134f87acb0822eedc8961/investigation/broader-evidence/telephone-playback-text-comparison-2026-11-02/README.md)
+
+<a id="nov04-1446b3eb0063141f3886"></a>
+### nov04-1446b3eb0063141f3886
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 3](https://www.scribd.com/document/18886438/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-5-11-04-MFR-Lisa-Jefferson-416)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/b6923d4d9c874ab71fe88112f401d5279caaeb95/investigation/broader-evidence/telephone-operator-notes-mfr-2026-10-31/README.md)
+
+<a id="nov04-14a5be189b06cda2a942"></a>
+### nov04-14a5be189b06cda2a942
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-14c4dfc02f8ac6e1a0ca"></a>
+### nov04-14c4dfc02f8ac6e1a0ca
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/12962758/List-of-NTSB-Documents-Provided-to-9-11-Commission)
+
+[Supplied citation 2](https://www.cdc.gov/niosh/docket/review/docket261/pdfs/261goldberg.pdf)
+
+<a id="nov04-14c8d9b88406b154490e"></a>
+### nov04-14c8d9b88406b154490e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/a8b410fc96d29f50f9c134f87acb0822eedc8961/investigation/broader-evidence/telephone-playback-text-comparison-2026-11-02/README.md)
+
+<a id="nov04-14ce229d2559c0582fa9"></a>
+### nov04-14ce229d2559c0582fa9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/176203885)
+
+[Supplied citation 2](https://catalog.archives.gov/id/176203853)
+
+[Supplied citation 3](https://catalog.archives.gov/id/176203793)
+
+<a id="nov04-14e4ccf18bb80325d3eb"></a>
+### nov04-14e4ccf18bb80325d3eb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-14e756572cf25e678559"></a>
+### nov04-14e756572cf25e678559
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=192)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/dcdc9f647130139c60128ae3c131d40955536b34/investigation/broader-evidence/faa-omic-body-completion-2026-10-31/README.md)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=194)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=195)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=196)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=198)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=200)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=201)
+
+[Supplied citation 10](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=202)
+
+[Supplied citation 11](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=203)
+
+[Supplied citation 12](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=204)
+
+<a id="nov04-1502b4c5961d1f0cd5a3"></a>
+### nov04-1502b4c5961d1f0cd5a3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1524fdecbd5f5a698ecd"></a>
+### nov04-1524fdecbd5f5a698ecd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/view)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file):)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=5)
+
+<a id="nov04-15316a6617a3c876fd86"></a>
+### nov04-15316a6617a3c876fd86
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=53)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=60)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=54)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=61)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=62)
+
+[Supplied citation 6](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=34)
+
+[Supplied citation 7](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=31)
+
+[Supplied citation 8](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+<a id="nov04-157bec17de527546c66d"></a>
+### nov04-157bec17de527546c66d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=73)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/README.md)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=71)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=72)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=74)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=75)
+
+[Supplied citation 7](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=73)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/HOLDINGS-CHAIN.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/OBSERVATIONS.json)
+
+<a id="nov04-158e1a7c36a144d92d26"></a>
+### nov04-158e1a7c36a144d92d26
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-16693a779125c35ca918"></a>
+### nov04-16693a779125c35ca918
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-169ef0f6d15dfa802358"></a>
+### nov04-169ef0f6d15dfa802358
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-16bbbedbeec5921d5b00"></a>
+### nov04-16bbbedbeec5921d5b00
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-16d4d7ab6d9b24589f4c"></a>
+### nov04-16d4d7ab6d9b24589f4c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution.html)
+
+<a id="nov04-16e87ff7df32216c7e26"></a>
+### nov04-16e87ff7df32216c7e26
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-16f56a142bde0c7d9505"></a>
+### nov04-16f56a142bde0c7d9505
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-16fe6da42d1fe196ecd9"></a>
+### nov04-16fe6da42d1fe196ecd9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1713f6cc6ce3aec81974"></a>
+### nov04-1713f6cc6ce3aec81974
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-173d3a0c2385674891fe"></a>
+### nov04-173d3a0c2385674891fe
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-174f787a7d05dc27890a"></a>
+### nov04-174f787a7d05dc27890a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1771568d96edd3fa8ed7"></a>
+### nov04-1771568d96edd3fa8ed7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/16762194/T7-B20-Timelines-911-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/490562c7747d26c6fa33a17bc0fe35262a6d5262/investigation/broader-evidence/telephone-socc-nara-locator-2026-10-30/README.md)
+
+<a id="nov04-17e767cd9faf3886aa50"></a>
+### nov04-17e767cd9faf3886aa50
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-17f51b7b2582f537c84d"></a>
+### nov04-17f51b7b2582f537c84d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1869f05c4d1d00e221da"></a>
+### nov04-1869f05c4d1d00e221da
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/tree/1229c07b033394c0e50907a9edf3fe8fc22aec3e/investigation/broader-evidence/ten-claim-audit-2026-10-27)
+
+[Supplied citation 2](https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf)
+
+[Supplied citation 3](https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf#page=1)
+
+[Supplied citation 4](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 5](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf)
+
+<a id="nov04-187ab65f75c848d561ec"></a>
+### nov04-187ab65f75c848d561ec
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 2](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/75347e9c38e09b5c2037ee9490e6c2c5acf0f799/investigation/broader-evidence/steel-candidate-originals-2026-10-27/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/71b47a3713297a336e56109e9cea805a8547fa3e/investigation/broader-evidence/steel-save-marking-followup-2026-11-03/README.md)
+
+<a id="nov04-18c7c1f477bbb4591b32"></a>
+### nov04-18c7c1f477bbb4591b32
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-19219749e0b3299797c3"></a>
+### nov04-19219749e0b3299797c3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://911familiesunited.org/wp-content/uploads/2024/08/NewEvidenceOverview.pdf)
+
+<a id="nov04-193aeb1a559c2c1d6ca9"></a>
+### nov04-193aeb1a559c2c1d6ca9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://web.archive.org/web/20011205031550id_/http://www.seaony.org:80/wtc-112701.htm)
+
+[Supplied citation 2](https://web.archive.org/web/20020608091451id_/http://seaony.org:80/wtc-051002.htm)
+
+[Supplied citation 3](https://www.fema.gov/pdf/library/fema403_apd.pdf#page=1)
+
+<a id="nov04-19a3069f3f7193031f71"></a>
+### nov04-19a3069f3f7193031f71
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-19b2c59e8ec4c42e6217"></a>
+### nov04-19b2c59e8ec4c42e6217
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](http://www.aldeilis.net/fake/124.pdf)
+
+<a id="nov04-19f5f9b3a3365264a956"></a>
+### nov04-19f5f9b3a3365264a956
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1a2afc2c00de2a4a488a"></a>
+### nov04-1a2afc2c00de2a4a488a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf#page=1)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=1)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf#page=1)
+
+[Supplied citation 6](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=2)
+
+<a id="nov04-1a3716f088b07a07a127"></a>
+### nov04-1a3716f088b07a07a127
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1a397144b12ce75a5406"></a>
+### nov04-1a397144b12ce75a5406
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1a3f6edb5e91a3f8c73b"></a>
+### nov04-1a3f6edb5e91a3f8c73b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1a5d52011dda862b424c"></a>
+### nov04-1a5d52011dda862b424c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/59828ff9efa5ee2bf073ebf3796a012b35bdd180/investigation/broader-evidence/faa-personnel-continuation-2026-11-01/README.md)
+
+<a id="nov04-1a6d2428b40c7b485d77"></a>
+### nov04-1a6d2428b40c7b485d77
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1a7093ca8759b5f78a1e"></a>
+### nov04-1a7093ca8759b5f78a1e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1b14060bfa46eb8a0edd"></a>
+### nov04-1b14060bfa46eb8a0edd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/189851483980fff2946921fbaa0d189d70e8ddae/investigation/broader-evidence/telephone-wf1899-voicemail-access-2026-11-02/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f363700f6b7010a7927a4794ba9972f09385dbe/investigation/broader-evidence/telephone-hq1492-recording-request-2026-11-02/README.md)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=52)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=55)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=51)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=56)
+
+<a id="nov04-1b2141e64507e4d3a165"></a>
+### nov04-1b2141e64507e4d3a165
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1b30096375aa39c8f594"></a>
+### nov04-1b30096375aa39c8f594
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1bc841d7efe105612bd0"></a>
+### nov04-1bc841d7efe105612bd0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1c06a9a31188057489f7"></a>
+### nov04-1c06a9a31188057489f7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1c964b277943b6703d93"></a>
+### nov04-1c964b277943b6703d93
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1cae2a7c89330e5de34b"></a>
+### nov04-1cae2a7c89330e5de34b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/CRECB-2003-pt23/html/CRECB-2003-pt23-Pg31466.htm)
+
+<a id="nov04-1cb7d13c9ec704ca0cfc"></a>
+### nov04-1cb7d13c9ec704ca0cfc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/research/9-11/finding-aid.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/id/2538494)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2607398)
+
+[Supplied citation 4](https://catalog.archives.gov/id/2607413)
+
+[Supplied citation 5](https://catalog.archives.gov/search-within/2538494?q=received%20early%20April)
+
+<a id="nov04-1cf7e1355bd872c2fc02"></a>
+### nov04-1cf7e1355bd872c2fc02
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://digitalcollections.archives.nysed.gov/Detail/objects/45414)
+
+[Supplied citation 2](https://digitalcollections.archives.nysed.gov/Detail/collections/6049)
+
+[Supplied citation 3](https://nysm.nysed.gov/about/press/phase-2-world-trade-center-exhibition-opens-feb-1-nys-museum)
+
+[Supplied citation 4](https://nysm.nysed.gov/exhibitions/ongoing/world-trade-center-rescue-recovery-response)
+
+[Supplied citation 5](https://www.flickr.com/photos/wallyg/55558340145/)
+
+[Supplied citation 6](http://iarchives.nysed.gov/xtf/view?docId=ead/findingaids/22533.xml)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/9a89314d28d911789ff815d9f34fcdb787b690ff/investigation/broader-evidence/steel-exhibition-records-and-label-2026-11-03/README.md)
+
+<a id="nov04-1d3fac912a94e9083044"></a>
+### nov04-1d3fac912a94e9083044
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1d6f37d1b83091734c96"></a>
+### nov04-1d6f37d1b83091734c96
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA176)
+
+[Supplied citation 2](https://www.govinfo.gov/content/pkg/USCODE-2000-title15/pdf/USCODE-2000-title15-chap7-sec281a.pdf)
+
+[Supplied citation 3](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA161&output=text)
+
+[Supplied citation 4](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA171&output=text)
+
+<a id="nov04-1d70d7cdbc981c431584"></a>
+### nov04-1d70d7cdbc981c431584
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/7599620)
+
+[Supplied citation 2](https://catalog.archives.gov/id/34911499)
+
+[Supplied citation 3](https://catalog.archives.gov/id/7599635)
+
+[Supplied citation 4](https://catalog.archives.gov/id/7599645)
+
+[Supplied citation 5](https://catalog.archives.gov/id/34911505)
+
+<a id="nov04-1da28d74a35bec1c2e41"></a>
+### nov04-1da28d74a35bec1c2e41
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1db376ea4cde2826c0d0"></a>
+### nov04-1db376ea4cde2826c0d0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1db771afc31f24ac7f63"></a>
+### nov04-1db771afc31f24ac7f63
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/189851483980fff2946921fbaa0d189d70e8ddae/investigation/broader-evidence/telephone-wf1899-voicemail-access-2026-11-02/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f363700f6b7010a7927a4794ba9972f09385dbe/investigation/broader-evidence/telephone-hq1492-recording-request-2026-11-02/README.md)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=52)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=55)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=51)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=56)
+
+<a id="nov04-1ded32c0e45543b954bf"></a>
+### nov04-1ded32c0e45543b954bf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/documentary-crosswalk-2026-10-26/NEXT-RECORDS-v1.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/NEXT-RECORDS.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/commit/838af60393017b74e3fee08bd190bb7a9e8a0f04)
+
+<a id="nov04-1e14dca82928bcfe4662"></a>
+### nov04-1e14dca82928bcfe4662
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1e7a38cd87631371589a"></a>
+### nov04-1e7a38cd87631371589a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.renewnyc.com/attachments/content/pdfs/programmatic_agreement_5704.pdf#page=37)
+
+[Supplied citation 2](https://dspace.njstatelib.org/server/api/core/bitstreams/c960df66-1aba-40cd-9eb0-140585e3be89/content#page=6)
+
+[Supplied citation 3](https://renewnyc.com/attachments/content/pdfs/WTCHistoricResourcesReport_January2011l.pdf#page=5)
+
+[Supplied citation 4](https://www.renewnyc.org/attachments/content/pdfs/WTC_Historic_Resources_Report_January_2012.pdf#page=5)
+
+[Supplied citation 5](https://www.nist.gov/news-events/news/2009/10/convoy-returns-world-trade-center-steel-new-york-city)
+
+<a id="nov04-1e973a261ca8d641e933"></a>
+### nov04-1e973a261ca8d641e933
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1e9854140992af716e94"></a>
+### nov04-1e9854140992af716e94
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9.pdf#page=659)
+
+[Supplied citation 2](https://www.nist.gov/world-trade-center-investigation/study-faqs/wtc-7-investigation)
+
+[Supplied citation 3](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=861610#page=85)
+
+[Supplied citation 4](https://www.loc.gov/preservation/digital/formats/fdd/fdd000629.shtml)
+
+[Supplied citation 5](https://www.mobilefish.com/download/flash/swf_file_format_spec_v9.pdf)
+
+[Supplied citation 6](https://www.govinfo.gov/content/pkg/USCOURTS-caDC-18-05123/pdf/USCOURTS-caDC-18-05123-0.pdf)
+
+[Supplied citation 7](https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_09-cv-02064/pdf/USCOURTS-dcd-1_09-cv-02064-0.pdf)
+
+[Supplied citation 8](https://law.justia.com/cases/federal/district-courts/district-of-columbia/dcdce/1:2019cv01182/206571/20/)
+
+[Supplied citation 9](https://www.law.cornell.edu/uscode/text/15/7306)
+
+<a id="nov04-1e9b9c2e9f3698a2a5e2"></a>
+### nov04-1e9b9c2e9f3698a2a5e2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1ecaf97783adb371bedf"></a>
+### nov04-1ecaf97783adb371bedf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1ecb53ee95b16bbcde1f"></a>
+### nov04-1ecb53ee95b16bbcde1f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1ed27f3115a6dbbec3c1"></a>
+### nov04-1ed27f3115a6dbbec3c1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1edc308cf5262c969384"></a>
+### nov04-1edc308cf5262c969384
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1f1e0f4cf56164ad6031"></a>
+### nov04-1f1e0f4cf56164ad6031
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/CHRG-107jhrg96167/pdf/CHRG-107jhrg96167.pdf)
+
+<a id="nov04-1f2962020059e389a0e5"></a>
+### nov04-1f2962020059e389a0e5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-1f36de47ac309cd69819"></a>
+### nov04-1f36de47ac309cd69819
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/2012-156-doc-1.pdf#page=1)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/2012-156-doc-3.pdf#page=2)
+
+<a id="nov04-1fb1b8be9af6730162f2"></a>
+### nov04-1fb1b8be9af6730162f2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/66330949)
+
+[Supplied citation 2](https://www.georgewbushlibrary.gov/research/topic-guides/presidential-daily-diary)
+
+[Supplied citation 3](https://www.scribd.com/document/16571587/T3-B11-EOP-Produced-Documents-Vol-III-Fdr-11-1-01-Evan-Thomas-Newsweek-Interview-of-Rice-001)
+
+[Supplied citation 4](https://catalog.archives.gov/id/66330951)
+
+<a id="nov04-1ff5ddad160b9c7ff041"></a>
+### nov04-1ff5ddad160b9c7ff041
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/foia/pra-notifications/pdf/cheney/rn-lmrc-2017-014.pdf)
+
+[Supplied citation 2](https://www.archives.gov/files/research/vice-presidential-records/pdfs/2015-0028-s-finding-aid.pdf)
+
+[Supplied citation 3](https://www.archives.gov/files/research/vice-presidential-records/pdfs/2015-0031-f-finding-aid.pdf)
+
+[Supplied citation 4](https://georgewbush-whitehouse.archives.gov/911/911day/02_njs.html)
+
+[Supplied citation 5](https://www.archives.gov/presidential-records/vice-presidential-records/selected-vice-presidential-records/cheney-records)
+
+[Supplied citation 6](https://georgewbush-whitehouse.archives.gov/911/911day/images/3-vp-tv-v1543-34-db-398h.jpg)
+
+<a id="nov04-2009db72114cec7532fa"></a>
+### nov04-2009db72114cec7532fa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-207a5c80d3b3d2c5c5b2"></a>
+### nov04-207a5c80d3b3d2c5c5b2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-20a38db333c918da7e0f"></a>
+### nov04-20a38db333c918da7e0f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/681797a20a39d8c30e367c2220be15a191e3a409/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/README.md)
+
+[Supplied citation 4](https://open-flash.github.io/mirrors/swf-spec-19.pdf):)
+
+<a id="nov04-20ec08b98342f075af4b"></a>
+### nov04-20ec08b98342f075af4b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/3f50f2c6904eca6a39efa4c06c15ea838729a65d/investigation/broader-evidence/moussaoui-reply-update-2026-10-30/README.md)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/336.pdf#page=1)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/337.pdf#page=1)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/326.pdf#page=1):)
+
+[Supplied citation 6](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/636.pdf#page=1):)
+
+[Supplied citation 7](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/637.pdf#page=1):)
+
+[Supplied citation 8](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/639.pdf#page=1):)
+
+<a id="nov04-2131801a83345a14e9e5"></a>
+### nov04-2131801a83345a14e9e5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57):)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=58)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=59)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e9ce8fa287fa4410241bc8fba303cefd6476467/investigation/broader-evidence/telephone-wf334-recording-lead-2026-11-02/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f78618d88ebcbd3e91811e9ba17f6457a6027ef/investigation/broader-evidence/telephone-wf334-static-context-2026-11-02/README.md)
+
+<a id="nov04-2154fc83a34eb0ed5a35"></a>
+### nov04-2154fc83a34eb0ed5a35
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-215ba761f83439bf92f0"></a>
+### nov04-215ba761f83439bf92f0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+<a id="nov04-2192ac0fc151840d3d89"></a>
+### nov04-2192ac0fc151840d3d89
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-219e86ef09f26ba475e4"></a>
+### nov04-219e86ef09f26ba475e4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-21cbbde05d74a6d7f587"></a>
+### nov04-21cbbde05d74a6d7f587
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-21d16c8cdab2da48e6e3"></a>
+### nov04-21d16c8cdab2da48e6e3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/926139fc0a26c869387a85030352613b8f0674d7/investigation/broader-evidence/telephone-wf334-court-name-2026-11-02/README.md):)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+[Supplied citation 5](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf#page=50)
+
+[Supplied citation 6](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf#page=243)
+
+<a id="nov04-21e523d5a1bc7162d775"></a>
+### nov04-21e523d5a1bc7162d775
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=25)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=57)
+
+[Supplied citation 3](https://www.scribd.com/document/18886438/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-5-11-04-MFR-Lisa-Jefferson-416)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/b6923d4d9c874ab71fe88112f401d5279caaeb95/investigation/broader-evidence/telephone-operator-notes-mfr-2026-10-31/README.md)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=21)
+
+<a id="nov04-2208a3a55620f37c83fc"></a>
+### nov04-2208a3a55620f37c83fc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/P200056T.pdf)
+
+[Supplied citation 3](https://www.nps.gov/flni/learn/historyculture/phone-calls-and-seating-chart.htm)
+
+[Supplied citation 4](https://www.9-11commission.gov/report/911Report_Notes.pdf)
+
+[Supplied citation 5](https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf)
+
+[Supplied citation 6](https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf)
+
+[Supplied citation 7](https://www.vaed.uscourts.gov/node/150)
+
+<a id="nov04-221b1865ec99712c4976"></a>
+### nov04-221b1865ec99712c4976
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/74b2133ec389d68dd9906ccf89894442d07b58b7/investigation/broader-evidence/telephone-landscape-review-2026-10-27/README.md)
+
+[Supplied citation 2](https://html.scribdassets.com/5bafzdomdce6sz3/images/25-a00d283656.jpg)
+
+[Supplied citation 3](https://html.scribdassets.com/5bafzdomdce6sz3/images/27-e74aaab25b.jpg)
+
+[Supplied citation 4](https://html.scribdassets.com/5bafzdomdce6sz3/images/28-778a401475.jpg)
+
+<a id="nov04-2224985b0eddc37e862a"></a>
+### nov04-2224985b0eddc37e862a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-222acfca7c0c474ac0c9"></a>
+### nov04-222acfca7c0c474ac0c9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-223487688ea01d5c070b"></a>
+### nov04-223487688ea01d5c070b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-226625e3e62794c3f322"></a>
+### nov04-226625e3e62794c3f322
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-6-release-508.pdf#page=7)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-7-release-508.pdf#page=9)
+
+[Supplied citation 3](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-8-release-508.pdf#page=4)
+
+[Supplied citation 4](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-3-release-508.pdf#page=9)
+
+[Supplied citation 5](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=38)
+
+[Supplied citation 6](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-3-release-508.pdf#page=16)
+
+[Supplied citation 7](https://nsarchive.gwu.edu/sites/default/files/documents/qx7xqj-swjpt/2004-03-19-dci-report-the-rise-of-ubl-and-al.pdf#page=57)
+
+[Supplied citation 8](https://catalog.archives.gov/id/2610327)
+
+<a id="nov04-22cabb7dfc4ad2b19512"></a>
+### nov04-22cabb7dfc4ad2b19512
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://govinfo.library.unt.edu/911/press/pr_2004-02-10.pdf)
+
+[Supplied citation 2](https://govinfo.library.unt.edu/911/press/pr_2004-02-25.pdf)
+
+[Supplied citation 3](https://www.9-11commission.gov/press/index.htm)
+
+[Supplied citation 4](https://www.9-11commission.gov/archive/hearing9/9-11Commission_Hearing_2004-04-08.htm)
+
+<a id="nov04-22d28070483c5891dbfd"></a>
+### nov04-22d28070483c5891dbfd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/CRPT-108hrpt805/html/CRPT-108hrpt805.htm)
+
+<a id="nov04-22d9cbbaf70b6a33c8f3"></a>
+### nov04-22d9cbbaf70b6a33c8f3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/12962758/List-of-NTSB-Documents-Provided-to-9-11-Commission)
+
+[Supplied citation 2](https://www.cdc.gov/niosh/docket/review/docket261/pdfs/261goldberg.pdf)
+
+[Supplied citation 3](https://www.ntsb.gov/about/Documents/AAL77_fdr.pdf#page=4)
+
+<a id="nov04-231287ad3688a79ad189"></a>
+### nov04-231287ad3688a79ad189
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2350e0b52e505c6e817a"></a>
+### nov04-2350e0b52e505c6e817a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-237b32351be318f15e19"></a>
+### nov04-237b32351be318f15e19
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 2](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+<a id="nov04-2380a9005573ba943a38"></a>
+### nov04-2380a9005573ba943a38
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/14094215/T7-B17-FBI-302s-of-Interest-Flight-11-Fdr-Entire-Contents)
+
+<a id="nov04-240df0a5dea4e4269d90"></a>
+### nov04-240df0a5dea4e4269d90
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-242881d685bbbaecec21"></a>
+### nov04-242881d685bbbaecec21
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-248983a7b3ae35136da6"></a>
+### nov04-248983a7b3ae35136da6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-24a1400e2fd8192475c9"></a>
+### nov04-24a1400e2fd8192475c9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-254fd86436f099b4299b"></a>
+### nov04-254fd86436f099b4299b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=30)
+
+[Supplied citation 2](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=9)
+
+[Supplied citation 3](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=10)
+
+[Supplied citation 4](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12)
+
+[Supplied citation 5](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=13)
+
+[Supplied citation 6](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-21.pdf#page=1)
+
+[Supplied citation 7](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-21.pdf#page=2)
+
+[Supplied citation 8](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-21.pdf#page=15)
+
+<a id="nov04-259b448a5b732c954d4b"></a>
+### nov04-259b448a5b732c954d4b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.9-11commission.gov/report/911Report_Ch5.htm)
+
+[Supplied citation 2](https://www.abc.net.au/lateline/archive/articles/2002/09/30/s689774.htm)
+
+[Supplied citation 3](https://www.theguardian.com/world/2003/mar/04/alqaida.terrorism)
+
+[Supplied citation 4](https://www.vaed.uscourts.gov/node/150)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/MM01201.html)
+
+[Supplied citation 6](https://9-11commission.gov/staff_statements/911_TerrFin_App.pdf)
+
+[Supplied citation 7](https://www.mc.mil/Portals/0/pdfs/KSM2/KSM%20II%20%28AE769%28AAA%29%29.pdf)
+
+[Supplied citation 8](https://www.govinfo.gov/content/pkg/CRPT-113srpt288/pdf/CRPT-113srpt288.pdf)
+
+<a id="nov04-25e964d405b18090f98a"></a>
+### nov04-25e964d405b18090f98a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2662b7c0d3e5dd53eb7c"></a>
+### nov04-2662b7c0d3e5dd53eb7c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2672bd4db82cdbce1078"></a>
+### nov04-2672bd4db82cdbce1078
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/search?SearchableText=1A64148)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e75761061f0bfa9148eb98a213aa4a24f1ad123/investigation/broader-evidence/telephone-recording-index-2026-10-31/README.md)
+
+<a id="nov04-268403673fbdc4d62fb8"></a>
+### nov04-268403673fbdc4d62fb8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-269a8ae163cb0dfacc65"></a>
+### nov04-269a8ae163cb0dfacc65
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-inves)
+
+[Supplied citation 2](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 3](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/75347e9c38e09b5c2037ee9490e6c2c5acf0f799/investigation/broader-evidence/steel-candidate-originals-2026-10-27/README.md#sv03--a-directly-visible-preservation-related-marking)
+
+[Supplied citation 5](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/c282a14153df29812b7f365e1ae441329666b4b4/investigation/broader-evidence/steel-nysa-flatbed-photo-2026-11-03/README.md)
+
+<a id="nov04-26b3a40041ebc02501bd"></a>
+### nov04-26b3a40041ebc02501bd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17)
+
+[Supplied citation 2](https://www.scribd.com/document/14142009/NYC-Box-2-NEADS-Transcript-Rome-NY-Fdr-Transcript-Pgs-1-82-1237-1417)
+
+[Supplied citation 3](https://www.scribd.com/document/14142047/NYC-Box-3-Neads-conr-norad-Fdr-Transcript-Neads-Channel-2-Mcc-Upside-006)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/e7e67b0b3ced08a95400a401448dee6dc4ae3a4e/investigation/broader-evidence/neads-alderson-preview-2026-10-31/README.md)
+
+<a id="nov04-26c781e2cec1492b634e"></a>
+### nov04-26c781e2cec1492b634e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-26d190c59710690c5a10"></a>
+### nov04-26d190c59710690c5a10
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-26e25051b641ed4d16c4"></a>
+### nov04-26e25051b641ed4d16c4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1121-MEMORANDUM--FORMAL-ACCIDENT-PACKAGE-REF-ZNY-ARTCC-148-UAL175-CORRECTIONS.pdf)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e846c1ea159fde25e1291c1c5046e70e2e4de80/investigation/broader-evidence/faa-notification-personnel-originals-2026-11-01/README.md)
+
+<a id="nov04-26f6918b79f8c57a9fc0"></a>
+### nov04-26f6918b79f8c57a9fc0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-272a3fec691ac79648db"></a>
+### nov04-272a3fec691ac79648db
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-A90-67-Memo-Certifying-Re-recording.pdf)
+
+[Supplied citation 3](https://catalog.archives.gov/id/7598345)
+
+[Supplied citation 4](https://www.archives.gov/research/foia/faa-finding-aid)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/ce9df2c6e1a6dcb11bf1a31578586d00440508ee/investigation/broader-evidence/faa-position-log-crosscheck-2026-11-01/README.md)
+
+<a id="nov04-2768001d03bd3306b476"></a>
+### nov04-2768001d03bd3306b476
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2777227c6a6d9228b485"></a>
+### nov04-2777227c6a6d9228b485
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://web.archive.org/web/20100524181019id_/http://warrenstutt.com/AAL77CheckHammingCodesAndPageParities/Source/AAL77CheckHammingCodesAndPageParities.zip)
+
+[Supplied citation 2](https://web.archive.org/web/20100524180943id_/http://warrenstutt.com/AAL77CheckHammingCodesAndPageParities/OutputFiles/AAL77%20Hamming%20Codes%20and%20Page%20Parities.zip)
+
+[Supplied citation 3](https://web.archive.org/web/20041226052122id_/http://www.asc.gov.tw:80/author_files/ASC-TRT-99-007.pdf)
+
+<a id="nov04-2788e1682656c044b638"></a>
+### nov04-2788e1682656c044b638
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-279133a083a61a3c4b76"></a>
+### nov04-279133a083a61a3c4b76
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/7596630)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7596481)
+
+[Supplied citation 3](https://catalog.archives.gov/id/7596478)
+
+[Supplied citation 4](https://catalog.archives.gov/id/7595834)
+
+[Supplied citation 5](https://catalog.archives.gov/id/7595835)
+
+[Supplied citation 6](https://catalog.archives.gov/id/7596426)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/ca224c35d97a1aac5d885e8a85bc76fc3d08a037/investigation/broader-evidence/faa-package-version-review-2026-10-27/README.md)
+
+<a id="nov04-27aa3678a11947b69684"></a>
+### nov04-27aa3678a11947b69684
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-27e696fe23f1a7ce34b2"></a>
+### nov04-27e696fe23f1a7ce34b2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nysm.nysed.gov/about/press/phase-2-world-trade-center-exhibition-opens-feb-1-nys-museum)
+
+[Supplied citation 2](https://nysm.nysed.gov/exhibitions/ongoing/world-trade-center-rescue-recovery-response)
+
+[Supplied citation 3](https://nysm.nysed.gov/research-collections/history/political-history/collections/911)
+
+[Supplied citation 4](https://nysm.nysed.gov/sites/default/files/2024-10/wtc.guide_.pdf)
+
+<a id="nov04-27ef9d8e6de5a020d345"></a>
+### nov04-27ef9d8e6de5a020d345
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-288620abb8feda4284e5"></a>
+### nov04-288620abb8feda4284e5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2916435c1e5e963aa709"></a>
+### nov04-2916435c1e5e963aa709
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-291a6a9a0002b853614c"></a>
+### nov04-291a6a9a0002b853614c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-296aaf859d4775d9115b"></a>
+### nov04-296aaf859d4775d9115b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view):)
+
+<a id="nov04-297af008b5ea582d4c9b"></a>
+### nov04-297af008b5ea582d4c9b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=41)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=38)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=11)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=40)
+
+<a id="nov04-29930155bac692ad4cea"></a>
+### nov04-29930155bac692ad4cea
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=73)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/README.md)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=71)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=72)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=74)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=75)
+
+[Supplied citation 7](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=73)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/HOLDINGS-CHAIN.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/OBSERVATIONS.json)
+
+<a id="nov04-29bcb04fc962a1059c8c"></a>
+### nov04-29bcb04fc962a1059c8c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://digitalcollections.archives.nysed.gov/Detail/objects/45414)
+
+[Supplied citation 2](https://digitalcollections.archives.nysed.gov/Detail/collections/6049)
+
+[Supplied citation 3](https://nysm.nysed.gov/about/press/phase-2-world-trade-center-exhibition-opens-feb-1-nys-museum)
+
+[Supplied citation 4](https://nysm.nysed.gov/exhibitions/ongoing/world-trade-center-rescue-recovery-response)
+
+[Supplied citation 5](https://www.flickr.com/photos/wallyg/55558340145/)
+
+[Supplied citation 6](http://iarchives.nysed.gov/xtf/view?docId=ead/findingaids/22533.xml)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/9a89314d28d911789ff815d9f34fcdb787b690ff/investigation/broader-evidence/steel-exhibition-records-and-label-2026-11-03/README.md)
+
+<a id="nov04-29f514cd927ccd716910"></a>
+### nov04-29f514cd927ccd716910
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2a8d36fa28b7aa408adc"></a>
+### nov04-2a8d36fa28b7aa408adc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2af115e33cdb5818afb9"></a>
+### nov04-2af115e33cdb5818afb9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2b2bc87a6af643887aa7"></a>
+### nov04-2b2bc87a6af643887aa7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2b54b49aa1937ef16809"></a>
+### nov04-2b54b49aa1937ef16809
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2b96adf819a214248da6"></a>
+### nov04-2b96adf819a214248da6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2bb9dbb8084bde0b46b8"></a>
+### nov04-2bb9dbb8084bde0b46b8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-03-of-08/view)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/d5b279a04f2fe18b78548222aea75451bfa7f60a/investigation/broader-evidence/telephone-sero-evidence-inventory-2026-10-31/README.md)
+
+<a id="nov04-2bd4b2ba10112661d092"></a>
+### nov04-2bd4b2ba10112661d092
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/2fa15f1300ded3abc19d06a8efe959b6c01afbed/investigation/broader-evidence/steel-transfer-instructions-2026-10-29/README.md):)
+
+[Supplied citation 2](https://edocuments.myclearwater.com/WebLink/edoc/243567/12132010.pdf?dbid=0&repo=Clearwater#page=63)
+
+[Supplied citation 3](https://edocuments.myclearwater.com/WebLink/edoc/244540/01132011.pdf?dbid=0&repo=Clearwater#page=10)
+
+[Supplied citation 4](https://clearwater.granicus.com/MinutesViewer.php?clip_id=1841&view_id=25#page=4)
+
+<a id="nov04-2c3bcf1e77b83287df22"></a>
+### nov04-2c3bcf1e77b83287df22
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2c3fc6c2c23246804ca4"></a>
+### nov04-2c3fc6c2c23246804ca4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2c41678aa423aaba41eb"></a>
+### nov04-2c41678aa423aaba41eb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2c628deb4564128041e6"></a>
+### nov04-2c628deb4564128041e6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2d017b681c5665eac885"></a>
+### nov04-2d017b681c5665eac885
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=47)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/view)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md)
+
+<a id="nov04-2d0727b3c27ded805e29"></a>
+### nov04-2d0727b3c27ded805e29
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=53)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=60)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=61)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=54)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=62)
+
+[Supplied citation 6](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=34)
+
+[Supplied citation 7](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=31)
+
+[Supplied citation 8](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+<a id="nov04-2d38ae39e60b032f539e"></a>
+### nov04-2d38ae39e60b032f539e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/CRPT-110srpt57/pdf/CRPT-110srpt57.pdf)
+
+<a id="nov04-2d82ba7b0c4b55e3b121"></a>
+### nov04-2d82ba7b0c4b55e3b121
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-26.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/597fb92d0d4da93fba6938452db95500ab74e76f/investigation/broader-evidence/faa-nmcc-bridge-scope-2026-11-04/README.md)
+
+<a id="nov04-2ddc3b3ed3d719553c82"></a>
+### nov04-2ddc3b3ed3d719553c82
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2e371d2d1b375af6f9de"></a>
+### nov04-2e371d2d1b375af6f9de
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/633.pdf)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md)
+
+<a id="nov04-2e53bebd6d2e532a80be"></a>
+### nov04-2e53bebd6d2e532a80be
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://digitalcollections.archives.nysed.gov/Detail/objects/45414)
+
+[Supplied citation 2](https://digitalcollections.archives.nysed.gov/Detail/collections/6049)
+
+[Supplied citation 3](https://nysm.nysed.gov/about/press/phase-2-world-trade-center-exhibition-opens-feb-1-nys-museum)
+
+[Supplied citation 4](https://nysm.nysed.gov/exhibitions/ongoing/world-trade-center-rescue-recovery-response)
+
+[Supplied citation 5](https://www.flickr.com/photos/wallyg/55558340145/)
+
+[Supplied citation 6](http://iarchives.nysed.gov/xtf/view?docId=ead/findingaids/22533.xml)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/9a89314d28d911789ff815d9f34fcdb787b690ff/investigation/broader-evidence/steel-exhibition-records-and-label-2026-11-03/README.md)
+
+<a id="nov04-2e6d086ee56dfeaca55b"></a>
+### nov04-2e6d086ee56dfeaca55b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2eb215604e7d093f68e2"></a>
+### nov04-2eb215604e7d093f68e2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/13065681/Data-about-Trading-in-United-and-American-Airlines-Options-before-9-11)
+
+[Supplied citation 2](https://www.scribd.com/doc/13065668/9-11-Commission-Chart-Showing-Call-and-Put-Options-for-United-and-American-Airlines)
+
+[Supplied citation 3](https://www.scribd.com/doc/13065673/E-mail-to-9-11-Commission-regarding-9-11-Insider-Trading-Allegations)
+
+[Supplied citation 4](https://www.scribd.com/document/12992722/SEC-Letter-to-9-11-Commission-about-Foreign-Reports-of-Insider-Trading)
+
+[Supplied citation 5](https://www.scribd.com/doc/13065724/911-Commission-Email-about-Allegations-of-Insider-Trading)
+
+[Supplied citation 6](https://www.scribd.com/doc/13065725/911-Commission-Letter-about-Insider-Trading-Documents-Withheld-by-SEC)
+
+[Supplied citation 7](https://www.scribd.com/document/12992846/SEC-Letter-about-Confidentiality-of-Documents-in-9-11-Insider-Trading-Investigation)
+
+[Supplied citation 8](https://www.scribd.com/doc/13065729/911-Commission-Questions-about-Alleged-911-Insider-Trading)
+
+[Supplied citation 9](https://www.scribd.com/doc/13065730/Withdrawal-Notice-for-9-11-Commission-Interview-about-Insider-Trading)
+
+[Supplied citation 10](https://www.scribd.com/doc/13065732/Withdrawal-Notice-for-9-11-Commission-Document-about-Insider-Trading-Allegations)
+
+[Supplied citation 11](https://www.archives.gov/files/research/9-11/finding-aid.pdf)
+
+[Supplied citation 12](https://hcgroups.wordpress.com/2009/04/12/911-commission-documents-related-to-insider-trading-investigation/)
+
+<a id="nov04-2ed8c5691d608eb2d9a6"></a>
+### nov04-2ed8c5691d608eb2d9a6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f78618d88ebcbd3e91811e9ba17f6457a6027ef/investigation/broader-evidence/telephone-wf334-static-context-2026-11-02/README.md)
+
+[Supplied citation 4](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s)
+
+[Supplied citation 5](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408)
+
+[Supplied citation 6](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/e451c84f5494eef39539807b9b984bdb2bcd8eec/investigation/broader-evidence/telephone-may-response-qualification-2026-11-02/README.md)
+
+[Supplied citation 9](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+[Supplied citation 10](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf)
+
+<a id="nov04-2f062cdbe0bdd7e9802a"></a>
+### nov04-2f062cdbe0bdd7e9802a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2f10714dd05f053db075"></a>
+### nov04-2f10714dd05f053db075
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/ca224c35d97a1aac5d885e8a85bc76fc3d08a037/investigation/broader-evidence/faa-package-version-review-2026-10-27/README.md)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7595603)
+
+<a id="nov04-2fbd8087408d885c2480"></a>
+### nov04-2fbd8087408d885c2480
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nara-media-001.s3.amazonaws.com/arcmedia/9-11/MFR/t-0148-911MFR-00269.pdf)
+
+<a id="nov04-2fc719676e37e34c4269"></a>
+### nov04-2fc719676e37e34c4269
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-2fd552f465de4099e33f"></a>
+### nov04-2fd552f465de4099e33f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3008b15048f8013ad0f0"></a>
+### nov04-3008b15048f8013ad0f0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-30121ab0e9ee0a7da614"></a>
+### nov04-30121ab0e9ee0a7da614
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3018bf8a3bc919a95a39"></a>
+### nov04-3018bf8a3bc919a95a39
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://archives.fbi.gov/archives/news/testimony/progress-report-on-the-reorganization-and-refocus-of-the-fbi)
+
+[Supplied citation 2](https://www.gao.gov/assets/a110066.html)
+
+<a id="nov04-30244baa91b37eb94a38"></a>
+### nov04-30244baa91b37eb94a38
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/el/ncst-advisory-committee-mtg-minutes-june-22-23-2004)
+
+[Supplied citation 2](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3.pdf#page=150)
+
+[Supplied citation 3](https://www.nist.gov/document/june2004analysisofstructuralsteelpdf)
+
+<a id="nov04-309525e60d21d625fbf5"></a>
+### nov04-309525e60d21d625fbf5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-30962834f9bebae53ab9"></a>
+### nov04-30962834f9bebae53ab9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/search?page=1&q=%22MCC%20Upside%22)
+
+<a id="nov04-310f3e31d3ab6357736c"></a>
+### nov04-310f3e31d3ab6357736c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3123b149fc093cd06105"></a>
+### nov04-3123b149fc093cd06105
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3168576047a1aeba744c"></a>
+### nov04-3168576047a1aeba744c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011182.pdf)
+
+<a id="nov04-31a5ee82ba9be2334a1f"></a>
+### nov04-31a5ee82ba9be2334a1f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3256289afc31fa1e6796"></a>
+### nov04-3256289afc31fa1e6796
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f78618d88ebcbd3e91811e9ba17f6457a6027ef/investigation/broader-evidence/telephone-wf334-static-context-2026-11-02/README.md)
+
+[Supplied citation 4](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s)
+
+[Supplied citation 5](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408)
+
+[Supplied citation 6](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/e451c84f5494eef39539807b9b984bdb2bcd8eec/investigation/broader-evidence/telephone-may-response-qualification-2026-11-02/README.md)
+
+[Supplied citation 9](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+[Supplied citation 10](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf)
+
+<a id="nov04-32f17ea340ec7d0a1203"></a>
+### nov04-32f17ea340ec7d0a1203
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 2](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf)
+
+[Supplied citation 3](https://www.archives.gov/files/research/9-11/finding-aid.pdf)
+
+<a id="nov04-32f38e02d9abf7e014c5"></a>
+### nov04-32f38e02d9abf7e014c5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/CHRG-109shrg29761/pdf/CHRG-109shrg29761.pdf`)
+
+<a id="nov04-3320e7375749e1c2df27"></a>
+### nov04-3320e7375749e1c2df27
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-658-FAA-Issues-and-Questions-Package.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-586-Email-Final-FAA-Testimony.pdf)
+
+[Supplied citation 3](https://catalog.archives.gov/id/7595603)
+
+<a id="nov04-333516c6d8c9e8ceb281"></a>
+### nov04-333516c6d8c9e8ceb281
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-349f0c3d1e378afad34a"></a>
+### nov04-349f0c3d1e378afad34a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-05-of-08/view)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/abefdac15a5474b2cba2407dc7d0e6bcd58ead59/investigation/broader-evidence/telephone-playback-custody-2026-10-31/README.md)
+
+<a id="nov04-34b45bd7165e9debb21e"></a>
+### nov04-34b45bd7165e9debb21e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=149)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=151)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=152)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=154)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=155)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=158)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=159)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=160)
+
+<a id="nov04-34c6412ced6e6daa957b"></a>
+### nov04-34c6412ced6e6daa957b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-34f04e468ac22a2a5ac1"></a>
+### nov04-34f04e468ac22a2a5ac1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-35c87c6dfb419d925c43"></a>
+### nov04-35c87c6dfb419d925c43
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/view)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/view)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=45)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=2)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=69)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=48)
+
+[Supplied citation 7](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=51)
+
+[Supplied citation 8](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+[Supplied citation 9](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=70)
+
+<a id="nov04-35cb375e1668547b48e9"></a>
+### nov04-35cb375e1668547b48e9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-35e557546ffcdbb36c90"></a>
+### nov04-35e557546ffcdbb36c90
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-35ec3274ccdc9ba5cdae"></a>
+### nov04-35ec3274ccdc9ba5cdae
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/P200056T.pdf)
+
+[Supplied citation 3](https://www.nps.gov/flni/learn/historyculture/phone-calls-and-seating-chart.htm)
+
+[Supplied citation 4](https://www.9-11commission.gov/report/911Report_Notes.pdf)
+
+[Supplied citation 5](https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf)
+
+[Supplied citation 6](https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf)
+
+[Supplied citation 7](https://www.vaed.uscourts.gov/node/150)
+
+<a id="nov04-3621a2834836310c1a4e"></a>
+### nov04-3621a2834836310c1a4e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://comptroller.nyc.gov/wp-content/uploads/documents/7A02_069.pdf)
+
+[Supplied citation 2](https://comptroller.nyc.gov/wp-content/uploads/documents/7F04_065.pdf)
+
+[Supplied citation 3](https://911records.org/doc/NYC-WTC_000159728)
+
+[Supplied citation 4](https://www.911healthwatch.org/files/Mooklal-AFF.pdf)
+
+[Supplied citation 5](https://www.911healthwatch.org/files/Nduka-AFF.pdf)
+
+[Supplied citation 6](https://www.911healthwatch.org/files/Filed-Exhibit-1.pdf)
+
+<a id="nov04-3680a4069f27536e05dc"></a>
+### nov04-3680a4069f27536e05dc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-36b02689bd586c1e5124"></a>
+### nov04-36b02689bd586c1e5124
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/deb98709a44079e1ad5ddb0b62bc814b6ef30c60/investigation/broader-evidence/socc-record-targets-2026-10-31/README.md)
+
+[Supplied citation 2](https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version#page=27)
+
+[Supplied citation 3](https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version#page=29)
+
+[Supplied citation 4](https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version#page=31)
+
+[Supplied citation 5](https://catalog.archives.gov/id/2608461)
+
+<a id="nov04-36ce5fc7392c864277ee"></a>
+### nov04-36ce5fc7392c864277ee
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/7419198)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/8bc80894a40ac207b2ccce62a9fdd6d22d4c1139/investigation/broader-evidence/faa-911-special-schedule-2026-10-30/README.md)
+
+[Supplied citation 3](https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0237/n1-237-05-004_sf115.pdf#page=1)
+
+[Supplied citation 4](https://catalog.archives.gov/id/7604277)
+
+<a id="nov04-374338a7d2ce22b7b70b"></a>
+### nov04-374338a7d2ce22b7b70b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/0b3d8f1448b9b7b78252e1a9c211a2599854d2af/investigation/broader-evidence/moussaoui-pending-link-requests-2026-10-29/README.md)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/326.pdf#page=1)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/639.pdf#page=1)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/636.pdf#page=1)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/637.pdf#page=1)
+
+[Supplied citation 6](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/939.pdf#page=1)
+
+<a id="nov04-378fc68b6ea2afcbc339"></a>
+### nov04-378fc68b6ea2afcbc339
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-37cd83386629495f16e0"></a>
+### nov04-37cd83386629495f16e0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf)
+
+[Supplied citation 2](https://9-11commission.gov/archive/hearing7/9-11Commission_Hearing_2004-01-26.htm)
+
+<a id="nov04-37fb544234fac41a5857"></a>
+### nov04-37fb544234fac41a5857
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/9c1438f5fb3b9098513db5bad9c5a13f6bb127ea/investigation/broader-evidence/faa-omic-body-2026-10-31/README.md)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7598367)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+<a id="nov04-380b70c08270789e7303"></a>
+### nov04-380b70c08270789e7303
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/88831b1b5436958547c9399306ff3c60ad8e1baf/investigation/broader-evidence/steel-attribution-roots-2026-10-27/README.md)
+
+[Supplied citation 2](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 3](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=92)
+
+[Supplied citation 5](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf)
+
+<a id="nov04-380bf0eb3081d2130927"></a>
+### nov04-380bf0eb3081d2130927
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-385c00bc7b37b5e01932"></a>
+### nov04-385c00bc7b37b5e01932
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-388b01aab96d9ff372aa"></a>
+### nov04-388b01aab96d9ff372aa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-38ad439c85222d44f2dc"></a>
+### nov04-38ad439c85222d44f2dc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/926139fc0a26c869387a85030352613b8f0674d7/investigation/broader-evidence/telephone-wf334-court-name-2026-11-02/README.md):)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+[Supplied citation 5](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf#page=50)
+
+[Supplied citation 6](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf#page=243)
+
+<a id="nov04-3913867368df629a9f4b"></a>
+### nov04-3913867368df629a9f4b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/s0606/chapter5.htm)
+
+[Supplied citation 2](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+<a id="nov04-393d2d3f7854257d3942"></a>
+### nov04-393d2d3f7854257d3942
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.loc.gov/pictures/collection/hh/item/ny2014.photos.362115p/)
+
+[Supplied citation 2](https://www.loc.gov/pictures/collection/hh/item/ny2396.photos.387822p/)
+
+[Supplied citation 3](https://www.loc.gov/pictures/collection/hh/item/ny2014.photos.362113p/)
+
+[Supplied citation 4](https://www.loc.gov/pictures/collection/hh/item/ny2396.photos.387817p/)
+
+<a id="nov04-39a9eb11e2590412b4d5"></a>
+### nov04-39a9eb11e2590412b4d5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.fbi.gov/history/artifacts/911-world-trade-center-steel-beam)
+
+[Supplied citation 2](https://www.911memorial.org/visit/museum/collection/conservation)
+
+[Supplied citation 3](https://911memorial.org/911-faqs)
+
+<a id="nov04-39c0bd033005620b36ca"></a>
+### nov04-39c0bd033005620b36ca
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-39ee99f9bc6c2023abc0"></a>
+### nov04-39ee99f9bc6c2023abc0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/legacy/special/0509/final.pdf)
+
+<a id="nov04-3a070af3535939445b89"></a>
+### nov04-3a070af3535939445b89
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3a2ad68d5cbf465932bd"></a>
+### nov04-3a2ad68d5cbf465932bd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file)
+
+<a id="nov04-3a2bc378c6d6219b1089"></a>
+### nov04-3a2bc378c6d6219b1089
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/SOURCES.json)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L7)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L34)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L54)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L76)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L109)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L122)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L146)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L169)
+
+[Supplied citation 11](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L199)
+
+[Supplied citation 12](https://github.com/AveLyra/911-conspiracy-investigation/blob/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2/investigation/broader-evidence/bank-phone-records-2026-10-26/RECORD.md#L227)
+
+<a id="nov04-3b138c76d7d38d2c576b"></a>
+### nov04-3b138c76d7d38d2c576b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3b458bb2d19fe3a49134"></a>
+### nov04-3b458bb2d19fe3a49134
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3b4e471096c5d4615164"></a>
+### nov04-3b4e471096c5d4615164
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3b612229334a8779b99f"></a>
+### nov04-3b612229334a8779b99f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3ba5a9eb6ecd8ac831c4"></a>
+### nov04-3ba5a9eb6ecd8ac831c4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.faa.gov/sites/faa.gov/files/about/plans_reports/archive/Combined_FY_2006_FAA_PAR_Final_v6_12-14-2006.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/f3a71187146eec653eab636f1e24cd1df25f4c4e/investigation/broader-evidence/faa-directive-crosswalk-2026-10-29/README.md)
+
+<a id="nov04-3c009e0e189e11b3f253"></a>
+### nov04-3c009e0e189e11b3f253
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3c0505d4285b5ea8d52f"></a>
+### nov04-3c0505d4285b5ea8d52f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=47)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md)
+
+<a id="nov04-3c0e8858702dbf8b64a3"></a>
+### nov04-3c0e8858702dbf8b64a3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3c1d12af9469c9c7b822"></a>
+### nov04-3c1d12af9469c9c7b822
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3c5800826f1fe9301e93"></a>
+### nov04-3c5800826f1fe9301e93
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA163)
+
+[Supplied citation 2](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA164)
+
+[Supplied citation 3](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA165)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/e0e2c12fb5363eaf15f6ea2be2e4679d6afa79e4/investigation/broader-evidence/steel-cooperation-records-2026-11-01/OPEN-RECORDS.md)
+
+<a id="nov04-3ca4db9da6cb9a41bbd3"></a>
+### nov04-3ca4db9da6cb9a41bbd3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3cda1046d2f115038d65"></a>
+### nov04-3cda1046d2f115038d65
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3cdd3c169e2feb424309"></a>
+### nov04-3cdd3c169e2feb424309
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3d24b76bbea6fd95abc1"></a>
+### nov04-3d24b76bbea6fd95abc1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3d2ebec104868603487e"></a>
+### nov04-3d2ebec104868603487e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3d372f2cb6c243796a12"></a>
+### nov04-3d372f2cb6c243796a12
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3d90cba0b9f0a13b914e"></a>
+### nov04-3d90cba0b9f0a13b914e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=70)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=71)
+
+<a id="nov04-3daa51c1f38698bb8084"></a>
+### nov04-3daa51c1f38698bb8084
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3db1e3f7dd04f0c59b86"></a>
+### nov04-3db1e3f7dd04f0c59b86
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/CHRG-107jhrg96166/pdf/CHRG-107jhrg96166.pdf)
+
+<a id="nov04-3db7b4726453b89f4f74"></a>
+### nov04-3db7b4726453b89f4f74
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3e25994d1842383d4ae7"></a>
+### nov04-3e25994d1842383d4ae7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3e721690a1e3cd56f925"></a>
+### nov04-3e721690a1e3cd56f925
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3eac2f18555de732932a"></a>
+### nov04-3eac2f18555de732932a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=4)
+
+[Supplied citation 2](https://govinfo.library.unt.edu/911/archive/hearing7/9-11Commission_Hearing_2004-01-27.pdf#page=106)
+
+[Supplied citation 3](https://govinfo.library.unt.edu/911/archive/hearing7/9-11Commission_Hearing_2004-01-27.pdf#page=109)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/17aef02c7d79169234dc04c4a67f38425900ea30/investigation/broader-evidence/telephone-transcript-generation-chain-2026-11-02/README.md)
+
+<a id="nov04-3ebbc9cc17670e7a62b9"></a>
+### nov04-3ebbc9cc17670e7a62b9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/5c2a489db46eb230900d41b05f1710497e636965/investigation/broader-evidence/telephone-recording-custody-relays-2026-11-02/README.md)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+<a id="nov04-3ed588626cc63482a4bc"></a>
+### nov04-3ed588626cc63482a4bc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9a.pdf#page=160)
+
+[Supplied citation 2](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9.pdf#page=659)
+
+[Supplied citation 3](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9a.pdf#page=156)
+
+<a id="nov04-3edd314c44e80a9929a1"></a>
+### nov04-3edd314c44e80a9929a1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1124-MEMO--FORMAL-ACCIDENT-PACKAGE-REF-ZNY-ARTCC-148-UAL175-ON-CORRECTION-FEB-5-2002.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7598362)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1122-EMAIL--FORMAL-ACCIDENT-PACKAGE-REF-ZNY-ARTCC-148-UAL175-ON-CORRECTIONS-REDACT-SEALED.pdf)
+
+[Supplied citation 4](https://catalog.archives.gov/id/7598360)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/191c27f34284bdbbf006db5bb2b41071125f19d7/investigation/broader-evidence/faa-omic-memorandum-2026-10-30/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md)
+
+[Supplied citation 8](https://catalog.archives.gov/id/7598359)
+
+[Supplied citation 9](https://catalog.archives.gov/id/7598361)
+
+<a id="nov04-3ee97fe3c16ebe3ae165"></a>
+### nov04-3ee97fe3c16ebe3ae165
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3eeed6ebafa04593f43a"></a>
+### nov04-3eeed6ebafa04593f43a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/view)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/view)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=45)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=2)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=69)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=48)
+
+[Supplied citation 7](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=51)
+
+[Supplied citation 8](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+[Supplied citation 9](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=70)
+
+<a id="nov04-3ef442a616e1911e6b43"></a>
+### nov04-3ef442a616e1911e6b43
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3f4cf28a77a654deab7e"></a>
+### nov04-3f4cf28a77a654deab7e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3f82af3ea52105b58ff3"></a>
+### nov04-3f82af3ea52105b58ff3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-3fb5a6417d2424b5d3b9"></a>
+### nov04-3fb5a6417d2424b5d3b9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/16762194/T7-B20-Timelines-911-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/490562c7747d26c6fa33a17bc0fe35262a6d5262/investigation/broader-evidence/telephone-socc-nara-locator-2026-10-30/README.md)
+
+<a id="nov04-3fe2add7f2908ba91865"></a>
+### nov04-3fe2add7f2908ba91865
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://web.archive.org/cdx/search/cdx?url=aa77fdr.com%2Fsource%2F%2A&output=json&filter=statuscode%3A200&collapse=urlkey&limit=1000&fl=timestamp%2Coriginal%2Cmimetype%2Cstatuscode%2Cdigest%2Clength)
+
+[Supplied citation 2](https://web.archive.org/web/20080212044303id_/http://www.aa77fdr.com:80/source/AA77_ParamsTabular.txt)
+
+[Supplied citation 3](https://www.ntsb.gov/about/Documents/AAL77_fdr.pdf#page=4)
+
+<a id="nov04-4003e0b7a2b679630425"></a>
+### nov04-4003e0b7a2b679630425
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/17aef02c7d79169234dc04c4a67f38425900ea30/investigation/broader-evidence/telephone-transcript-generation-chain-2026-11-02/README.md)
+
+<a id="nov04-40bf511c5b1a82ab4d83"></a>
+### nov04-40bf511c5b1a82ab4d83
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-40cf9351349e4554523c"></a>
+### nov04-40cf9351349e4554523c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/view)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/view)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=45)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=2)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=69)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=48)
+
+[Supplied citation 7](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=51)
+
+[Supplied citation 8](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+[Supplied citation 9](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=70)
+
+<a id="nov04-40edc45cc6c8fb07591a"></a>
+### nov04-40edc45cc6c8fb07591a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-40f671d5edd6c05f06ca"></a>
+### nov04-40f671d5edd6c05f06ca
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/13065681/Data-about-Trading-in-United-and-American-Airlines-Options-before-9-11)
+
+[Supplied citation 2](https://www.scribd.com/doc/13065668/9-11-Commission-Chart-Showing-Call-and-Put-Options-for-United-and-American-Airlines)
+
+[Supplied citation 3](https://www.scribd.com/doc/13065673/E-mail-to-9-11-Commission-regarding-9-11-Insider-Trading-Allegations)
+
+[Supplied citation 4](https://www.scribd.com/document/12992722/SEC-Letter-to-9-11-Commission-about-Foreign-Reports-of-Insider-Trading)
+
+[Supplied citation 5](https://www.scribd.com/doc/13065724/911-Commission-Email-about-Allegations-of-Insider-Trading)
+
+[Supplied citation 6](https://www.scribd.com/doc/13065725/911-Commission-Letter-about-Insider-Trading-Documents-Withheld-by-SEC)
+
+[Supplied citation 7](https://www.scribd.com/document/12992846/SEC-Letter-about-Confidentiality-of-Documents-in-9-11-Insider-Trading-Investigation)
+
+[Supplied citation 8](https://www.scribd.com/doc/13065729/911-Commission-Questions-about-Alleged-911-Insider-Trading)
+
+[Supplied citation 9](https://www.scribd.com/doc/13065730/Withdrawal-Notice-for-9-11-Commission-Interview-about-Insider-Trading)
+
+[Supplied citation 10](https://www.scribd.com/doc/13065732/Withdrawal-Notice-for-9-11-Commission-Document-about-Insider-Trading-Allegations)
+
+[Supplied citation 11](https://www.archives.gov/files/research/9-11/finding-aid.pdf)
+
+[Supplied citation 12](https://hcgroups.wordpress.com/2009/04/12/911-commission-documents-related-to-insider-trading-investigation/)
+
+<a id="nov04-411cb9f91edea6b321cf"></a>
+### nov04-411cb9f91edea6b321cf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-41501909e3d5ab3fe4be"></a>
+### nov04-41501909e3d5ab3fe4be
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-41673f03c3f882aa445a"></a>
+### nov04-41673f03c3f882aa445a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/18886438/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-5-11-04-MFR-Lisa-Jefferson-416)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=45)
+
+[Supplied citation 3](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e75761061f0bfa9148eb98a213aa4a24f1ad123/investigation/broader-evidence/telephone-recording-index-2026-10-31/README.md)
+
+<a id="nov04-41ad0784b6f9bff16449"></a>
+### nov04-41ad0784b6f9bff16449
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-41b54f42021526cb23f1"></a>
+### nov04-41b54f42021526cb23f1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/view)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file):)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=5)
+
+<a id="nov04-4203e6e46897bcfda6e5"></a>
+### nov04-4203e6e46897bcfda6e5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4230c77c201545772b4e"></a>
+### nov04-4230c77c201545772b4e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://millercenter.org/the-presidency/presidential-oral-histories/philip-zelikow-oral-history-part-i)
+
+[Supplied citation 2](https://www.9-11commission.gov/report/911Report_Ch4.htm)
+
+[Supplied citation 3](https://www.9-11commission.gov/report/911Report_Notes.pdf)
+
+<a id="nov04-424b20a1568cddf47da5"></a>
+### nov04-424b20a1568cddf47da5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/5c2a489db46eb230900d41b05f1710497e636965/investigation/broader-evidence/telephone-recording-custody-relays-2026-11-02/README.md)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+<a id="nov04-4256639796c0fc074c85"></a>
+### nov04-4256639796c0fc074c85
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/688.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/692.pdf)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/810.pdf)
+
+[Supplied citation 4](https://oig.justice.gov/sites/default/files/archive/special/s0606/chapter4.htm)
+
+<a id="nov04-42574d849f2b15b75fbd"></a>
+### nov04-42574d849f2b15b75fbd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf)
+
+<a id="nov04-425fbbf64664cafd1029"></a>
+### nov04-425fbbf64664cafd1029
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-42a63bec6173ee5b87d7"></a>
+### nov04-42a63bec6173ee5b87d7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-43053961770fc6962a73"></a>
+### nov04-43053961770fc6962a73
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-439623e9d64e02fca545"></a>
+### nov04-439623e9d64e02fca545
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-43d08f23a9ee22f5083b"></a>
+### nov04-43d08f23a9ee22f5083b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/a8b410fc96d29f50f9c134f87acb0822eedc8961/investigation/broader-evidence/telephone-playback-text-comparison-2026-11-02/README.md)
+
+<a id="nov04-43ed6d45bbf958abba90"></a>
+### nov04-43ed6d45bbf958abba90
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/636.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/637.pdf)
+
+<a id="nov04-440825a07f666e04dddc"></a>
+### nov04-440825a07f666e04dddc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=41)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=38)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=39)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=40)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=2)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=11)
+
+<a id="nov04-4445e152bb3aa6885605"></a>
+### nov04-4445e152bb3aa6885605
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4456608b908af8b5c734"></a>
+### nov04-4456608b908af8b5c734
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-44abf23daf0bd93b1b5f"></a>
+### nov04-44abf23daf0bd93b1b5f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.faa.gov/documentLibrary/media/Order/0000.5E.pdf#page=4)
+
+[Supplied citation 2](https://www.faa.gov/documentLibrary/media/Order/0000.5E.pdf#page=28)
+
+[Supplied citation 3](https://www.faa.gov/documentLibrary/media/Order/FAA_Order_2970.3.pdf#page=1)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/c4207143c4f0e1069991162ec8b2a398f11d5cb6/investigation/broader-evidence/faa-investigation-followup-order-2026-10-28/sources/DOT-8000-1C-1989-archived-20241030.pdf)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/c4207143c4f0e1069991162ec8b2a398f11d5cb6/investigation/broader-evidence/faa-investigation-followup-order-2026-10-28/README.md)
+
+[Supplied citation 6](https://www.faa.gov/documentLibrary/media/Order/0000.5E.pdf#page=2)
+
+<a id="nov04-44af4169501b7f866926"></a>
+### nov04-44af4169501b7f866926
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-44cd5e4201d51d52378e"></a>
+### nov04-44cd5e4201d51d52378e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/e13295b26e486e613979fcfdc79b1efeef05548e/investigation/broader-evidence/steel-wje-award-and-native-records-2026-10-28/README.md)
+
+[Supplied citation 2](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=177)
+
+[Supplied citation 3](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv1.pdf#page=71)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=170)
+
+[Supplied citation 5](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=236)
+
+[Supplied citation 6](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=257)
+
+[Supplied citation 7](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=93)
+
+[Supplied citation 8](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=91)
+
+[Supplied citation 9](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=169)
+
+<a id="nov04-44d19c13353d05a1fb10"></a>
+### nov04-44d19c13353d05a1fb10
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-44eed2826dd2b1a294a3"></a>
+### nov04-44eed2826dd2b1a294a3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4539f817a99c206aae8a"></a>
+### nov04-4539f817a99c206aae8a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/tree/ddd475b4e3c43a92a713426b6dc4c9f350930abd/investigation/wtc7/master-lead-register-2026-10-25)
+
+[Supplied citation 2](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 3](https://www.govinfo.gov/content/pkg/GOVPUB-J1_14-PURL-gpo159739/pdf/GOVPUB-J1_14-PURL-gpo159739.pdf)
+
+[Supplied citation 4](https://www.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011182.pdf)
+
+[Supplied citation 5](https://www.govinfo.gov/app/details/GOVPUB-J1_14-PURL-gpo159739)
+
+<a id="nov04-456bb9ef90398a5d4f8e"></a>
+### nov04-456bb9ef90398a5d4f8e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4586a24f84e3af550d42"></a>
+### nov04-4586a24f84e3af550d42
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e846c1ea159fde25e1291c1c5046e70e2e4de80/investigation/broader-evidence/faa-notification-personnel-originals-2026-11-01/README.md)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=210)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=211)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=216)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=208)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=218)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=207)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=209)
+
+[Supplied citation 10](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=225)
+
+[Supplied citation 11](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=224)
+
+[Supplied citation 12](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=228)
+
+[Supplied citation 13](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=231)
+
+[Supplied citation 14](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1121-MEMORANDUM--FORMAL-ACCIDENT-PACKAGE-REF-ZNY-ARTCC-148-UAL175-CORRECTIONS.pdf#page=9)
+
+[Supplied citation 15](https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/README.md)
+
+<a id="nov04-45897a56e995791f8dfb"></a>
+### nov04-45897a56e995791f8dfb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md)
+
+<a id="nov04-45c2262454ae0152c8a2"></a>
+### nov04-45c2262454ae0152c8a2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view):)
+
+<a id="nov04-45e51edf35010b216e1e"></a>
+### nov04-45e51edf35010b216e1e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 2](https://www.fema.gov/pdf/library/fema403_apd.pdf#page=16)
+
+[Supplied citation 3](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=87)
+
+<a id="nov04-45fd4a7a1ff6529c0875"></a>
+### nov04-45fd4a7a1ff6529c0875
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/FO11002.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/BR00003.pdf)
+
+<a id="nov04-4641b77616c434e72ac8"></a>
+### nov04-4641b77616c434e72ac8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-46663da5d242cee9158e"></a>
+### nov04-46663da5d242cee9158e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-468f9dc1d544204f920b"></a>
+### nov04-468f9dc1d544204f920b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-469352b269228a13667e"></a>
+### nov04-469352b269228a13667e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-46951797d3eaeb62d975"></a>
+### nov04-46951797d3eaeb62d975
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/research/9-11/commission-memoranda.html)
+
+[Supplied citation 2](https://catalog.archives.gov/id/2610602)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2610603)
+
+<a id="nov04-46e2736362e5d78a63ea"></a>
+### nov04-46e2736362e5d78a63ea
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.oig.dot.gov/sites/default/files/sar_2006.pdf)
+
+[Supplied citation 2](https://web.archive.org/web/20150907012317id_/https://www.oig.dot.gov/sites/default/files/sar_2006.pdf)
+
+[Supplied citation 3](https://www.oig.dot.gov/sites/default/files/trans4_SAR1H_09_072307_508_compliant.pdf)
+
+[Supplied citation 4](https://web.archive.org/web/20150907191257id_/https://www.oig.dot.gov/sites/default/files/trans4_SAR1H_09_072307_508_compliant.pdf)
+
+[Supplied citation 5](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/README.md)
+
+<a id="nov04-47257ad76f815b8328e4"></a>
+### nov04-47257ad76f815b8328e4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-47338760081f1e667d89"></a>
+### nov04-47338760081f1e667d89
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://irp.fas.org/agency/doj/fisa/ag012100.html)
+
+[Supplied citation 2](https://www.govinfo.gov/content/pkg/CHRG-107shrg87866/pdf/CHRG-107shrg87866.pdf)
+
+<a id="nov04-473722facc3ac87166bb"></a>
+### nov04-473722facc3ac87166bb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=53)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=60)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=54)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=61)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=62)
+
+[Supplied citation 6](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=34)
+
+[Supplied citation 7](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=31)
+
+[Supplied citation 8](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+<a id="nov04-478f2b4025caa77cddea"></a>
+### nov04-478f2b4025caa77cddea
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-479d4cb5154708a1525d"></a>
+### nov04-479d4cb5154708a1525d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.jstor.org/stable/10.1086/503645)
+
+[Supplied citation 2](https://www.theocc.com/market-data/market-data-reports/other-market-data-info/batch-processing/volume-query-batch-processing)
+
+[Supplied citation 3](https://www.theocc.com/getmedia/50cf357d-6ec6-436e-a96b-c4710313a472/options-volume-query-record-layout.pdf)
+
+[Supplied citation 4](https://www.theocc.com/market-data/market-data-reports/other-market-data-info/data-sales)
+
+<a id="nov04-47c9a6de44eade657d1a"></a>
+### nov04-47c9a6de44eade657d1a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/16539240/T4-B13-Pornography-Fdr-2-Withdrawal-Notices-and-Document-Request-Responses-1-Pg-of-Draft-Financial-Spreadsheet-See-T4-B14-957)
+
+<a id="nov04-47ef1cdaf365259832ac"></a>
+### nov04-47ef1cdaf365259832ac
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/14142047/NYC-Box-3-Neads-conr-norad-Fdr-Transcript-Neads-Channel-2-Mcc-Upside-006)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17)
+
+[Supplied citation 3](https://www.scribd.com/document/14142009/NYC-Box-2-NEADS-Transcript-Rome-NY-Fdr-Transcript-Pgs-1-82-1237-1417)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=3)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/6af556052ee0745e95151faa13294e864decdd89/investigation/broader-evidence/neads-mfr-version-crosswalk-2026-10-31/README.md)
+
+<a id="nov04-48246e2fa9420ab7d1a9"></a>
+### nov04-48246e2fa9420ab7d1a9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-484f11524e29401eb29a"></a>
+### nov04-484f11524e29401eb29a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-48ad8b8d893d43aca695"></a>
+### nov04-48ad8b8d893d43aca695
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=23)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=24)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/b6923d4d9c874ab71fe88112f401d5279caaeb95/investigation/broader-evidence/telephone-operator-notes-mfr-2026-10-31/README.md)
+
+<a id="nov04-48afcc2903cd89f6530f"></a>
+### nov04-48afcc2903cd89f6530f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-48c6cefa46ff4fc76bfa"></a>
+### nov04-48c6cefa46ff4fc76bfa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-48cbc6449deefdfb3c0d"></a>
+### nov04-48cbc6449deefdfb3c0d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/2e8a072977f1fd387a2cb9e3e0336e5268a7d895/investigation/broader-evidence/faa-knowledge-correction-trail-2026-10-26/README.md)
+
+[Supplied citation 2](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12)
+
+[Supplied citation 3](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=6)
+
+[Supplied citation 4](https://www.faa.gov/documentLibrary/media/order/finance/1350-15C/media/chapter5.pdf#page=27)
+
+[Supplied citation 5](https://www.faa.gov/documentLibrary/media/Order/FAA_Order_2970.3.pdf#page=3)
+
+[Supplied citation 6](https://www.faa.gov/documentLibrary/media/Order/0000.5E.pdf#page=28)
+
+[Supplied citation 7](https://www.faa.gov/documentLibrary/media/order/finance/1350-15C/media/chapter6.pdf#page=22)
+
+[Supplied citation 8](https://www.nytimes.com/2006/09/02/washington/02faa.html)
+
+[Supplied citation 9](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=20)
+
+[Supplied citation 10](https://www.faa.gov/regulations_policies/orders_notices/index.cfm/go/document.information/documentid/13134)
+
+[Supplied citation 11](https://www.faa.gov/documentLibrary/media/Order/FAA_1350.14B.pdf#page=1)
+
+<a id="nov04-48d15acd6c1cfc983fcc"></a>
+### nov04-48d15acd6c1cfc983fcc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08/view)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/12173507b1f00e9fdd51e42448dcb2498cc9c4e5/investigation/broader-evidence/telephone-official-part03-2026-10-31/README.md)
+
+<a id="nov04-491c1713e677a762949f"></a>
+### nov04-491c1713e677a762949f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-49a43d2fdebf8bd1092b"></a>
+### nov04-49a43d2fdebf8bd1092b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4a22dadb715cf5bbc349"></a>
+### nov04-4a22dadb715cf5bbc349
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4a2c97829d2714637e3f"></a>
+### nov04-4a2c97829d2714637e3f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4a4afbfc44c0889fe33f"></a>
+### nov04-4a4afbfc44c0889fe33f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4aa16759f554d8c457b1"></a>
+### nov04-4aa16759f554d8c457b1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4aab246df142950938fb"></a>
+### nov04-4aab246df142950938fb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://digitalcollections.iu.edu/concern/archival_materials/8049gv40g?locale=en)
+
+[Supplied citation 2](https://digitalcollections.iu.edu/concern/archival_materials/n296xn845?locale=en)
+
+<a id="nov04-4af005b833a0afe36dc8"></a>
+### nov04-4af005b833a0afe36dc8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1)
+
+[Supplied citation 2](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=5)
+
+[Supplied citation 3](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=6)
+
+[Supplied citation 4](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=10)
+
+[Supplied citation 5](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=11)
+
+[Supplied citation 6](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11#page=4)
+
+<a id="nov04-4b15d65ccf5946b56289"></a>
+### nov04-4b15d65ccf5946b56289
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4b52ebbbfd782b7ea693"></a>
+### nov04-4b52ebbbfd782b7ea693
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4b7b7aef9d8208ea7af0"></a>
+### nov04-4b7b7aef9d8208ea7af0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=11)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/README.md)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=43)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=44)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=12)
+
+<a id="nov04-4bf56b99bbeabff58314"></a>
+### nov04-4bf56b99bbeabff58314
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4c0853651451dfc1ed98"></a>
+### nov04-4c0853651451dfc1ed98
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/810.pdf)
+
+[Supplied citation 3](https://oig.justice.gov/sites/default/files/archive/special/s0606/chapter4.htm)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/953.pdf)
+
+<a id="nov04-4c37c7b78c6bc8c2d3ae"></a>
+### nov04-4c37c7b78c6bc8c2d3ae
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file)
+
+[Supplied citation 2](https://www.motleyrice.com/sites/default/files/documents/AT_HR/9-11/20240802%20Redacted%20public%20averment.pdf)
+
+<a id="nov04-4c4dc3564517ba13b619"></a>
+### nov04-4c4dc3564517ba13b619
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nsarchive.gwu.edu/sites/default/files/documents/qx7xl1-j1w1s/2001-08-07-terrorism-bin-ladin-determined-to.pdf):)
+
+[Supplied citation 2](https://nsarchive.gwu.edu/document/24280-terrorism-bin-ladin-determined-strike-us-senior-executive-intelligence-brief),33,551bytes,SHA256`94cd58430b57ac8d755ed8bf8213c4cb5385f8d73a7192307ec72a0d517fd857`)
+
+[Supplied citation 3](https://govinfo.library.unt.edu/911/archive/hearing10/9-11Commission_Hearing_2004-04-14.htm):325,727bytes,SHA256`ce7e8a148318019c6af80458a23da3e2699e4e853dd5d76faad128e3396294f1`)
+
+<a id="nov04-4c91a389390043fd6682"></a>
+### nov04-4c91a389390043fd6682
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4c9ec8635af78effee9e"></a>
+### nov04-4c9ec8635af78effee9e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4cea9da103f19e17a0ef"></a>
+### nov04-4cea9da103f19e17a0ef
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.justice.gov/sites/default/files/ag/legacy/2004/04/28/supplementarymaterial.pdf)
+
+[Supplied citation 2](https://www.justice.gov/dag/readingroom/dag-memo-08062001.pdf)
+
+[Supplied citation 3](https://www.justice.gov/sites/default/files/dag/legacy/2008/12/04/dag-memo-08062001.pdf)
+
+<a id="nov04-4cfceca4b4cdd0070693"></a>
+### nov04-4cfceca4b4cdd0070693
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.itv.com/news/2026-09-03/british-officer-says-fbi-withheld-game-changing-details-about-911-suspect)
+
+<a id="nov04-4da340b4f44199e8692d"></a>
+### nov04-4da340b4f44199e8692d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=9)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view)
+
+[Supplied citation 3](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=99)
+
+[Supplied citation 4](https://www.scribd.com/document/13499803/T7-B13-Flights-Phone-Calls-Fdr-Search-of-FBI-302-Files-for-175-77-and-93)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 6](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf)
+
+[Supplied citation 7](https://www.scribd.com/document/15072623/T1A-B33-Four-Flights-Phone-Calls-and-Other-Data-Fdr-Entire-Contents-FBI-302s-843)
+
+<a id="nov04-4df34fa20bdc5d8463da"></a>
+### nov04-4df34fa20bdc5d8463da
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4df99337aaee4615785d"></a>
+### nov04-4df99337aaee4615785d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=78)
+
+[Supplied citation 2](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=80)
+
+[Supplied citation 3](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 4](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=77)
+
+[Supplied citation 5](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=79)
+
+[Supplied citation 6](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=81)
+
+[Supplied citation 7](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=108)
+
+[Supplied citation 8](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=17)
+
+[Supplied citation 9](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=105)
+
+[Supplied citation 10](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=106)
+
+[Supplied citation 11](https://nara-media-001.s3.amazonaws.com/arcmedia/9-11/MFR/t-0148-911MFR-00724.pdf#page=1)
+
+[Supplied citation 12](https://nara-media-001.s3.amazonaws.com/arcmedia/9-11/MFR/t-0148-911MFR-00724.pdf#page=2)
+
+[Supplied citation 13](https://nara-media-001.s3.amazonaws.com/arcmedia/9-11/MFR/t-0148-911MFR-00724.pdf#page=3)
+
+[Supplied citation 14](https://nara-media-001.s3.amazonaws.com/arcmedia/9-11/MFR/t-0148-911MFR-00724.pdf#page=4)
+
+[Supplied citation 15](https://www.archives.gov/research/9-11/commission-memoranda.html):)
+
+<a id="nov04-4dfc02aced10fa62a76a"></a>
+### nov04-4dfc02aced10fa62a76a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/3b1c9b18434e58faef2e7f22b4e457af387d856c/investigation/broader-evidence/telephone-court-audio-resources-2026-10-29/README.md)
+
+[Supplied citation 3](https://open-flash.github.io/mirrors/swf-spec-19.pdf)
+
+<a id="nov04-4e06c3826f5d54dd84cc"></a>
+### nov04-4e06c3826f5d54dd84cc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4e1ac2d075e54c0cf13d"></a>
+### nov04-4e1ac2d075e54c0cf13d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=25)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=57)
+
+[Supplied citation 3](https://www.scribd.com/document/18886438/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-5-11-04-MFR-Lisa-Jefferson-416)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/b6923d4d9c874ab71fe88112f401d5279caaeb95/investigation/broader-evidence/telephone-operator-notes-mfr-2026-10-31/README.md)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=21)
+
+<a id="nov04-4efdf750552bb2fca006"></a>
+### nov04-4efdf750552bb2fca006
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-4f25e4ac1a0f66b410e4"></a>
+### nov04-4f25e4ac1a0f66b410e4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://beverlyhills.org/161/Agreements-Ordinances-Resolutions)
+
+[Supplied citation 2](https://apps.beverlyhills.org/cityclerk/searchagreementsordinancesresolutions/)
+
+[Supplied citation 3](https://apps.beverlyhills.org/cityclerk/searchagreementsordinancesresolutions/web.jsp?SEARCHTYPE=ALL&DOCQUERY=&QUERYTYPE=AND&VENDOR=&NUMBER=11-R-12833&DATE=&TYPE=&action=Search)
+
+[Supplied citation 4](https://aedocs.beverlyhills.org/AppEnhancer/datasources/AX-COBH_City/ISubmitQuery?DocNavBlocked=True&DispMode=11&AppName=CITY-RESOLUTIONS_ORDINANCES_AGREEMENTS&ViewMode=ResultSet&SearchAllRevisions=True&PublicQuery=False&FulltextQuery=&FulltextQueryType=And&FulltextOperation=AND&FulltextThesaurus=False&DATE=09-08-2011&DOC%20TYPE=RESOLUTION&NUMBER%20(ORD%2FAGR%2FRESO)=11-R-12833)
+
+[Supplied citation 5](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11)
+
+[Supplied citation 6](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/4ac0f984339daabcf92b2ffe71c046d0d3d0dff5/investigation/broader-evidence/bh-steel-ratification-minutes-2026-11-03/README.md)
+
+<a id="nov04-4ff880e697dce774c8ea"></a>
+### nov04-4ff880e697dce774c8ea
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.mc.mil/Portals/0/pdfs/KSM2/KSM%20II%20%28AE773%28KSM%29%29.pdf)
+
+<a id="nov04-4ffef5d5b99c9a830162"></a>
+### nov04-4ffef5d5b99c9a830162
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=30)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/e357f0778da4001ee9ea41d56ce77bae974e862f/investigation/broader-evidence/telephone-signed-notes-continuations-2026-10-31/README.md)
+
+<a id="nov04-501cee35b3c85492ce73"></a>
+### nov04-501cee35b3c85492ce73
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-50631e471957c8beb4ee"></a>
+### nov04-50631e471957c8beb4ee
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-508e2afdead845d46311"></a>
+### nov04-508e2afdead845d46311
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-50a3cea5c9d42f5740cc"></a>
+### nov04-50a3cea5c9d42f5740cc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-50e243ea349f775c4c0c"></a>
+### nov04-50e243ea349f775c4c0c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-510de7265d61bbf4d7a4"></a>
+### nov04-510de7265d61bbf4d7a4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5134c5e81bd405b3e488"></a>
+### nov04-5134c5e81bd405b3e488
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-51805878b08461b303a6"></a>
+### nov04-51805878b08461b303a6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/legislative/rg-148/5952561/Reno.pdf)
+
+[Supplied citation 2](https://www.justice.gov/d9/olc/opinions/1997/08/31/op-olc-v021-p0159_0.pdf:)
+
+[Supplied citation 3](https://law.justia.com/cases/federal/appellate-courts/F3/131/99/514494/)
+
+<a id="nov04-51e9f660302af7014e48"></a>
+### nov04-51e9f660302af7014e48
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://irp.fas.org/agency/doj/fbi/napa061803.pdf)
+
+[Supplied citation 2](https://www.govinfo.gov/content/pkg/CHRG-108hhrg94905/pdf/CHRG-108hhrg94905.pdf)
+
+<a id="nov04-5257e04fe9762c1168e2"></a>
+### nov04-5257e04fe9762c1168e2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-528e8cd4b5841e5ba74a"></a>
+### nov04-528e8cd4b5841e5ba74a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-21.pdf)
+
+[Supplied citation 2](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf)
+
+<a id="nov04-52d1a729b68ed3d1198e"></a>
+### nov04-52d1a729b68ed3d1198e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/2610327)
+
+[Supplied citation 2](https://catalog.archives.gov/medialive/27/6103/2610327/content/arcmedia/9-11/MFR/t-0148-911MFR-00732.pdf)
+
+<a id="nov04-52e866a42a4154a5a80d"></a>
+### nov04-52e866a42a4154a5a80d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/ST00001A.pdf)
+
+[Supplied citation 2](https://www.9-11commission.gov/report/911Report_Ch5.htm)
+
+<a id="nov04-52ef31050f0f174167d4"></a>
+### nov04-52ef31050f0f174167d4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-52f046fddeb6f4a9c8bc"></a>
+### nov04-52f046fddeb6f4a9c8bc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-52fd6e0ec42e5a512a4f"></a>
+### nov04-52fd6e0ec42e5a512a4f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5353ae6336d55e8c0275"></a>
+### nov04-5353ae6336d55e8c0275
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=9)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view)
+
+[Supplied citation 3](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=99)
+
+[Supplied citation 4](https://www.scribd.com/document/13499803/T7-B13-Flights-Phone-Calls-Fdr-Search-of-FBI-302-Files-for-175-77-and-93)
+
+<a id="nov04-536b57b0919140e22f69"></a>
+### nov04-536b57b0919140e22f69
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-539d0f19262694b52c6a"></a>
+### nov04-539d0f19262694b52c6a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf)
+
+[Supplied citation 2](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf)
+
+[Supplied citation 3](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf)
+
+[Supplied citation 4](https://govinfo.library.unt.edu/911/archive/hearing2/9-11Commission_Hearing_2003-05-23.htm)
+
+[Supplied citation 5](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3294)
+
+[Supplied citation 6](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4056)
+
+[Supplied citation 7](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2679)
+
+[Supplied citation 8](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4325)
+
+[Supplied citation 9](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=9)
+
+[Supplied citation 10](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3295)
+
+[Supplied citation 11](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4330)
+
+[Supplied citation 12](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2681)
+
+[Supplied citation 13](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4133)
+
+[Supplied citation 14](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3306)
+
+[Supplied citation 15](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4138)
+
+[Supplied citation 16](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4104)
+
+[Supplied citation 17](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=4136)
+
+[Supplied citation 18](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3299)
+
+[Supplied citation 19](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2495)
+
+[Supplied citation 20](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2182)
+
+[Supplied citation 21](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2188)
+
+[Supplied citation 22](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=168)
+
+[Supplied citation 23](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2467)
+
+[Supplied citation 24](https://www.governmentattic.org/6docs/DOT-OIG-FAA9-11_2001-2006.pdf#page=6)
+
+[Supplied citation 25](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12)
+
+<a id="nov04-53e52e286e47f76e6ebf"></a>
+### nov04-53e52e286e47f76e6ebf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-540180371bfba12ab4af"></a>
+### nov04-540180371bfba12ab4af
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0237/n1-237-05-004_sf115.pdf)
+
+[Supplied citation 2](https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0237/n1-237-05-004_sf115.pdf#page=2)
+
+[Supplied citation 3](https://www.faa.gov/documentLibrary/media/order/finance/1350-15C/media/chapter5.pdf#page=27)
+
+[Supplied citation 4](https://www.faa.gov/documentLibrary/media/order/finance/1350-15C/media/chapter6.pdf#page=22)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/README.md)
+
+[Supplied citation 6](https://catalog.archives.gov/id/7419198)
+
+<a id="nov04-540b00837ee607e36a80"></a>
+### nov04-540b00837ee607e36a80
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-54301c9e27c960c5a240"></a>
+### nov04-54301c9e27c960c5a240
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5436b0492cc9fca400d7"></a>
+### nov04-5436b0492cc9fca400d7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-544236f51a86b9038ace"></a>
+### nov04-544236f51a86b9038ace
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-2-release-508.pdf)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-3-release-508.pdf)
+
+<a id="nov04-54ea0c2cb233e9d80024"></a>
+### nov04-54ea0c2cb233e9d80024
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-54f9ff5c5cc0e6fd8c8c"></a>
+### nov04-54f9ff5c5cc0e6fd8c8c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://archive.org/details/DancingIsraelisFBIReport/fbi%20report%20section%205/page/n42/mode/1up)
+
+[Supplied citation 2](https://archive.org/details/DancingIsraelisFBIReport/fbi%20report%20section%205/page/n43/mode/1up)
+
+[Supplied citation 3](https://archive.org/details/DancingIsraelisFBIReport/fbi%20report%20section%206/page/n52/mode/1up)
+
+[Supplied citation 4](https://archive.org/details/DancingIsraelisFBIReport/fbi%20report%20section%206/page/n42/mode/1up)
+
+[Supplied citation 5](https://archive.org/details/DancingIsraelisFBIReport/fbi%20report%20section%201/page/n6/mode/1up)
+
+[Supplied citation 6](https://mischrev.substack.com/p/the-dancing-israelis-and-the-spurious)
+
+[Supplied citation 7](https://archive.org/details/DancingIsraelisFBIReport/fbi%20report%20section%201/page/n135/mode/1up)
+
+[Supplied citation 8](https://archive.org/details/DancingIsraelisFBIReport/fbi%20report%20section%203/page/n28/mode/1up)
+
+[Supplied citation 9](https://archive.org/details/DancingIsraelisFBIReport/fbi%20report%20section%203/page/n91/mode/1up)
+
+[Supplied citation 10](https://archive.org/details/DancingIsraelisFBIReport/fbi%20report%20section%205/page/n68/mode/1up)
+
+[Supplied citation 11](https://archive.org/details/DancingIsraelisFBIReport/fbi%20report%20section%205/page/n70/mode/1up)
+
+[Supplied citation 12](https://archive.org/details/DancingIsraelisFBIReport/fbi%20report%20section%206/page/n35/mode/1up)
+
+[Supplied citation 13](https://vault.fbi.gov/foia-log-2018-part-01/FOIA%20Log%202018%20Part%2001%20%28Final%29/at_download/file)
+
+[Supplied citation 14](https://vault.fbi.gov/foia-log-2019-part-01/FOIA%20Log%202019%20Part%2001%20%28Final%29/at_download/file)
+
+[Supplied citation 15](https://vault.fbi.gov/foia-log-2020-part-01/FOIA%20Log%202020%20Part%2001%20%28Final%29/at_download/file)
+
+[Supplied citation 16](https://vault.fbi.gov/foia-log-2021-part-01/FOIA%20Log%202021%20Part%2001%20%28Final%29/at_download/file)
+
+[Supplied citation 17](https://vault.fbi.gov/foia-log-2022-part-01/FOIA%20Log%202022%20Part%2001%20%28Final%29/at_download/file)
+
+[Supplied citation 18](https://vault.fbi.gov/foia-log-2023/foia-log-2023-part-01/at_download/file)
+
+[Supplied citation 19](https://www.israellobby.org/UrbanMoving/01162013release_letter.pdf)
+
+[Supplied citation 20](https://www.israellobby.org/UrbanMoving/)
+
+[Supplied citation 21](https://www.scribd.com/document/409691150/FOIA-Release-of-9-11-Dancing-Israelis-thru-the-FBI)
+
+[Supplied citation 22](https://pdfcoffee.com/foia-release-of-9-11-dancing-israelis-thru-the-fbi-pdf-free.html)
+
+[Supplied citation 23](https://www.georgewbushlibrary.gov/sites/default/files/2026-05/20250218f-findingaid.pdf)
+
+[Supplied citation 24](https://www.archives.gov/files/foia/pra-notifications/pdf/bush43/rn-plgwb-2026-023.pdf)
+
+[Supplied citation 25](https://www.georgewbushlibrary.gov/research/finding-aids/freedom-information-act-requests/foia-requests-2025)
+
+[Supplied citation 26](https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/freedom-of-information-privacy-act/requesting-fbi-records)
+
+<a id="nov04-557cc5c3f9e20ebef761"></a>
+### nov04-557cc5c3f9e20ebef761
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408)
+
+[Supplied citation 4](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=48)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=51)
+
+[Supplied citation 7](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=47)
+
+[Supplied citation 8](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=49)
+
+<a id="nov04-55886fe0a96a634fc753"></a>
+### nov04-55886fe0a96a634fc753
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-55b6d3e12b2b5c636354"></a>
+### nov04-55b6d3e12b2b5c636354
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-55ebf12ba1a70356b3d9"></a>
+### nov04-55ebf12ba1a70356b3d9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=3)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2610370)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf)
+
+[Supplied citation 5](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf)
+
+<a id="nov04-561fe25b3a5b8f778130"></a>
+### nov04-561fe25b3a5b8f778130
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-564a76a0d9ee1dd7a1d0"></a>
+### nov04-564a76a0d9ee1dd7a1d0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/17aef02c7d79169234dc04c4a67f38425900ea30/investigation/broader-evidence/telephone-transcript-generation-chain-2026-11-02/README.md)
+
+<a id="nov04-56a9d01acb5569603f0c"></a>
+### nov04-56a9d01acb5569603f0c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-56c50d25c627182f23e4"></a>
+### nov04-56c50d25c627182f23e4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://9-11commission.gov/hearings/hearing2/witness_graham.htm)
+
+[Supplied citation 2](https://govinfo.library.unt.edu/911/archive/hearing2/9-11Commission_Hearing_2003-05-22.htm)
+
+<a id="nov04-56c7324bb0e7f2129543"></a>
+### nov04-56c7324bb0e7f2129543
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-56eb9b9a8f2f610fce80"></a>
+### nov04-56eb9b9a8f2f610fce80
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-571575666d6baf0a68d1"></a>
+### nov04-571575666d6baf0a68d1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication1000-5v3.pdf#page=163)
+
+[Supplied citation 2](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=96)
+
+[Supplied citation 3](https://www.fema.gov/pdf/library/fema403_apd.pdf#page=16)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication1000-5v3.pdf#page=119)
+
+[Supplied citation 5](https://documents.theblackvault.com/documents/foia/2014-000573AckLtr-FinalResponse.pdf#page=6)
+
+<a id="nov04-575d5058239f2211fff7"></a>
+### nov04-575d5058239f2211fff7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-57619e547ac8ac40e61b"></a>
+### nov04-57619e547ac8ac40e61b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-57b0e4f033686679d87c"></a>
+### nov04-57b0e4f033686679d87c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://digitalcollections.archives.nysed.gov/Detail/objects/45414)
+
+[Supplied citation 2](https://digitalcollections.archives.nysed.gov/media/collectiveaccess/images/5/6/6/64972_ca_object_representations_media_56677_large.jpg)
+
+[Supplied citation 3](https://digitalcollections.archives.nysed.gov/Detail/collections/6049)
+
+<a id="nov04-58455df38b3c7ed8590f"></a>
+### nov04-58455df38b3c7ed8590f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/565a624e10d986a83865d3c0f239db8ba75a707f/investigation/broader-evidence/telephone-socc-later-leads-2026-10-30/README.md)
+
+[Supplied citation 2](https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/565a624e10d986a83865d3c0f239db8ba75a707f/investigation/broader-evidence/telephone-socc-later-leads-2026-10-30/OBSERVATIONS-AND-TODOS.json)
+
+<a id="nov04-5882fe4706a002388eeb"></a>
+### nov04-5882fe4706a002388eeb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-589a70bde0d08e0a3845"></a>
+### nov04-589a70bde0d08e0a3845
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-58adfc03a891f6b24421"></a>
+### nov04-58adfc03a891f6b24421
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/2605267)|CIA)
+
+[Supplied citation 2](https://catalog.archives.gov/id/2605269)|May20,2003)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2605301)|Dana)
+
+[Supplied citation 4](https://catalog.archives.gov/id/2605376)|Tobin—CIA)
+
+[Supplied citation 5](https://catalog.archives.gov/id/2605386)|Late2003)
+
+[Supplied citation 6](https://catalog.archives.gov/id/2605387)|July11,2003)
+
+[Supplied citation 7](https://catalog.archives.gov/id/2605388)|October)
+
+[Supplied citation 8](https://catalog.archives.gov/id/2605419)|DCI)
+
+[Supplied citation 9](https://catalog.archives.gov/id/2605420)|DCI)
+
+[Supplied citation 10](https://catalog.archives.gov/id/2604750)|Certifications)
+
+[Supplied citation 11](https://catalog.archives.gov/id/2604751)|CIA)
+
+[Supplied citation 12](https://catalog.archives.gov/id/2604768)|Document)
+
+[Supplied citation 13](https://catalog.archives.gov/id/2606348)|Document)
+
+[Supplied citation 14](https://catalog.archives.gov/id/2606349)|DCI)
+
+[Supplied citation 15](https://hcgroups.wordpress.com/2009/04/12/miscellaneous-911-commission-documents/)
+
+[Supplied citation 16](https://www.scribd.com/document/15492445/Certifications-of-Completion-and-Compliance-with-9-11-Document-Requests)
+
+<a id="nov04-58d519731803f43ebecc"></a>
+### nov04-58d519731803f43ebecc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.fbi.gov/history/artifacts/911-world-trade-center-steel-beam)
+
+[Supplied citation 2](https://www.911memorial.org/visit/museum/collection/conservation)
+
+[Supplied citation 3](https://911memorial.org/911-faqs)
+
+<a id="nov04-590f4f27f5f466577bdb"></a>
+### nov04-590f4f27f5f466577bdb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5940743f0ee54f76080c"></a>
+### nov04-5940743f0ee54f76080c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-59499de32ad524a351a6"></a>
+### nov04-59499de32ad524a351a6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-596bd5144d6a38822176"></a>
+### nov04-596bd5144d6a38822176
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 2](https://www.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011182.pdf)
+
+<a id="nov04-596caa17ab2a4c707ae7"></a>
+### nov04-596caa17ab2a4c707ae7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-04-605/pdf/GAOREPORTS-GAO-04-605.pdf`)
+
+<a id="nov04-5990cb1ec81bb804422f"></a>
+### nov04-5990cb1ec81bb804422f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf)
+
+<a id="nov04-59a1dcb15ea863367b81"></a>
+### nov04-59a1dcb15ea863367b81
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-59bd58358810db2f233c"></a>
+### nov04-59bd58358810db2f233c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-59ca496d412435c53f9a"></a>
+### nov04-59ca496d412435c53f9a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11):12)
+
+[Supplied citation 2](https://dockets.justia.com/docket/new-york/nysdce/1%3A2021mc00101/264866)
+
+<a id="nov04-5a6c42281dccb9a3efde"></a>
+### nov04-5a6c42281dccb9a3efde
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5a7de96e158079fea7f4"></a>
+### nov04-5a7de96e158079fea7f4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5a8bef7f63fd4006df7f"></a>
+### nov04-5a8bef7f63fd4006df7f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5a8f7153227c76070674"></a>
+### nov04-5a8f7153227c76070674
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5abb0854d2dfa43e0de8"></a>
+### nov04-5abb0854d2dfa43e0de8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/view)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md)
+
+<a id="nov04-5ac009ba5c1a25aa03fd"></a>
+### nov04-5ac009ba5c1a25aa03fd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5ac55933470d20af6baf"></a>
+### nov04-5ac55933470d20af6baf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5ad05bdba8eda0d9e9a2"></a>
+### nov04-5ad05bdba8eda0d9e9a2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5ad5f6e1837b349dfbf5"></a>
+### nov04-5ad5f6e1837b349dfbf5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://clearwater.granicus.com/MinutesViewer.php?clip_id=1841&view_id=25#page=3)
+
+[Supplied citation 2](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11#page=2)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/240914e0f1851956e74dae61a076e6cd52c45847/investigation/broader-evidence/steel-artifact-transfer-orders-2026-10-27/README.md)
+
+[Supplied citation 4](https://dspace.njstatelib.org/server/api/core/bitstreams/c960df66-1aba-40cd-9eb0-140585e3be89/content#page=6)
+
+[Supplied citation 5](https://www.renewnyc.org/attachments/content/pdfs/WTC_Historic_Resources_Report_January_2012.pdf#page=5)
+
+<a id="nov04-5c2f32b2be912606d1ef"></a>
+### nov04-5c2f32b2be912606d1ef
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5cc9768577b924abbb6d"></a>
+### nov04-5cc9768577b924abbb6d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5d1b52e275f7ab24d339"></a>
+### nov04-5d1b52e275f7ab24d339
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5d278e78ba47f6eebc42"></a>
+### nov04-5d278e78ba47f6eebc42
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://9-11commission.gov/archive/hearing7/9-11Commission_Hearing_2004-01-26.htm)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-10-release-508.pdf)
+
+[Supplied citation 3](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-11-release-508.pdf)
+
+<a id="nov04-5d60b0b50d1e3582df0d"></a>
+### nov04-5d60b0b50d1e3582df0d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://optionshotline.wordpress.com/2016/09/11/my-911-story/)
+
+[Supplied citation 2](https://www.thestreet.com/opinion/alarm-bells-unusual-options-activity-in-the-airlines-10001556)
+
+<a id="nov04-5e4227c87d3fb849b73f"></a>
+### nov04-5e4227c87d3fb849b73f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5e860a61821e8587167b"></a>
+### nov04-5e860a61821e8587167b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5e994da6d8b22b7c8cdd"></a>
+### nov04-5e994da6d8b22b7c8cdd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-98-Email-on-9-11-Commission-Data-Collection.pdf)
+
+[Supplied citation 3](https://catalog.archives.gov/medialive/5/9115/34911505/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-99-Reproducing-Documentation-Info-REDACT-SEALED.pdf)
+
+[Supplied citation 4](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=2)
+
+[Supplied citation 5](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=3)
+
+[Supplied citation 6](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=5)
+
+[Supplied citation 7](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=8)
+
+[Supplied citation 8](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=1)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-98-Email-on-9-11-Commission-Data-Collection.pdf#page=1)
+
+[Supplied citation 10](https://catalog.archives.gov/medialive/5/9115/34911505/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-99-Reproducing-Documentation-Info-REDACT-SEALED.pdf#page=1)
+
+[Supplied citation 11](https://github.com/AveLyra/911-conspiracy-investigation/blob/665d6502ab844e1eb15e83b6403205a6f896936a/investigation/broader-evidence/faa-a90-landline-delivery-2026-11-01/README.md)
+
+[Supplied citation 12](https://catalog.archives.gov/medialive/5/9115/34911505/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-99-Reproducing-Documentation-Info-REDACT-SEALED.pdf#page=4)
+
+<a id="nov04-5eab1ddb8a69c37b36b2"></a>
+### nov04-5eab1ddb8a69c37b36b2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/2538494`)
+
+[Supplied citation 2](https://catalog.archives.gov/id/2607530`)
+
+<a id="nov04-5eabe1cbe7c1ac9c2462"></a>
+### nov04-5eabe1cbe7c1ac9c2462
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5ef4c7d8c5c4fbaa3430"></a>
+### nov04-5ef4c7d8c5c4fbaa3430
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f78618d88ebcbd3e91811e9ba17f6457a6027ef/investigation/broader-evidence/telephone-wf334-static-context-2026-11-02/README.md)
+
+[Supplied citation 4](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s)
+
+[Supplied citation 5](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408)
+
+[Supplied citation 6](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/e451c84f5494eef39539807b9b984bdb2bcd8eec/investigation/broader-evidence/telephone-may-response-qualification-2026-11-02/README.md)
+
+[Supplied citation 9](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+[Supplied citation 10](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf)
+
+<a id="nov04-5efab08d95fdca1a9443"></a>
+### nov04-5efab08d95fdca1a9443
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5f4511070a2743eb5f59"></a>
+### nov04-5f4511070a2743eb5f59
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nsarchive.gwu.edu/document/24302-dci-report-rise-ubl-and-al-qa-ida-and-intelligence-community-response-draft-central)
+
+[Supplied citation 2](https://nsarchive.gwu.edu/sites/default/files/documents/qx7xqj-swjpt/2004-03-19-dci-report-the-rise-of-ubl-and-al.pdf)
+
+<a id="nov04-5f55331972c356eadb9d"></a>
+### nov04-5f55331972c356eadb9d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5f9d3a11b410ef4bca2d"></a>
+### nov04-5f9d3a11b410ef4bca2d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-5fb44ccd9a709f3e30f9"></a>
+### nov04-5fb44ccd9a709f3e30f9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d9d2c9684c29602cf5bb570cbf38c46e09fd50d/investigation/broader-evidence/telephone-first-operator-followup-2026-11-02/README.md)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+<a id="nov04-5fd6c9cc17fbfbde48c7"></a>
+### nov04-5fd6c9cc17fbfbde48c7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-6-release-508.pdf)
+
+<a id="nov04-5fd85ea78d777c1d187e"></a>
+### nov04-5fd85ea78d777c1d187e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e9ce8fa287fa4410241bc8fba303cefd6476467/investigation/broader-evidence/telephone-wf334-recording-lead-2026-11-02/README.md)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+<a id="nov04-600bf455c67151d3aeab"></a>
+### nov04-600bf455c67151d3aeab
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=47)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md)
+
+<a id="nov04-603d3db057cc42ad7298"></a>
+### nov04-603d3db057cc42ad7298
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=73)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/README.md)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=71)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=72)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=74)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=75)
+
+[Supplied citation 7](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=73)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/HOLDINGS-CHAIN.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/OBSERVATIONS.json)
+
+<a id="nov04-606a92c91dfe16485f26"></a>
+### nov04-606a92c91dfe16485f26
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/351.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/350.pdf)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/347.pdf)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/334.pdf)
+
+<a id="nov04-612e337c43c42aaf5bd9"></a>
+### nov04-612e337c43c42aaf5bd9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=61)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=62)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=3)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=1)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=38)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=41)
+
+<a id="nov04-617c4e643948db12c007"></a>
+### nov04-617c4e643948db12c007
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-61a04418560c96ca4eeb"></a>
+### nov04-61a04418560c96ca4eeb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=24)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=194)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=200)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=226)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=230)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=39)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/59828ff9efa5ee2bf073ebf3796a012b35bdd180/investigation/broader-evidence/faa-personnel-continuation-2026-11-01/README.md)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=5)
+
+[Supplied citation 10](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=16)
+
+<a id="nov04-61e07f3797a3ec255d66"></a>
+### nov04-61e07f3797a3ec255d66
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/c282a14153df29812b7f365e1ae441329666b4b4/investigation/broader-evidence/steel-nysa-flatbed-photo-2026-11-03/OPEN-TODOS.json)
+
+<a id="nov04-61e55e754a639492a328"></a>
+### nov04-61e55e754a639492a328
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-26.pdf#page=1)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-26.pdf#page=3)
+
+[Supplied citation 3](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-26.pdf#page=4)
+
+[Supplied citation 4](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-26.pdf#page=6)
+
+<a id="nov04-61e87a4acf87e5a02fa4"></a>
+### nov04-61e87a4acf87e5a02fa4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.911memorial.org/sites/default/files/inline-files/Collections%20Mgmt%20July%202024.pdf)
+
+<a id="nov04-62126a8ae9e242ae1bfe"></a>
+### nov04-62126a8ae9e242ae1bfe
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-2-d-supplemental-release-1/at_download/file)
+
+<a id="nov04-622d716717303805e53a"></a>
+### nov04-622d716717303805e53a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-622f176d518287759726"></a>
+### nov04-622f176d518287759726
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/385f959fd70d5caee75fe192325771ed7d8bdc9d/investigation/broader-evidence/moussaoui-french-controls-2026-10-30/README.md)
+
+[Supplied citation 2](https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version#page=20)
+
+[Supplied citation 3](https://catalog.archives.gov/medialive/0/6096/2609600/content/arcmedia/9-11/MFR/t-0148-911MFR-00014.pdf#page=8)
+
+[Supplied citation 4](https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version#page=22)
+
+<a id="nov04-62302f250938af0ccc0b"></a>
+### nov04-62302f250938af0ccc0b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=24)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=23)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+[Supplied citation 4](https://www.scribd.com/document/18886438/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-5-11-04-MFR-Lisa-Jefferson-416#page=3)
+
+<a id="nov04-6257040bdc1bf5fc5827"></a>
+### nov04-6257040bdc1bf5fc5827
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-62fa4678079e6a0a18a2"></a>
+### nov04-62fa4678079e6a0a18a2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/legislative/rg-148/5952561/Reno.pdf)
+
+<a id="nov04-630d1f3deec5e35f2433"></a>
+### nov04-630d1f3deec5e35f2433
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-6329515b0029b6e61362"></a>
+### nov04-6329515b0029b6e61362
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-633746f7e3364c715763"></a>
+### nov04-633746f7e3364c715763
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-7-release-508.pdf)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-8-release-508.pdf)
+
+<a id="nov04-634fada0afa011e2381d"></a>
+### nov04-634fada0afa011e2381d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-63603822e0716b234e0e"></a>
+### nov04-63603822e0716b234e0e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=9)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view)
+
+[Supplied citation 3](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=99)
+
+[Supplied citation 4](https://www.scribd.com/document/13499803/T7-B13-Flights-Phone-Calls-Fdr-Search-of-FBI-302-Files-for-175-77-and-93)
+
+<a id="nov04-636ed47688ee77009bd3"></a>
+### nov04-636ed47688ee77009bd3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/GOVPUB-Y4_IN8_18-PURL-gpo71223/pdf/GOVPUB-Y4_IN8_18-PURL-gpo71223.pdf)
+
+<a id="nov04-63e7a0ff257319518cc4"></a>
+### nov04-63e7a0ff257319518cc4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-642ae9294e77de1c15e1"></a>
+### nov04-642ae9294e77de1c15e1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-64528d7b70849c8f8cf6"></a>
+### nov04-64528d7b70849c8f8cf6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://ine.uaf.edu/wtc7)
+
+[Supplied citation 2](https://docs.software.vt.edu/abaqusv2025/English/SIMACAEKERRefMap/simaker-c-odbinstancepyc.htm)
+
+[Supplied citation 3](https://docs.software.vt.edu/abaqusv2025/English/SIMACAEKERRefMap/simaker-c-sectionassignmentcpp.htm)
+
+[Supplied citation 4](https://docs.software.vt.edu/abaqusv2025/English/SIMACAECAERefMap/simacae-t-prpassignsectionmanage.htm)
+
+<a id="nov04-64596e684d4b464300cd"></a>
+### nov04-64596e684d4b464300cd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-646e8576ea09f980f7cc"></a>
+### nov04-646e8576ea09f980f7cc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nysm.nysed.gov/about/press/phase-2-world-trade-center-exhibition-opens-feb-1-nys-museum)
+
+[Supplied citation 2](https://nysm.nysed.gov/exhibitions/ongoing/world-trade-center-rescue-recovery-response)
+
+[Supplied citation 3](https://nysm.nysed.gov/research-collections/history/political-history/collections/911)
+
+[Supplied citation 4](https://nysm.nysed.gov/sites/default/files/2024-10/wtc.guide_.pdf)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/65d2b57f9b6c4fb083bb595fafc31280179e1052/investigation/broader-evidence/bh-steel-resolution-face-2026-11-03/README.md)
+
+<a id="nov04-6477cb901c6c934c7b51"></a>
+### nov04-6477cb901c6c934c7b51
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-6480534dd35c32c510f9"></a>
+### nov04-6480534dd35c32c510f9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-64cab926db4d80ca0a1e"></a>
+### nov04-64cab926db4d80ca0a1e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-64e2ea401b8e51716fbe"></a>
+### nov04-64e2ea401b8e51716fbe
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-98-Email-on-9-11-Commission-Data-Collection.pdf)
+
+[Supplied citation 3](https://catalog.archives.gov/medialive/5/9115/34911505/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-99-Reproducing-Documentation-Info-REDACT-SEALED.pdf)
+
+[Supplied citation 4](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=2)
+
+[Supplied citation 5](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=3)
+
+[Supplied citation 6](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=5)
+
+[Supplied citation 7](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=8)
+
+[Supplied citation 8](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=1)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-98-Email-on-9-11-Commission-Data-Collection.pdf#page=1)
+
+[Supplied citation 10](https://catalog.archives.gov/medialive/5/9115/34911505/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-99-Reproducing-Documentation-Info-REDACT-SEALED.pdf#page=1)
+
+[Supplied citation 11](https://github.com/AveLyra/911-conspiracy-investigation/blob/665d6502ab844e1eb15e83b6403205a6f896936a/investigation/broader-evidence/faa-a90-landline-delivery-2026-11-01/README.md)
+
+[Supplied citation 12](https://catalog.archives.gov/medialive/5/9115/34911505/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-99-Reproducing-Documentation-Info-REDACT-SEALED.pdf#page=4)
+
+[Supplied citation 13](https://catalog.archives.gov/id/34911499)
+
+[Supplied citation 14](https://catalog.archives.gov/id/7599645)
+
+[Supplied citation 15](https://catalog.archives.gov/id/34911505)
+
+[Supplied citation 16](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-71-Memo-with-Re-Recordings.pdf)
+
+<a id="nov04-64e6c4e1236d0465f277"></a>
+### nov04-64e6c4e1236d0465f277
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-6512d93efa922a865d01"></a>
+### nov04-6512d93efa922a865d01
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-652652b65e0e9212afef"></a>
+### nov04-652652b65e0e9212afef
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-652f780c5b523ed7dda4"></a>
+### nov04-652f780c5b523ed7dda4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/CHRG-109shrg29761/pdf/CHRG-109shrg29761.pdf)
+
+<a id="nov04-65a3792c213a02e1bae2"></a>
+### nov04-65a3792c213a02e1bae2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA163)
+
+[Supplied citation 2](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA164)
+
+[Supplied citation 3](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA165)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/e0e2c12fb5363eaf15f6ea2be2e4679d6afa79e4/investigation/broader-evidence/steel-cooperation-records-2026-11-01/OPEN-RECORDS.md)
+
+<a id="nov04-6641aff63ee7c4e44080"></a>
+### nov04-6641aff63ee7c4e44080
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf)
+
+[Supplied citation 2](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2208)
+
+[Supplied citation 3](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2275)
+
+[Supplied citation 4](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2210)
+
+[Supplied citation 5](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2276),lines20–24)
+
+[Supplied citation 6](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2215)
+
+[Supplied citation 7](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2295)
+
+[Supplied citation 8](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2299)
+
+[Supplied citation 9](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2193)
+
+[Supplied citation 10](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2194)
+
+<a id="nov04-6689287b7f1241423b42"></a>
+### nov04-6689287b7f1241423b42
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-66ba2d53a5dbbfaab34c"></a>
+### nov04-66ba2d53a5dbbfaab34c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-66fe20eca7a70a0dc9f7"></a>
+### nov04-66fe20eca7a70a0dc9f7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-67008268dcbe6a9ffa7c"></a>
+### nov04-67008268dcbe6a9ffa7c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-671bc6e31936ad99bdb4"></a>
+### nov04-671bc6e31936ad99bdb4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 2](https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-base.en.bin)
+
+<a id="nov04-67252472887620f429bc"></a>
+### nov04-67252472887620f429bc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-67a164fa919d29d9789f"></a>
+### nov04-67a164fa919d29d9789f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.justice.gov/archive/ag/speeches/2001/agcrisisremarks9_28.htm)
+
+<a id="nov04-67a3bb4d9f93df4e3348"></a>
+### nov04-67a3bb4d9f93df4e3348
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=30)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/e357f0778da4001ee9ea41d56ce77bae974e862f/investigation/broader-evidence/telephone-signed-notes-continuations-2026-10-31/README.md)
+
+<a id="nov04-67d6d535e8183b004466"></a>
+### nov04-67d6d535e8183b004466
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.faa.gov/regulations_policies/orders_notices/index.cfm/go/document.information/documentID/7592)
+
+[Supplied citation 2](https://www.faa.gov/regulations_policies/orders_notices/index.cfm/go/document.list/?q=2900.1&documentTypeID=&statusID=)
+
+[Supplied citation 3](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12)
+
+[Supplied citation 4](https://www.faa.gov/sites/faa.gov/files/about/plans_reports/archive/Combined_FY_2006_FAA_PAR_Final_v6_12-14-2006.pdf#page=106)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/f3a71187146eec653eab636f1e24cd1df25f4c4e/investigation/broader-evidence/faa-directive-crosswalk-2026-10-29/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/db86a3fb3530d4c8e207f6f3a9c11bd5f3a8b1cf/investigation/broader-evidence/faa-2006-policy-citation-2026-10-29/README.md)
+
+<a id="nov04-683c0a26774708fbb33c"></a>
+### nov04-683c0a26774708fbb33c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nsarchive2.gwu.edu/NSAEBB/NSAEBB196/)
+
+[Supplied citation 2](https://nsarchive2.gwu.edu/NSAEBB/NSAEBB196/doc06.pdf)
+
+[Supplied citation 3](https://www.ntsb.gov/about/Documents/AAL77_fdr.pdf)
+
+<a id="nov04-68d820b32e5ad045ef55"></a>
+### nov04-68d820b32e5ad045ef55
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nysm.nysed.gov/sites/default/files/2024-10/wtc.guide_.pdf)
+
+<a id="nov04-68f62563f4751903d67c"></a>
+### nov04-68f62563f4751903d67c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-68f718199b99d8fae8d7"></a>
+### nov04-68f718199b99d8fae8d7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/7596136)
+
+[Supplied citation 2](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=3951)
+
+[Supplied citation 3](https://www.archives.gov/research/foia/faa-finding-aid-96-107)
+
+<a id="nov04-691006ceaecc8130e5c6"></a>
+### nov04-691006ceaecc8130e5c6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.ntsb.gov/about/Documents/AAL77_fdr.pdf)
+
+[Supplied citation 2](https://unredacted.com/wp-content/uploads/2010/04/9-11-sec-report.pdf)
+
+<a id="nov04-6938870af60b398f0b6c"></a>
+### nov04-6938870af60b398f0b6c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf)
+
+[Supplied citation 2](https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March-2020.pdf)
+
+<a id="nov04-69798a94ae7176ec1dcf"></a>
+### nov04-69798a94ae7176ec1dcf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=11)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/README.md)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=43)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=44)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=12)
+
+<a id="nov04-697b92755c0a23115d70"></a>
+### nov04-697b92755c0a23115d70
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nsarchive.gwu.edu/sites/default/files/documents/qx7xl1-j1w1s/2001-08-central-intelligence-agency-oig-report.pdf)
+
+<a id="nov04-69becc6e4067dbc42469"></a>
+### nov04-69becc6e4067dbc42469
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-69f25ea7257eac98fdc8"></a>
+### nov04-69f25ea7257eac98fdc8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-6a02efba91e3cdf498a4"></a>
+### nov04-6a02efba91e3cdf498a4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/189851483980fff2946921fbaa0d189d70e8ddae/investigation/broader-evidence/telephone-wf1899-voicemail-access-2026-11-02/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f363700f6b7010a7927a4794ba9972f09385dbe/investigation/broader-evidence/telephone-hq1492-recording-request-2026-11-02/README.md)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=52)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=55)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=51)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=56)
+
+<a id="nov04-6b4ae97d27c30f620733"></a>
+### nov04-6b4ae97d27c30f620733
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.1714.pdf):)
+
+[Supplied citation 2](https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.1714.pdf#page=11)
+
+[Supplied citation 3](https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.1714.pdf#page=38)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.1714.pdf#page=12)
+
+<a id="nov04-6bca6de3d080bc8d50f8"></a>
+### nov04-6bca6de3d080bc8d50f8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-6bf810e2691d36db4a1c"></a>
+### nov04-6bf810e2691d36db4a1c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-6c551bb51cca7e529152"></a>
+### nov04-6c551bb51cca7e529152
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=61)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=62)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=3)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=1)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=38)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=41)
+
+<a id="nov04-6c7c0dd0505aeab497ee"></a>
+### nov04-6c7c0dd0505aeab497ee
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.gao.gov/assets/a110066.html)
+
+[Supplied citation 2](https://archives.fbi.gov/archives/news/testimony/progress-report-on-the-reorganization-and-refocus-of-the-fbi)
+
+<a id="nov04-6cb17c022a1b4edd8344"></a>
+### nov04-6cb17c022a1b4edd8344
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf)
+
+[Supplied citation 2](https://9-11commission.gov/archive/hearing7/9-11Commission_Hearing_2004-01-26.htm)
+
+<a id="nov04-6d914d1b88f62023ee2b"></a>
+### nov04-6d914d1b88f62023ee2b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=1)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=8)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=7)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=4)
+
+[Supplied citation 6](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=3)
+
+[Supplied citation 7](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=2)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md)
+
+[Supplied citation 10](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=5)
+
+[Supplied citation 11](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf)
+
+[Supplied citation 12](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/633.pdf)
+
+[Supplied citation 13](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html)
+
+<a id="nov04-6dc743d4bd3985a70ebc"></a>
+### nov04-6dc743d4bd3985a70ebc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-6ec144ebc52ce6fcbb96"></a>
+### nov04-6ec144ebc52ce6fcbb96
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.georgewbushlibrary.gov/sites/default/files/2022-08/20210018f-findingaid.pdf)
+
+[Supplied citation 2](https://www.scribd.com/document/15740811/DM-B8-Team-8-Fdr-Email-From-Hyde-to-Front-Office-Re-White-House-Day-of-Investigation-511),to)
+
+<a id="nov04-6eed7d33d79a819ddd15"></a>
+### nov04-6eed7d33d79a819ddd15
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.9-11commission.gov/report/911Report_Ch4.htm)
+
+<a id="nov04-6ef1572375b7b9492b81"></a>
+### nov04-6ef1572375b7b9492b81
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-6f42479719bd481e4cfb"></a>
+### nov04-6f42479719bd481e4cfb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/deb98709a44079e1ad5ddb0b62bc814b6ef30c60/investigation/broader-evidence/socc-record-targets-2026-10-31/README.md)
+
+[Supplied citation 2](https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version#page=27)
+
+[Supplied citation 3](https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version#page=29)
+
+[Supplied citation 4](https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version#page=31)
+
+[Supplied citation 5](https://catalog.archives.gov/id/2608461)
+
+<a id="nov04-6f8bd52988068373a918"></a>
+### nov04-6f8bd52988068373a918
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-70023848a5bcefea4114"></a>
+### nov04-70023848a5bcefea4114
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/main/investigation/broader-evidence/faa-semiannual-investigation-status-2026-10-29/README.md)
+
+<a id="nov04-7072081bd0b8b175459c"></a>
+### nov04-7072081bd0b8b175459c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/view)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file):)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=5)
+
+<a id="nov04-709a9c4cb56602a58490"></a>
+### nov04-709a9c4cb56602a58490
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-709ead702b36ac19cf16"></a>
+### nov04-709ead702b36ac19cf16
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-70de23a18646fae214cb"></a>
+### nov04-70de23a18646fae214cb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-712c9806c9a98fcdc6ea"></a>
+### nov04-712c9806c9a98fcdc6ea
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-03-of-08/view)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-03-of-08/at_download/file)
+
+<a id="nov04-7133c82de6b5afe242ce"></a>
+### nov04-7133c82de6b5afe242ce
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/2012-156-doc-3.pdf#page=2)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/2012-156-doc-1.pdf#page=1)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d148a319c76e579b59dece22395501d66b64463/investigation/broader-evidence/faa-ot2-config-scope-2026-11-04/README.md)
+
+<a id="nov04-7139043e6cdc9043a323"></a>
+### nov04-7139043e6cdc9043a323
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-713bfd463942773118b8"></a>
+### nov04-713bfd463942773118b8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=5)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=12)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=6)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=13)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=4)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=3)
+
+[Supplied citation 7](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=11)
+
+[Supplied citation 8](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=7)
+
+[Supplied citation 9](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=14)
+
+<a id="nov04-71a780c85cec2ab4484e"></a>
+### nov04-71a780c85cec2ab4484e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.fbi.gov/history/artifacts/911-world-trade-center-steel-beam)
+
+[Supplied citation 2](https://www.911memorial.org/visit/museum/collection/conservation)
+
+[Supplied citation 3](https://911memorial.org/911-faqs)
+
+<a id="nov04-71aa05a7570342c2f783"></a>
+### nov04-71aa05a7570342c2f783
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/CHRG-109shrg29761/pdf/CHRG-109shrg29761.pdf)
+
+<a id="nov04-71d99b37531dc1949160"></a>
+### nov04-71d99b37531dc1949160
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-71edcbd3a8b98ff26be2"></a>
+### nov04-71edcbd3a8b98ff26be2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-71f838e40b02273840ef"></a>
+### nov04-71f838e40b02273840ef
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-72439eefe733a2992576"></a>
+### nov04-72439eefe733a2992576
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-729868ab625e9e717c8e"></a>
+### nov04-729868ab625e9e717c8e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/ST00002.pdf)
+
+<a id="nov04-72d2c0a35a7e910b6709"></a>
+### nov04-72d2c0a35a7e910b6709
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/66330951),85physicalpages,2,414,936bytes,SHA-256)
+
+<a id="nov04-732dedfd7d6097ea69a7"></a>
+### nov04-732dedfd7d6097ea69a7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-73521b05af108415981c"></a>
+### nov04-73521b05af108415981c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.aneta.org/911experiments_com/WTCdust/study/index.htm)
+
+<a id="nov04-735d61ee86753a1c34c6"></a>
+### nov04-735d61ee86753a1c34c6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7394ffc88b50c66d4a1a"></a>
+### nov04-7394ffc88b50c66d4a1a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/df96947a51e984f1fb2e7afad1925e63a67a926d/investigation/broader-evidence/faa-recording-retention-source-joins-2026-10-27/README.md)
+
+[Supplied citation 2](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2285)
+
+[Supplied citation 3](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2287)
+
+[Supplied citation 4](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2286)
+
+[Supplied citation 5](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2299)
+
+[Supplied citation 6](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=260)
+
+[Supplied citation 7](https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf#page=149)
+
+[Supplied citation 8](https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf#page=173)
+
+[Supplied citation 9](https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf#page=188)
+
+<a id="nov04-73ab5bcfdaa2b95fa2e9"></a>
+### nov04-73ab5bcfdaa2b95fa2e9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-73b6bc02cc88c09f4ade"></a>
+### nov04-73b6bc02cc88c09f4ade
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/da9fd9dfb7d1af87c88143b0148914439420c4cd/investigation/broader-evidence/steel-tape2-3-source-2026-11-03/README.md)
+
+[Supplied citation 3](https://www.govinfo.gov/content/pkg/GOVPUB-C13-41f9c1ed6889bdc5fd7ea98bfc31a05b/pdf/GOVPUB-C13-41f9c1ed6889bdc5fd7ea98bfc31a05b.pdf)
+
+<a id="nov04-73dd17f9d2773362d355"></a>
+### nov04-73dd17f9d2773362d355
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view):)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+<a id="nov04-73e27ab0a45e7cc40fcf"></a>
+### nov04-73e27ab0a45e7cc40fcf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-73e5a15748078ea0bc6f"></a>
+### nov04-73e5a15748078ea0bc6f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://findingaids.library.nyu.edu/nyhs/nyhs_archives_rg20/all/)
+
+[Supplied citation 2](https://www.flickr.com/photos/wallyg/55558340145/)
+
+[Supplied citation 3](https://www.flickr.com/photos/wallyg/55558340145/sizes/o/)
+
+[Supplied citation 4](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+[Supplied citation 5](https://nysm.nysed.gov/about/press/phase-2-world-trade-center-exhibition-opens-feb-1-nys-museum)
+
+[Supplied citation 6](https://nysm.nysed.gov/exhibitions/ongoing/world-trade-center-rescue-recovery-response)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/1a1253c81d826ecb148c4b1c53c5fb37cb00c7cb/investigation/broader-evidence/steel-nysm-provenance-lead-2026-11-03/README.md)
+
+<a id="nov04-73ed4be4cec107f5afd8"></a>
+### nov04-73ed4be4cec107f5afd8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/7c9530c5d7398931c5a7aaf5d2de582e69d49da4/investigation/broader-evidence/steel-contractor-review-2026-10-27/README.md)
+
+[Supplied citation 2](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=173)
+
+[Supplied citation 3](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=251)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=178)
+
+[Supplied citation 5](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=252)
+
+[Supplied citation 6](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=254)
+
+[Supplied citation 7](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=184)
+
+[Supplied citation 8](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=239)
+
+[Supplied citation 9](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=87)
+
+[Supplied citation 10](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=88)
+
+[Supplied citation 11](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=96)
+
+[Supplied citation 12](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=258)
+
+[Supplied citation 13](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=255)
+
+[Supplied citation 14](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv1.pdf#page=296)
+
+<a id="nov04-741a99a6e5f430ca676d"></a>
+### nov04-741a99a6e5f430ca676d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7426db1c335b07982290"></a>
+### nov04-7426db1c335b07982290
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7427203bdf442bc7ed4c"></a>
+### nov04-7427203bdf442bc7ed4c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/research/foia/faa-finding-aid-36-47)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7596524)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-230-NTSB-request-01-096-REDACT-SEALED.pdf)
+
+[Supplied citation 4](https://catalog.archives.gov/id/7596437)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-116-Emails-ref-NTSB-obscured.pdf)
+
+[Supplied citation 6](https://catalog.archives.gov/id/7596442)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-120-FAX-covers-%26-emails-support-for-NTSB-plus.pdf)
+
+[Supplied citation 8](https://catalog.archives.gov/id/7596612)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-78-NTSB-information.pdf)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/e8209abd23940047f02fe8c15be86202555aacd2/investigation/broader-evidence/radar-correlation-originals-2026-10-27/README.md)
+
+[Supplied citation 11](https://github.com/AveLyra/911-conspiracy-investigation/blob/666a5a1ebeb182909819ffe314192dcdfea81347/investigation/broader-evidence/faa-native-transfer-records-2026-10-27/README.md)
+
+[Supplied citation 12](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e8f426121619034860e232d6e1c6018329d7fbc/investigation/broader-evidence/recorder-clock-sources-2026-10-27/README.md)
+
+<a id="nov04-746179c7221224949dd7"></a>
+### nov04-746179c7221224949dd7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7525e5986ec161b63de7"></a>
+### nov04-7525e5986ec161b63de7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://dspace.njstatelib.org/server/api/core/bitstreams/078a6652-bd22-4017-a0d2-d79f8054b9d5/content`)
+
+<a id="nov04-752b089670e68e5fb6c8"></a>
+### nov04-752b089670e68e5fb6c8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7579e4a66b8be5ecea85"></a>
+### nov04-7579e4a66b8be5ecea85
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=47)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md)
+
+<a id="nov04-7586df00487fb38617c2"></a>
+### nov04-7586df00487fb38617c2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-75d536cc50de83f21265"></a>
+### nov04-75d536cc50de83f21265
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-75d68c5917c32dfcccba"></a>
+### nov04-75d68c5917c32dfcccba
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-75ee053bc35d9def295a"></a>
+### nov04-75ee053bc35d9def295a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-75ef4a210fc79df83b79"></a>
+### nov04-75ef4a210fc79df83b79
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-76a24496564d8d3a2836"></a>
+### nov04-76a24496564d8d3a2836
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution.html`)
+
+<a id="nov04-76b09da4cd3cc76ae306"></a>
+### nov04-76b09da4cd3cc76ae306
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.justice.gov/archive/olp/ag-guidelines-10312003.pdf)
+
+<a id="nov04-76f5ff51fa4a695383fd"></a>
+### nov04-76f5ff51fa4a695383fd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-771bbf6844907501662d"></a>
+### nov04-771bbf6844907501662d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-77426c12e887f8371e0d"></a>
+### nov04-77426c12e887f8371e0d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-71-Memo-with-Re-Recordings.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-A90-67-Memo-Certifying-Re-recording.pdf)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/73cccf17d825861ba62161cd631454446bed550c/investigation/broader-evidence/faa-a90-original-copy-trail-2026-11-01/README.md)
+
+<a id="nov04-776a44188c41ca2a0695"></a>
+### nov04-776a44188c41ca2a0695
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-77be2a2762298dbd20a9"></a>
+### nov04-77be2a2762298dbd20a9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-77c093578f2968a6cf77"></a>
+### nov04-77c093578f2968a6cf77
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=35)
+
+[Supplied citation 2](https://www.scribd.com/document/19131547/T7-B13-DOJ-Doc-Req-35-13-Packet-6-Fdr-Entire-Contents-FBI-Reports-730)
+
+<a id="nov04-77c66df09c96bc80cdfb"></a>
+### nov04-77c66df09c96bc80cdfb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-77d61db824dabd52b232"></a>
+### nov04-77d61db824dabd52b232
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-78163a59ab42d8840fef"></a>
+### nov04-78163a59ab42d8840fef
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://archives.fbi.gov/archives/news/testimony/progress-report-on-the-reorganization-and-refocus-of-the-fbi)
+
+[Supplied citation 2](https://www.gao.gov/assets/a110066.html)
+
+<a id="nov04-78208e1a8acc9656ccba"></a>
+### nov04-78208e1a8acc9656ccba
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-782a792a9db058dc7a04"></a>
+### nov04-782a792a9db058dc7a04
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/34911499)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7599645)
+
+[Supplied citation 3](https://catalog.archives.gov/id/34911505)
+
+<a id="nov04-783cc7b6543c46e4126e"></a>
+### nov04-783cc7b6543c46e4126e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7860838bf29c8d04fba8"></a>
+### nov04-7860838bf29c8d04fba8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://dspace.njstatelib.org/server/api/core/bitstreams/078a6652-bd22-4017-a0d2-d79f8054b9d5/content)
+
+<a id="nov04-7893f22fc25be2bce1e5"></a>
+### nov04-7893f22fc25be2bce1e5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-78a23cf541949c3be291"></a>
+### nov04-78a23cf541949c3be291
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-78e17427596cf1da01fc"></a>
+### nov04-78e17427596cf1da01fc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-78fa9ed45f5f4f0e697a"></a>
+### nov04-78fa9ed45f5f4f0e697a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA163)
+
+[Supplied citation 2](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA164)
+
+[Supplied citation 3](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA165)
+
+[Supplied citation 4](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA161&output=text)
+
+<a id="nov04-793e2dedc86cd807842e"></a>
+### nov04-793e2dedc86cd807842e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=92)
+
+[Supplied citation 2](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=93)
+
+[Supplied citation 3](https://www.archives.gov/files/research/9-11/finding-aid.pdf)
+
+<a id="nov04-794ffa261bb2a7182c3a"></a>
+### nov04-794ffa261bb2a7182c3a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-79682352af7ae8d577db"></a>
+### nov04-79682352af7ae8d577db
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=149)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/e4e27ee8cd54f00d62917b2b9181d22503d2df9e/investigation/broader-evidence/five-inconsistency-tests-2026-10-31/README.md)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=151)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=152)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=154)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=155)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=158)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=159)
+
+[Supplied citation 10](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=160)
+
+[Supplied citation 11](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 12](https://catalog.archives.gov/id/7598367)
+
+<a id="nov04-797487c6dc9098b47a74"></a>
+### nov04-797487c6dc9098b47a74
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-79cd00fbb12997bf09f1"></a>
+### nov04-79cd00fbb12997bf09f1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.fbi.gov/history/artifacts/911-world-trade-center-steel-beam)
+
+[Supplied citation 2](https://www.911memorial.org/visit/museum/collection/conservation)
+
+[Supplied citation 3](https://911memorial.org/911-faqs)
+
+<a id="nov04-79cdd01e5c54b3a0a10d"></a>
+### nov04-79cdd01e5c54b3a0a10d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7a6d02ee3662d0a837ba"></a>
+### nov04-7a6d02ee3662d0a837ba
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7a89811bcb425088b337"></a>
+### nov04-7a89811bcb425088b337
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://findingaids.library.nyu.edu/nyhs/nyhs_archives_rg20/all/)
+
+[Supplied citation 2](https://www.flickr.com/photos/wallyg/55558340145/)
+
+[Supplied citation 3](https://www.flickr.com/photos/wallyg/55558340145/sizes/o/)
+
+[Supplied citation 4](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+[Supplied citation 5](https://nysm.nysed.gov/about/press/phase-2-world-trade-center-exhibition-opens-feb-1-nys-museum)
+
+[Supplied citation 6](https://nysm.nysed.gov/exhibitions/ongoing/world-trade-center-rescue-recovery-response)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/1a1253c81d826ecb148c4b1c53c5fb37cb00c7cb/investigation/broader-evidence/steel-nysm-provenance-lead-2026-11-03/README.md)
+
+<a id="nov04-7a99bb0bf3de0f859a8b"></a>
+### nov04-7a99bb0bf3de0f859a8b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/2606775)
+
+[Supplied citation 2](https://catalog.archives.gov/id/2555625)
+
+<a id="nov04-7a9b75483590f7d92584"></a>
+### nov04-7a9b75483590f7d92584
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=53)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=60)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=54)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=61)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=62)
+
+[Supplied citation 6](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=34)
+
+[Supplied citation 7](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=31)
+
+[Supplied citation 8](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+<a id="nov04-7ae9c72d35746756543f"></a>
+### nov04-7ae9c72d35746756543f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7b9619d8afb8c5eaca20"></a>
+### nov04-7b9619d8afb8c5eaca20
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://web.archive.org/web/20241030203137id_/https://www.transportation.gov/sites/dot.gov/files/docs/dotorders/DOT)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/README.md)
+
+[Supplied citation 3](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12)
+
+<a id="nov04-7be1e33e2a478ead76cf"></a>
+### nov04-7be1e33e2a478ead76cf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=4)
+
+[Supplied citation 2](https://govinfo.library.unt.edu/911/archive/hearing7/9-11Commission_Hearing_2004-01-27.pdf#page=106)
+
+[Supplied citation 3](https://govinfo.library.unt.edu/911/archive/hearing7/9-11Commission_Hearing_2004-01-27.pdf#page=109)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/17aef02c7d79169234dc04c4a67f38425900ea30/investigation/broader-evidence/telephone-transcript-generation-chain-2026-11-02/README.md)
+
+<a id="nov04-7bfd2f0bbbfc1db3e8cc"></a>
+### nov04-7bfd2f0bbbfc1db3e8cc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=1)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=2)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=4)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=5)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=3)
+
+<a id="nov04-7c7867000f0ec208263d"></a>
+### nov04-7c7867000f0ec208263d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://beverlyhills.org/161/Agreements-Ordinances-Resolutions)
+
+[Supplied citation 2](https://apps.beverlyhills.org/cityclerk/searchagreementsordinancesresolutions/)
+
+[Supplied citation 3](https://apps.beverlyhills.org/cityclerk/searchagreementsordinancesresolutions/web.jsp?SEARCHTYPE=ALL&DOCQUERY=&QUERYTYPE=AND&VENDOR=&NUMBER=11-R-12833&DATE=&TYPE=&action=Search)
+
+[Supplied citation 4](https://aedocs.beverlyhills.org/AppEnhancer/datasources/AX-COBH_City/ISubmitQuery?DocNavBlocked=True&DispMode=11&AppName=CITY-RESOLUTIONS_ORDINANCES_AGREEMENTS&ViewMode=ResultSet&SearchAllRevisions=True&PublicQuery=False&FulltextQuery=&FulltextQueryType=And&FulltextOperation=AND&FulltextThesaurus=False&DATE=09-08-2011&DOC%20TYPE=RESOLUTION&NUMBER%20(ORD%2FAGR%2FRESO)=11-R-12833)
+
+[Supplied citation 5](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11)
+
+[Supplied citation 6](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/4ac0f984339daabcf92b2ffe71c046d0d3d0dff5/investigation/broader-evidence/bh-steel-ratification-minutes-2026-11-03/README.md)
+
+<a id="nov04-7cf4405b3cf11b57b250"></a>
+### nov04-7cf4405b3cf11b57b250
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/5031c6dfa73e1f59491f259e00f168c37cb21788/investigation/broader-evidence/telephone-usage-report-2026-10-27/README.md)
+
+[Supplied citation 3](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record)
+
+[Supplied citation 4](https://html.scribdassets.com/5bafzdomdce6sz3/images/1-65f7ebcbf8.jpg)
+
+[Supplied citation 5](https://html.scribdassets.com/5bafzdomdce6sz3/images/21-1a330ff42d.jpg)
+
+[Supplied citation 6](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 7](https://html.scribdassets.com/5bafzdomdce6sz3/images/16-6aa0e8fe82.jpg)
+
+[Supplied citation 8](https://html.scribdassets.com/5bafzdomdce6sz3/images/13-ec2683a0f2.jpg)
+
+[Supplied citation 9](https://html.scribdassets.com/5bafzdomdce6sz3/images/15-d3c94df2c0.jpg)
+
+<a id="nov04-7d52f1d90a891820c2b0"></a>
+### nov04-7d52f1d90a891820c2b0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/commit/bb9e9c5d6fd30ec3bb3fbc5359f388ef8c8c0db2)
+
+<a id="nov04-7d94138a78f25839c985"></a>
+### nov04-7d94138a78f25839c985
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=63)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=64)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=65)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f363700f6b7010a7927a4794ba9972f09385dbe/investigation/broader-evidence/telephone-hq1492-recording-request-2026-11-02/README.md)
+
+<a id="nov04-7db50a706025e6346eec"></a>
+### nov04-7db50a706025e6346eec
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7dd9ac3c44297e35e00d"></a>
+### nov04-7dd9ac3c44297e35e00d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md)
+
+<a id="nov04-7e14401447d40c662960"></a>
+### nov04-7e14401447d40c662960
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7e7aa01ef5e96c86679e"></a>
+### nov04-7e7aa01ef5e96c86679e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7ef137388304290ced62"></a>
+### nov04-7ef137388304290ced62
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%206.pdf#page=39)
+
+[Supplied citation 2](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%206.pdf#page=54)
+
+[Supplied citation 3](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%201.pdf#page=33)
+
+[Supplied citation 4](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%201.pdf#page=63)
+
+[Supplied citation 5](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%205.pdf#page=21)
+
+[Supplied citation 6](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%206.pdf#page=38)
+
+[Supplied citation 7](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%206.pdf#page=49)
+
+[Supplied citation 8](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%203.pdf#page=22)
+
+[Supplied citation 9](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%205.pdf#page=62)
+
+[Supplied citation 10](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%206.pdf#page=48)
+
+[Supplied citation 11](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%205.pdf#page=64)
+
+[Supplied citation 12](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%205.pdf#page=69)
+
+[Supplied citation 13](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%201.pdf#page=35)
+
+[Supplied citation 14](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%201.pdf#page=10)
+
+[Supplied citation 15](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%201.pdf#page=3)
+
+[Supplied citation 16](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%205.pdf#page=117)
+
+[Supplied citation 17](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%201.pdf#page=7)
+
+[Supplied citation 18](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%206.pdf#page=53)
+
+[Supplied citation 19](https://www.israellobby.org/UrbanMoving/1169683-001%20---%20303A-NY-C237934-Serial%20326%20---%20Section%201%20%281037759%29.pdf#page=2)
+
+[Supplied citation 20](https://www.georgewbushlibrary.gov/sites/default/files/2026-05/20250218f-findingaid.pdf)
+
+[Supplied citation 21](https://www.georgewbushlibrary.gov/research/finding-aids/freedom-information-act-requests/foia-requests-2025)
+
+<a id="nov04-7f2d25dfdb3048229732"></a>
+### nov04-7f2d25dfdb3048229732
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/GOVPUB-Y4_IN8_18-PURL-gpo71223/pdf/GOVPUB-Y4_IN8_18-PURL-gpo71223.pdf)
+
+<a id="nov04-7f360bb47e15cec3c179"></a>
+### nov04-7f360bb47e15cec3c179
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7f49d90d24df1aca1537"></a>
+### nov04-7f49d90d24df1aca1537
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/597fb92d0d4da93fba6938452db95500ab74e76f/investigation/broader-evidence/faa-nmcc-bridge-scope-2026-11-04/README.md)
+
+[Supplied citation 2](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=30)
+
+[Supplied citation 3](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=9)
+
+[Supplied citation 4](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=10)
+
+[Supplied citation 5](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12)
+
+[Supplied citation 6](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=13)
+
+<a id="nov04-7f62b62939261f9696a1"></a>
+### nov04-7f62b62939261f9696a1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://web.archive.org/web/20100524181019id_/http://warrenstutt.com/AAL77CheckHammingCodesAndPageParities/Source/AAL77CheckHammingCodesAndPageParities.zip)
+
+[Supplied citation 2](https://web.archive.org/web/20100524180943id_/http://warrenstutt.com/AAL77CheckHammingCodesAndPageParities/OutputFiles/AAL77%20Hamming%20Codes%20and%20Page%20Parities.zip)
+
+[Supplied citation 3](https://web.archive.org/web/20041226052122id_/http://www.asc.gov.tw:80/author_files/ASC-TRT-99-007.pdf)
+
+<a id="nov04-7f96fab9128a557b0814"></a>
+### nov04-7f96fab9128a557b0814
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-7fc963ab2269c781ca35"></a>
+### nov04-7fc963ab2269c781ca35
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=149)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/e4e27ee8cd54f00d62917b2b9181d22503d2df9e/investigation/broader-evidence/five-inconsistency-tests-2026-10-31/README.md)
+
+<a id="nov04-8018575ea1e006a691c2"></a>
+### nov04-8018575ea1e006a691c2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8051e5c98be4aadddfd7"></a>
+### nov04-8051e5c98be4aadddfd7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=23)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=24)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/b6923d4d9c874ab71fe88112f401d5279caaeb95/investigation/broader-evidence/telephone-operator-notes-mfr-2026-10-31/README.md)
+
+<a id="nov04-805d2455556506e07870"></a>
+### nov04-805d2455556506e07870
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-807006ddc217f9a51dd8"></a>
+### nov04-807006ddc217f9a51dd8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8086cf6cbcf950fbd9f9"></a>
+### nov04-8086cf6cbcf950fbd9f9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf)
+
+[Supplied citation 2](https://doi.org/10.1007/s10853-014-8685-2)
+
+[Supplied citation 3](https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf)
+
+<a id="nov04-8088de8a3bea34f36219"></a>
+### nov04-8088de8a3bea34f36219
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA163)
+
+[Supplied citation 2](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA164)
+
+[Supplied citation 3](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA165)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/e0e2c12fb5363eaf15f6ea2be2e4679d6afa79e4/investigation/broader-evidence/steel-cooperation-records-2026-11-01/OPEN-RECORDS.md)
+
+<a id="nov04-809e43bf14d13bc4ea67"></a>
+### nov04-809e43bf14d13bc4ea67
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-80b7f403d3555714ef39"></a>
+### nov04-80b7f403d3555714ef39
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-80c2cdd469a091c17af1"></a>
+### nov04-80c2cdd469a091c17af1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8108ed1458ab9213b13a"></a>
+### nov04-8108ed1458ab9213b13a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://govinfo.library.unt.edu/911/archive/hearing7/9-11Commission_Hearing_2004-01-27.pdf)
+
+<a id="nov04-811e5136dcc29db31e69"></a>
+### nov04-811e5136dcc29db31e69
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf#page=1)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=1)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf#page=1)
+
+[Supplied citation 6](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=2)
+
+<a id="nov04-8122f0af1dee1665ae3b"></a>
+### nov04-8122f0af1dee1665ae3b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/study-faqs/wtc-7-investigation)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/99a624a8089c8b57e6bf300674b9d7495fdf1065/investigation/wtc7/thermal-assignment-trace/report.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/99a624a8089c8b57e6bf300674b9d7495fdf1065/investigation/wtc7/connection-calibration-audit/report.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/99a624a8089c8b57e6bf300674b9d7495fdf1065/investigation/wtc7/assembly-test-source-audit/report.md)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/99a624a8089c8b57e6bf300674b9d7495fdf1065/investigation/wtc7/causal-chain-synthesis/report.md)
+
+[Supplied citation 6](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9.pdf#page=634)
+
+[Supplied citation 7](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9a.pdf#page=156)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/99a624a8089c8b57e6bf300674b9d7495fdf1065/investigation/wtc7/c79-and-timing-crosschecks-2026-10-21/README.md#the-earlier-damage-control-has-a-finite-and-shorter-reported-horizon)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/99a624a8089c8b57e6bf300674b9d7495fdf1065/investigation/wtc7/material-run-crosswalk/report.md)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/99a624a8089c8b57e6bf300674b9d7495fdf1065/investigation/wtc7/released-file-discrepancy-index/index.md)
+
+<a id="nov04-8154ff2e4640a8a61198"></a>
+### nov04-8154ff2e4640a8a61198
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-815b9fa6d46698306a19"></a>
+### nov04-815b9fa6d46698306a19
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/798a018ce84611646dfe5e11edcef073609ad75f/investigation/broader-evidence/steel-native-report-review-2026-10-28/README.md)
+
+[Supplied citation 2](https://web.archive.org/web/20120310003549id_/http://www.nist.gov/el/disasterstudies/wtc/upload/WTCcontractaward_0155.pdf#page=1)
+
+[Supplied citation 3](https://www.nist.gov/world-trade-center-investigation/about-investigation/investigation-contracts)
+
+<a id="nov04-815bdc6601d331e39744"></a>
+### nov04-815bdc6601d331e39744
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-81616da7261eabc5e597"></a>
+### nov04-81616da7261eabc5e597
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-81e89972d1b709121de0"></a>
+### nov04-81e89972d1b709121de0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/16762194/T7-B20-Timelines-911-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version)
+
+[Supplied citation 2](https://catalog.archives.gov/medialive/0/6096/2609600/content/arcmedia/9-11/MFR/t-0148-911MFR-00014.pdf#page=2)
+
+<a id="nov04-821a2470b0276034cc59"></a>
+### nov04-821a2470b0276034cc59
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=18)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=23)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d9d2c9684c29602cf5bb570cbf38c46e09fd50d/investigation/broader-evidence/telephone-first-operator-followup-2026-11-02/README.md)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+<a id="nov04-8267bdf27ab251bf352b"></a>
+### nov04-8267bdf27ab251bf352b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-826efb35c7ff02cd8ab0"></a>
+### nov04-826efb35c7ff02cd8ab0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-71-Memo-with-Re-Recordings.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/73cccf17d825861ba62161cd631454446bed550c/investigation/broader-evidence/faa-a90-original-copy-trail-2026-11-01/README.md)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-71-Memo-with-Re-Recordings.pdf#page=1)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-A90-67-Memo-Certifying-Re-recording.pdf#page=1)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf#page=1):)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf#page=3):)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf#page=4):)
+
+<a id="nov04-8281a8950d40d6554865"></a>
+### nov04-8281a8950d40d6554865
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8293a5151a226408b262"></a>
+### nov04-8293a5151a226408b262
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-82c800cdf00924a623bf"></a>
+### nov04-82c800cdf00924a623bf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+[Supplied citation 2](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=95)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2609597)
+
+[Supplied citation 4](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=31)
+
+[Supplied citation 5](https://catalog.archives.gov/id/2608440)
+
+<a id="nov04-82e9c563f1596127740d"></a>
+### nov04-82e9c563f1596127740d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-834312042eb24b493de3"></a>
+### nov04-834312042eb24b493de3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e9ce8fa287fa4410241bc8fba303cefd6476467/investigation/broader-evidence/telephone-wf334-recording-lead-2026-11-02/README.md)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+<a id="nov04-8343a9b960ad7fd33a1f"></a>
+### nov04-8343a9b960ad7fd33a1f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-83a8b20e4ee475341cbd"></a>
+### nov04-83a8b20e4ee475341cbd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-83df920c94655d8e27b3"></a>
+### nov04-83df920c94655d8e27b3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-83fa152fdbf5ece50f7f"></a>
+### nov04-83fa152fdbf5ece50f7f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialive/0/6096/2609600/content/arcmedia/9-11/MFR/t-0148-911MFR-00014.pdf)
+
+[Supplied citation 2](https://www.archives.gov/research/9-11/commission-memoranda.html)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2609600)
+
+[Supplied citation 4](https://catalog.archives.gov/medialive/97/6095/2609597/content/arcmedia/9-11/MFR/t-0148-911MFR-00011.pdf#page=3)
+
+<a id="nov04-8412481129165980c2bd"></a>
+### nov04-8412481129165980c2bd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-21.pdf)
+
+[Supplied citation 3](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=9)
+
+[Supplied citation 4](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=10)
+
+<a id="nov04-842a21b2154234d4b648"></a>
+### nov04-842a21b2154234d4b648
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-844bcac868d075e4050a"></a>
+### nov04-844bcac868d075e4050a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17)
+
+[Supplied citation 2](https://www.scribd.com/document/14142009/NYC-Box-2-NEADS-Transcript-Rome-NY-Fdr-Transcript-Pgs-1-82-1237-1417)
+
+[Supplied citation 3](https://www.scribd.com/document/14142047/NYC-Box-3-Neads-conr-norad-Fdr-Transcript-Neads-Channel-2-Mcc-Upside-006)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/e7e67b0b3ced08a95400a401448dee6dc4ae3a4e/investigation/broader-evidence/neads-alderson-preview-2026-10-31/README.md)
+
+<a id="nov04-84949969d036a6dd8225"></a>
+### nov04-84949969d036a6dd8225
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-84b65b8dca08b42e11f4"></a>
+### nov04-84b65b8dca08b42e11f4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/FO11002.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/BR00003.pdf)
+
+<a id="nov04-84beedb1d82f89b46a08"></a>
+### nov04-84beedb1d82f89b46a08
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e9ce8fa287fa4410241bc8fba303cefd6476467/investigation/broader-evidence/telephone-wf334-recording-lead-2026-11-02/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f78618d88ebcbd3e91811e9ba17f6457a6027ef/investigation/broader-evidence/telephone-wf334-static-context-2026-11-02/README.md)
+
+<a id="nov04-84fbad2b4e5834103db1"></a>
+### nov04-84fbad2b4e5834103db1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=9)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view)
+
+[Supplied citation 3](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=99)
+
+[Supplied citation 4](https://www.scribd.com/document/13499803/T7-B13-Flights-Phone-Calls-Fdr-Search-of-FBI-302-Files-for-175-77-and-93)
+
+<a id="nov04-8559ea5d5f3040345abd"></a>
+### nov04-8559ea5d5f3040345abd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-858e4eafe3fa4babc691"></a>
+### nov04-858e4eafe3fa4babc691
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA176)
+
+[Supplied citation 2](https://www.govinfo.gov/content/pkg/USCODE-2000-title15/pdf/USCODE-2000-title15-chap7-sec281a.pdf)
+
+[Supplied citation 3](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA161&output=text)
+
+[Supplied citation 4](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA171&output=text)
+
+<a id="nov04-85c4e1e9d87c4cb25797"></a>
+### nov04-85c4e1e9d87c4cb25797
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/8b787be27fcb665a851a42e318ccc4fd0b6117e9/investigation/broader-evidence/faa-1078-marked-passages-2026-10-30/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/8bc80894a40ac207b2ccce62a9fdd6d22d4c1139/investigation/broader-evidence/faa-911-special-schedule-2026-10-30/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/3f50f2c6904eca6a39efa4c06c15ea838729a65d/investigation/broader-evidence/moussaoui-reply-update-2026-10-30/README.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/591ed5873ce7895f47c092f83f244d98efa18154/investigation/broader-evidence/moussaoui-aug22-dissemination-2026-10-31/README.md)
+
+<a id="nov04-85eb7973037c6f45b2db"></a>
+### nov04-85eb7973037c6f45b2db
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/abefdac15a5474b2cba2407dc7d0e6bcd58ead59/investigation/broader-evidence/telephone-playback-custody-2026-10-31/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/d5b279a04f2fe18b78548222aea75451bfa7f60a/investigation/broader-evidence/telephone-sero-evidence-inventory-2026-10-31/README.md)
+
+<a id="nov04-85f020bead4bdd8ca6b5"></a>
+### nov04-85f020bead4bdd8ca6b5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=11)
+
+<a id="nov04-85f248823085ef6a8a12"></a>
+### nov04-85f248823085ef6a8a12
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-85f3990bb9f9c9855467"></a>
+### nov04-85f3990bb9f9c9855467
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=47)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/view)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md)
+
+<a id="nov04-85f459646761cff3c35c"></a>
+### nov04-85f459646761cff3c35c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-85ffbec898dfcdeaa20a"></a>
+### nov04-85ffbec898dfcdeaa20a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-86165fdc1b1b29949d21"></a>
+### nov04-86165fdc1b1b29949d21
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-864996f85230cd74627f"></a>
+### nov04-864996f85230cd74627f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-86d9bef55d2b297100d5"></a>
+### nov04-86d9bef55d2b297100d5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1121-MEMORANDUM--FORMAL-ACCIDENT-PACKAGE-REF-ZNY-ARTCC-148-UAL175-CORRECTIONS.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7598359)|464,135)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1123-MEMO--FORMAL-ACCIDENT-PACKAGE-REF-ZNY-ARTCC-148-UAL175-ON-CORRECTIONS-REDACT-SEALED.pdf)
+
+[Supplied citation 4](https://catalog.archives.gov/id/7598361)|190,274)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/608171664400ed8d1e95f70277ea994702a3cbd7/investigation/broader-evidence/faa-package-corrections-2002-2026-10-30/README.md)
+
+<a id="nov04-86f83deb628a1464540b"></a>
+### nov04-86f83deb628a1464540b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.mc.mil/Portals/0/pdfs/KSM2/KSM%20II%20%28AE773%28KSM%29%29.pdf)
+
+<a id="nov04-87420360905ac473f1a1"></a>
+### nov04-87420360905ac473f1a1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1)
+
+[Supplied citation 2](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=5)
+
+[Supplied citation 3](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=6)
+
+[Supplied citation 4](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=10)
+
+[Supplied citation 5](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=11)
+
+[Supplied citation 6](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11#page=4)
+
+<a id="nov04-877d63ccfab2ad734572"></a>
+### nov04-877d63ccfab2ad734572
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8797a70f97e7f0ccbf8d"></a>
+### nov04-8797a70f97e7f0ccbf8d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/18886438/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-5-11-04-MFR-Lisa-Jefferson-416)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file)
+
+[Supplied citation 4](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419)
+
+<a id="nov04-87a989dd4d7c00c76296"></a>
+### nov04-87a989dd4d7c00c76296
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-87c0663600ef6a500356"></a>
+### nov04-87c0663600ef6a500356
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-87e38d068d557f4f434c"></a>
+### nov04-87e38d068d557f4f434c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-05-of-08/view)
+
+<a id="nov04-884a0ef6e82686a1d090"></a>
+### nov04-884a0ef6e82686a1d090
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-886d30aa896cb023c29b"></a>
+### nov04-886d30aa896cb023c29b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-88c48081e6aca99c20b4"></a>
+### nov04-88c48081e6aca99c20b4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-71-Memo-with-Re-Recordings.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/73cccf17d825861ba62161cd631454446bed550c/investigation/broader-evidence/faa-a90-original-copy-trail-2026-11-01/README.md)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-71-Memo-with-Re-Recordings.pdf#page=1)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-A90-67-Memo-Certifying-Re-recording.pdf#page=1)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf#page=1):)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf#page=3):)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf#page=4):)
+
+<a id="nov04-896f3c889fb725b71280"></a>
+### nov04-896f3c889fb725b71280
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-89ea2fe3b84c17e0a605"></a>
+### nov04-89ea2fe3b84c17e0a605
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 2](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/75347e9c38e09b5c2037ee9490e6c2c5acf0f799/investigation/broader-evidence/steel-candidate-originals-2026-10-27/README.md#sv03--a-directly-visible-preservation-related-marking)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/c282a14153df29812b7f365e1ae441329666b4b4/investigation/broader-evidence/steel-nysa-flatbed-photo-2026-11-03/README.md)
+
+<a id="nov04-8a19c22763b054f432a7"></a>
+### nov04-8a19c22763b054f432a7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8a1eb996a9b2bc683a28"></a>
+### nov04-8a1eb996a9b2bc683a28
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record)
+
+[Supplied citation 2](https://html.scribdassets.com/5bafzdomdce6sz3/images/11-37e0eb9260.jpg)
+
+[Supplied citation 3](https://html.scribdassets.com/5bafzdomdce6sz3/images/12-06d8839cd2.jpg)
+
+[Supplied citation 4](https://html.scribdassets.com/5bafzdomdce6sz3/images/13-ec2683a0f2.jpg)
+
+[Supplied citation 5](https://html.scribdassets.com/5bafzdomdce6sz3/images/14-92e4203dc6.jpg)
+
+[Supplied citation 6](https://html.scribdassets.com/5bafzdomdce6sz3/images/15-d3c94df2c0.jpg)
+
+[Supplied citation 7](https://html.scribdassets.com/5bafzdomdce6sz3/images/16-6aa0e8fe82.jpg)
+
+[Supplied citation 8](https://html.scribdassets.com/5bafzdomdce6sz3/images/17-d3d53eddc3.jpg)
+
+[Supplied citation 9](https://html.scribdassets.com/5bafzdomdce6sz3/images/18-f7e10d4c8d.jpg)
+
+[Supplied citation 10](https://html.scribdassets.com/5bafzdomdce6sz3/images/19-1f570a8a28.jpg)
+
+[Supplied citation 11](https://html.scribdassets.com/5bafzdomdce6sz3/images/20-b3a78ffadd.jpg)
+
+[Supplied citation 12](https://html.scribdassets.com/5bafzdomdce6sz3/images/21-1a330ff42d.jpg)
+
+[Supplied citation 13](https://html.scribdassets.com/5bafzdomdce6sz3/images/22-fdf8a5d529.jpg)
+
+[Supplied citation 14](https://html.scribdassets.com/5bafzdomdce6sz3/images/23-11de396c90.jpg)
+
+[Supplied citation 15](https://html.scribdassets.com/5bafzdomdce6sz3/images/24-fcf0720741.jpg)
+
+[Supplied citation 16](https://github.com/AveLyra/911-conspiracy-investigation/blob/ad7be60185f5d3a49f0e0b7564f4da3610afaf92/investigation/broader-evidence/telephone-carrier-enclosures-2026-10-27/README.md)
+
+[Supplied citation 17](https://github.com/AveLyra/911-conspiracy-investigation/blob/cd950cd141582ab562ad74e17be6231077a2cc4c/investigation/broader-evidence/telephone-event-joins-2026-10-27/README.md)
+
+[Supplied citation 18](https://github.com/AveLyra/911-conspiracy-investigation/blob/2d73a93d12276caae2b6029eff5c504bfdb8ff3b/investigation/broader-evidence/telephone-zero-entry-context-verified-2026-11-02/README.md)
+
+<a id="nov04-8a3ba3f9ed36d50b13b3"></a>
+### nov04-8a3ba3f9ed36d50b13b3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/app/details/CRPT-108hrpt805)
+
+<a id="nov04-8a56c2e94dcf74e7dd69"></a>
+### nov04-8a56c2e94dcf74e7dd69
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8a6da1925688bffe2f3b"></a>
+### nov04-8a6da1925688bffe2f3b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/8421c444533ec3fd71d68ae0932d8a0a4145d62b/investigation/broader-evidence/faa-woc-policy-version-conflict-2026-10-28/README.md)
+
+[Supplied citation 2](https://www.archives.gov/research/foia/faa-finding-aid-84-95)
+
+[Supplied citation 3](https://catalog.archives.gov/id/34913193)
+
+[Supplied citation 4](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf)
+
+[Supplied citation 5](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=1)
+
+[Supplied citation 6](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=2)
+
+[Supplied citation 7](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=251)
+
+[Supplied citation 8](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=252)
+
+[Supplied citation 9](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2287)
+
+[Supplied citation 10](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=281)
+
+<a id="nov04-8a82ac416dbc6e2c2f8c"></a>
+### nov04-8a82ac416dbc6e2c2f8c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8a83969d903766923978"></a>
+### nov04-8a83969d903766923978
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8b21152eca910e485d62"></a>
+### nov04-8b21152eca910e485d62
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-9-release-508.pdf)
+
+<a id="nov04-8b5088e9d75f4d3f4f98"></a>
+### nov04-8b5088e9d75f4d3f4f98
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/71b47a3713297a336e56109e9cea805a8547fa3e/investigation/broader-evidence/steel-save-marking-followup-2026-11-03/OPEN-TODOS.json)
+
+<a id="nov04-8b7e7176bab1c228549d"></a>
+### nov04-8b7e7176bab1c228549d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=3)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2610370)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf)
+
+[Supplied citation 5](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf)
+
+<a id="nov04-8b8e8752cb21fcb95fbd"></a>
+### nov04-8b8e8752cb21fcb95fbd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08/view)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-03-of-08/view)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/12173507b1f00e9fdd51e42448dcb2498cc9c4e5/investigation/broader-evidence/telephone-official-part03-2026-10-31/README.md)
+
+<a id="nov04-8bb04de3c87f263b474a"></a>
+### nov04-8bb04de3c87f263b474a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8c1de22477886dfb7074"></a>
+### nov04-8c1de22477886dfb7074
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=52)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=55)
+
+[Supplied citation 7](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=70)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f363700f6b7010a7927a4794ba9972f09385dbe/investigation/broader-evidence/telephone-hq1492-recording-request-2026-11-02/README.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/96de8d9745391a966e3967195cda70ff77a764f9/investigation/broader-evidence/telephone-pickup-preincident-2026-11-02/README.md)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/e451c84f5494eef39539807b9b984bdb2bcd8eec/investigation/broader-evidence/telephone-may-response-qualification-2026-11-02/README.md)
+
+[Supplied citation 11](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=71)
+
+[Supplied citation 12](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=72)
+
+[Supplied citation 13](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=73)
+
+<a id="nov04-8c3b94503af92849815a"></a>
+### nov04-8c3b94503af92849815a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8c56f6a13dafcc082c30"></a>
+### nov04-8c56f6a13dafcc082c30
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://unredacted.com/wp-content/uploads/2010/04/9-11-sec-report.pdf)
+
+[Supplied citation 2](https://unredacted.com/wp-content/uploads/2010/04/9-11-sec-letter.pdf)
+
+[Supplied citation 3](https://cryptome.org/nara/sec/sec-03-0916.pdf)
+
+[Supplied citation 4](https://unredacted.com/2010/04/30/document-friday-terrorist-insider-trading-the-secs-pre-september-11-2001-trading-review/)
+
+[Supplied citation 5](https://www.archives.gov/research/9-11/commission-memoranda.html)
+
+<a id="nov04-8c9baf7f3cdf48341676"></a>
+### nov04-8c9baf7f3cdf48341676
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8d280e5d0963c2df418d"></a>
+### nov04-8d280e5d0963c2df418d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8d563dd2b3b26de75dfc"></a>
+### nov04-8d563dd2b3b26de75dfc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8da86c1858d78d61305f"></a>
+### nov04-8da86c1858d78d61305f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=52)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=55)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=56)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=51)
+
+<a id="nov04-8db4795a042922bee8ae"></a>
+### nov04-8db4795a042922bee8ae
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e846c1ea159fde25e1291c1c5046e70e2e4de80/investigation/broader-evidence/faa-notification-personnel-originals-2026-11-01/README.md)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=210)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=211)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=216)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=208)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=218)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=207)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=209)
+
+[Supplied citation 10](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=225)
+
+[Supplied citation 11](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=224)
+
+[Supplied citation 12](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=228)
+
+[Supplied citation 13](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=231)
+
+[Supplied citation 14](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1121-MEMORANDUM--FORMAL-ACCIDENT-PACKAGE-REF-ZNY-ARTCC-148-UAL175-CORRECTIONS.pdf#page=9)
+
+[Supplied citation 15](https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/README.md)
+
+<a id="nov04-8e014138e57c49626c76"></a>
+### nov04-8e014138e57c49626c76
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8e462ea4df4582e67183"></a>
+### nov04-8e462ea4df4582e67183
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8e8fc13f368ef552fcc2"></a>
+### nov04-8e8fc13f368ef552fcc2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8efba45527bd6b69cbbc"></a>
+### nov04-8efba45527bd6b69cbbc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8f193b3997a93ab75210"></a>
+### nov04-8f193b3997a93ab75210
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8f3e90b312ddda782026"></a>
+### nov04-8f3e90b312ddda782026
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=4)
+
+[Supplied citation 2](https://govinfo.library.unt.edu/911/archive/hearing7/9-11Commission_Hearing_2004-01-27.pdf#page=106)
+
+[Supplied citation 3](https://govinfo.library.unt.edu/911/archive/hearing7/9-11Commission_Hearing_2004-01-27.pdf#page=109)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/17aef02c7d79169234dc04c4a67f38425900ea30/investigation/broader-evidence/telephone-transcript-generation-chain-2026-11-02/README.md)
+
+<a id="nov04-8f8564ee034e9b233848"></a>
+### nov04-8f8564ee034e9b233848
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-03-of-08/view)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/d5b279a04f2fe18b78548222aea75451bfa7f60a/investigation/broader-evidence/telephone-sero-evidence-inventory-2026-10-31/README.md)
+
+<a id="nov04-8fcdebdcc44318dd05a5"></a>
+### nov04-8fcdebdcc44318dd05a5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8fd5362cbf97bb001222"></a>
+### nov04-8fd5362cbf97bb001222
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-8ffebb3fe4ee79e3044c"></a>
+### nov04-8ffebb3fe4ee79e3044c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/CHRG-107jhrg96167/pdf/CHRG-107jhrg96167.pdf)
+
+<a id="nov04-902564a2764e83334319"></a>
+### nov04-902564a2764e83334319
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9066e306c2bc8dd0c329"></a>
+### nov04-9066e306c2bc8dd0c329
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/ce9df2c6e1a6dcb11bf1a31578586d00440508ee/investigation/broader-evidence/faa-position-log-crosscheck-2026-11-01/README.md)
+
+<a id="nov04-90cdd038b9591084f9ae"></a>
+### nov04-90cdd038b9591084f9ae
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=9)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view)
+
+[Supplied citation 3](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=99)
+
+[Supplied citation 4](https://www.scribd.com/document/13499803/T7-B13-Flights-Phone-Calls-Fdr-Search-of-FBI-302-Files-for-175-77-and-93)
+
+<a id="nov04-90e4b659798b595f21c1"></a>
+### nov04-90e4b659798b595f21c1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/2605408)
+
+[Supplied citation 2](https://catalog.archives.gov/id/2607974)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2610264)
+
+<a id="nov04-91a14ccdb353b64a86e1"></a>
+### nov04-91a14ccdb353b64a86e1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-91a43ab0d2d369f64332"></a>
+### nov04-91a43ab0d2d369f64332
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/39b64108cf112760b162bd176a6d4c80a86c55ca/investigation/broader-evidence/telephone-sound-controls-2026-10-30/README.md)
+
+<a id="nov04-91a8ddf414c762a2ae24"></a>
+### nov04-91a8ddf414c762a2ae24
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-91c8075a859a3a74ad60"></a>
+### nov04-91c8075a859a3a74ad60
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/14141827/NYC-B1-NTMO-East-Position-3-Fdr-Transcript):)
+
+<a id="nov04-91ed31ddbe6a1abee122"></a>
+### nov04-91ed31ddbe6a1abee122
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9220d0a8ea0147592d83"></a>
+### nov04-9220d0a8ea0147592d83
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.motleyrice.com/sites/default/files/documents/AT_HR/9-11/20240802%20Redacted%20public%20averment.pdf)
+
+<a id="nov04-923b7c8188a72f534ac2"></a>
+### nov04-923b7c8188a72f534ac2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-924657654568f853cf9e"></a>
+### nov04-924657654568f853cf9e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-924be235c666a4cb3aaa"></a>
+### nov04-924be235c666a4cb3aaa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-92774f6ad6c4c651cc58"></a>
+### nov04-92774f6ad6c4c651cc58
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-92995a63a2840647c9e0"></a>
+### nov04-92995a63a2840647c9e0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=53)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=60)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=54)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=61)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=62)
+
+[Supplied citation 6](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=34)
+
+[Supplied citation 7](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=31)
+
+[Supplied citation 8](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+<a id="nov04-92ae06f82540c52c5001"></a>
+### nov04-92ae06f82540c52c5001
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA176)
+
+[Supplied citation 2](https://www.govinfo.gov/content/pkg/USCODE-2000-title15/pdf/USCODE-2000-title15-chap7-sec281a.pdf)
+
+[Supplied citation 3](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA161&output=text)
+
+[Supplied citation 4](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA171&output=text)
+
+<a id="nov04-92b3035a58201354909a"></a>
+### nov04-92b3035a58201354909a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%201.pdf)
+
+[Supplied citation 2](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%203.pdf)
+
+[Supplied citation 3](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%205.pdf)
+
+[Supplied citation 4](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%206.pdf)
+
+[Supplied citation 5](https://www.georgewbushlibrary.gov/sites/default/files/2026-05/20250218f-findingaid.pdf)
+
+[Supplied citation 6](https://www.georgewbushlibrary.gov/research/finding-aids/freedom-information-act-requests/foia-requests-2025)
+
+<a id="nov04-92d0f4b6a8aa22ec0639"></a>
+### nov04-92d0f4b6a8aa22ec0639
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-92e9f20f80a8380fbe1c"></a>
+### nov04-92e9f20f80a8380fbe1c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-933debb5f5cdc4569d58"></a>
+### nov04-933debb5f5cdc4569d58
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9352b8ceeed86d72a067"></a>
+### nov04-9352b8ceeed86d72a067
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-93f4d7cdf33541726b0e"></a>
+### nov04-93f4d7cdf33541726b0e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9449ab6aa7341851c735"></a>
+### nov04-9449ab6aa7341851c735
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/CHRG-107jhrg96166/pdf/CHRG-107jhrg96166.pdf)
+
+<a id="nov04-94619f1037cf1b36d3cc"></a>
+### nov04-94619f1037cf1b36d3cc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-948034a4785c63d9817e"></a>
+### nov04-948034a4785c63d9817e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e846c1ea159fde25e1291c1c5046e70e2e4de80/investigation/broader-evidence/faa-notification-personnel-originals-2026-11-01/README.md)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=210)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=211)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=216)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=208)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=218)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=207)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=209)
+
+[Supplied citation 10](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=225)
+
+[Supplied citation 11](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=224)
+
+[Supplied citation 12](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=228)
+
+[Supplied citation 13](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=231)
+
+[Supplied citation 14](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1121-MEMORANDUM--FORMAL-ACCIDENT-PACKAGE-REF-ZNY-ARTCC-148-UAL175-CORRECTIONS.pdf#page=9)
+
+[Supplied citation 15](https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/README.md)
+
+<a id="nov04-94bf52696728d262d4de"></a>
+### nov04-94bf52696728d262d4de
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9507c45375858a95c1c5"></a>
+### nov04-9507c45375858a95c1c5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1)
+
+[Supplied citation 2](https://beverlyhills.granicus.com/MinutesViewer.php?view_id=49&clip_id=2444)
+
+[Supplied citation 3](https://beverlyhills.granicus.com/ViewPublisher.php?view_id=49)
+
+[Supplied citation 4](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11)
+
+<a id="nov04-954f4a681cf4b7cfd651"></a>
+### nov04-954f4a681cf4b7cfd651
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/75347e9c38e09b5c2037ee9490e6c2c5acf0f799/investigation/broader-evidence/steel-candidate-originals-2026-10-27/README.md)
+
+<a id="nov04-9584efe7599de5da6b61"></a>
+### nov04-9584efe7599de5da6b61
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/18886438/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-5-11-04-MFR-Lisa-Jefferson-416)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=45)
+
+[Supplied citation 3](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e75761061f0bfa9148eb98a213aa4a24f1ad123/investigation/broader-evidence/telephone-recording-index-2026-10-31/README.md)
+
+<a id="nov04-95ff665745d581ae636b"></a>
+### nov04-95ff665745d581ae636b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://clearwater.granicus.com/MinutesViewer.php?clip_id=1841&view_id=25#page=3)
+
+[Supplied citation 2](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11#page=2)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/240914e0f1851956e74dae61a076e6cd52c45847/investigation/broader-evidence/steel-artifact-transfer-orders-2026-10-27/README.md)
+
+<a id="nov04-960852dc87c089f5e379"></a>
+### nov04-960852dc87c089f5e379
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9622306252ff3be3b5f5"></a>
+### nov04-9622306252ff3be3b5f5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-96613df0217a6029e58b"></a>
+### nov04-96613df0217a6029e58b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=41)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=38)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=11)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=40)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=39)
+
+[Supplied citation 7](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=2)
+
+<a id="nov04-9666a945647003eb24ae"></a>
+### nov04-9666a945647003eb24ae
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-96b68ca92be5867137a0"></a>
+### nov04-96b68ca92be5867137a0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 2](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf)
+
+[Supplied citation 3](https://www.cia.gov/stories/story/cia-releases-declassified-documents-related-to-9-11-attacks/)
+
+[Supplied citation 4](https://nara-media-001.s3.amazonaws.com/arcmedia/9-11/MFR/t-0148-911MFR-00724.pdf)
+
+[Supplied citation 5](https://www.archives.gov/research/9-11/commission-memoranda.html)
+
+<a id="nov04-97463463627ef0a5c358"></a>
+### nov04-97463463627ef0a5c358
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-97588e16db2b02ccee77"></a>
+### nov04-97588e16db2b02ccee77
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/7598367)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/191c27f34284bdbbf006db5bb2b41071125f19d7/investigation/broader-evidence/faa-omic-memorandum-2026-10-30/README.md)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/2e38da9806a4b3bc2550d66718831488aea76a6c/investigation/broader-evidence/faa-transcript-policy-crosswalk-2026-10-30/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md)
+
+<a id="nov04-9771db353a5a28ffb841"></a>
+### nov04-9771db353a5a28ffb841
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-97e266ef05426cb1081f"></a>
+### nov04-97e266ef05426cb1081f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-980bca9e8895cebe0ed6"></a>
+### nov04-980bca9e8895cebe0ed6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/349.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/693.pdf)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/350.pdf)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/347.pdf)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/351.pdf)
+
+<a id="nov04-98281b421b700efdad70"></a>
+### nov04-98281b421b700efdad70
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-982b1fe7ffe54dfbe646"></a>
+### nov04-982b1fe7ffe54dfbe646
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-982c474f733b0363f0f5"></a>
+### nov04-982c474f733b0363f0f5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/9c1438f5fb3b9098513db5bad9c5a13f6bb127ea/investigation/broader-evidence/faa-omic-body-2026-10-31/README.md)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7598367)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+<a id="nov04-984748f939bdab869085"></a>
+### nov04-984748f939bdab869085
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file)
+
+<a id="nov04-988d16e09d4d279ee456"></a>
+### nov04-988d16e09d4d279ee456
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-98b0bc7daa597bb2b041"></a>
+### nov04-98b0bc7daa597bb2b041
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-2-d-supplemental-release-1/at_download/file)
+
+<a id="nov04-98f6534e515018636e96"></a>
+### nov04-98f6534e515018636e96
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-990e7fc0705881fdc8ca"></a>
+### nov04-990e7fc0705881fdc8ca
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-994aa3b9fab7f58da7e4"></a>
+### nov04-994aa3b9fab7f58da7e4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-997b845b5d2af8e8b684"></a>
+### nov04-997b845b5d2af8e8b684
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9a039cd00d3011a676a1"></a>
+### nov04-9a039cd00d3011a676a1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9a08c67f70d4fc58bb6e"></a>
+### nov04-9a08c67f70d4fc58bb6e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 2](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/88831b1b5436958547c9399306ff3c60ad8e1baf/investigation/broader-evidence/steel-attribution-roots-2026-10-27/README.md)
+
+[Supplied citation 4](https://www.govinfo.gov/content/pkg/GOVPUB-C13-41f9c1ed6889bdc5fd7ea98bfc31a05b/pdf/GOVPUB-C13-41f9c1ed6889bdc5fd7ea98bfc31a05b.pdf)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/da9fd9dfb7d1af87c88143b0148914439420c4cd/investigation/broader-evidence/steel-tape2-3-source-2026-11-03/README.md)
+
+<a id="nov04-9a3b8ccd63e82f4eb092"></a>
+### nov04-9a3b8ccd63e82f4eb092
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9aae7eb69f839a56e092"></a>
+### nov04-9aae7eb69f839a56e092
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9ae5862ec6f9249312ab"></a>
+### nov04-9ae5862ec6f9249312ab
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file)
+
+<a id="nov04-9ae6dd5ac08183e80671"></a>
+### nov04-9ae6dd5ac08183e80671
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9aea36ee097ae468144d"></a>
+### nov04-9aea36ee097ae468144d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9b0dacfb31c936ad1d45"></a>
+### nov04-9b0dacfb31c936ad1d45
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/30a715bafd14553235b68cfb92db8670d421ad22/investigation/broader-evidence/faa-semiannual-investigation-status-2026-10-29/README.md)
+
+<a id="nov04-9b5fa90dda92ce3bdf10"></a>
+### nov04-9b5fa90dda92ce3bdf10
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9b75bd953573e3417d1d"></a>
+### nov04-9b75bd953573e3417d1d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9bb978f94cc81c8c815b"></a>
+### nov04-9bb978f94cc81c8c815b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.9-11commission.gov/press/pr_2003-11-12.pdf`:)
+
+[Supplied citation 2](https://www.9-11commission.gov/press/pr_2003-11-20.pdf`:)
+
+<a id="nov04-9bf7474f575e0269a479"></a>
+### nov04-9bf7474f575e0269a479
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9c3e721866a37f6d826d"></a>
+### nov04-9c3e721866a37f6d826d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=52)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=55)
+
+[Supplied citation 7](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=70)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f363700f6b7010a7927a4794ba9972f09385dbe/investigation/broader-evidence/telephone-hq1492-recording-request-2026-11-02/README.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/96de8d9745391a966e3967195cda70ff77a764f9/investigation/broader-evidence/telephone-pickup-preincident-2026-11-02/README.md)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/e451c84f5494eef39539807b9b984bdb2bcd8eec/investigation/broader-evidence/telephone-may-response-qualification-2026-11-02/README.md)
+
+[Supplied citation 11](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=71)
+
+[Supplied citation 12](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=72)
+
+[Supplied citation 13](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=73)
+
+<a id="nov04-9c8789e6db08226b6db7"></a>
+### nov04-9c8789e6db08226b6db7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9cac4271c23672a95d08"></a>
+### nov04-9cac4271c23672a95d08
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9cdeef2b6c442e36bba9"></a>
+### nov04-9cdeef2b6c442e36bba9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=4)
+
+[Supplied citation 2](https://govinfo.library.unt.edu/911/archive/hearing7/9-11Commission_Hearing_2004-01-27.pdf#page=106)
+
+[Supplied citation 3](https://govinfo.library.unt.edu/911/archive/hearing7/9-11Commission_Hearing_2004-01-27.pdf#page=109)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/17aef02c7d79169234dc04c4a67f38425900ea30/investigation/broader-evidence/telephone-transcript-generation-chain-2026-11-02/README.md)
+
+<a id="nov04-9cf4143cb86764abb885"></a>
+### nov04-9cf4143cb86764abb885
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/7597271)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/2-UAL-93/e-Other/2-ZID-24-INVENTORY-OF-AAL77-DATA.DOC)
+
+[Supplied citation 3](https://catalog.archives.gov/id/7596609)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-74-AAL77a_ZID.doc)
+
+[Supplied citation 5](https://catalog.archives.gov/id/7596008)
+
+[Supplied citation 6](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-oleps/f7933d28-2cc4-4b36-bc23-8861cbcd37c4)
+
+<a id="nov04-9cfa7ff80602efd52139"></a>
+### nov04-9cfa7ff80602efd52139
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9d63ef4627b89de554b2"></a>
+### nov04-9d63ef4627b89de554b2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/view)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/view)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf)
+
+[Supplied citation 6](https://catalog.archives.gov/id/2609807)
+
+[Supplied citation 7](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 8](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf)
+
+<a id="nov04-9de7dcb9aec457281d60"></a>
+### nov04-9de7dcb9aec457281d60
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9dec7da4f3d8de0df6fa"></a>
+### nov04-9dec7da4f3d8de0df6fa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9e114e8d8a0dfc49766b"></a>
+### nov04-9e114e8d8a0dfc49766b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=24)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=194)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=200)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=226)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=230)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=39)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/59828ff9efa5ee2bf073ebf3796a012b35bdd180/investigation/broader-evidence/faa-personnel-continuation-2026-11-01/README.md)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=5)
+
+[Supplied citation 10](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=16)
+
+<a id="nov04-9e5e7caba71280f37277"></a>
+### nov04-9e5e7caba71280f37277
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9e8479a5a254fc143d31"></a>
+### nov04-9e8479a5a254fc143d31
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9f6509ed952052c2a222"></a>
+### nov04-9f6509ed952052c2a222
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view)
+
+<a id="nov04-9f9249d62c121fcc2f3d"></a>
+### nov04-9f9249d62c121fcc2f3d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-9fde931c43e85e6e6f4f"></a>
+### nov04-9fde931c43e85e6e6f4f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a0c84b29820b519c8957"></a>
+### nov04-a0c84b29820b519c8957
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a0e5580b9c4425937eb0"></a>
+### nov04-a0e5580b9c4425937eb0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=18)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=23)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d9d2c9684c29602cf5bb570cbf38c46e09fd50d/investigation/broader-evidence/telephone-first-operator-followup-2026-11-02/README.md)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+<a id="nov04-a0eb58e62c28fc578be9"></a>
+### nov04-a0eb58e62c28fc578be9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a106176b7ae82317ca95"></a>
+### nov04-a106176b7ae82317ca95
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a10a1a2d970a5533cddb"></a>
+### nov04-a10a1a2d970a5533cddb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a132d1b454de228b3e81"></a>
+### nov04-a132d1b454de228b3e81
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-71-Memo-with-Re-Recordings.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/73cccf17d825861ba62161cd631454446bed550c/investigation/broader-evidence/faa-a90-original-copy-trail-2026-11-01/README.md)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-71-Memo-with-Re-Recordings.pdf#page=1)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-A90-67-Memo-Certifying-Re-recording.pdf#page=1)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf#page=1):)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf#page=3):)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-87-Index-of-Data-Provided-9-11-Commission.pdf#page=4):)
+
+<a id="nov04-a163e4cf81882944ba54"></a>
+### nov04-a163e4cf81882944ba54
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a1940ff4b453c3492ce8"></a>
+### nov04-a1940ff4b453c3492ce8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a1a0fc746daae47a6653"></a>
+### nov04-a1a0fc746daae47a6653
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=47)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/9e6b2c93674bfea36f0afc4d0c79c54980796d8f/investigation/broader-evidence/fbi-operator-followup-tape-2026-10-31/README.md)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md)
+
+<a id="nov04-a1f6f2e18e739c6a3a08"></a>
+### nov04-a1f6f2e18e739c6a3a08
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a1fe5f70b19cdd368405"></a>
+### nov04-a1fe5f70b19cdd368405
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=35)
+
+[Supplied citation 2](https://www.scribd.com/document/19131547/T7-B13-DOJ-Doc-Req-35-13-Packet-6-Fdr-Entire-Contents-FBI-Reports-730)
+
+<a id="nov04-a201352b25401e3f135f"></a>
+### nov04-a201352b25401e3f135f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a2787f13489a37bd92f2"></a>
+### nov04-a2787f13489a37bd92f2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=96)
+
+[Supplied citation 2](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=12)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2555805)
+
+[Supplied citation 4](https://www.archives.gov/research/9-11/commission-series.html)
+
+[Supplied citation 5](https://catalog.archives.gov/id/2608411)
+
+[Supplied citation 6](https://catalog.archives.gov/id/2608412)
+
+[Supplied citation 7](https://catalog.archives.gov/id/2608410)
+
+[Supplied citation 8](https://catalog.archives.gov/id/2607997)
+
+[Supplied citation 9](https://catalog.archives.gov/id/2608111)
+
+<a id="nov04-a299691b6eaed1d7cf2c"></a>
+### nov04-a299691b6eaed1d7cf2c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a30c0f437519ba4c0b67"></a>
+### nov04-a30c0f437519ba4c0b67
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/ad7be60185f5d3a49f0e0b7564f4da3610afaf92/investigation/broader-evidence/telephone-carrier-enclosures-2026-10-27/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/cd950cd141582ab562ad74e17be6231077a2cc4c/investigation/broader-evidence/telephone-event-joins-2026-10-27/README.md)
+
+[Supplied citation 4](https://html.scribdassets.com/5bafzdomdce6sz3/images/18-f7e10d4c8d.jpg)
+
+[Supplied citation 5](https://html.scribdassets.com/5bafzdomdce6sz3/images/19-1f570a8a28.jpg)
+
+[Supplied citation 6](https://html.scribdassets.com/5bafzdomdce6sz3/images/15-d3c94df2c0.jpg)
+
+[Supplied citation 7](https://html.scribdassets.com/5bafzdomdce6sz3/images/13-ec2683a0f2.jpg)
+
+[Supplied citation 8](https://html.scribdassets.com/5bafzdomdce6sz3/images/14-92e4203dc6.jpg)
+
+[Supplied citation 9](https://html.scribdassets.com/5bafzdomdce6sz3/images/21-1a330ff42d.jpg)
+
+[Supplied citation 10](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 11](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s)
+
+[Supplied citation 12](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408)
+
+[Supplied citation 13](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+<a id="nov04-a361e1464064e4a699cd"></a>
+### nov04-a361e1464064e4a699cd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://findingaids.library.nyu.edu/nyhs/nyhs_archives_rg20/all/)
+
+[Supplied citation 2](https://www.flickr.com/photos/wallyg/55558340145/)
+
+[Supplied citation 3](https://live.staticflickr.com/65535/55558340145_2e87c6b4bc_b.jpg)
+
+[Supplied citation 4](https://www.flickr.com/photos/wallyg/55558340145/sizes/o/)
+
+[Supplied citation 5](https://live.staticflickr.com/65535/55558340145_47f5e66bf9_o.jpg)
+
+[Supplied citation 6](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+<a id="nov04-a36895ca8110a4c55d05"></a>
+### nov04-a36895ca8110a4c55d05
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://findingaids.library.nyu.edu/nyhs/nyhs_archives_rg20/all/)
+
+[Supplied citation 2](https://www.flickr.com/photos/wallyg/55558340145/)
+
+[Supplied citation 3](https://www.flickr.com/photos/wallyg/55558340145/sizes/o/)
+
+[Supplied citation 4](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+[Supplied citation 5](https://nysm.nysed.gov/about/press/phase-2-world-trade-center-exhibition-opens-feb-1-nys-museum)
+
+[Supplied citation 6](https://nysm.nysed.gov/exhibitions/ongoing/world-trade-center-rescue-recovery-response)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/1a1253c81d826ecb148c4b1c53c5fb37cb00c7cb/investigation/broader-evidence/steel-nysm-provenance-lead-2026-11-03/README.md)
+
+<a id="nov04-a377c2363af1f3482d85"></a>
+### nov04-a377c2363af1f3482d85
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a39ded924d70d22de4a3"></a>
+### nov04-a39ded924d70d22de4a3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json)
+
+<a id="nov04-a4348b9090ba7eec6df5"></a>
+### nov04-a4348b9090ba7eec6df5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/dcdc9f647130139c60128ae3c131d40955536b34/investigation/broader-evidence/faa-omic-body-completion-2026-10-31/README.md)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17)
+
+[Supplied citation 3](https://www.archives.gov/declassification/iscap/pdf/2011-048.html)
+
+[Supplied citation 4](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf):)
+
+<a id="nov04-a4366c91d5561b192c69"></a>
+### nov04-a4366c91d5561b192c69
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a4bad4f52acd24c7c4f7"></a>
+### nov04-a4bad4f52acd24c7c4f7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a4c9e05d50b42e5f36e6"></a>
+### nov04-a4c9e05d50b42e5f36e6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a4ef5c87313c307e0498"></a>
+### nov04-a4ef5c87313c307e0498
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a54ab9f49ee543f4103c"></a>
+### nov04-a54ab9f49ee543f4103c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf)
+
+[Supplied citation 2](https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf)
+
+[Supplied citation 3](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2204)
+
+[Supplied citation 4](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2694)
+
+[Supplied citation 5](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2700)
+
+[Supplied citation 6](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2702)
+
+<a id="nov04-a600a055f83fa5393544"></a>
+### nov04-a600a055f83fa5393544
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a62dff73105eda3baa3d"></a>
+### nov04-a62dff73105eda3baa3d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a6c1a7f672565a438ec2"></a>
+### nov04-a6c1a7f672565a438ec2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a7006ab57c3379a03c79"></a>
+### nov04-a7006ab57c3379a03c79
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=63)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=64)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=65)
+
+<a id="nov04-a704424352be02a18ccd"></a>
+### nov04-a704424352be02a18ccd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a758f817984bd1bdca62"></a>
+### nov04-a758f817984bd1bdca62
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a77d0e714ff9941daefe"></a>
+### nov04-a77d0e714ff9941daefe
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-2-d-supplemental-release-1/at_download/file)
+
+<a id="nov04-a78d43b619146d506bf8"></a>
+### nov04-a78d43b619146d506bf8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d775a5c70c1f7793dde9a2200d5c456e2779883/investigation/broader-evidence/telephone-may-family-relays-2026-11-02/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=70)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=71)
+
+<a id="nov04-a7eb72638bd5b5c75c7d"></a>
+### nov04-a7eb72638bd5b5c75c7d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.panynj.gov/content/dam/corporate/financial-statements/financial-statement-2006.pdf)
+
+[Supplied citation 2](https://www.nyc.gov/assets/taxappeals/downloads/pdf/0734EDEC1011.pdf)
+
+<a id="nov04-a81e4561d3839e680ebf"></a>
+### nov04-a81e4561d3839e680ebf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d775a5c70c1f7793dde9a2200d5c456e2779883/investigation/broader-evidence/telephone-may-family-relays-2026-11-02/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=70)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=71)
+
+<a id="nov04-a82163a189b279c2d9fb"></a>
+### nov04-a82163a189b279c2d9fb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=149)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/e4e27ee8cd54f00d62917b2b9181d22503d2df9e/investigation/broader-evidence/five-inconsistency-tests-2026-10-31/README.md)
+
+<a id="nov04-a86abe794e7f959e1fde"></a>
+### nov04-a86abe794e7f959e1fde
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a8b10bf66936cc306f01"></a>
+### nov04-a8b10bf66936cc306f01
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a8b811abbee1f5ef1f34"></a>
+### nov04-a8b811abbee1f5ef1f34
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1)
+
+[Supplied citation 2](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=5)
+
+[Supplied citation 3](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=6)
+
+[Supplied citation 4](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=10)
+
+[Supplied citation 5](https://beverlyhills.granicus.com/DocumentViewer.php?file=beverlyhills_e8dee5d0768d9bb4bc2d443199135f32.pdf&view=1#page=11)
+
+[Supplied citation 6](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11#page=4)
+
+<a id="nov04-a8c8de20b94dfc5890f5"></a>
+### nov04-a8c8de20b94dfc5890f5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/15492445/Certifications-of-Completion-and-Compliance-with-9-11-Document-Requests)
+
+<a id="nov04-a8d64a83b03cbc23e1c8"></a>
+### nov04-a8d64a83b03cbc23e1c8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/032.pdf)**)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/348.pdf)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/351.pdf)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/347.pdf)
+
+[Supplied citation 6](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/334.pdf)
+
+[Supplied citation 7](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/701.pdf)
+
+<a id="nov04-a904a5a43e50a3913dea"></a>
+### nov04-a904a5a43e50a3913dea
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=192)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/dcdc9f647130139c60128ae3c131d40955536b34/investigation/broader-evidence/faa-omic-body-completion-2026-10-31/README.md)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=194)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=195)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=196)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=198)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=200)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=201)
+
+[Supplied citation 10](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=202)
+
+[Supplied citation 11](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=203)
+
+[Supplied citation 12](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=204)
+
+[Supplied citation 13](https://catalog.archives.gov/id/7598367)
+
+<a id="nov04-a918496bb22fa1adde69"></a>
+### nov04-a918496bb22fa1adde69
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/17021837/T1-B26-Detainees-Fdr-Entire-Contents-Emails-Withdrawal-Notices-Document-Indexes-636)
+
+[Supplied citation 2](https://www.scribd.com/document/16539240/T4-B13-Pornography-Fdr-2-Withdrawal-Notices-and-Document-Request-Responses-1-Pg-of-Draft-Financial-Spreadsheet-See-T4-B14-957)
+
+<a id="nov04-a959f5790accc5eccec8"></a>
+### nov04-a959f5790accc5eccec8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08/view)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/12173507b1f00e9fdd51e42448dcb2498cc9c4e5/investigation/broader-evidence/telephone-official-part03-2026-10-31/README.md)
+
+<a id="nov04-a9cb610a6d7da597213e"></a>
+### nov04-a9cb610a6d7da597213e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-a9ec598bd39f413256c5"></a>
+### nov04-a9ec598bd39f413256c5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-aa2e3c49780894c7e20a"></a>
+### nov04-aa2e3c49780894c7e20a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.panynj.gov/content/dam/corporate/financial-statements/financial-statement-2006.pdf`:)
+
+[Supplied citation 2](https://www.nyc.gov/assets/taxappeals/downloads/pdf/0734EDEC1011.pdf`:)
+
+[Supplied citation 3](https://findingaids.library.nyu.edu/nyhs/ms3128_lynne_sagalyn/contents/aspace_1fcc91ee57861c7639738e81455b095e/`:)
+
+<a id="nov04-aa5baa42594bfa5cb926"></a>
+### nov04-aa5baa42594bfa5cb926
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/ad7be60185f5d3a49f0e0b7564f4da3610afaf92/investigation/broader-evidence/telephone-carrier-enclosures-2026-10-27/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/cd950cd141582ab562ad74e17be6231077a2cc4c/investigation/broader-evidence/telephone-event-joins-2026-10-27/README.md)
+
+[Supplied citation 4](https://html.scribdassets.com/5bafzdomdce6sz3/images/18-f7e10d4c8d.jpg)
+
+[Supplied citation 5](https://html.scribdassets.com/5bafzdomdce6sz3/images/19-1f570a8a28.jpg)
+
+[Supplied citation 6](https://html.scribdassets.com/5bafzdomdce6sz3/images/15-d3c94df2c0.jpg)
+
+[Supplied citation 7](https://html.scribdassets.com/5bafzdomdce6sz3/images/13-ec2683a0f2.jpg)
+
+[Supplied citation 8](https://html.scribdassets.com/5bafzdomdce6sz3/images/14-92e4203dc6.jpg)
+
+[Supplied citation 9](https://html.scribdassets.com/5bafzdomdce6sz3/images/21-1a330ff42d.jpg)
+
+[Supplied citation 10](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 11](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s)
+
+[Supplied citation 12](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408)
+
+[Supplied citation 13](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+<a id="nov04-aab2e7f0a1064a892562"></a>
+### nov04-aab2e7f0a1064a892562
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/2012-156-doc-3.pdf#page=2)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/2012-156-doc-1.pdf#page=1)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d148a319c76e579b59dece22395501d66b64463/investigation/broader-evidence/faa-ot2-config-scope-2026-11-04/README.md)
+
+<a id="nov04-aaf3374421837462cd9f"></a>
+### nov04-aaf3374421837462cd9f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/2fa15f1300ded3abc19d06a8efe959b6c01afbed/investigation/broader-evidence/steel-transfer-instructions-2026-10-29/README.md):)
+
+[Supplied citation 2](https://edocuments.myclearwater.com/WebLink/edoc/243567/12132010.pdf?dbid=0&repo=Clearwater#page=63)
+
+[Supplied citation 3](https://edocuments.myclearwater.com/WebLink/edoc/244540/01132011.pdf?dbid=0&repo=Clearwater#page=10)
+
+[Supplied citation 4](https://clearwater.granicus.com/MinutesViewer.php?clip_id=1841&view_id=25#page=4)
+
+[Supplied citation 5](https://www.myclearwater.com/My-Government/0-City-Departments/City-Clerk)
+
+<a id="nov04-ab00cb8a06d8c5374c3e"></a>
+### nov04-ab00cb8a06d8c5374c3e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d775a5c70c1f7793dde9a2200d5c456e2779883/investigation/broader-evidence/telephone-may-family-relays-2026-11-02/README.md)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+<a id="nov04-ab221d51b9f3eb673ea8"></a>
+### nov04-ab221d51b9f3eb673ea8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ab5815abcfbbb760d6c9"></a>
+### nov04-ab5815abcfbbb760d6c9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ab625057e48b0fbeee91"></a>
+### nov04-ab625057e48b0fbeee91
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ab8931f68558a72166b8"></a>
+### nov04-ab8931f68558a72166b8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/7599164)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/c-Transcripts/5-AWA-940-Memorandum-Full-Transcript-New-York-ARTCC.pdf)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md)
+
+<a id="nov04-ac24fe7595f3558d12d6"></a>
+### nov04-ac24fe7595f3558d12d6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ac3addcfdc2846b42a1a"></a>
+### nov04-ac3addcfdc2846b42a1a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf#page=90)
+
+[Supplied citation 2](https://www.metabunk.org/attachments/9114-pdf.28807/)
+
+[Supplied citation 3](https://www.metabunk.org/attachments/1091-pdf.28913/)
+
+[Supplied citation 4](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=901225)
+
+[Supplied citation 5](https://www.nist.gov/world-trade-center-investigation/study-faqs/wtc-7-investigation)
+
+[Supplied citation 6](https://learn.microsoft.com/en-us/windows/win32/directshow/avi-riff-file-reference)
+
+<a id="nov04-ac6ed22b1e0aa9250dc9"></a>
+### nov04-ac6ed22b1e0aa9250dc9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ac835fbdedee640db592"></a>
+### nov04-ac835fbdedee640db592
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/ad7be60185f5d3a49f0e0b7564f4da3610afaf92/investigation/broader-evidence/telephone-carrier-enclosures-2026-10-27/README.md)
+
+[Supplied citation 2](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record)
+
+[Supplied citation 3](https://html.scribdassets.com/5bafzdomdce6sz3/images/25-a00d283656.jpg)
+
+[Supplied citation 4](https://html.scribdassets.com/5bafzdomdce6sz3/images/26-6b763d149c.jpg)
+
+[Supplied citation 5](https://html.scribdassets.com/5bafzdomdce6sz3/images/27-e74aaab25b.jpg)
+
+[Supplied citation 6](https://html.scribdassets.com/5bafzdomdce6sz3/images/28-778a401475.jpg)
+
+<a id="nov04-ac8942dbac56f005b1d6"></a>
+### nov04-ac8942dbac56f005b1d6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-acf1c62529b9a298ec5f"></a>
+### nov04-acf1c62529b9a298ec5f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 2](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/75347e9c38e09b5c2037ee9490e6c2c5acf0f799/investigation/broader-evidence/steel-candidate-originals-2026-10-27/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/71b47a3713297a336e56109e9cea805a8547fa3e/investigation/broader-evidence/steel-save-marking-followup-2026-11-03/README.md)
+
+<a id="nov04-ada284921d0f5e8d5998"></a>
+### nov04-ada284921d0f5e8d5998
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://web.archive.org/web/20011205031550id_/http://www.seaony.org:80/wtc-112701.htm)
+
+[Supplied citation 2](https://web.archive.org/web/20020608091451id_/http://seaony.org:80/wtc-051002.htm)
+
+[Supplied citation 3](https://www.fema.gov/pdf/library/fema403_apd.pdf#page=1)
+
+<a id="nov04-adb703c131247cb2a088"></a>
+### nov04-adb703c131247cb2a088
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-add15dd0f5537c5b2c1e"></a>
+### nov04-add15dd0f5537c5b2c1e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-add22430dda33f5b1fd9"></a>
+### nov04-add22430dda33f5b1fd9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-adfb5887e39b82ba321b"></a>
+### nov04-adfb5887e39b82ba321b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ae7ccbac4dcb0febab17"></a>
+### nov04-ae7ccbac4dcb0febab17
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ae938ebd9c60fee7eb1d"></a>
+### nov04-ae938ebd9c60fee7eb1d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-aeb0fbdef35c3adcd9c0"></a>
+### nov04-aeb0fbdef35c3adcd9c0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 2](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf)
+
+[Supplied citation 3](https://www.archives.gov/files/research/9-11/finding-aid.pdf)
+
+<a id="nov04-aeb9f1c10b7f559a287c"></a>
+### nov04-aeb9f1c10b7f559a287c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=149)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/e4e27ee8cd54f00d62917b2b9181d22503d2df9e/investigation/broader-evidence/five-inconsistency-tests-2026-10-31/README.md)
+
+<a id="nov04-af3d99af34c6aab17363"></a>
+### nov04-af3d99af34c6aab17363
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-af4787cd74073ae2c5bd"></a>
+### nov04-af4787cd74073ae2c5bd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/5031c6dfa73e1f59491f259e00f168c37cb21788/investigation/broader-evidence/telephone-usage-report-2026-10-27/README.md)
+
+[Supplied citation 3](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record)
+
+[Supplied citation 4](https://html.scribdassets.com/5bafzdomdce6sz3/images/1-65f7ebcbf8.jpg)
+
+[Supplied citation 5](https://html.scribdassets.com/5bafzdomdce6sz3/images/21-1a330ff42d.jpg)
+
+[Supplied citation 6](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 7](https://html.scribdassets.com/5bafzdomdce6sz3/images/16-6aa0e8fe82.jpg)
+
+[Supplied citation 8](https://html.scribdassets.com/5bafzdomdce6sz3/images/13-ec2683a0f2.jpg)
+
+[Supplied citation 9](https://html.scribdassets.com/5bafzdomdce6sz3/images/15-d3c94df2c0.jpg)
+
+<a id="nov04-af629563091120a9d25c"></a>
+### nov04-af629563091120a9d25c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-af635b9195ea0b9baf49"></a>
+### nov04-af635b9195ea0b9baf49
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://tile.loc.gov/storage-services/master/pnp/habshaer/ny/ny2000/ny2014/data/ny2014data.pdf)
+
+[Supplied citation 2](https://tile.loc.gov/storage-services/master/pnp/habshaer/ny/ny2300/ny2396/data/ny2396cap.pdf)
+
+[Supplied citation 3](https://tile.loc.gov/storage-services/master/pnp/habshaer/ny/ny2000/ny2014/data/ny2014cap.pdf)
+
+[Supplied citation 4](https://renewnyc.org/attachments/content/pdfs/S106_Report_January_to_June_2005.pdf#page=3)
+
+[Supplied citation 5](https://www.loc.gov/item/ny2014/)
+
+<a id="nov04-af75fabc1aee6d7dbf58"></a>
+### nov04-af75fabc1aee6d7dbf58
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/9c1438f5fb3b9098513db5bad9c5a13f6bb127ea/investigation/broader-evidence/faa-omic-body-2026-10-31/README.md)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7598367)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+<a id="nov04-af7b7fae138f2d0869eb"></a>
+### nov04-af7b7fae138f2d0869eb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/abefdac15a5474b2cba2407dc7d0e6bcd58ead59/investigation/broader-evidence/telephone-playback-custody-2026-10-31/README.md)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commi)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/17aef02c7d79169234dc04c4a67f38425900ea30/investigation/broader-evidence/telephone-transcript-generation-chain-2026-11-02/README.md)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/d5b279a04f2fe18b78548222aea75451bfa7f60a/investigation/broader-evidence/telephone-sero-evidence-inventory-2026-10-31/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-inve)
+
+<a id="nov04-afd280a530b0a092099a"></a>
+### nov04-afd280a530b0a092099a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/686134876/L3-Communications-FDR-FA2100-31-30-03-Rev-03)
+
+<a id="nov04-b021f850d4fbe212a107"></a>
+### nov04-b021f850d4fbe212a107
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file)
+
+<a id="nov04-b09d2422dfff6226f480"></a>
+### nov04-b09d2422dfff6226f480
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/CHRG-107shrg81651/html/CHRG-107shrg81651.htm)
+
+[Supplied citation 2](https://www.govinfo.gov/link/crec/147/S/10798)
+
+[Supplied citation 3](https://www.adst.org/OH%20TOCs/Ryan,%20Mary%20A.toc.pdf)
+
+[Supplied citation 4](https://adst.org/2020/07/9-11-terror-attacks-a-consular-officers-perspective-on-visas-and-government-intelligence/)
+
+<a id="nov04-b0e8714f90a0431acbb7"></a>
+### nov04-b0e8714f90a0431acbb7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-05-of-08/view)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/abefdac15a5474b2cba2407dc7d0e6bcd58ead59/investigation/broader-evidence/telephone-playback-custody-2026-10-31/README.md)
+
+<a id="nov04-b146f2e7e0e806d3e4a0"></a>
+### nov04-b146f2e7e0e806d3e4a0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b16138300da50ae3533f"></a>
+### nov04-b16138300da50ae3533f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b1b56ad244b1ae86498d"></a>
+### nov04-b1b56ad244b1ae86498d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b1b865ba1239e54f462f"></a>
+### nov04-b1b865ba1239e54f462f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b1ec5d3e869d87cff1f9"></a>
+### nov04-b1ec5d3e869d87cff1f9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://biotech.law.lsu.edu/blaw/dod/manual/full%20text%20documents/agencies%20documents/dodd-3025.15.pdf)
+
+<a id="nov04-b2b120624ec7f6422c9b"></a>
+### nov04-b2b120624ec7f6422c9b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=69)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=70)
+
+[Supplied citation 4](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+<a id="nov04-b2b47852d8b2329760f4"></a>
+### nov04-b2b47852d8b2329760f4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json)
+
+<a id="nov04-b2c3d7ddf8d9ca1cbf57"></a>
+### nov04-b2c3d7ddf8d9ca1cbf57
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.globalsecurity.org/security/library/congress/9-11_commission/030522-graham.htm)
+
+[Supplied citation 2](https://archives.iu.edu/html/VAB8595.html)
+
+<a id="nov04-b303da657521ef7e4637"></a>
+### nov04-b303da657521ef7e4637
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.gao.gov/assets/a110066.html)
+
+[Supplied citation 2](https://archives.fbi.gov/archives/news/testimony/progress-report-on-the-reorganization-and-refocus-of-the-fbi)
+
+<a id="nov04-b30829c838072c9b03f8"></a>
+### nov04-b30829c838072c9b03f8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f363700f6b7010a7927a4794ba9972f09385dbe/investigation/broader-evidence/telephone-hq1492-recording-request-2026-11-02/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/189851483980fff2946921fbaa0d189d70e8ddae/investigation/broader-evidence/telephone-wf1899-voicemail-access-2026-11-02/README.md)
+
+<a id="nov04-b311a9c9300a57e4ab46"></a>
+### nov04-b311a9c9300a57e4ab46
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=3)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2610370)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf)
+
+[Supplied citation 5](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf)
+
+<a id="nov04-b32f2fad556b0d84ec95"></a>
+### nov04-b32f2fad556b0d84ec95
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b3849761a4fa7b463bae"></a>
+### nov04-b3849761a4fa7b463bae
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=11)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/README.md)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=43)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=44)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=12)
+
+<a id="nov04-b41c192d6849c9a0b987"></a>
+### nov04-b41c192d6849c9a0b987
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b49d5e03b7fd38d05cb5"></a>
+### nov04-b49d5e03b7fd38d05cb5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b4a037287f089945f9b5"></a>
+### nov04-b4a037287f089945f9b5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b4ada6f83bd03ed22598"></a>
+### nov04-b4ada6f83bd03ed22598
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=11)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/README.md)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=43)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=44)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=12)
+
+<a id="nov04-b4b78bc28131127b1f54"></a>
+### nov04-b4b78bc28131127b1f54
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b4d249b242e10afdb3a7"></a>
+### nov04-b4d249b242e10afdb3a7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b518b5be926ef97278dd"></a>
+### nov04-b518b5be926ef97278dd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/OPEN-TODOS.json)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf#page=1)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=1)
+
+[Supplied citation 6](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf#page=1)
+
+[Supplied citation 7](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=2)
+
+[Supplied citation 8](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf)
+
+[Supplied citation 9](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf)
+
+[Supplied citation 10](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf)
+
+<a id="nov04-b51bc4e656291758be75"></a>
+### nov04-b51bc4e656291758be75
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f363700f6b7010a7927a4794ba9972f09385dbe/investigation/broader-evidence/telephone-hq1492-recording-request-2026-11-02/README.md)
+
+<a id="nov04-b56a523ed79bd6eb63d7"></a>
+### nov04-b56a523ed79bd6eb63d7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b5c98e1f569c5a3a15eb"></a>
+### nov04-b5c98e1f569c5a3a15eb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b5e205954ccbff9b9859"></a>
+### nov04-b5e205954ccbff9b9859
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/334.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/347.pdf)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/472.pdf)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/688.pdf)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/701.pdf)
+
+<a id="nov04-b605765ee1864110f745"></a>
+### nov04-b605765ee1864110f745
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/GPO-CRPT-107hrpt792/pdf/GPO-CRPT-107hrpt792.pdf)
+
+[Supplied citation 2](https://www.govinfo.gov/content/pkg/CHRG-107jhrg96166/pdf/CHRG-107jhrg96166.pdf)
+
+<a id="nov04-b67d9d945e69d524836f"></a>
+### nov04-b67d9d945e69d524836f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b6824163e95a0b31050b"></a>
+### nov04-b6824163e95a0b31050b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record)
+
+[Supplied citation 2](https://html.scribdassets.com/5bafzdomdce6sz3/images/15-d3c94df2c0.jpg)
+
+[Supplied citation 3](https://html.scribdassets.com/5bafzdomdce6sz3/images/16-6aa0e8fe82.jpg)
+
+[Supplied citation 4](https://html.scribdassets.com/5bafzdomdce6sz3/images/20-b3a78ffadd.jpg)
+
+[Supplied citation 5](https://html.scribdassets.com/5bafzdomdce6sz3/images/21-1a330ff42d.jpg)
+
+<a id="nov04-b703d8d8c2c00c0f2580"></a>
+### nov04-b703d8d8c2c00c0f2580
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/id/34911499)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-98-Email-on-9-11-Commission-Data-Collection.pdf)
+
+[Supplied citation 4](https://catalog.archives.gov/id/7599645)
+
+[Supplied citation 5](https://catalog.archives.gov/medialive/5/9115/34911505/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-99-Reproducing-Documentation-Info-REDACT-SEALED.pdf)
+
+[Supplied citation 6](https://catalog.archives.gov/id/34911505)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-71-Memo-with-Re-Recordings.pdf)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/665d6502ab844e1eb15e83b6403205a6f896936a/investigation/broader-evidence/faa-a90-landline-delivery-2026-11-01/README.md)
+
+<a id="nov04-b74ca9aac8d52598c03d"></a>
+### nov04-b74ca9aac8d52598c03d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/2012-156-doc-3.pdf#page=2)
+
+<a id="nov04-b78839da175c70408c74"></a>
+### nov04-b78839da175c70408c74
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b7addaac0b730f1892d0"></a>
+### nov04-b7addaac0b730f1892d0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b836497165710d6e543f"></a>
+### nov04-b836497165710d6e543f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view)
+
+[Supplied citation 3](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf)
+
+[Supplied citation 4](https://www.scribd.com/document/13499803/T7-B13-Flights-Phone-Calls-Fdr-Search-of-FBI-302-Files-for-175-77-and-93)
+
+[Supplied citation 5](https://www.scribd.com/document/15072623/T1A-B33-Four-Flights-Phone-Calls-and-Other-Data-Fdr-Entire-Contents-FBI-302s-843)
+
+<a id="nov04-b8862dbc914db57ca733"></a>
+### nov04-b8862dbc914db57ca733
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/88831b1b5436958547c9399306ff3c60ad8e1baf/investigation/broader-evidence/steel-attribution-roots-2026-10-27/README.md)
+
+[Supplied citation 2](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 3](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=92)
+
+[Supplied citation 5](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf)
+
+<a id="nov04-b8e435c6c42218884b66"></a>
+### nov04-b8e435c6c42218884b66
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-b8e55ee15500e350b704"></a>
+### nov04-b8e55ee15500e350b704
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ba15127cb8c992af9e1e"></a>
+### nov04-ba15127cb8c992af9e1e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ba2af2ad524b0efcdc8f"></a>
+### nov04-ba2af2ad524b0efcdc8f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ba9a1d7985424b751cc9"></a>
+### nov04-ba9a1d7985424b751cc9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 2](https://www.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011182.pdf)
+
+<a id="nov04-badfb7653758f2d9801a"></a>
+### nov04-badfb7653758f2d9801a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-baea04b343378b067079"></a>
+### nov04-baea04b343378b067079
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-bafffb2dd53fd253efdf"></a>
+### nov04-bafffb2dd53fd253efdf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-bb8840d9ebe019889f4f"></a>
+### nov04-bb8840d9ebe019889f4f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/GPO-CRPT-107srpt351/pdf/GPO-CRPT-107srpt351.pdf),858pages)
+
+<a id="nov04-bbdd582e50d8c02d284a"></a>
+### nov04-bbdd582e50d8c02d284a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](http://iarchives.nysed.gov/xtf/view?docId=ead/findingaids/22533.xml)
+
+[Supplied citation 2](https://nysm.nysed.gov/sites/default/files/2024-10/wtc.guide_.pdf)
+
+<a id="nov04-bbefa0aabdd2d123ae49"></a>
+### nov04-bbefa0aabdd2d123ae49
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.motleyrice.com/sites/default/files/documents/AT_HR/9-11/20240802%20Redacted%20public%20averment.pdf)
+
+<a id="nov04-bc1a65872ab62e35d7b9"></a>
+### nov04-bc1a65872ab62e35d7b9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-A90-67-Memo-Certifying-Re-recording.pdf).**)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7598345)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf).**)
+
+[Supplied citation 4](https://www.archives.gov/research/foia/faa-finding-aid)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-A90-67-Memo-Certifying-Re-recording.pdf#page=1)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=13)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/ce9df2c6e1a6dcb11bf1a31578586d00440508ee/investigation/broader-evidence/faa-position-log-crosscheck-2026-11-01/README.md)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=20)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=22)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e846c1ea159fde25e1291c1c5046e70e2e4de80/investigation/broader-evidence/faa-notification-personnel-originals-2026-11-01/README.md)
+
+<a id="nov04-bcc632ff66e0dd9a68f3"></a>
+### nov04-bcc632ff66e0dd9a68f3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-bd2a901854f8053f61ef"></a>
+### nov04-bd2a901854f8053f61ef
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-bd44b532b3518228f16f"></a>
+### nov04-bd44b532b3518228f16f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf)
+
+[Supplied citation 2](https://doi.org/10.1007/s10853-014-8685-2)
+
+[Supplied citation 3](https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf)
+
+<a id="nov04-bd50baec90e7a0c21b4c"></a>
+### nov04-bd50baec90e7a0c21b4c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/0506/app3.htm)
+
+[Supplied citation 2](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter6.htm),40,037bytes,SHA256`02e76244a18e7e483df0bb8f48b73a9a7727a8c65beaf3dd4e7d2b55b0033fc6`)
+
+[Supplied citation 3](https://www.aclu.org/sites/default/files/field_document/ACLURM041837.pdf),29pages,807,587bytes,SHA256`aab219923e6975fd62c0507b40139d13972eb18bb926eb2641a37718e9220f09`)
+
+[Supplied citation 4](https://oig.justice.gov/sites/default/files/archive/special/s0606/chapter5.htm),333,919bytes,SHA256`ab78d0b435b211eb747d01f06859855a87d499921b5306e3ec13fdecca908cc6`,footnote197)
+
+[Supplied citation 5](https://www.floridabulldog.org/2024/09/co-opted-saudi-intelligence-fbi-informant-shaikh-allegedly-played-role-9-11-preparations/)
+
+<a id="nov04-bd57214575a41a78b427"></a>
+### nov04-bd57214575a41a78b427
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=24)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=194)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=200)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=226)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=230)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=39)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/59828ff9efa5ee2bf073ebf3796a012b35bdd180/investigation/broader-evidence/faa-personnel-continuation-2026-11-01/README.md)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=5)
+
+[Supplied citation 10](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=16)
+
+<a id="nov04-bd8b88857397f91d4f4e"></a>
+### nov04-bd8b88857397f91d4f4e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://web.archive.org/cdx/search/cdx?url=aa77fdr.com%2Fsource%2FAmerican_77.fdr&output=json&filter=statuscode%3A200&collapse=digest)
+
+[Supplied citation 2](https://web.archive.org/web/20080212182941id_/http://www.aa77fdr.com:80/source/American_77.fdr)
+
+[Supplied citation 3](https://web.archive.org/web/20081121075836id_/http://www.aa77fdr.com/source/American_77.fdr)
+
+<a id="nov04-bda8ec68147a685e271e"></a>
+### nov04-bda8ec68147a685e271e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/88831b1b5436958547c9399306ff3c60ad8e1baf/investigation/broader-evidence/steel-attribution-roots-2026-10-27/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/7fdee56fbc807ef5d7f5eeda85f7ad0b24935a33/investigation/broader-evidence/steel-photo-roots-2026-10-27/README.md)
+
+[Supplied citation 3](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 4](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 5](https://www.fema.gov/pdf/library/fema403_apd.pdf#page=16)
+
+[Supplied citation 6](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication1000-5v3.pdf#page=163)
+
+[Supplied citation 7](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=96)
+
+[Supplied citation 8](https://www.adobe.com/devnet-apps/photoshop/fileformatashtml/#50577409_74450)
+
+[Supplied citation 9](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication1000-5v3.pdf#page=119)
+
+[Supplied citation 10](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=32)
+
+[Supplied citation 11](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3.pdf#page=76)
+
+<a id="nov04-bdb5da8fd5119af5b931"></a>
+### nov04-bdb5da8fd5119af5b931
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-bdd098b32f418e0b34ba"></a>
+### nov04-bdd098b32f418e0b34ba
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/dcdc9f647130139c60128ae3c131d40955536b34/investigation/broader-evidence/faa-omic-body-completion-2026-10-31/README.md)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17)
+
+[Supplied citation 3](https://www.archives.gov/declassification/iscap/pdf/2011-048.html)
+
+[Supplied citation 4](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf):)
+
+<a id="nov04-bdd5bae0631298363609"></a>
+### nov04-bdd5bae0631298363609
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://digitalcollections.iu.edu/concern/archival_materials/4742b1121?locale=en)
+
+<a id="nov04-be19aa5bea626f527790"></a>
+### nov04-be19aa5bea626f527790
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-be55cc5c5e3698fb9286"></a>
+### nov04-be55cc5c5e3698fb9286
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/5954614)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/legislative/rg-148/5952561/Reno.pdf)
+
+<a id="nov04-be6e43e00deaa47d6123"></a>
+### nov04-be6e43e00deaa47d6123
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-be93fc21c86c78cbb6f4"></a>
+### nov04-be93fc21c86c78cbb6f4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/7c13591e60d5c07ee176184cd834374b31f3e145/investigation/broader-evidence/documentary-crosswalk-2026-10-26/SAUDI-FBI-REVIEW-v2.md)
+
+<a id="nov04-bf4e950b37baa70fbff3"></a>
+### nov04-bf4e950b37baa70fbff3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-bf4fdc51a49223f14adf"></a>
+### nov04-bf4fdc51a49223f14adf
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08)
+
+<a id="nov04-bf5a3bee7473e2411ad5"></a>
+### nov04-bf5a3bee7473e2411ad5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.congress.gov/108/crec/2003/06/18/CREC-2003-06-18-dailydigest.pdf)
+
+[Supplied citation 2](https://www.govinfo.gov/content/pkg/CRPT-108hrpt221/pdf/CRPT-108hrpt221.pdf)
+
+<a id="nov04-bfab50476139a5f12f27"></a>
+### nov04-bfab50476139a5f12f27
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/75347e9c38e09b5c2037ee9490e6c2c5acf0f799/investigation/broader-evidence/steel-candidate-originals-2026-10-27/README.md#sv03--a-directly-visible-preservation-related-marking)
+
+<a id="nov04-c055e765239df59691e7"></a>
+### nov04-c055e765239df59691e7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view)
+
+<a id="nov04-c057c40672106541e11b"></a>
+### nov04-c057c40672106541e11b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf#page=1)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=1)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf#page=2)
+
+<a id="nov04-c0587a19697458276334"></a>
+### nov04-c0587a19697458276334
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c074542b8a960294d97e"></a>
+### nov04-c074542b8a960294d97e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/34916079)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7603836)
+
+[Supplied citation 3](https://catalog.archives.gov/id/7603839)
+
+[Supplied citation 4](https://catalog.archives.gov/id/7596600)
+
+[Supplied citation 5](https://catalog.archives.gov/id/7596599)
+
+[Supplied citation 6](https://www.scribd.com/document/12962758/List-of-NTSB-Documents-Provided-to-9-11-Commission)
+
+<a id="nov04-c0809109f3685da718a9"></a>
+### nov04-c0809109f3685da718a9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=149)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/e4e27ee8cd54f00d62917b2b9181d22503d2df9e/investigation/broader-evidence/five-inconsistency-tests-2026-10-31/README.md)
+
+<a id="nov04-c0c015e51d04e3783b16"></a>
+### nov04-c0c015e51d04e3783b16
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c0f7badeed2a78d9a509"></a>
+### nov04-c0f7badeed2a78d9a509
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c134d1ddabb473723774"></a>
+### nov04-c134d1ddabb473723774
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/2607530)
+
+[Supplied citation 2](https://catalog.archives.gov/id/2538494)
+
+<a id="nov04-c13ce588beb85c33c8c8"></a>
+### nov04-c13ce588beb85c33c8c8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/3b1c9b18434e58faef2e7f22b4e457af387d856c/investigation/broader-evidence/telephone-court-audio-resources-2026-10-29/README.md)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 4](https://open-flash.github.io/mirrors/swf-spec-19.pdf)
+
+<a id="nov04-c16aafe246c70cf59c9e"></a>
+### nov04-c16aafe246c70cf59c9e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e9ce8fa287fa4410241bc8fba303cefd6476467/investigation/broader-evidence/telephone-wf334-recording-lead-2026-11-02/README.md)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+<a id="nov04-c25d7e38469eec4736e1"></a>
+### nov04-c25d7e38469eec4736e1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.9-11commission.gov/press/pr_2003-11-12.pdf)
+
+[Supplied citation 2](https://www.9-11commission.gov/press/pr_2003-11-20.pdf)
+
+<a id="nov04-c272361f807e0925b080"></a>
+### nov04-c272361f807e0925b080
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c27dce7f8dd71471c55a"></a>
+### nov04-c27dce7f8dd71471c55a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c309938407e235ab930f"></a>
+### nov04-c309938407e235ab930f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://beverlyhills.org/161/Agreements-Ordinances-Resolutions)
+
+[Supplied citation 2](https://apps.beverlyhills.org/cityclerk/searchagreementsordinancesresolutions/web.jsp?SEARCHTYPE=ALL&DOCQUERY=&QUERYTYPE=AND&VENDOR=&NUMBER=11-R-12833&DATE=&TYPE=&action=Search)
+
+[Supplied citation 3](https://aedocs.beverlyhills.org/AppEnhancer/actionApi/dataSources/AX-COBH_City/applications/115/PageRendering/RenderDocPageContent/24099/1/1?dPI=-1&fileSubPage=1&formOverlayOption=0&isPrerender=false&zoomRatio=86)
+
+[Supplied citation 4](https://aedocs.beverlyhills.org/AppEnhancer/datasources/AX-COBH_City/ISubmitQuery?DocNavBlocked=True&DispMode=11&AppName=CITY-RESOLUTIONS_ORDINANCES_AGREEMENTS&ViewMode=ResultSet&SearchAllRevisions=True&PublicQuery=False&FulltextQuery=&FulltextQueryType=And&FulltextOperation=AND&FulltextThesaurus=False&DATE=09-08-2011&DOC%20TYPE=RESOLUTION&NUMBER%20(ORD%2FAGR%2FRESO)=11-R-12833)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/4ac0f984339daabcf92b2ffe71c046d0d3d0dff5/investigation/broader-evidence/bh-steel-ratification-minutes-2026-11-03/README.md)
+
+<a id="nov04-c310e474f170e6e6d0e1"></a>
+### nov04-c310e474f170e6e6d0e1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c320871b382ed14afee7"></a>
+### nov04-c320871b382ed14afee7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/foia-log-2021-part-01/FOIA%20Log%202021%20Part%2001%20%28Final%29/)
+
+[Supplied citation 2](https://www.aclu.org/sites/default/files/field_document/ACLURM003436.pdf)
+
+<a id="nov04-c32c7359a59caf18cf7f"></a>
+### nov04-c32c7359a59caf18cf7f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57):)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=58)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=59)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e9ce8fa287fa4410241bc8fba303cefd6476467/investigation/broader-evidence/telephone-wf334-recording-lead-2026-11-02/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f78618d88ebcbd3e91811e9ba17f6457a6027ef/investigation/broader-evidence/telephone-wf334-static-context-2026-11-02/README.md)
+
+<a id="nov04-c341c34d40fb1e3dd144"></a>
+### nov04-c341c34d40fb1e3dd144
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c36256e7f43b161fe7cd"></a>
+### nov04-c36256e7f43b161fe7cd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c390a4448b7829ea54ad"></a>
+### nov04-c390a4448b7829ea54ad
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c419ee62ceeae3535b57"></a>
+### nov04-c419ee62ceeae3535b57
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://9-11commission.gov/archive/hearing7/9-11Commission_Hearing_2004-01-26.htm)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-10-release-508.pdf)
+
+[Supplied citation 3](https://www.archives.gov/files/declassification/iscap/pdf/2026-201-document-11-release-508.pdf)
+
+<a id="nov04-c4c5848db8a587c878c8"></a>
+### nov04-c4c5848db8a587c878c8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://irp.fas.org/agency/doj/fisa/ag012100.html)
+
+<a id="nov04-c4fe2470d013873c7bb8"></a>
+### nov04-c4fe2470d013873c7bb8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 2](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/75347e9c38e09b5c2037ee9490e6c2c5acf0f799/investigation/broader-evidence/steel-candidate-originals-2026-10-27/README.md#sv03--a-directly-visible-preservation-related-marking)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/c282a14153df29812b7f365e1ae441329666b4b4/investigation/broader-evidence/steel-nysa-flatbed-photo-2026-11-03/README.md)
+
+<a id="nov04-c555f74908a29f11dba8"></a>
+### nov04-c555f74908a29f11dba8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/17aef02c7d79169234dc04c4a67f38425900ea30/investigation/broader-evidence/telephone-transcript-generation-chain-2026-11-02/README.md)
+
+<a id="nov04-c5c24608daa2ade6bc8d"></a>
+### nov04-c5c24608daa2ade6bc8d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c5fe446e78b4d87fb7b4"></a>
+### nov04-c5fe446e78b4d87fb7b4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](http://govinfo.library.unt.edu/911/`)
+
+[Supplied citation 2](https://govinfo.library.unt.edu/911/press/pr_2004-02-10.pdf`:)
+
+[Supplied citation 3](https://govinfo.library.unt.edu/911/press/pr_2004-02-25.pdf`:)
+
+<a id="nov04-c66f312caf3f54d46829"></a>
+### nov04-c66f312caf3f54d46829
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://edocuments.myclearwater.com/WebLink/edoc/243567/12132010.pdf?dbid=0&repo=Clearwater)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/4b57a56d460bd7ea4b34e9f8771cf5f472d19250/investigation/broader-evidence/steel-clearwater-agreement-2026-10-29/README.md)
+
+<a id="nov04-c67c3aa092722a58da5e"></a>
+### nov04-c67c3aa092722a58da5e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/701.pdf)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/472.pdf)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/688.pdf)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/692.pdf)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/810.pdf)
+
+<a id="nov04-c680d9fde649e89db77e"></a>
+### nov04-c680d9fde649e89db77e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://digitalcollections.iu.edu/concern/archival_materials/6d570k99p?locale=en)
+
+[Supplied citation 2](https://digitalcollections.iu.edu/concern/archival_materials/zp38x368p?locale=en)
+
+[Supplied citation 3](https://digitalcollections.iu.edu/concern/archival_materials/n009wr38v?locale=en)
+
+[Supplied citation 4](https://digitalcollections.iu.edu/concern/archival_materials/9z903p43m?locale=en)
+
+<a id="nov04-c719cb3d9061d6724d01"></a>
+### nov04-c719cb3d9061d6724d01
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c7ea8d12c0264f27c5a2"></a>
+### nov04-c7ea8d12c0264f27c5a2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/56e7780d85b9947de12f36dfe614ac1794d3ff78/investigation/broader-evidence/telephone-pickup-hq1492-disposition-2026-11-02/README.md)
+
+<a id="nov04-c7f7d5f32abf4fe25049"></a>
+### nov04-c7f7d5f32abf4fe25049
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c800b528aec580249d4d"></a>
+### nov04-c800b528aec580249d4d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c812b36287233e6ee630"></a>
+### nov04-c812b36287233e6ee630
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c8395197b4e5ecaab717"></a>
+### nov04-c8395197b4e5ecaab717
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c856eb901a25f68f84d6"></a>
+### nov04-c856eb901a25f68f84d6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/dcdc9f647130139c60128ae3c131d40955536b34/investigation/broader-evidence/faa-omic-body-completion-2026-10-31/README.md)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17)
+
+[Supplied citation 3](https://www.archives.gov/declassification/iscap/pdf/2011-048.html)
+
+[Supplied citation 4](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf):)
+
+<a id="nov04-c884c870c2a278f24f9e"></a>
+### nov04-c884c870c2a278f24f9e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c906bd8d114e8dd8ef4f"></a>
+### nov04-c906bd8d114e8dd8ef4f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c9256527d5578a69acb2"></a>
+### nov04-c9256527d5578a69acb2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-c9ad78f9476c4015458f"></a>
+### nov04-c9ad78f9476c4015458f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ca1d1e6c0e6bc18175c0"></a>
+### nov04-ca1d1e6c0e6bc18175c0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/7601973)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7601970)
+
+[Supplied citation 3](https://catalog.archives.gov/id/7596181)
+
+[Supplied citation 4](https://catalog.archives.gov/id/7596179)
+
+[Supplied citation 5](https://catalog.archives.gov/id/7601963)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-661-Record-of-Telephone-Calls-9-11-Commission-Followup-.pdf#page=1)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf#page=1)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-673-Memo-Presidential-9-11-Commission-Final-Follow-up-Response.pdf#page=1)
+
+<a id="nov04-ca1f73f84bb486a3fd57"></a>
+### nov04-ca1f73f84bb486a3fd57
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ca693c7ef3ea5718f462"></a>
+### nov04-ca693c7ef3ea5718f462
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ca6f9455dbd5af6a8d17"></a>
+### nov04-ca6f9455dbd5af6a8d17
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ca90ce31493bd6fca36b"></a>
+### nov04-ca90ce31493bd6fca36b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-caaa407d86fe52a638cb"></a>
+### nov04-caaa407d86fe52a638cb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-cb00aae65bd2238e6b54"></a>
+### nov04-cb00aae65bd2238e6b54
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-cb1c8de062e53f15294e"></a>
+### nov04-cb1c8de062e53f15294e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-2/at_download/file)
+
+<a id="nov04-cb4611a116d2f3f1572e"></a>
+### nov04-cb4611a116d2f3f1572e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-cb6ecfc30bf1fac559db"></a>
+### nov04-cb6ecfc30bf1fac559db
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=52)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=55)
+
+[Supplied citation 7](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=70)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f363700f6b7010a7927a4794ba9972f09385dbe/investigation/broader-evidence/telephone-hq1492-recording-request-2026-11-02/README.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/96de8d9745391a966e3967195cda70ff77a764f9/investigation/broader-evidence/telephone-pickup-preincident-2026-11-02/README.md)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/e451c84f5494eef39539807b9b984bdb2bcd8eec/investigation/broader-evidence/telephone-may-response-qualification-2026-11-02/README.md)
+
+[Supplied citation 11](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=71)
+
+[Supplied citation 12](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=72)
+
+[Supplied citation 13](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=73)
+
+<a id="nov04-cc0eafe0e1b3646b7d7d"></a>
+### nov04-cc0eafe0e1b3646b7d7d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://unredacted.com/wp-content/uploads/2010/04/9-11-sec-report.pdf)
+
+[Supplied citation 2](https://unredacted.com/wp-content/uploads/2010/04/9-11-sec-letter.pdf)
+
+[Supplied citation 3](https://cryptome.org/nara/sec/sec-03-0916.pdf)
+
+[Supplied citation 4](https://unredacted.com/2010/04/30/document-friday-terrorist-insider-trading-the-secs-pre-september-11-2001-trading-review/)
+
+[Supplied citation 5](https://www.archives.gov/research/9-11/commission-memoranda.html)
+
+<a id="nov04-cc3d3c324d4b805b41b4"></a>
+### nov04-cc3d3c324d4b805b41b4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/ST00001A.pdf)
+
+<a id="nov04-cd2e7459618e7f2e27ff"></a>
+### nov04-cd2e7459618e7f2e27ff
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-cd881952fdc05bb2b8db"></a>
+### nov04-cd881952fdc05bb2b8db
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57):)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=58)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=59)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e9ce8fa287fa4410241bc8fba303cefd6476467/investigation/broader-evidence/telephone-wf334-recording-lead-2026-11-02/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f78618d88ebcbd3e91811e9ba17f6457a6027ef/investigation/broader-evidence/telephone-wf334-static-context-2026-11-02/README.md)
+
+<a id="nov04-cdcd12b0f880e8c2bf02"></a>
+### nov04-cdcd12b0f880e8c2bf02
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.ntsb.gov/about/Documents/AAL77_fdr.pdf)
+
+[Supplied citation 2](https://dimnaut.info/truther/aircraft/ntsb/478585.pdf)
+
+[Supplied citation 3](https://www.journalof911studies.com/wp-content/uploads/2016/10/2011-Article-Legge-Stutt.pdf)
+
+[Supplied citation 4](http://www.warrenstutt.com/NTSBFOIARequest2-1-09/index.html)
+
+[Supplied citation 5](http://www.warrenstutt.com/AAL77FDRDecoder/OutputFiles/FinalFlightComplete.zip)
+
+[Supplied citation 6](http://www.warrenstutt.com/AAL77FDRDecoder/OutputFiles/FinalFlightCompleteWithMaxOneLine.zip)
+
+<a id="nov04-cdf5a6b38356714ada9a"></a>
+### nov04-cdf5a6b38356714ada9a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+[Supplied citation 3](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf)
+
+[Supplied citation 4](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 6](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/5031c6dfa73e1f59491f259e00f168c37cb21788/investigation/broader-evidence/telephone-usage-report-2026-10-27/README.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/e451c84f5494eef39539807b9b984bdb2bcd8eec/investigation/broader-evidence/telephone-may-response-qualification-2026-11-02/README.md)
+
+<a id="nov04-ce53c2109fd10ee343fa"></a>
+### nov04-ce53c2109fd10ee343fa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/66330951)
+
+<a id="nov04-ce59cf1172c7cf1741e5"></a>
+### nov04-ce59cf1172c7cf1741e5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/5c2a489db46eb230900d41b05f1710497e636965/investigation/broader-evidence/telephone-recording-custody-relays-2026-11-02/README.md)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html)
+
+<a id="nov04-ce690e76528af65036fa"></a>
+### nov04-ce690e76528af65036fa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-cf3c84c830135f46c06f"></a>
+### nov04-cf3c84c830135f46c06f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-98-Email-on-9-11-Commission-Data-Collection.pdf)
+
+[Supplied citation 3](https://catalog.archives.gov/medialive/5/9115/34911505/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-99-Reproducing-Documentation-Info-REDACT-SEALED.pdf)
+
+[Supplied citation 4](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=2)
+
+[Supplied citation 5](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=3)
+
+[Supplied citation 6](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=5)
+
+[Supplied citation 7](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=8)
+
+[Supplied citation 8](https://catalog.archives.gov/medialive/99/9114/34911499/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-74-Facility-Certification-REDACT-SEALED.pdf#page=1)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-A90-98-Email-on-9-11-Commission-Data-Collection.pdf#page=1)
+
+[Supplied citation 10](https://catalog.archives.gov/medialive/5/9115/34911505/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-99-Reproducing-Documentation-Info-REDACT-SEALED.pdf#page=1)
+
+[Supplied citation 11](https://github.com/AveLyra/911-conspiracy-investigation/blob/665d6502ab844e1eb15e83b6403205a6f896936a/investigation/broader-evidence/faa-a90-landline-delivery-2026-11-01/README.md)
+
+[Supplied citation 12](https://catalog.archives.gov/medialive/5/9115/34911505/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-A90-99-Reproducing-Documentation-Info-REDACT-SEALED.pdf#page=4)
+
+<a id="nov04-cfe366a595c641e54a3c"></a>
+### nov04-cfe366a595c641e54a3c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=23)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=24)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/b6923d4d9c874ab71fe88112f401d5279caaeb95/investigation/broader-evidence/telephone-operator-notes-mfr-2026-10-31/README.md)
+
+<a id="nov04-cfe931c5ef0e0f3559c5"></a>
+### nov04-cfe931c5ef0e0f3559c5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d052f1b9a74d5bca0f90"></a>
+### nov04-d052f1b9a74d5bca0f90
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d0743c33bcfe5a683a85"></a>
+### nov04-d0743c33bcfe5a683a85
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://html.scribdassets.com/4wfmf4jddsfxfj8/images/17-ce884a0772.jpg)
+
+[Supplied citation 2](https://html.scribdassets.com/7na47jw8009n4uh/images/36-58fb41f51b.jpg)
+
+[Supplied citation 3](https://html.scribdassets.com/czuxmc1fkakhxb/images/6-d34c11fc42.jpg)
+
+[Supplied citation 4](https://html.scribdassets.com/czuxmc1fkakhxb/images/8-fc7c20e2d1.jpg)
+
+[Supplied citation 5](https://html.scribdassets.com/czuxmc1fkakhxb/images/7-cd5987ce20.jpg)
+
+[Supplied citation 6](https://html.scribdassets.com/czuxmc1fkakhxb/images/9-d1266f0d0c.jpg)
+
+[Supplied citation 7](https://html.scribdassets.com/czuxmc1fkakhxb/images/11-6bf3af6645.jpg)
+
+[Supplied citation 8](https://www.scribd.com/document/13950194/T7-B17-FBI-302s-of-Interest-Flight-77-Fdr-Entire-Contents-393)
+
+[Supplied citation 9](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s)
+
+[Supplied citation 10](https://www.scribd.com/document/15492358/DM-B1-Airlines-Fdr-Letters-From-Condon-Forsyth-LLP-Re-American-Airlines-Document-Requests)
+
+<a id="nov04-d0938b0c0a4c33b71890"></a>
+### nov04-d0938b0c0a4c33b71890
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d0ccfd682b49a4b65ff6"></a>
+### nov04-d0ccfd682b49a4b65ff6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d1439d52c6ef117aaba2"></a>
+### nov04-d1439d52c6ef117aaba2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/research/9-11/commission-memoranda.html)
+
+[Supplied citation 2](https://catalog.archives.gov/id/2609600)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/2609600_AASOC.pdf)
+
+[Supplied citation 4](https://catalog.archives.gov/id/2609603)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00017.pdf)
+
+[Supplied citation 6](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=31)
+
+[Supplied citation 7](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00005.pdf#page=2)
+
+[Supplied citation 9](https://catalog.archives.gov/medialive/97/6095/2609597/content/arcmedia/9-11/MFR/t-0148-911MFR-00011.pdf#page=3)
+
+[Supplied citation 10](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00017.pdf#page=3)
+
+[Supplied citation 11](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00017.pdf#page=2)
+
+<a id="nov04-d152078be9498f57bae3"></a>
+### nov04-d152078be9498f57bae3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d1830aba1d5a6d4e2b93"></a>
+### nov04-d1830aba1d5a6d4e2b93
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d18bd6a1b4e38fa12760"></a>
+### nov04-d18bd6a1b4e38fa12760
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d19e2c4dc78f84431f81"></a>
+### nov04-d19e2c4dc78f84431f81
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d1a15c82b80c9dfb313a"></a>
+### nov04-d1a15c82b80c9dfb313a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/2606775)
+
+<a id="nov04-d1d5843a507a252d330d"></a>
+### nov04-d1d5843a507a252d330d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d1f9f7829eb014ed0c00"></a>
+### nov04-d1f9f7829eb014ed0c00
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=63)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=64)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=65)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f363700f6b7010a7927a4794ba9972f09385dbe/investigation/broader-evidence/telephone-hq1492-recording-request-2026-11-02/README.md)
+
+<a id="nov04-d227ca42e591fd792022"></a>
+### nov04-d227ca42e591fd792022
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d22cc8333df235d25c0d"></a>
+### nov04-d22cc8333df235d25c0d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/FO05521-10.html)
+
+<a id="nov04-d2340acaa50b27a4bdf4"></a>
+### nov04-d2340acaa50b27a4bdf4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d29ecd96f9874c4ebfc9"></a>
+### nov04-d29ecd96f9874c4ebfc9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d2c0323013d277d9d617"></a>
+### nov04-d2c0323013d277d9d617
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialive/2/6106/2610602/content/arcmedia/9-11/MFR/t-0148-911MFR-01002.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialive/3/6106/2610603/content/arcmedia/9-11/MFR/t-0148-911MFR-01003.pdf)
+
+<a id="nov04-d2cea0cfed6fe793625b"></a>
+### nov04-d2cea0cfed6fe793625b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d2e2c5cd0cbcae4d6cc4"></a>
+### nov04-d2e2c5cd0cbcae4d6cc4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d775a5c70c1f7793dde9a2200d5c456e2779883/investigation/broader-evidence/telephone-may-family-relays-2026-11-02/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=70)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=71)
+
+<a id="nov04-d2f48fedfaff37533bc0"></a>
+### nov04-d2f48fedfaff37533bc0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution.html)
+
+<a id="nov04-d338b99286fb8d50a6cd"></a>
+### nov04-d338b99286fb8d50a6cd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d3670627b05ea7dd383c"></a>
+### nov04-d3670627b05ea7dd383c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-26.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/597fb92d0d4da93fba6938452db95500ab74e76f/investigation/broader-evidence/faa-nmcc-bridge-scope-2026-11-04/README.md)
+
+<a id="nov04-d38d2f23f75ccc0aa5b8"></a>
+### nov04-d38d2f23f75ccc0aa5b8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d3aed509bb7b5e8458e9"></a>
+### nov04-d3aed509bb7b5e8458e9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/14142009/NYC-Box-2-NEADS-Transcript-Rome-NY-Fdr-Transcript-Pgs-1-82-1237-1417)
+
+<a id="nov04-d3b8b98846f54a4e9f43"></a>
+### nov04-d3b8b98846f54a4e9f43
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf)
+
+[Supplied citation 2](https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March-2020.pdf)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/2201bbaf726572d1d19fd9c836b614153f1f8bb0/investigation/wtc7/uaf-c79-side-plate-audit-2026-10-18/README.md)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9.pdf)
+
+<a id="nov04-d3e7bf5eb5fa3d82182e"></a>
+### nov04-d3e7bf5eb5fa3d82182e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record)
+
+[Supplied citation 2](https://html.scribdassets.com/5bafzdomdce6sz3/images/15-d3c94df2c0.jpg)
+
+[Supplied citation 3](https://html.scribdassets.com/5bafzdomdce6sz3/images/16-6aa0e8fe82.jpg)
+
+[Supplied citation 4](https://html.scribdassets.com/5bafzdomdce6sz3/images/20-b3a78ffadd.jpg)
+
+[Supplied citation 5](https://html.scribdassets.com/5bafzdomdce6sz3/images/21-1a330ff42d.jpg)
+
+<a id="nov04-d4e00b9473df53170ec7"></a>
+### nov04-d4e00b9473df53170ec7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d5187644a34eaf1df6df"></a>
+### nov04-d5187644a34eaf1df6df
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d560061211a4981fcfe8"></a>
+### nov04-d560061211a4981fcfe8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d5667de10c522c16e767"></a>
+### nov04-d5667de10c522c16e767
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d5684f6f4077b195f6c2"></a>
+### nov04-d5684f6f4077b195f6c2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d59908124e7fa7998004"></a>
+### nov04-d59908124e7fa7998004
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nysm.nysed.gov/sites/default/files/2024-10/wtc.guide_.pdf)
+
+<a id="nov04-d5bf8c101812d77f76dc"></a>
+### nov04-d5bf8c101812d77f76dc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/e13295b26e486e613979fcfdc79b1efeef05548e/investigation/broader-evidence/steel-wje-award-and-native-records-2026-10-28/README.md)
+
+[Supplied citation 2](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=177)
+
+[Supplied citation 3](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv1.pdf#page=71)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=170)
+
+[Supplied citation 5](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=236)
+
+[Supplied citation 6](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=257)
+
+[Supplied citation 7](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=93)
+
+[Supplied citation 8](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=91)
+
+[Supplied citation 9](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=169)
+
+<a id="nov04-d5e229bd647a1f425c1e"></a>
+### nov04-d5e229bd647a1f425c1e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d5ec93e3507434a80264"></a>
+### nov04-d5ec93e3507434a80264
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d616c1e6871095d21048"></a>
+### nov04-d616c1e6871095d21048
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d62c903f42c10b3681d1"></a>
+### nov04-d62c903f42c10b3681d1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d64aad0c94df9f5257fa"></a>
+### nov04-d64aad0c94df9f5257fa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file)
+
+<a id="nov04-d662cb37799d84fecaf8"></a>
+### nov04-d662cb37799d84fecaf8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d679c549d4804e08ff46"></a>
+### nov04-d679c549d4804e08ff46
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d6c21f23d1858783e74b"></a>
+### nov04-d6c21f23d1858783e74b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d6edb99491cfd65fffdb"></a>
+### nov04-d6edb99491cfd65fffdb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d6f1a163ec1269485cc0"></a>
+### nov04-d6f1a163ec1269485cc0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://html.scribdassets.com/4wfmf4jddsfxfj8/images/17-ce884a0772.jpg)
+
+[Supplied citation 2](https://html.scribdassets.com/7na47jw8009n4uh/images/36-58fb41f51b.jpg)
+
+[Supplied citation 3](https://html.scribdassets.com/czuxmc1fkakhxb/images/6-d34c11fc42.jpg)
+
+[Supplied citation 4](https://html.scribdassets.com/czuxmc1fkakhxb/images/8-fc7c20e2d1.jpg)
+
+[Supplied citation 5](https://html.scribdassets.com/czuxmc1fkakhxb/images/7-cd5987ce20.jpg)
+
+[Supplied citation 6](https://html.scribdassets.com/czuxmc1fkakhxb/images/9-d1266f0d0c.jpg)
+
+[Supplied citation 7](https://html.scribdassets.com/czuxmc1fkakhxb/images/11-6bf3af6645.jpg)
+
+[Supplied citation 8](https://www.scribd.com/document/13950194/T7-B17-FBI-302s-of-Interest-Flight-77-Fdr-Entire-Contents-393)
+
+[Supplied citation 9](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s)
+
+[Supplied citation 10](https://www.scribd.com/document/15492358/DM-B1-Airlines-Fdr-Letters-From-Condon-Forsyth-LLP-Re-American-Airlines-Document-Requests)
+
+<a id="nov04-d714b84e4d8c0fa147fe"></a>
+### nov04-d714b84e4d8c0fa147fe
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense.html)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/032.pdf)**)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/348.pdf)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/351.pdf)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/347.pdf)
+
+[Supplied citation 6](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/334.pdf)
+
+[Supplied citation 7](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/701.pdf)
+
+<a id="nov04-d75d405a7437bd1e7acc"></a>
+### nov04-d75d405a7437bd1e7acc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d7694dd31b2b10d2e062"></a>
+### nov04-d7694dd31b2b10d2e062
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf)
+
+[Supplied citation 2](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2208)
+
+[Supplied citation 3](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2275)
+
+[Supplied citation 4](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2210)
+
+[Supplied citation 5](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2276),lines20–24)
+
+[Supplied citation 6](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2215)
+
+[Supplied citation 7](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2295)
+
+[Supplied citation 8](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2299)
+
+[Supplied citation 9](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2193)
+
+[Supplied citation 10](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2194)
+
+<a id="nov04-d78066c33f56117bfbfd"></a>
+### nov04-d78066c33f56117bfbfd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d788794976ef816535e2"></a>
+### nov04-d788794976ef816535e2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=18)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=19)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+<a id="nov04-d79571c73f598b8c511f"></a>
+### nov04-d79571c73f598b8c511f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/MM00651.pdf)
+
+<a id="nov04-d7e3fcaa7299f68a3b68"></a>
+### nov04-d7e3fcaa7299f68a3b68
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://benthamopenarchives.com/abstract.php?ArticleCode=TOCPJ-2-7)
+
+[Supplied citation 2](https://physics.byu.edu/department/directory/farrer)
+
+[Supplied citation 3](https://physics.byu.edu/department/directory/rivera)
+
+[Supplied citation 4](https://mvascientificconsultants.com/)
+
+<a id="nov04-d7f46de41af6d14a99bd"></a>
+### nov04-d7f46de41af6d14a99bd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d8327929ef8ca38afffd"></a>
+### nov04-d8327929ef8ca38afffd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d86931f93d0af3755ed6"></a>
+### nov04-d86931f93d0af3755ed6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d8f27880a4e4157c8675"></a>
+### nov04-d8f27880a4e4157c8675
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d90b343d1122cf3a5774"></a>
+### nov04-d90b343d1122cf3a5774
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://archive.org/metadata/NORAD_9-11_audio)
+
+[Supplied citation 2](https://www.scribd.com/document/78046326/Releases-Spreadsheet-2012-01-04)
+
+<a id="nov04-d932a867d58cc433900c"></a>
+### nov04-d932a867d58cc433900c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d953b48ec06da1120d1b"></a>
+### nov04-d953b48ec06da1120d1b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=23)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=24)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/b6923d4d9c874ab71fe88112f401d5279caaeb95/investigation/broader-evidence/telephone-operator-notes-mfr-2026-10-31/README.md)
+
+<a id="nov04-d970b3fdc3724961b99a"></a>
+### nov04-d970b3fdc3724961b99a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d97b45826891c1d790ff"></a>
+### nov04-d97b45826891c1d790ff
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d9b2f4bfdefe79e4832b"></a>
+### nov04-d9b2f4bfdefe79e4832b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://clearwater.granicus.com/MinutesViewer.php?clip_id=1841&view_id=25#page=3)
+
+[Supplied citation 2](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11#page=2)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/240914e0f1851956e74dae61a076e6cd52c45847/investigation/broader-evidence/steel-artifact-transfer-orders-2026-10-27/README.md)
+
+<a id="nov04-d9bc4c25d052e1d53f6b"></a>
+### nov04-d9bc4c25d052e1d53f6b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9.pdf)
+
+[Supplied citation 2](https://www.metabunk.org/attachments/9114-pdf.28807/)
+
+[Supplied citation 3](https://www.metabunk.org/attachments/1091-pdf.28913/)
+
+[Supplied citation 4](https://richardgage911.org/wp-content/uploads/August-2020-NIST-Denial-of-AE911Truth-et-als-2020-Request-for-Correction.pdf)
+
+[Supplied citation 5](https://ine.uaf.edu/wtc7)
+
+[Supplied citation 6](https://www.uaf.edu/cem/people/cgee.php)
+
+<a id="nov04-d9c3222e6e8921aec9ee"></a>
+### nov04-d9c3222e6e8921aec9ee
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d9f399c872ce647b6151"></a>
+### nov04-d9f399c872ce647b6151
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-d9f41d66c1bc224ac034"></a>
+### nov04-d9f41d66c1bc224ac034
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA176)
+
+[Supplied citation 2](https://www.govinfo.gov/content/pkg/USCODE-2000-title15/pdf/USCODE-2000-title15-chap7-sec281a.pdf)
+
+[Supplied citation 3](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA161&output=text)
+
+[Supplied citation 4](https://books.google.com/books?id=R1GrCiT1US8C&pg=PA171&output=text)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/ca224c35d97a1aac5d885e8a85bc76fc3d08a037/investigation/broader-evidence/faa-package-version-review-2026-10-27/README.md)
+
+[Supplied citation 6](https://catalog.archives.gov/id/7595603)
+
+<a id="nov04-da4d85a912eaecec106c"></a>
+### nov04-da4d85a912eaecec106c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/14142047/NYC-Box-3-Neads-conr-norad-Fdr-Transcript-Neads-Channel-2-Mcc-Upside-006)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17)
+
+[Supplied citation 3](https://www.scribd.com/document/14142009/NYC-Box-2-NEADS-Transcript-Rome-NY-Fdr-Transcript-Pgs-1-82-1237-1417)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=3)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/6af556052ee0745e95151faa13294e864decdd89/investigation/broader-evidence/neads-mfr-version-crosswalk-2026-10-31/README.md)
+
+<a id="nov04-db3ce06bddc177cf615e"></a>
+### nov04-db3ce06bddc177cf615e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/view)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/view)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=45)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=2)
+
+[Supplied citation 5](https://catalog)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=69)
+
+[Supplied citation 7](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=48)
+
+[Supplied citation 8](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=51)
+
+[Supplied citation 9](https://www.les-crises.fr/wp-content/uploads/20)
+
+[Supplied citation 10](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+[Supplied citation 11](https://www.archives)
+
+[Supplied citation 12](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=70)
+
+[Supplied citation 13](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file)
+
+[Supplied citation 14](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+[Supplied citation 15](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf)
+
+[Supplied citation 16](https://catalog.archives.gov/id/2609807)
+
+[Supplied citation 17](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 18](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf)
+
+<a id="nov04-dba88f4962ae48433624"></a>
+### nov04-dba88f4962ae48433624
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf)
+
+[Supplied citation 2](https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf)
+
+[Supplied citation 3](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2204)
+
+[Supplied citation 4](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2694)
+
+[Supplied citation 5](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2700)
+
+[Supplied citation 6](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2702)
+
+<a id="nov04-dbac762c9cabf8152eab"></a>
+### nov04-dbac762c9cabf8152eab
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-dbf0abc7cfe1a60b5e23"></a>
+### nov04-dbf0abc7cfe1a60b5e23
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/ad7be60185f5d3a49f0e0b7564f4da3610afaf92/investigation/broader-evidence/telephone-carrier-enclosures-2026-10-27/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/cd950cd141582ab562ad74e17be6231077a2cc4c/investigation/broader-evidence/telephone-event-joins-2026-10-27/README.md)
+
+[Supplied citation 4](https://html.scribdassets.com/5bafzdomdce6sz3/images/18-f7e10d4c8d.jpg)
+
+[Supplied citation 5](https://html.scribdassets.com/5bafzdomdce6sz3/images/19-1f570a8a28.jpg)
+
+[Supplied citation 6](https://html.scribdassets.com/5bafzdomdce6sz3/images/15-d3c94df2c0.jpg)
+
+[Supplied citation 7](https://html.scribdassets.com/5bafzdomdce6sz3/images/13-ec2683a0f2.jpg)
+
+[Supplied citation 8](https://html.scribdassets.com/5bafzdomdce6sz3/images/14-92e4203dc6.jpg)
+
+[Supplied citation 9](https://html.scribdassets.com/5bafzdomdce6sz3/images/21-1a330ff42d.jpg)
+
+[Supplied citation 10](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 11](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s)
+
+[Supplied citation 12](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408)
+
+[Supplied citation 13](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+<a id="nov04-dc14cae79f4d3ecbccd3"></a>
+### nov04-dc14cae79f4d3ecbccd3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/legislative/rg-148/5952561/Reno.pdf)
+
+[Supplied citation 2](https://www.justice.gov/d9/olc/opinions/1997/08/31/op-olc-v021-p0159_0.pdf)
+
+[Supplied citation 3](https://law.justia.com/cases/federal/appellate-courts/F3/131/99/514494/)
+
+<a id="nov04-dc8ba768cbc45207c167"></a>
+### nov04-dc8ba768cbc45207c167
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-dce2e5f25ad294dd7c03"></a>
+### nov04-dce2e5f25ad294dd7c03
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-dd10a243d37cfedca596"></a>
+### nov04-dd10a243d37cfedca596
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/60f3d93c90374e2b50147bfb19867aceccb3ba0e/investigation/catalogue/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/8b787be27fcb665a851a42e318ccc4fd0b6117e9/investigation/broader-evidence/faa-1078-marked-passages-2026-10-30/README.md)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/8bc80894a40ac207b2ccce62a9fdd6d22d4c1139/investigation/broader-evidence/faa-911-special-schedule-2026-10-30/README.md)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/3f50f2c6904eca6a39efa4c06c15ea838729a65d/investigation/broader-evidence/moussaoui-reply-update-2026-10-30/README.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md)
+
+[Supplied citation 11](https://github.com/AveLyra/911-conspiracy-investigation/blob/591ed5873ce7895f47c092f83f244d98efa18154/investigation/broader-evidence/moussaoui-aug22-dissemination-2026-10-31/README.md)
+
+<a id="nov04-dd8aa0aa8b867513a50c"></a>
+### nov04-dd8aa0aa8b867513a50c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-dd9f7b19a1cdc7bf5c26"></a>
+### nov04-dd9f7b19a1cdc7bf5c26
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ddb1eef0aeef637370d9"></a>
+### nov04-ddb1eef0aeef637370d9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ddf26ee2e874da025a13"></a>
+### nov04-ddf26ee2e874da025a13
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://web.archive.org/cdx/search/cdx?url=aa77fdr.com%2Fsource%2F%2A&output=json&filter=statuscode%3A200&collapse=urlkey&limit=1000&fl=timestamp%2Coriginal%2Cmimetype%2Cstatuscode%2Cdigest%2Clength)
+
+[Supplied citation 2](https://web.archive.org/web/20080212044303id_/http://www.aa77fdr.com:80/source/AA77_ParamsTabular.txt)
+
+[Supplied citation 3](https://www.ntsb.gov/about/Documents/AAL77_fdr.pdf#page=4)
+
+<a id="nov04-de1bafd95cee2a37d3cb"></a>
+### nov04-de1bafd95cee2a37d3cb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=30)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/e357f0778da4001ee9ea41d56ce77bae974e862f/investigation/broader-evidence/telephone-signed-notes-continuations-2026-10-31/README.md)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+<a id="nov04-de23d557733140d440d3"></a>
+### nov04-de23d557733140d440d3
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%205.pdf#page=43)
+
+[Supplied citation 2](https://www.israellobby.org/UrbanMoving/1169683-001%20---%20303A-NY-C237934-Serial%20325%20---%20Section%201%20%281037758%29.pdf#page=2)
+
+[Supplied citation 3](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%201.pdf#page=7)
+
+[Supplied citation 4](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%206.pdf#page=42)
+
+[Supplied citation 5](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%205.pdf#page=45)
+
+[Supplied citation 6](https://archive.org/download/fbinewarkdivisionfullfieldinvestigation/FBI%20Newark%20Division%20Full-Field%20Investigation%20Part%205.pdf#page=47)
+
+[Supplied citation 7](https://www.israellobby.org/UrbanMoving/1169683-001%20---%20303A-NY-C237934-Serial%20326%20---%20Section%201%20%281037759%29.pdf#page=2)
+
+[Supplied citation 8](https://vault.fbi.gov/foia-log-2018-part-01/FOIA%20Log%202018%20Part%2001%20%28Final%29/#page=23)|1423771)
+
+[Supplied citation 9](https://vault.fbi.gov/foia-log-2018-part-01/FOIA%20Log%202018%20Part%2001%20%28Final%29/#page=257)|1408889)
+
+[Supplied citation 10](https://vault.fbi.gov/foia-log-2022-part-01/FOIA%20Log%202022%20Part%2001%20%28Final%29/#page=127)|1568844)
+
+<a id="nov04-de26d84542b3424fb22f"></a>
+### nov04-de26d84542b3424fb22f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=192)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/dcdc9f647130139c60128ae3c131d40955536b34/investigation/broader-evidence/faa-omic-body-completion-2026-10-31/README.md)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=194)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=195)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=196)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=198)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=200)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=201)
+
+[Supplied citation 10](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=202)
+
+[Supplied citation 11](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=203)
+
+[Supplied citation 12](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=204)
+
+<a id="nov04-de278733f159cf61aa77"></a>
+### nov04-de278733f159cf61aa77
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/files/declassification/iscap/2012-156-doc-3.pdf#page=2)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/2012-156-doc-1.pdf#page=1)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d148a319c76e579b59dece22395501d66b64463/investigation/broader-evidence/faa-ot2-config-scope-2026-11-04/README.md)
+
+<a id="nov04-de2e10ab2208f74fff1d"></a>
+### nov04-de2e10ab2208f74fff1d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-de40c19247e222f891de"></a>
+### nov04-de40c19247e222f891de
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-21.pdf)
+
+[Supplied citation 3](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=9)
+
+[Supplied citation 4](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=10)
+
+<a id="nov04-de86b2e6c93c5f24adb7"></a>
+### nov04-de86b2e6c93c5f24adb7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-dee33354dd3f3802727b"></a>
+### nov04-dee33354dd3f3802727b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-dee472a04428afe915e9"></a>
+### nov04-dee472a04428afe915e9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-dfb097409167d4b4b31b"></a>
+### nov04-dfb097409167d4b4b31b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/GOVPUB-C13-41f9c1ed6889bdc5fd7ea98bfc31a05b/pdf/GOVPUB-C13-41f9c1ed6889bdc5fd7ea98bfc31a05b.pdf)
+
+<a id="nov04-dfec936cb5f93957fce0"></a>
+### nov04-dfec936cb5f93957fce0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/75347e9c38e09b5c2037ee9490e6c2c5acf0f799/investigation/broader-evidence/steel-candidate-originals-2026-10-27/README.md)
+
+<a id="nov04-dffae3bc012efac03522"></a>
+### nov04-dffae3bc012efac03522
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://renewnyc.org/attachments/content/pdfs/S106_Report_January_to_June_2005.pdf)
+
+[Supplied citation 2](https://www.renewnyc.com/attachments/content/pdfs/PA_ReportJuly2006.pdf)
+
+<a id="nov04-e01859965e3c38b69386"></a>
+### nov04-e01859965e3c38b69386
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e01faacc255084560f99"></a>
+### nov04-e01faacc255084560f99
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=41)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=38)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=11)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=40)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=39)
+
+[Supplied citation 7](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=2)
+
+<a id="nov04-e03f41cfc3d74faaee3b"></a>
+### nov04-e03f41cfc3d74faaee3b
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57):)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=58)
+
+[Supplied citation 4](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=59)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e9ce8fa287fa4410241bc8fba303cefd6476467/investigation/broader-evidence/telephone-wf334-recording-lead-2026-11-02/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f78618d88ebcbd3e91811e9ba17f6457a6027ef/investigation/broader-evidence/telephone-wf334-static-context-2026-11-02/README.md)
+
+<a id="nov04-e06fdfb80d2caaff3035"></a>
+### nov04-e06fdfb80d2caaff3035
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e07555fab856a44e9fd5"></a>
+### nov04-e07555fab856a44e9fd5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e091338299378085cbf5"></a>
+### nov04-e091338299378085cbf5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/7601973)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7601970)
+
+[Supplied citation 3](https://catalog.archives.gov/id/7596181)
+
+[Supplied citation 4](https://catalog.archives.gov/id/7596179)
+
+[Supplied citation 5](https://catalog.archives.gov/id/7601963)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-661-Record-of-Telephone-Calls-9-11-Commission-Followup-.pdf#page=1)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf#page=1)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-673-Memo-Presidential-9-11-Commission-Final-Follow-up-Response.pdf#page=1)
+
+<a id="nov04-e0ce52c0595b43e40939"></a>
+### nov04-e0ce52c0595b43e40939
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=47)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/view)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/29ee78c52ae09a2cadeb33b0856c654c51982a3c/investigation/broader-evidence/fbi-vault-operator-record-2026-10-31/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file)
+
+<a id="nov04-e115a8e943ff81dd1ac9"></a>
+### nov04-e115a8e943ff81dd1ac9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md)
+
+<a id="nov04-e1a5b2f8c004d56b1474"></a>
+### nov04-e1a5b2f8c004d56b1474
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf)
+
+[Supplied citation 2](https://doi.org/10.1007/s10853-014-8685-2)
+
+[Supplied citation 3](https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf)
+
+<a id="nov04-e22273c387f117098db7"></a>
+### nov04-e22273c387f117098db7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e2989122ba4bde8ba51a"></a>
+### nov04-e2989122ba4bde8ba51a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=69)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=70)
+
+[Supplied citation 4](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md)
+
+<a id="nov04-e2c718289df7b0de19b8"></a>
+### nov04-e2c718289df7b0de19b8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e33c87680fa17aa9f363"></a>
+### nov04-e33c87680fa17aa9f363
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e3580616f3390855c7c9"></a>
+### nov04-e3580616f3390855c7c9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e35e8fb8f37c78050e6e"></a>
+### nov04-e35e8fb8f37c78050e6e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e399e926dc9c926cf009"></a>
+### nov04-e399e926dc9c926cf009
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/0b0ab462ea57660478f2388c2feab173e47d10a8/investigation/broader-evidence/outstanding-records-verification-2026-10-26/REPORT.md)
+
+[Supplied citation 2](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=9)
+
+[Supplied citation 3](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12)
+
+[Supplied citation 4](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 5](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=92)
+
+[Supplied citation 6](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf#page=93)
+
+[Supplied citation 7](https://govinfo.library.unt.edu/911/staff_statements/staff_statement_17.pdf#page=17)
+
+[Supplied citation 8](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=5)
+
+[Supplied citation 9](https://govinfo.library.unt.edu/911/archive/hearing2/9-11Commission_Hearing_2003-05-23.htm)
+
+[Supplied citation 10](https://govinfo.library.unt.edu/911/staff_statements/staff_statement_17.pdf#page=23)
+
+[Supplied citation 11](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=16)
+
+[Supplied citation 12](https://github.com/AveLyra/911-conspiracy-investigation/blob/0b0ab462ea57660478f2388c2feab173e47d10a8/investigation/broader-evidence/outstanding-records-verification-2026-10-26/CIA-ARCHIVAL-ROUTES.json)
+
+[Supplied citation 13](https://github.com/AveLyra/911-conspiracy-investigation/blob/0b0ab462ea57660478f2388c2feab173e47d10a8/investigation/broader-evidence/outstanding-records-verification-2026-10-26/OPEN-QUESTIONS.json)
+
+<a id="nov04-e44eb077d5102b14017e"></a>
+### nov04-e44eb077d5102b14017e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/legislative/rg-148/5952561/Reno.pdf)
+
+<a id="nov04-e473200484f90abbcbb5"></a>
+### nov04-e473200484f90abbcbb5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e4a64d4fce12d7fe5ddb"></a>
+### nov04-e4a64d4fce12d7fe5ddb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e4df65b2c9534e7690ea"></a>
+### nov04-e4df65b2c9534e7690ea
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://optionshotline.wordpress.com/2016/09/11/my-911-story/)
+
+[Supplied citation 2](https://www.thestreet.com/opinion/alarm-bells-unusual-options-activity-in-the-airlines-10001556)
+
+<a id="nov04-e503ace7193d0f711b90"></a>
+### nov04-e503ace7193d0f711b90
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+<a id="nov04-e545837a4283f2ff2682"></a>
+### nov04-e545837a4283f2ff2682
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/8421c444533ec3fd71d68ae0932d8a0a4145d62b/investigation/broader-evidence/faa-woc-policy-version-conflict-2026-10-28/README.md)
+
+[Supplied citation 2](https://www.archives.gov/research/foia/faa-finding-aid-84-95)
+
+[Supplied citation 3](https://catalog.archives.gov/id/34913193)
+
+[Supplied citation 4](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf)
+
+[Supplied citation 5](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=1)
+
+[Supplied citation 6](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=2)
+
+[Supplied citation 7](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=251)
+
+[Supplied citation 8](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=252)
+
+[Supplied citation 9](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2287)
+
+[Supplied citation 10](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=281)
+
+<a id="nov04-e5aaf465b4a56bb22efe"></a>
+### nov04-e5aaf465b4a56bb22efe
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/7c9530c5d7398931c5a7aaf5d2de582e69d49da4/investigation/broader-evidence/steel-contractor-review-2026-10-27/README.md)
+
+[Supplied citation 2](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=173)
+
+[Supplied citation 3](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=251)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=178)
+
+[Supplied citation 5](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=252)
+
+[Supplied citation 6](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=254)
+
+[Supplied citation 7](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=184)
+
+[Supplied citation 8](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=239)
+
+[Supplied citation 9](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=87)
+
+[Supplied citation 10](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=88)
+
+[Supplied citation 11](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=96)
+
+[Supplied citation 12](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=258)
+
+[Supplied citation 13](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=255)
+
+[Supplied citation 14](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv1.pdf#page=296)
+
+<a id="nov04-e5e75018d9049d481ff6"></a>
+### nov04-e5e75018d9049d481ff6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e62c02864a3f1e8b9960"></a>
+### nov04-e62c02864a3f1e8b9960
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-2/at_download/file)
+
+<a id="nov04-e639d980f277e80abf2f"></a>
+### nov04-e639d980f277e80abf2f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.archives.gov/research/foia/faa-finding-aid-36-47)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7596524)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-230-NTSB-request-01-096-REDACT-SEALED.pdf)
+
+[Supplied citation 4](https://catalog.archives.gov/id/7596437)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-116-Emails-ref-NTSB-obscured.pdf)
+
+[Supplied citation 6](https://catalog.archives.gov/id/7596442)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-120-FAX-covers-%26-emails-support-for-NTSB-plus.pdf)
+
+[Supplied citation 8](https://catalog.archives.gov/id/7596612)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-78-NTSB-information.pdf)
+
+<a id="nov04-e65472bd71200d089083"></a>
+### nov04-e65472bd71200d089083
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf)
+
+[Supplied citation 2](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2208)
+
+[Supplied citation 3](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2275)
+
+[Supplied citation 4](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2210)
+
+[Supplied citation 5](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2276),lines20–24)
+
+[Supplied citation 6](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2215)
+
+[Supplied citation 7](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2295)
+
+[Supplied citation 8](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2299)
+
+[Supplied citation 9](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2193)
+
+[Supplied citation 10](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2194)
+
+[Supplied citation 11](https://github.com/AveLyra/911-conspiracy-investigation/blob/8850e1ed97577ba3db8055e1653b659a60807d10/investigation/broader-evidence/six-lead-followup-status-2026-10-27/README.md)
+
+<a id="nov04-e68a6738c7e353876f21"></a>
+### nov04-e68a6738c7e353876f21
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/60f3d93c90374e2b50147bfb19867aceccb3ba0e/investigation/catalogue/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/8b787be27fcb665a851a42e318ccc4fd0b6117e9/investigation/broader-evidence/faa-1078-marked-passages-2026-10-30/README.md)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/8bc80894a40ac207b2ccce62a9fdd6d22d4c1139/investigation/broader-evidence/faa-911-special-schedule-2026-10-30/README.md)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/3f50f2c6904eca6a39efa4c06c15ea838729a65d/investigation/broader-evidence/moussaoui-reply-update-2026-10-30/README.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md)
+
+[Supplied citation 11](https://github.com/AveLyra/911-conspiracy-investigation/blob/591ed5873ce7895f47c092f83f244d98efa18154/investigation/broader-evidence/moussaoui-aug22-dissemination-2026-10-31/README.md)
+
+<a id="nov04-e6dfe197c61f2ee65b6e"></a>
+### nov04-e6dfe197c61f2ee65b6e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=63)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=64)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=65)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f363700f6b7010a7927a4794ba9972f09385dbe/investigation/broader-evidence/telephone-hq1492-recording-request-2026-11-02/README.md)
+
+<a id="nov04-e73bca3ac4aa1de1bdfb"></a>
+### nov04-e73bca3ac4aa1de1bdfb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://9-11commission.gov/hearings/hearing2/witness_graham.htm)
+
+[Supplied citation 2](https://govinfo.library.unt.edu/911/archive/hearing2/9-11Commission_Hearing_2003-05-22.htm)
+
+<a id="nov04-e793ee8e1ddb859cbdb5"></a>
+### nov04-e793ee8e1ddb859cbdb5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=57)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=58)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=59)
+
+<a id="nov04-e8868640adc88a6dd810"></a>
+### nov04-e8868640adc88a6dd810
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e8ee8a17a9bbe74584ef"></a>
+### nov04-e8ee8a17a9bbe74584ef
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 2](https://www.9-11commission.gov/report/911Report_Notes.pdf)
+
+<a id="nov04-e90c04776f37f30e8060"></a>
+### nov04-e90c04776f37f30e8060
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-e92bd2193b0b06ff3cd8"></a>
+### nov04-e92bd2193b0b06ff3cd8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://nara-media-001.s3.amazonaws.com/arcmedia/9-11/MFR/t-0148-911MFR-00219.pdf)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file)
+
+[Supplied citation 3](https://www.9-11commission.gov/report/911Report_Notes.pdf)
+
+[Supplied citation 4](https://wp.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011180.pdf)
+
+[Supplied citation 5](https://www.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011182.pdf)
+
+[Supplied citation 6](https://www.motleyrice.com/sites/default/files/documents/AT_HR/9-11/20240802%20Redacted%20public%20averment.pdf)
+
+[Supplied citation 7](https://www.motleyrice.com/sites/default/files/documents/AT_HR/9-11/Docket%20%23%209795%20-%20Redacted%20Public%20Version%20%20KSA%20REPLY%20MOL%20ISO%20%5B9368%5D%20MTN%20to%20Dismiss%20%28Prev.%20filed%20under%20seal%20on%203.4%2C%202024%29.pdf)
+
+[Supplied citation 8](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 9](https://oig.justice.gov/sites/default/files/archive/special/s0606/chapter5.htm)
+
+<a id="nov04-e95d4a1277cc1b681400"></a>
+### nov04-e95d4a1277cc1b681400
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/df96947a51e984f1fb2e7afad1925e63a67a926d/investigation/broader-evidence/faa-recording-retention-source-joins-2026-10-27/README.md)
+
+[Supplied citation 2](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2285)
+
+[Supplied citation 3](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2287)
+
+[Supplied citation 4](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2286)
+
+[Supplied citation 5](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2299)
+
+[Supplied citation 6](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=260)
+
+[Supplied citation 7](https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf#page=149)
+
+[Supplied citation 8](https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf#page=173)
+
+[Supplied citation 9](https://www.governmentattic.org/6docs/9-11FAA-NEADS-NORAD_2001-2005.pdf#page=188)
+
+<a id="nov04-e9db9390f80c56d8f550"></a>
+### nov04-e9db9390f80c56d8f550
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/13499791/T7-B13-Flight-11-Calls-Fdr-Response-From-DOJ-to-Doc-Req-14-Calls-From-AA-11-and-77-and-UA-175-and-93-ATT-Wireless-UA-And-GTE-Airphone-Call-Record)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/@@ENCLOSURE_COMMIT@@/investigation/broader-evidence/telephone-carrier-enclosures-2026-10-27/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/@@EVENT_COMMIT@@/investigation/broader-evidence/telephone-event-joins-2026-10-27/README.md)
+
+[Supplied citation 4](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 5](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s)
+
+[Supplied citation 6](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408)
+
+[Supplied citation 7](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94)
+
+<a id="nov04-e9ec303ebf257b8565c9"></a>
+### nov04-e9ec303ebf257b8565c9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=35)
+
+[Supplied citation 2](https://www.scribd.com/document/19131547/T7-B13-DOJ-Doc-Req-35-13-Packet-6-Fdr-Entire-Contents-FBI-Reports-730)
+
+<a id="nov04-ea1bc0f91de3a620ec02"></a>
+### nov04-ea1bc0f91de3a620ec02
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ea4ebe17a8cb4bbc1628"></a>
+### nov04-ea4ebe17a8cb4bbc1628
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ea55fb172ab5df448a45"></a>
+### nov04-ea55fb172ab5df448a45
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ea8285974ff122f02fdd"></a>
+### nov04-ea8285974ff122f02fdd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ea870929363a570fd9fa"></a>
+### nov04-ea870929363a570fd9fa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-eadf3ad5ebad51f27174"></a>
+### nov04-eadf3ad5ebad51f27174
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/17aef02c7d79169234dc04c4a67f38425900ea30/investigation/broader-evidence/telephone-transcript-generation-chain-2026-11-02/README.md)
+
+<a id="nov04-eb85c929a82c1b43c736"></a>
+### nov04-eb85c929a82c1b43c736
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ebfbd49e7910ee201910"></a>
+### nov04-ebfbd49e7910ee201910
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file)
+
+[Supplied citation 3](https://www.scribd.com/document/18886438/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-5-11-04-MFR-Lisa-Jefferson-416)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/b6923d4d9c874ab71fe88112f401d5279caaeb95/investigation/broader-evidence/telephone-operator-notes-mfr-2026-10-31/README.md)
+
+<a id="nov04-ec2baef76a4d30984d66"></a>
+### nov04-ec2baef76a4d30984d66
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ec33a3d3b2c3f502cc0c"></a>
+### nov04-ec33a3d3b2c3f502cc0c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://millercenter.org/the-presidency/presidential-oral-histories/philip-zelikow-oral-history-part-i)
+
+[Supplied citation 2](https://www.justice.gov/archive/ag/testimony/1999/agappro020499.htm)
+
+<a id="nov04-ec45bbb6e621e9ba3c32"></a>
+### nov04-ec45bbb6e621e9ba3c32
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ec49d7969bdd80da4ecc"></a>
+### nov04-ec49d7969bdd80da4ecc
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ec5646dd9f38d4f7ea96"></a>
+### nov04-ec5646dd9f38d4f7ea96
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ecad538731ab6d36b297"></a>
+### nov04-ecad538731ab6d36b297
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ecd52d7e941334afe1b2"></a>
+### nov04-ecd52d7e941334afe1b2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ed373fa958856d023b52"></a>
+### nov04-ed373fa958856d023b52
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.ntsb.gov/about/Documents/Rec_Radar_Data_Study_all_aircraft.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7596008)
+
+[Supplied citation 3](https://www.scribd.com/document/12962758/List-of-NTSB-Documents-Provided-to-9-11-Commission)
+
+[Supplied citation 4](https://home.nps.gov/flni/learn/historyculture/flight-data-recorder.htm)
+
+<a id="nov04-ed4e8407e9fec0424145"></a>
+### nov04-ed4e8407e9fec0424145
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ed84249de3eb75837d97"></a>
+### nov04-ed84249de3eb75837d97
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/7c9530c5d7398931c5a7aaf5d2de582e69d49da4/investigation/broader-evidence/steel-contractor-review-2026-10-27/README.md)
+
+[Supplied citation 2](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=173)
+
+[Supplied citation 3](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=251)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=178)
+
+[Supplied citation 5](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=252)
+
+[Supplied citation 6](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=254)
+
+[Supplied citation 7](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=184)
+
+[Supplied citation 8](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=239)
+
+[Supplied citation 9](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=87)
+
+[Supplied citation 10](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=88)
+
+[Supplied citation 11](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=96)
+
+[Supplied citation 12](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=258)
+
+[Supplied citation 13](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=255)
+
+[Supplied citation 14](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv1.pdf#page=296)
+
+<a id="nov04-edfc1613d6b9ac736c79"></a>
+### nov04-edfc1613d6b9ac736c79
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://millercenter.org/the-presidency/presidential-oral-histories/philip-zelikow-oral-history-part-i)
+
+<a id="nov04-ee04d991b05fa6990c3e"></a>
+### nov04-ee04d991b05fa6990c3e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-chronology-part-02-of-02/at_download/file)
+
+<a id="nov04-ee417a3b09dbf1aad242"></a>
+### nov04-ee417a3b09dbf1aad242
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-eed3964c725edc31b9fa"></a>
+### nov04-eed3964c725edc31b9fa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://beverlyhills.granicus.com/MetaViewer.php?clip_id=2444&meta_id=136233&view_id=11):12pages,369,384bytes)
+
+[Supplied citation 2](https://dockets.justia.com/docket/new-york/nysdce/1%3A2021mc00101/264866)
+
+<a id="nov04-ef6a97905e88965a9e7c"></a>
+### nov04-ef6a97905e88965a9e7c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f007278d8f3982afe82e"></a>
+### nov04-f007278d8f3982afe82e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f040ecd4b389b00250d4"></a>
+### nov04-f040ecd4b389b00250d4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/abefdac15a5474b2cba2407dc7d0e6bcd58ead59/investigation/broader-evidence/telephone-playback-custody-2026-10-31/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/d5b279a04f2fe18b78548222aea75451bfa7f60a/investigation/broader-evidence/telephone-sero-evidence-inventory-2026-10-31/README.md)
+
+<a id="nov04-f06f368e84b869f0f71a"></a>
+### nov04-f06f368e84b869f0f71a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f083af6618c766ee6a27"></a>
+### nov04-f083af6618c766ee6a27
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=69)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=70)
+
+[Supplied citation 4](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md)
+
+<a id="nov04-f0b44f1c278cb82ee616"></a>
+### nov04-f0b44f1c278cb82ee616
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f0c2c27cd211f6c3931e"></a>
+### nov04-f0c2c27cd211f6c3931e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=3)
+
+<a id="nov04-f15ab1a503de3d7fcebd"></a>
+### nov04-f15ab1a503de3d7fcebd
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f16f1c08ef11397fb94e"></a>
+### nov04-f16f1c08ef11397fb94e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://digitalcollections.archives.nysed.gov/Detail/objects/45414)
+
+[Supplied citation 2](https://digitalcollections.archives.nysed.gov/Detail/collections/6049)
+
+[Supplied citation 3](https://nysm.nysed.gov/about/press/phase-2-world-trade-center-exhibition-opens-feb-1-nys-museum)
+
+[Supplied citation 4](https://nysm.nysed.gov/exhibitions/ongoing/world-trade-center-rescue-recovery-response)
+
+[Supplied citation 5](https://www.flickr.com/photos/wallyg/55558340145/)
+
+[Supplied citation 6](http://iarchives.nysed.gov/xtf/view?docId=ead/findingaids/22533.xml)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/9a89314d28d911789ff815d9f34fcdb787b690ff/investigation/broader-evidence/steel-exhibition-records-and-label-2026-11-03/README.md)
+
+<a id="nov04-f18632137713308f750e"></a>
+### nov04-f18632137713308f750e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f1a934c3478cd88d9ab6"></a>
+### nov04-f1a934c3478cd88d9ab6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/7597271)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/2-UAL-93/e-Other/2-ZID-24-INVENTORY-OF-AAL77-DATA.DOC)
+
+[Supplied citation 3](https://catalog.archives.gov/id/7596609)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-ZID-74-AAL77a_ZID.doc)
+
+[Supplied citation 5](https://catalog.archives.gov/id/7596008)
+
+[Supplied citation 6](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-oleps/f7933d28-2cc4-4b36-bc23-8861cbcd37c4)
+
+<a id="nov04-f1d16b5a23234e5240ea"></a>
+### nov04-f1d16b5a23234e5240ea
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/tree/5bf1d9a3f03b843e0d8b7552ab3c78ae2acd7f63/investigation/wtc7/master-lead-register-2026-10-26)
+
+<a id="nov04-f21c404a6f179464b368"></a>
+### nov04-f21c404a6f179464b368
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/60f3d93c90374e2b50147bfb19867aceccb3ba0e/investigation/catalogue/README.md)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/8b787be27fcb665a851a42e318ccc4fd0b6117e9/investigation/broader-evidence/faa-1078-marked-passages-2026-10-30/README.md)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/8bc80894a40ac207b2ccce62a9fdd6d22d4c1139/investigation/broader-evidence/faa-911-special-schedule-2026-10-30/README.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/3f50f2c6904eca6a39efa4c06c15ea838729a65d/investigation/broader-evidence/moussaoui-reply-update-2026-10-30/README.md)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md)
+
+[Supplied citation 11](https://github.com/AveLyra/911-conspiracy-investigation/blob/591ed5873ce7895f47c092f83f244d98efa18154/investigation/broader-evidence/moussaoui-aug22-dissemination-2026-10-31/README.md)
+
+[Supplied citation 12](https://catalog.archives.gov/id/7599161)
+
+[Supplied citation 13](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/c-Transcripts/5-AWA-937-Memorandum-Fill-Transcript-New-York-ARTCC.pdf)
+
+[Supplied citation 14](https://catalog.archives.gov/id/7598367)
+
+[Supplied citation 15](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 16](https://catalog.archives.gov/id/34913873)
+
+[Supplied citation 17](https://catalog.archives.gov/medialive/73/9138/34913873/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-1077-4-Red-Tab-Commision-Request-No--2-and-AAT-20-Response-REDACT-SEALED.pdf)
+
+[Supplied citation 18](https://catalog.archives.gov/id/7596181)
+
+[Supplied citation 19](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf)
+
+[Supplied citation 20](https://catalog.archives.gov/id/7596109)
+
+[Supplied citation 21](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AEA-2579-EMAIL--REF-RECORD-RETENTION-REGARDING-09-11-EVENTS.pdf)
+
+[Supplied citation 22](https://www.oig.dot.gov/sites/default/files/cc2004003.pdf)
+
+[Supplied citation 23](https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0237/n1-237-05-004_sf115.pdf)
+
+[Supplied citation 24](https://www.faa.gov/documentLibrary/media/order/finance/1350-15C/media/chapter5.pdf)
+
+[Supplied citation 25](https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/SOURCE-PINS.json)
+
+[Supplied citation 26](https://www.faa.gov/documentLibrary/media/order/finance/1350-15C/media/chapter6.pdf)
+
+[Supplied citation 27](https://catalog.archives.gov/id/7597271)
+
+[Supplied citation 28](https://catalog.archives.gov/id/7419198)
+
+[Supplied citation 29](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/059B.pdf)
+
+[Supplied citation 30](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/346.pdf)
+
+[Supplied citation 31](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf)
+
+[Supplied citation 32](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/336.pdf)
+
+[Supplied citation 33](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/337.pdf)
+
+[Supplied citation 34](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/326.pdf)
+
+[Supplied citation 35](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/636.pdf)
+
+[Supplied citation 36](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/637.pdf)
+
+[Supplied citation 37](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/639.pdf)
+
+[Supplied citation 38](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf)
+
+[Supplied citation 39](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf)
+
+<a id="nov04-f2625e8ef5d115c2e37e"></a>
+### nov04-f2625e8ef5d115c2e37e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-06-of-08/view)
+
+<a id="nov04-f269396eebd43a540880"></a>
+### nov04-f269396eebd43a540880
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=41)
+
+[Supplied citation 3](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=38)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=11)
+
+[Supplied citation 5](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=40)
+
+[Supplied citation 6](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=39)
+
+[Supplied citation 7](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=2)
+
+<a id="nov04-f3218a5a3819cf6177b5"></a>
+### nov04-f3218a5a3819cf6177b5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/798a018ce84611646dfe5e11edcef073609ad75f/investigation/broader-evidence/steel-native-report-review-2026-10-28/README.md)
+
+[Supplied citation 2](https://web.archive.org/web/20120310003549id_/http://www.nist.gov/el/disasterstudies/wtc/upload/WTCcontractaward_0155.pdf#page=1)
+
+[Supplied citation 3](https://www.nist.gov/world-trade-center-investigation/about-investigation/investigation-contracts)
+
+<a id="nov04-f330eee9cf9271ae12e2"></a>
+### nov04-f330eee9cf9271ae12e2
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7598367)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/dcdc9f647130139c60128ae3c131d40955536b34/investigation/broader-evidence/faa-omic-body-completion-2026-10-31/README.md)
+
+<a id="nov04-f36f6f0a753aac348a1f"></a>
+### nov04-f36f6f0a753aac348a1f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=25)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=57)
+
+[Supplied citation 3](https://www.scribd.com/document/18886438/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-5-11-04-MFR-Lisa-Jefferson-416)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/b6923d4d9c874ab71fe88112f401d5279caaeb95/investigation/broader-evidence/telephone-operator-notes-mfr-2026-10-31/README.md)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=21)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file)
+
+[Supplied citation 7](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file)
+
+<a id="nov04-f3dcdc3c4fdeabd28cfe"></a>
+### nov04-f3dcdc3c4fdeabd28cfe
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08)
+
+<a id="nov04-f3e2260d53891876de25"></a>
+### nov04-f3e2260d53891876de25
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.data.gov/dataset/data-from-high-temperature-tensile-constitutive-data-and-models-for-structural-steels-1714)
+
+[Supplied citation 2](https://data.nist.gov/od/ds/59275E35E82149D8E0531A57068146E31859/TN1714data.csv)
+
+[Supplied citation 3](https://data.nist.gov/od/ds/59275E35E82149D8E0531A57068146E31859/TN1714data-attributes.csv)
+
+[Supplied citation 4](https://data.nist.gov/od/ds/59275E35E82149D8E0531A57068146E31859/TN1714-data-bibliography.pdf)
+
+<a id="nov04-f4a7a2387054fbee2b4e"></a>
+### nov04-f4a7a2387054fbee2b4e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f4af763a5767dace313a"></a>
+### nov04-f4af763a5767dace313a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.justice.gov/sites/default/files/ag/legacy/2004/04/28/supplementarymaterial.pdf)
+
+[Supplied citation 2](https://www.justice.gov/dag/readingroom/dag-memo-08062001.pdf)
+
+[Supplied citation 3](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+<a id="nov04-f4f9421bb8eb08eb5c6d"></a>
+### nov04-f4f9421bb8eb08eb5c6d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://edocuments.myclearwater.com/WebLink/DocView.aspx?id=242633&page=2&dbid=0&repo=Clearwater)
+
+[Supplied citation 2](https://edocuments.myclearwater.com/WebLink/DocView.aspx?id=240784&page=10&dbid=0)
+
+[Supplied citation 3](https://edocuments.myclearwater.com/WebLink/DocView.aspx?id=240784&page=12&dbid=0)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/4b57a56d460bd7ea4b34e9f8771cf5f472d19250/investigation/broader-evidence/steel-clearwater-agreement-2026-10-29/README.md)
+
+<a id="nov04-f51442b4612512e9342a"></a>
+### nov04-f51442b4612512e9342a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/385f959fd70d5caee75fe192325771ed7d8bdc9d/investigation/broader-evidence/moussaoui-french-controls-2026-10-30/README.md)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/346.pdf#page=1)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/346.pdf#page=2)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/059B.pdf#page=1)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf#page=1)
+
+[Supplied citation 6](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/059B.pdf#page=4)
+
+[Supplied citation 7](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/059B.pdf#page=5)
+
+[Supplied citation 8](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf#page=5)
+
+[Supplied citation 9](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/326.pdf#page=1):)
+
+[Supplied citation 10](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/336.pdf#page=1):)
+
+[Supplied citation 11](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/337.pdf#page=1):)
+
+[Supplied citation 12](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/636.pdf#page=1):)
+
+[Supplied citation 13](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/637.pdf#page=1):)
+
+[Supplied citation 14](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/639.pdf#page=1):)
+
+<a id="nov04-f5495249466ed8265b61"></a>
+### nov04-f5495249466ed8265b61
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.itv.com/news/2026-09-03/british-officer-says-fbi-withheld-game-changing-details-about-911-suspect)
+
+<a id="nov04-f55947e58f65ee661f5d"></a>
+### nov04-f55947e58f65ee661f5d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f58982fba46948621587"></a>
+### nov04-f58982fba46948621587
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md)
+
+[Supplied citation 2](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s)
+
+[Supplied citation 3](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/flights.zip)
+
+<a id="nov04-f6409623c09c05b4c481"></a>
+### nov04-f6409623c09c05b4c481
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/e13295b26e486e613979fcfdc79b1efeef05548e/investigation/broader-evidence/steel-wje-award-and-native-records-2026-10-28/README.md)
+
+[Supplied citation 2](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=177)
+
+[Supplied citation 3](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv1.pdf#page=71)
+
+[Supplied citation 4](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=170)
+
+[Supplied citation 5](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=236)
+
+[Supplied citation 6](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=257)
+
+[Supplied citation 7](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=93)
+
+[Supplied citation 8](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf#page=91)
+
+[Supplied citation 9](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=169)
+
+<a id="nov04-f6551e770492f2efc716"></a>
+### nov04-f6551e770492f2efc716
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f699e71d1a6347f13629"></a>
+### nov04-f699e71d1a6347f13629
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f6d49a175f10962a3b04"></a>
+### nov04-f6d49a175f10962a3b04
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f73ea4d4368a68eef26f"></a>
+### nov04-f73ea4d4368a68eef26f
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-A90-67-Memo-Certifying-Re-recording.pdf).**)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7598345)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf).**)
+
+[Supplied citation 4](https://www.archives.gov/research/foia/faa-finding-aid)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-A90-67-Memo-Certifying-Re-recording.pdf#page=1)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=13)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/ce9df2c6e1a6dcb11bf1a31578586d00440508ee/investigation/broader-evidence/faa-position-log-crosscheck-2026-11-01/README.md)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=20)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=22)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e846c1ea159fde25e1291c1c5046e70e2e4de80/investigation/broader-evidence/faa-notification-personnel-originals-2026-11-01/README.md)
+
+<a id="nov04-f791b1391ceab0c888e9"></a>
+### nov04-f791b1391ceab0c888e9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://digitalcollections.archives.nysed.gov/Detail/objects/45414)
+
+[Supplied citation 2](https://digitalcollections.archives.nysed.gov/Detail/collections/6049)
+
+[Supplied citation 3](https://digitalcollections.archives.nysed.gov/media/collectiveaccess/images/5/6/6/64972_ca_object_representations_media_56677_large.jpg)
+
+<a id="nov04-f7df76877b744e934fa6"></a>
+### nov04-f7df76877b744e934fa6
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f80882251278667ab37a"></a>
+### nov04-f80882251278667ab37a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f8429fce72005d7c1489"></a>
+### nov04-f8429fce72005d7c1489
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://ine.uaf.edu/media/92216/wtc7-structural-reevaluation_progress-report_2017-9-7.pdf)
+
+<a id="nov04-f84ab62073bffcdccf32"></a>
+### nov04-f84ab62073bffcdccf32
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=1)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=8)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=7)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=4)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=3)
+
+[Supplied citation 6](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=2)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md)
+
+<a id="nov04-f86e362e92b947211247"></a>
+### nov04-f86e362e92b947211247
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=1)
+
+[Supplied citation 2](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=8)
+
+[Supplied citation 3](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=7)
+
+[Supplied citation 4](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=4)
+
+[Supplied citation 5](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=3)
+
+[Supplied citation 6](https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/327.pdf#page=2)
+
+[Supplied citation 7](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md)
+
+<a id="nov04-f86f92c0c1e7f1b4a9a9"></a>
+### nov04-f86f92c0c1e7f1b4a9a9
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf)
+
+[Supplied citation 2](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf)
+
+<a id="nov04-f8b64d0d6a626a0bad1a"></a>
+### nov04-f8b64d0d6a626a0bad1a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/da9fd9dfb7d1af87c88143b0148914439420c4cd/investigation/broader-evidence/steel-tape2-3-source-2026-11-03/README.md)
+
+[Supplied citation 3](https://www.govinfo.gov/content/pkg/GOVPUB-C13-41f9c1ed6889bdc5fd7ea98bfc31a05b/pdf/GOVPUB-C13-41f9c1ed6889bdc5fd7ea98bfc31a05b.pdf)
+
+<a id="nov04-f8ceab2867a7d22dbc56"></a>
+### nov04-f8ceab2867a7d22dbc56
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-04-605/pdf/GAOREPORTS-GAO-04-605.pdf)
+
+<a id="nov04-f9131984d147b367a823"></a>
+### nov04-f9131984d147b367a823
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/7fdee56fbc807ef5d7f5eeda85f7ad0b24935a33/investigation/broader-evidence/steel-photo-roots-2026-10-27/README.md)
+
+[Supplied citation 2](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 3](https://googledrive.nist.gov/folders/1mO5PPh1ZyZafGUtWrzqhiaDwzTqyEPG-)
+
+[Supplied citation 4](https://developer.apple.com/documentation/quicktime-file-format/movie_header_atom/creation_time)
+
+[Supplied citation 5](https://developer.apple.com/documentation/quicktime-file-format/track_header_atom/creation_time)
+
+<a id="nov04-f91e206d172727501076"></a>
+### nov04-f91e206d172727501076
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/da9fd9dfb7d1af87c88143b0148914439420c4cd/investigation/broader-evidence/steel-tape2-3-source-2026-11-03/README.md)
+
+[Supplied citation 3](https://www.govinfo.gov/content/pkg/GOVPUB-C13-41f9c1ed6889bdc5fd7ea98bfc31a05b/pdf/GOVPUB-C13-41f9c1ed6889bdc5fd7ea98bfc31a05b.pdf)
+
+<a id="nov04-f94661e8025bf3e112d4"></a>
+### nov04-f94661e8025bf3e112d4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f95ca1a062a73ad09a8c"></a>
+### nov04-f95ca1a062a73ad09a8c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f988244debc23548d4d8"></a>
+### nov04-f988244debc23548d4d8
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f98dd1de19d9c4c9543d"></a>
+### nov04-f98dd1de19d9c4c9543d
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f9cf40978768546d83d1"></a>
+### nov04-f9cf40978768546d83d1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-f9e0b258a0b102408b6a"></a>
+### nov04-f9e0b258a0b102408b6a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf)
+
+[Supplied citation 2](https://www.archives.gov/files/declassification/iscap/pdf/2012-156-doc-21.pdf)
+
+[Supplied citation 3](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=9)
+
+[Supplied citation 4](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=10)
+
+<a id="nov04-fa052f9efd2d440ff997"></a>
+### nov04-fa052f9efd2d440ff997
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-fa16bb094fcb932e0643"></a>
+### nov04-fa16bb094fcb932e0643
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-fa29c1a22cae3102bd26"></a>
+### nov04-fa29c1a22cae3102bd26
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 2](https://documents.theblackvault.com/documents/cia/DOC_0006184107.pdf)
+
+[Supplied citation 3](https://www.cia.gov/stories/story/cia-releases-declassified-documents-related-to-9-11-attacks/)
+
+[Supplied citation 4](https://nara-media-001.s3.amazonaws.com/arcmedia/9-11/MFR/t-0148-911MFR-00724.pdf)
+
+[Supplied citation 5](https://www.archives.gov/research/9-11/commission-memoranda.html)
+
+<a id="nov04-fac9ddc277808c62e54a"></a>
+### nov04-fac9ddc277808c62e54a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://ine.uaf.edu/wtc7)
+
+[Supplied citation 2](https://www.ae911truth.org/images/PDFs/UAF-Final-Report-Release-03-25-2020.pdf)
+
+[Supplied citation 3](https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_09-cv-02064/pdf/USCOURTS-dcd-1_09-cv-02064-0.pdf)
+
+[Supplied citation 4](https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_19-cv-01182/pdf/USCOURTS-dcd-1_19-cv-01182-0.pdf)
+
+[Supplied citation 5](https://foiaproject.org/case_detail/?case_id=32511&style=foia&title=on)
+
+[Supplied citation 6](https://www.ae911truth.org/images/PDFs/AE_FAC_Court_file_date_stamped_and_redacted.pdf#page=6)
+
+[Supplied citation 7](https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_21-cv-02365/pdf/USCOURTS-dcd-1_21-cv-02365-0.pdf#page=9)
+
+[Supplied citation 8](https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf)
+
+[Supplied citation 9](https://github.com/AveLyra/911-conspiracy-investigation/tree/main/investigation/wtc7/c79-factorial-protocol-2026-10-19)
+
+[Supplied citation 10](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9.pdf#page=396)
+
+[Supplied citation 11](https://www.nist.gov/world-trade-center-investigation/study-faqs/wtc-7-investigation)
+
+[Supplied citation 12](https://github.com/AveLyra/911-conspiracy-investigation/tree/main/investigation/wtc7/animation-timing-audit-2026-10-16)
+
+<a id="nov04-fb763b9c8bcf150dfe6e"></a>
+### nov04-fb763b9c8bcf150dfe6e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-fc1adcc9f68bd57088a0"></a>
+### nov04-fc1adcc9f68bd57088a0
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.scribd.com/document/18886438/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-5-11-04-MFR-Lisa-Jefferson-416)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=45)
+
+[Supplied citation 3](https://www.scribd.com/document/18886478/T7-B12-Flight-93-Calls-Todd-Beamer-Fdr-9-15-01-FBI-302-Transcript-UAL-SAC-Nick-Leonard-Re-Jefferson-Beamer-Call-419)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file#page=4)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e75761061f0bfa9148eb98a213aa4a24f1ad123/investigation/broader-evidence/telephone-recording-index-2026-10-31/README.md)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file)
+
+[Supplied citation 7](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-08-of-08/at_download/file)
+
+<a id="nov04-fc37a4f41af1b3ee5e40"></a>
+### nov04-fc37a4f41af1b3ee5e40
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://archives.iu.edu/html/VAB8595.html)
+
+[Supplied citation 2](https://digitalcollections.iu.edu/)
+
+<a id="nov04-fca35e665500fc71c46e"></a>
+### nov04-fca35e665500fc71c46e
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-fca8319757b5831d0df1"></a>
+### nov04-fca8319757b5831d0df1
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/8421c444533ec3fd71d68ae0932d8a0a4145d62b/investigation/broader-evidence/faa-woc-policy-version-conflict-2026-10-28/README.md)
+
+[Supplied citation 2](https://www.archives.gov/research/foia/faa-finding-aid-84-95)
+
+[Supplied citation 3](https://catalog.archives.gov/id/34913193)
+
+[Supplied citation 4](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf)
+
+[Supplied citation 5](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=1)
+
+[Supplied citation 6](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=2)
+
+[Supplied citation 7](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=251)
+
+[Supplied citation 8](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=252)
+
+[Supplied citation 9](https://www.governmentattic.org/42docs/DOToigFAA9-11interviews_2002-2006.pdf#page=2287)
+
+[Supplied citation 10](https://nara-media.s3.amazonaws.com/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-311-Letter-FAA-First-Submission-to-DOT-Request-No-1-REDACT-SEALED.pdf#page=281)
+
+<a id="nov04-fcd42a09b2737af10c9a"></a>
+### nov04-fcd42a09b2737af10c9a
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-fcff25cddfd08daf2a93"></a>
+### nov04-fcff25cddfd08daf2a93
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-fdb55be6941c24f24db4"></a>
+### nov04-fdb55be6941c24f24db4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-fdd28672490f36aefa1c"></a>
+### nov04-fdd28672490f36aefa1c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/2609807)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf)
+
+[Supplied citation 3](https://catalog.archives.gov/id/2609808)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00217.pdf)
+
+[Supplied citation 5](https://www.archives.gov/research/9-11/commission-memoranda.html)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=1)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=3)
+
+[Supplied citation 8](https://github.com/AveLyra/911-conspiracy-investigation/blob/9ea289e6e2d7ec284eff654ed96f52364b91edb6/investigation/broader-evidence/telephone-ua175-summary-review-2026-10-28/README.md)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00217.pdf#page=2)
+
+[Supplied citation 10](https://github.com/AveLyra/911-conspiracy-investigation/blob/b2ac3d295182d0bc48fd53b6255b188caf54e9b1/investigation/broader-evidence/telephone-full-row-comparison-2026-10-28/README.md):)
+
+[Supplied citation 11](https://coop.vaed.uscourts.gov/moussaoui/dktsheets/docs/72369/0.pdf)
+
+[Supplied citation 12](https://coop.vaed.uscourts.gov/moussaoui/dktsheets/docs/72329/1.pdf)
+
+<a id="nov04-fdedd30afd5527d564c5"></a>
+### nov04-fdedd30afd5527d564c5
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-fe16bceddc5738c40ffb"></a>
+### nov04-fe16bceddc5738c40ffb
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-fe82aa5e526dee460579"></a>
+### nov04-fe82aa5e526dee460579
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=3)
+
+[Supplied citation 2](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=4)
+
+[Supplied citation 3](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=5)
+
+[Supplied citation 4](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=6)
+
+[Supplied citation 5](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=7)
+
+[Supplied citation 6](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=11)
+
+[Supplied citation 7](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=12)
+
+[Supplied citation 8](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=13)
+
+[Supplied citation 9](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-04-of-08#page=14)
+
+<a id="nov04-fedc78f2ae4224356202"></a>
+### nov04-fedc78f2ae4224356202
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 2](https://github.com/AveLyra/911-conspiracy-investigation/blob/6e846c1ea159fde25e1291c1c5046e70e2e4de80/investigation/broader-evidence/faa-notification-personnel-originals-2026-11-01/README.md)
+
+[Supplied citation 3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=210)
+
+[Supplied citation 4](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=211)
+
+[Supplied citation 5](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=216)
+
+[Supplied citation 6](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=208)
+
+[Supplied citation 7](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=218)
+
+[Supplied citation 8](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=207)
+
+[Supplied citation 9](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=209)
+
+[Supplied citation 10](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=225)
+
+[Supplied citation 11](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=224)
+
+[Supplied citation 12](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=228)
+
+[Supplied citation 13](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=231)
+
+[Supplied citation 14](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1121-MEMORANDUM--FORMAL-ACCIDENT-PACKAGE-REF-ZNY-ARTCC-148-UAL175-CORRECTIONS.pdf#page=9)
+
+[Supplied citation 15](https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/README.md)
+
+[Supplied citation 16](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1121-MEMORANDUM--FORMAL-ACCIDENT-PACKAGE-REF-ZNY-ARTCC-148-UAL175-CORRECTIONS.pdf)
+
+<a id="nov04-feeaa4837444fd058e6c"></a>
+### nov04-feeaa4837444fd058e6c
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-fef3c8db1f4a39ad4fb7"></a>
+### nov04-fef3c8db1f4a39ad4fb7
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/34911617)
+
+[Supplied citation 2](https://catalog.archives.gov/id/7598365)
+
+[Supplied citation 3](https://catalog.archives.gov/id/7598366)
+
+[Supplied citation 4](https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/README.md)
+
+[Supplied citation 5](https://github.com/AveLyra/911-conspiracy-investigation/blob/608171664400ed8d1e95f70277ea994702a3cbd7/investigation/broader-evidence/faa-package-corrections-2002-2026-10-30/README.md)
+
+[Supplied citation 6](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md)
+
+<a id="nov04-ff2c2cdf40a2ff822426"></a>
+### nov04-ff2c2cdf40a2ff822426
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://libraryonline.erau.edu/online-full-text/books-online/1177.pdf)|`4a079eef3618704785a50283ca6a28fb26be694191570a7f0b8549893ef8e3cf`|Physical51,58,59,60)
+
+[Supplied citation 2](https://www.faa.gov/documentlibrary/media/order/8020.11b.pdf)|`8144fe5bdb3badb2131a000875d0a7709036c2b5bcb4f0e804d68a4a0cbe00a4`|Physical2,3,51,60,61,62)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/a42d0956202dacc3b971d21f479966d56fefcd60/investigation/broader-evidence/faa-package-version-chain-2026-10-30/README.md)
+
+[Supplied citation 4](https://www.archives.gov/research/foia/faa-finding-aid-96-107),rows)
+
+[Supplied citation 5](https://catalog.archives.gov/id/7598367)
+
+[Supplied citation 6](https://catalog.archives.gov/id/7598364)
+
+[Supplied citation 7](https://catalog.archives.gov/id/7598363)
+
+[Supplied citation 8](https://catalog.archives.gov/id/34911617)
+
+[Supplied citation 9](https://catalog.archives.gov/id/7598365)
+
+[Supplied citation 10](https://catalog.archives.gov/id/7598366)
+
+<a id="nov04-ff4021badbbea8f2db72"></a>
+### nov04-ff4021badbbea8f2db72
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm)
+
+[Supplied citation 2](https://www.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011182.pdf)
+
+<a id="nov04-ff66de1566211463c4ef"></a>
+### nov04-ff66de1566211463c4ef
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://dspace.njstatelib.org/server/api/core/bitstreams/078a6652-bd22-4017-a0d2-d79f8054b9d5/content)
+
+<a id="nov04-ff7cdcee7ded6d994aaa"></a>
+### nov04-ff7cdcee7ded6d994aaa
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<a id="nov04-ff91d8b2dcfc54f0f872"></a>
+### nov04-ff91d8b2dcfc54f0f872
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://catalog.archives.gov/id/7598367)
+
+[Supplied citation 2](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf)
+
+[Supplied citation 3](https://github.com/AveLyra/911-conspiracy-investigation/blob/0681d662e507d45698521d40dff151ea7d9543af/investigation/broader-evidence/faa-shipping-receipt-originals-2026-10-30/README.md)
+
+<a id="nov04-ffabbe55274a2c4575e4"></a>
+### nov04-ffabbe55274a2c4575e4
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+[Supplied citation 1](https://www.911commission.gov/archive/hearing2/9-11Commission_Hearing_2003-05-23.htm)
+
+[Supplied citation 2](https://www.archives.gov/research/foia/faa)
+
+[Supplied citation 3](https://www.archives.gov/research/foia/faa-finding-aid)
+
+[Supplied citation 4](https://www.archives.gov/research/foia/faa-finding-aid-24-35)
+
+[Supplied citation 5](https://www.archives.gov/research/foia/faa-finding-aid-48-59)
+
+[Supplied citation 6](https://www.archives.gov/research/foia/faa-finding-aid-96-107)
+
+[Supplied citation 7](https://www.archives.gov/research/foia/faa-finding-aid-108-126)
+
+[Supplied citation 8](https://www.ntsb.gov/about/Documents/Rec_Radar_Data_Study_all_aircraft.pdf)
+
+<a id="nov04-ffe3d37d23d5c20eff57"></a>
+### nov04-ffe3d37d23d5c20eff57
+
+Supplied research citation routes only. The underlying private input, raw record or unvalidated fragment is not distributed or newly authenticated.
+
+<!-- END RESEARCH CITATIONS 2026-11-04 -->
