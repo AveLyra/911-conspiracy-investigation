@@ -1,6 +1,7 @@
 """Verify the current research projection without requiring private input files."""
 import hashlib
 import json
+from verify_assistance_search_2026_11_04 import preceding_master
 
 sha = lambda raw: hashlib.sha256(raw).hexdigest()
 
@@ -17,7 +18,7 @@ def verify_current(root):
     check('all370 preceding normalized finding objects unchanged', sha(canonical(findings[:370])) == revision['old370_normalized_sha256'])
     check('all111 complete normalized finding objects pinned', all(sha(canonical(r)) == revision['new_normalized_object_sha256'][r['id']] for r in added))
     for name, transform in revision['transforms'].items():
-        raw = (root / name).read_bytes()
+        raw = preceding_master(root) if name == 'MASTER-LEADS.md' else (root / name).read_bytes()
         prefix, suffix = transform['prefix'].encode(), transform['suffix'].encode()
         matches = raw.startswith(prefix) and (not suffix or raw.endswith(suffix))
         old = raw[len(prefix):len(raw) - len(suffix) if suffix else None]

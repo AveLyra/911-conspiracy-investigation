@@ -3,6 +3,7 @@
 from pathlib import Path
 import hashlib,json,re,sys
 from verify_reconciliation_2026_11_04 import verify_current
+from verify_assistance_search_2026_11_04 import preceding_master, verify_supplement
 
 P=Path(__file__).resolve().parents[1]
 meta=json.loads((P/'PUBLICATION.json').read_text())
@@ -19,7 +20,8 @@ check('exact175 master research IDs',len(master)==175 and {x['id'] for x in mast
 check('481 unique source IDs',len(findings)==481 and len({x['id'] for x in findings})==481)
 check('247 original documentary IDs',len(documentary)==247 and {x['id'] for x in documentary}=={f'B{x:03}' for x in range(1,234)}|{f'H{x:03}' for x in range(1,15)})
 for name,ids in sets.items():
-    actual=set(re.findall(r'<a id="([^"]+)"', (P/name).read_text()))
+    reader=preceding_master(P).decode() if name=='MASTER-LEADS.md' else (P/name).read_text()
+    actual=set(re.findall(r'<a id="([^"]+)"', reader))
     check('exact annotation IDs '+name,actual==ids)
 check('60 source report bodies',len(set(re.findall(r'<a id="unit-[^"]+"',(P/'LATEST-SOURCE-UNITS.md').read_text())))==60)
 for ident in ['fa044','pl022','pl023','pl024','pl025','nr068','nr069','nr070','nr071','nr072','pl026','pl027','nr073','pl028','pl029']:
@@ -127,5 +129,6 @@ check('complete unique public payload inventory',listed==actual and len(listed)=
 for row in meta['files']:
     f=P/row['path'];check('public payload bytes '+row['path'],f.is_file() and f.stat().st_size==row['bytes'] and sha(f)==row['sha256'])
 checks.extend(verify_current(P))
+checks.extend(verify_supplement(P))
 result={'status':'passed' if all(c['passed'] for c in checks) else 'failed','passed':sum(c['passed'] for c in checks),'failed':sum(not c['passed'] for c in checks),'local_reader_links':links,'broken_links':broken,'privacy_matches':privacy,'failures':[c['name'] for c in checks if not c['passed']],'source_or_causal_validation':False}
 print(json.dumps(result,indent=2));sys.exit(0 if result['status']=='passed' else 1)

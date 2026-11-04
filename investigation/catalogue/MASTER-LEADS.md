@@ -2045,3 +2045,65 @@ These reports add source, telephone, FAA, steel and method detail. Their whole b
 The [complete report-version inventory](REPORT-INVENTORY-2026-11-04.md) includes earlier/native/public variants without treating repeated versions as independent corroboration.
 
 <!-- END MASTER RECONCILIATION 2026-11-04 -->
+
+<!-- BEGIN ASSISTANCE AND SEARCH RECHECK 2026-11-04 -->
+<a id="assistance-and-search-recheck-2026-11-04"></a>
+## November 4 primary-source recheck: assistance, competing assessments and search restrictions
+
+This dated supplement records the four issues reviewed in the side conversation and the user's instruction to update this master list. These are existing public records, not newly released evidence. It supplements the earlier frozen compilation without replacing its entries or declaring every owning investigation current. The **175 M IDs and 481 owning source-finding objects remain unchanged**; the four recheck labels below are navigation and qualifications, not four additional independent anomalies. The court and informant-access findings were already documented; their prominence and connections are made explicit here.
+
+<a id="recheck-2026-11-04-01"></a>
+### Recheck 01 — Saudi-linked assistance: substantive preliminary court findings and their limits
+
+**Observed record:** The August 28, 2025 SDNY opinion, ECF 11182, assesses actual assistance and surrounding evidence. It finds the Bayoumi encounters more likely than chance and, for jurisdictional purposes, supports a conclusion that Bayoumi, Thumairy and Saudi Arabia knowingly or with deliberate indifference supported the hijackers' terrorist activity. The opinion considers housing/cash/lease assistance, contacts and the airplane drawing. This was an evidence-based jurisdictional assessment, not simply acceptance of pleaded allegations. The official 45-page PDF was fetched in memory during this review; physical pages 41, 42 and 45 were OCR-read against the earlier held extraction. This is a source-text check, not independent authentication of the underlying exhibits.
+
+**Contrary findings and limits:** Physical page 42 rejects the claimed attack-preparation significance of the apartment-party video and the asserted terrorist-reconnaissance meaning of the Washington video. The opinion says the contents of the cited telephone calls are not established. Physical page 45 reserves disputed motive, meaning and credibility questions for trial. The ruling is not a final merits judgment or a finding that senior Saudi leaders ordered the attacks. No present appellate or later merits status was checked. Read the opposing FBI assessment in Recheck 02 alongside this opinion.
+
+**Open TODO / discriminating test:** Compare the actual cited assistance, employment/pay, telephone and financial exhibits with the FBI evidence set; distinguish transactions from inferred purpose and call metadata from content. For the drawing, retain the existing copy/custody and expert-report tests in M139/M140: Ex678M/MPS696_1–7, Ex679B/FBI1331–1337, Ex11N, Ex148/104, ECF 9118-3 and ECF 10615. Test innocent assistance, deliberate indifference and knowing facilitation separately. No notebook completeness or technical purpose is authenticated by this recheck.
+
+**Existing entries:** [S010](SOURCE-FINDINGS.md#s010), [S011](SOURCE-FINDINGS.md#s011), [S012](SOURCE-FINDINGS.md#s012), [M135–M140](#m135).
+
+**Primary citation:** [SDNY ECF 11182, August 28, 2025](https://www.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011182.pdf#page=40), physical pp. 40–45, especially 41–42 and 45. Official PDF SHA-256: `f02cf4a9480c6e86d818370444586d84cf59e33ca9b4412ae80d6e99d1de2c78`.
+
+<a id="recheck-2026-11-04-02"></a>
+### Recheck 02 — Operation Encore closure: contrary assessment and a corrected interview count
+
+**Observed record:** The FBI's May 27, 2021 administrative closure communication affirmatively assesses that Thumairy, Bayoumi and Jarrah did not knowingly conspire to assist the hijackers in furtherance of the attacks. It also reports a joint FBI/SDNY determination that evidence was insufficient for prosecution. Both statements must be retained; the former must not be reduced to a generic absence-of-conviction argument. The communication describes review of financial, telecommunications, travel and other records and a 2019–2020 re-examination. It says telephone connectivity did not reveal the discussions' nature/content and discusses compartmentalization accounts attributed to al-Qaeda members. These are the FBI's reported evaluation and source descriptions, not independently established findings of this catalogue.
+
+**Correction:** The September 8, 2021 addendum corrects the earlier description of hundreds of interviews to approximately **60 interviews during 2007–2016 concerning the main subjects and associates**. Preserve the original statement and correction together. This is not a count of every PENTTBOM interview since 2001, a finding that interviews were fabricated, or proof the entire investigation was superficial.
+
+**Contrary findings and limits:** The later court opinion in Recheck 01 supports a materially different inference. The different dates, evidentiary records, knowledge formulations and procedural questions prevent treating the difference alone as proof either institution lied. Redactions and missing underlying records limit independent reconstruction. The closure communication left reopening available if new information emerged; no current investigation status was verified here.
+
+**Open TODO / discriminating test:** Build an exhibit-by-exhibit comparison of the 2021 closure basis, its referenced serials and the evidence assessed in ECF 11182. Identify evidence added, omitted, unavailable or differently interpreted; preserve the exact knowledge standard for each assessment. Obtain accessible underlying interview records, analytical summaries, prosecutorial consultation/declination records and the corrected interview inventory before attributing the outcome to suppression or political direction. Do not treat the two assessments as independent observations of the underlying assistance.
+
+**Primary citation:** [FBI Operation Encore closure communication and addendum](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-section-2-b-ii-part-01-of-01), 15-page release: closure printed pp. 8–11 (EO14040-000008–000011), particularly printed pp. 9–10; addendum printed p. 3, EO14040-000014, physical p. 15. The public PDF's extracted text was read; no native casefile or original interview inventory was acquired in this recheck.
+
+<a id="recheck-2026-11-04-03"></a>
+### Recheck 03 — Informant access: executive restriction and later immunity demand remain distinct
+
+**Observed record:** The Joint Inquiry appendix reports that the FBI disclosed the informant's contacts with two hijackers on August 8, 2002, then refused repeated interview requests and service of a congressional deposition notice/subpoena despite knowing the informant's location. It attributes support to the Attorney General and Administration. It records the FBI's stated concern about future informant recruitment. A later agreed written-question route encountered a separate refusal and immunity condition from the informant's lawyer. This is the committee's account of identifiable decisions; the original approval and response records remain targets.
+
+**Contrary findings and limits:** The same appendix acknowledges substantial agency support, record access and FBI personnel testimony. Protecting informants is a competing explanation that needs testing against the actual decision record. A refusal or immunity position does not establish participation in the attacks, criminal obstruction, a payment's purpose or an agreement to conceal attack involvement. The existing noncomplicity and inconclusive-polygraph qualifications remain in SF007/SF008. These 2002 restrictions do not establish present access restrictions.
+
+**Open TODO / discriminating test:** Obtain the original requests, refusal letters, deposition/subpoena and service instructions, FBI recruitment-risk assessment, Attorney General/Administration concurrence, proposed alternatives, written questions and counsel's response. Compare authors, dates, authority and stated grounds; determine what potentially decisive information the restriction actually prevented the inquiry from testing. Keep the source/payment authorization tests separate from access and motive.
+
+**Existing entries:** [SF007](SOURCE-FINDINGS.md#sf007), [SF008](SOURCE-FINDINGS.md#sf008), [SF009](SOURCE-FINDINGS.md#sf009), [SF010](SOURCE-FINDINGS.md#sf010), [M141](#m141).
+
+**Primary citation:** [Joint Inquiry report, access appendix](https://www.govinfo.gov/content/pkg/GPO-CRPT-107srpt351/pdf/GPO-CRPT-107srpt351.pdf#page=837), physical pp. 837–838 / appendix printed pp. 3–4; surrounding access qualifications at physical pp. 835 and 838–841. The official-host indexed passage was rechecked against SF009/SF010. A fresh full-PDF browser fetch timed out; this recheck does not claim a new full-document acquisition or page-image review.
+
+<a id="recheck-2026-11-04-04"></a>
+### Recheck 04 — August 2001 Mihdhar search: concrete restrictions, disputed legal basis and priority
+
+**Observed record:** DOJ OIG Chapter V describes criminal-agent exclusion from the search, a direction that the report's pseudonymous agent Scott delete his copy of the intelligence communication, and his reported compliance. It records a disputed legal consultation about separating criminal and intelligence work. The OIG says there was no legal barrier to a criminal agent attending an interview within the intelligence investigation, while FBI headquarters/NSLU believed the separation requirements extended that far. The search received routine precedence and limited resources. The alleged consultation had no documentary record of the conversation and little or no specific recollection from key participants.
+
+**Contrary findings and limits:** The report also explains NSA dissemination caveats, the procedures then understood by headquarters, institutional caution and resource constraints. Whether a particular intelligence item could be shared is distinct from whether a criminal agent could participate in an interview. The deletion concerned Scott's copy; it does not establish destruction of every original. The OIG found no evidence of specific intelligence about the September 11 plot. Its criticism supports investigation of preventable restrictions and missed opportunities; it does not establish attack-purpose obstruction or foreknowledge. Retain the report's pseudonyms without identifying redacted individuals.
+
+**Open TODO / discriminating test:** Locate the exact August 27–29 emails and communication versions, NSA sharing request and response with receipt timestamps, NSLU advice/consultation records, routing and assignment/priority records. Compare the information actually available to each decision-maker with the operative dissemination rules. Test mistaken legal interpretation, organizational incentives and intentional withholding separately; do not infer motive from the failure to locate the hijackers.
+
+**Related earlier entries:** [M153](#m153), [M154](#m154), [M156–M158](#m156) concern the earlier CIA dissemination/oversight chain and remain separate episodes.
+
+**Primary citation:** [DOJ OIG, Chapter V, public release June 2005](https://oig.justice.gov/sites/default/files/archive/special/0506/chapter5.htm), introduction; section III's August 2001 investigation/consultation discussion; and analysis section IV, “The FBI's investigation in August 2001 to find Mihdhar and Hazmi,” especially “The effect of the wall” and “Allocation of investigative resources.” The official HTML text was re-read; no original email, clearance or legal consultation was acquired.
+
+**Interpretation and remaining boundary:** The preliminary Saudi-assistance inference warrants substantive investigation alongside the FBI's contrary assessment. The access and search episodes warrant decision-chain tests on their own records. These issues do not automatically corroborate one another or establish Israeli manipulation, U.S. orchestration, Cheney/Halliburton participation or engineered collapse. No numerical conspiracy probability, new physical finding, accepted scientific test, current court-status determination or completed records request is adopted here. [Revision checklist and exact text diff](revisions/2026-11-04-assistance-and-search-recheck/REVIEW.md).
+
+<!-- END ASSISTANCE AND SEARCH RECHECK 2026-11-04 -->
