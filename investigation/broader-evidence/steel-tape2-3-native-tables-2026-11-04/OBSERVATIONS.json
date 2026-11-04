@@ -1,0 +1,42 @@
+[
+  {
+    "id": "T23-01-SIZE",
+    "kind": "observation/calculation",
+    "claim": "First-track stsz declares11607 samples, all11607 stored sizes positive",
+    "support": "NATIVE-TABLES.json tables[1].fields; count byte815639049",
+    "strength": "A for these bytes/readout",
+    "limits": "Payload mapping and decoding untested"
+  },
+  {
+    "id": "T23-01-TIME",
+    "kind": "observation/arithmetic",
+    "claim": "Single first-track stts run11607*200=2321400 media units",
+    "support": "NATIVE-TABLES.json tables[0].fields; run byte815620697",
+    "strength": "A for bytes/multiplication",
+    "limits": "No native timescale/edit/presentation interpretation"
+  },
+  {
+    "id": "T23-01-CONFLICT",
+    "kind": "preserved comparison",
+    "claim": "11607 native alongside prior11607reported/11606packets/11606frames,12planned/11emitted stillfailed",
+    "support": "NATIVE-TABLES.json,PRIOR-COUNTS.json,preceding report",
+    "strength": "A for observations; cause underdetermined",
+    "limits": "No preferred counter/loss/edit/intent conclusion"
+  },
+  {
+    "id": "T23-01-CONDITIONAL-DURATION",
+    "kind": "conditional calculation",
+    "claim": "2321400*(prior1/2997)=773800/999 seconds beside prior774.506507",
+    "support": "Native timing sum/prior timebase",
+    "strength": "A for conditional arithmetic only",
+    "limits": "No verified presentation duration"
+  },
+  {
+    "id": "T23-01-REFERENCE",
+    "kind": "reference discrepancy",
+    "claim": "Apple overview/title stts vs layout Type ctts",
+    "support": "Saved APPLE-STTS lines28/41",
+    "strength": "A for saved wording",
+    "limits": "Unresolved; no movie alteration inference"
+  }
+]
