@@ -1,0 +1,100 @@
+{
+  "access_date": "2026-11-05",
+  "sources": {
+    "march_request": {
+      "url": "https://digicoll.lib.berkeley.edu/record/291551/files/305-WTC-Astaneh-to-FEMA-Requesting-WTC-drawings-.pdf",
+      "pages": 3,
+      "bytes": 325494,
+      "sha256": "766b20d3398a79252098560e3932e582e620686d696b67bbe3bad98cedf19222"
+    },
+    "march_testimony": {
+      "url": "https://digicoll.lib.berkeley.edu/record/291544/files/205-WTC-Astaneh_Testimony-before-Committee-on-Science-at-WTC-Hearings.pdf",
+      "pages": 7,
+      "bytes": 410334,
+      "sha256": "a21dbbb5c50131add8121058582da28316192b7e708e88875591bda54864227f"
+    },
+    "october_standalone": {
+      "url": "https://digicoll.lib.berkeley.edu/record/291534/files/103-WTC-Astaneh_Progress-Report-to-NSF-on-UCB-WTC-Project.pdf",
+      "pages": 6,
+      "bytes": 743481,
+      "sha256": "e339955e3d79aa9e0eb21eae32d29e6a2e88ba4206e629e620d1d4efd73805d0"
+    },
+    "october_supplement": {
+      "url": "https://digicoll.lib.berkeley.edu/record/291535/files/104-WTC-Astaneh-Ammendment_to-_Proposal-on-WTC-_by_Astaneh.pdf",
+      "pages": 12,
+      "bytes": 752346,
+      "sha256": "29636f17e90e674969c3333017265d0dc052159bd8736ccdb663a811a94f711d"
+    }
+  },
+  "method": "Use PyMuPDF get_text(sort=True).splitlines() with one-based page/line. Check the March request scan visually. Compare get_image_info(hashes=True) digest values for the three figure pages.",
+  "text_checks": [
+    {
+      "source": "march_request",
+      "page": 1,
+      "line": 11,
+      "expected_substring": "110-story towers scanned onto"
+    },
+    {
+      "source": "march_request",
+      "page": 1,
+      "line": 12,
+      "expected_substring": "never asked nor received"
+    },
+    {
+      "source": "march_request",
+      "page": 1,
+      "line": 13,
+      "expected_substring": "Buildings 3 through 7"
+    },
+    {
+      "source": "march_testimony",
+      "page": 3,
+      "line": 12,
+      "expected_substring": "identified and saved some"
+    },
+    {
+      "source": "march_testimony",
+      "page": 3,
+      "line": 14,
+      "expected_substring": "Figures 1 through 4"
+    },
+    {
+      "source": "march_testimony",
+      "page": 3,
+      "line": 34,
+      "expected_substring": "hit with a round object"
+    },
+    {
+      "source": "march_testimony",
+      "page": 4,
+      "line": 10,
+      "expected_substring": "Not having a copy of the engineering drawings"
+    },
+    {
+      "source": "october_standalone",
+      "page": 4,
+      "line": 12,
+      "expected_substring": "Fig. 4. Column Splice, WTC Building 7"
+    },
+    {
+      "source": "october_supplement",
+      "page": 10,
+      "line": 14,
+      "expected_substring": "Fig. 4. Column Splice, WTC Building 7"
+    }
+  ],
+  "march_figure_page": 3,
+  "march_image_placements": 4,
+  "october_comparisons": {
+    "october_standalone": {
+      "page": 4,
+      "image_placements": 20,
+      "matching_march_image_digests": 0
+    },
+    "october_supplement": {
+      "page": 10,
+      "image_placements": 6,
+      "matching_march_image_digests": 0
+    }
+  }
+}
