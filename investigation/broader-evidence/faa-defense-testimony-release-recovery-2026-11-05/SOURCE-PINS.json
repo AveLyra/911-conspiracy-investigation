@@ -1,0 +1,143 @@
+{
+  "scope": "Two exact Wayback replays, CDX fields and scoped comparison of public PDF records. Historical signature authentication and WARC bytes were outside the test.",
+  "cdx_result_counts": [
+    {
+      "mimetype": "application/pdf",
+      "statuscode": "200",
+      "count": 29
+    },
+    {
+      "mimetype": "unk",
+      "statuscode": "301",
+      "count": 5
+    },
+    {
+      "mimetype": "text/html",
+      "statuscode": "404",
+      "count": 6
+    }
+  ],
+  "replayed_pdf": {
+    "pages": 3,
+    "embedded_text": false,
+    "matching_base32_sha1": "4FF7CGRS373RVHAI3YV75HTZI6X3RBTZ",
+    "cdx_pdf_record_length_range": [
+      179597,
+      179605
+    ],
+    "metadata": {
+      "creationDate": "D:20060918082940-04'00'",
+      "modDate": "D:20060918083022-04'00'",
+      "creator": "hp scanjet 8200 series TWAIN",
+      "producer": "PDFScanLib v1.2.2 in Adobe Acrobat 7.0.8"
+    },
+    "locator_method": "All pages visually read. One-based OCR lines from Tesseract, grayscale 250 dpi, PSM 6.",
+    "ocr_sha256": {
+      "1": "fab0748e0aad13fdc5f1a74cc2ff0f78c208c56813e79ada42a02506b696764c",
+      "2": "7c2f598b2ca9e475824399e6e244f59ae6669a3f9a0cd979bbcbe26e4cc678ec",
+      "3": "7023a948be734363c91b9704cabd9e64b0003645000f813cec5abf47e3c8e5cd"
+    }
+  },
+  "sources": {
+    "wayback_avail": {
+      "url": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.dodig.mil%2FIr%2Freports%2F06-intel-12.pdf&timestamp=20091201",
+      "access_date": "2026-11-05",
+      "locator": "Wayback availability endpoint, requested timestamp 20091201; HTTP 429.",
+      "http_status": 429,
+      "content_type": "text/html; charset=utf-8",
+      "hash_scope": "saved response body",
+      "sha256": "ae138caf8767f7be2fe6f47f1663b0e2e28d903264707aa9b6f73bb7b223902c",
+      "bytes": 117
+    },
+    "wayback_cdx": {
+      "url": "https://web.archive.org/cdx/search/cdx?url=www.dodig.mil%2FIr%2Freports%2F06-intel-12.pdf&output=json&matchType=exact",
+      "access_date": "2026-11-05",
+      "locator": "Header and all 40 result rows. Compare earliest and latest PDF/200 capture rows to separately retrieved bodies.",
+      "http_status": 200,
+      "content_type": "application/json",
+      "hash_scope": "saved response body",
+      "sha256": "854ee118ca6d5a1475f41007d18d7a66d17879a0acf35535e5a2326c8dfb5886",
+      "bytes": 7081
+    },
+    "common_crawl_2014": {
+      "url": "https://index.commoncrawl.org/CC-MAIN-2014-52-index?url=www.dodig.mil%2FIr%2Freports%2F06-intel-12.pdf&output=json",
+      "access_date": "2026-11-05",
+      "locator": "CC-MAIN-2014-52 exact URL index; HTTP 404 with a no-captures JSON message.",
+      "http_status": 404,
+      "content_type": "application/json; charset=utf-8",
+      "hash_scope": "saved response body",
+      "sha256": "b3bf8eb70d50e518aa2a05179a31b11386b633c5906ef8c5a560b5d49a2c6cd3",
+      "bytes": 78
+    },
+    "replay_first": {
+      "url": "https://web.archive.org/web/20120707002543id_/http://www.dodig.mil/Ir/reports/06-intel-12.pdf",
+      "access_date": "2026-11-05",
+      "locator": "2012-07-07 00:25:43 UTC, entire three-page memorandum visually read and OCR transcribed for locator checks.",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "hash_scope": "saved response body",
+      "sha256": "4b997ba100d56d1193e2faf57bf849b3f94c4f7be349be68c76a0e65c230c945",
+      "bytes": 186433,
+      "cdx_row": {
+        "urlkey": "mil,dodig)/ir/reports/06-intel-12.pdf",
+        "timestamp": "20120707002543",
+        "original": "http://www.dodig.mil/Ir/reports/06-intel-12.pdf",
+        "mimetype": "application/pdf",
+        "statuscode": "200",
+        "digest": "4FF7CGRS373RVHAI3YV75HTZI6X3RBTZ",
+        "length": "179603"
+      },
+      "selected_headers": {
+        "x-archive-orig-last-modified": "Mon, 18 Sep 2006 14:30:44 GMT",
+        "x-archive-orig-content-length": "186433",
+        "memento-datetime": "Sat, 07 Jul 2012 00:25:43 GMT",
+        "x-archive-src": "WIDE-20120707001453-crawl418/WIDE-20120707002104-00170.warc.gz"
+      }
+    },
+    "replay_last": {
+      "url": "https://web.archive.org/web/20161222015721id_/http://www.dodig.mil/Ir/reports/06-intel-12.pdf",
+      "access_date": "2026-11-05",
+      "locator": "2016-12-22 01:57:21 UTC, exact payload comparison with first replay.",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "hash_scope": "saved response body",
+      "sha256": "4b997ba100d56d1193e2faf57bf849b3f94c4f7be349be68c76a0e65c230c945",
+      "bytes": 186433,
+      "cdx_row": {
+        "urlkey": "mil,dodig)/ir/reports/06-intel-12.pdf",
+        "timestamp": "20161222015721",
+        "original": "http://www.dodig.mil/Ir/reports/06-intel-12.pdf",
+        "mimetype": "application/pdf",
+        "statuscode": "200",
+        "digest": "4FF7CGRS373RVHAI3YV75HTZI6X3RBTZ",
+        "length": "179602"
+      },
+      "selected_headers": {
+        "x-archive-orig-last-modified": "Mon, 18 Sep 2006 14:30:44 GMT",
+        "x-archive-orig-content-length": "186433",
+        "memento-datetime": "Thu, 22 Dec 2016 01:57:21 GMT",
+        "x-archive-src": "EOT-2016-PATCH-20161222014252674-00750-00759-wbgrp-crawl008/EOT-2016-PATCH-20161222015046390-00753-22260~wbgrp-crawl008.us.archive.org~8443.warc.gz"
+      }
+    },
+    "eberhart_mfr": {
+      "url": "https://www.archives.gov/files/declassification/iscap/pdf/2012-042-doc29.pdf",
+      "access_date": "2026-11-05",
+      "locator": "March 1, 2004 interview memorandum, physical p. 8 lines 4\u201315 and p. 9 lines 17\u201320, PyMuPDF text.",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "hash_scope": "saved response body",
+      "sha256": "7aaa3a25f5a800e70cb6851a3b70172480c8b14551308c64aa39e1838343a445",
+      "bytes": 4345251
+    },
+    "eberhart_notes": {
+      "url": "https://www.archives.gov/files/declassification/iscap/pdf/2012-042-doc12.pdf",
+      "access_date": "2026-11-05",
+      "locator": "Parallel March 1, 2004 notes, physical p. 5 lines 15\u201319, PyMuPDF text.",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "hash_scope": "saved response body",
+      "sha256": "984df2cdb54768da0b3e88b4eb85e92475a72b5e98a8eb33a77eeac456a55962",
+      "bytes": 2501648
+    }
+  }
+}
