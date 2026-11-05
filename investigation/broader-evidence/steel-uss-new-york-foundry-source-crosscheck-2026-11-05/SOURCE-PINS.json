@@ -1,0 +1,225 @@
+{
+  "study": "USS New York steel transfer and Amite casting records",
+  "extraction": {
+    "html": "BeautifulSoup html.parser, remove script/style, split on newline, collapse whitespace, omit blank lines, one-based",
+    "pdf": "PyMuPDF default text extraction, one-based lines including blank lines"
+  },
+  "captures": {
+    "shipbuilder": {
+      "url": "https://www.globenewswire.com/news-release/2003/09/10/300413/189/en/Photo-Release-Northrop-Grumman-Melts-and-Casts-World-Trade-Center-Steel-for-Bow-Stem-of-New-Navy-Ship-USS-New-York-LPD-21.html",
+      "accessed_utc": "2026-11-05T21:44:49Z",
+      "http_status": 403,
+      "content_type": "text/html",
+      "bytes": 663,
+      "sha256_received_body": "b6518f5ac8316e9381d443a139d6f235ac36609bda2024da1356a65b342b183f",
+      "scope": "403 HTML. Substantive 2003 press-release reading was through public web index only.",
+      "sha256_is_error_body": true
+    },
+    "army": {
+      "url": "https://www.army.mil/article/28473/commissioning_of_the_uss_new_york_nov_7",
+      "accessed_utc": "2026-11-05T21:44:49Z",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 25834,
+      "sha256_received_body": "71896a825ef55266fd75bcedb61e416437eb6e9b0c697754c40335dc4df0678e",
+      "scope": "Army-hosted APG News, selected second caption and body paragraph",
+      "line_checks": [
+        {
+          "line": 19,
+          "contains": "Sept. 9, 2003."
+        },
+        {
+          "line": 19,
+          "contains": "About 24 tons"
+        },
+        {
+          "line": 25,
+          "contains": "7.5 tons"
+        },
+        {
+          "line": 25,
+          "contains": "24 tons of salvaged steel used in total"
+        }
+      ]
+    },
+    "navy-report": {
+      "url": "https://www.nrl.navy.mil/Portals/38/PDF%20Files/2006_NRL_Review.pdf?ver=fqttsf-FEu12QI5ibNh0FA%3D%3D",
+      "accessed_utc": "2026-11-05T21:44:49Z",
+      "http_status": 403,
+      "content_type": "text/html",
+      "bytes": 447,
+      "sha256_received_body": "303285b508decd8e079ab7d8f9b31792ca29596c7a8fe4a6adb3bcad5b5ae989",
+      "scope": "403 HTML. Substantive 2006 NRL Review reading was through public web index only.",
+      "sha256_is_error_body": true
+    },
+    "foundry-written": {
+      "url": "https://www.commerce.gov/sites/default/files/the_effect_of_imports_of_steel_on_the_national_security_-_with_redactions_-_20180111.pdf",
+      "accessed_utc": "2026-11-05T21:44:49Z",
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5848,
+      "sha256_received_body": "0dc6eb5ced55562f5b7219ae50b74bf7021b1c03efa55ad8327e29e925d84e63",
+      "scope": "403 HTML from Commerce. Same testimony was acquired from the separate BIS route.",
+      "sha256_is_error_body": true
+    },
+    "navy-newsstand": {
+      "url": "https://www.globalsecurity.org/military/library/news/2003/09/mil-030912-nns03.htm",
+      "accessed_utc": "2026-11-05T21:44:49Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 30563,
+      "sha256_received_body": "ee4e5a09db18cd016c9c6a0f0073e0b68899f7716895db181b214f758567a1c1",
+      "scope": "GlobalSecurity reproduction of a Navy Newsstand public affairs release. Selected body paragraphs and original story identifier.",
+      "line_checks": [
+        {
+          "line": 73,
+          "contains": "NNS030912-06"
+        },
+        {
+          "line": 74,
+          "contains": "9/12/2003"
+        },
+        {
+          "line": 77,
+          "contains": "Twenty tons"
+        },
+        {
+          "line": 86,
+          "contains": "additional 21,000 pounds"
+        }
+      ]
+    },
+    "photo-catalog": {
+      "url": "https://commons.wikimedia.org/wiki/File:US_Navy_030910-N-7542D-254_Workers_from_the_Amite_foundry_pour_molten_steel_recycled_from_the_World_Trade_Center,_into_the_mold_of_the_bow_stem_of_the_Amphibious_Transport_Dock_ship_USS_New_York_(LPD_21).jpg",
+      "accessed_utc": "2026-11-05T21:44:49Z",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 113516,
+      "sha256_received_body": "8ac92064f2804e1a039cfb9e46a49909ff7d6cbc8acc20cb7b4f03c3664e8fdb",
+      "scope": "Wikimedia Commons HTML. Reproduced caption and displayed metadata only. No original image bytes or camera calibration checked.",
+      "line_checks": [
+        {
+          "line": 110,
+          "contains": "Sept. 10, 2003"
+        },
+        {
+          "line": 110,
+          "contains": "48,780 pounds"
+        },
+        {
+          "line": 110,
+          "contains": "Approximately 10-percent"
+        },
+        {
+          "line": 242,
+          "contains": "18:26, 9 September 2003"
+        },
+        {
+          "line": 254,
+          "contains": "01:32, 10 September 2003"
+        },
+        {
+          "line": 262,
+          "contains": "18:26, 9 September 2003"
+        }
+      ]
+    },
+    "bis-report": {
+      "url": "https://www.bis.gov/media/documents/effect-imports-steel-national-security-redactions-20180111.pdf",
+      "accessed_utc": "2026-11-05T21:45:26Z",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "bytes": 11032179,
+      "sha256_received_body": "ba7ca68d3fa25bed94ff2c48549f325ef542b9174b368dc9a4985402a629c4e4",
+      "scope": "Official BIS PDF, physical page 215, Appendix F printed page 139. Trade association submission. Relevant passage also visually checked.",
+      "pdf_pages": 263,
+      "physical_page_read": 215,
+      "line_checks": [
+        {
+          "line": 249,
+          "contains": "On September 9th, 2003"
+        },
+        {
+          "line": 249,
+          "contains": "poured a seven ton casting"
+        },
+        {
+          "line": 250,
+          "contains": "the bow stem for the USS New York"
+        }
+      ]
+    },
+    "house-eh": {
+      "url": "https://www.govinfo.gov/content/pkg/BILLS-111hres856eh/html/BILLS-111hres856eh.htm",
+      "accessed_utc": "2026-11-05T21:45:26Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 4660,
+      "sha256_received_body": "1972633796fc1daf5a1a0d2e2f9166068fb198d737299b3f707905c6c9e47afd",
+      "scope": "Official GovInfo engrossed version, selected recital.",
+      "line_checks": [
+        {
+          "line": 24,
+          "contains": "bow is comprised of 7.5 tons"
+        },
+        {
+          "line": 25,
+          "contains": "erected onto the vessel"
+        },
+        {
+          "line": 26,
+          "contains": "September 9, 2003"
+        }
+      ]
+    },
+    "house-ih": {
+      "url": "https://www.govinfo.gov/content/pkg/BILLS-111hres856ih/html/BILLS-111hres856ih.htm",
+      "accessed_utc": "2026-11-05T21:45:26Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 5717,
+      "sha256_received_body": "04760fd9db895da77c330b3a35fdbe478abeaa429c6f11fedfe63fa84d9877c7",
+      "scope": "Official GovInfo introduced version, selected recital.",
+      "line_checks": [
+        {
+          "line": 42,
+          "contains": "bow is comprised of 7.5 tons"
+        },
+        {
+          "line": 43,
+          "contains": "erected onto the vessel"
+        },
+        {
+          "line": 44,
+          "contains": "September 9, 2003"
+        }
+      ]
+    },
+    "builder-delivery": {
+      "url": "https://investor.northropgrumman.com/node/10486/pdf",
+      "accessed_utc": "2026-11-05T21:45:26Z",
+      "http_status": 403,
+      "content_type": "text/html",
+      "bytes": 402,
+      "sha256_received_body": "812122c7fdb19f466122c11651359a089755dc90028cc687223d8da078421732",
+      "scope": "403 HTML. Substantive delivery-release reading was through public web index only.",
+      "sha256_is_error_body": true
+    }
+  },
+  "comparison": {
+    "identical_recital_lines": 6,
+    "house_ih_lines": [
+      42,
+      47
+    ],
+    "house_eh_lines": [
+      24,
+      29
+    ],
+    "calendar": {
+      "2003-09-09": "Tuesday",
+      "2003-09-10": "Wednesday"
+    },
+    "scope": "Document wording and calendar only. The pour date and custody remain unresolved."
+  }
+}
