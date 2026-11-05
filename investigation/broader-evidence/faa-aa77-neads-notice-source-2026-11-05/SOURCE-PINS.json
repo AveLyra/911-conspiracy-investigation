@@ -1,0 +1,176 @@
+{
+  "scope": "Public call derivatives and a limited waveform and speech comparison. Native channel identity and clock calibration remain open.",
+  "sources": {
+    "clip_page": {
+      "url": "https://rutgerslawreview.com/wp-content/uploads/special/911/html/%2872%29%20093212%20AA11%20AA77%20ID%20Summary%20ZDC%20loss%20of%20AA77.html",
+      "access_date": "2026-11-05",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "locator": "BeautifulSoup stripped_strings indices 2, 25, 45, one-based; item title, key utterance and description of loss of contact.",
+      "scope": "downloaded response bytes",
+      "bytes": 6822,
+      "sha256": "0975881928418b4e4a95944f2b3c04d6f2629eb9205da3bdb80f982512480849"
+    },
+    "transcript": {
+      "url": "https://rutgerslawreview.com/full-audio-transcript/",
+      "access_date": "2026-11-05",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "locator": "Item 72, stripped_strings indices 991, 1014 and 1034, one-based. Same Rutgers publication as the clip page.",
+      "scope": "downloaded response bytes",
+      "bytes": 297119,
+      "sha256": "b836cb1bd479bcd7a0df7a0f5d2376fc5f109ab9f5f47294934d5d1465a2ee25"
+    },
+    "commission_notes": {
+      "url": "https://www.9-11commission.gov/report/911Report_Notes.htm",
+      "access_date": "2026-11-05",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "locator": "Chapter 1 endnote 151, stripped_strings index 187, one-based.",
+      "scope": "downloaded response bytes",
+      "bytes": 696401,
+      "sha256": "336523b57cdb8e1481dc800a87a31c5fcb517928047f9e078a49459825aa7f32"
+    },
+    "participant": {
+      "url": "https://www.oredigger61.org/?p=3785",
+      "access_date": "2026-11-05",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "locator": "March 2011 article with separate Part I and II links, stripped_strings indices 288\u2013289.",
+      "scope": "downloaded response bytes",
+      "bytes": 75762,
+      "sha256": "79a43bfd0752ae8395cb35ca1e46bb2baf3cacdfc4dba91a9c755e3337b820db"
+    },
+    "rutgers_audio": {
+      "url": "https://www.rutgerslawreview.com/wp-content/uploads/special/911/Audio/%2872%29%20093212%20AA11%20AA77%20ID%20Summary%20ZDC%20loss%20of%20AA77.mp3",
+      "access_date": "2026-11-05",
+      "http_status": 200,
+      "content_type": "audio/mpeg",
+      "locator": "Item 72 MP3, entire elapsed waveform used as comparison reference; ASR sampled 85\u2013155 s.",
+      "scope": "downloaded response bytes",
+      "bytes": 2980951,
+      "sha256": "778a145738f76bbed20990fad7c94c378fe44e6fdd3b684420cfd748f540ebf7"
+    },
+    "kara1": {
+      "url": "https://www.oredigger61.org/wp-content/uploads/2011/03/093212-Part-I-AA11-AA77-ID-Summary-ZDC-loss-of-AA77.mp3",
+      "access_date": "2026-11-05",
+      "http_status": 200,
+      "content_type": "audio/mpeg",
+      "locator": "Part I MP3, three fixed 6 s probes.",
+      "scope": "downloaded response bytes",
+      "bytes": 1445369,
+      "sha256": "8f825f882a52eaeb31b6ab44c3589c4dfd93eb6ccf78c889689f945b9efe45ff"
+    },
+    "kara2": {
+      "url": "https://www.oredigger61.org/wp-content/uploads/2011/03/093212-Part-II-AA11-AA77-ID-Summary-ZDC-loss-of-AA77.mp3",
+      "access_date": "2026-11-05",
+      "http_status": 200,
+      "content_type": "audio/mpeg",
+      "locator": "Part II MP3, three fixed 6 s probes.",
+      "scope": "downloaded response bytes",
+      "bytes": 1512602,
+      "sha256": "ba70afd9253da1f2ee7c4e246c0632cd3048107aa14e043807846d4bfcdc30c4"
+    }
+  },
+  "indexed_only": [
+    {
+      "url": "https://www.scribd.com/document/14142009/NYC-Box-2-NEADS-Transcript-Rome-NY-Fdr-Transcript-Pgs-1-82-1237-1417",
+      "locator": "NCT0000066, indexed lines 1005\u20131053."
+    },
+    {
+      "url": "https://www.scribd.com/document/14142075/NYC-Box-3-Neads-conr-norad-Fdr-Transcript-Neads-Channel-4-Id-Op",
+      "locator": "Internal p. 0063 lines 19\u201322 and preceding cover/heading."
+    },
+    {
+      "url": "https://www.scribd.com/document/12992794/Timeline-of-the-Events-of-the-Day-of-9-11-Drafted-by-the-9-11-Commission",
+      "locator": "Indexed rows for Alderson 9:34:02, call interval, and 9:34 MCC/T log."
+    }
+  ],
+  "indexed_extracts": {
+    "scope": "local selected excerpt bytes only",
+    "bytes": 303,
+    "sha256": "a4d8cb0114b3133e855dbaaa21a041b80d4c23ca6cc96992f193f720d60a1865"
+  },
+  "waveform": {
+    "method": "FFmpeg 7.1.1 mono float PCM 8 kHz. Six-second windows centered at 25%, 50% and 75% of each split decode. Whole-reference FFT correlation, zero-mean normalized; peak control excludes \u00b11 s. Silence is rejected.",
+    "decision": "All six NCC >= 0.95 and max per-part lag spread <= 0.030 s",
+    "scipy": "1.16.2",
+    "numpy": "2.3.4",
+    "script_sha256": "f34e267d79f0efe72655fe760504dd6f8ccfcc3be0ceecf13057d1f7dcc5de10",
+    "actual_result": {
+      "sample_rate": 8000,
+      "durations_s": {
+        "rutgers_audio": 186.148625,
+        "kara1": 90.17475,
+        "kara2": 94.354375
+      },
+      "rows": [
+        {
+          "clip": "kara1",
+          "split_start_s": 19.54375,
+          "rutgers_start_s": 20.79925,
+          "lag_s": 1.2555,
+          "ncc": 0.9305678886909803,
+          "best_off_peak_ncc": 0.05660305399845193
+        },
+        {
+          "clip": "kara1",
+          "split_start_s": 42.087375,
+          "rutgers_start_s": 43.342875,
+          "lag_s": 1.2555,
+          "ncc": 0.9520751011812164,
+          "best_off_peak_ncc": 0.06139261218958502
+        },
+        {
+          "clip": "kara1",
+          "split_start_s": 64.631,
+          "rutgers_start_s": 65.8865,
+          "lag_s": 1.2555,
+          "ncc": 0.9569033727705363,
+          "best_off_peak_ncc": 0.06619086288570897
+        },
+        {
+          "clip": "kara2",
+          "split_start_s": 20.588625,
+          "rutgers_start_s": 112.383375,
+          "lag_s": 91.79475,
+          "ncc": 0.9977456933126643,
+          "best_off_peak_ncc": 0.06578893580975101
+        },
+        {
+          "clip": "kara2",
+          "split_start_s": 44.17725,
+          "rutgers_start_s": 135.972,
+          "lag_s": 91.79475,
+          "ncc": 0.9967391091923161,
+          "best_off_peak_ncc": 0.048843690853504526
+        },
+        {
+          "clip": "kara2",
+          "split_start_s": 67.76575,
+          "rutgers_start_s": 159.5605,
+          "lag_s": 91.79475,
+          "ncc": 0.9975358876178274,
+          "best_off_peak_ncc": 0.058723700325812235
+        }
+      ],
+      "per_part_lag_spread_s": {
+        "kara1": 0.0,
+        "kara2": 0.0
+      },
+      "silence_control": "rejected",
+      "passed": false
+    },
+    "result_sha256": "e8b731c35644835f1b66f04076a52ef8cbb1b2a771fd3d9a83f71f2651ff5d98"
+  },
+  "speech_check": {
+    "runtime": "Whisper.cpp 1.9.2, existing offline base.en",
+    "model_sha256": "a03779c86df3323075f5e796cb2ce5029f00ec8869eee3fdfb897afe36c6d002",
+    "flags": "-ng -ot 85000 -d 70000 -l en -t 4 -p 1 -tp 0 -nf; networking denied via sandbox-exec",
+    "raw_output": {
+      "bytes": 1998,
+      "sha256": "e5e5378850eaaa6380b9fe660122d2d4286f423369a465655ebca506dac84f04"
+    },
+    "key_uncertainty": "ASR recognized left at 104.000\u2013105.960 s where the published transcript reads lost."
+  }
+}
