@@ -1,0 +1,10 @@
+# Review checklist
+
+- [x] UMS workers' reported Miami travel and subsequent employment; separate six-person moving cohort and the three interviewees' broader job description. Source: apparent FBI Serial 18, pages 1–2; interview accounts, redactions and report disclaimer preserved.
+- [x] June 2001 DEA security report: reported approaches, preliminary intelligence-gathering suspicion and reported MDMA-investigation phone links; ordinary door-to-door sales and neighborhood approaches retained as a competing explanation. Source: reproduced report and its independently hosted reproduction in a private memorandum; origin authentication remains open.
+- [x] *Die Zeit* 2002 surveillance/list allegation identified as reporting, not finding; press release does not establish that all 19 hijackers appeared on a list. DOJ inspector general's contemporaneous-cable/travel-record watchlist narrative retained as a separate account.
+- [x] *Los Angeles Times* September 2001 correction and CIA denial of that particular warning distinguished from proof that all possible warnings were absent.
+- [x] National Archives 2025-0218-F notice: 13 assets, 10 full and 2 partial restrictions, one full and two partial proposed releases; multiple search terms mean no asset-level UMS match follows. Notice is a proposed release, not proof of present access or contents.
+- [x] No personal phone numbers, passport details, private correspondence, or user-specific FOIA information included in this public payload. No person-to-person operational bridge, Saudi-support connection, attack foreknowledge, Mossad identity or final intelligence conclusion is asserted.
+- [x] Master-list navigation is additive; it changes no stable M ID or count. The original master is preserved in the parent Git commit. The complete Git diff against that parent is the revision record.
+- [x] Scope of this pass: review accessible web-extracted FBI and DEA-reproduction text, the newspaper release/correction, DOJ report and Archives notice. It does not claim independently authenticated underlying source files, complete name/number cross-matching, or full review of all records.
