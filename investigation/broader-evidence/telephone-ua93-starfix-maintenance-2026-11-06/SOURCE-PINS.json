@@ -1,0 +1,82 @@
+{
+  "study": "telephone-ua93-starfix-maintenance-2026-11-06",
+  "access_date_utc": "2026-11-06",
+  "locator_method": "One-based physical PDF pages and PyMuPDF get_text().splitlines() lines. One-based Beautiful Soup html.parser stripped strings.",
+  "captured_sources": [
+    {
+      "filename": "starfix-nara-candidate.pdf",
+      "url": "https://nara-media-001.s3.amazonaws.com/arcmedia/9-11/MFR/t-0148-911MFR-00010.pdf",
+      "scope": "NARA legacy public scan; 3 pages visually read. PDF p. 1 date and event, p. 2 Flight 93 paragraphs 1–5, p. 3 first paragraph.",
+      "bytes": 603718,
+      "sha256": "37c9889692c07875febec27249f9f31178866da1c6d7a3bbb02e37d09fa1b462"
+    },
+    {
+      "filename": "belme-nara-medialz.pdf",
+      "url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/2610691_Belme.pdf",
+      "scope": "NARA catalog media. 3 pages visually read; p. 1 title and text layer, p. 2 lines 2–8 and 20–28, p. 3 lines 18–23.",
+      "bytes": 528023,
+      "sha256": "fd4c74876f2cc98577c9b836a1ccacec47920e2cc8b9cbe2f07dbc10ce6bd448"
+    },
+    {
+      "filename": "nara-mfr-index.html",
+      "url": "https://www.archives.gov/research/9-11/commission-memoranda.html",
+      "scope": "Official table; stripped strings beginning 139 and 8040 for item, date and page counts.",
+      "bytes": 442464,
+      "sha256": "cc7e344d5ca828737ad6094a2d9b33c29297b9a8669b42e71fc73df8f84e6776"
+    },
+    {
+      "filename": "starfix-reproduction.html",
+      "url": "https://www.scribd.com/document/18885171/T7-B10-Team-7-MFRs-9-11-Personal-Privacy-Fdr-L-11-21-03-Star-Fix-Operator-1-Interview-w-Notes-on-MFR-397",
+      "scope": "Counterpart reader, indexed lines 168–206 compared with scan.",
+      "bytes": 1352821,
+      "sha256": "d61386a9bc8ff5c3bece92cc80663694ea0421b485c56b070d951e0d06eaf59c"
+    },
+    {
+      "filename": "nps-93-calls.html",
+      "url": "https://home.nps.gov/flni/learn/historyculture/phone-calls-and-seating-chart.htm",
+      "scope": "Official retrospective, stripped strings 176–196, five Speed Dial Fix entries.",
+      "bytes": 90696,
+      "sha256": "6c0b81084ec6471ef6dbd4e7851f7b12192374821b64dfb7e3954c003edb4a5c"
+    },
+    {
+      "filename": "united-hearing7-studdert.html",
+      "url": "https://govinfo.library.unt.edu/911/hearings/hearing7/witness_studdert.htm",
+      "scope": "United written hearing statement, UNT. Stripped string 52.",
+      "bytes": 24482,
+      "sha256": "ad50496213733c1d5b2d7451052c545dc5f2f3ff584cedd191e6edde4ff7cb44"
+    }
+  ],
+  "reused_input": {
+    "url": "https://github.com/AveLyra/911-conspiracy-investigation/blob/681797a20a39d8c30e367c2220be15a191e3a409/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/SAFE-MFR-ROWS.json",
+    "sha256": "162b7931867869362d50b76d418b0442399db914f3ca42f29b8fed89326fe449",
+    "scope": "Prior transcription, UA93_airfone blocks 7 and 6. No native key."
+  },
+  "indexed_source": {
+    "url": "https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf",
+    "locator": "Printed p. 98, physical p. 99, notes 341–342; indexed lines 3748–3755. Entity not newly fetched."
+  },
+  "other_routes": [
+    {
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/legislative/rg-148/2524787/2610691_Belme.pdf",
+      "status": "Direct HTTP 403. Official catalog media endpoint yielded the released scan."
+    },
+    {
+      "url": "https://naraprodstorage.s3.amazonaws.com/lz/legislative/rg-148/2524787/2610691_Belme.pdf",
+      "status": "Direct HTTP 403."
+    },
+    {
+      "url": "https://nara-media-001.s3.amazonaws.com/arcmedia/9-11/MFR/t-0148-911MFR-01105.pdf",
+      "status": "Unrelated withdrawal notice; excluded from findings."
+    }
+  ],
+  "conditional_results": {
+    "first_end": "09:34:04",
+    "second_end": "09:41:33",
+    "gap_seconds": 96,
+    "pacific_estimate_offsets_seconds": [
+      -340,
+      260
+    ],
+    "limit": "Civil clock conversion and conditional interval arithmetic. No historical row join or synchronized clocks."
+  }
+}
