@@ -1,0 +1,76 @@
+{
+  "study": "Virginia Beach memorial steel and the B245 attribution",
+  "sources": [
+    {
+      "file": "wavy-aol.html",
+      "url": "https://www.aol.com/articles/virginia-beach-fire-honors-9-172521000.html",
+      "access_utc": "2026-11-06T05:49:04Z",
+      "http_status": 200,
+      "media_type": "text/html; charset=utf-8",
+      "reading_scope": "Local HTML stripped-string lines 119–127; exact building label at line 126.",
+      "bytes": 823763,
+      "sha256": "547df6760639affdca5b87adea96fd68cdab5cc9f27ad2b992173bb57f749005"
+    },
+    {
+      "file": "virginia-beach-notice.html",
+      "url": "https://virginiabeach.gov/connect/news/virginia-beach-fire-department-to-host-9-11-remembrance-ceremony-september-11-2026",
+      "access_utc": "2026-11-06T05:50:25Z",
+      "http_status": 200,
+      "media_type": "text/html; charset=UTF-8",
+      "reading_scope": "Local HTML stripped-string lines 457–462; ceremony venue only.",
+      "bytes": 540871,
+      "sha256": "7a34c318a5d40f6ab5ab6a674c1325937e49c14132b146ec13b7030e723a8281"
+    },
+    {
+      "file": "vdfp-episode.html",
+      "url": "https://sites.libsyn.com/464883/website/what-is-structural-collapse-specialist-school-all-about",
+      "access_utc": "2026-11-06T05:50:24Z",
+      "http_status": 200,
+      "media_type": "text/html; charset=UTF-8",
+      "reading_scope": "Local HTML stripped-string lines 42–44 and 51; episode notes only.",
+      "bytes": 41514,
+      "sha256": "6b2f6a4052ec4c9830cdeed46517ebe8d1db36fb11fd5845fa17046cc0cb8f82"
+    },
+    {
+      "file": "nist-1-6d.pdf",
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101366",
+      "access_utc": "2026-11-06T05:50:25Z",
+      "http_status": 200,
+      "media_type": "application/pdf;charset=UTF-8",
+      "reading_scope": "Physical pp. 74–75; printed pp. 10–11. Rendered figure 2–1(b) and sorted-text lines 33–40 on p. 74.",
+      "bytes": 16929539,
+      "sha256": "0d2a155fc820c83e4bc7df32a6da098261eb2e7f8d1358abd00d11c12bd6c9ff"
+    },
+    {
+      "file": "nist-1-3b.pdf",
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101430",
+      "access_utc": "2026-11-06T05:17:29Z",
+      "http_status": 200,
+      "bytes": 4078164,
+      "sha256": "71cd9614d2f127464b6e278d2a28b414b303eda403448fc7f8e34751c67b906f",
+      "reading_scope": "Physical pp. 35–37, printed pp. 7–9. Sorted lines 6–15 on p. 35. Rendered both table pages; parsed exact column fields.",
+      "provenance": "Reused intact PDF from the preceding Wellington study."
+    },
+    {
+      "file": "taskforce-search-extract.txt",
+      "url": "https://www.vatf2.com/9-11-wtc-steel/",
+      "access_date_utc": "2026-11-06",
+      "representation": "Search result extract, not origin bytes",
+      "reading_scope": "Extract lines 3–5. Search open returned HTTP 502. Direct verified TLS attempt returned a self-signed certificate error. No origin body or photos acquired.",
+      "bytes": 1113,
+      "sha256": "c5aa172c03e2c2e93d3cbe29cf374818c7950696b0569dc95ed85fd1df5e408f"
+    }
+  ],
+  "table_check": {
+    "table": "NCSTAR 1-3B table 3–1, physical pp. 36–37",
+    "extraction": "PyMuPDF 1.27.2.2, page.get_text(sort=True).splitlines(), re.fullmatch against each line",
+    "column_pattern": "^\\s*(.*?)\\s+WTC ([12])\\s+([0-9]{3})\\s+(\\d+)[–-](\\d+)\\s+\\S+\\s*$",
+    "matching_table_rows_per_page": [
+      37,
+      6
+    ],
+    "column_245_rows": 0,
+    "positive_control": "M-10b, WTC 2, 206, 83–86, exactly one row",
+    "scope": "Rows include separately listed fragments. The report describes 42 identified distinct panels. Both table pages were visually reviewed."
+  }
+}
