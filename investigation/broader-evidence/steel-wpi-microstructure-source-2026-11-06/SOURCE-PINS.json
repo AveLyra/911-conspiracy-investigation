@@ -1,0 +1,195 @@
+{
+  "sources": {
+    "wpi-deck": {
+      "url": "https://web.wpi.edu/Images/CMS/MCSI/2005biederman2.pdf",
+      "status": 200,
+      "access_utc": "2026-11-06T02:24Z",
+      "sha256": "ff0723ddd1ba6fb341f23d80ea9a2f5bec45768019023cd35cf841301336ebb7",
+      "bytes": 11729600,
+      "pages": 89,
+      "verified_text_anchor_lines": {
+        "1": [
+          9
+        ],
+        "11": [
+          1
+        ],
+        "44": [
+          1
+        ],
+        "56": [
+          9
+        ],
+        "59": [
+          2
+        ],
+        "79": [
+          4
+        ],
+        "86": [
+          2
+        ]
+      }
+    },
+    "fema-c": {
+      "url": "https://www.nist.gov/system/files/documents/2017/05/09/AppendixC-fema403_apc.pdf",
+      "status": 200,
+      "access_utc": "2026-11-06T02:24Z",
+      "sha256": "1ba3d613b39a925ee64b99c7634e47829cbbbdeba8f976c552777e0c44c53951",
+      "bytes": 2138891,
+      "pages": 13,
+      "verified_text_anchor_lines": {
+        "1": [
+          8
+        ],
+        "2": [
+          10
+        ],
+        "6": [
+          2
+        ]
+      }
+    },
+    "jom-reproduction": {
+      "url": "https://www.nist.gov/system/files/documents/2017/05/09/121807CommentNISTJerryLeaphart.pdf",
+      "status": 200,
+      "access_utc": "2026-11-06T02:24Z",
+      "sha256": "0526205e56831580ec5d8cc51cf70b2fb62dd3babaecc95bd3c0437d6d58991e",
+      "bytes": 630425,
+      "pages": 10,
+      "verified_text_anchor_lines": {
+        "8": [
+          30
+        ]
+      }
+    }
+  },
+  "locator": "One-based physical pages and default PyMuPDF text lines including blanks. Object numbers are PDF XREFs.",
+  "check": {
+    "runtime": {
+      "PyMuPDF": "1.27.2.2",
+      "NumPy": "2.3.4",
+      "Pillow": "12.0.0"
+    },
+    "scope": {
+      "WPI": "All 89 pages for image inventory, only cited passages read",
+      "FEMA": "pp. 1\u20136",
+      "JOM": "Exhibit B, pp. 8\u20139"
+    },
+    "placements": {
+      "wpi-deck": 283,
+      "fema-c": 13,
+      "jom-reproduction": 6
+    },
+    "unique_scored_wpi_xrefs": 85,
+    "method": "Exact get_image_info decoded digest, then unique nonconstant XREFs with both dimensions at least 20 px. For comparison, rotate 0/90/180/270 degrees, with and without left-right mirroring. Gate at WPI-to-comparator aspect ratio 0.90 to 1.10. Convert to grayscale, resample to 128x128 by Lanczos, mean-center, unit-normalize, then dot product. Inline objects lacking an XREF enter only the digest scan.",
+    "totals": {
+      "fema-c": {
+        "digest_matches": [],
+        "full_frame_comparisons": 1004
+      },
+      "jom-reproduction": {
+        "digest_matches": [],
+        "full_frame_comparisons": 560
+      }
+    },
+    "positive_control": {
+      "method": "Downsample WPI object 44 to 480x211 and run the same full-frame scorer",
+      "score": 0.9999869861384036
+    },
+    "checked_pairs": [
+      {
+        "source": "fema-c",
+        "score": 0.6734700196830306,
+        "wpi": {
+          "page": 11,
+          "slot": 2,
+          "xref": 45,
+          "width": 720,
+          "height": 536,
+          "digest": "5df59be71c8edef3bf4db0fdea81451d"
+        },
+        "comparator": {
+          "page": 2,
+          "slot": 0,
+          "xref": 4,
+          "width": 675,
+          "height": 525,
+          "digest": "6ad6b8a15c19e12be537cb335a5a12a1"
+        },
+        "degrees": 0,
+        "mirror": false,
+        "visual_read": "Corresponding distinctive landmarks in locally rendered side-by-side decoded objects"
+      },
+      {
+        "source": "fema-c",
+        "score": 0.960668499901852,
+        "wpi": {
+          "page": 59,
+          "slot": 2,
+          "xref": 230,
+          "width": 551,
+          "height": 897,
+          "digest": "30880826d4db280c9e0e3b334406bd0e"
+        },
+        "comparator": {
+          "page": 6,
+          "slot": 0,
+          "xref": 24,
+          "width": 400,
+          "height": 656,
+          "digest": "19e15d8d9831b1ac5f75f8c1ee945e07"
+        },
+        "degrees": 0,
+        "mirror": false,
+        "visual_read": "Corresponding distinctive landmarks in locally rendered side-by-side decoded objects"
+      },
+      {
+        "source": "fema-c",
+        "score": 0.936946383216086,
+        "wpi": {
+          "page": 59,
+          "slot": 1,
+          "xref": 229,
+          "width": 598,
+          "height": 657,
+          "digest": "bf719a08cc9ac43ca0266044f7a4fec0"
+        },
+        "comparator": {
+          "page": 6,
+          "slot": 1,
+          "xref": 25,
+          "width": 589,
+          "height": 651,
+          "digest": "bcb8306a637bd5e1ba3802bde1e8097c"
+        },
+        "degrees": 0,
+        "mirror": false,
+        "visual_read": "Corresponding distinctive landmarks in locally rendered side-by-side decoded objects"
+      },
+      {
+        "source": "jom-reproduction",
+        "score": 0.9603585870877855,
+        "wpi": {
+          "page": 44,
+          "slot": 1,
+          "xref": 180,
+          "width": 1326,
+          "height": 1005,
+          "digest": "2e9c6eaf0ea9b593b28bc2ea76e551cd"
+        },
+        "comparator": {
+          "page": 8,
+          "slot": 2,
+          "xref": 20,
+          "width": 650,
+          "height": 491,
+          "digest": "fc9b225f59b7290937a09b41fc6c766e"
+        },
+        "degrees": 180,
+        "mirror": true,
+        "visual_read": "Corresponding distinctive landmarks in locally rendered side-by-side decoded objects"
+      }
+    ]
+  }
+}
