@@ -33,3 +33,9 @@ The [Fresh Kills EPA source crosswalk](broader-evidence/steel-fresh-kills-epa-rm
 ## November 6: public research catalogue
 
 The [research catalogue and recent publication index](recent-research-2026-11-06/README.md) links the dated 118-report roundup, nine later public main-line source reports and the published UMS/EPA review. Report updates overlap and are not independent evidence; the index has a stated cutoff.
+
+## November 6: developing theory and source recheck
+
+The [developing hypothesis](urban-moving-systems/developing-theory-2026-11-06/README.md) lays out the proposed UMS, hijacker, WTC and policy sequence with separate evidence, contrary findings and tests. Its WTC 7 section identifies the specific NIST-model criticisms, UAF's competing findings, acoustic limits and the separately published October 25 subjective scorecard. It does not claim an explosives installation, an identified perpetrator or a calibrated cause ranking.
+
+The [address-list and early-van source recheck](urban-moving-systems/wtc-hijacker-source-recheck-2026-11-06/README.md) confirms the released FBI form's list-compilation wording and separates an 8:15 utility-marked van, a separately reported 8:00 white-van sighting and the later FBI timing assessment. Vehicle and witness identity, list attachments and actual comparisons remain unresolved. Both leads retain evidence that could support or weaken the proposed connections.
