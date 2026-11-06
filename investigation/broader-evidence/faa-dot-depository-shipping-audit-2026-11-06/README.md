@@ -1,0 +1,29 @@
+# DOT management report depository search, FY2006–2009
+
+November 6, 2026 UTC · **B129 / PD03–PD05**. A reproducible search of the Government Publishing Office's official shipping-list archives found **no matching entry** for the March 2007 DOT management report. This result narrows one acquisition route. The House Journal still records executive communication **3550** for the period ending **March 31, 2007**. The enclosure, its case coverage and the FAA's response remain unacquired. [House Journal, entry 3550, printed p. 2362](https://www.govinfo.gov/content/pkg/GPO-HJOURNAL-2007/pdf/GPO-HJOURNAL-2007-2-2.pdf#page=104) · [GPO archived CSV lists](https://www.fdlp.gov/file-repository/838/csv-format)
+
+## What was tested
+
+The test uses the public FY2006 through FY2009 CSV ZIPs. These fiscal-year labels are GPO shipping-list series, separate from the period each report covers. It parsed **3,111 CSV members and 34,706 data rows**. The search checked the classification, title and item fields for **TD 1.1/4**, companion **TD 1.1/3**, **0982-C-22** and variants of the management and Secretary report titles. It also looked for Transportation titles containing *Inspector General*. Each year's archive yielded both Transportation rows and readable microfiche-list rows as separate controls. Four annual archives and the FY2007 PDF archive passed ZIP member integrity checks. [GPO data guidance, Shipping Lists and Shelf List modules](https://fdm.gpo.gov/Tools/Tutorial) · [Earlier serial and catalog analysis](https://github.com/AveLyra/911-conspiracy-investigation/blob/701a97777aef9be50892f6ff90f7f9be095d8e9c/investigation/broader-evidence/faa-dot-management-serial-and-inputs-2026-11-06/README.md)
+
+| CSV archive | Files | Parsed data rows | Transportation classification rows | Target matches |
+| --- | ---: | ---: | ---: | ---: |
+| FY2006 | 721 | 8,912 | 768 | 0 |
+| FY2007 | 741 | 8,643 | 726 | 0 |
+| FY2008 | 667 | 7,038 | 837 | 0 |
+| FY2009 | 982 | 10,113 | 612 | 0 |
+
+The FY2007 PDF archive provided **457** separately archived list files with extractable text, also with zero target matches. The test preserved each archive's coverage separately. It parsed CSV fields, including one FY2007 member beginning with a data row instead of a header. In PDF text it joined wrapped lines and line-end hyphenation. The output retains sample controls, nonstandard first rows and archive member locators. [FY2007 PDF archive listing](https://www.fdlp.gov/file-repository/839/pdf-format)
+
+## Coverage differences
+
+- GPO's 2007 notice lists the final identifiers as **0023-E**, **0270-M**, **0416-P** and **0032-S**. The FY2007 CSV has every numbered microfiche identifier from **0001-M** to **0270-M**. Its paper sequence lacks **0018-P** and **0072-P**, and has two files numbered **0218-P**. Its separates sequence has two numbered **0010-S**. These are observations of archived filenames against the published cutoffs. [Administrative Notes, physical p. 4, printed p. 3](https://www.govinfo.gov/content/pkg/GOVPUB-GP3-dfefb9e434a9932996c0f644b32aa114/pdf/GOVPUB-GP3-dfefb9e434a9932996c0f644b32aa114.pdf#page=4)
+- The PDF ZIP has **0072-P** with no target match in its text. It still lacks **0018-P** and has no microfiche PDF members. It retains both **0218-P** and a correction, as does the CSV archive. A number present in one archive and absent in another is a coverage difference. The reason for each absent entry remains open. [Exact coverage results](RESULTS.json)
+- The FY2007 CSV search also found zero rows for the known Inspector General companion title and class. The earlier investigation acquired the companion report through its own public route. That is a concrete check on the limits of interpreting a shipping-list miss. The GPO landing page describes mailing lists and separately notes omissions in its combined file and that changes may be outside the data. The four archive searches did not search electronic-only catalog publications, direct agency or committee distribution, or every later or differently classified shipment. [Companion OIG report](https://www.oig.dot.gov/sites/default/files/trans4_SAR1H_09_072307_508_compliant.pdf) · [GPO shipping-list guidance](https://www.fdlp.gov/collection-tools/shipping-lists)
+
+## Next records
+
+- **PD03–PD05.** Keep an issue-specific holdings or receipt record open for the March 31, 2007 Secretary report. If a depository record surfaces, compare the issue dates and title page with House **3550**, Senate **EC–3707**, and DOT's sender control record. The PDF/CSV comparison favors pursuing the agency transmittal and congressional enclosure alongside any separate library holding. [House Journal and custody study](https://github.com/AveLyra/911-conspiracy-investigation/blob/f67a86acd5fc6bd299f06b110860734b2517c899/investigation/broader-evidence/faa-house-journal-3550-2026-11-06/README.md)
+- **PD01–PD04.** The corrected May 2003 answer, delivery acknowledgment, signed FAA consideration or action/no-action decision, and recommendation response and implementation or closure remain separate TODOs. The December 12, 2006 investigation closure has its own evidentiary scope. The new distribution check leaves these outcomes undetermined. [Case-specific disposition and conflict ledger](https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/CONFLICTS.md)
+
+The [source pins](SOURCE-PINS.json) give direct downloads and hashes. With Python and PyMuPDF, run `python3 -B verify_shipping.py CSV_ARCHIVE_DIRECTORY FY2007_PDF_ZIP`. Use the four filenames `shipping-2006.zip` through `shipping-2009.zip`. The printed JSON reproduces the published result with PyMuPDF 1.27.2.2. Raw archives remain in research storage.
