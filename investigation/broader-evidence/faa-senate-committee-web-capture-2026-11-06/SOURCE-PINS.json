@@ -1,0 +1,115 @@
+{
+  "scope": "Delivered public replay response bodies. Hashes describe the retrieved bodies, including rate-limit and error responses.",
+  "sources": [
+    {
+      "file": "webharvest-home.html",
+      "requested_url": "https://webharvest.gov/",
+      "effective_url": "https://webharvest.gov/",
+      "final_http_status": 200,
+      "access_date": "2026-11-06",
+      "locator": "HTML line 301 Senate Committees link",
+      "bytes": 27353,
+      "sha256": "919b05d9a82afbb93885ae4a244e2512b210c79d7eb9f5390321744aa9efe8a5"
+    },
+    {
+      "file": "committee-list.html",
+      "requested_url": "https://webharvest.gov/collections/congress110th/senate_committees.html",
+      "effective_url": "https://webharvest.gov/collections/congress110th/senate_committees.html",
+      "final_http_status": 200,
+      "access_date": "2026-11-06",
+      "locator": "HTML lines 459\u2013463 committee name and archived seed",
+      "bytes": 26615,
+      "sha256": "203cc2a0728ee41bd0ddb3cf06726b5756f41ae33bb025d83e9e426adb0c726e"
+    },
+    {
+      "file": "committee-home.html",
+      "requested_url": "https://www.webharvest.gov/congress110th/20081204214953/http://hsgac.senate.gov/",
+      "effective_url": "https://webharvest.gov/congress110th/20081212013236/http://hsgac.senate.gov/public/",
+      "final_http_status": 200,
+      "access_date": "2026-11-06",
+      "locator": "HTML lines 9\u201315 replay metadata, committee navigation menus",
+      "bytes": 32185,
+      "sha256": "92ff4e20487b7febf895381a7204c26cc496996fc5dfa50d651c5c0ad9ff3d10"
+    },
+    {
+      "file": "documents.html",
+      "requested_url": "https://webharvest.gov/congress110th/20081212013236/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Documents.Page",
+      "effective_url": "https://webharvest.gov/congress110th/20081212014441/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Documents.Page",
+      "final_http_status": 200,
+      "access_date": "2026-11-06",
+      "locator": "HTML lines 34\u201337 and 333, capture stamp and Reports link",
+      "bytes": 18878,
+      "sha256": "f354335e851f2d1b9ac851adea3de3b1bb06c21c720b5e453f39835930ba3908"
+    },
+    {
+      "file": "reports-initial-429.html",
+      "requested_url": "https://webharvest.gov/congress110th/20081212014441/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Documents.Home&FileType_id=311a9b00-574e-452b-9ac5-21bdb80c35eb",
+      "effective_url": "https://webharvest.gov/congress110th/20081212013903/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Documents.Home&FileType_id=311a9b00-574e-452b-9ac5-21bdb80c35eb",
+      "final_http_status": 429,
+      "access_date": "2026-11-06",
+      "locator": "HTML title Rate limit reached",
+      "bytes": 470,
+      "sha256": "40a0457e763902ed12097cffc3536f1e9a2306a95a701ab2df18f7d47e2b9c39"
+    },
+    {
+      "file": "reports-replay.html",
+      "requested_url": "https://webharvest.gov/congress110th/20081212013903/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Documents.Home&FileType_id=311a9b00-574e-452b-9ac5-21bdb80c35eb",
+      "effective_url": "https://webharvest.gov/congress110th/20081212013903/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Documents.Home&FileType_id=311a9b00-574e-452b-9ac5-21bdb80c35eb",
+      "final_http_status": 200,
+      "access_date": "2026-11-06",
+      "locator": "HTML lines 34\u201338, 353 and table immediately below. Final status and Memento-Datetime retained locally.",
+      "bytes": 47526,
+      "sha256": "090519ef18b6e0db6486c2a025f5c00f80cf114bff4a8be21db6d1bc6c9e47d7"
+    },
+    {
+      "file": "show-all-replay.html",
+      "requested_url": "https://webharvest.gov/congress110th/20081212013903/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Documents.Home&FileType_id=2&ShowAll=True",
+      "effective_url": "https://webharvest.gov/congress110th/20081212020853/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Documents.Home&FileType_id=2&ShowAll=True",
+      "final_http_status": 500,
+      "access_date": "2026-11-06",
+      "locator": "HTML lines 9\u201315, 46, 72. Redirect, final status and Memento-Datetime retained locally.",
+      "bytes": 4154,
+      "sha256": "0b2e2aa5f510a6f871a78f906ce56c4185e838794430cf42a1ef8f7c4c00ce5e"
+    },
+    {
+      "file": "generic-documents-429.html",
+      "requested_url": "https://webharvest.gov/congress110th/20081212014441/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Documents.Home&FileType_id=2",
+      "effective_url": "https://webharvest.gov/congress110th/20081212030323/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Documents.Home&FileType_id=2",
+      "final_http_status": 429,
+      "access_date": "2026-11-06",
+      "locator": "HTML title Rate limit reached",
+      "bytes": 470,
+      "sha256": "40a0457e763902ed12097cffc3536f1e9a2306a95a701ab2df18f7d47e2b9c39"
+    },
+    {
+      "file": "accomplishments.html",
+      "requested_url": "https://webharvest.gov/congress110th/20081212013236/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Links.Accomp",
+      "effective_url": "https://webharvest.gov/congress110th/20081212014400/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Links.Accomp",
+      "final_http_status": 200,
+      "access_date": "2026-11-06",
+      "locator": "HTML lines 332\u2013338, Commission and legislation context",
+      "bytes": 25566,
+      "sha256": "9497aaa5aa84798f7aadbd0a41191d90e1201b46588585e7f757009d660d1ad7"
+    },
+    {
+      "file": "hearings.html",
+      "requested_url": "https://webharvest.gov/congress110th/20081212013236/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Hearings.Page",
+      "effective_url": "https://webharvest.gov/congress110th/20081212014720/http://hsgac.senate.gov/public/index.cfm?Fuseaction=Hearings.Page",
+      "final_http_status": 200,
+      "access_date": "2026-11-06",
+      "locator": "HTML lines 34\u201338 and hearing navigation",
+      "bytes": 19212,
+      "sha256": "810717bfea18e07986ed4cfa1b6cad2ad25752263f4eaa77a5b4ff6cded604dd"
+    },
+    {
+      "file": "cdx-response.html",
+      "requested_url": "https://webharvest.gov/congress110th/cdx?url=hsgac.senate.gov%2F%2A&output=json&limit=5",
+      "effective_url": "https://webharvest.gov/",
+      "final_http_status": 200,
+      "access_date": "2026-11-06",
+      "locator": "Body equals portal response byte-for-byte, with no capture-index data.",
+      "bytes": 27353,
+      "sha256": "919b05d9a82afbb93885ae4a244e2512b210c79d7eb9f5390321744aa9efe8a5"
+    }
+  ]
+}
