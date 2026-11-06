@@ -1,0 +1,23 @@
+# UMS leads and WTC debris records: evidence update
+
+November 6, 2026. This update records a bounded check of UMS-related records and a completed research follow-up on debris logistics. It does not identify an operation linking the two.
+
+## Access, samples and hijacker connections
+
+An FBI receipt lists a WTC visitor card, but its holder, building, date, issuer and use remain unresolved. NIST reports receiving Port Authority occupant badge lists in May and August 2003; these are roster leads, not evidence of a particular entry. A 2001 security-installer interview describes visitor passes and a system capable of associating cards with turnstiles and entry times. That does not establish that the FBI card belonged to the system, or that event records survived. Compare a card image and custody record with issuance, host authorization, access events and independent work orders. An ordinary visitor or contractor pass is an alternative. [NIST](https://www.nist.gov/news-events/news/2004/07/status-data-collection-efforts) · [Contemporaneous installer account](https://www.ecmweb.com/content/article/20889492/towering-security) · [FBI visitor-card review](../wtc-badge-record-trail-2026-11-06/README.md)
+
+FBI records describe a canine alert and samples submitted for examination; the final chemical findings and accession crosswalk remain unlocated. The later physical disposal of identified items is recorded, but the sample label is not a chemical result and the disposition record does not establish motive. Both concealment and ordinary authorized disposition are hypotheses requiring the actual records; loss or absence of a report alone does not establish concealment. [Sample disposition review](../van-sample-disposition-recheck-2026-11-06/README.md)
+
+FBI summaries report a Classic Movers notebook entry and Miami's belief that an unidentified hijacker used Classic. The underlying lead, customer identity, actual transaction and any attributed contact remain unverified. The FBI compiled address and entry-date lists for the hijackers and movers, but the examined form reports no comparison result. [FBI source recheck](../wtc-hijacker-source-recheck-2026-11-06/README.md) · [Classic source update](../research-update-2026-11-06/README.md#fbi-inquiries-and-potential-connections)
+
+## Debris records
+
+In 2006 testimony, a New York City Department of Design and Construction representative described KPMG's examination of vessel logs to certify marine transport of debris loads. The same account describes sampling of payment requisitions and a central audit-findings database. These identify real historical record types, but do not establish present custody, the fields in an individual record or a match to a particular steel item. [Congressional hearing](https://www.govinfo.gov/content/pkg/CHRG-109hhrg35501/html/CHRG-109hhrg35501.htm)
+
+The city's sanitation report describes WTC material reaching Fresh Kills and states that the final steel load was removed for recycling on August 21, 2002. The corresponding dispatch and receiving records are specific search targets; the report does not identify a steel specimen on the load. [DSNY annual report, PDF p. 17](https://www.nyc.gov/assets/dsny/downloads/pdf/studies-and-reports/2002-2003_Annual_Report.pdf#page=17)
+
+The independent research follow-up did not locate Plaintiffs' Joint Appendix volume 1 exhibit 7, a completed site load ticket or a matching receiving record. Those bounded negative results do not establish the records never existed. A site ticket, pier assignment, barge movement, receiving record and specimen require actual cross-references and compatible dates. The sources reviewed do not connect these debris movements to UMS or establish explosives placement.
+
+## Iterative theory testing
+
+Retain the proposed hypotheses, including a possible cover-up, as testable claims with explicit uncertainty. For each new record, distinguish observation from inference, compare an ordinary alternative and document what would make the claim less likely. A visitor roster cannot prove a dated entry; entry cannot prove a job; a job cannot establish explosives installation. A negative finding with well-defined coverage, an incompatible dated dispatch record or a verified non-explosive lab result could weaken particular links, while authenticated installation records or contemporaneous instructions could strengthen them. An unexplained missing record is a reason to pursue custody and disposition evidence, not proof of deliberate concealment. Negative agency conclusions also need their scope, supporting material and limitations examined.
