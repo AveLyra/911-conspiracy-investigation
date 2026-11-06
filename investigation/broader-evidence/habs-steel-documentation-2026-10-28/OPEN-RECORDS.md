@@ -1,0 +1,10 @@
+# Actual inputs still needed
+
+1. **LOC/NPS/document creators:** exact NY-6369-31, NY-6369-A-26, NY-6369-29 and NY-6369-A-21 photographic entities, original negative/exposure identifiers, dated contact sheets, caption/numbering/version history and photograph-key source. Compare images and labels without inferring identical negatives from similar prose.
+2. **LOC Prints and Photographs/NPS actual field-record holder:** catalogue-listed N1200 material, accession/custody and manifest; content is unknown. A catalogue lead is not already acquired field notes.
+3. **Port Authority/SHPO/LMDC/actual receiving repository:** original April 2005 Permanent WTC PATH Terminal agreement, distinct April 2004 programmatic-agreement records, August 2005 submission manifest/enclosures and receipt/accession. Test which exact set/version was delivered; no current custody claim is assumed.
+4. **Original site/museum/inventory custodians:** selection, marking/cutting, transport, Hangar 17 receipt/object records and later sample/conservation histories for the reported smoke-scarred and blistered-paint remnants. Test both a successful identification and exclusion of the proposed photographic association.
+5. **NIST and original field/transfer custodians:** actual W14A/B, C12a/b, Sample1 and related native intake/alias/building/region/transfer/attribution records. These captions do not recover those missing worksheets or turn a WTC6 component into WTC7.
+6. **Inventory/version holders:** actual supplied 2004 listing, 2006 and later editions and deliveries remain missing. Keep October2004/2006 reporting side by side; this route has not adjudicated their cause.
+
+A caption may be inaccurate or photograph a different region/object. Even an authenticated image match would still need cut/transfer/sample records and valid calibration for a scientific interpretation. Missing records do not establish destruction or concealment. No request, contact, fee, destructive examination or physical experiment is authorized or performed here.
