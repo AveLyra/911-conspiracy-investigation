@@ -1,0 +1,188 @@
+{
+  "study": "Atlantic City playback segmentation",
+  "test_date_utc": "2026-11-06",
+  "sources": [
+    {
+      "item": "AEA-2310-ADDD",
+      "id": 7598687,
+      "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/b-Voice-Recordings/5-AEA-2310-ACY-ATCT-ADDD-1425-1531-UTC.mp3",
+      "access_utc": "2026-11-06T08:04:49Z",
+      "bytes": 208620750,
+      "sha256": "d8d4bf5312e0f7eaa18e33a237b29a683aa794f88ce8bfcceb82c6f9efe9abe2",
+      "locator": "Finding aid lines 2360–2362",
+      "http_status": 200,
+      "content_type": "audio/mpeg",
+      "ffprobe_duration_s": "6519.331344",
+      "decoded_pcm_bytes": 1150009344,
+      "decoded_duration_s": 6519.327347,
+      "labeled_minutes": 66,
+      "label_includes": {
+        "1246": false,
+        "1248": false,
+        "1428": true,
+        "1430": true,
+        "1528": true
+      },
+      "utc_label": [
+        "1425",
+        "1531"
+      ],
+      "measurement": {
+        "pcm_bytes": 1150009344,
+        "full_seconds": 6519,
+        "partial": {
+          "frames": 14436,
+          "channel_peaks": [
+            486,
+            586
+          ]
+        },
+        "decoded_seconds": 6519.327347,
+        "quiet": {
+          "0": {
+            "seconds": 0,
+            "seconds_each_channel": [
+              0,
+              0
+            ],
+            "intervals_at_least_10_seconds": [],
+            "longest_seconds": 0
+          },
+          "32": {
+            "seconds": 0,
+            "seconds_each_channel": [
+              0,
+              0
+            ],
+            "intervals_at_least_10_seconds": [],
+            "longest_seconds": 0
+          },
+          "104": {
+            "seconds": 0,
+            "seconds_each_channel": [
+              0,
+              0
+            ],
+            "intervals_at_least_10_seconds": [],
+            "longest_seconds": 0
+          },
+          "328": {
+            "seconds": 13,
+            "seconds_each_channel": [
+              13,
+              13
+            ],
+            "intervals_at_least_10_seconds": [
+              [
+                3734,
+                3747
+              ]
+            ],
+            "longest_seconds": 13
+          }
+        },
+        "channel_peaks": [
+          13103,
+          29134
+        ],
+        "tested_grid_frames": 249568,
+        "eligible_loud_frames": 249060,
+        "exact_repeat_runs_1152_sample_units": []
+      }
+    },
+    {
+      "item": "AEA-2311-GC",
+      "id": 7598688,
+      "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/b-Voice-Recordings/5-AEA-2311-ACY-ATCT-GC-1425-1525-UTC.mp3",
+      "access_utc": "2026-11-06T08:04:49Z",
+      "bytes": 217022561,
+      "sha256": "c552309a33ec4fda1bf22e80f6104f30404d34c71c05fb3c8c79853dc01ac42b",
+      "locator": "Finding aid lines 2363–2365; cassette p. 1",
+      "http_status": 200,
+      "content_type": "audio/mpeg",
+      "ffprobe_duration_s": "6781.888063",
+      "decoded_pcm_bytes": 1196324352,
+      "decoded_duration_s": 6781.884082,
+      "labeled_minutes": 60,
+      "label_includes": {
+        "1246": false,
+        "1248": false,
+        "1428": true,
+        "1430": true,
+        "1528": false
+      },
+      "utc_label": [
+        "1425",
+        "1525"
+      ],
+      "measurement": {
+        "pcm_bytes": 1196324352,
+        "full_seconds": 6781,
+        "partial": {
+          "frames": 38988,
+          "channel_peaks": [
+            1533,
+            26308
+          ]
+        },
+        "decoded_seconds": 6781.884082,
+        "quiet": {
+          "0": {
+            "seconds": 0,
+            "seconds_each_channel": [
+              0,
+              0
+            ],
+            "intervals_at_least_10_seconds": [],
+            "longest_seconds": 0
+          },
+          "32": {
+            "seconds": 0,
+            "seconds_each_channel": [
+              0,
+              0
+            ],
+            "intervals_at_least_10_seconds": [],
+            "longest_seconds": 0
+          },
+          "104": {
+            "seconds": 0,
+            "seconds_each_channel": [
+              0,
+              0
+            ],
+            "intervals_at_least_10_seconds": [],
+            "longest_seconds": 0
+          },
+          "328": {
+            "seconds": 4,
+            "seconds_each_channel": [
+              4,
+              10
+            ],
+            "intervals_at_least_10_seconds": [],
+            "longest_seconds": 4
+          }
+        },
+        "channel_peaks": [
+          23385,
+          31659
+        ],
+        "tested_grid_frames": 259619,
+        "eligible_loud_frames": 259353,
+        "exact_repeat_runs_1152_sample_units": []
+      }
+    }
+  ],
+  "finding_aid": {
+    "url": "https://www.archives.gov/research/foia/faa-finding-aid-108-126",
+    "access_utc_date": "2026-11-06",
+    "scope": "Indexed lines 1262, 1365 and 2357–2366"
+  },
+  "run": "FFmpeg 7.1.1, NumPy 2.3.5. Full stereo signed 16-bit PCM decoding at 44100 Hz; both source SHA-256 hashes verified again before decoding.",
+  "controls": [
+    "Synthetic repeated 50-block sequence with one intervening ineligible block",
+    "Reversed synthetic sequence",
+    "Zero and loud PCM eligibility"
+  ]
+}
