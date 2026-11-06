@@ -1,0 +1,310 @@
+{
+  "text_anchors_checked": 19,
+  "source_entries": 16,
+  "tools": {
+    "PyMuPDF": "1.27.2.2",
+    "BeautifulSoup": "4.14.2",
+    "OCR": "Tesseract 5.5.2, default English, psm 6"
+  },
+  "locator_method": "One-based PDF physical page and get_text() line, OCR output line, or whole-document stripped_strings index.",
+  "sources": [
+    {
+      "id": "arac",
+      "url": "https://www.faa.gov/regulations_policies/rulemaking/committees/documents/media/TAEaa-ram-05132004.pdf",
+      "effective_url": "https://www.faa.gov/regulations_policies/rulemaking/committees/documents/media/TAEaa-ram-05132004.pdf",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 0,
+      "sha256": null,
+      "qualification": "Direct PDF acquisition failed at the 13,500,000-byte cap. Only the official index excerpt was read (rendered index lines 18766\u201318779, following printed page 113)."
+    },
+    {
+      "id": "ntsb587",
+      "url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=Maintenance+Records+11+-+Factual+Report+of+Group+Chairman-Master.PDF&ID=40168794",
+      "effective_url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=Maintenance+Records+11+-+Factual+Report+of+Group+Chairman-Master.PDF&ID=40168794",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 0,
+      "sha256": null,
+      "qualification": "Direct response gave an empty body. The separate legacy route supplied the actual PDF."
+    },
+    {
+      "id": "ntsb379",
+      "url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=Maintenance+Records+-+Factual+Report+Attachment+3+-+STC+Report-Master.PDF&ID=40475244",
+      "effective_url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=Maintenance+Records+-+Factual+Report+Attachment+3+-+STC+Report-Master.PDF&ID=40475244",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 222974,
+      "sha256": "1f7d4d66ae9a50581447dfcc12a70e8fdd13221e0708c3748a1d2e2f21cc29e8",
+      "qualification": "PDF page 1, fourth entry. Visual reading supplies the exact characters. OCR confuses some letters and digits.",
+      "page_count": 12,
+      "pdf_anchors": [],
+      "ocr": {
+        "page": 1,
+        "render_scale": 2.4,
+        "anchors": [
+          [
+            15,
+            "CANCELLED"
+          ],
+          [
+            16,
+            "INSTALL CLAIRCOM AIR/GROUND TELEPHONE SYSTEM"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "registry",
+      "url": "https://registry.faa.gov/aircraftinquiry/Search/NNumberResult?nNumberTxt=644AA",
+      "effective_url": "https://registry.faa.gov/aircraftinquiry/Search/NNumberResult?nNumberTxt=644AA",
+      "access_date": "2026-11-06",
+      "http_status": 403,
+      "media_type": "text/html",
+      "bytes": 417,
+      "sha256": "fa242aaf9d8237f3e3f45abbe12621bf532d02361a36338452cc15a37ed8067c",
+      "qualification": "Direct HTTP 403. No aircraft-specific record acquired."
+    },
+    {
+      "id": "faa_records",
+      "url": "https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/copies_aircraft_records/index.cfm?print=go",
+      "effective_url": "https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/copies_aircraft_records/index.cfm?print=go",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "text/html;charset=UTF-8",
+      "bytes": 106461,
+      "sha256": "af5915443e22caa116636b448b939e0ccc963becda22e720b89374bcd6139dd6",
+      "html_anchors": [
+        [
+          286,
+          "The Aircraft Registration Branch maintains registration records"
+        ]
+      ]
+    },
+    {
+      "id": "drs_sa9013",
+      "url": "https://drs.faa.gov/browse/excelExternalWindow/896A04195172813985256CC20058E9EF.0001",
+      "effective_url": "https://drs.faa.gov/browse/excelExternalWindow/896A04195172813985256CC20058E9EF.0001",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "text/html; charset=UTF-8",
+      "bytes": 22886,
+      "sha256": "6b8059a146a4eab2bb96117c82132cc9775f5299b4a48d2bad98c04f5548f478",
+      "qualification": "App shell only. Actual approval and attached materials not acquired.",
+      "html_anchors": [
+        [
+          1,
+          "Dynamic Regulatory System"
+        ]
+      ]
+    },
+    {
+      "id": "drs_st01248",
+      "url": "https://drs.faa.gov/browse/excelExternalWindow/B26D283521EC6B8B86256F43005BCA94.0001",
+      "effective_url": "https://drs.faa.gov/browse/excelExternalWindow/B26D283521EC6B8B86256F43005BCA94.0001",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "text/html; charset=UTF-8",
+      "bytes": 22886,
+      "sha256": "bdbf9f7c5094e983723d621618f4cdd4177cbb3c99cda806e45a516eef99314f",
+      "qualification": "App shell only. Actual approval and attached materials not acquired.",
+      "html_anchors": [
+        [
+          1,
+          "Dynamic Regulatory System"
+        ]
+      ]
+    },
+    {
+      "id": "drs_st284",
+      "url": "https://drs.faa.gov/browse/STC/doctypeDetails?searchKeyword=ST284NY",
+      "effective_url": "https://drs.faa.gov/browse/STC/doctypeDetails?searchKeyword=ST284NY",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "text/html; charset=UTF-8",
+      "bytes": 22886,
+      "sha256": "bf10d0fe492c8897b4aaa25c9499ae8c65b8826cdb80297ed4ed9febacb7cf82",
+      "qualification": "App shell only. Actual approval and attached materials not acquired.",
+      "html_anchors": [
+        [
+          1,
+          "Dynamic Regulatory System"
+        ]
+      ]
+    },
+    {
+      "id": "arac_docket",
+      "url": "https://downloads.regulations.gov/FAA-2006-24281-0064/attachment_1.pdf",
+      "effective_url": "https://downloads.regulations.gov/FAA-2006-24281-0064/attachment_1.pdf",
+      "access_date": "2026-11-06",
+      "http_status": 403,
+      "media_type": "text/html",
+      "bytes": 919,
+      "sha256": "eaf3bad5012fbf0896207f8b2673d8d657e3496a39a98eb36d72f9db8afcfba3",
+      "qualification": "Direct response was HTTP 403. Separately indexed attachment text, lines 4888\u20134889, contains the two design rows. It is not a second independent record."
+    },
+    {
+      "id": "ntsb587_legacy",
+      "url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=pdf&FileName=Maintenance+Records+11-Factual+Report+of+Group+Chairman-Master.pdf&ID=1161223",
+      "effective_url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=pdf&FileName=Maintenance+Records+11-Factual+Report+of+Group+Chairman-Master.pdf&ID=1161223",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 156226,
+      "sha256": "bcacc6a056fefc489e5d73e7df778994ac01dccde1a747e98ddf433d91388bf4",
+      "qualification": "PDF page 5 agency summary of another airframe's Form 337. Actual Form 337 not acquired.",
+      "page_count": 35,
+      "pdf_anchors": [
+        [
+          5,
+          7,
+          "November 16, 2001, for N14053"
+        ],
+        [
+          5,
+          9,
+          "October 15, 1996 by Airworks"
+        ],
+        [
+          5,
+          10,
+          "A13R230N"
+        ],
+        [
+          5,
+          11,
+          "ST00443NY"
+        ]
+      ]
+    },
+    {
+      "id": "ac",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-TD4-PURL-LPS106581/pdf/GOVPUB-TD4-PURL-LPS106581.pdf",
+      "effective_url": "https://www.govinfo.gov/content/pkg/GOVPUB-TD4-PURL-LPS106581/pdf/GOVPUB-TD4-PURL-LPS106581.pdf",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 1016183,
+      "sha256": "8fc3430b7be48dd6743e6cacc5e181f62d667b52757476fd400da5e27ffedf94",
+      "page_count": 11,
+      "pdf_anchors": [
+        [
+          1,
+          28,
+          "does not apply to air carrier"
+        ],
+        [
+          1,
+          30,
+          "14 CFR part 121"
+        ],
+        [
+          9,
+          18,
+          "FAA Form 337"
+        ]
+      ]
+    },
+    {
+      "id": "drs_guide",
+      "url": "https://www.faa.gov/aircraft/air_cert/design_approvals/stc",
+      "effective_url": "https://www.faa.gov/aircraft/air_cert/design_approvals/stc",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "text/html; charset=UTF-8",
+      "bytes": 103918,
+      "sha256": "3cd568a0dcf5d20cd22710d08a83b6eaefa0c27bc0ecc6722084cd12aa51f741",
+      "html_anchors": [
+        [
+          287,
+          "approval to modify an aeronautical product"
+        ]
+      ]
+    },
+    {
+      "id": "aa77study",
+      "url": "https://www.ntsb.gov/about/Documents/Flight_Path_Study_AA77.pdf",
+      "effective_url": "https://www.ntsb.gov/about/Documents/Flight_Path_Study_AA77.pdf",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 7890793,
+      "sha256": "eeae54e2d2c2d3253b9ea2d5704c42734f83761ac1ce7698b63aa8567c914884",
+      "qualification": "PDF page 1, subject-aircraft block only. No flight path or recorder test performed.",
+      "page_count": 7,
+      "pdf_anchors": [],
+      "ocr": {
+        "page": 1,
+        "render_scale": 2.0,
+        "anchors": [
+          [
+            11,
+            "N644AA"
+          ],
+          [
+            12,
+            "DCA01MA064"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "manual_reproduction",
+      "url": "https://www.consensus911.org/wp-content/uploads/2019/09/Rowland_Morgan_2010_Voices.pdf",
+      "effective_url": "https://www.consensus911.org/wp-content/uploads/2019/09/Rowland_Morgan_2010_Voices.pdf",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 8078746,
+      "sha256": "030d1921916fc85ac25a5fd3ca3503198f356ec2aa3bcef21da76c3666f39e16",
+      "qualification": "PDF page 35 reproduced image, not a native airline manual. Visually checked title, REV 62, Jan. 28/2007 header, 01/28/2001 footer, effectivity label and the engineering order values. OCR of the date and F0878 is unreliable.",
+      "page_count": 321,
+      "pdf_anchors": [
+        [
+          35,
+          23,
+          "CAPTION: American"
+        ]
+      ],
+      "ocr": {
+        "page": 35,
+        "render_scale": 2.0,
+        "anchors": [
+          [
+            7,
+            "F1463 and F1532"
+          ],
+          [
+            39,
+            "23-19-00-0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "docket77",
+      "url": "https://data.ntsb.gov/Docket/?NTSBNumber=DCA01MA064",
+      "effective_url": "https://data.ntsb.gov/Docket/?NTSBNumber=DCA01MA064",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "text/html; charset=utf-8",
+      "bytes": 20945,
+      "sha256": "12b78d39712ef581c6225cd289957c7e372e06ddea45e107f81df753cff966f1",
+      "qualification": "HTML landing page only. It supplied no N644AA alteration file in the saved response."
+    },
+    {
+      "id": "arac_full",
+      "url": "https://www.faa.gov/regulations_policies/rulemaking/committees/documents/media/TAEaa-ram-05132004.pdf",
+      "effective_url": "https://www.faa.gov/regulations_policies/rulemaking/committees/documents/media/TAEaa-ram-05132004.pdf",
+      "access_date": "2026-11-06",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 0,
+      "sha256": null,
+      "qualification": "The separately saved receipt reports zero bytes after the 35,000,000-byte cap. No FAA report PDF was acquired."
+    }
+  ]
+}
