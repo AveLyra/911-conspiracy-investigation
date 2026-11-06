@@ -1,0 +1,93 @@
+{
+  "sources": [
+    {
+      "source_file": "pc052416pp.pdf",
+      "url": "https://files.portsmouthnh.gov/agendas/2016/police/pc052416pp.pdf",
+      "access_date_utc": "2026-11-06",
+      "bytes": 10355241,
+      "sha256": "d2ce795460756b13ae1b1a884537344ad43bb8ca53d005b0583822bb78ebe09b",
+      "reading_scope": "40-page Police Commission packet. PDF p. 14 lines 11\u201315 with pypdf extraction. Visually checked PDF p. 15, fourth Highlights bullet, extracted lines 21\u201324. The police report is dated April 26, 2016 and covers July\u2013December 2015."
+    },
+    {
+      "source_file": "city-memorial.html",
+      "url": "https://www.portsmouthnh.gov/city/911-memorial",
+      "access_date_utc": "2026-11-06",
+      "bytes": 39182,
+      "sha256": "791842c4ac8cf7aba73a02af1649d845cb70c99cd0df47dd54fdd36c7f5a1036",
+      "reading_scope": "HTML line 553, memorial body, pickup and placement paragraphs."
+    },
+    {
+      "source_file": "nhpr-ap-preview.html",
+      "url": "https://www.nhpr.org/post/steel-beam-world-trade-center-be-part-portsmouth-memorial",
+      "access_date_utc": "2026-11-06",
+      "bytes": 217608,
+      "sha256": "855a6edb37aea5e65c896760248cf3d733644d970ffd9f471ebb00f1d422100c",
+      "reading_scope": "HTML line 2849, AP preview of expected transport."
+    },
+    {
+      "source_file": "nhpr-installation.html",
+      "url": "https://www.nhpr.org/nh-news/2015-09-11/ground-zero-artifact-installed-at-portsmouths-future-memorial-site",
+      "access_date_utc": "2026-11-06",
+      "bytes": 221722,
+      "sha256": "2069d0a6ac010030497f84246c971b16bc0ae38c05f93c08adaa1a2f22af2d3c",
+      "reading_scope": "HTML line 2939, opening, installation and police chief attribution paragraphs. Text only."
+    },
+    {
+      "source_file": "police-landscaping-2020.html",
+      "url": "https://www.portsmouthnh.gov/police/press-releases/citizens-collaborate-police-landscape-911-memorial-front-pd",
+      "access_date_utc": "2026-11-06",
+      "bytes": 42253,
+      "sha256": "7171e305ca048db5e5aab9c1c168d252be11fbeba927d9e5b64c5df3bc730ff3",
+      "reading_scope": "HTML line 591, body paragraph describing the beam and landscaping."
+    },
+    {
+      "source_file": "calendar-2015.html",
+      "url": "https://files.cityofportsmouth.com/calendar/2015/index.htm",
+      "access_date_utc": "2026-11-06",
+      "bytes": 377335,
+      "sha256": "69440eebd3bb9ea1651b884b817ac9ef2968f1d433a8fc633d9f918b45f99bf6",
+      "reading_scope": "HTML lines 3775\u20133783, September 28 Police Commission row and packet/minutes links."
+    },
+    {
+      "source_file": "pc092815pp.pdf",
+      "url": "https://files.cityofportsmouth.com/agendas/2015/police/pc092815pp.pdf",
+      "access_date_utc": "2026-11-06",
+      "bytes": 4145129,
+      "sha256": "b55017e632065e5855eb111c5c8cb3afd2fe035f7b61759831abdb2367c0d2ed",
+      "reading_scope": "42 pages, text-layer term search only."
+    },
+    {
+      "source_file": "pc092815m.pdf",
+      "url": "https://files.portsmouthnh.gov/agendas/2015/police/pc092815m.pdf",
+      "access_date_utc": "2026-11-06",
+      "bytes": 1026108,
+      "sha256": "fa3afdf2eda530f00b067bafe828643811bf0efa3d920ecf2dcad24a9f7514a1",
+      "reading_scope": "10 pages, text-layer term search only."
+    },
+    {
+      "source_file": "city-police-news-index.html",
+      "url": "https://www.portsmouthnh.gov/news?field_department_target_id=20&page=5",
+      "access_date_utc": "2026-11-06",
+      "bytes": 56473,
+      "sha256": "0a895b95cb25c0d60bba3b7a1532f9daf88ed12eda160f572088927ce30eb8ef",
+      "reading_scope": "Discovery only. The direct August 2020 police release is the source used for the attribution."
+    }
+  ],
+  "text_layer_check": {
+    "implementation": "pypdf PageObject.extract_text, splitlines, case-insensitive regex applied to each line",
+    "regex": "world\\s+trade|motorcade|steel\\s+(beam|i.?beam|artifact)|9/11\\s+memorial|novel\\s+iron|hangar\\s*17|ground\\s+zero",
+    "pages_checked": {
+      "pc092815pp.pdf": 42,
+      "pc092815m.pdf": 10
+    },
+    "nonempty_extracted_pages": 52,
+    "hits": 0,
+    "limitation": "A negative text-layer search does not establish the absence of a record."
+  },
+  "render": {
+    "source_file": "pc052416pp.pdf",
+    "physical_page": 15,
+    "method": "pypdfium2, scale 1.5",
+    "sha256": "d312d7bb5fce4c8ac566000bba2f2ce16924824989738695378b11ace932332e"
+  }
+}
