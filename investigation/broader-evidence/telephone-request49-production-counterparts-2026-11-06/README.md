@@ -1,0 +1,31 @@
+# Flight 77 interview production headers and the Request 49 trail
+
+November 6, 2026 · TEL02–TEL04 / AUD016-A1 / TC05–TC06
+
+A full **69-page** public mirror of the Team 1A Box 33 FBI working file confirms five production headers previously read in a web index or small preview. It also gives the physical page locations of two different March 2004 footers. The new PDF supports comparing the interview copies across Commission folders. The actual Request 49 pages and native batch manifest are still outstanding. [National Archives Box 33 file unit](https://catalog.archives.gov/id/2606244) · [Public ZIP mirror](https://archive.org/details/911datasets) · [Prior production-key review](https://github.com/AveLyra/911-conspiracy-investigation/blob/9ba96461fbf344c4d969db6ec209a90782d87a9a/investigation/broader-evidence/telephone-box13-production-keys-2026-11-06/README.md)
+
+## Crosswalk to the printed Request 35-13 stamps
+
+| Team 1A Box 33, item 843 | Separate Team 7 Box 13 copy | Observed basis and limit |
+|---|---|---|
+| **PDF pp. 1–2**, September 11 Olson interview. **M-INT-00003811**, **265A-NY-280350-302-30777**. | **737–738**, physical pp. **49–50**. | Matching interview subject, date, two-page sequence and first-call duration estimate. The interview form gives **265D-NY-280350-302** in its own case field. |
+| **PDF p. 3**, September 11 Voss interview. **M-INT-00005481**, **265A-NY-280350-302-32633**. | **739**, physical p. **51**. Packet 10 gives Request 49 page **4259**. | Matching interview subject and date. Both copies record her belief that both calls were collect. |
+| **PDF p. 5**, September 11 security officer interview. **M-INT-00029725**, **265A-NY-280350-302-60655**. | **735**, physical p. **47**. The Packet 10 subject cell is redacted. | Matching interview subject in the two interview copies and matching account of a request to send an officer, with an approximate time and some information relayed from others. That estimate concerns the request for an officer. |
+| **PDF p. 59**, September 11 Keyton interview. **M-INT-00029726**, **265A-NY-280350-302-60656**. | **736**, physical p. **48**. Packet 10 gives Request 49 page **4360**. | Matching interview subject and date. Both copies describe automated attempts, then a live-operator collect call and a later call described as direct. |
+| **PDF p. 6**, September 14 Olson insert. **M-INT-00063821**, **265A-NY-280350-IN-2669**. | No matching stamp in **735–739**. | The physical header and the body identify a separate dated insert. Its body gives **265D-NY-280350-IN**. Keep it separate from the September 11 interview and the staff report's later citations unless a source joins them. |
+
+Header and body locators are in the [source ledger](SOURCE-PINS.json). The join uses matching document fields and selected passages across copies. It does not establish native version identity, the source of every redaction, or the route of a phone call. The Keyton and Voss accounts remain separate. [Team 7 interview folder, physical pp. 47–51](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=47) · [Packet 10 index comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/a79d8ee3f043108e149b071fc4e38db0ca1533a3/investigation/broader-evidence/telephone-doj-packets-nine-to-twelve-2026-11-06/README.md)
+
+## Reader and printed page fields preserved
+
+- The earlier public reader selection shows **March 11, 2004 5:17 pm Page 1** at indexed line **2993**, shortly before the Keyton header. In the acquired PDF, the rendered footer of physical **p. 58** shows **March 11, 2004 5:17 pm**, while the rendered footer on the Keyton page, physical **p. 59**, shows **March 19, 2004 12:22 pm**. The searchable text in the acquired PDF places the strings at p. 58 line **51** and p. 59 line **68**. This places the printed fields in the acquired copy and identifies a page-boundary issue when reading continuous text. The footer's generation event and timezone remain unverified. [Public reader](https://www.scribd.com/document/15072623/T1A-B33-Four-Flights-Phone-Calls-and-Other-Data-Fdr-Entire-Contents-FBI-302s-843)
+- The Keyton page's rendered **FBIDESCR** spells **KEYTON**. The embedded text and the earlier reader extraction give **KEYJON**. The same scan visibly prints **NCTA_004** with a description of an August batch of unredacted 302s. The reproduced page also bears privacy and law-enforcement annotations and redactions. These are separate fields in the copy. The actual August delivery date, batch contents and redaction history remain open. The **09/11/2001** date field and **09/14/2001** transcription date are separate from both March 2004 footer fields.
+
+## Request 49 search and open tests
+
+A bounded check of the newly acquired Box 33 PDF and four Commission counsel correspondence PDFs found no exact embedded-text hit for **4360**, **4259**, or an explicit Request 49 label. One unrelated passage in a counsel file uses **49** as a count of pages. The 321 file records responses to **13** and **15**, including a May 5, 2004 description of Bates-stamped versions to be supplied. That is a distinct correspondence example and supplies no transmittal for this request. The search covered extracted text, so image-only or differently labeled records remain possible. The archive directory's filenames alone do not index the text of enclosures.
+
+- [ ] **TEL02.** Obtain Request 49 pages **4360** and **4259**, the request and its transmittal, the **NCTA_004** batch manifest and any print/export record that dates the footer fields. Compare production stamps, subject, date and substantive text across each copy.
+- [ ] **TEL03–TEL04.** Obtain operator, carrier and DOJ switch/transfer records. Compare event and clock definitions before testing the collect/direct accounts, first-call duration estimate or a join to the zero-duration row. The security request timing, subsequent visit and any carrier call are different events.
+
+The new 843 and 321 PDFs were acquired by bounded ZIP ranges with archive validator, path, size and CRC checks. The reading used selected page images, body passage checks and a scoped exact-text search. The notes and source ledger are the public derivative. [Exact sources, hashes and scope](SOURCE-PINS.json)
