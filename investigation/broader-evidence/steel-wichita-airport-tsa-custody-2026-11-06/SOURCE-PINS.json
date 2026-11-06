@@ -1,0 +1,115 @@
+{
+  "study": "steel-wichita-airport-tsa-custody-2026-11-06",
+  "access_date_utc": "2026-11-06",
+  "locators": "One-based physical PDF page and PyMuPDF get_text().splitlines() line. HTML stripped strings are one-based Beautiful Soup html.parser strings. Scope is selected passages.",
+  "sources": [
+    {
+      "filename": "board-2009-12-07.pdf",
+      "url": "https://www.flywichita.com/wp-content/minutes/2009/Minutes1272009.pdf",
+      "relationship": "Official board minutes, Dec 7, 2009",
+      "scope": "Physical p. 7 lines 37–51 and p. 8 lines 7–27. Selected passages visually inspected.",
+      "bytes": 48942,
+      "sha256": "127699c1fb453db525fc274f18f87058a78f1bad4524fc387f32e3e0f7881c68",
+      "pdf_pages": 11
+    },
+    {
+      "filename": "board-2011-06-06.pdf",
+      "url": "https://www.flywichita.com/wp-content/uploads-bu/Minutes-6-06-11-final.pdf",
+      "relationship": "Official board minutes, Jun 6, 2011",
+      "scope": "Physical p. 4 lines 20–51 and p. 5 lines 7–23. Display design, dimensions, smaller pieces, donation letter and board motion.",
+      "bytes": 121144,
+      "sha256": "d054506492e11bf9d47d6ce1a8481ec40fbd1d7c5b81e7e7bfb3a6e4d799fdf8",
+      "pdf_pages": 8
+    },
+    {
+      "filename": "airport-2011-commemorative.pdf",
+      "url": "https://www.flywichita.com/wp-content/uploads/2016/09/Remembering-9-11.pdf",
+      "relationship": "Wichita Department of Airports special publication",
+      "scope": "Physical p. 5 lines 3–5 and 15–33, visually inspected. Account of September 7 unveiling and photo.",
+      "bytes": 1390507,
+      "sha256": "1a595a6ed7b3c82149cc4f4aa4c4916b654821e9099b68b12d52f221aa697962",
+      "pdf_pages": 5
+    },
+    {
+      "filename": "board-2014-12-01.pdf",
+      "url": "https://www.flywichita.com/wp-content/uploads-bu/Minutes-12-01-14-Final.pdf",
+      "relationship": "Official board minutes, Dec 1, 2014",
+      "scope": "Physical p. 1 lines 47–52, terminal and unique-airport claim.",
+      "bytes": 284107,
+      "sha256": "f00f43fe22cdccda57df1caa5edf03ea8898443c4988cc93d7f5e379943ce23f",
+      "pdf_pages": 9
+    },
+    {
+      "filename": "airport-2020.html",
+      "url": "https://www.flywichita.com/we-will-never-forget/",
+      "relationship": "Wichita Airport Authority retrospective, Sep 11, 2020",
+      "scope": "Stripped string 84, 2011 unveiling and mezzanine display.",
+      "bytes": 84614,
+      "sha256": "b09086b59475fabe20df2885025058f56c14afd9704c1259b8250b051c61f9c3"
+    },
+    {
+      "filename": "fabricator-project.html",
+      "url": "https://www.bbmetalarts.com/911wtc",
+      "relationship": "Fabricator project page, undated",
+      "scope": "Stripped strings 37–41. Item G-1043, transfer, weight per foot, early plans and pictured replica.",
+      "bytes": 147447,
+      "sha256": "fa58d8c8cbf820bd546aeed471e73af3f9f3c137135012f4d88b08ec65091b35"
+    },
+    {
+      "filename": "fabricator-achievements.html",
+      "url": "https://www.bbmetalarts.com/achievements",
+      "relationship": "Fabricator achievements page, undated",
+      "scope": "Stripped string 83, donation count.",
+      "bytes": 300762,
+      "sha256": "0f28e9f4896619dfef79f4e7af5aa7d2543896b33d35feca8015433b5b89fb05"
+    },
+    {
+      "filename": "2011-studio-visit.html",
+      "url": "https://www.gbtribune.com/news/local-news/news2/wichita-tsa-visits-hoisington-to-see-progress-on-911-memorials/",
+      "relationship": "Great Bend Tribune studio visit report",
+      "scope": "Stripped strings 140–153. Photocaption, proposed shipment, weight, anticipated Great Bend display and reported 2009 receipt.",
+      "bytes": 127968,
+      "sha256": "654b4968026d82a2b8ea9c48e063824726055e75b459336732fed6d0fb675c3d"
+    },
+    {
+      "filename": "artist-2021-interview.html",
+      "url": "https://salinapost.com/posts/53476656-7b77-43be-9b95-7edc53afa102",
+      "relationship": "Great Bend Post interview article as carried by Salina Post, Sep 11, 2021",
+      "scope": "Stripped strings 8–15, length and seven smaller recipients.",
+      "bytes": 22432,
+      "sha256": "47e982e042b627bddeef0f3fd7877acdc23d5a8a381d69f7bd86fa383553f19c"
+    }
+  ],
+  "reused_ledger_tests": {
+    "predicate": "row[\"identifier_verbatim\"] == \"G-1043\"",
+    "references": [
+      {
+        "url": "https://github.com/AveLyra/911-conspiracy-investigation/blob/9e9940b96d779c882699c9567be5276a51946c07/investigation/broader-evidence/steel-december-july-list-join-2026-11-04/DECEMBER-IDENTIFIER-ROWS.json",
+        "sha256": "662deb4043786fe6def1eb4d34e5bf390b903b599d6f7d4e5dff6c807af8a95d",
+        "bytes": 105377,
+        "rows": 354,
+        "exact_matches": 0
+      },
+      {
+        "url": "https://github.com/AveLyra/911-conspiracy-investigation/blob/35bd9f3190f2126d0aa7ab7307f4b53e3c928240/investigation/broader-evidence/steel-exhibit-a-row-census-2026-10-29/IDENTIFIER-ROWS.json",
+        "sha256": "6d60fd5e30f77662d4fb77a47bdc5c48e49b27b7818ba317e1a64b0580067475",
+        "bytes": 106753,
+        "rows": 531,
+        "exact_matches": 0
+      }
+    ],
+    "limit": "No alias matching or fresh transcription."
+  },
+  "access_todos": [
+    {
+      "url": "https://www.wichita.gov/Archive.aspx?ADID=2111",
+      "reading": "Public web index showed June 16, 2011 date and the Background paragraph. Direct curl returned HTTP 403, so the underlying body is unacquired.",
+      "sha256": null
+    },
+    {
+      "url": "https://www.wichita.gov/ArchiveCenter/ViewFile/Item/2113",
+      "reading": "Direct curl returned HTTP 403. Indexed September announcement was not used for the findings.",
+      "sha256": null
+    }
+  ]
+}
