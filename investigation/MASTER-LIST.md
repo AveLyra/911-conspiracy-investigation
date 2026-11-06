@@ -23,3 +23,9 @@ The [Zim relocation and FBI list review](urban-moving-systems/zim-move-and-addre
 ## Cheney, Halliburton, Saudi and Israeli-intelligence records — November 5, 2026
 
 The [dated relationship and decision-record trace](broader-evidence/cheney-saudi-israel-record-trace-2026-11-05/README.md) documents Cheney's Halliburton role and remaining interests, a Halliburton Saudi subsidiary, post-attack Cheney–Saudi ambassador meetings, and contested 2003 vice-presidential-office coordination concerning the KBR Iraq oil action. It separates GAO's objections to the 2002 planning order from its findings on the later sole-source award, and distinguishes contract obligations from profits. It also records contrary accounts concerning Saudi flights, CIA–FBI information-sharing failures and limits on claims about Israeli intelligence. These connections do not establish a shared pre-attack purpose or an operational link to UMS or the hijackers. No existing M ID or count is changed.
+
+## November 6: follow-up research and source records
+
+The [UMS and related-records source update](urban-moving-systems/research-update-2026-11-06/README.md) summarizes the headquarters inquiry, notebook translations, Exxon and visitor-card leads, company insurance and regulator data, Saudi/CIA records, physical evidence and Iraq policy. It separates corroborated observations from unverified connections and includes reproducible FMCSA date-field samples. The reviewed records do not establish that UMS planted explosives or coordinated with the hijackers.
+
+The [Fresh Kills EPA source crosswalk](broader-evidence/steel-fresh-kills-epa-rmdr-source-chain-2026-11-05/README.md) compares station labels, dates and concentrations and traces separate historical database and export versions. The possible joins are not independent samples or proof of a particular steel load or specimen.
