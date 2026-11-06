@@ -29,3 +29,7 @@ The [dated relationship and decision-record trace](broader-evidence/cheney-saudi
 The [UMS and related-records source update](urban-moving-systems/research-update-2026-11-06/README.md) summarizes the headquarters inquiry, notebook translations, Exxon and visitor-card leads, company insurance and regulator data, Saudi/CIA records, physical evidence and Iraq policy. It separates corroborated observations from unverified connections and includes reproducible FMCSA date-field samples. The reviewed records do not establish that UMS planted explosives or coordinated with the hijackers.
 
 The [Fresh Kills EPA source crosswalk](broader-evidence/steel-fresh-kills-epa-rmdr-source-chain-2026-11-05/README.md) compares station labels, dates and concentrations and traces separate historical database and export versions. The possible joins are not independent samples or proof of a particular steel load or specimen.
+
+## November 6: public research catalogue
+
+The [research catalogue and recent publication index](recent-research-2026-11-06/README.md) links the dated 118-report roundup, nine later public main-line source reports and the published UMS/EPA review. Report updates overlap and are not independent evidence; the index has a stated cutoff.
