@@ -1,0 +1,142 @@
+{
+  "sources": [
+    {
+      "key": "doc12",
+      "url": "https://www.archives.gov/files/declassification/iscap/pdf/2012-042-doc12.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "access_date_utc": "2026-11-06",
+      "bytes": 2501648,
+      "sha256": "984df2cdb54768da0b3e88b4eb85e92475a72b5e98a8eb33a77eeac456a55962",
+      "reading_scope": "Physical p. 5 visually checked. Six-page token comparison with doc30.",
+      "pdf_pages": 6
+    },
+    {
+      "key": "doc29",
+      "url": "https://www.archives.gov/files/declassification/iscap/pdf/2012-042-doc29.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "access_date_utc": "2026-11-06",
+      "bytes": 4345251,
+      "sha256": "7aaa3a25f5a800e70cb6851a3b70172480c8b14551308c64aa39e1838343a445",
+      "reading_scope": "Physical p. 8 visually checked. PDFium text lines 3\u201322 for timeline, briefing note and hearing roles.",
+      "pdf_pages": 9
+    },
+    {
+      "key": "doc30",
+      "url": "https://www.archives.gov/files/declassification/iscap/pdf/2012-042-doc30.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "access_date_utc": "2026-11-06",
+      "bytes": 2362222,
+      "sha256": "c3636653a0711481536659eca256c3128311c8c702011f4f547c49b0523a15f8",
+      "reading_scope": "Physical p. 5 visually checked against doc12. Six-page token comparison.",
+      "pdf_pages": 6
+    },
+    {
+      "key": "doc31",
+      "url": "https://www.archives.gov/files/declassification/iscap/pdf/2012-042-doc31.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "access_date_utc": "2026-11-06",
+      "bytes": 8304105,
+      "sha256": "861ae47ec57f6490ceb22856c85c1bfdac20f31fd29ef943d205fe85c12a7b97",
+      "reading_scope": "Thirty pages screened as thumbnails. Physical pp. 15\u201317 and 28\u201329 opened full size. Findings use pp. 16\u201317.",
+      "pdf_pages": 30
+    },
+    {
+      "key": "catalog-table",
+      "url": "https://www.archives.gov/research/9-11/commission-memoranda.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "access_date_utc": "2026-11-06",
+      "bytes": 442464,
+      "sha256": "cc7e344d5ca828737ad6094a2d9b33c29297b9a8669b42e71fc73df8f84e6776",
+      "reading_scope": "Saved HTML lines 8426\u20138432, row 2610387. Public index line 968."
+    },
+    {
+      "key": "catalog-item",
+      "url": "https://catalog.archives.gov/id/2610387",
+      "http_status": 200,
+      "content_type": "text/html",
+      "access_date_utc": "2026-11-06",
+      "bytes": 5454,
+      "sha256": "65e27e92402bf9312141b6aa3e6379d58e6f5e2d66d91989fe1db4231a3557d5",
+      "reading_scope": "HTML application shell. No item attachment acquired."
+    },
+    {
+      "key": "scoping-note",
+      "url": "https://www.dafhistory.af.mil/Portals/16/documents/Airmen-at-War/Jones-First109Minutes.pdf?ver=2016-08-22-131414-710",
+      "http_status": 403,
+      "content_type": "text/html",
+      "access_date_utc": "2026-11-06",
+      "bytes": 474,
+      "sha256": "7ca4b55d3bbf4b1f10c792ab30caa81f3e018cc56bc5fe6c50e2382b3b97a716",
+      "reading_scope": "Direct 403 HTML. History note 22 read in the official indexed PDF text at lines 928\u2013931."
+    },
+    {
+      "key": "air-force-history",
+      "url": "https://media.defense.gov/2012/Sep/05/2001329941/-1/-1/0/First_109_Minutes%282018%29.pdf",
+      "http_status": 403,
+      "content_type": "text/html",
+      "access_date_utc": "2026-11-06",
+      "bytes": 489,
+      "sha256": "570a6b933163c7bb02f09f079f6135d7dcd8dfd7bbb589d393363357e1a4eef8",
+      "reading_scope": "Alternate Defense Media copy. Direct 403 HTML. Indexed text likewise displays note 22."
+    }
+  ],
+  "checks": {
+    "pdfium_version": "5.14.0",
+    "method": "Extract each page with PDFium get_text_range(), split on whitespace and compare with difflib.SequenceMatcher(autojunk=False).ratio(). No textual cleanup or page realignment. Scores describe the two OCR layers only.",
+    "typed_notes_page_alignment": [
+      {
+        "page": 1,
+        "doc12_tokens": 531,
+        "doc30_tokens": 545,
+        "ratio": 0.715613
+      },
+      {
+        "page": 2,
+        "doc12_tokens": 395,
+        "doc30_tokens": 396,
+        "ratio": 0.938053
+      },
+      {
+        "page": 3,
+        "doc12_tokens": 501,
+        "doc30_tokens": 498,
+        "ratio": 0.902903
+      },
+      {
+        "page": 4,
+        "doc12_tokens": 448,
+        "doc30_tokens": 471,
+        "ratio": 0.911861
+      },
+      {
+        "page": 5,
+        "doc12_tokens": 397,
+        "doc30_tokens": 408,
+        "ratio": 0.941615
+      },
+      {
+        "page": 6,
+        "doc12_tokens": 42,
+        "doc30_tokens": 42,
+        "ratio": 0.880952
+      }
+    ],
+    "prior_hash_matches": [
+      "doc12",
+      "doc29"
+    ],
+    "local_render_sha256": {
+      "doc12-page5.png": "1c65402627c968e3919106a151db2c81c7cbc276b6224ce3af7e2cb2c20dae89",
+      "doc29-page8.png": "cd66ce7b26ca1b3fcf1596edb23f4fdc9ba8fbf33bdc8752691a9b514e7efd4d",
+      "doc30-page5.png": "0601843edf23f120e14fa831e26a013e81dc3fe47695588b1ae45831558fc725",
+      "doc31-page16.png": "c1a76a61358daf0a1b4a264eb8481dc1178afff9960d409674691b89bb2b41a2",
+      "doc31-page17.png": "455e3320f87b631faeaeb552084486adb12d8a6f7913a20ed2580b859da6ca7b"
+    }
+  },
+  "predecessor_commit": "19db38f818ec03535a0778ba6d8311f7ace7c648"
+}
