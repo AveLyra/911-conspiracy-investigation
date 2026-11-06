@@ -1,0 +1,213 @@
+{
+  "sources": {
+    "FEMA chapter 4": {
+      "url": "https://www.fema.gov/pdf/library/fema403_ch4.pdf",
+      "acquired_date": "2026-11-06",
+      "reviewed_date": "2026-11-06",
+      "sha256": "4e751ad661d506a5e66fa8c98449129d87ede97d4292286b1d892397f01ac4b2",
+      "bytes": 3547133,
+      "locator": "Physical p. 15 lines 12–15, PyMuPDF get_text().splitlines(); Figure 4-22 physical pp. 19–21, inspected visually."
+    },
+    "FEMA Appendix D": {
+      "url": "https://www.fema.gov/pdf/library/fema403_apd.pdf",
+      "acquired_date": "2026-11-06",
+      "reviewed_date": "2026-11-06",
+      "sha256": "e054a70f9410b1fe0b141f0ec2401244183f67da4d0a703df5ffb18483d6f6fc",
+      "bytes": 2333446,
+      "locator": "Physical p. 9, Figure D-12, line 3 and bottom image xref 42."
+    },
+    "NIST June 2004": {
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-68c9d9b444b822d972f26f0b7974a8d2/pdf/GOVPUB-C13-68c9d9b444b822d972f26f0b7974a8d2.pdf",
+      "acquired_date": "2026-11-05",
+      "reviewed_date": "2026-11-06",
+      "sha256": "f0ff897c35495ddc04c09b84e708fd504d5df9dd48c9c2b3cccba04e194a12a7",
+      "bytes": 12834029,
+      "locator": "Physical p. 151 lines 28–31, p. 165 Table 1-10, p. 178 Figure 1-12 line 4 and rendered views."
+    },
+    "NIST 1-3B draft": {
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=909045",
+      "acquired_date": "2026-11-05",
+      "reviewed_date": "2026-11-06",
+      "sha256": "015cd27d07cca5b04cdbb083e42a818032bdf5dd47bb6091dae946dc2d66ac0b",
+      "bytes": 4293098,
+      "locator": "Physical p. 109 Figure A–12 line 12 and left/right images xrefs 415, 416."
+    },
+    "NIST 1-3B final": {
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf",
+      "acquired_date": "2026-11-05",
+      "reviewed_date": "2026-11-06",
+      "sha256": "78993d970713a88e4b1f195f145e83a7cc976d5d378405e85791d697f1c1906e",
+      "bytes": 12124680,
+      "locator": "Physical p. 109 Figure A–12 line 7 and rendered views."
+    }
+  },
+  "fema_chapter_4_panels_in_reading_order": [
+    {
+      "physical_page": 19,
+      "photo_xref": 120,
+      "floor_label": "8"
+    },
+    {
+      "physical_page": 19,
+      "photo_xref": 117,
+      "floor_label": "7"
+    },
+    {
+      "physical_page": 19,
+      "photo_xref": 118,
+      "floor_label": "6"
+    },
+    {
+      "physical_page": 20,
+      "photo_xref": 137,
+      "floor_label": "6"
+    },
+    {
+      "physical_page": 20,
+      "photo_xref": 135,
+      "floor_label": "8"
+    },
+    {
+      "physical_page": 20,
+      "photo_xref": 132,
+      "floor_label": "7"
+    },
+    {
+      "physical_page": 21,
+      "photo_xref": 149,
+      "floor_label": "undetermined"
+    }
+  ],
+  "image_fit": {
+    "method": "Decode embedded photos with PyMuPDF. Approximate manual top-left-origin pixel coordinates. Fit least squares affine mapping from FEMA to NIST using eight bolt centers. Independently evaluate four main plate corners in clockwise order from top left, then two ends of the diagonal brown mark. Distances are pixels in the NIST image. No physical scaling or identity classifier.",
+    "software": {
+      "PyMuPDF": "1.27.2.2",
+      "NumPy": "2.3.4"
+    },
+    "fema_photo_xref": 120,
+    "nist_draft_front_photo_xref": 415,
+    "fema_bolt_centers_xy": [
+      [
+        69,
+        120
+      ],
+      [
+        134,
+        120
+      ],
+      [
+        65,
+        177
+      ],
+      [
+        131,
+        177
+      ],
+      [
+        60,
+        232
+      ],
+      [
+        131,
+        235
+      ],
+      [
+        53,
+        291
+      ],
+      [
+        125,
+        290
+      ]
+    ],
+    "nist_bolt_centers_xy": [
+      [
+        99,
+        236
+      ],
+      [
+        167,
+        236
+      ],
+      [
+        96,
+        293
+      ],
+      [
+        166,
+        294
+      ],
+      [
+        95,
+        348
+      ],
+      [
+        168,
+        350
+      ],
+      [
+        99,
+        406
+      ],
+      [
+        168,
+        406
+      ]
+    ],
+    "fema_check_xy": [
+      [
+        121,
+        16
+      ],
+      [
+        299,
+        4
+      ],
+      [
+        301,
+        370
+      ],
+      [
+        101,
+        359
+      ],
+      [
+        138,
+        75
+      ],
+      [
+        169,
+        86
+      ]
+    ],
+    "nist_check_xy": [
+      [
+        149,
+        126
+      ],
+      [
+        320,
+        110
+      ],
+      [
+        333,
+        466
+      ],
+      [
+        144,
+        466
+      ],
+      [
+        170,
+        181
+      ],
+      [
+        199,
+        193
+      ]
+    ],
+    "bolt_fit_rms_px": 2.326,
+    "check_rms_px": 15.051,
+    "check_max_px": 28.555
+  }
+}
