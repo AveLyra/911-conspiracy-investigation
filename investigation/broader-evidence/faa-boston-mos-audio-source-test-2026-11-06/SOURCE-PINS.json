@@ -1,0 +1,226 @@
+{
+  "study": "B129 / PD07 Boston Center MOS archive transfer and timing sheet comparison",
+  "date_utc": "2026-11-06",
+  "scope": "Public transfer audio and original timing sheet compared. Native WAVs, complete partial transcript, master continuity, equipment and independent UTC remain unresolved.",
+  "sources": [
+    {
+      "id": "ZBW-130",
+      "naid": 7597535,
+      "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/3-AAL-11/b-Voice-Recordings/4-Interfacility-Coordination/ZBW/3-ZBW-130-MOS-Ch49-1232-1259-UTC.mp3",
+      "archive_retrieval_utc": "2026-11-06T19:32:18Z",
+      "http_status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 55238912,
+      "sha256": "162396368751cd55364bf084e4fdd8b76ecc204e3ea37ec691853f09e9029d2e",
+      "finding_aid_url": "https://www.archives.gov/research/foia/faa-finding-aid-60-71",
+      "finding_aid_locator": "Box 62, ZBW-130, finding aid extraction line 227",
+      "inspected": "Entire file decoded on both channels. Analysis of left-channel level in the five intervals bounded by the sheet's clock labels."
+    },
+    {
+      "id": "ZBW-130-metadata",
+      "url": "https://catalog.archives.gov/proxy/v3/records/search?naId_is=7597535&limit=1",
+      "accessed_on": "2026-11-06",
+      "bytes": 4508,
+      "sha256": "73a0a2c94732601540896e07ca0c05cf15ec34071bd44e73abfc3fb0335b30ea"
+    },
+    {
+      "id": "ZBW-30",
+      "naid": 7598043,
+      "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/3-AAL-11/e-Other/3-ZBW-30-20-Fax-cover-9-19-01-partial-transcripts-REDACT-SEALED.pdf",
+      "accessed_on": "2026-11-06",
+      "bytes": 100205,
+      "sha256": "161f7e6229dc4d5fedc0efb65eb5f63886b848b8a4235b702cbaf365b22b1e4b",
+      "physical_page": 3,
+      "local_extracted_lines": "3–14",
+      "as_published_bounds": [
+        "1237:50–1238:15",
+        "1239:00–1242:15",
+        "1252:00–1253:05"
+      ],
+      "source_statement": "The missing gaps of time are dead space on the rerecording."
+    },
+    {
+      "id": "RCC 200-16",
+      "url": "https://www.trmc.osd.mil/wiki/download/attachments/113019842/200-16_IRIG_Serial_Time_Code_Formats.pdf?api=v2&modificationDate=1623181164717&version=1",
+      "accessed_utc": "2026-11-06T07:13:37Z",
+      "bytes": 1068587,
+      "sha256": "14adee16a76ab749d23015c61c22f8fe9fbd4a2186d5c5a59bbe5750148ed332",
+      "locators": [
+        {
+          "part": "Section 5.5",
+          "physical_page": 43,
+          "local_extracted_lines": "23–41",
+          "pulse_width_conflict": "binary 1 at 20 ms and binary 1 at 50 ms"
+        },
+        {
+          "part": "Table 5-9",
+          "physical_page": 45,
+          "local_extracted_lines": "63–363"
+        },
+        {
+          "part": "Table 5-11",
+          "physical_page": 47,
+          "local_extracted_lines": "501–521",
+          "pulse_width_conflict": "binary 0 at 20 ms and binary 1 at 50 ms"
+        }
+      ]
+    }
+  ],
+  "reproduction": {
+    "python": "3.13.7",
+    "numpy": "2.3.4",
+    "ffmpeg": "7.1.1",
+    "analysis_sample_rate_hz": 44100,
+    "archive_duration_seconds_ffprobe": 1726.149281,
+    "format_b_thresholds": [
+      0.26,
+      0.32,
+      0.35,
+      0.38,
+      0.42,
+      0.46
+    ],
+    "format_b_accepted_frames_both_channels": 0,
+    "format_e_thresholds": [
+      0.125,
+      0.15,
+      0.17,
+      0.2,
+      0.24
+    ],
+    "scripts_sha256": {
+      "decode_mos_e.py": "1816719ff8ca4537eea6a3a765f3cf2d59202b6cd5e24b077481f87ba6c61938",
+      "summarize_mos.py": "25c9b566b3be3d9073aa5e3314a2170b059bf555eecbad28664dd139a6fc40e2"
+    },
+    "verified_exact_rerun_sha256": {
+      "E-RIGHT-FRAMES.json": "f6c48789199fc82bee2f974f24dddf66f1f0d0de40b78d299cc638ae00be1a92",
+      "E-LEFT-FRAMES.json": "d81445fc3bb336ea60b2bbce90c3c39ae602409bad80361c3a3cec434b3c0a4d",
+      "SUMMARY-LOCAL.json": "7b7b56b2f603fecbdaf02da12f6780d39e1477be21f0d167e5f93db92b4df61d"
+    }
+  },
+  "pulse_check": {
+    "sample_start_s": 600,
+    "sample_duration_s": 35,
+    "first_2_s_peak_hz_in_60_140_hz_band": 98.0,
+    "rms_window_samples": 450,
+    "rms_threshold": 0.2,
+    "width_groups_ms": [
+      {
+        "range_ms": [
+          12,
+          38
+        ],
+        "count": 270,
+        "median_ms": 20.147392290249435
+      },
+      {
+        "range_ms": [
+          38,
+          68
+        ],
+        "count": 36,
+        "median_ms": 50.87301587301587
+      },
+      {
+        "range_ms": [
+          68,
+          94
+        ],
+        "count": 37,
+        "median_ms": 80.36281179138322
+      }
+    ]
+  },
+  "results": {
+    "timing": {
+      "code_start": "12:32:10",
+      "code_end": "12:58:50",
+      "day": 254,
+      "counts": {
+        "0.125": 161,
+        "0.15": 161,
+        "0.17": 161,
+        "0.2": 161,
+        "0.24": 151
+      },
+      "playback_start_s": 69.06825396825397,
+      "playback_end_s": 1702.366984126984,
+      "playback_step_s": {
+        "min": 10.155736961451254,
+        "median": 10.214240362811722,
+        "max": 10.242811791383247
+      },
+      "global_fit_playback_s_per_code_s": 1.0210796151540902,
+      "global_fit_residual_rms_s": 0.4491900712479782,
+      "global_fit_residual_max_abs_s": 1.1766047583054444,
+      "boundaries": [
+        {
+          "sheet_label": "1237:50",
+          "playback_s": 414.9450566893424
+        },
+        {
+          "sheet_label": "1238:15",
+          "playback_s": 440.4232879818594
+        },
+        {
+          "sheet_label": "1239:00",
+          "playback_s": 486.2671882086168
+        },
+        {
+          "sheet_label": "1242:15",
+          "playback_s": 685.2072789115646
+        },
+        {
+          "sheet_label": "1252:00",
+          "playback_s": 1282.954693877551
+        },
+        {
+          "sheet_label": "1253:05",
+          "playback_s": 1349.4408843537415
+        }
+      ],
+      "max_boundary_delta_threshold_s": 0.005192743764155239
+    },
+    "left_channel_control_counts": {
+      "0.125": 0,
+      "0.15": 0,
+      "0.17": 0,
+      "0.2": 0,
+      "0.24": 0
+    },
+    "left_levels": [
+      {
+        "interval_id": "clip1",
+        "playback_samples": 1123590,
+        "rms_dbfs": -16.55944481777249,
+        "peak_dbfs": -0.3252294884818501
+      },
+      {
+        "interval_id": "between1and2",
+        "playback_samples": 2021716,
+        "rms_dbfs": -40.01559558572896,
+        "peak_dbfs": -23.811063955587493
+      },
+      {
+        "interval_id": "clip2",
+        "playback_samples": 8773258,
+        "rms_dbfs": -15.466490807051347,
+        "peak_dbfs": -0.319315547379614
+      },
+      {
+        "interval_id": "between2and3",
+        "playback_samples": 26360661,
+        "rms_dbfs": -29.1515823023105,
+        "peak_dbfs": -0.13467763546163822
+      },
+      {
+        "interval_id": "clip3",
+        "playback_samples": 2932041,
+        "rms_dbfs": -14.190702552048633,
+        "peak_dbfs": -0.27837137797192957
+      }
+    ],
+    "decoded_samples_per_channel": 76123008,
+    "decoded_duration_s": 1726.145306122449
+  }
+}
