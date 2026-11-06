@@ -1,0 +1,53 @@
+{
+  "date_utc": "2026-11-06",
+  "work_ids": [
+    "B129",
+    "PD01",
+    "PD02",
+    "PD03",
+    "PD04",
+    "PD05"
+  ],
+  "sources": [
+    {
+      "id": "FAA-ORDER",
+      "url": "https://www.faa.gov/documentLibrary/media/Order/1220.1.pdf",
+      "retrieval_started_utc": "2026-11-06T09:12:12Z",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 80931,
+      "sha256": "9c07ad576aec85a75529f152fef7227321e6941acd9a8fe0ec2812f09a21d101",
+      "scope": "Both physical pages inspected as 180 dpi Poppler images. P. 1 §§ 1, 3–5 and footer, p. 2 § 5 continuation. Tesseract navigation only, including OCR strings Wa, AQA-10 and ADA-10. Visual readings WA 1220.1 and AOA-10.",
+      "locators": [
+        "p. 1 OCR lines 1–16 for header, predecessor and cancellation",
+        "p. 1 OCR lines 18–24 for exclusions",
+        "p. 1 OCR lines 26–48 for offices and responsibilities",
+        "p. 2 OCR lines 5–23 for continuation"
+      ]
+    },
+    {
+      "id": "FAA-CATALOG",
+      "url": "https://www.faa.gov/regulations_policies/orders_notices/index.cfm/go/document.information/documentID/1391",
+      "retrieval_started_utc": "2026-11-06T09:12:12Z",
+      "http_status": 200,
+      "media_type": "text/html;charset=UTF-8",
+      "bytes": 107062,
+      "sha256": "7d4a9589533b3e79364965552a8de945175fd0fe53c491d3f6a7ecb323063754",
+      "scope": "Saved raw HTML lines 1375–1400 and 1414, including the literal PDF link."
+    },
+    {
+      "id": "DOT-ORDER",
+      "url": "https://www.transportation.gov/sites/dot.gov/files/docs/dotorders/DOT-1323.2G.pdf",
+      "retrieval_started_utc": "2026-11-06T09:11:22Z",
+      "reading": "Public index PDF rendering, printed pp. 1–6, §§ 2–4 and 6–9. The indexed text for §§ 7(c)(2), 7(f), 9(a)(1)–(4) and 9(e) was read. No PDF face verified. Scoped search for a Semiannual title in the indexed order yielded no match and was not treated as an exclusion finding.",
+      "direct_response": {
+        "http_status": 403,
+        "media_type": "text/html",
+        "bytes": 460,
+        "sha256": "9a345481e306931dc67ec89048fa1726d9438bdab16fb5c8763fb3010a1fc460"
+      },
+      "original_pdf_sha256": null
+    }
+  ],
+  "method": "Hash the three saved response bodies with SHA-256. Use pdfinfo for the FAA scan's physical count, pdftoppm at 180 dpi for image review, Tesseract for navigation, and source-specific sections and printed fields for the comparison. The scoped result identifies historical routing and record types. Coverage of the Secretary's actual reports and the FAA case remains open."
+}
