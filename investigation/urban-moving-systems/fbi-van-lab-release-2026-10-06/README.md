@@ -1,5 +1,7 @@
 # Public release status of the FBI van explosives test
 
+**Later disposition qualification, November 6, 2026:** A separate FBI production reviewed after this October 6 search reports completed disposal of the three listed sample barcodes. The production does not provide a final chemical result, a separate disposal date for each item, or a full accession-to-sample crosswalk. See the [later disposition recheck](../van-sample-disposition-recheck-2026-11-06/README.md). The October 6 discussion below is preserved as a dated account of the sources searched then; its open disposition question is superseded to that extent.
+
 As of October 6, 2026, this research did not locate a publicly accessible final chemical analysis of the samples taken from the Urban Moving Systems van occupied by the five Israeli nationals detained in New Jersey on September 11, 2001. The released scans establish a canine alert, sample collection, and a September 23 report that the final results were pending. Later records establish administrative closure of laboratory leads, but do not identify the chemical finding.
 
 **The supported conclusion is that the result remains unlocated in the public sources examined.** It is not established that the FBI never completed testing, never released a result to any requester, or obtained a positive or negative chemical result.
