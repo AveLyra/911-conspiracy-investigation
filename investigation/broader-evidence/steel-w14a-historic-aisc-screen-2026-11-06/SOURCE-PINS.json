@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-06",
+  "timezone": "America/New_York",
+  "task_keys": [
+    "STL02",
+    "STL03",
+    "AUD011",
+    "AUD016",
+    "B188",
+    "H005"
+  ],
+  "sources": [
+    {
+      "role": "historical table derivative",
+      "file": "aisc_shapes_historic_clean.csv",
+      "url": "https://raw.githubusercontent.com/buddyd16/Structural-Engineering/5934e0bec88d7c032a41ddb073309bccb31f425f/Steel/AISC%20Shapes%20Databases/aisc_shapes_historic_clean.csv",
+      "access_date": "2026-11-06",
+      "bytes": 4309790,
+      "sha256": "58c915d41833295a66baee2705f299b774ca044c45a718c5ccbd84cc16ccc654",
+      "scope": "14,780 data rows plus header. ASD7 lines 10134–10180, ASD8 lines 8976–9011, ASD9 lines 6784–6819, and selected LRFD1 W13 and W14 rows within lines 7958–7993. Exact historical XLSX not obtained."
+    },
+    {
+      "role": "historical derivative dictionary",
+      "file": "aisc_historic_shape_defs.csv",
+      "url": "https://raw.githubusercontent.com/buddyd16/Structural-Engineering/5934e0bec88d7c032a41ddb073309bccb31f425f/Steel/AISC%20Shapes%20Databases/aisc_historic_shape_defs.csv",
+      "access_date": "2026-11-06",
+      "bytes": 8545,
+      "sha256": "b73b416120865f030e47e15885ef8cbc657dde9057806d55574b36c15e01f9b3",
+      "scope": "Lines 2, 5–6 and 93–96 define relevant units and separate detailing dimensions."
+    },
+    {
+      "role": "mirror tree",
+      "file": "github-tree.json",
+      "url": "https://api.github.com/repos/buddyd16/Structural-Engineering/git/trees/master?recursive=1",
+      "access_date": "2026-11-06",
+      "bytes": 43307,
+      "sha256": "e1bbb345e52e286b3b435c98492e684c37483dcca0b827e345a94d52ed8b7751",
+      "scope": "Held Git tree response identifies the CSV paths and blob IDs."
+    },
+    {
+      "role": "NIST published structural report",
+      "file": "nist-ncstar1-1a-vol1.body",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-72f0231e04aac8e35991907a17f599e5/pdf/GOVPUB-C13-72f0231e04aac8e35991907a17f599e5.pdf",
+      "access_date": "2026-11-06",
+      "bytes": 11373039,
+      "sha256": "5fb3c5952431296506e9237256a243660a4a5747b253e6840d920a29d6390186",
+      "scope": "168 PDF pages. Text anchors at p. 69 ll. 28–29, p. 95 ll. 36–37, p. 156 ll. 32–35, p. 157 ll. 4–7 and 47–49, p. 160 ll. 21–22. Relevant six crops visually checked."
+    }
+  ],
+  "prior_inputs": [
+    {
+      "url": "https://www.fema.gov/pdf/library/fema403_apd.pdf#page=16",
+      "source_date": "2026-11-06",
+      "sha256": "e054a70f9410b1fe0b141f0ec2401244183f67da4d0a703df5ffb18483d6f6fc",
+      "role": "Held prior W14A and W14B field source. Reused W14A tuple from preserved line and visual reading in previous study."
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf#page=96",
+      "source_date": "2026-11-05",
+      "sha256": "78993d970713a88e4b1f195f145e83a7cc976d5d378405e85791d697f1c1906e",
+      "role": "Held prior unidentified inventory, Table A-7, PDF p. 96."
+    },
+    {
+      "url": "https://ej.aisc.org/index.php/engj/article/download/1337/1328/1360",
+      "access_date": "2026-11-06",
+      "role": "AISC Engineering Journal printed p. 54 names 7th, 8th, first LRFD and 9th editions, and gives 1973, 1980, 1986 and 1989. Read indexed official PDF text only."
+    }
+  ],
+  "line_method": "One-based CSV physical lines with verified one-record-per-line. PDF lines are PyMuPDF 1.27.2.2 splitlines() within each physical page. Visual readings separately described."
+}
