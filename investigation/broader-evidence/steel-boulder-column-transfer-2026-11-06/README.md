@@ -1,0 +1,35 @@
+# NIST’s July 2002 Boulder steel transfer and the later inventory
+
+Public derivative of the November 6, 2026 steel custody review · STL02–STL03 / AUD011 / AUD016 / B188 / H005. An official NIST notice identifies a dated transfer to a second campus. The final inventory and a photo footnote provide separate lookup keys. The manifests and specimen-level link to the July transfer remain open.
+
+## What the sources record
+
+| Source | Observation |
+| --- | --- |
+| NIST status notice dated September 17, 2002, current page updated February 3, 2025 | NIST says it had been storing steel at Gaithersburg since February. As of **July 11, 2002**, it reports **in excess of 100 pieces** in its possession and says “three sections cut from columns stored in Gaithersburg have been transferred to Boulder.” The page's opening describes the pending investigation as covering the towers and WTC-7. It gives no building or accession IDs for those three sections. [NIST notice, saved HTML lines 586, 596, 667–673 and 819](https://www.nist.gov/news-events/news/2002/09/status-updated-recovered-world-trade-center-steel-nist) |
+| Final NCSTAR 1-3B §3.1 | NIST reports that some samples went to Boulder for mechanical property testing after initial documentation. It describes taking overall images on delivery and identifies Table A–1 as its sample list. The paragraph gives neither dates nor a transfer roster. [GovInfo PDF p. 33 lines 6–23](https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf#page=33) |
+| Final NCSTAR 1-3B Table A–1 | There are **three** standalone `B` entries in the **Location** column across PDF pp. 87–92. Two are channels and one is a partial column. The printed key gives `B, bolt` among the **type** definitions and supplies no separate location definition for standalone `B`. Boulder is a plausible reading of that location code. It remains unverified. [GovInfo PDF p. 92, lines 241–246](https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf#page=92) |
+| Final NCSTAR 1-3C Fig. B–35(c) | The figure labels the WTC 1 floor-100 connector **N99-C1B** and says “Boulder started cutting before picture taken,” adding that the damper unit was already removed. The parent panel is **N-99 (A148: 99-102)**. The connector is described as on column **149**. The note dates the cut relative to that photograph. It gives neither a calendar date nor a receiving record. [NIST PDF p. 115 / printed p. 399, lines 22–36](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=115) |
+
+### Final inventory rows with `B` in the location column
+
+Cells below are read from the page images. A dash indicates an empty field.
+
+| Name | Type | Brief description | Building | Location | Locator |
+| --- | --- | --- | --- | --- | --- |
+| C-14 or S-18 | C | 1 column, lower 1/3rd | WTC 2 | B | [PDF p. 87, lines 189–198](https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf#page=87) |
+| C-128 | Ch | Channel | — | B | [PDF p. 89, lines 217–220](https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf#page=89) |
+| M-34 | Ch | Channel | — | B | [PDF p. 91, lines 239–242](https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf#page=91) |
+
+**Comparison.** The July notice counts cut column sections in a shipment. The later table describes cataloged objects and their listed locations. Matching counts alone do not identify the shipment. The two channel rows make an identification by count particularly weak. Separately, Table A–1 records parent panel **N-99 or M-16** under **PL**, which the key defines as the Building 202 parking lot. The parent location and the connector cutting note may describe distinct objects or times. No dated parent-to-connector movement or July shipment match was acquired. Keep column **148** for the parent and **149** for the connector as separately printed identifiers. [NCSTAR 1-3B parent row, PDF p. 92 lines 129–139](https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf#page=92) · [Fig. B–35(c)](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3cv2.pdf#page=115)
+
+**Earlier custody dates.** Preserve the notice's **since February** storage wording, NCSTAR 1-3's **February of 2002** shipment start, and NCSTAR 1-3B's **March 2002** shipment start. Storage and shipping are separately described events. The two shipping month values remain unresolved. Each source leaves the first dated yard release and campus receipt outstanding. [September notice](https://www.nist.gov/news-events/news/2002/09/status-updated-recovered-world-trade-center-steel-nist) · [NCSTAR 1-3 PDF p. 76, lines 7–14](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3.pdf#page=76) · [NCSTAR 1-3B PDF p. 32, lines 7–15](https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf#page=32)
+
+## Open records and tests
+
+- [ ] **July transfer and first yard receipts.** Locate the records behind the July 11 status, including parent-column IDs, cutting orders, dated dispatch and Boulder intake, and early Gaithersburg receiving records. Match markings, dimensions and dates across release and receipt. Retain the 2002 status page and any earlier captured edition separately.
+- [ ] **Location code and item history.** Obtain the native Table A–1 workbook or location dictionary and dated movements for C-14/S-18, C-128 and M-34. Test whether the location code means Boulder and whether any accession in those rows can be tied to the July transfer.
+- [ ] **N-99 / M-16 preparation.** Seek original photos, the cut plan and lab accession or work order for N99-C1B. Test whether the same panel appears in Boulder intake and whether there is a separately documented date or sample ID for the connector.
+- [ ] **WTC 7 candidates.** Keep the existing W14A/B intake, attribution worksheets and dated images open. The 2002 notice's WTC-7 scope does not name a WTC 7 accession or establish that any of the July sections came from that building. [Existing W14 attribution comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/88831b1b5436958547c9399306ff3c60ad8e1baf/investigation/broader-evidence/steel-attribution-roots-2026-10-27/README.md)
+
+The current NIST HTML and the 1-3C appendix PDF were retrieved on November 6, 2026. The cited 1-3 and 1-3B pages were rechecked in previously held copies. Scope was the cited HTML passages, PDF passages, the six Table A–1 pages for the right-hand location field, and the rendered inventory rows and Fig. B–35. The verifier checks the held bytes and selected text and layout anchors. It does not authenticate the shipping history. [Source hashes and locators](SOURCE-PINS.json) · [Verifier](verify.py)
