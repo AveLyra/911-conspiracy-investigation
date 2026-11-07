@@ -1,0 +1,44 @@
+# WTC 7 OEM inspection comments and the records behind them
+
+November 6, 2026 · Steel and construction custody · STL02–STL03 / AUD011 / AUD016 / B188 / H005
+
+The released WTC 7 OEM alteration packet contains dated Port Authority comments, the architect’s responses and two sprinkler revision sketches. It records a direct challenge to the **168 sq. ft. per sprinkler** shown for the space below the fuel tank, against the reviewer’s stated **100 sq. ft. limit**. The architect pointed to sketches **SKP-1 and SKP-2**, both present in the packet. The final NIST fuel-system report prints both figures. The signed inspection checklist NIST described, installed sprinkler spacing and any variance or acceptance remain open. [Original alteration packet in the 2013-000594 archive](https://archive.org/download/911datasets/NIST_FOIA_DOC-NIST-2013-000594_Feb_23_2013.zip) · [NCSTAR 1-1J, printed p. 27](https://www.govinfo.gov/content/pkg/GOVPUB-C13-484f3a6f3708cdb44a8b7444631588d8/pdf/GOVPUB-C13-484f3a6f3708cdb44a8b7444631588d8.pdf#page=59) · [NIST’s checklist reference, printed p. 176](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-1.pdf#page=238)
+
+## What the underlying records say
+
+Page numbers below are physical pages in **WTCI-000182-P.PDF**, the 292-page member identified in [Source pins](SOURCE-PINS.json). The approved September 1999 cover and drawing-list dates were reviewed separately. [Earlier approval and drawing-revision review](https://github.com/AveLyra/911-conspiracy-investigation/blob/32ec2892ba8ab314ffdd69aa4217a2246a8b29e0/investigation/broader-evidence/steel-nist-2013-000594-production-crosswalk-2026-11-06/README.md)
+
+| Locator | Observation |
+| --- | --- |
+| **p. 279**, April 27, 1998 Risk Control memo | The Port Authority memo reports April 23 and 27 conversations with FDNY's engineering director about a proposed 6,000-gallon tank and attributes a recommendation for appropriate suppression to him as his only comment in those conversations. This is an agency participant's account of discussions. |
+| **p. 255**, April 28, 1998 Quality Assurance memo, **W98-7134-001** | The memo calls the proposal acceptable in concept and explicitly says construction approval could not be given because structural calculations and specified fire-protection requirements were outstanding. It calls for revisions addressing a 51-item rider. |
+| **p. 259**, rider item 18 | For **A-1-1**, the reviewer specifies **15 inches** of clearance around the tank and asks whether the proposed **2-foot concrete curb** plus oil-proof membrane would contain at least **6,000 gallons**. This concerns the proposed enclosure. The March 1999 FDNY memo separately reports no dike at the hatch and elevator access doors. Preserve these observations by location and date. [FDNY field memo](https://sept11documents.cityofnewyork.us/apps/content/September11_MD/NYC-WTC_000169169.pdf#page=1) |
+| **pp. 127–128**, Submission #3 rider, calculation item b and fire-protection item 7 | The Port Authority asks for first-floor slab bending verification for the tank work and trenches, referencing calculation sheets **22 and 22A**. Separately, it says FP1.01 shows **168 sq. ft.** per sprinkler where its cited standard allows **100 sq. ft.**, citing the **1989 edition NFPA 13**. |
+| **pp. 114–116**, November 12, 1998 architect response | For slab bending, the response reads **“See Attached.”** For sprinklers it reads **“See Attached SKP-1 & SKP-2.”** The reproduced comment here calls the standard the **1998 edition NFPA 13**. Keep both edition labels pending the governing adoption text. |
+| **pp. 133–134**, Cosentini sketches | Both title blocks show revision 3, **“INERGEN SPRINKLER SYSTEM REVISION,” 11-3-98**. SKP-1 identifies removal of existing sprinkler branch piping and heads from the new oil tank room and shows Inergen equipment. SKP-2 shows sprinkler piping and notes at the lower level. This locates the proposed revision. No independent measurement of head coverage was made from these scans. |
+| **pp. 30–31**, June 24, 1999 resubmission and May 24, 1999 Submission #8 approval | The architect says concealed conditions found after work started made the previously approved pipe route infeasible. The resubmission proposes going through mechanical and telephone rooms, avoiding the elevator shafts. The letter is dated June 24 and received July 7. The May approval and the June statement are separate records and describe different proposed routes. |
+| **pp. 13, 18–19**, July 28 conditional approval and August 23 response | The Port Authority requests calculations for the load from the new conduit on existing steel beams and rejects spray-on protection as a substitute for the rated enclosure in its code review. The architect points to attached calculations and drawings and says it will comply. The dated response establishes what was represented. The supporting calculations, exact final sheets and installed condition require separate verification. |
+
+NIST reports an initialed corrections list and describes the sprinkler area as **168 sq. ft.** alongside a **100 sq. ft.** high-hazard design maximum. The Port Authority records show that the sprinkler concern was raised and revised drawings were submitted. Whether that concern appears on the list NIST describes, whether the revised layout met the applicable criterion, and what the field inspector observed remain unresolved. The checklist, applicable adopted standard, calculation, approved layout and field measurements would distinguish those questions. The review did not evaluate collapse causation. [NIST summary](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-1.pdf#page=238) · [NIST technical report](https://www.govinfo.gov/content/pkg/GOVPUB-C13-484f3a6f3708cdb44a8b7444631588d8/pdf/GOVPUB-C13-484f3a6f3708cdb44a8b7444631588d8.pdf#page=59)
+
+## Catalog routes to underlying documents
+
+The [12-090 catalog archive](https://archive.org/download/911datasets/NIST_FOIA_12-090_Jun_13_2012.zip) identifies four companion candidates and provides a check on the two previously recovered release groups. Workbook date fields below are recorded as catalog values. The actual drafting dates and document identity have to come from the underlying documents. The catalog description of the calculation set is a lead to sheets 22 and 22A. The listing cannot establish that those sheets or any particular revision are present.
+
+| Workbook row | Directory line | Scan filename | Catalog description or scope | Workbook date |
+| --- | --- | --- | --- | --- |
+| 582 | 6824 | `WTCI-000121-S.PDF` | Fuel tank plans and riser diagrams, M-1 through M-5 | 11/13/2002 |
+| 987 | 4619 | `WTCI-000151-P.PDF` | W987134 specification manual, project 5576A | 12/6/2002 |
+| 1001 | 4645 | `WTCI-000164-P.PDF` | WTC 7 fuel oil tank for Mayor’s Office | 12/6/2002 |
+| 1030 | 4665 | `WTCI-000182-P.PDF` | W987134 Submission #10, floors 1, 7, 23 and roof | 12/6/2002 |
+| 1044 | 4732 | `WTCI-000196-P.PDF` | W987134 Cantor Seinuk OEM structural calculations | 12/6/2002 |
+| 2687 | 6840 | `WTCI-000137-S.PDF` | OEM drawing CD and equipment information | 9/2/2003 |
+
+## Open records
+
+- [ ] Recover **196-P**, confirm the stamped calculation revision, and match **sheets 22 and 22A** and the separate conduit-load calculations to the specific Port Authority comments. Recover **121-S**, **151-P** and **164-P** to compare sheet versions and review scope.
+- [ ] Obtain the initialed FDNY checklist, item-by-item disposition, approved final sprinkler/hydraulic sheets, any variance and the dated installation and acceptance records. Compare the as-built area per head and the approved criterion with both printed values and edition labels.
+- [ ] Locate the revised fuel-line routing sheets and acceptance of the enclosure treatment for the installed line. Preserve the unbuilt-route account alongside the earlier approval.
+- [ ] Keep the unresolved tank capacity, directive number, pump units, original occupancy and Testwell certification as separately documented dependencies. [Prior inspection trail](https://github.com/AveLyra/911-conspiracy-investigation/blob/ee06b367c8cfe3e69f63266a93f2c14120092e22/investigation/broader-evidence/steel-wtc7-port-authority-inspection-followthrough-2026-11-06/README.md)
+
+This pass reused a mirror member verified against the previously recorded SHA-256 and the held 12-090 catalog. A targeted search of the existing 182-P OCR located candidate pages. Selected page images established wording and drawing labels. The six catalog joins use the identifier and category fields, the workbook title and the scan directory name. Exact filename searches did not surface the four companion PDF bodies in the reviewed results. Neither the mirror nor the search establishes the completeness of any agency holding. No new records request was submitted.
