@@ -1,0 +1,42 @@
+# WTC 7 occupancy and firestopping inspection records
+
+Public derivative of the November 6, 2026 native inspection study · STL01–STL03 / AUD011 / AUD016 / B188 / H005. A **256-page City scan** filed under the WTC 7 fire safety plan contains original approval and temporary occupancy paperwork. Two copies of a checklist name **Testwell Craig** for certification before a final Certificate of Occupancy. This adds a Port Authority custody route for signed certifications and supporting inspections. A separate NIST catalog screen identifies six exact candidate scan names. [City PDF](https://sept11documents.cityofnewyork.us/apps/content/September11_MD/NYC-WTC_000168718.pdf) · [09-63 request crosswalk](https://github.com/AveLyra/911-conspiracy-investigation/blob/82fafea14f589346b370eedf6ca813f16cf9ac53/investigation/broader-evidence/steel-2009-nist-intake-log-crosswalk-2026-11-06/README.md)
+
+## Original records in the City release
+
+| Record | Verified scope |
+| --- | --- |
+| Fire Safety Plan, PDF pp. 1 and 5 | Title page and **Date Prepared — January, 1988**. This is the plan preparation field. |
+| FDNY approval letter, PDF p. 122, **NYC-WTC_000168839**, lines 3–16 | Letter dated **April 18, 1988** identifies the premises and records approval of the **Fire Safety Plan**. This is a different approval from a final building Certificate of Occupancy. |
+| Temporary occupancy letters, PDF pp. 224, 226–227 and 230 | The letters identify temporary occupancy dates for base building systems by floor band. **1–13** as of **December 31, 1987**, **14–24** as of **April 1, 1988**, **25–34** as of **April 11, 1988**, and **35 through roof** as of **November 18, 1988**. Page 227 itself is dated **April 5**, distinct from its April 1 effective date. Several letters describe a later final inspection after outstanding work. |
+| Certification requirement, PDF pp. 229 and 239, **NYC-WTC_000168946** and **NYC-WTC_000168956** | Two separately scanned pages give the same Testwell Craig scope, **“Structural, Firestopping, Concrete, Fireproofing and Bolting.”** They say professional certification is required for delivery to the **Port Authority** before a **Final Certificate of Occupancy** and refer to an attached certification sample. The pages describe a requirement. Neither page is the completed certification. |
+| Separate City PDF **NYC-WTC_000168717**, p. 1 | A handwritten **Inspection Record** for 7 World Trade Center contains fields for date, inspection type and remarks. The mirror titles the item **April 1988**. The visible entries span more than that single heading date. Exact readings of the handwritten chronology remain open. The log itself is a distinct record from the original Testwell construction reports. |
+
+[Fire plan and preparation page](https://sept11documents.cityofnewyork.us/apps/content/September11_MD/NYC-WTC_000168718.pdf#page=5) · [April approval](https://sept11documents.cityofnewyork.us/apps/content/September11_MD/NYC-WTC_000168718.pdf#page=122) · [Certification language](https://sept11documents.cityofnewyork.us/apps/content/September11_MD/NYC-WTC_000168718.pdf#page=229) · [Second copy](https://sept11documents.cityofnewyork.us/apps/content/September11_MD/NYC-WTC_000168718.pdf#page=239) · [City inspection log](https://sept11documents.cityofnewyork.us/apps/content/September11_MD/NYC-WTC_000168717.pdf) · [Folder index](https://911records.org/browse/Fire%20Department/NYC-WTC0007/FDNY/7%20World%20Trade%20Center%20F.S.P.%20Plan%20Approved%204-18-88)
+
+The temporary letters and approval record point to distinct processes and file holders. The 09-63 request names bolt and weld inspection reports. The City certification page specifically names **bolting** and other scopes, without listing a weld-report number. The actual Testwell certification, any attached report schedule and the final Certificate of Occupancy were not located in the reviewed pages.
+
+## NIST’s source descriptions and the scan identifiers
+
+NIST NCSTAR 1-9 reports obtaining **November 1986 interim firestopping reports** and identifying coverage on **floors 9, 10 and 11**. It reports that a final firestopping inspection report was unavailable to its investigation. It separately describes a **1993** floor-23 inspection with gaps and a later satisfactory application account. The footnotes cite an **August 12, 1997** IDC letter and a **September 24, 1998** SBLM letter. Those are document dates. The 1993 inspection date and the order of the underlying events need the actual letters. Firestopping inspection and the previously discussed structural-weld inspection are distinct record classes. [NCSTAR 1-9, printed p. 44 / PDF p. 88 lines 20–45](https://www.govinfo.gov/content/pkg/GOVPUB-C13-9a037c68b30199701298c007e0910dc4/pdf/GOVPUB-C13-9a037c68b30199701298c007e0910dc4.pdf#page=88) · [Prior weld-record crosswalk](https://github.com/AveLyra/911-conspiracy-investigation/blob/b4273fa5a4a5c9381852959549d04686dc70d42d/investigation/broader-evidence/steel-wtc7-specification-mill-report-crosswalk-2026-11-06/README.md)
+
+Six candidate records in the previously held **12-090** workbook and scanned-directory export are listed below. The catalog dates and scan dates are distinct fields. Source names and titles supply search keys. Their underlying PDF bodies are outstanding.
+
+| Workbook row | Expected PDF | Catalog title or subject | Catalog date | Directory line and scan date |
+| --- | --- | --- | --- | --- |
+| 4133 | `WTCI-000303-I.PDF` | Firestopping Inspection Engineers Report – 9th Floor. Source Cantor Seinuk. | 1/22/2007 | 7830 · 3/11/2010 |
+| 4047 | `WTCI-000018-SOM.PDF` | Field Inspection Reports for Firestopping, Floors 14–21. `SOM Box 4112`. | 9/27/1989 | 417 · 11/25/2009 |
+| 4056 | `WTCI-000027-SOM.PDF` | Fax on Firestopping at Edge of Slab/Curtain Wall. `SOM Box 5622`. | 2/9/1993 | 426 · 11/25/2009 |
+| 4070 | `WTCI-000041-SOM.PDF` | Specification for Firestopping Safing Insulation. `SOM Box 7128`. | 2/5/1993 | 440 · 11/25/2009 |
+| 430 | `WTCI-000045-FEMA.PDF` | WTC 7 firestopping/fireproofing deposition and exhibit group. | Empty | 758 · 3/8/2010 |
+| 3898 | `WTCI-000212-I.PDF` | WTC 7 firestopping/fireproofing deposition and exhibit group with an additional deposition listed. | Empty | 7725 · 3/10/2010 |
+
+The 9th-floor catalog date differs from the report’s **1986** date for the cited Testwell material. The item body and cover or transmittal are needed to tell whether they describe the same record and what each date represents. The SOM **14–21** row lacks a building identifier in its title. Its building, inspection type and relationship to the NIST discussion of other floors remain unresolved. The two deposition rows are separate catalog records. Their different dates, titles and scan sizes leave exact overlap open. [12-090 catalog ZIP](https://archive.org/download/911datasets/NIST_FOIA_12-090_Jun_13_2012.zip)
+
+## Open records and checks
+
+- [ ] Obtain the certification sample referenced by the City packet, the **signed Testwell Craig certification**, its supporting Testwell reports, the final inspection and the final Certificate of Occupancy. Join records by effective date, professional scope, floor band and attachments. The FDNY plan approval and temporary occupancy dates remain separate.
+- [ ] Obtain the six cataloged PDFs and the specific NIST-cited 1986 and 1990s documents. Check report author, subject, building, dates, floors, measurements and transmittals before joining the catalog entries to cited originals. Recover **09-63’s** response and itemized inspection disposition separately.
+- [ ] Preserve the February request date conflict, the reported inspection and disposition limitations, and the W14 attribution dependencies.
+
+The City plan download exceeded the initial cap and a larger full request then timed out at **9,911,803 bytes**. Four verified HTTP **206** ranges provided the complete **25,100,075-byte** body. They had contiguous offsets and matching weak entity tags and Last-Modified fields. The assembled body matched the interrupted download's entire prefix and opened as a 256-page PDF without structural repair. The earlier partial body was retained. Review was limited to the cited City documents and targeted PDF text, the NIST passage, and the six catalog and directory entries. Original City scans and derivative research are stored separately. [Source pins](SOURCE-PINS.json) · [Verifier](verify.py)
