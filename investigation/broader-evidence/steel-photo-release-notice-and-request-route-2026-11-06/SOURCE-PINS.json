@@ -1,0 +1,63 @@
+{
+  "access_date": "2026-11-06",
+  "timezone": "America/New_York",
+  "sources": [
+    {
+      "file": "notice.body",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2009-08-14/pdf/E9-19535.pdf",
+      "final_http": 200,
+      "content_type": "application/pdf",
+      "bytes": 141443,
+      "sha256": "6a1a74e6cc942c9388ffbcac8bfc1183e635cad03746fbed6ae950958ff76807",
+      "scope": "Official single-page Federal Register PDF."
+    },
+    {
+      "file": "text.body",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2009-08-14/html/E9-19535.htm",
+      "final_http": 200,
+      "content_type": "text/html",
+      "bytes": 6135,
+      "sha256": "134e037fea5e60be14821b800075426fa7b178f873e029190d4c2ca208b621ca",
+      "scope": "Official HTML text of the same notice."
+    },
+    {
+      "file": "record.body",
+      "url": "https://www.federalregister.gov/api/v1/documents/E9-19535.json",
+      "final_http": 200,
+      "content_type": "application/json",
+      "bytes": 3375,
+      "sha256": "473af93d2bfff5abe59b6b1c8a0e6d931ba4327842620a4431a5f128af82f8bf",
+      "scope": "Official metadata for E9-19535."
+    },
+    {
+      "file": "legacy.body",
+      "url": "https://wtc.nist.gov/FOIA/FOIArequests09_15_42_63_88.pdf",
+      "final_http": 200,
+      "content_type": "text/html",
+      "bytes": 103286,
+      "sha256": "5c6a2a45c8312052da277bb9a16374fa8269dbe15e9d8ef9ec6aa75cf0cbb3d4",
+      "scope": "Legacy HTTPS request ended at the current NIST landing page.",
+      "effective_url": "https://www.nist.gov/world-trade-center-investigation"
+    },
+    {
+      "file": "archive-availability.body",
+      "url": "https://archive.org/wayback/available?url=http%3A%2F%2Fwtc.nist.gov%2FFOIA%2FFOIArequests09_15_42_63_88.pdf&timestamp=20090824",
+      "final_http": 200,
+      "content_type": "application/json",
+      "bytes": 306,
+      "sha256": "c1527662548c695babfe648bd68d3a45f16149b96062f5fd7c9d8d6478ca3cf1",
+      "scope": "Availability record advertises September 2, 2009 UTC."
+    },
+    {
+      "file": "packet-replay.body",
+      "url": "https://web.archive.org/web/20090902014628id_/http://wtc.nist.gov:80/FOIA/FOIArequests09_15_42_63_88.pdf",
+      "final_http": 200,
+      "content_type": "application/pdf",
+      "bytes": 5322715,
+      "sha256": "53a62d4685d3b4420f61acd408609aa2ad10e4e79f0f22588ee6ced94fd19041",
+      "scope": "Delivered replay is November 8, 2009 UTC. Sixteen scanned pages. Headers and selected scope clauses read.",
+      "effective_url": "https://web.archive.org/web/20091108191741id_/http://wtc.nist.gov/FOIA/FOIArequests09_15_42_63_88.pdf"
+    }
+  ],
+  "reading_basis": "One-based physical PDF pages and PyMuPDF 1.27.2.2 page.get_text().splitlines() lines. Request packet pp. 5\u201310 use Tesseract 5.5.2 --psm 6, 2x grayscale. The handwritten 09-63 is visually read."
+}
