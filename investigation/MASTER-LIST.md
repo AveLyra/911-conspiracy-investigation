@@ -1,5 +1,7 @@
 # Current integrated investigation master list
 
+[Investigation consolidation guidance](CONSOLIDATION.md).
+
 The [October 26, 2026 master](wtc7/master-lead-register-2026-10-26/MASTER-LIST.md) contains **152 overlapping research entries**: unchanged M001–M134 plus eight operational-record and ten bank/phone findings. This count includes questions, source leads, qualifications and a confirming check; it is not a count of independent anomalies or established conspiracy facts.
 
 [ID crosswalk](wtc7/master-lead-register-2026-10-26/CROSSWALK.md) · [source pins and original records](wtc7/master-lead-register-2026-10-26/register.json) · [unresolved targets](wtc7/master-lead-register-2026-10-26/OPEN-TARGETS.json).
@@ -33,6 +35,10 @@ The [Fresh Kills EPA source crosswalk](broader-evidence/steel-fresh-kills-epa-rm
 ## November 6: public research catalogue
 
 The [research catalogue and recent publication index](recent-research-2026-11-06/README.md) links the dated 118-report roundup, nine later public main-line source reports and the published UMS/EPA review. Report updates overlap and are not independent evidence; the index has a stated cutoff.
+
+## November 7: consolidated source checks
+
+The [mural-truck, Philadelphia and WTC security reviews](urban-moving-systems/consolidated-source-checks-2026-11-07/README.md) compare vehicle identifiers, reported moving deliveries, cameras, canine deployments and a reported power-down. They preserve unresolved links and contrary evidence; none establishes a UMS role in WTC explosives or coordination with hijackers.
 
 ## November 6: developing theory and source recheck
 

@@ -1,0 +1,7 @@
+# Investigation consolidation
+
+The AveLyra repository is the shared home for the 9/11 investigation, including exploratory theories, source reviews, evidence and disconfirming findings. Use its investigation index for navigation. Work directly in the existing public checkout when feasible; do not create a separate worktree for each research cycle. Inspect its current branch and uncommitted work first, and preserve concurrent work.
+
+Research records and the Rory Dahl v. Commerce/NIST legal case have different boundaries. Case pleadings, correspondence, strategy and other case-specific records remain in the case repository. A research record that discusses NIST is not automatically case material. Before publishing any item, check for private correspondence, account and contact details, third-party information, credentials and other potentially sensitive content; public-facing research can describe its source and status without reproducing sensitive material. Follow the project's applicable disclosure rules.
+
+Consolidation is incremental. Compare source files and histories to public content, preserve raw records and attribution, distinguish working hypotheses from established findings, and link relevant findings from the master list. An existing public summary does not necessarily include every underlying source. Do not delete local files, histories or worktrees as part of consolidation without the user's specific approval.
