@@ -1,0 +1,101 @@
+{
+  "study": "FAA personnel records and the Employee Relations Tracking System",
+  "sources": [
+    {
+      "title": "FAA 1280.1A",
+      "file": "predecessor.body",
+      "url": "https://www.faa.gov/documentLibrary/media/Order/ND/1280.1A.pdf",
+      "access_utc": "2026-11-06T06:20:00Z",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 38130705,
+      "sha256": "c960537077f9646dd4533dd876e80d82d5bea0a171ce301af15cb9bde9a850f7",
+      "reading_scope": "PDF pp. 33–34 visually read, printed p. 39 and p. 40 (thru 46); OCR navigation across 50 pages.",
+      "physical_pages": 50
+    },
+    {
+      "title": "FAA 1280.1A AL SUP 2",
+      "file": "aal2.body",
+      "url": "https://www.faa.gov/documentLibrary/media/Order/1280.1%20AL%20Sup%202.pdf",
+      "access_utc": "2026-11-06T06:20:04Z",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 441684,
+      "sha256": "a367b192ab4723c28745bd4a55d199563bfd1dc61ffcad27f505847f964f8a1f",
+      "reading_scope": "PDF p. 1 OCR and p. 19 visual reading, AL Appendix 1 printed p. 1; OCR navigation across 29 pages.",
+      "physical_pages": 29
+    },
+    {
+      "title": "FAA catalog document 6758",
+      "file": "catalog.body",
+      "url": "https://www.faa.gov/regulations_policies/orders_notices/index.cfm/go/document.information/documentID/6758",
+      "access_utc": "2026-11-06T06:20:05Z",
+      "http_status": 200,
+      "media_type": "text/html;charset=UTF-8",
+      "bytes": 108519,
+      "sha256": "132c0f1cd28043c15ce69a4519ab5ea07668e0b73b398811a9af9fddf638d8fb",
+      "reading_scope": "Document Information dates, office code and PDF link, supplements table."
+    },
+    {
+      "title": "FAA 1280.1B short-URL representation",
+      "file": "base.pdf",
+      "url": "https://www.faa.gov/documentlibrary/media/order/1280.1b.pdf",
+      "access_utc": "2026-11-06T06:19:25Z",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 740010,
+      "sha256": "35e2bcf07bfa08b347ad0281a1b7f711f9a2ef0f38e877d7cd4e05c96ada4a2a",
+      "reading_scope": "PDF pp. 1–2, 5 and 38–39 via sorted text; cover and appendix anchors.",
+      "physical_pages": 88
+    },
+    {
+      "title": "FAA 1280.1B explicitly marked Change 1 URL",
+      "file": "change.pdf",
+      "url": "https://www.faa.gov/documentLibrary/media/Order/FAA_Order_1280.1B_w-chg1.pdf",
+      "access_utc": "2026-11-06T06:19:25Z",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 1503305,
+      "sha256": "9081b159dd70b9a1c0f7876ac58fd25bef18860844598284c232f23586ac1bfe",
+      "reading_scope": "PDF pp. 1–2 and 38–39 via sorted text; appendix comparison.",
+      "physical_pages": 88
+    },
+    {
+      "title": "Public Law 106-181",
+      "file": "act.pdf",
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-106publ181/pdf/PLAW-106publ181.pdf",
+      "access_utc": "2026-11-06T06:19:26Z",
+      "http_status": 200,
+      "media_type": "application/pdf",
+      "bytes": 544944,
+      "sha256": "7a629e515e95e314cb7cb3e2100b3bbcd0c7b69c8c1435469c2cf1c2ac337204",
+      "reading_scope": "Sections 307(a) and 308(b), PDF pp. 64–66. Historical enactment, no full amendment-history audit.",
+      "physical_pages": 137
+    }
+  ],
+  "failed_contextual_pdf_routes": [
+    {
+      "url": "https://www.gao.gov/assets/gao-10-89.pdf",
+      "http_status": 403,
+      "access_utc": "2026-11-06T06:19:26Z",
+      "body_acquired": false
+    },
+    {
+      "url": "https://www.transportation.gov/sites/dot.gov/files/docs/faa_fy_2010_budget_estimate.pdf",
+      "http_status": 403,
+      "access_utc": "2026-11-06T06:19:26Z",
+      "body_acquired": false
+    }
+  ],
+  "appendix_comparison": {
+    "method": "PyMuPDF get_text(sort=True), UTF-8 exact equality",
+    "body_hashes_match": false,
+    "both_have_change_1_cover": "08/16/2011",
+    "appendix_text_sha256_by_physical_page": {
+      "38": "754212a15382e243278431b21ecf6c38be2c65f5a1cc15e5cb943923f71a9545",
+      "39": "183047c1df51c64d7f0db2ce0639cf0bf6732858059e3a6dd5ec7c86dc9ce4c1"
+    }
+  },
+  "scan_method": "Tesseract PSM 3, in-memory 1.6x grayscale render for navigation; selected FAA pp. 33–34 and Alaska p. 19 visually read at 1.75x. OCR errors retained as derivative text.",
+  "limits": "Policy and custody-route comparison only. No individual decision or database entry, case-specific disposition, corrected answer, or receipt reviewed."
+}

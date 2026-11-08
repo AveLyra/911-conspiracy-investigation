@@ -26,6 +26,9 @@ The [FAA Executive Summary version index](broader-evidence/faa-executive-summary
 
 Three DOJ record-trail reviews cover the [Box 20 request and passenger-call packets](broader-evidence/telephone-doj-packet-index-2026-11-06/README.md), [Commission production schedules](broader-evidence/telephone-doj-commission-production-2026-11-06/README.md), and [Watch Log retention series](broader-evidence/telephone-doj-watchlog-record-series-2026-11-06/README.md). They identify distinct records and custody routes; they did not recover the original September 11 Watch Log or establish a call connection.
 
+
+The [FAA correspondence-control review](broader-evidence/faa-aoa3-correspondence-control-2026-11-06/README.md), [personnel-records review](broader-evidence/faa-employee-relations-tracker-and-appeals-2026-11-06/README.md), and [separate OSC case comparison](broader-evidence/faa-osc-response-record-chain-2026-11-06/README.md) identify possible record series and distinguish an unrelated comparator from the 2006 referral. They do not establish a case-specific decision, correction or delivery.
+
 [Branch-to-main preservation manifest](branch-consolidation-2026-11-08/README.md).
 
 ## Urban Moving Systems and Florida art-sales leads — November 5, 2026

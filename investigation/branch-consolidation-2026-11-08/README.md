@@ -36,4 +36,13 @@ A fourth batch preserved three DOJ telephone and record-custody reports and sour
 | Commission production | `codex/telephone-doj-commission-production-2026-11-06` · `1c1d171a` | [Report](../broader-evidence/telephone-doj-commission-production-2026-11-06/README.md) |
 | Watch Log record series | `codex/telephone-doj-watchlog-record-series-2026-11-06` · `0deff1f3` | [Report](../broader-evidence/telephone-doj-watchlog-record-series-2026-11-06/README.md) |
 
+
+A fifth batch preserved three FAA response and record-series reviews with their source pins unchanged:
+
+| Topic | Source branch and tip | Main location |
+|---|---|---|
+| FAA employee-relations records | `codex/faa-employee-relations-tracker-and-appeals-2026-11-06` · `2c561583` | [Report](../broader-evidence/faa-employee-relations-tracker-and-appeals-2026-11-06/README.md) |
+| FAA correspondence control | `codex/faa-aoa3-correspondence-control-2026-11-06` · `2b030c70` | [Report](../broader-evidence/faa-aoa3-correspondence-control-2026-11-06/README.md) |
+| Separate OSC record comparison | `codex/faa-osc-response-record-chain-2026-11-06` · `b5fcbdcc` | [Report](../broader-evidence/faa-osc-response-record-chain-2026-11-06/README.md) |
+
 The branch reports sometimes refer to earlier or later analyses and to sources held outside the repository. Their links and source-availability statements must be read as dated; the copies here do not imply that an original interview, workbook, transfer order or specimen record has been recovered. The public index carries a later qualification where applicable. The research branches have not all been compared to main, and no completeness claim follows from this batch.
