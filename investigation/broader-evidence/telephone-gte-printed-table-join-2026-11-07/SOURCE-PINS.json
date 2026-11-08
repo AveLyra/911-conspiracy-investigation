@@ -1,0 +1,138 @@
+{
+  "study": "telephone-gte-printed-table-join-2026-11-07",
+  "track_ids": [
+    "TEL02",
+    "TEL03",
+    "AUD016-A1"
+  ],
+  "source": {
+    "archive_url": "https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip",
+    "member_path": "NARA_9-11_Commission_Records_Released_Jan_14_2009/911 NARA/Team 7 Files/Team 7 Box 13/T7 B13 Flight GTE Phone Records Fdr- Entire Contents 788.pdf",
+    "member_offset": 2778074170,
+    "member_crc32": "ea7caa8c",
+    "bytes": 1597265,
+    "sha256": "4e8a891c1b18ed60587d99d50222c7a8bdca2b5e8dbb56c544e2a3b43abd3d8b",
+    "pdf_pages": 41,
+    "acquisition_date_eastern": "2026-11-06",
+    "acquisition_date_basis": "Date in owning source-acquisition report; no exact UTC acquisition timestamp in its ACQUISITION.json.",
+    "new_download_this_unit": false,
+    "relationship": "Held third-party reproduction of Commission/FBI carrier-table material; no native workbook or exact agency-release-disk authentication."
+  },
+  "reading": {
+    "review_utc": "2026-11-08T02:37:09.181553+00:00",
+    "page_images_read": [
+      1,
+      2,
+      3,
+      5,
+      12,
+      13
+    ],
+    "mechanical_header_token_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "line_method": "PyMuPDF page.get_text().splitlines(), one-based physical PDF page; exact word bboxes use page.get_text('words') and PDF points from top-left.",
+    "versions": {
+      "python": "3.13.7",
+      "pymupdf": "1.27.2.2"
+    }
+  },
+  "join": {
+    "rule": "^(20010911[0-9]{6})(?:$|[^0-9])",
+    "regions": {
+      "1": [
+        195,
+        190,
+        315,
+        315
+      ],
+      "13": [
+        165,
+        82,
+        275,
+        205
+      ]
+    },
+    "accepted_keys_by_page": {
+      "1": 9,
+      "13": 9
+    },
+    "exact_shared_keys": 8,
+    "page1_only_in_parsed_subset": 1,
+    "page13_only_in_parsed_subset": 1,
+    "uniqueness_scope": "Each selected text-layer region only; not globally unique carrier identifiers.",
+    "limits": "Whole raw words retained locally without OCR repair. No person, successful-call, time/duration, native-row or flight attribution established by this subset join."
+  },
+  "locators": {
+    "page1": {
+      "evidence_header_lines": [
+        1,
+        22
+      ],
+      "call_key_header_line": 26,
+      "visual_item_rows": 11
+    },
+    "page3": {
+      "extracted_header_line": 2,
+      "extracted_header_literal": "SCPAIR SCP CAR SCP CARD ID SCP CAR SCP...CAR CARDJY CARD ID BILL CCS.NAMEIICHR(95)",
+      "literal_name_token": "#NAME?",
+      "literal_name_token_count": 3,
+      "token_bboxes_pdf_points": [
+        [
+          498.0,
+          98.19,
+          533.15,
+          110.83
+        ],
+        [
+          498.24,
+          128.19,
+          533.98,
+          140.83
+        ],
+        [
+          498.24,
+          138.03,
+          534.0,
+          150.67
+        ]
+      ],
+      "visual_header_reading": "The name-expression separator could be vertical bars or letter-like glyphs at this image scale; no corrected header adopted."
+    },
+    "page5": {
+      "extracted_operator_header_line": 3,
+      "visual_connect_header": "DURATIONCONNECT",
+      "visual_operator_header": "DURATION OPERATOR",
+      "call_key_repeat": "Not established on this page; no row-order duration join adopted."
+    },
+    "page12": {
+      "visual_data_rows": 2
+    },
+    "page13": {
+      "key_region_pdf_points": [
+        165,
+        82,
+        275,
+        205
+      ],
+      "visual_duration_header": "SCP DUR",
+      "nearby_truncated_header": "DURATIO"
+    }
+  },
+  "prior_report_url": "https://github.com/AveLyra/911-conspiracy-investigation/blob/b4b1ce31bf517f0c57e42f175667b7b3a5cd475b/investigation/broader-evidence/telephone-request14-fax-mirror-2026-11-06/README.md",
+  "privacy": "No raw scans, diagnostic images, raw call keys, phone/card/account values, customer names, private correspondence or case strategy in this public payload.",
+  "full_original_acceptance_criterion_closed": false
+}
