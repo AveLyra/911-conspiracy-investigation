@@ -44,6 +44,8 @@ The [WTC access and Exxon cross-check](urban-moving-systems/zim-exxon-record-cro
 
 The [Classic phone-list and federal carrier follow-up](urban-moving-systems/classic-regulatory-followup-2026-11-06/README.md) preserves six original public FMCSA query captures, the typed-list lead, the Hanover endorsement and a date-field control comparison. It does not establish a call, customer transaction, regulatory cause or intelligence role.
 
+The [three-trail primary-source verification](broader-evidence/three-trail-primary-verification-2026-11-06/README.md) compares a K-1 specimen mount photograph with a NIST figure and separates that match from the unresolved K-13 custody chain. It also traces the Flight 93 text-reproduction limitation and identifies vessel-log and last-steel-load record leads; it does not identify a specific shipment or UMS connection.
+
 ## November 7: consolidated source checks
 
 The [mural-truck, Philadelphia and WTC security reviews](urban-moving-systems/consolidated-source-checks-2026-11-07/README.md) compare vehicle identifiers, reported moving deliveries, cameras, canine deployments and a reported power-down. They preserve unresolved links and contrary evidence; none establishes a UMS role in WTC explosives or coordination with hijackers.
