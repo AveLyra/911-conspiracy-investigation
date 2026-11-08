@@ -40,6 +40,8 @@ The [research catalogue and recent publication index](recent-research-2026-11-06
 
 The [carrier, K-13 and debris-ticket source check](broader-evidence/three-record-trails-source-check-2026-11-06/README.md) preserves the corrected-spreadsheet shipment and FBI interview locators, the 2009 return of approximately 230 NIST items without assuming K-13 was among them, and the unresolved differences between separate pier descriptions. These locators do not establish a change in caller attribution, a specimen custody chain or a particular debris shipment.
 
+The [WTC access and Exxon cross-check](urban-moving-systems/zim-exxon-record-crosscheck-2026-11-07/README.md) separates an unidentified utility-van account, dated Gulf inventory entries and redacted phone entries. It also identifies badge and building-record limitations. None establishes a UMS WTC job, a van identification, or advance knowledge.
+
 ## November 7: consolidated source checks
 
 The [mural-truck, Philadelphia and WTC security reviews](urban-moving-systems/consolidated-source-checks-2026-11-07/README.md) compare vehicle identifiers, reported moving deliveries, cameras, canine deployments and a reported power-down. They preserve unresolved links and contrary evidence; none establishes a UMS role in WTC explosives or coordination with hijackers.
