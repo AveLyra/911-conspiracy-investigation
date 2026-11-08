@@ -1,0 +1,105 @@
+--- preserved-2026-10-30-signal-report/README.md
++++ 2026-11-08-unmatched-suffix/REPORT-v2.md
+@@ -1,69 +1,57 @@
+-# Court audio representations: strong overlap correlation, incomplete coverage
++# Ong court-resource suffix: low energy, mostly nonzero, no exact earlier repetition
+ 
+-October 30, 2026. AUD016-A1 / TC05-B105 / TC06-B110 / TEL02. New local same-decoder signal test. **Local reviewed candidate; no public push is claimed.** The original-record plan, all five tracks and eighteen substantive criteria remain open.
++November 8, 2026. AUD016-A1 / TC05-B105 / TC06-B110 / TEL02. New bounded numerical inspection of one court-presentation representation. This completes the specified suffix energy/exact-repetition test; it does not complete the telephone original-record track or any of the five-track goal's eighteen original requirements.
+ 
+-## What the test found
++## New observation and its practical limit
+ 
+-The previously identified event-resource and root-stream MP3 bytes differ in both files. **Their decoded comparison signals nevertheless show strong correlation over a fitted overlap:** about **0.958 for Lyles.swf** and **0.916 for Ong.swf**. All 28 tested ten-second windows favored zero additional local shift within the predefined local search. This supports related signal structure across those overlaps. It does not establish identical words, full recordings, speaker identity, authentic source provenance or what the presentation actually played.
++The previously unexamined **51,800-sample suffix** has RMS **0.00021009043497643182**, versus **0.20718791958619895** for the immediately preceding equal-length segment: a ratio of **0.0010140090956848732**, about one-thousandth. **51,290 samples are nonzero; 510 are numeric zero**, or about **0.98456%** zero. The longest exact-zero run is **456 samples**. These are properties of the specified derived mono8,000Hz float32 view, not a classification of what someone would hear.
+ 
+-The Ong event resource also has an unmatched tail of **51,800 samples in the derived 8,000-Hz view**, nominally **6.475 seconds**, after the fitted overlap. Its content was not listened to or classified. Do not call it silence, removed speech, fabrication or an export artifact. Both the strong matching structure and the coverage difference must be retained.
++The complete suffix and each of seven predefined blocks have **zero byte-identical, sample-aligned occurrences earlier in that same event analysis view**. All eight searches completed without reaching their cap. This rules out the narrowly specified all-zero suffix and exact earlier full-suffix duplication hypotheses in this representation. It does not exclude approximately repeated audio, re-encoding or gain differences.
+ 
+-This weakens an interpretation that the earlier byte nonmatches alone demonstrated unrelated audible content. It does not resolve why the representations differ. Re-encoding, latency/padding, content selection and other preparation differences remain hypotheses, not adopted explanations.
++**Do not treat the extra nominal 6.475seconds as established omitted speech, or call it silence, an encoding artifact, deceptive editing or added content.** No listening, semantic classification, source master, edit/export project or actual Flash playback test was performed. Low signal energy does not determine intelligibility. The origin and cause of the coverage difference remain unresolved.
+ 
+-## Original inputs and actual scope
++## Source and transformation chain
+ 
+-Only two archive members, **Lyles.swf** and **Ong.swf**, were read from the held [official court ZIP](https://coop.vaed.uscourts.gov/moussaoui/flights.zip), SHA-256 **3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801**. Member names are source labels, not identities authenticated here. The long root DefineSound1 resource and concatenated root MP3 streaming payloads were reconstructed with the existing bounded tag walker, and verified against the exact hashes in the [preceding static comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/39b64108cf112760b162bd176a6d4c80a86c55ca/investigation/broader-evidence/telephone-sound-controls-2026-10-30/README.md).
++The unchanged [official court archive](https://coop.vaed.uscourts.gov/moussaoui/flights.zip) was accessed from the identity-verified operational media store. The archive was previously acquired October27,2026; this unit re-read the held bytes, without a new network acquisition. Archive SHA256 **3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801**. Only **Ong.swf**, member SHA256 **8c844a2370852e55597a4aa73ef8b8ff0e6c03e3fec982a9cd98aeb937e5a3ec**, was inspected. Its filename is a distribution label, not authenticated caller identity. The [court item page](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html) labels a combined trial presentation; that label supplies no individual recording custody chain and does not make this an AA77-specific call test.
+ 
+-No source audio or SWF was overwritten, trimmed, corrected or selected as the true record. Each MP3 sequence was decoded to original-rate/channel signed16 PCM in memory; its sample count and hash were retained. Separately, FFmpeg generated a **derived mono 8,000-Hz float32 analysis view** for comparison. This resampling is a disclosed transformation for the test, not replacement evidence or a corrected duration. All original fields and source byte differences remain preserved.
++The long root DefineSound1 tag starts at uncompressed offset **26**. Its MP3 payload has SHA256 **b1340270d0e8f4b159bb4b057ea57ec227cd021fb12dc5fd37a46b7e3e9b78b5**. The already published [pinned resource walker](https://github.com/AveLyra/911-conspiracy-investigation/blob/3b1c9b18434e58faef2e7f22b4e457af387d856c/investigation/broader-evidence/telephone-court-audio-resources-2026-10-29/reproduce_resources.py) was reused after code/hash inspection; it is not an independent parser. The member was passively unpacked; SWF scripts and launchers were never executed.
+ 
+-SWF SeekSamples, root-frame delays, envelope/button/action behavior and per-block player seeking were **not applied**. Concatenated stream decoding is not an actual Flash playback reconstruction. No audio was played, listened to, transcribed, uploaded or saved as a new media file. No voice/caller, carrier-event, operational clock, source-custody or historical-cause authentication was performed. Recorder/materials-owner technical work was not duplicated.
++The earlier [signal comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/6dffea2a1a83972f3fad87c2e6ba4d39473099f8/investigation/broader-evidence/telephone-signal-alignment-2026-10-30/README.md) located an event overlap **[27,1,928,909)** against stream **[0,1,928,882)** and an event suffix **[1,928,909,1,980,709)**. Those fitted ranges were reused as qualified locators, not fitted again. No previous global correlation or28-window search was repeated. Array positions are zero-based, half-open, and are not historical clock times.
+ 
+-## Predefined method and controls
++Both the native decode and derived view reproduced the exact earlier hashes before any suffix metric was accepted. Native output: **2,729,664 samples at11,025Hz**, SHA256 **3f63b0884240c467a8f3e2570314a1c2b6e814d79feb3327aff62ccab7cfc229**. Derived mono8,000Hz float32 view: **1,980,709 samples**, SHA256 **3b9b7033b8ac59b93f8a2d3bba378cf5e7e3cc581b0bf417281759d9b8063990**. Original source fields remain **declared2,726,784 samples, SeekSamples1,669 and rate_code1**; these source and decoded quantities are retained separately, with no cause adjudicated. They were already reported and are not newly discovered mismatches.
+ 
+-The protocol and polarity clarification were saved before decoding. The search used overlap-local Pearson correlation, nominal lags within **±30 seconds** of the derived view, at least **80% of the shorter view** and at least **30 seconds** overlap. It retained greatest signed and greatest absolute coefficients with polarity, using the latter for indexing. Lag convention: **event[k + lag] aligns with stream[k]**. The strongest alternative outside ±0.25 seconds of the peak was recorded as an ambiguity diagnostic, not a probability.
++No SeekSamples/player delay, stream-block seeking, envelopes or button/action timing was applied. Earlier event/stream byte nonidentity, strong overlap correlation and unequal coverage all remain preserved. This unit decoded only the event object and did not independently revalidate the earlier stream/fit.
+ 
+-Consecutive full **ten-second windows** covered the overlap; each had a local ±one-second search with at least 90% overlap. The leftover partial window was explicitly reported, not silently counted as a full-window test. Pearson centering is part of the comparison statistic; it does not change stored originals. Numerical values are descriptive, not confidence levels or percentages of identical content, conversation coverage or proof.
++## Predeclared measurements and exact locators
+ 
+-Before source data, deterministic cropped/gain/DC and inverted-polarity controls recovered the expected **+137-sample lag**, with signed correlations near **+1 / −1**. The unrelated-noise control's maximum absolute correlation was **0.0185523**, below the predefined 0.1 bound. Selected FFT coefficients agreed with direct overlap Pearson calculations within the fixed **1e−9** tolerance. These control algorithm indexing/numerics, not recording provenance or the likelihood that a real unrelated recording would match.
++The native prospective protocol was frozen before source decoding; its [public derivative](PROTOCOL.md) omits local coordination/status notes and retains every analytical gate, method and acceptance criterion. SOURCE-PINS records both hashes. Metrics are defined in [inspect_suffix.py](inspect_suffix.py#L39); full-pattern byte searches, sample alignment and cap in [line54](inspect_suffix.py#L54); controls in [line76](inspect_suffix.py#L76); source/hash/decode gates from [line114](inspect_suffix.py#L114); suffix/context selection from [line178](inspect_suffix.py#L178); predefined block traversal from [line184](inspect_suffix.py#L184). [RESULTS.json](RESULTS.json) retains every numeric result, command argument, software hash, control and exact sample range. [SOURCE-PINS.json](SOURCE-PINS.json) records the source relationships and reading scope.
+ 
+-Actual invocation versions: **Python 3.12.14, NumPy 2.3.5, FFmpeg/ffprobe 7.1.1**. SciPy was not installed or used. This is one decoder family; it is **not independent decoder validation**. The helper is reused code, not an independent parser implementation. Earlier software-version and independence qualifications remain preserved.
++The fixed context is event samples **[1,877,109,1,928,909)**. Suffix peak absolute value is **0.007089907303452492**; context peak is **1.187409520149231**. These float-view amplitudes were neither normalized nor converted into an audibility threshold. All sample values are finite. Numeric-zero counting treats +0 and -0 as equal; exact-byte repetition distinguishes their bit patterns.
+ 
+-## Results — all units and nonmatches retained
++| Event analysis sample range | Samples | Numeric zeros | RMS | Earlier exact matches |
++|---|---:|---:|---:|---:|
++| [1,928,909, 1,936,909) | 8000 | 0 | 0.000209113518272 | 0 |
++| [1,936,909, 1,944,909) | 8000 | 0 | 0.000153230998574 | 0 |
++| [1,944,909, 1,952,909) | 8000 | 0 | 0.000182551506267 | 0 |
++| [1,952,909, 1,960,909) | 8000 | 0 | 0.000247336850662 | 0 |
++| [1,960,909, 1,968,909) | 8000 | 456 | 0.000254521392782 | 0 |
++| [1,968,909, 1,976,909) | 8000 | 0 | 0.000170603132237 | 0 |
++| [1,976,909, 1,980,709) | 3800 | 54 | 0.000252140938772 | 0 |
+ 
+-| Observation | Lyles.swf | Ong.swf |
+-|---|---:|---:|
+-| Event PCM samples / decoded rate | 1,987,200 / 44,100 Hz | 2,729,664 / 11,025 Hz |
+-| Stream PCM samples / decoded rate | 498,240 / 11,025 Hz | 2,658,240 / 11,025 Hz |
+-| Event analysis-view samples | 360,490 | 1,980,709 |
+-| Stream analysis-view samples | 361,534 | 1,928,882 |
+-| Best signed correlation | **0.9578656805** | **0.9163875372** |
+-| Fitted lag, analysis samples | **−1,185** | **+27** |
+-| Same lag divided by analysis rate | −0.148125 s | +0.003375 s |
+-| Overlap, analysis samples | 360,349 | 1,928,882 |
+-| Event unmatched prefix / suffix | 0 / **141** | **27 / 51,800** |
+-| Stream unmatched prefix / suffix | **1,185 / 0** | 0 / 0 |
+-| Full ten-second windows | 4 | 24 |
+-| Window correlation range at global alignment | 0.9344818–0.9674526 | 0.8729159–0.9452028 |
+-| Best additional local lag in every full window | 0 samples | 0 samples |
+-| Partial overlap tail outside full-window test | **40,349 samples** | **8,882 samples** |
+-| Strongest alternative outside peak's ±0.25 s | −0.0153938 at −21,829 samples | +0.0077227 at +34,378 samples |
++The last block is a **3,800-sample partial block**, not another full second. Each exact search used the complete target bytes in earlier event samples **[0,1,928,909)**, excluded byte-misaligned starts and never compared the suffix with itself. There was no approximate or semantic repetition search.
+ 
+-Seconds in this table are **nominal analysis-array units**, not a calibrated historical call clock. Only the specified lag range/overlap/window conditions were tested. Stable best local offsets do not exclude brief edits, changed words, low-energy differences or other untested runtime processing. Whole-overlap correlation includes the partial tail, but that tail received no separate ten-second local-lag test.
++## Verification actually performed
+ 
+-Event PCM hashes reproduce the prior standalone decoder results. Each stream PCM count equals the previously parsed sum of its root block SampleCount prefixes. Those are positive consistency observations, not proof the entire call is present. The prior Ong **2,880-sample decoded-versus-declared** difference and event/stream seeking and rate fields remain unchanged. We did not subtract metadata values or apply them to force agreement with the fitted lags.
++Seven synthetic checks passed before source decoding: all-zero metrics/run, constant nonzero RMS/mean, known exact-repeat locations, rejection of byte-misaligned matches, seeded random nonrepeat, signed-zero distinction and nonfinite rejection. These check implementation and indexing; they do not authenticate historical evidence.
+ 
+-[RESULTS.json](RESULTS.json) retains all 28 window rows, signed/alternative peaks, exact overlap/unmatched ranges, source/PCM/view hashes, amplitudes, controls, versions, options and limits. It omits only decoder stderr diagnostic strings from its comparison projection; each full unmodified run log remains local with its own fingerprint. The first full log is **57,936 bytes**, SHA-256 **d4a83ea2ad412da6a4fb62aeefdeb81ddabe1e0feec2c8ff50cae284c80574f1**. It is a test-output hash, not an original recording hash.
++Two executions produced **byte-identical complete JSON output**, SHA256 **19476cfdc2bc6c19ac97194d394bfbb204ad67b1365d4376c9c213b65a363d65**, with exit0 and empty process stderr. Actual environment: **Python3.13.7, NumPy2.3.4, FFmpeg/ffprobe7.1.1**. Python and NumPy differ from the earlier study's3.12.14/2.3.5; the FFmpeg/ffprobe full version-output hashes and both audio-view hashes match the earlier values. This is same-family reproducibility using reused parsing code, **not independent decoder validation**. No software was installed.
+ 
+-## Interpretation, strongest objection and open questions
++Source audio, PCM and arrays stayed in memory. No audio was played, transcribed, uploaded or saved; no waveform, voice identification or source recording was published. [Reproduction instructions](REPRODUCE.md) state the exact inputs and boundaries. The [text diff](TEXT-CHANGES.diff) compares this new unit with the immediately preceding preserved report; it does not mean that report or its open questions were overwritten.
+ 
+-**Supported:** within this same-decoder, disclosed-resampling method, the two representations in each file share strongly aligning waveform structure over the reported overlap. The new data should accompany the earlier byte nonmatches when assessing that lead.
++## Interpretation, contrary possibilities and remaining TODOs
+ 
+-**Not established:** semantic identity, complete conversation coverage, innocence or deception, exact export/encoding cause, original speakers, source custody, carrier call records, or historical timing. Pearson correlation can coexist with different words or unmatched material. Related copies and dependent tests are not independent corroboration. The unmatched Ong tail is a specific remaining target, and high correlation does not authorize explaining it away.
++The all-zero hypothesis is contradicted by the nonzero samples. The exact earlier-duplication hypothesis is contradicted within the specified byte-equality search. Neither was an established historical finding in the prior report. This is a narrower result than identifying speech or proving an edit. Low-level recorded content, preparation/encoding behavior, player treatment and other causes remain untested possibilities; no preferred explanation is selected. A source-native master and preparation/runtime records could distinguish them.
+ 
+-The next discriminating inputs are original/received recordings, edit/export/source-member mappings, authoring/runtime documentation, custody/release and exhibit-construction records, and actual carrier/operator/recipient/clock joins. A separately scoped examination of unmatched regions could characterize their signal properties; their content has not been established. [OPEN-TODOS.md](OPEN-TODOS.md) preserves these and the other track dependencies.
++Still unperformed: listening/transcription; approximate repetition; independent decoder/parser; actual player reconstruction; the other unmatched prefix/suffix regions; original master/custody/receipt/release/edit/export/source-member joins. The native carrier/operator/recipient records, event definitions, clocks, full Request14 delivery, usage-report attachments and source-to-call/exhibit joins remain necessary. The official Keyton interview already acquired is retained as acquired; its outstanding joins are not relabeled wholly missing. This suffix test cannot resolve AA77 zero-duration semantics or establish a complete call history.
+ 
+-## Preservation, reproduction and publication state
+-
+-[compare_decoded_signals.py](compare_decoded_signals.py) and [REPRODUCE.md](REPRODUCE.md) define the fixed computation. A second run must preserve full logs and compare every non-diagnostic field, exact for bytes/hashes/counts/versions/parameters and within 1e−9 for floating metrics. Only raw decoder stderr, which can include variable memory addresses, is omitted from that explicitly defined comparison projection; it is not erased from the full logs. An actual reproduction receipt is separate from a promised pass.
+-
+-[SOURCES.json](SOURCES.json), [CHECKLIST.md](CHECKLIST.md), [REVISION.diff](REVISION.diff) and [MANIFEST.json](MANIFEST.json) retain source locators, requirement outcomes, exact additive text/code/results changes and companion hashes. Earlier source reports and discrepancies remain frozen. No public push is claimed: the existing AveLyra SSH identity was not listed by the configured agent in the current read-only check; authentication restoration is a publication TODO, not a reason to alter credentials or use another identity.
++FAA corrected QFR/receipt, signed action/no-action and separate recommendation outcomes remain open. Recorder configuration/custody/clock and materials specimen/run/native-instrument inputs retain their existing technical owners. Steel preservation decisions, inventories/transfers, building-attribution rationale and contractor review/delivery remain open. No core acceptance criterion is closed by this result. The next discriminating evidence is the source recording/preparation/custody chain, followed by the appropriate source-to-call join; a new summary or repeated hash check cannot substitute for it.

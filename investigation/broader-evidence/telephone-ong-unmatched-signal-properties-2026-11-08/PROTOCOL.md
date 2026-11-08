@@ -1,0 +1,34 @@
+# Prospective unmatched-region signal protocol
+
+Frozen before decoding for this unit. Existing IDs: AUD016-A1 / TC05-B105 / TC06-B110 / TEL02. This is a continuation of the explicitly open unmatched-region test in telephone-signal-alignment-2026-10-30/OPEN-TODOS.md item 3. The full five-track goal and all 18 original requirements remain unchanged and incomplete.
+
+## Authority and scope
+
+Earlier sources, reports, results, conflicts and public history are preserved. This public protocol derivative omits local coordination/status notes; the analytic inputs, gates, methods and acceptance criteria below are unchanged from the prospectively frozen original. No playback, transcription, voice identification, source execution or physical experiment. The original court ZIP is operational media and must be resolved by tools/media_path.py against the mounted, identity-verified Intel store; no fallback to preserved media. No new audio, PCM, waveform, image, numerical array or source-media file will be saved or uploaded. Only code, aggregate metrics, hashes and provenance are outputs.
+
+## Inputs and gate
+
+Read only Ong.swf in the held official court flights.zip (https://coop.vaed.uscourts.gov/moussaoui/flights.zip), archive SHA256 3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801. Court distribution provenance does not authenticate original recording provenance or caller identity. Existing bounded resource walker SHA256 2af3d0339c5ca876255948a014205f8caa6ff019c1303e79a0ba774a22f36ade must match before import; inspect code and use only unpack/walk. Prior result JSON SHA256 69cfad84300eec262fcc71bd71bd395e01d97e234d498cd74776af0e62bb7e33 is a preserved baseline, not an independent experiment. Member SHA256 8c844a2370852e55597a4aa73ef8b8ff0e6c03e3fec982a9cd98aeb937e5a3ec; root DefineSound 1 at uncompressed tag offset26; MP3 payload SHA256 b1340270d0e8f4b159bb4b057ea57ec227cd021fb12dc5fd37a46b7e3e9b78b5.
+
+Reuse the exact earlier FFmpeg probe/native/view command arguments, retaining original source fields. Require native PCM SHA256 3f63b0884240c467a8f3e2570314a1c2b6e814d79feb3327aff62ccab7cfc229 and 2729664 samples at11025Hz, plus derived mono8000Hz f32le view SHA256 3b9b7033b8ac59b93f8a2d3bba378cf5e7e3cc581b0bf417281759d9b8063990 and1980709 samples. If any gate fails, save the failure and stop this historical-region measurement; never adjust source/settings to force a match. Record actual Python/NumPy and complete FFmpeg/ffprobe version-output hashes. Current Python3.13.7/NumPy2.3.4 differ from the earlier3.12.14/2.3.5; no independent decoder/parser validation is claimed.
+
+## Predeclared region and measurements
+
+Use the earlier fitted event overlap [27,1928909) and stream [0,1928882) as a qualified existing locator, without rerunning any global fit or 28-window correlation. The suffix is event analysis samples [1928909,1980709), zero-based half-open, length51800; nominal6.475seconds in this derived view. Its absolute sample positions are not historical clock times. Do not apply SWF SeekSamples, player delays, envelopes or runtime controls. Concatenated stream/standalone event decoding is not actual Flash playback reconstruction.
+
+1. Reject nonfinite float values. For the complete suffix, compute exact numeric-zero/nonzero counts, zero fraction, longest exact-zero run, mean, RMS, absolute peak, minimum and maximum. Numeric zero includes +/-0. These are mathematical properties of the derived view, not audibility or speech classification.
+2. Compute the same metrics for six consecutive8000-sample blocks and one final3800-sample block. Preserve the partial block as such.
+3. Use the immediately preceding51800-sample event range [1877109,1928909) as a fixed equal-length context. Report its metrics and suffix/context RMS ratio when defined; do not tune a threshold or select another context after inspection.
+4. Search for byte-identical repetition of the entire suffix and each of the seven specified suffix blocks only within event analysis samples [0,1928909). Use Python bytes.find on full f32le target bytes, retain only starts divisible by4 and matches ending before the suffix. Count sample-aligned matches, retain first10 offsets, cap at10000 raw byte matches with a clear incomplete flag. An exact-byte nonmatch does not exclude repeated words, approximate repetition, re-encoding or gain differences. Exact repeated zeros can be ordinary digital zeros; exact repetition never establishes motive.
+
+## Controls and observable acceptance
+
+Before decoding source data, synthetic controls must establish: all-zero metrics/count/run; constant-nonzero RMS/mean; known short exact repetition at expected sample-aligned positions; identical bytes at a misaligned byte position excluded; a seeded random nonrepeat negative; signed zeros numeric-equal but byte-sensitive. These control only implementation and indexing. The read-only source test succeeds as a bounded measurement only if all source/native/view gates match and all predeclared metrics/searches complete, with limits explicit. If an exact-search cap is reached, that search remains incomplete regardless of other passes.
+
+Save exact code, frozen protocol and hash, raw JSON output/stderr/exit, source pins, actual command/tool versions, source-linked report with exact code/sample/tag locators, point-by-point checklist and exact diff against the preserved earlier report. A second execution is justified only to verify a new result or fix a recorded failure; it is same-tool reproducibility, not independence. Publish only reviewed original analysis/aggregate metadata and source links using verified AveLyra identity/destination and exact remote file evidence. Source media and speech remain outside payload.
+
+## Interpretation and dependencies
+
+Predefined digital-zero hypothesis: every suffix sample equals numeric zero. Repetition hypothesis: the full suffix is byte-identical to an earlier contiguous event region. Report each separately with its actual result; do not convert either into an account of creation, intentional removal, insertion, authenticity, who spoke or what viewers heard. No probability of conspiracy follows. Earlier high correlation and byte differences remain side by side without a preferred source or resolved cause.
+
+Unperformed: semantic listening/transcription, independent decoder/parser, actual player reconstruction, native source/custody/edit/project/authoring joins, carrier/operator/caller/recipient/clock/usage/exhibit joins, AA77 zero-duration semantics. FAA original QFR/receipt/signed decision/recommendation outcomes; recorder configuration/custody/clock and materials native specimen/instrument inputs; steel preservation/inventory/attribution/contractor originals remain open under their assigned owners. This test cannot complete those requirements.
