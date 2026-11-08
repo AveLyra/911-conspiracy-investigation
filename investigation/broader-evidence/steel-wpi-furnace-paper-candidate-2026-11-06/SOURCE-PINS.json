@@ -1,0 +1,221 @@
+{
+  "sources": {
+    "paper-scan": {
+      "url": "https://www.metabunk.org/attachments/metallographic-examination-of-heavily-eroded-structural-steel-fomr-wtc-1-2-7-pdf.2411/",
+      "acquired_utc": "2026-11-06T02:31Z",
+      "sha256": "1f7e53a9e6b0ab3eb8ff16721a0eff1b344f0ec237b0c24cd786fbdedda38fcb",
+      "bytes": 1222460,
+      "locators": "10 image-only pages. Title and authors visually matched; exact edition unverified."
+    },
+    "deck": {
+      "url": "https://web.wpi.edu/Images/CMS/MCSI/2005biederman2.pdf",
+      "acquired_utc": "2026-11-06T02:24Z",
+      "sha256": "ff0723ddd1ba6fb341f23d80ea9a2f5bec45768019023cd35cf841301336ebb7",
+      "bytes": 11729600,
+      "locators": "Physical pp. 11, 79\u201383; XREF 414 appears on p. 81."
+    },
+    "ims-paper": {
+      "url": "https://web.archive.org/web/20060901142853id_/http://www.me.wpi.edu/MTE/People/Images/IMSBiedermanA2.pdf",
+      "acquired_utc": "2026-11-06T02:33Z",
+      "sha256": "be6e0a0eafb3822f9d570cc38a714fa4e41d47033fcf3d92465d9ce2ee20c655",
+      "bytes": 169174,
+      "locators": "Physical p. 1, default text lines 20\u201331."
+    },
+    "seminar": {
+      "url": "https://web.archive.org/web/20031116090854id_/http://www.me.wpi.edu:80/MTE/News/seminars3.html",
+      "acquired_utc": "2026-11-06T02:33Z",
+      "sha256": "beaa4f97b563c2a5034990059fc7adf01ee99a35ad64d72d82763a2da30456a2",
+      "bytes": 12207,
+      "locators": "HTML lines 231\u2013251."
+    },
+    "fema-c": {
+      "url": "https://www.nist.gov/system/files/documents/2017/05/09/AppendixC-fema403_apc.pdf",
+      "acquired_utc": "2026-11-06T02:24Z",
+      "sha256": "1ba3d613b39a925ee64b99c7634e47829cbbbdeba8f976c552777e0c44c53951",
+      "bytes": 2138891,
+      "locators": "Physical p. 2, lines 9\u201311."
+    },
+    "pretoria": {
+      "url": "https://www.saimm.co.za/Journal/v104n08p461.pdf",
+      "acquired_utc": "2026-11-06T02:30Z",
+      "sha256": "10bb3d76b01fb0efb74019a08b404dae2a5ce82fa9ef08b0d94ec95c1a52656a",
+      "bytes": 552386,
+      "locators": "Physical p. 14, lines 113\u2013116."
+    }
+  },
+  "additional_locators": [
+    {
+      "url": "https://philarchive.org/archive/REDTPO-8",
+      "locator": "Reference 52",
+      "representation": "Indexed text",
+      "index_capture_sha256": "f5d0f5d223dde369844b63b72ab362ab30a3d855b8f47cd37a157e1c9a6f10ed",
+      "access_utc": "2026-11-06"
+    },
+    {
+      "url": "https://dunand.mccormick.northwestern.edu/news/wtc-talk.shtml",
+      "locator": "December 14, 2004 event notice",
+      "representation": "Indexed text reused from the preceding comparison",
+      "access_utc": "2026-11-06"
+    },
+    {
+      "url": "https://www.tms.org/pubs/journals/jom/0112/Biederman/Biederman-0112.html",
+      "locator": "Nominal composition in the eroded I beam caption",
+      "representation": "Indexed text",
+      "access_utc": "2026-11-06"
+    }
+  ],
+  "verification": {
+    "scan_ocr": {
+      "method": "PyMuPDF render 2x in memory, Tesseract --psm 3; one-based OCR lines including blanks. Anchors visually checked in pp. 2, 5, 9 and 10.",
+      "anchors": {
+        "2": {
+          "7": "0.28% C"
+        },
+        "5": {
+          "11": "750 to 900"
+        },
+        "9": {
+          "3": "1100",
+          "4": "A36 steel",
+          "5": "Fig.13",
+          "22": "HSLA column material"
+        },
+        "10": {
+          "5": "ground A36 steel"
+        }
+      }
+    },
+    "image": {
+      "method": "Render stated physical p. 9 crop in PDF points at 2x grayscale. Enumerate unique deck XREFs with both dimensions at least 100px, 4 right-angle rotations and left/right mirror variants within a 20% aspect-ratio ratio. Lanczos resample to 128x128, mean-center and unit-normalize, then dot product. The visually checked winning pair supports shared field geometry. Results reproduced byte for byte.",
+      "runtime": {
+        "PyMuPDF": "1.27.2.2",
+        "NumPy": "2.3.4",
+        "Pillow": "12.0.0"
+      },
+      "crop": [
+        230,
+        353.5,
+        373,
+        495.5
+      ],
+      "pdf_page": 9,
+      "eligible_xrefs": 85,
+      "comparisons": 216,
+      "positive_control": 0.9995549073271495,
+      "top": [
+        {
+          "score": 0.8972220546876395,
+          "page": 81,
+          "xref": 414,
+          "degrees": 270,
+          "mirrored": false
+        },
+        {
+          "score": 0.3156581238947408,
+          "page": 45,
+          "xref": 184,
+          "degrees": 270,
+          "mirrored": false
+        },
+        {
+          "score": 0.29091074265237793,
+          "page": 45,
+          "xref": 184,
+          "degrees": 0,
+          "mirrored": true
+        },
+        {
+          "score": 0.23311241576216107,
+          "page": 59,
+          "xref": 229,
+          "degrees": 180,
+          "mirrored": true
+        },
+        {
+          "score": 0.22006414036844674,
+          "page": 59,
+          "xref": 229,
+          "degrees": 0,
+          "mirrored": false
+        },
+        {
+          "score": 0.21359774654983738,
+          "page": 59,
+          "xref": 229,
+          "degrees": 90,
+          "mirrored": false
+        },
+        {
+          "score": 0.20826085386939402,
+          "page": 28,
+          "xref": 113,
+          "degrees": 180,
+          "mirrored": true
+        },
+        {
+          "score": 0.2069023084196744,
+          "page": 28,
+          "xref": 113,
+          "degrees": 90,
+          "mirrored": false
+        },
+        {
+          "score": 0.19952522457994093,
+          "page": 80,
+          "xref": 320,
+          "degrees": 90,
+          "mirrored": true
+        },
+        {
+          "score": 0.19606675610576774,
+          "page": 41,
+          "xref": 165,
+          "degrees": 90,
+          "mirrored": true
+        },
+        {
+          "score": 0.19146702246662162,
+          "page": 46,
+          "xref": 395,
+          "degrees": 90,
+          "mirrored": true
+        },
+        {
+          "score": 0.18653110375193488,
+          "page": 63,
+          "xref": 249,
+          "degrees": 90,
+          "mirrored": false
+        },
+        {
+          "score": 0.18455292476687346,
+          "page": 46,
+          "xref": 397,
+          "degrees": 180,
+          "mirrored": false
+        },
+        {
+          "score": 0.17528899954545923,
+          "page": 46,
+          "xref": 397,
+          "degrees": 270,
+          "mirrored": true
+        },
+        {
+          "score": 0.17365764027659789,
+          "page": 46,
+          "xref": 394,
+          "degrees": 90,
+          "mirrored": true
+        },
+        {
+          "score": 0.1638555033955345,
+          "page": 40,
+          "xref": 159,
+          "degrees": 180,
+          "mirrored": false
+        }
+      ]
+    }
+  }
+}
