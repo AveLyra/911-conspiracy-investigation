@@ -20,6 +20,9 @@ The following existing public research reports and their source pins are now als
 
 The [Virginia Beach dedication and photo comparison](broader-evidence/steel-virginia-beach-dedication-crosscheck-2026-11-06/README.md), [donation transcript analysis](broader-evidence/steel-virginia-beach-donation-transcript-2026-11-06/README.md), and [B245 attribution review](broader-evidence/steel-virginia-beach-b245-attribution-2026-11-06/README.md) preserve conflicting North Tower and South Tower accounts and the uncertain donor-to-artifact custody chain. The comparison supports a match between two published images of the installed panel, not a resolved tower of origin or a WTC 7 link.
 
+
+The [FAA Executive Summary version index](broader-evidence/faa-executive-summary-version-index-2026-11-06/README.md), [Garvey hearing and supplement comparison](broader-evidence/faa-garvey-witness-supplement-2026-11-06/README.md), and [OIG report publication audit](broader-evidence/faa-referral-historical-web-edition-2026-11-06/README.md) distinguish public transcriptions, report versions, reported receipt and later corrective-action questions. The underlying native versions and proof of a correction's delivery remain unlocated in those reviews.
+
 [Branch-to-main preservation manifest](branch-consolidation-2026-11-08/README.md).
 
 ## Urban Moving Systems and Florida art-sales leads — November 5, 2026
