@@ -9,6 +9,11 @@ The [October 26, 2026 master](wtc7/master-lead-register-2026-10-26/MASTER-LIST.m
 The [October 25 edition](wtc7/master-lead-register-2026-10-25/README.md) remains an unchanged historical 134-entry baseline. Conflicting accounts and source studies are preserved; broader operational leads are not presented as evidence of a WTC 7 demolition connection.
 
 
+
+## November 8: Doric prior-day job and eyewitness checks
+
+The [Doric moving-job and witness recheck](urban-moving-systems/doric-moving-witness-recheck-2026-11-08/README.md) identifies a reported September 10 UMS move at the observation-site apartment building, a separate photo identification, and an identified-plate van observation after the first fire and before the second impact. It distinguishes a moving crew nonidentification, ordinary business and mistaken identification from proposed coordination; no WTC access, explosive installation, Mossad tasking or hijacker transaction follows. The [developing theory](urban-moving-systems/developing-theory-2026-11-06/README.md) also corrects the November 7 FBI supplement's status to sent.
+
 ## November 8: branch-source consolidation
 
 The following existing public research reports and their source pins are now also available on main. They retain their original wording and source scope; inclusion is preservation, not independent verification of every claim.
