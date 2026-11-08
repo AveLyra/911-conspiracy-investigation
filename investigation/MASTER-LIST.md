@@ -8,6 +8,17 @@ The [October 26, 2026 master](wtc7/master-lead-register-2026-10-26/MASTER-LIST.m
 
 The [October 25 edition](wtc7/master-lead-register-2026-10-25/README.md) remains an unchanged historical 134-entry baseline. Conflicting accounts and source studies are preserved; broader operational leads are not presented as evidence of a WTC 7 demolition connection.
 
+
+## November 8: branch-source consolidation
+
+The following existing public research reports and their source pins are now also available on main. They retain their original wording and source scope; inclusion is preservation, not independent verification of every claim.
+
+- [Newark closure and headquarters inquiry](urban-moving-systems/newark-closure-followup-2026-11-05/README.md): separates the 2003 field closure from the still-pending 2004 headquarters matter, the CCTV identification lead, and the unverified Classic transaction. For later image checks of the Classic notebook reference, see the [address-list and early-van recheck](urban-moving-systems/wtc-hijacker-source-recheck-2026-11-06/README.md).
+- [Flight 93 carrier spreadsheet correction](broader-evidence/telephone-ua93-march-spreadsheet-correction-2026-11-06/README.md): traces a reported 2002 conversion correction, without inferring a changed call attribution or recovering the original workbooks.
+- [Westerville C-40](broader-evidence/steel-westerville-c40-custody-2026-11-06/README.md) and [Wellington C-46](broader-evidence/steel-wellington-c46-custody-2026-11-06/README.md): document specimen labels, custody leads, conflicting dates or descriptions, and missing transfer or testing records. Neither identifies a WTC 7 specimen or establishes a demolition.
+
+[Branch-to-main preservation manifest](branch-consolidation-2026-11-08/README.md).
+
 ## Urban Moving Systems and Florida art-sales leads — November 5, 2026
 
 The [source review](urban-moving-systems/ums-florida-art-sales-leads-2026-11-05/README.md) traces a Philadelphia FBI account of UMS workers and a separate moving/art-sales employment scene, a June 2001 DEA security inquiry, disputed reporting about Israeli intelligence surveillance and warnings, and a mixed-scope White House records notice. These are related questions to investigate, not established person-to-person or operational links. The reporting correction, competing explanations, source limitations and specific records needed to test them are preserved. No existing M ID or count is changed.
