@@ -17,6 +17,9 @@ The following existing public research reports and their source pins are now als
 - [Flight 93 carrier spreadsheet correction](broader-evidence/telephone-ua93-march-spreadsheet-correction-2026-11-06/README.md): traces a reported 2002 conversion correction, without inferring a changed call attribution or recovering the original workbooks.
 - [Westerville C-40](broader-evidence/steel-westerville-c40-custody-2026-11-06/README.md) and [Wellington C-46](broader-evidence/steel-wellington-c46-custody-2026-11-06/README.md): document specimen labels, custody leads, conflicting dates or descriptions, and missing transfer or testing records. Neither identifies a WTC 7 specimen or establishes a demolition.
 
+
+The [Virginia Beach dedication and photo comparison](broader-evidence/steel-virginia-beach-dedication-crosscheck-2026-11-06/README.md), [donation transcript analysis](broader-evidence/steel-virginia-beach-donation-transcript-2026-11-06/README.md), and [B245 attribution review](broader-evidence/steel-virginia-beach-b245-attribution-2026-11-06/README.md) preserve conflicting North Tower and South Tower accounts and the uncertain donor-to-artifact custody chain. The comparison supports a match between two published images of the installed panel, not a resolved tower of origin or a WTC 7 link.
+
 [Branch-to-main preservation manifest](branch-consolidation-2026-11-08/README.md).
 
 ## Urban Moving Systems and Florida art-sales leads — November 5, 2026
