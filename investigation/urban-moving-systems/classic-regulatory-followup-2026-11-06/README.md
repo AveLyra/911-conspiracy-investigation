@@ -1,0 +1,23 @@
+# Classic phone-list and carrier-regulatory follow-up
+
+November 6, 2026. These separate leads concern an FBI-released phone list and public federal carrier records. They do not establish a call, a hijacker transaction, intelligence affiliation, WTC access or an attack operation. Original local research files and the captured query responses are preserved; the six JSON captures here are byte-for-byte copies of the latter.
+
+## Classic phone-list artifact
+
+The [released FBI section 3 scan, PDF p. 25](../fbi-van-lab-release-2026-10-06/raw/section-3.pdf#page=25), contains an undated typed “Phone List” pairing “Classic International” with the business number `888-461-6683`, and handwritten `Computer #11` and `Item A` annotations. This is a specific retrieval lead, but the shortened label has not been independently matched to the company in the Miami lead, the historical subscriber is unverified, and the page does not establish a call. A different release copy places the page at PDF p. 28; page numbers cannot be interchanged without checking the files.
+
+An FBI summary separately reports a Classic number in a notebook seized from the five men but does not visibly provide its digits or writer. The typed list has not been crosswalked to that notebook. `Item A` is not automatically the separately described Hebrew directory or laboratory item Q1. An ordinary business contact, mistaken association or another relationship remain possible. Seek the extraction index, historical subscriber, originating Miami lead, customer records, and attributed call records. See the [related Classic source review](../zim-move-and-address-lists-2026-11-05/README.md).
+
+## Insurance and regulatory records
+
+The [Hanover cargo endorsement in FBI section 2, PDF p. 38](../fbi-van-lab-release-2026-10-06/raw/section-2.pdf#page=38), names UMS and policy `IHZ5623720` effective August 16, 2000. The visible page does not name Max Movers or establish coverage on a later date. This is an FBI-released copy, not an insurer-certified original.
+
+The captured [UMS insurance history](data/insurance-ums.json), [Max insurance history](data/insurance-max.json), [UMS revocation history](data/revocation-ums.json) and [Max revocation history](data/revocation-max.json) show date coincidences: the UMS revocation `order2_effective_date` and the Hanover row's cancellation-effective field both say April 11, 2001; Max's revocation effective field and its United National liability row's cancellation-effective field both say August 5, 2001. These are database entries, not the underlying orders or proof that either insurance entry caused revocation. The [authority-history captures](data/authority-ums.json) and [Max authority history](data/authority-max.json) contain separately dated action fields that require reconciliation.
+
+The official [FMCSA dataset metadata](https://data.transportation.gov/api/views/sa6p-acbp.json) points to its [operating-authority data dictionary](https://data.transportation.gov/api/views/sa6p-acbp/files/183ec298-3849-4e4f-be3e-175258348858?download=true). The dictionary defines the first serve date as the date the first revocation letter was sent and the second effective date as the revocation effective date. It does not resolve why these entries place the effective dates before first-letter dates, or how they relate to separate authority-history fields. Underlying orders, service records and filings are needed before assigning legally operative dates or reasons.
+
+A [nonrandom control-sample audit](../research-update-2026-11-06/README.md#insurance-and-regulator-data) found reversed date ordering and matching same-docket cancellation dates among unrelated 2001–02 carriers as well. This cautions against treating the UMS/Max pattern as uniquely suspicious; the underlying data-generation mechanism is unresolved. Shared insurer and policy identifiers support a business relationship but do not establish the companies' exact ownership or coverage relationship without named-insured schedules and endorsements.
+
+## Source provenance
+
+The six JSON files are unmodified public FMCSA query responses saved November 6, 2026. Their query endpoints are [authority history](https://data.transportation.gov/resource/9mw4-x3tu.json?docket_number=MC320465), [insurance history](https://data.transportation.gov/resource/6sqe-dvqs.json?docket_number=MC320465), and [revocation history](https://data.transportation.gov/resource/sa6p-acbp.json?docket_number=MC320465), with `MC398463` substituted for Max. Live dataset contents may change; the saved captures are not certified agency orders. The source review visually checked the released FBI pages, not the underlying original company documents. No new agency request or carrier contact is implied.

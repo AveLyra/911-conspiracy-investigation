@@ -42,6 +42,8 @@ The [carrier, K-13 and debris-ticket source check](broader-evidence/three-record
 
 The [WTC access and Exxon cross-check](urban-moving-systems/zim-exxon-record-crosscheck-2026-11-07/README.md) separates an unidentified utility-van account, dated Gulf inventory entries and redacted phone entries. It also identifies badge and building-record limitations. None establishes a UMS WTC job, a van identification, or advance knowledge.
 
+The [Classic phone-list and federal carrier follow-up](urban-moving-systems/classic-regulatory-followup-2026-11-06/README.md) preserves six original public FMCSA query captures, the typed-list lead, the Hanover endorsement and a date-field control comparison. It does not establish a call, customer transaction, regulatory cause or intelligence role.
+
 ## November 7: consolidated source checks
 
 The [mural-truck, Philadelphia and WTC security reviews](urban-moving-systems/consolidated-source-checks-2026-11-07/README.md) compare vehicle identifiers, reported moving deliveries, cameras, canine deployments and a reported power-down. They preserve unresolved links and contrary evidence; none establishes a UMS role in WTC explosives or coordination with hijackers.
