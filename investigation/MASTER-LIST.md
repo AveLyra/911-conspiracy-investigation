@@ -10,6 +10,11 @@ The [October 25 edition](wtc7/master-lead-register-2026-10-25/README.md) remains
 
 
 
+
+## November 8: Doric original-record retrieval
+
+The [Doric records follow-up](urban-moving-systems/doric-records-followup-2026-11-08/README.md) identifies several NK1148 interview pages reporting planned forwarding of photo-array copies to FBI 1A files and separately notes referenced attachments. The actual array, crosswalk, move order, dispatch and Doric-specific insurance certificate remain unlocated; the limited page search does not prove their absence. The records do not establish participation by any of the five men in the move.
+
 ## November 8: Doric prior-day job and eyewitness checks
 
 The [Doric moving-job and witness recheck](urban-moving-systems/doric-moving-witness-recheck-2026-11-08/README.md) identifies a reported September 10 UMS move at the observation-site apartment building, a separate photo identification, and an identified-plate van observation after the first fire and before the second impact. It distinguishes a moving crew nonidentification, ordinary business and mistaken identification from proposed coordination; no WTC access, explosive installation, Mossad tasking or hijacker transaction follows. The [developing theory](urban-moving-systems/developing-theory-2026-11-06/README.md) also corrects the November 7 FBI supplement's status to sent.

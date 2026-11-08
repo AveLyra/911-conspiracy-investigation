@@ -94,6 +94,8 @@ A separate witness reported three men on a white van after the first WTC fire an
 
 The FBI supplement sent November 7 broadly seeks job, dispatch and timing records, but its inspected text does not expressly identify the September 10 Doric move and reported insurance certificate. A separate East Rutherford police-packet request was sent November 8. Receipt, searches and outcomes remain unconfirmed. Original job, dispatch, certificate, identification and evidence-custody records can test both a connection and ordinary-business or mistaken-identification alternatives.
 
+**Records follow-up:** The [November 8 retrieval check](../doric-records-followup-2026-11-08/README.md) identified several NK1148 interview pages saying copies of the photo array would be forwarded to the FBI 1A file; the person-5 interview separately describes attached reference photographs. These are custody leads, not proof of completed filing, identical arrays or survival. The original array and name crosswalk, move order, dispatch and Doric-specific insurance certificate were not located. A limited OCR search of insurance pages does not prove absence.
+
 ## Discriminating follow-up
 
 Obtain authenticated, dated building and loading-dock access, tenant contracts, dispatch and job records; the visitor-card crosswalk; materials and custody records; complete lab reports and controls; the Classic/Miami lead and actual business records; and the address-list attachments and comparisons. Seek the FBI's headquarters outcome, translations, original video and calibrated timing. For the physical question, compare documented model inputs, actual structural and fire histories, matched collapse/arrest cases, independently measured motion and mechanism-specific acoustic predictions.
