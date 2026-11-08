@@ -23,6 +23,9 @@ The [Virginia Beach dedication and photo comparison](broader-evidence/steel-virg
 
 The [FAA Executive Summary version index](broader-evidence/faa-executive-summary-version-index-2026-11-06/README.md), [Garvey hearing and supplement comparison](broader-evidence/faa-garvey-witness-supplement-2026-11-06/README.md), and [OIG report publication audit](broader-evidence/faa-referral-historical-web-edition-2026-11-06/README.md) distinguish public transcriptions, report versions, reported receipt and later corrective-action questions. The underlying native versions and proof of a correction's delivery remain unlocated in those reviews.
 
+
+Three DOJ record-trail reviews cover the [Box 20 request and passenger-call packets](broader-evidence/telephone-doj-packet-index-2026-11-06/README.md), [Commission production schedules](broader-evidence/telephone-doj-commission-production-2026-11-06/README.md), and [Watch Log retention series](broader-evidence/telephone-doj-watchlog-record-series-2026-11-06/README.md). They identify distinct records and custody routes; they did not recover the original September 11 Watch Log or establish a call connection.
+
 [Branch-to-main preservation manifest](branch-consolidation-2026-11-08/README.md).
 
 ## Urban Moving Systems and Florida art-sales leads — November 5, 2026

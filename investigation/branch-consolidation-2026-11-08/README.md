@@ -27,4 +27,13 @@ A third batch preserved these original FAA research reports and source pins unch
 | Garvey hearing and supplement | `codex/faa-garvey-witness-supplement-2026-11-06` · `bcebd6b8` | [Report](../broader-evidence/faa-garvey-witness-supplement-2026-11-06/README.md) |
 | OIG report publication | `codex/faa-referral-historical-web-edition-2026-11-06` · `193f9bd7` | [Report](../broader-evidence/faa-referral-historical-web-edition-2026-11-06/README.md) |
 
+
+A fourth batch preserved three DOJ telephone and record-custody reports and source pins unchanged:
+
+| Topic | Source branch and tip | Main location |
+|---|---|---|
+| Request and packet indexes | `codex/telephone-doj-packet-index-2026-11-06` · `a6346faf` | [Report](../broader-evidence/telephone-doj-packet-index-2026-11-06/README.md) |
+| Commission production | `codex/telephone-doj-commission-production-2026-11-06` · `1c1d171a` | [Report](../broader-evidence/telephone-doj-commission-production-2026-11-06/README.md) |
+| Watch Log record series | `codex/telephone-doj-watchlog-record-series-2026-11-06` · `0deff1f3` | [Report](../broader-evidence/telephone-doj-watchlog-record-series-2026-11-06/README.md) |
+
 The branch reports sometimes refer to earlier or later analyses and to sources held outside the repository. Their links and source-availability statements must be read as dated; the copies here do not imply that an original interview, workbook, transfer order or specimen record has been recovered. The public index carries a later qualification where applicable. The research branches have not all been compared to main, and no completeness claim follows from this batch.
