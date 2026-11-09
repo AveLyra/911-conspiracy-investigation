@@ -1,0 +1,27 @@
+# FAA situation reports document changes in DOT crisis-center watch hours
+
+November 9, 2026 Eastern · B129 / PD01–PD04 and Mineta operational-record acquisition.
+
+I recovered **27 numbered FAA situation reports** dated September 11 through October 7, 2001, from the January 2009 Commission release, Team 8 Boxes 18–19. The reports preserve a September 27 account of reduced Crisis Management Center watch hours and a September 30 change in how FAA described the center's activation period. These are contemporaneous FAA report entries. The DOT directive, actual watch rosters, and source messages underlying them remain unacquired. [Commission release ZIP](https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip) · [Exact member names, pages, lines and hashes](SOURCE-PINS.json)
+
+## What changes across the reports
+
+| Report field | First and last match in this set | Count |
+| --- | --- | --- |
+| DOT advised modal administrations the center would remain active for “an additional 30 days” | September 18 No. 8 p. 3 through September 29 No. 19 p. 4 | 12 |
+| DOT advised that the center would remain active “until at least October 17, 2001” | September 30 No. 20 p. 4 through October 7 No. 27 p. 4 | 8 |
+| Center reduced daily operations from **0600–2400** to **0600–2000 Monday through Friday**, with weekend staffing conditional on further activation | September 27 No. 17 p. 3 through October 7 No. 27 p. 3 | 11 |
+| Columbus Day added to the conditional staffing language | October 4 No. 24 p. 3 through October 7 No. 27 p. 3 | 4 |
+| **FINAL REPORT** in the heading | October 7 No. 27 p. 1 | 1 |
+
+The 30-day wording has no starting date in the matched statement. The October 17 wording gives a lower bound. Both are preserved, with the governing notice and revision history still open. The repetition shows what the FAA series carried over time. A repeated bullet does not establish a fresh notice or a new report from DOT. The October 7 heading labels the FAA report as final while p. 4 still carries the October 17 activation statement. The FAA reporting endpoint and the DOT activation statement refer to separate processes. [Report-by-report field ledger](SOURCE-PINS.json)
+
+On October 10, RSPA Administrator Ellen Engleman's oral testimony described the center as manned on a **24-7** basis and as having “remained fully operational since September 11.” Her prepared statement says it was immediately manned **24/7** and also says it remained fully operational. The FAA reports separately describe a narrower duty schedule. The exact period covered by each account, their use of “fully operational,” and any later staffing changes remain unresolved. The 27-report set ends October 7 and supplies no watch record for the hearing date. [Hearing, printed pp. 9 and 11](https://www.govinfo.gov/content/pkg/CHRG-107shrg89502/html/CHRG-107shrg89502.htm)
+
+## Scope and verification
+
+- Each bounded ZIP response matched the saved range validator and member metadata. Verified member path, uncompressed size, CRC-32, PDF signature and SHA-256. The first-page text dates and report numbers agree with the 27 date-labeled members. This identifies the retained copies and their sequence.
+- Extracted embedded text from **95 pages** and reproduced **36 declared field matches**. Visually checked five selected fields, including the September 18, 27, 30 and October 4 changes and the October 7 heading. The visible October 7 time label is **As of 1:00 PM EDT**. The embedded string is **Asof1:OOPMEDT**. Preserve each at physical p. 1. A field search can miss wording variants or OCR damage.
+- The earlier headquarters No. 8 scan and the Team 8 No. 8 scan have different hashes and carry the same selected activation statement on p. 3. This comparison establishes a repeated report statement. The scan origins and actual delivery remain unverified. [Headquarters scan](https://catalog.archives.gov/id/34913399) · [Earlier report comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/e12d263c2af799742614dcdca56563c9e43952a7/investigation/broader-evidence/faa-situation-reports-distribution-2026-11-09/README.md)
+
+**Records still needed.** The DOT notice and any revision sent to the modal administrations could establish the effective dates and distribution. Actual CMC watch logs and staffing rosters could test coverage, including September 27–October 10 and the weekend and holiday conditions. A dated AIM entry or source report with dispatch and receipt fields could link a particular event to that record system. The original Mineta office call logs, the 2008 FOIA response and the separate corrected FAA answer, acknowledgment, signed disposition and recommendation outcomes remain open.
