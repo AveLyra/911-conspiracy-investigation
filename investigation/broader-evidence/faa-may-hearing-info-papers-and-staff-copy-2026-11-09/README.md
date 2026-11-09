@@ -1,0 +1,28 @@
+# FAA hearing preparation and document production source checks
+
+November 9, 2026 · B129 / PD01 / PD04 / PD07. Three released Commission archive scans provide a second copy of the June 4 production memorandum, a May 6 hearing preparation paper about air traffic rules, and a later FAA radar-analysis paper. Two scans preserve different values in their embedded text and visible page images. [Archive and exact source locators](SOURCE-PINS.json)
+
+## June 4, 2003 production memorandum
+
+| Source and location | Value and role |
+| --- | --- |
+| Marcus Box 8 item 490, p. 1, extracted lines 21–22 | Embedded text reads **May 1, 2003** in the sentence about the first request being sent. |
+| Same PDF, p. 1, visible opening sentence | The page image reads **May 7, 2003**. A fresh OCR pass on the date crop returned the same reading. |
+| Dunne Box 5 packet, p. 1, line 5 and visible opening sentence | The embedded text and page image both read **May 7, 2003**. |
+| Same Dunne packet, p. 2, June 4 DOT counsel letter | Embedded text and visible image both give **May 5, 2003** for DOT receiving a request. The cited paragraph gives no request number. |
+
+Both copies of the staff memorandum carry the June 4 date and report a May 28 initial production and completion that day of the production described in the memo. The counsel letter separately describes access and handling terms. These are different source statements about transmission, receipt and production. The word comparison preserved the exact embedded date mismatch, a hyphenation difference and stray extracted tokens. Its result alone leaves the source of those differences and the actual dispatch date unresolved. The dated transmittal, received version and receipt log remain the records that can test the sequence. [Earlier receiving-file review and June 13 completeness question](https://github.com/AveLyra/911-conspiracy-investigation/blob/19e952d7c45600cdd187f42aa4658fe66be2d814/investigation/broader-evidence/faa-commission-receiving-files-2026-11-06/README.md)
+
+## Which air traffic order was in the hearing file
+
+The **May 6, 2003** information paper for the May 22–23 hearing cites **7110.65N**, effective **February 21, 2002**, and updated **February 20, 2003**. Its note says **“need to get version in effect on 9/11”**. The enclosed order excerpt repeats the effective date and gives the dates for Changes 1 and 2. The order excerpt's §10-2-6 includes immediate supervisory notification and Mode 3/A Code 7500 language. Keep those words tied to the cited edition. The hearing packet leaves the operative September 2001 edition and changes as separate retrieval targets. NARA lists a Team 8 Box 11 folder for **7610.4J and 7110.65M** with a withdrawal notice only. This folder description does not establish availability across other collections. [Finding aid, physical p. 117](https://www.archives.gov/files/research/9-11/finding-aid.pdf#page=117) · [Paper p. 1 lines 1–8, enclosed order p. 2 lines 3–9 and p. 6 lines 22–25](SOURCE-PINS.json)
+
+## Underlying FAA radar analysis locator
+
+The February 24, 2004 AOS-310 paper is catalogued in the mirror as **Flight Path Excursion**. Its own p. 1 title is **Flight Path Extension**. It distinguishes the beacon track it says was displayed through **12:56:19z**, the primary returns it plots **12:56:45z through 13:19:52z**, and the track display it describes after **12:56:19z**. It says many of the primary returns were absent from the display. Those are descriptions of different data and display layers. No individual return was independently matched to a source radar row or to what a controller saw. [P. 1, lines 9–26](SOURCE-PINS.json)
+
+The two ACES screenshots on pp. 2–3 visibly show **`zid1003.nmz`** in their title bars. Their embedded text reads **`zidl003.nmz`**. Preserve both strings. P. 1 also names the **September 17, 2001** and **January 21, 2004** precursor analyses. The native ACES project, radar input and display configuration would let the technical owner test the paper's distinctions. The screenshots supply specific retrieval keys. [Page and source pins](SOURCE-PINS.json)
+
+Four PDF hashes and archive CRCs were checked, including the held Dunne packet. Eleven new pages were screened in embedded text, 22 fixed source anchors checked, three date crops independently OCR'd and both maps visually inspected. The verification covers source presentation, not historical clock calibration, aircraft tracking or confirmation of document delivery.
+
+**TODO** Recover the original request transmittal and receiving record, the order and changes actually in force in September 2001, the two precursor analyses and the native ACES project and settings. The corrected May 2003 FAA answer, delivery acknowledgment, signed administrative decision and recommendation-specific disposition remain open. [Case-specific acquisition queue](https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/OPEN-RECORDS.md) · [Exact addition diff](TEXT-CHANGES.diff)
