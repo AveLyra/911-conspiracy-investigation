@@ -1,0 +1,26 @@
+# An FAA clock comparison in a 2005 accident file
+
+November 9, 2026 Eastern. B129 / PD04 and clock-evidence methods. NTSB docket **DCA06MA009**, **ATC 3, Attachment 1**, preserves an FAA accident package from Midway. Its clock memorandum and adjacent facility log show which records can distinguish a checked clock from a recorded operational time. This is a comparator for retrieving Newark records. It concerns a different event, facility and order period. [NTSB docket](https://data.ntsb.gov/Docket/?NTSBNumber=DCA06MA009) · [Exact FAA package](https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=ATC+3+-+Attachment+1+FAA+Accident+Package-Redacted.PDF&ID=40366361) · [Source pins](SOURCE-PINS.json)
+
+## The log, the separate check and the index
+
+- **Facility log, PDF p. 16.** The two selected rows give **0114** for the airport closure associated with the reported accident and **0120** for the operations center and command center notification. These are displayed log values for different actions. [FAA package, p. 16](https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=ATC+3+-+Attachment+1+FAA+Accident+Package-Redacted.PDF&ID=40366361#page=16)
+- **Clock memorandum, PDF p. 17.** The FAA manager reports checking the ARTS clock and digital voice recorder (**DVRS**) at **0500 UTC on December 9, 2005**. The memo describes ARTS as slower than DVRS and says the entry in Form **7230-4** was **“not accomplished in accordance with FAAO 8020.16.”** Preserve that characterization. The memo concerns how the clock comparison was documented. The selected accident-event entries are separately visible in the daily log. [FAA package, p. 17](https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=ATC+3+-+Attachment+1+FAA+Accident+Package-Redacted.PDF&ID=40366361#page=17)
+- **Certified index, PDF p. 14.** The index certifies that listed originals are on file and includes the original voice recording and a certified full transcript. The redacted package is a docket copy with that index. The original recorder output, the physical recordings and the custody or intake of those items were outside this check. [FAA package, p. 14](https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=ATC+3+-+Attachment+1+FAA+Accident+Package-Redacted.PDF&ID=40366361#page=14)
+
+## Differences preserved at their source layers
+
+| Field | Targeted page-face reading | PDF text layer as extracted |
+| --- | --- | --- |
+| Offset magnitude, p. 17 | **1 second** slower | **.1 second** slower, layout line 20 |
+| Certified-index date, p. 14 | **May 17, 2006** | **May 17,2008**, layout line 5 |
+
+The signed direction of the reported offset is consistent in the two representations. The competing numeric magnitudes differ tenfold as read. No controlling magnitude or index date was selected. No historical clock correction was calculated. Original memo and certification images at higher fidelity, the clock-check worksheet, and a paired radar and recorder timing event could distinguish the readings. [Source and comparison details](SOURCE-PINS.json)
+
+## What to seek for Newark and the FAA follow-up
+
+The Newark **E1005** entry reports a local-control timestamp problem and a manual hour advance. The contemporaneous Midway form and memo show the value of locating a separate comparison or discrepancy record that names each clock, the time of the check and the direction of any offset. The Newark records still needed are the actual equipment identification and check, applicable facility practice, recording and timestamp source, and independent events shared with another clock. A later same-format FAA accident record supplies no Newark offset or estimate of duration. [Newark source comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/16e2351a698f04dfc3ea0147113fb8ef2c91d766/investigation/broader-evidence/faa-newark-regional-intake-and-clock-2026-11-09/README.md)
+
+A distinct historical URL for base **8020.16** was identified in reference 1 of a 2008 study. The HTTPS request returned **HTTP 503** and **326 bytes**. The base order remains unacquired. The separate NTSB factual report endpoint returned HTTP 200 headers with curl exit 56 and zero body bytes. No factual-report PDF was retained by that request. The acquired attachment supplies an applied reference to 8020.16, with no evidence of which directive governed the Commission correction or OIG disposition. [Historical citation, reference 1](https://catsr.vse.gmu.edu/pubs/NazeriICRAT08_formatted.pdf) · [NTSB report docket locator](https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=ATC+3+-+Factual+Report+of+Group+Chairman-Redacted.PDF&ID=40366338)
+
+The **66-page** attachment was text-screened. Selected index, log and clock fields were checked in restricted crops. No audio or radar signal, original clock check or signed administrative disposition was independently tested. **PD01–PD04** remain open, including the corrected May 2003 answer, recipient acknowledgment, signed action/no-action decision and recommendation-specific closure.

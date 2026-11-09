@@ -1,0 +1,142 @@
+{
+  "acquisition": {
+    "mdw-faa-accident-package": {
+      "url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=ATC+3+-+Attachment+1+FAA+Accident+Package-Redacted.PDF&ID=40366361",
+      "access_utc": "2026-11-09T06:06:01.081916+00:00",
+      "http_status_chain": [
+        200
+      ],
+      "curl_exit": 0,
+      "bytes": 5231856,
+      "pdf_acquired": true,
+      "sha256": "c7885731cebd3fe6723f19ba5d1e14d12b876e4081e6ef209102f3e1b7e21fbd"
+    },
+    "mdw-atc-factual": {
+      "url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=ATC+3+-+Factual+Report+of+Group+Chairman-Redacted.PDF&ID=40366338",
+      "access_utc": "2026-11-09T06:06:00.536723+00:00",
+      "http_status_chain": [
+        200
+      ],
+      "curl_exit": 56,
+      "bytes": 0,
+      "pdf_acquired": false,
+      "sha256": null
+    },
+    "faa-historical-aai-route": {
+      "url": "https://www.faa.gov/airports_airtraffic/air_traffic/publications/at_orders/media/AAI.pdf",
+      "access_utc": "2026-11-09T06:06:00.898671+00:00",
+      "http_status_chain": [
+        503
+      ],
+      "curl_exit": 0,
+      "bytes": 326,
+      "pdf_acquired": false,
+      "sha256": "fb2d9f058c2010c57f86a05ae33d282f33e3825290c66b8b120cd177416c6bdf"
+    }
+  },
+  "docket": "https://data.ntsb.gov/Docket/?NTSBNumber=DCA06MA009",
+  "historical_url_citation": "https://catsr.vse.gmu.edu/pubs/NazeriICRAT08_formatted.pdf",
+  "layout_text_sha256": "6733815ab605b6b98038a16442043c4ae9a15b108100202c5cf2cfa734b8fd61",
+  "physical_pages_text_screened": 66,
+  "pdf_layout_locators": [
+    {
+      "pdf_page": 14,
+      "layout_line": 5,
+      "field": "certified-index date in text layer",
+      "checked_token": "May 17,2008"
+    },
+    {
+      "pdf_page": 14,
+      "layout_line": 20,
+      "field": "listed certified full transcript, OCR fragment",
+      "checked_token": "Certified Full"
+    },
+    {
+      "pdf_page": 16,
+      "layout_line": 19,
+      "field": "displayed airport closure row label",
+      "checked_token": "0114"
+    },
+    {
+      "pdf_page": 16,
+      "layout_line": 21,
+      "field": "displayed notification row label",
+      "checked_token": "0120"
+    },
+    {
+      "pdf_page": 17,
+      "layout_line": 13,
+      "field": "clock check memo subject",
+      "checked_token": "ARTS Clock Comparison"
+    },
+    {
+      "pdf_page": 17,
+      "layout_line": 19,
+      "field": "clock check time",
+      "checked_token": "0500 UTC on December 9, 2005 UTC."
+    },
+    {
+      "pdf_page": 17,
+      "layout_line": 20,
+      "field": "offset magnitude and direction in text layer",
+      "checked_token": ".1 second slower"
+    },
+    {
+      "pdf_page": 17,
+      "layout_line": 21,
+      "field": "form-entry characterization",
+      "checked_token": "not accomplished in accordance"
+    },
+    {
+      "pdf_page": 17,
+      "layout_line": 22,
+      "field": "order identifier",
+      "checked_token": "8020.16"
+    }
+  ],
+  "targeted_page_face_readings": [
+    {
+      "pdf_page": 14,
+      "face_reading": "May 17, 2006",
+      "dpi": 144,
+      "crop_sha256": "585b98a80d0e48d594e88f95f50d420eaaed9f77aa21ddc697c71e80a7e05348"
+    },
+    {
+      "pdf_page": 14,
+      "face_reading": "Original Voice Recording(s); Certified Full Transcript",
+      "dpi": 144,
+      "crop_sha256": "76abb8464979be6a0821c9d3fc23ee74c6e38c0f870c75d67313ed3867f01e35"
+    },
+    {
+      "pdf_page": 14,
+      "face_reading": "Certification that listed originals are on file in the office.",
+      "dpi": 144,
+      "crop_sha256": "135dee33967baf19242a98b0dc710cbe4d2befcaba6b9fec837c9c27318c75fd"
+    },
+    {
+      "pdf_page": 16,
+      "face_reading": "0114 airport closure row; 0120 operations center and command center notification row.",
+      "dpi": 144,
+      "crop_sha256": "ff8547218330757459ac80411db183100a0a65753fd016c6877e9f4e965ea499"
+    },
+    {
+      "pdf_page": 17,
+      "face_reading": "0500 UTC on December 9, 2005; ARTS slower than DVRS; Form 7230-4 entry described as noncompliant.",
+      "dpi": 144,
+      "crop_sha256": "83725bd894dd90fda1e7ff1d45881ac60c1a3ef0ee0e1f7ae5f3c2fca0fa6546"
+    },
+    {
+      "pdf_page": 17,
+      "face_reading": "1 second slower",
+      "dpi": 576,
+      "crop_sha256": "c4cba4c0ab2a363fa9007c0a68e275f08e44f19528964fc291eeb02a3c4ae253"
+    }
+  ],
+  "offset_readings_seconds": {
+    "pdf_p17_face": "1",
+    "pdf_p17_text_layer": ".1"
+  },
+  "magnitude_ratio_exact": 10,
+  "reading_scope": "66-page docket PDF text-screened; targeted visual review of cited index, facility log and clock memo fields. No exact clock offset was chosen.",
+  "limits": "Separate comparator event. No actual clock reading, recorder media, adjustment worksheet, historical applicability or disposition independently established."
+}
