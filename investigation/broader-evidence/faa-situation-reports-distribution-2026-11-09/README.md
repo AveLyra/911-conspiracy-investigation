@@ -1,0 +1,40 @@
+# September 11 FAA situation report copies and the DOT source trail
+
+November 9, 2026 Eastern · B129 / PD01–PD04 and Mineta operational-record acquisition.
+
+Eight National Archives scans document a September 11 FAA situation report and four later reports. Four scans share the first report's heading and visible **5:00 PM EDT** as-of time. Three of those scans preserve the supplemental chronology and a source list naming **DOT/OET**, the Department of Transportation's Office of Emergency Transportation. This establishes a specific source reference in the FAA report. The individual source messages, times, and authors of the listed claims remain open. [Boston copy, physical p. 4](https://catalog.archives.gov/id/7599593) · [Eastern Region copy, physical p. 3](https://catalog.archives.gov/id/7601024) · [Earlier AIM and crisis-center research](https://github.com/AveLyra/911-conspiracy-investigation/blob/865136e0ea06f9e6fce23c6821169af61a7675f4/investigation/broader-evidence/faa-mineta-call-log-custody-2026-11-09/README.md)
+
+## Report No. 1 across FAA holdings
+
+| FAA folder and NARA item | Physical extent | What the scan shows |
+| --- | --- | --- |
+| [A90-4 / 7599593](https://catalog.archives.gov/id/7599593) | Four pages | New England Air Traffic Division cover and outer fax stamp on p. 1, **SEP-12-2001 WED 06:48 AM**. Inner report at pp. 2–4 has a September 11 fax layer and selected shared job-number fields. |
+| [AWA-856 / 7602340](https://catalog.archives.gov/id/7602340) | One page | Same report number and visible as-of time. This file has the first report page only. |
+| [AEA-2634 / 7601021](https://catalog.archives.gov/id/7601021) | Three pages | Eastern Region copy with the supplemental chronology on p. 2 and the source list and release authorization on p. 3. |
+| [AEA-2637 / 7601024](https://catalog.archives.gov/id/7601024) | Three pages | Another Eastern Region copy, with the same selected chronology and source-list fields. |
+
+The four archived PDFs have distinct SHA-256 hashes. The shared selected fields and report pagination support common report lineage. They do not independently corroborate the underlying events. The 5:00 PM report as-of field and September 12 Boston fax stamp describe different stages. Exact dispatch and receipt times, fax clock settings, routing and the full copy history remain open. In A90-4 p. 2 the embedded layer gives **5;00 PM EDT** and the new OCR gives **6:00 PM EDT**. The image shows the digit **5**. The other three images show **5:00 PM EDT**. Preserve the image readings and both extracted strings separately. [Page, line and hash locators](SOURCE-PINS.json)
+
+## Two timing differences carried by the copies
+
+| Observation in FAA Report No. 1 | Later Commission account |
+| --- | --- |
+| **0859**, stated as the time a second aircraft struck the World Trade Center. | **9:03:11**, the South Tower impact. |
+| **0932**, stated as the time a report was received that an aircraft had hit the Pentagon's west side. | **9:37:46**, the Pentagon impact. |
+
+The second row pairs a claimed report-receipt time with an impact time. Retain both event definitions. The report also lists multiple source organizations together, so its attribution cannot identify who supplied either statement. The surviving copies provide the words the FAA circulated, with the originating message, clock, draft history and any later correction still unacquired. [A90-4, physical p. 3](https://catalog.archives.gov/id/7599593) · [AEA-2637, physical p. 2](https://catalog.archives.gov/id/7601024) · [Commission Report, printed p. 8](https://www.govinfo.gov/content/pkg/GPO-911REPORT/pdf/GPO-911REPORT.pdf#page=26) · [Commission Report, printed p. 10](https://www.govinfo.gov/content/pkg/GPO-911REPORT/pdf/GPO-911REPORT.pdf#page=28)
+
+## Later FAA copies and a specific distribution lead
+
+| Report | Date and as-of time | DOT/OET source-list page |
+| --- | --- | --- |
+| [No. 5, AWA-500](https://catalog.archives.gov/id/34913361) | September 15, 2001, 1:00 PM EDT | Physical p. 2 |
+| [No. 6, AWA-514](https://catalog.archives.gov/id/34913385) | September 16, 2001, 1:00 PM EDT | Physical p. 2 |
+| [No. 7, AWA-518](https://catalog.archives.gov/id/34913389) | September 17, 2001, 1:00 PM EDT | Physical p. 3 |
+| [No. 8, AWA-528](https://catalog.archives.gov/id/34913399) | September 18, 2001, 1:00 PM EDT | Physical p. 3 |
+
+No. 8 says DOT told all its modal administrations the Crisis Management Center would remain active for **an additional 30 days**. The statement is a precise lead to the original DOT notice and copies in the recipients' files. The notice, delivery evidence, the activation interval and the watch staffing record remain open. A numbered FAA report and a source footer naming DOT/OET supply a route to the center's underlying material. Its AIM entries and original situation reports have yet to be located. [Report No. 8, physical p. 3](https://catalog.archives.gov/id/34913399)
+
+**Next records.** Seek the referenced notice, any attached OET reports, and the associated watch or dispatch entries. The separately identified Commission Team 8 headquarters FAA situation-report folders are a candidate route to further copies. Matching a specific source and clock requires an identifiable message, time field and recipient. The final response to **2007-144 / 2007-0144**, Mineta's office call logs, the corrected May 2003 answer and receipt, and signed administrative and recommendation outcomes remain open. [Mineta request comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/6bae0ba697ee0d560545a509963b73fd90f4f5f0/investigation/broader-evidence/faa-ost-foia-and-correspondence-2026-11-09/README.md)
+
+Extracted the text of 21 scan pages, checked 29 fixed field locators and verified eight PDF/catalog associations and 16 entity hashes. Selected report headings, event lines and source fields were visually checked. The review covers these fields and the listed copies. Reports No. 2–4, the full Commission folders, and the underlying event clocks were outside this comparison.
