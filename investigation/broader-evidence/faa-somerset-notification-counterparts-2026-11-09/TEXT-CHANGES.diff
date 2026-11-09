@@ -1,0 +1,38 @@
+diff --git a/publication-v3/README.md b/publication-v3/README.md
+new file mode 100644
+index 00000000..9be030cb
+--- /dev/null
++++ b/publication-v3/README.md
+@@ -0,0 +1,32 @@
++# FAA Somerset notification counterpart and Flight 93 alert versions
++
++November 9, 2026 Eastern · **TEL03–TEL04 / AUD016-A1**, with **B129** context. The FAA’s RG 237 copy of the Somerset notification form contains one page. Its handwritten time cells closely match the first page of the seven-page Team 8 packet. Two separate FAA alert bulletins preserve different date/time, departure and turn fields. Their publication history and operational source records remain open. [FAA finding aid, Boxes 96 and 98](https://www.archives.gov/research/foia/faa-finding-aid-96-107) · [Source pins and test matrix](SOURCE-PINS.json)
++
++## Scope of the Somerset form
++
++**AWA-575, NARA 7597141**, is one physical PDF page with a first-page embedded image of **828 × 1066** at 8 bits per component. The Commission packet has seven pages and its first-page embedded image is **2550 × 3509** at 1 bit per component. The separate PDFs have different hashes. Both faces show **UAL 93**, **9/11/01**, and the handwritten time cells read as **1451**, **1616** and **1507**. The Commission image shows overwriting in the first time cell. The lower row label remains uncertain. The AWA-575 form image reads **FAA Form 8020-3 (1-86)**. Its text layer reads **FAA Fonn 1020-3(1-$)**. [AWA-575 record](https://catalog.archives.gov/id/7597141) · [Commission packet comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/9699574f7bf65e15913064f6672ae89185b7e23c/investigation/broader-evidence/telephone-somerset-facility-notification-2026-11-09/README.md)
++
++A crop comparison rendered the two first pages at two grayscale pixels per PDF point. It compared each Commission time cell with each FAA cell using normalized cross-correlation, nine candidate isotropic scales and translations within the listed search boxes. The corresponding cells scored **0.875858**, **0.897422** and **0.831373**. The six noncorresponding cells scored **0.375607–0.493783**. The regions were selected after visual inspection. The agreement supports a shared form image. The FAA object leaves the Commission packet’s six companion pages outside its scope. The copy or transfer direction, upstream original, handwritten timebase and operational meaning remain unresolved. [Crop coordinates, scales and scores](SOURCE-PINS.json)
++
++## Printed bulletin fields
++
++| Field | AWA-857, p. 1 | AWA-858, p. 1 |
++| --- | --- | --- |
++| Subject | Aircraft Accident, UAL93/B757 | Aircraft Accident, UAL93/B757 |
++| **DATE/TIME** | **9:42am ET** (line 8) | **1035am ET**, no colon on the face (line 8) |
++| Departure in summary | **8:42am ET** (line 11) | **9:42am ET** (line 11) |
++| Turn and descent in summary | **8:56am ET** (lines 13–14) | **9:47am ET** (lines 13–14) |
++| Radar field or image | Summary gives last radar return **9:42am ET**, 57 miles southeast of Pittsburg (lines 14–15). P. 2 is a display image with no extractable text. | Both attached chart headings read **September 11, 2001, 9:58am ET** (pp. 2–3 line 2). The headings are separate fields from the summary and DATE/TIME. |
++| Edition text | **September 12, 2001, 7:48am ET**, with a supersession statement (line 19) | **September 11, 2001** (line 18) |
++
++[AWA-857, catalog 7597204](https://catalog.archives.gov/id/7597204) · [AWA-858, catalog 7597205](https://catalog.archives.gov/id/7597205)
++
++Both bulletins label their information preliminary. Keep the edition text, catalog ordering, alert time, reported events and chart headings separate. The later printed edition repeats **9:42am ET** in two fields, whereas the other bulletin assigns it to the reported departure. Its supersession wording leaves the actual send and receipt chronology open. The Commission final report separately gives an **8:42** takeoff and a **10:03:11** impact estimate. Those are a later account with its own source basis. The AWA fields remain preserved as printed. [Commission report, chapter 1](https://www.911commission.gov/report/911Report_Ch1.htm)
++
++## Open comparisons
++
++- Retrieve bulletin routing, distribution and revision records and the native source of the radar and ATC fields. Compare the actual inputs behind each field before using a bulletin to time a notice or operational event. The chart headings alone leave radar continuity and time alignment untested.
++- Obtain the county calls and recorder media, their dispatch and transfer identifiers, the trip sheet and the PEMA receiving record. The FAA form comparison establishes a source counterpart and leaves caller, device and transfer matching open. [County media and dispatch leads](https://github.com/AveLyra/911-conspiracy-investigation/blob/66049ad133af0f5262514965a623f1cffcfaec74/investigation/broader-evidence/telephone-shanksville-media-withdrawal-2026-11-09/README.md)
++- The B129 **PD01–PD04** targets retain separate acceptance criteria for the actual corrected QFR, receipt, signed administrative decision, recommendation outcomes and policy.
++
++The three archive bodies were acquired through their item-level metadata. Verification checked three catalog IDs and object links, the catalog and PDF hashes, **19** fixed PDF text anchors across **six** new pages, selected visual fields, and the nine crop comparisons. No radar plot values, recorded calls, receipt times or personnel outcomes were measured. [Verification scope](SOURCE-PINS.json)
