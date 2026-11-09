@@ -1,0 +1,34 @@
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..6944545f
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,28 @@
++# ARINC message fields and the Area E roll date discrepancy
++
++**November 9, 2026 · B129 / PD01 / PD07.** A later FAA report documents a New York Oceanic message with the same **NYCXGXA** identifier and six-digit layout seen in the archived roll scans. The report separately gives a message-body field and an exact receipt-time field. A reproducible comparison of the older scans shows why those fields need to be kept separate. The **9/12/01** roll-list date and **9_21_01** catalog filename remain unresolved. [Prior roll comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/cc983a8cf86668d8110d25d6848d193358712d73/investigation/broader-evidence/faa-arinc-roll-list-and-original-custody-2026-11-09/README.md) · [Exact source pins and method](SOURCE-PINS.json)
++
++## What the technical sources establish
++
++- **FAA Satellite Voice Project Report, March 12, 2018.** Figure 5-1 shows **.NYCXGXA 051143** and a **DT NYC** field containing **051141**. The report gives **11:43:16:210AM** as a separate receipt time added to the archived ACARS message by the ATOP system. Its illustrated whole-second difference from **11:39:23** is **233 seconds**, which the check reproduces. This directly documents multiple time fields in a later New York Oceanic example. It supplies no 2001 deployment or roll-label evidence. Physical p. 40, printed p. 39, lines 24 and 29–38. [FAA report, Figure 5-1](https://www.faa.gov/sites/faa.gov/files/about/office_org/headquarters_offices/avs/180514_PARCSATVOICEReport.pdf#page=40)
++- **SITA Type B Service Reference Manual, January 2000.** The manual describes a period-prefixed seven-character originator and an optional message identity. It allows several forms for the identity and uses UTC when it carries a date and time. Figure 2.10 illustrates the originator followed by six digits. That is a period example for the SITA network. The edition used by the 2001 New York system remains unverified. The publisher-authored manual was read through a public mirror. [SITA manual, pp. 2-12–2-14 and Figure 2.10](https://kutatas.aircargo.hu/TypeB_Messaging_reference_manual.pdf)
++- **ICAO EUR Doc 035 v6.0, October 20, 2021.** Example 4 shows a gateway attaching a generated Type B field for receipt of an incoming AFTN message while retaining the earlier AFTN field in the embedded text. The indexed official reader supplied the example. Both direct PDF retrievals returned 404. This is a documented example of how a gateway can add a distinct timestamp. Its relevance to the archived New York rolls requires implementation evidence. Printed p. 16, §2.4.2.2.3–4. [ICAO gateway example](https://www.icao.int/sites/default/files/EURNAT/Documents/EUR%20and%20Nat%20Docs/EUR%20Documents/EUR%20Documents/035%20-%20AMHS-Third%20Party%20Interconnection%20Architecture%09/EUR-Doc-035-AMHS-Third-Party-Infrastructure-Architecture-v6_0.pdf)
++
++## Literal pair test on the held roll scans
++
++The test accepts an exact six-digit **.NYCXGXA** field when exactly one specified **DT NYC** field occurs in the next 12 extracted lines on the same page, before a recognized new heading or address line. Eight synthetic controls include a differing-prefix pair and exclusion of a next-message, split-page or ambiguous pair. The machine screen uses a fixed layout rule and yields candidate pairs. OCR and page layout can omit records or obscure boundaries. [Exact patterns, controls and page counts](SOURCE-PINS.json)
++
++| Roll scan | Eligible headings | Pairs | All six digits equal | First two digits equal |
++| --- | ---: | ---: | ---: | ---: |
++| AWA-745 | 493 | 461 | 312 | 460 |
++| AWA-747 | 246 | 213 | 147 | 213 |
++| AWA-748 | 334 | 299 | 194 | 298 |
++| AWA-750 | 456 | 381 | 246 | 381 |
++
++In **AWA-750**, physical p. 1 lines 2 and 5 visibly give **110223** and **110222**. Physical p. 228 lines 9 and 13 both give **120341**. Across the accepted pairs, **135** differ in their full values. The comparable controls also contain differences. AWA-745 p. 35 lines 13 and 17 and AWA-748 p. 112 lines 3 and 7 both show **110001** and **102359**. The inspected blocks share the same surrounding message content, with a scoped extracted-token similarity of **0.947368**. Treat them as a possible shared message and retain both source locations. [Prior exact roll bodies and hashes](https://github.com/AveLyra/911-conspiracy-investigation/blob/cc983a8cf86668d8110d25d6848d193358712d73/investigation/broader-evidence/faa-arinc-roll-list-and-original-custody-2026-11-09/SOURCE-PINS.json) · [Pair locators](SOURCE-PINS.json)
++
++## What would distinguish the date accounts
++
++The FAA and SITA examples make a six-digit date-and-time interpretation testable. The two printed fields often agree, and there are visible exceptions. The tests above compare literal digits. They establish neither an absolute date nor the role of either field in the installed 2001 system. The roll-list date and filename date stay separate. A contemporaneous New York facility or service-provider format document, the original roll wrapper, and a matched export and dispatch record would test whether the labels refer to message coverage, print or filing time, or another copy. The applicable edition, dispatch, Commission intake and the separate corrected May 2003 FAA answer, receipt, signed administrative decision and recommendation outcomes remain unacquired. [Source and test limits](SOURCE-PINS.json)
++
++Verified the FAA PDF hash, nine page anchors and six selected image regions. Reproduced the 233-second example and the pair counts with PyMuPDF 1.27.2.2. The SITA and ICAO observations have reader locators and no acquired body hash. [Verification fields](SOURCE-PINS.json)

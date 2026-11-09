@@ -1,0 +1,186 @@
+{
+  "official_pdf": {
+    "url": "https://www.faa.gov/sites/faa.gov/files/about/office_org/headquarters_offices/avs/180514_PARCSATVOICEReport.pdf",
+    "access_utc": "2026-11-09T16:55:49.331851+00:00",
+    "max_bytes": 12000000,
+    "status": 200,
+    "content_type": "application/pdf",
+    "resolved_url": "https://www.faa.gov/sites/faa.gov/files/about/office_org/headquarters_offices/avs/180514_PARCSATVOICEReport.pdf",
+    "bytes_read": 3149781,
+    "sha256": "3afef724260dadd972b3f5e0f8943843617d975a937c37e5264ef3a95f9ba427",
+    "acquired": true,
+    "physical_pages": 54,
+    "reviewed_physical_page": 40,
+    "printed_page": 39
+  },
+  "faa_p40_anchor_terms": {
+    "2": "12 March 2018",
+    "3": "39",
+    "24": "Figure 5-1",
+    "30": ".NYCXGXA 051143",
+    "31": "051141 04",
+    "33": ".NYCAPXA 051139",
+    "36": "ATOP system attaches a header",
+    "37": "exact receipt time",
+    "38": "11:43:16:210AM"
+  },
+  "example_elapsed_seconds": 233,
+  "held_boundary_blocks": {
+    "scoped_extraction_token_similarity": 0.9473684210526315,
+    "locators": [
+      [
+        "awa-745",
+        35,
+        13,
+        19
+      ],
+      [
+        "awa-748",
+        112,
+        3,
+        9
+      ]
+    ],
+    "scope": "Similarity and inspected matching content support a shared-message candidate. Unique source identity and clock meaning remain open."
+  },
+  "icao_reader": {
+    "url": "https://www.icao.int/sites/default/files/EURNAT/Documents/EUR%20and%20Nat%20Docs/EUR%20Documents/EUR%20Documents/035%20-%20AMHS-Third%20Party%20Interconnection%20Architecture%09/EUR-Doc-035-AMHS-Third-Party-Infrastructure-Architecture-v6_0.pdf",
+    "printed_page": 16,
+    "section": "2.4.2.2.3\u20132.4.2.2.4 and Example 4",
+    "reader_lines": "630\u2013667",
+    "edition": "6.0, 20 October 2021",
+    "access_date": "2026-11-09",
+    "direct_attempts": [
+      {
+        "url": "https://www.icao.int/sites/default/files/EURNAT/Documents/EUR%20and%20Nat%20Docs/EUR%20Documents/EUR%20Documents/035%20-%20AMHS-Third%20Party%20Interconnection%20Architecture%09/EUR-Doc-035-AMHS-Third-Party-Infrastructure-Architecture-v6_0.pdf",
+        "access_utc": "2026-11-09T16:55:49.332534+00:00",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://www.icao.int/EURNAT/EUR%20and%20NAT%20Documents/EUR%20Documents/035%20-%20AMHS-Third%20Party%20Infrastructure%20Architecture/EUR-Doc-035-AMHS-Third-Party-Infrastructure-Architecture-v6_0.pdf",
+        "access_utc": "2026-11-09T16:56:10.148344+00:00",
+        "error": "HTTP Error 404: Not Found"
+      }
+    ],
+    "body_hash_status": "Exact PDF bytes unacquired. Official indexed reading only."
+  },
+  "sita_reader": {
+    "url": "https://kutatas.aircargo.hu/TypeB_Messaging_reference_manual.pdf",
+    "edition": "January 2000, 113A-bis",
+    "access_date": "2026-11-09",
+    "printed_pages": "2-12\u20132-14 and Figure 2.10",
+    "reader_lines": "1049\u20131110",
+    "scope": "Publisher-authored manual at a public third-party mirror, read through the reader. Body bytes and 2001 New York applicability unverified."
+  },
+  "prior_roll_pins": "https://github.com/AveLyra/911-conspiracy-investigation/blob/cc983a8cf86668d8110d25d6848d193358712d73/investigation/broader-evidence/faa-arinc-roll-list-and-original-custody-2026-11-09/SOURCE-PINS.json",
+  "literal_pair_test": {
+    "method": "PyMuPDF 1.27.2.2 unsorted splitlines, same-page next 12 lines and exact boundary/DT filters.",
+    "regex": {
+      "heading": "^\\.\\s*NYCXGXA\\s+(\\d{6})\\s*$",
+      "boundary": "^(?:\\.\\s*[A-Z0-9]{7}\\s|(?:QU|QN|QD)\\s)",
+      "dt": "^DT NYC [A-Z]{2} [AB] (\\d{6})(?:\\s|$)"
+    },
+    "synthetic_controls_passed": [
+      "same_value",
+      "same_prefix_different_suffix",
+      "different_prefix",
+      "adjacent_QU_message",
+      "adjacent_originator",
+      "page_split",
+      "two_candidates",
+      "beyond_window"
+    ],
+    "results": {
+      "awa-745": {
+        "physical_pages": 220,
+        "input_sha256": "71662bf90441d0f98e4673b896a0369dc2ecedf371ed0a5dccc184a98525c86e",
+        "scope_counts": {
+          "eligible_headings": 493,
+          "windows_with_1_DT_lines": 461,
+          "windows_with_0_DT_lines": 32
+        },
+        "pairs": 461,
+        "equal_whole": 312,
+        "equal_prefix": 460,
+        "equal_suffix": 312,
+        "different_prefix_examples": [
+          [
+            35,
+            13,
+            "110001",
+            17,
+            "102359"
+          ]
+        ]
+      },
+      "awa-747": {
+        "physical_pages": 135,
+        "input_sha256": "457e34d950956c897374dd2efaab30442f0551f62971124eb95a42bd6fdaa175",
+        "scope_counts": {
+          "eligible_headings": 246,
+          "windows_with_1_DT_lines": 213,
+          "windows_with_0_DT_lines": 32,
+          "windows_with_multiple_DT_lines": 1
+        },
+        "pairs": 213,
+        "equal_whole": 147,
+        "equal_prefix": 213,
+        "equal_suffix": 147,
+        "different_prefix_examples": []
+      },
+      "awa-748": {
+        "physical_pages": 148,
+        "input_sha256": "927dc41cec689ba6e2d154fe5f08088af0e36fa7fbd5f11a6511662105cbe968",
+        "scope_counts": {
+          "eligible_headings": 334,
+          "windows_with_1_DT_lines": 299,
+          "windows_with_0_DT_lines": 35
+        },
+        "pairs": 299,
+        "equal_whole": 194,
+        "equal_prefix": 298,
+        "equal_suffix": 194,
+        "different_prefix_examples": [
+          [
+            112,
+            3,
+            "110001",
+            7,
+            "102359"
+          ]
+        ]
+      },
+      "awa-750": {
+        "physical_pages": 228,
+        "input_sha256": "95f6cbcfaa49bff8661d414ecd238cdafaae6e9504fedb08c99c3614f3bfe29a",
+        "scope_counts": {
+          "eligible_headings": 456,
+          "windows_with_1_DT_lines": 381,
+          "windows_with_0_DT_lines": 75
+        },
+        "pairs": 381,
+        "equal_whole": 246,
+        "equal_prefix": 381,
+        "equal_suffix": 246,
+        "different_prefix_examples": []
+      }
+    },
+    "selected_awa750_pairs": [
+      [
+        1,
+        2,
+        "110223",
+        5,
+        "110222"
+      ],
+      [
+        228,
+        9,
+        "120341",
+        13,
+        "120341"
+      ]
+    ],
+    "scope": "Counts exact text-layer windows, including repeats. A window is a candidate pairing and is not a verified message boundary or timebase."
+  }
+}
