@@ -1,0 +1,28 @@
+# Two copies of the July 2004 FAA and NORAD referral
+
+November 9, 2026 · B129 / PD01–PD04 / PD07. The second Marcus Box 6 archive member contains a 13-page copy of the July 29 referral and its staff memorandum. All 13 pages correspond to pages 2–14 of the previously acquired 23-page file. The larger file also contains the acknowledgment, internal records and the email named as enclosure 2. The comparison establishes which source material is present in the two surviving PDFs. The corrected May 2003 answer and the signed administrative decision remain open. [NARA finding aid, Box 6, physical p. 9](https://www.archives.gov/files/research/9-11/finding-aid.pdf#page=9) · [File unit](https://catalog.archives.gov/id/2604844) · [Exact source pins](SOURCE-PINS.json)
+
+## What the two archive members contain
+
+| Source | Observed scope |
+| --- | --- |
+| **13-page referral member**, pp. 1–2 and 3–13 | The letter date is **July 29, 2004** at p. 1 line 7. Its enclosure list is at lines 36–49. Physical pp. 3–13 are the **July 29** staff memorandum, ending on internal page **11**. This supplies the body corresponding to enclosure **1**. |
+| **23-page member labeled “Entire Contents”**, pp. 1, 2–14, 15–22 and 23 | P. 1 has the joint OIG reply with the visible stamp **AUG 20 2004**. Lines 17–24 refer to the **July 29** letter and a decision to make further inquiries. Lines 26–30 describe help arranging access through NARA. Pp. 2–14 correspond to the shorter member. Pp. 15–22 contain the June 6 internal memo and related material. P. **23** contains the forwarded email chain corresponding to enclosure **2**. [Prior Commission-side acquisition](https://github.com/AveLyra/911-conspiracy-investigation/commit/19e952d7c45600cdd187f42aa4658fe66be2d814) |
+
+Both referral pages list **six** enclosure categories. They name the staff memo, Marr-to-Scott email, final report, staff statement 17 and the June 2004 and May 2003 hearing testimony. The two PDFs account for the staff memo and the larger PDF supplies a counterpart to the email. The report, statement and hearings are referenced. Separate copies of those four enclosure bodies were unlocated in the compared PDFs. Standard embedded-file and page attachment checks yielded zero. The filename and page findings leave the actual send package, enclosure versions and individual Inspector General receipt records open.
+
+The new member's p. 2 lines 7–8 gives **August 26, 2004** as the Commission termination date, as does long p. 3. The transfer letter gives **August 21, 2004**. The DOT investigative synopsis previously reviewed separately gives **July 24** for the referral. Keep those fields separate from the letter date **July 29** and the reply's **August 20** stamp. [Commission transfer letter, physical p. 1](https://www.archives.gov/files/historical-docs/9-11-commission-letter.pdf#page=1) · [Case-specific referral and disposition record](https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/README.md)
+
+## Enclosure 2 and the staff quotation
+
+The archived email reproduction at long p. **23** adds a fixed page-image locator to the previously reviewed reader text. Its visible message headers preserve **June 6, 2003, 4:30 PM** at line 3, **June 2, 2003, 6:25 AM** at line 20 and **June 1, 2003, 21:31** at line 59. The scanned fields leave timezone, native message IDs and transport or reading receipts unverified. [Earlier reader and staff-draft comparison](https://github.com/AveLyra/911-conspiracy-investigation/commit/f269e8e2089a69897c11c7183c85e70b3c38fffc)
+
+Short p. **5** lines 28–38 and the email's p. **23** lines 27–39 both carry **0916L**, **0924L** and **0925L**. The staff quotation ends at **“possible target.”** The email has **“possible target!”** and continues with the writer's crew-based account and the qualification about inability to confirm the conversations at lines 44–47. The scan preserves the quotation boundary and the contrary qualification. The underlying call and crew records remain necessary to test those accounts. Any instruction governing the quotation boundary remains unacquired.
+
+## Comparison scope and remaining records
+
+Ranked each of 13 pages against all 23 comparison pages using multiset overlap of alphanumeric four-grams. Every first-place score exceeds **0.98** and the mapping is short p. **n** to long p. **n+1**. Only short pp. **7** and **13** match their counterparts in exact Poppler layout text. All 13 corresponding grayscale raster hashes differ at one pixel per PDF point despite matching dimensions. Preserve both versions as distinct reproductions with shared source content. The checks include 15 layout anchors, 13 local scoped image crops and four literal search terms across both text layers. No hit for the exact case identifiers or the screened correction and action phrases occurred in that text scope. [Verification results and scope](SOURCE-PINS.json)
+
+- [ ] **PD01.** Corrected May 2003 answer, actual dispatch and receipt, and any designated successor recipient.
+- [ ] **PD02–PD03.** Signed FAA consideration or action/no-action record and recommendation-specific response, implementation and closure history.
+- [ ] **PD04 / PD07.** Recipient-side July 2004 enclosure manifests and dispatch/receipt records, subsequent NARA access or routing logs, native enclosure 2 chain, and the March 2007 report and cover. The July 2004 referral and reply precede the August 2006 recommendations. [Original work queue](https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/OPEN-RECORDS.md)
