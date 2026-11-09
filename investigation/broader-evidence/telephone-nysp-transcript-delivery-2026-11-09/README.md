@@ -1,0 +1,29 @@
+# Commission request and New York State Police cover for Flight 93 emergency calls
+
+November 9, 2026 · TEL02–TEL04 / AUD016-A1 / TC05–TC06. A three-page Team 7 archive packet contains the September 3, 2003 Commission request for emergency call material, the September 5 New York State Police cover letter and a copy of the opening page of the ground 911 transcript. The request expressly includes dispatch tapes. The cover refers to enclosed records without listing the items. The complete delivery and the actual recording remain open. [NARA finding aid, Team 7 Box 7, physical p. 101](https://www.archives.gov/files/research/9-11/finding-aid.pdf#page=101) · [Archive member and source ledger](SOURCE-PINS.json)
+
+## Dated request and cover
+
+| Record | Source fields and scope |
+| --- | --- |
+| **Commission Document Request No. 1**, Box 7 PDF p. 2 | Lines 3 and 41 identify the request and **September 3, 2003** date. Lines 7–18 ask the New York State Police for documents, records, notes, transcripts, **dispatch tapes** and other material concerning September 11 emergency calls received by that agency relating to hijacked airplanes. The stated production date is **September 19, 2003**. An illustrative call is described as occurring at **approximately 10:07 am** and as made by the mother of a Flight 93 passenger. Preserve the example as worded. The paragraph leaves the example's identity and relationship to other calls open. |
+| **Same request**, p. 2 lines 19–35 | Asks for rolling production as items become available, identification and basis for any withholding, and location information for items outside the recipient's possession, custody or control where such information exists. These are requested steps. The corresponding list of produced items and any withholding or referral records remain unacquired. |
+| **NYSP Assistant Counsel cover**, p. 3 lines 9, 19–24 and 31 | Dated **September 5, 2003**. Addresses a Commission official and says **“Enclosed please find the records you requested.”** The date is two days after the request and fourteen days before the production date. The visible letter gives a statement of enclosure. Dispatch, actual receipt, enclosure identities and any subsequent delivery remain unverified. |
+
+The ZIP places the transcript opening, request and cover together in the Box 7 **Shooting Story** folder. This supplies a candidate relationship between the papers. A dated enclosure list, routing or receipt stamp, or another copy of the transmittal would test whether the surviving first page was part of the September 5 enclosure and whether any dispatch tape also went to the Commission.
+
+## Transcript copy and reported times
+
+Box 7 p. **1**, lines **6–8**, repeats the **9:20:00** label from Box 12 item 412 physical p. **6**, lines **2–4**. Lines **24–26** say the passenger had just called. Lines **42–44** have the dispatcher describe the conversation at the house as in progress. At p. 1 line **36** the ground caller describes him as in the airplane **“with a cell phone.”** The same phrase appears in the corresponding item 412 opening. That is a reported device description on the ground call. The published NPS chronology treats the **9:37 EDT**, **Row 27 DEF** incoming call as Airfone under its stated convention. The caller's basis for the cell phone description and the carrier event records remain open. [NPS chronology and Glick entry](https://www.nps.gov/flni/learn/historyculture/phone-calls-from-flight-93.htm)
+
+The letters-only four-gram screen compared the Box 7 opening with all 48 item 412 pages. Item 412 p. **6** ranks first at **0.777152**. P. **33** ranks second at **0.178064**. Four selected normalized wording controls agree between Box 7 p. 1 and item 412 p. 6. These are corresponding transcript openings in distinct scan containers. Treat the repeated **9:20:00** as one transcript time label for corroboration purposes. Preserve the later item 412 **“9:45 roughly”**, interview **approximately 9:30**, NPS **9:37 EDT**, and the request's separate **approximately 10:07 am** example without assigning them a common event or clock. [Item 412 and prior clock comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/ccb48e2fc37026a860f4857f54c82a29c89ab884/investigation/broader-evidence/telephone-makely-911-transcript-production-2026-11-09/README.md)
+
+## Keep the delivery events distinct
+
+- **September 2001.** Packet 12 reports earlier transcript transmissions and cassette copying. It names NYSP Troop K as custodian of the original at that time and describes the FBI copies. This is the historical custody evidence.
+- **September 2003.** Commission **Document Request No. 1** goes to NYSP. The NYSP cover refers to records enclosed. The archive association and the shared transcript opening give an additional Commission-file route for the copy.
+- **June 2004.** DOJ/FBI **Request 35-13 Packet 12** has its own index, stamps and excerpts. The separate request identifiers and custodians preserve distinct production paths. The item 412 **93-label** header and **48-page** scan bounds remain as previously reported.
+
+The next discriminating records are the September 5 enclosure list and Commission receipt or production log, the actual NYSP logger recording and clock records, and the FBI 1A cassette inventory or disposition. Preserve **104103**, **302-23892** and **302-1A15519** as earlier source keys. The separate **11721** possible recording of the incoming call remains open.
+
+The archive retrieval verified its member path, ETag, byte range and CRC. The reading passed 18 PDF anchors, a 48-page text ranking and four shared wording controls. Seven scoped crops were visually checked. This verifies source fields and a text correspondence. Actual delivery, audio contents, clock alignment and custody after the reported events remain untested. [Exact locators, verification scope and hashes](SOURCE-PINS.json)
