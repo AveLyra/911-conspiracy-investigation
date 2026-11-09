@@ -1,0 +1,85 @@
+{
+  "sources": [
+    {
+      "naid": 7596237,
+      "file": "dca19-unobstructed.pdf",
+      "physical_pages": 3,
+      "catalogue_bytes": 95061,
+      "access_utc": "2026-11-09T05:27:22.341063+00:00",
+      "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-DCA-19-Action-Memo-09-11-Comm-unobstructed.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "resolved_url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-DCA-19-Action-Memo-09-11-Comm-unobstructed.pdf",
+      "bytes_read": 146278,
+      "sha256": "461c03aa2f4df777a648b1d1f6978db40118ce9d9bfd398b2e881ce490733a8d"
+    },
+    {
+      "naid": 7596238,
+      "file": "dca19-other.pdf",
+      "physical_pages": 3,
+      "catalogue_bytes": 123364,
+      "access_utc": "2026-11-09T05:27:22.335907+00:00",
+      "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-DCA-19-Action-Memo-09-11-Comm.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "resolved_url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-DCA-19-Action-Memo-09-11-Comm.pdf",
+      "bytes_read": 195183,
+      "sha256": "38dcd9acaffbd261c1c819c2c017a2e4aead48b2052541a123274f9500960522"
+    },
+    {
+      "naid": 7596243,
+      "file": "dca23.pdf",
+      "physical_pages": 8,
+      "catalogue_bytes": 104970,
+      "access_utc": "2026-11-09T05:27:22.800597+00:00",
+      "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-DCA-23-Oct-22-Route-Slip-Gould.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "resolved_url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-DCA-23-Oct-22-Route-Slip-Gould.pdf",
+      "bytes_read": 245884,
+      "sha256": "47f9994fccc7fa7e8809c73dcd3b4c01962f0d5f09b3355acde7e95c4fb8a9a2"
+    }
+  ],
+  "finding_aid": "https://www.archives.gov/research/foia/faa-finding-aid",
+  "results": {
+    "catalogue_and_fetched_bytes": {
+      "dca19-unobstructed": [
+        95061,
+        146278
+      ],
+      "dca19-other": [
+        123364,
+        195183
+      ],
+      "dca23": [
+        104970,
+        245884
+      ]
+    },
+    "dca23_p1_printed_spans": 15,
+    "dca23_p5_printed_spans": 36,
+    "matching_flight_data_radar_labels_utc": [
+      "1308-1318",
+      "1335-1343",
+      "1340-1350",
+      "1422-1432",
+      "1438-1448",
+      "1511-1521"
+    ],
+    "dca19_raster_sha256_by_page_96dpi": {
+      "dca19-unobstructed": [
+        "4ee688cbba020ebfcf439647efc2dad168bec1e86a5effd35fd6623e5cac7a6c",
+        "5eb558ba784f7e4e0531fed14d8b62a39454457f0627cd38df1cdaa55c6d3748",
+        "bffdc499b17569bb1ff25a4cc0a667713a33c452e4a7985a2eb8507d59585862"
+      ],
+      "dca19-other": [
+        "82074e27dcdeb3c79b6acd95e4b4dbafe18193236d81ffa9e7305ce90aee1459",
+        "34995f978f719b75b9dd87020ae55a9366b79921bff2258bc14a324ff7a870b1",
+        "169175198c1937aef24eeb68ff09101dc0bb6949db680ab6a710777f734fe9af"
+      ]
+    },
+    "dca19_exact_raster_pairs": [],
+    "scope": "Printed time-range labels and PDF scan layers. No actual audio span, cassette count or historical clock was tested."
+  },
+  "method": "Poppler pdftoppm -r 160 -gray -png and Tesseract --psm 3. Count literal HHMM-HHMM labels on DCA-23 physical p. 1 OCR lines 23\u201342 and physical p. 5 lines 11\u201346. Compare selected page regions visually. Scan-pair test uses Poppler pdftoppm -r 96 -gray -singlefile and SHA-256 of output."
+}
