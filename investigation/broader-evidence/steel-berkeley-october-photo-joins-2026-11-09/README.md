@@ -1,0 +1,30 @@
+# Higher-resolution archive views of steel pictured in the October 2001 report
+
+November 9, 2026 Eastern. STL02–STL03 / B188 / H005. Two Berkeley archive PDFs preserve higher-resolution views of all four photographs on p. 3 of the October 17 progress report. One view shows a red **7** on a member pictured under the report's column-splice caption. The image relationship provides a more legible marking and photo locator for retrieval. Building assignment and item custody still require independent records. [October report, p. 3](https://digicoll.lib.berkeley.edu/record/291534/files/103-WTC-Astaneh_Progress-Report-to-NSF-on-UCB-WTC-Project.pdf#page=3) · [Source pins and reproducible comparison settings](SOURCE-PINS.json)
+
+## Photo-by-photo comparison
+
+| October 17 report, PDF p. 3 | Berkeley 502 photo deck | Reading at the image level |
+| --- | --- | --- |
+| Fig. 1 left, xref **33**, **612 × 459** | p. **6**, xref **91**, **1600 × 1200** | Same framing of the flatbed and deformed material. Grayscale thumbnail correlation **0.999951**. |
+| Fig. 1 right, xref **34**, **618 × 463** | p. **8**, xref **99**, **1600 × 1200** | Same close inspection view and background. Correlation **0.999962**. Also appears in deck **505**, p. **16**, xref **181**, **943 × 707**, correlation **0.999958** against the report. |
+| Fig. 2 left, xref **32**, **600 × 450** | p. **18**, xref **140**, **1600 × 1200** | Same inspection view and red **7** on the member. Correlation **0.999951**. |
+| Fig. 2 right, xref **31**, **608 × 456** | p. **25**, xref **168**, **1600 × 1200** | Same close-up arrangement of bolt heads, plate and hole. Correlation **0.999933**. |
+
+[502 archive deck](https://digicoll.lib.berkeley.edu/record/291572/files/502-WTC-Astaneh-PPT-containing-photos-shot-on--Oct-8-2001-Final-for-Archives.pdf) · [505 archive deck, p. 16](https://digicoll.lib.berkeley.edu/record/291575/files/505-WTC-Astaneh-NSF-Congress-Dec_13-2001.pdf#page=16)
+
+All five pairs were visually checked. The tests support reuse of the same views at different sizes. They provide no evidence about whether the Fig. 2 left and right images show a single physically tagged item. The additional appearances are copies of the views, with one investigator's attributions. The visible **7** gives a field-identification lead. Its author, date and marking convention remain open.
+
+## Keep the dates and attributions separate
+
+- The October progress report's field-trip account gives **September 19 to October 7** (p. 2, sorted text line 38). On p. 3 it captions the Fig. 1 beam and Fig. 2 splice as from WTC 7. Its prose calls the beam extensively burned and describes apparent lateral-torsional buckling. The p. 3 captions supply no explicit exposure date.
+- Deck **502**, p. 1, describes the photos as shot **October 8, 2001** (lines 5–6) and **“most likely”** showing steel from WTC 7 (line 20). Its note attributes marks of **“WTC7”** or **“7”** to pages **16 to 18**. The p. 18 red **7** is visible in the compared view. Lines 22–29 describe a single beam in pages 3–10 and attribute its observed fire effects and distortion to conditions after the collapse.
+- Deck **505**, p. 16, reproduces the Fig. 1 right view with a note that dates the exposure **October 8, 2001**, attributes burning and section loss to the period after collapse, and identifies the note as added **October 10, 2013**. Keep the presentation, photograph and annotation dates distinct. The temperature and sequence described in the note are the author's account. This comparison did not measure temperature or test a failure mechanism. [Progress report, pp. 2–3](https://digicoll.lib.berkeley.edu/record/291534/files/103-WTC-Astaneh_Progress-Report-to-NSF-on-UCB-WTC-Project.pdf#page=2) · [502 notes, p. 1](https://digicoll.lib.berkeley.edu/record/291572/files/502-WTC-Astaneh-PPT-containing-photos-shot-on--Oct-8-2001-Final-for-Archives.pdf#page=1) · [505 note, p. 16](https://digicoll.lib.berkeley.edu/record/291575/files/505-WTC-Astaneh-NSF-Congress-Dec_13-2001.pdf#page=16)
+
+The trip dates and later exposure date are preserved as different source fields. The record does not resolve how the pictured views relate to the trip described. The earlier attribution wording, the later qualified wording, and the later account of fire exposure remain attributed to their exact sources. Earlier Fig. 4's October 1 selection annotation concerns a separate photo in this review. No identity was established between that selection, the p. 3 views, W14A/W14B, C12a/b or FEMA Sample 1. [Prior selection record comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/c3bf4af5bfd5f0ab4783bd3847dc21c29ca49a2b/investigation/broader-evidence/steel-nsf-october-selection-record-2026-11-05/README.md)
+
+## Test scope and next records
+
+Compared embedded placements of at least **160 pixels in each dimension** in all **26** pages of 502, all **21** of 505, and the selected two-page ranges of the October report and supplement. The four counts were **103**, **66**, **10** and **10** placements. Those counts include repeated presentation graphics. None of the report-to-deck or supplement-to-deck pairs had identical full decoded RGB hashes with matching dimensions. For ranking, grayscale images were resized to **64 × 64** with Lanczos, mean-centered and normalized. Pearson correlation compared images within a 10% relative aspect-ratio difference, without rotating or searching for a crop. The inspected matches were ranked candidates plus a visual check. A correlation score is a likeness measure. Source date, building origin, specimen identity and custody require separate evidence. [Source and method records](SOURCE-PINS.json)
+
+The best next join is the dated original photo roll or caption register with the contemporaneous **7** mark key, set-aside or truck record, and a specimen receipt or drawing. Match physical geometry and the original mark before joining this view to a FEMA/NIST identifier. The archive decks leave the release, transport, intake and building-attribution records open.
