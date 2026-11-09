@@ -1,0 +1,36 @@
+# DOT OIG's September 2007 report and the FAA follow-up trail
+
+November 9, 2026 · B129 / PD02–PD05. The April–September 2007 Inspector General report carries forward the preceding period's published **audit** backlog values. It gives only aggregate investigation statistics in the corresponding tables. Its overdue list and the published investigation counts supply no case-level disposition for **CC-2006-085 / 042R0122001**. House **3550** identifies a separate transmittal from the Secretary covering the period ending **March 31, 2007**. The Secretary's cover and enclosure remain unacquired. [OIG report and attachment](https://www.oig.dot.gov/library-item/29883) · [House Journal, p. 2362](https://www.govinfo.gov/content/pkg/GPO-HJOURNAL-2007/pdf/GPO-HJOURNAL-2007-2-2.pdf#page=104)
+
+## The tables track different things
+
+| Published audit row | Reports | Recommendations | Questioned costs, thousands | Funds to be put to better use, thousands |
+| --- | ---: | ---: | ---: | ---: |
+| March 31, 2007 closing | 55 | 139 | $62,953 with rounding footnote | $1,933,384 |
+| April 1, 2007 opening | 55 | 139 | $62,953 | $1,933,384 |
+| September 30, 2007 closing | 43 | 113 | $24,510 | $958,384 |
+| October 1, 2007 opening | 43 | 113 | $24,510 | $958,384 |
+
+All four numeric fields match at each audit boundary. The narrower safety, economy or efficiency table likewise carries **36 reports / 106 recommendations** into April and **34 / 94** into October. The table footnotes distinguish a report with undecided recommendations from individual recommendations. Matching totals leave the underlying item lists and carryover entries unverified. [March 2007, printed pp. 63–64](https://www.oig.dot.gov/sites/default/files/trans4_SAR1H_09_072307_508_compliant.pdf#page=69) · [September 2007, printed pp. 57–58](https://www.oig.dot.gov/sites/default/files/oigsar2007.pdf#page=63) · [March 2008, printed pp. 57–58](https://www.oig.dot.gov/sites/default/files/oigsar_0708.pdf#page=63)
+
+Two same-page differences remain open. In September 2007 printed p. 57, upper row B lists **19 reports / 76 recommendations**. The lower audit-type total gives **16 reports with safety, economy or efficiency recommendations / 76 such recommendations**. The successor's printed p. 57 gives **20 / 140** in upper row B and **21 / 140** in the corresponding lower columns. The labels and all values are preserved. A row-level cohort list and reporting definitions could test whether the upper and lower tables count the same reports. [September page](https://www.oig.dot.gov/sites/default/files/oigsar2007.pdf#page=63) · [March 2008 page](https://www.oig.dot.gov/sites/default/files/oigsar_0708.pdf#page=63)
+
+September printed pp. 68–70 list **24 report IDs** with recommendations unresolved for more than six months. The group for April–September 2006 includes **AV-2006-056**, on Greater Orlando Aviation Authority airport revenue, and **MH-2006-065**, on Mississippi emergency repair contracts. The reviewed list gives no row for the FAA Commission-answer investigation. Printed p. 71 limits the discussion of significant revisions and disagreements to audit decisions. Printed p. 72 gives departmental investigation aggregates, including **2 employee suspensions** and **4 reprimands**, without case or employee identifiers. The September 2006 OIG report does identify the FAA referral by name and describes proposed follow-up. Its case summary is evidence of what OIG reported and recommended. The later tables leave the actual correction and personnel disposition open. [September 2007 overdue list](https://www.oig.dot.gov/sites/default/files/oigsar2007.pdf#page=74) · [Scope and investigation tables](https://www.oig.dot.gov/sites/default/files/oigsar2007.pdf#page=77) · [September 2006 case summary, printed p. 39](https://www.oig.dot.gov/sites/default/files/sar_2006.pdf#page=46)
+
+## Unresolved investigation counts
+
+| Source | Value as published |
+| --- | --- |
+| March 2007, printed p. 79 | Pending-investigations table total **472**. |
+| March 2007, printed p. 80 | Prose pending caseload **473**. |
+| September 2007, printed p. 73 | Pending-investigations table total **480**, also the sum of the 11 agency counts. |
+| September 2007, printed p. 74 | **80** opened, **79** closed, pending caseload **480**. |
+
+If the March and September numbers describe a common population with no other changes, adding the reported net **1** yields **473** from the March table or **474** from the March prose. The differences from the September count are **7** and **6**, respectively. That common-population assumption is unverified. No case inventory or adjustment ledger was acquired. The differences do not identify particular cases. A case-keyed opening snapshot, movement history and closing snapshot would test the conditional calculation. [March 2007 counts](https://www.oig.dot.gov/sites/default/files/trans4_SAR1H_09_072307_508_compliant.pdf#page=85) · [September 2007 counts](https://www.oig.dot.gov/sites/default/files/oigsar2007.pdf#page=79)
+
+## Scope and open records
+
+The official item page and its 88-page attached PDF were retrieved directly. The page images of the cover, September tables and specified comparison rows were read. PyMuPDF sorted text verified the table values and searched the September PDF's 88 pages for the investigation identifiers and phrase variants. Neither case identifier nor the exact Commission staff referral phrase appeared in that search. The short numeric pattern for 9/11 hit unrelated September 11, 2007 dates on PDF p. 70. The Orlando audit ID and the employee-suspension heading were positive search controls. The held September 2006 report gave a positive control for the referral heading. These are bounded searches of the PDF text layer, alongside a visual review of the listed table pages. [Hashes, locators and reading scope](SOURCE-PINS.json) · [Earlier report comparison](https://github.com/AveLyra/911-conspiracy-investigation/commit/30a715bafd14553235b68cfb92db8670d421ad22)
+
+- **PD03–PD05.** Obtain the actual House 3550 cover and report, or a matching sender or recipient copy. Test its reporting universe and locate any keyed case or recommendation record before making claims about coverage. [House referral and comparator leads](https://github.com/AveLyra/911-conspiracy-investigation/blob/b0c280c5563c7c8a61d9f0b6f585dea088768deb/investigation/broader-evidence/faa-actions-taken-referrals-2026-11-06/README.md)
+- **PD01–PD04.** Obtain the corrected May 2003 response and receipt, the signed administrative consideration or action/no-action record, and evidence of implementation or closure for each recommendation. Keep the investigation's recorded December 12, 2006 closure separate from those outcomes. [Case-specific open records](https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/OPEN-RECORDS.md)
