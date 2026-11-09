@@ -1,0 +1,34 @@
+# FAA briefing table and NORAD chronology counterparts
+
+**November 9, 2026 · B129 / PD01 / PD07.** The January 2009 Commission archive mirror contains a second fax copy of the internal FAA briefing table and a separate Team 8A account of a NORAD draft. The table copies carry different fax headers and preserve the same visible timing entries. The Team 8A and February NORAD source accounts preserve conflicting notification values and different descriptions of the earlier United 93 report. [Exact archive members, hashes and line checks](SOURCE-PINS.json)
+
+## Two fax copies of the FAA briefing
+
+| Released copy | Visible fax fields | Scope |
+| --- | --- | --- |
+| NYC Box 2, physical pp. 1–2 | **APR. 27. 2004**, **7:10AM**, **NO. 2511**, fax **P. 2** and **P. 3** | The table has an additional handwritten **FAA** label. The held scan begins at fax page 2. |
+| Hyde Box 7 item 573, physical pp. 2–3 | **MAY. 25. 2004**, **4:19PM**, **NO. 2788**, fax **P. 1** and **P. 2** | The preceding staff note describes a subpoena response. The extracted date includes **MAY. 2b. 2004**. |
+
+All 16 visible time cells match across the table pages. The superscript footnotes and asterisks are recorded as printed in the selected values below. The extracted layer differs in places, including **OS:255** and **08:526** on the April copy versus **08:255** and `08:52*` on the May copy, and `09:28*` versus **09:284**. Those tokens are extraction observations. The visible table reads **08:25⁵**, **08:52⁶** and **09:28⁴** in both copies. The first two are probable distress times and the third is the first-sign time. The visible United 93 probable distress time is **09:32⁸** in both tables. Their narrative pages each give **0931:00** for probable distress. Keep both descriptions and their precision. [Earlier item 573 comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/f5f17955a1c204d05347fc4909f94bf0b76c6777/investigation/broader-evidence/faa-hearing-questions-and-briefing-table-2026-11-09/README.md)
+
+Both tables give `09:24*` for AAL77 and `10:08*` for UAL93 in the NORAD/NEADS notification row. Both narratives retain **0916:00** with an explicit reservation that the reported notice preceded indications of distress. They also share **0939:59**, **0944:31** and approximate **1004:00**. The January fax of the September 20 notification sheet has separate fields **NO. 1661** and **P. 7**. The April copy adds fax 2511 and its missing first page as routing targets. Sending records, recipients, covers and the original table version remain unverified. [September 20 sheet and fax](https://github.com/AveLyra/911-conspiracy-investigation/blob/9115d1dedb2838f2cabc8fce5ecc8a0212935149/investigation/broader-evidence/faa-september20-notification-sheet-fax-2026-11-09/README.md)
+
+## NORAD timing accounts
+
+Item 497 p. 1 says staff took notes at NORAD headquarters and did not receive the internal draft they examined. Treat the surviving scan as a staff account with attributed text. Its relationship to the underlying draft and to the February fax remains open. [Exact source members](SOURCE-PINS.json)
+
+| Field | Item 497 | Held item 502 |
+| --- | --- | --- |
+| First specific AA77 information and displayed impact time | P. 2 lines 18–21 gives **0935L**, **three minutes** and **0937L**. Lines 16–17, 29–31 and 37 separately retain **0934** or **0934L** in the earlier-release qualification, specific-notification comment and lost-aircraft row. | P. 6 lines 18–20 gives **0934L**, **three minutes** and **0937L** in the corresponding passage. Lines 25–30 also retain **0934L** and **0934**. |
+| UA93 earlier possible discussion | P. 4 lines 14–23 gives **0916L** to **0922L** as a possibility. Lines 24–28 separately attribute a change to information from the Commission after a May 2003 statement and give **0915** to **0922** and a supported first-notice time of **1006**. | P. 7 lines 7–17 retains the earlier **0916–0922** possibility and describes exact notice time as unknown in that passage. P. 2 lines 14–15 separately gives **1006:28L**. |
+| Delta 89 discussion range | P. 5 line 7 gives **0941-0948**. | P. 7 line 27 gives **0941–0958** on the face and **0941 - 0958** in extraction. |
+
+The printed AA77 times give two minutes from **0935** to **0937** and three from **0934** to **0937**. This is arithmetic on displayed labels. The conflicting passages, the standalone lost-aircraft entry, the earlier release claim and any actual time in the underlying log remain separate. The February copy identifies transcript references. Item 497 attributes the later United 93 position to a specific staff exchange, whose underlying record has yet to be joined. [Earlier February fax study](https://github.com/AveLyra/911-conspiracy-investigation/blob/73da6912b3b586cb90823c7681f673bf0514e114/investigation/broader-evidence/faa-norad-chronology-routing-and-log-review-2026-11-09/README.md)
+
+## Verification and remaining inputs
+
+PyMuPDF 1.27.2.2 verified 60 fixed text anchors and six source hash, CRC and page-count sets across the new scans and held comparators, including one scanned page kept in local handling. Ten selected page images or regions were inspected. Header-excluded extracted token similarity was **0.942731** for the table and **0.991667** for the narrative. The table fell below the planned **>0.96** extraction threshold. The matching cells are a scoped visual result. The source pin file preserves the threshold outcome and limits. [Verification fields](SOURCE-PINS.json)
+
+- Seek fax **2511** page **1**, both fax registers and cover sheets, and the subpoena-return cover and intake manifest associated with **2788**. Test whether the copies derive from a common original and when each version was available to whom.
+- Seek the NORAD internal draft, the original staff notes and the dated Commission communication about the DEN line. Compare the exact log and transcript ranges referenced by the February fax. Which label belongs to which contact, and why the versions differ, remain unresolved.
+- The actual corrected FAA May 2003 answer, dated receipt, signed decision and recommendation-specific disposition remain open. These copies support version and custody leads. Historical event times, correction delivery and administrative outcomes require their own evidence.
