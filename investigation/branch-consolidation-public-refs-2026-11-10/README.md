@@ -236,3 +236,5 @@ Known version cautions: the later number-alias review corrects the December/July
 - [telephone-zero-entry-context-verified-2026-11-02](../broader-evidence/telephone-zero-entry-context-verified-2026-11-02/README.md)
 
 The broader topic-branch inventory and local/uncommitted work were not exhausted by this catalog. A group missing from this index is not proof that it was not researched or preserved.
+
+Additional reviewed material: [steel exhibition records and label](../broader-evidence/steel-exhibition-records-and-label-2026-11-03/README.md), copied byte-for-byte from its [public branch source](https://github.com/AveLyra/911-conspiracy-investigation/tree/9a89314d28d911789ff815d9f34fcdb787b690ff/investigation/broader-evidence/steel-exhibition-records-and-label-2026-11-03), and a [November 6 historical leads roundup](../catalogue/LEADS-AND-UPDATES-2026-11-06.md) previously published at a pinned commit. The roundup preserves historical wording and pinned references; it is not a complete current index.
