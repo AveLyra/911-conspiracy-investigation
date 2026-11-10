@@ -1,0 +1,98 @@
+{
+  "sources": [
+    {
+      "id": "fr-2000",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2000-04-11/pdf/00-8505.pdf",
+      "accessed": "2026-11-05",
+      "reused": true,
+      "bytes": 665678,
+      "sha256": "601991d97eeb2730b3ce934fee1782ed28e011ef52720f4a1528a79f87889b6a",
+      "pdf_pages": 95,
+      "locators": {
+        "83": "printed 19558, TIGR identifier and investigative data lines 72–109",
+        "84": "printed 19559, lines 16–26"
+      }
+    },
+    {
+      "id": "fr-2005",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2005-12-21/pdf/E5-7599.pdf",
+      "accessed": "2026-11-05",
+      "reused": false,
+      "bytes": 148504,
+      "sha256": "2a94b4a2f0cd127661d7311789b74300c6fde0715856a2f8928b9262c8c9f10e",
+      "pdf_pages": 2,
+      "locators": {
+        "1": "printed 75856, lines 112–129 and system identifier",
+        "2": "printed 75857, lines 5–28 and 111–121"
+      }
+    },
+    {
+      "id": "sar-2023",
+      "url": "https://www.oig.dot.gov/sites/default/files/DOT%20OIG%20Semiannual%20Report%20to%20Congress%20-%20October%202022%20-%20March%202023.pdf",
+      "accessed": "2026-11-05",
+      "reused": false,
+      "bytes": 3837337,
+      "sha256": "67970bcd9399e521f1a6dcc598e3938e3f5f2508a201bf732dc6a0b1bd472660",
+      "pdf_pages": 20,
+      "locators": {
+        "10": "printed p. 8, lines 20–31"
+      }
+    }
+  ],
+  "indexed_sources": [
+    {
+      "id": "pia-2004",
+      "url": "https://www.transportation.gov/individuals/privacy/pia-transportation-inspector-general-reporting-system",
+      "accessed": "2026-11-05",
+      "direct_http_status": 403,
+      "native_sha256": null,
+      "locator": "August 20, 2004, How TIGR ensures data accuracy"
+    },
+    {
+      "id": "budget-2009",
+      "url": "https://www.transportation.gov/sites/dot.gov/files/docs/oig_fy_2009_budget_estimate.pdf",
+      "accessed": "2026-11-05",
+      "direct_http_status": 403,
+      "native_sha256": null,
+      "locator": "FY 2009 Performance Plan, section VII, printed p. 9"
+    }
+  ],
+  "extractor": "PyMuPDF 1.27.2.2",
+  "checked_anchors": {
+    "fr-2000": {
+      "83": [
+        "DOT/OST 101",
+        "source of referral data and action taken."
+      ],
+      "84": [
+        "after they become inactive.",
+        "or become obsolete."
+      ]
+    },
+    "fr-2005": {
+      "1": [
+        "and public posting of investigation",
+        "January 30, 2006, unless modified"
+      ],
+      "2": [
+        "source of referral data and action taken.",
+        "publishes some investigation results",
+        "after they become inactive."
+      ]
+    },
+    "sar-2023": {
+      "10": [
+        "DOT OIG maintains an Investigative Case",
+        "administrative). It is also the repository for reports",
+        "and management implication reports."
+      ]
+    }
+  },
+  "retention_comparison": {
+    "result": "equal",
+    "normalization": "join whitespace and remove line wrap after 2-",
+    "fr_2000": "physical p. 84, lines 17–26",
+    "fr_2005": "physical p. 2, lines 112–121"
+  },
+  "limits": "No case outcome, retention implementation, migration, recommendation row or communication was verified."
+}

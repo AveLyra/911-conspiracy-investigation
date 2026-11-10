@@ -24,3 +24,10 @@ The later merge also published the [UMS and related-records research update](../
 The public legacy insurance-history responses for UMS and Max Movers include `ins_cancl_form` value `35` in several relevant cancellation rows. This is a field value and a locator for the actual BMC-35 filing or electronic equivalent; it does not establish a revocation reason, continuous coverage or the contents of a notice. Original notices and named-insured schedules remain needed. A 2009 FMCSA notice distinguishes cancellation forms from certain policy endorsements; its later general explanation does not itself establish 2001 practice. [UMS history](https://data.transportation.gov/resource/6sqe-dvqs.json?docket_number=MC320465) · [Max history](https://data.transportation.gov/resource/6sqe-dvqs.json?docket_number=MC398463) · [2009 notice, printed p. 6204](https://www.govinfo.gov/content/pkg/FR-2009-02-05/pdf/FR-2009-02-05.pdf).
 
 The snapshot does not include work still being edited or later publications; their absence is not a finding that no such work exists.
+
+
+## Earlier research bundles now available on main
+
+- [Ten-claim adversarial review and methods audit](../broader-evidence/ten-claim-audit-2026-10-27/README.md) — a bounded source pass preserving contrary evidence and unresolved tests.
+- [Evaluation-method audit](../broader-evidence/evaluation-method-audit-2026-10-27/README.md) — source, reasoning and dependency checks with a frozen predecessor.
+- [Smithsonian steel accession records](../broader-evidence/steel-smithsonian-accession-relations-2026-11-04/README.md) — catalog comparisons with source-photo, loan and provenance questions still open.
