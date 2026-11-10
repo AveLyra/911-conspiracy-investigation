@@ -1,0 +1,358 @@
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..13697cb2
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,32 @@
++# TSA checked-baggage testing dates and original follow-up records
++
++Public derivative of the November 10, 2026 source review · B129 / PD02–PD04 procedural comparator. This review follows the separate FAA Red Team disclosure DI-02-0207 from a witness's description of the management reply to later reporting on TSA's screening tests. It also compares a signed DHS response with GAO's account of what it received and could verify. The May 2003 FAA answer examined in CC-2006-085 / 042R0122001 has its own correction, decision and recommendation trail. [OSC transmittal, PDF pp. 16–17](https://911digitalarchive.org/files/original/5f2632a01d18e904772878d3e9d9ce25.PDF#page=16) · [CC-2006-085, PDF pp. 12–13](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12)
++
++## Accounts and observations
++
++| Record | Observation and limit |
++| --- | --- |
++| DOT OIG March 18, 2003 public correspondence listing | OIG says TSA concurred with three successor-program recommendations and reported including the proposed elements. The attachment link points to the August 16, 2002 OIG report. OIG reports program weaknesses and says it did not substantiate deliberate suppression. [OIG listing](https://www.oig.dot.gov/library-item/30374) · [Report, PDF p. 12](https://www.oig.dot.gov/sites/default/files/kaplan020816.pdf#page=12) |
++| OSC March 18, 2003 transmittal, PDF pp. 16–17 | OSC describes a February 24 response, still expresses uncertainty about standard operating procedures, and reports filing a redacted reply. The original reply remains unacquired. [Transmittal](https://911digitalarchive.org/files/original/5f2632a01d18e904772878d3e9d9ce25.PDF#page=16) |
++| May 22, 2003 Commission hearing, transcript pp. 143–144, PDF p. 143 lines 7–23 and p. 144 lines 21–47 | The witness says he read a TSA letter to OSC and understood it to indicate that explosives detection systems were outside testing. He also disputes OIG's account and says investigators omitted his documentation and adverse witness statements. His prepared statement describes a first draft and second report. The hearing does not identify the letter by date or include the underlying documents at those locations. The February 24 reply is a candidate identity. [Transcript](https://www.9-11commission.gov/archive/hearing2/9-11Commission_Hearing_2003-05-22.pdf#page=143) · [Prepared statement](https://www.9-11commission.gov/hearings/hearing2/witness_dzakovic.htm) |
++| GAO-04-440T, printed p. 20, PDF p. 22 lines 21–32 | The 2004 testimony says TSA “did not begin conducting covert tests of checked baggage screeners until January 2003.” It describes selectee-protocol testing from January to September 2003, a November 2003 protocol designed for checked baggage, and 192 checked-baggage tests at 128 airports through January 17, 2004. [2004 testimony](https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-04-440T/pdf/GAOREPORTS-GAO-04-440T.pdf#page=22) |
++| GAO-05-457, printed p. 33 table 3 and note b, PDF p. 38 lines 8–38 | The 2005 report says TSA “did not begin reporting the results of checked baggage tests until January 2003” and says four were “conducted in September and October 2002.” The table lists three checked-baggage tests in FY 2002 Q4 and one in FY 2003 Q1. Note a separately describes excluded tests at three airports where federal screeners had yet to deploy. [2005 report](https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-05-457/pdf/GAOREPORTS-GAO-05-457.pdf#page=38) |
++| GAO-06-597T, PDF pp. 19–20 | GAO reports 29 management reports containing 19 distinct recommendations as of December 2005. It separately describes a February 2005 local checked-baggage procedures document and 1,370 local explosives detection system tests at 71 airports during March–September 2005. This is a dated later observation about local testing. Its relationship to the procedures discussed in May 2003 remains unverified. [2006 testimony](https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-06-597T/pdf/GAOREPORTS-GAO-06-597T.pdf#page=19) |
++
++The 2004 and 2005 date accounts remain side by side. The November 2003 protocol and the underlying test rows would show whether the two reports used different population or test definitions and whether January was an operational start date, a reporting start date, or both for a particular subset. Those are open questions. A checked-baggage test count alone leaves the apparatus, test scope and units of observation unspecified. OIG's disposition and the witness's criticism also remain separate.
++
++## Signed draft response and document identifiers
++
++The February 4, 2005 DHS letter is reproduced on two image pages in GAO-05-457, Appendix V, printed pp. 58–59 (PDF pp. 63–64). Its subject reads `GAO-05-143SU` and `GAO Job Code 440256`. The public report ID is `GAO-05-457`. DHS describes the connectivity plan as fulfilling the first draft recommendation and says steps toward the second were underway. GAO says TSA did not supply the connectivity plan despite requests, so GAO could not assess whether it fulfilled the recommendation. Preserve both accounts. The two actions concern connectivity and training records. GAO separately names its classified covert-testing analysis as `GAO-05-437C` in note 41 on PDF p. 39. Keep all three document IDs distinct. [Signed response](https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-05-457/pdf/GAOREPORTS-GAO-05-457.pdf#page=63) · [GAO evaluation, PDF p. 52 lines 1–22](https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-05-457/pdf/GAOREPORTS-GAO-05-457.pdf#page=52) · [Note 41](https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-05-457/pdf/GAOREPORTS-GAO-05-457.pdf#page=39)
++
++## Checks performed
++
++- Extracted all nine fiscal-quarter rows from GAO-05-457 table 3 and checked each row and the printed column totals. The FY 2003 and FY 2004 sums, 836 and 2,369, match GAO-06-597T. The remaining 33 tests are in the earlier quarter, yielding the table's 3,238. GAO identifies the table as its analysis of OIAPR data. Agreement of totals across GAO outputs leaves independence and original event-level accounting unverified. The 192 figure uses a different date window and cannot be reconstructed from these fiscal-quarter totals.
++- Verified ten preserved response hashes. Direct GAO downloads returned HTTP 403 HTML for all three titles. The three corresponding GovInfo downloads returned HTTP 200 PDF. Preserve the results by route. The PDF count from `file` and the matching PyMuPDF and Poppler totals were respectively 10/146 for the hearing, 31/41 for GAO-04-440T, 29/66 for GAO-05-457 and 9/41 for GAO-06-597T. The tool outputs establish different counts on the same bytes.
++- NARA schedule DAA-0560-2013-0010 describes the later ASAP Advantage series and identifies the predecessor STEA program. Items 1–5 separately cover program records, inputs, master data and classified and unclassified reports. It is a later class-level schedule. Case-specific application to the early OIAPR records is unverified. The captured PDF has seven physical pages in both page parsers. Its last visible footer says “Page 7 of 8.” Page 8 and the cause of the difference remain unverified. PDF p. 1 visibly reads `DAA-0560-2013-0010` in the schedule-number field while the saved text layer in that field yields `DM-0560-2013-0010`. [Schedule, PDF pp. 1 and 3–7](https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-homeland-security/rg-0560/daa-0560-2013-0010_sf115.pdf)
++
++## Next records
++
++1. Retrieve the February 24, 2003 redacted OSC-file reply, the March 18 packet inventory, the agency drafts, and the witness's comments and evidence list. Confirm which letter the witness described before attributing his account to the February 24 reply.
++2. Locate the November 2003 OIAPR checked-baggage protocol and issuance record, the four September–October 2002 test entries and January 2003 reporting records, and any publicly released workpaper or item index for GAO job 440256. Use protocol version, test and reporting dates, screening population and apparatus fields to test the conflicting accounts. Separately track the February 2005 local procedures document and the 29-report inventory. The native records, results and item-level dispositions remain open.
++3. For CC-2006-085, the corrected May 2003 QFR, recipient receipt, signed consideration/action/no-action and dated dispositions for recommendations 1 and 2 remain indispensable. The DHS/GAO correspondence illustrates how a claimed response, implementation and independent verification can leave different records. It supplies no finding about those specific FAA outcomes. [CC-2006-085, PDF p. 12](https://www.oig.dot.gov/sites/default/files/cc2006085.pdf#page=12)
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..7b1d6feb
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,314 @@
++{
++  "task_keys": [
++    "B129",
++    "PD01",
++    "PD02",
++    "PD03",
++    "PD04"
++  ],
++  "review_date_utc": "2026-11-10",
++  "verified_sources": {
++    "retrievals": [
++      {
++        "file": "hearing.pdf",
++        "url": "https://www.9-11commission.gov/archive/hearing2/9-11Commission_Hearing_2003-05-22.pdf",
++        "utc": "2026-11-10T13:52:23.801893+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://www.9-11commission.gov/archive/hearing2/9-11Commission_Hearing_2003-05-22.pdf",
++          "application/pdf"
++        ],
++        "bytes": 353319,
++        "sha256": "9281deaf5b94141dcdd392f7685e8980d782b6da649d0ff4da577634b17f1e65"
++      },
++      {
++        "file": "witness.htm",
++        "url": "https://www.9-11commission.gov/hearings/hearing2/witness_dzakovic.htm",
++        "utc": "2026-11-10T13:52:23.511203+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://www.9-11commission.gov/hearings/hearing2/witness_dzakovic.htm",
++          "text/html; charset=UTF-8"
++        ],
++        "bytes": 29303,
++        "sha256": "4dd1de5670d1c81cc898a56db1fc13b901b960a309c0a42e8e84930fed75340b"
++      },
++      {
++        "file": "oig-march.html",
++        "url": "https://www.oig.dot.gov/library-item/30374",
++        "utc": "2026-11-10T13:52:23.686221+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://www.oig.dot.gov/library-item/30374",
++          "text/html; charset=utf-8"
++        ],
++        "bytes": 42221,
++        "sha256": "0e7964b0dca4335a1e461c8ccebae59700556f07a7aa7f5ad8ef6fb841647adc"
++      },
++      {
++        "file": "gao-04-440t.pdf",
++        "url": "https://www.gao.gov/assets/gao-04-440t.pdf",
++        "utc": "2026-11-10T13:52:23.311508+00:00",
++        "curl_status": 0,
++        "response": [
++          "403",
++          "https://www.gao.gov/assets/gao-04-440t.pdf",
++          "text/html"
++        ],
++        "bytes": 403,
++        "sha256": "33a1f4e38a9b435c5372022afafd00df2a7f7bc41b81f8599887f6f14fc5662e"
++      },
++      {
++        "file": "gao-05-457.pdf",
++        "url": "https://www.gao.gov/assets/gao-05-457.pdf",
++        "utc": "2026-11-10T13:52:23.312161+00:00",
++        "curl_status": 0,
++        "response": [
++          "403",
++          "https://www.gao.gov/assets/gao-05-457.pdf",
++          "text/html"
++        ],
++        "bytes": 402,
++        "sha256": "309a1f6f70012c5950cf8d906f565175a39ff355f670776145ab01b433970a4b"
++      },
++      {
++        "file": "gao-06-597t.pdf",
++        "url": "https://www.gao.gov/assets/gao-06-597t.pdf",
++        "utc": "2026-11-10T13:52:23.313750+00:00",
++        "curl_status": 0,
++        "response": [
++          "403",
++          "https://www.gao.gov/assets/gao-06-597t.pdf",
++          "text/html"
++        ],
++        "bytes": 403,
++        "sha256": "4c84eae38fc257ecb8a3e006d08d352018873b4bc4cfe11f5054bcb45e6489f3"
++      },
++      {
++        "file": "tsa-schedule.pdf",
++        "url": "https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-homeland-security/rg-0560/daa-0560-2013-0010_sf115.pdf",
++        "utc": "2026-11-10T13:52:23.477002+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-homeland-security/rg-0560/daa-0560-2013-0010_sf115.pdf",
++          "application/pdf"
++        ],
++        "bytes": 153573,
++        "sha256": "ccf8702b6211ce6887eb0a2408dfc93b15f519aff68fc9c2eb31f59671885d6c"
++      },
++      {
++        "file": "gpo-04-440t.pdf",
++        "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-04-440T/pdf/GAOREPORTS-GAO-04-440T.pdf",
++        "utc": "2026-11-10T13:52:49.400543+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-04-440T/pdf/GAOREPORTS-GAO-04-440T.pdf",
++          "application/pdf"
++        ],
++        "bytes": 349905,
++        "sha256": "8c53e72efb229a2b0618bfc10e5422d2940c66cecfd641e755d7f0b126b07d86"
++      },
++      {
++        "file": "gpo-05-457.pdf",
++        "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-05-457/pdf/GAOREPORTS-GAO-05-457.pdf",
++        "utc": "2026-11-10T13:52:49.456841+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-05-457/pdf/GAOREPORTS-GAO-05-457.pdf",
++          "application/pdf"
++        ],
++        "bytes": 1642277,
++        "sha256": "b171d4a8ec3d16ed98936773ba8e360d4740418754efc3568dc16a83f83effd2"
++      },
++      {
++        "file": "gpo-06-597t.pdf",
++        "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-06-597T/pdf/GAOREPORTS-GAO-06-597T.pdf",
++        "utc": "2026-11-10T13:52:49.363084+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-06-597T/pdf/GAOREPORTS-GAO-06-597T.pdf",
++          "application/pdf"
++        ],
++        "bytes": 485799,
++        "sha256": "5be3268cbd7fc6a53771c71a93a073bf576ca80fec04d184086626917179d12d"
++      }
++    ],
++    "pdf_text_anchors": [
++      [
++        "hearing.pdf",
++        143,
++        "letter to the Office of Special Counsel"
++      ],
++      [
++        "gpo-04-440t.pdf",
++        22,
++        "tests of checked baggage screeners until January 2003"
++      ],
++      [
++        "gpo-04-440t.pdf",
++        22,
++        "November 2003, TSA developed a protocol"
++      ],
++      [
++        "gpo-05-457.pdf",
++        38,
++        "four"
++      ],
++      [
++        "gpo-05-457.pdf",
++        38,
++        "conducted in September and October 2002"
++      ],
++      [
++        "gpo-05-457.pdf",
++        39,
++        "GAO-05-437C"
++      ],
++      [
++        "gpo-05-457.pdf",
++        52,
++        "provide us with a copy of the plan."
++      ],
++      [
++        "gpo-06-597t.pdf",
++        19,
++        "conducted 836 tests in fiscal year 2003 and 2,369 tests in"
++      ],
++      [
++        "gpo-06-597t.pdf",
++        20,
++        "1,370 local tests of EDS"
++      ],
++      [
++        "tsa-schedule.pdf",
++        1,
++        "Records Schedule Number DM-0560-2013-0010"
++      ],
++      [
++        "tsa-schedule.pdf",
++        7,
++        "Page 7 of 8"
++      ]
++    ],
++    "table_3_fiscal_quarter_rows": [
++      [
++        "2002",
++        "fourth",
++        "2",
++        "30",
++        "3",
++        "33"
++      ],
++      [
++        "2003",
++        "first",
++        "14",
++        "120",
++        "1",
++        "121"
++      ],
++      [
++        "2003",
++        "second",
++        "31",
++        "231",
++        "27",
++        "258"
++      ],
++      [
++        "2003",
++        "third",
++        "28",
++        "198",
++        "19",
++        "217"
++      ],
++      [
++        "2003",
++        "fourth",
++        "25",
++        "217",
++        "23",
++        "240"
++      ],
++      [
++        "2004",
++        "first",
++        "41",
++        "171",
++        "110",
++        "281"
++      ],
++      [
++        "2004",
++        "second",
++        "111",
++        "770",
++        "182",
++        "952"
++      ],
++      [
++        "2004",
++        "third",
++        "56",
++        "379",
++        "102",
++        "481"
++      ],
++      [
++        "2004",
++        "fourth",
++        "64",
++        "527",
++        "128",
++        "655"
++      ]
++    ],
++    "table_3_year_total_tests": {
++      "2002": 33,
++      "2003": 836,
++      "2004": 2369
++    },
++    "table_3_column_totals_passenger_baggage_all": [
++      2643,
++      595,
++      3238
++    ],
++    "pdf_counts": {
++      "hearing.pdf": {
++        "file": "PDF document, version 1.4, 10 pages",
++        "PyMuPDF": 146,
++        "Poppler": 146
++      },
++      "gpo-04-440t.pdf": {
++        "file": "PDF document, version 1.4, 31 pages",
++        "PyMuPDF": 41,
++        "Poppler": 41
++      },
++      "gpo-05-457.pdf": {
++        "file": "PDF document, version 1.4, 29 pages",
++        "PyMuPDF": 66,
++        "Poppler": 66
++      },
++      "gpo-06-597t.pdf": {
++        "file": "PDF document, version 1.3, 9 pages",
++        "PyMuPDF": 41,
++        "Poppler": 41
++      },
++      "tsa-schedule.pdf": {
++        "file": "PDF document, version 1.6 (zip deflate encoded)",
++        "PyMuPDF": 7,
++        "Poppler": 7
++      }
++    },
++    "visual_scope": "GAO-05-457 PDF pp. 38, 63–64 and schedule PDF pp. 1, 7."
++  },
++  "scope": "FAA Red Team comparator, GAO test-date and count crosswalk, signed DHS draft reply and later TSA schedule. Raw scans, signatures and personal details excluded."
++}
