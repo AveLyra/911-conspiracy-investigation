@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-11",
+  "status": "manual_evaluation_complete_automatic_comparison_pending",
+  "reviewer": "separate computational AI agent, not a human or forensic specialist",
+  "coordinate_convention": "zero-based native stored pixels; origin upper-left; x rightward; y downward",
+  "uncertainty_definition": "Subjective rectangular localization envelope around the stated point, in encoded pixels; not statistical confidence, physical accuracy, or a calibrated measurement error.",
+  "independence_limits": "Prior case knowledge and prior Camera 2/4 visual screening acknowledged. These frames have been seen in prior overview/native reviews. Seeds selected before scoring; no current algorithm results viewed. Not a pristine holdout or independent human annotation.",
+  "template_sizes": [19, 27],
+  "anchor_definition": "Coordinates describe the fixed patch-center anchor located by the named local feature, not a claim that each seed is the exact mathematical corner or a surveyed material point. Equal rounded coordinates mean no shift resolved at the stated visual envelope, not zero camera motion.",
+  "actual_viewing_coverage": {"baseline_native_images":2,"baseline_grid_derivatives":2,"evaluation_native_images":10,"evaluation_grid_derivatives":10,"feature_frame_rows":60,"localized_rows":48,"ambiguous_rows":6,"unavailable_rows":6,"algorithm_outputs_viewed":0},
+  "cameras": {
+    "camera2": {
+      "source_id": "VID-WTC7-001",
+      "baseline_frame": 6593,
+      "baseline_png": "../multiview-onset-review/refine01/camera2/f006593.png",
+      "baseline_png_sha256": "39bcb70c16ccc468133edf92b3a9dc9ea43edbc5692d82d8adcfc08cc22903a8",
+      "baseline_source_time_seconds_exact": "219767/999",
+      "stored_size": [640, 480],
+      "evaluation_frames": [6654, 6751, 6931, 7013, 7104],
+      "features": [
+        {"id":"C2-R1","baseline_xy":[154,299],"baseline_envelope_halfwidth_xy":[3,3],"description":"Upper-left roof/edge junction of pale foreground slab.","role_limit":"Apparent neighboring foreground building; identity and depth unauthenticated; edge/rooftop texture can be repetitive."},
+        {"id":"C2-R2","baseline_xy":[228,398],"baseline_envelope_halfwidth_xy":[3,3],"description":"Bright stepped elbow on narrow pale foreground building.","role_limit":"Apparent foreground masonry edge; physical corner identity not independently authenticated."},
+        {"id":"C2-R3","baseline_xy":[288,400],"baseline_envelope_halfwidth_xy":[4,4],"description":"Small bright cap/roof junction on central foreground block.","role_limit":"Small low-resolution feature; exact structural role uncertain and neighboring repeated texture may compete."},
+        {"id":"C2-R4","baseline_xy":[509,212],"baseline_envelope_halfwidth_xy":[3,3],"description":"Upper-left shoulder of nearer dark tower at image right.","role_limit":"Stationary tower silhouette candidate; uncertain depth relative to other references; a patch includes surrounding background."},
+        {"id":"C2-R5","baseline_xy":[529,167],"baseline_envelope_halfwidth_xy":[3,3],"description":"Left shoulder where farther rounded tower meets its short flat top.","role_limit":"Soft silhouette and uncertain depth; patch includes background sky; not the same plane as foreground references."},
+        {"id":"C2-R6","baseline_xy":[557,319],"baseline_envelope_halfwidth_xy":[3,3],"description":"Roof-step corner on pale foreground building at image right.","role_limit":"Stepped and striped architecture creates potential neighboring look-alikes; exact building identity unverified."}
+      ],
+      "annotations": [
+        {"frame":6654,"source_time_seconds_exact":"665404/2997","png_sha256":"c3419f9ff17ea265a4e0375a4c0d9f70f16c1df36d5c5dd008439118bea8d8e6","points":[
+          {"id":"C2-R1","status":"localized","xy":[154,299],"envelope_halfwidth_xy":[4,4]},
+          {"id":"C2-R2","status":"localized","xy":[228,398],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C2-R3","status":"localized","xy":[288,400],"envelope_halfwidth_xy":[5,5]},
+          {"id":"C2-R4","status":"localized","xy":[509,212],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C2-R5","status":"localized","xy":[529,167],"envelope_halfwidth_xy":[4,4]},
+          {"id":"C2-R6","status":"localized","xy":[557,319],"envelope_halfwidth_xy":[4,4]}]},
+        {"frame":6751,"source_time_seconds_exact":"675100/2997","png_sha256":"610ad99f51d3f4fd604e3afc0589bc149d8d23bd673adfdc5b5edaacc3a8eeb0","points":[
+          {"id":"C2-R1","status":"localized","xy":[154,299],"envelope_halfwidth_xy":[4,4]},
+          {"id":"C2-R2","status":"localized","xy":[228,398],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C2-R3","status":"localized","xy":[288,400],"envelope_halfwidth_xy":[5,5]},
+          {"id":"C2-R4","status":"localized","xy":[509,212],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C2-R5","status":"localized","xy":[529,167],"envelope_halfwidth_xy":[4,4]},
+          {"id":"C2-R6","status":"localized","xy":[557,319],"envelope_halfwidth_xy":[4,4]}]},
+        {"frame":6931,"source_time_seconds_exact":"231034/999","png_sha256":"ae1d6027bbec619ce4c7fcc2b7427b844d627b5ab0b24acede73d7f1a04b595b","points":[
+          {"id":"C2-R1","status":"localized","xy":[154,299],"envelope_halfwidth_xy":[4,4]},
+          {"id":"C2-R2","status":"localized","xy":[228,398],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C2-R3","status":"localized","xy":[288,400],"envelope_halfwidth_xy":[5,5]},
+          {"id":"C2-R4","status":"localized","xy":[509,212],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C2-R5","status":"localized","xy":[529,167],"envelope_halfwidth_xy":[4,4]},
+          {"id":"C2-R6","status":"localized","xy":[557,319],"envelope_halfwidth_xy":[4,4]}]},
+        {"frame":7013,"source_time_seconds_exact":"701303/2997","png_sha256":"0187a544c81ed0eff4f452d0744eb40eec6aec37ae35a0f2059f4e931ab3c5c7","points":[
+          {"id":"C2-R1","status":"localized","xy":[154,299],"envelope_halfwidth_xy":[4,4]},
+          {"id":"C2-R2","status":"localized","xy":[228,398],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C2-R3","status":"localized","xy":[288,400],"envelope_halfwidth_xy":[5,5]},
+          {"id":"C2-R4","status":"localized","xy":[509,212],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C2-R5","status":"localized","xy":[529,167],"envelope_halfwidth_xy":[4,4]},
+          {"id":"C2-R6","status":"localized","xy":[557,319],"envelope_halfwidth_xy":[4,4]}]},
+        {"frame":7104,"source_time_seconds_exact":"710404/2997","png_sha256":"88b0313881f4f228a9a47aa302819f8ba3422e4fd7928f2ef44b28444d98bb0a","points":[
+          {"id":"C2-R1","status":"localized","xy":[154,299],"envelope_halfwidth_xy":[4,4]},
+          {"id":"C2-R2","status":"localized","xy":[228,398],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C2-R3","status":"localized","xy":[288,400],"envelope_halfwidth_xy":[5,5]},
+          {"id":"C2-R4","status":"localized","xy":[509,212],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C2-R5","status":"localized","xy":[529,167],"envelope_halfwidth_xy":[4,4]},
+          {"id":"C2-R6","status":"localized","xy":[557,319],"envelope_halfwidth_xy":[4,4]}]}
+      ],
+      "evaluation_note":"All six candidate regions remain visually identifiable in the fixed five-frame sample. No anchor shift is resolved beyond these coarse visual envelopes; repeated nominal centers do not validate zero motion or pixel/subpixel precision. Small caps, soft silhouettes and repeated edges remain identity/localization limitations. Different depths remain uncalibrated."
+    },
+    "camera4": {
+      "source_id": "VID-WTC7-003",
+      "baseline_frame": 899,
+      "baseline_png": "../multiview-onset-review/refine01/camera4/f000899.png",
+      "baseline_png_sha256": "ab9189a69c41fad25cf1f3e934d8bc13cb8c21c72b948fbe7dce93d3d07579ba",
+      "baseline_source_time_seconds_exact": "899899/30000",
+      "stored_size": [480, 360],
+      "evaluation_frames": [960, 1042, 1162, 1259, 1350],
+      "features": [
+        {"id":"C4-R1","baseline_xy":[63,94],"baseline_envelope_halfwidth_xy":[3,3],"description":"Tip of arrow in near-left WAY sign.","role_limit":"Apparent fixed street sign; partly near the left crop boundary; may leave view during reframing."},
+        {"id":"C4-R2","baseline_xy":[101,119],"baseline_envelope_halfwidth_xy":[3,3],"description":"Lower tip of dark hanging banner on left facade.","role_limit":"Attachment to fixed building is apparent; a hanging banner could move independently, so stationarity is uncertain."},
+        {"id":"C4-R3","baseline_xy":[448,43],"baseline_envelope_halfwidth_xy":[3,3],"description":"Center of top circular traffic-signal lens at upper right.","role_limit":"Apparent fixed signal body; adjacent similar lenses create ambiguity; illumination need not be constant."},
+        {"id":"C4-R4","baseline_xy":[325,227],"baseline_envelope_halfwidth_xy":[4,4],"description":"Notch/corner where dark foreground roof overlaps white farther foreground facade.","role_limit":"May be an occlusion intersection between different-depth structures rather than one material point; stationarity under parallax is not assumed."},
+        {"id":"C4-R5","baseline_xy":[285,262],"baseline_envelope_halfwidth_xy":[4,4],"description":"Upper-left corner of brownish central foreground building against white neighbor.","role_limit":"Low-resolution overlapping roof geometry; exact material-point identity and depth uncertain."},
+        {"id":"C4-R6","baseline_xy":[81,50],"baseline_envelope_halfwidth_xy":[3,3],"description":"Bottom-right corner of small upper-left facade window.","role_limit":"Window pattern can create competing matches; may leave image under reframing."}
+      ],
+      "annotations": [
+        {"frame":960,"source_time_seconds_exact":"4004/125","png_sha256":"d2ddb860e9ed21145f9f7c6453134869d744841d01119b465bf4146887467405","points":[
+          {"id":"C4-R1","status":"localized","xy":[63,94],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C4-R2","status":"localized","xy":[101,119],"envelope_halfwidth_xy":[4,4],"note":"Visible banner patch; independent banner motion remains possible."},
+          {"id":"C4-R3","status":"localized","xy":[448,43],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C4-R4","status":"localized","xy":[325,227],"envelope_halfwidth_xy":[5,5],"note":"Local overlap region is identifiable; a single material point is not certified."},
+          {"id":"C4-R5","status":"localized","xy":[285,262],"envelope_halfwidth_xy":[5,5]},
+          {"id":"C4-R6","status":"localized","xy":[81,50],"envelope_halfwidth_xy":[3,3]}]},
+        {"frame":1042,"source_time_seconds_exact":"521521/15000","png_sha256":"221442106ac7d4f1a48ab93b5ca14e98de11c8784d82b56fdc41106f9cd55998","points":[
+          {"id":"C4-R1","status":"localized","xy":[63,94],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C4-R2","status":"localized","xy":[101,119],"envelope_halfwidth_xy":[4,4],"note":"Visible banner patch; stationarity not proven."},
+          {"id":"C4-R3","status":"localized","xy":[448,43],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C4-R4","status":"localized","xy":[325,227],"envelope_halfwidth_xy":[5,5]},
+          {"id":"C4-R5","status":"localized","xy":[285,262],"envelope_halfwidth_xy":[5,5]},
+          {"id":"C4-R6","status":"localized","xy":[81,50],"envelope_halfwidth_xy":[3,3]}]},
+        {"frame":1162,"source_time_seconds_exact":"581581/15000","png_sha256":"f02d5fdb22779aceff1fe2c3a85fe4cf8201efd7ae74856f29d3cf61f68b7166","points":[
+          {"id":"C4-R1","status":"localized","xy":[63,94],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C4-R2","status":"localized","xy":[101,119],"envelope_halfwidth_xy":[4,4],"note":"Banner patch remains recognizable; cannot distinguish small banner motion from camera motion."},
+          {"id":"C4-R3","status":"localized","xy":[448,43],"envelope_halfwidth_xy":[3,3]},
+          {"id":"C4-R4","status":"localized","xy":[325,228],"envelope_halfwidth_xy":[5,5]},
+          {"id":"C4-R5","status":"localized","xy":[285,263],"envelope_halfwidth_xy":[6,6]},
+          {"id":"C4-R6","status":"localized","xy":[81,50],"envelope_halfwidth_xy":[3,3]}]},
+        {"frame":1259,"source_time_seconds_exact":"1260259/30000","png_sha256":"98fcb50f49b36eb57f289ce55d3cb28a5c55d17c7ff864bd8a42ceb8b2e1fadf","points":[
+          {"id":"C4-R1","status":"unavailable","xy":null,"envelope_halfwidth_xy":null,"note":"Original WAY-sign arrow is outside the reframed left/top view; no replacement arrow assigned."},
+          {"id":"C4-R2","status":"ambiguous","xy":null,"envelope_halfwidth_xy":null,"note":"Remaining upper-left facade/signage fragments do not securely identify the original banner-tip anchor after reframing."},
+          {"id":"C4-R3","status":"unavailable","xy":null,"envelope_halfwidth_xy":null,"note":"Original top signal lens is outside the upper-right view."},
+          {"id":"C4-R4","status":"ambiguous","xy":null,"envelope_halfwidth_xy":null,"note":"Related foreground overlap/cornice regions remain visible at a different scale, but the original patch-center anchor cannot be uniquely transferred by this visual pass."},
+          {"id":"C4-R5","status":"ambiguous","xy":null,"envelope_halfwidth_xy":null,"note":"Several stepped roof/occlusion corners compete; strong scale change prevents secure assignment of the original small corner anchor."},
+          {"id":"C4-R6","status":"unavailable","xy":null,"envelope_halfwidth_xy":null,"note":"Original small upper-left window is outside the reframed view."}]},
+        {"frame":1350,"source_time_seconds_exact":"9009/200","png_sha256":"604dc5547c205db44a36e0b76aed5fd95499c79bcc27e60700e60f16ab52eb41","points":[
+          {"id":"C4-R1","status":"unavailable","xy":null,"envelope_halfwidth_xy":null,"note":"Original sign/arrow remains outside view."},
+          {"id":"C4-R2","status":"ambiguous","xy":null,"envelope_halfwidth_xy":null,"note":"Cropped near-left facade fragments do not securely recover the banner-tip identity."},
+          {"id":"C4-R3","status":"unavailable","xy":null,"envelope_halfwidth_xy":null,"note":"Original top traffic-signal lens remains outside view."},
+          {"id":"C4-R4","status":"ambiguous","xy":null,"envelope_halfwidth_xy":null,"note":"Foreground overlap is visible at still another framing/scale, but no unique original patch-center anchor is assigned."},
+          {"id":"C4-R5","status":"ambiguous","xy":null,"envelope_halfwidth_xy":null,"note":"Original small corner cannot be reliably distinguished from neighboring stepped/occluding corners under strong reframing."},
+          {"id":"C4-R6","status":"unavailable","xy":null,"envelope_halfwidth_xy":null,"note":"Original small upper-left window remains outside view."}]}
+      ],
+      "evaluation_note":"Eighteen early feature/frame anchors are coarsely localized, with role uncertainties retained. The twelve late rows are unavailable or ambiguous, so this manual sample does not validate a late camera correction or automatic reacquisition. Unavailable means not visible in the retained frame; ambiguous means related content may be visible but its original anchor identity is not secure."
+    }
+  }
+}
