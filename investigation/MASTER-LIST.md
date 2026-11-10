@@ -2,6 +2,10 @@
 
 [Investigation consolidation guidance](CONSOLIDATION.md).
 
+## November 10: compartmented theory and primary-source cross-check
+
+The [integrated evidence review](cross-chat-evidence-integration-2026-11-10/README.md) corrects the [developing theory](urban-moving-systems/developing-theory-2026-11-06/README.md): direct UMS–hijacker coordination is not required, and knowledge by Saudi authorities remains an open question. It links the existing public NIST analyses, verifies selected model timing, fire-input, connection and fracture issues against original sources, and preserves counterevidence. Neither the engineering questions nor the UMS investigative leads establish explosives placement, a Mossad assignment or coordinated attack. No existing lead IDs or independent-evidence counts are changed.
+
 The [October 26, 2026 master](wtc7/master-lead-register-2026-10-26/MASTER-LIST.md) contains **152 overlapping research entries**: unchanged M001–M134 plus eight operational-record and ten bank/phone findings. This count includes questions, source leads, qualifications and a confirming check; it is not a count of independent anomalies or established conspiracy facts.
 
 [ID crosswalk](wtc7/master-lead-register-2026-10-26/CROSSWALK.md) · [source pins and original records](wtc7/master-lead-register-2026-10-26/register.json) · [unresolved targets](wtc7/master-lead-register-2026-10-26/OPEN-TARGETS.json).
