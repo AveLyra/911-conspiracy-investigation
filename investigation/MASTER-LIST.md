@@ -2,6 +2,10 @@
 
 [Investigation consolidation guidance](CONSOLIDATION.md).
 
+## November 10: additional reviewed public leads
+
+The [reviewed public-lead consolidation](branch-consolidation-reviewed-leads-2026-11-10/README.md) indexes 7 dated source groups and 70 files already available on AveLyra topic branches. It preserves source blobs and attribution, qualifies historical status, and does not treat repeated reports as independent evidence. Flagged privacy, source-rights, case and LFS items remain outside this batch.
+
 ## November 10: additional telephone source records
 
 The [telephone-source consolidation](branch-consolidation-telephone-2026-11-10/README.md) indexes 4 dated source groups and 33 files already available on AveLyra topic branches. It preserves source blobs and attribution, qualifies historical status, and does not treat repeated reports as independent evidence. Flagged privacy, source-rights, case and LFS items remain outside this batch.
