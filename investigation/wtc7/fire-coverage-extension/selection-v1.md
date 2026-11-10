@@ -1,8 +1,8 @@
-> **Historical selection:** This is a link-adjusted copy of the frozen pre-inspection text; the original source hash is recorded in [provenance](PROVENANCE.json). Missing original source media and the earlier source map are not included.
+> **Historical selection:** This is a link-adjusted copy of the frozen pre-inspection text; the original source hash is recorded in [provenance](PROVENANCE.json). Original source media are not included; a [historical source map](../fire-observation-source-map.md) is now included.
 
 # WP1 fire coverage extension: south, southwest, and east candidates
 
-Date: 2026-09-08. Status: local retrospective research; incomplete WP1; no causal or expert finding. This extension follows [CHARTER.md](../CHARTER.md) and supplements, without replacing, fire-observation-source-map.md (historical source map, not included here).
+Date: 2026-09-08. Status: local retrospective research; incomplete WP1; no causal or expert finding. This extension follows [CHARTER.md](../CHARTER.md) and supplements, without replacing, [fire-observation-source-map.md](../fire-observation-source-map.md).
 
 ## Selection declared before inspecting the new page renders
 

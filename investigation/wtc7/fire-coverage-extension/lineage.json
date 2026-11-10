@@ -1,0 +1,348 @@
+{
+  "schema": "local-wp1-fire-coverage-extension-v1",
+  "date": "2026-09-08",
+  "purpose": "Retrospective visibility and source-coverage review; no quantitative fire extent, thermal inference or causal determination",
+  "working_directory": "[local filesystem path withheld]",
+  "input": {
+    "path": "authority/nist/wtc7/ncstar-1-9.pdf",
+    "sha256_before_and_after": "30addb2699370f89e40bccfdcf4b4a18a7f4fb3bc1c0101bd3fcdec9b892b18f",
+    "physical_page_count": 797,
+    "historical_authenticity": "Not newly established; hash establishes identity to acquired local bytes only",
+    "source_family": "NIST NCSTAR 1-9 selected and often transformed reproductions; individual printed credits remain attributed metadata"
+  },
+  "selection": {
+    "snapshot": "selection-v1.md",
+    "snapshot_sha256": "6d4ba22ccd5c8045a595219ccf3e68cf803aa0e61432f2f8ba75ce75aa427e21",
+    "declared_before_new_renders_inspected": true,
+    "prior_exposure": "Existing caption-informed source map and assigned candidates",
+    "physical_pages_1_based": [
+      197,
+      198,
+      199,
+      200,
+      213,
+      214,
+      215,
+      239,
+      240,
+      241,
+      244,
+      245,
+      246,
+      247,
+      248
+    ],
+    "target_pages_1_based": [
+      198,
+      199,
+      214,
+      240,
+      244,
+      246,
+      248
+    ],
+    "page_index_rule": "pypdf index = physical page - 1; printed Chapter 5 page = physical page - 44"
+  },
+  "software": {
+    "pdftoppm": "Poppler 26.05.0",
+    "pdftoppm_path": "[local filesystem path withheld]",
+    "python": "3.12.14",
+    "python_path": "[local filesystem path withheld]",
+    "pypdf": "6.10.0"
+  },
+  "successful_render": {
+    "environment": {
+      "FONTCONFIG_FILE": "[local filesystem path withheld]"
+    },
+    "fontconfig_sha256": "a7cc869f858fdfbf20beb37ab29611fb6e1d27131f90cf07657c46f62d2868cb",
+    "redacted_shell_command": "for page in 197 198 199 200 213 214 215 239 240 241 244 245 246 247 248; do FONTCONFIG_FILE=[local filesystem path withheld] pdftoppm -f \"$page\" -l \"$page\" -singlefile -r 110 -png authority/nist/wtc7/ncstar-1-9.pdf research/sherlock-wtc7-investigation/fire-coverage-extension/ncstar-1-9-pdf-\"$page\"; done",
+    "exit_code": 0,
+    "stderr": "empty",
+    "dpi": 110,
+    "page_media_box_points": [
+      0,
+      0,
+      612,
+      792
+    ],
+    "page_rotation_degrees": 0,
+    "output_dimensions_pixels": [
+      935,
+      1210
+    ],
+    "crop": "none; entire physical page",
+    "additional_transforms": "No post-render resizing, color/contrast/sharpening edits, inpainting, interpolation or image generation",
+    "inherited_transforms": "Report figures already contain documented crops, enlargements, intensity/contrast changes, arrows, edge lines, floor/window labels and credits; exact original-camera transformations unknown"
+  },
+  "outputs": [
+    {
+      "physical_page_1_based": 197,
+      "library_index_0_based": 196,
+      "printed_page": 153,
+      "path": "ncstar-1-9-pdf-197.png",
+      "sha256": "1f22d8672e0e54b3bc711a4a231e7dcd16da967e34d52e40b66c5bd32955dc12"
+    },
+    {
+      "physical_page_1_based": 198,
+      "library_index_0_based": 197,
+      "printed_page": 154,
+      "path": "ncstar-1-9-pdf-198.png",
+      "sha256": "640a1be6999d412df411d8aeeff4703a1333d2ae967318149531495fb57a5045"
+    },
+    {
+      "physical_page_1_based": 199,
+      "library_index_0_based": 198,
+      "printed_page": 155,
+      "path": "ncstar-1-9-pdf-199.png",
+      "sha256": "13ed578c5ec487b07e778f12fcf4631d65a167e89ce0ba1db793aadb7e2eeb93"
+    },
+    {
+      "physical_page_1_based": 200,
+      "library_index_0_based": 199,
+      "printed_page": 156,
+      "path": "ncstar-1-9-pdf-200.png",
+      "sha256": "0d353fcf4bce95a9bc492a806bbfb05c300931cd808f5b0ace726790c3ebd93e"
+    },
+    {
+      "physical_page_1_based": 213,
+      "library_index_0_based": 212,
+      "printed_page": 169,
+      "path": "ncstar-1-9-pdf-213.png",
+      "sha256": "c8dd1f676f5353acbff16bc5fd2d2c124db67d4416b3f38ce4a502e6378c748a"
+    },
+    {
+      "physical_page_1_based": 214,
+      "library_index_0_based": 213,
+      "printed_page": 170,
+      "path": "ncstar-1-9-pdf-214.png",
+      "sha256": "253412dbae60ca2197065a87afda261ce02a4e70f40b7df878f30fd42724cf95"
+    },
+    {
+      "physical_page_1_based": 215,
+      "library_index_0_based": 214,
+      "printed_page": 171,
+      "path": "ncstar-1-9-pdf-215.png",
+      "sha256": "6287e439d0a4087aaafee3b2efdd06b00afd9fbff53aa19ec64f8c97f2324d9b"
+    },
+    {
+      "physical_page_1_based": 239,
+      "library_index_0_based": 238,
+      "printed_page": 195,
+      "path": "ncstar-1-9-pdf-239.png",
+      "sha256": "c4e44cdfa85bb1ea35c37d6456ba8df3c94fa2f01cad72519b9e858fdab5fd4d"
+    },
+    {
+      "physical_page_1_based": 240,
+      "library_index_0_based": 239,
+      "printed_page": 196,
+      "path": "ncstar-1-9-pdf-240.png",
+      "sha256": "e37578c9ba68edada28967604003db2a32327afeb1ea61cb372b417657b2dea9"
+    },
+    {
+      "physical_page_1_based": 241,
+      "library_index_0_based": 240,
+      "printed_page": 197,
+      "path": "ncstar-1-9-pdf-241.png",
+      "sha256": "5f58f919e8feb7d2018f0ff344954a0572997eb7e41ae77d2746f0999ff6da87"
+    },
+    {
+      "physical_page_1_based": 244,
+      "library_index_0_based": 243,
+      "printed_page": 200,
+      "path": "ncstar-1-9-pdf-244.png",
+      "sha256": "ca10637547dc8c8089bd50f9df7830439541b1dad745658e540db29addf8782b"
+    },
+    {
+      "physical_page_1_based": 245,
+      "library_index_0_based": 244,
+      "printed_page": 201,
+      "path": "ncstar-1-9-pdf-245.png",
+      "sha256": "cc5af20096d662d5a69a7ecd2a6f59ea1e677d422c5750521164116f91ce6d32"
+    },
+    {
+      "physical_page_1_based": 246,
+      "library_index_0_based": 245,
+      "printed_page": 202,
+      "path": "ncstar-1-9-pdf-246.png",
+      "sha256": "77cf1e208136500f4e5557ac50040c991b7ae3f496c71f793c1bcd744dbffb0a"
+    },
+    {
+      "physical_page_1_based": 247,
+      "library_index_0_based": 246,
+      "printed_page": 203,
+      "path": "ncstar-1-9-pdf-247.png",
+      "sha256": "bf6c9bf14406908a00ff76c66793eded0e1d3e217e3a9d23a3aa3183032a68c4"
+    },
+    {
+      "physical_page_1_based": 248,
+      "library_index_0_based": 247,
+      "printed_page": 204,
+      "path": "ncstar-1-9-pdf-248.png",
+      "sha256": "f79f5eb6c2ede6c77054f02fdc14dd75f23f2a6d375b365a21bf83dd89f6c176"
+    }
+  ],
+  "embedded_image_geometry": {
+    "method": "pypdf PdfReader pages[p-1].images: im.name and im.image.size; extract_text visitor_operand_before reports current transformation matrix for each Do image invocation",
+    "coordinate_convention": "CTM [a,b,c,d,e,f] in PDF points, origin bottom-left. Raster page origin top-left. Mapping formula in parent note; intrinsic sizes are report-embedded raster dimensions, not original camera sizes.",
+    "items": [
+      {
+        "physical_page_1_based": 198,
+        "figure": "5-59",
+        "image": "Im0.jpg",
+        "intrinsic_pixels": [
+          384,
+          255
+        ],
+        "ctm": [
+          288.0,
+          0.0,
+          0.0,
+          191.8800049,
+          72.0,
+          526.5599976
+        ]
+      },
+      {
+        "physical_page_1_based": 198,
+        "figure": "5-60",
+        "image": "Im1.jpg",
+        "intrinsic_pixels": [
+          480,
+          311
+        ],
+        "ctm": [
+          370.8000031,
+          0.0,
+          0.0,
+          240.7200012,
+          72.0,
+          198.4799957
+        ]
+      },
+      {
+        "physical_page_1_based": 199,
+        "figure": "5-61",
+        "image": "Im0.jpg",
+        "intrinsic_pixels": [
+          903,
+          740
+        ],
+        "ctm": [
+          432.0599976,
+          0.0,
+          0.0,
+          353.5200043,
+          89.9400024,
+          366.4799957
+        ]
+      },
+      {
+        "physical_page_1_based": 214,
+        "figure": "5-79",
+        "image": "Im0.jpg",
+        "intrinsic_pixels": [
+          420,
+          612
+        ],
+        "ctm": [
+          387.1799927,
+          0.0,
+          0.0,
+          564.2400055,
+          112.4400024,
+          155.7599945
+        ]
+      },
+      {
+        "physical_page_1_based": 240,
+        "figure": "5-111",
+        "image": "Im0.jpg",
+        "intrinsic_pixels": [
+          432,
+          294
+        ],
+        "ctm": [
+          324.0,
+          0.0,
+          0.0,
+          220.9199982,
+          72.0,
+          60.0
+        ]
+      },
+      {
+        "physical_page_1_based": 244,
+        "figure": "5-114",
+        "image": "Im0.jpg",
+        "intrinsic_pixels": [
+          351,
+          468
+        ],
+        "ctm": [
+          292.3200073,
+          0.0,
+          0.0,
+          389.3399963,
+          72.0,
+          74.2799988
+        ]
+      },
+      {
+        "physical_page_1_based": 246,
+        "figure": "5-116",
+        "image": "Im0.jpg",
+        "intrinsic_pixels": [
+          431,
+          292
+        ],
+        "ctm": [
+          323.2799988,
+          0.0,
+          0.0,
+          219.5399933,
+          72.0,
+          500.4600067
+        ]
+      },
+      {
+        "physical_page_1_based": 248,
+        "figure": "5-118",
+        "image": "Im0.jpg",
+        "intrinsic_pixels": [
+          389,
+          576
+        ],
+        "ctm": [
+          315.3600006,
+          0.0,
+          0.0,
+          466.9199982,
+          72.0,
+          172.0800018
+        ]
+      }
+    ]
+  },
+  "diagnostics": {
+    "unconfigured_attempt": {
+      "redacted_shell_command": "for page in 197 198 199 200 213 214 215 239 240 241 244 245 246 247 248; do pdftoppm -f \"$page\" -l \"$page\" -singlefile -r 110 -png authority/nist/wtc7/ncstar-1-9.pdf research/sherlock-wtc7-investigation/fire-coverage-extension/ncstar-1-9-pdf-\"$page\"; done",
+      "result": "Interrupted with Ctrl-C, exit 130, due to repeated Fontconfig missing-config and unwritable-cache errors. Three completed outputs retained; no source bytes changed.",
+      "preserved_directory": "diagnostics/unconfigured-first-attempt",
+      "completed_pages": [
+        197,
+        198,
+        199
+      ],
+      "hash_relationship": "Each retained PNG has the same SHA-256 as its successful-run counterpart in outputs above",
+      "failed_image_reads": "Attempted reads of 198/199/214 before availability returned file-not-found. Successful review used final completed renders only."
+    }
+  },
+  "review": {
+    "first_pass": "All 15 completed full-page renders visually inspected; target-image observations and geometry in ../fire-coverage-extension.md",
+    "second_pass": "Targeted exploratory second AI annotation of pages 214 and 240; preserved in second-annotation.md; labels/captions remained visible",
+    "human_or_expert_review": "None claimed",
+    "window_scoring": "Not performed; proposed geometry is not an adjudicated visibility/flame mask",
+    "no_new_external_retrieval_or_transmission": true
+  },
+  "sanitization_note": "This is a redacted historical metadata derivative. Filesystem paths were withheld and shell commands cannot be executed as printed without restoring the local configuration. Listed source images and PDF are not included in this package; hashes and prior results are historical, not a new verification."
+}

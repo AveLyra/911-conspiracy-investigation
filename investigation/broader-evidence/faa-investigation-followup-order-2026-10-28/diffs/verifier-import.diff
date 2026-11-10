@@ -1,0 +1,11 @@
+--- preserved-verifier-import-draft.py
++++ verify_sources.py
+@@ -15,7 +15,7 @@
+ import re
+ import shutil
+ import subprocess
+-import pymupdf
++import fitz as pymupdf
+ 
+ parser = argparse.ArgumentParser()
+ parser.add_argument('--local-unit', type=Path)
