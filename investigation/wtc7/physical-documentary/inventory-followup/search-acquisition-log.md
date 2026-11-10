@@ -1,0 +1,29 @@
+> **Historical research:** This document records the September 2026 review, not a fresh acquisition or instruction. Some local file links are marked as unavailable in this package. See the [publication note](README.md).
+
+# Search, access and inspection coverage
+
+Run date: 2026-09-09 local / September 10 UTC closeout. Fixed targets and stop rules were declared in [PROTOCOL.md](PROTOCOL.md) before new source retrieval/interpretation. No private data was sent in queries. The following is the actual coverage, not a claim to have searched the entire public or agency record.
+
+## Ordered coverage
+
+1. Read current repository controls, charter and existing sample-provenance report/ledger/source inventory. Rechecked already rendered public RFC physical 84–85 and their full page text. The prior 14-page Appendix D acquisition explicitly lacked item rows.
+2. **Initial locator-identification query call:** `"NIST" "WTC7" "Exhibit E" "steel"`; `"FEMA" "WTC Steel Data Collection" "spreadsheet"`; `"SEAoNY" "March 15, 2002" steel`. Results identified the official FEMA URL, the already acquired incomplete mirror, and a public syndicated page linking the exhibits. Unrelated commentary/forums/person claims were excluded as technical evidence and not pursued.
+3. Opened official FEMA PDF through the web reader: **HTTP403**, no readable PDF there. Opened the public exhibit-locator page: its attachment list was readable; no technical reliance on its conclusions.
+4. **Targeted follow-up query round 1:** `"fema403_apd.pdf" "Steel Data Collection Summary"`; `"SEAoNY Summary of Identified WTC Steel Pieces"`. Official result indexed spreadsheet rows; the earlier mirror indexed only its cover note. One result disclosed a third-party spreadsheet-mirror URL. Attempted that exact URL once: `https://911research.wtc7.net/mirrors/guardian2/wtc/WTC_apndxD_sheet.htm`. Web reader returned an **explicit nonretryable unsafe refusal**; route stopped. No curl, alternate host, archive, or mirror workaround was attempted for it.
+5. Clicking the locator's Exhibit E link in the web reader returned an internal error without readable content. A read-only annotation check of the already preserved RFC produced no relevant URI and 19 wrong-object-pointer warnings. It did not acquire or repair anything.
+6. Downloaded the ordinary public locator page locally to inspect its exact attachment href. Initial sandbox curl exited6 (DNS; no body). A reviewed public-network read then completed HTTP200. No repository content was uploaded. The exact link resolved to `https://files.wtc7report.org/file/public-download/EXHIBIT-E-Documentation-Indicating-WTC7-Steel-Shipped-to-NIST.pdf`.
+7. One ordinary public-network curl read of the **official FEMA URL**, whose web-reader result was403 rather than an unsafe refusal, completed HTTP200. Waited for terminal completion, then checked PDF format, size, SHA256 and Poppler page count: **27 pages**. This is an acquired original-host PDF, unlike an index hit or started transfer.
+8. One curl read of the exact linked Exhibit E returned **HTTP404** and exited56; only the local header receipt exists. Confirmed there is no `exhibit-e-steel-shipment.pdf` body. The error is recorded, not treated as acquisition.
+9. **Targeted follow-up query round 2:** `"EXHIBIT-E-Documentation-Indicating-WTC7-Steel-Shipped-to-NIST.pdf"`. Returned only the same locator; no alternate original, new record or working attachment established. This was the final search call: three initial identifier queries plus three follow-up queries in two rounds, six exact public queries overall. No additional IDs/personnel or broader metallurgy search was conducted after the row discovery.
+10. Rendered and visually read official physical 14–27 (cover plus all 13 spreadsheet pages), then 1–3 (yard legend and collection context). OCRed the same pages for findability. Used exact row/photo/coupon fields to assess the prior leads. No full narrative reread of physical 4–13 in this new acquisition is claimed; that narrative had been read in the older source audit, and no new specimen join is inferred from its captions.
+11. Finalized the bounded report, source manifest and integrity checks. No contact, authentication, fee, FOIA, publication, external feedback, canonical promotion, commit or push. Old source/failed-route records preserved.
+
+## Negative coverage and limits
+
+The complete published spreadsheet contains no explicit WPI/Sample 1 identity join or itemized NIST receipt crosswalk on the inspected pages. This is a statement about these pages, not all records that may exist. Original workbook/field notebooks, referenced photographs, shipment manifests, receiving records, reclassification decisions and laboratory accession records were not acquired or searched exhaustively. Their absence here is not evidence that they never existed or were destroyed.
+
+The exact Exhibit E filename search and dead href do not establish the exhibit's contents. No date/author/recipient of its underlying record can responsibly be supplied from the attachment title. Retrieval stops with that precise limit rather than repeated failed routes.
+
+## Generic Sherlock feedback candidate — local only
+
+Reproducible case: one same-title PDF copy had14 pages and a spreadsheet cover; the official copy had27 pages and actual rows. A superficial `file` diagnostic still reported11 pages. OCR also omitted or merged identifiers in table rows. A useful acquisition gate should track **body acquired vs failed receipt, parser/visual page coverage vs filename/title, complete table continuation vs cover, and component/parent identifiers versus numbered-item counts**. It should preserve the initial incomplete edition and access-error classification, and prevent a dead attachment title or same-letter identifier across yards from becoming a custody edge. This is for parent deduplication only; no note was sent to an archived or external Sherlock task.
