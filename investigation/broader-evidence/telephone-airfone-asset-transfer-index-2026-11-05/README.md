@@ -1,0 +1,29 @@
+# Airfone records custody and the Gogo commercial aviation sale
+
+November 5, 2026. TEL03/TEL04 follow-up to the [FCC Airfone docket review](https://github.com/AveLyra/911-conspiracy-investigation/blob/5422b6db826eed48708752c01f7f85524a79e1aa/investigation/broader-evidence/telephone-airfone-docket-originals-2026-11-05/README.md). SEC-filed agreements identify two possible paths for older Airfone records. The deciding evidence would be an asset or data inventory tied to an executed transfer.
+
+## Ownership, permission to transfer and records retention
+
+| Record | What it establishes within the reviewed scope |
+| --- | --- |
+| FCC 2012 international traffic report, addendum n. 18 | Records **April 11, 2013** as the date **LiveTV Airfone, LLC** became a subsidiary of **Aircell Business Aviation Services, LLC**. This is an entity relationship in a carrier reporting note. [FCC report, physical p. 40](https://docs.fcc.gov/public/attachments/DOC-326545A2.pdf#page=40) |
+| Gogo 2013 and 2014 credit agreements, §§ 8.5(n) and 8.8(r) | Name the **April 20, 2012** Airfone purchase agreement and allow distinct dispositions of spectrum assets to **AC BidCo** and acquired Airfone assets from **Aircell Business Aviation Services** to **Gogo LLC**. These are permitted transactions under the credit agreements. Execution, asset lists and any transfer of legacy call data require separate records. [2013 exhibit](https://www.sec.gov/Archives/edgar/data/1537054/000119312513210823/d267959dex1091.htm) · [2014 exhibit](https://www.sec.gov/Archives/edgar/data/1537054/000119312514290941/d766998dex1094.htm) |
+| Gogo 2014 credit agreement, §§ 7.13(b), 7.16 | Sets a loan-party requirement if LiveTV Airfone LLC was still undissolved after the specified date, with an extension provision. Restricts holding material assets unless the entity becomes a loan party. **December 31, 2014** is a covenant date. Actual dissolution or asset disposition remains open. [2014 exhibit](https://www.sec.gov/Archives/edgar/data/1537054/000119312514290941/d766998dex1094.htm) |
+| Gogo–Intelsat purchase and sale agreement, recitals and § 4.2(e) | Defines the target companies to include **Gogo LLC**, **Gogo International Holdings LLC** and their subsidiaries. The buyer agrees to preserve original records of those companies existing at closing for **at least six years after closing**. The seller retains a qualified right to copies for specified purposes, including ordinary-course electronic backups and legal or regulatory requirements, subject to privacy law. Those provisions define potential records routes. The agreement does not identify specific Airfone records among the covered files. [Executed public exhibit, recitals and pp. 39–40](https://www.sec.gov/Archives/edgar/data/1537054/000119312520236954/d944172dex21.htm) |
+| Gogo December 2020 closing exhibit | Reports the sale of the two named entities' units to **Intelsat Aviation AcquisitionCo LLC** on **December 1, 2020**. Six years from that date is **December 1, 2026**, a calendar calculation for the agreement's stated minimum if a file is covered. The date establishes neither actual disposal nor public access. [Closing exhibit, opening paragraph](https://www.sec.gov/Archives/edgar/data/1537054/000119312520307170/d50881dex992.htm) |
+
+Two routes remain open. An executed transfer of Airfone records to Gogo LLC followed by inclusion in the closing records would make the Intelsat clause relevant. Records retained in the business aviation chain or by an earlier holder would need a separate custody check. Even proof of either route would leave the age and identity of the records to verify.
+
+## FCC market archive check
+
+The FCC's `a_market.zip` contains **0002653156** and **0002658043**, the 2006 applications for the two spectrum blocks. For **0002653156**, the FCC order gives **June 15, 2006** as the original filing date. The export's `AD.dat` row has purpose `AM` and receipt **June 30, 2006**. Its `HS.dat` records separately retain **June 15** `RECNE` and **June 30** `RECAM`. For **0002658043** the order and application data each give **June 21, 2006**. Both files have October 31 grant entries. Preserve the source dates and record types separately. [FCC order, p. 1 n. 2](https://docs.fcc.gov/public/attachments/DA-06-2249A1.pdf#page=1) · [FCC archive](https://data.fcc.gov/download/pub/uls/complete/a_market.zip)
+
+The exact-number scan of `HD.dat`, `AD.dat`, `AT.dat` and `HS.dat` returned **zero** matches for the later **0005185165** file. The auction files are useful for identifying the original spectrum applications. They leave the 2012–13 transfer application and 2008 asset purchase open. The negative result is scoped to four members of the named snapshot. [Source pins and row locators](SOURCE-PINS.json)
+
+## Open originals
+
+- [ ] Obtain the **April 20, 2012** agreement, asset schedules and any executed Aircell-to-Gogo LLC conveyance or data migration inventory. Check whether any legacy Airfone billing, switch or operator data appear by system and date.
+- [ ] Locate the **August 31, 2020 Second Amended and Restated Reorganization Agreement**, the related subsidiary/asset schedules and the December closing inventory. Check whether any identified Airfone files were within the target companies at closing or retained in backup.
+- [ ] Keep the 2008 acquisition agreement, four transition reports, ULS 0005185165 exhibits and call-specific originals open. Corporate ownership and license history leave the individual call tests unperformed.
+
+Two FCC PDFs and one FCC ZIP were downloaded and hashed. Four SEC sections or exhibits were read through the public web index. The direct SEC GETs returned HTTP 403 HTML. The recorded hashes for those responses identify access pages, and no claim is made to have acquired native SEC document bytes. The public copy includes only selected fields, source links and original analysis.

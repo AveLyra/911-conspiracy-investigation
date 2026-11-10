@@ -1,0 +1,58 @@
+# Fresh Kills Army Corps assignment and records trail
+# Fresh Kills Army Corps assignment and records trail
+
+
+November 5, 2026. This STL01 study follows the federal work order for debris inspection and contractor coordination. The earlier OpenFEMA review traced **City, DSNY and DDC** grant worksheets. Those records use different identifiers from the federal mission-assignment index. [Earlier worksheet-version review](https://github.com/AveLyra/911-conspiracy-investigation/blob/1610422c48ac1372deeae50c29a17ac5b9603f1c/investigation/broader-evidence/steel-fresh-kills-fema-award-versions-2026-11-05/README.md)
+
+## Assignment date, funding descriptions and custodians
+
+| Source | What it reports | Locator |
+| --- | --- | --- |
+| USACE, *Engineer Update*, September 2002 | FEMA assigned a **$125 million** debris-removal mission to the Corps on **October 1**, describing its purpose as operating the Staten Island landfill for WTC debris disposal. The same passage describes a contractor-management role for Phillips and Jordon, Inc. (printed spelling) and says “Neither the Corps nor P&J managed the landfill.” | [Printed p. 9, first column under the continuation of “Debris removal”](https://corpslakes.erdc.dren.mil/employees/engineerupdate/Engineer_update_092002.pdf#page=8), PDF physical page 8, extracted lines 313–325 |
+| GAO, GAO-03-926, August 2003 | FEMA provided **$72 million** to USACE for management of debris inspection at the landfill. GAO lists labor, heavy and screening equipment, storage, worker shelter and services. It gives **$620.9 million** separately for site removal and barging. | [Printed pp. 13–15, debris removal and inspection](https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-03-926/pdf/GAOREPORTS-GAO-03-926.pdf#page=18), PDF physical pp. 18–20 |
+| House staff committee print, 2006 | Says FEMA paid USACE **$72 million** for sorting debris for remains, personal belongings and criminal evidence. Its footnote 37 cites GAO-03-926 pp. 14–15. | [GovInfo, “Congress and FEMA adapt to unique circumstances,” footnote 37](https://www.govinfo.gov/content/pkg/CPRT-109HPRT20452/html/CPRT-109HPRT20452.htm), web-text lines 948–961 |
+
+Keep “assigned,” “provided” and “paid” with their respective sources and scopes. The mission amount and later inspection amount are **$125 million and $72 million** as reported. Their relationship, accounting basis, potential amendments and final paid amount remain unresolved. The House number traces to GAO and supplies no independent confirmation. The two USACE descriptions of operating and managing the landfill remain side by side. The signed scope, task order and division-of-responsibility records could distinguish facility management, debris inspection and contractor coordination.
+
+The same USACE page describes all structural steel as having gone to two salvage yards for recycling. The existing City and NYC Municipal Archives review separately documents retained memorial material, including a piece cataloged as selected at a salvage yard. The USACE article supplies neither yard names nor shipment or item identifiers. Preserve the general disposal account and the individual retention record together. Which steel passed through each site, which pieces were retained, and where they went remain open at the item level. [USACE, printed p. 9, “Landfill operations”](https://corpslakes.erdc.dren.mil/employees/engineerupdate/Engineer_update_092002.pdf#page=8) · [Earlier City and archival comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/00eda5b68c42bdfbd854d89f07f400bdb256df79/investigation/broader-evidence/steel-fresh-kills-municipal-accounting-2026-11-05/README.md)
+
+## Public index coverage check
+
+Both OpenFEMA v2 queries returned HTTP 200. The `disasterNumber eq 1391` query returned an empty `MissionAssignments` array. The separate `dateReceived asc` control returned five rows, from **February 1 to March 5, 2012**, despite `metadata.count: 0` in its envelope. This gives a concrete observed date boundary for that ordering and response. The query leaves historical coverage, undated entries and other archives unverified. The assignment number remains missing. [DR-1391 query](https://www.fema.gov/api/open/v2/MissionAssignments?%24filter=disasterNumber+eq+1391&%24top=1000) · [Five-row date control](https://www.fema.gov/api/open/v2/MissionAssignments?%24orderby=dateReceived+asc&%24top=5) · [Source pins and verification](SOURCE-PINS.json)
+
+## Deferred originals
+
+- [ ] **FEMA mission record.** Locate the signed October 1, 2001 assignment for DR-1391-NY, its tracking number, scope, amendments, obligation and reimbursement history, and closeout. Candidate record routes are FEMA Region 2 mission-assignment files and the Corps New York District project file.
+- [ ] **USACE contractor and custody files.** Locate the base contract and Fresh Kills task order, scope and reporting requirements, daily inspection and equipment logs, and NYPD/DSNY/FBI evidence-handoff procedures. These could establish which entity generated and retained each type of operational record.
+- [ ] **Salvage and load trail.** Obtain yard identities and dated receiving and outbound records, load tickets and item-to-specimen joins. Keep screening, recycling, selection for preservation and final disposition separately recorded.
+- [ ] **Public index coverage.** Seek the current data dictionary or legacy index that states the historical inclusion rules. The two public API responses provide a reproducible access result while those rules are open.
+
+The scoped reading and numerical checks establish document provenance, source dependence and database behavior. They leave mission execution at individual loads, specimen attribution and the reasons for the reported funding difference untested.
+Public derivative of the November 5, 2026 USACE mission and OpenFEMA coverage review. Native sources are held separately and identified by SHA-256.
+
+November 5, 2026. This STL01 study follows the federal work order for debris inspection and contractor coordination. The earlier OpenFEMA review traced **City, DSNY and DDC** grant worksheets. Those records use different identifiers from the federal mission-assignment index. [Earlier worksheet-version review](https://github.com/AveLyra/911-conspiracy-investigation/blob/1610422c48ac1372deeae50c29a17ac5b9603f1c/investigation/broader-evidence/steel-fresh-kills-fema-award-versions-2026-11-05/README.md)
+
+## Assignment date, funding descriptions and custodians
+
+| Source | What it reports | Locator |
+| --- | --- | --- |
+| USACE, *Engineer Update*, September 2002 | FEMA assigned a **$125 million** debris-removal mission to the Corps on **October 1**, describing its purpose as operating the Staten Island landfill for WTC debris disposal. The same passage describes a contractor-management role for Phillips and Jordon, Inc. (printed spelling) and says “Neither the Corps nor P&J managed the landfill.” | [Printed p. 9, first column under the continuation of “Debris removal”](https://corpslakes.erdc.dren.mil/employees/engineerupdate/Engineer_update_092002.pdf#page=8), PDF physical page 8, extracted lines 313–325 |
+| GAO, GAO-03-926, August 2003 | FEMA provided **$72 million** to USACE for management of debris inspection at the landfill. GAO lists labor, heavy and screening equipment, storage, worker shelter and services. It gives **$620.9 million** separately for site removal and barging. | [Printed pp. 13–15, debris removal and inspection](https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-03-926/pdf/GAOREPORTS-GAO-03-926.pdf#page=18), PDF physical pp. 18–20 |
+| House staff committee print, 2006 | Says FEMA paid USACE **$72 million** for sorting debris for remains, personal belongings and criminal evidence. Its footnote 37 cites GAO-03-926 pp. 14–15. | [GovInfo, “Congress and FEMA adapt to unique circumstances,” footnote 37](https://www.govinfo.gov/content/pkg/CPRT-109HPRT20452/html/CPRT-109HPRT20452.htm), web-text lines 948–961 |
+
+Keep “assigned,” “provided” and “paid” with their respective sources and scopes. The mission amount and later inspection amount are **$125 million and $72 million** as reported. Their relationship, accounting basis, potential amendments and final paid amount remain unresolved. The House number traces to GAO and supplies no independent confirmation. The two USACE descriptions of operating and managing the landfill remain side by side. The signed scope, task order and division-of-responsibility records could distinguish facility management, debris inspection and contractor coordination.
+
+The same USACE page describes all structural steel as having gone to two salvage yards for recycling. The existing City and NYC Municipal Archives review separately documents retained memorial material, including a piece cataloged as selected at a salvage yard. The USACE article supplies neither yard names nor shipment or item identifiers. Preserve the general disposal account and the individual retention record together. Which steel passed through each site, which pieces were retained, and where they went remain open at the item level. [USACE, printed p. 9, “Landfill operations”](https://corpslakes.erdc.dren.mil/employees/engineerupdate/Engineer_update_092002.pdf#page=8) · [Earlier City and archival comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/00eda5b68c42bdfbd854d89f07f400bdb256df79/investigation/broader-evidence/steel-fresh-kills-municipal-accounting-2026-11-05/README.md)
+
+## Public index coverage check
+
+Both OpenFEMA v2 queries returned HTTP 200. The `disasterNumber eq 1391` query returned an empty `MissionAssignments` array. The separate `dateReceived asc` control returned five rows, from **February 1 to March 5, 2012**, despite `metadata.count: 0` in its envelope. This gives a concrete observed date boundary for that ordering and response. The query leaves historical coverage, undated entries and other archives unverified. The assignment number remains missing. [DR-1391 query](https://www.fema.gov/api/open/v2/MissionAssignments?%24filter=disasterNumber+eq+1391&%24top=1000) · [Five-row date control](https://www.fema.gov/api/open/v2/MissionAssignments?%24orderby=dateReceived+asc&%24top=5) · [Source pins and verification](SOURCE-PINS.json)
+
+## Deferred originals
+
+- [ ] **FEMA mission record.** Locate the signed October 1, 2001 assignment for DR-1391-NY, its tracking number, scope, amendments, obligation and reimbursement history, and closeout. Candidate record routes are FEMA Region 2 mission-assignment files and the Corps New York District project file.
+- [ ] **USACE contractor and custody files.** Locate the base contract and Fresh Kills task order, scope and reporting requirements, daily inspection and equipment logs, and NYPD/DSNY/FBI evidence-handoff procedures. These could establish which entity generated and retained each type of operational record.
+- [ ] **Salvage and load trail.** Obtain yard identities and dated receiving and outbound records, load tickets and item-to-specimen joins. Keep screening, recycling, selection for preservation and final disposition separately recorded.
+- [ ] **Public index coverage.** Seek the current data dictionary or legacy index that states the historical inclusion rules. The two public API responses provide a reproducible access result while those rules are open.
+
+The scoped reading and numerical checks establish document provenance, source dependence and database behavior. They leave mission execution at individual loads, specimen attribution and the reasons for the reported funding difference untested.

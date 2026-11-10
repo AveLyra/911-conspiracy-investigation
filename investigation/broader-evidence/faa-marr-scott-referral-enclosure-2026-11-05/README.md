@@ -1,0 +1,33 @@
+<!-- Public derivative of the November 5 FAA and NORAD referral-enclosure review. Source files held separately. -->
+
+# The June 2003 Marr email named in the joint FAA and NORAD referral
+
+November 5, 2026 · B129 / PD01–PD04. The July 29, 2004 referral names a June 2, 2003 Marr-to-Scott email as enclosure 2. The public referral packet’s reader contains a reproduced forward with displayed headers and additional body text. This review checks those fields and compares the visible reply with the quotations used by Commission staff. [Referral, indexed lines 170–183](https://www.scribd.com/document/15677016/9-11-Commission-Documents-on-Referral-of-False-Statements-by-FAA-and-NORAD) · [Prior referral and acknowledgment review](https://github.com/AveLyra/911-conspiracy-investigation/blob/944349f4362f7e3e623ee9d8675faa19927f3732/investigation/broader-evidence/faa-joint-referral-acknowledgment-2026-11-05/README.md)
+
+## The displayed message chain
+
+| Header as displayed | Association in the reader |
+| --- | --- |
+| **Sunday, June 01, 2003 21:31** | Prior Scott-to-Marr message header, indexed lines 979–985. The visible excerpt ends shortly after the greeting. |
+| **Monday, June 02, 2003 6:25 AM** | Marr’s reply to Scott, indexed lines 943–970. |
+| **Friday, June 06, 2003 4:30 PM** | Scott’s forward to Commission staffer Dana Hyde, indexed lines 928–942. Scott describes the information as requested by Commissioner Lehman and points to the second paragraph. The subject is **FW: 1AF Security Chief**. |
+
+These are displayed message times with no visible timezone offsets in the reviewed headers. The reproduction supports the documented association between the reply and the later forward. It supplies no native transport headers or separate receipt or read acknowledgment for Hyde or Lehman. The standalone reader linked by the archive index did not load in the web tool. This study used the already captured referral packet’s HTML and did not authenticate a complete email export. [Reader, indexed lines 928–985](https://www.scribd.com/document/15677016/9-11-Commission-Documents-on-Referral-of-False-Statements-by-FAA-and-NORAD) · [Standalone copy locator](https://www.scribd.com/doc/12962766/NEADS-Email-Saying-Fighters-Were-Scrambled-in-Response-to-Flight-93-on-911)
+
+## What the staff quotation leaves outside its boundary
+
+The visible reply gives **0916L** for the reported United 93 hijacking, **0924L** for the Langley scramble and a call about American 77, and **0925L** for a follow-up call. It links the scramble to United 93 and presents an American 77 explanation as easier to convey to the public. It then says Marr had crew comments and tentatively identifies Boston Center as the source of the first call. In that account, Boston reported concern about something happening at Washington Center. Marr says he **“can’t confirm these conversations.”** Preserve the earlier affirmative times and the qualification together. The reply leaves the crew sources, specific calls and records behind **0916L** unverified. [Reader, indexed lines 950–970](https://www.scribd.com/document/15677016/9-11-Commission-Documents-on-Referral-of-False-Statements-by-FAA-and-NORAD)
+
+The July 29 Commission staff memorandum quotes the timing and public-explanation passage through **“possible target.”** The **DRAFT** of *A New Type of War* hosted by Rutgers ends its quotation at the same phrase. The reproduced reply continues beyond **“possible target!”** with the crew-based reconstruction and inability to confirm the conversations. The displayed punctuation differs at that boundary. Retain the two forms with their sources. Both staff versions leave the following qualification outside the quotation. This comparison identifies the excerpt boundary. It supplies no drafting instruction or evidence about why staff ended the quotation there. [July staff memorandum, reader lines 292–311](https://www.scribd.com/document/15677016/9-11-Commission-Documents-on-Referral-of-False-Statements-by-FAA-and-NORAD) · [Rutgers draft, physical p. 44, extracted lines 20–38](https://www.rutgerslawreview.com/wp-content/uploads/special/911/Sept11_Monograph.pdf#page=44)
+
+## Conflicting operational accounts
+
+The Commission’s final report places the first military notice of **American 77 missing** at **9:34**, identifies the **9:24** report as concerning **American 11**, and attributes the Langley scramble to the mistaken report about American 11. Its chronology gives **10:07** for Cleveland Center advising NEADS of the United 93 hijacking. Preserve these alongside the email’s **0916L**, **0924L** and **0925L** descriptions. Call subject, confirmed hijack notice, controller, and direction are separate fields. The prior audio study checked the Washington Center exchange that contains the lost-aircraft wording. It did not reconstruct the claimed earlier calls or establish what the writer saw before or after the May hearing. [Final report, chapter 1, indexed lines 248–274](https://www.9-11commission.gov/report/911Report_Ch1.htm) · [Prior released-audio review](https://github.com/AveLyra/911-conspiracy-investigation/blob/c02f10e733cf20566c312e54519ecdab185f3cb0/investigation/broader-evidence/faa-aa77-neads-notice-source-2026-11-05/README.md)
+
+## TODOs
+
+- [ ] **PD01/PD03.** Locate the native June 1 request, June 2 reply, June 6 forward and Commission receiving copy, and the copy of enclosure 2 actually received by each inspector general. Compare message IDs, complete headers and body, timezone fields, attachments and any distribution to commissioners. The [Marcus referral file unit](https://catalog.archives.gov/id/2604844) is a paper-folder locator. Its item-level contents remain unverified.
+- [ ] **PD01/PD04.** Locate the records or crew statements referenced by Marr and any candidate Boston/Washington/NEADS call records. Compare call type, flight identifier, endpoints and clock with the prior released-audio review. Separate this post-hearing exchange from the source of the FAA’s May written answer and any corrected version.
+- [ ] **PD01–PD04.** Preserve the corrected FAA answer, transmission and recipient acknowledgment, signed administrative decision, recommendation response and closure, and applicable policy/custody as separate dependencies.
+
+The checks use the held reader response and the downloaded 56-page Rutgers PDF. Reading scope is the cited message and quotation segments, with the earlier source review used for the operational comparison. No transport header, archival file face or independent flight-clock test was acquired here. [Source pins and verification scope](SOURCE-PINS.json)

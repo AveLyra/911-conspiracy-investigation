@@ -1,0 +1,60 @@
+# May-family relays: the interview-request chain and preserved source differences
+
+The newly read records locate a specific **Las Vegas family-interview and response trail**. A September 11 Dallas memorandum directs Las Vegas to interview Ron May and report information **positive or negative**. A separate **DL99** intake directs Dallas to prepare an interview request. Neither is the completed interview, a returned result or a native carrier record.
+
+Both accounts relay information through **Jane Allen, American Airlines' Vice President for Flight Services**. **They are not independent interviews or independent confirmation of a call.** Both say approximately **6:05 Pacific time**. No 6:45 or 40-minute discrepancy survives full-page reading; the preliminary thumbnail guess was ours and is rejected, not preserved as historical evidence.
+
+The memorandum also describes Flight 77 as having **“crashed into the World Trade Towers.”** The held official staff report describes its impact at the **Pentagon**. Both descriptions remain separately sourced and unchanged. Their difference does not establish why the memorandum used that wording, who knew what when, or that the family call was fabricated.
+
+## Exact new source units
+
+[Physical 53–54](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=53), production footers **000000741–742**, are the Dallas memorandum dated **09/11/2001** and its lead page. [Physical 60–62](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=60), footers **000000756–758**, are **DL99**, header **09/18/2001**, with event/lead continuations. All **five full faces** were newly read on **November 2, 2026**. Earlier contact-sheet views were navigation only.
+
+The unchanged public mirror is **73 pages**, **2,997,662 bytes**, SHA-256 `e3cf374351cb753d1297433f86bb5807c56cb42a6dc69837a9df02dd0d54f4aa`, acquired **2026-10-27T13:40:38.310907+00:00**. It is a **third-party reproduction of FBI-form records**, not an authenticated FBI master/native intake database, complete production, original family interview or carrier event file. [SOURCES.json](SOURCES.json) gives source/image pins and exclusions. No new PDF download, public query, OCR or audio analysis occurred.
+
+## The relay chain and actual requested work
+
+[Physical 53, Details](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=53), says Dallas received information from Allen, who said Ron May had called her. The memorandum says May **“apparently”** told Allen he had received a call from his daughter **Renee May**, a Flight 77 attendant. [Physical 60–61, Event](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=60), attributes information to Allen and describes Ron May and his wife receiving their daughter's call. Both relay six reported hijackers, movement toward the rear, attempted cockpit access and a line going dead. These remain **reported call descriptions**, not independently identified people, authenticated disconnection causes or verified carrier/device/service facts.
+
+[Physical 54, Set Lead1](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=54), directs **Las Vegas** to contact and interview Ron May and send **“information, positive or negative”** to Counterterrorism, New York, Washington Field and Dallas. Other addressees receive **“Read and clear”** instructions. Those office-specific tasks are not interchangeable: read-and-clear does not cancel the Las Vegas interview direction, prove case closure or supply a completed result.
+
+[Physical 61](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=61) marks **Lead Required? YES** and says Las Vegas covers the matter. [Physical 62, DL99 assignment/task](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=62), records **09/11/2001 at 7:30 PM** and directs **“PREPARE EC REQUESTING INTERVIEW OF RON MAY FATHER OF AA FLT 77 FLIGHT ATTENDANT RENEE MAY.”** An instruction to prepare a request is distinct from preparing/sending/receiving it, conducting the interview and returning its findings. No completed EC/receipt/interview/disposition is supplied by these five faces.
+
+Exact underlying targets are the original airline/parent contacts and notes, Dallas EC/request and dispatch/receipt, Las Vegas interview/report/attachments and response—including negative or inconclusive information—and the native control/routing/disposition history. No contact, new request or fee was authorized or made here.
+
+## Preserve times without forcing a clock or call match
+
+| Source field | Printed value / wording |
+| --- | --- |
+| Memorandum header, p53 | **09/11/2001** |
+| Memorandum Details, p53 | **about 6:05 a.m., pacific time, 9/11/01** |
+| DL99 header, p60 | **09/18/2001** |
+| DL99 Information Received, p60 | **09/11/2001, 3:25 PM** |
+| DL99 Event narrative, p60 | **AROUND 6:05 PACIFIC TIME** |
+| DL99 Event Date/Time, p61 | **09/11/2001 / 6:05 AM** |
+| DL99 assignment, p62 | **09/11/2001 at 7:30 PM** |
+| Reused staff-report p31 | Attempt **9:11 A.M.**; connection **9:12 A.M.**, citing note 260 |
+
+The approximate forwarded Pacific-time statements, unlabelled event/receipt/assignment clocks and later call entries have different source roles. No timezone is supplied here for unlabelled fields, and no silent conversion, controlling value, calibrated delay, exact event order or native-row identity is accepted. Original timing bases, carrier dictionary/clock, intake history and family interview are still needed. The later staff entry is not the underlying log.
+
+DL99 is the typed control. Its case is **265D-NY-280350-DL (PENDING)**; a bottom notation is read as **DL666**. The memorandum lists **265D-NY-280350**, **265D-WF-222811**, **265D-HQ-1348101**. A faint handwritten serial-like notation on physical 53 is not confidently transcribed; no value is adopted. Handwriting functions/aliases and PENDING's current relevance are unverified. No contact numbers, masked staff identities or private profiles are reproduced or reconstructed.
+
+## Preserve the impact-site conflict and contrary context
+
+[Memorandum physical 53, opening Details](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=53), describes the attendant aboard American Airlines Flight 77 **“just before it crashed into the World Trade Towers.”** The [official archived staff report, printed/physical34](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=34), says American Airlines Flight 77 crashed into the **Pentagon**. The memorandum's words are not replaced with the later description.
+
+The [same staff report, p31](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=31), also describes earlier airline/FAA uncertainty about which aircraft struck the towers. That is **later reported context**, not independent proof of why this specific memorandum used its phrase. Early confusion, misreporting, copying, a different underlying account or another explanation remain untested; no one is selected. Original upstream contacts and memo drafting/transmission history would discriminate. This mismatch does not invalidate every relayed call detail or establish deliberate deception, a changed aircraft history or a concealed recording.
+
+Staff p31 also retains uncertainty about whether rearward movement meant passengers or crew. Its account of the mother and the relays' references to the father/parents are not silently collapsed into a single verified recipient/conversation. Original interviews, carrier/session records and canvass inclusion rules are needed to test which reports describe which events.
+
+## Reuse the existing interview citation honestly
+
+Previously held [staff-report physical94, notes260–262](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94), cites **FBI “American Airlines Airphone Usage,” September 20, 2001** for the call entries and **“FBI report of investigation, interview of Ronald and Nancy May, Sept 12, 2001”** in note261. Note262 separately cites an airline-employee interview and January 20, 2004 QFR/email response. These are **existing citations reused as locators**, not newly acquired original interviews, usage logs, emails or source authentication.
+
+The staff PDF has **121 pages**, **6,760,035 bytes**, SHA-256 `9671b7afe9a45928dcbe053e567b7f830876bc31e32a1d221b39fa59493d5bbb`, captured **2026-10-28T00:16:15.117345+00:00** from the official National Archives URL. Previously read pages **31/34/94** were reused; they are not new reading/discovery counts. No fresh aircraft-impact or recorder test was performed, and the technical owner's work remains separate.
+
+## Verification and unresolved requirements
+
+[OBSERVATIONS.json](OBSERVATIONS.json) preserves five related analyst entries, not five confirmations or a count of calls/hijackers. [verify.py](verify.py) checks declared source/raster/body identities, manual source locators/values, exact predecessor preservation and all 18 TODOs; it does not independently transcribe pixels, authenticate a caller, family interview, aircraft, service, clock, carrier event, custody or response. [VERIFICATION.json](VERIFICATION.json) records actual modes.
+
+[OPEN-TODOS.md](OPEN-TODOS.md) carries the specific original interview/request/response/clock/impact-wording targets and all five tracks and 18 requirements forward. [CHECKLIST.md](CHECKLIST.md) and the actual additive [text diff](REVISION.diff) preserve accountability. Original records, agreements, source conflicts and earlier versions remain unchanged. No original-plan criterion or whole investigation is completed by this source comparison or publication.

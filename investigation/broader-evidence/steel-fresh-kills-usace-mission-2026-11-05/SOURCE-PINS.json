@@ -1,0 +1,111 @@
+{
+  "sources": [
+    {
+      "file": "mission-disaster.json",
+      "url": "https://www.fema.gov/api/open/v2/MissionAssignments?$filter=disasterNumber+eq+1391&$top=1000",
+      "access_date_eastern": "2026-11-05",
+      "sha256": "ffeab5de4af24d268266026642fce0744979bed72a7502375e7fc0f2a9cd1b94",
+      "bytes": 331,
+      "http_status": 200,
+      "scope": "Scoped disaster query",
+      "native_metadata": {
+        "skip": 0,
+        "select": null,
+        "rundate": "2026-11-05T14:26:58.299Z",
+        "top": 1000,
+        "filter": "disasterNumber eq 1391",
+        "format": "json",
+        "metadata": true,
+        "orderby": "",
+        "entityname": "MissionAssignments",
+        "version": "v2",
+        "url": "/api/open/v2/MissionAssignments?$filter=disasterNumber+eq+1391&$top=1000",
+        "count": 0
+      },
+      "array_count": 0
+    },
+    {
+      "file": "mission-control.json",
+      "url": "https://www.fema.gov/api/open/v2/MissionAssignments?$orderby=dateReceived+asc&$top=5",
+      "access_date_eastern": "2026-11-05",
+      "sha256": "86f901ee1aaaf1877fb9a33a0077a0f331ccf4e8bdc099da50ef3bc8caa7e4be",
+      "bytes": 10643,
+      "http_status": 200,
+      "scope": "Ascending date control",
+      "native_metadata": {
+        "skip": 0,
+        "select": null,
+        "rundate": "2026-11-05T14:27:00.449Z",
+        "top": 5,
+        "filter": "",
+        "format": "json",
+        "metadata": true,
+        "orderby": "dateReceived ASC",
+        "entityname": "MissionAssignments",
+        "version": "v2",
+        "url": "/api/open/v2/MissionAssignments?$orderby=dateReceived+asc&$top=5",
+        "count": 0
+      },
+      "array_count": 5,
+      "control_projection": [
+        {
+          "id": "f29dbb6b-e4ea-4584-a02b-c1458753436b",
+          "disasterNumber": 4052,
+          "dateReceived": "2012-02-01T00:00:00.000Z",
+          "dateObligated": "2012-02-02T00:00:00.000Z"
+        },
+        {
+          "id": "4f310dd8-d674-484c-b5ad-3a27f7a535c1",
+          "disasterNumber": 4052,
+          "dateReceived": "2012-02-02T00:00:00.000Z",
+          "dateObligated": "2012-02-02T00:00:00.000Z"
+        },
+        {
+          "id": "c7cbba2d-e8f7-405b-9715-9b653a7a7892",
+          "disasterNumber": 4052,
+          "dateReceived": "2012-02-02T00:00:00.000Z",
+          "dateObligated": "2012-02-02T00:00:00.000Z"
+        },
+        {
+          "id": "155b466c-18b7-46de-8553-4f49e29ad3ab",
+          "disasterNumber": 4052,
+          "dateReceived": "2012-02-22T00:00:00.000Z",
+          "dateObligated": "2012-02-22T00:00:00.000Z"
+        },
+        {
+          "id": "312bb2c5-f8e0-484f-bc85-8057903f5fbc",
+          "disasterNumber": 4056,
+          "dateReceived": "2012-03-05T00:00:00.000Z",
+          "dateObligated": "2012-03-06T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "file": "corps-engineer-update-2002-09.pdf",
+      "url": "https://corpslakes.erdc.dren.mil/employees/engineerupdate/Engineer_update_092002.pdf",
+      "access_date_eastern": "2026-11-05",
+      "sha256": "3b0fb192dc13544d5f7b6bb923d454f586e9e4e2105a3caf4a9d75ca0b76834d",
+      "bytes": 5428234,
+      "http_status": 200,
+      "scope": "Physical p. 8, printed pp. 8–9. Extracted lines 313–325, 382–397 and visual inspection of printed p. 9",
+      "physical_pages": 15
+    },
+    {
+      "file": "govinfo-gao-03-926-bounded.pdf",
+      "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-03-926/pdf/GAOREPORTS-GAO-03-926.pdf",
+      "access_date_eastern": "2026-11-05",
+      "sha256": "0296b7a5d126b307a0ff184523f447242607e93d62774d5dda43b4f860722aaf",
+      "bytes": 4815290,
+      "http_status": 200,
+      "scope": "Physical pp. 18–20, printed pp. 13–15. The $72 million sentence crosses physical pp. 19–20",
+      "physical_pages": 48
+    }
+  ],
+  "control_limits": "One scoped and one ordered query. Coverage of undated or older records and historical indexes remains unverified.",
+  "comparison_reference": {
+    "url": "https://www.govinfo.gov/content/pkg/CPRT-109HPRT20452/html/CPRT-109HPRT20452.htm",
+    "locator": "Web-text lines 948–961, footnote 37",
+    "access_date_eastern": "2026-11-05",
+    "access_mode": "Rendered official HTML excerpt. Native bytes not captured in this run."
+  }
+}

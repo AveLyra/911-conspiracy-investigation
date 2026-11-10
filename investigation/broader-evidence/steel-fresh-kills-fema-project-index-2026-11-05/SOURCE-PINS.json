@@ -1,0 +1,218 @@
+{
+  "access_date_eastern": "2026-11-05",
+  "native_responses": [
+    {
+      "file": "projects-v2.json",
+      "source_url": "https://www.fema.gov/api/open/v2/PublicAssistanceFundedProjectsDetails?$filter=disasterNumber+eq+1391&$top=1000",
+      "sha256": "7cbbfce874c571460b19a3c93c0eeacf26b94a8d305fd448c1b74c19f0d58bfd",
+      "bytes": 783632,
+      "returned_array_rows": 1000,
+      "api_metadata_count": 0,
+      "rundate_utc": "2026-11-05T14:15:16.459Z",
+      "filter": "disasterNumber eq 1391",
+      "top": 1000
+    },
+    {
+      "file": "selected-projects-v2.json",
+      "source_url": "https://www.fema.gov/api/open/v2/PublicAssistanceFundedProjectsDetails?$filter=disasterNumber+eq+1391+and+%28damageCategoryCode+eq+%27A%27+or+applicantId+eq+%27061-51000-49%27+or+applicantId+eq+%27061-51000-19%27%29&$top=1000",
+      "sha256": "0f2904ef74dd6bf79317e1cb8b6dda1ee5b0cd0d25cc7b100d46f93f1ab9f625",
+      "bytes": 92816,
+      "returned_array_rows": 120,
+      "api_metadata_count": 0,
+      "rundate_utc": "2026-11-05T14:15:56.209Z",
+      "filter": "disasterNumber eq 1391 and (damageCategoryCode eq 'A' or applicantId eq '061-51000-49' or applicantId eq '061-51000-19')",
+      "top": 1000
+    },
+    {
+      "file": "applicants-v1.json",
+      "source_url": "https://www.fema.gov/api/open/v1/PublicAssistanceApplicants?$filter=disasterNumber+eq+1391&$top=1000",
+      "sha256": "42b7b2d044d2bb8442d39f80857d16950f8b744eb6b16bfbba38cae889ddf611",
+      "bytes": 68337,
+      "returned_array_rows": 195,
+      "api_metadata_count": 0,
+      "rundate_utc": "2026-11-05T14:15:17.294Z",
+      "filter": "disasterNumber eq 1391",
+      "top": 1000
+    }
+  ],
+  "query_check": {
+    "unique_project_keys": 120,
+    "category_a": 107,
+    "dsny": 58,
+    "ddc": 32
+  },
+  "applicant_join_keys": [
+    "disasterNumber",
+    "applicantId"
+  ],
+  "worksheet_key": [
+    "disasterNumber",
+    "applicantId",
+    "pwNumber"
+  ],
+  "selected_applicants": [
+    {
+      "disasterNumber": 1391,
+      "applicantId": "061-51000-00",
+      "applicantName": "New York, City of"
+    },
+    {
+      "disasterNumber": 1391,
+      "applicantId": "061-51000-19",
+      "applicantName": "New York / Design and Construction, Department of / Design and Construction, Department of"
+    },
+    {
+      "disasterNumber": 1391,
+      "applicantId": "061-51000-49",
+      "applicantName": "New York / Sanitation, Department of / Sanitation, Department of"
+    }
+  ],
+  "selected_project_rows": [
+    {
+      "disasterNumber": 1391,
+      "applicantId": "061-51000-00",
+      "pwNumber": 1,
+      "gmProjectId": 450769,
+      "damageCategoryCode": "A",
+      "county": null,
+      "applicationTitle": "(PW# 1) DEBRIS REMOVAL",
+      "projectStatus": "Eligible",
+      "projectAmount": "372687108",
+      "federalShareObligated": "372687108",
+      "totalObligated": "376495476.25",
+      "firstObligationDate": "2001-09-14T00:00:00.000Z",
+      "lastObligationDate": "2001-12-18T00:00:00.000Z",
+      "lastRefresh": "2026-07-23T18:44:06.680Z"
+    },
+    {
+      "disasterNumber": 1391,
+      "applicantId": "061-51000-00",
+      "pwNumber": 2,
+      "gmProjectId": 450770,
+      "damageCategoryCode": "A",
+      "county": null,
+      "applicationTitle": "(PW# 2) Not Provided",
+      "projectStatus": "Eligible",
+      "projectAmount": "-372687108",
+      "federalShareObligated": "-372687108",
+      "totalObligated": "-376423296.25",
+      "firstObligationDate": "2002-02-16T00:00:00.000Z",
+      "lastObligationDate": "2002-02-16T00:00:00.000Z",
+      "lastRefresh": "2026-07-23T18:44:06.680Z"
+    },
+    {
+      "disasterNumber": 1391,
+      "applicantId": "061-51000-49",
+      "pwNumber": 928,
+      "gmProjectId": 451373,
+      "damageCategoryCode": "A",
+      "county": null,
+      "applicationTitle": "(PW# 928) CONTRACT - BARGE TOWING",
+      "projectStatus": "Eligible",
+      "projectAmount": "193680.26",
+      "federalShareObligated": "193680.26",
+      "totalObligated": "195621.91",
+      "firstObligationDate": "2002-08-29T00:00:00.000Z",
+      "lastObligationDate": "2002-08-29T00:00:00.000Z",
+      "lastRefresh": "2026-07-23T18:44:06.680Z"
+    },
+    {
+      "disasterNumber": 1391,
+      "applicantId": "061-51000-19",
+      "pwNumber": 952,
+      "gmProjectId": 450988,
+      "damageCategoryCode": "A",
+      "county": "Queens County",
+      "applicationTitle": "(PW# 952) COST ESTIMATE -  CONTRACT MONITORING / MGMT",
+      "projectStatus": "Eligible",
+      "projectAmount": "7394954.05",
+      "federalShareObligated": "4369781",
+      "totalObligated": "4413588.05",
+      "firstObligationDate": "2002-10-03T00:00:00.000Z",
+      "lastObligationDate": "2003-06-30T00:00:00.000Z",
+      "lastRefresh": "2026-07-23T18:44:06.680Z"
+    },
+    {
+      "disasterNumber": 1391,
+      "applicantId": "061-51000-49",
+      "pwNumber": 1004,
+      "gmProjectId": 451377,
+      "damageCategoryCode": "A",
+      "county": null,
+      "applicationTitle": "(PW# 1004) CONTRACT COSTS - ENG SERVICES -LANDFILL OPERATIONS",
+      "projectStatus": "Eligible",
+      "projectAmount": "251103.82",
+      "federalShareObligated": "251103.82",
+      "totalObligated": "253621.12",
+      "firstObligationDate": "2002-07-30T00:00:00.000Z",
+      "lastObligationDate": "2003-06-12T00:00:00.000Z",
+      "lastRefresh": "2026-07-23T18:44:06.680Z"
+    },
+    {
+      "disasterNumber": 1391,
+      "applicantId": "061-51000-49",
+      "pwNumber": 1010,
+      "gmProjectId": 451380,
+      "damageCategoryCode": "A",
+      "county": null,
+      "applicationTitle": "(PW# 1010) BARGE USAGE",
+      "projectStatus": "Eligible",
+      "projectAmount": "2458800",
+      "federalShareObligated": "2458800",
+      "totalObligated": "2483449.47",
+      "firstObligationDate": "2002-08-23T00:00:00.000Z",
+      "lastObligationDate": "2002-08-23T00:00:00.000Z",
+      "lastRefresh": "2026-07-23T18:44:06.680Z"
+    },
+    {
+      "disasterNumber": 1391,
+      "applicantId": "061-51000-49",
+      "pwNumber": 1093,
+      "gmProjectId": 451383,
+      "damageCategoryCode": "A",
+      "county": null,
+      "applicationTitle": "(PW# 1093) CONTRACT COSTS - BARGE TOWING",
+      "projectStatus": "Eligible",
+      "projectAmount": "62517.7",
+      "federalShareObligated": "62517.7",
+      "totalObligated": "63144.44",
+      "firstObligationDate": "2002-07-30T00:00:00.000Z",
+      "lastObligationDate": "2002-07-30T00:00:00.000Z",
+      "lastRefresh": "2026-07-23T18:44:06.680Z"
+    },
+    {
+      "disasterNumber": 1391,
+      "applicantId": "061-51000-49",
+      "pwNumber": 1318,
+      "gmProjectId": 451395,
+      "damageCategoryCode": "A",
+      "county": null,
+      "applicationTitle": "(PW# 1318) EMERGENCY BARGE WORK",
+      "projectStatus": "Eligible",
+      "projectAmount": "95314.47",
+      "federalShareObligated": "60529.47",
+      "totalObligated": "61136.27",
+      "firstObligationDate": "2002-09-27T00:00:00.000Z",
+      "lastObligationDate": "2003-07-10T00:00:00.000Z",
+      "lastRefresh": "2026-07-23T18:44:06.680Z"
+    },
+    {
+      "disasterNumber": 1391,
+      "applicantId": "061-51000-49",
+      "pwNumber": 1349,
+      "gmProjectId": 451399,
+      "damageCategoryCode": "A",
+      "county": null,
+      "applicationTitle": "(PW# 1349) REPAIR / CLEANING MARINE TRANSFER STATION",
+      "projectStatus": "Eligible",
+      "projectAmount": "1035372.22",
+      "federalShareObligated": "0",
+      "totalObligated": "0.01",
+      "firstObligationDate": "2002-11-27T00:00:00.000Z",
+      "lastObligationDate": "2003-06-30T00:00:00.000Z",
+      "lastRefresh": "2026-07-23T18:44:06.680Z"
+    }
+  ],
+  "monetary_values": "Decimal text from native numeric fields, units USD.",
+  "published_scope": "Selected fields. Native bytes preserved locally."
+}

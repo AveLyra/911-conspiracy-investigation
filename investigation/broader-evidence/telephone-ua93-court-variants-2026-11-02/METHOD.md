@@ -1,0 +1,13 @@
+# Actual method and verification scope
+
+Verify actual Intel source path and original ZIP bytes/SHA before inspecting any member. List14member names/sizes only. Select exactly UA93.swf and UA 93 Calls.swf after the inventory; no Gronlund-named member exists in that entity. Preserve two separately named member copies and complete passive reader/tag outputs on Intel. No executables, Flash, actions, remote links or audio are executed or fetched.
+
+Use the existing DefineFont2/DefineText/DefineText2 and recursive-tag reader. Exact text equality is equality of decoded codepoint multisets, retaining multiplicity, case, NULs and all other characters; font visuals and actual display semantics are not established. The full extracted text tables are not semantically reviewed or published. Public results include safe term/coordinate metadata and whole-source/aggregate hashes, not recipient/phone/contact fields or complete compound text.
+
+The exploratory pair comparison and the supplied reproducer share that parser. The final archive check tests reproducibility, not an independent implementation. Fixed comparator controls reject changed duplicates, case and NUL removal while accepting ordering changes. They do not validate the glyph decoder or authenticate calls. Font/geometry/action/display, runtime behavior, complete byte-difference cause and historical source/custody are outside scope. No version chronology is assigned.
+
+Complete selected-member tag walks check sound codes14/15/17/18/19/45/89; absence within this set is not absence of external media, opaque data, other court objects or FBI evidence. Header frame/rate/rectangle declarations are authoring metadata, not measured conversation duration or clocks. Numeric tag28counts are reported without simulating/interpreting their effects.
+
+verify.py checks the bundle and, when supplied --archive, reopens the pinned actual archive and reproduces RESULTS through the same passive reader. A mismatch fails; no expected source value is rewritten to obtain a pass. The bundle manifest excludes itself and generated verification output to avoid a self-hash cycle; publication verification separately checks every remote file. REVISION.diff is an actual zero-context addition to the immediately preceding preserved telephone review. No source/image/layout was edited or tested for layout.
+
+Checker draft qualification before first archive verification: Python tag-count dictionaries use integer keys, while their JSON representation uses string keys. The verifier compares the actual result through JSON serialization to the published JSON contract; source strings, multiplicity and codepoints remain untouched. The earlier local checker/candidate is preserved.

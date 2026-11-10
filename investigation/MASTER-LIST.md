@@ -2,6 +2,10 @@
 
 [Investigation consolidation guidance](CONSOLIDATION.md).
 
+## November 10: public topic-branch research catalog
+
+The [public research-branch consolidation](branch-consolidation-public-refs-2026-11-10/README.md) indexes 226 dated source groups and 1167 files already available on AveLyra topic branches. It preserves source blobs and attribution, qualifies historical status, and does not treat repeated reports as independent evidence. Flagged privacy, source-rights, case and LFS items remain outside this batch.
+
 ## November 10: additional public-branch research consolidation
 
 The [52-file consolidation](branch-consolidation-2026-11-10/README.md) preserves the existing ten-claim audit, evaluation-method review and UMS explosives-record test from public topic branches with byte-level provenance. It does not treat copied reports as new independent evidence or establish completion of all branch reviews.

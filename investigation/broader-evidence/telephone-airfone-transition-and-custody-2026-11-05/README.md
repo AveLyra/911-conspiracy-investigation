@@ -1,0 +1,30 @@
+# Verizon Airfone transition reports and license disposition
+
+November 5, 2026. TEL03/TEL04 follow-up on the GTE/Verizon Airfone side of the telephone records search. This branch of the custody inquiry is separate from the AT&T/Claircom asset trail. Five FCC PDFs were acquired. The selected passages and two previously preserved ULS snapshots were checked for the records below. [Earlier carrier-enclosure review](https://github.com/AveLyra/911-conspiracy-investigation/blob/ad7be60185f5d3a49f0e0b7564f4da3610afaf92/investigation/broader-evidence/telephone-carrier-enclosures-2026-10-27/README.md)
+
+## Four specific records to look for
+
+FCC notice DA 06-294 required the first status report to give the numbers of commercial, general aviation and government aircraft subscribed to Airfone narrowband service as of the notice date, **February 6, 2006**. It also required four snapshots of subscriber counts, aircraft and base-station reconfigurations and actual one-megahertz operations. It distinguishes equipment configured to operate from equipment actually operating. The required data snapshots were **5, 11, 17 and 23 months from the first new license grant**, separate from the filing deadlines. Government aircraft reporting excluded classified information. The notice provides for requests for confidential treatment. [DA 06-294, pp. 1–3](https://docs.fcc.gov/public/attachments/DA-06-294A1.pdf#page=2)
+
+DA 06-2622 sets filing deadlines of **April 30, 2007**, **October 31, 2007**, **April 30, 2008** and **October 31, 2008**. It directs filing an original and two copies with the FCC Office of the Secretary, attention Wireless Telecommunications Bureau, and service on the holders of **WQFX728** and **WQFX729**, identified in the notice as AC BidCo LLC and LiveTV LLC. These are specific filing and copy routes. The bounded indexed search located the requirements and dates. The four submissions, any receipts and any confidentiality rulings remain TODOs. [DA 06-2622, p. 2](https://docs.fcc.gov/public/attachments/DA-06-2622A1.pdf#page=2)
+
+## Service, license and sale records side by side
+
+| Source | Recorded event or description |
+| --- | --- |
+| DA 06-2622, p. 1 | As of the **December 29, 2006** notice, it reports that commercial seat-back service had recently stopped. It describes a stated intent to continue general aviation service until at least **December 31, 2007**, the **October 31, 2008** deadline to vacate the relevant spectrum and a scheduled **May 13, 2010** expiration for KNKG804. [FCC notice](https://docs.fcc.gov/public/attachments/DA-06-2622A1.pdf#page=1) |
+| ULS application export, file **0003697915**, system ID **4758890** | Receipt **January 9, 2009**, purpose `CA`, status `G`. History records grant `APGRT` on **January 15** and cancellation-letter event `LETCAS` on **January 16**. The attachment index gives two dates for `Purpose of Application`, **January 7** with action `D` and **January 8** with action `A`. Both filename fields are blank. [FCC application export](https://data.fcc.gov/download/pub/uls/complete/a_paging.zip) |
+| FCC action notice 4685, p. 4, and ULS license export | The **January 28, 2009** notice lists KNKG804, file **0003697915**, action date **January 15, 2009**, `CA` / `G`. The license row separately records status `C`, cancellation date **January 15, 2009**, and expiration field **May 13, 2010**. Preserve the scheduled expiration and the recorded cancellation separately. [Action notice](https://docs.fcc.gov/public/attachments/DOC-288109A1.pdf#page=4) · [FCC license export](https://data.fcc.gov/download/pub/uls/complete/l_paging.zip) |
+| FCC international traffic report, PDF p. 43, n. 62 | Reports a **2008** sale by Verizon to JetBlue's LiveTV Group and calls LiveTV Airfone, Inc. the former Verizon Airfone. [FCC report](https://docs.fcc.gov/public/attachments/DOC-305657A1.pdf#page=43) |
+| DA 13-570, pp. 1–4 and 7, especially n. 56 | Describes LiveTV's purchase of Airfone business and network assets from **GTE Wireless Corporation**. Separately, it grants consent on **March 29, 2013** to assign **WQFX729** to Gogo's AC BidCo and identifies **WT Docket 12-155**, **ULS 0005185165**, the **May 4, 2012** Public Interest Statement, the **February 12, 2013** LiveTV declaration and **February 21, 2013** Gogo supplement. [FCC order](https://docs.fcc.gov/public/attachments/DA-13-570A1.pdf) |
+
+The sale descriptions use different seller labels and levels of detail. The executed agreement and schedules are needed to establish the exact selling entity and what passed to LiveTV. The 2013 FCC order cites the LiveTV declaration for the earlier acquisition. Treat these references as leads to underlying records. Neither the later WQFX729 transaction nor the KNKG804 cancellation dates the end of every Airfone service or establishes custody of legacy billing and switch records.
+
+## Deferred originals and next tests
+
+- [ ] Locate the four KNKG804 transition submissions, FCC receipt/service records and any public versions. Compare each data date and subscriber category. These are aggregate engineering reports covering a later period.
+- [ ] Locate the signed **0003697915** cancellation request, both indexed purpose-attachment versions and the January 16 letter. Check the applicant's wording and scope of cancellation against the FCC action and history records.
+- [ ] Locate the 2008 acquisition agreement, schedules and any inventory of databases, media, operator records and retained or excluded assets. Retrieve the exact 2012–13 docket attachments and trace what transferred at each stage. An accounting or licensing description alone leaves call-record custody unresolved.
+- [ ] Keep the 2001 carrier and operator originals open. Testing an individual call still requires event records or recordings, clock and event definitions, and a defensible join to the flight and caller.
+
+The [source pins](SOURCE-PINS.json) identify retrieved files and exact locators. The published comparison contains selected public fields. The native PDFs and FCC exports are preserved separately.

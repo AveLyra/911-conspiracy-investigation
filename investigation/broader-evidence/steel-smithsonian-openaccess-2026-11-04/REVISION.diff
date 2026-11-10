@@ -1,0 +1,65 @@
+diff --git a/PRECEDING-SMITHSONIAN-REVIEW-PRESERVED.md b/COMBINED-SMITHSONIAN-REVIEW-WITH-EXPORT-2026-11-04.md
+index 3f9d0be2..aaadd427 100644
+--- a/PRECEDING-SMITHSONIAN-REVIEW-PRESERVED.md
++++ b/COMBINED-SMITHSONIAN-REVIEW-WITH-EXPORT-2026-11-04.md
+@@ -85,0 +86,60 @@ No new qualifying full source body or tested historical finding was obtained, so
++
++
++# Two Smithsonian steel-related catalog records recovered from the public export
++
++**November 4, 2026. COLUMN / PHOTO11; STL01–STL03, B188/H005 and AUD011/AUD016.** Two exact institutional records were acquired and read from the Smithsonian's published Open Access dataset. This advances the earlier accession inquiry beyond search snippets and denied catalog-page requests. The new inputs are catalog representations; the original accession, recovery and transfer files remain missing.
++
++## What the records actually identify
++
++| Existing target | Record and accession | Actual object description | Attribution and limit |
++| --- | --- | --- | --- |
++| **COLUMN** | `nmah_1182951`; catalog **2002.0205.03**, accession **2002.0205** | **Steel Column Stub, World Trade Center**; object name **Column Stub**; overall **38 in × 16 in × 24 in**, also recorded as **96.52 cm × 40.64 cm × 60.96 cm** | The first description calls it a twisted steel box-column stub from upper floors of one WTC building. It says **“It is believed”** to have supported a floor between the **90th and 99th**. The entry does not identify a particular tower or reproduce the basis for that belief. |
++| **PHOTO11** | `nmah_1462757`; catalog **2013.0328.11**, accession **2013.0328** | **WTC Steel #11**; object name **photograph**; materials **paper** and **ink**; overall **17 in × 22 in**, also **43.18 cm × 55.88 cm** | The narrative describes a photographic opportunity in fall **2002** involving steel brought to NIST for its investigation of buildings **1, 2 and 7**. That describes the investigation's scope; it does not identify the photographed steel as WTC 7 material or assign it a NIST specimen number. |
++
++The column record's “Date made” is **“late 1960s/early 1970s.”** The photograph's “date made” is **“2002.”** The accession strings are different fields. None supplies the actual recovery, shipment, receipt or signed transfer date. Preserve these values without treating their different roles as one contradictory date claim.
++
++The column's origin remains a catalog attribution with an explicit uncertainty qualifier. It cannot be joined to W14A/W14B, C12a/b, FEMA Sample 1, a particular NIST specimen, the FBI artifact or a later distributed memorial piece without original marking, recovery and transfer evidence. A photograph's title or catalog suffix likewise does not make it a steel-test specimen.
++
++## Unjoined descriptions and contextual claims
++
++The photograph's **place-made** field says **“United States: District of Columbia, Washington.”** Its narrative says the steel had been brought to **the National Institute of Standards and Technology**. Both are retained at their exact JSON pointers. The export does not establish which production stage “place made” describes, or provide a capture-location/printing/source-piece crosswalk. Original captions, source images and production/accession records could test those possibilities. No location is selected as controlling and no explanation is adopted.
++
++The column entry also contains a general account attributing the tower collapses to aircraft impacts and fire, followed by a floor-truss/exterior-column explanation using **“buckle outward.”** That is the museum catalog's contextual narrative, not an inspected specimen-specific laboratory result or a demonstrated quotation from NIST's final technical report. Its authorship, technical source and revision history were not recovered. Its mechanism wording is retained for a separate technical-source comparison; no engineering adjudication was performed here. The mainstream impact/fire account is preserved alongside the uncertain object attribution rather than selectively presenting only unusual wording.
++
++Both entries say **“Currently not on view.”** That is a statement in the captured export, not a verified visit, physical location, loan, deaccession, destruction or test-availability result. Neither selected record contains a `freetext.creditLine` field or a `descriptiveNonRepeating.online_media` field. Those bounded field absences do not establish that the museum lacks donor files, photographs or other internal records.
++
++## Exact sources and reading scope
++
++The [Smithsonian Open Access repository](https://github.com/Smithsonian/OpenAccess) explicitly links its public AWS export. The captured [NMAH index](https://smithsonian-open-access.s3-us-west-2.amazonaws.com/metadata/edan/nmah/index.txt) lists 256 shard URLs. Its 21,760 bytes have SHA-256 `f3c466f1f0f1482ef71c03e7e6b9bdb6a26d8718927e451c2bfbdc139a8267bf`.
++
++| Record | Exact export entity | Record locator within the preserved entity | Entity SHA-256 |
++| --- | --- | --- | --- |
++| COLUMN | [NMAH/58.txt](https://smithsonian-open-access.s3-us-west-2.amazonaws.com/metadata/edan/nmah/58.txt), **9,780,938 bytes** | **Line 3207**, zero-based byte offset **5,750,284**, **3,881 bytes including its line ending** | `6369ba2936c52b16af0f81dba7fdd0d41cf0467c6aaf8e4e0a6071cca9f9935d` |
++| PHOTO11 | [NMAH/68.txt](https://smithsonian-open-access.s3-us-west-2.amazonaws.com/metadata/edan/nmah/68.txt), **9,603,142 bytes** | **Line 4941**, zero-based byte offset **9,340,279**, **3,054 bytes including its line ending** | `4e24d2de5379a68c21a55f66538bdca061d3930d1ce25f7d12c8f004049d5343` |
++
++The exact matched-line SHA-256 values are respectively `3c19ae0c6bedb5ca011ffbc168b0915701fe4d1e8309bdcc911573d4861f4bde` and `0f17507ee567d495b8adad5938b4e103a3abe534dc7e8024d6828d30be6cf793`. These checksums identify the captured representations; they do not authenticate the steel's historical origin.
++
++The two target entities were acquired **November 4, 2026, 21:54:48–21:55:06 UTC**. Their HTTP `Last-Modified` fields report **November 2, 2026**. That is transport metadata, not a recovery, accession-approval or original-description date. Raw `timestamp`, `lastTimeUpdated`, blank `version`, `hash` and `docSignature` values remain separately recorded; no historical date or digital-signature verification is inferred from them.
++
++To locate the records efficiently, a preliminary 9,775,511-byte `00.txt` shard was acquired. Its first **32 records** were inspected only for identifier/hash structure. In those records, and then the two exact targets, the field named `hash` equals **SHA-1 of the record's `url` string**, using the `edanmdm:` namespace. The two-character prefix selected an already listed shard. Both exact matches confirmed the routing prediction. An initial local plan mistakenly used a hyphen; it was corrected before any target request and remains preserved as an agent planning error, not a source discrepancy.
++
++This routing relationship is an observed result for the sampled and target records, not a universal schema proof. Crucially, a hash of an identifier does **not** authenticate the rest of the record's contents. The separate full-entity and matched-line SHA-256 checks serve a different purpose. The `docSignature` field was not validated as a digital signature.
++
++Only **three shards, 29,159,591 bytes in total**, were downloaded to the verified Intel store. The two target shards' **10,184 lines** were mechanically searched for exact keys; unrelated descriptive records were not semantically reviewed. Only the two matched records' relevant catalog, description, identifier, material, dimensions, place, date, rights and version fields were read. No linked image was acquired or viewed. No full institutional collection census, physical examination, new laboratory test or custody authentication occurred.
++
++## What remains to obtain
++
++1. **COLUMN / accession 2002.0205:** actual acquisition/deed/donor or transfer instrument, recovery and handling records, original marking/condition images, and the curator's worksheet or source for the tentative floor attribution. Seek an explicit NIST or other holder crosswalk rather than inferring one from the title.
++2. **PHOTO11 / accession 2013.0328:** original image/caption sequence, capture and production records, accession documents, NIST permission or project correspondence in public institutional records, and any photograph-to-steel marking/inventory association. The two selected metadata records do not supply these inputs.
++3. **Description/version history:** records explaining the column's tentative attribution, the photograph's place field and the contextual mechanism account, including contrary assessments and earlier descriptions. The earlier 2026 contextual article remains unacquired; its search-result account is not promoted to a body actually read.
++4. **Existing preservation and attribution work:** the native inventory, WJE delivery/comments, original decisions, coupon/intake/transfer records and all previously recorded mismatches remain TODOs. All five tracks and eighteen substantive requirements remain open or partial.
++
++Candidate custodians are the museum's collections/registration and relevant curatorial records, plus any explicitly identified source holder. No contact, request, fee, filing or commitment to obtain records was made. An internal file's existence or contents cannot be inferred from a public catalog field alone.
++
++## Preservation and publication boundary
++
++Earlier catalog/article HTTP 403 responses and snippet-only assessments remain unchanged. They were not retried; the new bodies came from the separately published institutional export. Availability through one channel does not explain another channel's earlier failure. No evidence of deliberate removal or concealment follows.
++
++Both records' metadata-usage fields state **CC0**. This report publishes original notes, selected appropriate factual fields, source locators and verification code. The raw bulk entities, entire matched records, photographs, creator biography/name fields, donor/contact data, reference-document bodies, private case/correspondence/strategy and credentials are excluded. The metadata rights field does not grant permission to reproduce an unacquired photograph.
++
++The native originals and separately named public derivative remain distinct. [EXTRACTED-FIELDS.json](EXTRACTED-FIELDS.json) retains exact selected values and JSON pointers; [SOURCE-PINS.json](SOURCE-PINS.json), [READING-SCOPE.json](READING-SCOPE.json), [OPEN-TODOS.json](OPEN-TODOS.json), [VERIFICATION.json](VERIFICATION.json) and [CHECKLIST.md](CHECKLIST.md) distinguish acquisition, reading, mathematical/integrity checks and historical unknowns. [REVISION.diff](REVISION.diff) is the actual text addition against the immediately preceding preserved Smithsonian review. No old record, attribution or source byte was overwritten. No private push, main merge, force push, history rewrite, deletion, mailbox access or third-party outreach occurred.

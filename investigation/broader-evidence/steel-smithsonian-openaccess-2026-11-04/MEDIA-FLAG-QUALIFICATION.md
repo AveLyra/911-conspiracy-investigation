@@ -1,0 +1,7 @@
+# Media-field qualification — both records are indexed with “Images”
+
+The exact same two preserved export records also contain **`/content/indexedStructured/online_media_type: ["Images"]`**. This positive indexed-media flag belongs beside the earlier observation that neither row contains a `descriptiveNonRepeating.online_media` object. The original README and extracted values remain unchanged; this separately named addition expands the inspected field scope.
+
+The flag does not supply an original image, asset URL, current successful retrieval, image rights, pixels, specimen marking or a source-piece association. Neither image was acquired or viewed. Conversely, a missing inline media object cannot be used to conclude that images do not exist or are unavailable elsewhere. Preserve the indexed flag, missing inline object and unperformed retrieval as distinct observations without selecting one as controlling.
+
+For COLUMN, pursue existing marking/condition images and their accession/custody links. For PHOTO11, pursue the original photographic/caption/production and source-piece records. No actual image availability, original custody or physical origin is newly verified, and the metadata CC0 field does not itself establish image licensing. Both exact line hashes and JSON pointers are in [MEDIA-FLAGS.json](MEDIA-FLAGS.json); the original entity URLs and byte/line locators remain in SOURCE-PINS.json. No source body or record was overwritten, no old failure or other missing-original requirement was closed, and no media was published.

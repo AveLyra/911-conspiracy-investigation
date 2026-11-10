@@ -1,0 +1,619 @@
+diff --git a/investigation/broader-evidence/habs-steel-documentation-2026-10-28/CAPTION-CANDIDATES.csv b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/CAPTION-CANDIDATES.csv
+--- /dev/null
++++ b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/CAPTION-CANDIDATES.csv
+@@ -0,0 +1,3 @@
++parent_item,child_item,component,level,subject,direction,status
++NY-6369-31,NY-6369-A-26,J3/10,B2,blistered paint,west/southwest,caption-correspondence candidate only; images and custody not compared
++NY-6369-29,NY-6369-A-21,J4/12,B2,smoke damage at drop panel,southeast,caption-correspondence candidate only; images and custody not compared
+diff --git a/investigation/broader-evidence/habs-steel-documentation-2026-10-28/CHECKLIST.md b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/CHECKLIST.md
+--- /dev/null
++++ b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/CHECKLIST.md
+@@ -0,0 +1,19 @@
++# Scope, preservation and verification checklist
++
++- [x] Existing five-track scope, ownership and steel/TODO identifiers retained.
++- [x] Three underlying public PDF entities acquired with original bytes/headers/time/hashes.
++- [x] Actual acquisition, selected page-image reading and located-only catalogue scope distinguished.
++- [x] Both photograph-number schemes, date scopes and visible HAER/HABS labels preserved.
++- [x] Caption correspondences explicitly conditional; no independent observation count.
++- [x] WTC6 substructure and WTC7-adjacent ramp distinguished; no unsupported specimen join.
++- [x] Earlier inventory-completion conflicts and missing inventories/receipts carried forward.
++- [x] Contrary possibilities and concrete image/custody/version/calibration tests retained.
++- [x] Exact source/page/line locators, scoped checks and addition diff supplied.
++- [x] One excess failed catalogue open acknowledged; no further catalogue/API request or unchanged failed retry.
++- [ ] Acquire actual photograph entities/negative IDs, field notes and transport/object/sample joins.
++- [ ] Obtain FAA correction/disposition, telephone leg/schema/custody, recorder and materials native inputs; substantive goal incomplete.
++- [ ] Review/approve public publication of this separate package; no push or PR performed.
++
++This is original-record progress, not a historical-cause, misconduct, specimen-temperature or demolition finding. Private case/correspondence, personal identifiers, signatures, raw PDFs/images/full extractions and credentials are excluded from this candidate.
++
++Initial generated CSV used CRLF and failed the Git whitespace check. That draft remains preserved; final formatting uses LF, with identical parsed fields. No commit or push occurred on the failed attempt.
+diff --git a/investigation/broader-evidence/habs-steel-documentation-2026-10-28/CLAIM-LOCATORS.json b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/CLAIM-LOCATORS.json
+--- /dev/null
++++ b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/CLAIM-LOCATORS.json
+@@ -0,0 +1,115 @@
++[
++  {
++    "claim": "HBR01",
++    "source": "H1",
++    "physical_page": 3,
++    "printed": "2",
++    "extraction_file": "EXTRACTIONS-LOCAL.json",
++    "lines": [
++      39,
++      47
++    ],
++    "visible_region": "Project Information, bottom paragraph"
++  },
++  {
++    "claim": "HBR01",
++    "source": "H1",
++    "physical_page": 4,
++    "printed": "3",
++    "extraction_file": "EXTRACTIONS-LOCAL.json",
++    "lines": [
++      4,
++      8
++    ]
++  },
++  {
++    "claim": "HBR02",
++    "source": "H2",
++    "physical_page": 2,
++    "extraction_file": "EXTRACTIONS-LOCAL.json",
++    "lines": [
++      30,
++      31
++    ],
++    "visible_item": "NY-6369-A-21"
++  },
++  {
++    "claim": "HBR02",
++    "source": "H2",
++    "physical_page": 2,
++    "extraction_file": "EXTRACTIONS-LOCAL.json",
++    "lines": [
++      40,
++      41
++    ],
++    "visible_item": "NY-6369-A-26"
++  },
++  {
++    "claim": "HBR02",
++    "source": "H2",
++    "physical_page": 3,
++    "visible_region": "Rotated full-page photograph-key plan; no independent coordinate/scale measurement"
++  },
++  {
++    "claim": "HBR03",
++    "source": "H3",
++    "physical_page": 3,
++    "extraction_file": "PARENT-CAPTIONS-EXTRACTION-LOCAL.json",
++    "lines": [
++      15,
++      21
++    ],
++    "visible_items": [
++      "NY-6369-29",
++      "NY-6369-31"
++    ]
++  },
++  {
++    "claim": "HBR04",
++    "source": "H1",
++    "physical_page": 18,
++    "printed": "17",
++    "extraction_file": "EXTRACTIONS-LOCAL.json",
++    "lines": [
++      10,
++      25
++    ]
++  },
++  {
++    "claim": "HBR05",
++    "source": "Earlier J05",
++    "physical_page": 3,
++    "url": "https://renewnyc.org/attachments/content/pdfs/S106_Report_January_to_June_2005.pdf#page=3",
++    "reading": "Earlier inspected page reused; no new delivery/receipt or identity record acquired"
++  },
++  {
++    "claim": "HBR06",
++    "source": "H2",
++    "physical_pages": [
++      1,
++      2,
++      3
++    ],
++    "extraction_file": "EXTRACTIONS-LOCAL.json",
++    "page_1_line": 5,
++    "page_2_line": 15,
++    "page_3": "Handwritten HABS notation; visual reading retained separately from extraction"
++  },
++  {
++    "claim": "HBR07",
++    "source": "H3",
++    "physical_page": 1,
++    "extraction_file": "PARENT-CAPTIONS-EXTRACTION-LOCAL.json",
++    "lines": [
++      8,
++      17
++    ]
++  },
++  {
++    "claim": "HBR08",
++    "source": "Indexed LOC ny2014 record",
++    "url": "https://www.loc.gov/item/ny2014/",
++    "local_response": "SEARCH-01-LOCAL.json and SEARCH-02-LOCAL.json",
++    "qualification": "Full catalogue response not acquired; not a newly read field-note entity"
++  }
++]
+diff --git a/investigation/broader-evidence/habs-steel-documentation-2026-10-28/OBSERVATIONS.json b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/OBSERVATIONS.json
+--- /dev/null
++++ b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/OBSERVATIONS.json
+@@ -0,0 +1,91 @@
++[
++  {
++    "id": "HBR01",
++    "kind": "Source content",
++    "source": "H1",
++    "physical_pages": [
++      3,
++      4
++    ],
++    "observation": "Names April 2005 PATH Terminal agreement and June 2004\u2013March 2005 photography.",
++    "unknown": "Actual signed agreement, source manifests and exact August 2005 submission identity."
++  },
++  {
++    "id": "HBR02",
++    "kind": "Caption content, not photograph validation",
++    "source": "H2",
++    "physical_pages": [
++      1,
++      2,
++      3
++    ],
++    "observation": "Child entries A-26: J3/10 B2 blistered paint; A-21: J4/12 B2 smoke; page 3 photograph key.",
++    "unknown": "Actual pixels/negatives, calibrated damage/temperature and component custody."
++  },
++  {
++    "id": "HBR03",
++    "kind": "Conditional derived correspondence",
++    "source": "H2/H3",
++    "physical_pages": {
++      "H2": [
++        2
++      ],
++      "H3": [
++        3
++      ]
++    },
++    "observation": "Two corresponding descriptions under different photograph IDs; original IDs preserved.",
++    "unknown": "Same photograph/negative/exposure and source dependence beyond the documentary overlap."
++  },
++  {
++    "id": "HBR04",
++    "kind": "Source spatial distinction",
++    "source": "H1",
++    "physical_pages": [
++      18
++    ],
++    "observation": "6 WTC substructure is separate from vehicle ramp described under 7 WTC.",
++    "unknown": "Any candidate-specific building/region/sample association."
++  },
++  {
++    "id": "HBR05",
++    "kind": "Unperformed identity test",
++    "source": "H2/H3 and earlier J05",
++    "observation": "Caption locations can target a comparison with the reported transported remnants.",
++    "unknown": "No source has joined those pictured regions to the four transported objects or NIST candidate specimens."
++  },
++  {
++    "id": "HBR06",
++    "kind": "Unresolved publication-label variation",
++    "source": "H2",
++    "physical_pages": [
++      1,
++      2,
++      3
++    ],
++    "conflicting_values": [
++      "HAER NY-6369-A",
++      "HABS NY-6369-A"
++    ],
++    "unknown": "Cause/stage of variation; no preferred label or motive selected."
++  },
++  {
++    "id": "HBR07",
++    "kind": "Different source-date scopes preserved",
++    "source": "H1/H2/H3",
++    "observed_dates": [
++      "April 2005 agreement",
++      "June 2004\u2013March 2005 photography in historical data",
++      "June 2004 caption heading and child photographer entries",
++      "September 17, 2001 specific parent aerial entry"
++    ],
++    "unknown": "Full original assembly/version and exposure records; not automatically an internal contradiction."
++  },
++  {
++    "id": "HBR08",
++    "kind": "Located-only catalogue lead",
++    "source": "Indexed LOC ny2014 representation",
++    "observation": "N1200 field material and 103 photographs listed; catalogue/API fetches failed.",
++    "unknown": "Native catalogue response and actual field-material contents, availability and custody."
++  }
++]
+diff --git a/investigation/broader-evidence/habs-steel-documentation-2026-10-28/OPEN-RECORDS.md b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/OPEN-RECORDS.md
+--- /dev/null
++++ b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/OPEN-RECORDS.md
+@@ -0,0 +1,10 @@
++# Actual inputs still needed
++
++1. **LOC/NPS/document creators:** exact NY-6369-31, NY-6369-A-26, NY-6369-29 and NY-6369-A-21 photographic entities, original negative/exposure identifiers, dated contact sheets, caption/numbering/version history and photograph-key source. Compare images and labels without inferring identical negatives from similar prose.
++2. **LOC Prints and Photographs/NPS actual field-record holder:** catalogue-listed N1200 material, accession/custody and manifest; content is unknown. A catalogue lead is not already acquired field notes.
++3. **Port Authority/SHPO/LMDC/actual receiving repository:** original April 2005 Permanent WTC PATH Terminal agreement, distinct April 2004 programmatic-agreement records, August 2005 submission manifest/enclosures and receipt/accession. Test which exact set/version was delivered; no current custody claim is assumed.
++4. **Original site/museum/inventory custodians:** selection, marking/cutting, transport, Hangar 17 receipt/object records and later sample/conservation histories for the reported smoke-scarred and blistered-paint remnants. Test both a successful identification and exclusion of the proposed photographic association.
++5. **NIST and original field/transfer custodians:** actual W14A/B, C12a/b, Sample1 and related native intake/alias/building/region/transfer/attribution records. These captions do not recover those missing worksheets or turn a WTC6 component into WTC7.
++6. **Inventory/version holders:** actual supplied 2004 listing, 2006 and later editions and deliveries remain missing. Keep October2004/2006 reporting side by side; this route has not adjudicated their cause.
++
++A caption may be inaccurate or photograph a different region/object. Even an authenticated image match would still need cut/transfer/sample records and valid calibration for a scientific interpretation. Missing records do not establish destruction or concealment. No request, contact, fee, destructive examination or physical experiment is authorized or performed here.
+diff --git a/investigation/broader-evidence/habs-steel-documentation-2026-10-28/READING-SCOPE.json b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/READING-SCOPE.json
+--- /dev/null
++++ b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/READING-SCOPE.json
+@@ -0,0 +1,102 @@
++{
++  "acquired_pdf_entities": 3,
++  "acquired_pdf_pages": 33,
++  "acquired_pdf_bytes": 1417260,
++  "actual_page_images_viewed": [
++    {
++      "source": "HABS-NY6369-data.pdf",
++      "physical_page": 1,
++      "sha256": "1dad5b51fa0a03e231fb2315d5417894e9accd3096365812a2bc8471ea0afad2"
++    },
++    {
++      "source": "HABS-NY6369-data.pdf",
++      "physical_page": 3,
++      "sha256": "e96371d47d1786960a60b3c6ce99e7a03e693598f191d576b4b990e951794a8c"
++    },
++    {
++      "source": "HABS-NY6369-data.pdf",
++      "physical_page": 4,
++      "sha256": "7bfd2e571b7126abbcbab2f6e35748d292ed368295c57e805ea608d4a330424c"
++    },
++    {
++      "source": "HABS-NY6369-data.pdf",
++      "physical_page": 13,
++      "sha256": "43c1749bc7e2cfa294d63858b99702861b942aa524b0aae0e5a2a62cecae5f09"
++    },
++    {
++      "source": "HABS-NY6369-data.pdf",
++      "physical_page": 15,
++      "sha256": "e8ab5d608e6b39ccd1e80374cab003317f135a60c3f39ded0d02235e7b079421"
++    },
++    {
++      "source": "HABS-NY6369-data.pdf",
++      "physical_page": 18,
++      "sha256": "cd4cffe1a703cbefb6f82f3fe89d517b3e019b42672dd9fc9831efa3f8fd07f6"
++    },
++    {
++      "source": "HABS-NY6369-data.pdf",
++      "physical_page": 22,
++      "sha256": "8de77c43ebf7883f8e60ed4ff179157dfafee0838235e1aa32434fc8ec8f2891"
++    },
++    {
++      "source": "HABS-NY6369A-captions.pdf",
++      "physical_page": 1,
++      "sha256": "ab679ec889376454b708dcebf36a53dec8f695744802af0a4479fa54688f477e"
++    },
++    {
++      "source": "HABS-NY6369A-captions.pdf",
++      "physical_page": 2,
++      "sha256": "134c1f9fa8df57f1d10113f7c7082664bc17588ed5f22119f92465e958d00633"
++    },
++    {
++      "source": "HABS-NY6369A-captions.pdf",
++      "physical_page": 3,
++      "sha256": "445674f127c33af528f3772bbc01eeab07648f1b7f4811721759897d788f4b4b"
++    },
++    {
++      "source": "HABS-NY6369-captions.pdf",
++      "physical_page": 1,
++      "sha256": "77eb3076aa599e996be51738fa94be7feed4d77dbba90b1a3020aac127f70b71"
++    },
++    {
++      "source": "HABS-NY6369-captions.pdf",
++      "physical_page": 3,
++      "sha256": "8c6e474a9d9baa963feafac73c2e6ca4990f7fc31b477cbc1838986177934bd7"
++    }
++  ],
++  "actual_page_images_viewed_count": 12,
++  "unread_pages": {
++    "H1": [
++      2,
++      5,
++      6,
++      7,
++      8,
++      9,
++      10,
++      11,
++      12,
++      14,
++      16,
++      17,
++      19,
++      20,
++      21
++    ],
++    "H2": [],
++    "H3": [
++      2,
++      4,
++      5,
++      6,
++      7,
++      8
++    ]
++  },
++  "extraction": "pypdf full text saved locally as a locator; no new OCR; original extractions not rewritten",
++  "individual_photographs_inspected": 0,
++  "catalogue": "Located via indexed representation only; direct opens failed",
++  "physical_or_thermal_test": false,
++  "authored_pdf_export": false,
++  "earlier_J05_J06": "Previous exact source readings reused explicitly; not newly read in full"
++}
+diff --git a/investigation/broader-evidence/habs-steel-documentation-2026-10-28/README.md b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/README.md
+--- /dev/null
++++ b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/README.md
+@@ -0,0 +1,35 @@
++# Steel documentation recovered: precise photographic locators, with specimen identity still open
++
++October 28, 2026. Existing STL01–STL04 / B188-H005 / AUD011-AUD016 / SPT01–SPT08 / SR01; this follows IDR06. The advance is acquisition of underlying historical-documentation files, rather than another implementation report. All earlier sources and conflicting values remain unchanged.
++
++## What was acquired and read
++
++Three exact public Library of Congress PDF entities are preserved: the 22-page [NY-6369 historical data](https://tile.loc.gov/storage-services/master/pnp/habshaer/ny/ny2000/ny2014/data/ny2014data.pdf), three-page [NY-6369-A caption index and photograph key](https://tile.loc.gov/storage-services/master/pnp/habshaer/ny/ny2300/ny2396/data/ny2396cap.pdf), and eight-page [NY-6369 caption index](https://tile.loc.gov/storage-services/master/pnp/habshaer/ny/ny2000/ny2014/data/ny2014cap.pdf). Total: **33 PDF pages / 1,417,260 bytes acquired; 12 selected page images inspected**. Acquisition and page-image reading are different scopes. The underlying photograph entities, negatives and unprocessed field material were not acquired or inspected. [Hashes and access records](SOURCE-PINS.json); [actual reading scope](READING-SCOPE.json).
++
++## Location-specific records now available
++
++The child caption index, physical page 2, identifies a blistered-paint detail as **NY-6369-A-26, column J3/10, level B2**, and a smoke-damage detail as **NY-6369-A-21, column J4/12, level B2**. Its third page contains a photograph-key plan. These are authored descriptions and locators; we have not checked the photographs against those captions or independently measured temperature, damage or causation. HBR02.
++
++The parent index, physical page 3, describes corresponding-looking details under **NY-6369-31** and **NY-6369-29**. Both source identifiers, wording and their context remain separate. The proposed two-row [caption correspondence](CAPTION-CANDIDATES.csv) is a retrieval aid based on matching component/level/subject/direction descriptions; it does not authenticate identical negatives, exposures, edits, pixels or a common custody chain. The two indexes must not be counted as independent physical observations. HBR03.
++
++The historical data's physical page 18 / printed 17 places the remnant substructure under **6 WTC**, while separately describing a vehicle ramp connected to Barclay Street under **7 WTC**. Adjacent geography does not turn a WTC 6 column into a WTC 7 specimen. It also distinguishes surviving pre-attack components from recovery-era tiebacks. HBR04.
++
++The [earlier July 2005 implementation report](https://renewnyc.org/attachments/content/pdfs/S106_Report_January_to_June_2005.pdf#page=3) describes a smoke-scarred column and a blistered-paint column among four remnants moved to Hangar 17. The new grid-level captions make a comparison possible; **they do not identify either photographed column as either transported object**. Actual selection, cut/marking, removal, transport, receipt and object-number records are still required. No join to W14A/B, C12a/b, FEMA Sample 1 or Column 79 is established. HBR05.
++
++## Version, date and label distinctions preserved
++
++The data's physical pages 3–4 / printed 2–3 cite an **April 2005 Permanent WTC PATH Terminal Memorandum of Agreement** and photography spanning **June 2004–March 2005**. The parent caption index's first page has a **June 2004** heading, while entry NY-6369-2 expressly dates an aerial photograph **September 17, 2001**. The child index gives June 2004 photographer entries. Preserve these source-specific descriptions; do not impose one date on every image or infer a fabricated photograph from different scopes. The actual agreement, original manifests and version history would test how the sets were assembled. HBR01/HBR07.
++
++The child PDF's first-page identifier visibly says **HAER NY-6369-A** under a Historic American Buildings Survey heading; its second-page identifier and handwritten plan notation use **HABS**. Both are preserved. This is a source-label variation relevant to retrieval, not evidence of a changed specimen, altered photograph or concealment. Editorial labeling or different cataloguing stages are untested possibilities, not a selected explanation. HBR06.
++
++The data's agreement reference is retained beside the separate April 2004 LMDC programmatic-agreement trail. Their titles/parties/scopes are not silently merged. Nor does retrieving these PDFs authenticate them as the exact copies reportedly submitted to SHPO in August 2005. The earlier **October 2004 versus 2006 inventory-completion accounts remain unresolved**, and no actual inventory edition or receipt was acquired in this unit.
++
++The [catalogue record](https://www.loc.gov/item/ny2014/) was located through an indexed representation which lists unprocessed field material **N1200** and 103 photographs. Direct catalogue/API opens failed in this session; the full catalogue response, field material and 103-photo corpus were not acquired. Those are located targets, not held/read evidence. HTTP Last-Modified dates are retained as response metadata, not source creation or submission dates. HBR08.
++
++## What this permits next
++
++The strongest substantive route is to compare the actual identified photographs and field material with the removal/transport/object registers, using component and region identifiers. A successful join could recover a specimen's former location and preservation history; a mismatch could exclude the proposed link. Similar wording alone proves neither outcome. Obtain the named agreement and actual submission/receipt manifests to test edition identity.
++
++No native inventory, NIST attribution worksheet, paint calibration, coupon-to-region record or physical measurement was recovered. A caption's blistering/smoke description is not a calibrated thermal result or evidence of a particular incendiary. [Open records and discriminating tests](OPEN-RECORDS.md).
++
++Documentary source/locator checks and the precise addition diff accompany this report. Earlier reports, shared registers and all five original-record/testing requirements remain open. Raw PDFs, rasters, full extractions, private case/correspondence and personal data are excluded from this publication candidate. It is local; no public push, PR, outreach, request, fee, source overwrite or history rewrite occurred. [Checklist](CHECKLIST.md), [locators](CLAIM-LOCATORS.json), [verification](RESULTS.json), [exact additions](TEXT-CHANGES.diff).
+diff --git a/investigation/broader-evidence/habs-steel-documentation-2026-10-28/RESULTS.json b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/RESULTS.json
+--- /dev/null
++++ b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/RESULTS.json
+@@ -0,0 +1,64 @@
++{
++  "entity_checks": [
++    {
++      "id": "H1",
++      "bytes": 1237998,
++      "pages": 22,
++      "sha256": "b838d772bb179ace302a705442646217a4691e7d525ea72ef7f88b37e79ad22c",
++      "passed": true
++    },
++    {
++      "id": "H2",
++      "bytes": 125602,
++      "pages": 3,
++      "sha256": "a8e5fd1f14865165d150cfcc233deb42e08101c7e6732931802ca121bb205900",
++      "passed": true
++    },
++    {
++      "id": "H3",
++      "bytes": 53660,
++      "pages": 8,
++      "sha256": "2363e7c07c34087f955b2f9c59f0ebe7bc4296252e2b56581e418273692ee9e0",
++      "passed": true
++    }
++  ],
++  "source_anchor_checks": [
++    {
++      "id": "H1-agreement",
++      "passed": true
++    },
++    {
++      "id": "H1-photography-range",
++      "passed": true
++    },
++    {
++      "id": "H2-visible-labels",
++      "passed": true
++    },
++    {
++      "id": "H2-column-details",
++      "passed": true
++    },
++    {
++      "id": "H3-parent-column-details",
++      "passed": true
++    },
++    {
++      "id": "H3-specific-earlier-date",
++      "passed": true
++    }
++  ],
++  "all_passed": true,
++  "pypdf_version": "6.10.0",
++  "scope": "PDF byte/page identity and limited text anchors. Whitespace removed only for check navigation; originals and extraction representations preserved. Manual page-image reading is separate.",
++  "not_performed": [
++    "photograph/negative identity comparison",
++    "actual SHPO submission/receipt match",
++    "transport-object/specimen custody join",
++    "temperature/calibration test",
++    "historical cause or intent test"
++  ],
++  "candidate_caption_pairs": 2,
++  "authenticated_photo_pairs": 0,
++  "specimen_joins_established": 0
++}
+diff --git a/investigation/broader-evidence/habs-steel-documentation-2026-10-28/REVISION-STATUS.json b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/REVISION-STATUS.json
+--- /dev/null
++++ b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/REVISION-STATUS.json
+@@ -0,0 +1,30 @@
++{
++  "kind": "Additive report and source/locator/conditional-caption files; previous report unchanged",
++  "predecessors": [
++    {
++      "relative": "steel-inventory-delivery-roots-2026-10-28/public-candidate/README.md",
++      "sha256": "1d19ebe4e93dc1978832fe8ef644f30d1ae968c6a63f9871e4dd6a1ced79c3d0",
++      "changed": false
++    },
++    {
++      "relative": "steel-inventory-delivery-roots-2026-10-28/public-candidate/OPEN-RECORDS.md",
++      "sha256": "1a7d813c04e2ca777198eeccb3af1c1b83fc73e7654091df7795f57c6628ebe6",
++      "changed": false
++    },
++    {
++      "relative": "original-records-work-plan-2026-10-27/WORK-PLAN.md",
++      "sha256": "d23c01a77bcc468f06faabb13b708df8032a6870586ec539c59edc9e0ae3d7cb",
++      "changed": false
++    },
++    {
++      "relative": "original-records-work-plan-2026-10-27/DEFERRED-INPUT-TODOS-2026-10-28.md",
++      "sha256": "2514628a6249895a83d1d72adeeb48674d218973f9a5228cb569fd953200efb7",
++      "changed": false
++    }
++  ],
++  "shared_registers_changed": false,
++  "source_values_replaced": false,
++  "text_diff": "New text additions against /dev/null; no prior source or report text overwritten",
++  "pdf_layout": "No authored PDF; actual source page-image inspection documented separately",
++  "format_revision": "Initial CSV CRLF draft and failed precommit receipt preserved locally; final CSV uses LF with identical parsed fields. No source values or earlier document overwritten."
++}
+diff --git a/investigation/broader-evidence/habs-steel-documentation-2026-10-28/SOURCE-PINS.json b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/SOURCE-PINS.json
+--- /dev/null
++++ b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/SOURCE-PINS.json
+@@ -0,0 +1,50 @@
++[
++  {
++    "id": "H1",
++    "file": "HABS-NY6369-data.pdf",
++    "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/ny/ny2000/ny2014/data/ny2014data.pdf",
++    "access_utc": "2026-10-28T14:43:42.681374+00:00",
++    "status": 200,
++    "bytes": 1237998,
++    "sha256": "b838d772bb179ace302a705442646217a4691e7d525ea72ef7f88b37e79ad22c",
++    "pages": 22,
++    "response_headers": {
++      "Content-Type": "application/pdf",
++      "Content-Length": "1237998",
++      "Last-Modified": "Mon, 19 Oct 2015 17:18:10 GMT"
++    },
++    "relationship": "Library of Congress-hosted digital documentation entity; not a native inventory, authenticated delivery receipt or physical specimen."
++  },
++  {
++    "id": "H2",
++    "file": "HABS-NY6369A-captions.pdf",
++    "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/ny/ny2300/ny2396/data/ny2396cap.pdf",
++    "access_utc": "2026-10-28T14:43:50.611410+00:00",
++    "status": 200,
++    "bytes": 125602,
++    "sha256": "a8e5fd1f14865165d150cfcc233deb42e08101c7e6732931802ca121bb205900",
++    "pages": 3,
++    "response_headers": {
++      "Content-Type": "application/pdf",
++      "Content-Length": "125602",
++      "Last-Modified": "Mon, 19 Oct 2015 17:18:10 GMT"
++    },
++    "relationship": "Library of Congress-hosted digital documentation entity; not a native inventory, authenticated delivery receipt or physical specimen."
++  },
++  {
++    "id": "H3",
++    "file": "HABS-NY6369-captions.pdf",
++    "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/ny/ny2000/ny2014/data/ny2014cap.pdf",
++    "access_utc": "2026-10-28T14:45:06.159581+00:00",
++    "status": 200,
++    "bytes": 53660,
++    "sha256": "2363e7c07c34087f955b2f9c59f0ebe7bc4296252e2b56581e418273692ee9e0",
++    "pages": 8,
++    "response_headers": {
++      "Content-Type": "application/pdf",
++      "Content-Length": "53660",
++      "Last-Modified": "Mon, 29 Aug 2011 15:49:43 GMT"
++    },
++    "relationship": "Library of Congress-hosted digital documentation entity; not a native inventory, authenticated delivery receipt or physical specimen."
++  }
++]
+diff --git a/investigation/broader-evidence/habs-steel-documentation-2026-10-28/verify_sources.py b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/verify_sources.py
+--- /dev/null
++++ b/investigation/broader-evidence/habs-steel-documentation-2026-10-28/verify_sources.py
+@@ -0,0 +1,56 @@
++"""Verify pinned PDFs and limited textual anchors; no historical or physical authentication."""
++import argparse
++import hashlib
++import json
++import re
++from pathlib import Path
++import pypdf
++
++def compact(text):
++    return re.sub(r"\s+", "", text)
++
++def verify(pins, supplied):
++    entities=[]
++    readers={}
++    for row in pins:
++        path=supplied[row['id']]
++        data=path.read_bytes()
++        reader=pypdf.PdfReader(path)
++        ok=(data.startswith(b'%PDF-') and len(data)==row['bytes']
++            and hashlib.sha256(data).hexdigest()==row['sha256']
++            and len(reader.pages)==row['pages'])
++        entities.append({'id':row['id'],'bytes':len(data),'pages':len(reader.pages),
++                         'sha256':hashlib.sha256(data).hexdigest(),'passed':ok})
++        readers[row['id']]=reader
++    def text(source,page):
++        return compact(readers[source].pages[page-1].extract_text() or '')
++    checks=[
++        ('H1-agreement', 'inApril2005' in text('H1',3)),
++        ('H1-photography-range', 'betweenJune2004andMarch2005' in text('H1',4)),
++        ('H2-visible-labels', 'HAERNY-6369-A' in text('H2',1) and 'HABSNY-6369-A' in text('H2',2)),
++        ('H2-column-details', all(x in text('H2',2) for x in ['heatblisteredpaintoncolumnJ3/10,LevelB2','columnJ4/12atLevelB2','smokedamageatdroppanel'])),
++        ('H3-parent-column-details', all(x in text('H3',3) for x in ['NY-6369-31','NY-6369-29','columnJ3/10.LevelB2','columnJ4/12atlevelB2'])),
++        ('H3-specific-earlier-date', 'September17,2001' in text('H3',1) and 'June2004' in text('H3',1)),
++    ]
++    return {'entity_checks':entities,'source_anchor_checks':[{'id':name,'passed':ok} for name,ok in checks],
++            'all_passed':all(r['passed'] for r in entities) and all(ok for _,ok in checks),
++            'pypdf_version':pypdf.__version__,
++            'scope':'PDF byte/page identity and limited text anchors. Whitespace removed only for check navigation; originals and extraction representations preserved. Manual page-image reading is separate.',
++            'not_performed':['photograph/negative identity comparison','actual SHPO submission/receipt match','transport-object/specimen custody join','temperature/calibration test','historical cause or intent test'],
++            'candidate_caption_pairs':2,'authenticated_photo_pairs':0,'specimen_joins_established':0}
++
++def main():
++    parser=argparse.ArgumentParser()
++    parser.add_argument('--input',action='append',required=True,help='H1=path, H2=path, H3=path')
++    args=parser.parse_args()
++    supplied=dict(item.split('=',1) for item in args.input)
++    assert set(supplied)=={'H1','H2','H3'}
++    supplied={key:Path(path) for key,path in supplied.items()}
++    pins=json.loads((Path(__file__).parent/'SOURCE-PINS.json').read_text())
++    result=verify(pins,supplied)
++    print(json.dumps(result,indent=2))
++    if not result['all_passed']:
++        raise SystemExit(1)
++
++if __name__=='__main__':
++    main()

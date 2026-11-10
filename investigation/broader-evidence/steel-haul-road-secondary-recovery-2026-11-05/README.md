@@ -1,0 +1,39 @@
+# West Street haul-road debris recovery and the January 2007 oversight votes
+
+November 5, 2026 · STL01 / STL02 · Public derivative of the separately preserved source study
+
+This unit follows a distinct post-cleanup route for debris from the World Trade Center site. Earlier work traced 2001 loads toward Fresh Kills and steel recyclers. This unit starts with the October 2006 excavation reports and checks which locations, batches and later receiving records could matter to steel provenance. The December 2001 command reports and the Beverly Hills transfer remain separate. [Earlier Fresh Kills route study](https://github.com/AveLyra/911-conspiracy-investigation/blob/eefbdc3c134599b89ad3942590aedc37777667f4/investigation/broader-evidence/steel-nyc-debris-routing-daily-reports-2026-11-05/README.md)
+
+## Source observations
+
+| Record | What it records |
+| --- | --- |
+| DDC and Lower Manhattan Construction Command Center report, submitted October 27, 2006, printed pp. 1–4 and 6–7, attached map | The report describes a Con Edison manhole opened October 18 and two separate material routes: larger debris left at the site for a Port Authority contractor and smaller debris moved by vacuum truck to a Con Edison facility. It reports recovery of human remains from both routes. It distinguishes West Street proper from the adjacent haul road, marks two haul-road areas on the map and recommends grid excavations at the haul road and 140 Liberty Street. Recommendation 2 calls for visual inspection of selected structures with OCME sifting when debris is found. |
+| Mayor's release PR-379-06, dated October 27, 2006 | Announces acceptance and describes a broader instruction for selected subterranean locations: remove and sift all material from those locations. This is a reported instruction. The release links directly to the DDC report. |
+| Manhattan Community Board 1 minutes, January 16, 2007, special executive session | Records a presentation describing a planned search of **760 manholes**, sifting at **11 Water Street** and an announcement dated **10.26.06**. Preserve that date beside the October 27 date on the press release and DDC report. The minutes may refer to a separate announcement. |
+| NYC OEM, *The Sit Rep*, July 2007, pp. 1–2 | Reports grid excavation, test trenches **two to eight feet** deep, debris collected from **over 600 underground structures**, bulk screening at the Brooklyn **39th Street** site and hand sifting of the retained size fraction at **11 Water Street**. The 760 and over-600 figures have different labels, dates and scopes. Neither establishes the denominator or completion rate. |
+
+Sources and exact indexed locators appear in [SOURCE-PINS.json](SOURCE-PINS.json). The haul-road map caption identifies a May 2004 aerial image and a 10/26/2006 print date. Those map dates and the date of the public release remain separate. [DDC report and map](https://www.nyc.gov/html/om/pdf/ddc_report.pdf) · [Mayor's release](https://www.nyc.gov/html/om/html/2006b/pr379-06.html) · [Board minutes](https://www.nyc.gov/assets/manhattancb1/downloads/pdf/full-board-meeting-minutes/FBM_Minutes_07-01-16.pdf#page=1) · [OEM newsletter](https://a860-gpp.nyc.gov/downloads/zp38wf09d?locale=en#page=2)
+
+## Unresolved vote and outside-review records
+
+The minutes report **“16 In Favor, 23 Against 0 Abstentions 0 Recusals”** for the failed motion in opposition to calling in the Joint POW/MIA Accounting Command (JPAC) and **“23 In Favor 11 Against 5 Abstentions 0 Recusals”** for the successful motion to call it in. The resolution packet has two same-subject entries. The first gives **“23 In Favor 11 Opposed 5 abstained 0 Recused”**. The second is labeled **“DID NOT PASS”** and gives **“23 In Favor 11 Opposed 5 Abstained 0 Recused”**. Preserve both texts and their order. Both packet entries ask the Mayor to make a formal federal request for JPAC assistance and call for disclosure of protocols and boundaries. The packet repeats the successful motion's tally under a version marked as failed. Its relationship to the two motions in the minutes remains unresolved. [Minutes, indexed lines 62–65](https://www.nyc.gov/assets/manhattancb1/downloads/pdf/full-board-meeting-minutes/FBM_Minutes_07-01-16.pdf) · [Resolution packet, indexed lines 630–697](https://www.nyc.gov/assets/manhattancb1/downloads/pdf/resolutions/07-01-16.pdf)
+
+The minutes also record an answer saying JPAC lacked available resources and a contrary public comment about an October 20 letter reportedly expressing Defense Department willingness to provide assistance. The latter is a claim in the minutes. The bounded exact-date/title search located the board resolution and a separate July 2006 Senate appeal. The October letter, distribution and any deployment decision remain open. [Minutes, indexed lines 32–51](https://www.nyc.gov/assets/manhattancb1/downloads/pdf/full-board-meeting-minutes/FBM_Minutes_07-01-16.pdf) · [July 25 Senate release](https://www.schumer.senate.gov/newsroom/press-releases/schumer-9-11-families-call-for-expert-army-unit-to-search-for-and-identify-bone-and-other-human-remains-at-ground-zero)
+
+## What the records can test
+
+**Directly supported:** City documents identify the later excavation locations and the reported screening and hand-sifting stages. The report and the public announcement show a difference in stated scope for underground structures. The board packet and minutes are separate municipal records of the same meeting, so their shared successful tally is a cross-check of the paperwork.
+
+**Open inference:** A dated trench or utility-structure record tied to the 39th Street inbound log, trommel fraction inventory and subsequent disposition might identify recoverable non-biological material. The documents reviewed concern recovery of human remains. They identify no structural steel member, specimen number, source building, metallurgical examination or steel disposition for the later loads. The haul-road extension concerns the completeness of the earlier cleanup in specific locations. It supplies no basis for an inference about concealment or collapse mechanism.
+
+## Deferred originals and discriminating checks
+
+- [ ] Obtain the City implementation order, executed OCME search/sifting protocol, grid IDs and maps, and utility structure registry. Match 760 planned manholes and over 600 reported underground structures by source population, date and facility type before comparing coverage.
+- [ ] Obtain excavation unit and trench sheets, material manifests, Brooklyn intake/transfer and screening records, and any non-biological material inventory and final disposition records. Test the joins using a common batch, load or bag identifier and date. Keep 39th Street bulk screening and 11 Water Street hand screening as separate steps.
+- [ ] Obtain the original signed minutes, roll-call sheets, approved motion text and revision/transmittal records. Compare the exact motions, votes and packet labels. Obtain the October 20 JPAC/DoD letter cited in the minutes and any official city request, reply or assignment. The dated announcement behind the minutes' October 26 entry also remains open.
+- [ ] Retain the prior custody and specimen-identification TODOs, including Beverly Hills clerk certification and approved attachments. A later material batch needs its own evidence before a join to earlier yard, NIST or memorial records.
+
+## Access and scope
+
+Compared relevant indexed passages of five official city records, the map labels and the separate Senate release. The direct source downloads attempted for DDC, mayoral release, minutes and OEM returned HTTP 403 after a sandboxed DNS failure. The resolution was read through the public PDF index. Native file SHA-256 and full page-face inspection remain deferred. This was a source and record-locator comparison. No load-level or item-level test was performed.

@@ -1,0 +1,52 @@
+diff --git a/publication/READING-SCOPE.json b/publication-v2/READING-SCOPE.json
+index cf8649d7..00edcdb7 100644
+--- a/publication/READING-SCOPE.json
++++ b/publication-v2/READING-SCOPE.json
+@@ -13 +13 @@
+-    1,
++    "Header (unnumbered)",
+@@ -43 +43,2 @@
+-  "no_unseen_attachment_or_later_FD302_reading_claim": true
++  "no_unseen_attachment_or_later_FD302_reading_claim": true,
++  "page_numbering_precision": "First page is the unnumbered EC header; ordinal1 is not a printed source reading."
+diff --git a/publication/README.md b/publication-v2/README.md
+index f2a19308..2dc0a2d9 100644
+--- a/publication/README.md
++++ b/publication-v2/README.md
+@@ -7 +7 @@ October 31, 2026, America/New_York; reading November 1 UTC. **TEL01–TEL04 / AU
+-The [public PDF mirror](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=30) is a third-party reproduction of FBI records, acquired October 27 UTC: **2,997,662 bytes**, SHA-256 **e3cf374351cb753d1297433f86bb5807c56cb42a6dc69837a9df02dd0d54f4aa**. That hash identifies the preserved mirror body, not native agency custody or original media. All **eight EC pages**, physical **30–37**, internal **1–8**, footers **000000429–000000436**, were visually read at **140 dpi**. The other 65 compilation pages were not comprehensively read. Existing ordinary text served only as a locator; no new OCR, hidden/redacted-text recovery or fresh PDF download.
++The [public PDF mirror](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=30) is a third-party reproduction of FBI records, acquired October 27 UTC: **2,997,662 bytes**, SHA-256 **e3cf374351cb753d1297433f86bb5807c56cb42a6dc69837a9df02dd0d54f4aa**. That hash identifies the preserved mirror body, not native agency custody or original media. All **eight EC pages**, physical **30–37**, a header page followed by printed internal pages **2–8**, footers **000000429–000000436**, were visually read at **140 dpi**. The other 65 compilation pages were not comprehensively read. Existing ordinary text served only as a locator; no new OCR, hidden/redacted-text recovery or fresh PDF download.
+@@ -13 +13 @@ The initial plan mistakenly assumed the first five identified pages completed th
+-**Physical 30/internal 1** prints **09/13/2001**, From **Charlotte / Raleigh Resident Agency**, case **265D-NY-280350-CE (Pending)**. It references **265D-NY-280350 Serial 187**, **DL267**, **CE66** and **CE233**. Serial 187 is a referenced lead/record, not proved to be this EC's own serial. Pending is a historical label, not present case status. The administrative paragraph says Charlotte retained the original evidence it obtained. It addresses the Director's Office/SIOC and several field offices; address-list inclusion is not demonstrated receipt. P01.
++**Physical 30/header page** prints **09/13/2001**, From **Charlotte / Raleigh Resident Agency**, case **265D-NY-280350-CE (Pending)**. It references **265D-NY-280350 Serial 187**, **DL267**, **CE66** and **CE233**. Serial 187 is a referenced lead/record, not proved to be this EC's own serial. Pending is a historical label, not present case status. The administrative paragraph says Charlotte retained the original evidence it obtained. It addresses the Director's Office/SIOC and several field offices; address-list inclusion is not demonstrated receipt. P01.
+@@ -17 +17 @@ The initial plan mistakenly assumed the first five identified pages completed th
+-The inventory on **physical 30–32/internal 1–3** identifies:
++The inventory on **physical 30–32/header and printed 2–3** identifies:
+diff --git a/publication/SOURCE-PINS.json b/publication-v2/SOURCE-PINS.json
+index 6fa5f630..65382e70 100644
+--- a/publication/SOURCE-PINS.json
++++ b/publication-v2/SOURCE-PINS.json
+@@ -7 +7 @@
+-      "internal_page": 1,
++      "internal_page": "Header page; no printed internal page number",
+@@ -27 +27 @@
+-        1,
++        "Header (unnumbered)",
+diff --git a/publication/SOURCES.json b/publication-v2/SOURCES.json
+index 127e479a..ff8e2f61 100644
+--- a/publication/SOURCES.json
++++ b/publication-v2/SOURCES.json
+@@ -27 +27 @@
+-      "internal_page": 1,
++      "internal_page": "Header page; no printed internal page number",
+diff --git a/publication/VERIFICATION.json b/publication-v2/VERIFICATION.json
+index ffb0c790..05c28857 100644
+--- a/publication/VERIFICATION.json
++++ b/publication-v2/VERIFICATION.json
+@@ -6 +6 @@
+-  "complete_EC_extent": "Physical30–37/internal1–8/footer429–436; next index entry begins a separateFD302, not read as an image",
++  "complete_EC_extent": "Physical30–37/header plus printed internal2–8/footer429–436; next index entry begins separateFD302, not visually read",
+@@ -13 +13,2 @@
+-  "publication_verified": "Not yet performed; actual account/commit/ref/all-file receipts required."
++  "publication_verified": "Not yet performed; actual account/commit/ref/all-file receipts required.",
++  "revision_precision": "Preserved unpublishedv1 used ordinal1 as internal page1; finalv2 explicitly distinguishes the unnumbered header from printed numbering. This is our precision correction, not a source discrepancy."

@@ -1,0 +1,78 @@
+{
+  "parent_ids": [
+    "TEL02",
+    "TEL04",
+    "AUD016-A1",
+    "TEL-NI-TIME"
+  ],
+  "observations": [
+    {
+      "id": "RF01",
+      "type": "source-reported retrieval activity and conditional preservation plan",
+      "locator": "viewer p6, AA KEAN COMM002535, row1343",
+      "recorded_time_literal": "1343",
+      "observation": "Entry describes accessing recorded calls into SOC and saving files once found.",
+      "status": "retrieval activity/conditional intention reported; outcome not established",
+      "limits": "Not proof files were located, saved, copied, delivered or still exist; no specific caller/call/recorder/filename identified. Source clock unverified. Do not equate with a particular passenger recording or court MP3."
+    },
+    {
+      "id": "RF02",
+      "type": "source-reported document-save checkpoint; manual label reading",
+      "locator": "viewer p6, AA KEAN COMM002535, row1739",
+      "recorded_time_literal": "1739",
+      "visible_label_reading": "Accident_1738/11sep.doc",
+      "label_status": "visible filename/path reading; separator, native byte spelling, actual format and filesystem path independently unverified",
+      "observation": "Entry reports saving the file up to that point under a label ending.doc.",
+      "limits": "No native file supplied or hashed; not proof this was an audio save, original event clock, final chronology, same version used at interview or complete current32-page representation. Preserve label as read rather than change slash/underscore/time components."
+    },
+    {
+      "id": "RF03",
+      "type": "source-explicit estimate qualifier and raw row order",
+      "locator": "viewer p5, AA KEAN COMM002534, row0930 below row0955 and an un-timed row",
+      "recorded_time_literal": "0930",
+      "observation": "The source explicitly describes this as estimated timing for a codeshare notification.",
+      "limits": "Do not turn it into an exact transmission/receipt timestamp, infer clock error from printed order or apply the estimate qualifier to every row. Underlying message, recipients, logs and clock remain needed."
+    },
+    {
+      "id": "RF04",
+      "type": "source-reported verbal channel and pending written follow-up",
+      "locator": "viewer p7 lower part of inspected upper/middle viewport, row0015/12Sep",
+      "recorded_time_literal": "0015 / 12Sep",
+      "observation": "The entry reports a security directive via conference call and a written directive still pending.",
+      "limits": "Different date and event from9/11cockpit-intrusion warning accounts and May2003QFR correction. No proof of exact directive, eventual written delivery, field implementation, earlier receipt/nonreceipt or motive. Do not merge those channels/events."
+    },
+    {
+      "id": "RF05",
+      "type": "cross-page sentence context; separate object/action",
+      "locator": "p6 row1743 continues at top of p7",
+      "recorded_time_literal": "1743",
+      "observation": "The decision about eliminating Flight11and77 continues on the next page with the word schedule.",
+      "comparison": "Earlier p3 row0748 describes a request about ASD removal/de-identification. RF01 concerns recordings; RF02 concerns a document-save label.",
+      "limits": "Preserve each object/statement separately. No shared deletion operation, implementation history, record destruction or cause is established."
+    }
+  ],
+  "next_records": [
+    {
+      "id": "TEL-RF-ARCHIVE",
+      "record": "Underlying SOC recording-access/preservation request, search/work log, recording system/source/call IDs, copied media/file manifest and retention/delivery trail associated with the1343entry. Include negative/inconclusive results.",
+      "scope": "Actual outcome and source identities, not another account of intended saving."
+    },
+    {
+      "id": "TEL-RF-DOC",
+      "record": "Native document/version corresponding to the visible Accident_1738/11sep.doc label, filesystem/attachment identifiers, revisions and actual Commission delivery/attachment mapping.",
+      "scope": "Independently establish label/path/format/version and do not presume it is an audio file."
+    },
+    {
+      "id": "TEL-RF-NOTIFY",
+      "record": "Actual codeshare message, recipient/distribution/dispatch/acknowledgment and source clock records for the explicitly estimated0930entry.",
+      "scope": "Estimate, attempted dispatch and receipt are different events."
+    },
+    {
+      "id": "TEL-RF-DIRECTIVE",
+      "record": "Source-specific conference directive and written-follow-up record for the explicitly next-day0015/12Sepentry.",
+      "scope": "Not a substitute for9/11warning or2003/2006correction/decision records."
+    }
+  ],
+  "all18_original_criteria": "Remain open/partial; source-reading progress supplies exact retrieval targets, not native validation or goal completion.",
+  "preserved_limits": "Old1343/1739raw values and filename reading remain distinct; previous tape reset/redial/display/schedule contexts and every original conflicting record remain unchanged."
+}

@@ -1,0 +1,216 @@
+{
+  "existing_keys": "B129/PD01\u2013PD04/FAA01\u2013FAA04; source inputs relevant toREC01\u2013REC03, no master renumbering",
+  "rows": [
+    {
+      "id": "OF01",
+      "physical_pages": [
+        21,
+        22,
+        23
+      ],
+      "visible_OCR": {
+        "21": [
+          1,
+          2
+        ],
+        "22": [
+          4,
+          55
+        ],
+        "23": [
+          6,
+          61
+        ]
+      },
+      "observation": "Section4divider namesFAAForm7230-4; actual DailyRecordofFacilityOperation Page1of2 andPage2of2 follow. FacilityZNY/Ronkonkoma/CENTER; headerliteral09/11/01 00:38.",
+      "limit": "Released scan/form headers, not native generation time or exact delivered version."
+    },
+    {
+      "id": "OF02",
+      "physical_page": 22,
+      "visible_ocr_lines": [
+        25,
+        27
+      ],
+      "observation": {
+        "candidate_role": "Reviewed OperationsManager",
+        "on_duty_label": "1030",
+        "join_basis": "Specific earlier form reference plus visible unredacted surname/firstinitial and role context; names/initials omitted"
+      },
+      "comparison": "Earlier Section11said sign-in/sign-out indicated on7230-4; no explicit matched off-duty entry established from these2pages. Later1743on-duty row is not assigned as this person's off time.",
+      "limit": "Candidate identity/role join not independently unique/native-authenticated; do not infer duty boundaries from replacement rows."
+    },
+    {
+      "id": "OF03",
+      "physical_pages": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "observation": {
+        "24": "Section5PersonnelLogs",
+        "25": "AreaBdatecover",
+        "26": "PersonnelLogPage1of8",
+        "27": "PersonnelLogPage2of8;printedZNY3600-1 REV9/96",
+        "28": "PersonnelLogPage3of8; printedZNY3600-1 REV9/96",
+        "29": "PersonnelLogPage4of8",
+        "30": "OperationalOvertimeOrAdditionalPersonnel; printed page counter not established in visible image",
+        "31": "OSIC/CICCertificationPage6of8",
+        "32": "SignInSignOutCorrectionForm/ZNY7210-5/Page7of8; visible entrygrid blank",
+        "33": "SwapChangeOfAssignment, printedPage1, not observedPage8of8"
+      },
+      "limit": "Eight consecutive physical images26\u201333 are not proof of a complete matching1\u20138labelled set. Do not assign unseenPage5/8orPage8/8, infer missing/inserted/deleted pages, or treat blankcorrectiongrid as proof no corrections occurred."
+    },
+    {
+      "id": "OF04",
+      "physical_pages": [
+        28,
+        31
+      ],
+      "manual_grid_locators": {
+        "28": "Printed3of8,22nddata row; TimeOn/TimeOff",
+        "31": "Printed6of8,3rddata row; TimeOn/TimeOff"
+      },
+      "observation": {
+        "candidate_role": "Reviewed OperationsSupervisor-in-Charge",
+        "personnel_log_labels": [
+          "0632",
+          "1432"
+        ],
+        "OSIC_CIC_certification_labels": [
+          "0632",
+          "0810"
+        ]
+      },
+      "comparison": "EarlierSection6citedAreaBpersonnellog; Section11said employee did not sign personnel log for indicated statementperiod and no automated-sign-on requirement. Current released entries now visible; original statementperiod, type/clockbasis and exact version chronology unverified.",
+      "limit": "Same-source visible candidate name/role join, no redacted identity recovery. Different table scopes/versions remain open; neither timeoff chosen controlling. No unaccounted duration or no-duty inference."
+    },
+    {
+      "id": "OF05",
+      "physical_pages": [
+        22,
+        23,
+        31
+      ],
+      "observation": "Three candidate AreaBhandoff pairs have nominal4hour label differences; no actual clockoffset measured",
+      "candidate_pairs": [
+        {
+          "cert_page": 31,
+          "cert_data_row": 4,
+          "cert_label": "0810",
+          "daily_page": 22,
+          "daily_ocr_line": 34,
+          "daily_label": "1210"
+        },
+        {
+          "cert_page": 31,
+          "cert_data_row": 5,
+          "cert_label": "0930",
+          "daily_page": 22,
+          "daily_ocr_line": 45,
+          "daily_label": "1330"
+        },
+        {
+          "cert_page": 31,
+          "cert_data_row": 6,
+          "cert_label": "1315",
+          "daily_page": 23,
+          "daily_ocr_line": 14,
+          "daily_label": "1715"
+        }
+      ],
+      "limit": "Manual candidate role/event associations; no time-zone basis selected, clocks fitted or source values corrected. Other overstruck/annotated cells left uninterpreted, not normalized. Agreement of nominal differences does not prove actual same events/clock alignment."
+    },
+    {
+      "id": "OF06",
+      "physical_page": 22,
+      "visible_ocr_lines": [
+        35,
+        39
+      ],
+      "observation": [
+        {
+          "printed_label": "1238",
+          "source_report": "Informed of possible hijack AAL11"
+        },
+        {
+          "printed_label": "1250",
+          "source_report": "Informed of another possible hijack UAL175"
+        },
+        {
+          "printed_label": "1250",
+          "source_report": "Advised aircraft crashed intoWTC"
+        },
+        {
+          "printed_label": "1304",
+          "source_report": "Advised secondaircraft crashed intoWTC"
+        }
+      ],
+      "limit": "Operations-log notice/advice reports, not direct crash-time/independently measured awareness or later knowledge/intent. Multiple aircraft labels kept as separate rows; no linkage resolving other memo inconsistencies."
+    },
+    {
+      "id": "OF07",
+      "physical_page": 22,
+      "visible_ocr_lines": [
+        14,
+        22,
+        30,
+        31
+      ],
+      "observation": "Weather-service computer/wind-data remarks and stated frequency/radar/VORoutage windows appear in the dailylog.",
+      "limit": "No identification of actual lost target/audio coverage, site/feed geography, outage cause or connection to attacks. Technical-owner channel/site/source validation unperformed; not a new technical-clock test."
+    },
+    {
+      "id": "OF08",
+      "physical_page": 16,
+      "visible_ocr_lines": [
+        3,
+        21
+      ],
+      "observation": {
+        "heading": "CertifiedIndex",
+        "date": "September19,2001",
+        "facility": "BostonTRACON/A90",
+        "claim": "Originals on file in this office",
+        "record_type_list": [
+          "7230-4",
+          "7230-10",
+          "8020-6-1",
+          "SignOnLogA90",
+          "PersonnelStatements",
+          "OriginalVoiceRecordings",
+          "CertifiedCassetteRecordings"
+        ]
+      },
+      "limit": "Then-current source claim, not7individualobjects, current preservation/actual custody or authority for NewYorkTMUlog. Sharedpacket case header does not make different facilities' logs interchangeable."
+    },
+    {
+      "id": "OF09",
+      "physical_page": 40,
+      "manual_locator": "Prominent printed warning label",
+      "observation": "Document described as derived from computer magnetic recordings/internal processing and not exact representation of control-position display.",
+      "limit": "Source warns about representation; no original data/camera/display/decoder comparison or source accuracy conclusion. Faint/covered underlying values not reconstructed."
+    }
+  ],
+  "all_prior_records_values_and_failures_preserved": true,
+  "all_five_tracks_and18criteria_remain_partial_open": true,
+  "next_required_records": [
+    "Exact reviewed personnel statement and period",
+    "Native/form-version/edit/certification and clock-basis rules",
+    "RemainingAreaBpagination/nextphysical34andSection6context in a later bounded unit",
+    "ActualTMUlog and position-specific signingrule/search/retention history",
+    "OriginalMay2003draft/correctedQFR/delivery and signed2006administrative/recommendationdisposition"
+  ],
+  "not_performed": [
+    "Originalvoice/radar/decoder/clockfitting/materialstest",
+    "Independentidentity/native/signing/delivery/compliance/intentauthentication",
+    "Sourcealteration/redactionrecovery or choosingcontrollingvalues"
+  ]
+}

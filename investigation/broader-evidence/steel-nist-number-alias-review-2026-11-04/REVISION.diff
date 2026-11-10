@@ -1,0 +1,55 @@
+--- /dev/null
++++ b/investigation/broader-evidence/steel-nist-number-alias-review-2026-11-04/README.md
+@@ -0,0 +1,52 @@
++# NIST label associations and a qualification of our December transcription
++
++November 4, 2026 Eastern; source-check timestamps are November 5 UTC. Existing STL01-STL04, B188/H005 and AUD011/AUD016 remain open. This follow-up found an error and an overconfident reading in our [published December ledger](https://github.com/AveLyra/911-conspiracy-investigation/blob/9e9940b96d779c882699c9567be5276a51946c07/investigation/broader-evidence/steel-december-july-list-join-2026-11-04/DECEMBER-IDENTIFIER-ROWS.json), alongside useful documentary associations in NIST's published inventory. **The old ledger, reports, source PDFs and public history remain unchanged.** A separately named qualified working candidate and exact reading diff are provided for an unmerged review PR; neither source evidence nor old research files are replaced.
++
++## Our earlier source-reading claims need qualification
++
++| Source cell | Earlier published transcription | Current visual reading / status |
++| --- | --- | --- |
++| Court physical page 9, identifier row 47, global ledger row 350 | **U-4** | **U-6**, beside **3 columns, upper 1/4**, visible on the unchanged full face and 288 dpi rendering |
++| Court physical page 9, identifier row 51, global ledger row 354 | **n-141** | Prefix **unresolved**; an underscore-like mark and visible **-141** suffix do not verify the asserted n prefix |
++
++The U-4 entry was our transcription error. The earlier claim of an unambiguous complete 354-label reading was too strong. Both the local OCR candidate and the manual ledger used U-4; the reason we failed to catch that at visual review is not established. The source PDF's bytes have not changed. These observations supply no evidence that a historical court record changed, that NIST mislabelled this particular row, or that the final prefix was deliberately obscured.
++
++[READING-QUALIFICATIONS.json](READING-QUALIFICATIONS.json) preserves both earlier readings, current observations, source positions and prior hashes. [DECEMBER-QUALIFIED-CANDIDATE.json](DECEMBER-QUALIFIED-CANDIDATE.json) copies the earlier ledger, changes row 350 to the current U-6 reading while retaining U-4 as the earlier value, and leaves row 354's literal identifier null with its visible suffix and earlier n-141 assertion recorded. [READING-CHANGE.diff](READING-CHANGE.diff) shows every research-field change. This is a working candidate, not an independently certified transcription; the other rows are carried forward unchanged and have not all received a new independent reading.
++
++## Effect on the published comparison
++
++The visible row/cell count remains **354**, including **276 inventory-number cells and 78 cells under NIST Number**. A visible cell count is different from a fully readable exact-identifier count.
++
++The original frozen ledger still reproduces its reported **354 distinct strings, two common labels, 352 December-only strings and 528 July-only strings**. That faithfully calculated the input we supplied; it did not validate the input's manual reading. Those figures must not be reused as an unconditional, fully source-verified literal census.
++
++The qualified working candidate has **353 currently readable labels and one unresolved cell**. Against the unchanged 531-row / 530-string July ledger, its readable subset has the same two literal matches, **G-0121 and H-0079**, and **351 readable December labels absent from July**. **528 July strings are unmatched by that readable subset**; the unresolved cell could still affect a full-list comparison. No missing character or alias is filled in to force an answer. [QUALIFIED-COMPARISON.json](QUALIFIED-COMPARISON.json) preserves both computations side by side. None is a count of missing, destroyed, withheld, transferred or tested physical objects.
++
++The earlier SHA and remote-file checks were valid checks of their stated bytes. They were insufficient to certify our reading. No independent second reader has accepted either ledger. This limitation is material even though the two currently readable shared labels are unchanged.
++
++## Actual primary-record associations
++
++Three new exact-label queries led to a Govinfo scan of [NCSTAR 1-3B](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf), a publication we already held from NIST. We reused the held official-source PDF rather than downloading another copy. The Govinfo search/OCR was only a locator; its scan was not acquired or assumed byte-identical. The unrelated n-number search results were not adopted as specimen evidence. No native workbook, tag photograph, intake worksheet, inventory revision or shipment/receipt was recovered.
++
++The complete relevant report faces were read: **physical 33 / printed 5** (section 3.1); **physical 94 / printed 66** (Table A-4); and **physical 95 / printed 67** (Tables A-5 and A-6). The court's relevant pages 8-9 are separate inputs. [SOURCE-OBSERVATIONS.json](SOURCE-OBSERVATIONS.json) records source-reported fields and their limitations.
++
++| Court label / location | NIST report field | What the association supports |
++| --- | --- | --- |
++| **C-49 or S-6**, court p.8, NIST-section row 15 / identifier row 35 / ledger 291 | Table A-4, printed 66: same alternative label; **portion of 1 column**, Location **236**, under unidentified exterior panel sections | Same documentary label/description; no physical identity, receipt or building authentication |
++| Current **U-6**, court p.9, identifier row 47 / ledger 350 | Table A-4: **U-6**, **3 columns, upper 1/4**, Location **236** | Agrees with the current court-image reading; our earlier U-4 entry must not be presented as a NIST-versus-court contradiction |
++| **B-6152-1**, court p.8, NIST-section row 3 / identifier row 23 / ledger 279 | Table A-5: **WTC 1**, Column **803**, Floors **15-18** | NIST's published assignment for that matching code; no independent authentication of the actual court-listed object |
++| **B-6152-2**, court p.8, NIST-section row 4 / identifier row 24 / ledger 280 | Table A-5: **WTC 1**, Column **504**, Floors **33-36** | Same limitation; this is a reported tower-core assignment, not a verified WTC 7 sample |
++| **C-155**, court p.9, identifier row 33 / ledger 336 | Table A-5: **C-155 (formerly U-5)**, WTC 1, Column 904, Floors 83-86 | Explicit published former-label information; the native alias/intake/transfer history still needs recovery |
++
++Table A-4 separately lists **C-28B (formerly U-4)** as a corner column in two pieces, Location 205. It is a different printed row from U-6. The preliminary proposed U-4/U-6 discrepancy was not established: it depended on our incorrect court transcription. Preserve that failed comparison and both readings; do not turn it into a historical lead or silently rewrite the source to make the rows agree.
++
++Section 3.1 states a general labeling practice: original codes were retained; some pieces had two codes; first-noted codes were used in described circumstances; uncoded arrivals received U-series labels; and Hangar 17 B-series labels were retained. This policy was already read in prior steel work; its application to the newly held court labels is the follow-up here. It does not authenticate a particular alias or authorize selecting a preferred account. The section says Appendix A's Location is the piece's NIST-campus location at the report period. **205/236/PL must not become original building floors or verified present-day custody.**
++
++## Reading, verification and remaining uncertainty
++
++The unchanged NIST PDF has **12,034,476 bytes, 114 pages**, SHA-256 `d234d025912dab100a0dd479f826b2adff0fc23acd5acb42efc93a4a8bcd9bc3`. The court-copy PDF has **224,690 bytes, 9 pages**, SHA-256 `fd1eeb230cdba27ffc4bde627b208fcce24fc6dc7c4d7f27eca5e34f9de1119d`. Both remain preserved. Full NIST faces were viewed at 144 dpi, with the complete A-5 table checked at 288 dpi for its small fields. The unchanged court final face was re-viewed in full at 144 and 288 dpi; a 288 dpi bottom-region rendering supported the two reading qualifications. No source PDF or image was repaired, and no hidden text was used to reconstruct the uncertain prefix.
++
++[verify_review.py](verify_review.py) passed both PDF byte/size/page checks, old/candidate/July ledger hashes, the exact two changed research rows, retained earlier values/positions, and the old versus qualified-subset calculations. It does **not** prove the source glyphs, scanned table readings, physical identity, native authorship/custody or scientific claims. A complete independent second reading remains TODO; the other source cells are not newly certified by discovering these two problems. [REPRODUCE.md](REPRODUCE.md) documents the actual test.
++
++The strongest limit on the new associations is still documentary dependence: matching published codes and descriptions are not an actual physical transfer chain. Better source copies, native inventories and revision/alias records, marked-member photographs, NIST intake/coupon worksheets and shipment/receipt records could change the interpretation. Completed laboratory and attribution records remain indispensable. No model reproduction, metallurgy experiment, original-buildings investigation or motive/conspiracy finding was performed.
++
++[OPEN-TODOS.json](OPEN-TODOS.json) retains all five original tracks and all eighteen acceptance criteria as open or partial. The substantive reading conflict with our preceding publication is handled by a separate non-overwriting candidate branch and unmerged PR under the user's preservation rule. [CHECKLIST.md](CHECKLIST.md) covers the corrections, limits and publication safeguards. [REVISION.diff](REVISION.diff) records this new report against absence; the separate ledger diff compares directly with the preceding preserved version. No private push, source overwrite, history rewrite, merge, deletion, outreach, fee, filing, mailbox access or new request occurred.

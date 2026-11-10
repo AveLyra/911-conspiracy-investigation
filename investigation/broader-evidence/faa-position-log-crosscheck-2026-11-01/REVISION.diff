@@ -1,0 +1,628 @@
+--- /dev/null
++++ b/investigation/broader-evidence/faa-position-log-crosscheck-2026-11-01/README.md
+@@ -0,0 +1,82 @@
++# FAA position records: four time matches, distinct labels and unresolved clocks
++
++Research date: November 1, 2026. Existing B129 / PD01–PD04 / FAA01–FAA04 record trail. This is one bounded inspection of held public primary records, not a new download, a whole-packet authentication or completion of the original-record work plan.
++
++The located position report supplies all four preselected on/off intervals, and each agrees with the corresponding statement's time fields after removing the report's colon punctuation. This is useful for locating the underlying records. **It is not independent validation:** the statement forms direct writers to make their times correspond with SISO. One position label remains different, `RA42` versus `D42`; the report's timezone and historical clock accuracy are not established. Separate roster and overtime records also prevent treating an `RDO` entry as standalone evidence that a writer was absent.
++
++A separate within-form discrepancy is preserved: two weather descriptions and their adjacent time boxes differ by four hours while both label their values UTC. The values' cause and effect remain untested. These findings do not establish coordinated falsification, foreknowledge, suppression or a cover-up.
++
++## Source and reading scope
++
++Official held source: [AEA1130 / NARA7598367, completed accident package](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf), acquired October 30, 2026, 18:22:50 UTC; 15,505,493 bytes, 237 physical PDF pages. SHA-256: `5bb71c00b716fb59425571d0c714a97a32d84b13f35dcc65d7cc6bd6f83b5179`. Physical PDF page numbers below are one-based; printed sheet pagination differs. The held bytes were rehashed and preserved unchanged. The public derivative contains research text, selected field transcriptions and provenance, without the raw scan, personnel roster, names, signatures or contact/access details.
++
++Actually inspected in this unit: **27 distinct new whole pages — 5, 8, 16 and 24–47**. Page 39 received an additional whole-page 3000-pixel legibility render; that is not an additional source page. Previously inspected statement faces 194, 200, 226 and 230 were rechecked as context, not counted as new acquisition or new pages. On the position printouts the relevant columns/selected rows and boundaries were read; faint, cropped and unrelated totals were not exhaustively transcribed. The other 237-page packet contents have not all been reviewed by this unit.
++
++The frozen four-row selection preceded complete-log reading. Four directly relevant positions were retained regardless of outcome; no failed or inconvenient row was replaced. Visible name/operating-initial cross-references support the candidate row joins, but native identity and custody have not been authenticated. Source faces, render hashes, precise column locators and all selected strings are in [SOURCE-PINS.json](SOURCE-PINS.json) and [COMPARISON.json](COMPARISON.json). No hidden text extraction, new OCR, redaction reconstruction or source-image editing occurred.
++
++## What the physical sequence contains
++
++[Physical 24–36](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=24) includes the Section 5 Personnel Logs divider; Area B personnel, additional-personnel, OSIC/CIC certification, correction and assignment-change forms; and Traffic Management forms. The sign-in/sign-out correction form on physical 32 / printed 7 of 8 has an unused body. That does not prove no corrections occurred elsewhere. Physical 31 has populated certification time fields; physical 33 has assignment changes. Those records have distinct purposes and must not be collapsed into the blank correction form.
++
++The **Section 6 Automated Sign-In/Sign-Out (SISO) Data divider is physical 37**, immediately followed by the **Section 7 Facility Layout Chart divider on physical 38**. A position report containing the selected rows is at **physical 39**, with further printout material at 40–42; facility drawings follow at 43–44. Physical 45 is the Section 8 divider; physical 46 contains two UAL175 flight strips; physical 47 begins Section 9 Transcriptions of Voice Recordings. The misplaced-looking divider sequence is preserved as observed. It does not show why the sequence exists, that a page was deliberately removed, or that SISO data are globally absent. Reading the divider alone would have missed the available report.
++
++Physical 40 carries a representation notice: the document derives from magnetic recordings of internal computer processing and is not an exact representation of the control-position display. That is a scope qualification, not a finding of tampering, a guarantee of raw-data completeness, or proof of what a controller saw. Physical 44 labels an Area B layout position `D42`, separately from `R42`; it does not by itself authenticate the statement's `RA42` terminology, actual staffing or September 11 hardware/display state.
++
++## Four selected position intervals
++
++Statement position fields and on/off fields are on [194](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=194), [200](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=200), [226](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=226) and [230](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=230). The report's POSITION, TIME-ON and TIME-OFF columns are on [39](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=39). Selected row locators below avoid reproducing personnel identities.
++
++| Statement face and literal position label | Statement fields, UTC printed beside fields | Report position and selected row | Report TIME-ON / TIME-OFF | Bounded result |
++| --- | --- | --- | --- | --- |
++| 194, `RADAR Sector42` | `1207`–`1319` | `R42`, second R42 row | `12:07`–`13:19` | Both time strings match after colon removal. `R42` is the research role shorthand; literal labels remain distinct. |
++| 200, `RA42` | `1255`–`1319` | `D42`, row immediately below the two R42 rows | `12:55`–`13:19` | Time strings match; `RA42` / `D42` label difference remains preserved. |
++| 226, `R55` | `1120`–`1316` | `R55`, sixth R55 row | `11:20`–`13:16` | Both time strings match. |
++| 230, `D55` | `1132`–`1316` | `D55`, third D55 row | `11:32`–`13:16` | Both time strings match. |
++
++**What was tested:** punctuation-only comparison of eight selected time fields, with source strings retained. All four on/off pairs agree. This is a transcribed-field consistency test, not a measurement of clock error. No timezone label is visible on the inspected position-report face; its case context and surrounding dated records are not a substitute for an authenticated export/date/timezone definition.
++
++**Strongest limitation on corroboration:** all four statement faces explicitly require statement times and dates to correspond with SISO. Their agreement is compatible with writers consulting the same administrative source. The actual preparation history remains unknown; we have not proved copying in any individual instance. The agreement cannot be multiplied into four independent confirmations of clock accuracy, identity, continuous presence, what was heard, or every statement narrative.
++
++The prior [personnel continuation review](https://github.com/AveLyra/911-conspiracy-investigation/blob/59828ff9efa5ee2bf073ebf3796a012b35bdd180/investigation/broader-evidence/faa-personnel-continuation-2026-11-01/README.md) retains the January 2002 correction memorandum's account that RA42 and D42 refer to the same sector. That is the memorandum author's characterization, not this investigation's adjudication of equivalent positions or duties. The newly located report preserves `D42` alongside `RA42`; no label is substituted or made controlling. Underlying position definitions and amendments remain TODOs.
++
++## Shift records differ in scope from position records
++
++The Personnel Log's Time on / Time off fields cover shift/attendance-style entries; the position report and statements cover particular positions. No timezone is visible on the selected roster sheets. The research has not converted a shift time into UTC or treated unlike intervals as a contradiction.
++
++| Role used to locate the same statement author's row | Personnel Log fields | Additional context | Consequence |
++| --- | --- | --- | --- |
++| R42 | Physical 26 / printed 1 of 8: `0630`–`1430` | Position interval above is `1207`–`1319` UTC | Different scope and unestablished clock basis; no attendance residual calculated. |
++| RA42 | Physical 28 / printed 3 of 8: `0630`–`1430` | Released POS area obscured | Do not reconstruct the hidden POS field or infer its exact label. |
++| R55 | Physical 28 / printed 3 of 8: `0657`–`1457` | Statement interval `1120`–`1316` UTC | Both records retained without timezone conversion. |
++| D55 | Physical 26: Time on `RDO`, Time off blank | Physical 30, Operational Overtime or Additional Personnel, has same-name/initial entries `0645`–`1445` with `8.0` duty hours, and `0615`–`0645` with `.5` | Preserve all entries; `RDO` alone does not establish absence or false duty. |
++
++`RDO` is left unexpanded because the native legend and roster definitions have not been obtained. The additional-personnel rows and position interval are material contrary evidence to an absence inference. They also do not, without authentication and clock definitions, prove physical attendance or resolve the records' administrative meaning. Overtime labels, signatures or correction marks are not motive evidence.
++
++## Weather fields: two explicit UTC-labelled mismatches
++
++[Physical 5 / FAA Form 8020-6, printed 1 of 4, report date 10/11/01](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=5), field 11:
++
++| Field 11 row | Narrative-body time, as printed | Adjacent DATE/TIME, as printed | Arithmetic on the printed HHMM values |
++| --- | --- | --- | --- |
++| Report just prior to accident | `0751 UTC` | `09/11/01 1151 UTC` | Adjacent minus body = 240 minutes |
++| First report subsequent to accident | `0951 UTC` | `09/11/01 1351 UTC` | Adjacent minus body = 240 minutes |
++
++Both pairs explicitly use UTC labels. The separate conditions-at-accident narrative also says `0851 UTC`, but it has no matching adjacent DATE/TIME box in this comparison; no third pair is manufactured. We preserve all printed values and do not choose a preferred one, relabel a value as local time, or apply a four-hour correction to the accident, SISO, radar or recorder timelines.
++
++**Untested hypotheses:** a time-convention or export/editorial error, or another preparation error, could produce these labels. Their likelihood and specific cause are not established. The original weather product, form-preparation worksheets, native version history and applicable time instructions could discriminate. Technical weather decoding and comparison of the weather products elsewhere in the packet were not performed here. The disagreement warrants a source-quality check; by itself it shows neither a physical four-hour offset nor deliberate falsification.
++
++## A concrete historical custodian lead
++
++[Physical 16, Certified Index dated September 19, 2001](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf#page=16) records the Boston TRACON Air Traffic Manager's certification that listed originals were on file in that office. It lists Form 7230-4; Form 7230-10; Form 8020-6-1; Sign On Log: A90; Personnel Statements; **Original Voice Recording(s)**; and **Certified Cassette Recording(s)**.
++
++The list distinguishes original voice recordings from certified cassette copies and identifies a historical office. It supplies a specific records/custody target. It does not authenticate today's scan signatures, prove the originals survive today, identify all recorded channels, or show that those audio originals are embedded in this PDF. Boston TRACON's contribution also must not be treated as the same facility/report version as the New York ARTCC October 11 form. No holder was contacted and no request was sent.
++
++## Consequences, missing inputs and unchanged limits
++
++This batch advances the operational source map: previously sought SISO-style position rows are now located in the held scan; four predetermined fields can be compared; the direct statement-to-SISO instruction constrains independence; roster/overtime context qualifies an absence inference; and a labelled weather inconsistency and historical original/copy custodian list are pinned.
++
++The native SISO export, date/timezone/code dictionary, generation/audit/correction history, roster/extra-duty definitions, original voice/cassette provenance, and independent clock anchors remain missing. No physical-clock alignment, speech/event validation, contemporaneous knowledge inference, or historical-cause determination has been performed. A shared origin could explain document agreement without proving operational accuracy; the source chain must be tested rather than counted repeatedly.
++
++The actual May 2003 corrected QFR and delivery acknowledgment; signed action/no-action determination; and separate OIG recommendation response, implementation and closure remain unacquired. This September 2001 staffing material does not substitute for those records. All five work-plan tracks and eighteen substantive criteria remain open or partial; publication is not acceptance of them. Technical NIST/UAF, recorder/materials comparisons and independent-method audit retain their assigned owners.
++
++[Open inputs and revisit tests](OPEN-TODOS.md) · [Point-by-point checklist](CHECKLIST.md) · [Revision diff](REVISION.diff) · [Verifier](verify.py). Earlier findings and source bytes remain unchanged. No outreach, request, fee, filing, private-source disclosure, private push or history rewrite is authorized by this report.
+--- /dev/null
++++ b/investigation/broader-evidence/faa-position-log-crosscheck-2026-11-01/OPEN-TODOS.md
+@@ -0,0 +1,16 @@
++# Deferred inputs — preserve and continue available work
++
++All are open; none is a finding of concealment or an instruction to contact a holder. Existing B129/PD01–PD04/FAA01–FAA04 and the original eighteen criteria remain intact.
++
++| TODO | Exact missing record/input | Why needed / discriminating test | Revisit trigger / acceptance limit |
++| --- | --- | --- | --- |
++| POS01 | Native export behind AEA1130 physical39/41; report date, system/version, SISO code dictionary, clock/timezone/rounding instructions and generation/correction audit | Authenticate the selected row/date/identity keys; determine what R42/RA42/D42 mean and whether matching times were copied or independently recorded | Obtain native metadata and applicable instructions; only then test clock alignment. PDF field agreement alone is insufficient. |
++| POS02 | Personnel Log and additional-personnel legends, original dated shift/extra-duty/correction/assignment records for physical26/28/30–36 | Interpret RDO and shift/position scope without assuming attendance; preserve RDO plus both additional-personnel intervals and report rows | Authenticated roster definitions/history and matched identifiers. No absence or false-duty finding from an isolated cell. |
++| POS03 | Native weather messages, original form-preparation worksheets, time instructions and amendment/version records for field11physical5 | Explain, without erasing,0751/1151UTC and0951/1351UTC label pairs; compare original products against each representation | New original/version or qualified weather reading. No four-hour correction to other clocks in advance. |
++| POS04 | BostonTRACON/A90 originals and separate certified cassettes listed physical16, custody/channel/copy logs, hashes and time-source calibration | Determine what survives and join originals/copies/transcripts/positions, checking omissions and independent clocks | Existing released native objects/metadata located. Historical index alone is not present-day survival or complete delivery. |
++| POS05 | Packaging index/assembly/reproduction history for physical37–44 | Test the divider/content order while preserving the current sequence | New native package/index/version. A divider sequence is not proof of deletion or intent. |
++| FAA02 | Actual corrected May2003QFR and delivery/receipt proof | Compare exact original/corrected text and dates; distinguish preparation, authorization, delivery and congressional receipt | Authenticated answer and transmission/receipt records; still open. |
++| FAA03 | Signed consideration/action/no-action determination, underlying recommendation and reasons | Distinguish investigative closure from a personnel outcome | Signed final record or reliable complete disposition file; still open. |
++| FAA04 | Separate OIG recommendation responses, implementation and closure records, applicable policy/retention/custody crosswalk | Keep recommendations1–2/reportp12 distinct from3–4/p13; test implementation rather than inferred closure | Relevant originals; prior searches are not rerun unchanged. |
++
++Other tracks remain: carrier/operator/recipient native joins and missing telephone originals; installed recorder configuration/custody/independent clock anchors; authenticated specimen-to-test/native-instrument/calibration joins; steel preservation/transfer/attribution originals. Existing feasible technical tests remain performed to their actual scope, and their missing-input scientific criteria remain open. No substitutions with more summaries or document-count percentages of proof.
+--- /dev/null
++++ b/investigation/broader-evidence/faa-position-log-crosscheck-2026-11-01/CHECKLIST.md
+@@ -0,0 +1,19 @@
++# Revision and scope accountability
++
++New additive report; no earlier published report or source replaced. Prior baseline59828ff9 retained. REVISION.diff records the additions against an empty pathname baseline; the actual staged Git diff is separately preserved locally. PDF/image legibility review is distinct from text diff and arithmetic/byte checks.
++
++| Requirement / concern | Outcome and exact location | Verification and remaining issue |
++| --- | --- | --- |
++| Use next available originals rather than repeated failed searches | README Source/reading scope; physical24–47 and navigation5/8/16 | Held AEA1130 bytes, no new download/search claim;27new pages,4prior statement rechecks |
++| Inspect complete local section context and boundaries | README physical sequence; pins SISO/ROSTER/BOUNDARIES | Section6divider37,Section7divider38, report39/41, drawings43/44,Section8divider45,Section9divider47 preserved; no global missing-SISO assertion |
++| Frozen four-row comparison; retain failed/conflicting outcomes | COMPARISON.json; README four-row table | All4time pairs match after colon removal; R42literal label and RA42/D42 distinction retained; native clock/identity unknown |
++| Check independence and disconfirming evidence | README forms' SISO instruction and roster table | Agreement is not independent corroboration; D55RDO plus both additional-personnel entries retained |
++| Preserve source labels and uncertainties | README weather table, roster/position labels and physical sequence | FourUTC-labelled weather values kept, no preferred value/timezone conversion or cause inferred |
++| Exact public primary locators, date and hashes | SOURCE-PINS.json; README linked physical pages and fields |33source/render byte inputs checked; no native authentication/whole-packet claim |
++| Historical original/copy source trail | README custodian lead,physical16 | BostonTRACON index; no present survival/channel/completeness claim |
++| Missing inputs as TODOs, continue available work | OPEN-TODOS.md | Native exports/definitions/weather/custody and original FAA02–04 records still outstanding |
++| Keep all five tracks/eighteen criteria; respect owners | README consequences; OPEN-TODOS | None accepted by this batch; technical evaluation and audit ownership unchanged |
++| Preserve originals, earlier text and contrary evidence | New path; REVISION.diff; sourcehash | Source unchanged; no deletion, rewrite, empty commit or case-authority mutation |
++| Public payload limited to eligible source research | Exact reviewed text/JSON/code/diff only | No raw roster/scans, names/initials/signatures, contact/access details, private records or local paths |
++| AveLyra publication and independent remote checks | Separate local publication receipts after successful execution | Must verify account/destination/author+committer/ref/every-file before claiming published; this checklist alone proves none of those actions |
++| Overview coordination | Separate local unsent handoff and gate TODO | Earlier automatic review required fresh authorization; no retry/delivery or adoption claimed |
+--- /dev/null
++++ b/investigation/broader-evidence/faa-position-log-crosscheck-2026-11-01/COMPARISON.json
+@@ -0,0 +1,118 @@
++{
++  "selection": "Four positions frozen before reading complete logs; no replacement after outcome",
++  "identity_join": "Candidate same-name/operating-initial cross-reference visually checked in released statement, personnel roster and position-report rows. Names/initials/signatures excluded from derivative. Native identity/custody not authenticated.",
++  "rows": [
++    {
++      "id": "R42",
++      "statement_page": 194,
++      "statement_position": "RADAR Sector42",
++      "statement_on": "1207",
++      "statement_off": "1319",
++      "statement_unit": "UTC printed beside fields",
++      "report_page": 39,
++      "report_position": "R42",
++      "report_on": "12:07",
++      "report_off": "13:19",
++      "report_unit": "no timezone label visible on inspected report face",
++      "report_locator": "R42 group, second R42 row; TIME-ON/TIME-OFF",
++      "roster_pages": [
++        26
++      ],
++      "roster_on": "0630",
++      "roster_off": "1430",
++      "roster_scope": "Personnel Log shift/attendance fields; no timezone visible"
++    },
++    {
++      "id": "RA42",
++      "statement_page": 200,
++      "statement_position": "RA42",
++      "statement_on": "1255",
++      "statement_off": "1319",
++      "statement_unit": "UTC printed beside fields",
++      "report_page": 39,
++      "report_position": "D42",
++      "report_on": "12:55",
++      "report_off": "13:19",
++      "report_unit": "no timezone label visible on inspected report face",
++      "report_locator": "D42 row immediately below two R42 rows; TIME-ON/TIME-OFF",
++      "roster_pages": [
++        28
++      ],
++      "roster_on": "0630",
++      "roster_off": "1430",
++      "roster_scope": "Personnel Log shift/attendance fields; no timezone visible; POS field obscured in released scan"
++    },
++    {
++      "id": "R55",
++      "statement_page": 226,
++      "statement_position": "R55",
++      "statement_on": "1120",
++      "statement_off": "1316",
++      "statement_unit": "UTC printed beside fields",
++      "report_page": 39,
++      "report_position": "R55",
++      "report_on": "11:20",
++      "report_off": "13:16",
++      "report_unit": "no timezone label visible on inspected report face",
++      "report_locator": "R55 group, sixth R55 row; TIME-ON/TIME-OFF",
++      "roster_pages": [
++        28
++      ],
++      "roster_on": "0657",
++      "roster_off": "1457",
++      "roster_scope": "Personnel Log shift/attendance fields; no timezone visible"
++    },
++    {
++      "id": "D55",
++      "statement_page": 230,
++      "statement_position": "D55",
++      "statement_on": "1132",
++      "statement_off": "1316",
++      "statement_unit": "UTC printed beside fields",
++      "report_page": 39,
++      "report_position": "D55",
++      "report_on": "11:32",
++      "report_off": "13:16",
++      "report_unit": "no timezone label visible on inspected report face",
++      "report_locator": "D55 group, third D55 row; TIME-ON/TIME-OFF",
++      "roster_pages": [
++        26,
++        30
++      ],
++      "roster_on": "RDO",
++      "roster_off": "blank",
++      "additional_personnel": [
++        {
++          "on": "0645",
++          "off": "1445",
++          "duty_hours": "8.0"
++        },
++        {
++          "on": "0615",
++          "off": "0645",
++          "duty_hours": ".5"
++        }
++      ],
++      "roster_scope": "RDO preserved unexpanded; same-name/initial rows separately listed under Operational Overtime or Additional Personnel; no timezone visible"
++    }
++  ],
++  "weather_pairs": [
++    {
++      "id": "prior",
++      "page": 5,
++      "body": "0751 UTC",
++      "date_time": "09/11/01 1151 UTC",
++      "locator": "Field11 REPORT JUST PRIOR TO ACCIDENT: body versus adjacent DATE/TIME"
++    },
++    {
++      "id": "subsequent",
++      "page": 5,
++      "body": "0951 UTC",
++      "date_time": "09/11/01 1351 UTC",
++      "locator": "Field11 FIRST REPORT SUBSEQUENT TO ACCIDENT: body versus adjacent DATE/TIME"
++    }
++  ],
++  "method": "For time-field comparison remove the colon from each report value only. Keep all source strings, units and role labels. Compare on/off strings without timezone conversion, preferred-value selection or physical-clock residuals. Weather arithmetic uses the two HHMM values exactly as printed and subtracts earlier from adjacent value; this is a within-form label comparison, not clock calibration.",
++  "independence_limit": "All four statement faces instruct writers that statement times and dates shall correspond with SISO. The agreement cannot be treated as four independent corroborations of clock accuracy or narrative truth.",
++  "physical_clock_test": "NOT PERFORMED: report timezone/date scope, native export/history, code definitions, corrections and independent alignment absent."
++}
+--- /dev/null
++++ b/investigation/broader-evidence/faa-position-log-crosscheck-2026-11-01/SOURCE-PINS.json
+@@ -0,0 +1,351 @@
++{
++  "source_id": "AEA1130 / NARA7598367",
++  "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf",
++  "acquired_utc": "2026-10-30T18:22:50.688584+00:00",
++  "reading_date": "2026-11-01",
++  "bytes": 15505493,
++  "sha256": "5bb71c00b716fb59425571d0c714a97a32d84b13f35dcc65d7cc6bd6f83b5179",
++  "physical_pages_total": 237,
++  "new_distinct_pages_read": [
++    5,
++    8,
++    16,
++    24,
++    25,
++    26,
++    27,
++    28,
++    29,
++    30,
++    31,
++    32,
++    33,
++    34,
++    35,
++    36,
++    37,
++    38,
++    39,
++    40,
++    41,
++    42,
++    43,
++    44,
++    45,
++    46,
++    47
++  ],
++  "context_rechecked": [
++    194,
++    200,
++    226,
++    230
++  ],
++  "inputs": [
++    {
++      "id": "AEA1130",
++      "bytes": 15505493,
++      "sha256": "5bb71c00b716fb59425571d0c714a97a32d84b13f35dcc65d7cc6bd6f83b5179",
++      "url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf",
++      "acquired_utc": "2026-10-30T18:22:50.688584+00:00",
++      "physical_pages": 237
++    },
++    {
++      "id": "P5",
++      "bytes": 1054040,
++      "sha256": "4b27478a3ea477beed769392afba385052a0d668c78d8d536ce1176a1f257224",
++      "physical_page": 5,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P8",
++      "bytes": 525831,
++      "sha256": "6ff824cef2ea08529fe542dfa6c139395a943ffef51d5b1c15842eb51ae09b3d",
++      "physical_page": 8,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P16",
++      "bytes": 247180,
++      "sha256": "d7c399a5759cf281aa232bc0cb0bf69054fa88e0726d01ea28bcec91f432d213",
++      "physical_page": 16,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P24",
++      "bytes": 46660,
++      "sha256": "eef1585e849914158fb8f53af93c51b8a07db1691b5ecc9a5bf7e50f43a643ee",
++      "physical_page": 24,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P25",
++      "bytes": 220267,
++      "sha256": "0b0620eebc220c1b9ac775e8dcc78096d907a530386d4ce6f7a5b9c67f239879",
++      "physical_page": 25,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P26",
++      "bytes": 1036287,
++      "sha256": "722bfe82763172d4dce6ceb0c1eb0462950b81e676f6aee79830828eee355b67",
++      "physical_page": 26,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P27",
++      "bytes": 1118424,
++      "sha256": "d9fb291fb9ea4e38f619893e79c815f84888d2201560aa0d8f293a5f944c2a81",
++      "physical_page": 27,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P28",
++      "bytes": 1046312,
++      "sha256": "e25eaf1fde86512b70809fa65f3afd4afc9594d29c739c81266fb39775c3d064",
++      "physical_page": 28,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P29",
++      "bytes": 272077,
++      "sha256": "8f647ee74264eea4a41a99785551a927dbc6df3e71ec89dd4d131e2c8a8a41a8",
++      "physical_page": 29,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P30",
++      "bytes": 1581531,
++      "sha256": "e7d9f2b7d6f70b45b79f7ad20ea09ae2cdb8a4a0b048c4b5d7528ee9bdc82d6b",
++      "physical_page": 30,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P31",
++      "bytes": 738623,
++      "sha256": "e5f26c86d51277fa1e0f122a1be073148d1089f3b15e47ab59439aedff4ab5e1",
++      "physical_page": 31,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P32",
++      "bytes": 492872,
++      "sha256": "e1dd884cadc32fec3ecd655fad60aa47476a907bb1d47994669799947d514467",
++      "physical_page": 32,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P33",
++      "bytes": 896993,
++      "sha256": "790348addb7651ed44cdc05c33b6d5ab5940669b9010e9eaadb43db1f484a301",
++      "physical_page": 33,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P34",
++      "bytes": 1345926,
++      "sha256": "330ec25c5153d1e8540ddba6e5f190db8372e41977f3ab41aeecc2cae108e14b",
++      "physical_page": 34,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P35",
++      "bytes": 1005900,
++      "sha256": "01bbdc04e88e80e0f5ca93e7dce5a7c2dd6ea7430990c2f88b0a7a77c11cb55c",
++      "physical_page": 35,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P36",
++      "bytes": 578858,
++      "sha256": "ce86a5290b6f4896a8ac414d1d63de3fade87542fac0f21d03e22fa391faeb6f",
++      "physical_page": 36,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P37",
++      "bytes": 65157,
++      "sha256": "5e7e456e8675cbd1832560de891357bd52547cdd6c5077491d43da2ba3c3b937",
++      "physical_page": 37,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P38",
++      "bytes": 51660,
++      "sha256": "783b3ecffa4b9c8fcf984a40b6e260b2cd8f599358f067643f0954093d8932d9",
++      "physical_page": 38,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P39",
++      "bytes": 850837,
++      "sha256": "3238df45510d44016f85c986736b36432711bc876ae24215a8094f399853de7e",
++      "physical_page": 39,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P40",
++      "bytes": 755323,
++      "sha256": "4be34be7a1779bde943db0967c349367cdae90a43b304d5d825def6085cf0a99",
++      "physical_page": 40,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P41",
++      "bytes": 244049,
++      "sha256": "55594c0246828064a21c6642572cb00b00922f8944b2f50f75fc9b29a09ef156",
++      "physical_page": 41,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P42",
++      "bytes": 71109,
++      "sha256": "710b673141bd363e83efb701f00a4f28fa98bff7b57c5a5cd767e65d4f8bd774",
++      "physical_page": 42,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P43",
++      "bytes": 804821,
++      "sha256": "211327799484d33bb3b2e4b397f7cbe3746087820a79fcb04240871d55bd7250",
++      "physical_page": 43,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P44",
++      "bytes": 937256,
++      "sha256": "651f6eb72a979103ecf5f7adc8a0d600be92b5e5c9a012e1e8d94372fd3bbbb5",
++      "physical_page": 44,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P45",
++      "bytes": 98146,
++      "sha256": "1b1c7ef801dc4965762b1b40b03386096feb738b17d0fd6caed6d4844c6b77d6",
++      "physical_page": 45,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P46",
++      "bytes": 252419,
++      "sha256": "8d5d064721ba9fb587e2483c572fe097b650238ec50f7361d0b8684968723881",
++      "physical_page": 46,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "P47",
++      "bytes": 59426,
++      "sha256": "679d123ca82900ece7c24bb483ca1c99bc6749da1be535db289a78f4e5cbf2a2",
++      "physical_page": 47,
++      "kind": "whole-page 1800-pixel visual render"
++    },
++    {
++      "id": "D39",
++      "bytes": 1587099,
++      "sha256": "be0fa1f136ce11d8e061e9d974a018835796f5e872c095a27590c2a0dc1f2cf6",
++      "physical_page": 39,
++      "kind": "whole-page 3000-pixel legibility rerender; same source"
++    },
++    {
++      "id": "C194",
++      "bytes": 1108496,
++      "sha256": "cab600d8e27477d0efec30d2823344323f62ebde9ad027fb754ebe15519bbc57",
++      "physical_page": 194,
++      "kind": "previously read statement rechecked as context, not new reading"
++    },
++    {
++      "id": "C200",
++      "bytes": 1054072,
++      "sha256": "76fa696f00491531a883bc579fc1ce56cdbdc02fc1318d3d6401c3022a9e0360",
++      "physical_page": 200,
++      "kind": "previously read statement rechecked as context, not new reading"
++    },
++    {
++      "id": "C226",
++      "bytes": 1113205,
++      "sha256": "3527690be262de740b01d7207038410ae6e2531f3c59bd3ac231fac2a02d2ec0",
++      "physical_page": 226,
++      "kind": "previously read statement rechecked as context, not new reading"
++    },
++    {
++      "id": "C230",
++      "bytes": 1065651,
++      "sha256": "ad812166db0aec894d9dd9ea153632e44b08bb8d555e2a282211138cc536ae51",
++      "physical_page": 230,
++      "kind": "previously read statement rechecked as context, not new reading"
++    }
++  ],
++  "reading_scope": "27 distinct new whole pages:5,8,16,24–47. Page39 also rerendered at3000pixels, not an extra page. Four prior statement faces rechecked as context. At39/41 the visible selected columns and layout were inspected; faint/cropped/unselected totals were not exhaustively transcribed. No full237-page review, hidden-layer extraction, OCR, redaction reconstruction, native decoding, audio listening or clock calibration.",
++  "record_locators": [
++    {
++      "id": "SISO",
++      "pages": [
++        37,
++        38,
++        39,
++        40,
++        41,
++        42,
++        43,
++        44,
++        45
++      ],
++      "locator": "37Section6 divider;38Section7 divider;39 selected position report;40 representation notice;41 continuation;42 mostly blank/truncated continuation edge;43–44 facility drawing;45Section8 divider",
++      "limit": "Preserve physical ordering; do not assume section headings establish content absence or history of rearrangement."
++    },
++    {
++      "id": "WEATHER",
++      "pages": [
++        5
++      ],
++      "locator": "Field11 narrative body and right-hand DATE/TIME boxes; both pairs explicitly labelledUTC",
++      "values": [
++        "0751 UTC",
++        "09/11/01 1151 UTC",
++        "0951 UTC",
++        "09/11/01 1351 UTC"
++      ],
++      "limit": "No preferred value or cause; not proof actual four-hour event/recorder offset."
++    },
++    {
++      "id": "CUSTODIAN",
++      "pages": [
++        16
++      ],
++      "locator": "September19,2001 CertifiedIndex; certification sentence, seven-item list and BostonTRACON title",
++      "limit": "Source assertion of originals held then, not present-day survival/authentication or inclusion of all originals in PDF."
++    },
++    {
++      "id": "ROSTER",
++      "pages": [
++        24,
++        25,
++        26,
++        27,
++        28,
++        29,
++        30,
++        31,
++        32,
++        33,
++        34,
++        35,
++        36
++      ],
++      "locator": "Section5; AreaB cover/personnel/overtime/certification/correction/swap forms, then TrafficManagement forms",
++      "limit": "Shift versus duty-position scope and timezone/code definitions remain distinct; no full-roster publication."
++    },
++    {
++      "id": "BOUNDARIES",
++      "pages": [
++        8,
++        45,
++        46,
++        47
++      ],
++      "locator": "BostonTRACON account;Section8divider/flightstrip;Section9divider",
++      "limit": "Context navigation only, no strip decoding or flight reconstruction."
++    }
++  ],
++  "prior_review": "https://github.com/AveLyra/911-conspiracy-investigation/blob/59828ff9efa5ee2bf073ebf3796a012b35bdd180/investigation/broader-evidence/faa-personnel-continuation-2026-11-01/README.md"
++}
+--- /dev/null
++++ b/investigation/broader-evidence/faa-position-log-crosscheck-2026-11-01/verify.py
+@@ -0,0 +1,24 @@
++from pathlib import Path
++import argparse, hashlib, json
++p=argparse.ArgumentParser();p.add_argument('--source-map');a=p.parse_args()
++r=Path(__file__).resolve().parent;sha=lambda b:hashlib.sha256(b).hexdigest()
++m=json.loads((r/'MANIFEST.json').read_text())
++for f in m['files']:
++ b=(r/f['name']).read_bytes();assert len(b)==f['bytes'] and sha(b)==f['sha256'],f['name']
++d=json.loads((r/'COMPARISON.json').read_text())
++comparisons=[]
++for row in d['rows']:
++ on=row['statement_on']==row['report_on'].replace(':','')
++ off=row['statement_off']==row['report_off'].replace(':','')
++ comparisons.append({'id':row['id'],'on_string_agrees':on,'off_string_agrees':off,'position_labels':[row['statement_position'],row['report_position']],'physical_clock_alignment':'not tested'})
++def minute(t):
++ s=t.split()[0];assert len(s)==4 and s.isdecimal()
++ h,n=int(s[:2]),int(s[2:]);assert 0<=h<24 and 0<=n<60
++ return h*60+n
++weather=[{'id':w['id'],'adjacent_minus_body_minutes':minute(w['date_time'].split()[-2])-minute(w['body'])} for w in d['weather_pairs']]
++checked=[]
++if a.source_map:
++ sm=json.loads(Path(a.source_map).read_text());pins=json.loads((r/'SOURCE-PINS.json').read_text())
++ for f in pins['inputs']:
++  b=Path(sm[f['id']]).read_bytes();assert len(b)==f['bytes'] and sha(b)==f['sha256'],f['id'];checked.append(f['id'])
++print(json.dumps({'status':'passed','manifest_files':len(m['files']),'source_inputs_checked':checked,'time_field_comparisons':comparisons,'weather_label_arithmetic':weather,'scope':'Integrity of declared bytes and arithmetic/comparison of manually transcribed visible fields only; no native authenticity, independent corroboration, actual clock error, historical accuracy, cause or substantive-goal acceptance established.'}))

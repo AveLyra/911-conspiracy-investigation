@@ -1,0 +1,20 @@
+# Later SOCC entries: data-holder and notice-original leads
+
+October 30, 2026. Selected later entries identify a reported data holder and specific notices to retrieve. **They do not establish that the recordings mentioned earlier were retrieved or survive.**
+
+The source is the same [public SOCC-log mirror](https://www.scribd.com/document/16762194/T7-B20-Timelines-911-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version). Four viewer pages, **9–12**, were inspected through **seven viewport images**, with gaps and incomplete lower regions. This is not a complete four-page or 32-page review. The agency/native-PDF/release chain remains unverified. The [official-folder locator previously established](https://github.com/AveLyra/911-conspiracy-investigation/blob/490562c7747d26c6fa33a17bc0fe35262a6d5262/investigation/broader-evidence/telephone-socc-nara-locator-2026-10-30/README.md) does not authenticate these pages.
+
+- **Page 9, 0834 — reported PASSUR data.** A call attributed to PASSUR reports flight-track data for **77**. This supplies a candidate holder to trace, not the dataset, an authenticated aircraft association, an independent track or a calibrated clock. The underlying data, dates, system definitions and transfer/custody records are TODOs. Technical radar comparisons remain with the assigned technical investigation.
+- **Page 9, 1133 — notice and planned correction.** The entry reports an RES notice describing all airports as closed until further notice, qualifies that notice as outdated, and anticipates a fax and retraction. Preserve both accounts. An anticipated correction is not a dispatch or receipt. The original message, fax/retraction and delivery records remain TODOs.
+- **Page 12, 1145 — reported cancellation by NOTAM.** The entry says a coordination requirement from the 12th had been cancelled. The actual NOTAM, identifier, effective time, scope and distribution are missing. This row cannot establish the cancellation independently or imply that broader security requirements were abandoned.
+- **Page 12, 1130 — an advisory locator.** The raw displayed identifier is **01 025**. Retain that spacing; it is not a verified count of 25 advisories or proof that any particular message was issued or received. Obtain the advisory originals and version/distribution index before joining them to other entries.
+
+These notice entries concern the later operational log. They are **not** the FAA's 2003 Commission answer or a 2006 administrative disposition. No connection between those decision chains is established. The source's own qualifications, proposed correction and reported policy changes also weigh against treating every log entry as a final verified fact.
+
+Keep dates and clocks separate. Page 9's date header was not seen; its **0834/1133** labels must not be assigned to the attack morning. Page 11 contains a September 13 divider; page 12 contains an explicit September 13, 2001 afternoon divider. Neither calibrates the row clocks. No Bates labels for pages 9–12 were inferred. Page 9's observed footer includes **9 of 32** and **1/15/02 7:21**; that is not independent proof of a creation/event time.
+
+No successful recording-retrieval/save/transfer outcome was found in the inspected regions. Unseen regions and pages remain untested. Earlier conditional retrieval, tentative saved-document label, blanks, estimates and conflicting timing accounts remain unchanged. All **18 original criteria remain open/partial**.
+
+An earlier candidate in this turn proved to be an already excluded NTSB study under a misleading local filename; the existing public manifest already supplied that qualification. No new correction or telephone acquisition is claimed for it.
+
+[Source pins and verbatim conflicting clauses](SOURCE-PINS.json), [missing records and discriminating tests](OBSERVATIONS-AND-TODOS.json), [scope and checks](PROVENANCE-CHECKS.json), [point checklist](CHECKLIST.json), and [exact addition diff](TEXT-CHANGES.diff) are preserved. Raw sources, screenshots and contact/access-code fields are excluded from publication. No outreach, new request, fee or private push occurred.

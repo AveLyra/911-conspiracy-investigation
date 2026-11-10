@@ -1,0 +1,461 @@
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..8dcd3279
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,38 @@
++# SOCC log reader: preserved time labels and operational-record targets
++
++October30,2026. TEL02/TEL04, AUD016-A1, NI02/NI03 and TEL-NI-TIME. **A concrete public mirror of the AA SOC/SOCC log has been located and partially read.** It supplies exact page/Bates targets for the chronology referenced in interviews. This is a reader-level acquisition/read, not an authenticated native log, official release counterpart or completed call reconstruction.
++
++[Public log reader, document16762194](https://www.scribd.com/document/16762194/T7-B20-Timelines-911-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version). The viewer advertises32 pages. The bibliography that pointed to it labels it as a January15,2002 SOCC chronology; the visible p3/p4 print label is **1/15/02 7:21**. That is not proof of native creation time or the exact version used at the November2003 interview. The source PDF was not downloaded; original byte count/hash remain **unknown**. The interface displayed a sign-up/free-trial download link; no download/login was attempted and no gate was bypassed.
++
++## Reading and provenance
++
++Inspected: p1's boxed scope and upper flight display; p3 status/header plus the complete lower chronology table/footer; p4 table/footer across upper/lower viewports; only the upper continuation on p32. **This is not a full32-page or complete four-page reading.** Advertisements temporarily obscured some viewports; normal zoom, page navigation and fullscreen were used to read the selected table regions. No hidden assets, document state, API, OCR text behind redactions or sign-in data were accessed.
++
++P1 identifies the record as selected information recorded by SOCC director/support, rather than all information. P3 is printed **3of32 / AA KEAN COMM002532**; p4 is **4of32 / AA KEAN COMM002533**. These two exact pages narrow the release/version request. Four inspected browser screenshots were saved locally with byte/hash pins. They are **browser-rendered JPEG derivatives**, not the source PDF or original page-image entities, and are excluded from publication. [SOURCE-PINS.json](SOURCE-PINS.json) preserves that distinction.
++
++## Time labels retained without filling gaps
++
++On p3, the first table row is **0740**, followed by **0738**, a Boston-call row with **no time in its own cell**, then **0744**. The first row reports an operations manager advising of a number1-flight-attendant call and an aircraft emergency;0738 concerns lockout;0744 concerns ATC treating the flight as a hijack. Do not silently reorder the rows or give the blank cell0738/0744.
++
++The [previously recovered official November19 interview](https://catalog.archives.gov/medialive/0/6096/2609600/content/arcmedia/9-11/MFR/t-0148-911MFR-00014.pdf#page=2), p2, attributes **7:27CT** to a SOC timeline for the Gonzalez call, while p3 has **7:38CT** for lockout and **7:44CT** in the declaration context. Preserve the mirror's0740 and the interview's7:27 with their different descriptions; they have not been joined to one call/event or the same timeline version. **No13-minute actual delay or altered chronology is established.** A different report/event, entry-versus-event time, version difference or transcription problem remains an untested possibility. The exact FI log, source timeline and interview annotations would discriminate.
++
++Matching7:38/7:44 does not independently validate the interview, whose participants had a timeline before them. The prior **11:27/19:39 elapsed-position versus absolute/event-label questions remain unresolved**; this reading does not choose an anchor. The table's own clock definition has not been authenticated. P1 also contains a separate **0739 11Sep01** label and **11/1238Z** in flight information. Do not apply the interview's Central-Time convention to all display/table/print fields without their definitions.
++
++## Specific operational records to pursue
++
++- **0748, p3:** a request to contact FAA command center about removing or de-identifying Flight11 on ASD. This is evidence of a recorded request, not proof it was received or executed, what the display then showed, or why any later track existed. Seek request/receipt/action audit and display/feed records; technical interpretation stays with the technical investigation.
++- **0752, p3:** a reported drop/redial for a secure call. The November interview p4 separately describes an apparent tape-counter reset and second recording. These are separate candidate events until call identities and clocks join them. No missing segment or native continuity finding follows.
++- **0805 with parenthetical0745, p3:** lockout and earlier reported manager notification have distinct printed labels. Keep both rather than substituting one for the other.
++- **0822 /0905 /0916, p4:** unconfirmed United-aircraft reports and later identification are different knowledge states. They are not physical-impact times or proof nobody knew earlier.
++- **0833 /0846 /0936 /0941, p4:** reported ground-stop information, airline instruction, FAA presence and conference contact identify separate possible receipt/bridge/notification records. They do not prove a total FAA-contact blackout or authenticate completed deliveries.
++- **0834, p4:** the log contains a report attributing both WTC aircraft to American. Preserve it as a reported misidentification, not an accurate account of where Flight77 struck. This and the repeated unconfirmed reports are contrary evidence to treating every timeline entry as a precise, settled event.
++
++These are source-record and verification leads, not established concealment, deliberate warning suppression or conspiracy. Existing successful notifications, source uncertainty and mistaken reports remain alongside the concerns. [LEDGER.json](LEDGER.json), SL01-SL06, pins exact rows, preserves all10 printed time cells and two blanks in p3 order, and carries the missing inputs as TODOs.
++
++## Actual work and limits
++
++Four web query strings plus one prospectively declared official-catalog query were used. The official query displayed1,513 results; only the first20 titles were inspected, without confirming an exact original log object. The bibliography and public-reader routes were followed, with the additional reader navigation declared before use. No exhaustive search/absence claim, original PDF hash, native FI log, complete chronology/version chain or call/clock/audio test is claimed.
++
++[verify.py](verify.py) checks supplied screenshot identities and calculates the selected table's literal row-label ordering from the manual ledger. Its conditional numeric result is about document order, not elapsed event time or clock accuracy. [VERIFICATION.json](VERIFICATION.json) records the actual run. Manual reading is not independently replicated by checking our ledger. The prior November-unit29pass/1failed OCR result remains unchanged; it is not replaced by this different check.
++
++All18 five-track completion criteria remain open/partial, including the prioritized FAA correctedQFR/delivery, signed action/no-action and recommendation outcomes. Source data, private correspondence, raw images, full reader text/OCR, personnel/contact/account data and strategy are excluded from this seven-file public derivative. [TEXT-CHANGES.diff](TEXT-CHANGES.diff) records the actual addition at a unique path; previous records are unchanged. Publication requires separate fresh AveLyra destination/identity/author+committer/ref and every-file verification and is not substantive goal completion.
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..3c4df244
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,109 @@
++{
++  "L01": {
++    "role": "Public third-party reader of a primary-document scan; release and native-file authenticity unverified",
++    "reader_url": "https://www.scribd.com/document/16762194/T7-B20-Timelines-911-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version",
++    "publisher_displayed": "9/11 Document Archive",
++    "reader_document_id": "16762194",
++    "reader_advertised_pages": 32,
++    "access_date": "2026-10-30",
++    "native_pdf_acquired": false,
++    "native_pdf_bytes": null,
++    "native_pdf_sha256": null,
++    "native_mime_or_http_status_observed": null,
++    "download_scope": "Sign-up/free-trial link displayed. No download/login attempted; no claim that a completed download was denied. Normal public reader only.",
++    "source_portions_read": [
++      "page1 scope statement and upper flight display",
++      "page3 status/header then complete lower chronology table and footer across viewports",
++      "page4 chronology table and footer across upper/lower viewports",
++      "page32 upper continuation only"
++    ],
++    "reading_limit": "Not a full32-page or full four-page read. Page3 upper status content not exhaustively checked. No global absence or complete page/Bates sequence claim.",
++    "selected_identifiers": [
++      {
++        "page": 3,
++        "printed_footer": "3 of 32",
++        "bates": "AA KEAN COMM 002532",
++        "printed_stamp": "1/15/02 7:21"
++      },
++      {
++        "page": 4,
++        "printed_footer": "4 of 32",
++        "bates": "AA KEAN COMM 002533",
++        "printed_stamp": "1/15/02 7:21"
++      }
++    ],
++    "printed_stamp_limit": "Visible print/export label, not authenticated authoring date, event clock or full revision history.",
++    "screenshot_derivative_pins": [
++      {
++        "name": "reader-p1-scope.jpg",
++        "role": "Browser screenshot derivative as returned by tool; not source PDF/image entity or historical original",
++        "scope": "page1 scope statement and upper flight display; browser-rendered viewport",
++        "mime": "image/jpeg",
++        "bytes": 85336,
++        "sha256": "76b2feb112ee0dd0c8b966005af23687e2c5be23c9f19a1c8f41f9e3a0e6d320",
++        "utc": "2026-10-30T20:39:01.349875+00:00",
++        "raw_publication": false
++      },
++      {
++        "name": "reader-p3-rows.jpg",
++        "role": "Browser screenshot derivative as returned by tool; not source PDF/image entity or historical original",
++        "scope": "page3 table rows and footer; browser-rendered viewport",
++        "mime": "image/jpeg",
++        "bytes": 109560,
++        "sha256": "7c2e0e784d42032ca9b1486586d20256290e85ff2289e3bf1397788f68fee365",
++        "utc": "2026-10-30T20:39:02.689164+00:00",
++        "raw_publication": false
++      },
++      {
++        "name": "reader-p4-upper.jpg",
++        "role": "Browser screenshot derivative as returned by tool; not source PDF/image entity or historical original",
++        "scope": "page4 upper/middle table; browser-rendered viewport",
++        "mime": "image/jpeg",
++        "bytes": 114378,
++        "sha256": "baac497d3292bd3f54ca05a252d8e837017a00e68a2161aa6ed0e59cd48aa80f",
++        "utc": "2026-10-30T20:39:02.423788+00:00",
++        "raw_publication": false
++      },
++      {
++        "name": "reader-p4-lower.jpg",
++        "role": "Browser screenshot derivative as returned by tool; not source PDF/image entity or historical original",
++        "scope": "page4 lower table and footer; browser-rendered fullscreen viewport",
++        "mime": "image/jpeg",
++        "bytes": 97914,
++        "sha256": "2b5d30408bd840b9608e196a0e6bf773e5d5ad6fa6c065c3e093ccdec248d4de",
++        "utc": "2026-10-30T20:39:01.865661+00:00",
++        "raw_publication": false
++      }
++    ]
++  },
++  "B01": {
++    "role": "Bibliography used only as a source locator; historical conclusions not adopted",
++    "url": "https://shoestring911.blogspot.com/2012/12/",
++    "locator": "linked citation labeled SOCC Chronology September11,2001\u2013September24,2001; American Airlines January15,2002",
++    "observed_link": "http://www.scribd.com/doc/16762194/T7-B20-Timelines-911-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version",
++    "limit": "Citation label and matching printed stamp are not a source/version/custody join."
++  },
++  "N19": {
++    "role": "Previously acquired/read official archival interview summary; values reused, no new download or reinspection here",
++    "url": "https://catalog.archives.gov/medialive/0/6096/2609600/content/arcmedia/9-11/MFR/t-0148-911MFR-00014.pdf",
++    "sha256": "e45e7435e80b81df3f0c0376fb7be049595c1653dc6a00f1b6718c1b7dd411b3",
++    "bytes": 1120488,
++    "pages": 9,
++    "locators": [
++      "p1 document-assisted interview background",
++      "p2 timeline-attributed7:27CT report",
++      "p3 lockout7:38CT and declaration-context7:44CT",
++      "p4 tape-counter reset and total-conversation positions"
++    ],
++    "preceding_review": "https://github.com/AveLyra/911-conspiracy-investigation/blob/99cba5e45d03da7355a7df0449b9f8e4e5cad608/investigation/broader-evidence/telephone-november-interview-2026-10-30/README.md",
++    "limit": "The exact version of timeline available at the interview is not joined to L01."
++  },
++  "catalog_search": {
++    "url": "https://catalog.archives.gov/",
++    "query": "AA SOCC Log",
++    "observed_display": "1\u201320 of1,513 results",
++    "scope": "first20 titles inspected only; no exact log object confirmed. Search is not exhaustive and1,513 is not the number of relevant records."
++  },
++  "raw_publication": false,
++  "source_scope": "Hash pins identify screenshot derivatives as returned by the browser tool; they do not identify the source PDF, original page-image entities or a historical file. No raw images, full OCR, rosters, signatures or private material in public payload."
++}
+diff --git a/LEDGER.json b/LEDGER.json
+new file mode 100644
+index 00000000..fb5553d7
+--- /dev/null
++++ b/LEDGER.json
+@@ -0,0 +1,170 @@
++{
++  "source_rows": {
++    "source": "L01",
++    "page": 3,
++    "bates": "AA KEAN COMM002532",
++    "transcription_role": "manual semantic transcription of visible table time cells and paraphrased subjects; not a native carrier export or independent analyst review",
++    "rows": [
++      {
++        "row": 1,
++        "time_literal": "0740",
++        "description": "Report attributed to an operations manager about a call from the number1 flight attendant and aircraft emergency; same row begins with normal departure language.",
++        "limit": "Not uniquely joined to the Gonzalez call; who spoke directly to whom and which time event this is remain unknown."
++      },
++      {
++        "row": 2,
++        "time_literal": "0738",
++        "description": "Flight11 lockout; this row does not itself say manifest.",
++        "limit": "N19 supplies manifest context separately; do not silently add that noun to the table."
++      },
++      {
++        "row": 3,
++        "time_literal": null,
++        "description": "Boston traffic-center call and reported communications/transponder/threat information.",
++        "limit": "Blank time cell retained; do not silently inherit0738 or0744."
++      },
++      {
++        "row": 4,
++        "time_literal": "0744",
++        "description": "ATC reportedly handling the flight as a hijack, possible JFK destination."
++      },
++      {
++        "row": 5,
++        "time_literal": "0745",
++        "description": "Morning conference briefing."
++      },
++      {
++        "row": 6,
++        "time_literal": "0748",
++        "description": "Request to contact FAA command center about removing or de-identifying Flight11 on ASD.",
++        "limit": "Recorded request, not proof of execution, display state or aircraft position."
++      },
++      {
++        "row": 7,
++        "time_literal": "0749",
++        "description": "SOC/SOCC message reportedly sent.",
++        "limit": "Not a delivery/recipient receipt."
++      },
++      {
++        "row": 8,
++        "time_literal": "0752",
++        "description": "Participants reportedly dropped a call and redialed for a secure call.",
++        "limit": "Conversation/participants/system not uniquely identified; not joined to N19 tape-counter reset."
++      },
++      {
++        "row": 9,
++        "time_literal": "0754",
++        "description": "Reservations reported receiving a flight-attendant call.",
++        "limit": "Not uniquely identified with row1 or any authenticated call leg."
++      },
++      {
++        "row": 10,
++        "time_literal": "0758",
++        "description": "Reported confirmation of aircraft hitting WTC.",
++        "limit": "Reported knowledge entry, not an independent impact timestamp."
++      },
++      {
++        "row": 11,
++        "time_literal": "0805",
++        "description": "Flight77 lockout; parenthetical0745 notification by center manager.",
++        "limit": "Two distinct printed labels preserved; notification, event and entry meanings not adjudicated."
++      },
++      {
++        "row": 12,
++        "time_literal": null,
++        "description": "Additional flight-attendant information.",
++        "limit": "Blank time retained; not automatically part of the preceding0805 event."
++      }
++    ],
++    "raw_order_retained": true,
++    "blank_time_cell_policy": "null; never zero/inherit/deduplicate"
++  },
++  "observations": [
++    {
++      "id": "SL01",
++      "type": "observed reader/image provenance",
++      "source": "L01/B01",
++      "locator": "p1 handwritten title and boxed scope statement; p3/p4 footers",
++      "finding": "A concrete log representation is readable publicly. It describes selected information recorded by SOCC director/support, not all events. Printed January2002 label and two exact Bates pages give narrower authentication targets.",
++      "counterevidence_or_limit": "Mirror and bibliography are not proof of release/custody/native version or completeness. This is not the acquired official source used at the interview."
++    },
++    {
++      "id": "SL02",
++      "type": "observed conflicting row labels; conditional comparison",
++      "source": "L01/N19",
++      "locator": "L01 p3 AA KEAN COMM002532 table rows1-4; N19 p2 first paragraph and p3 lockout/declaration paragraphs",
++      "values": [
++        "L01 first table row0740, followed by0738; blank time on Boston-call row; next timed row0744",
++        "N19 first Gonzalez call7:27CT attributed to SOC timeline; lockout7:38CT; nearby declaration7:44CT"
++      ],
++      "finding": "The visible table is not monotonically ordered at its start. Some labels match interview labels, while the opening report has a different value/description. Preserve each row and its source context.",
++      "counterevidence_or_limit": "Not evidence of a13-minute actual delay or altered chronology. Row1 describes a number1-flight-attendant report and may be a different event or report; exact version/event/utterance and time semantics are missing. Matching7:38/7:44 does not independently corroborate the interview, which used a timeline. Do not fill blank cells, reorder rows or force elapsed/absolute clock joins."
++    },
++    {
++      "id": "SL03",
++      "type": "source-reported request, not execution",
++      "source": "L01",
++      "locator": "p3 row0748",
++      "finding": "An instruction/request to seek FAA removal or de-identification of Flight11 from ASD is a specific operational-record lead.",
++      "counterevidence_or_limit": "No completed removal, changed feed, flight movement, intentional concealment or cause of a later screen trace is established. Seek actual request/receipt, action/audit log and display/feed version. Technical interpretation belongs to the technical owner."
++    },
++    {
++      "id": "SL04",
++      "type": "source-reported call change, not recording test",
++      "source": "L01/N19",
++      "locator": "L01 p3 row0752; N19 p4 opening paragraph",
++      "finding": "The log describes a redial for a secure call; the interview separately reports a tape-counter reset and second recording. Preserve these as separate candidates.",
++      "counterevidence_or_limit": "Do not assume they are the same call, clock, mechanism or missing segment. No native call/tape continuity or content test here; previously held public audio derivatives/tests remain held/performed."
++    },
++    {
++      "id": "SL05",
++      "type": "source reports with distinct knowledge states",
++      "source": "L01",
++      "locator": "p4 AA KEAN COMM002533 rows0822,0833-0834,0846,0905,0916,0936,0941",
++      "values": [
++        "0822 unconfirmed United-aircraft report;0905 unconfirmed second-aircraft report;0916 United175 identification",
++        "0833 ATC ground-stop report;0846 airline land/hold instruction",
++        "0834 report attributed both WTC aircraft to American;0936 FAA presence in an office;0941 conference contact"
++      ],
++      "finding": "Keep unconfirmed information, misidentification, instruction, reported contact and later identification as different record types, not one event or uniformly accurate historical statements.",
++      "counterevidence_or_limit": "No equation of0916 with physical impact time, no global claim that nobody knew earlier, no measured notification delay or complete FAA-contact failure. Reports of multiple contacts and mistaken identification constrain a simple total-blackout account without proving why any failure occurred."
++    },
++    {
++      "id": "SL06",
++      "type": "observed labels, clock interpretation untested",
++      "source": "L01",
++      "locator": "p1 upper flight-information display; p3/p4 table/footer",
++      "values": [
++        "0739 11Sep01",
++        "11/1238Z",
++        "printed1/15/02 7:21",
++        "four-digit table labels without a verified table-clock definition"
++      ],
++      "finding": "Printed dates/time labels have different explicit contexts. Preserve them literally rather than applying one clock convention to every field.",
++      "counterevidence_or_limit": "No timezone conversion, actual device clock, calibrated offset, reconstruction or version date established. N19 uses Central Time; that does not authenticate the mirror table clock."
++    }
++  ],
++  "todos": [
++    {
++      "id": "TEL-NI-TIME",
++      "status": "partly advanced: selected public log pages read; native/version/event/clock join still TODO",
++      "missing": "Agency/release counterpart or authenticated native log; exact FI record; complete table/attachment version used by staff; authors/revision and entry/event/receipt definitions; original annotated timeline and Halleck notes."
++    },
++    {
++      "id": "TEL-SL-ASD",
++      "status": "TODO",
++      "missing": "Actual FAA request/receipt and execution/audit/display/feed records for row0748; do not infer execution from request."
++    },
++    {
++      "id": "TEL-SL-BRIDGE",
++      "status": "TODO",
++      "missing": "Call identifiers, participants, invitation/redial/recording logs; first/second original tape identities; same-conversation joins; recording clocks and continuity. No new audio test performed."
++    },
++    {
++      "id": "ALL18",
++      "status": "open/partial",
++      "missing": "All original five-track criteria retained; this unit does not acquire FAA correctedQFR/receipt/signed decision or native carrier/recorder/material/steel inputs."
++    }
++  ],
++  "limits": "No adjudication of clocks/versions/cause, no historical attendance/notification/flight-location/intent finding."
++}
+diff --git a/verify.py b/verify.py
+new file mode 100644
+index 00000000..7094a889
+--- /dev/null
++++ b/verify.py
+@@ -0,0 +1,17 @@
++from pathlib import Path
++import argparse,hashlib,json
++p=argparse.ArgumentParser();p.add_argument('--captures',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args();root=Path(__file__).parent
++s=json.loads((root/'SOURCE-PINS.json').read_text());ledger=json.loads((root/'LEDGER.json').read_text());checks=[]
++for x in s['L01']['screenshot_derivative_pins']:
++ b=(a.captures/x['name']).read_bytes();checks.append({'file':x['name'],'bytes_match':len(b)==x['bytes'],'sha256_match':hashlib.sha256(b).hexdigest()==x['sha256']})
++rows=ledger['source_rows']['rows'];pairs=[]
++for left,right in zip(rows,rows[1:]):
++ x,y=left['time_literal'],right['time_literal']
++ if x is None or y is None:continue
++ def seconds(v):
++  assert len(v)==4 and v.isdigit() and int(v[2:])<60
++  return (60*int(v[:2])+int(v[2:]))*60
++ pairs.append({'left_row':left['row'],'left_literal':x,'right_row':right['row'],'right_literal':y,'nominal_label_seconds_difference':seconds(y)-seconds(x)})
++r={'screenshot_identity_checks':checks,'all_capture_bytes_and_hashes_match':all(x['bytes_match'] and x['sha256_match'] for x in checks),'manual_rows':len(rows),'printed_time_cells':sum(x['time_literal'] is not None for x in rows),'blank_time_cells_preserved':sum(x['time_literal'] is None for x in rows),'adjacent_pairs_with_both_time_cells':pairs,'decreasing_adjacent_labels':[x for x in pairs if x['nominal_label_seconds_difference']<0],'assumptions':'Conditional HHMM arithmetic on manually transcribed table labels; blanks not filled or skipped to create adjacent pairs; no timezone/clock/event/utterance join.','scope':'Checks browser screenshot derivative identities and document-order arithmetic only. Not source-PDF authentication, independent transcription, historical correctness, event delay, clock fit, audio continuity or conspiracy test.'}
++a.output.open('x').write(json.dumps(r,indent=2)+'\n');print(json.dumps({k:r[k] for k in ['all_capture_bytes_and_hashes_match','manual_rows','printed_time_cells','blank_time_cells_preserved','decreasing_adjacent_labels']}))
++raise SystemExit(0 if r['all_capture_bytes_and_hashes_match'] else 1)
+diff --git a/VERIFICATION.json b/VERIFICATION.json
+new file mode 100644
+index 00000000..7f086aee
+--- /dev/null
++++ b/VERIFICATION.json
+@@ -0,0 +1,97 @@
++{
++  "screenshot_identity_checks": [
++    {
++      "file": "reader-p1-scope.jpg",
++      "bytes_match": true,
++      "sha256_match": true
++    },
++    {
++      "file": "reader-p3-rows.jpg",
++      "bytes_match": true,
++      "sha256_match": true
++    },
++    {
++      "file": "reader-p4-upper.jpg",
++      "bytes_match": true,
++      "sha256_match": true
++    },
++    {
++      "file": "reader-p4-lower.jpg",
++      "bytes_match": true,
++      "sha256_match": true
++    }
++  ],
++  "all_capture_bytes_and_hashes_match": true,
++  "manual_rows": 12,
++  "printed_time_cells": 10,
++  "blank_time_cells_preserved": 2,
++  "adjacent_pairs_with_both_time_cells": [
++    {
++      "left_row": 1,
++      "left_literal": "0740",
++      "right_row": 2,
++      "right_literal": "0738",
++      "nominal_label_seconds_difference": -120
++    },
++    {
++      "left_row": 4,
++      "left_literal": "0744",
++      "right_row": 5,
++      "right_literal": "0745",
++      "nominal_label_seconds_difference": 60
++    },
++    {
++      "left_row": 5,
++      "left_literal": "0745",
++      "right_row": 6,
++      "right_literal": "0748",
++      "nominal_label_seconds_difference": 180
++    },
++    {
++      "left_row": 6,
++      "left_literal": "0748",
++      "right_row": 7,
++      "right_literal": "0749",
++      "nominal_label_seconds_difference": 60
++    },
++    {
++      "left_row": 7,
++      "left_literal": "0749",
++      "right_row": 8,
++      "right_literal": "0752",
++      "nominal_label_seconds_difference": 180
++    },
++    {
++      "left_row": 8,
++      "left_literal": "0752",
++      "right_row": 9,
++      "right_literal": "0754",
++      "nominal_label_seconds_difference": 120
++    },
++    {
++      "left_row": 9,
++      "left_literal": "0754",
++      "right_row": 10,
++      "right_literal": "0758",
++      "nominal_label_seconds_difference": 240
++    },
++    {
++      "left_row": 10,
++      "left_literal": "0758",
++      "right_row": 11,
++      "right_literal": "0805",
++      "nominal_label_seconds_difference": 420
++    }
++  ],
++  "decreasing_adjacent_labels": [
++    {
++      "left_row": 1,
++      "left_literal": "0740",
++      "right_row": 2,
++      "right_literal": "0738",
++      "nominal_label_seconds_difference": -120
++    }
++  ],
++  "assumptions": "Conditional HHMM arithmetic on manually transcribed table labels; blanks not filled or skipped to create adjacent pairs; no timezone/clock/event/utterance join.",
++  "scope": "Checks browser screenshot derivative identities and document-order arithmetic only. Not source-PDF authentication, independent transcription, historical correctness, event delay, clock fit, audio continuity or conspiracy test."
++}

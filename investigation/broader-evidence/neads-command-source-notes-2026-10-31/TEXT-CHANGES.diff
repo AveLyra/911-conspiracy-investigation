@@ -1,0 +1,737 @@
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..0201b2f3
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,14 @@
++# Requirement accountability
++
++| Requirement | Outcome / location | Verification and remaining limit |
++| --- | --- | --- |
++| Pursue an uncompleted original operational-record lead | Newly acquired official ISCAP doc8; SOURCES.json and README | Two declared queries and one linked18-page source; acquisition is a released scan, not native authoring/audio or a completed original-message test. |
++| Inspect actual contents rather than repeat summaries | All18images viewed; PAGE-READING.json; MC01–MC10 | Handwriting/typed sections distinguished; unclear portions not guessed; no all-marks certified transcription. |
++| Preserve conflicting records/values | Version omission/timing warning, dates, CAP label, header change, participation and awareness scopes | Literal values retained without a controlling value or cause; underlying versions and event evidence remain TODOs. |
++| Source links and exact locators | SOURCES.json and SOURCE-PINS.json | Official URL, acquisition times/hash and physical/printed-page/visible-bullet anchors; no invented original text-line numbers. |
++| Test assumptions and contrary evidence | README and pin limits | Correction effort, different scopes/roles, ordinary later reconstruction and uncertain assembly retained as possible alternatives; no intentional-deception finding. |
++| Carry all original tracks/requirements | OPEN-TODOS.json | All18 open/partial; completed prior technical tests remain performed, not rerun or relabeled missing. |
++| Keep native research and public derivative distinct | Unchanged original/source fingerprints; separate new public path | No source overwrite, private payload, source repair or sparse expansion. |
++| Exact text diff; visual check separate | TEXT-CHANGES.diff, EDITORIAL-REVISION.diff and PAGE-READING.json/VERIFICATION.json | New-document addition diff against absent path; source rendering/reading is a separate verification dimension. |
++| AveLyra scoped commit and push | Separate native publication plan and receipts | Pending until actual account/destination/author+committer and remote ref/all-file checks succeed; no main merge or private push. |
++| Meaningful Overview update | Separate local handoff after verified publication | Only standing-authorized Overview destination; tool delivery does not prove integration or acceptance. |
+diff --git a/EDITORIAL-REVISION.diff b/EDITORIAL-REVISION.diff
+new file mode 100644
+index 00000000..d28f515a
+--- /dev/null
++++ b/EDITORIAL-REVISION.diff
+@@ -0,0 +1,27 @@
++diff --git a/publication-v1/CHECKLIST.md b/publication-v2/CHECKLIST.md
++index 3a8e80dc..0201b2f3 100644
++--- a/publication-v1/CHECKLIST.md
+++++ b/publication-v2/CHECKLIST.md
++@@ -12 +12 @@
++-| Exact text diff; visual check separate | TEXT-CHANGES.diff and PAGE-READING.json/VERIFICATION.json | New-document addition diff against absent path; source rendering/reading is a separate verification dimension. |
+++| Exact text diff; visual check separate | TEXT-CHANGES.diff, EDITORIAL-REVISION.diff and PAGE-READING.json/VERIFICATION.json | New-document addition diff against absent path; source rendering/reading is a separate verification dimension. |
++diff --git a/publication-v1/README.md b/publication-v2/README.md
++index 163bee09..9cb4b0cd 100644
++--- a/publication-v1/README.md
+++++ b/publication-v2/README.md
++@@ -38,0 +39,2 @@ The strongest relevant objection is that the interview/review process was explic
+++The typed notes describe review of chat logs and recordings, including tape playback. That is a recorded interview-review activity, not merely an unprompted recollection; the exact reviewed media and versions remain unacquired here, and we did not independently replay or validate them.
+++
++@@ -47 +49 @@ The existing May 2003 native drafting/corrected-QFR/delivery and signed 2006 FAA
++-`PAGE-READING.json` states actual visual scope; `VERIFICATION.json` separates source/raster integrity from historical authentication. `CHECKLIST.md` maps the requirements and `TEXT-CHANGES.diff` is the actual Git addition diff. The unchanged original PDF and rasters remain in the native source store; this redundant public derivative contains reviewed notes and safe source references, not raw marked pages/full speech, ancillary personnel/contact/access data, private case correspondence or credentials. No outreach, fee, new request, filing, audio/clock decoding, experiment, private push, deletion or history rewrite occurred. Publication is separately verified by the remote commit/ref/file receipt.
+++`PAGE-READING.json` states actual visual scope; `VERIFICATION.json` separates source/raster integrity from historical authentication. `CHECKLIST.md` maps the requirements and `TEXT-CHANGES.diff` is the actual Git addition diff. `EDITORIAL-REVISION.diff` preserves the final wording changes from the retained draft; no source values were changed. The unchanged original PDF and rasters remain in the native source store; this redundant public derivative contains reviewed notes and safe source references, not raw marked pages/full speech, ancillary personnel/contact/access data, private case correspondence or credentials. No outreach, fee, new request, filing, audio/clock decoding, experiment, private push, deletion or history rewrite occurred. Publication is separately verified by the remote commit/ref/file receipt.
++diff --git a/publication-v1/SOURCE-PINS.json b/publication-v2/SOURCE-PINS.json
++index 004bda71..914cd4f3 100644
++--- a/publication-v1/SOURCE-PINS.json
+++++ b/publication-v2/SOURCE-PINS.json
++@@ -16 +16 @@
++-      "observation_or_source_report": "The notes say a ZNY/fighter-positioning call and some following conversations occur in an original transcript but not the Alderson transcript, despite being clear. A separate bold note requires Alderson MCC OP Ch.2 times from around9:10forward to be redone and verified.",
+++      "observation_or_source_report": "The notes say a ZNY/fighter-positioning call and some following conversations occur in an original transcript but not the Alderson transcript, despite being clear. A separate bold note says Alderson MCC OP Ch.2 times from around9:10forward must be redone and verified.",
++@@ -104 +104 @@
++-        "There were no time delays or lags on info coming in – milliseconds."
+++        "milliseconds."
+diff --git a/OPEN-TODOS.json b/OPEN-TODOS.json
+new file mode 100644
+index 00000000..4ac6ffbb
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,94 @@
++{
++  "new_targets": [
++    {
++      "id": "MC-T01",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Actual Alderson and original transcript versions, their complete calls/channel/copy manifests, source audio and assembly/transmittal history.",
++      "test_and_revisit_trigger": "Compare the stated omitted Bellucio/ZNY and following calls across the actual versions; establish version-specific coverage, not an inferred universal omission."
++    },
++    {
++      "id": "MC-T02",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Actual post9:10timing redo/verification worksheet, validated transcript, review comments and source clock/CD/export crosswalk.",
++      "test_and_revisit_trigger": "Determine whether/when the required verification occurred and its results. Keep NCT0056356/RDOD04013680 and RDOD04020795 as existing unacquired targets, not automatically the worksheet mentioned here. No repeat clock queries or alignment to a preferred narrative."
++    },
++    {
++      "id": "MC-T03",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Original ID-section received information, source/validation/correction notes and matched MCC/FAA call-leg or message records.",
++      "test_and_revisit_trigger": "Trace the reported ID→MCCstep back to its originating source and actual recipients. Join AEA1130at1326/1329only through content/source/leg evidence, not matching topics or printed clocks."
++    },
++    {
++      "id": "MC-T04",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Native MCC/M CCT, CONR/AWC and exercise chat logs, exports, schemas, authors and version/entry-time history.",
++      "test_and_revisit_trigger": "Separate event time, entry time, subsequent reconstruction and source data. Test omissions, later annotation and ordinary reconstruction as well as alteration, without assuming either."
++    },
++    {
++      "id": "MC-T05",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "WOC/Herndon/AirThreat bridge participation and BattleCab/secure/DSN call-routing records.",
++      "test_and_revisit_trigger": "Test capability versus actual individual/organizational participation, recipients, bridges and time. A personal did-not statement is not organization-wide absence."
++    },
++    {
++      "id": "MC-T06",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "The actual NORAD press release referred to by the literal9/18/04/0843line, all relevant versions and note-creation/correction history.",
++      "test_and_revisit_trigger": "Preserve literal04and January2004labels; identify the actual source before considering typo, later compilation, wrong referent or another explanation. Test the challenged0843value against authenticated records, not the interview label alone."
++    },
++    {
++      "id": "MC-T07",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Official six-page MFR NAID2610370and a source-to-note/author/date/assembly crosswalk.",
++      "test_and_revisit_trigger": "Compare the actual MFR with the18-page ISCAPpacket; establish which notes/questions belong to which interview, what was adopted and what remained an open question. Neither same title nor different extent settles equivalence."
++    },
++    {
++      "id": "MC-T08",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Underlying RADES/raw target information, original Z-point/source records and aircraft/call association.",
++      "test_and_revisit_trigger": "Test primary-target identity, source accuracy and information-flow scope independently; no new technical decoding/calibration task is duplicated here."
++    },
++    {
++      "id": "MC-T09",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Original readiness/authority orders, routing/receipt records, staff-note custody and formal after-action/correction records.",
++      "test_and_revisit_trigger": "Test the remaining readiness/control/debrief claims. Keep recollection, policy, order, actual execution, later record collection and signed FAA personnel/disposition events distinct."
++    }
++  ],
++  "previous_omic_todos": {
++    "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/dcdc9f647130139c60128ae3c131d40955536b34/investigation/broader-evidence/faa-omic-body-completion-2026-10-31/OPEN-TODOS.json",
++    "status": "OM-T01–07andOM-T09–12remain open. OM-T08only page reading complete. New ID→MCCsource attribution partially advances OM-T09 but does not complete original-message/call joins."
++  },
++  "all_original_requirements": {
++    "FAA": [
++      "FAA01",
++      "FAA02",
++      "FAA03",
++      "FAA04"
++    ],
++    "telephone": [
++      "TEL01",
++      "TEL02",
++      "TEL03",
++      "TEL04"
++    ],
++    "recorder": [
++      "REC01",
++      "REC02",
++      "REC03"
++    ],
++    "materials": [
++      "MAT01",
++      "MAT02",
++      "MAT03"
++    ],
++    "steel": [
++      "STL01",
++      "STL02",
++      "STL03",
++      "STL04"
++    ]
++  },
++  "completion": "All18originalcriteria remain open/partial; source acquisition/review progresses the operational trail, not native authentication, receipt or an unperformed empirical test.",
++  "ownership": "Operational acquisition here; recorder/materials decoding and calibrated clock tests retain the assigned technical owner. No outreach, request, fee or new experiment performed."
++}
+diff --git a/PAGE-READING.json b/PAGE-READING.json
+new file mode 100644
+index 00000000..55c1d536
+--- /dev/null
++++ b/PAGE-READING.json
+@@ -0,0 +1,133 @@
++{
++  "method": "All18whole-page images actually viewed in nine pairs; no OCR, hidden text or masked-field reconstruction. Unclear handwriting is not resolved by guessing.",
++  "pages": [
++    {
++      "physical_page": 1,
++      "printed_page": 1,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten transcript-excerpt/review notes; page references, time labels, routing/control and Washington-bound report fragments. Not a verbatim certified transcript.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 2,
++      "printed_page": 2,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten transcript-excerpt/review notes; page references, time labels, routing/control and Washington-bound report fragments. Not a verbatim certified transcript.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 3,
++      "printed_page": 3,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten questions and comparisons concerning Otis/Langley, other reported accounts, readiness, United93 and radar. Authorship/date and attribution of each quotation are not established by the bundle title.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 4,
++      "printed_page": 4,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten questions and comparisons concerning Otis/Langley, other reported accounts, readiness, United93 and radar. Authorship/date and attribution of each quotation are not established by the bundle title.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 5,
++      "printed_page": 5,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten questions and comparisons concerning Otis/Langley, other reported accounts, readiness, United93 and radar. Authorship/date and attribution of each quotation are not established by the bundle title.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 6,
++      "printed_page": 6,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten questions and comparisons concerning Otis/Langley, other reported accounts, readiness, United93 and radar. Authorship/date and attribution of each quotation are not established by the bundle title.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 7,
++      "printed_page": 7,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten questions and comparisons concerning Otis/Langley, other reported accounts, readiness, United93 and radar. Authorship/date and attribution of each quotation are not established by the bundle title.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 8,
++      "printed_page": 8,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten questions and comparisons concerning Otis/Langley, other reported accounts, readiness, United93 and radar. Authorship/date and attribution of each quotation are not established by the bundle title.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 9,
++      "printed_page": 9,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten interview/communications notes and ancillary personnel material. Page9 has a crossed-out header name with a different subject name above; page11 includes biographical/recollection notes. Incidental personnel details are excluded from the derivative.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 10,
++      "printed_page": 10,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten interview/communications notes and ancillary personnel material. Page9 has a crossed-out header name with a different subject name above; page11 includes biographical/recollection notes. Incidental personnel details are excluded from the derivative.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 11,
++      "printed_page": 11,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten interview/communications notes and ancillary personnel material. Page9 has a crossed-out header name with a different subject name above; page11 includes biographical/recollection notes. Incidental personnel details are excluded from the derivative.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 12,
++      "printed_page": 12,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten continuation/playback/conference notes, ambiguous numeric labels and order terminology. No conversion of these labels to calibrated event clocks.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 13,
++      "printed_page": 13,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten continuation/playback/conference notes, ambiguous numeric labels and order terminology. No conversion of these labels to calibrated event clocks.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 14,
++      "printed_page": 14,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Handwritten continuation/playback/conference notes, ambiguous numeric labels and order terminology. No conversion of these labels to calibrated event clocks.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 15,
++      "printed_page": 15,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Typed bullet interview notes, including log/bridge descriptions, event/tape discussion, transcript-version/timing warnings, reported information sources and aircraft-association qualifications. Page18 is sparse but not blank.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 16,
++      "printed_page": 16,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Typed bullet interview notes, including log/bridge descriptions, event/tape discussion, transcript-version/timing warnings, reported information sources and aircraft-association qualifications. Page18 is sparse but not blank.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 17,
++      "printed_page": 17,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Typed bullet interview notes, including log/bridge descriptions, event/tape discussion, transcript-version/timing warnings, reported information sources and aircraft-association qualifications. Page18 is sparse but not blank.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    },
++    {
++      "physical_page": 18,
++      "printed_page": 18,
++      "actually_viewed": true,
++      "form_and_reading_scope": "Typed bullet interview notes, including log/bridge descriptions, event/tape discussion, transcript-version/timing warnings, reported information sources and aircraft-association qualifications. Page18 is sparse but not blank.",
++      "limit": "Whole-page visual review at1800pixels; not a certified verbatim transcription of all handwriting, crossed-out or unclear text."
++    }
++  ],
++  "form_summary": "Physical1–14 handwritten material;15–18 typed bullet notes. One released composite packet, not18independent witnesses.",
++  "new_acquisition_vs_historical_event": "Officially hosted released scan acquired now; not the native notes, source recordings, final six-page MFR or contemporaneous September2001 command messages."
++}
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..9cb4b0cd
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,49 @@
++# NEADS command interview notes: transcript omissions, timing verification and information sources
++
++Reviewed October 31, 2026. This supplement follows the [newly read FAA Operations Manager exchanges](https://github.com/AveLyra/911-conspiracy-investigation/blob/dcdc9f647130139c60128ae3c131d40955536b34/investigation/broader-evidence/faa-omic-body-completion-2026-10-31/README.md). A newly acquired official release gives a concrete source-version warning and a more specific reported path for the American 11 still-airborne information. It does **not** identify the rumor's ultimate origin, establish deliberate deception or authenticate the underlying call clocks.
++
++## The most useful new record
++
++On [physical/printed page 17](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17), typed interview notes state that a ZNY/fighter-positioning call and some following conversations appear in an **original transcript** but not the **Alderson transcript**, although the communications are clear. A separate bold note says that, from around **9:10 forward**, the Alderson **MCC OP Ch. 2** times **“must be redone and verified.”**
++
++This is direct documentary support for retrieving and comparing the two versions and the actual verification work. It is not our completed measurement of an omission or clock error. We have not established which versions those labels denote, whether the warning was later acted on, or whether either is the reproduced NCT transcript or held MP3. A corrected final version may exist; this note cannot prove that it does not.
++
++The same page attributes the American 11 still-airborne/toward-Washington information **to the identification section as the reported source to the mission crew commander**. It separately describes Battle Cab's role in a Langley decision. These are distinct source/decision steps. They narrow the next retrieval to ID-section inputs, verification/correction messages and matched calls; they do not establish the originating source or a direct join to the FAA's printed 1326/1329 exchanges.
++
++## Source, form and reading scope
++
++- [Official NARA ISCAP 2011-048 index](https://www.archives.gov/declassification/iscap/pdf/2011-048.html), row *Interview of Kevin Nasypany*, dated **2004/01/22**; release label **9/29/2014**.
++- [Released document 8](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf): **18 pages**, **13,154,124 bytes**; SHA-256 `598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e`. Ordinary public acquisition returned 200; original and readback fingerprints match. Exact acquisition times are in `SOURCES.json`.
++- All **18 whole-page images** were actually viewed. Pages 1–14 are handwritten excerpt/question/interview/continuation material; pages 15–18 are typed bullet interview notes. Page 18 is sparse, with one substantive bullet and two empty markers, rather than blank. Unclear handwriting, masks and initials were not reconstructed. This is not a certified verbatim transcription of every mark.
++- NARA separately indexes **NAID 2610370**, *Nasypany, Kevin J.*, **1/22–23/2004**, **six pages**. That is a separate MFR locator. Its body and page/byte relationship to this 18-page mixed packet were not acquired or established here. We do not silently equate the two.
++
++Official hosting establishes the provenance of this released scan. It does not by itself establish the author/date of every note, assembly completeness, accurate recollection or the truth and timing of the source events. The catalogue date, internal interview labels, recording/excerpt labels and 2014 release date are different kinds of evidence.
++
++## Other findings and qualifications
++
++| Pin / exact page anchor | Preserved record | What it means and what remains unknown |
++| --- | --- | --- |
++| MC03; handwritten 9–10 and typed 15, communications/bridge bullets | Notes distinguish FAA communications via ID/WD; possible WOC/Herndon bridge access; an attributed personal statement of not joining; possible Battle Cab access; and no personal Air Threat participation/monitoring. Page 9 reports no NORAD/CMOC conversation; page 15 says he could not communicate with CMOC. | **Capability, individual conduct and organizational participation differ.** Neither possible access nor one individual's denial proves whether another position joined. Native bridge/call-leg/recipient records are still needed. |
++| MC04; typed 15, chat-log bullets | Multiple logs and different read/write rights are described. Real-world events reportedly entered an **exercise chat log**; some data, including RADES material, **may** have been entered after 9/11. | A log's title is not sufficient to classify all its entries or prove contemporaneous entry. Later reconstruction is not automatically fabrication. Retrieve originals, schema, entry/event timestamps, source data and version history. |
++| MC05; typed 15–16, awareness/ID-feed and Z-point/primary-return bullets | Favorable situation-awareness and extremely fast internal information-flow assessments coexist with not hearing the initial call, an interviewer challenging the FAA-provided Z-point, and qualification that a believed AA11 primary observation may not have been that aircraft. | Preserve both the praise and limitations. These concern different scopes; they do not independently measure latency or prove one global contradiction. A staff comment is not an independent radar test. |
++| MC06; handwritten 9/14 and typed 16, press-release bullet | January labels **1/22/04** and **1/23** remain beside the typed literal **9/18/04** NORAD press-release reference and **0843 FAA notifies NEADS** wording, which the notes attribute Nasypany as challenging. | The literal date is **not repaired to 2001**. Note creation/assembly date and the actual referenced release/version remain unverified. The attributed challenge is not our independently established timing result. |
++| MC07; handwritten 8 versus typed 16 | Page 8 places **925** beside Otis CAP over NYC and an approximate arrival/second-tower-hit line. Typed 16 reports UAL175 notification coinciding with notification of the second hit. | Preserve the awkward juxtaposition; the handwritten referent/time basis is uncertain. No preferred value, inferred offset or calibrated event interval is selected. |
++| MC08; page 9 header and packet form | A handwritten header has **Moynahan** crossed out and **Kevin Nasypany** above. Earlier pages contain questions, excerpt references and other attributed accounts; typed 15 explicitly heads the Nasypany interview. | Do not attribute every earlier quotation or question to the interview subject. Reused notes, draft correction and composite assembly are possible explanations, not established causes or proof of substitution. |
++| MC09; typed 15–16, record-gathering/AAR/memorialization bullets | Recalled gathering of information for Battle Cab coexists with descriptions of group discussion, no after-action review and no remembered memorialization attempt. | Collection, discussion, formal review and memorialization are distinct. No inference that notes never existed or that this is the separately destroyed FAA cassette. |
++| MC10; handwritten 3–7/12–14 and typed 17 | Other material flags readiness/order/routing questions, a visible shoot-down/intercept wording change, VP-directive/ROE terminology, and qualified expectations about Norfolk/Giant Killer/AFIO and control. | These notes are not authenticated readiness/weapons orders or measured execution. A changed note wording is not proof an operational order changed. Neither advance knowledge, a real shoot-down nor intentional obstruction is established. |
++
++## What could weaken a suspicious reading
++
++The strongest relevant objection is that the interview/review process was explicitly identifying uncertain information and requesting transcript correction. If the versions and worksheets show the corrections were performed and accurately propagated, that would weaken a concealment interpretation while leaving the earlier error documented. Conversely, a source-supported unexplained omission, known uncorrected error or incompatible final account could strengthen a specific integrity concern. These tests have not been performed here.
++
++The typed notes describe review of chat logs and recordings, including tape playback. That is a recorded interview-review activity, not merely an unprompted recollection; the exact reviewed media and versions remain unacquired here, and we did not independently replay or validate them.
++
++Mixed real/exercise entries or later RADES additions could be ordinary logging/reconstruction practices; they could also impair historical reconstruction if mislabeled or undocumented. We need actual entries, definitions and edit history. A label alone establishes neither an innocent explanation nor fabrication. These notes and later narratives may depend on the same recordings/logs and are not independent corroboration simply because they appear in different documents.
++
++## Next records and unchanged limits
++
++`SOURCE-PINS.json` records MC01–MC10 with exact page URLs, visible anchors, selected literal wording, source hash and limits. `OPEN-TODOS.json` retains the original 18 requirements and earlier OM dependencies, adding actual transcript versions/verification work, ID-source messages/call joins, log provenance, bridge participation, the literal press-release reference, the six-page MFR crosswalk and underlying target/order records. No unchanged failed clock or catalogue query was rerun.
++
++The existing May 2003 native drafting/corrected-QFR/delivery and signed 2006 FAA action/no-action/recommendation-disposition records remain missing. This packet does not prove what a later official knew, when a correction was delivered or whether personnel action occurred. Telephone, recorder, materials and steel criteria and technical ownership remain unchanged. **No substantive original-input requirement is closed by this acquisition, reading or publication.**
++
++`PAGE-READING.json` states actual visual scope; `VERIFICATION.json` separates source/raster integrity from historical authentication. `CHECKLIST.md` maps the requirements and `TEXT-CHANGES.diff` is the actual Git addition diff. `EDITORIAL-REVISION.diff` preserves the final wording changes from the retained draft; no source values were changed. The unchanged original PDF and rasters remain in the native source store; this redundant public derivative contains reviewed notes and safe source references, not raw marked pages/full speech, ancillary personnel/contact/access data, private case correspondence or credentials. No outreach, fee, new request, filing, audio/clock decoding, experiment, private push, deletion or history rewrite occurred. Publication is separately verified by the remote commit/ref/file receipt.
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..914cd4f3
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,235 @@
++{
++  "source": "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf",
++  "sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++  "pins": [
++    {
++      "id": "MC01",
++      "source_id": "ISCAP2011-048-doc8",
++      "source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "physical_and_printed_pages": [
++        17
++      ],
++      "page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17"
++      ],
++      "visible_anchor": "Typed bullets: Bellucio/ZNY call and the angle-bracket note immediately following; separate bold Alderson timing note",
++      "observation_or_source_report": "The notes say a ZNY/fighter-positioning call and some following conversations occur in an original transcript but not the Alderson transcript, despite being clear. A separate bold note says Alderson MCC OP Ch.2 times from around9:10forward must be redone and verified.",
++      "selected_literal_wording": [
++        "not on the Alderson transcript",
++        "only on the original transcript",
++        "from around 9:10 forward",
++        "the times must be redone and verified"
++      ],
++      "inference_limits_and_discriminators": "This is an explicit source-version/verification warning in the released notes. We have not compared those two actual versions, measured an omission, identified the correct clock, established that the work was or was not completed, or joined either version to our reproduced NCT transcript or held MP3.",
++      "not_a_native_event_line_reference": "These are page-image/bullet anchors, not fabricated source text-line numbers or certified audio timestamps."
++    },
++    {
++      "id": "MC02",
++      "source_id": "ISCAP2011-048-doc8",
++      "source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "physical_and_printed_pages": [
++        17
++      ],
++      "page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17"
++      ],
++      "visible_anchor": "Typed Rebirth bullet; Langley battle-stations and barrier-region bullets; later AA77 notification bullet",
++      "observation_or_source_report": "Nasypany is reported as saying American11-still-airborne/toward-Washington information came from the IDs. The notes separately attribute the Langley decision to Battle Cab and describe the intended barrier positioning. They report first AA77 information to the ID section from ZDC without position/direction.",
++      "selected_literal_wording": [
++        "comes to him from the IDs",
++        "either FO or BC"
++      ],
++      "inference_limits_and_discriminators": "This narrows a reported upstream path, not the ultimate rumor origin or exact1326/1329FAA call legs. It is interview attribution/tape discussion, not an independently authenticated source message, actual aircraft position, received command or causal scramble reconstruction. Distinct decisions and inputs must not be collapsed.",
++      "not_a_native_event_line_reference": "These are page-image/bullet anchors, not fabricated source text-line numbers or certified audio timestamps."
++    },
++    {
++      "id": "MC03",
++      "source_id": "ISCAP2011-048-doc8",
++      "source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "physical_and_printed_pages": [
++        9,
++        10,
++        15
++      ],
++      "page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=9",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=10",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=15"
++      ],
++      "visible_anchor": "Handwritten communications notes; typed secure-phone, CONR, CMOC and FAA-bridge bullets",
++      "observation_or_source_report": "Notes distinguish direct/secure communications, FAA communications through ID/WD, two FAA bridges (WOC and Herndon), possible Battle Cab participation, and the Air Threat Conference. Typed notes attribute possible bridge access but nonparticipation to the interviewee and say he did not participate in or monitor the Air Threat call. Handwritten9 reports no NORAD/CMOC conversation; typed15 says could not communicate with CMOC.",
++      "selected_literal_wording": [
++        "MCC could have connected into those if he wanted, I did not.",
++        "The Battle Cab also can do that."
++      ],
++      "inference_limits_and_discriminators": "Capability, individual participation and organization-wide participation differ. A personal denial does not prove nobody joined; capability does not prove someone did. The native bridge logs and actual source/recipient/channel/call-leg mapping remain needed. Do not identify an earlier unanswered recipient from these notes.",
++      "not_a_native_event_line_reference": "These are page-image/bullet anchors, not fabricated source text-line numbers or certified audio timestamps."
++    },
++    {
++      "id": "MC04",
++      "source_id": "ISCAP2011-048-doc8",
++      "source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "physical_and_printed_pages": [
++        15
++      ],
++      "page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=15"
++      ],
++      "visible_anchor": "Typed chat-log, CONR/AWC monitoring and exercise-log bullets",
++      "observation_or_source_report": "The notes describe more than one chat log, different read/write permissions, real-world events entered in an exercise log, and a possibility that some data, including RADES data, was entered after9/11.",
++      "selected_literal_wording": [
++        "real-world events",
++        "exercise chat log",
++        "may have been entered post-9/11"
++      ],
++      "inference_limits_and_discriminators": "Do not call every entry contemporaneous or assume every log title describes its entire contents. Equally, the stated possibility of later data is not proof of fabricated operational events. Actual logs, export/version history, creation/event/entry fields, author and source data are required; a later reconstruction can preserve genuine information.",
++      "not_a_native_event_line_reference": "These are page-image/bullet anchors, not fabricated source text-line numbers or certified audio timestamps."
++    },
++    {
++      "id": "MC05",
++      "source_id": "ISCAP2011-048-doc8",
++      "source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "physical_and_printed_pages": [
++        15,
++        16
++      ],
++      "page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=15",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=16"
++      ],
++      "visible_anchor": "Typed situation-awareness/ID-feed claims versus initial-call, Z-point and primary-return qualifications",
++      "observation_or_source_report": "The notes record highly favorable situation-awareness and very fast ID-to-MCC information-flow assessments. They also say the interviewee was out and did not hear the initial call, describe an FAA-supplied last-position Z-point questioned by an interviewer, and qualify a believed pre-impact AA11 primary observation as possibly not that aircraft.",
++      "selected_literal_wording": [
++        "Situation awareness was outstanding.",
++        "milliseconds."
++      ],
++      "inference_limits_and_discriminators": "Preserve the self-assessment beside the qualifications. Neither is a measured universal latency/accuracy test. Initial-call absence, incorrect source information, target misidentification and internal feed speed concern different scopes; they are not automatically one contradiction or proof of deception. Interviewer assertions are not an independent radar test.",
++      "not_a_native_event_line_reference": "These are page-image/bullet anchors, not fabricated source text-line numbers or certified audio timestamps."
++    },
++    {
++      "id": "MC06",
++      "source_id": "ISCAP2011-048-doc8",
++      "source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "physical_and_printed_pages": [
++        9,
++        14,
++        16
++      ],
++      "page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=9",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=14",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=16"
++      ],
++      "visible_anchor": "Handwritten1/22/04 and1/23labels; typed NORAD press-release bullet",
++      "observation_or_source_report": "The source retains January2004interview-related labels, while typed16 literally refers to a9/18/04NORAD press release and its0843FAA-notification time, which it says Nasypany challenged as false.",
++      "selected_literal_wording": [
++        "1/22/04",
++        "1/23",
++        "9/18/04",
++        "0843 FAA notifies NEADS"
++      ],
++      "inference_limits_and_discriminators": "Keep the literal dates and time. Do not repair04to01, infer all pages were created on the index date, or count the interview attribution as independent proof0843was wrong. The actual identified press release, its versions, note-creation/assembly history and source timing validation remain unacquired here.",
++      "not_a_native_event_line_reference": "These are page-image/bullet anchors, not fabricated source text-line numbers or certified audio timestamps."
++    },
++    {
++      "id": "MC07",
++      "source_id": "ISCAP2011-048-doc8",
++      "source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "physical_and_printed_pages": [
++        8,
++        16
++      ],
++      "page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=8",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=16"
++      ],
++      "visible_anchor": "Handwritten925OtisCAP/second-tower line versus typed UAL175-notification/second-hit bullet",
++      "observation_or_source_report": "Handwritten8 places925beside OtisCAPoverNYC and an approximate arrival/second-tower-hit statement. Typed16 separately reports UAL175notification coinciding with notification of the second hit.",
++      "selected_literal_wording": [
++        "925",
++        "about the time we get there the second tower was hit"
++      ],
++      "inference_limits_and_discriminators": "An awkward source juxtaposition, not an authenticated event interval or established common clock. The handwritten line’s author, intended referent and time basis are uncertain. Retain both accounts without deriving an offset, silently changing925or treating typed notes as a calibrated control.",
++      "not_a_native_event_line_reference": "These are page-image/bullet anchors, not fabricated source text-line numbers or certified audio timestamps."
++    },
++    {
++      "id": "MC08",
++      "source_id": "ISCAP2011-048-doc8",
++      "source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "physical_and_printed_pages": [
++        1,
++        3,
++        9,
++        14,
++        15,
++        18
++      ],
++      "page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=1",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=3",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=9",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=14",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=15",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=18"
++      ],
++      "visible_anchor": "Packet form, changing handwritten subject labels and typed interview heading",
++      "observation_or_source_report": "The18-page item mixes transcript excerpts, questions, other attributed accounts, handwritten interview/continuation/playback material and typed interview bullets. Physical9 contains a crossed-out Moynahan header with KevinNasypany above; typed15 expressly names the Nasypany interview. Physical18 has one substantive bullet and two empty bullet markers.",
++      "selected_literal_wording": [],
++      "inference_limits_and_discriminators": "Do not attribute every quotation, criticism or question in1–14to Nasypany or describe the entire packet as a verbatim interview. Composite assembly, draft corrections or reused notes are possible, untested explanations. Neither a changed header nor a catalogue extent difference authenticates substitution or improper editing.",
++      "not_a_native_event_line_reference": "These are page-image/bullet anchors, not fabricated source text-line numbers or certified audio timestamps."
++    },
++    {
++      "id": "MC09",
++      "source_id": "ISCAP2011-048-doc8",
++      "source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "physical_and_printed_pages": [
++        15,
++        16
++      ],
++      "page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=15",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=16"
++      ],
++      "visible_anchor": "Typed gathering-information-to-Battle-Cab bullet; after-action/memorialization questions",
++      "observation_or_source_report": "One passage recalls gathering information after the attacks for Battle Cab, without recalling the point of contact. Another describes group/staff discussions but no after-action review, and no remembered formal/informal attempt to memorialize participants’ thoughts.",
++      "selected_literal_wording": [
++        "I don't remember any, no."
++      ],
++      "inference_limits_and_discriminators": "Information collection, discussion, a formal review and memorialization are different activities. Preserve both passages without claiming no notes ever existed, proving a retention outcome, or joining this NEADS material to the separately destroyed FAA recollection cassette.",
++      "not_a_native_event_line_reference": "These are page-image/bullet anchors, not fabricated source text-line numbers or certified audio timestamps."
++    },
++    {
++      "id": "MC10",
++      "source_id": "ISCAP2011-048-doc8",
++      "source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "physical_and_printed_pages": [
++        3,
++        4,
++        5,
++        6,
++        7,
++        12,
++        13,
++        14,
++        17
++      ],
++      "page_urls": [
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=3",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=4",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=5",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=6",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=7",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=12",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=13",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=14",
++        "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17"
++      ],
++      "visible_anchor": "Readiness/order/exercise/routing and playback questions across handwritten and typed material",
++      "observation_or_source_report": "Additional notes flag readiness chronology and interceptor routing, contain a visible shoot-down/intercept wording change, and juxtapose VP-directive/ROE terminology. Typed17 records qualified expectations about Norfolk/GiantKiller/AFIO and limitations on actual control.",
++      "selected_literal_wording": [],
++      "inference_limits_and_discriminators": "These are source-level questions/recollections, not the underlying readiness or weapons orders, independently timed flight execution, proof of a real shoot-down, advance attack knowledge or intentional obstruction. No staff initials or unclear hand are expanded. The packet does not provide the signed2006FAA administrative disposition or a delivered2003QFRcorrection.",
++      "not_a_native_event_line_reference": "These are page-image/bullet anchors, not fabricated source text-line numbers or certified audio timestamps."
++    }
++  ],
++  "dependence": "One mixed released packet; handwritten/typed notes and their apparent underlying recordings/logs may share a source. They are not counted as independent corroboration."
++}
+diff --git a/SOURCES.json b/SOURCES.json
+new file mode 100644
+index 00000000..b10f2dff
+--- /dev/null
++++ b/SOURCES.json
+@@ -0,0 +1,35 @@
++{
++  "source_id": "ISCAP2011-048-doc8",
++  "official_index": {
++    "url": "https://www.archives.gov/declassification/iscap/pdf/2011-048.html",
++    "observed_row_title": "Interview of Kevin Nasypany",
++    "observed_row_date": "2004/01/22",
++    "observed_location": "Center for Legislative Archives, National Archives and Records Administration",
++    "observed_release_label": "Released9/29/2014",
++    "scope": "Index heading/row read through web representation; not a complete collection audit or an acquisition-time body hash for the HTML entity."
++  },
++  "released_scan": {
++    "url": "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf",
++    "final_url": "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf",
++    "status": 200,
++    "started_utc": "2026-10-31T20:36:21.517821+00:00",
++    "finished_utc": "2026-10-31T20:36:25.232235+00:00",
++    "bytes": 13154124,
++    "sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++    "physical_pages": 18,
++    "readback_matches": true
++  },
++  "observed_stamp": "ISCAP Appeal2011-048, document8; declassification September29,2014, physical1",
++  "mfr_locator_kept_separate": {
++    "url": "https://www.archives.gov/research/9-11/commission-memoranda.html",
++    "identifier": "2610370",
++    "indexed_name": "Nasypany, Kevin J.",
++    "indexed_date": "1/22–23/2004",
++    "indexed_extent": "6pages",
++    "relation": "A catalogue/index lead. The18-page release contains mixed notes, not an established byte/page-equivalent copy of that six-page MFR. The MFR body was not acquired in this unit."
++  },
++  "prior_omic_report": "https://github.com/AveLyra/911-conspiracy-investigation/blob/dcdc9f647130139c60128ae3c131d40955536b34/investigation/broader-evidence/faa-omic-body-completion-2026-10-31/README.md",
++  "reading_date": "2026-10-31",
++  "acquisition_limit": "Two declared public queries; one actually linked official PDF. Web reader could not return the13.15MB body; ordinary public acquisition then returned200 and the retained PDF. No gate was bypassed. No other interview body acquired.",
++  "authentication_limit": "Official hosting/source fingerprint establish the released representation inspected, not note authorship, complete original assembly, accurate recollection, native version, exact underlying call/speaker or clock."
++}
+diff --git a/VERIFICATION.json b/VERIFICATION.json
+new file mode 100644
+index 00000000..fe1819bb
+--- /dev/null
++++ b/VERIFICATION.json
+@@ -0,0 +1,102 @@
++{
++  "checked_utc": "2026-10-31T20:43:49.211450+00:00",
++  "source_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++  "source_original_unchanged": true,
++  "raster_fingerprints": [
++    {
++      "page": 1,
++      "sha256": "084ac7bf3503943a0963766906e473a4e57d01f2edd283e7d0301d1a7eaeaaed",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 2,
++      "sha256": "c4201e23cad8b4421cf2a5a89676a6aba0c5eefdff18337482839d240449b701",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 3,
++      "sha256": "ee60ed206593180bf87ce30fe4c92e8a721a81180c57bdd1fce125d201c54315",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 4,
++      "sha256": "9a0aa550f609cd382d5043c04ec6cb9f976e23d8e58764ee5f6ecff09498b8ed",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 5,
++      "sha256": "666a6e86381d887a5805f24d3e2504dc9d8355d095cbd58f85fe430e188a0c14",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 6,
++      "sha256": "a050c72f896d8c2507c5323dfd7c69599406a9ff0b1c15b5f6c52f49ca23b819",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 7,
++      "sha256": "a8788bd948f8609c0adabaeba12fddbdb8a996a51eef3012537c285a5cf4afc3",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 8,
++      "sha256": "7dcabeacd0aab92c30de74c26233fb45bee350d2993b3d1da89396e4e2f4dc06",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 9,
++      "sha256": "de0e5f7175248c58f01cef550f30b143e2a6dfece4163676cbb86ad5c2f06b4f",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 10,
++      "sha256": "91cf6bde21e5edc7955386580eb80c9b620450cfa2a690aba3e7a9b2ee3f01e6",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 11,
++      "sha256": "5b1f9f9e96d6f05f7325c808941fc2f76f190ad6d7886f8fee7b8ae93145dab3",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 12,
++      "sha256": "ba9b585add5272c5c31f2d6869cd15ec5e9d49615d54f9b24fd53f689812e17f",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 13,
++      "sha256": "3e71b4e7e73a17e124c9a8907ccdee5824a434902a7fcb9c58294ce65d0a48ec",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 14,
++      "sha256": "be86527db59937f7a6b9e4685c7569ec8b95c223447a2a0a54b08eba255d24a2",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 15,
++      "sha256": "ab3cb5d7766830208bc877e3281d913a70b52aceafbbb7b32d06d7d31420e6a2",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 16,
++      "sha256": "c4e9c6904bd41e4e512499ebe25bba522bd947056665bc79adb96b810d397fa3",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 17,
++      "sha256": "e403c825a7f9908fa20839fb24c6b45eda0355ed26926a0b3ae32f27e50e9fcc",
++      "matches_render_receipt": true
++    },
++    {
++      "page": 18,
++      "sha256": "522db15434b207f60591b3a7a371c72f3ddcf731667bc49212fdce1a1bfe84d1",
++      "matches_render_receipt": true
++    }
++  ],
++  "render_exit_code": 0,
++  "visual_scope": "All18wholepage images actually viewed; visual source review separate from rendering success/fingerprints.",
++  "source_claim_comparison": "Manual page/bullet comparison with existing AEA1130findings; no independent clock fit, transcript-version collation, source-message authentication, aircraft test or historical truth validation.",
++  "public_payload_review": "Original research notes and safe public/institutional source locators only; raw marked pages/full speech and ancillary personnel/contact/access/privatecase/credential material excluded. Subject/header names are limited to the released record identity issue; no redacted identities reconstructed.",
++  "publication": "Not established by this prepublication verifier; require separate remote receipt."
++}

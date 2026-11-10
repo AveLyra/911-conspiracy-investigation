@@ -1,0 +1,17 @@
+# Missing inputs and next discriminating work
+
+Each item defers a specific test. None implies suppression or authorizes outreach, requests, fees or private disclosure.
+
+| Target | Current evidence | What would change the conclusion |
+| --- | --- | --- |
+| Employee collection instructions and response crosswalk | A90-74 p2 says employees were asked; p5–6 distinguish required government records from encouraged personal notes; p8 has unkeyed annotations | Native instructions, roster scope/timezone, questions actually delivered, individual responses and collected-item map. Establish actual responses without treating a signature, no/none mark or manager assertion as complete production. |
+| Original fax job and receipt | A90-74 p1 states four pages; released object has eight, including alternate presentations | Exact original enclosure map, machine transmission report, destination/receipt. Do not count archive presentation pages as additional items transmitted. |
+| Administrative copies versus actual data | A90-98 p1 asks for memo/index/letter copies and AAT-20 certification routing | Native email and attachments, teleconference instructions, actual forwarding and recipient acknowledgment. Preserve printed what; do not silently repair it to want. |
+| Typed production report and actual outputs | A90-99 p1–2 reports 30 staff hours, approximately 1,000 pages and two tapes; six-hour postscript separately | Native work accounting, output IDs and batch manifests, dates/positions, dispatch and receipt. Labor is not audio duration; postscript inclusion remains unknown. |
+| Tape-count and scope join | A90-99 says two tapes; A90-71 footer has one TMU, two OSIC, OS numeral absent | Join only with original/copy identifiers and manifests. Preserve differing counts without invented losses, preferred total or assumed same batch. |
+| Applicable copying and preservation controls | A90-99 p5–6 carries 7210.3R, dated 2/24/00, sections 4-8-1 to 4-8-4 | Full historical order/amendments, applicable 8020.11 provisions, actual Commission instructions, ATD/AAT-20 approvals, custody, preserve/release notices and other holds. An extract is not proof of rule applicability or recycling. |
+| Original audio and processing logs | A90-71 discloses skip silence; historical direct-copy provision describes continuity in its own context | Acquire continuous original and identified derivatives/settings. Test actual speech retention and time mapping, with independent anchors; no such audio test performed here. |
+| Native computer data and display mapping | 4-8-3 disclaimer separates processed data from exact display | Native files/configuration/version, processing and independently validated display reconstruction. Do not treat printed output as exact screen evidence. |
+| Later FAA outcomes | Actual May2003 corrected QFR/receipt, signed action/no-action and separate recommendation implementation remain unacquired | Obtain those specific outcomes, not another summary or unrelated 2003 work memo. Keep recommendations 1/2 distinct from 3/4. |
+
+The current three catalog-only targets are now acquired/read, so do not repeat those downloads. Next available operational work should return to the saved telephone or steel original-record queue after checking holdings. Native technical-owner tasks remain with their owners; acquired mirrors and completed tests retain actual status. All five tracks and eighteen criteria remain open or partial.

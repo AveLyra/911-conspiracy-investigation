@@ -1,0 +1,584 @@
+diff --git aCHECKLIST.md bCHECKLIST.md
+new file mode 100644
+index 00000000..76bfb403
+--- /dev/null
++++ bCHECKLIST.md
+@@ -0,0 +1,13 @@
++# Requirements and revision checklist
++
++- [x] Use source wording to test a distinct within-series route; preserve the prior June2004QFR exclusion and do not count generic label matches as target identity.
++- [x] Acquire one exact official26page original; preserve bytes/access/hash. Read only the specified eight page images; other rendering/OCR remains locator work. SOURCE-PINS.json /READING-SCOPE.json.
++- [x] Preserve catalogAAT-20versuspageAAT-200, partly occluded request-footer date versus response's July2attribution, all source time labels, and source-specific request dates without reconstructing hidden text or selecting a preferred account.
++- [x] Keep original request, accuracy/suitability review instruction, affirmative response language and actual transmittal/receipt/completeness/correction distinct. README /OPEN-RECORDS.md.
++- [x] Transcribe the complete Item16label sub-list and compare four conditional pairs, including matching Boston counterevidence. No actual-audio gap, total missing minutes, clock alignment, intent or conspiracy inference. OBSERVED-LABELS.json /compare_labels.py /VERIFICATION.json.
++- [x] Keep cross-referenced Item20media and eighteen unread pages open; do not call this a full packet audit or complete production.
++- [x] Leave all five tracks/eighteen substantive criteria unfinished, preserving technical ownership, already held originals and performed tests. No replacement master or private-main edit.
++- [x] Limit public derivative to notes, links/hashes, selected role/time metadata and arithmetic/source-check code/results. Raw scans/DOM/full OCR, signatures/contact/personnel lists, private case/correspondence and strategy excluded.
++- [x] Exact Git no-index addition diff covers all substantive content/code/result files; earlier versions unchanged. Image reading separate from text diff and machine verification.
++- [ ] Push/remote-verify only through the existing authorized AveLyra SSH route when available; no unchanged failure retry or account substitution. Local commit is not publication.
++- [ ] Acquire actual corrected answer/receipt, signed administrative outcome and the remaining native inputs and tests before substantive goal completion.
+diff --git aOBSERVED-LABELS.json bOBSERVED-LABELS.json
+new file mode 100644
+index 00000000..f35f7789
+--- /dev/null
++++ bOBSERVED-LABELS.json
+@@ -0,0 +1,99 @@
++{
++  "source_sha256": "06bd6869f765702e620fe4344f38ab622763439979a8e9a91779ec710904ec93",
++  "source_catalogue": "https://catalog.archives.gov/id/34913873",
++  "scope": "Only the Item16 sub-list on physical15/printed8 andphysical16/printed9; not the full Item20 enclosure inventory or actual media.",
++  "pairing_limit": "Pairings use printed facility, role and start label. No tape/channel identifier, common clock, complete inventory, certified source correspondence or actual media duration is authenticated.",
++  "rows": [
++    {
++      "id": "NY-operations",
++      "facility": "New York ARTCC",
++      "role": "Operations Manager",
++      "rerecording_labels": [
++        {
++          "start": "1230",
++          "end": "1331",
++          "page": 15,
++          "ocr_line": 40,
++          "visible_ocr_line": "Operations Manager, 1230 \u2014 1331 UTC"
++        },
++        {
++          "start": "1331",
++          "end": "1340",
++          "page": 15,
++          "ocr_line": 42,
++          "visible_ocr_line": "Operations Manager, 1331 - 1340 UTC"
++        }
++      ],
++      "transcript_label": {
++        "start": "1230",
++        "end": "1344",
++        "page": 16,
++        "ocr_line": 5,
++        "visible_ocr_line": "Operations Manager, 1230 \u2014 1344 UTC, Full Transcript"
++      }
++    },
++    {
++      "id": "NY-TMU-1245",
++      "facility": "New York ARTCC",
++      "role": "Traffic Management Unit",
++      "rerecording_labels": [
++        {
++          "start": "1245",
++          "end": "1314",
++          "page": 15,
++          "ocr_line": 44,
++          "visible_ocr_line": "Traffic Management Unit, 1245 - 1314 UTC"
++        }
++      ],
++      "transcript_label": {
++        "start": "1245",
++        "end": "1316",
++        "page": 16,
++        "ocr_line": 6,
++        "visible_ocr_line": "Traffic Management Unit, 1245 \u2014 1316 UTC, Full Transcript"
++      }
++    },
++    {
++      "id": "NY-TMU-1255",
++      "facility": "New York ARTCC",
++      "role": "Traffic Management Unit",
++      "rerecording_labels": [
++        {
++          "start": "1255",
++          "end": "1315",
++          "page": 15,
++          "ocr_line": 45,
++          "visible_ocr_line": "Traffic Management Unit, 1255 \u2014 1315 UTC"
++        }
++      ],
++      "transcript_label": {
++        "start": "1255",
++        "end": "1316",
++        "page": 16,
++        "ocr_line": 7,
++        "visible_ocr_line": "Traffic Management Unit, 1255 \u2014 1316 UTC, Full Transcript"
++      }
++    },
++    {
++      "id": "Boston-military",
++      "facility": "Boston ARTCC",
++      "role": "Military Operations Specialist",
++      "rerecording_labels": [
++        {
++          "start": "1232",
++          "end": "1259",
++          "page": 16,
++          "ocr_line": 2,
++          "visible_ocr_line": "Military Operations Specialist, 1232 \u2014 1259 UTC"
++        }
++      ],
++      "transcript_label": {
++        "start": "1232",
++        "end": "1259",
++        "page": 16,
++        "ocr_line": 9,
++        "visible_ocr_line": "Military Operations Specialist, 1232 \u2014 1259 UTC, Full Transcript"
++      }
++    }
++  ]
++}
+diff --git aOPEN-RECORDS.md bOPEN-RECORDS.md
+new file mode 100644
+index 00000000..1d0e7f7e
+--- /dev/null
++++ bOPEN-RECORDS.md
+@@ -0,0 +1,15 @@
++# Existing original-record tasks — exact records next
++
++October30,2026. Existing B129 /PD01–PD04 /FAA01–FAA04 /REC03. No new competing master register or changed substantive acceptance criteria.
++
++| Task | Existing-record retrieval target | Discriminating outcome and limit |
++|---|---|---|
++| PD01 / FAA01–02 | Native Request2division response, its review comments/approval, actual outgoing transmittal, enclosure manifest and recipient acknowledgment; office/version/routing crosswalk for catalogAAT-20andheadingAAT-200. | Establish what version/items were actually dispatched and received. The provided-language and a review request do not prove final approval, completeness or correction. |
++| PD01 / REC03 | The five Item16certified rerecordings and four full transcripts, complete certification sheets, original tape/channel/copy identifiers, generation logs and precise start/end/counter rules. Include the New York Operations Manager and both TMU starts, plus the matching Boston Military Operations Specialist pair. | Test whether matched original media actually correspond, and whether printed end differences persist. Same labels/roles do not authenticate identical channels or clocks. Preserve any inconsistent values. |
++| PD01 / REC03 | Item16logs/Notifications-to-Military sheet and cross-referenced Item20materials, including any additional segments, full accident-file vs accident-package inventories and delivery version history. | A complete item-level accounting could weaken or substantiate a coverage concern. Do not infer missing audio from this sub-list or sum differences across channels. |
++| PD01 / REC03 | The actual Cleveland chain-of-custody memorandum and SATORI list named on physical26, with original acquisition/transfer references and source reconstruction inputs. | A listing is not the custody instrument or native radar output. Reuse already held originals if a verified match is found; do not count copies as independent corroboration. |
++| PD01–PD04 / FAA01–04 | Actual May2003draft/transmission/clarification/corrected answer and delivery; signed consideration/action/no-action with reasons; separate recommendation implementation and closure; governing policy and case-specific applicability. | None is completed by finding this request/response. Keep original answer, later correction, investigation closure, recommendation resolution and personnel outcome separate. |
++
++Untested alternatives for the time labels include minute precision, indexing/assembly conventions, separate channels/copies, other enclosure segments or an actual difference in media coverage. No alternative is selected. Obtain actual matched media and definitions before any audio or historical-clock inference; coordinate substantive decoding/alignment with its technical owner rather than duplicating it here.
++
++Missing telephone carrier/native-field/call-leg roots, authenticated recorder inputs/configuration and clocks, materials specimens/native calibration/same-specimen joins, and steel preservation/native inventory/attribution/review-delivery records remain open. A page not yet read remains unread, not evidence of absence. Revisit on a specific new original/link or applicable completed result; do not repeat the exact completed queries or unchanged SSH failure. No outreach, new request, fee, mailbox or filing is authorized by this queue.
+diff --git aREADING-SCOPE.json bREADING-SCOPE.json
+new file mode 100644
+index 00000000..423929f8
+--- /dev/null
++++ bREADING-SCOPE.json
+@@ -0,0 +1,111 @@
++{
++  "physical_PDF_pages": 26,
++  "manually_image_read": [
++    1,
++    2,
++    3,
++    4,
++    8,
++    15,
++    16,
++    26
++  ],
++  "not_manually_read": [
++    5,
++    6,
++    7,
++    9,
++    10,
++    11,
++    12,
++    13,
++    14,
++    17,
++    18,
++    19,
++    20,
++    21,
++    22,
++    23,
++    24,
++    25
++  ],
++  "rendered": [
++    1,
++    2,
++    3,
++    4,
++    8,
++    9,
++    10,
++    11,
++    12,
++    13,
++    14,
++    15,
++    16,
++    17,
++    18,
++    19,
++    20,
++    21,
++    22,
++    23,
++    24,
++    25,
++    26
++  ],
++  "mechanically_visible_OCR_pages": [
++    8,
++    9,
++    10,
++    11,
++    12,
++    13,
++    14,
++    15,
++    16,
++    17,
++    18,
++    19,
++    20,
++    21,
++    22,
++    23
++  ],
++  "no_native_text_extracted": true,
++  "selection_changes": "Unread23replacedby8aftervisiblepagination; unread24and25replacedby15and16afterOCRlocators. Eight actual views; old renders preserved.",
++  "queries": {
++    "exact_statement_title": {
++      "query": "\"FAA Communications with NORAD\"",
++      "hits": 17,
++      "views": [
++        {
++          "sort": "NARA ID lowest",
++          "titles_read": 10
++        },
++        {
++          "sort": "Most Relevant",
++          "titles_read": 10
++        }
++      ]
++    },
++    "exact_bridge_phrase": {
++      "query": "\"phone bridge\"",
++      "hits": 36,
++      "views": [
++        {
++          "sort": "NARA ID lowest",
++          "titles_read": 10
++        },
++        {
++          "sort": "Most Relevant",
++          "titles_read": 10
++        }
++      ]
++    }
++  },
++  "catalogue_source_type": "Browser-rendered DOM captured locally; not raw search-response bytes or complete index.",
++  "no_audio_native_email_or_clock_testing": true,
++  "source_personnel_contact_signature_and_raw_scan_excluded_from_derivative": true
++}
+diff --git aREADME.md bREADME.md
+new file mode 100644
+index 00000000..b7d9fb53
+--- /dev/null
++++ bREADME.md
+@@ -0,0 +1,44 @@
++# FAA response inventory: transcript and rerecording time labels differ
++
++October30,2026. Existing B129 /PD01–PD04 /FAA01–FAA04, supporting the REC03 original-coverage queue. **A newly acquired FAA request-and-response packet supplies specific media/transcript retrieval locators. Three paired New York end labels differ by four, two and one minutes; a Boston pair matches. These are printed-label comparisons, not verified missing audio or a reconstruction of the attacks.** The actual corrected May2003answer, delivery receipt and signed administrative disposition remain unacquired.
++
++## Acquired source and actual reading
++
++Official NARA [34913873 /AWA1077 red-tab packet](https://catalog.archives.gov/id/34913873), [direct PDF](https://catalog.archives.gov/medialive/73/9138/34913873/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-1077-4-Red-Tab-Commision-Request-No--2-and-AAT-20-Response-REDACT-SEALED.pdf). Acquired October30 at16:03:50–16:03:51UTC, HTTP200,application/pdf, **4,592,330bytes /26pages**, SHA256 **06bd6869f765702e620fe4344f38ab622763439979a8e9a91779ec710904ec93**. Original bytes are preserved separately from these notes. This is a released assembled scan, not native authoring/email, proof of a signed final submission, receipt, complete enclosures or complete historical holdings.
++
++Eight page images were read: **physical1,2,3,4,8,15,16,26**. Page1 is a divider. Physical8,15,16,26 print responsepages1,8,9,19. Eighteen pages were not manually read. Twenty-three pages were rendered and visible-raster OCR of8–23was used only to find headings and selected locators. Rendering/OCR is not a full26page reading. Selected readings were checked against actual images; no concealed/redacted text was reconstructed. [Reading scope](READING-SCOPE.json), [source and exact page/line pins](SOURCE-PINS.json).
++
++## What the request and response establish
++
++RequestNo2, physical2–4, asks for draft/final after-action material, interviews, FAA/NORAD and internal communications, and copies of material supplied to NTSB/FBI. Physical2 gives a **July16,2003** production date. Physical4 requests rolling production, descriptions/bases for withheld material, and locators for material outside respondent custody. These are the Commission's historical request terms, not proof every requested record was supplied or a rule adopted for any current litigation.
++
++Physical8 explicitly refers to a **July2,2003** request. The date footer on physical4 is partly occluded; this review does not reconstruct the covered characters or silently replace that observation with the response's date. Preserve the response's date attribution separately. Physical8 describes material being provided and asks another office to review answers for accuracy and suitability. That is a source-grounded review/transmittal lead; it does not authenticate the actual dispatch, acceptance, review result or completed correction.
++
++The catalog title uses **AAT-20**; the response heading on physical8 prints **AAT-200**. Both labels remain unchanged. An office-code/caption variation narrows the routing/version question; it is not evidence of falsification, and no cause or preferred code is selected.
++
++## Item16: keep every printed range
++
++Physical15/printed8 says Item16 material includes logs, a Notifications-to-Military sheet, certified transcripts and certified rerecordings. It also cross-references more material under Item20. Physical16/printed9 does the same for Item19internal communications, then begins Item20's enclosure list. Thus the following is the **Item16sub-list**, not a census of the entire production.
++
++| Conditional pairing by printed facility/role/start | Rerecording labels, as printed in UTC | Full-transcript label, as printed in UTC | Derived end-label difference |
++|---|---|---|---|
++| New York Operations Manager | **1230–1331;1331–1340** | **1230–1344** | **4minutes** |
++| New York TMU,1245start | **1245–1314** | **1245–1316** | **2minutes** |
++| New York TMU,1255start | **1255–1315** | **1255–1316** | **1minute** |
++| Boston Military Operations Specialist | **1232–1259** | **1232–1259** | **0minutes** |
++
++The original characters/ranges and selected visible-OCR lines are in [OBSERVED-LABELS.json](OBSERVED-LABELS.json), with exact physical page/line references. The arithmetic simply subtracts the latest listed rerecording end label from the transcript end label under a same-dayHHMMreading; the evidence values remain unchanged. It establishes no calibrated media duration or gap. [Code](compare_labels.py), [actual computation/source checks](VERIFICATION.json).
++
++Do **not** add these differences into a total of missing audio. The overlapping TMU entries may represent different source channels/copies; no unique channel/tape keys have been acquired. Minute precision, indexing conventions, transcript assembly, different copies/channels, additional Item20media or an actual coverage difference are untested possibilities. No explanation is selected. The matching Boston pair is retained as contrary evidence against a claim that every pair differs. These four comparisons are not four independent events or proof of intentional trimming.
++
++## How this bears on the existing correction inquiry
++
++The held AWA660note had identified Request2items3,7,16and19while retaining the broader earlier May7,2003request. The present packet supplies an actual request and a division-level response instead of only that note's description. Its **July16production date** and the earlier note's **May14due date** belong to different identified requests; they are not silently combined into one timeline. The note's reports about collection/release difficulties and the present response's affirmative provision language remain separate attributed sources. Neither alone proves complete production or nondelivery.
++
++No corrected May2003NORADanswer, delivery receipt or signed action/no-action decision is established on the pages read. The exact-title phrase occurs in the communications request itself, so a search match did not identify the original answer. Later2006disposition remains a separate target outside what a2001–2004collection can establish by search silence. Physical26 additionally names a Cleveland chain-of-custody memorandum and SATORI list; those labels are retrieval leads, not the underlying instruments or independent clock authentication. [Next records and falsifiers](OPEN-RECORDS.md).
++
++## Verification, preservation and publication limits
++
++The acquired PDF was checked for bytes/hash,26pages,zero extractable text on each page and zero enumerated embedded attachments. This does not establish absence of native attachments elsewhere. The four end-label calculations were run once against the reviewed transcription. Manual image reading is separately recorded; a parser/hash check is not independent historical authentication. No audio was acquired, listened to, decoded, aligned or repaired in this pass; no technical-owner clock test is duplicated.
++
++These notes exclude raw scan/images, full OCR/DOM, signatures, recipient/contact/personnel lists, private correspondence and case strategy. Prior sources, conflicting values and reports remain unchanged. [Checklist](CHECKLIST.md), [exact additive text diff](REVISION.diff), [manifest](MANIFEST.json). All five work-plan tracks/eighteen substantive criteria remain unfinished. Local commitment or a saved public derivative is not proof of push; publication requires separately verified account/ref/file evidence. The existing SSH publication TODO is not bypassed by a different identity or commit route.
+diff --git aSOURCE-PINS.json bSOURCE-PINS.json
+new file mode 100644
+index 00000000..f549cfc7
+--- /dev/null
++++ bSOURCE-PINS.json
+@@ -0,0 +1,82 @@
++{
++  "source": {
++    "catalogue_url": "https://catalog.archives.gov/id/34913873",
++    "download_url": "https://catalog.archives.gov/medialive/73/9138/34913873/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-1077-4-Red-Tab-Commision-Request-No--2-and-AAT-20-Response-REDACT-SEALED.pdf",
++    "access_started_utc": "2026-10-30T16:03:50.613748+00:00",
++    "access_finished_utc": "2026-10-30T16:03:51.935379+00:00",
++    "bytes": 4592330,
++    "sha256": "06bd6869f765702e620fe4344f38ab622763439979a8e9a91779ec710904ec93",
++    "http_status": 200,
++    "content_type": "application/pdf",
++    "pages": 26,
++    "response_last_modified_header": "Wed, 17 Aug 2016 04:04:33 GMT",
++    "last_modified_limit": "Hosting-response metadata, not authoring/transmission or receipt date."
++  },
++  "selected_locators": [
++    {
++      "physical_page": 2,
++      "locator": "Request heading, opening anditems3\u20135",
++      "observation": "July16,2003production date; draft/final after-action scope"
++    },
++    {
++      "physical_page": 4,
++      "locator": "Items16,19,20; rolling/withholding/custody paragraphs; partly occluded footer",
++      "observation": "Exact historical request terms; do not reconstruct covered date text"
++    },
++    {
++      "physical_page": 8,
++      "printed_response_page": 1,
++      "visible_OCR_lines": [
++        3,
++        12
++      ],
++      "observation": "AAT-200response heading; July2,2003request attribution; another office should review for accuracy/suitability"
++    },
++    {
++      "physical_page": 15,
++      "printed_response_page": 8,
++      "visible_OCR_lines": [
++        24,
++        45
++      ],
++      "observation": "Item16 response/cross-reference and four New York rerecording entries"
++    },
++    {
++      "physical_page": 16,
++      "printed_response_page": 9,
++      "visible_OCR_lines": [
++        1,
++        24
++      ],
++      "observation": "Boston rerecording, four full-transcript labels, Items19and20response/cross-reference"
++    },
++    {
++      "physical_page": 26,
++      "printed_response_page": 19,
++      "locator": "Final five listed document types",
++      "observation": "Cleveland chain-of-custody memorandum/SATORI and related locators; underlying documents not acquired here"
++    }
++  ],
++  "visible_OCR": {
++    "version": "tesseract5.5.2",
++    "raster_scale_to": 1600,
++    "psm": 3,
++    "selected_derivative_hashes": {
++      "physical8": "f02554f9d2e549b557dde1b6ac64dd7245e4837d3ed23d1ec26b8fdeab7f8505",
++      "physical15": "ac0a70131c7cce9300fa0657052c4a37ac3d549d3e628a0e22d5a0cb7b981095",
++      "physical16": "f00fd3aac5ea584cf6b04b59ea4750e15a20c923457f23184b587b5c8163751e"
++    },
++    "limit": "Local visible-raster derivative/locator; selected values manually checked against images, full OCR not in this bundle."
++  },
++  "reused_AWA660_study": {
++    "url": "https://catalog.archives.gov/id/7596181",
++    "direct_source": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf",
++    "reading": "Earlier held study/source reading reused, no fresh complete original hash/image assertion",
++    "note_limit": "Attributed reports, not four center affidavits or receipt confirmation"
++  },
++  "office_code_variation": {
++    "catalogue_title": "AAT-20",
++    "physical8_heading": "AAT-200",
++    "status": "Preserved as separate observations; cause and exact routing equivalence untested"
++  }
++}
+diff --git aVERIFICATION.json bVERIFICATION.json
+new file mode 100644
+index 00000000..2ab662f9
+--- /dev/null
++++ bVERIFICATION.json
+@@ -0,0 +1,125 @@
++{
++  "observed_labels_sha256": "27cedaa8b9b4da62cafbdc45b95def9ed677b6b5265e640d503fb811a9d4105c",
++  "conditional_pairing": "Pairings use printed facility, role and start label. No tape/channel identifier, common clock, complete inventory, certified source correspondence or actual media duration is authenticated.",
++  "arithmetic": [
++    {
++      "id": "NY-operations",
++      "rerecording_ranges": [
++        [
++          "1230",
++          "1331"
++        ],
++        [
++          "1331",
++          "1340"
++        ]
++      ],
++      "transcript_range": [
++        "1230",
++        "1344"
++      ],
++      "transcript_end_minus_last_listed_rerecording_end_minutes": 4
++    },
++    {
++      "id": "NY-TMU-1245",
++      "rerecording_ranges": [
++        [
++          "1245",
++          "1314"
++        ]
++      ],
++      "transcript_range": [
++        "1245",
++        "1316"
++      ],
++      "transcript_end_minus_last_listed_rerecording_end_minutes": 2
++    },
++    {
++      "id": "NY-TMU-1255",
++      "rerecording_ranges": [
++        [
++          "1255",
++          "1315"
++        ]
++      ],
++      "transcript_range": [
++        "1255",
++        "1316"
++      ],
++      "transcript_end_minus_last_listed_rerecording_end_minutes": 1
++    },
++    {
++      "id": "Boston-military",
++      "rerecording_ranges": [
++        [
++          "1232",
++          "1259"
++        ]
++      ],
++      "transcript_range": [
++        "1232",
++        "1259"
++      ],
++      "transcript_end_minus_last_listed_rerecording_end_minutes": 0
++    }
++  ],
++  "limits": "Listed same-day HHMM end-label subtraction only; not actual media duration/gap, unique channel mapping, native clock, receipt, completeness or historical cause",
++  "source_check": {
++    "sha256": "06bd6869f765702e620fe4344f38ab622763439979a8e9a91779ec710904ec93",
++    "bytes": 4592330,
++    "pages": 26,
++    "pypdf": "6.10.0",
++    "extractable_text_characters": [
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0,
++      0
++    ],
++    "enumerated_embedded_attachment_count": 0
++  },
++  "recorded_utc": "2026-10-30T16:16:46.887980+00:00",
++  "python": "3.12.14",
++  "manual_image_reading": {
++    "physical_pages": [
++      1,
++      2,
++      3,
++      4,
++      8,
++      15,
++      16,
++      26
++    ],
++    "source_other_pages_not_manually_read": 18,
++    "scope": "Image-checked selected labels and contextual paragraphs; not inferred from parser, render count or arithmetic."
++  },
++  "source_assertions_not_verified": [
++    "Actual media duration/gap/contents",
++    "Unique channel/clock correspondence",
++    "Complete production/enclosures",
++    "Native authorship or transmission/receipt",
++    "Actual correctedQFR or signed administrative outcome"
++  ]
++}
+diff --git acompare_labels.py bcompare_labels.py
+new file mode 100644
+index 00000000..96f3c698
+--- /dev/null
++++ bcompare_labels.py
+@@ -0,0 +1,47 @@
++"""Reproduce printed-label arithmetic and optionally identify the source PDF.
++No network, source modification, audio decoding or clock authentication.
++Usage: python3 compare_labels.py [--source /path/to/source.pdf]
++Source identity/page/structural checks require pypdf; arithmetic uses stdlib only.
++"""
++import argparse, hashlib, json
++from pathlib import Path
++
++def minutes(value):
++    if len(value) != 4 or not value.isdigit():
++        raise ValueError("Expected the preserved same-day HHMM label")
++    h, m = int(value[:2]), int(value[2:])
++    if h > 23 or m > 59:
++        raise ValueError("Invalid same-day HHMM label; preserve and investigate")
++    return 60 * h + m
++
++def compare(root, source=None):
++    ledger_path = root / "OBSERVED-LABELS.json"
++    ledger = json.loads(ledger_path.read_text())
++    rows = []
++    for row in ledger["rows"]:
++        rec_ends = [minutes(x["end"]) for x in row["rerecording_labels"]]
++        trans_end = minutes(row["transcript_label"]["end"])
++        rows.append({"id": row["id"], "rerecording_ranges": [[x["start"], x["end"]] for x in row["rerecording_labels"]],
++                     "transcript_range": [row["transcript_label"]["start"], row["transcript_label"]["end"]],
++                     "transcript_end_minus_last_listed_rerecording_end_minutes": trans_end - max(rec_ends)})
++    result = {"observed_labels_sha256": hashlib.sha256(ledger_path.read_bytes()).hexdigest(),
++              "conditional_pairing": ledger["pairing_limit"], "arithmetic": rows,
++              "limits": "Listed same-day HHMM end-label subtraction only; not actual media duration/gap, unique channel mapping, native clock, receipt, completeness or historical cause"}
++    if source is not None:
++        import pypdf
++        body = source.read_bytes()
++        if len(body) != 4592330 or hashlib.sha256(body).hexdigest() != ledger["source_sha256"]:
++            raise ValueError("Different source bytes: preserve the differing entity; do not silently replace the pin")
++        pdf = pypdf.PdfReader(source)
++        if len(pdf.pages) != 26:
++            raise ValueError("Unexpected page count")
++        result["source_check"] = {"sha256": ledger["source_sha256"], "bytes": len(body), "pages": len(pdf.pages),
++                                  "pypdf": pypdf.__version__, "extractable_text_characters": [len(x.extract_text() or "") for x in pdf.pages],
++                                  "enumerated_embedded_attachment_count": len(list(pdf.attachments.keys()))}
++    return result
++
++if __name__ == "__main__":
++    ap = argparse.ArgumentParser()
++    ap.add_argument("--source", type=Path)
++    args = ap.parse_args()
++    print(json.dumps(compare(Path(__file__).parent, args.source), indent=2))

@@ -1,0 +1,120 @@
+{
+  "access_date": "2026-11-05",
+  "sources": {
+    "standalone": {
+      "archive_record": "291534",
+      "url": "https://digicoll.lib.berkeley.edu/record/291534/files/103-WTC-Astaneh_Progress-Report-to-NSF-on-UCB-WTC-Project.pdf",
+      "bytes": 743481,
+      "sha256": "e339955e3d79aa9e0eb21eae32d29e6a2e88ba4206e629e620d1d4efd73805d0",
+      "pages": 6
+    },
+    "supplement": {
+      "archive_record": "291535",
+      "url": "https://digicoll.lib.berkeley.edu/record/291535/files/104-WTC-Astaneh-Ammendment_to-_Proposal-on-WTC-_by_Astaneh.pdf",
+      "bytes": 752346,
+      "sha256": "29636f17e90e674969c3333017265d0dc052159bd8736ccdb663a811a94f711d",
+      "pages": 12
+    }
+  },
+  "method": "One-based PDF page and line from PyMuPDF get_text(sort=True).splitlines(). Raster annotations checked visually.",
+  "text_checks": [
+    {
+      "source": "standalone",
+      "page": 2,
+      "line": 28,
+      "expected_substring": "October 17th, 2001"
+    },
+    {
+      "source": "standalone",
+      "page": 2,
+      "line": 41,
+      "expected_substring": "first 10 days"
+    },
+    {
+      "source": "standalone",
+      "page": 3,
+      "line": 23,
+      "expected_substring": "Fig. 2. A Column Splice"
+    },
+    {
+      "source": "standalone",
+      "page": 4,
+      "line": 12,
+      "expected_substring": "Fig. 4. Column Splice, WTC Building 7"
+    },
+    {
+      "source": "standalone",
+      "page": 5,
+      "line": 1,
+      "expected_substring": "Smithsonian"
+    },
+    {
+      "source": "supplement",
+      "page": 8,
+      "line": 28,
+      "expected_substring": "October 17th, 2001"
+    },
+    {
+      "source": "supplement",
+      "page": 8,
+      "line": 44,
+      "expected_substring": "flatbeds"
+    },
+    {
+      "source": "supplement",
+      "page": 9,
+      "line": 2,
+      "expected_substring": "Figure 2 shows a column splice"
+    },
+    {
+      "source": "supplement",
+      "page": 9,
+      "line": 25,
+      "expected_substring": "Fig. 1. A Column Splice"
+    },
+    {
+      "source": "supplement",
+      "page": 9,
+      "line": 29,
+      "expected_substring": "Hugo Neu"
+    },
+    {
+      "source": "supplement",
+      "page": 9,
+      "line": 35,
+      "expected_substring": "least 4 members"
+    },
+    {
+      "source": "supplement",
+      "page": 10,
+      "line": 14,
+      "expected_substring": "Fig. 4. Column Splice, WTC Building 7"
+    },
+    {
+      "source": "supplement",
+      "page": 11,
+      "line": 4,
+      "expected_substring": "Smithsonian"
+    }
+  ],
+  "visual_checks": [
+    {
+      "source": "standalone",
+      "page": 4,
+      "locator": "Figure 4, top-right photograph, blue inset",
+      "observed_selection_date": "October 1, 2001"
+    },
+    {
+      "source": "supplement",
+      "page": 10,
+      "locator": "Figure 4, top-right photograph, blue inset",
+      "observed_selection_date": "October 1, 2001"
+    },
+    {
+      "source": "supplement",
+      "page": 9,
+      "locator": "caption under splice photo pair",
+      "observed_label": "Fig. 1"
+    }
+  ]
+}

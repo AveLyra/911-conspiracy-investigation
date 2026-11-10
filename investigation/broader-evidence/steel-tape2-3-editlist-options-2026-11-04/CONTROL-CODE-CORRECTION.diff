@@ -1,0 +1,11 @@
+diff --git a/probe_tail_editlist_options.py b/probe_tail_keyframe_control.py
+index 34260906..026811c0 100644
+--- a/probe_tail_editlist_options.py
++++ b/probe_tail_keyframe_control.py
+@@ -1 +1 @@
+-"""Separate tail-only diagnostic; does not complete the failed full-source test."""
++"""Separate tail-only diagnostic with all-intra control; prior failures retained."""
+@@ -9 +9,2 @@ import subprocess
+-from probe_editlist_options import MODES, EXPECTED_SOURCE, EXPECTED_CONTROL, digest, save
++from probe_editlist_options import MODES, EXPECTED_SOURCE, digest, save
++EXPECTED_CONTROL = 'ab2dbcfbc3a6d296cebc3e6530f1356f6db8128228b8797f280e77f73d5ac6c5'

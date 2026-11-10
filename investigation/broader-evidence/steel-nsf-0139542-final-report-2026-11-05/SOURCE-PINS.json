@@ -1,0 +1,146 @@
+{
+  "access_date": "2026-11-05",
+  "sources": {
+    "award": {
+      "url": "https://api.nsf.gov/services/v1/awards/0139542.json",
+      "bytes": 3762,
+      "sha256": "d7dc7fac41b9398f41c65f0a18f396aa940561effb3b97f974729e30d500e7bc"
+    },
+    "packet": {
+      "url": "https://web.archive.org/web/20070617214127id_/http://www.nistreview.org/WTC-ASTANEH.pdf",
+      "bytes": 1118419,
+      "sha256": "6de06a568810595c6ad17ea5d2c6953b229174becfd51efb2a3f4cc6a7d27f00",
+      "pages": 15
+    },
+    "proceedings": {
+      "url": "https://www.crono911.org/Fonti/701_Astaneh_2003.pdf",
+      "bytes": 1119165,
+      "sha256": "eeeeb673a37274c7aa5ca9c2f1bd11fd76edf8f7168e62fce9f909a1cf6f6988",
+      "pages": 8
+    },
+    "october": {
+      "url": "https://digicoll.lib.berkeley.edu/record/291535/files/104-WTC-Astaneh-Ammendment_to-_Proposal-on-WTC-_by_Astaneh.pdf",
+      "bytes": 752346,
+      "sha256": "29636f17e90e674969c3333017265d0dc052159bd8736ccdb663a811a94f711d",
+      "pages": 12
+    },
+    "hearing": {
+      "url": "https://digicoll.lib.berkeley.edu/record/291544/files/205-WTC-Astaneh_Testimony-before-Committee-on-Science-at-WTC-Hearings.pdf",
+      "bytes": 410334,
+      "sha256": "a21dbbb5c50131add8121058582da28316192b7e708e88875591bda54864227f",
+      "pages": 7
+    }
+  },
+  "text_method": "One-based PyMuPDF sorted text lines, with blank lines retained.",
+  "text_checks": [
+    {
+      "source": "packet",
+      "page": 1,
+      "line": 3,
+      "expected_substring": "Submitted on: 11/07/2005"
+    },
+    {
+      "source": "packet",
+      "page": 1,
+      "line": 53,
+      "expected_substring": "02/13/06"
+    },
+    {
+      "source": "packet",
+      "page": 2,
+      "line": 3,
+      "expected_substring": "New York City twice"
+    },
+    {
+      "source": "packet",
+      "page": 2,
+      "line": 8,
+      "expected_substring": "Building 7"
+    },
+    {
+      "source": "packet",
+      "page": 2,
+      "line": 12,
+      "expected_substring": "save at least four members"
+    },
+    {
+      "source": "packet",
+      "page": 2,
+      "line": 15,
+      "expected_substring": "May 6th 2002"
+    },
+    {
+      "source": "packet",
+      "page": 10,
+      "line": 18,
+      "expected_substring": "two more trips"
+    },
+    {
+      "source": "packet",
+      "page": 11,
+      "line": 14,
+      "expected_substring": "Most Probably From Building 7"
+    },
+    {
+      "source": "packet",
+      "page": 15,
+      "line": 4,
+      "expected_substring": "UCB/CE-Steel-05/2002"
+    },
+    {
+      "source": "packet",
+      "page": 15,
+      "line": 5,
+      "expected_substring": "December 2002"
+    },
+    {
+      "source": "proceedings",
+      "page": 8,
+      "line": 33,
+      "expected_substring": "UCB/CE-Steel-05/2002"
+    },
+    {
+      "source": "proceedings",
+      "page": 8,
+      "line": 35,
+      "expected_substring": "December 2003"
+    },
+    {
+      "source": "october",
+      "page": 9,
+      "line": 35,
+      "expected_substring": "least 4 members"
+    },
+    {
+      "source": "hearing",
+      "page": 1,
+      "line": 7,
+      "expected_substring": "March 6, 2002"
+    },
+    {
+      "source": "hearing",
+      "page": 3,
+      "line": 6,
+      "expected_substring": "three trips"
+    }
+  ],
+  "matching_pdf_replay_url": "https://web.archive.org/web/20070617214127/http://www.nistreview.org/WTC-ASTANEH.pdf",
+  "matching_award_search_url": "https://api.nsf.gov/services/v1/awards.json?id=0139542",
+  "figure_check": {
+    "packet_page": 11,
+    "october_supplement_page": 9,
+    "method": "PyMuPDF get_image_info(hashes=True)",
+    "image_placement_digests": {
+      "packet": [
+        "9db12aa0725716e2e7dd7b36d6e2295c"
+      ],
+      "october": [
+        "b5b10db049d9c143bc5b38eafcb97c12",
+        "751d52a56824b64662230ce126c99cca",
+        "3a0e3db10f82fd6791f7ae2e9589e751",
+        "6ad9f0fe26cae9bc47bf1e91c5e9c4ac"
+      ]
+    },
+    "matching_digests": 0
+  }
+}

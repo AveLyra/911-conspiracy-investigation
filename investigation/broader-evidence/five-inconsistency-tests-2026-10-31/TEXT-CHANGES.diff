@@ -1,0 +1,1059 @@
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..fef1d3ba
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,15 @@
++# Five-item accountability
++
++| Human request | Outcome and source scope | Remaining issue |
++| --- | --- | --- |
++| Check holdings/catalogue/completed work first | Current60f3catalogue, actual local source/publication records and completed1078ledger checked | Not a census of every archive/chat; no duplicate acquisition |
++|1 Flight/file mismatch | FIVE01 compares held two-page memo with completed five-page block and safe row/field ledger | Different selected labels confirmed; native/version/selection/channel join open |
++|2 Retention tension | FIVE02 keeps2004label,2001hold and2005copy classes separate | Applicable historical authority/withdrawal/copy/disposition remain TODOs |
++|3 Range differences | FIVE03 adds physical173/185terminalpage readings; existing1078lastrow reused | Conditional label comparisons qualify missing-speech inference; actualmedia unjoined;Bostonmatchingcontrol retained |
++|4 Assessment contrast | FIVE04 combines exact source roles/date availability and new327fieldwork record | No backdating, implied receipt, plot=association or knowing-exclusion conclusion |
++|5 Chronology/attribution | FIVE05 retains exact time/index/planning/signoff fields and corrected custody-reading error | NativeID/timezone/parent/version/receipt/assembly remain TODOs; no calibrated61minuteoffset |
++| Preserve contrary findings and failures | Each RESULTS item has strongest contrary/alternative; priorOCR/reading failures unchanged | No counts treated as votes/probability or validation of wrongdoing |
++| Preserve all original18criteria | OPEN-TODOS retains IDs and inputs/tests; technicalowner boundaries respected | No empirical/custody/original criterion closed |
++| Exact source/page/hash and revision diff | SOURCE-PINS, RESULTS and Git-generatedTEXT-CHANGES.diff | Image reading and text diff separate; earlier files unchanged |
++| Public AveLyra noreply publication | Safe additive8file candidate; no raw/private/personal payload | Actual account/commit/ref/everybody verification recorded after execution; no mainmerge/PR/privatepush |
++| Return through authorizedOverview route | Compact verifiedcommit/links/scope/limits handoff after publication | Delivery is not catalogue integration or independent acceptance |
+diff --git a/OPEN-TODOS.json b/OPEN-TODOS.json
+new file mode 100644
+index 00000000..81b2b0cd
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,100 @@
++{
++  "items": [
++    {
++      "id": "FIVE01-INPUT",
++      "parent": "FIVE01",
++      "status": "TODO_INPUT",
++      "missing_records": [
++        "Native Word/enclosure versions with source-channel/certification scope",
++        "Assembly/version/distribution history and matched source recording"
++      ],
++      "test": "Compare authenticated native bodies, identifiers, selection instructions and audio/channel joins; common native identifiers/content beyond selected headings would strengthen a shared-origin account, while independent channels/selection manifests would weaken it.",
++      "revisit_trigger": "Source-specific authenticated underlying record or actual matched media/receipt/disposition, rather than another unjoined retelling"
++    },
++    {
++      "id": "FIVE02-INPUT",
++      "parent": "FIVE02",
++      "status": "TODO_INPUT",
++      "missing_records": [
++        "Actually applicable historical retention authority and designated recordkeeping-copy classification",
++        "Hold receipt/applicability/withdrawal or exception",
++        "Transfer/custody/disposition logs identifying this exact copy and any originals/audio"
++      ],
++      "test": "Join copy/channel identifiers and contemporaneous governing authority to actual hold and disposition records; distinguish a routine planned label with preservation from executed disposal while a controlling hold applied.",
++      "revisit_trigger": "Source-specific authenticated underlying record or actual matched media/receipt/disposition, rather than another unjoined retelling"
++    },
++    {
++      "id": "FIVE03-INPUT",
++      "parent": "FIVE03",
++      "status": "TODO_INPUT",
++      "missing_records": [
++        "Complete Item20enclosure manifest/returns",
++        "Matched source and rerecording channel/copy/generation keys, actual files and custody",
++        "Recording/transcription/check worksheets and applicable inclusion/clock rules"
++      ],
++      "test": "After exact source/channel/copy joins, compare full actual media coverage and audible content with the transcript, including nominal tails, through the assigned technical owner. Extra relevant audible content omitted from a matched full transcript would strengthen an omission concern; actual complete matching media would weaken it.",
++      "revisit_trigger": "Source-specific authenticated underlying record or actual matched media/receipt/disposition, rather than another unjoined retelling"
++    },
++    {
++      "id": "FIVE04-INPUT",
++      "parent": "FIVE04",
++      "status": "TODO_INPUT",
++      "missing_records": [
++        "Exact earliercommunication referencedin639",
++        "Originalintelligence/fax/interviews/qualifiedtranslations and contemporaneous attachments",
++        "Nativeversion-specificrecipientreceipt, actualreview/advice/decision and taskreturns"
++      ],
++      "test": "Match material assertion to exact receivedversion, reviewedpackage, contemporaneousreason and completedresponse. Demonstrated knowing omission after acknowledgedreceipt would strengthen suppression; accurate cautions/differentinputs/inclusionelsewhere/completedwork could weaken it.",
++      "revisit_trigger": "Source-specific authenticated underlying record or actual matched media/receipt/disposition, rather than another unjoined retelling"
++    },
++    {
++      "id": "FIVE05-INPUT",
++      "parent": "FIVE05",
++      "status": "TODO_INPUT",
++      "missing_records": [
++        "NativemessageIDs/headers/timezones/parentreply/attachmentversions",
++        "Recipienttransport/acknowledgments and source-to-court assembly/indexhistory"
++      ],
++      "test": "Use authenticatednativeIDs/versionlogs and full originalheaders to testparent, timezone and pageassociation; retain whichever values eachsourceactuallycontains and document any contradiction rather than normalizing them.",
++      "revisit_trigger": "Source-specific authenticated underlying record or actual matched media/receipt/disposition, rather than another unjoined retelling"
++    }
++  ],
++  "available_followup": {
++    "status": "TODO_AVAILABLE",
++    "source": "Preserved633one-page courtPDF; bodyunread inAugust22batch",
++    "rule": "Prospectively read before any new trainingcomparison; not a substitute for original school/interview inputs"
++  },
++  "original_requirement_ids": {
++    "FAA": [
++      "FAA01",
++      "FAA02",
++      "FAA03",
++      "FAA04"
++    ],
++    "telephone": [
++      "TEL01",
++      "TEL02",
++      "TEL03",
++      "TEL04"
++    ],
++    "recorder": [
++      "REC01",
++      "REC02",
++      "REC03"
++    ],
++    "materials": [
++      "MAT01",
++      "MAT02",
++      "MAT03"
++    ],
++    "steel": [
++      "STL01",
++      "STL02",
++      "STL03",
++      "STL04"
++    ]
++  },
++  "original_status": "All18acceptance criteria retained asopen/partial; publication/inputchecks are notsubstantive completion",
++  "owner_boundary": "No duplicate recorder/audio decoding, material experiments or independentAudit; exactmedia tests remain with technicalowner",
++  "no_new_gate_or_outreach": "No account/keyaccess, correspondence, request, fee, filing or agency/witness contact undertaken"
++}
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..e20119ab
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,62 @@
++# Five inconsistencies: source-role tests and new transcript endpoint checks
++
++October 31, 2026. **The strongest new result qualifies the inference of missing conversations: two actual FAA transcript terminal pages end their timed dialogue before the latest listed rerecording end labels, then continue with bare minute markers.** The original range differences remain. Exact media/channel/copy joins are still missing.
++
++This review follows the human-authorized five-item request. It checked the [current catalogue](https://github.com/AveLyra/911-conspiracy-investigation/blob/60f3d93c90374e2b50147bfb19867aceccb3ba0e/investigation/catalogue/README.md), later completed readings, source/version/failure records and actual publication receipts before new work. It does not update the catalogue concurrently. [RESULTS.json](RESULTS.json) gives each proposition, previous work, genuinely new work, exact locators, classification, strongest contrary finding, named missing inputs and a falsifiable next test. [SOURCE-PINS.json](SOURCE-PINS.json) retains source URLs/access dates/hashes and actual reading scope. Earlier reports and conflicting values remain unchanged.
++
++## 1. Flight/file labels: a real mismatch, an unjoined lineage
++
++The held AWA937/NARA7599161 two-page entity was reinspected. Its first page prints AAL11 in subject and certification, ZBW-ARTCC-148 in the addressee, January17,2002, TMU commercialline1078,1255–1316UTC and the first timed row1300:41/AD1. Its second page prints the work-file label `UAL175_R42_memo.doc` and footer date09/27/2001. A pagination/masthead placeholder is also visible. In the AEA1130/NARA7598367 packet, physical186 prints UAL175 and ZNY-ARTCC-148, while the selected date,line,range and first timedrow match. [AWA source study](https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md); [packet study](https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md).
++
++The later [complete1078study](https://github.com/AveLyra/911-conspiracy-investigation/blob/8b787be27fcb665a851a42e318ccc4fd0b6117e9/investigation/broader-evidence/faa-1078-marked-passages-2026-10-30/README.md) already read all five pages186–190 and preserved48timedrows,45distinctsecondlabels and22minutemarkers. We reuse that completed work; the middle pages are **not** currently missing/unread in this source block. The AWA entity visibly contains one timed dialogue row followed by its administrative footer page; it is not the same complete rendered entity as the five-page block. That does not establish why its contents differ, a missing recording, or a common native origin. Selected first-row/header agreement cannot authenticate a full-document join.
++
++**Classification:** confirmed subject/file/work-file contrasts; native lineage unresolved. A ground ATC line may concern several aircraft, and subject-specific transcription/certification can select material. Template reuse, a different subject selection, assembly and version differences remain testable alternatives, not resolved causes. Needed: native Word/enclosure/version identifiers, selection instructions, actual source channel and assembly/distribution records. Neither flight label is preferred.
++
++## 2. Retention: keep the printed destruction date beside the hold
++
++AEA1130physical1 prints **DESTROY: March11,2004**. The [September14,2001instruction](https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md), AEA2579physical1, says retain and secure administrative/operational data until further notice and retain when uncertain. Its temporal/facility scope and differing OIG-reported interpretations remain preserved. A label is not an executed disposal record, and the OIG investigation of another locally created tape does not establish this package's disposition.
++
++The already-read [2005specialschedule](https://github.com/AveLyra/911-conspiracy-investigation/blob/8bc80894a40ac207b2ccce62a9fdd6d22d4c1139/investigation/broader-evidence/faa-911-special-schedule-2026-10-30/README.md) separates permanent original records/audio re-recordings from temporary website-image backups, convenience/generation and additional dissemination/revision copies. Its60-day and180-day periods have different classes and triggers. It **cannot by itself establish authorization in2004 or withdrawal of the2001hold**. Original tape, re-recording, accident package, recordkeeping copy, convenience copy and surviving scan cannot silently be treated as one object.
++
++**Classification:** qualified retention tension; governing applicability and actual disposition unresolved. The surviving scan and permanent-original class are contrary evidence to a universal no-surviving-copy claim, without proving an original tape survived. Named TODOs are the applicable historical authority, copy classification, hold receipt/withdrawal/exception, custody/transfer and actual disposition records. No source, schedule or date is normalized into a finding of lawful or unlawful disposal. No deletion occurred.
++
++## 3. End labels versus actual terminal pages: a new qualification
++
++The [Request2Item16list](https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md) preserves these conditional pairings. Physical15/printed8 points onward to Item20; physical16/printed9 includes the Boston entry, transcript labels and further cross-references. It is not the complete production manifest.
++
++| Conditional role/start pairing | Listed rerecording ranges | Transcript range | Last printed timed dialogue row in held counterpart | Terminal minute label |
++| --- | --- | --- | --- | --- |
++| NewYorkOperationsManager |1230–1331;1331–1340|1230–1344|**1338:24**, newly read physical173/printed26of26|1344|
++| NewYorkTMU1245start |1245–1314|1245–1316|**1310:37**, newly read physical185/printed9of9|1316|
++| NewYorkTMU1255start/1078candidate |1255–1315|1255–1316|**1310:14**, prior completed block physical190, ledgerP190R05|1316|
++| BostonMilitaryOperationsSpecialist |1232–1259|1232–1259|Not examined here|Matching declared1259label|
++
++Physical173 has bare markers1339–1344 and EndofTranscript. Physical185 has bare1311–1316markers and EndofTranscript; its top case header is partly occluded, and the visibleUAL175/agency/page fields and prior cover mapping are retained without reconstructing covered characters. The existing1078ledger retains its final row and following markers. The two endpoint candidates were frozen before viewing; their actual printed labels confirmed these selected terminal-page mappings. Other middle pages remain unread. Our checked lineage now covers20distinctAEA1130pageimages, leaving217unread; that is not a full-package or completeOMIC/TMU-DCreading.
++
++**Classification:** confirmed printed-range differences, with a new contrary endpoint observation. Under the conditional same-source/day/clock/role pairing, each latest listed rerecording end is later than the last printed timed dialogue row. Thus the4/2/1minute label differences alone do not establish omitted conversations. They also do not prove acoustic silence, full coverage or faithful transcription. Preserve every label and the matchingBostoncontrol; do not add label differences into missing audio. Native/source/channel/copy/generation identity, completeItem20enclosures, actual media and check worksheets remain TODOs. No audio was acquired, listened to, decoded or aligned here.
++
++## 4. Moussaoui: test the actual information available, not document counts
++
++[636/637and639](https://github.com/AveLyra/911-conspiracy-investigation/blob/3f50f2c6904eca6a39efa4c06c15ea838729a65d/investigation/broader-evidence/moussaoui-reply-update-2026-10-30/README.md) preserve possible-link concern, reported field/headquarters disagreement, caution about indications of planned wrongdoing and reported dissemination. Possible association and evidence of a concrete plot are different propositions. The exact earlier communication referenced in639 remains unidentified.
++
++[346](https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md) adds an August22dated attributedFrenchaccount; attention fields do not prove receipt.59B/642 contain a later supplement reportedly receivedAugust29 and an August30cover explicitly warning that its attachment is a draft, the translation rough and upload future. The source interview's older date does not backdate U.S. availability of that supplement toAugust22/24. [643/644](https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md) add planning, reported checking and translation assertions, with their authorship/header/version limits. The separately published [327review](https://github.com/AveLyra/911-conspiracy-investigation/blob/591ed5873ce7895f47c092f83f244d98efa18154/investigation/broader-evidence/moussaoui-aug22-dissemination-2026-10-31/README.md) adds an August22field aircraft-attack assessment and explicit requested fieldwork. It is not silently selected as639's unidentified earlier message.
++
++**Classification:** qualified assessment contrast; knowledge, exact inputs and follow-through unjoined. Reported sharing, permission, inquiries and continued planning weigh against a blanket claim that all investigative work stopped. Different inputs/questions/thresholds, tentative or inaccurate source information, later supplementation and substantive returns could weaken a knowing-exclusion inference. Conversely, a matched received-version/review/decision chain showing knowing material exclusion or misstatement would strengthen it. No such chain was newly acquired. DRAFT-T01–T06 and the underlying intelligence/advice/receipt/decision/return targets remain open.
++
++## 5. Printed times and authorship: preserve the fields without inventing a clock
++
++The existing [643/644comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md) is preserved:644index **12:58a** versus PDFp1 **12:58PM**;643quotedAbbottparent **10:31AM** versus642cover **11:32AM**;643index planning description versus its reply's plan-in-works wording;644p2 **ScottB** signoff without a separate visibleFrom/To/Dateheader. The cached index's raw byte-line locators are562/572 for643/644. Index descriptions, quoted parents, displayed covers and assembled pages are different source roles.
++
++**Classification:** source-layer contrasts and attribution gap confirmed in the held record; native chronology unjoined. No preferred time, calibrated61minuteclock offset, common native parent, misassembly or attribution of all644text toSamit follows. Native messageIDs, complete headers/timezones, parent/attachment versions, recipient receipts and court assembly/index history remain TODOs.
++
++The prior suspected opposite custody instruction in59B/642 is **not** another unresolved word conflict: high-resolution inspection found **not** in both clauses. Preserve that failed suspicion and correction as an agent reading error; neither source was changed or adjudicated into agreement. Earlier literalOCRfailures likewise remain recorded, not silently repaired into an all-passed result.
++
++## Verification and publication scope
++
++New work was two previously unread endpoint images, two heldAWAimage reinspections and the five-item cross-source/role/availability analysis. The completed1078ledger and prior full readings were reused, not repeated as independent validation. No new source download, hidden-layer extraction, OCR, masked-field reconstruction, legal determination, native-message authentication, acoustic/clock test, outreach, fee, request, filing, private push, deletion or history rewrite occurred.
++
++[compare_endpoints.py](compare_endpoints.py) and [VERIFICATION.json](VERIFICATION.json) reproduce only the three conditional comparisons from manually checked endpoint fields and the prior ledger. They do not validate the transcription, source pairing, clocks, media or historical events. Hashes/reference checks establish copy identity to their stated scope, not independent scientific or primary-source validation. All18original acceptance criteria remain unchanged and incomplete.
++
++[OPEN-TODOS.json](OPEN-TODOS.json) leaves the missing inputs and falsifiable tests explicit. [CHECKLIST.md](CHECKLIST.md) accounts for all five items. [TEXT-CHANGES.diff](TEXT-CHANGES.diff) is the actual text addition diff against this new unit's immediately preceding absent state. Earlier source bytes, failed attempts and reports remain preserved; PDF/image reading is separate from that text diff.
++
++Public payload: eligible original notes, selected safe fields, source pins, method qualifications and TODOs. Excluded: raw protected/marked source material, full speech/OCR, identifying/contact/access/signature/financial fields, lawsuit material, private correspondence/strategy and credentials. The actual AveLyra noreply commit/account/ref/all-file publication receipt is recorded separately after execution. No main merge or PR is requested or performed; delivery toOverview is separate from catalogue integration or independent acceptance.
+diff --git a/RESULTS.json b/RESULTS.json
+new file mode 100644
+index 00000000..6ed1e017
+--- /dev/null
++++ b/RESULTS.json
+@@ -0,0 +1,240 @@
++{
++  "items": [
++    {
++      "id": "FIVE01",
++      "proposition": "Do matching selected1078 fields establish a common native source, and which subject/file fields actually conflict?",
++      "previous_work": "AWA937two-page entity read; AEA1130cover/body/footer sample read; later complete1078unit already read all five physical186–190 pages and supplied48-row ledger. No missing-middle-page claim is carried forward as current.",
++      "new_work": "Reinspected heldAWA937pages1–2 for a cross-copy comparison with the already completed five-page ledger and certification pins; no new download or full-block recount.",
++      "source_locators": [
++        "AWA937p1 subject/case/date/line-range/legend/certification and lone timed row;p2 work-file/date footer",
++        "AEA1130p186 cover/certification/legend/first row;187–190 body/uncertainty/footer; complete1078FIELD-LEDGER"
++      ],
++      "preserved_fields": {
++        "AWA937": {
++          "subject": "AAL11",
++          "certification": "AAL11",
++          "file": "ZBW-ARTCC-148",
++          "date": "January17,2002",
++          "line": "1078",
++          "range": "1255–1316",
++          "first_timed_row": "1300:41/AD1",
++          "work_file": "UAL175_R42_memo.doc",
++          "footer_date": "09/27/2001",
++          "entity_pages": 2,
++          "timed_rows_visible_in_entity": 1
++        },
++        "AEA1130": {
++          "subject": "UAL175",
++          "certification": "UAL175",
++          "file": "ZNY-ARTCC-148",
++          "date": "January17,2002",
++          "line": "1078",
++          "range": "1255–1316",
++          "first_timed_row": "1300:41/AD1",
++          "block_physical_pages": [
++            186,
++            187,
++            188,
++            189,
++            190
++          ],
++          "timed_rows_in_prior_completed_ledger": 48
++        }
++      },
++      "classification": "CONFIRMED_FIELD_MISMATCH; NATIVE_LINEAGE_UNJOINED",
++      "result": "Selected common fields and first row are insufficient to identify complete text/native origin. The two-page AWA entity is not the same complete rendered entity as the five-page packet block. Neither subject/certification is selected as controlling.",
++      "strongest_contrary_or_alternative": "A groundATC line can cover more than one aircraft; subject-accident certification can select material. A pagination/masthead placeholder and incongruent work-file label are visible inAWA937, but do not prove template reuse, misassembly, substitution or deliberate editing. Different selections, copies or versions remain possible.",
++      "missing_records": [
++        "Native Word/enclosure versions with source-channel/certification scope",
++        "Assembly/version/distribution history and matched source recording"
++      ],
++      "falsifiable_next_test": "Compare authenticated native bodies, identifiers, selection instructions and audio/channel joins; common native identifiers/content beyond selected headings would strengthen a shared-origin account, while independent channels/selection manifests would weaken it.",
++      "sources": [
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md",
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md",
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/8b787be27fcb665a851a42e318ccc4fd0b6117e9/investigation/broader-evidence/faa-1078-marked-passages-2026-10-30/README.md"
++      ]
++    },
++    {
++      "id": "FIVE02",
++      "proposition": "Does the2004destroy label establish disposal contrary to the2001hold, and does the2005special schedule settle authorization?",
++      "previous_work": "Held coverp1, complete one-page September14email, previously read OIG accounts and all three special-schedule pages; earlier record/copy distinctions and contrary accounts already published.",
++      "new_work": "Crosswalked exact date/scope/copy-class propositions without re-downloading or re-running old access failures. No new historical applicability/withdrawal/disposal record acquired.",
++      "source_locators": [
++        "AEA1130physical1 coverDESTROY field",
++        "AEA2579physical1 extracted9–19: instruction, temporal/facility scope, uncertainty rule",
++        "N1-237-05-004physical1 date fields;physical2items1(a),1(b),2(a);physical3items2(a),2(b)",
++        "OIGCC-2004-003physical8 and22 reported interpretation/receipt/action findings"
++      ],
++      "preserved_values": {
++        "cover": "DESTROY: March11,2004",
++        "2001_instruction": [
++          "Retain and secure until further notice",
++          "RETAIN IT",
++          "110000 UTC to120400 UTC",
++          "September10,2001 2000–2400local",
++          "September11,2001 0000–2400local"
++        ],
++        "2005_schedule": [
++          "Original records and audio re-recordings: permanent",
++          "Website-image backup class: within60days after cutoff",
++          "Convenience/generation copies: within180days after recordkeeping copy produced",
++          "Additional dissemination/revision copies: activity completion"
++        ]
++      },
++      "classification": "QUALIFIED_RETENTION_TENSION; APPLICABILITY_AND_DISPOSITION_INPUTS_OPEN",
++      "result": "The printedlabel and earlierhold coexist as records. The2005schedule distinguishes permanent originals/re-recordings from temporarycopies; it does not by itself establish what authorized disposal in2004 or withdraw the2001hold. No executed destruction of this package/tape is established.",
++      "strongest_contrary_or_alternative": "The scan survives. Original, tape, accident package and convenience-copy retention may differ; the later schedule expressly preserves a permanent class. That does not prove the original/tapes survived or a particular disposal was lawful. OIG-reported receipt/destruction of a separate locally created tape is not an independent disposition record forAEA1130.",
++      "missing_records": [
++        "Actually applicable historical retention authority and designated recordkeeping-copy classification",
++        "Hold receipt/applicability/withdrawal or exception",
++        "Transfer/custody/disposition logs identifying this exact copy and any originals/audio"
++      ],
++      "falsifiable_next_test": "Join copy/channel identifiers and contemporaneous governing authority to actual hold and disposition records; distinguish a routine planned label with preservation from executed disposal while a controlling hold applied.",
++      "sources": [
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md",
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md",
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/8bc80894a40ac207b2ccce62a9fdd6d22d4c1139/investigation/broader-evidence/faa-911-special-schedule-2026-10-30/README.md"
++      ]
++    },
++    {
++      "id": "FIVE03",
++      "proposition": "Do Item16range mismatches establish omitted recorded speech, after checking actual held transcript tails?",
++      "previous_work": "Item16sub-list/Item20cross-reference read; four conditional label pairs calculated once. AEA1130cover fields already read. Complete1078five-page block already read; last timed row1310:14 retained from its existing ledger.",
++      "new_work": "Prospectively selected and newly read physical173 and185.173is printed26of26 with last timed row1338:24, bare1339–1344markers andEndofTranscript.185is printed9of9 with last timed row1310:37, bare1311–1316markers andEndofTranscript. No source audio acquired or decoded.",
++      "source_locators": [
++        "AWA1077physical15/printed8 visibleOCR24–45;physical16/printed9 visibleOCR1–24;Item20cross-reference in these same fields",
++        "AEA1130physical148 cover and newly read173 printed26of26",
++        "AEA1130physical177 cover and newly read185 printed9of9",
++        "AEA1130physical186–190; priorFIELD-LEDGER P190R05 and terminal minute markers"
++      ],
++      "preserved_pairs": [
++        {
++          "role": "NewYorkOperationsManager",
++          "rerecording": [
++            "1230–1331",
++            "1331–1340"
++          ],
++          "transcript": "1230–1344",
++          "last_printed_timed_row": "1338:24",
++          "terminal_minute_label": "1344"
++        },
++        {
++          "role": "NewYorkTMU1245start",
++          "rerecording": [
++            "1245–1314"
++          ],
++          "transcript": "1245–1316",
++          "last_printed_timed_row": "1310:37",
++          "terminal_minute_label": "1316"
++        },
++        {
++          "role": "NewYorkTMU1255start",
++          "rerecording": [
++            "1255–1315"
++          ],
++          "transcript": "1255–1316",
++          "last_printed_timed_row": "1310:14",
++          "terminal_minute_label": "1316"
++        },
++        {
++          "role": "BostonMilitaryOperationsSpecialist",
++          "rerecording": [
++            "1232–1259"
++          ],
++          "transcript": "1232–1259",
++          "last_printed_timed_row": "Not checked in this batch",
++          "control": "Matching declared labels retained"
++        }
++      ],
++      "classification": "CONFIRMED_LABEL_DIFFERENCES; NEW_ENDPOINT_CHECK_QUALIFIES_SPEECH_INFERENCE; MEDIA_JOIN_OPEN",
++      "result": "For each conditionalNewYorkpair, the latest listed rerecording end is later than the last printed timed dialogue row. The remaining transcript range includes bare minute markers. That weakens an inference of missing speech based only on the4/2/1minute label differences, while leaving every original label unchanged.",
++      "strongest_contrary_or_alternative": "The Boston labels match; Item16explicitly points to additionalItem20material; transcript tail labels can extend beyond the last written dialogue. Exactchannel/copy/generation and actual audible/recorded coverage remain unjoined. Absence of a printed row is not proof of acoustic silence or no relevant omitted content.",
++      "missing_records": [
++        "Complete Item20enclosure manifest/returns",
++        "Matched source and rerecording channel/copy/generation keys, actual files and custody",
++        "Recording/transcription/check worksheets and applicable inclusion/clock rules"
++      ],
++      "falsifiable_next_test": "After exact source/channel/copy joins, compare full actual media coverage and audible content with the transcript, including nominal tails, through the assigned technical owner. Extra relevant audible content omitted from a matched full transcript would strengthen an omission concern; actual complete matching media would weaken it.",
++      "sources": [
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md",
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md",
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/8b787be27fcb665a851a42e318ccc4fd0b6117e9/investigation/broader-evidence/faa-1078-marked-passages-2026-10-30/README.md"
++      ]
++    },
++    {
++      "id": "FIVE04",
++      "proposition": "Do the differingMoussaoui assessments establish knowing exclusion or require different-input/question/threshold tests?",
++      "previous_work": "636/637possible-link and disagreement;639caution/transmission reports; later346attributedFrenchaccount;59B/642supplement/draft/permission/Franceoption;643/644planning/translation/signoff. Exact primary source originals and prior reading/status/failure records retained.",
++      "new_work": "Built a dated source-role/availability crosswalk from completed records. Added the separately published327read as an additional contemporaneous field assessment/task-setting record, not as the proven unidentified message referenced in639.",
++      "source_locators": [
++        "636p1 agency/CTC/French-information paragraph;637p1 HQ/field disagreement andfirmer-link request",
++        "639p1 three body paragraphs and quoted inquiry;939p3–5existing attachment pointer/control",
++        "346p1–3August22face/source-fax/attributedreport",
++        "59Bp1 receipt/serial/phone/fax fields;p2–4translated supplement;p4–6permission/conditionaloption/leads",
++        "642p1draft/roughtranslation/uploadwarning;ECrepresentationsp2–7",
++        "643p1quoted parent/planningreply;644p1translation/checking/inference andp2ScottBsignoff",
++        "327p1/7/8August22fieldassessment/tasksetting"
++      ],
++      "preserved_temporal_roles": {
++        "346": "August22dated attributed account; recipientattentionfield is not actualreceipt",
++        "636_637": "August24reportedpossiblelink/disagreement; underlyingintelligence/advice/packageunknown",
++        "639": "August24displayed5:29PMcaution andreporteddissemination; earlierreferentunknown",
++        "59B": "August30face; says supplementalinfo receivedAugust29; oldinterviewdate doesnotbackdateavailability",
++        "642": "August30cover explicitlycallsattachmentdraft,translationrough,uploadfuture",
++        "643_644": "August30displayedplanning/checking representations; header/source/assembly limits retained",
++        "327": "August22datedfieldassessmentandrequestedtasks; notproveninputtoeachlaterauthor"
++      },
++      "classification": "QUALIFIED_ASSESSMENT_CONTRAST; KNOWLEDGE_AND_FOLLOW_THROUGH_CHAIN_UNJOINED",
++      "result": "Possible association, suspicion of an aircraftattack and evidence of a concrete plan are different propositions. The records preserve concern and downplaying/caution, but do not show exact inputs actually read by eachauthor/reviewer or adjudicate why accounts differ. NoAugust29supplement is backdated toAugust22/24.",
++      "strongest_contrary_or_alternative": "Same source family reports dissemination, sharingpermission, furtherinquiries and continuingplanning.327sets fieldwork. Differentinputs/questions/thresholds, tentative or inaccurate source information, supplementation or actualfollow-through could weaken knowing-exclusion interpretation. Knowing material exclusion/misstatement remains a testable competing hypothesis, not an established result.",
++      "missing_records": [
++        "Exact earliercommunication referencedin639",
++        "Originalintelligence/fax/interviews/qualifiedtranslations and contemporaneous attachments",
++        "Nativeversion-specificrecipientreceipt, actualreview/advice/decision and taskreturns"
++      ],
++      "falsifiable_next_test": "Match material assertion to exact receivedversion, reviewedpackage, contemporaneousreason and completedresponse. Demonstrated knowing omission after acknowledgedreceipt would strengthen suppression; accurate cautions/differentinputs/inclusionelsewhere/completedwork could weaken it.",
++      "sources": [
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/3f50f2c6904eca6a39efa4c06c15ea838729a65d/investigation/broader-evidence/moussaoui-reply-update-2026-10-30/README.md",
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md",
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md",
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/591ed5873ce7895f47c092f83f244d98efa18154/investigation/broader-evidence/moussaoui-aug22-dissemination-2026-10-31/README.md"
++      ]
++    },
++    {
++      "id": "FIVE05",
++      "proposition": "Can printed/index times, planning wording and644p2signoff authenticate native chronology or authorship?",
++      "previous_work": "Complete643/644three-page reading,held642p1comparison,cachedcourtindex and custody-negation failed-reading correction already preserved. No native message/timezone/attachment/assembly record acquired.",
++      "new_work": "Cross-classified existing field conflicts and attribution limits, preserved all values and avoided repeated access failure/clock fitting. This is a source-role test, not independent forensic confirmation or a new native acquisition.",
++      "source_locators": [
++        "Cachedcourtindexrawbyte row572:644description;644p1displayedFrom/To/Date andp2closing",
++        "643p1quotedAbbottparent andreply;cachedindexrow562description",
++        "642p1displayedcoverdate/draftwarning",
++        "59Bp4/642p6bothcontainnotinselectedcustodyclause; priorhigh-resolutionfailed-suspicionrecord"
++      ],
++      "preserved_values": {
++        "644_index": "12:58a",
++        "644_PDF_p1": "12:58PM",
++        "643_quoted_Abbott": "10:31AM",
++        "642_cover": "11:32AM",
++        "643_index_planning": "plan to have a plan",
++        "643_body_planning": "plan in the works",
++        "644_p2": "ScottBsignoff; no separate visibleFrom/To/Dateheader"
++      },
++      "classification": "CONFIRMED_SOURCE_LAYER_CONTRASTS_AND_ATTRIBUTION_GAP; NATIVE_CHRONOLOGY_UNJOINED",
++      "result": "Different source roles/printed fields remain sidebyside. Do not choose a preferred time, derive a calibrated61minuteoffset, identify a sharednativeparent, infermisassembly or assign all644text toSamit. The corrected59B/642negation suspicion is an agentreadingerror, not another unresolved oppositewording discrepancy.",
++      "strongest_contrary_or_alternative": "Indexdescription is not nativeheader; quotedparent and separatecover need not have identical version/timezone. A two-page courtassembly with a distinct closing doesnotitselfprove pageassociation orauthorship. Draft/excerpt/indexing/version alternatives remain untested.",
++      "missing_records": [
++        "NativemessageIDs/headers/timezones/parentreply/attachmentversions",
++        "Recipienttransport/acknowledgments and source-to-court assembly/indexhistory"
++      ],
++      "falsifiable_next_test": "Use authenticatednativeIDs/versionlogs and full originalheaders to testparent, timezone and pageassociation; retain whichever values eachsourceactuallycontains and document any contradiction rather than normalizing them.",
++      "sources": [
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md",
++        "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md"
++      ]
++    }
++  ],
++  "result_types_not_votes": true,
++  "all_original_eighteen_criteria": "Unchanged open/partial; no original/empirical criterion completed by this comparison"
++}
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..1a211736
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,548 @@
++{
++  "provenance_rule": "All sources are held; no new source download in thisfive-item batch. Access dates are original acquisitions. SHA-256 identifies acquired bytes. Exact page/field/row pins are inRESULTS.json, not fabricatednative line numbers.",
++  "report_links": {
++    "catalogue": "https://github.com/AveLyra/911-conspiracy-investigation/blob/60f3d93c90374e2b50147bfb19867aceccb3ba0e/investigation/catalogue/README.md",
++    "awa": "https://github.com/AveLyra/911-conspiracy-investigation/blob/0584407dac2190a9f9514ee157124446e60672d5/investigation/broader-evidence/faa-tmu1078-source-2026-10-30/README.md",
++    "packet": "https://github.com/AveLyra/911-conspiracy-investigation/blob/e64f8f3006879bfde9fa76f1db4b9be6b514d5af/investigation/broader-evidence/faa-completed-package-original-2026-10-30/README.md",
++    "complete1078": "https://github.com/AveLyra/911-conspiracy-investigation/blob/8b787be27fcb665a851a42e318ccc4fd0b6117e9/investigation/broader-evidence/faa-1078-marked-passages-2026-10-30/README.md",
++    "labels": "https://github.com/AveLyra/911-conspiracy-investigation/blob/62a102da31cc82a7216dc41e60bed185a11c8d45/investigation/broader-evidence/faa-response-labels-2026-10-30/README.md",
++    "retention": "https://github.com/AveLyra/911-conspiracy-investigation/blob/45ee3925dc1edd3137cf85182570bfc8440afcac/investigation/broader-evidence/faa-retention-directive-2026-10-30/README.md",
++    "schedule": "https://github.com/AveLyra/911-conspiracy-investigation/blob/8bc80894a40ac207b2ccce62a9fdd6d22d4c1139/investigation/broader-evidence/faa-911-special-schedule-2026-10-30/README.md",
++    "assessments": "https://github.com/AveLyra/911-conspiracy-investigation/blob/3f50f2c6904eca6a39efa4c06c15ea838729a65d/investigation/broader-evidence/moussaoui-reply-update-2026-10-30/README.md",
++    "french": "https://github.com/AveLyra/911-conspiracy-investigation/blob/d39c2a1f666f298df0cbea3115349075135e82b9/investigation/broader-evidence/moussaoui-french-reply-controls-2026-10-31/README.md",
++    "followup": "https://github.com/AveLyra/911-conspiracy-investigation/blob/77fd80202f5d6b01a98eb4a7f59c798690004bf1/investigation/broader-evidence/moussaoui-france-followup-2026-10-31/README.md",
++    "aug22": "https://github.com/AveLyra/911-conspiracy-investigation/blob/591ed5873ce7895f47c092f83f244d98efa18154/investigation/broader-evidence/moussaoui-aug22-dissemination-2026-10-31/README.md"
++  },
++  "AWA937": {
++    "catalogue": "https://catalog.archives.gov/id/7599161",
++    "download": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/c-Transcripts/5-AWA-937-Memorandum-Fill-Transcript-New-York-ARTCC.pdf",
++    "access_started_utc": "2026-10-30T16:40:07.904840+00:00",
++    "access_finished_utc": "2026-10-30T16:40:08.383905+00:00",
++    "http_status": 200,
++    "content_type": "application/pdf",
++    "bytes": 27138,
++    "sha256": "a10386e4e39d455c7438328eca88bb28a76b7aea5c33282b4537779924851432",
++    "pages": 2,
++    "images_read": [
++      1,
++      2
++    ],
++    "response_last_modified": "Sat, 04 Sep 2021 04:01:33 GMT",
++    "source_form": "Released PDF/capture, not authenticated native Word, email, signing or audio."
++  },
++  "AEA1130": {
++    "id": "AEA1130",
++    "catalogue": "https://catalog.archives.gov/id/7598367",
++    "download": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/4-UAL-175/e-Other/4-AEA-1130-COMPLETED-ACCID-PCKG--FORMAL-ACCID-PCKG-ZNY-ARTCC-148-UAL175-REDACT-SEALED.pdf",
++    "access_started_utc": "2026-10-30T18:22:46.557085+00:00",
++    "access_finished_utc": "2026-10-30T18:22:50.688584+00:00",
++    "http_status": 200,
++    "content_type": "application/pdf",
++    "bytes": 15505493,
++    "sha256": "5bb71c00b716fb59425571d0c714a97a32d84b13f35dcc65d7cc6bd6f83b5179",
++    "physical_pages": 237,
++    "response_last_modified": "Sat, 04 Sep 2021 02:40:59 GMT",
++    "selected_pdf_metadata": {
++      "/CreationDate": "D:20131106135152-05'00'",
++      "/Creator": "Outside In (C) Technology",
++      "/ModDate": "D:20131106135153-05'00'",
++      "/Producer": "Adobe Acrobat 10.1.8 Paper Capture Plug-in"
++    },
++    "form": "Officially hosted released redacted PDF scan; not authenticated native Word/email/audio, original signatures, approved version, exact delivered copy or accurate source clock."
++  },
++  "inventory": {
++    "source": {
++      "catalogue_url": "https://catalog.archives.gov/id/34913873",
++      "download_url": "https://catalog.archives.gov/medialive/73/9138/34913873/content/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-AWA-1077-4-Red-Tab-Commision-Request-No--2-and-AAT-20-Response-REDACT-SEALED.pdf",
++      "access_started_utc": "2026-10-30T16:03:50.613748+00:00",
++      "access_finished_utc": "2026-10-30T16:03:51.935379+00:00",
++      "bytes": 4592330,
++      "sha256": "06bd6869f765702e620fe4344f38ab622763439979a8e9a91779ec710904ec93",
++      "http_status": 200,
++      "content_type": "application/pdf",
++      "pages": 26,
++      "response_last_modified_header": "Wed, 17 Aug 2016 04:04:33 GMT",
++      "last_modified_limit": "Hosting-response metadata, not authoring/transmission or receipt date."
++    },
++    "selected_locators": [
++      {
++        "physical_page": 2,
++        "locator": "Request heading, opening anditems3–5",
++        "observation": "July16,2003production date; draft/final after-action scope"
++      },
++      {
++        "physical_page": 4,
++        "locator": "Items16,19,20; rolling/withholding/custody paragraphs; partly occluded footer",
++        "observation": "Exact historical request terms; do not reconstruct covered date text"
++      },
++      {
++        "physical_page": 8,
++        "printed_response_page": 1,
++        "visible_OCR_lines": [
++          3,
++          12
++        ],
++        "observation": "AAT-200response heading; July2,2003request attribution; another office should review for accuracy/suitability"
++      },
++      {
++        "physical_page": 15,
++        "printed_response_page": 8,
++        "visible_OCR_lines": [
++          24,
++          45
++        ],
++        "observation": "Item16 response/cross-reference and four New York rerecording entries"
++      },
++      {
++        "physical_page": 16,
++        "printed_response_page": 9,
++        "visible_OCR_lines": [
++          1,
++          24
++        ],
++        "observation": "Boston rerecording, four full-transcript labels, Items19and20response/cross-reference"
++      },
++      {
++        "physical_page": 26,
++        "printed_response_page": 19,
++        "locator": "Final five listed document types",
++        "observation": "Cleveland chain-of-custody memorandum/SATORI and related locators; underlying documents not acquired here"
++      }
++    ],
++    "visible_OCR": {
++      "version": "tesseract5.5.2",
++      "raster_scale_to": 1600,
++      "psm": 3,
++      "selected_derivative_hashes": {
++        "physical8": "f02554f9d2e549b557dde1b6ac64dd7245e4837d3ed23d1ec26b8fdeab7f8505",
++        "physical15": "ac0a70131c7cce9300fa0657052c4a37ac3d549d3e628a0e22d5a0cb7b981095",
++        "physical16": "f00fd3aac5ea584cf6b04b59ea4750e15a20c923457f23184b587b5c8163751e"
++      },
++      "limit": "Local visible-raster derivative/locator; selected values manually checked against images, full OCR not in this bundle."
++    },
++    "reused_AWA660_study": {
++      "url": "https://catalog.archives.gov/id/7596181",
++      "direct_source": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AWA-660-Note-9-11-Commission-File.pdf",
++      "reading": "Earlier held study/source reading reused, no fresh complete original hash/image assertion",
++      "note_limit": "Attributed reports, not four center affidavits or receipt confirmation"
++    },
++    "office_code_variation": {
++      "catalogue_title": "AAT-20",
++      "physical8_heading": "AAT-200",
++      "status": "Preserved as separate observations; cause and exact routing equivalence untested"
++    }
++  },
++  "retention": {
++    "created_utc": "2026-10-30T15:40:40.700928+00:00",
++    "new_original": {
++      "id": "AEA2579",
++      "catalogue_url": "https://catalog.archives.gov/id/7596109",
++      "download_url": "https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/1-AAL-77/e-Other/1-AEA-2579-EMAIL--REF-RECORD-RETENTION-REGARDING-09-11-EVENTS.pdf",
++      "access_started_utc": "2026-10-30T15:32:26.333975+00:00",
++      "access_finished_utc": "2026-10-30T15:32:26.586539+00:00",
++      "http_status": 200,
++      "content_type": "application/pdf",
++      "bytes": 24441,
++      "sha256": "ace9aa35cb266decd2344d48c06bd0d2625cfc5ce2bded8dd2bafdca67898329",
++      "pages": 1,
++      "reading": "complete page1 image and visible text",
++      "locators": [
++        {
++          "page": 1,
++          "extraction_lines": [
++            2,
++            2
++          ],
++          "field": "printed header date/time",
++          "observation": "09/14/2001 01:00 PM; zone not established"
++        },
++        {
++          "page": 1,
++          "extraction_lines": [
++            9,
++            11
++          ],
++          "field": "subject and retention instruction",
++          "observation": "Subject concerns September11 records; preserve administrative/operational data until further notice"
++        },
++        {
++          "page": 1,
++          "extraction_lines": [
++            12,
++            15
++          ],
++          "field": "source time ranges",
++          "observation": "110000 UTC to 120400 UTC; September10,2001 2000 - 2400 local; September11,2001 0000 - 2400 local; September word split across two source lines"
++        },
++        {
++          "page": 1,
++          "extraction_lines": [
++            16,
++            17
++          ],
++          "field": "facility/distribution scope",
++          "observation": "Centers, Terminals, AFSS's, FSDPS's, FCT's; hub managers to notify appropriate FCTs"
++        },
++        {
++          "page": 1,
++          "extraction_lines": [
++            18,
++            19
++          ],
++          "field": "uncertainty instruction and office locator",
++          "observation": "Retain in case of uncertainty; AEA-505 office locator; contact details excluded"
++        }
++      ],
++      "extraction": "Python3.12.14 / pypdf6.10.0, extract_text(), 21lines; full text remains local",
++      "last_modified_response_header": "Fri, 03 Sep 2021 18:15:56 GMT",
++      "date_limit": "HTTP Last-Modified is response metadata, not original email creation or delivery authentication"
++    },
++    "reused_OIG": {
++      "url": "https://www.oig.dot.gov/sites/default/files/cc2004003.pdf",
++      "version": "CC-2004-003; May4,2004 catalog date recorded in earlier study",
++      "bytes": 400367,
++      "sha256": "4eb4bff61710c3d339d98fdcd222bdc86a2dd775a086f0a2b45a7988e50ffdd5",
++      "physical_printed_pages": [
++        8,
++        22
++      ],
++      "prior_locator_ids": [
++        "OIG-p008-07",
++        "OIG-p022-09"
++      ],
++      "prior_extraction_lines": [
++        [
++          15,
++          25
++        ],
++        [
++          8,
++          18
++        ]
++      ],
++      "actual_current_scope": "Read prior preserved selected page-text/passages; no fresh complete PDF retrieval/hash/image-reading assertion"
++    },
++    "reused_schedule": {
++      "url": "https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0237/n1-237-05-004_sf115.pdf",
++      "sha256": "121e24707b1bf8ae6c519cacaa7504b89fd78d97b81f0d1a8d44cb075ce0278a",
++      "bytes": 127434,
++      "pages": [
++        2,
++        3
++      ],
++      "published_source_study": "https://github.com/AveLyra/911-conspiracy-investigation/blob/8bc80894a40ac207b2ccce62a9fdd6d22d4c1139/investigation/broader-evidence/faa-911-special-schedule-2026-10-30/README.md",
++      "limit": "Reuse existing review; no fresh schedule reading or case-specific application"
++    },
++    "independence": "The email and OIG quotation may concern the same source instruction and are not independent corroboration of destruction or receipt."
++  },
++  "special_schedule": {
++    "review_date": "2026-10-30",
++    "primary_reading_scope": "All three PDF pages rendered and visually read; local OCR/extraction-navigation aids are not published or silently corrected",
++    "sources": {
++      "S": {
++        "url": "https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0237/n1-237-05-004_sf115.pdf",
++        "resolved_url": "https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0237/n1-237-05-004_sf115.pdf",
++        "access_utc": "2026-10-30T13:22:13.248830+00:00",
++        "http_status": 200,
++        "content_type": "application/pdf",
++        "bytes": 127434,
++        "sha256": "121e24707b1bf8ae6c519cacaa7504b89fd78d97b81f0d1a8d44cb075ce0278a",
++        "pages": 3
++      },
++      "H01": {
++        "url": "https://www.faa.gov/documentLibrary/media/order/finance/1350-15C/media/chapter5.pdf",
++        "accessed_utc": "2026-10-27T12:48:50.335075+00:00",
++        "bytes": 137603,
++        "sha256": "e4280357df0b7ac1e32d76e2bf67f23b8bb7b271e0a730d7af4ace0b451dd427",
++        "physical_pages": 28,
++        "role": "Reused October27 prior selected pin P01, not a fresh whole-handbook review",
++        "pin_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/SOURCE-PINS.json",
++        "physical_page": 27,
++        "printed_page": 95,
++        "items": [
++          "2970(1)",
++          "2970(2)"
++        ],
++        "original_extraction_line_range_in_page": [
++          45,
++          69
++        ]
++      },
++      "H02": {
++        "url": "https://www.faa.gov/documentLibrary/media/order/finance/1350-15C/media/chapter6.pdf",
++        "accessed_utc": "2026-10-27T12:48:50.334461+00:00",
++        "bytes": 124365,
++        "sha256": "9ab4cf9a9791415ffdb13771390ac443e81b4f1fc8065a50c0df6dafd1a4da34",
++        "physical_pages": 26,
++        "role": "Reused October27 prior selected pin P02, not a fresh whole-handbook review",
++        "pin_record": "https://github.com/AveLyra/911-conspiracy-investigation/blob/055ef54a857b46846d0038109bab7e108970f03a/investigation/broader-evidence/faa-postreport-disposition-2026-10-27/SOURCE-PINS.json",
++        "physical_page": 22,
++        "printed_page": 118,
++        "item": "3770(2)",
++        "original_extraction_line_range_in_page": [
++          29,
++          61
++        ]
++      },
++      "C01": {
++        "child_url": "https://catalog.archives.gov/id/7597271",
++        "parent_url": "https://catalog.archives.gov/id/7419198",
++        "held_capture_date": "2026-10-27",
++        "parent_title": "Open Files Relating to the September 11, 2001 Terrorist Attacks on the United States",
++        "catalog_series_dates": "2001–2004",
++        "HMS_MLR": "UD-10D-1",
++        "role": "Relationship in a held public catalog DOM capture, not newly acquired parent contents or proven schedule/accession join",
++        "local_capture_sha256": "e4dfe9237574da2c2bed2e270e1a4e43a38ed5a7746257f6a5534f5865eb4b55",
++        "live_check": "Exact parent web-reader open failed at tool-access layer; original HTTP status not established. Separate browser runtime attempt failed before navigation."
++      }
++    },
++    "pins": [
++      {
++        "id": "S01",
++        "source": "S",
++        "pdf_page": 1,
++        "locator": "SF115 job, received, agency/subdivision, certification, approval and attached-pages fields",
++        "reading": "Full cover visually read; signature/contact details excluded",
++        "selected_fields": {
++          "job_as_read": "N1-237-05-4",
++          "date_received_as_read": "6-16-2005",
++          "agency_certification_date_as_read": "5/25/05",
++          "approval_date": "2005 visible; exact day not confidently transcribed; apparent October reading not asserted as exact",
++          "attached_page_count_as_read": 1,
++          "total_acquired_pdf_pages": 3,
++          "content_continuation_pages_after_cover": 2
++        },
++        "limit": "No native submission/assembly, exact approval-day or specific case applicability authenticated"
++      },
++      {
++        "id": "S02",
++        "source": "S",
++        "pdf_page": 2,
++        "item": "1 / 8020.5, introductory scope",
++        "navigation_file": "PAGE-02-NAVIGATION-LOCAL.txt",
++        "line_range": [
++          2,
++          17
++        ],
++        "reading": "Full page visually read; scope synopsis paraphrased in notes, original scan preserved",
++        "limit": "Full-consolidation description not independently verified completeness"
++      },
++      {
++        "id": "S03",
++        "source": "S",
++        "pdf_page": 2,
++        "item": "1(a)",
++        "navigation_file": "PAGE-02-NAVIGATION-LOCAL.txt",
++        "line_range": [
++          18,
++          20
++        ],
++        "heading_verbatim": "Original records and audio re-recordings.",
++        "disposition_paraphrase": "Permanent; transfer to NARA",
++        "limit": "No actual transfer, complete master/channel or clock identity established"
++      },
++      {
++        "id": "S04",
++        "source": "S",
++        "pdf_page": 2,
++        "item": "1(b)",
++        "navigation_file": "PAGE-02-NAVIGATION-LOCAL.txt",
++        "line_range": [
++          21,
++          27
++        ],
++        "disposition_paraphrase": "FAA website-image backup copies, redacted and unredacted; temporary; cutoff when associated website images removed; delete within60 days of cutoff",
++        "limit": "Copy class only; actual removal, disposition and underlying-original fate unknown"
++      },
++      {
++        "id": "S05",
++        "source": "S",
++        "pdf_pages": [
++          2,
++          3
++        ],
++        "item": "2 introduction and 2(a)",
++        "navigation_ranges": [
++          {
++            "file": "PAGE-02-NAVIGATION-LOCAL.txt",
++            "lines": [
++              28,
++              36
++            ]
++          },
++          {
++            "file": "PAGE-03-NAVIGATION-LOCAL.txt",
++            "lines": [
++              1,
++              4
++            ]
++          }
++        ],
++        "disposition_paraphrase": "Convenience/generation copies with no further administrative value after making recordkeeping copy; temporary; within180 days after that copy produced",
++        "limit": "Does not authorize a universal180-day email rule or prove a recordkeeping copy survived"
++      },
++      {
++        "id": "S06",
++        "source": "S",
++        "pdf_page": 3,
++        "item": "2(b)",
++        "navigation_file": "PAGE-03-NAVIGATION-LOCAL.txt",
++        "line_range": [
++          5,
++          8
++        ],
++        "disposition_paraphrase": "Additional dissemination/revision/updating copies; temporary; delete when that activity complete",
++        "limit": "Actual completion and disposition events unverified"
++      }
++    ],
++    "status": "No original substantive PD01–PD03 outcome record or case-to-schedule/accession join acquired",
++    "privacy": "Source scans, signatures, contact fields and full extracted text excluded from public payload"
++  },
++  "court_sources": [
++    {
++      "exhibit": "59B",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/059B.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/059B.pdf",
++      "access_utc": "2026-10-31T13:10:32.320844+00:00",
++      "bytes": 476580,
++      "sha256": "3fafad3a7b1d618840ee5f6a2f6fa09d6f949d5a7a21f970756b65814ae8aa8f",
++      "pages": 7,
++      "source_role": "Previously acquired and read court representation; inherited pin reused, not fresh native authentication"
++    },
++    {
++      "exhibit": "346",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/346.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/346.pdf",
++      "access_utc": "2026-10-31T13:10:32.963362+00:00",
++      "bytes": 161698,
++      "sha256": "a6b804d6f6580e578f90bdb9c8fa129112cb79217bb53f2ce182361c1113559e",
++      "pages": 3,
++      "source_role": "Previously acquired and read court representation; inherited pin reused, not fresh native authentication"
++    },
++    {
++      "exhibit": "642",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/642.pdf",
++      "access_utc": "2026-10-31T13:10:33.798265+00:00",
++      "bytes": 496653,
++      "sha256": "6968155013d3d53aa6c26c14338310fc6cb603552b9cf3836822bf70a7d96b0f",
++      "pages": 7,
++      "source_role": "Previously acquired and read court representation; inherited pin reused, not fresh native authentication"
++    },
++    {
++      "exhibit": "336",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/336.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/336.pdf",
++      "access_utc": "2026-10-31T02:34:00.702592+00:00",
++      "bytes": 301981,
++      "sha256": "fd8137a4554318a5a6b1b71ebfe032da8fb996d7cd69c863edd4cbd407fa5f37",
++      "pages": 6,
++      "source_role": "Previously acquired and read court representation; inherited pin reused, not fresh native authentication"
++    },
++    {
++      "exhibit": "337",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/337.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/337.pdf",
++      "access_utc": "2026-10-31T02:34:01.794728+00:00",
++      "bytes": 359793,
++      "sha256": "fc4f9d1ac19ce4c638d5dd4989f53dec4d55ea5a6f2626daae199b5a0942af68",
++      "pages": 5,
++      "source_role": "Previously acquired and read court representation; inherited pin reused, not fresh native authentication"
++    },
++    {
++      "exhibit": "326",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/326.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/326.pdf",
++      "access_utc": "2026-10-31T02:13:24.553381+00:00",
++      "bytes": 88141,
++      "sha256": "34171a6022bf7db71581bdd45353e3e5f14b989bc3785eb7a3ecc5c83cd6f448",
++      "pages": 1,
++      "source_role": "Previously acquired and read court representation; inherited pin reused, not fresh native authentication"
++    },
++    {
++      "exhibit": "636",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/636.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/636.pdf",
++      "access_utc": "2026-10-30T01:03:36.493881+00:00",
++      "bytes": 50677,
++      "sha256": "51a7aa26ab13fea659387b6fe24012954b409c7a9499f88a60d2be4c9a8b10e2",
++      "pages": 1,
++      "source_role": "Previously acquired and read court representation; inherited pin reused, not fresh native authentication"
++    },
++    {
++      "exhibit": "637",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/637.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/637.pdf",
++      "access_utc": "2026-10-30T01:03:39.044309+00:00",
++      "bytes": 101089,
++      "sha256": "52c9aad81a7051ea377eea6b4dff101cf74ea7f11766d8d78b2d37a002e6502e",
++      "pages": 1,
++      "source_role": "Previously acquired and read court representation; inherited pin reused, not fresh native authentication"
++    },
++    {
++      "exhibit": "639",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/639.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/639.pdf",
++      "access_utc": "2026-10-31T02:13:24.771119+00:00",
++      "bytes": 33189,
++      "sha256": "9e983a60ad3ce0bd25290577cf3c23164f6010f5fb59eeac9fe3d140c56c521a",
++      "pages": 1,
++      "source_role": "Previously acquired and read court representation; inherited pin reused, not fresh native authentication"
++    },
++    {
++      "exhibit": "643",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/643.pdf",
++      "access_utc": "2026-10-31T16:47:12.944155+00:00",
++      "bytes": 61911,
++      "sha256": "f69602cf016f31a6060c90c174108a5ea34e1ebced8f2f90df307337ff3dccc8",
++      "pages": 1,
++      "source_role": "Previously acquired and read court representation; inherited pin reused, not fresh native authentication"
++    },
++    {
++      "exhibit": "644",
++      "url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf",
++      "resolved_url": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/defense/644.pdf",
++      "access_utc": "2026-10-31T16:47:13.382513+00:00",
++      "bytes": 136111,
++      "sha256": "9c0c63a7f8cb81f370d2b2a4ba5d32ca8c3824e18300a672d23bb27c1447e541",
++      "pages": 2,
++      "source_role": "Previously acquired and read court representation; inherited pin reused, not fresh native authentication"
++    }
++  ],
++  "newly_read_page_images": [
++    {
++      "source": "AEA1130",
++      "physical_page": 173,
++      "raster_sha256": "e8722c2984488e5b1da5ac226150c98cc049a10d5ec8d91e4196b763a5d902bf",
++      "longest_dimension_pixels": 1800,
++      "reading": "Wholepage visually read; noOCR/hiddenlayer; fullspeech excluded"
++    },
++    {
++      "source": "AEA1130",
++      "physical_page": 185,
++      "raster_sha256": "cd088cde7b251a2e3ab4d20a8974ddff3d432ebcbb59249de43ac6ee4fb648f6",
++      "longest_dimension_pixels": 1800,
++      "reading": "Wholepage visually read; noOCR/hiddenlayer; fullspeech excluded"
++    }
++  ],
++  "read_scope_update": {
++    "prior_complete1078_reading": [
++      186,
++      187,
++      188,
++      189,
++      190
++    ],
++    "prior_total_distinct_AEA1130_pages": 18,
++    "new_distinct_AEA1130_pages": [
++      173,
++      185
++    ],
++    "known_cumulative_distinct_AEA1130_pages": 20,
++    "remaining_unread_AEA1130_pages": 217,
++    "limit": "This is the checked lineage of these studies, not a census of everychat; no full OMIC/TMU-DCblock or wholepacket reading/authentication is asserted."
++  },
++  "earlier_failed_checks": "Prior32pass/4literalOCRanchorfailures remain unchanged, not rerun to obtainpass. ADI/AD1 andS/5processingvalues retained.59B/642negationmisreading correctedpreviously, not evidenceadjudication.",
++  "failed_navigation_metadata_read": "An attempted local PUBLICATION-PLAN-LOCAL.json read for the differently structured special-schedule unit found no such file; existing actual publication/source records were then used. Not a missing source or an access/suppression finding."
++}
+diff --git a/VERIFICATION.json b/VERIFICATION.json
+new file mode 100644
+index 00000000..e22541e2
+--- /dev/null
++++ b/VERIFICATION.json
+@@ -0,0 +1,35 @@
++{
++  "executed_utc": "2026-10-31T19:51:12.415874+00:00",
++  "command": "python3 compare_endpoints.py",
++  "exit_code": 0,
++  "actual_output": {
++    "comparisons": [
++      {
++        "role": "NewYorkOperationsManager",
++        "latest_listed_rerecording_end": "1340",
++        "last_printed_timed_row": "1338:24",
++        "transcript_terminal_label": "1344",
++        "last_timed_row_precedes_latest_listed_end_under_conditional_pairing": true
++      },
++      {
++        "role": "NewYorkTMU1245start",
++        "latest_listed_rerecording_end": "1314",
++        "last_printed_timed_row": "1310:37",
++        "transcript_terminal_label": "1316",
++        "last_timed_row_precedes_latest_listed_end_under_conditional_pairing": true
++      },
++      {
++        "role": "NewYorkTMU1255start",
++        "latest_listed_rerecording_end": "1315",
++        "last_printed_timed_row": "1310:14",
++        "transcript_terminal_label": "1316",
++        "last_timed_row_precedes_latest_listed_end_under_conditional_pairing": true
++      }
++    ],
++    "conditions": "Same source/day/clock/role/copy pairing is assumed only for this comparison, not established. Minute labels are not calibrated media endpoints.",
++    "not_tested": "Actual audio/coverage/clock/transcription/native origin or historical truth",
++    "Boston": "Matching declared labels reused; no new terminal-page reading"
++  },
++  "manual_source_reading": "Separate operation; actual two whole-page images and two heldmemoimages read. Earlier five-page ledger reused.",
++  "earlier_failures_preserved": "No rerun or rewrite of previous32pass/4literalOCRanchorfailures or correctednegationreadings."
++}
+diff --git a/compare_endpoints.py b/compare_endpoints.py
+new file mode 100644
+index 00000000..56291e65
+--- /dev/null
++++ b/compare_endpoints.py
+@@ -0,0 +1,17 @@
++import json
++from pathlib import Path
++
++def seconds(value):
++    h, m, s = value[:2], value[2:4], value[5:]
++    return int(h)*3600 + int(m)*60 + int(s)
++
++def run():
++    item = next(x for x in json.loads((Path(__file__).parent/'RESULTS.json').read_text())['items'] if x['id']=='FIVE03')
++    comparisons = []
++    for row in item['preserved_pairs'][:3]:
++        end = row['rerecording'][-1].split('–')[-1]
++        comparisons.append({'role':row['role'], 'latest_listed_rerecording_end':end, 'last_printed_timed_row':row['last_printed_timed_row'], 'transcript_terminal_label':row['terminal_minute_label'], 'last_timed_row_precedes_latest_listed_end_under_conditional_pairing':seconds(row['last_printed_timed_row']) < seconds(end+':00')})
++    return {'comparisons':comparisons,'conditions':'Same source/day/clock/role/copy pairing is assumed only for this comparison, not established. Minute labels are not calibrated media endpoints.','not_tested':'Actual audio/coverage/clock/transcription/native origin or historical truth','Boston':'Matching declared labels reused; no new terminal-page reading'}
++
++if __name__=='__main__':
++    print(json.dumps(run(), indent=2))

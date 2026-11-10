@@ -1,0 +1,1892 @@
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/LOCATORS.json
+@@ -0,0 +1,58 @@
++{
++  "rows": [
++    {
++      "existing_key": "TEL03/definitions",
++      "source_locator": "UA175 physical3, bullets2–4",
++      "report_line": 11,
++      "scope": "Attributed source observation or supplied-reading calculation; not independent historical validation."
++    },
++    {
++      "existing_key": "TEL03/name-attribution",
++      "source_locator": "UA175 physical2, name-columns bullet",
++      "report_line": 11,
++      "scope": "Attributed source observation or supplied-reading calculation; not independent historical validation."
++    },
++    {
++      "existing_key": "TEL03/time-fields",
++      "source_locator": "UA175 physical1 lastbullet andphysical2 CallDateTime bullet",
++      "report_line": 11,
++      "scope": "Attributed source observation or supplied-reading calculation; not independent historical validation."
++    },
++    {
++      "existing_key": "TEL02/UA175-counts",
++      "source_locator": "UA175 physical3 table, all11rows",
++      "report_line": 27,
++      "scope": "Attributed source observation or supplied-reading calculation; not independent historical validation."
++    },
++    {
++      "existing_key": "TEL03/NoConn-controls",
++      "source_locator": "UA175 physical3 table rows7/9; earlier summary reader26 rows6/4",
++      "report_line": 27,
++      "scope": "Attributed source observation or supplied-reading calculation; not independent historical validation."
++    },
++    {
++      "existing_key": "TEL02/UA93-counts",
++      "source_locator": "UA93 physical2–3,11seatblocks+CellPhoneCalls",
++      "report_line": 42,
++      "scope": "Attributed source observation or supplied-reading calculation; not independent historical validation."
++    },
++    {
++      "existing_key": "TEL03/long-values",
++      "source_locator": "UA93 physical2 blocks4/5 versus earlier source readings",
++      "report_line": 46,
++      "scope": "Attributed source observation or supplied-reading calculation; not independent historical validation."
++    },
++    {
++      "existing_key": "TEL03/time-reading-quality",
++      "source_locator": "UA93 physical2 block2row2/block3row4 versus earlier analyst transcriptions and unchanged image rereading",
++      "report_line": 52,
++      "scope": "Attributed source observation or supplied-reading calculation; not independent historical validation."
++    },
++    {
++      "existing_key": "TEL03/time-zone-join",
++      "source_locator": "UA93 physical3 block7row2/block11row1; UA175 physical1 TimeZone note",
++      "report_line": 54,
++      "scope": "Attributed source observation or supplied-reading calculation; not independent historical validation."
++    }
++  ]
++}
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/OPEN-TODOS.json
+@@ -0,0 +1,36 @@
++{
++  "TEL01": {
++    "status": "TODO",
++    "held_advance": "Official NARA briefing copies00216/00217 now held; not the full Request14 native delivery.",
++    "missing": "Complete Request14cover/attachment/page/version/custody chain, including missingBates609–631/fax011–033 counterpart."
++  },
++  "TEL02": {
++    "status": "TODO_PARTIAL_ADVANCE",
++    "held": "Official briefing reports, column explanations, caller-name compilation account,11UA175/35UA93Airfone rows and2cellular labels.",
++    "missing": "Underlying GTEengineer materials, interview/leg/source-to-exhibit worksheets, original Keyton/usage-report source chain, court transcript content and formal source-to-caller associations."
++  },
++  "TEL03": {
++    "status": "TODO_PARTIAL_ADVANCE",
++    "held": "Source-specific reported Connect/Operator/SCP/ACIS/zone/compilation explanations; twoNoConn controls;23matching acceptedSCP/time candidates.",
++    "missing": "Applicable vendor dictionary/native export/version/error/default/billing/disconnect rules; timezone/clock config; independent high-resolution source readings, installed system and actual engineering validation.",
++    "preserve": [
++      "18/24Connect versus75/31SCP/MFR",
++      "2?7 and207/267candidate versus267letter andNoConnMFR",
++      "7565summary/MFR versus7555carrier",
++      "3?25summary versus14?5carrier versus3925MFR",
++      "8:32:39INT versus9:32:29MFR",
++      "earlier9:37:01/9:48:46transcriptions versus current9:37:03/9:48:48readings—possible analyst errors, not establishedhistoricaldiscrepancies"
++    ],
++    "next_discriminating_input": "Actual named spreadsheet version/dictionary and the engineer/source-to-summary worksheets, including setup/failure/ground/operator legs; independently transcribed larger original."
++  },
++  "TEL04": {
++    "status": "TODO",
++    "missing": "Actual OSPS/operator/billing/transfer/recipient/PBX/DOJwatch-log records and call/leg identifiers; no identity inference from time matching.",
++    "test": "Join device/service -> nativeevent -> operator/transferleg -> recipient -> exhibit; preserve competing counts/descriptions."
++  },
++  "FAA_PD01_PD04": "All remain open: correctedQFR/receipt, signedaction/noaction/reasons, case-specificresolution/implementation and operative policy/routing.",
++  "recorder_materials": "Existing technical owner retains native/clock/specimen/calibration tasks; no duplicate or new endorsed result claimed.",
++  "steel": "Preservation decisions/native inventory/transfer/attribution rationale remain open.",
++  "goal_scope": "All five tracks and eighteen original-input requirements unchanged; partial acquisition and publication do not complete them.",
++  "authorization_limits": "No contact, fees, new requests/submissions, private source publication, mailbox access, hidden-identity reconstruction, source changes, deletion, private push, merge or rewrite."
++}
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/PRIOR-READINGS.json
+@@ -0,0 +1,536 @@
++{
++  "scope": "Unchanged earlier analyst transcriptions reused as prior readings, not certified glyph truth. The earlier raw identifiers remain excluded.",
++  "UA175_source_file_sha256": "97f3aa58ec3390712094501381a0b1cc8aa194727a4402a66641c6502a94b47d",
++  "UA93_source_file_sha256": "af80854feda99516ba3e86b63d414d93e9c93cdc20e996b6354e677571c1fb23",
++  "UA175": [
++    {
++      "row": 1,
++      "time_label": "08:52:00",
++      "connect": 13,
++      "connect_reading": "13",
++      "connect_candidates": [
++        13
++      ],
++      "operator": 0,
++      "scp": null
++    },
++    {
++      "row": 2,
++      "time_label": "08:52:01",
++      "connect": 18,
++      "connect_reading": "18",
++      "connect_candidates": [
++        18
++      ],
++      "operator": 0,
++      "scp": 75
++    },
++    {
++      "row": 3,
++      "time_label": "08:52:07",
++      "connect": 29,
++      "connect_reading": "29",
++      "connect_candidates": [
++        29
++      ],
++      "operator": 0,
++      "scp": null
++    },
++    {
++      "row": 4,
++      "time_label": "08:54:14",
++      "connect": 6,
++      "connect_reading": "6",
++      "connect_candidates": [
++        6
++      ],
++      "operator": 0,
++      "scp": null
++    },
++    {
++      "row": 5,
++      "time_label": "08:56:19",
++      "connect": 24,
++      "connect_reading": "24",
++      "connect_candidates": [
++        24
++      ],
++      "operator": 0,
++      "scp": 31
++    },
++    {
++      "row": 6,
++      "time_label": "08:57:28",
++      "connect": null,
++      "connect_reading": "2?7",
++      "connect_candidates": [
++        207,
++        267
++      ],
++      "operator": 0,
++      "scp": null
++    },
++    {
++      "row": 7,
++      "time_label": "08:57:39",
++      "connect": 29,
++      "connect_reading": "29",
++      "connect_candidates": [
++        29
++      ],
++      "operator": 0,
++      "scp": null
++    },
++    {
++      "row": 8,
++      "time_label": "08:58:45",
++      "connect": 32,
++      "connect_reading": "32",
++      "connect_candidates": [
++        32
++      ],
++      "operator": 0,
++      "scp": null
++    },
++    {
++      "row": 9,
++      "time_label": "08:58:57",
++      "connect": 23,
++      "connect_reading": "23",
++      "connect_candidates": [
++        23
++      ],
++      "operator": 0,
++      "scp": null
++    },
++    {
++      "row": 10,
++      "time_label": "09:00:02",
++      "connect": 22,
++      "connect_reading": "22",
++      "connect_candidates": [
++        22
++      ],
++      "operator": 0,
++      "scp": null
++    },
++    {
++      "row": 11,
++      "time_label": "09:00:03",
++      "connect": 14,
++      "connect_reading": "14",
++      "connect_candidates": [
++        14
++      ],
++      "operator": 0,
++      "scp": null
++    }
++  ],
++  "UA93": [
++    {
++      "summary_row": 1,
++      "carrier_row": 1,
++      "time_label": "8:30:32",
++      "summary_zone": "INT",
++      "connect_summary": 17,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 28,
++      "scp_carrier": 28
++    },
++    {
++      "summary_row": 2,
++      "carrier_row": 3,
++      "time_label": "8:32:39",
++      "summary_zone": "INT",
++      "connect_summary": 13,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 95,
++      "scp_carrier": 95
++    },
++    {
++      "summary_row": 3,
++      "carrier_row": 2,
++      "time_label": "9:31:14",
++      "summary_zone": "ET",
++      "connect_summary": 18,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 2,
++      "scp_carrier": 2
++    },
++    {
++      "summary_row": 4,
++      "carrier_row": 12,
++      "time_label": "9:35:40",
++      "summary_zone": "ET",
++      "connect_summary": 12,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 353,
++      "scp_carrier": 353
++    },
++    {
++      "summary_row": 5,
++      "carrier_row": 5,
++      "time_label": "9:35:48",
++      "summary_zone": "ET",
++      "connect_summary": 100,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 4,
++      "scp_carrier": 4
++    },
++    {
++      "summary_row": 6,
++      "carrier_row": 6,
++      "time_label": "9:35:56",
++      "summary_zone": "ET",
++      "connect_summary": 100,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 4,
++      "scp_carrier": 4
++    },
++    {
++      "summary_row": 7,
++      "carrier_row": 4,
++      "time_label": "9:36:10",
++      "summary_zone": "ET",
++      "connect_summary": 36,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 5,
++      "scp_carrier": 5
++    },
++    {
++      "summary_row": 8,
++      "carrier_row": 8,
++      "time_label": "9:37:01",
++      "summary_zone": "ET",
++      "connect_summary": 16,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 166,
++      "scp_carrier": 166
++    },
++    {
++      "summary_row": 9,
++      "carrier_row": 35,
++      "time_label": "9:37:41",
++      "summary_zone": "ET",
++      "connect_summary": 14,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 7565,
++      "scp_carrier": 7555
++    },
++    {
++      "summary_row": 10,
++      "carrier_row": 7,
++      "time_label": "9:37:53",
++      "summary_zone": "ET",
++      "connect_summary": 24,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 62,
++      "scp_carrier": 62
++    },
++    {
++      "summary_row": 11,
++      "carrier_row": 9,
++      "time_label": "9:39:21",
++      "summary_zone": "ET",
++      "connect_summary": 14,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 46,
++      "scp_carrier": 46
++    },
++    {
++      "summary_row": 12,
++      "carrier_row": 10,
++      "time_label": "9:40:42",
++      "summary_zone": "ET",
++      "connect_summary": 22,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": null,
++      "scp_carrier": null
++    },
++    {
++      "summary_row": 13,
++      "carrier_row": 11,
++      "time_label": "9:41:20",
++      "summary_zone": "ET",
++      "connect_summary": 16,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": null,
++      "scp_carrier": null
++    },
++    {
++      "summary_row": 14,
++      "carrier_row": 13,
++      "time_label": "9:41:34",
++      "summary_zone": "ET",
++      "connect_summary": 14,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 4,
++      "scp_carrier": 4
++    },
++    {
++      "summary_row": 15,
++      "carrier_row": 15,
++      "time_label": "9:41:53",
++      "summary_zone": "ET",
++      "connect_summary": 33,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 3,
++      "scp_carrier": 3
++    },
++    {
++      "summary_row": 16,
++      "carrier_row": 14,
++      "time_label": "9:42:03",
++      "summary_zone": "ET",
++      "connect_summary": 14,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 2,
++      "scp_carrier": 2
++    },
++    {
++      "summary_row": 17,
++      "carrier_row": 17,
++      "time_label": "9:42:13",
++      "summary_zone": "ET",
++      "connect_summary": 20,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 14,
++      "scp_carrier": 14
++    },
++    {
++      "summary_row": 18,
++      "carrier_row": 16,
++      "time_label": "9:42:25",
++      "summary_zone": "ET",
++      "connect_summary": 13,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 3,
++      "scp_carrier": 3
++    },
++    {
++      "summary_row": 19,
++      "carrier_row": 18,
++      "time_label": "9:42:44",
++      "summary_zone": "ET",
++      "connect_summary": 4,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": null,
++      "scp_carrier": null
++    },
++    {
++      "summary_row": 20,
++      "carrier_row": 21,
++      "time_label": "9:42:44",
++      "summary_zone": "ET",
++      "connect_summary": 45,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": null,
++      "scp_carrier": null
++    },
++    {
++      "summary_row": 21,
++      "carrier_row": 19,
++      "time_label": "9:42:45",
++      "summary_zone": "ET",
++      "connect_summary": 14,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 3,
++      "scp_carrier": 3
++    },
++    {
++      "summary_row": 22,
++      "carrier_row": 24,
++      "time_label": "9:43:03",
++      "summary_zone": "ET",
++      "connect_summary": 15,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 130,
++      "scp_carrier": 130
++    },
++    {
++      "summary_row": 23,
++      "carrier_row": 20,
++      "time_label": "9:43:24",
++      "summary_zone": "ET",
++      "connect_summary": 7,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": null,
++      "scp_carrier": null
++    },
++    {
++      "summary_row": 24,
++      "carrier_row": 23,
++      "time_label": "9:43:44",
++      "summary_zone": "ET",
++      "connect_summary": 25,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 7,
++      "scp_carrier": 7
++    },
++    {
++      "summary_row": 25,
++      "carrier_row": 22,
++      "time_label": "9:43:48",
++      "summary_zone": "ET",
++      "connect_summary": 3,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": null,
++      "scp_carrier": null
++    },
++    {
++      "summary_row": 26,
++      "carrier_row": 34,
++      "time_label": "9:43:48",
++      "summary_zone": "ET",
++      "connect_summary": 77,
++      "operator_summary": "3?25",
++      "operator_carrier": "14?5",
++      "scp_summary": null,
++      "scp_carrier": null
++    },
++    {
++      "summary_row": 27,
++      "carrier_row": 25,
++      "time_label": "9:44:23",
++      "summary_zone": "ET",
++      "connect_summary": 20,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 54,
++      "scp_carrier": 54
++    },
++    {
++      "summary_row": 28,
++      "carrier_row": 27,
++      "time_label": "9:45:37",
++      "summary_zone": "ET",
++      "connect_summary": 130,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": null,
++      "scp_carrier": null
++    },
++    {
++      "summary_row": 29,
++      "carrier_row": 26,
++      "time_label": "9:46:05",
++      "summary_zone": "ET",
++      "connect_summary": 28,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 71,
++      "scp_carrier": 71
++    },
++    {
++      "summary_row": 30,
++      "carrier_row": 29,
++      "time_label": "9:47:57",
++      "summary_zone": "ET",
++      "connect_summary": 35,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 56,
++      "scp_carrier": 56
++    },
++    {
++      "summary_row": 31,
++      "carrier_row": 28,
++      "time_label": "9:48:46",
++      "summary_zone": "ET",
++      "connect_summary": 9,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": null,
++      "scp_carrier": null
++    },
++    {
++      "summary_row": 32,
++      "carrier_row": 31,
++      "time_label": "9:49:12",
++      "summary_zone": "ET",
++      "connect_summary": 9,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 232,
++      "scp_carrier": 232
++    },
++    {
++      "summary_row": 33,
++      "carrier_row": 30,
++      "time_label": "9:49:30",
++      "summary_zone": "ET",
++      "connect_summary": 15,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": null,
++      "scp_carrier": null
++    },
++    {
++      "summary_row": 34,
++      "carrier_row": 33,
++      "time_label": "9:50:04",
++      "summary_zone": "ET",
++      "connect_summary": 33,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 470,
++      "scp_carrier": 470
++    },
++    {
++      "summary_row": 35,
++      "carrier_row": 32,
++      "time_label": "9:53:43",
++      "summary_zone": "ET",
++      "connect_summary": 11,
++      "operator_summary": "0",
++      "operator_carrier": "0",
++      "scp_summary": 269,
++      "scp_carrier": 269
++    }
++  ],
++  "rereading_qualifications": [
++    {
++      "earlier_reading": "9:37:01",
++      "new_MFR_reading": "9:37:03",
++      "current_summary_image_reading": "favours 9:37:03",
++      "status": "Possible earlier analyst reading error; do not claim an independently established historical source discrepancy."
++    },
++    {
++      "earlier_reading": "9:48:46",
++      "new_MFR_reading": "9:48:48",
++      "current_summary_image_reading": "favours 9:48:48",
++      "status": "Possible earlier analyst reading error; low-resolution carrier counterpart not adjudicated."
++    },
++    {
++      "earlier_reading": "8:32:39 / INT",
++      "new_MFR_reading": "9:32:29",
++      "current_summary_image_reading": "8:32:39 retained as a source reading",
++      "status": "Different printed labels, timezone/call identity and exact glyphs require source-specific verification. No calibrated clock offset inferred."
++    }
++  ]
++}
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/README.md
+@@ -0,0 +1,68 @@
++# Official May 13 briefings supply telephone-field definitions and a caller-attribution trail
++
++October 29, 2026. Existing **AUD016-A1 / TC05-B105 / TC06-B110; TEL01–TEL04**. Two newly acquired NARA-released Commission memoranda contain the DOJ briefers' explanation of the GTE spreadsheet and their call lists. This materially advances the previously missing field/source-construction trail. It does **not** supply a native carrier export, vendor dictionary, original operator ticket or authenticated call-leg join.
++
++## Original-source acquisition
++
++Both public catalog records expose a downloadable, three-page PDF: [UA175, NAID 2609807](https://catalog.archives.gov/id/2609807), [official PDF](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf); [UA93, NAID 2609808](https://catalog.archives.gov/id/2609808), [official PDF](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00217.pdf). The [NARA MFR index](https://www.archives.gov/research/9-11/commission-memoranda.html) identifies both May 13, 2004 briefings. All six page images were read; released redactions remain intact. These are official archival copies of Commission briefing memoranda, not native authoring files or a verbatim recording.
++
++UA175 is **515,215 bytes**, SHA-256 **e581efca33a84473d2f08f577f328123759b176d2513c47adc1ba958bd9c980c**. UA93 is **447,885 bytes**, SHA-256 **2f72baa3c4b248ab7034d7a20240dafbf285bc7fbc07e3e80650877d2177bb6c**. Exact UTC acquisition times, catalog/download relationships and reused sources appear in [SOURCES.json](SOURCES.json). No login, gated download, fee or outreach was used. Raw PDFs, images, extracted text and personal/contact/card data remain outside this public payload.
++
++## The briefers' definitions — preserve attribution and scope
++
++[UA175 physical p. 1](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=1) says Commission staff received a spreadsheet titled **UA 175 GTE Airfone Records**. Pages **2–3** describe its fields. The memo attributes the work to a study of GTE records with technical assistance from GTE engineers, cellular-record examination and recipient/family interviews. The briefers' confidence that they identified all completed calls is their assessment, not an independently reproduced result here.
++
++| Field / locator | Explanation recorded in the MFR | Remaining limit |
++| --- | --- | --- |
++| **Duration Connect**, p. 3, second bullet | Time in seconds taken for the call to be connected to the dialed number. | A reported setup-time definition; not automatically conversation length or proof that every attempted setup succeeded. Failure/default/timeout rules remain missing. |
++| **Duration Operator**, p. 3, third bullet | Time an operator is on the line; none for the UA175 calls. | That bullet does not separately state the unit. It does not authenticate a particular UA93 operator reading or identify which ground/air leg continued. |
++| **SCP (Switch Control Processor) Duration**, p. 3, fourth bullet | Time in seconds the call was connected to the dialed number. | The source's expansion and definition are preserved. Vendor/version rules, answer supervision, transfers, disconnects and actual logged behavior are not independently verified. |
++| **ACIS Call ID**, p. 2, first bullet | A unique computer-assigned identifier for each Airfone call. | Source-level uniqueness statement; no allocation/reuse rules or authentication of the retained images' keys. |
++| Name columns, p. 2, fifth bullet | Names appear in this spreadsheet where known within United's system; DOJ added names on other versions based on interviews with recipients. | Direct evidence of a reported compilation process. A name in a later chart is not necessarily a name independently generated by the carrier. Actual worksheets/interviews/version history remain needed. |
++| Time fields, pp. 1–2 | UA175's zone field was blank because calls were within one zone; a later bullet says its call date/time was Eastern. The note says two UA93 calls occurred while the plane was in the Central zone. | These are source explanations, not a clock calibration or identification of the exact two UA93 rows. Do not convert INT into an authenticated timezone. |
++| Terminal/distribution units and seat location, p. 2 | Combined unit fields locate the Airfone and seat bank. | The receiving data and physical installation/configuration still need authentication; seat-bank labels are not independent proof of caller identity. |
++
++The same pages discuss a final dialed code, validation, handoffs and operator involvement. No credit-card approval, positive setup value or named row is treated as proof a particular person held a conversation. These GTE explanations are not silently applied to AA77's separate AT&T/Claircom records.
++
++## UA175: a source-specific control against confusing the duration fields
++
++[UA175 p. 3, call table](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf#page=3) has **11 rows: nine numeric length labels and two No Conn labels**. The earlier [UA175 review](https://github.com/AveLyra/911-conspiracy-investigation/blob/9ea289e6e2d7ec284eff654ed96f52364b91edb6/investigation/broader-evidence/telephone-ua175-summary-review-2026-10-28/README.md) preserved positive Connect readings or positive candidates for all eleven summary rows. The two No Conn time labels are **08:54:14** and **08:57:28**. This supplies a direct comparison control: positive values in a field described as setup time must not simply be counted as completed conversations.
++
++| Candidate time association | Earlier summary Connect reading | Earlier selected SCP | New MFR table |
++| --- | ---: | ---: | --- |
++| 08:52:01 | 18 | 75 | 75 sec |
++| 08:56:19 | 24 | 31 | 31 sec |
++| 08:54:14 | 6 | unaccepted / not transcribed | No Conn |
++| 08:57:28 | **2?7**, candidates 207 / 267 | unaccepted / not transcribed | No Conn |
++
++The 75/31 labels agree with the earlier selected SCP readings, while 18/24 occupy a differently described field. All readings and descriptions remain side by side; no preferred historical value is selected. The memo supplies an attributed interpretation to test against the native export, not a reconstruction of how failed attempts were recorded. Unaccepted fields are not set to zero and **2?7 is not filled from a different source's 267**.
++
++The 2002 United letter's three attempts / two reported connections / one substantiated conversation remains preserved. Its 267-second description of the third attempt is not erased by the later No Conn label. Receipt, network connection, an attempt and a conversation remain different assertions. The newly acquired memo is part of the same investigation/source chain, not independent measurement of the calls.
++
++## UA93: retain the long durations, zeros and uncertain readings
++
++[UA93 pp. 2–3](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00217.pdf#page=2) lists **35 Airfone rows** in eleven seat-bank blocks, with **26 positive-second entries and nine zero-second entries**, followed by two separately labeled cellular entries. This is a count of what the MFR records, not 35 verified conversations, 37 independent callers or an independent recreation of the FBI's reconstruction.
++
++The **09:37:41** row in block 4 explicitly says **7,565 seconds**. The **09:43:48 operator** row in block 5 explicitly says **3,925 seconds**. Keep these beside the [earlier source comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/b2ac3d295182d0bc48fd53b6255b188caf54e9b1/investigation/broader-evidence/telephone-full-row-comparison-2026-10-28/README.md): summary SCP **7565** versus carrier-copy SCP **7555**, and uncertain operator readings **3?25** versus **14?5**. The clearer MFR does not retroactively make an uncertain glyph certain, prove independent corroboration or explain the differences. These long labels do not establish an ongoing airborne conversation after a crash; source-specific leg, disconnect, timeout and billing history are still required.
++
++A limited comparison finds **28 unique same-printed-time candidates** between the new MFR and the preserved earlier UA93 readings. Of these, **23 have an accepted prior summary SCP value, and all 23 match the MFR's listed seconds**. These are candidate time associations only. Two repeated-time groups remain ambiguous, and three MFR time strings do not exactly occur in the earlier transcription. Matching magnitudes do not prove the definition is implemented correctly or the source charts are independent.
++
++## Audit our own readings before calling a difference suspicious
++
++Two of those three apparent time differences may be **our earlier transcription errors**. The old dataset contains **09:37:01** and **09:48:46**; the MFR has **09:37:03** and **09:48:48**. A fresh inspection of the unchanged low-resolution summary image favors the latter readings. The carrier counterpart is harder to read. Both the old dataset and current observations are preserved, with no source rewritten. These are reading-quality questions, not established FBI alterations or historical timing conflicts. The earlier tests checked supplied transcriptions and therefore could not certify glyph accuracy.
++
++Another candidate comparison retains **08:32:39 / INT** in the earlier summary reading versus **09:32:29** in the new UA93 MFR, p. 3, block 7 second row. The source's general note about two Central-zone calls does not establish this row's conversion or remove the differing seconds. The MFR separately retains **08:30:32** in block 11. No common-event identity, clock offset, recording delay, cause or controlling timestamp is adjudicated. Seek the original export, clock fields and briefing/summary compilation worksheets before treating these as calibrated event differences.
++
++## What advances and what remains TODO
++
++**TEL02/TEL03 advance:** two official briefing copies, an attributed field explanation and a reported caller-name compilation process are now held and read. Stop calling every field explanation unavailable. **Still unavailable:** the vendor's applicable dictionary/version, native exports/error rules, original engineer materials, exact data-to-summary worksheets, operator/transfer/recipient records, complete Request 14 delivery and authenticated clocks. A source-reported explanation is useful evidence but does not close those tests. TEL01/TEL04 remain open. The zero-duration AA77 exhibit's source/leg semantics are not established by a GTE memo.
++
++The docket identifies April 10, 2006 transcript entries **1831** and **1821**, but their public links returned one-page notices saying transcripts are unavailable through that website: [1831 link](https://coop.vaed.uscourts.gov/moussaoui/dktsheets/docs/72369/0.pdf), [1821 link](https://coop.vaed.uscourts.gov/moussaoui/dktsheets/docs/72329/1.pdf). Those notices are not transcripts. No purchase/contact was attempted, and access failure is not concealment evidence. The newly located NARA route was used instead.
++
++[OPEN-TODOS.json](OPEN-TODOS.json) records the partial advances and unchanged requirements. FAA PD01–PD04, steel decision/custody/attribution originals and the recorder/materials tests assigned to the technical owner remain open under the original five-track plan and eighteen-input checklist. No owner result, independent audit endorsement, caller identity, historical cause or conspiracy is inferred here. The AA77 recorder assertion in UA175 p. 1 was read as part of the source but is outside this telephone test; it is not independently validated or adopted here.
++
++## Reproduction and preservation
++
++[SAFE-MFR-ROWS.json](SAFE-MFR-ROWS.json) contains the new manual row readings with exact page/block/row locators. [PRIOR-READINGS.json](PRIOR-READINGS.json) preserves the older readings and the current reading qualifications without publishing raw keys, phone/card numbers or private identifiers. [compare_briefing_rows.py](compare_briefing_rows.py) and [RESULTS.json](RESULTS.json) reproduce counts, selected SCP comparisons, ambiguous/unmatched time candidates and controls against positive-Connect/unique-time assumptions. They test the supplied readings, not glyph accuracy, clock calibration, vendor implementation or historical truth. Both inputs were read by the same analyst; no blinded or independent-expert transcription is claimed.
++
++All six new page images were visually inspected. Two old full images and six time-column inspection crops were used to revisit selected prior readings; sixfold nearest-neighbor enlargement adds no source information. No OCR, native decoding, source rewriting or hidden-identity reconstruction was performed. The three earlier image entities retain their recorded hashes; the two new PDFs retain their acquisition hashes. Earlier reports, datasets, shared registers and the work plan remain unchanged. [LOCATORS.json](LOCATORS.json), [REVIEW-AND-CHECKS.json](REVIEW-AND-CHECKS.json) and [TEXT-CHANGES.diff](TEXT-CHANGES.diff) preserve source/report locators, the full request checklist and the exact additive note/code/data diff. PDF reading and software accounting checks are separate from public Git verification.
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/RESULTS.json
+@@ -0,0 +1,535 @@
++{
++  "input_sha256": {
++    "SAFE-MFR-ROWS.json": "162b7931867869362d50b76d418b0442399db914f3ca42f29b8fed89326fe449",
++    "PRIOR-READINGS.json": "b2d0b976a98d2f2720f6c98d336527c31fda42881f22386ab41cfb4085d5e65e"
++  },
++  "UA175": {
++    "mfr_rows": 11,
++    "numeric_length_rows": 9,
++    "No_Conn_rows": 2,
++    "earlier_Connect_readings_all_positive_or_positive_candidates": true,
++    "No_Conn_with_positive_or_positive_candidate_Connect": 2,
++    "selected_prior_SCP_comparisons": 2,
++    "selected_prior_SCP_equal_to_MFR": 2,
++    "pairs": [
++      {
++        "mfr_row": 1,
++        "prior_row": 1,
++        "mfr_time_label": "08:52:00",
++        "prior_time_label": "08:52:00",
++        "mfr_length_label": "99 sec",
++        "mfr_seconds": 99,
++        "prior_connect": 13,
++        "prior_connect_reading": "13",
++        "prior_scp": null,
++        "candidate_association_only": true
++      },
++      {
++        "mfr_row": 2,
++        "prior_row": 11,
++        "mfr_time_label": "09:00:03",
++        "prior_time_label": "09:00:03",
++        "mfr_length_label": "192 sec",
++        "mfr_seconds": 192,
++        "prior_connect": 14,
++        "prior_connect_reading": "14",
++        "prior_scp": null,
++        "candidate_association_only": true
++      },
++      {
++        "mfr_row": 3,
++        "prior_row": 8,
++        "mfr_time_label": "08:58:45",
++        "prior_time_label": "08:58:45",
++        "mfr_length_label": "27 sec",
++        "mfr_seconds": 27,
++        "prior_connect": 32,
++        "prior_connect_reading": "32",
++        "prior_scp": null,
++        "candidate_association_only": true
++      },
++      {
++        "mfr_row": 4,
++        "prior_row": 10,
++        "mfr_time_label": "09:00:02",
++        "prior_time_label": "09:00:02",
++        "mfr_length_label": "60 sec",
++        "mfr_seconds": 60,
++        "prior_connect": 22,
++        "prior_connect_reading": "22",
++        "prior_scp": null,
++        "candidate_association_only": true
++      },
++      {
++        "mfr_row": 5,
++        "prior_row": 2,
++        "mfr_time_label": "08:52:01",
++        "prior_time_label": "08:52:01",
++        "mfr_length_label": "75 sec",
++        "mfr_seconds": 75,
++        "prior_connect": 18,
++        "prior_connect_reading": "18",
++        "prior_scp": 75,
++        "candidate_association_only": true
++      },
++      {
++        "mfr_row": 6,
++        "prior_row": 5,
++        "mfr_time_label": "08:56:19",
++        "prior_time_label": "08:56:19",
++        "mfr_length_label": "31 sec",
++        "mfr_seconds": 31,
++        "prior_connect": 24,
++        "prior_connect_reading": "24",
++        "prior_scp": 31,
++        "candidate_association_only": true
++      },
++      {
++        "mfr_row": 7,
++        "prior_row": 6,
++        "mfr_time_label": "08:57:28",
++        "prior_time_label": "08:57:28",
++        "mfr_length_label": "No Conn",
++        "mfr_seconds": null,
++        "prior_connect": null,
++        "prior_connect_reading": "2?7",
++        "prior_scp": null,
++        "candidate_association_only": true
++      },
++      {
++        "mfr_row": 8,
++        "prior_row": 3,
++        "mfr_time_label": "08:52:07",
++        "prior_time_label": "08:52:07",
++        "mfr_length_label": "22 sec",
++        "mfr_seconds": 22,
++        "prior_connect": 29,
++        "prior_connect_reading": "29",
++        "prior_scp": null,
++        "candidate_association_only": true
++      },
++      {
++        "mfr_row": 9,
++        "prior_row": 4,
++        "mfr_time_label": "08:54:14",
++        "prior_time_label": "08:54:14",
++        "mfr_length_label": "No Conn",
++        "mfr_seconds": null,
++        "prior_connect": 6,
++        "prior_connect_reading": "6",
++        "prior_scp": null,
++        "candidate_association_only": true
++      },
++      {
++        "mfr_row": 10,
++        "prior_row": 7,
++        "mfr_time_label": "08:57:39",
++        "prior_time_label": "08:57:39",
++        "mfr_length_label": "25 sec",
++        "mfr_seconds": 25,
++        "prior_connect": 29,
++        "prior_connect_reading": "29",
++        "prior_scp": null,
++        "candidate_association_only": true
++      },
++      {
++        "mfr_row": 11,
++        "prior_row": 9,
++        "mfr_time_label": "08:58:57",
++        "prior_time_label": "08:58:57",
++        "mfr_length_label": "9 sec",
++        "mfr_seconds": 9,
++        "prior_connect": 23,
++        "prior_connect_reading": "23",
++        "prior_scp": null,
++        "candidate_association_only": true
++      }
++    ]
++  },
++  "UA93": {
++    "mfr_airfone_rows": 35,
++    "mfr_cellular_labels": 2,
++    "mfr_positive_seconds_rows": 26,
++    "mfr_zero_seconds_rows": 9,
++    "printed_time_duplicate_groups": 2,
++    "unique_same_printed_time_candidates": 28,
++    "unique_candidates_with_accepted_prior_SCP": 23,
++    "unique_candidates_matching_accepted_prior_SCP": 23,
++    "unique_time_pairs": [
++      {
++        "mfr_block": 1,
++        "mfr_row_in_block": 1,
++        "mfr_time_label": "9:39:21",
++        "mfr_seconds": 46,
++        "prior_summary_row": 11,
++        "prior_scp": 46,
++        "prior_carrier_scp": 46,
++        "prior_connect": 14,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 1,
++        "mfr_row_in_block": 2,
++        "mfr_time_label": "9:40:42",
++        "mfr_seconds": 0,
++        "prior_summary_row": 12,
++        "prior_scp": null,
++        "prior_carrier_scp": null,
++        "prior_connect": 22,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 1,
++        "mfr_row_in_block": 3,
++        "mfr_time_label": "9:41:34",
++        "mfr_seconds": 4,
++        "prior_summary_row": 14,
++        "prior_scp": 4,
++        "prior_carrier_scp": 4,
++        "prior_connect": 14,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 1,
++        "mfr_row_in_block": 4,
++        "mfr_time_label": "9:42:03",
++        "mfr_seconds": 2,
++        "prior_summary_row": 16,
++        "prior_scp": 2,
++        "prior_carrier_scp": 2,
++        "prior_connect": 14,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 1,
++        "mfr_row_in_block": 5,
++        "mfr_time_label": "9:42:25",
++        "mfr_seconds": 3,
++        "prior_summary_row": 18,
++        "prior_scp": 3,
++        "prior_carrier_scp": 3,
++        "prior_connect": 13,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 1,
++        "mfr_row_in_block": 6,
++        "mfr_time_label": "9:42:45",
++        "mfr_seconds": 3,
++        "prior_summary_row": 21,
++        "prior_scp": 3,
++        "prior_carrier_scp": 3,
++        "prior_connect": 14,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 1,
++        "mfr_row_in_block": 7,
++        "mfr_time_label": "9:43:24",
++        "mfr_seconds": 0,
++        "prior_summary_row": 23,
++        "prior_scp": null,
++        "prior_carrier_scp": null,
++        "prior_connect": 7,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 1,
++        "mfr_row_in_block": 8,
++        "mfr_time_label": "9:43:44",
++        "mfr_seconds": 7,
++        "prior_summary_row": 24,
++        "prior_scp": 7,
++        "prior_carrier_scp": 7,
++        "prior_connect": 25,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 2,
++        "mfr_row_in_block": 1,
++        "mfr_time_label": "9:36:10",
++        "mfr_seconds": 5,
++        "prior_summary_row": 7,
++        "prior_scp": 5,
++        "prior_carrier_scp": 5,
++        "prior_connect": 36,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 2,
++        "mfr_row_in_block": 3,
++        "mfr_time_label": "9:41:20",
++        "mfr_seconds": 0,
++        "prior_summary_row": 13,
++        "prior_scp": null,
++        "prior_carrier_scp": null,
++        "prior_connect": 16,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 2,
++        "mfr_row_in_block": 4,
++        "mfr_time_label": "9:41:53",
++        "mfr_seconds": 3,
++        "prior_summary_row": 15,
++        "prior_scp": 3,
++        "prior_carrier_scp": 3,
++        "prior_connect": 33,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 3,
++        "mfr_row_in_block": 1,
++        "mfr_time_label": "9:42:13",
++        "mfr_seconds": 14,
++        "prior_summary_row": 17,
++        "prior_scp": 14,
++        "prior_carrier_scp": 14,
++        "prior_connect": 20,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 3,
++        "mfr_row_in_block": 2,
++        "mfr_time_label": "9:43:03",
++        "mfr_seconds": 130,
++        "prior_summary_row": 22,
++        "prior_scp": 130,
++        "prior_carrier_scp": 130,
++        "prior_connect": 15,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 3,
++        "mfr_row_in_block": 3,
++        "mfr_time_label": "9:46:05",
++        "mfr_seconds": 71,
++        "prior_summary_row": 29,
++        "prior_scp": 71,
++        "prior_carrier_scp": 71,
++        "prior_connect": 28,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 4,
++        "mfr_row_in_block": 1,
++        "mfr_time_label": "9:37:41",
++        "mfr_seconds": 7565,
++        "prior_summary_row": 9,
++        "prior_scp": 7565,
++        "prior_carrier_scp": 7555,
++        "prior_connect": 14,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 6,
++        "mfr_row_in_block": 1,
++        "mfr_time_label": "9:35:40",
++        "mfr_seconds": 353,
++        "prior_summary_row": 4,
++        "prior_scp": 353,
++        "prior_carrier_scp": 353,
++        "prior_connect": 12,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 6,
++        "mfr_row_in_block": 2,
++        "mfr_time_label": "9:49:30",
++        "mfr_seconds": 0,
++        "prior_summary_row": 33,
++        "prior_scp": null,
++        "prior_carrier_scp": null,
++        "prior_connect": 15,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 6,
++        "mfr_row_in_block": 3,
++        "mfr_time_label": "9:50:04",
++        "mfr_seconds": 470,
++        "prior_summary_row": 34,
++        "prior_scp": 470,
++        "prior_carrier_scp": 470,
++        "prior_connect": 33,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 7,
++        "mfr_row_in_block": 1,
++        "mfr_time_label": "9:31:14",
++        "mfr_seconds": 2,
++        "prior_summary_row": 3,
++        "prior_scp": 2,
++        "prior_carrier_scp": 2,
++        "prior_connect": 18,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 7,
++        "mfr_row_in_block": 3,
++        "mfr_time_label": "9:35:48",
++        "mfr_seconds": 4,
++        "prior_summary_row": 5,
++        "prior_scp": 4,
++        "prior_carrier_scp": 4,
++        "prior_connect": 100,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 7,
++        "mfr_row_in_block": 4,
++        "mfr_time_label": "9:45:37",
++        "mfr_seconds": 0,
++        "prior_summary_row": 28,
++        "prior_scp": null,
++        "prior_carrier_scp": null,
++        "prior_connect": 130,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 8,
++        "mfr_row_in_block": 1,
++        "mfr_time_label": "9:35:56",
++        "mfr_seconds": 4,
++        "prior_summary_row": 6,
++        "prior_scp": 4,
++        "prior_carrier_scp": 4,
++        "prior_connect": 100,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 8,
++        "mfr_row_in_block": 2,
++        "mfr_time_label": "9:49:12",
++        "mfr_seconds": 232,
++        "prior_summary_row": 32,
++        "prior_scp": 232,
++        "prior_carrier_scp": 232,
++        "prior_connect": 9,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 8,
++        "mfr_row_in_block": 3,
++        "mfr_time_label": "9:53:43",
++        "mfr_seconds": 269,
++        "prior_summary_row": 35,
++        "prior_scp": 269,
++        "prior_carrier_scp": 269,
++        "prior_connect": 11,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 9,
++        "mfr_row_in_block": 1,
++        "mfr_time_label": "9:47:57",
++        "mfr_seconds": 56,
++        "prior_summary_row": 30,
++        "prior_scp": 56,
++        "prior_carrier_scp": 56,
++        "prior_connect": 35,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 10,
++        "mfr_row_in_block": 1,
++        "mfr_time_label": "9:44:23",
++        "mfr_seconds": 54,
++        "prior_summary_row": 27,
++        "prior_scp": 54,
++        "prior_carrier_scp": 54,
++        "prior_connect": 20,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 11,
++        "mfr_row_in_block": 1,
++        "mfr_time_label": "8:30:32",
++        "mfr_seconds": 28,
++        "prior_summary_row": 1,
++        "prior_scp": 28,
++        "prior_carrier_scp": 28,
++        "prior_connect": 17,
++        "candidate_only": true
++      },
++      {
++        "mfr_block": 11,
++        "mfr_row_in_block": 2,
++        "mfr_time_label": "9:37:53",
++        "mfr_seconds": 62,
++        "prior_summary_row": 10,
++        "prior_scp": 62,
++        "prior_carrier_scp": 62,
++        "prior_connect": 24,
++        "candidate_only": true
++      }
++    ],
++    "unmatched_MFR_time_labels": [
++      {
++        "block": 2,
++        "row_in_block": 2,
++        "physical_page": 2,
++        "time_label": "9:37:03",
++        "reported_seconds": 166
++      },
++      {
++        "block": 3,
++        "row_in_block": 4,
++        "physical_page": 2,
++        "time_label": "9:48:48",
++        "reported_seconds": 0
++      },
++      {
++        "block": 7,
++        "row_in_block": 2,
++        "physical_page": 3,
++        "time_label": "9:32:29",
++        "reported_seconds": 95
++      }
++    ],
++    "unmatched_prior_time_labels": [
++      {
++        "summary_row": 2,
++        "carrier_row": 3,
++        "time_label": "8:32:39",
++        "summary_zone": "INT",
++        "connect_summary": 13,
++        "operator_summary": "0",
++        "operator_carrier": "0",
++        "scp_summary": 95,
++        "scp_carrier": 95
++      },
++      {
++        "summary_row": 8,
++        "carrier_row": 8,
++        "time_label": "9:37:01",
++        "summary_zone": "ET",
++        "connect_summary": 16,
++        "operator_summary": "0",
++        "operator_carrier": "0",
++        "scp_summary": 166,
++        "scp_carrier": 166
++      },
++      {
++        "summary_row": 31,
++        "carrier_row": 28,
++        "time_label": "9:48:46",
++        "summary_zone": "ET",
++        "connect_summary": 9,
++        "operator_summary": "0",
++        "operator_carrier": "0",
++        "scp_summary": null,
++        "scp_carrier": null
++      }
++    ],
++    "unmatched_limit": "Includes possible earlier analyst reading errors; not all are historical discrepancies."
++  },
++  "negative_controls": {
++    "positive_Connect_proves_completed_conversation_rejected_by_No_Conn_rows": true,
++    "time_only_join_is_unique_rejected": true,
++    "unknown_prior_SCP_values_preserved": true
++  },
++  "scope": "Supplied readings and candidate field accounting only; not source independence, native export authentication, clock calibration, exact caller/leg identity or conversation duration.",
++  "remaining": "Preserve all original values and prior versions. MFR definitions are attributed briefing explanations, not vendor definitions or proof of how failed attempts/operator/ground legs were logged."
++}
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/REVIEW-AND-CHECKS.json
+@@ -0,0 +1,103 @@
++{
++  "review_utc": "2026-10-29T18:12:49.607580+00:00",
++  "checklist": [
++    {
++      "point": "Acquire originals rather than repeat summaries",
++      "outcome": "Two official NARA Commission briefing-copy PDFs acquired; exact dictionary/native carrier exports and formal outcomes not acquired.",
++      "location": "SOURCES.json/README opening"
++    },
++    {
++      "point": "Compare available telephone data",
++      "outcome": "11newUA175,35newUA93Airfone,2cellular labels; candidate field/time accounting reproduced.",
++      "location": "SAFE-MFR-ROWS.json/RESULTS.json"
++    },
++    {
++      "point": "Preserve conflicting records and self-audit",
++      "outcome": "All old values retained. Two apparenttime differences flagged as possible prioranalysterrors; no source altered or historical cause selected.",
++      "location": "PRIOR-READINGS.json/README self-audit"
++    },
++    {
++      "point": "Separate field semantics, source independence and caller attribution",
++      "outcome": "Definitions attributed to briefers; names partly interview-added; no automatic connection/conversation/identity claim or automatic AA77 transfer.",
++      "location": "README definitions and limits"
++    },
++    {
++      "point": "Retain missing inputs/alltracks",
++      "outcome": "TEL01–04partialadvances distinguished from stillmissing native tests; all18requirements/fivetracks unchanged.",
++      "location": "OPEN-TODOS.json"
++    },
++    {
++      "point": "Exactdiff and predecessor accountability",
++      "outcome": "Exactadditions retained; five unchanged predecessor hashes recorded.",
++      "location": "TEXT-CHANGES.diff/below"
++    },
++    {
++      "point": "Public eligibility",
++      "outcome": "Only originalreviewednotes/safedata/code; no rawsourceimages/OCR/PDF, signatures, contact/card/fullkey identifiers, privatecorrespondence/strategy or credentials.",
++      "location": "Public payload"
++    },
++    {
++      "point": "Publication",
++      "outcome": "Not declared by this candidate; actual commit/ref/body verification receipt required.",
++      "location": "Local publication receipt afterpush"
++    }
++  ],
++  "actual_reading": {
++    "new_NARA_PDF_pages": {
++      "UA175": [
++        1,
++        2,
++        3
++      ],
++      "UA93": [
++        1,
++        2,
++        3
++      ]
++    },
++    "prior_images_reinspected": [
++      25,
++      27
++    ],
++    "prior_time_crops": 6,
++    "prior_UA175_readings": "Earlier selected manual data reused, not newly independentglyphvalidation.",
++    "new_OCR": false,
++    "native_switch_decode": false,
++    "independent_clock_fit": false,
++    "independent_or_blinded_analyst": false
++  },
++  "verification_scope": "Reproducible accounting of supplied readings; sourcehash/pagecount and predecessor preservation checked separately. No historical/measurement/vendor validity from codepass.",
++  "unchanged_predecessors": [
++    {
++      "path": "telephone-ua175-summary-review-2026-10-28/publication-v2/README.md",
++      "bytes": 7060,
++      "sha256": "3c53ee2382d3f5d1a7b1bc9f2d5540a33956d8e1d1ddaffd154d143253849f4e",
++      "status": "Preserved unchanged, including potential earlier reading errors."
++    },
++    {
++      "path": "telephone-ua175-summary-review-2026-10-28/publication-v2/ROW-FIELDS.json",
++      "bytes": 4991,
++      "sha256": "97f3aa58ec3390712094501381a0b1cc8aa194727a4402a66641c6502a94b47d",
++      "status": "Preserved unchanged, including potential earlier reading errors."
++    },
++    {
++      "path": "telephone-full-table-joins-2026-10-28/publication/README.md",
++      "bytes": 9278,
++      "sha256": "021214bbe918bfbc82f404625b42a51d15246c01400880556001eae73db81e90",
++      "status": "Preserved unchanged, including potential earlier reading errors."
++    },
++    {
++      "path": "telephone-full-table-joins-2026-10-28/publication/RESULTS.json",
++      "bytes": 19597,
++      "sha256": "af80854feda99516ba3e86b63d414d93e9c93cdc20e996b6354e677571c1fb23",
++      "status": "Preserved unchanged, including potential earlier reading errors."
++    },
++    {
++      "path": "original-records-work-plan-2026-10-27/WORK-PLAN.md",
++      "bytes": 18257,
++      "sha256": "b8511383fb40878bdcfc094adff12c9eda2ce9cc17e514adf6d129ebd7c80659",
++      "status": "Preserved unchanged, including potential earlier reading errors."
++    }
++  ],
++  "diff_scope": "Exact additions of all note/data/code files except the diff itself; not a source-PDF/native-export diff."
++}
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/SAFE-MFR-ROWS.json
+@@ -0,0 +1,343 @@
++{
++  "UA175": [
++    {
++      "row": 1,
++      "physical_page": 3,
++      "time_label": "08:52:00",
++      "length_label": "99 sec",
++      "reported_seconds": 99
++    },
++    {
++      "row": 2,
++      "physical_page": 3,
++      "time_label": "09:00:03",
++      "length_label": "192 sec",
++      "reported_seconds": 192
++    },
++    {
++      "row": 3,
++      "physical_page": 3,
++      "time_label": "08:58:45",
++      "length_label": "27 sec",
++      "reported_seconds": 27
++    },
++    {
++      "row": 4,
++      "physical_page": 3,
++      "time_label": "09:00:02",
++      "length_label": "60 sec",
++      "reported_seconds": 60
++    },
++    {
++      "row": 5,
++      "physical_page": 3,
++      "time_label": "08:52:01",
++      "length_label": "75 sec",
++      "reported_seconds": 75
++    },
++    {
++      "row": 6,
++      "physical_page": 3,
++      "time_label": "08:56:19",
++      "length_label": "31 sec",
++      "reported_seconds": 31
++    },
++    {
++      "row": 7,
++      "physical_page": 3,
++      "time_label": "08:57:28",
++      "length_label": "No Conn",
++      "reported_seconds": null
++    },
++    {
++      "row": 8,
++      "physical_page": 3,
++      "time_label": "08:52:07",
++      "length_label": "22 sec",
++      "reported_seconds": 22
++    },
++    {
++      "row": 9,
++      "physical_page": 3,
++      "time_label": "08:54:14",
++      "length_label": "No Conn",
++      "reported_seconds": null
++    },
++    {
++      "row": 10,
++      "physical_page": 3,
++      "time_label": "08:57:39",
++      "length_label": "25 sec",
++      "reported_seconds": 25
++    },
++    {
++      "row": 11,
++      "physical_page": 3,
++      "time_label": "08:58:57",
++      "length_label": "9 sec",
++      "reported_seconds": 9
++    }
++  ],
++  "UA93_airfone": [
++    {
++      "block": 1,
++      "row_in_block": 1,
++      "physical_page": 2,
++      "time_label": "9:39:21",
++      "reported_seconds": 46
++    },
++    {
++      "block": 1,
++      "row_in_block": 2,
++      "physical_page": 2,
++      "time_label": "9:40:42",
++      "reported_seconds": 0
++    },
++    {
++      "block": 1,
++      "row_in_block": 3,
++      "physical_page": 2,
++      "time_label": "9:41:34",
++      "reported_seconds": 4
++    },
++    {
++      "block": 1,
++      "row_in_block": 4,
++      "physical_page": 2,
++      "time_label": "9:42:03",
++      "reported_seconds": 2
++    },
++    {
++      "block": 1,
++      "row_in_block": 5,
++      "physical_page": 2,
++      "time_label": "9:42:25",
++      "reported_seconds": 3
++    },
++    {
++      "block": 1,
++      "row_in_block": 6,
++      "physical_page": 2,
++      "time_label": "9:42:45",
++      "reported_seconds": 3
++    },
++    {
++      "block": 1,
++      "row_in_block": 7,
++      "physical_page": 2,
++      "time_label": "9:43:24",
++      "reported_seconds": 0
++    },
++    {
++      "block": 1,
++      "row_in_block": 8,
++      "physical_page": 2,
++      "time_label": "9:43:44",
++      "reported_seconds": 7
++    },
++    {
++      "block": 2,
++      "row_in_block": 1,
++      "physical_page": 2,
++      "time_label": "9:36:10",
++      "reported_seconds": 5
++    },
++    {
++      "block": 2,
++      "row_in_block": 2,
++      "physical_page": 2,
++      "time_label": "9:37:03",
++      "reported_seconds": 166
++    },
++    {
++      "block": 2,
++      "row_in_block": 3,
++      "physical_page": 2,
++      "time_label": "9:41:20",
++      "reported_seconds": 0
++    },
++    {
++      "block": 2,
++      "row_in_block": 4,
++      "physical_page": 2,
++      "time_label": "9:41:53",
++      "reported_seconds": 3
++    },
++    {
++      "block": 3,
++      "row_in_block": 1,
++      "physical_page": 2,
++      "time_label": "9:42:13",
++      "reported_seconds": 14
++    },
++    {
++      "block": 3,
++      "row_in_block": 2,
++      "physical_page": 2,
++      "time_label": "9:43:03",
++      "reported_seconds": 130
++    },
++    {
++      "block": 3,
++      "row_in_block": 3,
++      "physical_page": 2,
++      "time_label": "9:46:05",
++      "reported_seconds": 71
++    },
++    {
++      "block": 3,
++      "row_in_block": 4,
++      "physical_page": 2,
++      "time_label": "9:48:48",
++      "reported_seconds": 0
++    },
++    {
++      "block": 4,
++      "row_in_block": 1,
++      "physical_page": 2,
++      "time_label": "9:37:41",
++      "reported_seconds": 7565
++    },
++    {
++      "block": 5,
++      "row_in_block": 1,
++      "physical_page": 2,
++      "time_label": "9:42:44",
++      "reported_seconds": 0
++    },
++    {
++      "block": 5,
++      "row_in_block": 2,
++      "physical_page": 2,
++      "time_label": "9:42:44",
++      "reported_seconds": 0
++    },
++    {
++      "block": 5,
++      "row_in_block": 3,
++      "physical_page": 2,
++      "time_label": "9:43:48",
++      "reported_seconds": 0
++    },
++    {
++      "block": 5,
++      "row_in_block": 4,
++      "physical_page": 2,
++      "time_label": "9:43:48",
++      "reported_seconds": 3925
++    },
++    {
++      "block": 6,
++      "row_in_block": 1,
++      "physical_page": 2,
++      "time_label": "9:35:40",
++      "reported_seconds": 353
++    },
++    {
++      "block": 6,
++      "row_in_block": 2,
++      "physical_page": 2,
++      "time_label": "9:49:30",
++      "reported_seconds": 0
++    },
++    {
++      "block": 6,
++      "row_in_block": 3,
++      "physical_page": 2,
++      "time_label": "9:50:04",
++      "reported_seconds": 470
++    },
++    {
++      "block": 7,
++      "row_in_block": 1,
++      "physical_page": 3,
++      "time_label": "9:31:14",
++      "reported_seconds": 2
++    },
++    {
++      "block": 7,
++      "row_in_block": 2,
++      "physical_page": 3,
++      "time_label": "9:32:29",
++      "reported_seconds": 95
++    },
++    {
++      "block": 7,
++      "row_in_block": 3,
++      "physical_page": 3,
++      "time_label": "9:35:48",
++      "reported_seconds": 4
++    },
++    {
++      "block": 7,
++      "row_in_block": 4,
++      "physical_page": 3,
++      "time_label": "9:45:37",
++      "reported_seconds": 0
++    },
++    {
++      "block": 8,
++      "row_in_block": 1,
++      "physical_page": 3,
++      "time_label": "9:35:56",
++      "reported_seconds": 4
++    },
++    {
++      "block": 8,
++      "row_in_block": 2,
++      "physical_page": 3,
++      "time_label": "9:49:12",
++      "reported_seconds": 232
++    },
++    {
++      "block": 8,
++      "row_in_block": 3,
++      "physical_page": 3,
++      "time_label": "9:53:43",
++      "reported_seconds": 269
++    },
++    {
++      "block": 9,
++      "row_in_block": 1,
++      "physical_page": 3,
++      "time_label": "9:47:57",
++      "reported_seconds": 56
++    },
++    {
++      "block": 10,
++      "row_in_block": 1,
++      "physical_page": 3,
++      "time_label": "9:44:23",
++      "reported_seconds": 54
++    },
++    {
++      "block": 11,
++      "row_in_block": 1,
++      "physical_page": 3,
++      "time_label": "8:30:32",
++      "reported_seconds": 28
++    },
++    {
++      "block": 11,
++      "row_in_block": 2,
++      "physical_page": 3,
++      "time_label": "9:37:53",
++      "reported_seconds": 62
++    }
++  ],
++  "UA93_cellular": [
++    {
++      "physical_page": 3,
++      "section": "Cell Phone Calls",
++      "time_label": "9:58:00",
++      "duration": null
++    },
++    {
++      "physical_page": 3,
++      "section": "Cell Phone Calls",
++      "time_label": "9:58:00",
++      "duration": null
++    }
++  ],
++  "scope": "Manual readings of released MFR images, not native carrier events; no masked identities reconstructed, full keys or contact/card data copied. Row identifiers are PDF/table locators."
++}
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/SOURCES.json
+@@ -0,0 +1,88 @@
++{
++  "review_utc": "2026-10-29T18:12:49.607580+00:00",
++  "new_sources": [
++    {
++      "id": "UA93-MFR",
++      "NAID": "2609808",
++      "catalog_url": "https://catalog.archives.gov/id/2609808",
++      "url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00217.pdf",
++      "access_utc": "2026-10-29T18:01:44.731931+00:00",
++      "status": 200,
++      "content_type": null,
++      "final_url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00217.pdf",
++      "bytes": 447885,
++      "sha256": "2f72baa3c4b248ab7034d7a20240dafbf285bc7fbc07e3e80650877d2177bb6c",
++      "physical_pages": 3,
++      "new_acquisition": true
++    },
++    {
++      "id": "UA175-MFR",
++      "NAID": "2609807",
++      "catalog_url": "https://catalog.archives.gov/id/2609807",
++      "url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf",
++      "access_utc": "2026-10-29T18:02:09.866182+00:00",
++      "status": 200,
++      "content_type": null,
++      "final_url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00216.pdf",
++      "bytes": 515215,
++      "sha256": "e581efca33a84473d2f08f577f328123759b176d2513c47adc1ba958bd9c980c",
++      "physical_pages": 3,
++      "new_acquisition": true
++    }
++  ],
++  "catalog_controls": {
++    "NARA_MFR_index": "https://www.archives.gov/research/9-11/commission-memoranda.html",
++    "UA175": "NAID2609807, May13,2004, threepages, downloadfile00216",
++    "UA93": "NAID2609808, May13,2004, threepages, downloadfile00217",
++    "access_note": "Catalog shows Partially Restricted and Use Unrestricted; only released public PDF downloaded. Redactions retained."
++  },
++  "reused_images": [
++    {
++      "reader_page": 25,
++      "public_asset_url": "https://html.scribdassets.com/5bafzdomdce6sz3/images/25-a00d283656.jpg",
++      "access_utc": "2026-10-27T19:24:43.033231+00:00",
++      "status": 200,
++      "content_type": "image/jpeg",
++      "actual_format": "JPEG",
++      "width": 1243,
++      "height": 904,
++      "bytes": 125587,
++      "sha256": "52264933cdb47bef34b2ed6d0a8721f8ae0480820f5b36371cb7f3c693b0969d",
++      "authentication": "None; no query, token or cookies",
++      "source_relationship": "Public reader image entity; not native agency PDF or carrier database export"
++    },
++    {
++      "reader_page": 27,
++      "public_asset_url": "https://html.scribdassets.com/5bafzdomdce6sz3/images/27-e74aaab25b.jpg",
++      "access_utc": "2026-10-27T19:24:43.040755+00:00",
++      "status": 200,
++      "content_type": "image/jpeg",
++      "actual_format": "JPEG",
++      "width": 1243,
++      "height": 904,
++      "bytes": 84078,
++      "sha256": "48e329bd0e7136c6a6aa2187c76e471d3da34b22a2df5ebb7a7965455a6cc9a4",
++      "authentication": "None; no query, token or cookies",
++      "source_relationship": "Public reader image entity; not native agency PDF or carrier database export"
++    },
++    {
++      "reader_page": 28,
++      "public_asset_url": "https://html.scribdassets.com/5bafzdomdce6sz3/images/28-778a401475.jpg",
++      "access_utc": "2026-10-27T19:24:43.115256+00:00",
++      "status": 200,
++      "content_type": "image/jpeg",
++      "actual_format": "JPEG",
++      "width": 1242,
++      "height": 904,
++      "bytes": 52335,
++      "sha256": "6f0622a3663d5eb3349a8b995fd3753b06054e2cedd92df1932a3eedf7bb060b",
++      "authentication": "None; no query, token or cookies",
++      "source_relationship": "Public reader image entity; not native agency PDF or carrier database export"
++    }
++  ],
++  "reused_UA175_report": "https://github.com/AveLyra/911-conspiracy-investigation/blob/9ea289e6e2d7ec284eff654ed96f52364b91edb6/investigation/broader-evidence/telephone-ua175-summary-review-2026-10-28/README.md",
++  "reused_UA175_safe_readings_sha256": "97f3aa58ec3390712094501381a0b1cc8aa194727a4402a66641c6502a94b47d",
++  "raw_sources_in_public_payload": false,
++  "classification": "Official released scans of Commission briefing records, not native carrier exports or authenticated verbatim meeting records. Old mirrors remain distinct.",
++  "public_court_route_limit": "The docket links for1831/1821 yield transcript-availability notices, not transcripts; no body-hash acquisition claimed for those notices in this unit."
++}
+--- /dev/null
++++ b/investigation/broader-evidence/telephone-may13-briefings-2026-10-29/compare_briefing_rows.py
+@@ -0,0 +1,98 @@
++"""Compare safe manual MFR readings with preserved earlier transcriptions.
++
++Usage: python3 compare_briefing_rows.py SAFE-MFR-ROWS.json PRIOR-READINGS.json NEW-RESULT.json
++No network, source modification or caller identity inference. A match is a candidate
++source association, not authenticated event identity. Test scope is the supplied
++readings; glyph accuracy and native switching semantics require other evidence.
++"""
++from collections import Counter
++from pathlib import Path
++import hashlib
++import json
++import sys
++
++new_path, old_path, output_path = map(Path, sys.argv[1:])
++new = json.loads(new_path.read_text())
++old = json.loads(old_path.read_text())
++
++
++def time_key(label):
++    """Parse components only for comparison; preserve source strings in output."""
++    return tuple(map(int, label.split(':')))
++
++
++u175 = []
++for row in new['UA175']:
++    candidates = [p for p in old['UA175']
++                  if time_key(row['time_label']) == time_key(p['time_label'])]
++    if len(candidates) != 1:
++        raise ValueError('UA175 printed time candidate is not unique')
++    prior = candidates[0]
++    u175.append({'mfr_row': row['row'], 'prior_row': prior['row'],
++                 'mfr_time_label': row['time_label'], 'prior_time_label': prior['time_label'],
++                 'mfr_length_label': row['length_label'],
++                 'mfr_seconds': row['reported_seconds'],
++                 'prior_connect': prior['connect'],
++                 'prior_connect_reading': prior['connect_reading'],
++                 'prior_scp': prior['scp'],
++                 'candidate_association_only': True})
++
++# The two No Conn labels are a direct control against substituting positive setup
++# readings for successful connection or conversation. No unknown SCP is set to zero.
++not_connected = [r for r in u175 if r['mfr_length_label'] == 'No Conn']
++selected_scp = [r for r in u175 if r['prior_scp'] is not None]
++all_positive_candidates = all(all(v > 0 for v in p['connect_candidates']) for p in old['UA175'])
++
++mfr93_time_counts = Counter(time_key(r['time_label']) for r in new['UA93_airfone'])
++old93_time_counts = Counter(time_key(r['time_label']) for r in old['UA93'])
++unmatched_new = [r for r in new['UA93_airfone'] if time_key(r['time_label']) not in old93_time_counts]
++unmatched_old = [r for r in old['UA93'] if time_key(r['time_label']) not in mfr93_time_counts]
++unique_pairs = []
++for row in new['UA93_airfone']:
++    key = time_key(row['time_label'])
++    matches = [p for p in old['UA93'] if time_key(p['time_label']) == key]
++    if len(matches) == 1 and mfr93_time_counts[key] == 1:
++        prior = matches[0]
++        unique_pairs.append({'mfr_block': row['block'], 'mfr_row_in_block': row['row_in_block'],
++                             'mfr_time_label': row['time_label'], 'mfr_seconds': row['reported_seconds'],
++                             'prior_summary_row': prior['summary_row'], 'prior_scp': prior['scp_summary'],
++                             'prior_carrier_scp': prior['scp_carrier'],
++                             'prior_connect': prior['connect_summary'], 'candidate_only': True})
++
++result = {
++    'input_sha256': {new_path.name: hashlib.sha256(new_path.read_bytes()).hexdigest(),
++                     old_path.name: hashlib.sha256(old_path.read_bytes()).hexdigest()},
++    'UA175': {'mfr_rows': len(u175), 'numeric_length_rows': sum(r['mfr_seconds'] is not None for r in u175),
++              'No_Conn_rows': len(not_connected),
++              'earlier_Connect_readings_all_positive_or_positive_candidates': all_positive_candidates,
++              'No_Conn_with_positive_or_positive_candidate_Connect': len(not_connected) if all_positive_candidates else None,
++              'selected_prior_SCP_comparisons': len(selected_scp),
++              'selected_prior_SCP_equal_to_MFR': sum(r['mfr_seconds'] == r['prior_scp'] for r in selected_scp),
++              'pairs': u175},
++    'UA93': {'mfr_airfone_rows': len(new['UA93_airfone']),
++             'mfr_cellular_labels': len(new['UA93_cellular']),
++             'mfr_positive_seconds_rows': sum(r['reported_seconds'] > 0 for r in new['UA93_airfone']),
++             'mfr_zero_seconds_rows': sum(r['reported_seconds'] == 0 for r in new['UA93_airfone']),
++             'printed_time_duplicate_groups': sum(n > 1 for n in mfr93_time_counts.values()),
++             'unique_same_printed_time_candidates': len(unique_pairs),
++             'unique_candidates_with_accepted_prior_SCP': sum(p['prior_scp'] is not None for p in unique_pairs),
++             'unique_candidates_matching_accepted_prior_SCP': sum(p['prior_scp'] == p['mfr_seconds'] for p in unique_pairs if p['prior_scp'] is not None),
++             'unique_time_pairs': unique_pairs,
++             'unmatched_MFR_time_labels': unmatched_new,
++             'unmatched_prior_time_labels': unmatched_old,
++             'unmatched_limit': 'Includes possible earlier analyst reading errors; not all are historical discrepancies.'},
++    'negative_controls': {
++        'positive_Connect_proves_completed_conversation_rejected_by_No_Conn_rows':
++            bool(not_connected) and all_positive_candidates,
++        'time_only_join_is_unique_rejected': any(n > 1 for n in mfr93_time_counts.values()),
++        'unknown_prior_SCP_values_preserved': all(p['scp'] is None for p in old['UA175'] if p['row'] not in [2, 5]),
++    },
++    'scope': 'Supplied readings and candidate field accounting only; not source independence, native export authentication, clock calibration, exact caller/leg identity or conversation duration.',
++    'remaining': 'Preserve all original values and prior versions. MFR definitions are attributed briefing explanations, not vendor definitions or proof of how failed attempts/operator/ground legs were logged.'
++}
++with output_path.open('x') as stream:
++    json.dump(result, stream, indent=2)
++    stream.write('\n')
++print(json.dumps({'UA175': {k: v for k, v in result['UA175'].items() if k != 'pairs'},
++                  'UA93': {k: v for k, v in result['UA93'].items() if k not in ['unique_time_pairs', 'unmatched_MFR_time_labels', 'unmatched_prior_time_labels']},
++                  'negative_controls': result['negative_controls']}))

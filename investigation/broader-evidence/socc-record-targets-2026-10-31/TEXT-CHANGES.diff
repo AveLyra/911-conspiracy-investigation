@@ -1,0 +1,345 @@
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..3db2165e
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,16 @@
++# Instruction and revision checklist
++
++- [x] Compare requested 336/337 against 326/636/637/639: completed in commit 385f959fd70d5caee75fe192325771ed7d8bdc9d; linked without rewriting it. Source details and conflicts remain there.
++- [x] Preserve original records and conflicting values: no source or prior document altered; September 18 unconfirmed/all-OK/fax accounts retained together.
++- [x] Continue available operational-record work: pages 19–24 checked within prospectively declared scope; named log/fax targets recorded.
++- [x] Distinguish facts, source reports, inference and unknowns: README observations, assessment and provenance; no manufactured conflict or motive finding.
++- [x] Test contrary interpretation: log instruction and reported event support review activity; no claim that no review occurred.
++- [x] Missing inputs remain TODOs: OPEN-TODOS.json, with original eighteen requirements retained.
++- [x] Avoid duplicate acquisition/testing: held interview/renders reused, named queries checked against holdings; no raw-data test claimed.
++- [x] Exact locators: source URL, access date, page/row/mark; native log hash explicitly unknown. No invented source lines.
++- [x] Actual scope: twelve log viewports plus held pages8–9. Truncated initial page9 display corrected by reinspection, not silently counted as a reading.
++- [x] Revision accountability: new text only, immediate predecessor absent. TEXT-CHANGES.diff is a real Git addition diff; source-image reading is separate.
++- [x] Public payload review: research notes only; raw sources, incidental personal/access fields, other marked material and private case content excluded.
++- [ ] Commit/push/remote verification: performed and recorded separately after freezing this candidate; this checklist does not prejudge publication success.
++
++Integrity checks identify held bytes, not historical truth, independent validation or completion of the substantive goal. No prior discrepancy has been resolved or erased by this supplement.
+diff --git a/OPEN-TODOS.json b/OPEN-TODOS.json
+new file mode 100644
+index 00000000..927cf179
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,60 @@
++{
++  "parent_tasks": [
++    "TEL02",
++    "TEL04",
++    "AUD016-A1",
++    "TC05",
++    "TC06"
++  ],
++  "original_eighteen_requirements": "All remain open/partial; no narrowing or replacement",
++  "items": [
++    {
++      "id": "SOCC-LL01",
++      "status": "unacquired",
++      "records": [
++        "Actual informal log and versions",
++        "SOCC closure/debrief treatment and action list",
++        "Event minutes/slides and implementation records"
++      ],
++      "next_test": "Establish provenance/date and whether actual content addresses recording retrieval or retention; do not identify log with later event by vocabulary.",
++      "competing_outcomes": [
++        "Created and acted upon",
++        "Created but incomplete or not acted upon",
++        "Different record/event scope",
++        "Not created or no longer available; reason unknown"
++      ]
++    },
++    {
++      "id": "SOCC-FAX01",
++      "status": "unacquired",
++      "records": [
++        "September18 message and all-OK follow-up",
++        "Approval/routing and fax artifact",
++        "Recipient acknowledgment"
++      ],
++      "next_test": "Join the exact later event, message, transmission and receipt; preserve the all-OK qualification.",
++      "limit": "Cannot substitute for9/11 audio custody or May2003QFR delivery."
++    },
++    {
++      "id": "TEL-recording-disposition-carryforward",
++      "status": "unacquired",
++      "records": [
++        "Earlier retrieval-request outcome",
++        "Original recordings/copies and identifiers",
++        "Copy/transfer/custody and receipt records"
++      ],
++      "next_test": "Use actual artifacts and independent receipt/clock records. A bounded log reading is not proof of absence."
++    },
++    {
++      "id": "FAA-PD01-PD04-carryforward",
++      "status": "unchanged open",
++      "records": [
++        "Actual correctedQFR and delivery",
++        "Native drafting/knowledge chain",
++        "Signed action/no-action determination",
++        "Distinct recommendation resolution/implementation records"
++      ],
++      "limit": "No new FAA disposition acquired in this unit."
++    }
++  ]
++}
+diff --git a/READING-SCOPE.json b/READING-SCOPE.json
+new file mode 100644
+index 00000000..892914db
+--- /dev/null
++++ b/READING-SCOPE.json
+@@ -0,0 +1,123 @@
++{
++  "log_reading": {
++    "source_url": "https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version",
++    "access_date": "2026-10-31",
++    "source_relationship": "Public mirror of operational log. Native document, agency release/page manifest and historical actions not authenticated.",
++    "native_PDF_sha256": null,
++    "views": [
++      {
++        "page": 19,
++        "regions": [
++          "upper2226through0730boundary",
++          "lower0055through1100andfooter"
++        ],
++        "date_scope": "September16,2001 divider visible; earlier preceding-evening entries not relabeled as attack day",
++        "mark": "AA KEAN COMM002548"
++      },
++      {
++        "page": 20,
++        "regions": [
++          "uppercontinuation/1400through0821partial",
++          "lower0708through1044andfooter"
++        ],
++        "date_scope": "September17th divider visible",
++        "mark": "AA KEAN COMM002549"
++      },
++      {
++        "page": 21,
++        "regions": [
++          "uppercontinuation/1049through1548partial",
++          "lower1530through2100andfooter"
++        ],
++        "date_scope": "Continuation after page20 September17th divider; no independent new date header on this page",
++        "mark": "AA KEAN COMM002550"
++      },
++      {
++        "page": 22,
++        "regions": [
++          "upperquestions/September18thdivider through1220partial",
++          "lower0930through2225andfooter"
++        ],
++        "date_scope": "September18th divider visible",
++        "mark": "AA KEAN COMM002551"
++      },
++      {
++        "page": 23,
++        "regions": [
++          "upper19thdivider/0030through1445partial",
++          "lower1354continuationthrough1500andfooter"
++        ],
++        "date_scope": "19th divider visible; lower rows largely masked",
++        "mark": "AA KEAN COMM002552"
++      },
++      {
++        "page": 24,
++        "regions": [
++          "upper1622through1720partial",
++          "lower1720through1845andfooter"
++        ],
++        "date_scope": "Continuation after page23 19th divider; not independently dated by a new header",
++        "mark": "AA KEAN COMM002553"
++      }
++    ],
++    "actual_viewport_images": 12,
++    "declared_cap": 16,
++    "declared_pages": [
++      19,
++      20,
++      21,
++      22,
++      23,
++      24
++    ],
++    "navigation": "Actual Jump-toPage field plus single supported AXscroll at0.6pages. Current page checked after each movement; all images stayed in19–24. No PageDown batching.",
++    "inspection_limit": "Two overlapping views per page cover the page bodies/footers for a source-role/recording-outcome check. Redactions and faint embedded small-print details remain unverified; no exhaustive character transcription, full32-page reading, native/clock/action authentication or technical-owner test.",
++    "new_record_leads": [
++      {
++        "id": "SOCC-LL01",
++        "page": 20,
++        "raw_row": "0955",
++        "source_date_context": "September17th",
++        "anchor": "Lessons learned entry above1044",
++        "observation": "Log records an announcement to start an informal lessons-learned log, to be addressed when the SOCC closes.",
++        "record_target": "The actual informal log, contributors/versions, closure/debrief treatment and resulting action list.",
++        "limit": "Instruction/announcement is not proof that a log was created, completed or received; no item concerning recording retrieval is established."
++      },
++      {
++        "id": "SOCC-FAX01",
++        "page": 22,
++        "raw_row": "1220",
++        "source_date_context": "September18th",
++        "anchor": "After1215; FAA ATCCommandCenter request/fax entry",
++        "observation": "Log reports an FAA request for a copy of the hijack message received from-645, approval fromTimAhern and a fax to a masked recipient. The same page's1135entry reports an unconfirmed message and1138reports allOK.",
++        "record_target": "Actual message, approval/routing, fax artifact and recipient acknowledgment, preserving the later outcome/retraction.",
++        "limit": "Log-reported fax is not an independently verified delivery/receipt. It concerns a later September18event, not the9/11recordings or the May2003correctedQFR; masked recipient not reconstructed."
++      }
++    ],
++    "target_test_result": "No explicit outcome for earlier recording-retrieval request, native recording file/copy identifier or custody/receipt found in the inspected readable regions. Not proof that no outcome exists elsewhere.",
++    "excluded": "Contact/access-code/passenger/identifying fields and unrelated incident allegations not used or republished; source restrictions/redactions preserved; no new raw screenshot files saved.",
++    "all18_original_criteria": "Remain open/partial; new record leads are not a native-original acquisition, historical-action test or scientific result."
++  },
++  "held_counterpart": {
++    "pages_reinspected": [
++      8,
++      9
++    ],
++    "renders_reused": true,
++    "new_pdf_render_or_ocr": false,
++    "first_page9_display_attempt": "Tool output was truncated before review; repeated existing-image display then read. No new source content or test counted.",
++    "relevant_scope": "Page8 Recommendations first[U]paragraph; page9 continuation checked for context only; other marked material excluded"
++  },
++  "followup_queries": [
++    "\"SOCC\" \"lessons learned\" \"American Airlines\"",
++    "site:archives.gov \"American Airlines\" \"informal log\""
++  ],
++  "query_result_scope": "Returned snippets and existing holdings; no new original acquired. Relevant specific queries checked against old holdings; unrelated DOJ/CIO lessons-learned hit not treated as same query.",
++  "unperformed": [
++    "Full32-page reading",
++    "Native log or clock authentication",
++    "Original informal-log/event/fax acquisition",
++    "Native recording/carrier join",
++    "Physical or scientific testing"
++  ]
++}
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..95362159
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,35 @@
++# SOCC follow-up: named review and message-transfer records remain unacquired
++
++Research date: October 31, 2026. Existing parent tasks: TEL02/TEL04, AUD016-A1 and TC05–TC06. This is a bounded continuation of the recording-retrieval inquiry, separate from the [completed exhibits 336/337 comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/385f959fd70d5caee75fe192325771ed7d8bdc9d/investigation/broader-evidence/moussaoui-french-controls-2026-10-30/README.md). Earlier reports, conflicting values and source copies remain unchanged.
++
++Two additional entries identify specific records to seek. They do not establish the disposition of the earlier recordings. The distinction between an instruction, a later recollection, an actual document and proof of receipt is material here.
++
++## Observations and source roles
++
++| Source and exact locator | What the readable source reports | What remains unverified |
++| --- | --- | --- |
++| [SOCC log mirror, viewer page 20](https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version#page=20), September 17 divider, row **0955**, production mark **AA KEAN COMM 002549** | Announcement to start an informal lessons-learned log, to be addressed upon SOCC closure | The actual log, its completion, contributors, closure discussion, action list and any recording-preservation entry |
++| [Held November 19, 2003 interview memorandum, physical page 8](https://catalog.archives.gov/medialive/0/6096/2609600/content/arcmedia/9-11/MFR/t-0148-911MFR-00014.pdf#page=8), **Recommendations**, first paragraph marked [U] | Interviewees reportedly described an after-action lessons-learned event, including SOCC response and principally the new hijacking strategy; they also reported that PTI/SOCC activation systems did not change | Actual event materials, attendance, decisions and implementation. This is a retrospective memorandum, not the informal log itself |
++| [SOCC log mirror, viewer page 22](https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version#page=22), September 18 divider, rows **1135**, **1138** and **1220**, mark **AA KEAN COMM 002551** | Earlier rows report an unconfirmed hijack message followed by all-OK; row 1220 reports an FAA ATC Command Center request for that message, approval and a fax to a masked recipient | Original message, authorization/routing, actual fax, delivery and acknowledgment. The later all-OK account must accompany the initial report |
++
++The fax entry concerns a **September 18 event**, not September 11 recordings and not the May 2003 corrected FAA answer. No masked recipient was reconstructed. A source's report that something was faxed is not an independently verified delivery receipt. Likewise, similar lessons-learned wording does not establish that the September 17 proposed log and the later reported event were the same object or that one implemented the other.
++
++## Assessment, counterevidence and limits
++
++The new entries sharpen retrieval targets: a named informal log, closure/debrief records and a particular message-transfer chain. They provide no newly acquired recording, native call data, laboratory result or signed FAA disposition. The interview was already acquired and read in the earlier study; reusing it is **not a new source acquisition or independent corroboration**.
++
++The instruction and later reported event are evidence or accounts of review activity. They weigh against a blanket claim that no review effort occurred. They do not establish that recording preservation was addressed, recommendations were implemented, or communications were effective. Different scope, incomplete implementation and an informal log not identical to the later event remain untested possibilities. No contradiction between these entries is established, and no suppression, coordination, intent or conspiracy is inferred from a missing record.
++
++The recording-outcome check found **no explicit disposition of the earlier retrieval request in the readable regions of pages 19–24**. That is not an absence finding for the entire 32-page log, redacted fields, other files or historical events. [READING-SCOPE.json](READING-SCOPE.json) preserves the actual page regions and limits. No new scientific or historical-action test was performed; all eighteen original-record requirements remain open or partial.
++
++## Provenance and actual work
++
++The log was inspected through a public mirror: twelve viewport images, two overlapping regions per page, pages 19–24 only. Date dividers, row labels and footer marks were preserved as displayed, without clock or document-creation authentication. Faint embedded details and masks remain unreadable/unverified. No native log PDF was acquired, so its native PDF SHA-256 is **unknown**, not substituted with a hash of these notes.
++
++The already-held interview PDF has nine physical pages and SHA-256 **e45e7435e80b81df3f0c0376fb7be049595c1653dc6a00f1b6718c1b7dd411b3**. Physical pages 8–9 were reinspected from existing renders; page 9 continues a separate example and supplies no actual informal log or recording disposition. Only the relevant [U] paragraph on page 8 is summarized here. Other marked material and raw images are excluded. The agency-hosted PDF was acquired previously through a tested legacy-path candidate; it was not newly located through an observed catalog download link in this unit.
++
++Two prospectively defined searches for the named log/event returned the already-held interview and an indexed excerpts mirror. No informal log, event minutes/slides or fax receipt was acquired. Excerpts reusing the interview are not another independent source. The query misses do not establish that records do not exist. No extra log pages or hidden layers were inspected.
++
++[OPEN-TODOS.json](OPEN-TODOS.json) retains the missing inputs, competing outcomes and next discriminating tests. [SOURCE-PINS.json](SOURCE-PINS.json) separates mirror observations from the held agency-hosted copy. [VALIDATION.json](VALIDATION.json) records mechanical integrity checks only. [CHECKLIST.md](CHECKLIST.md) and [TEXT-CHANGES.diff](TEXT-CHANGES.diff) provide revision accountability; the latter is the actual addition diff against the preceding absent text state, not a source-document version comparison.
++
++Publication covers original research notes only. No raw scans, screenshots, full OCR, contact/access-code/passenger data, private correspondence, case strategy or credentials are included. Source originals, masks, page order, earlier conflicting records and prior TODOs are retained. No outreach, request, fee, filing, deletion, private push, merge or history rewrite was performed. Publication and remote integrity are separate from substantive research acceptance.
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..264d5db8
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,46 @@
++{
++  "access_date": "2026-10-31",
++  "log": {
++    "url": "https://www.scribd.com/document/16762194/T7-B20-Timelines-9-11-2-of-2-Fdr-AA-SOCC-Log-Redacted-Version",
++    "relationship": "Public readable mirror; native/agency version and custody unverified",
++    "native_pdf_sha256": null,
++    "pins": [
++      {
++        "id": "SOCC-LL01",
++        "page": 20,
++        "date_divider": "September17th",
++        "row": "0955",
++        "mark": "AA KEAN COMM002549",
++        "observation": "Announcement to start an informal lessons-learned log; address on SOCC closure.",
++        "status": "Source-reported instruction; actual log and outcome unacquired"
++      },
++      {
++        "id": "SOCC-FAX01",
++        "page": 22,
++        "date_divider": "September18th",
++        "rows": [
++          "1135",
++          "1138",
++          "1220"
++        ],
++        "mark": "AA KEAN COMM002551",
++        "observation": "Unconfirmed message, all-OK follow-up, then reported FAA request/approval/fax.",
++        "status": "Later September18 incident, not9/11 recordings or May2003QFR. Receipt unknown; recipient remains masked."
++      }
++    ]
++  },
++  "held_interview": {
++    "url": "https://catalog.archives.gov/medialive/0/6096/2609600/content/arcmedia/9-11/MFR/t-0148-911MFR-00014.pdf",
++    "relationship": "Agency-hosted released PDF, prior acquisition through a tested legacy-path candidate; historical source assertions not independently authenticated",
++    "sha256": "e45e7435e80b81df3f0c0376fb7be049595c1653dc6a00f1b6718c1b7dd411b3",
++    "pages": 9,
++    "current_reading_pages": [
++      8,
++      9
++    ],
++    "pin": "Page8, Recommendations, first paragraph marked[U]",
++    "observation": "Reported after-action event and unchanged PTI/SOCC activation systems",
++    "limit": "Retrospective account; not actual informal log, event records or recording disposition"
++  },
++  "source_line_numbers": "Not invented for raster pages; use physical/viewer page, visible row/header and production mark."
++}
+diff --git a/VALIDATION.json b/VALIDATION.json
+new file mode 100644
+index 00000000..8878bfb2
+--- /dev/null
++++ b/VALIDATION.json
+@@ -0,0 +1,29 @@
++{
++  "time_utc": "2026-10-31T15:49:54.238772+00:00",
++  "actual_checks": [
++    {
++      "source_relative_path": "sources/November-interview-legacy-candidate.pdf",
++      "bytes": 1120488,
++      "sha256": "e45e7435e80b81df3f0c0376fb7be049595c1653dc6a00f1b6718c1b7dd411b3",
++      "matches_prior_receipt": true
++    },
++    {
++      "source_relative_path": "pages/page-8.png",
++      "bytes": 222408,
++      "sha256": "12fe541f21c66835b3e1f3211fc249745f5dada87ba9980a417a15bd3816a21d",
++      "matches_prior_receipt": true
++    },
++    {
++      "source_relative_path": "pages/page-9.png",
++      "bytes": 56129,
++      "sha256": "f16a3494abf30a1c55343f3cf5b9ac74e984016beaf6a2e0f3b34b729693f7dd",
++      "matches_prior_receipt": true
++    }
++  ],
++  "log_native_hash": null,
++  "log_native_hash_reason": "No native PDF/entity acquired; visual browser reading only",
++  "source_content_reading": "Manual page-image review, separately recorded; hash agreement does not validate it",
++  "empirical_tests_performed": 0,
++  "original_acceptance_criteria_closed": 0,
++  "publication_verification": "Pending, separate local receipts; not claimed by candidate"
++}

@@ -1,0 +1,464 @@
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..451c0fc3
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,16 @@
++# Requirement accountability
++
++| User requirement | Outcome / location | Verification and unresolved issue |
++| --- | --- | --- |
++| Pursue another available public-source lead | New Alderson-attributed candidate preview; README and AV01 | Cover and scoped passage actually viewed. Native/custodian PDF and exact reviewed version remain TODO. |
++| Do not repeat completed searches | PROTOCOL-LOCAL records two previously unrun Alderson-specific queries and a newly inspected participant locator | Earlier failed clock/CD/WAV/host routes not retried; old20-minute participant account not counted as a new result or applied to held media. |
++| Preserve conflicting records and source links | AV02/AV04, SOURCES, README table | DRM1/DRM2 and all adopted time-like fields side by side; no repair, preferred value, date inference or offset. |
++| Test assumptions and retain contrary evidence | AV03 and README | Both copies retain common AA11/Langley content. Not independent corroboration; narrower allegedly omitted call untested. |
++| Exact file/page/line and reading scope | COMPARISON-PINS, READING-SCOPE | Viewer/internal/printed/Bates/reader line systems distinguished. Partial regions do not become whole-file reading or absence evidence. |
++| Preserve originals and provenance | Native-only two unedited JPEGs, SOURCES and SOURCE-CHECKS | Actual bytes/hash/readback. Browser representations are not native-PDF hashes. Prior sources unchanged. |
++| Missing inputs remain TODO; continue available work | OPEN-TODOS carries prior MC/MFR/OM and all18criteria | No input closed from this preview. Actual native pair, call join and redo still missing. No gated action bypass. |
++| Revision accountability and actual text diff | This checklist; TEXT-CHANGES.diff | New standalone derivative; actual Git addition diff against absence. Prior documents unchanged. Visual reading separate from text-diff verification. |
++| Commit/push eligible findings as AveLyra | Publication plan and remote receipts retained locally; exact final commit supplied after verification | Additive original research only, via documented helpers, verified account/destination/author/committer/ref and file bytes. No raw source/private payload. Not claimed complete before remote verification. |
++| Keep technical work/coordination separate | README/TODOs | Operational source acquisition here; calibrated recorder/materials work remains assigned elsewhere. Overview handoff only after verified meaningful publication. |
++
++The list of findings is not a count or percentage of evidence for wrongdoing. Source overlap, source labels and a missing correction worksheet do not establish conspiracy, deliberate suppression, motive or causation.
+diff --git a/COMPARISON-PINS.json b/COMPARISON-PINS.json
+new file mode 100644
+index 00000000..4570c279
+--- /dev/null
++++ b/COMPARISON-PINS.json
+@@ -0,0 +1,84 @@
++{
++  "date": "2026-10-31",
++  "pins": [
++    {
++      "id": "AV01",
++      "type": "Observation of candidate reproduction",
++      "source_ids": [
++        "AV-PREVIEW"
++      ],
++      "locator": "Viewer1: running header; section0001 lines13–14 and22–24; section0002 lines1–3; cover-view.jpg",
++      "literal_fields": {
++        "running_header": "Ch2MCCUpsideDRM1DAT220031219[1]",
++        "recording_label": "DRM1 DAT2 Ch.2 MCC Upside",
++        "section0002_line1": "6217-2: DRM1 DAT2 Ch.2 MCC Upside"
++      },
++      "observation": "Cover attributes transcription from supplied audio to Alderson Reporting. This is a concrete candidate reproduction relevant to the earlier Alderson reference.",
++      "limits": "Not identified as the exact copy reviewed by Commission staff. Do not infer creation/export date from the date-like filename suffix, or authenticate handwriting, ownership, source master or channel mapping from these fields."
++    },
++    {
++      "id": "AV02",
++      "type": "Preserved label comparison",
++      "source_ids": [
++        "AV-PREVIEW",
++        "TR-PRIOR",
++        "MFR"
++      ],
++      "locator": "New cover as AV01; prior printed50/NCT0000098/TR03; MFRpage3 audio-review paragraph",
++      "literal_values_side_by_side": {
++        "new_preview": "DRM1 DAT2 Ch.2 MCC Upside",
++        "prior_reproduction": "DRM2/DAT2 Channel2",
++        "MFR_review_label": "DRM 1 DAT 2 Channel 2 MCC Op",
++        "previously_held_MP3_filename": "DRM1_DAT2_Channel_2_MCC_Op.mp3"
++      },
++      "observation": "The new cover retains the DRM1 label beside the earlier DRM2-labelled reproduction. All labels remain uncorrected.",
++      "limits": "A filename, section heading, similar content and interview review statement do not establish one recording/copy/version. No MP3 reacquisition, whole-file identity check or native media manifest obtained."
++    },
++    {
++      "id": "AV03",
++      "type": "Limited document-content comparison",
++      "source_ids": [
++        "AV-PREVIEW",
++        "TR-PRIOR"
++      ],
++      "locator": "New viewer26: section0061 lines15–25;0062 lines10–12;0063 lines2–3; common-passage-view26.jpg. Prior printed62/NCT0000110/TR04, saved reader lines3206–3235; prior printed63/NCT0000111/TR05.",
++      "common_sequence": [
++        "AA11 reported still airborne toward Washington",
++        "Conditional intention to chase it if found and an expressed question",
++        "Langley-to-Washington directional self-correction in speech",
++        "Langley scramble instruction toward Washington",
++        "Adjacent N334AA discussion"
++      ],
++      "presentation_fields": {
++        "new": "MALE SPEAKER1/numbered speaker categories and internal counters0061–0063 within viewer26",
++        "prior": "MCC/background-role labels, printed62–63 and NCT0000110–111"
++      },
++      "limits": "This is recognizable documentary overlap, not a full transcription diff, unique audio event/speaker match, independent aircraft-position proof or evidence that each copy has all calls. Both versions may derive from the same tape; do not count them as independent witnesses. The scoped passage does not test the specifically alleged missing call."
++    },
++    {
++      "id": "AV04",
++      "type": "Time-label observations without calibration",
++      "source_ids": [
++        "AV-PREVIEW",
++        "TR-PRIOR",
++        "MC-NOTES"
++      ],
++      "locator": "New cover viewer1: section0002 lines2–3 and left margin; prior printed62/TR04 and63/TR05; notespage17 timing-warning bullets",
++      "literal_values_side_by_side": {
++        "new_section0002_line2": "(12 hours 30 minutes 35 seconds)",
++        "new_section0002_line3": "00:00:13 (Elapsed time) 03:02:00",
++        "new_left_margin": "00:00:04",
++        "prior_common_exchange_page62": [
++          "13:22:05",
++          "13:22:27",
++          "13:22:47"
++        ],
++        "prior_page63": "13:23:10"
++      },
++      "observation": "The candidate carries multiple time-like fields; their meaning is not established. No comparable absolute-time label was adopted from the new common-passage viewport.",
++      "limits": "Do not call the hours/minutes/seconds field a duration, assume a UTC/local origin or derive an offset by subtracting unrelated fields. Common passage and starting labels are not a timing-redo worksheet. Earlier notes warn about Alderson MCCOP Ch2 times from around9:10 onward, but neither the warning’s specific version nor its completion is established here."
++    }
++  ],
++  "line_convention": "Internal transcript counters and typed line numbers are distinguished from viewer/printed pages, Bates labels and saved web-reader L numbers. Images are browser viewports; no invented native-PDF lines.",
++  "inferential_status": "High confidence in the limited visible labels and overlap; exact historical version, custody, timing and omission scope remain unverified."
++}
+diff --git a/OPEN-TODOS.json b/OPEN-TODOS.json
+new file mode 100644
+index 00000000..2eb05db9
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,138 @@
++{
++  "new_targets": [
++    {
++      "id": "MC-T01",
++      "status": "PARTIAL_PUBLIC_PREVIEW_LOCATED_NATIVE_VERSIONS_STILL_TODO",
++      "missing_or_unperformed": "Actual Alderson and original transcript versions, their complete calls/channel/copy manifests, source audio and assembly/transmittal history.",
++      "test_and_revisit_trigger": "Compare the stated omitted Bellucio/ZNY and following calls across the actual versions; establish version-specific coverage, not an inferred universal omission.",
++      "status_before_this_unit_preserved": "TODO_INPUT",
++      "this_unit_outcome": "One Alderson-attributed public preview located and limited cover/common passage inspected. Native candidate PDF, exact original/Alderson version pair, omitted-call comparison, custody/media manifest and completed timing redo remain unacquired/unperformed. No dependency closed."
++    },
++    {
++      "id": "MC-T02",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Actual post9:10timing redo/verification worksheet, validated transcript, review comments and source clock/CD/export crosswalk.",
++      "test_and_revisit_trigger": "Determine whether/when the required verification occurred and its results. Keep NCT0056356/RDOD04013680 and RDOD04020795 as existing unacquired targets, not automatically the worksheet mentioned here. No repeat clock queries or alignment to a preferred narrative."
++    },
++    {
++      "id": "MC-T03",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Original ID-section received information, source/validation/correction notes and matched MCC/FAA call-leg or message records.",
++      "test_and_revisit_trigger": "Trace the reported ID→MCCstep back to its originating source and actual recipients. Join AEA1130at1326/1329only through content/source/leg evidence, not matching topics or printed clocks."
++    },
++    {
++      "id": "MC-T04",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Native MCC/M CCT, CONR/AWC and exercise chat logs, exports, schemas, authors and version/entry-time history.",
++      "test_and_revisit_trigger": "Separate event time, entry time, subsequent reconstruction and source data. Test omissions, later annotation and ordinary reconstruction as well as alteration, without assuming either."
++    },
++    {
++      "id": "MC-T05",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "WOC/Herndon/AirThreat bridge participation and BattleCab/secure/DSN call-routing records.",
++      "test_and_revisit_trigger": "Test capability versus actual individual/organizational participation, recipients, bridges and time. A personal did-not statement is not organization-wide absence."
++    },
++    {
++      "id": "MC-T06",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "The actual NORAD press release referred to by the literal9/18/04/0843line, all relevant versions and note-creation/correction history.",
++      "test_and_revisit_trigger": "Preserve literal04and January2004labels; identify the actual source before considering typo, later compilation, wrong referent or another explanation. Test the challenged0843value against authenticated records, not the interview label alone."
++    },
++    {
++      "id": "MC-T07",
++      "status": "PARTIAL_MFR_ACQUIRED_AND_READ",
++      "missing_or_unperformed": "Official six-page MFR NAID2610370and a source-to-note/author/date/assembly crosswalk.",
++      "test_and_revisit_trigger": "Compare the actual MFR with the18-page ISCAPpacket; establish which notes/questions belong to which interview, what was adopted and what remained an open question. Neither same title nor different extent settles equivalence.",
++      "previous_status_preserved": "TODO_INPUT",
++      "previous_missing_wording_preserved": "Official six-page MFR NAID2610370and a source-to-note/author/date/assembly crosswalk.",
++      "new_outcome": "ActualNARA2610370MFRacquired,6pages/724933bytes,all6imagesread; selectedpassagescomparedwithpriornotes. Exactsource-to-note author/date/assembly/version/approval crosswalk remains unproved."
++    },
++    {
++      "id": "MC-T08",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Underlying RADES/raw target information, original Z-point/source records and aircraft/call association.",
++      "test_and_revisit_trigger": "Test primary-target identity, source accuracy and information-flow scope independently; no new technical decoding/calibration task is duplicated here."
++    },
++    {
++      "id": "MC-T09",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "Original readiness/authority orders, routing/receipt records, staff-note custody and formal after-action/correction records.",
++      "test_and_revisit_trigger": "Test the remaining readiness/control/debrief claims. Keep recollection, policy, order, actual execution, later record collection and signed FAA personnel/disposition events distinct."
++    },
++    {
++      "id": "MFR-T01",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "MFRauthoring/draft/version/approval/transmittal and source-to-note assembly/correctionhistory; actual recordedinterview or its disposition if any.",
++      "test_and_revisit_trigger": "Trace what was summarized, omitted, corrected, adopted anddelivered, andwhy. Do not infer any of these from the visible crossed-through recording-reference line or absent warnings alone."
++    },
++    {
++      "id": "MFR-T02",
++      "status": "PARTIAL_PUBLIC_PREVIEW_LOCATED_NATIVE_VERSIONS_STILL_TODO",
++      "missing_or_unperformed": "ActualAldersonandoriginaltranscript/media versions withversion/channel/export/reviewmapping and timingredo/verification output.",
++      "test_and_revisit_trigger": "Join the MFRexplicitDRM1DAT2Ch2label, noteAldersonwarning, priorreproductionDRM2label and heldMP3onlythroughrealmanifest/content/version evidence; no filename-basedidentity/offsetadjudication.",
++      "status_before_this_unit_preserved": "TODO_INPUT",
++      "this_unit_outcome": "One Alderson-attributed public preview located and limited cover/common passage inspected. Native candidate PDF, exact original/Alderson version pair, omitted-call comparison, custody/media manifest and completed timing redo remain unacquired/unperformed. No dependency closed."
++    },
++    {
++      "id": "MFR-T03",
++      "status": "TODO_INPUT",
++      "missing_or_unperformed": "OriginalLangley/Norfolk/GiantKillerorders/agreements, transmissions/receipts and nativeROE/DEFCONorders/logs withclockdefinitions.",
++      "test_and_revisit_trigger": "Test attributedheadings/control/authority/readinessbyactualsource records, with contraryornegativeoutcomesretained; no post9/11policybackprojection oractualexecutionfromaMFRlabel."
++    }
++  ],
++  "previous_omic_todos": {
++    "source": "https://github.com/AveLyra/911-conspiracy-investigation/blob/dcdc9f647130139c60128ae3c131d40955536b34/investigation/broader-evidence/faa-omic-body-completion-2026-10-31/OPEN-TODOS.json",
++    "status": "OM-T01–07andOM-T09–12remain open. OM-T08only page reading complete. New ID→MCCsource attribution partially advances OM-T09 but does not complete original-message/call joins."
++  },
++  "all_original_requirements": {
++    "FAA": [
++      "FAA01",
++      "FAA02",
++      "FAA03",
++      "FAA04"
++    ],
++    "telephone": [
++      "TEL01",
++      "TEL02",
++      "TEL03",
++      "TEL04"
++    ],
++    "recorder": [
++      "REC01",
++      "REC02",
++      "REC03"
++    ],
++    "materials": [
++      "MAT01",
++      "MAT02",
++      "MAT03"
++    ],
++    "steel": [
++      "STL01",
++      "STL02",
++      "STL03",
++      "STL04"
++    ]
++  },
++  "completion": "All18originalcriteria remain open/partial; source acquisition/review progresses the operational trail, not native authentication, receipt or an unperformed empirical test.",
++  "ownership": "Operational acquisition here; recorder/materials decoding and calibrated clock tests retain the assigned technical owner. No outreach, request, fee or new experiment performed.",
++  "current_MFR_report": "Newread/acquisitiononly; no original18criterion complete. MC-T01–06/08–09 and previousOMinputs remain open; MC-T07partiallyadvanced,notfullyclosed.",
++  "prior_published_register": "https://github.com/AveLyra/911-conspiracy-investigation/blob/6af556052ee0745e95151faa13294e864decdd89/investigation/broader-evidence/neads-mfr-version-crosswalk-2026-10-31/OPEN-TODOS.json",
++  "additional_version_targets": [
++    {
++      "id": "AV-T01",
++      "status": "TODO_INPUT",
++      "missing": "Custodian/native PDF of this candidate; actual original and Alderson versions reviewed by staff, hashes/manifests, drafts/transmittals and source-channel/copy mapping.",
++      "test": "Establish the actual version pair before attributing the notes warning to this reproduction. Compare complete coverage and provenance; preserve DRM1 and DRM2 labels without choosing one.",
++      "revisit_trigger": "Actual public custodian download/version manifest, or locally supplied authorized public records. Signup/download not authorized as a workaround."
++    },
++    {
++      "id": "AV-T02",
++      "status": "TODO_INPUT_AND_TEST",
++      "missing": "Exact clear ZNY/positioning and following calls identified in the notes, paired pages/source audio, plus post9:10 redo/verification worksheet and corrected outputs.",
++      "test": "Locate the specific alleged omission in each authenticated version and inspect whether a correction was made, validated and delivered. Retention of the AA11/Langley passage does not answer that narrower question. Any clock test belongs with the assigned technical owner.",
++      "revisit_trigger": "The actual matching call/version records and documented clock definitions/verification become available."
++    }
++  ],
++  "this_unit_limit": "All18originalrequirements remain open/partial. This browser-preview lead is neither an acquired native transcript pair nor a completed timing test. Prior conflicts, missing inputs and technical-owner assignments carried forward."
++}
+diff --git a/READING-SCOPE.json b/READING-SCOPE.json
+new file mode 100644
+index 00000000..d56fcb3b
+--- /dev/null
++++ b/READING-SCOPE.json
+@@ -0,0 +1,30 @@
++{
++  "date": "2026-10-31",
++  "new_candidate": "https://www.scribd.com/document/14142047/NYC-Box-3-Neads-conr-norad-Fdr-Transcript-Neads-Channel-2-Mcc-Upside-006",
++  "advertised_extent": 93,
++  "actually_read_this_unit": [
++    {
++      "viewer_page": 1,
++      "scope": "Cover and first visible section0002 lines1–14, via two overlapping viewports; not whole page. Cover heading/attribution/labels and first time fields inspected. One unedited cover JPEG retained."
++    },
++    {
++      "viewer_page": 2,
++      "scope": "Top portion only, continuing section0003 and0004. Partial view; no durable screenshot and no independent substantive claim based on its unseen remainder."
++    },
++    {
++      "viewer_page": 26,
++      "scope": "One viewport: section0061 lines15–25, section0062 lines1–25, and section0063 through approximatelyline10. Lower portion obscured by advertisement/outside viewport. Not whole page26. Unedited JPEG retained."
++    }
++  ],
++  "not_read": "No entire93-page review; viewerpage3 not read. Browser DOM includes text beyond the visual scope, but presence in that DOM is not claimed as visual reading. No whole-document absence, identity or complete-differences finding.",
++  "prior_copy_scope": "Reuse prior selected visual reading/pins for printed50,62–63, not newly viewed whole pages in this unit. Retained web representation lines3206–3235 reread for the common exchange. Printed63/NCT0000111 comparison relies on prior TR05 pin; not a new visual reading or native-file acquisition.",
++  "official_records_scope": "Reuse prior full18-page notes and full6-page MFR readings/pins; not newly acquired or re-rendered here.",
++  "navigation": "Ordinary public preview only, no account/sign-in/signup/trial/download. Download led to signup and was not used. No actual reading gate was observed for these viewports; generic Sign in/Download advertisements were not treated as reading permission. Stop rule for actual gates retained.",
++  "no_performed_tests": [
++    "Native PDF extraction or whole-file diff",
++    "Specific allegedly omitted ZNY/positioning call comparison",
++    "Raw audio listening/decoding or unique event join",
++    "Independent clock calibration/offset or post9:10 redo verification",
++    "Authorship/custody/version or creation-date authentication"
++  ]
++}
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..2048a60e
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,44 @@
++# Candidate Alderson transcript: a limited version comparison
++
++October 31, 2026. A newly located [public preview](https://www.scribd.com/document/14142047/NYC-Box-3-Neads-conr-norad-Fdr-Transcript-Neads-Channel-2-Mcc-Upside-006) has a cover attributing its transcription to Alderson Reporting. It provides a concrete version-tracing lead after the [interview notes](https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf#page=17) warned of missing calls and timing that needed verification. **The native PDF, exact version pair and completed timing verification remain missing.**
++
++## What the preview adds
++
++The cover labels the recording **DRM1/DAT2, Channel2, MCC Upside**. This remains beside the **DRM2/DAT2 Channel2** heading in the [earlier reproduction](https://www.scribd.com/document/14142009/NYC-Box-2-NEADS-Transcript-Rome-NY-Fdr-Transcript-Pgs-1-82-1237-1417), printed50/NCT0000098. The official [MFR page3](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf#page=3) names a DRM1/DAT2/Channel2 MCCOp review with an Alderson transcript. None of these labels is selected as controlling. A matching label does not authenticate this as the copy staff reviewed. Exact fields and locations are retained in `COMPARISON-PINS.json`, AV01–02.
++
++A limited common passage is visible in new viewer26, internal sections0061–0063. The earlier copy's printed62–63/NCT0000110–111 contains the same recognizable sequence: AA11 reported still airborne, a conditional pursuit, a spoken direction correction, a Langley scramble instruction and adjacent N334AA discussion. Speaker categories and pagination differ. This is **documentary overlap**, not a complete version diff, a unique source-audio match, or independent proof that the reported aircraft was airborne. AV03 records exactly which portions were compared.
++
++This overlap is relevant contrary evidence to an expansive claim that Alderson removed the whole AA11/Langley sequence. It does **not** determine whether the different, specifically alleged ZNY/positioning call was omitted. That call was not tested in this unit. Two reproductions may share the same underlying tape and must not be counted as independent witnesses.
++
++## Conflicting labels and time fields remain uncorrected
++
++| Observation | Exact source location | Meaning still unverified |
++| --- | --- | --- |
++| New cover: DRM1/DAT2; earlier heading: DRM2/DAT2 | New viewer1/internal0001–0002; prior printed50/NCT0000098 | Actual recording, copy and channel relationship. The held MP3's DRM1 filename is another label, not authentication. |
++| Header `Ch2MCCUpsideDRM1DAT220031219[1]` | New viewer1 running header | The date-like suffix does not establish creation, export, review or revision date. |
++| `(12 hours 30 minutes 35 seconds)`; `00:00:13 (Elapsed time) 03:02:00`; marginal `00:00:04` | New viewer1, internal0002 lines2–3 and left margin | Multiple time-like fields are present. No duration, clock origin, timezone or alignment is assigned. |
++| Earlier common exchange: `13:22:05`, `13:22:27`, `13:22:47`; adjacent `13:23:10` | Prior printed62–63/TR04–05 | These remain source labels. No equivalent absolute-time label was adopted from the new common-passage viewport. No offset is calculated. |
++| Notes require a post-about9:10 timing redo; the MFR reports a transcript/audio review | Notes17; MFR3 | A review statement and readable preview are not the actual redo, its results or evidence of correction delivery. |
++
++The [preceding MFR comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/6af556052ee0745e95151faa13294e864decdd89/investigation/broader-evidence/neads-mfr-version-crosswalk-2026-10-31/README.md) preserves the notes' specific warning beside its absence from the fully read six-page summary. This unit does not establish why those records differ or whether corrections were completed. Editorial differences, different copies, reconstruction and improper omission are untested possibilities; none is adopted as an explanation.
++
++## Actual reading and preservation
++
++The platform advertises93 pages. We inspected cover/first-section viewports on viewer1, a partial top view on viewer2 and **one limited common-passage viewport on viewer26**. Viewer26 showed0061 lines15–25,0062 and0063 through aboutline10; its lower part was outside the viewport or obscured by an advertisement. We did not read all93 pages or all of page26. The earlier copy's printed50/62–63 findings reuse the previously recorded partial reading, with retained selected web text reread; they are not claimed as newly acquired native pages. The previously fully read18-page notes and six-page MFR were reused.
++
++Two unchanged browser JPEGs were preserved separately in the verified native media store:
++
++| Representation | Bytes | SHA-256 |
++| --- | ---: | --- |
++| Cover viewport | 97,504 | `4ab7824d516cc54610ddb65901ad3448bae18160d8729256224ef1e52ed895d6` |
++| Common-passage viewport26 | 126,575 | `d33e2697691520903a98885e8c13a932620119936702dcefdf2e1ddd23d3945d` |
++
++These hashes identify **our screenshots**, not a native transcript PDF or an authenticated historical master. `SOURCES.json` distinguishes browser representations from the two official PDFs actually acquired in prior work. The platform's AI title, upload information and displayed licence are not provenance. A handwritten ownership-like mark is not authenticated or adopted. Native downloads led to signup and were not used; the inspected public reading viewports displayed no reading gate. No login, trial, hidden endpoint or access workaround was used.
++
++## Next discriminating records
++
++MC-T01 and MFR-T02 advance only to **public candidate preview located**. Obtain the actual custodian transcript versions, copy/channel manifests and the exact allegedly missing call. Then compare their coverage and seek the post9:10 redo worksheet, validated transcript and delivery history. A completed, propagated correction could weaken an integrity concern; established known uncorrected errors in the actual relied-on version could strengthen a narrower one. This preview establishes neither result.
++
++`OPEN-TODOS.json` preserves all prior MC/MFR/OM dependencies and the original18requirements. The corrected May2003 FAA QFR and receipt, signed action/no-action decision, recommendation-disposition chain and other telephone/recorder/materials/steel inputs remain open/partial. No native audio decoding, clock fit, experiment or technical-owner work was duplicated.
++
++`CHECKLIST.md` accounts for the user requirements; `READING-SCOPE.json` separates viewed regions from unreviewed text; `SOURCE-CHECKS.json` reports actual representation checks; `TEXT-CHANGES.diff` records these additive text changes. Prior sources, conflicting values, reports and public history remain unchanged. Raw screenshots, marked pages/full speech, ancillary personnel/contact/access details and private case material are outside this public payload. No outreach, request, fee, filing, deletion, private push, merge or history rewrite occurred. Publication is a separate milestone, not substantive goal completion.
+diff --git a/SOURCE-CHECKS.json b/SOURCE-CHECKS.json
+new file mode 100644
+index 00000000..6d8f9257
+--- /dev/null
++++ b/SOURCE-CHECKS.json
+@@ -0,0 +1,43 @@
++{
++  "checked_at_utc": "2026-10-31T21:14:50.925432+00:00",
++  "checks": [
++    {
++      "check": "Native screenshot exclusive-write/readback and JPEG signature/hash",
++      "representation": "cover-view.jpg",
++      "bytes": 97504,
++      "sha256": "4ab7824d516cc54610ddb65901ad3448bae18160d8729256224ef1e52ed895d6",
++      "result": "MATCH",
++      "historical_authentication": false
++    },
++    {
++      "check": "Native screenshot exclusive-write/readback and JPEG signature/hash",
++      "representation": "common-passage-view26.jpg",
++      "bytes": 126575,
++      "sha256": "d33e2697691520903a98885e8c13a932620119936702dcefdf2e1ddd23d3945d",
++      "result": "MATCH",
++      "historical_authentication": false
++    },
++    {
++      "check": "Prior selected pin and web-representation fingerprints",
++      "pin_sha256": "bd2690341f7cb514db16d20584acc9c25d3c8f4084289191a89b72be8c68c7c5",
++      "reader_sha256": "17a3ef75087d8d25d030ca1f4cd5b07fa95c8f6086b825f1062b18001173b62b",
++      "result": "Measured; source-PDF identity not implied"
++    },
++    {
++      "check": "Scope against viewed screenshots",
++      "result": "Cover and common viewport visually read; partial coverage explicitly retained. No native whole-file diff or clock test performed."
++    },
++    {
++      "check": "Public JSON parse",
++      "result": "All five JSON payloads parsed after generation, before diff/plan creation."
++    }
++  ],
++  "not_tested": [
++    "Historical authenticity/completeness",
++    "Native transcript version equivalence",
++    "Specific missing call",
++    "Clock origin/offset/redo",
++    "Independent aircraft or operational event"
++  ],
++  "claim": "Representation integrity and scope checks only, not historical or causal validation."
++}
+diff --git a/SOURCES.json b/SOURCES.json
+new file mode 100644
+index 00000000..bba34fef
+--- /dev/null
++++ b/SOURCES.json
+@@ -0,0 +1,67 @@
++{
++  "access_date": "2026-10-31",
++  "records": [
++    {
++      "id": "AV-PREVIEW",
++      "url": "https://www.scribd.com/document/14142047/NYC-Box-3-Neads-conr-norad-Fdr-Transcript-Neads-Channel-2-Mcc-Upside-006",
++      "form": "Public browser preview of a candidate Alderson-attributed transcript reproduction, not a custodian/native PDF",
++      "advertised_pages": 93,
++      "source_pdf_sha256": null,
++      "source_pdf_acquired": false,
++      "authenticity": "Unverified. Platform AI-enhanced title, upload information and licence do not establish historical provenance. Cover attribution establishes only what this reproduction says.",
++      "preserved_browser_representations": [
++        {
++          "bytes": 97504,
++          "sha256": "4ab7824d516cc54610ddb65901ad3448bae18160d8729256224ef1e52ed895d6",
++          "form": "Unedited browser screenshot JPEG; not native source PDF",
++          "native_filename": "cover-view.jpg"
++        },
++        {
++          "bytes": 126575,
++          "sha256": "d33e2697691520903a98885e8c13a932620119936702dcefdf2e1ddd23d3945d",
++          "form": "Unedited browser screenshot JPEG; not native source PDF",
++          "native_filename": "common-passage-view26.jpg"
++        }
++      ],
++      "web_reader_representation_sha256": "e3b3b54b49060953fcb657b56f2a0804d7279decd5ff029f0c276ef73f5ef7e5",
++      "web_reader_hash_limit": "Hash of saved tool text, not downloaded PDF, full93-page contents or native source.",
++      "exact_scope_file": "READING-SCOPE.json"
++    },
++    {
++      "id": "TR-PRIOR",
++      "url": "https://www.scribd.com/document/14142009/NYC-Box-2-NEADS-Transcript-Rome-NY-Fdr-Transcript-Pgs-1-82-1237-1417",
++      "form": "Earlier selected facsimile/text reading of another public reproduction, not a newly acquired or authenticated native PDF",
++      "advertised_pages": 82,
++      "source_pdf_sha256": null,
++      "selected_pins_sha256": "bd2690341f7cb514db16d20584acc9c25d3c8f4084289191a89b72be8c68c7c5",
++      "selected_web_representation_sha256": "17a3ef75087d8d25d030ca1f4cd5b07fa95c8f6086b825f1062b18001173b62b",
++      "pins_used": [
++        "TR03",
++        "TR04",
++        "TR05"
++      ],
++      "scope": "Printed50/NCT0000098 and62–63/NCT0000110–111. Whole82-page review not performed."
++    },
++    {
++      "id": "MC-NOTES",
++      "url": "https://www.archives.gov/files/declassification/iscap/pdf/2011-048-doc8.pdf",
++      "pages": 18,
++      "bytes": 13154124,
++      "source_pdf_sha256": "598711f6f1236a0ad30f1dbe7f9c1a2cd43507b4c12fdb18b3283e3472d1ea4e",
++      "scope_reused": "Previously full18-image reading, particularly page17 warning. Not a new source acquisition in this unit.",
++      "previous_report": "https://github.com/AveLyra/911-conspiracy-investigation/blob/6724cdda3c988831a49ad14cf0952adca43275d4/investigation/broader-evidence/neads-command-source-notes-2026-10-31/README.md"
++    },
++    {
++      "id": "MFR",
++      "url": "https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00771.pdf",
++      "catalog_url": "https://catalog.archives.gov/id/2610370",
++      "pages": 6,
++      "bytes": 724933,
++      "source_pdf_sha256": "9ffb79352ad865b540181d91e5479996747aa4b645227556e20f68b2ff011942",
++      "scope_reused": "Previously full6-image reading, particularly page3 review statement. Not a new source acquisition.",
++      "previous_report": "https://github.com/AveLyra/911-conspiracy-investigation/blob/6af556052ee0745e95151faa13294e864decdd89/investigation/broader-evidence/neads-mfr-version-crosswalk-2026-10-31/README.md"
++    }
++  ],
++  "hash_rule": "Browser JPEG/text hashes identify our preserved representations only. Source PDF hashes are reported only for the two actually acquired official PDFs. Neither hash alone authenticates historical completeness or the relationship among versions.",
++  "public_payload": "Original research notes and selected factual labels only; raw screenshots/marked pages/full speech, ancillary personal/contact/access/platform details and private case material excluded. All original files and earlier public records unchanged."
++}

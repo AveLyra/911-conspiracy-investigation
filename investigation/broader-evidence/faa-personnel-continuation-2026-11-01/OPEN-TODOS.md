@@ -1,0 +1,14 @@
+# Original records still needed
+
+Existing B129/PD01–PD04/FAA01–FAA04 and the unchanged five-track/eighteen-item plan remain controlling. No request was sent.
+
+- **1239 form /1249 number request /later scramble request:** original preparation/version records, time conventions, exact source/counterpart recordings and call-leg/receipt metadata. Establish whether references describe the same or separate acts/flights before estimating any delay. Preserve differing records without choosing a preferred value.
+- **Phone descriptor1429:** contemporaneous phone/circuit/extension/recorder-position mapping and native record that explains the parenthetical. Do not presume timestamp, usable contact number or exact source circuit. The one declared indexed query was empty; that is not a complete archive search or evidence of absence.
+- **Telcons:** invitation/bridge/line and participant records for the CF2/BOS/military instruction on208 and national-telcon direction on218. Actual joining, recipients and received content remain unverified. Full telephone/access details stay local and are not published.
+- **ATC-zero and protective actions:** original local/area/facility/ATCSCC logs, orders, receipt and actual traffic/handoff data. Preserve1305/1315labels and scope differences. No unified clock/stand-down/delay conclusion.
+- **Display and identification:** original N90/ZNY/R42/R55/D55/counterpart audio, display settings and radar/track data, strips and pilot reports. Distinguish a tracking label, direct observation, relayed report, target loss and actual impact.
+- **Statement amendments:** unamended/amended source leaves, actual change history, instructions, approvals/initials, SISO and submission/receipt records. Compare the original AEA1121instructions without assuming every mark is explained or lawfully/accurately implemented. Remaining original/copy/annotation dates are not authenticated.
+- **FAA correction and disposition:** May2003draft/edit/knowledge/approval chain, corrected answer and delivery/recipient acknowledgment; signed action/no-action/reasons; separate recommendation response, implementation and closure. The2002accident-package edits do not meet these requirements.
+- **Other tracks:** telephone carrier/operator/native exhibit joins; recorder/custody/configuration/paired outputs/clocks; materials specimen/native calibration/same-specimen joins; steel original preservation/transfer/attribution decisions. Prior performed technical tests remain within their existing scope and are not repeated or relabelled unrun.
+
+Section11in the held packet has now been visually covered. That closes a reading dependency, not an eighteen-item substantive criterion. No missing original is classified as never created, withheld, destroyed or evidence of motive solely because it is unacquired.

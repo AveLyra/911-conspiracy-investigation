@@ -1,0 +1,113 @@
+{
+  "utc": "2026-11-04T18:54:24.852117+00:00",
+  "source_sha256": "4beeea4b0e66c5fcaf68f5336ea4b76518f89c6d1cfbba6833915e359f8a4bcb",
+  "source_bytes": 815698448,
+  "source_stat_unchanged": true,
+  "parser_sha256": "22e12611b597189a0bc001ab60c66a4068448530b4ca028b7a9c752556476b5a",
+  "parser_ast_parsed": true,
+  "source_mode": "rb",
+  "source_decoded": false,
+  "new_movie_download": false,
+  "new_frames_audio_images": false,
+  "controls": [
+    {
+      "name": "variable sizes retain zero entry",
+      "expected": "accept with specified values",
+      "passed": true
+    },
+    {
+      "name": "constant sizes have no stored entries",
+      "expected": "accept with specified values",
+      "passed": true
+    },
+    {
+      "name": "stts keeps zero delta and run counts",
+      "expected": "accept with specified values",
+      "passed": true
+    },
+    {
+      "name": "truncated stsz header",
+      "expected": "reject malformed/unsupported input",
+      "passed": true,
+      "error": "truncated stsz fixed fields"
+    },
+    {
+      "name": "stsz overclaimed entries",
+      "expected": "reject malformed/unsupported input",
+      "passed": true,
+      "error": "stsz declared entries do not match payload length"
+    },
+    {
+      "name": "stsz surplus bytes",
+      "expected": "reject malformed/unsupported input",
+      "passed": true,
+      "error": "stsz declared entries do not match payload length"
+    },
+    {
+      "name": "unsupported stsz version",
+      "expected": "reject malformed/unsupported input",
+      "passed": true,
+      "error": "unsupported stsz version"
+    },
+    {
+      "name": "stts overclaimed entries",
+      "expected": "reject malformed/unsupported input",
+      "passed": true,
+      "error": "stts declared entries do not match payload length"
+    },
+    {
+      "name": "truncated atom header",
+      "expected": "reject malformed/unsupported input",
+      "passed": true,
+      "error": "truncated atom header"
+    },
+    {
+      "name": "atom exceeds parent bounds",
+      "expected": "reject malformed/unsupported input",
+      "passed": true,
+      "error": "invalid atom bounds"
+    },
+    {
+      "name": "truncated extended atom header",
+      "expected": "reject malformed/unsupported input",
+      "passed": true,
+      "error": "truncated extended atom header"
+    },
+    {
+      "name": "nested tables preserve absolute offsets",
+      "expected": "accept with specified values",
+      "passed": true
+    },
+    {
+      "name": "valid extended atom",
+      "expected": "accept with specified values",
+      "passed": true
+    },
+    {
+      "name": "size-zero atom reaches parent end",
+      "expected": "accept with specified values",
+      "passed": true
+    }
+  ],
+  "separate_read": {
+    "sample_count": 11607,
+    "positive_sizes": 11607,
+    "sum_sizes": 678996796,
+    "last_size": 57988,
+    "timing_count": 11607,
+    "timing_delta": 200,
+    "method": "int.from_bytes separate from parser struct.unpack; no decode, no full-file copy"
+  },
+  "conditional_arithmetic": {
+    "media_units": 2321400,
+    "prior_timebase": "1/2997",
+    "seconds_exact": "773800/999",
+    "seconds_float": 774.5745745745746,
+    "prior_duration": "774.506507",
+    "difference_seconds": 0.06806757457457457,
+    "native_timescale_edit_mapping_verified": false
+  },
+  "prior_failed_image_check_still_failed": true,
+  "independent_decoder": false,
+  "original_requirements_completed": []
+}

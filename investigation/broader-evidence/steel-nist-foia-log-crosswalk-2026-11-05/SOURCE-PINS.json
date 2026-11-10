@@ -1,0 +1,122 @@
+{
+  "access_date": "2026-11-05",
+  "sources": {
+    "2012_log": {
+      "url": "https://documents.theblackvault.com/documents/foia/NIST-2012.pdf",
+      "bytes": 604750,
+      "pages": 13,
+      "sha256": "a588256dcb5dc9298defbdea47ad717239857513465ad5140b3d6e53877dc82d"
+    },
+    "clipped_log": {
+      "url": "https://documents.theblackvault.com/documents/foia/NIST-2011.pdf",
+      "bytes": 1995427,
+      "pages": 15,
+      "sha256": "c84882bd30efd0a7f3f4e1ed19a1cd533c22ed24f9cef339ac0c0aaf82136064"
+    },
+    "court_opinion": {
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_15-cv-01991/pdf/USCOURTS-dcd-1_15-cv-01991-2.pdf",
+      "bytes": 309192,
+      "pages": 47,
+      "sha256": "8103ef8e1c9c3f433b2fa63fa71a7451f851373b67015154bf96e99233e2341a"
+    }
+  },
+  "text_check_method": "One-based PDF page and one-based line from PyMuPDF page.get_text(sort=True).splitlines(). Text extraction is distinct from visual comparison.",
+  "text_checks": [
+    {
+      "source": "2012_log",
+      "page": 2,
+      "line": 17,
+      "expected_substring": "DOC-NIST-2013-000444"
+    },
+    {
+      "source": "2012_log",
+      "page": 5,
+      "line": 31,
+      "expected_substring": "WTC - Inventory of all WTCI records"
+    },
+    {
+      "source": "2012_log",
+      "page": 9,
+      "line": 23,
+      "expected_substring": "DOC-NIST-2012-000491"
+    },
+    {
+      "source": "2012_log",
+      "page": 9,
+      "line": 23,
+      "expected_substring": "WTCI-93"
+    },
+    {
+      "source": "2012_log",
+      "page": 9,
+      "line": 36,
+      "expected_substring": "DOC-NIST-2012-000495"
+    },
+    {
+      "source": "2012_log",
+      "page": 10,
+      "line": 13,
+      "expected_substring": "FOIA #12-090"
+    },
+    {
+      "source": "2012_log",
+      "page": 10,
+      "line": 19,
+      "expected_substring": "WTCI-#134"
+    },
+    {
+      "source": "2012_log",
+      "page": 10,
+      "line": 20,
+      "expected_substring": "DOC-NIST-2012-000511"
+    },
+    {
+      "source": "2012_log",
+      "page": 10,
+      "line": 21,
+      "expected_substring": "#142, WTCI-#149 & WTCI-#150"
+    },
+    {
+      "source": "2012_log",
+      "page": 10,
+      "line": 28,
+      "expected_substring": "DOC-NIST-2012-000513"
+    },
+    {
+      "source": "clipped_log",
+      "page": 14,
+      "line": 20,
+      "expected_substring": "WTCI-93"
+    },
+    {
+      "source": "clipped_log",
+      "page": 15,
+      "line": 1,
+      "expected_substring": "WTCI-111"
+    },
+    {
+      "source": "clipped_log",
+      "page": 15,
+      "line": 2,
+      "expected_substring": "WTCI-#142, WTCI-#149 & WTCI\u00b7"
+    },
+    {
+      "source": "court_opinion",
+      "page": 9,
+      "line": 7,
+      "expected_substring": "1,312 files in full"
+    },
+    {
+      "source": "court_opinion",
+      "page": 29,
+      "line": 12,
+      "expected_substring": "WTCI-143-I"
+    },
+    {
+      "source": "court_opinion",
+      "page": 29,
+      "line": 19,
+      "expected_substring": "WTCI-134-I"
+    }
+  ]
+}

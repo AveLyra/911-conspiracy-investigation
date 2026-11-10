@@ -1,0 +1,103 @@
+--- publication/OBSERVATIONS.json
++++ publication-v2/OBSERVATIONS.json
+@@ -21,7 +21,7 @@
+       "kind": "recorded_motion_and_rollcall",
+       "locator": "p9 continuation",
+       "resolution_visible": "11-049",
+-      "agreement_visible": "AG11-013",
++      "agreement_visible": "AG 11-013",
+       "yes": 4,
+       "no": 0,
+       "abstain": 0,
+@@ -40,9 +40,9 @@
+       "visible_labels": [
+         "I-0094",
+         "11-049",
+-        "AG11-013"
++        "AG 11-013"
+       ],
+-      "scope": "Different recorded/extracted representations retained; not new physical evidence or a historical anomaly."
++      "scope": "Extracted spacing and visible labels are both retained; no physical join or historical alteration is established."
+     },
+     {
+       "id": "DIX05",
+--- publication/OPEN-TODOS.json
++++ publication-v2/OPEN-TODOS.json
+@@ -10,20 +10,20 @@
+   ],
+   "items": [
+     {
+-      "reference": "Resolution11-049 / AG11-013",
++      "reference": "Resolution 11-049 / AG 11-013",
+       "holder": "City of Dixon City Clerk / municipal agreement records",
+       "needed": "Actual resolution, executed agreement, signatures, approved attachments, amendments and certification/approval record.",
+       "test": "Distinguish recorded vote and authorization from operative execution and its conditions."
+     },
+     {
+-      "reference": "I-0094 / January31,2007ArtifactInventoryReport",
+-      "holder": "PortAuthorityWTCArtifacts records and city attachment file",
++      "reference": "I-0094 / January 31, 2007 Artifact Inventory Report",
++      "holder": "Port Authority WTC Artifacts records and city attachment file",
+       "needed": "Original item row/photograph/marking and selection/release/court authority.",
+       "test": "Join exact object identifiers; no appearance-only, WTC7 or NIST specimen assumption."
+     },
+     {
+       "reference": "I-0094 dispatch and receipt",
+-      "holder": "PortAuthority and CityofDixonFireDepartment transfer/property records",
++      "holder": "Port Authority and City of Dixon Fire Department transfer/property records",
+       "needed": "Release, packing, shipping, signed receipt, condition and any cutting/treatment/custody entries.",
+       "test": "Trace physical item across authorizedtransfer, actualmovement and currentcustody, retaining uncertain aliases."
+     },
+@@ -35,6 +35,6 @@
+     }
+   ],
+   "status": "Open; no outreach/request/fee/submission",
+-  "all_eighteen_original_requirements": "open_or_partial; none newly closed",
++  "all_eighteen_original_requirements": "Open or partial; none newly closed.",
+   "prior_BH_Smithsonian_FBI_Clearwater_attribution_telephone_and_FAA_TODOs": "preserved; no resolution by this city source"
+ }
+--- publication/READING-SCOPE.json
++++ publication-v2/READING-SCOPE.json
+@@ -6,9 +6,9 @@
+     9
+   ],
+   "render_dpi": 144,
+-  "text_extraction_scope": "selected pages1/8/9 only using pypdf3.13environment; no OCR",
++  "text_extraction_scope": "Selected pages 1, 8 and 9 only, using pypdf 6.10.0 under Python 3.13.7; no OCR.",
+   "other_faces_visually_read": false,
+-  "relevant_record_boundary": "item12.3 p8throughp9 motion/rollcall beforesection13",
++  "relevant_record_boundary": "Item 12.3, page 8 through the continuing motion/roll call on page 9 before section 13.",
+   "unrelated_agenda_items": "visible as page context, not adopted/published as findings",
+   "source_count": 1,
+   "actual_new_signed_transfer_or_receipt_or_testing_report": false,
+@@ -17,7 +17,7 @@
+     "site:dixon-ca.granicus.com \"11-049\"",
+     "\"Dixon\" \"AG 11-013\""
+   ],
+-  "followup_scope": "Returned same minutes and unrelated item; no additional source opened/acquired. No global nonexistence inference.",
++  "followup_scope": "The two exact identifier queries returned this same minutes source and an unrelated item. No additional body was opened or acquired; no global absence claim.",
+   "no_physical_chemical_failure_clock_or_custody_test": true,
+   "technical_owner_work_not_duplicated": true
+ }
+--- publication/VERIFICATION.json
++++ publication-v2/VERIFICATION.json
+@@ -9,7 +9,7 @@
+   ],
+   "exact_text_locators_matched": 6,
+   "all_checks_passed": true,
+-  "manual_reading_scope": "Full visible faces1/8/9 were separately reviewed at144dpi; this script does not prove that review, vote authenticity, signed agreement, custody or actual testing.",
+-  "representation_note": "Source extraction stores11- 049andAG11 -013spacing; visible page9 records11-049andAG11-013. Both representations retained; sourcebytes unchanged.",
++  "manual_reading_scope": "Full visible faces 1, 8 and 9 were separately reviewed at 144 dpi. This script does not prove that review, vote authenticity, signed agreement, custody or actual testing.",
++  "representation_note": "Plain extraction includes 11- 049 and AG 11 -013; visible page 9 shows 11-049 and AG 11-013. Both representations are retained and source bytes are unchanged.",
+   "historical_test_or_agreement_execution_verified": false
+ }
+--- publication/verify_source.py
++++ publication-v2/verify_source.py
+@@ -9,6 +9,6 @@
+  t={n:r.pages[n-1].extract_text() for n in [1,8,9]}
+  assertions=[(1,'APRIL 26, 2011'),(8,'January 31, 2007'),(8,'I-0094'),(8,'available for testing purposes in the future, if requested.'),(9,'11- 049'),(9,'AG 11 -013')]
+  for page,token in assertions:assert token in t[page],(page,token)
+- return {'source_sha256':EXPECTED,'source_bytes':len(b),'PDF_pages':len(r.pages),'selected_physical_pages':[1,8,9],'exact_text_locators_matched':len(assertions),'all_checks_passed':True,'manual_reading_scope':'Full visible faces1/8/9 were separately reviewed at144dpi; this script does not prove that review, vote authenticity, signed agreement, custody or actual testing.','representation_note':'Source extraction stores11- 049andAG11 -013spacing; visible page9 records11-049andAG11-013. Both representations retained; sourcebytes unchanged.','historical_test_or_agreement_execution_verified':False}
++ return {'source_sha256':EXPECTED,'source_bytes':len(b),'PDF_pages':len(r.pages),'selected_physical_pages':[1,8,9],'exact_text_locators_matched':len(assertions),'all_checks_passed':True,'manual_reading_scope':'Full visible faces 1, 8 and 9 were separately reviewed at 144 dpi. This script does not prove that review, vote authenticity, signed agreement, custody or actual testing.','representation_note':'Plain extraction includes 11- 049 and AG 11 -013; visible page 9 shows 11-049 and AG 11-013. Both representations are retained and source bytes are unchanged.','historical_test_or_agreement_execution_verified':False}
+ if __name__=='__main__':
+  a=argparse.ArgumentParser();a.add_argument('--source',required=True);args=a.parse_args();print(json.dumps(verify(args.source),indent=2))

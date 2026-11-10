@@ -1,0 +1,329 @@
+--- /dev/null
++++ b/investigation/broader-evidence/faa-directive-crosswalk-2026-10-29/CROSSWALK.json
+@@ -0,0 +1,127 @@
++{
++  "existing_claim_task_keys": [
++    "B129",
++    "PD01",
++    "PD02",
++    "PD03",
++    "PD04"
++  ],
++  "rows": [
++    {
++      "key": "PD04/table-implementation",
++      "kind": "source observation",
++      "source": "FAA-2001-CHECKLIST",
++      "locator": "physical 4 / printed 4, Figure 1, row beginning 8000.1 c",
++      "displayed_values": {
++        "DOT": "8000.1 c",
++        "FAA": "2900.1",
++        "OPR": "ABU-130",
++        "Date Implemented": "7/5/85"
++      },
++      "limit": "Index relationship; not operative text or governing-case edition.",
++      "report_line": 9
++    },
++    {
++      "key": "PD04/current-list",
++      "kind": "source observation",
++      "source": "FAA-2001-CHECKLIST",
++      "locator": "physical 28 / printed 22, Appendix 1, 2900.1 row",
++      "displayed_values": {
++        "FAA": "2900.1",
++        "Title": "AUDIT FOLLOWUP",
++        "OPR": "ABU-100",
++        "Issue Date": "7/5/85",
++        "Reval Date": "12/31/01"
++      },
++      "limit": "Keep code and date fields distinct; no expiry or parent/subunit resolution.",
++      "report_line": 10
++    },
++    {
++      "key": "PD04/companion-links",
++      "kind": "source observation",
++      "source": "FAA-2001-CHECKLIST",
++      "locator": "physical 4 / printed 4, Figure 1, rows beginning 8000.4 and 8000.6A",
++      "displayed_values": [
++        {
++          "DOT": "8000.4",
++          "FAA": "2970.3",
++          "OPR": "ABU-130",
++          "Date Implemented": "7/17/84"
++        },
++        {
++          "DOT": "8000.6A",
++          "FAA": "2970.3",
++          "OPR": "ABU-130",
++          "Date Implemented": "7/18/84"
++        }
++      ],
++      "limit": "Do not infer unseen directives contents or silently reconcile dates.",
++      "report_line": 11
++    },
++    {
++      "key": "PD04/purpose",
++      "kind": "source observation",
++      "source": "FAA-AUDIT-ORDER",
++      "locator": "physical 1, paragraph 1",
++      "displayed_values": {
++        "DOT_reference": "8000.1A",
++        "scope": "Chapter I, Audits",
++        "exception": "matters relating to audit followup",
++        "order_date": "7/17/84"
++      },
++      "limit": "Older purpose language is retained beside later checklist, not replaced.",
++      "report_line": 12
++    },
++    {
++      "key": "PD04/routing-record",
++      "kind": "source observation plus acquisition lead",
++      "source": "FAA-2001-CHECKLIST",
++      "locator": "physical 2 / printed 2, paragraph 7",
++      "record_target": "Completed FAA Form 1320-6 / Directives Issuance Record / action code 2 for routing-symbol changes",
++      "limit": "Generic procedure does not prove this particular completed form exists or survives.",
++      "report_line": 19
++    },
++    {
++      "key": "PD04/reference-custody",
++      "kind": "source observation plus acquisition lead",
++      "source": "FAA-2001-CHECKLIST",
++      "locator": "physical 2 / printed 2, paragraph 9",
++      "record_target": "Historical APF-100 microfiche reference set, warehouse copy record, successor transfer/accession and OPR counterpart",
++      "limit": "Not a verified current custodian; no outreach or surviving collection assumed.",
++      "report_line": 21
++    },
++    {
++      "key": "PD04/date-qualification",
++      "kind": "source observation",
++      "source": "FAA-2001-CHECKLIST",
++      "locator": "physical 1 paragraph 4(a); physical 2 paragraph 10",
++      "record_target": "Underlying issue-date entries and conversion/change history",
++      "limit": "General first-day issue-date conversion warning is not proven cause of selected non-first-day, implementation or revalidation entries.",
++      "report_line": 23
++    },
++    {
++      "key": "PD04/DOT-cover",
++      "kind": "earlier source observation reused",
++      "source": "DOT-8000-1C-HELD",
++      "locator": "physical 1 cover, earlier full-order reading",
++      "displayed_values": {
++        "date": "7-20-89",
++        "cancelled": "8000.1B, October 30, 1984"
++      },
++      "limit": "Not newly reread; preserve separately from 1985 implementation table date.",
++      "report_line": 13
++    }
++  ],
++  "unresolved": [
++    "ABU-130 / ABU-100 relationship",
++    "1985 date implemented / 1989 DOT cover relationship",
++    "actual operative policy scope and 2006 applicability"
++  ],
++  "interpretations_not_selected": [
++    "different office granularity",
++    "routing update timing",
++    "inherited implementation date",
++    "stale index or later amendment",
++    "different investigation routing"
++  ]
++}
+--- /dev/null
++++ b/investigation/broader-evidence/faa-directive-crosswalk-2026-10-29/OPEN-TODOS.json
+@@ -0,0 +1,26 @@
++{
++  "PD01": {
++    "status": "TODO",
++    "missing": "Actual corrected May 22, 2003 QFR, outgoing copy/attachments, delivery and recipient acknowledgment.",
++    "test": "Distinguish assigned/attempted correction from actual delivered version."
++  },
++  "PD02": {
++    "status": "TODO",
++    "missing": "Signed consideration/action/no-action decision, reasons, approval, date and notification.",
++    "test": "Distinguish reasoned disposition from recommendation, press statement or generic policy."
++  },
++  "PD03": {
++    "status": "TODO",
++    "missing": "Case-specific investigation follow-up/resolution, recommendation-response, implementation and closing-action history; crosswalk CC-2006-085 and 042R0122001.",
++    "test": "Keep investigation closure, recommendation implementation, correction and personnel action distinct."
++  },
++  "PD04": {
++    "status": "TODO_PARTIAL_SOURCE_ROUTE_ADVANCE",
++    "now_source_pinned": "2001 Figure 1 implementation link, different listed OPR codes, paragraph 7 Form 1320-6 route and paragraph 9 historical reference-set custody.",
++    "missing": "Actual FAA 2900.1 text/edition/changes; completed relevant directives issuance records; effective/supersession history; office succession and actual case classification/routing.",
++    "next_route": "A separately identified completed 1320-6 entry or historical DMIS/issuance manifest and microfiche transfer/accession counterpart, rather than repeating the same checklist search.",
++    "acceptance": "Authenticated or qualified operative text/history and case-specific assignment; generic table alone does not satisfy it."
++  },
++  "other_requirements": "Original 18 input requirements and all five substantive work-plan tracks remain unchanged. Recorder/materials technical work remains with its existing owner; no new owner result or audit endorsement is claimed.",
++  "outreach": "None authorized/performed. Missing records are individual TODOs, not proof of nonexistence, withholding or motive."
++}
+--- /dev/null
++++ b/investigation/broader-evidence/faa-directive-crosswalk-2026-10-29/README.md
+@@ -0,0 +1,39 @@
++# FAA follow-up policy: an implementation link and a specific office-history record
++
++October 29, 2026. Existing **B129 / PD01–PD04**. A newly inspected passage in an already held official FAA checklist directly links **DOT 8000.1C → FAA 2900.1**. It also points to **FAA Form 1320-6, Directives Issuance Record**, for changes in responsible-office routing. These are concrete version/custodian retrieval leads. The actual 2900.1 text, case-specific correction/receipt and administrative disposition remain missing.
++
++## Values preserved side by side
++
++| Source and exact locator | What it records | Limits |
++| --- | --- | --- |
++| [FAA WA 0000.5E, physical/printed p. 4, Figure 1, row beginning 8000.1](https://www.faa.gov/documentLibrary/media/Order/0000.5E.pdf#page=4) | DOT directive **8000.1 c**; implementing FAA directive **2900.1**; OPR **ABU-130**; date implemented **7/5/85**. | A listed implementation relationship, not the implementing directive's operative text, chapter coverage or proof of 2006 case applicability. The displayed lowercase c is preserved. |
++| [Same checklist, physical p. 28 / printed p. 22, Appendix 1, 2900.1 row](https://www.faa.gov/documentLibrary/media/Order/0000.5E.pdf#page=28) | **2900.1**, Audit Followup; OPR **ABU-100**; issue date **7/5/85**; revalidation date **12/31/01**. | The two OPR codes are different displayed values. An organizational parent/subunit relationship, update timing or another convention could account for them; none has been established here. A listed revalidation date is not treated as an expiration or proof of revalidation. |
++| [Same checklist, physical/printed p. 4, Figure 1, last three relevant rows](https://www.faa.gov/documentLibrary/media/Order/0000.5E.pdf#page=4) | **8000.4 → 2970.3**, ABU-130, **7/17/84**; **8000.6A → 2970.3**, ABU-130, **7/18/84**. | These are table labels and separate dates. Do not silently replace either date or infer the two DOT directives' contents from their numbers. |
++| [FAA 2970.3, physical p. 1, purpose clause](https://www.faa.gov/documentLibrary/media/Order/FAA_Order_2970.3.pdf#page=1) | The July 17, 1984 order implements **DOT 8000.1A, Chapter I, Audits**, except matters relating to audit followup. | This original purpose clause and the later checklist's implementation links answer different questions. The old text is not rewritten to say 1C, and audit provisions are not automatically applied to an investigation. |
++| [Held DOT 8000.1C cover, physical p. 1](https://github.com/AveLyra/911-conspiracy-investigation/blob/c4207143c4f0e1069991162ec8b2a398f11d5cb6/investigation/broader-evidence/faa-investigation-followup-order-2026-10-28/sources/DOT-8000-1C-1989-archived-20241030.pdf) | Dated **7-20-89**; cancels 8000.1B dated October 30, 1984, as recorded in the earlier full-order review. | Reused earlier cover reading, not newly reread here. The checklist's 1985 implementation date therefore must not be substituted for the 1989 cover date or treated as proof when 1C's specific wording took effect in FAA. |
++
++The earlier [full investigation-order review](https://github.com/AveLyra/911-conspiracy-investigation/blob/c4207143c4f0e1069991162ec8b2a398f11d5cb6/investigation/broader-evidence/faa-investigation-followup-order-2026-10-28/README.md) remains unchanged. Its Chapter II notification/reasons and resolution leads remain useful, but case applicability is still unverified. This new crosswalk narrows the next source target; it does not supply the missing policy or adjudicate which edition controlled.
++
++## What to retrieve next
++
++[Checklist physical/printed p. 2, paragraph 7](https://www.faa.gov/documentLibrary/media/Order/0000.5E.pdf#page=2) instructs the Directives Management Officer to submit an **action code 2 on FAA Form 1320-6, Directives Issuance Record**, identifying the appropriate OPR when a routing symbol changes. Seek completed issuance/change records for 2900.1 and 2970.3, plus their version/transmittal/supersession history and the organizational crosswalk. The provision identifies a record type; it does not establish that a particular completed form exists, survives or contains a case assignment.
++
++Paragraph 9 identifies a historical **APF-100 microfiche reference set**, a DOT Warehouse copy route and the directive's OPR as an additional route. These are 2001 custody leads, not verified present-day offices, holdings or contact instructions. No contact was made. Seek a transfer/accession or successor-custodian record before assuming the reference set still survives there.
++
++Paragraphs 4(a) on p. 1 and 10 on p. 2 warn that the older database stored month/year and conversion defaulted issue dates to the first day of the month. That is an explicit general metadata limitation. It does not explain these particular 7/5/85, 7/17/84 or 7/18/84 entries, and it is not applied to the separate date-implemented or revalidation fields as a proven cause. The displayed dates remain unchanged.
++
++## Interpretation and contrary possibilities
++
++The strongest supported inference is procedural: the missing implementation and office-change records can be sought by a specific directive number and form, rather than by a vague request for all FAA policies. The lookup materially advances **PD04's source route**, not PD01–PD03's case outcomes.
++
++Different office levels, inherited implementation dates, later amendments, a stale table or different case routing are untested possibilities. The checklist does not select among them. Nor does a difference between an old order's purpose clause and a later index establish concealment, falsification, an unlawful deadline breach or failure to consider discipline. Conversely, obtaining the actual directive, change records and case assignment could demonstrate an applicable duty and identify the correct repository for testing compliance. Neither result is assumed.
++
++**Still TODO:** PD01 corrected May 22, 2003 QFR and delivery/recipient acknowledgment; PD02 signed consideration/action/no-action, reasons and notification; PD03 actual investigation follow-up/resolution/implementation/closure record; PD04 operative 2900.1 text/edition, relevant changes, investigation-versus-audit scope and case-specific routing. Investigation closure, recommendation resolution, correction delivery and personnel action remain separate outcomes. Recommendations 1–2 are not merged with recommendations 3–4. All five work-plan tracks and their original missing-input/test criteria remain open.
++
++## Actual scope and preservation
++
++The checklist was already acquired October 27; **no new original PDF was acquired in this unit**. Newly inspected checklist pages were physical **1, 2, 4 and 28**, plus the held 2970.3 physical page **1**. Figure 1's relevant rows and the listed clauses were visually checked. This is five page images across two PDFs, not a new reading of all 100 checklist pages or all ten order pages. The 8000.1C cover and investigation chapter are reused from the prior review. Two preserved-source SHA-256 and page-count checks passed; originals, prior reports, dates, codes and conflicting records remain unchanged. No OCR, hidden-text reconstruction or native authoring authentication was performed. An adjacent-page renderer emitted a font-configuration warning; the returned raster was visually inspected and the relevant text was legible.
++
++[SOURCES.json](SOURCES.json) preserves source URLs, original access times, hashes, page counts and reading limits. [CROSSWALK.json](CROSSWALK.json) supplies exact source/report locators and observation-versus-inference status. [OPEN-TODOS.json](OPEN-TODOS.json) retains all four FAA priorities and the specific new route. [REVIEW-AND-CHECKS.json](REVIEW-AND-CHECKS.json) records the point-by-point review and unchanged predecessors. [TEXT-CHANGES.diff](TEXT-CHANGES.diff) is the exact addition diff for these research notes, not a source-PDF or native-policy comparison.
++
++Only reviewed original research notes are in this public addition. Raw PDFs, rasters, extracted text, signatures, contact details, case correspondence and private strategy are excluded. No outreach, new request, fee, filing, mailbox access, private push, source alteration, deletion, merge or history rewrite is authorized or performed by this source review.
+--- /dev/null
++++ b/investigation/broader-evidence/faa-directive-crosswalk-2026-10-29/REVIEW-AND-CHECKS.json
+@@ -0,0 +1,74 @@
++{
++  "review_utc": "2026-10-29T17:51:17.837110+00:00",
++  "checklist": [
++    {
++      "point": "Pursue original-record plan without treating prior publication verification as research progress",
++      "outcome": "New held-source passage and exact missing record/form/custodian route inspected; no original outcome acquired.",
++      "location": "README.md; CROSSWALK.json"
++    },
++    {
++      "point": "Preserve source links, conflicting values and original dates",
++      "outcome": "8000.1A/c, ABU-100/130 and dates remain separately identified with page/row locators.",
++      "location": "README.md table; SOURCES.json; CROSSWALK.json"
++    },
++    {
++      "point": "Test assumptions and retain contrary explanations",
++      "outcome": "No policy applicability, expiry, office-hierarchy, cause or misconduct adjudication; migration warning and competing explanations retained.",
++      "location": "README.md interpretation and paragraph on dates"
++    },
++    {
++      "point": "Carry missing inputs forward",
++      "outcome": "PD01–PD04 and all five tracks/original 18 input criteria remain open.",
++      "location": "OPEN-TODOS.json"
++    },
++    {
++      "point": "Do not duplicate technical owners",
++      "outcome": "Existing owner state consulted; no new recorder/materials result or endorsement assumed.",
++      "location": "OPEN-TODOS.json"
++    },
++    {
++      "point": "Exact revision diff and unchanged status",
++      "outcome": "Additive notes and exact text addition diff; predecessor hashes retained below.",
++      "location": "TEXT-CHANGES.diff"
++    },
++    {
++      "point": "Public eligibility",
++      "outcome": "Only original research notes and minimal source metadata; no raw scans/OCR/rasters, signatures, personal/contact data, private correspondence, credentials or strategy.",
++      "location": "All six candidate files"
++    },
++    {
++      "point": "Publication verification",
++      "outcome": "Pending actual commit/push/remote receipt; not declared complete by this checklist.",
++      "location": "Local publication receipt after remote verification"
++    }
++  ],
++  "source_checks": {
++    "two_source_hashes_and_page_counts": "Passed against earlier acquisition manifests",
++    "visual_reading": "Five actual page images; newly inspected clauses versus reused source facts distinguished.",
++    "render_warning": "One adjacent-page render emitted font-configuration warning; legibility visually inspected.",
++    "native_authoring_authentication": false,
++    "case_specific_original_acquired": false,
++    "historical_conclusion_or_test_completed": false
++  },
++  "unchanged_predecessors": [
++    {
++      "name": "faa-postreport-disposition-2026-10-27/public-release-v2/README.md",
++      "bytes": 7880,
++      "sha256": "5ce843aec08f3506bae449d244d0e15fee8d187d318f1afe47af247c8e3a848d",
++      "status": "Unchanged predecessor; not overwritten or replaced."
++    },
++    {
++      "name": "faa-corrected-qfr-recipient-2026-10-28/publication/README.md",
++      "bytes": 8296,
++      "sha256": "4b99c38ed1dde39db92aded54e4e4ae00af3df2fb8df9d8fbe40f2220c1ca894",
++      "status": "Unchanged predecessor; not overwritten or replaced."
++    },
++    {
++      "name": "original-records-work-plan-2026-10-27/WORK-PLAN.md",
++      "bytes": 18257,
++      "sha256": "b8511383fb40878bdcfc094adff12c9eda2ce9cc17e514adf6d129ebd7c80659",
++      "status": "Unchanged predecessor; not overwritten or replaced."
++    }
++  ],
++  "diff_scope": "Exact /dev/null additions of five notes; excludes diff itself to avoid recursion. Not a PDF/source text diff."
++}
+--- /dev/null
++++ b/investigation/broader-evidence/faa-directive-crosswalk-2026-10-29/SOURCES.json
+@@ -0,0 +1,48 @@
++{
++  "review_date_utc": "2026-10-29T17:51:17.837110+00:00",
++  "classification": "Held official scans and an archived official scan; no native authoring, operative case-version or outcome authentication.",
++  "sources": [
++    {
++      "id": "FAA-AUDIT-ORDER",
++      "url": "https://www.faa.gov/documentLibrary/media/Order/FAA_Order_2970.3.pdf",
++      "accessed_utc": "2026-10-27T12:49:42.425368+00:00",
++      "bytes": 1954823,
++      "sha256": "adba1bba6ba71071c7f049be4d95bff5ad493442dfc83a4d38339c642eeee3de",
++      "physical_pages": 10,
++      "new_acquisition_in_this_unit": false,
++      "current_visual_reading_physical_pages": [
++        1
++      ]
++    },
++    {
++      "id": "FAA-2001-CHECKLIST",
++      "url": "https://www.faa.gov/documentLibrary/media/Order/0000.5E.pdf",
++      "accessed_utc": "2026-10-27T12:49:42.416849+00:00",
++      "bytes": 4907685,
++      "sha256": "2c5d49e836f845082b88d5e621e6293fd1bf719b4a9bb8873a6823d0b4d8fd3f",
++      "physical_pages": 100,
++      "new_acquisition_in_this_unit": false,
++      "current_visual_reading_physical_pages": [
++        1,
++        2,
++        4,
++        28
++      ]
++    },
++    {
++      "id": "DOT-8000-1C-HELD",
++      "url": "https://www.transportation.gov/sites/dot.gov/files/docs/dotorders/DOT8000.1C_Office%20of%20Inspector%20General%20Audit%20and%20Investigation%20Report%20Findings%2C%20Recommendations%2C%20and%20Followup%20Action_20-Jul-89.pdf",
++      "archive_url": "https://web.archive.org/web/20241030203137id_/https://www.transportation.gov/sites/dot.gov/files/docs/dotorders/DOT8000.1C_Office%20of%20Inspector%20General%20Audit%20and%20Investigation%20Report%20Findings%2C%20Recommendations%2C%20and%20Followup%20Action_20-Jul-89.pdf",
++      "accessed_utc": "2026-10-28T06:07:50.352102+00:00",
++      "bytes": 1679636,
++      "sha256": "0cba3b06ea5bfd3a665d0f9de587a8ad9fe33df88b56b680f3084ac497679113",
++      "physical_pages": 15,
++      "new_acquisition_in_this_unit": false,
++      "current_visual_reading_physical_pages": [],
++      "reading_reuse": "Earlier full-order review; cover facts reused, not newly reread or rehashed in this unit."
++    }
++  ],
++  "new_original_PDF_acquisitions": 0,
++  "visual_pages_this_unit": 5,
++  "preserved_source_hashes_rechecked_this_unit": 2
++}

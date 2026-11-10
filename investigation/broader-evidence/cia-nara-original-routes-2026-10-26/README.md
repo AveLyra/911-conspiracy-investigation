@@ -1,0 +1,11 @@
+# CIA records: fourteen NARA routes and two certification copies
+
+This continuation located fourteen specific file-unit IDs in the three identified NARA series. It did **not** recover the January 2000 draft, hold instruction, SCALEC 134684 or actual FBI receipt. Each inspected file-unit page lists paper copies and says **Not Yet Available Online**. Its generic restriction heading is not an item-specific withholding determination. [Route ledger](ROUTES.json).
+
+A public index led to readable mirror copies of the CIA’s June 29, 2004 certification (packet pages 8–9) and the FBI’s June 24, 2004 certification (pages 12–13). Both complete letters were visually inspected. They assert reasonable search steps and production or review access for responsive records located. The CIA continuation identifies EOP-related records sent to EOP for handling under a June 17 letter. [Copy observations and page links](COMPLIANCE-COPIES.json).
+
+These documents add contemporary, qualified assurances and specific follow-up targets: the Commission’s June 10 request, the CIA’s June 17 letter/list, and production indexes. They do not establish whether the draft was requested, omitted, known to be omitted or deliberately concealed. A 2004 production certification does not establish CIA-to-FBI delivery before 9/11. The copies’ custody, signatures and equivalence to NARA file unit 2604750 remain unauthenticated. No PDF download, signup or trial was used. Screenshot hashes identify retained derivatives; the images are excluded here.
+
+[Methods, coverage, failures and remaining originals](RETRIEVAL.json). Earlier [CIA verification](../cia-lead-verification-2026-10-26/) and [original-record continuation](../cia-originals-continuation-2026-10-26/) remain preserved. Catalog associations are not acquired folder contents. Access errors and unsuccessful searches do not prove absence, destruction or concealment. Repeating an agency account through a mirror, index and review does not create independent confirmation.
+
+This four-file supplement excludes source attachments, screenshots, raw browser/session records, private case data, correspondence, strategy, credentials, local paths and unrelated planning research. No outreach, fees or legal-record promotion occurred. Publication does not complete the historical audits or the sixteen-task goal.

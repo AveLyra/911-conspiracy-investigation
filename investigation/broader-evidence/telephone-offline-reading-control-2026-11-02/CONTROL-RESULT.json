@@ -1,0 +1,121 @@
+{
+  "kind": "Synthetic method-control failure; no 9/11 speech was transcribed",
+  "started_utc": "2026-11-02T17:42:39.185419+00:00",
+  "finished_utc": "2026-11-02T17:42:56.322122+00:00",
+  "synthetic_input": {
+    "wav_fields": {
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "sample_rate": 16000,
+      "frames": 160000
+    },
+    "duration_seconds": 10.0,
+    "pcm_bytes": 320000,
+    "all_pcm_bytes_zero": true,
+    "pcm_sha256": "ac2878215ad33205d1732578c89f25ededaad1b676911c540825bcf4baa42d9b",
+    "wav_bytes": 320044,
+    "wav_sha256": "ee7bea4232762775f8fce9b3e27e4d3948c8ac6a45a87ca769f703d6eed0b448"
+  },
+  "engine": {
+    "project": "whisper.cpp",
+    "version": "1.9.2",
+    "binary_sha256": "40bca494d49af736058eb3f33cbcebaa020eacf6d0087b623f334946e1ab2128",
+    "mode": "CPU only",
+    "threads": 4,
+    "processors": 1,
+    "language": "en",
+    "temperature": 0,
+    "temperature_fallback": false,
+    "initial_prompt_grammar_vad_translation": false,
+    "python": "3.12.14",
+    "model_name": "base.en",
+    "model_bytes": 147964211,
+    "model_sha256": "a03779c86df3323075f5e796cb2ce5029f00ec8869eee3fdfb897afe36c6d002"
+  },
+  "executed_argument_template": [
+    "ENGINE",
+    "-ng",
+    "-m",
+    "MODEL",
+    "-f",
+    "ZERO_WAV",
+    "-l",
+    "en",
+    "-t",
+    "4",
+    "-p",
+    "1",
+    "-tp",
+    "0",
+    "-nf",
+    "-ojf",
+    "-otxt",
+    "-osrt",
+    "-of",
+    "OUTPUT_PREFIX"
+  ],
+  "network_profile": "(version 1)(allow default)(deny network*)",
+  "network_permission_probe": {
+    "errno": 1,
+    "denied": true
+  },
+  "inference": {
+    "exit_code": 0,
+    "walltime_seconds": 2.512489457963966,
+    "status": "completed",
+    "walltime_limit_seconds": 300
+  },
+  "observed_selected_machine_output": "You",
+  "machine_text_bytes": 4,
+  "machine_text_sha256": "94c98a922f962b07781367193e8556b3a556801c2270bb6a16027bc83563233a",
+  "frozen_control_acceptance": "Empty stripped text only; any nonempty result stops the planned speech passes without tuning or retry.",
+  "control_result": "FAILED",
+  "court_speech_inputs_processed": 0,
+  "court_speech_readings": null,
+  "source_model_engine_unchanged_after": true,
+  "held_source_preflight_only": {
+    "url": "https://coop.vaed.uscourts.gov/moussaoui/flights.zip",
+    "sha256_before_and_after": "3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801",
+    "meaning": "Held court archive hashed only. Ong payload extraction, decoding and inference were not reached after control failure."
+  },
+  "raw_control_outputs": [
+    {
+      "bytes": 1647,
+      "sha256": "adae7a0f30f50daa0ebe19e11276dd395a06153ec935960c48f6092553659b50",
+      "name": "reading.json"
+    },
+    {
+      "bytes": 38,
+      "sha256": "ba4a037ca7c43c6370573729761941e6cd1dc3b6ad1392ff338217570361b9a9",
+      "name": "reading.srt"
+    },
+    {
+      "bytes": 4,
+      "sha256": "94c98a922f962b07781367193e8556b3a556801c2270bb6a16027bc83563233a",
+      "name": "reading.txt"
+    },
+    {
+      "bytes": 6556,
+      "sha256": "f134999054d3d7a5c650050bd8c37f3fbec620d42d2c5a2472420c41721f7da6",
+      "name": "stderr.log"
+    },
+    {
+      "bytes": 39,
+      "sha256": "529ca25f5d5bbf55f45d68a29322de2700f9beedbc7609d32a3a95a73a92cd60",
+      "name": "stdout.log"
+    }
+  ],
+  "evidentiary_limit": "One observed false word from synthetic silence is not a general error rate, independent speech reading, evidence about the call or an adjudication of any printed conflict. A different platform or configuration may differ. No source audio or model uploaded.",
+  "runtime_model_provenance": {
+    "public_pinned_url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-base.en.bin",
+    "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+    "prior_acquisition_utc": "2026-11-01T04:06:17.322561+00:00",
+    "model_is_runtime_data_not_case_evidence": true,
+    "new_acquisition_this_probe": false
+  },
+  "platform_observed_after_run": {
+    "system": "Darwin",
+    "release": "27.0.0",
+    "machine": "arm64"
+  }
+}
