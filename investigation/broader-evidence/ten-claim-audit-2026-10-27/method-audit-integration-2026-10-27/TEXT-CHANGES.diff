@@ -1,0 +1,1128 @@
+Predecessor: REVIEW.json at1229c07b033394c0e50907a9edf3fe8fc22aec3e. Actual Git no-index text diffs; only header labels normalized. Original frozen sources unchanged; layout/source inspection is separate.
+
+diff --git a/REVIEW-v1.json b/REVIEW-v2.json
+index 70a3f2f7..00089433 100644
+--- a/REVIEW-v1.json
++++ b/REVIEW-v2.json
+@@ -1,341 +1,618 @@
+ {
+-  "freeze_sha256": "eccfe31967375b5d53cd9a1adfa89d44431112e2a4def246e118730264cde33e",
++  "version": 2,
++  "parent_frozen_commit": "1229c07b033394c0e50907a9edf3fe8fc22aec3e",
++  "method_audit_commit": "7b3dec6654511cf581c52187194854ac71ae64f8",
++  "qualification": "Additive assertion annotation, not a replacement baseline or new historical experiment. Local recorder follow-up and public materialscontinuation are distinguished from frozenpass.",
+   "claims": [
+     {
+-      "review_id": "AUD016-TC01",
+       "claim_id": "B078",
++      "review_id": "AUD016-TC01",
+       "exact_original_wording": "| **Flight 77 did not strike the Pentagon** | **Contradicted by the combined evidence.** Flight-recorder and radar reconstruction, the structural damage path, recovered aircraft material, photographs, and eyewitness accounts support an airliner impact. The case does not depend on obtaining a cinematic security-camera view. [ntsb.gov](https://www.ntsb.gov/about/Documents/Flight_Path_Study_AA77.pdf?utm_source=chatgpt.com) |",
+-      "original_source_file": "ASSESSMENT-ORIGINAL.md",
+-      "source_line_start": 140,
+-      "source_line_end": 140,
+-      "source_sha256": "03e74d70ca0361d51325f8ee5d73b8626a701f2a08798f17e6b36f22d7e8df9d",
+-      "cited_URLs_as_supplied": [
+-        "https://www.ntsb.gov/about/Documents/Flight_Path_Study_AA77.pdf?utm_source=chatgpt.com"
+-      ],
+-      "matching_M_ids": [],
+-      "film_attribution": {
+-        "film": "Loose Change series",
+-        "edition": "Claim-family attribution only: Second Edition / Final Cut / 52-minute 2015 distributor version; specific cut unresolved; do not substitute full 2009 American Coup",
+-        "attribution_verified": false
++      "historical_assessment": {
++        "change_from_method_audit": "No historical verdict reversed solely by this methods audit.",
++        "earlier_assessment_preserved": "The prior combined-evidence judgment has not been independently reproduced in this pass. The cited AA77 PDF returned403; the official Navy alternative failed TLS verification. No security check was disabled.",
++        "current_qualification": "Read the assertion-level support and current work status; earlier access/reading states are historical, not current."
+       },
+-      "film_timestamp": null,
+-      "film_timestamp_status": "Explicit unknown; no verified cut/time attribution",
+-      "original_rationale": "Contained verbatim in exact_original_wording; not newly endorsed",
+-      "status_at_freeze": "unreviewed in this ten-claim pass",
+-      "review_state": "Pending primary-root review",
+-      "current_assessment": "The prior combined-evidence judgment has not been independently reproduced in this pass. The cited AA77 PDF returned403; the official Navy alternative failed TLS verification. No security check was disabled.",
+-      "strongest_objection_or_limit": "A route failure supplies no evidence against an airliner impact; it also cannot authenticate recorder, radar or physical-item roots.",
+-      "discriminating_test": "Obtain an actual AA77 factual report/native FDR/radar package with decoder definitions, recovered-recorder custody, clock alignment and physical/exhibit joins; test alternate trajectories and independent identification.",
+-      "inspected_source_locators": [],
+-      "independence": "Reports, exhibits and later reconstructions may share underlying inputs. No independent corroboration count inferred from number of publishers.",
+-      "independent_historical_replication": false,
+-      "publication_at_creation": "Local prepared derivative; remote branch/PR/main status recorded only after actual publication verification."
++      "source_support": [
++        {
++          "assertion_id": "B078:01",
++          "assertion": "Recorder report and decoding pathway",
++          "source_support": "NTSB agencyreport plus independently inspected producer-output consistency; originalraw decoding not reproduced",
++          "source_locator": "https://www.ntsb.gov/about/Documents/AAL77_fdr.pdf physical1\u20134; OUTPUT-CHECK-RESULT.json in local continuation",
++          "inspection_state": "Report/specification/source/output inspected; native raw/agencyCSV unacquired",
++          "remaining_gap_ids": [
++            "AUD016-A1:G01",
++            "AUD016-A1:G02"
++          ]
++        },
++        {
++          "assertion_id": "B078:02",
++          "assertion": "Radar reconstruction",
++          "source_support": "No new native radar reconstruction in this pass",
++          "source_locator": "OriginalB078 line140; cited flightpath study",
++          "inspection_state": "Unjoined native data/calibration",
++          "remaining_gap_ids": [
++            "AUD016-A1:G02"
++          ]
++        },
++        {
++          "assertion_id": "B078:03",
++          "assertion": "Structural damage path",
++          "source_support": "Original combined assertion retained; no item-specific reconstruction supplied by the recorderreport",
++          "source_locator": "OriginalB078 line140",
++          "inspection_state": "Not independently traced here",
++          "remaining_gap_ids": [
++            "AUD016-A1:G05"
++          ]
++        },
++        {
++          "assertion_id": "B078:04",
++          "assertion": "Recovered aircraft material",
++          "source_support": "Requires recovery/serial/installation/custody chain, independent of reporttitle",
++          "source_locator": "OriginalB078 line140",
++          "inspection_state": "Not independently traced here",
++          "remaining_gap_ids": [
++            "AUD016-A1:G03"
++          ]
++        },
++        {
++          "assertion_id": "B078:05",
++          "assertion": "Photographic evidence",
++          "source_support": "Requires dated/authenticated image and item join",
++          "source_locator": "OriginalB078 line140",
++          "inspection_state": "Not independently traced here",
++          "remaining_gap_ids": [
++            "AUD016-A1:G05"
++          ]
++        },
++        {
++          "assertion_id": "B078:06",
++          "assertion": "Eyewitness accounts",
++          "source_support": "Requires direct statement/sightline/timing and dependence checks",
++          "source_locator": "OriginalB078 line140",
++          "inspection_state": "Not independently traced here",
++          "remaining_gap_ids": [
++            "AUD016-A1:G05"
++          ]
++        }
++      ],
++      "work_status": {
++        "first_pass_preserved": "Pending primary-root review",
++        "current": "Officialreport/specification/decoder source and full/reduced producer outputs acquired; outputconsistency reproduced; originalraw decode/radar/custody/clock/physicaljoins open.",
++        "independent_historical_replication": false,
++        "remaining_gap_ids": [
++          "AUD016-A1:G01",
++          "AUD016-A1:G02",
++          "AUD016-A1:G03",
++          "AUD016-A1:G05"
++        ]
++      }
+     },
+     {
+-      "review_id": "AUD016-TC02",
+       "claim_id": "B096",
+-      "exact_original_wording": "| **Flight 93 landed in Cleveland** | **Contradicted by the combined crash evidence.** The early landing story does not explain the aircraft’s recorder, radar path, recovered material, and occupant identifications. Confusing another aircraft or repeating an erroneous bulletin cannot relocate that evidence. [United Airlines Flight 93](https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf?utm_source=chatgpt.com) |",
+-      "original_source_file": "ASSESSMENT-ORIGINAL.md",
+-      "source_line_start": 164,
+-      "source_line_end": 164,
+-      "source_sha256": "03e74d70ca0361d51325f8ee5d73b8626a701f2a08798f17e6b36f22d7e8df9d",
+-      "cited_URLs_as_supplied": [
+-        "https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf?utm_source=chatgpt.com"
+-      ],
+-      "matching_M_ids": [],
+-      "film_attribution": {
+-        "film": "Loose Change series",
+-        "edition": "Claim-family attribution only: Second Edition / Final Cut / 52-minute 2015 distributor version; specific cut unresolved; do not substitute full 2009 American Coup",
+-        "attribution_verified": false
++      "review_id": "AUD016-TC02",
++      "exact_original_wording": "| **Flight 93 landed in Cleveland** | **Contradicted by the combined crash evidence.** The early landing story does not explain the aircraft\u2019s recorder, radar path, recovered material, and occupant identifications. Confusing another aircraft or repeating an erroneous bulletin cannot relocate that evidence. [United Airlines Flight 93](https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf?utm_source=chatgpt.com) |",
++      "historical_assessment": {
++        "change_from_method_audit": "No historical verdict reversed solely by this methods audit.",
++        "earlier_assessment_preserved": "The acquired NTSB study describes a path from Newark to the Pennsylvania crash site using reported FDR and radar inputs (pages1\u20134). It conflicts with a simple Cleveland-landing narrative at report level.",
++        "current_qualification": "Read the assertion-level support and current work status; earlier access/reading states are historical, not current."
+       },
+-      "film_timestamp": null,
+-      "film_timestamp_status": "Explicit unknown; no verified cut/time attribution",
+-      "original_rationale": "Contained verbatim in exact_original_wording; not newly endorsed",
+-      "status_at_freeze": "unreviewed in this ten-claim pass",
+-      "review_state": "Partial documentary support; historical reconstruction open",
+-      "current_assessment": "The acquired NTSB study describes a path from Newark to the Pennsylvania crash site using reported FDR and radar inputs (pages1–4). It conflicts with a simple Cleveland-landing narrative at report level.",
+-      "strongest_objection_or_limit": "This report is a reconstruction from inputs not redecoded here, not independent authentication of recovered airframe/occupants or proof every early bulletin was false.",
+-      "discriminating_test": "Acquire raw FDR/radar plus custody/decoder/clock roots and compare alleged Cleveland event with aircraft identity, time and independent crash-recovery records.",
+-      "inspected_source_locators": [
+-        "ua93.pdf:physical1–4"
++      "source_support": [
++        {
++          "assertion_id": "B096:01",
++          "assertion": "Reported path to Pennsylvania",
++          "source_support": "Supported at NTSB reconstructionreport level",
++          "source_locator": "https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf physical1\u20132",
++          "inspection_state": "Selected report/narrative/images inspected; raw data not decoded",
++          "remaining_gap_ids": [
++            "AUD016-A1:G02"
++          ]
++        },
++        {
++          "assertion_id": "B096:02",
++          "assertion": "Recovered aircraft material",
++          "source_support": "Not supplied merely by citing a flightpath study",
++          "source_locator": "OriginalB096 line164",
++          "inspection_state": "Item/custody joins uncompleted",
++          "remaining_gap_ids": [
++            "AUD016-A1:G03"
++          ]
++        },
++        {
++          "assertion_id": "B096:03",
++          "assertion": "Occupant identifications",
++          "source_support": "Separate identification evidence required",
++          "source_locator": "OriginalB096 line164",
++          "inspection_state": "Identification record joins uncompleted",
++          "remaining_gap_ids": [
++            "AUD016-A1:G04"
++          ]
++        }
+       ],
+-      "independence": "Reports, exhibits and later reconstructions may share underlying inputs. No independent corroboration count inferred from number of publishers.",
+-      "independent_historical_replication": false,
+-      "publication_at_creation": "Local prepared derivative; remote branch/PR/main status recorded only after actual publication verification."
++      "work_status": {
++        "first_pass_preserved": "Partial documentary support; historical reconstruction open",
++        "current": "Partial source-level evaluation; underlying tests/gaps explicitly listed.",
++        "independent_historical_replication": false,
++        "remaining_gap_ids": [
++          "AUD016-A1:G02",
++          "AUD016-A1:G03",
++          "AUD016-A1:G04"
++        ]
++      }
+     },
+     {
+-      "review_id": "AUD016-TC03",
+       "claim_id": "B097",
++      "review_id": "AUD016-TC03",
+       "exact_original_wording": "| **It was shot down** | **Not supported by the examined record.** The recorders document a terminal sequence consistent with a struggle and deliberate control inputs. A missile explanation needs affirmative evidence of an external strike. It cannot be established merely from the fact that officials considered shootdown authority elsewhere. [United Airlines Flight 93](https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf?utm_source=chatgpt.com) |",
+-      "original_source_file": "ASSESSMENT-ORIGINAL.md",
+-      "source_line_start": 165,
+-      "source_line_end": 165,
+-      "source_sha256": "03e74d70ca0361d51325f8ee5d73b8626a701f2a08798f17e6b36f22d7e8df9d",
+-      "cited_URLs_as_supplied": [
+-        "https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf?utm_source=chatgpt.com"
+-      ],
+-      "matching_M_ids": [],
+-      "film_attribution": {
+-        "film": "Loose Change series",
+-        "edition": "Claim-family attribution only: Second Edition / Final Cut / 52-minute 2015 distributor version; specific cut unresolved; do not substitute full 2009 American Coup",
+-        "attribution_verified": false
++      "historical_assessment": {
++        "change_from_method_audit": "No historical verdict reversed solely by this methods audit.",
++        "earlier_assessment_preserved": "The same study describes terminal control inputs and descent (page2); transcript pages8\u20139 include commands through10:03. These are relevant to an onboard terminal sequence.",
++        "current_qualification": "Read the assertion-level support and current work status; earlier access/reading states are historical, not current."
+       },
+-      "film_timestamp": null,
+-      "film_timestamp_status": "Explicit unknown; no verified cut/time attribution",
+-      "original_rationale": "Contained verbatim in exact_original_wording; not newly endorsed",
+-      "status_at_freeze": "unreviewed in this ten-claim pass",
+-      "review_state": "Partial documentary check; no independent exclusion of external strike",
+-      "current_assessment": "The same study describes terminal control inputs and descent (page2); transcript pages8–9 include commands through10:03. These are relevant to an onboard terminal sequence.",
+-      "strongest_objection_or_limit": "Control inputs do not logically rule out an external strike. No raw audio/parameter decoding, fragmentation analysis or missile-residue test performed. Study and transcript are not automatically independent clock replications.",
+-      "discriminating_test": "Join synchronized raw channels to recovery/damage evidence and test a specified external-strike timing/mechanism against the entire terminal record.",
+-      "inspected_source_locators": [
+-        "ua93.pdf:physical2",
+-        "cvr93.pdf:physical8–9"
++      "source_support": [
++        {
++          "assertion_id": "B097:01",
++          "assertion": "Reported terminal control inputs",
++          "source_support": "Source supports report-level onboard sequence",
++          "source_locator": "https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf physical2",
++          "inspection_state": "Selected source inspected",
++          "remaining_gap_ids": [
++            "AUD016-A1:G02",
++            "AUD016-A1:G06"
++          ]
++        },
++        {
++          "assertion_id": "B097:02",
++          "assertion": "Terminal cockpit transcript",
++          "source_support": "Published utterances constrain accounts of terminal events",
++          "source_locator": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/P200056T.pdf physical8\u20139",
++          "inspection_state": "Native pageimages inspected; originalaudio not authenticated",
++          "remaining_gap_ids": [
++            "AUD016-A1:G06"
++          ]
++        },
++        {
++          "assertion_id": "B097:03",
++          "assertion": "External strike/shootdown conclusion",
++          "source_support": "Mere logical nonexclusion is not affirmative strike evidence; an alternative needs discriminating observations",
++          "source_locator": "FrozenB097 and prior REVIEW.json",
++          "inspection_state": "No synchronized external-strike test performed",
++          "remaining_gap_ids": [
++            "AUD016-A1:G06"
++          ]
++        }
+       ],
+-      "independence": "Reports, exhibits and later reconstructions may share underlying inputs. No independent corroboration count inferred from number of publishers.",
+-      "independent_historical_replication": false,
+-      "publication_at_creation": "Local prepared derivative; remote branch/PR/main status recorded only after actual publication verification."
++      "work_status": {
++        "first_pass_preserved": "Partial documentary check; no independent exclusion of external strike",
++        "current": "Partial source-level evaluation; underlying tests/gaps explicitly listed.",
++        "independent_historical_replication": false,
++        "remaining_gap_ids": [
++          "AUD016-A1:G02",
++          "AUD016-A1:G06"
++        ]
++      }
+     },
+     {
+-      "review_id": "AUD016-TC04",
+       "claim_id": "B100",
++      "review_id": "AUD016-TC04",
+       "exact_original_wording": "| **The final three minutes were erased** | **Contradicted.** The public cockpit transcript reaches the terminal event around 10:03:10; the flight-data study places impact at approximately 10:03:11. The claim depends on first establishing a later crash time against that combined record. [coop.vaed.uscourts.gov](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/P200056T.pdf?utm_source=chatgpt.com) |",
+-      "original_source_file": "ASSESSMENT-ORIGINAL.md",
+-      "source_line_start": 168,
+-      "source_line_end": 168,
+-      "source_sha256": "03e74d70ca0361d51325f8ee5d73b8626a701f2a08798f17e6b36f22d7e8df9d",
+-      "cited_URLs_as_supplied": [
+-        "https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/P200056T.pdf?utm_source=chatgpt.com"
+-      ],
+-      "matching_M_ids": [],
+-      "film_attribution": {
+-        "film": "Loose Change series",
+-        "edition": "Claim-family attribution only: Second Edition / Final Cut / 52-minute 2015 distributor version; specific cut unresolved; do not substitute full 2009 American Coup",
+-        "attribution_verified": false
++      "historical_assessment": {
++        "change_from_method_audit": "No historical verdict reversed solely by this methods audit.",
++        "earlier_assessment_preserved": "P200056T page9 ends with listed utterances at10:03:09; NTSB page2 reports10:03:11 impact. Replace implied precise transcript-end/impact authentication with these exact document labels. Entries on page8 cover the preceding terminal minutes.",
++        "current_qualification": "Read the assertion-level support and current work status; earlier access/reading states are historical, not current."
+       },
+-      "film_timestamp": null,
+-      "film_timestamp_status": "Explicit unknown; no verified cut/time attribution",
+-      "original_rationale": "Contained verbatim in exact_original_wording; not newly endorsed",
+-      "status_at_freeze": "unreviewed in this ten-claim pass",
+-      "review_state": "Earlier wording narrowed explicitly",
+-      "current_assessment": "P200056T page9 ends with listed utterances at10:03:09; NTSB page2 reports10:03:11 impact. Replace implied precise transcript-end/impact authentication with these exact document labels. Entries on page8 cover the preceding terminal minutes.",
+-      "strongest_objection_or_limit": "The nominal difference is2seconds, not a measured clock error or missing audio. The transcript does not label its last utterance as recorder termination. Raw audio, edit history, synchronization and later-impact alternatives remain untested.",
+-      "discriminating_test": "Acquire recording/transcription/translation provenance and time synchronization; independently test later impact anchors before concluding that three minutes were removed.",
+-      "inspected_source_locators": [
+-        "cvr93.pdf:physical9,last10:03:09rows",
+-        "ua93.pdf:physical2,10:03:11"
++      "source_support": [
++        {
++          "assertion_id": "B100:01",
++          "assertion": "Last listed utterance10:03:09",
++          "source_support": "Direct court document label",
++          "source_locator": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/P200056T.pdf physical9",
++          "inspection_state": "Image inspected",
++          "remaining_gap_ids": [
++            "AUD016-A1:G06"
++          ]
++        },
++        {
++          "assertion_id": "B100:02",
++          "assertion": "Reported impact10:03:11",
++          "source_support": "Direct NTSB report label",
++          "source_locator": "https://home.nps.gov/flni/learn/historyculture/upload/Flight_Path_Study_of_Flight_93_508.pdf physical2",
++          "inspection_state": "Text read; not independentciviltime calibration",
++          "remaining_gap_ids": [
++            "AUD016-A1:G02"
++          ]
++        },
++        {
++          "assertion_id": "B100:03",
++          "assertion": "Allegedly missing terminal interval",
++          "source_support": "Transcript has entries in terminal minutes; lastlisted utterance is not recordertermination",
++          "source_locator": "https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/P200056T.pdf physical8\u20139",
++          "inspection_state": "Published transcript checked; raw audio/edit history not checked",
++          "remaining_gap_ids": [
++            "AUD016-A1:G06"
++          ]
++        },
++        {
++          "assertion_id": "B100:04",
++          "assertion": "Intentional erasure",
++          "source_support": "Not established by a nominal2second difference between labels",
++          "source_locator": "COMPARISONS.json",
++          "inspection_state": "Arithmetic done; historicalediting/intent not established",
++          "remaining_gap_ids": [
++            "AUD016-A1:G06"
++          ]
++        }
+       ],
+-      "independence": "Reports, exhibits and later reconstructions may share underlying inputs. No independent corroboration count inferred from number of publishers.",
+-      "independent_historical_replication": false,
+-      "publication_at_creation": "Local prepared derivative; remote branch/PR/main status recorded only after actual publication verification."
++      "work_status": {
++        "first_pass_preserved": "Earlier wording narrowed explicitly",
++        "current": "Partial source-level evaluation; underlying tests/gaps explicitly listed.",
++        "independent_historical_replication": false,
++        "remaining_gap_ids": [
++          "AUD016-A1:G02",
++          "AUD016-A1:G06"
++        ]
++      }
+     },
+     {
+-      "review_id": "AUD016-TC05",
+       "claim_id": "B105",
+-      "exact_original_wording": "| **The calls were impossible with 2001 cellphones** | **False as a general explanation.** Most documented Flight 93 calls used installed Airfones: 35 of 37 calls, according to the NPS reconstruction. Treating all of them as cellular calls invalidates the argument’s premise. [nps.gov](https://www.nps.gov/flni/learn/historyculture/phone-calls-and-seating-chart.htm?utm_source=chatgpt.com) |",
+-      "original_source_file": "ASSESSMENT-ORIGINAL.md",
+-      "source_line_start": 178,
+-      "source_line_end": 178,
+-      "source_sha256": "03e74d70ca0361d51325f8ee5d73b8626a701f2a08798f17e6b36f22d7e8df9d",
+-      "cited_URLs_as_supplied": [
+-        "https://www.nps.gov/flni/learn/historyculture/phone-calls-and-seating-chart.htm?utm_source=chatgpt.com"
+-      ],
+-      "matching_M_ids": [],
+-      "film_attribution": {
+-        "film": "Loose Change series",
+-        "edition": "Claim-family attribution only: Second Edition / Final Cut / 52-minute 2015 distributor version; specific cut unresolved; do not substitute full 2009 American Coup",
+-        "attribution_verified": false
++      "review_id": "AUD016-TC05",
++      "exact_original_wording": "| **The calls were impossible with 2001 cellphones** | **False as a general explanation.** Most documented Flight 93 calls used installed Airfones: 35 of 37 calls, according to the NPS reconstruction. Treating all of them as cellular calls invalidates the argument\u2019s premise. [nps.gov](https://www.nps.gov/flni/learn/historyculture/phone-calls-and-seating-chart.htm?utm_source=chatgpt.com) |",
++      "historical_assessment": {
++        "change_from_method_audit": "No historical verdict reversed solely by this methods audit.",
++        "earlier_assessment_preserved": "NPS lines104,118\u2013122 attribute37calls/35Airfones to FBI and identify mixed source types. A blanket argument that treats all listed calls as cellular does not address that reconstruction.",
++        "current_qualification": "Read the assertion-level support and current work status; earlier access/reading states are historical, not current."
+       },
+-      "film_timestamp": null,
+-      "film_timestamp_status": "Explicit unknown; no verified cut/time attribution",
+-      "original_rationale": "Contained verbatim in exact_original_wording; not newly endorsed",
+-      "status_at_freeze": "unreviewed in this ten-claim pass",
+-      "review_state": "Retain limited premise correction; qualify count attribution",
+-      "current_assessment": "NPS lines104,118–122 attribute37calls/35Airfones to FBI and identify mixed source types. A blanket argument that treats all listed calls as cellular does not address that reconstruction.",
+-      "strongest_objection_or_limit": "A museum reconstruction does not independently verify35/37 or authenticate particular calls. Most quoted accounts are interview notes rather than direct recordings.",
+-      "discriminating_test": "Join per-call switching/billing logs, operator/interview records and recordings with times/altitudes; separately test the two attributed cellular calls.",
+-      "inspected_source_locators": [
+-        "calls.html:derivedlines104,118–122,209–212"
++      "source_support": [
++        {
++          "assertion_id": "B105:01",
++          "assertion": "37total calls and35Airfone calls",
++          "source_support": "NPS attributes these toFBI reconstruction; counts not independently authenticated",
++          "source_locator": "https://www.nps.gov/flni/learn/historyculture/phone-calls-and-seating-chart.htm section Phone Calls of Flight93; LOCATOR-MAP.json",
++          "inspection_state": "Count/method source inspected",
++          "remaining_gap_ids": [
++            "AUD016-A1:G07"
++          ]
++        },
++        {
++          "assertion_id": "B105:02",
++          "assertion": "Every listed call was cellular",
++          "source_support": "Inconsistent with the source instrument attribution; do not extend classification to authentication of eachcall",
++          "source_locator": "NPS count/method paragraphs",
++          "inspection_state": "Limited source-level inference",
++          "remaining_gap_ids": [
++            "AUD016-A1:G07"
++          ]
++        },
++        {
++          "assertion_id": "B105:03",
++          "assertion": "Technological feasibility of a disputed cellularcall",
++          "source_support": "Requires its own instrument/network/location/time records",
++          "source_locator": "OriginalB105 line178",
++          "inspection_state": "Not inferred from aggregate arithmetic",
++          "remaining_gap_ids": [
++            "AUD016-A1:G07"
++          ]
++        }
+       ],
+-      "independence": "Reports, exhibits and later reconstructions may share underlying inputs. No independent corroboration count inferred from number of publishers.",
+-      "independent_historical_replication": false,
+-      "publication_at_creation": "Local prepared derivative; remote branch/PR/main status recorded only after actual publication verification."
++      "work_status": {
++        "first_pass_preserved": "Retain limited premise correction; qualify count attribution",
++        "current": "Partial source-level evaluation; underlying tests/gaps explicitly listed.",
++        "independent_historical_replication": false,
++        "remaining_gap_ids": [
++          "AUD016-A1:G07"
++        ]
++      }
+     },
+     {
+-      "review_id": "AUD016-TC06",
+       "claim_id": "B110",
+-      "exact_original_wording": "| **The FBI proved Barbara Olson never called** | **False as stated, but attribution uncertainty is real.** A zero-duration entry concerns an unsuccessful attempt. Other connected calls had incompletely identified recipients; the Commission acknowledged that precise matching was unresolved. Ted Olson’s secretary, Lori Keyton, separately told the FBI she answered and transferred two calls identifying the caller as Barbara. This supports calls reaching the office without pretending every electronic record has been perfectly matched. [911commission.gov](https://www.911commission.gov/report/911Report_Notes.htm?utm_source=chatgpt.com) |",
+-      "original_source_file": "ASSESSMENT-ORIGINAL.md",
+-      "source_line_start": 183,
+-      "source_line_end": 183,
+-      "source_sha256": "03e74d70ca0361d51325f8ee5d73b8626a701f2a08798f17e6b36f22d7e8df9d",
+-      "cited_URLs_as_supplied": [
+-        "https://www.911commission.gov/report/911Report_Notes.htm?utm_source=chatgpt.com"
+-      ],
+-      "matching_M_ids": [],
+-      "film_attribution": {
+-        "film": "Loose Change series",
+-        "edition": "Claim-family attribution only: Second Edition / Final Cut / 52-minute 2015 distributor version; specific cut unresolved; do not substitute full 2009 American Coup",
+-        "attribution_verified": false
++      "review_id": "AUD016-TC06",
++      "exact_original_wording": "| **The FBI proved Barbara Olson never called** | **False as stated, but attribution uncertainty is real.** A zero-duration entry concerns an unsuccessful attempt. Other connected calls had incompletely identified recipients; the Commission acknowledged that precise matching was unresolved. Ted Olson\u2019s secretary, Lori Keyton, separately told the FBI she answered and transferred two calls identifying the caller as Barbara. This supports calls reaching the office without pretending every electronic record has been perfectly matched. [911commission.gov](https://www.911commission.gov/report/911Report_Notes.htm?utm_source=chatgpt.com) |",
++      "historical_assessment": {
++        "change_from_method_audit": "No historical verdict reversed solely by this methods audit.",
++        "earlier_assessment_preserved": "Commission note57, physical7/printed455, lists four connected calls and explicitly says unique matching to the two Olson conversations was not possible. It supports attribution uncertainty.",
++        "current_qualification": "Earlier lack-of-source states superseded by actualtelephoneacquisition. Witnessclaim has sourcelevelsupport; a zero-duration attempt does not establish absence of othercalls. Preserve all date/duration/count and collect/direct differences."
+       },
+-      "film_timestamp": null,
+-      "film_timestamp_status": "Explicit unknown; no verified cut/time attribution",
+-      "original_rationale": "Contained verbatim in exact_original_wording; not newly endorsed",
+-      "status_at_freeze": "unreviewed in this ten-claim pass",
+-      "review_state": "Mixed support; a citation gap is retained",
+-      "current_assessment": "Commission note57, physical7/printed455, lists four connected calls and explicitly says unique matching to the two Olson conversations was not possible. It supports attribution uncertainty.",
+-      "strongest_objection_or_limit": "The cited note does not supply the Keyton interview or a zero-duration record. A public FBI-bundle search lead was found, but download returned403. Neither the witness assertion nor zero-duration row was authenticated in this pass; no inference they are false.",
+-      "discriminating_test": "Acquire Keyton FD302/interview date versus transcription date and the exact trial/carrier records; join numbers, calls and office transfers without forcing identification.",
+-      "inspected_source_locators": [
+-        "commission-notes-held:physical7/printed455,note57"
++      "source_support": [
++        {
++          "assertion_id": "B110:01",
++          "assertion": "Four connected calls with uncertain caller matching",
++          "source_support": "Supported as Commissionnote57 reconstruction",
++          "source_locator": "https://www.9-11commission.gov/report/911Report_Notes.pdf physical7/printed455 note57",
++          "inspection_state": "Passage inspected; not carrierraw",
++          "remaining_gap_ids": [
++            "AUD016-A1:G07",
++            "AUD016-A1:G09"
++          ]
++        },
++        {
++          "assertion_id": "B110:02",
++          "assertion": "Zero-duration attempt",
++          "source_support": "OfficialcourtSWF stores the zero-duration/unconnectedlabel; underlyingcarrier/callersemantics remain unverified.",
++          "source_locator": "https://coop.vaed.uscourts.gov/moussaoui/flights.zip AA77.swf statictextIDs1691\u20131694; https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md",
++          "inspection_state": "Storeddefinitions decoded in completedtelephoneunit; integration verifiedsourcehashes, not a newFlashruntime or carriercheck.",
++          "remaining_gap_ids": [
++            "AUD016-A1:G09"
++          ]
++        },
++        {
++          "assertion_id": "B110:03",
++          "assertion": "Keyton statement",
++          "source_support": "Acquired mirroredFD302 supports witnessdescription with limits; second-directcall versus Vossbothcollect conflict retained.",
++          "source_locator": "https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=48; stamp000000736, investigation9/11/01, transcription09/14/2001; Vossphysical51.",
++          "inspection_state": "Mirror/extraction acquired; selectednative48/51 inspected. Canonicalprovenance/notes/audio and office/carrier joins open.",
++          "remaining_gap_ids": [
++            "AUD016-A1:G08"
++          ]
++        },
++        {
++          "assertion_id": "B110:04",
++          "assertion": "Office/operator transfer and caller attribution",
++          "source_support": "Recipient/officeaccounts and briefing infercalleridentity; Keyton/Voss and unknownconnectedentrymatching are not independentcarrierconfirmations.",
++          "source_locator": "https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md TEL04\u2013TEL06; Commissionnote57.",
++          "inspection_state": "Underlyingwitnessforms now acquired; operator/PBX and uniqueelectronicrowmatching remain open.",
++          "remaining_gap_ids": [
++            "AUD016-A1:G07",
++            "AUD016-A1:G08",
++            "AUD016-A1:G09"
++          ]
++        }
+       ],
+-      "independence": "Reports, exhibits and later reconstructions may share underlying inputs. No independent corroboration count inferred from number of publishers.",
+-      "independent_historical_replication": false,
+-      "publication_at_creation": "Local prepared derivative; remote branch/PR/main status recorded only after actual publication verification."
++      "work_status": {
++        "first_pass_preserved": "Mixed support; a citation gap is retained",
++        "current": "Telephone follow-up acquired Keyton/Voss releasedmirror, officialstaticcourtlabels and Maybriefing; visual/static/sourcechecks completed as scoped. Nativeprovenance/carrier/operator/PBX and caller/fieldsemantics open.",
++        "independent_historical_replication": false,
++        "remaining_gap_ids": [
++          "AUD016-A1:G07",
++          "AUD016-A1:G08",
++          "AUD016-A1:G09"
++        ]
++      }
+     },
+     {
+-      "review_id": "AUD016-TC07",
+       "claim_id": "B160",
+-      "exact_original_wording": "| **Harrit’s red/gray chips** | **A real laboratory study, with a disputed interpretation.** The authors performed microscopy, elemental analysis, and calorimetry on samples from four civilian dust collections. The study deserves examination; it does not by itself establish an installed demolition system. [Jones_TOCPJ](https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf?utm_source=chatgpt.com) |",
+-      "original_source_file": "ASSESSMENT-ORIGINAL.md",
+-      "source_line_start": 264,
+-      "source_line_end": 264,
+-      "source_sha256": "03e74d70ca0361d51325f8ee5d73b8626a701f2a08798f17e6b36f22d7e8df9d",
+-      "cited_URLs_as_supplied": [
+-        "https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf?utm_source=chatgpt.com"
+-      ],
+-      "matching_M_ids": [
+-        "M060"
+-      ],
+-      "film_attribution": {
+-        "film": "Loose Change series",
+-        "edition": "Claim-family attribution only: Second Edition / Final Cut / 52-minute 2015 distributor version; specific cut unresolved; do not substitute full 2009 American Coup",
+-        "attribution_verified": false
++      "review_id": "AUD016-TC07",
++      "exact_original_wording": "| **Harrit\u2019s red/gray chips** | **A real laboratory study, with a disputed interpretation.** The authors performed microscopy, elemental analysis, and calorimetry on samples from four civilian dust collections. The study deserves examination; it does not by itself establish an installed demolition system. [Jones_TOCPJ](https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf?utm_source=chatgpt.com) |",
++      "historical_assessment": {
++        "change_from_method_audit": "No historical verdict reversed solely by this methods audit.",
++        "earlier_assessment_preserved": "Harrit pages3\u20134 and21 describe collection/transfer histories and air-flow calorimetry; the authors acknowledge possible organic oxidation. If its earliest collection account is accurate, that sample predates WTC7 collapse.",
++        "current_qualification": "Read the assertion-level support and current work status; earlier access/reading states are historical, not current."
+       },
+-      "film_timestamp": null,
+-      "film_timestamp_status": "Explicit unknown; no verified cut/time attribution",
+-      "original_rationale": "Contained verbatim in exact_original_wording; not newly endorsed",
+-      "status_at_freeze": "unreviewed in this ten-claim pass",
+-      "review_state": "Partial methods/custody review; mechanism not replicated",
+-      "current_assessment": "Harrit pages3–4 and21 describe collection/transfer histories and air-flow calorimetry; the authors acknowledge possible organic oxidation. If its earliest collection account is accurate, that sample predates WTC7 collapse.",
+-      "strongest_objection_or_limit": "Custody narratives are not independently authenticated seals/transfers. No instrument exports or chemical replication acquired; most identification figures remain unread in this pass.",
+-      "discriminating_test": "Compare authenticated split specimens and native instrument/calibration data with matched coating controls and controlled atmospheres; keep chemistry, building attribution and placement separate.",
+-      "inspected_source_locators": [
+-        "harrit-complete.pdf:physical3/printed9,physical4/printed10,physical21/printed27"
++      "source_support": [
++        {
++          "assertion_id": "B160:01",
++          "assertion": "Collection and custody",
++          "source_support": "Paper supplies collection narratives, not independently authenticated fullchain",
++          "source_locator": "https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf physical3\u20134",
++          "inspection_state": "Selected source read/imagechecked",
++          "remaining_gap_ids": [
++            "AUD011-A2:G11"
++          ]
++        },
++        {
++          "assertion_id": "B160:02",
++          "assertion": "Al-rich chemical identification",
++          "source_support": "Al/Oargument meaningful but conditional; later source/oxygenbudget review completed",
++          "source_locator": "Published materialsidentification supplement at ce5f2b08; Harrit physical11\u201313",
++          "inspection_state": "Identificationfigures and conditionalcalculation inspected; nativeexports absent",
++          "remaining_gap_ids": [
++            "AUD011-A2:G10"
++          ]
++        },
++        {
++          "assertion_id": "B160:03",
++          "assertion": "DSCcurve-to-collection link",
++          "source_support": "Fourdisplayed traces map tothree namedcollectiongroups; keyMEKcollection not labeled amongthem",
++          "source_locator": "https://benthamopenarchives.com/contents/pdf/TOCPJ/TOCPJ-2-7.pdf physical14 Figure19; physical3/11 collectionmap",
++          "inspection_state": "Sourcecrosswalk completed; no claim no unplottedexperiment",
++          "remaining_gap_ids": [
++            "AUD011-A2:G11"
++          ]
++        },
++        {
++          "assertion_id": "B160:04",
++          "assertion": "Deliberate installation/building attribution",
++          "source_support": "Chemistry/collection compatibility alone does not establish deviceinstallation or WTC7origin",
++          "source_locator": "OriginalB160 and materialscontinuation",
++          "inspection_state": "Not independently established",
++          "remaining_gap_ids": [
++            "AUD011-A2:G10",
++            "AUD011-A2:G11"
++          ]
++        }
+       ],
+-      "independence": "Reports, exhibits and later reconstructions may share underlying inputs. No independent corroboration count inferred from number of publishers.",
+-      "independent_historical_replication": false,
+-      "publication_at_creation": "Local prepared derivative; remote branch/PR/main status recorded only after actual publication verification."
++      "work_status": {
++        "first_pass_preserved": "Partial methods/custody review; mechanism not replicated",
++        "current": "Later materialsidentification/crosswalk and conditionalalgebra completed; nativechemicaldata/custody/matchedsample tests open; earlier frozen readinglimits not reinstated.",
++        "independent_historical_replication": false,
++        "remaining_gap_ids": [
++          "AUD011-A2:G10",
++          "AUD011-A2:G11"
++        ]
++      }
+     },
+     {
+-      "review_id": "AUD016-TC08",
+       "claim_id": "B161",
+-      "exact_original_wording": "| **Millette’s contrary findings** | **Relevant, but not an exact same-sample replication.** Millette reported epoxy, iron oxide, and kaolin in other chips, without elemental aluminum. He did not test Harrit’s actual specimens and did not identify an exact source product. Describing his work as conclusively identifying every disputed chip as a particular WTC paint would overstate it. [911facts.dk](https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf?utm_source=chatgpt.com) |",
+-      "original_source_file": "ASSESSMENT-ORIGINAL.md",
+-      "source_line_start": 265,
+-      "source_line_end": 265,
+-      "source_sha256": "03e74d70ca0361d51325f8ee5d73b8626a701f2a08798f17e6b36f22d7e8df9d",
+-      "cited_URLs_as_supplied": [
+-        "https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf?utm_source=chatgpt.com"
+-      ],
+-      "matching_M_ids": [
+-        "M060"
+-      ],
+-      "film_attribution": {
+-        "film": "Loose Change series",
+-        "edition": "Claim-family attribution only: Second Edition / Final Cut / 52-minute 2015 distributor version; specific cut unresolved; do not substitute full 2009 American Coup",
+-        "attribution_verified": false
++      "review_id": "AUD016-TC08",
++      "exact_original_wording": "| **Millette\u2019s contrary findings** | **Relevant, but not an exact same-sample replication.** Millette reported epoxy, iron oxide, and kaolin in other chips, without elemental aluminum. He did not test Harrit\u2019s actual specimens and did not identify an exact source product. Describing his work as conclusively identifying every disputed chip as a particular WTC paint would overstate it. [911facts.dk](https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf?utm_source=chatgpt.com) |",
++      "historical_assessment": {
++        "change_from_method_audit": "No historical verdict reversed solely by this methods audit.",
++        "earlier_assessment_preserved": "Millette pages2\u20136 explicitly use different archived samples, report an epoxy/iron-oxide/kaolin interpretation, and leave the exact source product unidentified. The comparison is not a same-specimen replication.",
++        "current_qualification": "Read the assertion-level support and current work status; earlier access/reading states are historical, not current."
+       },
+-      "film_timestamp": null,
+-      "film_timestamp_status": "Explicit unknown; no verified cut/time attribution",
+-      "original_rationale": "Contained verbatim in exact_original_wording; not newly endorsed",
+-      "status_at_freeze": "unreviewed in this ten-claim pass",
+-      "review_state": "Retain same-specimen qualification; chemical result remains laboratory claim",
+-      "current_assessment": "Millette pages2–6 explicitly use different archived samples, report an epoxy/iron-oxide/kaolin interpretation, and leave the exact source product unidentified. The comparison is not a same-specimen replication.",
+-      "strongest_objection_or_limit": "The59page file includes appendices not fully reviewed. It does not classify every Harrit chip or independently authenticate custody; no new assay or instrument-export analysis was done.",
+-      "discriminating_test": "Audit native spectra/diffraction/FTIR and sample records, then compare matched specimens and reference products; no physical experiment authorized here.",
+-      "inspected_source_locators": [
+-        "millette.pdf:physical2–6"
++      "source_support": [
++        {
++          "assertion_id": "B161:01",
++          "assertion": "Different specimens",
++          "source_support": "Confirmed reportqualification; already present in originalB161",
++          "source_locator": "https://www.911facts.dk/resources/Millette/9119ProgressReport022912_rev1_030112web.pdf physical2\u20136",
++          "inspection_state": "Source reviewed; not a new reversal",
++          "remaining_gap_ids": [
++            "AUD011-A2:G11"
++          ]
++        },
++        {
++          "assertion_id": "B161:02",
++          "assertion": "Epoxy/ironoxide/kaolin interpretation",
++          "source_support": "Published FTIR/diffraction/microscopy support for those specimens, not a reindexed rawphase result",
++          "source_locator": "Millette selected physical14,19,32,48,54,57\u201359",
++          "inspection_state": "Later relevantappendices inspected; rawfiles unacquired",
++          "remaining_gap_ids": [
++            "AUD011-A2:G10"
++          ]
++        },
++        {
++          "assertion_id": "B161:03",
++          "assertion": "Identity of every Harritchip or exact sourceproduct",
++          "source_support": "Not established by different specimens; report leaves exact productunidentified",
++          "source_locator": "OriginalB161 and materialscontinuation",
++          "inspection_state": "No universal classification",
++          "remaining_gap_ids": [
++            "AUD011-A2:G10",
++            "AUD011-A2:G11"
++          ]
++        }
+       ],
+-      "independence": "Reports, exhibits and later reconstructions may share underlying inputs. No independent corroboration count inferred from number of publishers.",
+-      "independent_historical_replication": false,
+-      "publication_at_creation": "Local prepared derivative; remote branch/PR/main status recorded only after actual publication verification."
++      "work_status": {
++        "first_pass_preserved": "Retain same-specimen qualification; chemical result remains laboratory claim",
++        "current": "Later materialsidentification/crosswalk and conditionalalgebra completed; nativechemicaldata/custody/matchedsample tests open; earlier frozen readinglimits not reinstated.",
++        "independent_historical_replication": false,
++        "remaining_gap_ids": [
++          "AUD011-A2:G10",
++          "AUD011-A2:G11"
++        ]
++      }
+     },
+     {
+-      "review_id": "AUD016-TC09",
+       "claim_id": "B129",
+-      "exact_original_wording": "| **The early FAA/NORAD account was false** | **A strong, legitimate criticism.** The Commission’s reconstruction rejected important earlier claims about notification and response. Recordings showed that the initial public chronology made the response look more coherent than it was. Establishing an inaccurate account of failure does not, on its own, establish participation in the attack. [9-11commission.gov](https://www.9-11commission.gov/archive/hearing12/9-11Commission_Hearing_2004-06-17.htm?utm_source=chatgpt.com) |",
+-      "original_source_file": "ASSESSMENT-ORIGINAL.md",
+-      "source_line_start": 217,
+-      "source_line_end": 217,
+-      "source_sha256": "03e74d70ca0361d51325f8ee5d73b8626a701f2a08798f17e6b36f22d7e8df9d",
+-      "cited_URLs_as_supplied": [
+-        "https://www.9-11commission.gov/archive/hearing12/9-11Commission_Hearing_2004-06-17.htm?utm_source=chatgpt.com"
+-      ],
+-      "matching_M_ids": [],
+-      "film_attribution": {
+-        "film": "Loose Change series",
+-        "edition": "Claim-family attribution only: Second Edition / Final Cut / 52-minute 2015 distributor version; specific cut unresolved; do not substitute full 2009 American Coup",
+-        "attribution_verified": false
++      "review_id": "AUD016-TC09",
++      "exact_original_wording": "| **The early FAA/NORAD account was false** | **A strong, legitimate criticism.** The Commission\u2019s reconstruction rejected important earlier claims about notification and response. Recordings showed that the initial public chronology made the response look more coherent than it was. Establishing an inaccurate account of failure does not, on its own, establish participation in the attack. [9-11commission.gov](https://www.9-11commission.gov/archive/hearing12/9-11Commission_Hearing_2004-06-17.htm?utm_source=chatgpt.com) |",
++      "historical_assessment": {
++        "change_from_method_audit": "No historical verdict reversed solely by this methods audit.",
++        "earlier_assessment_preserved": "The prior FAA audit pins actual2001/2003 accounts, the later reconstructed timing and DOT findings. Notification errors and known failure to correct the liaison answer are separate findings.",
++        "current_qualification": "Read the assertion-level support and current work status; earlier access/reading states are historical, not current."
+       },
+-      "film_timestamp": null,
+-      "film_timestamp_status": "Explicit unknown; no verified cut/time attribution",
+-      "original_rationale": "Contained verbatim in exact_original_wording; not newly endorsed",
+-      "status_at_freeze": "unreviewed in this ten-claim pass",
+-      "review_state": "Reuse substantive prior audit; intent qualification strengthened",
+-      "current_assessment": "The prior FAA audit pins actual2001/2003 accounts, the later reconstructed timing and DOT findings. Notification errors and known failure to correct the liaison answer are separate findings.",
+-      "strongest_objection_or_limit": "DOT did not establish knowing falsehood for the notification timeline; it separately found an obligation to correct the liaison answer. Current review reuses the prior pinned source pass, not a new audio reconstruction.",
+-      "discriminating_test": "Continue original audio/log/certification and drafting/correction-authority joins; distinguish error, knowledge, noncorrection and attack participation.",
+-      "inspected_source_locators": [
+-        "faa-norad-mineta-2026-10-26/REPORT.md:FA001–FA004;prior pinned DOT/hearing/staff sources"
++      "source_support": [
++        {
++          "assertion_id": "B129:01",
++          "assertion": "Earlier notification chronology inaccurate",
++          "source_support": "Reproduced agencyanswers and DOTreview support specificdiscrepancies",
++          "source_locator": "dependencies/faa-norad-mineta-2026-10-26/REPORT.md; DOTrelease sourcepins",
++          "inspection_state": "Prior substantive sourcecomparison reused",
++          "remaining_gap_ids": [
++            "AUD016-A1:G02"
++          ]
++        },
++        {
++          "assertion_id": "B129:02",
++          "assertion": "Known liaison-answer noncorrection",
++          "source_support": "Distinct DOTfinding with conflictingknowledge/correctionaccounts",
++          "source_locator": "https://www.oig.dot.gov/sites/default/files/cc2006085.pdf printed9\u201310,12",
++          "inspection_state": "Source-level finding; priorreview reused",
++          "remaining_gap_ids": [
++            "AUD005:G14"
++          ]
++        },
++        {
++          "assertion_id": "B129:03",
++          "assertion": "Knowing original falsity or attack participation",
++          "source_support": "Not established by later noncorrection alone",
++          "source_locator": "https://www.oig.dot.gov/sites/default/files/cc2006085.pdf printed5\u201310",
++          "inspection_state": "Insufficientknowingnotification-falsehood finding and contraryfacts retained",
++          "remaining_gap_ids": [
++            "AUD005:G14"
++          ]
++        },
++        {
++          "assertion_id": "B129:04",
++          "assertion": "Administrative action actually occurred",
++          "source_support": "Recommendation is not a decision/outcome",
++          "source_locator": "https://www.oig.dot.gov/sites/default/files/cc2006085.pdf printed12",
++          "inspection_state": "Disposition assigned to separateowner",
++          "remaining_gap_ids": [
++            "AUD005:G14"
++          ]
++        }
+       ],
+-      "independence": "Reports, exhibits and later reconstructions may share underlying inputs. No independent corroboration count inferred from number of publishers.",
+-      "independent_historical_replication": false,
+-      "publication_at_creation": "Local prepared derivative; remote branch/PR/main status recorded only after actual publication verification."
++      "work_status": {
++        "first_pass_preserved": "Reuse substantive prior audit; intent qualification strengthened",
++        "current": "Partial source-level evaluation; underlying tests/gaps explicitly listed.",
++        "independent_historical_replication": false,
++        "remaining_gap_ids": [
++          "AUD005:G14",
++          "AUD016-A1:G02"
++        ]
++      }
+     },
+     {
+-      "review_id": "AUD016-TC10",
+       "claim_id": "B188",
+-      "exact_original_wording": "| **Steel was disposed of before adequate investigation** | **A valid evidence-preservation criticism.** Potentially useful material was lost. Nevertheless, investigators examined recovered steel; it is false that there was no materials investigation. WTC 7’s lack of confidently identified retained steel is a particularly important limitation. [tms.org](https://www.tms.org/pubs/journals/jom/0711/banovic-0711.html?utm_source=chatgpt.com) |",
+-      "original_source_file": "ASSESSMENT-ORIGINAL.md",
+-      "source_line_start": 313,
+-      "source_line_end": 313,
+-      "source_sha256": "03e74d70ca0361d51325f8ee5d73b8626a701f2a08798f17e6b36f22d7e8df9d",
+-      "cited_URLs_as_supplied": [
+-        "https://www.tms.org/pubs/journals/jom/0711/banovic-0711.html?utm_source=chatgpt.com"
+-      ],
+-      "matching_M_ids": [
+-        "M059",
+-        "M060",
+-        "M065",
+-        "M066",
+-        "M109",
+-        "M110",
+-        "M111",
+-        "M112",
+-        "M123"
+-      ],
+-      "film_attribution": {
+-        "film": "Loose Change series",
+-        "edition": "Claim-family attribution only: Second Edition / Final Cut / 52-minute 2015 distributor version; specific cut unresolved; do not substitute full 2009 American Coup",
+-        "attribution_verified": false
++      "review_id": "AUD016-TC10",
++      "exact_original_wording": "| **Steel was disposed of before adequate investigation** | **A valid evidence-preservation criticism.** Potentially useful material was lost. Nevertheless, investigators examined recovered steel; it is false that there was no materials investigation. WTC 7\u2019s lack of confidently identified retained steel is a particularly important limitation. [tms.org](https://www.tms.org/pubs/journals/jom/0711/banovic-0711.html?utm_source=chatgpt.com) |",
++      "historical_assessment": {
++        "change_from_method_audit": "No historical verdict reversed solely by this methods audit.",
++        "earlier_assessment_preserved": "The prior steel audit documents recycled/accidentally processed pieces, survivors and unidentified field-attributed WTC7 candidates in the NIST inventory. Preservation loss and surviving materials work coexist.",
++        "current_qualification": "Read the assertion-level support and current work status; earlier access/reading states are historical, not current."
+       },
+-      "film_timestamp": null,
+-      "film_timestamp_status": "Explicit unknown; no verified cut/time attribution",
+-      "original_rationale": "Contained verbatim in exact_original_wording; not newly endorsed",
+-      "status_at_freeze": "unreviewed in this ten-claim pass",
+-      "review_state": "Reuse substantive prior audit; reject blanket disappearance",
+-      "current_assessment": "The prior steel audit documents recycled/accidentally processed pieces, survivors and unidentified field-attributed WTC7 candidates in the NIST inventory. Preservation loss and surviving materials work coexist.",
+-      "strongest_objection_or_limit": "Loss limits tests but does not identify a demolition mechanism. Candidate attribution, present custody and original agreements/processing orders remain unresolved. Current pass reuses that audit rather than repeating metallurgy.",
+-      "discriminating_test": "Join specimen/yard/coupon/transfer/attribution records and actual preservation decisions; identify which tests are irrecoverably lost versus still feasible with survivors.",
+-      "inspected_source_locators": [
+-        "evidence-preservation-chains-2026-10-26/STEEL-REPORT.md:prior inventory/preservation source joins"
++      "source_support": [
++        {
++          "assertion_id": "B188:01",
++          "assertion": "Some steel lost before adequate examination",
++          "source_support": "Contemporary testimony and inventory support impairedpreservation",
++          "source_locator": "dependencies/evidence-preservation-chains-2026-10-26/STEEL-REPORT.md",
++          "inspection_state": "Prior source audit reused",
++          "remaining_gap_ids": [
++            "AUD011:G15"
++          ]
++        },
++        {
++          "assertion_id": "B188:02",
++          "assertion": "All useful material disappeared/no materialswork",
++          "source_support": "Contradicted by survivingpieces,coupons,photographs and publishedinvestigations",
++          "source_locator": "https://www.fema.gov/pdf/library/fema403_apd.pdf",
++          "inspection_state": "Prior source audit reused; item-specific limits retained",
++          "remaining_gap_ids": [
++            "AUD011:G15"
++          ]
++        },
++        {
++          "assertion_id": "B188:03",
++          "assertion": "Specific city refusal/authorization",
++          "source_support": "Charter, firsthandaccess and disposalorder are distinct",
++          "source_locator": "Steel report: March6/May1hearing comparison",
++          "inspection_state": "Original request/order/authorizer unjoined",
++          "remaining_gap_ids": [
++            "AUD011:G15"
++          ]
++        },
++        {
++          "assertion_id": "B188:04",
++          "assertion": "Candidate steel reached NIST",
++          "source_support": "Published W-14A/W-14B entries support receipt-level inventory but not unambiguousbuildingidentity",
++          "source_locator": "https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3b.pdf TableA-1 and A-7",
++          "inspection_state": "Identifier/classification join completed; originalattribution/custody open",
++          "remaining_gap_ids": [
++            "AUD011:G15"
++          ]
++        },
++        {
++          "assertion_id": "B188:05",
++          "assertion": "Sulfur/corrosion establishes initiating mechanism",
++          "source_support": "Published candidate metallography does not identify originalsupport, timing or a device",
++          "source_locator": "FEMAAppendixC C-1/C-13 as linked insteelreport",
++          "inspection_state": "Sourcequalification preserved; no assayreplication",
++          "remaining_gap_ids": [
++            "AUD011:G15"
++          ]
++        }
+       ],
+-      "independence": "Reports, exhibits and later reconstructions may share underlying inputs. No independent corroboration count inferred from number of publishers.",
+-      "independent_historical_replication": false,
+-      "publication_at_creation": "Local prepared derivative; remote branch/PR/main status recorded only after actual publication verification."
++      "work_status": {
++        "first_pass_preserved": "Reuse substantive prior audit; reject blanket disappearance",
++        "current": "Partial source-level evaluation; underlying tests/gaps explicitly listed.",
++        "independent_historical_replication": false,
++        "remaining_gap_ids": [
++          "AUD011:G15"
++        ]
++      }
+     }
+   ],
+-  "complete": false,
+-  "scope": "Six newly examined claim units (B096/B097/B100/B105/B160/B161), one held-notes partial review(B110), two earlier substantive audits reused(B129/B188), and AA77 primary-root review pending(B078). These categories overlap by shared source; not ten independent tests."
++  "complete_historical_audit": false
+ }
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..d6766bca
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,17 @@
++# Owner integration of the independent methods audit
++
++October 27, 2026. EM01–EM08 are incorporated into this additive layer after source/locator checks. The original ten statements and first-pass review remain preserved at1229c07b; later materials work atce5f2b08 is retained. This does not replace those records or announce a historical verdict reversal.
++
++[REVIEW-v2.json](REVIEW-v2.json) separates each compound assertion's source support, historical assessment and work status. Flight-path reconstruction no longer lends apparent inspected support to unjoined recovery, occupant-identification, photographs or witness claims. Olson's connected-call, zero-duration, Keyton and office-transfer assertions have separate gaps. The later [telephone supplement](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md) has acquired the mirrored Keyton/Voss forms and decoded the court's stored zero-duration label. Keyton's investigation field is September11 and transcription September14,2001; these are different dates. Canonical provenance, carrier/operator/PBX semantics and unique caller attribution remain open. Preserve159 versus154seconds, eightcalls versus seven displayed rows and the direct/collect disagreement; no cause is selected. The same rule applies to affirmative FAA/steel criticisms and materials claims.
++
++[SOURCE-DEPENDENCE.json](SOURCE-DEPENDENCE.json) maps repeated documents, reported instrument channels and unknown custody/calibration relationships. Three claims reuse UA93; two reuse the CVR transcript. The author's decoder, full/reduced CSVs and paper share an input/producer lineage. Repetition adds no independent experiment, while distinct channels are not dismissed merely because one report combines them.
++
++[COMPARISONS.json](COMPARISONS.json) is the unchanged omitted arithmetic file. [LOCATOR-MAP.json](LOCATOR-MAP.json) supplies six verified NPS derived-to-raw anchors; court locators remain candidates. [DEPENDENCY-JOINS.json](DEPENDENCY-JOINS.json) links actual byte-identical historical FAA and steel reports under dependencies. Their original local/unpublished labels describe creation status, not this later export. The reports retain failed-ASR and survivor/candidate qualifications; no new clock reconstruction, assay or physical test was performed.
++
++Later work matters: the official AA77 report, cited airline printout, decoder source and producer outputs have been acquired. A local output-consistency check ran twice identically; native FDR/agency CSV/clock/custody and physical joins remain open. Do not reopen the report-acquisition gap or call producer-output agreement independent raw decoding. Materials identification figures/selected appendices, conditional oxygen arithmetic and four-trace/three-collection linkage were reviewed after the frozen pass. Native instrument/custody/matched-specimen and chip/run gaps remain. Millette's different-specimen qualification already appeared in the original assessment; the auditor's pointer error did not alter or lose the PDF.
++
++[SOURCE-GAPS.json](SOURCE-GAPS.json) is a generated view of the existing investigation task register's gaps, with stable parent-task IDs, priorities, exact known locators or explicit missing identifiers, access/inspection state, dependencies, next records/tests and observable completion criteria. The two report-export entries describe publication joins separately from underlying scientific/historical work. FAA postreport work stays with its assigned owner. All original sixteen tasks, five supplements, baseline134IDs and conflicting values remain; the purposefully selected ten claims do not estimate an overall error rate or percentage complete.
++
++[AUDIT-DISPOSITION.json](AUDIT-DISPOSITION.json) gives each EM item's disposition. [PROVENANCE.json](PROVENANCE.json) identifies versions and reading limits. [TEXT-CHANGES.diff](TEXT-CHANGES.diff) compares the new annotation layer with the immediately preceding preserved review and records the new report text; source/layout reviews are separate. Missing inputs remain unacquired unless a source separately establishes withholding/loss/destruction. Access failure and logical nonexclusion do not supply affirmative evidence for an alternative.
++
++This is the substantive owner's adoption, not merely the auditor's proposal. Underlying historical tests remain open. Local, branch-published, default-main and accepted states are separate: publication requires a separate dated exact-ref/file receipt. The public packet excludes native attachments, private case/correspondence/history, source-contact fields and the new local CIA interview findings. No merge, force push, outreach, fee, filing or deletion is authorized.
+
+Immediate prepublication draft correction after the completed telephone supplement was located. Earlier draft preserved locally; no published history rewritten.
+
+diff --git a/draft-before-telephone/REVIEW-v2.json b/REVIEW-v2.json
+index fdf5c29b..00089433 100644
+--- a/draft-before-telephone/REVIEW-v2.json
++++ b/REVIEW-v2.json
+@@ -310,7 +310,7 @@
+       "historical_assessment": {
+         "change_from_method_audit": "No historical verdict reversed solely by this methods audit.",
+         "earlier_assessment_preserved": "Commission note57, physical7/printed455, lists four connected calls and explicitly says unique matching to the two Olson conversations was not possible. It supports attribution uncertainty.",
+-        "current_qualification": "Read the assertion-level support and current work status; earlier access/reading states are historical, not current."
++        "current_qualification": "Earlier lack-of-source states superseded by actualtelephoneacquisition. Witnessclaim has sourcelevelsupport; a zero-duration attempt does not establish absence of othercalls. Preserve all date/duration/count and collect/direct differences."
+       },
+       "source_support": [
+         {
+@@ -327,9 +327,9 @@
+         {
+           "assertion_id": "B110:02",
+           "assertion": "Zero-duration attempt",
+-          "source_support": "Specific carrier/trialrow not joined by note57",
+-          "source_locator": "OriginalB110 line183",
+-          "inspection_state": "Unacquired exactrow",
++          "source_support": "OfficialcourtSWF stores the zero-duration/unconnectedlabel; underlyingcarrier/callersemantics remain unverified.",
++          "source_locator": "https://coop.vaed.uscourts.gov/moussaoui/flights.zip AA77.swf statictextIDs1691\u20131694; https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md",
++          "inspection_state": "Storeddefinitions decoded in completedtelephoneunit; integration verifiedsourcehashes, not a newFlashruntime or carriercheck.",
+           "remaining_gap_ids": [
+             "AUD016-A1:G09"
+           ]
+@@ -337,9 +337,9 @@
+         {
+           "assertion_id": "B110:03",
+           "assertion": "Keyton statement",
+-          "source_support": "Exactinterview not supplied by note57",
+-          "source_locator": "OriginalB110 line183",
+-          "inspection_state": "Unacquired exactinterview",
++          "source_support": "Acquired mirroredFD302 supports witnessdescription with limits; second-directcall versus Vossbothcollect conflict retained.",
++          "source_locator": "https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=48; stamp000000736, investigation9/11/01, transcription09/14/2001; Vossphysical51.",
++          "inspection_state": "Mirror/extraction acquired; selectednative48/51 inspected. Canonicalprovenance/notes/audio and office/carrier joins open.",
+           "remaining_gap_ids": [
+             "AUD016-A1:G08"
+           ]
+@@ -347,9 +347,9 @@
+         {
+           "assertion_id": "B110:04",
+           "assertion": "Office/operator transfer and caller attribution",
+-          "source_support": "Must be traced separately from duration/callcount",
+-          "source_locator": "Commissionnote57 source list",
+-          "inspection_state": "Underlyingoperator/office joins open",
++          "source_support": "Recipient/officeaccounts and briefing infercalleridentity; Keyton/Voss and unknownconnectedentrymatching are not independentcarrierconfirmations.",
++          "source_locator": "https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md TEL04\u2013TEL06; Commissionnote57.",
++          "inspection_state": "Underlyingwitnessforms now acquired; operator/PBX and uniqueelectronicrowmatching remain open.",
+           "remaining_gap_ids": [
+             "AUD016-A1:G07",
+             "AUD016-A1:G08",
+@@ -359,7 +359,7 @@
+       ],
+       "work_status": {
+         "first_pass_preserved": "Mixed support; a citation gap is retained",
+-        "current": "Partial source-level evaluation; underlying tests/gaps explicitly listed.",
++        "current": "Telephone follow-up acquired Keyton/Voss releasedmirror, officialstaticcourtlabels and Maybriefing; visual/static/sourcechecks completed as scoped. Nativeprovenance/carrier/operator/PBX and caller/fieldsemantics open.",
+         "independent_historical_replication": false,
+         "remaining_gap_ids": [
+           "AUD016-A1:G07",
+
+diff --git a/draft-before-telephone/SOURCE-GAPS.json b/SOURCE-GAPS.json
+index f8f62e7d..58a24a76 100644
+--- a/draft-before-telephone/SOURCE-GAPS.json
++++ b/SOURCE-GAPS.json
+@@ -127,9 +127,9 @@
+       ],
+       "assertion": "Telephone instrument, carrier/operator and office-transfer joins",
+       "source_url": "https://www.nps.gov/flni/learn/historyculture/phone-calls-and-seating-chart.htm",
+-      "exact_locator_or_explicit_gap": "NPS PhoneCalls methods/count passage; Commissionnote57 physical7/printed455",
+-      "current_state": "NPS37/35 attributed counts and interview-derived quote limits inspected; arithmetic and raw/derived locator bridge done. Individualcalls not authenticated.",
+-      "next_feasible_record_or_test": "Join per-call carrier/operator records, caller/instrument attribution and office-transfer records; evaluate disputed cellularcalls separately.",
++      "exact_locator_or_explicit_gap": "Published telephone supplement639bd09f TEL01\u2013TEL06; Keytonphysical48/Voss51; May20briefing1\u20132; AA77.swf textIDs1691\u20131694. Preserve159vs154seconds, eightcalls vsseventablerows, secondcall direct vsbothcollect.",
++      "current_state": "Completed telephone supplement acquired officialcourtZIP, mirroredFD302pages and two-page May2004briefing; selected sourceimages/staticdefinitions checked. Nativecarrier/operator/PBX and caller/instrument joins remain open.",
++      "next_feasible_record_or_test": "Reuse completed sourcechecks; seek complete Sept20Airphone analysis M-INT-00158680 / 265A-NY-280350-IN-41864, April26DOJRequest14 enclosures, Jan20AALsupplement and operator/PBX records.",
+       "dependencies": [
+         "Specific call IDs and carrier/exhibit versions"
+       ],
+@@ -144,15 +144,15 @@
+         "B110"
+       ],
+       "assertion": "Exact Keyton interview/FD302",
+-      "source_url": "https://www.9-11commission.gov/report/911Report_Notes.pdf",
+-      "exact_locator_or_explicit_gap": "Physical7/printed455note57 does not contain Keytoninterview; located FBI Sept2001part02bundle returned403",
+-      "current_state": "Exact interview not acquired or inspected; existing source-citation gap remains.",
+-      "next_feasible_record_or_test": "Locate the actual dated Keytoninterview/FD302 and reportidentifier through a new public locator; do not repeat unchanged403 route.",
++      "source_url": "https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=48",
++      "exact_locator_or_explicit_gap": "Mirrored Team7Box13 FlightCallNotes/302s physical48; REQ.#35-13 000000736; investigation9/11/01 versus transcription09/14/2001; related Vossphysical51.",
++      "current_state": "Acquired releasedmirror and extraction; selectednativepages48/51 now also viewed in ownerintegration. Not authenticatedoriginalaudio/notes or canonicalagencycopy. EarlierFBI403 remains historicalroutefailure.",
++      "next_feasible_record_or_test": "Authenticate canonical provenance and any originalagentnotes/audio; compare interview/transcriptiondates and actualoffice/operatorrecords. Do not re-open mirroracquisition as missing.",
+       "dependencies": [
+         "Exact record/date locator",
+         "AUD016-A1:G07"
+       ],
+-      "observable_completion_criteria": "Read/pin actualinterview, separate what was witnessed from relayed information, and compare officecall/transfer records.",
++      "observable_completion_criteria": "Distinguish inspectedmirror from canonicalprovenance; pin actualagentnotes/audio if public, reconcile direct/collect accounts with rawrouting or explicitly retain limits.",
+       "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+     },
+     {
+@@ -163,16 +163,16 @@
+         "B110"
+       ],
+       "assertion": "Zero-duration attempt versus connected calls",
+-      "source_url": "https://www.vaed.uscourts.gov/node/150",
+-      "exact_locator_or_explicit_gap": "Exact trial/carrier row is unjoined; Commissionnote57 discusses four connectedcalls with uncertain matching",
+-      "current_state": "A zero-duration record has not been independently joined to a caller, attempt and originating instrument here.",
+-      "next_feasible_record_or_test": "Locate exact public trialexhibit/carrier row and provenance; separate noanswer/attempt semantics from claims no call occurred.",
++      "source_url": "https://coop.vaed.uscourts.gov/moussaoui/flights.zip",
++      "exact_locator_or_explicit_gap": "OfficialflightsZIP AA77.swf statictextIDs1691\u20131694 at offsets3183776/3183822/3183887/3183950; telephone supplement TEL01\u2013TEL03.",
++      "current_state": "Zero-duration named storedpresentation label acquired/decoded; courtZIP and sourcepins available. Underlying carrierrow/classification/clock and callerattribution remain unverified; no runtimeFlash execution.",
++      "next_feasible_record_or_test": "Test nativecarrier/operatorfieldsemantics, attempt/connection/legs and officePBX/callermatching against the alreadyacquired label and preserved159vs154seconds/countconflicts.",
+       "dependencies": [
+         "Exhibitidentifier/version",
+         "AUD016-A1:G07",
+         "AUD016-A1:G08"
+       ],
+-      "observable_completion_criteria": "Actual row/legend, attempt/connection semantics, timestamps and caller matching compared with other connectedcalls; preserve uncertainty.",
++      "observable_completion_criteria": "Keep verifiedstoredlabel separate from carrier/callertruth; actualsourcefielddefinitions and provenance/routing comparison, without treating an unconnectednamedentry as proof no otherconversation.",
+       "missingness": "Unacquired unless explicitly stated otherwise; no destruction/withholding inference from access failure."
+     },
+     {
+
+diff --git a/draft-before-telephone/SOURCE-DEPENDENCE.json b/SOURCE-DEPENDENCE.json
+index 06edaa4a..83b029d0 100644
+--- a/draft-before-telephone/SOURCE-DEPENDENCE.json
++++ b/SOURCE-DEPENDENCE.json
+@@ -81,6 +81,16 @@
+       ],
+       "known": "Output files/paper/decoder belong to a shared producer/input lineage; reduced is firstsample of full output, not independentconfirmation.",
+       "unknown": "Native recorder authenticity/custody, independently checked decode/error handling and absolute clock calibration."
++    },
++    {
++      "records": [
++        "OfficialcourtAA77.swf",
++        "May2004briefing",
++        "Commissionnote57",
++        "Keyton/Voss/Olsonofficeforms"
++      ],
++      "known": "Staticpresentationlabels and mirroredforms acquired. Sameofficeaccounts and possiblecommonbriefing/carrieranalysis; report/formrepetition is not independentcallerconfirmation.",
++      "unknown": "Nativecarrier/operator/PBX links, fieldsemantics, canonicalformprovenance and causeof159vs154second/count/direct-collectdifferences."
+     }
+   ],
+   "rule": "Do not count publications or claim rows as independent corroborations. Do not erase potentially corroborating distinct channels just because they appear in one report. Unknown dependence stays unknown.",
+
+diff --git a/draft-before-telephone/README.md b/README.md
+index a712f52b..d6766bca 100644
+--- a/draft-before-telephone/README.md
++++ b/README.md
+@@ -2,7 +2,7 @@
+ 
+ October 27, 2026. EM01–EM08 are incorporated into this additive layer after source/locator checks. The original ten statements and first-pass review remain preserved at1229c07b; later materials work atce5f2b08 is retained. This does not replace those records or announce a historical verdict reversal.
+ 
+-[REVIEW-v2.json](REVIEW-v2.json) separates each compound assertion's source support, historical assessment and work status. Flight-path reconstruction no longer lends apparent inspected support to unjoined recovery, occupant-identification, photographs or witness claims. Olson's connected-call, zero-duration, Keyton and office-transfer assertions have separate gaps. The same rule applies to affirmative FAA/steel criticisms and materials claims.
++[REVIEW-v2.json](REVIEW-v2.json) separates each compound assertion's source support, historical assessment and work status. Flight-path reconstruction no longer lends apparent inspected support to unjoined recovery, occupant-identification, photographs or witness claims. Olson's connected-call, zero-duration, Keyton and office-transfer assertions have separate gaps. The later [telephone supplement](https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md) has acquired the mirrored Keyton/Voss forms and decoded the court's stored zero-duration label. Keyton's investigation field is September11 and transcription September14,2001; these are different dates. Canonical provenance, carrier/operator/PBX semantics and unique caller attribution remain open. Preserve159 versus154seconds, eightcalls versus seven displayed rows and the direct/collect disagreement; no cause is selected. The same rule applies to affirmative FAA/steel criticisms and materials claims.
+ 
+ [SOURCE-DEPENDENCE.json](SOURCE-DEPENDENCE.json) maps repeated documents, reported instrument channels and unknown custody/calibration relationships. Three claims reuse UA93; two reuse the CVR transcript. The author's decoder, full/reduced CSVs and paper share an input/producer lineage. Repetition adds no independent experiment, while distinct channels are not dismissed merely because one report combines them.
+ 
+
+diff --git a/draft-before-telephone/PROVENANCE.json b/PROVENANCE.json
+index fc62783a..4147bb3b 100644
+--- a/draft-before-telephone/PROVENANCE.json
++++ b/PROVENANCE.json
+@@ -67,5 +67,25 @@
+       "byte_identical_historical_export": true,
+       "status_note": "Original local/unpublished/nextaction statements remain historical creation-state text. This export does not rerun the tests, update anotherowner investigation or imply present historicalcompletion."
+     }
+-  ]
++  ],
++  "telephone_followup": {
++    "public_report": "https://github.com/AveLyra/911-conspiracy-investigation/blob/639bd09f9f8116707df2be5fb04d87472afd58cb/investigation/broader-evidence/telephone-originals-2026-10-27/README.md",
++    "source_pins": [
++      {
++        "source": "court-flights.zip",
++        "url": "https://coop.vaed.uscourts.gov/moussaoui/flights.zip",
++        "sha256": "3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801",
++        "bytes": 28304524,
++        "scope": "MirrorFD302 selectedpage extraction/nativeviews or staticcourtSWF definition checks; not rawcarrier/caller authentication."
++      },
++      {
++        "source": "flight-call-notes-302s-mirror.pdf",
++        "url": "https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf",
++        "sha256": "e3cf374351cb753d1297433f86bb5807c56cb42a6dc69837a9df02dd0d54f4aa",
++        "bytes": 2997662,
++        "scope": "MirrorFD302 selectedpage extraction/nativeviews or staticcourtSWF definition checks; not rawcarrier/caller authentication."
++      }
++    ],
++    "scope": "Reuse completedtelephoneunit; currentintegrationindependentlyhashedsources and readselected48/51images. No extra rawauthentication claimed."
++  }
+ }
+

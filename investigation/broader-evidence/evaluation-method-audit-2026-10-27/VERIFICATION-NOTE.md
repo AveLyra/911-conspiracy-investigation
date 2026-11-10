@@ -1,0 +1,9 @@
+# Verification history and limits
+
+The first portable run passed its 12 document checks and flagged TEXT-CHANGES.diff in the narrow disclosure-pattern screen. Inspection showed that the generated diff reproduced the verifier's own search-pattern literals, not a local username/path or private key. That failed result and the preceding checker/diff versions are preserved in the local study's revisions directory.
+
+The screen now matches an actual absolute user-path shape, complete private-key header or token shape. Synthetic positive controls for all three and a negative control for the original source-pattern literals are included. This fixes a test false positive; it does not clear a disclosure without review. The final run's exact outcome is in CHECKS.json. The payload was also manually reviewed as original public research, already-public snapshots and small reproducibility files, with no private assessment, correspondence, case strategy, source attachments or native repository history included.
+
+The 11 local source/baseline checks in NATIVE-CHECKS.json and the portable checks have different scopes. Neither counts as a historical experiment, an independent witness, physical authentication, legal approval or scientific acceptance. External-source reading and earlier source-image inspection are not layout verification of this Markdown report.
+
+TEXT-CHANGES.diff records new substantive supplement files against empty predecessors. README-REVISION.diff additionally shows the report's immediate editorial predecessor. The six frozen public files are byte-identical to their pinned target blobs; their unchanged status is deliberate. Verification result files, this note and diff artifacts have no preceding published versions; the full publication commit diff separately records every addition.

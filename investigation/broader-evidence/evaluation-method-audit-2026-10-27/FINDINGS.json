@@ -1,0 +1,243 @@
+{
+  "scope": "Independent methods audit of the frozen first source pass; finding kinds distinguish actual defects, improvements, safeguards and uncompleted work.",
+  "target_commit": "1229c07b033394c0e50907a9edf3fe8fc22aec3e",
+  "findings": [
+    {
+      "id": "EM01",
+      "kind": "confirmed publication-reference defect",
+      "priority": "P2",
+      "confidence": "high",
+      "observation": "The public README names COMPARISONS.json, but the frozen six-file publication contains no such file. The native file exists and contains only two labeled subtractions.",
+      "locations": [
+        {
+          "file": "frozen/README.md",
+          "line_start": 25,
+          "line_end": 25
+        }
+      ],
+      "test": "Exact target Git tree enumeration plus inspection and hashing of the native arithmetic file.",
+      "effect": "A reader cannot inspect that named artifact from the target publication.",
+      "strongest_objection": "Both arithmetic inputs are in the narrative; the omitted file does not change either calculation or establish missing historical evidence.",
+      "repair": "This additive supplement includes an unchanged, hash-pinned COMPARISONS.json. The original publication is left intact.",
+      "state": "repaired in this supplement; parent publication unchanged",
+      "not_established": "No clock calibration, call authentication, data deletion or historical misconduct follows."
+    },
+    {
+      "id": "EM02",
+      "kind": "confirmed locator and dependency reviewability gap",
+      "priority": "P2",
+      "confidence": "high for target publication; not a corpus-wide absence finding",
+      "observation": "The calls locators are derived text lines, not raw HTML lines, and their extraction is absent from the public payload. Two reused native FAA/steel reports are not present under their cited names in the target public tree.",
+      "locations": [
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 154,
+          "line_end": 159
+        },
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 285,
+          "line_end": 290
+        },
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 327,
+          "line_end": 332
+        },
+        {
+          "file": "frozen/PROVENANCE.json",
+          "line_start": 36,
+          "line_end": 36
+        }
+      ],
+      "test": "Compared preserved raw HTML, the held derived line layers and the frozen target tree. LOCATOR-MAP.json bridges six NPS locators and records court candidates.",
+      "effect": "Readers can open publisher URLs but cannot follow every local locator or reused-report dependency exactly from this derivative.",
+      "strongest_objection": "The reviewer disclosed reuse, and relevant primary records or other public studies may exist elsewhere. This is not proof that no such records were reviewed or published.",
+      "repair": "Publish source-hash-specific raw/derived anchor bridges and full public links. Nominate the original study owner to close the two report-export joins after disclosure review.",
+      "state": "NPS bridge implemented; full reused-report publication joins remain open"
+    },
+    {
+      "id": "EM03",
+      "kind": "compound-claim support needs finer attribution",
+      "priority": "P1",
+      "confidence": "high for scope of this source pass",
+      "observation": "Some original verdicts combine distinct evidentiary assertions under one citation. A flight-path report is not an inspected occupant-identification record; Commission note57 does not supply the Keyton interview or the zero-duration exhibit.",
+      "locations": [
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 7,
+          "line_end": 7
+        },
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 37,
+          "line_end": 37
+        },
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 167,
+          "line_end": 167
+        },
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 299,
+          "line_end": 299
+        }
+      ],
+      "test": "Compared every frozen claim with its declared inspection scope; separately checked NTSB physical1–2, Commission note57 and the NPS methods passage. CLAIM-SUPPORT.json records all ten rows.",
+      "effect": "A well-supported part can lend unwarranted apparent coverage to adjacent assertions.",
+      "strongest_objection": "The current review already flags several gaps. Unjoined evidence can exist and be persuasive; incomplete citation coverage does not prove a historical conclusion false.",
+      "repair": "Keep parent claim IDs and wording, but identify each assertion, its source, inspection status and inferential role. Join recovery, occupant-ID, office-witness and preservation-decision records separately.",
+      "state": "audit-side support matrix implemented; substantive parent adoption pending"
+    },
+    {
+      "id": "EM04",
+      "kind": "dependence warning needs an actual source map",
+      "priority": "P1",
+      "confidence": "high for reuse; historical input dependence partly unknown",
+      "observation": "All ten rows repeat the same independence warning. UA93 is reused for B096/B097/B100, and the CVR transcript for B097/B100. Ten claim reviews are not ten independent experimental checks.",
+      "locations": [
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 30,
+          "line_end": 30
+        },
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 62,
+          "line_end": 62
+        },
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 95,
+          "line_end": 95
+        },
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 128,
+          "line_end": 128
+        },
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 340,
+          "line_end": 340
+        }
+      ],
+      "test": "Counted the unique warning strings and mapped each inspected_source_locators entry to claim IDs.",
+      "effect": "A generic warning does not let a reader identify which conclusions share evidence.",
+      "strongest_objection": "The report already expressly disclaims ten independent tests. Different instrument channels may provide corroboration; shared authorship or publication does not erase it.",
+      "repair": "SOURCE-DEPENDENCE.json distinguishes repeated documents, reported distinct channels, shared reconstruction and unknown clock/custody/calibration relationships. Do not assign an independent-corroboration count without the underlying joins.",
+      "state": "document-level map implemented; historical channel independence not established"
+    },
+    {
+      "id": "EM05",
+      "kind": "interpretation guardrail, not an established reversal",
+      "priority": "P1",
+      "confidence": "high",
+      "observation": "The review states that an access failure is not counterevidence and that control inputs do not logically exclude an external strike. These are limits of the performed audit, not affirmative evidence for a different event.",
+      "locations": [
+        {
+          "file": "frozen/README.md",
+          "line_start": 7,
+          "line_end": 7
+        },
+        {
+          "file": "frozen/README.md",
+          "line_start": 19,
+          "line_end": 21
+        },
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 25,
+          "line_end": 28
+        },
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 87,
+          "line_end": 90
+        }
+      ],
+      "test": "Read verdict and objection fields together; compared original wording with actual inspection/replication scope.",
+      "effect": "Readers or later summaries may convert audit incompleteness into a historical downgrade, or treat a merely possible alternative as equally supported.",
+      "strongest_objection": "The first pass already makes the key qualifications. A new complicated scoring framework would add little; relevant unresolved contrary evidence must still be considered.",
+      "repair": "Use explicit source_support, historical_assessment and work_status annotations in summaries. Require a specified alternative to supply discriminating predictions or contrary evidence, while retaining relevant circumstantial support.",
+      "state": "guardrail recorded; no historical verdict reversed by this audit"
+    },
+    {
+      "id": "EM06",
+      "kind": "open substantive acceptance work, accurately disclosed",
+      "priority": "P1",
+      "confidence": "high about reading scope; no new chemistry verdict",
+      "observation": "The frozen materials pass did not read most Harrit identification figures or all Millette appendices. It accurately disclosed that limitation and performed no assay. Later materials continuation is outside this frozen target.",
+      "locations": [
+        {
+          "file": "frozen/PROVENANCE.json",
+          "line_start": 15,
+          "line_end": 15
+        },
+        {
+          "file": "frozen/PROVENANCE.json",
+          "line_start": 43,
+          "line_end": 43
+        },
+        {
+          "file": "frozen/README.md",
+          "line_start": 13,
+          "line_end": 13
+        },
+        {
+          "file": "frozen/README.md",
+          "line_start": 25,
+          "line_end": 25
+        }
+      ],
+      "test": "Compared stated page/image scopes with claim-level conclusions; confirmed every historical-replication flag remains false.",
+      "effect": "Methods/custody observations alone cannot complete an evaluation of all identification results or classify every specimen.",
+      "strongest_objection": "One need not read every appendix to support a narrow directly observed qualification. The different-sample limit already appears in the original B161 wording.",
+      "repair": "Finish the decisive already-held identification evidence, author responses and sample-to-result joins before a broader chemical verdict. Distinguish chemical identity, building attribution and intentional placement.",
+      "state": "substantive evaluation-owner continuation; not newly completed here"
+    },
+    {
+      "id": "EM07",
+      "kind": "confirmed error in our preceding explanation",
+      "priority": "P2",
+      "confidence": "high",
+      "observation": "Our preceding plain-English explanation linked Millette to a nonexistent study-date path. The held PDF exists in the ten-claim source directory and matches the published source hash.",
+      "locations": [
+        {
+          "file": "our preceding chat explanation",
+          "locator": "Millette source link; source contents not alleged missing"
+        }
+      ],
+      "test": "Checked existence of the earlier and correct local targets and hashed the correct PDF.",
+      "effect": "The reader could not follow that link, although the evidence file was present.",
+      "strongest_objection": "This is our citation-path error; it changes neither the source bytes nor the laboratory result.",
+      "repair": "Use the verified publisher URL in the public report and the corrected exact local path in the local audit receipt. Preserve the error record.",
+      "state": "corrected source pointer supplied; earlier explanation preserved"
+    },
+    {
+      "id": "EM08",
+      "kind": "publication-state guardrail and audit pass",
+      "priority": "P2",
+      "confidence": "high for frozen target; current state requires dated verification",
+      "observation": "Committed locally, published on a branch, on default main, included in a PR, and accepted substantively are distinct states. The target is fixed by commit, and is not assumed to be default-main content.",
+      "locations": [
+        {
+          "file": "frozen/README.md",
+          "line_start": 29,
+          "line_end": 29
+        },
+        {
+          "file": "frozen/REVIEW.json",
+          "line_start": 32,
+          "line_end": 32
+        }
+      ],
+      "test": "Freeze by full commit and exact blob hashes; perform a separate timestamped destination/ref/blob verification for this publication.",
+      "effect": "Main-only checks can miss branch-only work; successful push is not acceptance of historical analysis.",
+      "strongest_objection": "publication_at_creation intentionally records the creation state; a frozen status field is not itself a false current-state claim.",
+      "repair": "Report the exact public ref, commit, date, account and payload check separately. Do not silently edit a frozen creation-state field.",
+      "state": "publication will have a separate verified receipt; no acceptance implied"
+    }
+  ]
+}
