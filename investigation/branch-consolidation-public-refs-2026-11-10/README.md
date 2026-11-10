@@ -258,3 +258,5 @@ Additional historical derivatives: [DOT investigation-follow-up policy](../broad
 The retained [reference-motion package](../wtc7/reference-motion/README.md) includes computational records with disclosed stable path pseudonyms and omitted media. Both the failed Camera 2 selection and narrow Camera 4 screen remain; synthetic checks do not establish the footage or collapse cause.
 
 An [idealized structural-bounds exercise](../wtc7/structural-bounds.md) has been recovered with code, synthetic results and historical provenance. Its 15 unit tests were rerun; the model uses hypothetical inputs and is not a WTC 7 reconstruction or cause finding.
+
+The [fuel-system source audit](../wtc7/fuel-system-audit/README.md) has been recovered as a qualified derivative. Its published arithmetic was checked, while source media and selected sensitive or source-specific materials remain omitted; it does not establish a diesel fire or collapse cause.

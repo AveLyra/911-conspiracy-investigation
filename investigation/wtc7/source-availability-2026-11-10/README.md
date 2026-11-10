@@ -19,3 +19,5 @@ A historical [fire-observation source map](../fire-observation-source-map.md) an
 The recovered [reference-motion package](../reference-motion/README.md) preserves a failed Camera 2 selection and limited Camera 4 screens, with source media omitted. Its stable path labels are not encryption; a recursive check verified key/value structure after redaction. The [latest target inventory](OPEN-TARGETS-UPDATE-7.json) records literal link availability.
 
 The recovered [idealized structural-bounds exercise](../structural-bounds.md) uses hypothetical mechanics rather than building-specific data; unit tests check its equations, not the collapse. The [latest target inventory](OPEN-TARGETS-UPDATE-8.json) records literal link availability.
+
+The recovered [fuel-system source audit](../fuel-system-audit/README.md) preserves historical equipment, inventory and scenario reviews. Original media and sensitive or source-specific materials are omitted; source and derivative hashes are recorded. The [latest target inventory](OPEN-TARGETS-UPDATE-9.json) counts remaining literal links.
