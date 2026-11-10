@@ -1,0 +1,72 @@
+diff --git a/PRECEDING-REVIEW-PRESERVED.md b/COMBINED-REVIEW-WITH-ZERO-ENTRY-CONTEXT-PUBLIC-v2.md
+index c6484d4f..2bfa5265 100644
+--- a/PRECEDING-REVIEW-PRESERVED.md
++++ b/COMBINED-REVIEW-WITH-ZERO-ENTRY-CONTEXT-PUBLIC-v2.md
+@@ -681,3 +681,67 @@ Initial raster-generation receipts said pending when created. Later final readin
+ The earlier public relay report and source bytes remain unchanged. This uniquely named candidate adds a source-status qualification and actual predecessor [text diff](REVISION.diff); it does not overwrite the old report. [CHECKLIST.md](CHECKLIST.md), [OBSERVATIONS.json](OBSERVATIONS.json), [OPEN-TODOS.md](OPEN-TODOS.md) and [VERIFICATION.json](VERIFICATION.json) distinguish held documents, source claims and unperformed tests. Four related entries are not independent corroboration. Checks cover bytes/manual locators/preservation, not independent source transcription or call authentication.
+ 
+ A held released interview/response component is now explicitly recognized. **No whole TEL01–TEL04 requirement or original five-track goal is completed**: native carrier/operator/office/clock/canvass/media/custody and other required originals/tests remain unresolved. The qualification is proposed on a separate non-overwriting review branch/PR against the parent relay branch, without merge or history rewrite.
++
++
++# Flight77 court exhibit: the zero entry's actual structural context
++
++2026-11-02. TEL01–TEL04; AUD016-A1 / TC05-B105 / TC06-B110. **New work in an already-held primary exhibit; no new source download, witness, carrier record or historical call verification.**
++
++The original court-distributed file puts **09:18:58, “0 SECONDS ” and “DEPARTMENT OF JUSTICEUNCONNECTED CALL” in an authored structure that also contains Barbara Olson's name**. A separate structure labelled **Unknown** contains **09:14:57, “ON BUTTONPRESSED” and “UNCONNECTED CALL.”** This goes beyond the October27 text-dictionary check: the associations now have actual encoded character references, rather than just adjacent definitions. It does not prove that either event occurred as labelled, that a particular screen was displayed at trial, or that no other call reached the office.
++
++## Original and scope actually tested
++
++The [court's P200054 exhibit page](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html) describes summaries and links a [ZIP](https://coop.vaed.uscourts.gov/moussaoui/flights.zip) containing all four flights. The ZIP was acquired October27,2026 at13:40:38.310051UTC, not newly downloaded here: **28,304,524bytes**, SHA-256 `3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801`. Its `AA77.swf` member has **5,162,821bytes**, SHA-256 `844dfb545c8414f9e7da1edc89ffe090a09d00d721a2c65c820e15f5fe201a06`. The filename does not make every stored object Flight77-specific; the file also holds navigation and other-flight material.
++
++We reused the static text and placement readers from the [earlier Reuben-name structural check](https://github.com/AveLyra/911-conspiracy-investigation/blob/2f78618d88ebcbd3e91811e9ba17f6457a6027ef/investigation/broader-evidence/telephone-wf334-static-context-2026-11-02/README.md). That earlier selection did not test this zero entry. This unit selected22text IDs, their incoming explicit placement/button references and ancestor sprites. All548previously extracted text definitions reproduce unchanged. We parsed98sprite declarations and253button definitions for structure; only the selected references were substantively assessed. We did not review every stored text, execute Flash/ActionScript, simulate display state or inspect a trial recording. [Source entities and access dates](SOURCES.json) · [Selected encoded results](STRUCTURE.json) · [Prospective scope and follow-on](METHOD.md).
++
++## 1. The zero entry has an encoded association with the Olson structure
++
++All offsets below are **zero-based bytes in the uncompressed AA77.swf**. Frame numbers are **local authored ShowFrame ordinals**, not seconds, synchronized playback or evidence of actual joint visibility.
++
++| Item | Text ID / definition offset | Actual encoded placement |
++|---|---|---|
++| Olson / Barbara |1684/3182196;1685/3182241 |sprite1704 local frame1, offsets3186267/3186303; further name definitions1689/1690 placed in that sprite at frame12, offsets3187111/3187128 |
++|09:18:58 |1691/3183776 |sprite1704 frame20, offset3193352, depth396 |
++|0 SECONDS (source has trailing space) |1692/3183822 |same sprite/frame, offset3193375, depth397 |
++|masked destination already in source |1693/3183887 |same sprite/frame, offset3193398, depth398; no masked digits reconstructed |
++|DEPARTMENT OF JUSTICEUNCONNECTED CALL |1694/3183950 |same sprite/frame, offset3193421, depth399 |
++
++Sprite1704 is defined at3186221 and is placed inside sprite2011 (`Photos`) at local frame48, offset5108120. The parent has an **Olson** label at frame47, offset5108067; that preceding frame places sprite1686, not1704. Preserve that one-frame distinction: no runtime jump, sequencing, persistence or screen appearance was simulated. The shared named structure is a firmer exhibit association than dictionary proximity, but it is not carrier evidence or an authenticated human-to-network-event join.
++
++## 2. The button-pressed entry belongs to a different authored structure
++
++The09:14:57 / ON BUTTONPRESSED / UNCONNECTED CALL text definitions are2001/5075936,2002/5075982 and2003/5076055. Their explicit placements are in sprite2010 at local frame19, offsets5105096/5105119/5105165. A button definition2009, offset5077604, also refers to all three; its over/down state flags and later placement at sprite2010 frame23 are encoded, not executed.
++
++Sprite2010 is placed inside `Photos`2011 at frame69, offset5109000, alongside its **Unknown** label at5108986. That association supports retaining this as the exhibit's separate unknown/button-pressed entry. It does not identify a person, establish an additional conversation or explain why the May2004 briefing table has seven rows while its text says eight calls. The earlier eight-minute-label crosswalk already existed; it is not a new independent finding here.
++
++The other selected unknown entry,09:25:48 /159 SECONDS, has IDs1997/1998, definition offsets5075706/5075752, and placements in sprite2010 frame10 at5103551/5103574. This source association does not settle **159 versus154seconds**.
++
++## 3. Summary counts are paired with names in actual button records
++
++| Stored pair |Text IDs |Button IDs / definition offsets |Root placement frames / offsets |
++|---|---|---|---|
++|2CALLS / RENEEMAY |2129/2130 |2134/5160536 and2139/5161492 |144/5160748 and151/5161702 |
++|1CALL / BARBARAOLSON |2136/2137 |2138/5161103 and2143/5162253 |148/5161315 and155/5162465 |
++|5CALLS / UNKNOWNCALLER |2140/2141 |2142/5161861 and2144/5162550 |152/5162087 and159/5162777 |
++
++Each name/count pair is referenced together within a button definition, including up and over/down state records. Two button definitions reuse each pair. **These repeated presentation objects are not additional call records or independent corroboration.** The3pairs also do not independently validate a census of eight attempts, completed conversations, network legs or persons. Their action bodies remain opaque and unexecuted; this test did not prove a button's interactive destination or the screen a trial viewer saw.
++
++## Conflicting records remain side by side
++
++- **Connection:** the September20,2001 *American Airlines Airphone Usage* reader pages43–44/internal1–2 reports an unnamed operator-routed caller “was subsequently connected” to the Solicitor General's Office. The May20,2004 briefing page2 and the court label classify09:18:58 as unconnected. The early report supplies no unique switch/leg join; the named caller and event cannot simply be equated. [Early report rendering](https://www.scribd.com/document/24392516/T7-B19-Key-302s-Fdr-Entire-Contents-FBI-302s) · [May briefing](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-52004-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408).
++- **Duration/counts:**159seconds in the briefing/court versus154seconds in the [Commission final-report note57, printed455](https://www.9-11commission.gov/report/911Report_Notes.pdf#page=7); eight calls in the briefing text versus seven displayed rows. Neither is resolved by tracing this exhibit. These are reused observations, not newly discovered discrepancies.
++- **Recipient accounts:**Keyton says the later call was direct, not collect; Voss believed both were collect. The official-hosted Keyton counterpart is already held at FBI September part02 physical69; Voss's previously reviewed mirror is physical51. [Official counterpart and source comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md). Their reports do not uniquely identify the unknown connected rows.
++- **May time descriptions:**6:05a.m.Pacific in the Dallas relay versus6:13a.m.with no printed zone in the already-held LasVegas family response remain unreconciled. [Preserved relay/response qualification](https://github.com/AveLyra/911-conspiracy-investigation/blob/e451c84f5494eef39539807b9b984bdb2bcd8eec/investigation/broader-evidence/telephone-may-response-qualification-2026-11-02/README.md). This unit performed no new time comparison or conversion.
++
++Different event/leg definitions, source versions, clerical error or mistaken reconstruction are untested possibilities; intentional manipulation is also untested. None is selected as the explanation. A zero-duration named entry cannot by itself establish that no other conversation occurred. Conversely, a named exhibit label does not authenticate that person's attempted call. The [official staff report, physical94 note265](https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf#page=94), expressly leaves which unknown records represent the two reported conversations uncertain. That qualification is material contrary evidence to an assumption of claimed complete identification.
++
++## Holdings, TODOs and test limits
++
++[HOLDINGS.md](HOLDINGS.md) distinguishes held released records from missing native inputs. The zero label, Keyton released form, September20 reader rendering and May-family released response are **held components**, not wholly missing categories. The complete Request14 submission/response/release chain, native operator/carrier events, installed definitions/clocks, office routing, actual underlying recordings/notes, and unique source-to-call joins remain open. A statement that a lead was covered is not a global investigation closure. [Open dependencies](OPEN-TODOS.md).
++
++The mechanical checks reproduce the frozen548-definition extraction, verify ZIP/member hashes, check all98sprite frame counts, recheck43selected explicit placement prefixes directly from encoded tag fields, and validate the limited button layout controls. They do not constitute an independent historical decoder or experimental replication. Parsing all253buttons does not mean their actions or every semantic label were reviewed.
++
++The legacy format interpretation uses Adobe-authored documentation hosted by a mirror, not an authenticated publisher master: [SWF v9 specification, printed50–51,234–237,243](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf). The later edition documents legacy tags; this does not certify SWF5 playback. An initial portable-check failure resulted from sorting Python numeric keys before JSON string normalization; the source and frozen expected digest were unchanged, and the corrected check passed. A failed local SOURCES.json path lookup was also our error, not missing historical evidence.
++
++Run `python3 -B verify.py --zip /path/to/court-flights.zip` to check bundle integrity and reproduce the source trace; without `--zip`, only the public bundle hashes are checked. [Actual execution result](VERIFICATION.json). Earlier source/research files and public history remain unchanged; [REVISION.diff](REVISION.diff) is the real additive text diff against the immediately preceding preserved combined review. No historical discrepancy was adjudicated and none of the18full goal criteria is accepted complete by this publication. Raw scans/SWF, contact/card data and private records are excluded.

@@ -1,0 +1,51 @@
+# WF334: static court-animation links clarify the name's presentation context
+
+The court asset's **“Reuben, Todd”** text is explicitly referenced by a sprite instantiated as **“Names.”** That container is placed in the same authored root frame as the **American Airlines Flight #77** title. A separate **“Reuben” / “Todd”** text pair has a traceable route through a container instantiated as **“Photos,”** with a matching **Reuben** frame label.
+
+This advances the [previous dictionary-only name check](https://github.com/AveLyra/911-conspiracy-investigation/blob/926139fc0a26c869387a85030352613b8f0674d7/investigation/broader-evidence/telephone-wf334-court-name-2026-11-02/README.md): there are actual static placement links. **It still does not authenticate WF334's reported message, establish that its “TODD RUBEN” is the same person, or prove a call or recipient.** Both spellings and all earlier uncertainties are retained. The source-to-caller join remains a TODO.
+
+## Exact structural source locators
+
+Source: [court flights ZIP](https://coop.vaed.uscourts.gov/moussaoui/flights.zip), acquired **2026-10-27T13:40:38.310051+00:00**; **28,304,524 bytes**, SHA-256 `3a1e08b2276dcf0f1bdf5a7071113314776aca4660d73d0cf42fd91f92296801`. Exact member **AA77.swf**, **5,162,821 bytes**, SHA-256 `844dfb545c8414f9e7da1edc89ffe090a09d00d721a2c65c820e15f5fe201a06`. The member declares **SWF version 5**; that is a format version, not a creation date. No court archive was downloaded again.
+
+Offsets below are zero-based **tag-header bytes** in this uncompressed member, including the file header. **Local frame ordinals belong to different timelines**: they are not seconds, call times, execution order or proof of joint visibility.
+
+| Link or definition | Byte offset | Local authored frame / role |
+| --- | ---: | --- |
+| Text ID930, `Reuben, Todd` | 192,906 | Dictionary definition |
+| Sprite985 definition, 66 frames | 198,740 | Container dictionary definition |
+| `Reuben` frame label inside sprite985 | 201,070 | Sprite985 frame46 |
+| Place text930 at depth2, flags3 | 201,090 | Sprite985 frame46; replaces the character at that depth |
+| Place sprite985, instance name `Names` | 202,128 | Root frame37 |
+| Place Flight77 title433 | 113,691 | Root frame37 |
+| Text1786 `Reuben`, text1787 `Todd` | 3,576,769 / 3,576,816 | Dictionary definitions |
+| Place text1786 and text1787 | 3,577,511 / 3,577,528 | Both sprite1788 frame29 |
+| Sprite1788 definition, 35 frames | 3,576,859 | Container dictionary definition |
+| Sprite2011 definition, 69 frames | 5,106,155 | Container dictionary definition |
+| `Reuben` frame label inside sprite2011 | 5,108,358 | Sprite2011 frame54 |
+| Place sprite1788 inside sprite2011 | 5,108,371 | Sprite2011 frame54 |
+| Place sprite2011, instance name `Photos` | 5,109,018 | Root frame37 |
+
+[OBSERVATIONS.json](OBSERVATIONS.json) preserves **18 selected explicit placements**, relevant sprite definitions, exact flags/depths/local frames, selected instance names, prefix bytes/body hashes and the two labels. It also retains the separate name ID331 route through sprite778, instantiated as **Pointers**. Repeated references, name variants, labels and containers in this **one** asset are not independent confirmations or extra people/calls.
+
+The [court P200054 index](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/flights/P200054.html) calls it a Flight77 summary and explicitly includes the other three flights. Prior saved-HTML lines **45/51/73** identify the exhibit, description and ZIP link; its SHA-256 is `866887c38f78c1f5b68ab73a695ae5345812eaf53a3e34da240f5345a1cd96c5`. The prior HTML review is reused, not counted as newly acquired evidence. Its absent access timestamp remains absent.
+
+## The conflicting records remain separate
+
+The [public FBI-form reproduction, physical68, Event paragraph, footer000000766](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=68), reports literal **TODD RUBEN**, **Flight #77**, and a saved message. The prior three-page review preserves typed **WF334**, handwritten **WF8406**, header/receipt/event/assignment fields and the assigned follow-up. No spelling correction, alias selection or date reconciliation has occurred. Mirror SHA-256 remains `e3cf374351cb753d1297433f86bb5807c56cb42a6dc69837a9df02dd0d54f4aa`; this third-party reproduction is not an authenticated FBI master.
+
+The new structural evidence supports treating the court name as a **specific Flight77-presentation candidate**, rather than relying only on a filename or global-menu text. It does **not** prove that a human actually viewed these frames, that the local child timelines were selected together, that the two source names identify one person, or that an airline manifest or caller was authenticated. The instance name **Photos** does not identify or authenticate an actual photograph; none was examined here.
+
+No native passenger/seat/flight record, original tip identification basis, lead-response outcome, recording/custody chain, carrier event or canvass join was acquired. This cannot be counted as a verified additional message or a refutation of the prior call-attribution account. Inaccurate tips, clerical spelling differences, different people, earlier/misattributed messages and genuine relevant messages remain untested alternatives. Original identification/contact/disposition and independent carrier/media records are the discriminators. No fabrication, concealment, motive or coordinated wrongdoing is established.
+
+## Method and reproducible limits
+
+The original passive tag/font parser is reused unchanged, SHA-256 `62f254468e5bbc265d3a04a44c735a09da65339c3a13e1f79046b6e503410617`. The added [structural reader](structural_context.py) reads sprite IDs/frame counts, placement prefixes and selected frame labels. It records explicit-character references; it does not simulate actions, button behavior, clipping, transforms or move-only state. Root-frame placement is an authored structural relationship, not runtime visibility.
+
+The field layout was checked against **Adobe's SWF v9 specification**, [printed/physical50–51](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf#page=50) and [243](https://me3tweaks.com/guides/files/gui_editing_2/swf_file_format_spec_v9.pdf#page=243). This later edition describes earlier placement/sprite structures. It is a **third-party mirror**; publisher-master identity was not independently authenticated. Local PDF text was read. Two web screenshot attempts failed and were not repeated; no successful visual specification check is claimed. Raw specification PDF stays outside the public payload. Access **2026-11-02T22:06:04.221958+00:00**, **2,061,625 bytes**, SHA-256 `78555c7f7cea97923445e08ddbccf36a166c0e130c2e4b2f17d68e2b953d58cb`.
+
+Actual structural scope: **98 sprites**, **18,330 PlaceObject2 tags**, **3,643 explicit-character placements**, **4,282 ShowFrame tags**, **402 DoAction tags**, **253 DefineButton2 definitions**. All98 declared sprite frame counts and the root's **159** match their local ShowFrame counts. These are file-structure counts, not call counts, persons or proof percentages. Only the selected name/title/container relationships were substantively examined; this is not a complete call/roster census. Actions and buttons remain unexecuted and semantically untraced.
+
+Six fixed byte-vector controls and one truncated-input control test the new prefix reader, including ID-absent updates and replacement flags. They passed; those controls check parsing, not historical identity. [verify.py](verify.py) reproduces the selected result from the exact held ZIP and checks published bytes, prior-review preservation and all18 TODOs. Run `python3 verify.py --court-zip /path/to/court-flights.zip`; without that argument it checks the bundle and parser controls only. [VERIFICATION.json](VERIFICATION.json) states the actual runs. Same-reader reproduction and internal frame consistency do not substitute for an independent runtime implementation or the original records.
+
+[OPEN-TODOS.md](OPEN-TODOS.md) keeps every original five-track requirement and prior WF334/serial3255/print/engineering target open. [CHECKLIST.md](CHECKLIST.md) and the actual additive [Git text diff](REVISION.diff) record exactly what changed; the preceding report, conflicting values and source bytes remain untouched. No original-record acceptance criterion or the whole investigation is completed by this step or publication.
