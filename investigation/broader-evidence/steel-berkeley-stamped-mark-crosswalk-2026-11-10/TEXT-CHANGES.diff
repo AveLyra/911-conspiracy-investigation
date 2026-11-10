@@ -1,0 +1,518 @@
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..4b5d3c00
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,41 @@
++# Berkeley steel marking and NIST's core-column identification records
++
++Public derivative of the November 10, 2026 source review. STL02–STL03 / AUD011 / B188 / H005. A Berkeley photograph preserves **606 A 48 51** as a searchable fabrication-mark candidate. A second archived presentation shows the same distinctive marking with different framing. The closest documented NIST comparison also exposes a draft-to-final change in the building label for Figure 3–13 and a separate disagreement over the reported floor span of specimen C-90. These observations give precise records to seek for specimen attribution. [Berkeley item 504, physical p. 3](https://digicoll.lib.berkeley.edu/record/291574/files/504-WTC-Astaneh-a-photo-of-steel-member-with-identification-number-October-2001.pdf#page=3) · [Berkeley item 509, p. 82](https://digicoll.lib.berkeley.edu/record/291579/files/509-WTC-Astaneh-PPT-for-AISE_Akron_Presentation_March_18_2002.pdf#page=82)
++
++## Photograph observations
++
++| Source | Reading and provenance |
++| --- | --- |
++| **Berkeley 504**, p. 3, xref **38**, **1425 × 1069** | A white stencil shows **10 TON**, **606 A**, the numerals **48** and **51**, a diamond enclosing **53**, and **SOUTH LEFT**. The mark between **48** and **51** is uncertain. The crop locator is native pixels **18, 410, 1190, 638**. The page credits Astaneh-Asl and describes **October 2001 NYC-Jersey City**. The **October 9, 2013** note on p. 1 calls this a photograph of a fabrication identifier. |
++| **Berkeley 509**, p. 82, xref **749**, **458 × 307** | The slide **Member Identification** shows the same sequence of marks, diamond outline and steel-face features. Different framing and image sizes are visible. Both encoded and decoded hashes differ. The images support comparison of the same marking. Whether they are separate exposures, or derived views with an intervening transformation, remains open. |
++| **504 and 509 dates and labels** | Both PDFs use the title field **SAC Steel Project Subtask 7.04 Simple Connections with Slab Effects**. Item 504's visible content identifies the WTC photograph. Item 509's archive filename gives **Akron** and **March 18, 2002**. Its note on p. 1 line 6 gives **Canton Ohio Chapter** and **2002**. The slide's sponsor heading also gives **Canton Chapter**. Keep file labels, presentation statements and archival note dates as separate fields. |
++
++Two official Berkeley download routes returned byte-identical copies of the **533,604-byte** item 504, SHA-256 `dae5e9a2d7cbc26307485b302dfd10cf35807d3ee9b5007f9632cae13bfe1668`. Item 509 is a different archived PDF, **14,553,194 bytes**, SHA-256 `aedaa3a37b801f0c8a05755c1f8d9f5d7291e758d5cf4c5a6af1519899d957f9`. The item 504 landing-page request returned HTTP **202** with an empty body. The PDF bodies and internal review crops are held locally. The public derivative gives locators and original analysis under the recorded source rights boundary. [504 note, p. 1](https://digicoll.lib.berkeley.edu/record/291574/files/504-WTC-Astaneh-a-photo-of-steel-member-with-identification-number-October-2001.pdf#page=1) · [509 note, p. 1](https://digicoll.lib.berkeley.edu/record/291579/files/509-WTC-Astaneh-PPT-for-AISE_Akron_Presentation_March_18_2002.pdf#page=1)
++
++## A testable design-location interpretation
++
++NIST NCSTAR 1-3, physical p. 77, sorted lines 14–21 and 27–41, says the typical tower letters are **A** for **WTC 1** and **B** for **WTC 2**, and identifies **47–70** as WTC 1 derrick divisions and **547–570** as WTC 2 divisions. It describes stencil codes and stamped codes with similar building information and distinguishes intended location from the as-built location in most cases. FEMA's earlier Appendix D, physical p. 4, lines 23–35, separately explains a sample piece-number, floor and derrick designation. NCSTAR 1-3A, physical p. 36, Figure 2–7, visibly locates **606** in the tower core layout. The **80** underneath it is a box-to-wide-flange transition floor under the figure legend. [NCSTAR 1-3 method](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101016#page=77) · [FEMA Appendix D method](https://www.fema.gov/pdf/library/fema403_apd.pdf#page=4) · [NCSTAR 1-3A Figure 2–7](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101017#page=36)
++
++**Inference to test.** Under the cited tower conventions, **606 A** and diamond **53** support an intended **WTC 1 core column 606** candidate, with **48** and **51** as possible floor endpoints. **10 TON** fits the convention for an estimated piece weight. **SOUTH LEFT** remains an uninterpreted orientation or handling label. The actual 606 shop sheet, erection diagram, original marking key and measured part would test this reading. The marking and the plan leave installation, post-collapse custody and inventory identity open. [NIST marking-key citation, physical p. 42, lines 26–48](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101430#page=42)
++
++Draft and final NCSTAR 1-3B Table 3–3 give the same thirteen compared entries, including one additional candidate described as unconfirmed. There is no **606** in the compared entries. **HH or S-2** shares division **53**, with different fields **605** and **98–101**. The common division supplies a useful non-unique control. An exact standalone **606** screen across the embedded text of the **112-page draft**, **112-page final** and **114-page GovInfo edition** found no hits. One, one and three pages respectively had no extracted text. These limited results leave unattributed entries, image-only marks and unexamined inventory or transfer records open. [Table 3–3, physical p. 38](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101430#page=38) · [GovInfo edition](https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf)
++
++## Preserve the C-90 comparator conflicts
++
++| Source and locator | Building and floor fields as recorded |
++| --- | --- |
++| **NCSTAR 1-3B draft**, Figure 3–13, printed pp. 43–44 / physical pp. 71–72, lines 13 and 18–19 | **WTC 1** in the figure heading. The visible panel labels and text retain **801B: 80–83**, **801B: 77–80**, **C-90 / 701B: 12–15** and **C-30 / 1008B: 104–106**. |
++| **NCSTAR 1-3B final**, same figure, printed pp. 43–44 / physical pp. 71–72, corresponding lines | **WTC 2** in the figure heading. The four column and span labels listed above are retained. The GovInfo edition also gives **WTC 2** at physical pp. 71–72. |
++| **NCSTAR 1-3B draft and final**, Table 3–3, physical p. 38, line 13 | **C-90 / WTC 2 / 701 / 12–15 / 549** in both. |
++| **NCSTAR 1-3**, Figure 5–2, printed p. 31 / physical p. 79, lines 9–13 | Visible close-up shows **701 B 12 16**. The caption transcribes **701 B 12 – 16** and describes **WTC 2**, floors **12 to 16**. |
++| **NCSTAR 1-3**, Table 5–2, printed p. 35 / physical p. 83, line 40 | **C-90 / WTC 2 / 701 / 12–15 / 549**. |
++
++The two photographs embedded on draft Figure 3–13's physical p. 72 have identical encoded and decoded hashes to their respective final counterparts. This establishes reuse of the C-90 and C-30 image payloads across the caption change. The cited labels are preserved without selecting a floor-span convention or a controlling building statement. The original C-90 intake and attribution worksheet, column drawing and caption revision history could test the relationship among the fields. [Draft Figure 3–13](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=909045#page=72) · [Final Figure 3–13](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101430#page=72) · [Figure 5–2 close-up](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101016#page=79) · [Table 5–2](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101016#page=83)
++
++## Open records and verification
++
++- [ ] **STL02–STL03.** Seek the **May 1, 1967** Port of New York Authority communication on shop drawing procedures and marking systems cited in NCSTAR 1-3B footnote 4, the **606** shop and erection drawings for the recorded digits, the original Berkeley photo files or field log, and the associated yard inventory and disposition. Compare the mark and geometry before joining the photograph to any specimen.
++- [ ] **STL02–STL03.** Carry forward FEMA's **A or W14A** and **B or W14B** field descriptions as WTC 7 candidates alongside final NIST Table A–7's **W-14A or A** and **W-14B** under unidentified wide flange sections. No link from the Berkeley mark to either candidate was established. Seek their distinct photos, field measurements, transfers and classification worksheet. [FEMA p. 16, rows 20–21](https://www.fema.gov/pdf/library/fema403_apd.pdf#page=16) · [NIST Table A–7, p. 96](https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf#page=96)
++- [ ] **STL03.** Retain the C-90 comparator's building and span differences. Seek the specimen measurement and drawing records and the draft-to-final caption change history. Treat the photographed marks as observations and the proposed design-location reading as a testable interpretation.
++
++Ten saved response hashes, 27 fixed text anchors, thirteen table rows and two draft/final image pairs verified. Review included the specified figure and caption faces, the embedded-photo dimensions and hashes, and the bounded text screen. The public files include source links and checksums. Berkeley originals and image crops are preserved separately in the research worktree. [Source and verification ledger](SOURCE-PINS.json)
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..aa43ef62
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,465 @@
++{
++  "task_keys": [
++    "STL02",
++    "STL03",
++    "AUD011",
++    "B188",
++    "H005"
++  ],
++  "review_date_utc": "2026-11-10",
++  "verified_sources": {
++    "scope": "Source hashes, embedded images, specific caption and table anchors and standalone 606 searches. No physical item custody, identity or origin authenticated.",
++    "saved_responses": [
++      {
++        "file": "504.pdf",
++        "url": "https://digicoll.lib.berkeley.edu/record/291574/files/504-WTC-Astaneh-a-photo-of-steel-member-with-identification-number-October-2001.pdf",
++        "utc": "2026-11-10T05:05:24.779841+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://digicoll.lib.berkeley.edu/nanna/record/291574/files/504-WTC-Astaneh-a-photo-of-steel-member-with-identification-number-October-2001.pdf?withWatermark=0&withMetadata=0&registerDownload=1&version=1",
++          "application/pdf"
++        ],
++        "bytes": 533604,
++        "sha256": "dae5e9a2d7cbc26307485b302dfd10cf35807d3ee9b5007f9632cae13bfe1668"
++      },
++      {
++        "file": "504-index.html",
++        "url": "https://digicoll.lib.berkeley.edu/record/291574",
++        "utc": "2026-11-10T05:05:21.499229+00:00",
++        "curl_status": 0,
++        "response": [
++          "202",
++          "https://digicoll.lib.berkeley.edu/record/291574",
++          "text/html; charset=UTF-8"
++        ],
++        "bytes": 0,
++        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++      },
++      {
++        "file": "504-alt.pdf",
++        "url": "https://digicoll.lib.berkeley.edu/nanna/record/291574/files/504-WTC-Astaneh-a-photo-of-steel-member-with-identification-number-October-2001.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0",
++        "utc": "2026-11-10T05:05:23.958337+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://digicoll.lib.berkeley.edu/nanna/record/291574/files/504-WTC-Astaneh-a-photo-of-steel-member-with-identification-number-October-2001.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0",
++          "application/pdf"
++        ],
++        "bytes": 533604,
++        "sha256": "dae5e9a2d7cbc26307485b302dfd10cf35807d3ee9b5007f9632cae13bfe1668"
++      },
++      {
++        "file": "ncstar13a.pdf",
++        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101017",
++        "utc": "2026-11-10T05:06:25.832455+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101017",
++          "application/pdf;charset=UTF-8"
++        ],
++        "bytes": 1340439,
++        "sha256": "edc7be70ae133367efa56f6ad583e430ab6317eecee125834417a06aea864c1c"
++      },
++      {
++        "file": "ncstar13.pdf",
++        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101016",
++        "utc": "2026-11-10T05:06:27.344350+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101016",
++          "application/pdf;charset=UTF-8"
++        ],
++        "bytes": 10167107,
++        "sha256": "dc692eb05b2565c5309829311aef932b4054888624a8be810907d0144d55031d"
++      },
++      {
++        "file": "fema403d.pdf",
++        "url": "https://www.fema.gov/pdf/library/fema403_apd.pdf",
++        "utc": "2026-11-10T05:06:26.483237+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://www.fema.gov/pdf/library/fema403_apd.pdf",
++          "application/pdf"
++        ],
++        "bytes": 2333446,
++        "sha256": "e054a70f9410b1fe0b141f0ec2401244183f67da4d0a703df5ffb18483d6f6fc"
++      },
++      {
++        "file": "ncstar13b-nist-final.pdf",
++        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101430",
++        "utc": "2026-11-10T05:07:16.232329+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101430",
++          "application/pdf;charset=UTF-8"
++        ],
++        "bytes": 4078164,
++        "sha256": "71cd9614d2f127464b6e278d2a28b414b303eda403448fc7f8e34751c67b906f"
++      },
++      {
++        "file": "ncstar13b-nist-909045.pdf",
++        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=909045",
++        "utc": "2026-11-10T05:07:16.238222+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=909045",
++          "application/pdf;charset=UTF-8"
++        ],
++        "bytes": 4293098,
++        "sha256": "015cd27d07cca5b04cdbb083e42a818032bdf5dd47bb6091dae946dc2d66ac0b"
++      },
++      {
++        "file": "509-verified.pdf",
++        "url": "https://digicoll.lib.berkeley.edu/record/291579/files/509-WTC-Astaneh-PPT-for-AISE_Akron_Presentation_March_18_2002.pdf",
++        "utc": "2026-11-10T05:09:11.125223+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://digicoll.lib.berkeley.edu/nanna/record/291579/files/509-WTC-Astaneh-PPT-for-AISE_Akron_Presentation_March_18_2002.pdf?withWatermark=0&withMetadata=0&registerDownload=1&version=1",
++          "application/pdf"
++        ],
++        "bytes": 14553194,
++        "sha256": "aedaa3a37b801f0c8a05755c1f8d9f5d7291e758d5cf4c5a6af1519899d957f9"
++      },
++      {
++        "file": "ncstar13b-govinfo.pdf",
++        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf",
++        "utc": "2026-11-10T05:08:17.987679+00:00",
++        "curl_status": 0,
++        "response": [
++          "200",
++          "https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf",
++          "application/pdf"
++        ],
++        "bytes": 12124680,
++        "sha256": "78993d970713a88e4b1f195f145e83a7cc976d5d378405e85791d697f1c1906e"
++      }
++    ],
++    "limited_access": [
++      {
++        "file": "509.pdf",
++        "url": "https://digicoll.lib.berkeley.edu/record/291579/files/509-WTC-Astaneh-PPT-for-AISE_Akron_Presentation_March_18_2002.pdf",
++        "utc": "2026-11-10T05:06:26.572979+00:00",
++        "curl_status": 63,
++        "response": [
++          "200",
++          "https://digicoll.lib.berkeley.edu/nanna/record/291579/files/509-WTC-Astaneh-PPT-for-AISE_Akron_Presentation_March_18_2002.pdf?withWatermark=0&withMetadata=0&registerDownload=1&version=1",
++          "application/pdf"
++        ],
++        "error": "curl: (63) Maximum file size exceeded"
++      },
++      {
++        "file": "ncstar13b.pdf",
++        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf",
++        "utc": "2026-11-10T05:06:25.655997+00:00",
++        "curl_status": 56,
++        "response": [
++          "200",
++          "https://www.govinfo.gov/content/pkg/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7/pdf/GOVPUB-C13-799fd8322fd23d7bd4af8d96ea7e58b7.pdf",
++          "application/pdf"
++        ],
++        "error": "curl: (56) Maximum file size exceeded"
++      }
++    ],
++    "fixed_line_anchors": [
++      {
++        "file": "504.pdf",
++        "physical_page": 1,
++        "sorted_text_line": 1
++      },
++      {
++        "file": "504.pdf",
++        "physical_page": 1,
++        "sorted_text_line": 5
++      },
++      {
++        "file": "504.pdf",
++        "physical_page": 2,
++        "sorted_text_line": 3
++      },
++      {
++        "file": "504.pdf",
++        "physical_page": 2,
++        "sorted_text_line": 18
++      },
++      {
++        "file": "509-verified.pdf",
++        "physical_page": 1,
++        "sorted_text_line": 6
++      },
++      {
++        "file": "509-verified.pdf",
++        "physical_page": 82,
++        "sorted_text_line": 1
++      },
++      {
++        "file": "509-verified.pdf",
++        "physical_page": 82,
++        "sorted_text_line": 11
++      },
++      {
++        "file": "ncstar13.pdf",
++        "physical_page": 77,
++        "sorted_text_line": 18
++      },
++      {
++        "file": "ncstar13.pdf",
++        "physical_page": 77,
++        "sorted_text_line": 38
++      },
++      {
++        "file": "ncstar13.pdf",
++        "physical_page": 79,
++        "sorted_text_line": 10
++      },
++      {
++        "file": "ncstar13.pdf",
++        "physical_page": 79,
++        "sorted_text_line": 11
++      },
++      {
++        "file": "ncstar13.pdf",
++        "physical_page": 83,
++        "sorted_text_line": 40
++      },
++      {
++        "file": "ncstar13a.pdf",
++        "physical_page": 36,
++        "sorted_text_line": 48
++      },
++      {
++        "file": "ncstar13b-nist-final.pdf",
++        "physical_page": 38,
++        "sorted_text_line": 13
++      },
++      {
++        "file": "ncstar13b-nist-final.pdf",
++        "physical_page": 38,
++        "sorted_text_line": 19
++      },
++      {
++        "file": "ncstar13b-nist-final.pdf",
++        "physical_page": 42,
++        "sorted_text_line": 47
++      },
++      {
++        "file": "ncstar13b-nist-final.pdf",
++        "physical_page": 42,
++        "sorted_text_line": 48
++      },
++      {
++        "file": "ncstar13b-nist-final.pdf",
++        "physical_page": 71,
++        "sorted_text_line": 13
++      },
++      {
++        "file": "ncstar13b-nist-final.pdf",
++        "physical_page": 72,
++        "sorted_text_line": 18
++      },
++      {
++        "file": "ncstar13b-nist-909045.pdf",
++        "physical_page": 38,
++        "sorted_text_line": 13
++      },
++      {
++        "file": "ncstar13b-nist-909045.pdf",
++        "physical_page": 71,
++        "sorted_text_line": 13
++      },
++      {
++        "file": "ncstar13b-nist-909045.pdf",
++        "physical_page": 72,
++        "sorted_text_line": 18
++      },
++      {
++        "file": "ncstar13b-govinfo.pdf",
++        "physical_page": 72,
++        "sorted_text_line": 13
++      },
++      {
++        "file": "ncstar13b-govinfo.pdf",
++        "physical_page": 96,
++        "sorted_text_line": 33
++      },
++      {
++        "file": "ncstar13b-govinfo.pdf",
++        "physical_page": 96,
++        "sorted_text_line": 34
++      },
++      {
++        "file": "fema403d.pdf",
++        "physical_page": 4,
++        "sorted_text_line": 27
++      },
++      {
++        "file": "fema403d.pdf",
++        "physical_page": 4,
++        "sorted_text_line": 30
++      }
++    ],
++    "document_metadata": {
++      "504.pdf": {
++        "title": "SAC Steel Project Subtask 7.04 Simple Connections with Slab Effects",
++        "creationDate": "D:20131010182242+03'00'",
++        "modDate": "D:20131010182242+03'00'",
++        "pages": 3
++      },
++      "509-verified.pdf": {
++        "title": "SAC Steel Project Subtask 7.04 Simple Connections with Slab Effects",
++        "creationDate": "D:20131010182843+03'00'",
++        "modDate": "D:20131010182843+03'00'",
++        "pages": 99
++      },
++      "ncstar13b-nist-909045.pdf": {
++        "title": "Microsoft Word - NCSTAR 1-3B Steel Inventory",
++        "creationDate": "D:20050615113333-04'00'",
++        "modDate": "D:20050615113333-04'00'",
++        "pages": 112
++      },
++      "ncstar13b-nist-final.pdf": {
++        "title": "Style Guide for Word Users for the NIST Special Publication Format",
++        "creationDate": "D:20080807154950-04'00'",
++        "modDate": "D:20081027130709-04'00'",
++        "pages": 112
++      },
++      "ncstar13b-govinfo.pdf": {
++        "title": "Steel inventory and identification",
++        "creationDate": "D:20150427142747Z",
++        "modDate": "D:20260708183442-04'00'",
++        "pages": 114
++      }
++    },
++    "berkeley_photo_records": [
++      {
++        "file": "504.pdf",
++        "physical_page": 3,
++        "xref": 38,
++        "size": [
++          1425,
++          1069
++        ],
++        "encoded_sha256": "884e0ea9262a96ee8288d6d3476bcf522621e04d470ff8705fd2c97541a651cd",
++        "decoded_sha256": "da32594e8df3e61c79c32c66cf6f9c4387e617011c3df49c523108abbdda9d63"
++      },
++      {
++        "file": "509-verified.pdf",
++        "physical_page": 82,
++        "xref": 749,
++        "size": [
++          458,
++          307
++        ],
++        "encoded_sha256": "2d25581f392e6971e3f334ce253b468b08028fae8e38ad71a13d5d01b460cda2",
++        "decoded_sha256": "3f5607d357c2644fe767dbead691681df48692f7f7fc3cd0469b0a8d07542037"
++      }
++    ],
++    "local_only_crop_504": {
++      "xref": 38,
++      "crop_bounds_pixels": [
++        18,
++        410,
++        1190,
++        638
++      ],
++      "sha256": "c925039837b23f93820d9d8677b72a91b9176fcf1fcff0bcabc682237756aa03"
++    },
++    "nist_draft_final_figure_3_13_p72": [
++      [
++        {
++          "file": "ncstar13b-nist-909045.pdf",
++          "physical_page": 72,
++          "xref": 261,
++          "size": [
++            802,
++            600
++          ],
++          "encoded_sha256": "21a3644af0cfa5350df7c0553afd20f787b20491ff62c93adceb03c0b5f3e47e",
++          "decoded_sha256": "0c7df15f7946f2df8620d6c656df3508b2111d2ae90da5ac2f87333fcf8cd7d1"
++        },
++        {
++          "file": "ncstar13b-nist-909045.pdf",
++          "physical_page": 72,
++          "xref": 262,
++          "size": [
++            590,
++            600
++          ],
++          "encoded_sha256": "f6069a6f3e864612c71167d48a93e91e3db9708e0a99b799c8c6bf2bb6407d55",
++          "decoded_sha256": "d5a6eb2d4f71b55fb7123c090ae2865f5e309bd46af44754d8ca8a7a2f55bf89"
++        }
++      ],
++      [
++        {
++          "file": "ncstar13b-nist-final.pdf",
++          "physical_page": 72,
++          "xref": 190,
++          "size": [
++            802,
++            600
++          ],
++          "encoded_sha256": "21a3644af0cfa5350df7c0553afd20f787b20491ff62c93adceb03c0b5f3e47e",
++          "decoded_sha256": "0c7df15f7946f2df8620d6c656df3508b2111d2ae90da5ac2f87333fcf8cd7d1"
++        },
++        {
++          "file": "ncstar13b-nist-final.pdf",
++          "physical_page": 72,
++          "xref": 191,
++          "size": [
++            590,
++            600
++          ],
++          "encoded_sha256": "f6069a6f3e864612c71167d48a93e91e3db9708e0a99b799c8c6bf2bb6407d55",
++          "decoded_sha256": "d5a6eb2d4f71b55fb7123c090ae2865f5e309bd46af44754d8ca8a7a2f55bf89"
++        }
++      ]
++    ],
++    "table_3_3": {
++      "compared_physical_page": 38,
++      "rows": 13,
++      "same_relevant_draft_final_text": true
++    },
++    "nist_text_search": {
++      "pattern": "\\b606\\b",
++      "results": [
++        {
++          "file": "ncstar13b-nist-909045.pdf",
++          "pages": 112,
++          "without_extracted_text": 1,
++          "standalone_606_hit_pages": []
++        },
++        {
++          "file": "ncstar13b-nist-final.pdf",
++          "pages": 112,
++          "without_extracted_text": 1,
++          "standalone_606_hit_pages": []
++        },
++        {
++          "file": "ncstar13b-govinfo.pdf",
++          "pages": 114,
++          "without_extracted_text": 3,
++          "standalone_606_hit_pages": []
++        }
++      ]
++    },
++    "visual_locators": {
++      "504": 3,
++      "509": 82,
++      "ncstar1-3_fig5-2": 79,
++      "ncstar1-3a_fig2-7": 36,
++      "ncstar1-3b_draft_final_fig3-13": [
++        71,
++        72
++      ],
++      "fema_app_d_w14_rows": 16
++    },
++    "PyMuPDF": "1.27.2.2"
++  },
++  "scope": "Berkeley steel-mark observations, NIST draft and final comparator and open origin and custody tests. Images and raw documents excluded."
++}
