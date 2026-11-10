@@ -260,3 +260,5 @@ The retained [reference-motion package](../wtc7/reference-motion/README.md) incl
 An [idealized structural-bounds exercise](../wtc7/structural-bounds.md) has been recovered with code, synthetic results and historical provenance. Its 15 unit tests were rerun; the model uses hypothetical inputs and is not a WTC 7 reconstruction or cause finding.
 
 The [fuel-system source audit](../wtc7/fuel-system-audit/README.md) has been recovered as a qualified derivative. Its published arithmetic was checked, while source media and selected sensitive or source-specific materials remain omitted; it does not establish a diesel fire or collapse cause.
+
+The [printed-fit arithmetic review](../wtc7/camera3-provenance/printed-fit-check.md) and its scripts/results are recovered with source hashes. The computations were independently checked; they do not reconstruct the underlying data or establish actual motion.

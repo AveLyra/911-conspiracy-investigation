@@ -1,0 +1,9 @@
+# Printed-fit arithmetic check
+
+2026-09-08. Declared after reading NCSTAR 1-9 printed pp. 600-603 and before evaluating the equations numerically. This is a check of a published analytical curve, not measurement of historical motion or reproduction of NIST's raw-data regression.
+
+Source: preserved `authority/nist/wtc7/ncstar-1-9.pdf`, physical pp. 666-669. Main visually read the full pages. Figure 12-76 prints A=379.62 ft, b=0.18562 /s, k=3.5126 in z(t)=A[1-exp(-(bt)^k)]. Figure 12-77 prints velocity coefficient 247.52 ft/s and a separate line v=-44.773+32.196t ft/s, R-squared 0.9906. The report describes zero initial displacement/velocity/acceleration and derives the linear regression from selected numerical velocity points, not by making the smooth fit have constant acceleration.
+
+Evaluate z, its analytic first and second derivatives, the separately rounded printed velocity, and the regression line at fixed times 0,1,1.75,2,2.5,3,3.5,4,4.5,5,5.4 seconds. Do not extrapolate a historical interpretation beyond the plot. Report stage endpoint differences at 1.75/4/5.4 seconds and the analytic velocity maximum within the plotted interval. These times are chosen from the published stages plus a regular interior grid, not optimized for a discrepancy.
+
+Verify symbolic-derivative arithmetic against symmetric differences with h=1e-4 s on the positive sample times (relative tolerance 1e-5, absolute tolerance 1e-5 in corresponding feet/second units). Verify the exact derivative coefficient against the printed rounded coefficient (absolute difference under 0.005 ft/s). A separate implementation must reproduce values before interpretation. Preserve numerical output and all checks. No conclusion about real deceleration, raw-data fit quality, cause or intent follows from this calculation alone.

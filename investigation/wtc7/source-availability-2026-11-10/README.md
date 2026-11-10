@@ -21,3 +21,5 @@ The recovered [reference-motion package](../reference-motion/README.md) preserve
 The recovered [idealized structural-bounds exercise](../structural-bounds.md) uses hypothetical mechanics rather than building-specific data; unit tests check its equations, not the collapse. The [latest target inventory](OPEN-TARGETS-UPDATE-8.json) records literal link availability.
 
 The recovered [fuel-system source audit](../fuel-system-audit/README.md) preserves historical equipment, inventory and scenario reviews. Original media and sensitive or source-specific materials are omitted; source and derivative hashes are recorded. The [latest target inventory](OPEN-TARGETS-UPDATE-9.json) counts remaining literal links.
+
+The recovered [printed-fit arithmetic check](../camera3-provenance/printed-fit-check.md) distinguishes the smooth fitted curve from NIST’s separate numerical-velocity regression. Python and JavaScript checks concern the printed function, not the original measurements; the source PDF remains external. The [latest target inventory](OPEN-TARGETS-UPDATE-10.json) counts remaining literal paths.
