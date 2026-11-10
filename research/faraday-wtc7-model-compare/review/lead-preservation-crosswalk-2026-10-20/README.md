@@ -1,0 +1,57 @@
+# WTC 7 technical leads and conflicting source records
+
+All seven leads in the October 20 summary are indexed below with their distinct observations, primary source links, preserved research records, limitations and next discriminating records. They already had substantive public writeups; this package adds a single crosswalk, redundant unchanged copies of those four writeups, a preservation manifest, and separately named unchanged copies of NCSTAR 1-9, NCSTAR 1A and the NIST errata. It does not add a collapse experiment or decide the cause of any discrepancy.
+
+The conflicts remain open. A model disagreement, corrected publication, timing residual, validation qualification and file-provenance mismatch are different kinds of lead, not interchangeable evidence of concealment. The index-local identifiers in `leads.json` are not litigation fact IDs. Multiple copies are preservation redundancy, not independent corroboration.
+
+## Column 79 restraint and model representation
+
+UAF reports **3.678 inches** between the girder's western edge and side plate, versus **6.290 inches** for its web to move beyond the seat. The difference is **2.612 inches** of travel, not a capacity or safety margin. Interception requires axial and vertical engagement and adequate component resistance. UAF describes trapping; NIST's preliminary detailed LS-DYNA account describes plate contact followed by rocking. Whether the reduced 16-story ANSYS model retained the relevant restraint and alternative motion remains unverified here.
+
+Primary sources: [UAF section 3.2.1, printed 77-79 / PDF 90-92](https://files.wtc7report.org/file/public-download/A-Structural-Reevaluation-of-the-Collapse-of-World-Trade-Center-7-March2020.pdf#page=90); NIST [plate contact, printed 351 / PDF 395](sources/nist-ncstar-1-9-original.pdf#page=395), [rocking, printed 353 / PDF 397](sources/nist-ncstar-1-9-original.pdf#page=397), and [reduced connection, printed 482-483 / PDF 548-549](sources/nist-ncstar-1-9-original.pdf#page=548). The drawing copies are [Frankel 9114](https://www.metabunk.org/attachments/9114-pdf.28807/) and [1091](https://www.metabunk.org/attachments/1091-pdf.28913/), with mirror-custody and revision limitations retained in the audit.
+
+Preserved research: [unchanged redundant audit copy](preserved-records/c79-audit.md). The [four-case protocol](../c79-factorial-protocol-2026-10-19/README.md) separates intact/notched geometry and original/modified expansion coefficients. UAF's separately disclosed removal of the protrusion plus approximately 40-percent coefficient increase is not the baseline and is not a 40-percent temperature increase. Identified native cases, original drawing revisions, contact/constraint/failure definitions and motion/force histories are needed. Blocking translation alone does not establish that every route to support loss is blocked.
+
+## NIST dimension changes and historical model inputs
+
+The original report assigns **6.25 inches axially and 5.5 inches laterally**, and describes an **11-inch** bearing seat. The June 2012 errata assigns **5.5 inches axially and 6.25 inches laterally**, and a **12-inch** seat. NIST describes these as typographical errors and says the correct values were used in the analyses. The publication changes and NIST's explanation are preserved together; actual historical input usage has not been independently established by this crosswalk. UAF's 6.290-inch threshold and NIST's 6.25-inch threshold also remain distinct, without a selected explanation for their 0.040-inch difference.
+
+Primary sources: original NCSTAR 1-9 [printed 482 / PDF 548](sources/nist-ncstar-1-9-original.pdf#page=548) and [printed 527 / PDF 593](sources/nist-ncstar-1-9-original.pdf#page=593); [complete two-page errata, relevant page 2](sources/nist-errata-2012-original.pdf#page=2); [official errata download](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=901225). Research: [unchanged audit copy](preserved-records/c79-audit.md). The discriminator is the dated native geometry, connection criteria, run/version records and outputs, not choosing the original prose or the later assertion by authority alone.
+
+## Figure 12 68 panel clocks and caption clocks
+
+The three panel pairs are **6.2 (19.5), 7.4 (20.7), 8.5 (21.8) seconds**, each implying **13.3 seconds** between clocks. The caption endpoints are **5.5 (21.5) to 7.8 (23.8) seconds**, each implying **16.0 seconds**. Both sets are preserved exactly as transcribed in the prior audit, with the original complete PDF page retained for typography. The nearby Figure 12-69 has internally consistent 13.3-second pairs and remains a control rather than being omitted.
+
+Primary source: NCSTAR 1-9 [printed 593 / PDF 659](sources/nist-ncstar-1-9-original.pdf#page=659). Research: [unchanged timing audit copy](preserved-records/timing-audit.md) and [original timing transcription](../animation-timing-audit-2026-10-16/timing-observations.json). This is a publication/clock inconsistency, not demonstrated solver failure. Source-run identifiers, figure/export scripts, frame-time mappings, original manuscripts and corrections could distinguish explanations; none is selected here.
+
+## West penthouse observation and model timing
+
+Table 3-1 reports the west penthouse below the roofline at **9.3 seconds** in the observation column, versus **6.9 and 7.3 seconds** in two debris-model views. The signed model-minus-observation differences are **-2.4 and -2.0 seconds**. The no-debris views report **10.6 and 10.9 seconds**. Views are not independent replications or an uncertainty interval, and the east-penthouse reference is deliberately aligned to zero.
+
+Primary source: NCSTAR 1A [Table 3-1, printed 43 / PDF 85](sources/nist-ncstar-1a-original.pdf#page=85). Research: [unchanged timing audit copy](preserved-records/timing-audit.md) and [transcribed values](../animation-timing-audit-2026-10-16/timing-observations.json). These are NIST's reported values, not a newly completed independent video measurement. Original video timing worksheets, synchronized trajectories, matching model views and native results are the discriminating records.
+
+## The 12 9 second validation statement and its proxy endpoint
+
+[NIST FAQ Q25](https://www.nist.gov/world-trade-center-investigation/study-faqs/wtc-7-investigation) states agreement between measured and predicted intervals of **12.9 seconds**. Table 3-1 yields approximately **6.9 - (-6.0) = 12.9 seconds** in the observation column and **6.3 - (-6.6) = 12.9 seconds** in the debris-model column. Section 3.5.1 identifies early exterior east-west vibration as corroboration of the inferred hidden floor failures; it is not direct visual observation of those failures. Arithmetic agreement and uncertainty about the causal endpoint's independence are both retained.
+
+Primary sources: NCSTAR 1A [printed 42-44 / PDF 84-86](sources/nist-ncstar-1a-original.pdf#page=84) and the FAQ. Research: [unchanged timing audit copy](preserved-records/timing-audit.md), [preserved FAQ statements](../animation-timing-audit-2026-10-16/nist-faq-capture-2026-10-16.json) and the timing transcription. This qualification does not prove fitting or that the inferred failures did not occur. NIST discloses using some visual observations to direct simulations and acknowledges later-stage uncertainty. The needed records are event-identification/synchronization worksheets, uncertainty estimates, calibration/holdout criteria and matching run histories.
+
+## AVI container stream and tool reports
+
+The inspected AVI's `avih` header gives **998 x 725** pixels. Its `strf` header gives **996 x 724**, **16 bits per pixel** and **CRAM**. The recorded `file` output calls it **uncompressed**; FFmpeg 7.1.1 identifies **Microsoft Video 1 / msvideo1**, RGB555LE, 5 fps. Neither field nor tool report is selected as controlling. The source acquisition URL and lineage to a NIST master remain unknown.
+
+Preserved artifact: [unchanged AVI](../../../research/faraday-wtc7-model-compare/media/nist-simulations/CaseB-Temp-4.0hr_Dmg_NorthWestView.avi), SHA-256 `f74f653134c8016d858840334919bfedba96fb36dec1db29eff47cb3a0dd5744`. Research: [unchanged redundant header audit](preserved-records/avi-header-audit.md). [Microsoft's AVI RIFF reference](https://learn.microsoft.com/en-us/windows/win32/directshow/avi-riff-file-reference) defines the fields; it does not explain this file. Replacement, export/transcoding behavior, padding/cropping, malformed headers and parser conventions remain untested alternatives. Authenticated independent copies and export/acquisition histories would discriminate among them; the mismatch alone does not establish substitution.
+
+## Two UAF final report PDFs
+
+Both originals remain separately preserved: [March2020](../uaf-pdf-comparison-2026-10-18/sources/march2020.pdf) and [March-2020](../uaf-pdf-comparison-2026-10-18/sources/march-2020.pdf). Their full source URLs and hashes are in `leads.json`. On printed page 78 / PDF page 91, Figure 3.3 differs: one has a complete column illustration; the other has a toolbar fragment and clipped column. Figure 3.4's embedded image hashes match, while its page placement changes by approximately **9.20 PDF points**. The other 124 pages matched in the defined extracted-text and fixed 150-dpi raster comparisons; internal PDF differences are retained separately.
+
+Research: [unchanged redundant comparison](preserved-records/uaf-pdf-comparison.md) and the [complete original comparison package](../uaf-pdf-comparison-2026-10-18/README.md). No edition is chosen as correct. Publication chronology, original figure/export files and native-case mapping could establish the nature and significance of the changes. No native-model change or deliberate alteration has been demonstrated by the PDF comparison.
+
+## Preservation and verification boundaries
+
+`leads.json` separates observations, conditional calculations, agency claims, untested interpretations and next records for all seven leads. `preservation-manifest.json` pins the earlier public Git blobs, retained LFS identities, four redundant note copies and the three newly bundled NIST source PDFs. `verification.json` records the checks actually completed. The new source copies are previously held public documents, freshly rehashed and copied without modification; their URLs are locators, not claims of a fresh download or an unbroken agency custody chain. The AVI's missing origin URL remains explicitly null.
+
+The original report, errata, both UAF PDFs, original numerical values, failed access observations and existing research remain separate. Nothing is normalized, repaired, deleted or overwritten. The direct errata PDF was accessible during this check, while its catalog URL failed through the web reader; that tooling observation is not a deletion finding. The earlier archive/SWF leads remain in the timing audit but are not counted as new findings here. No private case material, litigation record, email draft or correspondence is included.
+
+The redundant note copies retain their exact original bytes and relative links. Use the original paths and permanent public URLs in the manifest to resolve those older links in their original context; the new index supplies current navigable links. In the three new PDF filenames, `original` means unchanged held input bytes, not an assertion that the file is the first historical release or an authenticated agency master.

@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-18",
+  "base_protocol_sha256": "bd3e2e763fd39b1ed324570e43c2cf810ea2c163a88926c2456bc5fd93249ee0",
+  "scope": "Execute frozen all-page protocol; extend inventory before inspecting real PDF content to meet user request for all differences",
+  "additional_observables": [
+    "Every active xref object dictionary text hash and length, plus raw and decoded stream hashes and lengths",
+    "All unequal same-numbered xrefs with both parsed dictionary texts and unified difference",
+    "Per-page geometry, links, annotation xrefs and widget fields, and document bookmarks and attachment names",
+    "Raw-file equal prefix and suffix lengths, not a claimed global shifted-byte edit alignment"
+  ],
+  "limits": "Active-xref inventory does not silently align renumbered objects or inspect every discarded incremental revision. Fixed-resolution raster equality is not equivalence at every resolution. Metadata and raw bytes remain distinct evidence channels. No historical cause or intent inference. Synthetic control PDFs are created only in memory, not as edited historical sources or authored PDF deliverables."
+}
