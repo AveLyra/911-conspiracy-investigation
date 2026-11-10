@@ -1,0 +1,5 @@
+# Fire reconstruction: public source-comparison note
+
+**Public replacement note, November 2026.** This note does not reproduce the missing original comparison or its image annotations. NIST describes approximations in its fire reconstruction, including a delayed floor 8 history for floor 9 and delayed floor 12 histories for floors 11 and 13; it also discusses differences between modeled burning and some photographic observations. See [NCSTAR 1-9, PDF pp. 446 and 448–449](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-9.pdf#page=446).
+
+Such approximations are legitimate sensitivity questions, not proof of either an intentionally set additional fire or an incorrect collapse outcome. NIST also describes some sensitivity work. The structural consequence of alternative observation-consistent fire histories needs a version-matched, independently reproducible analysis. See [public status](../STATUS.md) and the [integrated evidence review](../../cross-chat-evidence-integration-2026-11-10/README.md).

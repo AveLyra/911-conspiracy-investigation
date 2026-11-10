@@ -1,0 +1,5 @@
+# Camera 3 cadence: public availability summary
+
+**Public replacement summary, November 2026.** This is not the original full research report. The previously published [WTC 7 status record](../STATUS.md) reports a phase-dependent near-neighbor image pattern in a shorter Camera 3 copy and a different pattern in a longer comparison copy. It reports that constructed counterexamples permit distinct capture/conversion histories to produce identical image data, and that the earlier arithmetic reproduced 2,684 scored rows.
+
+These are descriptions of earlier research, not a new calculation or independent authentication. The pattern does not establish the original exposure rate, identify a unique duplication or blending process, prove intentional editing, or determine physical acceleration or collapse cause. The input frames, full tables, prior validation artifacts and original complete report are not provided here. Their availability and redistribution conditions remain unresolved. See the [public validation note](validation.md).

@@ -2,6 +2,10 @@
 
 [Investigation consolidation guidance](CONSOLIDATION.md).
 
+## November 10: WTC 7 source-availability repairs
+
+The [source-availability update](wtc7/source-availability-2026-11-10/README.md) adds labeled public summaries at five previously missing report targets. Their underlying media and complete earlier analyses are not thereby published or independently reproduced; additional broken links remain under review.
+
 ## November 10: additional reviewed public leads
 
 The [reviewed public-lead consolidation](branch-consolidation-reviewed-leads-2026-11-10/README.md) indexes 7 dated source groups and 70 files already available on AveLyra topic branches. It preserves source blobs and attribution, qualifies historical status, and does not treat repeated reports as independent evidence. Flagged privacy, source-rights, case and LFS items remain outside this batch.
