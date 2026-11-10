@@ -1,0 +1,252 @@
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+new file mode 100644
+index 00000000..1e29ed8b
+--- /dev/null
++++ b/CHECKLIST.md
+@@ -0,0 +1,14 @@
++# Request accountability
++
++| User requirement | Outcome and location | Verification and unresolved issue |
++|---|---|---|
++| Pursue another available public-source lead | Official FBI part03 public viewer; README sections1–2 | Actual collection/item/page controls inspected. Original statement/audio/table still unacquired. |
++| Avoid repeating completed searches | No repeated keyword search or redownload of held01/02/08; bounded local prior-report census | The census is not proof no other local/source copy exists. One newly selected part03 binary request failed403; not retried. |
++| Preserve conflicting records and values | README: header versus retrospective opening; 12:28 Central versus unzoned approximate8:20 roles; two-men/knives versus separate three-men/bombs-and-knives relay; 6:40 versus0640PST labels | Four unmodified viewer captures preserved locally and pinned. No controlling account, conversion, source-wide reading or cause inferred. |
++| Preserve source links and exact references | README source URL/page/paragraph/internal-page/footer references; SOURCE-PINS.json | Scanned images do not supply native text line numbers. Captured-view hashes are not native-source hashes. |
++| Missing inputs remain TODOs; continue safe work | OPEN-TODOS.json, including original activity reports and available unread public parts | No outreach, new FOIA, fee, gate bypass or fabrication. All original18 requirements remain open. |
++| Commit and push eligible findings as AveLyra | Reviewed additive publication payload | Account, destination, commit identity, remote ref and every file must be verified in separate local publication receipts before claiming success. This checklist itself is not a push receipt. |
++| Preserve originals and previous assessments | Native source captures separate from public derivative; earlier published files unchanged | No source overwrite, deletion, deduplication, main merge or history rewrite. |
++| Deliver text diff | TEXT-CHANGES.diff against absent predecessor | This is a new additive unit. Earlier reports are unchanged, rather than silently replaced. Source-image inspection and text diff are separate checks. |
++
++No raw source images, full source transcript, contact details, employee/customer identifiers, private correspondence, case-specific production, litigation strategy, signatures or credentials are included. Public observations derive from the official public viewer. No redacted identity is reconstructed.
+diff --git a/OPEN-TODOS.json b/OPEN-TODOS.json
+new file mode 100644
+index 00000000..1b4613b8
+--- /dev/null
++++ b/OPEN-TODOS.json
+@@ -0,0 +1,12 @@
++{
++  "status": "Open dependencies; not evidence of historical absence or withholding",
++  "items": [
++    {"id":"TEL-DL336-MEDIA","target":"DL-336 source recording, transcript segment map, native metadata and custody/intake receipts","why":"Test whether the broad header and retrospective opening refer to different segments, recordings or descriptions","acceptance":"Authenticated recording/transcript join with exact segment and clock roles, including contrary evidence","status":"Not acquired; no inferred explanation"},
++    {"id":"TEL-SF62-STATEMENT","target":"Original handwritten STARFIX/controller statement referenced on official viewer page11, SF:62, footer000000156; attachment and custody record","why":"Compare handwritten wording, clock notation and the typed quotation without treating them as independent sources","acceptance":"Actual statement and documented link to the report, with differences preserved","status":"Not acquired"},
++    {"id":"TEL-SF62-RELAY","target":"Underlying Airphone passenger/operator call record, relay record, recordings and system-field definitions referenced on viewer pages11–12","why":"Test attribution, headcount and weapon reports, and whether they concern different phases or sources","acceptance":"Source-specific records and clock/custody joins; positive, negative and inconclusive results retained","status":"Not acquired; no weapon finding established"},
++    {"id":"TEL-SERO-ACTIVITY","target":"Original Minter/Sadler Agent Activity Reports and native table/media described in the previously preserved SERO record chain","why":"Test start/end/event fields and recording relationships rather than infer them from narratives","acceptance":"Native or authenticated released tables with field/schema, custody and clock definitions","status":"Still outstanding"},
++    {"id":"TEL-PART03-UNREAD","target":"Ordinary public viewer pages4–10, if needed for DL-336 continuity, and remaining uninspected official release parts04–07","why":"Continue available nonduplicative public-source work before claiming a corpus-wide absence","acceptance":"Prospectively scoped source reads and provenance; no unsupported complete-production claim","status":"Available leads, not read in this pass; no download retry authorized by this note"},
++    {"id":"TEL-PART03-PDF","target":"The actually linked official part03 PDF through an authorized available route when access changes","why":"Preserve source bytes and test document/copy identity","acceptance":"Actual bytes, acquisition metadata, SHA-256 and explicit scope; viewer image hash cannot substitute","status":"One direct request returned403; no binary obtained; do not repeat unchanged route or bypass gate"},
++    {"id":"ORIGINAL-PLAN-18","target":"Existing FAA4/telephone4/recorder3/materials3/steel4 acceptance requirements","why":"A record lead or publication is not completion of any empirical or acquisition requirement","acceptance":"Original substantive criteria, with technical ownership respected","status":"All18 remain open/partial; no closure claimed"}
++  ]
++}
+diff --git a/README.md b/README.md
+new file mode 100644
+index 00000000..10a18f00
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,35 @@
++# Official telephone-release lead: recording labels and separate reporting channels
++
++Research date: October 31, 2026, Eastern; public-source views and preservation extend into November 1 UTC. Scope: TEL01–TEL04. All original five-track acceptance requirements remain open.
++
++The [FBI Vault September interviews, part 03 of 08](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-03-of-08/view) supplies two useful record-identification leads. Its Ong transcript header and the opening recorded conversation need separate descriptions. A separate Flight 93 report identifies a handwritten statement and an Airphone information relay. Neither is an acquired native recording, activity table or authenticated handwritten original.
++
++## 1. Preserve the transcript header beside its actual opening
++
++**Observed, viewer page 2:** an FD-302-style header prints **DL-336**, case **265D-NY-280350**, and transcription date **09/12/2001**. Its introductory paragraph describes a taped telephone conversation between Betty Ong and the American Airlines Southeast Reservation Center, identifying Winston and Vanessa and Flight 11. The paragraph states September 11, 2001 as today's date.
++
++**Observed, viewer page 3, internal page 2:** the continuation is headed Betty Ong and dated **09/11/2001**. The visible opening speaker states **12:28 p.m. Central Time**, identifies a corporate-security role, and introduces a conversation with Nydia Gonzalez about what occurred that morning. Gonzalez describes her operations-specialist role and an incoming flight-attendant call at approximately **8:20**; the visible passage does not assign that recollection a time zone.
++
++**Interpretation and limits:** the header's broad description and the opening's retrospective interview context are preserved side by side. Do not relabel the entire record, choose a controlling description, treat the 12:28 recording time as the in-flight call time, silently supply a zone to 8:20, or call this an authenticated native recording of Ong. Pages 4–10 were not read in this pass. They could contain further material relevant to the record's scope. Mapping DL-336 to the actual source recording, transcript segments and custody entries remains a TODO. The apparent difference in descriptions does not establish substitution, falsification or an error in the underlying audio.
++
++The [previous SERO inventory review](https://github.com/AveLyra/911-conspiracy-investigation/blob/d5b279a04f2fe18b78548222aea75451bfa7f60a/investigation/broader-evidence/telephone-sero-evidence-inventory-2026-10-31/README.md) preserves a separate September 13 memorandum's original-media inventory, roughly 8:20 call-start descriptions and reported four-minute recording limit. No byte, track, recording-session or calibrated-clock join between that inventory and DL-336 has been established. Similar names or subject matter do not make them the same recording or independent corroboration.
++
++## 2. Flight 93: a statement and a different Airphone relay
++
++**Observed, viewer page 11:** a report dated **9/11/01** bears **Reference Lead Control Number SF:62**, footer **REQ. #35-13**, and **000000156**. It describes interviewing a United employee at San Francisco International Airport. The narrative says a system aircraft-maintenance controller took a Flight 93 flight-attendant call at approximately **6:40 a.m.** The report describes **two male hijackers with knives**. It then says a handwritten statement was supplied and reproduces a statement beginning **0640 PST** at the **STARFIX Desk**. That is a typed representation of a statement, not the inspected handwritten original.
++
++**Separate reported channel, same page and continuation:** the lower page-11 paragraph describes information from Airphone that a passenger had called; it then introduces information relayed by that passenger. Viewer page 12, internal page 2, reports **three males**, **bombs and knives**, no injuries at that time, and a reported Pennsylvania location. Its header shows **265D-NY-280350** and **9/11/01**. It expressly says the interviewee had no further identifiable information on the weapons or explosives.
++
++**Preserve, do not reconcile:** retain the two-men/knives account beside the three-men/bombs-and-knives relay. These are differently attributed communications within a report; they are not established as simultaneous descriptions of one exchange. Neither headcount is selected as controlling. No weapon, explosive, location, caller identity or exact event clock has been independently verified here. The narrative's unqualified 6:40 and the reproduced statement's 0640 PST remain separate clock labels; no PST/PDT conversion or alignment to other flight records was performed. The report, its typed quotation and continuation are not three independent witnesses.
++
++**Concrete next records:** the original handwritten statement, its attachment/intake record, STARFIX/controller call records and recordings, and the underlying Airphone passenger/operator record and relay documentation. Those could test the timing, attribution, completeness and differences; they have not been acquired or tested in this pass.
++
++## Reading, preservation and access limits
++
++The item advertises **2,119,910 bytes** and its viewer exposes **12 pages**. One request to its actually exposed PDF download link returned **HTTP 403**. No PDF binary, original response payload or PDF SHA-256 was obtained. The normal public Document/Pages viewer remained readable; no alternate binary route, header spoof, hidden asset, credential or gate workaround was used.
++
++Five distinct source-page views were inspected: cover 1; page 2; the visible upper portion of 3; page 11, including a fitted view; and page 12. The poor cover was not used to establish an evidence-custody receipt. Initial loading frames were not interpreted as blank or missing original pages. Page 11's fitted view exposed its lower relay paragraph and prevented treating its two accounts as necessarily one event. Small or cropped fields outside the adopted observations remain unverified.
++
++Four unaltered browser screenshots were retained locally with hashes in [SOURCE-PINS.json](SOURCE-PINS.json). **Their hashes identify captured viewer images, not a native FBI PDF or audio recording.** Raw screenshots, telephone/contact details, redacted identities, signatures and private case material are excluded from this public payload. Source-page paragraphs provide the locators; no artificial line numbers are attributed to scanned pages.
++
++The finding is a traceable record-and-recording identification lead. It does not establish a conspiracy, foreknowledge, fabricated calls, explosives or a complete production. The original activity reports, carrier records, native recordings, clock definitions and custody joins remain [TODOs](OPEN-TODOS.json). No agency contact, new request, fee, experiment, private push or source alteration occurred. Prior source records and published assessments remain unchanged.
+diff --git a/SOURCE-PINS.json b/SOURCE-PINS.json
+new file mode 100644
+index 00000000..fec9376f
+--- /dev/null
++++ b/SOURCE-PINS.json
+@@ -0,0 +1,123 @@
++{
++  "source_url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-03-of-08/view",
++  "access_dates": [
++    "2026-10-31 America/New_York",
++    "2026-11-01 UTC"
++  ],
++  "official_item_advertised_bytes": 2119910,
++  "viewer_pages": 12,
++  "native_pdf_acquired": false,
++  "native_pdf_sha256": null,
++  "download_attempt": {
++    "url": "https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-03-of-08/at_download/file",
++    "result": "HTTP403; no PDF binary acquired; one attempt, no retry or alternate route"
++  },
++  "captures": [
++    {
++      "capture": "viewer-p02.jpg",
++      "bytes": 127876,
++      "sha256": "4e6c9556f66d3ac1483781a7d97291181493dbd7a2b01002a7c5bd0e48e49d0c",
++      "preserved_at_utc": "2026-11-01T02:06:35.398858+00:00",
++      "exact_capture_timestamp": "not separately recorded; capture precedes preservation"
++    },
++    {
++      "capture": "viewer-p03.jpg",
++      "bytes": 172223,
++      "sha256": "80ba96469880e24a0170fd74edd32fe8bc6886b0fc724c6fcc4c38d6cf0bf10c",
++      "preserved_at_utc": "2026-11-01T02:06:39.804105+00:00",
++      "exact_capture_timestamp": "not separately recorded; capture precedes preservation"
++    },
++    {
++      "capture": "viewer-p11-fit.jpg",
++      "bytes": 163077,
++      "sha256": "361722f06a15aac08375e7156431d97e4e87f58b9444678c0501de356034de2e",
++      "preserved_at_utc": "2026-11-01T02:06:45.261611+00:00",
++      "exact_capture_timestamp": "not separately recorded; capture precedes preservation"
++    },
++    {
++      "capture": "viewer-p12.jpg",
++      "bytes": 119921,
++      "sha256": "a7d221275fec87bf27cb5f8df4f161f6ff776c79c24a27dc063e8585ac7f90b6",
++      "preserved_at_utc": "2026-11-01T02:06:48.926446+00:00",
++      "exact_capture_timestamp": "not separately recorded; capture precedes preservation"
++    }
++  ],
++  "claim_locators": [
++    {
++      "id": "P2",
++      "capture": "viewer-p02.jpg",
++      "viewer_page": 2,
++      "internal_page": 1,
++      "location": "FD-302 header and introductory paragraph",
++      "fields": [
++        "DL-336",
++        "265D-NY-280350",
++        "09/12/2001"
++      ],
++      "limit": "Official rendered copy, not native recording/transcript authentication"
++    },
++    {
++      "id": "P3",
++      "capture": "viewer-p03.jpg",
++      "viewer_page": 3,
++      "internal_page": 2,
++      "location": "Continuation header; visible opening corporate-security introduction and Gonzalez response",
++      "fields": [
++        "09/11/2001",
++        "12:28 p.m. Central Time",
++        "approximately8:20"
++      ],
++      "limit": "Upper visible portion read; lower scan clipped. The recalled8:20 has no zone assigned in the visible passage. Remaining transcript pages4–10 unread."
++    },
++    {
++      "id": "P11",
++      "capture": "viewer-p11-fit.jpg",
++      "viewer_page": 11,
++      "location": "Lead-control/date header, first-call narrative, reproduced handwritten-statement quotation, lower Airphone-relay paragraph and footer",
++      "fields": [
++        "SF:62",
++        "9/11/01",
++        "REQ. #35-13",
++        "000000156",
++        "approximately6:40 a.m.",
++        "0640 PST",
++        "STARFIX Desk",
++        "two male hijackers with knives"
++      ],
++      "limit": "Small fitted view and larger upper view inspected; no original handwritten statement or native call records acquired; uncertain minute values in lower paragraph not adopted."
++    },
++    {
++      "id": "P12",
++      "capture": "viewer-p12.jpg",
++      "viewer_page": 12,
++      "internal_page": 2,
++      "location": "Header and single continuation paragraph",
++      "fields": [
++        "265D-NY-280350",
++        "9/11/01",
++        "three males",
++        "bombs, knives",
++        "no injuries",
++        "Pennsylvania"
++      ],
++      "limit": "Continuation of separately attributed Airphone information, not independent verification of weapons or aircraft location"
++    }
++  ],
++  "reading_scope": {
++    "distinct_pages_viewed": [
++      1,
++      2,
++      3,
++      11,
++      12
++    ],
++    "page1": "Poor document-receipt cover; not adopted as custody proof",
++    "pages4_through10": "Not read",
++    "images_preserved": 4,
++    "loading_frames": "Not adopted as missing/blank source pages",
++    "text_layer_or_ocr": "No new extraction/OCR",
++    "native_audio_or_activity_table": "Not acquired or tested"
++  },
++  "hash_meaning": "SHA-256 identifies the preserved unmodified browser JPEG, not the original PDF, source scan, audio or historical truth",
++  "public_payload": "Original research notes and image hashes only; raw viewer images/personal/contact/redacted data excluded"
++}
+diff --git a/VERIFICATION.json b/VERIFICATION.json
+new file mode 100644
+index 00000000..9e188585
+--- /dev/null
++++ b/VERIFICATION.json
+@@ -0,0 +1,38 @@
++{
++  "verified_at_utc": "2026-11-01T02:09:37.978586+00:00",
++  "source_preservation": [
++    {
++      "capture": "viewer-p02.jpg",
++      "bytes": 127876,
++      "sha256": "4e6c9556f66d3ac1483781a7d97291181493dbd7a2b01002a7c5bd0e48e49d0c",
++      "matches_preserved_view": true
++    },
++    {
++      "capture": "viewer-p03.jpg",
++      "bytes": 172223,
++      "sha256": "80ba96469880e24a0170fd74edd32fe8bc6886b0fc724c6fcc4c38d6cf0bf10c",
++      "matches_preserved_view": true
++    },
++    {
++      "capture": "viewer-p11-fit.jpg",
++      "bytes": 163077,
++      "sha256": "361722f06a15aac08375e7156431d97e4e87f58b9444678c0501de356034de2e",
++      "matches_preserved_view": true
++    },
++    {
++      "capture": "viewer-p12.jpg",
++      "bytes": 119921,
++      "sha256": "a7d221275fec87bf27cb5f8df4f161f6ff776c79c24a27dc063e8585ac7f90b6",
++      "matches_preserved_view": true
++    }
++  ],
++  "four_capture_byte_hash_checks_passed": true,
++  "claim_validation": "Manual comparison with actually observed viewer pages/paragraphs; no native audio, table, weapon or clock test",
++  "source_identity": "Official FBI item rendered in ordinary viewer; PDF bytes not obtained; no native-source SHA claimed",
++  "scope": "Five source-page views; selected content only, not full12pages or fulltranscript",
++  "payload_review": "Original notes, public links, source locators and captured-view hashes only; raw screenshots/contact/employee identifiers/signatures/private-case materials excluded",
++  "revision": "New additive unit against no prior file; earlier reports unchanged. TEXT-CHANGES.diff includes the five base publication documents.",
++  "historical_claim_tested": false,
++  "original_criteria_completed": 0,
++  "publication_status": "Not performed by this verification; consult separate local commit/push/ref/file receipts"
++}

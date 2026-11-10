@@ -1,0 +1,35 @@
+# Official telephone-release lead: recording labels and separate reporting channels
+
+Research date: October 31, 2026, Eastern; public-source views and preservation extend into November 1 UTC. Scope: TEL01–TEL04. All original five-track acceptance requirements remain open.
+
+The [FBI Vault September interviews, part 03 of 08](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-03-of-08/view) supplies two useful record-identification leads. Its Ong transcript header and the opening recorded conversation need separate descriptions. A separate Flight 93 report identifies a handwritten statement and an Airphone information relay. Neither is an acquired native recording, activity table or authenticated handwritten original.
+
+## 1. Preserve the transcript header beside its actual opening
+
+**Observed, viewer page 2:** an FD-302-style header prints **DL-336**, case **265D-NY-280350**, and transcription date **09/12/2001**. Its introductory paragraph describes a taped telephone conversation between Betty Ong and the American Airlines Southeast Reservation Center, identifying Winston and Vanessa and Flight 11. The paragraph states September 11, 2001 as today's date.
+
+**Observed, viewer page 3, internal page 2:** the continuation is headed Betty Ong and dated **09/11/2001**. The visible opening speaker states **12:28 p.m. Central Time**, identifies a corporate-security role, and introduces a conversation with Nydia Gonzalez about what occurred that morning. Gonzalez describes her operations-specialist role and an incoming flight-attendant call at approximately **8:20**; the visible passage does not assign that recollection a time zone.
+
+**Interpretation and limits:** the header's broad description and the opening's retrospective interview context are preserved side by side. Do not relabel the entire record, choose a controlling description, treat the 12:28 recording time as the in-flight call time, silently supply a zone to 8:20, or call this an authenticated native recording of Ong. Pages 4–10 were not read in this pass. They could contain further material relevant to the record's scope. Mapping DL-336 to the actual source recording, transcript segments and custody entries remains a TODO. The apparent difference in descriptions does not establish substitution, falsification or an error in the underlying audio.
+
+The [previous SERO inventory review](https://github.com/AveLyra/911-conspiracy-investigation/blob/d5b279a04f2fe18b78548222aea75451bfa7f60a/investigation/broader-evidence/telephone-sero-evidence-inventory-2026-10-31/README.md) preserves a separate September 13 memorandum's original-media inventory, roughly 8:20 call-start descriptions and reported four-minute recording limit. No byte, track, recording-session or calibrated-clock join between that inventory and DL-336 has been established. Similar names or subject matter do not make them the same recording or independent corroboration.
+
+## 2. Flight 93: a statement and a different Airphone relay
+
+**Observed, viewer page 11:** a report dated **9/11/01** bears **Reference Lead Control Number SF:62**, footer **REQ. #35-13**, and **000000156**. It describes interviewing a United employee at San Francisco International Airport. The narrative says a system aircraft-maintenance controller took a Flight 93 flight-attendant call at approximately **6:40 a.m.** The report describes **two male hijackers with knives**. It then says a handwritten statement was supplied and reproduces a statement beginning **0640 PST** at the **STARFIX Desk**. That is a typed representation of a statement, not the inspected handwritten original.
+
+**Separate reported channel, same page and continuation:** the lower page-11 paragraph describes information from Airphone that a passenger had called; it then introduces information relayed by that passenger. Viewer page 12, internal page 2, reports **three males**, **bombs and knives**, no injuries at that time, and a reported Pennsylvania location. Its header shows **265D-NY-280350** and **9/11/01**. It expressly says the interviewee had no further identifiable information on the weapons or explosives.
+
+**Preserve, do not reconcile:** retain the two-men/knives account beside the three-men/bombs-and-knives relay. These are differently attributed communications within a report; they are not established as simultaneous descriptions of one exchange. Neither headcount is selected as controlling. No weapon, explosive, location, caller identity or exact event clock has been independently verified here. The narrative's unqualified 6:40 and the reproduced statement's 0640 PST remain separate clock labels; no PST/PDT conversion or alignment to other flight records was performed. The report, its typed quotation and continuation are not three independent witnesses.
+
+**Concrete next records:** the original handwritten statement, its attachment/intake record, STARFIX/controller call records and recordings, and the underlying Airphone passenger/operator record and relay documentation. Those could test the timing, attribution, completeness and differences; they have not been acquired or tested in this pass.
+
+## Reading, preservation and access limits
+
+The item advertises **2,119,910 bytes** and its viewer exposes **12 pages**. One request to its actually exposed PDF download link returned **HTTP 403**. No PDF binary, original response payload or PDF SHA-256 was obtained. The normal public Document/Pages viewer remained readable; no alternate binary route, header spoof, hidden asset, credential or gate workaround was used.
+
+Five distinct source-page views were inspected: cover 1; page 2; the visible upper portion of 3; page 11, including a fitted view; and page 12. The poor cover was not used to establish an evidence-custody receipt. Initial loading frames were not interpreted as blank or missing original pages. Page 11's fitted view exposed its lower relay paragraph and prevented treating its two accounts as necessarily one event. Small or cropped fields outside the adopted observations remain unverified.
+
+Four unaltered browser screenshots were retained locally with hashes in [SOURCE-PINS.json](SOURCE-PINS.json). **Their hashes identify captured viewer images, not a native FBI PDF or audio recording.** Raw screenshots, telephone/contact details, redacted identities, signatures and private case material are excluded from this public payload. Source-page paragraphs provide the locators; no artificial line numbers are attributed to scanned pages.
+
+The finding is a traceable record-and-recording identification lead. It does not establish a conspiracy, foreknowledge, fabricated calls, explosives or a complete production. The original activity reports, carrier records, native recordings, clock definitions and custody joins remain [TODOs](OPEN-TODOS.json). No agency contact, new request, fee, experiment, private push or source alteration occurred. Prior source records and published assessments remain unchanged.

@@ -2,6 +2,10 @@
 
 [Investigation consolidation guidance](CONSOLIDATION.md).
 
+## November 10: additional telephone source records
+
+The [telephone-source consolidation](branch-consolidation-telephone-2026-11-10/README.md) indexes 4 dated source groups and 33 files already available on AveLyra topic branches. It preserves source blobs and attribution, qualifies historical status, and does not treat repeated reports as independent evidence. Flagged privacy, source-rights, case and LFS items remain outside this batch.
+
 ## November 10: further source and public-branch follow-up
 
 The [follow-up](branch-consolidation-followup-2026-11-10/README.md) preserves three additional public studies and documents bounded UMS/Max policy-number and Saudi-record locators. These are records leads, not proof of common ownership, advance knowledge or a coordinated plan.
