@@ -1,0 +1,62 @@
+{
+  "date_local": "2026-10-21",
+  "runtime": "Existing Python 3.13.7, PyMuPDF 1.27.2.2 and pypdf",
+  "verifier": "audit.py",
+  "source_pin_and_extraction_checks_passed": 27,
+  "source_hashes_before_and_after_match": true,
+  "checks": [
+    "nist source hash matches pin",
+    "ara source hash matches pin",
+    "uaf source hash matches pin",
+    "uaf_other source hash matches pin",
+    "uaf one Figure 3.14 embedded image",
+    "uaf exact vector overlay text",
+    "uaf vector label has covering filled path",
+    "uaf caption names W21x44 G3005",
+    "uaf_other one Figure 3.14 embedded image",
+    "uaf_other exact vector overlay text",
+    "uaf_other vector label has covering filled path",
+    "uaf_other caption names W21x44 G3005",
+    "Figure 3.14 decoded_stream_sha256 matches both UAF copies",
+    "Figure 3.14 decoded_pixels_sha256 matches both UAF copies",
+    "Figure 3.14 alpha_mask_sha256 matches both UAF copies",
+    "ARA Figure 4-60 caption exactly located",
+    "ARA caption independently extracted",
+    "ARA list of figures repeats 14.5",
+    "original NIST Figure 12-68 conflict retained",
+    "UAF general CTE text located",
+    "UAF modified coefficient located",
+    "control termination and stability reason retained",
+    "4-hour C79 event timestamp located",
+    "control uses 4-hour temperatures and 3.5-hour damage",
+    "caption first offset is 8.3 not 13.3",
+    "common solver-clock difference is 1.94 s",
+    "all source hashes unchanged"
+  ],
+  "actually_visually_reviewed_complete_pages_this_run": {
+    "UAF physical": [
+      45,
+      99
+    ],
+    "NIST NCSTAR1-9 physical": [
+      634,
+      655
+    ],
+    "NIST NCSTAR1-9A physical": [
+      17,
+      126,
+      127,
+      156,
+      160
+    ]
+  },
+  "additional_visual_inspection": "Original embedded UAF Figures 3.8 and 3.14; Figure 3.14 full page separately inspected to identify its overlay.",
+  "scope": "Source integrity, PDF layers and arithmetic only; no solver or new historical video timing.",
+  "failed_or_refined_operations": [
+    "A view request initially used ara-017.png rather than ara-17.png; the actual page render was then inspected.",
+    "Separate-raster inspection initially suggested a visible caption-versus-plot conflict; full-page review showed a matching W21 vector label over a W24 raster. All representations remain recorded.",
+    "Both direct NIST downloads returned HTTP 403; the web reader rejected the source size. The new preservation PDF is explicitly a copy of held bytes, not a successful new retrieval."
+  ],
+  "copyright_and_privacy_scope": "Public original research and a public NIST report preservation copy; no new full UAF report or raster reproduction, personal data, private case material or correspondence.",
+  "publication_status_at_creation": "Local verification complete; commit/push verification to follow."
+}
