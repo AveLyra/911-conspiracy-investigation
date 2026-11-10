@@ -1,0 +1,29 @@
+> **Consolidation note:** The original `REVISION.diff` contained absolute local path headers. This public copy replaces only those three header lines; the diff body is unchanged. The historical `VERIFICATION.json` records the original diff hash and tests, not a new test of this sanitized copy. See [SANITIZATION.json](SANITIZATION.json).
+
+# A specific photograph lead for the filmed N10-C3B marking
+
+November 4, 2026. **A previously acquired NIST-linked archive listing names a specific photograph, [SPANDRELS N10-C3B_1.jpg](https://drive.google.com/file/d/1BN8cuz5mbLP_zHp9EvOjBILdwIYPMsQe/view?usp=drivesdk), whose filename contains the marking previously read in the steel movie.** A fresh read-only metadata response confirms the same file record. This narrows a retrieval target; no image-to-movie, building-origin or custody match has been authenticated.
+
+## What is established
+
+Row **files[805]**, zero based, of the preserved 1,000-item listing gives file ID **1BN8cuz5mbLP_zHp9EvOjBILdwIYPMsQe**, JPEG MIME type, reported size **748,330 bytes**, and object creation/modification **2019-11-26T06:03:27.620Z**. The new metadata response agrees on all seven compared fields: ID, title, type, size, URL and both dates. [Selected row](CATALOG-ROW.json) and [current metadata](CURRENT-METADATA.json).
+
+The complete listing serialization is **353,962 bytes**, SHA-256 **`e1c4a3399ddb73df2022b64b14db371d0865264dd24ddb9b808516fbadb3df33`**. That hash identifies the saved listing, **not the photograph**. The image itself was neither downloaded nor viewed in this unit; its SHA-256 remains unknown. Connector metadata explicitly reports **access_not_verified**. An anonymous web-tool open did not retrieve the image-view page, and no HTTP status or access denial is invented from that tool limitation. The archive linkage is the already-documented [NIST archive page](https://www.nist.gov/world-trade-center-investigation/photos-videos-and-simulations) and its collected-steel repository; current anonymous image access remains unverified.
+
+The [preceding movie study](https://github.com/AveLyra/911-conspiracy-investigation/blob/da9fd9dfb7d1af87c88143b0148914439420c4cd/investigation/broader-evidence/steel-tape2-3-source-2026-11-03/README.md) recorded **N10-C3B** at decoder-input index **8440**, reported presentation **563.229897 seconds**. Its lower **B-1/8-1** reading remains uncertain. Those are earlier qualified observations, not new image readings. The verified Intel-store guard now reports that the share is not mounted; no movie, frame, image or recovery copy was read, rerendered or repopulated.
+
+## A report locator, with its limits preserved
+
+An exact-marking search returned a [GovInfo-hosted NCSTAR 1-3C appendices PDF](https://www.govinfo.gov/content/pkg/GOVPUB-C13-41f9c1ed6889bdc5fd7ea98bfc31a05b/pdf/GOVPUB-C13-41f9c1ed6889bdc5fd7ea98bfc31a05b.pdf). Its **search-index excerpt**, not a newly read report face, labels an individual **“N10-C3B (WTC 1, Col.114, Fl 90)”** and supplies **Figure B-32 / printed page 392**. The parent caption separately describes **panel N-10 (A115; 89-92)**. These are separate object-scope fields; no disagreement or controlling value is inferred.
+
+The web open reported a **38,602,567-byte** PDF beyond its retrieval limit and this unit's prospective 12 MiB acquisition cap. A proposed official text rendition was not accessible through the web tool. No report PDF, original face, photographic content or PDF hash was acquired. Therefore the WTC1/column/floor description remains an **unverified report locator**, not an accepted attribution of the filmed object. [Representation-specific pins and limits](SOURCE-PINS.json).
+
+## What follows, and what does not
+
+The next discriminating work is specific: acquire the named photograph into the verified media store; read the actual Figure B-32 record; compare visible markings and geometry; then seek the underlying inventory/alias, filming, coupon, intake and transfer records. A shared string alone cannot join all three objects. Filenames, paint and published labels may descend from the same handling process, so they must not be counted as independent corroboration. A contrary image or source attribution must be retained.
+
+No conclusion about WTC7 origin, deliberate alteration, loss, preservation adequacy, failure mechanism, suppression or intent follows. The movie's earlier **11,607 reported versus 11,606 read-packet/decoded-frame** observations remain unchanged; its planned **12-image** selection emitted **11**, and that failed acceptance check remains failed. The native MOV-table question was deferred when the store guard failed; no parser or alternate decoder test was performed.
+
+All **18 original requirements across five tracks remain open or partial**. The FAA management-side search did not recover a corrected answer or signed disposition. Recorder/materials owner results and the independent method review were read without claiming their missing native inputs or empirical tests complete. This is progress in locating a particular source record, not completion of the original-record goal. [Open TODOs](OPEN-TODOS.json).
+
+Earlier reports and conflicting values are preserved. [REVISION.diff](REVISION.diff) appends this record to the immediately preceding preserved combined version, removing no historical text. [Checklist](CHECKLIST.md) and [verification scope](VERIFICATION.json). The public package contains original notes, links and minimized catalog metadata; no photographs, video/audio, raw source/report bodies, account details, private correspondence, litigation strategy or credentials are included.

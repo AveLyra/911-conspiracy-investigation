@@ -1,0 +1,31 @@
+> **Consolidation note:** The original `REVISION.diff` contained absolute local path headers. This public copy replaces only those three header lines; the diff body is unchanged. The historical `VERIFICATION.json` records the original diff hash and tests, not a new test of this sanitized copy. See [SANITIZATION.json](SANITIZATION.json).
+
+# FAA contact-role and conference entries: service and timing joins remain unresolved
+
+November4,2026. **A released event-log copy contains an FAA point-of-contact role with a DSN-labeled field. A separate pass-down fragment records FAA initiating a hijack conference.** These are specific original-record leads. Neither establishes the availability of a RedSwitch endpoint, successful membership on a particular bridge, or knowledge of the later inaccurate answer.
+
+## Exactly what was found
+
+The [official NARA document3](https://www.archives.gov/files/declassification/iscap/2012-156-doc-3.pdf#page=2), physical2/extractionline14, contains the literal prefix **“FAA POC”** and service label **“DSN.”** The public derivative retains those institutional labels and omits the person’s name and contact value. It is **not a verbatim quotation of the entire line**. The role label does not establish the person’s employer or assignment, or identity with an unnamed/redacted liaison in another record. [Minimized observation](ROLE-OBSERVATION.json).
+
+The complete released DOC3entity is **604,018bytes**, SHA-256 **`7246f587794b3fa57f5f582f65ae968610acd54e7fb674758897ebb7dbd9c4ff`**. This is a released copy containing note/chat-style material, not an authenticated native electronic export or source creation/clock history. Its field cannot simply be dated from adjacent messages or assumed available when a conference first opened.
+
+The [official NARA document1](https://www.archives.gov/files/declassification/iscap/2012-156-doc-1.pdf#page=1), physical1/extractionlines47–54, says **“FAA INITIATES A HIJACK CONFERNCE”** and describes an air-threat conference convened at NORAD’s request. The original **CONFERNCE** spelling and extracted time glyphs **1.UOZ / 1.1:451.** remain uncorrected. No reliable clock value is assigned from them. The complete DOC1entity is **603,753bytes**, SHA-256 **`5add378cc48144943ba4293dbc1f4fc682d07d166cf70320ea4c54b7bd268560`**. It is a two-page released fragment, not proof of a complete originating log. [Exact noncontact text and source pins](SOURCE-PINS.json).
+
+The existing NR151study acquired these two source entities; this unit reuses them. Two files are not automatically two independent observations. Whole-file hashes were verified without a new download, image/clock test or source alteration.
+
+## Preserve the unresolved comparison
+
+The [OT2account](https://github.com/AveLyra/911-conspiracy-investigation/blob/6d148a319c76e579b59dece22395501d66b64463/investigation/broader-evidence/faa-ot2-config-scope-2026-11-04/README.md) reports no FAA in an initial preset, no RedSwitchFAA number available, and secure-conference compatibility problems. The new role/service field remains beside those statements. **No common service, endpoint, conference, writing time or availability has been established.** The records have not been adjudicated as contradictory or reconciled.
+
+A directory/contact-role entry does not establish a completed call; conference initiation does not establish the full roster or a common FAAheadquarters/NMCC/NORADbridge. The same sources can support more than one explanation, including different sessions, timing, source generations or recording errors. Those possibilities remain untested. The contact’s identity is not used to reconstruct redactions or attribute wrongdoing. [Claim/source comparison](COMPARISON.json).
+
+Four next chains are now specific: the entry’s original creation/version/shift/custody; duty-role and functional directory/service records; actual call/bridge/participant/configuration events; and report/QFRdistribution, correction and decision receipts. A documented later entry, inapplicable service or failed connection could weaken a proposed join. An authenticated endpoint/session/receipt could strengthen it. [Targets and tests](RECORD-TARGETS.json). Nothing was requested or sent.
+
+## Scope, handling and remaining requirements
+
+Four operational text pages received literal FAA/F.A.A.locator searches; relevant event/role windows were inspected. A previously unread contact-only third page received **institutional/service-label presence testing only**. That limited text query does not establish a complete directory, absence of FAA, or the meanings of uninspected fields.
+
+A prototype context screen missed DSN-format contact details in a local preview. The raw preview/context file and its erroneous no-contact status flags are excluded from publication; an additive handling correction preserves the failure locally. The final public candidate was manually reviewed and tested as a fixed role/service-only derivative. **No personal name or contact value appears in this package.** No person was contacted and no identity join was attempted. [Verification scope](VERIFICATION.json).
+
+The OIG’s distinct notification and known-liaison-error/noncorrection findings remain preserved. Actual corrected-QFRdelivery, signed consideration/action/no-action and recommendation disposition remain unacquired. All **18 original requirements across five tracks remain open or partial**. Existing source values, uncertain clocks, metadata/counters and failed checks are unchanged. [TODOs](OPEN-TODOS.json), [checklist](CHECKLIST.md) and [additions-only predecessor diff](REVISION.diff). Raw PDFs/media, personal/contact values, private case material/correspondence, strategy, credentials and chat coordination are not published.

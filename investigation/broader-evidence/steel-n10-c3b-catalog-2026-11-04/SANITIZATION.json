@@ -1,0 +1,792 @@
+{
+  "scope": "Path-header sanitization and updated bundle manifest; research observations, original source pins and diff body unchanged. Historical VERIFICATION.json intentionally remains unchanged, including original diff hash.",
+  "original_source": {
+    "BUNDLE-HASHES.json": {
+      "blob": "f17bf4cc2786a9e3066cd8d59e585408d0632e68",
+      "sha256": "6fae8c9c1315ea632e9b1e4c8352ebda55b6a04466ff474b78d9c9f2d2d15fae",
+      "source_ref": [
+        {
+          "ref": "codex/faa-nmcc-bridge-scope-2026-11-04",
+          "head": "597fb92d0d4da93fba6938452db95500ab74e76f"
+        },
+        {
+          "ref": "codex/faa-ot2-config-scope-2026-11-04",
+          "head": "6d148a319c76e579b59dece22395501d66b64463"
+        },
+        {
+          "ref": "codex/faa-role-service-log-2026-11-04",
+          "head": "eb062c94b5b8c94fbb83eba4187b41f650436f4a"
+        },
+        {
+          "ref": "codex/steel-collections-policy-2026-11-04",
+          "head": "b1ebd3c0856174ec3362469d81686fc0a6ec65ea"
+        },
+        {
+          "ref": "codex/steel-december-july-list-join-2026-11-04",
+          "head": "9e9940b96d779c882699c9567be5276a51946c07"
+        },
+        {
+          "ref": "codex/steel-dixon-transfer-approval-2026-11-04",
+          "head": "2fca8c0205fadef2ddc0f7ebfa672ec1601d4720"
+        },
+        {
+          "ref": "codex/steel-fbi-conservation-v2-2026-11-04",
+          "head": "32c2517b97d07160a645802e427fc3605832bd4c"
+        },
+        {
+          "ref": "codex/steel-n10-c3b-catalog-2026-11-04",
+          "head": "2c49c513842a2c57ce099335aee648f2608588c1"
+        },
+        {
+          "ref": "codex/steel-nist-number-reading-qualification-2026-11-04",
+          "head": "ce79c66ea6ad94e5756f995cf83557962f79f5a3"
+        },
+        {
+          "ref": "codex/steel-smithsonian-accession-relations-2026-11-04",
+          "head": "2a46de33b466f4e58ec3b0638ce0830878c7ee53"
+        },
+        {
+          "ref": "codex/steel-smithsonian-openaccess-2026-11-04",
+          "head": "a30a068873401293a8ee5c7f95f16a3cbcc0cff1"
+        },
+        {
+          "ref": "codex/steel-tape2-3-apple-reader-2026-11-04",
+          "head": "cb8bc2395431a924e8a1eeb740c544eea8ad2aed"
+        },
+        {
+          "ref": "codex/steel-tape2-3-edit-chunk-review-2026-11-04",
+          "head": "d50585c09361adb918b7b330d4ae29cf99c19362"
+        },
+        {
+          "ref": "codex/steel-tape2-3-editlist-options-2026-11-04",
+          "head": "45f16ae5f5919c969ad04c6058d4b38646bdb541"
+        },
+        {
+          "ref": "codex/steel-tape2-3-native-tables-2026-11-04",
+          "head": "7ea858bf359684cea350aa3d55d1ed6f609761b8"
+        },
+        {
+          "ref": "codex/steel-woodstock-h0012-agreement-2026-11-04",
+          "head": "8ee1fe54aa3cd36c6ec87bde87cad1ce1028f0c9"
+        },
+        {
+          "ref": "codex/steel-woodstock-incorporated-orders-2026-11-04",
+          "head": "3a71d497b6319f72dc24cad316786ff58860f168"
+        },
+        {
+          "ref": "codex/steel-woodstock-transfer-packet-2026-11-04",
+          "head": "98132cfcb076e642219913bdde11e29685e1a0bc"
+        }
+      ]
+    },
+    "CATALOG-ROW.json": {
+      "blob": "4688b568919ca192096ec0f5c01247b823da31be",
+      "sha256": "59a3f86fa3d759a5f688694c4b145d796329f2a13270f89ccd9d6c7d48956297",
+      "source_ref": [
+        {
+          "ref": "codex/faa-nmcc-bridge-scope-2026-11-04",
+          "head": "597fb92d0d4da93fba6938452db95500ab74e76f"
+        },
+        {
+          "ref": "codex/faa-ot2-config-scope-2026-11-04",
+          "head": "6d148a319c76e579b59dece22395501d66b64463"
+        },
+        {
+          "ref": "codex/faa-role-service-log-2026-11-04",
+          "head": "eb062c94b5b8c94fbb83eba4187b41f650436f4a"
+        },
+        {
+          "ref": "codex/steel-collections-policy-2026-11-04",
+          "head": "b1ebd3c0856174ec3362469d81686fc0a6ec65ea"
+        },
+        {
+          "ref": "codex/steel-december-july-list-join-2026-11-04",
+          "head": "9e9940b96d779c882699c9567be5276a51946c07"
+        },
+        {
+          "ref": "codex/steel-dixon-transfer-approval-2026-11-04",
+          "head": "2fca8c0205fadef2ddc0f7ebfa672ec1601d4720"
+        },
+        {
+          "ref": "codex/steel-fbi-conservation-v2-2026-11-04",
+          "head": "32c2517b97d07160a645802e427fc3605832bd4c"
+        },
+        {
+          "ref": "codex/steel-n10-c3b-catalog-2026-11-04",
+          "head": "2c49c513842a2c57ce099335aee648f2608588c1"
+        },
+        {
+          "ref": "codex/steel-nist-number-reading-qualification-2026-11-04",
+          "head": "ce79c66ea6ad94e5756f995cf83557962f79f5a3"
+        },
+        {
+          "ref": "codex/steel-smithsonian-accession-relations-2026-11-04",
+          "head": "2a46de33b466f4e58ec3b0638ce0830878c7ee53"
+        },
+        {
+          "ref": "codex/steel-smithsonian-openaccess-2026-11-04",
+          "head": "a30a068873401293a8ee5c7f95f16a3cbcc0cff1"
+        },
+        {
+          "ref": "codex/steel-tape2-3-apple-reader-2026-11-04",
+          "head": "cb8bc2395431a924e8a1eeb740c544eea8ad2aed"
+        },
+        {
+          "ref": "codex/steel-tape2-3-edit-chunk-review-2026-11-04",
+          "head": "d50585c09361adb918b7b330d4ae29cf99c19362"
+        },
+        {
+          "ref": "codex/steel-tape2-3-editlist-options-2026-11-04",
+          "head": "45f16ae5f5919c969ad04c6058d4b38646bdb541"
+        },
+        {
+          "ref": "codex/steel-tape2-3-native-tables-2026-11-04",
+          "head": "7ea858bf359684cea350aa3d55d1ed6f609761b8"
+        },
+        {
+          "ref": "codex/steel-woodstock-h0012-agreement-2026-11-04",
+          "head": "8ee1fe54aa3cd36c6ec87bde87cad1ce1028f0c9"
+        },
+        {
+          "ref": "codex/steel-woodstock-incorporated-orders-2026-11-04",
+          "head": "3a71d497b6319f72dc24cad316786ff58860f168"
+        },
+        {
+          "ref": "codex/steel-woodstock-transfer-packet-2026-11-04",
+          "head": "98132cfcb076e642219913bdde11e29685e1a0bc"
+        }
+      ]
+    },
+    "CHECKLIST.md": {
+      "blob": "43f337320e005d6a5d387e93f155a86b9a4cace2",
+      "sha256": "37d90d7b7fbb364fa0e43d24ce5d14da819f19481a118dbb083d8b556e9a62a6",
+      "source_ref": [
+        {
+          "ref": "codex/faa-nmcc-bridge-scope-2026-11-04",
+          "head": "597fb92d0d4da93fba6938452db95500ab74e76f"
+        },
+        {
+          "ref": "codex/faa-ot2-config-scope-2026-11-04",
+          "head": "6d148a319c76e579b59dece22395501d66b64463"
+        },
+        {
+          "ref": "codex/faa-role-service-log-2026-11-04",
+          "head": "eb062c94b5b8c94fbb83eba4187b41f650436f4a"
+        },
+        {
+          "ref": "codex/steel-collections-policy-2026-11-04",
+          "head": "b1ebd3c0856174ec3362469d81686fc0a6ec65ea"
+        },
+        {
+          "ref": "codex/steel-december-july-list-join-2026-11-04",
+          "head": "9e9940b96d779c882699c9567be5276a51946c07"
+        },
+        {
+          "ref": "codex/steel-dixon-transfer-approval-2026-11-04",
+          "head": "2fca8c0205fadef2ddc0f7ebfa672ec1601d4720"
+        },
+        {
+          "ref": "codex/steel-fbi-conservation-v2-2026-11-04",
+          "head": "32c2517b97d07160a645802e427fc3605832bd4c"
+        },
+        {
+          "ref": "codex/steel-n10-c3b-catalog-2026-11-04",
+          "head": "2c49c513842a2c57ce099335aee648f2608588c1"
+        },
+        {
+          "ref": "codex/steel-nist-number-reading-qualification-2026-11-04",
+          "head": "ce79c66ea6ad94e5756f995cf83557962f79f5a3"
+        },
+        {
+          "ref": "codex/steel-smithsonian-accession-relations-2026-11-04",
+          "head": "2a46de33b466f4e58ec3b0638ce0830878c7ee53"
+        },
+        {
+          "ref": "codex/steel-smithsonian-openaccess-2026-11-04",
+          "head": "a30a068873401293a8ee5c7f95f16a3cbcc0cff1"
+        },
+        {
+          "ref": "codex/steel-tape2-3-apple-reader-2026-11-04",
+          "head": "cb8bc2395431a924e8a1eeb740c544eea8ad2aed"
+        },
+        {
+          "ref": "codex/steel-tape2-3-edit-chunk-review-2026-11-04",
+          "head": "d50585c09361adb918b7b330d4ae29cf99c19362"
+        },
+        {
+          "ref": "codex/steel-tape2-3-editlist-options-2026-11-04",
+          "head": "45f16ae5f5919c969ad04c6058d4b38646bdb541"
+        },
+        {
+          "ref": "codex/steel-tape2-3-native-tables-2026-11-04",
+          "head": "7ea858bf359684cea350aa3d55d1ed6f609761b8"
+        },
+        {
+          "ref": "codex/steel-woodstock-h0012-agreement-2026-11-04",
+          "head": "8ee1fe54aa3cd36c6ec87bde87cad1ce1028f0c9"
+        },
+        {
+          "ref": "codex/steel-woodstock-incorporated-orders-2026-11-04",
+          "head": "3a71d497b6319f72dc24cad316786ff58860f168"
+        },
+        {
+          "ref": "codex/steel-woodstock-transfer-packet-2026-11-04",
+          "head": "98132cfcb076e642219913bdde11e29685e1a0bc"
+        }
+      ]
+    },
+    "CURRENT-METADATA.json": {
+      "blob": "7665cef6daba56141efd006b91a9a74734e0038f",
+      "sha256": "feabbc188cb76d8d6cdcef9bd38c7f9929b4e92196cd50d6f4748f643b34ab32",
+      "source_ref": [
+        {
+          "ref": "codex/faa-nmcc-bridge-scope-2026-11-04",
+          "head": "597fb92d0d4da93fba6938452db95500ab74e76f"
+        },
+        {
+          "ref": "codex/faa-ot2-config-scope-2026-11-04",
+          "head": "6d148a319c76e579b59dece22395501d66b64463"
+        },
+        {
+          "ref": "codex/faa-role-service-log-2026-11-04",
+          "head": "eb062c94b5b8c94fbb83eba4187b41f650436f4a"
+        },
+        {
+          "ref": "codex/steel-collections-policy-2026-11-04",
+          "head": "b1ebd3c0856174ec3362469d81686fc0a6ec65ea"
+        },
+        {
+          "ref": "codex/steel-december-july-list-join-2026-11-04",
+          "head": "9e9940b96d779c882699c9567be5276a51946c07"
+        },
+        {
+          "ref": "codex/steel-dixon-transfer-approval-2026-11-04",
+          "head": "2fca8c0205fadef2ddc0f7ebfa672ec1601d4720"
+        },
+        {
+          "ref": "codex/steel-fbi-conservation-v2-2026-11-04",
+          "head": "32c2517b97d07160a645802e427fc3605832bd4c"
+        },
+        {
+          "ref": "codex/steel-n10-c3b-catalog-2026-11-04",
+          "head": "2c49c513842a2c57ce099335aee648f2608588c1"
+        },
+        {
+          "ref": "codex/steel-nist-number-reading-qualification-2026-11-04",
+          "head": "ce79c66ea6ad94e5756f995cf83557962f79f5a3"
+        },
+        {
+          "ref": "codex/steel-smithsonian-accession-relations-2026-11-04",
+          "head": "2a46de33b466f4e58ec3b0638ce0830878c7ee53"
+        },
+        {
+          "ref": "codex/steel-smithsonian-openaccess-2026-11-04",
+          "head": "a30a068873401293a8ee5c7f95f16a3cbcc0cff1"
+        },
+        {
+          "ref": "codex/steel-tape2-3-apple-reader-2026-11-04",
+          "head": "cb8bc2395431a924e8a1eeb740c544eea8ad2aed"
+        },
+        {
+          "ref": "codex/steel-tape2-3-edit-chunk-review-2026-11-04",
+          "head": "d50585c09361adb918b7b330d4ae29cf99c19362"
+        },
+        {
+          "ref": "codex/steel-tape2-3-editlist-options-2026-11-04",
+          "head": "45f16ae5f5919c969ad04c6058d4b38646bdb541"
+        },
+        {
+          "ref": "codex/steel-tape2-3-native-tables-2026-11-04",
+          "head": "7ea858bf359684cea350aa3d55d1ed6f609761b8"
+        },
+        {
+          "ref": "codex/steel-woodstock-h0012-agreement-2026-11-04",
+          "head": "8ee1fe54aa3cd36c6ec87bde87cad1ce1028f0c9"
+        },
+        {
+          "ref": "codex/steel-woodstock-incorporated-orders-2026-11-04",
+          "head": "3a71d497b6319f72dc24cad316786ff58860f168"
+        },
+        {
+          "ref": "codex/steel-woodstock-transfer-packet-2026-11-04",
+          "head": "98132cfcb076e642219913bdde11e29685e1a0bc"
+        }
+      ]
+    },
+    "OBSERVATIONS.json": {
+      "blob": "5817517eb7b9ab065a52e4f996811a8a6dcebfeb",
+      "sha256": "afe4161718652f818dbf54ba56fac6510d6ff53d93b119a8c7055b322c4487e4",
+      "source_ref": [
+        {
+          "ref": "codex/faa-nmcc-bridge-scope-2026-11-04",
+          "head": "597fb92d0d4da93fba6938452db95500ab74e76f"
+        },
+        {
+          "ref": "codex/faa-ot2-config-scope-2026-11-04",
+          "head": "6d148a319c76e579b59dece22395501d66b64463"
+        },
+        {
+          "ref": "codex/faa-role-service-log-2026-11-04",
+          "head": "eb062c94b5b8c94fbb83eba4187b41f650436f4a"
+        },
+        {
+          "ref": "codex/steel-collections-policy-2026-11-04",
+          "head": "b1ebd3c0856174ec3362469d81686fc0a6ec65ea"
+        },
+        {
+          "ref": "codex/steel-december-july-list-join-2026-11-04",
+          "head": "9e9940b96d779c882699c9567be5276a51946c07"
+        },
+        {
+          "ref": "codex/steel-dixon-transfer-approval-2026-11-04",
+          "head": "2fca8c0205fadef2ddc0f7ebfa672ec1601d4720"
+        },
+        {
+          "ref": "codex/steel-fbi-conservation-v2-2026-11-04",
+          "head": "32c2517b97d07160a645802e427fc3605832bd4c"
+        },
+        {
+          "ref": "codex/steel-n10-c3b-catalog-2026-11-04",
+          "head": "2c49c513842a2c57ce099335aee648f2608588c1"
+        },
+        {
+          "ref": "codex/steel-nist-number-reading-qualification-2026-11-04",
+          "head": "ce79c66ea6ad94e5756f995cf83557962f79f5a3"
+        },
+        {
+          "ref": "codex/steel-smithsonian-accession-relations-2026-11-04",
+          "head": "2a46de33b466f4e58ec3b0638ce0830878c7ee53"
+        },
+        {
+          "ref": "codex/steel-smithsonian-openaccess-2026-11-04",
+          "head": "a30a068873401293a8ee5c7f95f16a3cbcc0cff1"
+        },
+        {
+          "ref": "codex/steel-tape2-3-apple-reader-2026-11-04",
+          "head": "cb8bc2395431a924e8a1eeb740c544eea8ad2aed"
+        },
+        {
+          "ref": "codex/steel-tape2-3-edit-chunk-review-2026-11-04",
+          "head": "d50585c09361adb918b7b330d4ae29cf99c19362"
+        },
+        {
+          "ref": "codex/steel-tape2-3-editlist-options-2026-11-04",
+          "head": "45f16ae5f5919c969ad04c6058d4b38646bdb541"
+        },
+        {
+          "ref": "codex/steel-tape2-3-native-tables-2026-11-04",
+          "head": "7ea858bf359684cea350aa3d55d1ed6f609761b8"
+        },
+        {
+          "ref": "codex/steel-woodstock-h0012-agreement-2026-11-04",
+          "head": "8ee1fe54aa3cd36c6ec87bde87cad1ce1028f0c9"
+        },
+        {
+          "ref": "codex/steel-woodstock-incorporated-orders-2026-11-04",
+          "head": "3a71d497b6319f72dc24cad316786ff58860f168"
+        },
+        {
+          "ref": "codex/steel-woodstock-transfer-packet-2026-11-04",
+          "head": "98132cfcb076e642219913bdde11e29685e1a0bc"
+        }
+      ]
+    },
+    "OPEN-TODOS.json": {
+      "blob": "3f581f535d256b76b337a79272d48e5977d31424",
+      "sha256": "3e497297941cfb4b273a90deb2fbcec39df41f1afd43d1d4f1ca26f325c9d6d0",
+      "source_ref": [
+        {
+          "ref": "codex/faa-nmcc-bridge-scope-2026-11-04",
+          "head": "597fb92d0d4da93fba6938452db95500ab74e76f"
+        },
+        {
+          "ref": "codex/faa-ot2-config-scope-2026-11-04",
+          "head": "6d148a319c76e579b59dece22395501d66b64463"
+        },
+        {
+          "ref": "codex/faa-role-service-log-2026-11-04",
+          "head": "eb062c94b5b8c94fbb83eba4187b41f650436f4a"
+        },
+        {
+          "ref": "codex/steel-collections-policy-2026-11-04",
+          "head": "b1ebd3c0856174ec3362469d81686fc0a6ec65ea"
+        },
+        {
+          "ref": "codex/steel-december-july-list-join-2026-11-04",
+          "head": "9e9940b96d779c882699c9567be5276a51946c07"
+        },
+        {
+          "ref": "codex/steel-dixon-transfer-approval-2026-11-04",
+          "head": "2fca8c0205fadef2ddc0f7ebfa672ec1601d4720"
+        },
+        {
+          "ref": "codex/steel-fbi-conservation-v2-2026-11-04",
+          "head": "32c2517b97d07160a645802e427fc3605832bd4c"
+        },
+        {
+          "ref": "codex/steel-n10-c3b-catalog-2026-11-04",
+          "head": "2c49c513842a2c57ce099335aee648f2608588c1"
+        },
+        {
+          "ref": "codex/steel-nist-number-reading-qualification-2026-11-04",
+          "head": "ce79c66ea6ad94e5756f995cf83557962f79f5a3"
+        },
+        {
+          "ref": "codex/steel-smithsonian-accession-relations-2026-11-04",
+          "head": "2a46de33b466f4e58ec3b0638ce0830878c7ee53"
+        },
+        {
+          "ref": "codex/steel-smithsonian-openaccess-2026-11-04",
+          "head": "a30a068873401293a8ee5c7f95f16a3cbcc0cff1"
+        },
+        {
+          "ref": "codex/steel-tape2-3-apple-reader-2026-11-04",
+          "head": "cb8bc2395431a924e8a1eeb740c544eea8ad2aed"
+        },
+        {
+          "ref": "codex/steel-tape2-3-edit-chunk-review-2026-11-04",
+          "head": "d50585c09361adb918b7b330d4ae29cf99c19362"
+        },
+        {
+          "ref": "codex/steel-tape2-3-editlist-options-2026-11-04",
+          "head": "45f16ae5f5919c969ad04c6058d4b38646bdb541"
+        },
+        {
+          "ref": "codex/steel-tape2-3-native-tables-2026-11-04",
+          "head": "7ea858bf359684cea350aa3d55d1ed6f609761b8"
+        },
+        {
+          "ref": "codex/steel-woodstock-h0012-agreement-2026-11-04",
+          "head": "8ee1fe54aa3cd36c6ec87bde87cad1ce1028f0c9"
+        },
+        {
+          "ref": "codex/steel-woodstock-incorporated-orders-2026-11-04",
+          "head": "3a71d497b6319f72dc24cad316786ff58860f168"
+        },
+        {
+          "ref": "codex/steel-woodstock-transfer-packet-2026-11-04",
+          "head": "98132cfcb076e642219913bdde11e29685e1a0bc"
+        }
+      ]
+    },
+    "README.md": {
+      "blob": "45999d2cf0632ab0d3eb3bbd523bfd03c4c67eea",
+      "sha256": "f6b3d6eecf727938eb856d7154f919653d46d95c5addb83fc62dedc777c62508",
+      "source_ref": [
+        {
+          "ref": "codex/faa-nmcc-bridge-scope-2026-11-04",
+          "head": "597fb92d0d4da93fba6938452db95500ab74e76f"
+        },
+        {
+          "ref": "codex/faa-ot2-config-scope-2026-11-04",
+          "head": "6d148a319c76e579b59dece22395501d66b64463"
+        },
+        {
+          "ref": "codex/faa-role-service-log-2026-11-04",
+          "head": "eb062c94b5b8c94fbb83eba4187b41f650436f4a"
+        },
+        {
+          "ref": "codex/steel-collections-policy-2026-11-04",
+          "head": "b1ebd3c0856174ec3362469d81686fc0a6ec65ea"
+        },
+        {
+          "ref": "codex/steel-december-july-list-join-2026-11-04",
+          "head": "9e9940b96d779c882699c9567be5276a51946c07"
+        },
+        {
+          "ref": "codex/steel-dixon-transfer-approval-2026-11-04",
+          "head": "2fca8c0205fadef2ddc0f7ebfa672ec1601d4720"
+        },
+        {
+          "ref": "codex/steel-fbi-conservation-v2-2026-11-04",
+          "head": "32c2517b97d07160a645802e427fc3605832bd4c"
+        },
+        {
+          "ref": "codex/steel-n10-c3b-catalog-2026-11-04",
+          "head": "2c49c513842a2c57ce099335aee648f2608588c1"
+        },
+        {
+          "ref": "codex/steel-nist-number-reading-qualification-2026-11-04",
+          "head": "ce79c66ea6ad94e5756f995cf83557962f79f5a3"
+        },
+        {
+          "ref": "codex/steel-smithsonian-accession-relations-2026-11-04",
+          "head": "2a46de33b466f4e58ec3b0638ce0830878c7ee53"
+        },
+        {
+          "ref": "codex/steel-smithsonian-openaccess-2026-11-04",
+          "head": "a30a068873401293a8ee5c7f95f16a3cbcc0cff1"
+        },
+        {
+          "ref": "codex/steel-tape2-3-apple-reader-2026-11-04",
+          "head": "cb8bc2395431a924e8a1eeb740c544eea8ad2aed"
+        },
+        {
+          "ref": "codex/steel-tape2-3-edit-chunk-review-2026-11-04",
+          "head": "d50585c09361adb918b7b330d4ae29cf99c19362"
+        },
+        {
+          "ref": "codex/steel-tape2-3-editlist-options-2026-11-04",
+          "head": "45f16ae5f5919c969ad04c6058d4b38646bdb541"
+        },
+        {
+          "ref": "codex/steel-tape2-3-native-tables-2026-11-04",
+          "head": "7ea858bf359684cea350aa3d55d1ed6f609761b8"
+        },
+        {
+          "ref": "codex/steel-woodstock-h0012-agreement-2026-11-04",
+          "head": "8ee1fe54aa3cd36c6ec87bde87cad1ce1028f0c9"
+        },
+        {
+          "ref": "codex/steel-woodstock-incorporated-orders-2026-11-04",
+          "head": "3a71d497b6319f72dc24cad316786ff58860f168"
+        },
+        {
+          "ref": "codex/steel-woodstock-transfer-packet-2026-11-04",
+          "head": "98132cfcb076e642219913bdde11e29685e1a0bc"
+        }
+      ]
+    },
+    "REVISION.diff": {
+      "blob": "249e68aec09069b573d5d06261cc577b3852d56a",
+      "sha256": "1bd1200eb2e0e0edf8726e4b395ac77049dfdbefb512aaa6ae557b7ea0bbd1e4",
+      "source_ref": [
+        {
+          "ref": "codex/faa-nmcc-bridge-scope-2026-11-04",
+          "head": "597fb92d0d4da93fba6938452db95500ab74e76f"
+        },
+        {
+          "ref": "codex/faa-ot2-config-scope-2026-11-04",
+          "head": "6d148a319c76e579b59dece22395501d66b64463"
+        },
+        {
+          "ref": "codex/faa-role-service-log-2026-11-04",
+          "head": "eb062c94b5b8c94fbb83eba4187b41f650436f4a"
+        },
+        {
+          "ref": "codex/steel-collections-policy-2026-11-04",
+          "head": "b1ebd3c0856174ec3362469d81686fc0a6ec65ea"
+        },
+        {
+          "ref": "codex/steel-december-july-list-join-2026-11-04",
+          "head": "9e9940b96d779c882699c9567be5276a51946c07"
+        },
+        {
+          "ref": "codex/steel-dixon-transfer-approval-2026-11-04",
+          "head": "2fca8c0205fadef2ddc0f7ebfa672ec1601d4720"
+        },
+        {
+          "ref": "codex/steel-fbi-conservation-v2-2026-11-04",
+          "head": "32c2517b97d07160a645802e427fc3605832bd4c"
+        },
+        {
+          "ref": "codex/steel-n10-c3b-catalog-2026-11-04",
+          "head": "2c49c513842a2c57ce099335aee648f2608588c1"
+        },
+        {
+          "ref": "codex/steel-nist-number-reading-qualification-2026-11-04",
+          "head": "ce79c66ea6ad94e5756f995cf83557962f79f5a3"
+        },
+        {
+          "ref": "codex/steel-smithsonian-accession-relations-2026-11-04",
+          "head": "2a46de33b466f4e58ec3b0638ce0830878c7ee53"
+        },
+        {
+          "ref": "codex/steel-smithsonian-openaccess-2026-11-04",
+          "head": "a30a068873401293a8ee5c7f95f16a3cbcc0cff1"
+        },
+        {
+          "ref": "codex/steel-tape2-3-apple-reader-2026-11-04",
+          "head": "cb8bc2395431a924e8a1eeb740c544eea8ad2aed"
+        },
+        {
+          "ref": "codex/steel-tape2-3-edit-chunk-review-2026-11-04",
+          "head": "d50585c09361adb918b7b330d4ae29cf99c19362"
+        },
+        {
+          "ref": "codex/steel-tape2-3-editlist-options-2026-11-04",
+          "head": "45f16ae5f5919c969ad04c6058d4b38646bdb541"
+        },
+        {
+          "ref": "codex/steel-tape2-3-native-tables-2026-11-04",
+          "head": "7ea858bf359684cea350aa3d55d1ed6f609761b8"
+        },
+        {
+          "ref": "codex/steel-woodstock-h0012-agreement-2026-11-04",
+          "head": "8ee1fe54aa3cd36c6ec87bde87cad1ce1028f0c9"
+        },
+        {
+          "ref": "codex/steel-woodstock-incorporated-orders-2026-11-04",
+          "head": "3a71d497b6319f72dc24cad316786ff58860f168"
+        },
+        {
+          "ref": "codex/steel-woodstock-transfer-packet-2026-11-04",
+          "head": "98132cfcb076e642219913bdde11e29685e1a0bc"
+        }
+      ]
+    },
+    "SOURCE-PINS.json": {
+      "blob": "cd4023b848079869fbf2b12f59cd54900b1d2ad0",
+      "sha256": "06cead48e51e319300f009713a41248b9c974c4795483a390d3b9c7ef796b509",
+      "source_ref": [
+        {
+          "ref": "codex/faa-nmcc-bridge-scope-2026-11-04",
+          "head": "597fb92d0d4da93fba6938452db95500ab74e76f"
+        },
+        {
+          "ref": "codex/faa-ot2-config-scope-2026-11-04",
+          "head": "6d148a319c76e579b59dece22395501d66b64463"
+        },
+        {
+          "ref": "codex/faa-role-service-log-2026-11-04",
+          "head": "eb062c94b5b8c94fbb83eba4187b41f650436f4a"
+        },
+        {
+          "ref": "codex/steel-collections-policy-2026-11-04",
+          "head": "b1ebd3c0856174ec3362469d81686fc0a6ec65ea"
+        },
+        {
+          "ref": "codex/steel-december-july-list-join-2026-11-04",
+          "head": "9e9940b96d779c882699c9567be5276a51946c07"
+        },
+        {
+          "ref": "codex/steel-dixon-transfer-approval-2026-11-04",
+          "head": "2fca8c0205fadef2ddc0f7ebfa672ec1601d4720"
+        },
+        {
+          "ref": "codex/steel-fbi-conservation-v2-2026-11-04",
+          "head": "32c2517b97d07160a645802e427fc3605832bd4c"
+        },
+        {
+          "ref": "codex/steel-n10-c3b-catalog-2026-11-04",
+          "head": "2c49c513842a2c57ce099335aee648f2608588c1"
+        },
+        {
+          "ref": "codex/steel-nist-number-reading-qualification-2026-11-04",
+          "head": "ce79c66ea6ad94e5756f995cf83557962f79f5a3"
+        },
+        {
+          "ref": "codex/steel-smithsonian-accession-relations-2026-11-04",
+          "head": "2a46de33b466f4e58ec3b0638ce0830878c7ee53"
+        },
+        {
+          "ref": "codex/steel-smithsonian-openaccess-2026-11-04",
+          "head": "a30a068873401293a8ee5c7f95f16a3cbcc0cff1"
+        },
+        {
+          "ref": "codex/steel-tape2-3-apple-reader-2026-11-04",
+          "head": "cb8bc2395431a924e8a1eeb740c544eea8ad2aed"
+        },
+        {
+          "ref": "codex/steel-tape2-3-edit-chunk-review-2026-11-04",
+          "head": "d50585c09361adb918b7b330d4ae29cf99c19362"
+        },
+        {
+          "ref": "codex/steel-tape2-3-editlist-options-2026-11-04",
+          "head": "45f16ae5f5919c969ad04c6058d4b38646bdb541"
+        },
+        {
+          "ref": "codex/steel-tape2-3-native-tables-2026-11-04",
+          "head": "7ea858bf359684cea350aa3d55d1ed6f609761b8"
+        },
+        {
+          "ref": "codex/steel-woodstock-h0012-agreement-2026-11-04",
+          "head": "8ee1fe54aa3cd36c6ec87bde87cad1ce1028f0c9"
+        },
+        {
+          "ref": "codex/steel-woodstock-incorporated-orders-2026-11-04",
+          "head": "3a71d497b6319f72dc24cad316786ff58860f168"
+        },
+        {
+          "ref": "codex/steel-woodstock-transfer-packet-2026-11-04",
+          "head": "98132cfcb076e642219913bdde11e29685e1a0bc"
+        }
+      ]
+    },
+    "VERIFICATION.json": {
+      "blob": "62ac5272ce25060f8569c41516bb4e8d965b0cf6",
+      "sha256": "98d27090609dc61fb10c9970b5d984418fadd2b20d8f5138453bfe4a81acb436",
+      "source_ref": [
+        {
+          "ref": "codex/faa-nmcc-bridge-scope-2026-11-04",
+          "head": "597fb92d0d4da93fba6938452db95500ab74e76f"
+        },
+        {
+          "ref": "codex/faa-ot2-config-scope-2026-11-04",
+          "head": "6d148a319c76e579b59dece22395501d66b64463"
+        },
+        {
+          "ref": "codex/faa-role-service-log-2026-11-04",
+          "head": "eb062c94b5b8c94fbb83eba4187b41f650436f4a"
+        },
+        {
+          "ref": "codex/steel-collections-policy-2026-11-04",
+          "head": "b1ebd3c0856174ec3362469d81686fc0a6ec65ea"
+        },
+        {
+          "ref": "codex/steel-december-july-list-join-2026-11-04",
+          "head": "9e9940b96d779c882699c9567be5276a51946c07"
+        },
+        {
+          "ref": "codex/steel-dixon-transfer-approval-2026-11-04",
+          "head": "2fca8c0205fadef2ddc0f7ebfa672ec1601d4720"
+        },
+        {
+          "ref": "codex/steel-fbi-conservation-v2-2026-11-04",
+          "head": "32c2517b97d07160a645802e427fc3605832bd4c"
+        },
+        {
+          "ref": "codex/steel-n10-c3b-catalog-2026-11-04",
+          "head": "2c49c513842a2c57ce099335aee648f2608588c1"
+        },
+        {
+          "ref": "codex/steel-nist-number-reading-qualification-2026-11-04",
+          "head": "ce79c66ea6ad94e5756f995cf83557962f79f5a3"
+        },
+        {
+          "ref": "codex/steel-smithsonian-accession-relations-2026-11-04",
+          "head": "2a46de33b466f4e58ec3b0638ce0830878c7ee53"
+        },
+        {
+          "ref": "codex/steel-smithsonian-openaccess-2026-11-04",
+          "head": "a30a068873401293a8ee5c7f95f16a3cbcc0cff1"
+        },
+        {
+          "ref": "codex/steel-tape2-3-apple-reader-2026-11-04",
+          "head": "cb8bc2395431a924e8a1eeb740c544eea8ad2aed"
+        },
+        {
+          "ref": "codex/steel-tape2-3-edit-chunk-review-2026-11-04",
+          "head": "d50585c09361adb918b7b330d4ae29cf99c19362"
+        },
+        {
+          "ref": "codex/steel-tape2-3-editlist-options-2026-11-04",
+          "head": "45f16ae5f5919c969ad04c6058d4b38646bdb541"
+        },
+        {
+          "ref": "codex/steel-tape2-3-native-tables-2026-11-04",
+          "head": "7ea858bf359684cea350aa3d55d1ed6f609761b8"
+        },
+        {
+          "ref": "codex/steel-woodstock-h0012-agreement-2026-11-04",
+          "head": "8ee1fe54aa3cd36c6ec87bde87cad1ce1028f0c9"
+        },
+        {
+          "ref": "codex/steel-woodstock-incorporated-orders-2026-11-04",
+          "head": "3a71d497b6319f72dc24cad316786ff58860f168"
+        },
+        {
+          "ref": "codex/steel-woodstock-transfer-packet-2026-11-04",
+          "head": "98132cfcb076e642219913bdde11e29685e1a0bc"
+        }
+      ]
+    }
+  },
+  "changed": [
+    "REVISION.diff: replaced diff --git, --- and +++ filename headers",
+    "README.md: added disclosure",
+    "BUNDLE-HASHES.json: updated hashes for changed files and added this record"
+  ],
+  "original_diff_sha256": "1bd1200eb2e0e0edf8726e4b395ac77049dfdbefb512aaa6ae557b7ea0bbd1e4",
+  "sanitized_diff_sha256": "d4bf33a62be8b4507b050ac87ea04b1752fb4a42b9783fe086221583d009e9af"
+}
