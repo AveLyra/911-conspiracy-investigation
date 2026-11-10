@@ -1,0 +1,17 @@
+# Preserved-audio quality: public summary
+
+**This is a newly written replacement summary of the public status entry, not the original audio report or its supporting analysis.** The original report, source media, plots, machine transcripts, code and run products are not supplied here. No audio analysis or listening was repeated to prepare this summary. The historical observations and verification counts below are attributed to the [public status entry](../STATUS.md); they cannot be independently reproduced from this summary alone.
+
+## What the status reports
+
+The September 11, 2026 entry describes two-channel quality measurements in four selected windows from a preserved compilation, a reproduced whole-file loudness value of −18.6 LUFS, and a tested mono mix with approximately 0.707 per channel. It reports that some peaks of that mix exceeded a legacy display ceiling. It also reports that input-side seeking and full decoding produced equal-length but unequal sample arrays. Those are reported results about digital processing; they do not themselves establish alteration, source tampering, shifted historical events, or the cause of the differences.
+
+The same entry states that precise timestamps in an earlier transcript were navigation markers, not independently measured audio or visual onsets. Whole-window channel correlations and mid/side measurements did not demonstrate large overall cancellation; that finding does not rule out shorter local effects. The reported results do not independently calibrate an absence of charge sounds. The authors reported no new listening, scene-level synchronization, reproduction of NIST's blast analysis, or new ranking of collapse causes in that continuation.
+
+A later entry describes identified edits in the compilation and an audio-coordinate crosswalk. Different digital-level patterns around edits do not by themselves identify a sound, establish original audiovisual synchronization, or identify a collapse mechanism. The entry says no listening or calibrated detectability result was claimed. See the [public status](../STATUS.md) for the precise scope and qualifications.
+
+## External context and limits
+
+In its [WTC 7 FAQ, questions 33 and 36](https://www.nist.gov/world-trade-center-investigation/study-faqs/wtc-7-investigation), NIST concludes that a blast did not cause the collapse and describes a modeled blast of 130–140 dB at at least half a mile, **if unobstructed by surrounding buildings**, for the smallest blast it considered capable of failing the critical column. The same FAQ discusses an emergency responder's report of two loud booms and says reported witness sound levels did not match its required explosion. The witness report is not itself proof of an explosion; the model estimate is not a direct measurement of the actual sound field or a universal detection threshold for every proposed device or recording.
+
+A meaningful sound-presence or sound-absence test would need source and edit provenance, event and audio synchronization, recorder behavior, locations and propagation conditions, background noise, and a defensible detection opportunity. These requirements remain open in the public status. An unresolved processing anomaly is not evidence that an explosive event occurred or was concealed; the reported audit equally does not establish that all potential events would have been detectable. This summary makes no attribution to UMS or any other actor.
