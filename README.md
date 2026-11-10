@@ -1,12 +1,21 @@
 # September 11: Research, Evidence, and Open Questions
 
-This repository collects scientific and technical research about the collapse
-of World Trade Center 7 on September 11, 2001. It is an unfinished research
-archive, not an expert report or a finding about the cause.
+This repository follows a developing September 11 hypothesis through records
+about intelligence decisions, Urban Moving Systems, WTC access and physical
+evidence, and post-attack policy. WTC 7 engineering is a major research track.
+The investigation is unfinished; its working hypothesis is not a finding that
+the alleged operation occurred.
 
-WTC 7 remains the principal investigation. Related September 11 record studies
-are kept separately, including the
-[FBI van laboratory-release study](investigation/urban-moving-systems/fbi-van-lab-release-2026-10-06/README.md).
+## Track the investigation
+
+- [Developing theory and tests](investigation/urban-moving-systems/developing-theory-2026-11-06/README.md) — the working model, evidence, competing explanations and missing links.
+- [Integrated master list](investigation/MASTER-LIST.md) — research leads, source reviews and updates.
+- [Cross-chat evidence integration](investigation/cross-chat-evidence-integration-2026-11-10/README.md) — maps 16 audit topics and five original-record tracks to the theory.
+- [Numbered lead register](investigation/wtc7/master-lead-register-2026-10-26/MASTER-LIST.md) and [open targets](investigation/wtc7/master-lead-register-2026-10-26/OPEN-TARGETS.json) — individual leads and records still sought.
+- [Public research catalog](investigation/branch-consolidation-public-refs-2026-11-10/README.md) and [WTC 7 source availability](investigation/wtc7/source-availability-2026-11-10/README.md) — preserved reports and source limitations.
+
+These tools distinguish observations from inferences, competing explanations
+and missing evidence. Repeated accounts are not necessarily independent.
 
 ## In plain language
 

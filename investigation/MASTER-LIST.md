@@ -1,5 +1,18 @@
 # Current integrated investigation master list
 
+## Start here: theory and evidence
+
+- [Developing theory](urban-moving-systems/developing-theory-2026-11-06/README.md): the working model, proposed tests and competing explanations.
+- [Cross-chat integration](cross-chat-evidence-integration-2026-11-10/README.md): selected findings from the two investigations, a map of all 16 audit topics and the five original-record tracks. This dated synthesis is not an inventory of every chat attachment, tool output or later result.
+- [Numbered master lead register](wtc7/master-lead-register-2026-10-26/MASTER-LIST.md), [source pins](wtc7/master-lead-register-2026-10-26/register.json) and [open targets](wtc7/master-lead-register-2026-10-26/OPEN-TARGETS.json): individual leads, sources and missing records.
+- [Public research catalog](branch-consolidation-public-refs-2026-11-10/README.md) and [source-availability review](wtc7/source-availability-2026-11-10/README.md): preserved material and gaps.
+
+## November 10: recent original-record follow-ups
+
+- [Frankel drawing release accounts](broader-evidence/steel-frankel-release-accounts-2026-11-10/README.md): conflicting accounts of the completeness of NIST's drawing set and a numbered gap in one mirrored release; original holdings and disk inventories remain unresolved. This does not establish concealment.
+- [Air-ground telephone handoff](broader-evidence/telephone-airground-platform-osps-2026-11-10/README.md): a patent identifies distinct platform and operator-handoff records to seek. It does not establish the 2001 configuration or a particular call's outcome.
+- [FAA action and recommendation records](broader-evidence/faa-supplemental-report-no-action-2026-11-10/README.md): records from separate investigations illustrate potential record types. The relevant FAA decision, corrected answer and delivery evidence remain missing.
+
 The [four historical research snapshots](branch-consolidation-four-snapshots-2026-11-10/README.md) have been reconciled with current main, including dated UMS request-status corrections. Their source and LFS limitations remain explicit.
 
 
