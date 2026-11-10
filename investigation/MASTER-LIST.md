@@ -1,5 +1,8 @@
 # Current integrated investigation master list
 
+The [four historical research snapshots](branch-consolidation-four-snapshots-2026-11-10/README.md) have been reconciled with current main, including dated UMS request-status corrections. Their source and LFS limitations remain explicit.
+
+
 [Investigation consolidation guidance](CONSOLIDATION.md).
 
 ## November 10: WTC 7 source-availability repairs
