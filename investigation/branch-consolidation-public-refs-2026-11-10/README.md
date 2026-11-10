@@ -256,3 +256,5 @@ Additional WTC research: [comparator expansion](../wtc7/comparator-expansion/rep
 Additional historical derivatives: [DOT investigation-follow-up policy](../broader-evidence/faa-investigation-followup-order-2026-10-28/README.md), with its LFS scan omitted, and the [WTC fire source map](../wtc7/fire-observation-source-map.md), with source imagery and original local lineage excluded. Their provenance distinguishes earlier findings from this consolidation.
 
 The retained [reference-motion package](../wtc7/reference-motion/README.md) includes computational records with disclosed stable path pseudonyms and omitted media. Both the failed Camera 2 selection and narrow Camera 4 screen remain; synthetic checks do not establish the footage or collapse cause.
+
+An [idealized structural-bounds exercise](../wtc7/structural-bounds.md) has been recovered with code, synthetic results and historical provenance. Its 15 unit tests were rerun; the model uses hypothetical inputs and is not a WTC 7 reconstruction or cause finding.

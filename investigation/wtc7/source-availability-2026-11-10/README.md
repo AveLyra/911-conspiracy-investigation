@@ -17,3 +17,5 @@ A historical [fire and demolition comparator expansion](../comparator-expansion/
 A historical [fire-observation source map](../fire-observation-source-map.md) and [sanitized lineage](../fire-coverage-extension/lineage.json) are now included; the linked extension notes distinguish these derivatives from original images and path-bearing records. The [latest target inventory](OPEN-TARGETS-UPDATE-6.json) lists remaining literal paths.
 
 The recovered [reference-motion package](../reference-motion/README.md) preserves a failed Camera 2 selection and limited Camera 4 screens, with source media omitted. Its stable path labels are not encryption; a recursive check verified key/value structure after redaction. The [latest target inventory](OPEN-TARGETS-UPDATE-7.json) records literal link availability.
+
+The recovered [idealized structural-bounds exercise](../structural-bounds.md) uses hypothetical mechanics rather than building-specific data; unit tests check its equations, not the collapse. The [latest target inventory](OPEN-TARGETS-UPDATE-8.json) records literal link availability.
