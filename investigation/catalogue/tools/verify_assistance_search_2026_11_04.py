@@ -8,10 +8,32 @@ PRECEDING_SHA256 = '94b97b034745240c84f36c17790e47ad8f3400752c344a913e0d7a3954d9
 ADDITION_SHA256 = '2c299177b94153ccaf3eaae94cbfb5edc704ebe0d0c0de7f3c3e4e6bc2911fbc'
 sha = lambda raw: hashlib.sha256(raw).hexdigest()
 
+def preceding_november_6_master(root, current):
+    """Check the new navigation and return the unchanged November 4 edition."""
+    revision = json.loads((root / 'data/lead-reconciliation-2026-11-06.json').read_text())
+    prefix = current[:revision['prefix_bytes']]
+    before = current[revision['prefix_bytes']:]
+    assert sha(current) == revision['master_sha256'], 'November 6 master bytes differ'
+    assert sha(prefix) == revision['prefix_sha256'], 'November 6 navigation differs'
+    assert sha(before) == revision['preceding_master_sha256'], 'Earlier master bytes differ'
+    assert b'(LEADS-AND-UPDATES-2026-11-06.md)' in prefix, 'Roundup missing from master'
+    roundup = (root / 'LEADS-AND-UPDATES-2026-11-06.md').read_bytes()
+    assert sha(roundup) == revision['roundup_sha256'], 'November 6 roundup bytes differ'
+    reports = revision['reports']
+    targets = {(row['commit'], row['path']) for row in reports}
+    links = re.findall(
+        r'\[Source review\]\(https://github\.com/AveLyra/911-conspiracy-investigation/blob/([a-f0-9]{40})/([^)]+)\)',
+        roundup.decode(),
+    )
+    assert len(reports) == len(targets) == len(links) == 118, 'Report count differs'
+    assert targets == set(links), 'Report coverage differs from source inventory'
+    assert sum(row['branch'] == 'main' for row in reports) == 57, 'Main source count differs'
+    return before
+
 def preceding_master(root):
     update = json.loads((root / REL / 'UPDATE.json').read_text())
     addition = (root / REL / 'ADDITION.md').read_bytes()
-    current = (root / 'MASTER-LEADS.md').read_bytes()
+    current = preceding_november_6_master(root, (root / 'MASTER-LEADS.md').read_bytes())
     assert update['reader'] == 'MASTER-LEADS.md'
     assert update['before_sha256'] == PRECEDING_SHA256
     assert update['addition_sha256'] == ADDITION_SHA256 == sha(addition)

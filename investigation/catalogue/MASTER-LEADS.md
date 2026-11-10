@@ -1,3 +1,9 @@
+<!-- BEGIN NOVEMBER 6 LEAD ROUNDUP -->
+# Master lead navigation — November 6, 2026 update
+
+[November 6 leads and updates](LEADS-AND-UPDATES-2026-11-06.md) covers 118 source report updates across telephone records, FAA and NORAD, steel custody and Urban Moving Systems. Start with the Flight 93 maintenance notes, the March Airfone workbook, K-13 specimen records and the source behind NORAD’s 9:24 answer. The roundup retains the preceding master below and links each update to its owning source report.
+<!-- END NOVEMBER 6 LEAD ROUNDUP -->
+
 <!-- BEGIN CURRENT PUBLIC RECONCILIATION 2026-11-04 -->
 # Master leads — November 4, 2026
 
