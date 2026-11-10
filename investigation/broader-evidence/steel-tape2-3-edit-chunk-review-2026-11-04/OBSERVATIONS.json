@@ -1,0 +1,34 @@
+[
+  {
+    "id": "T23-01-ADDRESSES",
+    "kind": "source-dependent mapping calculation",
+    "observation": "11607 declared samples mapped within regular file mdat,0unmapped/excess/overlaps/outside",
+    "support": "NATIVE-MAPPING.json sample_mapping; every SAMPLE-MAP.csv row",
+    "grade": "A for metadata/address arithmetic",
+    "limits": "No compressed payload validity, camera completeness or decoder result"
+  },
+  {
+    "id": "T23-01-REFERENCE",
+    "kind": "native field observation",
+    "observation": "stsc description1 -> cvid reference1 -> alis flags1,zero opaque data bytes",
+    "support": "NATIVE-MAPPING.json data_reference_joins; index815620609,flags815620568",
+    "grade": "A for encoded fields",
+    "limits": "Definition allows forks; no otherfork/external target tested"
+  },
+  {
+    "id": "T23-01-EDIT",
+    "kind": "native field / exact interval arithmetic",
+    "observation": "600movie,2997media; elst464704,start0,rate1;11605nominalfull,1partial,1outside",
+    "support": "NATIVE-MAPPING.json track_headers_and_edits and nominal_edit_intersections",
+    "grade": "A for fields/arithmetic",
+    "limits": "No actual decoder selection, authoring history or causal adjudication"
+  },
+  {
+    "id": "T23-01-PRESERVED",
+    "kind": "unresolved multi-layer comparison",
+    "observation": "11607reported/native beside11606packets/frames andFAILED12planned/11emitted; prior774.506507 beside native movie/media durations",
+    "support": "PRIOR-COUNTS.json and current report",
+    "grade": "A for recorded readouts; historical cause underdetermined",
+    "limits": "No preferred counter, historical loss/edit/intent claim"
+  }
+]
