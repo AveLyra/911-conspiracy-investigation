@@ -11,6 +11,10 @@
 
 The [evidence index](topics/evidence-index.md) links names, organizations, dates and record identifiers to concise source-backed guides. Start with [UMS and the FBI inquiry](topics/urban-moving-systems-911-fbi-records.md), the [WTC visitor card](topics/wtc-visitor-card-moving-company-access.md), [van laboratory results](topics/fbi-ums-van-explosives-laboratory-results.md), the [Classic/Miami lead](topics/classic-international-movers-hijacker-notebook.md), [WTC 7 and physical evidence](topics/wtc7-nist-uaf-collapse-evidence.md), the [CIA hold and Saudi-linked assistance](topics/cia-hold-saudi-support-september-11.md), or the [theory and tests](topics/developing-911-theory.md). The guides are navigational summaries; the linked underlying research and dated records govern their scope and limitations.
 
+## November 11: Sarasota gate and FBI records
+
+The [source chronology](broader-evidence/sarasota-gate-fbi-source-chronology-2026-11-11/README.md) compares the released 2002 FBI communication, a 2004 FDLE report, later disputed FBI assessments and FOIA proceedings. Original gate logs, plate comparisons and their custody were not found; a reported match has not been independently reconstructed. No authenticated UMS–Sarasota link was found in the bounded search. The report identifies records that could strengthen or weaken each account.
+
 ## November 10: recent original-record follow-ups
 
 - [Frankel drawing release accounts](broader-evidence/steel-frankel-release-accounts-2026-11-10/README.md): conflicting accounts of the completeness of NIST's drawing set and a numbered gap in one mirrored release; original holdings and disk inventories remain unresolved. This does not establish concealment.
