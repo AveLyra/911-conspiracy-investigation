@@ -17,6 +17,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: Sarasota and access-source checks — ongoing
+
+[Five scoped checks](broader-evidence/scooby-sarasota-visitor-source-checks-2026-11-11/README.md) visually verify the 2014 Sarasota briefing's statement about absent search documentation alongside the separate 2011 negative analyst search; inspect the visitor-card receipt; and check NARA, Senate and notepad-filing references. The [Sarasota chronology](broader-evidence/sarasota-gate-fbi-source-chronology-2026-11-11/README.md) now reflects the image check. The wider claim audit remains incomplete.
+
 ## November 11: UMS and Bayoumi original-record checks — ongoing
 
 [Six scoped checks](broader-evidence/scooby-ums-saudi-claim-checks-2026-11-11/README.md) verify the source-reported 2017 GIP allegation, the opposed 2021 attack-knowledge assessment, Classic and Exxon leads, and an existing 2014 disposition record the research chat could not retrieve. Serial 368 has a synopsis/detail year discrepancy and its host index misstates the memorandum year. The complete report-by-report claim audit remains open.
