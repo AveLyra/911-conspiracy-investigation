@@ -47,6 +47,8 @@ A [sixth claim-check report](../scooby-warning-routing-dependency-checks-2026-11
 
 A [seventh claim-check report](../scooby-release-nist-sec-checks-2026-11-11/README.md) independently counts and hashes the preserved 2013-release files and checks NIST sensitivity and SEC volume sources.
 
+An [eighth review](../scooby-sec-ums-candidate-audit-2026-11-11/README.md) assesses 37 mechanically segmented visible-summary candidates from reports 28 and 29 individually, with unresolved sources and the SEC appendix-label discrepancy preserved. It does not review all report tables or attachments.
+
 ## What would advance this audit
 
 Expand every row into distinct material claims with exact page or exhibit locators, inspect each cited original and material contrary record, independently reproduce numerical claims, and record inaccessible source dependencies. Check report attachments and current project records separately. Do not equate the initial 30 selected rows or the limited checks above with completion of that work.

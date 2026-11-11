@@ -17,6 +17,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: SEC and UMS summary candidates — ongoing
+
+[A candidate-by-candidate review](broader-evidence/scooby-sec-ums-candidate-audit-2026-11-11/README.md) compares 37 visible-summary entries with original SEC and FBI records and the preserved file manifest. The SEC's MaST follow-up database and NYSE's separately described Master List should not be conflated. The SEC packet's exhibit list and reproduced database page use different appendix labels; their relationship remains open. This does not complete the 30-report audit.
+
 ## November 11: Release accounting, tower sensitivity and options — ongoing
 
 [Further source checks](broader-evidence/scooby-release-nist-sec-checks-2026-11-11/README.md) independently verify the preserved UMS split-file counts and hashes, NIST's reported WTC 1 sensitivity, and the difference between an aggregate options-volume correction and an account-level attribution. The original FBI transmission, exact trading records, and complete 30-report claim audit remain open.
