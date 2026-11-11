@@ -7,6 +7,10 @@
 - [Numbered master lead register](wtc7/master-lead-register-2026-10-26/MASTER-LIST.md), [source pins](wtc7/master-lead-register-2026-10-26/register.json) and [open targets](wtc7/master-lead-register-2026-10-26/OPEN-TARGETS.json): individual leads, sources and missing records.
 - [Public research catalog](branch-consolidation-public-refs-2026-11-10/README.md) and [source-availability review](wtc7/source-availability-2026-11-10/README.md): preserved material and gaps.
 
+## Searchable topic guides and evidence index
+
+The [evidence index](topics/evidence-index.md) links names, organizations, dates and record identifiers to concise source-backed guides. Start with [UMS and the FBI inquiry](topics/urban-moving-systems-911-fbi-records.md), the [WTC visitor card](topics/wtc-visitor-card-moving-company-access.md), [van laboratory results](topics/fbi-ums-van-explosives-laboratory-results.md), the [Classic/Miami lead](topics/classic-international-movers-hijacker-notebook.md), [WTC 7 and physical evidence](topics/wtc7-nist-uaf-collapse-evidence.md), the [CIA hold and Saudi-linked assistance](topics/cia-hold-saudi-support-september-11.md), or the [theory and tests](topics/developing-911-theory.md). The guides are navigational summaries; the linked underlying research and dated records govern their scope and limitations.
+
 ## November 10: recent original-record follow-ups
 
 - [Frankel drawing release accounts](broader-evidence/steel-frankel-release-accounts-2026-11-10/README.md): conflicting accounts of the completeness of NIST's drawing set and a numbered gap in one mirrored release; original holdings and disk inventories remain unresolved. This does not establish concealment.

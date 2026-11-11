@@ -17,6 +17,17 @@ the alleged operation occurred.
 These tools distinguish observations from inferences, competing explanations
 and missing evidence. Repeated accounts are not necessarily independent.
 
+## Explore the evidence by topic
+
+- [Urban Moving Systems and the FBI investigation](investigation/topics/urban-moving-systems-911-fbi-records.md)
+- [WTC visitor card and moving-company access](investigation/topics/wtc-visitor-card-moving-company-access.md)
+- [FBI van explosives tests and sample custody](investigation/topics/fbi-ums-van-explosives-laboratory-results.md)
+- [Classic International Movers and the hijacker lead](investigation/topics/classic-international-movers-hijacker-notebook.md)
+- [WTC 7: NIST, UAF and physical evidence](investigation/topics/wtc7-nist-uaf-collapse-evidence.md)
+- [CIA hold and Saudi-linked support](investigation/topics/cia-hold-saudi-support-september-11.md)
+- [Developing theory and tests](investigation/topics/developing-911-theory.md)
+- [Evidence index: names, records and identifiers](investigation/topics/evidence-index.md)
+
 ## In plain language
 
 WTC 7 was a large steel-framed building that collapsed late in the afternoon
