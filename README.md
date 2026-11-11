@@ -1,34 +1,36 @@
-# September 11: Research, Evidence, and Open Questions
+# 9/11 Investigation: Developing Theory, FBI Records, and WTC Evidence
 
-This repository follows a developing September 11 hypothesis through records
-about intelligence decisions, Urban Moving Systems, WTC access and physical
-evidence, and post-attack policy. WTC 7 engineering is a major research track.
-The investigation is unfinished; its working hypothesis is not a finding that
-the alleged operation occurred.
+This public research project investigates unresolved questions about September 11, 2001. It follows records concerning **Urban Moving Systems (UMS), alleged Israeli intelligence links, Saudi-linked assistance to hijackers, CIA information sharing, World Trade Center access and physical evidence, and decisions made after the attacks**. WTC 7 engineering is one major track within that broader investigation.
 
-## Track the investigation
+The [developing theory](investigation/urban-moving-systems/developing-theory-2026-11-06/README.md) is a working hypothesis, not an established account. It considers possible coordination among US, Saudi and Israeli actors; whether UMS had an intelligence role; and whether associated personnel could have accessed the WTC and installed explosives. **The available evidence does not establish those connections or an explosives installation.** The model does not require UMS to have contacted the hijackers or the hijackers to have known of the alleged operation. The project tests these proposals against source records, competing explanations and evidence that would weaken them.
 
-- [Developing theory and tests](investigation/urban-moving-systems/developing-theory-2026-11-06/README.md) — the working model, evidence, competing explanations and missing links.
-- [Integrated master list](investigation/MASTER-LIST.md) — research leads, source reviews and updates.
-- [Cross-chat evidence integration](investigation/cross-chat-evidence-integration-2026-11-10/README.md) — maps 16 audit topics and five original-record tracks to the theory.
-- [Numbered lead register](investigation/wtc7/master-lead-register-2026-10-26/MASTER-LIST.md) and [open targets](investigation/wtc7/master-lead-register-2026-10-26/OPEN-TARGETS.json) — individual leads and records still sought.
-- [Public research catalog](investigation/branch-consolidation-public-refs-2026-11-10/README.md) and [WTC 7 source availability](investigation/wtc7/source-availability-2026-11-10/README.md) — preserved reports and source limitations.
+## Start here
 
-These tools distinguish observations from inferences, competing explanations
-and missing evidence. Repeated accounts are not necessarily independent.
+- **[Developing theory and tests](investigation/urban-moving-systems/developing-theory-2026-11-06/README.md):** the proposed sequence, evidence for and against each link, and the records that could change the assessment.
+- **[Master list](investigation/MASTER-LIST.md):** the integrated research index, recent findings, open leads and source limitations.
+- **[Evidence index](investigation/topics/evidence-index.md):** a searchable guide to names, companies, records and identifiers.
+- **[Cross-chat evidence integration](investigation/cross-chat-evidence-integration-2026-11-10/README.md):** a map connecting the broader audit and original-record tracks to the theory.
+- **[Numbered lead register](investigation/wtc7/master-lead-register-2026-10-26/MASTER-LIST.md)** and **[open records targets](investigation/wtc7/master-lead-register-2026-10-26/OPEN-TARGETS.json)**: individual leads and outstanding tests.
 
-## Explore the evidence by topic
+## 9/11 evidence by topic
 
-- [Urban Moving Systems and the FBI investigation](investigation/topics/urban-moving-systems-911-fbi-records.md)
-- [WTC visitor card and moving-company access](investigation/topics/wtc-visitor-card-moving-company-access.md)
-- [FBI van explosives tests and sample custody](investigation/topics/fbi-ums-van-explosives-laboratory-results.md)
-- [Classic International Movers and the hijacker lead](investigation/topics/classic-international-movers-hijacker-notebook.md)
-- [WTC 7: NIST, UAF and physical evidence](investigation/topics/wtc7-nist-uaf-collapse-evidence.md)
-- [CIA hold and Saudi-linked support](investigation/topics/cia-hold-saudi-support-september-11.md)
-- [Developing theory and tests](investigation/topics/developing-911-theory.md)
-- [Evidence index: names, records and identifiers](investigation/topics/evidence-index.md)
+| Question | Evidence guide |
+| --- | --- |
+| What do FBI records establish about UMS and alleged Mossad links? | [Urban Moving Systems and the FBI inquiry](investigation/topics/urban-moving-systems-911-fbi-records.md) |
+| Did UMS or Max Movers have access to the World Trade Center? | [WTC visitor card, moving jobs and access](investigation/topics/wtc-visitor-card-moving-company-access.md) |
+| What happened to samples taken from the detained men's van? | [FBI explosives-residue tests and sample custody](investigation/topics/fbi-ums-van-explosives-laboratory-results.md) |
+| Did Classic International Movers serve a hijacker? | [Classic, the Miami lead and seized notebook](investigation/topics/classic-international-movers-hijacker-notebook.md) |
+| What did CIA officials withhold, and what Saudi-linked assistance is documented? | [CIA hold and Saudi-linked support](investigation/topics/cia-hold-saudi-support-september-11.md) |
+| How do NIST, UAF and the physical evidence compare on WTC 7? | [WTC 7 collapse, NIST and UAF](investigation/topics/wtc7-nist-uaf-collapse-evidence.md) |
+| How do these leads fit, and what would test the theory? | [Theory overview and evidence tests](investigation/topics/developing-911-theory.md) |
 
-## In plain language
+## How to read the investigation
+
+Reports distinguish original records, witness accounts, inference and speculation. A missing record is an open question, not proof of concealment; an ordinary explanation or an adverse finding remains part of the evidence. A visitor card, a moving-company connection, a canine alert or a post-attack contract does not by itself establish a coordinated attack. Repeated summaries may trace to the same source. Where sources disagree or a primary record is unavailable, the linked reviews state those limits.
+
+See the [public research catalog](investigation/branch-consolidation-public-refs-2026-11-10/README.md) and [source-availability review](investigation/wtc7/source-availability-2026-11-10/README.md) for preserved material and gaps. Some large source files may require Git LFS and may not be available through the public interface.
+
+## WTC 7 engineering: detailed overview
 
 WTC 7 was a large steel-framed building that collapsed late in the afternoon
 of September 11. The National Institute of Standards and Technology (NIST)
@@ -64,7 +66,7 @@ causes. **Unresolved does not mean the explanations are equally likely.** The
 investigation is incomplete, and its reports describe what evidence or test
 could change each assessment.
 
-### Where to start
+### WTC 7 research and related records
 
 - [Crucial findings and their limits](CRUCIAL-FINDINGS.md)
 - [DEP preservation anomalies and unresolved recovery outcomes](investigation/wtc7/municipal-preservation-findings-2026-10-15/README.md)
