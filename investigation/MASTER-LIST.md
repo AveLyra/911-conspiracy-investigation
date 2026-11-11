@@ -19,7 +19,7 @@ The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november
 
 ## November 11: FBI crosswalk and research-chat status
 
-A [source check](urban-moving-systems/fbi-ec-crosswalk-verified-2026-11-11/README.md) verifies the 2002 counterintelligence shipment and return references and the separate questioned-document laboratory report. The return uses a different 1B label for E01889039; no explosives chemistry result follows. Thirty later research chats were checked; accessible messages contain initiation acknowledgments, not completed reports, so no findings from those jobs have been added.
+A [source check](urban-moving-systems/fbi-ec-crosswalk-verified-2026-11-11/README.md) verifies the 2002 counterintelligence shipment and return references and the separate questioned-document laboratory report. The return uses a different 1B label for E01889039; no explosives chemistry result follows. Correction: the earlier chat-reader check exposed initiation acknowledgments but missed embedded reports. The project interface contains at least two completed reports; a [source check](broader-evidence/scooby-report-availability-correction-2026-11-11/README.md) reviews the SEC aggregate-volume correction. A full review of all 30 remains incomplete.
 
 ## November 11: public pull-request comparison
 
