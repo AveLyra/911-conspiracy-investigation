@@ -17,6 +17,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: UMS and Bayoumi original-record checks — ongoing
+
+[Six scoped checks](broader-evidence/scooby-ums-saudi-claim-checks-2026-11-11/README.md) verify the source-reported 2017 GIP allegation, the opposed 2021 attack-knowledge assessment, Classic and Exxon leads, and an existing 2014 disposition record the research chat could not retrieve. Serial 368 has a synopsis/detail year discrepancy and its host index misstates the memorandum year. The complete report-by-report claim audit remains open.
+
 ## November 11: Additional original-record checks — incomplete audit
 
 [Seven scoped source checks](broader-evidence/scooby-seven-claim-checks-2026-11-11/README.md) cover financing, FAA correction, a seismic-time argument, the first stage of a collapse calculation, Moussaoui exhibit 633, Flight 77 recorder-channel status and Orabi's computational limits. The [30-report ledger](broader-evidence/scooby-30-claim-ledger-2026-11-11/README.md) records their limited scope. Further claim-by-claim checks and primary evidence remain open.
