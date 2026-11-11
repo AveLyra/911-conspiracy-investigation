@@ -11,6 +11,10 @@
 
 The [evidence index](topics/evidence-index.md) links names, organizations, dates and record identifiers to concise source-backed guides. Start with [UMS and the FBI inquiry](topics/urban-moving-systems-911-fbi-records.md), the [WTC visitor card](topics/wtc-visitor-card-moving-company-access.md), [van laboratory results](topics/fbi-ums-van-explosives-laboratory-results.md), the [Classic/Miami lead](topics/classic-international-movers-hijacker-notebook.md), [WTC 7 and physical evidence](topics/wtc7-nist-uaf-collapse-evidence.md), the [CIA hold and Saudi-linked assistance](topics/cia-hold-saudi-support-september-11.md), or the [theory and tests](topics/developing-911-theory.md). The guides are navigational summaries; the linked underlying research and dated records govern their scope and limitations.
 
+## November 11: WTC 7 transfer-truss and resistance audit
+
+The [source review](wtc7/transfer-truss-resistance-review-2026-11-11/README.md) integrates the supplied report's fire-exposure, protection, connection, propagation, motion and acoustic tests, alongside an independently recalculated discrepancy in a published energy estimate. The review distinguishes conditional model results from historical evidence; no model, video or audio was independently rerun. A [preserved copy of the supplied report](wtc7/transfer-truss-resistance-review-2026-11-11/SUPPLIED-REPORT.md) retains its claims and source locators.
+
 ## November 11: Sarasota records requests
 
 Requests for the Sarasota/Prestancia gate, vehicle-comparison and investigative records were sent to the Sarasota County Sheriff's Office and Florida Department of Law Enforcement. Each has a separate $20 ceiling; agency receipt, search results and production are unconfirmed. A separate FBI request identifying the gate records, SARASOTA-7–8 1-A envelope and SARASOTA-33–35 analyst records is prepared with a $20 ceiling but **has not been submitted**. Two focused research prompts were delivered; their outcomes remain pending. No requested record or operational connection is established by a submission.
