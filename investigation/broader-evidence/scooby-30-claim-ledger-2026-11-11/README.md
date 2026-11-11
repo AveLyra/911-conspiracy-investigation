@@ -54,3 +54,5 @@ A [ninth review](../scooby-dust-candidate-audit-2026-11-11/README.md) assesses a
 ## What would advance this audit
 
 Expand every row into distinct material claims with exact page or exhibit locators, inspect each cited original and material contrary record, independently reproduce numerical claims, and record inaccessible source dependencies. Check report attachments and current project records separately. Do not equate the initial 30 selected rows or the limited checks above with completion of that work.
+
+A [tenth candidate review](../scooby-dependency-candidate-audit-2026-11-11/README.md) evaluates the 16 extracted visible-summary candidates for report 22; its five-row table and underlying attachments remain unreviewed.

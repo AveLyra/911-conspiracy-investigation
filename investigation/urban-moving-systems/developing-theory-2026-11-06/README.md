@@ -162,3 +162,7 @@ A [new set of source checks](../../broader-evidence/scooby-seven-claim-checks-20
 
 
 [A candidate-level dust assessment](../../broader-evidence/scooby-dust-candidate-audit-2026-11-11/README.md) checks the papers' reported sample histories, test settings and trace labels. Millette states he used different dust collections from Harrit; neither study automatically identifies the other's individual chips. Harrit links the illustrated MEK specimen to sample 2, while the published DSC and neighboring residue images do not visibly supply a complete chip-by-chip map. These checks do not resolve chemical phase or establish a UMS attribution; the proposed blind protocol has not been performed. The overall 30-report audit remains open.
+
+### Detainee-source and editorial dependencies
+
+A [source check](../../broader-evidence/scooby-dependency-candidate-audit-2026-11-11/README.md) confirms that the Commission reported limited access to detainees and interrogators, and documents a June-to-July Iraq/al-Qaeda wording difference. Neither demonstrates a directed cover-up or resolves individual detainee-derived claims; corroboration and the context of each interview must be examined separately.

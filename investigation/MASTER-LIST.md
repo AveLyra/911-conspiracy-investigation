@@ -248,3 +248,7 @@ The [van-sample disposition recheck](urban-moving-systems/van-sample-disposition
 The [FBI notebook-group custody review](urban-moving-systems/fbi-notebook-custody-2026-11-06/README.md) links a 2002 return communication, a group inventory and a 2014 reported disposition through barcode E01889578. Its selected redacted FBI pages are published as a labeled derivative; the grouped records do not establish the fate of every notebook or translation, a final chemical result or a concealment motive.
 
 The [UMS access and debris-record follow-up](urban-moving-systems/debris-and-access-followup-2026-11-06/README.md) identifies badge and vessel-log record trails and distinguishes unresolved samples and the Classic lead from established connections.
+
+### Detainee-source dependency and report wording
+
+The [candidate audit](broader-evidence/scooby-dependency-candidate-audit-2026-11-11/README.md) distinguishes independently documented access limitations and Iraq-related wording changes from unproven editorial influence. It does not verify the inaccessible five-row audit table or every cited interrogation record.

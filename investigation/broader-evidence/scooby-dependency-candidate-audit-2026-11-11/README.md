@@ -1,0 +1,26 @@
+# Dependency audit: review of visible-summary candidates
+
+11 November 2026. These 16 numbered checks address the mechanically extracted *visible summary* of Scooby report 22, not its complete five-row table, attachments, or all interrogation reports. A source's statement is not proof that the event it describes happened. Interpretive and protocol claims are labeled separately.
+
+Sources: [Commission report chapter 5, p. 146](https://www.9-11commission.gov/report/911Report_Ch5.pdf#page=10); [Commission notes, chapter 7 notes 140–141](https://www.9-11commission.gov/report/911Report_Notes.htm); [Commission staff statement 15, p. 5](https://www.9-11commission.gov/staff_statements/staff_statement_15.pdf#page=5); [final report chapter 2](https://www.9-11commission.gov/report/911Report_Ch2.htm); [National Archives series descriptions](https://www.archives.gov/research/9-11/commission-series.html); and the [earlier primary-source review of the Senate report](../scooby-warning-routing-dependency-checks-2026-11-11/README.md).
+
+| Candidate | Disposition |
+|---|---|
+| 22-001 | A historical report of that research session's access failure; not independently replayed. A failure then does not establish permanent unavailability. |
+| 22-002 | Self-description of that session's method; not independently witnessed. |
+| 22-003 | The earlier N06 was treated as unresolved by the summary. This is a methodological choice, not proof of the content of N06. |
+| 22-004 | The summary lists several government source collections. Individual source citations above are checked; the assertion that every listed source was actually used in the inaccessible report is not independently verified. |
+| 22-005 | **Supported as a catalog description:** NARA describes Team 1A holdings including intelligence reports, FBI 302s, correspondence and draft report chapters. The catalog description alone does not quantify classified or unreleased portions. |
+| 22-006 | **Definition**, not a historical finding. A particular dependency requires examination of all evidence for that specific proposition. |
+| 22-007 | **Supported:** the Commission said chapters 5 and 7 relied heavily on detainee reporting, and said it lacked direct access to detainees and interrogators. |
+| 22-008 | **Part checked:** the earlier Senate-source review distinguishes its critical assessment of bin al-Shibh's later reports and coercive treatment of KSM from its more favorable assessment of some earlier reporting. The global assertion concerning all other false detainee reporting requires individual source citations. |
+| 22-009 | **Inference / proposed test:** documentation of travel, financial transfers or meetings can corroborate individual events without establishing private intent; no independent audit of every cell of the missing five-row table has been completed. |
+| 22-010 | **Part supported:** note 140 expressly reports different Binalshibh accounts of who attended bin Ladin meetings, and note 141 identifies differing target accounts. This does not independently establish the specific approval-date discrepancy; inspect its cited original reports. |
+| 22-011 | **Interpretation supported in principle:** multiple derivative reports based on one witness are not automatically independent witnesses. Coercion and inconsistencies justify source-specific scrutiny, but do not establish that all statements are false or true. |
+| 22-012 | **Supported as a comparison:** the June staff statement describes no apparent collaborative relationship, while the July final report uses the narrower phrase collaborative operational relationship; both also report no evidence of Iraq/al-Qaeda cooperation on attacks against the United States. Difference in wording alone does not establish a substantive reversal. |
+| 22-013 | **Reasonable limitation:** neither published wording itself establishes who caused the change or why. This review did not examine every draft or internal communication. |
+| 22-014 | NARA's catalog identifies Team 1A chapter drafts; their existence alone cannot show an intervention. The particular front-office file and its contents are not individually checked here. |
+| 22-015 | **Unresolved inventory, not an exhaustion finding:** the Commission notes cite dated interrogation reports, FBI PENTTBOM and German BKA records. Each original's current accessibility requires a separate search. The project's prior access failure does not prove that files remain unavailable now. |
+| 22-016 | This is a representation of the original researcher's handling of inaccessible material, not independently verifiable from the summary alone. No redacted identity is inferred in this review. |
+
+The strongest contrary consideration is that documented interrogation limitations and textual changes can coexist with independently corroborated travel, finance, and other evidence. Conversely, repeat citations to the same interrogation do not constitute independent corroboration. Neither the Commission's caveat nor the comparison of Iraq-related wording establishes UMS participation or a government-directed attack. Resolve each material dependency using the underlying report, its contemporaneous context, and independent records.
