@@ -13,6 +13,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: Orabi model reproducibility and connection benchmarks
+
+The [reproducibility update](wtc7/transfer-truss-resistance-review-2026-11-11/README.md#reproducibility-update--november-11-2026) preserves the full supplied research page and adds the thesis-linked solver release, a computational-stop correction, transition-state tests and independently published connection experiments. Exact WTC 7 decks, reference outputs and a matched global run remain missing.
+
 ## November 11: WTC 7 transfer-truss and resistance audit
 
 The [source review](wtc7/transfer-truss-resistance-review-2026-11-11/README.md) integrates the supplied report's fire-exposure, protection, connection, propagation, motion and acoustic tests, alongside an independently recalculated discrepancy in a published energy estimate. The review distinguishes conditional model results from historical evidence; no model, video or audio was independently rerun. A [preserved copy of the supplied report](wtc7/transfer-truss-resistance-review-2026-11-11/SUPPLIED-REPORT.md) retains its claims and source locators.

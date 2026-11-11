@@ -2,6 +2,18 @@
 
 **November 11, 2026 — bounded integration.** The [supplied audit](SUPPLIED-REPORT.md) examines an alternative fire hypothesis, structural resistance and the observational record. It is a research report, not an independently reproduced structural analysis. Its references to companion scripts, source registers and a model-testing protocol identify materials that were **not supplied in this attachment**. Do not assume they are available in this repository.
 
+## Reproducibility update — November 11, 2026
+
+The supplied [full research page](SOURCE-PAGE.md) reports acquisition of the complete [doctoral thesis](https://theses.lib.polyu.edu.hk/bitstream/200/11622/3/6151.pdf), the author's [OpenSees for Fire 3.2.3 release](https://github.com/Anwar8/MyOpenSees/releases/tag/3.2.3), and a component example. This integration independently checked that the GitHub release exposes a 15,619,584-byte Windows executable. It did not download or run that binary, independently inspect the full thesis, or authenticate the executable as the exact build used for the WTC 7 figures. The source page provides recorded hashes and bounded repository-search results; the exact WTC 7 case decks, reference outputs and figure-to-run mappings remain unlocated in that search. Failed or incomplete API searches do not count as evidence of absence.
+
+The **2.3-second termination was computational**, according to the manuscript and supplied research, not a demonstrated physical arrest. The approximately 0.8 m is local floor deflection rather than roofline motion. The 22 mm protected-diagonal case survived its tested three-hour exposure; it does not establish the as-built protection or outcomes at every intermediate thickness. Neither case establishes the full historical collapse or its impossibility. [Orabi et al.](https://ira.lib.polyu.edu.hk/bitstream/10397/92640/1/Orabi_Collapse_World_Trade.pdf), pp. 15–24.
+
+Model 2's reported accelerated heating and transition to real-time dynamics call for checking the actual state, velocity, stress, contact, kinetic and internal energy and damping at handoff, and comparing heating rates. This is a reproducibility question, not an established error or bias. The thesis-related statements are attributed to the source page; the thesis exceeded this run's web-reader size limit.
+
+An independent full-floor experiment provides a useful model benchmark: [Dai et al.](https://link.springer.com/article/10.1007/s10694-023-01452-1) report a simplified C2 failure prediction not observed and partial C6 bolt rupture despite a simplified survival prediction. It does not measure WTC 7's actual connections. A matched test should validate both survival and damage under measured restraint and thermal history before transferring parameters, then test upper-floor representation and fit several held-out camera observations using a common clock. No such matched run was performed. A generic executable, a component test and a completed WTC 7 reproduction are distinct deliverables.
+
+The source page also records a useful timing correction: NIST's approximately 32 m displacement during its 1.75–4.0-second interval should not be compared with a distance calculated by assuming zero initial velocity at the interval's start. Consult [NCSTAR 1A](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1a.pdf), pp. 42–46, for the actual observation and timebase; this integration did not retrack the footage. The source page's other detailed technical claims remain attributed pending independent replication.
+
 ## Claims and tests
 
 | Topic | Evidence and implication | Limits and alternative |

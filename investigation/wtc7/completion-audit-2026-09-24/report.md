@@ -1,5 +1,9 @@
 # Charter-wide completion audit and first scientific action
 
+## November 11, 2026: reproducibility source update
+
+The [reproducibility follow-up](../transfer-truss-resistance-review-2026-11-11/README.md#reproducibility-update--november-11-2026) reports a thesis-linked solver release and component example, while the exact WTC 7 cases and reference outputs remain unlocated. Separately validate connection survival and damage against independent experiments; audit mass, protection, heating and transition state; then compare multiple held-out observations using a common timebase. The partial run ended for computational reasons, so neither physical arrest nor full propagation is established. None of these tasks is complete merely because a generic executable is available.
+
 ## November 11, 2026: resistance and transfer-truss follow-up
 
 The later [transfer-truss and resistance review](../transfer-truss-resistance-review-2026-11-11/README.md) adds tests to the historical audit below without revising its frozen exit assessments. For WP3, distinguish NIST's Column 79 initiation from Orabi et al.'s proposed mechanical-room transfer-truss route; recover native model decks and verify protection, thermal exposure, connections, load-path reactions, mass, damping and thermal-to-dynamic handoff. A preliminary regional displacement is not a reproduction of global descent. Test robust progression and possible arrest rather than prescribe either outcome.
