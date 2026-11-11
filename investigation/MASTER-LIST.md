@@ -17,6 +17,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: Dust summary candidates — ongoing
+
+[A candidate-level dust review](broader-evidence/scooby-dust-candidate-audit-2026-11-11/README.md) compares 22 visible-summary segments with the Harrit and Millette papers, checks the trace labels and instrument descriptions, and marks the unretrieved 2012 follow-up as open. Different parent specimens cannot automatically be joined, and a proposed blind protocol is not a completed experiment. The wider review remains incomplete.
+
 ## November 11: SEC and UMS summary candidates — ongoing
 
 [A candidate-by-candidate review](broader-evidence/scooby-sec-ums-candidate-audit-2026-11-11/README.md) compares 37 visible-summary entries with original SEC and FBI records and the preserved file manifest. The SEC's MaST follow-up database and NYSE's separately described Master List should not be conflated. The SEC packet's exhibit list and reproduced database page use different appendix labels; their relationship remains open. This does not complete the 30-report audit.

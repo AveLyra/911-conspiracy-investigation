@@ -159,3 +159,6 @@ A [new set of source checks](../../broader-evidence/scooby-seven-claim-checks-20
 
 
 [A candidate-by-candidate SEC and UMS review](../../broader-evidence/scooby-sec-ums-candidate-audit-2026-11-11/README.md) confirms that the SEC described MaST as a follow-up account database while the NYSE described a separately authored Master List; neither the percentage estimate nor aggregate volume correction reconstructs an account's executed trades. It also confirms the local 177-page split-file count without establishing why it differs from FBI's 183-page release count. These checks add traceability but do not establish foreknowledge or document suppression. The rest of the 30-report audit remains incomplete.
+
+
+[A candidate-level dust assessment](../../broader-evidence/scooby-dust-candidate-audit-2026-11-11/README.md) checks the papers' reported sample histories, test settings and trace labels. Millette states he used different dust collections from Harrit; neither study automatically identifies the other's individual chips. Harrit links the illustrated MEK specimen to sample 2, while the published DSC and neighboring residue images do not visibly supply a complete chip-by-chip map. These checks do not resolve chemical phase or establish a UMS attribution; the proposed blind protocol has not been performed. The overall 30-report audit remains open.

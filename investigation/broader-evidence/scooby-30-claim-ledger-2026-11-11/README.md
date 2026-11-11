@@ -49,6 +49,8 @@ A [seventh claim-check report](../scooby-release-nist-sec-checks-2026-11-11/READ
 
 An [eighth review](../scooby-sec-ums-candidate-audit-2026-11-11/README.md) assesses 37 mechanically segmented visible-summary candidates from reports 28 and 29 individually, with unresolved sources and the SEC appendix-label discrepancy preserved. It does not review all report tables or attachments.
 
+A [ninth review](../scooby-dust-candidate-audit-2026-11-11/README.md) assesses all 22 mechanically segmented candidates in the visible dust-report summary, while preserving missing follow-up sources and the distinction between a proposed protocol and an experiment.
+
 ## What would advance this audit
 
 Expand every row into distinct material claims with exact page or exhibit locators, inspect each cited original and material contrary record, independently reproduce numerical claims, and record inaccessible source dependencies. Check report attachments and current project records separately. Do not equate the initial 30 selected rows or the limited checks above with completion of that work.
