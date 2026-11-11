@@ -17,6 +17,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: Warning and routing claims — ongoing
+
+[Additional claim-level checks](broader-evidence/scooby-warning-routing-dependency-checks-2026-11-11/README.md) inspect four CIA warning products, the inspector general's hold and preservation account, DOJ's Moussaoui routing analysis, and contrasting CIA assessments of detainee reporting. The released warnings did not identify the complete September 11 plan in the passages examined; the hold motive and native records remain unresolved. A private, mechanically segmented work queue is not a completed audit.
+
 ## November 11: DEA, UAF and FBI appeal records — ongoing
 
 [Three scoped source checks](broader-evidence/scooby-dea-uaf-foia-checks-2026-11-11/README.md) examine the DEA Orlando and Volk Field accounts, UAF's documented modeling assumptions and archive, and privately preserved FBI request and appeal records unavailable to the research chat. The underlying telephone trace, exact UAF run lineage and current appeal decision remain unverified. The complete 30-report claim audit remains open.
