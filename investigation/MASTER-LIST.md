@@ -17,6 +17,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: Release accounting, tower sensitivity and options — ongoing
+
+[Further source checks](broader-evidence/scooby-release-nist-sec-checks-2026-11-11/README.md) independently verify the preserved UMS split-file counts and hashes, NIST's reported WTC 1 sensitivity, and the difference between an aggregate options-volume correction and an account-level attribution. The original FBI transmission, exact trading records, and complete 30-report claim audit remain open.
+
 ## November 11: Warning and routing claims — ongoing
 
 [Additional claim-level checks](broader-evidence/scooby-warning-routing-dependency-checks-2026-11-11/README.md) inspect four CIA warning products, the inspector general's hold and preservation account, DOJ's Moussaoui routing analysis, and contrasting CIA assessments of detainee reporting. The released warnings did not identify the complete September 11 plan in the passages examined; the hold motive and native records remain unresolved. A private, mechanically segmented work queue is not a completed audit.
