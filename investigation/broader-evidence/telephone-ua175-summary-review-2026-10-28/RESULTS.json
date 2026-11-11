@@ -1,0 +1,113 @@
+{
+  "scope": "Safe supplied-field calculations, uncertainty and source-entity checks; not source-reading accuracy, native semantics, caller identity, historical authenticity or completion of TEL01\u2013TEL04.",
+  "checks": [
+    {
+      "check": "eleven consecutive row positions",
+      "passed": true,
+      "kind": "transcription accounting"
+    },
+    {
+      "check": "eleven positive Connect readings/candidates",
+      "passed": true,
+      "kind": "supplied-input calculation"
+    },
+    {
+      "check": "eleven zero Operator readings",
+      "passed": true,
+      "kind": "supplied-input calculation"
+    },
+    {
+      "check": "row6 exact Connect remains unaccepted",
+      "passed": true,
+      "kind": "uncertainty preservation"
+    },
+    {
+      "check": "both note166 numbers match selected SCP numbers",
+      "passed": true,
+      "kind": "field comparison"
+    },
+    {
+      "check": "neither note166 number matches selected Connect number",
+      "passed": true,
+      "kind": "contrary field comparison"
+    },
+    {
+      "check": "altered field does not preserve both matches",
+      "passed": true,
+      "kind": "negative control"
+    },
+    {
+      "check": "three distinct email start labels and last-negative report",
+      "passed": true,
+      "kind": "reported-source accounting"
+    },
+    {
+      "check": "no authenticated network/clock join claimed",
+      "passed": true,
+      "kind": "scope gate"
+    },
+    {
+      "check": "provided original entities match pins",
+      "passed": true,
+      "kind": "byte integrity only"
+    }
+  ],
+  "source_checks": [
+    {
+      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/1-95c31c62bb.jpg",
+      "passed": true
+    },
+    {
+      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/2-6c3ce5c58c.jpg",
+      "passed": true
+    },
+    {
+      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/3-710fedd9a1.jpg",
+      "passed": true
+    },
+    {
+      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/4-3ee7865803.jpg",
+      "passed": true
+    },
+    {
+      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/5-0ecf3dbc3d.jpg",
+      "passed": true
+    },
+    {
+      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/6-ad6cec0f2c.jpg",
+      "passed": true
+    },
+    {
+      "source": "https://html.scribdassets.com/dy6fry0xse6syx/images/7-19bf7a70d5.jpg",
+      "passed": true
+    },
+    {
+      "source": "https://html.scribdassets.com/5bafzdomdce6sz3/images/26-6b763d149c.jpg",
+      "passed": true
+    },
+    {
+      "source": "https://www.archives.gov/files/research/9-11/staff-report-sept2005.pdf",
+      "passed": true
+    }
+  ],
+  "passed": 10,
+  "failed": 0,
+  "computed": {
+    "row_positions": 11,
+    "positive_connect_readings_or_candidates": 11,
+    "exact_connect_readings": 10,
+    "uncertain_connect_rows": [
+      6
+    ],
+    "zero_operator_readings": 11,
+    "selected_scp_matches": 2,
+    "selected_connect_matches": 0,
+    "reported_letter_attempts": 3,
+    "reported_ual_conversations": 1,
+    "reported_note166_completed_calls": 2,
+    "source_entities_checked": 9
+  },
+  "native_units_established": false,
+  "actual_conversation_count_established": false,
+  "inference_limit": "A naive positive-Connect-means-completed-conversation rule would conflict with the reported negative third attempt; it is not applied. Neither account is thereby authenticated or preferred."
+}

@@ -5,6 +5,8 @@
 - [Developing theory](urban-moving-systems/developing-theory-2026-11-06/README.md): the working model, proposed tests and competing explanations.
 - [Cross-chat integration](cross-chat-evidence-integration-2026-11-10/README.md): selected findings from the two investigations, a map of all 16 audit topics and the five original-record tracks. This dated synthesis is not an inventory of every chat attachment, tool output or later result.
 - [Numbered master lead register](wtc7/master-lead-register-2026-10-26/MASTER-LIST.md), [source pins](wtc7/master-lead-register-2026-10-26/register.json) and [open targets](wtc7/master-lead-register-2026-10-26/OPEN-TARGETS.json): individual leads, sources and missing records.
+- [175-entry historical lead register](wtc7/master-lead-register-2026-10-26-outstanding/MASTER-LIST.md) and [source review](broader-evidence/outstanding-records-verification-2026-10-26/REPORT.md): an earlier dated register, preserved alongside the current integrated list.
+- [Flight 175 source comparison](broader-evidence/telephone-ua175-summary-review-2026-10-28/README.md): the original dated research package, with unverified call-field joins and conflicting accounts.
 - [Public research catalog](branch-consolidation-public-refs-2026-11-10/README.md) and [source-availability review](wtc7/source-availability-2026-11-10/README.md): preserved material and gaps.
 
 ## Searchable topic guides and evidence index
@@ -15,7 +17,7 @@ The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november
 
 ## November 11: public pull-request comparison
 
-An [open-PR audit](branch-consolidation-open-pr-audit-2026-11-11/README.md) compares all 11 heads with public main. Much of the research is already present byte-for-byte, but certain inherited paths are absent and some files differ; the audit does not assume every PR was merged or close any PR.
+An [open-PR audit](branch-consolidation-open-pr-audit-2026-11-11/README.md) compares all 11 heads with public main. Much of the research is already present byte-for-byte, and distinguishes historical copies from merged history. The [follow-up reconciliation](branch-consolidation-open-pr-audit-2026-11-11/README.md#reconciliation-after-the-screen) preserves the missing Flight 175 package and documents the excluded LFS payload and superseded navigation.
 
 ## November 11: van evidence package, LIMS and state-police search
 
