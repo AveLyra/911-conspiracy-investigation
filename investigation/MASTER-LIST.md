@@ -17,6 +17,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: DEA, UAF and FBI appeal records — ongoing
+
+[Three scoped source checks](broader-evidence/scooby-dea-uaf-foia-checks-2026-11-11/README.md) examine the DEA Orlando and Volk Field accounts, UAF's documented modeling assumptions and archive, and privately preserved FBI request and appeal records unavailable to the research chat. The underlying telephone trace, exact UAF run lineage and current appeal decision remain unverified. The complete 30-report claim audit remains open.
+
 ## November 11: Sarasota and access-source checks — ongoing
 
 [Five scoped checks](broader-evidence/scooby-sarasota-visitor-source-checks-2026-11-11/README.md) visually verify the 2014 Sarasota briefing's statement about absent search documentation alongside the separate 2011 negative analyst search; inspect the visitor-card receipt; and check NARA, Senate and notepad-filing references. The [Sarasota chronology](broader-evidence/sarasota-gate-fbi-source-chronology-2026-11-11/README.md) now reflects the image check. The wider claim audit remains incomplete.
