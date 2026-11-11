@@ -17,6 +17,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: Scooby embedded-report recovery — partial audit
+
+A [report-level recovery matrix and original-source spot checks](broader-evidence/scooby-30-report-partial-audit-2026-11-11/README.md) correct the earlier availability assessment. Twenty-four report texts were retrieved in this pass and the SEC report viewed earlier; five chats failed to load. NIST's disclosed tower calibration and WTC 2 timing comparison were checked against its reports. The remaining report-by-report source verification is not complete.
+
 ## November 11: FBI crosswalk and research-chat status
 
 A [source check](urban-moving-systems/fbi-ec-crosswalk-verified-2026-11-11/README.md) verifies the 2002 counterintelligence shipment and return references and the separate questioned-document laboratory report. The return uses a different 1B label for E01889039; no explosives chemistry result follows. Correction: the earlier chat-reader check exposed initiation acknowledgments but missed embedded reports. The project interface contains at least two completed reports; a [source check](broader-evidence/scooby-report-availability-correction-2026-11-11/README.md) reviews the SEC aggregate-volume correction. A full review of all 30 remains incomplete.
