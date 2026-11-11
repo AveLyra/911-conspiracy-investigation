@@ -1,5 +1,13 @@
 # Charter-wide completion audit and first scientific action
 
+## November 11, 2026: resistance and transfer-truss follow-up
+
+The later [transfer-truss and resistance review](../transfer-truss-resistance-review-2026-11-11/README.md) adds tests to the historical audit below without revising its frozen exit assessments. For WP3, distinguish NIST's Column 79 initiation from Orabi et al.'s proposed mechanical-room transfer-truss route; recover native model decks and verify protection, thermal exposure, connections, load-path reactions, mass, damping and thermal-to-dynamic handoff. A preliminary regional displacement is not a reproduction of global descent. Test robust progression and possible arrest rather than prescribe either outcome.
+
+For WP1/WP2, compare one synchronized multi-point motion record and predicted acoustic signatures against actual sensor geometry and response. A reported non-detection on distant recordings is not an observation of internal silence or independent confirmation of a floor cascade. For WP4, reconcile the Korol paper's concrete thickness and reported energy totals; a direct calculation using its stated values gives 23.018 GJ for five floors versus the stated 32.01 GJ, while the physical path and total-energy implications remain to be tested. Preserve NIST's fire/damage evidence and model-specific blast constraints alongside resistance critiques.
+
+The [supplied audit](../transfer-truss-resistance-review-2026-11-11/SUPPLIED-REPORT.md) and subsequent integration did not rerun a structural model, retrack video or independently analyze the audio. Its proposed model protocol and scripts were not supplied; none of these tasks is marked complete by this note. No finding about explosives placement or a UMS role follows.
+
 2026-09-24. **The comprehensive investigation is incomplete.** Passing source,
 parser or arithmetic tests, a large report collection and competing-case AI
 reviews do not supply the missing empirical tests. There is useful accessible

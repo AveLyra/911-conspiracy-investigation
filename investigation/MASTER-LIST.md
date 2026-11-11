@@ -11,6 +11,8 @@
 
 The [evidence index](topics/evidence-index.md) links names, organizations, dates and record identifiers to concise source-backed guides. Start with [UMS and the FBI inquiry](topics/urban-moving-systems-911-fbi-records.md), the [WTC visitor card](topics/wtc-visitor-card-moving-company-access.md), [van laboratory results](topics/fbi-ums-van-explosives-laboratory-results.md), the [Classic/Miami lead](topics/classic-international-movers-hijacker-notebook.md), [WTC 7 and physical evidence](topics/wtc7-nist-uaf-collapse-evidence.md), the [CIA hold and Saudi-linked assistance](topics/cia-hold-saudi-support-september-11.md), or the [theory and tests](topics/developing-911-theory.md). The guides are navigational summaries; the linked underlying research and dated records govern their scope and limitations.
 
+The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
+
 ## November 11: WTC 7 transfer-truss and resistance audit
 
 The [source review](wtc7/transfer-truss-resistance-review-2026-11-11/README.md) integrates the supplied report's fire-exposure, protection, connection, propagation, motion and acoustic tests, alongside an independently recalculated discrepancy in a published energy estimate. The review distinguishes conditional model results from historical evidence; no model, video or audio was independently rerun. A [preserved copy of the supplied report](wtc7/transfer-truss-resistance-review-2026-11-11/SUPPLIED-REPORT.md) retains its claims and source locators.
