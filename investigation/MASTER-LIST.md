@@ -13,6 +13,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: public pull-request comparison
+
+An [open-PR audit](branch-consolidation-open-pr-audit-2026-11-11/README.md) compares all 11 heads with public main. Much of the research is already present byte-for-byte, but certain inherited paths are absent and some files differ; the audit does not assume every PR was merged or close any PR.
+
 ## November 11: van evidence package, LIMS and state-police search
 
 A [source check](urban-moving-systems/lab-package-lims-state-search-2026-11-11/README.md) confirms the dated package-copy annotation, identifies a possible same-date transfer request and a separate 1B25–1B4 cross-reference, and distinguishes their unproven connection. FBI LIMS documentation gives conditional historical and barcode search paths. A 2020 decision describes a New Jersey state-police search; it does not resolve FBI laboratory results.
