@@ -70,7 +70,7 @@ could change each assessment.
 
 ### WTC 7 research and related records
 
-- [Crucial findings and their limits](investigation/wtc7/historical-summaries/CRUCIAL-FINDINGS.md)
+- [Crucial findings and their limits](investigation/wtc7/historical-summaries/wtc7-findings-2026-09-29.md)
 - [DEP preservation anomalies and unresolved recovery outcomes](investigation/wtc7/municipal-preservation-findings-2026-10-15/README.md)
 - [Current scope and questions](investigation/wtc7/CHARTER.md)
 - [Current status and limits](investigation/wtc7/STATUS.md)
