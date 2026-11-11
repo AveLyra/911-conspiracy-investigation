@@ -1,8 +1,8 @@
 # Scooby report recovery and primary-source spot checks
 
-November 11, 2026. **This is a partial audit, not completion of the requested 30-report review.** The project interface displayed 25 completed report texts during this pass; an additional SEC report had been inspected earlier. Four other reports were not recovered during this pass; some conversation loads returned “Could not load this ChatGPT conversation,” including on retries. Access failure is not evidence that a report is missing or that its conclusions are negative. Report texts captured in the private local review are not republished here. The chat-reading tool's later acknowledgments did not expose the embedded research and must not be used to infer that reports are unavailable.
+November 11, 2026. **This is a partial audit, not completion of the requested 30-report review.** The project interface displayed 26 completed report texts during this pass; an additional SEC report had been inspected earlier. Three other reports were not recovered during this pass; some conversation loads returned “Could not load this ChatGPT conversation,” including on retries. Access failure is not evidence that a report is missing or that its conclusions are negative. Report texts captured in the private local review are not republished here. The chat-reading tool's later acknowledgments did not expose the embedded research and must not be used to infer that reports are unavailable.
 
-The table records retrieval, not verification of every factual statement, cited source, calculation, appendix or attachment. Many reports said their own access to named Scooby project files failed; their public-source findings therefore require separate assessment against those files. Follow-on work must complete a report-by-report claim/source matrix and obtain the four remaining reports before declaring the 30-report review complete.
+The table records retrieval, not verification of every factual statement, cited source, calculation, appendix or attachment. Many reports said their own access to named Scooby project files failed; their public-source findings therefore require separate assessment against those files. Follow-on work must complete a report-by-report claim/source matrix and obtain the three remaining reports before declaring the 30-report review complete.
 
 ## Original-source checks completed in this pass
 
@@ -40,7 +40,7 @@ The table records retrieval, not verification of every factual statement, cited 
 | Dependency Audit Research | Conversation failed to load; report status and content not determined in this pass |
 | Sarasota Evidence Investigation | Completed report text retrieved; full source verification pending |
 | UAF Lineage Investigation | Completed report text retrieved; full source verification pending |
-| Research Flight 77 Recorder Validity | Conversation failed to load; report status and content not determined in this pass |
+| Research Flight 77 Recorder Validity | Completed report text recovered on later retry; full source verification pending |
 | Map Dust Evidence Lineage | Conversation failed to load; report status and content not determined in this pass |
 | WTC Calibration Validation Review | Completed report text retrieved; full source verification pending |
 | SEC Trading Reconciliation | Completed report viewed earlier; one source checked separately; full snapshot unavailable in this pass |
