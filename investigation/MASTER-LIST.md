@@ -17,6 +17,10 @@ The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november
 
 The [source review](wtc7/transfer-truss-resistance-review-2026-11-11/README.md) integrates the supplied report's fire-exposure, protection, connection, propagation, motion and acoustic tests, alongside an independently recalculated discrepancy in a published energy estimate. The review distinguishes conditional model results from historical evidence; no model, video or audio was independently rerun. A [preserved copy of the supplied report](wtc7/transfer-truss-resistance-review-2026-11-11/SUPPLIED-REPORT.md) retains its claims and source locators.
 
+## November 11: Sarasota Review Commission memo and 1-A records
+
+The [Sarasota source chronology](broader-evidence/sarasota-gate-fbi-source-chronology-2026-11-11/README.md#november-11-scooby-memo-deep-research-findings-integration) now identifies released redacted 1-A contact and letter copies, the FBI index, the 2019 analyst-note disclosure order and a separate negative FDLE financial search. It preserves uncertainty about original logs, query coverage, the ordered production and any UMS link. Some additional Scooby leads remain unverified.
+
 ## November 11: Sarasota records requests
 
 Requests for the Sarasota/Prestancia gate, vehicle-comparison and investigative records were sent to the Sarasota County Sheriff's Office and Florida Department of Law Enforcement. Each has a separate $20 ceiling; agency receipt, search results and production are unconfirmed. A separate FBI request identifying the gate records, SARASOTA-7–8 1-A envelope and SARASOTA-33–35 analyst records is prepared with a $20 ceiling but **has not been submitted**. Two focused research prompts were delivered; their outcomes remain pending. No requested record or operational connection is established by a submission.
