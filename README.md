@@ -69,7 +69,7 @@ could change each assessment.
 
 ### WTC 7 research and related records
 
-- [Crucial findings and their limits](CRUCIAL-FINDINGS.md)
+- [Crucial findings and their limits](investigation/wtc7/historical-summaries/CRUCIAL-FINDINGS.md)
 - [DEP preservation anomalies and unresolved recovery outcomes](investigation/wtc7/municipal-preservation-findings-2026-10-15/README.md)
 - [Current scope and questions](investigation/wtc7/CHARTER.md)
 - [Current status and limits](investigation/wtc7/STATUS.md)
@@ -176,7 +176,7 @@ or incomplete routes; an individual report is not an accepted overall finding.
   unresolved release questions.
 - [`research/`](research/) — related scientific synthesis, video comparison,
   reconstruction workbench, and source-review material.
-- [`faraday/`](faraday/) — an MIT-licensed Research Machine source snapshot
+- [`tools/faraday/`](tools/faraday/) — an MIT-licensed Research Machine source snapshot
   used as the basis for Faraday-related integration work. It is research
   software, not evidence about the collapse.
 
