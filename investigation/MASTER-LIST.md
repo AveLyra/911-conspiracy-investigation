@@ -17,6 +17,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: Scooby original-record audit ledger — ongoing
+
+A [30-report working ledger](broader-evidence/scooby-30-claim-ledger-2026-11-11/README.md) selects one lead per report and records which source checks remain open. New checks confirm FEMA's description of its two corrosion samples and the court's index entry for Moussaoui exhibit 633. The FEMA building attribution is qualified and the court index does not substitute for reading the exhibit. This is not a completed claim-by-claim review.
+
 ## November 11: Scooby embedded-report recovery — partial audit
 
 A [report-level recovery matrix and original-source spot checks](broader-evidence/scooby-30-report-partial-audit-2026-11-11/README.md) correct the earlier availability assessment. All 30 completed research cards were subsequently opened and their visible interface text saved locally; downloadable attachments and underlying records are not necessarily included. NIST’s disclosed tower calibration and WTC 2 timing comparison were checked against its reports. Additional checks distinguish FBI release counts, dust specimens and the Commission’s use of detainee reporting. Report-by-report original-source verification remains incomplete.
