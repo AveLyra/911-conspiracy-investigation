@@ -19,7 +19,7 @@ The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november
 
 ## November 11: Scooby embedded-report recovery — partial audit
 
-A [report-level recovery matrix and original-source spot checks](broader-evidence/scooby-30-report-partial-audit-2026-11-11/README.md) correct the earlier availability assessment. Twenty-four report texts were retrieved in this pass and the SEC report viewed earlier; five chats failed to load. NIST's disclosed tower calibration and WTC 2 timing comparison were checked against its reports. The remaining report-by-report source verification is not complete.
+A [report-level recovery matrix and original-source spot checks](broader-evidence/scooby-30-report-partial-audit-2026-11-11/README.md) correct the earlier availability assessment. Twenty-five report texts were retrieved in this pass and the SEC report viewed earlier; four reports remain unrecovered. NIST's disclosed tower calibration and WTC 2 timing comparison were checked against its reports. The remaining report-by-report source verification is not complete.
 
 ## November 11: FBI crosswalk and research-chat status
 
