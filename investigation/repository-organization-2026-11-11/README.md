@@ -6,8 +6,7 @@ This index separates the investigation's evidence and dated historical research 
 
 - [Developing theory and tests](../urban-moving-systems/developing-theory-2026-11-06/README.md): current working hypothesis, competing explanations and missing links.
 - [Master list](../MASTER-LIST.md) and [evidence topic index](../topics/evidence-index.md): current navigation and source leads.
-- [Crucial Findings: WTC 7](../wtc7/historical-summaries/CRUCIAL-FINDINGS.md): a dated September 2026 WTC 7 research synthesis, not a current finding on the entire 9/11 investigation.
-- [Inclusive lead review, October 15, 2026](../wtc7/historical-summaries/LEAD-REVIEW-2026-10-15.md): a historical follow-up register, not the current integrated master list.
+- [WTC 7 historical summaries](../wtc7/historical-summaries/README.md): the dated September findings and October lead review, with scope-specific labels. The old root filenames remain compatibility pages.
 - [WTC 7 research](../wtc7/STATUS.md), [Urban Moving Systems](../topics/urban-moving-systems-911-fbi-records.md), and [broader original-record work](../broader-evidence/): topic-specific research.
 
 ## Faraday Research Machine

@@ -9,6 +9,7 @@ The [developing theory](investigation/urban-moving-systems/developing-theory-202
 - **[Developing theory and tests](investigation/urban-moving-systems/developing-theory-2026-11-06/README.md):** the proposed sequence, evidence for and against each link, and the records that could change the assessment.
 - **[Master list](investigation/MASTER-LIST.md):** the integrated research index, recent findings, open leads and source limitations.
 - **[Repository guide](investigation/repository-organization-2026-11-11/README.md):** historical summaries, investigation materials and the Faraday research tool.
+- **[WTC 7 historical summaries](investigation/wtc7/historical-summaries/README.md):** dated findings and the October 2026 lead review.
 - **[Evidence index](investigation/topics/evidence-index.md):** a searchable guide to names, companies, records and identifiers.
 - **[Cross-chat evidence integration](investigation/cross-chat-evidence-integration-2026-11-10/README.md):** a map connecting the broader audit and original-record tracks to the theory.
 - **[Numbered lead register](investigation/wtc7/master-lead-register-2026-10-26/MASTER-LIST.md)** and **[open records targets](investigation/wtc7/master-lead-register-2026-10-26/OPEN-TARGETS.json)**: individual leads and outstanding tests.

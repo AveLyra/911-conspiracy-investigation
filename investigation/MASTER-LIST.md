@@ -2,7 +2,7 @@
 
 ## Start here: theory and evidence
 
-[Repository guide](repository-organization-2026-11-11/README.md): investigation materials, historical root documents and Faraday software.
+[Repository guide](repository-organization-2026-11-11/README.md): investigation materials, historical root documents and Faraday software. [WTC 7 historical summaries](wtc7/historical-summaries/README.md) identify the dated reports without treating them as the current master.
 
 - [Developing theory](urban-moving-systems/developing-theory-2026-11-06/README.md): the working model, proposed tests and competing explanations.
 - [Cross-chat integration](cross-chat-evidence-integration-2026-11-10/README.md): selected findings from the two investigations, a map of all 16 audit topics and the five original-record tracks. This dated synthesis is not an inventory of every chat attachment, tool output or later result.
