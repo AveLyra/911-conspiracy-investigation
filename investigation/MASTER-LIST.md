@@ -17,6 +17,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: Additional original-record checks — incomplete audit
+
+[Seven scoped source checks](broader-evidence/scooby-seven-claim-checks-2026-11-11/README.md) cover financing, FAA correction, a seismic-time argument, the first stage of a collapse calculation, Moussaoui exhibit 633, Flight 77 recorder-channel status and Orabi's computational limits. The [30-report ledger](broader-evidence/scooby-30-claim-ledger-2026-11-11/README.md) records their limited scope. Further claim-by-claim checks and primary evidence remain open.
+
 ## November 11: Scooby original-record audit ledger — ongoing
 
 A [30-report working ledger](broader-evidence/scooby-30-claim-ledger-2026-11-11/README.md) selects one lead per report and records which source checks remain open. New checks confirm FEMA's description of its two corrosion samples and the court's index entry for Moussaoui exhibit 633. The FEMA building attribution is qualified and the court index does not substitute for reading the exhibit. This is not a completed claim-by-claim review.
