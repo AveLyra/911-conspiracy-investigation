@@ -2,6 +2,8 @@
 
 ## Start here: theory and evidence
 
+[Repository guide](repository-organization-2026-11-11/README.md): investigation materials, historical root documents and Faraday software.
+
 - [Developing theory](urban-moving-systems/developing-theory-2026-11-06/README.md): the working model, proposed tests and competing explanations.
 - [Cross-chat integration](cross-chat-evidence-integration-2026-11-10/README.md): selected findings from the two investigations, a map of all 16 audit topics and the five original-record tracks. This dated synthesis is not an inventory of every chat attachment, tool output or later result.
 - [Numbered master lead register](wtc7/master-lead-register-2026-10-26/MASTER-LIST.md), [source pins](wtc7/master-lead-register-2026-10-26/register.json) and [open targets](wtc7/master-lead-register-2026-10-26/OPEN-TARGETS.json): individual leads, sources and missing records.
@@ -14,6 +16,10 @@
 The [evidence index](topics/evidence-index.md) links names, organizations, dates and record identifiers to concise source-backed guides. Start with [UMS and the FBI inquiry](topics/urban-moving-systems-911-fbi-records.md), the [WTC visitor card](topics/wtc-visitor-card-moving-company-access.md), [van laboratory results](topics/fbi-ums-van-explosives-laboratory-results.md), the [Classic/Miami lead](topics/classic-international-movers-hijacker-notebook.md), [WTC 7 and physical evidence](topics/wtc7-nist-uaf-collapse-evidence.md), the [CIA hold and Saudi-linked assistance](topics/cia-hold-saudi-support-september-11.md), or the [theory and tests](topics/developing-911-theory.md). The guides are navigational summaries; the linked underlying research and dated records govern their scope and limitations.
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
+
+## November 11: FBI crosswalk and research-chat status
+
+A [source check](urban-moving-systems/fbi-ec-crosswalk-verified-2026-11-11/README.md) verifies the 2002 counterintelligence shipment and return references and the separate questioned-document laboratory report. The return uses a different 1B label for E01889039; no explosives chemistry result follows. Thirty later research chats were checked; accessible messages contain initiation acknowledgments, not completed reports, so no findings from those jobs have been added.
 
 ## November 11: public pull-request comparison
 
