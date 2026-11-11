@@ -11,6 +11,10 @@
 
 The [evidence index](topics/evidence-index.md) links names, organizations, dates and record identifiers to concise source-backed guides. Start with [UMS and the FBI inquiry](topics/urban-moving-systems-911-fbi-records.md), the [WTC visitor card](topics/wtc-visitor-card-moving-company-access.md), [van laboratory results](topics/fbi-ums-van-explosives-laboratory-results.md), the [Classic/Miami lead](topics/classic-international-movers-hijacker-notebook.md), [WTC 7 and physical evidence](topics/wtc7-nist-uaf-collapse-evidence.md), the [CIA hold and Saudi-linked assistance](topics/cia-hold-saudi-support-september-11.md), or the [theory and tests](topics/developing-911-theory.md). The guides are navigational summaries; the linked underlying research and dated records govern their scope and limitations.
 
+## November 11: Sarasota FBI source records recovered
+
+The [Sarasota chronology](broader-evidence/sarasota-gate-fbi-source-chronology-2026-11-11/README.md#follow-up-original-fbi-exhibit-located) now links the original released September 2002 interview memorandum, a 2011 analyst's negative telephone comparison, the director briefing and postal lead TP2844. The original gate logs and plate crosswalk remain unlocated; the 2001 vehicle lead is not a gate or UMS match. The 2011 negative search and conflicting witness claims have defined, incompletely documented scopes.
+
 ## November 11: Sarasota gate and FBI records
 
 The [source chronology](broader-evidence/sarasota-gate-fbi-source-chronology-2026-11-11/README.md) compares the released 2002 FBI communication, a 2004 FDLE report, later disputed FBI assessments and FOIA proceedings. Original gate logs, plate comparisons and their custody were not found; a reported match has not been independently reconstructed. No authenticated UMS–Sarasota link was found in the bounded search. The report identifies records that could strengthen or weaken each account.
