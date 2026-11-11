@@ -13,6 +13,10 @@ The [evidence index](topics/evidence-index.md) links names, organizations, dates
 
 The [WTC 7 completion audit](wtc7/completion-audit-2026-09-24/report.md#november-11-2026-resistance-and-transfer-truss-follow-up) now maps the resistance review to structural, observation and comparator work packages without marking incomplete model or media tests complete.
 
+## November 11: van-sample lab and custody search paths
+
+The [laboratory follow-up](urban-moving-systems/lab-custody-search-paths-2026-11-11/README.md) checks FBI evidence-control procedures against a contemporary laboratory description and the preserved November 7 request. It identifies conditional receipt, binder and identifier-crosswalk locators, and verifies the February 2014 counterpart. No final chemistry result or evidence of concealment was found; agency search and response remain unconfirmed.
+
 ## November 11: Scooby access, Classic and headquarters follow-up
 
 The [source-checked review](urban-moving-systems/scooby-four-leads-review-2026-11-11/README.md) compares three completed chat findings to the original released scans. A police reference to an FBI receipt strengthens the proposed link between the driver's black pouch and the visitor-card receipt, while its redaction prevents a confirmed identification. A separate list bears a Classic International number, but no source ties it to a call or the notebook entry. The 2003 headquarters inquiry, 2002 visit and a redacted 2004 headquarters matter cannot be assumed to be identical. The completed van-laboratory review identifies a 2014 destruction/disposition record listing the three sample barcodes; final chemical results and the field-to-laboratory crosswalk remain unlocated. Chat metadata did not expose a reliable research-mode indicator.
