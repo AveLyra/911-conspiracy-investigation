@@ -224,3 +224,7 @@ A [source check of the five-row dependency table](../../broader-evidence/scooby-
 ### Corrosion and provenance
 
 FEMA observed severe oxidation and sulfidation in steel with a provisionally identified source; its report did not establish the sulfur source or corrosion rate. A later abstract proposes exposure during rubble fires, while NIST’s inability to identify WTC 7 steel applies to its own inventory. Neither account alone resolves the beam’s complete custody or the timing, and the corrosion does not independently establish a planted incendiary or identify an installer. [Original-source comparison](../../broader-evidence/scooby-corrosion-provenance-check-2026-11-12/README.md).
+
+### Flight 93 timing and signal identification
+
+The early seismic estimate and the later recorder/radar chronology differ, but the seismic paper’s stated five-second interval is conditional on its selected signal and wave-speed assumptions. Later Commission and Lamont assessments questioned the signal identification; a direct waveform and clock audit remains open. The discrepancy by itself does not identify an alternate actor or connect UMS to the flight. [Original-source check](../../broader-evidence/scooby-flight93-seismic-source-check-2026-11-12/README.md).

@@ -310,3 +310,7 @@ The recovered dependency table’s citations to the Commission distinguish inter
 ### Corroded steel: original-source limits
 
 The [corrosion provenance check](broader-evidence/scooby-corrosion-provenance-check-2026-11-12/README.md) compares FEMA’s qualified specimen attribution and unknown corrosion rate with NIST’s statement about its own inventory and the later authors’ rubble-fire interpretation. Neither publication establishes a unique sulfur source or direct exposure timestamp; specimen and experimental records remain open.
+
+### Flight 93: seismic estimate and conditional error
+
+The [original-paper source check](broader-evidence/scooby-flight93-seismic-source-check-2026-11-12/README.md) finds that the early 10:06:05 ±5-second estimate explicitly limited its uncertainty to crustal velocity; the authors also reported weak signals at two stations. The Commission and a later Lamont account challenged the identification, while the NTSB study stated 10:03:11. Native waveform and clock comparisons remain necessary for independent replication.
