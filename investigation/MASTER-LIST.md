@@ -314,3 +314,7 @@ The [corrosion provenance check](broader-evidence/scooby-corrosion-provenance-ch
 ### Flight 93: seismic estimate and conditional error
 
 The [original-paper source check](broader-evidence/scooby-flight93-seismic-source-check-2026-11-12/README.md) finds that the early 10:06:05 ±5-second estimate explicitly limited its uncertainty to crustal velocity; the authors also reported weak signals at two stations. The Commission and a later Lamont account challenged the identification, while the NTSB study stated 10:03:11. Native waveform and clock comparisons remain necessary for independent replication.
+
+### CIA/FBI routing: separate records and unresolved discovery
+
+The [routing source check](broader-evidence/scooby-cir-routing-source-check-2026-11-12/README.md) distinguishes the held January visa draft, a separate Malaysia-meeting cable apparently reflected in an FBI update without visa details, and the later July 2001 identification request. Oversight accounts of the 2004 draft discovery remain in tension; original messages and recipient-side records are needed.

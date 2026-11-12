@@ -228,3 +228,7 @@ FEMA observed severe oxidation and sulfidation in steel with a provisionally ide
 ### Flight 93 timing and signal identification
 
 The early seismic estimate and the later recorder/radar chronology differ, but the seismic paper’s stated five-second interval is conditional on its selected signal and wave-speed assumptions. Later Commission and Lamont assessments questioned the signal identification; a direct waveform and clock audit remains open. The discrepancy by itself does not identify an alternate actor or connect UMS to the flight. [Original-source check](../../broader-evidence/scooby-flight93-seismic-source-check-2026-11-12/README.md).
+
+### Intelligence routing: separate opportunities and competing accounts
+
+The recorded January hold, incomplete sharing and later follow-up are material failures to test, while the DOJ review also records partial sharing of meeting information without visa details. An internal cable asserted the travel documents had been passed, but oversight investigators could not establish delivery. Motive, the 2004 recovery discrepancy and any connection to the proposed parallel UMS operation require independent records; the current routing evidence does not establish them. [Source check](../../broader-evidence/scooby-cir-routing-source-check-2026-11-12/README.md).
