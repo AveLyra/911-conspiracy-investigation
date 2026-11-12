@@ -244,3 +244,7 @@ The visitor card remains a concrete lead requiring issuer, holder and event reco
 ### FBI affiliation inquiry and foreknowledge
 
 An FBI polygraph communication reports different examiner interpretations for questions about prior knowledge and intelligence affiliation; the associated test materials and identities remain redacted. Another interview communication records investigators’ suspicions and their uncertainty about the reason for perceived deception. These are reasons to seek the underlying files and headquarters assessment, not proof of affiliation or an infallible exclusion of foreknowledge. [Original-page check](../../broader-evidence/scooby-ums-polygraph-interview-check-2026-11-12/README.md).
+
+### Sarasota lead and evidentiary independence
+
+Two FBI documents repeat the same five paragraphs, while a later analyst reported no hijacker connection in the domestic numbers available for search. The underlying gate, plate and phone comparisons remain unavailable. These competing records warrant further testing, but neither the repeated allegation nor the limited negative search resolves every possible connection or identifies a UMS role. [Source check](../../broader-evidence/scooby-sarasota-scope-check-2026-11-12/README.md).

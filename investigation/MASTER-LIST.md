@@ -330,3 +330,7 @@ The [badge lineage check](broader-evidence/scooby-wtc-badge-lineage-check-2026-1
 ### UMS interview and polygraph records
 
 The [original-page check](broader-evidence/scooby-ums-polygraph-interview-check-2026-11-12/README.md) separates examiner interpretations, agents’ interview suspicions and the deleted substance of a later New York communication. Redactions and the limits of polygraph interpretations preclude treating these as an established affiliation or a conclusive foreknowledge finding.
+
+### Sarasota: repeated text and search scope
+
+The [Sarasota source check](broader-evidence/scooby-sarasota-scope-check-2026-11-12/README.md) confirms the court’s account of repeated April 2002 text and the later analyst’s negative search of available family numbers. The 2014 briefing’s missing-documentation statement does not establish that no search occurred; the gate and carrier comparison records remain missing.
