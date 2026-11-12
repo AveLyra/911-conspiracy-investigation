@@ -302,3 +302,7 @@ The Commission’s [February 2004 review](https://www.archives.gov/files/declass
 ### Insurance: recovery, investor return and remaining accounting
 
 A [judicial-record check](broader-evidence/scooby-insurance-judicial-check-2026-11-12/README.md) documents insurer-specific preattack binding, the WTCP court-defined net, and an investor’s capital-and-interest repayment. None identifies an ultimate owner’s net profit or the source of that repayment; remittances, debt and distribution records remain necessary.
+
+### Planning-account dependency: five-row check
+
+The recovered dependency table’s citations to the Commission distinguish interrogation-dependent planning detail from travel and transaction histories. The Commission’s cited KSM accounts differed on the proposed approval date; its financing monograph describes four transfers totaling $10,389.81, but the underlying receipts have not been checked in this pass. See the [five-row source check](broader-evidence/scooby-dependency-five-row-check-2026-11-12/README.md); no UMS connection follows from these citations.

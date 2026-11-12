@@ -216,3 +216,7 @@ The Commission’s PDB review recorded a large difference in the share of select
 ### Insurance and economic motivation
 
 Court records support preattack placement of insurance as part of the transaction and document substantial insured-entity recoveries and an investor’s repayment with interest. Neither proves advance attack knowledge; nor do rebuilding obligations alone establish zero benefit. The material test is an owner-level accounting tracing contributions, debts, distributions, costs and retained rights, alongside contemporaneous evidence of intent. [Judicial-record source check](../../broader-evidence/scooby-insurance-judicial-check-2026-11-12/README.md).
+
+### Planning evidence and independence
+
+A [source check of the five-row dependency table](../../broader-evidence/scooby-dependency-five-row-check-2026-11-12/README.md) shows why reports of specific planning conversations should be distinguished from cited travel and transaction evidence. The Commission itself acknowledged inconsistencies in KSM’s reported timing; its financing monograph describes traceable transactions alongside a rough overall cost estimate. These observations support further testing of individual accounts; they do not establish another actor’s coordination or disprove the hijackers’ operational role. Original underlying records remain necessary.
