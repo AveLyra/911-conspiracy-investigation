@@ -366,3 +366,7 @@ The [UAF source check](broader-evidence/scooby-uaf-lineage-source-check-2026-11-
 ### Able Danger and Odigo: distinct warning chains
 
 The [provenance check](broader-evidence/scooby-able-odigo-source-check-2026-11-12/README.md) documents both reported data destruction and oversight findings against the alleged pre-9/11 Atta identification. Contemporary Odigo reporting describes a nonspecific message; its native message and FBI disposition remain unavailable. No shared operation or UMS link follows from these records.
+
+### Scooby dispatch source check — 12 November 2026
+
+[Selected source review](broader-evidence/scooby-manhattan-dispatch-source-check-2026-11-12/README.md): FBI records describe a dispatcher and customer corroboration for a Pennsylvania pair’s Ohio/Illinois trip, while a separate EC refers to preliminary UMS hard-drive analysis with its result redacted. Neither establishes a WTC job or identifies the crew or recipient of the separate reported Manhattan delivery. The underlying business records and complete CART outputs remain targets.

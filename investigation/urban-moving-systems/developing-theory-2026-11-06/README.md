@@ -280,3 +280,7 @@ UAF reports an increased thermal-expansion input in one counterfactual and a pre
 ### Warning claims and source independence
 
 Able Danger records destruction and competing witness recollections warrant preservation, while the DoD IG and Senate staff reported that their reviews did not substantiate a pre-attack hijacker identification. Odigo is a separate warning claim whose original message and sender disposition remain unverified. Neither chain establishes a UMS connection or coordination between the alleged operations. [Source check](../../broader-evidence/scooby-able-odigo-source-check-2026-11-12/README.md).
+
+### Dispatch and hard-drive evidence: limited source check
+
+A [selected source check](../../broader-evidence/scooby-manhattan-dispatch-source-check-2026-11-12/README.md) confirms that FBI records describe a dispatcher and corroborated Ohio/Illinois deliveries by two workers. The trip is consistent with commercial work and cannot be assigned to the five New Jersey detainees or the separate reported Manhattan job. The FBI also described preliminary analysis of seized UMS hard drives, but the visible passage redacts the result; that omission does not establish either a WTC assignment or deliberate concealment. Original dispatch and receiver records and complete CART outputs could test these alternatives.

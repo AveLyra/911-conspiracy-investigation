@@ -114,3 +114,5 @@ An [Exxon tape and output source check](../scooby-exxon-output-source-check-2026
 A [UAF lineage source check](../scooby-uaf-lineage-source-check-2026-11-12/README.md) checks the reported increased coefficient, visible G3005 label and prescribed whole-building scenario against UAF’s report, and records NIST’s distinction between partial-floor and 16-story models. Exact executed-job lineage and other report-24 claims remain open.
 
 An [Able Danger and Odigo provenance check](../scooby-able-odigo-source-check-2026-11-12/README.md) compares selected report-14 claims with the DoD IG, Senate and hearing records, while keeping the Odigo message as a separate, unauthenticated source chain. Native charts, message and investigative files remain open.
+
+A [Manhattan dispatch source check](../scooby-manhattan-dispatch-source-check-2026-11-12/README.md) verifies selected statements against Philadelphia serial 357 and New York serial 325. The Ohio/Illinois trip remains distinct from the separate reported Manhattan delivery; CART activity is documented but its findings are redacted. Full report and attachment verification remains open.
