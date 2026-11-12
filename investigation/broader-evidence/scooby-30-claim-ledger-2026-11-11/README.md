@@ -71,6 +71,8 @@ A [Classic original-page check](../scooby-classic-original-pages-2026-11-12/READ
 
 A [Korol numerical check](../scooby-korol-recovered-arithmetic-2026-11-12/README.md) independently executes the recovered report’s core energy and sensitivity calculations against the original paper. Its experimental-provenance and physical-path claims, other report content and attachments remain open.
 
+A [warning-product source check](../scooby-pdb-summer-source-check-2026-11-12/README.md) visually reads the June 2, July 11, July 24 and August 6 CIA products and checks the Commission’s presidential-receipt account. Other corpus entries, the dissemination percentages and attachments remain open.
+
 ## What would advance this audit
 
 Expand every row into distinct material claims with exact page or exhibit locators, inspect each cited original and material contrary record, independently reproduce numerical claims, and record inaccessible source dependencies. Check report attachments and current project records separately. Do not equate the initial 30 selected rows or the limited checks above with completion of that work.

@@ -204,3 +204,7 @@ The [original pages](../../broader-evidence/scooby-classic-original-pages-2026-1
 ### Energy-balance sensitivity
 
 A [reproduced Korol calculation](../../broader-evidence/scooby-korol-recovered-arithmetic-2026-11-12/README.md) yields a narrow negative energy balance under the stated idealized assumptions, with its sign changing when assigned slab work is reduced by 1%. The paper’s five-floor figure also differs from a calculation using its printed inputs. These are model and arithmetic checks, not proof of the actual collapse path or explosives.
+
+### Intelligence warnings and decision knowledge
+
+The [source check](../../broader-evidence/scooby-pdb-summer-source-check-2026-11-12/README.md) confirms a mixed summer 2001 warning stream and the August 6 domestic-threat brief, including uncorroborated elements. These records strengthen the case for examining the government’s response to warnings; they do not establish advance knowledge of the specific attacks or coordination with UMS.

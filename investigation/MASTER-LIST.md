@@ -290,3 +290,7 @@ The [source-page check](broader-evidence/scooby-classic-original-pages-2026-11-1
 ### Korol arrest calculation
 
 The [reproducible arithmetic check](broader-evidence/scooby-korol-recovered-arithmetic-2026-11-12/README.md) confirms the sensitivity of the idealized Storey 11 energy balance and a five-floor arithmetic inconsistency under the paper’s stated inputs. Actual component engagement, model geometry and the laboratory-to-building extrapolation remain unverified.
+
+### CIA warning-product checks
+
+The [June–August PDB comparison](broader-evidence/scooby-pdb-summer-source-check-2026-11-12/README.md) records overseas and unspecified threats alongside the August 6 domestic warning, with redactions, corroboration limits and the difference between product content and demonstrated receipt. It does not establish the 9/11 operational plan or a UMS connection.
