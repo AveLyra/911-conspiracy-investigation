@@ -334,3 +334,7 @@ The [original-page check](broader-evidence/scooby-ums-polygraph-interview-check-
 ### Sarasota: repeated text and search scope
 
 The [Sarasota source check](broader-evidence/scooby-sarasota-scope-check-2026-11-12/README.md) confirms the court’s account of repeated April 2002 text and the later analyst’s negative search of available family numbers. The 2014 briefing’s missing-documentation statement does not establish that no search occurred; the gate and carrier comparison records remain missing.
+
+### Options trading: corrected aggregate and ownership
+
+The [options source check](broader-evidence/scooby-options-source-check-2026-11-12/README.md) verifies the Commission memorandum’s correction of September 6 UAL put volume and identifies additional unreconstructed figures. The canceled sale cannot be allocated to an adviser from the aggregate correction; native transactions and account positions remain needed.

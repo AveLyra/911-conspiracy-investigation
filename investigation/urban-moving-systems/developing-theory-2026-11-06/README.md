@@ -248,3 +248,7 @@ An FBI polygraph communication reports different examiner interpretations for qu
 ### Sarasota lead and evidentiary independence
 
 Two FBI documents repeat the same five paragraphs, while a later analyst reported no hijacker connection in the domestic numbers available for search. The underlying gate, plate and phone comparisons remain unavailable. These competing records warrant further testing, but neither the repeated allegation nor the limited negative search resolves every possible connection or identifies a UMS role. [Source check](../../broader-evidence/scooby-sarasota-scope-check-2026-11-12/README.md).
+
+### Trading as a test of advance knowledge
+
+The SEC/Commission investigation reported no evidence that trading used advance attack knowledge, and described ordinary explanations for prominent trades. A later reconciliation corrected one aggregate volume and acknowledged other unreconstructed figures. The accounting errors justify checking native data; they do not establish illicit intent. Market-level volume and account-level trades must remain separate. [Source check](../../broader-evidence/scooby-options-source-check-2026-11-12/README.md).

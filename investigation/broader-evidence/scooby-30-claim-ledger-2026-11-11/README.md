@@ -98,3 +98,5 @@ A [badge and backup lineage check](../scooby-wtc-badge-lineage-check-2026-11-12/
 An [FBI interview and polygraph original-page check](../scooby-ums-polygraph-interview-check-2026-11-12/README.md) compares Serials 339, 368 and 459, preserves Serial 368’s date inconsistency and limits the agents’ inferences and the redacted-identity join. Test records, withheld pages and the final headquarters assessment remain open.
 
 A [Sarasota search-scope check](../scooby-sarasota-scope-check-2026-11-12/README.md) compares the court’s repeated-paragraph finding, the analyst’s limited negative telephone search and the 2014 briefing’s missing-documentation statement. Original gate/phone comparison inputs and remaining report-23 claims and attachments remain open.
+
+An [options reconciliation source check](../scooby-options-source-check-2026-11-12/README.md) compares selected report-28 claims with the 2004 SEC follow-up and staff monograph, including unresolved call and September 7 counts and the separate fund’s reported loss. Native exchange/account records and other report claims remain open.
