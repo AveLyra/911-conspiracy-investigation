@@ -284,3 +284,7 @@ Able Danger records destruction and competing witness recollections warrant pres
 ### Dispatch and hard-drive evidence: limited source check
 
 A [selected source check](../../broader-evidence/scooby-manhattan-dispatch-source-check-2026-11-12/README.md) confirms that FBI records describe a dispatcher and corroborated Ohio/Illinois deliveries by two workers. The trip is consistent with commercial work and cannot be assigned to the five New Jersey detainees or the separate reported Manhattan job. The FBI also described preliminary analysis of seized UMS hard drives, but the visible passage redacts the result; that omission does not establish either a WTC assignment or deliberate concealment. Original dispatch and receiver records and complete CART outputs could test these alternatives.
+
+### Source priorities after the 30-report inventory
+
+The [prioritized report review](../../broader-evidence/scooby-30-priority-inventory-2026-11-12/README.md) distinguishes evidence supporting individual leads from missing links needed for coordination or an explosives role. The WTC card, reported Classic notebook entry and FBI digital examination remain leads; none alone establishes WTC access for a UMS job, a hijacker transaction, intelligence tasking or explosive installation. Ordinary moving activity, independent investigations and post-attack policy opportunism remain alternatives to test alongside the working hypothesis. NIST’s acknowledged absence of tower-steel residue tests limits a chemical inference; it does not itself establish residues.

@@ -370,3 +370,7 @@ The [provenance check](broader-evidence/scooby-able-odigo-source-check-2026-11-1
 ### Scooby dispatch source check — 12 November 2026
 
 [Selected source review](broader-evidence/scooby-manhattan-dispatch-source-check-2026-11-12/README.md): FBI records describe a dispatcher and customer corroboration for a Pennsylvania pair’s Ohio/Illinois trip, while a separate EC refers to preliminary UMS hard-drive analysis with its result redacted. Neither establishes a WTC job or identifies the crew or recipient of the separate reported Manhattan delivery. The underlying business records and complete CART outputs remain targets.
+
+### Scooby: 30-report inventory and priority review
+
+[Inventory and evidence priorities](broader-evidence/scooby-30-priority-inventory-2026-11-12/README.md) maps all 30 captured report titles to existing source checks. Missing original records and unreviewed attachments remain explicit; the highest-value tests concern WTC access and jobs, FBI affiliation and laboratory outcomes, and the Classic and CIA routing trails.

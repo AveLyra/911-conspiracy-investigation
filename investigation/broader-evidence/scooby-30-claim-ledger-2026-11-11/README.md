@@ -116,3 +116,5 @@ A [UAF lineage source check](../scooby-uaf-lineage-source-check-2026-11-12/READM
 An [Able Danger and Odigo provenance check](../scooby-able-odigo-source-check-2026-11-12/README.md) compares selected report-14 claims with the DoD IG, Senate and hearing records, while keeping the Odigo message as a separate, unauthenticated source chain. Native charts, message and investigative files remain open.
 
 A [Manhattan dispatch source check](../scooby-manhattan-dispatch-source-check-2026-11-12/README.md) verifies selected statements against Philadelphia serial 357 and New York serial 325. The Ohio/Illinois trip remains distinct from the separate reported Manhattan delivery; CART activity is documented but its findings are redacted. Full report and attachment verification remains open.
+
+The [30-report inventory and priority review](../scooby-30-priority-inventory-2026-11-12/README.md) links every captured title to a documented source check, identifies consequential discrepancies and prioritizes evidence that could change the theory. It adopts the user’s revised risk-based approach; the inventory is not a claim of complete review of every attachment.
