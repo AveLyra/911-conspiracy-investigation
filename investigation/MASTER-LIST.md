@@ -342,3 +342,7 @@ The [options source check](broader-evidence/scooby-options-source-check-2026-11-
 ### DEA Tinker-area lead: charges and disposition
 
 The [original-page check](broader-evidence/scooby-dea-tinker-source-check-2026-11-12/README.md) confirms that the compilation reports immigration charges and a requested FBI debrief. The underlying dispositions and interview are not located; the reported alert’s possible-collection language does not establish intelligence tasking or a UMS connection.
+
+### Van samples: same-date transfer candidate
+
+The [transfer-reference check](broader-evidence/scooby-van-transfer-reference-check-2026-11-12/README.md) confirms the sample barcodes in the recovered inventory and reported group disposal, and checks a same-date 2002 transfer request against the package-copy note. The candidate does not visibly identify those barcodes, 1B4 or a laboratory destination; the lab chain and results remain open.

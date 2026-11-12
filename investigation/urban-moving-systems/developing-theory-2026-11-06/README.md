@@ -256,3 +256,7 @@ The SEC/Commission investigation reported no evidence that trading used advance 
 ### Art-seller incidents and attribution
 
 A DEA compilation reports an alert, immigration charges and a requested FBI debrief in the Tinker-area incident. The charges and requested interview are not a verified final disposition or an established intelligence operation. The checked passage does not link the individuals to UMS or the hijackers. [Source check](../../broader-evidence/scooby-dea-tinker-source-check-2026-11-12/README.md).
+
+### Van samples: custody and chemistry
+
+The FBI property pages identify fabric, controls and blanket samples and later report disposal of their barcode groups. A same-date evidence-transfer request is a promising locator, but does not visibly link the samples to laboratory receipt or a result. Neither residue language in an inventory nor disposal establishes explosive chemistry or a concealment motive. [Source check](../../broader-evidence/scooby-van-transfer-reference-check-2026-11-12/README.md).

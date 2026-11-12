@@ -102,3 +102,5 @@ A [Sarasota search-scope check](../scooby-sarasota-scope-check-2026-11-12/README
 An [options reconciliation source check](../scooby-options-source-check-2026-11-12/README.md) compares selected report-28 claims with the 2004 SEC follow-up and staff monograph, including unresolved call and September 7 counts and the separate fund’s reported loss. Native exchange/account records and other report claims remain open.
 
 A [Tinker-area original-page check](../scooby-dea-tinker-source-check-2026-11-12/README.md) visually examines compilation paragraphs 175–180 and narrows report 21’s statement that visa violations were established: the compilation reports charges, while original dispositions remain unexamined. It also separates a requested FBI debrief from a completed one. Other claims and attachments remain open.
+
+A [sample transfer-reference check](../scooby-van-transfer-reference-check-2026-11-12/README.md) visually compares the recovered FD-192 and 2014 disposition EC with the September 12, 2002 transfer-request page. The date match is a lead; the visible request does not map the sample barcodes to 1B4, laboratory receipt or chemical results.
