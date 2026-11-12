@@ -196,3 +196,7 @@ The [FBI property pages](../../broader-evidence/scooby-van-original-property-che
 ### Headquarters inquiry: original records
 
 The [FBI pages](../../broader-evidence/scooby-ums-hq-visit-originals-2026-11-12/README.md) document a headquarters visit and a separately described inquiry into possible intelligence connections. They are stronger evidence of investigative attention than the recovered chat could establish, but do not prove that the visit and inquiry were the same, what the final assessment found, or that UMS had attack foreknowledge or a Saudi connection.
+
+### Classic lead and source boundaries
+
+The [original pages](../../broader-evidence/scooby-classic-original-pages-2026-11-12/README.md) separately report a Classic number in a seized notebook and show a computer-labeled list with “Classic International.” The sources do not yet join those artifacts, prove a call, or identify the alleged hijacker-customer. A reported identifier grouping does not alone prove the notebook-to-package mapping.

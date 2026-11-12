@@ -282,3 +282,7 @@ The [original-page comparison](broader-evidence/scooby-van-original-property-che
 ### FBI headquarters visit and inquiry records
 
 The [original-page check](broader-evidence/scooby-ums-hq-visit-originals-2026-11-12/README.md) documents the August 2002 headquarters visit and expected report, the separate April 2002 analytical-inquiry description, and the redacted pending HQ matter in April 2004. It preserves the missing links between these records and does not infer an affiliation conclusion.
+
+### Classic phone-list and notebook records
+
+The [source-page check](broader-evidence/scooby-classic-original-pages-2026-11-12/README.md) verifies the separately labeled computer phone list and narrows an asserted 1B25/1B4 mapping. The notebook digits, actual call, historical subscriber, Miami customer and attachment contents remain unestablished.
