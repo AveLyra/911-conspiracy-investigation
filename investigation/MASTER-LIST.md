@@ -258,3 +258,7 @@ The [candidate audit](broader-evidence/scooby-dependency-candidate-audit-2026-11
 The [DEA and UAF visible-claim review](broader-evidence/scooby-dea-uaf-visible-candidate-audit-2026-11-11/README.md) separates the reported Volk Field incident from original local records and corrects the UAF Figure 3.14 description: the visible W21 label matches its caption; an earlier audit reported a different label in the covered raster layer. Native section assignment is unresolved.
 
 The [additional DEA source check](broader-evidence/scooby-dea-uaf-visible-candidate-audit-2026-11-11/README.md) verifies the compilation’s Tampa transaction and referral descriptions as reported, and identifies a February 27/28 sequencing discrepancy. Account slips, referrals and underlying police reports remain targets.
+
+### UAF function and NIST timing
+
+The [recovered-body check](broader-evidence/scooby-recovered-uaf-nist-body-checks-2026-11-11/README.md) documents UAF’s prescribed failure sequence and time-dependent acceleration description, NIST’s bowing-based force selection, and WTC 2’s 43-minute modeled versus approximately 56-minute observed onset. NIST also reported modeled tilt and numerical displacements; their status as held-out comparisons remains to be tested.
