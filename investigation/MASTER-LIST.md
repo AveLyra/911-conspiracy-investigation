@@ -318,3 +318,7 @@ The [original-paper source check](broader-evidence/scooby-flight93-seismic-sourc
 ### CIA/FBI routing: separate records and unresolved discovery
 
 The [routing source check](broader-evidence/scooby-cir-routing-source-check-2026-11-12/README.md) distinguishes the held January visa draft, a separate Malaysia-meeting cable apparently reflected in an FBI update without visa details, and the later July 2001 identification request. Oversight accounts of the 2004 draft discovery remain in tension; original messages and recipient-side records are needed.
+
+### WTC 7 fuel and Truss 2: bounded model inputs
+
+The [Truss 2 source check](broader-evidence/scooby-truss2-table-check-2026-11-12/README.md) distinguishes the Salomon tanks’ 12,000-gallon combined capacity from measured fuel consumption and Orabi’s conditional unprotected model from historical proof of missing protection. The reported dynamic endpoint was computational; native model and fuel records remain open.
