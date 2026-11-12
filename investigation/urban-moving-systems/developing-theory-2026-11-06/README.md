@@ -212,3 +212,7 @@ The [source check](../../broader-evidence/scooby-pdb-summer-source-check-2026-11
 ### Warning distribution: refined evidentiary boundary
 
 The Commission’s PDB review recorded a large difference in the share of selected terrorism-related articles substantially reproduced in broader intelligence products: 55/255 in 1998–2000 and 41/50 before September 11, 2001. This makes the content and routing of specific warnings worth investigating. It does not show who actually received or read an item, why an item differed, or that any official knowingly withheld actionable attack details. Original matched products, distribution lists, receipt records and the decisions surrounding particular warnings are needed to test deliberate withholding against routine editorial and security explanations. [Source and denominator check](../../broader-evidence/scooby-pdb-summer-source-check-2026-11-12/README.md#commission-review-overlap-counts-and-release-inventory).
+
+### Insurance and economic motivation
+
+Court records support preattack placement of insurance as part of the transaction and document substantial insured-entity recoveries and an investor’s repayment with interest. Neither proves advance attack knowledge; nor do rebuilding obligations alone establish zero benefit. The material test is an owner-level accounting tracing contributions, debts, distributions, costs and retained rights, alongside contemporaneous evidence of intent. [Judicial-record source check](../../broader-evidence/scooby-insurance-judicial-check-2026-11-12/README.md).

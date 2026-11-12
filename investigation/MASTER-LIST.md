@@ -298,3 +298,7 @@ The [June–August PDB comparison](broader-evidence/scooby-pdb-summer-source-che
 ### Commission warning-product comparison: checked denominators
 
 The Commission’s [February 2004 review](https://www.archives.gov/files/declassification/iscap/pdf/2022-008-document-release-508.pdf) reports 55/255 selected 1998–2000 PDB articles substantially overlapping NID/SEIB articles and 41/50 selected pre-9/11 2001 PDB articles overlapping SEIB articles. These are selected-corpus content comparisons, not delivery receipts or evidence of a particular official’s knowledge. Its search and counting choices, alternative overall count and remaining original-record needs are documented in the [source check](broader-evidence/scooby-pdb-summer-source-check-2026-11-12/README.md#commission-review-overlap-counts-and-release-inventory).
+
+### Insurance: recovery, investor return and remaining accounting
+
+A [judicial-record check](broader-evidence/scooby-insurance-judicial-check-2026-11-12/README.md) documents insurer-specific preattack binding, the WTCP court-defined net, and an investor’s capital-and-interest repayment. None identifies an ultimate owner’s net profit or the source of that repayment; remittances, debt and distribution records remain necessary.
