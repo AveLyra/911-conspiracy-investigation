@@ -188,3 +188,7 @@ The April 2001 relocation announcement is independent evidence of advance planni
 ### Bayoumi support and remaining causal links
 
 The [source comparison](../../broader-evidence/scooby-bayoumi-recovered-claims-2026-11-11/README.md) supports separating Bayoumi’s documented housing assistance, the 2017 intelligence-affiliation report and claims of attack knowledge or CIA direction. The OIG inferred reimbursement from contemporaneous cash deposits, while a separate FBI account reported no bank documentation of reimbursement; neither directly traces the cash. These records do not establish a bridge to UMS.
+
+### Van samples: inventory versus chemical findings
+
+The [FBI property pages](../../broader-evidence/scooby-van-original-property-check-2026-11-11/README.md) list sample and control descriptions under three barcodes and report their later destruction/disposal. Their descriptive wording does not establish a positive or negative explosives result, laboratory testing, or concealment. Accession and analytical records remain open.

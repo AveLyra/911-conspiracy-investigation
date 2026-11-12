@@ -274,3 +274,7 @@ The [recovered-body check](broader-evidence/scooby-zim-card-body-checks-2026-11-
 ### Bayoumi: source and reimbursement qualifications
 
 The [source comparison](broader-evidence/scooby-bayoumi-recovered-claims-2026-11-11/README.md) preserves the different 2005 and 2017 agency assessments and the limits of the 2016 call report. The OIG inferred apartment reimbursement from cash-deposit evidence; the Joint Inquiry also recorded a separate FBI statement finding no bank documentation of reimbursement. An unrecorded cash transfer could reconcile these observations, but original records are needed.
+
+### Van-sample property evidence
+
+The [original-page comparison](broader-evidence/scooby-van-original-property-check-2026-11-11/README.md) maps the sample and control descriptions to three barcodes and documents the 2014 reported destruction/disposal. It does not supply chemical results, laboratory accessions, separate execution dates or a motive.
