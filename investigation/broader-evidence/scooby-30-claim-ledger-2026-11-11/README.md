@@ -57,6 +57,8 @@ Further review of the saved accessibility snapshot recovered DEA report body and
 
 A [recovered-body model check](../scooby-recovered-uaf-nist-body-checks-2026-11-11/README.md) checks UAF’s prescribed column removals and acceleration-function description and NIST’s calibration and WTC 2 timing. It corrects the suggestion that NIST provided no modeled tilt: numerical displacements and modeled southeast tilt appear in its report. The remaining reports and attachment claims are not completely reviewed.
 
+An [experimental-benchmark check](../scooby-orabi-experiment-claims-2026-11-11/README.md) tests recovered Orabi follow-up claims against the Choe and Dai studies. It qualifies CB-DA survival: the specimen was automatically unloaded at 30 minutes. Other report claims and attachments remain open.
+
 ## What would advance this audit
 
 Expand every row into distinct material claims with exact page or exhibit locators, inspect each cited original and material contrary record, independently reproduce numerical claims, and record inaccessible source dependencies. Check report attachments and current project records separately. Do not equate the initial 30 selected rows or the limited checks above with completion of that work.

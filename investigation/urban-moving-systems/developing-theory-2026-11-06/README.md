@@ -176,3 +176,7 @@ The DEA compilation reports substantial account activity and interagency referra
 ### Collapse-model evidence and calibration
 
 UAF’s published staged-failure scenario includes a time-dependent acceleration function described as representing impact resistance. Its active settings and contribution need native-model testing. NIST adjusted pull forces using observed bowing and its WTC 2 case reached instability at 43 minutes against approximately 56 minutes observed; it also reported modeled tilt and numerical displacements. These limitations and outputs affect the evaluation of each model, but do not independently identify explosives or an actor. [Source check](../../broader-evidence/scooby-recovered-uaf-nist-body-checks-2026-11-11/README.md).
+
+### Physical experiments and model testing
+
+A [source check](../../broader-evidence/scooby-orabi-experiment-claims-2026-11-11/README.md) confirms useful connection-survival and damage benchmarks while recording that the surviving CB-DA beam was unloaded at 30 minutes. Neither that result nor the other experimental cases identifies the WTC 7 collapse mechanism or an actor. The actual Truss 2 protection and fire conditions and matching model inputs remain open.

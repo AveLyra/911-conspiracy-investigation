@@ -262,3 +262,7 @@ The [additional DEA source check](broader-evidence/scooby-dea-uaf-visible-candid
 ### UAF function and NIST timing
 
 The [recovered-body check](broader-evidence/scooby-recovered-uaf-nist-body-checks-2026-11-11/README.md) documents UAF’s prescribed failure sequence and time-dependent acceleration description, NIST’s bowing-based force selection, and WTC 2’s 43-minute modeled versus approximately 56-minute observed onset. NIST also reported modeled tilt and numerical displacements; their status as held-out comparisons remains to be tested.
+
+### Structural-fire benchmark qualification
+
+The [Choe and Dai source check](broader-evidence/scooby-orabi-experiment-claims-2026-11-11/README.md) confirms that CB-DA survived its *unloaded* decay/cooling history, and distinguishes measured strains from calculated connection forces. These tests provide validation targets, not a direct reconstruction of WTC 7.
