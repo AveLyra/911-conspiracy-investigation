@@ -104,3 +104,5 @@ An [options reconciliation source check](../scooby-options-source-check-2026-11-
 A [Tinker-area original-page check](../scooby-dea-tinker-source-check-2026-11-12/README.md) visually examines compilation paragraphs 175–180 and narrows report 21’s statement that visa violations were established: the compilation reports charges, while original dispositions remain unexamined. It also separates a requested FBI debrief from a completed one. Other claims and attachments remain open.
 
 A [sample transfer-reference check](../scooby-van-transfer-reference-check-2026-11-12/README.md) visually compares the recovered FD-192 and 2014 disposition EC with the September 12, 2002 transfer-request page. The date match is a lead; the visible request does not map the sample barcodes to 1B4, laboratory receipt or chemical results.
+
+A [Flight 77 recorder-channel page check](../scooby-aa77-recorder-channel-check-2026-11-12/README.md) visually verifies the NTSB parameter categories, recorder format and its 09:37:44 last-data timestamp alongside the flight-path study’s 09:37:45 impact time. Native channel configuration and clock-correlation records remain open.

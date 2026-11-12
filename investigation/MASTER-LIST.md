@@ -346,3 +346,7 @@ The [original-page check](broader-evidence/scooby-dea-tinker-source-check-2026-1
 ### Van samples: same-date transfer candidate
 
 The [transfer-reference check](broader-evidence/scooby-van-transfer-reference-check-2026-11-12/README.md) confirms the sample barcodes in the recovered inventory and reported group disposal, and checks a same-date 2002 transfer request against the package-copy note. The candidate does not visibly identify those barcodes, 1B4 or a laboratory destination; the lab chain and results remain open.
+
+### Flight 77 recorder categories and time correlation
+
+The [NTSB source check](broader-evidence/scooby-aa77-recorder-channel-check-2026-11-12/README.md) confirms pressure altitude was listed as validated, while flight-deck-door state and certain time fields were not-working-or-unconfirmed. The separate time-correlation report and aircraft-specific installation records remain needed; the report’s last-data time and the flight-path study’s impact time have distinct meanings.

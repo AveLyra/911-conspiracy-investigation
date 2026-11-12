@@ -260,3 +260,7 @@ A DEA compilation reports an alert, immigration charges and a requested FBI debr
 ### Van samples: custody and chemistry
 
 The FBI property pages identify fabric, controls and blanket samples and later report disposal of their barcode groups. A same-date evidence-transfer request is a promising locator, but does not visibly link the samples to laboratory receipt or a result. Neither residue language in an inventory nor disposal establishes explosive chemistry or a concealment motive. [Source check](../../broader-evidence/scooby-van-transfer-reference-check-2026-11-12/README.md).
+
+### Flight 77 recorder limits
+
+NTSB classified pressure altitude as validated and flight-deck-door state as not working or unconfirmed. This does not establish that a door sensor was absent or that the door stayed closed. The recorder report’s last-data time and the flight-path study’s impact time are distinct reported points; their native correlation and aircraft configuration remain open. [Source check](../../broader-evidence/scooby-aa77-recorder-channel-check-2026-11-12/README.md).
