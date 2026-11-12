@@ -1,0 +1,12 @@
+# Scooby report 21: Tinker-area incident source check
+
+November 12, 2026. Visually inspected PDF pp. 49–50, paragraphs 175–180, of the [third-party-hosted DEA compilation](https://www.antiwar.com/rep/DEA_Report_redactedxx.pdf#page=49). The compilation reports other agencies’ activities; it is not the original alert, charging file, interview, arrest or court record. Its publication here as a link is not a determination that its personal identifiers should be repeated.
+
+| Recovered claim | Direct page comparison |
+| --- | --- |
+| An April 30, 2001 Air Force alert described possible intelligence collection. | Paragraph 175 reports such an alert. **The word “possible” is part of its investigative characterization**; the compilation does not establish that collection occurred or who tasked it. The original alert and underlying predicate have not been inspected. |
+| Authorities encountered four art sellers near Midwest City and charged them with immigration-status violations. | Paragraphs 175–176 report an OSI/police request for immigration assistance, subsequent detention, status-violation charges, initial bonds and requests for voluntary departure. The compilation labels the men in violation, but the report’s stronger characterization that the violations are established should be narrowed: the original charging documents, admissions, judicial or administrative dispositions and departure records are missing. A charge is not proof of a final adjudication. |
+| The FBI requested debriefing. | Paragraph 176 reports an Oklahoma City FBI request to hold the individuals for interview. It does not report that an interview occurred, its contents or its outcome. Original FBI receipt, FD-302s and disposition would test this. |
+| The incident shows Tinker penetration, intelligence tasking or a UMS connection. | The checked passage places the sales encounters in the Midwest City area and describes an Air Force alert; it does not establish base entry, collection, intelligence tasking or a link to UMS or the hijackers. A limited negative finding in these paragraphs does not prove that no other records exist. |
+
+The adjacent Volk Field paragraphs describe a separate incident and report developed film without aircraft photographs; do not treat it as the same four people or as independent confirmation of a Tinker intelligence allegation. Original local and agency records remain the decisive test. Other report-21 passages, attachments and the broader FBI assessment remain open.

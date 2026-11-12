@@ -338,3 +338,7 @@ The [Sarasota source check](broader-evidence/scooby-sarasota-scope-check-2026-11
 ### Options trading: corrected aggregate and ownership
 
 The [options source check](broader-evidence/scooby-options-source-check-2026-11-12/README.md) verifies the Commission memorandum’s correction of September 6 UAL put volume and identifies additional unreconstructed figures. The canceled sale cannot be allocated to an adviser from the aggregate correction; native transactions and account positions remain needed.
+
+### DEA Tinker-area lead: charges and disposition
+
+The [original-page check](broader-evidence/scooby-dea-tinker-source-check-2026-11-12/README.md) confirms that the compilation reports immigration charges and a requested FBI debrief. The underlying dispositions and interview are not located; the reported alert’s possible-collection language does not establish intelligence tasking or a UMS connection.

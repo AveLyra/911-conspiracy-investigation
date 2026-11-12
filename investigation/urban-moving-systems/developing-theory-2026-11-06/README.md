@@ -252,3 +252,7 @@ Two FBI documents repeat the same five paragraphs, while a later analyst reporte
 ### Trading as a test of advance knowledge
 
 The SEC/Commission investigation reported no evidence that trading used advance attack knowledge, and described ordinary explanations for prominent trades. A later reconciliation corrected one aggregate volume and acknowledged other unreconstructed figures. The accounting errors justify checking native data; they do not establish illicit intent. Market-level volume and account-level trades must remain separate. [Source check](../../broader-evidence/scooby-options-source-check-2026-11-12/README.md).
+
+### Art-seller incidents and attribution
+
+A DEA compilation reports an alert, immigration charges and a requested FBI debrief in the Tinker-area incident. The charges and requested interview are not a verified final disposition or an established intelligence operation. The checked passage does not link the individuals to UMS or the hijackers. [Source check](../../broader-evidence/scooby-dea-tinker-source-check-2026-11-12/README.md).
