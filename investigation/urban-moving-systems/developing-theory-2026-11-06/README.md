@@ -236,3 +236,7 @@ The recorded January hold, incomplete sharing and later follow-up are material f
 ### Truss 2 and fuel alternatives
 
 Published analyses describe emergency-fuel infrastructure and a conditional Truss 2 response under an assumed fire. Tank capacity is not a measured burn volume, and an unprotected model case does not establish the condition of the actual diagonal members. The 2.3-second dynamic endpoint was computational, not a finding of arrest or full-building collapse. Testing the competing mechanisms requires member protection and fuel histories and reproducible model cases. [Source check](../../broader-evidence/scooby-truss2-table-check-2026-11-12/README.md).
+
+### Visitor-card comparison and access-data scope
+
+The visitor card remains a concrete lead requiring issuer, holder and event records. NIST and NYC Health documents describe badge-holder rosters, while an E-J executive reported an FBI download of an offsite security backup. A roster is not an entry log, and the backup’s exact contents and custody have not been established; neither source currently ties UMS or Max to a WTC job. [Source check](../../broader-evidence/scooby-wtc-badge-lineage-check-2026-11-12/README.md).

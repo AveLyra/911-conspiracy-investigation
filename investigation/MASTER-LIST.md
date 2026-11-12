@@ -322,3 +322,7 @@ The [routing source check](broader-evidence/scooby-cir-routing-source-check-2026
 ### WTC 7 fuel and Truss 2: bounded model inputs
 
 The [Truss 2 source check](broader-evidence/scooby-truss2-table-check-2026-11-12/README.md) distinguishes the Salomon tanks’ 12,000-gallon combined capacity from measured fuel consumption and Orabi’s conditional unprotected model from historical proof of missing protection. The reported dynamic endpoint was computational; native model and fuel records remain open.
+
+### WTC badge records and reported offsite backup
+
+The [badge lineage check](broader-evidence/scooby-wtc-badge-lineage-check-2026-11-12/README.md) confirms two reported agency roster transfers and a contractor’s account of an FBI backup download. Neither identifies the visitor-card holder, establishes an entry event, or proves temporary-card coverage in the records actually retained.
