@@ -266,3 +266,7 @@ The [recovered-body check](broader-evidence/scooby-recovered-uaf-nist-body-check
 ### Structural-fire benchmark qualification
 
 The [Choe and Dai source check](broader-evidence/scooby-orabi-experiment-claims-2026-11-11/README.md) confirms that CB-DA survived its *unloaded* decay/cooling history, and distinguishes measured strains from calculated connection forces. These tests provide validation targets, not a direct reconstruction of WTC 7.
+
+### Zim relocation and card: source comparison
+
+The [recovered-body check](broader-evidence/scooby-zim-card-body-checks-2026-11-11/README.md) adds a September 18 opening account and a Norfolk city report while keeping the pre-attack April announcement, remaining-staff account, unidentified carrier and unresolved cardholder distinct.

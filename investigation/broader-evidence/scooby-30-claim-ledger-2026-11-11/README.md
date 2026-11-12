@@ -59,6 +59,8 @@ A [recovered-body model check](../scooby-recovered-uaf-nist-body-checks-2026-11-
 
 An [experimental-benchmark check](../scooby-orabi-experiment-claims-2026-11-11/README.md) tests recovered Orabi follow-up claims against the Choe and Dai studies. It qualifies CB-DA survival: the specimen was automatically unloaded at 30 minutes. Other report claims and attachments remain open.
 
+A [visitor-card and Zim body check](../scooby-zim-card-body-checks-2026-11-11/README.md) checks the pre-attack relocation announcement, a post-attack September 4 opening account, a Norfolk city report and the limited archival locator. The sources do not identify the mover or the visitor-card holder.
+
 ## What would advance this audit
 
 Expand every row into distinct material claims with exact page or exhibit locators, inspect each cited original and material contrary record, independently reproduce numerical claims, and record inaccessible source dependencies. Check report attachments and current project records separately. Do not equate the initial 30 selected rows or the limited checks above with completion of that work.

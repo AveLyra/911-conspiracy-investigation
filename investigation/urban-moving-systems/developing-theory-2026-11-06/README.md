@@ -180,3 +180,7 @@ UAF’s published staged-failure scenario includes a time-dependent acceleration
 ### Physical experiments and model testing
 
 A [source check](../../broader-evidence/scooby-orabi-experiment-claims-2026-11-11/README.md) confirms useful connection-survival and damage benchmarks while recording that the surviving CB-DA beam was unloaded at 30 minutes. Neither that result nor the other experimental cases identifies the WTC 7 collapse mechanism or an actor. The actual Truss 2 protection and fire conditions and matching model inputs remain open.
+
+### Zim and the visitor card
+
+The April 2001 relocation announcement is independent evidence of advance planning. Later reports describe an early-September Norfolk opening, while a separate account reports remaining WTC staff and lost equipment; these do not identify the physical mover. The visitor-card receipt remains a critical lead, but does not establish its holder, entry or a moving job. [Source check](../../broader-evidence/scooby-zim-card-body-checks-2026-11-11/README.md).
