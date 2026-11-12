@@ -358,3 +358,7 @@ The [NIST comparison check](broader-evidence/scooby-nist-comparison-check-2026-1
 ### Exxon tape: output count and conditional comparison
 
 The [original-page check](broader-evidence/scooby-exxon-output-source-check-2026-11-12/README.md) distinguishes the lab’s five print sets and six discs from unique frames or full recordings. The separate FBI memo describes a possible vehicle match; specimen linkage, final identification and clock calibration remain open.
+
+### UAF model inputs and competing descriptions
+
+The [UAF source check](broader-evidence/scooby-uaf-lineage-source-check-2026-11-12/README.md) distinguishes its reported counterfactual coefficient, visible figure label and imposed collapse scenario from the still-unverified executed model files. NIST describes materially different boundary conditions in its partial-floor and 16-story analyses.

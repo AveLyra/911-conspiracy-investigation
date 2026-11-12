@@ -272,3 +272,7 @@ NIST used photographic bowing in model selection and reconstruction, so matching
 ### Exxon surveillance comparison
 
 The FBI sought enhanced images of two white vans and reported minimal improvement. A separate memo described a possible match, conditional on vehicle identity and timing; the released pages do not establish either or independently calibrate the recorder clock. The native tape, outputs and comparison records remain necessary to test the lead. [Source check](../../broader-evidence/scooby-exxon-output-source-check-2026-11-12/README.md).
+
+### WTC 7 model lineage and discriminating tests
+
+UAF reports an increased thermal-expansion input in one counterfactual and a prescribed core/exterior failure sequence with a time-dependent resistance function in its matched-motion scenario. NIST describes differences between its partial-floor and 16-story model assumptions. The exact executed-job lineage and independent baseline tests remain necessary; matching motion under prescribed failures does not identify the physical cause of those failures. [Source check](../../broader-evidence/scooby-uaf-lineage-source-check-2026-11-12/README.md).
