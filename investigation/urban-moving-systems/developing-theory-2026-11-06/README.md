@@ -264,3 +264,7 @@ The FBI property pages identify fabric, controls and blanket samples and later r
 ### Flight 77 recorder limits
 
 NTSB classified pressure altitude as validated and flight-deck-door state as not working or unconfirmed. This does not establish that a door sensor was absent or that the door stayed closed. The recorder report’s last-data time and the flight-path study’s impact time are distinct reported points; their native correlation and aircraft configuration remain open. [Source check](../../broader-evidence/scooby-aa77-recorder-channel-check-2026-11-12/README.md).
+
+### Tower-model calibration and comparison
+
+NIST used photographic bowing in model selection and reconstruction, so matching that same feature is not fully independent validation. Its comparison table reports WTC 2 instability at 43 minutes versus observed initiation at 56 minutes and gives qualitative modeled tilt direction. Two late-tilt descriptions differ by about five degrees; underlying measurements and a controlled sensitivity test are needed to assess that discrepancy. These limitations do not themselves establish explosives. [Source check](../../broader-evidence/scooby-nist-comparison-check-2026-11-12/README.md).

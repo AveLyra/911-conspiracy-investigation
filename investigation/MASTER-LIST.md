@@ -350,3 +350,7 @@ The [transfer-reference check](broader-evidence/scooby-van-transfer-reference-ch
 ### Flight 77 recorder categories and time correlation
 
 The [NTSB source check](broader-evidence/scooby-aa77-recorder-channel-check-2026-11-12/README.md) confirms pressure altitude was listed as validated, while flight-deck-door state and certain time fields were not-working-or-unconfirmed. The separate time-correlation report and aircraft-specific installation records remain needed; the report’s last-data time and the flight-path study’s impact time have distinct meanings.
+
+### Tower-model comparison and tilt descriptions
+
+The [NIST comparison check](broader-evidence/scooby-nist-comparison-check-2026-11-12/README.md) confirms that NIST reported WTC 2 modeled instability at 43 minutes against observed initiation at 56 minutes. Its final report gives approximately 20° and 25° in two late eastward-tilt descriptions; the measurement basis of that difference is unresolved.
