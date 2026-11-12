@@ -220,3 +220,7 @@ Court records support preattack placement of insurance as part of the transactio
 ### Planning evidence and independence
 
 A [source check of the five-row dependency table](../../broader-evidence/scooby-dependency-five-row-check-2026-11-12/README.md) shows why reports of specific planning conversations should be distinguished from cited travel and transaction evidence. The Commission itself acknowledged inconsistencies in KSM’s reported timing; its financing monograph describes traceable transactions alongside a rough overall cost estimate. These observations support further testing of individual accounts; they do not establish another actor’s coordination or disprove the hijackers’ operational role. Original underlying records remain necessary.
+
+### Corrosion and provenance
+
+FEMA observed severe oxidation and sulfidation in steel with a provisionally identified source; its report did not establish the sulfur source or corrosion rate. A later abstract proposes exposure during rubble fires, while NIST’s inability to identify WTC 7 steel applies to its own inventory. Neither account alone resolves the beam’s complete custody or the timing, and the corrosion does not independently establish a planted incendiary or identify an installer. [Original-source comparison](../../broader-evidence/scooby-corrosion-provenance-check-2026-11-12/README.md).

@@ -77,10 +77,12 @@ A [warning-product source check](../scooby-pdb-summer-source-check-2026-11-12/RE
 
 Expand every row into distinct material claims with exact page or exhibit locators, inspect each cited original and material contrary record, independently reproduce numerical claims, and record inaccessible source dependencies. Check report attachments and current project records separately. Do not equate the initial 30 selected rows or the limited checks above with completion of that work.
 
-A [tenth candidate review](../scooby-dependency-candidate-audit-2026-11-11/README.md) evaluates the 16 extracted visible-summary candidates for report 22; its five-row table and underlying attachments remain unreviewed.
+A [tenth candidate review](../scooby-dependency-candidate-audit-2026-11-11/README.md) evaluates the 16 extracted visible-summary candidates for report 22; the later five-row source check below has now examined its table; underlying attachments and other report content remain unreviewed.
 
 The [Commission’s original PDB-review memorandum and NARA inventory](../scooby-pdb-summer-source-check-2026-11-12/README.md#commission-review-overlap-counts-and-release-inventory) support the reported 22% and 82% selected-article overlap and 11 listed interview memoranda. The first percentage is 55/255 (1998–2000), the second 41/50 (pre-9/11 2001); neither establishes actual delivery or reading. Original item matching, further report claims and attachments remain open.
 
 A [judicial-record insurance check](../scooby-insurance-judicial-check-2026-11-12/README.md) compares three recovered report claims with the Second Circuit, 2013 district court and New York Supreme Court decisions. It confirms St. Paul’s insurer-specific binder history, the narrowly defined WTCP insurance net, and Ritorto’s capital-and-interest payment while leaving original exhibits, payment source, owner-level returns and remaining report claims open.
 
 A [five-row dependency-table source check](../scooby-dependency-five-row-check-2026-11-12/README.md) inspects the previously unreviewed recovered table against the Commission’s notes, staff statement and financing monograph. It verifies specific citation and arithmetic claims, separates the Commission’s synthesis from underlying transaction and interrogation records, and leaves the editorial-change claim, original evidence and other report-22 content open.
+
+A [corrosion provenance and timing check](../scooby-corrosion-provenance-check-2026-11-12/README.md) checks FEMA, NIST, the 2004 presentation notice and the 2006 publisher abstract, including the scope of NIST’s inventory statement. The authentic proceedings edition, Figure 13 source files, full 2006 paper and remaining report claims remain open.

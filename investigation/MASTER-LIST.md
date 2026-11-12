@@ -306,3 +306,7 @@ A [judicial-record check](broader-evidence/scooby-insurance-judicial-check-2026-
 ### Planning-account dependency: five-row check
 
 The recovered dependency table’s citations to the Commission distinguish interrogation-dependent planning detail from travel and transaction histories. The Commission’s cited KSM accounts differed on the proposed approval date; its financing monograph describes four transfers totaling $10,389.81, but the underlying receipts have not been checked in this pass. See the [five-row source check](broader-evidence/scooby-dependency-five-row-check-2026-11-12/README.md); no UMS connection follows from these citations.
+
+### Corroded steel: original-source limits
+
+The [corrosion provenance check](broader-evidence/scooby-corrosion-provenance-check-2026-11-12/README.md) compares FEMA’s qualified specimen attribution and unknown corrosion rate with NIST’s statement about its own inventory and the later authors’ rubble-fire interpretation. Neither publication establishes a unique sulfur source or direct exposure timestamp; specimen and experimental records remain open.
