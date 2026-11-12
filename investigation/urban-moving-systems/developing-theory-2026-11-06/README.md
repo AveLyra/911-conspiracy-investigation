@@ -240,3 +240,7 @@ Published analyses describe emergency-fuel infrastructure and a conditional Trus
 ### Visitor-card comparison and access-data scope
 
 The visitor card remains a concrete lead requiring issuer, holder and event records. NIST and NYC Health documents describe badge-holder rosters, while an E-J executive reported an FBI download of an offsite security backup. A roster is not an entry log, and the backup’s exact contents and custody have not been established; neither source currently ties UMS or Max to a WTC job. [Source check](../../broader-evidence/scooby-wtc-badge-lineage-check-2026-11-12/README.md).
+
+### FBI affiliation inquiry and foreknowledge
+
+An FBI polygraph communication reports different examiner interpretations for questions about prior knowledge and intelligence affiliation; the associated test materials and identities remain redacted. Another interview communication records investigators’ suspicions and their uncertainty about the reason for perceived deception. These are reasons to seek the underlying files and headquarters assessment, not proof of affiliation or an infallible exclusion of foreknowledge. [Original-page check](../../broader-evidence/scooby-ums-polygraph-interview-check-2026-11-12/README.md).

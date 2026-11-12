@@ -94,3 +94,5 @@ A [January/July routing source check](../scooby-cir-routing-source-check-2026-11
 A [Truss 2 table source check](../scooby-truss2-table-check-2026-11-12/README.md) verifies selected recovered report-30 entries on tank capacity, post-collapse tank condition, conditional protection modeling, the computational endpoint and calculated connection forces. Historical member protection, native model cases, primary fuel receipts and remaining report claims remain open.
 
 A [badge and backup lineage check](../scooby-wtc-badge-lineage-check-2026-11-12/README.md) checks selected recovered report-18 claims against NIST, the NYC health-registry manual and contemporary E-J accounts. The roster and reported FBI backup remain distinct; no cardholder or event match has been established. Remaining report claims and attachments are open.
+
+An [FBI interview and polygraph original-page check](../scooby-ums-polygraph-interview-check-2026-11-12/README.md) compares Serials 339, 368 and 459, preserves Serial 368’s date inconsistency and limits the agents’ inferences and the redacted-identity join. Test records, withheld pages and the final headquarters assessment remain open.

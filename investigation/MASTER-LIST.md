@@ -326,3 +326,7 @@ The [Truss 2 source check](broader-evidence/scooby-truss2-table-check-2026-11-12
 ### WTC badge records and reported offsite backup
 
 The [badge lineage check](broader-evidence/scooby-wtc-badge-lineage-check-2026-11-12/README.md) confirms two reported agency roster transfers and a contractor’s account of an FBI backup download. Neither identifies the visitor-card holder, establishes an entry event, or proves temporary-card coverage in the records actually retained.
+
+### UMS interview and polygraph records
+
+The [original-page check](broader-evidence/scooby-ums-polygraph-interview-check-2026-11-12/README.md) separates examiner interpretations, agents’ interview suspicions and the deleted substance of a later New York communication. Redactions and the limits of polygraph interpretations preclude treating these as an established affiliation or a conclusive foreknowledge finding.
