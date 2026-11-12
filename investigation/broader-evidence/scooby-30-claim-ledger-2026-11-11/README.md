@@ -61,6 +61,8 @@ An [experimental-benchmark check](../scooby-orabi-experiment-claims-2026-11-11/R
 
 A [visitor-card and Zim body check](../scooby-zim-card-body-checks-2026-11-11/README.md) checks the pre-attack relocation announcement, a post-attack September 4 opening account, a Norfolk city report and the limited archival locator. The sources do not identify the mover or the visitor-card holder.
 
+A [recovered Bayoumi source check](../scooby-bayoumi-recovered-claims-2026-11-11/README.md) compares the 2005 and 2017 agency assessments, the 2016 call report and the evidence for apartment reimbursement. The Joint Inquiry records an FBI statement finding no bank documentation of the payment; that is not necessarily inconsistent with the OIG’s cash-deposit inference. Remaining report claims and attachments are open.
+
 ## What would advance this audit
 
 Expand every row into distinct material claims with exact page or exhibit locators, inspect each cited original and material contrary record, independently reproduce numerical claims, and record inaccessible source dependencies. Check report attachments and current project records separately. Do not equate the initial 30 selected rows or the limited checks above with completion of that work.

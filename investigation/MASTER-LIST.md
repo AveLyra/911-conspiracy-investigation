@@ -270,3 +270,7 @@ The [Choe and Dai source check](broader-evidence/scooby-orabi-experiment-claims-
 ### Zim relocation and card: source comparison
 
 The [recovered-body check](broader-evidence/scooby-zim-card-body-checks-2026-11-11/README.md) adds a September 18 opening account and a Norfolk city report while keeping the pre-attack April announcement, remaining-staff account, unidentified carrier and unresolved cardholder distinct.
+
+### Bayoumi: source and reimbursement qualifications
+
+The [source comparison](broader-evidence/scooby-bayoumi-recovered-claims-2026-11-11/README.md) preserves the different 2005 and 2017 agency assessments and the limits of the 2016 call report. The OIG inferred apartment reimbursement from cash-deposit evidence; the Joint Inquiry also recorded a separate FBI statement finding no bank documentation of reimbursement. An unrecorded cash transfer could reconcile these observations, but original records are needed.

@@ -184,3 +184,7 @@ A [source check](../../broader-evidence/scooby-orabi-experiment-claims-2026-11-1
 ### Zim and the visitor card
 
 The April 2001 relocation announcement is independent evidence of advance planning. Later reports describe an early-September Norfolk opening, while a separate account reports remaining WTC staff and lost equipment; these do not identify the physical mover. The visitor-card receipt remains a critical lead, but does not establish its holder, entry or a moving job. [Source check](../../broader-evidence/scooby-zim-card-body-checks-2026-11-11/README.md).
+
+### Bayoumi support and remaining causal links
+
+The [source comparison](../../broader-evidence/scooby-bayoumi-recovered-claims-2026-11-11/README.md) supports separating Bayoumi’s documented housing assistance, the 2017 intelligence-affiliation report and claims of attack knowledge or CIA direction. The OIG inferred reimbursement from contemporaneous cash deposits, while a separate FBI account reported no bank documentation of reimbursement; neither directly traces the cash. These records do not establish a bridge to UMS.

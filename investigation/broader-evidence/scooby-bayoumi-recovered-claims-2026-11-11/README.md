@@ -1,0 +1,31 @@
+# Bayoumi: recovered report claims checked against government records
+
+11 November 2026. This reviews selected claims from the recovered body and table of Scooby report 6. It is not a complete claim-by-claim review of that report or its attachments. An intelligence document's assertion is evidence of what an agency reported or assessed, not independent proof of every underlying event.
+
+## Affiliation and what the different assessments say
+
+The [September 1, 2005 FBI–CIA executive summary](https://www.cia.gov/static/02ca03957729ccbd47d46405577cf604/Executive-Summary-of-Joint-FBI-CIA-Report-on-Extent-of_Saudi-Government-Support-for-Terrorism.pdf#page=2) states that the agencies had no information indicating that Bayoumi or Bassnan were Saudi intelligence officers or wittingly materially supported the hijackers, and says the agencies had no evidence that the Saudi government or royal family knowingly supported the attacks. The same summary also describes evidence of support by official Saudi entities and associated organizations for some individuals involved in terrorism-related activity; these statements answer different questions.
+
+The June 14, 2017 FBI communication, [preserved as a six-page reproduction](https://911familiesunited.org/wp-content/uploads/2022/07/Bayoumi-is-GIP-Cooptee.pdf), reports a paid Saudi intelligence relationship and describes reporting through an intermediary. The [earlier visual audit](../scooby-ums-saudi-claim-checks-2026-11-11/README.md) inspected that communication. Its redactions limit assessment of source access, reliability and the provenance of the underlying allegation. The difference between the 2005 and 2017 assessments is material; the documents do not themselves show whether the later conclusion arose from new evidence, reassessment, a different source or terminology, or some combination. A cited 2017 conclusion does not establish contemporaneous CIA direction or Bayoumi's knowledge of an attack.
+
+## A reported call and the scope of corroboration
+
+The [April 4, 2016 FBI Encore communication](https://www.govinfo.gov/content/pkg/GOVPUB-J1_14-PURL-gpo159739/pdf/GOVPUB-J1_14-PURL-gpo159739.pdf#page=10), printed pp. 10–11, reports an unidentified caller in Malaysia **or Indonesia** seeking Thumairy shortly before the men's arrival. The recipient and cited source information are redacted. This establishes that the allegation was recorded by that date; it does not establish a particular caller, an exact call date, a specific telephone-number pair, or that a later confidential-source account is independent of it. The full underlying call record and the later source's original debrief remain uninspected in this check.
+
+The communication also reports communications analysis concerning other calls. Those reported connections merit examination on their own terms; a call record can identify an instrument, time and duration without proving the caller's identity, conversation or purpose. Investigators' or litigants' conclusions about a caller must be distinguished from the underlying call records.
+
+## Apartment assistance and the reimbursement inference
+
+The [DOJ Inspector General report, chapter 5 and note 193](https://oig.justice.gov/sites/default/files/archive/special/s0606/chapter5.htm), reports that Bayoumi co-signed the lease, provided a cashier's check for rent and deposit, and was reimbursed. It cites a same-day cash deposit of **$1,558** into his account and a separate **$9,900** cash opening deposit by Mihdhar within seven minutes, which the report says suggests the men were at the bank together. These entries are circumstantial evidence for reimbursement; the OIG's account does not itself identify the source of the deposited cash by a direct transfer record.
+
+The [congressional Joint Inquiry report](https://www.govinfo.gov/content/pkg/GPO-CRPT-107srpt351/pdf/GPO-CRPT-107srpt351.pdf) presents two FBI accounts: one inferred reimbursement from the matching same-day cash deposit; another said a review of Hazmi's and Mihdhar's bank records found no bank documentation of reimbursement or other payments to Bayoumi. These statements need not be logically incompatible—a cash handoff could leave no account-to-account transfer—but neither statement independently traces the source of the cash. The original bank records, check and underlying FBI analyses remain important. Do not turn either the lack of a documented transfer or the matching deposit into a conclusive finding about every payment.
+
+## Operational allegation and competing explanation
+
+The Canestraro declaration attributes a CIA-directed recruitment allegation to a confidential source. That is evidence that the declaration records the allegation; identifying a source as confidential does not by itself validate its access, prove independence from other accounts, or authenticate the operational records the source described. The separate 2016 call report and 2017 Saudi-intelligence assessment do not, by themselves, establish a CIA recruitment order, a joint UMS operation, or foreknowledge of the attacks.
+
+The competing explanations remain open: genuine Saudi intelligence collection or other Saudi-linked assistance could coexist with unwitting hospitality, knowing support by individuals, or a recruitment effort. They have different evidentiary requirements. The [2021 FBI closure assessment](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-section-2-b-ii-part-01-of-01/at_download/file) and [August 2025 civil jurisdiction ruling](https://www.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011182.pdf) use different records and legal questions and should not be conflated. The source check here does not resolve their differences or establish liability.
+
+## Open checks
+
+Obtain and examine the 2002 FBI analyses and original bank/lease records; the 2016 source report and underlying call detail; the full 2017 confidential-source interview and source-validation materials; the source history behind the 2017 affiliation assessment; and any authenticated operational or liaison records. The financial-disc and military-commission discovery assertions in the recovered report were not independently audited in this pass.
