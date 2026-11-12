@@ -170,3 +170,5 @@ A [source check](../../broader-evidence/scooby-dependency-candidate-audit-2026-1
 ### DEA incident and UAF source limitations
 
 A [source check](../../broader-evidence/scooby-dea-uaf-visible-candidate-audit-2026-11-11/README.md) separates the DEA compilation’s reported airfield incident from unlocated underlying police and military records. It finds no established connection from that incident to UMS or the hijackers. UAF Figure 3.14’s visible label agrees with its caption, though an earlier layer audit found a conflicting underlying raster label; neither proves the section assigned in the native model.
+
+The DEA compilation reports substantial account activity and interagency referrals in a Tampa art-selling inquiry, but neither the sums nor the referrals establish intelligence financing or a UMS connection. Its account of two late-February police encounters has an internal date-order conflict; the underlying records are needed to resolve it. [Source check](../../broader-evidence/scooby-dea-uaf-visible-candidate-audit-2026-11-11/README.md).
