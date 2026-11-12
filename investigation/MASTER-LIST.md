@@ -362,3 +362,7 @@ The [original-page check](broader-evidence/scooby-exxon-output-source-check-2026
 ### UAF model inputs and competing descriptions
 
 The [UAF source check](broader-evidence/scooby-uaf-lineage-source-check-2026-11-12/README.md) distinguishes its reported counterfactual coefficient, visible figure label and imposed collapse scenario from the still-unverified executed model files. NIST describes materially different boundary conditions in its partial-floor and 16-story analyses.
+
+### Able Danger and Odigo: distinct warning chains
+
+The [provenance check](broader-evidence/scooby-able-odigo-source-check-2026-11-12/README.md) documents both reported data destruction and oversight findings against the alleged pre-9/11 Atta identification. Contemporary Odigo reporting describes a nonspecific message; its native message and FBI disposition remain unavailable. No shared operation or UMS link follows from these records.

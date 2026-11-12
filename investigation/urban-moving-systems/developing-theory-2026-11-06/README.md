@@ -276,3 +276,7 @@ The FBI sought enhanced images of two white vans and reported minimal improvemen
 ### WTC 7 model lineage and discriminating tests
 
 UAF reports an increased thermal-expansion input in one counterfactual and a prescribed core/exterior failure sequence with a time-dependent resistance function in its matched-motion scenario. NIST describes differences between its partial-floor and 16-story model assumptions. The exact executed-job lineage and independent baseline tests remain necessary; matching motion under prescribed failures does not identify the physical cause of those failures. [Source check](../../broader-evidence/scooby-uaf-lineage-source-check-2026-11-12/README.md).
+
+### Warning claims and source independence
+
+Able Danger records destruction and competing witness recollections warrant preservation, while the DoD IG and Senate staff reported that their reviews did not substantiate a pre-attack hijacker identification. Odigo is a separate warning claim whose original message and sender disposition remain unverified. Neither chain establishes a UMS connection or coordination between the alleged operations. [Source check](../../broader-evidence/scooby-able-odigo-source-check-2026-11-12/README.md).
