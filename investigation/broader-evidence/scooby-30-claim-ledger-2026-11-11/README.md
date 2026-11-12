@@ -69,6 +69,8 @@ A [headquarters source-page check](../scooby-ums-hq-visit-originals-2026-11-12/R
 
 A [Classic original-page check](../scooby-classic-original-pages-2026-11-12/README.md) verifies the computer-labeled phone list and limits the 1B25-to-1B4 mapping: the return memo groups identifiers but does not unambiguously establish the recovered report’s parent-child arrow. The notebook/computer join and Miami predicate remain open.
 
+A [Korol numerical check](../scooby-korol-recovered-arithmetic-2026-11-12/README.md) independently executes the recovered report’s core energy and sensitivity calculations against the original paper. Its experimental-provenance and physical-path claims, other report content and attachments remain open.
+
 ## What would advance this audit
 
 Expand every row into distinct material claims with exact page or exhibit locators, inspect each cited original and material contrary record, independently reproduce numerical claims, and record inaccessible source dependencies. Check report attachments and current project records separately. Do not equate the initial 30 selected rows or the limited checks above with completion of that work.

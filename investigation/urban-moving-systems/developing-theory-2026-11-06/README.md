@@ -200,3 +200,7 @@ The [FBI pages](../../broader-evidence/scooby-ums-hq-visit-originals-2026-11-12/
 ### Classic lead and source boundaries
 
 The [original pages](../../broader-evidence/scooby-classic-original-pages-2026-11-12/README.md) separately report a Classic number in a seized notebook and show a computer-labeled list with “Classic International.” The sources do not yet join those artifacts, prove a call, or identify the alleged hijacker-customer. A reported identifier grouping does not alone prove the notebook-to-package mapping.
+
+### Energy-balance sensitivity
+
+A [reproduced Korol calculation](../../broader-evidence/scooby-korol-recovered-arithmetic-2026-11-12/README.md) yields a narrow negative energy balance under the stated idealized assumptions, with its sign changing when assigned slab work is reduced by 1%. The paper’s five-floor figure also differs from a calculation using its printed inputs. These are model and arithmetic checks, not proof of the actual collapse path or explosives.

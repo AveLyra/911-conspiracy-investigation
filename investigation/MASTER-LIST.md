@@ -286,3 +286,7 @@ The [original-page check](broader-evidence/scooby-ums-hq-visit-originals-2026-11
 ### Classic phone-list and notebook records
 
 The [source-page check](broader-evidence/scooby-classic-original-pages-2026-11-12/README.md) verifies the separately labeled computer phone list and narrows an asserted 1B25/1B4 mapping. The notebook digits, actual call, historical subscriber, Miami customer and attachment contents remain unestablished.
+
+### Korol arrest calculation
+
+The [reproducible arithmetic check](broader-evidence/scooby-korol-recovered-arithmetic-2026-11-12/README.md) confirms the sensitivity of the idealized Storey 11 energy balance and a five-floor arithmetic inconsistency under the paper’s stated inputs. Actual component engagement, model geometry and the laboratory-to-building extrapolation remain unverified.
