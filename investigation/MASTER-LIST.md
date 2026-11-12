@@ -252,3 +252,7 @@ The [UMS access and debris-record follow-up](urban-moving-systems/debris-and-acc
 ### Detainee-source dependency and report wording
 
 The [candidate audit](broader-evidence/scooby-dependency-candidate-audit-2026-11-11/README.md) distinguishes independently documented access limitations and Iraq-related wording changes from unproven editorial influence. It does not verify the inaccessible five-row audit table or every cited interrogation record.
+
+### DEA incident evidence and UAF model lineage
+
+The [DEA and UAF visible-claim review](broader-evidence/scooby-dea-uaf-visible-candidate-audit-2026-11-11/README.md) separates the reported Volk Field incident from original local records and corrects the UAF Figure 3.14 description: the visible W21 label matches its caption; an earlier audit reported a different label in the covered raster layer. Native section assignment is unresolved.

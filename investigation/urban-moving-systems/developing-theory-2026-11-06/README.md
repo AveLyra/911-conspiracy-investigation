@@ -166,3 +166,7 @@ A [new set of source checks](../../broader-evidence/scooby-seven-claim-checks-20
 ### Detainee-source and editorial dependencies
 
 A [source check](../../broader-evidence/scooby-dependency-candidate-audit-2026-11-11/README.md) confirms that the Commission reported limited access to detainees and interrogators, and documents a June-to-July Iraq/al-Qaeda wording difference. Neither demonstrates a directed cover-up or resolves individual detainee-derived claims; corroboration and the context of each interview must be examined separately.
+
+### DEA incident and UAF source limitations
+
+A [source check](../../broader-evidence/scooby-dea-uaf-visible-candidate-audit-2026-11-11/README.md) separates the DEA compilation’s reported airfield incident from unlocated underlying police and military records. It finds no established connection from that incident to UMS or the hijackers. UAF Figure 3.14’s visible label agrees with its caption, though an earlier layer audit found a conflicting underlying raster label; neither proves the section assigned in the native model.
