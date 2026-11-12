@@ -108,3 +108,5 @@ A [sample transfer-reference check](../scooby-van-transfer-reference-check-2026-
 A [Flight 77 recorder-channel page check](../scooby-aa77-recorder-channel-check-2026-11-12/README.md) visually verifies the NTSB parameter categories, recorder format and its 09:37:44 last-data timestamp alongside the flight-path study’s 09:37:45 impact time. Native channel configuration and clock-correlation records remain open.
 
 A [tower comparison-table check](../scooby-nist-comparison-check-2026-11-12/README.md) confirms the 43-versus-56-minute WTC 2 comparison and qualitative tilt output, and records the final report’s approximately 20° versus 25° late-tilt wording as unresolved. Model inputs, visual measurements and remaining report-27 claims remain open.
+
+An [Exxon tape and output source check](../scooby-exxon-output-source-check-2026-11-12/README.md) visually checks the referral and lab routing, distinguishing five print sets/six discs from unique images or full video copies and the separate conditional match memo from a final identification. The native media, clock and other report-11 claims remain open.

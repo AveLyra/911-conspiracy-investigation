@@ -354,3 +354,7 @@ The [NTSB source check](broader-evidence/scooby-aa77-recorder-channel-check-2026
 ### Tower-model comparison and tilt descriptions
 
 The [NIST comparison check](broader-evidence/scooby-nist-comparison-check-2026-11-12/README.md) confirms that NIST reported WTC 2 modeled instability at 43 minutes against observed initiation at 56 minutes. Its final report gives approximately 20° and 25° in two late eastward-tilt descriptions; the measurement basis of that difference is unresolved.
+
+### Exxon tape: output count and conditional comparison
+
+The [original-page check](broader-evidence/scooby-exxon-output-source-check-2026-11-12/README.md) distinguishes the lab’s five print sets and six discs from unique frames or full recordings. The separate FBI memo describes a possible vehicle match; specimen linkage, final identification and clock calibration remain open.

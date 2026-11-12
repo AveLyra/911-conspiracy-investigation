@@ -268,3 +268,7 @@ NTSB classified pressure altitude as validated and flight-deck-door state as not
 ### Tower-model calibration and comparison
 
 NIST used photographic bowing in model selection and reconstruction, so matching that same feature is not fully independent validation. Its comparison table reports WTC 2 instability at 43 minutes versus observed initiation at 56 minutes and gives qualitative modeled tilt direction. Two late-tilt descriptions differ by about five degrees; underlying measurements and a controlled sensitivity test are needed to assess that discrepancy. These limitations do not themselves establish explosives. [Source check](../../broader-evidence/scooby-nist-comparison-check-2026-11-12/README.md).
+
+### Exxon surveillance comparison
+
+The FBI sought enhanced images of two white vans and reported minimal improvement. A separate memo described a possible match, conditional on vehicle identity and timing; the released pages do not establish either or independently calibrate the recorder clock. The native tape, outputs and comparison records remain necessary to test the lead. [Source check](../../broader-evidence/scooby-exxon-output-source-check-2026-11-12/README.md).
