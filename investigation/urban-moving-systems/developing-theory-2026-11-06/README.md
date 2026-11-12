@@ -192,3 +192,7 @@ The [source comparison](../../broader-evidence/scooby-bayoumi-recovered-claims-2
 ### Van samples: inventory versus chemical findings
 
 The [FBI property pages](../../broader-evidence/scooby-van-original-property-check-2026-11-11/README.md) list sample and control descriptions under three barcodes and report their later destruction/disposal. Their descriptive wording does not establish a positive or negative explosives result, laboratory testing, or concealment. Accession and analytical records remain open.
+
+### Headquarters inquiry: original records
+
+The [FBI pages](../../broader-evidence/scooby-ums-hq-visit-originals-2026-11-12/README.md) document a headquarters visit and a separately described inquiry into possible intelligence connections. They are stronger evidence of investigative attention than the recovered chat could establish, but do not prove that the visit and inquiry were the same, what the final assessment found, or that UMS had attack foreknowledge or a Saudi connection.

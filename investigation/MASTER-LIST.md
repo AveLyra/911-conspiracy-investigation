@@ -278,3 +278,7 @@ The [source comparison](broader-evidence/scooby-bayoumi-recovered-claims-2026-11
 ### Van-sample property evidence
 
 The [original-page comparison](broader-evidence/scooby-van-original-property-check-2026-11-11/README.md) maps the sample and control descriptions to three barcodes and documents the 2014 reported destruction/disposal. It does not supply chemical results, laboratory accessions, separate execution dates or a motive.
+
+### FBI headquarters visit and inquiry records
+
+The [original-page check](broader-evidence/scooby-ums-hq-visit-originals-2026-11-12/README.md) documents the August 2002 headquarters visit and expected report, the separate April 2002 analytical-inquiry description, and the redacted pending HQ matter in April 2004. It preserves the missing links between these records and does not infer an affiliation conclusion.
