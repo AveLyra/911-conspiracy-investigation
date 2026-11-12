@@ -208,3 +208,7 @@ A [reproduced Korol calculation](../../broader-evidence/scooby-korol-recovered-a
 ### Intelligence warnings and decision knowledge
 
 The [source check](../../broader-evidence/scooby-pdb-summer-source-check-2026-11-12/README.md) confirms a mixed summer 2001 warning stream and the August 6 domestic-threat brief, including uncorroborated elements. These records strengthen the case for examining the government’s response to warnings; they do not establish advance knowledge of the specific attacks or coordination with UMS.
+
+### Warning distribution: refined evidentiary boundary
+
+The Commission’s PDB review recorded a large difference in the share of selected terrorism-related articles substantially reproduced in broader intelligence products: 55/255 in 1998–2000 and 41/50 before September 11, 2001. This makes the content and routing of specific warnings worth investigating. It does not show who actually received or read an item, why an item differed, or that any official knowingly withheld actionable attack details. Original matched products, distribution lists, receipt records and the decisions surrounding particular warnings are needed to test deliberate withholding against routine editorial and security explanations. [Source and denominator check](../../broader-evidence/scooby-pdb-summer-source-check-2026-11-12/README.md#commission-review-overlap-counts-and-release-inventory).

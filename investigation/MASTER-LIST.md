@@ -294,3 +294,7 @@ The [reproducible arithmetic check](broader-evidence/scooby-korol-recovered-arit
 ### CIA warning-product checks
 
 The [June–August PDB comparison](broader-evidence/scooby-pdb-summer-source-check-2026-11-12/README.md) records overseas and unspecified threats alongside the August 6 domestic warning, with redactions, corroboration limits and the difference between product content and demonstrated receipt. It does not establish the 9/11 operational plan or a UMS connection.
+
+### Commission warning-product comparison: checked denominators
+
+The Commission’s [February 2004 review](https://www.archives.gov/files/declassification/iscap/pdf/2022-008-document-release-508.pdf) reports 55/255 selected 1998–2000 PDB articles substantially overlapping NID/SEIB articles and 41/50 selected pre-9/11 2001 PDB articles overlapping SEIB articles. These are selected-corpus content comparisons, not delivery receipts or evidence of a particular official’s knowledge. Its search and counting choices, alternative overall count and remaining original-record needs are documented in the [source check](broader-evidence/scooby-pdb-summer-source-check-2026-11-12/README.md#commission-review-overlap-counts-and-release-inventory).
