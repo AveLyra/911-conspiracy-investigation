@@ -27,3 +27,6 @@ publication/image-recovery-2026-10-13/additional-local-research/** filter=lfs di
 
 # Native media preserved from the transferred Sherlock folder.
 publication/sherlock-mounted-preservation-2026-10-13/media/** filter=lfs diff=lfs merge=lfs -text
+
+# Store this reconciliation snapshot's small chat PDFs as Git blobs when LFS is unavailable.
+research/scooby-chatgpt-project-reconciliation-2026-11-12/chat-attachments/**/*.pdf -filter -diff -merge -text
