@@ -10,7 +10,7 @@ This directory preserves raw conversation-history responses returned by the conn
 - The Project history listing showed 117 unarchived Scooby chats. **52** full chat records are retrieved; **65** remain pending in the index. One attempted read returned “No Codex thread found”; it remains pending and requires another access path.
 - The Sources panel showed **36 uploaded result files** and **101 saved original-response entries**. All 36 file payloads were downloaded and preserved byte-for-byte. They have 34 unique SHA-256 values; two exact duplicate-content pairs are retained under both original names and identified in the manifest.
 - The 101 saved-response titles and dates are indexed. Their underlying conversation messages are preserved as each available chat transcript is retrieved; the index does not itself substitute for missing transcript content.
-- History pagination through the unarchived list is complete; it returned 117 chats assigned to Scooby. Archived history has been scanned through at least 1,000 entries with no Scooby-assigned matches; verify the final pagination boundary before asserting the archived list is exhausted.
+- History pagination through the unarchived list is complete; it returned 117 chats assigned to Scooby. Archived-history pagination is complete: 1,052 entries were listed and none were assigned to Scooby.
 
 ## Record limits
 
