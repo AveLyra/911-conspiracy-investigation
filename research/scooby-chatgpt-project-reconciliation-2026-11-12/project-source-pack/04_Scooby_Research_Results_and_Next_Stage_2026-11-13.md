@@ -90,11 +90,11 @@ The chat reports a separate Senate Armed Services Committee record, S. Hrg. 109-
 3. **R13:** Published-method audit is complete. Further quantitative/timing work depends on raw sample records and independently mapped USGS specimens.
 4. Keep each project's claim distinct: particle abundance does not identify formation mechanism; commercial/procurement advantage does not establish preattack participation; documentary call timing does not identify a caller; export fields do not prove aircraft installation; component experiments do not settle historic building behavior.
 
-## Pro model availability observation
+## Initial Pro picker notice and completed retries
 
-In the Scooby GPT-6 model picker, moving the power setting to **Pro** displayed **“Locked — Usage limit reached.”** The selected GPT-6 setting was restored to **High**. No plan changes, credits, or other access settings were changed. If the account later permits Pro selection, verify the picker before using it; do not describe a High run as Pro.
+The first picker attempt displayed **“Locked — Usage limit reached”** when set to Pro. On retry, GPT-6 at Pro was visibly selected and completed substantive R25 and R13 research turns (about 6m45s for R25; the R13 elapsed time was not recorded). No Deep Research run was started and no plan, credit, or account setting was changed. The initial notice therefore did not prevent these later Pro turns from completing; the observed picker state and actual completed runs are both preserved here.
 
-## Pro retry and next-stage run
+## R25 Pro verification run
 
 After the user reported that Pro was available manually, GPT-6 at Pro was selected in the existing R25 Scooby chat and a substantive follow-up was submitted. The run completed in 6m45s. A usage-limit notice was visible in the picker before applying the Pro setting, but the completed substantive turn is direct evidence that Pro worked for this run. No Deep Research was initiated.
 
