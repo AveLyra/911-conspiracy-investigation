@@ -374,3 +374,106 @@ The [provenance check](broader-evidence/scooby-able-odigo-source-check-2026-11-1
 ### Scooby: 30-report inventory and priority review
 
 [Inventory and evidence priorities](broader-evidence/scooby-30-priority-inventory-2026-11-12/README.md) maps all 30 captured report titles to existing source checks. Missing original records and unreviewed attachments remain explicit; the highest-value tests concern WTC access and jobs, FBI affiliation and laboratory outcomes, and the Classic and CIA routing trails.
+
+
+### Classic custody correction — November 12
+
+[FBI section 5, PDF p. 132](https://archive.org/download/DancingIsraelisFBIReport/fbi%20report%20section%205.pdf#page=132) contains a handwritten `1B25 E01889034 = 1B4 E01889578` cross-reference. This resolves the earlier claim that no explicit documentary crosswalk had been located; the annotation’s author, timing and exact administrative meaning remain unknown. It does not identify the Classic notebook entry, writer or any call. See the [corrected source check](broader-evidence/scooby-classic-original-pages-2026-11-12/README.md).
+
+### SEC newsletter arithmetic discrepancy — November 12
+
+The [SEC records provided to the 9/11 Commission](https://www.sec.gov/files/records-provided-9-11-commission.pdf) state that two groups purchased 388 and 365 contracts but report their combined total as 763. The stated components sum to **753**, a discrepancy of ten contracts. The original purchaser records are needed to identify whether the error is in a component or the printed total; the discrepancy alone does not establish suspicious trading or foreknowledge. The November 12 Scooby reconciliation also keeps the unrelated hedge fund loss separate from the principal investment adviser.
+
+### Zim follow-up: additional archival locators (unverified)
+
+The November 12 [Scooby follow-up](https://chatgpt.com/g/g-p-6aed53a21aec8191b9aab8307b9c8e49/c/6af650e1-2aa0-83ea-b65b-09a8146343d6) reports Library of Virginia accession 40168, Series II, Box 2, Folder 15, and accession 40173, Box 137, Folder 1, and Box 124, Folder 10 as potential project and announcement folders. This pass did not independently verify the catalog entries or inspect folder contents. The follow-up reports no qualifying carrier transaction; these locators do not establish that UMS or Max moved Zim.
+
+### Scooby source pack: alleged ISI-directed payment — November 13
+
+The pack’s R27 research identifies an October 2001 allegation of an ISI-directed $100,000 transfer as a report based on unnamed sources, not an authenticated instruction or transaction. As an alternative documented financing trail, the [9/11 Commission staff monograph, printed pp. 134–135](https://www.9-11commission.gov/staff_statements/911_TerrFin_Monograph.pdf#page=136), attributes $114,500 sent to Atta and al-Shehhi to five transfers from Ali Abdul Aziz Ali. That account combines records and witness statements; it does not by itself prove how the earlier allegation arose or exclude every other transaction. The alleged order, sender and transfer require independent source and bank records. The full source-pack reconciliation is ongoing.
+
+### Scooby source-pack reconciliation: R29–R38
+
+The [working register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md) compares ten result files with existing investigation claims, including the evidence-label discrepancy, card provenance, headquarters inquiry, licensing and routing gaps. Research-reported request acknowledgments are historical, not verified live search outcomes. Other pack results, transcripts and attachments remain to be reconciled.
+
+The [Scooby pack working register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md) now also summarizes results R17–R28 and R40–R49, distinguishing repeated files, original records and unresolved gates. Transcript and attachment reconciliation remains incomplete.
+
+The [Scooby pack register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#six-attached-source-extracts-initial-reconciliation) now compares the six attachment extracts at topic level. Individual claims and the chat transcripts still require reconciliation.
+
+The [Scooby transcript comparison](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#transcript-comparison-chats-116) now covers chats 1–16 of 117 against their corresponding existing research checks. Embedded reports and original sources retain the limits documented there.
+
+The [Scooby reconciliation register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#transcript-triage-chats-1747) adds preliminary transcript-summary triage for chats 17–47, including the separate propagation, telephone and media-authentication leads. Full transcript and source checking remains open.
+
+### Bayoumi notepad: court finding and limits
+
+The [August 28, 2025 jurisdictional decision, ECF 11182, pp. 28–29, 41 and 44](https://www.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011182.pdf) describes the notepad, Bayoumi’s handwriting and competing interpretations; the court treated the drawing as part of its circumstantial assessment while recognizing disputed meaning and the preliminary procedural posture. That is stronger than merely noting a plaintiffs’ allegation, but does not establish the sketch’s date, intended use, communication to hijackers or any UMS connection. The full exhibit and original receipt remain separate provenance targets. The transcript’s numerical calculation and exhibit crosswalk have not been independently reproduced in this pass.
+
+### Bush Library release: historical access correction
+
+The earlier assertion that the actual 2025-0218-F messages had not been obtained describes the earlier search only. A local `2025-0218-F.zip` contains a released ARMS 1 email titled “Defense Protective Service (DPS) Security Notice” whose text references Universal Art in Miami. The package was inspected locally for this correction. The notice is a reported security lead, not an originating Miami incident report or evidence of a UMS or hijacker connection; remaining released items and their context need full reconciliation.
+
+### Bush Library ARMS 1: further package inspection
+
+The locally supplied `2025-0218-F.zip` contains two two-page redacted ARMS PDF renderings of a March 5, 2002 Fleischer-to-McCormack email forwarding an Associated Press article about deportations and espionage allegations, plus the separately released Defense Protective Service notice discussed above. The two PDF renderings are related federal/presidential versions of the same email, not independent intelligence reports. The email requests guidance on reporting after the attacks; it does not establish a pre-attack UMS operation or coordination. Redactions and uninspected underlying agency records limit conclusions. Exchange withholding slips contain subject metadata but do not disclose the withheld messages’ substantive contents.
+
+The [Scooby reconciliation register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#chats-4854-transcript-body-pass) documents the chat 49 Flight 93 caller-label lead and distinguishes prompt-extraction troubleshooting and research launches from substantive evidence. The relevant original court screen remains to be checked.
+
+The [Scooby pack register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#chats-5585-transcript-availability-comparison) distinguishes research-start notices from chat 84’s substantive embedded reports; those reports still need full reconciliation.
+
+### Notebook examination versus explosives chemistry
+
+Chat 84 identifies laboratory report **020924003 LV**, dated September 26, 2002, as a questioned-document examination of notebook specimens, and identifies the associated September 24 submission as missing. That report must not be substituted for a final chemical examination of the separately numbered fabric or blanket samples. The [FBI section 6 scan, PDF pp. 36–37](https://archive.org/download/DancingIsraelisFBIReport/fbi%20report%20section%206.pdf#page=36), is the cited original; this reconciliation visually examined both pages: the unit could not determine whether the same writer prepared all text, reported indented writing on Q1.2, and recorded images of Q1.3–Q1.6. These are document-examination findings, not a chemical test. Controls under E01889036 do not establish that the detainees possessed bomb suits.
+
+The [Scooby pack register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#chats-8688-available-response-comparison) compares the planning, laboratory-locator and Classic updates in chats 86–88. The computer list and notebook entry remain distinct, and the laboratory transfer candidate is not a chemical result.
+
+The [Scooby register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#chats-8993-successive-response-comparison) now compares chats 89–93, including superseded evidence-disposition claims and the corrected six-page Philadelphia serial 357. Original chemistry results and the final headquarters assessment remain missing.
+
+The [Scooby register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#chats-94105-available-response-comparison) compares the available responses in chats 94–105 with the existing theory; linked reports and underlying evidence are not yet fully reconciled.
+
+The [Scooby register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#chats-106117-available-response-comparison) compares available responses in chats 106–117, including the later receipt of the Bush Library files. It does not certify a complete review of embedded reports or attachments.
+
+The [Scooby register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#chat-84-three-recovered-rendered-supplements) compares the visitor-card, licensing and Saudi rendered supplements. It preserves the card-holder and date gaps, unlocated orders, disputed media dating and the different scopes of the FBI and court assessments.
+
+The [Scooby register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#chat-84-flight-93-and-k-13-source-comparison) distinguishes the Flight 93 card-number correction from caller and timestamp attribution, and the K-13 panel identification from the separate coupon and debris chain. Full underlying originals remain to be checked.
+
+The [Scooby pack register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#attachment-integrity-check) records a successful byte-length and SHA-256 check for all six locally preserved input attachments. That integrity check does not establish their claims or complete their reconciliation.
+
+The [Scooby attachment register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#pdf-attachment-page-coverage) records page-level coverage of both preserved PDF attachments and separates topics outside UMS from the theory’s specific security claims. Citation-level verification remains open.
+
+The [Scooby register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#chats-106108-embedded-assessment-comparison) compares the central claims of the visible portions of chats 106–108 with the theory. Each plain body is truncated; rendered supplements and citations remain to be reconciled.
+
+### FBI trace attachments: historical custodian
+
+A handwritten note on the [September 17, 2001 Newark communication, section 1 PDF p. 136](https://www.themoreuknow.com/pdf/fbi%20report%20section%201.pdf#page=136), says its classified attachment was removed and held in the custody of the Newark security officer. The cover says it concerns requested traces but does not disclose the results or originating agency. This supplies a historical retrieval lead, not evidence of a positive match, current retention, or concealment of a particular result. The page was visually checked against chat 90’s rendered account.
+
+### Pennsylvania movers: FBI index results
+
+The [September 14, 2001 FBI communication, section 1 PDF p. 26](https://www.themoreuknow.com/pdf/fbi%20report%20section%201.pdf#page=26), says Universal Indices checks on two redacted names were negative; a possible name variation produced redacted file references. The page concerns UMS employees stopped in Pennsylvania. It does not reveal the referenced files’ contents, confirm a match, or establish an intelligence or hijacker connection. The page was visually checked in the Scooby reconciliation.
+
+### Hijacker-financing testimony: FBI clarification
+
+The [9/11 Commission staff financing monograph, printed p. 144, note 163](https://www.9-11commission.gov/staff_statements/911_TerrFin_Monograph.pdf#page=147), reports that the FBI clarified Assistant Director Pistole’s testimony about Pakistani accounts: the FBI said he meant the funds were traced to Khalid Sheikh Mohammed in Pakistan, and that no actual Pakistani bank accounts had been identified. This is the Commission staff’s account of a subsequent FBI clarification, not a bank-record audit or proof that no other account existed. It limits using the testimony alone to corroborate the separate alleged ISI-directed payment; that allegation still requires independent evidence.
+
+### Iraq oil-field planning: source attribution
+
+The [9/11 Commission narrative](https://www.9-11commission.gov/report/911Report_Ch10.htm) places discussion of Iraq contingencies after the attacks and attributes a possible oil-field planning detail to note 72. Its [endnotes](https://www.9-11commission.gov/report/911Report_Notes.htm) cite the September 17 NSC conclusions memorandum in note 71, but Rice’s April 2004 testimony and Woodward in note 72. This verifies the Commission’s citation chain; it does not establish the precise text of the uninspected NSC memorandum or a pre-attack decision.
+
+### Pentagon FOIA search: count and video scope
+
+In [Bingham v. DOJ, PDF p. 6](https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_05-cv-00475/pdf/USCOURTS-dcd-1_05-cv-00475-0.pdf#page=6), the court summarizes the FBI declaration: 56 of 85 potentially responsive tapes were excluded using custody/supporting documentation; the agent viewed 29, of which 16 did not show the crash site, 12 showed it after impact and one showed impact. This is the court’s account of the agency search, not evidence that 85 tapes showed the impact or that each tape’s original custody was independently reconstructed. Separately, the [official P200022 exhibit catalog](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/P200022.html) describes two impact clips, six aftermath clips and 12 still images; the exhibit and the search count use different units. The source-to-recorder chain remains a separate question.
+
+### United Defense credit dates and capacity
+
+The [August 13, 2001 credit-agreement reproduction](https://contracts.justia.com/companies/united-defense-industries-inc-64892/contract/1059558/) is dated as of August 13, while United Defense’s [2004 annual filing](https://www.sec.gov/Archives/edgar/data/1051719/000095013305000956/w06569e10vk.htm) describes a refinancing on August 31 and a facility consisting of $600 million in term loans and a $200 million revolving facility. The date difference may reflect different transaction stages but is not resolved by these texts alone. Facility capacity is not a demonstrated cash distribution, profit, or proof of advance knowledge; closing, drawdown and distribution records are needed.
+
+The [Scooby register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#chats-4854-transcript-body-pass) compares the National Park Service’s Flight 93 call attribution with chat 49’s narrower source-label question; the original court screen and attribution worksheet remain open.
+
+**Further source qualification:** The [April 8, 2004 Rice testimony transcript](https://9-11commission.gov/archive/hearing9/9-11Commission_Hearing_2004-04-08.htm) does not contain the phrase “oil fields.” The Commission cites that testimony alongside Woodward for the planning passage; the cited book page and the original NSC memorandum have not been independently inspected here. The precise origin of the oil-field detail therefore remains unresolved.
+
+### Iraq reconstruction contracting: audit of costs and oversight
+
+[GAO's July 2007 RIO I audit](https://www.gao.gov/assets/gao-07-839.pdf) documents delayed negotiations and weaknesses in award-fee administration. DOD paid nearly all of about $221 million in questioned costs, while excluding about $112 million from the fee base, reducing fees by about $5.8 million; DCAA described about $26 million as sustained cost reductions. These categories cannot be added together as stolen or recovered money. Changing requirements, funding challenges and inadequate proposals were among the factors GAO identified in the delays. The findings support scrutiny of postattack contracting and oversight; they do not themselves establish advance knowledge or participation in the attacks. See the [source-pack reconciliation](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#financial-policy-and-custody-transcript-comparison).
+
+### Scooby pack: current reconciliation scope
+
+The [source-pack register](broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md) and its disposition ledger cover 117 indexed chats, 36 result files and six input attachments. Thirty chat captures contain launch notices only; their missing final responses are not presumed absent from separately saved results. The register records later corrections, dependent sources and missing original evidence. Earlier incremental status notes below or above are historical, not a current count. This coverage is a source reconciliation, not independent verification of every historical claim, a fresh check of current request statuses, or a substitute for missing laboratory, access, routing and transaction records.

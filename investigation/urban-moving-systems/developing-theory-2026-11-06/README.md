@@ -288,3 +288,70 @@ A [selected source check](../../broader-evidence/scooby-manhattan-dispatch-sourc
 ### Source priorities after the 30-report inventory
 
 The [prioritized report review](../../broader-evidence/scooby-30-priority-inventory-2026-11-12/README.md) distinguishes evidence supporting individual leads from missing links needed for coordination or an explosives role. The WTC card, reported Classic notebook entry and FBI digital examination remain leads; none alone establishes WTC access for a UMS job, a hijacker transaction, intelligence tasking or explosive installation. Ordinary moving activity, independent investigations and post-attack policy opportunism remain alternatives to test alongside the working hypothesis. NIST’s acknowledged absence of tower-steel residue tests limits a chemical inference; it does not itself establish residues.
+
+
+### Classic evidence-custody clarification
+
+A [2002 FBI communication, section 5 p. 132](https://archive.org/download/DancingIsraelisFBIReport/fbi%20report%20section%205.pdf#page=132), carries a handwritten cross-reference between 1B25/E01889034 and 1B4/E01889578. This strengthens the evidence for an administrative link between those identifiers and corrects an earlier overly cautious assessment. It does not identify the Classic notebook entry, its writer, a telephone call, a hijacker customer or an operational relationship.
+
+### SEC newsletter arithmetic discrepancy — November 12
+
+The [SEC records provided to the 9/11 Commission](https://www.sec.gov/files/records-provided-9-11-commission.pdf) state that two groups purchased 388 and 365 contracts but report their combined total as 763. The stated components sum to **753**, a discrepancy of ten contracts. The original purchaser records are needed to identify whether the error is in a component or the printed total; the discrepancy alone does not establish suspicious trading or foreknowledge. The November 12 Scooby reconciliation also keeps the unrelated hedge fund loss separate from the principal investment adviser.
+
+### Competing financing evidence
+
+The Scooby R27 report identifies the alleged ISI-directed $100,000 transfer as unverified. The [Commission staff financing account](https://www.9-11commission.gov/staff_statements/911_TerrFin_Monograph.pdf#page=136) describes a distinct set of five transfers totaling $114,500 to Atta and al-Shehhi, attributed to Ali Abdul Aziz Ali. This is a competing documented account of funds, not proof that it generated the early allegation or that every other transfer is excluded. Neither account supplies a connection to UMS.
+
+### Bayoumi notepad: court finding and limits
+
+The [August 28, 2025 jurisdictional decision, ECF 11182, pp. 28–29, 41 and 44](https://www.nysd.uscourts.gov/sites/default/files/2025-08/03-md-01570%2011182.pdf) describes the notepad, Bayoumi’s handwriting and competing interpretations; the court treated the drawing as part of its circumstantial assessment while recognizing disputed meaning and the preliminary procedural posture. That is stronger than merely noting a plaintiffs’ allegation, but does not establish the sketch’s date, intended use, communication to hijackers or any UMS connection. The full exhibit and original receipt remain separate provenance targets. The transcript’s numerical calculation and exhibit crosswalk have not been independently reproduced in this pass.
+
+### Bush Library release: historical access correction
+
+The earlier assertion that the actual 2025-0218-F messages had not been obtained describes the earlier search only. A local `2025-0218-F.zip` contains a released ARMS 1 email titled “Defense Protective Service (DPS) Security Notice” whose text references Universal Art in Miami. The package was inspected locally for this correction. The notice is a reported security lead, not an originating Miami incident report or evidence of a UMS or hijacker connection; remaining released items and their context need full reconciliation.
+
+### Bush Library ARMS 1: further package inspection
+
+The locally supplied `2025-0218-F.zip` contains two two-page redacted ARMS PDF renderings of a March 5, 2002 Fleischer-to-McCormack email forwarding an Associated Press article about deportations and espionage allegations, plus the separately released Defense Protective Service notice discussed above. The two PDF renderings are related federal/presidential versions of the same email, not independent intelligence reports. The email requests guidance on reporting after the attacks; it does not establish a pre-attack UMS operation or coordination. Redactions and uninspected underlying agency records limit conclusions. Exchange withholding slips contain subject metadata but do not disclose the withheld messages’ substantive contents.
+
+### Notebook examination versus explosives chemistry
+
+Chat 84 identifies laboratory report **020924003 LV**, dated September 26, 2002, as a questioned-document examination of notebook specimens, and identifies the associated September 24 submission as missing. That report must not be substituted for a final chemical examination of the separately numbered fabric or blanket samples. The [FBI section 6 scan, PDF pp. 36–37](https://archive.org/download/DancingIsraelisFBIReport/fbi%20report%20section%206.pdf#page=36), is the cited original; this reconciliation visually examined both pages: the unit could not determine whether the same writer prepared all text, reported indented writing on Q1.2, and recorded images of Q1.3–Q1.6. These are document-examination findings, not a chemical test. Controls under E01889036 do not establish that the detainees possessed bomb suits.
+
+### WTC badge and access-data limits
+
+The [badge-record trail](../wtc-badge-record-trail-2026-11-06/README.md) distinguishes tower survey rosters from entry-event logs. A separate health-registry manual describes a PANYNJ badge-holder list spanning all seven WTC buildings, while a published 2009 study reports 14,417 tower card accesses for May 8, 2001. The latter is an aggregate for a different day, not a named visitor record or a demonstrated count of unique people. Neither source identifies the FBI visitor-card holder or confirms an access event for UMS or Max. Original issuance and event records remain the discriminating evidence.
+
+### FBI trace attachments: historical custodian
+
+A handwritten note on the [September 17, 2001 Newark communication, section 1 PDF p. 136](https://www.themoreuknow.com/pdf/fbi%20report%20section%201.pdf#page=136), says its classified attachment was removed and held in the custody of the Newark security officer. The cover says it concerns requested traces but does not disclose the results or originating agency. This supplies a historical retrieval lead, not evidence of a positive match, current retention, or concealment of a particular result. The page was visually checked against chat 90’s rendered account.
+
+### Pennsylvania movers: FBI index results
+
+The [September 14, 2001 FBI communication, section 1 PDF p. 26](https://www.themoreuknow.com/pdf/fbi%20report%20section%201.pdf#page=26), says Universal Indices checks on two redacted names were negative; a possible name variation produced redacted file references. The page concerns UMS employees stopped in Pennsylvania. It does not reveal the referenced files’ contents, confirm a match, or establish an intelligence or hijacker connection. The page was visually checked in the Scooby reconciliation.
+
+### Hijacker-financing testimony: FBI clarification
+
+The [9/11 Commission staff financing monograph, printed p. 144, note 163](https://www.9-11commission.gov/staff_statements/911_TerrFin_Monograph.pdf#page=147), reports that the FBI clarified Assistant Director Pistole’s testimony about Pakistani accounts: the FBI said he meant the funds were traced to Khalid Sheikh Mohammed in Pakistan, and that no actual Pakistani bank accounts had been identified. This is the Commission staff’s account of a subsequent FBI clarification, not a bank-record audit or proof that no other account existed. It limits using the testimony alone to corroborate the separate alleged ISI-directed payment; that allegation still requires independent evidence.
+
+### Iraq oil-field planning: source attribution
+
+The [9/11 Commission narrative](https://www.9-11commission.gov/report/911Report_Ch10.htm) places discussion of Iraq contingencies after the attacks and attributes a possible oil-field planning detail to note 72. Its [endnotes](https://www.9-11commission.gov/report/911Report_Notes.htm) cite the September 17 NSC conclusions memorandum in note 71, but Rice’s April 2004 testimony and Woodward in note 72. This verifies the Commission’s citation chain; it does not establish the precise text of the uninspected NSC memorandum or a pre-attack decision.
+
+### Pentagon FOIA search: count and video scope
+
+In [Bingham v. DOJ, PDF p. 6](https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_05-cv-00475/pdf/USCOURTS-dcd-1_05-cv-00475-0.pdf#page=6), the court summarizes the FBI declaration: 56 of 85 potentially responsive tapes were excluded using custody/supporting documentation; the agent viewed 29, of which 16 did not show the crash site, 12 showed it after impact and one showed impact. This is the court’s account of the agency search, not evidence that 85 tapes showed the impact or that each tape’s original custody was independently reconstructed. Separately, the [official P200022 exhibit catalog](https://coop.vaed.uscourts.gov/moussaoui/exhibits/prosecution/P200022.html) describes two impact clips, six aftermath clips and 12 still images; the exhibit and the search count use different units. The source-to-recorder chain remains a separate question.
+
+### United Defense credit dates and capacity
+
+The [August 13, 2001 credit-agreement reproduction](https://contracts.justia.com/companies/united-defense-industries-inc-64892/contract/1059558/) is dated as of August 13, while United Defense’s [2004 annual filing](https://www.sec.gov/Archives/edgar/data/1051719/000095013305000956/w06569e10vk.htm) describes a refinancing on August 31 and a facility consisting of $600 million in term loans and a $200 million revolving facility. The date difference may reflect different transaction stages but is not resolved by these texts alone. Facility capacity is not a demonstrated cash distribution, profit, or proof of advance knowledge; closing, drawdown and distribution records are needed.
+
+**Further source qualification:** The [April 8, 2004 Rice testimony transcript](https://9-11commission.gov/archive/hearing9/9-11Commission_Hearing_2004-04-08.htm) does not contain the phrase “oil fields.” The Commission cites that testimony alongside Woodward for the planning passage; the cited book page and the original NSC memorandum have not been independently inspected here. The precise origin of the oil-field detail therefore remains unresolved.
+
+### Iraq reconstruction contracting: audit of costs and oversight
+
+[GAO's July 2007 RIO I audit](https://www.gao.gov/assets/gao-07-839.pdf) documents delayed negotiations and weaknesses in award-fee administration. DOD paid nearly all of about $221 million in questioned costs, while excluding about $112 million from the fee base, reducing fees by about $5.8 million; DCAA described about $26 million as sustained cost reductions. These categories cannot be added together as stolen or recovered money. Changing requirements, funding challenges and inadequate proposals were among the factors GAO identified in the delays. The findings support scrutiny of postattack contracting and oversight; they do not themselves establish advance knowledge or participation in the attacks. See the [source-pack reconciliation](../../broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md#financial-policy-and-custody-transcript-comparison).
+
+### Scooby pack: current reconciliation scope
+
+The [source-pack register](../../broader-evidence/scooby-pack-reconciliation-2026-11-13/README.md) and its disposition ledger cover 117 indexed chats, 36 result files and six input attachments. Thirty chat captures contain launch notices only; their missing final responses are not presumed absent from separately saved results. The register records later corrections, dependent sources and missing original evidence. Earlier incremental status notes below or above are historical, not a current count. This coverage is a source reconciliation, not independent verification of every historical claim, a fresh check of current request statuses, or a substitute for missing laboratory, access, routing and transaction records.

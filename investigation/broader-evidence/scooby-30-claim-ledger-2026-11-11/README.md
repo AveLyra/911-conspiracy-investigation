@@ -118,3 +118,5 @@ An [Able Danger and Odigo provenance check](../scooby-able-odigo-source-check-20
 A [Manhattan dispatch source check](../scooby-manhattan-dispatch-source-check-2026-11-12/README.md) verifies selected statements against Philadelphia serial 357 and New York serial 325. The Ohio/Illinois trip remains distinct from the separate reported Manhattan delivery; CART activity is documented but its findings are redacted. Full report and attachment verification remains open.
 
 The [30-report inventory and priority review](../scooby-30-priority-inventory-2026-11-12/README.md) links every captured title to a documented source check, identifies consequential discrepancies and prioritizes evidence that could change the theory. It adopts the user’s revised risk-based approach; the inventory is not a claim of complete review of every attachment.
+
+**Classic custody correction:** Section 5 p. 132 contains an explicit handwritten identifier equality overlooked in the earlier section 6-only assessment. See the [corrected page check](../scooby-classic-original-pages-2026-11-12/README.md); the individual Classic entry and annotation’s provenance remain unresolved.
