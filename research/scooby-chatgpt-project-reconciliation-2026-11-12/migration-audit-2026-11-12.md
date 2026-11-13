@@ -123,3 +123,7 @@ GitHub checkpoint commits on the branch were authored and committed as Avelyra a
 ## Progress update — Nov. 13, 2026
 
 The reader has returned 67 complete chat records, leaving 50 of the 117 indexed chats pending. All 101 saved original-response entries have now been mapped to originating conversation IDs and message IDs in `reconciliation/project-sources-crosswalk.json`; 27 mapped conversations currently have retrieved transcripts. All 36 downloadable result files remain archived with their names and checksums. No Project items or local source files were deleted.
+
+## Progress update — Nov. 13, 2026 (later checkpoint)
+
+The connected reader has now supplied 80 of the 117 full chat records; 37 remain pending. The 101 saved-response links are fully mapped; 39 originating chats have retrieved transcripts so far. All 36 downloadable result files remain checksum-verified in the staging archive. The read tool rate-limits repeated access, so transcript collection continues at a paced cadence.
