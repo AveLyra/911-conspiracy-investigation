@@ -8,7 +8,7 @@ This directory preserves raw conversation-history responses returned by the conn
 ## Coverage at this checkpoint
 
 - 117 unarchived chats were found in the Scooby Project history listing at this snapshot.
-- 36 full chat records have been retrieved and staged here; 81 remaining chats are marked `pending` in the index.
+- 41 full chat records have been retrieved and staged here; 76 remaining chats are marked `pending` in the index.
 - The Project Sources panel showed 36 uploaded text-result files and 101 saved response entries. Those 36 separate file payloads have not yet been copied here; Project file previews returned R49's contents for different file names. Their titles and that limitation are recorded in the local migration audit until each actual payload can be recovered.
 - Archived chats have not yet been enumerated.
 
