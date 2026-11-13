@@ -131,3 +131,7 @@ The connected reader has now supplied 80 of the 117 full chat records; 37 remain
 ## Progress update — Nov. 13, 2026 (third checkpoint)
 
 The archive now contains 87 of the 117 unarchived chat transcripts. Thirty remain pending. Of the 101 saved-response entries, 54 originating chats currently have retrieved transcripts; the crosswalk itself is complete. Retrieval remains throttled and continues incrementally.
+
+## Progress update — Nov. 13, 2026 (fourth checkpoint)
+
+One hundred of 117 unarchived chats now have full reader records; 17 remain pending. All 100 retrieved records are linked from the index to existing local transcript files, and none reports additional pages. Seventy-nine of the 101 saved-response entries point to chats already retrieved. The 36 attached result files remain preserved and checksum-verified.
