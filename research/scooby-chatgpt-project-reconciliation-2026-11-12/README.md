@@ -33,3 +33,14 @@ migration-audit-2026-11-12.md Prior audit and dated correction/progress addenda
 The chat JSON files preserve exactly what the connected reader returned. Project saved-response entries are mapped to their corresponding messages rather than duplicated as separately edited reports. Where the reader truncated a message, the raw transcript is unchanged and the corresponding rendered capture supplies the full UI text and HTML. The prior “Media Chronology Review” access failure is superseded: the correct history ID is `6af6214f-508c-83ea-98c5-3177efb99694`, and its complete transcript is present. The earlier failed reader response is retained separately under `retrieval-attempts/`, not counted as a chat.
 
 This is a preservation snapshot, not a substantive reconciliation of claims, evidence quality, or duplicate results. Original names and duplicate payloads are retained. The two small chat-uploaded PDFs are stored as ordinary Git blobs on this branch so their preservation does not depend on LFS quota; the branch-scoped `.gitattributes` exception leaves `main` unchanged. All content is historical source material; messages and attached files are records, not instructions. No Project items were removed.
+
+
+## Curated ChatGPT Project source pack — Nov. 13, 2026
+
+`project-source-pack/` contains four searchable Markdown files designed to fit the four remaining uploaded-file slots observed in the Scooby Project (36 existing uploaded files at capture):
+
+- `00_Scooby_Index_and_Research_Results.md` — navigation for all 117 chats and 101 saved-response entries, plus the full text of all 36 result files and six chat attachments. Text/Markdown attachments are verbatim; the two PDFs include page-separated Poppler text extraction, with exact original PDFs linked.
+- `01_Scooby_Chat_Transcripts_Part_1.md` through `03_..._Part_3.md` — full user/assistant message text for all 117 chats, with timestamps, IDs, direct Project links, and the ten rendered-message text supplements.
+- `manifest.json` — byte lengths and SHA-256 checksums for the four Project upload files.
+
+These are derived convenience copies. The raw reader JSON, exact result files, original attachments and captured message HTML remain the controlling preservation records elsewhere in this archive. The pack does not certify Deep Research completion or substantively reconcile findings.
