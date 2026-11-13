@@ -135,3 +135,7 @@ The archive now contains 87 of the 117 unarchived chat transcripts. Thirty remai
 ## Progress update — Nov. 13, 2026 (fourth checkpoint)
 
 One hundred of 117 unarchived chats now have full reader records; 17 remain pending. All 100 retrieved records are linked from the index to existing local transcript files, and none reports additional pages. Seventy-nine of the 101 saved-response entries point to chats already retrieved. The 36 attached result files remain preserved and checksum-verified.
+
+## Progress update — Nov. 13, 2026 (near-complete checkpoint)
+
+The archive now contains 116 of the 117 listed unarchived chats. The remaining entry, “Media Chronology Review,” is still listed in history but repeatedly returns “No Codex thread found.” All 101 saved original-response entries map to chats with retrieved transcripts. The 116 transcript files exist, all reader pages report no older-page cursor, and all 36 attached result files pass local SHA-256 verification.
