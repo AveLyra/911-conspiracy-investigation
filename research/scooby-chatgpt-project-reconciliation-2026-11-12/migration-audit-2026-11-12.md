@@ -139,3 +139,7 @@ One hundred of 117 unarchived chats now have full reader records; 17 remain pend
 ## Progress update — Nov. 13, 2026 (near-complete checkpoint)
 
 The archive now contains 116 of the 117 listed unarchived chats. The remaining entry, “Media Chronology Review,” is still listed in history but repeatedly returns “No Codex thread found.” All 101 saved original-response entries map to chats with retrieved transcripts. The 116 transcript files exist, all reader pages report no older-page cursor, and all 36 attached result files pass local SHA-256 verification.
+
+## Remaining-chat backup check — Nov. 13, 2026
+
+The designated private ChatGPT backup index is dated Oct. 11, 2026 and lists 33 project directories; it contains no Scooby catalog. A targeted Google Drive search for the remaining conversation ID `6af6214f-5083-83ea-98c5-3177efb99694` returned no file. The 911 catalog pages also did not identify the title “Media Chronology Review.” This backup therefore did not provide a transcript copy. The chat remains explicitly pending rather than being represented by its error response as a recovered transcript.
