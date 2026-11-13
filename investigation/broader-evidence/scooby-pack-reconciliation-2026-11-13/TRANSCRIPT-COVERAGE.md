@@ -1,6 +1,6 @@
 # Scooby transcript coverage register
 
-Based on the supplied November 13 project index. This is a tracking inventory, not a claim that an entire chat or its attachments were reviewed. Previous project source checks may cover topics listed as pending; no individual transcript coverage has been inferred from topical similarity.
+Based on the supplied November 13 project index. **Historical snapshot:** row descriptions below record earlier incremental coverage and are not the current disposition. Consult [DISPOSITIONS.json](DISPOSITIONS.json) and the [working register](README.md) for the later per-chat review, launch-only captures, source gaps and verification limits. Neither this index nor a disposition establishes that every underlying original claim was independently verified.
 
 | # | Chat | Coverage recorded in this pass and preceding register |
 | --- | --- | --- |
