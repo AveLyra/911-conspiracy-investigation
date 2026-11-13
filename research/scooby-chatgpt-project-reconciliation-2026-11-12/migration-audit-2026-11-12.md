@@ -143,3 +143,9 @@ The archive now contains 116 of the 117 listed unarchived chats. The remaining e
 ## Remaining-chat backup check — Nov. 13, 2026
 
 The designated private ChatGPT backup index is dated Oct. 11, 2026 and lists 33 project directories; it contains no Scooby catalog. A targeted Google Drive search for the remaining conversation ID `6af6214f-5083-83ea-98c5-3177efb99694` returned no file. The 911 catalog pages also did not identify the title “Media Chronology Review.” This backup therefore did not provide a transcript copy. The chat remains explicitly pending rather than being represented by its error response as a recovered transcript.
+
+## Final access retry — Nov. 13, 2026
+
+The unarchived history listing still returns “Media Chronology Review” (`6af6214f-5083-83ea-98c5-3177efb99694`) as an idle member of the Scooby project. `read_thread` returned “No Codex thread found” with no host specified and when explicitly using both `local` and `remote-ssh-discovered:intel-mac`. The in-app Browser route displayed “Could not load this ChatGPT conversation.” The Project's 911 catalog pages and targeted Drive backup search did not yield a transcript. The archive retains a small error record for this ID, leaves its index status `pending`, and does not count it among the 116 full transcripts.
+
+Current verified coverage: 116/117 full chat transcripts; 36/36 downloaded result files with all SHA-256 values matching the manifest and GitHub branch; 101/101 saved original-response links mapped to message IDs in the 116 retrieved conversations. No Project items or local source material were deleted. `main` remains unchanged. The remaining one transcript cannot be uploaded until an accessible source copy becomes available.
