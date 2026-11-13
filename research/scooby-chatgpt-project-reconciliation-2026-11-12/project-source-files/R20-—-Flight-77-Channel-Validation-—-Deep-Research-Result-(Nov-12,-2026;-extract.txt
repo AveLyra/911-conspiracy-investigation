@@ -1,0 +1,759 @@
+SCOOBY  /  BRIEF 14 - N03  /  12 NOVEMBER 2026
+1
+Flight 77 recorder channels
+Installation, parameter validation and supported calculations
+N644AA / DCA01MA064 / Scooby brief 14-N03 / 12 November 2026
+Result: the acquisition gap is substantially narrower. The official factual report, archived copies of the
+named electronic attachments, a complete compressed raw-file candidate, and official radar exports
+were recovered. The chain from N644AA hardware to every disputed physical measurement remains
+incomplete. The cockpit-door and radio-height fields remain unvalidated for the physical claims at
+issue. Pressure altitude and barometric settings retain the NTSB report's stated validation status. [S1-S8,
+S10-S12]
+Finding
+Supported result
+Limit
+Door
+Boeing and the database agree on SF3, word
+251, bit 1. NTSB places it in I-8.
+No aircraft-specific switch/wiring/functional
+validation recovered. Neither closed-door
+history nor sensor absence follows.
+Altitude
+Pressure-altitude overlap/sign rules and
+barometer scaling can be checked against the
+original specification.
+A literal database printout is insufficient to
+establish what the production converter
+actually did.
+Radio height
+Generic frame slots identify different nominal
+sources. The .75 Hz series is multiplexed.
+No confirmed tail-specific routing, numeric fault
+response or physical calibration.
+CSV endpoint
+Rows labeled 09:37:45 and 09:37:46 contain no
+parameter values. Measurements end in the
+09:37:44 group.
+This is an export observation, not a measured
+impact time or a complete raw-memory
+endpoint.
+Independent
+timing
+Official DCA/IAD radar exports and ATC records
+are available.
+Time-correlation report, radar
+dictionary/association and clock/latency
+evidence remain missing.
+Prior work and scope
+The November 11 index was read, including brief 14, and Loose_Change_Evidence_Review.pdf pp. 22, 36
+was checked. The earlier review expressly left installation/frame and altitude/time validation unresolved.
+Accessible history and file searches returned the submitted investigation and prompt packs, but no
+completed brief-14 result. This does not establish that no result exists elsewhere. [P1-P2]
+Native ChatGPT Deep Research was not available to launch or resume in this session. This deliverable is the public-source
+documentary and calculation audit actually performed. No person was contacted, no request was submitted or amended, no
+fee was incurred, and no pending matter was changed. Downloaded decoder code was inspected statically and was not
+executed.
+
+
+SCOOBY  /  BRIEF 14 - N03  /  12 NOVEMBER 2026
+2
+1. Acquisition and provenance ledger
+Input
+Recovered version / provenance
+Remaining link
+NTSB factual report
+[S1]
+Official NTSB PDF, Sarah McComb, 31 Jan 2002, 36
+pages. Body pp. 1-4; I-1-I-13 = PDF 6-18; II-1-II-17
+= PDF 20-36.
+Report-level validation is documented;
+channel-specific test worksheets and
+wiring are not supplied.
+Attachment IV [S2]
+Boeing D226A101-3, Rev G, 27 Oct 1999,
+588-page archived copy, 37,501,644 bytes.
+Internal title/revision and selected notes/tables
+checked.
+Third-party archive; no agency hash
+certificate. Generic frame specification
+is not an aircraft installation record.
+Attachment V [S3]
+757-3b_1.TXT, 656,359 bytes; Database Editor
+Summary Report created 24 Oct 2001 15:11:58,
+1,110 parameters, 256 words/subframe.
+The database path ends 757-3.db.
+Exact production RAPS build, loaded
+database and conventions are not
+authenticated by the printout alone.
+Attachment III
+candidate [S4]
+AAL77_tabular.csv, 19,618,136 bytes;
+NTSB/N644AA header, revisions 28/29 Jan 2002,
+printed 29 Jan.
+The factual report names
+DCA01MA064_tabular.csv. Recipient
+directory and byte size support
+attribution; the alternate
+filename/content identity is not proven
+by an agency checksum.
+Compressed raw
+candidate [S5]
+American_77.fdr, 25,165,994 bytes, complete 12
+Feb 2008 archive capture. Matches recipient
+directory size.
+No agency checksum certificate; no
+new decompression or raw-to-export
+reconciliation performed here.
+FOIA transmission
+[S6]
+NTSB letter 6 Apr 2009, FOIA 2009-00078, pp. 1-2,
+plus recipient CD directory. Describes enclosure of
+attachments and recorder files.
+Letter documents transmission, not a
+byte-level certificate for every later
+mirror. It says RAPS converted portions
+of the raw file.
+Time and radar
+[S7-S11]
+Official ATC and Flight Path Study PDFs; official
+NARA DCA and IAD text exports.
+Separate Time Correlation Report not
+recovered. Radar field/time/target joins
+remain open.
+Preceding-flight
+material [S12]
+Four named landing CSVs, FlightTimes.csv,
+all-subframe door CSV, source ZIP and changelog.
+Author-decoder derivatives, not
+independent airline logs, wiring records
+or calibration observations. Producing
+build/run not joined.
+The attachment sizes in the recovered recipient directory match the retrieved TXT, Boeing PDF, CSV and raw-file candidate.
+This is positive provenance evidence, with a remaining limitation. Archive dates are preservation dates, not aircraft event
+times. A later raw capture was truncated and was excluded. SHA-256 hashes and exact retrieval URLs are in
+source_manifest.json.
+
+
+SCOOBY  /  BRIEF 14 - N03  /  12 NOVEMBER 2026
+3
+2. Door and time parameter ledger
+Addresses below are frame/document facts. W = 12-bit recorder word; b = bit number; SF = subframe. A
+four-second frame contains four one-second subframes. None of these labels establishes an installed,
+functioning source. [S1 p. 3; S2; S3]
+Field / nominal
+source
+Address and sampling
+Conversion / invalid
+behavior
+N644AA validation
+FLT_D_DR
+EICAS L/R-A-1
+SF3 W251 b1; .25 Hz (one slot
+every 4 s). Boeing D14, label
+011, SDI 10, input b23.
+0=CLOSED; 1=OPEN. Failed,
+missing, stale or
+disconnected-source output is
+not established by the
+retrieved definition.
+I-8/PDF13, not working
+OR unconfirmed. No
+evidence establishing
+the physical switch,
+semantics, wiring or
+known-state test was
+recovered.
+GMT
+CAPT CLOCK
+SF1: seconds W254 b7-12;
+minutes W255 b2-7; hours
+W255 b8-12. Each .25 Hz.
+Boeing D7, label 150.
+Binary counts, 1
+second/minute/hour per unit.
+Bit ranges allow codes beyond
+valid civil-clock ranges; actual
+rejection/default policy not
+established.
+I-8/PDF13 unvalidated
+group. Do not substitute
+this for NTSB's correlated
+export time.
+GPS time
+components
+FMC L/R-D-4 nominal
+TXT: hours/minutes frame 7,
+SF4 W256 b8-12 / b2-7;
+seconds frame 6, SF4 W256
+b7-12.
+Printout says .25 Hz while
+locations are frame-gated.
+Actual cadence/phase
+requires superframe
+semantics. Invalid/stale policy
+not established.
+I-8/PDF13 unvalidated
+group. No functioning
+GPS clock is established
+by the name.
+GPS operability
+discrete
+SF2 W254 b5, .25 Hz in TXT.
+0=INOPER; 1=OPER. This is a
+different field from GPS time.
+No independent
+installation or
+operational test
+recovered.
+EDT export time
+CSV column 1; second labels
+plus unlabeled subrows. No
+raw address established for
+the exported label.
+NTSB reports correlation to
+EDT and refers to separate
+Time Correlation Report.
+Correlation offset, drift, phase
+and latency not recovered.
+An analytical time axis;
+not proof that raw CAPT
+CLOCK/GPS was
+validated.
+FRAME COUNTER
+export
+CSV column 186: 1,181
+populated cells, last at
+09:37:41 =1301.
+Exact raw address/derivation
+for this export column not
+established in the retrieved
+printout.
+Do not use it to infer
+absolute UTC or GPS
+superframe phase.
+Source locators: door [S2 E35/PDF431 and E110/PDF506; S3 lines 8136-8152]; GMT [S2 E21/PDF417; S3 9477-9545]; GPS
+entries [S3 9566-9633]. The generic diagram joins a bus label to a recorder slot, but not the cockpit switch to that bus on
+N644AA. The TXT metadata Number of Tests: 0 does not establish that no aircraft validation was ever performed; retain
+NTSB's separate classifications.
+What a constant door value can establish
+With a correctly decoded slot, constancy establishes only constancy of that recorded value. It cannot
+distinguish a steady physical state from an unwired/default, failed, stale or differently configured source.
+Only SF3 is assigned to the door by this map; the same word/bit in other subframes is not automatically
+another door observation. A known-state transition joined to the same aircraft and channel would be
+useful validation, but none was recovered.
+
+
+SCOOBY  /  BRIEF 14 - N03  /  12 NOVEMBER 2026
+4
+3. Altitude and reference ledger
+Field
+Address / nominal
+sampling
+Meaning and conversion
+Validation / missing
+link
+Pressure altitude
+ALT_COA + ALT_FIN
+All SF, W29 and W30 b3-12; 1
+Hz. Source label 203, ADC
+L/R-A-4.
+Feet relative to 1013.25 mbar.
+Coarse signed10 x128; fine
+overlap/sign must be handled
+per Boeing Note3C.
+NTSB validated/plotted,
+I-3/PDF8. Current audit
+did not reproduce
+raw-to-CSV runtime or
+tail-specific calibration.
+BARO_CR1 /
+BARO_CR2
+SF2 / SF4, W147 b1-12; each
+.25 Hz.
+Altimeter-setting values in
+inHg. Boeing Note4C explains
+recorded count conversion;
+these are not altitude
+channels.
+NTSB validated/plotted,
+I-1/PDF6. Printout's BCD
+label requires
+runtime/scaling
+reconciliation.
+LRRA radio height
+W31 b1-12 plus W32 b1-2.
+Generic map: SF2 left D20,
+SF3 right D21, SF4 centre D22,
+label164.
+Each nominal source has one
+slot per 4 s. TXT radalt
+aggregates .75 Hz; combined
+gaps are 1,1,2 s and source
+changes. Sign is in W31 b12.
+I-10/PDF15 unvalidated
+group. NTSB list names
+LRRA C-A-2; actual
+routing across generic
+slots remains
+unresolved.
+Captain radio height
+SF1 W31/W32; .25 Hz.
+Nominal EFIS L/C-A-1, D11,
+label164.
+Separate nominal source slot.
+Preserve it separately from
+SF2-4 and from first-officer
+height.
+I-10/PDF15 unvalidated
+group; installation,
+operating range, fault
+behavior and calibration
+not established.
+First-officer radio
+height
+All SF W204 b3-12; 1 Hz.
+Nominal EFIS R/C-A-1.
+TXT signed10 x0.5 ft, listed
+range -256 to255.5. This
+printed range alone is not an
+operational sensor limit or
+invalid-data rule.
+I-10/PDF15 unvalidated
+group. End-to-end
+numeric and validity
+behavior unresolved.
+ADC INVALID
+SF3 W246 b1; .25 Hz in TXT.
+0=ADC OK; 1=ADC FAIL. A
+validity-named discrete also
+requires validation.
+I-5/PDF10 unvalidated
+group. Cannot use a zero
+here to certify all ADC
+values.
+Corrected altitude /
+terrain
+No separately validated
+corrected-geometric or terrain
+channel established in this
+audit.
+Requires actual
+pressure-setting treatment,
+atmospheric/static-system
+correction, position, terrain
+datum and geometry.
+No corrected
+impact-height or
+terrain-clearance
+calculation is supported
+here.
+Locators: [S2 pp.20-21/PDF28-29, p.27/PDF35, E48/PDF444 and E70/PDF466; S3 ALT_COA/FIN 1737-1769, BARO_CR1/2
+2812-2842, PresAlt 14212-14223, radio entries 14458-14567, ADC_INVA 1127-1143].
+Four different altitude quantities
+Pressure altitude is tied to a standard pressure reference. Barometrically corrected altitude applies
+a specified pressure setting and conversion. Radio height is a sensor-dependent return relative to the
+reflecting surface and aircraft geometry. Terrain clearance requires a consistent geometric altitude and
+terrain/position reference. The Flight Path Study labels its plot FDR Pressure Altitude, even where the axis
+says ft-msl; that wording supplies no missing geometric calibration. [S8 p.4]
+
+
+SCOOBY  /  BRIEF 14 - N03  /  12 NOVEMBER 2026
+5
+4. Reproducible specification checks
+These checks use the recovered specification and database definitions. They do not decode an observed
+flight record. A printout mismatch is an implementation question until the actual converter, database
+version, inputs and output are joined. It is not proof that the NTSB output is wrong.
+Pressure altitude: overlap and duplicated sign
+For the 757-3/-3A/-3B format, Boeing Note3C directs omission of W30 bits 12-10 when combining the two
+words. The printout separately describes a signed10 fine field and a computed ALT_COA + ALT_FIN. A
+literal implementation of that listing can differ from the specification. [S2 p.20; S3
+1737-1769,14212-14223]
+coarse = signed10((W29 >> 2) & 1023)
+fine = (W30 >> 2) & 127
+pressure_ft = 128 * coarse + fine
+Example
+Boeing rule
+Literal printout
+sum
+Interpretation
+Published 34,423 ft
+34,423
+34,423
+This example does not discriminate the
+alternatives.
+Synthetic 1,000 ft
+1,000
+1,384
+Overlap bits expose the difference. Not a
+recovered raw sample.
+Synthetic -500 ft
+-500
+-1,012
+Repeated sign also matters. Not a recovered
+raw sample.
+Barometer setting: input BCD versus recorded count
+Boeing's 29.92 inHg example records octal 5660, equal to decimal 2992; dividing by 100 recovers 29.92.
+The same recorded bits interpreted directly as three BCD nibbles produce 11,11,0, outside decimal-digit
+coding. The TXT calls the field BCD and supplies no visible decimal scale in that entry. The missing link is
+the converter's interpretation, not a demonstrated instrument fault. [S2 p.21; S3 2812-2842]
+Radio height: sign location and component order
+Move W31 bit12 to the signed14 sign position; place W32 bits1-2 in data positions11-12; retain W31's
+lower11 data bits. Boeing's two published examples test different failure modes. [S2 p.27]
+W31 / W32
+Boeing result
+Naive contiguous signed14
+Signed12 low + high x2048
+904 / 2
+5,000 ft
+-7,288 ft
+5,000 ft
+3596 / 3
+-500 ft
+-500 ft
+5,644 ft
+The downloadable Python script reproduces all these values. Passing one example is not sufficient validation of an
+alternative bit assembly. The script also verifies the 3,072 bits/s frame arithmetic; the 3.90625 ms word slot is a
+serialization interval, not sensor-to-ground-clock accuracy.
+
+
+SCOOBY  /  BRIEF 14 - N03  /  12 NOVEMBER 2026
+6
+5. Candidate CSV: supported observations
+The engineering-unit CSV was read as cp1252, preserving the source bytes. Four header rows are at
+physical lines10-13. There are 345 columns, 37,802 data rows, and 37,800 rows with at least one
+measurement. The remaining two rows are time-only. All 4,727 printed second labels are consecutive.
+The 4,725 populated second groups each contain eight export rows; this layout does not establish exact
+per-channel acquisition phase. [S4; calculations.json]
+Physical line
+Export label
+Pressure altitude, col5
+What this means
+37,790
+09:37:42
+307 ft
+Observed converted pressure-altitude cell.
+37,798
+09:37:43
+239 ft
+Change of -68 ft per export-label second.
+37,806
+09:37:44
+173 ft
+Change of -66 ft per export-label second.
+37,813
+Unlabeled row in
+09:37:44 group
+Blank
+Last row with any measurement; vertical
+acceleration is populated.
+37,814
+09:37:45
+Blank
+All 344 parameter cells are empty.
+37,815
+09:37:46
+Blank
+All 344 parameter cells are empty.
+The last populated time group agrees with the factual report's statement that recorded data end at
+09:37:44 EDT. This does not establish that all raw memory ends there, or that impact occurred then. The
+two subsequent empty labels do not demonstrate two additional measurement seconds. [S1 p.4; S4]
+Field
+Last nonempty cell
+Source locator
+Pressure altitude
+173 ft in group 09:37:44
+S4 line37806, column5; 4,725 populated
+cells
+Barometric setting No.1
+30.24 inHg in group 09:37:42
+S4 line37790, column85; 1,181 populated
+cells
+Barometric setting No.2
+30.23 inHg in group 09:37:44
+S4 line37806, column86; 1,182 populated
+cells
+Frame counter
+1301 in group 09:37:41
+S4 line37782, column186; 1,181
+populated cells
+Limits on the arithmetic
+The pressure differences above are differences between published engineering values, not geometric
+descent rates near impact. No extrapolation to an impact time was performed. No pressure-setting
+adjustment, static-error correction, radio-height substitution or terrain subtraction was silently added.
+Those operations require the specific conversion, calibration and time alignment that remain unresolved.
+The selected export contains no header for FLT DECK DOOR, RADIO HEIGHT, GMT or GPS TIME. That is a statement about
+this export's columns, not sensor installation. A blank cell can reflect the export schedule and must not automatically be
+coded as zero, invalid or forward-filled telemetry.
+
+
+SCOOBY  /  BRIEF 14 - N03  /  12 NOVEMBER 2026
+7
+6. Time and radar: comparison boundaries
+Record / estimate
+What is established
+Dependence and uncertainty
+FDR factual report [S1]
+p.3 says data correlated to EDT; p.4 gives
+last recorded data09:37:44.
+Separate Time Correlation Report not
+recovered. Offset/drift, channel phase,
+acquisition and compression/buffer latency
+remain unquantified.
+Flight Path Study [S8]
+19 Feb2002, p.1 combines FDR, FAA and
+USAF radar. p.2 gives impact09:37:45.
+A combined reconstruction, not an
+independent radar-only clock. No
+source-supported +4-second correction found
+in this seven-page report.
+Commission estimate
+[S9]
+Chapter 1 note 154 identifies FDR, ATC,
+radar, Pentagon elevation and impact-site
+data as its basis.
+Its estimate is partly FDR-dependent. Neither
+the NTSB nor Commission estimate is
+established here as an independently
+calibrated impact-sensor reading.
+ATC report [S7]
+Printed p.ii/PDF2 gives
+composite12:19:20-13:03:19UTC,
+duration43m59s. Explicitly describes
+times as approximate.
+22,050samples/s is audio digitization, not
+absolute clock precision. Cover prints
+DCA01SA064; retain the source's identifier.
+DCA radar [S10]
+Official NARA7595876, object15998563;
+ODS CDR Editor A3.06
+export,13:00-14:00, many targets.
+No supplied complete dictionary,
+site/clock/latency calibration or AA77
+association chain. CST-coded and blank fields
+present.
+IAD radar [S11]
+Official NARA7595877, object15998565;
+same editor,12:10-14:00; target-report
+and tracking sections.
+Filename does not make every row AA77. Do
+not equate radar RALT with aircraft
+radio-altimeter height.
+Inbound coordinate
+table [S13]
+NARA7595928, object15986478; six
+pages of numbered coordinates
+through173.
+No time or altitude column.
+Point-to-radar-message join missing. Cannot
+supply an independent clock anchor.
+Calculations and independence rules
+The declared ATC composite interval reproduces as 2,639 seconds =43min59s. A four-hour UTC-to-EDT
+conversion is a timezone operation and is separate from any recorder-clock correction. No seconds-level
+correction was adopted without its original derivation.
+Primary radar range/azimuth can be an independent physical measurement after target association and
+clock calibration. Transponder altitude can share aircraft air-data sources with the FDR. Tracked/coasted
+coordinates add processing and prediction. Repeated plots, NTSB's combined study and the
+Commission's synthesis therefore cannot be counted as multiple independent terminal-height/clock
+measurements.
+The current fetched radar representations differ in byte size from catalog metadata. The DCA difference equals its LF count,
+consistent with newline normalization; the IAD difference is one byte larger than its LF count. The handwritten PDF also has
+an unresolved representation-size difference. Exact fetched hashes and these limits are preserved in the manifest.
+
+
+SCOOBY  /  BRIEF 14 - N03  /  12 NOVEMBER 2026
+8
+7. Alternative explanations and stopping rules
+Proposition / alternative
+Evidence needed to distinguish it
+Current result
+A functioning door channel
+recorded no opening
+Tail-specific switch meaning/wiring and
+configuration; validated polarity; known physical
+transitions; freshness/fault behavior; exact
+raw/channel join.
+Not established. Constant bit
+or CLOSED label is insufficient.
+The door sensor was absent
+or channel unused
+N644AA option, installation/removal or wiring
+evidence showing the relevant input
+absent/unconnected or intentionally unused.
+Not established. Missing
+records and NTSB's
+unconfirmed category do not
+prove absence.
+A failed/stale/default input
+explains constancy
+Actual acquisition-unit behavior for missing input,
+no-computed-data, failure and last-value retention,
+plus observed status or tests.
+Plausible class of alternatives;
+no particular one
+demonstrated.
+Frame/version/conversion
+differs
+Exact hardware/options and loaded RAPS
+database/runtime; raw-word-to-output comparison
+with overlap, sign and scale controls.
+Specific documentary
+implementation questions
+identified; no actual converter
+error proven.
+Pressure/radio/terrain
+reference was confused
+Separate source, datum, setting and calibration for
+each compared quantity, including radio
+footprint/attitude and terrain position.
+References cannot be
+substituted. No corrected
+impact-height calculation
+made.
+Recording ended before
+impact or clocks differ
+Authenticated complete decode, buffering/sample
+placement, independent event/clock anchors and
+uncertainty.
+Possible; exact gap and offset
+not established. Empty CSV
+labels cannot fill it.
+A physical trajectory is
+impossible
+Validated installation, frame, raw conversion,
+calibration and independently timed comparison;
+discrepancy exceeding combined uncertainty.
+Dependent conclusion
+stopped. Required links remain
+unresolved.
+Positive and contrary evidence retained
+The NTSB factual report says the recorder operated normally and identifies a validated group. That is
+contrary evidence to treating all recorder values as unreliable. The same report expressly separates
+unconfirmed/improperly recorded fields, so its general statement cannot validate every label. The
+recovered transmittal and matching file sizes support the archived attachments' provenance, while their
+mirror chain and runtime identity remain bounded. [S1 p.2; S6]
+Exact missing inputs that stop dependent work
+N644AA as-installed wiring/options and sensor-to-bus semantics; the applicable acquisition-unit
+interface/control requirements and numeric/discrete failure behavior; the exact producing RAPS/database
+configuration or a validated equivalent raw-to-output implementation; channel calibration and
+time/latency records; the separate Time Correlation Report; radar dictionary, site/clock/scanner metadata
+and target-association chain; independent preceding-flight observations/logs for known sensor states.
+None of these missing records is described as withheld, destroyed or never created. No finding here identifies an actor's
+tasking, knowledge, action or causal effect. This is a measurement-chain audit.
+
+
+SCOOBY  /  BRIEF 14 - N03  /  12 NOVEMBER 2026
+9
+8. Preceding flights and reproducibility
+What was acquired from the author-decoder record
+The archived output index supplies Dulles, Los Angeles, Chicago and Orlando landing CSVs,
+FlightTimes.csv and AllSubframesFltDeckDoor.csv. They derive from the same recovered recorder data
+and author software. FlightTimes records 25 sync-loss boundaries with Excel-added interval calculations;
+it is not an independent airline log. The landing names and apparent ground segments do not supply
+independently observed door states or calibrated runway-height tests. [S12]
+The recovered source ZIP has a main project ApplicationVersion 1.10.0.0 and a backup1.7.0.0, while
+assembly/file versions remain1.0.0.0. The changelog says version1.1 adjusted acceleration formulas to
+match NTSB CSV output,1.4.1 added a pressure-altitude variant based on the TXT, and1.7 added raw
+coarse/fine outputs. No output-to-build/input-hash/run-log join was recovered. Agreement achieved by
+reference to NTSB output is not independent sensor calibration. No downloaded code was executed.
+Package contents
+File / directory
+Purpose
+reproduce.py
+Python3 standard-library script. Checks exact CSV/TXT hashes; audits export
+occupancy and final cells; extracts relevant database definitions with line
+numbers; reproduces specification examples.
+calculations.json
+Actual script output, including observed CSV cells, derived counts/differences
+and separately labeled synthetic/specification examples.
+parameter_validation_ledger.json
+Machine-readable installation, address, sampling, conversion,
+invalid-behavior and validation ledger.
+source_manifest.json
+Original/capture URLs, archive dates, exact bytes/SHA-256, source classes,
+provenance limits and package paths.
+sources/
+Retrieved official reports, candidate raw/CSV/TXT, FOIA letter scans, official
+radar exports and metadata. The Boeing manual is referenced by exact
+URL/hash, not republished in full.
+unvalidated_derivatives/
+Author-decoder preceding-flight and door CSVs, preserved with their
+unvalidated status. They are not inputs to the reported physical conclusions.
+Run from the extracted package:
+python3 reproduce.py --output recalculated.json
+The script refuses a different CSV or TXT hash. It does not decompress the raw FDR file, execute author
+code, decode radar tracks or calculate an impact trajectory. Review the source paths and missing links
+before extending it. The report's calculation table can be reproduced offline using the included inputs.
+Source dependence
+NTSB raw acquisition, NTSB CSV, Stutt derivatives, the Flight Path Study and the Commission synthesis
+are connected source chains, not five independent measurements. The Boeing specification and AA
+database are conversion documentation, not aircraft observations. The official radar exports originate
+outside the FDR, but need their own field/clock/target validation before comparison. Prior project
+summaries guide retrieval and do not replace these originals.
+
+
+SCOOBY  /  BRIEF 14 - N03  /  12 NOVEMBER 2026
+10
+9. Source register
+References identify the documents actually inspected and their limits. Full URLs, archive captures and SHA-256 fingerprints
+are also in the machine-readable manifest. Page numbers below are printed pages unless an explicit PDF position is
+supplied.
+[P1] Scooby_Deep_Research_Followups_2026-11-11.txt, source review11 Nov 2026, brief14; complete text read. Prior-work
+index, not completed investigation.
+Open source
+[P2] Loose_Change_Evidence_Review.pdf, November2026, p. 22 §8.9 and p. 36 source 110. Prior unresolved
+installation/frame and altitude/time findings.
+Open source
+[S1] NTSB, Sarah McComb, Specialist's Factual Report of Investigation: Digital Flight Data Recorder,31 Jan
+2002,DCA01MA064. pp1-4 and AttachmentsI/II; official36-page PDF.
+Open source
+[S2] Boeing D226A101-3, Rev G,27 Oct 1999,588-page archived copy. Selected pp14,20-21,27;
+AppendixE21,E35,E48,E70,E110. Generic specification, no tail-specific installation.
+Open source
+[S3] 757-3b_1.TXT, Database Editor Summary Report,24 Oct 2001 15:11:58; 1,110 parameters;656,359bytes. Archived
+FOIA-recipient AttachmentV candidate.
+Open source
+[S4] AAL77_tabular.csv; NTSB/N644AA header, revisions28/29Jan2002;19,618,136bytes. Sole member of archivedZIP;
+AttachmentIII candidate with alternate filename. Exact line/column locators in section5 of this report.
+Open source
+[S5] American_77.fdr, complete archived compressed raw-file candidate;25,165,994bytes; archive capture12 Feb 2008. No
+raw decode performed here.
+Open source
+[S6] NTSB to Warren Stutt,6 Apr 2009,FOIA2009-00078,pp1-2; recipient directory and original letter scans. Letter describes
+CD-ROM enclosure and licensedRAPS conversion.
+Open source
+
+
+SCOOBY  /  BRIEF 14 - N03  /  12 NOVEMBER 2026
+11
+Source register, continued
+[S7] NTSB, Joseph A. Gregor, Air Traffic Control Recording, Specialist's Report,21 Dec 2001; cover identifierDCA01SA064;13
+PDF pages. Printed ii/PDF 2 for timing limitations and composite; printed iii/PDF 3 forUTC.
+Open source
+[S8] NTSB, Flight Path Study: American Airlines Flight77,19 Feb 2002,DCA01MA064,signed Jim Ritter;7 pages.
+p1sources,p2impact estimate,p4Figure2 pressure altitude,pp6-7reusedATC transcript.
+Open source
+[S9] National Commission on Terrorist Attacks Upon the United States, final report,2004,chapter 1note 154. Explicit
+dependence of impact-time estimate on FDR/ATC/radar/site data.
+Open source
+[S10] NARA,FAA records,box100AWA-711;NAID7595876,object15998563; DCA09-11text export,ODS CDR EditorA3.06.
+Header/footer and representation metadata inspected, not converted to anAA77 trajectory.
+Open source
+[S11] NARA,FAA records,box100AWA-711;NAID7595877,object15998565; IADAAL77text export,ODS CDR EditorA3.06.
+Header/footer and target/tracking layout inspected; dictionary/clock/association incomplete.
+Open source
+[S12] Warren Stutt,AAL77FDRDecoder source/changelog and OutputFiles index,archived2012-2013. Main source
+projectApplicationVersion 1.10.0.0; output-producing run unjoined. Author derivatives only.
+Open source
+[S13] NARA,NAID7595928,object15986478,1IAD9DataCDRTableAircraftPositionInboundPentagon,6 pages; numbered
+coordinates through173; no time/altitude columns; fetched representation size differs from metadata.
+Open source
+Fingerprint anchors
+CSV SHA-256
+70740505826cf97b4fd376a8c225f78c87b7b245f46a4dbbd44ce8c356631138
+Database SHA-256
+374b269812aece0ad75f182f7864a324cadef04e735ebb296ad8b0ebba107e64
+Raw candidate SHA-256
+18ad30f72f3d30e5958480252469a1780b51469c903a18c47761ed41fb3ac0f6
+Hashes identify the exact current files used or preserved. They are not represented as historical agency checksum
+certificates. Retrieval and audit date:12 November 2026.
+
