@@ -37,10 +37,11 @@ This is a preservation snapshot, not a substantive reconciliation of claims, evi
 
 ## Curated ChatGPT Project source pack — Nov. 13, 2026
 
-`project-source-pack/` contains four searchable Markdown files designed to fit the four remaining uploaded-file slots observed in the Scooby Project (36 existing uploaded files at capture):
+`project-source-pack/` initially contained four searchable Markdown files designed to fit the four remaining uploaded-file slots observed in the Scooby Project (36 existing uploaded files at capture). A dated fifth file was added as a follow-up results digest:
 
 - `00_Scooby_Index_and_Research_Results.md` — navigation for all 117 chats and 101 saved-response entries, plus the full text of all 36 result files and six chat attachments. Text/Markdown attachments are verbatim; the two PDFs include page-separated Poppler text extraction, with exact original PDFs linked.
 - `01_Scooby_Chat_Transcripts_Part_1.md` through `03_..._Part_3.md` — full user/assistant message text for all 117 chats, with timestamps, IDs, direct Project links, and the ten rendered-message text supplements.
-- `manifest.json` — byte lengths and SHA-256 checksums for the four Project upload files.
+- `04_Scooby_Research_Results_and_Next_Stage_2026-11-13.md` — supplemental synthesis of six priority research chats and completed R13/R25 Pro follow-ups. This is a result digest, not a full transcript supplement; it does not alter the original 117-chat inventory in files 00–03.
+- `manifest.json` — byte lengths and SHA-256 checksums for all five files, with the follow-up digest explicitly separated from the original inventory snapshot.
 
 These are derived convenience copies. The raw reader JSON, exact result files, original attachments and captured message HTML remain the controlling preservation records elsewhere in this archive. The pack does not certify Deep Research completion or substantively reconcile findings.
