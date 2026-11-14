@@ -1,0 +1,215 @@
+{
+  "file": "CB-DA.xlsx",
+  "sha256": "4f5504f7690ff886d2fa2ce88cebea2e1089a85dcf3ba686fd7647c9610b0370",
+  "sheets": [
+    {
+      "sheet": "CB-DA-AmbientLoadingData",
+      "csv": "matched_pair_csv/CB-DA__CB-DA-AmbientLoadingData.csv.gz",
+      "data_rows": 2356,
+      "derived_clock_diagnostics": {
+        "timestamp": {
+          "median_delta_seconds": 1.0000002337619662,
+          "anomalous_intervals": [],
+          "rule": "absolute deviation from median > max(0.01 s, 1% of median); identifies clock intervals, not proof of missing physical measurements"
+        },
+        "elapsed": {
+          "median_delta_seconds": 1.0000999999992928,
+          "anomalous_intervals": [],
+          "rule": "absolute deviation from median > max(0.01 s, 1% of median); identifies clock intervals, not proof of missing physical measurements"
+        }
+      }
+    },
+    {
+      "sheet": "CB-DA-FireLoadingData",
+      "csv": "matched_pair_csv/CB-DA__CB-DA-FireLoadingData.csv.gz",
+      "data_rows": 13085,
+      "derived_clock_diagnostics": {
+        "timestamp": {
+          "median_delta_seconds": 1.0000002337619662,
+          "anomalous_intervals": [
+            {
+              "from": {
+                "row": 10437,
+                "timestamp_cell": "A10437",
+                "elapsed_cell": "B10437",
+                "timestamp_lexical": "43088.617407407408",
+                "elapsed_lexical": "10435.626100000001",
+                "timestamp": 43088.61740740741,
+                "elapsed": 10435.626100000001
+              },
+              "to": {
+                "row": 10438,
+                "timestamp_cell": "A10438",
+                "elapsed_cell": "B10438",
+                "timestamp_lexical": "43088.617430555554",
+                "elapsed_lexical": "10436.626199999999",
+                "timestamp": 43088.617430555554,
+                "elapsed": 10436.626199999999
+              },
+              "delta_seconds": 1.9999998388811946
+            }
+          ],
+          "rule": "absolute deviation from median > max(0.01 s, 1% of median); identifies clock intervals, not proof of missing physical measurements"
+        },
+        "elapsed": {
+          "median_delta_seconds": 1.0000999999992928,
+          "anomalous_intervals": [],
+          "rule": "absolute deviation from median > max(0.01 s, 1% of median); identifies clock intervals, not proof of missing physical measurements"
+        }
+      }
+    }
+  ],
+  "event_time_comparisons": [
+    {
+      "event_row": 2,
+      "timestamp_cell": "C2",
+      "elapsed_cell": "B2",
+      "timestamp_lexical": "43088.469363425924",
+      "elapsed_lexical": null,
+      "description_cell": "D2",
+      "description": "Mechanical loading initiated",
+      "matched_timestamp_candidates": [
+        {
+          "sheet": "CB-DA-AmbientLoadingData",
+          "source_record": {
+            "row": 2,
+            "timestamp_cell": "A2",
+            "elapsed_cell": "B2",
+            "timestamp_lexical": "43088.469363425924",
+            "elapsed_lexical": "0",
+            "timestamp": 43088.469363425924,
+            "elapsed": 0.0
+          },
+          "derived_event_timestamp_minus_data_timestamp_seconds": 0.0,
+          "derived_event_elapsed_minus_data_elapsed_seconds": null
+        }
+      ]
+    },
+    {
+      "event_row": 3,
+      "timestamp_cell": "C3",
+      "elapsed_cell": "B3",
+      "timestamp_lexical": "43088.496631944443",
+      "elapsed_lexical": "0",
+      "description_cell": "D3",
+      "description": "Natural gas flow initiated (HRRburner)",
+      "matched_timestamp_candidates": [
+        {
+          "sheet": "CB-DA-FireLoadingData",
+          "source_record": {
+            "row": 2,
+            "timestamp_cell": "A2",
+            "elapsed_cell": "B2",
+            "timestamp_lexical": "43088.496631944443",
+            "elapsed_lexical": "0",
+            "timestamp": 43088.49663194444,
+            "elapsed": 0.0
+          },
+          "derived_event_timestamp_minus_data_timestamp_seconds": 0.0,
+          "derived_event_elapsed_minus_data_elapsed_seconds": 0.0
+        }
+      ]
+    },
+    {
+      "event_row": 4,
+      "timestamp_cell": "C4",
+      "elapsed_cell": "B4",
+      "timestamp_lexical": "43088.496898148151",
+      "elapsed_lexical": "23.001399999999194",
+      "description_cell": "D4",
+      "description": "Fire ignition",
+      "matched_timestamp_candidates": [
+        {
+          "sheet": "CB-DA-FireLoadingData",
+          "source_record": {
+            "row": 25,
+            "timestamp_cell": "A25",
+            "elapsed_cell": "B25",
+            "timestamp_lexical": "43088.496898148151",
+            "elapsed_lexical": "23.001399999999194",
+            "timestamp": 43088.49689814815,
+            "elapsed": 23.001399999999194
+          },
+          "derived_event_timestamp_minus_data_timestamp_seconds": 0.0,
+          "derived_event_elapsed_minus_data_elapsed_seconds": 0.0
+        }
+      ]
+    },
+    {
+      "event_row": 5,
+      "timestamp_cell": "C5",
+      "elapsed_cell": "B5",
+      "timestamp_lexical": "43088.517488425925",
+      "elapsed_lexical": "1802.1081000000004",
+      "description_cell": "D5",
+      "description": "Unloading triggered by pre-set limit of actuators",
+      "matched_timestamp_candidates": [
+        {
+          "sheet": "CB-DA-FireLoadingData",
+          "source_record": {
+            "row": 1804,
+            "timestamp_cell": "A1804",
+            "elapsed_cell": "B1804",
+            "timestamp_lexical": "43088.517488425925",
+            "elapsed_lexical": "1802.1081000000004",
+            "timestamp": 43088.517488425925,
+            "elapsed": 1802.1081000000004
+          },
+          "derived_event_timestamp_minus_data_timestamp_seconds": 0.0,
+          "derived_event_elapsed_minus_data_elapsed_seconds": 0.0
+        }
+      ]
+    },
+    {
+      "event_row": 6,
+      "timestamp_cell": "C6",
+      "elapsed_cell": "B6",
+      "timestamp_lexical": "43088.521435185183",
+      "elapsed_lexical": "2143.1285999999991",
+      "description_cell": "D6",
+      "description": "30 min controlled cooling initiated",
+      "matched_timestamp_candidates": [
+        {
+          "sheet": "CB-DA-FireLoadingData",
+          "source_record": {
+            "row": 2145,
+            "timestamp_cell": "A2145",
+            "elapsed_cell": "B2145",
+            "timestamp_lexical": "43088.521435185183",
+            "elapsed_lexical": "2143.1285999999991",
+            "timestamp": 43088.52143518518,
+            "elapsed": 2143.128599999999
+          },
+          "derived_event_timestamp_minus_data_timestamp_seconds": 0.0,
+          "derived_event_elapsed_minus_data_elapsed_seconds": 0.0
+        }
+      ]
+    },
+    {
+      "event_row": 7,
+      "timestamp_cell": "C7",
+      "elapsed_cell": "B7",
+      "timestamp_lexical": "43088.543738425928",
+      "elapsed_lexical": "4070.2442000000001",
+      "description_cell": "D7",
+      "description": "Fire out",
+      "matched_timestamp_candidates": [
+        {
+          "sheet": "CB-DA-FireLoadingData",
+          "source_record": {
+            "row": 4072,
+            "timestamp_cell": "A4072",
+            "elapsed_cell": "B4072",
+            "timestamp_lexical": "43088.543738425928",
+            "elapsed_lexical": "4070.2442000000001",
+            "timestamp": 43088.54373842593,
+            "elapsed": 4070.2442
+          },
+          "derived_event_timestamp_minus_data_timestamp_seconds": 0.0,
+          "derived_event_elapsed_minus_data_elapsed_seconds": 0.0
+        }
+      ]
+    }
+  ],
+  "csv_export_policy": "Extract matched-pair stored values and audit clocks without modifying sources.\n\nCSV adds source_excel_row. Numeric strings retain source XML lexical precision;\nshared strings resolve to their original text; formulas use stored caches, not\nrecalculated values. Formula provenance remains in inventory's formula ledger.\nBlank and absent cells both serialize as empty CSV fields; the source XLSX and\ncolumn inventory retain their distinction. Clock deltas/date conversions are\nseparate derived diagnostics. No values are filtered, filled, or interpolated.\n"
+}

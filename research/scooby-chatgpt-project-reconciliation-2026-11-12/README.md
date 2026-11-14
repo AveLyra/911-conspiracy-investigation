@@ -37,16 +37,20 @@ This is a preservation snapshot, not a substantive reconciliation of claims, evi
 
 ## Curated ChatGPT Project source pack — Nov. 13, 2026
 
-`project-source-pack/` initially contained four searchable Markdown files designed to fit the four remaining uploaded-file slots observed in the Scooby Project (36 existing uploaded files at capture). A dated fifth file was added as a follow-up results digest:
+`project-source-pack/` began with four searchable Markdown files designed to fit the remaining uploaded-file slots observed in the Scooby Project (36 existing uploaded files at capture). Dated results and priority-status updates were added later as separate searchable files:
 
 - `00_Scooby_Index_and_Research_Results.md` — navigation for all 117 chats and 101 saved-response entries, plus the full text of all 36 result files and six chat attachments. Text/Markdown attachments are verbatim; the two PDFs include page-separated Poppler text extraction, with exact original PDFs linked.
 - `01_Scooby_Chat_Transcripts_Part_1.md` through `03_..._Part_3.md` — full user/assistant message text for all 117 chats, with timestamps, IDs, direct Project links, and the ten rendered-message text supplements.
 - `04_Scooby_Research_Results_and_Next_Stage_2026-11-13.md` — supplemental synthesis of six priority research chats and completed R13/R25 Pro follow-ups. This is a result digest, not a full transcript supplement; it does not alter the original 117-chat inventory in files 00–03.
-- `manifest.json` — byte lengths and SHA-256 checksums for all five files, with the follow-up digest explicitly separated from the original inventory snapshot.
+- `05_Scooby_Priority_Followups_and_Artifact_Access_2026-11-13.md` — archive retrieval gaps and provenance for the original priority chats.
+- `06_..._2026-11-13.md` — the updated bounded R21 result.
+- `07_Scooby_Priority_Status_Update_2026-11-14.md` — completed R01 packet index and current status.
+- `08_Scooby_Priority_Status_Update_2026-11-14.md` — recovered R08 native workbooks and benchmark gate.
+- `manifest.json` — byte lengths and SHA-256 checksums for the curated source files, with original inventory and later follow-ups distinguished.
 
 These are derived convenience copies. The raw reader JSON, exact result files, original attachments and captured message HTML remain the controlling preservation records elsewhere in this archive. The pack does not certify Deep Research completion or substantively reconcile findings.
 
 
-## Priority follow-ups — 13 Nov 2026
+## Priority follow-ups — 13–14 Nov 2026
 
-The separate `priority-followups-2026-11-13/` directory preserves eight rendered turn captures for the six priority chats and seven result artifacts that were downloadable. Its manifest lists exact SHA-256 values and records named files whose bytes could not be retrieved. The supplementary source-pack digest is `project-source-pack/05_Scooby_Priority_Followups_and_Artifact_Access_2026-11-13.md`. This supplement does not alter the original 117-chat / 36-file snapshot or claim a full account export.
+The separate `priority-followups-2026-11-13/` directory preserves eleven rendered turn captures for the six priority chats and three Pro continuations, plus sixteen result artifacts. The R01 SEC index and R08 NIST native workbook package are later completed continuations. Its manifest lists exact SHA-256 values and records named files whose bytes could not be retrieved. The supplementary source-pack digests are `project-source-pack/05_Scooby_Priority_Followups_and_Artifact_Access_2026-11-13.md`, `project-source-pack/07_Scooby_Priority_Status_Update_2026-11-14.md`, and `project-source-pack/08_Scooby_Priority_Status_Update_2026-11-14.md`. This supplement does not alter the original 117-chat / 36-file snapshot or claim a full account export.

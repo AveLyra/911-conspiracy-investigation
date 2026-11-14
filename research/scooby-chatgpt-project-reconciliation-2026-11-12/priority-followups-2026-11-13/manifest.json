@@ -1,15 +1,15 @@
 {
   "snapshot_date": "2026-11-13",
   "branch": "scooby-project-reconciliation-2026-11-12",
-  "source_chat_count": 8,
-  "captured_turn_count": 10,
+  "source_chat_count": 9,
+  "captured_turn_count": 11,
   "capture_scope": "Rendered user/assistant turns captured from signed-in ChatGPT UI; not a raw account export or full tool log.",
-  "retrieved_result_artifact_count": 12,
+  "retrieved_result_artifact_count": 16,
   "files": [
     {
       "path": "README.md",
-      "bytes": 5436,
-      "sha256": "5f7f3be6cb2ba7ceeb24a4e7429444e67aaa8f4c2bae8ca2b99a89bb1e065c19"
+      "bytes": 6298,
+      "sha256": "0fffff4d7873fb0fd519c967eb5d3422a3c4b7877f6e9bd413148fc24cb32593"
     },
     {
       "path": "chat-captures/6af73dd6-cb60-83ea-ab81-d20a0282c689-turn-01.md",
@@ -60,16 +60,6 @@
       "path": "result-files/R03/Scooby_R03_Flight93_Original_Media_Gate_2026-11-13.md",
       "bytes": 12480,
       "sha256": "82656a04b7c66f809ba9c4f4f6fc4fe573d22ced2ac39e9bece367ec545bae53"
-    },
-    {
-      "path": "result-files/R08/Scooby_R08_NIST_Heated_Connections_Source_Gate_2026-11-13.md",
-      "bytes": 13739,
-      "sha256": "d9e7dc707d1c21b349a18a1c1eccf5a66e595278de36c0b9086d8c3a7a48b36c"
-    },
-    {
-      "path": "result-files/R08/Scooby_R08_instrument_map_2026-11-13.csv",
-      "bytes": 4088,
-      "sha256": "fddfb41753b2f4e10820bcd2580d7c24d8b9d81aea20d9d14c1986ebb9880798"
     },
     {
       "path": "result-files/R21/Scooby_R21_Flight77_Raw_Reconciliation_2026-11-13.md",
@@ -135,12 +125,37 @@
       "path": "result-files/R01/packet-index/Scooby_R01_SEC_Complete_Audit_Bundle.zip",
       "bytes": 77364677,
       "sha256": "b20f89e3971780ff7a217f5d09cab324896bc376b9b28a51d7368387c71aebe7"
+    },
+    {
+      "path": "chat-captures/6af86ff2-e864-83ea-b130-fd61999c83c7-turn-01.md",
+      "bytes": 3554,
+      "sha256": "938a308222886a75ccec4d6515d96b116a3e581f09dfbb357fe1b103bc57a566"
+    },
+    {
+      "path": "result-files/R08/Scooby_R08_Native_Recovery_2026-11-14.zip",
+      "bytes": 279511104,
+      "sha256": "513dd716ee4c7df578dcc1e514be0583cc134cee9b8d2405368b4ee602622e6a"
+    },
+    {
+      "path": "result-files/R08/Scooby_R08_Delivery_Manifest_2026-11-14.json",
+      "bytes": 517,
+      "sha256": "7e9705b9e0f645c2e34d0dcc3a4fa15458895436a7904edfae56bc314955a90f"
+    },
+    {
+      "path": "result-files/R08/native-recovery/Scooby_R08_Native_Recovery_2026-11-14/Scooby_R08_Native_Recovery_Audit_2026-11-14.html",
+      "bytes": 29652,
+      "sha256": "dfdd40441d0f3b785054fa9ad0437717339c2ed320a0146d331e181331dc8cb0"
+    },
+    {
+      "path": "result-files/R08/native-recovery/Scooby_R08_Native_Recovery_2026-11-14/audit/corrected_instrument_map.csv",
+      "bytes": 1732901,
+      "sha256": "cd7e54a0958938ef2ec9bd58bb05d3a25bd84220fcc19bd4a39e737355f2c35e"
     }
   ],
   "related_project_source_pack_digest": {
-    "path": "project-source-pack/07_Scooby_Priority_Status_Update_2026-11-14.md",
-    "bytes": 6041,
-    "sha256": "0aa5b205b2f122576f23b524190eb0a93c8e82bf416626e37cc93bb08653c8c4"
+    "path": "project-source-pack/08_Scooby_Priority_Status_Update_2026-11-14.md",
+    "bytes": 5134,
+    "sha256": "d467a139d4dbcbf5c8ce2d78da536c9481e881997ad4e0e5c676bf33f94c6c83"
   },
   "unretrieved_artifacts": [
     {
@@ -160,9 +175,10 @@
     }
   ],
   "research_execution": {
-    "next_stage": "R08 NIST native workbook and instrumentation-drawing recovery",
-    "r01_status": "704/704 page accounting; 616 assigned to identified units, 88 explicitly unknown; full underlying set remains unreconstructed beneath redactions",
-    "r21_status": "56/56 sampled engineering values and 4/4 counter joins; whole-capture and historical/aircraft interpretation gates remain open",
+    "next_stage": "Prepare bounded R08 input specification: align clocks/events; establish physical sensor-validity windows; select thermal/material assumptions and uncertainty/exclusion rules. Then decide if a limited model is supportable.",
+    "r01_status": "704/704 page accounting; 616 identified units; 88 explicit unknowns; underlying set unreconstructed beneath redactions",
+    "r21_status": "56/56 selected engineering values and 4/4 counter joins; whole-capture and historical/aircraft gates remain open",
+    "r08_status": "All six NIST native XLSX files recovered and indexed; source gate passed; quantitative thermal/damage benchmark gate remains open",
     "deep_research_started": false
   },
   "new_r21_pro_followup": {
@@ -178,7 +194,7 @@
     "zip_integrity": "passed",
     "named_member_hashes": "verified"
   },
-  "retrieved_source_package_count": 2,
+  "retrieved_source_package_count": 3,
   "new_r01_pro_followup": {
     "chat_id": "6af7e906-20b8-83ea-afde-9814980811ad",
     "result": "704-page coverage index with 616 pages assigned to identified units and 88 explicit unknowns",
@@ -195,6 +211,35 @@
     "R13 result recovery ZIP unavailable in current chat view",
     "R01 prior transaction-ledger JSON remains unavailable from the earlier chat",
     "R25 first-turn packet-gate artifact bytes not retrieved",
-    "R08 NIST native workbook and drawing bytes not yet recovered"
-  ]
+    "R08 native workbooks recovered; full thermal/damage benchmark still gated on physical validity and model assumptions"
+  ],
+  "new_r08_pro_followup": {
+    "chat_id": "6af86ff2-e864-83ea-b130-fd61999c83c7",
+    "native_files": 6,
+    "native_bytes": 170176394,
+    "sheets": 30,
+    "measurement_sheets": 9,
+    "timed_records": 90340,
+    "header_occurrences": 1398,
+    "formula_cells": 217389,
+    "bundle_bytes": 279511104,
+    "bundle_sha256": "513dd716ee4c7df578dcc1e514be0583cc134cee9b8d2405368b4ee602622e6a",
+    "bundle_members": 166,
+    "bundle_sha256_checks": "165/165 passed",
+    "zip_integrity": "passed",
+    "deep_research_started": false,
+    "structural_model_run": false,
+    "source_access_gate": "passed",
+    "full_thermal_damage_benchmark_gate": "open_pending_clock_sensor_validity_thermal_and_material_assumptions",
+    "github_materialization": "166 extracted package members plus four exact ZIP reconstruction parts, each below 100 MB"
+  },
+  "r08_package_materialization": {
+    "extracted_directory": "result-files/R08/native-recovery/Scooby_R08_Native_Recovery_2026-11-14/",
+    "extracted_member_count": 166,
+    "uncompressed_bytes": 302294087,
+    "extracted_checksums": "165/165 passed with bundled scripts/verify_bundle.py",
+    "exact_zip_parts_directory": "result-files/R08/package-parts/",
+    "parts_manifest": "result-files/R08/package-parts/parts-manifest.json",
+    "note": "Exact original ZIP is retained as a local downloaded copy and as four sub-100-MB chunks on the branch; the members are individually materialized for repository browsing."
+  }
 }
