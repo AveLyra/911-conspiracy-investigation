@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-11-14T04:25:17.848723+00:00",
+  "objective": "Test whether the public excerpt has matching acoustic signal on two previously acquired archival position-14 and position-15 lines, not determine words, origin, caller, device, intent or clock.",
+  "clip_sha256": "c2ca0fa51b17036457449285871d1f337e6e0d31588af1792133b18a2a7f76f5",
+  "recording_sha256": [
+    "20bc0d4c08fbb78f784a8e18b24a402926d3ea56bfa1bdaa88392035903f4ace",
+    "27eb01802a6ff6c0c75f2046ec10ec5d4052bf783dfb9df617cba5e2a4bfb71e"
+  ],
+  "audio_method": "ffmpeg decode clip mono, source left channel, 1000 Hz s16le, highpass 80Hz lowpass 400Hz; source seek offsets 6200\u20136900 s",
+  "excerpt_window_starts": [
+    10,
+    30,
+    50,
+    70
+  ],
+  "window_length_seconds": 5,
+  "resampling_scales": [
+    0.99,
+    0.995,
+    1.0,
+    1.005,
+    1.01
+  ],
+  "match_rule": "at least 3 windows each with |r|>=0.25 and independently best source-minus-scaled-clip offset within 0.4 seconds",
+  "control": "reverse 10s window and search at 1.0 scale in same source window",
+  "limitations": [
+    "6200\u20136900 is a fixed approximate search window based on preceding position-28 locator; offsets are not times of day",
+    "No match cannot exclude event outside window or different mixing, speed or channel",
+    "Position 14 line 5114 is a candidate, not proven to correspond to transcript passage labeled 14A",
+    "Threshold is a research heuristic, not an estimate of probability or historical truth",
+    "No human listening or independent confirmation of speech"
+  ]
+}

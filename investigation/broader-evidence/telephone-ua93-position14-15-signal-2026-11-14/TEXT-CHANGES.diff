@@ -1,0 +1,34 @@
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,31 @@
++# Candidate Flight 93 relay signal on two FAA position recordings
++
++**Result.** A fixed, bounded waveform test met its selected acoustic matching rule on both a position-14 and a position-15 FAA recording. Three separated parts of a 2010 excerpt each had consistent candidate offsets in each file; the fourth did not meet the offset-consistency condition. This locates candidate audio for listening. It does **not** establish the spoken words, the passenger's device, the caller, the origin of the 911 report, wall-clock time or whether either file is the precise source used by a particular transcript.
++
++## Sources and preserved observations
++
++- The [position-14 transcript, PDF pp. 60–61, and position-15 transcript, pp. 81–82](https://github.com/AveLyra/911-conspiracy-investigation/blob/c056507750912f15a4476fb757b65677b5211e04/investigation/broader-evidence/telephone-ua93-tactical-transcript-2026-11-14/README.md), contain overlapping descriptions of a reported Flight 93 call and preserve both “air phone” and “cell phone” terms. They differ in a short adjacent statement and identify simultaneous conversations. The reason for that textual difference remains unresolved.
++- The [NARA position-14 recording](https://catalog.archives.gov/id/7598795) is indexed as DCC-1938, line 5114, 1215–1415 UTC. The [position-15 recording](https://catalog.archives.gov/id/7598742) is indexed as DCC-1912, line 5115, 1215–1415 UTC. The position-14 transcript's relevant part identifies a position **14A**; the relationship of that transcript part to line 5114 has not been proven. The two media files were previously acquired and preserved; this run rechecked their complete SHA-256 hashes. Exact source URLs and hashes are in [SOURCE-PINS.json](SOURCE-PINS.json).
++- The compared 90.835750-second excerpt was published with a [2010 secondary account](https://www.oredigger61.org/?p=2248) attributing it to position 28. It may share the same underlying transmissions as the other records and is not independent testimony. A [previous whole-file test](https://github.com/AveLyra/911-conspiracy-investigation/blob/e0cc819ebb6827b69149ac0eb30a073b1fe2ba75/investigation/broader-evidence/telephone-ua93-clip-audio-correlation-2026-11-14/README.md) did **not** pass its fixed threshold on position 28 or the separate position-4 recording. Its post-result exploratory follow-up identified a candidate position-28 location. Those earlier results remain unchanged. This new test uses different source files, left channel, bounded window and candidate speed scales; the relationship between the results remains unadjudicated.
++
++## Fixed test and results
++
++Before running, [PLAN.json](PLAN.json) specified source playback offsets 6200–6900 seconds, four five-second clip windows starting at 10, 30, 50 and 70 seconds, and five candidate time scales from 0.99 to 1.01. The 2010 excerpt was decoded as mono, source files as left channel; all were filtered to 80–400 Hz and sampled at 1,000 Hz. The heuristic required at least three windows with absolute normalized correlation of **0.25 or more** and derived source-minus-scaled-excerpt offsets agreeing within **0.4 seconds**. A reversed first clip window, at scale 1.0, was a negative control. This selected threshold is not a calibrated probability. [ANALYZE.py](ANALYZE.py) and [RESULTS.json](RESULTS.json) give the implementation and all scale candidates.
++
++| Recording | Qualifying clip windows, seconds | Coefficients for those windows | Derived candidate offsets, seconds | Reversed control peak |
++| --- | --- | --- | --- | --- |
++| Position 14, line 5114 | 10, 30, 50 | -0.264106, 0.288755, 0.282575 | 6651.862, 6651.908, 6652.085 | 0.177603 |
++| Position 15, line 5115 | 10, 30, 50 | 0.356374, 0.337290, 0.309916 | 6639.549, 6639.706, 6639.618 | -0.183690 |
++
++For the 70-second window, the best coefficients were **0.332414** and **-0.322366**, but the derived offsets **6652.910** and **6640.453** were outside the selected 0.4-second consistency condition. They are not counted among the three qualifying windows. Signs are retained; the rule used absolute coefficients. Five scales and many sample positions were searched, while the reverse control used only one scale. The control and threshold do not constitute an exhaustive null distribution or an independently established false-match rate.
++
++Offsets are **decoder-seek-based file locators**, conditional on the chosen scale, not event times. Differences between file offsets cannot be converted into clock differences without independent calibration. The bounded search could miss another passage outside the window. Correlation supports a candidate shared signal under this method; it does not by itself validate a transcript or prove which file produced an excerpt.
++
++## Verification and TODOs
++
++The source files were hash-checked and the same analysis rerun in a separate output directory: the two JSON results matched byte-for-byte. Both runs used the same implementation and environment, so this demonstrates repeatability, not independent replication or listening. FFmpeg 7.1.1, Python 3.13.7, NumPy 2.3.4 and SciPy 1.16.2 were used. Run `python3 ANALYZE.py CLIP.mp3 POSITION14.mp3 POSITION15.mp3` in a new empty directory with the exact inputs listed in the source pins. Raw audio is retained in the verified media store and linked from its public sources, not republished here.
++
++- [ ] Independently listen to the candidate portions and compare them with the scanned position-14 and position-15 transcripts, preserving inaudible or overlapping material. Determine which, if any, recording corresponds to the position-14A transcript part.
++- [ ] Obtain two independent time anchors and the recording lineage before estimating event times or comparing offsets across files.
++- [ ] Locate the original Oak Brook dispatch recording or log, and carrier/operator records, and establish their connection to this relay. A bounded public search did not locate those records; it cannot show they do not exist.
++- [ ] Preserve the differing transcript words, prior failed test and all other possible interpretations. No finding of fabrication, concealment or conspiracy follows from this acoustic test.
