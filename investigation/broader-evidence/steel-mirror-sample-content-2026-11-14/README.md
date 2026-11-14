@@ -1,0 +1,26 @@
+# WTC 7 drawing mirror: three image checks against directory labels
+
+November 14, 2026 UTC · STL02–STL03 / B188 / H005. Three newly retrieved TIFF members show content consistent with their mirror-directory labels: two detail drawings and one floor-framing plan. A previously reviewed PDF provides a separate erection-plan example. These are **four examples**, not an audit of all 2,587 files or proof that the mirror reproduces the original disks or NIST's 2007 acquisition.
+
+## Selected images
+
+| Public mirror member | Visually checked evidence | Scope |
+| --- | --- | --- |
+| `Detail Sheets 1/0605.TIF` | Frankel title block labels sheet **605**, and the drawing labels **one beam A605**. | One selected sheet; no engineering validation or installed-piece identification. |
+| `Detail Sheets 2/7WTC - D2/1470.TIF` | Frankel title block gives drawing **1470** and describes a **column, 11th tier, Zone 2**. | One selected sheet; no custody or W14A identification. |
+| `E Sheets/7WTC - E1/E26_27.tif` | Frankel title block gives sheet **E26/27** and describes the **26th/27th-floor framing plan**. | One selected plan; no claim that all E-sheet entries contain one drawing. |
+| `E Sheets/WTCI-000262-I.PDF` | The [earlier review](https://github.com/AveLyra/911-conspiracy-investigation/blob/9eae3c08856e37947937a0471de17314cf3e1169/investigation/broader-evidence/steel-frankel-release-scope-2026-11-06/README.md) identified **E1** and two views of a first-floor framing plan. | Previously inspected PDF; it was not reacquired in this unit. |
+
+The three TIFFs were deliberately selected as one example from each TIFF folder, using the middle entry of the first detail directory, the first entry of the second detail directory, and the middle entry of the E-sheet TIFF directory in the saved central-directory order. They are not a random or representative sample. The visual check covers the title and drawing context shown above, not every annotation or engineering feature.
+
+Their displayed contents are consistent with the requester’s reported detail-versus-erection grouping and the [directory-count test](https://github.com/AveLyra/911-conspiracy-investigation/blob/d8463dfd850ac1a6e1f3d9314ef83c66dcfae238/investigation/broader-evidence/steel-mirror-directory-groups-2026-11-14/README.md). This is more than a filename-only observation for these examples, but it cannot classify uninspected members or join the later release to NIST's separate **2,565 shop drawings** statement. The reported **2001–2999** gap, mirror's numeric **2001–3000** gap and differing completeness accounts remain attributed and unresolved. No conclusion about concealment, original holdings, actual construction or recovered steel origin follows.
+
+## Acquisition and integrity
+
+Each TIFF was fetched from the [public ZIP mirror](https://archive.org/download/911datasets/NIST_WTC7_FOIA_12-009.zip) by a bounded byte-range request on November 14, 2026 UTC. The local ZIP header/member path, compressed-record method, decompressed length and CRC-32 were checked against the previously pinned central directory; the resulting member bytes were saved unchanged on the verified media store, rehashed and visually inspected. All three TIFFs report one image frame; their dimensions, exact member paths, byte ranges, CRC values and SHA-256 hashes are in [SOURCE-PINS.json](SOURCE-PINS.json). The original full ZIP, original four disks, the 2007 intake inventory and file-to-sheet mapping were not acquired here. Range and CRC consistency verify those selected mirror members against the held index, not historical authorship or completeness.
+
+## Remaining records
+
+- [ ] Acquire the 2007 drawing transmittal, original sheet register and 12-009 disk manifests; map drawing number, revision and file bytes before assessing set identity.
+- [ ] Retrieve missing fabrication-sheet candidates, including A2682, and underlying statements about drawing-set completeness. Check alternate file names and combined sheets.
+- [ ] Obtain W14A field markings, measurements, custody and NIST building-attribution rationale. The selected images do not identify W14A.
