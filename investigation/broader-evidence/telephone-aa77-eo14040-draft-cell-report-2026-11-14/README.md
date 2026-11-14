@@ -1,0 +1,24 @@
+# Flight 77 telephone accounts: FBI draft and 2004 briefing
+
+TEL02–TEL04 / AUD016-A1 / B105–B110. Reviewed 2026-11-14T15:26:28.632821+00:00. An FBI draft and a later Commission memorandum describing a DOJ briefing give different descriptions of the telephone service used on Flight 77. The observations below preserve each account. They do not establish which device carried a particular call or why the accounts differ.
+
+## Observations
+
+1. The [FBI Executive Order 14040 release, 2-C part 5](https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials/9-11-material-released-in-response-to-executive-order-14040/documents-responsive-to-executive-order-14040-2-c-part-5/at_download/file#page=195), PDF page **195**, printed page **54**, Bates **EO14040-002917**, describes seven attempted Airphone calls. Beneath that list it states that **two private cellphone calls were made in addition**. It cites a **WFO EC dated September 17, 2001** under the list; the separate cellphone paragraph cites a September 28 source and a September 11 interview reference, with names redacted. The page says **“DRAFT; SOURCING OF INFORMATION INCOMPLETE.”** Its authorship, preparation date, source completeness and subsequent revisions were not established in this review. A timestamp in a source citation is not the date of the draft. The page also contains a potentially sensitive number; this analysis does not reproduce it or the image.
+2. A [May 20, 2004 Commission staff memorandum of a DOJ briefing](https://www.scribd.com/document/18886083/T7-B12-Flight-93-Calls-General-Fdr-5-20-04-DOJ-Briefing-on-Cell-and-Phone-Calls-From-AA-77-408), page 1, reports that all Flight 77 calls were made through the onboard Airphone system. The same memorandum says the briefers relied on flight phone records, passengers’ cellphone records and interviews. The held 2004 text and previously reviewed scan support that wording; the current pass did not independently rehash or re-render the 2004 scan. The original underlying records and briefing exhibits were not acquired here.
+
+## Scope and uncertainty
+
+The first account is a **draft description**, not a carrier event log or a final verified finding. The second is a staff memorandum reporting a briefing, not the underlying records. They are an apparent conflict in source descriptions, not an independently verified event-by-event contradiction. Neither identifies the same two specific events in a way this review can join across sources. Do not infer the identities under redactions, treat the repeated timestamps as unique calls, or interpret unlabeled zeros as failed calls. The eight/seven, 159/154, connected/unconnected and direct/collect observations in the [earlier event census](https://github.com/AveLyra/911-conspiracy-investigation/blob/c765a0a11042c7609415d09eb43c9dc1cf982d74/investigation/broader-evidence/telephone-aa77-event-census-2026-11-02/README.md) remain separate; consult its source-specific values, not a harmonized count.
+
+**Untested possibilities:** the sources could cover different populations or event definitions, rely on different information, or include an error. These are alternatives to investigate, not resolutions. Neither the difference nor this review establishes fabrication, suppression, intent, or any historical cause.
+
+## Next discriminating records
+
+- The cited WFO September 17 communication and attachments, the cited interview and September 28 source, and any subsequent corrections or draft-version records.
+- Carrier or operator event data with device/service identifiers, clock definitions, caller/destination attribution and the worksheets joining those events to each interview and briefing row.
+- The 2004 briefing exhibits, source records and revision history. A current rehash and visual check of that scan remain open for this comparison.
+
+## Verification and provenance
+
+The FBI PDF was previously acquired October 26, 2026 from the linked FBI Vault URL. On 2026-11-14T15:26:28.632821+00:00 the operational copy on the verified Intel store was rehashed: SHA-256 `9b5403658314bc650d98eca56f4680613a57c6953a31386b434184f0b234a1ba`, matching the acquisition ledger. We rendered and visually inspected page 195; the retained render SHA-256 is `96feb5d610187679af60781a7c6248eafecaa6c4a7177670033f552169a892d4`. A preexisting text extraction independently reproduces the relevant wording, but is another representation of the same document, not corroboration of the reported events. The 2004 scan’s earlier review recorded SHA-256 `6aa59ba8e2162f6db1a77a39dd64337edf185680938f68a97f1354773f0d7eda`; that value was **not recalculated in this pass**. See [source pins](SOURCE-PINS.json). Full scans, numbers, private case information and correspondence are excluded.
