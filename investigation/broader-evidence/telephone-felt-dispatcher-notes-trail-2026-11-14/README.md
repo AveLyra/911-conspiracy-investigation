@@ -1,0 +1,20 @@
+# Flight 93 911 call: two documentary leads to dispatcher notes
+
+2026-11-14 UTC · telephone track AUD016-A1. Two independently dated documents point to potential contemporaneous notes by dispatcher John Shaw. Neither document reviewed here establishes that the notes were actually turned over, stored, supplied to the Commission, or preserved today.
+
+## Records and their precise claims
+
+- A released FBI summary says Shaw was interviewed September 11, 2001; the form bears a September 13 transcription date. It reports that he affirmed he had made handwritten notes of the call, was asked and agreed to sign, date and turn them over, and that the notes **“will be maintained in the 1-A section of this file.”** [FBI scan, physical p. 42](https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip/NARA_9-11_Commission_Records_Released_Jan_14_2009/911%20NARA/Team%201A%20Files/Team%201A%20Box%2033/T1A%20B33%20Four%20Flights-%20Phone%20Calls%20and%20Other%20Data%20Fdr-%20Entire%20Contents-%20FBI%20302s%20843.pdf#page=42), extracted lines 46–49; PDF SHA-256 `3b2f5f67f4e649236e77922c8922f93dced518e2e3f8255473da89c1747a92fe`. The future wording records a stated plan; this page is not a receipt, inventory, copy of the notes, or proof of actual filing.
+- A [May 14, 2004 Commission question list, physical p. 2](https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip/NARA_9-11_Commission_Records_Released_Jan_14_2009/911%20NARA/Team%207%20Files/Team%207%20Box%2021/T7%20B21%20Team%207%20Misc%20Docs%20Fdr-%205-14-04%20List%20of%20Questions%20for%20DOJ%20264.pdf#page=2), question 11, asks DOJ for contemporaneous notes and written statements, excluding FBI 302s, and lists **“John Shaw (Felt UA 93)”** among people understood to have taken notes. Extracted lines 24–34; document date p. 1 line 1. PDF SHA-256 `63bbdde74e5d44e78a251a75f9647247cb9613b2a9e0013c4cbdfcea57354789`. This is a request and a staff understanding, not a DOJ response or production receipt.
+
+The two references are consistent with a possible same-notes trail; **the identity of the notes is not established**. The later request does not prove the 2001 planned transfer failed, and the earlier summary does not prove the later request was fulfilled. Neither implies suppression. The Commission question names Shaw and associates him with Felt; the FBI form preserves its own source context. No source was changed to force a match.
+
+## Why the lead matters and what remains open
+
+If preserved and authentic, a contemporaneous note could be compared with the existing FBI interview accounts and the released call transcript. It may support, contradict, or add no useful detail to those accounts. The [previously published transcript comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/9e45ee928f4a655b671d68fe196ab73ccc5b4099/investigation/broader-evidence/telephone-felt-transcript-comparison-2026-11-14/README.md) and locally prepared interview comparison preserve the existing differences; no audio or note was examined here.
+
+**TODO:** locate the signed and dated notes, the FBI 1-A inventory and actual receipt/custody records, DOJ's response to question 11 and any attachment list or transmittal, and Commission receipt or archival descriptions. Check whether the documents refer to the same notes; retain contrary results. The local Intel media share was unavailable in this step. No third party was contacted and no records request was sent.
+
+## Verification and preservation
+
+Both PDF hashes and selected text anchors were checked; the question and note paragraphs were visually inspected. These checks establish what the retained scans say, not the history of the notes. [Source pins](SOURCE-PINS.json) record the public release URLs and acquisitions. Raw scans and contact details are not copied into this public derivative. This is an additive note; the accompanying diff is against an empty predecessor and previous reports remain unchanged.
