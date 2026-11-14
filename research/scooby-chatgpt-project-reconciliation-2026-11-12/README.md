@@ -45,3 +45,8 @@ This is a preservation snapshot, not a substantive reconciliation of claims, evi
 - `manifest.json` — byte lengths and SHA-256 checksums for all five files, with the follow-up digest explicitly separated from the original inventory snapshot.
 
 These are derived convenience copies. The raw reader JSON, exact result files, original attachments and captured message HTML remain the controlling preservation records elsewhere in this archive. The pack does not certify Deep Research completion or substantively reconcile findings.
+
+
+## Priority follow-ups — 13 Nov 2026
+
+The separate `priority-followups-2026-11-13/` directory preserves eight rendered turn captures for the six priority chats and seven result artifacts that were downloadable. Its manifest lists exact SHA-256 values and records named files whose bytes could not be retrieved. The supplementary source-pack digest is `project-source-pack/05_Scooby_Priority_Followups_and_Artifact_Access_2026-11-13.md`. This supplement does not alter the original 117-chat / 36-file snapshot or claim a full account export.
