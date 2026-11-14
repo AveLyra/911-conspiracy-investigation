@@ -1,15 +1,15 @@
 {
   "snapshot_date": "2026-11-13",
   "branch": "scooby-project-reconciliation-2026-11-12",
-  "source_chat_count": 7,
-  "captured_turn_count": 9,
+  "source_chat_count": 8,
+  "captured_turn_count": 10,
   "capture_scope": "Rendered user/assistant turns captured from signed-in ChatGPT UI; not a raw account export or full tool log.",
-  "retrieved_result_artifact_count": 9,
+  "retrieved_result_artifact_count": 12,
   "files": [
     {
       "path": "README.md",
-      "bytes": 4947,
-      "sha256": "995be94c7f232a53534147931354d6e61ddfde3803f070599db6af57940c4624"
+      "bytes": 5436,
+      "sha256": "5f7f3be6cb2ba7ceeb24a4e7429444e67aaa8f4c2bae8ca2b99a89bb1e065c19"
     },
     {
       "path": "chat-captures/6af73dd6-cb60-83ea-ab81-d20a0282c689-turn-01.md",
@@ -110,12 +110,37 @@
       "path": "result-files/R21/source-inputs/Flight77_Reproducible_Audit_2026-11-12.zip",
       "bytes": 55468480,
       "sha256": "528cdb88a2010a66af9fd6f30ddfb6b048a49b0b1da15f2c754e079ffa5fc442"
+    },
+    {
+      "path": "chat-captures/6af7e906-20b8-83ea-afde-9814980811ad-turn-01.md",
+      "bytes": 5478,
+      "sha256": "659e50ec08b91317e74f9e4a0b1191cfee611b58e62d37f77d01a6015336fdb1"
+    },
+    {
+      "path": "result-files/R01/packet-index/Scooby_R01_Coverage_and_Reconciliation.pdf",
+      "bytes": 110122,
+      "sha256": "28519b31aba4e37aec049ffb31860f1d6eba2a75638d2dd97a85b0dc153ecb2c"
+    },
+    {
+      "path": "result-files/R01/packet-index/Scooby_R01_Coverage_and_Reconciliation.txt",
+      "bytes": 19868,
+      "sha256": "de1a7292875f0381e5fe1ec3d2104b8c86be2a0ca7949ecd35f1f0faac23bc7d"
+    },
+    {
+      "path": "result-files/R01/packet-index/Scooby_R01_SEC_704_Page_Index.json",
+      "bytes": 1917040,
+      "sha256": "2f1482e31f387a9c1df5e595e84a7e3f11fb30c8b018501c28d325f5d6f1dedf"
+    },
+    {
+      "path": "result-files/R01/packet-index/Scooby_R01_SEC_Complete_Audit_Bundle.zip",
+      "bytes": 77364677,
+      "sha256": "b20f89e3971780ff7a217f5d09cab324896bc376b9b28a51d7368387c71aebe7"
     }
   ],
   "related_project_source_pack_digest": {
-    "path": "project-source-pack/06_Scooby_Priority_Status_Update_2026-11-13.md",
-    "bytes": 5095,
-    "sha256": "110fc2244f2afde2011f9c08093f01809f126ca6eb2f06c41d99ac607e299224"
+    "path": "project-source-pack/07_Scooby_Priority_Status_Update_2026-11-14.md",
+    "bytes": 6041,
+    "sha256": "0aa5b205b2f122576f23b524190eb0a93c8e82bf416626e37cc93bb08653c8c4"
   },
   "unretrieved_artifacts": [
     {
@@ -126,7 +151,7 @@
     {
       "chat_id": "6af73f14-5a24-83e9-a414-74e689bffc8c",
       "name": "Scooby_R01_transaction_ledger_2026-11-13.json",
-      "status": "Preview returned “Couldn’t load this file”; download did not complete."
+      "status": "Preview returned \u201cCouldn\u2019t load this file\u201d; download did not complete."
     },
     {
       "chat_id": "6af73f56-a568-83e9-b5e3-d6c54fce6e85",
@@ -135,8 +160,9 @@
     }
   ],
   "research_execution": {
-    "next_stage": "R01 SEC packet index, followed by R08 native NIST workbook recovery",
-    "r21_status": "Bounded raw-to-export reconciliation complete; whole-capture equivalence and historical/aircraft interpretation gates remain open",
+    "next_stage": "R08 NIST native workbook and instrumentation-drawing recovery",
+    "r01_status": "704/704 page accounting; 616 assigned to identified units, 88 explicitly unknown; full underlying set remains unreconstructed beneath redactions",
+    "r21_status": "56/56 sampled engineering values and 4/4 counter joins; whole-capture and historical/aircraft interpretation gates remain open",
     "deep_research_started": false
   },
   "new_r21_pro_followup": {
@@ -152,5 +178,23 @@
     "zip_integrity": "passed",
     "named_member_hashes": "verified"
   },
-  "retrieved_source_package_count": 1
+  "retrieved_source_package_count": 2,
+  "new_r01_pro_followup": {
+    "chat_id": "6af7e906-20b8-83ea-afde-9814980811ad",
+    "result": "704-page coverage index with 616 pages assigned to identified units and 88 explicit unknowns",
+    "official_pdf_bytes": 74063160,
+    "official_pdf_sha256": "77b983db8bf9cc18697ceb645d849cd1f2c602ce717d8e385c1e19c50dfba8a7",
+    "report_sha256": "28519b31aba4e37aec049ffb31860f1d6eba2a75638d2dd97a85b0dc153ecb2c",
+    "index_sha256": "2f1482e31f387a9c1df5e595e84a7e3f11fb30c8b018501c28d325f5d6f1dedf",
+    "bundle_sha256": "b20f89e3971780ff7a217f5d09cab324896bc376b9b28a51d7368387c71aebe7",
+    "bundle_zip_integrity": "passed",
+    "bundle_validation": "12 passed, 0 failed",
+    "deep_research_started": false
+  },
+  "known_retrieval_gaps": [
+    "R13 result recovery ZIP unavailable in current chat view",
+    "R01 prior transaction-ledger JSON remains unavailable from the earlier chat",
+    "R25 first-turn packet-gate artifact bytes not retrieved",
+    "R08 NIST native workbook and drawing bytes not yet recovered"
+  ]
 }

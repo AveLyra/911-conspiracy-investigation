@@ -1,0 +1,208 @@
+             R01 · SEC packet audit
+             Complete page index
+             and source reconciliation
+             704-page official packet · Verified bytes · 14 November 2026 UTC
+             Every physical PDF page is accounted for. The index assigns 616 pages to identified units and
+             explicitly preserves 88 leaves with unknown identity or relationship. Redaction prevents complete
+             reconstruction of the underlying document set. The arithmetic corrections do not supply evidence of
+             foreknowledge or overturn the documented SEC/FBI no-evidence conclusion.
+              Physical pages                 Identified pages               Explicit unknowns             Omitted pages
+              704                            616                            88                            0
+             Exact official source
+             https://www.sec.gov/files/records-provided-9-11-commission.pdf
+              Property                    Verified result
+              HTTP / URL                  200; final URL is the requested SEC URL above. Direct complete GET; no alternate copy
+                                          substituted.
+              Retrieval                   2026-11-14 04:53:45–04:53:51 UTC
+                                          (2026-11-13 23:53 America/New_York).
+              Size / pages / format       74,063,160 bytes · 704 physical pages · PDF 1.7 · unencrypted.
+              Title / author              Records Provided to the 9/11 Commission; author metadata empty.
+              Creator / producer          Adobe Acrobat (64-bit) 25.1.20577 / eCopy ShareScan.
+              Creation / modification     2025-08-15 10:48:40 −04:00 / 2026-04-27 17:48:27 −04:00. These are PDF metadata
+                                          dates, not dates of the original records.
+              HTTP Last-Modified          Mon, 27 Apr 2026 21:49:34 GMT.
+             SHA-256
+             77b983db8bf9cc18697ceb645d849cd1
+             f2c602ce717d8e385c1e19c50dfba8a7
+             Provenance: official-get.json contains request/response headers, UTC timestamps and byte hash; pdf_metadata.json
+             retains metadata/XMP. The complete original PDF is included unchanged in the audit bundle. Official landing page: SEC
+             records provided to the 9/11 Commission.
+           SCOOBY · R01 · SOURCE AUDIT · 2026-11-14 UTC                                                                             1
+            Coverage and how to read the index
+            The JSON contains 704 unique page records, 170 primary index units and two embedded
+            texts. Units include documents, attachments, dividers and separately titled report sections; this
+            count is not a claim that 172 distinct original documents can be recovered. Each page has a stable
+            ID, source URL with a page locator, visible pagination/Bates, markings, uncertainty, OCR locator and
+            render/OCR hashes.
+             Unknown class             Pages retained explicitly
+             73 redacted leaves        460–467, 469–478, 486–495, 566, 574–575, 596–598, 612–620, 624–653.
+             10 blank leaves           375, 377, 395, 397, 412, 426, 428, 430, 468, 518. Some retain fax/reproduction marks.
+             5 unresolved dividers     530, 563, 567, 570, 572. Their visible character is recorded; a parent is not invented.
+            Boundaries follow the visible pages
+            The pdf_pages list is authoritative. Start/end are only envelopes when documents are
+            non-contiguous. Examples include the German MOU interrupted by other material and resumed in
+            reverse order (396,398–408,415–418), and the Québec letter on 534/538 surrounding its name-list
+            attachment on 535–537. The Master List (54–240), NASD Travelocity section (352–357) and August
+            statement (519–529) were joined across review ranges only after visual confirmation.
+            Bates text is not extrapolated. PDF 372 visibly reads RFBI 03003674, while the bookmark says
+            RSEC03003674. PDF 455’s handwriting reads RSEC 0301727, while the bookmark says
+            RSEC03010727. Uncertain or overwritten identifiers remain qualified. A bookmark is metadata, not a
+            visible page stamp.
+            Appendix lettering is also preserved: the contents at PDF 21 list databases as D, while PDF 25
+            actually says Appendix C: Databases Created. Repeated full-redaction images are flagged as
+            identical renders, without claiming that the hidden originals are duplicates.
+            Inspection and limits
+            All pages were rendered at 200 dpi and visually reviewed. OCR supported navigation; difficult
+            identifiers and reconciliation passages were enlarged or oriented. Dense transaction tables were
+            inspected for identity, extent and relevant evidence, not re-keyed as certified trade data. Exact
+            legible markings are retained; page-level notes identify limits on repeated small-label typography.
+            Redacted identities are not reconstructed.
+            Tools: Python 3.12.14 urllib/hashlib; PyMuPDF 1.26.6; pypdf 6.21.4; pdfinfo 26.05.0; pdftotext 25.03.0; Tesseract 5.5.0
+            (English, psm3); Pillow 13.0.0. Report: ReportLab 4.4.9. Final structural validation checks page uniqueness,
+            assignments, non-contiguous membership, CSV agreement, hashes and source integrity.
+           SCOOBY · R01 · SOURCE AUDIT · 2026-11-14 UTC                                                                    2
+            Volume corrections and newsletter arithmetic
+            Canceled 500: aggregate corrected, allocation unproved
+            Observed: the original memo prints 2,075 UAL puts for September 6. The May 2004 fax includes an
+            OCC page with 3,150 put contract-sides and a Market Watch page with a circled CXL 500.
+            Arithmetic: 3,150 ÷ 2 = 1,575, matching 2,075 − 500. The eight buy quantities in the 642 C
+            clearing-firm/customer-class block total 2,000; removing the marked row leaves 1,500 in that
+            block.
+            Limit: this is not a beneficial-account allocation ledger. It does not establish that a particular adviser
+            client held the canceled 500 or all remaining 1,500. The marked row carries B/O; the follow-up calls
+            the canceled transaction a sale. A counterparty/perspective match is not established. The 2004
+            summary attributes the explanation to Cella and Ribelin: a recorded witness account, not sworn
+            testimony or a native audit trail. The old 2,000/96% adviser narrative must not be recalculated
+            against 1,575 without a verified numerator.
+            SEC PDF 9 and 696–698 — memo opens RSEC 03003652 at 2; fax cover RSEC 04019095 at 696; no Bates asserted on
+            697–699. Cella follow-up PDF 21–22 — MFR04019347 at 21; provenance caveat on page 6.
+            Use the convention printed on these OCC reports
+             Reported inputs                                 Derived contracts          Remaining issue
+             UAL puts: 3,150 sides                           1,575                      Corrects the original 2,075
+                                                                                        aggregate.
+             UAL calls: 70 UAL + 40 LUA + 14 VUA = 124       62 across those roots; 35  Original memo’s 87 remains
+             sides                                           UAL alone                  unexplained. LUA/VUA are
+                                                                                        annotated LEAP.
+             AMR puts: 4,516 AMR + 40 VMR = 4,556 sides      2,278; VMR contributes     Four below original 2,282; VMR is
+                                                             20                         annotated LEAP.
+             AMR calls: 748 sides                            374                        Handwritten annotation says 375.
+            SEC PDF 697 and 699; the same sides÷2 instruction appears on BA query pages 577–586. This is a convention of these
+            specific historical reports, not every OCC series. Aggregate volume is not necessarily opening purchases.
+            Newsletter: preserve the printed discrepancy
+            PDF 10 gives 388 contracts plus 365, but prints 763. 388 + 365 = 753, a ten-contract discrepancy.
+            It says 28 purchasers were interviewed and 26 cited the newsletter; “They” is ambiguous as the
+            antecedent for 388. The additional 27 are identified as subscribers, which does not itself prove their
+            purchase motive. No visible purchaser schedule resolves the error. The quoted recommendation and
+            reported distribution do not establish receipt or reliance by every buyer.
+            SEC PDF 10–11; printed 9–10 — memo opening RSEC 03003652 at 2.
+          SCOOBY · R01 · SOURCE AUDIT · 2026-11-14 UTC                                                                   3
+        Accounts, copied-row hypothesis and databases
+        Portfolio context does not establish account allocation
+        The SEC memo describes a U.S. adviser managing several hedge funds with $5.3 billion. It says staff
+        interviewed the CEO/trader and reviewed account statements; the FBI also interviewed them. The
+        reported airline strategy includes September 6 shorts of 1,800 AMR, 8,700 Continental and 18,500
+        Delta shares; later shorts of 3,800 Delta and 500 Northwest; and September 10 purchases of
+        115,000 AMR shares alongside 117,000 UAL shares sold short.
+        These are agency summaries of interviews and records. They do not show that every position
+        belonged to one beneficial account. No visible identifier bridge ties the redacted managed-account
+        forms/statements to the principal adviser, the canceled 500 or the separate loss example. Different
+        issuers’ share counts cannot be treated as a portfolio offset; prices, allocations and complete
+        positions are missing.
+        SEC PDF 9–10; printed 8–9 — RSEC 03003652 at memo opening 2.
+        The $85,000 loss belongs to a distinct reported example
+        The official Commission staff monograph describes a September 7 New York hedge fund with $2
+        billion under management, UAL puts, short UAL calls and 29,000 UAL shares, and reports an
+        $85,000 decline in value when markets reopened. Its date, fund size and positions distinguish it from
+        the September 6 $5.3 billion adviser example. This is a reported staff finding, not replicated P&L.
+        Commission monograph PDF 151–152; printed 148–149 — no visible Bates; separate source, not part of the 704-page
+        count.
+        September 5/7 copying remains a hypothesis
+        The original UAL rows are 111 calls / 605 puts on September 5 and 111 / 606 on September 7.
+        They are not literal duplicates. The May 2004 memo records the witnesses’ suggestion of a copied
+        row; neither a copy operation nor a corrected replacement row is demonstrated.
+        SEC PDF 9; printed 8; Cella follow-up PDF 21 — MFR04019347.
+        MaST, the disc image and NYSE Master List are distinct evidence
+        PDF 25 describes SEC MaST; PDF 449 says a CD containing MaST was delivered; PDF 623 depicts a
+        disc labelled MASTS / REQUEST #2 / RSEC03010731. The NYSE Master List is the printed
+        Exhibit E at 54–240. NASD’s promised February 2002 CD and Cella’s description of SEC data supplied
+        to DOJ/Seisint are separate transfer accounts. No manifest, schema, checksum or identifier crosswalk
+        equates them. The official PDF contains no embedded native files or file-attachment annotations.
+        SEC PDF 25,449,623 — RSEC03003652C; RSEC 03010722; RSEC03010731. SEC PDF 54–240 and 260–261 — NASD
+        cover RSEC03003652F. Cella interview PDF 9 — MFR03010885 at 1.
+       SCOOBY · R01 · SOURCE AUDIT · 2026-11-14 UTC                                   4
+            Foreign referrals: what the visible originals
+            establish
+            The substantive outcome and the permission to disclose a report are separate. The following
+            distinctions preserve both the agency conclusions and gaps in the public packet. The reconciliation
+            JSON gives the full page/Bates locator set for every row.
+             Jurisdiction         Observed record and permissible conclusion
+             Australia            ASIC/ASX emails report no evidence to date while work continues. The November 8, 2001
+                                  memo finds no direct association from supplied names, notes possible indirect associations,
+                                  and requests clarification. October 24, 2003 is disclosure consent, not final case clearance.
+                                  PDF 587–595,659–660; RSEC 03010730 at 587; RSEC 03012419 at 659.
+             Québec / Montréal    September 21: no unusual TD Waterhouse options activity; other work ongoing. December 12:
+                                  completed review of all Bourse-listed futures/options markets, August 27–September 11, with
+                                  no unusual activity; sent December 17. Separate name inquiries still seek identifiers.
+                                  PDF 603–607,658; RSEC 03010730D at 603; RSEC 03012418 at 658.
+             Singapore            October 17: no unusual price/volume in nine listed U.S.-registered securities/products over
+                                  August 27–September 11; further trading-record review continues. No final trader-by-trader
+                                  outcome supplied.
+                                  PDF 608–609; RSEC 03010730E at 608.
+             Switzerland          October 4: initial information and ongoing exchange/customer work. The attachment at
+                                  661–686 is a securities universe. A March 8, 2002 report is listed as reviewed at SEC offices;
+                                  the index cannot substitute for its contents.
+                                  PDF 599–601,661–686,704; RSEC 03010730B at 599; RSEC 03012420 at 661.
+             France               October 3: nothing unusual noticed except AXA among four requested listed securities.
+                                  October 16 seeks AXA owners/delivery information; the SLAB table at 655 is present. These do
+                                  not supply a final AXA outcome or the native 580-plus-page workbook referenced elsewhere.
+                                  PDF 610–611,655,687–695; RSEC 03010730F,03011670,03012422,03012423 at the respective
+                                  openings.
+             Hong Kong / Brazil   Hong Kong’s visible annex concerns post-attack solicitation fraud, not pre-attack trading
+                                  clearance. Brazil’s visible item is a translated newspaper article about Embraer, not a
+                                  regulator’s final disposition.
+                                  PDF 602,621–622,702; RSEC 03010730C at 602.
+            No redacted account is identified from a similar name. No unresolved visible link is treated as proof of illicit trading.
+            The full matrix also distinguishes Germany, the Netherlands, Italy, Japan and the UK on the next page.
+           SCOOBY · R01 · SOURCE AUDIT · 2026-11-14 UTC                                                                    5
+          Documented conclusion, scope and remaining
+          limits
+          Foreign records: production status is not a merits outcome
+          PDF 702 lists German letters of December 5, 2001/April 29, 2002 and Dutch letters of January 14/17,
+          2002 as produced. It does not reveal their transaction-level findings. The May 2002 SEC memo
+          separately reports German officials’ statement that their inquiry had found no unusual trading.
+          November 2003 letters address disclosure permission; by November 17, UK and Italy reports could
+          be shown at SEC offices alongside Japan’s. The final index lists Italy, Japan, the UK and a March 8,
+          2002 Swiss report as not produced but reviewed at SEC offices.
+          SEC PDF 7,444–449,654,700–704 — RSEC 03010224 at 444/445; RSEC 03010722 at 449; RSEC 03011669 at 654.
+          RSEC04021411 at 700 is a bookmark only.
+          Preserve the SEC/FBI no-evidence conclusion
+          The May 15, 2002 SEC memorandum says its review found no evidence of trading based on
+          foreknowledge and explains unusual trading as consistent with legitimate strategies. It describes
+          over 9.5 million transactions, 103 companies, six industry groups, seven markets and 32
+          ETFs/indices, generally August 20–September 11, 2001. Broad foreign requests generally used
+          August 27–September 11. It documents DOJ/FBI coordination, referrals and information sharing.
+          Where SEC could not determine overseas owners or interview decision-makers, it referred matters to
+          the Financial Review Group and records its conclusion after those discussions.
+          The May 2004 follow-up records that the numerical corrections did not change the investigators’
+          conclusion. Commission staff later supported that conclusion and separately described the
+          U.S.-securities and foreign-securities scopes. This audit does not replace those findings with a
+          volume or percentile inference, and does not claim to have independently replicated every trade or
+          foreign disposition.
+          SEC PDF 2–7,11,21 — memo opening RSEC 03003652 at 2. Cella follow-up PDF 22 — MFR04019347 at 21. Commission
+          monograph PDF 150,152–154; printed 147,149–151.
+          Scope limits remain explicit: the SEC says Treasury-market information came from FRBNY and that
+          SEC did not itself review those trades. Futures inquiries and continuing control-list/early-warning
+          work have separate scopes. The public packet does not contain complete native trade, allocation,
+          price, cost or model inputs; P&L and statistical replication stop here. No redacted identities are
+          guessed.
+          Supplementary sources and deliverables
+          The separately indexed 22-page Cella scan was retrieved from Cryptome: HTTP 200,1,480,444 bytes, SHA-256
+          abb6103476a1d5968f4c216a073c8c075630411481ec5d2d4a33a1aa63dec0cd. Its two visible identifiers are MFR03010885 and
+          MFR04019347. No whole-file identity with an official NARA copy is established. The official 155-page Commission
+          monograph was retrieved HTTP 200,537,715 bytes; its full hash/metadata and selected-page evidence are retained
+          separately. Neither source contributes to the 704-page count.
+          The audit bundle contains the unchanged official PDF, complete JSON index, page/document CSVs, source-linked claim
+          and foreign-referral JSON, this report, supplementary sources, 704 OCR texts, page evidence metadata, retrieval
+          receipts and validation/reproduction tools. The prior R01 result was used only as a work map. No Deep Research,
+          contacts, records requests, fees or changes to pending matters were used.
+         SCOOBY · R01 · SOURCE AUDIT · 2026-11-14 UTC                                                   6
