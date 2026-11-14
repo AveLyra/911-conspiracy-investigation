@@ -30,3 +30,7 @@ publication/sherlock-mounted-preservation-2026-10-13/media/** filter=lfs diff=lf
 
 # Store this reconciliation snapshot's small chat PDFs as Git blobs when LFS is unavailable.
 research/scooby-chatgpt-project-reconciliation-2026-11-12/chat-attachments/**/*.pdf -filter -diff -merge -text
+
+# Keep this R21 source/result supplement in ordinary Git blobs: each object is under GitHub's 100 MB limit, and the account's LFS budget is exhausted.
+research/scooby-chatgpt-project-reconciliation-2026-11-12/priority-followups-2026-11-13/result-files/R21/**/*.pdf -filter -diff -merge -text
+research/scooby-chatgpt-project-reconciliation-2026-11-12/priority-followups-2026-11-13/result-files/R21/**/*.zip -filter -diff -merge -text

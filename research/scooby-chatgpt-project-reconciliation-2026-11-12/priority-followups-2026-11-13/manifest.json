@@ -1,15 +1,15 @@
 {
   "snapshot_date": "2026-11-13",
   "branch": "scooby-project-reconciliation-2026-11-12",
-  "source_chat_count": 6,
-  "captured_turn_count": 8,
+  "source_chat_count": 7,
+  "captured_turn_count": 9,
   "capture_scope": "Rendered user/assistant turns captured from signed-in ChatGPT UI; not a raw account export or full tool log.",
-  "retrieved_result_artifact_count": 7,
+  "retrieved_result_artifact_count": 9,
   "files": [
     {
       "path": "README.md",
-      "bytes": 3673,
-      "sha256": "2d632a58bf5299d6e9276d41e4fbc30d2625a72b6090fe3d86edfcce61ec9deb"
+      "bytes": 4947,
+      "sha256": "995be94c7f232a53534147931354d6e61ddfde3803f070599db6af57940c4624"
     },
     {
       "path": "chat-captures/6af73dd6-cb60-83ea-ab81-d20a0282c689-turn-01.md",
@@ -85,12 +85,37 @@
       "path": "result-files/R25/Scooby_R25_Primary_Source_Verification_2026-11-13.md",
       "bytes": 13183,
       "sha256": "b970cfba83dc9378032b699fd009cce940aad236195b1786b25ebb57594c7ad8"
+    },
+    {
+      "path": "chat-captures/6af7d5c1-0fc0-83ea-88a0-9cfe949d3650-turn-01.md",
+      "bytes": 4424,
+      "sha256": "9881358f794ddcd4ca9700d6340947ea10945da0f2de23cad2d093fda969081e"
+    },
+    {
+      "path": "result-files/R21/raw-word-reconciliation/R21_Raw_Word_Reconciliation_2026-11-13.pdf",
+      "bytes": 50572,
+      "sha256": "860b4977ed75f638992f397f339fa941af0f1c4dbd78b55680654fc04300fb54"
+    },
+    {
+      "path": "result-files/R21/raw-word-reconciliation/R21_Raw_Word_Reconciliation_2026-11-13.zip",
+      "bytes": 397401,
+      "sha256": "776a5f1bd2b89fb8607b10a985435426291a182c814e9e52f3aeab37e49c8710"
+    },
+    {
+      "path": "result-files/R21/raw-word-reconciliation/R21_Raw_Word_Reconciliation_2026-11-13.txt",
+      "bytes": 28008,
+      "sha256": "c7f6d137aeaf000cc91e5b2ceb6c00ea3b5e39a15ebf3fa49ee24fde2ca5e3b9"
+    },
+    {
+      "path": "result-files/R21/source-inputs/Flight77_Reproducible_Audit_2026-11-12.zip",
+      "bytes": 55468480,
+      "sha256": "528cdb88a2010a66af9fd6f30ddfb6b048a49b0b1da15f2c754e079ffa5fc442"
     }
   ],
   "related_project_source_pack_digest": {
-    "path": "project-source-pack/05_Scooby_Priority_Followups_and_Artifact_Access_2026-11-13.md",
-    "bytes": 5449,
-    "sha256": "7c14121f600fb2621c4cf7787f37c4ca8dc0bcea5f6216734fc4a1a0a331edd4"
+    "path": "project-source-pack/06_Scooby_Priority_Status_Update_2026-11-13.md",
+    "bytes": 5095,
+    "sha256": "110fc2244f2afde2011f9c08093f01809f126ca6eb2f06c41d99ac607e299224"
   },
   "unretrieved_artifacts": [
     {
@@ -104,19 +129,28 @@
       "status": "Preview returned “Couldn’t load this file”; download did not complete."
     },
     {
-      "chat_id": "6af73f2d-baa0-83e9-93d6-19c5bad48a64",
-      "name": "Flight77_Reproducible_Audit_2026-11-12.zip",
-      "status": "Library link redirected to Space; 55,468,480-byte package not acquired; raw-to-export step not run."
-    },
-    {
       "chat_id": "6af73f56-a568-83e9-b5e3-d6c54fce6e85",
       "name": "Scooby_R25_KBR_packet_gate_and_payment_followup_2026-11-13.md",
       "status": "Referenced by first-turn response; separate bytes not retrieved; visible response is captured."
     }
   ],
   "research_execution": {
-    "next_stage": "R21 raw-word-to-export reconciliation",
-    "status": "Blocked pending the named Library package and Pro availability",
-    "evidence": "R21 chat reports zero independently matched raw words; the present turn did not independently repeat input hashes or execute a decoder."
-  }
+    "next_stage": "R01 SEC packet index, followed by R08 native NIST workbook recovery",
+    "r21_status": "Bounded raw-to-export reconciliation complete; whole-capture equivalence and historical/aircraft interpretation gates remain open",
+    "deep_research_started": false
+  },
+  "new_r21_pro_followup": {
+    "chat_id": "6af7d5c1-0fc0-83ea-88a0-9cfe949d3650",
+    "result": "56/56 selected engineering values and 4/4 counter joins; scoped ordering validation across 1,298 complete unique frames",
+    "report_pdf_sha256": "860b4977ed75f638992f397f339fa941af0f1c4dbd78b55680654fc04300fb54",
+    "reproducibility_zip_sha256": "776a5f1bd2b89fb8607b10a985435426291a182c814e9e52f3aeab37e49c8710",
+    "raw_to_export_scope": "Four predefined frames, 76 qualified raw words; no whole-capture claim",
+    "deep_research_started": false,
+    "source_package_path": "result-files/R21/source-inputs/Flight77_Reproducible_Audit_2026-11-12.zip",
+    "source_package_bytes": 55468480,
+    "source_package_sha256": "528cdb88a2010a66af9fd6f30ddfb6b048a49b0b1da15f2c754e079ffa5fc442",
+    "zip_integrity": "passed",
+    "named_member_hashes": "verified"
+  },
+  "retrieved_source_package_count": 1
 }
