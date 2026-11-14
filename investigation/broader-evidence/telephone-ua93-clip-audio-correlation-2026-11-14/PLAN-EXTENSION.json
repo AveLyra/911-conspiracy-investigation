@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-11-14T04:09:24.958872+00:00",
+  "status": "exploratory follow-up after inspecting RESULTS.json; it cannot retroactively satisfy the original preregistered 0.25 threshold",
+  "reason": "All four original peak locations on NARA 7598764 had common shift 6541.048 seconds while all four correlations were below the threshold.",
+  "target_source_offset_minus_clip_offset_seconds": 6541.048,
+  "held_out_clip_window_starts_seconds": [
+    0,
+    20,
+    40,
+    60,
+    80
+  ],
+  "held_out_window_length_seconds": 5,
+  "control_candidate_shifts_seconds": "0,60,...,7140; exclude offsets within 10 seconds of 6541.048",
+  "method": "same 1000 Hz mono ffmpeg filtering, normalized waveform correlation at fixed shift and at each control shift; additionally correlate reversed clip windows at same shift",
+  "interpretation": "Report values and rank of absolute target coefficient among controls separately per held-out window; no probability or calibrated event time claim. Agreement is exploratory evidence of shared signal, not an independent call record. A low score or poor rank does not establish absence."
+}

@@ -1,0 +1,40 @@
+# Flight 93: locating a reported call excerpt in an FAA recording
+
+**Result.** A fixed waveform search of a 2010 excerpt against two public FAA recordings **did not pass the correlation threshold selected before the test**. Nevertheless, four separated excerpt windows had their strongest absolute correlations at one consistent offset in the recording indexed as position 28. Five additional windows, selected after that result, also favored that same location over a limited grid of controls. This is an exploratory candidate for listening and source matching. It does not verify the words, establish the caller or device, calibrate a clock, or prove the event described in the recording.
+
+## What the sources say
+
+- A [March 17, 2010 secondary account](https://www.oredigger61.org/?p=2248) identifies its linked [audio excerpt](https://www.oredigger61.org/wp-content/uploads/2010/03/100310-Air-Phone-Call-UA-93.mp3) with a call recorded at FAA Operations Position 28. It describes a regional relay about a reported Flight 93 911 airphone call and suggests a concurrent background reference to a cellphone. These are the author's descriptions; we have not independently heard or transcribed the excerpt. The author separately associates a background evacuation report with 10:03; this is not independently verified or a calibrated timestamp for the call.
+- The [National Archives finding aid, box 27](https://www.archives.gov/research/foia/faa-finding-aid-24-35) lists DCC-1923 as operational phone 5128, position 28, 1215–1515 UTC. Its first digital file is labeled 1215–1415 UTC, [catalog 7598764](https://catalog.archives.gov/id/7598764). Its 232,306,525-byte body was acquired and SHA-256 checked: `9de37587fd7ea43934225f60db118cb3c67e97b103aefeb243b1bbc4827d1c82`. The 90.835750-second excerpt body is 1,456,354 bytes, SHA-256 `c2ca0fa51b17036457449285871d1f337e6e0d31588af1792133b18a2a7f76f5`. Raw audio is not republished here.
+- A [separate 2004 Commission staff note and NARA entries](https://github.com/AveLyra/911-conspiracy-investigation/blob/d620577724d8789e6114cec19e5fbf6ad368aa4f/investigation/broader-evidence/telephone-ua93-layering-record-445-2026-11-14/README.md) describe a reported Flight 93 911 call at severe-weather position 4, line 5148, 10:06 AM and a later line-5134 inquiry. NARA labels the first position-4 file 1215–1415 UTC, [catalog 7598789](https://catalog.archives.gov/id/7598789); its SHA-256 is `e887c08dd70a295f91089dddb1f0b2756edfeae1a269ea48631f0bf37972d2d5`. The note does not state a time zone. It is not established that the position-28 excerpt and the position-4 note describe the same transmission.
+
+## Fixed test and result
+
+Before running, [PLAN.json](PLAN.json) specified four nonoverlapping five-second excerpt windows beginning at 10, 30, 50 and 70 seconds. Each was searched across each whole recording after decoding to mono 1,000 Hz and filtering 80–400 Hz. A match required **at least three** absolute normalized waveform correlations **at or above 0.25**, with source-minus-excerpt offsets agreeing within 0.2 seconds. A reversed first window was the negative control. [correlate.py](correlate.py) records the exact procedure; [RESULTS.json](RESULTS.json) preserves the full results.
+
+For position 28, all four global peak offsets minus the excerpt offsets were **6,541.048 seconds**, but their coefficients were **0.182641, 0.175177, 0.181929 and 0.181262**. Each was below 0.25: **the prespecified test did not pass**. The reversed-window global peak was 0.137423 at a different offset. For position 4, the four absolute peak correlations ranged from about 0.100 to 0.130, with different offsets; that source also did not pass. Failure to match position 4 does not show the report was absent, false or unrelated: different channels, noise, mixing, editing or speed differences can prevent a waveform match.
+
+## Post-result exploratory test
+
+After seeing those results, [PLAN-EXTENSION.json](PLAN-EXTENSION.json) fixed the 6,541.048-second position-28 offset and five other five-second excerpt windows beginning at 0, 20, 40, 60 and 80 seconds. [holdout.py](holdout.py) compared each target correlation with the same source sampled at 119 alternative shifts on a 60-second grid and a reversed-window control. The exact [HOLDOUT-RESULTS.json](HOLDOUT-RESULTS.json) records all numbers.
+
+| Excerpt window start | Target correlation | Largest absolute grid-control correlation | Reversed-window correlation |
+| ---: | ---: | ---: | ---: |
+| 0 s | 0.213081 | 0.149175 | 0.062586 |
+| 20 s | 0.228422 | 0.038615 | 0.017062 |
+| 40 s | 0.224753 | 0.037491 | 0.027256 |
+| 60 s | 0.173947 | 0.090822 | 0.047069 |
+| 80 s | 0.176208 | 0.075647 | -0.064522 |
+
+Each target ranked first by absolute correlation among its tested grid points. These are new windows, but the offset and follow-up procedure were chosen **after** inspecting the first result. The grid is not an exhaustive or independent null distribution; no probability or historical certainty is assigned. The patterns are consistent with shared audio at this relative location and make it a useful listening target. They do not change the failed prespecified result. The excerpt, its author's account and the candidate FAA recording may share one underlying source and must not be counted as independent testimony.
+
+## Reproduction and outstanding work
+
+Both scripts were rerun in a separate output directory in the same environment; their JSON results matched the first-run results byte-for-byte. This is repeatability, not independent replication. The inputs were rehashed; the tests used FFmpeg 7.1.1, Python 3.13.7, NumPy 2.3.4 and SciPy 1.16.2. Run `correlate.py CLIP.mp3 NARA-7598764.mp3 NARA-7598789.mp3` in an empty directory, then `holdout.py CLIP.mp3 NARA-7598764.mp3` in an empty directory; each creates a new JSON result and refuses to overwrite an existing one. See [SOURCE-PINS.json](SOURCE-PINS.json) for public URLs and hashes. The first execution stopped before audio analysis because a different Python lacked NumPy; the successful rerun used the existing explicit interpreter. A separate verification attempt initially did not start because its working directory did not exist. Both failures are preserved in the native research record.
+
+- [ ] Listen to the candidate span and independently verify its words and speakers, retaining unintelligible portions and other interpretations. No speech-recognition output was used here.
+- [ ] Calibrate recording offsets against at least two independent anchors; a relative position of 6,541.048 seconds is **not a wall-clock time**. The recording's label, its reported format duration of 7,259.510938 seconds, and its 7,200-second nominal labeled span remain distinct observations; no explanation for their difference was tested.
+- [ ] Compare the actual position-4 recording with the Commission note and determine whether the accounts concern the same relay. No negative result here establishes the opposite.
+- [ ] Locate the originating 911/dispatch record and carrier or operator records. An FAA relay or a later interpretation of it does not establish which service the passenger used.
+
+All broader record-acquisition tracks and previous conflicting accounts remain open. No conclusion about fabrication, foreknowledge or coordination follows from this test.

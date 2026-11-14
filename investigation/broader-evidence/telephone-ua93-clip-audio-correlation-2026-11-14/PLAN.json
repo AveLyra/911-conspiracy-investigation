@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-11-14T04:07:00.580612+00:00",
+  "purpose": "Locate 2010 excerpt in the public NARA recordings; test a claimed source relationship, not historical words or wall-clock time.",
+  "clip_sha256": "c2ca0fa51b17036457449285871d1f337e6e0d31588af1792133b18a2a7f76f5",
+  "comparison_sources": [
+    "NARA 7598764 DCC-1923 position 28; same source claimed by 2010 article",
+    "NARA 7598789 DCC-1935 position 4; separate channel named by 2004 staff note"
+  ],
+  "method": "ffmpeg decode mono s16le 1000 Hz, highpass 80Hz and lowpass 400Hz; search normalized Pearson waveform correlation over whole recordings",
+  "clip_window_starts_seconds": [
+    10,
+    30,
+    50,
+    70
+  ],
+  "clip_window_length_seconds": 5,
+  "threshold_absolute_correlation": 0.25,
+  "agreement_seconds": 0.2,
+  "decision": "At least three non-overlapping windows must exceed 0.25 and have source-offset minus clip-offset values within 0.2 s; report signed coefficients and full maxima.",
+  "negative_control": "reverse 10-second-start waveform and search each recording under the same method",
+  "limitations": [
+    "No automatic recognition or content interpretation",
+    "No inference of date, clock, historical call origin or intent",
+    "No-match is not evidence of absence; different mixing, edits, speed, noise or telephone channel can prevent matching",
+    "A match is evidence of shared audio signal, not independent verification of reported events"
+  ]
+}
