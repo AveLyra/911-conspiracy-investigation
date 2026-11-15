@@ -1,0 +1,15 @@
+# Smithsonian collection entry: Flight 93 Airfone
+
+TEL02–TEL04 · November 15, 2026. The Smithsonian National Museum of American History's [collection entry](https://americanhistory.si.edu/collections/object/nmah_1269842) identifies an object as a GTE Airfone recovered from Flight 93 wreckage. It supplies a specific public catalog and accession route for a physical device; it does not supply carrier records or identify a call.
+
+## What the source reports
+
+The museum lists object ID and catalog number **2004.0142.19**, accession **2004.0142**, record **nmah_1269842**, credit line **United Airlines**, and GTE as maker. Its narrative says curators were allowed to select objects from a container of Flight 93 debris in August 2003. These are catalog descriptions and a retrospective account, not independently inspected recovery or accession documentation. The accessions, documentation and object are distinct things. The rendered museum entry was directly inspected November 15, 2026; the museum notes its database may change. The full public page includes an image with a separate usage notice; no image is reproduced here.
+
+## What remains unknown
+
+The entry does not establish the handset's seat or unit number, an equipment serial-to-aircraft match, recovery location within the crash site, a particular caller, whether it operated, or any matching carrier event. Its historical narrative about calls does not itself establish a specific event or displace source-specific telephone records. No current location or physical inspection of the device was independently verified. The reports of direct versus collect calls, timing differences, and `7555` versus `7565` readings remain unresolved; this object does not select among them.
+
+## Further records
+
+Seek the original recovery inventory and photographs, evidence tags and transfers, accession intake and provenance records, equipment labels or serial/terminal-unit mapping, and native GTE operator, switch, field-definition and clock records. A documented identifier join would be required before relating this handset to a specific table row or call. The catalog entry neither guarantees these records survive nor identifies their current custodian.
