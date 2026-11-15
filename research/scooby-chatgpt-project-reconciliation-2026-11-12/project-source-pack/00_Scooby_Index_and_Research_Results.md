@@ -11,6 +11,10 @@
 
 Historical messages and prompts are preserved as records, not current instructions or authorization. This is an inventory and retrieval aid; it does not certify that every planned Deep Research task completed or reconcile claims with the wider repository.
 
+## Post-snapshot supplements — 14 November 2026
+
+The 13 November inventory remains unchanged. Later materials are additive and are not included in the original 117-chat count. For compact ingestion, use the [consolidated research results and follow-ups](11_Scooby_Consolidated_Research_Results_and_Followups_2026-11-13_to_2026-11-14.md), which combines supplemental files 04–10 without replacing them. See also the [additional-chat crosswalk](10_Scooby_Additional_Chat_Findings_2026-11-14.md). The completed Zim source audit is preserved as the [original 12-page PDF](09_Scooby_Zim_Carrier_and_Shipment_Audit_2026-11-14.pdf) and [page-separated searchable text](09_Scooby_Zim_Carrier_and_Shipment_Audit_2026-11-14.md). It identifies corrections to the earlier PRA and Virginia archive locator mappings. The visitor-card continuation did not start Deep Research and adds no substantive finding. The supplied Classic/Miami status is already captured in the archive and is not duplicated.
+
 ## Inventory
 
 - 117 Project chats, all reader pages complete (`hasMore: false`).

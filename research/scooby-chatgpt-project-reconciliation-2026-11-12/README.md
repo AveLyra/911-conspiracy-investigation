@@ -46,9 +46,14 @@ This is a preservation snapshot, not a substantive reconciliation of claims, evi
 - `06_..._2026-11-13.md` — the updated bounded R21 result.
 - `07_Scooby_Priority_Status_Update_2026-11-14.md` — completed R01 packet index and current status.
 - `08_Scooby_Priority_Status_Update_2026-11-14.md` — recovered R08 native workbooks and benchmark gate.
+- `09_Scooby_Zim_Carrier_and_Shipment_Audit_2026-11-14.pdf` and `.md` — the preserved 12-page Zim audit plus page-separated searchable extraction. It corrects prior archive-locator and Port Authority request-number mappings; it does not identify the physical mover.
+- `10_Scooby_Additional_Chat_Findings_2026-11-14.md` — links the new Zim and visitor-card conversations, records that the visitor-card Deep Research run did not start, and cross-references the already archived Classic/Miami result.
+- `11_Scooby_Consolidated_Research_Results_and_Followups_2026-11-13_to_2026-11-14.md` — combines the text of supplemental Markdown files 04–10 as one searchable, compact Project source. The originals and the 12-page Zim PDF remain preserved separately.
 - `manifest.json` — byte lengths and SHA-256 checksums for the curated source files, with original inventory and later follow-ups distinguished.
 
 These are derived convenience copies. The raw reader JSON, exact result files, original attachments and captured message HTML remain the controlling preservation records elsewhere in this archive. The pack does not certify Deep Research completion or substantively reconcile findings.
+
+The 14 November addenda are local staging files in this branch; they have not been uploaded to ChatGPT Project Sources or pushed to GitHub. The original 13 November counts remain historical and are not expanded to imply that the new conversations were part of the 117-chat snapshot.
 
 
 ## Priority follow-ups — 13–14 Nov 2026
