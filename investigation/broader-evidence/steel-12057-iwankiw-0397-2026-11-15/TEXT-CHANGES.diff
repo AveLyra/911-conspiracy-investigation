@@ -1,0 +1,22 @@
+--- /dev/null
++++ README.md
+@@ -0,0 +1,19 @@
++# Request 12-057: one archived yard photograph
++
++STL01–STL03 · November 15, 2026. A single image was retrieved by verified byte range from a third-party archive indexed under request 12-057. Its path and image are evidence of the retrieved archive member; neither independently authenticates its original release or establishes the building of origin of the metal depicted.
++
++## Observations
++
++- The ZIP central directory identifies `WTCI-63-FEMA/CD2/Iwankiw Photos/DSCN0397.JPG` within the `Photos_from_CD/PhotosFromCD` tree. The image is 1,600 × 1,200 pixels and depicts a person beside visibly damaged metal pieces. No person or specimen is identified here.
++- Selected EXIF fields report camera make `NIKON`, model `E950`, and `DateTime`, `DateTimeOriginal`, and `DateTimeDigitized` each as `0000:00:00 00:00:00`. These zero-filled fields supply no usable capture date; they do not establish when or why the fields acquired those values. No metadata was modified.
++- The same ZIP index separately contains an `Archie-DSCN0397.jpg` member under a different folder, with a different full path and different indexed CRC and length. That member was **not retrieved or visually compared**. A shared number is not a file-identity or specimen-identity match.
++
++## Provenance and limits
++
++The exact full path and range are recorded in [SOURCE-PINS.json](SOURCE-PINS.json). The selected image matched the ZIP central directory's length and CRC-32 and has SHA-256 `38f199084010040358d4ae3c211113ec651900612bf20fb0dc619bae96e88987`; these checks establish retrieval integrity against that index, not original-camera or agency-production authenticity. The image was visually inspected; raw image and embedded metadata are preserved in the research media store and are not republished here.
++
++A third-party [research page](https://ic911.org/consensus-panel/consensus-points/wtc-7-point-6-the-fraudulent-nist-claim-that-there-was-no-steel-recovered-from-building-wtc-7-for-analysis/) describes an image with a similar identifier and advances claims about WTC 7 steel. This single-file inspection has not established that its described file, date, subject, or specimen identity matches the retrieved bytes. Preserve those descriptions as unverified, separate observations. In particular, the earlier FEMA field labels and NIST inventory classifications remain unresolved; image appearance cannot join this piece to W14A, W14B, or a tested specimen.
++
++## TODO
++
++Obtain an authenticated original/production manifest, original file and metadata lineage, photographic sequence and field notes, and an item-specific marking and custody crosswalk. Compare actual bytes before associating the similar third-party file identifier; compare contemporaneous field records before making a building attribution. No historical cause or intent can be determined from this image.
