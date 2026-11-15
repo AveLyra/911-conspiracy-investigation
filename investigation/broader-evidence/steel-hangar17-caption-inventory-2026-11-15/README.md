@@ -1,0 +1,16 @@
+# Hangar 17: captioned recollections of cataloging and steel inspection
+
+Source: [National September 11 Memorial & Museum, “Documenting Destruction: The Story of Hangar 17”](https://www.911memorial.org/events/documenting-destruction), recorded October 29, 2025. The page identifies former Port Authority project manager Amory Houghton III, architect Mark Wagner and conservator Steven Weintraub. The full-event player is Brightcove account 5841285083001, video 6384918725112. Its English caption track was retrieved on November 15, 2026; SHA-256 `e983f4e55b519b8ea7b800776c764df768c16e3293d8dd130c5ba4c20a81a9c5` (117,645 bytes). Access via the event page player. Caption timing and transcription are not independent verification of the audio.
+
+## Observations in the caption track
+
+- At **23:46.727–24:16.290**, the discussion describes cataloging, numbering, photographing and measuring items before stacking, and inspecting some steel for fabrication stamps that could indicate placement in a building. The excerpt does not identify a particular disputed specimen or provide the resulting records.
+- At **45:27.427–45:32.833**, captions attribute to Weintraub a recollection that an inventory included sizes and estimated weights, within a discussion of administering later requests for pieces. This description does not establish that the later inventory is identical to the 2002 Voorsanger report or that every original record survives.
+
+## Interpretation and limits
+
+These are retrospective participant accounts of collection practices, not the original inventory, photographs, measurements or chain-of-custody records. Captions were inspected; the audio and displayed images were not independently checked. The statements identify categories of records that could help trace an individual item, but do not establish the origin or disposition of any particular member, a conflict with existing NIST records, or improper conduct. No contradictory observation was identified in this bounded comparison; earlier competing descriptions and classifications remain unresolved.
+
+## Open records
+
+Seek the original Voorsanger inventory and its version history, related catalogs, marking photographs, measurement records, and item-specific transfer and disposition files. To test an attribution, obtain the relevant original marking and an uninterrupted identifier and custody crosswalk; a general statement that inventories existed cannot provide that join. Do not assume these records survive or are held by any particular institution.
