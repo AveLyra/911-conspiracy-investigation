@@ -1,0 +1,16 @@
+# Connecticut Fire Academy: two reported WTC steel artifact identifiers
+
+**Source and scope.** The [Connecticut State Firefighters Association Memorial Foundation, “The Memorials,” 911 Artifact History](https://www.ctffm.net/the-memorials/) was accessed 2026-11-15. The retrieved HTML has SHA-256 `6fde5cabb05016c14ce254453ec492a8863b683ade8d19eb666258d2705921ed`. The relevant passages are under “911 Artifact History,” paragraphs beginning “The State of Connecticut’s Commission,” “The largest of the two artifacts,” and “A fitting display.” This is the receiving memorial organization’s account, not the original Port Authority inventory or a chain-of-custody certificate. The raw page is preserved in the research workspace, not republished here.
+
+**Source observations.** The foundation reports selection by the Port Authority to receive two WTC steel artifacts, and transportation from JFK Hangar 17 to the Connecticut Fire Academy on July 13, 2011. It lists them separately:
+
+| Reported identifier | Source description | Reported dimensions and weight | Reported display |
+| --- | --- | --- | --- |
+| M-0006c | structural steel element | 142 × 22 × 19 inches; 1,248 pounds | erected by the firefighters memorial; dedicated September 25, 2011 |
+| H-0120b | light steel element | 36 × 6 × 3 inches; 65 pounds | page says an interior display is being designed |
+
+The page’s present-tense statement about a planned display has no clearly identified as-of date in the reviewed passage; it does not establish current location or completion of that display. The source does not identify the original building, location within it, or a connection to FEMA/NIST specimens W14A or W14B. The two identifiers are distinct reported labels, not evidence of two independent recoveries from a particular building.
+
+**Interpretation and limits.** These identifiers and a reported transfer date offer specific leads to the underlying Port Authority records. This account alone does not independently authenticate the numbers, physical dimensions, transfer or building origin, and does not show irregular disposal, concealment, or a cause of collapse. No contradiction between these two entries was found in the single page reviewed; the separate descriptions are preserved as reported. The finding is a custody lead, not evidence of a conspiracy.
+
+**TODO — not yet acquired or tested.** Locate the original Port Authority inventory entries, recipient request, transfer authorization and receipt, shipping/custody documentation, photographs and any building-attribution worksheets for each identifier. Compare those records with one another and with any verified later custody documentation; retain differing values and their provenance. Verify whether the second display was completed and whether either artifact survives in the stated custody. No source-to-specimen link or physical examination has been performed.
