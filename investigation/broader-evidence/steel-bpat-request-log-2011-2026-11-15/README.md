@@ -1,0 +1,13 @@
+# WTC building-performance records: request and archive locators
+
+STL01–STL03 · November 15, 2026. An older NIST request-log row and a separately archived third-party dataset index provide **retrieval leads** for building-performance records. Neither is the underlying photograph, release response, or a verified custody or building-attribution record.
+
+## Observations and provenance
+
+- A reproduced NIST request log, [physical PDF page 9, printed page 8](https://documents.theblackvault.com/documents/foia/NIST-2011.pdf#page=9), lists request **12-057**, date **12/28/2011**, and subject **WTC - BPAT Records**. The row was visually checked. The acquired PDF has 1,995,427 bytes and SHA-256 `c84882bd30efd0a7f3f4e1ed19a1cd533c22ed24f9cef339ac0c0aaf82136064`. It is a third-party-hosted reproduction, not independently authenticated agency delivery; it contains unrelated personal information and is not reproduced here.
+- An [archived third-party dataset index](https://web.archive.org/web/20140613121110/http://www.911datasets.com/index.php/NIST_FOIA_12-057_Feb_07_2012) labels a dataset with request 12-057 and February 7, 2012, reports 2,536 files and 61,339,871,995 bytes, and lists `NIST_FOIA_12-057-DISCS.pdf`. A [separate archived file-index page](https://web.archive.org/web/20140813160431/http://www.911datasets.com/index.php/SFile:F33OCD5M64ERTHLFJ4DSRTV2SWU2HHSH) describes that PDF as 2,210,608 bytes. These are index assertions; neither the listed PDF nor the dataset was acquired or inspected in this pass. The two dates occur in different descriptions and their relationship is not established.
+- A [third-party research page](https://ic911.org/consensus-panel/consensus-points/wtc-7-point-6-the-fraudulent-nist-claim-that-there-was-no-steel-recovered-from-building-wtc-7-for-analysis/) attributes a particular yard-photograph file to the release. That is a lead to a file, not a verified photograph, provenance chain, or finding that any particular steel piece came from WTC 7. Its historical and motive claims were not adopted or tested here.
+
+## Unresolved and next test
+
+The original request, agency response, production manifest, archived PDF and photographs have not been obtained in this step. An item-level source, identity and custody crosswalk is still needed. Existing field-attribution and NIST inventory descriptions remain distinct and unresolved; this index does not join them or establish concealment. A useful next step is a non-destructive, bounded inspection of an authenticated accessible member and its manifest, without downloading the whole large dataset or using the Intel media store if unavailable.
