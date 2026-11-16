@@ -1,0 +1,9 @@
+# Status correction: official Keyton interview release already reviewed
+
+2026-11-16 UTC · AUD016-A1 / TEL02–TEL04. The original plan and deferred queue predate a later acquisition. Their general description of the Keyton FBI interview as unverified or missing must not be carried forward as current status. The prior documents remain unchanged as historical records.
+
+The [October 31 review](https://github.com/AveLyra/911-conspiracy-investigation/blob/fb0d56eeaa07cfc9348306d1cedbcbea059fc5c8/investigation/broader-evidence/fbi-keyton-acis-originals-2026-10-31/README.md) and local telephone-fbi-vault-remaining-releases-2026-10-31/NATIVE-REPORT-v3-2026-10-31.md, section 3, record review of the [FBI Vault release, part 02 physical page 69](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08/at_download/file#page=69). The review records investigation 9/11/2001, transcription 09/14/2001 and a visibly blank dictated-date field. It distinguishes this official-hosted released scan from a native source file or audio.
+
+As preserved in that review, Keyton's account describes a live-operator collect call followed by a later direct, not collect, call. Voss's separately recorded belief is that both calls were collect. The conflict remains unresolved; a witness description does not establish the underlying network path. This finding is a record-status correction, not a new source or an independent corroboration of either account.
+
+TODO: acquire native recording/interview notes if extant, operator and carrier switch records, office/transfer logs and clock definitions. Match legs without inferring witness certainty beyond the sources. The exact carrier attempt/connection join remains unverified. Check prior source pins and stored release history before any reacquisition; no media was newly downloaded or rehashed in this step.
