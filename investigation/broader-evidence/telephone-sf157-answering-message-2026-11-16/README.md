@@ -1,0 +1,24 @@
+# FBI SF 157: answering-machine account and disputed press wording
+
+November 16, 2026 · TEL02–TEL04 / AUD016-A1. A September 14, 2001 FBI follow-up reports both a family's reason for declining an FBI recording of a private answering-machine message and a disagreement over how a press account described its contents. The report supplies a custody lead; it does not establish the content of the recording or its subsequent disposition.
+
+## Sources and reading scope
+
+The [FBI Vault September interviews, part 05](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-05-of-08/view) viewer pages **19–20** show lead control **SF 157**, file heading **265D-NY-280350-SF**, and footer **REQ. #35-13 / 000000172–173**. Page 19 attributes the investigation to September 14, 2001; page 20 contains its continuation about an attached newspaper article. Viewer images were visually inspected November 16, 2026. The original local captures of the upper and lower views have SHA-256 `399060468bc3af05bc2dcc2a77ce225ac46c0158d4d5096da185daec3b0f920c` and `4d2381d64f96b0f855b4f4b868d2f08386c62f7190f5a171bfc4b458e6b124f9`, respectively. These are browser screenshots, not hashes of the FBI PDF or original message. The item advertises a 1,097,079-byte PDF; its binary was not downloaded in this pass. Images contain private details and are not reproduced in this publication.
+
+The separately reviewed [SF 2442 form, viewer page 17](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-05-of-08/view) reports a message associated with the same named passenger. The forms do not independently establish a common recording or custody chain. [Previous part 05 review](https://github.com/AveLyra/911-conspiracy-investigation/blob/7cf7f8a379a89ad2b5402bf1a5caae27107d2104/investigation/broader-evidence/telephone-recipient-message-2026-10-31/README.md). The report records redactions; this review does not identify redacted individuals by cross-reference.
+
+## Observations to retain separately
+
+- **Recording decision, as reported:** SF 157 describes an agent's inquiry about permission to record an answering-machine message. It reports a family's decision against an FBI recording, attributed to the private nature of the message and concern about public release during a potential trial. This is the agent's record of that conversation, not proof that no copy was ever made or obtained elsewhere.
+- **Two descriptions of the message:** the agent reports that a September 12 *San Francisco Chronicle* column attributed a hijacking reference to the recorded message. The report separately records a family account that the message did not mention a hijacking and that the newspaper description was inaccurate. Preserve both reported descriptions; the original article, release and recording were not independently examined here. This record alone does not determine what was said or why accounts differ.
+- **Attachment:** page 20 says the newspaper article was attached to the insert. The article itself is not visible on either inspected page. Its existence in this viewer, identity and completeness are unverified; a reference to an attachment is not an acquired attachment.
+- **Flight labels:** page 19 prints **“American Airlines Flight 93”** while the SF 2442 form records **“Flight 93”** as a return trip from Newark to the Bay Area and the FBI source's other pages refer to **“United Flight 93.”** Retain each label in its source context. No explanation or identity of a particular recording follows from the labels alone. [Page 19 viewer](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-05-of-08/view) · [prior page 17 reading](https://github.com/AveLyra/911-conspiracy-investigation/blob/7cf7f8a379a89ad2b5402bf1a5caae27107d2104/investigation/broader-evidence/telephone-recipient-message-2026-10-31/README.md).
+
+## Unresolved and next tests
+
+- [ ] Locate the original answering-machine message, device metadata and any authorized copies, examination reports and custody/disposition records. Respect the family's reported privacy concerns.
+- [ ] Locate and compare the actual September 12 column, the press-release text, and the article said to be attached; establish whether copies are complete and whether they concern the same message.
+- [ ] Obtain source records linking SF 157 and SF 2442 to a specific message and establish applicable phone/carrier records and time basis. No clock conversion is performed here.
+
+This is an additive source review. The earlier local text-extraction note remains preserved; it is not silently replaced. No recording was heard or authenticated, and no conclusion about suppression, fabrication, motive, or historical cause follows from the difference in accounts. The FBI report and its duplicate reproductions are not independent corroborating witnesses.
