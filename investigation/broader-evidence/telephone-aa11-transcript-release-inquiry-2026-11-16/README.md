@@ -1,0 +1,9 @@
+# Wansley transcript-release entry: image cross-check
+
+2026-11-16 UTC · AUD016-A1 / TEL02–TEL04. This supplements AA11-WANSLEY-21991-NATIVE-2026-11-16.md without altering the earlier OCR observation.
+
+Visually inspected page 5 of the third-party [Team 7 Box 10 Wansley packet](https://www.scribd.com/document/18775587/T7-B10-FBI-302s-Olsen-Fdr-302s-Re-Larry-Wansley-371). The face of the reproduced FBI form shows transcription date 09/21/2001 and states the airline was not aware of anyone at the airline releasing a transcript of a telephone call involving Sweeney; it reports that information was relayed on 09/20/2001. Its displayed production header identifies M-INT-00070950 and 265A-NY-280350-302-21991. This confirms the selected OCR reading against the displayed page image, not the authenticity, complete release history or source-file integrity of the reproduction. The agency-native file and prior inquiry remain unacquired.
+
+This is a statement about awareness of an airline release. It is not proof that a transcript did not exist or that no person outside the airline released one. The redacted FBI part05 account's conditional transcript reference, the Commission's no-tape account of the Sweeney–Woodward call, the separate Wyatt–Howland relay transcripts, and contemporary reporting remain separate source observations without a verified document or event join. No claim about suppression, creation or historical motive follows.
+
+The page was inspected in the public reader on 2026-11-16; the 25-page packet was not downloaded or hashed and only page 5 was visually examined. TODO: obtain an official scan with exact provenance, the inquiry/response and any actual transcript or reconstruction; compare document IDs, custody, source and event legs. Pending records and earlier notes remain unchanged.
