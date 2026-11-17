@@ -1,0 +1,25 @@
+# FBI report describing playback of two messages, September 2001
+
+November 16, 2026 · TEL02–TEL04 / AUD016-A1. A previously acquired FBI release contains the report that appears to underlie the National Park Service's (NPS) description of an interview and listening. This adds the report's explicit statement that the second message did not mention a hijacking; it does not provide or authenticate the audio.
+
+## Source and inspection
+
+[FBI Vault, September interviews part 01](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-01-of-08/at_download/file#page=25), physical PDF pages **25–26**, has lead control **SF157**, file **265D-NY-280350-SF**, and footer **REQ. #35-13 / 000000132–133**. The first page is dated **09/12/2001**; its footer separately prints **09/11/2001** and **09/12/2001**, and the continuation shows **09/11/2001**. Preserve these distinct printed date fields. This pass visually inspected both pages of the previously acquired official PDF; its 4,468,234-byte entity, acquired October 31, 2026, was rehashed November 16 as SHA-256 `4760de107bef3c75f4d7629f90f7a70d2c861cb3b53dcbe37a3bf0fb768f93cb`. Only pages 25–26 were adopted for this source unit. The locally retained page images are not published here. Redactions are not reconstructed and private message text is not republished.
+
+## Separate recorded observations
+
+- The report says two digitally stored messages were played for the interviewing agents. It describes one before boarding and another later message. The first has an approximate **4:30 a.m., Pacific Standard Time** label; the second has **6:00 a.m., Pacific Standard Time**. These are printed approximations, not independently synchronized clock measurements. The account reports uncertainty about the phone used; no phone type or carrier row is established by this report.
+- In the report's second page, the agent's summary states: **“there was no mention of a hijacking”** in the second message, and additionally records no descriptive information about hijackers or weapons. This is the released report's description following reported playback, not a verbatim transcript or an independent examination of audio by this review.
+- The same continuation reports that, at that time, the recipient did not want the FBI to record the digital messages while discussing privacy with relatives, and would preserve them if he decided to provide them. This is distinct from playing messages for the agents; neither the creation nor subsequent retention of a separate copy is proved by this page.
+- The [NPS entry](https://www.nps.gov/flni/learn/historyculture/phone-calls-from-flight-93.htm) says a message mentioned a hijacking, then presents notes substantially corresponding to this report's first-page description. Its passage does not quote the report's second-page sentence stating that the second message did not mention one. Preserve the NPS description and both FBI pages side by side; this does not establish why their wording differs. [Prior NPS comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/f900a4d385cb21f5a48f84b0dcc3c1402e222bc3/investigation/broader-evidence/telephone-grandcolas-nps-account-2026-11-16/README.md).
+- The separately preserved [September 14 SF157 follow-up](https://github.com/AveLyra/911-conspiracy-investigation/blob/c7cac982a729e18c08917a04014cad29ff0b6063/investigation/broader-evidence/telephone-sf157-answering-message-2026-11-16/README.md) reports a family account disputing a newspaper's hijacking wording and a privacy-based decision against an FBI recording. The [Chronicle indexed account](https://github.com/AveLyra/911-conspiracy-investigation/blob/e9dc12fe06eeee936e7d48dde5450c2adac2fb53/investigation/broader-evidence/telephone-sf157-chronicle-source-2026-11-16/README.md) supplies the contrasting published description. These accounts may share sources and are not independent audio analyses.
+
+The prior NPS review listed the precise FBI notes as unlocated; this newly inspected source is a strong textual match for those notes. It does not establish the exact source selected by NPS or whether its “FBI, Trial Evidence” attribution refers to this release, another version or both. The report, the original message, any later recordings and actual custody are separate objects. No audio was played in this investigation; historical intent, fabrication or suppression is not established.
+
+## TODOs
+
+- [ ] Obtain or identify the precise source/version used by NPS and compare it with the two report pages, preserving publication versions and source dependencies.
+- [ ] Locate the family press release, the newspaper attachment referenced in the September 14 report, and any authorized audio/custody/examination records, respecting the family's privacy.
+- [ ] Establish the source of the printed approximate time and timezone label and the actual carrier/row association before testing call chronology.
+
+This is a separately named, additive source review; all earlier records and the uncorrected source observations remain preserved.
