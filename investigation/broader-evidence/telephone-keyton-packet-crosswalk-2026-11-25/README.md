@@ -1,0 +1,18 @@
+# Keyton interview: second released reproduction located
+
+TEL04 / TEL05 / AUD016. Visual comparison performed November 25, 2026. The Keyton FD-302 was already located and discussed in the [October 27 telephone review](../telephone-originals-2026-10-27/README.md); it is not a newly discovered interview. A search of a different, already held Commission working-file packet now locates another reproduction. The two are not independent interviews.
+
+## Sources and observations
+
+* Team 7 Box 13 [released mirror](https://www.les-crises.fr/wp-content/uploads/2016/06/Team7-Box13-Flight-Call-Notes-and-302s.pdf#page=48), physical page 48, bears stamp `REQ. #35-13 000000736`; PDF SHA-256 `e3cf374351cb753d1297433f86bb5807c56cb42a6dc69837a9df02dd0d54f4aa`. The copy was acquired October 27, 2026.
+* Team 1A Box 33, [public archive ZIP](https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip), member `NARA_9-11_Commission_Records_Released_Jan_14_2009/911 NARA/Team 1A Files/Team 1A Box 33/T1A B33 Four Flights- Phone Calls and Other Data Fdr- Entire Contents- FBI 302s 843.pdf`, physical page 59, has document header `M-INT-00029726`, `265A-NY-280350-302-60656`; PDF SHA-256 `3b2f5f67f4e649236e77922c8922f93dced518e2e3f8255473da89c1747a92fe`. It was acquired November 6, 2026, and rehashed November 25. The header spells the interviewee's surname `KEYTON`; the stamped/source images preserve the text as rendered.
+
+Both pages identify a September 11 investigation and September 14 transcription and visibly report six to eight automated collect calls, a later live-operator collect call, and a second call described as direct and not collect; both state that Keyton lacked caller identification and did not know whether the caller used an onboard phone or cell phone. This crosswalk corroborates the existence and wording of two reproductions, not the carrier routing, the speaker's identity, or the interview account as a separate observation.
+
+A visible difference concerns the first connected call: the Team 7 reproduction says the caller was put through **“and sounded hysterical.”** On the Team 1A page, the region following the words “was put through” is obscured by a black rectangle and markup, so this visual review cannot establish whether the phrase appears underneath. Preserve the differing accessible appearances; the mask's author, date and reason are unknown. Do not infer that the underlying interviews differed or that anyone changed testimony. The earlier [Helen Voss account](../telephone-originals-2026-10-27/README.md) reports her belief that both calls were collect, while Keyton's account describes the second as direct; those witness accounts remain unresolved.
+
+## Method and remaining tests
+
+Rendered only physical page 48 of the Team 7 PDF and page 59 of the Team 1A PDF at 1.7× with PyMuPDF; visually checked both pages and rehashed both PDF containers. This is not a pixel-level equality test, authentication of an original interview, or review of the remaining packet pages. No hidden or redacted information was reconstructed. Images and personal/contact details are not reproduced.
+
+TODO: obtain the agent's original notes/audio, carrier and operator routing records, office transfer logs, and the worksheet connecting unknown calls to recipients. The copies cannot establish why their visible masking differs, whether the second call had an upstream operator leg, or which electronic row belongs to either conversation. Earlier conflicting evidence and the original text remain unchanged. Checklist: [x] locate second copy and pin identifiers; [x] visually compare relevant passages; [x] retain source and masking limitations; [ ] obtain original notes and routing records.
