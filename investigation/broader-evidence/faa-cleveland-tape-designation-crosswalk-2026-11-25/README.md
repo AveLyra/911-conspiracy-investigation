@@ -1,0 +1,15 @@
+# Cleveland voice tapes: table and custody-form designation comparison
+
+## Sources and scope
+
+Visually compared the handwritten list and annotations on PDF page 204 of [NARA AWA-2, catalog 7596642](https://catalog.archives.gov/id/7596642), 205 pages, accessed November 16, 2026, SHA-256 `7ca684e83e6819d6a5bde19554f0b587a50fe467171abdf7a2daa2243dfa49c9`, with page 46 of the 46-page Commission packet `T8 B17 FAA Trips 3 of 3 Fdr- Satori Review Timeline- FAA Data.pdf`, accessed November 25, 2026, SHA-256 `cee78be0535e9cb6e5834da575c9fceb55791afcf6331a31b44a5e11af2cab0c`, in the [public Commission archive ZIP](https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip). These hashes identify reviewed copies, not physical originals. This comparison does not examine the tapes or their contents.
+
+## Observations
+
+The form's handwriting appears to list `4B 0000–1333`, `4A 1332–1344`, `4B 1344–1650`, and `7B 0000–1650`, each annotated `9/11`. The September 12 table lists four correspondingly designated voice entries: `4B 000–1333`, `4A 1332–1344 1642–1707`, `4B 1344–1650`, and `7B 0000–1650`. The table includes the additional `1642–1707` interval on the 4A row; that interval is not apparent in the handwritten list. The handwritten reading remains provisional. The table identifies the four as original tapes provided to AAT-20 and marks their security `Unknown`; it separately lists other tapes as secured locally with `YES`. Do not apply one category's security label to the other.
+
+The matching labels and ranges make these records useful candidates for a custody crosswalk, but they do not establish unique physical-reel identity or prove a complete chain of custody. The form's later annotations appear to record receipt of original voice tapes on September 12 at `1045 AM` and receipt at ZOB on September 17 at `1715 LCL`; a further September 17 annotation at the right edge is cropped. These are separate reported entries whose exact scope, authorship, sequence and relationship to the four items require verification. The [earlier comparison of the table and the planned visit](https://github.com/AveLyra/911-conspiracy-investigation/blob/080b19f35974e600b677f6ae19d2ff80ae33f54e/investigation/broader-evidence/faa-cleveland-tape-table-plan-2026-11-25/README.md) and the September 17 planned evening arrival describe different records; the plan is not proof of the trip or transfer. Similar names, times and descriptions are leads, not unique identifiers. No adverse intent or loss follows from these observations.
+
+## TODOs and discriminating evidence
+
+Obtain legible complete original forms and annotations, reel labels and unique identifiers, dated issue and return receipts, certified-copy logs, recipient intake records, and inventories. Determine whether the table's second 4A interval and the handwritten list refer to the same physical reel or separate recordings; establish the time basis and authorship of annotations. The actual recordings and uninterrupted custody remain unverified. The later corrected FAA answer and administrative disposition remain separate open questions.
