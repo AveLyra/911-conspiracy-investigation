@@ -1,0 +1,21 @@
+# Cape TRACON audio acquisition and FAA index date discrepancy
+
+Reviewed 2026-11-25. This step follows the [Cape inventory comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/d537d9121bdc0c31194a4f7f5e982b4201200b18/investigation/broader-evidence/faa-cape-tracon-archive-inventory-2026-11-25/README.md). The available audio was acquired and its container duration measured; content, continuity and time-code alignment have not yet been tested.
+
+## K90-39 audio: measured duration
+
+The official [NARA K90-39 MP3](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/b-Voice-Recordings/5-K90-39-High-AR-1230-1400-UTC.mp3), NAID 7598886, was acquired to the verified project media store. SHA-256 `6c8c16d52e09fea2877dd798dbbffd6823e626f09f58cadf022d05b7425a9b37`; size **179,863,470 bytes**. `ffprobe -v error -show_entries format=duration,size -of default=noprint_wrappers=1 <source>` reported **5620.666844 seconds** (93 minutes 40.666844 seconds). The filename's 1230–1400 range spans 90 minutes; the listed cassette description instead gives 1230–1315 and 1345–1400. Both labels remain as reported in the [NARA box 14 finding aid](https://www.archives.gov/research/foia/faa-finding-aid-12-23).
+
+Duration is a container-level measurement, not evidence of 90 minutes of continuous original time: lead-in, time compression, repeated material, clock announcements, silence, actual content and file provenance were not tested. It does not resolve whether 1315–1345 is present or absent. The file was identified as MPEG audio by `file`; no listening, transcript, time-code extraction, custody or completeness test was performed. The stored source, not a media excerpt, is the reproducible input. Do not confuse K90-39 with the separate 1538–1540 tape-change gap.
+
+## Distinct date fields in the certified-index document
+
+The [K90-33 FAA voice-tape index](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-K90-33-Voice-Tape-Index-9-11.doc), NAID 7603280, extracted with `textutil -convert txt -stdout`, is headed **October 16, 2003** and says copies of re-recordings were provided to the Commission. Its Supervisor Console, Flight Data and High Arrival Radar rows each say **September 11, 2003 UTC**; their windows are respectively **1229–1253**, **1229–1253** and **1247–1259** UTC. The finding aid's K90-30 cassette description gives those same position labels and windows, without a date in that row. The nearby K90-31 row describes a first request and a certified re-recording **9/11/01**, but its High AR window is **1247–1253**, not 1247–1259. The earlier [October 10, 2003 FAA partial transcript](https://catalog.archives.gov/id/7601899) in AWA-332 physical page 16 says its High Arrival position window was **September 11, 2001, 1247–1259 UTC**.
+
+These are conflicting date and range descriptions from different records, not proof that they describe identical physical copies or that any particular year is correct. A typographical date is an untested possibility. The index is not a signed receipt, and the DOC extraction is not native-original authentication. Neither record establishes what happened to K90-39.
+
+## TODOs and provenance
+
+Listen to or analyze K90-39 using recoverable time announcements and the index/recording documentation; compare its apparent content timeline with both descriptions without treating silence as missing data. Verify actual media, clock definitions, source tapes and custody. Obtain the original signed index, any correction, and delivery records to test the 2003 versus 2001 descriptions and the candidate K90-30 join. The earlier 1538–1540 gap, FAA corrected answer and administrative disposition remain separate open TODOs.
+
+K90-33 DOC retrieved 2026-11-25; SHA-256 `4cd46b8c18ed074bc573edd565e7d9834c9114f4eba9c2cbc69708f8077f756e`; source copy retained in native research. K90-39 MP3 was retrieved the same date into the verified Intel media store; the absolute operational path is kept locally, not in this public report. The NARA finding-aid snapshot and the AWA-327 memorandum provenance are preserved in the preceding reports. No unredacted or private material was used.
