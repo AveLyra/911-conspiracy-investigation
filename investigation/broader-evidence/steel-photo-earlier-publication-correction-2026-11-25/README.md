@@ -1,0 +1,7 @@
+# Correction: earlier publication of W14A, W14B and C12 photo study
+
+November 25, 2026. The [later photo crosscheck](https://github.com/AveLyra/911-conspiracy-investigation/blob/75d17f83d6030cb2d2f3d12612216733d23104ef/investigation/broader-evidence/steel-w14-photo-public-crosscheck-2026-11-25/README.md) says its earlier November 19 photo review was local and presents the material as a public derivative of that review. It omitted the already published [November 5 photo-body study](https://github.com/AveLyra/911-conspiracy-investigation/blob/6fec9041/investigation/broader-evidence/steel-gms-target-photo-bodies-2026-11-05/README.md). The earlier study already covered the same 17 released images, markings, hashes and relevant metadata. The later crosscheck is a repeat integrity and representative-image inspection, not a new photographic discovery or independent corroboration. Both publications are preserved.
+
+The earlier study also records embedded-clock observations and limitations, including that five tested image copies lacked EXIF. These records do not authenticate the camera original, date or building of origin. FEMA's WTC 7 field description and NIST's unidentified classification remain source-specific, unresolved observations. Original camera, transfer and attribution records remain TODOs.
+
+The omission resulted from a duplicate search that looked for W14 in paths but missed the earlier GMS-named topic. Future source checks must search content, image hashes and relevant branch history as well as filenames.
