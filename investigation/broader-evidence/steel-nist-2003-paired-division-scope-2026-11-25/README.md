@@ -1,0 +1,23 @@
+# NIST FY 2003 division reports: parallel descriptions of steel scope
+
+2026-11-25 · Steel attribution AUD011/AUD016, B188/H005. This separately adds a primary NIST report to the [previous comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/9c0a5691d3b8bb1cd92b25e7a33cb35b9c39c163/investigation/broader-evidence/steel-nist-2008-abstract-comparison-2026-11-25/README.md). Neither document identifies an actual tested WTC 7 specimen in the inspected passages.
+
+## Observations
+
+- **Materials Reliability Division:** NISTIR 7015, FY 2003, dated September 2003, printed p. 36 / PDF p. 42, describes “metallurgical and mechanical analyses of structural steels from the Twin Towers and WTC 7.” Its Task 1 separately says more than 200 pieces of the World Trade Center towers were collected and brought to NIST; it reports 41 positively located exterior panels, 15 in or near impact zones. [NISTIR 7015](https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7015.pdf#page=42). This pass used the 2026-11-25 copy SHA-256 `afdba5587d81a3102d52678049560bc84e8373ecaa1e1e83d2adc30d4d25a43d`. The [previous comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/9c0a5691d3b8bb1cd92b25e7a33cb35b9c39c163/investigation/broader-evidence/steel-nist-2008-abstract-comparison-2026-11-25/README.md) preserves a different hash for an older copy and the limits of the comparison.
+- **Metallurgy Division:** NISTIR 7017, FY 2003, dated September 2003, printed p. 50 / PDF p. 56, describes “metallurgical and mechanical analysis of structural steels from the Twin Towers.” Its Task 1 likewise reports more than 200 tower pieces, 41 located exterior panels and 15 in or near impact zones. Its article describes the Metallurgy and Materials Reliability divisions as both studying recovered steel. [NISTIR 7017](https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7017.pdf#page=56). PDF retrieved 2026-11-25; SHA-256 `4c73f80c958eb1d86f906216b19adad2fc5d18f023e50a162d70dc52c6a4e0c9`.
+- **Later statements:** The [2008 NIST publication entry](https://www.nist.gov/publications/analysis-structural-steel-world-trade-center-investigation) uses scope wording that includes WTC 7; the [2005 NCSTAR 1-3 report](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-3.pdf) says WTC 7 properties were literature-based because no steel was recovered from the building; [FAQ 21](https://www.nist.gov/world-trade-center-investigation/study-faqs/wtc-7-investigation) says WTC 7 steel could not be clearly identified after removal. Preserve each formulation and the separately recorded field-attribution and inventory accounts.
+
+## What this changes
+
+The two same-period division summaries describe closely related tasks and matching collection counts, yet only the Materials Reliability summary's scope sentence names WTC 7. Their common features make shared source material or coordinated drafting possible, but neither a common draft nor a reason for the wording difference has been verified. The summaries cannot be counted as independent specimen tests. Their task counts do not authenticate any particular component's building of origin. The 2008 entry's relationship to either report is also unverified.
+
+A scope-label or editorial difference is one untested possibility; separately documented tests of unidentified or differently sourced material are another. The passages alone do not establish either possibility, a test on WTC 7 steel, a lack of all outside testing, intentional misstatement, or cause of collapse.
+
+## TODOs
+
+- Locate original project and publication drafts, author review records, study-specific specimen identifiers, test ledgers and specimen-to-building assignments. Compare the underlying work rather than presuming which prose is controlling.
+- Obtain the W14A/W14B intake and attribution worksheets, field photographs, yard transfer records and identification rationale; retain the conflicting field and inventory descriptions.
+- If material, obtain historical captures and revision history for the 2008 publication entry; its displayed creation date does not authenticate its current text on that date.
+
+Reading and test scope: visually inspected the two report article pages and the NISTIR 7015 title page; read the NISTIR 7017 title page through PDF text extraction; extracted the article text with PyMuPDF and checked the named scope and count anchors. The 2005 report, FAQ, and 2008 page were already examined in the prior comparison. No native project worksheets, drafts, specimen tests or transfer records were obtained in this unit. Both FY 2003 publications are preserved as distinct sources, not deduplicated.
