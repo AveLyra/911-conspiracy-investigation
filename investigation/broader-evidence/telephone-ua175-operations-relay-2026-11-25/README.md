@@ -1,0 +1,17 @@
+# Flight 175: Commission interview about the operations-center relay
+
+**AUD016-A1 / TC05-B105 / TC06-B110.** Two archived copies of a November 21, 2003 interview memorandum with United operations-center employee Rich Miles are now acquired. The selected account supplies a source for the reported San Francisco-to-operations-center relay; it is a later recollection, not a contemporaneous call log.
+
+## Sources and examination
+
+Both files are members of the [January 2009 Commission archive](https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip), retrieved November 25, 2026 with ZIP member length and CRC checks. `MFR NARA- T7T8- UAL- Miles Rich- 11-21-03- 01093.pdf` is four pages, SHA-256 `00e2ee04f2dabd753d9f99f62ede5509c0ba623aad7bcc2d491e53627d2d2aaf`; `T7 B11 Miles Fdr- Entire Contents- 11-21-03 Rich Miles MFR w Notes 207.pdf` is four pages, SHA-256 `90461375f2e85a1635ce7409b2d3694a4f38d56811433b3869521dfa617eb403`. The text layers were screened, and page 2 of both copies was visually inspected. The first scan bears `COMMISSION SENSITIVE` and `UNCLASSIFIED` markings; the second has handwritten marginalia. Neither physical original nor scan history was authenticated. The versions are related copies of one interview, not independent witnesses.
+
+## What the account reports
+
+On page 2, Miles recalls a San Francisco maintenance-center manager reporting that a call identified Flight 175 as hijacked. He places the relay shortly before the second tower was hit and says the aircraft call had ended before the manager reported it to him. He also recalls that one call he received before the crashes referred to crew deaths, but was unsure whether it concerned Flight 175 or Flight 93. These are reported recollections; the memorandum does not establish a precise relay time or identify the speaker on the aircraft by direct observation.
+
+The earlier [Flight 175 source review](https://github.com/AveLyra/911-conspiracy-investigation/blob/a26c11d0ad14980646ef5907c80ef3eca517e24d/investigation/broader-evidence/telephone-ua175-summary-review-2026-10-28/README.md) preserved an FBI interview with approximate 05:30 and 06:00 passages and cautioned that the timestamps were not calibrated call times. The separate [recipient interview comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/a26c11d0ad14980646ef5907c80ef3eca517e24d/investigation/broader-evidence/telephone-ua175-commission-interview-2026-11-25/README.md) preserves less-than-one-minute and approximately-two-minute recollections alongside the carrier-summary fields. Do not treat the operations-center relay time, aircraft-call duration and interval labels as the same measurement or infer that the documents represent independent timed observations. The earlier accounts and this recollection remain as reported.
+
+## TODOs and limits
+
+Obtain the original interview notes and versions, the actual United call-system explanation and operational logs, native carrier records with field definitions, clocks and joins, and any surviving recording or disposition documentation. These could test the sequence and relay; this review did not decode a call, authenticate signatures, or establish actual elapsed time. No conclusion about alteration, intent or an independently established new call follows. The corrected FAA response and administrative-action records remain separate TODOs.
