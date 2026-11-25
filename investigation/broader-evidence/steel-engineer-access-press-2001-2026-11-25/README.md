@@ -1,0 +1,17 @@
+# September 2001 report of steel-inspection request
+
+**AUD011 / AUD016 / B188 / H005.** A contemporary newspaper account in the New York City public document release offers a specific lead to the original engineering inspection request and city response. It reports competing participants' accounts; it is not the request, a signed decision, an inventory or independent proof of what happened at the yards.
+
+## Source and scope
+
+[City-released PDF NYC-WTC_000152373, physical p. 36](https://sept11documents.cityofnewyork.us/apps/content/September11_MD/NYC-WTC_000152373.pdf#page=36), acquired November 25, 2026, 63 pages, SHA-256 `7772c2fe9a2ea9b245c6b5a49e81ddedb9c03ba3c1e2ffe075312740a2f49397`. Page 36 was visually inspected; the PDF text layers were screened for selected terms. The page reproduces James Glanz and Kenneth Chang, “Engineers Seek to Test Steel Before It Is Melted for Reuse,” with a handwritten New York Times September 29, 2001 date. An independent [library catalogue](https://iris.sena.edu.co/EDS/Search?dfApplied=1&filter%5B%5D=EXPAND%3A%22fulltext%22&filter%5B%5D=~ContentProvider%3A%22Regional+Business+News%22&lookfor=%22Iron+%26+steel+columns%22&type=SU) also lists September 29, 2001, p. B9. The handwritten date, catalogue metadata and press report are separate observations; the paper scan is not the native article file or source correspondence. No raw newspaper image is republished here.
+
+## Reported accounts, not a resolved chronology
+
+The article reports that the engineering society's representative had attempted to contact the city and resent a request by fax. It separately quotes the city's design-and-construction commissioner as saying the request had just reached him at approximately 5:40 p.m. on the preceding day and that he would consider it over the weekend. The same account describes urgent recovery as his priority and reports recyclers' stated willingness to accommodate inspections if done quickly. The statements describe request, receipt, consideration and potential access; they do not establish actual delivery of the original fax, grant of access, a blanket halt, or the fate of any identified specimen.
+
+A [prior steel-preservation review](https://github.com/AveLyra/911-conspiracy-investigation/blob/570aefae5fb07b9ded0669965f586c7a1725adea/investigation/broader-evidence/steel-preservation-decisions-2026-10-27/README.md) preserves later hearing accounts of access and recycling. Retain its reported dates and these contemporary newspaper descriptions side by side. Similar participants and subject matter make comparison useful, but the record does not establish identical requests, calibrated times or a complete sequence. The same article reports already ongoing recycling; this does not establish which pieces were processed, engineering access at every yard, or a deliberate effort to suppress evidence.
+
+## Discriminating records
+
+Seek the original society request and fax transmission reports, the city's intake and written response, contractor/recycler instructions, visitor and inspection logs, and item-level selections and disposition. The earlier preserved surviving specimens and contrary accounts of access remain relevant. The publication reports estimates and recollections, not verified complete salvage counts or an authenticated custody chain. No motive, causation or WTC 7 specimen identity follows from this article alone.
