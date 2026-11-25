@@ -1,0 +1,17 @@
+# Flight 93 Airfone spreadsheet: visual check of the later interview
+
+TEL02–TEL03 / AUD016. November 25, 2026. This is a visual-source supplement to the [earlier clock and attachment review](https://github.com/AveLyra/911-conspiracy-investigation/blob/6bd3db3f64615be0409e7ce912b1cc5572ec49e9/investigation/broader-evidence/telephone-ua93-airfone-clock-attachment-2026-11-06/README.md), which inspected the public reader text but had not authenticated its source images. The earlier account remains preserved.
+
+## Observations
+
+Physical PDF page 24 of the Team 7 Box 19 packet visibly identifies `M-INT-00162543`, `265A-NY-280350-302-116622`, a June 28, 2002 interview and July 1, 2002 record date. The report says the carrier manager supplied a Flight 93 Airfone spreadsheet on **November 6, 2001**, and describes a later updated spreadsheet attached to the report for retention in a 1A file. Its claimed attachment and intended filing are not the spreadsheet itself or a verified later custody record. A separate [earlier 96202 reproduction](../telephone-gte-96202-visual-2026-11-25/README.md) describes a package and a 1A envelope, but its package-date line is partly obscured. The two records' relationship and underlying versions require item-level verification.
+
+The later interview attributes two rows, **8:30:32 and 8:32:39**, to **Central Time** and processing via a Fort Wayne, Indiana radio base station; it describes the remaining calls as processed through Eastern-zone stations. This verifies the report's visible wording, not the station's actual 2001 switch setting, daylight-saving practice or a calibrated event time. The [prior comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/6bd3db3f64615be0409e7ce912b1cc5572ec49e9/investigation/broader-evidence/telephone-ua93-airfone-clock-attachment-2026-11-06/README.md) separately preserves the DOT's 2005 and 2006 civil-time labels; those later labels do not establish the switch clock in 2001.
+
+The page also describes fields for a unique ACIS call ID, destination and last-dialed numbers, radio-base and handset identifiers, and card-related fields. Those definitions are the interview account and do not independently validate a given row, operator leg, recipient, or caller. No card numbers, personal contact information or raw scan are republished.
+
+## Source and remaining tests
+
+The previously acquired 52-page [Commission archive packet](https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip), member `NARA_9-11_Commission_Records_Released_Jan_14_2009/911 NARA/Team 7 Files/Team 7 Box 19/T7 B19 Key 302s Fdr- Entire Contents- FBI 302s.pdf`, was acquired November 25, 2026; SHA-256 `01daa2ea6683aacbbb7918086fb8328e7803810087cc3160a352377be056dc4e` matched its retained acquisition receipt. Only physical page 24 was rendered at 2× and visually inspected in this step; privacy markings were not reconstructed.
+
+TODO: recover the originally supplied and updated spreadsheets, 1A inventory/receipt, station and switch-clock configuration, and versioned source-to-recipient worksheets. Join actual ACIS IDs and independent clock anchors before making timing or caller claims. Checklist: [x] verify source hash; [x] inspect selected report image and preserve clock descriptions; [ ] acquire native spreadsheets and custody records; [ ] independently test clock and call joins. No audio, call rows, historical intent or source authenticity was established by this visual check.
