@@ -1,0 +1,25 @@
+# Request 14 archive counterpart: Flight 93 office-call row
+
+AUD016-A1 / TEL01–TEL04 · 2026-11-25. An additional archive copy supplies a clearer page-image observation for the candidate 9:45:37 call. Earlier readings and records remain unchanged; this does not authenticate the native carrier export or complete the original request-response chain.
+
+## Acquisition and visual scope
+
+The [public 2009 Commission archive mirror](https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip) lists Team 7 Box 13 member `T7 B13 Flight 11 Calls Fdr- Response from DOJ to Doc Req 14- Calls- AA 11 and 77- UA 175 and 93.pdf`. On 2026-11-25 a bounded range retrieval produced a **28-page**, **1,229,594-byte** PDF, SHA-256 `957eecd527e1f1ee56867704b630c81edb766e76b8519b95abb5e660ac335f20`. The request checked the ZIP member path, range, pre-existing archive ETag, compressed size and CRC-32 `e938b4c0`; these verify the acquired member against the indexed archive, not its original carrier authorship or completeness. Two earlier acquisition attempts failed assertions due to HTTP-version and header-name capitalization assumptions; those attempts did not save the member. The successful separately named script accepted the observed HTTP/1.1 206 and case-insensitive header name while retaining the other checks.
+
+Physical **p. 25**, the airline summary, and **p. 28**, the GTE table continuation, were rendered at 180 dpi and visually inspected in this step. Page-image SHA-256 values are respectively `4bdbad0b1b0d3cb06ae9c0b66170890dff8e34020445445807553df82f0babf6` and `a741ea803e55ccb877802e021195076e6298da8529a593fd56723602f72fe7fb`. Rendering adds no original information. The source PDF and images remain in research storage because they contain sensitive payment and contact information; none are republished here. A text-layer search covered all 28 pages for selected terms; it is not a page-by-page visual review or an exhaustive production audit.
+
+## Candidate row and preserved observations
+
+On p. 25, the row bearing **9:45:37** and the office-call passenger name displays **138** under the printed **Duration Connect** heading. The SCP Duration position in that row appears blank; a blank is not converted to zero. P. 28 includes a continuation row with the time; its last Duration Connect digit was not accepted as an independent exact reading in this check. Matching time, passenger and seating details support a candidate relationship to the FBI and briefing descriptions, but do not establish a native event join.
+
+The previously inspected lower-resolution reproduction was transcribed as **130**, with **138** retained as a possible reading in the [earlier row review](https://github.com/AveLyra/911-conspiracy-investigation/blob/97c62e3b068a02e323882a0617e923e480a19c16/investigation/broader-evidence/telephone-ua93-office-call-carrier-row-2026-11-25/README.md). Both earlier observations remain preserved. The newly read **138** is a distinct image observation, not an instruction to replace or erase those readings. The two images may represent the same underlying table and are not independent call measurements.
+
+The [FBI interview](https://vault.fbi.gov/9-11%20Commission%20Report/9-11-interviews-2001-09-sep-02-of-08), physical p. 16, reports that an interviewee was told a call lasted **138 seconds**. The [Commission briefing](https://catalog.archives.gov/medialz/legislative/rg-148/2524787/t-0148-911MFR-00217.pdf#page=3), physical p. 3, lists the 9:45:37 call as **0 seconds**. An earlier [FBI-recorded carrier-manager explanation](https://github.com/AveLyra/911-conspiracy-investigation/blob/f120c724216fa87619a2c966612da8f6a597b1fc/investigation/broader-evidence/telephone-ua93-office-call-field-correction-2026-11-25/README.md) describes Duration Connect as setup time in seconds and SCP Duration separately as call duration. This supports the possibility of different measured intervals; it does not establish the source of the interviewee's number or the briefing's zero, the meaning of a blank or failed connection, or that these records necessarily refer to identical events. No conversation, false record, motive or concealment follows from the numbers alone.
+
+## Remaining work
+
+- [ ] Compare this acquired 28-page member with the previously held 28-page reader on content, page labels, redactions and provenance; this step did not establish byte identity, a complete 50-page delivery, or the reason for the difference between a previously described 50 enclosures and the held pages.
+- [ ] Obtain the native carrier export/version, field dictionary and failure/default rules; source-to-briefing and exhibit worksheets; and operator/receiving-office records. Check event joins with privacy-protected keys.
+- [ ] Independently review the p. 28 digit and the actual briefing/exhibit source chain without replacing prior observations. Retain the **130 / possible 138 / p. 25 138 / interview 138 seconds / briefing 0 seconds** source attributions.
+
+No outreach, request submission, private data publication or native carrier test was performed.
