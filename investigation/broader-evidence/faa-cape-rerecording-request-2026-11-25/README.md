@@ -1,0 +1,19 @@
+# FAA Cape TRACON re-recording request and response
+
+Reviewed 2026-11-25. A [three-page FAA correspondence release](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-e-other/5-K90-25-Correspondence-Email-Voice-Recordings-second-request-for-tapes-REDACT-SEALED.pdf), NARA K90-25, supplies request and response records relevant to the [Cape re-recording certification](https://github.com/AveLyra/911-conspiracy-investigation/blob/4200c1180b1aeb5059b3b941cc6eb7c4fcf14b65/investigation/broader-evidence/faa-cape-certification-2004-window-2026-11-25/README.md). It does not identify the acquired K90-39 MP3 as a particular attachment or establish ultimate delivery.
+
+## Source observations
+
+- **March 31, 2004**, pages 2–3: an FAA official reports receiving material from the New England region, including a tape labeled as a certified re-recording. The account lists supervisor console **1229–1253**, flight data **1242–1253**, and High AR **1247–1253 UTC**. This is the official's description of received items, not a Commission receipt or an inspection of the tape.
+- **April 5, 2004**, page 2: an FAA official asks that the previously provided material be re-recorded for **1230–1600Z**, even if much is blank. A later message describes the Commission as wanting that interval even if it means dead air. The chain is evidence of the FAA participant's account of the request, not the Commission's original request itself.
+- **April 5, 2004**, page 1: a Cape specialist says a re-retrieval from the DAT is needed for the Flight Data, supervisor desk and High sector positions. A later Cape message says the tapes are being re-recorded and gives **1229–1600 UTC** as the planned period. Planned or underway work is not proof of completed re-recording or delivery.
+
+The [April 19 electronic certification document](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-K90-33-Tape-Certification3.doc) describes **1230–1600 UTC**, while the April 5 Cape message gives **1229–1600 UTC**. The earlier described High AR tape ends at **1253 UTC**; the separate October 2003 partial-transcript cover in [AWA-332, physical page 16](https://catalog.archives.gov/id/7601899), states **1247–1259 UTC**. Preserve these values and their different record types. They need not identify the same tape, transcript, stage or media. Source versions, actual items and time-code conventions are needed to test their relationship; no single value is selected as controlling.
+
+The request for blank or dead air is contrary evidence to a claim that this correspondence itself shows a request to remove quiet intervals. It does not prove the resulting recording was complete. The separate gap memorandum's one-minute-twenty-second and almost-two-minute descriptions remain unresolved, as do the K90-39 inventory-label discrepancy and the automated opening-transcription hypothesis. No recording was played or compared during this document review.
+
+## TODOs and provenance
+
+Locate the Commission's original request, re-retrieval logs, the tapes and time codes, the April 19 certification's actual attachment, and recipient/Commission delivery records; compare tape IDs and content before linking them to K90-39. Retain the later FAA corrected answer and administrative disposition as separate open TODOs. The chain does not prove intent, concealment, actual blank-air coverage or the contents of any missing interval.
+
+NARA K90-25, NAID 34915661, 3-page redacted public scan, retrieved 2026-11-25; SHA-256 `6abce3982f2fc3004ad77fc55c2b95add1cfbf985cbec6b6788dc87dcdaa00fd`. All three page images were visually inspected. A separately named source copy is retained in native research. Personal contact details and material obscured by redactions were not reproduced or reconstructed. Other source hashes and reading limits are preserved in the linked predecessors.
