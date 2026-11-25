@@ -1,0 +1,17 @@
+# Flight 93 recording: a possible dispatcher-record cross-reference
+
+AUD016 / TEL01–TEL04. November 25, 2026. This supplements the [recording-handoff report](../telephone-ua93-38720-recording-receipt-2026-11-25/README.md) and the previously documented [dispatcher-related source comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/9e45ee928f4a655b671d68fe196ab73ccc5b4099/investigation/broader-evidence/telephone-felt-transcript-comparison-2026-11-14/README.md); it does not alter earlier records.
+
+## Source observations
+
+In the same [released Team 1A Box 33 packet](https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip), physical page 42 is an FBI interview report for a Westmoreland County emergency-center telecommunications officer. It says the officer was interviewed at approximately **12:15 p.m. on September 11, 2001**, and describes a Flight 93-related call at approximately **9:58 a.m.** It says the officer agreed to sign, date and turn over handwritten notes; the future-tense filing language does not establish actual transfer. The previously published review preserves additional context and relevant discrepancies.
+
+Physical page 48 reports that an agent received an original recording of a Flight 93-related cellular telephone call to a public-safety department in the same Pennsylvania city and on the same named street, delivered at **1:35 p.m.** on September 11. Its text does not name the passenger or identify the dispatcher. The two report descriptions point to related location and subject matter. **They do not prove that the recording on page 48 is the call discussed on page 42**: the page-48 report does not identify the exact call, the dispatcher's notes, or a shared evidence item number. The interview time and reported delivery time concern distinct events, not call duration.
+
+An overlapping source or the same call is a plausible but untested hypothesis; a different Flight 93-related call or separate recording is another. Do not count the reports as independent proof of what was said on a recording. No identity, call content, intent or current survival is inferred from the location match.
+
+## Provenance and test
+
+The packet is `NARA_9-11_Commission_Records_Released_Jan_14_2009/911 NARA/Team 1A Files/Team 1A Box 33/T1A B33 Four Flights- Phone Calls and Other Data Fdr- Entire Contents- FBI 302s 843.pdf`; SHA-256 `3b2f5f67f4e649236e77922c8922f93dced518e2e3f8255473da89c1747a92fe`, retained from November 6, 2026. Physical pages 42 and 48 were rendered with PyMuPDF at 1.5× and 1.7× respectively and read visually on November 25. The exact street address and personal/contact information are omitted from this report. The source is a released Commission-file reproduction, not the underlying audio or an authenticated evidence receipt. No redacted information was reconstructed.
+
+TODO: obtain the recording and its item/property identifier, original dispatch-system log, recording metadata, the notes and their 1-A inventory/receipt, and the handoff and later custody records. A matching item identifier, independently established call metadata, or the audio itself could support or disprove the proposed join. None was available or tested here. Checklist: [x] source pages individually inspected; [x] shared location described without claiming identity; [x] distinct event times and unresolved possibilities retained; [ ] recording and item-level custody obtained.
