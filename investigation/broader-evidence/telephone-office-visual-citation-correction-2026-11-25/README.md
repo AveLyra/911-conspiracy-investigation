@@ -1,0 +1,7 @@
+# Correction: office-call interview image-check citation
+
+November 25, 2026. The [continuation report](https://github.com/AveLyra/911-conspiracy-investigation/blob/c3ce7cdb22afd9c748b48cc756088a1573f92e63/investigation/broader-evidence/telephone-office-interview-continuation-visual-2026-11-25/README.md) describes its first linked predecessor as a prior interview image check. That link actually points to an earlier [text-extraction comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/07f730ecc066e7f5fd85dd421b6490f22b54d81c/investigation/broader-evidence/telephone-ua93-office-call-138-2026-11-25/README.md), which explicitly says the FBI images had not been inspected in that step.
+
+The intended predecessor is the separately published [FBI page-16 visual check](https://github.com/AveLyra/911-conspiracy-investigation/blob/dfed2c22/investigation/broader-evidence/telephone-ua93-office-call-fbi-visual-2026-11-25/README.md). It documents the scan hash and visual reading of the 138-second account and identifies page 17 as outstanding. The later continuation report documents a new page-17 image inspection. The text-only and image checks are different stages of examining the same release; they are not independent testimony. Both reports remain preserved.
+
+This corrects the reference and its description, not the duration conflict. The 138-second account, the Commission briefing's 0-second entry and the court-field observations remain source-specific; the underlying event join and carrier definitions remain TODOs.
