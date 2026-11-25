@@ -1,0 +1,19 @@
+# Flight 93 call: early intake versus recipient interview
+
+November 25, 2026 · TEL02–TEL04 / AUD016-A1. A distinct early FBI intake and a later interview appear in the same [Commission archive packet](https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip), member `T7 B12 DOJ Doc Req 35-13 Packet 4 Fdr- Entire Contents- Response Letters- Reports 403.pdf`, 92 pages, SHA-256 `7ed35efb7825f26cb0c712d334a8b286c74bcc25c5b44e01f227059f446c6dba`, acquired November 25, 2026. The document is a public mirror of released scans, not native FBI data. PDFKit text only; the page images and redactions were not visually inspected in this pass.
+
+## Conflicting source descriptions preserved
+
+- **Early intake, physical pp. 46–48, extracted text:** page 46 lines 28–29 label **“Information Received Date: 09/11/2001”** and **“Time: 9:40 AM”**; page 47 line 5 separately labels **“Event Date: 09/11/2001 Time: 9:40 AM”**. Page 47 line 1 describes a call **“V.IA A CELLPHONE”**, preserving the extracted punctuation; page 48 lines 8–10 contain a follow-up lead referring to a cellphone call, with an assigned-to field dated September 11 at 7:22 p.m. The source's field names are not proof of the call's start time, who provided the device description, clock calibration, or successful connection. We have not verified the damaged text visually.
+- **Recipient interview, physical p. 24, extracted text:** line 4 gives transcription date **09/12/2001**; line 12 reports the call at **approximately 10:00 a.m.** The introductory paragraph calls it an **Airfone** call. The prior [packet review](https://github.com/AveLyra/911-conspiracy-investigation/blob/d67dd59041935c80b3b528ff44beb1e9657c9224/investigation/broader-evidence/telephone-wainio-fbi-packet04-2026-11-25/README.md) describes the scan and its limits. The text does not establish whether the Airfone label was the recipient's own contemporaneous description or an agent's classification.
+- The [2004 briefing and later public accounts](https://github.com/AveLyra/911-conspiracy-investigation/blob/c95fa5a678664074960c1e772fb6ceca2c568a8f/investigation/broader-evidence/telephone-wainio-briefing-archive-2026-11-25/README.md) describe an Airfone-associated named entry at **9:53:43**, while National Park Service pages use **9:53** and **9:54**. Their compilation and exact native call-key joins remain unverified.
+
+These descriptions present differences in device labels and time fields. They may relate to the same call, but no source-to-native-record join has been completed. Possibilities include an initial intake assumption, later classification, approximate recollection, differing event fields or error; **none has been tested or selected**. In particular, the 9:40 information-received field cannot automatically be equated with the time a person actually heard the call. Neither an FBI intake nor an interview proves the caller's device or establishes fabrication, intentional misreporting or conspiracy. These related investigation records should not be counted as independent confirmations of wrongdoing.
+
+## TODOs
+
+- [ ] Visually inspect the intake, its continuation and the interview with their original redactions; check the 9:40 fields, device words, identifiers and provenance of the intake information.
+- [ ] Obtain contemporaneous 911/operator logs, the native Airfone and applicable cellular records, and any recipient interview notes or call attribution worksheets; compare call identifiers, event definitions and clocks.
+- [ ] Preserve the earlier interview, 2004 briefing, NPS and Commission citation dates without treating any one as controlling. Check whether the sources actually refer to the same call before interpreting their differences.
+
+No recipient contact details, personal identifiers, raw packet, or reconstructed redactions are published. No new recording, vendor export or calibrated clock was acquired. Earlier reports remain intact.
