@@ -1,0 +1,14 @@
+# Library of Congress steel: printed-source image comparison
+
+November 25, 2026 · AUD011/AUD016 steel custody. This follows the [earlier custody lead](https://github.com/AveLyra/911-conspiracy-investigation/blob/d7c41ac6e17d11d40d2ff6031847ebae41132815/investigation/broader-evidence/steel-loc-section-custody-2026-11-25/README.md) and [exhibition item 123 review](https://github.com/AveLyra/911-conspiracy-investigation/blob/f0f3af4126f58226da4c8b91eaf69a629e32a642/investigation/broader-evidence/steel-loc-exhibit-123-2026-11-25/README.md).
+
+## What was checked
+
+- [September 2002 Library of Congress Information Bulletin](https://files.eric.ed.gov/fulltext/ED478305.pdf), printed p. **177**, physical PDF p. **203**, retrieved from the US Department of Education ERIC archive on November 25, 2026. The 319-page PDF is 15,813,653 bytes, SHA-256 `3d0437daa17fddce5439bacaa9c8c31231da192f3020fdc1180ff79114bd19e5`. The cited page was rendered and visually inspected. Its photograph of a beam carries a Rachel Evans credit, but this reproduction is high contrast and retains limited detail. The article describes a 400-pound section and an upper-floor inference; those are source reports, not newly authenticated measurements or provenance.
+- [January/February 2014 Library of Congress Magazine](https://loc.gov/lcm/pdf/LCM_2014_0102.pdf), printed p. **2**, physical PDF p. **3**, retrieved on November 25, 2026. The 17-page PDF is 7,575,386 bytes, SHA-256 `a1027fb166fc4c9b574b3a5a57140168fdf026f7fc03bae621ad093ac8537afa`. The cited page was rendered and visually inspected. It describes a 400-pound beam and says it was displayed in the Library's 2002 September 11 exhibition; its beam image is also credited to Rachel Evans. The off-site storage statement is as of that article, not a current-location check.
+
+Both publications credit the displayed beam images to the same photographer. The 2014 article expressly reports an exhibition connection, which is a source claim stronger than merely matching the stated weights. The differently cropped, high-contrast reproductions were **not sufficient in this check to establish image identity** or to join either to exhibition item 123 or catalog group 2002:130. Related institutional accounts and a shared photo credit are not independent custody measurements. No physical item, negative, source photograph, unique accession crosswalk, or transfer form was inspected.
+
+## Open records and limits
+
+TODO: obtain original photographs and captions, exhibition checklist, accession-to-item crosswalk, deed of gift and donor/yard transfer documents. Compare object features and unique IDs across records before treating the 2002 and 2014 depictions as a verified object match. The Library's descriptions do not establish a specific tower/floor, WTC 7 provenance, a W14A/B or C12 link, or a failure mechanism. No photograph is republished in this derivative.
