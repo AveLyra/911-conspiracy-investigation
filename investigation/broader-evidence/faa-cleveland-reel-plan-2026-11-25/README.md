@@ -1,0 +1,9 @@
+# Cleveland Center: proposed reel-copy and transcript trail
+
+A September 17, 2001 message in a publicly accessible Commission archive describes an expected visit to Cleveland Center, a request to prepare certified reel copies, and a request for a certified transcript of accident-flight communications by September 19. It is a contemporaneous account of plans and requests, not evidence that the visit occurred, copies were made or a transcript was delivered.
+
+The [Commission archive](https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip) member `T8 B17 FAA Trips 3 of 3 Fdr- Satori Review Timeline- FAA Data.pdf`, physical PDF p. 22, was visually inspected on November 25, 2026. The 46-page member is 1,091,682 bytes; its ZIP CRC32 is `3d8d4861` and SHA-256 is `cee78be0535e9cb6e5834da575c9fceb55791afcf6331a31b44a5e11af2cab0c`. These pins identify the archive copy; the native message and delivery chain have not been authenticated.
+
+A separate message on p. 13 describes a planned FBI visit to copy September 11 tapes on a Thursday but shows no date on that page. Do not assume the two passages refer to the same visit, media, recipient or eventual outcome. A later [FAA cassette memorandum and instruction comparison](https://github.com/AveLyra/911-conspiracy-investigation/blob/93aaa08ea6daf3647355e4c177b9e35bceffdfc7/investigation/broader-evidence/faa-tape-copy-crosswalk-2026-11-25/README.md) concerns distinct records. Related descriptions and copies are not independent proof of misconduct.
+
+**Open records:** original message headers and attachments; scheduled and actual visit records; reel identifiers; certified-copy, release and receipt records; transcripts and later custody or disposition. Preserve prior and future conflicting accounts; neither the messages nor an absent receipt establishes loss, withholding, fabrication or intent. Personal contact information and raw source scans are excluded from this note.
