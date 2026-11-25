@@ -1,0 +1,11 @@
+# SATORI archive packet: repeated-page candidates
+
+The 46-page Commission archive packet and a [12-page candidate National Archives file](https://catalog.archives.gov/medialz/dc-metro/rg-237/7419198-9-11-faa/5-Miscellaneous/e-Other/5-AWA-321-Package-ZOB-SATORI-Review-Timeline.pdf) have different page counts. The longer packet contains apparent repetitions, so subtracting those counts does not establish a number of missing unique documents. The catalog-item relationship and complete page-by-page comparison remain open.
+
+For a bounded screening test, we extracted the 46-page packet's embedded text with PyMuPDF, lowercased it and removed non-alphanumeric characters. Python `difflib.SequenceMatcher(autojunk=False)` compared page pairs with at least 180 normalized characters and at most a 15% length difference; a ratio of at least 0.96 flagged a candidate. Physical page pairs and ratios were **2/9: .964; 4/10: 1.000; 4/34: 1.000; 5/11: 1.000; 8/12: .995; 10/34: 1.000**.
+
+The test compares extracted text, not page images or file bytes. OCR and layout may omit differences, including handwriting and redactions; the screening rules can also miss duplicates with different headers. A separate visual check found a candidate repeated message on pages 22 and 26 that the length gate did not flag. Do not count these pairs as independent corroboration or infer that other pages are unique.
+
+The [Commission archive member](https://archive.org/download/911datasets/NARA_9-11_Commission_Records_Released_Jan_14_2009.zip) is `T8 B17 FAA Trips 3 of 3 Fdr- Satori Review Timeline- FAA Data.pdf`, accessed November 25, 2026, SHA-256 `cee78be0535e9cb6e5834da575c9fceb55791afcf6331a31b44a5e11af2cab0c`. Earlier related [reel-copy findings](https://github.com/AveLyra/911-conspiracy-investigation/blob/1ebab9649ec0feece76648ac103706981f904c0a/investigation/broader-evidence/faa-cleveland-reel-plan-2026-11-25/README.md) remain unchanged.
+
+**TODO:** verify the NARA catalog-to-file link, inspect page images and annotations, compare the complete versions, and obtain native records and custodial links. No conclusion about withholding, destruction, timing or intent follows from page counts or similarity scores. Raw source scans and contact details are excluded.
